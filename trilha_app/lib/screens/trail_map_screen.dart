@@ -19,7 +19,6 @@ import '../utils/difficulty_trails.dart';
 import '../utils/difficulty_visuals.dart';
 import '../utils/genesis_theme.dart';
 import '../utils/trail_progress.dart';
-import '../utils/trail_visuals.dart';
 import '../widgets/act_feel.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/genesis_trail_scenery.dart';
@@ -204,12 +203,11 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                   child: TopBar(
                     inline: true,
                     immersive: true,
-                    dark: true,
                     title: trail.localizedTitle,
                     subtitle: context.l10n.commonComingSoon,
                     onBack: () => Navigator.pop(context),
                     leadingGlyph: CinematicGlyphResolver.forTrail(trail.slug),
-                    chromeAccent: TrailVisuals.forTrail(trail).accent,
+                    chromeAccent: AppRoles.chrome,
                   ),
                 ),
                 Expanded(
@@ -225,7 +223,6 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                         glyph: CinematicGlyphResolver.forTrail(trail.slug),
                         title: context.l10n.commonComingSoon,
                         body: trail.localizedDescription,
-                        accent: AppTheme.parseHex(trail.color),
                       ),
                     ],
                   ),
@@ -277,7 +274,6 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                   child: TopBar(
                     inline: true,
                     immersive: true,
-                    dark: true,
                     title: headerTitle,
                     subtitle:
                         eyebrow ??
@@ -291,9 +287,8 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                             : context.l10n.trailsScenesShort(prog.done, prog.total)),
                     onBack: () => Navigator.pop(context),
                     leadingGlyph: headerGlyph,
-                    chromeAccent: _fromBank
-                        ? modeAccent
-                        : TrailVisuals.forTrail(trail).accent,
+                    // TopBar = chrome neutro; cor do modo/área só no conteúdo.
+                    chromeAccent: AppRoles.chrome,
                   ),
                 ),
                 Expanded(
@@ -581,7 +576,7 @@ class _TrailJourneyIntro extends StatelessWidget {
     final mode = TrailDifficulty.fromId(difficultyId);
     final color = mode != null
         ? DifficultyVisuals.accentFor(mode)
-        : AppColors.accent;
+        : AppRoles.chrome;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,

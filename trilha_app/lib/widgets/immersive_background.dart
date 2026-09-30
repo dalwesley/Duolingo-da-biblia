@@ -136,8 +136,7 @@ class GlassCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final style = Appearance.of(context);
-    final trailOutline = HomeTrailChrome.outlineOf(context);
-    if (glow != null) return _stage(style, trailOutline);
+    if (glow != null) return _stage(style);
 
     final fill =
         color ??
@@ -145,7 +144,6 @@ class GlassCard extends StatelessWidget {
             ? Color.lerp(style.cardFill, tint, 0.12)!
             : style.cardFill);
     final borderColor =
-        trailOutline ??
         (accent
             ? AppMetrics.accentBorder(alpha: elevated ? 0.85 : 0.7)
             : tint != null
@@ -159,7 +157,7 @@ class GlassCard extends StatelessWidget {
         color: fill,
         border: Border.all(
           color: borderColor,
-          width: trailOutline != null || accent || tint != null
+          width: accent || tint != null
               ? AppMetrics.cardBorderWidth + 0.25
               : AppMetrics.cardBorderWidth,
         ),
@@ -187,8 +185,8 @@ class GlassCard extends StatelessWidget {
     );
   }
 
-  Widget _stage(AppearanceStyle style, Color? trailOutline) {
-    final tone = tint ?? AppColors.accent;
+  Widget _stage(AppearanceStyle style) {
+    final tone = tint ?? AppRoles.chrome;
     final g = glow!.clamp(0.0, 1.0);
     final base = color ?? style.cardFill;
     const border = AppMetrics.cardBorderWidth;
@@ -206,7 +204,7 @@ class GlassCard extends StatelessWidget {
           stops: const [0.0, 0.5, 1.0],
         ),
         border: Border.all(
-          color: trailOutline ?? tone.withValues(alpha: 0.3 + 0.4 * g),
+          color: tone.withValues(alpha: 0.3 + 0.4 * g),
           width: border,
         ),
         boxShadow: [
@@ -266,7 +264,7 @@ class CardFilament extends StatelessWidget {
 
   const CardFilament({
     super.key,
-    this.color = AppColors.accent,
+    this.color = AppRoles.chrome,
     this.height = 1.2,
   });
 

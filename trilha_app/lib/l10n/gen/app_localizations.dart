@@ -1726,6 +1726,12 @@ abstract class AppLocalizations {
   /// **'Nenhum desafio ainda'**
   String get cornerBoardEmptyTitle;
 
+  /// No description provided for @cornerBoardFilterEmpty.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nenhum ainda'**
+  String get cornerBoardFilterEmpty;
+
   /// No description provided for @cornerBoardIdle.
   ///
   /// In pt, this message translates to:
@@ -9638,6 +9644,24 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'{name} reconheceu sua cena'**
   String recognitionHeadlineWalk(String name);
+
+  /// No description provided for @recognitionHomeSeeWho.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ver quem reconheceu'**
+  String get recognitionHomeSeeWho;
+
+  /// No description provided for @recognitionHomeTitleMany.
+  ///
+  /// In pt, this message translates to:
+  /// **'Reconheceram sua jornada'**
+  String get recognitionHomeTitleMany;
+
+  /// No description provided for @recognitionHomeTitleSingle.
+  ///
+  /// In pt, this message translates to:
+  /// **'{name} reconheceu sua jornada'**
+  String recognitionHomeTitleSingle(String name);
 
   /// No description provided for @recognitionMedalDone.
   ///

@@ -319,13 +319,11 @@ class _NaPalavraBlock extends StatelessWidget {
     final hasShared = progress.sharedVerses.isNotEmpty;
 
     return RelicPanel(
-      accent: AppColors.cedar,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           RelicChapter(
             title: context.l10n.profileInTheWord,
-            accent: AppColors.cedar,
             whisper: hasBookmarks || hasShared
                 ? null
                 : context.l10n.profileInTheWordWhisper,
@@ -334,7 +332,7 @@ class _NaPalavraBlock extends StatelessWidget {
           const _FavoritesSection(embedded: true),
           if (hasShared && hasBookmarks) ...[
             const SizedBox(height: AppSpace.md),
-            const RelicHairline(accent: AppColors.cedar),
+            const RelicHairline(),
             const SizedBox(height: AppSpace.md),
           ],
           const _SharedVersesSection(embedded: true),
@@ -394,7 +392,7 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
               ? null
               : CountBadge(
                   '${bookmarks.length}',
-                  color: AppColors.cedar,
+                  color: AppRoles.chrome,
                   filled: false,
                 ),
         ),
@@ -417,7 +415,7 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
             final label = _label(entry.value);
             return Column(
               children: [
-                if (i > 0) const RelicHairline(accent: AppColors.cedar),
+                if (i > 0) const RelicHairline(),
                 Semantics(
                   button: true,
                   label: context.l10n.profileOpenRef(label),
@@ -438,9 +436,7 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
                               ),
                             ),
                           ),
-                          ListChevron(
-                            color: AppColors.cedar.withValues(alpha: 0.8),
-                          ),
+                          ListChevron(color: a.textFaint),
                         ],
                       ),
                     ),
@@ -454,7 +450,7 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
 
     if (widget.embedded) return content;
 
-    return RelicPanel(accent: AppColors.cedar, child: content);
+    return RelicPanel(child: content);
   }
 }
 
@@ -478,7 +474,7 @@ class _SharedVersesSection extends StatelessWidget {
               ? null
               : CountBadge(
                   '${refs.length}',
-                  color: AppColors.cedar,
+                  color: AppRoles.chrome,
                   filled: false,
                 ),
         ),
@@ -499,12 +495,10 @@ class _SharedVersesSection extends StatelessWidget {
                   label: context.l10n.profileOpenRef(ref),
                   excludeSemantics: true,
                   child: Material(
-                    color: AppColors.cedar.withValues(alpha: 0.08),
+                    color: a.insetFill,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(AppRadii.sm),
-                      side: BorderSide(
-                        color: AppColors.cedar.withValues(alpha: 0.35),
-                      ),
+                      side: BorderSide(color: a.cardBorder),
                     ),
                     clipBehavior: Clip.antiAlias,
                     child: InkWell(
@@ -539,6 +533,6 @@ class _SharedVersesSection extends StatelessWidget {
 
     if (embedded) return content;
 
-    return RelicPanel(accent: AppColors.cedar, child: content);
+    return RelicPanel(child: content);
   }
 }

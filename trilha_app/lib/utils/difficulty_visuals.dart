@@ -10,12 +10,12 @@ class DifficultyVisuals {
   /// Luminância do ouro de Observação — referência de punch no céu.
   static const _goldLuminance = 0.50;
 
-  /// Contorno / chrome por modo: amarelo → coral → orquídea.
-  /// Teal e azul de marca somem no céu (manhã/tarde/noite) — não usar.
+  /// Contorno / chrome por modo: broto → coral → orquídea.
+  /// Amarelo é ação/recompensa; teal e azul somem no céu — não usar.
   static Color accentFor(TrailDifficulty d) => switch (d) {
-    TrailDifficulty.semente => AppColors.accent,
-    TrailDifficulty.caminhada => AppColors.coral,
-    TrailDifficulty.profundezas => AppColors.orchid,
+    TrailDifficulty.semente => AppRoles.observation,
+    TrailDifficulty.caminhada => AppRoles.comprehension,
+    TrailDifficulty.profundezas => AppRoles.interpretation,
   };
 
   static CinematicGlyph glyphFor(TrailDifficulty d) => switch (d) {
@@ -26,10 +26,20 @@ class DifficultyVisuals {
 
   /// Texto escuro sobre o acento sólido (pills "Modo atual").
   static Color inkOn(TrailDifficulty d) => switch (d) {
-    TrailDifficulty.semente => AppColors.inkOnAccent,
+    TrailDifficulty.semente => AppColors.inkOnSprout,
     TrailDifficulty.caminhada => AppColors.inkOnCoral,
     TrailDifficulty.profundezas => AppColors.inkOnOrchid,
   };
+
+  /// Tinta do modo sobre placa clara (marfim): o tom de céu vira a
+  /// versão escura. Qualquer outro acento cai no contorno escuro padrão.
+  static Color onLight(Color accent) {
+    final v = accent.toARGB32();
+    if (v == AppRoles.observation.toARGB32()) return AppColors.sproutDeep;
+    if (v == AppRoles.comprehension.toARGB32()) return AppColors.coralDeep;
+    if (v == AppRoles.interpretation.toARGB32()) return AppColors.orchidDeep;
+    return AppRoles.selectedOnLight;
+  }
 
   /// Texto/ícone no céu — ouro/coral/orquídea já puncionam; outros sobem.
   static Color onSky(Color accent) => AppColors.glyphInk(accent);

@@ -996,10 +996,8 @@ class _LessonScreenState extends State<LessonScreen>
                                                   VisualDensity.compact,
                                               icon: CinematicIcon(
                                                 glyph: CinematicGlyph.book,
-                                                size: 20,
-                                                accent: Colors.white.withValues(
-                                                  alpha: 0.78,
-                                                ),
+                                                size: AppMetrics.iconMd,
+                                                accent: AppRoles.chrome,
                                                 framed: false,
                                               ),
                                             ),
@@ -1147,7 +1145,9 @@ class _LessonScreenState extends State<LessonScreen>
                                 center: const Alignment(0, -0.2),
                                 radius: 1.1,
                                 colors: [
-                                  (_impactPositive ? accent : AppColors.error)
+                                  (_impactPositive
+                                          ? AppRoles.success
+                                          : AppRoles.error)
                                       .withValues(
                                         alpha:
                                             (1 - _impactFlash.value) *
@@ -1197,8 +1197,8 @@ class _LessonScreenState extends State<LessonScreen>
   }
 }
 
-/// Barra de atos: um segmento por pergunta — ouro se acertou de primeira,
-/// vermelho discreto se errou, o atual pulsa em branco.
+/// Barra de atos: um segmento por pergunta — cor do modo se acertou de
+/// primeira, vermelho discreto se errou, o atual em destaque.
 class _ActProgress extends StatelessWidget {
   final int total;
   final int index;
@@ -1214,6 +1214,7 @@ class _ActProgress extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     return Semantics(
       label: context.l10n.lessonQuestionProgress(index + 1, total),
       child: Row(
@@ -1229,11 +1230,8 @@ class _ActProgress extends StatelessWidget {
                   borderRadius: BorderRadius.circular(AppRadii.pill),
                   color: switch (results[i]) {
                     true => accent,
-                    false => AppColors.error.withValues(alpha: 0.75),
-                    null =>
-                      i == index
-                          ? Colors.white.withValues(alpha: 0.85)
-                          : Colors.white.withValues(alpha: 0.16),
+                    false => AppRoles.error.withValues(alpha: 0.75),
+                    null => i == index ? a.text : a.progressTrack,
                   },
                   boxShadow: results[i] == true
                       ? [
@@ -1337,8 +1335,8 @@ class _ExitSheet extends StatelessWidget {
             center: true,
             leading: const CinematicIcon(
               glyph: CinematicGlyph.lamp,
-              size: 44,
-              accent: AppColors.accent,
+              size: AppMetrics.leadingIcon,
+              accent: AppRoles.chrome,
             ),
             title: context.l10n.lessonExitTitle,
             subtitle: context.l10n.lessonExitBody(act, total),
@@ -1569,13 +1567,13 @@ class _ActWarmup extends StatelessWidget {
         const CinematicIcon(
           glyph: CinematicGlyph.wrong,
           size: 78,
-          accent: AppColors.error,
+          accent: AppRoles.error,
           glowing: true,
         ),
         const CinematicIcon(
           glyph: CinematicGlyph.check,
           size: 78,
-          accent: AppColors.accent,
+          accent: AppRoles.success,
           glowing: true,
         ),
         const CinematicIcon(
@@ -1602,8 +1600,8 @@ class _ActWarmup extends StatelessWidget {
         DecoratedBox(
           decoration: BoxDecoration(
             color: AppColors.nightElevated,
-            borderRadius: BorderRadius.circular(AppRadii.xl),
-            boxShadow: AppTheme.cardShadow(elevated: true),
+            borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
+            boxShadow: AppMetrics.cardShadow(elevated: true),
           ),
           child: const SizedBox(width: 120, height: 64),
         ),

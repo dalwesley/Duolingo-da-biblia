@@ -29,7 +29,7 @@ class _CornerInviteSheet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppSheetPanel(
-      tint: AppColors.accent,
+      tint: AppRoles.chrome,
       padding: const EdgeInsets.fromLTRB(
         AppSpace.xxl,
         AppSpace.md,
@@ -43,8 +43,8 @@ class _CornerInviteSheet extends StatelessWidget {
           AppSheetHeader(
             leading: const CinematicIcon(
               glyph: CinematicGlyph.flag,
-              size: 44,
-              accent: AppColors.accent,
+              size: AppMetrics.leadingIcon,
+              accent: AppRoles.chrome,
               glowing: true,
             ),
             title: CornerCopy.inviteTitle(proposal.missionTitle),

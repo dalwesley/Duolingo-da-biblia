@@ -5,7 +5,7 @@ import '../utils/appearance.dart';
 import 'act_feel.dart';
 import 'ui_primitives.dart';
 
-/// Grade de capítulos — 6 colunas, lido em ouro cheio.
+/// Grade de capítulos — 6 colunas, lido em teal cheio (concluído).
 class BibleChapterGrid extends StatelessWidget {
   final int count;
   final bool Function(int chapter) isRead;
@@ -77,13 +77,13 @@ class _ChapterDot extends StatelessWidget {
           onTap: onTap,
           customBorder: const CircleBorder(),
           splashColor: read
-              ? AppColors.inkOnAccent.withValues(alpha: 0.12)
-              : Colors.white.withValues(alpha: 0.08),
+              ? AppColors.night.withValues(alpha: 0.12)
+              : a.divider,
           child: Ink(
             width: size,
             height: size,
             decoration: BoxDecoration(
-              color: read ? AppColors.accent : a.cardFillSoft,
+              color: read ? AppRoles.success : a.cardFillSoft,
               shape: BoxShape.circle,
               border: read
                   ? null
@@ -99,7 +99,7 @@ class _ChapterDot extends StatelessWidget {
                     AppTypography.title(
                       size: fontSize,
                       exact: true,
-                      color: read ? AppColors.inkOnAccent : a.text,
+                      color: read ? AppColors.night : a.text,
                     ).copyWith(
                       fontFeatures: const [FontFeature.tabularFigures()],
                       height: 1,

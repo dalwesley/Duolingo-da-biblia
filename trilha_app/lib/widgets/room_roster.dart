@@ -6,9 +6,10 @@ import '../models/study_room.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'act_feel.dart';
+import 'ui_primitives.dart';
 import 'cinematic_icon.dart';
 import 'hero_card_atmosphere.dart';
-import 'portrait_face.dart';
+import 'user_avatar.dart';
 
 /// Como cada pessoa está na semana do grupo.
 enum SeatState { today, week, quiet, idle }
@@ -61,8 +62,8 @@ class RoomWeekBar extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(AppRadii.pill),
                   color: switch (seatStateOf(ordered[i])) {
-                    SeatState.today => AppColors.accent,
-                    SeatState.week => AppColors.accent.withValues(alpha: 0.6),
+                    SeatState.today => AppRoles.presence,
+                    SeatState.week => AppRoles.presence.withValues(alpha: 0.5),
                     _ => a.progressTrack,
                   },
                 ),
@@ -147,7 +148,7 @@ class _RosterRow extends StatelessWidget {
     this.onTap,
   });
 
-  static const double _face = 42;
+  static const double _face = AppMetrics.avatarMd * 2;
 
   @override
   Widget build(BuildContext context) {
@@ -167,12 +168,14 @@ class _RosterRow extends StatelessWidget {
       SeatState.idle => null,
     };
 
-    Widget face = PortraitFace(
+    // Anel de presença: teal quando estudou hoje.
+    Widget face = UserAvatar(
       name: member.name,
       photoUrl: photoUrl,
       seed: member.uid,
-      size: _face,
+      radius: AppMetrics.avatarMd,
       style: style,
+      borderColor: state == SeatState.today ? AppRoles.presence : a.cardBorder,
     );
     if (quiet) {
       face = Opacity(
@@ -196,10 +199,10 @@ class _RosterRow extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 8),
           decoration: member.isUser
               ? BoxDecoration(
-                  color: AppColors.accent.withValues(alpha: 0.06),
+                  color: AppRoles.selected.withValues(alpha: 0.08),
                   borderRadius: BorderRadius.circular(AppRadii.md),
                   border: Border.all(
-                    color: AppColors.accent.withValues(alpha: 0.18),
+                    color: AppRoles.selected.withValues(alpha: 0.4),
                   ),
                 )
               : null,
@@ -211,34 +214,15 @@ class _RosterRow extends StatelessWidget {
                 child: Stack(
                   clipBehavior: Clip.none,
                   children: [
-                    Center(
-                      child: Container(
-                        width: _face,
-                        height: _face,
-                        clipBehavior: Clip.antiAlias,
-                        decoration: const BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: AppColors.nightMid,
-                        ),
-                        foregroundDecoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          border: Border.all(
-                            color: state == SeatState.today
-                                ? AppColors.accent
-                                : a.cardBorder,
-                            width: state == SeatState.today ? 2 : 1.2,
-                          ),
-                        ),
-                        child: face,
-                      ),
-                    ),
+                    Center(child: face),
+                    // Coroa = dono do grupo (papel, não prêmio): chrome.
                     if (isLeader)
                       const Positioned(
                         right: -2,
                         bottom: -2,
                         child: _Badge(
                           color: AppColors.nightElevated,
-                          ink: AppColors.accent,
+                          ink: AppRoles.chrome,
                           glyph: CinematicGlyph.crown,
                         ),
                       ),
@@ -257,10 +241,9 @@ class _RosterRow extends StatelessWidget {
                             name,
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
-                            style: AppTypography.body(
+                            style: AppTypography.title(
                               size: 14,
-                              weight: FontWeight.w800,
-                              color: quiet ? a.textMuted(0.7) : a.text,
+                              color: quiet ? a.textSecondary : a.text,
                             ),
                           ),
                         ),
@@ -275,8 +258,8 @@ class _RosterRow extends StatelessWidget {
                                 size: 11,
                                 weight: FontWeight.w700,
                                 color: state == SeatState.today
-                                    ? AppColors.accent
-                                    : AppColors.dust,
+                                    ? AppRoles.presence
+                                    : a.textFaint,
                               ),
                             ),
                           ),
@@ -303,7 +286,7 @@ class _RosterRow extends StatelessWidget {
                       style: AppTypography.display(
                         size: 20,
                         height: 1,
-                        color: days > 0 ? AppColors.accent : a.textMuted(0.4),
+                        color: days > 0 ? a.text : a.textFaint,
                       ),
                     ),
                     Text(
@@ -311,7 +294,7 @@ class _RosterRow extends StatelessWidget {
                       style: AppTypography.label(
                         size: 10,
                         letterSpacing: 0.4,
-                        color: a.textMuted(0.5),
+                        color: a.textFaint,
                       ),
                     ),
                   ],
@@ -393,7 +376,10 @@ class _TrackPainter extends CustomPainter {
         fill,
         Paint()
           ..shader = LinearGradient(
-            colors: [AppColors.accentDark, AppColors.accent],
+            colors: [
+              AppRoles.presence.withValues(alpha: 0.6),
+              AppRoles.presence,
+            ],
           ).createShader(Rect.fromLTWH(0, top, w, h)),
       );
       if (glow) {
@@ -401,7 +387,7 @@ class _TrackPainter extends CustomPainter {
           Offset(w - h / 2, size.height / 2),
           4.5,
           Paint()
-            ..color = AppColors.accent.withValues(alpha: 0.55)
+            ..color = AppRoles.presence.withValues(alpha: 0.55)
             ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 4),
         );
       }
@@ -443,7 +429,12 @@ class _Badge extends StatelessWidget {
         border: Border.all(color: AppColors.night, width: 1.6),
       ),
       child: Center(
-        child: CinematicIcon(glyph: glyph, size: 10, accent: ink, framed: false),
+        child: CinematicIcon(
+          glyph: glyph,
+          size: 10,
+          accent: ink,
+          framed: false,
+        ),
       ),
     );
   }

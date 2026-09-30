@@ -94,7 +94,7 @@ class _OfflineCurriculumDialogState extends State<_OfflineCurriculumDialog>
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final accent = AppColors.ember;
+    const accent = AppRoles.risk;
 
     return PopScope(
       canPop: false,
@@ -122,7 +122,7 @@ class _OfflineCurriculumDialogState extends State<_OfflineCurriculumDialog>
                 size: 14,
                 height: 1.4,
                 weight: FontWeight.w600,
-                color: a.textMuted(0.72),
+                color: a.textSecondary,
               ),
             ),
             if (_hint != null) ...[
@@ -141,7 +141,7 @@ class _OfflineCurriculumDialogState extends State<_OfflineCurriculumDialog>
                     style: AppTypography.body(
                       size: 12,
                       weight: FontWeight.w700,
-                      color: AppColors.errorSoft,
+                      color: AppRoles.error,
                     ),
                   ),
                 ),
@@ -184,7 +184,7 @@ class _DisconnectedTrailPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final s = size.shortestSide;
     final c = Offset(size.width / 2, size.height / 2);
-    final ink = AppColors.ember;
+    const ink = AppRoles.risk;
     final soft = ink.withValues(alpha: 0.35);
     final mute = Colors.white.withValues(alpha: 0.22);
 

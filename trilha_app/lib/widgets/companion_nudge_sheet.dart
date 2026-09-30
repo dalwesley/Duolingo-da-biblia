@@ -189,7 +189,7 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
           ),
         ),
         AppSheetPanel(
-          tint: AppColors.accent,
+          tint: AppRoles.chrome,
           padding: const EdgeInsets.fromLTRB(
             AppSpace.lg,
             AppSpace.md,
@@ -203,8 +203,8 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
               AppSheetHeader(
                 leading: const CinematicIcon(
                   glyph: CinematicGlyph.heart,
-                  size: 44,
-                  accent: AppColors.accent,
+                  size: AppMetrics.leadingIcon,
+                  accent: AppRoles.chrome,
                   glowing: true,
                 ),
                 title: context.l10n.nudgeTitle(_them),
@@ -321,6 +321,7 @@ class CompanionNudgeShareCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l10n = context.l10n;
+    final a = Appearance.of(context);
     final me = myName.trim().isEmpty
         ? l10n.commonYou
         : myName.trim().split(' ').first;
@@ -403,7 +404,7 @@ class CompanionNudgeShareCard extends StatelessWidget {
                       StwayWordmark(
                         fontSize: compact ? 12 : 14,
                         letterSpacing: compact ? 1.8 : 2.2,
-                        letterColor: Colors.white.withValues(alpha: 0.95),
+                        letterColor: a.text,
                         aColor: AppColors.accent,
                       ),
                       const Spacer(),
@@ -493,8 +494,7 @@ class CompanionNudgeShareCard extends StatelessWidget {
                     them,
                     style: AppTypography.title(
                       size: compact ? 18 : 20,
-                      weight: FontWeight.w900,
-                      color: Colors.white.withValues(alpha: 0.92),
+                      color: a.text,
                     ),
                   ),
                   const SizedBox(height: 4),
@@ -529,7 +529,7 @@ class CompanionNudgeShareCard extends StatelessWidget {
                     style: AppTypography.body(
                       size: compact ? 13 : 14,
                       weight: FontWeight.w600,
-                      color: Colors.white.withValues(alpha: 0.72),
+                      color: a.textSecondary,
                     ),
                   ),
                   SizedBox(height: compact ? 16 : 22),
@@ -543,7 +543,7 @@ class CompanionNudgeShareCard extends StatelessWidget {
                       color: Colors.black.withValues(alpha: 0.4),
                       borderRadius: BorderRadius.circular(AppRadii.md),
                       border: Border.all(
-                        color: AppColors.accent.withValues(alpha: 0.55),
+                        color: AppRoles.action.withValues(alpha: 0.55),
                       ),
                     ),
                     child: Row(
@@ -560,8 +560,7 @@ class CompanionNudgeShareCard extends StatelessWidget {
                               me.isEmpty ? '?' : me[0].toUpperCase(),
                               style: AppTypography.title(
                                 size: 14,
-                                weight: FontWeight.w900,
-                                color: AppColors.inkOnAccent,
+                                color: AppRoles.onAction,
                               ),
                             ),
                           ),
@@ -583,7 +582,7 @@ class CompanionNudgeShareCard extends StatelessWidget {
                                 l10n.nudgeCardCta,
                                 style: AppTypography.body(
                                   size: 12,
-                                  color: AppColors.accent.withValues(
+                                  color: AppRoles.action.withValues(
                                     alpha: 0.9,
                                   ),
                                 ),

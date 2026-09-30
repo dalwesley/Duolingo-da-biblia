@@ -1057,6 +1057,9 @@ class AppLocalizationsEs extends AppLocalizations {
   String get cornerBoardEmptyTitle => 'Ningún desafío aún';
 
   @override
+  String get cornerBoardFilterEmpty => 'Ninguno aún';
+
+  @override
   String get cornerBoardIdle =>
       'Ningún desafío esta semana. Invita a alguien de la caravana.';
 
@@ -6233,6 +6236,17 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String recognitionHeadlineWalk(String name) {
     return '$name reconoció tu escena';
+  }
+
+  @override
+  String get recognitionHomeSeeWho => 'Ver quién te reconoció';
+
+  @override
+  String get recognitionHomeTitleMany => 'Reconocieron tu camino';
+
+  @override
+  String recognitionHomeTitleSingle(String name) {
+    return '$name reconoció tu camino';
   }
 
   @override

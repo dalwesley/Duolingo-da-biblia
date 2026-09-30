@@ -38,8 +38,12 @@ class DailyQuestsCard extends StatelessWidget {
           CardHeader(
             label: context.l10n.questDailyTitle,
             glyph: CinematicGlyph.target,
-            accent: AppColors.teal,
-            trailing: CountBadge('$doneCount/${quests.length}'),
+            trailing: CountBadge(
+              '$doneCount/${quests.length}',
+              color: doneCount >= quests.length
+                  ? AppRoles.success
+                  : AppRoles.chrome,
+            ),
           ),
           const SizedBox(height: AppSpace.xs),
           Text(
@@ -76,7 +80,8 @@ class _QuestRow extends StatelessWidget {
     final claimed = progress.isQuestClaimed(q.id);
     final done = claimed || value >= q.target;
     final canTap = onTap != null && !claimed;
-    final tone = CinematicGlyphResolver.accentForQuest(q.id);
+    // Ícone = chrome; concluída = sucesso; passos = recompensa.
+    final tone = done ? AppRoles.success : AppRoles.chrome;
 
     return Material(
       color: Colors.transparent,
@@ -132,12 +137,16 @@ class _QuestRow extends StatelessWidget {
               if (done)
                 CinematicIcon(
                   glyph: CinematicGlyph.check,
-                  size: 22,
+                  size: AppMetrics.iconLg,
                   accent: tone,
                   framed: false,
                 )
               else
-                CountBadge('+${q.stepsReward}', filled: true, color: tone),
+                CountBadge(
+                  '+${q.stepsReward}',
+                  filled: true,
+                  color: AppRoles.reward,
+                ),
             ],
           ),
         ),

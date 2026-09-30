@@ -186,7 +186,6 @@ class _HeroContinueCardState extends State<HeroContinueCard>
       widget.trailSlug,
       color: widget.trailColor,
     );
-    final trailAccent = visuals.accent;
     final progress = context.watch<ProgressService>();
     final hasFreeze = progress.hasStreakFreeze;
     final walkedToday = progress.walkedToday;
@@ -204,7 +203,7 @@ class _HeroContinueCardState extends State<HeroContinueCard>
     } else if (_pulseController.isAnimating) {
       _pulseController.stop();
     }
-    final style = HeroCardMoodStyle.of(mood, trailAccent: trailAccent);
+    final style = HeroCardMoodStyle.of(mood, a, atRisk: widget.atRisk);
 
     // Em dia: o cartão é o trailer de amanhã — o ouro convida a abrir agora.
     final resting = widget.goalMet && mood == HeroCardMood.alive;
@@ -231,7 +230,8 @@ class _HeroContinueCardState extends State<HeroContinueCard>
             ? l10n.commonStart
             : l10n.commonContinue,
     };
-    final rewardColor = mission.isBoss ? AppColors.sand : style.footer;
+    // Rodapé só é recompensa quando promete passos extras.
+    final footerColor = resting ? AppRoles.reward : style.footer;
     final world = CinematicResolver.ambientForHome(
       trailSlug: widget.trailSlug,
       missionTitle: mission.localizedTitle,
@@ -303,7 +303,7 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                 ...AppMetrics.cardShadow(elevated: true, hardLip: false),
                 if (mood == HeroCardMood.alive)
                   BoxShadow(
-                    color: AppColors.accent.withValues(alpha: 0.22),
+                    color: AppRoles.action.withValues(alpha: 0.22),
                     blurRadius: 28,
                     offset: const Offset(0, 12),
                   ),
@@ -351,8 +351,6 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           _Chip(
-                            tone: trailAccent,
-                            worn: mood == HeroCardMood.dusty,
                             child: Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
@@ -373,8 +371,8 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                                     },
                                     child: CinematicIcon(
                                       glyph: visuals.glyph,
-                                      size: 16,
-                                      accent: trailAccent,
+                                      size: AppMetrics.iconSm,
+                                      accent: AppRoles.chrome,
                                       glowing: false,
                                       framed: false,
                                     ),
@@ -415,15 +413,7 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                                       size: compact ? 28 : 32,
                                       height: 1.08,
                                       weight: FontWeight.w900,
-                                      color: switch (mood) {
-                                        HeroCardMood.dusty => const Color(
-                                          0xFFDCC7A4,
-                                        ).withValues(alpha: 0.92),
-                                        HeroCardMood.frozen => const Color(
-                                          0xFFE8F6FC,
-                                        ).withValues(alpha: 0.95),
-                                        HeroCardMood.alive => a.text,
-                                      },
+                                      color: a.text,
                                     ),
                                   ),
                                   if (riskLine != null) ...[
@@ -516,10 +506,10 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                             GestureDetector(
                               behavior: HitTestBehavior.opaque,
                               onTapUp: (d) => _launch(d.globalPosition),
-                              child: _CtaBar(label: ctaLabel, mood: mood),
+                              child: _CtaBar(label: ctaLabel),
                             )
                           else
-                            _CtaBar(label: ctaLabel, mood: mood),
+                            _CtaBar(label: ctaLabel),
                           const SizedBox(height: 10),
                           Center(
                             child: Text(
@@ -531,7 +521,7 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                               style: AppTypography.body(
                                 size: 13,
                                 weight: FontWeight.w700,
-                                color: rewardColor.withValues(alpha: 0.78),
+                                color: footerColor.withValues(alpha: 0.78),
                               ),
                             ),
                           ),
@@ -603,15 +593,15 @@ class _HeroContinueCardState extends State<HeroContinueCard>
     return GlassCard(
       onTap: widget.onExploreTrails,
       glow: 0.3,
-      tint: AppColors.accent,
+      tint: AppRoles.reward,
       radius: AppMetrics.heroRadius,
       padding: const EdgeInsets.all(28),
       child: Column(
         children: [
           const CinematicIcon(
             glyph: CinematicGlyph.crown,
-            size: 56,
-            accent: AppColors.accent,
+            size: AppMetrics.iconHero,
+            accent: AppRoles.reward,
             glowing: false,
           ),
           const SizedBox(height: 16),
@@ -640,130 +630,40 @@ class _HeroContinueCardState extends State<HeroContinueCard>
   }
 }
 
+/// CTA do herói — o mesmo botão principal do app, na versão grande.
+/// O humor do card (gelo, poeira) fica na atmosfera, não no botão.
 class _CtaBar extends StatelessWidget {
   final String label;
-  final HeroCardMood mood;
 
-  const _CtaBar({required this.label, required this.mood});
-
-  @override
-  Widget build(BuildContext context) {
-    if (mood == HeroCardMood.alive) {
-      return _AliveShineCta(label: label);
-    }
-
-    final frozen = mood == HeroCardMood.frozen;
-    final ink = frozen ? AppColors.iceDeep : AppColors.inkOnAccent;
-
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.symmetric(vertical: 20),
-      decoration: BoxDecoration(
-        color: frozen ? null : const Color(0xFFB89858),
-        gradient: frozen
-            ? const LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [AppColors.ice, Color(0xFF3A8AAA)],
-              )
-            : null,
-        borderRadius: BorderRadius.circular(AppRadii.lg),
-        border: frozen
-            ? Border.all(color: AppColors.iceDeep.withValues(alpha: 0.55))
-            : null,
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            label,
-            style: AppTypography.cta(size: 18).copyWith(color: ink),
-          ),
-          const SizedBox(width: 12),
-          CinematicIcon(
-            glyph: CinematicGlyph.forward,
-            size: 22,
-            accent: ink,
-            framed: false,
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-/// CTA em dia — açafrão chapado, sem reflexo.
-class _AliveShineCta extends StatelessWidget {
-  final String label;
-
-  const _AliveShineCta({required this.label});
+  const _CtaBar({required this.label});
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.symmetric(vertical: 20),
-      decoration: BoxDecoration(
-        color: AppColors.accent,
-        borderRadius: BorderRadius.circular(AppRadii.lg),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withValues(alpha: 0.5),
-            offset: const Offset(0, 5),
-            blurRadius: 0,
-          ),
-        ],
-      ),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            label,
-            style: AppTypography.cta(
-              size: 18,
-            ).copyWith(color: AppColors.inkOnAccent, letterSpacing: 1.4),
-          ),
-          const SizedBox(width: 12),
-          CinematicIcon(
-            glyph: CinematicGlyph.forward,
-            size: 22,
-            accent: AppColors.inkOnAccent.withValues(alpha: 0.9),
-            framed: false,
-          ),
-        ],
-      ),
+    return CopperCta(
+      label: label,
+      large: true,
+      decorative: true,
+      showArrow: true,
+      trailing: null,
     );
   }
 }
 
 class _Chip extends StatelessWidget {
   final Widget child;
-  final Color? tone;
-  final bool worn;
 
-  const _Chip({required this.child, this.tone, this.worn = false});
+  const _Chip({required this.child});
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final ink = tone;
+    // Chip sobre ilustração: véu escuro para ler, borda neutra do chrome.
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
       decoration: BoxDecoration(
-        color: worn
-            ? const Color(0xFF1A1008).withValues(alpha: 0.55)
-            : ink != null
-            ? Colors.black.withValues(alpha: 0.35)
-            : a.cardFill,
+        color: Colors.black.withValues(alpha: 0.35),
         borderRadius: BorderRadius.circular(AppRadii.sm),
-        border: Border.all(
-          width: 1.5,
-          color: worn
-              ? const Color(0xFF6B4A28).withValues(alpha: 0.5)
-              : ink != null
-              ? ink.withValues(alpha: 0.55)
-              : a.cardBorder,
-        ),
+        border: Border.all(width: 1.5, color: a.cardBorder),
       ),
       child: child,
     );

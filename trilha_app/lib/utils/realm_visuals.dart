@@ -22,29 +22,29 @@ class RealmVisuals {
 
   static RealmVisuals of(TrailRealm realm) => switch (realm) {
     TrailRealm.antigoTestamento => RealmVisuals(
-      accent: AppColors.accent,
-      glow: AppColors.primaryLight,
+      accent: AppRoles.areaOldTestament,
+      glow: AppColors.sandDeep,
       glyph: CinematicGlyph.book,
       eyebrow: L10n.current.realmEyebrowAntigoTestamento,
       tagline: L10n.current.realmTaglineAntigoTestamento,
     ),
     TrailRealm.novoTestamento => RealmVisuals(
-      accent: AppColors.clay,
+      accent: AppRoles.areaNewTestament,
       glow: AppColors.clayDeep,
       glyph: CinematicGlyph.heart,
       eyebrow: L10n.current.realmEyebrowNovoTestamento,
       tagline: L10n.current.realmTaglineNovoTestamento,
     ),
     TrailRealm.vidaCrista => RealmVisuals(
-      accent: AppColors.cedar,
+      accent: AppRoles.areaChristianLife,
       glow: AppColors.cedarDeep,
       glyph: CinematicGlyph.seed,
       eyebrow: L10n.current.realmEyebrowVidaCrista,
       tagline: L10n.current.realmTaglineVidaCrista,
     ),
     TrailRealm.teologia => RealmVisuals(
-      accent: AppColors.sand,
-      glow: AppColors.sandDeep,
+      accent: AppRoles.areaTheology,
+      glow: AppColors.slateDeep,
       glyph: CinematicGlyph.scroll,
       eyebrow: L10n.current.realmEyebrowTeologia,
       tagline: L10n.current.realmTaglineTeologia,

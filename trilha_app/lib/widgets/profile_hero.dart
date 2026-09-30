@@ -11,7 +11,6 @@ import '../utils/appearance.dart';
 import '../utils/spiritual_growth.dart';
 import 'act_feel.dart';
 import 'cinematic_icon.dart';
-import 'home_brand_backdrop.dart';
 import 'immersive_background.dart';
 import 'pilgrim_profile_sections.dart';
 import 'profile_privacy.dart';
@@ -19,9 +18,9 @@ import 'top_bar.dart';
 import 'ui_primitives.dart';
 import 'user_avatar.dart';
 
-/// Topo do perfil do dono: a trilha STWAY no céu escolhido por trás,
-/// retrato grande com anel de ouro, nome, título e os três números
-/// que contam a caminhada. Substitui barra + cartão de identidade.
+/// Topo do perfil do dono: retrato grande, nome, título e os três números
+/// que contam a caminhada, sobre o gradiente da fase do dia (sem cenário).
+/// Substitui barra + cartão de identidade.
 class ProfileHero extends StatelessWidget {
   final String name;
   final String? photoUrl;
@@ -81,110 +80,92 @@ class ProfileHero extends StatelessWidget {
     final displayName =
         name.trim().isEmpty ? l10n.pilgrimFallbackName : name.trim();
 
-    return Stack(
-      children: [
-        // Arte da marca, sumindo embaixo para a página continuar.
-        Positioned.fill(
-          bottom: 40,
-          child: ShaderMask(
-            blendMode: BlendMode.dstIn,
-            shaderCallback: (rect) => const LinearGradient(
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-              colors: [Colors.white, Colors.white, Colors.transparent],
-              stops: [0.0, 0.62, 1.0],
-            ).createShader(rect),
-            child: HomeBrandBackdrop(style: a),
+    return Padding(
+      padding: EdgeInsets.fromLTRB(
+        AppSpace.screen,
+        top + AppSpace.sm,
+        AppSpace.screen,
+        0,
+      ),
+      child: Column(
+        children: [
+          if (onBack != null || onSettings != null)
+            TopBar(
+              inline: true,
+              immersive: true,
+              dark: a.onDark,
+              title: l10n.profileTitle,
+              subtitle: l10n.profileYourJourney,
+              leadingGlyph: CinematicGlyph.spark,
+              onBack: onBack,
+              onTrailingTap: onSettings,
+              trailingGlyph: CinematicGlyph.tune,
+            ),
+          const SizedBox(height: AppSpace.afterTopBar),
+          _GlowPortrait(
+            child: UserAvatar(
+              name: displayName,
+              photoUrl: photoUrl,
+              seed: seed,
+              style: style,
+              radius: AppMetrics.avatarHero,
+              borderColor: AppRoles.chrome,
+              editable: onEditPortrait != null,
+              onTap: onEditPortrait,
+            ),
           ),
-        ),
-        Padding(
-          padding: EdgeInsets.fromLTRB(
-            AppSpace.screen,
-            top + AppSpace.sm,
-            AppSpace.screen,
-            0,
+          const SizedBox(height: AppSpace.lg),
+          Text(
+            displayName,
+            textAlign: TextAlign.center,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: AppTypography.display(
+              size: 28,
+              weight: FontWeight.w900,
+              height: 1.05,
+              color: a.text,
+            ),
           ),
-          child: Column(
-            children: [
-              if (onBack != null || onSettings != null)
-                TopBar(
-                  inline: true,
-                  immersive: true,
-                  dark: a.onDark,
-                  title: l10n.profileTitle,
-                  subtitle: l10n.profileYourJourney,
-                  leadingGlyph: CinematicGlyph.spark,
-                  onBack: onBack,
-                  onTrailingTap: onSettings,
-                  trailingGlyph: CinematicGlyph.tune,
-                ),
-              const SizedBox(height: AppSpace.afterTopBar),
-              _GlowPortrait(
-                child: UserAvatar(
-                  name: displayName,
-                  photoUrl: photoUrl,
-                  seed: seed,
-                  style: style,
-                  radius: 52,
-                  borderColor: AppColors.accent,
-                  editable: onEditPortrait != null,
-                  onTap: onEditPortrait,
-                ),
+          if ((epithet ?? '').isNotEmpty) ...[
+            const SizedBox(height: 6),
+            Text(
+              epithet!,
+              textAlign: TextAlign.center,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              style: AppTypography.body(
+                size: 14,
+                weight: FontWeight.w800,
+                color: epithetColor ?? AppRoles.chrome,
               ),
-              const SizedBox(height: AppSpace.lg),
-              Text(
-                displayName,
-                textAlign: TextAlign.center,
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-                style: AppTypography.display(
-                  size: 28,
-                  weight: FontWeight.w900,
-                  height: 1.05,
-                  color: a.text,
-                ),
+            ),
+          ],
+          if ((sinceLabel ?? '').isNotEmpty) ...[
+            const SizedBox(height: 4),
+            Text(
+              sinceLabel!,
+              textAlign: TextAlign.center,
+              style: AppTypography.body(
+                size: 13,
+                weight: FontWeight.w600,
+                color: a.textSecondary,
               ),
-              if ((epithet ?? '').isNotEmpty) ...[
-                const SizedBox(height: 6),
-                Text(
-                  epithet!,
-                  textAlign: TextAlign.center,
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
-                  style: AppTypography.body(
-                    size: 14,
-                    weight: FontWeight.w800,
-                    color: epithetColor ?? AppColors.accent,
-                  ),
-                ),
-              ],
-              if ((sinceLabel ?? '').isNotEmpty) ...[
-                const SizedBox(height: 4),
-                Text(
-                  sinceLabel!,
-                  textAlign: TextAlign.center,
-                  style: AppTypography.body(
-                    size: 13,
-                    weight: FontWeight.w600,
-                    color: a.textSecondary,
-                  ),
-                ),
-              ],
-              const SizedBox(height: AppSpace.xl),
-              _HeroStats(
-                steps: steps,
-                missions: missions,
-                accuracyPercent: accuracyPercent,
-              ),
-            ],
+            ),
+          ],
+          const SizedBox(height: AppSpace.xl),
+          _HeroStats(
+            steps: steps,
+            missions: missions,
+            accuracyPercent: accuracyPercent,
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
 
-/// Anel de ouro que respira devagar em volta do retrato.
+/// Brilho neutro que respira devagar em volta do retrato.
 class _GlowPortrait extends StatefulWidget {
   final Widget child;
 
@@ -232,7 +213,7 @@ class _GlowPortraitState extends State<_GlowPortrait>
               shape: BoxShape.circle,
               boxShadow: [
                 BoxShadow(
-                  color: AppColors.accent.withValues(alpha: 0.18 + 0.16 * t),
+                  color: AppRoles.chrome.withValues(alpha: 0.1 + 0.1 * t),
                   blurRadius: 26 + 14 * t,
                 ),
               ],
@@ -266,25 +247,24 @@ class _HeroStats extends StatelessWidget {
         pilgrimFormatCount(steps),
         l10n.pilgrimStatSteps,
         CinematicGlyph.path,
-        AppColors.accent,
+        AppRoles.reward,
       ),
       (
         pilgrimFormatCount(missions),
         l10n.pilgrimStatScenes,
         CinematicGlyph.scroll,
-        AppColors.teal,
+        AppRoles.success,
       ),
       if (accuracyPercent != null)
         (
           '$accuracyPercent%',
           l10n.pilgrimAccuracyTitle,
           CinematicGlyph.check,
-          AppColors.orchid,
+          AppRoles.success,
         ),
     ];
     return GlassCard(
       padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
-      color: a.cardFill.withValues(alpha: 0.92),
       child: Row(
         children: [
           for (var i = 0; i < items.length; i++) ...[
@@ -300,7 +280,7 @@ class _HeroStats extends StatelessWidget {
                       children: [
                         CinematicIcon(
                           glyph: items[i].$3,
-                          size: 16,
+                          size: AppMetrics.iconSm,
                           accent: items[i].$4,
                           framed: false,
                         ),
@@ -482,8 +462,8 @@ class _ConstancyCardState extends State<ConstancyCard> {
                                   text: SpiritualGrowth.fromStreak(
                                     streak,
                                   ).title,
-                                  accent: AppColors.streak,
-                                  textColor: AppColors.streak,
+                                  accent: AppRoles.streak,
+                                  textColor: AppRoles.streak,
                                   bordered: false,
                                 ),
                               ],
@@ -535,12 +515,9 @@ class _ConstancyCardState extends State<ConstancyCard> {
                     Expanded(
                       child: SectionLabel(l10n.profileWeekHistory),
                     ),
-                    Icon(
-                      _historyOpen
-                          ? Icons.expand_less_rounded
-                          : Icons.expand_more_rounded,
-                      size: 22,
-                      color: a.textSecondary,
+                    RotatedBox(
+                      quarterTurns: _historyOpen ? 3 : 1,
+                      child: ListChevron(color: a.textSecondary),
                     ),
                   ],
                 ),
@@ -606,7 +583,7 @@ class _WeekDots extends StatelessWidget {
                 style: AppTypography.body(
                   size: 12,
                   weight: FontWeight.w700,
-                  color: count > 0 ? AppColors.accent : a.textFaint,
+                  color: count > 0 ? AppRoles.streak : a.textFaint,
                 ),
               ),
             ],
@@ -656,22 +633,24 @@ class _DayDot extends StatelessWidget {
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             color: on
-                ? AppColors.accent
+                ? AppRoles.streak
                 : future
                 ? Colors.transparent
-                : a.text.withValues(alpha: 0.07),
+                : a.divider,
             border: on
                 ? null
                 : Border.all(
                     color: isToday
-                        ? AppColors.accent
-                        : a.text.withValues(alpha: future ? 0.08 : 0),
+                        ? AppRoles.streak
+                        : future
+                        ? a.divider
+                        : Colors.transparent,
                     width: isToday ? 2 : 1,
                   ),
             boxShadow: on
                 ? [
                     BoxShadow(
-                      color: AppColors.accent.withValues(alpha: 0.4),
+                      color: AppRoles.streak.withValues(alpha: 0.4),
                       blurRadius: 10,
                     ),
                   ]
@@ -680,8 +659,8 @@ class _DayDot extends StatelessWidget {
           child: on
               ? const CinematicIcon(
                   glyph: CinematicGlyph.check,
-                  size: 18,
-                  accent: AppColors.inkOnAccent,
+                  size: AppMetrics.iconSm,
+                  accent: AppColors.textOnDark,
                   framed: false,
                 )
               : null,
@@ -693,7 +672,7 @@ class _DayDot extends StatelessWidget {
             size: 11,
             weight: FontWeight.w800,
             color: isToday
-                ? AppColors.accent
+                ? AppRoles.streak
                 : (future ? a.textFaint : a.textSecondary),
           ),
         ),
@@ -852,9 +831,7 @@ class _WeekBarState extends State<_WeekBar>
                   style: AppTypography.body(
                     size: 11,
                     weight: FontWeight.w800,
-                    color: AppColors.accent.withValues(
-                      alpha: widget.current ? 1 : 0.8,
-                    ),
+                    color: widget.current ? a.text : a.textSecondary,
                   ),
                 )
               : null,
@@ -910,7 +887,6 @@ class _OilVesselPainter extends CustomPainter {
   // recipiente simples do azeite, sem virar garrafa.
   static const _neckBottom = 0.0;
   static const _rim = 4.0;
-  static const _clay = Color(0xFFC89A6A);
 
   Path _vessel(Size size) {
     final w = size.width;
@@ -936,7 +912,7 @@ class _OilVesselPainter extends CustomPainter {
     final h = size.height;
     final vessel = _vessel(size);
 
-    // Barro claro, translúcido o bastante para ver o azeite.
+    // Vidro translúcido o bastante para ver o azeite.
     canvas.drawPath(
       vessel,
       Paint()
@@ -944,8 +920,8 @@ class _OilVesselPainter extends CustomPainter {
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
           colors: [
-            _clay.withValues(alpha: 0.16),
-            _clay.withValues(alpha: 0.07),
+            glass.withValues(alpha: 0.12),
+            glass.withValues(alpha: 0.05),
           ],
         ).createShader(Offset.zero & size),
     );
@@ -1003,20 +979,16 @@ class _OilVesselPainter extends CustomPainter {
     canvas.drawRRect(
       RRect.fromLTRBR(0, 0, w, _rim, const Radius.circular(2)),
       Paint()
-        ..color = current
-            ? AppColors.accent.withValues(alpha: 0.9)
-            : _clay.withValues(alpha: 0.45),
+        ..color = glass.withValues(alpha: current ? 0.7 : 0.3),
     );
 
-    // Contorno: a semana atual em ouro.
+    // Contorno: a semana atual um pouco mais acesa.
     canvas.drawPath(
       vessel,
       Paint()
         ..style = PaintingStyle.stroke
         ..strokeWidth = current ? 1.4 : 1
-        ..color = current
-            ? AppColors.accent.withValues(alpha: 0.75)
-            : _clay.withValues(alpha: 0.32),
+        ..color = glass.withValues(alpha: current ? 0.55 : 0.22),
     );
   }
 
@@ -1165,7 +1137,7 @@ class _RingPainter extends CustomPainter {
         ..style = PaintingStyle.stroke
         ..strokeWidth = 6
         ..strokeCap = StrokeCap.round
-        ..color = done ? AppColors.accent : AppColors.streak,
+        ..color = done ? AppRoles.reward : AppRoles.streak,
     );
   }
 

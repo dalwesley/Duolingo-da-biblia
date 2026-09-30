@@ -118,7 +118,7 @@ class _PracticeScreenState extends State<PracticeScreen> {
                       subtitle: context.l10n.practiceSubtitle,
                       onBack: () => Navigator.pop(context),
                       leadingGlyph: CinematicGlyph.refresh,
-                      chromeAccent: AppColors.clay,
+                      chromeAccent: AppRoles.chrome,
                     ),
                   ),
                   Expanded(

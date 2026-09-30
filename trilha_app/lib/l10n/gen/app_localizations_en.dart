@@ -1056,6 +1056,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get cornerBoardEmptyTitle => 'No challenges yet';
 
   @override
+  String get cornerBoardFilterEmpty => 'None yet';
+
+  @override
   String get cornerBoardIdle =>
       'No challenge this week. Invite someone from the caravan.';
 
@@ -6184,6 +6187,17 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String recognitionHeadlineWalk(String name) {
     return '$name recognized your scene';
+  }
+
+  @override
+  String get recognitionHomeSeeWho => 'See who recognized you';
+
+  @override
+  String get recognitionHomeTitleMany => 'People recognized your journey';
+
+  @override
+  String recognitionHomeTitleSingle(String name) {
+    return '$name recognized your journey';
   }
 
   @override

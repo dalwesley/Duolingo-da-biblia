@@ -7,7 +7,6 @@ import '../utils/appearance.dart';
 import 'act_feel.dart';
 import 'cinematic_icon.dart';
 import 'immersive_background.dart';
-import 'realm_world_atmosphere.dart';
 import 'ui_primitives.dart';
 
 /// Página de doação no site. O pagamento fica fora do app.
@@ -57,10 +56,9 @@ class DonateCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    // Doar não é recompensa nem a ação da tela: card neutro; o amarelo fica
+    // só no botão.
     return GlassCard(
-      tint: AppColors.accent,
-      glow: 0.45,
-      padding: const EdgeInsets.fromLTRB(18, 18, 18, 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -69,7 +67,7 @@ class DonateCard extends StatelessWidget {
               const CinematicIcon(
                 glyph: CinematicGlyph.gift,
                 size: AppMetrics.leadingIcon,
-                accent: AppColors.accent,
+                accent: AppRoles.chrome,
               ),
               const SizedBox(width: 14),
               Expanded(
@@ -150,7 +148,8 @@ class _HorizonSlotState extends State<_HorizonSlot> {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    const accent = AppColors.accent;
+    // Slot vazio = chrome neutro (tracejado claro); amarelo é só ação/recompensa.
+    final accent = a.textSecondary;
 
     return Listener(
       onPointerDown: (_) => setState(() => _pressed = true),
@@ -172,20 +171,8 @@ class _HorizonSlotState extends State<_HorizonSlot> {
               child: Stack(
                 fit: StackFit.expand,
                 children: [
-                  const DecoratedBox(
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        begin: Alignment.topCenter,
-                        end: Alignment.bottomCenter,
-                        colors: [Color(0xFF0B2430), Color(0xFF071820)],
-                      ),
-                    ),
-                  ),
-                  DecoratedBox(
-                    decoration: BoxDecoration(
-                      color: Colors.black.withValues(alpha: 0.18),
-                    ),
-                  ),
+                  ColoredBox(color: a.cardFill),
+                  ColoredBox(color: a.insetFill),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(20, 22, 20, 16),
                     child: Column(
@@ -196,11 +183,12 @@ class _HorizonSlotState extends State<_HorizonSlot> {
                             behavior: HitTestBehavior.opaque,
                             child: Column(
                               children: [
-                                _PlusMark(
-                                  accent: accent.withValues(alpha: 0.88),
-                                ),
+                                _PlusMark(accent: accent),
                                 const SizedBox(height: 14),
-                                FilmEyebrow(text: widget.eyebrow, accent: accent),
+                                SectionLabel(
+                                  widget.eyebrow,
+                                  textAlign: TextAlign.center,
+                                ),
                                 const SizedBox(height: 10),
                                 Text(
                                   widget.title,
@@ -223,9 +211,10 @@ class _HorizonSlotState extends State<_HorizonSlot> {
                                 ),
                                 const Spacer(),
                                 IgnorePointer(
-                                  child: OutlineCta(
+                                  child: GhostCta(
                                     label: widget.primaryLabel,
                                     leading: widget.primaryGlyph,
+                                    expanded: true,
                                     onTap: () {},
                                   ),
                                 ),
@@ -235,9 +224,10 @@ class _HorizonSlotState extends State<_HorizonSlot> {
                         ),
                         if (_hasSecondary) ...[
                           const SizedBox(height: 8),
-                          OutlineCta(
+                          GhostCta(
                             label: widget.secondaryLabel!,
                             leading: widget.secondaryGlyph,
+                            expanded: true,
                             onTap: widget.onSecondary,
                           ),
                         ],
@@ -248,7 +238,7 @@ class _HorizonSlotState extends State<_HorizonSlot> {
                     child: IgnorePointer(
                       child: CustomPaint(
                         painter: _DashedRRectPainter(
-                          color: AppColors.accent.withValues(alpha: 0.6),
+                          color: a.textFaint,
                           radius: AppMetrics.heroRadius,
                         ),
                       ),

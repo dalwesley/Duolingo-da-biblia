@@ -12,6 +12,7 @@ import '../utils/trail_visuals.dart';
 import 'cinematic_icon.dart';
 import 'immersive_background.dart';
 import 'mode_emblem.dart';
+import 'relic_panel.dart';
 import 'ui_primitives.dart';
 
 enum JourneyNodeState { locked, upcoming, current, completed, soon }
@@ -77,9 +78,9 @@ class JourneyPath extends StatelessWidget {
         children.add(
           Padding(
             padding: EdgeInsets.only(top: i == 0 ? 4 : 36, bottom: 20),
-            child: _FilmIntertitle(
-              label: item.category.label,
-              description: item.category.description,
+            child: RelicChapter(
+              title: item.category.label,
+              whisper: item.category.description,
               accent: accent,
             ),
           ),
@@ -122,48 +123,6 @@ class JourneyPath extends StatelessWidget {
   }
 }
 
-class _FilmIntertitle extends StatelessWidget {
-  final String label;
-  final String description;
-  final Color accent;
-
-  const _FilmIntertitle({
-    required this.label,
-    required this.description,
-    required this.accent,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        SectionLabel(label, color: accent.withValues(alpha: 0.85)),
-        const SizedBox(height: 10),
-        Container(
-          width: 48,
-          height: 1.5,
-          color: accent.withValues(alpha: 0.45),
-        ),
-        if (description.isNotEmpty) ...[
-          const SizedBox(height: 14),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 28),
-            child: Text(
-              description,
-              textAlign: TextAlign.center,
-              style: AppTypography.body(
-                size: 13,
-                height: 1.45,
-                color: Appearance.of(context).textFaint,
-              ),
-            ),
-          ),
-        ],
-      ],
-    );
-  }
-}
-
 class _PathStation extends StatelessWidget {
   final JourneyPathItem item;
   final JourneyPathItem? nextItem;
@@ -192,6 +151,7 @@ class _PathStation extends StatelessWidget {
     final nextRailColor = nextItem == null
         ? railColor
         : (_stationChromeOf(nextItem!) ?? railColor);
+    final a = Appearance.of(context);
 
     return IntrinsicHeight(
       child: Row(
@@ -213,9 +173,7 @@ class _PathStation extends StatelessWidget {
                     Expanded(
                       child: CustomPaint(
                         painter: _RailPainter(
-                          color: railActive
-                              ? railColor
-                              : Colors.white.withValues(alpha: 0.2),
+                          color: railActive ? railColor : a.progressTrack,
                           endColor: railActive ? nextRailColor : null,
                           active: railActive,
                           seed: item.trail.slug.hashCode ^ item.chapterIndex,
@@ -304,6 +262,7 @@ class _RailBeacon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = isCurrent ? 16.0 : 10.0;
+    final a = Appearance.of(context);
     return SizedBox(
       height: isCurrent ? 26 : 20,
       child: Center(
@@ -314,9 +273,9 @@ class _RailBeacon extends StatelessWidget {
             shape: BoxShape.circle,
             color: isDone || isCurrent
                 ? accent
-                : Colors.white.withValues(alpha: isLocked ? 0.12 : 0.22),
+                : (isLocked ? a.cardBorder : a.progressTrack),
             border: Border.all(
-              color: isCurrent ? accent : Colors.white.withValues(alpha: 0.15),
+              color: isCurrent ? accent : a.cardBorder,
               width: 1.5,
             ),
           ),
@@ -508,7 +467,7 @@ class _HeroStation extends StatelessWidget {
                           SectionLabel(
                             context.l10n.trailsTrailNumber(_roman(item.chapterIndex)),
                             size: 10,
-                            color: modeColor.withValues(alpha: 0.9),
+                            color: modeColor,
                           ),
                           const Spacer(),
                           SoftBadge(
@@ -581,7 +540,7 @@ class _HeroStation extends StatelessWidget {
                           const SizedBox(width: 4),
                           CinematicIcon(
                             glyph: CinematicGlyph.forward,
-                            size: 12,
+                            size: AppMetrics.chipIcon,
                             accent: modeColor,
                             framed: false,
                           ),
@@ -710,9 +669,7 @@ class _QuietStation extends StatelessWidget {
                 overflow: TextOverflow.ellipsis,
                 style: AppTypography.body(
                   size: 12,
-                  color: chrome != null
-                      ? chrome.withValues(alpha: 0.9)
-                      : a.textFaint,
+                  color: chrome ?? a.textFaint,
                 ),
               ),
             ],
@@ -825,8 +782,8 @@ class _QuietLeading extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(AppRadii.sm),
         gradient: isLocked ? null : visuals.iconGradient,
-        color: isLocked ? Colors.white.withValues(alpha: 0.06) : null,
-        border: Border.all(color: Colors.white.withValues(alpha: 0.12)),
+        color: isLocked ? a.insetFill : null,
+        border: Border.all(color: a.cardBorder),
       ),
       child: isDone || isLocked || isSoon
           ? CinematicIcon(
@@ -835,13 +792,13 @@ class _QuietLeading extends StatelessWidget {
                   : isLocked
                   ? CinematicGlyph.lock
                   : CinematicGlyph.calendar,
-              size: 22,
+              size: AppMetrics.iconMd,
               accent: isDone ? accent : (isLocked ? a.textFaint : a.text),
               framed: false,
             )
           : CinematicIcon(
               glyph: visuals.glyph,
-              size: 22,
+              size: AppMetrics.iconMd,
               accent: a.text,
               framed: false,
             ),

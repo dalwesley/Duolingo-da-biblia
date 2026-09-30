@@ -20,7 +20,7 @@ import 'app_sheet.dart';
 import 'cinematic_icon.dart';
 import 'hero_card_atmosphere.dart';
 import 'immersive_background.dart';
-import 'portrait_face.dart';
+import 'user_avatar.dart';
 import 'ui_primitives.dart';
 
 /// Peças da aba Grupos: estudo da semana, quem precisa de um chamado e as
@@ -65,122 +65,107 @@ class RoomStudyCard extends StatelessWidget {
     final meDone = doneList.any((m) => m.isUser);
     final verse = s.verse?.trim();
 
+    // Palco neutro enquanto falta estudar; teal (presença) quando fiz.
     return GlassCard(
-      tint: meDone ? AppColors.teal : AppColors.accent,
+      tint: meDone ? AppRoles.presence : AppRoles.chrome,
       glow: meDone ? 0.3 : 0.75,
       elevated: !meDone,
-      padding: EdgeInsets.zero,
-      child: Stack(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Padding(
-            padding: const EdgeInsets.fromLTRB(18, 16, 8, 18),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Row(
-                  children: [
-                    SectionLabel(
-                      context.l10n.groupWeekStudy,
-                      color: meDone ? AppColors.teal : AppColors.accent,
-                    ),
-                    const Spacer(),
-                    if (isLeader)
-                      TextCta(
-                        label: context.l10n.groupStudySwap,
-                        leading: CinematicGlyph.pencil,
-                        onTap: onPick,
-                      ),
-                  ],
+          Row(
+            children: [
+              SectionLabel(context.l10n.groupWeekStudy),
+              const Spacer(),
+              if (isLeader)
+                TextCta(
+                  label: context.l10n.groupStudySwap,
+                  leading: CinematicGlyph.pencil,
+                  onTap: onPick,
                 ),
-                Padding(
-                  padding: const EdgeInsets.only(right: 10),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      Text(
-                        s.title,
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                        style: AppTypography.display(
-                          size: 24,
-                          height: 1.08,
-                          color: a.text,
-                        ),
-                      ),
-                      if (verse != null && verse.isNotEmpty) ...[
-                        const SizedBox(height: AppSpace.md),
-                        _VerseStage(text: verse, reference: s.verseRef),
-                      ] else if (s.verseRef != null &&
-                          s.verseRef!.isNotEmpty) ...[
-                        const SizedBox(height: 4),
-                        Text(
-                          s.verseRef!,
-                          style: AppTypography.body(
-                            size: 13,
-                            weight: FontWeight.w700,
-                            color: AppColors.accent.withValues(alpha: 0.9),
-                          ),
-                        ),
-                      ],
-                      if (s.note != null && s.note!.isNotEmpty) ...[
-                        const SizedBox(height: AppSpace.md),
-                        _LeaderNote(
-                          title: context.l10n.groupLeaderNoteTitle(
-                            room.kind.leaderTitle,
-                            _firstName(room.ownerName),
-                          ),
-                          note: s.note!,
-                        ),
-                      ],
-                      if (total > 0) ...[
-                        const SizedBox(height: AppSpace.lg),
-                        Row(
-                          children: [
-                            _FaceRow(people: doneList, size: 24),
-                            if (doneList.isNotEmpty)
-                              const SizedBox(width: AppSpace.sm),
-                            Expanded(
-                              child: Text(
-                                doneList.isEmpty
-                                    ? context.l10n.groupStudyNobodyYet
-                                    : context.l10n.groupStudyDoneCount(
-                                        doneList.length,
-                                        total,
-                                      ),
-                                style: AppTypography.body(
-                                  size: 13,
-                                  weight: FontWeight.w700,
-                                  color: a.textSecondary,
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                        const SizedBox(height: AppSpace.sm),
-                        AppProgressBar(
-                          value: (doneList.length / total).clamp(0.0, 1.0),
-                          color: AppColors.teal,
-                        ),
-                      ],
-                      const SizedBox(height: AppSpace.lg),
-                      if (meDone)
-                        GhostCta(
-                          label: context.l10n.groupStudyAgain,
-                          leading: CinematicGlyph.check,
-                          expanded: true,
-                          onTap: onOpen,
-                        )
-                      else
-                        CopperCta(
-                          label: context.l10n.groupStudyCta,
-                          onTap: onOpen,
-                          leading: CinematicGlyph.book,
-                        ),
-                    ],
+            ],
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Text(
+                s.title,
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                style: AppTypography.display(
+                  size: 24,
+                  height: 1.08,
+                  color: a.text,
+                ),
+              ),
+              if (verse != null && verse.isNotEmpty) ...[
+                const SizedBox(height: AppSpace.md),
+                _VerseStage(text: verse, reference: s.verseRef),
+              ] else if (s.verseRef != null && s.verseRef!.isNotEmpty) ...[
+                const SizedBox(height: 4),
+                Text(
+                  s.verseRef!,
+                  style: AppTypography.body(
+                    size: 13,
+                    weight: FontWeight.w700,
+                    color: a.textSecondary,
                   ),
                 ),
               ],
-            ),
+              if (s.note != null && s.note!.isNotEmpty) ...[
+                const SizedBox(height: AppSpace.md),
+                _LeaderNote(
+                  title: context.l10n.groupLeaderNoteTitle(
+                    room.kind.leaderTitle,
+                    _firstName(room.ownerName),
+                  ),
+                  note: s.note!,
+                ),
+              ],
+              if (total > 0) ...[
+                const SizedBox(height: AppSpace.lg),
+                Row(
+                  children: [
+                    _FaceRow(people: doneList),
+                    if (doneList.isNotEmpty) const SizedBox(width: AppSpace.sm),
+                    Expanded(
+                      child: Text(
+                        doneList.isEmpty
+                            ? context.l10n.groupStudyNobodyYet
+                            : context.l10n.groupStudyDoneCount(
+                                doneList.length,
+                                total,
+                              ),
+                        style: AppTypography.body(
+                          size: 13,
+                          weight: FontWeight.w700,
+                          color: a.textSecondary,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: AppSpace.sm),
+                AppProgressBar(
+                  value: (doneList.length / total).clamp(0.0, 1.0),
+                  color: AppRoles.presence,
+                ),
+              ],
+              const SizedBox(height: AppSpace.lg),
+              if (meDone)
+                GhostCta(
+                  label: context.l10n.groupStudyAgain,
+                  leading: CinematicGlyph.check,
+                  expanded: true,
+                  onTap: onOpen,
+                )
+              else
+                CopperCta(
+                  label: context.l10n.groupStudyCta,
+                  onTap: onOpen,
+                  leading: CinematicGlyph.book,
+                ),
+            ],
           ),
         ],
       ),
@@ -205,55 +190,22 @@ class _EmptyStage extends StatelessWidget {
     final a = Appearance.of(context);
     return GlassCard(
       glow: isLeader ? 0.55 : null,
-      padding: const EdgeInsets.fromLTRB(18, 18, 18, 18),
+      tint: isLeader ? AppRoles.chrome : null,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          SectionLabel(
-            context.l10n.groupWeekStudy,
-            color: AppColors.accent,
-          ),
+          SectionLabel(context.l10n.groupWeekStudy),
           const SizedBox(height: AppSpace.md),
           CustomPaint(
-            painter: _DashedFramePainter(color: a.textMuted(0.18)),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 22, horizontal: 16),
-              child: Column(
-                children: [
-                  CinematicIcon(
-                    glyph: CinematicGlyph.scroll,
-                    size: 34,
-                    accent: AppColors.accent.withValues(alpha: 0.8),
-                    framed: false,
-                  ),
-                  const SizedBox(height: AppSpace.sm),
-                  Text(
-                    isLeader
-                        ? context.l10n.groupEmptyLeaderTitle
-                        : context.l10n.groupEmptyMemberTitle,
-                    textAlign: TextAlign.center,
-                    style: AppTypography.verse(
-                      size: 20,
-                      fontStyle: FontStyle.italic,
-                      color: a.text,
-                    ),
-                  ),
-                  const SizedBox(height: 6),
-                  Text(
-                    isLeader
-                        ? context.l10n.groupEmptyLeaderBody
-                        : context.l10n.groupEmptyMemberBody(
-                            room.kind.leaderTitle,
-                          ),
-                    textAlign: TextAlign.center,
-                    style: AppTypography.body(
-                      size: 13,
-                      height: 1.35,
-                      color: a.textSecondary,
-                    ),
-                  ),
-                ],
-              ),
+            painter: _DashedFramePainter(color: a.textFaint),
+            child: EmptyState(
+              glyph: CinematicGlyph.scroll,
+              title: isLeader
+                  ? context.l10n.groupEmptyLeaderTitle
+                  : context.l10n.groupEmptyMemberTitle,
+              body: isLeader
+                  ? context.l10n.groupEmptyLeaderBody
+                  : context.l10n.groupEmptyMemberBody(room.kind.leaderTitle),
             ),
           ),
           if (isLeader) ...[
@@ -272,7 +224,7 @@ class _EmptyStage extends StatelessWidget {
   }
 }
 
-/// Trecho da Palavra com fio dourado à esquerda.
+/// Trecho da Palavra com fio claro (chrome) à esquerda.
 class _VerseStage extends StatelessWidget {
   final String text;
   final String? reference;
@@ -294,8 +246,8 @@ class _VerseStage extends StatelessWidget {
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
                 colors: [
-                  AppColors.accent,
-                  AppColors.accent.withValues(alpha: 0.1),
+                  AppRoles.chrome,
+                  AppRoles.chrome.withValues(alpha: 0.1),
                 ],
               ),
             ),
@@ -318,11 +270,7 @@ class _VerseStage extends StatelessWidget {
                 ),
                 if (reference != null && reference!.isNotEmpty) ...[
                   const SizedBox(height: 6),
-                  SectionLabel(
-                    reference!,
-                    size: 10,
-                    color: AppColors.accent.withValues(alpha: 0.9),
-                  ),
+                  SectionLabel(reference!, size: 10),
                 ],
               ],
             ),
@@ -351,8 +299,8 @@ class _LeaderNote extends StatelessWidget {
             padding: const EdgeInsets.only(top: 2),
             child: CinematicIcon(
               glyph: CinematicGlyph.mail,
-              size: 16,
-              accent: AppColors.accent.withValues(alpha: 0.85),
+              size: AppMetrics.iconSm,
+              accent: AppRoles.chrome,
               framed: false,
             ),
           ),
@@ -383,9 +331,9 @@ class _LeaderNote extends StatelessWidget {
 /// Rostos sobrepostos de quem já fez.
 class _FaceRow extends StatelessWidget {
   final List<RoomMember> people;
-  final double size;
+  static const size = AppMetrics.avatarSm * 2;
 
-  const _FaceRow({required this.people, this.size = 24});
+  const _FaceRow({required this.people});
 
   @override
   Widget build(BuildContext context) {
@@ -400,22 +348,14 @@ class _FaceRow extends StatelessWidget {
           for (var i = 0; i < shown.length; i++)
             Positioned(
               left: step * i,
-              child: Container(
-                width: size,
-                height: size,
-                clipBehavior: Clip.antiAlias,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: AppColors.nightMid,
-                  border: Border.all(color: AppColors.night, width: 1.5),
-                ),
-                child: PortraitFace(
-                  name: shown[i].name,
-                  photoUrl: shown[i].photoUrl,
-                  seed: shown[i].uid,
-                  size: size,
-                  style: shown[i].portraitStyle,
-                ),
+              // Borda escura separa os rostos sobrepostos.
+              child: UserAvatar(
+                name: shown[i].name,
+                photoUrl: shown[i].photoUrl,
+                seed: shown[i].uid,
+                radius: size / 2,
+                style: shown[i].portraitStyle,
+                borderColor: AppColors.night,
               ),
             ),
         ],
@@ -477,41 +417,32 @@ Future<bool?> showRoomSeatSheet(
           !member.walkedThisWeek &&
           (member.daysSinceWalk() == null ||
               member.daysSinceWalk()! >= kRoomCallAfterDays);
-      final face = PortraitFace(
+      // "Estudou hoje" = presença (teal): anel e halo.
+      final face = UserAvatar(
         name: member.name,
         photoUrl: member.photoUrl,
         seed: member.uid,
-        size: 84,
+        radius: AppMetrics.avatarLg,
         style: member.portraitStyle,
+        borderColor: today ? AppRoles.presence : a.cardBorder,
       );
       return AppSheetPanel(
-        tint: today ? AppColors.accent : null,
+        tint: today ? AppRoles.presence : null,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Center(
-              child: Container(
-                width: 84,
-                height: 84,
-                clipBehavior: Clip.antiAlias,
+              child: DecoratedBox(
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: AppColors.nightMid,
                   boxShadow: today
                       ? [
                           BoxShadow(
-                            color: AppColors.accent.withValues(alpha: 0.4),
+                            color: AppRoles.presence.withValues(alpha: 0.4),
                             blurRadius: 22,
                           ),
                         ]
                       : null,
-                ),
-                foregroundDecoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  border: Border.all(
-                    color: today ? AppColors.accent : a.cardBorder,
-                    width: 2,
-                  ),
                 ),
                 child: quiet
                     ? HeroCardColorGrade(mood: HeroCardMood.dusty, child: face)
@@ -529,7 +460,7 @@ Future<bool?> showRoomSeatSheet(
                 child: SoftBadge(
                   text: leaderTitle,
                   glyph: CinematicGlyph.crown,
-                  accent: AppColors.accent,
+                  accent: AppRoles.chrome,
                 ),
               ),
             ],
@@ -540,7 +471,7 @@ Future<bool?> showRoomSeatSheet(
               style: AppTypography.body(
                 size: 14,
                 weight: FontWeight.w700,
-                color: today ? AppColors.accent : a.textSecondary,
+                color: today ? AppRoles.presence : a.textSecondary,
               ),
             ),
             const SizedBox(height: AppSpace.lg),
@@ -617,8 +548,7 @@ class _SeatStat extends StatelessWidget {
             value,
             style: AppTypography.title(
               size: 18,
-              weight: FontWeight.w900,
-              color: highlight ? AppColors.teal : a.text,
+              color: highlight ? AppRoles.presence : a.text,
             ),
           ),
           const SizedBox(height: 2),
@@ -664,15 +594,15 @@ class _WeekDaysStrip extends StatelessWidget {
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   color: days.contains(d)
-                      ? AppColors.accent
+                      ? AppRoles.presence
                       : d > today
                       ? Colors.transparent
                       : a.cardFillSoft,
                   border: Border.all(
                     color: d == today
-                        ? AppColors.accent
+                        ? AppRoles.selected
                         : days.contains(d)
-                        ? AppColors.accent
+                        ? AppRoles.presence
                         : a.cardBorder,
                     width: d == today ? 2 : 1,
                   ),
@@ -681,8 +611,8 @@ class _WeekDaysStrip extends StatelessWidget {
                     ? const Center(
                         child: CinematicIcon(
                           glyph: CinematicGlyph.check,
-                          size: 14,
-                          accent: AppColors.inkOnAccent,
+                          size: AppMetrics.chipIcon,
+                          accent: AppColors.night,
                           framed: false,
                         ),
                       )
@@ -694,7 +624,7 @@ class _WeekDaysStrip extends StatelessWidget {
                 style: AppTypography.label(
                   size: 10,
                   letterSpacing: 0.4,
-                  color: d == today ? AppColors.accent : a.textFaint,
+                  color: d == today ? a.text : a.textFaint,
                 ),
               ),
             ],
@@ -847,18 +777,22 @@ class _KindChip extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 9),
         decoration: BoxDecoration(
           color: selected
-              ? AppColors.accent.withValues(alpha: 0.16)
+              ? AppRoles.selected.withValues(alpha: 0.12)
               : a.cardFillSoft,
           borderRadius: BorderRadius.circular(AppRadii.pill),
-          border: Border.all(color: selected ? AppColors.accent : a.cardBorder),
+          border: Border.all(
+            color: selected
+                ? AppRoles.selected.withValues(alpha: 0.7)
+                : a.cardBorder,
+          ),
         ),
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
             CinematicIcon(
               glyph: kind.glyph,
-              size: 16,
-              accent: selected ? AppColors.accent : a.textSecondary,
+              size: AppMetrics.chipIcon,
+              accent: selected ? AppRoles.selected : a.textSecondary,
               framed: false,
             ),
             const SizedBox(width: 6),
@@ -867,7 +801,7 @@ class _KindChip extends StatelessWidget {
               style: AppTypography.body(
                 size: 13,
                 weight: FontWeight.w800,
-                color: selected ? AppColors.accent : a.text,
+                color: selected ? AppRoles.selected : a.text,
               ),
             ),
           ],
@@ -1000,13 +934,27 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
             Row(
               children: [
                 if (_trail != null)
-                  IconButton(
-                    onPressed: _back,
-                    icon: CinematicIcon(
-                      glyph: CinematicGlyph.back,
-                      size: 20,
-                      accent: a.text,
-                      framed: false,
+                  Semantics(
+                    button: true,
+                    label: context.l10n.commonBack,
+                    child: GestureDetector(
+                      behavior: HitTestBehavior.opaque,
+                      onTap: () {
+                        ActHaptics.tap();
+                        _back();
+                      },
+                      child: SizedBox(
+                        width: 48,
+                        height: 48,
+                        child: Center(
+                          child: CinematicIcon(
+                            glyph: CinematicGlyph.back,
+                            size: AppMetrics.iconMd,
+                            accent: a.text,
+                            framed: false,
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                 Expanded(
@@ -1122,16 +1070,7 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
                     ? const SizedBox(
                         key: ValueKey('loading'),
                         height: 48,
-                        child: Center(
-                          child: SizedBox(
-                            width: 18,
-                            height: 18,
-                            child: CircularProgressIndicator(
-                              strokeWidth: 2,
-                              color: AppColors.accent,
-                            ),
-                          ),
-                        ),
+                        child: Center(child: AppSpinner(inline: true)),
                       )
                     : stage.verse != null
                     ? _VerseStage(
@@ -1144,7 +1083,7 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
                         key: const ValueKey('ref'),
                         style: AppTypography.body(
                           size: 13,
-                          color: AppColors.accent.withValues(alpha: 0.9),
+                          color: a.textSecondary,
                         ),
                       ),
               ),
@@ -1257,7 +1196,7 @@ class _TrailDisc extends StatelessWidget {
       child: Center(
         child: CinematicIcon(
           glyph: visuals.glyph,
-          size: 20,
+          size: AppMetrics.iconMd,
           accent: AppColors.inkOnAccent,
           framed: false,
         ),
@@ -1284,14 +1223,7 @@ class _SceneNumber extends StatelessWidget {
         border: Border.all(color: accent.withValues(alpha: 0.55)),
       ),
       child: Center(
-        child: Text(
-          '$n',
-          style: AppTypography.title(
-            size: 13,
-            weight: FontWeight.w900,
-            color: accent,
-          ),
-        ),
+        child: Text('$n', style: AppTypography.title(size: 14, color: accent)),
       ),
     );
   }
@@ -1318,7 +1250,7 @@ Future<RoomMenuAction?> showRoomMenu(
         bool danger = false,
       }) {
         final a = Appearance.of(ctx);
-        final ink = danger ? AppColors.error : a.text;
+        final ink = danger ? AppRoles.risk : a.text;
         return InkWell(
           onTap: () => Navigator.pop(ctx, action),
           borderRadius: BorderRadius.circular(AppRadii.sm),
@@ -1329,7 +1261,7 @@ Future<RoomMenuAction?> showRoomMenu(
                 CinematicIcon(
                   glyph: glyph,
                   size: AppMetrics.leadingIcon,
-                  accent: danger ? AppColors.error : AppColors.accent,
+                  accent: danger ? AppRoles.risk : AppRoles.chrome,
                 ),
                 const SizedBox(width: AppSpace.md),
                 Expanded(
@@ -1387,7 +1319,7 @@ Future<RoomMenuAction?> showRoomMenu(
             ],
             const Padding(
               padding: EdgeInsets.symmetric(vertical: AppSpace.sm),
-              child: Divider(height: 1),
+              child: ListDivider(),
             ),
             item(
               RoomMenuAction.leave,
@@ -1447,11 +1379,11 @@ Future<RoomMember?> showRoomMemberPicker(
                           padding: const EdgeInsets.symmetric(vertical: 8),
                           child: Row(
                             children: [
-                              PortraitFace(
+                              UserAvatar(
                                 name: m.name,
                                 photoUrl: m.photoUrl,
                                 seed: m.uid,
-                                size: 34,
+                                radius: AppMetrics.avatarMd,
                                 style: m.portraitStyle,
                               ),
                               const SizedBox(width: 12),
@@ -1505,23 +1437,19 @@ class RoomIncomingInviteCard extends StatelessWidget {
     final from = _firstName(invite.fromName);
     return GlassCard(
       glow: 0.7,
-      tint: AppColors.accent,
-      padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
+      tint: AppRoles.chrome,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          SectionLabel(
-            context.l10n.groupInviteLabel,
-            color: AppColors.accent,
-          ),
+          SectionLabel(context.l10n.groupInviteLabel),
           const SizedBox(height: AppSpace.sm),
           Row(
             children: [
-              PortraitFace(
+              UserAvatar(
                 name: invite.fromName,
                 photoUrl: invite.fromPhotoUrl,
                 seed: invite.fromUid,
-                size: 42,
+                radius: AppMetrics.avatarMd,
               ),
               const SizedBox(width: 12),
               Expanded(
@@ -1558,10 +1486,7 @@ class RoomIncomingInviteCard extends StatelessWidget {
           ),
           const SizedBox(height: AppSpace.xs),
           Center(
-            child: TextCta(
-              label: context.l10n.commonNotNow,
-              onTap: onDecline,
-            ),
+            child: TextCta(label: context.l10n.commonNotNow, onTap: onDecline),
           ),
         ],
       ),
@@ -1689,16 +1614,9 @@ class _RoomCallSheetState extends State<_RoomCallSheet> {
             ),
             const SizedBox(height: AppSpace.md),
             if (people.isEmpty)
-              Padding(
-                padding: const EdgeInsets.only(bottom: AppSpace.md),
-                child: Text(
-                  context.l10n.groupCallEmpty,
-                  style: AppTypography.body(
-                    size: 13,
-                    height: 1.35,
-                    color: a.textSecondary,
-                  ),
-                ),
+              EmptyState(
+                glyph: CinematicGlyph.people,
+                title: context.l10n.groupCallEmpty,
               )
             else
               Flexible(
@@ -1720,9 +1638,26 @@ class _RoomCallSheetState extends State<_RoomCallSheet> {
               ),
             if (_error != null) ...[
               const SizedBox(height: AppSpace.sm),
-              Text(
-                _error!,
-                style: AppTypography.body(size: 12, color: AppColors.error),
+              GlassCard(
+                tint: AppRoles.error,
+                padding: AppMetrics.cardPaddingCompact,
+                child: Row(
+                  children: [
+                    const CinematicIcon(
+                      glyph: CinematicGlyph.wrong,
+                      size: AppMetrics.iconSm,
+                      accent: AppRoles.error,
+                      framed: false,
+                    ),
+                    const SizedBox(width: AppSpace.sm),
+                    Expanded(
+                      child: Text(
+                        _error!,
+                        style: AppTypography.body(size: 12, color: a.text),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ],
             if (full) ...[
@@ -1732,7 +1667,7 @@ class _RoomCallSheetState extends State<_RoomCallSheet> {
                 style: AppTypography.body(
                   size: 12,
                   weight: FontWeight.w700,
-                  color: AppColors.streak,
+                  color: AppRoles.risk,
                 ),
               ),
             ],
@@ -1774,11 +1709,11 @@ class _CaravanInviteRow extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 4),
       child: Row(
         children: [
-          PortraitFace(
+          UserAvatar(
             name: person.name,
             photoUrl: person.photoUrl,
             seed: person.uid ?? person.name,
-            size: 36,
+            radius: AppMetrics.avatarMd,
             style: person.portraitStyle,
           ),
           const SizedBox(width: 10),
@@ -1796,7 +1731,7 @@ class _CaravanInviteRow extends StatelessWidget {
               style: AppTypography.body(
                 size: 13,
                 weight: FontWeight.w800,
-                color: AppColors.accent,
+                color: AppRoles.success,
               ),
             ),
             const SizedBox(width: 4),
@@ -1809,7 +1744,7 @@ class _CaravanInviteRow extends StatelessWidget {
               label: busy
                   ? context.l10n.groupInviteSending
                   : context.l10n.groupInviteCta,
-              color: AppColors.accent,
+              color: AppRoles.action,
               onTap: !enabled || busy ? null : onInvite,
             ),
         ],

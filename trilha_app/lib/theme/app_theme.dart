@@ -158,7 +158,7 @@ class AppTypography {
   static TextStyle label({
     double size = 11,
     FontWeight weight = FontWeight.w800,
-    Color color = AppColors.accent,
+    Color color = AppRoles.chrome,
     double letterSpacing = 1.6,
     bool exact = false,
   }) => GoogleFonts.exo2(
@@ -264,7 +264,7 @@ class AppTheme {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(AppRadii.sm),
-          borderSide: const BorderSide(color: AppColors.accent, width: 2),
+          borderSide: const BorderSide(color: AppRoles.selected, width: 2),
         ),
       ),
       cardTheme: CardThemeData(
@@ -309,7 +309,7 @@ class AppTheme {
         ),
       ),
       progressIndicatorTheme: const ProgressIndicatorThemeData(
-        color: AppColors.accent,
+        color: AppRoles.chrome,
         linearTrackColor: Colors.white12,
       ),
       snackBarTheme: SnackBarThemeData(
@@ -324,7 +324,7 @@ class AppTheme {
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppRadii.md),
           side: BorderSide(
-            color: AppColors.accent.withValues(alpha: 0.7),
+            color: AppRoles.chrome.withValues(alpha: 0.4),
             width: 1.5,
           ),
         ),

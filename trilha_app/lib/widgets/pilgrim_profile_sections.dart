@@ -46,7 +46,7 @@ Color pilgrimRankAccent(int rank) => switch (rank) {
   1 => AppColors.medalGold,
   2 => AppColors.medalSilver,
   3 => AppColors.medalBronze,
-  _ => AppColors.accent,
+  _ => AppRoles.chrome,
 };
 
 String pilgrimFormatDate(String? yyyyMmDd, {String empty = '—'}) {
@@ -259,11 +259,9 @@ class PilgrimProfileDetailSections extends StatelessWidget {
       if (featured == null) {
         add(
           RelicPanel(
-            accent: AppColors.cedar,
             child: RelicChapter(
               title: L10n.current.pilgrimTrail,
               whisper: L10n.current.pilgrimNoTrailYet,
-              accent: AppColors.cedar,
               action: PrivacyEye(
                 sections: const {CaravanProfileSection.trails},
                 label: L10n.current.pilgrimSealsAndTrails,
@@ -301,14 +299,14 @@ class PilgrimProfileDetailSections extends StatelessWidget {
           : null;
       final accuracy = showAccuracy
           ? RelicPanel(
-              accent: AppColors.teal,
+              accent: AppRoles.success,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   RelicChapter(
                     title: L10n.current.pilgrimAccuracyTitle,
                     whisper: pilgrimAccuracyEpithet(profile.accuracyPercent!),
-                    accent: AppColors.teal,
+                    accent: AppRoles.success,
                   ),
                   const SizedBox(height: 16),
                   PilgrimPrecisionArc(
@@ -340,11 +338,9 @@ class PilgrimProfileDetailSections extends StatelessWidget {
     if (!isOwner && sections.isEmpty && !suppressEmptyState) {
       add(
         RelicPanel(
-          accent: AppColors.slate,
           child: RelicChapter(
             title: L10n.current.pilgrimPrivateTitle,
             whisper: L10n.current.pilgrimPrivateBody,
-            accent: AppColors.slate,
           ),
         ),
       );
@@ -366,14 +362,12 @@ class PilgrimProfileDetailSections extends StatelessWidget {
         ? l10n.pilgrimChaptersWordMedal(chapters)
         : l10n.pilgrimChaptersBooks(chapters, books);
     return RelicPanel(
-      accent: AppColors.cedar,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           RelicChapter(
             title: l10n.pilgrimScriptures,
             whisper: subtitle,
-            accent: AppColors.cedar,
             action: PrivacyEye(
               sections: const {CaravanProfileSection.bible},
               label: l10n.pilgrimScriptures,
@@ -534,7 +528,7 @@ class PilgrimScenePoster extends StatelessWidget {
               style: AppTypography.label(
                 size: 11,
                 letterSpacing: 1.2,
-                color: AppColors.accent.withValues(alpha: 0.85),
+                color: a.sectionLabel,
               ),
             ),
           ],
@@ -583,14 +577,14 @@ class PilgrimPresenceTimeline extends StatelessWidget {
         glyph: CinematicGlyph.path,
         label: context.l10n.pilgrimWalked,
         value: walk,
-        accent: AppColors.cedar,
+        accent: AppRoles.success,
         live: walkedToday,
       ),
       _PilgrimTimelineStop(
         glyph: CinematicGlyph.calendar,
         label: context.l10n.pilgrimSeen,
         value: online,
-        accent: AppColors.teal,
+        accent: AppRoles.presence,
         live: onlineToday,
       ),
       if (streak != null)
@@ -598,7 +592,7 @@ class PilgrimPresenceTimeline extends StatelessWidget {
           glyph: CinematicGlyph.flame,
           label: context.l10n.pilgrimStreak,
           value: streak!,
-          accent: AppColors.streak,
+          accent: AppRoles.streak,
           live: false,
         ),
     ];
@@ -671,11 +665,7 @@ class _PilgrimTimelineNode extends StatelessWidget {
             textAlign: TextAlign.center,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: AppTypography.title(
-              size: 12,
-              weight: FontWeight.w900,
-              color: a.text,
-            ),
+            style: AppTypography.title(size: 12, color: a.text),
           ),
           const SizedBox(height: 2),
           Text(
@@ -709,11 +699,8 @@ class PilgrimPrecisionArc extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final tone = percent >= 80
-        ? AppColors.teal
-        : percent >= 60
-        ? AppColors.accent
-        : AppColors.coral;
+    // Acerto alto = sucesso; abaixo disso, neutro (formando, não erro).
+    final tone = percent >= 80 ? AppRoles.success : AppRoles.chrome;
     final ring = stat
         ? 44.0
         : compact
@@ -726,6 +713,7 @@ class PilgrimPrecisionArc extends StatelessWidget {
         painter: _PrecisionGaugePainter(
           progress: percent / 100,
           tone: tone,
+          track: a.progressTrack,
           stroke: stat ? 4.2 : 7,
         ),
         child: Center(
@@ -818,11 +806,13 @@ class PilgrimPrecisionArc extends StatelessWidget {
 class _PrecisionGaugePainter extends CustomPainter {
   final double progress;
   final Color tone;
+  final Color track;
   final double stroke;
 
   const _PrecisionGaugePainter({
     required this.progress,
     required this.tone,
+    required this.track,
     this.stroke = 7,
   });
 
@@ -842,8 +832,8 @@ class _PrecisionGaugePainter extends CustomPainter {
         ).createShader(Rect.fromCircle(center: center, radius: r * 0.78)),
     );
 
-    final track = Paint()
-      ..color = Colors.white.withValues(alpha: 0.08)
+    final trackPaint = Paint()
+      ..color = track
       ..style = PaintingStyle.stroke
       ..strokeWidth = stroke
       ..strokeCap = StrokeCap.round;
@@ -852,7 +842,7 @@ class _PrecisionGaugePainter extends CustomPainter {
       start,
       sweep,
       false,
-      track,
+      trackPaint,
     );
 
     if (progress <= 0) return;
@@ -863,7 +853,7 @@ class _PrecisionGaugePainter extends CustomPainter {
         colors: [
           tone.withValues(alpha: 0.45),
           tone,
-          Color.lerp(tone, const Color(0xFFFFF0C8), 0.4)!,
+          Color.lerp(tone, AppColors.textOnDark, 0.4)!,
         ],
       ).createShader(Rect.fromCircle(center: center, radius: r))
       ..style = PaintingStyle.stroke
@@ -880,7 +870,10 @@ class _PrecisionGaugePainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant _PrecisionGaugePainter old) =>
-      old.progress != progress || old.tone != tone || old.stroke != stroke;
+      old.progress != progress ||
+      old.tone != tone ||
+      old.track != track ||
+      old.stroke != stroke;
 }
 
 class PilgrimLeadershipMonument extends StatelessWidget {
@@ -896,7 +889,7 @@ class PilgrimLeadershipMonument extends StatelessWidget {
         children: [
           const RelicDisc(
             glyph: CinematicGlyph.crown,
-            accent: AppColors.accent,
+            accent: AppRoles.reward,
             size: 52,
           ),
           const SizedBox(width: 14),
@@ -947,7 +940,7 @@ class PilgrimTrailPath extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final complete = trail.isComplete;
-    final accent = complete ? AppColors.cedar : AppColors.accent;
+    final accent = complete ? AppRoles.success : AppRoles.chrome;
     final l10n = context.l10n;
     final subtitle = trail.description.trim().isEmpty
         ? l10n.pilgrimScenesOf(trail.missionsDone, trail.missionsTotal)
@@ -957,12 +950,9 @@ class PilgrimTrailPath extends StatelessWidget {
       padding: EdgeInsets.only(bottom: compact ? 10 : 0),
       child: RelicPanel(
         accent: accent,
-        padding: EdgeInsets.fromLTRB(
-          16,
-          compact ? 14 : 16,
-          16,
-          compact ? 14 : 18,
-        ),
+        padding: compact
+            ? AppMetrics.cardPaddingCompact
+            : AppMetrics.cardPadding,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -995,7 +985,7 @@ class PilgrimTrailPath extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 12),
-            RelicProgress(value: trail.progress, accent: accent),
+            AppProgressBar(value: trail.progress, color: accent, height: 6),
             if (trail.modules.length >= 2) ...[
               const SizedBox(height: 16),
               _PilgrimHorizontalTrail(
@@ -1054,7 +1044,7 @@ class _OpenTrailRow extends StatelessWidget {
                 style: AppTypography.label(
                   size: 11,
                   letterSpacing: 0.8,
-                  color: AppColors.accent,
+                  color: a.textSecondary,
                 ),
               ),
             ],
@@ -1065,7 +1055,11 @@ class _OpenTrailRow extends StatelessWidget {
             style: AppTypography.body(size: 12, color: a.textFaint),
           ),
           const SizedBox(height: 8),
-          RelicProgress(value: trail.progress, accent: AppColors.accent),
+          AppProgressBar(
+            value: trail.progress,
+            color: trail.isComplete ? AppRoles.success : AppRoles.chrome,
+            height: 6,
+          ),
         ],
       ),
     );
@@ -1104,7 +1098,7 @@ class _PilgrimHorizontalTrail extends StatelessWidget {
               painter: _HorizontalTrailPainter(
                 progress: progress,
                 active: accent,
-                idle: a.textMuted(0.18),
+                idle: a.textFaint,
                 seed: stops.length,
               ),
             ),
@@ -1166,9 +1160,9 @@ class _TrailStopBeacon extends StatelessWidget {
           height: size,
           decoration: BoxDecoration(
             shape: BoxShape.circle,
-            color: complete || current ? accent : a.textMuted(0.12),
+            color: complete || current ? accent : a.textFaint,
             border: Border.all(
-              color: current ? accent : a.textMuted(complete ? 0.0 : 0.22),
+              color: complete || current ? accent : a.textFaint,
               width: current ? 2 : 1,
             ),
             boxShadow: current
@@ -1318,14 +1312,13 @@ class PilgrimConstancyCard extends StatelessWidget {
     final played = playDates.toSet();
 
     return RelicPanel(
-      accent: AppColors.streak,
-      padding: const EdgeInsets.fromLTRB(16, 16, 16, 14),
+      accent: AppRoles.streak,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           RelicChapter(
             title: context.l10n.pilgrimStreak,
-            accent: AppColors.streak,
+            accent: AppRoles.streak,
             whisper: showStreak
                 ? context.l10n.pilgrimStreakOngoing
                 : context.l10n.pilgrimLastStudyDay,
@@ -1335,7 +1328,7 @@ class PilgrimConstancyCard extends StatelessWidget {
             children: [
               RelicDisc(
                 glyph: CinematicGlyph.flame,
-                accent: AppColors.streak,
+                accent: AppRoles.streak,
                 size: 44,
               ),
               const SizedBox(width: 12),
@@ -1396,7 +1389,7 @@ class PilgrimOwnerPrivacyBanner extends StatelessWidget {
           children: [
             const CinematicIcon(
               glyph: CinematicGlyph.tune,
-              accent: AppColors.accent,
+              accent: AppRoles.chrome,
               size: AppMetrics.leadingIcon,
             ),
             const SizedBox(width: AppSpace.md),
@@ -1438,6 +1431,6 @@ class _ScriptureChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SoftBadge(text: name, accent: AppColors.cedar);
+    return SoftBadge(text: name, accent: AppRoles.success);
   }
 }

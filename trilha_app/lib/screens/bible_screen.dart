@@ -227,7 +227,7 @@ class _BibleScreenState extends State<BibleScreen> {
       title: context.l10n.bibleTitle,
       subtitle: LiturgicalCalendar.momentFor().subtitle,
       leadingGlyph: CinematicGlyph.book,
-      chromeAccent: AppColors.cedar,
+      chromeAccent: AppRoles.chrome,
       onBack: nav.canPop() ? () => nav.pop() : null,
     );
   }
@@ -241,7 +241,7 @@ class _BibleScreenState extends State<BibleScreen> {
 
     final books = _books;
     if (books == null) {
-      return const AppSpinner(color: AppColors.cedar);
+      return const AppSpinner();
     }
 
     if (_searching) {
@@ -259,7 +259,7 @@ class _BibleScreenState extends State<BibleScreen> {
             subtitle: context.l10n.bibleSearchSubtitle,
             onBack: _closeSearch,
             leadingGlyph: CinematicGlyph.book,
-            chromeAccent: AppColors.cedar,
+            chromeAccent: AppRoles.chrome,
           ),
           controller: _searchCtrl,
           hits: _hits,
@@ -352,7 +352,7 @@ class _BibleLibrary extends StatelessWidget {
               scrollPaddingBelowNav(context),
             ),
             children: [
-              JuntosSegmentTabs(
+              AppSegmentedTabs(
                 index: pane,
                 onChanged: (i) {
                   if (i == pane) return;
@@ -414,7 +414,7 @@ class _BibleLibrary extends StatelessWidget {
     String title,
     List<int> indices, {
     String? blurb,
-    Color accent = AppColors.cedar,
+    Color accent = AppRoles.chrome,
   }) {
     return [
       const SizedBox(height: AppSpace.lg),
@@ -439,7 +439,7 @@ class _BibleLibrary extends StatelessWidget {
 
   Widget _testament(BuildContext context, bool nt) {
     const otEnd = BibleService.oldTestamentCount;
-    final accent = nt ? AppColors.accent : AppColors.sand;
+    const accent = AppRoles.chrome;
     final id = nt ? 'nt' : 'ot';
     final open = _sectionOpen(id);
     final groups = [
@@ -638,10 +638,10 @@ class _SearchButton extends StatelessWidget {
             ),
             child: Row(
               children: [
-                const CinematicIcon(
+                CinematicIcon(
                   glyph: CinematicGlyph.search,
-                  size: 20,
-                  accent: AppColors.sand,
+                  size: AppMetrics.iconMd,
+                  accent: a.textSecondary,
                   framed: false,
                 ),
                 const SizedBox(width: AppSpace.sm),
@@ -696,7 +696,6 @@ class _ContinueHero extends StatelessWidget {
     final reference = '${book.name} $chapter';
 
     return GlassCard(
-      tint: AppColors.cedar,
       radius: AppMetrics.heroRadius,
       onTap: () => onOpenReference(reference),
       child: Column(
@@ -709,7 +708,7 @@ class _ContinueHero extends StatelessWidget {
                   fresh
                       ? context.l10n.bibleHeroStartHere
                       : context.l10n.bibleHeroContinueReading,
-                  color: AppColors.cedar,
+                  color: a.sectionLabel,
                 ),
               ),
               if (!fresh && read > 0)
@@ -736,7 +735,7 @@ class _ContinueHero extends StatelessWidget {
             padding: const EdgeInsets.only(left: AppSpace.md),
             decoration: const BoxDecoration(
               border: Border(
-                left: BorderSide(color: AppColors.cedar, width: 2),
+                left: BorderSide(color: AppRoles.chrome, width: 2),
               ),
             ),
             child: Text(
@@ -754,7 +753,11 @@ class _ContinueHero extends StatelessWidget {
           ),
           const SizedBox(height: AppSpace.lg),
           if (!fresh && read > 0) ...[
-            AppProgressBar(value: read / total, height: 6),
+            AppProgressBar(
+              value: read / total,
+              height: 6,
+              color: AppRoles.success,
+            ),
             const SizedBox(height: AppSpace.md),
           ],
           CopperCta(
@@ -781,7 +784,7 @@ class _OrderChips extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final index = BibleReadingOrder.values.indexOf(order);
-    return JuntosSegmentTabs(
+    return AppSegmentedTabs(
       index: index,
       onChanged: (i) {
         if (i == index) return;
@@ -832,14 +835,13 @@ class _PlanCard extends StatelessWidget {
           );
 
     return GlassCard(
-      tint: AppColors.cedar,
       onTap: onOpen,
       child: Row(
         children: [
           const CinematicIcon(
             glyph: CinematicGlyph.calendar,
             size: AppMetrics.leadingIcon,
-            accent: AppColors.cedar,
+            accent: AppRoles.chrome,
           ),
           const SizedBox(width: AppSpace.md),
           Expanded(
@@ -864,8 +866,8 @@ class _PlanCard extends StatelessWidget {
           if (done)
             const CinematicIcon(
               glyph: CinematicGlyph.check,
-              size: 18,
-              accent: AppColors.accent,
+              size: AppMetrics.iconMd,
+              accent: AppRoles.success,
               framed: false,
             )
           else
@@ -897,9 +899,6 @@ class _SeasonVerseCardState extends State<_SeasonVerseCard> {
       (ProgressService p) => p.settings.bibleTranslationId,
     );
     final moment = LiturgicalCalendar.momentFor();
-    final accent = moment.season == LiturgicalSeason.ordinary
-        ? AppColors.sand
-        : LiturgicalCalendar.accentOf(moment.season);
     final key = '${moment.focusRef}|$translationId';
     if (_key != key) {
       _key = key;
@@ -907,12 +906,11 @@ class _SeasonVerseCardState extends State<_SeasonVerseCard> {
     }
 
     return GlassCard(
-      tint: accent,
       onTap: () => widget.onOpenReference(moment.focusRef),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          SectionLabel(moment.title, color: accent),
+          SectionLabel(moment.title, color: a.sectionLabel),
           const SizedBox(height: 2),
           Text(
             moment.subtitle,
@@ -946,7 +944,7 @@ class _SeasonVerseCardState extends State<_SeasonVerseCard> {
               Expanded(
                 child: Text(
                   moment.focusRef,
-                  style: AppTypography.label(size: 12, color: accent),
+                  style: AppTypography.label(size: 12, color: a.textSecondary),
                 ),
               ),
               Text(
@@ -973,11 +971,11 @@ class _SavedChapter extends StatelessWidget {
     );
     return RelicChapter(
       title: context.l10n.bibleSavedTitle,
-      accent: AppColors.accent,
+      accent: AppRoles.chrome,
       divided: false,
       trailing: count == 0
           ? null
-          : CountBadge('$count', color: AppColors.accent, filled: false),
+          : CountBadge('$count', color: AppRoles.chrome, filled: false),
     );
   }
 }
@@ -998,7 +996,6 @@ class _SavedVerses extends StatelessWidget {
         glyph: CinematicGlyph.bookmark,
         title: context.l10n.bibleSavedEmptyTitle,
         body: context.l10n.bibleSavedEmptyBody,
-        accent: AppColors.accent,
       );
     }
 
@@ -1040,6 +1037,7 @@ class _SavedRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     final name = book?.name ?? mark.abbrev.toUpperCase();
     String? text;
     final chapters = book?.chapters;
@@ -1063,7 +1061,7 @@ class _SavedRow extends StatelessWidget {
                     ref,
                     style: AppTypography.label(
                       size: 12,
-                      color: AppColors.cedar,
+                      color: a.textSecondary,
                     ),
                   ),
                   if (text != null) ...[
@@ -1126,7 +1124,7 @@ class _SearchPane extends StatelessWidget {
         weight: FontWeight.w600,
         color: a.text,
       ),
-      cursorColor: AppColors.cedar,
+      cursorColor: a.text,
       decoration: InputDecoration(
         hintText: context.l10n.bibleSearchFieldHint,
         hintStyle: AppTypography.body(color: a.textFaint),
@@ -1136,8 +1134,8 @@ class _SearchPane extends StatelessWidget {
           padding: const EdgeInsets.all(AppSpace.md),
           child: CinematicIcon(
             glyph: CinematicGlyph.search,
-            size: 22,
-            accent: AppColors.sand,
+            size: AppMetrics.iconLg,
+            accent: a.textSecondary,
             framed: false,
           ),
         ),
@@ -1151,7 +1149,7 @@ class _SearchPane extends StatelessWidget {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(AppRadii.lg),
-          borderSide: const BorderSide(color: AppColors.cedar),
+          borderSide: const BorderSide(color: AppRoles.selected),
         ),
       ),
       onChanged: onChanged,
@@ -1168,13 +1166,12 @@ class _SearchPane extends StatelessWidget {
         if (busy)
           const Padding(
             padding: EdgeInsets.only(top: AppSpace.xxl),
-            child: AppSpinner(color: AppColors.cedar),
+            child: AppSpinner(),
           )
         else if (controller.text.trim().length >= 2 && hits.isEmpty)
           EmptyState(
             glyph: CinematicGlyph.search,
             title: context.l10n.bibleSearchEmpty,
-            accent: AppColors.cedar,
           )
         else
           ...hits.map((h) {
@@ -1191,7 +1188,7 @@ class _SearchPane extends StatelessWidget {
                       h.isBook ? context.l10n.bibleSearchBookHit : h.citation,
                       style: AppTypography.label(
                         size: 12,
-                        color: AppColors.cedar,
+                        color: a.textSecondary,
                       ),
                     ),
                     const SizedBox(height: AppSpace.xs),

@@ -185,7 +185,8 @@ Future<void> showModeSheet(
   Color? tint,
 }) {
   ActHaptics.tap();
-  final tone = tint ?? AppColors.accent;
+  // Sem modo em foco, a sheet fica neutra — amarelo é só ação.
+  final tone = tint;
   return showAppSheet<void>(
     context,
     builder: (sheetContext) => AppSheetPanel(
@@ -340,7 +341,6 @@ class _ModeCarouselState extends State<ModeCarousel>
       builder: (context, _) {
         final offset = _offset;
         final focused = offset.round().clamp(0, _modes.length - 1);
-        final accent = _accentAt(offset);
         final status = statuses[focused];
 
         return Column(
@@ -398,13 +398,19 @@ class _ModeCarouselState extends State<ModeCarousel>
             const SizedBox(height: AppSpace.lg),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: AppSpace.xl),
-              child: _ModeCta(
-                label: _ctaLabel(status, firstPick),
-                accent: accent,
-                locked: status.locked,
-                busy: _busy,
-                onTap: () => _confirm(status),
-              ),
+              child: status.locked
+                  ? GhostCta(
+                      label: _ctaLabel(status, firstPick),
+                      leading: CinematicGlyph.lock,
+                      expanded: true,
+                      matchCopper: true,
+                      onTap: _busy ? null : () => _confirm(status),
+                    )
+                  : CopperCta(
+                      label: _ctaLabel(status, firstPick),
+                      busy: _busy,
+                      onTap: () => _confirm(status),
+                    ),
             ),
             const SizedBox(height: AppSpace.md),
             Padding(
@@ -423,17 +429,6 @@ class _ModeCarouselState extends State<ModeCarousel>
         );
       },
     );
-  }
-
-  static Color _accentAt(double x) {
-    final v = x.clamp(0.0, (_modes.length - 1).toDouble());
-    final i = v.floor().clamp(0, _modes.length - 2);
-    final t = Curves.easeInOut.transform(v - i);
-    return Color.lerp(
-      DifficultyVisuals.accentFor(_modes[i]),
-      DifficultyVisuals.accentFor(_modes[i + 1]),
-      t,
-    )!;
   }
 }
 
@@ -456,6 +451,7 @@ class _ModePortal extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     final d = status.difficulty;
     final accent = DifficultyVisuals.accentFor(d);
     final onSky = DifficultyVisuals.onSky(accent);
@@ -476,7 +472,7 @@ class _ModePortal extends StatelessWidget {
 
     return DecoratedBox(
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(28),
+        borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
         border: Border.all(
           color: onSky.withValues(alpha: locked ? 0.22 : 0.25 + 0.55 * focus),
           width: 1.4,
@@ -491,7 +487,7 @@ class _ModePortal extends StatelessWidget {
         ],
       ),
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(27),
+        borderRadius: BorderRadius.circular(AppMetrics.heroRadius - 1),
         child: Stack(
           fit: StackFit.expand,
           children: [
@@ -504,13 +500,16 @@ class _ModePortal extends StatelessWidget {
                   : scene(0),
             ),
             // Véu inferior: texto sempre legível sobre a cena.
-            const DecoratedBox(
+            DecoratedBox(
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
-                  stops: [0.35, 1],
-                  colors: [Color(0x00070B14), Color(0xE0070B14)],
+                  stops: const [0.35, 1],
+                  colors: [
+                    AppColors.night.withValues(alpha: 0),
+                    AppColors.night.withValues(alpha: 0.88),
+                  ],
                 ),
               ),
             ),
@@ -559,11 +558,9 @@ class _ModePortal extends StatelessWidget {
                   Text(
                     d.labelPt,
                     style: AppTypography.display(
-                      size: 30,
+                      size: 28,
                       height: 1.05,
-                      color: locked
-                          ? Colors.white.withValues(alpha: 0.62)
-                          : Colors.white,
+                      color: locked ? a.textFaint : a.text,
                     ),
                   ),
                   const SizedBox(height: 4),
@@ -572,9 +569,7 @@ class _ModePortal extends StatelessWidget {
                     style: AppTypography.body(
                       size: 14,
                       weight: FontWeight.w800,
-                      color: locked
-                          ? Colors.white.withValues(alpha: 0.5)
-                          : onSky,
+                      color: locked ? a.textFaint : onSky,
                     ),
                   ),
                   const SizedBox(height: 6),
@@ -585,9 +580,7 @@ class _ModePortal extends StatelessWidget {
                     style: AppTypography.body(
                       size: 13,
                       height: 1.35,
-                      color: Colors.white.withValues(
-                        alpha: locked ? 0.45 : 0.78,
-                      ),
+                      color: locked ? a.textFaint : a.textSecondary,
                     ),
                   ),
                   const SizedBox(height: 12),
@@ -686,7 +679,7 @@ class _Halo extends StatelessWidget {
                     ? CinematicGlyph.lock
                     : DifficultyVisuals.glyphFor(difficulty),
                 size: core * (locked ? 0.36 : 0.46),
-                accent: locked ? Colors.white.withValues(alpha: 0.6) : onSky,
+                accent: locked ? Appearance.of(context).textFaint : onSky,
                 framed: false,
                 glowing: !locked,
               ),
@@ -719,12 +712,13 @@ class _SkillChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     final onSky = DifficultyVisuals.onSky(accent);
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 4),
       decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: dim ? 0.04 : 0.08),
-        borderRadius: BorderRadius.circular(99),
+        color: AppRoles.chrome.withValues(alpha: dim ? 0.04 : 0.08),
+        borderRadius: BorderRadius.circular(AppRadii.pill),
         border: Border.all(
           color: onSky.withValues(alpha: dim ? 0.15 : 0.35),
           width: 1,
@@ -735,7 +729,7 @@ class _SkillChip extends StatelessWidget {
         style: AppTypography.label(
           size: 11,
           letterSpacing: 0.2,
-          color: Colors.white.withValues(alpha: dim ? 0.45 : 0.88),
+          color: dim ? a.textFaint : a.text,
         ),
       ),
     );
@@ -757,21 +751,27 @@ class _GlassPill extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ink = solid ? AppColors.inkOnAccent : Colors.white;
+    // Pílula cheia na cor do modo (tinta escura) ou vidro neutro (chrome).
+    final ink = solid ? AppColors.night : Appearance.of(context).text;
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 4),
       decoration: BoxDecoration(
-        color: solid ? accent : Colors.white.withValues(alpha: 0.10),
-        borderRadius: BorderRadius.circular(99),
+        color: solid ? accent : AppRoles.chrome.withValues(alpha: 0.10),
+        borderRadius: BorderRadius.circular(AppRadii.pill),
         border: solid
             ? null
-            : Border.all(color: Colors.white.withValues(alpha: 0.22)),
+            : Border.all(color: AppRoles.chrome.withValues(alpha: 0.22)),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
           if (glyph != null) ...[
-            CinematicIcon(glyph: glyph!, size: 11, accent: ink, framed: false),
+            CinematicIcon(
+              glyph: glyph!,
+              size: AppMetrics.chipIcon,
+              accent: ink,
+              framed: false,
+            ),
             const SizedBox(width: 4),
           ],
           Text(
@@ -811,33 +811,12 @@ class _PortalProgress extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
       children: [
-        ClipRRect(
-          borderRadius: BorderRadius.circular(99),
-          child: SizedBox(
-            height: 5,
-            child: Stack(
-              fit: StackFit.expand,
-              children: [
-                ColoredBox(color: Colors.white.withValues(alpha: 0.10)),
-                TweenAnimationBuilder<double>(
-                  tween: Tween(begin: 0, end: status.fraction),
-                  duration: const Duration(milliseconds: 900),
-                  curve: Curves.easeOutCubic,
-                  builder: (context, v, _) => FractionallySizedBox(
-                    alignment: Alignment.centerLeft,
-                    widthFactor: v,
-                    child: DecoratedBox(
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [fill.withValues(alpha: 0.7), fill],
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
+        TweenAnimationBuilder<double>(
+          tween: Tween(begin: 0, end: status.fraction),
+          duration: const Duration(milliseconds: 900),
+          curve: Curves.easeOutCubic,
+          builder: (context, v, _) =>
+              AppProgressBar(value: v, color: fill, height: 6),
         ),
         if (text != null) ...[
           const SizedBox(height: 6),
@@ -848,7 +827,7 @@ class _PortalProgress extends StatelessWidget {
             style: AppTypography.label(
               size: 11,
               letterSpacing: 0.2,
-              color: Colors.white.withValues(alpha: 0.62),
+              color: Appearance.of(context).textSecondary,
             ),
           ),
         ],
@@ -890,7 +869,7 @@ class _ModeDots extends StatelessWidget {
                     width: 8 + 22 * focus,
                     height: 8,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(99),
+                      borderRadius: BorderRadius.circular(AppRadii.pill),
                       color: Color.lerp(
                         Appearance.of(context).textFaint.withValues(
                           alpha: statuses[i].locked ? 0.35 : 0.7,
@@ -910,130 +889,6 @@ class _ModeDots extends StatelessWidget {
 }
 
 /// Botão que assume a cor do portal em foco.
-class _ModeCta extends StatefulWidget {
-  final String label;
-  final Color accent;
-  final bool locked;
-  final bool busy;
-  final VoidCallback onTap;
-
-  const _ModeCta({
-    required this.label,
-    required this.accent,
-    required this.locked,
-    required this.busy,
-    required this.onTap,
-  });
-
-  @override
-  State<_ModeCta> createState() => _ModeCtaState();
-}
-
-class _ModeCtaState extends State<_ModeCta> {
-  bool _down = false;
-
-  @override
-  Widget build(BuildContext context) {
-    final accent = widget.accent;
-    final locked = widget.locked;
-    const ink = AppColors.inkOnAccent;
-    final a = Appearance.of(context);
-    final muted = a.textSecondary;
-    return Semantics(
-      button: true,
-      enabled: !locked,
-      label: widget.label,
-      excludeSemantics: true,
-      child: GestureDetector(
-        onTapDown: (_) => setState(() => _down = true),
-        onTapCancel: () => setState(() => _down = false),
-        onTapUp: (_) => setState(() => _down = false),
-        onTap: widget.busy ? null : widget.onTap,
-        child: AnimatedScale(
-          scale: _down ? 0.97 : 1,
-          duration: const Duration(milliseconds: 120),
-          child: Container(
-            height: 54,
-            alignment: Alignment.center,
-            padding: const EdgeInsets.symmetric(horizontal: AppSpace.lg),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(99),
-              color: locked ? a.text.withValues(alpha: 0.06) : null,
-              gradient: locked
-                  ? null
-                  : LinearGradient(
-                      colors: [Color.lerp(accent, Colors.white, 0.2)!, accent],
-                    ),
-              border: locked
-                  ? Border.all(color: a.text.withValues(alpha: 0.16))
-                  : null,
-              boxShadow: locked
-                  ? null
-                  : [
-                      BoxShadow(
-                        color: accent.withValues(alpha: 0.42),
-                        blurRadius: 22,
-                        offset: const Offset(0, 8),
-                      ),
-                    ],
-            ),
-            child: widget.busy
-                ? const SizedBox(
-                    width: 20,
-                    height: 20,
-                    child: CircularProgressIndicator(
-                      strokeWidth: 2.2,
-                      color: ink,
-                    ),
-                  )
-                : Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      if (locked) ...[
-                        CinematicIcon(
-                          glyph: CinematicGlyph.lock,
-                          size: 14,
-                          accent: muted,
-                          framed: false,
-                        ),
-                        const SizedBox(width: 8),
-                      ],
-                      Flexible(
-                        child: Text(
-                          widget.label,
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: AppTypography.body(
-                            size: 15,
-                            weight: FontWeight.w800,
-                            color: locked ? muted : ink,
-                          ),
-                        ),
-                      ),
-                      if (!locked) ...[
-                        const SizedBox(width: 8),
-                        const CinematicIcon(
-                          glyph: CinematicGlyph.forward,
-                          size: 14,
-                          accent: ink,
-                          framed: false,
-                        ),
-                      ],
-                    ],
-                  ),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-// ─────────────────────────────────────────────────────────────────────────
-// Banner do mapa
-// ─────────────────────────────────────────────────────────────────────────
-
-/// Resumo vivo do modo no mapa: a cena do modo atual corre ao fundo, com
-/// nome, pergunta, progresso e a escada dos três modos. Toque abre a sheet.
 class ModeBanner extends StatefulWidget {
   final String trailSlug;
   final String trailTitle;
@@ -1086,6 +941,7 @@ class _ModeBannerState extends State<ModeBanner>
       (s) => s.current,
       orElse: () => statuses.first,
     );
+    final a = Appearance.of(context);
     final d = current.difficulty;
     final accent = DifficultyVisuals.accentFor(d);
     final onSky = DifficultyVisuals.onSky(accent);
@@ -1116,7 +972,7 @@ class _ModeBannerState extends State<ModeBanner>
           duration: const Duration(milliseconds: 140),
           child: Container(
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(24),
+              borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
               border: Border.all(
                 color: onSky.withValues(alpha: 0.6),
                 width: 1.4,
@@ -1131,7 +987,7 @@ class _ModeBannerState extends State<ModeBanner>
               ],
             ),
             child: ClipRRect(
-              borderRadius: BorderRadius.circular(23),
+              borderRadius: BorderRadius.circular(AppMetrics.heroRadius - 1),
               child: Stack(
                 children: [
                   Positioned.fill(
@@ -1149,13 +1005,16 @@ class _ModeBannerState extends State<ModeBanner>
                       ),
                     ),
                   ),
-                  const Positioned.fill(
+                  Positioned.fill(
                     child: DecoratedBox(
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
                           begin: Alignment.centerLeft,
                           end: Alignment.centerRight,
-                          colors: [Color(0xD9070B14), Color(0x33070B14)],
+                          colors: [
+                            AppColors.night.withValues(alpha: 0.85),
+                            AppColors.night.withValues(alpha: 0.2),
+                          ],
                         ),
                       ),
                     ),
@@ -1193,9 +1052,9 @@ class _ModeBannerState extends State<ModeBanner>
                               Text(
                                 d.labelPt,
                                 style: AppTypography.display(
-                                  size: 22,
+                                  size: 20,
                                   height: 1.05,
-                                  color: Colors.white,
+                                  color: a.text,
                                 ),
                               ),
                               const SizedBox(height: 2),
@@ -1204,7 +1063,7 @@ class _ModeBannerState extends State<ModeBanner>
                                 style: AppTypography.body(
                                   size: 12,
                                   weight: FontWeight.w700,
-                                  color: Colors.white.withValues(alpha: 0.78),
+                                  color: a.textSecondary,
                                 ),
                               ),
                               if (current.total > 0) ...[
@@ -1220,7 +1079,7 @@ class _ModeBannerState extends State<ModeBanner>
                                   line,
                                   style: AppTypography.label(
                                     size: 11,
-                                    color: Colors.white.withValues(alpha: 0.6),
+                                    color: a.textFaint,
                                   ),
                                 ),
                               ],
@@ -1274,7 +1133,7 @@ class _ModeLadder extends StatelessWidget {
             height: 8,
             color: s.cleared
                 ? accent.withValues(alpha: 0.8)
-                : Colors.white.withValues(alpha: 0.18),
+                : AppRoles.chrome.withValues(alpha: 0.18),
           ),
         );
       }
@@ -1290,7 +1149,7 @@ class _ModeLadder extends StatelessWidget {
                 ? accent.withValues(alpha: 0.25)
                 : Colors.transparent,
             border: Border.all(
-              color: s.locked ? Colors.white.withValues(alpha: 0.25) : accent,
+              color: s.locked ? AppRoles.chrome.withValues(alpha: 0.25) : accent,
               width: s.current ? 2.2 : 1.4,
             ),
             boxShadow: s.current

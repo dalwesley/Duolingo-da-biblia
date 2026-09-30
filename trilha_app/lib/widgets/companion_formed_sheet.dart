@@ -33,7 +33,7 @@ class _CompanionFormedSheet extends StatelessWidget {
     final hasName = name != null && name.isNotEmpty && name != 'Companheiro';
 
     return AppSheetPanel(
-      tint: AppColors.accent,
+      tint: AppRoles.reward,
       background: const ConfettiOverlay(active: true, cinematic: true),
       padding: const EdgeInsets.fromLTRB(
         AppSpace.xxl,
@@ -49,8 +49,8 @@ class _CompanionFormedSheet extends StatelessWidget {
           const Center(
             child: CinematicIcon(
               glyph: CinematicGlyph.people,
-              size: 56,
-              accent: AppColors.accent,
+              size: AppMetrics.iconHero,
+              accent: AppRoles.reward,
               glowing: true,
             ),
           ),

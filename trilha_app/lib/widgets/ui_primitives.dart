@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_language.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
 import 'act_feel.dart';
 import 'cinematic_icon.dart';
+import 'immersive_background.dart';
 
 /// Tokens visuais compartilhados — barras, labels e badges iguais em toda a app.
 class AppMetrics {
@@ -35,6 +37,25 @@ class AppMetrics {
 
   /// Ícone compacto em badges/chips.
   static const chipIcon = 14.0;
+
+  /// Escala de ícone solto (sem poço). Nada fora dela.
+  static const iconSm = 16.0;
+  static const iconMd = 20.0;
+  static const iconLg = 24.0;
+
+  /// Ícone de herói de sheet / estado vazio / celebração.
+  static const iconHero = 56.0;
+
+  /// Raio do [UserAvatar]: pequeno (lista densa, grupo), médio (row),
+  /// grande (palco da companhia / perfil de alguém).
+  static const avatarSm = 16.0;
+  static const avatarMd = 20.0;
+  static const avatarLg = 30.0;
+
+  /// Retrato de identidade: cartão do peregrino ([avatarXl]) e herói do
+  /// perfil ([avatarHero]). Só nesses dois lugares.
+  static const avatarXl = 40.0;
+  static const avatarHero = 52.0;
 
   /// Espessura de borda dos painéis.
   static const cardBorderWidth = 1.75;
@@ -102,6 +123,13 @@ class CopperCta extends StatefulWidget {
   final bool showArrow;
   final bool dense;
 
+  /// Herói: mais alto e com letra maior (card "Continuar" da Hoje).
+  final bool large;
+
+  /// Só desenho — o toque é do pai (ex.: o card inteiro é o botão).
+  /// Fica em opacidade cheia mesmo sem [onTap].
+  final bool decorative;
+
   /// Brilho dourado. Ligado por padrão (padrão do site); desligue em
   /// listas densas onde vários botões ficam lado a lado.
   final bool showGlow;
@@ -112,6 +140,7 @@ class CopperCta extends StatefulWidget {
 
   static const height = 52.0;
   static const denseHeight = 44.0;
+  static const largeHeight = 60.0;
 
   const CopperCta({
     super.key,
@@ -123,6 +152,8 @@ class CopperCta extends StatefulWidget {
     this.padding,
     this.showArrow = false,
     this.dense = false,
+    this.large = false,
+    this.decorative = false,
     this.showGlow = true,
     this.busy = false,
     this.progress,
@@ -145,9 +176,9 @@ class _CopperCtaState extends State<CopperCta> {
 
   /// Parte cheia em ouro; o resto em ouro apagado, como uma barra dentro do botão.
   static LinearGradient _fillGradient(double t) {
-    final dim = Color.lerp(AppColors.accent, Colors.black, 0.32)!;
+    final dim = Color.lerp(AppRoles.action, Colors.black, 0.32)!;
     return LinearGradient(
-      colors: [AppColors.accent, AppColors.accent, dim, dim],
+      colors: [AppRoles.action, AppRoles.action, dim, dim],
       stops: [0, t, t, 1],
     );
   }
@@ -160,10 +191,11 @@ class _CopperCtaState extends State<CopperCta> {
   Widget build(BuildContext context) {
     final w = widget;
     final enabled = w.onTap != null && !w.busy;
+    final lit = enabled || w.decorative;
     final pad =
         w.padding ?? const EdgeInsets.symmetric(horizontal: AppSpace.lg);
-    final fontSize = w.dense ? 14.0 : 16.0;
-    final glow = w.showGlow && enabled
+    final fontSize = w.dense ? 14.0 : (w.large ? 18.0 : 16.0);
+    final glow = w.showGlow && lit
         ? (w.dense
               ? AppMetrics.accentGlow(
                   blur: 20,
@@ -173,23 +205,32 @@ class _CopperCtaState extends State<CopperCta> {
               : AppMetrics.accentGlow())
         : null;
 
+    // Desligado não é "amarelo apagado" (vira oliva no céu): poço neutro.
+    final off = !lit && !w.busy;
+    final a = Appearance.of(context);
+    final ink = off ? a.textFaint : AppColors.inkOnAccent;
     final child = AnimatedOpacity(
       duration: const Duration(milliseconds: 180),
-      opacity: enabled || w.busy ? 1 : 0.45,
+      opacity: 1,
       child: AnimatedScale(
         scale: _down ? 0.98 : 1,
         duration: const Duration(milliseconds: 140),
         child: Container(
           width: w.expanded ? double.infinity : null,
           constraints: BoxConstraints(
-            minHeight: w.dense ? CopperCta.denseHeight : CopperCta.height,
+            minHeight: w.dense
+                ? CopperCta.denseHeight
+                : (w.large ? CopperCta.largeHeight : CopperCta.height),
           ),
           padding: pad,
           decoration: BoxDecoration(
-            color: w.progress == null ? AppColors.accent : null,
-            gradient: w.progress == null
+            color: off
+                ? a.insetFill
+                : (w.progress == null ? AppRoles.action : null),
+            gradient: off || w.progress == null
                 ? null
                 : _fillGradient(w.progress!.clamp(0.0, 1.0)),
+            border: off ? Border.all(color: a.insetBorder) : null,
             borderRadius: BorderRadius.circular(AppRadii.md),
             boxShadow: glow,
           ),
@@ -211,7 +252,7 @@ class _CopperCtaState extends State<CopperCta> {
                 CinematicIcon(
                   glyph: w.leading!,
                   size: w.dense ? 16 : 18,
-                  accent: AppColors.inkOnAccent,
+                  accent: ink,
                   framed: false,
                 ),
                 const SizedBox(width: 8),
@@ -220,15 +261,15 @@ class _CopperCtaState extends State<CopperCta> {
                 child: Text(
                   w.label,
                   textAlign: TextAlign.center,
-                  style: CopperCta.labelStyle(size: fontSize),
+                  style: CopperCta.labelStyle(size: fontSize, color: ink),
                 ),
               ),
               if (!w.busy && w.showArrow) ...[
                 const SizedBox(width: 8),
-                const CinematicIcon(
+                CinematicIcon(
                   glyph: CinematicGlyph.forward,
                   size: 18,
-                  accent: AppColors.inkOnAccent,
+                  accent: ink,
                   framed: false,
                 ),
               ] else if (!w.busy && w.trailing != null) ...[
@@ -236,7 +277,7 @@ class _CopperCtaState extends State<CopperCta> {
                 CinematicIcon(
                   glyph: w.trailing!,
                   size: 16,
-                  accent: AppColors.inkOnAccent,
+                  accent: ink,
                   framed: false,
                 ),
               ],
@@ -306,7 +347,7 @@ class OutlineCta extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ink = color ?? AppColors.accent;
+    final ink = color ?? AppRoles.chrome;
     final enabled = onTap != null;
     final border = enabled
         ? ink.withValues(alpha: color != null ? 0.65 : 0.45)
@@ -484,7 +525,7 @@ class AppProgressBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final fill = color ?? AppColors.accent;
+    final fill = color ?? AppRoles.chrome;
     final track = trackColor ?? a.progressTrack;
     final t = value.clamp(0.0, 1.0);
 
@@ -672,7 +713,7 @@ class CountBadge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ink = color ?? AppColors.accent;
+    final ink = color ?? AppRoles.chrome;
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 5),
       decoration: BoxDecoration(
@@ -722,7 +763,7 @@ class SoftBadge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final tone = accent ?? AppColors.accent;
+    final tone = accent ?? AppRoles.chrome;
     final isBrand = tone.toARGB32() == AppColors.accent.toARGB32();
     final ink = solid ? AppColors.inkOnAccent : (textColor ?? a.text);
     return Container(
@@ -813,8 +854,8 @@ enum AppSelectChipStyle { soft, solid, ghost }
 
 /// Pill de escolha compartilhado — Bíblia, plano, liga, etc.
 ///
-/// Em chrome de tela (ex.: Bíblia), passe [accent] = [AppColors.cedar].
-/// Sem [accent], soft/ghost usam o amarelo do CTA ([AppColors.accent]).
+/// Seleção é contorno claro ([AppRoles.selected]) — amarelo é só ação e
+/// recompensa. Passe [accent] só quando a escolha é de um modo/área.
 class AppSelectChip extends StatelessWidget {
   final String label;
   final bool selected;
@@ -844,13 +885,13 @@ class AppSelectChip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final chrome = accent ?? AppColors.accent;
+    final chrome = accent ?? AppRoles.selected;
     final gold = style == AppSelectChipStyle.solid && selected;
     final useCta = style != AppSelectChipStyle.soft;
 
     final Color ink;
     if (gold) {
-      ink = AppColors.inkOnAccent;
+      ink = AppColors.night;
     } else if (selected) {
       ink = chrome;
     } else {
@@ -861,13 +902,13 @@ class AppSelectChip extends StatelessWidget {
     switch (style) {
       case AppSelectChipStyle.solid:
         decoration = BoxDecoration(
-          color: gold ? AppColors.accent : null,
+          color: gold ? chrome : null,
           borderRadius: borderRadius,
         );
       case AppSelectChipStyle.soft:
         decoration = BoxDecoration(
           color: selected
-              ? AppMetrics.accentFill(color: chrome, alpha: 0.22)
+              ? AppMetrics.accentFill(color: chrome, alpha: 0.12)
               : a.cardFillSoft,
           borderRadius: borderRadius,
           border: Border.all(
@@ -913,7 +954,7 @@ class AppSelectChip extends StatelessWidget {
   }
 }
 
-/// Tile de escolha — ouro chapado quando selecionado (Aparência, metas, etc.).
+/// Tile de escolha — contorno claro quando selecionado (metas, horários…).
 class AppChoiceTile extends StatelessWidget {
   final bool selected;
   final VoidCallback onTap;
@@ -945,13 +986,14 @@ class AppChoiceTile extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 12),
           decoration: BoxDecoration(
             color: selected
-                ? (selectedAccent ?? AppColors.accent)
+                ? (selectedAccent ?? AppRoles.selected).withValues(alpha: 0.12)
                 : a.cardFillSoft,
             borderRadius: BorderRadius.circular(AppRadii.sm),
             border: Border.all(
               color: selected
-                  ? (selectedAccent ?? Colors.transparent)
+                  ? (selectedAccent ?? AppRoles.selected)
                   : a.cardBorder.withValues(alpha: 0.55),
+              width: selected ? 2 : 1,
             ),
           ),
           child: child,
@@ -971,7 +1013,7 @@ void showAppToast(
   AppToastTone tone = AppToastTone.accent,
   double? bottomGap,
 }) {
-  final accent = tone == AppToastTone.warn ? AppColors.clay : AppColors.accent;
+  final accent = tone == AppToastTone.warn ? AppRoles.risk : AppRoles.success;
   messenger.hideCurrentSnackBar();
   messenger.showSnackBar(
     SnackBar(
@@ -1131,7 +1173,7 @@ class AppSpinner extends StatelessWidget {
 
   const AppSpinner({
     super.key,
-    this.color = AppColors.accent,
+    this.color = AppRoles.chrome,
     this.inline = false,
   });
 
@@ -1238,7 +1280,7 @@ class EmptyState extends StatelessWidget {
           CinematicIcon(
             glyph: glyph,
             size: AppMetrics.leadingIcon,
-            accent: accent ?? AppColors.accent,
+            accent: accent ?? AppRoles.chrome,
           ),
           const SizedBox(height: AppSpace.md),
           Text(
@@ -1261,6 +1303,73 @@ class EmptyState extends StatelessWidget {
           if (action != null) ...[const SizedBox(height: AppSpace.lg), action!],
         ],
       ),
+    );
+  }
+}
+
+/// Aviso de erro inline — o mesmo em todo o app. Glifo de erro, texto de
+/// apoio (nunca vermelho solto) e, se houver [onRetry], "Tentar de novo".
+///
+/// [standalone]: card próprio numa lista ([GlassCard]); `false` quando o
+/// erro fica dentro de outro card ([InsetPanel] com borda de erro).
+class InlineNotice extends StatelessWidget {
+  final String message;
+  final Future<void> Function()? onRetry;
+  final bool busy;
+  final bool standalone;
+
+  const InlineNotice({
+    super.key,
+    required this.message,
+    this.onRetry,
+    this.busy = false,
+    this.standalone = true,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final row = Row(
+      children: [
+        const CinematicIcon(
+          glyph: CinematicGlyph.wrong,
+          size: AppMetrics.iconMd,
+          accent: AppRoles.error,
+          framed: false,
+        ),
+        const SizedBox(width: AppSpace.md),
+        Expanded(
+          child: Text(
+            message,
+            style: AppTypography.body(
+              size: 13,
+              height: 1.35,
+              color: a.textSecondary,
+            ),
+          ),
+        ),
+        if (onRetry != null) ...[
+          const SizedBox(width: AppSpace.sm),
+          busy
+              ? const SizedBox(
+                  width: 44,
+                  height: 44,
+                  child: Center(child: AppSpinner(inline: true)),
+                )
+              : TextCta(
+                  label: context.l10n.commonTryAgain,
+                  leading: CinematicGlyph.refresh,
+                  onTap: onRetry,
+                ),
+        ],
+      ],
+    );
+    if (standalone) {
+      return GlassCard(padding: AppMetrics.cardPaddingCompact, child: row);
+    }
+    return InsetPanel(
+      borderColor: AppRoles.error.withValues(alpha: 0.45),
+      child: row,
     );
   }
 }

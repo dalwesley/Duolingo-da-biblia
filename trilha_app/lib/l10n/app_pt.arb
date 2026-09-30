@@ -738,6 +738,7 @@
     }
   },
   "cornerBoardEmptyTitle": "Nenhum desafio ainda",
+  "cornerBoardFilterEmpty": "Nenhum ainda",
   "cornerBoardIdle": "Nenhum desafio nesta semana. Chame alguém da caravana.",
   "cornerBoardOpenCaravan": "Ver a caravana",
   "cornerBurstAccepted": "Desafio aceito",
@@ -4386,6 +4387,16 @@
   },
   "recognitionHeadlineWalk": "{name} reconheceu sua cena",
   "@recognitionHeadlineWalk": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "recognitionHomeSeeWho": "Ver quem reconheceu",
+  "recognitionHomeTitleMany": "Reconheceram sua jornada",
+  "recognitionHomeTitleSingle": "{name} reconheceu sua jornada",
+  "@recognitionHomeTitleSingle": {
     "placeholders": {
       "name": {
         "type": "String"

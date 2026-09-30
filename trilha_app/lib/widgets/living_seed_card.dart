@@ -35,22 +35,15 @@ class LivingSeedCard extends StatelessWidget {
     };
   }
 
-  /// Acento de urgência sem vermelho de erro — terra / areia.
-  static const _dustAccent = AppColors.dust;
-
+  /// Card da sequência: cor da sequência; risco só quando pode cair hoje;
+  /// gelo fica neutro (a geada é do orbe, não do card).
   Color _accent(SpiritualGrowth growth) {
     return switch (growth.mood) {
-      SeedMood.atRisk => _dustAccent,
-      SeedMood.perfectGlow => AppColors.accent,
-      SeedMood.frozen => AppColors.ice,
-      SeedMood.thriving => AppColors.ember,
-      SeedMood.calm => switch (growth.stage) {
-        GrowthStage.seed => AppColors.cedar,
-        GrowthStage.sprout => AppColors.ember,
-        GrowthStage.branch => AppColors.accent,
-        GrowthStage.tree => AppColors.cedar,
-        GrowthStage.fruit => AppColors.accent,
-      },
+      SeedMood.atRisk => AppRoles.risk,
+      SeedMood.frozen => AppRoles.chrome,
+      SeedMood.perfectGlow ||
+      SeedMood.thriving ||
+      SeedMood.calm => AppRoles.streak,
     };
   }
 
@@ -95,7 +88,6 @@ class LivingSeedCard extends StatelessWidget {
                   growth.title,
                   style: AppTypography.display(
                     size: 18,
-                    weight: FontWeight.w800,
                     color: a.text,
                     height: 1.1,
                   ),
@@ -106,7 +98,7 @@ class LivingSeedCard extends StatelessWidget {
                   style: AppTypography.body(
                     size: 12,
                     color: growth.mood == SeedMood.atRisk
-                        ? _dustAccent.withValues(alpha: 0.95)
+                        ? AppRoles.risk.withValues(alpha: 0.95)
                         : a.textSecondary,
                   ),
                 ),
@@ -180,7 +172,7 @@ class LivingSeedCard extends StatelessWidget {
               style: AppTypography.body(
                 size: 13,
                 weight: FontWeight.w700,
-                color: _dustAccent,
+                color: AppRoles.risk,
               ),
             )
           else if (next != null) ...[
@@ -305,7 +297,7 @@ class _StageNode extends StatelessWidget {
           style: AppTypography.label(
             size: 10,
             letterSpacing: 0.2,
-            weight: current ? FontWeight.w900 : FontWeight.w600,
+            weight: current ? FontWeight.w800 : FontWeight.w600,
             color: current ? a.text : a.textFaint,
           ),
         ),

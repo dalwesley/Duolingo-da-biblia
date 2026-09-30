@@ -244,7 +244,7 @@ class _MedalRingPainter extends CustomPainter {
     final radius = size.width / 2 - stroke;
 
     final track = Paint()
-      ..color = Colors.white.withValues(alpha: 0.08)
+      ..color = AppColors.textOnDark.withValues(alpha: 0.08)
       ..style = PaintingStyle.stroke
       ..strokeWidth = stroke
       ..strokeCap = StrokeCap.round;
@@ -372,100 +372,45 @@ class _MedalTierPalette {
     required bool unlocked,
   }) {
     if (!unlocked) return _MedalTierPalette.locked();
-    return switch (tier) {
-      PilgrimMedalTier.iron => const _MedalTierPalette(
-        rimLight: Color(0xFFB8C0CA),
-        rimMid: Color(0xFF7A8490),
-        rimDark: Color(0xFF4A525C),
-        faceLight: Color(0xFF9AA5B2),
-        faceMid: Color(0xFF6B7580),
-        faceDark: Color(0xFF3D4550),
-        glyph: Color(0xFFE8EDF2),
-        glow: AppColors.medalIron,
-      ),
-      PilgrimMedalTier.bronze => const _MedalTierPalette(
-        rimLight: Color(0xFFE8A86A),
-        rimMid: Color(0xFFC97B4A),
-        rimDark: Color(0xFF7A4528),
-        faceLight: Color(0xFFD4925E),
-        faceMid: Color(0xFFA86538),
-        faceDark: Color(0xFF5C3218),
-        glyph: Color(0xFFFFE8D4),
-        glow: AppColors.medalBronze,
-      ),
-      PilgrimMedalTier.silver => const _MedalTierPalette(
-        rimLight: Color(0xFFD0D6E0),
-        rimMid: Color(0xFFB0B6C4),
-        rimDark: Color(0xFF7A8494),
-        faceLight: Color(0xFFC8CED8),
-        faceMid: Color(0xFFA8B0C0),
-        faceDark: Color(0xFF5A6270),
-        glyph: Color(0xFFE8EDF2),
-        glow: AppColors.medalSilver,
-      ),
-      PilgrimMedalTier.gold => const _MedalTierPalette(
-        rimLight: Color(0xFFE8C878),
-        rimMid: Color(0xFFE0B868),
-        rimDark: Color(0xFFB8862E),
-        faceLight: Color(0xFFD4B060),
-        faceMid: Color(0xFFC9A048),
-        faceDark: Color(0xFF8A6020),
-        glyph: Color(0xFFF4E8C8),
-        glow: AppColors.medalGold,
-      ),
-      PilgrimMedalTier.platinum => const _MedalTierPalette(
-        rimLight: Color(0xFFD0D6E0),
-        rimMid: Color(0xFFC4CAD6),
-        rimDark: Color(0xFF98A4B8),
-        faceLight: Color(0xFFD4DAE4),
-        faceMid: Color(0xFFB8C0D0),
-        faceDark: Color(0xFF7888A0),
-        glyph: Color(0xFFE8EDF2),
-        glow: AppColors.medalPlatinum,
-      ),
-      PilgrimMedalTier.diamond => const _MedalTierPalette(
-        rimLight: Color(0xFFA8D4E0),
-        rimMid: Color(0xFF7AB4C4),
-        rimDark: Color(0xFF3A9CB8),
-        faceLight: Color(0xFF88C4D4),
-        faceMid: Color(0xFF5AA8BC),
-        faceDark: Color(0xFF2878A0),
-        glyph: Color(0xFFD0E8F0),
-        glow: AppColors.medalDiamond,
-      ),
-      PilgrimMedalTier.mirra => const _MedalTierPalette(
-        rimLight: Color(0xFFD4B088),
-        rimMid: Color(0xFFB88A5A),
-        rimDark: Color(0xFF6A4828),
-        faceLight: Color(0xFFC8A070),
-        faceMid: Color(0xFF9A7048),
-        faceDark: Color(0xFF4A3018),
-        glyph: Color(0xFFFFECD8),
-        glow: AppColors.medalMirra,
-      ),
-      PilgrimMedalTier.aurora => const _MedalTierPalette(
-        rimLight: Color(0xFFE4D8FF),
-        rimMid: Color(0xFF9B6DFF),
-        rimDark: Color(0xFF4C2A9A),
-        faceLight: Color(0xFFC4A6FF),
-        faceMid: Color(0xFF7C4DFF),
-        faceDark: Color(0xFF32167A),
-        glyph: Color(0xFFF4EEFF),
-        glow: AppColors.medalAurora,
-      ),
-    };
+    return _MedalTierPalette.metal(switch (tier) {
+      PilgrimMedalTier.iron => AppColors.medalIron,
+      PilgrimMedalTier.bronze => AppColors.medalBronze,
+      PilgrimMedalTier.silver => AppColors.medalSilver,
+      PilgrimMedalTier.gold => AppColors.medalGold,
+      PilgrimMedalTier.platinum => AppColors.medalPlatinum,
+      PilgrimMedalTier.diamond => AppColors.medalDiamond,
+      PilgrimMedalTier.mirra => AppColors.medalMirra,
+      PilgrimMedalTier.aurora => AppColors.medalAurora,
+    });
   }
 
-  factory _MedalTierPalette.locked() => _MedalTierPalette(
-    rimLight: const Color(0xFF4A5260),
-    rimMid: const Color(0xFF2E3540),
-    rimDark: const Color(0xFF181C22),
-    faceLight: const Color(0xFF323A48),
-    faceMid: const Color(0xFF222830),
-    faceDark: const Color(0xFF12161C),
-    glyph: Colors.white.withValues(alpha: 0.35),
-    glow: const Color(0xFF3A4250),
+  /// Aro e face derivados do metal do token ([AppColors].medal*):
+  /// luz rumo ao branco, sombra rumo ao preto — sem hex duplicado.
+  factory _MedalTierPalette.metal(Color m) => _MedalTierPalette(
+    rimLight: Color.lerp(m, Colors.white, 0.35)!,
+    rimMid: m,
+    rimDark: Color.lerp(m, Colors.black, 0.32)!,
+    faceLight: Color.lerp(m, Colors.white, 0.17)!,
+    faceMid: Color.lerp(m, Colors.black, 0.08)!,
+    faceDark: Color.lerp(m, Colors.black, 0.48)!,
+    glyph: Color.lerp(m, Colors.white, 0.78)!,
+    glow: m,
   );
+
+  /// Ferro apagado na noite — medalha ainda não conquistada.
+  factory _MedalTierPalette.locked() {
+    Color dim(double t) => Color.lerp(AppColors.medalIron, AppColors.night, t)!;
+    return _MedalTierPalette(
+      rimLight: dim(0.47),
+      rimMid: dim(0.7),
+      rimDark: dim(0.88),
+      faceLight: dim(0.65),
+      faceMid: dim(0.8),
+      faceDark: dim(0.92),
+      glyph: AppColors.textOnDark.withValues(alpha: 0.35),
+      glow: dim(0.6),
+    );
+  }
 }
 
 class _MedallionCoinPainter extends CustomPainter {

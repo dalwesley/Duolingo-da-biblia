@@ -6,7 +6,11 @@ import 'act_feel.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 
-/// Nav inferior — mesmo poço circular da AppBar (`CinematicIcon` framed).
+/// Nav inferior — chrome neutro ([AppRoles.chrome]) igual em todas as abas.
+///
+/// Glifo sem poço (`framed: false`) dentro da pílula da aba ativa; o poço
+/// emoldurado fica só na marca da [TopBar]. Mesmo raio da cápsula da TopBar
+/// ([AppMetrics.cardRadius]).
 class MainBottomNav extends StatelessWidget {
   final int currentIndex;
   final ValueChanged<int> onTap;
@@ -58,7 +62,7 @@ class MainBottomNav extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: 8),
             decoration: BoxDecoration(
               color: style.navBarFill,
-              borderRadius: BorderRadius.circular(AppRadii.lg),
+              borderRadius: BorderRadius.circular(AppMetrics.cardRadius),
               border: Border.all(
                 color: style.navBarBorder,
                 width: AppMetrics.cardBorderWidth,
@@ -69,7 +73,7 @@ class MainBottomNav extends StatelessWidget {
               children: List.generate(tabs.length, (i) {
                 final active = currentIndex == i;
                 final tab = tabs[i];
-                final tone = AppColors.tabChrome(i);
+                const tone = AppRoles.chrome;
                 final color = active ? tone : style.iconMuted;
 
                 return Expanded(
@@ -122,7 +126,7 @@ class MainBottomNav extends StatelessWidget {
                                   children: [
                                     CinematicIcon(
                                       glyph: tab.glyph,
-                                      size: 22,
+                                      size: AppMetrics.iconLg,
                                       accent: color,
                                       framed: false,
                                       glowing: false,
@@ -146,7 +150,7 @@ class MainBottomNav extends StatelessWidget {
                                   letterSpacing: 0.1,
                                   color: color,
                                   weight: active
-                                      ? FontWeight.w900
+                                      ? FontWeight.w800
                                       : FontWeight.w700,
                                 ),
                               ),

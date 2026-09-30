@@ -9,6 +9,7 @@ import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
+import 'ui_primitives.dart';
 
 class StreakWeek extends StatelessWidget {
   /// Se omitido, lê o [ProgressService] local (home).
@@ -74,12 +75,13 @@ class StreakWeek extends StatelessWidget {
                   height: orbSize,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    gradient: active ? AppGradients.gold : null,
-                    color: active ? null : Colors.white.withValues(alpha: 0.06),
+                    color: active ? AppRoles.streak : a.insetFill,
                     border: Border.all(
                       color: isToday
-                          ? AppColors.accent
-                          : Colors.white.withValues(alpha: active ? 0 : 0.12),
+                          ? AppRoles.streak
+                          : active
+                          ? Colors.transparent
+                          : a.cardBorder,
                       width: isToday ? 2 : 1,
                     ),
                   ),
@@ -87,8 +89,8 @@ class StreakWeek extends StatelessWidget {
                     child: active
                         ? const CinematicIcon(
                             glyph: CinematicGlyph.check,
-                            size: 16,
-                            accent: AppColors.inkOnAccent,
+                            size: AppMetrics.iconSm,
+                            accent: AppColors.textOnDark,
                             framed: false,
                           )
                         : Text(
@@ -98,7 +100,7 @@ class StreakWeek extends StatelessWidget {
                               letterSpacing: 0,
                               weight: FontWeight.w700,
                               color: isToday
-                                  ? AppColors.accent.withValues(alpha: 0.95)
+                                  ? AppRoles.streak.withValues(alpha: 0.95)
                                   : a.textFaint,
                             ),
                           ),
@@ -108,11 +110,11 @@ class StreakWeek extends StatelessWidget {
                 height: 14,
                 child: isToday
                     ? Text(
-                        'hoje',
+                        context.l10n.profileTodayLower,
                         style: AppTypography.label(
                           size: 10,
                           letterSpacing: 0.2,
-                          color: AppColors.accent.withValues(alpha: 0.9),
+                          color: AppRoles.streak.withValues(alpha: 0.9),
                         ),
                       )
                     : null,

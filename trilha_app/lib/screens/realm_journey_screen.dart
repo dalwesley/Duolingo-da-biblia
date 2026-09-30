@@ -11,7 +11,6 @@ import '../services/progress_service.dart';
 import '../services/room_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
-import '../utils/day_phase.dart';
 import '../utils/realm_visuals.dart';
 import '../utils/trail_progress.dart';
 import '../widgets/act_feel.dart';
@@ -285,75 +284,63 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
     final mode = progress.settings.appearanceMode;
     final appearance = AppearanceStyle.resolve(mode);
 
-    return Appearance(
+    // Regra de cor: a TopBar é chrome neutro (igual em todo o app); a cor da
+    // área mora só no conteúdo — caminho, estações e o chip "você está aqui".
+    return ImmersiveScaffold(
       mode: mode,
       style: appearance,
-      child: Scaffold(
-        backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
-        body: ImmersiveBackground(
-          appearance: appearance,
-          child: Stack(
+      body: Stack(
+        children: [
+          Column(
             children: [
-              Column(
-                children: [
-                  Padding(
-                    padding: EdgeInsets.fromLTRB(
-                      AppSpace.screen,
-                      MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
-                      AppSpace.screen,
-                      0,
-                    ),
-                    child: TopBar(
-                      inline: true,
-                      immersive: true,
-                      dark: true,
-                      title: widget.realm.label,
-                      subtitle: visuals.eyebrow,
-                      onBack: () => Navigator.pop(context),
-                      leadingGlyph: CinematicGlyph.path,
-                      chromeAccent: AppColors.sand,
-                    ),
-                  ),
-                  Expanded(
-                    child: CustomScrollView(
-                      controller: _scroll,
-                      physics: const BouncingScrollPhysics(),
-                      slivers: [
-                        SliverToBoxAdapter(
-                          child: SizedBox(height: AppSpace.lg),
-                        ),
-                        SliverToBoxAdapter(
-                          child: Padding(
-                            padding: EdgeInsets.fromLTRB(
-                              12,
-                              4,
-                              12,
-                              120 + bottom,
-                            ),
-                            child: JourneyPath(
-                              items: items,
-                              accent: visuals.accent,
-                              glow: visuals.glow,
-                              currentKey: _currentKey,
-                              onTap: _onNodeTap,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
+              Padding(
+                padding: EdgeInsets.fromLTRB(
+                  AppSpace.screen,
+                  MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
+                  AppSpace.screen,
+                  0,
+                ),
+                child: TopBar(
+                  inline: true,
+                  immersive: true,
+                  title: widget.realm.label,
+                  subtitle: visuals.eyebrow,
+                  onBack: () => Navigator.pop(context),
+                  leadingGlyph: CinematicGlyph.path,
+                  chromeAccent: AppRoles.chrome,
+                ),
               ),
-
-              // Soft jump control — not a loud FAB
-              Positioned(
-                right: 18,
-                bottom: 28 + bottom,
-                child: _JumpChip(accent: visuals.accent, onTap: _jumpToCurrent),
+              Expanded(
+                child: CustomScrollView(
+                  controller: _scroll,
+                  physics: const BouncingScrollPhysics(),
+                  slivers: [
+                    SliverToBoxAdapter(child: SizedBox(height: AppSpace.lg)),
+                    SliverToBoxAdapter(
+                      child: Padding(
+                        padding: EdgeInsets.fromLTRB(12, 4, 12, 120 + bottom),
+                        child: JourneyPath(
+                          items: items,
+                          accent: visuals.accent,
+                          glow: visuals.glow,
+                          currentKey: _currentKey,
+                          onTap: _onNodeTap,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ],
           ),
-        ),
+
+          // Soft jump control — not a loud FAB
+          Positioned(
+            right: 18,
+            bottom: 28 + bottom,
+            child: _JumpChip(accent: visuals.accent, onTap: _jumpToCurrent),
+          ),
+        ],
       ),
     );
   }
@@ -367,50 +354,34 @@ class _JumpChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(AppRadii.lg),
-        child: Ink(
-          padding: const EdgeInsets.symmetric(
-            horizontal: AppSpace.section,
-            vertical: AppSpace.md,
+    return GlassCard(
+      onTap: onTap,
+      tint: accent,
+      elevated: true,
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppSpace.section,
+        vertical: AppSpace.md,
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          CinematicIcon(
+            glyph: CinematicGlyph.rise,
+            size: AppMetrics.iconSm,
+            accent: accent,
+            framed: false,
+            glowing: false,
           ),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(AppRadii.lg),
-            color: AppColors.night.withValues(alpha: 0.72),
-            border: Border.all(color: accent.withValues(alpha: 0.32)),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black.withValues(alpha: 0.28),
-                blurRadius: 12,
-                offset: const Offset(0, 6),
-              ),
-            ],
+          const SizedBox(width: AppSpace.sm),
+          Text(
+            context.l10n.journeyYouAreHere,
+            style: AppTypography.label(
+              size: 12,
+              color: Appearance.of(context).text,
+              letterSpacing: 0.3,
+            ),
           ),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              CinematicIcon(
-                glyph: CinematicGlyph.rise,
-                size: 16,
-                accent: accent,
-                framed: false,
-                glowing: false,
-              ),
-              const SizedBox(width: AppSpace.sm),
-              Text(
-                context.l10n.journeyYouAreHere,
-                style: AppTypography.label(
-                  size: 12,
-                  color: Appearance.of(context).text,
-                  letterSpacing: 0.3,
-                ),
-              ),
-            ],
-          ),
-        ),
+        ],
       ),
     );
   }

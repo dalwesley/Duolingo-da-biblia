@@ -65,7 +65,7 @@ class ShareSealCard extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(AppRadii.lg),
                   border: Border.all(
-                    color: AppColors.accent.withValues(alpha: 0.55),
+                    color: AppRoles.reward.withValues(alpha: 0.55),
                   ),
                 ),
               ),
@@ -82,20 +82,20 @@ class ShareSealCard extends StatelessWidget {
                       StwayWordmark(
                         fontSize: 14,
                         letterSpacing: 2.2,
-                        letterColor: Colors.white.withValues(alpha: 0.95),
+                        letterColor: a.text,
                         aColor: AppColors.accent,
                       ),
                       const Spacer(),
                       CinematicIcon(
                         glyph: seal.glyph,
-                        size: 18,
-                        accent: AppColors.accent,
+                        size: AppMetrics.iconMd,
+                        accent: AppRoles.reward,
                         framed: false,
                       ),
                     ],
                   ),
                   const SizedBox(height: 22),
-                  SectionLabel(seal.name, color: AppColors.accent),
+                  SectionLabel(seal.name, color: AppRoles.reward),
                   const SizedBox(height: 10),
                   Text(
                     seal.verseText,

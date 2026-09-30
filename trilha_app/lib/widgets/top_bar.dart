@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../l10n/app_language.dart';
 import 'package:provider/provider.dart';
 import '../services/progress_service.dart';
-import '../models/portrait_style.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
@@ -34,6 +33,23 @@ const double kTopBarInlineHeight = 48;
 /// Escala de texto no chrome: a leitura escala até 1.35, a barra sobe só até aqui.
 const double kTopBarMaxTextScale = 1.2;
 
+/// Superfície própria da barra — só quando a tela tem papel próprio (leitor
+/// bíblico: a barra e o dock seguem o papel da leitura). Sem ela, a barra usa
+/// o chrome do app ([AppearanceStyle.navBarFill]).
+class TopBarSurface {
+  final Color fill;
+  final Color border;
+  final Color ink;
+  final Color inkMuted;
+
+  const TopBarSurface({
+    required this.fill,
+    required this.border,
+    required this.ink,
+    required this.inkMuted,
+  });
+}
+
 class TopBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
   final String? subtitle;
@@ -57,8 +73,11 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
   /// Avatar à direita (ex.: perfil com botão voltar).
   final bool showTrailingAvatar;
 
-  /// Cor do leading/back — por aba (Hoje=amarelo, Bíblia=cedar…).
+  /// Cor do leading/back. Padrão [AppRoles.chrome] — igual em todas as abas.
   final Color? chromeAccent;
+
+  /// Papel próprio da barra (ex.: leitor bíblico). Só no modo [inline].
+  final TopBarSurface? surface;
 
   /// Ação à direita (ex.: ajustes no perfil).
   final VoidCallback? onTrailingTap;
@@ -86,6 +105,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
     this.showLeading = true,
     this.showTrailingAvatar = false,
     this.chromeAccent,
+    this.surface,
     this.onTrailingTap,
     this.trailingGlyph,
     this.trailing,
@@ -106,7 +126,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
     );
 
     // Chrome não herda a escala máxima da leitura — evita overflow em toda TopBar.
-    final mark = chromeAccent ?? AppColors.accent;
+    final mark = chromeAccent ?? AppRoles.chrome;
     final chrome = MediaQuery.withClampedTextScaling(
       maxScaleFactor: kTopBarMaxTextScale,
       child: inline
@@ -127,6 +147,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
               showLeading: showLeading,
               showTrailingAvatar: showTrailingAvatar,
               chromeAccent: mark,
+              surface: surface,
               onTrailingTap: onTrailingTap,
               trailingGlyph: trailingGlyph,
               trailing: trailing,
@@ -144,7 +165,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
               clipBehavior: Clip.antiAlias,
               shape: RoundedRectangleBorder(
                 borderRadius: const BorderRadius.vertical(
-                  bottom: Radius.circular(AppRadii.xl),
+                  bottom: Radius.circular(AppMetrics.cardRadius),
                 ),
                 side: BorderSide(color: appearance.navBarBorder),
               ),
@@ -185,7 +206,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
                           child: UserAvatar(
                             photoUrl: photoUrl,
                             name: userName,
-                            radius: 16,
+                            radius: AppMetrics.avatarSm,
                             style: portraitStyle,
                           ),
                         ),
@@ -247,6 +268,7 @@ class _InlineChrome extends StatelessWidget {
   final bool showLeading;
   final bool showTrailingAvatar;
   final Color chromeAccent;
+  final TopBarSurface? surface;
   final VoidCallback? onTrailingTap;
   final CinematicGlyph? trailingGlyph;
   final Widget? trailing;
@@ -269,6 +291,7 @@ class _InlineChrome extends StatelessWidget {
     required this.showLeading,
     required this.showTrailingAvatar,
     required this.chromeAccent,
+    this.surface,
     this.onTrailingTap,
     this.trailingGlyph,
     this.trailing,
@@ -281,14 +304,16 @@ class _InlineChrome extends StatelessWidget {
       color: Colors.transparent,
       elevation: 8,
       shadowColor: Colors.black.withValues(alpha: 0.35),
-      borderRadius: BorderRadius.circular(AppRadii.xl),
+      borderRadius: BorderRadius.circular(AppMetrics.cardRadius),
       child: Container(
         constraints: const BoxConstraints(minHeight: kTopBarInlineHeight),
         padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
         decoration: BoxDecoration(
-          color: appearance.navBarFill.withValues(alpha: 1),
-          borderRadius: BorderRadius.circular(AppRadii.xl),
-          border: Border.all(color: appearance.navBarBorder),
+          color: surface?.fill ?? appearance.navBarFill.withValues(alpha: 1),
+          borderRadius: BorderRadius.circular(AppMetrics.cardRadius),
+          border: Border.all(
+            color: surface?.border ?? appearance.navBarBorder,
+          ),
         ),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -304,7 +329,7 @@ class _InlineChrome extends StatelessWidget {
               UserAvatar(
                 photoUrl: photoUrl,
                 name: userName,
-                radius: 16,
+                radius: AppMetrics.avatarSm,
                 onTap: onProfileTap,
                 style: portraitStyle,
               ),
@@ -326,6 +351,7 @@ class _InlineChrome extends StatelessWidget {
                 personalGreeting: personalGreeting,
                 onDark: onDark,
                 onTap: onTitleTap,
+                surface: surface,
               ),
             ),
             if (trailing != null) ...[
@@ -336,7 +362,7 @@ class _InlineChrome extends StatelessWidget {
               UserAvatar(
                 photoUrl: photoUrl,
                 name: userName,
-                radius: 16,
+                radius: AppMetrics.avatarSm,
                 style: portraitStyle,
               ),
             ] else if (onTrailingTap != null) ...[
@@ -369,7 +395,7 @@ class _InlineChrome extends StatelessWidget {
 class _BackGlyph extends StatelessWidget {
   final Color accent;
 
-  const _BackGlyph({this.accent = AppColors.accent});
+  const _BackGlyph({this.accent = AppRoles.chrome});
 
   @override
   Widget build(BuildContext context) {
@@ -391,7 +417,7 @@ class _MenuMark extends StatelessWidget {
   const _MenuMark({
     this.glyph = CinematicGlyph.spark,
     this.icon,
-    this.accent = AppColors.accent,
+    this.accent = AppRoles.chrome,
   });
 
   @override
@@ -419,6 +445,7 @@ class _TitleBlock extends StatelessWidget {
   final bool personalGreeting;
   final bool onDark;
   final VoidCallback? onTap;
+  final TopBarSurface? surface;
 
   const _TitleBlock({
     required this.title,
@@ -426,6 +453,7 @@ class _TitleBlock extends StatelessWidget {
     required this.personalGreeting,
     required this.onDark,
     this.onTap,
+    this.surface,
   });
 
   @override
@@ -446,7 +474,10 @@ class _TitleBlock extends StatelessWidget {
             const SizedBox(width: 2),
             RotatedBox(
               quarterTurns: 1,
-              child: ListChevron(size: 16, color: a.textFaint),
+              child: ListChevron(
+                size: 16,
+                color: surface?.inkMuted ?? a.textFaint,
+              ),
             ),
           ],
         ),
@@ -495,7 +526,8 @@ class _TitleBlock extends StatelessWidget {
           style: AppTypography.display(
             size: 20,
             height: 1.05,
-            color: onDark ? AppColors.textOnDark : AppColors.text,
+            color:
+                surface?.ink ?? (onDark ? AppColors.textOnDark : AppColors.text),
           ),
         ),
         if (subtitle != null)
@@ -506,7 +538,9 @@ class _TitleBlock extends StatelessWidget {
             style: AppTypography.body(
               size: 11,
               height: 1.05,
-              color: onDark ? a.textFaint : AppColors.textMuted,
+              color:
+                  surface?.inkMuted ??
+                  (onDark ? a.textFaint : AppColors.textMuted),
             ),
           ),
       ],

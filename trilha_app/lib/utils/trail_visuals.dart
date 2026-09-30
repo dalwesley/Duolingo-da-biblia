@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import '../models/trail.dart';
+import '../models/trail_catalog.dart';
 import '../theme/app_theme.dart';
 import '../widgets/cinematic_icon.dart';
 
-/// Glifos e acentos por trilha — família oceano/açafrão/clay/slate.
+/// Glifo e acento por trilha.
+///
+/// O acento é o **papel da área** da trilha ([AppRoles.areaOldTestament]…):
+/// trilha herda a cor da sua área — nada de amarelo (ação/recompensa) nem
+/// tons avulsos por trilha. Só o glifo muda de trilha para trilha.
 class TrailVisuals {
   final CinematicGlyph glyph;
   final LinearGradient iconGradient;
@@ -18,47 +23,62 @@ class TrailVisuals {
   });
 
   static TrailVisuals forTrail(Trail trail) {
-    final specific = _bySlug[trail.slug];
-    if (specific != null) return specific;
-    return _byCategory(trail.categoryId, trail.color);
+    final slugRealm = _realmBySlug[trail.slug];
+    final realm = slugRealm ?? TrailRealm.fromId(trail.realmId);
+    return _palette(_glyphFor(trail.slug, trail.categoryId), realm);
   }
 
-  /// Home hero / chrome sem o [Trail] completo.
+  /// Home hero / chrome sem o [Trail] completo. [color] fica por
+  /// compatibilidade — a cor vem da área, não do hex do conteúdo.
   static TrailVisuals forSlug(
     String slug, {
     String categoryId = '',
     String color = '#1B3A5C',
   }) {
-    final specific = _bySlug[slug];
-    if (specific != null) return specific;
-    return _byCategory(categoryId, color);
+    final realm =
+        _realmBySlug[slug] ?? TrailCategory.fromId(categoryId).realm;
+    return _palette(_glyphFor(slug, categoryId), realm);
   }
 
-  static TrailVisuals _byCategory(String categoryId, String hexColor) {
-    final accent = _parseColor(hexColor) ?? AppColors.primaryLight;
-    return switch (categoryId) {
-      'pentateuco' => _palette(CinematicGlyph.book, AppColors.sand, AppColors.sandDeep),
-      'historicos-at' => _palette(CinematicGlyph.shield, AppColors.sand, AppColors.sandDeep),
-      'poeticos' => _palette(CinematicGlyph.dove, AppColors.sand, AppColors.sandDeep),
-      'profetas-maiores' => _palette(CinematicGlyph.spark, AppColors.ember, AppColors.emberDeep),
-      'profetas-menores' => _palette(CinematicGlyph.star, AppColors.sand, AppColors.sandDeep),
-      'intertestamentario' => _palette(CinematicGlyph.calendar, AppColors.sand, AppColors.sandDeep),
-      'evangelhos' => _palette(CinematicGlyph.heart, AppColors.clay, AppColors.clayDeep),
-      'historicos-nt' => _palette(CinematicGlyph.flame, AppColors.ember, AppColors.emberDeep),
-      'epistolas' => _palette(CinematicGlyph.mail, AppColors.clay, AppColors.clayDeep),
-      'apocalipse' => _palette(CinematicGlyph.crown, AppColors.ember, AppColors.emberDeep),
-      'discipulado' => _palette(CinematicGlyph.seed, AppColors.accent, AppColors.accentDark),
-      'oracao' => _palette(CinematicGlyph.dove, AppColors.sand, AppColors.sandDeep),
-      'historia-igreja' => _palette(CinematicGlyph.tower, AppColors.sand, AppColors.sandDeep),
-      'hermeneutica' => _palette(CinematicGlyph.search, AppColors.sand, AppColors.sandDeep),
-      'linguas' => _palette(CinematicGlyph.scroll, AppColors.sand, AppColors.sandDeep),
-      'sistematica' => _palette(CinematicGlyph.scroll, AppColors.sand, AppColors.sandDeep),
-      'cristologia' => _palette(CinematicGlyph.heart, AppColors.clay, AppColors.clayDeep),
-      _ => _palette(CinematicGlyph.book, accent, AppColors.primary),
+  static CinematicGlyph _glyphFor(String slug, String categoryId) =>
+      _glyphBySlug[slug] ??
+      switch (categoryId) {
+        'pentateuco' => CinematicGlyph.book,
+        'historicos-at' => CinematicGlyph.shield,
+        'poeticos' => CinematicGlyph.dove,
+        'profetas-maiores' => CinematicGlyph.spark,
+        'profetas-menores' => CinematicGlyph.star,
+        'intertestamentario' => CinematicGlyph.calendar,
+        'evangelhos' => CinematicGlyph.heart,
+        'historicos-nt' => CinematicGlyph.flame,
+        'epistolas' => CinematicGlyph.mail,
+        'apocalipse' => CinematicGlyph.crown,
+        'discipulado' => CinematicGlyph.seed,
+        'oracao' => CinematicGlyph.dove,
+        'historia-igreja' => CinematicGlyph.tower,
+        'hermeneutica' => CinematicGlyph.search,
+        'linguas' => CinematicGlyph.scroll,
+        'sistematica' => CinematicGlyph.scroll,
+        'cristologia' => CinematicGlyph.heart,
+        _ => CinematicGlyph.book,
+      };
+
+  static TrailVisuals _palette(CinematicGlyph glyph, TrailRealm realm) {
+    final (light, dark) = switch (realm) {
+      TrailRealm.antigoTestamento => (
+        AppRoles.areaOldTestament,
+        AppColors.sandDeep,
+      ),
+      TrailRealm.novoTestamento => (
+        AppRoles.areaNewTestament,
+        AppColors.clayDeep,
+      ),
+      TrailRealm.vidaCrista => (
+        AppRoles.areaChristianLife,
+        AppColors.cedarDeep,
+      ),
+      TrailRealm.teologia => (AppRoles.areaTheology, AppColors.slateDeep),
     };
-  }
-
-  static TrailVisuals _palette(CinematicGlyph glyph, Color light, Color dark) {
     return TrailVisuals(
       glyph: glyph,
       iconGradient: LinearGradient(
@@ -71,21 +91,26 @@ class TrailVisuals {
     );
   }
 
-  static Color? _parseColor(String hex) {
-    var value = hex.replaceFirst('#', '');
-    if (value.length == 6) value = 'FF$value';
-    if (value.length != 8) return null;
-    return Color(int.parse(value, radix: 16));
-  }
+  static const Map<String, CinematicGlyph> _glyphBySlug = {
+    'genesis-1-11': CinematicGlyph.book,
+    'exodo': CinematicGlyph.mountain,
+    'evangelhos': CinematicGlyph.heart,
+    'atos': CinematicGlyph.flame,
+    'apocalipse': CinematicGlyph.crown,
+    'hebraico': CinematicGlyph.scroll,
+    'grego': CinematicGlyph.scroll,
+    'romanos': CinematicGlyph.scales,
+  };
 
-  static final Map<String, TrailVisuals> _bySlug = {
-    'genesis-1-11': _palette(CinematicGlyph.book, AppColors.accent, AppColors.accentDark),
-    'exodo': _palette(CinematicGlyph.mountain, AppColors.sand, AppColors.sandDeep),
-    'evangelhos': _palette(CinematicGlyph.heart, AppColors.clay, AppColors.clayDeep),
-    'atos': _palette(CinematicGlyph.flame, AppColors.ember, AppColors.emberDeep),
-    'apocalipse': _palette(CinematicGlyph.crown, AppColors.ember, AppColors.emberDeep),
-    'hebraico': _palette(CinematicGlyph.scroll, AppColors.sand, AppColors.sandDeep),
-    'grego': _palette(CinematicGlyph.scroll, AppColors.sand, AppColors.sandDeep),
-    'romanos': _palette(CinematicGlyph.scales, AppColors.clay, AppColors.clayDeep),
+  /// Trilhas conhecidas sem o [Trail] em mãos (Home, onboarding).
+  static const Map<String, TrailRealm> _realmBySlug = {
+    'genesis-1-11': TrailRealm.antigoTestamento,
+    'exodo': TrailRealm.antigoTestamento,
+    'evangelhos': TrailRealm.novoTestamento,
+    'atos': TrailRealm.novoTestamento,
+    'apocalipse': TrailRealm.novoTestamento,
+    'romanos': TrailRealm.novoTestamento,
+    'hebraico': TrailRealm.teologia,
+    'grego': TrailRealm.teologia,
   };
 }

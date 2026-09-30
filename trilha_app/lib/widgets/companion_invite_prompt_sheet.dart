@@ -91,12 +91,11 @@ class _CompanionInvitePromptSheetState
           AppSheetHeader(
             leading: const CinematicIcon(
               glyph: CinematicGlyph.people,
-              size: 56,
-              accent: AppColors.accent,
+              size: AppMetrics.iconHero,
+              accent: AppRoles.chrome,
               glowing: true,
             ),
             eyebrow: context.l10n.companionSheetEyebrow,
-            eyebrowColor: AppColors.accent.withValues(alpha: 0.85),
             title: context.l10n.companionSheetPromptTitle,
             subtitle: body,
             center: true,

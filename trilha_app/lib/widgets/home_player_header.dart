@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import '../services/backend_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
+import 'immersive_background.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
 import '../utils/liturgical_calendar.dart';
@@ -40,7 +41,6 @@ class HomePlayerHeader extends StatelessWidget {
     final goal = progress.settings.dailyGoal;
     final done = progress.missionsToday.clamp(0, goal);
     final atRisk = progress.isStreakAtRisk;
-    final streakColor = atRisk ? AppColors.error : AppColors.streak;
     final l10n = context.l10n;
     final name = progress.userName.trim().isEmpty
         ? l10n.homeDefaultName
@@ -51,28 +51,9 @@ class HomePlayerHeader extends StatelessWidget {
     final freezeUsed = progress.streakFreezeUsedThisWeek;
     final freezeCount = freezeUsed || progress.streakFreezeAvailable ? 1 : 0;
 
-    return Container(
+    return GlassCard(
       padding: const EdgeInsets.fromLTRB(14, 12, 14, 8),
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            Color.lerp(a.cardFill, liturgy, 0.06)!,
-            a.cardFill.withValues(alpha: 0.9),
-          ],
-        ),
-        borderRadius: BorderRadius.circular(AppMetrics.cardRadius),
-        border: Border.all(
-          color:
-              (HomeTrailChrome.outlineOf(context) ??
-                      (atRisk
-                          ? AppColors.error.withValues(alpha: 0.55)
-                          : a.cardBorder))
-                  .withValues(alpha: 0.45),
-          width: 1.2,
-        ),
-      ),
+      tint: atRisk ? AppRoles.risk : null,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -98,7 +79,7 @@ class HomePlayerHeader extends StatelessWidget {
                             photoUrl: backend.userPhotoUrl,
                             seed: backend.uid,
                             style: progress.settings.portraitStyle,
-                            radius: 18,
+                            radius: AppMetrics.avatarMd,
                           ),
                           const SizedBox(width: 10),
                           Expanded(
@@ -122,7 +103,6 @@ class HomePlayerHeader extends StatelessWidget {
                                   overflow: TextOverflow.ellipsis,
                                   style: AppTypography.display(
                                     size: 18,
-                                    weight: FontWeight.w800,
                                     color: a.text,
                                     height: 1.1,
                                   ),
@@ -151,24 +131,24 @@ class HomePlayerHeader extends StatelessWidget {
               children: [
                 _Stat(
                   glyph: CinematicGlyph.flame,
-                  accent: streakColor,
+                  accent: AppRoles.streak,
                   value: l10n.commonDays(streak),
                   hint: atRisk ? l10n.homeStatAtRisk : null,
-                  hintColor: AppColors.error,
+                  hintColor: AppRoles.risk,
                 ),
                 const Spacer(),
                 _Stat(
                   glyph: CinematicGlyph.check,
                   accent: progress.dailyGoalMet
-                      ? AppColors.accent
-                      : AppColors.sand,
+                      ? AppRoles.reward
+                      : AppRoles.chrome,
                   value: '$done/$goal',
                   hint: l10n.homeStatGoal,
                 ),
                 const SizedBox(width: AppSpace.md),
                 _Stat(
                   glyph: CinematicGlyph.frost,
-                  accent: freezeUsed ? a.textFaint : AppColors.iceSoft,
+                  accent: freezeUsed ? a.textFaint : AppRoles.chrome,
                   value: '$freezeCount',
                   hint: freezeUsed ? l10n.homeStatFreezeUsed : l10n.homeStatFreeze,
                 ),
@@ -249,7 +229,7 @@ class _Stat extends StatelessWidget {
       children: [
         CinematicIcon(
           glyph: glyph,
-          size: 16,
+          size: AppMetrics.iconSm,
           accent: accent,
           glowing: false,
           framed: false,

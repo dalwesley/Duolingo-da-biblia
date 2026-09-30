@@ -68,7 +68,7 @@ class ShareStreakButton extends StatelessWidget {
               height: 36,
               child: CinematicIcon(
                 glyph: CinematicGlyph.share,
-                size: 18,
+                size: AppMetrics.iconMd,
                 accent: a.textSecondary,
                 framed: false,
               ),
@@ -78,36 +78,10 @@ class ShareStreakButton extends StatelessWidget {
       );
     }
 
-    final a = Appearance.of(context);
-    return GestureDetector(
-      onTap: () {
-        ActHaptics.light();
-        _share(context.l10n);
-      },
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-        decoration: BoxDecoration(
-          color: Colors.white.withValues(alpha: 0.08),
-          borderRadius: BorderRadius.circular(AppRadii.md),
-          border: Border.all(color: AppColors.streak.withValues(alpha: 0.35)),
-        ),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const CinematicIcon(
-              glyph: CinematicGlyph.share,
-              size: 16,
-              accent: AppColors.streak,
-              framed: false,
-            ),
-            const SizedBox(width: AppSpace.sm),
-            Text(
-              context.l10n.commonShare,
-              style: AppTypography.title(size: 12, color: a.text),
-            ),
-          ],
-        ),
-      ),
+    return GhostCta(
+      label: context.l10n.commonShare,
+      leading: CinematicGlyph.share,
+      onTap: () => _share(context.l10n),
     );
   }
 }

@@ -12,6 +12,7 @@ import '../utils/appearance.dart';
 import 'act_feel.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
+import 'immersive_background.dart';
 import 'ui_primitives.dart';
 import 'user_avatar.dart';
 
@@ -37,7 +38,6 @@ class RecognitionHistoryCard extends StatelessWidget {
     final items = context.watch<RecognitionService>().recent;
     final groups = groupRecognitionsBySender(items);
     final latest = items.isEmpty ? null : items.first;
-    const radius = AppRadii.xl;
 
     final subtitle = items.isEmpty
         ? l10n.recognitionEmptyCard
@@ -47,170 +47,93 @@ class RecognitionHistoryCard extends StatelessWidget {
       button: true,
       label: l10n.recognitionSemanticsWho(subtitle),
       excludeSemantics: true,
-      child: Material(
-        color: Colors.transparent,
-        child: InkWell(
-          borderRadius: BorderRadius.circular(radius),
-          splashColor: AppColors.clay.withValues(alpha: 0.12),
-          highlightColor: AppColors.clay.withValues(alpha: 0.06),
-          onTap: () {
-            ActHaptics.tap();
-            showRecognitionHistorySheet(context);
-          },
-          child: Ink(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(radius),
-              color: a.cardFill,
-              border: Border.all(
-                color: AppColors.clay.withValues(
-                  alpha: items.isEmpty ? 0.18 : 0.32,
-                ),
-              ),
-              boxShadow: [
-                BoxShadow(
-                  color: AppColors.clayDeep.withValues(
-                    alpha: items.isEmpty ? 0.10 : 0.22,
-                  ),
-                  blurRadius: 28,
-                  offset: const Offset(0, 10),
-                ),
-              ],
-            ),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(radius),
-              child: Stack(
-                children: [
-                  // Calor vindo do coração, no canto de cima.
-                  Positioned.fill(
-                    child: IgnorePointer(
-                      child: DecoratedBox(
-                        decoration: BoxDecoration(
-                          gradient: RadialGradient(
-                            center: const Alignment(-0.85, -1.1),
-                            radius: 1.3,
-                            colors: [
-                              AppColors.clay.withValues(
-                                alpha: items.isEmpty ? 0.08 : 0.18,
-                              ),
-                              AppColors.clay.withValues(alpha: 0),
-                            ],
-                          ),
+      child: GlassCard(
+        tint: items.isEmpty ? null : AppRoles.success,
+        onTap: () {
+          ActHaptics.tap();
+          showRecognitionHistorySheet(context);
+        },
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                _HeartSeal(size: AppMetrics.leadingIcon, lit: items.isNotEmpty),
+                const SizedBox(width: AppSpace.md),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        l10n.recognitionWhoTitle,
+                        style: AppTypography.title(size: 16, color: a.text),
+                      ),
+                      const SizedBox(height: 3),
+                      Text(
+                        subtitle,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: AppTypography.body(
+                          size: 12,
+                          height: 1.35,
+                          weight: FontWeight.w600,
+                          color: a.textSecondary,
                         ),
                       ),
-                    ),
+                    ],
                   ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(
-                      AppSpace.lg,
-                      AppSpace.lg,
-                      AppSpace.lg,
-                      AppSpace.lg,
-                    ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          children: [
-                            _HeartSeal(size: 44, lit: items.isNotEmpty),
-                            const SizedBox(width: AppSpace.md),
-                            Expanded(
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    l10n.recognitionWhoTitle,
-                                    style: AppTypography.title(
-                                      size: 16,
-                                      color: a.text,
-                                    ),
-                                  ),
-                                  const SizedBox(height: 3),
-                                  Text(
-                                    subtitle,
-                                    maxLines: 2,
-                                    overflow: TextOverflow.ellipsis,
-                                    style: AppTypography.body(
-                                      size: 12,
-                                      height: 1.35,
-                                      weight: FontWeight.w600,
-                                      color: a.textSecondary,
-                                    ),
-                                  ),
-                                ],
-                              ),
+                ),
+                const SizedBox(width: AppSpace.sm),
+                ListChevron(color: a.textFaint),
+              ],
+            ),
+            if (latest != null) ...[
+              const SizedBox(height: AppSpace.md),
+              InsetPanel(
+                padding: const EdgeInsets.fromLTRB(
+                  AppSpace.md,
+                  10,
+                  AppSpace.md,
+                  10,
+                ),
+                child: Row(
+                  children: [
+                    _FaceStack(groups: groups),
+                    const SizedBox(width: AppSpace.md),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            latest.headline,
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: AppTypography.body(
+                              size: 13,
+                              weight: FontWeight.w700,
+                              color: a.text,
                             ),
-                            const SizedBox(width: AppSpace.sm),
-                            Container(
-                              width: 28,
-                              height: 28,
-                              alignment: Alignment.center,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: AppColors.clay.withValues(alpha: 0.14),
-                              ),
-                              child: ListChevron(
-                                color: AppColors.clay,
-                                size: 14,
+                          ),
+                          if (whenLabel(latest.createdAt)
+                              case final whenText?) ...[
+                            const SizedBox(height: 2),
+                            Text(
+                              whenText,
+                              style: AppTypography.label(
+                                size: 10,
+                                letterSpacing: 0.6,
+                                color: a.textFaint,
                               ),
                             ),
                           ],
-                        ),
-                        if (latest != null) ...[
-                          const SizedBox(height: AppSpace.md),
-                          InsetPanel(
-                            padding: const EdgeInsets.fromLTRB(
-                              AppSpace.md,
-                              10,
-                              AppSpace.md,
-                              10,
-                            ),
-                            child: Row(
-                              children: [
-                                _FaceStack(groups: groups),
-                                const SizedBox(width: AppSpace.md),
-                                Expanded(
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        latest.headline,
-                                        maxLines: 1,
-                                        overflow: TextOverflow.ellipsis,
-                                        style: AppTypography.body(
-                                          size: 13,
-                                          weight: FontWeight.w700,
-                                          color: a.text,
-                                        ),
-                                      ),
-                                      if (whenLabel(latest.createdAt)
-                                          case final whenText?) ...[
-                                        const SizedBox(height: 2),
-                                        Text(
-                                          whenText,
-                                          style: AppTypography.label(
-                                            size: 10,
-                                            letterSpacing: 0.6,
-                                            color: AppColors.clay.withValues(
-                                              alpha: 0.85,
-                                            ),
-                                          ),
-                                        ),
-                                      ],
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
                         ],
-                      ],
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
-            ),
-          ),
+            ],
+          ],
         ),
       ),
     );
@@ -235,7 +158,6 @@ class _RecognitionHistorySheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
     final l10n = context.l10n;
     final service = context.watch<RecognitionService>();
     final items = service.recent;
@@ -256,7 +178,10 @@ class _RecognitionHistorySheet extends StatelessWidget {
           children: [
             const SizedBox(height: AppSpace.xs),
             AppSheetHeader(
-              leading: _HeartSeal(size: 64, lit: items.isNotEmpty),
+              leading: _HeartSeal(
+                size: AppMetrics.iconHero,
+                lit: items.isNotEmpty,
+              ),
               title: l10n.recognitionWhoTitle,
               subtitle: summary,
               center: true,
@@ -266,21 +191,10 @@ class _RecognitionHistorySheet extends StatelessWidget {
               child: loading
                   ? const Padding(
                       padding: EdgeInsets.all(AppSpace.xxxl),
-                      child: AppSpinner(color: AppColors.clay),
+                      child: AppSpinner(),
                     )
                   : items.isEmpty
-                  ? Padding(
-                      padding: const EdgeInsets.fromLTRB(24, 8, 24, 24),
-                      child: Text(
-                        l10n.recognitionEmptySheet,
-                        textAlign: TextAlign.center,
-                        style: AppTypography.body(
-                          size: 14,
-                          height: 1.45,
-                          color: a.textSecondary,
-                        ),
-                      ),
-                    )
+                  ? _EmptySheet(message: l10n.recognitionEmptySheet)
                   : ListView.separated(
                       shrinkWrap: true,
                       padding: const EdgeInsets.only(bottom: AppSpace.lg),
@@ -319,13 +233,7 @@ class _SenderCard extends StatelessWidget {
     final a = Appearance.of(context);
     final first = group.items.first;
     final count = group.items.length;
-    return Container(
-      padding: const EdgeInsets.all(AppSpace.md),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(AppRadii.lg),
-        color: a.text.withValues(alpha: 0.04),
-        border: Border.all(color: a.text.withValues(alpha: 0.07)),
-      ),
+    return InsetPanel(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -335,8 +243,7 @@ class _SenderCard extends StatelessWidget {
                 name: group.name,
                 seed: first.fromUid,
                 style: PortraitStyle.letter,
-                radius: 20,
-                borderColor: AppColors.clay.withValues(alpha: 0.55),
+                radius: AppMetrics.avatarMd,
               ),
               const SizedBox(width: AppSpace.md),
               Expanded(
@@ -367,7 +274,7 @@ class _SenderCard extends StatelessWidget {
                   style: AppTypography.label(
                     size: 10,
                     letterSpacing: 0.6,
-                    color: AppColors.clay.withValues(alpha: 0.85),
+                    color: a.textFaint,
                   ),
                 ),
             ],
@@ -393,36 +300,11 @@ class _SubjectChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
     final medal = item.kind == RecognitionKind.medal;
-    final tone = medal ? AppColors.medalGold : AppColors.clay;
-    return Container(
-      padding: const EdgeInsets.fromLTRB(8, 5, 10, 5),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(AppRadii.pill),
-        color: tone.withValues(alpha: 0.12),
-        border: Border.all(color: tone.withValues(alpha: 0.28)),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          CinematicIcon(
-            glyph: medal ? CinematicGlyph.gem : CinematicGlyph.path,
-            size: 13,
-            accent: tone,
-            framed: false,
-          ),
-          const SizedBox(width: 5),
-          Text(
-            item.subjectLabel,
-            style: AppTypography.body(
-              size: 12,
-              weight: FontWeight.w700,
-              color: a.text,
-            ),
-          ),
-        ],
-      ),
+    return SoftBadge(
+      text: item.subjectLabel,
+      glyph: medal ? CinematicGlyph.gem : CinematicGlyph.path,
+      accent: medal ? AppColors.medalGold : AppRoles.success,
     );
   }
 }
@@ -436,39 +318,11 @@ class _HeartSeal extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: size,
-      height: size,
-      alignment: Alignment.center,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        gradient: LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: [
-            AppColors.clay.withValues(alpha: lit ? 0.38 : 0.18),
-            AppColors.clayDeep.withValues(alpha: lit ? 0.22 : 0.10),
-          ],
-        ),
-        border: Border.all(
-          color: AppColors.clay.withValues(alpha: lit ? 0.6 : 0.3),
-          width: 1.5,
-        ),
-        boxShadow: lit
-            ? [
-                BoxShadow(
-                  color: AppColors.clay.withValues(alpha: 0.35),
-                  blurRadius: size * 0.4,
-                ),
-              ]
-            : null,
-      ),
-      child: CinematicIcon(
-        glyph: CinematicGlyph.heart,
-        size: size * 0.46,
-        accent: AppColors.clay.withValues(alpha: lit ? 1 : 0.6),
-        framed: false,
-      ),
+    return CinematicIcon(
+      glyph: CinematicGlyph.heart,
+      size: size,
+      accent: lit ? AppRoles.success : Appearance.of(context).textFaint,
+      glowing: lit,
     );
   }
 }
@@ -482,7 +336,7 @@ class _FaceStack extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    const size = 28.0;
+    const size = AppMetrics.avatarSm * 2;
     const step = size * 0.64;
     final shown = groups.take(3).toList();
     final extra = groups.length - shown.length;
@@ -512,17 +366,35 @@ class _FaceStack extends StatelessWidget {
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: Color.lerp(a.cardFill, AppColors.clay, 0.25),
+                  color: Color.lerp(a.cardFill, AppRoles.chrome, 0.12),
                   border: Border.all(color: a.cardFill, width: 1.5),
                 ),
                 child: Text(
                   '+$extra',
-                  style: AppTypography.label(size: 10, color: AppColors.clay),
+                  style: AppTypography.label(size: 10, color: a.textSecondary),
                 ),
               ),
             ),
         ],
       ),
+    );
+  }
+}
+
+/// Ninguém reconheceu ainda — primeira linha é o título, o resto o apoio.
+class _EmptySheet extends StatelessWidget {
+  final String message;
+
+  const _EmptySheet({required this.message});
+
+  @override
+  Widget build(BuildContext context) {
+    final lines = message.split('\n');
+    final rest = lines.skip(1).join('\n').trim();
+    return EmptyState(
+      glyph: CinematicGlyph.people,
+      title: lines.first,
+      body: rest.isEmpty ? null : rest,
     );
   }
 }

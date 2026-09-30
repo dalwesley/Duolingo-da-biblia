@@ -114,7 +114,6 @@ class _PassagePickerSheetState extends State<_PassagePickerSheet> {
                       ? context.l10n.bibleNewTestament
                       : context.l10n.bibleOldTestament,
                   selected: _newTestament == nt,
-                  accent: AppColors.cedar,
                   fontSize: 12,
                   padding: const EdgeInsets.symmetric(vertical: 10),
                   onTap: () => setState(() => _newTestament = nt),
@@ -136,7 +135,6 @@ class _PassagePickerSheetState extends State<_PassagePickerSheet> {
                 BibleBookList(
                   title: groups[n].title,
                   blurb: groups[n].blurb,
-                  accent: _newTestament ? AppColors.accent : AppColors.sand,
                   books: widget.books,
                   indices: [
                     for (
@@ -187,7 +185,7 @@ class _PassagePickerSheetState extends State<_PassagePickerSheet> {
                   padding: const EdgeInsets.all(AppSpace.xs),
                   child: CinematicIcon(
                     glyph: CinematicGlyph.back,
-                    size: 22,
+                    size: AppMetrics.iconLg,
                     accent: a.textSecondary,
                     framed: false,
                   ),
@@ -210,7 +208,7 @@ class _PassagePickerSheetState extends State<_PassagePickerSheet> {
           AppProgressBar(
             value: read / total,
             height: 6,
-            color: AppColors.accent,
+            color: AppRoles.success,
           ),
           const SizedBox(height: AppSpace.md),
         ],
@@ -263,7 +261,7 @@ class BibleBookList extends StatelessWidget {
     this.selectedIndex,
     this.title,
     this.blurb,
-    this.accent = AppColors.cedar,
+    this.accent = AppRoles.chrome,
     this.expanded = true,
     this.onToggle,
     this.framed = true,
@@ -434,7 +432,7 @@ class _BookRow extends StatelessWidget {
       excludeSemantics: true,
       child: Material(
         color: selected
-            ? AppColors.cedar.withValues(alpha: 0.16)
+            ? AppRoles.selected.withValues(alpha: 0.08)
             : Colors.transparent,
         child: InkWell(
           onTap: onTap,
@@ -454,7 +452,7 @@ class _BookRow extends StatelessWidget {
                     style: AppTypography.label(
                       size: abbrev.length > 3 ? 10 : 11,
                       letterSpacing: 0.4,
-                      color: AppColors.cedar,
+                      color: a.textSecondary,
                     ),
                   ),
                 ),
@@ -471,8 +469,8 @@ class _BookRow extends StatelessWidget {
                 if (done) ...[
                   const CinematicIcon(
                     glyph: CinematicGlyph.check,
-                    size: 14,
-                    accent: AppColors.accent,
+                    size: AppMetrics.chipIcon,
+                    accent: AppRoles.success,
                     framed: false,
                   ),
                   const SizedBox(width: AppSpace.xs),

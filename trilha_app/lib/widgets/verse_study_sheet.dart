@@ -19,6 +19,7 @@ import '../utils/study_gloss.dart';
 import 'act_feel.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
+import 'juntos_chrome.dart';
 import 'ui_primitives.dart';
 
 Future<void> showVerseStudySheet(
@@ -134,7 +135,7 @@ Future<void> showVersePreviewDialog(
                             '${verse + i}',
                             style: AppTypography.label(
                               size: 11,
-                              color: AppColors.accent.withValues(alpha: 0.8),
+                              color: a.textFaint,
                             ),
                           ),
                         Text(
@@ -391,7 +392,6 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                   Expanded(
                     child: AppSheetHeader(
                       eyebrow: context.l10n.verseStudyEyebrow,
-                      eyebrowColor: AppColors.accent,
                       title: _ref,
                     ),
                   ),
@@ -399,7 +399,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                     onPressed: () => Navigator.pop(context),
                     icon: CinematicIcon(
                       glyph: CinematicGlyph.close,
-                      size: 22,
+                      size: AppMetrics.iconLg,
                       accent: a.textSecondary,
                       framed: false,
                     ),
@@ -458,7 +458,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                           text: widget.text,
                           links: links,
                           selectedPos: _selected?.pos,
-                          accent: _langAccent(),
+                          accent: AppRoles.selected,
                           onSelectPos: (pos) {
                             for (final t in study.tokens) {
                               if (t.pos == pos) {
@@ -481,7 +481,6 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                       if (_selected != null)
                         _StudyTabs(
                           index: _tab,
-                          accent: _langAccent(),
                           xrefCount: study.crossRefs.length,
                           occ: _strong?.occurrences,
                           onChanged: (i) => setState(() => _tab = i),
@@ -534,11 +533,9 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
     );
   }
 
-  Color _langAccent() {
-    final t = _selected;
-    if (t == null) return AppColors.accent;
-    return _isHebrew(t, _strong?.entry) ? AppColors.accent : AppColors.cedar;
-  }
+  /// Tom do painel da palavra — neutro (chrome) em hebraico e grego; a
+  /// língua já aparece na escrita, não precisa de cor própria.
+  Color _langAccent() => AppRoles.chrome;
 
   TokenStudyView _viewFor(StudyToken token, StrongEntry? entry) {
     return buildTokenStudyView(
@@ -843,14 +840,12 @@ class _WordRibbon extends StatelessWidget {
 
 class _StudyTabs extends StatelessWidget {
   final int index;
-  final Color accent;
   final int xrefCount;
   final int? occ;
   final ValueChanged<int> onChanged;
 
   const _StudyTabs({
     required this.index,
-    required this.accent,
     required this.xrefCount,
     required this.occ,
     required this.onChanged,
@@ -858,66 +853,28 @@ class _StudyTabs extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
     return Padding(
       padding: const EdgeInsets.fromLTRB(16, 6, 16, 8),
-      child: DecoratedBox(
-        decoration: BoxDecoration(
-          color: a.cardFillSoft,
-          borderRadius: BorderRadius.circular(AppRadii.sm),
-          border: Border.all(color: a.cardBorder),
-        ),
-        child: Row(
-          children: [
-            _seg(a, context.l10n.verseStudyTabWord, 0),
-            _seg(
-              a,
-              occ != null && occ! > 0
-                  ? context.l10n.verseStudyTabUsesCount(occ!)
-                  : context.l10n.verseStudyTabUses,
-              1,
-            ),
-            _seg(
-              a,
-              xrefCount > 0
-                  ? context.l10n.verseStudyTabLinksCount(xrefCount)
-                  : context.l10n.verseStudyTabLinks,
-              2,
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget _seg(AppearanceStyle a, String label, int i) {
-    final on = index == i;
-    return Expanded(
-      child: Material(
-        color: Colors.transparent,
-        child: InkWell(
-          onTap: () => onChanged(i),
-          borderRadius: BorderRadius.circular(AppRadii.sm),
-          child: AnimatedContainer(
-            duration: const Duration(milliseconds: 180),
-            padding: const EdgeInsets.symmetric(vertical: 10),
-            decoration: BoxDecoration(
-              color: on ? accent.withValues(alpha: 0.2) : Colors.transparent,
-              borderRadius: BorderRadius.circular(AppRadii.sm),
-            ),
-            child: Text(
-              label,
-              textAlign: TextAlign.center,
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-              style: AppTypography.label(
-                size: 11,
-                letterSpacing: 0.4,
-                color: on ? accent : a.textFaint,
-              ),
-            ),
+      child: AppSegmentedTabs(
+        index: index,
+        onChanged: onChanged,
+        items: [
+          (label: context.l10n.verseStudyTabWord, glyph: null, alert: false),
+          (
+            label: occ != null && occ! > 0
+                ? context.l10n.verseStudyTabUsesCount(occ!)
+                : context.l10n.verseStudyTabUses,
+            glyph: null,
+            alert: false,
           ),
-        ),
+          (
+            label: xrefCount > 0
+                ? context.l10n.verseStudyTabLinksCount(xrefCount)
+                : context.l10n.verseStudyTabLinks,
+            glyph: null,
+            alert: false,
+          ),
+        ],
       ),
     );
   }
@@ -943,7 +900,7 @@ class _TokenChip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final hebrew = token.strong.toUpperCase().startsWith('H');
-    final accent = hebrew ? AppColors.accent : AppColors.cedar;
+    const accent = AppRoles.selected;
     final label = gloss.isEmpty ? token.strong : gloss;
     final a = Appearance.of(context);
 
@@ -961,13 +918,13 @@ class _TokenChip extends StatelessWidget {
               padding: const EdgeInsets.fromLTRB(12, 10, 12, 8),
               decoration: BoxDecoration(
                 color: selected
-                    ? accent.withValues(alpha: 0.16)
-                    : Colors.white.withValues(alpha: inVerse ? 0.05 : 0.03),
+                    ? AppMetrics.accentFill(color: accent, alpha: 0.12)
+                    : a.insetFill,
                 borderRadius: BorderRadius.circular(AppRadii.md),
                 border: Border.all(
                   color: selected
-                      ? accent.withValues(alpha: 0.85)
-                      : Colors.white.withValues(alpha: inVerse ? 0.1 : 0.06),
+                      ? AppMetrics.accentBorder(color: accent, alpha: 0.7)
+                      : (inVerse ? a.cardBorder : a.insetBorder),
                   width: selected ? 1.5 : 1,
                 ),
               ),
@@ -1000,7 +957,7 @@ class _TokenChip extends StatelessWidget {
                       letterSpacing: 0.3,
                       color: selected
                           ? accent
-                          : (inVerse ? a.textFaint : a.textMuted(0.38)),
+                          : (inVerse ? a.textSecondary : a.textFaint),
                     ),
                   ),
                 ],
@@ -1018,35 +975,12 @@ class _EmptyStudyHint extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
     return InsetPanel(
-      padding: const EdgeInsets.fromLTRB(16, 22, 16, 22),
-      child: Column(
-        children: [
-          CinematicIcon(
-            glyph: CinematicGlyph.scroll,
-            size: 36,
-            accent: AppColors.accent,
-            framed: false,
-            glowing: false,
-          ),
-          const SizedBox(height: 12),
-          Text(
-            context.l10n.verseStudyEmptyTitle,
-            textAlign: TextAlign.center,
-            style: AppTypography.title(size: 16, color: a.text),
-          ),
-          const SizedBox(height: 6),
-          Text(
-            context.l10n.verseStudyEmptyBody,
-            textAlign: TextAlign.center,
-            style: AppTypography.body(
-              size: 13,
-              height: 1.4,
-              color: a.textFaint,
-            ),
-          ),
-        ],
+      padding: EdgeInsets.zero,
+      child: EmptyState(
+        glyph: CinematicGlyph.scroll,
+        title: context.l10n.verseStudyEmptyTitle,
+        body: context.l10n.verseStudyEmptyBody,
       ),
     );
   }
@@ -1153,7 +1087,7 @@ class _WordPane extends StatelessWidget {
                       glyph: copied
                           ? CinematicGlyph.check
                           : CinematicGlyph.copy,
-                      size: 12,
+                      size: AppMetrics.chipIcon,
                       accent: a.textFaint,
                       framed: false,
                     ),
@@ -1168,7 +1102,7 @@ class _WordPane extends StatelessWidget {
               tooltip: context.l10n.commonShare,
               icon: CinematicIcon(
                 glyph: CinematicGlyph.share,
-                size: 18,
+                size: AppMetrics.iconMd,
                 accent: a.textFaint,
                 framed: false,
               ),
@@ -1180,7 +1114,7 @@ class _WordPane extends StatelessWidget {
           Center(
             child: SectionLabel(
               context.l10n.verseStudyInThisVerse,
-              color: accent.withValues(alpha: 0.8),
+              color: a.sectionLabel,
             ),
           ),
           const SizedBox(height: 4),
@@ -1445,7 +1379,7 @@ class _SpanLine extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SectionLabel(label, color: accent.withValues(alpha: 0.8)),
+              SectionLabel(label, color: look.sectionLabel),
               Text(
                 cite,
                 maxLines: 1,
@@ -1545,7 +1479,6 @@ class _ConcordancePane extends StatelessWidget {
                 return AppSelectChip(
                   label: '${_bookName(books, b.bookIndex)} ${b.count}',
                   selected: on,
-                  accent: accent,
                   unselectedColor: a.textSecondary,
                   fontSize: 12,
                   padding: const EdgeInsets.symmetric(
@@ -1576,7 +1509,7 @@ class _ConcordancePane extends StatelessWidget {
               padding: const EdgeInsets.only(top: 6, bottom: 4),
               child: SectionLabel(
                 _bookName(books, group.$1),
-                color: accent.withValues(alpha: 0.85),
+                color: a.sectionLabel,
               ),
             ),
             for (final h in group.$2)
@@ -1706,7 +1639,7 @@ class _ScriptCell extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(10, 8, 10, 10),
       child: Column(
         children: [
-          SectionLabel(eyebrow, color: accent.withValues(alpha: 0.8)),
+          SectionLabel(eyebrow, color: a.sectionLabel),
           const SizedBox(height: 4),
           Text(
             script,
@@ -1887,7 +1820,7 @@ class _CrossRefTile extends StatelessWidget {
                       margin: const EdgeInsets.only(right: 3),
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        color: i < dots ? AppColors.accent : a.textMuted(0.18),
+                        color: i < dots ? AppRoles.chrome : a.textFaint,
                       ),
                     ),
                 ],

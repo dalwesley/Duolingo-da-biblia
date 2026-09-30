@@ -28,6 +28,11 @@ enum BiblePaper {
 /// Tema de leitura bíblica — contraste alto no sol, suave à noite.
 /// Independente do visual do app: a página pode ser noite só para ler.
 /// O tamanho da fonte segue a escala global do app ([MediaQuery.textScaler]).
+///
+/// É uma paleta de papel (como a de um cenário): os tons crus de papel e
+/// tinta ficam aqui. Nada nela é ação ou recompensa, então não há amarelo —
+/// número de versículo é tinta apagada e o versículo tocado/ouvido ganha um
+/// véu da própria tinta do papel (seleção neutra, visível em todo papel).
 class BibleReadingStyle {
   final bool isDay;
   final Color page;
@@ -85,17 +90,16 @@ class BibleReadingStyle {
     if (isDay && sepia) {
       const ink = Color(0xFF3B2A1A);
       const muted = Color(0xFF7A6248);
-      const mark = Color(0xFF9A5B1E);
       return BibleReadingStyle(
         isDay: true,
         page: const Color(0xFFF4E9D4),
         pageBorder: muted.withValues(alpha: 0.28),
         ink: ink,
         inkMuted: muted,
-        verseNumber: mark,
-        highlightFill: const Color(0xFFE8C77A).withValues(alpha: 0.45),
-        highlightBorder: mark,
-        savedFill: mark.withValues(alpha: 0.1),
+        verseNumber: muted,
+        highlightFill: ink.withValues(alpha: 0.1),
+        highlightBorder: ink.withValues(alpha: 0.45),
+        savedFill: muted.withValues(alpha: 0.08),
         chrome: const Color(0xFFF4E9D4),
         chromeBorder: muted.withValues(alpha: 0.35),
         chipFill: const Color(0xFFE8DAC0),
@@ -108,10 +112,10 @@ class BibleReadingStyle {
         pageBorder: AppColors.textMuted.withValues(alpha: 0.35),
         ink: AppColors.text,
         inkMuted: AppColors.textMuted,
-        verseNumber: AppColors.accentDark,
-        highlightFill: AppColors.accent.withValues(alpha: 0.22),
-        highlightBorder: AppColors.accent,
-        savedFill: AppColors.accent.withValues(alpha: 0.1),
+        verseNumber: AppColors.textMuted,
+        highlightFill: AppColors.text.withValues(alpha: 0.08),
+        highlightBorder: AppColors.text.withValues(alpha: 0.4),
+        savedFill: AppColors.textMuted.withValues(alpha: 0.08),
         chrome: AppColors.textOnDark,
         chromeBorder: AppColors.textMuted.withValues(alpha: 0.4),
         chipFill: const Color(0xFFDCE2EA),
@@ -123,10 +127,10 @@ class BibleReadingStyle {
       pageBorder: AppColors.nightLight,
       ink: AppColors.textOnDark,
       inkMuted: AppColors.textMutedDark,
-      verseNumber: AppColors.accent,
-      highlightFill: AppColors.accent.withValues(alpha: 0.18),
-      highlightBorder: AppColors.accent.withValues(alpha: 0.7),
-      savedFill: AppColors.accent.withValues(alpha: 0.08),
+      verseNumber: AppColors.textMutedDark,
+      highlightFill: AppColors.textOnDark.withValues(alpha: 0.1),
+      highlightBorder: AppColors.textOnDark.withValues(alpha: 0.45),
+      savedFill: AppColors.textOnDark.withValues(alpha: 0.05),
       chrome: AppColors.nightMid,
       chromeBorder: AppColors.nightElevated,
       chipFill: AppColors.nightLight,

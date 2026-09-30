@@ -76,14 +76,14 @@ class DailyChestCard extends StatelessWidget {
         if (showsTodayReward)
           const CinematicIcon(
             glyph: CinematicGlyph.check,
-            size: 22,
-            accent: AppColors.teal,
+            size: AppMetrics.iconLg,
+            accent: AppRoles.success,
             framed: false,
           )
         else if (!available)
           CinematicIcon(
             glyph: CinematicGlyph.lock,
-            size: 20,
+            size: AppMetrics.iconMd,
             accent: accent.withValues(alpha: 0.85),
             framed: false,
           ),

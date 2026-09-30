@@ -33,7 +33,7 @@ class UserAvatar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final border = borderColor ?? Colors.white.withValues(alpha: 0.18);
+    final border = borderColor ?? AppRoles.chrome.withValues(alpha: 0.18);
     // Rosto ocupa o círculo inteiro; a borda é desenhada por cima (não
     // empurra o rosto para dentro nem deixa folga escura em volta).
     final face = Container(
@@ -104,7 +104,7 @@ class _PencilStamp extends StatelessWidget {
       height: size,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        color: AppColors.accent,
+        color: AppRoles.action,
         border: Border.all(
           color: AppColors.night.withValues(alpha: 0.88),
           width: 1.6,
@@ -121,7 +121,7 @@ class _PencilStamp extends StatelessWidget {
       child: CinematicIcon(
         glyph: CinematicGlyph.pencil,
         size: size * 0.52,
-        accent: AppColors.inkOnAccent,
+        accent: AppRoles.onAction,
         framed: false,
       ),
     );

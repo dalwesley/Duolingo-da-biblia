@@ -153,7 +153,6 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen>
                       children: [
                         SectionLabel(
                           context.l10n.modeSheetEyebrow,
-                          color: AppColors.accent,
                           textAlign: TextAlign.center,
                         ),
                         const SizedBox(height: AppSpace.sm),

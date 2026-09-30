@@ -99,22 +99,19 @@ class _QuestionReportSheetState extends State<_QuestionReportSheet> {
               children: [
                 CinematicIcon(
                   glyph: CinematicGlyph.book,
-                  size: 40,
-                  accent: AppColors.accent,
+                  size: AppMetrics.leadingIcon,
+                  accent: AppRoles.chrome,
                   glowing: false,
                 ),
                 const SizedBox(width: 12),
                 Expanded(
-                  child: Text(
-                    context.l10n.reportTitle,
-                    style: AppTypography.title(size: 18, color: a.text),
-                  ),
+                  child: AppSheetHeader(title: context.l10n.reportTitle),
                 ),
                 IconButton(
                   onPressed: () => Navigator.of(context).pop(false),
                   icon: CinematicIcon(
                     glyph: CinematicGlyph.close,
-                    size: 22,
+                    size: AppMetrics.iconLg,
                     accent: a.textFaint,
                     framed: false,
                   ),
@@ -135,67 +132,46 @@ class _QuestionReportSheetState extends State<_QuestionReportSheet> {
               final selected = _category == c;
               return Padding(
                 padding: const EdgeInsets.only(bottom: 8),
-                child: Material(
-                  color: Colors.transparent,
-                  child: InkWell(
-                    onTap: () {
-                      ActHaptics.tap();
-                      setState(() => _category = c);
-                    },
-                    borderRadius: BorderRadius.circular(AppRadii.sm),
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 12,
-                        vertical: 10,
+                child: AppChoiceTile(
+                  selected: selected,
+                  onTap: () {
+                    ActHaptics.tap();
+                    setState(() => _category = c);
+                  },
+                  child: Row(
+                    children: [
+                      Icon(
+                        selected
+                            ? Icons.radio_button_checked
+                            : Icons.radio_button_off,
+                        size: AppMetrics.iconMd,
+                        color: selected ? AppRoles.selected : a.textFaint,
                       ),
-                      decoration: BoxDecoration(
-                        color: selected
-                            ? AppMetrics.accentFill(alpha: 0.18)
-                            : a.text.withValues(alpha: 0.04),
-                        borderRadius: BorderRadius.circular(AppRadii.sm),
-                        border: Border.all(
-                          color: selected
-                              ? AppMetrics.accentBorder(alpha: 0.75)
-                              : a.cardBorder,
-                          width: selected ? 1.5 : 1,
+                      const SizedBox(width: 10),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              c.label,
+                              style: AppTypography.body(
+                                size: 14,
+                                weight: FontWeight.w700,
+                                color: a.text,
+                              ),
+                            ),
+                            Text(
+                              c.hint,
+                              style: AppTypography.body(
+                                size: 12,
+                                height: 1.3,
+                                color: a.textSecondary,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
-                      child: Row(
-                        children: [
-                          Icon(
-                            selected
-                                ? Icons.radio_button_checked
-                                : Icons.radio_button_off,
-                            size: 20,
-                            color: selected ? AppColors.accent : a.textFaint,
-                          ),
-                          const SizedBox(width: 10),
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  c.label,
-                                  style: AppTypography.body(
-                                    size: 14,
-                                    weight: FontWeight.w700,
-                                    color: a.text,
-                                  ),
-                                ),
-                                Text(
-                                  c.hint,
-                                  style: AppTypography.body(
-                                    size: 12,
-                                    height: 1.3,
-                                    color: a.textSecondary,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
+                    ],
                   ),
                 ),
               );
@@ -224,7 +200,7 @@ class _QuestionReportSheetState extends State<_QuestionReportSheet> {
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(AppRadii.sm),
                   borderSide: BorderSide(
-                    color: AppColors.accent.withValues(alpha: 0.7),
+                    color: AppRoles.selected.withValues(alpha: 0.7),
                   ),
                 ),
               ),
@@ -233,7 +209,7 @@ class _QuestionReportSheetState extends State<_QuestionReportSheet> {
               const SizedBox(height: 8),
               Text(
                 _error!,
-                style: AppTypography.body(size: 13, color: AppColors.error),
+                style: AppTypography.body(size: 13, color: AppRoles.error),
               ),
             ],
             const SizedBox(height: 12),

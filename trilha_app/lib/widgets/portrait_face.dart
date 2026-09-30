@@ -22,7 +22,7 @@ class PortraitFace extends StatelessWidget {
     this.seed,
     required this.size,
     this.style = PortraitStyle.photo,
-    this.letterColor = AppColors.accent,
+    this.letterColor = AppRoles.chrome,
   });
 
   String get _seed {

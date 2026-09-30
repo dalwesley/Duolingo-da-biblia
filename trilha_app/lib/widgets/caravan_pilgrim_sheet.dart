@@ -6,10 +6,10 @@ import '../models/caravan_pilgrim_profile.dart';
 import '../models/recognition.dart';
 import '../models/trail.dart';
 import '../data/trail_repository.dart';
+import '../l10n/app_language.dart';
 import '../services/backend_service.dart';
 import '../services/league_service.dart';
 import '../theme/app_theme.dart';
-import '../utils/appearance.dart';
 import 'act_feel.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
@@ -102,10 +102,12 @@ class _CaravanPilgrimSheetState extends State<_CaravanPilgrimSheet> {
     // Alça + margens do painel ficam fora da área de conteúdo.
     final sheetHeight = MediaQuery.sizeOf(context).height * 0.82 - 32;
     final profile = _profile;
-    final rankColor = pilgrimRankAccent(widget.rank);
+    // Pódio (1–3) acende em metal; do 4º em diante o halo é chrome neutro.
+    final podium = widget.rank <= 3;
+    final rankColor = podium ? pilgrimRankAccent(widget.rank) : AppRoles.chrome;
 
     return AppSheetPanel(
-      tint: widget.rank <= 3 ? rankColor : null,
+      tint: podium ? rankColor : null,
       padding: const EdgeInsets.only(top: AppSpace.md),
       background: IgnorePointer(
         child: DecoratedBox(
@@ -126,36 +128,18 @@ class _CaravanPilgrimSheetState extends State<_CaravanPilgrimSheet> {
               child: _loading
                   ? const Column(children: [Expanded(child: AppSpinner())])
                   : _error != null
-                  ? Column(
-                      children: [
-                        Expanded(
-                          child: Center(
-                            child: Padding(
-                              padding: const EdgeInsets.all(AppSpace.xl),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.min,
-                                children: [
-                                  Text(
-                                    _error!,
-                                    textAlign: TextAlign.center,
-                                    style: AppTypography.body(
-                                      color: Appearance.of(
-                                        context,
-                                      ).textSecondary,
-                                    ),
-                                  ),
-                                  const SizedBox(height: AppSpace.lg),
-                                  GhostCta(
-                                    label: 'Tentar de novo',
-                                    leading: CinematicGlyph.refresh,
-                                    onTap: _load,
-                                  ),
-                                ],
-                              ),
-                            ),
+                  ? Center(
+                      child: SingleChildScrollView(
+                        child: EmptyState(
+                          glyph: CinematicGlyph.refresh,
+                          title: _error!,
+                          action: GhostCta(
+                            label: context.l10n.commonTryAgain,
+                            leading: CinematicGlyph.refresh,
+                            onTap: _load,
                           ),
                         ),
-                      ],
+                      ),
                     )
                   : ListView(
                       padding: const EdgeInsets.only(bottom: 24),

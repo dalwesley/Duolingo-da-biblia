@@ -299,11 +299,7 @@ class _SplashScreenState extends State<SplashScreen>
                             child: Stack(
                               fit: StackFit.expand,
                               children: [
-                                ColoredBox(
-                                  color: AppColors.textOnDark.withValues(
-                                    alpha: 0.1,
-                                  ),
-                                ),
+                                ColoredBox(color: appearance.progressTrack),
                                 FractionallySizedBox(
                                   alignment: Alignment.centerLeft,
                                   widthFactor: t.clamp(0.08, 1.0),
@@ -333,9 +329,7 @@ class _SplashScreenState extends State<SplashScreen>
                             style: AppTypography.label(
                               size: 10,
                               letterSpacing: 0.8,
-                              color: AppColors.textOnDark.withValues(
-                                alpha: 0.28,
-                              ),
+                              color: appearance.textFaint,
                             ),
                           ),
                         ],

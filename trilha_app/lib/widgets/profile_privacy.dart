@@ -43,7 +43,7 @@ class PrivacyEye extends StatelessWidget {
     final prefs = progress.caravanProfilePrefs;
     final visible = sections.every(prefs.isVisible);
     final a = Appearance.of(context);
-    final ink = visible ? AppColors.teal : a.textFaint;
+    final ink = visible ? AppRoles.presence : a.textFaint;
 
     void toggle() {
       ActHaptics.tap();
@@ -85,11 +85,11 @@ class PrivacyEye extends StatelessWidget {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: visible
-                    ? AppColors.teal.withValues(alpha: 0.12)
+                    ? AppRoles.presence.withValues(alpha: 0.12)
                     : Colors.transparent,
                 border: Border.all(
                   color: visible
-                      ? AppColors.teal.withValues(alpha: 0.55)
+                      ? AppRoles.presence.withValues(alpha: 0.55)
                       : a.cardBorder,
                   width: 1,
                 ),
@@ -98,7 +98,7 @@ class PrivacyEye extends StatelessWidget {
                 visible
                     ? Icons.visibility_outlined
                     : Icons.visibility_off_outlined,
-                size: 16,
+                size: AppMetrics.iconSm,
                 color: ink,
               ),
             ),

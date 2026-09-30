@@ -78,10 +78,7 @@ class JuntosInbox extends StatelessWidget {
               left: AppSpace.xs,
               bottom: AppSpace.sm,
             ),
-            child: SectionLabel(
-              context.l10n.juntosInboxNews(items.length),
-              color: AppColors.accent.withValues(alpha: 0.9),
-            ),
+            child: SectionLabel(context.l10n.juntosInboxNews(items.length)),
           ),
         for (var i = 0; i < items.length; i++) ...[
           if (i > 0) const SizedBox(height: AppSpace.md),

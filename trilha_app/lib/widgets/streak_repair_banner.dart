@@ -32,7 +32,7 @@ class StreakRepairBanner extends StatelessWidget {
               CinematicIcon(
                 glyph: CinematicGlyph.frost,
                 size: AppMetrics.leadingIcon,
-                accent: AppColors.streak,
+                accent: AppRoles.streak,
                 glowing: false,
               ),
               const SizedBox(width: 12),
@@ -107,14 +107,14 @@ class StreakRepairCelebrationCard extends StatelessWidget {
     final restored = broken + 1;
 
     return GlassCard(
-      tint: AppColors.streak,
+      tint: AppRoles.streak,
       padding: AppMetrics.cardPaddingCompact,
       child: Row(
         children: [
           const CinematicIcon(
             glyph: CinematicGlyph.flame,
-            size: 36,
-            accent: AppColors.streak,
+            size: AppMetrics.leadingIcon,
+            accent: AppRoles.streak,
             framed: false,
           ),
           const SizedBox(width: 12),
@@ -141,7 +141,7 @@ class StreakRepairCelebrationCard extends StatelessWidget {
           ),
           TextCta(
             label: context.l10n.streakRepairAction,
-            color: AppColors.streak,
+            color: AppRoles.streak,
             onTap: () async {
               await progress.claimStreakRepair();
             },

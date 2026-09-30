@@ -10,6 +10,7 @@ import '../utils/appearance.dart';
 import '../widgets/app_sheet.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
+import '../widgets/juntos_chrome.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import 'bible_screen.dart';
@@ -176,14 +177,14 @@ class _BibleReadingPlanScreenState extends State<BibleReadingPlanScreen> {
                     ? plan.order.shortLabel
                     : context.l10n.planAtYourPace,
                 leadingGlyph: CinematicGlyph.book,
-                chromeAccent: AppColors.cedar,
+                chromeAccent: AppRoles.chrome,
                 onBack: () => Navigator.of(context).pop(),
               ),
               const SizedBox(height: AppSpace.afterTopBar),
               if (_loading)
                 const Padding(
                   padding: EdgeInsets.symmetric(vertical: 48),
-                  child: AppSpinner(color: AppColors.cedar),
+                  child: AppSpinner(),
                 )
               else if (plan.active)
                 _ActivePlanBody(
@@ -305,7 +306,7 @@ class _SetupPlanBody extends StatelessWidget {
                   label: context.l10n.planEstimate,
                   trailing: SoftBadge(
                     text: order.shortLabel,
-                    accent: AppColors.cedar,
+                    accent: AppRoles.chrome,
                     glyph: CinematicGlyph.book,
                   ),
                 ),
@@ -395,7 +396,7 @@ class _ActivePlanBody extends StatelessWidget {
                   text: doneToday
                       ? context.l10n.planDone
                       : context.l10n.planMinutes(plan.minutesPerDay),
-                  accent: doneToday ? AppColors.accent : AppColors.cedar,
+                  accent: doneToday ? AppRoles.success : AppRoles.chrome,
                 ),
               ),
               const SizedBox(height: AppSpace.sm),
@@ -528,32 +529,13 @@ class _OrderToggle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Container(
-      padding: const EdgeInsets.all(3),
-      decoration: BoxDecoration(
-        color: a.cardFillSoft,
-        borderRadius: BorderRadius.circular(AppRadii.md),
-        border: Border.all(color: a.cardBorder),
-      ),
-      child: Row(
-        children: [
-          for (final o in BibleReadingOrder.planOrders)
-            Expanded(
-              child: AppSelectChip(
-                label: o.shortLabel,
-                selected: value == o,
-                onTap: () => onChanged(o),
-                style: AppSelectChipStyle.solid,
-                fontSize: 13,
-                padding: const EdgeInsets.symmetric(vertical: 10),
-                borderRadius: const BorderRadius.all(
-                  Radius.circular(AppRadii.sm),
-                ),
-              ),
-            ),
-        ],
-      ),
+    const orders = BibleReadingOrder.planOrders;
+    return AppSegmentedTabs(
+      index: orders.indexOf(value),
+      onChanged: (i) => onChanged(orders[i]),
+      items: [
+        for (final o in orders) (label: o.shortLabel, glyph: null, alert: false),
+      ],
     );
   }
 }

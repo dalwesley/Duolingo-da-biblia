@@ -36,11 +36,12 @@ import '../widgets/confetti_overlay.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/invite_qr_sheet.dart';
 import '../widgets/mascot_bubble.dart';
-import '../widgets/portrait_face.dart';
+import '../widgets/relic_panel.dart';
 import '../widgets/share_seal_card.dart';
 import '../widgets/share_streak_button.dart';
 import '../widgets/streak_repair_banner.dart';
 import '../widgets/ui_primitives.dart';
+import '../widgets/user_avatar.dart';
 import 'lesson_screen.dart';
 import 'trail_map_screen.dart';
 
@@ -549,11 +550,14 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     return CinematicGlyph.check;
   }
 
+  /// Herói por papel: selo, sem erro e Travessia são recompensa; cena
+  /// concluída é acerto; cena que não fechou fica neutra.
   Color get _heroAccent {
-    if (_newSeal != null) return AppColors.accent;
-    if (widget.perfect) return AppColors.accent;
-    if (widget.isBoss) return AppColors.primaryLight;
-    return AppColors.primary;
+    if (widget.failed) return AppRoles.chrome;
+    if (_newSeal != null) return AppRoles.reward;
+    if (widget.perfect) return AppRoles.reward;
+    if (widget.isBoss) return AppRoles.reward;
+    return AppRoles.success;
   }
 
   String get _kicker {
@@ -645,7 +649,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                         child: CustomPaint(
                           painter: _CelebrationAtmospherePainter(
                             accent: heroAccent,
-                            gold: AppColors.accent,
+                            gold: AppRoles.reward,
                             breath: breath,
                             reveal: reveal,
                             perfect: widget.perfect,
@@ -984,7 +988,7 @@ class _HeroBeat extends StatelessWidget {
                 child: CinematicIcon(
                   glyph: glyph,
                   size: iconSize,
-                  accent: perfect ? AppColors.inkOnAccent : Colors.white,
+                  accent: perfect ? AppColors.inkOnAccent : AppColors.night,
                   framed: false,
                 ),
               ),
@@ -993,7 +997,7 @@ class _HeroBeat extends StatelessWidget {
         ),
         if (showKicker) ...[
           SizedBox(height: compact ? 6 : 12),
-          SectionLabel(kicker, color: AppColors.accent),
+          SectionLabel(kicker),
         ],
         SizedBox(height: showKicker ? 6 : (compact ? 8 : 12)),
         Text(
@@ -1024,7 +1028,7 @@ class _HeroBeat extends StatelessWidget {
           const SizedBox(height: 10),
           _ComboChip(
             label: context.l10n.crossingChip,
-            color: AppColors.sand,
+            color: AppRoles.reward,
           ),
         ],
         if ((medalLine ?? '').trim().isNotEmpty) ...[
@@ -1049,7 +1053,7 @@ class _HeroBeat extends StatelessWidget {
                     glyph: CinematicGlyph.path,
                     value: '+$stepsShown',
                     label: context.l10n.celebrationStatSteps,
-                    color: AppColors.accent,
+                    color: AppRoles.reward,
                     delay: 0,
                     pulse: pulse,
                     featured: !inCommit,
@@ -1064,7 +1068,7 @@ class _HeroBeat extends StatelessWidget {
                     label: streakShown == 1
                         ? context.l10n.celebrationStatDay
                         : context.l10n.celebrationStatDays,
-                    color: AppColors.streak,
+                    color: AppRoles.streak,
                     delay: 0.08,
                     pulse: pulse,
                     featured: inCommit,
@@ -1077,7 +1081,7 @@ class _HeroBeat extends StatelessWidget {
                     glyph: CinematicGlyph.check,
                     value: '$pctShown%',
                     label: context.l10n.celebrationStatAccuracy,
-                    color: AppColors.teal,
+                    color: AppRoles.success,
                     delay: 0.16,
                     pulse: pulse,
                     dense: denseStats || compact,
@@ -1161,7 +1165,7 @@ class _StreakIgniteState extends State<_StreakIgnite>
             child: GlassCard(
               padding: const EdgeInsets.fromLTRB(14, 12, 16, 12),
               radius: AppRadii.md,
-              tint: AppColors.streak,
+              tint: AppRoles.streak,
               glow: glow,
               child: Row(
                 children: [
@@ -1169,8 +1173,8 @@ class _StreakIgniteState extends State<_StreakIgnite>
                     scale: 1 + 0.35 * glow,
                     child: const CinematicIcon(
                       glyph: CinematicGlyph.flame,
-                      size: 30,
-                      accent: AppColors.streak,
+                      size: AppMetrics.iconLg,
+                      accent: AppRoles.streak,
                       framed: false,
                       glowing: true,
                     ),
@@ -1285,22 +1289,12 @@ class _TomorrowKicker extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Expanded(
-          child: Container(
-            height: 1,
-            color: AppColors.accent.withValues(alpha: 0.35),
-          ),
-        ),
+        const Expanded(child: RelicHairline()),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 14),
-          child: SectionLabel(label, color: AppColors.accent, size: 12),
+          child: SectionLabel(label, size: 12),
         ),
-        Expanded(
-          child: Container(
-            height: 1,
-            color: AppColors.accent.withValues(alpha: 0.35),
-          ),
-        ),
+        const Expanded(child: RelicHairline()),
       ],
     );
   }
@@ -1359,7 +1353,7 @@ class _TomorrowBeat extends StatelessWidget {
               ).copyWith(
                 shadows: [
                   Shadow(
-                    color: AppColors.accent.withValues(alpha: 0.28),
+                    color: AppRoles.chrome.withValues(alpha: 0.18),
                     blurRadius: 28,
                   ),
                 ],
@@ -1385,7 +1379,7 @@ class _TomorrowBeat extends StatelessWidget {
           style: AppTypography.body(
             size: 14,
             weight: FontWeight.w800,
-            color: AppColors.accent,
+            color: a.text,
           ),
         ),
         if (CommitStrip.visible(streak: streak, goal: goal)) ...[
@@ -1431,7 +1425,7 @@ class _EchoBeat extends StatelessWidget {
               ).copyWith(
                 shadows: [
                   Shadow(
-                    color: AppColors.accent.withValues(alpha: 0.32),
+                    color: AppRoles.chrome.withValues(alpha: 0.2),
                     blurRadius: 28,
                   ),
                 ],
@@ -1455,7 +1449,7 @@ class _EchoBeat extends StatelessWidget {
           style: AppTypography.body(
             size: 16,
             weight: FontWeight.w800,
-            color: AppColors.accent,
+            color: a.text,
           ),
         ),
         if (CommitStrip.visible(streak: streak, goal: goal)) ...[
@@ -1485,7 +1479,7 @@ class _CelebrationEmblem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ringColor = perfect ? AppColors.accent : accent;
+    final ringColor = perfect ? AppRoles.reward : accent;
     final ring = size * 0.77;
     final glow = size * 0.70;
     final core = size * 0.67;
@@ -1519,7 +1513,7 @@ class _CelebrationEmblem extends StatelessWidget {
               shape: BoxShape.circle,
               gradient: RadialGradient(
                 colors: [
-                  (perfect ? AppColors.accent : accent).withValues(
+                  (perfect ? AppRoles.reward : accent).withValues(
                     alpha: 0.1 + breath * 0.04,
                   ),
                   Colors.transparent,
@@ -1532,9 +1526,9 @@ class _CelebrationEmblem extends StatelessWidget {
             height: core,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              gradient: perfect ? AppGradients.gold : AppGradients.hero,
+              color: perfect ? AppRoles.reward : accent,
               boxShadow: AppTheme.glow(
-                perfect ? AppColors.accent : accent,
+                perfect ? AppRoles.reward : accent,
                 blur: 10,
               ),
             ),
@@ -1676,7 +1670,6 @@ class _ModeUpgradeCard extends StatelessWidget {
     final a = Appearance.of(context);
     final l10n = context.l10n;
     return GlassCard(
-      accent: true,
       padding: const EdgeInsets.fromLTRB(
         AppSpace.lg,
         AppSpace.lg,
@@ -1711,7 +1704,6 @@ class _ModeUpgradeCard extends StatelessWidget {
                 ? l10n.celebrationModeReviewCta(nextLabel)
                 : l10n.celebrationModeTryCta(nextLabel),
             trailing: null,
-            padding: const EdgeInsets.symmetric(vertical: 13),
             onTap: onTryStep,
           ),
           if (onSwitchTrail != null) ...[
@@ -1744,30 +1736,29 @@ class _CornerClosedBeat extends StatelessWidget {
         ? challenge.opponentName
         : challenge.challengerName;
     return GlassCard(
-      tint: AppColors.accent,
       padding: AppMetrics.cardPaddingCompact,
       child: Row(
         children: [
           SizedBox(
-            width: 72,
-            height: 36,
+            width: 22 + AppMetrics.avatarMd * 2,
+            height: AppMetrics.avatarMd * 2,
             child: Stack(
               children: [
                 Positioned(
                   left: 0,
-                  child: PortraitFace(
+                  child: UserAvatar(
                     name: mine,
                     seed: myUid ?? mine,
-                    size: 36,
+                    radius: AppMetrics.avatarMd,
                     style: PortraitStyle.avatar,
                   ),
                 ),
                 Positioned(
                   left: 22,
-                  child: PortraitFace(
+                  child: UserAvatar(
                     name: theirs,
                     seed: theirs,
-                    size: 36,
+                    radius: AppMetrics.avatarMd,
                     style: PortraitStyle.avatar,
                   ),
                 ),
@@ -1874,14 +1865,13 @@ class _StatCard extends StatelessWidget {
           horizontal: dense ? 4 : AppSpace.sm,
         ),
         radius: dense ? AppRadii.sm : AppRadii.md,
-        accent: featured,
         tint: featured ? color : null,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
             CinematicIcon(
               glyph: glyph,
-              size: dense ? 14 : 20,
+              size: dense ? AppMetrics.chipIcon : AppMetrics.iconMd,
               accent: color,
               framed: false,
               glowing: false,

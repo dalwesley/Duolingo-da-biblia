@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
 import '../models/caravan_pilgrim_profile.dart';
@@ -8,6 +7,7 @@ import '../models/trail.dart';
 import '../services/backend_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
+import 'act_feel.dart';
 import 'medal_unlock_sheet.dart';
 
 /// Linha de “falta pouco” no Hoje — só aparece no near-miss.
@@ -57,7 +57,7 @@ class MedalHomeWhisper extends StatelessWidget {
       padding: const EdgeInsets.only(top: AppSpace.sm),
       child: GestureDetector(
         onTap: () {
-          HapticFeedback.selectionClick();
+          ActHaptics.tap();
           switch (proximity.ctaKind) {
             case MedalCtaKind.bible:
               onBible?.call();

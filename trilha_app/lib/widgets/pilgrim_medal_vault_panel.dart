@@ -12,6 +12,7 @@ import 'medal_cinematic_widgets.dart';
 import 'medal_unlock_sheet.dart';
 import 'cinematic_icon.dart';
 import 'immersive_background.dart';
+import 'juntos_chrome.dart';
 import 'ui_primitives.dart';
 import 'profile_privacy.dart';
 import 'relic_panel.dart';
@@ -193,12 +194,7 @@ class _PilgrimMedalVaultsPanelState extends State<PilgrimMedalVaultsPanel> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(
-                AppSpace.lg,
-                AppSpace.lg,
-                AppSpace.lg,
-                AppSpace.lg + 2,
-              ),
+              padding: AppMetrics.cardPadding,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
@@ -482,87 +478,21 @@ class _MedalTabBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-          child: _MedalChapter(
-            label: context.l10n.medalVaultTabJourney,
-            selected: tab == _MedalVaultTab.journey,
-            onTap: () => onChanged(_MedalVaultTab.journey),
-          ),
+    return AppSegmentedTabs(
+      index: tab.index,
+      onChanged: (i) => onChanged(_MedalVaultTab.values[i]),
+      items: [
+        (
+          label: context.l10n.medalVaultTabJourney,
+          glyph: null,
+          alert: false,
         ),
-        Expanded(
-          child: _MedalChapter(
-            label: context.l10n.medalVaultTabTrails,
-            count: trailCount,
-            selected: tab == _MedalVaultTab.trails,
-            onTap: () => onChanged(_MedalVaultTab.trails),
-          ),
+        (
+          label: '${context.l10n.medalVaultTabTrails} · $trailCount',
+          glyph: null,
+          alert: false,
         ),
       ],
-    );
-  }
-}
-
-class _MedalChapter extends StatelessWidget {
-  final String label;
-  final int? count;
-  final bool selected;
-  final VoidCallback onTap;
-
-  const _MedalChapter({
-    required this.label,
-    this.count,
-    required this.selected,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final ink = selected ? AppColors.medalGold : a.textFaint;
-    final text = count == null ? label : '$label · $count';
-    return Semantics(
-      button: true,
-      selected: selected,
-      label: text,
-      excludeSemantics: true,
-      child: Material(
-        color: Colors.transparent,
-        child: InkWell(
-          onTap: onTap,
-          borderRadius: BorderRadius.circular(AppRadii.sm),
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(minHeight: 44),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: AppSpace.sm),
-                  child: Text(
-                    text,
-                    textAlign: TextAlign.center,
-                    style: AppTypography.title(
-                      size: 14,
-                      weight: selected ? FontWeight.w800 : FontWeight.w700,
-                      color: ink,
-                    ),
-                  ),
-                ),
-                AnimatedContainer(
-                  duration: const Duration(milliseconds: 220),
-                  curve: Curves.easeOutCubic,
-                  height: 2,
-                  decoration: BoxDecoration(
-                    color: selected ? AppColors.medalGold : a.textMuted(0.1),
-                    borderRadius: BorderRadius.circular(AppRadii.hair),
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ),
-      ),
     );
   }
 }

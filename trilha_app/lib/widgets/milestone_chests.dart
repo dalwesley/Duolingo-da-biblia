@@ -69,9 +69,16 @@ class MilestoneChestsCard extends StatelessWidget {
     final ok = await progress.claimChest(m.chestId(trailSlug), m.stepsReward);
     if (!ok || !context.mounted) return;
     SoundService.instance.playStreak();
-    await showAppDialog<void>(
+    // A sheet abre no Navigator do app, acima do Appearance da tela: leva a
+    // aparência atual junto para não cair no automático.
+    final scope = context.getInheritedWidgetOfExactType<Appearance>();
+    await showAppSheet<void>(
       context,
-      builder: (ctx) => _ChestOpenDialog(milestone: m),
+      builder: (ctx) {
+        final sheet = _ChestOpenSheet(milestone: m);
+        if (scope == null) return sheet;
+        return Appearance(mode: scope.mode, style: scope.style, child: sheet);
+      },
     );
   }
 }
@@ -105,20 +112,18 @@ class _ChestTile extends StatelessWidget {
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                   colors: [
-                    AppColors.accent.withValues(alpha: 0.35),
-                    AppColors.accent.withValues(alpha: 0.08),
+                    AppRoles.reward.withValues(alpha: 0.35),
+                    AppRoles.reward.withValues(alpha: 0.08),
                   ],
                 )
               : null,
-          color: glow
-              ? null
-              : Colors.white.withValues(alpha: claimed ? 0.04 : 0.06),
+          color: glow ? null : a.insetFill,
           border: Border.all(
             color: claimed
-                ? AppColors.teal.withValues(alpha: 0.45)
+                ? AppRoles.success.withValues(alpha: 0.45)
                 : glow
-                ? AppColors.accent
-                : Colors.white.withValues(alpha: 0.12),
+                ? AppRoles.reward
+                : a.cardBorder,
           ),
           boxShadow: glow
               ? [
@@ -138,11 +143,11 @@ class _ChestTile extends StatelessWidget {
                   : unlocked
                   ? CinematicGlyph.crown
                   : CinematicGlyph.lock,
-              size: 26,
+              size: AppMetrics.iconLg,
               accent: claimed
-                  ? AppColors.teal
+                  ? AppRoles.success
                   : unlocked
-                  ? AppColors.accent
+                  ? AppRoles.reward
                   : a.textFaint,
             ),
             const SizedBox(height: 6),
@@ -173,71 +178,43 @@ class _ChestTile extends StatelessWidget {
   }
 }
 
-class _ChestOpenDialog extends StatelessWidget {
+/// Baú aberto — recompensa: sheet padrão com o tom da recompensa.
+class _ChestOpenSheet extends StatelessWidget {
   final TrailMilestone milestone;
 
-  const _ChestOpenDialog({required this.milestone});
+  const _ChestOpenSheet({required this.milestone});
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Dialog(
-      backgroundColor: Colors.transparent,
-      child: Container(
-        padding: const EdgeInsets.all(28),
-        decoration: BoxDecoration(
-          gradient: const LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [AppColors.nightElevated, AppColors.night],
+    return AppSheetPanel(
+      tint: AppRoles.reward,
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          AppSheetHeader(
+            center: true,
+            leading: const CinematicIcon(
+              glyph: CinematicGlyph.gift,
+              size: AppMetrics.iconHero,
+              accent: AppRoles.reward,
+              glowing: true,
+            ),
+            title: milestone.title,
+            subtitle: milestone.subtitle,
           ),
-          borderRadius: BorderRadius.circular(AppRadii.sheet),
-          border: Border.all(color: AppColors.accent.withValues(alpha: 0.5)),
-          boxShadow: AppMetrics.cardShadow(elevated: true),
-        ),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Container(
-              width: 72,
-              height: 72,
-              decoration: const BoxDecoration(
-                shape: BoxShape.circle,
-                gradient: AppGradients.gold,
-              ),
-              child: const CinematicIcon(
-                glyph: CinematicGlyph.gift,
-                size: 36,
-                accent: AppColors.inkOnAccent,
-                framed: false,
-              ),
-            ),
-            const SizedBox(height: 18),
-            Text(
-              milestone.title,
-              textAlign: TextAlign.center,
-              style: AppTypography.title(size: 20, color: a.text),
-            ),
-            const SizedBox(height: AppSpace.sm),
-            Text(
-              milestone.subtitle,
-              textAlign: TextAlign.center,
-              style: AppTypography.body(size: 13, color: a.textSecondary),
-            ),
-            const SizedBox(height: 18),
-            SoftBadge(
-              text: context.l10n.commonPlusSteps(milestone.stepsReward),
-              solid: true,
-            ),
-            const SizedBox(height: AppSpace.screen),
-            CopperCta(
-              label: context.l10n.commonContinue,
-              dense: true,
-              trailing: null,
-              onTap: () => Navigator.pop(context),
-            ),
-          ],
-        ),
+          const SizedBox(height: 18),
+          SoftBadge(
+            text: context.l10n.commonPlusSteps(milestone.stepsReward),
+            solid: true,
+          ),
+          const SizedBox(height: AppSpace.screen),
+          CopperCta(
+            label: context.l10n.commonContinue,
+            dense: true,
+            trailing: null,
+            onTap: () => Navigator.pop(context),
+          ),
+        ],
       ),
     );
   }
@@ -251,13 +228,13 @@ class WeeklyQuestsCard extends StatelessWidget {
     final progress = context.watch<ProgressService>();
 
     return RelicPanel(
-      accent: AppColors.primaryLight,
+      accent: AppRoles.chrome,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           RelicChapter(
             title: context.l10n.questWeeklyTitle,
-            accent: AppColors.primaryLight,
+            accent: AppRoles.chrome,
             divided: false,
             trailing: Text(
               context.l10n.questCountOf(
@@ -275,7 +252,7 @@ class WeeklyQuestsCard extends StatelessWidget {
           for (var i = 0; i < WeeklyQuestDefs.all.length; i++) ...[
             if (i > 0) ...[
               const SizedBox(height: 12),
-              const RelicHairline(accent: AppColors.primaryLight),
+              const RelicHairline(accent: AppRoles.chrome),
               const SizedBox(height: 12),
             ],
             _WeeklyQuestRow(quest: WeeklyQuestDefs.all[i], progress: progress),
@@ -301,10 +278,9 @@ class _WeeklyQuestRow extends StatelessWidget {
     final claimed = progress.isWeeklyQuestClaimed(quest.id);
     final done = claimed || value >= quest.target;
     final pct = (value / quest.target).clamp(0.0, 1.0);
-    final tone = claimed
-        ? AppColors.teal
-        : CinematicGlyphResolver.accentForQuest(quest.id);
-    final bar = claimed ? AppColors.teal : AppColors.accent;
+    // Ícone e barra = chrome; concluída = sucesso; passos = recompensa.
+    final tone = claimed ? AppRoles.success : AppRoles.chrome;
+    final bar = tone;
 
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
@@ -356,7 +332,7 @@ class _WeeklyQuestRow extends StatelessWidget {
                     style: AppTypography.label(
                       size: 10,
                       letterSpacing: 1.2,
-                      color: AppColors.teal.withValues(alpha: 0.85),
+                      color: AppRoles.success.withValues(alpha: 0.85),
                     ),
                   )
                 : Text(
@@ -364,7 +340,7 @@ class _WeeklyQuestRow extends StatelessWidget {
                     style: AppTypography.label(
                       size: 11,
                       letterSpacing: 0.8,
-                      color: tone,
+                      color: AppRoles.reward,
                     ),
                   ),
           ),

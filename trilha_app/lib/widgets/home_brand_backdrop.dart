@@ -4,11 +4,12 @@ import '../utils/appearance.dart';
 import 'brand_trail.dart';
 import 'film_layers.dart';
 
-/// Fundo da Home: a mesma trilha STWAY do ícone, da splash e do
-/// onboarding, no céu escolhido — parada e apagada, para os cards lerem.
+/// A mesma trilha STWAY do ícone, da splash e do onboarding, no céu
+/// escolhido — parada e apagada. Só dentro de card herói (ex.: perfil):
+/// cenário de tela cheia é da splash, onboarding e celebração; a Home usa o
+/// gradiente da fase do dia do shell.
 ///
-/// Estático de propósito (pinta uma vez): a Home já tem animação demais
-/// para somar mais um quadro por segundo.
+/// Estático de propósito (pinta uma vez).
 class HomeBrandBackdrop extends StatefulWidget {
   final AppearanceStyle style;
 

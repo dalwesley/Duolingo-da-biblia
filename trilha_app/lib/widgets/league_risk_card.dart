@@ -47,7 +47,7 @@ class LeagueRiskCard extends StatelessWidget {
           CinematicIcon(
             glyph: inZone ? CinematicGlyph.demote : CinematicGlyph.rise,
             size: AppMetrics.leadingIcon,
-            accent: inZone ? AppColors.error : AppColors.accent,
+            accent: AppRoles.risk,
             glowing: false,
           ),
           const SizedBox(width: 12),

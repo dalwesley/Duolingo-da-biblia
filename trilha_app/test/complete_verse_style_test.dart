@@ -88,6 +88,8 @@ void main() {
     expect(filledStyle!.fontFamily, runStyle!.fontFamily);
     expect(filledStyle!.fontWeight, runStyle!.fontWeight);
     expect(filledStyle!.height, runStyle!.height);
-    expect(filledStyle!.color, AppColors.accent);
+    // Antes de conferir: seleção (contorno claro), não amarelo nem o modo.
+    expect(filledStyle!.color, AppRoles.selected);
+    expect(filledStyle!.decoration, TextDecoration.underline);
   });
 }

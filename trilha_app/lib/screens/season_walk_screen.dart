@@ -14,6 +14,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
+import '../widgets/relic_panel.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import 'lesson_screen.dart';
@@ -160,7 +161,6 @@ class _WeekBlock extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
     final l10n = context.l10n;
     final progress = context.watch<ProgressService>();
     final days = campaign.week(weekIndex);
@@ -180,9 +180,10 @@ class _WeekBlock extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          l10n.seasonWeek(weekIndex + 1),
-          style: AppTypography.title(size: 14, color: a.text),
+        RelicChapter(
+          title: l10n.seasonWeek(weekIndex + 1),
+          accent: AppRoles.chrome,
+          divided: false,
         ),
         const SizedBox(height: 8),
         for (final day in days)
@@ -233,6 +234,7 @@ class _WeekBlock extends StatelessWidget {
     );
   }
 }
+
 class _DayTile extends StatelessWidget {
   final SeasonWalkCampaign campaign;
   final SeasonWalkDay day;
@@ -274,52 +276,47 @@ class _DayTile extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: 8),
       child: GlassCard(
         padding: AppMetrics.cardPaddingCompact,
-        child: InkWell(
-          onTap: () => _open(context, access, done),
-          child: Row(
-            children: [
-              CinematicIcon(
-                glyph: locked
-                    ? CinematicGlyph.lock
-                    : done
-                    ? CinematicGlyph.check
-                    : CinematicGlyph.calendar,
-                size: AppMetrics.leadingIcon,
-                accent: done
-                    ? AppColors.accent
-                    : isToday
-                    ? AppColors.accent
-                    : a.textFaint,
+        onTap: () => _open(context, access, done),
+        child: Row(
+          children: [
+            CinematicIcon(
+              glyph: locked
+                  ? CinematicGlyph.lock
+                  : done
+                  ? CinematicGlyph.check
+                  : CinematicGlyph.calendar,
+              size: AppMetrics.leadingIcon,
+              accent: done
+                  ? AppRoles.success
+                  : isToday
+                  ? AppRoles.chrome
+                  : a.textFaint,
+            ),
+            const SizedBox(width: 10),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    l10n.seasonDayLine(day.index, day.title),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: AppTypography.title(size: 14, color: a.text),
+                  ),
+                  Text(
+                    access.needsPro
+                        ? l10n.seasonProFromDay4
+                        : access.future
+                        ? l10n.seasonNotTodayYet
+                        : day.insight,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: AppTypography.body(size: 12, color: a.textSecondary),
+                  ),
+                ],
               ),
-              const SizedBox(width: 10),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      l10n.seasonDayLine(day.index, day.title),
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: AppTypography.title(size: 14, color: a.text),
-                    ),
-                    Text(
-                      access.needsPro
-                          ? l10n.seasonProFromDay4
-                          : access.future
-                          ? l10n.seasonNotTodayYet
-                          : day.insight,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: AppTypography.body(
-                        size: 12,
-                        color: a.textSecondary,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
@@ -401,9 +398,10 @@ class _SeasonWalkReviewScreenState extends State<SeasonWalkReviewScreen> {
                     AppSpace.xl,
                   ),
                   children: [
-                    Text(
-                      l10n.seasonWeekInsightsHeader,
-                      style: AppTypography.title(size: 16, color: a.text),
+                    RelicChapter(
+                      title: l10n.seasonWeekInsightsHeader,
+                      accent: AppRoles.chrome,
+                      divided: false,
                     ),
                     const SizedBox(height: 12),
                     for (final day in _days)

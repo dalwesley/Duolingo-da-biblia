@@ -19,13 +19,11 @@ class ReflectionJournalCard extends StatelessWidget {
     final items = progress.recentReflections(limit: 3);
 
     return RelicPanel(
-      accent: AppColors.primaryLight,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           RelicChapter(
             title: context.l10n.journalTitle,
-            accent: AppColors.primaryLight,
             whisper: items.isEmpty
                 ? context.l10n.journalEmpty
                 : null,
@@ -41,13 +39,10 @@ class ReflectionJournalCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   if (i > 0) ...[
-                    const RelicHairline(accent: AppColors.primaryLight),
+                    const RelicHairline(),
                     const SizedBox(height: 14),
                   ],
-                  SectionLabel(
-                    title,
-                    color: AppColors.accent.withValues(alpha: 0.88),
-                  ),
+                  SectionLabel(title),
                   const SizedBox(height: 8),
                   Text(
                     e.value,

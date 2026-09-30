@@ -69,7 +69,7 @@ void openSettings(BuildContext context) {
                   title: context.l10n.settingsTitle,
                   subtitle: context.l10n.settingsSubtitle,
                   leadingGlyph: CinematicGlyph.tune,
-                  chromeAccent: AppColors.slate,
+                  chromeAccent: AppRoles.chrome,
                   onBack: () => Navigator.pop(ctx),
                 ),
               ),
@@ -238,7 +238,6 @@ class _SettingsScreenState extends State<SettingsScreen>
             a,
             title: context.l10n.settingsRhythmTitle,
             subtitle: context.l10n.settingsRhythmSubtitle,
-            tint: _SettingsSection.jornada.tint,
             children: [
               _RhythmPath(progress: progress),
               const _SettingsDivider(),
@@ -290,12 +289,10 @@ class _SettingsScreenState extends State<SettingsScreen>
   /// Lembrete e sons: só os interruptores. Ligar o lembrete abre a
   /// escolha do horário; com ele ligado, tocar na linha muda a hora.
   Widget _remindersCard(ProgressService progress, AppearanceStyle a) {
-    final tint = _SettingsSection.lembretes.tint;
     final on = progress.settings.notifications;
     return _groupedCard(
       a,
       title: context.l10n.settingsRemindersTitle,
-      tint: tint,
       children: [
         _toggle(
           a,
@@ -308,7 +305,6 @@ class _SettingsScreenState extends State<SettingsScreen>
               v ? _pickReminderHour(progress) : _setReminder(progress, false),
           onRowTap: on ? () => _pickReminderHour(progress) : null,
           glyph: CinematicGlyph.bell,
-          accent: tint,
         ),
         const _SettingsDivider(compact: true),
         _toggle(
@@ -322,7 +318,6 @@ class _SettingsScreenState extends State<SettingsScreen>
             SoundService.instance.setEnabled(v);
           },
           glyph: CinematicGlyph.echo,
-          accent: AppColors.accent,
         ),
       ],
     );
@@ -343,7 +338,6 @@ class _SettingsScreenState extends State<SettingsScreen>
             for (final lang in AppLanguage.values)
               (
                 label: lang.label(l10n),
-                caption: null,
                 selected: current == lang,
                 onTap: () {
                   if (current == lang) return;
@@ -406,7 +400,6 @@ class _SettingsScreenState extends State<SettingsScreen>
         for (final days in _streakGoals)
           (
             label: context.l10n.settingsDays(days),
-            caption: null,
             selected: current == days,
             onTap: () {
               if (current == days) return;
@@ -445,11 +438,9 @@ class _SettingsScreenState extends State<SettingsScreen>
 
   /// Céu e tamanho do texto direto no card — muda e já se vê, sem sheet.
   Widget _appearanceCard(ProgressService progress, AppearanceStyle a) {
-    final tint = _SettingsSection.aparencia.tint;
     return _groupedCard(
       a,
       title: context.l10n.settingsAppearanceTitle,
-      tint: tint,
       children: [
         _fieldLabel(a, context.l10n.settingsThemeLabel),
         const SizedBox(height: AppSpace.xs),
@@ -485,14 +476,12 @@ class _SettingsScreenState extends State<SettingsScreen>
     required String title,
     required String subtitle,
     required CinematicGlyph glyph,
-    required Color tint,
     required Widget Function(ProgressService progress) body,
   }) {
     ActHaptics.tap();
     return showAppSheet<void>(
       context,
       builder: (sheetContext) => AppSheetPanel(
-        tint: tint,
         child: Builder(
           builder: (ctx) {
             final progress = ctx.watch<ProgressService>();
@@ -503,12 +492,11 @@ class _SettingsScreenState extends State<SettingsScreen>
                 AppSheetHeader(
                   leading: CinematicIcon(
                     glyph: glyph,
-                    size: 40,
-                    accent: tint,
+                    size: AppMetrics.leadingIcon,
+                    accent: AppRoles.chrome,
                     glowing: false,
                   ),
                   eyebrow: eyebrow,
-                  eyebrowColor: tint,
                   title: title,
                   subtitle: subtitle,
                 ),
@@ -528,8 +516,8 @@ class _SettingsScreenState extends State<SettingsScreen>
     String label,
     String value, {
     required CinematicGlyph glyph,
-    required Color accent,
     required VoidCallback? onTap,
+    Color accent = AppRoles.chrome,
     Color? labelColor,
     Widget? trailing,
   }) {
@@ -574,13 +562,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                     ],
                   ),
                 ),
-                trailing ??
-                    CinematicIcon(
-                      glyph: CinematicGlyph.chevron,
-                      size: 14,
-                      accent: a.textFaint,
-                      framed: false,
-                    ),
+                trailing ?? ListChevron(color: a.textFaint),
               ],
             ),
           ),
@@ -599,7 +581,6 @@ class _SettingsScreenState extends State<SettingsScreen>
         for (final step in steps)
           (
             label: step.$2,
-            caption: null,
             selected: (current - step.$1).abs() < 0.01,
             onTap: () {
               ActHaptics.tap();
@@ -631,23 +612,21 @@ class _SettingsScreenState extends State<SettingsScreen>
     final signedIn = backend.isSignedIn;
     return GlassCard(
       glow: 0.6,
+      tint: AppRoles.chrome,
       padding: const EdgeInsets.fromLTRB(18, 18, 18, 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Row(
             children: [
-              SectionLabel(
-                context.l10n.settingsAccount,
-                color: AppColors.accent,
-              ),
+              SectionLabel(context.l10n.settingsAccount),
               const Spacer(),
               SoftBadge(
                 text: signedIn
                     ? context.l10n.settingsInCloud
                     : context.l10n.settingsDeviceOnly,
                 glyph: signedIn ? CinematicGlyph.check : CinematicGlyph.wrong,
-                accent: signedIn ? AppColors.teal : AppColors.coral,
+                accent: signedIn ? AppRoles.success : AppRoles.risk,
               ),
             ],
           ),
@@ -784,10 +763,8 @@ class _SettingsScreenState extends State<SettingsScreen>
     bool value,
     ValueChanged<bool> onChanged, {
     CinematicGlyph glyph = CinematicGlyph.spark,
-    Color? accent,
     VoidCallback? onRowTap,
   }) {
-    final tone = accent ?? AppColors.accent;
     // Linha inteira alterna o switch (ou abre [onRowTap]); leitor de tela lê
     // rótulo + estado juntos.
     return MergeSemantics(
@@ -803,7 +780,7 @@ class _SettingsScreenState extends State<SettingsScreen>
               CinematicIcon(
                 glyph: glyph,
                 size: AppMetrics.leadingIcon,
-                accent: value ? tone : a.textFaint,
+                accent: value ? AppRoles.chrome : a.textFaint,
                 glowing: false,
               ),
               const SizedBox(width: AppSpace.md),
@@ -826,12 +803,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                   ],
                 ),
               ),
-              Switch.adaptive(
-                value: value,
-                onChanged: onChanged,
-                activeThumbColor: tone,
-                activeTrackColor: tone.withValues(alpha: 0.35),
-              ),
+              _SettingsSwitch(value: value, onChanged: onChanged),
             ],
           ),
         ),
@@ -839,11 +811,15 @@ class _SettingsScreenState extends State<SettingsScreen>
     );
   }
 
-  /// Título do card — traço na cor da seção, como nos cards do perfil.
-  Widget _cardTitle(String title, Color tint) {
+  /// Título do card — traço neutro, como nos cards do perfil.
+  Widget _cardTitle(String title) {
     return Semantics(
       header: true,
-      child: RelicChapter(title: title, accent: tint, divided: false),
+      child: RelicChapter(
+        title: title,
+        accent: AppRoles.chrome,
+        divided: false,
+      ),
     );
   }
 
@@ -852,16 +828,12 @@ class _SettingsScreenState extends State<SettingsScreen>
     required String title,
     required List<Widget> children,
     String? subtitle,
-    Color tint = AppColors.accent,
   }) {
     return GlassCard(
-      tint: tint,
-      glow: 0.25,
-      padding: const EdgeInsets.all(AppSpace.lg),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          _cardTitle(title, tint),
+          _cardTitle(title),
           if (subtitle != null) ...[
             const SizedBox(height: AppSpace.sm),
             Text(
@@ -918,12 +890,10 @@ class _SettingsScreenState extends State<SettingsScreen>
     ProgressService progress,
   ) {
     final backend = context.watch<BackendService>();
-    final tint = _SettingsSection.conta.tint;
     final last = sync.lastSyncAt;
     return _groupedCard(
       a,
       title: context.l10n.settingsAccount,
-      tint: tint,
       children: [
         _navRow(
           a,
@@ -932,7 +902,6 @@ class _SettingsScreenState extends State<SettingsScreen>
               ? context.l10n.settingsManualBackupSubtitle
               : context.l10n.settingsLastShort(_shortDate(last)),
           glyph: CinematicGlyph.share,
-          accent: tint,
           onTap: () => _openBackupSheet(sync),
         ),
         const _SettingsDivider(compact: true),
@@ -942,8 +911,8 @@ class _SettingsScreenState extends State<SettingsScreen>
             context.l10n.settingsSignOut,
             context.l10n.settingsSignOutSubtitle,
             glyph: CinematicGlyph.back,
-            accent: AppColors.error,
-            labelColor: AppColors.error,
+            accent: AppRoles.risk,
+            labelColor: AppRoles.risk,
             onTap: backend.isGoogleBusy ? null : () => _signOutGoogle(backend),
           ),
           const _SettingsDivider(compact: true),
@@ -953,8 +922,8 @@ class _SettingsScreenState extends State<SettingsScreen>
           context.l10n.settingsDeleteProgress,
           context.l10n.settingsDeleteProgressSubtitle,
           glyph: CinematicGlyph.fall,
-          accent: AppColors.error,
-          labelColor: AppColors.error,
+          accent: AppRoles.risk,
+          labelColor: AppRoles.risk,
           onTap: () => _confirmResetProgress(progress),
         ),
       ],
@@ -967,7 +936,6 @@ class _SettingsScreenState extends State<SettingsScreen>
       title: context.l10n.settingsManualBackup,
       subtitle: context.l10n.settingsBackupSheetBody,
       glyph: CinematicGlyph.share,
-      tint: _SettingsSection.conta.tint,
       body: (p) => Builder(
         builder: (ctx) {
           final a = Appearance.of(ctx);
@@ -1023,7 +991,6 @@ class _SettingsScreenState extends State<SettingsScreen>
       title: context.l10n.settingsCreditsTitle,
       subtitle: context.l10n.settingsCreditsSubtitle,
       glyph: CinematicGlyph.scroll,
-      tint: _SettingsSection.conta.tint,
       body: (_) => Builder(
         builder: (ctx) {
           final a = Appearance.of(ctx);
@@ -1052,7 +1019,6 @@ class _SettingsScreenState extends State<SettingsScreen>
 
   /// Sobre: versão, introdução e créditos em linhas; doação no fim.
   Widget _aboutBlock(AppearanceStyle a) {
-    final tint = _SettingsSection.conta.tint;
     final credits = [
       for (final t in BibleService.catalog.where((t) => t.available))
         if (t.attribution != null) '${t.shortName} — ${t.attribution}',
@@ -1062,7 +1028,6 @@ class _SettingsScreenState extends State<SettingsScreen>
       a,
       title: context.l10n.settingsAboutTitle,
       subtitle: context.l10n.settingsAboutSubtitle,
-      tint: tint,
       children: [
         _navRow(
           a,
@@ -1071,7 +1036,6 @@ class _SettingsScreenState extends State<SettingsScreen>
               ? context.l10n.settingsCheckingUpdate
               : (_versionLabel ?? '…'),
           glyph: CinematicGlyph.refresh,
-          accent: tint,
           onTap: _checkingUpdate ? null : _checkForUpdates,
           trailing: Text(
             _checkingUpdate ? '' : context.l10n.settingsCheck,
@@ -1088,7 +1052,6 @@ class _SettingsScreenState extends State<SettingsScreen>
           context.l10n.settingsReplayIntro,
           context.l10n.settingsReplayIntroSubtitle,
           glyph: CinematicGlyph.scroll,
-          accent: tint,
           onTap: () async {
             if (!mounted) return;
             await Navigator.of(context).pushAndRemoveUntil(
@@ -1103,7 +1066,6 @@ class _SettingsScreenState extends State<SettingsScreen>
           context.l10n.settingsCreditsTitle,
           context.l10n.settingsCreditsRowSubtitle,
           glyph: CinematicGlyph.book,
-          accent: tint,
           onTap: () => _openCreditsSheet(credits),
         ),
         const SizedBox(height: AppSpace.lg),
@@ -1136,20 +1098,39 @@ class _SettingsDivider extends StatelessWidget {
   }
 }
 
-/// Seções dos ajustes — cada uma com cor própria, para o olho achar o
-/// lugar pela cor antes de ler.
-enum _SettingsSection {
-  jornada(AppColors.accent),
-  aparencia(AppColors.sky),
-  lembretes(AppColors.coral),
-  conta(AppColors.slate);
+/// Seções dos ajustes — âncoras de rolagem. Sem cor própria: os cards são
+/// neutros e o rótulo de grupo organiza a tela.
+enum _SettingsSection { jornada, aparencia, lembretes, conta }
 
-  final Color tint;
+/// Interruptor dos ajustes — "ligado" é estado ([AppRoles.success]), não a
+/// ação principal; o mesmo tom em todas as linhas.
+class _SettingsSwitch extends StatelessWidget {
+  final bool value;
+  final ValueChanged<bool> onChanged;
 
-  const _SettingsSection(this.tint);
+  const _SettingsSwitch({required this.value, required this.onChanged});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Switch.adaptive(
+      value: value,
+      onChanged: onChanged,
+      activeThumbColor: AppRoles.selected,
+      activeTrackColor: AppRoles.success,
+      inactiveThumbColor: a.textSecondary,
+      inactiveTrackColor: a.insetFill,
+      trackOutlineColor: WidgetStateProperty.resolveWith(
+        (states) => states.contains(WidgetState.selected)
+            ? AppRoles.success
+            : a.cardBorder,
+      ),
+    );
+  }
 }
 
-/// Faixa Peregrino+ dentro do passaporte.
+/// Faixa Peregrino+ dentro do passaporte. Convite = poço neutro; assinatura
+/// ativa = recompensa (amarelo, borda ≥ [AppMetrics.accentBorder]).
 class _PlusStrip extends StatelessWidget {
   final bool plus;
   final VoidCallback onTap;
@@ -1159,6 +1140,7 @@ class _PlusStrip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final tone = plus ? AppRoles.reward : AppRoles.chrome;
     return Material(
       color: Colors.transparent,
       child: InkWell(
@@ -1168,22 +1150,17 @@ class _PlusStrip extends StatelessWidget {
           padding: const EdgeInsets.fromLTRB(12, 10, 10, 10),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(AppRadii.md),
-            gradient: LinearGradient(
-              colors: [
-                AppColors.accent.withValues(alpha: plus ? 0.22 : 0.12),
-                AppColors.accent.withValues(alpha: 0.02),
-              ],
-            ),
+            color: plus ? AppMetrics.accentFill(alpha: 0.12) : a.insetFill,
             border: Border.all(
-              color: AppColors.accent.withValues(alpha: plus ? 0.6 : 0.3),
+              color: plus ? AppMetrics.accentBorder(alpha: 0.6) : a.insetBorder,
             ),
           ),
           child: Row(
             children: [
               CinematicIcon(
                 glyph: CinematicGlyph.crown,
-                size: 30,
-                accent: AppColors.accent,
+                size: AppMetrics.iconLg,
+                accent: tone,
                 glowing: plus,
                 framed: false,
               ),
@@ -1192,7 +1169,10 @@ class _PlusStrip extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const SectionLabel('Peregrino+', color: AppColors.accent),
+                    SectionLabel(
+                      'Peregrino+',
+                      color: plus ? AppRoles.reward : null,
+                    ),
                     const SizedBox(height: 2),
                     Text(
                       plus
@@ -1216,7 +1196,7 @@ class _PlusStrip extends StatelessWidget {
                   solid: true,
                 )
               else
-                ListChevron(color: AppColors.accent.withValues(alpha: 0.9)),
+                ListChevron(color: a.textFaint),
             ],
           ),
         ),
@@ -1298,15 +1278,19 @@ class _ProfileHeader extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             JuntosHalo(
-              size: 68,
+              size: AppMetrics.avatarLg * 2,
               lit: signedIn,
+              color: AppRoles.presence,
               child: UserAvatar(
                 name: name,
                 photoUrl: photoUrl,
                 seed: seed,
                 style: portraitStyle,
-                radius: 34,
-                borderColor: AppColors.accent.withValues(alpha: 0.82),
+                radius: AppMetrics.avatarLg,
+                borderColor: AppMetrics.accentBorder(
+                  color: AppRoles.chrome,
+                  alpha: 0.6,
+                ),
                 onTap: onOpenProfile,
               ),
             ),
@@ -1320,7 +1304,7 @@ class _ProfileHeader extends StatelessWidget {
                     maxLength: 24,
                     textInputAction: TextInputAction.done,
                     onSubmitted: (_) => onSaveName(),
-                    cursorColor: AppColors.accent,
+                    cursorColor: AppRoles.selected,
                     style: AppTypography.display(
                       size: 20,
                       weight: FontWeight.w800,
@@ -1386,131 +1370,25 @@ class _ProfileHeader extends StatelessWidget {
   }
 }
 
+/// Escolha em trilho — o segmentado único do app ([AppSegmentedTabs]).
 class _SegmentTrack extends StatelessWidget {
-  final List<
-    ({String label, String? caption, bool selected, VoidCallback onTap})
-  >
-  items;
+  final List<({String label, bool selected, VoidCallback onTap})> items;
   final String? semanticsLabel;
 
   const _SegmentTrack({required this.items, this.semanticsLabel});
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final selectedIndex = items.indexWhere((i) => i.selected);
     return Semantics(
       container: true,
       label: semanticsLabel,
-      child: Container(
-        padding: const EdgeInsets.all(AppSpace.xs),
-        decoration: BoxDecoration(
-          color: a.insetFill,
-          borderRadius: BorderRadius.circular(AppRadii.md),
-          border: Border.all(color: a.insetBorder),
-        ),
-        child: LayoutBuilder(
-          builder: (context, c) {
-            final slot = c.maxWidth / items.length;
-            return Stack(
-              children: [
-                // Pílula ouro que desliza até a escolha.
-                if (selectedIndex >= 0)
-                  AnimatedPositioned(
-                    duration: const Duration(milliseconds: 300),
-                    curve: Curves.easeOutBack,
-                    left: slot * selectedIndex,
-                    width: slot,
-                    top: 0,
-                    bottom: 0,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: AppColors.accent,
-                        borderRadius: BorderRadius.circular(AppRadii.sm),
-                        boxShadow: [
-                          BoxShadow(
-                            color: AppColors.accent.withValues(alpha: 0.3),
-                            blurRadius: 12,
-                            offset: const Offset(0, 3),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                Row(
-                  children: [
-                    for (final item in items)
-                      Expanded(
-                        child: Semantics(
-                          button: true,
-                          selected: item.selected,
-                          inMutuallyExclusiveGroup: true,
-                          label: item.caption == null
-                              ? item.label
-                              : '${item.caption}, ${item.label}',
-                          excludeSemantics: true,
-                          child: GestureDetector(
-                            onTap: item.onTap,
-                            behavior: HitTestBehavior.opaque,
-                            child: Container(
-                              constraints: const BoxConstraints(minHeight: 44),
-                              alignment: Alignment.center,
-                              padding: const EdgeInsets.symmetric(
-                                horizontal: AppSpace.xs,
-                                vertical: AppSpace.sm,
-                              ),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.min,
-                                children: [
-                                  AnimatedDefaultTextStyle(
-                                    duration: const Duration(milliseconds: 180),
-                                    style: AppTypography.body(
-                                      size: 13,
-                                      weight: FontWeight.w800,
-                                      color: item.selected
-                                          ? AppColors.inkOnAccent
-                                          : a.textSecondary,
-                                    ),
-                                    child: Text(
-                                      item.label,
-                                      textAlign: TextAlign.center,
-                                      maxLines: 1,
-                                      overflow: TextOverflow.ellipsis,
-                                    ),
-                                  ),
-                                  if (item.caption != null)
-                                    AnimatedDefaultTextStyle(
-                                      duration: const Duration(
-                                        milliseconds: 180,
-                                      ),
-                                      style: AppTypography.body(
-                                        size: 11,
-                                        weight: FontWeight.w600,
-                                        color: item.selected
-                                            ? AppColors.inkOnAccent.withValues(
-                                                alpha: 0.78,
-                                              )
-                                            : a.textFaint,
-                                      ),
-                                      child: Text(
-                                        item.caption!,
-                                        textAlign: TextAlign.center,
-                                        maxLines: 1,
-                                        overflow: TextOverflow.ellipsis,
-                                      ),
-                                    ),
-                                ],
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
-                  ],
-                ),
-              ],
-            );
-          },
-        ),
+      child: AppSegmentedTabs(
+        index: items.indexWhere((i) => i.selected),
+        onChanged: (i) => items[i].onTap(),
+        items: [
+          for (final item in items)
+            (label: item.label, glyph: null, alert: false),
+        ],
       ),
     );
   }
@@ -1535,6 +1413,7 @@ class _RhythmPath extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     final goal = progress.settings.dailyGoal;
     final selectedIndex = _options.indexWhere((o) => o.steps == goal);
 
@@ -1559,7 +1438,7 @@ class _RhythmPath extends StatelessWidget {
                       height: 2,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(AppRadii.pill),
-                        color: AppColors.accent.withValues(alpha: 0.22),
+                        color: a.progressTrack,
                       ),
                     ),
                   ),
@@ -1570,7 +1449,7 @@ class _RhythmPath extends StatelessWidget {
                       height: 2,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(AppRadii.pill),
-                        color: AppColors.accent.withValues(alpha: 0.9),
+                        color: AppRoles.selected.withValues(alpha: 0.9),
                       ),
                     ),
                   ),
@@ -1670,19 +1549,17 @@ class _RhythmNode extends StatelessWidget {
       alignment: Alignment.center,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        color: selected ? AppColors.accent : a.cardFill,
+        color: selected ? AppRoles.selected : a.cardFill,
         border: Border.all(
-          color: selected
-              ? AppColors.accent
-              : AppColors.accent.withValues(alpha: 0.45),
+          color: selected ? AppRoles.selected : a.cardBorder,
           width: selected ? 2 : 1.4,
         ),
         boxShadow: selected
             ? [
                 BoxShadow(
-                  color: AppColors.accent.withValues(alpha: 0.28),
-                  blurRadius: 12,
-                  offset: const Offset(0, 2),
+                  color: Colors.black.withValues(alpha: 0.28),
+                  blurRadius: 10,
+                  offset: const Offset(0, 3),
                 ),
               ]
             : null,
@@ -1692,7 +1569,7 @@ class _RhythmNode extends StatelessWidget {
         style: AppTypography.title(
           size: selected ? 18 : 14,
           weight: FontWeight.w900,
-          color: selected ? AppColors.inkOnAccent : a.text,
+          color: selected ? AppColors.night : a.text,
         ),
       ),
     );
@@ -1725,7 +1602,7 @@ class _RhythmCaption extends StatelessWidget {
           overflow: TextOverflow.ellipsis,
           style: AppTypography.title(
             size: 12,
-            color: selected ? AppColors.accent : a.text,
+            color: selected ? AppRoles.selected : a.textSecondary,
           ),
         ),
         const SizedBox(height: 2),
@@ -1745,7 +1622,7 @@ class _RhythmCaption extends StatelessWidget {
           height: 2,
           width: selected ? 28 : 0,
           decoration: BoxDecoration(
-            color: AppColors.accent,
+            color: AppRoles.selected,
             borderRadius: BorderRadius.circular(AppRadii.pill),
           ),
         ),
@@ -1799,19 +1676,14 @@ class _SkySwitchState extends State<_SkySwitch> with TickerProviderStateMixin {
     AppearanceMode.automatic => context.l10n.settingsThemeCaptionAuto,
   };
 
+  // Paleta da ilustração (sol, entardecer, lua, ciclo) — cenário do switch,
+  // não papel de UI; o rótulo abaixo usa [AppearanceStyle.text].
   Color _accentFor(AppearanceMode mode) => switch (mode) {
     AppearanceMode.morning => AppColors.accent,
     AppearanceMode.afternoon => AppColors.ember,
     AppearanceMode.night => AppColors.orchid,
     AppearanceMode.automatic => AppColors.slate,
   };
-
-  Color get _accentNow {
-    final x = _visual.clamp(0.0, 3.0);
-    final i = x.floor().clamp(0, 2);
-    final t = Curves.easeInOut.transform(x - i);
-    return Color.lerp(_accentFor(_modes[i]), _accentFor(_modes[i + 1]), t)!;
-  }
 
   String _shortLabel(AppearanceMode mode) => switch (mode) {
     AppearanceMode.morning => context.l10n.settingsThemeLight,
@@ -2000,7 +1872,7 @@ class _SkySwitchState extends State<_SkySwitch> with TickerProviderStateMixin {
               children: [
                 Text(
                   _shortLabel(_visualMode),
-                  style: AppTypography.title(size: 14, color: _accentNow),
+                  style: AppTypography.title(size: 14, color: a.text),
                 ),
                 const SizedBox(height: 2),
                 Text(
@@ -2056,7 +1928,7 @@ class _SkyStageFace extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final color = Color.lerp(
-      Colors.white.withValues(alpha: 0.7),
+      Appearance.of(context).textSecondary,
       accent,
       Curves.easeOut.transform(focus),
     )!;

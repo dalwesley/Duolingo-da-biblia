@@ -11,7 +11,6 @@ import 'act_feel.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
 import 'embossed_glyph.dart';
-import 'immersive_background.dart';
 import 'share_seal_card.dart';
 import 'ui_primitives.dart';
 import 'profile_privacy.dart';
@@ -72,13 +71,13 @@ class _SealEncounterSheetState extends State<_SealEncounterSheet> {
           ),
         ),
         AppSheetPanel(
-          background: const _EncounterAtmosphere(),
+          background: const RelicAtmosphere(accent: AppRoles.reward),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
               _EncounterSeal(glyph: seal.glyph, size: 72, unlocked: true),
               const SizedBox(height: 14),
-              SectionLabel(seal.name, size: 12, color: AppColors.accent),
+              SectionLabel(seal.name, size: 12, color: AppRoles.reward),
               const SizedBox(height: 10),
               Text(
                 seal.fact,
@@ -158,57 +157,23 @@ class CharacterSealsStrip extends StatelessWidget {
             next.name,
           );
 
-    return GlassCard(
-      padding: EdgeInsets.zero,
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(AppMetrics.cardRadius),
-        child: Stack(
-          children: [
-            const Positioned.fill(child: _EncounterAtmosphere()),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(16, 16, 16, 18),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  RelicChapter(
-                    title: l10n.sealsTitle,
-                    whisper: subtitle,
-                    action: PrivacyEye(
-                      sections: const {CaravanProfileSection.trails},
-                      label: l10n.pilgrimSealsAndTrails,
-                    ),
-                  ),
-                  const SizedBox(height: 16),
-                  _EncounterGallery(seals: shown, unlocked: unlocked),
-                ],
-              ),
+    // Selo é recompensa: o card leva o wash e o filete de [AppRoles.reward].
+    return RelicPanel(
+      accent: AppRoles.reward,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          RelicChapter(
+            title: l10n.sealsTitle,
+            whisper: subtitle,
+            action: PrivacyEye(
+              sections: const {CaravanProfileSection.trails},
+              label: l10n.pilgrimSealsAndTrails,
             ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class _EncounterAtmosphere extends StatelessWidget {
-  const _EncounterAtmosphere();
-
-  @override
-  Widget build(BuildContext context) {
-    return IgnorePointer(
-      child: DecoratedBox(
-        decoration: BoxDecoration(
-          gradient: RadialGradient(
-            center: const Alignment(0, -0.92),
-            radius: 1.18,
-            colors: [
-              AppColors.accent.withValues(alpha: 0.14),
-              AppColors.accent.withValues(alpha: 0.04),
-              Colors.transparent,
-            ],
-            stops: const [0.0, 0.42, 1.0],
           ),
-        ),
+          const SizedBox(height: 16),
+          _EncounterGallery(seals: shown, unlocked: unlocked),
+        ],
       ),
     );
   }
@@ -400,7 +365,7 @@ class _WaxSealPainter extends CustomPainter {
 
     if (unlocked || next) {
       final thread = Paint()
-        ..color = (unlocked ? AppColors.accent : const Color(0xFF8A7048))
+        ..color = (unlocked ? AppRoles.reward : const Color(0xFF8A7048))
             .withValues(alpha: unlocked ? 0.85 : 0.35)
         ..style = PaintingStyle.stroke
         ..strokeWidth = unlocked ? 1.6 : 1.1;

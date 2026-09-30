@@ -4,6 +4,7 @@ import '../data/mission_study.dart';
 import '../models/trail.dart';
 import '../services/bible_service.dart';
 import '../theme/app_theme.dart';
+import 'immersive_background.dart';
 import '../utils/appearance.dart';
 import '../utils/liturgical_calendar.dart';
 import '../utils/palco_verse.dart';
@@ -188,19 +189,7 @@ class _HomeWordCardState extends State<HomeWordCard> {
           ActHaptics.tap();
           widget.onOpen?.call(snap.reference);
         },
-        child: Container(
-          width: double.infinity,
-          padding: AppMetrics.cardPadding,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(AppMetrics.cardRadius),
-            // Fundo sólido: o verso não disputa com a arte da trilha atrás.
-            color: a.cardFill.withValues(alpha: 0.94),
-            border: Border.all(
-              color:
-                  HomeTrailChrome.outlineOf(context) ??
-                  a.cardBorder.withValues(alpha: 0.7),
-            ),
-          ),
+        child: GlassCard(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -208,17 +197,14 @@ class _HomeWordCardState extends State<HomeWordCard> {
                 children: [
                   CinematicIcon(
                     glyph: CinematicGlyph.book,
-                    size: 18,
-                    accent: AppColors.cedar,
+                    size: AppMetrics.iconSm,
+                    accent: AppRoles.chrome,
                     framed: false,
                     glowing: false,
                   ),
                   const SizedBox(width: 8),
                   Expanded(
-                    child: SectionLabel(
-                      _labelText(context, snap.label),
-                      color: AppColors.cedar.withValues(alpha: 0.95),
-                    ),
+                    child: SectionLabel(_labelText(context, snap.label)),
                   ),
                   Text(
                     snap.reference,

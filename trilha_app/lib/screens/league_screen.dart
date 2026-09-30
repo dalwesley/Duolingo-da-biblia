@@ -39,7 +39,7 @@ import '../widgets/hero_card_atmosphere.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/invite_qr_sheet.dart';
 import '../widgets/ui_primitives.dart';
-import '../widgets/portrait_face.dart';
+import '../widgets/user_avatar.dart';
 import '../widgets/recognition_actions.dart';
 import '../widgets/room_roster.dart';
 import '../widgets/room_panels.dart';
@@ -336,7 +336,7 @@ class _LeagueScreenState extends State<LeagueScreen>
   @override
   Widget build(BuildContext context) {
     return RefreshIndicator(
-      color: AppColors.accent,
+      color: AppRoles.chrome,
       onRefresh: _settle,
       child: ListView(
         physics: const AlwaysScrollableScrollPhysics(),
@@ -498,7 +498,7 @@ class _LeagueScreenState extends State<LeagueScreen>
 
     if (_playersError != null) {
       children.addAll([
-        _InlineErrorCard(
+        InlineNotice(
           message: _playersError!,
           busy: _playersLoading,
           onRetry: _settle,
@@ -624,10 +624,10 @@ class _LeagueScreenState extends State<LeagueScreen>
 
     if (companions.lastError != null) {
       list.add(
-        Text(
-          companions.lastError!,
-          textAlign: TextAlign.center,
-          style: AppTypography.body(size: 12, color: AppColors.error),
+        InlineNotice(
+          message: companions.lastError!,
+          busy: companions.loading,
+          onRetry: () => context.read<CompanionService>().refresh(),
         ),
       );
       list.add(const SizedBox(height: AppSpace.md));
@@ -756,7 +756,6 @@ class _LeagueScreenState extends State<LeagueScreen>
       CornerBoard(
         onOpenMission: widget.onOpenMission ?? (_) {},
         onOpenCaravana: () => setState(() => _tab = _tabCaravana),
-        hideEmptyChrome: true,
       ),
       const SizedBox(height: AppSpace.md),
       CopperCta(
@@ -992,10 +991,10 @@ class _LeagueScreenState extends State<LeagueScreen>
       ),
       const SizedBox(height: AppSpace.md),
       if (rooms.lastError != null) ...[
-        Text(
-          rooms.lastError!,
-          textAlign: TextAlign.center,
-          style: AppTypography.body(size: 12, color: AppColors.error),
+        InlineNotice(
+          message: rooms.lastError!,
+          busy: rooms.loading,
+          onRetry: () => context.read<RoomService>().syncIfNeeded(),
         ),
         const SizedBox(height: AppSpace.md),
       ],
@@ -1480,39 +1479,30 @@ class _CompanhiaStageCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final hasBody = body != null;
     return GlassCard(
-      padding: EdgeInsets.zero,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Padding(
-            padding: EdgeInsets.fromLTRB(10, 10, 10, hasBody ? 0 : 10),
-            child: JuntosSegmentTabs(
-              index: pane,
-              onChanged: (i) {
-                ActHaptics.tap();
-                onPaneChanged(i);
-              },
-              items: [
-                (
-                  label: context.l10n.juntosTabCompanion,
-                  glyph: CinematicGlyph.link,
-                  alert: companionAlert,
-                ),
-                (
-                  label: context.l10n.juntosTabChallenge,
-                  glyph: CinematicGlyph.flag,
-                  alert: desafioAlert,
-                ),
-              ],
-            ),
+          AppSegmentedTabs(
+            index: pane,
+            onChanged: (i) {
+              ActHaptics.tap();
+              onPaneChanged(i);
+            },
+            items: [
+              // Sem glifo: a aba-mãe já leva o elo + "Companhia".
+              (
+                label: context.l10n.juntosTabCompanion,
+                glyph: null,
+                alert: companionAlert,
+              ),
+              (
+                label: context.l10n.juntosTabChallenge,
+                glyph: null,
+                alert: desafioAlert,
+              ),
+            ],
           ),
-          if (hasBody) ...[
-            const SizedBox(height: AppSpace.md),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(18, 0, 18, 18),
-              child: body!,
-            ),
-          ],
+          if (hasBody) ...[const SizedBox(height: AppSpace.lg), body!],
         ],
       ),
     );
@@ -1530,37 +1520,30 @@ class _CaravanStageCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final weekly = pane == 1;
     return GlassCard(
-      padding: EdgeInsets.zero,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Padding(
-            padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
-            child: JuntosSegmentTabs(
-              index: pane,
-              onChanged: (i) {
-                ActHaptics.tap();
-                onPaneChanged(i);
-              },
-              items: [
-                (
-                  label: context.l10n.juntosThisMonth,
-                  glyph: CinematicGlyph.path,
-                  alert: false,
-                ),
-                (
-                  label: context.l10n.juntosThisWeek,
-                  glyph: CinematicGlyph.calendar,
-                  alert: false,
-                ),
-              ],
-            ),
+          AppSegmentedTabs(
+            index: pane,
+            onChanged: (i) {
+              ActHaptics.tap();
+              onPaneChanged(i);
+            },
+            items: [
+              (
+                label: context.l10n.juntosThisMonth,
+                glyph: CinematicGlyph.path,
+                alert: false,
+              ),
+              (
+                label: context.l10n.juntosThisWeek,
+                glyph: CinematicGlyph.calendar,
+                alert: false,
+              ),
+            ],
           ),
-          const SizedBox(height: AppSpace.md),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(18, 0, 18, 18),
-            child: _CaravanExplainer(weekly: weekly),
-          ),
+          const SizedBox(height: AppSpace.lg),
+          _CaravanExplainer(weekly: weekly),
         ],
       ),
     );
@@ -1612,16 +1595,18 @@ class _CaravanExplainer extends StatelessWidget {
           ),
         ),
         const SizedBox(height: AppSpace.lg),
-        _CaravanSteps(steps: steps),
+        _ExplainerSteps(steps: steps),
       ],
     );
   }
 }
 
-class _CaravanSteps extends StatelessWidget {
+/// Três passos lado a lado, ligados por um fio — Caravana, Companhia e
+/// Desafio falam o mesmo idioma visual (chrome neutro, não amarelo).
+class _ExplainerSteps extends StatelessWidget {
   final List<(CinematicGlyph, String)> steps;
 
-  const _CaravanSteps({required this.steps});
+  const _ExplainerSteps({required this.steps});
 
   @override
   Widget build(BuildContext context) {
@@ -1632,10 +1617,7 @@ class _CaravanSteps extends StatelessWidget {
           left: 40,
           right: 40,
           top: 19,
-          child: Container(
-            height: 1,
-            color: AppColors.accent.withValues(alpha: 0.25),
-          ),
+          child: Container(height: 1, color: a.cardBorder),
         ),
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -1649,16 +1631,14 @@ class _CaravanSteps extends StatelessWidget {
                       height: 38,
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        color: AppColors.nightMid,
-                        border: Border.all(
-                          color: AppColors.accent.withValues(alpha: 0.5),
-                        ),
+                        color: a.cardFill,
+                        border: Border.all(color: a.cardBorder),
                       ),
                       child: Center(
                         child: CinematicIcon(
                           glyph: s.$1,
-                          size: 18,
-                          accent: AppColors.accent,
+                          size: AppMetrics.iconMd,
+                          accent: AppRoles.chrome,
                           framed: false,
                         ),
                       ),
@@ -1709,7 +1689,13 @@ class _AmizadeExplainer extends StatelessWidget {
           ),
         ),
         const SizedBox(height: AppSpace.lg),
-        const _CompanionSteps(),
+        _ExplainerSteps(
+          steps: [
+            (CinematicGlyph.path, context.l10n.juntosCompanionStep1),
+            (CinematicGlyph.flame, context.l10n.juntosCompanionStep2),
+            (CinematicGlyph.lamp, context.l10n.juntosCompanionStep3),
+          ],
+        ),
       ],
     );
   }
@@ -1740,76 +1726,11 @@ class _DesafioExplainer extends StatelessWidget {
           ),
         ),
         const SizedBox(height: AppSpace.lg),
-        const _DesafioSteps(),
-      ],
-    );
-  }
-}
-
-/// Os três passos do desafio — mesmo idioma visual da Amizade.
-class _DesafioSteps extends StatelessWidget {
-  const _DesafioSteps();
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final l10n = context.l10n;
-    final steps = [
-      (CinematicGlyph.path, l10n.juntosChallengeStep1),
-      (CinematicGlyph.calendar, l10n.juntosChallengeStep2),
-      (CinematicGlyph.rise, l10n.juntosChallengeStep3),
-    ];
-    return Stack(
-      children: [
-        Positioned(
-          left: 40,
-          right: 40,
-          top: 19,
-          child: Container(
-            height: 1,
-            color: AppColors.accent.withValues(alpha: 0.25),
-          ),
-        ),
-        Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            for (final s in steps)
-              Expanded(
-                child: Column(
-                  children: [
-                    Container(
-                      width: 38,
-                      height: 38,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: AppColors.nightMid,
-                        border: Border.all(
-                          color: AppColors.accent.withValues(alpha: 0.5),
-                        ),
-                      ),
-                      child: Center(
-                        child: CinematicIcon(
-                          glyph: s.$1,
-                          size: 18,
-                          accent: AppColors.accent,
-                          framed: false,
-                        ),
-                      ),
-                    ),
-                    const SizedBox(height: 8),
-                    Text(
-                      s.$2,
-                      textAlign: TextAlign.center,
-                      style: AppTypography.body(
-                        size: 12,
-                        height: 1.3,
-                        weight: FontWeight.w700,
-                        color: a.textSecondary,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
+        _ExplainerSteps(
+          steps: [
+            (CinematicGlyph.path, context.l10n.juntosChallengeStep1),
+            (CinematicGlyph.calendar, context.l10n.juntosChallengeStep2),
+            (CinematicGlyph.rise, context.l10n.juntosChallengeStep3),
           ],
         ),
       ],
@@ -1831,54 +1752,38 @@ class _RoomsOfflineCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    // EmptyState já traz o próprio respiro — o card não soma padding.
     return GlassCard(
-      padding: const EdgeInsets.all(AppSpace.xl),
-      child: Column(
-        children: [
-          const CinematicIcon(
-            glyph: CinematicGlyph.people,
-            size: 40,
-            accent: AppColors.clay,
-            glowing: false,
-          ),
-          const SizedBox(height: 14),
-          Text(
-            context.l10n.juntosRoomsOfflineTitle,
-            textAlign: TextAlign.center,
-            style: AppTypography.display(size: 24, color: a.text),
-          ),
-          const SizedBox(height: 8),
-          Text(
-            error ?? context.l10n.juntosRoomsOfflineBody,
-            textAlign: TextAlign.center,
-            style: AppTypography.body(
-              size: 13,
-              height: 1.35,
-              color: a.textSecondary,
+      padding: EdgeInsets.zero,
+      child: EmptyState(
+        glyph: CinematicGlyph.people,
+        title: context.l10n.juntosRoomsOfflineTitle,
+        body: error ?? context.l10n.juntosRoomsOfflineBody,
+        action: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            CopperCta(
+              label: loading
+                  ? context.l10n.juntosConnecting
+                  : context.l10n.commonTryAgain,
+              onTap: loading ? null : onRetry,
+              busy: loading,
+              leading: CinematicGlyph.refresh,
+              trailing: null,
+              dense: true,
             ),
-          ),
-          const SizedBox(height: 16),
-          CopperCta(
-            label: loading
-                ? context.l10n.juntosConnecting
-                : context.l10n.commonTryAgain,
-            onTap: loading ? null : onRetry,
-            busy: loading,
-            leading: CinematicGlyph.refresh,
-            trailing: null,
-            dense: true,
-          ),
-          const SizedBox(height: AppSpace.md),
-          Text(
-            context.l10n.juntosRoomsOfflineFoot,
-            textAlign: TextAlign.center,
-            style: AppTypography.body(
-              size: 12,
-              weight: FontWeight.w700,
-              color: AppColors.accent.withValues(alpha: 0.9),
+            const SizedBox(height: AppSpace.md),
+            Text(
+              context.l10n.juntosRoomsOfflineFoot,
+              textAlign: TextAlign.center,
+              style: AppTypography.body(
+                size: 12,
+                weight: FontWeight.w700,
+                color: a.textSecondary,
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
@@ -1902,16 +1807,10 @@ class _RoomsEmptyState extends StatelessWidget {
     final a = Appearance.of(context);
     return GlassCard(
       glow: 0.7,
-      padding: const EdgeInsets.fromLTRB(18, 22, 18, 18),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Center(
-            child: SectionLabel(
-              context.l10n.juntosRoomsEmptyEyebrow,
-              color: AppColors.accent,
-            ),
-          ),
+          Center(child: SectionLabel(context.l10n.juntosRoomsEmptyEyebrow)),
           const SizedBox(height: AppSpace.lg),
           const _CircleOfSeats(),
           const SizedBox(height: AppSpace.lg),
@@ -1975,11 +1874,7 @@ class _RoomsEmptyState extends StatelessWidget {
           ],
           if (error != null) ...[
             const SizedBox(height: 14),
-            Text(
-              error!,
-              textAlign: TextAlign.center,
-              style: AppTypography.body(size: 12, color: AppColors.error),
-            ),
+            InlineNotice(message: error!, standalone: false),
           ],
         ],
       ),
@@ -1996,6 +1891,7 @@ class _CircleOfSeats extends StatelessWidget {
     const size = 120.0;
     const seat = 22.0;
     const n = 6;
+    final a = Appearance.of(context);
     return Center(
       child: SizedBox(
         width: size,
@@ -2008,7 +1904,7 @@ class _CircleOfSeats extends StatelessWidget {
                   shape: BoxShape.circle,
                   gradient: RadialGradient(
                     colors: [
-                      AppColors.accent.withValues(alpha: 0.28),
+                      AppRoles.chrome.withValues(alpha: 0.18),
                       Colors.transparent,
                     ],
                   ),
@@ -2018,8 +1914,8 @@ class _CircleOfSeats extends StatelessWidget {
             const Center(
               child: CinematicIcon(
                 glyph: CinematicGlyph.lamp,
-                size: 34,
-                accent: AppColors.accent,
+                size: AppMetrics.leadingIcon,
+                accent: AppRoles.chrome,
                 glowing: true,
               ),
             ),
@@ -2040,13 +1936,12 @@ class _CircleOfSeats extends StatelessWidget {
                   height: seat,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
+                    // O primeiro lugar é você — a mesma marca de "você" das listas.
                     color: i == 0
-                        ? AppColors.accent
-                        : Colors.white.withValues(alpha: 0.05),
+                        ? AppRoles.selected.withValues(alpha: 0.85)
+                        : a.insetFill,
                     border: Border.all(
-                      color: i == 0
-                          ? AppColors.accent
-                          : Colors.white.withValues(alpha: 0.22),
+                      color: i == 0 ? AppRoles.selected : a.cardBorder,
                     ),
                   ),
                 ),
@@ -2075,19 +1970,14 @@ class _RoomBenefit extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     return Expanded(
-      child: Container(
+      child: InsetPanel(
         padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 10),
-        decoration: BoxDecoration(
-          color: a.cardFillSoft,
-          borderRadius: BorderRadius.circular(AppRadii.md),
-          border: Border.all(color: a.cardBorder),
-        ),
         child: Column(
           children: [
             CinematicIcon(
               glyph: glyph,
-              size: 20,
-              accent: AppColors.accent,
+              size: AppMetrics.iconMd,
+              accent: AppRoles.chrome,
               framed: false,
             ),
             const SizedBox(height: 5),
@@ -2183,11 +2073,11 @@ class _RoomHearth extends StatelessWidget {
     final (String line, Color tone) = total <= 1
         ? (l10n.juntosRoomOnlyYou, a.text)
         : !walkedToday
-        ? (l10n.juntosRoomNotStudiedToday, AppColors.streak)
+        ? (l10n.juntosRoomNotStudiedToday, AppRoles.risk)
         : lit == total
-        ? (l10n.juntosRoomAllStudied, AppColors.accent)
+        ? (l10n.juntosRoomAllStudied, AppRoles.presence)
         : halfway
-        ? (l10n.juntosRoomHalfStudied, AppColors.accent)
+        ? (l10n.juntosRoomHalfStudied, AppRoles.presence)
         : (l10n.juntosRoomMissingForHalf(missing), a.text);
 
     final hint = total <= 1
@@ -2203,10 +2093,11 @@ class _RoomHearth extends StatelessWidget {
         : l10n.juntosRoomHintHalf;
 
     return GlassCard(
-      tint: ready ? AppColors.accent : null,
+      tint: ready ? AppRoles.reward : null,
       glow: 0.35 + 0.6 * (total == 0 ? 0 : lit / total),
       elevated: ready,
-      padding: const EdgeInsets.fromLTRB(18, 10, 6, 18),
+      // Topo/direita curtos: o botão de opções (48) já traz o respiro.
+      padding: AppMetrics.cardPadding.copyWith(top: AppSpace.sm, right: 6),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -2214,23 +2105,19 @@ class _RoomHearth extends StatelessWidget {
             children: [
               CinematicIcon(
                 glyph: room.kind.glyph,
-                size: 16,
-                accent: AppColors.accent,
+                size: AppMetrics.iconSm,
+                accent: AppRoles.chrome,
                 framed: false,
               ),
               const SizedBox(width: 6),
-              SectionLabel(room.kind.label, color: AppColors.accent),
+              SectionLabel(room.kind.label),
               const SizedBox(width: AppSpace.sm),
               SoftBadge(
                 text: closesText,
-                accent: days <= 1 ? AppColors.streak : AppColors.accent,
+                accent: days <= 1 ? AppRoles.risk : AppRoles.chrome,
               ),
               const Spacer(),
-              IconButton(
-                tooltip: l10n.juntosRoomOptions,
-                onPressed: onMenu,
-                icon: Icon(Icons.more_horiz_rounded, color: a.textSecondary),
-              ),
+              _MenuButton(tooltip: l10n.juntosRoomOptions, onTap: onMenu),
             ],
           ),
           Padding(
@@ -2268,7 +2155,7 @@ class _RoomHearth extends StatelessWidget {
                       style: AppTypography.display(
                         size: 30,
                         height: 1,
-                        color: lit > 0 ? AppColors.accent : a.text,
+                        color: lit > 0 ? AppRoles.presence : a.text,
                       ),
                     ),
                     Text(
@@ -2329,7 +2216,7 @@ class _RoomHearth extends StatelessWidget {
                         style: AppTypography.body(
                           size: 12,
                           weight: FontWeight.w800,
-                          color: goalReached ? AppColors.accent : a.text,
+                          color: goalReached ? AppRoles.reward : a.text,
                         ),
                       ),
                     ],
@@ -2337,7 +2224,7 @@ class _RoomHearth extends StatelessWidget {
                   const SizedBox(height: 6),
                   AppProgressBar(
                     value: (sumSteps / goal).clamp(0.0, 1.0),
-                    color: AppColors.accent,
+                    color: AppRoles.reward,
                   ),
                 ],
                 if (!walkedToday && total > 1 && onWalk != null) ...[
@@ -2410,57 +2297,8 @@ class _RoomInviteBar extends StatelessWidget {
                 ),
         ),
         const SizedBox(width: AppSpace.sm),
-        _RoomCodeChip(code: code, onTap: onCopy),
+        _CodePlate(code: code, onCopy: onCopy, compact: true),
       ],
-    );
-  }
-}
-
-/// Código pequeno ao lado do convite — toque copia.
-class _RoomCodeChip extends StatelessWidget {
-  final String code;
-  final VoidCallback onTap;
-
-  const _RoomCodeChip({required this.code, required this.onTap});
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Semantics(
-      button: true,
-      label: context.l10n.juntosCopyCodeSemantics(code),
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(AppRadii.md),
-        child: Container(
-          constraints: const BoxConstraints(minHeight: 48),
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-          decoration: BoxDecoration(
-            color: a.cardFillSoft,
-            borderRadius: BorderRadius.circular(AppRadii.md),
-            border: Border.all(color: a.cardBorder),
-          ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              SectionLabel(
-                context.l10n.juntosCodeLabel,
-                size: 10,
-                color: a.textFaint,
-              ),
-              const SizedBox(height: 2),
-              Text(
-                code,
-                style: AppTypography.title(
-                  size: 16,
-                  weight: FontWeight.w900,
-                  color: AppColors.accent,
-                ).copyWith(letterSpacing: 2),
-              ),
-            ],
-          ),
-        ),
-      ),
     );
   }
 }
@@ -2538,7 +2376,7 @@ class _TextInputDialogState extends State<_TextInputDialog> {
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(AppRadii.md),
             borderSide: BorderSide(
-              color: AppColors.accent.withValues(alpha: 0.7),
+              color: AppRoles.selected.withValues(alpha: 0.7),
             ),
           ),
         ),
@@ -2605,7 +2443,7 @@ class _LeaderboardBoard extends StatelessWidget {
                   style: p.entry.portraitStyle,
                 ),
             ],
-            size: 22,
+            radius: AppMetrics.avatarSm,
           ),
           const SizedBox(width: 8),
         ] else ...[
@@ -2614,7 +2452,7 @@ class _LeaderboardBoard extends StatelessWidget {
             height: 8,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: AppColors.teal.withValues(alpha: 0.35),
+              color: AppRoles.presence.withValues(alpha: 0.35),
             ),
           ),
           const SizedBox(width: 6),
@@ -2624,9 +2462,7 @@ class _LeaderboardBoard extends StatelessWidget {
           style: AppTypography.label(
             size: 10,
             letterSpacing: 0,
-            color: online.isEmpty
-                ? a.textFaint
-                : AppColors.teal.withValues(alpha: 0.9),
+            color: online.isEmpty ? a.textFaint : AppRoles.presence,
           ),
         ),
       ],
@@ -2696,7 +2532,8 @@ class _LeaderboardBoard extends StatelessWidget {
         }
         if (weekly &&
             LeagueService.demoteCountFor(list.length) > 0 &&
-            rank == list.length - LeagueService.demoteCountFor(list.length) + 1 &&
+            rank ==
+                list.length - LeagueService.demoteCountFor(list.length) + 1 &&
             canDemote) {
           rows.add(
             _WeekZoneLabel(
@@ -2741,25 +2578,19 @@ class _WeekZoneLabel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final color = up ? AppColors.accent : AppColors.error;
+    final color = up ? AppRoles.success : AppRoles.risk;
     return Padding(
       padding: const EdgeInsets.fromLTRB(12, 6, 12, 2),
       child: Row(
         children: [
           CinematicIcon(
             glyph: up ? CinematicGlyph.rise : CinematicGlyph.demote,
-            size: 16,
+            size: AppMetrics.iconSm,
             accent: color,
             framed: false,
           ),
           const SizedBox(width: 6),
-          Expanded(
-            child: SectionLabel(
-              text,
-              size: 10,
-              color: color.withValues(alpha: 0.9),
-            ),
-          ),
+          Expanded(child: SectionLabel(text, size: 10, color: color)),
         ],
       ),
     );
@@ -2778,22 +2609,22 @@ class _WeekZoneDivider extends StatelessWidget {
           Expanded(
             child: Container(
               height: 1,
-              color: AppColors.accent.withValues(alpha: 0.35),
+              color: AppRoles.success.withValues(alpha: 0.35),
             ),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10),
             child: CinematicIcon(
               glyph: CinematicGlyph.rise,
-              size: 14,
-              accent: AppColors.accent.withValues(alpha: 0.7),
+              size: AppMetrics.chipIcon,
+              accent: AppRoles.success.withValues(alpha: 0.7),
               framed: false,
             ),
           ),
           Expanded(
             child: Container(
               height: 1,
-              color: AppColors.accent.withValues(alpha: 0.35),
+              color: AppRoles.success.withValues(alpha: 0.35),
             ),
           ),
         ],
@@ -2823,13 +2654,12 @@ class _CaravanOnlineSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
     final maxH = MediaQuery.sizeOf(context).height * 0.72;
     final count = people.length;
     final subtitle = context.l10n.juntosCaravanPilgrimsCount(count);
 
     return AppSheetPanel(
-      tint: AppColors.teal,
+      tint: AppRoles.presence,
       padding: const EdgeInsets.fromLTRB(10, AppSpace.md, 10, AppSpace.md),
       child: ConstrainedBox(
         constraints: BoxConstraints(maxHeight: maxH),
@@ -2845,42 +2675,15 @@ class _CaravanOnlineSheet extends StatelessWidget {
             if (i == 0) {
               return Padding(
                 padding: const EdgeInsets.fromLTRB(12, 0, 12, 8),
-                child: Column(
-                  children: [
-                    Row(
-                      children: [
-                        const CinematicIcon(
-                          glyph: CinematicGlyph.people,
-                          size: 36,
-                          accent: AppColors.teal,
-                          glowing: true,
-                        ),
-                        const SizedBox(width: 12),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                context.l10n.juntosStudyingNow,
-                                style: AppTypography.title(
-                                  size: 20,
-                                  color: a.text,
-                                ),
-                              ),
-                              const SizedBox(height: 2),
-                              Text(
-                                subtitle,
-                                style: AppTypography.body(
-                                  size: 13,
-                                  color: a.textSecondary,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
+                child: AppSheetHeader(
+                  leading: const CinematicIcon(
+                    glyph: CinematicGlyph.people,
+                    size: AppMetrics.leadingIcon,
+                    accent: AppRoles.presence,
+                    glowing: true,
+                  ),
+                  title: context.l10n.juntosStudyingNow,
+                  subtitle: subtitle,
                 ),
               );
             }
@@ -2911,10 +2714,6 @@ class _OnlineSheetRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final ink = entry.isUser ? AppColors.inkOnAccent : a.text;
-    final muted = entry.isUser
-        ? AppColors.inkOnAccent.withValues(alpha: 0.62)
-        : a.textFaint;
     final walked = entry.walkedToday;
 
     return Material(
@@ -2932,26 +2731,15 @@ class _OnlineSheetRow extends StatelessWidget {
         child: Container(
           margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 2),
           padding: const EdgeInsets.fromLTRB(8, 10, 10, 10),
-          decoration: BoxDecoration(
-            gradient: entry.isUser ? AppGradients.gold : null,
-            borderRadius: BorderRadius.circular(AppRadii.md),
-            border: entry.isUser
-                ? Border.all(
-                    color: Colors.white.withValues(alpha: 0.45),
-                    width: 1.4,
-                  )
-                : null,
-          ),
+          decoration: _youRowDecoration(entry.isUser),
           child: Row(
             children: [
-              _RankMark(rank: rank, onGold: entry.isUser),
+              _RankMark(rank: rank),
               const SizedBox(width: 10),
-              _PilgrimAvatar(
+              UserAvatar(
                 name: entry.name,
-                isUser: entry.isUser,
-                live: true,
-                size: 40,
-                onGold: entry.isUser,
+                radius: AppMetrics.avatarMd,
+                borderColor: AppRoles.presence,
                 photoUrl: entry.photoUrl,
                 seed: entry.uid ?? entry.name,
                 style: entry.portraitStyle,
@@ -2965,13 +2753,7 @@ class _OnlineSheetRow extends StatelessWidget {
                       entry.name,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                      style: AppTypography.title(
-                        size: 14,
-                        weight: entry.isUser
-                            ? FontWeight.w900
-                            : FontWeight.w800,
-                        color: ink,
-                      ),
+                      style: AppTypography.title(size: 14, color: a.text),
                     ),
                     const SizedBox(height: 2),
                     Text(
@@ -2981,11 +2763,7 @@ class _OnlineSheetRow extends StatelessWidget {
                       style: AppTypography.body(
                         size: 12,
                         weight: FontWeight.w800,
-                        color: walked
-                            ? (entry.isUser
-                                  ? muted
-                                  : AppColors.teal.withValues(alpha: 0.95))
-                            : muted,
+                        color: walked ? AppRoles.presence : a.textFaint,
                       ),
                     ),
                   ],
@@ -2997,7 +2775,7 @@ class _OnlineSheetRow extends StatelessWidget {
                 style: AppTypography.title(
                   size: 16,
                   weight: FontWeight.w900,
-                  color: entry.isUser ? AppColors.inkOnAccent : a.text,
+                  color: a.text,
                 ),
               ),
             ],
@@ -3025,11 +2803,7 @@ class _StandingRow extends StatelessWidget {
     this.onOpenOwnProfile,
   });
 
-  Color _stepsTone(AppearanceStyle a, Color? medal) {
-    if (entry.isUser) return AppColors.inkOnAccent;
-    if (medal != null) return medal;
-    return a.text;
-  }
+  Color _stepsTone(AppearanceStyle a, Color? medal) => medal ?? a.text;
 
   String _gapLabel(AppLocalizations l10n) {
     if (rank == 1) return l10n.juntosLeader;
@@ -3056,26 +2830,21 @@ class _StandingRow extends StatelessWidget {
       _ => null,
     };
     final stepsTone = _stepsTone(a, medal);
-    final muted = entry.isUser
-        ? AppColors.inkOnAccent.withValues(alpha: 0.62)
-        : a.textFaint;
+    final muted = a.textFaint;
     final presence = _presenceShort(context);
 
-    final ink = entry.isUser ? AppColors.inkOnAccent : a.text;
     final live = entry.walkedToday || entry.isOnlineToday;
 
     final content = Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        _RankMark(rank: rank, onGold: entry.isUser),
+        _RankMark(rank: rank),
         const SizedBox(width: 10),
-        _PilgrimAvatar(
+        UserAvatar(
           name: entry.name,
-          isUser: entry.isUser,
-          live: live,
-          size: 40,
-          ring: medal,
-          onGold: entry.isUser,
+          radius: AppMetrics.avatarMd,
+          // Presença vence a medalha: o anel diz "estudou hoje".
+          borderColor: live ? AppRoles.presence : medal,
           photoUrl: entry.photoUrl,
           seed: entry.uid ?? entry.name,
           style: entry.portraitStyle,
@@ -3089,11 +2858,7 @@ class _StandingRow extends StatelessWidget {
                 entry.name,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
-                style: AppTypography.title(
-                  size: 14,
-                  weight: entry.isUser ? FontWeight.w900 : FontWeight.w800,
-                  color: ink,
-                ),
+                style: AppTypography.title(size: 14, color: a.text),
               ),
               if (!weeklySteps)
                 Padding(
@@ -3132,11 +2897,7 @@ class _StandingRow extends StatelessWidget {
                   size: 10,
                   letterSpacing: 0.2,
                   weight: FontWeight.w800,
-                  color: entry.isUser
-                      ? muted
-                      : entry.walkedToday
-                      ? AppColors.teal.withValues(alpha: 0.95)
-                      : muted,
+                  color: entry.walkedToday ? AppRoles.presence : muted,
                 ),
               ),
           ],
@@ -3149,17 +2910,12 @@ class _StandingRow extends StatelessWidget {
         Container(
           margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 2),
           padding: const EdgeInsets.fromLTRB(8, 12, 10, 12),
-          decoration: BoxDecoration(
-            gradient: entry.isUser ? AppGradients.gold : null,
-            color: entry.isUser ? null : medal?.withValues(alpha: 0.07),
-            borderRadius: BorderRadius.circular(AppRadii.md),
-            border: entry.isUser
-                ? Border.all(
-                    color: Colors.white.withValues(alpha: 0.45),
-                    width: 1.4,
-                  )
-                : null,
-          ),
+          decoration: entry.isUser
+              ? _youRowDecoration(true)
+              : BoxDecoration(
+                  color: medal?.withValues(alpha: 0.07),
+                  borderRadius: BorderRadius.circular(AppRadii.md),
+                ),
           child: content,
         ),
         if (showDivider) const ListDivider(indent: 14, endIndent: 14),
@@ -3284,7 +3040,7 @@ class _MedalDisc extends StatelessWidget {
       height: 24,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        color: const Color(0xFF1A1408),
+        color: Appearance.of(context).cardFill,
         border: Border.all(color: accent, width: 1.4),
         boxShadow: [
           BoxShadow(
@@ -3299,7 +3055,7 @@ class _MedalDisc extends StatelessWidget {
             ? Text(
                 overlay!,
                 style: AppTypography.label(
-                  size: 8,
+                  size: 10,
                   letterSpacing: 0,
                   weight: FontWeight.w900,
                   color: AppColors.medalGold,
@@ -3307,7 +3063,7 @@ class _MedalDisc extends StatelessWidget {
               )
             : CinematicIcon(
                 glyph: glyph,
-                size: 13,
+                size: AppMetrics.chipIcon,
                 accent: accent,
                 framed: false,
               ),
@@ -3316,93 +3072,21 @@ class _MedalDisc extends StatelessWidget {
   }
 }
 
-class _PilgrimAvatar extends StatelessWidget {
-  final String name;
-  final bool isUser;
-  final bool live;
-  final double size;
-  final Color? ring;
-  final bool onGold;
-  final String? photoUrl;
-  final String? seed;
-  final PortraitStyle style;
-
-  const _PilgrimAvatar({
-    required this.name,
-    required this.isUser,
-    this.live = false,
-    this.size = 36,
-    this.ring,
-    this.onGold = false,
-    this.photoUrl,
-    this.seed,
-    this.style = PortraitStyle.photo,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final onPlate = isUser && onGold;
-    final border = live
-        ? AppColors.teal
-        : ring ??
-              (onPlate
-                  ? Colors.white.withValues(alpha: 0.45)
-                  : isUser
-                  ? Colors.white.withValues(alpha: 0.55)
-                  : Colors.white.withValues(alpha: 0.16));
-
-    return SizedBox(
-      width: size,
-      height: size,
-      child: Stack(
-        clipBehavior: Clip.none,
-        children: [
-          Container(
-            width: size,
-            height: size,
-            clipBehavior: Clip.antiAlias,
-            decoration: const BoxDecoration(
-              shape: BoxShape.circle,
-              color: AppColors.nightMid,
-            ),
-            // Borda por cima do rosto — o retrato preenche o círculo todo.
-            foregroundDecoration: BoxDecoration(
-              shape: BoxShape.circle,
-              border: Border.all(color: border, width: live ? 2 : 1.2),
-            ),
-            child: PortraitFace(
-              name: name,
-              photoUrl: photoUrl,
-              seed: seed,
-              size: size,
-              style: style,
-            ),
-          ),
-          if (live)
-            Positioned(
-              right: -1,
-              bottom: -1,
-              child: Container(
-                width: size >= 48 ? 12 : 10,
-                height: size >= 48 ? 12 : 10,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: AppColors.teal,
-                  border: Border.all(color: AppColors.night, width: 1.5),
-                ),
-              ),
-            ),
-        ],
-      ),
-    );
-  }
+/// "Você" na lista — a mesma marca em Caravana, Grupos e na folha de quem
+/// está online: fundo claro a 0.08 e contorno a 0.4 (nunca placa dourada).
+BoxDecoration? _youRowDecoration(bool isUser) {
+  if (!isUser) return null;
+  return BoxDecoration(
+    color: AppRoles.selected.withValues(alpha: 0.08),
+    borderRadius: BorderRadius.circular(AppRadii.md),
+    border: Border.all(color: AppRoles.selected.withValues(alpha: 0.4)),
+  );
 }
 
 class _RankMark extends StatelessWidget {
   final int rank;
-  final bool onGold;
 
-  const _RankMark({required this.rank, this.onGold = false});
+  const _RankMark({required this.rank});
 
   @override
   Widget build(BuildContext context) {
@@ -3424,41 +3108,34 @@ class _RankMark extends StatelessWidget {
             textAlign: TextAlign.center,
             style: AppTypography.title(
               size: rank >= 10 ? 12 : 14,
-              color: onGold
-                  ? AppColors.inkOnAccent.withValues(alpha: 0.72)
-                  : a.textFaint,
+              color: a.textFaint,
             ),
           ),
         ),
       );
     }
 
-    final fill = onGold ? AppColors.inkOnAccent : medal;
-    final ink = onGold ? medal : AppColors.medalInk;
-
     return Container(
       width: 28,
       height: 28,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        color: fill,
-        boxShadow: onGold
-            ? null
-            : [
-                BoxShadow(
-                  color: medal.withValues(alpha: 0.38),
-                  blurRadius: 8,
-                  offset: const Offset(0, 2),
-                ),
-              ],
+        color: medal,
+        boxShadow: [
+          BoxShadow(
+            color: medal.withValues(alpha: 0.38),
+            blurRadius: 8,
+            offset: const Offset(0, 2),
+          ),
+        ],
       ),
       child: Center(
         child: Text(
           '$rank',
           style: AppTypography.title(
-            size: 13,
+            size: 14,
             weight: FontWeight.w900,
-            color: ink,
+            color: AppColors.medalInk,
           ),
         ),
       ),
@@ -3478,14 +3155,18 @@ class _AvatarCluster extends StatelessWidget {
     })
   >
   people;
-  final double size;
+  final double radius;
 
-  const _AvatarCluster({required this.people, this.size = 24});
+  const _AvatarCluster({
+    required this.people,
+    this.radius = AppMetrics.avatarSm,
+  });
 
   @override
   Widget build(BuildContext context) {
     if (people.isEmpty) return const SizedBox.shrink();
     final shown = people.take(5).toList();
+    final size = radius * 2;
     final step = size * 0.62;
     return SizedBox(
       width: size + (shown.length - 1) * step,
@@ -3495,11 +3176,10 @@ class _AvatarCluster extends StatelessWidget {
           for (var i = 0; i < shown.length; i++)
             Positioned(
               left: i * step,
-              child: _PilgrimAvatar(
+              child: UserAvatar(
                 name: shown[i].name,
-                isUser: shown[i].isUser,
-                live: shown[i].live,
-                size: size,
+                radius: radius,
+                borderColor: shown[i].live ? AppRoles.presence : null,
                 photoUrl: shown[i].photoUrl,
                 seed: shown[i].seed,
                 style: shown[i].style,
@@ -3524,45 +3204,23 @@ class _CompanionsOfflineCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
+    // EmptyState já traz o próprio respiro — o card não soma padding.
     return GlassCard(
-      padding: const EdgeInsets.all(AppSpace.xl),
-      child: Column(
-        children: [
-          const CinematicIcon(
-            glyph: CinematicGlyph.link,
-            size: 40,
-            accent: AppColors.clay,
-            glowing: false,
-          ),
-          const SizedBox(height: 14),
-          Text(
-            context.l10n.juntosCompanionsOfflineTitle,
-            textAlign: TextAlign.center,
-            style: AppTypography.display(size: 24, color: a.text),
-          ),
-          const SizedBox(height: 8),
-          Text(
-            error ?? context.l10n.juntosCompanionsOfflineBody,
-            textAlign: TextAlign.center,
-            style: AppTypography.body(
-              size: 13,
-              height: 1.35,
-              color: a.textSecondary,
-            ),
-          ),
-          const SizedBox(height: 16),
-          CopperCta(
-            label: loading
-                ? context.l10n.juntosConnecting
-                : context.l10n.commonTryAgain,
-            onTap: loading ? null : onRetry,
-            busy: loading,
-            leading: CinematicGlyph.refresh,
-            trailing: null,
-            dense: true,
-          ),
-        ],
+      padding: EdgeInsets.zero,
+      child: EmptyState(
+        glyph: CinematicGlyph.link,
+        title: context.l10n.juntosCompanionsOfflineTitle,
+        body: error ?? context.l10n.juntosCompanionsOfflineBody,
+        action: CopperCta(
+          label: loading
+              ? context.l10n.juntosConnecting
+              : context.l10n.commonTryAgain,
+          onTap: loading ? null : onRetry,
+          busy: loading,
+          leading: CinematicGlyph.refresh,
+          trailing: null,
+          dense: true,
+        ),
       ),
     );
   }
@@ -3589,7 +3247,6 @@ class _CompanionsEmpty extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         GlassCard(
-          padding: const EdgeInsets.fromLTRB(18, 20, 18, 20),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -3632,77 +3289,6 @@ class _CompanionsEmpty extends StatelessWidget {
             onTap: onJoin,
           ),
         ],
-      ],
-    );
-  }
-}
-
-/// Os três passos da companhia, lado a lado e ligados por um fio.
-class _CompanionSteps extends StatelessWidget {
-  const _CompanionSteps();
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final l10n = context.l10n;
-    final steps = [
-      (CinematicGlyph.path, l10n.juntosCompanionStep1),
-      (CinematicGlyph.flame, l10n.juntosCompanionStep2),
-      (CinematicGlyph.lamp, l10n.juntosCompanionStep3),
-    ];
-    return Stack(
-      children: [
-        Positioned(
-          left: 40,
-          right: 40,
-          top: 19,
-          child: Container(
-            height: 1,
-            color: AppColors.accent.withValues(alpha: 0.25),
-          ),
-        ),
-        Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            for (final s in steps)
-              Expanded(
-                child: Column(
-                  children: [
-                    Container(
-                      width: 38,
-                      height: 38,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: AppColors.nightMid,
-                        border: Border.all(
-                          color: AppColors.accent.withValues(alpha: 0.5),
-                        ),
-                      ),
-                      child: Center(
-                        child: CinematicIcon(
-                          glyph: s.$1,
-                          size: 18,
-                          accent: AppColors.accent,
-                          framed: false,
-                        ),
-                      ),
-                    ),
-                    const SizedBox(height: 8),
-                    Text(
-                      s.$2,
-                      textAlign: TextAlign.center,
-                      style: AppTypography.body(
-                        size: 12,
-                        height: 1.3,
-                        weight: FontWeight.w700,
-                        color: a.textSecondary,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-          ],
-        ),
       ],
     );
   }
@@ -3770,7 +3356,8 @@ class _CompanionCard extends StatelessWidget {
       away: companion.theyAreDusty,
     );
     return GlassCard(
-      padding: const EdgeInsets.fromLTRB(18, 18, 18, 8),
+      // Rodapé com TextCta (sair) — ele já traz o próprio respiro.
+      padding: AppMetrics.cardPadding.copyWith(bottom: AppSpace.sm),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -3897,7 +3484,6 @@ class _BondMember extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const dustTone = AppColors.dust;
     final a = Appearance.of(context);
     final l10n = context.l10n;
     final status = walked
@@ -3905,19 +3491,19 @@ class _BondMember extends StatelessWidget {
         : dusty
         ? l10n.juntosBondNotStudying
         : (highlight ? l10n.juntosBondYourTurn : l10n.juntosBondNotYet);
+    // Estudou hoje = presença; sua vez = risco; parado há dias = apagado.
     final tone = walked
-        ? AppColors.accent
+        ? AppRoles.presence
         : dusty
-        ? dustTone
+        ? a.textFaint
         : highlight
-        ? AppColors.streak
+        ? AppRoles.risk
         : a.textFaint;
 
-    Widget avatar = _PilgrimAvatar(
+    Widget avatar = UserAvatar(
       name: name,
-      isUser: isUser,
-      live: false,
-      size: 60,
+      radius: AppMetrics.avatarLg,
+      borderColor: isUser ? AppRoles.selected.withValues(alpha: 0.55) : null,
       photoUrl: photoUrl,
       seed: seed ?? name,
       style: style,
@@ -3931,9 +3517,9 @@ class _BondMember extends StatelessWidget {
       child: Column(
         children: [
           JuntosHalo(
-            size: 60,
+            size: AppMetrics.avatarLg * 2,
             lit: walked || highlight,
-            color: walked ? AppColors.accent : AppColors.streak,
+            color: walked ? AppRoles.presence : AppRoles.risk,
             child: avatar,
           ),
           const SizedBox(height: 8),
@@ -3971,21 +3557,22 @@ class _BondKnot extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     return AnimatedContainer(
       duration: const Duration(milliseconds: 300),
       width: 34,
       height: 34,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        color: both ? AppColors.accent : AppColors.night,
+        color: both ? AppRoles.success : a.cardFill,
         border: Border.all(
-          color: both ? AppColors.accent : Colors.white.withValues(alpha: 0.18),
+          color: both ? AppRoles.success : a.cardBorder,
           width: 1.4,
         ),
         boxShadow: both
             ? [
                 BoxShadow(
-                  color: AppColors.accent.withValues(alpha: 0.5),
+                  color: AppRoles.success.withValues(alpha: 0.5),
                   blurRadius: 14,
                 ),
               ]
@@ -3994,10 +3581,8 @@ class _BondKnot extends StatelessWidget {
       child: Center(
         child: CinematicIcon(
           glyph: CinematicGlyph.link,
-          size: 16,
-          accent: both
-              ? AppColors.inkOnAccent
-              : Colors.white.withValues(alpha: 0.4),
+          size: AppMetrics.iconSm,
+          accent: both ? AppColors.night : a.textFaint,
           framed: false,
         ),
       ),
@@ -4034,16 +3619,14 @@ class _OpenInviteStage extends StatelessWidget {
         : myName.trim().split(' ').first;
     final a = Appearance.of(context);
     return GlassCard(
-      padding: const EdgeInsets.fromLTRB(18, 18, 18, 8),
+      // Rodapé com TextCta (sair) — ele já traz o próprio respiro.
+      padding: AppMetrics.cardPadding.copyWith(bottom: AppSpace.sm),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Row(
             children: [
-              SectionLabel(
-                context.l10n.juntosOpenInvite,
-                color: AppColors.accent,
-              ),
+              SectionLabel(context.l10n.juntosOpenInvite),
               const Spacer(),
               SoftBadge(
                 text: context.l10n.juntosWaiting,
@@ -4115,15 +3698,15 @@ class _EmptySeat extends StatelessWidget {
       child: Column(
         children: [
           JuntosHalo(
-            size: 60,
+            size: AppMetrics.avatarLg * 2,
             lit: true,
-            color: Colors.white.withValues(alpha: 0.5),
+            color: a.textFaint,
             child: Container(
-              width: 60,
-              height: 60,
+              width: AppMetrics.avatarLg * 2,
+              height: AppMetrics.avatarLg * 2,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: Colors.white.withValues(alpha: 0.04),
+                color: a.insetFill,
               ),
               child: Center(
                 child: Text(
@@ -4144,68 +3727,89 @@ class _EmptySeat extends StatelessWidget {
   }
 }
 
-/// Código grande, tocável para copiar.
+/// Código de convite, tocável para copiar — o mesmo poço e a mesma letra
+/// para dupla e grupo. [compact]: chip ao lado do convite do grupo.
 class _CodePlate extends StatelessWidget {
   final String code;
   final VoidCallback onCopy;
+  final bool compact;
 
-  const _CodePlate({required this.code, required this.onCopy});
+  const _CodePlate({
+    required this.code,
+    required this.onCopy,
+    this.compact = false,
+  });
+
+  /// A letra de código de convite é uma só ([inviteCodeStyle]).
+  static TextStyle codeStyle(AppearanceStyle a, {bool compact = false}) =>
+      inviteCodeStyle(a, size: compact ? 18 : 24);
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return Semantics(
-      button: true,
-      label: context.l10n.juntosCodeTapToCopy(code),
-      excludeSemantics: true,
-      child: Material(
-        color: Colors.transparent,
-        child: InkWell(
-          onTap: onCopy,
-          borderRadius: BorderRadius.circular(AppRadii.md),
-          child: Ink(
-            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
-            decoration: BoxDecoration(
-              color: a.insetFill,
-              borderRadius: BorderRadius.circular(AppRadii.md),
-              border: Border.all(
-                color: AppColors.accent.withValues(alpha: 0.3),
-              ),
-            ),
-            child: Row(
+    final Widget content = compact
+        ? ConstrainedBox(
+            constraints: const BoxConstraints(minHeight: 36),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                SectionLabel(context.l10n.juntosCodeLabel, color: a.textFaint),
-                const SizedBox(width: AppSpace.md),
-                Expanded(
-                  child: Text(
-                    code,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: AppTypography.title(
-                      size: 24,
-                      weight: FontWeight.w900,
-                      color: AppColors.accent,
-                    ).copyWith(letterSpacing: 4),
-                  ),
+                SectionLabel(
+                  context.l10n.juntosCodeLabel,
+                  size: 10,
+                  color: a.textFaint,
                 ),
-                CinematicIcon(
-                  glyph: CinematicGlyph.copy,
-                  size: 16,
-                  accent: a.textSecondary,
-                  framed: false,
-                ),
-                const SizedBox(width: 6),
-                Text(
-                  context.l10n.juntosCopy,
-                  style: AppTypography.body(
-                    size: 13,
-                    weight: FontWeight.w800,
-                    color: a.textSecondary,
-                  ),
-                ),
+                const SizedBox(height: 2),
+                Text(code, style: codeStyle(a, compact: true)),
               ],
             ),
-          ),
+          )
+        : Row(
+            children: [
+              SectionLabel(context.l10n.juntosCodeLabel, color: a.textFaint),
+              const SizedBox(width: AppSpace.md),
+              Expanded(
+                child: Text(
+                  code,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: codeStyle(a),
+                ),
+              ),
+              CinematicIcon(
+                glyph: CinematicGlyph.copy,
+                size: AppMetrics.iconSm,
+                accent: a.textSecondary,
+                framed: false,
+              ),
+              const SizedBox(width: 6),
+              Text(
+                context.l10n.juntosCopy,
+                style: AppTypography.body(
+                  size: 13,
+                  weight: FontWeight.w800,
+                  color: a.textSecondary,
+                ),
+              ),
+            ],
+          );
+    return Semantics(
+      button: true,
+      label: compact
+          ? context.l10n.juntosCopyCodeSemantics(code)
+          : context.l10n.juntosCodeTapToCopy(code),
+      excludeSemantics: true,
+      child: GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: () {
+          ActHaptics.tap();
+          onCopy();
+        },
+        child: InsetPanel(
+          padding: compact
+              ? const EdgeInsets.symmetric(horizontal: 12, vertical: 6)
+              : const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+          child: content,
         ),
       ),
     );
@@ -4240,7 +3844,7 @@ class _CompanionWeekStrip extends StatelessWidget {
       children: [
         Row(
           children: [
-            SectionLabel(context.l10n.juntosThisWeek, color: AppColors.accent),
+            SectionLabel(context.l10n.juntosThisWeek),
             const Spacer(),
             Text(
               context.l10n.juntosTogetherOfSeven(together),
@@ -4331,7 +3935,7 @@ class _WeekLegend extends StatelessWidget {
               them: them,
               isToday: false,
               empty: style.cardFillSoft,
-              border: AppColors.accent.withValues(alpha: 0.55),
+              border: AppRoles.presence.withValues(alpha: 0.55),
               legend: true,
             ),
           ),
@@ -4371,7 +3975,7 @@ class _CompanionMilestonesBlock extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SectionLabel(l10n.juntosMilestones, color: AppColors.accent),
+        SectionLabel(l10n.juntosMilestones),
         const SizedBox(height: 14),
         _MilestoneTrail(sharedDays: shared, next: next, style: a),
         if (shared < next) ...[
@@ -4389,7 +3993,7 @@ class _CompanionMilestonesBlock extends StatelessWidget {
                 style: AppTypography.label(
                   size: 11,
                   weight: FontWeight.w800,
-                  color: AppColors.accent,
+                  color: a.text,
                 ),
               ),
             ],
@@ -4437,7 +4041,7 @@ class _WeekDot extends StatelessWidget {
                     ? Colors.transparent
                     : style.text.withValues(alpha: 0.07),
                 border: isToday
-                    ? AppColors.accent
+                    ? AppRoles.selected
                     : future
                     ? style.text.withValues(alpha: 0.08)
                     : Colors.transparent,
@@ -4446,8 +4050,8 @@ class _WeekDot extends StatelessWidget {
                   ? const Center(
                       child: CinematicIcon(
                         glyph: CinematicGlyph.check,
-                        size: 16,
-                        accent: AppColors.inkOnAccent,
+                        size: AppMetrics.iconSm,
+                        accent: AppColors.night,
                         framed: false,
                       ),
                     )
@@ -4462,7 +4066,7 @@ class _WeekDot extends StatelessWidget {
             size: 11,
             weight: FontWeight.w800,
             color: isToday
-                ? AppColors.accent
+                ? style.text
                 : (future ? style.textFaint : style.textSecondary),
           ),
         ),
@@ -4472,7 +4076,7 @@ class _WeekDot extends StatelessWidget {
 }
 
 /// Bolinha da semana: metade esquerda é você, metade direita é o parceiro;
-/// os dois = disco dourado inteiro, com brilho.
+/// os dois = disco inteiro de presença, com brilho.
 class _SplitDayPainter extends CustomPainter {
   final bool me;
   final bool them;
@@ -4503,14 +4107,14 @@ class _SplitDayPainter extends CustomPainter {
         center,
         radius,
         Paint()
-          ..color = AppColors.accent.withValues(alpha: 0.4)
+          ..color = AppRoles.presence.withValues(alpha: 0.4)
           ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 5),
       );
     }
 
     canvas.drawCircle(center, radius, Paint()..color = empty);
 
-    final fill = Paint()..color = AppColors.accent;
+    final fill = Paint()..color = AppRoles.presence;
     if (both) {
       canvas.drawCircle(center, radius, fill);
     } else if (me || them) {
@@ -4532,7 +4136,7 @@ class _SplitDayPainter extends CustomPainter {
         Paint()
           ..style = PaintingStyle.stroke
           ..strokeWidth = legend ? 1 : 1.2
-          ..color = AppColors.accent.withValues(alpha: 0.7),
+          ..color = AppRoles.presence.withValues(alpha: 0.7),
       );
     }
 
@@ -4632,9 +4236,9 @@ class _MilestoneTrail extends StatelessWidget {
                             ? FontWeight.w800
                             : FontWeight.w600,
                         color: sharedDays >= m
-                            ? AppColors.accent
+                            ? AppRoles.reward
                             : next == m
-                            ? AppColors.streak
+                            ? style.text
                             : style.textFaint,
                       ),
                     ),
@@ -4702,7 +4306,7 @@ class _MilestoneLine extends StatelessWidget {
             widthFactor: t,
             child: const DecoratedBox(
               decoration: BoxDecoration(
-                color: AppColors.accent,
+                color: AppRoles.reward,
                 borderRadius: BorderRadius.all(Radius.circular(AppRadii.hair)),
               ),
             ),
@@ -4742,8 +4346,8 @@ class _MilestoneNode extends StatelessWidget {
             ? const Center(
                 child: CinematicIcon(
                   glyph: CinematicGlyph.check,
-                  size: 14,
-                  accent: AppColors.inkOnAccent,
+                  size: AppMetrics.chipIcon,
+                  accent: AppRoles.onReward,
                   framed: false,
                 ),
               )
@@ -4773,7 +4377,7 @@ class _MilestoneNodePainter extends CustomPainter {
     final center = Offset(size.width / 2, size.height / 2);
     final radius = size.width / 2 - 1.2;
     if (reached) {
-      canvas.drawCircle(center, radius, Paint()..color = AppColors.accent);
+      canvas.drawCircle(center, radius, Paint()..color = AppRoles.reward);
       return;
     }
     canvas.drawCircle(center, radius, Paint()..color = empty);
@@ -4783,7 +4387,7 @@ class _MilestoneNodePainter extends CustomPainter {
       Paint()
         ..style = PaintingStyle.stroke
         ..strokeWidth = current ? 1.8 : 1.1
-        ..color = current ? AppColors.streak : track,
+        ..color = current ? AppRoles.selected : track,
     );
     if (current && arc > 0.01) {
       canvas.drawArc(
@@ -4795,7 +4399,7 @@ class _MilestoneNodePainter extends CustomPainter {
           ..style = PaintingStyle.stroke
           ..strokeWidth = 2.4
           ..strokeCap = StrokeCap.round
-          ..color = AppColors.accent,
+          ..color = AppRoles.reward,
       );
     }
   }
@@ -4820,20 +4424,15 @@ class _IncomingNudgeBanner extends StatelessWidget {
         ? companion.incomingNudgeFromName!.trim().split(' ').first
         : context.l10n.juntosCompanionFallback;
     final message = companion.incomingNudgeMessage?.trim();
-    return Container(
-      width: double.infinity,
+    final a = Appearance.of(context);
+    return InsetPanel(
       padding: const EdgeInsets.fromLTRB(12, 10, 12, 10),
-      decoration: BoxDecoration(
-        color: AppColors.accent.withValues(alpha: 0.12),
-        borderRadius: BorderRadius.circular(AppRadii.md),
-        border: Border.all(color: AppColors.accent.withValues(alpha: 0.45)),
-      ),
       child: Row(
         children: [
           const CinematicIcon(
             glyph: CinematicGlyph.lamp,
-            size: 22,
-            accent: AppColors.accent,
+            size: AppMetrics.iconLg,
+            accent: AppRoles.chrome,
             framed: false,
             glowing: true,
           ),
@@ -4844,7 +4443,7 @@ class _IncomingNudgeBanner extends StatelessWidget {
               children: [
                 Text(
                   context.l10n.juntosWavedAtYou(from),
-                  style: AppTypography.title(size: 14, color: AppColors.accent),
+                  style: AppTypography.title(size: 14, color: a.text),
                 ),
                 if (message != null && message.isNotEmpty) ...[
                   const SizedBox(height: 2),
@@ -4855,7 +4454,7 @@ class _IncomingNudgeBanner extends StatelessWidget {
                     style: AppTypography.body(
                       size: 13,
                       height: 1.3,
-                      color: Appearance.of(context).textSecondary,
+                      color: a.textSecondary,
                     ),
                   ),
                 ],
@@ -4873,88 +4472,52 @@ class _CaravanEmptyCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
+    // EmptyState já traz o próprio respiro — o card não soma padding.
     return GlassCard(
-      padding: const EdgeInsets.fromLTRB(18, 22, 18, 22),
-      child: Column(
-        children: [
-          const CinematicIcon(
-            glyph: CinematicGlyph.people,
-            size: 40,
-            accent: AppColors.accent,
-            glowing: false,
-          ),
-          const SizedBox(height: 14),
-          Text(
-            context.l10n.juntosCaravanEmptyTitle,
-            textAlign: TextAlign.center,
-            style: AppTypography.display(size: 24, color: a.text),
-          ),
-          const SizedBox(height: 8),
-          Text(
-            context.l10n.juntosCaravanEmptyBody,
-            textAlign: TextAlign.center,
-            style: AppTypography.body(
-              size: 13,
-              height: 1.35,
-              color: a.textSecondary,
-            ),
-          ),
-        ],
+      padding: EdgeInsets.zero,
+      child: EmptyState(
+        glyph: CinematicGlyph.people,
+        title: context.l10n.juntosCaravanEmptyTitle,
+        body: context.l10n.juntosCaravanEmptyBody,
       ),
     );
   }
 }
 
-/// Falha de carregamento com saída clara — em vez de só texto vermelho.
-class _InlineErrorCard extends StatelessWidget {
-  final String message;
-  final bool busy;
-  final Future<void> Function() onRetry;
+class _MenuButton extends StatelessWidget {
+  final String tooltip;
+  final VoidCallback onTap;
 
-  const _InlineErrorCard({
-    required this.message,
-    required this.busy,
-    required this.onRetry,
-  });
+  const _MenuButton({required this.tooltip, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return GlassCard(
-      padding: AppMetrics.cardPaddingCompact,
-      child: Row(
-        children: [
-          const CinematicIcon(
-            glyph: CinematicGlyph.wrong,
-            size: 20,
-            accent: AppColors.error,
-            framed: false,
-          ),
-          const SizedBox(width: AppSpace.md),
-          Expanded(
-            child: Text(
-              message,
-              style: AppTypography.body(
-                size: 13,
-                height: 1.35,
-                color: a.textSecondary,
+    return Tooltip(
+      message: tooltip,
+      child: Semantics(
+        button: true,
+        label: tooltip,
+        excludeSemantics: true,
+        child: GestureDetector(
+          behavior: HitTestBehavior.opaque,
+          onTap: () {
+            ActHaptics.tap();
+            onTap();
+          },
+          child: SizedBox(
+            width: 48,
+            height: 48,
+            child: Center(
+              child: CinematicIcon(
+                glyph: CinematicGlyph.tune,
+                size: AppMetrics.iconMd,
+                accent: a.textSecondary,
+                framed: false,
               ),
             ),
           ),
-          const SizedBox(width: AppSpace.sm),
-          busy
-              ? const SizedBox(
-                  width: 44,
-                  height: 44,
-                  child: Center(child: AppSpinner(inline: true)),
-                )
-              : TextCta(
-                  label: context.l10n.commonTryAgain,
-                  leading: CinematicGlyph.refresh,
-                  onTap: onRetry,
-                ),
-        ],
+        ),
       ),
     );
   }

@@ -4,6 +4,7 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import '../l10n/l10n_global.dart';
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
 import 'ui_primitives.dart';
 
 /// Humor cinematográfico do card de continuar.
@@ -1278,18 +1279,11 @@ class HeroCardColorGrade extends StatelessWidget {
   ];
 }
 
-/// Contorno compartilhado dos cards da Home.
-///
-/// Empoeirada = vermelho do card de perfil.
-/// Congelada = gelo/azul.
-/// Em dia = ouro da marca.
-Color homeTrailOutline(HeroCardMood mood) => switch (mood) {
-  HeroCardMood.dusty => AppColors.error.withValues(alpha: 0.55),
-  HeroCardMood.frozen => AppColors.iceSoft.withValues(alpha: 0.85),
-  HeroCardMood.alive => AppColors.accent.withValues(alpha: 0.7),
-};
-
 /// Tokens de UI por mood — borda, labels, CTA.
+///
+/// A atmosfera (pó, geada, luz) é ilustração; o chrome do card segue papéis:
+/// em dia = borda da ação (o card inteiro é o CTA); em risco de verdade =
+/// [AppRoles.risk]; gelo ou volta depois de um buraco = borda neutra.
 class HeroCardMoodStyle {
   final Color border;
   final double borderWidth;
@@ -1307,31 +1301,38 @@ class HeroCardMoodStyle {
     required this.stepLabel,
   });
 
-  static HeroCardMoodStyle of(HeroCardMood mood, {required Color trailAccent}) {
-    final outline = homeTrailOutline(mood);
+  /// [atRisk]: a sequência ainda pode cair hoje. Sem isso, o card
+  /// empoeirado (volta depois de um buraco) não pinta risco.
+  static HeroCardMoodStyle of(
+    HeroCardMood mood,
+    AppearanceStyle a, {
+    bool atRisk = true,
+  }) {
     return switch (mood) {
       HeroCardMood.frozen => HeroCardMoodStyle(
-        border: outline,
+        border: a.cardBorder,
         borderWidth: AppMetrics.cardBorderWidth,
-        glow: AppColors.ice.withValues(alpha: 0.12),
-        label: AppColors.iceSoft,
-        footer: AppColors.iceSoft.withValues(alpha: 0.95),
+        glow: Colors.transparent,
+        label: AppRoles.chrome,
+        footer: a.textSecondary,
         stepLabel: L10n.current.homeMoodFrozen,
       ),
       HeroCardMood.dusty => HeroCardMoodStyle(
-        border: outline,
+        border: atRisk
+            ? AppMetrics.accentBorder(alpha: 0.55, color: AppRoles.risk)
+            : a.cardBorder,
         borderWidth: AppMetrics.cardBorderWidth,
-        glow: const Color(0xFF1A1008).withValues(alpha: 0.5),
-        label: const Color(0xFFB89868),
-        footer: const Color(0xFF9A7850),
+        glow: Colors.transparent,
+        label: atRisk ? AppRoles.risk : a.textSecondary,
+        footer: a.textSecondary,
         stepLabel: L10n.current.homeMoodDusty,
       ),
       HeroCardMood.alive => HeroCardMoodStyle(
-        border: outline,
+        border: AppMetrics.accentBorder(alpha: 0.7, color: AppRoles.action),
         borderWidth: AppMetrics.cardBorderWidth,
-        glow: trailAccent.withValues(alpha: 0.12),
-        label: trailAccent,
-        footer: trailAccent,
+        glow: AppRoles.action.withValues(alpha: 0.12),
+        label: AppRoles.chrome,
+        footer: a.textSecondary,
         stepLabel: L10n.current.homeMoodAlive,
       ),
     };

@@ -192,8 +192,9 @@ class _WeekFuse extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     final urgent = daysLeft <= 1;
-    final tone = urgent ? AppColors.streak : AppColors.accent;
+    final tone = urgent ? AppRoles.risk : AppRoles.chrome;
     return Row(
       children: [
         Expanded(
@@ -208,7 +209,7 @@ class _WeekFuse extends StatelessWidget {
                       borderRadius: BorderRadius.circular(AppRadii.hair),
                       color: i >= 7 - daysLeft
                           ? tone
-                          : Colors.white.withValues(alpha: 0.1),
+                          : a.progressTrack,
                       boxShadow: i >= 7 - daysLeft
                           ? [
                               BoxShadow(
@@ -327,8 +328,9 @@ class _PairRow extends StatelessWidget {
                             state: BondState.idle,
                             left: pendingEnds.$1,
                             right: pendingEnds.$2,
+                            color: AppRoles.chrome,
                           )
-                        : BondThread(state: bond),
+                        : BondThread(state: bond, color: AppRoles.success),
                   ),
                 ),
                 if (awaitingAccept)
@@ -419,7 +421,7 @@ class _WaitingMarkState extends State<_WaitingMark>
             child: Center(
               child: CinematicIcon(
                 glyph: CinematicGlyph.hourglass,
-                size: 18,
+                size: AppMetrics.iconMd,
                 accent: muted,
                 framed: false,
               ),
@@ -474,17 +476,16 @@ class _Walker extends StatelessWidget {
       child: Column(
         children: [
           JuntosHalo(
-            size: 56,
+            size: AppMetrics.avatarLg * 2,
             lit: done,
+            color: AppRoles.success,
             child: UserAvatar(
               name: name,
               photoUrl: photo,
               seed: seed,
-              radius: 28,
+              radius: AppMetrics.avatarLg,
               style: portrait,
-              borderColor: done
-                  ? AppColors.accent
-                  : AppColors.accent.withValues(alpha: 0.55),
+              borderColor: done ? AppRoles.success : null,
             ),
           ),
           const SizedBox(height: 6),
@@ -511,7 +512,7 @@ class _Walker extends StatelessWidget {
                 size: 10,
                 letterSpacing: 0.3,
                 weight: FontWeight.w700,
-                color: done ? AppColors.accent : a.textFaint,
+                color: done ? AppRoles.success : a.textFaint,
               ),
             ),
           ],
@@ -553,6 +554,7 @@ class _FinishMarkState extends State<_FinishMark>
   @override
   Widget build(BuildContext context) {
     final boost = widget.lit ? 1.0 : 0.0;
+    final tone = widget.lit ? AppRoles.success : AppRoles.chrome;
     return AnimatedBuilder(
       animation: _pulse,
       builder: (context, child) {
@@ -564,23 +566,25 @@ class _FinishMarkState extends State<_FinishMark>
             shape: BoxShape.circle,
             color: Color.lerp(
               AppColors.night,
-              AppColors.accent,
+              tone,
               0.16 + 0.1 * t + 0.2 * boost,
             ),
             border: Border.all(
-              color: AppColors.accent.withValues(alpha: 0.72 + 0.28 * t),
+              color: tone.withValues(alpha: 0.72 + 0.28 * t),
               width: 1.4,
             ),
             boxShadow: [
               BoxShadow(
-                color: AppColors.accent.withValues(
+                color: tone.withValues(
                   alpha: 0.22 + 0.38 * t + 0.2 * boost,
                 ),
                 blurRadius: 10 + 10 * t,
               ),
             ],
           ),
-          child: CustomPaint(painter: _FinishFlagPainter(wave: _pulse.value)),
+          child: CustomPaint(
+            painter: _FinishFlagPainter(wave: _pulse.value, color: tone),
+          ),
         );
       },
     );
@@ -589,8 +593,9 @@ class _FinishMarkState extends State<_FinishMark>
 
 class _FinishFlagPainter extends CustomPainter {
   final double wave;
+  final Color color;
 
-  const _FinishFlagPainter({required this.wave});
+  const _FinishFlagPainter({required this.wave, required this.color});
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -602,7 +607,7 @@ class _FinishFlagPainter extends CustomPainter {
       base,
       top,
       Paint()
-        ..color = AppColors.accent
+        ..color = color
         ..strokeWidth = 2
         ..strokeCap = StrokeCap.round,
     );
@@ -620,9 +625,10 @@ class _FinishFlagPainter extends CustomPainter {
         top.dy + fh,
       )
       ..close();
-    canvas.drawPath(cloth, Paint()..color = AppColors.accent);
+    canvas.drawPath(cloth, Paint()..color = color);
   }
 
   @override
-  bool shouldRepaint(covariant _FinishFlagPainter old) => old.wave != wave;
+  bool shouldRepaint(covariant _FinishFlagPainter old) =>
+      old.wave != wave || old.color != color;
 }

@@ -14,7 +14,8 @@ class TrilhaMascot extends StatelessWidget {
     return CinematicIcon(
       glyph: CinematicGlyph.spark,
       size: size,
-      accent: AppColors.accent,
+      // Mascote é chrome: não é recompensa nem ação.
+      accent: AppRoles.chrome,
       glowing: glowing,
     );
   }

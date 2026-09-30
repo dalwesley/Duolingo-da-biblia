@@ -157,15 +157,12 @@ class _ChallengeCard extends StatelessWidget {
         ? CornerCopy.ctaInvite
         : CornerCopy.inviteTitle(proposal!.missionTitle);
     final sub = blocked ?? CornerCopy.sameStretch;
-    final accent = enabled
-        ? AppColors.accent
-        : AppColors.accent.withValues(alpha: 0.38);
+    final accent = enabled ? AppRoles.chrome : a.textFaint;
 
     return GlassCard(
       glow: enabled ? 0.45 : 0.1,
-      tint: AppColors.accent,
+      tint: AppRoles.chrome,
       radius: AppMetrics.heroRadius,
-      padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -241,9 +238,8 @@ class _StatusCard extends StatelessWidget {
       ),
       child: GlassCard(
         glow: 0.3,
-        tint: AppColors.accent,
+        tint: AppRoles.chrome,
         radius: AppMetrics.heroRadius,
-        padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [

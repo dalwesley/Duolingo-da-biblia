@@ -42,12 +42,12 @@ class _ComebackSheet extends StatelessWidget {
           AppSheetHeader(
             leading: const CinematicIcon(
               glyph: CinematicGlyph.flame,
-              size: 56,
-              accent: AppColors.streak,
+              size: AppMetrics.iconHero,
+              accent: AppRoles.streak,
               glowing: false,
             ),
             eyebrow: l10n.comebackEyebrow,
-            eyebrowColor: AppColors.streak.withValues(alpha: 0.85),
+            eyebrowColor: AppRoles.streak.withValues(alpha: 0.85),
             title: l10n.comebackTitle,
             subtitle: days >= 2
                 ? l10n.comebackSubtitleGap(

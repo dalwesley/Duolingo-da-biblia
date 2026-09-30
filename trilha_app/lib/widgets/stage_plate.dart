@@ -26,12 +26,12 @@ class StagePlate extends StatelessWidget {
       border: Border.all(
         color: lit
             ? accent.withValues(alpha: 0.72)
-            : Colors.white.withValues(alpha: 0.10),
+            : AppColors.textOnDark.withValues(alpha: 0.10),
         width: lit ? 1.6 : 1,
       ),
-      boxShadow: const [
+      boxShadow: [
         BoxShadow(
-          color: Color(0x80000000),
+          color: Colors.black.withValues(alpha: 0.5),
           blurRadius: 0,
           offset: Offset(0, 5),
         ),

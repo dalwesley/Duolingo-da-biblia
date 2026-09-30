@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../l10n/app_language.dart';
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
 import '../utils/difficulty_visuals.dart';
 import '../utils/genesis_theme.dart';
 import 'ui_primitives.dart';
@@ -31,7 +32,7 @@ class GenesisModuleScenery extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final accent = modeAccent ?? AppColors.accent;
+    final accent = modeAccent ?? AppRoles.chrome;
     return Padding(
       padding: const EdgeInsets.fromLTRB(18, 8, 18, 36),
       child: Column(
@@ -80,6 +81,7 @@ class _ChapterTitleCard extends StatelessWidget {
     final total = missionsTotal ?? 0;
     final pct = total > 0 ? done / total : 0.0;
     final onSky = DifficultyVisuals.onSky(accent);
+    final a = Appearance.of(context);
 
     return AnimatedContainer(
       duration: const Duration(milliseconds: 420),
@@ -92,11 +94,12 @@ class _ChapterTitleCard extends StatelessWidget {
       ),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(StagePlate.radius),
-        color: AppColors.nightElevated.withValues(alpha: highlighted ? 0.78 : 0.55),
+        // Painel do visual atual (não o noturno fixo), translúcido sobre o céu.
+        color: a.cardFill.withValues(alpha: highlighted ? 0.78 : 0.55),
         border: Border.all(
           color: highlighted
-              ? accent.withValues(alpha: 0.36)
-              : Colors.white.withValues(alpha: 0.08),
+              ? AppMetrics.accentBorder(color: accent, alpha: 0.55)
+              : a.cardBorder,
           width: 1,
         ),
       ),
@@ -108,17 +111,17 @@ class _ChapterTitleCard extends StatelessWidget {
             style: AppTypography.body(
               size: 12,
               weight: FontWeight.w700,
-              color: Colors.white.withValues(alpha: highlighted ? 0.48 : 0.38),
+              color: a.textFaint,
             ),
           ),
           const SizedBox(height: 8),
           Text(
             title,
             style: AppTypography.display(
-              size: highlighted ? 26 : 22,
+              size: highlighted ? 24 : 20,
               weight: FontWeight.w600,
               height: 1.12,
-              color: Colors.white.withValues(alpha: highlighted ? 0.94 : 0.72),
+              color: highlighted ? a.text : a.textSecondary,
             ),
           ),
           if (highlighted) ...[
@@ -126,10 +129,10 @@ class _ChapterTitleCard extends StatelessWidget {
             Text(
               theme.narrative,
               style: AppTypography.body(
-                size: 15,
+                size: 14,
                 height: 1.5,
                 weight: FontWeight.w500,
-                color: Colors.white.withValues(alpha: 0.7),
+                color: a.textSecondary,
               ),
             ),
             const SizedBox(height: 14),
@@ -138,16 +141,16 @@ class _ChapterTitleCard extends StatelessWidget {
               style: AppTypography.verse(
                 size: 16,
                 height: 1.4,
-                color: Colors.white.withValues(alpha: 0.82),
+                color: a.text,
               ),
             ),
             if (total > 0) ...[
               const SizedBox(height: 16),
               AppProgressBar(
                 value: pct,
-                color: onSky.withValues(alpha: 0.7),
-                trackColor: Colors.white.withValues(alpha: 0.08),
-                height: 3,
+                color: onSky,
+                trackColor: a.progressTrack,
+                height: 6,
               ),
               const SizedBox(height: 8),
               Text(
@@ -155,7 +158,7 @@ class _ChapterTitleCard extends StatelessWidget {
                 style: AppTypography.body(
                   size: 12,
                   weight: FontWeight.w600,
-                  color: Colors.white.withValues(alpha: 0.42),
+                  color: a.textFaint,
                 ),
               ),
             ],

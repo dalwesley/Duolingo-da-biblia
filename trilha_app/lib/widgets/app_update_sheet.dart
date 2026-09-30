@@ -32,7 +32,8 @@ class _AppUpdateSheet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final accent = _force ? AppColors.ember : AppColors.accent;
+    // Obrigatório = risco; opcional = aviso neutro (amarelo só no CTA).
+    final accent = _force ? AppRoles.risk : AppRoles.chrome;
 
     return PopScope(
       canPop: !_force,
@@ -45,12 +46,12 @@ class _AppUpdateSheet extends StatelessWidget {
               center: true,
               leading: CinematicIcon(
                 glyph: _force ? CinematicGlyph.shield : CinematicGlyph.spark,
-                size: 56,
+                size: AppMetrics.iconHero,
                 accent: accent,
                 glowing: false,
               ),
               eyebrow: context.l10n.updateEyebrow,
-              eyebrowColor: accent.withValues(alpha: 0.85),
+              eyebrowColor: _force ? accent : null,
               title: _force
                   ? context.l10n.updateForceTitle
                   : context.l10n.updateSoftTitle,
@@ -130,7 +131,7 @@ class _VersionLane extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 8),
               child: CinematicIcon(
                 glyph: CinematicGlyph.forward,
-                size: 16,
+                size: AppMetrics.iconSm,
                 accent: a.textFaint,
                 framed: false,
               ),

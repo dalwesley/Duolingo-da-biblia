@@ -23,7 +23,7 @@ class LampsBar extends StatelessWidget {
     super.key,
     required this.current,
     this.max = 5,
-    this.accent = AppColors.accent,
+    this.accent = AppRoles.chrome,
     this.labeled = false,
     this.fullWidth = false,
     this.compact = false,

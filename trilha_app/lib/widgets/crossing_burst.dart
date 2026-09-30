@@ -4,6 +4,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
 import 'act_feel.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
@@ -62,6 +63,12 @@ Future<void> showCrossingBurst(
   overlay.insert(entry);
   return done.future;
 }
+
+/// Quem é quem na cena: eu em contorno claro (nunca amarelo de "você"),
+/// a outra pessoa em presença; a bandeira é a recompensa.
+const _meTone = AppRoles.selected;
+const _themTone = AppRoles.presence;
+const _flagTone = AppRoles.reward;
 
 double _span(double t, double a, double b) =>
     ((t - a) / (b - a)).clamp(0.0, 1.0);
@@ -248,7 +255,7 @@ class _CrossingBurstState extends State<_CrossingBurst>
                     u: walk,
                     lift: stride,
                     scale: pop * (1 + bump),
-                    ring: AppColors.accent,
+                    ring: _meTone,
                     alpha: alpha,
                     lit: arrived ? 1 : 0.5,
                   ),
@@ -258,7 +265,7 @@ class _CrossingBurstState extends State<_CrossingBurst>
                     u: walk,
                     lift: -stride,
                     scale: pop * (1 + bump),
-                    ring: AppColors.teal,
+                    ring: _themTone,
                     alpha: alpha,
                     lit: arrived ? 1 : 0.5,
                   ),
@@ -325,7 +332,7 @@ class _CrossingBurstState extends State<_CrossingBurst>
                   u: 1,
                   lift: 0,
                   scale: 1 + 0.04 * pulse,
-                  ring: AppColors.teal,
+                  ring: _themTone,
                   alpha: alpha,
                   lit: 0.7 + 0.3 * pulse,
                 ),
@@ -336,7 +343,7 @@ class _CrossingBurstState extends State<_CrossingBurst>
                   lift: 0,
                   shake: tremble,
                   scale: 1 - 0.2 * fall,
-                  ring: AppColors.accent,
+                  ring: _meTone,
                   alpha: alpha * (1 - 0.75 * fall),
                   lit: 1 - fall,
                   grey: fall,
@@ -443,7 +450,7 @@ class _CrossingBurstState extends State<_CrossingBurst>
             size: 12,
             letterSpacing: 0.3,
             weight: FontWeight.w700,
-            color: left ? AppColors.accent : AppColors.teal,
+            color: left ? _meTone : _themTone,
           ).copyWith(decoration: TextDecoration.none),
         ),
       ),
@@ -499,7 +506,7 @@ class _Backdrop extends StatelessWidget {
           colors: [
             Color.lerp(
               AppColors.night,
-              AppColors.accent,
+              _flagTone,
               0.12 * glow,
             )!.withValues(alpha: 0.93 * alpha),
             AppColors.night.withValues(alpha: 0.97 * alpha),
@@ -527,6 +534,7 @@ class _Caption extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     final p = progress.clamp(0.0, 1.0);
     return Align(
       alignment: const Alignment(0, 0.52),
@@ -547,7 +555,7 @@ class _Caption extends StatelessWidget {
                       size: 11,
                       letterSpacing: 2.4,
                       weight: FontWeight.w800,
-                      color: AppColors.accent,
+                      color: a.sectionLabel,
                     ).copyWith(decoration: TextDecoration.none),
                   ),
                   const SizedBox(height: 6),
@@ -559,12 +567,12 @@ class _Caption extends StatelessWidget {
                       AppTypography.display(
                         size: 28,
                         weight: FontWeight.w700,
-                        color: Colors.white.withValues(alpha: dim ? 0.86 : 1),
+                        color: dim ? a.textSecondary : a.text,
                       ).copyWith(
                         decoration: TextDecoration.none,
                         shadows: [
                           Shadow(
-                            color: AppColors.accent.withValues(alpha: 0.45),
+                            color: _flagTone.withValues(alpha: 0.45),
                             blurRadius: 20,
                           ),
                         ],
@@ -599,8 +607,8 @@ class _StagePainter extends CustomPainter {
     required this.fall,
   });
 
-  static const _mine = AppColors.accent;
-  static const _theirs = AppColors.teal;
+  static const _mine = _meTone;
+  static const _theirs = _themTone;
 
   Color _a(Color c, [double k = 1]) =>
       c.withValues(alpha: (c.a * k * alpha).clamp(0.0, 1.0));
@@ -635,7 +643,7 @@ class _StagePainter extends CustomPainter {
         r,
         Paint()
           ..shader = RadialGradient(
-            colors: [_a(AppColors.accent, haloK), _a(AppColors.accent, 0)],
+            colors: [_a(_flagTone, haloK), _a(_flagTone, 0)],
           ).createShader(Rect.fromCircle(center: c, radius: r)),
       );
     }
@@ -709,7 +717,7 @@ class _StagePainter extends CustomPainter {
     canvas.drawCircle(
       _Stage.poleTop,
       4.5,
-      Paint()..color = _a(AppColors.accent, 0.4 + 0.6 * lit),
+      Paint()..color = _a(_flagTone, 0.4 + 0.6 * lit),
     );
 
     // Hasteada: sobe do pé do mastro e abre enquanto sobe.
@@ -742,7 +750,7 @@ class _StagePainter extends CustomPainter {
         ..shader = LinearGradient(
           colors: [
             _a(const Color(0xFFFFE9A8), 0.3 + 0.7 * lit),
-            _a(AppColors.accent, 0.3 + 0.7 * lit),
+            _a(_flagTone, 0.3 + 0.7 * lit),
             _a(const Color(0xFFB0822A), 0.3 + 0.7 * lit),
           ],
         ).createShader(rect),
@@ -804,8 +812,8 @@ class _StagePainter extends CustomPainter {
           ..shader = RadialGradient(
             colors: [
               _a(Colors.white, 0.8 * flash),
-              _a(AppColors.accent, 0.45 * flash),
-              _a(AppColors.accent, 0),
+              _a(_flagTone, 0.45 * flash),
+              _a(_flagTone, 0),
             ],
           ).createShader(Rect.fromCircle(center: meet, radius: r)),
       );
@@ -837,7 +845,10 @@ class _StagePainter extends CustomPainter {
                 math.sin(m.phase + u * 6) * 8,
             math.sin(m.angle) * m.reach * spread * 0.6 - m.rise * u,
           );
-      dot.color = _a(m.warm ? _mine : _theirs, 0.9 * math.sin(u * math.pi));
+      dot.color = _a(
+        m.warm ? _flagTone : _theirs,
+        0.9 * math.sin(u * math.pi),
+      );
       canvas.drawCircle(p, m.size, dot);
     }
   }
@@ -1007,7 +1018,7 @@ class _HoldToConfirmCtaState extends State<HoldToConfirmCta>
     return Container(
       constraints: const BoxConstraints(minHeight: CopperCta.denseHeight),
       decoration: BoxDecoration(
-        color: AppColors.accent,
+        color: AppRoles.action,
         borderRadius: BorderRadius.circular(AppRadii.md),
         boxShadow: _enabled
             ? AppMetrics.accentGlow(
@@ -1040,7 +1051,7 @@ class _HoldToConfirmCtaState extends State<HoldToConfirmCta>
                 children: [
                   CinematicIcon(
                     glyph: widget.leading,
-                    size: 16,
+                    size: AppMetrics.iconSm,
                     accent: AppColors.inkOnAccent,
                     framed: false,
                   ),

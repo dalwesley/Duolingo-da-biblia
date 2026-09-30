@@ -197,5 +197,23 @@
     "placeholders": {
       "count": "int"
     }
+  },
+  "recognitionHomeTitleSingle": {
+    "pt": "{name} reconheceu sua jornada",
+    "en": "{name} recognized your journey",
+    "es": "{name} reconoció tu camino",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "recognitionHomeTitleMany": {
+    "pt": "Reconheceram sua jornada",
+    "en": "People recognized your journey",
+    "es": "Reconocieron tu camino"
+  },
+  "recognitionHomeSeeWho": {
+    "pt": "Ver quem reconheceu",
+    "en": "See who recognized you",
+    "es": "Ver quién te reconoció"
   }
 }

@@ -22,12 +22,10 @@ import '../widgets/app_sheet.dart';
 import '../widgets/corner_board.dart';
 import '../widgets/corner_home_card.dart';
 import '../widgets/juntos_inbox.dart';
-import '../widgets/home_brand_backdrop.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/comeback_sheet.dart';
 import '../widgets/daily_chest_card.dart';
 import '../widgets/daily_quests_card.dart';
-import '../widgets/hero_card_atmosphere.dart';
 import '../widgets/hero_continue_card.dart';
 import '../widgets/home_player_header.dart';
 import '../widgets/home_word_card.dart';
@@ -222,9 +220,9 @@ class _HomeScreenState extends State<HomeScreen>
               children: [
                 AppSheetHeader(
                   leading: const CinematicIcon(
-                    glyph: CinematicGlyph.flame,
-                    size: 48,
-                    accent: AppColors.primaryLight,
+                    glyph: CinematicGlyph.frost,
+                    size: AppMetrics.iconHero,
+                    accent: AppRoles.chrome,
                   ),
                   title: ctx.l10n.homeFreezeSheetTitle,
                   subtitle: ctx.l10n.homeFreezeSheetBody,
@@ -275,7 +273,7 @@ class _HomeScreenState extends State<HomeScreen>
                   title: ctx.l10n.navBible,
                   subtitle: ctx.l10n.homeBibleOfflineSubtitle,
                   leadingGlyph: CinematicGlyph.book,
-                  chromeAccent: AppColors.cedar,
+                  chromeAccent: AppRoles.chrome,
                   onBack: () => Navigator.pop(ctx),
                 ),
               ),
@@ -378,7 +376,7 @@ class _HomeScreenState extends State<HomeScreen>
           glyph: CinematicGlyph.gem,
           title: l10n.chestDailyTitle,
           caption: l10n.chestReadyShort,
-          color: AppColors.accent,
+          color: AppRoles.reward,
           hot: true,
           onTap: () => _openCardSheet(const DailyChestCard()),
         ),
@@ -387,7 +385,7 @@ class _HomeScreenState extends State<HomeScreen>
           glyph: CinematicGlyph.people,
           title: l10n.navTogether,
           caption: l10n.homeJuntosNews(juntos),
-          color: AppColors.streak,
+          color: AppRoles.chrome,
           hot: true,
           onTap: () => widget.onOpenLeague?.call(),
         ),
@@ -396,7 +394,7 @@ class _HomeScreenState extends State<HomeScreen>
           glyph: CinematicGlyph.target,
           title: l10n.questDailyTitle,
           caption: l10n.homeQuestsExtraCaption,
-          color: AppColors.teal,
+          color: AppRoles.reward,
           onTap: () => _openCardSheet(
             DailyQuestsCard(
               onQuestTap: (q) {
@@ -411,7 +409,7 @@ class _HomeScreenState extends State<HomeScreen>
           glyph: CinematicGlyph.crown,
           title: l10n.seasonChallengeTitle,
           caption: l10n.seasonChallengeSeeProgress,
-          color: AppColors.orchid,
+          color: AppRoles.chrome,
           onTap: () => _openCardSheet(SeasonChallengeBanner(catalog: trails)),
         ),
       if (mistakes > 0)
@@ -419,7 +417,7 @@ class _HomeScreenState extends State<HomeScreen>
           glyph: CinematicGlyph.refresh,
           title: l10n.homeReviewTitle,
           caption: l10n.homeReviewCaption(mistakes),
-          color: AppColors.error,
+          color: AppRoles.chrome,
           onTap: () => Navigator.of(
             context,
           ).push(MaterialPageRoute(builder: (_) => const PracticeScreen())),
@@ -484,115 +482,104 @@ class _HomeScreenState extends State<HomeScreen>
 
     final nudge = context.watch<CompanionService>().incomingNudge;
 
-    final trailMood = resolveHeroCardMood(
-      atRisk: progress.isStreakAtRisk,
-      yesterdayFrozen: progress.yesterdayWasFrozen,
-      walkedToday: progress.walkedToday,
-      returningAfterGap: progress.isReturningAfterGap,
-    );
-
-    return HomeTrailChrome(
-      outline: homeTrailOutline(trailMood),
-      child: Stack(
-        children: [
-          Positioned.fill(
-            child: HomeBrandBackdrop(style: Appearance.of(context)),
+    // Fundo = gradiente da fase do dia do shell (ImmersiveScaffold); a arte
+    // da trilha vive só dentro do card herói. Cards comuns ficam neutros.
+    return Stack(
+      children: [
+        ListView(
+          padding: EdgeInsets.fromLTRB(
+            AppSpace.screen,
+            MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
+            AppSpace.screen,
+            scrollPaddingBelowNav(context),
           ),
-          ListView(
-            padding: EdgeInsets.fromLTRB(
-              AppSpace.screen,
-              MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
-              AppSpace.screen,
-              scrollPaddingBelowNav(context),
+          physics: const ClampingScrollPhysics(),
+          children: [
+            // Header: saudação + estação + pulso do dia.
+            _reveal(
+              0,
+              HomePlayerHeader(
+                onProfileTap: widget.onOpenProfile,
+                onTapMission: goalMet
+                    ? null
+                    : current != null
+                    ? () => widget.onOpenMission(current.slug)
+                    : widget.onOpenTrilhas,
+                onLiturgyTap: () =>
+                    _openBible(LiturgicalCalendar.momentFor().focusRef),
+              ),
             ),
-            physics: const ClampingScrollPhysics(),
-            children: [
-              // Header: saudação + estação + pulso do dia.
-              _reveal(
-                0,
-                HomePlayerHeader(
-                  onProfileTap: widget.onOpenProfile,
-                  onTapMission: goalMet
-                      ? null
-                      : current != null
-                      ? () => widget.onOpenMission(current.slug)
-                      : widget.onOpenTrilhas,
-                  onLiturgyTap: () =>
-                      _openBible(LiturgicalCalendar.momentFor().focusRef),
-                ),
-              ),
-              const SizedBox(height: AppSpace.lg),
-              // CTA dominante: missão pronta.
-              _reveal(
-                1,
-                Column(
-                  children: [
-                    HeroContinueCard(
-                      mission: current,
-                      trailTitle: active?.title ?? '',
-                      trailSlug: active?.slug ?? 'genesis-1-11',
-                      trailColor: active?.color ?? '#1B3A5C',
-                      onTap: current != null
-                          ? () => widget.onOpenMission(current.slug)
-                          : null,
-                      onExploreTrails: widget.onOpenTrilhas,
-                      goalMet: goalMet,
-                      atRisk: progress.isStreakAtRisk,
-                    ),
-                    _WalkHomeCard(heroMissionSlug: current?.slug),
-                  ],
-                ),
-              ),
-              if (context.watch<CornerService>().face != null) ...[
-                const SizedBox(height: AppSpace.section),
-                _reveal(
-                  2,
-                  DesafioEntry(
-                    onTap: () {
-                      ActHaptics.tap();
-                      _openDesafioFace();
-                    },
-                  ),
-                ),
-              ],
-              // Uma coisa só abaixo da missão: o reparo da sequência, se houver.
-              if (progress.showStreakRepairOffer) ...[
-                const SizedBox(height: AppSpace.section),
-                _reveal(2, const StreakRepairBanner()),
-              ],
-              // O resto vive em "Mais para hoje" (abre em folha) e na aba
-              // Juntos — nada some, só deixa de disputar com a missão.
-              Builder(
-                builder: (context) {
-                  final tiles = _moreToday(
-                    context,
-                    progress: progress,
-                    goalMet: goalMet,
-                    trails: trails,
-                    missionSlug: current?.slug,
-                  );
-                  if (tiles.isEmpty) return const SizedBox.shrink();
-                  return Padding(
-                    padding: const EdgeInsets.only(top: AppSpace.section),
-                    child: _reveal(3, _MoreToday(tiles: tiles)),
-                  );
-                },
-              ),
-              if (current == null) ...[
-                const SizedBox(height: AppSpace.section),
-                _reveal(
-                  4,
-                  HomeWordCard(
+            const SizedBox(height: AppSpace.lg),
+            // CTA dominante: missão pronta.
+            _reveal(
+              1,
+              Column(
+                children: [
+                  HeroContinueCard(
                     mission: current,
-                    onOpen: (ref) => _openBible(ref),
+                    trailTitle: active?.title ?? '',
+                    trailSlug: active?.slug ?? 'genesis-1-11',
+                    trailColor: active?.color ?? '#1B3A5C',
+                    onTap: current != null
+                        ? () => widget.onOpenMission(current.slug)
+                        : null,
+                    onExploreTrails: widget.onOpenTrilhas,
+                    goalMet: goalMet,
+                    atRisk: progress.isStreakAtRisk,
                   ),
+                  _WalkHomeCard(heroMissionSlug: current?.slug),
+                ],
+              ),
+            ),
+            if (context.watch<CornerService>().face != null) ...[
+              const SizedBox(height: AppSpace.section),
+              _reveal(
+                2,
+                DesafioEntry(
+                  onTap: () {
+                    ActHaptics.tap();
+                    _openDesafioFace();
+                  },
                 ),
-              ],
+              ),
             ],
-          ),
-          WaveHandsOverlay(active: nudge != null),
-        ],
-      ),
+            // Uma coisa só abaixo da missão: o reparo da sequência, se houver.
+            if (progress.showStreakRepairOffer) ...[
+              const SizedBox(height: AppSpace.section),
+              _reveal(2, const StreakRepairBanner()),
+            ],
+            // O resto vive em "Mais para hoje" (abre em folha) e na aba
+            // Juntos — nada some, só deixa de disputar com a missão.
+            Builder(
+              builder: (context) {
+                final tiles = _moreToday(
+                  context,
+                  progress: progress,
+                  goalMet: goalMet,
+                  trails: trails,
+                  missionSlug: current?.slug,
+                );
+                if (tiles.isEmpty) return const SizedBox.shrink();
+                return Padding(
+                  padding: const EdgeInsets.only(top: AppSpace.section),
+                  child: _reveal(3, _MoreToday(tiles: tiles)),
+                );
+              },
+            ),
+            if (current == null) ...[
+              const SizedBox(height: AppSpace.section),
+              _reveal(
+                4,
+                HomeWordCard(
+                  mission: current,
+                  onOpen: (ref) => _openBible(ref),
+                ),
+              ),
+            ],
+          ],
+        ),
+        WaveHandsOverlay(active: nudge != null),
+      ],
     );
   }
 }
@@ -778,7 +765,11 @@ class _WalkHomeCard extends StatelessWidget {
         padding: const EdgeInsets.only(top: 4),
         child: TextCta(
           label: done
-              ? l10n.homeSeasonDayOfDone(index!, campaign.length, campaign.title)
+              ? l10n.homeSeasonDayOfDone(
+                  index!,
+                  campaign.length,
+                  campaign.title,
+                )
               : l10n.homeSeasonDayOf(index!, campaign.length, campaign.title),
           onTap: () => openSeasonWalk(context),
           color: a.textSecondary,
@@ -813,7 +804,7 @@ class _WalkHomeCard extends StatelessWidget {
               const CinematicIcon(
                 glyph: CinematicGlyph.calendar,
                 size: AppMetrics.leadingIcon,
-                accent: AppColors.accent,
+                accent: AppRoles.chrome,
               ),
               const SizedBox(width: AppSpace.md),
               Expanded(
@@ -846,8 +837,8 @@ class _WalkHomeCard extends StatelessWidget {
               if (done)
                 const CinematicIcon(
                   glyph: CinematicGlyph.check,
-                  size: 18,
-                  accent: AppColors.teal,
+                  size: AppMetrics.iconMd,
+                  accent: AppRoles.success,
                   framed: false,
                 )
               else
@@ -919,26 +910,9 @@ class _MoreToday extends StatelessWidget {
           ),
         ),
         const SizedBox(height: AppSpace.md),
-        DecoratedBox(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(radius),
-            gradient: LinearGradient(
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-              colors: [
-                Color.lerp(a.cardFill, AppColors.textOnDark, 0.05)!,
-                a.cardFill,
-              ],
-            ),
-            border: Border.all(color: a.cardBorder),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black.withValues(alpha: 0.28),
-                blurRadius: 24,
-                offset: const Offset(0, 10),
-              ),
-            ],
-          ),
+        GlassCard(
+          padding: EdgeInsets.zero,
+          radius: radius,
           child: ClipRRect(
             borderRadius: BorderRadius.circular(radius),
             child: Column(
@@ -946,7 +920,7 @@ class _MoreToday extends StatelessWidget {
                 for (var i = 0; i < tiles.length; i++) ...[
                   if (i > 0)
                     const ListDivider(
-                      indent: AppSpace.lg + 44 + AppSpace.md,
+                      indent: ListDivider.iconIndent,
                       endIndent: AppSpace.lg,
                     ),
                   _MoreTileRow(tile: tiles[i]),
@@ -1028,7 +1002,7 @@ class _MoreTileRowState extends State<_MoreTileRow> {
                       tile.title,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                      style: AppTypography.title(size: 16, color: a.text),
+                      style: AppTypography.title(size: 14, color: a.text),
                     ),
                     const SizedBox(height: 3),
                     Text(
@@ -1048,23 +1022,7 @@ class _MoreTileRowState extends State<_MoreTileRow> {
               AnimatedSlide(
                 duration: const Duration(milliseconds: 140),
                 offset: _pressed ? const Offset(0.15, 0) : Offset.zero,
-                child: Container(
-                  width: 28,
-                  height: 28,
-                  alignment: Alignment.center,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: tile.hot
-                        ? tone.withValues(alpha: 0.16)
-                        : a.text.withValues(alpha: 0.05),
-                  ),
-                  child: CinematicIcon(
-                    glyph: CinematicGlyph.chevron,
-                    size: 14,
-                    accent: tile.hot ? tone : a.textFaint,
-                    framed: false,
-                  ),
-                ),
+                child: ListChevron(color: tile.hot ? tone : a.textFaint),
               ),
             ],
           ),
@@ -1074,8 +1032,8 @@ class _MoreTileRowState extends State<_MoreTileRow> {
   }
 }
 
-/// Ícone da linha: ladrilho com degradê da cor da ação e, se houver
-/// novidade, um ponto aceso no canto — como selo de notificação.
+/// Ícone da linha: poço padrão de row ([AppMetrics.leadingIcon]) e, se
+/// houver novidade, um ponto aceso no canto — como selo de notificação.
 class _MoreTileBadge extends StatelessWidget {
   final _MoreTile tile;
   final Color tone;
@@ -1084,36 +1042,14 @@ class _MoreTileBadge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const size = 44.0;
+    const size = AppMetrics.leadingIcon;
     return SizedBox(
       width: size,
       height: size,
       child: Stack(
         clipBehavior: Clip.none,
         children: [
-          Container(
-            width: size,
-            height: size,
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(AppRadii.md),
-              gradient: LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [
-                  tone.withValues(alpha: 0.30),
-                  tone.withValues(alpha: 0.10),
-                ],
-              ),
-              border: Border.all(color: tone.withValues(alpha: 0.32)),
-            ),
-            child: CinematicIcon(
-              glyph: tile.glyph,
-              size: 22,
-              accent: tile.color,
-              framed: false,
-            ),
-          ),
+          CinematicIcon(glyph: tile.glyph, size: size, accent: tile.color),
           if (tile.hot)
             Positioned(
               top: -3,

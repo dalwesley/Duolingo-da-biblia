@@ -29,6 +29,49 @@ cobre o caso, estenda o componente (novo parâmetro), não copie o visual.
 Pesos: title usa o padrão (w800) — não repita `weight: FontWeight.w800`.
 w900 só em display e números de HUD.
 
+## Cores por papel (`AppRoles`)
+
+Tela pede o **papel**, nunca o tom. `AppColors.clay`, `.cedar`, `.sand`…
+são matéria-prima do tema, não se usam direto em tela nova.
+
+| Papel | Token | Onde |
+|---|---|---|
+| Ação principal | `AppRoles.action` (amarelo) | `CopperCta`, o que avança |
+| Recompensa | `AppRoles.reward` (amarelo) | passos, medalha, baú, meta cumprida |
+| Chrome | `AppRoles.chrome` (neutro) | nav, TopBar, ícone de aba — **igual em todas as abas** |
+| Seleção | `AppRoles.selected` (contorno claro) | chip, segmento, opção escolhida |
+| Sucesso / presença | `AppRoles.success` · `.presence` (teal) | acerto, concluído, "estudou hoje" |
+| Sequência | `AppRoles.streak` | só a sequência (chama, dias) |
+| Risco / erro | `AppRoles.risk` · `.error` | em perigo, falhou |
+| Modos | `.observation` (broto) · `.comprehension` (coral) · `.interpretation` (orquídea) | chrome da cena e do seletor |
+| Áreas | `.areaOldTestament` · `.areaNewTestament` · `.areaChristianLife` · `.areaTheology` | **só dentro de Trilhas** |
+
+Regras:
+- Amarelo nunca marca seleção, modo, aba ou aviso.
+- A cena é o único lugar com placas claras (respostas em marfim — o "palco").
+- Cenário de tela cheia (céu pintado, Gênesis, trilha da marca, confete) só em
+  splash, onboarding e celebração. No resto, o gradiente da fase do dia; cenário
+  só dentro de card herói.
+- Um botão principal: `CopperCta` (`large` no herói; `decorative` quando o card
+  inteiro é o toque). Não desenhe CTA à mão.
+- Um card: `GlassCard` (`tint` para um papel, `glow` para palco). Não monte
+  card com `Container` + `BoxDecoration`.
+
+- Um segmentado: `AppSegmentedTabs` (glifo opcional). Chips soltos: `AppSelectChip`.
+- Um avatar: `UserAvatar` com raio `AppMetrics.avatarSm` (16) · `avatarMd` (20)
+  · `avatarLg` (30); retrato de identidade só `avatarXl` (40, cartão do
+  peregrino) e `avatarHero` (52, herói do perfil). "Você" na lista: fundo `AppRoles.selected` a 0.08 + borda 0.4.
+- Ícone solto: `AppMetrics.iconSm` 16 · `iconMd` 20 · `iconLg` 24 · `iconHero` 56;
+  com poço: `leadingIcon` 40; chip: `chipIcon` 14.
+- Erro inline: `InlineNotice` (card próprio; `standalone: false` dentro de
+  outro card; `onRetry` mostra "Tentar de novo"). Nunca texto vermelho solto.
+- Seleção sobre placa clara (respostas da cena): contorno
+  `AppRoles.selectedOnLight` com `AppRoles.selectedOutlineWidth`.
+- Título de seção/card: `RelicChapter` (ou `SectionLabel` para eyebrow). Sem
+  marcas próprias por tela.
+- Barra de progresso: `AppProgressBar` (6 compacto / 16 padrão). `RelicProgress`
+  só como filete decorativo, nunca para o mesmo dado que outra tela mostra em barra.
+
 ## Cores de texto (`Appearance.of(context)`)
 
 - `a.text` — principal

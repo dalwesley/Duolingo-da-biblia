@@ -64,7 +64,8 @@ class _Dot extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final fill = lit ? AppColors.streak : Colors.white.withValues(alpha: 0.1);
+    final a = Appearance.of(context);
+    final fill = lit ? AppRoles.streak : a.divider;
     return AnimatedContainer(
       duration: const Duration(milliseconds: 280),
       width: today ? 12 : 9,
@@ -74,10 +75,10 @@ class _Dot extends StatelessWidget {
         color: fill,
         border: Border.all(
           color: today
-              ? AppColors.streak
+              ? AppRoles.streak
               : lit
-              ? AppColors.streak.withValues(alpha: 0.35)
-              : Colors.white.withValues(alpha: 0.18),
+              ? AppRoles.streak.withValues(alpha: 0.35)
+              : a.cardBorder,
           width: today ? 2 : 1,
         ),
       ),

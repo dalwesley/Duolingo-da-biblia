@@ -17,7 +17,7 @@ class CornerRecordCard extends StatelessWidget {
   Widget build(BuildContext context) {
     if (record.isEmpty) return const SizedBox.shrink();
     final a = Appearance.of(context);
-    final accent = record.together > 0 ? AppColors.accent : AppColors.teal;
+    const accent = AppRoles.success;
 
     return RelicPanel(
       accent: accent,
@@ -30,7 +30,7 @@ class CornerRecordCard extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SectionLabel(CornerCopy.recordChapter, size: 10, color: accent),
+                SectionLabel(CornerCopy.recordChapter, size: 10),
                 const SizedBox(height: 6),
                 Text(
                   record.line,

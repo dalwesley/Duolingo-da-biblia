@@ -17,6 +17,15 @@ import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 import 'stway_brand.dart';
 
+/// Código de convite — um tratamento só (sheet, preview, imagem): display
+/// espaçado em [AppearanceStyle.text]. Amarelo fica para o CTA.
+TextStyle inviteCodeStyle(AppearanceStyle a, {double size = 24}) =>
+    AppTypography.display(
+      size: size,
+      weight: FontWeight.w900,
+      color: a.text,
+    ).copyWith(letterSpacing: 4);
+
 /// Bottom sheet de convite: QR presencial, card visual + código à distância.
 Future<void> showInviteQrSheet(
   BuildContext context, {
@@ -197,7 +206,6 @@ class _InviteQrSheetState extends State<_InviteQrSheet> {
             ),
           ),
         AppSheetPanel(
-          tint: AppColors.accent,
           padding: const EdgeInsets.fromLTRB(
             AppSpace.lg,
             AppSpace.md,
@@ -239,22 +247,14 @@ class _InviteQrSheetState extends State<_InviteQrSheet> {
                 onTap: _copyCode,
                 child: InsetPanel(
                   padding: const EdgeInsets.symmetric(vertical: 12),
-                  borderColor: AppColors.accent.withValues(alpha: 0.4),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
-                        widget.code,
-                        style: AppTypography.title(
-                          size: 20,
-                          weight: FontWeight.w900,
-                          color: AppColors.accent,
-                        ).copyWith(letterSpacing: 5),
-                      ),
+                      Text(widget.code, style: inviteCodeStyle(a)),
                       const SizedBox(width: 8),
                       CinematicIcon(
                         glyph: CinematicGlyph.copy,
-                        size: 16,
+                        size: AppMetrics.iconSm,
                         accent: a.textFaint,
                         framed: false,
                       ),
@@ -323,9 +323,7 @@ class _InvitePreviewTile extends StatelessWidget {
                     Colors.black.withValues(alpha: 0.55),
                   ],
                 ),
-                border: Border.all(
-                  color: AppColors.accent.withValues(alpha: 0.55),
-                ),
+                border: Border.all(color: a.cardBorder),
                 borderRadius: BorderRadius.circular(AppRadii.md),
               ),
             ),
@@ -341,7 +339,7 @@ class _InvitePreviewTile extends StatelessWidget {
                       StwayWordmark(
                         fontSize: 11,
                         letterSpacing: 1.6,
-                        letterColor: Colors.white.withValues(alpha: 0.95),
+                        letterColor: a.text,
                         aColor: AppColors.accent,
                       ),
                     ],
@@ -349,11 +347,7 @@ class _InvitePreviewTile extends StatelessWidget {
                   const Spacer(),
                   Text(
                     context.l10n.inviteCardHeadline,
-                    style: AppTypography.display(
-                      size: 16,
-                      weight: FontWeight.w800,
-                      color: Colors.white,
-                    ),
+                    style: AppTypography.display(size: 18, color: a.text),
                   ),
                   const SizedBox(height: 2),
                   Text(
@@ -363,14 +357,7 @@ class _InvitePreviewTile extends StatelessWidget {
                     style: AppTypography.body(size: 11, color: a.textSecondary),
                   ),
                   const SizedBox(height: 6),
-                  Text(
-                    code,
-                    style: AppTypography.title(
-                      size: 16,
-                      weight: FontWeight.w900,
-                      color: AppColors.accent,
-                    ).copyWith(letterSpacing: 3),
-                  ),
+                  Text(code, style: inviteCodeStyle(a, size: 18)),
                 ],
               ),
             ),
@@ -398,6 +385,7 @@ class InviteShareCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     return ClipRRect(
       borderRadius: BorderRadius.circular(AppRadii.lg),
       child: ConstrainedBox(
@@ -438,9 +426,7 @@ class InviteShareCard extends StatelessWidget {
               child: DecoratedBox(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(AppRadii.lg),
-                  border: Border.all(
-                    color: AppColors.accent.withValues(alpha: 0.7),
-                  ),
+                  border: Border.all(color: a.cardBorder),
                 ),
               ),
             ),
@@ -456,7 +442,7 @@ class InviteShareCard extends StatelessWidget {
                       StwayWordmark(
                         fontSize: 15,
                         letterSpacing: 2.4,
-                        letterColor: Colors.white.withValues(alpha: 0.95),
+                        letterColor: a.text,
                         aColor: AppColors.accent,
                       ),
                     ],
@@ -464,12 +450,8 @@ class InviteShareCard extends StatelessWidget {
                   const SizedBox(height: 22),
                   Text(
                     headline ?? context.l10n.inviteCardHeadline,
-                    style:
-                        AppTypography.display(
-                          size: 28,
-                          weight: FontWeight.w800,
-                          color: Colors.white,
-                        ).copyWith(
+                    style: AppTypography.display(size: 28, color: a.text)
+                        .copyWith(
                           shadows: [
                             Shadow(
                               color: Colors.black.withValues(alpha: 0.5),
@@ -485,39 +467,24 @@ class InviteShareCard extends StatelessWidget {
                     style: AppTypography.body(
                       size: 14,
                       height: 1.4,
-                      color: Colors.white.withValues(alpha: 0.82),
+                      color: a.textSecondary,
                     ),
                   ),
                   const SizedBox(height: 22),
-                  Container(
+                  SizedBox(
                     width: double.infinity,
-                    padding: const EdgeInsets.symmetric(
-                      vertical: 14,
-                      horizontal: 16,
-                    ),
-                    decoration: BoxDecoration(
-                      color: Colors.black.withValues(alpha: 0.35),
-                      borderRadius: BorderRadius.circular(AppRadii.md),
-                      border: Border.all(
-                        color: AppColors.accent.withValues(alpha: 0.55),
+                    child: InsetPanel(
+                      padding: const EdgeInsets.symmetric(
+                        vertical: 14,
+                        horizontal: 16,
                       ),
-                    ),
-                    child: Column(
-                      children: [
-                        SectionLabel(
-                          context.l10n.inviteCodeHint,
-                          color: Colors.white.withValues(alpha: 0.55),
-                        ),
-                        const SizedBox(height: 6),
-                        Text(
-                          code,
-                          style: AppTypography.title(
-                            size: 24,
-                            weight: FontWeight.w900,
-                            color: AppColors.accent,
-                          ).copyWith(letterSpacing: 8),
-                        ),
-                      ],
+                      child: Column(
+                        children: [
+                          SectionLabel(context.l10n.inviteCodeHint),
+                          const SizedBox(height: 6),
+                          Text(code, style: inviteCodeStyle(a)),
+                        ],
+                      ),
                     ),
                   ),
                   if (installHint) ...[
@@ -527,7 +494,7 @@ class InviteShareCard extends StatelessWidget {
                       style: AppTypography.body(
                         size: 11,
                         height: 1.4,
-                        color: Colors.white.withValues(alpha: 0.55),
+                        color: a.textFaint,
                       ),
                     ),
                   ],

@@ -58,7 +58,8 @@ class _ResetProgressSheetState extends State<_ResetProgressSheet> {
 
   @override
   Widget build(BuildContext context) {
-    const accent = AppColors.error;
+    const accent = AppRoles.risk;
+    final a = Appearance.of(context);
 
     return AppSheetPanel(
       tint: accent,
@@ -70,7 +71,7 @@ class _ResetProgressSheetState extends State<_ResetProgressSheet> {
             center: true,
             leading: const CinematicIcon(
               glyph: CinematicGlyph.fall,
-              size: 52,
+              size: AppMetrics.iconHero,
               accent: accent,
               glowing: false,
             ),
@@ -98,8 +99,8 @@ class _ResetProgressSheetState extends State<_ResetProgressSheet> {
             style: FilledButton.styleFrom(
               backgroundColor: accent,
               disabledBackgroundColor: accent.withValues(alpha: 0.28),
-              foregroundColor: Colors.white,
-              disabledForegroundColor: Colors.white.withValues(alpha: 0.7),
+              foregroundColor: AppColors.textOnDark,
+              disabledForegroundColor: a.textSecondary,
               minimumSize: const Size.fromHeight(CopperCta.height),
               padding: const EdgeInsets.symmetric(vertical: AppSpace.md),
               shape: RoundedRectangleBorder(
@@ -110,7 +111,10 @@ class _ResetProgressSheetState extends State<_ResetProgressSheet> {
               _remaining > 0
                   ? context.l10n.resetConfirmCountdown(_remaining)
                   : context.l10n.resetConfirm,
-              style: CopperCta.labelStyle(size: 16, color: Colors.white),
+              style: CopperCta.labelStyle(
+                size: 16,
+                color: AppColors.textOnDark,
+              ),
             ),
           ),
           const SizedBox(height: AppSpace.sm),
@@ -134,7 +138,7 @@ class _AwarenessCheck extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    const accent = AppColors.error;
+    const accent = AppRoles.risk;
 
     return Semantics(
       checked: checked,
@@ -164,8 +168,8 @@ class _AwarenessCheck extends StatelessWidget {
                   child: checked
                       ? const CinematicIcon(
                           glyph: CinematicGlyph.check,
-                          size: 16,
-                          accent: Colors.white,
+                          size: AppMetrics.iconSm,
+                          accent: AppColors.textOnDark,
                           framed: false,
                         )
                       : null,

@@ -14,6 +14,7 @@ import '../utils/day_phase.dart';
 import '../widgets/act_feel.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
+import '../widgets/relic_panel.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 
@@ -200,7 +201,7 @@ class _MemoryScreenState extends State<MemoryScreen>
                     subtitle: context.l10n.memorySubtitle,
                     onBack: () => Navigator.pop(context),
                     leadingGlyph: CinematicGlyph.heart,
-                    chromeAccent: AppColors.clay,
+                    chromeAccent: AppRoles.chrome,
                   ),
                 ),
                 Expanded(
@@ -316,10 +317,7 @@ class _ProgressHeader extends StatelessWidget {
       children: [
         Row(
           children: [
-            SectionLabel(
-              context.l10n.memoryCard,
-              color: AppColors.accent.withValues(alpha: 0.85),
-            ),
+            SectionLabel(context.l10n.memoryCard),
             const Spacer(),
             Text(
               '${index + 1}  ·  $total',
@@ -391,6 +389,7 @@ class _FlashCard extends StatelessWidget {
                   borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
                   border: Border.all(
                     color: AppMetrics.accentBorder(
+                      color: AppRoles.chrome,
                       alpha: showFront ? 0.55 + (0.12 * breathe) : 0.75,
                     ),
                     width: 1.2,
@@ -482,14 +481,14 @@ class _CardFront extends StatelessWidget {
       children: [
         const CinematicIcon(
           glyph: CinematicGlyph.heart,
-          size: 44,
-          accent: AppColors.clay,
+          size: AppMetrics.leadingIcon,
+          accent: AppRoles.chrome,
           glowing: false,
         ),
         const SizedBox(height: AppSpace.lg),
-        SectionLabel(reference, size: 13, color: AppColors.accent),
+        SectionLabel(reference, size: 13, color: AppRoles.chrome),
         const SizedBox(height: AppSpace.md),
-        const _GoldRule(),
+        const _CardRule(),
         const SizedBox(height: AppSpace.xl),
         Expanded(
           child: Center(
@@ -527,14 +526,14 @@ class _CardBack extends StatelessWidget {
       children: [
         const CinematicIcon(
           glyph: CinematicGlyph.heart,
-          size: 44,
-          accent: AppColors.clay,
+          size: AppMetrics.leadingIcon,
+          accent: AppRoles.chrome,
           glowing: true,
         ),
         const SizedBox(height: AppSpace.lg),
-        SectionLabel(reference, size: 13, color: AppColors.accent),
+        SectionLabel(reference, size: 13, color: AppRoles.chrome),
         const SizedBox(height: AppSpace.md),
-        const _GoldRule(),
+        const _CardRule(),
         const SizedBox(height: AppSpace.xl),
         Expanded(
           child: SingleChildScrollView(
@@ -547,7 +546,7 @@ class _CardBack extends StatelessWidget {
                   size: 24,
                   weight: FontWeight.w600,
                   height: 1.45,
-                  color: AppColors.textOnDark,
+                  color: Appearance.of(context).text,
                 ),
               ),
             ),
@@ -558,24 +557,14 @@ class _CardBack extends StatelessWidget {
   }
 }
 
-class _GoldRule extends StatelessWidget {
-  const _GoldRule();
+class _CardRule extends StatelessWidget {
+  const _CardRule();
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return const SizedBox(
       width: 40,
-      height: 2,
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [
-            AppColors.accent.withValues(alpha: 0.05),
-            AppColors.accent.withValues(alpha: 0.7),
-            AppColors.accent.withValues(alpha: 0.05),
-          ],
-        ),
-        borderRadius: BorderRadius.circular(AppRadii.pill),
-      ),
+      child: RelicHairline(accent: AppRoles.chrome),
     );
   }
 }
@@ -592,7 +581,7 @@ class _VerseSkeleton extends StatelessWidget {
       child: Container(
         height: 12,
         decoration: BoxDecoration(
-          color: AppColors.textOnDark.withValues(alpha: 0.14),
+          color: Appearance.of(context).cardBorder,
           borderRadius: BorderRadius.circular(AppRadii.pill),
         ),
       ),
@@ -618,7 +607,7 @@ class _AnswerRow extends StatelessWidget {
           child: OutlineCta(
             label: context.l10n.memoryNotYet,
             leading: CinematicGlyph.refresh,
-            color: AppColors.error,
+            color: AppRoles.error,
             onTap: onLearning,
             uppercase: false,
             padding: const EdgeInsets.symmetric(vertical: AppSpace.lg),
@@ -629,7 +618,7 @@ class _AnswerRow extends StatelessWidget {
           child: OutlineCta(
             label: context.l10n.memoryKnown,
             leading: CinematicGlyph.check,
-            color: AppColors.teal,
+            color: AppRoles.success,
             onTap: onKnown,
             uppercase: false,
             padding: const EdgeInsets.symmetric(vertical: AppSpace.lg),
@@ -664,7 +653,7 @@ class _DonePane extends StatelessWidget {
         children: [
           const CinematicIcon(
             glyph: CinematicGlyph.spark,
-            size: 72,
+            size: AppMetrics.iconHero,
             glowing: false,
           ),
           const SizedBox(height: AppSpace.xl),

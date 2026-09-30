@@ -8,6 +8,7 @@ import '../utils/genesis_theme.dart';
 import '../utils/trail_progress.dart';
 import 'cinematic_icon.dart';
 import 'stage_plate.dart';
+import 'ui_primitives.dart';
 
 /// Sequência editorial de cenas — tipografia no lugar de ícones de app.
 class TrailMapPath extends StatelessWidget {
@@ -39,9 +40,8 @@ class TrailMapPath extends StatelessWidget {
   Widget build(BuildContext context) {
     if (missions.isEmpty) return const SizedBox.shrink();
 
-    final accent = modeAccent ?? theme?.pathActive ?? AppColors.accent;
-    final inactive =
-        theme?.pathInactive ?? Colors.white.withValues(alpha: 0.15);
+    final accent = modeAccent ?? theme?.pathActive ?? AppRoles.chrome;
+    final inactive = theme?.pathInactive ?? Appearance.of(context).cardBorder;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -259,10 +259,13 @@ class _MissionSceneCard extends StatelessWidget {
     final onSky = DifficultyVisuals.onSky(accent);
 
     final radius = BorderRadius.circular(StagePlate.radius);
+    // Palco segue o visual (manhã/tarde/noite), não o noturno fixo.
     final card = AnimatedContainer(
       duration: const Duration(milliseconds: 280),
       curve: Curves.easeOutCubic,
-      decoration: StagePlate.decoration(accent: accent, lit: _current),
+      decoration: StagePlate.decoration(accent: accent, lit: _current).copyWith(
+        color: Color.lerp(a.cardFill, accent, _current ? 0.1 : 0.04),
+      ),
       child: ClipRRect(
         borderRadius: radius,
         child: IntrinsicHeight(
@@ -277,9 +280,7 @@ class _MissionSceneCard extends StatelessWidget {
                 decoration: BoxDecoration(
                   border: Border(
                     right: BorderSide(
-                      color: Colors.white.withValues(
-                        alpha: unlocked ? 0.10 : 0.06,
-                      ),
+                      color: unlocked ? a.divider : a.insetBorder,
                     ),
                   ),
                   color: _current ? accent.withValues(alpha: 0.16) : null,
@@ -357,7 +358,7 @@ class _MissionSceneCard extends StatelessWidget {
                             child: CinematicIcon.mission(
                               mission.localizedTitle,
                               isBoss: mission.isBoss,
-                              size: _current ? 42 : 34,
+                              size: AppMetrics.leadingIcon,
                               accent: _current ? onSky : accent,
                               glowing: false,
                             ),
@@ -464,7 +465,7 @@ class _ContinueCue extends StatelessWidget {
         const SizedBox(width: 6),
         CinematicIcon(
           glyph: CinematicGlyph.forward,
-          size: 14,
+          size: AppMetrics.chipIcon,
           accent: color,
           framed: false,
         ),

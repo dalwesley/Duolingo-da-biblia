@@ -71,11 +71,11 @@ class RecognizeHeartButton extends StatelessWidget {
         content: Center(
           child: CinematicIcon(
             glyph: CinematicGlyph.heart,
-            size: 36,
+            size: AppMetrics.leadingIcon,
             framed: false,
             accent: status == RecognitionGiveStatus.failed
                 ? Appearance.of(context).textFaint
-                : AppColors.clay,
+                : AppRoles.success,
           ),
         ),
         actions: [
@@ -124,21 +124,21 @@ class RecognizeHeartButton extends StatelessWidget {
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: given
-                  ? AppColors.clay.withValues(alpha: 0.18)
-                  : Colors.white.withValues(alpha: 0.06),
+                  ? AppRoles.success.withValues(alpha: 0.18)
+                  : AppRoles.chrome.withValues(alpha: 0.06),
               border: Border.all(
                 color: given
-                    ? AppColors.clay.withValues(alpha: 0.7)
-                    : Colors.white.withValues(alpha: 0.2),
+                    ? AppRoles.success.withValues(alpha: 0.7)
+                    : AppRoles.chrome.withValues(alpha: 0.2),
               ),
             ),
             child: Center(
               child: CinematicIcon(
                 glyph: CinematicGlyph.heart,
-                size: 22,
+                size: AppMetrics.iconLg,
                 framed: false,
                 accent: given
-                    ? AppColors.clay
+                    ? AppRoles.success
                     : Appearance.of(context).textFaint,
               ),
             ),
@@ -276,15 +276,7 @@ class _RecognizeTargetButtonState extends State<RecognizeTargetButton> {
         ],
         if (_error != null) ...[
           const SizedBox(height: 8),
-          Text(
-            _error!,
-            textAlign: TextAlign.center,
-            style: AppTypography.body(
-              size: 13,
-              weight: FontWeight.w700,
-              color: AppColors.clay,
-            ),
-          ),
+          InlineNotice(message: _error!, standalone: false),
         ],
       ],
     );
@@ -369,14 +361,7 @@ class _MedalRecognizeSheetState extends State<_MedalRecognizeSheet> {
             ),
             if (_error != null) ...[
               const SizedBox(height: 10),
-              Text(
-                _error!,
-                style: AppTypography.body(
-                  size: 13,
-                  weight: FontWeight.w700,
-                  color: AppColors.clay,
-                ),
-              ),
+              InlineNotice(message: _error!, standalone: false),
             ],
             const SizedBox(height: 16),
             Flexible(
@@ -419,7 +404,7 @@ class _MedalRecognizeRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final accent = given ? AppColors.accent : tierColor(medal.tier);
+    final accent = given ? AppRoles.success : tierColor(medal.tier);
     final family = medal.group?.trim() ?? '';
     final tile = PilgrimMedalTile(
       id: medal.id,
@@ -491,6 +476,7 @@ class _MedalRecognizeRow extends StatelessWidget {
     );
   }
 }
+
 
 Future<RecognitionGiveStatus> giveRecognition(
   BuildContext context, {

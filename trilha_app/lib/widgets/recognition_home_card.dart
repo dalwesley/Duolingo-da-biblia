@@ -8,6 +8,7 @@ import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 import 'immersive_background.dart';
 import 'recognition_history_sheet.dart';
+import '../l10n/app_language.dart';
 import 'ui_primitives.dart';
 
 /// Nota na Home quando alguém reconheceu a caminhada ou uma medalha.
@@ -26,21 +27,21 @@ class RecognitionHomeCard extends StatelessWidget {
     final single = groups.length == 1;
 
     return GlassCard(
-      padding: const EdgeInsets.fromLTRB(16, 18, 16, 16),
+      padding: AppMetrics.cardPadding,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             single
-                ? '${groups.first.name} reconheceu sua jornada'
-                : 'Reconheceram sua jornada',
+                ? context.l10n.recognitionHomeTitleSingle(groups.first.name)
+                : context.l10n.recognitionHomeTitleMany,
             style: AppTypography.title(size: 18, height: 1.25, color: a.text),
           ),
           const SizedBox(height: 12),
           _HeartList(groups: groups, single: single, style: a),
           const SizedBox(height: 16),
           CopperCta(
-            label: 'Entendi',
+            label: context.l10n.commonGotIt,
             dense: true,
             leading: null,
             trailing: null,
@@ -54,7 +55,7 @@ class RecognitionHomeCard extends StatelessWidget {
           ),
           const SizedBox(height: AppSpace.sm),
           GhostCta(
-            label: 'Ver quem reconheceu',
+            label: context.l10n.recognitionHomeSeeWho,
             expanded: true,
             onTap: () => showRecognitionHistorySheet(context),
           ),
@@ -98,8 +99,8 @@ class _HeartList extends StatelessWidget {
                 padding: EdgeInsets.only(top: 2),
                 child: CinematicIcon(
                   glyph: CinematicGlyph.heart,
-                  size: 16,
-                  accent: AppColors.clay,
+                  size: AppMetrics.iconSm,
+                  accent: AppRoles.success,
                   framed: false,
                 ),
               ),

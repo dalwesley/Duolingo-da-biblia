@@ -33,6 +33,17 @@ class AppColors {
   static const teal = Color(0xFF3AAB98);
   static const streak = Color(0xFFFF3D6E);
 
+  /// Observação — verde-broto (semente). Punciona no céu azul e não
+  /// disputa com o amarelo de ação/recompensa.
+  static const sprout = Color(0xFFA6E36A);
+  static const inkOnSprout = Color(0xFF0F1A04);
+
+  /// Versões escuras dos modos — só sobre placa clara (marfim da cena),
+  /// onde o tom do céu some (≥4.5:1 no marfim).
+  static const sproutDeep = Color(0xFF3F7A14);
+  static const coralDeep = Color(0xFFB4450F);
+  static const orchidDeep = Color(0xFF9A35B0);
+
   /// Compreensão — coral, complementar ao céu teal/azul.
   static const coral = Color(0xFFFF9468);
   static const coralBright = Color(0xFFE0B098);
@@ -64,6 +75,7 @@ class AppColors {
   static bool isSolidChrome(Color color) {
     final v = color.toARGB32();
     return v == accent.toARGB32() ||
+        v == sprout.toARGB32() ||
         v == accentBright.toARGB32() ||
         v == coral.toARGB32() ||
         v == coralBright.toARGB32() ||
@@ -134,14 +146,48 @@ class AppColors {
   static const ember = Color(0xFFFF7A45);
   static const emberDeep = Color(0xFFB84820);
   static const sky = Color(0xFF6AB0D8);
+}
 
-  /// Chrome da aba (nav + leading) — amarelo só em Hoje / CTA / conquista.
-  /// Trilhas (areia) ≠ Bíblia (cedar): frio vs quente, sem colisão.
-  static Color tabChrome(int index) => switch (index) {
-    0 => accent, // Hoje
-    1 => sand, // Trilhas — caminho / bronze
-    2 => cedar, // Bíblia — palavra / teal
-    3 => clay, // Juntos
-    _ => slate, // Ajustes
-  };
+/// Papéis de cor. Telas pedem o **papel**, nunca o tom (`AppColors.clay`).
+///
+/// Um papel, uma cor:
+/// - [action] — botão principal e o que se toca para avançar;
+/// - [reward] — passos, medalha, baú, meta cumprida;
+/// - [chrome] — nav, TopBar, ícone de aba (neutro, igual em todas);
+/// - [selected] — escolha feita e ainda não confirmada (contorno claro);
+/// - [success] — acerto, concluído, "estudou hoje" ([presence]);
+/// - [streak] — sequência (chama), só ela;
+/// - [risk] / [error] — algo em perigo ou que falhou;
+/// - modos: [observation] · [comprehension] · [interpretation];
+/// - áreas: [areaOldTestament] · [areaNewTestament] · [areaChristianLife] ·
+///   [areaTheology] — só dentro de Trilhas.
+class AppRoles {
+  AppRoles._();
+
+  static const action = AppColors.accent;
+  static const onAction = AppColors.inkOnAccent;
+  static const reward = AppColors.accent;
+  static const onReward = AppColors.inkOnAccent;
+
+  static const chrome = Color(0xFFE6ECF5);
+  static const selected = Color(0xFFF2F5FA);
+
+  /// Seleção sobre placa clara (respostas marfim da cena): contorno escuro.
+  static const selectedOnLight = Color(0xCC070B14);
+  static const selectedOutlineWidth = 2.0;
+
+  static const success = AppColors.teal;
+  static const presence = success;
+  static const streak = AppColors.streak;
+  static const risk = AppColors.error;
+  static const error = AppColors.error;
+
+  static const observation = AppColors.sprout;
+  static const comprehension = AppColors.coral;
+  static const interpretation = AppColors.orchid;
+
+  static const areaOldTestament = AppColors.sand;
+  static const areaNewTestament = AppColors.clay;
+  static const areaChristianLife = AppColors.cedar;
+  static const areaTheology = AppColors.slate;
 }

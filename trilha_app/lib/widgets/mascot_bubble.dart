@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
 import 'ui_primitives.dart';
 import 'trilha_mascot.dart';
 
@@ -17,10 +18,14 @@ class MascotBubble extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     return Row(
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
-        TrilhaMascot(size: glowing ? 56 : 48, glowing: glowing),
+        TrilhaMascot(
+          size: glowing ? AppMetrics.iconHero : AppMetrics.leadingIcon,
+          glowing: glowing,
+        ),
         const SizedBox(width: 12),
         Expanded(
           // Balão de fala: canto do mascote reto (a “cauda”), demais no
@@ -38,7 +43,7 @@ class MascotBubble extends StatelessWidget {
               ),
               border: Border.all(
                 color: dark
-                    ? AppMetrics.accentBorder(alpha: glowing ? 0.85 : 0.65)
+                    ? a.cardBorder
                     : Colors.black.withValues(alpha: 0.08),
                 width: AppMetrics.cardBorderWidth,
               ),
@@ -50,9 +55,7 @@ class MascotBubble extends StatelessWidget {
                 size: 14,
                 weight: FontWeight.w700,
                 height: 1.35,
-                color: dark
-                    ? AppColors.textOnDark.withValues(alpha: 0.92)
-                    : AppColors.text,
+                color: dark ? a.text : AppColors.text,
               ),
             ),
           ),

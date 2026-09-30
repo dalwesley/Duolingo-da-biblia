@@ -4,7 +4,6 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 
 import '../models/trail_catalog.dart';
-import '../theme/app_theme.dart';
 
 /// Mundo pintado de cada reino — céu, horizonte, astro e poeira viva.
 class RealmWorldAtmosphere extends StatefulWidget {
@@ -420,52 +419,4 @@ class _Sky {
     required this.star,
     required this.sun,
   });
-}
-
-/// Filete dourado de cartaz — linha → título → linha.
-class FilmEyebrow extends StatelessWidget {
-  final String text;
-  final Color accent;
-
-  const FilmEyebrow({super.key, required this.text, required this.accent});
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-          child: Container(
-            height: 1,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [Colors.transparent, accent.withValues(alpha: 0.7)],
-              ),
-            ),
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 12),
-          child: Text(
-            // Caixa alta aqui, como no SectionLabel: a string fica normal.
-            text.toUpperCase(),
-            style: AppTypography.label(
-              size: 11,
-              letterSpacing: 2.2,
-              color: accent,
-            ),
-          ),
-        ),
-        Expanded(
-          child: Container(
-            height: 1,
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [accent.withValues(alpha: 0.7), Colors.transparent],
-              ),
-            ),
-          ),
-        ),
-      ],
-    );
-  }
 }

@@ -119,7 +119,7 @@ class _TrailSuggestionSheetState extends State<_TrailSuggestionSheet> {
                 const CinematicIcon(
                   glyph: CinematicGlyph.spark,
                   size: AppMetrics.leadingIcon,
-                  accent: AppColors.accent,
+                  accent: AppRoles.chrome,
                   glowing: false,
                 ),
                 const SizedBox(width: 12),
@@ -146,7 +146,7 @@ class _TrailSuggestionSheetState extends State<_TrailSuggestionSheet> {
                   onPressed: () => Navigator.of(context).pop(false),
                   icon: CinematicIcon(
                     glyph: CinematicGlyph.close,
-                    size: 22,
+                    size: AppMetrics.iconMd,
                     accent: a.textFaint,
                     framed: false,
                   ),
@@ -217,16 +217,14 @@ class _TrailSuggestionSheetState extends State<_TrailSuggestionSheet> {
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(AppRadii.sm),
-                  borderSide: BorderSide(
-                    color: AppColors.accent.withValues(alpha: 0.7),
-                  ),
+                  borderSide: const BorderSide(color: AppRoles.selected),
                 ),
               ),
             ),
             if (_error != null) ...[
               Text(
                 _error!,
-                style: AppTypography.body(size: 13, color: AppColors.error),
+                style: AppTypography.body(size: 13, color: AppRoles.error),
               ),
               const SizedBox(height: 8),
             ] else if (_ctaHint.isNotEmpty) ...[

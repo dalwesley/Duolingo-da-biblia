@@ -67,8 +67,8 @@ class DesafioEntry extends StatelessWidget {
                 children: [
                   const CinematicIcon(
                     glyph: CinematicGlyph.flag,
-                    size: 18,
-                    accent: AppColors.accent,
+                    size: AppMetrics.iconMd,
+                    accent: AppRoles.chrome,
                     framed: false,
                   ),
                   const SizedBox(height: 6),
@@ -124,9 +124,8 @@ class _Person extends StatelessWidget {
           name: name,
           photoUrl: photo,
           seed: seed,
-          radius: 26,
+          radius: AppMetrics.avatarLg,
           style: style,
-          borderColor: AppColors.accent.withValues(alpha: 0.7),
         ),
         const SizedBox(height: 6),
         Text(
@@ -148,15 +147,18 @@ class _Person extends StatelessWidget {
 /// O que está valendo, o placar e cada desafio que já fechou.
 class CornerBoard extends StatelessWidget {
   final ValueChanged<String> onOpenMission;
+  /// Mantido na API; o CTA de abrir a caravana mora no pai.
   final VoidCallback onOpenCaravana;
 
-  /// Quando true, o empty fica no stage pai (abas + descrição + CTA).
+  /// Ignorado: o vazio sempre aparece como [EmptyState].
+  @Deprecated('Ignored — the empty state always renders.')
   final bool hideEmptyChrome;
 
   const CornerBoard({
     super.key,
     required this.onOpenMission,
     required this.onOpenCaravana,
+    @Deprecated('Ignored — the empty state always renders.')
     this.hideEmptyChrome = false,
   });
 
@@ -167,7 +169,6 @@ class CornerBoard extends StatelessWidget {
     final uid = backend.uid ?? '';
 
     if (!backend.isActive) {
-      if (hideEmptyChrome) return const SizedBox.shrink();
       return EmptyState(
         glyph: CinematicGlyph.flag,
         title: CornerCopy.boardEmptyTitle,
@@ -183,15 +184,10 @@ class CornerBoard extends StatelessWidget {
 
     final board = CornerScoreboard.of(corners.mine, uid);
     if (board.isEmpty) {
-      if (hideEmptyChrome) return const SizedBox.shrink();
       return EmptyState(
         glyph: CinematicGlyph.flag,
         title: CornerCopy.boardEmptyTitle,
         body: CornerCopy.boardEmptyBody,
-        action: TextCta(
-          label: CornerCopy.boardOpenCaravan,
-          onTap: onOpenCaravana,
-        ),
       );
     }
 
@@ -302,7 +298,7 @@ class _ClosedArchiveState extends State<_ClosedArchive> {
               _FilterCell(
                 value: _wonCount,
                 label: CornerCopy.tallyWon,
-                tone: AppColors.teal,
+                tone: AppRoles.success,
                 selected: _filter == _ArchiveFilter.won,
                 onTap: _wonCount == 0 ? null : () => _tap(_ArchiveFilter.won),
               ),
@@ -310,7 +306,7 @@ class _ClosedArchiveState extends State<_ClosedArchive> {
               _FilterCell(
                 value: _lostCount,
                 label: CornerCopy.tallyLost,
-                tone: AppColors.clay,
+                tone: AppRoles.risk,
                 selected: _filter == _ArchiveFilter.lost,
                 onTap: _lostCount == 0 ? null : () => _tap(_ArchiveFilter.lost),
               ),
@@ -323,7 +319,7 @@ class _ClosedArchiveState extends State<_ClosedArchive> {
             Padding(
               padding: const EdgeInsets.symmetric(vertical: AppSpace.md),
               child: Text(
-                'Nenhum ainda',
+                context.l10n.cornerBoardFilterEmpty,
                 textAlign: TextAlign.center,
                 style: AppTypography.body(size: 13, color: a.textSecondary),
               ),
@@ -466,9 +462,9 @@ class _ClosedRow extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final tone = switch (result.mark) {
-      CornerResultMark.won => AppColors.accent,
-      CornerResultMark.together => AppColors.teal,
-      CornerResultMark.lost => AppColors.clay,
+      CornerResultMark.won => AppRoles.success,
+      CornerResultMark.together => AppRoles.success,
+      CornerResultMark.lost => AppRoles.risk,
       CornerResultMark.left => a.textFaint,
     };
     final glyph = switch (result.mark) {

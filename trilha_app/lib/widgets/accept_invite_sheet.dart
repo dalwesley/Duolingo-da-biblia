@@ -7,6 +7,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
+import 'invite_qr_sheet.dart' show inviteCodeStyle;
 import 'ui_primitives.dart';
 
 /// Sheet para aceitar convite: colar código (clipboard), digitar ou escanear QR.
@@ -78,7 +79,6 @@ class _AcceptInviteSheetState extends State<_AcceptInviteSheet> {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     return AppSheetPanel(
-      tint: AppColors.accent,
       padding: const EdgeInsets.fromLTRB(
         AppSpace.xxl,
         AppSpace.md,
@@ -101,44 +101,38 @@ class _AcceptInviteSheetState extends State<_AcceptInviteSheet> {
             textCapitalization: TextCapitalization.characters,
             textAlign: TextAlign.center,
             maxLength: 8,
-            style: AppTypography.title(
-              color: a.text,
-              size: 24,
-            ).copyWith(letterSpacing: 4),
+            style: inviteCodeStyle(a),
             decoration: InputDecoration(
               counterText: '',
               hintText: context.l10n.inviteCodeHint,
-              hintStyle: AppTypography.title(
-                color: a.textFaint,
-                size: 24,
-                weight: FontWeight.w700,
-              ).copyWith(letterSpacing: 4),
+              hintStyle: inviteCodeStyle(
+                a,
+              ).copyWith(color: a.textFaint, fontWeight: FontWeight.w700),
               filled: true,
               fillColor: a.insetFill,
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(AppRadii.md),
-                borderSide: BorderSide(
-                  color: AppColors.accent.withValues(alpha: 0.35),
-                ),
+                borderSide: BorderSide(color: a.insetBorder),
               ),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(AppRadii.md),
-                borderSide: BorderSide(
-                  color: AppColors.accent.withValues(alpha: 0.35),
-                ),
+                borderSide: BorderSide(color: a.insetBorder),
               ),
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(AppRadii.md),
-                borderSide: const BorderSide(color: AppColors.accent),
+                borderSide: BorderSide(
+                  color: AppRoles.selected.withValues(alpha: 0.4),
+                ),
               ),
             ),
             onSubmitted: _submit,
           ),
           const SizedBox(height: AppSpace.md),
-          OutlineCta(
+          GhostCta(
             label: context.l10n.inviteScanQr,
             onTap: _scanQr,
             leading: CinematicGlyph.qr,
+            expanded: true,
           ),
           const SizedBox(height: AppSpace.md),
           CopperCta(
@@ -188,14 +182,15 @@ class _QrScanPageState extends State<_QrScanPage> {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: AppColors.night,
-        foregroundColor: Colors.white,
+        foregroundColor: a.text,
         title: Text(
           context.l10n.inviteScanQr,
-          style: AppTypography.title(size: 18, color: Colors.white),
+          style: AppTypography.title(size: 18, color: a.text),
         ),
       ),
       body: Stack(
@@ -208,7 +203,7 @@ class _QrScanPageState extends State<_QrScanPage> {
               height: 240,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(AppRadii.lg),
-                border: Border.all(color: AppColors.accent, width: 2),
+                border: Border.all(color: AppRoles.chrome, width: 2),
               ),
             ),
           ),
@@ -220,7 +215,7 @@ class _QrScanPageState extends State<_QrScanPage> {
               context.l10n.inviteScanHint,
               textAlign: TextAlign.center,
               style: AppTypography.body(
-                color: Colors.white.withValues(alpha: 0.85),
+                color: a.textSecondary,
                 weight: FontWeight.w600,
               ),
             ),

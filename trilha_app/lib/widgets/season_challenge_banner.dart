@@ -158,7 +158,7 @@ class _SeasonQuietCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final accent = done ? AppColors.teal : AppColors.orchid;
+    final accent = done ? AppRoles.success : AppRoles.chrome;
     return GlassCard(
       elevated: true,
       padding: AppMetrics.cardPadding,

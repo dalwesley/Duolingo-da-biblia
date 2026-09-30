@@ -21,6 +21,7 @@ import '../widgets/coming_soon_trails_card.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/offline_curriculum_dialog.dart';
 import '../widgets/realm_world_atmosphere.dart';
+import '../widgets/relic_panel.dart';
 import '../widgets/stway_brand.dart';
 import '../widgets/trail_suggestion_sheet.dart';
 import '../widgets/ui_primitives.dart';
@@ -288,7 +289,6 @@ class _TrilhasScreenState extends State<TrilhasScreen>
     }
 
     if (_trails!.isEmpty) {
-      final a = Appearance.of(context);
       return ListView(
         padding: EdgeInsets.fromLTRB(
           AppSpace.screen,
@@ -297,31 +297,16 @@ class _TrilhasScreenState extends State<TrilhasScreen>
           scrollPaddingBelowNav(context),
         ),
         children: [
-          GlassCard(
-            padding: const EdgeInsets.all(AppSpace.xxl),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Text(
-                  context.l10n.trailsEmptyTitle,
-                  textAlign: TextAlign.center,
-                  style: AppTypography.title(size: 18, color: a.text),
-                ),
-                const SizedBox(height: AppSpace.md),
-                Text(
-                  context.l10n.trailsEmptyBody,
-                  textAlign: TextAlign.center,
-                  style: AppTypography.body(size: 14, color: a.textSecondary),
-                ),
-                const SizedBox(height: AppSpace.xxl),
-                CopperCta(
-                  label: _retryingCatalog
-                      ? context.l10n.trailsDownloading
-                      : context.l10n.commonTryAgain,
-                  onTap: _retryingCatalog ? null : _maybeShowOfflineDialog,
-                  showArrow: false,
-                ),
-              ],
+          EmptyState(
+            glyph: CinematicGlyph.path,
+            title: context.l10n.trailsEmptyTitle,
+            body: context.l10n.trailsEmptyBody,
+            action: CopperCta(
+              label: _retryingCatalog
+                  ? context.l10n.trailsDownloading
+                  : context.l10n.commonTryAgain,
+              onTap: _retryingCatalog ? null : _maybeShowOfflineDialog,
+              showArrow: false,
             ),
           ),
         ],
@@ -407,7 +392,10 @@ class _TrilhasScreenState extends State<TrilhasScreen>
           1,
           Padding(
             padding: const EdgeInsets.only(top: 4, bottom: AppSpace.lg),
-            child: _FilmChapterMark(label: context.l10n.trailsAreasHeading),
+            child: RelicChapter(
+              title: context.l10n.trailsAreasHeading,
+              accent: AppRoles.chrome,
+            ),
           ),
         ),
         for (var i = 0; i < realms.length; i++)
@@ -489,37 +477,6 @@ class _RealmInfo {
       trailCount <= 0 ? 0 : (completedCount / trailCount).clamp(0.0, 1.0);
 }
 
-class _FilmChapterMark extends StatelessWidget {
-  final String label;
-
-  const _FilmChapterMark({required this.label});
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Row(
-      children: [
-        Expanded(
-          child: Container(
-            height: 1,
-            color: a.cardBorder.withValues(alpha: 0.7),
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 14),
-          child: SectionLabel(label, color: a.textSecondary),
-        ),
-        Expanded(
-          child: Container(
-            height: 1,
-            color: a.cardBorder.withValues(alpha: 0.7),
-          ),
-        ),
-      ],
-    );
-  }
-}
-
 /// Próxima cena da trilha ativa — faixa compacta; o palco grande fica na Home.
 class _NowPlayingStrip extends StatefulWidget {
   final Trail trail;
@@ -564,7 +521,7 @@ class _NowPlayingStripState extends State<_NowPlayingStrip>
     final label = widget.atRisk
         ? context.l10n.trailsStreakAtRisk(widget.countdown)
         : context.l10n.trailsInProgress;
-    final labelColor = widget.atRisk ? AppColors.ember : accent;
+    final labelColor = widget.atRisk ? AppRoles.risk : accent;
     final p = widget.progress;
 
     return Semantics(
@@ -582,27 +539,15 @@ class _NowPlayingStripState extends State<_NowPlayingStrip>
           scale: _pressed ? 0.985 : 1,
           duration: const Duration(milliseconds: 140),
           curve: Curves.easeOutCubic,
-          child: Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
-              gradient: LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [
-                  Color.lerp(a.cardFill, accent, 0.22)!,
-                  a.cardFill,
-                  Color.lerp(a.cardFill, Colors.black, 0.25)!,
-                ],
-                stops: const [0.0, 0.55, 1.0],
-              ),
-              border: Border.all(
-                color: accent.withValues(alpha: 0.5),
-                width: AppMetrics.cardBorderWidth,
-              ),
-              boxShadow: [...AppMetrics.cardShadow(elevated: true)],
-            ),
+          child: GlassCard(
+            radius: AppMetrics.heroRadius,
+            elevated: true,
+            tint: accent,
+            padding: EdgeInsets.zero,
             child: ClipRRect(
-              borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
+              borderRadius: BorderRadius.circular(
+                AppMetrics.heroRadius - AppMetrics.cardBorderWidth,
+              ),
               child: Stack(
                 children: [
                   // Halo do glifo — luz da trilha vazando pelo canto.
@@ -626,12 +571,12 @@ class _NowPlayingStripState extends State<_NowPlayingStrip>
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(16, 16, 16, 16),
+                    padding: AppMetrics.cardPadding,
                     child: Row(
                       children: [
                         CinematicIcon(
                           glyph: visuals.glyph,
-                          size: 52,
+                          size: AppMetrics.iconHero,
                           accent: accent,
                           glowing: true,
                         ),
@@ -689,10 +634,10 @@ class _NowPlayingStripState extends State<_NowPlayingStrip>
                                 height: 50,
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
-                                  color: AppColors.accent,
+                                  color: AppRoles.action,
                                   boxShadow: [
                                     BoxShadow(
-                                      color: AppColors.accent.withValues(
+                                      color: AppRoles.action.withValues(
                                         alpha: 0.18 + 0.28 * t,
                                       ),
                                       blurRadius: 10 + 12 * t,
@@ -706,8 +651,8 @@ class _NowPlayingStripState extends State<_NowPlayingStrip>
                             child: const Center(
                               child: CinematicIcon(
                                 glyph: CinematicGlyph.forward,
-                                size: 22,
-                                accent: AppColors.inkOnAccent,
+                                size: AppMetrics.iconMd,
+                                accent: AppRoles.onAction,
                                 framed: false,
                               ),
                             ),
@@ -967,20 +912,18 @@ class _RealmPosterState extends State<_RealmPoster> {
           duration: const Duration(milliseconds: 420),
           curve: Curves.easeOutCubic,
           height: height,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
-            boxShadow: [
-              ...AppMetrics.cardShadow(elevated: true),
-              if (featured)
-                BoxShadow(
-                  color: visuals.accent.withValues(alpha: 0.22),
-                  blurRadius: 30,
-                  offset: const Offset(0, 12),
-                ),
-            ],
-          ),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
+          // Cartaz = palco (GlassCard `glow`): borda e brilho na cor da área,
+          // mais aceso no reino em que a pessoa está. O céu do reino fica
+          // dentro do card — cenário só dentro de card herói.
+          child: GlassCard(
+            radius: AppMetrics.heroRadius,
+            padding: EdgeInsets.zero,
+            tint: visuals.accent,
+            glow: locked
+                ? 0
+                : featured
+                ? 1
+                : 0.3,
             child: Stack(
               fit: StackFit.expand,
               children: [
@@ -1019,7 +962,7 @@ class _RealmPosterState extends State<_RealmPoster> {
                     padding: const EdgeInsets.only(top: 28),
                     child: CinematicIcon(
                       glyph: locked ? CinematicGlyph.lock : visuals.glyph,
-                      size: featured ? 72 : 58,
+                      size: AppMetrics.iconHero,
                       accent: visuals.accent,
                       glowing: featured && widget.animate && !locked,
                     ),
@@ -1032,9 +975,10 @@ class _RealmPosterState extends State<_RealmPoster> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      FilmEyebrow(
-                        text: visuals.eyebrow,
-                        accent: visuals.accent,
+                      SectionLabel(
+                        visuals.eyebrow,
+                        color: visuals.accent,
+                        textAlign: TextAlign.center,
                       ),
                       const SizedBox(height: 10),
                       Text(
@@ -1104,34 +1048,13 @@ class _RealmPosterState extends State<_RealmPoster> {
                           const SizedBox(width: 4),
                           CinematicIcon(
                             glyph: CinematicGlyph.forward,
-                            size: 18,
+                            size: AppMetrics.iconSm,
                             accent: visuals.accent,
                             framed: false,
                           ),
                         ],
                       ),
                     ],
-                  ),
-                ),
-                Positioned.fill(
-                  child: IgnorePointer(
-                    child: DecoratedBox(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(
-                          AppMetrics.heroRadius,
-                        ),
-                        border: Border.all(
-                          color: visuals.accent.withValues(
-                            alpha: featured
-                                ? 0.62
-                                : locked
-                                ? 0.22
-                                : 0.4,
-                          ),
-                          width: featured ? 1.7 : 1.3,
-                        ),
-                      ),
-                    ),
                   ),
                 ),
               ],
@@ -1322,16 +1245,14 @@ class _StampDisc extends StatelessWidget {
           child: DecoratedBox(
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: done
-                  ? accent.withValues(alpha: 0.9)
-                  : Colors.black.withValues(alpha: 0.35),
+              color: done ? accent.withValues(alpha: 0.9) : a.insetFill,
             ),
             child: Center(
               child: CinematicIcon(
                 glyph: stamp.open ? stamp.visuals.glyph : CinematicGlyph.lock,
-                size: 15,
+                size: AppMetrics.chipIcon,
                 accent: done
-                    ? AppColors.inkOnAccent
+                    ? AppColors.night
                     : stamp.open
                     ? accent
                     : a.textFaint,

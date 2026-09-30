@@ -7,6 +7,7 @@ import '../utils/appearance.dart';
 import '../utils/difficulty_visuals.dart';
 import '../utils/trail_progress.dart';
 import 'cinematic_icon.dart';
+import 'ui_primitives.dart';
 
 /// Emblema de um modo cognitivo — semente, caminho ou profundezas.
 ///
@@ -318,38 +319,11 @@ class ModeStatusChip extends StatelessWidget {
 
     return Semantics(
       label: label,
-      // Mesma pele do SoftBadge (raio sm, 10×6, body 12 w800).
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-        decoration: BoxDecoration(
-          color: color.withValues(alpha: 0.16),
-          borderRadius: BorderRadius.circular(AppRadii.sm),
-          border: Border.all(
-            color: onSky.withValues(alpha: cleared ? 0.55 : 0.70),
-            width: 1.5,
-          ),
-        ),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            CinematicIcon(
-              glyph: DifficultyVisuals.glyphFor(difficulty),
-              size: compact ? 13 : 14,
-              accent: onSky,
-              framed: false,
-            ),
-            const SizedBox(width: 4),
-            Text(
-              label,
-              style: AppTypography.body(
-                size: 12,
-                weight: FontWeight.w800,
-                color: onSky,
-                height: 1,
-              ),
-            ),
-          ],
-        ),
+      child: SoftBadge(
+        text: label,
+        glyph: DifficultyVisuals.glyphFor(difficulty),
+        accent: onSky,
+        textColor: onSky,
       ),
     );
   }

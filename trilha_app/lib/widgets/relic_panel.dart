@@ -6,7 +6,9 @@ import 'cinematic_icon.dart';
 import 'immersive_background.dart';
 import 'ui_primitives.dart';
 
-/// Painel de relíquia — wash dourado, filete no topo, sem poço de HUD.
+/// Card de perfil / relíquia — um [GlassCard] com wash e filete sutis na
+/// cor de [accent]. O padrão é chrome (card comum do perfil); medalha, baú e
+/// selo pedem [AppRoles.reward] explicitamente.
 class RelicPanel extends StatelessWidget {
   final Widget child;
   final Color accent;
@@ -17,8 +19,8 @@ class RelicPanel extends StatelessWidget {
   const RelicPanel({
     super.key,
     required this.child,
-    this.accent = AppColors.accent,
-    this.padding = const EdgeInsets.fromLTRB(16, 16, 16, 18),
+    this.accent = AppRoles.chrome,
+    this.padding = AppMetrics.cardPadding,
     this.onTap,
     this.elevated = false,
   });
@@ -44,7 +46,7 @@ class RelicPanel extends StatelessWidget {
                   gradient: LinearGradient(
                     colors: [
                       Colors.transparent,
-                      accent.withValues(alpha: 0.55),
+                      accent.withValues(alpha: 0.4),
                       Colors.transparent,
                     ],
                   ),
@@ -59,11 +61,11 @@ class RelicPanel extends StatelessWidget {
   }
 }
 
-/// Wash radial — o mesmo fôlego dos selos e do cofre.
+/// Wash radial sutil — o mesmo fôlego dos selos e do cofre.
 class RelicAtmosphere extends StatelessWidget {
   final Color accent;
 
-  const RelicAtmosphere({super.key, this.accent = AppColors.accent});
+  const RelicAtmosphere({super.key, this.accent = AppRoles.chrome});
 
   @override
   Widget build(BuildContext context) {
@@ -74,8 +76,8 @@ class RelicAtmosphere extends StatelessWidget {
             center: const Alignment(0, -0.92),
             radius: 1.18,
             colors: [
-              accent.withValues(alpha: 0.16),
-              accent.withValues(alpha: 0.045),
+              accent.withValues(alpha: 0.1),
+              accent.withValues(alpha: 0.03),
               Colors.transparent,
             ],
             stops: const [0.0, 0.42, 1.0],
@@ -103,7 +105,7 @@ class RelicChapter extends StatelessWidget {
     super.key,
     required this.title,
     this.whisper,
-    this.accent = AppColors.accent,
+    this.accent = AppRoles.chrome,
     this.trailing,
     this.displayTitle = true,
     this.action,
@@ -135,7 +137,7 @@ class RelicChapter extends StatelessWidget {
                     : AppTypography.label(
                         size: 11,
                         letterSpacing: 1.4,
-                        color: a.textMuted(0.78),
+                        color: a.sectionLabel,
                       ),
               ),
             ),
@@ -159,7 +161,7 @@ class RelicChapter extends StatelessWidget {
             padding: const EdgeInsets.only(left: 13),
             child: Text(
               whisper!,
-              style: AppTypography.body(size: 12, color: a.textMuted(0.55)),
+              style: AppTypography.body(size: 12, color: a.textSecondary),
             ),
           ),
         ],
@@ -171,7 +173,7 @@ class RelicChapter extends StatelessWidget {
 class RelicHairline extends StatelessWidget {
   final Color accent;
 
-  const RelicHairline({super.key, this.accent = AppColors.accent});
+  const RelicHairline({super.key, this.accent = AppRoles.chrome});
 
   @override
   Widget build(BuildContext context) {
@@ -190,7 +192,8 @@ class RelicHairline extends StatelessWidget {
   }
 }
 
-/// Filamento de ouro — não a barra chunky de HUD.
+/// Filamento decorativo — não a barra de HUD. Para dado que outra tela
+/// mostra em barra (progresso de trilha), use [AppProgressBar].
 class RelicProgress extends StatelessWidget {
   final double value;
   final Color accent;
@@ -198,11 +201,12 @@ class RelicProgress extends StatelessWidget {
   const RelicProgress({
     super.key,
     required this.value,
-    this.accent = AppColors.accent,
+    this.accent = AppRoles.chrome,
   });
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     final t = value.clamp(0.0, 1.0);
     return SizedBox(
       height: 3,
@@ -212,7 +216,7 @@ class RelicProgress extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(AppRadii.hair),
-              color: Colors.white.withValues(alpha: 0.08),
+              color: a.progressTrack,
             ),
           ),
           if (t > 0)
@@ -260,7 +264,7 @@ class RelicDisc extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final ink = lit ? accent : a.textMuted(0.45);
+    final ink = lit ? accent : a.textFaint;
     return Container(
       width: size,
       height: size,

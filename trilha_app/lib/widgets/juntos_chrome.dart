@@ -12,12 +12,15 @@ import 'ui_primitives.dart';
 /// duas pessoas e o halo de quem já caminhou. Cards e selos vêm do design
 /// system ([GlassCard] com `glow`, [SectionLabel], [SoftBadge]).
 
-/// Abas principais (Caravana · Companhia · Grupos) com pílula ouro que
-/// desliza até a aba escolhida. [index] negativo deixa todas apagadas.
+/// O controle segmentado do app — pílula clara que desliza até a escolha.
+/// Use [AppSegmentedTabs] em qualquer tela (Juntos, Bíblia, Ajustes…);
+/// [glyph] é opcional. [index] negativo deixa todas apagadas.
+typedef AppSegmentedTabs = JuntosSegmentTabs;
+
 class JuntosSegmentTabs extends StatelessWidget {
   final int index;
   final ValueChanged<int> onChanged;
-  final List<({String label, CinematicGlyph glyph, bool alert})> items;
+  final List<({String label, CinematicGlyph? glyph, bool alert})> items;
 
   const JuntosSegmentTabs({
     super.key,
@@ -35,7 +38,7 @@ class JuntosSegmentTabs extends StatelessWidget {
       height: height,
       padding: const EdgeInsets.all(inset),
       decoration: BoxDecoration(
-        color: AppColors.night.withValues(alpha: 0.72),
+        color: a.insetFill,
         borderRadius: BorderRadius.circular(AppRadii.lg),
         border: Border.all(color: a.insetBorder),
       ),
@@ -56,13 +59,13 @@ class JuntosSegmentTabs extends StatelessWidget {
                   width: slot,
                   child: Container(
                     decoration: BoxDecoration(
-                      color: AppColors.accent,
+                      color: AppRoles.selected,
                       borderRadius: BorderRadius.circular(AppRadii.md),
                       boxShadow: [
                         BoxShadow(
-                          color: AppColors.accent.withValues(alpha: 0.35),
-                          blurRadius: 14,
-                          offset: const Offset(0, 4),
+                          color: Colors.black.withValues(alpha: 0.28),
+                          blurRadius: 10,
+                          offset: const Offset(0, 3),
                         ),
                       ],
                     ),
@@ -85,10 +88,10 @@ class JuntosSegmentTabs extends StatelessWidget {
     AppLocalizations l10n,
     AppearanceStyle a,
     int i,
-    ({String label, CinematicGlyph glyph, bool alert}) item,
+    ({String label, CinematicGlyph? glyph, bool alert}) item,
   ) {
     final selected = i == index;
-    final ink = selected ? AppColors.inkOnAccent : a.textSecondary;
+    final ink = selected ? AppColors.night : a.textSecondary;
     return Semantics(
       button: true,
       selected: selected,
@@ -105,24 +108,26 @@ class JuntosSegmentTabs extends StatelessWidget {
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Stack(
-                    clipBehavior: Clip.none,
-                    children: [
-                      CinematicIcon(
-                        glyph: item.glyph,
-                        size: 17,
-                        accent: ink,
-                        framed: false,
-                      ),
-                      if (item.alert && !selected)
-                        const Positioned(
-                          right: -3,
-                          top: -2,
-                          child: AlertDot(size: 8, ring: AppColors.night),
+                  if (item.glyph != null) ...[
+                    Stack(
+                      clipBehavior: Clip.none,
+                      children: [
+                        CinematicIcon(
+                          glyph: item.glyph!,
+                          size: AppMetrics.iconSm,
+                          accent: ink,
+                          framed: false,
                         ),
-                    ],
-                  ),
-                  const SizedBox(width: 6),
+                        if (item.alert && !selected)
+                          const Positioned(
+                            right: -3,
+                            top: -2,
+                            child: AlertDot(size: 8, ring: AppColors.night),
+                          ),
+                      ],
+                    ),
+                    const SizedBox(width: 6),
+                  ],
                   AnimatedDefaultTextStyle(
                     duration: const Duration(milliseconds: 200),
                     style: AppTypography.label(
@@ -143,90 +148,15 @@ class JuntosSegmentTabs extends StatelessWidget {
   }
 }
 
-/// Alternância discreta (ex.: Geral · Semana) — sublinhado ouro que desliza.
-/// Fica abaixo das abas principais sem competir com elas.
-class JuntosUnderlineToggle extends StatelessWidget {
-  final List<String> labels;
-  final int index;
-  final ValueChanged<int> onChanged;
-
-  const JuntosUnderlineToggle({
-    super.key,
-    required this.labels,
-    required this.index,
-    required this.onChanged,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    const itemWidth = 92.0;
-    final a = Appearance.of(context);
-    return SizedBox(
-      width: itemWidth * labels.length,
-      height: 40,
-      child: Stack(
-        children: [
-          Positioned(left: 0, right: 0, bottom: 0, child: const ListDivider()),
-          AnimatedPositioned(
-            duration: const Duration(milliseconds: 260),
-            curve: Curves.easeOutCubic,
-            left: itemWidth * index + 18,
-            width: itemWidth - 36,
-            bottom: 0,
-            child: Container(
-              height: 3,
-              decoration: BoxDecoration(
-                color: AppColors.accent,
-                borderRadius: BorderRadius.circular(AppRadii.hair),
-                boxShadow: [
-                  BoxShadow(
-                    color: AppColors.accent.withValues(alpha: 0.5),
-                    blurRadius: 8,
-                  ),
-                ],
-              ),
-            ),
-          ),
-          Row(
-            children: [
-              for (var i = 0; i < labels.length; i++)
-                SizedBox(
-                  width: itemWidth,
-                  child: Semantics(
-                    button: true,
-                    selected: i == index,
-                    label: labels[i],
-                    excludeSemantics: true,
-                    child: GestureDetector(
-                      behavior: HitTestBehavior.opaque,
-                      onTap: () => onChanged(i),
-                      child: Center(
-                        child: SectionLabel(
-                          labels[i],
-                          size: 13,
-                          color: i == index ? AppColors.accent : a.textFaint,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-}
-
 /// Como está o fio entre duas pessoas hoje.
 enum BondState {
-  /// Os dois caminharam — fio amarelo, com luz correndo.
+  /// Os dois caminharam — fio aceso (presença), com luz correndo.
   both,
 
-  /// Só a pessoa da esquerda caminhou — metade amarela, metade cinza.
+  /// Só a pessoa da esquerda caminhou — metade acesa, metade cinza.
   left,
 
-  /// Só a pessoa da direita caminhou — metade cinza, metade amarela.
+  /// Só a pessoa da direita caminhou — metade cinza, metade acesa.
   right,
 
   /// Os dois ainda não caminharam hoje — fio cinza, parado.
@@ -238,7 +168,7 @@ enum BondState {
 
 /// Uma ponta do fio, independente da outra.
 enum BondEnd {
-  /// Caminhou hoje — trecho amarelo.
+  /// Caminhou hoje — trecho aceso (presença).
   lit,
 
   /// Ainda não caminhou hoje — trecho cinza.
@@ -253,7 +183,7 @@ enum BondEnd {
 
 /// Fio que liga dois retratos.
 ///
-/// Cada ponta tem cor própria: amarelo se a pessoa caminhou hoje,
+/// Cada ponta tem cor própria: presença se a pessoa caminhou hoje,
 /// cinza se ainda não, e some se ela não está caminhando.
 /// Sem [left] e [right], o desenho segue [state].
 class BondThread extends StatefulWidget {
@@ -267,7 +197,7 @@ class BondThread extends StatefulWidget {
     required this.state,
     this.left,
     this.right,
-    this.color = AppColors.accent,
+    this.color = AppRoles.presence,
   });
 
   (BondEnd, BondEnd)? get ends {
@@ -364,7 +294,7 @@ class _BondPainter extends CustomPainter {
 
     if (pair == null) {
       final dim = Paint()
-        ..color = Colors.white.withValues(alpha: 0.16)
+        ..color = AppRoles.chrome.withValues(alpha: 0.16)
         ..strokeWidth = 1.4
         ..strokeCap = StrokeCap.round;
       const dash = 5.0;
@@ -395,7 +325,7 @@ class _BondPainter extends CustomPainter {
       if (end == BondEnd.gone || to <= from) return;
       if (end == BondEnd.dashed) {
         final dim = Paint()
-          ..color = Colors.white.withValues(alpha: 0.16)
+          ..color = AppRoles.chrome.withValues(alpha: 0.16)
           ..strokeWidth = 1.4
           ..strokeCap = StrokeCap.round;
         const dash = 5.0;
@@ -420,7 +350,7 @@ class _BondPainter extends CustomPainter {
     stretch(0, mid, left);
     stretch(mid, w, right);
 
-    // Faísca só no trecho amarelo. Os dois juntos: corre o fio inteiro.
+    // Faísca só no trecho aceso. Os dois juntos: corre o fio inteiro.
     final (double from, double to, bool inward) = switch ((left, right)) {
       (BondEnd.lit, BondEnd.lit) => (0.0, w, false),
       (BondEnd.lit, _) => (0.0, mid, false),
@@ -442,7 +372,7 @@ class _BondPainter extends CustomPainter {
     canvas.drawCircle(
       Offset(sx, y),
       2.2,
-      Paint()..color = Colors.white.withValues(alpha: 0.9 * fade),
+      Paint()..color = AppRoles.selected.withValues(alpha: 0.9 * fade),
     );
   }
 
@@ -462,7 +392,7 @@ class JuntosHalo extends StatefulWidget {
     super.key,
     required this.child,
     required this.size,
-    this.color = AppColors.accent,
+    this.color = AppRoles.presence,
     this.lit = true,
   });
 
@@ -519,7 +449,7 @@ class _JuntosHaloState extends State<JuntosHalo>
                 border: Border.all(
                   color: widget.lit
                       ? widget.color.withValues(alpha: 0.55 + 0.35 * t)
-                      : Colors.white.withValues(alpha: 0.1),
+                      : AppRoles.chrome.withValues(alpha: 0.1),
                   width: 1.6,
                 ),
                 boxShadow: widget.lit

@@ -8,8 +8,12 @@ void main() {
   test('modos usam acentos fora da família azul/teal do céu', () {
     expect(
       DifficultyVisuals.accentFor(TrailDifficulty.semente),
-      AppColors.accent,
+      AppRoles.observation,
     );
+    // Amarelo é ação e recompensa — nenhum modo usa.
+    for (final d in TrailDifficulty.values) {
+      expect(DifficultyVisuals.accentFor(d), isNot(AppRoles.action));
+    }
     expect(
       DifficultyVisuals.accentFor(TrailDifficulty.caminhada),
       AppColors.coral,
@@ -29,7 +33,9 @@ void main() {
     );
   });
 
-  test('coral e orquídea puncionam no céu como o ouro', () {
+  test('broto, coral e orquídea puncionam no céu como o ouro', () {
+    expect(AppColors.sprout.computeLuminance(), greaterThan(0.35));
+    expect(AppColors.isSolidChrome(AppColors.sprout), isTrue);
     expect(AppColors.coral.computeLuminance(), greaterThan(0.35));
     expect(AppColors.orchid.computeLuminance(), greaterThan(0.35));
     expect(AppColors.isSolidChrome(AppColors.coral), isTrue);

@@ -24,7 +24,6 @@ class BibleBookIntroCard extends StatelessWidget {
         : intro.authorName;
 
     return GlassCard(
-      tint: AppColors.cedar,
       padding: AppMetrics.cardPadding,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -38,7 +37,7 @@ class BibleBookIntroCard extends StatelessWidget {
             width: 28,
             height: 3,
             decoration: BoxDecoration(
-              color: AppColors.cedar,
+              color: AppRoles.chrome,
               borderRadius: BorderRadius.circular(AppRadii.hair),
             ),
           ),
@@ -85,7 +84,7 @@ class _Meta extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        SectionLabel(label, color: AppColors.cedar),
+        SectionLabel(label, color: a.sectionLabel),
         const SizedBox(height: 4),
         Text(
           value,

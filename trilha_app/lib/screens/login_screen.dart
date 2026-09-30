@@ -186,10 +186,10 @@ class _LoginScreenState extends State<LoginScreen> {
               const Center(child: StwayLogo(size: 88)),
               const SizedBox(height: AppSpace.xxl),
               const Center(
-                child: StwayWordmark(fontSize: 28, letterSpacing: 4),
+                child: StwayWordmark(fontSize: 48, letterSpacing: 6),
               ),
-              const SizedBox(height: AppSpace.sm),
-              const StwayTagline(size: 9),
+              const SizedBox(height: 14),
+              const StwayTagline(size: 11),
               const SizedBox(height: AppSpace.xxl),
               Text(
                 preparing
@@ -209,7 +209,7 @@ class _LoginScreenState extends State<LoginScreen> {
               const Spacer(flex: 3),
               if (_error != null) ...[
                 GlassCard(
-                  color: AppColors.error.withValues(alpha: 0.15),
+                  tint: AppRoles.error,
                   padding: const EdgeInsets.all(AppSpace.md),
                   child: Text(
                     _error!,
@@ -217,7 +217,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     style: AppTypography.body(
                       size: 12,
                       weight: FontWeight.w600,
-                      color: AppColors.errorSoft,
+                      color: a.text,
                     ),
                   ),
                 ),

@@ -41,7 +41,6 @@ class _PortraitPickerSheet extends StatelessWidget {
         children: [
           AppSheetHeader(
             eyebrow: context.l10n.portraitEyebrow,
-            eyebrowColor: AppColors.accent,
             title: context.l10n.portraitTitle,
             center: true,
           ),
@@ -120,15 +119,13 @@ class _PortraitChoice extends StatelessWidget {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 border: Border.all(
-                  color: selected
-                      ? AppColors.accent
-                      : a.cardBorder.withValues(alpha: 0.7),
+                  color: selected ? AppRoles.selected : a.cardBorder,
                   width: selected ? 2.2 : 1.2,
                 ),
                 boxShadow: selected
                     ? [
                         BoxShadow(
-                          color: AppColors.accent.withValues(alpha: 0.28),
+                          color: AppRoles.selected.withValues(alpha: 0.2),
                           blurRadius: 12,
                           offset: const Offset(0, 2),
                         ),
@@ -140,7 +137,7 @@ class _PortraitChoice extends StatelessWidget {
                 photoUrl: photoUrl,
                 seed: seed,
                 style: style,
-                radius: 32,
+                radius: AppMetrics.avatarLg,
                 borderColor: Colors.transparent,
               ),
             ),
@@ -152,7 +149,7 @@ class _PortraitChoice extends StatelessWidget {
               overflow: TextOverflow.ellipsis,
               style: AppTypography.title(
                 size: 14,
-                color: selected ? AppColors.accent : a.text,
+                color: selected ? AppRoles.selected : a.text,
               ),
             ),
             const SizedBox(height: 2),

@@ -102,14 +102,13 @@ class _ReminderPromptSheetState extends State<_ReminderPromptSheet> {
             center: true,
             leading: const CinematicIcon(
               glyph: CinematicGlyph.bell,
-              size: 56,
-              accent: AppColors.accent,
+              size: AppMetrics.iconHero,
+              accent: AppRoles.chrome,
               glowing: false,
             ),
             eyebrow: widget.fromSettings
                 ? l10n.reminderDailyEyebrow
                 : l10n.comebackEyebrow,
-            eyebrowColor: AppColors.accent.withValues(alpha: 0.85),
             title: l10n.reminderTitle,
             subtitle: widget.fromSettings
                 ? l10n.reminderSubtitleSettings
@@ -178,16 +177,13 @@ class _HourChip extends StatelessWidget {
             style: AppTypography.label(
               size: 11,
               letterSpacing: 0.8,
-              color: selected ? AppColors.inkOnAccent : a.textSecondary,
+              color: a.textSecondary,
             ),
           ),
           const SizedBox(height: 4),
           Text(
             option.echo(context.l10n),
-            style: AppTypography.title(
-              size: 16,
-              color: selected ? AppColors.inkOnAccent : a.text,
-            ),
+            style: AppTypography.title(size: 16, color: a.text),
           ),
         ],
       ),

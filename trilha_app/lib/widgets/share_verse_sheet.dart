@@ -9,6 +9,7 @@ import '../l10n/app_language.dart';
 import '../services/bible_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
 import 'app_sheet.dart';
 import 'stway_brand.dart';
 import 'cinematic_icon.dart';
@@ -176,12 +177,14 @@ class ShareVerseCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     return ClipRRect(
       borderRadius: BorderRadius.circular(AppRadii.lg),
       child: ConstrainedBox(
         constraints: const BoxConstraints(minHeight: 300),
         child: Stack(
           children: [
+            // Fundo fixo da imagem exportada (marca), igual em qualquer fase.
             const Positioned.fill(
               child: ColoredBox(color: AppColors.primaryDark),
             ),
@@ -217,9 +220,7 @@ class ShareVerseCard extends StatelessWidget {
               child: DecoratedBox(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(AppRadii.lg),
-                  border: Border.all(
-                    color: AppColors.accent.withValues(alpha: 0.65),
-                  ),
+                  border: Border.all(color: a.cardBorder),
                 ),
               ),
             ),
@@ -235,8 +236,7 @@ class ShareVerseCard extends StatelessWidget {
                       StwayWordmark(
                         fontSize: 15,
                         letterSpacing: 2.4,
-                        letterColor: Colors.white.withValues(alpha: 0.95),
-                        aColor: AppColors.accent,
+                        letterColor: a.text,
                       ),
                     ],
                   ),
@@ -248,7 +248,7 @@ class ShareVerseCard extends StatelessWidget {
                           size: 20,
                           height: 1.35,
                           weight: FontWeight.w600,
-                          color: Colors.white.withValues(alpha: 0.96),
+                          color: a.text,
                         ).copyWith(
                           shadows: [
                             Shadow(
@@ -265,7 +265,7 @@ class ShareVerseCard extends StatelessWidget {
                     style:
                         AppTypography.title(
                           size: 12,
-                          color: AppColors.accent.withValues(alpha: 0.95),
+                          color: a.textSecondary,
                         ).copyWith(
                           shadows: [
                             Shadow(
@@ -280,7 +280,7 @@ class ShareVerseCard extends StatelessWidget {
                     BibleService.translationName,
                     style: AppTypography.body(
                       size: 11,
-                      color: Colors.white.withValues(alpha: 0.55),
+                      color: a.textFaint,
                     ).copyWith(fontStyle: FontStyle.italic),
                   ),
                 ],

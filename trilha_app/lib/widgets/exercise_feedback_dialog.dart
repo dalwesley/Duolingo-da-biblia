@@ -8,6 +8,7 @@ import '../services/session_composer.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
+import 'immersive_background.dart';
 import 'question_report_sheet.dart';
 import 'ui_primitives.dart';
 
@@ -239,7 +240,9 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
     final isCorrect = widget.isCorrect;
     final accent = widget.accent;
     final outOfLamps = widget.outOfLamps;
-    final color = isCorrect ? accent : AppColors.error;
+    // Veredito por papel: acerto/erro. O modo segue só no chrome
+    // (trecho que prova, ler o texto).
+    final color = isCorrect ? AppRoles.success : AppRoles.error;
     final a = Appearance.of(context);
     final l10n = context.l10n;
     final feedback = _holdsAnswer
@@ -327,147 +330,138 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
                       AppSpace.screen,
                       AppSpace.sm,
                     ),
-                    child: DecoratedBox(
-                      decoration: BoxDecoration(
-                        color: Color.lerp(a.cardFill, color, 0.08),
-                        borderRadius: BorderRadius.circular(AppRadii.sheet),
-                        border: Border.all(
-                          color: color.withValues(alpha: 0.45),
-                          width: 1.4,
-                        ),
-                        boxShadow: [...AppTheme.cardShadow(elevated: true)],
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.fromLTRB(18, 14, 10, 18),
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: [
-                            Row(
-                              children: [
-                                SizedBox(
-                                  width: 56,
-                                  height: 56,
-                                  child: FittedBox(
-                                    child: _VerdictMark(
-                                      glyph: glyph,
-                                      color: color,
-                                      enter: _enter,
-                                      pulse: _pulse,
-                                    ),
+                    child: GlassCard(
+                      tint: color,
+                      radius: AppMetrics.heroRadius,
+                      elevated: true,
+                      padding: const EdgeInsets.fromLTRB(18, 14, 10, 18),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                        children: [
+                          Row(
+                            children: [
+                              SizedBox(
+                                width: 56,
+                                height: 56,
+                                child: FittedBox(
+                                  child: _VerdictMark(
+                                    glyph: glyph,
+                                    color: color,
+                                    enter: _enter,
+                                    pulse: _pulse,
                                   ),
                                 ),
-                                const SizedBox(width: 12),
-                                Expanded(
-                                  child: Text(
-                                    title,
-                                    style: AppTypography.display(
-                                      size: 26,
-                                      height: 1.1,
-                                      color: color,
-                                    ),
-                                  ),
-                                ),
-                                IconButton(
-                                  tooltip: l10n.feedbackReportTooltip,
-                                  onPressed: _report,
-                                  visualDensity: VisualDensity.compact,
-                                  padding: EdgeInsets.zero,
-                                  constraints: const BoxConstraints(
-                                    minWidth: 36,
-                                    minHeight: 36,
-                                  ),
-                                  icon: CinematicIcon(
-                                    glyph: CinematicGlyph.flag,
-                                    size: 18,
-                                    accent: a.textFaint,
-                                    framed: false,
-                                  ),
-                                ),
-                              ],
-                            ),
-                            if (feedback.isNotEmpty) ...[
-                              const SizedBox(height: 10),
-                              Padding(
-                                padding: const EdgeInsets.only(right: 12),
+                              ),
+                              const SizedBox(width: 12),
+                              Expanded(
                                 child: Text(
-                                  feedback,
-                                  textAlign: TextAlign.start,
-                                  style: AppTypography.body(
-                                    size: 14,
-                                    weight: FontWeight.w700,
-                                    height: 1.4,
-                                    color: a.text,
+                                  title,
+                                  style: AppTypography.display(
+                                    size: 24,
+                                    height: 1.1,
+                                    color: color,
                                   ),
                                 ),
                               ),
-                            ],
-                            if (_holdsAnswer &&
-                                widget.onReadPassage != null) ...[
-                              const SizedBox(height: 4),
-                              Align(
-                                alignment: Alignment.centerLeft,
-                                child: TextCta(
-                                  label: l10n.feedbackReadPassage,
-                                  leading: CinematicGlyph.book,
-                                  color: accent,
-                                  onTap: widget.onReadPassage,
+                              IconButton(
+                                tooltip: l10n.feedbackReportTooltip,
+                                onPressed: _report,
+                                visualDensity: VisualDensity.compact,
+                                padding: EdgeInsets.zero,
+                                constraints: const BoxConstraints(
+                                  minWidth: 36,
+                                  minHeight: 36,
+                                ),
+                                icon: CinematicIcon(
+                                  glyph: CinematicGlyph.flag,
+                                  size: AppMetrics.iconMd,
+                                  accent: a.textFaint,
+                                  framed: false,
                                 ),
                               ),
                             ],
-                            if (answer.isNotEmpty) ...[
-                              const SizedBox(height: 12),
-                              Padding(
-                                padding: const EdgeInsets.only(right: 12),
-                                child: _AnswerReveal(
-                                  answer: answer,
-                                  accent: accent,
+                          ),
+                          if (feedback.isNotEmpty) ...[
+                            const SizedBox(height: 10),
+                            Padding(
+                              padding: const EdgeInsets.only(right: 12),
+                              child: Text(
+                                feedback,
+                                textAlign: TextAlign.start,
+                                style: AppTypography.body(
+                                  size: 14,
+                                  weight: FontWeight.w700,
+                                  height: 1.4,
+                                  color: a.text,
                                 ),
                               ),
-                            ],
-                            if (showVerse) ...[
-                              const SizedBox(height: 16),
-                              Padding(
-                                padding: const EdgeInsets.only(right: 12),
-                                child: _VerseWell(
-                                  reference: ref,
-                                  verse: verse,
-                                  accent: color,
-                                  highlight: _span,
-                                  highlightColor: accent,
-                                ),
+                            ),
+                          ],
+                          if (_holdsAnswer && widget.onReadPassage != null) ...[
+                            const SizedBox(height: 4),
+                            Align(
+                              alignment: Alignment.centerLeft,
+                              child: TextCta(
+                                label: l10n.feedbackReadPassage,
+                                leading: CinematicGlyph.book,
+                                color: accent,
+                                onTap: widget.onReadPassage,
                               ),
-                            ],
+                            ),
+                          ],
+                          if (answer.isNotEmpty) ...[
+                            const SizedBox(height: 12),
+                            Padding(
+                              padding: const EdgeInsets.only(right: 12),
+                              child: _AnswerReveal(
+                                answer: answer,
+                                accent: AppRoles.success,
+                              ),
+                            ),
+                          ],
+                          if (showVerse) ...[
                             const SizedBox(height: 16),
                             Padding(
                               padding: const EdgeInsets.only(right: 12),
-                              child: AnimatedBuilder(
-                                animation: _auto,
-                                builder: (context, _) => CopperCta(
-                                  label: cta,
-                                  onTap: _advance,
-                                  trailing: isCorrect || reveal
-                                      ? CinematicGlyph.forward
-                                      : CinematicGlyph.refresh,
-                                  showArrow: false,
-                                  progress: _autoEnabled ? _auto.value : null,
-                                ),
+                              child: _VerseWell(
+                                reference: ref,
+                                verse: verse,
+                                accent: color,
+                                highlight: _span,
+                                highlightColor: accent,
                               ),
                             ),
-                            if (canSkip) ...[
-                              const SizedBox(height: 8),
-                              Padding(
-                                padding: const EdgeInsets.only(right: 12),
-                                child: GhostCta(
-                                  label: l10n.feedbackSkipToEnd,
-                                  expanded: true,
-                                  matchCopper: true,
-                                  onTap: _skip,
-                                ),
-                              ),
-                            ],
                           ],
-                        ),
+                          const SizedBox(height: 16),
+                          Padding(
+                            padding: const EdgeInsets.only(right: 12),
+                            child: AnimatedBuilder(
+                              animation: _auto,
+                              builder: (context, _) => CopperCta(
+                                label: cta,
+                                onTap: _advance,
+                                trailing: isCorrect || reveal
+                                    ? CinematicGlyph.forward
+                                    : CinematicGlyph.refresh,
+                                showArrow: false,
+                                progress: _autoEnabled ? _auto.value : null,
+                              ),
+                            ),
+                          ),
+                          if (canSkip) ...[
+                            const SizedBox(height: 8),
+                            Padding(
+                              padding: const EdgeInsets.only(right: 12),
+                              child: GhostCta(
+                                label: l10n.feedbackSkipToEnd,
+                                expanded: true,
+                                matchCopper: true,
+                                onTap: _skip,
+                              ),
+                            ),
+                          ],
+                        ],
                       ),
                     ),
                   ),

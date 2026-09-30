@@ -123,7 +123,7 @@ class _AuthorSuggestionSheetState extends State<_AuthorSuggestionSheet> {
                 const CinematicIcon(
                   glyph: CinematicGlyph.people,
                   size: AppMetrics.leadingIcon,
-                  accent: AppColors.accent,
+                  accent: AppRoles.chrome,
                   glowing: false,
                 ),
                 const SizedBox(width: 12),
@@ -133,7 +133,7 @@ class _AuthorSuggestionSheetState extends State<_AuthorSuggestionSheet> {
                     children: [
                       Text(
                         context.l10n.suggestionAuthorTitle,
-                        style: AppTypography.title(size: 18, color: a.text),
+                        style: AppTypography.title(size: 20, color: a.text),
                       ),
                       const SizedBox(height: 2),
                       Text(
@@ -150,7 +150,7 @@ class _AuthorSuggestionSheetState extends State<_AuthorSuggestionSheet> {
                   onPressed: () => Navigator.of(context).pop(false),
                   icon: CinematicIcon(
                     glyph: CinematicGlyph.close,
-                    size: 22,
+                    size: AppMetrics.iconMd,
                     accent: a.textFaint,
                     framed: false,
                   ),
@@ -203,7 +203,7 @@ class _AuthorSuggestionSheetState extends State<_AuthorSuggestionSheet> {
               const SizedBox(height: 8),
               Text(
                 _error!,
-                style: AppTypography.body(size: 13, color: AppColors.error),
+                style: AppTypography.body(size: 13, color: AppRoles.error),
               ),
               const SizedBox(height: 8),
             ] else if (_ctaHint.isNotEmpty) ...[
@@ -288,7 +288,10 @@ class _Field extends StatelessWidget {
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(AppRadii.sm),
               borderSide: BorderSide(
-                color: AppColors.accent.withValues(alpha: 0.7),
+                color: AppMetrics.accentBorder(
+                  color: AppRoles.selected,
+                  alpha: 0.7,
+                ),
               ),
             ),
           ),

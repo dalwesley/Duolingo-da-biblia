@@ -8,6 +8,7 @@ import 'pilgrim_profile_sections.dart';
 import 'recognition_actions.dart';
 import 'relic_panel.dart';
 import 'streak_week.dart';
+import 'ui_primitives.dart';
 import 'user_avatar.dart';
 
 /// Cartão de identidade do perfil — o mesmo no perfil e na vitrine da caravana.
@@ -136,8 +137,8 @@ class PilgrimIdentityCard extends StatelessWidget {
                 photoUrl: photoUrl,
                 seed: seed,
                 style: style,
-                radius: 40,
-                borderColor: AppColors.accent.withValues(alpha: 0.85),
+                radius: AppMetrics.avatarXl,
+                borderColor: AppRoles.chrome.withValues(alpha: 0.85),
                 editable: editable,
                 onTap: editable ? onEditPortrait : null,
               ),

@@ -19,7 +19,6 @@ import '../widgets/act_feel.dart';
 import '../widgets/cinematic_backdrop.dart';
 import '../widgets/brand_trail.dart';
 import '../widgets/cinematic_icon.dart';
-import '../widgets/film_layers.dart';
 import '../widgets/genesis_hero.dart';
 import '../widgets/hero_card_atmosphere.dart';
 import '../widgets/immersive_background.dart';
@@ -536,7 +535,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                                     holdingLabel: l10n.onboardingHolding,
                                     onDone: _goNext,
                                   )
-                                : _SiteCta(
+                                : CopperCta(
                                     label: _finishing
                                         ? l10n.onboardingOpening
                                         : ctaLabel,
@@ -724,11 +723,11 @@ class _FilmBar extends StatelessWidget {
                     child: Stack(
                       fit: StackFit.expand,
                       children: [
-                        ColoredBox(color: Colors.white.withValues(alpha: 0.2)),
+                        ColoredBox(color: Appearance.of(context).progressTrack),
                         FractionallySizedBox(
                           alignment: Alignment.centerLeft,
                           widthFactor: fill.clamp(0.0, 1.0),
-                          child: const ColoredBox(color: AppColors.accent),
+                          child: const ColoredBox(color: AppRoles.chrome),
                         ),
                       ],
                     ),
@@ -802,10 +801,7 @@ class _Kicker extends StatelessWidget {
         final t = Curves.easeOutCubic.transform(raw);
         return Opacity(
           opacity: t,
-          child: FittedBox(
-            fit: BoxFit.scaleDown,
-            child: SectionLabel(text, color: AppColors.accent),
-          ),
+          child: FittedBox(fit: BoxFit.scaleDown, child: SectionLabel(text)),
         );
       },
     );
@@ -1084,9 +1080,7 @@ class _HabitBeat extends StatelessWidget {
                               shape: BoxShape.circle,
                               gradient: RadialGradient(
                                 colors: [
-                                  AppColors.accent.withValues(
-                                    alpha: 0.2 * glow,
-                                  ),
+                                  AppRoles.chrome.withValues(alpha: 0.2 * glow),
                                   Colors.transparent,
                                 ],
                               ),
@@ -1110,7 +1104,7 @@ class _HabitBeat extends StatelessWidget {
                             size: number,
                             weight: FontWeight.w900,
                             height: 0.8,
-                            color: AppColors.accent,
+                            color: a.text,
                           ),
                         ),
                       ),
@@ -1249,7 +1243,7 @@ class _TomorrowBeat extends StatelessWidget {
                           borderRadius: BorderRadius.circular(word),
                           gradient: RadialGradient(
                             colors: [
-                              AppColors.accent.withValues(alpha: 0.16 * glow),
+                              AppRoles.chrome.withValues(alpha: 0.16 * glow),
                               Colors.transparent,
                             ],
                           ),
@@ -1264,7 +1258,7 @@ class _TomorrowBeat extends StatelessWidget {
                       size: word,
                       weight: FontWeight.w900,
                       height: 0.9,
-                      color: AppColors.accent,
+                      color: a.text,
                     ),
                   ),
                 ],
@@ -1407,41 +1401,20 @@ class _ChoicePill<T> extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
+    // Seleção = contorno claro ([AppRoles.selected]), não ouro.
     return Semantics(
       button: true,
       selected: on,
       label: '${choice.title}, ${choice.caption}',
       excludeSemantics: true,
-      child: GestureDetector(
+      child: AppSelectChip(
+        label: choice.title,
+        selected: on,
         onTap: onTap,
-        behavior: HitTestBehavior.opaque,
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 220),
-          curve: Curves.easeOutCubic,
-          height: 48,
-          alignment: Alignment.center,
-          padding: const EdgeInsets.symmetric(horizontal: 10),
-          decoration: BoxDecoration(
-            color: on
-                ? AppColors.accent.withValues(alpha: 0.1)
-                : AppColors.night.withValues(alpha: 0.78),
-            borderRadius: BorderRadius.circular(_SiteCta.radius),
-            border: Border.all(color: on ? AppColors.accent : a.cardBorder),
-          ),
-          child: FittedBox(
-            fit: BoxFit.scaleDown,
-            child: Text(
-              choice.title,
-              maxLines: 1,
-              style: AppTypography.body(
-                size: 14,
-                weight: FontWeight.w700,
-                color: on ? AppColors.accent : a.text,
-              ),
-            ),
-          ),
-        ),
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 14),
+        borderRadius: const BorderRadius.all(Radius.circular(AppRadii.md)),
+        fontSize: 14,
+        fontWeight: FontWeight.w700,
       ),
     );
   }
@@ -1712,7 +1685,7 @@ class _HoldCtaState extends State<_HoldCta>
 
   @override
   Widget build(BuildContext context) {
-    final radius = BorderRadius.circular(_SiteCta.radius);
+    final radius = BorderRadius.circular(AppRadii.md);
     return Semantics(
       button: true,
       label: widget.label,
@@ -1730,15 +1703,15 @@ class _HoldCtaState extends State<_HoldCta>
           animation: _hold,
           builder: (context, _) {
             final t = _hold.value;
-            final ink = t > 0.5 ? AppColors.inkOnAccent : AppColors.accent;
+            final ink = t > 0.5 ? AppRoles.onAction : AppRoles.action;
             return Transform.scale(
               scale: 1 - 0.02 * t,
               child: Container(
                 height: CopperCta.height,
                 decoration: BoxDecoration(
-                  color: AppColors.accent.withValues(alpha: 0.1),
+                  color: AppRoles.action.withValues(alpha: 0.1),
                   borderRadius: radius,
-                  border: Border.all(color: AppColors.accent, width: 1.4),
+                  border: Border.all(color: AppRoles.action, width: 1.4),
                   boxShadow: AppMetrics.accentGlow(alpha: 0.12 + 0.3 * t),
                 ),
                 child: ClipRRect(
@@ -1750,7 +1723,7 @@ class _HoldCtaState extends State<_HoldCta>
                       FractionallySizedBox(
                         alignment: Alignment.centerLeft,
                         widthFactor: t,
-                        child: const ColoredBox(color: AppColors.accent),
+                        child: const ColoredBox(color: AppRoles.action),
                       ),
                       Center(
                         child: Row(
@@ -1758,7 +1731,7 @@ class _HoldCtaState extends State<_HoldCta>
                           children: [
                             CinematicIcon(
                               glyph: CinematicGlyph.lamp,
-                              size: 18,
+                              size: AppMetrics.iconMd,
                               accent: ink,
                               framed: false,
                             ),
@@ -1791,152 +1764,6 @@ class _HoldCtaState extends State<_HoldCta>
 /// Botão ouro do site (`.btn-gold.btn-sheen`): 52px, cantos 14, texto
 /// normal (sem caixa alta), brilho dourado embaixo e um reflexo que passa
 /// de tempos em tempos. Aperta um pouco no toque.
-class _SiteCta extends StatefulWidget {
-  final String label;
-  final VoidCallback? onTap;
-  final bool busy;
-
-  static const height = CopperCta.height;
-  static const radius = AppRadii.md;
-
-  const _SiteCta({required this.label, this.onTap, this.busy = false});
-
-  @override
-  State<_SiteCta> createState() => _SiteCtaState();
-}
-
-class _SiteCtaState extends State<_SiteCta>
-    with SingleTickerProviderStateMixin {
-  // Mesmo ritmo do site: parado, depois o reflexo cruza (5s).
-  late final AnimationController _sheen = AnimationController(
-    vsync: this,
-    duration: const Duration(seconds: 5),
-  );
-  bool _down = false;
-
-  @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-    if (MediaQuery.of(context).disableAnimations) {
-      _sheen.stop();
-    } else if (!_sheen.isAnimating) {
-      _sheen.repeat();
-    }
-  }
-
-  @override
-  void dispose() {
-    _sheen.dispose();
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final radius = BorderRadius.circular(_SiteCta.radius);
-    final enabled = widget.onTap != null && !widget.busy;
-    return Semantics(
-      button: true,
-      enabled: enabled,
-      label: widget.label,
-      excludeSemantics: true,
-      onTap: enabled ? widget.onTap : null,
-      child: GestureDetector(
-        onTapDown: enabled ? (_) => setState(() => _down = true) : null,
-        onTapUp: enabled ? (_) => setState(() => _down = false) : null,
-        onTapCancel: enabled ? () => setState(() => _down = false) : null,
-        onTap: enabled ? widget.onTap : null,
-        child: AnimatedScale(
-          scale: _down ? 0.98 : 1,
-          duration: const Duration(milliseconds: 160),
-          child: Container(
-            height: _SiteCta.height,
-            decoration: BoxDecoration(
-              color: AppColors.accent,
-              borderRadius: radius,
-              boxShadow: AppMetrics.accentGlow(),
-            ),
-            child: ClipRRect(
-              borderRadius: radius,
-              child: Stack(
-                fit: StackFit.expand,
-                children: [
-                  // Luz de cima (inset do site).
-                  Align(
-                    alignment: Alignment.topCenter,
-                    child: SizedBox(
-                      height: 1,
-                      width: double.infinity,
-                      child: ColoredBox(
-                        color: Colors.white.withValues(alpha: 0.45),
-                      ),
-                    ),
-                  ),
-                  AnimatedBuilder(
-                    animation: _sheen,
-                    builder: (context, _) {
-                      final p = FilmLayers.seg(_sheen.value, 0.6, 1);
-                      if (p <= 0 || p >= 1) return const SizedBox.shrink();
-                      final x = -1.3 + 2.6 * p;
-                      return DecoratedBox(
-                        decoration: BoxDecoration(
-                          gradient: LinearGradient(
-                            begin: Alignment(x - 0.6, -0.4),
-                            end: Alignment(x + 0.6, 0.4),
-                            colors: [
-                              Colors.white.withValues(alpha: 0),
-                              Colors.white.withValues(alpha: 0.6),
-                              Colors.white.withValues(alpha: 0),
-                            ],
-                            stops: const [0.3, 0.5, 0.68],
-                          ),
-                        ),
-                      );
-                    },
-                  ),
-                  Center(
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        if (widget.busy) ...[
-                          const AppSpinner(
-                            inline: true,
-                            color: AppColors.inkOnAccent,
-                          ),
-                          const SizedBox(width: 10),
-                        ],
-                        Flexible(
-                          child: FittedBox(
-                            fit: BoxFit.scaleDown,
-                            child: Text(
-                              widget.label,
-                              maxLines: 1,
-                              style: CopperCta.labelStyle(),
-                            ),
-                          ),
-                        ),
-                        if (!widget.busy) ...[
-                          const SizedBox(width: 8),
-                          const CinematicIcon(
-                            glyph: CinematicGlyph.forward,
-                            size: 16,
-                            accent: AppColors.inkOnAccent,
-                            framed: false,
-                          ),
-                        ],
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-/// "Dia 1 de N": o primeiro passo já aceso, os outros esperando.
 class _StreakPath extends StatelessWidget {
   final int goal;
   final Animation<double> breath;
@@ -1967,11 +1794,11 @@ class _StreakPath extends StatelessWidget {
                         width: 18,
                         height: 18,
                         decoration: BoxDecoration(
-                          color: AppColors.accent,
+                          color: AppRoles.streak,
                           shape: BoxShape.circle,
                           boxShadow: [
                             BoxShadow(
-                              color: AppColors.accent.withValues(
+                              color: AppRoles.streak.withValues(
                                 alpha: 0.6 * glow,
                               ),
                               blurRadius: 14 * glow,
@@ -1997,7 +1824,7 @@ class _StreakPath extends StatelessWidget {
         const SizedBox(height: 8),
         SectionLabel(
           context.l10n.onboardingDayOneOf(goal),
-          color: AppColors.accent,
+          color: AppRoles.streak,
         ),
       ],
     );
@@ -2045,10 +1872,17 @@ class _OptionCard extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 16),
           decoration: BoxDecoration(
             color: on
-                ? AppColors.accent.withValues(alpha: 0.1)
+                ? AppMetrics.accentFill(color: AppRoles.selected, alpha: 0.12)
                 : AppColors.night.withValues(alpha: 0.78),
-            borderRadius: BorderRadius.circular(_SiteCta.radius),
-            border: Border.all(color: on ? AppColors.accent : a.cardBorder),
+            borderRadius: BorderRadius.circular(AppRadii.md),
+            border: Border.all(
+              color: on
+                  ? AppMetrics.accentBorder(
+                      color: AppRoles.selected,
+                      alpha: 0.7,
+                    )
+                  : a.cardBorder,
+            ),
           ),
           child: Row(
             children: [
@@ -2059,8 +1893,8 @@ class _OptionCard extends StatelessWidget {
                     ? Center(
                         child: CinematicIcon(
                           glyph: glyph,
-                          size: 22,
-                          accent: on ? AppColors.accent : a.text,
+                          size: AppMetrics.iconLg,
+                          accent: on ? AppRoles.selected : a.text,
                           framed: false,
                         ),
                       )
@@ -2068,14 +1902,12 @@ class _OptionCard extends StatelessWidget {
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           gradient: gradient,
-                          border: Border.all(
-                            color: Colors.white.withValues(alpha: 0.3),
-                          ),
+                          border: Border.all(color: a.cardBorder),
                         ),
                         child: Center(
                           child: CinematicIcon(
                             glyph: glyph,
-                            size: 15,
+                            size: AppMetrics.iconSm,
                             accent: Colors.white,
                             framed: false,
                           ),
@@ -2092,7 +1924,7 @@ class _OptionCard extends StatelessWidget {
                         style: AppTypography.body(
                           size: 16,
                           weight: FontWeight.w700,
-                          color: on ? AppColors.accent : a.text,
+                          color: on ? AppRoles.selected : a.text,
                         ),
                       ),
                       TextSpan(
@@ -2118,9 +1950,7 @@ class _OptionCard extends StatelessWidget {
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   border: Border.all(
-                    color: on
-                        ? AppColors.accent
-                        : Colors.white.withValues(alpha: 0.3),
+                    color: on ? AppRoles.selected : a.textFaint,
                     width: 1.6,
                   ),
                 ),
@@ -2131,7 +1961,7 @@ class _OptionCard extends StatelessWidget {
                     height: on ? 10 : 0,
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
-                      color: AppColors.accent,
+                      color: AppRoles.selected,
                     ),
                   ),
                 ),
@@ -2161,12 +1991,8 @@ class _NameLine extends StatelessWidget {
           controller: controller,
           textAlign: TextAlign.center,
           textCapitalization: TextCapitalization.words,
-          style: AppTypography.display(
-            size: 20,
-            weight: FontWeight.w800,
-            color: a.text,
-          ),
-          cursorColor: AppColors.accent,
+          style: AppTypography.display(size: 20, color: a.text),
+          cursorColor: AppRoles.selected,
           decoration: InputDecoration(
             hintText: l10n.onboardingNameHint,
             hintStyle: AppTypography.display(
@@ -2179,12 +2005,10 @@ class _NameLine extends StatelessWidget {
             contentPadding: const EdgeInsets.symmetric(vertical: 8),
             border: InputBorder.none,
             enabledBorder: UnderlineInputBorder(
-              borderSide: BorderSide(
-                color: AppColors.accent.withValues(alpha: 0.4),
-              ),
+              borderSide: BorderSide(color: a.cardBorder),
             ),
             focusedBorder: const UnderlineInputBorder(
-              borderSide: BorderSide(color: AppColors.accent, width: 1.4),
+              borderSide: BorderSide(color: AppRoles.selected, width: 1.4),
             ),
           ),
         ),
@@ -2215,8 +2039,7 @@ class _ThresholdBeat extends StatelessWidget {
     final greeting = ProgressService.isPlaceholderUserName(name)
         ? null
         : name.split(' ').first;
-    final promise =
-        intent?.promise(l10n) ?? l10n.onboardingDefaultPromise;
+    final promise = intent?.promise(l10n) ?? l10n.onboardingDefaultPromise;
     final title = greeting == null
         ? '${promise[0].toUpperCase()}${promise.substring(1)}'
         : '$greeting,\n$promise';
@@ -2287,10 +2110,7 @@ class _FirstMissionHero extends StatelessWidget {
       trailSlug: _slug,
       missionTitle: title,
     );
-    final style = HeroCardMoodStyle.of(
-      HeroCardMood.alive,
-      trailAccent: visuals.accent,
-    );
+    final style = HeroCardMoodStyle.of(HeroCardMood.alive, a);
 
     return Container(
       width: double.infinity,
@@ -2352,12 +2172,10 @@ class _FirstMissionHero extends StatelessWidget {
                     children: [
                       _HeroChip(
                         glyph: visuals.glyph,
-                        accent: visuals.accent,
                         label: l10n.settingsGenesisTitle,
                       ),
                       _HeroChip(
                         glyph: CinematicGlyph.lamp,
-                        accent: AppColors.accent,
                         label: l10n.onboardingFiveLamps,
                       ),
                     ],
@@ -2394,14 +2212,9 @@ class _FirstMissionHero extends StatelessWidget {
 
 class _HeroChip extends StatelessWidget {
   final CinematicGlyph glyph;
-  final Color accent;
   final String label;
 
-  const _HeroChip({
-    required this.glyph,
-    required this.accent,
-    required this.label,
-  });
+  const _HeroChip({required this.glyph, required this.label});
 
   @override
   Widget build(BuildContext context) {
@@ -2409,7 +2222,7 @@ class _HeroChip extends StatelessWidget {
     return SoftBadge(
       text: label,
       glyph: glyph,
-      accent: accent,
+      accent: AppRoles.chrome,
       textColor: a.text,
     );
   }

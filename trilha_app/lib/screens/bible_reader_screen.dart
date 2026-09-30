@@ -443,7 +443,13 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
                       ),
                       onBack: () => Navigator.of(context).pop(),
                       showLeading: false,
-                      chromeAccent: AppColors.cedar,
+                      chromeAccent: reading.ink,
+                      surface: TopBarSurface(
+                        fill: reading.chrome,
+                        border: reading.chromeBorder,
+                        ink: reading.ink,
+                        inkMuted: reading.inkMuted,
+                      ),
                       onTitleTap: _openPicker,
                       trailing: Semantics(
                         button: true,
@@ -451,10 +457,10 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
                         child: GestureDetector(
                           onTap: () => _showReadingSettings(context),
                           behavior: HitTestBehavior.opaque,
-                          child: const CinematicIcon(
+                          child: CinematicIcon(
                             glyph: CinematicGlyph.tune,
                             size: 36,
-                            accent: AppColors.cedar,
+                            accent: reading.ink,
                             glowing: false,
                           ),
                         ),
@@ -466,7 +472,8 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
                       builder: (context, t, _) => AppProgressBar(
                         value: t,
                         height: 6,
-                        color: AppColors.cedar,
+                        color: reading.inkMuted,
+                        trackColor: reading.chromeBorder,
                       ),
                     ),
                   ],
@@ -983,9 +990,9 @@ class _ReaderDock extends StatelessWidget {
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 4),
             decoration: BoxDecoration(
-              color: reading.chipFill,
+              color: reading.chrome,
               borderRadius: BorderRadius.circular(AppRadii.pill),
-              border: Border.all(color: reading.pageBorder),
+              border: Border.all(color: reading.chromeBorder),
               boxShadow: [
                 BoxShadow(
                   color: Colors.black.withValues(
@@ -1027,8 +1034,8 @@ class _ReaderDock extends StatelessWidget {
                           ),
                           decoration: BoxDecoration(
                             color: playing
-                                ? reading.verseNumber
-                                : reading.verseNumber.withValues(alpha: 0.14),
+                                ? reading.ink
+                                : reading.ink.withValues(alpha: 0.08),
                             borderRadius: BorderRadius.circular(AppRadii.pill),
                           ),
                           child: Row(
@@ -1038,7 +1045,7 @@ class _ReaderDock extends StatelessWidget {
                                 glyph: playing
                                     ? CinematicGlyph.stop
                                     : CinematicGlyph.echo,
-                                size: 18,
+                                size: AppMetrics.iconMd,
                                 accent: playing ? reading.page : reading.ink,
                                 framed: false,
                               ),
@@ -1280,10 +1287,8 @@ Future<void> _showVerseActions(
                             children: [
                               CinematicIcon(
                                 glyph: q.glyph,
-                                size: 22,
-                                accent: q.lit
-                                    ? reading.verseNumber
-                                    : reading.ink,
+                                size: AppMetrics.iconLg,
+                                accent: reading.ink,
                                 framed: false,
                               ),
                               const SizedBox(height: 6),
@@ -1413,7 +1418,7 @@ Future<void> _showReadingSettings(BuildContext context) {
                       child: AppProgressBar(
                         value: (scale - 0.85) / 0.5,
                         height: 6,
-                        color: AppColors.cedar,
+                        color: AppRoles.chrome,
                       ),
                     ),
                   ),
@@ -1462,7 +1467,6 @@ Future<void> _showReadingSettings(BuildContext context) {
                       child: AppSelectChip(
                         label: t.shortName,
                         selected: t.id == settings.bibleTranslationId,
-                        accent: AppColors.cedar,
                         fontSize: 12,
                         padding: const EdgeInsets.symmetric(vertical: 12),
                         borderRadius: const BorderRadius.all(
@@ -1617,7 +1621,7 @@ class _PaperSwatch extends StatelessWidget {
               color: look.page,
               borderRadius: BorderRadius.circular(AppRadii.md),
               border: Border.all(
-                color: selected ? look.verseNumber : look.pageBorder,
+                color: selected ? AppRoles.selected : look.pageBorder,
                 width: selected ? 2 : 1,
               ),
             ),

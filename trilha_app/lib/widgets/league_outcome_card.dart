@@ -50,7 +50,7 @@ class LeagueOutcomeCard extends StatelessWidget {
           CinematicIcon(
             glyph: demoted ? CinematicGlyph.demote : CinematicGlyph.rise,
             size: AppMetrics.leadingIcon,
-            accent: AppColors.accent,
+            accent: demoted ? AppRoles.risk : AppRoles.chrome,
             glowing: false,
           ),
           const SizedBox(width: 12),
@@ -193,9 +193,9 @@ class _PromotionBannerState extends State<_PromotionBanner>
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: [
-                        Colors.white.withValues(alpha: 0.06),
+                        AppRoles.chrome.withValues(alpha: 0.06),
                         Colors.transparent,
-                        AppColors.inkOnAccent.withValues(alpha: 0.16),
+                        AppRoles.onReward.withValues(alpha: 0.16),
                       ],
                       stops: const [0, 0.42, 1],
                     ),
@@ -226,7 +226,7 @@ class _PromotionBannerState extends State<_PromotionBanner>
                           l10n.leaguePromotedTitle(widget.tierLabel),
                           style: AppTypography.title(
                             size: 16,
-                            color: AppColors.inkOnAccent,
+                            color: AppRoles.onReward,
                           ),
                         ),
                         const SizedBox(height: 3),
@@ -283,8 +283,8 @@ class _PromotionMedal extends StatelessWidget {
               alignment: Alignment.center,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: AppColors.inkOnAccent,
-                border: Border.all(color: AppColors.accentSoft, width: 1.75),
+                color: AppRoles.onReward,
+                border: Border.all(color: AppColors.medalGold, width: 1.75),
                 boxShadow: [
                   BoxShadow(
                     color: AppColors.dropShadow,
@@ -295,8 +295,8 @@ class _PromotionMedal extends StatelessWidget {
               ),
               child: const CinematicIcon(
                 glyph: CinematicGlyph.crown,
-                size: 24,
-                accent: AppColors.accent,
+                size: AppMetrics.iconLg,
+                accent: AppRoles.reward,
                 framed: false,
               ),
             ),
@@ -306,7 +306,7 @@ class _PromotionMedal extends StatelessWidget {
                 bottom: -2,
                 child: SoftBadge(
                   text: context.l10n.pilgrimRankOrdinal(rank),
-                  accent: AppColors.accentSoft,
+                  accent: AppColors.medalGold,
                   solid: true,
                 ),
               ),
@@ -326,8 +326,8 @@ class _BonusChip extends StatelessWidget {
   Widget build(BuildContext context) {
     return SoftBadge(
       text: context.l10n.commonPlusSteps(steps),
-      accent: AppColors.inkOnAccent,
-      textColor: AppColors.inkOnAccent,
+      accent: AppRoles.onReward,
+      textColor: AppRoles.onReward,
     );
   }
 }
@@ -394,7 +394,7 @@ class _LeaguePromotionSheet extends StatelessWidget {
     final a = Appearance.of(context);
     final l10n = context.l10n;
     return AppSheetPanel(
-      tint: AppColors.accent,
+      tint: AppRoles.reward,
       padding: const EdgeInsets.fromLTRB(
         AppSpace.xxl,
         AppSpace.md,
@@ -414,7 +414,7 @@ class _LeaguePromotionSheet extends StatelessWidget {
                     center: const Alignment(0, -0.35),
                     radius: 1.1,
                     colors: [
-                      AppColors.accent.withValues(alpha: 0.22),
+                      AppRoles.reward.withValues(alpha: 0.22),
                       Colors.transparent,
                     ],
                   ),
@@ -432,8 +432,8 @@ class _LeaguePromotionSheet extends StatelessWidget {
           const Center(
             child: CinematicIcon(
               glyph: CinematicGlyph.crown,
-              size: 56,
-              accent: AppColors.accent,
+              size: AppMetrics.iconHero,
+              accent: AppRoles.reward,
               glowing: true,
             ),
           ),
@@ -457,7 +457,7 @@ class _LeaguePromotionSheet extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           InsetPanel(
-            borderColor: AppColors.accent.withValues(alpha: 0.45),
+            borderColor: AppRoles.reward.withValues(alpha: 0.45),
             padding: const EdgeInsets.symmetric(
               horizontal: AppSpace.lg,
               vertical: AppSpace.md,
@@ -465,7 +465,7 @@ class _LeaguePromotionSheet extends StatelessWidget {
             child: Text(
               l10n.leagueBonusEncourage(bonusSteps),
               textAlign: TextAlign.center,
-              style: AppTypography.title(size: 14, color: AppColors.accent),
+              style: AppTypography.title(size: 14, color: AppRoles.reward),
             ),
           ),
           const SizedBox(height: 28),

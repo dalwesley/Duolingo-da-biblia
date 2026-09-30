@@ -266,7 +266,7 @@ class _VerseFillPanelState extends State<VerseFillPanel>
                     _revealFlash.value >= 1) {
                   return const SizedBox.shrink();
                 }
-                final flashColor = _correct ? accent : AppColors.error;
+                final flashColor = _correct ? AppRoles.success : AppRoles.error;
                 return IgnorePointer(
                   child: DecoratedBox(
                     decoration: BoxDecoration(
@@ -431,7 +431,7 @@ class _MemoryHeader extends StatelessWidget {
           padding: const EdgeInsets.only(top: 2),
           child: CinematicIcon(
             glyph: CinematicGlyph.spark,
-            size: 22,
+            size: AppMetrics.iconLg,
             accent: accent,
             framed: false,
           ),
@@ -467,9 +467,7 @@ class _MemoryHeader extends StatelessWidget {
                 height: 8,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(AppRadii.pill),
-                  color: i < filled
-                      ? accent
-                      : AppColors.textOnDark.withValues(alpha: 0.2),
+                  color: i < filled ? accent : a.progressTrack,
                 ),
               ),
             ],
@@ -730,7 +728,7 @@ class _BlankSlot extends StatelessWidget {
           Text(
             value!,
             style: verseStyle
-                .copyWith(color: AppColors.error, height: 1.2)
+                .copyWith(color: AppRoles.error, height: 1.2)
                 .copyWith(decoration: TextDecoration.lineThrough),
           ),
           Text(
@@ -739,7 +737,7 @@ class _BlankSlot extends StatelessWidget {
               size: fontSize * 0.85,
               weight: FontWeight.w600,
               height: 1.15,
-              color: accent,
+              color: AppRoles.success,
             ),
           ),
         ],
@@ -747,7 +745,18 @@ class _BlankSlot extends StatelessWidget {
     } else {
       slot = GestureDetector(
         onTap: revealed ? null : onTap,
-        child: Text(value!, style: verseStyle.copyWith(color: accent)),
+        // Antes de conferir: sublinhado claro de seleção; conferido: acerto.
+        child: Text(
+          value!,
+          style: revealed
+              ? verseStyle.copyWith(color: AppRoles.success)
+              : verseStyle.copyWith(
+                  color: AppRoles.selected,
+                  decoration: TextDecoration.underline,
+                  decorationColor: AppRoles.selected,
+                  decorationThickness: 2,
+                ),
+        ),
       );
     }
 
@@ -809,7 +818,7 @@ class _WordChip extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(AppRadii.xl),
-              color: used ? accent : Color.lerp(AppColors.card, accent, 0.16)!,
+              color: Color.lerp(AppColors.card, accent, 0.16)!,
               boxShadow: const [
                 BoxShadow(
                   color: AppColors.dropShadow,
@@ -818,12 +827,19 @@ class _WordChip extends StatelessWidget {
                 ),
               ],
             ),
+            // Palavra já posta: contorno escuro de seleção sobre o marfim.
+            foregroundDecoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(AppRadii.xl),
+              border: used
+                  ? Border.all(
+                      color: AppRoles.selectedOnLight,
+                      width: AppRoles.selectedOutlineWidth,
+                    )
+                  : null,
+            ),
             child: Text(
               label,
-              style: AppTypography.title(
-                size: 14,
-                color: AppColors.inkOnAccent,
-              ),
+              style: AppTypography.title(size: 14, color: AppColors.night),
             ),
           ),
         ),
@@ -848,7 +864,7 @@ class _RevealBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final color = correct ? accent : AppColors.error;
+    final color = correct ? AppRoles.success : AppRoles.error;
 
     return Column(
       children: [
@@ -864,7 +880,7 @@ class _RevealBanner extends StatelessWidget {
               children: [
                 CinematicIcon(
                   glyph: correct ? CinematicGlyph.check : CinematicGlyph.wrong,
-                  size: 22,
+                  size: AppMetrics.iconLg,
                   accent: color,
                   framed: false,
                 ),

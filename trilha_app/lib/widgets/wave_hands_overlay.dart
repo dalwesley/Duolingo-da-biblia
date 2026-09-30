@@ -129,7 +129,7 @@ class _WaveHandView extends StatelessWidget {
           child: CinematicIcon(
             glyph: CinematicGlyph.heart,
             size: hand.size,
-            accent: AppColors.accent,
+            accent: AppRoles.chrome,
             framed: false,
           ),
         ),
