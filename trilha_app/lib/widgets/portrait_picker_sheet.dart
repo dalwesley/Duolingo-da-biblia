@@ -108,13 +108,13 @@ class _PortraitChoice extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: AnimatedOpacity(
-        duration: const Duration(milliseconds: 180),
+        duration: AppMotion.quick,
         opacity: available || selected ? 1 : 0.72,
         child: Column(
           children: [
             AnimatedContainer(
-              duration: const Duration(milliseconds: 220),
-              curve: Curves.easeOutCubic,
+              duration: AppMotion.standard,
+              curve: AppMotion.enter,
               padding: const EdgeInsets.all(3),
               decoration: BoxDecoration(
                 shape: BoxShape.circle,

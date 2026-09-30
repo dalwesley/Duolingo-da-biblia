@@ -154,7 +154,7 @@ class _AwarenessCheck extends StatelessWidget {
             child: Row(
               children: [
                 AnimatedContainer(
-                  duration: const Duration(milliseconds: 160),
+                  duration: AppMotion.quick,
                   width: 22,
                   height: 22,
                   decoration: BoxDecoration(

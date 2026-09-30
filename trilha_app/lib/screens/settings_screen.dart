@@ -111,7 +111,7 @@ class _SettingsScreenState extends State<SettingsScreen>
     super.initState();
     _entrance = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 850),
+      duration: AppMotion.scene,
     )..forward();
     _loadGenesisMissions();
     _loadVersionLabel();
@@ -184,7 +184,7 @@ class _SettingsScreenState extends State<SettingsScreen>
     final start = (0.08 * index).clamp(0.0, 0.6);
     final end = (start + 0.36).clamp(0.0, 1.0);
     final curve = _entrance.drive(
-      CurveTween(curve: Interval(start, end, curve: Curves.easeOutCubic)),
+      CurveTween(curve: Interval(start, end, curve: AppMotion.enter)),
     );
     return FadeTransition(
       opacity: curve,
@@ -703,7 +703,7 @@ class _SettingsScreenState extends State<SettingsScreen>
             const LoginScreen(),
         transitionsBuilder: (context, animation, secondaryAnimation, child) =>
             FadeTransition(opacity: animation, child: child),
-        transitionDuration: const Duration(milliseconds: 400),
+        transitionDuration: AppMotion.gentle,
       ),
       (route) => false,
     );
@@ -1569,8 +1569,8 @@ class _RhythmNode extends StatelessWidget {
 
   Widget _dot(AppearanceStyle a) {
     return AnimatedContainer(
-      duration: const Duration(milliseconds: 240),
-      curve: Curves.easeOutCubic,
+      duration: AppMotion.standard,
+      curve: AppMotion.enter,
       width: selected ? 40 : 32,
       height: selected ? 40 : 32,
       alignment: Alignment.center,
@@ -1645,7 +1645,7 @@ class _RhythmCaption extends StatelessWidget {
         ),
         const SizedBox(height: 8),
         AnimatedContainer(
-          duration: const Duration(milliseconds: 220),
+          duration: AppMotion.standard,
           height: 2,
           width: selected ? 28 : 0,
           decoration: BoxDecoration(
@@ -1690,7 +1690,7 @@ class _LanguageSwitchState extends State<_LanguageSwitch>
     with SingleTickerProviderStateMixin {
   static const _langs = _LanguageSwitch.langs;
   static const _slideDuration = Duration(milliseconds: 520);
-  static const _slideCurve = Curves.easeOutCubic;
+  static const _slideCurve = AppMotion.enter;
 
   late final AnimationController _slide;
   double _downX = 0;
@@ -1978,7 +1978,7 @@ class _LanguageStageFace extends StatelessWidget {
     final color = Color.lerp(
       a.textSecondary,
       a.text,
-      Curves.easeOut.transform(focus),
+      AppMotion.enter.transform(focus),
     )!;
     return Padding(
       padding: const EdgeInsets.fromLTRB(2, 10, 2, 8),
@@ -2030,7 +2030,7 @@ class _LanguageStageFace extends StatelessWidget {
 class _SkySwitchState extends State<_SkySwitch> with TickerProviderStateMixin {
   static const _modes = _SkySwitch.modes;
   static const _slideDuration = Duration(milliseconds: 520);
-  static const _slideCurve = Curves.easeOutCubic;
+  static const _slideCurve = AppMotion.enter;
 
   late final AnimationController _slide;
   late final AnimationController _life;
@@ -2312,7 +2312,7 @@ class _SkyStageFace extends StatelessWidget {
     final color = Color.lerp(
       Appearance.of(context).textSecondary,
       accent,
-      Curves.easeOut.transform(focus),
+      AppMotion.enter.transform(focus),
     )!;
     return Padding(
       padding: const EdgeInsets.fromLTRB(2, 10, 2, 8),

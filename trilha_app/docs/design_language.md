@@ -339,3 +339,38 @@ Glossário por idioma (mesma regra "uma palavra, um sentido"):
 
 Tom em en: "you", frases curtas, sentence case. Em es: **tú** (não usted),
 imperativo de tú ("Continúa", "Invita").
+
+## Cinema (F0) e juice (híbrido)
+
+Direção: **filme no mundo, juice na recompensa.**
+
+- **Tempo** — `AppMotion`: `instant` 90 · `quick` 160 · `standard` 240 ·
+  `gentle` 360 · `slow` 520 · `scene` 820 ms; curvas `enter` (chega e pousa),
+  `exit`, `move`, `settle`. Todo `duration:` de UI usa um degrau.
+  `AppMotion.pop` / `spring` (quique) **só** quando algo é ganho: passos,
+  medalha, baú, veredito, travessia, lâmpada. Nunca em chrome ou leitura.
+- **Transição** — telas empurradas entram como aproximação de câmera
+  (`CinematicPageTransitionsBuilder`, no tema). iOS mantém a do sistema
+  (gesto de voltar). Abas trocam por dissolve.
+- **Voz** — títulos, palco e números grandes em Cormorant (`display`);
+  interface em Nunito (`title`, `label`, `body`, `cta`). Exo2 saiu.
+- **Luz** — `AppLight`: luz principal de cima-esquerda (`keyFrom`), véu nos
+  cards, gradação da estação litúrgica no céu, vinheta de lente.
+- **Sombra** — `AppLight.shadow` (macia). Lábio duro (`AppLight.lip`) **só**
+  nas placas de resposta da cena, onde o toque tem peso.
+
+## Grandes momentos (F3)
+
+`showSetPiece` + `SetPiece`: tela cheia, véu noite, luz do momento vinda de
+cima, emblema com quique, título serifado, uma linha e um botão. Som e
+háptica no mesmo frame do emblema. Toque adianta; "reduzir movimento" mostra
+o quadro final. Cada momento acontece **uma vez** (`SetPieceMemory`).
+
+| Momento | Quando | Luz | Som |
+|---|---|---|---|
+| Travessia | primeira entrada em cada cena-chefe | recompensa | — |
+| Marco de sequência | compromisso escolhido ou 7/30/50/100/200/365 dias | sequência | chama |
+| Nova estação | primeira abertura depois da virada litúrgica | cor da estação | conclusão |
+| Trilha concluída | fim da trilha (por modo) | recompensa | travessia |
+
+Momento novo usa o mesmo palco — não desenhe outro overlay.

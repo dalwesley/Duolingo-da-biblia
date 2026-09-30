@@ -167,11 +167,11 @@ class _DailyChestSheetState extends State<_DailyChestSheet>
     super.initState();
     _anticipation = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 900),
+      duration: AppMotion.scene,
     );
     _reveal = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 900),
+      duration: AppMotion.scene,
     );
     _pulse = AnimationController(
       vsync: this,
@@ -239,7 +239,7 @@ class _DailyChestSheetState extends State<_DailyChestSheet>
                 builder: (context, _) {
                   final breath = (math.sin(_pulse.value * math.pi * 2) + 1) / 2;
                   final intensity = reward != null
-                      ? Curves.easeOut.transform(_reveal.value)
+                      ? AppMotion.enter.transform(_reveal.value)
                       : 0.45 + _anticipation.value * 0.35;
                   return CustomPaint(
                     painter: MedalSpotlightPainter(
@@ -284,7 +284,7 @@ class _DailyChestSheetState extends State<_DailyChestSheet>
                       final breath =
                           (math.sin(_pulse.value * math.pi * 2) + 1) / 2;
                       final revealScale = reward != null
-                          ? Curves.elasticOut.transform(_reveal.value)
+                          ? AppMotion.spring.transform(_reveal.value)
                           : 1.0;
                       return Transform.rotate(
                         angle: wobble,

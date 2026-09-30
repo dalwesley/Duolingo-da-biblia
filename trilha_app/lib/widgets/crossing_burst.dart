@@ -203,9 +203,9 @@ class _CrossingBurstState extends State<_CrossingBurst>
 
   Widget _buildStart(double t) {
     final alpha = _span(t, 0, 0.08) * (1 - _span(t, 0.84, 1));
-    final walk = Curves.easeInOutCubic.transform(_span(t, 0.06, _arriveAt));
+    final walk = AppMotion.move.transform(_span(t, 0.06, _arriveAt));
     final arrived = t >= _arriveAt;
-    final pop = Curves.easeOutBack.transform(_span(t, 0, 0.12));
+    final pop = AppMotion.pop.transform(_span(t, 0, 0.12));
     // Pulinho ao chegar.
     final bump = arrived
         ? math.sin(_span(t, _arriveAt, _arriveAt + 0.14) * math.pi) * 0.14
@@ -215,12 +215,12 @@ class _CrossingBurstState extends State<_CrossingBurst>
         ? 0.0
         : math.sin(walk * math.pi * 7) * 4 * (1 - walk);
     final flash = arrived ? 1 - _span(t, _arriveAt, _arriveAt + 0.1) : 0.0;
-    final captionIn = Curves.easeOutBack.transform(
+    final captionIn = AppMotion.pop.transform(
       _span(t, _arriveAt + 0.08, 0.6),
     );
     // Aproxima devagar enquanto caminham — dá profundidade sem custo.
-    final zoom = 0.9 + 0.1 * Curves.easeOut.transform(_span(t, 0, _arriveAt));
-    final names = Curves.easeOut.transform(
+    final zoom = 0.9 + 0.1 * AppMotion.enter.transform(_span(t, 0, _arriveAt));
+    final names = AppMotion.enter.transform(
       _span(t, _arriveAt + 0.04, _arriveAt + 0.2),
     );
 
@@ -294,14 +294,14 @@ class _CrossingBurstState extends State<_CrossingBurst>
 
   Widget _buildLeave(double t) {
     final alpha = _span(t, 0, 0.1) * (1 - _span(t, 0.82, 1));
-    final fall = Curves.easeInCubic.transform(_span(t, _leaveAt, 0.85));
+    final fall = AppMotion.exit.transform(_span(t, _leaveAt, 0.85));
     final tremble = t < _leaveAt
         ? math.sin(_span(t, 0.1, _leaveAt) * math.pi * 9) *
               3 *
               _span(t, 0.1, _leaveAt)
         : 0.0;
     final pulse = 0.5 + 0.5 * math.sin(t * math.pi * 6);
-    final captionIn = Curves.easeOut.transform(_span(t, _leaveAt, 0.55));
+    final captionIn = AppMotion.enter.transform(_span(t, _leaveAt, 0.55));
 
     return Stack(
       fit: StackFit.expand,
@@ -651,7 +651,7 @@ class _StagePainter extends CustomPainter {
     final hoist = leave
         ? 1.0
         : arrived
-        ? Curves.easeOutCubic.transform(_span(t, arriveAt, arriveAt + 0.22))
+        ? AppMotion.enter.transform(_span(t, arriveAt, arriveAt + 0.22))
         : 0.0;
     _flag(canvas, lit: leave ? 0.75 : (arrived ? 1 : 0.35), hoist: hoist);
     _thread(
@@ -721,7 +721,7 @@ class _StagePainter extends CustomPainter {
     );
 
     // Hasteada: sobe do pé do mastro e abre enquanto sobe.
-    final unfurl = 0.25 + 0.75 * Curves.easeOutBack.transform(hoist);
+    final unfurl = 0.25 + 0.75 * AppMotion.pop.transform(hoist);
     final w = 72 * unfurl;
     const h = 44.0;
     final low = _Stage.poleBase + const Offset(0, -h - 6);
@@ -798,7 +798,7 @@ class _StagePainter extends CustomPainter {
   }
 
   void _arrival(Canvas canvas, double hit, double after) {
-    final ease = Curves.easeOutCubic.transform(hit);
+    final ease = AppMotion.enter.transform(hit);
     // Encontro entre os dois avatares.
     const meet = Offset(0, 62);
 
@@ -822,7 +822,7 @@ class _StagePainter extends CustomPainter {
     for (final (delay, color) in const [(0.0, _mine), (0.16, _theirs)]) {
       final w = ((hit - delay) / (1 - delay)).clamp(0.0, 1.0);
       if (w <= 0 || w >= 1) continue;
-      final e = Curves.easeOutCubic.transform(w);
+      final e = AppMotion.enter.transform(w);
       canvas.drawCircle(
         meet,
         40 + 130 * e,
@@ -837,7 +837,7 @@ class _StagePainter extends CustomPainter {
     for (final m in motes) {
       final u = ((after - m.delay) / (1 - m.delay)).clamp(0.0, 1.0);
       if (u <= 0 || u >= 1) continue;
-      final spread = Curves.easeOutCubic.transform((u * 3).clamp(0.0, 1.0));
+      final spread = AppMotion.enter.transform((u * 3).clamp(0.0, 1.0));
       final p =
           _Stage.poleTop +
           Offset(
@@ -900,7 +900,7 @@ class _HoldToConfirmCtaState extends State<HoldToConfirmCta>
     _pop =
         AnimationController(
           vsync: this,
-          duration: const Duration(milliseconds: 260),
+          duration: AppMotion.standard,
         )..addStatusListener((s) {
           if (s == AnimationStatus.completed) _handOff();
         });
@@ -928,7 +928,7 @@ class _HoldToConfirmCtaState extends State<HoldToConfirmCta>
       _fill.animateBack(
         0,
         duration: Duration(milliseconds: (260 * _fill.value).round() + 60),
-        curve: Curves.easeOut,
+        curve: AppMotion.enter,
       );
     }
   }
@@ -988,7 +988,7 @@ class _HoldToConfirmCtaState extends State<HoldToConfirmCta>
         onLongPressUp: enabled ? _release : null,
         onLongPressCancel: enabled ? _release : null,
         child: AnimatedOpacity(
-          duration: const Duration(milliseconds: 180),
+          duration: AppMotion.quick,
           opacity: enabled ? 1 : 0.45,
           child: AnimatedBuilder(
             animation: Listenable.merge([_fill, _pop]),

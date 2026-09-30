@@ -36,6 +36,7 @@ import '../widgets/verse_fill_panel.dart';
 import '../widgets/mission_listen_button.dart';
 import '../screens/celebration_screen.dart';
 import '../services/tts_service.dart';
+import '../widgets/set_piece.dart';
 import '../widgets/relic_panel.dart';
 import '../screens/difficulty_picker_screen.dart';
 
@@ -122,7 +123,7 @@ class _LessonScreenState extends State<LessonScreen>
     super.initState();
     _impactFlash = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 380),
+      duration: AppMotion.gentle,
     );
     _load();
   }
@@ -314,6 +315,25 @@ class _LessonScreenState extends State<LessonScreen>
     });
     // Eco usa o título PT canônico (persistência), não o overlay.
     unawaited(freshProgress.clearEchoIfArrived(mission.title));
+    if (mission.isBoss) unawaited(_openCrossing(mission));
+  }
+
+  /// Travessia: o primeiro passo em cada uma abre como um grande momento.
+  Future<void> _openCrossing(Mission mission) async {
+    if (!await SetPieceMemory.claim('crossing:${mission.slug}')) return;
+    if (!mounted) return;
+    final l10n = context.l10n;
+    await showSetPiece(
+      context,
+      SetPiece(
+        eyebrow: l10n.setPieceCrossingEyebrow,
+        title: mission.localizedTitle,
+        line: l10n.lessonIntroBossPulse(_exercises.length),
+        glyph: CinematicGlyph.crown,
+        light: AppRoles.reward,
+        cta: l10n.commonStart,
+      ),
+    );
   }
 
   /// Entrada bíblica: missão → estudo → atos. Leitura na tradução escolhida.
@@ -1014,9 +1034,9 @@ class _LessonScreenState extends State<LessonScreen>
                           // Um filho só: empilhar o painel anterior (com pulse
                           // vivo) + o novo dobrava o custo de paint na troca.
                           _Phase.quiz => AnimatedSwitcher(
-                            duration: const Duration(milliseconds: 220),
-                            switchInCurve: Curves.easeOutCubic,
-                            switchOutCurve: Curves.easeInCubic,
+                            duration: AppMotion.standard,
+                            switchInCurve: AppMotion.enter,
+                            switchOutCurve: AppMotion.exit,
                             layoutBuilder: (current, _) =>
                                 current ?? const SizedBox.shrink(),
                             transitionBuilder: (child, animation) {
@@ -1196,8 +1216,8 @@ class _ActProgress extends StatelessWidget {
             if (i > 0) const SizedBox(width: 4),
             Expanded(
               child: AnimatedContainer(
-                duration: const Duration(milliseconds: 320),
-                curve: Curves.easeOutCubic,
+                duration: AppMotion.gentle,
+                curve: AppMotion.enter,
                 height: i == index ? 8 : 5,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(AppRadii.pill),

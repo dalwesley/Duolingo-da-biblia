@@ -24,9 +24,7 @@ class _ActSkin {
   static const anim = Duration(milliseconds: 180);
   static const enter = Duration(milliseconds: 240);
 
-  static const plateShadow = [
-    BoxShadow(color: AppColors.dropShadow, blurRadius: 0, offset: Offset(0, 4)),
-  ];
+  static final plateShadow = AppLight.lip();
 
   /// Placa idle: poço elevado (não branco) — contraste no céu escuro.
   static const idleFill = AppColors.nightElevated;
@@ -233,7 +231,7 @@ class _ExercisePanelState extends State<ExercisePanel>
     // drive() não prende listener no controller (CurvedAnimation prenderia
     // um por build — e o painel reconstrói a cada toque).
     final curve = _enter.drive(
-      CurveTween(curve: Interval(start, end, curve: Curves.easeOutCubic)),
+      CurveTween(curve: Interval(start, end, curve: AppMotion.enter)),
     );
     return FadeTransition(
       opacity: curve,
@@ -1374,7 +1372,7 @@ class _BlankGap extends StatelessWidget {
         // um por build).
         opacity: pulse.drive(
           CurveTween(
-            curve: Curves.easeInOut,
+            curve: AppMotion.move,
           ).chain(Tween<double>(begin: 0.72, end: 1)),
         ),
         child: slot,
@@ -1662,8 +1660,8 @@ class _PressScaleState extends State<_PressScale> {
       onTap: widget.onTap,
       child: AnimatedScale(
         scale: _down ? 0.96 : 1,
-        duration: const Duration(milliseconds: 90),
-        curve: Curves.easeOut,
+        duration: AppMotion.instant,
+        curve: AppMotion.enter,
         child: widget.child,
       ),
     );
@@ -1716,7 +1714,7 @@ class _VerseMark extends StatelessWidget {
     final mark = AnimatedScale(
       scale: hot ? 1.04 : 1,
       duration: _ActSkin.anim,
-      curve: Curves.easeOutCubic,
+      curve: AppMotion.enter,
       child: DecoratedBox(
         decoration: BoxDecoration(
           color: wash,
@@ -1791,7 +1789,7 @@ class _WordChip extends StatelessWidget {
           opacity: used ? 0.38 : 1,
           child: AnimatedContainer(
             duration: _ActSkin.anim,
-            curve: Curves.easeOutCubic,
+            curve: AppMotion.enter,
             width: fill ? double.infinity : null,
             constraints: BoxConstraints(minHeight: fill ? 72 : 56),
             alignment: Alignment.center,
@@ -1843,7 +1841,7 @@ class _VfSlab extends StatelessWidget {
         depth: 4,
         child: AnimatedContainer(
           duration: _ActSkin.anim,
-          curve: Curves.easeOutCubic,
+          curve: AppMotion.enter,
           constraints: const BoxConstraints(minHeight: 96),
           alignment: Alignment.center,
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 16),
@@ -1916,7 +1914,7 @@ class _OptionTile extends StatelessWidget {
         depth: 4,
         child: AnimatedContainer(
           duration: _ActSkin.anim,
-          curve: Curves.easeOutCubic,
+          curve: AppMotion.enter,
           width: double.infinity,
           constraints: const BoxConstraints(minHeight: 64),
           alignment: Alignment.centerLeft,
@@ -2047,7 +2045,7 @@ class _OrderPiece extends StatelessWidget {
     final wellBorder = skin.wellBorder;
     return AnimatedContainer(
       duration: _ActSkin.anim,
-      curve: Curves.easeOutCubic,
+      curve: AppMotion.enter,
       width: double.infinity,
       constraints: const BoxConstraints(minHeight: 64),
       padding: const EdgeInsets.fromLTRB(12, 12, 10, 12),

@@ -6895,6 +6895,46 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get setPieceCrossingEyebrow => 'Crossing';
+
+  @override
+  String get setPieceSeasonEyebrow => 'New season';
+
+  @override
+  String get setPieceStreakEyebrow => 'Streak';
+
+  @override
+  String get setPieceStreakGoalLine =>
+      'Commitment kept. You came back every day.';
+
+  @override
+  String setPieceStreakLine(int count) {
+    return '$count days in a row on the path.';
+  }
+
+  @override
+  String setPieceStreakTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count days',
+      one: '1 day',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get setPieceTrailEyebrow => 'Trail complete';
+
+  @override
+  String setPieceTrailLine(String mode) {
+    return 'You reached the end in $mode mode.';
+  }
+
+  @override
+  String get setPieceTrailLineBase => 'You reached the end of this trail.';
+
+  @override
   String get settingsAbout => 'About';
 
   @override

@@ -481,7 +481,7 @@ class _BibleLibrary extends StatelessWidget {
                 duration: motion
                     ? Duration.zero
                     : const Duration(milliseconds: 220),
-                curve: Curves.easeOutCubic,
+                curve: AppMotion.enter,
                 alignment: Alignment.topCenter,
                 child: open
                     ? Column(
@@ -606,7 +606,7 @@ class _FoldHeader extends StatelessWidget {
                 duration: motion
                     ? Duration.zero
                     : const Duration(milliseconds: 220),
-                curve: Curves.easeOutCubic,
+                curve: AppMotion.enter,
                 child: ListChevron(color: a.textFaint),
               ),
             ),
@@ -934,7 +934,7 @@ class _SeasonVerseCardState extends State<_SeasonVerseCard> {
             builder: (context, snap) {
               final text = snap.data;
               return AnimatedSwitcher(
-                duration: const Duration(milliseconds: 240),
+                duration: AppMotion.standard,
                 child: Text(
                   text == null ? ' ' : '“${text.trim()}”',
                   key: ValueKey(text == null),

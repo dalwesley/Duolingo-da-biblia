@@ -168,8 +168,8 @@ class _HorizonSlotState extends State<_HorizonSlot> {
       onPointerCancel: (_) => setState(() => _pressed = false),
       child: AnimatedScale(
         scale: _pressed ? 0.985 : 1,
-        duration: const Duration(milliseconds: 160),
-        curve: Curves.easeOutCubic,
+        duration: AppMotion.quick,
+        curve: AppMotion.enter,
         child: SizedBox(
           height: _hasSecondary ? 292 : 232,
           child: DecoratedBox(

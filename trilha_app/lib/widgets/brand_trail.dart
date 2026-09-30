@@ -533,7 +533,7 @@ class _TrailSceneState extends State<TrailScene> {
   @override
   Widget build(BuildContext context) {
     final calm = MediaQuery.of(context).disableAnimations;
-    final t = calm ? 1.0 : Curves.easeInOutCubic.transform(widget.reveal);
+    final t = calm ? 1.0 : AppMotion.move.transform(widget.reveal);
     return RepaintBoundary(
       child: CustomPaint(
         painter: _TrailScenePainter(

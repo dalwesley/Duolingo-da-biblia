@@ -85,7 +85,7 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen>
     super.initState();
     _enter = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 900),
+      duration: AppMotion.scene,
     )..forward();
     _load();
   }
@@ -147,7 +147,7 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen>
                   FadeTransition(
                     opacity: CurvedAnimation(
                       parent: _enter,
-                      curve: const Interval(0, 0.4, curve: Curves.easeOut),
+                      curve: const Interval(0, 0.4, curve: AppMotion.enter),
                     ),
                     child: Column(
                       children: [
@@ -183,7 +183,7 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen>
                       curve: const Interval(
                         0.2,
                         0.8,
-                        curve: Curves.easeOutCubic,
+                        curve: AppMotion.enter,
                       ),
                     ),
                     child: ModeCarousel(

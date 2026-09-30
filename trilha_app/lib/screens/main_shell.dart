@@ -31,6 +31,7 @@ import '../widgets/main_bottom_nav.dart';
 import '../widgets/shell_tab_scope.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
+import '../widgets/set_piece.dart';
 import '../services/content_catalog_service.dart';
 import 'bible_screen.dart';
 import 'home_screen.dart';
@@ -108,6 +109,27 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
   DateTime? _lastResumeHydrateAt;
   static const _resumeHydrateMinInterval = Duration(seconds: 20);
 
+  /// Virada da estação litúrgica: a primeira abertura depois dela abre
+  /// como um grande momento (luz da estação, nome e frase).
+  Future<void> _maybeSeasonTurn() async {
+    final moment = LiturgicalCalendar.momentFor();
+    if (!await SetPieceMemory.seasonTurned(moment.season.name)) return;
+    await Future<void>.delayed(AppMotion.slow);
+    if (!mounted) return;
+    await showSetPiece(
+      context,
+      SetPiece(
+        eyebrow: context.l10n.setPieceSeasonEyebrow,
+        title: moment.title,
+        line: moment.subtitle,
+        glyph: CinematicGlyph.calendar,
+        light: LiturgicalCalendar.accentOf(moment.season),
+        cta: context.l10n.commonContinue,
+        sound: SetPieceSound.complete,
+      ),
+    );
+  }
+
   @override
   void initState() {
     super.initState();
@@ -129,6 +151,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     InviteDeepLinkService.instance.addListener(_onInviteDeepLink);
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
+      unawaited(_maybeSeasonTurn());
       _progressRef = context.read<ProgressService>();
       _progressRef!.addListener(_onProgressChanged);
       _backendRef = context.read<BackendService>();
@@ -607,15 +630,15 @@ class _TabFadeState extends State<_TabFade>
     with SingleTickerProviderStateMixin {
   late final AnimationController _c = AnimationController(
     vsync: this,
-    duration: const Duration(milliseconds: 240),
+    duration: AppMotion.gentle,
     value: 1,
   );
   late final Animation<double> _t = CurvedAnimation(
     parent: _c,
-    curve: Curves.easeOutCubic,
+    curve: AppMotion.enter,
   );
   late final Animation<double> _opacity = Tween<double>(
-    begin: 0.35,
+    begin: 0.15,
     end: 1,
   ).animate(_t);
   late final Animation<Offset> _lift = Tween<Offset>(

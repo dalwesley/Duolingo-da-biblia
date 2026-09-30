@@ -41,6 +41,7 @@ import '../widgets/share_seal_card.dart';
 import '../widgets/share_streak_button.dart';
 import '../widgets/streak_repair_banner.dart';
 import '../widgets/ui_primitives.dart';
+import '../widgets/set_piece.dart';
 import '../widgets/user_avatar.dart';
 import 'lesson_screen.dart';
 import 'trail_map_screen.dart';
@@ -135,80 +136,80 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     );
     _claimPop = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 520),
+      duration: AppMotion.slow,
     );
     _claimScale = TweenSequence<double>([
       TweenSequenceItem(
         tween: Tween(
           begin: 1.0,
           end: 1.14,
-        ).chain(CurveTween(curve: Curves.easeOutBack)),
+        ).chain(CurveTween(curve: AppMotion.pop)),
         weight: 45,
       ),
       TweenSequenceItem(
         tween: Tween(
           begin: 1.14,
           end: 1.0,
-        ).chain(CurveTween(curve: Curves.easeOutCubic)),
+        ).chain(CurveTween(curve: AppMotion.enter)),
         weight: 55,
       ),
     ]).animate(_claimPop);
 
     _heroScale = CurvedAnimation(
       parent: _entrance,
-      curve: const Interval(0.0, 0.55, curve: Curves.elasticOut),
+      curve: const Interval(0.0, 0.55, curve: AppMotion.spring),
     );
     _heroGlow = CurvedAnimation(
       parent: _entrance,
-      curve: const Interval(0.0, 0.45, curve: Curves.easeOut),
+      curve: const Interval(0.0, 0.45, curve: AppMotion.enter),
     );
     _titleOpacity = CurvedAnimation(
       parent: _entrance,
-      curve: const Interval(0.28, 0.58, curve: Curves.easeOut),
+      curve: const Interval(0.28, 0.58, curve: AppMotion.enter),
     );
     _titleSlide = Tween<Offset>(begin: const Offset(0, 0.18), end: Offset.zero)
         .animate(
           CurvedAnimation(
             parent: _entrance,
-            curve: const Interval(0.28, 0.62, curve: Curves.easeOutCubic),
+            curve: const Interval(0.28, 0.62, curve: AppMotion.enter),
           ),
         );
     _bodyOpacity = CurvedAnimation(
       parent: _entrance,
-      curve: const Interval(0.38, 0.68, curve: Curves.easeOut),
+      curve: const Interval(0.38, 0.68, curve: AppMotion.enter),
     );
     _bodySlide = Tween<Offset>(begin: const Offset(0, 0.12), end: Offset.zero)
         .animate(
           CurvedAnimation(
             parent: _entrance,
-            curve: const Interval(0.38, 0.72, curve: Curves.easeOutCubic),
+            curve: const Interval(0.38, 0.72, curve: AppMotion.enter),
           ),
         );
     _statsOpacity = CurvedAnimation(
       parent: _entrance,
-      curve: const Interval(0.48, 0.78, curve: Curves.easeOut),
+      curve: const Interval(0.48, 0.78, curve: AppMotion.enter),
     );
     _statsSlide = Tween<Offset>(begin: const Offset(0, 0.2), end: Offset.zero)
         .animate(
           CurvedAnimation(
             parent: _entrance,
-            curve: const Interval(0.48, 0.82, curve: Curves.easeOutCubic),
+            curve: const Interval(0.48, 0.82, curve: AppMotion.enter),
           ),
         );
     _ctaOpacity = CurvedAnimation(
       parent: _entrance,
-      curve: const Interval(0.62, 1.0, curve: Curves.easeOut),
+      curve: const Interval(0.62, 1.0, curve: AppMotion.enter),
     );
     _ctaSlide = Tween<Offset>(begin: const Offset(0, 0.28), end: Offset.zero)
         .animate(
           CurvedAnimation(
             parent: _entrance,
-            curve: const Interval(0.62, 1.0, curve: Curves.easeOutCubic),
+            curve: const Interval(0.62, 1.0, curve: AppMotion.enter),
           ),
         );
     _countProgress = CurvedAnimation(
       parent: _count,
-      curve: Curves.easeOutCubic,
+      curve: AppMotion.enter,
     );
 
     _count.addStatusListener((status) {
@@ -357,6 +358,9 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                 progress.streak > (_streakBefore ?? 0)) {
               setState(() => _streakUp = true);
             }
+            if (mounted && !widget.failed && !_noProgress) {
+              unawaited(_runSetPieces(progress));
+            }
             final now = DateTime.now();
             final today = DateTime(now.year, now.month, now.day);
             final campaign = SeasonWalkCatalog.current(today);
@@ -500,6 +504,69 @@ class _CelebrationScreenState extends State<CelebrationScreen>
       }
     } catch (_) {
       if (mounted) setState(() => _hookResolved = true);
+    }
+  }
+
+  /// Grandes momentos depois que a celebração assenta: marco de sequência
+  /// e fim de trilha. Cada um acontece uma vez só, em sequência.
+  Future<void> _runSetPieces(ProgressService progress) async {
+    final pieces = <SetPiece>[];
+    final l10n = context.l10n;
+
+    final streak = progress.streak;
+    final goal = progress.settings.streakGoal;
+    if (_streakUp &&
+        SetPieceMemory.isStreakMilestone(streak, goal: goal) &&
+        await SetPieceMemory.claim('streak:$streak')) {
+      pieces.add(
+        SetPiece(
+          eyebrow: l10n.setPieceStreakEyebrow,
+          title: l10n.setPieceStreakTitle(streak),
+          line: streak == goal
+              ? l10n.setPieceStreakGoalLine
+              : l10n.setPieceStreakLine(streak),
+          glyph: CinematicGlyph.flame,
+          light: AppRoles.streak,
+          cta: l10n.commonContinue,
+          sound: SetPieceSound.streak,
+        ),
+      );
+    }
+
+    final trail = await TrailRepository().getTrailBySlug(widget.trailSlug);
+    if (trail != null &&
+        TrailProgress.isTrailCompleted(trail, progress.completedMissions)) {
+      final banked = trailUsesDifficultyBank(widget.trailSlug);
+      final modeId = banked
+          ? (progress.difficultyForTrail(widget.trailSlug) ??
+                TrailDifficulty.semente.id)
+          : null;
+      final mode = modeId == null ? null : TrailDifficulty.fromId(modeId);
+      if (await SetPieceMemory.claim(
+        'trailEnd:${widget.trailSlug}:${modeId ?? 'base'}',
+      )) {
+        pieces.add(
+          SetPiece(
+            eyebrow: l10n.setPieceTrailEyebrow,
+            title: trail.localizedTitle,
+            line: mode == null
+                ? l10n.setPieceTrailLineBase
+                : l10n.setPieceTrailLine(mode.labelPt),
+            glyph: CinematicGlyph.flag,
+            light: AppRoles.reward,
+            cta: l10n.commonContinue,
+            sound: SetPieceSound.crossing,
+          ),
+        );
+      }
+    }
+
+    if (pieces.isEmpty) return;
+    // Deixa a celebração contar os passos antes de chamar a cena grande.
+    await Future<void>.delayed(const Duration(milliseconds: 2600));
+    for (final piece in pieces) {
+      if (!mounted) return;
+      await showSetPiece(context, piece);
     }
   }
 
@@ -1179,7 +1246,7 @@ class _StreakIgniteState extends State<_StreakIgnite>
     with SingleTickerProviderStateMixin {
   late final AnimationController _c = AnimationController(
     vsync: this,
-    duration: const Duration(milliseconds: 900),
+    duration: AppMotion.scene,
   );
 
   @override
@@ -1215,10 +1282,10 @@ class _StreakIgniteState extends State<_StreakIgnite>
       animation: _c,
       builder: (context, _) {
         final t = _c.value;
-        final pop = Curves.elasticOut.transform(t);
+        final pop = AppMotion.spring.transform(t);
         final glow = math.sin(t * math.pi);
         return Opacity(
-          opacity: Curves.easeOut.transform((t * 2).clamp(0.0, 1.0)),
+          opacity: AppMotion.enter.transform((t * 2).clamp(0.0, 1.0)),
           child: Transform.scale(
             scale: 0.7 + 0.3 * pop,
             child: GlassCard(

@@ -58,7 +58,7 @@ class RoomWeekBar extends StatelessWidget {
             if (i > 0) const SizedBox(width: 3),
             Expanded(
               child: AnimatedContainer(
-                duration: const Duration(milliseconds: 400),
+                duration: AppMotion.gentle,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(AppRadii.pill),
                   color: switch (seatStateOf(ordered[i])) {
@@ -334,7 +334,7 @@ class _WeekTrack extends StatelessWidget {
         duration: reduce
             ? Duration.zero
             : Duration(milliseconds: 700 + 90 * delay.clamp(0, 8)),
-        curve: Curves.easeOutCubic,
+        curve: AppMotion.enter,
         builder: (context, v, _) => CustomPaint(
           painter: _TrackPainter(
             value: v,

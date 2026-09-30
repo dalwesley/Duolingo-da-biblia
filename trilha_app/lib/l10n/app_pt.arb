@@ -4828,6 +4828,36 @@
       }
     }
   },
+  "setPieceCrossingEyebrow": "Travessia",
+  "setPieceSeasonEyebrow": "Nova estação",
+  "setPieceStreakEyebrow": "Sequência",
+  "setPieceStreakGoalLine": "Compromisso cumprido. Você voltou todos os dias.",
+  "setPieceStreakLine": "{count} dias seguidos no caminho.",
+  "@setPieceStreakLine": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "setPieceStreakTitle": "{count, plural, =1{1 dia} other{{count} dias}}",
+  "@setPieceStreakTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "setPieceTrailEyebrow": "Trilha concluída",
+  "setPieceTrailLine": "Você chegou ao fim no modo {mode}.",
+  "@setPieceTrailLine": {
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "setPieceTrailLineBase": "Você chegou ao fim desta trilha.",
   "settingsAbout": "Sobre",
   "settingsAboutPage": "Conheça o Stway",
   "settingsAboutPageSubtitle": "Nome, missão, visão e valores",

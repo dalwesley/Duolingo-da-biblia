@@ -128,8 +128,8 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
         );
         _scrollController.animateTo(
           target,
-          duration: const Duration(milliseconds: 700),
-          curve: Curves.easeOutCubic,
+          duration: AppMotion.scene,
+          curve: AppMotion.enter,
         );
       });
     });

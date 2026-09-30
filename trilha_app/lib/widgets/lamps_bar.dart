@@ -60,11 +60,11 @@ class LampsBar extends StatelessWidget {
           ),
           child: AnimatedScale(
             scale: flashing ? 1.18 : (on ? 1 : 0.9),
-            duration: const Duration(milliseconds: 240),
-            curve: Curves.easeOutBack,
+            duration: AppMotion.standard,
+            curve: AppMotion.pop,
             child: AnimatedOpacity(
               opacity: flashing ? 1 : (on ? 1 : 0.32),
-              duration: const Duration(milliseconds: 220),
+              duration: AppMotion.standard,
               child: CustomPaint(
                 size: Size(iconW, iconH),
                 painter: LanternPainter(lit: on || flashing, color: color),

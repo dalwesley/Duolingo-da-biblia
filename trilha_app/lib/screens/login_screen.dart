@@ -100,7 +100,7 @@ class _LoginScreenState extends State<LoginScreen> {
         pageBuilder: (_, _, _) => next,
         transitionsBuilder: (_, a, _, c) =>
             FadeTransition(opacity: a, child: c),
-        transitionDuration: const Duration(milliseconds: 480),
+        transitionDuration: AppMotion.slow,
       ),
     );
   }

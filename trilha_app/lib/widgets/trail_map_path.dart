@@ -261,8 +261,8 @@ class _MissionSceneCard extends StatelessWidget {
     final radius = BorderRadius.circular(StagePlate.radius);
     // Palco segue o visual (manhã/tarde/noite), não o noturno fixo.
     final card = AnimatedContainer(
-      duration: const Duration(milliseconds: 280),
-      curve: Curves.easeOutCubic,
+      duration: AppMotion.standard,
+      curve: AppMotion.enter,
       decoration: StagePlate.decoration(accent: accent, lit: _current).copyWith(
         color: Color.lerp(a.cardFill, accent, _current ? 0.1 : 0.04),
       ),

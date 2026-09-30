@@ -1,14 +1,20 @@
+import 'package:flutter/cupertino.dart' show CupertinoPageTransitionsBuilder;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 export 'app_colors.dart';
+export 'app_light.dart';
+export 'app_motion.dart';
+export 'app_transitions.dart';
 
 import 'app_colors.dart';
+import 'app_light.dart';
+import 'app_transitions.dart';
 
 /// Tema STWAY — tipografia, raios, espaçamento e ThemeData.
 /// Cores: ver [AppColors] em `app_colors.dart` (fonte única).
 ///
-/// Visual ~70% game: Exo 2 (HUD/títulos) + Nunito (corpo), raios de painel.
+/// Voz de filme: Cormorant (títulos e versículo) + Nunito (interface).
 class AppGradients {
   static const hero = LinearGradient(
     begin: Alignment.topLeft,
@@ -30,7 +36,7 @@ class AppGradients {
 /// próximo (empate desce, para nunca estourar layout). Assim um `size: 15`
 /// perdido vira 14 e a tela inteira fala a mesma língua.
 class AppTypeScale {
-  /// Títulos de tela e palco (Exo 2 pesado).
+  /// Títulos de tela e palco (Cormorant — a voz do filme).
   static const display = <double>[18, 20, 24, 28, 32, 40, 48];
 
   /// Títulos de card, linha e número de HUD.
@@ -83,7 +89,17 @@ class AppTypography {
     return _cache[key] = make();
   }
 
-  /// Headlines de UI / jogo — geometric game.
+  /// Serifa de filme: o olho pequeno da Cormorant pede ~12% a mais para
+  /// ocupar o mesmo espaço visual do degrau pedido.
+  static const _serifOptical = 1.12;
+
+  /// Cormorant só tem até Bold (700): pesos maiores caem nele, sem baixar
+  /// variante da rede.
+  static FontWeight _serifWeight(FontWeight w) => w.value >= 700
+      ? FontWeight.w700
+      : (w.value >= 600 ? FontWeight.w600 : FontWeight.w500);
+
+  /// Títulos de tela, palco e números grandes — a voz do filme (serifa).
   static TextStyle display({
     double size = 28,
     FontWeight weight = FontWeight.w800,
@@ -97,13 +113,13 @@ class AppTypography {
         : AppTypeScale.snap(size, AppTypeScale.display);
     return _cached(
       (#display, fontSize, weight, color, height, fontStyle),
-      () => GoogleFonts.exo2(
-        fontSize: fontSize,
-        fontWeight: weight,
+      () => GoogleFonts.cormorantGaramond(
+        fontSize: fontSize * _serifOptical,
+        fontWeight: _serifWeight(weight),
         color: color,
         height: height,
         fontStyle: fontStyle,
-        letterSpacing: -0.3,
+        letterSpacing: 0,
       ),
     );
   }
@@ -166,12 +182,12 @@ class AppTypography {
     final fontSize = exact ? size : AppTypeScale.snap(size, AppTypeScale.title);
     return _cached(
       (#title, fontSize, weight, color, height),
-      () => GoogleFonts.exo2(
+      () => GoogleFonts.nunito(
         fontSize: fontSize,
         fontWeight: weight,
         color: color,
         height: height,
-        letterSpacing: -0.2,
+        letterSpacing: -0.1,
       ),
     );
   }
@@ -205,7 +221,7 @@ class AppTypography {
     final fontSize = exact ? size : AppTypeScale.snap(size, AppTypeScale.label);
     return _cached(
       (#label, fontSize, weight, color, letterSpacing),
-      () => GoogleFonts.exo2(
+      () => GoogleFonts.nunito(
         fontSize: fontSize,
         fontWeight: weight,
         color: color,
@@ -222,11 +238,11 @@ class AppTypography {
     final fontSize = exact ? size : AppTypeScale.snap(size, AppTypeScale.cta);
     return _cached(
       (#cta, fontSize, color),
-      () => GoogleFonts.exo2(
+      () => GoogleFonts.nunito(
         fontSize: fontSize,
-        fontWeight: FontWeight.w900,
+        fontWeight: FontWeight.w800,
         color: color,
-        letterSpacing: 1.0,
+        letterSpacing: 0.4,
       ),
     );
   }
@@ -288,6 +304,18 @@ class AppTheme {
     );
 
     return base.copyWith(
+      // Toda tela empurrada entra como aproximação de câmera. iOS mantém a
+      // transição do sistema para não perder o gesto de voltar deslizando.
+      pageTransitionsTheme: const PageTransitionsTheme(
+        builders: {
+          TargetPlatform.android: CinematicPageTransitionsBuilder(),
+          TargetPlatform.iOS: CupertinoPageTransitionsBuilder(),
+          TargetPlatform.macOS: CupertinoPageTransitionsBuilder(),
+          TargetPlatform.fuchsia: CinematicPageTransitionsBuilder(),
+          TargetPlatform.linux: CinematicPageTransitionsBuilder(),
+          TargetPlatform.windows: CinematicPageTransitionsBuilder(),
+        },
+      ),
       splashFactory: NoSplash.splashFactory,
       splashColor: Colors.transparent,
       highlightColor: Colors.transparent,
@@ -399,16 +427,6 @@ class AppTheme {
   ];
 
   /// Sombra neutra — preferir [AppMetrics.cardShadow] quando houver accent/elevação.
-  static List<BoxShadow> cardShadow({bool elevated = false}) => [
-    BoxShadow(
-      color: Colors.black.withValues(alpha: elevated ? 0.55 : 0.4),
-      offset: Offset(0, elevated ? 5 : 4),
-      blurRadius: 0,
-    ),
-    BoxShadow(
-      color: Colors.black.withValues(alpha: elevated ? 0.28 : 0.18),
-      blurRadius: elevated ? 18 : 12,
-      offset: Offset(0, elevated ? 10 : 6),
-    ),
-  ];
+  static List<BoxShadow> cardShadow({bool elevated = false}) =>
+      AppLight.shadow(elevated: elevated);
 }

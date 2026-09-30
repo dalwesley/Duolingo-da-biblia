@@ -773,7 +773,7 @@ class _KindChip extends StatelessWidget {
         onTap();
       },
       child: AnimatedContainer(
-        duration: const Duration(milliseconds: 160),
+        duration: AppMotion.quick,
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 9),
         decoration: BoxDecoration(
           color: selected
@@ -1065,7 +1065,7 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
               ),
               const SizedBox(height: AppSpace.md),
               AnimatedSwitcher(
-                duration: const Duration(milliseconds: 320),
+                duration: AppMotion.gentle,
                 child: stage == null
                     ? const SizedBox(
                         key: ValueKey('loading'),

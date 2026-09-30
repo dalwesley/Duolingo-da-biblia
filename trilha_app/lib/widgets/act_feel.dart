@@ -39,8 +39,8 @@ class _ActPressState extends State<ActPress> {
       onTapCancel: enabled ? () => setState(() => _down = false) : null,
       onTap: widget.onTap,
       child: AnimatedContainer(
-        duration: const Duration(milliseconds: 80),
-        curve: Curves.easeOut,
+        duration: AppMotion.instant,
+        curve: AppMotion.enter,
         transform: Matrix4.translationValues(
           0,
           enabled && _down ? widget.depth : 0,
@@ -72,7 +72,7 @@ class _ActShakeState extends State<ActShake>
     super.initState();
     _ctrl = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 280),
+      duration: AppMotion.standard,
     );
     if (widget.active) _queuePlay();
   }
@@ -137,7 +137,7 @@ class _ActSparkBurstState extends State<ActSparkBurst>
     super.initState();
     _ctrl = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 780),
+      duration: AppMotion.scene,
     );
     _sparks = _spawn(42);
     if (widget.active) _ctrl.forward(from: 0);
@@ -223,7 +223,7 @@ class _SparkPainter extends CustomPainter {
     for (final s in sparks) {
       final t = ((progress - s.delay) / (1 - s.delay)).clamp(0.0, 1.0);
       if (t <= 0) continue;
-      final ease = Curves.easeOutCubic.transform(t);
+      final ease = AppMotion.enter.transform(t);
       final fade = (1 - t);
       final p =
           origin + Offset(math.cos(s.angle), math.sin(s.angle)) * s.dist * ease;
@@ -252,7 +252,7 @@ class ActDragProxy extends StatelessWidget {
     return AnimatedBuilder(
       animation: animation,
       builder: (context, child) {
-        final t = Curves.easeOutCubic.transform(animation.value);
+        final t = AppMotion.enter.transform(animation.value);
         return Transform.rotate(
           angle: 0.03 * t,
           child: Transform.scale(
@@ -296,7 +296,7 @@ class ActLetterWell extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AnimatedContainer(
-      duration: const Duration(milliseconds: 180),
+      duration: AppMotion.quick,
       width: 28,
       height: 28,
       alignment: Alignment.center,
@@ -339,7 +339,7 @@ class _ActFloatLabelState extends State<ActFloatLabel>
     super.initState();
     _ctrl = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 720),
+      duration: AppMotion.scene,
     )..forward();
   }
 
@@ -355,7 +355,7 @@ class _ActFloatLabelState extends State<ActFloatLabel>
       child: AnimatedBuilder(
         animation: _ctrl,
         builder: (context, child) {
-          final t = Curves.easeOutCubic.transform(_ctrl.value);
+          final t = AppMotion.enter.transform(_ctrl.value);
           final fade = _ctrl.value < 0.55
               ? 1.0
               : (1 - ((_ctrl.value - 0.55) / 0.45)).clamp(0.0, 1.0);
@@ -366,7 +366,7 @@ class _ActFloatLabelState extends State<ActFloatLabel>
               child: Transform.scale(
                 scale: 0.82 +
                     0.28 *
-                        Curves.easeOutBack.transform(
+                        AppMotion.pop.transform(
                           (_ctrl.value / 0.45).clamp(0.0, 1.0),
                         ),
                 child: child,

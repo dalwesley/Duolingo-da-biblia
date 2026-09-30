@@ -173,7 +173,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
   void _pickSky(AppearanceMode mode) {
     if (mode == _sky) return;
     ActHaptics.tap();
-    final shown = Curves.easeInOutCubic.transform(_world.value);
+    final shown = AppMotion.move.transform(_world.value);
     setState(() {
       _fromWorld = TrailShot.lerp(_fromWorld, _toWorld, shown);
       _sky = mode;
@@ -248,7 +248,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
 
     _cut = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 320),
+      duration: AppMotion.gentle,
     );
 
     // Já está no cache da splash; o fundo repinta a cada quadro.
@@ -317,8 +317,8 @@ class _OnboardingScreenState extends State<OnboardingScreen>
 
     await _cut.animateTo(
       1,
-      duration: const Duration(milliseconds: 260),
-      curve: Curves.easeInCubic,
+      duration: AppMotion.standard,
+      curve: AppMotion.exit,
     );
     if (!mounted) return;
 
@@ -337,8 +337,8 @@ class _OnboardingScreenState extends State<OnboardingScreen>
     unawaited(
       _cut.animateTo(
         0,
-        duration: const Duration(milliseconds: 560),
-        curve: Curves.easeOutCubic,
+        duration: AppMotion.slow,
+        curve: AppMotion.enter,
       ),
     );
     unawaited(_scene.forward());
@@ -384,8 +384,8 @@ class _OnboardingScreenState extends State<OnboardingScreen>
       if (!mounted) return;
       await _cut.animateTo(
         1,
-        duration: const Duration(milliseconds: 460),
-        curve: Curves.easeInOutCubic,
+        duration: AppMotion.slow,
+        curve: AppMotion.move,
       );
       if (!mounted) return;
       await Navigator.of(context).pushReplacement(
@@ -397,11 +397,11 @@ class _OnboardingScreenState extends State<OnboardingScreen>
               FadeTransition(
                 opacity: CurvedAnimation(
                   parent: animation,
-                  curve: Curves.easeInOutCubic,
+                  curve: AppMotion.move,
                 ),
                 child: child,
               ),
-          transitionDuration: const Duration(milliseconds: 780),
+          transitionDuration: AppMotion.scene,
         ),
       );
     } catch (e) {
@@ -458,12 +458,12 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                           ? const Interval(
                               0.8,
                               0.96,
-                              curve: Curves.easeOutCubic,
+                              curve: AppMotion.enter,
                             )
                           : const Interval(
                               0.64,
                               0.94,
-                              curve: Curves.easeOutCubic,
+                              curve: AppMotion.enter,
                             ))
                       .transform(_scene.value);
               final ctaLabel = _ctaLabel(l10n);
@@ -767,7 +767,7 @@ class _Reveal extends StatelessWidget {
       builder: (context, child) {
         final span = (to - from).clamp(0.01, 1.0);
         final raw = ((scene.value - from) / span).clamp(0.0, 1.0);
-        final t = Curves.easeOutCubic.transform(raw);
+        final t = AppMotion.enter.transform(raw);
         return Opacity(
           opacity: t,
           child: Transform.translate(
@@ -798,7 +798,7 @@ class _Kicker extends StatelessWidget {
         const from = 0.06;
         const to = 0.34;
         final raw = ((scene.value - from) / (to - from)).clamp(0.0, 1.0);
-        final t = Curves.easeOutCubic.transform(raw);
+        final t = AppMotion.enter.transform(raw);
         return Opacity(
           opacity: t,
           child: FittedBox(fit: BoxFit.scaleDown, child: SectionLabel(text)),
@@ -877,7 +877,7 @@ class _OriginBeat extends StatelessWidget {
       child: AnimatedBuilder(
         animation: scene,
         builder: (context, child) {
-          final out = Curves.easeInCubic.transform(
+          final out = AppMotion.exit.transform(
             ((scene.value - GenesisHero.flashAt) / 0.1).clamp(0.0, 1.0),
           );
           if (out >= 1) return const SizedBox.shrink();
@@ -932,7 +932,7 @@ class _OriginBeat extends StatelessWidget {
                       final k = const Interval(
                         GenesisHero.flashAt - 0.03,
                         GenesisHero.flashAt + 0.02,
-                        curve: Curves.easeInOut,
+                        curve: AppMotion.move,
                       ).transform(scene.value);
                       return Text(
                         'e houve luz.',
@@ -991,7 +991,7 @@ class _Mist extends StatelessWidget {
       animation: scene,
       builder: (context, child) {
         final raw = ((scene.value - from) / (to - from)).clamp(0.0, 1.0);
-        final t = Curves.easeOut.transform(raw);
+        final t = AppMotion.enter.transform(raw);
         final sigma = blur * (1 - t);
         Widget out = Transform.translate(
           offset: Offset(0, rise * (1 - t)),
@@ -1089,7 +1089,7 @@ class _HabitBeat extends StatelessWidget {
                         },
                       ),
                       AnimatedSwitcher(
-                        duration: const Duration(milliseconds: 320),
+                        duration: AppMotion.gentle,
                         transitionBuilder: (child, anim) => FadeTransition(
                           opacity: anim,
                           child: ScaleTransition(
@@ -1372,7 +1372,7 @@ class _ChoiceRow<T> extends StatelessWidget {
         ),
         const SizedBox(height: 8),
         AnimatedSwitcher(
-          duration: const Duration(milliseconds: 220),
+          duration: AppMotion.standard,
           child: Text(
             current?.caption ?? '',
             key: ValueKey(current?.value),
@@ -1672,8 +1672,8 @@ class _HoldCtaState extends State<_HoldCta>
     _tick = 0;
     _hold.animateBack(
       0,
-      duration: const Duration(milliseconds: 260),
-      curve: Curves.easeOutCubic,
+      duration: AppMotion.standard,
+      curve: AppMotion.enter,
     );
   }
 
@@ -1866,8 +1866,8 @@ class _OptionCard extends StatelessWidget {
         onTap: onTap,
         behavior: HitTestBehavior.opaque,
         child: AnimatedContainer(
-          duration: const Duration(milliseconds: 220),
-          curve: Curves.easeOutCubic,
+          duration: AppMotion.standard,
+          curve: AppMotion.enter,
           height: short ? 52 : 58,
           padding: const EdgeInsets.symmetric(horizontal: 16),
           decoration: BoxDecoration(
@@ -1944,7 +1944,7 @@ class _OptionCard extends StatelessWidget {
               ),
               // Marcador de rádio, como o `accent-color` ouro do site.
               AnimatedContainer(
-                duration: const Duration(milliseconds: 220),
+                duration: AppMotion.standard,
                 width: 20,
                 height: 20,
                 decoration: BoxDecoration(
@@ -1956,7 +1956,7 @@ class _OptionCard extends StatelessWidget {
                 ),
                 child: Center(
                   child: AnimatedContainer(
-                    duration: const Duration(milliseconds: 220),
+                    duration: AppMotion.standard,
                     width: on ? 10 : 0,
                     height: on ? 10 : 0,
                     decoration: const BoxDecoration(

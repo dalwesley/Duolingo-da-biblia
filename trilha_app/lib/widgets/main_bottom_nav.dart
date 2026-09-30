@@ -103,8 +103,8 @@ class MainBottomNav extends StatelessWidget {
                               // Aba ativa ganha uma pílula acesa atrás do
                               // ícone — lê "você está aqui" de relance.
                               AnimatedContainer(
-                                duration: const Duration(milliseconds: 220),
-                                curve: Curves.easeOutCubic,
+                                duration: AppMotion.standard,
+                                curve: AppMotion.enter,
                                 width: active ? 56 : 40,
                                 height: 32,
                                 decoration: BoxDecoration(

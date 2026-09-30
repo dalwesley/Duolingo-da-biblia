@@ -25,7 +25,7 @@ class _CinematicBackdropState extends State<CinematicBackdrop> {
     if (widget.revealing == null || widget.revealProgress <= 0) {
       return widget.world;
     }
-    final t = Curves.easeOutCubic.transform(widget.revealProgress);
+    final t = AppMotion.enter.transform(widget.revealProgress);
     final r = widget.revealing!;
     return CreationWorldState(
       voidDepth: _lerp(widget.world.voidDepth, r.voidDepth, t),

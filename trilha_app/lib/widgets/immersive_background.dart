@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
+import '../utils/liturgical_calendar.dart';
 import 'ui_primitives.dart';
 
 /// Atmosfera Stway — gradiente sóbrio, sem orbs nem wash de luz.
@@ -15,9 +16,20 @@ class AmbientAtmosphere extends StatelessWidget {
   Widget build(BuildContext context) {
     final resolvedPhase = phase ?? Appearance.of(context).phase;
 
+    final season = LiturgicalCalendar.accentOf(
+      LiturgicalCalendar.momentFor().season,
+    );
+    // Céu da fase do dia → gradação da estação (luz de cima) → vinheta.
     return DecoratedBox(
       decoration: BoxDecoration(
         gradient: DayPhaseHelper.backgroundGradient(resolvedPhase),
+      ),
+      child: DecoratedBox(
+        decoration: BoxDecoration(gradient: AppLight.grade(season)),
+        child: const DecoratedBox(
+          decoration: BoxDecoration(gradient: AppLight.vignette),
+          child: SizedBox.expand(),
+        ),
       ),
     );
   }
@@ -154,7 +166,13 @@ class GlassCard extends StatelessWidget {
       padding: padding,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius),
-        color: fill,
+        // Fill iluminado pela luz principal (véu de cima-esquerda).
+        gradient: LinearGradient(
+          begin: AppLight.keyFrom,
+          end: AppLight.keyTo,
+          colors: [Color.lerp(fill, Colors.white, 0.06)!, fill],
+          stops: const [0, 0.45],
+        ),
         border: Border.all(
           color: borderColor,
           width: accent || tint != null
@@ -239,6 +257,13 @@ class GlassCard extends StatelessWidget {
                       stops: const [0.0, 0.45, 1.0],
                     ),
                   ),
+                ),
+              ),
+            ),
+            Positioned.fill(
+              child: IgnorePointer(
+                child: DecoratedBox(
+                  decoration: BoxDecoration(gradient: AppLight.sheen()),
                 ),
               ),
             ),

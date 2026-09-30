@@ -372,7 +372,7 @@ class BibleBookList extends StatelessWidget {
                               duration: motion
                                   ? Duration.zero
                                   : const Duration(milliseconds: 220),
-                              curve: Curves.easeOutCubic,
+                              curve: AppMotion.enter,
                               child: ListChevron(
                                 color: Appearance.of(context).textFaint,
                               ),
@@ -385,7 +385,7 @@ class BibleBookList extends StatelessWidget {
               duration: motion
                   ? Duration.zero
                   : const Duration(milliseconds: 220),
-              curve: Curves.easeOutCubic,
+              curve: AppMotion.enter,
               alignment: Alignment.topCenter,
               child: showBooks
                   ? Column(

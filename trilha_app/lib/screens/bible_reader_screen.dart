@@ -32,13 +32,13 @@ class BibleReaderScreen extends StatefulWidget {
   static Future<void> open(BuildContext context, String reference) {
     return Navigator.of(context, rootNavigator: true).push(
       PageRouteBuilder<void>(
-        transitionDuration: const Duration(milliseconds: 320),
-        reverseTransitionDuration: const Duration(milliseconds: 240),
+        transitionDuration: AppMotion.gentle,
+        reverseTransitionDuration: AppMotion.standard,
         pageBuilder: (_, _, _) => BibleReaderScreen(reference: reference),
         transitionsBuilder: (_, anim, _, child) {
           final curved = CurvedAnimation(
             parent: anim,
-            curve: Curves.easeOutCubic,
+            curve: AppMotion.enter,
           );
           return FadeTransition(
             opacity: curved,
@@ -163,8 +163,8 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
       if (animate && near && !MediaQuery.disableAnimationsOf(context)) {
         _pages!.animateToPage(
           c - 1,
-          duration: const Duration(milliseconds: 360),
-          curve: Curves.easeOutCubic,
+          duration: AppMotion.gentle,
+          curve: AppMotion.enter,
         );
       } else {
         _pages!.jumpToPage(c - 1);
@@ -420,7 +420,7 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
               builder: (context, visible, child) => AnimatedSlide(
                 offset: visible ? Offset.zero : const Offset(0, -1.1),
                 duration: chromeDuration,
-                curve: Curves.easeOutCubic,
+                curve: AppMotion.enter,
                 child: child,
               ),
               child: Padding(
@@ -490,7 +490,7 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
               builder: (context, visible, child) => AnimatedSlide(
                 offset: visible ? Offset.zero : const Offset(0, 1.4),
                 duration: chromeDuration,
-                curve: Curves.easeOutCubic,
+                curve: AppMotion.enter,
                 child: child,
               ),
               child: _ReaderDock(
@@ -614,7 +614,7 @@ class _ChapterPageState extends State<_ChapterPage> {
       duration: animate && !MediaQuery.disableAnimationsOf(context)
           ? const Duration(milliseconds: 420)
           : Duration.zero,
-      curve: Curves.easeInOutCubic,
+      curve: AppMotion.move,
     );
   }
 
@@ -810,7 +810,7 @@ class _VerseBlock extends StatelessWidget {
         onLongPress: onTap,
         child: AnimatedContainer(
           duration: motion ? Duration.zero : const Duration(milliseconds: 260),
-          curve: Curves.easeOut,
+          curve: AppMotion.enter,
           margin: const EdgeInsets.only(bottom: 2),
           padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
           decoration: BoxDecoration(

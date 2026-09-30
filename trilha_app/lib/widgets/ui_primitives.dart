@@ -70,27 +70,14 @@ class AppMetrics {
 
   /// Sombra de painel — lip duro embaixo + soft ambient.
   /// [hardLip] false: só o halo, sem a faixa preta que parece outro card.
+  /// Sombra de card — macia, cai longe da luz ([AppLight.shadow]).
+  /// [hardLip] fica só por compatibilidade: o lábio duro saiu do app.
   static List<BoxShadow> cardShadow({
     bool elevated = false,
     bool accent = false,
     Color? tint,
-    bool hardLip = true,
-  }) {
-    final lip = elevated ? 5.0 : 4.0;
-    return [
-      if (hardLip)
-        BoxShadow(
-          color: Colors.black.withValues(alpha: elevated ? 0.55 : 0.42),
-          offset: Offset(0, lip),
-          blurRadius: 0,
-        ),
-      BoxShadow(
-        color: Colors.black.withValues(alpha: elevated ? 0.28 : 0.18),
-        blurRadius: elevated ? 18 : 12,
-        offset: Offset(0, elevated ? 10 : 6),
-      ),
-    ];
-  }
+    bool hardLip = false,
+  }) => AppLight.shadow(elevated: elevated);
 
   /// Brilho do CTA ouro — o mesmo do botão do site
   /// (`0 12px 34px rgba(247,187,1,.26)`).
@@ -210,11 +197,11 @@ class _CopperCtaState extends State<CopperCta> {
     final a = Appearance.of(context);
     final ink = off ? a.textFaint : AppColors.inkOnAccent;
     final child = AnimatedOpacity(
-      duration: const Duration(milliseconds: 180),
+      duration: AppMotion.quick,
       opacity: 1,
       child: AnimatedScale(
         scale: _down ? 0.98 : 1,
-        duration: const Duration(milliseconds: 140),
+        duration: AppMotion.quick,
         child: Container(
           width: w.expanded ? double.infinity : null,
           constraints: BoxConstraints(
@@ -361,7 +348,7 @@ class OutlineCta extends StatelessWidget {
               : Colors.white.withValues(alpha: 0.35));
 
     final child = AnimatedOpacity(
-      duration: const Duration(milliseconds: 180),
+      duration: AppMotion.quick,
       opacity: enabled || color != null ? 1 : 0.7,
       child: Container(
         width: expanded ? double.infinity : null,
@@ -981,7 +968,7 @@ class AppChoiceTile extends StatelessWidget {
         overlayColor: const WidgetStatePropertyAll(Colors.transparent),
         borderRadius: BorderRadius.circular(AppRadii.sm),
         child: AnimatedContainer(
-          duration: const Duration(milliseconds: 200),
+          duration: AppMotion.quick,
           width: double.infinity,
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 12),
           decoration: BoxDecoration(
@@ -1061,13 +1048,7 @@ class _AppToastCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(AppRadii.md),
         color: AppColors.nightElevated,
         border: Border.all(color: accent.withValues(alpha: 0.85), width: 1.75),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withValues(alpha: 0.45),
-            offset: const Offset(0, 4),
-            blurRadius: 0,
-          ),
-        ],
+        boxShadow: AppLight.shadow(elevated: true),
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(AppRadii.md - 1),

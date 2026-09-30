@@ -213,7 +213,7 @@ class _PromotionBannerState extends State<_PromotionBanner>
                       animation: _breathe,
                       builder: (context, _) => _PromotionMedal(
                         rank: widget.rank,
-                        pulse: Curves.easeInOut.transform(_breathe.value),
+                        pulse: AppMotion.move.transform(_breathe.value),
                       ),
                     ),
                   ),

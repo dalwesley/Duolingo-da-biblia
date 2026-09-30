@@ -6910,6 +6910,46 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get setPieceCrossingEyebrow => 'Travessia';
+
+  @override
+  String get setPieceSeasonEyebrow => 'Nova estação';
+
+  @override
+  String get setPieceStreakEyebrow => 'Sequência';
+
+  @override
+  String get setPieceStreakGoalLine =>
+      'Compromisso cumprido. Você voltou todos os dias.';
+
+  @override
+  String setPieceStreakLine(int count) {
+    return '$count dias seguidos no caminho.';
+  }
+
+  @override
+  String setPieceStreakTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count dias',
+      one: '1 dia',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get setPieceTrailEyebrow => 'Trilha concluída';
+
+  @override
+  String setPieceTrailLine(String mode) {
+    return 'Você chegou ao fim no modo $mode.';
+  }
+
+  @override
+  String get setPieceTrailLineBase => 'Você chegou ao fim desta trilha.';
+
+  @override
   String get settingsAbout => 'Sobre';
 
   @override

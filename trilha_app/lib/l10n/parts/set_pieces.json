@@ -1,0 +1,56 @@
+{
+  "setPieceCrossingEyebrow": {
+    "pt": "Travessia",
+    "en": "Crossing",
+    "es": "Travesía"
+  },
+  "setPieceStreakEyebrow": {
+    "pt": "Sequência",
+    "en": "Streak",
+    "es": "Racha"
+  },
+  "setPieceStreakTitle": {
+    "pt": "{count, plural, =1{1 dia} other{{count} dias}}",
+    "en": "{count, plural, =1{1 day} other{{count} days}}",
+    "es": "{count, plural, =1{1 día} other{{count} días}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "setPieceStreakGoalLine": {
+    "pt": "Compromisso cumprido. Você voltou todos os dias.",
+    "en": "Commitment kept. You came back every day.",
+    "es": "Compromiso cumplido. Volviste todos los días."
+  },
+  "setPieceStreakLine": {
+    "pt": "{count} dias seguidos no caminho.",
+    "en": "{count} days in a row on the path.",
+    "es": "{count} días seguidos en el camino.",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "setPieceSeasonEyebrow": {
+    "pt": "Nova estação",
+    "en": "New season",
+    "es": "Nueva temporada"
+  },
+  "setPieceTrailEyebrow": {
+    "pt": "Trilha concluída",
+    "en": "Trail complete",
+    "es": "Ruta completada"
+  },
+  "setPieceTrailLine": {
+    "pt": "Você chegou ao fim no modo {mode}.",
+    "en": "You reached the end in {mode} mode.",
+    "es": "Llegaste al final en el modo {mode}.",
+    "placeholders": {
+      "mode": "String"
+    }
+  },
+  "setPieceTrailLineBase": {
+    "pt": "Você chegou ao fim desta trilha.",
+    "en": "You reached the end of this trail.",
+    "es": "Llegaste al final de esta ruta."
+  }
+}

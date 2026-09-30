@@ -1070,7 +1070,7 @@ class HeroTapBurstPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     if (progress <= 0 || progress >= 1) return;
-    final ease = Curves.easeOutCubic.transform(progress);
+    final ease = AppMotion.enter.transform(progress);
     final fade = (1 - progress).clamp(0.0, 1.0);
     final reach = size.longestSide * 0.75;
     final rng = math.Random(mood.index * 31 + 5);
@@ -1118,7 +1118,7 @@ class HeroTapBurstPainter extends CustomPainter {
           Offset.zero & size,
           Paint()
             ..color = Colors.white.withValues(
-              alpha: 0.22 * (1 - Curves.easeOut.transform(progress)),
+              alpha: 0.22 * (1 - AppMotion.enter.transform(progress)),
             ),
         );
         canvas.drawCircle(
@@ -1162,7 +1162,7 @@ class HeroTapBurstPainter extends CustomPainter {
         for (var ring = 0; ring < 3; ring++) {
           final local = ((progress - ring * 0.12) / 0.76).clamp(0.0, 1.0);
           if (local <= 0) continue;
-          final r = reach * Curves.easeOutCubic.transform(local);
+          final r = reach * AppMotion.enter.transform(local);
           canvas.drawCircle(
             origin,
             r,

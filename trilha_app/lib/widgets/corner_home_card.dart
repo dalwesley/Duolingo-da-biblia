@@ -401,7 +401,7 @@ class _WaitingMarkState extends State<_WaitingMark>
                 ? 0.0
                 : (t < 0.72
                       ? 0.0
-                      : Curves.easeInOut.transform((t - 0.72) / 0.28));
+                      : AppMotion.move.transform((t - 0.72) / 0.28));
             return Transform.rotate(
               angle: turn * math.pi,
               child: child,
@@ -558,7 +558,7 @@ class _FinishMarkState extends State<_FinishMark>
     return AnimatedBuilder(
       animation: _pulse,
       builder: (context, child) {
-        final t = Curves.easeInOut.transform(_pulse.value);
+        final t = AppMotion.move.transform(_pulse.value);
         return Container(
           width: 46,
           height: 46,

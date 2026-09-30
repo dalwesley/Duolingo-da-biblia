@@ -412,7 +412,7 @@ class _FilterCell extends StatelessWidget {
                   ),
                   const SizedBox(height: 6),
                   AnimatedContainer(
-                    duration: const Duration(milliseconds: 180),
+                    duration: AppMotion.quick,
                     height: 2,
                     width: selected ? 28 : 0,
                     decoration: BoxDecoration(

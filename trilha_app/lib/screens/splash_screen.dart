@@ -182,10 +182,10 @@ class _SplashScreenState extends State<SplashScreen>
         opaque: true,
         pageBuilder: (_, _, _) => next,
         transitionsBuilder: (_, a, _, c) => FadeTransition(
-          opacity: CurvedAnimation(parent: a, curve: Curves.easeOutCubic),
+          opacity: CurvedAnimation(parent: a, curve: AppMotion.enter),
           child: c,
         ),
-        transitionDuration: const Duration(milliseconds: 420),
+        transitionDuration: AppMotion.gentle,
       ),
     );
   }
@@ -197,7 +197,7 @@ class _SplashScreenState extends State<SplashScreen>
     super.dispose();
   }
 
-  Interval _i(double start, double end, {Curve curve = Curves.easeOutCubic}) {
+  Interval _i(double start, double end, {Curve curve = AppMotion.enter}) {
     if (_isReturnVisit) {
       double map(double t) => (t * 0.72 + 0.08).clamp(0.0, 1.0);
       return Interval(map(start), map(end), curve: curve);
@@ -236,12 +236,12 @@ class _SplashScreenState extends State<SplashScreen>
 
           final title = CurvedAnimation(
             parent: _master,
-            curve: _i(0.0, 0.45, curve: Curves.easeOutBack),
+            curve: _i(0.0, 0.45, curve: AppMotion.settle),
           );
           final tag = CurvedAnimation(parent: _master, curve: _i(0.22, 0.58));
           final bar = CurvedAnimation(
             parent: _master,
-            curve: _i(0.55, 1.0, curve: Curves.easeOut),
+            curve: _i(0.55, 1.0, curve: AppMotion.enter),
           );
 
           final titleV = title.value.clamp(0.0, 1.0);

@@ -103,7 +103,7 @@ class _LeagueScreenState extends State<LeagueScreen>
     super.initState();
     _enter = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 900),
+      duration: AppMotion.scene,
     )..forward();
     InviteDeepLinkService.instance.addListener(_onPendingInvite);
     WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -324,7 +324,7 @@ class _LeagueScreenState extends State<LeagueScreen>
     final start = (0.08 * index).clamp(0.0, 0.6);
     final end = (start + 0.4).clamp(0.0, 1.0);
     final curve = _enter.drive(
-      CurveTween(curve: Interval(start, end, curve: Curves.easeOutCubic)),
+      CurveTween(curve: Interval(start, end, curve: AppMotion.enter)),
     );
     return FadeTransition(
       opacity: curve,
@@ -392,9 +392,9 @@ class _LeagueScreenState extends State<LeagueScreen>
               const SizedBox(height: AppSpace.section),
               // Troca de aba: um filho só — empilhar o anterior dobrava paint.
               AnimatedSwitcher(
-                duration: const Duration(milliseconds: 220),
-                switchInCurve: Curves.easeOutCubic,
-                switchOutCurve: Curves.easeInCubic,
+                duration: AppMotion.standard,
+                switchInCurve: AppMotion.enter,
+                switchOutCurve: AppMotion.exit,
                 layoutBuilder: (current, _) =>
                     current ?? const SizedBox.shrink(),
                 transitionBuilder: (child, animation) {
@@ -3612,7 +3612,7 @@ class _BondKnot extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     return AnimatedContainer(
-      duration: const Duration(milliseconds: 300),
+      duration: AppMotion.gentle,
       width: 34,
       height: 34,
       decoration: BoxDecoration(

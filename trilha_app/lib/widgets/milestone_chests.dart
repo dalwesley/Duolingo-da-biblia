@@ -103,7 +103,7 @@ class _ChestTile extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: AnimatedContainer(
-        duration: const Duration(milliseconds: 250),
+        duration: AppMotion.standard,
         padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 4),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(AppRadii.md),

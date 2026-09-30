@@ -60,8 +60,8 @@ class JuntosSegmentTabs extends StatelessWidget {
             children: [
               if (selected)
                 AnimatedPositioned(
-                  duration: const Duration(milliseconds: 320),
-                  curve: Curves.easeOutBack,
+                  duration: AppMotion.gentle,
+                  curve: AppMotion.settle,
                   left: slot * index,
                   top: 0,
                   bottom: 0,
@@ -152,7 +152,7 @@ class JuntosSegmentTabs extends StatelessWidget {
                     const SizedBox(width: 5),
                   ],
                   AnimatedDefaultTextStyle(
-                    duration: const Duration(milliseconds: 200),
+                    duration: AppMotion.quick,
                     style: AppTypography.label(
                       size: 13,
                       letterSpacing: 0.2,
@@ -464,7 +464,7 @@ class _JuntosHaloState extends State<JuntosHalo>
           animation: _pulse,
           builder: (context, child) {
             final t = widget.lit
-                ? Curves.easeInOut.transform(_pulse.value)
+                ? AppMotion.move.transform(_pulse.value)
                 : 0.0;
             return DecoratedBox(
               decoration: BoxDecoration(

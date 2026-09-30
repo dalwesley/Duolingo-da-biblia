@@ -125,7 +125,7 @@ class _TrilhasScreenState extends State<TrilhasScreen>
     final start = (0.08 * index).clamp(0.0, 0.55);
     final end = (start + 0.42).clamp(0.0, 1.0);
     final curve = _enter.drive(
-      CurveTween(curve: Interval(start, end, curve: Curves.easeOutCubic)),
+      CurveTween(curve: Interval(start, end, curve: AppMotion.enter)),
     );
     return FadeTransition(
       opacity: curve,
@@ -142,12 +142,12 @@ class _TrilhasScreenState extends State<TrilhasScreen>
     final trails = _trails!;
     Navigator.of(context).push(
       PageRouteBuilder(
-        transitionDuration: const Duration(milliseconds: 420),
-        reverseTransitionDuration: const Duration(milliseconds: 320),
+        transitionDuration: AppMotion.gentle,
+        reverseTransitionDuration: AppMotion.gentle,
         pageBuilder: (_, animation, secondaryAnimation) {
           final fade = CurvedAnimation(
             parent: animation,
-            curve: Curves.easeOutCubic,
+            curve: AppMotion.enter,
           );
           return FadeTransition(
             opacity: fade,
@@ -545,8 +545,8 @@ class _NowPlayingStripState extends State<_NowPlayingStrip>
         },
         child: AnimatedScale(
           scale: _pressed ? 0.985 : 1,
-          duration: const Duration(milliseconds: 140),
-          curve: Curves.easeOutCubic,
+          duration: AppMotion.quick,
+          curve: AppMotion.enter,
           child: GlassCard(
             radius: AppMetrics.heroRadius,
             elevated: true,
@@ -634,7 +634,7 @@ class _NowPlayingStripState extends State<_NowPlayingStrip>
                           child: AnimatedBuilder(
                             animation: _pulse,
                             builder: (context, child) {
-                              final t = Curves.easeInOut.transform(
+                              final t = AppMotion.move.transform(
                                 _pulse.value,
                               );
                               return Container(
@@ -914,11 +914,11 @@ class _RealmPosterState extends State<_RealmPoster> {
       },
       child: AnimatedScale(
         scale: _pressed ? 0.985 : 1,
-        duration: const Duration(milliseconds: 160),
-        curve: Curves.easeOutCubic,
+        duration: AppMotion.quick,
+        curve: AppMotion.enter,
         child: AnimatedContainer(
-          duration: const Duration(milliseconds: 420),
-          curve: Curves.easeOutCubic,
+          duration: AppMotion.gentle,
+          curve: AppMotion.enter,
           height: height,
           // Cartaz = palco (GlassCard `glow`): borda e brilho na cor da área,
           // mais aceso no reino em que a pessoa está. O céu do reino fica

@@ -287,8 +287,8 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
         Scrollable.ensureVisible(
           tokenCtx,
           alignment: 0.45,
-          duration: const Duration(milliseconds: 280),
-          curve: Curves.easeOutCubic,
+          duration: AppMotion.standard,
+          curve: AppMotion.enter,
         );
       }
     });
@@ -908,7 +908,7 @@ class _TokenChip extends StatelessWidget {
     final a = Appearance.of(context);
 
     return AnimatedOpacity(
-      duration: const Duration(milliseconds: 180),
+      duration: AppMotion.quick,
       opacity: dimmed ? 0.42 : 1,
       child: Material(
         color: Colors.transparent,

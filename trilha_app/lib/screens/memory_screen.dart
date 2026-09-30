@@ -50,7 +50,7 @@ class _MemoryScreenState extends State<MemoryScreen>
     )..repeat(reverse: true);
     _flip = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 520),
+      duration: AppMotion.slow,
     );
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
@@ -266,9 +266,9 @@ class _MemoryScreenState extends State<MemoryScreen>
                                     );
                                   }
                                   return AnimatedSwitcher(
-                                    duration: const Duration(milliseconds: 240),
-                                    switchInCurve: Curves.easeOutCubic,
-                                    switchOutCurve: Curves.easeInCubic,
+                                    duration: AppMotion.standard,
+                                    switchInCurve: AppMotion.enter,
+                                    switchOutCurve: AppMotion.exit,
                                     transitionBuilder: (widget, anim) {
                                       return FadeTransition(
                                         opacity: anim,
@@ -369,7 +369,7 @@ class _FlashCard extends StatelessWidget {
         animation: Listenable.merge([pulse, flip]),
         builder: (context, _) {
           final breathe = revealed ? 1.0 : 0.92 + (pulse.value * 0.08);
-          final angle = Curves.easeInOutCubic.transform(flip.value) * math.pi;
+          final angle = AppMotion.move.transform(flip.value) * math.pi;
           final showFront = angle <= (math.pi / 2);
 
           return Transform(

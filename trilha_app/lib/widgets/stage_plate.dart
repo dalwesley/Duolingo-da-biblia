@@ -29,13 +29,7 @@ class StagePlate extends StatelessWidget {
             : AppColors.textOnDark.withValues(alpha: 0.10),
         width: lit ? 1.6 : 1,
       ),
-      boxShadow: [
-        BoxShadow(
-          color: Colors.black.withValues(alpha: 0.5),
-          blurRadius: 0,
-          offset: Offset(0, 5),
-        ),
-      ],
+      boxShadow: AppLight.shadow(elevated: true),
     );
   }
 

@@ -91,19 +91,19 @@ class _GenesisPainter extends CustomPainter {
       return;
     }
 
-    final light = FilmLayers.seg(t, at, 0.72, Curves.easeOutCubic);
+    final light = FilmLayers.seg(t, at, 0.72, AppMotion.enter);
     final flash = calm
         ? 0.0
         : t < at + 0.025
-        ? FilmLayers.seg(t, at, at + 0.025, Curves.easeOut)
-        : 1 - FilmLayers.seg(t, at + 0.025, 0.78, Curves.easeInOutQuad);
+        ? FilmLayers.seg(t, at, at + 0.025, AppMotion.enter)
+        : 1 - FilmLayers.seg(t, at + 0.025, 0.78, AppMotion.move);
 
     final end = GenesisHero.endShot;
     final shot = end.copyWith(
       // A arte já está inteira quando o clarão começa a abrir.
       exposure: end.exposure * FilmLayers.seg(t, at, at + 0.03),
       glow: light,
-      lit: FilmLayers.seg(t, 0.62, 0.92, Curves.easeInOutCubic),
+      lit: FilmLayers.seg(t, 0.62, 0.92, AppMotion.move),
       lamps: FilmLayers.seg(t, 0.8, 0.96),
       stars: end.stars * FilmLayers.seg(t, 0.6, 0.8),
     );

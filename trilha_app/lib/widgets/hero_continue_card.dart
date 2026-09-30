@@ -92,7 +92,7 @@ class _HeroContinueCardState extends State<HeroContinueCard>
     );
     _burst = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 460),
+      duration: AppMotion.slow,
     );
   }
 
@@ -303,11 +303,11 @@ class _HeroContinueCardState extends State<HeroContinueCard>
         onTapCancel: () => setState(() => _pressed = false),
         child: AnimatedScale(
           scale: _pressed ? 0.986 : 1.0,
-          duration: const Duration(milliseconds: 120),
-          curve: Curves.easeOutCubic,
+          duration: AppMotion.instant,
+          curve: AppMotion.enter,
           child: AnimatedContainer(
-            duration: const Duration(milliseconds: 520),
-            curve: Curves.easeOutCubic,
+            duration: AppMotion.slow,
+            curve: AppMotion.enter,
             height: heroHeight,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(AppMetrics.heroRadius),

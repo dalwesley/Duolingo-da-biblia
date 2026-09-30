@@ -84,8 +84,8 @@ class _ChapterTitleCard extends StatelessWidget {
     final a = Appearance.of(context);
 
     return AnimatedContainer(
-      duration: const Duration(milliseconds: 420),
-      curve: Curves.easeOutCubic,
+      duration: AppMotion.gentle,
+      curve: AppMotion.enter,
       padding: EdgeInsets.fromLTRB(
         22,
         highlighted ? 20 : 16,

@@ -412,7 +412,7 @@ class _Reveal extends StatelessWidget {
     return TweenAnimationBuilder<double>(
       tween: Tween(begin: 0, end: 1),
       duration: Duration(milliseconds: 320 + delay),
-      curve: Interval(delay / (320 + delay), 1, curve: Curves.easeOutCubic),
+      curve: Interval(delay / (320 + delay), 1, curve: AppMotion.enter),
       builder: (context, t, child) => Opacity(
         opacity: t,
         child: Transform.translate(

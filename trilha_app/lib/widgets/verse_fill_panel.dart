@@ -53,7 +53,7 @@ class _VerseFillPanelState extends State<VerseFillPanel>
 
     _stagger = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 900),
+      duration: AppMotion.scene,
     )..forward();
     _pulse = AnimationController(
       vsync: this,
@@ -61,7 +61,7 @@ class _VerseFillPanelState extends State<VerseFillPanel>
     )..repeat(reverse: true);
     _revealFlash = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 720),
+      duration: AppMotion.scene,
     );
   }
 
@@ -301,7 +301,7 @@ class _VerseFillPanelState extends State<VerseFillPanel>
                   FadeTransition(
                     opacity: CurvedAnimation(
                       parent: _stagger,
-                      curve: const Interval(0, 0.35, curve: Curves.easeOut),
+                      curve: const Interval(0, 0.35, curve: AppMotion.enter),
                     ),
                     child: _MemoryHeader(
                       accent: accent,
@@ -317,7 +317,7 @@ class _VerseFillPanelState extends State<VerseFillPanel>
                         curve: const Interval(
                           0.12,
                           0.55,
-                          curve: Curves.easeOut,
+                          curve: AppMotion.enter,
                         ),
                       ),
                       child: _VerseStage(
@@ -341,7 +341,7 @@ class _VerseFillPanelState extends State<VerseFillPanel>
                     FadeTransition(
                       opacity: CurvedAnimation(
                         parent: _stagger,
-                        curve: const Interval(0.4, 0.9, curve: Curves.easeOut),
+                        curve: const Interval(0.4, 0.9, curve: AppMotion.enter),
                       ),
                       child: Column(
                         children: [
@@ -384,7 +384,7 @@ class _VerseFillPanelState extends State<VerseFillPanel>
                     FadeTransition(
                       opacity: CurvedAnimation(
                         parent: _revealFlash,
-                        curve: const Interval(0.25, 1, curve: Curves.easeOut),
+                        curve: const Interval(0.25, 1, curve: AppMotion.enter),
                       ),
                       child: _RevealBanner(
                         correct: _correct,
@@ -463,7 +463,7 @@ class _MemoryHeader extends StatelessWidget {
             for (var i = 0; i < total; i++) ...[
               if (i > 0) const SizedBox(width: 6),
               AnimatedContainer(
-                duration: const Duration(milliseconds: 220),
+                duration: AppMotion.standard,
                 width: i < filled ? 18 : 8,
                 height: 8,
                 decoration: BoxDecoration(
@@ -711,7 +711,7 @@ class _BlankSlot extends StatelessWidget {
         child: Align(
           alignment: Alignment.bottomCenter,
           child: AnimatedContainer(
-            duration: const Duration(milliseconds: 180),
+            duration: AppMotion.quick,
             height: active ? 3 : 2.5,
             width: minW,
             margin: const EdgeInsets.only(bottom: 2),
@@ -759,7 +759,7 @@ class _BlankSlot extends StatelessWidget {
     return AnimatedBuilder(
       animation: pulse,
       builder: (context, child) {
-        final t = Curves.easeInOut.transform(pulse.value);
+        final t = AppMotion.move.transform(pulse.value);
         return Opacity(opacity: 0.75 + t * 0.25, child: child);
       },
       child: slot,
@@ -792,7 +792,7 @@ class _WordChip extends StatelessWidget {
       curve: Interval(
         start.clamp(0.0, 0.9),
         (start + 0.35).clamp(0.0, 1.0),
-        curve: Curves.easeOutCubic,
+        curve: AppMotion.enter,
       ),
     );
 
@@ -807,7 +807,7 @@ class _WordChip extends StatelessWidget {
           onTap: onTap,
           depth: 4,
           child: AnimatedContainer(
-            duration: const Duration(milliseconds: 200),
+            duration: AppMotion.quick,
             constraints: const BoxConstraints(minHeight: 56),
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
             decoration: BoxDecoration(
@@ -816,13 +816,7 @@ class _WordChip extends StatelessWidget {
               color: used
                   ? AppRoles.action
                   : Color.lerp(AppColors.card, accent, 0.16)!,
-              boxShadow: const [
-                BoxShadow(
-                  color: AppColors.dropShadow,
-                  blurRadius: 0,
-                  offset: Offset(0, 4),
-                ),
-              ],
+              boxShadow: AppLight.lip(),
             ),
             child: Text(
               label,

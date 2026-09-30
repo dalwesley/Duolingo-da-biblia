@@ -104,7 +104,7 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
     super.initState();
     _enter = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 520),
+      duration: AppMotion.slow,
     )..forward();
     _pulse = AnimationController(
       vsync: this,
@@ -122,11 +122,11 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
     });
     _scrim = CurvedAnimation(
       parent: _enter,
-      curve: const Interval(0, 0.45, curve: Curves.easeOut),
+      curve: const Interval(0, 0.45, curve: AppMotion.enter),
     );
     _lift = CurvedAnimation(
       parent: _enter,
-      curve: const Interval(0.08, 0.85, curve: Curves.easeOutCubic),
+      curve: const Interval(0.08, 0.85, curve: AppMotion.enter),
     );
     if (_needsEvidence) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -492,7 +492,7 @@ class _VerdictMark extends StatelessWidget {
     return AnimatedBuilder(
       animation: Listenable.merge([enter, pulse]),
       builder: (context, child) {
-        final appear = Curves.easeOutBack.transform(
+        final appear = AppMotion.pop.transform(
           Interval(
             0.18,
             1,

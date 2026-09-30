@@ -851,7 +851,7 @@ class _WeekBarState extends State<_WeekBar>
         TweenAnimationBuilder<double>(
           tween: Tween(begin: 0, end: target),
           duration: Duration(milliseconds: 700 + widget.index * 40),
-          curve: Curves.easeOutCubic,
+          curve: AppMotion.enter,
           builder: (context, level, _) => AnimatedBuilder(
             animation: _wave,
             builder: (context, _) => CustomPaint(

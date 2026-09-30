@@ -268,7 +268,7 @@ class _ModeCarouselState extends State<ModeCarousel>
     )..repeat();
     _nudge = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 460),
+      duration: AppMotion.slow,
     );
   }
 
@@ -290,8 +290,8 @@ class _ModeCarouselState extends State<ModeCarousel>
   void _goTo(int i) {
     _pages.animateToPage(
       i,
-      duration: const Duration(milliseconds: 520),
-      curve: Curves.easeOutCubic,
+      duration: AppMotion.slow,
+      curve: AppMotion.enter,
     );
   }
 
@@ -820,8 +820,8 @@ class _PortalProgress extends StatelessWidget {
       children: [
         TweenAnimationBuilder<double>(
           tween: Tween(begin: 0, end: status.fraction),
-          duration: const Duration(milliseconds: 900),
-          curve: Curves.easeOutCubic,
+          duration: AppMotion.scene,
+          curve: AppMotion.enter,
           builder: (context, v, _) =>
               AppProgressBar(value: v, color: fill, height: 6),
         ),
@@ -976,7 +976,7 @@ class _ModeBannerState extends State<ModeBanner>
         ),
         child: AnimatedScale(
           scale: _down ? 0.98 : 1,
-          duration: const Duration(milliseconds: 140),
+          duration: AppMotion.quick,
           child: Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
@@ -1445,7 +1445,7 @@ class ModeScenePainter extends CustomPainter {
     // Anéis que se abrem do centro.
     for (var i = 0; i < 4; i++) {
       final p = _frac(t * 2 + i / 4);
-      final r = w * (0.08 + 0.62 * Curves.easeOut.transform(p));
+      final r = w * (0.08 + 0.62 * AppMotion.enter.transform(p));
       canvas.drawOval(
         Rect.fromCenter(center: c, width: r * 2, height: r * 1.1),
         Paint()

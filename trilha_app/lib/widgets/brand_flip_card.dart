@@ -3,6 +3,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../theme/app_theme.dart';
 import 'stage_plate.dart';
 import 'stway_brand.dart';
 
@@ -35,7 +36,7 @@ class _BrandFlipCardState extends State<BrandFlipCard>
     super.initState();
     _flip = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 520),
+      duration: AppMotion.slow,
     )..addListener(_onFlipTick);
   }
 
@@ -82,7 +83,7 @@ class _BrandFlipCardState extends State<BrandFlipCard>
       child: AnimatedBuilder(
         animation: _flip,
         builder: (context, _) {
-          final angle = Curves.easeInOutCubic.transform(_flip.value) * math.pi;
+          final angle = AppMotion.move.transform(_flip.value) * math.pi;
           final showFront = angle <= math.pi / 2;
           return Transform(
             alignment: Alignment.center,

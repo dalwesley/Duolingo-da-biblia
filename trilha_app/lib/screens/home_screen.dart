@@ -82,7 +82,7 @@ class _HomeScreenState extends State<HomeScreen>
     super.initState();
     _fadeIn = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 620),
+      duration: AppMotion.slow,
     )..forward();
     _load();
   }
@@ -342,7 +342,7 @@ class _HomeScreenState extends State<HomeScreen>
     final start = (0.1 * index).clamp(0.0, 0.65);
     final end = (start + 0.38).clamp(0.0, 1.0);
     final curve = _fadeIn.drive(
-      CurveTween(curve: Interval(start, end, curve: Curves.easeOutCubic)),
+      CurveTween(curve: Interval(start, end, curve: AppMotion.enter)),
     );
     // Só fade+slide — ScaleTransition no 1º paint competia com o hero animado.
     return FadeTransition(
@@ -997,8 +997,8 @@ class _MoreTileRowState extends State<_MoreTileRow> {
           tile.onTap();
         },
         child: AnimatedContainer(
-          duration: const Duration(milliseconds: 140),
-          curve: Curves.easeOut,
+          duration: AppMotion.quick,
+          curve: AppMotion.enter,
           padding: const EdgeInsets.symmetric(
             horizontal: AppSpace.lg,
             vertical: 14,
@@ -1048,7 +1048,7 @@ class _MoreTileRowState extends State<_MoreTileRow> {
               ),
               const SizedBox(width: AppSpace.sm),
               AnimatedSlide(
-                duration: const Duration(milliseconds: 140),
+                duration: AppMotion.quick,
                 offset: _pressed ? const Offset(0.15, 0) : Offset.zero,
                 child: ListChevron(color: tile.hot ? tone : a.textFaint),
               ),

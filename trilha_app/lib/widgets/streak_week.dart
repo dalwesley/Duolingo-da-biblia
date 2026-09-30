@@ -70,7 +70,7 @@ class StreakWeek extends StatelessWidget {
                 _FrozenDayOrb(size: orbSize)
               else
                 AnimatedContainer(
-                  duration: const Duration(milliseconds: 280),
+                  duration: AppMotion.standard,
                   width: orbSize,
                   height: orbSize,
                   decoration: BoxDecoration(

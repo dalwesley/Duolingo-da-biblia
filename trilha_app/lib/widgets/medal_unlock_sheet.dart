@@ -147,26 +147,26 @@ class _MedalDetailSheetState extends State<_MedalDetailSheet>
 
     _heroScale = CurvedAnimation(
       parent: _entrance,
-      curve: const Interval(0.0, 0.55, curve: Curves.elasticOut),
+      curve: const Interval(0.0, 0.55, curve: AppMotion.spring),
     );
     _heroGlow = CurvedAnimation(
       parent: _entrance,
-      curve: const Interval(0.0, 0.45, curve: Curves.easeOut),
+      curve: const Interval(0.0, 0.45, curve: AppMotion.enter),
     );
     _titleOpacity = CurvedAnimation(
       parent: _entrance,
-      curve: const Interval(0.32, 0.62, curve: Curves.easeOut),
+      curve: const Interval(0.32, 0.62, curve: AppMotion.enter),
     );
     _titleSlide = Tween<Offset>(begin: const Offset(0, 0.14), end: Offset.zero)
         .animate(
           CurvedAnimation(
             parent: _entrance,
-            curve: const Interval(0.32, 0.65, curve: Curves.easeOutCubic),
+            curve: const Interval(0.32, 0.65, curve: AppMotion.enter),
           ),
         );
     _bodyOpacity = CurvedAnimation(
       parent: _entrance,
-      curve: const Interval(0.48, 0.78, curve: Curves.easeOut),
+      curve: const Interval(0.48, 0.78, curve: AppMotion.enter),
     );
 
     if (widget.celebration) {

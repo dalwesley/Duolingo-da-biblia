@@ -10773,6 +10773,60 @@ abstract class AppLocalizations {
   /// **'Revisão da semana {week}'**
   String seasonWeekReviewTitle(int week);
 
+  /// No description provided for @setPieceCrossingEyebrow.
+  ///
+  /// In pt, this message translates to:
+  /// **'Travessia'**
+  String get setPieceCrossingEyebrow;
+
+  /// No description provided for @setPieceSeasonEyebrow.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nova estação'**
+  String get setPieceSeasonEyebrow;
+
+  /// No description provided for @setPieceStreakEyebrow.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sequência'**
+  String get setPieceStreakEyebrow;
+
+  /// No description provided for @setPieceStreakGoalLine.
+  ///
+  /// In pt, this message translates to:
+  /// **'Compromisso cumprido. Você voltou todos os dias.'**
+  String get setPieceStreakGoalLine;
+
+  /// No description provided for @setPieceStreakLine.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count} dias seguidos no caminho.'**
+  String setPieceStreakLine(int count);
+
+  /// No description provided for @setPieceStreakTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 dia} other{{count} dias}}'**
+  String setPieceStreakTitle(int count);
+
+  /// No description provided for @setPieceTrailEyebrow.
+  ///
+  /// In pt, this message translates to:
+  /// **'Trilha concluída'**
+  String get setPieceTrailEyebrow;
+
+  /// No description provided for @setPieceTrailLine.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você chegou ao fim no modo {mode}.'**
+  String setPieceTrailLine(String mode);
+
+  /// No description provided for @setPieceTrailLineBase.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você chegou ao fim desta trilha.'**
+  String get setPieceTrailLineBase;
+
   /// No description provided for @settingsAbout.
   ///
   /// In pt, this message translates to:

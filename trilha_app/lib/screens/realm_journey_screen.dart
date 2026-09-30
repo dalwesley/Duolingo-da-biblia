@@ -185,8 +185,8 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
     Scrollable.ensureVisible(
       ctx,
       alignment: 0.28,
-      duration: const Duration(milliseconds: 620),
-      curve: Curves.easeOutCubic,
+      duration: AppMotion.slow,
+      curve: AppMotion.enter,
     );
   }
 
@@ -213,12 +213,12 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
     if (canOpen && trail.missionSlugs.isNotEmpty && !trail.comingSoon) {
       Navigator.of(context).push(
         PageRouteBuilder(
-          transitionDuration: const Duration(milliseconds: 480),
+          transitionDuration: AppMotion.slow,
           pageBuilder: (_, animation, secondaryAnimation) {
             return FadeTransition(
               opacity: CurvedAnimation(
                 parent: animation,
-                curve: Curves.easeOut,
+                curve: AppMotion.enter,
               ),
               child: TrailMapScreen(slug: trail.slug),
             );

@@ -67,7 +67,7 @@ class _Dot extends StatelessWidget {
     final a = Appearance.of(context);
     final fill = lit ? AppRoles.streak : a.divider;
     return AnimatedContainer(
-      duration: const Duration(milliseconds: 280),
+      duration: AppMotion.standard,
       width: today ? 12 : 9,
       height: today ? 12 : 9,
       decoration: BoxDecoration(

@@ -79,7 +79,7 @@ class PrivacyEye extends StatelessWidget {
           height: 44,
           child: Center(
             child: AnimatedContainer(
-              duration: const Duration(milliseconds: 200),
+              duration: AppMotion.quick,
               width: 30,
               height: 30,
               decoration: BoxDecoration(
