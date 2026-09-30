@@ -9,6 +9,19 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+## [1.0.32] — 2026-09-30
+
+### Added
+- **SetPiece**: palco único para grandes momentos (Travessia, marco de sequência, nova estação, trilha concluída) — uma vez cada, com luz, emblema e juice só na recompensa
+- Linguagem de cinema: `AppMotion` (tempos/curvas), `AppLight` (luz/sombra/gradação) e transição de câmera entre telas
+
+### Changed
+- Animações de UI passam pelos degraus de `AppMotion`; quique (`pop`/`spring`) só quando algo é ganho
+- Tipografia de voz: títulos/palco em Cormorant; interface em Nunito
+
+### Fixed
+- Menos jank na cena, no leitor e no shell: isolates no banco/Bíblia/overlays, `select` em vez de `watch` amplo e batch de notify no progresso
+
 ## [1.0.31] — 2026-09-30
 
 ### Added
