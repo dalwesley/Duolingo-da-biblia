@@ -5,9 +5,9 @@ import 'brand_trail.dart';
 import 'film_layers.dart';
 
 /// A mesma trilha STWAY do ícone, da splash e do onboarding, no céu
-/// escolhido — parada e apagada. Só dentro de card herói (ex.: perfil):
-/// cenário de tela cheia é da splash, onboarding e celebração; a Home usa o
-/// gradiente da fase do dia do shell.
+/// escolhido — parada e apagada. Lobby (Hoje / Juntos) e card herói
+/// (ex.: perfil) podem levar a arte velada; cenário de tela cheia sem
+/// véu fica em splash, onboarding e celebração.
 ///
 /// Estático de propósito (pinta uma vez).
 class HomeBrandBackdrop extends StatefulWidget {

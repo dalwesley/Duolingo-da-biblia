@@ -37,31 +37,41 @@ são matéria-prima do tema, não se usam direto em tela nova.
 | Papel | Token | Onde |
 |---|---|---|
 | Ação principal | `AppRoles.action` (ouro `#F7BB01`) | `CopperCta`, o que avança |
-| Recompensa | `AppRoles.reward` (ouro) | passos, medalha, baú, meta cumprida |
-| Chrome | `AppRoles.chrome` (aço frio `#9EB0C4`) | nav, TopBar, ícone de aba — **igual em todas as abas**; nunca o mesmo branco de [selected] |
-| Seleção (cena / segmentado) | fill branco (`selected`) | opção tocada na cena; pílula ativa do `AppSegmentedTabs` |
+| Recompensa | `AppRoles.reward` (ouro) | passos, medalha, baú, meta cumprida, podium |
+| Chrome | `AppRoles.chrome` (aço frio `#9EB0C4`) | nav, TopBar, ícone idle — **igual em todas as abas** |
+| Seleção (cena) | fill branco (`selected`) | **só** opção tocada na cena (gesto); nunca aba do shell |
+| Aba ativa (shell) | fill escuro + rim do `accent` | `AppSegmentedTabs(accent:)` — presença ou reward do bloco |
 | Idle (cena) | `nightElevated` + texto claro | placas de resposta no céu escuro |
 | Acerto na cena | `AppRoles.action` (ouro) | placa, veredito, barra, flash |
-| Sucesso / presença (home) | `AppRoles.presence` (glow) | orbs da semana, "estudou hoje" |
+| Presença / vida | `AppRoles.presence` (glow) | Hoje + Juntos: "estudou hoje", fio, Companhia, orbs |
 | Lâmpadas (vidas) | `AppRoles.reward` (ouro) | acesas = luz |
 | Sequência | `AppRoles.streak` (âmbar) | **só** a chama |
 | Risco / erro | `AppRoles.error` | único vermelho |
 
-Regras (gesto):
+**Dois eixos da marca** (âncora logo): ouro avança · glow vive · branco só no
+toque da cena · chrome segura o resto. No máx. 1 cromático de bloco + ouro
+pontual de recompensa/CTA — nunca espalhar ouro como decoração.
+
+Regras (gesto na cena):
 - Idle = poço escuro · Seleção = branco · Acerto = ouro · Erro = vermelho.
-- Sem azul/glow nos gestos (glow fica na home).
+- Sem azul/glow nos gestos da partida (glow = lobby social, não placa de resposta).
 - Cor do modo só no mapa / seletor.
 - Um CTA: `CopperCta` ouro.
 - A cena é o único lugar com placas claras (respostas em marfim — o "palco").
-- Cenário de tela cheia (céu pintado, Gênesis, trilha da marca, confete) só em
-  splash, onboarding e celebração. No resto, o gradiente da fase do dia; cenário
-  só dentro de card herói.
+- Cenário de marca (`BrandTrail` / splash): splash, onboarding, celebração;
+  **lobby** (Hoje / Juntos) pode levar trilha velada. Bíblia / Ajustes /
+  cena = gradiente da fase do dia; cenário pintado só dentro de card herói.
 - Um botão principal: `CopperCta` (`large` no herói; `decorative` quando o card
   inteiro é o toque). Não desenhe CTA à mão.
 - Um card: `GlassCard` (`tint` para um papel, `glow` para palco). Não monte
   card com `Container` + `BoxDecoration`.
+- Juntos por bloco: Companhia/Grupos → `presence` no card; Desafio/Caravana →
+  ouro só em placar/passos/podium (não na pílula do submenu).
 
-- Um segmentado: `AppSegmentedTabs` (glifo opcional). Chips soltos: `AppSelectChip`.
+- Um segmentado: `AppSegmentedTabs(accent:)`. **Abas-mãe** (Juntos / Bíblia) =
+  `reward` (ouro); **submenu interno** (Companhia·Desafio, mês·semana, ordem
+  dos livros) = `presence` (glow). Aba ativa ≠ branco de cena. Chips soltos:
+  `AppSelectChip`.
 - Um avatar: `UserAvatar` com raio `AppMetrics.avatarSm` (16) · `avatarMd` (20)
   · `avatarLg` (30); retrato de identidade só `avatarXl` (40, cartão do
   peregrino) e `avatarHero` (52, herói do perfil). "Você" na lista: fundo `AppRoles.selected` a 0.08 + borda 0.4.

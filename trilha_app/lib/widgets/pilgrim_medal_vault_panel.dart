@@ -485,11 +485,13 @@ class _MedalTabBar extends StatelessWidget {
         (
           label: context.l10n.medalVaultTabJourney,
           glyph: null,
+          mark: null,
           alert: false,
         ),
         (
           label: '${context.l10n.medalVaultTabTrails} · $trailCount',
           glyph: null,
+          mark: null,
           alert: false,
         ),
       ],

@@ -5181,6 +5181,30 @@ abstract class AppLocalizations {
   /// **'você'**
   String get juntosYouLower;
 
+  /// No description provided for @languageCaptionDevice.
+  ///
+  /// In pt, this message translates to:
+  /// **'Segue o idioma do aparelho.'**
+  String get languageCaptionDevice;
+
+  /// No description provided for @languageCaptionEn.
+  ///
+  /// In pt, this message translates to:
+  /// **'Inglês (Estados Unidos).'**
+  String get languageCaptionEn;
+
+  /// No description provided for @languageCaptionEs.
+  ///
+  /// In pt, this message translates to:
+  /// **'Espanhol (Espanha).'**
+  String get languageCaptionEs;
+
+  /// No description provided for @languageCaptionPt.
+  ///
+  /// In pt, this message translates to:
+  /// **'Português do Brasil.'**
+  String get languageCaptionPt;
+
   /// No description provided for @languageDevice.
   ///
   /// In pt, this message translates to:
@@ -5192,6 +5216,42 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Os textos das trilhas e a Bíblia continuam em português por enquanto.'**
   String get languageHint;
+
+  /// No description provided for @languageSemantics.
+  ///
+  /// In pt, this message translates to:
+  /// **'Idioma da interface'**
+  String get languageSemantics;
+
+  /// No description provided for @languageSemanticsHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Deslize ou toque para escolher o idioma'**
+  String get languageSemanticsHint;
+
+  /// No description provided for @languageShortDevice.
+  ///
+  /// In pt, this message translates to:
+  /// **'Auto'**
+  String get languageShortDevice;
+
+  /// No description provided for @languageShortEn.
+  ///
+  /// In pt, this message translates to:
+  /// **'EN'**
+  String get languageShortEn;
+
+  /// No description provided for @languageShortEs.
+  ///
+  /// In pt, this message translates to:
+  /// **'ES'**
+  String get languageShortEs;
+
+  /// No description provided for @languageShortPt.
+  ///
+  /// In pt, this message translates to:
+  /// **'PT'**
+  String get languageShortPt;
 
   /// No description provided for @languageTitle.
   ///

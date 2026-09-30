@@ -9,6 +9,7 @@ import 'package:share_plus/share_plus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../data/trail_repository.dart';
 import '../l10n/app_language.dart';
+import '../l10n/l10n_global.dart';
 import '../services/app_update_service.dart';
 import '../services/backend_service.dart';
 import '../services/bible_service.dart';
@@ -33,6 +34,7 @@ import '../widgets/cinematic_icon.dart';
 import '../widgets/coming_soon_trails_card.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/juntos_chrome.dart';
+import '../widgets/language_flag.dart';
 import '../widgets/mode_selector.dart';
 import '../widgets/reminder_prompt_sheet.dart';
 import '../widgets/reset_progress_sheet.dart';
@@ -332,22 +334,14 @@ class _SettingsScreenState extends State<SettingsScreen>
       title: l10n.languageTitle,
       subtitle: l10n.languageHint,
       children: [
-        _SegmentTrack(
-          semanticsLabel: l10n.languageTitle,
-          items: [
-            for (final lang in AppLanguage.values)
-              (
-                label: lang.label(l10n),
-                selected: current == lang,
-                onTap: () {
-                  if (current == lang) return;
-                  ActHaptics.tap();
-                  progress.updateSettings(
-                    progress.settings.copyWith(language: lang),
-                  );
-                },
-              ),
-          ],
+        _LanguageSwitch(
+          selected: current,
+          onChanged: (lang) {
+            if (lang == current) return;
+            progress.updateSettings(
+              progress.settings.copyWith(language: lang),
+            );
+          },
         ),
       ],
     );
@@ -400,6 +394,7 @@ class _SettingsScreenState extends State<SettingsScreen>
         for (final days in _streakGoals)
           (
             label: context.l10n.settingsDays(days),
+            mark: null,
             selected: current == days,
             onTap: () {
               if (current == days) return;
@@ -581,6 +576,7 @@ class _SettingsScreenState extends State<SettingsScreen>
         for (final step in steps)
           (
             label: step.$2,
+            mark: null,
             selected: (current - step.$1).abs() < 0.01,
             onTap: () {
               ActHaptics.tap();
@@ -1372,7 +1368,13 @@ class _ProfileHeader extends StatelessWidget {
 
 /// Escolha em trilho — o segmentado único do app ([AppSegmentedTabs]).
 class _SegmentTrack extends StatelessWidget {
-  final List<({String label, bool selected, VoidCallback onTap})> items;
+  final List<
+      ({
+        String label,
+        Widget? mark,
+        bool selected,
+        VoidCallback onTap,
+      })> items;
   final String? semanticsLabel;
 
   const _SegmentTrack({required this.items, this.semanticsLabel});
@@ -1384,10 +1386,16 @@ class _SegmentTrack extends StatelessWidget {
       label: semanticsLabel,
       child: AppSegmentedTabs(
         index: items.indexWhere((i) => i.selected),
+        accent: AppRoles.presence,
         onChanged: (i) => items[i].onTap(),
         items: [
           for (final item in items)
-            (label: item.label, glyph: null, alert: false),
+            (
+              label: item.label,
+              glyph: null,
+              mark: item.mark,
+              alert: false,
+            ),
         ],
       ),
     );
@@ -1643,6 +1651,361 @@ class _SkySwitch extends StatefulWidget {
 
   @override
   State<_SkySwitch> createState() => _SkySwitchState();
+}
+
+/// Idioma — mesmo gesto do tema: trilho com 4 células, bandeira + rótulo.
+class _LanguageSwitch extends StatefulWidget {
+  final AppLanguage selected;
+  final ValueChanged<AppLanguage> onChanged;
+
+  const _LanguageSwitch({required this.selected, required this.onChanged});
+
+  static const langs = AppLanguage.values;
+  static const trackHeight = 100.0;
+
+  @override
+  State<_LanguageSwitch> createState() => _LanguageSwitchState();
+}
+
+class _LanguageSwitchState extends State<_LanguageSwitch>
+    with SingleTickerProviderStateMixin {
+  static const _langs = _LanguageSwitch.langs;
+  static const _slideDuration = Duration(milliseconds: 520);
+  static const _slideCurve = Curves.easeOutCubic;
+
+  late final AnimationController _slide;
+  double _downX = 0;
+  int _lastSlot = -1;
+
+  int get _index {
+    final i = _langs.indexOf(widget.selected);
+    return i < 0 ? 0 : i;
+  }
+
+  double get _visual => _slide.value;
+
+  AppLanguage get _visualLang {
+    final i = _visual.round().clamp(0, _langs.length - 1);
+    return _langs[i];
+  }
+
+  String _shortLabel(AppLanguage lang) {
+    final l10n = context.l10n;
+    return switch (lang) {
+      AppLanguage.device => l10n.languageShortDevice,
+      AppLanguage.pt => l10n.languageShortPt,
+      AppLanguage.en => l10n.languageShortEn,
+      AppLanguage.es => l10n.languageShortEs,
+    };
+  }
+
+  String _captionFor(AppLanguage lang) {
+    final l10n = context.l10n;
+    if (lang == AppLanguage.device) {
+      final resolved = L10n.resolve(AppLanguage.device);
+      final name = switch (resolved.languageCode) {
+        'en' => 'English',
+        'es' => 'Español',
+        _ => 'Português',
+      };
+      return '${l10n.languageCaptionDevice} · $name';
+    }
+    return switch (lang) {
+      AppLanguage.pt => l10n.languageCaptionPt,
+      AppLanguage.en => l10n.languageCaptionEn,
+      AppLanguage.es => l10n.languageCaptionEs,
+      AppLanguage.device => l10n.languageCaptionDevice,
+    };
+  }
+
+  String _titleFor(AppLanguage lang) => lang.label(context.l10n);
+
+  Color _washFor(AppLanguage lang) {
+    final id = LanguageFlagIdX.forAppLanguage(lang);
+    return switch (id) {
+      LanguageFlagId.br => const Color(0xFF009C3B),
+      LanguageFlagId.us => const Color(0xFF3C3B6E),
+      LanguageFlagId.es => const Color(0xFFAA151B),
+    };
+  }
+
+  double _focus(int i) {
+    final d = (_visual - i).abs();
+    return (1.0 - d).clamp(0.0, 1.0);
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _slide = AnimationController(
+      vsync: this,
+      duration: _slideDuration,
+      lowerBound: 0,
+      upperBound: (_langs.length - 1).toDouble(),
+      value: _index.toDouble(),
+    );
+    _lastSlot = _index;
+  }
+
+  @override
+  void didUpdateWidget(covariant _LanguageSwitch oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.selected == widget.selected) return;
+    _lastSlot = _index;
+    if (!_slide.isAnimating) {
+      _slide.animateTo(
+        _index.toDouble(),
+        duration: _slideDuration,
+        curve: _slideCurve,
+      );
+    }
+  }
+
+  @override
+  void dispose() {
+    _slide.dispose();
+    super.dispose();
+  }
+
+  void _commit(int index) {
+    final next = _langs[index.clamp(0, _langs.length - 1)];
+    if (next != widget.selected) {
+      if (_lastSlot != index) ActHaptics.tap();
+      widget.onChanged(next);
+    }
+    _lastSlot = index;
+  }
+
+  void _goTo(int index) {
+    _slide.animateTo(
+      index.toDouble(),
+      duration: _slideDuration,
+      curve: _slideCurve,
+    );
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) _commit(index);
+    });
+  }
+
+  void _pickSnap(double localX, double width) {
+    if (width <= 0) return;
+    final i = (localX / width * _langs.length).floor().clamp(
+      0,
+      _langs.length - 1,
+    );
+    _goTo(i);
+  }
+
+  void _follow(double localX, double width) {
+    if (width <= 0) return;
+    final v = ((localX / width) * _langs.length - 0.5).clamp(
+      0.0,
+      (_langs.length - 1).toDouble(),
+    );
+    final slot = v.round();
+    if (slot != _lastSlot) {
+      _lastSlot = slot;
+      ActHaptics.tap();
+    }
+    _slide.stop();
+    _slide.value = v;
+  }
+
+  void _endDrag() {
+    final snap = _visual.round().clamp(0, _langs.length - 1);
+    _goTo(snap);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+
+    return Column(
+      children: [
+        Semantics(
+          container: true,
+          label: context.l10n.languageSemantics,
+          value:
+              '${_titleFor(widget.selected)}. ${_captionFor(widget.selected)}',
+          hint: context.l10n.languageSemanticsHint,
+          child: MediaQuery.withClampedTextScaling(
+            maxScaleFactor: 1.05,
+            child: SizedBox(
+              height: _LanguageSwitch.trackHeight,
+              width: double.infinity,
+              child: LayoutBuilder(
+                builder: (context, constraints) {
+                  final w = constraints.maxWidth;
+                  return GestureDetector(
+                    behavior: HitTestBehavior.opaque,
+                    onTapDown: (d) => _downX = d.localPosition.dx,
+                    onTap: () => _pickSnap(_downX, w),
+                    onHorizontalDragStart: (d) =>
+                        _follow(d.localPosition.dx, w),
+                    onHorizontalDragUpdate: (d) =>
+                        _follow(d.localPosition.dx, w),
+                    onHorizontalDragEnd: (_) => _endDrag(),
+                    onHorizontalDragCancel: _endDrag,
+                    child: DecoratedBox(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(AppRadii.md),
+                        border: Border.all(color: a.cardBorder, width: 1.2),
+                      ),
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(AppRadii.md - 0.6),
+                        child: AnimatedBuilder(
+                          animation: _slide,
+                          builder: (context, _) {
+                            return Stack(
+                              children: [
+                                Row(
+                                  children: [
+                                    for (var i = 0; i < _langs.length; i++)
+                                      Expanded(
+                                        child: _LanguageStageWash(
+                                          wash: _washFor(_langs[i]),
+                                          focus: _focus(i),
+                                        ),
+                                      ),
+                                  ],
+                                ),
+                                Row(
+                                  children: [
+                                    for (var i = 0; i < _langs.length; i++)
+                                      Expanded(
+                                        child: _LanguageStageFace(
+                                          lang: _langs[i],
+                                          label: _shortLabel(_langs[i]),
+                                          focus: _focus(i),
+                                          selected: i == _visual.round(),
+                                        ),
+                                      ),
+                                  ],
+                                ),
+                              ],
+                            );
+                          },
+                        ),
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ),
+          ),
+        ),
+        const SizedBox(height: AppSpace.md),
+        AnimatedBuilder(
+          animation: _slide,
+          builder: (context, _) {
+            return Column(
+              children: [
+                Text(
+                  _titleFor(_visualLang),
+                  style: AppTypography.title(size: 14, color: a.text),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  _captionFor(_visualLang),
+                  textAlign: TextAlign.center,
+                  style: AppTypography.body(size: 12, color: a.textSecondary),
+                ),
+              ],
+            );
+          },
+        ),
+      ],
+    );
+  }
+}
+
+class _LanguageStageWash extends StatelessWidget {
+  final Color wash;
+  final double focus;
+
+  const _LanguageStageWash({required this.wash, required this.focus});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Stack(
+      fit: StackFit.expand,
+      children: [
+        ColoredBox(color: Color.lerp(a.cardFill, wash, 0.14 + 0.22 * focus)!),
+        IgnorePointer(
+          child: ColoredBox(color: Color.fromRGBO(0, 0, 0, 0.42 * (1 - focus))),
+        ),
+      ],
+    );
+  }
+}
+
+class _LanguageStageFace extends StatelessWidget {
+  final AppLanguage lang;
+  final String label;
+  final double focus;
+  final bool selected;
+
+  const _LanguageStageFace({
+    required this.lang,
+    required this.label,
+    required this.focus,
+    required this.selected,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final color = Color.lerp(
+      a.textSecondary,
+      a.text,
+      Curves.easeOut.transform(focus),
+    )!;
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(2, 10, 2, 8),
+      child: Column(
+        children: [
+          Expanded(
+            child: Center(
+              child: Transform.scale(
+                scale: 0.86 + 0.22 * focus,
+                child: DecoratedBox(
+                  decoration: selected
+                      ? BoxDecoration(
+                          borderRadius: BorderRadius.circular(6),
+                          boxShadow: [
+                            BoxShadow(
+                              color: AppRoles.presence.withValues(alpha: 0.35),
+                              blurRadius: 10,
+                              spreadRadius: 0.5,
+                            ),
+                          ],
+                        )
+                      : const BoxDecoration(),
+                  child: LanguageFlag.forAppLanguage(
+                    lang,
+                    width: 40,
+                    height: 28,
+                  ),
+                ),
+              ),
+            ),
+          ),
+          Text(
+            label,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: AppTypography.label(
+              size: 11,
+              letterSpacing: 0.2,
+              color: color,
+              weight: focus > 0.55 ? FontWeight.w800 : FontWeight.w600,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
 }
 
 class _SkySwitchState extends State<_SkySwitch> with TickerProviderStateMixin {

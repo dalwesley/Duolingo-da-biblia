@@ -13,7 +13,7 @@ in the screen.
 | Radius | `AppRadii.hair / xs / sm / md / lg / xl / sheet / pill` | `lib/theme/app_theme.dart` |
 | Spacing | `AppSpace.xs … xxxl`, `AppSpace.screen`, `AppSpace.section` | `lib/theme/app_theme.dart` |
 | Color | `AppColors.*` | `lib/theme/app_colors.dart` |
-| Card | `GlassCard`. Add `glow:` + `tint:` for a stage card (duel, pair, passport, hero) | `lib/widgets/immersive_background.dart` |
+| Card | `GlassCard`. Add `glow:` + `tint:` for a stage card (duel, pair, passport, hero). Juntos: Companhia=`presence`, Caravana/Desafio=`reward` | `lib/widgets/immersive_background.dart` |
 | Nested panel inside a card | `InsetPanel` | `lib/widgets/ui_primitives.dart` |
 | Kicker / section label | `SectionLabel(text, color:)`. Card header with glyph: `CardHeader` | `lib/widgets/ui_primitives.dart` |
 | Primary action | `CopperCta` | `lib/widgets/ui_primitives.dart` |
@@ -23,7 +23,7 @@ in the screen.
 | Bottom sheet | `showAppSheet(context, builder:)` + `AppSheetPanel(tint:)` | `lib/widgets/app_sheet.dart` |
 | Dialog | `showAppDialog` + `AppDialog`, or `showAppConfirm` | `lib/widgets/app_sheet.dart` |
 | Screen header | `TopBar` | `lib/widgets/top_bar.dart` |
-| Segmented tabs | `JuntosSegmentTabs` (primary), `JuntosUnderlineToggle` (secondary) | `lib/widgets/juntos_chrome.dart` |
+| Segmented tabs | `AppSegmentedTabs(accent:)` — active = dark fill + accent rim. **Top** tabs=`reward` (gold); **nested** submenu=`presence` (glow). Never scene white. | `lib/widgets/juntos_chrome.dart` |
 
 ## Type scale (sizes are snapped automatically)
 

@@ -354,6 +354,7 @@ class _BibleLibrary extends StatelessWidget {
             children: [
               AppSegmentedTabs(
                 index: pane,
+                accent: AppRoles.reward,
                 onChanged: (i) {
                   if (i == pane) return;
                   ActHaptics.tap();
@@ -363,11 +364,13 @@ class _BibleLibrary extends StatelessWidget {
                   (
                     label: context.l10n.bibleTitle,
                     glyph: CinematicGlyph.book,
+                    mark: null,
                     alert: false,
                   ),
                   (
                     label: context.l10n.bibleTabReading,
                     glyph: CinematicGlyph.path,
+                    mark: null,
                     alert: planDue,
                   ),
                 ],
@@ -786,6 +789,7 @@ class _OrderChips extends StatelessWidget {
     final index = BibleReadingOrder.values.indexOf(order);
     return AppSegmentedTabs(
       index: index,
+      accent: AppRoles.presence,
       onChanged: (i) {
         if (i == index) return;
         ActHaptics.tap();
@@ -797,16 +801,19 @@ class _OrderChips extends StatelessWidget {
         (
           label: context.l10n.planOrderCanonicalShort,
           glyph: CinematicGlyph.book,
+          mark: null,
           alert: false,
         ),
         (
           label: context.l10n.planOrderChronologicalShort,
           glyph: CinematicGlyph.calendar,
+          mark: null,
           alert: false,
         ),
         (
           label: context.l10n.planOrderAlphabeticalShort,
           glyph: CinematicGlyph.stack,
+          mark: null,
           alert: false,
         ),
       ],

@@ -532,9 +532,10 @@ class _OrderToggle extends StatelessWidget {
     const orders = BibleReadingOrder.planOrders;
     return AppSegmentedTabs(
       index: orders.indexOf(value),
+      accent: AppRoles.presence,
       onChanged: (i) => onChanged(orders[i]),
       items: [
-        for (final o in orders) (label: o.shortLabel, glyph: null, alert: false),
+        for (final o in orders) (label: o.shortLabel, glyph: null, mark: null, alert: false),
       ],
     );
   }

@@ -36,6 +36,7 @@ import '../widgets/companion_formed_sheet.dart';
 import '../widgets/companion_invite_confirm_sheet.dart';
 import '../widgets/companion_nudge_sheet.dart';
 import '../widgets/hero_card_atmosphere.dart';
+import '../widgets/home_brand_backdrop.dart';
 import '../widgets/icon_well.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/invite_qr_sheet.dart';
@@ -336,81 +337,91 @@ class _LeagueScreenState extends State<LeagueScreen>
 
   @override
   Widget build(BuildContext context) {
-    return RefreshIndicator(
-      color: AppRoles.chrome,
-      onRefresh: _settle,
-      child: ListView(
-        physics: const AlwaysScrollableScrollPhysics(),
-        padding: EdgeInsets.fromLTRB(
-          AppSpace.screen,
-          widget.topBar == null
-              ? AppSpace.sm
-              : MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
-          AppSpace.screen,
-          scrollPaddingBelowNav(context),
-        ),
-        children: [
-          if (widget.topBar != null) ...[
-            widget.topBar!,
-            const SizedBox(height: AppSpace.afterTopBar),
-          ],
-          _reveal(
-            0,
-            _SegmentTabs(
-              index: _tab,
-              caravanAlert: JuntosInbox.caravanPending(context) > 0,
-              companionAlert:
-                  context.watch<CompanionService>().incomingNudge != null ||
-                  context.watch<CornerService>().face != null,
-              gruposAlert: context.watch<RoomService>().incoming.isNotEmpty,
-              onChanged: (i) {
-                ActHaptics.tap();
-                setState(() => _tab = i);
-              },
+    final style = Appearance.of(context);
+    return Stack(
+      children: [
+        // Trilha STWAY velada — lobby social (não cena).
+        Positioned.fill(child: HomeBrandBackdrop(style: style)),
+        RefreshIndicator(
+          color: AppRoles.presence,
+          onRefresh: _settle,
+          child: ListView(
+            physics: const AlwaysScrollableScrollPhysics(),
+            padding: EdgeInsets.fromLTRB(
+              AppSpace.screen,
+              widget.topBar == null
+                  ? AppSpace.sm
+                  : MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
+              AppSpace.screen,
+              scrollPaddingBelowNav(context),
             ),
-          ),
-          const SizedBox(height: AppSpace.section),
-          // Troca de aba desliza o conteúdo para o lado da aba escolhida —
-          // o palco muda, a moldura fica.
-          AnimatedSwitcher(
-            duration: const Duration(milliseconds: 280),
-            switchInCurve: Curves.easeOutCubic,
-            switchOutCurve: Curves.easeInCubic,
-            layoutBuilder: (current, previous) => Stack(
-              alignment: Alignment.topCenter,
-              children: [...previous, ?current],
-            ),
-            transitionBuilder: (child, animation) {
-              final incoming = child.key == ValueKey(_tab);
-              final dx = incoming ? 0.06 : -0.06;
-              return FadeTransition(
-                opacity: animation,
-                child: SlideTransition(
-                  position: Tween<Offset>(
-                    begin: Offset(dx, 0),
-                    end: Offset.zero,
-                  ).animate(animation),
-                  child: child,
+            children: [
+              if (widget.topBar != null) ...[
+                widget.topBar!,
+                const SizedBox(height: AppSpace.afterTopBar),
+              ],
+              _reveal(
+                0,
+                _SegmentTabs(
+                  index: _tab,
+                  caravanAlert: JuntosInbox.caravanPending(context) > 0,
+                  companionAlert:
+                      context.watch<CompanionService>().incomingNudge !=
+                          null ||
+                      context.watch<CornerService>().face != null,
+                  gruposAlert:
+                      context.watch<RoomService>().incoming.isNotEmpty,
+                  onChanged: (i) {
+                    ActHaptics.tap();
+                    setState(() => _tab = i);
+                  },
                 ),
-              );
-            },
-            child: Column(
-              key: ValueKey(_tab),
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: switch (_tab) {
-                _tabCompanhia => _buildCompanions(context),
-                _tabCaravana => [
-                  JuntosInbox(
-                    onOpenCaravana: () => setState(() => _tab = _tabCaravana),
-                  ),
-                  ..._buildLeague(context),
-                ],
-                _ => _buildRooms(context),
-              },
-            ),
+              ),
+              const SizedBox(height: AppSpace.section),
+              // Troca de aba desliza o conteúdo para o lado da aba escolhida —
+              // o palco muda, a moldura fica.
+              AnimatedSwitcher(
+                duration: const Duration(milliseconds: 280),
+                switchInCurve: Curves.easeOutCubic,
+                switchOutCurve: Curves.easeInCubic,
+                layoutBuilder: (current, previous) => Stack(
+                  alignment: Alignment.topCenter,
+                  children: [...previous, ?current],
+                ),
+                transitionBuilder: (child, animation) {
+                  final incoming = child.key == ValueKey(_tab);
+                  final dx = incoming ? 0.06 : -0.06;
+                  return FadeTransition(
+                    opacity: animation,
+                    child: SlideTransition(
+                      position: Tween<Offset>(
+                        begin: Offset(dx, 0),
+                        end: Offset.zero,
+                      ).animate(animation),
+                      child: child,
+                    ),
+                  );
+                },
+                child: Column(
+                  key: ValueKey(_tab),
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: switch (_tab) {
+                    _tabCompanhia => _buildCompanions(context),
+                    _tabCaravana => [
+                      JuntosInbox(
+                        onOpenCaravana: () =>
+                            setState(() => _tab = _tabCaravana),
+                      ),
+                      ..._buildLeague(context),
+                    ],
+                    _ => _buildRooms(context),
+                  },
+                ),
+              ),
+            ],
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 
@@ -1440,20 +1451,24 @@ class _SegmentTabs extends StatelessWidget {
     return JuntosSegmentTabs(
       index: index,
       onChanged: onChanged,
+      accent: AppRoles.reward,
       items: [
         (
           label: context.l10n.juntosTabCompanion,
           glyph: CinematicGlyph.link,
+          mark: null,
           alert: companionAlert,
         ),
         (
           label: context.l10n.juntosTabCaravan,
           glyph: CinematicGlyph.podium,
+          mark: null,
           alert: caravanAlert,
         ),
         (
           label: context.l10n.juntosTabGroups,
           glyph: CinematicGlyph.people,
+          mark: null,
           alert: gruposAlert,
         ),
       ],
@@ -1479,12 +1494,17 @@ class _CompanhiaStageCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final hasBody = body != null;
+    // Submenu interno = presença (azul); ouro fica nas abas-mãe.
+    const tone = AppRoles.presence;
     return GlassCard(
+      tint: tone,
+      glow: 0.32,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           AppSegmentedTabs(
             index: pane,
+            accent: tone,
             onChanged: (i) {
               ActHaptics.tap();
               onPaneChanged(i);
@@ -1494,11 +1514,13 @@ class _CompanhiaStageCard extends StatelessWidget {
               (
                 label: context.l10n.juntosTabCompanion,
                 glyph: null,
+                mark: null,
                 alert: companionAlert,
               ),
               (
                 label: context.l10n.juntosTabChallenge,
                 glyph: null,
+                mark: null,
                 alert: desafioAlert,
               ),
             ],
@@ -1520,16 +1542,16 @@ class _CaravanStageCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final weekly = pane == 1;
-    // Um ponto quente no bloco: tint/glow de recompensa — o resto da
-    // tela fica chrome frio; o ouro diz "isto é jogo".
+    // Submenu mês/semana = presença; ouro do ranking fica na lista.
     return GlassCard(
-      tint: AppRoles.reward,
-      glow: 0.35,
+      tint: AppRoles.presence,
+      glow: 0.32,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           AppSegmentedTabs(
             index: pane,
+            accent: AppRoles.presence,
             onChanged: (i) {
               ActHaptics.tap();
               onPaneChanged(i);
@@ -1538,11 +1560,13 @@ class _CaravanStageCard extends StatelessWidget {
               (
                 label: context.l10n.juntosThisMonth,
                 glyph: CinematicGlyph.path,
+                mark: null,
                 alert: false,
               ),
               (
                 label: context.l10n.juntosThisWeek,
                 glyph: CinematicGlyph.calendar,
+                mark: null,
                 alert: false,
               ),
             ],
@@ -1600,18 +1624,21 @@ class _CaravanExplainer extends StatelessWidget {
           ),
         ),
         const SizedBox(height: AppSpace.lg),
-        _ExplainerSteps(steps: steps),
+        _ExplainerSteps(steps: steps, accent: AppRoles.reward),
       ],
     );
   }
 }
 
-/// Três passos lado a lado, ligados por um fio — poços com chrome frio;
-/// o nó do meio leva [AppRoles.reward] (único ouro do fluxo).
+/// Três passos lado a lado — nó do meio na cor do bloco ([accent]).
 class _ExplainerSteps extends StatelessWidget {
   final List<(CinematicGlyph, String)> steps;
+  final Color accent;
 
-  const _ExplainerSteps({required this.steps});
+  const _ExplainerSteps({
+    required this.steps,
+    this.accent = AppRoles.presence,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -1625,7 +1652,7 @@ class _ExplainerSteps extends StatelessWidget {
           top: 19,
           child: Container(
             height: 1,
-            color: AppRoles.reward.withValues(alpha: 0.35),
+            color: accent.withValues(alpha: 0.35),
           ),
         ),
         Row(
@@ -1637,12 +1664,12 @@ class _ExplainerSteps extends StatelessWidget {
                   children: [
                     IconWell(
                       size: 38,
-                      accent: i == mid ? AppRoles.reward : AppRoles.chrome,
+                      accent: i == mid ? accent : AppRoles.chrome,
                       glowing: i == mid,
                       child: CinematicIcon(
                         glyph: steps[i].$1,
                         size: AppMetrics.iconMd,
-                        accent: i == mid ? AppRoles.reward : AppRoles.chrome,
+                        accent: i == mid ? accent : AppRoles.chrome,
                         framed: false,
                       ),
                     ),
@@ -1730,6 +1757,7 @@ class _DesafioExplainer extends StatelessWidget {
         ),
         const SizedBox(height: AppSpace.lg),
         _ExplainerSteps(
+          accent: AppRoles.reward,
           steps: [
             (CinematicGlyph.path, context.l10n.juntosChallengeStep1),
             (CinematicGlyph.calendar, context.l10n.juntosChallengeStep2),

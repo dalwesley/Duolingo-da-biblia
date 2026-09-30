@@ -12,21 +12,30 @@ import 'ui_primitives.dart';
 /// duas pessoas e o halo de quem já caminhou. Cards e selos vêm do design
 /// system ([GlassCard] com `glow`, [SectionLabel], [SoftBadge]).
 
-/// O controle segmentado do app — pílula clara que desliza até a escolha.
+/// O controle segmentado do app — pílula escura com rim do [accent].
 /// Use [AppSegmentedTabs] em qualquer tela (Juntos, Bíblia, Ajustes…);
 /// [glyph] é opcional. [index] negativo deixa todas apagadas.
+///
+/// [accent] = cromático do bloco (`presence` social, `reward` disputa,
+/// `chrome` neutro). Aba ativa **não** usa o branco de seleção da cena.
+/// [mark] no item = leading custom (ex.: bandeira de idioma); senão [glyph].
 typedef AppSegmentedTabs = JuntosSegmentTabs;
 
 class JuntosSegmentTabs extends StatelessWidget {
   final int index;
   final ValueChanged<int> onChanged;
-  final List<({String label, CinematicGlyph? glyph, bool alert})> items;
+  final List<({String label, CinematicGlyph? glyph, Widget? mark, bool alert})>
+      items;
+
+  /// Cromático do bloco — presença, reward ou chrome.
+  final Color accent;
 
   const JuntosSegmentTabs({
     super.key,
     required this.index,
     required this.onChanged,
     required this.items,
+    this.accent = AppRoles.chrome,
   });
 
   @override
@@ -59,13 +68,22 @@ class JuntosSegmentTabs extends StatelessWidget {
                   width: slot,
                   child: Container(
                     decoration: BoxDecoration(
-                      color: AppRoles.selected,
+                      color: Color.lerp(a.cardFill, accent, 0.22)!,
                       borderRadius: BorderRadius.circular(AppRadii.md),
+                      border: Border.all(
+                        color: accent.withValues(alpha: 0.75),
+                        width: 1.25,
+                      ),
                       boxShadow: [
                         BoxShadow(
-                          color: Colors.black.withValues(alpha: 0.28),
-                          blurRadius: 10,
+                          color: accent.withValues(alpha: 0.28),
+                          blurRadius: 14,
                           offset: const Offset(0, 3),
+                        ),
+                        BoxShadow(
+                          color: Colors.black.withValues(alpha: 0.22),
+                          blurRadius: 8,
+                          offset: const Offset(0, 2),
                         ),
                       ],
                     ),
@@ -88,12 +106,20 @@ class JuntosSegmentTabs extends StatelessWidget {
     AppLocalizations l10n,
     AppearanceStyle a,
     int i,
-    ({String label, CinematicGlyph? glyph, bool alert}) item,
+    ({String label, CinematicGlyph? glyph, Widget? mark, bool alert}) item,
   ) {
     final selected = i == index;
-    // Seleção = tinta escura na pílula branca; idle = chrome frio (não
-    // branco/secondary — senão some a hierarquia e a tela fica sem vida).
-    final ink = selected ? AppColors.night : a.iconMuted;
+    // Ativo = tinta do accent; idle = chrome frio. Branco fica na cena.
+    final ink = selected ? accent : a.iconMuted;
+    final leading = item.mark ??
+        (item.glyph != null
+            ? CinematicIcon(
+                glyph: item.glyph!,
+                size: AppMetrics.iconSm,
+                accent: ink,
+                framed: false,
+              )
+            : null);
     return Semantics(
       button: true,
       selected: selected,
@@ -106,29 +132,24 @@ class JuntosSegmentTabs extends StatelessWidget {
           child: FittedBox(
             fit: BoxFit.scaleDown,
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 6),
+              padding: const EdgeInsets.symmetric(horizontal: 4),
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  if (item.glyph != null) ...[
+                  if (leading != null) ...[
                     Stack(
                       clipBehavior: Clip.none,
                       children: [
-                        CinematicIcon(
-                          glyph: item.glyph!,
-                          size: AppMetrics.iconSm,
-                          accent: ink,
-                          framed: false,
-                        ),
+                        leading,
                         if (item.alert && !selected)
-                          const Positioned(
+                          Positioned(
                             right: -3,
                             top: -2,
-                            child: AlertDot(size: 8, ring: AppColors.night),
+                            child: AlertDot(size: 8, ring: a.insetFill),
                           ),
                       ],
                     ),
-                    const SizedBox(width: 6),
+                    const SizedBox(width: 5),
                   ],
                   AnimatedDefaultTextStyle(
                     duration: const Duration(milliseconds: 200),

@@ -3319,11 +3319,41 @@ class AppLocalizationsEs extends AppLocalizations {
   String get juntosYouLower => 'tú';
 
   @override
+  String get languageCaptionDevice => 'Sigue el idioma del aparato.';
+
+  @override
+  String get languageCaptionEn => 'Inglés (Estados Unidos).';
+
+  @override
+  String get languageCaptionEs => 'Español (España).';
+
+  @override
+  String get languageCaptionPt => 'Portugués de Brasil.';
+
+  @override
   String get languageDevice => 'Del dispositivo';
 
   @override
   String get languageHint =>
       'El contenido de las rutas y la Biblia siguen en portugués por ahora.';
+
+  @override
+  String get languageSemantics => 'Idioma de la interfaz';
+
+  @override
+  String get languageSemanticsHint => 'Desliza o toca para elegir el idioma';
+
+  @override
+  String get languageShortDevice => 'Auto';
+
+  @override
+  String get languageShortEn => 'EN';
+
+  @override
+  String get languageShortEs => 'ES';
+
+  @override
+  String get languageShortPt => 'PT';
 
   @override
   String get languageTitle => 'Idioma';

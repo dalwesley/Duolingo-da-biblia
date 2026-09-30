@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 ///
 /// Âncora: logo (navy → glow → path) + “A” dourado do wordmark.
 /// Regra de tela: no máx. 2 cromáticos — (modo **ou** presença) + ouro.
+/// Norte: ouro avança · glow vive · branco só no toque da cena · chrome o resto.
 ///
 /// Chrome (regra):
 /// - Fundo: Appearance / DayPhase / night*
@@ -34,7 +35,7 @@ class AppColors {
   static const accentBright = Color(0xFFE0BE4A);
   static const inkOnAccent = Color(0xFF140E00);
 
-  /// Path aceso da splash — presença / “estudou” / sucesso na home.
+  /// Path aceso da splash — presença / “estudou” / vida social (Hoje + Juntos).
   static const glow = Color(0xFF5EB8E8);
 
   /// Alias legado — preferir [glow].
@@ -164,7 +165,7 @@ class AppColors {
 /// - [reward] — passos, medalha, baú, meta cumprida;
 /// - [chrome] — nav, TopBar, ícone de aba (neutro, igual em todas);
 /// - [selected] — escolha no chrome escuro (contorno claro);
-/// - [success] / [presence] — concluído, "estudou hoje" (glow da splash);
+/// - [success] / [presence] — vivo / "estudou hoje" / social (Hoje + Juntos);
 /// - [streak] — sequência (chama âmbar), só ela;
 /// - [risk] / [error] — algo em perigo ou que falhou;
 /// - modos: [observation] · [comprehension] · [interpretation];

@@ -857,14 +857,16 @@ class _StudyTabs extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(16, 6, 16, 8),
       child: AppSegmentedTabs(
         index: index,
+        accent: AppRoles.presence,
         onChanged: onChanged,
         items: [
-          (label: context.l10n.verseStudyTabWord, glyph: null, alert: false),
+          (label: context.l10n.verseStudyTabWord, glyph: null, mark: null, alert: false),
           (
             label: occ != null && occ! > 0
                 ? context.l10n.verseStudyTabUsesCount(occ!)
                 : context.l10n.verseStudyTabUses,
             glyph: null,
+            mark: null,
             alert: false,
           ),
           (
@@ -872,6 +874,7 @@ class _StudyTabs extends StatelessWidget {
                 ? context.l10n.verseStudyTabLinksCount(xrefCount)
                 : context.l10n.verseStudyTabLinks,
             glyph: null,
+            mark: null,
             alert: false,
           ),
         ],

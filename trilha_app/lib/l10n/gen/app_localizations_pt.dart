@@ -3306,11 +3306,41 @@ class AppLocalizationsPt extends AppLocalizations {
   String get juntosYouLower => 'você';
 
   @override
+  String get languageCaptionDevice => 'Segue o idioma do aparelho.';
+
+  @override
+  String get languageCaptionEn => 'Inglês (Estados Unidos).';
+
+  @override
+  String get languageCaptionEs => 'Espanhol (Espanha).';
+
+  @override
+  String get languageCaptionPt => 'Português do Brasil.';
+
+  @override
   String get languageDevice => 'Do aparelho';
 
   @override
   String get languageHint =>
       'Os textos das trilhas e a Bíblia continuam em português por enquanto.';
+
+  @override
+  String get languageSemantics => 'Idioma da interface';
+
+  @override
+  String get languageSemanticsHint => 'Deslize ou toque para escolher o idioma';
+
+  @override
+  String get languageShortDevice => 'Auto';
+
+  @override
+  String get languageShortEn => 'EN';
+
+  @override
+  String get languageShortEs => 'ES';
+
+  @override
+  String get languageShortPt => 'PT';
 
   @override
   String get languageTitle => 'Idioma';

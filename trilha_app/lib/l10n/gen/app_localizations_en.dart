@@ -3308,11 +3308,41 @@ class AppLocalizationsEn extends AppLocalizations {
   String get juntosYouLower => 'you';
 
   @override
+  String get languageCaptionDevice => 'Follows your device language.';
+
+  @override
+  String get languageCaptionEn => 'English (United States).';
+
+  @override
+  String get languageCaptionEs => 'Spanish (Spain).';
+
+  @override
+  String get languageCaptionPt => 'Brazilian Portuguese.';
+
+  @override
   String get languageDevice => 'Device';
 
   @override
   String get languageHint =>
       'Trail content and the Bible are still in Portuguese for now.';
+
+  @override
+  String get languageSemantics => 'Interface language';
+
+  @override
+  String get languageSemanticsHint => 'Swipe or tap to choose the language';
+
+  @override
+  String get languageShortDevice => 'Auto';
+
+  @override
+  String get languageShortEn => 'EN';
+
+  @override
+  String get languageShortEs => 'ES';
+
+  @override
+  String get languageShortPt => 'PT';
 
   @override
   String get languageTitle => 'Language';
