@@ -3,6 +3,19 @@
   "lessonLoadError": {"pt": "Não foi possível carregar as perguntas desta cena. Tente de novo.", "en": "Couldn't load this scene's questions. Try again.", "es": "No se pudieron cargar las preguntas de esta escena. Inténtalo de nuevo."},
   "lessonDuration": {"pt": "~3 min", "en": "~3 min", "es": "~3 min", "description": "Duração estimada da cena"},
   "lessonLampRelit": {"pt": "Cinco seguidas: uma lâmpada reacendeu.", "en": "Five in a row: a lamp relit.", "es": "Cinco seguidas: una lámpara se volvió a encender."},
+  "lessonCombo": {
+    "pt": "×{count}",
+    "en": "×{count}",
+    "es": "×{count}",
+    "placeholders": {"count": "int"},
+    "description": "Combo de acertos seguidos no HUD da cena"
+  },
+  "lessonComboMeterSemantics": {
+    "pt": "Combo {count} · {filled} de {cycle} até reacender",
+    "en": "Combo {count} · {filled} of {cycle} until a lamp relights",
+    "es": "Combo {count} · {filled} de {cycle} hasta reencender",
+    "placeholders": {"count": "int", "filled": "int", "cycle": "int"}
+  },
   "lessonLampsLeft": {
     "pt": "{count, plural, =0{As lâmpadas acabaram — cada erro apaga uma.} =1{Resta 1 lâmpada — cada erro apaga uma.} other{Restam {count} lâmpadas — cada erro apaga uma.}}",
     "en": "{count, plural, =0{No lamps left — each mistake puts one out.} =1{1 lamp left — each mistake puts one out.} other{{count} lamps left — each mistake puts one out.}}",

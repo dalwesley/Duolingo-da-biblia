@@ -3766,6 +3766,18 @@ abstract class AppLocalizations {
   /// **'O gelo cobriu ontem'**
   String get homeFreezeSheetTitle;
 
+  /// No description provided for @homeGoalLeft.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{Falta 1 cena para a meta} other{Faltam {count} cenas para a meta}}'**
+  String homeGoalLeft(int count);
+
+  /// No description provided for @homeGoalMet.
+  ///
+  /// In pt, this message translates to:
+  /// **'Meta do dia cumprida'**
+  String get homeGoalMet;
+
   /// No description provided for @homeHeroEcho.
   ///
   /// In pt, this message translates to:
@@ -3951,6 +3963,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'meta'**
   String get homeStatGoal;
+
+  /// No description provided for @homeStepsSemantics.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 passo na jornada} other{{count} passos na jornada}}'**
+  String homeStepsSemantics(int count);
 
   /// No description provided for @homeTrailDoneBody.
   ///
@@ -5390,6 +5408,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Travessia'**
   String get lessonBoss;
+
+  /// Combo de acertos seguidos no HUD da cena
+  ///
+  /// In pt, this message translates to:
+  /// **'×{count}'**
+  String lessonCombo(int count);
+
+  /// No description provided for @lessonComboMeterSemantics.
+  ///
+  /// In pt, this message translates to:
+  /// **'Combo {count} · {filled} de {cycle} até reacender'**
+  String lessonComboMeterSemantics(int count, int filled, int cycle);
 
   /// Duração estimada da cena
   ///

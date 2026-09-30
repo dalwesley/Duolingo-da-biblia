@@ -203,6 +203,23 @@
     "en": "goal",
     "es": "meta"
   },
+  "homeGoalLeft": {
+    "pt": "{count, plural, =1{Falta 1 cena para a meta} other{Faltam {count} cenas para a meta}}",
+    "en": "{count, plural, =1{1 scene left for your goal} other{{count} scenes left for your goal}}",
+    "es": "{count, plural, =1{Falta 1 escena para la meta} other{Faltan {count} escenas para la meta}}",
+    "placeholders": {"count": "int"}
+  },
+  "homeGoalMet": {
+    "pt": "Meta do dia cumprida",
+    "en": "Daily goal met",
+    "es": "Meta del día cumplida"
+  },
+  "homeStepsSemantics": {
+    "pt": "{count, plural, =1{1 passo na jornada} other{{count} passos na jornada}}",
+    "en": "{count, plural, =1{1 step on the journey} other{{count} steps on the journey}}",
+    "es": "{count, plural, =1{1 paso en el camino} other{{count} pasos en el camino}}",
+    "placeholders": {"count": "int"}
+  },
   "homeStatFreezeUsed": {
     "pt": "gelo usado",
     "en": "freeze used",

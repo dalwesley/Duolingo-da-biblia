@@ -1643,6 +1643,15 @@
   },
   "homeFreezeSheetBody": "Você perdeu um dia, mas a sequência continua. O gelo salva uma falta por semana — caminhe hoje para seguir.",
   "homeFreezeSheetTitle": "O gelo cobriu ontem",
+  "homeGoalLeft": "{count, plural, =1{Falta 1 cena para a meta} other{Faltam {count} cenas para a meta}}",
+  "@homeGoalLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeGoalMet": "Meta do dia cumprida",
   "homeHeroEcho": "Eco de ontem",
   "homeHeroExtraSteps": "+{count} passos · extra de hoje",
   "@homeHeroExtraSteps": {
@@ -1791,6 +1800,14 @@
   "homeStatFreeze": "gelo",
   "homeStatFreezeUsed": "gelo usado",
   "homeStatGoal": "meta",
+  "homeStepsSemantics": "{count, plural, =1{1 passo na jornada} other{{count} passos na jornada}}",
+  "@homeStepsSemantics": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "homeTrailDoneBody": "Escolha a próxima e continue aprendendo.",
   "homeTrailDoneTitle": "Trilha concluída",
   "homeWordInScene": "Nesta cena",
@@ -2528,6 +2545,29 @@
   "lessonBoss": "Travessia",
   "@lessonBoss": {
     "description": "Cena de revisão de etapa (boss)"
+  },
+  "lessonCombo": "×{count}",
+  "@lessonCombo": {
+    "description": "Combo de acertos seguidos no HUD da cena",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lessonComboMeterSemantics": "Combo {count} · {filled} de {cycle} até reacender",
+  "@lessonComboMeterSemantics": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "filled": {
+        "type": "int"
+      },
+      "cycle": {
+        "type": "int"
+      }
+    }
   },
   "lessonDuration": "~3 min",
   "@lessonDuration": {

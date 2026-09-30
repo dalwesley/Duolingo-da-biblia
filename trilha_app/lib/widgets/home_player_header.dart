@@ -14,9 +14,9 @@ import 'ui_primitives.dart';
 import 'user_avatar.dart';
 import '../l10n/app_language.dart';
 
-/// Saudação do dia — identidade + pulso, sem HUD de lâmpadas (isso é da cena).
+/// Saudação do dia — cartão de jogador: identidade + pulso + meta.
 ///
-/// Compacto: uma linha de pulso (sequência · meta · gelo) + a semana em orbs.
+/// Lâmpadas ficam na cena. Aqui: sequência, meta, gelo, passos e a semana.
 /// O CTA da missão vive só no hero — o header não duplica o toque.
 class HomePlayerHeader extends StatelessWidget {
   final VoidCallback? onProfileTap;
@@ -41,6 +41,8 @@ class HomePlayerHeader extends StatelessWidget {
     final goal = progress.settings.dailyGoal;
     final done = progress.missionsToday.clamp(0, goal);
     final atRisk = progress.isStreakAtRisk;
+    final goalMet = progress.dailyGoalMet;
+    final left = (goal - done).clamp(0, goal);
     final l10n = context.l10n;
     final name = progress.userName.trim().isEmpty
         ? l10n.homeDefaultName
@@ -50,10 +52,15 @@ class HomePlayerHeader extends StatelessWidget {
     final streak = progress.streak;
     final freezeUsed = progress.streakFreezeUsedThisWeek;
     final freezeCount = freezeUsed || progress.streakFreezeAvailable ? 1 : 0;
+    final goalFill = goal <= 0 ? 0.0 : done / goal;
+    final barColor = goalMet
+        ? AppRoles.reward
+        : (atRisk ? AppRoles.streak : AppRoles.presence);
 
     return GlassCard(
-      padding: const EdgeInsets.fromLTRB(14, 12, 14, 8),
+      padding: const EdgeInsets.fromLTRB(14, 12, 14, 10),
       tint: atRisk ? AppRoles.risk : null,
+      glow: goalMet ? 0.45 : null,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -62,7 +69,8 @@ class HomePlayerHeader extends StatelessWidget {
               Expanded(
                 child: Semantics(
                   button: onProfileTap != null,
-                  label: onProfileTap != null ? l10n.homeOpenProfile(name) : null,
+                  label:
+                      onProfileTap != null ? l10n.homeOpenProfile(name) : null,
                   child: GestureDetector(
                     onTap: () {
                       if (onProfileTap == null) return;
@@ -116,6 +124,13 @@ class HomePlayerHeader extends StatelessWidget {
                   ),
                 ),
               ),
+              Semantics(
+                label: l10n.homeStepsSemantics(progress.steps),
+                child: CountBadge(
+                  '${progress.steps}',
+                  color: AppRoles.reward,
+                ),
+              ),
               if (onLiturgyTap != null)
                 _SeasonChip(
                   moment: moment,
@@ -124,7 +139,7 @@ class HomePlayerHeader extends StatelessWidget {
                 ),
             ],
           ),
-          const SizedBox(height: 10),
+          const SizedBox(height: 12),
           // Pulso do dia — uma linha, sem toque (o CTA é o hero).
           MergeSemantics(
             child: Row(
@@ -139,9 +154,7 @@ class HomePlayerHeader extends StatelessWidget {
                 const Spacer(),
                 _Stat(
                   glyph: CinematicGlyph.check,
-                  accent: progress.dailyGoalMet
-                      ? AppRoles.reward
-                      : AppRoles.chrome,
+                  accent: goalMet ? AppRoles.reward : AppRoles.chrome,
                   value: '$done/$goal',
                   hint: l10n.homeStatGoal,
                 ),
@@ -150,12 +163,37 @@ class HomePlayerHeader extends StatelessWidget {
                   glyph: CinematicGlyph.frost,
                   accent: freezeUsed ? a.textFaint : AppRoles.chrome,
                   value: '$freezeCount',
-                  hint: freezeUsed ? l10n.homeStatFreezeUsed : l10n.homeStatFreeze,
+                  hint:
+                      freezeUsed ? l10n.homeStatFreezeUsed : l10n.homeStatFreeze,
                 ),
               ],
             ),
           ),
-          const SizedBox(height: 8),
+          const SizedBox(height: 10),
+          Semantics(
+            label: goalMet || left <= 0
+                ? l10n.homeGoalMet
+                : l10n.homeGoalLeft(left),
+            child: AppProgressBar(
+              value: goalFill,
+              color: barColor,
+              height: 6,
+            ),
+          ),
+          const SizedBox(height: 6),
+          Text(
+            goalMet || left <= 0
+                ? l10n.homeGoalMet
+                : l10n.homeGoalLeft(left),
+            style: AppTypography.body(
+              size: 11,
+              weight: FontWeight.w700,
+              color: goalMet || left <= 0
+                  ? AppRoles.reward
+                  : (atRisk ? AppRoles.streak : a.textFaint),
+            ),
+          ),
+          const SizedBox(height: 10),
           const StreakWeek(orbSize: 28),
         ],
       ),

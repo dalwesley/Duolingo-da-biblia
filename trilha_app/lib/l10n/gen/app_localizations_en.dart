@@ -2389,6 +2389,20 @@ class AppLocalizationsEn extends AppLocalizations {
   String get homeFreezeSheetTitle => 'A freeze covered yesterday';
 
   @override
+  String homeGoalLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count scenes left for your goal',
+      one: '1 scene left for your goal',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get homeGoalMet => 'Daily goal met';
+
+  @override
   String get homeHeroEcho => 'Echo of yesterday';
 
   @override
@@ -2516,6 +2530,17 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get homeStatGoal => 'goal';
+
+  @override
+  String homeStepsSemantics(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count steps on the journey',
+      one: '1 step on the journey',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get homeTrailDoneBody => 'Pick the next one and keep learning.';
@@ -3451,6 +3476,16 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get lessonBoss => 'Crossing';
+
+  @override
+  String lessonCombo(int count) {
+    return '×$count';
+  }
+
+  @override
+  String lessonComboMeterSemantics(int count, int filled, int cycle) {
+    return 'Combo $count · $filled of $cycle until a lamp relights';
+  }
 
   @override
   String get lessonDuration => '~3 min';

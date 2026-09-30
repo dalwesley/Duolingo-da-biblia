@@ -19,6 +19,12 @@ class LampsBar extends StatelessWidget {
   /// Altura reduzida em telas curtas.
   final bool compact;
 
+  /// Última lâmpada: pulso de risco (vermelho).
+  final bool atRisk;
+
+  /// Índice (0-based) da lâmpada que acabou de apagar — flash de erro.
+  final int? flashOffIndex;
+
   const LampsBar({
     super.key,
     required this.current,
@@ -27,6 +33,8 @@ class LampsBar extends StatelessWidget {
     this.labeled = false,
     this.fullWidth = false,
     this.compact = false,
+    this.atRisk = false,
+    this.flashOffIndex,
   });
 
   @override
@@ -34,6 +42,7 @@ class LampsBar extends StatelessWidget {
     final a = Appearance.of(context);
     final iconH = compact ? 24.0 : (fullWidth ? 30.0 : 28.0);
     final iconW = compact ? 18.0 : (fullWidth ? 22.0 : 20.0);
+    final litColor = atRisk && current > 0 ? AppRoles.streak : accent;
     final icons = Row(
       mainAxisAlignment: fullWidth
           ? MainAxisAlignment.center
@@ -41,20 +50,24 @@ class LampsBar extends StatelessWidget {
       mainAxisSize: fullWidth ? MainAxisSize.max : MainAxisSize.min,
       children: List.generate(max, (i) {
         final on = i < current;
+        final flashing = flashOffIndex == i;
+        final color = flashing
+            ? AppRoles.error
+            : (on ? litColor : accent);
         return Padding(
           padding: EdgeInsets.only(
             left: i == 0 ? 0 : (fullWidth ? (compact ? 8 : 10) : 7),
           ),
           child: AnimatedScale(
-            scale: on ? 1 : 0.9,
+            scale: flashing ? 1.18 : (on ? 1 : 0.9),
             duration: const Duration(milliseconds: 240),
             curve: Curves.easeOutBack,
             child: AnimatedOpacity(
-              opacity: on ? 1 : 0.32,
+              opacity: flashing ? 1 : (on ? 1 : 0.32),
               duration: const Duration(milliseconds: 220),
               child: CustomPaint(
                 size: Size(iconW, iconH),
-                painter: LanternPainter(lit: on, color: accent),
+                painter: LanternPainter(lit: on || flashing, color: color),
               ),
             ),
           ),
@@ -62,7 +75,12 @@ class LampsBar extends StatelessWidget {
       }),
     );
 
-    if (!labeled) return icons;
+    if (!labeled) {
+      return Semantics(
+        label: context.l10n.homeLampsSemantics(current, max),
+        child: icons,
+      );
+    }
 
     final header = Row(
       mainAxisAlignment: MainAxisAlignment.center,
@@ -71,7 +89,7 @@ class LampsBar extends StatelessWidget {
         CinematicIcon(
           glyph: CinematicGlyph.lamp,
           size: 14,
-          accent: accent.withValues(alpha: 0.9),
+          accent: litColor.withValues(alpha: 0.9),
           framed: false,
         ),
         const SizedBox(width: 6),
@@ -89,7 +107,7 @@ class LampsBar extends StatelessWidget {
           style: AppTypography.body(
             size: 12,
             weight: FontWeight.w900,
-            color: accent,
+            color: litColor,
           ),
         ),
       ],

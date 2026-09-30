@@ -318,3 +318,119 @@ class ActLetterWell extends StatelessWidget {
     );
   }
 }
+
+/// Rótulo que sobe e some — juice de combo no palco (não na celebração).
+class ActFloatLabel extends StatefulWidget {
+  final String text;
+  final Color color;
+
+  const ActFloatLabel({super.key, required this.text, required this.color});
+
+  @override
+  State<ActFloatLabel> createState() => _ActFloatLabelState();
+}
+
+class _ActFloatLabelState extends State<ActFloatLabel>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _ctrl;
+
+  @override
+  void initState() {
+    super.initState();
+    _ctrl = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 720),
+    )..forward();
+  }
+
+  @override
+  void dispose() {
+    _ctrl.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return IgnorePointer(
+      child: AnimatedBuilder(
+        animation: _ctrl,
+        builder: (context, child) {
+          final t = Curves.easeOutCubic.transform(_ctrl.value);
+          final fade = _ctrl.value < 0.55
+              ? 1.0
+              : (1 - ((_ctrl.value - 0.55) / 0.45)).clamp(0.0, 1.0);
+          return Opacity(
+            opacity: fade,
+            child: Transform.translate(
+              offset: Offset(0, -36 * t),
+              child: Transform.scale(
+                scale: 0.82 + 0.28 * Curves.easeOutBack.transform(
+                  (_ctrl.value / 0.45).clamp(0.0, 1.0),
+                ),
+                child: child,
+              ),
+            ),
+          );
+        },
+        child: Text(
+          widget.text,
+          textAlign: TextAlign.center,
+          style: AppTypography.display(
+            size: 40,
+            weight: FontWeight.w900,
+            color: widget.color,
+            height: 1,
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Cinco pips até reacender lâmpada — o combo vira medidor, não só texto.
+class ActComboMeter extends StatelessWidget {
+  final int combo;
+  final Color color;
+  final int cycle;
+
+  const ActComboMeter({
+    super.key,
+    required this.combo,
+    required this.color,
+    this.cycle = 5,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    if (combo < 1) return const SizedBox.shrink();
+    final filled = combo % cycle == 0 ? cycle : combo % cycle;
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        for (var i = 0; i < cycle; i++) ...[
+          if (i > 0) const SizedBox(width: 4),
+          AnimatedContainer(
+            duration: const Duration(milliseconds: 220),
+            curve: Curves.easeOutCubic,
+            width: i < filled ? 14 : 10,
+            height: 6,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(AppRadii.pill),
+              color: i < filled
+                  ? color
+                  : color.withValues(alpha: 0.22),
+              boxShadow: i < filled
+                  ? [
+                      BoxShadow(
+                        color: color.withValues(alpha: 0.45),
+                        blurRadius: 6,
+                      ),
+                    ]
+                  : null,
+            ),
+          ),
+        ],
+      ],
+    );
+  }
+}

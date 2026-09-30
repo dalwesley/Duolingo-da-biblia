@@ -104,6 +104,13 @@ class _LessonScreenState extends State<LessonScreen>
   Set<String> _eliminated = {};
   bool _outOfLamps = false;
 
+  /// Índice da lâmpada que acabou de apagar — flash vermelho no HUD.
+  int? _lampFlashOff;
+
+  /// Texto flutuante de combo no impacto (sobe e some).
+  String? _floatLabel;
+  int _floatTick = 0;
+
   /// Primeira tentativa de cada ato (true acertou, false errou) — pinta a
   /// barra de progresso segmentada.
   final Map<int, bool> _results = {};
@@ -470,11 +477,25 @@ class _LessonScreenState extends State<LessonScreen>
       if (relit) _lamps = (_lamps + 1).clamp(0, _maxLamps);
       // Só o primeiro erro de cada pergunta apaga lâmpada.
       if (!correct && firstTry && !requeued) {
+        final lost = _lamps - 1;
         _lamps = (_lamps - 1).clamp(0, _maxLamps);
+        if (lost >= 0) _lampFlashOff = lost;
         if (_lamps == 0) _outOfLamps = true;
+      }
+      if (correct && _combo >= 2) {
+        _floatLabel = context.l10n.lessonCombo(_combo);
+        _floatTick++;
+      } else {
+        _floatLabel = null;
       }
       _showFeedback = false;
     });
+    if (_lampFlashOff != null) {
+      Future.delayed(const Duration(milliseconds: 520), () {
+        if (!mounted) return;
+        if (_lampFlashOff != null) setState(() => _lampFlashOff = null);
+      });
+    }
 
     final progress = context.read<ProgressService>();
     if (relit) {
@@ -935,10 +956,7 @@ class _LessonScreenState extends State<LessonScreen>
                               dark: true,
                               title: switch (_phase) {
                                 _Phase.intro => mission.title,
-                                _Phase.quiz =>
-                                  _combo >= 2
-                                      ? '${_questionIndex + 1}/$total · ×$_combo'
-                                      : '${_questionIndex + 1}/$total',
+                                _Phase.quiz => '${_questionIndex + 1}/$total',
                                 _Phase.micro => context.l10n.lessonBonus,
                                 _Phase.insight => context.l10n.commonToday,
                               },
@@ -988,6 +1006,8 @@ class _LessonScreenState extends State<LessonScreen>
                                             max: _maxLamps,
                                             accent: AppRoles.reward,
                                             compact: true,
+                                            atRisk: _lamps <= 1 && !_outOfLamps,
+                                            flashOffIndex: _lampFlashOff,
                                           ),
                                         ],
                                       ),
@@ -1000,6 +1020,7 @@ class _LessonScreenState extends State<LessonScreen>
                                 total: total,
                                 index: _questionIndex,
                                 results: _results,
+                                combo: _combo,
                               ),
                               const SizedBox(height: 4),
                             ] else
@@ -1144,6 +1165,24 @@ class _LessonScreenState extends State<LessonScreen>
                     },
                   ),
                 if (_phase == _Phase.quiz &&
+                    _floatLabel != null &&
+                    !_showFeedback)
+                  Positioned(
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    child: IgnorePointer(
+                      child: Center(
+                        child: ActFloatLabel(
+                          key: ValueKey('float-$_floatTick'),
+                          text: _floatLabel!,
+                          color: AppRoles.action,
+                        ),
+                      ),
+                    ),
+                  ),
+                if (_phase == _Phase.quiz &&
                     _showFeedback &&
                     _selected != null &&
                     _isCorrect != null)
@@ -1179,49 +1218,95 @@ class _LessonScreenState extends State<LessonScreen>
 }
 
 /// Barra de atos: glow se acertou de primeira, vermelho se errou,
-/// o atual em destaque neutro.
+/// o atual em destaque neutro. Combo vira medidor abaixo.
 class _ActProgress extends StatelessWidget {
   final int total;
   final int index;
   final Map<int, bool> results;
+  final int combo;
 
   const _ActProgress({
     required this.total,
     required this.index,
     required this.results,
+    this.combo = 0,
   });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final filled = combo < 1
+        ? 0
+        : (combo % 5 == 0 ? 5 : combo % 5);
     return Semantics(
       label: context.l10n.lessonQuestionProgress(index + 1, total),
-      child: Row(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          for (var i = 0; i < total; i++) ...[
-            if (i > 0) const SizedBox(width: 4),
-            Expanded(
-              child: AnimatedContainer(
-                duration: const Duration(milliseconds: 320),
-                curve: Curves.easeOutCubic,
-                height: i == index ? 6 : 4,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(AppRadii.pill),
-                  color: switch (results[i]) {
-                    true => AppRoles.action,
-                    false => AppRoles.error.withValues(alpha: 0.75),
-                    null => i == index ? a.text : a.progressTrack,
-                  },
-                  boxShadow: results[i] == true
-                      ? [
-                          BoxShadow(
-                            color: AppRoles.action.withValues(alpha: 0.45),
-                            blurRadius: 8,
-                          ),
-                        ]
-                      : null,
+          Row(
+            children: [
+              for (var i = 0; i < total; i++) ...[
+                if (i > 0) const SizedBox(width: 4),
+                Expanded(
+                  child: AnimatedContainer(
+                    duration: const Duration(milliseconds: 320),
+                    curve: Curves.easeOutCubic,
+                    height: i == index ? 8 : 5,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(AppRadii.pill),
+                      color: switch (results[i]) {
+                        true => AppRoles.action,
+                        false => AppRoles.error.withValues(alpha: 0.75),
+                        null => i == index ? a.text : a.progressTrack,
+                      },
+                      boxShadow: results[i] == true
+                          ? [
+                              BoxShadow(
+                                color: AppRoles.action.withValues(alpha: 0.45),
+                                blurRadius: 8,
+                              ),
+                            ]
+                          : null,
+                    ),
+                  ),
                 ),
-              ),
+              ],
+            ],
+          ),
+          if (combo >= 2) ...[
+            const SizedBox(height: 8),
+            Row(
+              children: [
+                CinematicIcon(
+                  glyph: CinematicGlyph.flame,
+                  size: 12,
+                  accent: AppRoles.streak,
+                  framed: false,
+                ),
+                const SizedBox(width: 6),
+                Expanded(
+                  child: Semantics(
+                    label: context.l10n.lessonComboMeterSemantics(
+                      combo,
+                      filled,
+                      5,
+                    ),
+                    child: ActComboMeter(
+                      combo: combo,
+                      color: AppRoles.streak,
+                    ),
+                  ),
+                ),
+                const SizedBox(width: 8),
+                Text(
+                  context.l10n.lessonCombo(combo),
+                  style: AppTypography.body(
+                    size: 12,
+                    weight: FontWeight.w900,
+                    color: AppRoles.streak,
+                  ),
+                ),
+              ],
             ),
           ],
         ],

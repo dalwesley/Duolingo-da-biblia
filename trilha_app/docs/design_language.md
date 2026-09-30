@@ -143,6 +143,14 @@ Tudo o mais é subordinado a isso:
 - **lâmpada** é a vida dentro da cena; **lamparina** é a semana no perfil;
 - **medalha** é a recompensa; o conjunto delas é o **cofre**.
 
+Na cena (partida): HUD = progresso das perguntas + lâmpadas + medidor de
+combo (5 seguidas reacendem). Juice do acerto = flash ouro, `ActFloatLabel`
+no combo, faísca na placa. Erro = flash vermelho + lâmpada que apaga com
+peso. Veredito na base (painel), não tela cheia.
+
+No Hoje (lobby): `HomePlayerHeader` é cartão de jogador — sequência, meta
+com barra, gelo, passos, semana em orbs. Lâmpadas não aparecem fora da cena.
+
 Fora do mundo (não usar em UI): céu como tema visual, poeira/perseguição,
 teatro (atos), escada, moeda, emblema, galeria.
 
