@@ -169,6 +169,9 @@ class PalcoVerse {
       correctPairs: ex.correctPairs,
       matchLeft: matchLeft,
       matchRight: matchRight,
+      evidenceSpan: ex.evidenceSpan == null
+          ? null
+          : swapDivineName(ex.evidenceSpan!),
     );
   }
 
@@ -253,11 +256,7 @@ class PalcoVerse {
     if (needles.length < 2) return null;
     final tokens = <({String key, int start, int end})>[];
     for (final m in RegExp(r'\p{L}+', unicode: true).allMatches(live)) {
-      tokens.add((
-        key: _stemLight(m.group(0)!),
-        start: m.start,
-        end: m.end,
-      ));
+      tokens.add((key: _stemLight(m.group(0)!), start: m.start, end: m.end));
     }
     if (tokens.isEmpty) return null;
 
@@ -321,14 +320,11 @@ class PalcoVerse {
     final raw = text.trim();
     if (raw.isEmpty) return text;
     if (live.isNotEmpty && containsPhrase(live, raw)) return raw;
-    if (raw == 'Jeová' &&
-        live.isNotEmpty &&
-        containsPhrase(live, 'Senhor')) {
+    if (raw == 'Jeová' && live.isNotEmpty && containsPhrase(live, 'Senhor')) {
       return 'Senhor';
     }
     final swapped = swapDivineName(raw);
-    if (swapped != raw &&
-        (live.isEmpty || containsPhrase(live, swapped))) {
+    if (swapped != raw && (live.isEmpty || containsPhrase(live, swapped))) {
       return swapped;
     }
     return swapped;

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:trilha_app/l10n/app_language.dart';
 import 'package:trilha_app/models/trail.dart';
 import 'package:trilha_app/theme/app_theme.dart';
 import 'package:trilha_app/widgets/exercise_panel.dart';
@@ -30,6 +31,8 @@ void main() {
     await tester.pumpWidget(
       MaterialApp(
         theme: AppTheme.dark,
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
         home: Scaffold(
           body: SizedBox(
             width: 400,

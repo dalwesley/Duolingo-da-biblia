@@ -1,7 +1,9 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:trilha_app/data/entry_trails.dart';
 import 'package:trilha_app/data/season_walk_catalog.dart';
 import 'package:trilha_app/data/trail_repository.dart';
+import 'package:trilha_app/l10n/app_language.dart';
 import 'package:trilha_app/models/season_walk.dart';
 import 'package:trilha_app/models/trail.dart';
 import 'package:trilha_app/utils/liturgical_calendar.dart';
@@ -161,9 +163,11 @@ void main() {
 
   group('Mission audio script', () {
     test('joins clipped verse and insight', () {
+      final l10n = lookupAppLocalizations(const Locale('pt'));
       final text = MissionListenButton.script(
         verse: 'No princípio criou Deus os céus e a terra.',
         insight: 'Deus é o centro, não eu',
+        l10n: l10n,
       );
       expect(text, contains('princípio'));
       expect(text, contains('Hoje: Deus é o centro, não eu'));

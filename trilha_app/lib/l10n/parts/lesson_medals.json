@@ -1,0 +1,833 @@
+{
+  "medalTierIron": {
+    "pt": "Ferro",
+    "en": "Iron",
+    "es": "Hierro"
+  },
+  "medalTierBronze": {
+    "pt": "Bronze",
+    "en": "Bronze",
+    "es": "Bronce"
+  },
+  "medalTierSilver": {
+    "pt": "Prata",
+    "en": "Silver",
+    "es": "Plata"
+  },
+  "medalTierGold": {
+    "pt": "Ouro",
+    "en": "Gold",
+    "es": "Oro"
+  },
+  "medalTierPlatinum": {
+    "pt": "Platina",
+    "en": "Platinum",
+    "es": "Platino"
+  },
+  "medalTierDiamond": {
+    "pt": "Diamante",
+    "en": "Diamond",
+    "es": "Diamante"
+  },
+  "medalTierMirra": {
+    "pt": "Mirra",
+    "en": "Myrrh",
+    "es": "Mirra"
+  },
+  "medalTierAurora": {
+    "pt": "Ultra rara",
+    "en": "Ultra rare",
+    "es": "Ultrarrara"
+  },
+  "medalTrackWordTitle": {
+    "pt": "Palavra",
+    "en": "Word",
+    "es": "Palabra"
+  },
+  "medalTrackWordSubtitle": {
+    "pt": "Leitura bíblica na jornada",
+    "en": "Bible reading on your journey",
+    "es": "Lectura bíblica en tu camino"
+  },
+  "medalWordChapters1Title": {
+    "pt": "Primeira Palavra",
+    "en": "First Word",
+    "es": "Primera Palabra"
+  },
+  "medalWordChapters25Title": {
+    "pt": "Leitor atento",
+    "en": "Attentive reader",
+    "es": "Lector atento"
+  },
+  "medalWordChapters100Title": {
+    "pt": "Leitor constante",
+    "en": "Steady reader",
+    "es": "Lector constante"
+  },
+  "medalHintReadChapters": {
+    "pt": "{count, plural, =1{Leia 1 capítulo na Bíblia} other{Leia {count} capítulos}}",
+    "en": "{count, plural, =1{Read 1 chapter in the Bible} other{Read {count} chapters}}",
+    "es": "{count, plural, =1{Lee 1 capítulo en la Biblia} other{Lee {count} capítulos}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "medalTrackFormationTitle": {
+    "pt": "Formação",
+    "en": "Formation",
+    "es": "Formación"
+  },
+  "medalTrackFormationSubtitle": {
+    "pt": "Acertos e domínio nas cenas",
+    "en": "Accuracy and mastery in scenes",
+    "es": "Aciertos y dominio en las escenas"
+  },
+  "medalFormationPerfect1Title": {
+    "pt": "Cena nítida",
+    "en": "Clear scene",
+    "es": "Escena nítida"
+  },
+  "medalFormationPerfect10Title": {
+    "pt": "Olho firme",
+    "en": "Steady eye",
+    "es": "Ojo firme"
+  },
+  "medalFormationPerfect25Title": {
+    "pt": "Tudo certo",
+    "en": "Spot on",
+    "es": "Todo correcto"
+  },
+  "medalHintPerfectScenes": {
+    "pt": "{count, plural, =1{Termine uma cena com 100% de acertos} other{Termine {count} cenas com 100% de acertos}}",
+    "en": "{count, plural, =1{Finish a scene with 100% accuracy} other{Finish {count} scenes with 100% accuracy}}",
+    "es": "{count, plural, =1{Termina una escena con 100% de aciertos} other{Termina {count} escenas con 100% de aciertos}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "medalFormationPerfect25Hint": {
+    "pt": "25 cenas com 100% de acertos",
+    "en": "25 scenes with 100% accuracy",
+    "es": "25 escenas con 100% de aciertos"
+  },
+  "medalTrackPathTitle": {
+    "pt": "Caminho",
+    "en": "Path",
+    "es": "Camino"
+  },
+  "medalTrackPathSubtitle": {
+    "pt": "Sequência na jornada",
+    "en": "Streak on your journey",
+    "es": "Racha en tu camino"
+  },
+  "medalPathStreak3Title": {
+    "pt": "Três dias firmes",
+    "en": "Three steady days",
+    "es": "Tres días firmes"
+  },
+  "medalPathStreak14Title": {
+    "pt": "Duas semanas",
+    "en": "Two weeks",
+    "es": "Dos semanas"
+  },
+  "medalPathStreak30Title": {
+    "pt": "Mês constante",
+    "en": "Steady month",
+    "es": "Mes constante"
+  },
+  "medalHintStreak": {
+    "pt": "{count, plural, =1{Mantenha 1 dia de sequência} other{Mantenha {count} dias de sequência}}",
+    "en": "{count, plural, =1{Keep a 1-day streak} other{Keep a {count}-day streak}}",
+    "es": "{count, plural, =1{Mantén una racha de 1 día} other{Mantén una racha de {count} días}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "medalTrackWitnessTitle": {
+    "pt": "Testemunho",
+    "en": "Witness",
+    "es": "Testimonio"
+  },
+  "medalTrackWitnessSubtitle": {
+    "pt": "Compartilhar a Palavra",
+    "en": "Sharing the Word",
+    "es": "Compartir la Palabra"
+  },
+  "medalWitnessShare1Title": {
+    "pt": "Palavra levada",
+    "en": "Word carried",
+    "es": "Palabra llevada"
+  },
+  "medalWitnessShare10Title": {
+    "pt": "Semeador",
+    "en": "Sower",
+    "es": "Sembrador"
+  },
+  "medalWitnessShare50Title": {
+    "pt": "Voz na caravana",
+    "en": "Voice in the caravan",
+    "es": "Voz en la caravana"
+  },
+  "medalHintShareVerses": {
+    "pt": "{count, plural, =1{Compartilhe 1 versículo} other{Compartilhe {count} versículos}}",
+    "en": "{count, plural, =1{Share 1 verse} other{Share {count} verses}}",
+    "es": "{count, plural, =1{Comparte 1 versículo} other{Comparte {count} versículos}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "medalTrackMemoryTitle": {
+    "pt": "Memória",
+    "en": "Memory",
+    "es": "Memoria"
+  },
+  "medalTrackMemorySubtitle": {
+    "pt": "Versículos guardados no coração",
+    "en": "Verses kept in your heart",
+    "es": "Versículos guardados en el corazón"
+  },
+  "medalMemoryVerse1Title": {
+    "pt": "Primeiro verso",
+    "en": "First verse",
+    "es": "Primer versículo"
+  },
+  "medalMemoryVerse15Title": {
+    "pt": "Palavra guardada",
+    "en": "Word kept",
+    "es": "Palabra guardada"
+  },
+  "medalMemoryVerse50Title": {
+    "pt": "Escritura viva",
+    "en": "Living Scripture",
+    "es": "Escritura viva"
+  },
+  "medalHintMemorizeVerses": {
+    "pt": "{count, plural, =1{Firme 1 versículo na memorização} other{Firme {count} versículos na memorização}}",
+    "en": "{count, plural, =1{Master 1 verse in memorization} other{Master {count} verses in memorization}}",
+    "es": "{count, plural, =1{Afianza 1 versículo en la memorización} other{Afianza {count} versículos en la memorización}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "medalAdventTitle": {
+    "pt": "Advento",
+    "en": "Advent",
+    "es": "Adviento"
+  },
+  "medalAdventSubtitle": {
+    "pt": "Espera e preparação",
+    "en": "Waiting and preparation",
+    "es": "Espera y preparación"
+  },
+  "medalAdventTrackSubtitle": {
+    "pt": "Espera e preparação — {year}",
+    "en": "Waiting and preparation — {year}",
+    "es": "Espera y preparación — {year}",
+    "placeholders": {
+      "year": "String"
+    }
+  },
+  "medalAdventVaultTitle": {
+    "pt": "Advento {year}",
+    "en": "Advent {year}",
+    "es": "Adviento {year}",
+    "placeholders": {
+      "year": "String"
+    }
+  },
+  "medalAdventDoorTitle": {
+    "pt": "Porta aberta",
+    "en": "Open door",
+    "es": "Puerta abierta"
+  },
+  "medalSeasonFirstWeekTitle": {
+    "pt": "Primeira semana",
+    "en": "First week",
+    "es": "Primera semana"
+  },
+  "medalAdventHalfTitle": {
+    "pt": "Meio do caminho",
+    "en": "Halfway there",
+    "es": "A mitad del camino"
+  },
+  "medalAdventHalfHint": {
+    "pt": "Caminhe metade dos dias do Advento",
+    "en": "Walk half the days of Advent",
+    "es": "Camina la mitad de los días de Adviento"
+  },
+  "medalAdventLivedTitle": {
+    "pt": "Temporada vivida",
+    "en": "Season lived",
+    "es": "Temporada vivida"
+  },
+  "medalHintAdventDays": {
+    "pt": "{count, plural, =1{Caminhe 1 dia no Advento} other{Caminhe {count} dias no Advento}}",
+    "en": "{count, plural, =1{Walk 1 day in Advent} other{Walk {count} days in Advent}}",
+    "es": "{count, plural, =1{Camina 1 día en Adviento} other{Camina {count} días en Adviento}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "medalAdventWeekTitle": {
+    "pt": "Semana de espera",
+    "en": "Week of waiting",
+    "es": "Semana de espera"
+  },
+  "medalAdventWeekHint": {
+    "pt": "Sete dias de sequência no Advento",
+    "en": "A seven-day streak in Advent",
+    "es": "Una racha de siete días en Adviento"
+  },
+  "medalLentTitle": {
+    "pt": "Quaresma",
+    "en": "Lent",
+    "es": "Cuaresma"
+  },
+  "medalLentSubtitle": {
+    "pt": "Deserto, jejum e retorno",
+    "en": "Desert, fasting and return",
+    "es": "Desierto, ayuno y regreso"
+  },
+  "medalLentTrackSubtitle": {
+    "pt": "Deserto, jejum e retorno — {year}",
+    "en": "Desert, fasting and return — {year}",
+    "es": "Desierto, ayuno y regreso — {year}",
+    "placeholders": {
+      "year": "String"
+    }
+  },
+  "medalLentVaultTitle": {
+    "pt": "Quaresma {year}",
+    "en": "Lent {year}",
+    "es": "Cuaresma {year}",
+    "placeholders": {
+      "year": "String"
+    }
+  },
+  "medalLentFirstStepTitle": {
+    "pt": "Primeiro passo no deserto",
+    "en": "First step in the desert",
+    "es": "Primer paso en el desierto"
+  },
+  "medalLentHalfTitle": {
+    "pt": "Meio do deserto",
+    "en": "Middle of the desert",
+    "es": "En medio del desierto"
+  },
+  "medalLentHalfHint": {
+    "pt": "Caminhe metade dos dias da Quaresma",
+    "en": "Walk half the days of Lent",
+    "es": "Camina la mitad de los días de Cuaresma"
+  },
+  "medalLentLivedTitle": {
+    "pt": "Quaresma vivida",
+    "en": "Lent lived",
+    "es": "Cuaresma vivida"
+  },
+  "medalHintLentDays": {
+    "pt": "{count, plural, =1{Caminhe 1 dia na Quaresma} other{Caminhe {count} dias na Quaresma}}",
+    "en": "{count, plural, =1{Walk 1 day in Lent} other{Walk {count} days in Lent}}",
+    "es": "{count, plural, =1{Camina 1 día en Cuaresma} other{Camina {count} días en Cuaresma}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "medalFounderTitle": {
+    "pt": "Pioneiro",
+    "en": "Pioneer",
+    "es": "Pionero"
+  },
+  "medalFounderHint": {
+    "pt": "Entrou no app durante o período de testes",
+    "en": "Joined the app during the testing period",
+    "es": "Entraste en la app durante el período de pruebas"
+  },
+  "medalComebackTitle": {
+    "pt": "Volta firme",
+    "en": "Steady return",
+    "es": "Regreso firme"
+  },
+  "medalComebackHint": {
+    "pt": "A porta estava aberta — voltou após 21 dias ou mais",
+    "en": "The door was open — you came back after 21 days or more",
+    "es": "La puerta estaba abierta — volviste tras 21 días o más"
+  },
+  "medalBibleBeforeTitle": {
+    "pt": "Palavra antes",
+    "en": "Word first",
+    "es": "Palabra primero"
+  },
+  "medalBibleBeforeHint": {
+    "pt": "Leu um capítulo no mesmo dia, antes da cena",
+    "en": "Read a chapter the same day, before the scene",
+    "es": "Leíste un capítulo el mismo día, antes de la escena"
+  },
+  "medalWalkingInLightTitle": {
+    "pt": "Andando na luz",
+    "en": "Walking in the light",
+    "es": "Andando en la luz"
+  },
+  "medalWalkingInLightHint": {
+    "pt": "Manteve 85%+ de acertos (mín. 50 questões)",
+    "en": "Kept 85%+ accuracy (min. 50 questions)",
+    "es": "Mantuviste 85%+ de aciertos (mín. 50 preguntas)"
+  },
+  "medalPerfectBossTitle": {
+    "pt": "Prova impecável",
+    "en": "Flawless test",
+    "es": "Prueba impecable"
+  },
+  "medalPerfectBossHint": {
+    "pt": "Venceu um desafio final com 100% de acertos",
+    "en": "Won a final challenge with 100% accuracy",
+    "es": "Ganaste un desafío final con 100% de aciertos"
+  },
+  "medalLeaderTitle": {
+    "pt": "Líder da caravana",
+    "en": "Caravan leader",
+    "es": "Líder de la caravana"
+  },
+  "medalLeaderHint": {
+    "pt": "Ficou em 1º no ranking geral por um dia",
+    "en": "Ranked 1st overall for a day",
+    "es": "Quedaste 1.º en el ranking general por un día"
+  },
+  "medalAccuracyEliteTitle": {
+    "pt": "Mira certeira",
+    "en": "Sharp aim",
+    "es": "Puntería certera"
+  },
+  "medalAccuracyEliteHint": {
+    "pt": "Manteve 95%+ de acertos em 150 questões ou mais",
+    "en": "Kept 95%+ accuracy over 150 questions or more",
+    "es": "Mantuviste 95%+ de aciertos en 150 preguntas o más"
+  },
+  "medalTrailFlawlessTitle": {
+    "pt": "Trilha impecável",
+    "en": "Flawless trail",
+    "es": "Ruta impecable"
+  },
+  "medalTrailFlawlessHint": {
+    "pt": "Concluiu uma trilha inteira com 100% em todas as cenas",
+    "en": "Finished a whole trail with 100% in every scene",
+    "es": "Completaste una ruta entera con 100% en todas las escenas"
+  },
+  "medalReflectionDeepTitle": {
+    "pt": "Diário profundo",
+    "en": "Deep journal",
+    "es": "Diario profundo"
+  },
+  "medalReflectionDeepHint": {
+    "pt": "Registrou 40 reflexões no diário de cenas",
+    "en": "Wrote 40 reflections in the scene journal",
+    "es": "Registraste 40 reflexiones en el diario de escenas"
+  },
+  "medalJourneyVaultTitle": {
+    "pt": "Cofre da jornada",
+    "en": "Journey vault",
+    "es": "Cofre del camino"
+  },
+  "medalJourneyVaultSubtitle": {
+    "pt": "Faísca acende; medalha fica",
+    "en": "The spark lights up; the medal stays",
+    "es": "La chispa se enciende; la medalla se queda"
+  },
+  "medalRareVaultTitle": {
+    "pt": "Raras",
+    "en": "Rare",
+    "es": "Raras"
+  },
+  "medalRareVaultSubtitle": {
+    "pt": "Medalhas excepcionais — só aparecem quando você ganha",
+    "en": "Exceptional medals — they only appear once you earn them",
+    "es": "Medallas excepcionales — solo aparecen cuando las ganas"
+  },
+  "medalTrailTrackSubtitle": {
+    "pt": "Progresso nesta trilha",
+    "en": "Progress on this trail",
+    "es": "Progreso en esta ruta"
+  },
+  "medalTrailFirstSceneTitle": {
+    "pt": "Primeira cena",
+    "en": "First scene",
+    "es": "Primera escena"
+  },
+  "medalTrailFirstSceneHint": {
+    "pt": "Conclua 1 cena nesta trilha",
+    "en": "Finish 1 scene on this trail",
+    "es": "Completa 1 escena en esta ruta"
+  },
+  "medalTrailModeHint": {
+    "pt": "Conclua o modo {mode}",
+    "en": "Finish {mode} mode",
+    "es": "Completa el modo {mode}",
+    "placeholders": {
+      "mode": "String"
+    }
+  },
+  "medalTrailFinalModeHint": {
+    "pt": "Conclua a trilha no modo {mode}",
+    "en": "Finish the trail in {mode} mode",
+    "es": "Completa la ruta en el modo {mode}",
+    "placeholders": {
+      "mode": "String"
+    }
+  },
+  "medalUnitChapters": {
+    "pt": "{count, plural, =1{1 capítulo} other{{count} capítulos}}",
+    "en": "{count, plural, =1{1 chapter} other{{count} chapters}}",
+    "es": "{count, plural, =1{1 capítulo} other{{count} capítulos}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "medalUnitPerfectScenes": {
+    "pt": "{count, plural, =1{1 cena perfeita} other{{count} cenas perfeitas}}",
+    "en": "{count, plural, =1{1 perfect scene} other{{count} perfect scenes}}",
+    "es": "{count, plural, =1{1 escena perfecta} other{{count} escenas perfectas}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "medalUnitStreakDays": {
+    "pt": "{count, plural, =1{1 dia de sequência} other{{count} dias de sequência}}",
+    "en": "{count, plural, =1{1 streak day} other{{count} streak days}}",
+    "es": "{count, plural, =1{1 día de racha} other{{count} días de racha}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "medalUnitSharedVerses": {
+    "pt": "{count, plural, =1{1 versículo compartilhado} other{{count} versículos compartilhados}}",
+    "en": "{count, plural, =1{1 shared verse} other{{count} shared verses}}",
+    "es": "{count, plural, =1{1 versículo compartido} other{{count} versículos compartidos}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "medalUnitMemorizedVerses": {
+    "pt": "{count, plural, =1{1 versículo memorizado} other{{count} versículos memorizados}}",
+    "en": "{count, plural, =1{1 memorized verse} other{{count} memorized verses}}",
+    "es": "{count, plural, =1{1 versículo memorizado} other{{count} versículos memorizados}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "medalUnitAdventDays": {
+    "pt": "{count, plural, =1{1 dia no Advento} other{{count} dias no Advento}}",
+    "en": "{count, plural, =1{1 day in Advent} other{{count} days in Advent}}",
+    "es": "{count, plural, =1{1 día en Adviento} other{{count} días en Adviento}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "medalUnitLentDays": {
+    "pt": "{count, plural, =1{1 dia na Quaresma} other{{count} dias na Quaresma}}",
+    "en": "{count, plural, =1{1 day in Lent} other{{count} days in Lent}}",
+    "es": "{count, plural, =1{1 día en Cuaresma} other{{count} días en Cuaresma}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "medalProximityLeft": {
+    "pt": "{count, plural, =1{Falta {units} para {tier} em {track}} other{Faltam {units} para {tier} em {track}}}",
+    "en": "{units} left for {tier} in {track}",
+    "es": "{count, plural, =1{Falta {units} para {tier} en {track}} other{Faltan {units} para {tier} en {track}}}",
+    "placeholders": {
+      "count": "int",
+      "units": "String",
+      "tier": "String",
+      "track": "String"
+    },
+    "description": "units = medalUnit* already counted (e.g. '3 capítulos'); count = remaining."
+  },
+  "medalProximityToward": {
+    "pt": "{units} rumo a {tier} em {track}",
+    "en": "{units} toward {tier} in {track}",
+    "es": "{units} rumbo a {tier} en {track}",
+    "placeholders": {
+      "units": "String",
+      "tier": "String",
+      "track": "String"
+    }
+  },
+  "medalProximityShortLeft": {
+    "pt": "{count, plural, =1{Falta 1 para {tier}} other{Faltam {count} para {tier}}}",
+    "en": "{count} left for {tier}",
+    "es": "{count, plural, =1{Falta 1 para {tier}} other{Faltan {count} para {tier}}}",
+    "placeholders": {
+      "count": "int",
+      "tier": "String"
+    }
+  },
+  "medalProximityShortToward": {
+    "pt": "{current}/{target} rumo a {tier}",
+    "en": "{current}/{target} toward {tier}",
+    "es": "{current}/{target} rumbo a {tier}",
+    "placeholders": {
+      "current": "int",
+      "target": "int",
+      "tier": "String"
+    }
+  },
+  "medalProximityAction": {
+    "pt": "{count, plural, =1{Falta {units} · {track}} other{Faltam {units} · {track}}}",
+    "en": "{units} to go · {track}",
+    "es": "{count, plural, =1{Falta {units} · {track}} other{Faltan {units} · {track}}}",
+    "placeholders": {
+      "count": "int",
+      "units": "String",
+      "track": "String"
+    }
+  },
+  "medalProximityRemaining": {
+    "pt": "{count, plural, =1{Falta {units}} other{Faltam {units}}}",
+    "en": "{units} to go",
+    "es": "{count, plural, =1{Falta {units}} other{Faltan {units}}}",
+    "placeholders": {
+      "count": "int",
+      "units": "String"
+    }
+  },
+  "medalRareLeft": {
+    "pt": "{count, plural, =1{Falta 1 {unit} para «{title}»} other{Faltam {count} {unit} para «{title}»}}",
+    "en": "{count} {unit} left for “{title}”",
+    "es": "{count, plural, =1{Falta 1 {unit} para «{title}»} other{Faltan {count} {unit} para «{title}»}}",
+    "placeholders": {
+      "count": "int",
+      "unit": "String",
+      "title": "String"
+    }
+  },
+  "medalRareShortLeft": {
+    "pt": "{count, plural, =1{Falta 1 para «{title}»} other{Faltam {count} para «{title}»}}",
+    "en": "{count} left for “{title}”",
+    "es": "{count, plural, =1{Falta 1 para «{title}»} other{Faltan {count} para «{title}»}}",
+    "placeholders": {
+      "count": "int",
+      "title": "String"
+    }
+  },
+  "medalMysteryTitle": {
+    "pt": "{count, plural, =1{Uma descoberta} other{{count} descobertas}}",
+    "en": "{count, plural, =1{One discovery} other{{count} discoveries}}",
+    "es": "{count, plural, =1{Un descubrimiento} other{{count} descubrimientos}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "medalMysteryHint": {
+    "pt": "Revelam-se no caminho — sem dica no cofre.",
+    "en": "They reveal themselves along the way — no hints in the vault.",
+    "es": "Se revelan en el camino — sin pistas en el cofre."
+  },
+  "medalHeadlineDiscovery": {
+    "pt": "Descoberta",
+    "en": "Discovery",
+    "es": "Descubrimiento"
+  },
+  "medalHeadlineNew": {
+    "pt": "Nova medalha",
+    "en": "New medal",
+    "es": "Nueva medalla"
+  },
+  "medalHeadlineRare": {
+    "pt": "Rara",
+    "en": "Rare",
+    "es": "Rara"
+  },
+  "medalHeadlineLocked": {
+    "pt": "A desbloquear",
+    "en": "To unlock",
+    "es": "Por desbloquear"
+  },
+  "medalHowToEarn": {
+    "pt": "Como ganhar: {hint}",
+    "en": "How to earn: {hint}",
+    "es": "Cómo ganarla: {hint}",
+    "placeholders": {
+      "hint": "String"
+    }
+  },
+  "medalHeadlineLit": {
+    "pt": "Medalha acesa",
+    "en": "Medal lit",
+    "es": "Medalla encendida"
+  },
+  "medalHeadlineLevelUp": {
+    "pt": "Subiu de nível",
+    "en": "Level up",
+    "es": "Subiste de nivel"
+  },
+  "medalHeadlineTrail": {
+    "pt": "Medalha da trilha",
+    "en": "Trail medal",
+    "es": "Medalla de la ruta"
+  },
+  "medalHeadlineJourney": {
+    "pt": "Medalha da jornada",
+    "en": "Journey medal",
+    "es": "Medalla del camino"
+  },
+  "medalNowTier": {
+    "pt": "Agora em {tier}",
+    "en": "Now at {tier}",
+    "es": "Ahora en {tier}",
+    "placeholders": {
+      "tier": "String"
+    }
+  },
+  "medalAllLevelsDone": {
+    "pt": "Todos os níveis concluídos.",
+    "en": "All levels complete.",
+    "es": "Todos los niveles completados."
+  },
+  "medalVaultCompleteLabel": {
+    "pt": "Cofre completo",
+    "en": "Vault complete",
+    "es": "Cofre completo"
+  },
+  "medalVaultAllMedals": {
+    "pt": "{count, plural, =1{1 medalha} other{Todas as {count} medalhas}}",
+    "en": "{count, plural, =1{1 medal} other{All {count} medals}}",
+    "es": "{count, plural, =1{1 medalla} other{Las {count} medallas}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "medalVaultCompleteBody": {
+    "pt": "Você iluminou cada medalha deste cofre. Continue caminhando na Palavra.",
+    "en": "You lit every medal in this vault. Keep walking in the Word.",
+    "es": "Iluminaste cada medalla de este cofre. Sigue caminando en la Palabra."
+  },
+  "medalTrackComplete": {
+    "pt": "Completa",
+    "en": "Complete",
+    "es": "Completa"
+  },
+  "medalTrackUnlit": {
+    "pt": "A acender",
+    "en": "Not lit yet",
+    "es": "Por encender"
+  },
+  "medalVaultTitle": {
+    "pt": "Medalhas",
+    "en": "Medals",
+    "es": "Medallas"
+  },
+  "medalVaultEmptyHint": {
+    "pt": "Cada cena concluída aproxima você de uma medalha. A primeira está perto.",
+    "en": "Every scene you finish brings you closer to a medal. The first one is near.",
+    "es": "Cada escena completada te acerca a una medalla. La primera está cerca."
+  },
+  "medalVaultSeason": {
+    "pt": "Estação",
+    "en": "Season",
+    "es": "Temporada"
+  },
+  "medalVaultDiscoveries": {
+    "pt": "Descobertas",
+    "en": "Discoveries",
+    "es": "Descubrimientos"
+  },
+  "medalVaultMysteryEmpty": {
+    "pt": "Revelam-se no caminho — sem dica.",
+    "en": "They reveal themselves along the way — no hints.",
+    "es": "Se revelan en el camino — sin pista."
+  },
+  "medalVaultMysteryMore": {
+    "pt": "Outras se revelam no caminho.",
+    "en": "Others reveal themselves along the way.",
+    "es": "Otras se revelan en el camino."
+  },
+  "medalVaultTabJourney": {
+    "pt": "Jornada",
+    "en": "Journey",
+    "es": "Camino"
+  },
+  "medalVaultTabTrails": {
+    "pt": "Trilhas",
+    "en": "Trails",
+    "es": "Rutas"
+  },
+  "medalVaultNextTitle": {
+    "pt": "Próxima medalha",
+    "en": "Next medal",
+    "es": "Próxima medalla"
+  },
+  "medalVaultNextSemantics": {
+    "pt": "Próxima medalha: {message}",
+    "en": "Next medal: {message}",
+    "es": "Próxima medalla: {message}",
+    "placeholders": {
+      "message": "String"
+    }
+  },
+  "medalVaultRemaining": {
+    "pt": "{count, plural, =1{Falta 1 {unit}} other{Faltam {count} {unit}}}",
+    "en": "{count, plural, =1{1 {unit} left} other{{count} {unit} left}}",
+    "es": "{count, plural, =1{Falta 1 {unit}} other{Faltan {count} {unit}}}",
+    "placeholders": {
+      "count": "int",
+      "unit": "String"
+    }
+  },
+  "sealsTitle": {
+    "pt": "Selos",
+    "en": "Seals",
+    "es": "Sellos"
+  },
+  "sealsCountFact": {
+    "pt": "{count, plural, =1{1 selo — fato e verso, no texto.} other{{count} selos — fato e verso, no texto.}}",
+    "en": "{count, plural, =1{1 seal — fact and verse, in the text.} other{{count} seals — fact and verse, in the text.}}",
+    "es": "{count, plural, =1{1 sello — hecho y verso, en el texto.} other{{count} sellos — hecho y verso, en el texto.}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "sealsEmptyHint": {
+    "pt": "Fato e verso de quem o texto já mostrou.",
+    "en": "Fact and verse of those the text has already shown.",
+    "es": "Hecho y verso de quien el texto ya mostró."
+  },
+  "sealsStartsAt": {
+    "pt": "Ainda no texto — começa em {name}.",
+    "en": "Still in the text — starts at {name}.",
+    "es": "Aún en el texto — empieza en {name}.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "sealsAllRevealed": {
+    "pt": "{done} de {total} — todos os selos revelados.",
+    "en": "{done} of {total} — all seals revealed.",
+    "es": "{done} de {total} — todos los sellos revelados.",
+    "placeholders": {
+      "done": "int",
+      "total": "int"
+    }
+  },
+  "sealsStillInText": {
+    "pt": "{done} de {total} — ainda no texto: {name}",
+    "en": "{done} of {total} — still in the text: {name}",
+    "es": "{done} de {total} — aún en el texto: {name}",
+    "placeholders": {
+      "done": "int",
+      "total": "int",
+      "name": "String"
+    }
+  },
+  "sealsSemanticsNamed": {
+    "pt": "Selo {name}",
+    "en": "Seal {name}",
+    "es": "Sello {name}",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "sealsSemanticsLocked": {
+    "pt": "Selo ainda fechado",
+    "en": "Seal still locked",
+    "es": "Sello aún cerrado"
+  }
+}

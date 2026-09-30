@@ -10,6 +10,7 @@ import 'app_sheet.dart';
 import 'cinematic_icon.dart';
 import 'relic_panel.dart';
 import 'ui_primitives.dart';
+import '../l10n/app_language.dart';
 
 class MilestoneChestsCard extends StatelessWidget {
   final String trailSlug;
@@ -33,7 +34,7 @@ class MilestoneChestsCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const SectionLabel('Recompensas'),
+          SectionLabel(context.l10n.chestRewards),
           const SizedBox(height: 12),
           Row(
             children: TrailMilestone.all.map((m) {
@@ -155,10 +156,10 @@ class _ChestTile extends StatelessWidget {
             ),
             Text(
               claimed
-                  ? 'Aberto'
+                  ? context.l10n.chestOpened
                   : unlocked
-                  ? 'Abrir'
-                  : 'Trancado',
+                  ? context.l10n.chestOpenShort
+                  : context.l10n.chestLockedShort,
               style: AppTypography.label(
                 size: 10,
                 weight: FontWeight.w700,
@@ -224,10 +225,13 @@ class _ChestOpenDialog extends StatelessWidget {
               style: AppTypography.body(size: 13, color: a.textSecondary),
             ),
             const SizedBox(height: 18),
-            SoftBadge(text: '+${milestone.stepsReward} passos', solid: true),
+            SoftBadge(
+              text: context.l10n.commonPlusSteps(milestone.stepsReward),
+              solid: true,
+            ),
             const SizedBox(height: AppSpace.screen),
             CopperCta(
-              label: 'Continuar',
+              label: context.l10n.commonContinue,
               dense: true,
               trailing: null,
               onTap: () => Navigator.pop(context),
@@ -252,11 +256,14 @@ class WeeklyQuestsCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           RelicChapter(
-            title: 'Passos da semana',
+            title: context.l10n.questWeeklyTitle,
             accent: AppColors.primaryLight,
             divided: false,
             trailing: Text(
-              '${progress.weeklyQuestsCompleted} de ${WeeklyQuestDefs.all.length}',
+              context.l10n.questCountOf(
+                progress.weeklyQuestsCompleted,
+                WeeklyQuestDefs.all.length,
+              ),
               style: AppTypography.label(
                 size: 10,
                 letterSpacing: 1.1,
@@ -324,7 +331,11 @@ class _WeeklyQuestRow extends StatelessWidget {
               ),
               const SizedBox(height: 2),
               Text(
-                '${value.clamp(0, quest.target)} de ${quest.target} · ${quest.subtitle}',
+                context.l10n.questProgressLine(
+                  value.clamp(0, quest.target),
+                  quest.target,
+                  quest.subtitle,
+                ),
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: AppTypography.body(size: 12, color: a.textFaint),
@@ -341,7 +352,7 @@ class _WeeklyQuestRow extends StatelessWidget {
             alignment: Alignment.centerRight,
             child: done
                 ? Text(
-                    'feito',
+                    context.l10n.questDoneLower,
                     style: AppTypography.label(
                       size: 10,
                       letterSpacing: 1.2,

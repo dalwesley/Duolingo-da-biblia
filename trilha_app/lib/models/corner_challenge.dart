@@ -1,3 +1,7 @@
+import 'package:intl/intl.dart';
+
+import '../l10n/app_language.dart';
+import '../l10n/l10n_global.dart';
 import '../utils/trail_progress.dart';
 import 'trail.dart';
 
@@ -16,80 +20,89 @@ const cornerArrivalBonusSteps = 10;
 
 /// Textos do Desafio — duas pessoas, a mesma cena, até domingo.
 ///
-/// Não é duelo: cada um que chega ganha os passos; se os dois chegam,
+/// Disputa amigável: cada um que chega ganha os passos; se os dois chegam,
 /// os dois ganham. "Perdeu" é não chegar a tempo, não o outro levar o seu.
-/// Vocabulário: "desafio", "chegar", "cena", "convidar", "+N passos",
+/// Vocabulário: "desafio", "chegar", "cena", "chamar", "+N passos",
 /// nome da pessoa.
 class CornerCopy {
+  static AppLocalizations get _l => L10n.current;
+
   // Ações.
-  static const ctaInvite = 'Convidar';
-  static const holdInvite = 'Segure para convidar';
-  static const holdAccept = 'Segure para aceitar';
-  static const decline = 'Agora não';
-  static const walk = 'Fazer a cena';
-  static const withdraw = 'Sair do desafio';
-  static const withdrawConfirm = 'Sair';
-  static const withdrawKeep = 'Continuar';
+  static String get ctaInvite => _l.cornerCtaInvite;
+  static String get holdInvite => _l.cornerHoldInvite;
+  static String get holdAccept => _l.cornerHoldAccept;
+  static String get decline => _l.commonNotNow;
+  static String get walk => _l.cornerWalk;
+  static String get withdraw => _l.cornerWithdraw;
+  static String get withdrawConfirm => _l.cornerWithdrawConfirm;
+  static String get withdrawKeep => _l.commonCancel;
 
   // Rótulos.
-  static const kicker = 'Desafio';
-  static const incomingTitle = 'Convite de desafio';
-  static const recordChapter = 'Desafios';
-  static const reward = '+$cornerArrivalBonusSteps passos';
-  static const deadline = 'Até domingo.';
-  static const closesToday = 'Fecha hoje';
-  static String daysLeft(int days) => 'Faltam $days dias';
-  static const arrivedMark = 'Chegou ✓';
-  static const onTheWay = 'A caminho';
-  static const leftMark = 'Saiu';
+  static String get kicker => _l.cornerKicker;
+  static String get incomingTitle => _l.cornerIncomingTitle;
+  static String get recordChapter => _l.cornerRecordChapter;
+  static String get reward => _l.commonPlusSteps(cornerArrivalBonusSteps);
+  static String get deadline => _l.cornerDeadline;
+  static String get closesToday => _l.cornerClosesToday;
+  static String daysLeft(int days) => _l.cornerDaysLeft(days);
+  static String get arrivedMark => _l.cornerArrivedMark;
+  static String get onTheWay => _l.cornerOnTheWay;
+  static String get leftMark => _l.cornerLeftMark;
 
   // Animação.
-  static const burstSent = 'Convite enviado';
-  static const burstAccepted = 'Desafio aceito';
-  static const burstTogether = 'Chegaram juntos';
-  static const burstLeft = 'Você saiu do desafio';
+  static String get burstSent => _l.cornerBurstSent;
+  static String get burstAccepted => _l.cornerBurstAccepted;
+  static String get burstTogether => _l.cornerTogether;
+  static String get burstLeft => _l.cornerBurstLeft;
 
   static String acceptedBy(String name) {
     final first = firstName(name);
     if (first.isEmpty) return burstAccepted;
-    return '$first aceitou o desafio';
+    return _l.cornerAcceptedBy(first);
   }
 
   // Resultado.
-  static const togetherHeadline = 'Chegaram juntos';
-  static const youArrivedHeadline = 'Você chegou';
-  static const noneHeadline = 'Ninguém chegou desta vez';
-  static const togetherLine = 'Os dois fizeram a cena a tempo.';
-  static const noneLine = 'O desafio fechou no domingo.';
-  static const cancelled = 'Desafio cancelado';
+  static String get togetherHeadline => _l.cornerTogether;
+  static String get youArrivedHeadline => _l.cornerYouArrived;
+  static String get noneHeadline => _l.cornerNoneHeadline;
+  static String get togetherLine => _l.cornerTogetherLine;
+  static String get noneLine => _l.cornerNoneLine;
+  static String get cancelled => _l.cornerCancelled;
 
-  static String theyArrivedHeadline(String name) {
+  /// Primeiro nome, ou "A outra pessoa" (início de frase).
+  static String _who(String name) {
     final first = firstName(name);
-    if (first.isEmpty) return 'A outra pessoa chegou';
-    return '$first chegou';
+    return first.isEmpty ? _l.cornerOtherPerson : first;
   }
 
+  /// Primeiro nome, ou "a outra pessoa" (meio de frase).
+  static String _whoLower(String name) {
+    final first = firstName(name);
+    return first.isEmpty ? _l.cornerOtherPersonLower : first;
+  }
+
+  static String theyArrivedHeadline(String name) =>
+      _l.cornerTheyArrived(_who(name));
+
   // Bloqueios e erros.
-  static const needsCloud = 'Entre com Google para convidar alguém.';
-  static const busyWeek = 'Você já tem um desafio nesta semana.';
-  static const busyAccept =
-      'Você já tem um desafio. Chegue ou saia dele para aceitar.';
-  static const sendFailed = 'Não deu para enviar o convite. Tente de novo.';
-  static const actionFailed = 'Não deu para concluir agora. Tente de novo.';
-  static const differentTrail = 'Vocês não estão na mesma trilha.';
-  static const differentScene = 'Vocês não estão na mesma cena.';
-  static const noCorner = 'Nenhuma cena em comum para atravessar.';
+  static String get needsCloud => _l.cornerNeedsCloud;
+  static String get busyWeek => _l.cornerBusyWeek;
+  static String get busyAccept => _l.cornerBusyAccept;
+  static String get sendFailed => _l.cornerSendFailed;
+  static String get actionFailed => _l.cornerActionFailed;
+  static String get differentTrail => _l.cornerDifferentTrail;
+  static String get differentScene => _l.cornerDifferentScene;
+  static String get noCorner => _l.cornerNoCorner;
 
-  static const sameStretch =
-      'A mesma cena até domingo. $reward para cada um que chegar.';
+  static String get sameStretch =>
+      _l.cornerSameStretch(cornerArrivalBonusSteps);
 
-  static String inviteTitle(String mission) => 'Desafio: $mission';
+  static String inviteTitle(String mission) => _l.cornerInviteTitle(mission);
 
   static String inviteBody(String name) {
     final first = firstName(name);
-    const stake = '$reward para cada um que chegar.';
-    if (first.isEmpty) return 'A mesma cena até domingo.\n$stake';
-    return 'Você e $first fazem essa cena até domingo.\n$stake';
+    if (first.isEmpty) return _l.cornerInviteBodyAnon(cornerArrivalBonusSteps);
+    return _l.cornerInviteBody(first, cornerArrivalBonusSteps);
   }
 
   static String firstName(String name) {
@@ -100,90 +113,69 @@ class CornerCopy {
 
   static String incomingFrom(String name) {
     final first = firstName(name);
-    if (first.isEmpty) return 'Alguém te convidou para esta cena.';
-    return '$first te convidou para esta cena.';
+    if (first.isEmpty) return _l.cornerIncomingFromAnon;
+    return _l.cornerIncomingFrom(first);
   }
 
   static String withPeer(String name) {
     final first = firstName(name);
     if (first.isEmpty) return deadline;
-    return 'Com $first · até domingo';
+    return _l.cornerWithPeer(first);
   }
 
   static String waitingOn(String name) {
     final first = firstName(name);
-    if (first.isEmpty) return 'Esperando o aceite.';
-    return 'Esperando $first aceitar.';
+    if (first.isEmpty) return _l.cornerWaitingOnAnon;
+    return _l.cornerWaitingOn(first);
   }
 
-  static String waitingArrival(String name) {
-    final first = firstName(name);
-    if (first.isEmpty) return 'Você chegou · esperando a outra pessoa.';
-    return 'Você chegou · esperando $first.';
-  }
+  static String waitingArrival(String name) =>
+      _l.cornerWaitingArrival(_whoLower(name));
 
-  static String theyAhead(String name) {
-    final first = firstName(name);
-    if (first.isEmpty) return 'A outra pessoa já chegou. Falta você.';
-    return '$first já chegou. Falta você.';
-  }
+  static String theyAhead(String name) => _l.cornerTheyAhead(_who(name));
 
-  static String theyLeft(String name) {
-    final first = firstName(name);
-    if (first.isEmpty) return 'A outra pessoa saiu. Você ainda pode chegar.';
-    return '$first saiu. Você ainda pode chegar.';
-  }
+  static String theyLeft(String name) => _l.cornerTheyLeft(_who(name));
 
-  static String theyLeftClosed(String name) {
-    final first = firstName(name);
-    if (first.isEmpty) return 'A outra pessoa saiu do desafio.';
-    return '$first saiu do desafio.';
-  }
+  static String theyLeftClosed(String name) =>
+      _l.cornerTheyLeftClosed(_who(name));
 
-  static const youLeft = 'Você saiu do desafio.';
+  static String get youLeft => _l.cornerYouLeft;
 
   static String declinedBy(String name) {
     final first = firstName(name);
-    if (first.isEmpty) return 'O convite não foi aceito.';
-    return '$first não aceitou desta vez.';
+    if (first.isEmpty) return _l.cornerDeclinedAnon;
+    return _l.cornerDeclinedBy(first);
   }
 
   // Sair.
-  static const withdrawTitle = 'Sair do desafio?';
+  static String get withdrawTitle => _l.cornerWithdrawTitle;
 
   static String withdrawBody(String name, {required bool pending}) {
-    final first = firstName(name);
-    final who = first.isEmpty ? 'A outra pessoa' : first;
-    if (pending) {
-      return first.isEmpty
-          ? 'O convite some para a outra pessoa.'
-          : 'O convite some para $first.';
-    }
-    return '$who continua e ainda pode chegar. Você fica sem os $reward.';
+    if (pending) return _l.cornerWithdrawPending(_whoLower(name));
+    return _l.cornerWithdrawBody(_who(name), cornerArrivalBonusSteps);
   }
 
   static String recordLine({required int arrived, required int together}) {
     if (arrived == 0) return '';
-    final a = arrived == 1 ? '1 completa' : '$arrived completas';
+    final a = _l.cornerRecordArrived(arrived);
     if (together == 0) return a;
-    return '$a · $together ${together == 1 ? 'junto' : 'juntos'}';
+    return '$a · ${_l.cornerRecordTogether(together)}';
   }
 
   // Placar da aba Desafio.
-  static const tallyWon = 'ganhou';
-  static const tallyLost = 'perdeu';
-  static const tallyChallenge = 'desafio';
-  static const tallyChallenges = 'desafios';
-  static const tallyTogether = 'Juntos';
-  static const markLeft = 'Saiu';
-  static const closedChapter = 'Encerrados';
-  static const boardEmptyTitle = 'Nenhum desafio ainda';
-  static const boardEmptyBody =
-      'Na caravana, abra alguém na mesma cena e convide. Quem chega até domingo ganha $reward.';
-  static const boardOpenCaravan = 'Ver a caravana';
-  static const boardIdle =
-      'Nenhum desafio nesta semana. Convide alguém na caravana.';
-  static const stripIdle = 'Nenhum nesta semana';
+  static String get tallyWon => _l.cornerTallyWon;
+  static String get tallyLost => _l.cornerTallyLost;
+  static String get tallyChallenge => _l.cornerKicker;
+  static String get tallyChallenges => _l.cornerRecordChapter;
+  static String get tallyTogether => _l.cornerTallyTogether;
+  static String get markLeft => _l.cornerLeftMark;
+  static String get closedChapter => _l.cornerClosedChapter;
+  static String get boardEmptyTitle => _l.cornerBoardEmptyTitle;
+  static String get boardEmptyBody =>
+      _l.cornerBoardEmptyBody(cornerArrivalBonusSteps);
+  static String get boardOpenCaravan => _l.cornerBoardOpenCaravan;
+  static String get boardIdle => _l.cornerBoardIdle;
+  static String get stripIdle => _l.cornerStripIdle;
 
   /// Uma linha da faixa: o desafio aberto, ou o placar se não houver.
   static String stripLine({
@@ -195,50 +187,39 @@ class CornerCopy {
   }) {
     if (live != null) {
       final first = firstName(live.peerName(uid));
-      final name = first.isEmpty ? 'Alguém' : first;
+      final name = first.isEmpty ? _l.cornerSomeone : first;
       if (live.status == CornerStatus.pending && live.iAmOpponent(uid)) {
-        return '$name te convidou';
+        return _l.cornerStripInvitedYou(name);
       }
-      if (live.status == CornerStatus.pending) return 'Esperando $name';
-      if (live.iDone(uid)) return 'Você chegou';
-      if (live.theyDone(uid)) return '$name chegou';
+      if (live.status == CornerStatus.pending) {
+        return _l.cornerStripWaiting(name);
+      }
+      if (live.iDone(uid)) return _l.cornerYouArrived;
+      if (live.theyDone(uid)) return _l.cornerTheyArrived(name);
       if (days <= 1) return closesToday;
       return daysLeft(days);
     }
     if (won == 0 && lost == 0) return stripIdle;
-    if (lost == 0) return won == 1 ? '1 ganhou' : '$won ganhou';
-    if (won == 0) return lost == 1 ? '1 perdeu' : '$lost perdeu';
-    return '$won ganhou · $lost perdeu';
+    if (lost == 0) return _l.cornerStripWon(won);
+    if (won == 0) return _l.cornerStripLost(lost);
+    return '${_l.cornerStripWon(won)} · ${_l.cornerStripLost(lost)}';
   }
 
-  static const resultLeft =
-      'Você saiu · sem os +$cornerArrivalBonusSteps passos';
+  static String get resultLeft => _l.cornerResultLeft(cornerArrivalBonusSteps);
 
   static String resultWon(String name) =>
-      _withPeer(name, '+$cornerArrivalBonusSteps passos');
+      _l.cornerResultWon(_whoLower(name), cornerArrivalBonusSteps);
 
   static String resultTogether(String name) =>
-      _withPeer(name, 'os dois chegaram');
+      _l.cornerResultTogether(_whoLower(name));
 
-  static String resultNone(String name) => _withPeer(name, 'ninguém chegou');
+  static String resultNone(String name) => _l.cornerResultNone(_whoLower(name));
 
-  static String resultTheyArrived(String name) {
-    final first = firstName(name);
-    if (first.isEmpty) return 'A outra pessoa chegou · você não chegou';
-    return '$first chegou · você não chegou';
-  }
+  static String resultTheyArrived(String name) =>
+      _l.cornerResultTheyArrived(_who(name));
 
-  static String resultTheyLeftMissed(String name) {
-    final first = firstName(name);
-    if (first.isEmpty) return 'A outra pessoa saiu · você não chegou';
-    return '$first saiu · você não chegou';
-  }
-
-  static String _withPeer(String name, String tail) {
-    final first = firstName(name);
-    final who = first.isEmpty ? 'a outra pessoa' : first;
-    return 'Com $who · $tail';
-  }
+  static String resultTheyLeftMissed(String name) =>
+      _l.cornerResultTheyLeftMissed(_who(name));
 }
 
 class CornerProposal {
@@ -280,19 +261,19 @@ class CornerMatch {
     if (myNext == null || theirNext == null) return null;
     if (myNext.slug != theirNext.slug) return null;
 
-    String moduleTitle = mine.title;
+    String moduleTitle = mine.localizedTitle;
     for (final mod in mine.modules) {
       if (mod.missions.any((m) => m.slug == myNext.slug)) {
-        moduleTitle = mod.title;
+        moduleTitle = mod.localizedTitle;
         break;
       }
     }
 
     return CornerProposal(
       trailSlug: mine.slug,
-      trailTitle: mine.title,
+      trailTitle: mine.localizedTitle,
       missionSlug: myNext.slug,
-      missionTitle: myNext.title,
+      missionTitle: myNext.localizedTitle,
       moduleTitle: moduleTitle,
     );
   }
@@ -375,29 +356,30 @@ class CornerMatch {
         _walkingTrail(catalog, myCompleted, myClearedModes) ??
         catalog.where((t) => t.missionSlugs.isNotEmpty).firstOrNull;
     if (mine == null) {
-      return const CornerProposal(
+      final l = L10n.current;
+      return CornerProposal(
         trailSlug: 'preview',
-        trailTitle: 'Trilha',
+        trailTitle: l.commonTrail,
         missionSlug: 'preview-cena',
-        missionTitle: 'Cena',
-        moduleTitle: 'Módulo',
+        missionTitle: l.commonScene,
+        moduleTitle: l.commonModule,
       );
     }
     final next =
         TrailProgress.getCurrentMission(mine, myCompleted) ??
         mine.modules.first.missions.first;
-    String moduleTitle = mine.title;
+    String moduleTitle = mine.localizedTitle;
     for (final mod in mine.modules) {
       if (mod.missions.any((m) => m.slug == next.slug)) {
-        moduleTitle = mod.title;
+        moduleTitle = mod.localizedTitle;
         break;
       }
     }
     return CornerProposal(
       trailSlug: mine.slug,
-      trailTitle: mine.title,
+      trailTitle: mine.localizedTitle,
       missionSlug: next.slug,
-      missionTitle: next.title,
+      missionTitle: next.localizedTitle,
       moduleTitle: moduleTitle,
     );
   }
@@ -660,8 +642,8 @@ class CornerRecord {
 
   String get whisper {
     if (arrived == 0) return '';
-    if (together == arrived) return 'Cenas feitas lado a lado.';
-    return 'Cada cena feita conta.';
+    if (together == arrived) return L10n.current.cornerWhisperTogether;
+    return L10n.current.cornerWhisperEach;
   }
 
   static CornerRecord of(Iterable<CornerChallenge> mine, String uid) {
@@ -727,28 +709,17 @@ class CornerResult {
     return '$when · $rest';
   }
 
-  static const _months = [
-    'jan',
-    'fev',
-    'mar',
-    'abr',
-    'mai',
-    'jun',
-    'jul',
-    'ago',
-    'set',
-    'out',
-    'nov',
-    'dez',
-  ];
-
   static String weekLabel(String weekStart) {
     final parts = weekStart.split('-');
     if (parts.length != 3) return '';
+    final year = int.tryParse(parts[0]) ?? 2000;
     final month = int.tryParse(parts[1]);
     final day = int.tryParse(parts[2]);
     if (month == null || day == null || month < 1 || month > 12) return '';
-    return '$day ${_months[month - 1]}';
+    return DateFormat(
+      'd MMM',
+      L10n.current.localeName,
+    ).format(DateTime(year, month, day)).replaceAll('.', '');
   }
 }
 

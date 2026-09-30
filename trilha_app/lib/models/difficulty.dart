@@ -1,4 +1,6 @@
 import 'dart:math';
+import '../l10n/l10n_global.dart';
+import '../l10n/question_overlay.dart';
 import '../models/trail.dart';
 
 enum TrailDifficulty {
@@ -28,18 +30,18 @@ enum TrailDifficulty {
 
   String get labelPt {
     return switch (this) {
-      TrailDifficulty.semente => 'Observação',
-      TrailDifficulty.caminhada => 'Compreensão',
-      TrailDifficulty.profundezas => 'Interpretação',
+      TrailDifficulty.semente => L10n.current.modeSementeLabel,
+      TrailDifficulty.caminhada => L10n.current.modeCaminhadaLabel,
+      TrailDifficulty.profundezas => L10n.current.modeProfundezasLabel,
     };
   }
 
   /// Pergunta que o modo faz ao texto — mesma frase em todo o app.
   String get taglinePt {
     return switch (this) {
-      TrailDifficulty.semente => 'O que o texto diz',
-      TrailDifficulty.caminhada => 'O que o texto comunica',
-      TrailDifficulty.profundezas => 'O que o texto significa',
+      TrailDifficulty.semente => L10n.current.modeSementeTagline,
+      TrailDifficulty.caminhada => L10n.current.modeCaminhadaTagline,
+      TrailDifficulty.profundezas => L10n.current.modeProfundezasTagline,
     };
   }
 
@@ -54,13 +56,22 @@ enum TrailDifficulty {
 
   /// O que você exercita neste modo — três verbos.
   List<String> get skillsPt {
+    final l = L10n.current;
     return switch (this) {
-      TrailDifficulty.semente => const ['Reconhecer', 'Identificar', 'Ordenar'],
-      TrailDifficulty.caminhada => const ['Relacionar', 'Comparar', 'Encadear'],
-      TrailDifficulty.profundezas => const [
-        'Interpretar',
-        'Sustentar',
-        'Aplicar',
+      TrailDifficulty.semente => [
+        l.modeSementeSkill1,
+        l.modeSementeSkill2,
+        l.modeSementeSkill3,
+      ],
+      TrailDifficulty.caminhada => [
+        l.modeCaminhadaSkill1,
+        l.modeCaminhadaSkill2,
+        l.modeCaminhadaSkill3,
+      ],
+      TrailDifficulty.profundezas => [
+        l.modeProfundezasSkill1,
+        l.modeProfundezasSkill2,
+        l.modeProfundezasSkill3,
       ],
     };
   }
@@ -68,12 +79,9 @@ enum TrailDifficulty {
   /// Descrição breve do modo (1 linha, ~60 chars).
   String get blurbPt {
     return switch (this) {
-      TrailDifficulty.semente =>
-        'Repare nas palavras, nos fatos e na ordem em que acontecem.',
-      TrailDifficulty.caminhada =>
-        'Ligue os fatos: causas, contexto e o fio da narrativa.',
-      TrailDifficulty.profundezas =>
-        'Busque o sentido: o que o texto revela de Deus e para você.',
+      TrailDifficulty.semente => L10n.current.modeSementeBlurb,
+      TrailDifficulty.caminhada => L10n.current.modeCaminhadaBlurb,
+      TrailDifficulty.profundezas => L10n.current.modeProfundezasBlurb,
     };
   }
 
@@ -88,7 +96,11 @@ enum TrailDifficulty {
 
 class DifficultyMeta {
   final TrailDifficulty difficulty;
-  final String label;
+
+  /// Rótulo vindo do catálogo; `null` (ou legado) usa o nome do modo no
+  /// idioma atual.
+  final String? customLabel;
+  String get label => customLabel ?? difficulty.labelPt;
   final String subtitle;
   final String description;
   final double stepsMultiplier;
@@ -97,7 +109,7 @@ class DifficultyMeta {
 
   const DifficultyMeta({
     required this.difficulty,
-    required this.label,
+    this.customLabel,
     required this.subtitle,
     required this.description,
     required this.stepsMultiplier,
@@ -112,11 +124,11 @@ class DifficultyMeta {
     const legacy = {'Semente', 'Rota', 'Caminhada', 'Profundezas'};
     final label =
         rawLabel == null || rawLabel.isEmpty || legacy.contains(rawLabel)
-        ? difficulty.labelPt
+        ? null
         : rawLabel;
     return DifficultyMeta(
       difficulty: difficulty,
-      label: label,
+      customLabel: label,
       subtitle: json['subtitle'] as String? ?? '',
       description: json['description'] as String? ?? '',
       stepsMultiplier:
@@ -155,6 +167,60 @@ class BankQuestion {
   final String? learningObjective;
   final List<String> evidence;
 
+  /// Trecho literal do palco que prova a resposta (banco V3).
+  final String? evidenceSpan;
+
+  /// Aplica overlay EN/ES (enunciado, feedback, opções interpretativas).
+  /// `passageText` / refs / tokens do versículo permanecem no PT base.
+  BankQuestion withOverlay() {
+    final ov = QuestionOverlay.instance;
+    if (ov.entryFor(id) == null) return this;
+    final stem = ov.promptFor(id);
+    final cueOv = ov.cueFor(id);
+    final lo = ov.field(id, 'learningObjective');
+    final fc = ov.field(id, 'feedbackCorrect');
+    final fwOv = ov.feedbackWrongFor(id);
+    final mappedOpts = [
+      for (final o in options)
+        QuestionOption(id: o.id, text: ov.optionText(id, o.id) ?? o.text),
+    ];
+    final fw = fwOv == null
+        ? feedbackWrong
+        : {
+            for (final e in feedbackWrong.entries)
+              e.key: fwOv[e.key] ?? e.value,
+          };
+    return BankQuestion(
+      id: id,
+      trailSlug: trailSlug,
+      difficulty: difficulty,
+      section: section,
+      question: stem ?? question,
+      options: mappedOpts,
+      correctOptionId: correctOptionId,
+      feedbackCorrect: fc ?? feedbackCorrect,
+      feedbackWrong: fw,
+      verseRef: verseRef,
+      reveal: reveal,
+      type: type,
+      prompt: stem ?? prompt,
+      cue: cueOv ?? cue,
+      correctAnswer: correctAnswer,
+      passageText: passageText,
+      template: template,
+      passageA: passageA,
+      passageB: passageB,
+      correctOrder: correctOrder,
+      note: note,
+      noteLabel: noteLabel,
+      beat: beat,
+      skill: skill,
+      learningObjective: lo ?? learningObjective,
+      evidence: evidence,
+      evidenceSpan: evidenceSpan,
+    );
+  }
+
   const BankQuestion({
     required this.id,
     this.trailSlug = 'genesis-1-11',
@@ -182,6 +248,7 @@ class BankQuestion {
     this.skill,
     this.learningObjective,
     this.evidence = const [],
+    this.evidenceSpan,
   });
 
   factory BankQuestion.fromJson(Map<String, dynamic> json) {
@@ -262,6 +329,7 @@ class BankQuestion {
               .where((s) => s.trim().isNotEmpty)
               .toList() ??
           const [],
+      evidenceSpan: json['evidenceSpan'] as String?,
     );
   }
 
@@ -294,21 +362,23 @@ class BankQuestion {
       if (learningObjective != null && learningObjective!.isNotEmpty)
         'learningObjective': learningObjective,
       if (evidence.isNotEmpty) 'evidence': evidence,
+      if (evidenceSpan != null) 'evidenceSpan': evidenceSpan,
     };
   }
 
   Question toQuestion({bool shuffleOptions = false, Random? rng}) {
-    var opts = List<QuestionOption>.from(options);
+    final bq = withOverlay();
+    var opts = List<QuestionOption>.from(bq.options);
     if (shuffleOptions) {
       opts = [...opts]..shuffle(rng ?? Random());
     }
     return Question(
-      question: question,
+      question: bq.question,
       options: opts,
-      correctOptionId: correctOptionId,
-      feedbackCorrect: feedbackCorrect,
-      feedbackWrong: feedbackWrong,
-      verseRef: verseRef,
+      correctOptionId: bq.correctOptionId,
+      feedbackCorrect: bq.feedbackCorrect,
+      feedbackWrong: bq.feedbackWrong,
+      verseRef: bq.verseRef,
     );
   }
 }

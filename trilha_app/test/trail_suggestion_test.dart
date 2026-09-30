@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:trilha_app/l10n/app_language.dart';
 import 'package:trilha_app/services/trail_suggestion_service.dart';
 import 'package:trilha_app/theme/app_theme.dart';
 import 'package:trilha_app/widgets/coming_soon_trails_card.dart';
@@ -44,6 +45,9 @@ void main() {
     await tester.pumpWidget(
       MaterialApp(
         theme: AppTheme.dark,
+        locale: const Locale('pt'),
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
         home: Scaffold(
           body: ComingSoonTrailsCard(
             onSuggest: () => trailTaps++,
@@ -53,11 +57,11 @@ void main() {
       ),
     );
 
-    expect(find.text('Lançamentos em breve'), findsOneWidget);
+    expect(find.text('Em breve'), findsOneWidget);
     expect(find.text('Sugerir uma trilha'), findsOneWidget);
     expect(find.text('Sugerir um autor'), findsOneWidget);
 
-    await tester.tap(find.text('Lançamentos em breve'));
+    await tester.tap(find.text('Em breve'));
     expect(trailTaps, 1);
     expect(authorTaps, 0);
 
@@ -74,6 +78,9 @@ void main() {
     await tester.pumpWidget(
       MaterialApp(
         theme: AppTheme.dark,
+        locale: const Locale('pt'),
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
         home: Scaffold(
           body: DonateCard(onDonate: () => taps++),
         ),

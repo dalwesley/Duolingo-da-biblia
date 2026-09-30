@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../data/trail_repository.dart';
+import '../l10n/app_language.dart';
 import '../models/corner_challenge.dart';
 import '../models/walk_companion.dart';
 import '../services/app_update_service.dart';
@@ -28,6 +29,7 @@ import '../widgets/corner_burst.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/main_bottom_nav.dart';
 import '../widgets/top_bar.dart';
+import '../widgets/ui_primitives.dart';
 import 'bible_screen.dart';
 import 'home_screen.dart';
 import 'league_screen.dart';
@@ -69,8 +71,16 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
 
   Widget _lazyTab(int index, Widget Function() build) {
     if (!_built.contains(index)) return const SizedBox.shrink();
-    return TickerMode(enabled: _index == index, child: build());
+    // Trocar o idioma recria as abas guardadas no IndexedStack (textos
+    // lidos em initState/L10n.current). Ajustes fica de fora: é onde o
+    // idioma muda, e já lê tudo por context.l10n.
+    final child = index == 4
+        ? build()
+        : KeyedSubtree(key: ValueKey(_languageCode), child: build());
+    return TickerMode(enabled: _index == index, child: child);
   }
+
+  String _languageCode = 'pt';
 
   final _repo = TrailRepository();
   final _frost = FrostController();
@@ -253,27 +263,24 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       progress,
     );
     if (!mounted || !result.hasFeedback) return;
-    final messenger = ScaffoldMessenger.of(context);
-    if (result.referralCodes.isNotEmpty) {
-      messenger.showSnackBar(
-        SnackBar(
-          content: Text(
-            result.referralCodes.length == 1
-                ? 'Seu convite valeu +${ProgressService.referralFirstMissionBonus} passos!'
-                : 'Seus convites valeram +${result.referralCodes.length * ProgressService.referralFirstMissionBonus} passos!',
-          ),
+    final messages = <String>[
+      if (result.referralCodes.isNotEmpty)
+        context.l10n.shellReferralBonus(
+          result.referralCodes.length,
+          result.referralCodes.length *
+              ProgressService.referralFirstMissionBonus,
         ),
-      );
-    }
-    if (result.weekTogetherBonusGranted) {
-      messenger.showSnackBar(
-        SnackBar(
-          content: Text(
-            'A companhia ganhou +${WalkCompanion.weekTogetherBonusSteps} passos na jornada',
-          ),
+      if (result.weekTogetherBonusGranted)
+        context.l10n.shellWeekTogetherBonus(
+          WalkCompanion.weekTogetherBonusSteps,
         ),
-      );
-    }
+    ];
+    if (messages.isEmpty) return;
+    showAppToastFor(
+      context,
+      message: messages.join(' · '),
+      glyph: CinematicGlyph.gift,
+    );
   }
 
   @override
@@ -453,17 +460,17 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       },
       title: switch (index) {
         0 => userName,
-        1 => 'Trilhas',
-        2 => 'Bíblia',
-        3 => 'Juntos',
-        _ => 'Ajustes',
+        1 => context.l10n.navTrails,
+        2 => context.l10n.navBible,
+        3 => context.l10n.navTogether,
+        _ => context.l10n.settingsTitle,
       },
       subtitle: switch (index) {
         0 => DayPhaseHelper.greeting(), // relógio — não o tema de aparência
-        1 => 'O mapa da jornada',
+        1 => context.l10n.shellTrailsSubtitle,
         2 => LiturgicalCalendar.momentFor().subtitle,
-        3 => 'Companhia · Caravana · Grupos',
-        _ => 'Como você caminha',
+        3 => context.l10n.shellTogetherSubtitle,
+        _ => context.l10n.settingsSubtitle,
       },
     );
   }
@@ -480,6 +487,8 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     final appearance = AppearanceStyle.resolve(mode);
     _lastLook = appearance.look;
     _built.add(_index);
+    // Depende do idioma: o shell reconstrói (e recria as abas) ao trocar.
+    _languageCode = Localizations.localeOf(context).languageCode;
 
     Widget tabBar(int index) => _tabTopBar(
       index: index,

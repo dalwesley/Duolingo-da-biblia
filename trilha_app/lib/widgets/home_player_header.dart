@@ -11,6 +11,7 @@ import 'cinematic_icon.dart';
 import 'streak_week.dart';
 import 'ui_primitives.dart';
 import 'user_avatar.dart';
+import '../l10n/app_language.dart';
 
 /// Saudação do dia — identidade + pulso, sem HUD de lâmpadas (isso é da cena).
 ///
@@ -40,8 +41,9 @@ class HomePlayerHeader extends StatelessWidget {
     final done = progress.missionsToday.clamp(0, goal);
     final atRisk = progress.isStreakAtRisk;
     final streakColor = atRisk ? AppColors.error : AppColors.streak;
+    final l10n = context.l10n;
     final name = progress.userName.trim().isEmpty
-        ? 'Peregrino'
+        ? l10n.homeDefaultName
         : progress.userName.trim().split(' ').first;
     final moment = LiturgicalCalendar.momentFor();
     final liturgy = LiturgicalCalendar.accentOf(moment.season);
@@ -79,7 +81,7 @@ class HomePlayerHeader extends StatelessWidget {
               Expanded(
                 child: Semantics(
                   button: onProfileTap != null,
-                  label: onProfileTap != null ? 'Abrir perfil de $name' : null,
+                  label: onProfileTap != null ? l10n.homeOpenProfile(name) : null,
                   child: GestureDetector(
                     onTap: () {
                       if (onProfileTap == null) return;
@@ -150,8 +152,8 @@ class HomePlayerHeader extends StatelessWidget {
                 _Stat(
                   glyph: CinematicGlyph.flame,
                   accent: streakColor,
-                  value: streak == 1 ? '1 dia' : '$streak dias',
-                  hint: atRisk ? 'em risco' : null,
+                  value: l10n.commonDays(streak),
+                  hint: atRisk ? l10n.homeStatAtRisk : null,
                   hintColor: AppColors.error,
                 ),
                 const Spacer(),
@@ -161,14 +163,14 @@ class HomePlayerHeader extends StatelessWidget {
                       ? AppColors.accent
                       : AppColors.sand,
                   value: '$done/$goal',
-                  hint: 'meta',
+                  hint: l10n.homeStatGoal,
                 ),
                 const SizedBox(width: AppSpace.md),
                 _Stat(
                   glyph: CinematicGlyph.frost,
                   accent: freezeUsed ? a.textFaint : AppColors.iceSoft,
                   value: '$freezeCount',
-                  hint: freezeUsed ? 'gelo usado' : 'gelo',
+                  hint: freezeUsed ? l10n.homeStatFreezeUsed : l10n.homeStatFreeze,
                 ),
               ],
             ),
@@ -196,7 +198,7 @@ class _SeasonChip extends StatelessWidget {
   Widget build(BuildContext context) {
     return Semantics(
       button: true,
-      label: '${moment.title} · abrir leitura da estação',
+      label: context.l10n.homeSeasonChipSemantics(moment.title),
       excludeSemantics: true,
       child: GestureDetector(
         behavior: HitTestBehavior.opaque,

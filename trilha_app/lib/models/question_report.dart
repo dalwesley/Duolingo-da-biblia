@@ -1,3 +1,5 @@
+import '../l10n/l10n_global.dart';
+
 /// Categorias de relato sobre pergunta/resposta nas trilhas.
 enum QuestionReportCategory {
   theological,
@@ -8,31 +10,31 @@ enum QuestionReportCategory {
   other;
 
   String get id => switch (this) {
-        theological => 'theological',
-        interpretation => 'interpretation',
-        wrongAnswer => 'wrong_answer',
-        feedback => 'feedback',
-        typo => 'typo',
-        other => 'other',
-      };
+    theological => 'theological',
+    interpretation => 'interpretation',
+    wrongAnswer => 'wrong_answer',
+    feedback => 'feedback',
+    typo => 'typo',
+    other => 'other',
+  };
 
   String get label => switch (this) {
-        theological => 'Erro teológico',
-        interpretation => 'Interpretação questionável',
-        wrongAnswer => 'Resposta marcada errada',
-        feedback => 'Feedback confuso',
-        typo => 'Ortografia / texto',
-        other => 'Outro',
-      };
+    theological => L10n.current.reportCategoryTheological,
+    interpretation => L10n.current.reportCategoryInterpretation,
+    wrongAnswer => L10n.current.reportCategoryWrongAnswer,
+    feedback => L10n.current.reportCategoryFeedback,
+    typo => L10n.current.reportCategoryTypo,
+    other => L10n.current.reportCategoryOther,
+  };
 
   String get hint => switch (this) {
-        theological => 'Doutrina ou doutrina implícita parece incorreta',
-        interpretation => 'Leitura do texto bíblico parece forçada ou imprecisa',
-        wrongAnswer => 'A opção marcada como certa parece errada',
-        feedback => 'Explicação após a resposta confunde ou erra',
-        typo => 'Erro de digitação, referência ou formatação',
-        other => 'Algo mais que não se encaixa acima',
-      };
+    theological => L10n.current.reportHintTheological,
+    interpretation => L10n.current.reportHintInterpretation,
+    wrongAnswer => L10n.current.reportHintWrongAnswer,
+    feedback => L10n.current.reportHintFeedback,
+    typo => L10n.current.reportHintTypo,
+    other => L10n.current.reportHintOther,
+  };
 
   static QuestionReportCategory? fromId(String? id) {
     if (id == null) return null;

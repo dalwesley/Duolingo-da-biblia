@@ -1,9 +1,12 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 import '../data/trail_repository.dart';
 import '../data/entry_trails.dart';
+import '../l10n/app_language.dart';
+import '../l10n/l10n_global.dart';
 import '../models/caravan_profile_prefs.dart';
 import '../models/caravan_pilgrim_profile.dart';
 import '../models/pilgrim_medals.dart';
@@ -22,16 +25,8 @@ import 'streak_week.dart';
 import 'ui_primitives.dart';
 import 'profile_privacy.dart';
 
-String pilgrimFormatCount(int n) {
-  final digits = n.abs().toString();
-  final buf = StringBuffer();
-  if (n < 0) buf.write('-');
-  for (var i = 0; i < digits.length; i++) {
-    if (i > 0 && (digits.length - i) % 3 == 0) buf.write('.');
-    buf.write(digits[i]);
-  }
-  return buf.toString();
-}
+String pilgrimFormatCount(int n) =>
+    NumberFormat.decimalPattern(L10n.current.localeName).format(n);
 
 String pilgrimShortStopLabel(String title) {
   var t = title.trim();
@@ -56,37 +51,38 @@ Color pilgrimRankAccent(int rank) => switch (rank) {
 
 String pilgrimFormatDate(String? yyyyMmDd, {String empty = '—'}) {
   if (yyyyMmDd == null || yyyyMmDd.isEmpty) return empty;
-  final parts = yyyyMmDd.split('-');
-  if (parts.length != 3) return empty;
-  return '${parts[2]}/${parts[1]}/${parts[0]}';
+  final date = DateTime.tryParse(yyyyMmDd);
+  if (yyyyMmDd.split('-').length != 3 || date == null) return empty;
+  return DateFormat.yMd(L10n.current.localeName).format(date);
 }
 
 String pilgrimFormatShort(String? yyyyMmDd, {String empty = '—'}) {
   if (yyyyMmDd == null || yyyyMmDd.isEmpty) return empty;
-  final parts = yyyyMmDd.split('-');
-  if (parts.length != 3) return empty;
-  return '${parts[2]}/${parts[1]}';
+  final date = DateTime.tryParse(yyyyMmDd);
+  if (yyyyMmDd.split('-').length != 3 || date == null) return empty;
+  return DateFormat.Md(L10n.current.localeName).format(date);
 }
 
 String pilgrimFormatOnline(String? yyyyMmDd) {
   if (yyyyMmDd == null || yyyyMmDd.isEmpty) return '—';
   final today = DateTime.now().toIso8601String().substring(0, 10);
-  if (yyyyMmDd == today) return 'Hoje';
+  if (yyyyMmDd == today) return L10n.current.commonToday;
   return pilgrimFormatShort(yyyyMmDd);
 }
 
 String pilgrimAccuracyEpithet(int p) {
-  if (p >= 95) return 'Leitura afiada das Escrituras';
-  if (p >= 80) return 'Boa compreensão nas cenas';
-  if (p >= 60) return 'Caminhando com firmeza';
-  return 'Ainda em formação';
+  final l10n = L10n.current;
+  if (p >= 95) return l10n.pilgrimAccuracySharp;
+  if (p >= 80) return l10n.pilgrimAccuracyGood;
+  if (p >= 60) return l10n.pilgrimAccuracySteady;
+  return l10n.pilgrimAccuracyForming;
 }
 
 String pilgrimRankEpithet(int rank) => switch (rank) {
-  1 => 'Líder da caravana',
-  2 => 'Vice-líder',
-  3 => 'No pódio',
-  _ => 'Peregrino da caravana',
+  1 => L10n.current.pilgrimRankLeader,
+  2 => L10n.current.pilgrimRankRunnerUp,
+  3 => L10n.current.pilgrimRankPodium,
+  _ => L10n.current.pilgrimRankListed,
 };
 
 Future<CaravanPilgrimProfile> loadEnrichedOwnerProfile(
@@ -201,9 +197,9 @@ class PilgrimProfileDetailSections extends StatelessWidget {
     void addCollections() {
       if (collectionsFirst && isOwner) {
         add(
-          const Align(
+          Align(
             alignment: Alignment.centerLeft,
-            child: SectionLabel('Coleções'),
+            child: SectionLabel(L10n.current.pilgrimCollections),
           ),
         );
       }
@@ -246,7 +242,10 @@ class PilgrimProfileDetailSections extends StatelessWidget {
         (profile.lastMissionTitle != null || profile.lastMissionSlug != null)) {
       add(
         PilgrimScenePoster(
-          title: profile.lastMissionTitle ?? profile.lastMissionSlug ?? 'Cena',
+          title:
+              profile.lastMissionTitle ??
+              profile.lastMissionSlug ??
+              L10n.current.pilgrimSceneFallback,
           trail: profile.lastTrailTitle,
           date: pilgrimFormatShort(profile.lastMissionCompletedDate, empty: ''),
           insight: profile.lastMissionInsight,
@@ -259,15 +258,15 @@ class PilgrimProfileDetailSections extends StatelessWidget {
       final featured = profile.featuredTrail;
       if (featured == null) {
         add(
-          const RelicPanel(
+          RelicPanel(
             accent: AppColors.cedar,
             child: RelicChapter(
-              title: 'Trilha',
-              whisper: 'Nenhuma trilha em andamento ainda.',
+              title: L10n.current.pilgrimTrail,
+              whisper: L10n.current.pilgrimNoTrailYet,
               accent: AppColors.cedar,
               action: PrivacyEye(
-                sections: {CaravanProfileSection.trails},
-                label: 'Selos e trilhas',
+                sections: const {CaravanProfileSection.trails},
+                label: L10n.current.pilgrimSealsAndTrails,
               ),
             ),
           ),
@@ -293,7 +292,7 @@ class PilgrimProfileDetailSections extends StatelessWidget {
               streak: profile.streak,
               playDates: profile.playDates,
               walk: entry.walkedToday
-                  ? 'Hoje'
+                  ? L10n.current.commonToday
                   : pilgrimFormatShort(profile.lastWalkDate),
               online: pilgrimFormatOnline(profile.lastSeenDate),
               walkedToday: entry.walkedToday,
@@ -307,7 +306,7 @@ class PilgrimProfileDetailSections extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   RelicChapter(
-                    title: 'Precisão',
+                    title: L10n.current.pilgrimAccuracyTitle,
                     whisper: pilgrimAccuracyEpithet(profile.accuracyPercent!),
                     accent: AppColors.teal,
                   ),
@@ -340,11 +339,11 @@ class PilgrimProfileDetailSections extends StatelessWidget {
 
     if (!isOwner && sections.isEmpty && !suppressEmptyState) {
       add(
-        const RelicPanel(
+        RelicPanel(
           accent: AppColors.slate,
           child: RelicChapter(
-            title: 'Perfil privado',
-            whisper: 'Escolheu não compartilhar detalhes com a caravana.',
+            title: L10n.current.pilgrimPrivateTitle,
+            whisper: L10n.current.pilgrimPrivateBody,
             accent: AppColors.slate,
           ),
         ),
@@ -360,23 +359,24 @@ class PilgrimProfileDetailSections extends StatelessWidget {
   Widget _escriturasPanel() {
     final chapters = profile.bibleChaptersRead;
     final books = profile.completeBibleBooks.length;
+    final l10n = L10n.current;
     final subtitle = chapters == 0
-        ? 'Ainda sem leitura registrada'
+        ? l10n.pilgrimNoReadingYet
         : books == 0
-        ? '$chapters capítulo${chapters == 1 ? '' : 's'} · medalha Palavra'
-        : '$chapters capítulo${chapters == 1 ? '' : 's'} · $books livro${books == 1 ? '' : 's'}';
+        ? l10n.pilgrimChaptersWordMedal(chapters)
+        : l10n.pilgrimChaptersBooks(chapters, books);
     return RelicPanel(
       accent: AppColors.cedar,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           RelicChapter(
-            title: 'Escrituras',
+            title: l10n.pilgrimScriptures,
             whisper: subtitle,
             accent: AppColors.cedar,
-            action: const PrivacyEye(
-              sections: {CaravanProfileSection.bible},
-              label: 'Escrituras',
+            action: PrivacyEye(
+              sections: const {CaravanProfileSection.bible},
+              label: l10n.pilgrimScriptures,
             ),
           ),
           if (chapters > 0 && profile.completeBookNames.isNotEmpty) ...[
@@ -432,7 +432,7 @@ class PilgrimMeRankHeader extends StatelessWidget {
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  '$rankº',
+                  context.l10n.pilgrimRankOrdinal(rank),
                   style: AppTypography.display(
                     size: 28,
                     weight: FontWeight.w900,
@@ -442,8 +442,8 @@ class PilgrimMeRankHeader extends StatelessWidget {
                 const SizedBox(height: 2),
                 Text(
                   weeklySteps
-                      ? 'Ranking semanal da caravana'
-                      : 'Ranking geral da caravana',
+                      ? context.l10n.pilgrimRankWeekly
+                      : context.l10n.pilgrimRankMonthly,
                   style: AppTypography.body(size: 13, color: a.textSecondary),
                 ),
               ],
@@ -509,11 +509,11 @@ class PilgrimScenePoster extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           RelicChapter(
-            title: 'Última cena',
+            title: context.l10n.profileSectionLastScene,
             whisper: trail,
-            action: const PrivacyEye(
-              sections: {CaravanProfileSection.lastMission},
-              label: 'Última cena',
+            action: PrivacyEye(
+              sections: const {CaravanProfileSection.lastMission},
+              label: context.l10n.profileSectionLastScene,
             ),
           ),
           const SizedBox(height: 12),
@@ -550,7 +550,7 @@ class PilgrimScenePoster extends StatelessWidget {
           if (date != null && date!.isNotEmpty) ...[
             const SizedBox(height: 14),
             Text(
-              'Concluída em $date',
+              context.l10n.pilgrimCompletedOn(date!),
               style: AppTypography.body(size: 12, color: a.textFaint),
             ),
           ],
@@ -581,14 +581,14 @@ class PilgrimPresenceTimeline extends StatelessWidget {
     final stops = <_PilgrimTimelineStop>[
       _PilgrimTimelineStop(
         glyph: CinematicGlyph.path,
-        label: 'Caminhou',
+        label: context.l10n.pilgrimWalked,
         value: walk,
         accent: AppColors.cedar,
         live: walkedToday,
       ),
       _PilgrimTimelineStop(
         glyph: CinematicGlyph.calendar,
-        label: 'Online',
+        label: context.l10n.pilgrimSeen,
         value: online,
         accent: AppColors.teal,
         live: onlineToday,
@@ -596,7 +596,7 @@ class PilgrimPresenceTimeline extends StatelessWidget {
       if (streak != null)
         _PilgrimTimelineStop(
           glyph: CinematicGlyph.flame,
-          label: 'Sequência',
+          label: context.l10n.pilgrimStreak,
           value: streak!,
           accent: AppColors.streak,
           live: false,
@@ -761,7 +761,7 @@ class PilgrimPrecisionArc extends StatelessWidget {
           FittedBox(
             fit: BoxFit.scaleDown,
             child: Text(
-              '$correct/$total certas',
+              context.l10n.pilgrimCorrectRatio(correct, total),
               maxLines: 1,
               style: AppTypography.body(size: 12, color: a.textSecondary),
             ),
@@ -776,13 +776,13 @@ class PilgrimPrecisionArc extends StatelessWidget {
           gauge,
           const SizedBox(height: 10),
           Text(
-            '$correct de $total',
+            context.l10n.pilgrimCorrectOf(correct, total),
             textAlign: TextAlign.center,
             style: AppTypography.title(size: 12, color: a.text),
           ),
           const SizedBox(height: 2),
           Text(
-            'na jornada',
+            context.l10n.pilgrimOnTheJourney,
             textAlign: TextAlign.center,
             style: AppTypography.body(size: 11, color: a.textFaint),
           ),
@@ -799,12 +799,12 @@ class PilgrimPrecisionArc extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                '$correct de $total',
+                context.l10n.pilgrimCorrectOf(correct, total),
                 style: AppTypography.display(size: 20, color: a.text),
               ),
               const SizedBox(height: 4),
               Text(
-                'perguntas certas na jornada',
+                context.l10n.pilgrimCorrectOnJourney,
                 style: AppTypography.body(size: 13, color: a.textSecondary),
               ),
             ],
@@ -905,7 +905,7 @@ class PilgrimLeadershipMonument extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  days == 1 ? '1 dia no topo' : '$days dias no topo',
+                  context.l10n.profileDaysOnTop(days),
                   style: AppTypography.display(
                     size: 20,
                     weight: FontWeight.w900,
@@ -914,7 +914,7 @@ class PilgrimLeadershipMonument extends StatelessWidget {
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  'Já liderou o ranking geral',
+                  context.l10n.pilgrimLedOverall,
                   style: AppTypography.body(
                     size: 13,
                     color: Appearance.of(context).textSecondary,
@@ -948,8 +948,9 @@ class PilgrimTrailPath extends StatelessWidget {
     final a = Appearance.of(context);
     final complete = trail.isComplete;
     final accent = complete ? AppColors.cedar : AppColors.accent;
+    final l10n = context.l10n;
     final subtitle = trail.description.trim().isEmpty
-        ? '${trail.missionsDone} de ${trail.missionsTotal} cenas'
+        ? l10n.pilgrimScenesOf(trail.missionsDone, trail.missionsTotal)
         : trail.description;
 
     return Padding(
@@ -967,17 +968,19 @@ class PilgrimTrailPath extends StatelessWidget {
           children: [
             RelicChapter(
               title: compact
-                  ? 'Trilha'
+                  ? l10n.pilgrimTrail
                   : rest.isNotEmpty
-                  ? (owner ? 'Suas trilhas' : 'Trilhas')
-                  : (owner ? 'Sua trilha' : 'Trilha'),
+                  ? (owner ? l10n.pilgrimYourTrails : l10n.navTrails)
+                  : (owner ? l10n.pilgrimYourTrail : l10n.pilgrimTrail),
               whisper: rest.isEmpty
                   ? subtitle
-                  : '${rest.length + (trail.isComplete ? 0 : 1)} em curso',
+                  : l10n.pilgrimTrailsInProgress(
+                      rest.length + (trail.isComplete ? 0 : 1),
+                    ),
               accent: accent,
-              action: const PrivacyEye(
-                sections: {CaravanProfileSection.trails},
-                label: 'Selos e trilhas',
+              action: PrivacyEye(
+                sections: const {CaravanProfileSection.trails},
+                label: l10n.pilgrimSealsAndTrails,
               ),
             ),
             const SizedBox(height: 10),
@@ -1003,7 +1006,7 @@ class PilgrimTrailPath extends StatelessWidget {
             ] else ...[
               const SizedBox(height: 6),
               Text(
-                '${trail.missionsDone} de ${trail.missionsTotal} cenas'
+                '${l10n.pilgrimScenesOf(trail.missionsDone, trail.missionsTotal)}'
                 '${trail.clearedModes.isNotEmpty ? ' · ${trail.clearedModes.join(', ')}' : ''}',
                 style: AppTypography.body(size: 12, color: a.textFaint),
               ),
@@ -1058,7 +1061,7 @@ class _OpenTrailRow extends StatelessWidget {
           ),
           const SizedBox(height: 3),
           Text(
-            '${trail.missionsDone} de ${trail.missionsTotal} cenas',
+            context.l10n.pilgrimScenesOf(trail.missionsDone, trail.missionsTotal),
             style: AppTypography.body(size: 12, color: a.textFaint),
           ),
           const SizedBox(height: 8),
@@ -1321,9 +1324,11 @@ class PilgrimConstancyCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           RelicChapter(
-            title: 'Sequência',
+            title: context.l10n.pilgrimStreak,
             accent: AppColors.streak,
-            whisper: showStreak ? 'Em andamento' : 'Última caminhada',
+            whisper: showStreak
+                ? context.l10n.pilgrimStreakOngoing
+                : context.l10n.pilgrimLastStudyDay,
           ),
           const SizedBox(height: 14),
           Row(
@@ -1336,7 +1341,7 @@ class PilgrimConstancyCard extends StatelessWidget {
               const SizedBox(width: 12),
               Expanded(
                 child: Text(
-                  showStreak ? (streak == 1 ? '1 dia' : '$streak dias') : walk,
+                  showStreak ? context.l10n.commonDays(streak) : walk,
                   style: AppTypography.display(
                     size: 24,
                     weight: FontWeight.w900,
@@ -1361,7 +1366,7 @@ class PilgrimConstancyCard extends StatelessWidget {
           if (online.isNotEmpty && online != '—') ...[
             const SizedBox(height: 8),
             Text(
-              'Online $online',
+              context.l10n.pilgrimLastSeen(online),
               style: AppTypography.body(size: 12, color: a.textFaint),
             ),
           ],
@@ -1400,12 +1405,12 @@ class PilgrimOwnerPrivacyBanner extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Privacidade do perfil',
+                    context.l10n.pilgrimPrivacyTitle,
                     style: AppTypography.title(size: 14, color: a.text),
                   ),
                   const SizedBox(height: 2),
                   Text(
-                    'Toque no olho de cada card para escolher o que a caravana vê.',
+                    context.l10n.pilgrimPrivacyBody,
                     style: AppTypography.body(
                       size: 12,
                       height: 1.35,

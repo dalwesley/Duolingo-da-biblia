@@ -1,0 +1,514 @@
+{
+  "realmAntigoTestamento": {
+    "pt": "Antigo Testamento",
+    "en": "Old Testament",
+    "es": "Antiguo Testamento"
+  },
+  "realmNovoTestamento": {
+    "pt": "Novo Testamento",
+    "en": "New Testament",
+    "es": "Nuevo Testamento"
+  },
+  "realmVidaCrista": {
+    "pt": "Vida Cristã",
+    "en": "Christian life",
+    "es": "Vida cristiana"
+  },
+  "realmTeologia": {
+    "pt": "Teologia",
+    "en": "Theology",
+    "es": "Teología"
+  },
+  "realmOther": {
+    "pt": "Outros",
+    "en": "Other",
+    "es": "Otros",
+    "description": "Catch-all area when suggesting a trail"
+  },
+  "realmEyebrowAntigoTestamento": {
+    "pt": "A promessa",
+    "en": "The promise",
+    "es": "La promesa"
+  },
+  "realmTaglineAntigoTestamento": {
+    "pt": "Da criação aos profetas — o caminho da aliança",
+    "en": "From creation to the prophets — the way of the covenant",
+    "es": "De la creación a los profetas — el camino de la alianza"
+  },
+  "realmEyebrowNovoTestamento": {
+    "pt": "O cumprimento",
+    "en": "The fulfillment",
+    "es": "El cumplimiento"
+  },
+  "realmTaglineNovoTestamento": {
+    "pt": "Cristo, a Igreja e a esperança que não falha",
+    "en": "Christ, the Church and the hope that does not fail",
+    "es": "Cristo, la Iglesia y la esperanza que no falla"
+  },
+  "realmEyebrowVidaCrista": {
+    "pt": "O caminhar",
+    "en": "The walk",
+    "es": "El andar"
+  },
+  "realmTaglineVidaCrista": {
+    "pt": "Discipulado, oração e a história da fé",
+    "en": "Discipleship, prayer and the history of faith",
+    "es": "Discipulado, oración y la historia de la fe"
+  },
+  "realmEyebrowTeologia": {
+    "pt": "O fundamento",
+    "en": "The foundation",
+    "es": "El fundamento"
+  },
+  "realmTaglineTeologia": {
+    "pt": "Hermenêutica, línguas e a doutrina da fé",
+    "en": "Hermeneutics, languages and the doctrine of faith",
+    "es": "Hermenéutica, lenguas y la doctrina de la fe"
+  },
+  "realmTeologiaSoonBody": {
+    "pt": "Hermenêutica, línguas originais e dogmática.",
+    "en": "Hermeneutics, original languages and dogmatics.",
+    "es": "Hermenéutica, lenguas originales y dogmática."
+  },
+  "trailsStage": {
+    "pt": "Etapa {roman}",
+    "en": "Stage {roman}",
+    "es": "Etapa {roman}",
+    "placeholders": {
+      "roman": "String"
+    },
+    "description": "Module number in Roman numerals, e.g. Etapa II"
+  },
+  "trailsTrailNumber": {
+    "pt": "Trilha {roman}",
+    "en": "Trail {roman}",
+    "es": "Ruta {roman}",
+    "placeholders": {
+      "roman": "String"
+    },
+    "description": "Trail number in Roman numerals"
+  },
+  "trailsCleared": {
+    "pt": "Concluída",
+    "en": "Complete",
+    "es": "Completada",
+    "description": "Status of a scene, stage or trail (feminine in pt/es)"
+  },
+  "trailsDoneOfTotal": {
+    "pt": "{done} de {total}",
+    "en": "{done} of {total}",
+    "es": "{done} de {total}",
+    "placeholders": {
+      "done": "int",
+      "total": "int"
+    }
+  },
+  "trailsScenesOf": {
+    "pt": "{total, plural, =1{{done} de 1 cena} other{{done} de {total} cenas}}",
+    "en": "{total, plural, =1{{done} of 1 scene} other{{done} of {total} scenes}}",
+    "es": "{total, plural, =1{{done} de 1 escena} other{{done} de {total} escenas}}",
+    "placeholders": {
+      "done": "int",
+      "total": "int"
+    }
+  },
+  "trailsScenesShort": {
+    "pt": "{total, plural, =1{{done}/1 cena} other{{done}/{total} cenas}}",
+    "en": "{total, plural, =1{{done}/1 scene} other{{done}/{total} scenes}}",
+    "es": "{total, plural, =1{{done}/1 escena} other{{done}/{total} escenas}}",
+    "placeholders": {
+      "done": "int",
+      "total": "int"
+    }
+  },
+  "trailsLabeledScenesOf": {
+    "pt": "{total, plural, =1{{label} · {done} de 1 cena} other{{label} · {done} de {total} cenas}}",
+    "en": "{total, plural, =1{{label} · {done} of 1 scene} other{{label} · {done} of {total} scenes}}",
+    "es": "{total, plural, =1{{label} · {done} de 1 escena} other{{label} · {done} de {total} escenas}}",
+    "placeholders": {
+      "label": "String",
+      "done": "int",
+      "total": "int"
+    },
+    "description": "label is a study mode name or a trail title"
+  },
+  "trailsModeCleared": {
+    "pt": "{mode} concluída",
+    "en": "{mode} complete",
+    "es": "{mode} completada",
+    "placeholders": {
+      "mode": "String"
+    },
+    "description": "mode = Observação/Compreensão/Interpretação"
+  },
+  "trailsModesCleared": {
+    "pt": "{modes} concluídas",
+    "en": "{modes} complete",
+    "es": "{modes} completadas",
+    "placeholders": {
+      "modes": "String"
+    },
+    "description": "modes = list of mode names joined by ' · '"
+  },
+  "trailsModeReplayHint": {
+    "pt": "{cleared} concluída · progresso abaixo é do modo {active}",
+    "en": "{cleared} complete · progress below is for {active} mode",
+    "es": "{cleared} completada · el progreso de abajo es del modo {active}",
+    "placeholders": {
+      "cleared": "String",
+      "active": "String"
+    }
+  },
+  "trailsModeAllSealed": {
+    "pt": "{mode} concluída · os três modos desta trilha estão selados",
+    "en": "{mode} complete · all three modes of this trail are sealed",
+    "es": "{mode} completada · los tres modos de esta ruta están sellados",
+    "placeholders": {
+      "mode": "String"
+    }
+  },
+  "trailsModeNextHint": {
+    "pt": "{mode} concluída · o próximo modo é {next}",
+    "en": "{mode} complete · the next mode is {next}",
+    "es": "{mode} completada · el siguiente modo es {next}",
+    "placeholders": {
+      "mode": "String",
+      "next": "String"
+    }
+  },
+  "trailsModeChip": {
+    "pt": "Modo {mode}",
+    "en": "{mode} mode",
+    "es": "Modo {mode}",
+    "placeholders": {
+      "mode": "String"
+    }
+  },
+  "trailsHorizonEyebrow": {
+    "pt": "No horizonte",
+    "en": "On the horizon",
+    "es": "En el horizonte"
+  },
+  "trailsHorizonBody": {
+    "pt": "Novas trilhas estão sendo preparadas.",
+    "en": "New trails are being prepared.",
+    "es": "Se están preparando nuevas rutas."
+  },
+  "trailsDonateTitle": {
+    "pt": "Ajude a continuar",
+    "en": "Help keep it going",
+    "es": "Ayuda a continuar"
+  },
+  "trailsDonateBody": {
+    "pt": "Uma contribuição voluntária para as próximas trilhas.",
+    "en": "A voluntary contribution toward the next trails.",
+    "es": "Una contribución voluntaria para las próximas rutas."
+  },
+  "trailsDonateCta": {
+    "pt": "Doar",
+    "en": "Donate",
+    "es": "Donar"
+  },
+  "trailsEmptyTitle": {
+    "pt": "As cenas ainda não chegaram",
+    "en": "The scenes haven't arrived yet",
+    "es": "Las escenas aún no llegaron"
+  },
+  "trailsEmptyBody": {
+    "pt": "O currículo baixa na primeira abertura. Se a rede oscilar, toque para tentar de novo.",
+    "en": "The curriculum downloads the first time you open the app. If the connection drops, tap to try again.",
+    "es": "El contenido se descarga la primera vez que abres la app. Si la conexión falla, toca para intentarlo de nuevo."
+  },
+  "trailsDownloading": {
+    "pt": "Baixando…",
+    "en": "Downloading…",
+    "es": "Descargando…"
+  },
+  "trailsAreasHeading": {
+    "pt": "As áreas",
+    "en": "The areas",
+    "es": "Las áreas"
+  },
+  "trailsStreakAtRisk": {
+    "pt": "Sequência cai em {countdown}",
+    "en": "Streak ends in {countdown}",
+    "es": "La racha termina en {countdown}",
+    "placeholders": {
+      "countdown": "String"
+    },
+    "description": "countdown is a preformatted time left, e.g. 3h 20min"
+  },
+  "trailsInProgress": {
+    "pt": "Em andamento",
+    "en": "In progress",
+    "es": "En curso"
+  },
+  "trailsContinueSemantics": {
+    "pt": "Continuar · {title}",
+    "en": "Continue · {title}",
+    "es": "Continuar · {title}",
+    "placeholders": {
+      "title": "String"
+    },
+    "description": "Screen reader label; title = scene title"
+  },
+  "trailsRealmTrailsDone": {
+    "pt": "{total, plural, =1{{done} de 1 trilha} other{{done} de {total} trilhas}}",
+    "en": "{total, plural, =1{{done} of 1 trail} other{{done} of {total} trails}}",
+    "es": "{total, plural, =1{{done} de 1 ruta} other{{done} de {total} rutas}}",
+    "placeholders": {
+      "done": "int",
+      "total": "int"
+    }
+  },
+  "trailsRealmOpenCount": {
+    "pt": "{count, plural, =1{1 aberta} other{{count} abertas}}",
+    "en": "{count, plural, =1{1 open} other{{count} open}}",
+    "es": "{count, plural, =1{1 abierta} other{{count} abiertas}}",
+    "placeholders": {
+      "count": "int"
+    },
+    "description": "Number of unlocked trails in an area"
+  },
+  "trailsRealmTrailCount": {
+    "pt": "{count, plural, =1{1 trilha} other{{count} trilhas}}",
+    "en": "{count, plural, =1{1 trail} other{{count} trails}}",
+    "es": "{count, plural, =1{1 ruta} other{{count} rutas}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "trailsLearnMore": {
+    "pt": "Saiba mais",
+    "en": "Learn more",
+    "es": "Más información"
+  },
+  "trailMapCrossing": {
+    "pt": "Travessia",
+    "en": "Crossing",
+    "es": "Travesía",
+    "description": "Boss/review scene at the end of a stage"
+  },
+  "trailMapScene": {
+    "pt": "Cena",
+    "en": "Scene",
+    "es": "Escena"
+  },
+  "trailMapLocked": {
+    "pt": "Bloqueada",
+    "en": "Locked",
+    "es": "Bloqueada",
+    "description": "A locked scene"
+  },
+  "trailMapSeal": {
+    "pt": "Selo {name}",
+    "en": "{name} seal",
+    "es": "Sello de {name}",
+    "placeholders": {
+      "name": "String"
+    },
+    "description": "Character seal; name is a Bible character"
+  },
+  "journeyNow": {
+    "pt": "Agora",
+    "en": "Now",
+    "es": "Ahora"
+  },
+  "journeyBeyondHorizon": {
+    "pt": "Ainda além do horizonte",
+    "en": "Still beyond the horizon",
+    "es": "Aún más allá del horizonte",
+    "description": "Locked trail on the area path"
+  },
+  "journeyModeInProgress": {
+    "pt": "{mode} em curso",
+    "en": "{mode} in progress",
+    "es": "{mode} en curso",
+    "placeholders": {
+      "mode": "String"
+    }
+  },
+  "journeyModeAhead": {
+    "pt": "{mode} à frente",
+    "en": "{mode} up next",
+    "es": "{mode} por delante",
+    "placeholders": {
+      "mode": "String"
+    }
+  },
+  "journeyLockedHint": {
+    "pt": "Conclua a trilha anterior para liberar esta.",
+    "en": "Complete the previous trail to unlock this one.",
+    "es": "Completa la ruta anterior para desbloquear esta."
+  },
+  "journeySoonHint": {
+    "pt": "Em breve · esta trilha ainda está sendo escrita.",
+    "en": "Coming soon · this trail is still being written.",
+    "es": "Próximamente · esta ruta aún se está escribiendo."
+  },
+  "journeyYouAreHere": {
+    "pt": "Onde você está",
+    "en": "Where you are",
+    "es": "Dónde estás"
+  },
+  "suggestionTrailTitle": {
+    "pt": "Sugerir uma trilha",
+    "en": "Suggest a trail",
+    "es": "Sugerir una ruta"
+  },
+  "suggestionTrailSubtitle": {
+    "pt": "O que ainda falta no mapa?",
+    "en": "What's still missing from the map?",
+    "es": "¿Qué falta todavía en el mapa?"
+  },
+  "suggestionTrailRealmLabel": {
+    "pt": "Onde encaixa",
+    "en": "Where it fits",
+    "es": "Dónde encaja"
+  },
+  "suggestionTrailTextLabel": {
+    "pt": "A trilha",
+    "en": "The trail",
+    "es": "La ruta"
+  },
+  "suggestionTrailPlaceholder": {
+    "pt": "Escolha uma área e descreva a trilha…",
+    "en": "Choose an area and describe the trail…",
+    "es": "Elige un área y describe la ruta…"
+  },
+  "suggestionTrailHintBoth": {
+    "pt": "Escolha uma área e descreva a trilha.",
+    "en": "Choose an area and describe the trail.",
+    "es": "Elige un área y describe la ruta."
+  },
+  "suggestionTrailHintRealm": {
+    "pt": "Escolha onde essa trilha encaixa.",
+    "en": "Choose where this trail fits.",
+    "es": "Elige dónde encaja esta ruta."
+  },
+  "suggestionTrailHintText": {
+    "pt": "Escreva a trilha — pelo menos 4 letras.",
+    "en": "Describe the trail — at least 4 letters.",
+    "es": "Describe la ruta — al menos 4 letras."
+  },
+  "suggestionHintAntigoTestamento": {
+    "pt": "Ex.: Salmos, Êxodo, os profetas…",
+    "en": "E.g.: Psalms, Exodus, the prophets…",
+    "es": "Ej.: Salmos, Éxodo, los profetas…"
+  },
+  "suggestionHintNovoTestamento": {
+    "pt": "Ex.: o Sermão do Monte, Romanos, Atos…",
+    "en": "E.g.: the Sermon on the Mount, Romans, Acts…",
+    "es": "Ej.: el Sermón del Monte, Romanos, Hechos…"
+  },
+  "suggestionHintVidaCrista": {
+    "pt": "Ex.: oração, jejum, a história da igreja…",
+    "en": "E.g.: prayer, fasting, church history…",
+    "es": "Ej.: oración, ayuno, la historia de la iglesia…"
+  },
+  "suggestionHintTeologia": {
+    "pt": "Ex.: Trindade, hermenêutica, hebraico…",
+    "en": "E.g.: the Trinity, hermeneutics, Hebrew…",
+    "es": "Ej.: Trinidad, hermenéutica, hebreo…"
+  },
+  "suggestionHintOther": {
+    "pt": "Ex.: um tema, um livro ou uma pergunta que ainda falta…",
+    "en": "E.g.: a topic, a book or a question that's still missing…",
+    "es": "Ej.: un tema, un libro o una pregunta que aún falta…"
+  },
+  "suggestionSendError": {
+    "pt": "Não foi possível enviar. Tente de novo.",
+    "en": "Couldn't send. Try again.",
+    "es": "No se pudo enviar. Inténtalo de nuevo."
+  },
+  "suggestionSignInToSend": {
+    "pt": "Entre para enviar a sugestão.",
+    "en": "Sign in to send the suggestion.",
+    "es": "Inicia sesión para enviar la sugerencia."
+  },
+  "suggestionSending": {
+    "pt": "Enviando…",
+    "en": "Sending…",
+    "es": "Enviando…"
+  },
+  "suggestionSend": {
+    "pt": "Enviar sugestão",
+    "en": "Send suggestion",
+    "es": "Enviar sugerencia"
+  },
+  "suggestionTrailSent": {
+    "pt": "Sugestão enviada. Obrigado.",
+    "en": "Suggestion sent. Thank you.",
+    "es": "Sugerencia enviada. Gracias."
+  },
+  "suggestionAuthorSent": {
+    "pt": "Sugestão enviada. Obrigado por indicar o autor.",
+    "en": "Suggestion sent. Thanks for recommending the author.",
+    "es": "Sugerencia enviada. Gracias por recomendar al autor."
+  },
+  "suggestionAuthorTitle": {
+    "pt": "Sugerir um autor",
+    "en": "Suggest an author",
+    "es": "Sugerir un autor"
+  },
+  "suggestionAuthorSubtitle": {
+    "pt": "Quem ainda falta no mapa?",
+    "en": "Who's still missing from the map?",
+    "es": "¿Quién falta todavía en el mapa?"
+  },
+  "suggestionAuthorName": {
+    "pt": "Nome",
+    "en": "Name",
+    "es": "Nombre"
+  },
+  "suggestionAuthorNameHint": {
+    "pt": "Como a pessoa se apresenta",
+    "en": "How the person introduces themselves",
+    "es": "Cómo se presenta la persona"
+  },
+  "suggestionAuthorPhone": {
+    "pt": "Telefone",
+    "en": "Phone",
+    "es": "Teléfono"
+  },
+  "suggestionAuthorEmail": {
+    "pt": "E-mail",
+    "en": "Email",
+    "es": "Correo"
+  },
+  "suggestionAuthorEmailHint": {
+    "pt": "nome@email.com",
+    "en": "name@email.com",
+    "es": "nombre@email.com"
+  },
+  "suggestionAuthorInstagramHint": {
+    "pt": "@usuario",
+    "en": "@username",
+    "es": "@usuario"
+  },
+  "suggestionAuthorHintName": {
+    "pt": "Escreva o nome — pelo menos 2 letras.",
+    "en": "Write the name — at least 2 letters.",
+    "es": "Escribe el nombre — al menos 2 letras."
+  },
+  "suggestionAuthorHintPhone": {
+    "pt": "Confira o telefone, com DDD.",
+    "en": "Check the phone number, with area code.",
+    "es": "Revisa el teléfono, con código de área."
+  },
+  "suggestionAuthorHintEmail": {
+    "pt": "Confira o e-mail.",
+    "en": "Check the email.",
+    "es": "Revisa el correo."
+  },
+  "suggestionAuthorHintInstagram": {
+    "pt": "Confira o Instagram.",
+    "en": "Check the Instagram.",
+    "es": "Revisa el Instagram."
+  },
+  "suggestionAuthorHintContact": {
+    "pt": "Informe telefone, e-mail ou Instagram.",
+    "en": "Add a phone, email or Instagram.",
+    "es": "Indica teléfono, correo o Instagram."
+  }
+}

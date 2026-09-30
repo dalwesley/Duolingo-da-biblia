@@ -1,6 +1,11 @@
 /// Expande códigos morfológicos STEPBible / OpenScriptures (hebraico e grego).
 library;
 
+import '../l10n/l10n_global.dart';
+
+String _cap(String s) =>
+    s.isEmpty ? s : '${s[0].toUpperCase()}${s.substring(1)}';
+
 String expandMorphology(String? code) {
   if (code == null || code.trim().isEmpty) return '';
   final raw = code.trim();
@@ -27,7 +32,12 @@ String expandMorphology(String? code) {
 List<String> morphologyChips(String? code) {
   final expanded = expandMorphology(code);
   if (expanded.isEmpty) return const [];
-  const langs = {'hebraico', 'aramaico', 'grego'};
+  final l = L10n.current;
+  final langs = {
+    l.morphLangHebrew.toLowerCase(),
+    l.morphLangAramaic.toLowerCase(),
+    l.morphLangGreek.toLowerCase(),
+  };
   return expanded
       .split(RegExp(r'\s*[·,]\s*'))
       .map((s) => s.trim())
@@ -39,88 +49,112 @@ List<String> morphologyChips(String? code) {
 String morphologyPhrase(String? code, {String gloss = ''}) {
   final chips = morphologyChips(code);
   if (chips.isEmpty) return '';
+  final l = L10n.current;
   final pronoun = suffixPronounPt(code);
   final g = gloss.trim();
 
-  if (chips.contains('preposição')) {
+  if (chips.contains(l.morphPrep)) {
     if (pronoun != null) {
       return g.isNotEmpty
-          ? 'Preposição com sufixo — $g.'
-          : 'Preposição com sufixo pronominal.';
+          ? l.morphPhrasePrepSuffixGloss(g)
+          : l.morphPhrasePrepSuffix;
     }
-    return g.isNotEmpty ? 'Preposição — $g.' : 'Preposição.';
+    return g.isNotEmpty ? l.morphPhrasePrepGloss(g) : l.morphPhrasePrep;
   }
-  if (chips.contains('conjunção')) {
-    return g.isNotEmpty ? 'Conjunção — $g.' : 'Conjunção.';
+  if (chips.contains(l.morphConjunction)) {
+    return g.isNotEmpty ? l.morphPhraseConjGloss(g) : l.morphPhraseConj;
   }
-  if (chips.contains('verbo')) {
-    const stems = {
-      'qal',
-      'nifal',
-      'piel',
-      'pual',
-      'hifil',
-      'hofal',
-      'hitpael',
+  if (chips.contains(l.morphVerb)) {
+    final stems = {
+      l.morphStemQal,
+      l.morphStemNifal,
+      l.morphStemPiel,
+      l.morphStemPual,
+      l.morphStemHifil,
+      l.morphStemHofal,
+      l.morphStemHitpael,
     };
-    const tenses = {
-      'perfeito',
-      'imperfecto',
-      'coortativo',
-      'jussivo',
-      'imperativo',
-      'particípio',
-      'particípio passivo',
-      'infinitivo construto',
-      'infinitivo absoluto',
-      'sequencial imperfecto (wayyiqtol)',
-      'sequencial perfeito (weqatal)',
-      'presente',
-      'aoristo',
-      'futuro',
-      'imperfeito',
+    final tenses = {
+      l.morphTensePerfect,
+      l.morphTenseImperfectHeb,
+      l.morphTenseCohortative,
+      l.morphTenseJussive,
+      l.morphTenseImperative,
+      l.morphTenseParticiple,
+      l.morphTenseParticiplePassive,
+      l.morphTenseInfConstruct,
+      l.morphTenseInfAbsolute,
+      l.morphTenseWayyiqtol,
+      l.morphTenseWeqatal,
+      l.morphTensePresent,
+      l.morphTenseAorist,
+      l.morphTenseFuture,
+      l.morphTenseImperfectGk,
     };
-    final bits = <String>['Verbo'];
+    final bits = <String>[_cap(l.morphVerb)];
     for (final c in chips) {
       if (stems.contains(c) || tenses.contains(c)) bits.add(c);
     }
-    final person = chips.where((c) => c.contains('pessoa')).toList();
-    final number = chips.where((c) => c == 'sing.' || c == 'pl.' || c == 'dual');
+    final person = chips
+        .where((c) =>
+            c == l.morphPerson1 || c == l.morphPerson2 || c == l.morphPerson3)
+        .toList();
+    final number = chips.where(
+      (c) => c == l.morphSing || c == l.morphPl || c == l.morphDual,
+    );
     if (person.isNotEmpty) {
-      final n = number.isEmpty
-          ? ''
-          : ' do ${number.first == 'sing.' ? 'singular' : number.first == 'pl.' ? 'plural' : 'dual'}';
-      bits.add('${person.first}$n');
+      if (number.isEmpty) {
+        bits.add(person.first);
+      } else {
+        final label = number.first == l.morphSing
+            ? l.morphNumberSingular
+            : number.first == l.morphPl
+                ? l.morphNumberPlural
+                : l.morphNumberDual;
+        bits.add(l.morphPhrasePersonOfNumber(person.first, label));
+      }
     }
-    var s = bits.join(', ');
-    if (g.isNotEmpty) s = '$s — $g';
-    return '$s.';
+    final s = bits.join(', ');
+    return g.isNotEmpty
+        ? l.morphPhraseVerbBits(s, g)
+        : l.morphPhraseVerbBitsPlain(s);
   }
-  if (chips.contains('substantivo')) {
-    final bits = <String>['Substantivo'];
-    if (chips.contains('próprio')) bits.add('próprio');
-    if (chips.contains('nome divino')) bits.add('nome divino');
-    if (chips.contains('masc.')) bits.add('masculino');
-    if (chips.contains('fem.')) bits.add('feminino');
-    if (chips.contains('sing.')) bits.add('singular');
-    if (chips.contains('pl.')) bits.add('plural');
-    if (chips.contains('absoluto')) bits.add('absoluto');
-    if (chips.contains('construto')) bits.add('em construto');
-    var s = bits.join(', ');
-    if (g.isNotEmpty) s = '$s — $g';
-    return '$s.';
+  if (chips.contains(l.morphNoun)) {
+    final bits = <String>[_cap(l.morphNoun)];
+    if (chips.contains(l.morphNounProper)) bits.add(l.morphNounProper);
+    if (chips.contains(l.morphDivineName)) bits.add(l.morphDivineName);
+    if (chips.contains(l.morphMasc)) bits.add(_genderWord(l.morphMasc));
+    if (chips.contains(l.morphFem)) bits.add(_genderWord(l.morphFem));
+    if (chips.contains(l.morphSing)) bits.add(l.morphNumberSingular);
+    if (chips.contains(l.morphPl)) bits.add(l.morphNumberPlural);
+    if (chips.contains(l.morphAbsolute)) bits.add(l.morphAbsolute);
+    if (chips.contains(l.morphConstruct)) bits.add(l.morphInConstruct);
+    final s = bits.join(', ');
+    return g.isNotEmpty
+        ? l.morphPhraseVerbBits(s, g)
+        : l.morphPhraseVerbBitsPlain(s);
   }
-  final head = chips.first;
-  final titled = '${head[0].toUpperCase()}${head.substring(1)}';
-  return g.isNotEmpty ? '$titled — $g.' : '$titled.';
+  final titled = _cap(chips.first);
+  return g.isNotEmpty
+      ? l.morphPhraseHeadGloss(titled, g)
+      : l.morphPhraseHead(titled);
+}
+
+/// "masc." → "masculino" / "masculine" for phrase prose.
+String _genderWord(String chip) {
+  final l = L10n.current;
+  if (chip == l.morphMasc) return l.morphGenderMasculine;
+  if (chip == l.morphFem) return l.morphGenderFeminine;
+  return chip;
 }
 
 String _hebrew(String code) {
+  final l = L10n.current;
   // Exemplos: HVqp3ms, HNcmpa, HTd, HR, HTo, Hc, HD, HAcmsc
   final parts = <String>[];
   var i = 0;
   if (code.startsWith('H') || code.startsWith('A')) {
-    parts.add(code[0] == 'A' ? 'aramaico' : 'hebraico');
+    parts.add(code[0] == 'A' ? l.morphLangAramaic : l.morphLangHebrew);
     i = 1;
   }
   if (i >= code.length) return parts.join(', ');
@@ -128,19 +162,19 @@ String _hebrew(String code) {
   final rest = code.substring(i);
 
   // Partículas / classes curtas
-  const short = {
-    'R': 'preposição',
-    'Td': 'artigo',
-    'To': 'marcador de objeto',
-    'c': 'conjunção consecut./conj.',
-    'C': 'conjunção',
-    'D': 'advérbio',
-    'S': 'sufixo pronominal',
-    'i': 'interjeição',
-    'r': 'partícula relativa',
-    'n': 'partícula negativa',
-    'p': 'partícula',
-    'Te': 'artigo demonstrativo',
+  final short = {
+    'R': l.morphPrep,
+    'Td': l.morphArticle,
+    'To': l.morphObjectMarker,
+    'c': l.morphConjConsecutive,
+    'C': l.morphConjunction,
+    'D': l.morphAdverb,
+    'S': l.morphPronominalSuffix,
+    'i': l.morphInterjection,
+    'r': l.morphRelativeParticle,
+    'n': l.morphNegativeParticle,
+    'p': l.morphParticle,
+    'Te': l.morphDemonstrativeArticle,
   };
   if (short.containsKey(rest)) {
     parts.add(short[rest]!);
@@ -148,38 +182,38 @@ String _hebrew(String code) {
   }
 
   if (rest.startsWith('V')) {
-    parts.add('verbo');
+    parts.add(l.morphVerb);
     var j = 1;
     // stem
-    const stems = {
-      'q': 'qal',
-      'N': 'nifal',
-      'p': 'piel',
-      'P': 'pual',
-      'h': 'hifil',
-      'H': 'hofal',
-      't': 'hitpael',
-      'o': 'polal',
-      'O': 'polal',
-      'u': 'pulal',
+    final stems = {
+      'q': l.morphStemQal,
+      'N': l.morphStemNifal,
+      'p': l.morphStemPiel,
+      'P': l.morphStemPual,
+      'h': l.morphStemHifil,
+      'H': l.morphStemHofal,
+      't': l.morphStemHitpael,
+      'o': l.morphStemPolal,
+      'O': l.morphStemPolal,
+      'u': l.morphStemPulal,
     };
     if (j < rest.length && stems.containsKey(rest[j])) {
       parts.add(stems[rest[j]]!);
       j++;
     }
     // tense
-    const tenses = {
-      'p': 'perfeito',
-      'q': 'sequencial imperfecto (wayyiqtol)',
-      'i': 'imperfecto',
-      'w': 'sequencial perfeito (weqatal)',
-      'h': 'coortativo',
-      'j': 'jussivo',
-      'v': 'imperativo',
-      'c': 'infinitivo construto',
-      'a': 'infinitivo absoluto',
-      'r': 'particípio',
-      's': 'particípio passivo',
+    final tenses = {
+      'p': l.morphTensePerfect,
+      'q': l.morphTenseWayyiqtol,
+      'i': l.morphTenseImperfectHeb,
+      'w': l.morphTenseWeqatal,
+      'h': l.morphTenseCohortative,
+      'j': l.morphTenseJussive,
+      'v': l.morphTenseImperative,
+      'c': l.morphTenseInfConstruct,
+      'a': l.morphTenseInfAbsolute,
+      'r': l.morphTenseParticiple,
+      's': l.morphTenseParticiplePassive,
     };
     if (j < rest.length && tenses.containsKey(rest[j])) {
       parts.add(tenses[rest[j]]!);
@@ -190,16 +224,16 @@ String _hebrew(String code) {
   }
 
   if (rest.startsWith('N')) {
-    parts.add('substantivo');
+    parts.add(l.morphNoun);
     var j = 1;
     if (j < rest.length) {
       final cls = rest[j];
       final next = j + 1 < rest.length ? rest[j + 1] : '';
-      const nounClass = {
-        'c': 'comum',
-        'g': 'gentílico',
-        'p': 'próprio',
-        't': 'título',
+      final nounClass = {
+        'c': l.morphNounCommon,
+        'g': l.morphNounGentilic,
+        'p': l.morphNounProper,
+        't': l.morphNounTitle,
       };
       var takeClass = false;
       if (cls == 'p') {
@@ -214,11 +248,11 @@ String _hebrew(String code) {
         }
         j++;
         if (cls == 'p') {
-          const proper = {
-            'm': 'masc.',
-            'f': 'fem.',
-            'l': 'lugar',
-            't': 'nome divino',
+          final proper = {
+            'm': l.morphMasc,
+            'f': l.morphFem,
+            'l': l.morphNounPlace,
+            't': l.morphDivineName,
           };
           if (j < rest.length && proper.containsKey(rest[j])) {
             parts.add(proper[rest[j]]!);
@@ -228,21 +262,34 @@ String _hebrew(String code) {
       }
     }
     if (j < rest.length) {
-      const gender = {'m': 'masc.', 'f': 'fem.', 'c': 'comum', 'b': 'ambos'};
+      final gender = {
+        'm': l.morphMasc,
+        'f': l.morphFem,
+        'c': l.morphNounCommon,
+        'b': l.morphBoth,
+      };
       if (gender.containsKey(rest[j])) {
         parts.add(gender[rest[j]]!);
         j++;
       }
     }
     if (j < rest.length) {
-      const number = {'s': 'sing.', 'p': 'pl.', 'd': 'dual'};
+      final number = {
+        's': l.morphSing,
+        'p': l.morphPl,
+        'd': l.morphDual,
+      };
       if (number.containsKey(rest[j])) {
         parts.add(number[rest[j]]!);
         j++;
       }
     }
     if (j < rest.length) {
-      const state = {'a': 'absoluto', 'c': 'construto', 'd': 'determinado'};
+      final state = {
+        'a': l.morphAbsolute,
+        'c': l.morphConstruct,
+        'd': l.morphDetermined,
+      };
       if (state.containsKey(rest[j])) {
         parts.add(state[rest[j]]!);
         j++;
@@ -252,13 +299,13 @@ String _hebrew(String code) {
   }
 
   if (rest.startsWith('S')) {
-    parts.add('sufixo');
+    parts.add(l.morphSuffix);
     var j = 1;
-    const suffixKind = {
-      'p': 'pronominal',
-      'd': 'direcional',
-      'h': 'paragógico',
-      'n': 'nun paragógico',
+    final suffixKind = {
+      'p': l.morphSuffixPronominal,
+      'd': l.morphSuffixDirectional,
+      'h': l.morphSuffixParagogic,
+      'n': l.morphSuffixNunParagogic,
     };
     if (j < rest.length && suffixKind.containsKey(rest[j])) {
       parts.add(suffixKind[rest[j]]!);
@@ -269,13 +316,13 @@ String _hebrew(String code) {
   }
 
   if (rest.startsWith('A')) {
-    parts.add('adjetivo');
+    parts.add(l.morphAdjective);
     _personNumberGender(rest.substring(1), parts);
     return parts.join(', ');
   }
 
   if (rest.startsWith('Ac')) {
-    parts.add('advérbio/conj. (ac)');
+    parts.add(l.morphAdverbConjAc);
     return parts.join(', ');
   }
 
@@ -284,6 +331,7 @@ String _hebrew(String code) {
 }
 
 /// Pronome sufixado em português curto (לְךָ → "ti").
+/// Mantido em PT: glosas e versos TB ficam em português.
 String? suffixPronounPt(String? morph) {
   if (morph == null || morph.isEmpty) return null;
   final m = RegExp(
@@ -322,43 +370,57 @@ String attachSuffixGloss(String gloss, String morph) {
 }
 
 void _personNumberGender(String s, List<String> parts) {
+  final l = L10n.current;
   // 3ms, 1cs, 2mp, …
   final m = RegExp(r'^([123])?([mfc])?([spd])?').firstMatch(s);
   if (m == null) return;
-  const person = {'1': '1ª pessoa', '2': '2ª pessoa', '3': '3ª pessoa'};
-  const gender = {'m': 'masc.', 'f': 'fem.', 'c': 'comum'};
-  const number = {'s': 'sing.', 'p': 'pl.', 'd': 'dual'};
+  final person = {
+    '1': l.morphPerson1,
+    '2': l.morphPerson2,
+    '3': l.morphPerson3,
+  };
+  final gender = {
+    'm': l.morphMasc,
+    'f': l.morphFem,
+    'c': l.morphNounCommon,
+  };
+  final number = {
+    's': l.morphSing,
+    'p': l.morphPl,
+    'd': l.morphDual,
+  };
   if (m.group(1) != null) parts.add(person[m.group(1)]!);
   if (m.group(2) != null) parts.add(gender[m.group(2)]!);
   if (m.group(3) != null) parts.add(number[m.group(3)]!);
 }
 
 String _greek(String code) {
+  final l = L10n.current;
   // N-NSF, V-AAI-3S, A-NSM, PREP, CONJ, T-NSM, P-NSM, …
   final parts = <String>[];
   final segs = code.split('-');
   if (segs.isEmpty) return code;
 
-  const pos = {
-    'N': 'substantivo',
-    'V': 'verbo',
-    'A': 'adjetivo',
-    'ADV': 'advérbio',
-    'PREP': 'preposição',
-    'CONJ': 'conjunção',
-    'PRT': 'partícula',
-    'INJ': 'interjeição',
-    'I': 'interjeição',
-    'T': 'artigo',
-    'P': 'pronome pessoal',
-    'R': 'pronome relativo',
-    'C': 'pronome reciproc./correl.',
-    'D': 'pronome demonstrativo',
-    'K': 'conjunção',
-    'X': 'partícula',
-    'Q': 'partícula interrogativa',
-    'F': 'pronome reflexivo',
-    'S': 'pronome possessivo',
+  final pos = {
+    'N': l.morphNoun,
+    'V': l.morphVerb,
+    'A': l.morphAdjective,
+    'ADV': l.morphAdverb,
+    'PREP': l.morphPrep,
+    'CONJ': l.morphConjunction,
+    'PRT': l.morphParticle,
+    'INJ': l.morphInterjection,
+    'I': l.morphInterjection,
+    'T': l.morphArticle,
+    'P': l.morphPronounPersonal,
+    'R': l.morphPronounRelative,
+    'C': l.morphPronounReciprocal,
+    'D': l.morphPronounDemonstrative,
+    'K': l.morphConjunction,
+    'X': l.morphParticle,
+    'Q': l.morphParticleInterrogative,
+    'F': l.morphPronounReflexive,
+    'S': l.morphPronounPossessive,
   };
 
   final head = segs.first;
@@ -369,33 +431,33 @@ String _greek(String code) {
   if (head == 'V' && segs.length >= 2) {
     final morph = segs[1];
     if (morph.length >= 3) {
-      const tense = {
-        'P': 'presente',
-        'I': 'imperfeito',
-        'F': 'futuro',
-        'A': 'aoristo',
-        'R': 'perfeito',
-        'L': 'mais-que-perfeito',
-        'X': 'tempo indefinido',
-        '2': '2º aoristo/futuro',
+      final tense = {
+        'P': l.morphTensePresent,
+        'I': l.morphTenseImperfectGk,
+        'F': l.morphTenseFuture,
+        'A': l.morphTenseAorist,
+        'R': l.morphTensePerfect,
+        'L': l.morphTensePluperfect,
+        'X': l.morphTenseUndefined,
+        '2': l.morphTenseSecondAorist,
       };
-      const voice = {
-        'A': 'ativa',
-        'M': 'média',
-        'P': 'passiva',
-        'E': 'médio-passiva',
-        'D': 'média deponente',
-        'O': 'passiva deponente',
-        'N': 'médio-passiva deponente',
-        'Q': 'impessoal',
+      final voice = {
+        'A': l.morphVoiceActive,
+        'M': l.morphVoiceMiddle,
+        'P': l.morphVoicePassive,
+        'E': l.morphVoiceMiddlePassive,
+        'D': l.morphVoiceMiddleDeponent,
+        'O': l.morphVoicePassiveDeponent,
+        'N': l.morphVoiceMidPassDeponent,
+        'Q': l.morphVoiceImpersonal,
       };
-      const mood = {
-        'I': 'indicativo',
-        'S': 'subjuntivo',
-        'O': 'optativo',
-        'M': 'imperativo',
-        'N': 'infinitivo',
-        'P': 'particípio',
+      final mood = {
+        'I': l.morphMoodIndicative,
+        'S': l.morphMoodSubjunctive,
+        'O': l.morphMoodOptative,
+        'M': l.morphMoodImperative,
+        'N': l.morphMoodInfinitive,
+        'P': l.morphMoodParticiple,
       };
       parts.add(tense[morph[0]] ?? morph[0]);
       parts.add(voice[morph[1]] ?? morph[1]);
@@ -416,35 +478,50 @@ String _greek(String code) {
     parts.add(_greekCng(segs[1]));
   }
   if (segs.length >= 3) {
-    const extra = {'P': 'nome próprio', 'T': 'título', 'L': 'local', 'G': 'gentílico'};
+    final extra = {
+      'P': l.morphExtraProper,
+      'T': l.morphExtraTitle,
+      'L': l.morphExtraLocal,
+      'G': l.morphExtraGentilic,
+    };
     parts.add(extra[segs[2]] ?? segs[2]);
   }
   return parts.where((e) => e.isNotEmpty).join(', ');
 }
 
 String _greekPerson(String s) {
-  const map = {
-    '1S': '1ª sing.',
-    '2S': '2ª sing.',
-    '3S': '3ª sing.',
-    '1P': '1ª pl.',
-    '2P': '2ª pl.',
-    '3P': '3ª pl.',
+  final l = L10n.current;
+  final map = {
+    '1S': l.morphPerson1s,
+    '2S': l.morphPerson2s,
+    '3S': l.morphPerson3s,
+    '1P': l.morphPerson1p,
+    '2P': l.morphPerson2p,
+    '3P': l.morphPerson3p,
   };
   return map[s] ?? s;
 }
 
 String _greekCng(String s) {
   if (s.length < 3) return s;
-  const cases = {
-    'N': 'nominativo',
-    'G': 'genitivo',
-    'D': 'dativo',
-    'A': 'acusativo',
-    'V': 'vocativo',
+  final l = L10n.current;
+  final cases = {
+    'N': l.morphCaseNominative,
+    'G': l.morphCaseGenitive,
+    'D': l.morphCaseDative,
+    'A': l.morphCaseAccusative,
+    'V': l.morphCaseVocative,
   };
-  const number = {'S': 'sing.', 'P': 'pl.', 'D': 'dual'};
-  const gender = {'M': 'masc.', 'F': 'fem.', 'N': 'neutro'};
+  final number = {
+    'S': l.morphSing,
+    'P': l.morphPl,
+    'D': l.morphDual,
+  };
+  final gender = {
+    'M': l.morphMasc,
+    'F': l.morphFem,
+    'N': l.morphNeuter,
+  };
   final out = <String>[];
   out.add(cases[s[0]] ?? s[0]);
   out.add(number[s[1]] ?? s[1]);

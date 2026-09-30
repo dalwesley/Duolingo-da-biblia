@@ -3,6 +3,12 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
+import 'l10n/app_language.dart';
+import 'l10n/bible_intro_overlay.dart';
+import 'l10n/content_overlay.dart';
+import 'l10n/l10n_global.dart';
+import 'l10n/question_overlay.dart';
+import 'l10n/study_overlay.dart';
 import 'screens/lesson_screen.dart';
 import 'screens/splash_screen.dart';
 import 'services/backend_service.dart';
@@ -40,6 +46,10 @@ void main() {
   unawaited(HomeWidgetService.init());
   unawaited(InviteDeepLinkService.instance.init());
   unawaited(ContentCatalogService.instance.ensureLoaded());
+  unawaited(ContentOverlay.instance.ensureLoaded());
+  unawaited(BibleIntroOverlay.instance.ensureLoaded());
+  unawaited(QuestionOverlay.instance.ensureLoaded());
+  unawaited(StudyOverlay.instance.ensureLoaded());
 }
 
 class TrilhaApp extends StatelessWidget {
@@ -124,14 +134,21 @@ class TrilhaApp extends StatelessWidget {
             (ProgressService p) => p.settings.fontScale,
           );
           final sound = context.select((ProgressService p) => p.settings.sound);
+          final language = context.select(
+            (ProgressService p) => p.settings.language,
+          );
           SoundService.instance.setEnabled(sound);
           return MaterialApp(
-            title: 'STWAY',
+            title: 'Stway',
             debugShowCheckedModeBanner: false,
+            locale: language.locale,
+            supportedLocales: AppLocalizations.supportedLocales,
+            localizationsDelegates: AppLocalizations.localizationsDelegates,
             theme: AppTheme.dark,
             darkTheme: AppTheme.dark,
             themeMode: ThemeMode.dark,
             builder: (context, child) {
+              L10n.setLocale(Localizations.localeOf(context));
               // Fundo estável atrás das rotas — evita flash do window nativo.
               return ColoredBox(
                 color: AppColors.night,

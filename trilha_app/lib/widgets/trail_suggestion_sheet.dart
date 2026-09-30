@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../l10n/app_language.dart';
 import '../services/backend_service.dart';
 import '../services/trail_suggestion_service.dart';
 import '../theme/app_theme.dart';
@@ -67,8 +68,8 @@ class _TrailSuggestionSheetState extends State<_TrailSuggestionSheet> {
       setState(() {
         _sending = false;
         _error = backend.isActive
-            ? 'Não foi possível enviar. Tente de novo.'
-            : 'Entre para enviar a sugestão.';
+            ? context.l10n.suggestionSendError
+            : context.l10n.suggestionSignInToSend;
       });
       return;
     }
@@ -89,10 +90,10 @@ class _TrailSuggestionSheetState extends State<_TrailSuggestionSheet> {
     final hasText = TrailSuggestionService.isValidText(_textCtrl.text);
     if (hasRealm && hasText) return '';
     if (!hasRealm && !hasText) {
-      return 'Escolha um caminho e descreva a trilha.';
+      return context.l10n.suggestionTrailHintBoth;
     }
-    if (!hasRealm) return 'Escolha onde essa trilha encaixa.';
-    return 'Escreva a trilha — pelo menos 4 letras.';
+    if (!hasRealm) return context.l10n.suggestionTrailHintRealm;
+    return context.l10n.suggestionTrailHintText;
   }
 
   @override
@@ -127,12 +128,12 @@ class _TrailSuggestionSheetState extends State<_TrailSuggestionSheet> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Sugerir uma trilha',
+                        context.l10n.suggestionTrailTitle,
                         style: AppTypography.title(size: 18, color: a.text),
                       ),
                       const SizedBox(height: 2),
                       Text(
-                        'O que ainda falta no mapa?',
+                        context.l10n.suggestionTrailSubtitle,
                         style: AppTypography.body(
                           size: 13,
                           color: a.textSecondary,
@@ -153,7 +154,7 @@ class _TrailSuggestionSheetState extends State<_TrailSuggestionSheet> {
               ],
             ),
             const SizedBox(height: 18),
-            const SectionLabel('Onde encaixa'),
+            SectionLabel(context.l10n.suggestionTrailRealmLabel),
             const SizedBox(height: 10),
             for (var i = 0; i < ranked.length; i += 2) ...[
               Row(
@@ -183,7 +184,7 @@ class _TrailSuggestionSheetState extends State<_TrailSuggestionSheet> {
               onTap: () => _pickRealm(outros),
             ),
             const SizedBox(height: 18),
-            const SectionLabel('A trilha'),
+            SectionLabel(context.l10n.suggestionTrailTextLabel),
             const SizedBox(height: 10),
             TextField(
               controller: _textCtrl,
@@ -200,7 +201,7 @@ class _TrailSuggestionSheetState extends State<_TrailSuggestionSheet> {
               onChanged: (_) => setState(() {}),
               decoration: InputDecoration(
                 hintText:
-                    _realm?.hint ?? 'Escolha um caminho e descreva a trilha…',
+                    _realm?.hint ?? context.l10n.suggestionTrailPlaceholder,
                 hintStyle: AppTypography.body(size: 14, color: a.textFaint),
                 filled: true,
                 fillColor: a.text.withValues(alpha: 0.04),
@@ -237,7 +238,9 @@ class _TrailSuggestionSheetState extends State<_TrailSuggestionSheet> {
             ] else
               const SizedBox(height: 4),
             CopperCta(
-              label: _sending ? 'Enviando…' : 'Enviar sugestão',
+              label: _sending
+                  ? context.l10n.suggestionSending
+                  : context.l10n.suggestionSend,
               trailing: CinematicGlyph.spark,
               busy: _sending,
               onTap: canSend ? _submit : null,

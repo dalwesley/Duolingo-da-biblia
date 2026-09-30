@@ -2,11 +2,13 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:intl/intl.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../data/trail_repository.dart';
+import '../l10n/app_language.dart';
 import '../services/app_update_service.dart';
 import '../services/backend_service.dart';
 import '../services/bible_service.dart';
@@ -64,8 +66,8 @@ void openSettings(BuildContext context) {
                   inline: true,
                   immersive: true,
                   dark: appearance.onDark,
-                  title: 'Ajustes',
-                  subtitle: 'Como você caminha',
+                  title: context.l10n.settingsTitle,
+                  subtitle: context.l10n.settingsSubtitle,
                   leadingGlyph: CinematicGlyph.tune,
                   chromeAccent: AppColors.slate,
                   onBack: () => Navigator.pop(ctx),
@@ -135,15 +137,14 @@ class _SettingsScreenState extends State<SettingsScreen>
       if (!mounted) return;
       final msg = !status.remoteReachable
           ? status.message
-          : 'Você está na versão mais recente · ${status.localLabel}';
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(
-            msg,
-            style: AppTypography.body(size: 13, color: Colors.white),
-          ),
-          backgroundColor: AppColors.nightElevated,
-        ),
+          : context.l10n.settingsUpToDate(status.localLabel);
+      showAppToastFor(
+        context,
+        message: msg,
+        glyph: status.remoteReachable
+            ? CinematicGlyph.check
+            : CinematicGlyph.wrong,
+        tone: status.remoteReachable ? AppToastTone.accent : AppToastTone.warn,
       );
     } finally {
       if (mounted) setState(() => _checkingUpdate = false);
@@ -228,22 +229,22 @@ class _SettingsScreenState extends State<SettingsScreen>
         _reveal(0, _passportCard(progress, a)),
 
         // Sua jornada — como você estuda e em que ritmo.
-        _reveal(1, _groupLabel(a, 'Sua jornada')),
+        _reveal(1, _groupLabel(a, context.l10n.settingsGroupProgress)),
         _reveal(2, _studyModeCard(progress, a)),
         const SizedBox(height: AppSpace.md),
         _reveal(
           3,
           _groupedCard(
             a,
-            title: 'Ritmo diário',
-            subtitle: 'Quantas cenas cabem no seu dia.',
+            title: context.l10n.settingsRhythmTitle,
+            subtitle: context.l10n.settingsRhythmSubtitle,
             tint: _SettingsSection.jornada.tint,
             children: [
               _RhythmPath(progress: progress),
               const _SettingsDivider(),
-              _fieldLabel(a, 'Compromisso de sequência'),
+              _fieldLabel(a, context.l10n.settingsStreakGoalLabel),
               const SizedBox(height: AppSpace.xs),
-              _fieldHint(a, 'Até quantos dias você quer levar sua sequência.'),
+              _fieldHint(a, context.l10n.settingsStreakGoalHint),
               const SizedBox(height: AppSpace.md),
               _streakGoalPicker(progress),
             ],
@@ -251,7 +252,7 @@ class _SettingsScreenState extends State<SettingsScreen>
         ),
 
         // Neste aparelho — o que se vê e o que se ouve.
-        _reveal(4, _groupLabel(a, 'Neste aparelho')),
+        _reveal(4, _groupLabel(a, context.l10n.settingsGroupDevice)),
         _reveal(
           5,
           KeyedSubtree(
@@ -259,6 +260,8 @@ class _SettingsScreenState extends State<SettingsScreen>
             child: _appearanceCard(progress, a),
           ),
         ),
+        const SizedBox(height: AppSpace.md),
+        _reveal(6, _languageCard(progress, a)),
         const SizedBox(height: AppSpace.md),
         _reveal(
           6,
@@ -269,7 +272,7 @@ class _SettingsScreenState extends State<SettingsScreen>
         ),
 
         // Conta e dados — backup, sair e resetar num lugar só.
-        _reveal(7, _groupLabel(a, 'Conta e dados')),
+        _reveal(7, _groupLabel(a, context.l10n.settingsGroupAccountData)),
         _reveal(
           8,
           KeyedSubtree(
@@ -291,15 +294,15 @@ class _SettingsScreenState extends State<SettingsScreen>
     final on = progress.settings.notifications;
     return _groupedCard(
       a,
-      title: 'Lembretes',
+      title: context.l10n.settingsRemindersTitle,
       tint: tint,
       children: [
         _toggle(
           a,
-          'Lembrete diário',
+          context.l10n.settingsDailyReminder,
           on
-              ? 'Às ${progress.settings.reminderHour}h · toque para mudar'
-              : 'Desligado',
+              ? context.l10n.settingsReminderAt(progress.settings.reminderHour)
+              : context.l10n.commonOff,
           on,
           (v) =>
               v ? _pickReminderHour(progress) : _setReminder(progress, false),
@@ -310,8 +313,8 @@ class _SettingsScreenState extends State<SettingsScreen>
         const _SettingsDivider(compact: true),
         _toggle(
           a,
-          'Sons',
-          'Efeitos nas cenas',
+          context.l10n.settingsSounds,
+          context.l10n.settingsSoundsSubtitle,
           progress.settings.sound,
           (v) {
             ActHaptics.tap();
@@ -320,6 +323,37 @@ class _SettingsScreenState extends State<SettingsScreen>
           },
           glyph: CinematicGlyph.echo,
           accent: AppColors.accent,
+        ),
+      ],
+    );
+  }
+
+  /// Idioma da interface. O conteúdo (trilhas, Bíblia) ainda é só pt-BR.
+  Widget _languageCard(ProgressService progress, AppearanceStyle a) {
+    final l10n = context.l10n;
+    final current = progress.settings.language;
+    return _groupedCard(
+      a,
+      title: l10n.languageTitle,
+      subtitle: l10n.languageHint,
+      children: [
+        _SegmentTrack(
+          semanticsLabel: l10n.languageTitle,
+          items: [
+            for (final lang in AppLanguage.values)
+              (
+                label: lang.label(l10n),
+                caption: null,
+                selected: current == lang,
+                onTap: () {
+                  if (current == lang) return;
+                  ActHaptics.tap();
+                  progress.updateSettings(
+                    progress.settings.copyWith(language: lang),
+                  );
+                },
+              ),
+          ],
         ),
       ],
     );
@@ -345,11 +379,9 @@ class _SettingsScreenState extends State<SettingsScreen>
 
   String _shortDate(DateTime dt) {
     final local = dt.toLocal();
-    final d = local.day.toString().padLeft(2, '0');
-    final m = local.month.toString().padLeft(2, '0');
-    final h = local.hour.toString().padLeft(2, '0');
-    final min = local.minute.toString().padLeft(2, '0');
-    return '$d/$m/${local.year} · $h:$min';
+    final tag = Localizations.localeOf(context).toLanguageTag();
+    return '${DateFormat.yMd(tag).format(local)} · '
+        '${DateFormat.Hm(tag).format(local)}';
   }
 
   Widget _fieldLabel(AppearanceStyle a, String title) {
@@ -369,11 +401,11 @@ class _SettingsScreenState extends State<SettingsScreen>
   Widget _streakGoalPicker(ProgressService progress) {
     final current = progress.settings.streakGoal;
     return _SegmentTrack(
-      semanticsLabel: 'Compromisso de sequência',
+      semanticsLabel: context.l10n.settingsStreakGoalLabel,
       items: [
         for (final days in _streakGoals)
           (
-            label: '$days dias',
+            label: context.l10n.settingsDays(days),
             caption: null,
             selected: current == days,
             onTap: () {
@@ -395,18 +427,18 @@ class _SettingsScreenState extends State<SettingsScreen>
     ActHaptics.light();
   }
 
-  static const _fontSteps = <(double, String)>[
-    (0.9, 'Pequeno'),
-    (1.0, 'Médio'),
-    (1.15, 'Grande'),
-    (1.3, 'Extra'),
+  List<(double, String)> get _fontSteps => [
+    (0.9, context.l10n.settingsFontSmall),
+    (1.0, context.l10n.settingsFontMedium),
+    (1.15, context.l10n.settingsFontLarge),
+    (1.3, context.l10n.settingsFontExtra),
   ];
 
   /// Modo de estudo: o mesmo banner do mapa da trilha ([ModeBanner]).
   Widget _studyModeCard(ProgressService progress, AppearanceStyle a) {
     return ModeBanner(
       trailSlug: _genesisTrailSlug,
-      trailTitle: 'Gênesis 1–11 · o primeiro caminho',
+      trailTitle: context.l10n.settingsGenesisTitle,
       missionSlugs: _genesisMissionSlugs,
     );
   }
@@ -416,18 +448,18 @@ class _SettingsScreenState extends State<SettingsScreen>
     final tint = _SettingsSection.aparencia.tint;
     return _groupedCard(
       a,
-      title: 'Aparência',
+      title: context.l10n.settingsAppearanceTitle,
       tint: tint,
       children: [
-        _fieldLabel(a, 'Céu'),
+        _fieldLabel(a, context.l10n.settingsThemeLabel),
         const SizedBox(height: AppSpace.xs),
-        _fieldHint(a, 'Um céu fixo, ou deixe seguir o horário do dia.'),
+        _fieldHint(a, context.l10n.settingsThemeHint),
         const SizedBox(height: AppSpace.md),
         _skyPicker(progress),
         const _SettingsDivider(),
-        _fieldLabel(a, 'Tamanho do texto'),
+        _fieldLabel(a, context.l10n.settingsTextSize),
         const SizedBox(height: AppSpace.xs),
-        _fieldHint(a, 'O versículo abaixo muda junto.'),
+        _fieldHint(a, context.l10n.settingsTextSizeHint),
         const SizedBox(height: AppSpace.md),
         _fontScalePicker(progress),
         const SizedBox(height: AppSpace.md),
@@ -558,11 +590,11 @@ class _SettingsScreenState extends State<SettingsScreen>
   }
 
   Widget _fontScalePicker(ProgressService progress) {
-    const steps = _fontSteps;
+    final steps = _fontSteps;
     final current = progress.settings.fontScale;
 
     return _SegmentTrack(
-      semanticsLabel: 'Tamanho do texto',
+      semanticsLabel: context.l10n.settingsTextSize,
       items: [
         for (final step in steps)
           (
@@ -605,10 +637,15 @@ class _SettingsScreenState extends State<SettingsScreen>
         children: [
           Row(
             children: [
-              const SectionLabel('Peregrino', color: AppColors.accent),
+              SectionLabel(
+                context.l10n.settingsAccount,
+                color: AppColors.accent,
+              ),
               const Spacer(),
               SoftBadge(
-                text: signedIn ? 'Na nuvem' : 'Só neste aparelho',
+                text: signedIn
+                    ? context.l10n.settingsInCloud
+                    : context.l10n.settingsDeviceOnly,
                 glyph: signedIn ? CinematicGlyph.check : CinematicGlyph.wrong,
                 accent: signedIn ? AppColors.teal : AppColors.coral,
               ),
@@ -648,8 +685,11 @@ class _SettingsScreenState extends State<SettingsScreen>
     final ok = await backend.signOutGoogle();
     if (!mounted) return;
     if (!ok) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(backend.lastError ?? 'Não foi possível sair')),
+      showAppToastFor(
+        context,
+        message: backend.lastError ?? context.l10n.settingsSignOutFailed,
+        glyph: CinematicGlyph.wrong,
+        tone: AppToastTone.warn,
       );
       return;
     }
@@ -690,7 +730,7 @@ class _SettingsScreenState extends State<SettingsScreen>
     final league = context.read<LeagueService>();
     final json = sync.exportJson(progress, league: league);
     await SharePlus.instance.share(
-      ShareParams(text: json, subject: 'Backup Stway'),
+      ShareParams(text: json, subject: context.l10n.settingsBackupSubject),
     );
     await sync.markSynced();
   }
@@ -705,10 +745,11 @@ class _SettingsScreenState extends State<SettingsScreen>
     final text = data?.text;
     if (text == null || text.isEmpty) {
       if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(
-            content: Text('Cole o backup na área de transferência primeiro'),
-          ),
+        showAppToastFor(
+          context,
+          message: context.l10n.settingsPasteBackupFirst,
+          glyph: CinematicGlyph.copy,
+          tone: AppToastTone.warn,
         );
       }
       return;
@@ -716,9 +757,12 @@ class _SettingsScreenState extends State<SettingsScreen>
     final parsed = sync.parseImport(text);
     if (parsed == null) {
       if (mounted) {
-        ScaffoldMessenger.of(
+        showAppToastFor(
           context,
-        ).showSnackBar(const SnackBar(content: Text('Backup inválido')));
+          message: context.l10n.settingsBackupInvalid,
+          glyph: CinematicGlyph.wrong,
+          tone: AppToastTone.warn,
+        );
       }
       return;
     }
@@ -729,9 +773,7 @@ class _SettingsScreenState extends State<SettingsScreen>
     await backend.saveNow(progress, LeagueService.weekKey(), league: league);
     await sync.markSynced();
     if (mounted) {
-      ScaffoldMessenger.of(
-        context,
-      ).showSnackBar(const SnackBar(content: Text('Progresso restaurado!')));
+      showAppToastFor(context, message: context.l10n.settingsProgressRestored);
     }
   }
 
@@ -880,15 +922,15 @@ class _SettingsScreenState extends State<SettingsScreen>
     final last = sync.lastSyncAt;
     return _groupedCard(
       a,
-      title: 'Conta',
+      title: context.l10n.settingsAccount,
       tint: tint,
       children: [
         _navRow(
           a,
-          'Backup manual',
+          context.l10n.settingsManualBackup,
           last == null
-              ? 'Exportar ou restaurar o seu caminho'
-              : 'Último · ${_shortDate(last)}',
+              ? context.l10n.settingsManualBackupSubtitle
+              : context.l10n.settingsLastShort(_shortDate(last)),
           glyph: CinematicGlyph.share,
           accent: tint,
           onTap: () => _openBackupSheet(sync),
@@ -897,8 +939,8 @@ class _SettingsScreenState extends State<SettingsScreen>
         if (backend.isSignedIn) ...[
           _navRow(
             a,
-            'Sair da conta',
-            'Limpa este aparelho · o caminho fica na nuvem',
+            context.l10n.settingsSignOut,
+            context.l10n.settingsSignOutSubtitle,
             glyph: CinematicGlyph.back,
             accent: AppColors.error,
             labelColor: AppColors.error,
@@ -908,8 +950,8 @@ class _SettingsScreenState extends State<SettingsScreen>
         ],
         _navRow(
           a,
-          'Resetar progresso',
-          'Apaga o caminho de vez · pede confirmação',
+          context.l10n.settingsDeleteProgress,
+          context.l10n.settingsDeleteProgressSubtitle,
           glyph: CinematicGlyph.fall,
           accent: AppColors.error,
           labelColor: AppColors.error,
@@ -921,10 +963,9 @@ class _SettingsScreenState extends State<SettingsScreen>
 
   Future<void> _openBackupSheet(SyncService sync) {
     return _openPickerSheet(
-      eyebrow: 'Conta',
-      title: 'Backup manual',
-      subtitle:
-          'Exporte o caminho como texto, ou copie um backup e toque em restaurar.',
+      eyebrow: context.l10n.settingsAccount,
+      title: context.l10n.settingsManualBackup,
+      subtitle: context.l10n.settingsBackupSheetBody,
       glyph: CinematicGlyph.share,
       tint: _SettingsSection.conta.tint,
       body: (p) => Builder(
@@ -933,15 +974,15 @@ class _SettingsScreenState extends State<SettingsScreen>
           final s = ctx.watch<SyncService>();
           final meta = [
             if (s.lastSyncAt != null)
-              'Último backup · ${_shortDate(s.lastSyncAt!)}',
-            if (s.deviceId != null) 'Dispositivo · ${s.deviceId}',
+              context.l10n.settingsLastBackup(_shortDate(s.lastSyncAt!)),
+            if (s.deviceId != null) context.l10n.settingsDeviceId(s.deviceId!),
           ];
           return Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             mainAxisSize: MainAxisSize.min,
             children: [
               CopperCta(
-                label: 'Exportar',
+                label: context.l10n.settingsExport,
                 leading: CinematicGlyph.share,
                 trailing: null,
                 showGlow: false,
@@ -949,7 +990,7 @@ class _SettingsScreenState extends State<SettingsScreen>
               ),
               const SizedBox(height: AppSpace.sm),
               GhostCta(
-                label: 'Restaurar da área de transferência',
+                label: context.l10n.settingsRestoreFromClipboard,
                 leading: CinematicGlyph.copy,
                 expanded: true,
                 onTap: () => _importProgress(p, sync),
@@ -978,9 +1019,9 @@ class _SettingsScreenState extends State<SettingsScreen>
 
   Future<void> _openCreditsSheet(List<String> credits) {
     return _openPickerSheet(
-      eyebrow: 'Sobre',
-      title: 'Traduções e créditos',
-      subtitle: 'Textos bíblicos e ferramentas de estudo usados no Stway.',
+      eyebrow: context.l10n.settingsAbout,
+      title: context.l10n.settingsCreditsTitle,
+      subtitle: context.l10n.settingsCreditsSubtitle,
       glyph: CinematicGlyph.scroll,
       tint: _SettingsSection.conta.tint,
       body: (_) => Builder(
@@ -1015,23 +1056,25 @@ class _SettingsScreenState extends State<SettingsScreen>
     final credits = [
       for (final t in BibleService.catalog.where((t) => t.available))
         if (t.attribution != null) '${t.shortName} — ${t.attribution}',
-      'Estudo (Strong) — ${BibleStudyService.attribution}',
+      context.l10n.settingsStudyAttribution(BibleStudyService.attribution),
     ];
     return _groupedCard(
       a,
-      title: 'Sobre o Stway',
-      subtitle: 'Aprenda a Bíblia em cenas curtas, no seu ritmo.',
+      title: context.l10n.settingsAboutTitle,
+      subtitle: context.l10n.settingsAboutSubtitle,
       tint: tint,
       children: [
         _navRow(
           a,
-          'Versão',
-          _checkingUpdate ? 'Procurando atualização…' : (_versionLabel ?? '…'),
+          context.l10n.settingsVersion,
+          _checkingUpdate
+              ? context.l10n.settingsCheckingUpdate
+              : (_versionLabel ?? '…'),
           glyph: CinematicGlyph.refresh,
           accent: tint,
           onTap: _checkingUpdate ? null : _checkForUpdates,
           trailing: Text(
-            _checkingUpdate ? '' : 'Verificar',
+            _checkingUpdate ? '' : context.l10n.settingsCheck,
             style: AppTypography.body(
               size: 12,
               weight: FontWeight.w800,
@@ -1042,8 +1085,8 @@ class _SettingsScreenState extends State<SettingsScreen>
         const _SettingsDivider(compact: true),
         _navRow(
           a,
-          'Rever introdução',
-          'A apresentação do começo, de novo',
+          context.l10n.settingsReplayIntro,
+          context.l10n.settingsReplayIntroSubtitle,
           glyph: CinematicGlyph.scroll,
           accent: tint,
           onTap: () async {
@@ -1057,15 +1100,15 @@ class _SettingsScreenState extends State<SettingsScreen>
         const _SettingsDivider(compact: true),
         _navRow(
           a,
-          'Traduções e créditos',
-          'Textos bíblicos e estudo',
+          context.l10n.settingsCreditsTitle,
+          context.l10n.settingsCreditsRowSubtitle,
           glyph: CinematicGlyph.book,
           accent: tint,
           onTap: () => _openCreditsSheet(credits),
         ),
         const SizedBox(height: AppSpace.lg),
         CopperCta(
-          label: 'Ajude a continuar',
+          label: context.l10n.settingsSupport,
           leading: CinematicGlyph.gift,
           trailing: null,
           dense: true,
@@ -1153,8 +1196,8 @@ class _PlusStrip extends StatelessWidget {
                     const SizedBox(height: 2),
                     Text(
                       plus
-                          ? 'Assinatura ativa no caminho'
-                          : 'Mais espaço para a companhia',
+                          ? context.l10n.settingsSubscriptionActive
+                          : context.l10n.settingsPlusTeaser,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: AppTypography.body(
@@ -1167,8 +1210,8 @@ class _PlusStrip extends StatelessWidget {
                 ),
               ),
               if (plus)
-                const SoftBadge(
-                  text: 'Ativo',
+                SoftBadge(
+                  text: context.l10n.commonActive,
                   glyph: CinematicGlyph.check,
                   solid: true,
                 )
@@ -1190,7 +1233,7 @@ class _FontPreview extends StatelessWidget {
   Widget build(BuildContext context) {
     return InsetPanel(
       child: Text(
-        'No princípio, criou Deus os céus e a terra.',
+        context.l10n.settingsSampleVerse,
         textAlign: TextAlign.center,
         style: AppTypography.verse(
           size: 18,
@@ -1229,13 +1272,11 @@ class _ProfileHeader extends StatelessWidget {
     this.seed,
   });
 
-  String _whisperDate(DateTime dt) {
+  String _whisperDate(BuildContext context, DateTime dt) {
     final local = dt.toLocal();
-    final d = local.day.toString().padLeft(2, '0');
-    final m = local.month.toString().padLeft(2, '0');
-    final h = local.hour.toString().padLeft(2, '0');
-    final min = local.minute.toString().padLeft(2, '0');
-    return '$d/$m · $h:$min';
+    final tag = Localizations.localeOf(context).toLanguageTag();
+    return '${DateFormat.Md(tag).format(local)} · '
+        '${DateFormat.Hm(tag).format(local)}';
   }
 
   @override
@@ -1243,12 +1284,12 @@ class _ProfileHeader extends StatelessWidget {
     final name = nameController.text;
     final caption = signedIn
         ? (email?.trim().isNotEmpty == true
-              ? 'Conectado como ${email!}'
-              : 'Progresso na nuvem')
-        : 'Entre de novo para sincronizar o caminho.';
+              ? context.l10n.settingsSignedInAs(email!)
+              : context.l10n.settingsProgressInCloud)
+        : context.l10n.settingsSignInAgain;
     final syncLine = lastSync == null
         ? null
-        : 'Salvo na nuvem · ${_whisperDate(lastSync!)}';
+        : context.l10n.settingsSavedInCloud(_whisperDate(context, lastSync!));
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -1288,7 +1329,7 @@ class _ProfileHeader extends StatelessWidget {
                     ),
                     decoration: InputDecoration(
                       counterText: '',
-                      hintText: 'Seu nome no caminho',
+                      hintText: context.l10n.settingsYourName,
                       hintStyle: AppTypography.display(
                         size: 20,
                         weight: FontWeight.w800,
@@ -1312,7 +1353,7 @@ class _ProfileHeader extends StatelessWidget {
                       child: Align(
                         alignment: Alignment.centerLeft,
                         child: CopperCta(
-                          label: 'Salvar nome',
+                          label: context.l10n.settingsSaveName,
                           dense: true,
                           expanded: false,
                           trailing: CinematicGlyph.check,
@@ -1480,11 +1521,17 @@ class _RhythmPath extends StatelessWidget {
 
   const _RhythmPath({required this.progress});
 
-  static const _options = <({int steps, String pace, String time})>[
-    (steps: 1, pace: 'Leve', time: '~3 min'),
-    (steps: 2, pace: 'Firme', time: '~6 min'),
-    (steps: 3, pace: 'Intenso', time: '~9 min'),
+  static const _options = <({int steps, String time})>[
+    (steps: 1, time: '~3 min'),
+    (steps: 2, time: '~6 min'),
+    (steps: 3, time: '~9 min'),
   ];
+
+  static String _paceLabel(AppLocalizations l10n, int steps) => switch (steps) {
+    1 => l10n.settingsPaceLight,
+    2 => l10n.settingsPaceSteady,
+    _ => l10n.settingsPaceIntense,
+  };
 
   @override
   Widget build(BuildContext context) {
@@ -1571,7 +1618,7 @@ class _RhythmPath extends StatelessWidget {
                     behavior: HitTestBehavior.opaque,
                     child: _RhythmCaption(
                       steps: option.steps,
-                      pace: option.pace,
+                      pace: _paceLabel(context.l10n, option.steps),
                       time: option.time,
                       selected: goal == option.steps,
                     ),
@@ -1603,7 +1650,7 @@ class _RhythmNode extends StatelessWidget {
       button: true,
       selected: selected,
       inMutuallyExclusiveGroup: true,
-      label: steps == 1 ? '1 cena por dia' : '$steps cenas por dia',
+      label: context.l10n.settingsScenesPerDay(steps),
       excludeSemantics: true,
       child: GestureDetector(
         onTap: onTap,
@@ -1668,7 +1715,7 @@ class _RhythmCaption extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final label = steps == 1 ? '1 passo' : '$steps passos';
+    final label = context.l10n.settingsScenes(steps);
     return Column(
       children: [
         Text(
@@ -1746,10 +1793,10 @@ class _SkySwitchState extends State<_SkySwitch> with TickerProviderStateMixin {
   String get _caption => _captionFor(_visualMode);
 
   String _captionFor(AppearanceMode mode) => switch (mode) {
-    AppearanceMode.morning => 'Céu claro',
-    AppearanceMode.afternoon => 'Luz baixa',
-    AppearanceMode.night => 'Céu escuro',
-    AppearanceMode.automatic => 'Segue o horário',
+    AppearanceMode.morning => context.l10n.settingsThemeCaptionLight,
+    AppearanceMode.afternoon => context.l10n.settingsThemeCaptionMedium,
+    AppearanceMode.night => context.l10n.settingsThemeCaptionDark,
+    AppearanceMode.automatic => context.l10n.settingsThemeCaptionAuto,
   };
 
   Color _accentFor(AppearanceMode mode) => switch (mode) {
@@ -1767,8 +1814,10 @@ class _SkySwitchState extends State<_SkySwitch> with TickerProviderStateMixin {
   }
 
   String _shortLabel(AppearanceMode mode) => switch (mode) {
-    AppearanceMode.automatic => 'Auto',
-    _ => mode.label,
+    AppearanceMode.morning => context.l10n.settingsThemeLight,
+    AppearanceMode.afternoon => context.l10n.settingsThemeMedium,
+    AppearanceMode.night => context.l10n.settingsThemeDark,
+    AppearanceMode.automatic => context.l10n.settingsThemeAuto,
   };
 
   double _focus(int i) {
@@ -1871,9 +1920,10 @@ class _SkySwitchState extends State<_SkySwitch> with TickerProviderStateMixin {
       children: [
         Semantics(
           container: true,
-          label: 'Céu da tela',
-          value: '${widget.selected.label}. ${_captionFor(widget.selected)}',
-          hint: 'Toque ou deslize para escolher',
+          label: context.l10n.settingsThemeSemantics,
+          value:
+              '${_shortLabel(widget.selected)}. ${_captionFor(widget.selected)}',
+          hint: context.l10n.settingsThemeSemanticsHint,
           child: MediaQuery.withClampedTextScaling(
             maxScaleFactor: 1.05,
             child: SizedBox(
@@ -1949,7 +1999,7 @@ class _SkySwitchState extends State<_SkySwitch> with TickerProviderStateMixin {
             return Column(
               children: [
                 Text(
-                  _visualMode.label,
+                  _shortLabel(_visualMode),
                   style: AppTypography.title(size: 14, color: _accentNow),
                 ),
                 const SizedBox(height: 2),

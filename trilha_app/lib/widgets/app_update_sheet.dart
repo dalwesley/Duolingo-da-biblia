@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_language.dart';
 import '../services/app_update_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -48,11 +49,11 @@ class _AppUpdateSheet extends StatelessWidget {
                 accent: accent,
                 glowing: false,
               ),
-              eyebrow: 'O peregrino',
+              eyebrow: context.l10n.updateEyebrow,
               eyebrowColor: accent.withValues(alpha: 0.85),
               title: _force
-                  ? 'Esta versão precisa atualizar'
-                  : 'Uma versão nova te espera',
+                  ? context.l10n.updateForceTitle
+                  : context.l10n.updateSoftTitle,
               subtitle: status.message,
             ),
             const SizedBox(height: 16),
@@ -63,22 +64,16 @@ class _AppUpdateSheet extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             CopperCta(
-              label: 'Atualizar agora',
+              label: context.l10n.updateNow,
               onTap: () async {
                 final ok = await AppUpdateService.openStore(status.storeUrl);
                 if (!context.mounted) return;
                 if (!ok) {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(
-                      content: Text(
-                        'Não deu para abrir a loja. Tente pelo link: ${status.storeUrl}',
-                        style: AppTypography.body(
-                          size: 13,
-                          color: Colors.white,
-                        ),
-                      ),
-                      backgroundColor: AppColors.nightElevated,
-                    ),
+                  showAppToastFor(
+                    context,
+                    message: context.l10n.updateStoreOpenFailed,
+                    glyph: CinematicGlyph.wrong,
+                    tone: AppToastTone.warn,
                   );
                   return;
                 }
@@ -88,7 +83,7 @@ class _AppUpdateSheet extends StatelessWidget {
             if (!_force) ...[
               const SizedBox(height: 8),
               TextCta(
-                label: 'Agora não',
+                label: context.l10n.commonNotNow,
                 color: a.textFaint,
                 onTap: () async {
                   await AppUpdateService.snoozeSoftPrompt();
@@ -126,7 +121,7 @@ class _VersionLane extends StatelessWidget {
           children: [
             Expanded(
               child: _VersionMark(
-                kicker: 'Você',
+                kicker: context.l10n.commonYou,
                 value: local,
                 valueColor: a.textSecondary,
               ),
@@ -142,7 +137,7 @@ class _VersionLane extends StatelessWidget {
             ),
             Expanded(
               child: _VersionMark(
-                kicker: 'Na loja',
+                kicker: context.l10n.updateInStore,
                 value: latest,
                 valueColor: accent,
                 alignEnd: true,

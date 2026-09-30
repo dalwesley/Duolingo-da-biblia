@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../models/recognition.dart';
+import '../l10n/app_language.dart';
+import '../l10n/l10n_global.dart';
 import '../services/recognition_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -31,18 +33,19 @@ class RecognitionHistoryCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final l10n = context.l10n;
     final items = context.watch<RecognitionService>().recent;
     final groups = groupRecognitionsBySender(items);
     final latest = items.isEmpty ? null : items.first;
     const radius = AppRadii.xl;
 
     final subtitle = items.isEmpty
-        ? 'Quando alguém da caravana tocar no coração, aparece aqui.'
-        : _peopleLine(groups);
+        ? l10n.recognitionEmptyCard
+        : _peopleLine(l10n, groups);
 
     return Semantics(
       button: true,
-      label: 'Quem reconheceu. $subtitle',
+      label: l10n.recognitionSemanticsWho(subtitle),
       excludeSemantics: true,
       child: Material(
         color: Colors.transparent,
@@ -115,7 +118,7 @@ class RecognitionHistoryCard extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    'Quem reconheceu',
+                                    l10n.recognitionWhoTitle,
                                     style: AppTypography.title(
                                       size: 16,
                                       color: a.text,
@@ -213,14 +216,17 @@ class RecognitionHistoryCard extends StatelessWidget {
     );
   }
 
-  static String _peopleLine(List<RecognitionSenderGroup> groups) {
+  static String _peopleLine(
+    AppLocalizations l10n,
+    List<RecognitionSenderGroup> groups,
+  ) {
     final names = groups.map((g) => g.name).toList();
     final who = switch (names.length) {
       1 => names[0],
-      2 => '${names[0]} e ${names[1]}',
-      _ => '${names[0]}, ${names[1]} e mais ${names.length - 2}',
+      2 => l10n.recognitionAndTwo(names[0], names[1]),
+      _ => l10n.recognitionAndMore(names[0], names[1], names.length - 2),
     };
-    return '$who ${names.length == 1 ? 'viu' : 'viram'} sua caminhada';
+    return l10n.recognitionSawJourney(names.length, who);
   }
 }
 
@@ -230,15 +236,15 @@ class _RecognitionHistorySheet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final l10n = context.l10n;
     final service = context.watch<RecognitionService>();
     final items = service.recent;
     final groups = groupRecognitionsBySender(items);
     final loading = service.recentLoading && items.isEmpty;
 
     final summary = items.isEmpty
-        ? 'Cena do dia e medalhas que outros viram em você.'
-        : '${items.length} ${items.length == 1 ? 'reconhecimento' : 'reconhecimentos'}'
-              ' de ${groups.length} ${groups.length == 1 ? 'pessoa' : 'pessoas'}';
+        ? l10n.recognitionSummaryEmpty
+        : l10n.recognitionSummaryCounts(items.length, groups.length);
 
     return AppSheetPanel(
       child: ConstrainedBox(
@@ -251,7 +257,7 @@ class _RecognitionHistorySheet extends StatelessWidget {
             const SizedBox(height: AppSpace.xs),
             AppSheetHeader(
               leading: _HeartSeal(size: 64, lit: items.isNotEmpty),
-              title: 'Quem reconheceu',
+              title: l10n.recognitionWhoTitle,
               subtitle: summary,
               center: true,
             ),
@@ -266,8 +272,7 @@ class _RecognitionHistorySheet extends StatelessWidget {
                   ? Padding(
                       padding: const EdgeInsets.fromLTRB(24, 8, 24, 24),
                       child: Text(
-                        'Ainda ninguém reconheceu sua caminhada.\n'
-                        'Na caravana, outros podem tocar no coração.',
+                        l10n.recognitionEmptySheet,
                         textAlign: TextAlign.center,
                         style: AppTypography.body(
                           size: 14,
@@ -289,7 +294,7 @@ class _RecognitionHistorySheet extends StatelessWidget {
                     ),
             ),
             CopperCta(
-              label: 'Fechar',
+              label: l10n.commonClose,
               dense: true,
               leading: null,
               trailing: null,
@@ -346,9 +351,7 @@ class _SenderCard extends StatelessWidget {
                     ),
                     const SizedBox(height: 1),
                     Text(
-                      count == 1
-                          ? 'reconheceu você'
-                          : 'reconheceu você $count vezes',
+                      context.l10n.recognitionSawYou(count),
                       style: AppTypography.body(
                         size: 12,
                         weight: FontWeight.w600,
@@ -553,14 +556,15 @@ class _Reveal extends StatelessWidget {
 /// "Hoje", "Ontem", "Há 3 dias" ou a data.
 String? whenLabel(DateTime? at) {
   if (at == null) return null;
+  final l = L10n.current;
   final now = DateTime.now();
   final local = at.toLocal();
   final today = DateTime(now.year, now.month, now.day);
   final day = DateTime(local.year, local.month, local.day);
   final diff = today.difference(day).inDays;
-  if (diff == 0) return 'Hoje';
-  if (diff == 1) return 'Ontem';
-  if (diff < 7) return 'Há $diff dias';
+  if (diff == 0) return l.commonToday;
+  if (diff == 1) return l.recognitionYesterday;
+  if (diff < 7) return l.recognitionDaysAgo(diff);
   final dd = local.day.toString().padLeft(2, '0');
   final mm = local.month.toString().padLeft(2, '0');
   return '$dd/$mm/${local.year}';

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_language.dart';
 
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -250,7 +251,7 @@ Future<bool> showAppConfirm(
   BuildContext context, {
   required String title,
   required String body,
-  String cancelLabel = 'Cancelar',
+  String? cancelLabel,
   required String confirmLabel,
   bool danger = false,
 }) async {
@@ -260,7 +261,10 @@ Future<bool> showAppConfirm(
       title: title,
       content: Text(body),
       actions: [
-        GhostCta(label: cancelLabel, onTap: () => Navigator.pop(ctx, false)),
+        GhostCta(
+          label: cancelLabel ?? ctx.l10n.commonCancel,
+          onTap: () => Navigator.pop(ctx, false),
+        ),
         danger
             ? GhostCta(
                 label: confirmLabel,

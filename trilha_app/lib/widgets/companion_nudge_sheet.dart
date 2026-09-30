@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
+import '../l10n/app_language.dart';
 import '../models/walk_companion.dart';
 import '../services/companion_service.dart';
 import '../theme/app_theme.dart';
@@ -70,7 +71,7 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
 
   String _messageOf(WalkCompanion live) {
     final presets = live.nudgePresets;
-    if (presets.isEmpty) return 'Tô te esperando na trilha';
+    if (presets.isEmpty) return context.l10n.nudgeDefaultMessage;
     return presets[_presetIndex.clamp(0, presets.length - 1)];
   }
 
@@ -113,7 +114,7 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
     if (!ok) {
       showAppToast(
         messenger,
-        message: companion.lastError ?? 'Não foi possível enviar o aceno.',
+        message: companion.lastError ?? context.l10n.nudgeSendFailed,
         glyph: CinematicGlyph.wrong,
         tone: AppToastTone.warn,
         bottomGap: gap,
@@ -123,7 +124,7 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
     Navigator.of(context).pop();
     showAppToast(
       messenger,
-      message: 'Aceno enviado. $_them vê ao abrir o Stway.',
+      message: context.l10n.nudgeSent(_them),
       glyph: CinematicGlyph.heart,
       bottomGap: gap,
     );
@@ -133,6 +134,7 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
     if (_sending || _sharing) return;
     setState(() => _sharing = true);
     final text = widget.companion.nudgeShareText();
+    final subject = context.l10n.nudgeShareSubject;
     XFile? imageFile;
     try {
       imageFile = await _captureCard();
@@ -147,14 +149,14 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
         ShareParams(
           files: imageFile == null ? null : [imageFile],
           text: text,
-          subject: 'Vamos caminhar juntos?',
+          subject: subject,
         ),
       );
     } catch (e, st) {
       debugPrint('nudge share: SharePlus falhou: $e\n$st');
       try {
         await SharePlus.instance.share(
-          ShareParams(text: text, subject: 'Vamos caminhar juntos?'),
+          ShareParams(text: text, subject: subject),
         );
       } catch (e2, st2) {
         debugPrint('nudge share: fallback texto falhou: $e2\n$st2');
@@ -205,12 +207,12 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
                   accent: AppColors.accent,
                   glowing: true,
                 ),
-                title: 'Acenar para $_them',
+                title: context.l10n.nudgeTitle(_them),
                 subtitle: already
-                    ? 'Você já acenou hoje. Mande também no WhatsApp, se quiser.'
+                    ? context.l10n.nudgeAlreadySubtitle
                     : canSendApp
-                    ? 'Um aceno na trilha — $_them vê ao abrir o Stway.'
-                    : 'Entre na conta para acenar no app, ou mande no WhatsApp.',
+                    ? context.l10n.nudgeInAppSubtitle(_them)
+                    : context.l10n.nudgeSignInSubtitle,
                 center: true,
               ),
               if (!already) ...[
@@ -237,7 +239,7 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
               const SizedBox(height: 18),
               if (canSendApp && !already)
                 CopperCta(
-                  label: 'Enviar aceno',
+                  label: context.l10n.waveCta,
                   onTap: busy ? null : _sendAceno,
                   leading: CinematicGlyph.heart,
                   trailing: null,
@@ -246,7 +248,7 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
                 )
               else if (already)
                 CopperCta(
-                  label: 'Mandar no WhatsApp',
+                  label: context.l10n.commonSendWhatsApp,
                   onTap: busy ? null : _shareWhatsApp,
                   leading: CinematicGlyph.share,
                   trailing: null,
@@ -255,7 +257,7 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
                 )
               else
                 CopperCta(
-                  label: 'Mandar no WhatsApp',
+                  label: context.l10n.commonSendWhatsApp,
                   onTap: busy ? null : _shareWhatsApp,
                   leading: CinematicGlyph.share,
                   trailing: null,
@@ -265,7 +267,7 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
               if (canSendApp && !already) ...[
                 const SizedBox(height: 8),
                 GhostCta(
-                  label: 'Também no WhatsApp',
+                  label: context.l10n.commonSendWhatsApp,
                   leading: CinematicGlyph.share,
                   expanded: true,
                   onTap: busy ? null : _shareWhatsApp,
@@ -318,14 +320,17 @@ class CompanionNudgeShareCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final me = myName.trim().isEmpty ? 'Você' : myName.trim().split(' ').first;
+    final l10n = context.l10n;
+    final me = myName.trim().isEmpty
+        ? l10n.commonYou
+        : myName.trim().split(' ').first;
     final them = companion.displayName.trim().isEmpty
-        ? 'Companheiro'
+        ? l10n.nudgeCompanionFallback
         : companion.displayName.trim().split(' ').first;
     final delay = companion.delayCopy;
-    final headline = delay?.headline ?? 'A trilha empoeirou';
+    final headline = delay?.headline ?? l10n.nudgeCardHeadline;
     final days = delay?.daysAway ?? companion.theyDaysAway ?? 0;
-    final insight = delay?.insight ?? 'Tô te esperando na trilha';
+    final insight = delay?.insight ?? l10n.nudgeDefaultMessage;
     final w = compact ? 300.0 : 360.0;
     final h = compact ? 380.0 : 480.0;
     final themInitial = them.isEmpty ? '?' : them[0].toUpperCase();
@@ -416,7 +421,7 @@ class CompanionNudgeShareCard extends StatelessWidget {
                             ),
                           ),
                           child: SectionLabel(
-                            days == 1 ? '1 dia fora' : '$days dias fora',
+                            l10n.nudgeCardDaysAway(days),
                             size: 10,
                             color: const Color(0xFFE8C48A),
                           ),
@@ -493,7 +498,10 @@ class CompanionNudgeShareCard extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 4),
-                  const SectionLabel('Na poeira', color: Color(0xFFE8C48A)),
+                  SectionLabel(
+                    l10n.nudgeCardWaiting,
+                    color: const Color(0xFFE8C48A),
+                  ),
                   const Spacer(),
                   Text(
                     headline,
@@ -564,7 +572,7 @@ class CompanionNudgeShareCard extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                '$me já caminhou',
+                                l10n.nudgeCardWalked(me),
                                 style: AppTypography.body(
                                   size: 13,
                                   weight: FontWeight.w800,
@@ -572,7 +580,7 @@ class CompanionNudgeShareCard extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                'Vem retomar comigo no Stway',
+                                l10n.nudgeCardCta,
                                 style: AppTypography.body(
                                   size: 12,
                                   color: AppColors.accent.withValues(

@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../l10n/l10n_global.dart';
 import '../models/study_room.dart';
 import 'backend_service.dart';
 import 'league_service.dart';
@@ -161,7 +162,7 @@ class RoomService extends ChangeNotifier {
   }) async {
     lastError = null;
     if (!backend.isActive) {
-      lastError = 'Entre com Google para criar um grupo.';
+      lastError = L10n.current.roomErrorSignInCreate;
       notifyListeners();
       return false;
     }
@@ -179,7 +180,7 @@ class RoomService extends ChangeNotifier {
     );
     loading = false;
     if (room == null) {
-      lastError = 'Não foi possível criar o grupo. Tente de novo.';
+      lastError = L10n.current.roomErrorCreate;
       notifyListeners();
       return false;
     }
@@ -193,7 +194,7 @@ class RoomService extends ChangeNotifier {
   Future<bool> joinRoom(String code, ProgressService progress) async {
     lastError = null;
     if (!backend.isActive) {
-      lastError = 'Entre com Google para entrar num grupo.';
+      lastError = L10n.current.roomErrorSignInJoin;
       notifyListeners();
       return false;
     }
@@ -211,15 +212,13 @@ class RoomService extends ChangeNotifier {
       );
     } on RoomFullException {
       loading = false;
-      lastError =
-          'Este grupo já tem $kRoomMemberLimit pessoas. '
-          'Peça ao líder para abrir outro grupo.';
+      lastError = L10n.current.roomErrorFullAskLeader(kRoomMemberLimit);
       notifyListeners();
       return false;
     }
     loading = false;
     if (room == null) {
-      lastError = 'Código inválido ou grupo não encontrado.';
+      lastError = L10n.current.roomErrorInvalidCode;
       notifyListeners();
       return false;
     }
@@ -239,7 +238,7 @@ class RoomService extends ChangeNotifier {
       activeRoom = null;
       members = const [];
       await _persistCode(null, progress: progress);
-      lastError = 'Não achamos o grupo em que você estava.';
+      lastError = L10n.current.roomErrorLostGroup;
       loading = false;
       notifyListeners();
       return;
@@ -337,14 +336,14 @@ class RoomService extends ChangeNotifier {
     lastError = null;
     final room = activeRoom;
     if (room == null || !backend.isActive) {
-      lastError = 'Crie o grupo antes de chamar alguém.';
+      lastError = L10n.current.roomErrorCreateFirst;
       notifyListeners();
       return false;
     }
     if (toUid.isEmpty || toUid == backend.uid) return false;
     if (members.any((m) => m.uid == toUid)) return true;
     if (isFull) {
-      lastError = 'Este grupo já tem $kRoomMemberLimit pessoas.';
+      lastError = L10n.current.roomErrorFull(kRoomMemberLimit);
       notifyListeners();
       return false;
     }
@@ -358,7 +357,7 @@ class RoomService extends ChangeNotifier {
       toPhotoUrl: toPhotoUrl,
     );
     if (!ok) {
-      lastError = 'Não deu para enviar o convite. Tente de novo.';
+      lastError = L10n.current.cornerSendFailed;
       notifyListeners();
       return false;
     }

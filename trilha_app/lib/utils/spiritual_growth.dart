@@ -1,3 +1,4 @@
+import '../l10n/l10n_global.dart';
 import 'dust_copy.dart';
 
 /// Companion de hábito — marcos da sequência diária (prática, não ritual).
@@ -9,11 +10,11 @@ enum GrowthStage {
   fruit;
 
   String get label => switch (this) {
-        GrowthStage.seed => 'Semente',
-        GrowthStage.sprout => 'Broto',
-        GrowthStage.branch => 'Ramo',
-        GrowthStage.tree => 'Árvore',
-        GrowthStage.fruit => 'Fruto',
+        GrowthStage.seed => L10n.current.growthStageSeed,
+        GrowthStage.sprout => L10n.current.growthStageSprout,
+        GrowthStage.branch => L10n.current.growthStageBranch,
+        GrowthStage.tree => L10n.current.growthStageTree,
+        GrowthStage.fruit => L10n.current.growthStageFruit,
       };
 
   /// Dias de streak necessários para alcançar este marco.
@@ -26,11 +27,8 @@ enum GrowthStage {
       };
 
   String get shortHint => switch (this) {
-        GrowthStage.seed => 'dia 0',
-        GrowthStage.sprout => '1 dia',
-        GrowthStage.branch => '3 dias',
-        GrowthStage.tree => '7 dias',
-        GrowthStage.fruit => '14 dias',
+        GrowthStage.seed => L10n.current.growthHintDayZero,
+        _ => L10n.current.commonDays(unlockAt),
       };
 }
 
@@ -77,14 +75,14 @@ class SpiritualGrowth {
     if (perfectRecent) {
       mood = SeedMood.perfectGlow;
       subtitle = streak <= 0
-          ? 'Cena perfeita'
-          : 'Cena perfeita · ${base.subtitle}';
+          ? L10n.current.growthPerfect
+          : L10n.current.growthPerfectWith(base.subtitle);
     } else if (atRisk) {
       mood = SeedMood.atRisk;
       subtitle = DustCopy.uiRiskLine(hasFreeze: freezeAvailable);
     } else if (!freezeAvailable && streak > 0) {
       mood = SeedMood.frozen;
-      subtitle = '${base.subtitle} · gelo já usado nesta semana';
+      subtitle = L10n.current.growthFreezeUsed(base.subtitle);
     } else if (streak >= 3) {
       mood = SeedMood.thriving;
       subtitle = base.subtitle;
@@ -107,8 +105,8 @@ class SpiritualGrowth {
     if (s <= 0) {
       return SpiritualGrowth(
         stage: GrowthStage.seed,
-        title: 'Semente',
-        subtitle: 'Faça 1 cena hoje para virar Broto',
+        title: GrowthStage.seed.label,
+        subtitle: L10n.current.growthSeedSubtitle,
         streak: s,
         nextAt: 1,
       );
@@ -117,10 +115,11 @@ class SpiritualGrowth {
       final left = 3 - s;
       return SpiritualGrowth(
         stage: GrowthStage.sprout,
-        title: 'Broto',
-        subtitle: left == 1
-            ? 'Falta 1 dia de sequência para Ramo'
-            : 'Faltam $left dias de sequência para Ramo',
+        title: GrowthStage.sprout.label,
+        subtitle: L10n.current.growthDaysToStage(
+          left,
+          GrowthStage.branch.label,
+        ),
         streak: s,
         nextAt: 3,
       );
@@ -129,10 +128,11 @@ class SpiritualGrowth {
       final left = 7 - s;
       return SpiritualGrowth(
         stage: GrowthStage.branch,
-        title: 'Ramo',
-        subtitle: left == 1
-            ? 'Falta 1 dia de sequência para Árvore'
-            : 'Faltam $left dias de sequência para Árvore',
+        title: GrowthStage.branch.label,
+        subtitle: L10n.current.growthDaysToStage(
+          left,
+          GrowthStage.tree.label,
+        ),
         streak: s,
         nextAt: 7,
       );
@@ -141,18 +141,19 @@ class SpiritualGrowth {
       final left = 14 - s;
       return SpiritualGrowth(
         stage: GrowthStage.tree,
-        title: 'Árvore',
-        subtitle: left == 1
-            ? 'Falta 1 dia de sequência para Fruto'
-            : 'Faltam $left dias de sequência para Fruto',
+        title: GrowthStage.tree.label,
+        subtitle: L10n.current.growthDaysToStage(
+          left,
+          GrowthStage.fruit.label,
+        ),
         streak: s,
         nextAt: 14,
       );
     }
     return SpiritualGrowth(
       stage: GrowthStage.fruit,
-      title: 'Fruto',
-      subtitle: '$s dias de sequência · deu fruto',
+      title: GrowthStage.fruit.label,
+      subtitle: L10n.current.growthFruitSubtitle(s),
       streak: s,
       nextAt: s,
     );

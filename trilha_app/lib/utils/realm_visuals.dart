@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/l10n_global.dart';
 import '../models/trail_catalog.dart';
 import '../theme/app_theme.dart';
 import '../widgets/cinematic_icon.dart';
@@ -20,33 +21,33 @@ class RealmVisuals {
   });
 
   static RealmVisuals of(TrailRealm realm) => switch (realm) {
-        TrailRealm.antigoTestamento => const RealmVisuals(
-            accent: AppColors.accent,
-            glow: AppColors.primaryLight,
-            glyph: CinematicGlyph.book,
-            eyebrow: 'A promessa',
-            tagline: 'Da criação aos profetas — o caminho da aliança',
-          ),
-        TrailRealm.novoTestamento => const RealmVisuals(
-            accent: AppColors.clay,
-            glow: AppColors.clayDeep,
-            glyph: CinematicGlyph.heart,
-            eyebrow: 'O cumprimento',
-            tagline: 'Cristo, a Igreja e a esperança que não falha',
-          ),
-        TrailRealm.vidaCrista => const RealmVisuals(
-            accent: AppColors.cedar,
-            glow: AppColors.cedarDeep,
-            glyph: CinematicGlyph.seed,
-            eyebrow: 'O caminhar',
-            tagline: 'Discipulado, oração e a história da fé',
-          ),
-        TrailRealm.teologia => const RealmVisuals(
-            accent: AppColors.sand,
-            glow: AppColors.sandDeep,
-            glyph: CinematicGlyph.scroll,
-            eyebrow: 'O fundamento',
-            tagline: 'Hermenêutica, línguas e a doutrina da fé',
-          ),
-      };
+    TrailRealm.antigoTestamento => RealmVisuals(
+      accent: AppColors.accent,
+      glow: AppColors.primaryLight,
+      glyph: CinematicGlyph.book,
+      eyebrow: L10n.current.realmEyebrowAntigoTestamento,
+      tagline: L10n.current.realmTaglineAntigoTestamento,
+    ),
+    TrailRealm.novoTestamento => RealmVisuals(
+      accent: AppColors.clay,
+      glow: AppColors.clayDeep,
+      glyph: CinematicGlyph.heart,
+      eyebrow: L10n.current.realmEyebrowNovoTestamento,
+      tagline: L10n.current.realmTaglineNovoTestamento,
+    ),
+    TrailRealm.vidaCrista => RealmVisuals(
+      accent: AppColors.cedar,
+      glow: AppColors.cedarDeep,
+      glyph: CinematicGlyph.seed,
+      eyebrow: L10n.current.realmEyebrowVidaCrista,
+      tagline: L10n.current.realmTaglineVidaCrista,
+    ),
+    TrailRealm.teologia => RealmVisuals(
+      accent: AppColors.sand,
+      glow: AppColors.sandDeep,
+      glyph: CinematicGlyph.scroll,
+      eyebrow: L10n.current.realmEyebrowTeologia,
+      tagline: L10n.current.realmTaglineTeologia,
+    ),
+  };
 }

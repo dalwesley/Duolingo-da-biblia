@@ -3,6 +3,7 @@ import 'dart:math' as math;
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
+import '../l10n/app_language.dart';
 import '../models/trail.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -88,6 +89,9 @@ class ExercisePanel extends StatefulWidget {
   final Set<String> eliminatedIds;
   final VoidCallback? onHint;
   final bool outOfLamps;
+
+  /// Erro que já revela a resposta: a opção certa acende junto da errada.
+  final bool revealCorrect;
   final int index;
   final int total;
   final String? insightFallback;
@@ -110,6 +114,7 @@ class ExercisePanel extends StatefulWidget {
     this.eliminatedIds = const {},
     this.onHint,
     this.outOfLamps = false,
+    this.revealCorrect = false,
     this.insightFallback,
     this.boardText,
     this.boardRef,
@@ -129,6 +134,7 @@ class _ExercisePanelState extends State<ExercisePanel>
   bool _confirming = false;
   final Map<String, String> _pairs = {};
   late List<QuestionOption> _shuffledOrderItems;
+  late List<QuestionOption> _shuffledMatchRight;
 
   bool get _lit => widget.isCorrect == true;
 
@@ -178,6 +184,9 @@ class _ExercisePanelState extends State<ExercisePanel>
       final items = List<QuestionOption>.from(widget.exercise.effectiveOptions);
       items.shuffle();
       _shuffledOrderItems = items;
+      _shuffledMatchRight = List<QuestionOption>.from(
+        widget.exercise.matchRight,
+      )..shuffle();
     }
     _pulse
       ..stop()
@@ -300,7 +309,7 @@ class _ExercisePanelState extends State<ExercisePanel>
                   title: ex.displayCue.trim().isNotEmpty
                       ? ex.displayCue
                       : ex.instructionTitle,
-                  instructionTitle: ex.instructionTitle,
+                  glyph: _gestureGlyph(ex),
                   label: ex.taskPromptLabel,
                   isPrompt: ex.showsStagePrompt,
                   accent: widget.accent,
@@ -312,7 +321,8 @@ class _ExercisePanelState extends State<ExercisePanel>
                   0.1,
                   0.6,
                   _ContextNote(
-                    label: (ex.noteLabel ?? 'Contexto').trim(),
+                    label: (ex.noteLabel ?? context.l10n.exerciseNoteLabel)
+                        .trim(),
                     text: ex.note!.trim(),
                     accent: widget.accent,
                   ),
@@ -507,8 +517,8 @@ class _ExercisePanelState extends State<ExercisePanel>
             children: [
               Expanded(
                 child: _VfSlab(
-                  label: 'Verdadeiro',
-                  mark: 'V',
+                  label: context.l10n.exerciseTrue,
+                  mark: context.l10n.exerciseTrueMark,
                   state: _state('true'),
                   accent: widget.accent,
                   onTap: _locked ? null : () => _pickChoice('true'),
@@ -517,8 +527,8 @@ class _ExercisePanelState extends State<ExercisePanel>
               const SizedBox(width: 10),
               Expanded(
                 child: _VfSlab(
-                  label: 'Falso',
-                  mark: 'F',
+                  label: context.l10n.exerciseFalse,
+                  mark: context.l10n.exerciseFalseMark,
                   state: _state('false'),
                   accent: widget.accent,
                   onTap: _locked ? null : () => _pickChoice('false'),
@@ -724,7 +734,7 @@ class _ExercisePanelState extends State<ExercisePanel>
 
   List<Widget> _matchBody(Exercise ex) {
     final left = ex.matchLeft.isNotEmpty ? ex.matchLeft : ex.effectiveOptions;
-    final right = ex.matchRight;
+    final right = _shuffledMatchRight;
     return [
       _MatchStepper(pickingLeft: _matchLeft == null, accent: widget.accent),
       const SizedBox(height: AppSpace.md),
@@ -806,7 +816,9 @@ class _ExercisePanelState extends State<ExercisePanel>
           Align(
             alignment: Alignment.centerLeft,
             child: TextCta(
-              label: widget.hintUsed ? 'Dica usada' : 'Dica',
+              label: widget.hintUsed
+                  ? context.l10n.exerciseHintUsed
+                  : context.l10n.exerciseHint,
               onTap: widget.hintUsed || _locked ? null : widget.onHint,
               color: widget.hintUsed || _locked
                   ? AppColors.textOnDark
@@ -814,7 +826,7 @@ class _ExercisePanelState extends State<ExercisePanel>
             ),
           ),
         CopperCta(
-          label: 'Verificar',
+          label: context.l10n.exerciseCheck,
           onTap: canConfirm && !waiting ? _confirmChoice : null,
           trailing: null,
           padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 15),
@@ -835,7 +847,13 @@ class _ExercisePanelState extends State<ExercisePanel>
         return picked ? _OptState.correct : _OptState.dimmed;
       }
       // Erro + retry: não acender a certa. A faixa já explica o quase.
-      return picked ? _OptState.wrong : _OptState.idle;
+      // Erro que revela: a certa acende para o aluno ver onde estava.
+      if (picked) return _OptState.wrong;
+      if (widget.revealCorrect &&
+          id == widget.exercise.resolvedCorrectAnswer.trim()) {
+        return _OptState.correct;
+      }
+      return _OptState.idle;
     }
     if (_picked == id) return _OptState.picked;
     return _OptState.idle;
@@ -854,31 +872,37 @@ TextStyle _verseWordStyle({
   color: color ?? AppColors.textOnDark,
 );
 
+/// Glifo do gesto — pelo tipo, não pelo rótulo (que muda com o idioma).
+CinematicGlyph _gestureGlyph(Exercise ex) => switch (ex.type) {
+  ExerciseType.trueFalse => CinematicGlyph.scales,
+  ExerciseType.tap || ExerciseType.findInText =>
+    (ex.passageA != null && ex.passageB != null)
+        ? CinematicGlyph.link
+        : CinematicGlyph.tap,
+  ExerciseType.order => CinematicGlyph.stack,
+  ExerciseType.complete => CinematicGlyph.gap,
+  ExerciseType.connect || ExerciseType.match => CinematicGlyph.link,
+  ExerciseType.choice ||
+  ExerciseType.textSupported ||
+  ExerciseType.bestInterpretation => CinematicGlyph.target,
+  _ => CinematicGlyph.book,
+};
+
 class _GestureSeal extends StatelessWidget {
   final String title;
-  final String instructionTitle;
+  final CinematicGlyph glyph;
   final String label;
   final bool isPrompt;
   final Color accent;
 
   const _GestureSeal({
     required this.title,
-    required this.instructionTitle,
+    required this.glyph,
     required this.label,
     required this.isPrompt,
     required this.accent,
   });
 
-  CinematicGlyph get _glyph =>
-      switch (instructionTitle.split(' ').first.toLowerCase()) {
-        'julgue' => CinematicGlyph.scales,
-        'toque' => CinematicGlyph.tap,
-        'escolha' => CinematicGlyph.target,
-        'ordene' => CinematicGlyph.stack,
-        'complete' => CinematicGlyph.gap,
-        'conecte' => CinematicGlyph.link,
-        _ => CinematicGlyph.book,
-      };
 
   @override
   Widget build(BuildContext context) {
@@ -892,7 +916,7 @@ class _GestureSeal extends StatelessWidget {
         Padding(
           padding: EdgeInsets.only(top: isPrompt ? 2 : 0),
           child: CinematicIcon(
-            glyph: _glyph,
+            glyph: glyph,
             size: 22,
             accent: accent,
             framed: false,
@@ -1419,7 +1443,11 @@ class _InsightView extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          RelicChapter(title: 'Hoje', accent: accent, divided: false),
+          RelicChapter(
+            title: context.l10n.commonToday,
+            accent: accent,
+            divided: false,
+          ),
           const SizedBox(height: 14),
           Expanded(
             child: Container(
@@ -1464,7 +1492,11 @@ class _InsightView extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 10),
-          CopperCta(label: 'Continuar', onTap: onContinue, trailing: null),
+          CopperCta(
+            label: context.l10n.commonContinue,
+            onTap: onContinue,
+            trailing: null,
+          ),
           const SizedBox(height: AppSpace.lg),
         ],
       ),
@@ -2087,12 +2119,12 @@ class _MatchStepper extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        step(1, 'Escolha', pickingLeft),
+        step(1, context.l10n.exerciseMatchPick, pickingLeft),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Container(width: 18, height: 1, color: a.divider),
         ),
-        step(2, 'Pareie', !pickingLeft),
+        step(2, context.l10n.exerciseMatchPair, !pickingLeft),
       ],
     );
   }

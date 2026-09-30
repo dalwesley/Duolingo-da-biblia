@@ -2,6 +2,8 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import '../l10n/app_language.dart';
+import '../l10n/l10n_global.dart';
 import '../models/difficulty.dart';
 import '../services/analytics_service.dart';
 import '../services/progress_service.dart';
@@ -92,33 +94,37 @@ class ModeStatus {
 
   /// Selo curto — null quando não há o que dizer.
   String? get badge {
-    if (locked) return 'Bloqueada';
-    if (current && cleared) return 'Revisão';
-    if (current) return 'Você está aqui';
-    if (cleared) return 'Concluída';
-    if (canonical) return 'Em andamento';
+    final l10n = L10n.current;
+    if (locked) return l10n.modeBadgeLocked;
+    if (current && cleared) return l10n.modeBadgeReview;
+    if (current) return l10n.modeBadgeHere;
+    if (cleared) return l10n.modeBadgeCleared;
+    if (canonical) return l10n.modeBadgeInProgress;
     return null;
   }
 
   String get lockHint {
     final prev = difficulty.previous;
-    return prev == null ? 'Bloqueada' : 'Conclua ${prev.labelPt} para liberar';
+    return prev == null
+        ? L10n.current.modeBadgeLocked
+        : L10n.current.modeLockHint(prev.labelPt);
   }
 
   /// Linha sob a barra de progresso.
   String? get progressLine {
     if (total <= 0) return null;
+    final l10n = L10n.current;
     if (locked) {
       final prev = difficulty.previous;
       if (prev == null) return null;
       final left = total - done;
       return left <= 0
-          ? '${prev.labelPt} quase concluída'
-          : 'Faltam $left ${left == 1 ? 'cena' : 'cenas'} de ${prev.labelPt}';
+          ? l10n.modePrevAlmostDone(prev.labelPt)
+          : l10n.modeScenesLeft(left, prev.labelPt);
     }
-    if (cleared) return 'Concluída · revisite quando quiser';
-    if (done == 0) return 'Comece pela primeira cena';
-    return '$done de $total cenas';
+    if (cleared) return l10n.modeClearedReview;
+    if (done == 0) return l10n.modeStartFirstScene;
+    return l10n.modeScenesProgress(done, total);
   }
 }
 
@@ -164,9 +170,9 @@ class ModeSwitch {
       final back = TrailProgress.modeLabel(
         progress.canonicalDifficultyId(trailSlug),
       );
-      return 'Troca só nesta sessão · ao fechar o app, volta para $back';
+      return L10n.current.modeSessionFootnote(back);
     }
-    return 'Três leituras do mesmo texto · conclua um modo para liberar o próximo';
+    return L10n.current.modeRuleFootnote;
   }
 }
 
@@ -192,9 +198,9 @@ Future<void> showModeSheet(
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: AppSpace.xl),
             child: AppSheetHeader(
-              eyebrow: 'Modo de estudo',
+              eyebrow: context.l10n.modeSheetEyebrow,
               eyebrowColor: tone,
-              title: 'Como você quer estudar?',
+              title: context.l10n.modeSheetTitle,
               subtitle: trailTitle,
             ),
           ),
@@ -312,10 +318,11 @@ class _ModeCarouselState extends State<ModeCarousel>
   String _ctaLabel(ModeStatus s, bool firstPick) {
     final name = s.difficulty.labelPt;
     if (s.locked) return s.lockHint;
-    if (firstPick) return 'Começar em $name';
-    if (s.current) return 'Continuar em $name';
-    if (s.cleared) return 'Revisar $name';
-    return 'Estudar em $name';
+    final l10n = context.l10n;
+    if (firstPick) return l10n.modeCtaStart(name);
+    if (s.current) return l10n.modeCtaContinue(name);
+    if (s.cleared) return l10n.modeCtaReview(name);
+    return l10n.modeCtaStudy(name);
   }
 
   @override
@@ -515,7 +522,7 @@ class _ModePortal extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        'MODO ${d.ordinalPt}',
+                        context.l10n.modeOrdinal(d.ordinalPt),
                         style: AppTypography.label(
                           size: 11,
                           letterSpacing: 2.2,
@@ -1089,9 +1096,9 @@ class _ModeBannerState extends State<ModeBanner>
 
     return Semantics(
       button: true,
-      label: 'Modo de estudo: ${d.labelPt}. ${d.taglinePt}.',
+      label: context.l10n.modeBannerSemantics(d.labelPt, d.taglinePt),
       value: line,
-      hint: 'Toque para trocar de modo',
+      hint: context.l10n.modeBannerHint,
       excludeSemantics: true,
       child: GestureDetector(
         onTapDown: (_) => setState(() => _down = true),
@@ -1170,7 +1177,10 @@ class _ModeBannerState extends State<ModeBanner>
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               Text(
-                                'MODO ${d.ordinalPt} · ${(current.badge ?? 'Atual').toUpperCase()}',
+                                context.l10n.modeOrdinalBadge(
+                                  d.ordinalPt,
+                                  current.badge ?? context.l10n.modeBadgeCurrent,
+                                ),
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
                                 style: AppTypography.label(
@@ -1225,7 +1235,7 @@ class _ModeBannerState extends State<ModeBanner>
                             _ModeLadder(statuses: statuses),
                             const SizedBox(height: 12),
                             _GlassPill(
-                              text: 'Trocar',
+                              text: context.l10n.modeSwitch,
                               accent: accent,
                               solid: false,
                             ),

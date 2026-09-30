@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_language.dart';
+import '../l10n/l10n_global.dart';
 import '../models/difficulty.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -30,9 +32,10 @@ class ModeEmblem extends StatelessWidget {
 
   String get semanticLabel {
     final name = difficulty.labelPt;
-    if (cleared) return '$name concluída';
-    if (locked) return '$name bloqueada';
-    if (active) return '$name atual';
+    final l10n = L10n.current;
+    if (cleared) return l10n.modeCleared(name);
+    if (locked) return l10n.modeLocked(name);
+    if (active) return l10n.modeCurrent(name);
     return name;
   }
 
@@ -236,12 +239,13 @@ class _LabeledMode extends StatelessWidget {
     final a = Appearance.of(context);
     final color = DifficultyVisuals.accentFor(difficulty);
     final onSky = DifficultyVisuals.onSky(color);
+    final l10n = context.l10n;
     final caption = cleared
-        ? 'concluída'
+        ? l10n.modeCaptionCleared
         : locked
-        ? 'bloqueada'
+        ? l10n.modeCaptionLocked
         : active
-        ? 'atual'
+        ? l10n.modeCaptionCurrent
         : '';
 
     return GestureDetector(
@@ -309,8 +313,8 @@ class ModeStatusChip extends StatelessWidget {
     final color = DifficultyVisuals.accentFor(difficulty);
     final onSky = DifficultyVisuals.onSky(color);
     final label = cleared
-        ? '${difficulty.labelPt} concluída'
-        : 'Modo ${difficulty.labelPt}';
+        ? context.l10n.modeCleared(difficulty.labelPt)
+        : context.l10n.modeNamed(difficulty.labelPt);
 
     return Semantics(
       label: label,

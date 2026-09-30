@@ -1,16 +1,21 @@
 import 'package:flutter/material.dart';
+import '../l10n/l10n_global.dart';
 import '../theme/app_theme.dart';
 import 'appearance.dart';
 
 /// Papel da página de leitura — escolha no painel "Aa" do leitor.
 enum BiblePaper {
-  auto('Automático'),
-  light('Clara'),
-  sepia('Sépia'),
-  night('Noite');
+  auto,
+  light,
+  sepia,
+  night;
 
-  final String label;
-  const BiblePaper(this.label);
+  String get label => switch (this) {
+    BiblePaper.auto => L10n.current.biblePaperAuto,
+    BiblePaper.light => L10n.current.biblePaperLight,
+    BiblePaper.sepia => L10n.current.biblePaperSepia,
+    BiblePaper.night => L10n.current.biblePaperNight,
+  };
 
   static BiblePaper of({required bool? readingNight, required bool sepia}) {
     if (readingNight == true) return BiblePaper.night;

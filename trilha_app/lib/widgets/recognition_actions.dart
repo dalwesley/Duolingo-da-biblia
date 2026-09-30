@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../models/pilgrim_medals.dart';
 import '../models/recognition.dart';
+import '../l10n/app_language.dart';
 import '../services/backend_service.dart';
 import '../services/progress_service.dart';
 import '../services/recognition_service.dart';
@@ -47,18 +48,21 @@ class RecognizeHeartButton extends StatelessWidget {
       subjectKey: subjectKey,
     );
     if (!context.mounted) return;
+    final l10n = context.l10n;
     final title = switch (status) {
       RecognitionGiveStatus.given =>
         kind == RecognitionKind.medal
-            ? 'Medalha reconhecida'
-            : 'Caminhada reconhecida',
-      RecognitionGiveStatus.removed => 'Reconhecimento retirado',
+            ? l10n.recognitionMedalDone
+            : l10n.recognitionSceneDone,
+      RecognitionGiveStatus.removed => l10n.recognitionRemoved,
       RecognitionGiveStatus.already =>
         kind == RecognitionKind.medal
-            ? 'Medalha reconhecida'
-            : 'Caminhada reconhecida',
+            ? l10n.recognitionMedalDone
+            : l10n.recognitionSceneDone,
       RecognitionGiveStatus.failed =>
-        wasGiven ? 'Não foi possível retirar' : 'Não foi possível reconhecer',
+        wasGiven
+            ? l10n.recognitionFailedWithdraw
+            : l10n.recognitionFailedGive,
     };
     await showAppDialog<void>(
       context,
@@ -76,7 +80,7 @@ class RecognizeHeartButton extends StatelessWidget {
         ),
         actions: [
           CopperCta(
-            label: 'Entendi',
+            label: ctx.l10n.commonGotIt,
             dense: true,
             trailing: null,
             showGlow: false,
@@ -171,7 +175,7 @@ class RecognizeCompanionWalk extends StatelessWidget {
       child: Row(
         children: [
           Text(
-            'Reconhecer a caminhada',
+            context.l10n.recognitionRecognizeScene,
             style: AppTypography.body(
               size: 13,
               color: Appearance.of(context).textFaint,
@@ -235,8 +239,8 @@ class _RecognizeTargetButtonState extends State<RecognizeTargetButton> {
       _busy = false;
       _error = status == RecognitionGiveStatus.failed
           ? (wasGiven
-                ? 'Não foi possível retirar'
-                : 'Não foi possível reconhecer')
+                ? context.l10n.recognitionFailedWithdraw
+                : context.l10n.recognitionFailedGive)
           : null;
     });
   }
@@ -262,7 +266,7 @@ class _RecognizeTargetButtonState extends State<RecognizeTargetButton> {
         if (given && !_busy) ...[
           const SizedBox(height: 6),
           Text(
-            'Toque de novo para retirar',
+            context.l10n.recognitionTapToWithdraw,
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 12,
@@ -341,8 +345,8 @@ class _MedalRecognizeSheetState extends State<_MedalRecognizeSheet> {
       _busyId = null;
       _error = status == RecognitionGiveStatus.failed
           ? (wasGiven
-                ? 'Não foi possível retirar'
-                : 'Não foi possível reconhecer')
+                ? context.l10n.recognitionFailedWithdraw
+                : context.l10n.recognitionFailedGive)
           : null;
     });
   }
@@ -359,7 +363,10 @@ class _MedalRecognizeSheetState extends State<_MedalRecognizeSheet> {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            AppSheetHeader(title: who, subtitle: 'Qual medalha você viu?'),
+            AppSheetHeader(
+              title: who,
+              subtitle: context.l10n.recognitionWhichMedal,
+            ),
             if (_error != null) ...[
               const SizedBox(height: 10),
               Text(
@@ -464,7 +471,7 @@ class _MedalRecognizeRow extends StatelessWidget {
                       const SizedBox(height: 4),
                       Text(
                         given
-                            ? 'Reconhecida · toque para retirar'
+                            ? context.l10n.recognitionGivenTapWithdraw
                             : tierLabel(medal.tier),
                         style: AppTypography.body(
                           size: 13,
@@ -501,17 +508,15 @@ Future<RecognitionGiveStatus> giveRecognition(
     subjectKey: subjectKey,
   );
   if (!context.mounted) return status;
+  final l10n = context.l10n;
   final message = switch (status) {
     RecognitionGiveStatus.given =>
       kind == RecognitionKind.medal
-          ? 'Medalha reconhecida'
-          : 'Caminhada reconhecida',
-    RecognitionGiveStatus.removed =>
-      kind == RecognitionKind.medal
-          ? 'Reconhecimento retirado'
-          : 'Caminhada retirada',
-    RecognitionGiveStatus.already => 'Você já reconheceu',
-    RecognitionGiveStatus.failed => 'Não foi possível reconhecer',
+          ? l10n.recognitionMedalDone
+          : l10n.recognitionSceneDone,
+    RecognitionGiveStatus.removed => l10n.recognitionRemoved,
+    RecognitionGiveStatus.already => l10n.recognitionAlready,
+    RecognitionGiveStatus.failed => l10n.recognitionFailedGive,
   };
   showAppToastFor(
     context,

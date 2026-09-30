@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../data/trail_repository.dart';
 import '../data/season_walk_catalog.dart';
+import '../l10n/app_language.dart';
 import '../models/trail.dart';
 import '../widgets/act_feel.dart';
 import '../services/analytics_service.dart';
@@ -219,20 +220,19 @@ class _HomeScreenState extends State<HomeScreen>
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                const AppSheetHeader(
-                  leading: CinematicIcon(
+                AppSheetHeader(
+                  leading: const CinematicIcon(
                     glyph: CinematicGlyph.flame,
                     size: 48,
                     accent: AppColors.primaryLight,
                   ),
-                  title: 'O gelo cobriu ontem',
-                  subtitle:
-                      'Você perdeu um dia, mas a sequência continua. O gelo salva uma falta por semana — caminhe hoje para seguir.',
+                  title: ctx.l10n.homeFreezeSheetTitle,
+                  subtitle: ctx.l10n.homeFreezeSheetBody,
                   center: true,
                 ),
                 const SizedBox(height: AppSpace.xl),
                 CopperCta(
-                  label: 'Entendi',
+                  label: ctx.l10n.commonGotIt,
                   onTap: () => Navigator.pop(ctx),
                   trailing: null,
                   dense: true,
@@ -272,8 +272,8 @@ class _HomeScreenState extends State<HomeScreen>
                   inline: true,
                   immersive: true,
                   dark: appearance.onDark,
-                  title: 'Bíblia',
-                  subtitle: 'A Palavra, offline',
+                  title: ctx.l10n.navBible,
+                  subtitle: ctx.l10n.homeBibleOfflineSubtitle,
                   leadingGlyph: CinematicGlyph.book,
                   chromeAccent: AppColors.cedar,
                   onBack: () => Navigator.pop(ctx),
@@ -369,14 +369,15 @@ class _HomeScreenState extends State<HomeScreen>
     required List<Trail> trails,
     required String? missionSlug,
   }) {
+    final l10n = context.l10n;
     final juntos = JuntosInbox.pending(context);
     final mistakes = progress.mistakeQuestionIds.length;
     return [
       if (progress.dailyChestAvailable)
         _MoreTile(
           glyph: CinematicGlyph.gem,
-          title: 'Baú do dia',
-          caption: 'Pronto para abrir',
+          title: l10n.chestDailyTitle,
+          caption: l10n.chestReadyShort,
           color: AppColors.accent,
           hot: true,
           onTap: () => _openCardSheet(const DailyChestCard()),
@@ -384,8 +385,8 @@ class _HomeScreenState extends State<HomeScreen>
       if (juntos > 0)
         _MoreTile(
           glyph: CinematicGlyph.people,
-          title: 'Juntos',
-          caption: juntos == 1 ? '1 novidade' : '$juntos novidades',
+          title: l10n.navTogether,
+          caption: l10n.homeJuntosNews(juntos),
           color: AppColors.streak,
           hot: true,
           onTap: () => widget.onOpenLeague?.call(),
@@ -393,8 +394,8 @@ class _HomeScreenState extends State<HomeScreen>
       if (goalMet)
         _MoreTile(
           glyph: CinematicGlyph.target,
-          title: 'Tarefas do dia',
-          caption: 'Passos extras',
+          title: l10n.questDailyTitle,
+          caption: l10n.homeQuestsExtraCaption,
           color: AppColors.teal,
           onTap: () => _openCardSheet(
             DailyQuestsCard(
@@ -408,16 +409,16 @@ class _HomeScreenState extends State<HomeScreen>
       if (goalMet)
         _MoreTile(
           glyph: CinematicGlyph.crown,
-          title: 'Desafio da estação',
-          caption: 'Ver progresso',
+          title: l10n.seasonChallengeTitle,
+          caption: l10n.seasonChallengeSeeProgress,
           color: AppColors.orchid,
           onTap: () => _openCardSheet(SeasonChallengeBanner(catalog: trails)),
         ),
       if (mistakes > 0)
         _MoreTile(
           glyph: CinematicGlyph.refresh,
-          title: 'Revisitar',
-          caption: '$mistakes para reforçar',
+          title: l10n.homeReviewTitle,
+          caption: l10n.homeReviewCaption(mistakes),
           color: AppColors.error,
           onTap: () => Navigator.of(
             context,
@@ -622,19 +623,21 @@ class _CatalogUnavailable extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Text(
-                'As cenas ainda não chegaram',
+                context.l10n.homeCatalogEmptyTitle,
                 textAlign: TextAlign.center,
                 style: AppTypography.title(size: 18, color: a.text),
               ),
               const SizedBox(height: AppSpace.md),
               Text(
-                'O currículo baixa na primeira abertura. Se a rede oscilar, toque para tentar de novo.',
+                context.l10n.homeCatalogEmptyBody,
                 textAlign: TextAlign.center,
                 style: AppTypography.body(size: 14, color: a.textSecondary),
               ),
               const SizedBox(height: AppSpace.xxl),
               CopperCta(
-                label: retrying ? 'Baixando…' : 'Tentar de novo',
+                label: retrying
+                    ? context.l10n.homeCatalogDownloading
+                    : context.l10n.commonTryAgain,
                 onTap: retrying ? null : onShowDialog,
                 showArrow: false,
               ),
@@ -768,14 +771,15 @@ class _WalkHomeCard extends StatelessWidget {
         heroMissionSlug != null &&
         day.missionSlug == heroMissionSlug;
 
+    final l10n = context.l10n;
     // A missão do hero já é o dia da Caminhada — não duplica o CTA.
     if (sameAsHero) {
       return Padding(
         padding: const EdgeInsets.only(top: 4),
         child: TextCta(
           label: done
-              ? 'Dia $index de ${campaign.length} feito · ${campaign.title}'
-              : 'Dia $index de ${campaign.length} · ${campaign.title}',
+              ? l10n.homeSeasonDayOfDone(index!, campaign.length, campaign.title)
+              : l10n.homeSeasonDayOf(index!, campaign.length, campaign.title),
           onTap: () => openSeasonWalk(context),
           color: a.textSecondary,
         ),
@@ -789,7 +793,17 @@ class _WalkHomeCard extends StatelessWidget {
         button: true,
         label: day == null
             ? '${campaign.title}. ${campaign.subtitle}'
-            : '${campaign.title}. Dia $index${done ? ' feito' : ''}: ${day.title}',
+            : done
+            ? l10n.homeSeasonChipDoneSemantics(
+                campaign.title,
+                index!,
+                day.title,
+              )
+            : l10n.homeSeasonChipOpenSemantics(
+                campaign.title,
+                index!,
+                day.title,
+              ),
         excludeSemantics: true,
         child: GlassCard(
           padding: AppMetrics.cardPaddingCompact,
@@ -816,8 +830,8 @@ class _WalkHomeCard extends StatelessWidget {
                       day == null
                           ? campaign.subtitle
                           : done
-                          ? 'Dia $index feito · ${day.title}'
-                          : 'Dia $index · ${day.title}',
+                          ? l10n.homeSeasonDayDone(index!, day.title)
+                          : l10n.homeSeasonDayLine(index!, day.title),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: AppTypography.body(
@@ -885,7 +899,7 @@ class _MoreToday extends StatelessWidget {
             children: [
               Semantics(
                 header: true,
-                child: const SectionLabel('Mais para hoje'),
+                child: SectionLabel(context.l10n.homeMoreToday),
               ),
               const SizedBox(width: AppSpace.sm),
               Expanded(

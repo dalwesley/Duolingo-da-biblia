@@ -2,6 +2,7 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 
+import '../l10n/app_language.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
@@ -70,7 +71,7 @@ class JuntosSegmentTabs extends StatelessWidget {
               Row(
                 children: [
                   for (var i = 0; i < n; i++)
-                    Expanded(child: _tab(a, i, items[i])),
+                    Expanded(child: _tab(context.l10n, a, i, items[i])),
                 ],
               ),
             ],
@@ -81,6 +82,7 @@ class JuntosSegmentTabs extends StatelessWidget {
   }
 
   Widget _tab(
+    AppLocalizations l10n,
     AppearanceStyle a,
     int i,
     ({String label, CinematicGlyph glyph, bool alert}) item,
@@ -90,7 +92,7 @@ class JuntosSegmentTabs extends StatelessWidget {
     return Semantics(
       button: true,
       selected: selected,
-      label: item.alert ? '${item.label}, novidade' : item.label,
+      label: item.alert ? l10n.juntosChromeTabAlert(item.label) : item.label,
       excludeSemantics: true,
       child: GestureDetector(
         behavior: HitTestBehavior.opaque,

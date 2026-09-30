@@ -7,6 +7,8 @@ import 'package:package_info_plus/package_info_plus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../l10n/l10n_global.dart';
+
 /// Severidade do update remoto.
 enum AppUpdateKind { none, soft, force }
 
@@ -69,8 +71,7 @@ class AppUpdateService {
   static const _androidStoreDefault = androidStoreUrl;
   static const _iosStoreDefault = iosStoreUrl;
 
-  static const _defaultMessage =
-      'Uma nova versão do STWAY está pronta — melhorias e correções te esperam.';
+  static String get _defaultMessage => L10n.current.updateDefaultMessage;
 
   /// Uma vez por sessão (soft auto-check).
   static bool _sessionPromptShown = false;
@@ -107,7 +108,7 @@ class AppUpdateService {
         kind: AppUpdateKind.none,
         localVersion: localVersion,
         localBuild: localBuild,
-        message: 'Firebase indisponível.',
+        message: L10n.current.updateFirebaseUnavailable,
         storeUrl: storeUrl,
         remoteReachable: false,
       );
@@ -131,7 +132,7 @@ class AppUpdateService {
           kind: AppUpdateKind.none,
           localVersion: localVersion,
           localBuild: localBuild,
-          message: 'Nenhuma versão publicada na nuvem.',
+          message: L10n.current.updateNoneInCloud,
           storeUrl: storeUrl,
           remoteReachable: true,
         );
@@ -146,7 +147,7 @@ class AppUpdateService {
           localBuild: localBuild,
           latestVersion: data['latestVersion'] as String?,
           latestBuild: (data['latestBuild'] as num?)?.toInt(),
-          message: 'Checagem desligada.',
+          message: L10n.current.updateCheckDisabled,
           storeUrl: _storeUrlFrom(data) ?? storeUrl,
         );
       }
@@ -198,7 +199,7 @@ class AppUpdateService {
         kind: AppUpdateKind.none,
         localVersion: localVersion,
         localBuild: localBuild,
-        message: 'Não foi possível verificar agora.',
+        message: L10n.current.updateCheckFailed,
         storeUrl: storeUrl,
         remoteReachable: false,
       );

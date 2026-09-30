@@ -2,6 +2,8 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
+import '../l10n/l10n_global.dart';
+
 /// Uma tradução bíblica conhecida pelo app.
 class BibleTranslation {
   final String id;
@@ -104,7 +106,7 @@ class BibleService {
       id: 'jfaal',
       name: 'João Ferreira de Almeida Atualizada Livre',
       shortName: 'JFAAL',
-      blurb: 'Almeida 1911 atualizada · livre · offline',
+      blurb: 'Almeida 1911 atualizada · livre · sem internet',
       assetPath: 'assets/data/bible_jfaal.json',
       attribution:
           'Escrituras em português da JFAAL, Copyright © Marcos Cristiano '
@@ -255,7 +257,7 @@ class BibleService {
           abbrev: book.abbrev,
           chapter: 1,
           verse: 0,
-          text: '${book.chapters.length} capítulos',
+          text: L10n.current.bibleChapterCount(book.chapters.length),
           isBook: true,
         ));
         if (hits.length >= limit) return hits;

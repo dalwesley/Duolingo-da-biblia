@@ -2,6 +2,7 @@ import 'dart:math' as math;
 import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
+import '../l10n/l10n_global.dart';
 import '../theme/app_theme.dart';
 import 'ui_primitives.dart';
 
@@ -1315,7 +1316,7 @@ class HeroCardMoodStyle {
         glow: AppColors.ice.withValues(alpha: 0.12),
         label: AppColors.iceSoft,
         footer: AppColors.iceSoft.withValues(alpha: 0.95),
-        stepLabel: 'Protegido pelo gelo',
+        stepLabel: L10n.current.homeMoodFrozen,
       ),
       HeroCardMood.dusty => HeroCardMoodStyle(
         border: outline,
@@ -1323,7 +1324,7 @@ class HeroCardMoodStyle {
         glow: const Color(0xFF1A1008).withValues(alpha: 0.5),
         label: const Color(0xFFB89868),
         footer: const Color(0xFF9A7850),
-        stepLabel: 'Ficando para trás',
+        stepLabel: L10n.current.homeMoodDusty,
       ),
       HeroCardMood.alive => HeroCardMoodStyle(
         border: outline,
@@ -1331,7 +1332,7 @@ class HeroCardMoodStyle {
         glow: trailAccent.withValues(alpha: 0.12),
         label: trailAccent,
         footer: trailAccent,
-        stepLabel: 'Em dia',
+        stepLabel: L10n.current.homeMoodAlive,
       ),
     };
   }

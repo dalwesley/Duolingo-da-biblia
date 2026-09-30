@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_language.dart';
 import '../models/corner_challenge.dart';
 import '../theme/app_theme.dart';
 import 'act_feel.dart';
@@ -59,7 +60,7 @@ class _CornerInviteSheet extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           GhostCta(
-            label: 'Agora não',
+            label: context.l10n.commonNotNow,
             expanded: true,
             onTap: () => Navigator.of(context).pop(false),
           ),

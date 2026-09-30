@@ -541,7 +541,7 @@ class _Caption extends StatelessWidget {
               children: [
                 if (kicker != null && kicker!.isNotEmpty) ...[
                   Text(
-                    kicker!.toUpperCase(),
+                    kicker!,
                     textAlign: TextAlign.center,
                     style: AppTypography.label(
                       size: 11,

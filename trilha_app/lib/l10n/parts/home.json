@@ -1,0 +1,710 @@
+{
+  "homeMoodFrozen": {
+    "pt": "Protegido pelo gelo",
+    "en": "Protected by a freeze",
+    "es": "Protegida por el hielo"
+  },
+  "homeMoodDusty": {
+    "pt": "Sequência em risco",
+    "en": "Streak at risk",
+    "es": "Racha en riesgo"
+  },
+  "homeMoodAlive": {
+    "pt": "Em dia",
+    "en": "On track",
+    "es": "Al día"
+  },
+  "homeHeroFrozenLine": {
+    "pt": "O gelo cobriu ontem · sequência preservada",
+    "en": "A freeze covered yesterday · streak kept",
+    "es": "El hielo cubrió ayer · racha a salvo"
+  },
+  "homeHeroTomorrow": {
+    "pt": "Amanhã",
+    "en": "Tomorrow",
+    "es": "Mañana"
+  },
+  "homeHeroEcho": {
+    "pt": "Eco de ontem",
+    "en": "Echo of yesterday",
+    "es": "Eco de ayer"
+  },
+  "homeHeroReady": {
+    "pt": "Cena pronta",
+    "en": "Scene ready",
+    "es": "Escena lista"
+  },
+  "homeHeroExtraSteps": {
+    "pt": "+{count} passos · extra de hoje",
+    "en": "+{count} steps · today's extra",
+    "es": "+{count} pasos · extra de hoy",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "homeHeroProtect": {
+    "pt": "Protege a sequência · ~3 min",
+    "en": "Protects your streak · ~3 min",
+    "es": "Protege tu racha · ~3 min"
+  },
+  "homeHeroMinutes": {
+    "pt": "~3 min",
+    "en": "~3 min",
+    "es": "~3 min"
+  },
+  "homeTrailDoneTitle": {
+    "pt": "Trilha concluída",
+    "en": "Trail complete",
+    "es": "Ruta completada"
+  },
+  "homeTrailDoneBody": {
+    "pt": "Escolha a próxima e continue aprendendo.",
+    "en": "Pick the next one and keep learning.",
+    "es": "Elige la siguiente y sigue aprendiendo."
+  },
+  "homeSeeTrails": {
+    "pt": "Ver trilhas",
+    "en": "See trails",
+    "es": "Ver rutas"
+  },
+  "chestDailyTitle": {
+    "pt": "Baú do dia",
+    "en": "Daily chest",
+    "es": "Cofre del día"
+  },
+  "chestReady": {
+    "pt": "Sua recompensa de hoje está pronta",
+    "en": "Today's reward is ready",
+    "es": "Tu recompensa de hoy está lista"
+  },
+  "chestLocked": {
+    "pt": "Complete a cena de hoje para abrir",
+    "en": "Finish today's scene to open it",
+    "es": "Completa la escena de hoy para abrirlo"
+  },
+  "chestOpen": {
+    "pt": "Abrir o baú",
+    "en": "Open the chest",
+    "es": "Abrir el cofre"
+  },
+  "chestSheetTitle": {
+    "pt": "A sequência de hoje guarda uma recompensa.",
+    "en": "Today's streak holds a reward.",
+    "es": "La racha de hoy guarda una recompensa."
+  },
+  "chestOpening": {
+    "pt": "Abrindo…",
+    "en": "Opening…",
+    "es": "Abriendo…"
+  },
+  "chestRevealStarts": {
+    "pt": "A revelação começa agora.",
+    "en": "The reveal starts now.",
+    "es": "La revelación empieza ahora."
+  },
+  "chestVeryRare": {
+    "pt": "Raríssimo",
+    "en": "Very rare",
+    "es": "Rarísimo"
+  },
+  "chestTierToday": {
+    "pt": "{tier} de hoje",
+    "en": "Today's {tier}",
+    "es": "{tier} de hoy",
+    "placeholders": {
+      "tier": "String"
+    }
+  },
+  "questDailyTitle": {
+    "pt": "Tarefas do dia",
+    "en": "Daily tasks",
+    "es": "Tareas del día"
+  },
+  "questDailySubtitle": {
+    "pt": "Passos extras além da cena.",
+    "en": "Extra steps beyond the scene.",
+    "es": "Pasos extra además de la escena."
+  },
+  "questDone": {
+    "pt": "Feito",
+    "en": "Done",
+    "es": "Hecho"
+  },
+  "homeWordRead": {
+    "pt": "Ler {reference}",
+    "en": "Read {reference}",
+    "es": "Leer {reference}",
+    "placeholders": {
+      "reference": "String"
+    }
+  },
+  "homeWordInScene": {
+    "pt": "Nesta cena",
+    "en": "In this scene",
+    "es": "En esta escena"
+  },
+  "homeWordWord": {
+    "pt": "Palavra",
+    "en": "Word",
+    "es": "Palabra"
+  },
+  "growthDayUnit": {
+    "pt": "{count, plural, =1{dia } other{dias }}",
+    "en": "{count, plural, =1{day } other{days }}",
+    "es": "{count, plural, =1{día } other{días }}",
+    "placeholders": {
+      "count": "int"
+    },
+    "description": "Unit shown under the streak number. Trailing space only dodges the merge validator; code trims it."
+  },
+  "growthWhisper": {
+    "pt": "Cada dia da sequência sobe um marco: Semente, Broto, Ramo, Árvore e Fruto.",
+    "en": "Each streak day climbs a milestone: Seed, Sprout, Branch, Tree and Fruit.",
+    "es": "Cada día de racha sube un hito: Semilla, Brote, Rama, Árbol y Fruto."
+  },
+  "growthNextMilestone": {
+    "pt": "Próximo marco: {stage}",
+    "en": "Next milestone: {stage}",
+    "es": "Próximo hito: {stage}",
+    "placeholders": {
+      "stage": "String"
+    }
+  },
+  "growthNextIn": {
+    "pt": "{count, plural, =1{Próximo: {stage} · faltam 1 dia na sequência} other{Próximo: {stage} · faltam {count} dias na sequência}}",
+    "en": "{count, plural, =1{Next: {stage} · 1 streak day to go} other{Next: {stage} · {count} streak days to go}}",
+    "es": "{count, plural, =1{Próximo: {stage} · falta 1 día de racha} other{Próximo: {stage} · faltan {count} días de racha}}",
+    "placeholders": {
+      "stage": "String",
+      "count": "int"
+    }
+  },
+  "homeDefaultName": {
+    "pt": "Peregrino",
+    "en": "Pilgrim",
+    "es": "Peregrino",
+    "description": "Fallback name when the user has no name."
+  },
+  "homeOpenProfile": {
+    "pt": "Abrir perfil de {name}",
+    "en": "Open {name}'s profile",
+    "es": "Abrir el perfil de {name}",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "homeStatAtRisk": {
+    "pt": "em risco",
+    "en": "at risk",
+    "es": "en riesgo"
+  },
+  "homeStatGoal": {
+    "pt": "meta",
+    "en": "goal",
+    "es": "meta"
+  },
+  "homeStatFreezeUsed": {
+    "pt": "gelo usado",
+    "en": "freeze used",
+    "es": "hielo usado"
+  },
+  "homeStatFreeze": {
+    "pt": "gelo",
+    "en": "freeze",
+    "es": "hielo"
+  },
+  "homeSeasonChipSemantics": {
+    "pt": "{season} · abrir leitura da estação",
+    "en": "{season} · open the season reading",
+    "es": "{season} · abrir la lectura de la temporada litúrgica",
+    "placeholders": {
+      "season": "String"
+    }
+  },
+  "comebackEyebrow": {
+    "pt": "O peregrino",
+    "en": "The pilgrim",
+    "es": "El peregrino"
+  },
+  "comebackTitle": {
+    "pt": "Sua sequência te espera",
+    "en": "Your streak is waiting",
+    "es": "Tu racha te espera"
+  },
+  "comebackSubtitleGap": {
+    "pt": "{count, plural, =1{{name}, faz 1 dia sem uma cena. Uma só basta — e você ganha +{bonus} passos de boas-vindas.} other{{name}, faz {count} dias sem uma cena. Uma só basta — e você ganha +{bonus} passos de boas-vindas.}}",
+    "en": "{count, plural, =1{{name}, it's been 1 day without a scene. Just one is enough — and you get +{bonus} welcome-back steps.} other{{name}, it's been {count} days without a scene. Just one is enough — and you get +{bonus} welcome-back steps.}}",
+    "es": "{count, plural, =1{{name}, llevas 1 día sin una escena. Basta con una — y ganas +{bonus} pasos de bienvenida.} other{{name}, llevas {count} días sin una escena. Basta con una — y ganas +{bonus} pasos de bienvenida.}}",
+    "placeholders": {
+      "name": "String",
+      "count": "int",
+      "bonus": "int"
+    }
+  },
+  "comebackSubtitle": {
+    "pt": "{name}, a trilha espera você. Uma cena retoma a sequência e rende +{bonus} passos de boas-vindas.",
+    "en": "{name}, the trail is waiting for you. One scene restarts your streak and earns +{bonus} welcome-back steps.",
+    "es": "{name}, la ruta te espera. Una escena retoma tu racha y te da +{bonus} pasos de bienvenida.",
+    "placeholders": {
+      "name": "String",
+      "bonus": "int"
+    }
+  },
+  "reminderMorning": {
+    "pt": "Manhã",
+    "en": "Morning",
+    "es": "Mañana"
+  },
+  "reminderNoon": {
+    "pt": "Meio-dia",
+    "en": "Noon",
+    "es": "Mediodía"
+  },
+  "reminderNight": {
+    "pt": "Noite",
+    "en": "Evening",
+    "es": "Noche"
+  },
+  "reminderHour": {
+    "pt": "{hour}h",
+    "en": "{hour}:00",
+    "es": "{hour}:00",
+    "placeholders": {
+      "hour": "int"
+    }
+  },
+  "reminderDailyEyebrow": {
+    "pt": "Lembrete diário",
+    "en": "Daily reminder",
+    "es": "Recordatorio diario"
+  },
+  "reminderTitle": {
+    "pt": "Em que hora lembramos você?",
+    "en": "What time should we remind you?",
+    "es": "¿A qué hora te lo recordamos?"
+  },
+  "reminderSubtitleSettings": {
+    "pt": "Um aviso por dia, no horário que você escolher.",
+    "en": "One reminder a day, at the time you choose.",
+    "es": "Un aviso al día, a la hora que elijas."
+  },
+  "reminderSubtitle": {
+    "pt": "Um horário fixo cola o hábito. Amanhã te avisamos da próxima cena.",
+    "en": "A fixed time makes the habit stick. Tomorrow we'll let you know about the next scene.",
+    "es": "Una hora fija afianza el hábito. Mañana te avisamos de la siguiente escena."
+  },
+  "reminderRemindAt": {
+    "pt": "Lembrar às {hour}h",
+    "en": "Remind me at {hour}:00",
+    "es": "Recordar a las {hour}:00",
+    "placeholders": {
+      "hour": "int"
+    }
+  },
+  "chestRewards": {
+    "pt": "Recompensas",
+    "en": "Rewards",
+    "es": "Recompensas"
+  },
+  "chestOpened": {
+    "pt": "Aberto",
+    "en": "Opened",
+    "es": "Abierto"
+  },
+  "chestOpenShort": {
+    "pt": "Abrir",
+    "en": "Open",
+    "es": "Abrir"
+  },
+  "chestLockedShort": {
+    "pt": "Trancado",
+    "en": "Locked",
+    "es": "Cerrado"
+  },
+  "questWeeklyTitle": {
+    "pt": "Tarefas da semana",
+    "en": "Weekly tasks",
+    "es": "Tareas de la semana"
+  },
+  "questCountOf": {
+    "pt": "{done} de {total}",
+    "en": "{done} of {total}",
+    "es": "{done} de {total}",
+    "placeholders": {
+      "done": "int",
+      "total": "int"
+    }
+  },
+  "questProgressLine": {
+    "pt": "{value} de {target} · {subtitle}",
+    "en": "{value} of {target} · {subtitle}",
+    "es": "{value} de {target} · {subtitle}",
+    "placeholders": {
+      "value": "int",
+      "target": "int",
+      "subtitle": "String"
+    }
+  },
+  "questDoneLower": {
+    "pt": "feito",
+    "en": "done",
+    "es": "hecho"
+  },
+  "homeLampsTitle": {
+    "pt": "Lâmpadas",
+    "en": "Lamps",
+    "es": "Lámparas"
+  },
+  "homeLampsSemantics": {
+    "pt": "{current} de {max} lâmpadas. Cada erro apaga uma.",
+    "en": "{current} of {max} lamps. Each mistake puts one out.",
+    "es": "{current} de {max} lámparas. Cada error apaga una.",
+    "placeholders": {
+      "current": "int",
+      "max": "int"
+    }
+  },
+  "homeLampsHint": {
+    "pt": "Erro apaga uma · zerar encerra",
+    "en": "A mistake puts one out · none left ends it",
+    "es": "Un error apaga una · sin lámparas, termina"
+  },
+  "streakDayFrozen": {
+    "pt": "protegido pelo gelo",
+    "en": "protected by a freeze",
+    "es": "protegido por el hielo"
+  },
+  "streakDayEmpty": {
+    "pt": "sem cena",
+    "en": "no scene",
+    "es": "sin escena"
+  },
+  "streakDaySemantics": {
+    "pt": "{day}: {status}",
+    "en": "{day}: {status}",
+    "es": "{day}: {status}",
+    "placeholders": {
+      "day": "String",
+      "status": "String"
+    }
+  },
+  "streakDayTodaySemantics": {
+    "pt": "Hoje, {day}: {status}",
+    "en": "Today, {day}: {status}",
+    "es": "Hoy, {day}: {status}",
+    "placeholders": {
+      "day": "String",
+      "status": "String"
+    }
+  },
+  "streakRepairTitle": {
+    "pt": "Reparar sequência",
+    "en": "Repair streak",
+    "es": "Reparar racha"
+  },
+  "streakRepairBody": {
+    "pt": "{broken, plural, =1{Você tinha 1 dia. Restaure para {restored} — 1× neste mês.} other{Você tinha {broken} dias. Restaure para {restored} — 1× neste mês.}}",
+    "en": "{broken, plural, =1{You had 1 day. Restore it to {restored} — once this month.} other{You had {broken} days. Restore it to {restored} — once this month.}}",
+    "es": "{broken, plural, =1{Tenías 1 día. Restáurala a {restored} — 1 vez este mes.} other{Tenías {broken} días. Restáurala a {restored} — 1 vez este mes.}}",
+    "placeholders": {
+      "broken": "int",
+      "restored": "int"
+    }
+  },
+  "streakRepairAction": {
+    "pt": "Reparar",
+    "en": "Repair",
+    "es": "Reparar"
+  },
+  "streakRepairDone": {
+    "pt": "{count, plural, =1{Sequência restaurada · 1 dia} other{Sequência restaurada · {count} dias}}",
+    "en": "{count, plural, =1{Streak restored · 1 day} other{Streak restored · {count} days}}",
+    "es": "{count, plural, =1{Racha restaurada · 1 día} other{Racha restaurada · {count} días}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "streakRepairDismiss": {
+    "pt": "Deixar",
+    "en": "Let it go",
+    "es": "Dejarla"
+  },
+  "streakRepairCanReturn": {
+    "pt": "{count, plural, =1{1 dia ainda pode voltar} other{{count} dias ainda podem voltar}}",
+    "en": "{count, plural, =1{1 day can still come back} other{{count} days can still come back}}",
+    "es": "{count, plural, =1{1 día aún puede volver} other{{count} días aún pueden volver}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "streakRepairContinueWith": {
+    "pt": "Continue com {count} · 1× neste mês",
+    "en": "Keep going with {count} · once this month",
+    "es": "Sigue con {count} · 1 vez este mes",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "streakShareDays": {
+    "pt": "{count, plural, =1{🔥 1 dia no Stway!\n\nEstou aprendendo a Bíblia em cenas curtas — {steps} passos até agora.{signature}\n\nBaixe o Stway e venha junto.} other{🔥 {count} dias no Stway!\n\nEstou aprendendo a Bíblia em cenas curtas — {steps} passos até agora.{signature}\n\nBaixe o Stway e venha junto.}}",
+    "en": "{count, plural, =1{🔥 1 day on Stway!\n\nI'm learning the Bible in short scenes — {steps} steps so far.{signature}\n\nGet Stway and come along.} other{🔥 {count} days on Stway!\n\nI'm learning the Bible in short scenes — {steps} steps so far.{signature}\n\nGet Stway and come along.}}",
+    "es": "{count, plural, =1{🔥 ¡1 día en Stway!\n\nEstoy aprendiendo la Biblia en escenas cortas — {steps} pasos hasta ahora.{signature}\n\nDescarga Stway y ven conmigo.} other{🔥 ¡{count} días en Stway!\n\nEstoy aprendiendo la Biblia en escenas cortas — {steps} pasos hasta ahora.{signature}\n\nDescarga Stway y ven conmigo.}}",
+    "placeholders": {
+      "count": "int",
+      "steps": "int",
+      "signature": "String"
+    },
+    "description": "Share text the user sends to friends. {signature} is empty or a new line with the user's name."
+  },
+  "streakShareSteps": {
+    "pt": "🔥 Estou aprendendo a Bíblia no Stway — {steps} passos até agora.{signature}\n\nBaixe o Stway e venha junto.",
+    "en": "🔥 I'm learning the Bible on Stway — {steps} steps so far.{signature}\n\nGet Stway and come along.",
+    "es": "🔥 Estoy aprendiendo la Biblia en Stway — {steps} pasos hasta ahora.{signature}\n\nDescarga Stway y ven conmigo.",
+    "placeholders": {
+      "steps": "int",
+      "signature": "String"
+    }
+  },
+  "streakShareStart": {
+    "pt": "🔥 Comecei a aprender a Bíblia com o Stway.{signature}\n\nBaixe o Stway e venha junto.",
+    "en": "🔥 I started learning the Bible with Stway.{signature}\n\nGet Stway and come along.",
+    "es": "🔥 Empecé a aprender la Biblia con Stway.{signature}\n\nDescarga Stway y ven conmigo.",
+    "placeholders": {
+      "signature": "String"
+    }
+  },
+  "streakShareSubject": {
+    "pt": "Minha sequência no Stway",
+    "en": "My streak on Stway",
+    "es": "Mi racha en Stway"
+  },
+  "streakShareTooltip": {
+    "pt": "Compartilhar sequência",
+    "en": "Share streak",
+    "es": "Compartir racha"
+  },
+  "homeFreezeSheetTitle": {
+    "pt": "O gelo cobriu ontem",
+    "en": "A freeze covered yesterday",
+    "es": "El hielo cubrió ayer"
+  },
+  "homeFreezeSheetBody": {
+    "pt": "Você perdeu um dia, mas a sequência continua. O gelo salva uma falta por semana — caminhe hoje para seguir.",
+    "en": "You missed a day, but your streak continues. A freeze covers one miss per week — walk today to keep going.",
+    "es": "Perdiste un día, pero tu racha sigue. El hielo salva una falta por semana — camina hoy para continuar."
+  },
+  "homeBibleOfflineSubtitle": {
+    "pt": "Leia sem internet",
+    "en": "Read without internet",
+    "es": "Lee sin internet"
+  },
+  "chestReadyShort": {
+    "pt": "Pronto para abrir",
+    "en": "Ready to open",
+    "es": "Listo para abrir"
+  },
+  "homeJuntosNews": {
+    "pt": "{count, plural, =1{1 novidade} other{{count} novidades}}",
+    "en": "{count, plural, =1{1 update} other{{count} updates}}",
+    "es": "{count, plural, =1{1 novedad} other{{count} novedades}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "homeQuestsExtraCaption": {
+    "pt": "Passos extras",
+    "en": "Extra steps",
+    "es": "Pasos extra"
+  },
+  "homeReviewTitle": {
+    "pt": "Revisão",
+    "en": "Review",
+    "es": "Repaso"
+  },
+  "homeReviewCaption": {
+    "pt": "{count, plural, =1{1 para reforçar} other{{count} para reforçar}}",
+    "en": "{count, plural, =1{1 to reinforce} other{{count} to reinforce}}",
+    "es": "{count, plural, =1{1 para reforzar} other{{count} para reforzar}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "homeCatalogEmptyTitle": {
+    "pt": "As cenas ainda não chegaram",
+    "en": "The scenes haven't arrived yet",
+    "es": "Las escenas aún no llegaron"
+  },
+  "homeCatalogEmptyBody": {
+    "pt": "As cenas baixam na primeira abertura. Se a conexão falhar, toque para tentar de novo.",
+    "en": "Scenes download on first open. If the connection fails, tap to try again.",
+    "es": "Las escenas se descargan al abrir por primera vez. Si falla la conexión, toca para intentarlo de nuevo."
+  },
+  "homeCatalogDownloading": {
+    "pt": "Baixando…",
+    "en": "Downloading…",
+    "es": "Descargando…"
+  },
+  "homeSeasonDayOfDone": {
+    "pt": "Dia {day} de {total} feito · {title}",
+    "en": "Day {day} of {total} done · {title}",
+    "es": "Día {day} de {total} hecho · {title}",
+    "placeholders": {
+      "day": "int",
+      "total": "int",
+      "title": "String"
+    }
+  },
+  "homeSeasonDayOf": {
+    "pt": "Dia {day} de {total} · {title}",
+    "en": "Day {day} of {total} · {title}",
+    "es": "Día {day} de {total} · {title}",
+    "placeholders": {
+      "day": "int",
+      "total": "int",
+      "title": "String"
+    }
+  },
+  "homeSeasonDayDone": {
+    "pt": "Dia {day} feito · {title}",
+    "en": "Day {day} done · {title}",
+    "es": "Día {day} hecho · {title}",
+    "placeholders": {
+      "day": "int",
+      "title": "String"
+    }
+  },
+  "homeSeasonDayLine": {
+    "pt": "Dia {day} · {title}",
+    "en": "Day {day} · {title}",
+    "es": "Día {day} · {title}",
+    "placeholders": {
+      "day": "int",
+      "title": "String"
+    }
+  },
+  "homeSeasonChipDoneSemantics": {
+    "pt": "{season}. Dia {day} feito: {dayTitle}",
+    "en": "{season}. Day {day} done: {dayTitle}",
+    "es": "{season}. Día {day} hecho: {dayTitle}",
+    "placeholders": {
+      "season": "String",
+      "day": "int",
+      "dayTitle": "String"
+    }
+  },
+  "homeSeasonChipOpenSemantics": {
+    "pt": "{season}. Dia {day}: {dayTitle}",
+    "en": "{season}. Day {day}: {dayTitle}",
+    "es": "{season}. Día {day}: {dayTitle}",
+    "placeholders": {
+      "season": "String",
+      "day": "int",
+      "dayTitle": "String"
+    }
+  },
+  "homeMoreToday": {
+    "pt": "Mais para hoje",
+    "en": "More for today",
+    "es": "Más para hoy"
+  },
+  "questMissionTitle": {
+    "pt": "Uma cena",
+    "en": "One scene",
+    "es": "Una escena"
+  },
+  "questMissionSubtitle": {
+    "pt": "Complete uma cena",
+    "en": "Complete one scene",
+    "es": "Completa una escena"
+  },
+  "questAccuracyTitle": {
+    "pt": "Olho firme",
+    "en": "Steady eye",
+    "es": "Ojo firme"
+  },
+  "questAccuracySubtitle": {
+    "pt": "Termine uma cena com 80% de acertos",
+    "en": "Finish a scene with 80% correct",
+    "es": "Termina una escena con 80% de aciertos"
+  },
+  "questReadTitle": {
+    "pt": "Na Palavra",
+    "en": "In the Word",
+    "es": "En la Palabra"
+  },
+  "questReadSubtitle": {
+    "pt": "Leia um capítulo",
+    "en": "Read one chapter",
+    "es": "Lee un capítulo"
+  },
+  "questWeeklyScenesTitle": {
+    "pt": "Cinco cenas",
+    "en": "Five scenes",
+    "es": "Cinco escenas"
+  },
+  "questWeeklyScenesSubtitle": {
+    "pt": "Complete 5 cenas nesta semana",
+    "en": "Complete 5 scenes this week",
+    "es": "Completa 5 escenas esta semana"
+  },
+  "questWeeklyDaysTitle": {
+    "pt": "Quatro dias",
+    "en": "Four days",
+    "es": "Cuatro días"
+  },
+  "questWeeklyDaysSubtitle": {
+    "pt": "Caminhe em 4 dias diferentes",
+    "en": "Walk on 4 different days",
+    "es": "Camina en 4 días distintos"
+  },
+  "questWeeklyPerfectTitle": {
+    "pt": "Duas sem erro",
+    "en": "Two perfect",
+    "es": "Dos sin error"
+  },
+  "questWeeklyPerfectSubtitle": {
+    "pt": "Duas cenas com 100% de acertos na semana",
+    "en": "Two scenes with 100% correct this week",
+    "es": "Dos escenas con 100% de aciertos en la semana"
+  },
+  "questMilestone25Title": {
+    "pt": "Bom começo",
+    "en": "Good start",
+    "es": "Buen comienzo"
+  },
+  "questMilestone25Subtitle": {
+    "pt": "25% da trilha",
+    "en": "25% of the trail",
+    "es": "25% de la ruta"
+  },
+  "questMilestone50Title": {
+    "pt": "Meio do caminho",
+    "en": "Halfway",
+    "es": "A mitad de camino"
+  },
+  "questMilestone50Subtitle": {
+    "pt": "50% da trilha",
+    "en": "50% of the trail",
+    "es": "50% de la ruta"
+  },
+  "questMilestone75Title": {
+    "pt": "Quase lá",
+    "en": "Almost there",
+    "es": "Casi ahí"
+  },
+  "questMilestone75Subtitle": {
+    "pt": "75% da trilha",
+    "en": "75% of the trail",
+    "es": "75% de la ruta"
+  },
+  "questMilestone100Title": {
+    "pt": "Jornada percorrida",
+    "en": "Journey complete",
+    "es": "Camino recorrido"
+  },
+  "questMilestone100Subtitle": {
+    "pt": "100% — continue caminhando",
+    "en": "100% — keep walking",
+    "es": "100% — sigue caminando"
+  }
+}

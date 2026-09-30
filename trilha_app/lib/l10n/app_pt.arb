@@ -1,0 +1,5443 @@
+{
+  "@@locale": "pt",
+  "@@x-generated": "tool/l10n_merge.py — edit lib/l10n/parts",
+  "authAccountExists": "Já existe uma conta com este e-mail usando outro método de login.",
+  "authEnableProviders": "Ative os provedores no Firebase Console: Authentication → Sign-in method → Anonymous e/ou Google.",
+  "authFirebaseNotReady": "Firebase ainda não está pronto.",
+  "authGenericError": "Erro de Auth ({code}): {message}",
+  "@authGenericError": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      },
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "authInvalidCredential": "Credencial Google inválida. Cadastre o SHA-1 do app no Firebase e baixe o google-services.json de novo.",
+  "authLoginInProgress": "Login em andamento.",
+  "authMissingIdToken": "Google não retornou idToken. Confira se o SHA-1 da Play está no Firebase.",
+  "authNetworkReset": "Falha de rede ao falar com o Firebase Auth (conexão resetada). Tente de novo em Wi‑Fi estável ou dados móveis.",
+  "authNoInternet": "Sem conexão com a internet. Verifique o Wi‑Fi/dados do aparelho.",
+  "authTooManyRequests": "Muitas tentativas. Aguarde um pouco e tente de novo.",
+  "avatarChangePortrait": "Alterar retrato",
+  "avatarOpenProfile": "Abrir perfil",
+  "bibleBookFallback": "Livro {number}",
+  "@bibleBookFallback": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      }
+    }
+  },
+  "bibleBookReadSemantics": "{book}, {read} de {total} capítulos lidos",
+  "@bibleBookReadSemantics": {
+    "placeholders": {
+      "book": {
+        "type": "String"
+      },
+      "read": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "bibleChapterCount": "{count, plural, =1{1 capítulo} other{{count} capítulos}}",
+  "@bibleChapterCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "bibleChapterCountShort": "{count, plural, =1{1 cap.} other{{count} caps.}}",
+  "@bibleChapterCountShort": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "bibleChapterLabel": "Capítulo {chapter}",
+  "@bibleChapterLabel": {
+    "placeholders": {
+      "chapter": {
+        "type": "int"
+      }
+    }
+  },
+  "bibleChapterReadSemantics": "Capítulo {chapter}, lido",
+  "@bibleChapterReadSemantics": {
+    "placeholders": {
+      "chapter": {
+        "type": "int"
+      }
+    }
+  },
+  "bibleChaptersReadOf": "{read} de {total} lidos",
+  "@bibleChaptersReadOf": {
+    "placeholders": {
+      "read": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "bibleDonate": "Doar",
+  "bibleHeroContinueReading": "Continuar leitura",
+  "bibleHeroFreshBlurb": "Jesus, a Palavra que se fez carne — um bom começo.",
+  "bibleHeroStartHere": "Comece por aqui",
+  "bibleHeroStartReading": "Começar a ler",
+  "bibleIntroAudience": "Para quem",
+  "bibleIntroAuthorByTradition": "{author} · tradição",
+  "@bibleIntroAuthorByTradition": {
+    "placeholders": {
+      "author": {
+        "type": "String"
+      }
+    }
+  },
+  "bibleIntroWhen": "Quando",
+  "bibleIntroWho": "Quem",
+  "bibleNewTestament": "Novo Testamento",
+  "bibleOldTestament": "Antigo Testamento",
+  "biblePaperAuto": "Automático",
+  "biblePaperLight": "Clara",
+  "biblePaperNight": "Noite",
+  "biblePaperSemantics": "Papel {paper}",
+  "@biblePaperSemantics": {
+    "placeholders": {
+      "paper": {
+        "type": "String"
+      }
+    }
+  },
+  "biblePaperSepia": "Sépia",
+  "biblePickerBackToBooks": "Voltar aos livros",
+  "biblePickerTitle": "Ir para",
+  "bibleReadChapter": "Ler o capítulo",
+  "bibleReadOf": "{read} de {total}",
+  "@bibleReadOf": {
+    "placeholders": {
+      "read": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "bibleReaderChapterDone": "Capítulo lido",
+  "bibleReaderChapterEnd": "Fim de {book} {chapter}",
+  "@bibleReaderChapterEnd": {
+    "placeholders": {
+      "book": {
+        "type": "String"
+      },
+      "chapter": {
+        "type": "int"
+      }
+    }
+  },
+  "bibleReaderChapterReadToast": "{book} {chapter} lido",
+  "@bibleReaderChapterReadToast": {
+    "placeholders": {
+      "book": {
+        "type": "String"
+      },
+      "chapter": {
+        "type": "int"
+      }
+    }
+  },
+  "bibleReaderCompleteChapter": "Concluir capítulo",
+  "bibleReaderListen": "Ouvir",
+  "bibleReaderNextChapter": "Próximo capítulo",
+  "bibleReaderOpenFailed": "Não foi possível abrir {reference}.",
+  "@bibleReaderOpenFailed": {
+    "placeholders": {
+      "reference": {
+        "type": "String"
+      }
+    }
+  },
+  "bibleReaderPaper": "Papel",
+  "bibleReaderPrevChapter": "Capítulo anterior",
+  "bibleReaderReadTag": "lido",
+  "bibleReaderSettings": "Ajustes de leitura",
+  "bibleReaderStop": "Parar",
+  "bibleReaderSubtitle": "Capítulo {chapter} · {translation}",
+  "@bibleReaderSubtitle": {
+    "placeholders": {
+      "chapter": {
+        "type": "int"
+      },
+      "translation": {
+        "type": "String"
+      }
+    }
+  },
+  "bibleReaderTextSize": "Tamanho do texto",
+  "bibleReaderUpNext": "A seguir",
+  "bibleReaderVersion": "Versão",
+  "bibleSavedEmptyBody": "Na leitura, toque num versículo e escolha Guardar para voltar a ele depois.",
+  "bibleSavedEmptyTitle": "Nenhum versículo guardado",
+  "bibleSavedTitle": "Guardados",
+  "bibleSearchBookHit": "Livro",
+  "bibleSearchButtonHint": "Buscar livro, versículo ou palavra…",
+  "bibleSearchButtonSemantics": "Buscar livro ou versículo",
+  "bibleSearchEmpty": "Nenhum resultado encontrado",
+  "bibleSearchFieldHint": "Ex.: Apocalipse, amor, fé…",
+  "@bibleSearchFieldHint": {
+    "description": "Os exemplos ficam em português: a busca é no texto bíblico em português."
+  },
+  "bibleSearchSubtitle": "Livros e versículos",
+  "bibleSearchTitle": "Buscar",
+  "bibleSectionBooksSemantics": "{count, plural, =1{{title}, 1 livro} other{{title}, {count} livros}}",
+  "@bibleSectionBooksSemantics": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "bibleShareAsText": "Compartilhar como texto",
+  "bibleShareImage": "Compartilhar imagem",
+  "bibleSharePreparing": "Preparando…",
+  "bibleShareTextFooter": "Via Stway",
+  "bibleShareTitle": "Compartilhar versículo",
+  "bibleShareVia": "{ref} — via Stway",
+  "@bibleShareVia": {
+    "description": "Assinatura em textos compartilhados do versículo",
+    "placeholders": {
+      "ref": {
+        "type": "String"
+      }
+    }
+  },
+  "bibleTabReading": "Leitura",
+  "bibleTapToClose": "Toque para fechar",
+  "bibleTapToOpen": "Toque para abrir",
+  "bibleTitle": "Bíblia",
+  "bibleTranslationSoonBody": "Ainda não temos {name}. Em breve essa tradução entra no app. Você pode contribuir com o projeto para ajudar a trazer mais versões.",
+  "@bibleTranslationSoonBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "bibleTranslationSoonTitle": "Tradução em breve",
+  "bibleVerseCopied": "Versículo copiado",
+  "bibleVerseCopy": "Copiar",
+  "bibleVerseCount": "{count, plural, =1{1 versículo} other{{count} versículos}}",
+  "@bibleVerseCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "bibleVerseListenFromHere": "Ouvir daqui em diante",
+  "bibleVerseListenFromHereDetail": "Leitura em voz alta, versículo a versículo",
+  "bibleVerseSave": "Guardar",
+  "bibleVerseSaved": "Guardado",
+  "bibleVerseSemantics": "Versículo {number}. {text}",
+  "@bibleVerseSemantics": {
+    "placeholders": {
+      "number": {
+        "type": "int"
+      },
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "bibleVerseStudy": "Estudar este versículo",
+  "bibleVerseStudyDetail": "Originais, Strong, concordância e referências",
+  "canonEvangelhosBlurb": "Mateus a João — a vida de Jesus",
+  "canonEvangelhosTitle": "Evangelhos",
+  "canonGeraisBlurb": "Hebreus a Judas",
+  "canonGeraisTitle": "Cartas gerais",
+  "canonHistoriaNtBlurb": "Atos dos Apóstolos",
+  "canonHistoriaNtTitle": "História",
+  "canonHistoricosBlurb": "Josué a Ester — a história de Israel",
+  "canonHistoricosTitle": "Históricos",
+  "canonPaulinasBlurb": "Romanos a Filemom",
+  "canonPaulinasTitle": "Cartas paulinas",
+  "canonPentateucoBlurb": "A Lei — Gênesis a Deuteronômio",
+  "canonPentateucoTitle": "Pentateuco",
+  "canonPoeticosBlurb": "Jó a Cantares",
+  "canonPoeticosTitle": "Poéticos e sabedoria",
+  "canonProfeciaBlurb": "Apocalipse",
+  "canonProfeciaTitle": "Profecia",
+  "canonProfetasMaioresBlurb": "Isaías a Daniel",
+  "canonProfetasMaioresTitle": "Profetas maiores",
+  "canonProfetasMenoresBlurb": "Oséias a Malaquias",
+  "canonProfetasMenoresTitle": "Profetas menores",
+  "categoryApocalipseBlurb": "O livro de Apocalipse, escrito por João Evangelista.",
+  "categoryApocalipseTitle": "Apocalipse ou Revelação",
+  "categoryCristologiaTitle": "Cristologia",
+  "categoryDiscipuladoTitle": "Discipulado",
+  "categoryEpistolasBlurb": "Vinte e uma cartas às primeiras igrejas — treze de Paulo e oito de outros autores.",
+  "categoryEpistolasTitle": "Epístolas ou cartas apostólicas",
+  "categoryEvangelhosBlurb": "Nascimento, ministério, morte, ressurreição e ascensão de Jesus — Mateus a João.",
+  "categoryEvangelhosTitle": "Evangelhos",
+  "categoryHermeneuticaTitle": "Hermenêutica",
+  "categoryHistoriaIgrejaTitle": "História da Igreja",
+  "categoryHistoricosAtBlurb": "A história de Israel da conquista da Terra Prometida até o exílio babilônico.",
+  "categoryHistoricosAtTitle": "Livros históricos",
+  "categoryHistoricosNtBlurb": "Atos dos Apóstolos — o derramar do Espírito e a expansão do Evangelho.",
+  "categoryHistoricosNtTitle": "História da Igreja primitiva",
+  "categoryIntertestamentarioBlurb": "Os cerca de 400 anos de silêncio entre o Antigo e o Novo Testamento.",
+  "categoryIntertestamentarioTitle": "Período intertestamentário",
+  "categoryLinguasTitle": "Línguas originais",
+  "categoryOracaoTitle": "Oração",
+  "categoryPentateucoBlurb": "Os cinco primeiros livros da Bíblia — a Torá, o Livro da Lei, em ordem cronológica.",
+  "categoryPentateucoTitle": "Pentateuco",
+  "categoryPoeticosBlurb": "Poesia, sabedoria, provérbios e cânticos — organizados por relevância.",
+  "categoryPoeticosTitle": "Livros poéticos",
+  "categoryProfetasMaioresBlurb": "Isaías a Daniel — obras mais extensas entre os registros proféticos.",
+  "categoryProfetasMaioresTitle": "Profetas maiores",
+  "categoryProfetasMenoresBlurb": "Oséias a Malaquias — doze livros; o nome refere-se à extensão, não à importância.",
+  "categoryProfetasMenoresTitle": "Profetas menores",
+  "categorySistematicaTitle": "Sistemática e dogmática",
+  "celebrationBackHome": "Voltar ao início",
+  "celebrationBackToMap": "Voltar ao mapa",
+  "celebrationCommitmentBeyond": "Além do compromisso de {goal} dias.",
+  "@celebrationCommitmentBeyond": {
+    "placeholders": {
+      "goal": {
+        "type": "int"
+      }
+    }
+  },
+  "celebrationCommitmentDone": "Compromisso de {goal} dias cumprido!",
+  "@celebrationCommitmentDone": {
+    "placeholders": {
+      "goal": {
+        "type": "int"
+      }
+    }
+  },
+  "celebrationCommitmentLeft": "{count, plural, =1{Falta 1 dia para o seu compromisso.} other{Faltam {count} dias para o seu compromisso.}}",
+  "@celebrationCommitmentLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "celebrationEchoKicker": "Hoje você viu",
+  "celebrationHelpContinue": "Ajude a continuar",
+  "@celebrationHelpContinue": {
+    "description": "Link para a página de doação"
+  },
+  "celebrationInviteSubtitle": "Um companheiro. Sem ranking — só presença.",
+  "celebrationInviteTitle": "Uma companhia na trilha",
+  "celebrationModeDone": "Modo {mode} concluído",
+  "@celebrationModeDone": {
+    "description": "mode = Observação / Compreensão / Interpretação",
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "celebrationModeRetryPrompt": "Que tal responder de novo em {mode}? {subtitle}",
+  "@celebrationModeRetryPrompt": {
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      },
+      "subtitle": {
+        "type": "String"
+      }
+    }
+  },
+  "celebrationModeReviewCta": "Revisar uma cena em {mode}",
+  "@celebrationModeReviewCta": {
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "celebrationModeSwitchCta": "Mudar para {mode}",
+  "@celebrationModeSwitchCta": {
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "celebrationModeTryCta": "Tentar em {mode}",
+  "@celebrationModeTryCta": {
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "celebrationModeTryPrompt": "Quer tentar as perguntas desta cena em {mode}?",
+  "@celebrationModeTryPrompt": {
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "celebrationSceneDoneIn": "Cena concluída em {mode}",
+  "@celebrationSceneDoneIn": {
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "celebrationSealKicker": "Encontro",
+  "@celebrationSealKicker": {
+    "description": "Rótulo acima do nome do personagem quando o aluno encontra um novo selo"
+  },
+  "celebrationStatAccuracy": "Acertos",
+  "celebrationStatDay": "Dia",
+  "@celebrationStatDay": {
+    "description": "Rótulo sob o número 1 da sequência"
+  },
+  "celebrationStatDays": "Dias",
+  "@celebrationStatDays": {
+    "description": "Rótulo sob o número de dias da sequência (≠ 1)"
+  },
+  "celebrationStatSteps": "Passos",
+  "celebrationStreakPlusDay": "{count, plural, =1{+1 dia · sequência de 1 dia} other{+1 dia · sequência de {count} dias}}",
+  "@celebrationStreakPlusDay": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "celebrationStreakStarted": "Sua sequência começou hoje.",
+  "celebrationTomorrowKicker": "Amanhã",
+  "chestBencaoMessage": "\"O Senhor te abençoe e te guarde\" — Números 6:24.",
+  "chestBencaoTitle": "Bênção rara",
+  "chestDailyTitle": "Baú do dia",
+  "chestGraoMessage": "Pequeno hoje, semente de algo maior amanhã.",
+  "chestGraoTitle": "Grão de trigo",
+  "chestGuardadaMessage": "Este momento vale um versículo guardado no coração hoje.",
+  "chestGuardadaTitle": "Palavra guardada",
+  "chestLampadaMessage": "\"Lâmpada para os meus pés é a tua palavra\" — Salmos 119:105.",
+  "chestLampadaTitle": "Lâmpada acesa",
+  "chestLocked": "Complete a cena de hoje para abrir",
+  "chestLockedShort": "Trancado",
+  "chestMapaMessage": "Uma curiosidade guardada: cada capítulo lido soma na sua trilha.",
+  "chestMapaTitle": "Mapa do dia",
+  "chestOpen": "Abrir o baú",
+  "chestOpenShort": "Abrir",
+  "chestOpened": "Aberto",
+  "chestOpening": "Abrindo…",
+  "chestPassoMessage": "Mais um dia caminhando — é isso que forma um peregrino.",
+  "chestPassoTitle": "Passo firme",
+  "chestReady": "Sua recompensa de hoje está pronta",
+  "chestReadyShort": "Pronto para abrir",
+  "chestRevealStarts": "A revelação começa agora.",
+  "chestRewards": "Recompensas",
+  "chestSheetTitle": "A sequência de hoje guarda uma recompensa.",
+  "chestTierToday": "{tier} de hoje",
+  "@chestTierToday": {
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "chestVeryRare": "Raríssimo",
+  "chestVozMessage": "Sua sequência já fala mais alto que qualquer palavra.",
+  "chestVozTitle": "Voz da caravana",
+  "comebackEyebrow": "O peregrino",
+  "comebackSubtitle": "{name}, a trilha espera você. Uma cena retoma a sequência e rende +{bonus} passos de boas-vindas.",
+  "@comebackSubtitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "bonus": {
+        "type": "int"
+      }
+    }
+  },
+  "comebackSubtitleGap": "{count, plural, =1{{name}, faz 1 dia sem uma cena. Uma só basta — e você ganha +{bonus} passos de boas-vindas.} other{{name}, faz {count} dias sem uma cena. Uma só basta — e você ganha +{bonus} passos de boas-vindas.}}",
+  "@comebackSubtitleGap": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      },
+      "bonus": {
+        "type": "int"
+      }
+    }
+  },
+  "comebackTitle": "Sua sequência te espera",
+  "commonActive": "Ativo",
+  "commonBack": "Voltar",
+  "commonCancel": "Cancelar",
+  "commonClose": "Fechar",
+  "commonCollect": "Coletar",
+  "commonComingSoon": "Em breve",
+  "commonContinue": "Continuar",
+  "commonDays": "{count, plural, =1{1 dia} other{{count} dias}}",
+  "@commonDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "commonGotIt": "Entendi",
+  "commonModule": "Módulo",
+  "commonNextScene": "Próxima cena",
+  "commonNotNow": "Agora não",
+  "commonOff": "Desligado",
+  "commonPlusSteps": "+{count} passos",
+  "@commonPlusSteps": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "commonSave": "Salvar",
+  "commonScene": "Cena",
+  "commonScenes": "{count, plural, =1{1 cena} other{{count} cenas}}",
+  "@commonScenes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "commonSendWhatsApp": "Mandar no WhatsApp",
+  "commonShare": "Compartilhar",
+  "commonSkip": "Pular",
+  "commonStart": "Começar",
+  "commonSteps": "{count, plural, =1{1 passo} other{{count} passos}}",
+  "@commonSteps": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "commonToday": "Hoje",
+  "commonTrail": "Trilha",
+  "commonTryAgain": "Tentar de novo",
+  "commonYou": "Você",
+  "companionAwaitingCode": "Aguardando alguém entrar com o código",
+  "companionDaysTogether": "{count, plural, =1{1 dia caminhando juntos} other{{count} dias caminhando juntos}}",
+  "@companionDaysTogether": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "companionDaysWithoutStudy": "{count, plural, =1{1 dia pra trás na caminhada} other{{count} dias pra trás na caminhada}}",
+  "@companionDaysWithoutStudy": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "companionDelayDustyHeadline": "Sua falta na trilha",
+  "companionDelayDustyInsight": "A poeira já cobriu o caminho",
+  "companionDelayFreshHeadline": "Ficando para trás",
+  "companionDelayFreshInsight": "Está ficando para trás na nossa caminhada",
+  "companionDelayLostHeadline": "Ainda tem lugar ao meu lado",
+  "companionDelayLostInsight": "Mas dá para retomar nossa caminhada",
+  "companionErrorAlreadyHave": "Você já tem uma companhia.",
+  "companionErrorCreateInvite": "Não foi possível criar o convite.",
+  "companionErrorInvalidCode": "Código inválido ou companhia já está completa.",
+  "companionErrorSignInCreate": "Entre com Google para criar uma companhia.",
+  "companionErrorSignInJoin": "Entre com Google para entrar numa companhia.",
+  "companionErrorSignInWave": "Entre na conta para acenar no app.",
+  "companionErrorWave": "Não foi possível enviar o aceno.",
+  "companionFallbackName": "Companheiro",
+  "companionNextStepTogether": "Vamos dar o próximo passo juntos?",
+  "companionPartnerAway": "{days, plural, =1{Faz 1 dia sem estudar — a trilha sente falta de {name}} other{Faz {days} dias sem estudar — a trilha sente falta de {name}}}",
+  "@companionPartnerAway": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "companionPartnerAwayAfterStep": "Você já deu o passo — {name} está a {days, plural, =1{1 dia} other{{days} dias}} atrás",
+  "@companionPartnerAwayAfterStep": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "companionPartnerNotYet": "Você já deu o passo — {name} ainda não apareceu",
+  "@companionPartnerNotYet": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "companionPresetComeBack": "Tô te esperando pra limpar a trilha",
+  "companionPresetMissed": "Senti sua falta na trilha",
+  "companionPresetOnTrail": "Tô te esperando na trilha",
+  "companionPresetResume": "Dá pra retomar — tô aqui",
+  "companionPresetStepCome": "Dei meu passo hoje. Vem?",
+  "companionPresetWalkToday": "Vamos caminhar juntos hoje",
+  "companionPresetYoursNext": "Já dei meu passo — falta o seu",
+  "companionShareDefault": "Oi {name} 👋\nJá dei meus passos de hoje no Stway — tô te esperando!\nVem?",
+  "@companionShareDefault": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "companionShareDusty": "Oi {name} 👋\nFaz {days} dias que a gente não caminha juntos no Stway.\nO caminho continua aberto — tô te esperando!\nVem?",
+  "@companionShareDusty": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "companionShareFallbackName": "você",
+  "companionShareFresh": "Oi {name} 👋\nSenti sua falta na nossa caminhada no Stway.\nJá dei meus passos de hoje e tô te esperando!\nVem?",
+  "@companionShareFresh": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "companionShareLost": "Oi {name} 👋\nAinda tem lugar ao meu lado!\nFaz {days} dias que a gente não caminha juntos no Stway.\n\nMas dá pra retomar — já dei meus passos de hoje.\nVem?",
+  "@companionShareLost": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "companionSheetEyebrow": "Companhia",
+  "companionSheetFormedBody": "Vocês caminham juntos agora.\nFechem os 7 dias da semana: +{steps} passos na jornada para os dois.",
+  "@companionSheetFormedBody": {
+    "placeholders": {
+      "steps": {
+        "type": "int"
+      }
+    }
+  },
+  "companionSheetFormedBodyNamed": "Agora você e {name} caminham juntos.\nFechem os 7 dias da semana: +{steps} passos na jornada para os dois.",
+  "@companionSheetFormedBodyNamed": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "steps": {
+        "type": "int"
+      }
+    }
+  },
+  "companionSheetFormedCta": "Caminhar juntos",
+  "companionSheetFormedTitle": "Companhia formada",
+  "companionSheetInviteConfirmSubtitle": "Alguém te chamou para caminhar junto.\nUm toque — sem digitar código.",
+  "companionSheetInviteConfirmTitle": "Convite de companhia",
+  "companionSheetInviteCta": "Chamar um companheiro",
+  "companionSheetPromptBody": "Um companheiro. Fechem os 7 dias da semana juntos — os dois ganham +{steps} passos na jornada.",
+  "@companionSheetPromptBody": {
+    "placeholders": {
+      "steps": {
+        "type": "int"
+      }
+    }
+  },
+  "companionSheetPromptBodyTomorrow": "Amanhã: {scene}. Chame alguém para chegar junto.",
+  "@companionSheetPromptBodyTomorrow": {
+    "placeholders": {
+      "scene": {
+        "type": "String"
+      }
+    }
+  },
+  "companionSheetPromptTitle": "Chame alguém para caminhar",
+  "companionWalkedTogetherToday": "Vocês caminharam juntos hoje",
+  "companionWaveFor": "Você já deu o passo — acene para {name}",
+  "@companionWaveFor": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "companionWeekClosed": "Semana fechada juntos",
+  "companionWeekDays": "{count} de 7 dias juntos nesta semana",
+  "@companionWeekDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "companionYourTurn": "{name} já caminhou — sua vez",
+  "@companionYourTurn": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "cornerAcceptedBy": "{name} aceitou o desafio",
+  "@cornerAcceptedBy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "cornerActionFailed": "Não foi possível concluir. Tente de novo.",
+  "cornerArrivedMark": "Chegou",
+  "cornerBoardEmptyBody": "Na caravana, abra alguém na mesma cena e chame para o desafio. Quem chega até domingo ganha +{count} passos.",
+  "@cornerBoardEmptyBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cornerBoardEmptyTitle": "Nenhum desafio ainda",
+  "cornerBoardIdle": "Nenhum desafio nesta semana. Chame alguém da caravana.",
+  "cornerBoardOpenCaravan": "Ver a caravana",
+  "cornerBurstAccepted": "Desafio aceito",
+  "cornerBurstLeft": "Você saiu do desafio",
+  "cornerBurstSent": "Convite enviado",
+  "cornerBusyAccept": "Você já tem um desafio. Chegue ou saia dele para aceitar.",
+  "cornerBusyWeek": "Você já tem um desafio nesta semana.",
+  "cornerCancelled": "Desafio cancelado",
+  "cornerChallengeWith": "Desafio com {name}",
+  "@cornerChallengeWith": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "cornerClosedChapter": "Encerrados",
+  "cornerClosesToday": "Fecha hoje",
+  "cornerCtaInvite": "Chamar para o desafio",
+  "cornerDaysLeft": "{count, plural, =1{Falta 1 dia} other{Faltam {count} dias}}",
+  "@cornerDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cornerDeadline": "Até domingo.",
+  "cornerDeclinedAnon": "O convite não foi aceito.",
+  "cornerDeclinedBy": "{name} não aceitou desta vez.",
+  "@cornerDeclinedBy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "cornerDifferentScene": "Vocês não estão na mesma cena.",
+  "cornerDifferentTrail": "Vocês não estão na mesma trilha.",
+  "cornerHoldAccept": "Segure para aceitar",
+  "cornerHoldInvite": "Segure para chamar",
+  "cornerIncomingFrom": "{name} te chamou para esta cena.",
+  "@cornerIncomingFrom": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "cornerIncomingFromAnon": "Alguém te chamou para esta cena.",
+  "cornerIncomingTitle": "Convite de desafio",
+  "cornerInviteBody": "Você e {name} fazem essa cena até domingo.\n+{count} passos para cada um que chegar.",
+  "@cornerInviteBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cornerInviteBodyAnon": "A mesma cena até domingo.\n+{count} passos para cada um que chegar.",
+  "@cornerInviteBodyAnon": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cornerInviteTitle": "Desafio: {mission}",
+  "@cornerInviteTitle": {
+    "placeholders": {
+      "mission": {
+        "type": "String"
+      }
+    }
+  },
+  "cornerKicker": "Desafio",
+  "cornerLeftMark": "Saiu",
+  "cornerNeedsCloud": "Entre com Google para chamar alguém.",
+  "cornerNoCorner": "Nenhuma cena em comum para o desafio.",
+  "cornerNoneHeadline": "Ninguém chegou desta vez",
+  "cornerNoneLine": "O desafio fechou no domingo.",
+  "cornerOnTheWay": "A caminho",
+  "cornerOtherPerson": "A outra pessoa",
+  "cornerOtherPersonLower": "a outra pessoa",
+  "cornerRecordArrived": "{count, plural, =1{1 completa} other{{count} completas}}",
+  "@cornerRecordArrived": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cornerRecordChapter": "Desafios",
+  "cornerRecordTogether": "{count, plural, =1{1 junto} other{{count} juntos}}",
+  "@cornerRecordTogether": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cornerResultLeft": "Você saiu · sem os +{count} passos",
+  "@cornerResultLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cornerResultNone": "Com {name} · ninguém chegou",
+  "@cornerResultNone": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "cornerResultTheyArrived": "{name} chegou · você não chegou",
+  "@cornerResultTheyArrived": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "cornerResultTheyLeftMissed": "{name} saiu · você não chegou",
+  "@cornerResultTheyLeftMissed": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "cornerResultTogether": "Com {name} · os dois chegaram",
+  "@cornerResultTogether": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "cornerResultWon": "Com {name} · +{count} passos",
+  "@cornerResultWon": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cornerSameStretch": "A mesma cena até domingo. +{count} passos para cada um que chegar.",
+  "@cornerSameStretch": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cornerSendFailed": "Não foi possível enviar o convite. Tente de novo.",
+  "cornerSomeone": "Alguém",
+  "cornerStripIdle": "Nenhum nesta semana",
+  "cornerStripInvitedYou": "{name} te chamou",
+  "@cornerStripInvitedYou": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "cornerStripLost": "{count, plural, other{{count} perdeu}}",
+  "@cornerStripLost": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cornerStripWaiting": "Esperando {name}",
+  "@cornerStripWaiting": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "cornerStripWon": "{count, plural, other{{count} ganhou}}",
+  "@cornerStripWon": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cornerTallyLost": "Perdeu",
+  "cornerTallyTogether": "Juntos",
+  "cornerTallyWon": "Ganhou",
+  "cornerTheyAhead": "{name} já chegou. Falta você.",
+  "@cornerTheyAhead": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "cornerTheyArrived": "{name} chegou",
+  "@cornerTheyArrived": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "cornerTheyLeft": "{name} saiu. Você ainda pode chegar.",
+  "@cornerTheyLeft": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "cornerTheyLeftClosed": "{name} saiu do desafio.",
+  "@cornerTheyLeftClosed": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "cornerTogether": "Chegaram juntos",
+  "cornerTogetherLine": "Os dois fizeram a cena a tempo.",
+  "cornerWaitingArrival": "Você chegou · esperando {name}.",
+  "@cornerWaitingArrival": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "cornerWaitingOn": "Esperando {name} aceitar.",
+  "@cornerWaitingOn": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "cornerWaitingOnAnon": "Esperando o aceite.",
+  "cornerWalk": "Fazer a cena",
+  "cornerWhisperEach": "Cada cena feita conta.",
+  "cornerWhisperTogether": "Cenas feitas lado a lado.",
+  "cornerWithPeer": "Com {name} · até domingo",
+  "@cornerWithPeer": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "cornerWithdraw": "Sair do desafio",
+  "cornerWithdrawBody": "{name} continua e ainda pode chegar. Você fica sem os +{count} passos.",
+  "@cornerWithdrawBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "cornerWithdrawConfirm": "Sair",
+  "cornerWithdrawPending": "O convite some para {name}.",
+  "@cornerWithdrawPending": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "cornerWithdrawTitle": "Sair do desafio?",
+  "cornerYouArrived": "Você chegou",
+  "cornerYouLeft": "Você saiu do desafio.",
+  "crossingChip": "Travessia",
+  "@crossingChip": {
+    "description": "Selo da cena-chefe (boss) na celebração"
+  },
+  "dustAwayManyFreeze": "{name}, {daysAway, plural, =1{1 dia sem caminhar} other{{daysAway} dias sem caminhar}}. O gelo ainda cobre 1 falta — retome a caminhada.",
+  "@dustAwayManyFreeze": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "daysAway": {
+        "type": "int"
+      }
+    }
+  },
+  "dustAwayManyNoFreeze": "{name}, {daysAway, plural, =1{1 dia sem caminhar} other{{daysAway} dias sem caminhar}}. Uma cena recomeça o caminho.",
+  "@dustAwayManyNoFreeze": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "daysAway": {
+        "type": "int"
+      }
+    }
+  },
+  "dustAwayNoStreak": "{name}, a trilha espera. Uma cena basta para retomar o caminho.",
+  "@dustAwayNoStreak": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "dustAwayStreak": "{name}, {streak, plural, =1{1 dia de sequência espera} other{{streak} dias de sequência esperam}}. Uma cena e você retoma.",
+  "@dustAwayStreak": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "streak": {
+        "type": "int"
+      }
+    }
+  },
+  "dustAwayTwoFreeze": "{name}, dois dias sem caminhar. O gelo ainda pode salvar 1 dia — volte hoje.",
+  "@dustAwayTwoFreeze": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "dustAwayTwoNoFreeze": "{name}, dois dias sem caminhar. Uma cena e você volta ao caminho.",
+  "@dustAwayTwoNoFreeze": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "dustCanReturn": "Dá para voltar",
+  "dustComeBackToday": "Volte hoje",
+  "dustContinueWhere": "Continue de onde parou",
+  "dustDayEnding": "O dia está acabando",
+  "dustEveningFreeze1": "{name}, o dia fecha. Faltam {countdown} — caminhe, ou o gelo cobre 1 dia.",
+  "@dustEveningFreeze1": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "countdown": {
+        "type": "String"
+      }
+    }
+  },
+  "dustEveningFreeze2": "Últimas {countdown}. Continue a caminhada — o gelo ainda cobre 1 dia.",
+  "@dustEveningFreeze2": {
+    "placeholders": {
+      "countdown": {
+        "type": "String"
+      }
+    }
+  },
+  "dustEveningNoFreeze2": "Noite fechando. Faltam {countdown} — continue a caminhada agora.",
+  "@dustEveningNoFreeze2": {
+    "placeholders": {
+      "countdown": {
+        "type": "String"
+      }
+    }
+  },
+  "dustFewHours": "Poucas horas",
+  "dustHeroGapFreeze": "Ontem ficou vazio. Faça a cena hoje — o gelo ainda salva 1 dia.",
+  "dustHeroGapNoFreeze": "Ontem ficou vazio. Faça a cena hoje para não perder a sequência.",
+  "dustHeroRiskFreeze": "{streak, plural, =0{Faltam {countdown} para a sequência cair. Faça a cena hoje — o gelo ainda salva 1 dia.} =1{Faltam {countdown} para a sequência cair. Faça a cena hoje — o gelo ainda salva 1 dia.} other{Faltam {countdown} para a sequência de {streak} dias cair. Faça a cena hoje — o gelo ainda salva 1 dia.}}",
+  "@dustHeroRiskFreeze": {
+    "placeholders": {
+      "streak": {
+        "type": "int"
+      },
+      "countdown": {
+        "type": "String"
+      }
+    }
+  },
+  "dustHeroRiskNoFreeze": "{streak, plural, =0{Faltam {countdown} para a sequência cair. Faça a cena hoje.} =1{Faltam {countdown} para a sequência cair. Faça a cena hoje.} other{Faltam {countdown} para a sequência de {streak} dias cair. Faça a cena hoje.}}",
+  "@dustHeroRiskNoFreeze": {
+    "placeholders": {
+      "streak": {
+        "type": "int"
+      },
+      "countdown": {
+        "type": "String"
+      }
+    }
+  },
+  "dustNextSceneWaits": "A próxima cena espera",
+  "dustOneDay": "Um dia",
+  "dustRiskBodyFreeze1": "{name} · faltam {countdown}. Uma cena protege a sequência — o gelo cobre 1 dia.",
+  "@dustRiskBodyFreeze1": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "countdown": {
+        "type": "String"
+      }
+    }
+  },
+  "dustRiskBodyFreeze3": "Faltam {countdown}. Continue a caminhada — o gelo cobre 1 dia.",
+  "@dustRiskBodyFreeze3": {
+    "placeholders": {
+      "countdown": {
+        "type": "String"
+      }
+    }
+  },
+  "dustRiskBodyNoFreeze1": "{name} · sem gelo. Faltam {countdown}. Uma cena e você fica.",
+  "@dustRiskBodyNoFreeze1": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "countdown": {
+        "type": "String"
+      }
+    }
+  },
+  "dustRiskBodyNoFreeze2": "{streak, plural, =1{1 dia em risco. Faltam {countdown} — caminhe agora.} other{{streak} dias em risco. Faltam {countdown} — caminhe agora.}}",
+  "@dustRiskBodyNoFreeze2": {
+    "placeholders": {
+      "streak": {
+        "type": "int"
+      },
+      "countdown": {
+        "type": "String"
+      }
+    }
+  },
+  "dustRiskBodyNoFreeze3": "Sem gelo. Faltam {countdown} — caminhe agora.",
+  "@dustRiskBodyNoFreeze3": {
+    "placeholders": {
+      "countdown": {
+        "type": "String"
+      }
+    }
+  },
+  "dustRiskBodyStreak": "{streak, plural, =1{Sequência de 1 dia ainda em jogo. Faltam {countdown}.} other{Sequência de {streak} dias ainda em jogo. Faltam {countdown}.}}",
+  "@dustRiskBodyStreak": {
+    "placeholders": {
+      "streak": {
+        "type": "int"
+      },
+      "countdown": {
+        "type": "String"
+      }
+    }
+  },
+  "dustSceneToday": "Uma cena hoje",
+  "dustSceneTodayWaits": "A cena de hoje espera",
+  "dustSceneWaits": "A cena espera",
+  "dustStillTime": "Ainda dá tempo",
+  "dustStreakWaits": "A sequência espera",
+  "dustTrailWaits": "A trilha espera",
+  "dustTwoDays": "Dois dias",
+  "dustUiDetail2": "Continue a caminhada · uma cena basta",
+  "dustUiDetail3": "A sequência espera · caminhe hoje",
+  "dustUiFreeze1": "Sequência em risco · gelo ainda cobre 1 dia",
+  "dustUiFreeze2": "Ainda dá tempo · gelo a postos",
+  "dustUiFreeze3": "Caminhe hoje · gelo cobre 1 falta",
+  "dustUiNoFreeze1": "Sequência em risco · caminhe agora",
+  "dustUiNoFreeze2": "Sem gelo · uma cena protege",
+  "dustUiNoFreeze3": "A sequência espera · uma cena alcança",
+  "entryMissionDorAnsia01CentralInsight": "O tesouro puxa o coração",
+  "entryMissionDorAnsia01HookNote": "O cuidado do Pai é o argumento contra a ansiedade — não a ausência de necessidade.",
+  "entryMissionDorAnsia01Intro": "Onde está o tesouro, está o coração. Jesus une Mamom e o amanhã.",
+  "entryMissionDorAnsia01Objective": "Ver como Jesus liga tesouro, senhorio e ansiedade.",
+  "entryMissionDorAnsia01Title": "Tesouros e ansiedade",
+  "entryMissionDorAnsia02CentralInsight": "Cristo basta na fome e na fartura",
+  "entryMissionDorAnsia02HookNote": "O contentamento de Paulo não é estoicismo: é Cristo na fome e na fartura.",
+  "entryMissionDorAnsia02Intro": "Paulo aprendeu a estar contente em toda a sorte — em Cristo.",
+  "entryMissionDorAnsia02Objective": "Trocar a ansiedade do ter pelo contentamento em Cristo.",
+  "entryMissionDorAnsia02Title": "Contentamento",
+  "entryMissionDorAnsia03CentralInsight": "Há pastor no vale",
+  "entryMissionDorAnsia03HookNote": "O pastor guia — inclusive no vale. O que some não é a luta; é o medo e a sensação de solidão.",
+  "entryMissionDorAnsia03Intro": "Nada me faltará — o Salmo 23 é confiança, não magia.",
+  "entryMissionDorAnsia03Objective": "Ler o Salmo 23 como cuidado, não como amuleto.",
+  "entryMissionDorAnsia03Title": "O Senhor é o meu pastor",
+  "entryMissionDorAnsia04CentralInsight": "O pão é de hoje",
+  "entryMissionDorAnsia04HookNote": "Jesus ensina a pedir o dia — não o estoque. O Reino vem antes do pão.",
+  "entryMissionDorAnsia04Intro": "Pedir o pão de cada dia é o contrário de antecipar o mês inteiro.",
+  "entryMissionDorAnsia04Objective": "Orar o dia, não o censo do medo.",
+  "entryMissionDorAnsia04Title": "Pai nosso",
+  "entryMissionDorAnsia05CentralInsight": "A herança está guardada",
+  "entryMissionDorAnsia05HookNote": "A esperança não nega o sofrimento. Ela o ancora na ressurreição. Continue no Sermão do Monte.",
+  "entryMissionDorAnsia05Intro": "Pedro ancora sofredores numa herança guardada — depois, o cânon.",
+  "entryMissionDorAnsia05Objective": "Sair da trilha de dor para o currículo: Sermão do Monte.",
+  "entryMissionDorAnsia05Title": "Esperança viva",
+  "entryMissionDorRecome01CentralInsight": "Deus ainda pergunta onde estás",
+  "entryMissionDorRecome01HookNote": "O primeiro movimento depois da queda é Deus procurando — não o humano se escondendo com sucesso.",
+  "entryMissionDorRecome01Intro": "A desconfiança rompe a comunhão — e ainda assim Deus pergunta.",
+  "entryMissionDorRecome01Objective": "Ver a queda como ruptura, não como o fim da conversa.",
+  "entryMissionDorRecome01Title": "A queda",
+  "entryMissionDorRecome02CentralInsight": "Há semente depois da porta",
+  "entryMissionDorRecome02EchoQuestion": "Ele perguntou. E depois da resposta, a história acabou?",
+  "entryMissionDorRecome02HookNote": "No mesmo capítulo da expulsão, Deus fala de uma semente. O juízo não cancela a história.",
+  "entryMissionDorRecome02Intro": "O pecado tem custo. A promessa não some.",
+  "entryMissionDorRecome02Objective": "Ler consequência e promessa no mesmo texto.",
+  "entryMissionDorRecome02Title": "Consequências",
+  "entryMissionDorRecome03CentralInsight": "Recomeçar é aliança, não apagar",
+  "entryMissionDorRecome03EchoQuestion": "Há semente depois da porta. O mundo recomeça apagando o passado?",
+  "entryMissionDorRecome03HookNote": "O mundo recomeça sob aliança, não sob amnésia. O arco lembra a Deus — e a nós.",
+  "entryMissionDorRecome03Intro": "Juízo e recomeço cabem no mesmo Deus.",
+  "entryMissionDorRecome03Objective": "Ver o dilúvio como juízo que guarda um resto.",
+  "entryMissionDorRecome03Title": "Dilúvio",
+  "entryMissionDorRecome04CentralInsight": "O recomeço caminha para fora",
+  "entryMissionDorRecome04EchoQuestion": "Recomeçar é aliança. Babel se conserta com outra torre?",
+  "entryMissionDorRecome04HookNote": "Deus não conserta Babel com outra torre. Chama uma família para ser bênção.",
+  "entryMissionDorRecome04Intro": "Sair da terra é o gesto do recomeço que abençoa outros.",
+  "entryMissionDorRecome04Objective": "Ligar recomeço a chamado, não a isolamento.",
+  "entryMissionDorRecome04Title": "Chamado de Abrão",
+  "entryMissionDorRecome05CentralInsight": "Há conforto para quem chora de verdade",
+  "entryMissionDorRecome05EchoQuestion": "O recomeço caminha para fora. Quem chora o que morreu encontra o quê no Reino?",
+  "entryMissionDorRecome05HookNote": "O Reino não apressa o luto. Consola. A trilha canônica começa em Gênesis 1–11.",
+  "entryMissionDorRecome05Intro": "Quem chora o que morreu é bem-aventurado. Continue em Gênesis 1–11.",
+  "entryMissionDorRecome05Objective": "Sair da trilha de dor para o currículo: Gênesis 1–11.",
+  "entryMissionDorRecome05Title": "Os que choram",
+  "entryTrailAnsiedadeDescription": "Cinco cenas para lançar o amanhã no Pai — e seguir no cânon.",
+  "entryTrailAnsiedadeModuleTitle": "Lançar a ansiedade",
+  "entryTrailAnsiedadeTitle": "Ansiedade",
+  "entryTrailRecomecoDescription": "Cinco cenas da queda ao chamado — e de volta a Gênesis 1–11.",
+  "entryTrailRecomecoModuleTitle": "Do rompimento ao chamado",
+  "entryTrailRecomecoTitle": "Recomeço",
+  "eraChurchBlurb": "Atos, epístolas e a consumação",
+  "eraChurchTitle": "Igreja e cartas",
+  "eraConquestBlurb": "Terra prometida e ciclo dos juízes",
+  "eraConquestTitle": "Conquista e juízes",
+  "eraDividedBlurb": "Israel, Judá e a voz dos profetas",
+  "eraDividedTitle": "Reinos e profetas",
+  "eraExileBlurb": "Babilônia e a esperança do retorno",
+  "eraExileTitle": "Exílio",
+  "eraExodusBlurb": "Saída do Egito, Sinai e o deserto",
+  "eraExodusTitle": "Êxodo e Lei",
+  "eraGospelsBlurb": "Os quatro Evangelhos",
+  "eraGospelsTitle": "Vida de Jesus",
+  "eraOriginsBlurb": "Criação, Dilúvio e a família de Abraão",
+  "eraOriginsTitle": "Origens e patriarcas",
+  "eraReturnBlurb": "Templo, muros e o último dos profetas",
+  "eraReturnTitle": "Retorno e restauração",
+  "eraUnitedBlurb": "Saul, Davi e Salomão",
+  "eraUnitedTitle": "Monarquia unida",
+  "exerciseCheck": "Verificar",
+  "exerciseCueMatch": "Ligue cada par.",
+  "exerciseCueOrder": "Monte a sequência.",
+  "exerciseCueTap": "Toque o trecho que responde.",
+  "exerciseFalse": "Falso",
+  "exerciseFalseMark": "F",
+  "@exerciseFalseMark": {
+    "description": "Inicial de Falso no botão"
+  },
+  "exerciseHint": "Dica",
+  "exerciseHintUsed": "Dica usada",
+  "exerciseLabelBridge": "Ponte",
+  "exerciseLabelClaim": "Afirmação",
+  "exerciseLabelPairs": "Pares",
+  "exerciseLabelQuestion": "Pergunta",
+  "exerciseLabelSequence": "Sequência",
+  "@exerciseLabelSequence": {
+    "description": "Ordem dos fatos (não é a sequência de dias)"
+  },
+  "exerciseLabelWord": "Palavra",
+  "exerciseMatchPair": "Pareie",
+  "@exerciseMatchPair": {
+    "description": "Passo 2 do gesto de parear"
+  },
+  "exerciseMatchPick": "Escolha",
+  "@exerciseMatchPick": {
+    "description": "Passo 1 do gesto de parear"
+  },
+  "exerciseNoteLabel": "Contexto",
+  "exerciseTitleChoose": "Escolha a resposta",
+  "exerciseTitleComplete": "Complete o versículo",
+  "exerciseTitleConnect": "Conecte os trechos",
+  "exerciseTitleOrder": "Ordene os fatos",
+  "exerciseTitleTap": "Toque a palavra",
+  "exerciseTitleTrueFalse": "Julgue o versículo",
+  "exerciseTrue": "Verdadeiro",
+  "exerciseTrueMark": "V",
+  "@exerciseTrueMark": {
+    "description": "Inicial de Verdadeiro no botão"
+  },
+  "exerciseTypeBestInterpretation": "Interpretação",
+  "@exerciseTypeBestInterpretation": {
+    "description": "Tipo de pergunta (não o modo)"
+  },
+  "exerciseTypeChoice": "Escolha",
+  "@exerciseTypeChoice": {
+    "description": "Gesto (imperativo)"
+  },
+  "exerciseTypeClassify": "Classifique",
+  "exerciseTypeComplete": "Complete",
+  "@exerciseTypeComplete": {
+    "description": "Gesto (imperativo)"
+  },
+  "exerciseTypeConnect": "Conecte",
+  "@exerciseTypeConnect": {
+    "description": "Gesto (imperativo)"
+  },
+  "exerciseTypeExplain": "Explique",
+  "exerciseTypeFindInText": "No texto",
+  "exerciseTypeInsight": "Insight",
+  "exerciseTypeMatch": "Emparelhe",
+  "exerciseTypeOrder": "Ordene",
+  "@exerciseTypeOrder": {
+    "description": "Gesto (imperativo)"
+  },
+  "exerciseTypeReview": "Revisão",
+  "exerciseTypeTap": "Toque",
+  "@exerciseTypeTap": {
+    "description": "Gesto (imperativo)"
+  },
+  "exerciseTypeTextSupported": "O texto diz",
+  "exerciseTypeTrueFalse": "Verdadeiro / Falso",
+  "exerciseVerbAnswer": "Responda",
+  "exerciseVerbJudge": "Julgue",
+  "feedbackAlmost": "Quase",
+  "feedbackAnswer": "Resposta",
+  "feedbackCheer1": "Isso.",
+  "feedbackCheer2": "Acertou.",
+  "feedbackCheer3": "Muito bem.",
+  "feedbackCheer4": "Certo.",
+  "feedbackCorrect": "Acertou",
+  "feedbackCorrection": "{expected}, não {got}",
+  "@feedbackCorrection": {
+    "description": "Palavra certa, não a escolhida",
+    "placeholders": {
+      "expected": {
+        "type": "String"
+      },
+      "got": {
+        "type": "String"
+      }
+    }
+  },
+  "feedbackEndPartial": "Encerrar com passos parciais",
+  "feedbackFollow": "Seguir.",
+  "feedbackNotYet": "Ainda não",
+  "feedbackOutOfLamps": "Sem lâmpadas",
+  "feedbackReadPassage": "Ler o texto da cena",
+  "feedbackReportSent": "Relato enviado. Obrigado.",
+  "feedbackReportTooltip": "Relatar problema nesta pergunta",
+  "feedbackRequeueHint": "Tente de novo ou deixe para o fim da cena.",
+  "feedbackRereadHint": "Releia o texto e tente de novo.",
+  "feedbackSeeRightWord": "Veja a palavra certa",
+  "feedbackSeeText": "Veja no texto",
+  "feedbackSkipToEnd": "Pular e tentar no fim",
+  "feedbackTryAgain": "Tente de novo.",
+  "groupCallEmpty": "Ninguém da caravana para chamar agora.",
+  "groupCallFull": "Este grupo já tem {count} pessoas.",
+  "@groupCallFull": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "groupCallSubtitle": "O convite aparece no app. Ou mande o link no WhatsApp.",
+  "groupCallTitle": "Chamar pessoas",
+  "groupCaptionNotYet": "ainda não",
+  "groupCaptionToday": "hoje",
+  "groupCreateCta": "Criar grupo",
+  "groupDayUnit": "{count, plural, =1{dia } other{dias }}",
+  "@groupDayUnit": {
+    "description": "Unit under a day count. Trailing space avoids a merge-script false positive; code trims it.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "groupDaysAway": "{count, plural, =1{1 dia sem estudar} other{{count} dias sem estudar}}",
+  "@groupDaysAway": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "groupEmptyLeaderBody": "Todos recebem a mesma cena — mesmo quem ainda não chegou nela na trilha.",
+  "groupEmptyLeaderTitle": "Qual texto o grupo vai estudar nesta semana?",
+  "groupEmptyMemberBody": "{leader} escolhe a cena que o grupo estuda junto.",
+  "@groupEmptyMemberBody": {
+    "placeholders": {
+      "leader": {
+        "type": "String"
+      }
+    }
+  },
+  "groupEmptyMemberTitle": "O texto da semana ainda não chegou.",
+  "groupInviteAccept": "Aceitar",
+  "groupInviteBody": "{name} te chamou para o grupo · {kind}.",
+  "@groupInviteBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "kind": {
+        "type": "String"
+      }
+    }
+  },
+  "groupInviteCta": "Chamar",
+  "groupInviteLabel": "Convite",
+  "groupInviteSendFailed": "Não foi possível enviar o convite. Tente de novo.",
+  "groupInviteSending": "Enviando…",
+  "groupInviteSent": "Convite enviado",
+  "groupInviteUndo": "Desfazer",
+  "groupInviteUndoFailed": "Não foi possível desfazer o convite. Tente de novo.",
+  "groupLeaderNoteTitle": "{title} {name}",
+  "@groupLeaderNoteTitle": {
+    "description": "Leader role title followed by first name, e.g. 'Líder Ana'.",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupMenuClearStudy": "Tirar estudo da semana",
+  "groupMenuClose": "Encerrar o grupo",
+  "groupMenuCopyCode": "Copiar código {code}",
+  "@groupMenuCopyCode": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "groupMenuEdit": "Editar nome e tipo",
+  "groupMenuGoal": "{count, plural, =1{Meta da semana · 1 passo} other{Meta da semana · {count} passos}}",
+  "@groupMenuGoal": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "groupMenuLeadSection": "Conduzir o grupo",
+  "groupMenuLeave": "Sair do grupo",
+  "groupMenuSetGoal": "Definir meta da semana",
+  "groupMenuTransfer": "Passar a liderança",
+  "groupNewTitle": "Novo grupo",
+  "groupPickStudyCta": "Escolher o estudo",
+  "groupPickerConfirmCta": "Marcar para o grupo",
+  "groupPickerIntro": "Todos do grupo recebem a mesma cena, mesmo quem ainda não chegou nela.",
+  "groupPickerMarkScene": "Marcar a cena",
+  "groupPickerNoteHint": "Opcional. Ex.: Leiam até quarta, conversamos na quinta.",
+  "groupPickerNoteLabel": "Recado para o grupo",
+  "groupPickerPreviewLabel": "O grupo vai ver",
+  "groupRosterSemantics": "{count, plural, =1{{name}, 1 dia nesta semana} other{{name}, {count} dias nesta semana}}",
+  "@groupRosterSemantics": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "groupSeatAlreadyWaved": "Você já acenou para {name} hoje.",
+  "@groupSeatAlreadyWaved": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "groupSeatDaysInWeek": "Dias na semana",
+  "groupSeatIdle": "ainda não estudou nesta semana",
+  "groupSeatNever": "ainda não estudou",
+  "groupSeatSteps": "Passos",
+  "groupSeatStudyDone": "Feito",
+  "groupSeatStudyNotYet": "Ainda não",
+  "groupSeatToday": "estudou hoje",
+  "groupSeatWeek": "estudou nesta semana",
+  "groupSetupKindLabel": "Para que é o grupo",
+  "groupSetupLimitHint": "Até {limit} pessoas. Grupo grande? Abra outro — discipulado acontece em grupo pequeno.",
+  "@groupSetupLimitHint": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "groupSetupNameLabel": "Nome",
+  "groupStudyAgain": "Você já fez · Estudar de novo",
+  "groupStudyCta": "Estudar com o grupo",
+  "groupStudyDoneCount": "{done} de {total} já fizeram",
+  "@groupStudyDoneCount": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "groupStudyNobodyYet": "Ninguém fez ainda. Seja o primeiro.",
+  "groupStudySwap": "Trocar",
+  "groupWeekStudy": "Estudo da semana",
+  "growthDayUnit": "{count, plural, =1{dia } other{dias }}",
+  "@growthDayUnit": {
+    "description": "Unit shown under the streak number. Trailing space only dodges the merge validator; code trims it.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "growthDaysToStage": "{count, plural, =1{Falta 1 dia de sequência para {stage}} other{Faltam {count} dias de sequência para {stage}}}",
+  "@growthDaysToStage": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "stage": {
+        "type": "String"
+      }
+    }
+  },
+  "growthFreezeUsed": "{subtitle} · gelo já usado nesta semana",
+  "@growthFreezeUsed": {
+    "placeholders": {
+      "subtitle": {
+        "type": "String"
+      }
+    }
+  },
+  "growthFruitSubtitle": "{count, plural, =1{1 dia de sequência · deu fruto} other{{count} dias de sequência · deu fruto}}",
+  "@growthFruitSubtitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "growthHintDayZero": "dia 0",
+  "growthNextIn": "{count, plural, =1{Próximo: {stage} · faltam 1 dia na sequência} other{Próximo: {stage} · faltam {count} dias na sequência}}",
+  "@growthNextIn": {
+    "placeholders": {
+      "stage": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "growthNextMilestone": "Próximo marco: {stage}",
+  "@growthNextMilestone": {
+    "placeholders": {
+      "stage": {
+        "type": "String"
+      }
+    }
+  },
+  "growthPerfect": "Cena perfeita",
+  "growthPerfectWith": "Cena perfeita · {subtitle}",
+  "@growthPerfectWith": {
+    "placeholders": {
+      "subtitle": {
+        "type": "String"
+      }
+    }
+  },
+  "growthSeedSubtitle": "Faça 1 cena hoje para virar Broto",
+  "growthStageBranch": "Ramo",
+  "growthStageFruit": "Fruto",
+  "growthStageSeed": "Semente",
+  "growthStageSprout": "Broto",
+  "growthStageTree": "Árvore",
+  "growthWhisper": "Cada dia da sequência sobe um marco: Semente, Broto, Ramo, Árvore e Fruto.",
+  "homeBibleOfflineSubtitle": "Leia sem internet",
+  "homeCatalogDownloading": "Baixando…",
+  "homeCatalogEmptyBody": "As cenas baixam na primeira abertura. Se a conexão falhar, toque para tentar de novo.",
+  "homeCatalogEmptyTitle": "As cenas ainda não chegaram",
+  "homeDefaultName": "Peregrino",
+  "@homeDefaultName": {
+    "description": "Fallback name when the user has no name."
+  },
+  "homeFreezeSheetBody": "Você perdeu um dia, mas a sequência continua. O gelo salva uma falta por semana — caminhe hoje para seguir.",
+  "homeFreezeSheetTitle": "O gelo cobriu ontem",
+  "homeHeroEcho": "Eco de ontem",
+  "homeHeroExtraSteps": "+{count} passos · extra de hoje",
+  "@homeHeroExtraSteps": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeHeroFrozenLine": "O gelo cobriu ontem · sequência preservada",
+  "homeHeroMinutes": "~3 min",
+  "homeHeroProtect": "Protege a sequência · ~3 min",
+  "homeHeroReady": "Cena pronta",
+  "homeHeroTomorrow": "Amanhã",
+  "homeJuntosNews": "{count, plural, =1{1 novidade} other{{count} novidades}}",
+  "@homeJuntosNews": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeLampsHint": "Erro apaga uma · zerar encerra",
+  "homeLampsSemantics": "{current} de {max} lâmpadas. Cada erro apaga uma.",
+  "@homeLampsSemantics": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "homeLampsTitle": "Lâmpadas",
+  "homeMoodAlive": "Em dia",
+  "homeMoodDusty": "Sequência em risco",
+  "homeMoodFrozen": "Protegido pelo gelo",
+  "homeMoreToday": "Mais para hoje",
+  "homeOpenProfile": "Abrir perfil de {name}",
+  "@homeOpenProfile": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "homeQuestsExtraCaption": "Passos extras",
+  "homeReviewCaption": "{count, plural, =1{1 para reforçar} other{{count} para reforçar}}",
+  "@homeReviewCaption": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "homeReviewTitle": "Revisão",
+  "homeSeasonChipDoneSemantics": "{season}. Dia {day} feito: {dayTitle}",
+  "@homeSeasonChipDoneSemantics": {
+    "placeholders": {
+      "season": {
+        "type": "String"
+      },
+      "day": {
+        "type": "int"
+      },
+      "dayTitle": {
+        "type": "String"
+      }
+    }
+  },
+  "homeSeasonChipOpenSemantics": "{season}. Dia {day}: {dayTitle}",
+  "@homeSeasonChipOpenSemantics": {
+    "placeholders": {
+      "season": {
+        "type": "String"
+      },
+      "day": {
+        "type": "int"
+      },
+      "dayTitle": {
+        "type": "String"
+      }
+    }
+  },
+  "homeSeasonChipSemantics": "{season} · abrir leitura da estação",
+  "@homeSeasonChipSemantics": {
+    "placeholders": {
+      "season": {
+        "type": "String"
+      }
+    }
+  },
+  "homeSeasonDayDone": "Dia {day} feito · {title}",
+  "@homeSeasonDayDone": {
+    "placeholders": {
+      "day": {
+        "type": "int"
+      },
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "homeSeasonDayLine": "Dia {day} · {title}",
+  "@homeSeasonDayLine": {
+    "placeholders": {
+      "day": {
+        "type": "int"
+      },
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "homeSeasonDayOf": "Dia {day} de {total} · {title}",
+  "@homeSeasonDayOf": {
+    "placeholders": {
+      "day": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      },
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "homeSeasonDayOfDone": "Dia {day} de {total} feito · {title}",
+  "@homeSeasonDayOfDone": {
+    "placeholders": {
+      "day": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      },
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "homeSeeTrails": "Ver trilhas",
+  "homeStatAtRisk": "em risco",
+  "homeStatFreeze": "gelo",
+  "homeStatFreezeUsed": "gelo usado",
+  "homeStatGoal": "meta",
+  "homeTrailDoneBody": "Escolha a próxima e continue aprendendo.",
+  "homeTrailDoneTitle": "Trilha concluída",
+  "homeWordInScene": "Nesta cena",
+  "homeWordRead": "Ler {reference}",
+  "@homeWordRead": {
+    "placeholders": {
+      "reference": {
+        "type": "String"
+      }
+    }
+  },
+  "homeWordWord": "Palavra",
+  "inviteAcceptCta": "Aceitar convite",
+  "inviteCalledYou": "{name} te chamou",
+  "@inviteCalledYou": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "inviteCardBody": "{name} te chamou para caminhar junto — sem disputa, só presença.",
+  "@inviteCardBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "inviteCardHeadline": "Caminhem juntos",
+  "inviteCardInstallHint": "Já tem o app? Toque no link do convite.\nAinda não? Baixe o Stway e toque de novo.",
+  "inviteCodeCopied": "Código copiado",
+  "inviteCodeHint": "Código",
+  "inviteCompanionShareText": "{name} te chamou pra caminhar junto no Stway.\nSem disputa — só presença.\n\nToque para aceitar (já tem o app):\n{link}\n\nAinda não tem o Stway? Baixe e toque no link de novo:\n{installUrl}",
+  "@inviteCompanionShareText": {
+    "description": "Share text sent to a friend.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "link": {
+        "type": "String"
+      },
+      "installUrl": {
+        "type": "String"
+      }
+    }
+  },
+  "inviteCreateFailed": "Não foi possível criar o convite. Tente de novo.",
+  "inviteHaveCodeSubtitle": "Se você copiou o código no WhatsApp, ele já aparece aqui",
+  "inviteHaveCodeTitle": "Tenho um código",
+  "inviteJoinCta": "Entrar",
+  "inviteLinkHint": "O link abre o app e aceita sem digitar o código",
+  "invitePreparing": "Preparando…",
+  "inviteReadyTitle": "Seu convite está pronto",
+  "inviteRoomShareText": "Entre no Stway com o código {code}.\n\nAinda não tem o app? Baixe: {installUrl}",
+  "@inviteRoomShareText": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      },
+      "installUrl": {
+        "type": "String"
+      }
+    }
+  },
+  "inviteScanHint": "Aponte para o QR do convite",
+  "inviteScanQr": "Escanear QR",
+  "inviteShareCta": "Compartilhar convite",
+  "inviteShareSubject": "Convite Stway — caminhem juntos",
+  "inviteSheetSubtitleCompanion": "Toque no link, mostre o QR ou envie o card",
+  "inviteSheetSubtitleRoom": "Mostre o QR ou envie o código",
+  "inviteSomeone": "Alguém",
+  "journalEmpty": "Ao fixar uma cena, sua resposta fica registrada aqui.",
+  "journalTitle": "Anotações de estudo",
+  "journeyBeyondHorizon": "Ainda além do horizonte",
+  "@journeyBeyondHorizon": {
+    "description": "Locked trail on the area path"
+  },
+  "journeyLockedHint": "Conclua a trilha anterior para liberar esta.",
+  "journeyModeAhead": "{mode} à frente",
+  "@journeyModeAhead": {
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "journeyModeInProgress": "{mode} em curso",
+  "@journeyModeInProgress": {
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "journeyNow": "Agora",
+  "journeySoonHint": "Em breve · esta trilha ainda está sendo escrita.",
+  "journeyYouAreHere": "Onde você está",
+  "juntosAccept": "Aceitar",
+  "juntosBeforeLeaveBody": "Escolha quem vai conduzir o grupo depois de você.",
+  "juntosBeforeLeaveTitle": "Antes de sair",
+  "juntosBondNotStudying": "Sem estudar",
+  "juntosBondNotYet": "Ainda não",
+  "juntosBondYourTurn": "Sua vez",
+  "juntosCancelInvite": "Cancelar convite",
+  "juntosCancelInviteError": "Não foi possível cancelar o convite. Tente de novo.",
+  "juntosCaravanEmptyBody": "O ranking aparece com pelo menos mais uma pessoa caminhando. Chame alguém para a caravana — ou comece por uma companhia.",
+  "juntosCaravanEmptyTitle": "A caravana ainda é pequena",
+  "juntosCaravanInviteCta": "Chamar para a caravana",
+  "juntosCaravanLoadError": "Não foi possível carregar a caravana. Puxe para atualizar.",
+  "juntosCaravanMonthBody": "Tudo conta: cenas, tarefas do dia, baús e companhia. Zera todo dia 1 — quem chegou agora também pode liderar.",
+  "juntosCaravanMonthStep1": "Estude\numa cena",
+  "juntosCaravanMonthStep2": "Some\npassos",
+  "juntosCaravanMonthStep3": "Veja o\ncaminho",
+  "juntosCaravanMonthTitle": "Quem mais caminhou neste mês?",
+  "juntosCaravanPilgrimsCount": "{count, plural, =1{1 peregrino da caravana} other{{count} peregrinos da caravana}}",
+  "@juntosCaravanPilgrimsCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "juntosCaravanShareSubject": "Venha pra caravana no Stway",
+  "juntosCaravanShareText": "{name} te chama pra caravana no Stway — aprenda a Bíblia em cenas curtas e caminhe junto no ranking.\n\nBaixe: {url}",
+  "@juntosCaravanShareText": {
+    "description": "Share text a friend sends; casual friend voice.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "url": {
+        "type": "String"
+      }
+    }
+  },
+  "juntosCaravanSignInLive": "Entre com Google para ver a caravana ao vivo.",
+  "juntosCaravanTimeout": "A caravana demorou para responder. Puxe para atualizar.",
+  "juntosCaravanWeekBody": "Só passos de cenas novas, de segunda a domingo. No fim da semana, os primeiros sobem de nível e os últimos descem.",
+  "juntosCaravanWeekStep1": "Passos\nda semana",
+  "juntosCaravanWeekStep2": "Lugar no\nranking",
+  "juntosCaravanWeekStep3": "Sobe ou\ndesce",
+  "juntosCaravanWeekTitle": "Quem avançou nesta semana?",
+  "juntosChallengeExplainerBody": "Mesma cena, até domingo. Quem chegar ganha {reward} — se os dois chegarem, os dois ganham.",
+  "@juntosChallengeExplainerBody": {
+    "placeholders": {
+      "reward": {
+        "type": "String"
+      }
+    }
+  },
+  "juntosChallengeExplainerTitle": "Quem chega até domingo?",
+  "juntosChallengeStep1": "Mesma\ncena",
+  "juntosChallengeStep2": "Chegar até\ndomingo",
+  "juntosChallengeStep3": "+10 passos\nna chegada",
+  "juntosChoose": "Escolher",
+  "juntosChromeTabAlert": "{label}, novidade",
+  "@juntosChromeTabAlert": {
+    "description": "Screen reader label for a tab with news.",
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "juntosCloseConfirm": "Encerrar",
+  "juntosCloseRoomBody": "O grupo some para todos e o código deixa de funcionar. Não é possível desfazer.",
+  "juntosCloseRoomTitle": "Encerrar o grupo?",
+  "juntosClosesToday": "Fecha hoje",
+  "juntosCodeCopied": "Código copiado",
+  "juntosCodeLabel": "Código",
+  "juntosCodeTapToCopy": "Código {code}. Toque para copiar",
+  "@juntosCodeTapToCopy": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "juntosCompanionExplainerBody": "Uma companhia de estudo. No dia em que os dois caminham, o fio acende e a sequência cresce.",
+  "juntosCompanionExplainerTitle": "Quem caminha ao seu lado?",
+  "juntosCompanionFallback": "Companheiro",
+  "juntosCompanionStep1": "Os dois\nestudam",
+  "juntosCompanionStep2": "O dia conta\njuntos",
+  "juntosCompanionStep3": "Se um atrasa,\no outro acena",
+  "juntosCompanionsOfflineBody": "Entre com Google para caminhar com alguém de verdade.",
+  "juntosCompanionsOfflineTitle": "Companhia precisa da nuvem",
+  "juntosConnecting": "Conectando…",
+  "juntosCopy": "Copiar",
+  "juntosCopyCodeSemantics": "Copiar código {code}",
+  "@juntosCopyCodeSemantics": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "juntosCreateInviteError": "Não foi possível criar o convite. Tente de novo.",
+  "juntosCreateRoom": "Criar grupo",
+  "juntosDaysLeft": "{count, plural, =1{Falta 1 dia} other{Faltam {count} dias}}",
+  "@juntosDaysLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "juntosDeclineInviteError": "Não foi possível recusar o convite. Tente de novo.",
+  "juntosDemoteZone": "Zona de descida · {tier}",
+  "@juntosDemoteZone": {
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "juntosEditRoomTitle": "Editar grupo",
+  "juntosFirstMilestone": "Primeiro marco: {count} dias juntos",
+  "@juntosFirstMilestone": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "juntosGapToAbove": "{gap} do {place}º",
+  "@juntosGapToAbove": {
+    "description": "Steps behind the person ranked just above (place = their position).",
+    "placeholders": {
+      "gap": {
+        "type": "int"
+      },
+      "place": {
+        "type": "int"
+      }
+    }
+  },
+  "juntosHaveCode": "Tenho um código",
+  "juntosInboxNews": "Novidades · {count}",
+  "@juntosInboxNews": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "juntosInviteCompanion": "Chamar um companheiro",
+  "juntosInvitePeople": "Chamar pessoas",
+  "juntosInviteShort": "Chamar",
+  "juntosJoin": "Entrar",
+  "juntosJoinError": "Não foi possível entrar. Tente de novo.",
+  "juntosJoinRoomHint": "Código que você recebeu",
+  "juntosJoinRoomTitle": "Entrar no grupo",
+  "juntosLeader": "Líder",
+  "juntosLeaveAllCompanionsBody": "{count, plural, =1{A companhia termina. Você fica sem companheiro.} other{As {count} companhias terminam. Você fica sem companheiro.}}",
+  "@juntosLeaveAllCompanionsBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "juntosLeaveAllCompanionsCta": "Encerrar todas as companhias",
+  "juntosLeaveAllCompanionsTitle": "Encerrar todas as companhias?",
+  "juntosLeaveAllConfirm": "Encerrar todas",
+  "juntosLeaveCompanionBody": "A companhia com esta pessoa termina. A caravana continua.",
+  "juntosLeaveCompanionCta": "Sair da companhia",
+  "juntosLeaveCompanionTitle": "Sair da companhia?",
+  "juntosLeaveConfirm": "Sair",
+  "juntosLeaveRoomBody": "Você sai da lista. Para voltar, use o código de novo.",
+  "juntosLeaveRoomTitle": "Sair do grupo?",
+  "juntosMilestoneLeft": "{count, plural, =1{Falta 1 para o marco de {next}} other{Faltam {count} para o marco de {next}}}",
+  "@juntosMilestoneLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "next": {
+        "type": "int"
+      }
+    }
+  },
+  "juntosMilestones": "Marcos",
+  "juntosNextMilestone": "Próximo marco: {count} dias",
+  "@juntosNextMilestone": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "juntosOfTotal": " de {total}",
+  "@juntosOfTotal": {
+    "description": "Follows a big number: '3 of 5'. Keep the leading space.",
+    "placeholders": {
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "juntosOnlineSemantics": "{countLabel}. Ver quem está estudando",
+  "@juntosOnlineSemantics": {
+    "placeholders": {
+      "countLabel": {
+        "type": "String"
+      }
+    }
+  },
+  "juntosOpenInvite": "Convite aberto",
+  "juntosOpenInviteMissing": "Falta uma pessoa do outro lado",
+  "juntosOrInviteCompanion": "Ou chamar um companheiro",
+  "juntosPromoteZone": "Zona de subida · {tier}",
+  "@juntosPromoteZone": {
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "juntosRoomAllStudied": "O grupo inteiro estudou nesta semana.",
+  "juntosRoomBenefitList": "Lista",
+  "juntosRoomBenefitListDetail": "Quem estudou",
+  "juntosRoomBenefitStudy": "Estudo",
+  "juntosRoomBenefitStudyDetail": "Mesma cena",
+  "juntosRoomBenefitWave": "Acenar",
+  "juntosRoomBenefitWaveDetail": "Quem sumiu",
+  "juntosRoomChestAlready": "Baú já coletado nesta semana",
+  "juntosRoomChestClaimed": "Baú do grupo · +{count} passos",
+  "@juntosRoomChestClaimed": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "juntosRoomChestOpen": "Abrir o baú do grupo · +{count} passos",
+  "@juntosRoomChestOpen": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "juntosRoomCreated": "Grupo criado. Chame alguém da lista, ou mande o código {code}.",
+  "@juntosRoomCreated": {
+    "placeholders": {
+      "code": {
+        "type": "String"
+      }
+    }
+  },
+  "juntosRoomFull": "Grupo cheio. Para mais gente, abra outro grupo.",
+  "juntosRoomGoalHint": "Soma da semana. Em branco, tira a meta.",
+  "juntosRoomGoalLabel": "Meta do grupo",
+  "juntosRoomGoalProgress": "{sum} / {goal} passos",
+  "@juntosRoomGoalProgress": {
+    "placeholders": {
+      "sum": {
+        "type": "int"
+      },
+      "goal": {
+        "type": "int"
+      }
+    }
+  },
+  "juntosRoomGoalTitle": "Meta de passos do grupo",
+  "juntosRoomHalfStudied": "Metade do grupo já estudou.",
+  "juntosRoomHintClaimed": "Baú do grupo coletado nesta semana.",
+  "juntosRoomHintHalf": "O baú abre quando metade do grupo estudar.",
+  "juntosRoomHintHalfOrGoal": "O baú abre com metade do grupo ou a meta.",
+  "juntosRoomHintInvite": "Chame quem estuda com você: célula, família, amigos.",
+  "juntosRoomHintStudyToday": "Estude hoje para abrir o baú do grupo.",
+  "juntosRoomJoinError": "Não foi possível entrar no grupo. Tente de novo.",
+  "juntosRoomJoined": "Você entrou em {name}.",
+  "@juntosRoomJoined": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "juntosRoomJoinedGeneric": "Você entrou no grupo.",
+  "juntosRoomLeaderLine": "{leaderTitle}: {leader} · {count, plural, =1{1 pessoa} other{{count} pessoas}}",
+  "@juntosRoomLeaderLine": {
+    "placeholders": {
+      "leaderTitle": {
+        "type": "String"
+      },
+      "leader": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "juntosRoomMissingForHalf": "{count, plural, =1{Falta 1 pessoa para metade do grupo.} other{Faltam {count} pessoas para metade do grupo.}}",
+  "@juntosRoomMissingForHalf": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "juntosRoomNotStudiedToday": "Você ainda não estudou hoje.",
+  "juntosRoomOnlyYou": "Só você no grupo por enquanto.",
+  "juntosRoomOptions": "Opções do grupo",
+  "juntosRoomQrSubtitle": "Aponte a câmera ou digite o código para entrar",
+  "juntosRoomShareText": "Entra no grupo \"{name}\" no Stway.\nToque ou aponte a câmera:\n{url}\n\nCódigo: {code}\n\nA lista mostra quem estudou nesta semana.\n\nAinda não tem o app? Baixe: {storeUrl}",
+  "@juntosRoomShareText": {
+    "description": "Share text a friend sends; casual friend voice.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "url": {
+        "type": "String"
+      },
+      "code": {
+        "type": "String"
+      },
+      "storeUrl": {
+        "type": "String"
+      }
+    }
+  },
+  "juntosRoomStudySet": "Estudo marcado para o grupo",
+  "juntosRoomStudySetError": "Não foi possível marcar o estudo. Tente de novo.",
+  "juntosRoomsEmptyBody": "Um grupo fechado: célula, discipulado ou EBD. Marque a cena da semana e veja quem estudou — o convite vai no app ou no WhatsApp.",
+  "juntosRoomsEmptyEyebrow": "Célula · Discipulado · EBD",
+  "juntosRoomsEmptyTitle": "Quem estuda com você?",
+  "juntosRoomsOfflineBody": "O grupo fica na sua conta. Entre com Google para criar ou usar um código.",
+  "juntosRoomsOfflineFoot": "Sem login, o código não funciona",
+  "juntosRoomsOfflineTitle": "Entre para criar o grupo",
+  "juntosSeenToday": "Visto hoje",
+  "juntosShowQrShare": "Mostrar QR e compartilhar",
+  "juntosSomeone": "Alguém",
+  "juntosStudiedThisWeek": "estudaram nesta semana",
+  "juntosStudyToday": "Estudar hoje",
+  "juntosStudyingNow": "Estudando agora",
+  "juntosSwitchRoomBody": "Você sai do grupo em que está agora.",
+  "juntosSwitchRoomTitle": "Entrar em {name}?",
+  "@juntosSwitchRoomTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "juntosTabCaravan": "Caravana",
+  "juntosTabChallenge": "Desafio",
+  "juntosTabCompanion": "Companhia",
+  "juntosTabGroups": "Grupos",
+  "juntosThisMonth": "Este mês",
+  "juntosThisWeek": "Esta semana",
+  "juntosTie": "Empate",
+  "juntosTogetherLegend": "juntos",
+  "juntosTogetherOfSeven": "{count} de 7 juntos",
+  "@juntosTogetherOfSeven": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "juntosTransferBody": "Quem assumir marca o estudo, a meta e acena para o grupo. Você continua na lista.",
+  "juntosTransferDone": "{name} agora conduz o grupo",
+  "@juntosTransferDone": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "juntosTransferError": "Não foi possível passar a liderança. Tente de novo.",
+  "juntosTransferTitle": "Passar a liderança",
+  "juntosWaiting": "Aguardando",
+  "juntosWalkedToday": "Caminhou hoje",
+  "juntosWaveAt": "Acenar para {name}",
+  "@juntosWaveAt": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "juntosWaveError": "Não foi possível acenar. Tente de novo.",
+  "juntosWavedAt": "Você acenou para {name}",
+  "@juntosWavedAt": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "juntosWavedAtYou": "{name} acenou para você",
+  "@juntosWavedAtYou": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "juntosWeekRankingEmpty": "O ranking da semana só aparece com gente de verdade na caravana.",
+  "juntosWeekTogetherBonus": "A companhia ganhou +{count} passos na jornada",
+  "@juntosWeekTogetherBonus": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "juntosWho": "Quem?",
+  "juntosYouLower": "você",
+  "@juntosYouLower": {
+    "description": "Used inside a sentence, e.g. 'Leader: you'."
+  },
+  "languageDevice": "Do aparelho",
+  "languageHint": "Os textos das trilhas e a Bíblia continuam em português por enquanto.",
+  "languageTitle": "Idioma",
+  "leagueActiveToday": "Ativo hoje",
+  "leagueBonusEncourage": "+{count} passos de encorajamento",
+  "@leagueBonusEncourage": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "leagueDemotedBody": "Ficou em {rank}º. No nível {tier}, dá para subir de novo.",
+  "@leagueDemotedBody": {
+    "placeholders": {
+      "rank": {
+        "type": "int"
+      },
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "leagueDemotedTitle": "Você desceu para {tier}",
+  "@leagueDemotedTitle": {
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "leagueDriftDown": "{count, plural, =1{Desceu 1 posição hoje} other{Desceu {count} posições hoje}}",
+  "@leagueDriftDown": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "leagueDriftStable": "Posição estável hoje",
+  "leagueDriftUp": "{count, plural, =1{Subiu 1 posição hoje} other{Subiu {count} posições hoje}}",
+  "@leagueDriftUp": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "leagueLevelUpBodyOnly": "Agora você caminha no nível\n{tier}",
+  "@leagueLevelUpBodyOnly": {
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "leagueLevelUpBodyRank": "Ficou em {rank}º · agora caminha no nível\n{tier}",
+  "@leagueLevelUpBodyRank": {
+    "placeholders": {
+      "rank": {
+        "type": "int"
+      },
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "leagueLevelUpTitle": "Você subiu de nível",
+  "leaguePromotedLevelOnly": "Agora no nível {tier}",
+  "@leaguePromotedLevelOnly": {
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "leaguePromotedRankLine": "Ficou em {rank}º · agora no nível {tier}",
+  "@leaguePromotedRankLine": {
+    "placeholders": {
+      "rank": {
+        "type": "int"
+      },
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "leaguePromotedTitle": "Você subiu para {tier}",
+  "@leaguePromotedTitle": {
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "leagueRiskBodyClosing": "Você está em {rank}º no nível {tier}. A caravana fecha em breve.",
+  "@leagueRiskBodyClosing": {
+    "placeholders": {
+      "rank": {
+        "type": "int"
+      },
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "leagueRiskBodyHold": "Você está em {rank}º no nível {tier}. Um passo pode segurar o lugar.",
+  "@leagueRiskBodyHold": {
+    "placeholders": {
+      "rank": {
+        "type": "int"
+      },
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "leagueRiskNear": "Perto da descida · {closes}",
+  "@leagueRiskNear": {
+    "placeholders": {
+      "closes": {
+        "type": "String"
+      }
+    }
+  },
+  "leagueRiskZone": "Zona de descida · {closes}",
+  "@leagueRiskZone": {
+    "placeholders": {
+      "closes": {
+        "type": "String"
+      }
+    }
+  },
+  "leagueRoleLeader": "Líder",
+  "leagueRolePodium": "Pódio",
+  "leagueRoleVice": "Vice",
+  "leagueSeenDate": "Visto {date}",
+  "@leagueSeenDate": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "leagueSeenOn": "Visto em {date}",
+  "@leagueSeenOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "leagueSeenToday": "Visto hoje",
+  "leagueSeenTodayWalked": "Visto hoje · caminhou {date}",
+  "@leagueSeenTodayWalked": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "leagueStayedBody": "Você ficou em {rank}º no nível {tier}. Nova semana — continue caminhando.",
+  "@leagueStayedBody": {
+    "placeholders": {
+      "rank": {
+        "type": "int"
+      },
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "leagueStudying": "{count, plural, =0{0 estudando} =1{1 estudando} other{{count} estudando}}",
+  "@leagueStudying": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "leagueTierCedro": "Cedro",
+  "leagueTierEstrela": "Estrela",
+  "leagueTierOliveira": "Oliveira",
+  "leagueTierSemente": "Semente",
+  "leagueTierVideira": "Videira",
+  "leagueWalkedDate": "Caminhou {date}",
+  "@leagueWalkedDate": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "leagueWalkedOn": "Caminhou em {date}",
+  "@leagueWalkedOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "leagueWalkedSeen": "Caminhou {walk} · visto {seen}",
+  "@leagueWalkedSeen": {
+    "placeholders": {
+      "walk": {
+        "type": "String"
+      },
+      "seen": {
+        "type": "String"
+      }
+    }
+  },
+  "leagueWalkedToday": "Caminhou hoje",
+  "leagueWeekEndedTitle": "Semana da caravana encerrada",
+  "lessonBackToQuestion": "Voltar à pergunta",
+  "lessonBonus": "Bônus",
+  "lessonBoss": "Travessia",
+  "@lessonBoss": {
+    "description": "Cena de revisão de etapa (boss)"
+  },
+  "lessonDuration": "~3 min",
+  "@lessonDuration": {
+    "description": "Duração estimada da cena"
+  },
+  "lessonExitAnyway": "Sair mesmo assim",
+  "lessonExitBody": "Você está na pergunta {act} de {total}. Saindo agora, os passos desta cena não contam.",
+  "@lessonExitBody": {
+    "placeholders": {
+      "act": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "lessonExitTitle": "Sair da cena?",
+  "lessonInsightSubtitle": "O que ficou",
+  "lessonIntroBossPulse": "{count, plural, =1{Travessia · 1 pergunta} other{Travessia · {count} perguntas}}",
+  "@lessonIntroBossPulse": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lessonIntroPulse": "{count, plural, =1{~3 min · 1 pergunta} other{~3 min · {count} perguntas}}",
+  "@lessonIntroPulse": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lessonLampRelit": "Cinco seguidas: uma lâmpada reacendeu.",
+  "lessonLampsLeft": "{count, plural, =0{As lâmpadas acabaram — cada erro apaga uma.} =1{Resta 1 lâmpada — cada erro apaga uma.} other{Restam {count} lâmpadas — cada erro apaga uma.}}",
+  "@lessonLampsLeft": {
+    "description": "Lâmpada = vida dentro da cena",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lessonListen": "Ouvir o texto",
+  "lessonListenStop": "Parar",
+  "lessonLoadError": "Não foi possível carregar as perguntas desta cena. Tente de novo.",
+  "lessonLocked": "Esta cena ainda está bloqueada.",
+  "lessonMicroSubtitle": "Complete o verso",
+  "lessonPassageTitle": "Texto da cena",
+  "lessonPractice": "Treino",
+  "lessonQuestionProgress": "Pergunta {current} de {total}",
+  "@lessonQuestionProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "lessonVerseFallback": "Versículo",
+  "@lessonVerseFallback": {
+    "description": "Referência quando o versículo não tem referência"
+  },
+  "liturgyAdvent": "Advento",
+  "liturgyAdventSubtitle": "Tempo de espera e preparação",
+  "liturgyChristmas": "Natal",
+  "liturgyChristmasSubtitle": "O Verbo se fez carne",
+  "liturgyEaster": "Páscoa",
+  "liturgyEasterSubtitle": "Cristo ressuscitou",
+  "liturgyHolyWeek": "Semana Santa",
+  "liturgyHolyWeekSubtitle": "Da cruz à espera da ressurreição",
+  "liturgyLent": "Quaresma",
+  "liturgyLentSubtitle": "Deserto, jejum e retorno",
+  "liturgyOrdinary": "Tempo comum",
+  "liturgyOrdinarySubtitle": "Crescimento na Palavra, dia a dia",
+  "liturgyPentecost": "Pentecostes",
+  "liturgyPentecostSubtitle": "O Espírito é derramado",
+  "liturgyQuestSubtitle": "Leia um capítulo — foco: {ref}",
+  "@liturgyQuestSubtitle": {
+    "placeholders": {
+      "ref": {
+        "type": "String"
+      }
+    }
+  },
+  "liturgyQuestTitle": "Tempo de {season}",
+  "@liturgyQuestTitle": {
+    "description": "Seasonal daily quest title, e.g. 'Tempo de Advento'",
+    "placeholders": {
+      "season": {
+        "type": "String"
+      }
+    }
+  },
+  "loginAppleError": "Falha no login com Apple",
+  "loginBody": "Sua conta guarda seus passos, sua sequência e suas cenas — assim nada se perde entre aparelhos.",
+  "loginEntering": "Entrando…",
+  "loginGoogleError": "Falha no login com Google",
+  "loginHydrateError": "Não foi possível carregar seu progresso. Verifique a conexão e tente de novo.",
+  "loginLoadingBody": "Carregando seus passos, sua sequência e suas cenas…",
+  "loginReconnect": "Tentar reconectar",
+  "loginRequired": "É necessário entrar para usar o Stway.",
+  "loginTitle": "Entre para continuar",
+  "loginWithApple": "Continuar com Apple",
+  "loginWithGoogle": "Continuar com Google",
+  "mascotAllClear": "Tudo claro. Volte amanhã para continuar.",
+  "mascotBossHigh": "O desafio final ficou para trás. Siga o mapa.",
+  "mascotBossLow": "Travessia feita. Vale reforçar o que ainda tremeu.",
+  "mascotCaravanDetailLead": "Segure o 1º até o domingo e você avança de caravana.",
+  "mascotCaravanDetailOut": "Cada cena move a caravana. Continue nesta semana.",
+  "mascotCaravanDetailZone": "{rank}º agora · os primeiros sobem no domingo.",
+  "@mascotCaravanDetailZone": {
+    "placeholders": {
+      "rank": {
+        "type": "int"
+      }
+    }
+  },
+  "mascotCaravanLead": "Você lidera a caravana",
+  "mascotCaravanRank": "{rank}º na caravana",
+  "@mascotCaravanRank": {
+    "placeholders": {
+      "rank": {
+        "type": "int"
+      }
+    }
+  },
+  "mascotCaravanZone": "Zona de subida",
+  "mascotFailedDetail": "As lâmpadas acabaram antes do fim. A cena espera você — de novo, com calma.",
+  "mascotFailedKicker": "Faltou luz",
+  "mascotGood": "Boa cena. A trilha te espera amanhã.",
+  "mascotHeadlineBoss": "Travessia concluída",
+  "mascotHeadlinePerfect": "100% de acertos",
+  "mascotHeadlineReplay": "Você voltou ao texto",
+  "mascotHeadlineScene": "Cena concluída",
+  "mascotKickerBoss": "Travessia final",
+  "mascotKickerPerfect": "Sem erro",
+  "mascotKickerReplay": "Revisão",
+  "mascotKickerScene": "Mais uma cena",
+  "mascotPerfect": "Nenhuma lâmpada perdida. Isso fica.",
+  "mascotReinforce": "Cena feita. Reforce o que faltou — a memória agradece.",
+  "mascotReplay": "Voltar ao texto fortalece o que já caminhou.",
+  "medalAccuracyEliteHint": "Manteve 95%+ de acertos em 150 questões ou mais",
+  "medalAccuracyEliteTitle": "Mira certeira",
+  "medalAdventDoorTitle": "Porta aberta",
+  "medalAdventHalfHint": "Caminhe metade dos dias do Advento",
+  "medalAdventHalfTitle": "Meio do caminho",
+  "medalAdventLivedTitle": "Temporada vivida",
+  "medalAdventSubtitle": "Espera e preparação",
+  "medalAdventTitle": "Advento",
+  "medalAdventTrackSubtitle": "Espera e preparação — {year}",
+  "@medalAdventTrackSubtitle": {
+    "placeholders": {
+      "year": {
+        "type": "String"
+      }
+    }
+  },
+  "medalAdventVaultTitle": "Advento {year}",
+  "@medalAdventVaultTitle": {
+    "placeholders": {
+      "year": {
+        "type": "String"
+      }
+    }
+  },
+  "medalAdventWeekHint": "Sete dias de sequência no Advento",
+  "medalAdventWeekTitle": "Semana de espera",
+  "medalAllLevelsDone": "Todos os níveis concluídos.",
+  "medalBibleBeforeHint": "Leu um capítulo no mesmo dia, antes da cena",
+  "medalBibleBeforeTitle": "Palavra antes",
+  "medalComebackHint": "A porta estava aberta — voltou após 21 dias ou mais",
+  "medalComebackTitle": "Volta firme",
+  "medalFormationPerfect10Title": "Olho firme",
+  "medalFormationPerfect1Title": "Cena nítida",
+  "medalFormationPerfect25Hint": "25 cenas com 100% de acertos",
+  "medalFormationPerfect25Title": "Tudo certo",
+  "medalFounderHint": "Entrou no app durante o período de testes",
+  "medalFounderTitle": "Pioneiro",
+  "medalHeadlineDiscovery": "Descoberta",
+  "medalHeadlineJourney": "Medalha da jornada",
+  "medalHeadlineLevelUp": "Subiu de nível",
+  "medalHeadlineLit": "Medalha acesa",
+  "medalHeadlineLocked": "A desbloquear",
+  "medalHeadlineNew": "Nova medalha",
+  "medalHeadlineRare": "Rara",
+  "medalHeadlineTrail": "Medalha da trilha",
+  "medalHintAdventDays": "{count, plural, =1{Caminhe 1 dia no Advento} other{Caminhe {count} dias no Advento}}",
+  "@medalHintAdventDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "medalHintLentDays": "{count, plural, =1{Caminhe 1 dia na Quaresma} other{Caminhe {count} dias na Quaresma}}",
+  "@medalHintLentDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "medalHintMemorizeVerses": "{count, plural, =1{Firme 1 versículo na memorização} other{Firme {count} versículos na memorização}}",
+  "@medalHintMemorizeVerses": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "medalHintPerfectScenes": "{count, plural, =1{Termine uma cena com 100% de acertos} other{Termine {count} cenas com 100% de acertos}}",
+  "@medalHintPerfectScenes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "medalHintReadChapters": "{count, plural, =1{Leia 1 capítulo na Bíblia} other{Leia {count} capítulos}}",
+  "@medalHintReadChapters": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "medalHintShareVerses": "{count, plural, =1{Compartilhe 1 versículo} other{Compartilhe {count} versículos}}",
+  "@medalHintShareVerses": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "medalHintStreak": "{count, plural, =1{Mantenha 1 dia de sequência} other{Mantenha {count} dias de sequência}}",
+  "@medalHintStreak": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "medalHowToEarn": "Como ganhar: {hint}",
+  "@medalHowToEarn": {
+    "placeholders": {
+      "hint": {
+        "type": "String"
+      }
+    }
+  },
+  "medalJourneyVaultSubtitle": "Faísca acende; medalha fica",
+  "medalJourneyVaultTitle": "Cofre da jornada",
+  "medalLeaderHint": "Ficou em 1º no ranking geral por um dia",
+  "medalLeaderTitle": "Líder da caravana",
+  "medalLentFirstStepTitle": "Primeiro passo no deserto",
+  "medalLentHalfHint": "Caminhe metade dos dias da Quaresma",
+  "medalLentHalfTitle": "Meio do deserto",
+  "medalLentLivedTitle": "Quaresma vivida",
+  "medalLentSubtitle": "Deserto, jejum e retorno",
+  "medalLentTitle": "Quaresma",
+  "medalLentTrackSubtitle": "Deserto, jejum e retorno — {year}",
+  "@medalLentTrackSubtitle": {
+    "placeholders": {
+      "year": {
+        "type": "String"
+      }
+    }
+  },
+  "medalLentVaultTitle": "Quaresma {year}",
+  "@medalLentVaultTitle": {
+    "placeholders": {
+      "year": {
+        "type": "String"
+      }
+    }
+  },
+  "medalMemoryVerse15Title": "Palavra guardada",
+  "medalMemoryVerse1Title": "Primeiro verso",
+  "medalMemoryVerse50Title": "Escritura viva",
+  "medalMysteryHint": "Revelam-se no caminho — sem dica no cofre.",
+  "medalMysteryTitle": "{count, plural, =1{Uma descoberta} other{{count} descobertas}}",
+  "@medalMysteryTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "medalNowTier": "Agora em {tier}",
+  "@medalNowTier": {
+    "placeholders": {
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "medalPathStreak14Title": "Duas semanas",
+  "medalPathStreak30Title": "Mês constante",
+  "medalPathStreak3Title": "Três dias firmes",
+  "medalPerfectBossHint": "Venceu um desafio final com 100% de acertos",
+  "medalPerfectBossTitle": "Prova impecável",
+  "medalProximityAction": "{count, plural, =1{Falta {units} · {track}} other{Faltam {units} · {track}}}",
+  "@medalProximityAction": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "units": {
+        "type": "String"
+      },
+      "track": {
+        "type": "String"
+      }
+    }
+  },
+  "medalProximityLeft": "{count, plural, =1{Falta {units} para {tier} em {track}} other{Faltam {units} para {tier} em {track}}}",
+  "@medalProximityLeft": {
+    "description": "units = medalUnit* already counted (e.g. '3 capítulos'); count = remaining.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "units": {
+        "type": "String"
+      },
+      "tier": {
+        "type": "String"
+      },
+      "track": {
+        "type": "String"
+      }
+    }
+  },
+  "medalProximityRemaining": "{count, plural, =1{Falta {units}} other{Faltam {units}}}",
+  "@medalProximityRemaining": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "units": {
+        "type": "String"
+      }
+    }
+  },
+  "medalProximityShortLeft": "{count, plural, =1{Falta 1 para {tier}} other{Faltam {count} para {tier}}}",
+  "@medalProximityShortLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "medalProximityShortToward": "{current}/{target} rumo a {tier}",
+  "@medalProximityShortToward": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      },
+      "tier": {
+        "type": "String"
+      }
+    }
+  },
+  "medalProximityToward": "{units} rumo a {tier} em {track}",
+  "@medalProximityToward": {
+    "placeholders": {
+      "units": {
+        "type": "String"
+      },
+      "tier": {
+        "type": "String"
+      },
+      "track": {
+        "type": "String"
+      }
+    }
+  },
+  "medalRareLeft": "{count, plural, =1{Falta 1 {unit} para «{title}»} other{Faltam {count} {unit} para «{title}»}}",
+  "@medalRareLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "unit": {
+        "type": "String"
+      },
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "medalRareShortLeft": "{count, plural, =1{Falta 1 para «{title}»} other{Faltam {count} para «{title}»}}",
+  "@medalRareShortLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "medalRareVaultSubtitle": "Medalhas excepcionais — só aparecem quando você ganha",
+  "medalRareVaultTitle": "Raras",
+  "medalReflectionDeepHint": "Registrou 40 reflexões no diário de cenas",
+  "medalReflectionDeepTitle": "Diário profundo",
+  "medalSeasonFirstWeekTitle": "Primeira semana",
+  "medalTierAurora": "Ultra rara",
+  "medalTierBronze": "Bronze",
+  "medalTierDiamond": "Diamante",
+  "medalTierGold": "Ouro",
+  "medalTierIron": "Ferro",
+  "medalTierMirra": "Mirra",
+  "medalTierPlatinum": "Platina",
+  "medalTierSilver": "Prata",
+  "medalTrackComplete": "Completa",
+  "medalTrackFormationSubtitle": "Acertos e domínio nas cenas",
+  "medalTrackFormationTitle": "Formação",
+  "medalTrackMemorySubtitle": "Versículos guardados no coração",
+  "medalTrackMemoryTitle": "Memória",
+  "medalTrackPathSubtitle": "Sequência na jornada",
+  "medalTrackPathTitle": "Caminho",
+  "medalTrackUnlit": "A acender",
+  "medalTrackWitnessSubtitle": "Compartilhar a Palavra",
+  "medalTrackWitnessTitle": "Testemunho",
+  "medalTrackWordSubtitle": "Leitura bíblica na jornada",
+  "medalTrackWordTitle": "Palavra",
+  "medalTrailFinalModeHint": "Conclua a trilha no modo {mode}",
+  "@medalTrailFinalModeHint": {
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "medalTrailFirstSceneHint": "Conclua 1 cena nesta trilha",
+  "medalTrailFirstSceneTitle": "Primeira cena",
+  "medalTrailFlawlessHint": "Concluiu uma trilha inteira com 100% em todas as cenas",
+  "medalTrailFlawlessTitle": "Trilha impecável",
+  "medalTrailModeHint": "Conclua o modo {mode}",
+  "@medalTrailModeHint": {
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "medalTrailTrackSubtitle": "Progresso nesta trilha",
+  "medalUnitAdventDays": "{count, plural, =1{1 dia no Advento} other{{count} dias no Advento}}",
+  "@medalUnitAdventDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "medalUnitChapters": "{count, plural, =1{1 capítulo} other{{count} capítulos}}",
+  "@medalUnitChapters": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "medalUnitLentDays": "{count, plural, =1{1 dia na Quaresma} other{{count} dias na Quaresma}}",
+  "@medalUnitLentDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "medalUnitMemorizedVerses": "{count, plural, =1{1 versículo memorizado} other{{count} versículos memorizados}}",
+  "@medalUnitMemorizedVerses": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "medalUnitPerfectScenes": "{count, plural, =1{1 cena perfeita} other{{count} cenas perfeitas}}",
+  "@medalUnitPerfectScenes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "medalUnitSharedVerses": "{count, plural, =1{1 versículo compartilhado} other{{count} versículos compartilhados}}",
+  "@medalUnitSharedVerses": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "medalUnitStreakDays": "{count, plural, =1{1 dia de sequência} other{{count} dias de sequência}}",
+  "@medalUnitStreakDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "medalVaultAllMedals": "{count, plural, =1{1 medalha} other{Todas as {count} medalhas}}",
+  "@medalVaultAllMedals": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "medalVaultCompleteBody": "Você iluminou cada medalha deste cofre. Continue caminhando na Palavra.",
+  "medalVaultCompleteLabel": "Cofre completo",
+  "medalVaultDiscoveries": "Descobertas",
+  "medalVaultEmptyHint": "Cada cena concluída aproxima você de uma medalha. A primeira está perto.",
+  "medalVaultMysteryEmpty": "Revelam-se no caminho — sem dica.",
+  "medalVaultMysteryMore": "Outras se revelam no caminho.",
+  "medalVaultNextSemantics": "Próxima medalha: {message}",
+  "@medalVaultNextSemantics": {
+    "placeholders": {
+      "message": {
+        "type": "String"
+      }
+    }
+  },
+  "medalVaultNextTitle": "Próxima medalha",
+  "medalVaultRemaining": "{count, plural, =1{Falta 1 {unit}} other{Faltam {count} {unit}}}",
+  "@medalVaultRemaining": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "unit": {
+        "type": "String"
+      }
+    }
+  },
+  "medalVaultSeason": "Estação",
+  "medalVaultTabJourney": "Jornada",
+  "medalVaultTabTrails": "Trilhas",
+  "medalVaultTitle": "Medalhas",
+  "medalWalkingInLightHint": "Manteve 85%+ de acertos (mín. 50 questões)",
+  "medalWalkingInLightTitle": "Andando na luz",
+  "medalWitnessShare10Title": "Semeador",
+  "medalWitnessShare1Title": "Palavra levada",
+  "medalWitnessShare50Title": "Voz na caravana",
+  "medalWordChapters100Title": "Leitor constante",
+  "medalWordChapters1Title": "Primeira Palavra",
+  "medalWordChapters25Title": "Leitor atento",
+  "memoryCard": "Carta",
+  "memoryDoneSummary": "{known} firmes · {learning} em progresso",
+  "@memoryDoneSummary": {
+    "placeholders": {
+      "known": {
+        "type": "int"
+      },
+      "learning": {
+        "type": "int"
+      }
+    }
+  },
+  "memoryDoneTitle": "Sessão concluída",
+  "memoryKnown": "Já sei",
+  "memoryNotYet": "Ainda não",
+  "memoryReveal": "Revelar",
+  "memorySubtitle": "Fixe na memória",
+  "memoryTitle": "Memorizar",
+  "modeBadgeCleared": "Concluída",
+  "modeBadgeCurrent": "Atual",
+  "modeBadgeHere": "Você está aqui",
+  "modeBadgeInProgress": "Em andamento",
+  "modeBadgeLocked": "Bloqueada",
+  "modeBadgeReview": "Revisão",
+  "modeBannerHint": "Toque para trocar de modo",
+  "modeBannerSemantics": "Modo de estudo: {name}. {tagline}.",
+  "@modeBannerSemantics": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "tagline": {
+        "type": "String"
+      }
+    }
+  },
+  "modeCaminhadaBlurb": "Ligue os fatos: causas, contexto e o fio da narrativa.",
+  "modeCaminhadaLabel": "Compreensão",
+  "@modeCaminhadaLabel": {
+    "description": "Nome do 2º modo (id interno caminhada)"
+  },
+  "modeCaminhadaSkill1": "Relacionar",
+  "modeCaminhadaSkill2": "Comparar",
+  "modeCaminhadaSkill3": "Encadear",
+  "modeCaminhadaTagline": "O que o texto comunica",
+  "modeCaptionCleared": "concluída",
+  "@modeCaptionCleared": {
+    "description": "Legenda sob o emblema do modo"
+  },
+  "modeCaptionCurrent": "atual",
+  "modeCaptionLocked": "bloqueada",
+  "modeCleared": "{name} concluída",
+  "@modeCleared": {
+    "description": "Modo concluído; name = nome do modo (Observação…)",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "modeClearedReview": "Concluída · revise quando quiser",
+  "modeCtaContinue": "Continuar em {name}",
+  "@modeCtaContinue": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "modeCtaReview": "Revisar {name}",
+  "@modeCtaReview": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "modeCtaStart": "Começar em {name}",
+  "@modeCtaStart": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "modeCtaStudy": "Estudar em {name}",
+  "@modeCtaStudy": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "modeCurrent": "{name} atual",
+  "@modeCurrent": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "modeLockHint": "Conclua {name} para liberar",
+  "@modeLockHint": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "modeLocked": "{name} bloqueada",
+  "@modeLocked": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "modeNamed": "Modo {name}",
+  "@modeNamed": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "modeOrdinal": "Modo {ordinal}",
+  "@modeOrdinal": {
+    "description": "ordinal = I, II, III",
+    "placeholders": {
+      "ordinal": {
+        "type": "String"
+      }
+    }
+  },
+  "modeOrdinalBadge": "Modo {ordinal} · {badge}",
+  "@modeOrdinalBadge": {
+    "placeholders": {
+      "ordinal": {
+        "type": "String"
+      },
+      "badge": {
+        "type": "String"
+      }
+    }
+  },
+  "modePickerTitle": "Como você quer\nestudar?",
+  "modePickerTopBar": "Antes de partir",
+  "modePrevAlmostDone": "{name} quase concluída",
+  "@modePrevAlmostDone": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "modeProfundezasBlurb": "Busque o sentido: o que o texto revela de Deus e para você.",
+  "modeProfundezasLabel": "Interpretação",
+  "@modeProfundezasLabel": {
+    "description": "Nome do 3º modo (id interno profundezas)"
+  },
+  "modeProfundezasSkill1": "Interpretar",
+  "modeProfundezasSkill2": "Sustentar",
+  "modeProfundezasSkill3": "Aplicar",
+  "modeProfundezasTagline": "O que o texto significa",
+  "modeRuleFootnote": "Três leituras do mesmo texto · conclua um modo para liberar o próximo",
+  "modeScenesLeft": "{count, plural, =1{Falta 1 cena de {name}} other{Faltam {count} cenas de {name}}}",
+  "@modeScenesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "modeScenesProgress": "{done} de {total} cenas",
+  "@modeScenesProgress": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "modeSementeBlurb": "Repare nas palavras, nos fatos e na ordem em que acontecem.",
+  "modeSementeLabel": "Observação",
+  "@modeSementeLabel": {
+    "description": "Nome do 1º modo (id interno semente)"
+  },
+  "modeSementeSkill1": "Reconhecer",
+  "modeSementeSkill2": "Identificar",
+  "modeSementeSkill3": "Ordenar",
+  "modeSementeTagline": "O que o texto diz",
+  "modeSessionFootnote": "Troca só nesta sessão · ao fechar o app, volta para {mode}",
+  "@modeSessionFootnote": {
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "modeSheetEyebrow": "Modo de estudo",
+  "modeSheetTitle": "Como você quer estudar?",
+  "modeStartFirstScene": "Comece pela primeira cena",
+  "modeSwitch": "Trocar",
+  "morphAbsolute": "absoluto",
+  "morphAdjective": "adjetivo",
+  "morphAdverb": "advérbio",
+  "morphAdverbConjAc": "advérbio/conj. (ac)",
+  "morphArticle": "artigo",
+  "morphBoth": "ambos",
+  "morphCaseAccusative": "acusativo",
+  "morphCaseDative": "dativo",
+  "morphCaseGenitive": "genitivo",
+  "morphCaseNominative": "nominativo",
+  "morphCaseVocative": "vocativo",
+  "morphConjConsecutive": "conjunção consecut./conj.",
+  "morphConjunction": "conjunção",
+  "morphConstruct": "construto",
+  "morphDemonstrativeArticle": "artigo demonstrativo",
+  "morphDetermined": "determinado",
+  "morphDivineName": "nome divino",
+  "morphDual": "dual",
+  "morphExtraGentilic": "gentílico",
+  "morphExtraLocal": "local",
+  "morphExtraProper": "nome próprio",
+  "morphExtraTitle": "título",
+  "morphFem": "fem.",
+  "morphGenderFeminine": "feminino",
+  "morphGenderMasculine": "masculino",
+  "morphInConstruct": "em construto",
+  "morphInterjection": "interjeição",
+  "morphLangAramaic": "aramaico",
+  "morphLangGreek": "grego",
+  "morphLangHebrew": "hebraico",
+  "morphMasc": "masc.",
+  "morphMoodImperative": "imperativo",
+  "morphMoodIndicative": "indicativo",
+  "morphMoodInfinitive": "infinitivo",
+  "morphMoodOptative": "optativo",
+  "morphMoodParticiple": "particípio",
+  "morphMoodSubjunctive": "subjuntivo",
+  "morphNegativeParticle": "partícula negativa",
+  "morphNeuter": "neutro",
+  "morphNoun": "substantivo",
+  "morphNounCommon": "comum",
+  "morphNounGentilic": "gentílico",
+  "morphNounPlace": "lugar",
+  "morphNounProper": "próprio",
+  "morphNounTitle": "título",
+  "morphNumberDual": "dual",
+  "morphNumberPlural": "plural",
+  "morphNumberSingular": "singular",
+  "morphObjectMarker": "marcador de objeto",
+  "morphParticle": "partícula",
+  "morphParticleInterrogative": "partícula interrogativa",
+  "morphPerson1": "1ª pessoa",
+  "morphPerson1p": "1ª pl.",
+  "morphPerson1s": "1ª sing.",
+  "morphPerson2": "2ª pessoa",
+  "morphPerson2p": "2ª pl.",
+  "morphPerson2s": "2ª sing.",
+  "morphPerson3": "3ª pessoa",
+  "morphPerson3p": "3ª pl.",
+  "morphPerson3s": "3ª sing.",
+  "morphPhraseConj": "Conjunção.",
+  "morphPhraseConjGloss": "Conjunção — {gloss}.",
+  "@morphPhraseConjGloss": {
+    "placeholders": {
+      "gloss": {
+        "type": "String"
+      }
+    }
+  },
+  "morphPhraseHead": "{head}.",
+  "@morphPhraseHead": {
+    "placeholders": {
+      "head": {
+        "type": "String"
+      }
+    }
+  },
+  "morphPhraseHeadGloss": "{head} — {gloss}.",
+  "@morphPhraseHeadGloss": {
+    "placeholders": {
+      "head": {
+        "type": "String"
+      },
+      "gloss": {
+        "type": "String"
+      }
+    }
+  },
+  "morphPhrasePersonOfNumber": "{person} do {number}",
+  "@morphPhrasePersonOfNumber": {
+    "placeholders": {
+      "person": {
+        "type": "String"
+      },
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "morphPhrasePrep": "Preposição.",
+  "morphPhrasePrepGloss": "Preposição — {gloss}.",
+  "@morphPhrasePrepGloss": {
+    "placeholders": {
+      "gloss": {
+        "type": "String"
+      }
+    }
+  },
+  "morphPhrasePrepSuffix": "Preposição com sufixo pronominal.",
+  "morphPhrasePrepSuffixGloss": "Preposição com sufixo — {gloss}.",
+  "@morphPhrasePrepSuffixGloss": {
+    "placeholders": {
+      "gloss": {
+        "type": "String"
+      }
+    }
+  },
+  "morphPhraseVerbBits": "{bits} — {gloss}.",
+  "@morphPhraseVerbBits": {
+    "placeholders": {
+      "bits": {
+        "type": "String"
+      },
+      "gloss": {
+        "type": "String"
+      }
+    }
+  },
+  "morphPhraseVerbBitsPlain": "{bits}.",
+  "@morphPhraseVerbBitsPlain": {
+    "placeholders": {
+      "bits": {
+        "type": "String"
+      }
+    }
+  },
+  "morphPl": "pl.",
+  "morphPrep": "preposição",
+  "morphPronominalSuffix": "sufixo pronominal",
+  "morphPronounDemonstrative": "pronome demonstrativo",
+  "morphPronounPersonal": "pronome pessoal",
+  "morphPronounPossessive": "pronome possessivo",
+  "morphPronounReciprocal": "pronome reciproc./correl.",
+  "morphPronounReflexive": "pronome reflexivo",
+  "morphPronounRelative": "pronome relativo",
+  "morphRelativeParticle": "partícula relativa",
+  "morphSing": "sing.",
+  "morphStemHifil": "hifil",
+  "morphStemHitpael": "hitpael",
+  "morphStemHofal": "hofal",
+  "morphStemNifal": "nifal",
+  "morphStemPiel": "piel",
+  "morphStemPolal": "polal",
+  "morphStemPual": "pual",
+  "morphStemPulal": "pulal",
+  "morphStemQal": "qal",
+  "morphSuffix": "sufixo",
+  "morphSuffixDirectional": "direcional",
+  "morphSuffixNunParagogic": "nun paragógico",
+  "morphSuffixParagogic": "paragógico",
+  "morphSuffixPronominal": "pronominal",
+  "morphTenseAorist": "aoristo",
+  "morphTenseCohortative": "coortativo",
+  "morphTenseFuture": "futuro",
+  "morphTenseImperative": "imperativo",
+  "morphTenseImperfectGk": "imperfeito",
+  "morphTenseImperfectHeb": "imperfecto",
+  "morphTenseInfAbsolute": "infinitivo absoluto",
+  "morphTenseInfConstruct": "infinitivo construto",
+  "morphTenseJussive": "jussivo",
+  "morphTenseParticiple": "particípio",
+  "morphTenseParticiplePassive": "particípio passivo",
+  "morphTensePerfect": "perfeito",
+  "morphTensePluperfect": "mais-que-perfeito",
+  "morphTensePresent": "presente",
+  "morphTenseSecondAorist": "2º aoristo/futuro",
+  "morphTenseUndefined": "tempo indefinido",
+  "morphTenseWayyiqtol": "sequencial imperfecto (wayyiqtol)",
+  "morphTenseWeqatal": "sequencial perfeito (weqatal)",
+  "morphVerb": "verbo",
+  "morphVoiceActive": "ativa",
+  "morphVoiceImpersonal": "impessoal",
+  "morphVoiceMidPassDeponent": "médio-passiva deponente",
+  "morphVoiceMiddle": "média",
+  "morphVoiceMiddleDeponent": "média deponente",
+  "morphVoiceMiddlePassive": "médio-passiva",
+  "morphVoicePassive": "passiva",
+  "morphVoicePassiveDeponent": "passiva deponente",
+  "navBible": "Bíblia",
+  "navTabWithNews": "{tab}, com novidades",
+  "@navTabWithNews": {
+    "description": "Screen reader label for a bottom tab with a badge",
+    "placeholders": {
+      "tab": {
+        "type": "String"
+      }
+    }
+  },
+  "navTogether": "Juntos",
+  "navTrails": "Trilhas",
+  "notifChannelDesc": "Meta diária, cenas, prática, memorização e favoritos",
+  "notifChannelName": "Lembretes Stway",
+  "notifContinueTitle": "Continue de onde parou",
+  "notifDailyTitle": "Do dia",
+  "notifFavoritesBody": "{count, plural, =1{Você guardou um versículo. Que tal revisitá-lo agora?} other{Você tem {count} favoritos. Releia um e treine a memória.}}",
+  "@notifFavoritesBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notifFavoritesTitle": "Seus favoritos",
+  "notifGoalDoneBody": "Meta feita. A sequência continua amanhã.",
+  "notifGoalLeftBody": "{left, plural, =1{Falta 1 cena} other{Faltam {left} cenas}} para fechar a meta de hoje.",
+  "@notifGoalLeftBody": {
+    "placeholders": {
+      "left": {
+        "type": "int"
+      }
+    }
+  },
+  "notifMemoryBody": "{count, plural, =1{Um versículo espera por você. Dois minutos bastam.} other{{count} versículos no deck. Memorizar reforça o aprendizado.}}",
+  "@notifMemoryBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notifMistakesBody": "{count, plural, =1{Tem 1 erro para reforçar. Pratique agora e fixe o aprendizado.} other{Tem {count} erros para reforçar. Prática rápida, mente firme.}}",
+  "@notifMistakesBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notifPracticeTitle": "Hora de praticar",
+  "notifQuestsLeftBody": "{count, plural, =1{Sobrou 1 gesto. Mais um e o dia fecha.} other{Ainda faltam {count} gestos do dia.}}",
+  "@notifQuestsLeftBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notifResumeTitle": "Hora de retomar",
+  "notifReturningBody": "{name}, faz {count, plural, =1{1 dia} other{{count} dias}} sem estudar. Uma cena retoma a sequência.",
+  "@notifReturningBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notifSceneWaitingBody": "Uma cena por dia. A sequência continua amanhã.",
+  "notifSceneWaitingTitle": "Sua cena te espera",
+  "notifSceneWaitsBody": "{name}, {title} espera.",
+  "@notifSceneWaitsBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "notifSeeYouTomorrowTitle": "Até amanhã",
+  "notifSignature": "O Peregrino",
+  "notifStreakLeftBody": "{name}, você já anda há {streak, plural, =1{1 dia} other{{streak} dias}}. {left, plural, =1{Falta 1 cena} other{Faltam {left} cenas}} para acompanhar.",
+  "@notifStreakLeftBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "streak": {
+        "type": "int"
+      },
+      "left": {
+        "type": "int"
+      }
+    }
+  },
+  "notifTodayGoalTitle": "Meta de hoje",
+  "notifTomorrowTitle": "Amanhã",
+  "notifTrialEndingBody": "Gerencie sua assinatura Peregrino+ nas configurações se não quiser continuar.",
+  "notifTrialEndingTitle": "Seu teste grátis termina amanhã",
+  "notifWeeklyLeftBody": "{count, plural, =1{Falta 1 passo semanal. Feche o ciclo com calma.} other{Ainda faltam {count} passos semanais. A semana ainda é sua.}}",
+  "@notifWeeklyLeftBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "notifWeeklyStepsBody": "Ainda dá tempo de fechar a semana.",
+  "notifWeeklyStepsTitle": "Passos da semana",
+  "nudgeAlreadySubtitle": "Você já acenou hoje. Mande também no WhatsApp, se quiser.",
+  "nudgeCardCta": "Vem retomar comigo no Stway",
+  "@nudgeCardCta": {
+    "description": "Share image, friend voice."
+  },
+  "nudgeCardDaysAway": "{count, plural, =1{1 dia sem estudar} other{{count} dias sem estudar}}",
+  "@nudgeCardDaysAway": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "nudgeCardHeadline": "Senti sua falta hoje",
+  "@nudgeCardHeadline": {
+    "description": "Share image, friend voice."
+  },
+  "nudgeCardWaiting": "Te esperando",
+  "nudgeCardWalked": "{name} já caminhou",
+  "@nudgeCardWalked": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "nudgeCompanionFallback": "Companheiro",
+  "nudgeDefaultMessage": "Tô te esperando na trilha",
+  "@nudgeDefaultMessage": {
+    "description": "Friend-to-friend wave message (casual, 1st person)."
+  },
+  "nudgeInAppSubtitle": "Um aceno no app — {name} vê ao abrir o Stway.",
+  "@nudgeInAppSubtitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "nudgeSendFailed": "Não foi possível enviar o aceno.",
+  "nudgeSent": "Aceno enviado. {name} vê ao abrir o Stway.",
+  "@nudgeSent": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "nudgeShareSubject": "Vamos caminhar juntos?",
+  "nudgeSignInSubtitle": "Entre na conta para acenar no app, ou mande no WhatsApp.",
+  "nudgeTitle": "Acenar para {name}",
+  "@nudgeTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "offlineBody": "Na primeira abertura, o Stway baixa o currículo da nuvem. Precisa de internet uma vez — depois fica no aparelho.",
+  "offlineDownloadFailed": "Não foi possível baixar as cenas. Tente de novo em instantes.",
+  "offlineDownloading": "Baixando…",
+  "offlineNoInternet": "Sem internet no momento. Ligue o Wi‑Fi ou os dados e tente de novo.",
+  "offlineTitle": "As cenas ainda não chegaram",
+  "onboardingAppearanceBody": "Ela vale para o app inteiro.\nDá para trocar depois nos Ajustes.",
+  "onboardingAppearanceSemantics": "Aparência {theme}",
+  "@onboardingAppearanceSemantics": {
+    "placeholders": {
+      "theme": {
+        "type": "String"
+      }
+    }
+  },
+  "onboardingAppearanceTitle": "Escolha a aparência.",
+  "onboardingCommitmentLabel": "Meu compromisso",
+  "onboardingDayOneOf": "Hoje  ·  dia 1 de {goal}",
+  "@onboardingDayOneOf": {
+    "placeholders": {
+      "goal": {
+        "type": "int"
+      }
+    }
+  },
+  "onboardingDefaultPromise": "a primeira cena\njá está no caminho.",
+  "onboardingEveryDay": "Todo dia.",
+  "onboardingFirstSceneMeta": "Leia · responda · entenda  ·  ~3 min",
+  "onboardingFirstSceneTitle": "Quem criou o mundo?",
+  "onboardingFiveLamps": "5 lâmpadas",
+  "onboardingHabitBody": "Conhecer a Deus não pede uma maratona.\nPede que você volte, todo dia.",
+  "onboardingHoldToCommit": "Segure para firmar",
+  "onboardingHolding": "Firmando…",
+  "onboardingIntentBody": "Cada cena: leia, responda, entenda.\nSeu motivo abre o caminho.",
+  "onboardingIntentHabitCaption": "todo dia",
+  "onboardingIntentHabitPromise": "a sequência\ncomeça hoje.",
+  "onboardingIntentHabitTitle": "Criar uma sequência",
+  "onboardingIntentKnowCaption": "de perto",
+  "onboardingIntentKnowPromise": "conhecer a Deus\ncomeça com uma cena.",
+  "onboardingIntentKnowTitle": "Conhecer a Deus",
+  "onboardingIntentPeaceCaption": "um respiro",
+  "onboardingIntentPeacePromise": "a paz do dia\ncomeça aqui.",
+  "onboardingIntentPeaceTitle": "Paz no dia",
+  "onboardingIntentQuestion": "O que te traz aqui?",
+  "onboardingIntentUnderstandCaption": "de verdade",
+  "onboardingIntentUnderstandPromise": "entender a Bíblia\ncomeça pelo começo.",
+  "onboardingIntentUnderstandTitle": "Entender a Bíblia",
+  "onboardingKickerAppearance": "III   ·   Aparência",
+  "onboardingKickerGoal": "I   ·   A meta",
+  "onboardingKickerIntent": "II   ·   Seu motivo",
+  "onboardingKickerJourney": "V   ·   A jornada",
+  "onboardingKickerTomorrow": "IV   ·   Amanhã",
+  "onboardingMinutes": "Minutos",
+  "onboardingNameHint": "seu nome",
+  "onboardingNamePrompt": "Como te chamamos",
+  "onboardingOpening": "Abrindo…",
+  "onboardingPaceCaption": "{scenes, plural, =1{1 cena por dia · ~{minutes} min} other{{scenes} cenas por dia · ~{minutes} min}}",
+  "@onboardingPaceCaption": {
+    "placeholders": {
+      "scenes": {
+        "type": "int"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "onboardingRemindAtLabel": "Te lembramos às",
+  "onboardingReminderMorning": "Um lembrete de manhã",
+  "onboardingReminderNight": "Um lembrete à noite",
+  "onboardingReminderNoon": "Um lembrete ao meio-dia",
+  "onboardingStreakDays": "{count} dias de sequência",
+  "@onboardingStreakDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "onboardingStreakMonth": "Um mês inteiro",
+  "onboardingStreakTwoWeeks": "Duas semanas de sequência",
+  "onboardingStreakWeek": "Uma semana de sequência",
+  "onboardingTomorrowBody": "O hábito nasce quando você volta.\nFirme com você mesmo um começo.",
+  "onboardingTomorrowWord": "Amanhã",
+  "onboardingYourPace": "Seu ritmo",
+  "paywallAlreadyPlus": "Você já é Peregrino+",
+  "paywallHeadline": "Vá além na trilha",
+  "paywallPerkSeason": "A estação (Advento / Quaresma) — depois dos 3 dias grátis",
+  "paywallPerkWeeklyReview": "Revisão da semana: os 7 “Hoje:” + 3 perguntas",
+  "paywallPitch": "Um apoio direto ao projeto, com alguns extras.",
+  "paywallPriceAnnual": "{price} por ano",
+  "@paywallPriceAnnual": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "paywallPriceLifetime": "{price} pagamento único",
+  "@paywallPriceLifetime": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "paywallPriceMonthly": "{price} por mês",
+  "@paywallPriceMonthly": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "paywallPriceMonths": "{price} por {months} meses",
+  "@paywallPriceMonths": {
+    "placeholders": {
+      "months": {
+        "type": "int"
+      },
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "paywallPriceWeekly": "{price} por semana",
+  "@paywallPriceWeekly": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "paywallPurchaseFailed": "Não foi possível concluir a compra.",
+  "paywallRestore": "Restaurar compra",
+  "paywallRestoreFailed": "Não foi possível restaurar a compra.",
+  "paywallThanks": "Obrigado por apoiar o Stway.",
+  "paywallTitle": "Peregrino+",
+  "@paywallTitle": {
+    "description": "Name of the supporter subscription"
+  },
+  "paywallUnavailable": "Assinatura ainda não disponível nesta versão.",
+  "pilgrimAccuracyForming": "Ainda em formação",
+  "pilgrimAccuracyGood": "Boa compreensão nas cenas",
+  "pilgrimAccuracySharp": "Leitura afiada das Escrituras",
+  "pilgrimAccuracySteady": "Caminhando com firmeza",
+  "pilgrimAccuracyTitle": "Acertos",
+  "pilgrimChaptersBooks": "{chapters, plural, =1{1 capítulo} other{{chapters} capítulos}} · {books, plural, =1{1 livro} other{{books} livros}}",
+  "@pilgrimChaptersBooks": {
+    "placeholders": {
+      "chapters": {
+        "type": "int"
+      },
+      "books": {
+        "type": "int"
+      }
+    }
+  },
+  "pilgrimChaptersWordMedal": "{chapters, plural, =1{1 capítulo} other{{chapters} capítulos}} · medalha Palavra",
+  "@pilgrimChaptersWordMedal": {
+    "placeholders": {
+      "chapters": {
+        "type": "int"
+      }
+    }
+  },
+  "pilgrimCollections": "Coleções",
+  "pilgrimCompletedOn": "Concluída em {date}",
+  "@pilgrimCompletedOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "pilgrimCorrectOf": "{correct} de {total}",
+  "@pilgrimCorrectOf": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "pilgrimCorrectOnJourney": "perguntas certas na jornada",
+  "pilgrimCorrectRatio": "{correct}/{total} certas",
+  "@pilgrimCorrectRatio": {
+    "placeholders": {
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "pilgrimFallbackName": "Peregrino",
+  "@pilgrimFallbackName": {
+    "description": "Shown when the user has no name"
+  },
+  "pilgrimLastSeen": "Visto por último · {when}",
+  "@pilgrimLastSeen": {
+    "placeholders": {
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "pilgrimLastStudyDay": "Último dia de estudo",
+  "pilgrimLedOverall": "Já liderou o ranking geral",
+  "pilgrimNoReadingYet": "Ainda sem leitura registrada",
+  "pilgrimNoTrailYet": "Nenhuma trilha em andamento ainda.",
+  "pilgrimOnTheJourney": "na jornada",
+  "pilgrimPrivacyBody": "Toque no olho de cada card para escolher o que a caravana vê.",
+  "pilgrimPrivacyTitle": "Privacidade do perfil",
+  "pilgrimPrivateBody": "Escolheu não compartilhar detalhes com a caravana.",
+  "pilgrimPrivateTitle": "Perfil privado",
+  "pilgrimRank": "{rank}º no ranking",
+  "@pilgrimRank": {
+    "placeholders": {
+      "rank": {
+        "type": "int"
+      }
+    }
+  },
+  "pilgrimRankLeader": "Líder do ranking",
+  "pilgrimRankListed": "No ranking",
+  "pilgrimRankMonthly": "Ranking do mês",
+  "pilgrimRankOrdinal": "{rank}º",
+  "@pilgrimRankOrdinal": {
+    "placeholders": {
+      "rank": {
+        "type": "int"
+      }
+    }
+  },
+  "pilgrimRankPodium": "No pódio",
+  "pilgrimRankRunnerUp": "Vice-líder",
+  "pilgrimRankWeekly": "Ranking semanal da caravana",
+  "pilgrimSceneFallback": "Cena",
+  "pilgrimScenesOf": "{done} de {total} cenas",
+  "@pilgrimScenesOf": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "pilgrimScriptures": "Escrituras",
+  "pilgrimSealsAndTrails": "Selos e trilhas",
+  "pilgrimSeen": "Visto",
+  "pilgrimStatScenes": "Cenas",
+  "pilgrimStatSteps": "Passos",
+  "pilgrimStreak": "Sequência",
+  "pilgrimStreakOngoing": "Em andamento",
+  "pilgrimTrail": "Trilha",
+  "pilgrimTrailsInProgress": "{count} em curso",
+  "@pilgrimTrailsInProgress": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "pilgrimWalked": "Caminhou",
+  "pilgrimYourTrail": "Sua trilha",
+  "pilgrimYourTrails": "Suas trilhas",
+  "planAdjustTime": "Ajustar tempo",
+  "planAllRead": "Tudo lido",
+  "planAlreadyRead": "Já lidos",
+  "planApproxDays": "{count, plural, =1{~1 dia} other{~{count} dias}}",
+  "@planApproxDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planApproxHours": "~{hours} h",
+  "@planApproxHours": {
+    "placeholders": {
+      "hours": {
+        "type": "int"
+      }
+    }
+  },
+  "planApproxMinutes": "~{minutes} min",
+  "@planApproxMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "planApproxMinutesDecimal": "~{minutes} min",
+  "@planApproxMinutesDecimal": {
+    "placeholders": {
+      "minutes": {
+        "type": "String"
+      }
+    }
+  },
+  "planApproxMonths": "{count, plural, =1{~1 mês} other{~{count} meses}}",
+  "@planApproxMonths": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planAtYourPace": "No seu ritmo",
+  "planBibleFinished": "Você concluiu a Bíblia neste plano.",
+  "planCardDoneToday": "Leitura de hoje feita",
+  "planCardIdle": "Canônico ou cronológico, no seu tempo",
+  "planCardToday": "{minutes} min hoje · {order}",
+  "@planCardToday": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "order": {
+        "type": "String"
+      }
+    }
+  },
+  "planChaptersSkipped": "{count, plural, =1{1 capítulo pulado} other{{count} capítulos pulados}}",
+  "@planChaptersSkipped": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planCreate": "Criar um plano",
+  "planDayDoneToast": "{count, plural, =1{Leitura do dia concluída · 1 capítulo} other{Leitura do dia concluída · {count} capítulos}}",
+  "@planDayDoneToast": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planDone": "Feito",
+  "planEndConfirmAction": "Encerrar",
+  "planEndConfirmBody": "Seu progresso no plano será zerado. Os capítulos já marcados como lidos na Bíblia permanecem.",
+  "planEndConfirmTitle": "Encerrar plano?",
+  "planEndCta": "Encerrar plano",
+  "planEstimate": "Estimativa",
+  "planFinished": "Plano concluído",
+  "planMarkDayRead": "Marcar leitura do dia",
+  "planMinutes": "{minutes} min",
+  "@planMinutes": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "planOrderAlphabetical": "Ordem alfabética",
+  "planOrderAlphabeticalShort": "Alfabética",
+  "planOrderCanonical": "Ordem da Bíblia",
+  "planOrderCanonicalShort": "Canônica",
+  "planOrderChronological": "Ordem cronológica",
+  "planOrderChronologicalShort": "Cronológica",
+  "planPendingChapters": "Capítulos pendentes",
+  "planPortionMeta": "{count, plural, =1{~{minutes} min · 1 capítulo · {order}} other{~{minutes} min · {count} capítulos · {order}}}",
+  "@planPortionMeta": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      },
+      "count": {
+        "type": "int"
+      },
+      "order": {
+        "type": "String"
+      }
+    }
+  },
+  "planReadingDays": "{count, plural, =1{1 dia de leitura} other{{count} dias de leitura}}",
+  "@planReadingDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planRemaining": "Restante",
+  "planSectionOrder": "Ordem",
+  "planSectionTime": "Tempo disponível",
+  "planSetupBody": "Montamos a porção diária para caber nesse tempo — na ordem da Bíblia ou na ordem dos acontecimentos. Capítulos que você já leu são pulados.",
+  "planSetupQuestion": "Quanto tempo você tem por dia?",
+  "planSkippedChaptersToast": "{count, plural, =1{1 capítulo já lido foi pulado} other{{count} capítulos já lidos foram pulados}}",
+  "@planSkippedChaptersToast": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planStartCta": "Começar plano · {minutes} min/dia",
+  "@planStartCta": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "planTitle": "Plano de leitura",
+  "planTodayChapters": "Capítulos de hoje",
+  "planTodayDoneBody": "Porção de hoje concluída. Volte amanhã — ou continue explorando a Bíblia livremente.",
+  "portraitAvatar": "Avatar",
+  "portraitAvatarHint": "Um peregrino ilustrado",
+  "portraitEyebrow": "Retrato",
+  "portraitLetter": "Letra",
+  "portraitLetterHint": "As iniciais do nome",
+  "portraitNoPhoto": "Sem foto nesta conta",
+  "portraitPhoto": "Foto",
+  "portraitPhotoHint": "A foto da sua conta",
+  "portraitTitle": "Como você aparece no perfil",
+  "practiceEmptyBody": "Continue as cenas. Quando errar, a pergunta volta aqui.",
+  "practiceEmptyTitle": "Nenhum erro guardado ainda",
+  "practiceIntro": "Volte às perguntas em que você errou. Cada acerto limpa a pergunta da fila.",
+  "practiceSubtitle": "Reforce as passagens",
+  "practiceTitle": "Revisar erros",
+  "profileDaysOnTop": "{count, plural, =1{1 dia no topo} other{{count} dias no topo}}",
+  "@profileDaysOnTop": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileDaysPerWeek": "dias por semana",
+  "profileInTheWord": "Na Palavra",
+  "profileInTheWordWhisper": "Versos que você guarda e os que já saíram daqui.",
+  "profileLampHelp": "Cada lamparina é uma semana: o azeite sobe a cada dia caminhado e a chama cresce.",
+  "profileLastThreeMonths": "Últimos 3 meses",
+  "profileMonthRank": "{rank}º no ranking do mês",
+  "@profileMonthRank": {
+    "placeholders": {
+      "rank": {
+        "type": "int"
+      }
+    }
+  },
+  "profileOfSevenDays": "{count} de 7 dias",
+  "@profileOfSevenDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileOpenBible": "Abrir a Bíblia",
+  "profileOpenRef": "Abrir {ref}",
+  "@profileOpenRef": {
+    "placeholders": {
+      "ref": {
+        "type": "String"
+      }
+    }
+  },
+  "profilePrivacyHiddenSemantics": "{label} oculto da caravana",
+  "@profilePrivacyHiddenSemantics": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "profilePrivacyHiddenToast": "{label} fica só com você.",
+  "@profilePrivacyHiddenToast": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "profilePrivacyShownSemantics": "{label} visível para a caravana",
+  "@profilePrivacyShownSemantics": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "profilePrivacyShownToast": "{label} aparece no seu perfil na caravana.",
+  "@profilePrivacyShownToast": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "profileSavedVerses": "Guardados",
+  "profileSavedVersesEmpty": "Na leitura, toque num versículo e escolha Guardar para voltar a ele depois.",
+  "profileSectionAccuracy": "Taxa de acertos",
+  "profileSectionAccuracyHint": "Percentual de acertos nas cenas",
+  "profileSectionBibleHint": "Livros e capítulos lidos",
+  "profileSectionDaysOnTop": "Dias no topo",
+  "profileSectionDaysOnTopHint": "Quantos dias ficou em 1º no ranking geral",
+  "profileSectionLastScene": "Última cena",
+  "profileSectionLastSceneHint": "Nome da última cena concluída",
+  "profileSectionMedals": "Medalhas",
+  "profileSectionMedalsHint": "Medalhas da jornada",
+  "profileSectionPresence": "Presença",
+  "profileSectionPresenceHint": "Semana, sequência e marcos, de Semente a Fruto",
+  "profileSectionRanking": "Ranking e passos",
+  "profileSectionRankingHint": "Posição e passos totais",
+  "profileSectionTrailsHint": "Progresso nas trilhas e selos adquiridos",
+  "profileSharedVerses": "Enviados",
+  "profileSharedVersesEmpty": "Versículos que você compartilhar aparecem aqui — só a referência.",
+  "profileSince": "Peregrino desde {month} de {year}",
+  "@profileSince": {
+    "placeholders": {
+      "month": {
+        "type": "String"
+      },
+      "year": {
+        "type": "int"
+      }
+    }
+  },
+  "profileStreakGoalDone": "Compromisso de {goal} dias cumprido. Siga firme.",
+  "@profileStreakGoalDone": {
+    "placeholders": {
+      "goal": {
+        "type": "int"
+      }
+    }
+  },
+  "profileStreakOf": "Sequência de {streak} de {goal} dias",
+  "@profileStreakOf": {
+    "placeholders": {
+      "streak": {
+        "type": "int"
+      },
+      "goal": {
+        "type": "int"
+      }
+    }
+  },
+  "profileStreakOfGoal": "de {goal}",
+  "@profileStreakOfGoal": {
+    "placeholders": {
+      "goal": {
+        "type": "int"
+      }
+    }
+  },
+  "profileStreakRemaining": "Faltam {left} para o compromisso de {goal} dias.",
+  "@profileStreakRemaining": {
+    "placeholders": {
+      "left": {
+        "type": "int"
+      },
+      "goal": {
+        "type": "int"
+      }
+    }
+  },
+  "profileStreakStart": "Uma cena hoje acende o primeiro dia.",
+  "profileThisWeek": "Esta semana",
+  "profileThisWeekLower": "esta semana",
+  "profileThisWeekSemantics": "Esta semana: {count} de 7 dias caminhados",
+  "@profileThisWeekSemantics": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileThreeMonthsAgo": "há 3 meses",
+  "profileTitle": "Perfil",
+  "profileTodayLower": "hoje",
+  "profileWdFri": "S",
+  "profileWdMon": "S",
+  "profileWdSat": "S",
+  "profileWdSun": "D",
+  "profileWdThu": "Q",
+  "profileWdTue": "T",
+  "profileWdWed": "Q",
+  "profileWeekHistory": "Histórico das semanas",
+  "profileWeeksWalkedSemantics": "{walked} dias caminhados nas últimas {weeks} semanas",
+  "@profileWeeksWalkedSemantics": {
+    "placeholders": {
+      "walked": {
+        "type": "int"
+      },
+      "weeks": {
+        "type": "int"
+      }
+    }
+  },
+  "profileYourJourney": "Sua jornada",
+  "profileYourNumbers": "Seus números",
+  "profileYourStreak": "Sua sequência",
+  "questAccuracySubtitle": "Termine uma cena com 80% de acertos",
+  "questAccuracyTitle": "Olho firme",
+  "questCountOf": "{done} de {total}",
+  "@questCountOf": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "questDailySubtitle": "Passos extras além da cena.",
+  "questDailyTitle": "Tarefas do dia",
+  "questDone": "Feito",
+  "questDoneLower": "feito",
+  "questMilestone100Subtitle": "100% — continue caminhando",
+  "questMilestone100Title": "Jornada percorrida",
+  "questMilestone25Subtitle": "25% da trilha",
+  "questMilestone25Title": "Bom começo",
+  "questMilestone50Subtitle": "50% da trilha",
+  "questMilestone50Title": "Meio do caminho",
+  "questMilestone75Subtitle": "75% da trilha",
+  "questMilestone75Title": "Quase lá",
+  "questMissionSubtitle": "Complete uma cena",
+  "questMissionTitle": "Uma cena",
+  "questProgressLine": "{value} de {target} · {subtitle}",
+  "@questProgressLine": {
+    "placeholders": {
+      "value": {
+        "type": "int"
+      },
+      "target": {
+        "type": "int"
+      },
+      "subtitle": {
+        "type": "String"
+      }
+    }
+  },
+  "questReadSubtitle": "Leia um capítulo",
+  "questReadTitle": "Na Palavra",
+  "questWeeklyDaysSubtitle": "Caminhe em 4 dias diferentes",
+  "questWeeklyDaysTitle": "Quatro dias",
+  "questWeeklyPerfectSubtitle": "Duas cenas com 100% de acertos na semana",
+  "questWeeklyPerfectTitle": "Duas sem erro",
+  "questWeeklyScenesSubtitle": "Complete 5 cenas nesta semana",
+  "questWeeklyScenesTitle": "Cinco cenas",
+  "questWeeklyTitle": "Tarefas da semana",
+  "realmAntigoTestamento": "Antigo Testamento",
+  "realmEyebrowAntigoTestamento": "A promessa",
+  "realmEyebrowNovoTestamento": "O cumprimento",
+  "realmEyebrowTeologia": "O fundamento",
+  "realmEyebrowVidaCrista": "O caminhar",
+  "realmNovoTestamento": "Novo Testamento",
+  "realmOther": "Outros",
+  "@realmOther": {
+    "description": "Catch-all area when suggesting a trail"
+  },
+  "realmTaglineAntigoTestamento": "Da criação aos profetas — o caminho da aliança",
+  "realmTaglineNovoTestamento": "Cristo, a Igreja e a esperança que não falha",
+  "realmTaglineTeologia": "Hermenêutica, línguas e a doutrina da fé",
+  "realmTaglineVidaCrista": "Discipulado, oração e a história da fé",
+  "realmTeologia": "Teologia",
+  "realmTeologiaSoonBody": "Hermenêutica, línguas originais e dogmática.",
+  "realmVidaCrista": "Vida Cristã",
+  "recognitionAMedal": "Uma medalha",
+  "recognitionAlready": "Você já reconheceu",
+  "recognitionAndMore": "{a}, {b} e mais {count}",
+  "@recognitionAndMore": {
+    "placeholders": {
+      "a": {
+        "type": "String"
+      },
+      "b": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recognitionAndTwo": "{a} e {b}",
+  "@recognitionAndTwo": {
+    "placeholders": {
+      "a": {
+        "type": "String"
+      },
+      "b": {
+        "type": "String"
+      }
+    }
+  },
+  "recognitionDaysAgo": "Há {count} dias",
+  "@recognitionDaysAgo": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recognitionEmptyCard": "Quando alguém da caravana tocar no coração, aparece aqui.",
+  "recognitionEmptySheet": "Ainda ninguém reconheceu sua jornada.\nNa caravana, outros podem tocar no coração.",
+  "recognitionFailedGive": "Não foi possível reconhecer",
+  "recognitionFailedWithdraw": "Não foi possível retirar",
+  "recognitionGivenTapWithdraw": "Reconhecida · toque para retirar",
+  "recognitionHeadlineMedal": "{name} reconheceu {title}",
+  "@recognitionHeadlineMedal": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      },
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "recognitionHeadlineMedalUnknown": "{name} reconheceu uma medalha sua",
+  "@recognitionHeadlineMedalUnknown": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "recognitionHeadlineWalk": "{name} reconheceu sua cena",
+  "@recognitionHeadlineWalk": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "recognitionMedalDone": "Medalha reconhecida",
+  "recognitionMedalFirstScene": "Primeira cena",
+  "recognitionMedalInterpretation": "Interpretação",
+  "recognitionMedalObservation": "Observação",
+  "recognitionMedalUnderstanding": "Compreensão",
+  "recognitionRecognizeScene": "Reconhecer a cena",
+  "recognitionRemoved": "Reconhecimento retirado",
+  "recognitionSawJourney": "{count, plural, =1{{who} viu sua jornada} other{{who} viram sua jornada}}",
+  "@recognitionSawJourney": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "who": {
+        "type": "String"
+      }
+    }
+  },
+  "recognitionSawYou": "{count, plural, =1{reconheceu você} other{reconheceu você {count} vezes}}",
+  "@recognitionSawYou": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "recognitionSceneDone": "Cena reconhecida",
+  "recognitionSceneOf": "Cena de {date}",
+  "@recognitionSceneOf": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "recognitionSemanticsWho": "Quem reconheceu. {subtitle}",
+  "@recognitionSemanticsWho": {
+    "placeholders": {
+      "subtitle": {
+        "type": "String"
+      }
+    }
+  },
+  "recognitionSummaryCounts": "{recog, plural, =1{1 reconhecimento} other{{recog} reconhecimentos}} de {people, plural, =1{1 pessoa} other{{people} pessoas}}",
+  "@recognitionSummaryCounts": {
+    "placeholders": {
+      "recog": {
+        "type": "int"
+      },
+      "people": {
+        "type": "int"
+      }
+    }
+  },
+  "recognitionSummaryEmpty": "Cena do dia e medalhas que outros viram em você.",
+  "recognitionTapToWithdraw": "Toque de novo para retirar",
+  "recognitionWhichMedal": "Qual medalha você viu?",
+  "recognitionWhoTitle": "Quem reconheceu",
+  "recognitionYesterday": "Ontem",
+  "recognitionYourScene": "Sua cena",
+  "reminderDailyEyebrow": "Lembrete diário",
+  "reminderHour": "{hour}h",
+  "@reminderHour": {
+    "placeholders": {
+      "hour": {
+        "type": "int"
+      }
+    }
+  },
+  "reminderMorning": "Manhã",
+  "reminderNight": "Noite",
+  "reminderNoon": "Meio-dia",
+  "reminderRemindAt": "Lembrar às {hour}h",
+  "@reminderRemindAt": {
+    "placeholders": {
+      "hour": {
+        "type": "int"
+      }
+    }
+  },
+  "reminderSubtitle": "Um horário fixo cola o hábito. Amanhã te avisamos da próxima cena.",
+  "reminderSubtitleSettings": "Um aviso por dia, no horário que você escolher.",
+  "reminderTitle": "Em que hora lembramos você?",
+  "reportCategoryFeedback": "Feedback confuso",
+  "reportCategoryInterpretation": "Interpretação questionável",
+  "reportCategoryOther": "Outro",
+  "reportCategoryTheological": "Erro teológico",
+  "reportCategoryTypo": "Ortografia / texto",
+  "reportCategoryWrongAnswer": "Resposta marcada errada",
+  "reportCommentHint": "Opcional: conte o que parece errado…",
+  "reportHintFeedback": "Explicação após a resposta confunde ou erra",
+  "reportHintInterpretation": "Leitura do texto bíblico parece forçada ou imprecisa",
+  "reportHintOther": "Algo mais que não se encaixa acima",
+  "reportHintTheological": "Doutrina ou doutrina implícita parece incorreta",
+  "reportHintTypo": "Erro de digitação, referência ou formatação",
+  "reportHintWrongAnswer": "A opção marcada como certa parece errada",
+  "reportIntro": "Ajude a melhorar a trilha — erro teológico, interpretação, resposta ou texto.",
+  "reportSend": "Enviar relato",
+  "reportSendError": "Não foi possível enviar. Tente de novo.",
+  "reportSending": "Enviando…",
+  "reportSignInRequired": "Entre com Google para enviar o relato.",
+  "reportTitle": "Relatar problema",
+  "resetAwareness": "Estou ciente de que vou perder o progresso",
+  "resetBody": "Todos os passos, a sequência e o progresso serão apagados. A introdução volta a aparecer. Não dá para desfazer.",
+  "resetConfirm": "Confirmar",
+  "resetConfirmCountdown": "Confirmar · {seconds}s",
+  "@resetConfirmCountdown": {
+    "placeholders": {
+      "seconds": {
+        "type": "int"
+      }
+    }
+  },
+  "resetTitle": "Apagar progresso",
+  "roomErrorCreate": "Não foi possível criar o grupo. Tente de novo.",
+  "roomErrorCreateFirst": "Crie o grupo antes de chamar alguém.",
+  "roomErrorFull": "Este grupo já tem {limit} pessoas.",
+  "@roomErrorFull": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "roomErrorFullAskLeader": "Este grupo já tem {limit} pessoas. Peça ao líder para abrir outro grupo.",
+  "@roomErrorFullAskLeader": {
+    "placeholders": {
+      "limit": {
+        "type": "int"
+      }
+    }
+  },
+  "roomErrorInvalidCode": "Código inválido ou grupo não encontrado.",
+  "roomErrorLostGroup": "Não achamos o grupo em que você estava.",
+  "roomErrorSignInCreate": "Entre com Google para criar um grupo.",
+  "roomErrorSignInJoin": "Entre com Google para entrar num grupo.",
+  "roomFallbackName": "Grupo",
+  "roomKindAmigos": "Amigos",
+  "roomKindCelula": "Célula",
+  "roomKindDiscipulado": "Discipulado",
+  "roomKindEbd": "EBD",
+  "roomKindFamilia": "Família",
+  "roomLeaderAmigos": "Anfitrião",
+  "roomLeaderCelula": "Líder",
+  "roomLeaderDiscipulado": "Discipulador",
+  "roomLeaderEbd": "Professor",
+  "roomLeaderFamilia": "Responsável",
+  "roomNameHintAmigos": "Ex.: Amigos da facul",
+  "roomNameHintCelula": "Ex.: Célula Norte",
+  "roomNameHintDiscipulado": "Ex.: Discipulado de quinta",
+  "roomNameHintEbd": "Ex.: EBD Jovens",
+  "roomNameHintFamilia": "Ex.: Família Souza",
+  "roomStudyFallbackTitle": "Estudo da semana",
+  "sealsAllRevealed": "{done} de {total} — todos os selos revelados.",
+  "@sealsAllRevealed": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "sealsCountFact": "{count, plural, =1{1 selo — fato e verso, no texto.} other{{count} selos — fato e verso, no texto.}}",
+  "@sealsCountFact": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "sealsEmptyHint": "Fato e verso de quem o texto já mostrou.",
+  "sealsSemanticsLocked": "Selo ainda fechado",
+  "sealsSemanticsNamed": "Selo {name}",
+  "@sealsSemanticsNamed": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "sealsStartsAt": "Ainda no texto — começa em {name}.",
+  "@sealsStartsAt": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "sealsStillInText": "{done} de {total} — ainda no texto: {name}",
+  "@sealsStillInText": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      },
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "sealsTitle": "Selos",
+  "seasonChallengeDoneBody": "Desafio da estação concluído. Bem caminhado.",
+  "seasonChallengeEmptyBody": "O próximo chega com a nova estação litúrgica.",
+  "seasonChallengeEmptyTitle": "Nenhum desafio da estação agora",
+  "seasonChallengeInProgress": "Desafio da estação em andamento",
+  "seasonChallengeInvite": "Chamar para o desafio",
+  "seasonChallengePathPercent": "{percent}% do caminho",
+  "@seasonChallengePathPercent": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "seasonChallengeSeeProgress": "Ver progresso",
+  "seasonChallengeShareBody": "🕯️ Entrei no desafio {title} no Stway.\n\nVamos caminhar juntos nesta estação?\n\n{footer}",
+  "@seasonChallengeShareBody": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      },
+      "footer": {
+        "type": "String"
+      }
+    }
+  },
+  "seasonChallengeTitle": "Desafio da estação",
+  "seasonDayLine": "Dia {day} · {title}",
+  "@seasonDayLine": {
+    "placeholders": {
+      "day": {
+        "type": "int"
+      },
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "seasonDayOf": "Dia {day} de {total}",
+  "@seasonDayOf": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "seasonDaysWalked": "{done} / {total} dias caminhados",
+  "@seasonDaysWalked": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "seasonEnded": "Estação encerrada",
+  "seasonFreeTrialLine": "Gratuito: 3 primeiros dias · depois, Peregrino+",
+  "seasonNotTodayYet": "Ainda não é hoje",
+  "seasonProFromDay4": "Peregrino+ a partir do dia 4",
+  "seasonReviewEmpty": "Ainda não há perguntas desta semana no aparelho. Abra um dia primeiro.",
+  "seasonReviewMissionIntro": "Três perguntas dos textos que você já estudou.",
+  "seasonReviewMissionTitle": "Revisão da semana",
+  "seasonReviewPreparing": "Preparando…",
+  "seasonReviewStart": "3 perguntas de revisão",
+  "seasonStartsIn": "{count, plural, =1{Começa em 1 dia} other{Começa em {count} dias}}",
+  "@seasonStartsIn": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "seasonTodayInsight": "Hoje: {insight}",
+  "@seasonTodayInsight": {
+    "placeholders": {
+      "insight": {
+        "type": "String"
+      }
+    }
+  },
+  "seasonWalkAdvento2026Day01Insight": "Deus se aproximou",
+  "seasonWalkAdvento2026Day01Title": "O Verbo se fez carne",
+  "seasonWalkAdvento2026Day02Insight": "Deus é o centro, não eu",
+  "seasonWalkAdvento2026Day02Title": "No princípio",
+  "seasonWalkAdvento2026Day03Insight": "Fomos feitos para refletir",
+  "seasonWalkAdvento2026Day03Title": "Imagem",
+  "seasonWalkAdvento2026Day04Insight": "A fé anda quando Deus chama",
+  "seasonWalkAdvento2026Day04Title": "Chamado",
+  "seasonWalkAdvento2026Day05Insight": "A promessa é maior que o medo",
+  "seasonWalkAdvento2026Day05Title": "Estrelas",
+  "seasonWalkAdvento2026Day06Insight": "Deus proverá o cordeiro",
+  "seasonWalkAdvento2026Day06Title": "Moriah",
+  "seasonWalkAdvento2026Day07Insight": "Deus levanta libertador",
+  "seasonWalkAdvento2026Day07Title": "Moisés",
+  "seasonWalkAdvento2026Day08Insight": "O sangue guarda a casa",
+  "seasonWalkAdvento2026Day08Title": "Páscoa",
+  "seasonWalkAdvento2026Day09Insight": "O Reino tem voz",
+  "seasonWalkAdvento2026Day09Title": "O Rei no monte",
+  "seasonWalkAdvento2026Day10Insight": "O Reino cabe no vazio",
+  "seasonWalkAdvento2026Day10Title": "Pobres de espírito",
+  "seasonWalkAdvento2026Day11Insight": "Há conforto para quem chora",
+  "seasonWalkAdvento2026Day11Title": "Os que choram",
+  "seasonWalkAdvento2026Day12Insight": "Shalom é missão",
+  "seasonWalkAdvento2026Day12Title": "Pacificadores",
+  "seasonWalkAdvento2026Day13Insight": "O céu se abre sobre o Filho",
+  "seasonWalkAdvento2026Day13Title": "Batismo",
+  "seasonWalkAdvento2026Day14Insight": "O monte ensina o Reino",
+  "seasonWalkAdvento2026Day14Title": "Sermão",
+  "seasonWalkAdvento2026Day15Insight": "Orar é pedir o Reino",
+  "seasonWalkAdvento2026Day15Title": "Pai nosso",
+  "seasonWalkAdvento2026Day16Insight": "Nada me faltará",
+  "seasonWalkAdvento2026Day16Title": "Meu pastor",
+  "seasonWalkAdvento2026Day17Insight": "Cristo desceu até a cruz",
+  "seasonWalkAdvento2026Day17Title": "Humildade",
+  "seasonWalkAdvento2026Day18Insight": "O Reino se escuta em história",
+  "seasonWalkAdvento2026Day18Title": "Parábolas",
+  "seasonWalkAdvento2026Day19Insight": "O Reino toca o corpo",
+  "seasonWalkAdvento2026Day19Title": "Milagres",
+  "seasonWalkAdvento2026Day20Insight": "O tesouro puxa o coração",
+  "seasonWalkAdvento2026Day20Title": "Ansiedade",
+  "seasonWalkAdvento2026Day21Insight": "O pão antecipa a entrega",
+  "seasonWalkAdvento2026Day21Title": "Ceia",
+  "seasonWalkAdvento2026Day22Insight": "O Rei reina pregado",
+  "seasonWalkAdvento2026Day22Title": "Cruz",
+  "seasonWalkAdvento2026Day23Insight": "A espera não foi vã",
+  "seasonWalkAdvento2026Day23Title": "Ressurreição",
+  "seasonWalkAdvento2026Day24Insight": "O sétimo dia é dádiva",
+  "seasonWalkAdvento2026Day24Title": "Descanso",
+  "seasonWalkAdvento2026Day25Insight": "Alegrai-vos no Senhor",
+  "seasonWalkAdvento2026Day25Title": "Alegria",
+  "seasonWalkAdvento2026Day26Insight": "Quem tem fome será farto",
+  "seasonWalkAdvento2026Day26Title": "Fome de justiça",
+  "seasonWalkAdvento2026Subtitle": "Espera do Verbo · uma cena por dia",
+  "seasonWalkAdvento2026Title": "Advento 2026",
+  "seasonWeek": "Semana {week}",
+  "@seasonWeek": {
+    "placeholders": {
+      "week": {
+        "type": "int"
+      }
+    }
+  },
+  "seasonWeekInsightsHeader": "Os 7 “Hoje:” desta semana",
+  "seasonWeekReview": "Revisão da semana",
+  "seasonWeekReviewPro": "Revisão da semana · Peregrino+",
+  "seasonWeekReviewTitle": "Revisão da semana {week}",
+  "@seasonWeekReviewTitle": {
+    "placeholders": {
+      "week": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsAbout": "Sobre",
+  "settingsAboutSubtitle": "Aprenda a Bíblia em cenas curtas, no seu ritmo.",
+  "settingsAboutTitle": "Sobre o Stway",
+  "settingsAccount": "Conta",
+  "settingsAppearanceTitle": "Aparência",
+  "settingsBackupInvalid": "Backup inválido.",
+  "settingsBackupSheetBody": "Exporte o progresso como texto, ou copie um backup e toque em restaurar.",
+  "settingsBackupSubject": "Backup Stway",
+  "settingsCheck": "Verificar",
+  "settingsCheckingUpdate": "Procurando atualização…",
+  "settingsCreditsRowSubtitle": "Textos bíblicos e estudo",
+  "settingsCreditsSubtitle": "Textos bíblicos e ferramentas de estudo usados no Stway.",
+  "settingsCreditsTitle": "Traduções e créditos",
+  "settingsDailyReminder": "Lembrete diário",
+  "settingsDays": "{count, plural, =1{1 dia} other{{count} dias}}",
+  "@settingsDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsDeleteProgress": "Apagar progresso",
+  "settingsDeleteProgressSubtitle": "Apaga o progresso de vez · pede confirmação",
+  "settingsDeviceId": "Dispositivo · {id}",
+  "@settingsDeviceId": {
+    "placeholders": {
+      "id": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsDeviceOnly": "Só neste aparelho",
+  "settingsExport": "Exportar",
+  "settingsFontExtra": "Extra",
+  "settingsFontLarge": "Grande",
+  "settingsFontMedium": "Médio",
+  "settingsFontSmall": "Pequeno",
+  "settingsGenesisTitle": "Gênesis 1–11",
+  "settingsGroupAccountData": "Conta e dados",
+  "settingsGroupDevice": "Neste aparelho",
+  "settingsGroupProgress": "Progresso",
+  "settingsInCloud": "Na nuvem",
+  "settingsLastBackup": "Último backup · {date}",
+  "@settingsLastBackup": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsLastShort": "Último · {date}",
+  "@settingsLastShort": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsManualBackup": "Backup manual",
+  "settingsManualBackupSubtitle": "Exportar ou restaurar o progresso",
+  "settingsPaceIntense": "Intenso",
+  "settingsPaceLight": "Leve",
+  "settingsPaceSteady": "Firme",
+  "settingsPasteBackupFirst": "Cole o backup na área de transferência primeiro.",
+  "settingsPlusTeaser": "Mais espaço para a companhia",
+  "settingsProgressInCloud": "Progresso na nuvem",
+  "settingsProgressRestored": "Progresso restaurado.",
+  "settingsReminderAt": "Às {hour}h · toque para mudar",
+  "@settingsReminderAt": {
+    "placeholders": {
+      "hour": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsRemindersTitle": "Lembretes",
+  "settingsReplayIntro": "Rever introdução",
+  "settingsReplayIntroSubtitle": "A apresentação do começo, de novo",
+  "settingsRestoreFromClipboard": "Restaurar da área de transferência",
+  "settingsRhythmSubtitle": "Quantas cenas cabem no seu dia.",
+  "settingsRhythmTitle": "Ritmo diário",
+  "settingsSampleVerse": "No princípio, criou Deus os céus e a terra.",
+  "settingsSaveName": "Salvar nome",
+  "settingsSavedInCloud": "Salvo na nuvem · {date}",
+  "@settingsSavedInCloud": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsScenes": "{count, plural, =1{1 cena} other{{count} cenas}}",
+  "@settingsScenes": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsScenesPerDay": "{count, plural, =1{1 cena por dia} other{{count} cenas por dia}}",
+  "@settingsScenesPerDay": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "settingsSignInAgain": "Entre de novo para sincronizar o progresso.",
+  "settingsSignOut": "Sair da conta",
+  "settingsSignOutFailed": "Não foi possível sair. Tente de novo.",
+  "settingsSignOutSubtitle": "Limpa este aparelho · o progresso fica na nuvem",
+  "settingsSignedInAs": "Conectado como {email}",
+  "@settingsSignedInAs": {
+    "placeholders": {
+      "email": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsSounds": "Sons",
+  "settingsSoundsSubtitle": "Efeitos nas cenas",
+  "settingsStreakGoalHint": "Até quantos dias você quer levar sua sequência.",
+  "settingsStreakGoalLabel": "Compromisso de sequência",
+  "settingsStudyAttribution": "Estudo (Strong) — {attribution}",
+  "@settingsStudyAttribution": {
+    "placeholders": {
+      "attribution": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsSubscriptionActive": "Assinatura ativa",
+  "settingsSubtitle": "Conta, aparência e lembretes",
+  "settingsSupport": "Ajude a continuar",
+  "settingsTextSize": "Tamanho do texto",
+  "settingsTextSizeHint": "O versículo abaixo muda junto.",
+  "settingsThemeAuto": "Automático",
+  "settingsThemeCaptionAuto": "Muda com o horário",
+  "settingsThemeCaptionDark": "Sempre escuro",
+  "settingsThemeCaptionLight": "Sempre claro",
+  "settingsThemeCaptionMedium": "Sempre em meia-luz",
+  "settingsThemeDark": "Escuro",
+  "settingsThemeHint": "Um tema fixo, ou automático conforme o horário.",
+  "settingsThemeLabel": "Tema",
+  "settingsThemeLight": "Claro",
+  "settingsThemeMedium": "Médio",
+  "settingsThemeSemantics": "Tema da tela",
+  "settingsThemeSemanticsHint": "Toque ou deslize para escolher",
+  "settingsTitle": "Ajustes",
+  "settingsUpToDate": "Você está na versão mais recente · {version}",
+  "@settingsUpToDate": {
+    "placeholders": {
+      "version": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsVersion": "Versão",
+  "settingsYourName": "Seu nome",
+  "shellReferralBonus": "{count, plural, =1{Seu convite valeu +{steps} passos} other{Seus convites valeram +{steps} passos}}",
+  "@shellReferralBonus": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "steps": {
+        "type": "int"
+      }
+    }
+  },
+  "shellTogetherSubtitle": "Companhia · Caravana · Grupos",
+  "shellTrailsSubtitle": "O mapa da jornada",
+  "shellWeekTogetherBonus": "A companhia ganhou +{steps} passos na jornada",
+  "@shellWeekTogetherBonus": {
+    "placeholders": {
+      "steps": {
+        "type": "int"
+      }
+    }
+  },
+  "splashPreparing": "Preparando sua jornada…",
+  "splashSlogan": "A Bíblia, cena a cena",
+  "streakDayEmpty": "sem cena",
+  "streakDayFrozen": "protegido pelo gelo",
+  "streakDaySemantics": "{day}: {status}",
+  "@streakDaySemantics": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      },
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "streakDayTodaySemantics": "Hoje, {day}: {status}",
+  "@streakDayTodaySemantics": {
+    "placeholders": {
+      "day": {
+        "type": "String"
+      },
+      "status": {
+        "type": "String"
+      }
+    }
+  },
+  "streakRepairAction": "Reparar",
+  "streakRepairBody": "{broken, plural, =1{Você tinha 1 dia. Restaure para {restored} — 1× neste mês.} other{Você tinha {broken} dias. Restaure para {restored} — 1× neste mês.}}",
+  "@streakRepairBody": {
+    "placeholders": {
+      "broken": {
+        "type": "int"
+      },
+      "restored": {
+        "type": "int"
+      }
+    }
+  },
+  "streakRepairCanReturn": "{count, plural, =1{1 dia ainda pode voltar} other{{count} dias ainda podem voltar}}",
+  "@streakRepairCanReturn": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "streakRepairContinueWith": "Continue com {count} · 1× neste mês",
+  "@streakRepairContinueWith": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "streakRepairDismiss": "Deixar",
+  "streakRepairDone": "{count, plural, =1{Sequência restaurada · 1 dia} other{Sequência restaurada · {count} dias}}",
+  "@streakRepairDone": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "streakRepairTitle": "Reparar sequência",
+  "streakShareDays": "{count, plural, =1{🔥 1 dia no Stway!\n\nEstou aprendendo a Bíblia em cenas curtas — {steps} passos até agora.{signature}\n\nBaixe o Stway e venha junto.} other{🔥 {count} dias no Stway!\n\nEstou aprendendo a Bíblia em cenas curtas — {steps} passos até agora.{signature}\n\nBaixe o Stway e venha junto.}}",
+  "@streakShareDays": {
+    "description": "Share text the user sends to friends. {signature} is empty or a new line with the user's name.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "steps": {
+        "type": "int"
+      },
+      "signature": {
+        "type": "String"
+      }
+    }
+  },
+  "streakShareStart": "🔥 Comecei a aprender a Bíblia com o Stway.{signature}\n\nBaixe o Stway e venha junto.",
+  "@streakShareStart": {
+    "placeholders": {
+      "signature": {
+        "type": "String"
+      }
+    }
+  },
+  "streakShareSteps": "🔥 Estou aprendendo a Bíblia no Stway — {steps} passos até agora.{signature}\n\nBaixe o Stway e venha junto.",
+  "@streakShareSteps": {
+    "placeholders": {
+      "steps": {
+        "type": "int"
+      },
+      "signature": {
+        "type": "String"
+      }
+    }
+  },
+  "streakShareSubject": "Minha sequência no Stway",
+  "streakShareTooltip": "Compartilhar sequência",
+  "strongKindConjunction": "Conjunção",
+  "strongKindGreek": "Grego",
+  "strongKindHebrew": "Hebraico",
+  "strongKindParticle": "Partícula",
+  "strongKindPrefix": "Prefixo",
+  "strongKindPronoun": "Pronome",
+  "strongKindPunctuation": "Pontuação",
+  "strongKindSuffix": "Sufixo",
+  "strongNoteConjunction": "Conjunção prefixada (vav). O sentido está no verbo ou no nome que ela liga.",
+  "strongNoteParticle": "Partícula gramatical do sistema STEP, não um número Strong clássico.",
+  "strongNotePrefix": "Preposição ou artigo inseparável — cola-se à palavra seguinte. Não é verbete do Strong clássico.",
+  "strongNotePronoun": "Pronome sufixado: quem recebe ou possui o que a palavra diz.",
+  "strongNotePunctuation": "Marca de leitura do texto hebraico, não uma palavra.",
+  "strongNoteSuffix": "Terminação gramatical, não um verbete de dicionário.",
+  "suggestionAuthorEmail": "E-mail",
+  "suggestionAuthorEmailHint": "nome@email.com",
+  "suggestionAuthorHintContact": "Informe telefone, e-mail ou Instagram.",
+  "suggestionAuthorHintEmail": "Confira o e-mail.",
+  "suggestionAuthorHintInstagram": "Confira o Instagram.",
+  "suggestionAuthorHintName": "Escreva o nome — pelo menos 2 letras.",
+  "suggestionAuthorHintPhone": "Confira o telefone, com DDD.",
+  "suggestionAuthorInstagramHint": "@usuario",
+  "suggestionAuthorName": "Nome",
+  "suggestionAuthorNameHint": "Como a pessoa se apresenta",
+  "suggestionAuthorPhone": "Telefone",
+  "suggestionAuthorSent": "Sugestão enviada. Obrigado por indicar o autor.",
+  "suggestionAuthorSubtitle": "Quem ainda falta no mapa?",
+  "suggestionAuthorTitle": "Sugerir um autor",
+  "suggestionHintAntigoTestamento": "Ex.: Salmos, Êxodo, os profetas…",
+  "suggestionHintNovoTestamento": "Ex.: o Sermão do Monte, Romanos, Atos…",
+  "suggestionHintOther": "Ex.: um tema, um livro ou uma pergunta que ainda falta…",
+  "suggestionHintTeologia": "Ex.: Trindade, hermenêutica, hebraico…",
+  "suggestionHintVidaCrista": "Ex.: oração, jejum, a história da igreja…",
+  "suggestionSend": "Enviar sugestão",
+  "suggestionSendError": "Não foi possível enviar. Tente de novo.",
+  "suggestionSending": "Enviando…",
+  "suggestionSignInToSend": "Entre para enviar a sugestão.",
+  "suggestionTrailHintBoth": "Escolha uma área e descreva a trilha.",
+  "suggestionTrailHintRealm": "Escolha onde essa trilha encaixa.",
+  "suggestionTrailHintText": "Escreva a trilha — pelo menos 4 letras.",
+  "suggestionTrailPlaceholder": "Escolha uma área e descreva a trilha…",
+  "suggestionTrailRealmLabel": "Onde encaixa",
+  "suggestionTrailSent": "Sugestão enviada. Obrigado.",
+  "suggestionTrailSubtitle": "O que ainda falta no mapa?",
+  "suggestionTrailTextLabel": "A trilha",
+  "suggestionTrailTitle": "Sugerir uma trilha",
+  "tomorrowDayOf": "Dia {streak} de {goal}",
+  "@tomorrowDayOf": {
+    "placeholders": {
+      "streak": {
+        "type": "int"
+      },
+      "goal": {
+        "type": "int"
+      }
+    }
+  },
+  "tomorrowLine": "Amanhã: {title}",
+  "@tomorrowLine": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "tomorrowNextTrail": "Próxima trilha",
+  "tomorrowNextTrailOnMap": "A próxima trilha já está no mapa.",
+  "tomorrowSceneWaits": "A cena espera você.",
+  "tomorrowSevenDays": "Sete dias. O hábito pegou.",
+  "tomorrowStoryContinues": "A história continua no texto.",
+  "tomorrowTodayYouSaw": "Hoje você viu",
+  "tomorrowYesterday": "Ontem: {text}",
+  "@tomorrowYesterday": {
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "trailMapCrossing": "Travessia",
+  "@trailMapCrossing": {
+    "description": "Boss/review scene at the end of a stage"
+  },
+  "trailMapLocked": "Bloqueada",
+  "@trailMapLocked": {
+    "description": "A locked scene"
+  },
+  "trailMapScene": "Cena",
+  "trailMapSeal": "Selo {name}",
+  "@trailMapSeal": {
+    "description": "Character seal; name is a Bible character",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "trailsAreasHeading": "As áreas",
+  "trailsCleared": "Concluída",
+  "@trailsCleared": {
+    "description": "Status of a scene, stage or trail (feminine in pt/es)"
+  },
+  "trailsContinueSemantics": "Continuar · {title}",
+  "@trailsContinueSemantics": {
+    "description": "Screen reader label; title = scene title",
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "trailsDonateBody": "Uma contribuição voluntária para as próximas trilhas.",
+  "trailsDonateCta": "Doar",
+  "trailsDonateTitle": "Ajude a continuar",
+  "trailsDoneOfTotal": "{done} de {total}",
+  "@trailsDoneOfTotal": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "trailsDownloading": "Baixando…",
+  "trailsEmptyBody": "O currículo baixa na primeira abertura. Se a rede oscilar, toque para tentar de novo.",
+  "trailsEmptyTitle": "As cenas ainda não chegaram",
+  "trailsHorizonBody": "Novas trilhas estão sendo preparadas.",
+  "trailsHorizonEyebrow": "No horizonte",
+  "trailsInProgress": "Em andamento",
+  "trailsLabeledScenesOf": "{total, plural, =1{{label} · {done} de 1 cena} other{{label} · {done} de {total} cenas}}",
+  "@trailsLabeledScenesOf": {
+    "description": "label is a study mode name or a trail title",
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "trailsLearnMore": "Saiba mais",
+  "trailsModeAllSealed": "{mode} concluída · os três modos desta trilha estão selados",
+  "@trailsModeAllSealed": {
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "trailsModeChip": "Modo {mode}",
+  "@trailsModeChip": {
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "trailsModeCleared": "{mode} concluída",
+  "@trailsModeCleared": {
+    "description": "mode = Observação/Compreensão/Interpretação",
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      }
+    }
+  },
+  "trailsModeNextHint": "{mode} concluída · o próximo modo é {next}",
+  "@trailsModeNextHint": {
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      },
+      "next": {
+        "type": "String"
+      }
+    }
+  },
+  "trailsModeReplayHint": "{cleared} concluída · progresso abaixo é do modo {active}",
+  "@trailsModeReplayHint": {
+    "placeholders": {
+      "cleared": {
+        "type": "String"
+      },
+      "active": {
+        "type": "String"
+      }
+    }
+  },
+  "trailsModesCleared": "{modes} concluídas",
+  "@trailsModesCleared": {
+    "description": "modes = list of mode names joined by ' · '",
+    "placeholders": {
+      "modes": {
+        "type": "String"
+      }
+    }
+  },
+  "trailsRealmOpenCount": "{count, plural, =1{1 aberta} other{{count} abertas}}",
+  "@trailsRealmOpenCount": {
+    "description": "Number of unlocked trails in an area",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "trailsRealmTrailCount": "{count, plural, =1{1 trilha} other{{count} trilhas}}",
+  "@trailsRealmTrailCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "trailsRealmTrailsDone": "{total, plural, =1{{done} de 1 trilha} other{{done} de {total} trilhas}}",
+  "@trailsRealmTrailsDone": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "trailsScenesOf": "{total, plural, =1{{done} de 1 cena} other{{done} de {total} cenas}}",
+  "@trailsScenesOf": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "trailsScenesShort": "{total, plural, =1{{done}/1 cena} other{{done}/{total} cenas}}",
+  "@trailsScenesShort": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "trailsStage": "Etapa {roman}",
+  "@trailsStage": {
+    "description": "Module number in Roman numerals, e.g. Etapa II",
+    "placeholders": {
+      "roman": {
+        "type": "String"
+      }
+    }
+  },
+  "trailsStreakAtRisk": "Sequência cai em {countdown}",
+  "@trailsStreakAtRisk": {
+    "description": "countdown is a preformatted time left, e.g. 3h 20min",
+    "placeholders": {
+      "countdown": {
+        "type": "String"
+      }
+    }
+  },
+  "trailsTrailNumber": "Trilha {roman}",
+  "@trailsTrailNumber": {
+    "description": "Trail number in Roman numerals",
+    "placeholders": {
+      "roman": {
+        "type": "String"
+      }
+    }
+  },
+  "updateCheckDisabled": "Checagem desligada.",
+  "updateCheckFailed": "Não foi possível verificar agora.",
+  "updateDefaultMessage": "Uma nova versão do Stway está pronta, com melhorias e correções.",
+  "updateEyebrow": "Atualização",
+  "updateFirebaseUnavailable": "Firebase indisponível.",
+  "updateForceTitle": "Esta versão precisa atualizar",
+  "updateInStore": "Na loja",
+  "updateNoneInCloud": "Nenhuma versão publicada na nuvem.",
+  "updateNow": "Atualizar agora",
+  "updateSoftTitle": "Nova versão disponível",
+  "updateStoreOpenFailed": "Não foi possível abrir a loja. Tente de novo.",
+  "verseStudyAttribution": "Léxico e texto etiquetado: STEPBible / Tyndale House Cambridge (CC BY 4.0). Referências cruzadas: openbible.info (CC BY). Definições traduzidas automaticamente para português.",
+  "verseStudyCopied": "Copiado",
+  "verseStudyCrossRefs": "Referências cruzadas",
+  "verseStudyDefinition": "Definição",
+  "verseStudyEmptyBody": "O léxico Strong, a gramática e cada vez que ela aparece nas Escrituras abrem aqui.",
+  "verseStudyEmptyTitle": "Toque numa palavra original",
+  "verseStudyEyebrow": "Estudar",
+  "verseStudyFirst": "primeira",
+  "verseStudyGoToText": "Ir para o texto",
+  "verseStudyInThisBook": "Neste livro — as aparições perto deste versículo.",
+  "verseStudyInThisVerse": "Neste versículo",
+  "verseStudyLast": "última",
+  "verseStudyLemma": "Lema",
+  "verseStudyLoadFailed": "Não foi possível carregar o estudo.",
+  "verseStudyLoading": "Abrindo o léxico…",
+  "verseStudyNeedsRestart": "Feche e abra o app de novo para carregar o estudo.",
+  "verseStudyNoCrossRefs": "Sem conexões catalogadas para este versículo.",
+  "verseStudyNoData": "Sem dados de originais para este versículo.",
+  "verseStudyNoOtherHits": "Sem outras ocorrências neste recorte.",
+  "verseStudyNotLiteral": "A Tradução Brasileira não traz esta forma à letra neste versículo.",
+  "verseStudyOccurrencesIn": "Ocorrências em {book}",
+  "@verseStudyOccurrencesIn": {
+    "placeholders": {
+      "book": {
+        "type": "String"
+      }
+    }
+  },
+  "verseStudyOnlyHere": "Só neste versículo no índice.",
+  "verseStudyOtherBooks": "Em outros livros",
+  "verseStudyOtherBooksBody": "A primeira aparição em cada livro onde a palavra é mais frequente.",
+  "verseStudyParticleNearby": "Esta partícula aparece milhares de vezes. Abaixo, as formas perto deste versículo.",
+  "verseStudyParticleNote": "Partícula gramatical · {count} formas no cânon. O sentido está no nome ou no verbo que ela acompanha.",
+  "@verseStudyParticleNote": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "verseStudySpan": "{count} lugares · de {first} a {last}",
+  "@verseStudySpan": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "first": {
+        "type": "String"
+      },
+      "last": {
+        "type": "String"
+      }
+    }
+  },
+  "verseStudyTabLinks": "Conexões",
+  "verseStudyTabLinksCount": "Conexões · {count}",
+  "@verseStudyTabLinksCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "verseStudyTabUses": "Usos",
+  "verseStudyTabUsesCount": "Usos · {count}",
+  "@verseStudyTabUsesCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "verseStudyTabWord": "Palavra",
+  "verseStudyThisForm": "Nesta forma",
+  "verseStudyVerseUnavailable": "Versículo indisponível nesta tradução.",
+  "waveCta": "Acenar",
+  "widgetBehindCaravan": "Ficando para trás na caravana — caminhe hoje",
+  "widgetGoalDone": "Meta concluída",
+  "widgetProgressScenes": "{goal, plural, =1{{done}/1 cena} other{{done}/{goal} cenas}}",
+  "@widgetProgressScenes": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "goal": {
+        "type": "int"
+      }
+    }
+  },
+  "widgetScenesLeftToday": "{count, plural, =1{Falta 1 cena hoje} other{Faltam {count} cenas hoje}}",
+  "@widgetScenesLeftToday": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "widgetTodayTitle": "Hoje: {title}",
+  "@widgetTodayTitle": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "widgetTomorrowTitle": "Amanhã: {title}",
+  "@widgetTomorrowTitle": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "widgetTrailWaitsTomorrow": "A trilha espera amanhã"
+}

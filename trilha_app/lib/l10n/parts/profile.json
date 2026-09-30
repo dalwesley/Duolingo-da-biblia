@@ -1,0 +1,812 @@
+{
+  "profileMonthRank": {
+    "pt": "{rank}º no ranking do mês",
+    "en": "#{rank} in this month's ranking",
+    "es": "{rank}.º en el ranking del mes",
+    "placeholders": {
+      "rank": "int"
+    }
+  },
+  "profileDaysOnTop": {
+    "pt": "{count, plural, =1{1 dia no topo} other{{count} dias no topo}}",
+    "en": "{count, plural, =1{1 day on top} other{{count} days on top}}",
+    "es": "{count, plural, =1{1 día en la cima} other{{count} días en la cima}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "profileInTheWord": {
+    "pt": "Na Palavra",
+    "en": "In the Word",
+    "es": "En la Palabra"
+  },
+  "profileInTheWordWhisper": {
+    "pt": "Versos que você guarda e os que já saíram daqui.",
+    "en": "Verses you save and the ones you've sent.",
+    "es": "Versículos que guardas y los que ya enviaste."
+  },
+  "profileSavedVerses": {
+    "pt": "Guardados",
+    "en": "Saved",
+    "es": "Guardados"
+  },
+  "profileSavedVersesEmpty": {
+    "pt": "Na leitura, toque num versículo e escolha Guardar para voltar a ele depois.",
+    "en": "While reading, tap a verse and choose Save to come back to it later.",
+    "es": "Al leer, toca un versículo y elige Guardar para volver a él después."
+  },
+  "profileOpenBible": {
+    "pt": "Abrir a Bíblia",
+    "en": "Open the Bible",
+    "es": "Abrir la Biblia"
+  },
+  "profileOpenRef": {
+    "pt": "Abrir {ref}",
+    "en": "Open {ref}",
+    "es": "Abrir {ref}",
+    "placeholders": {
+      "ref": "String"
+    }
+  },
+  "profileSharedVerses": {
+    "pt": "Enviados",
+    "en": "Sent",
+    "es": "Enviados"
+  },
+  "profileSharedVersesEmpty": {
+    "pt": "Versículos que você compartilhar aparecem aqui — só a referência.",
+    "en": "Verses you share show up here — just the reference.",
+    "es": "Los versículos que compartas aparecen aquí — solo la referencia."
+  },
+  "paywallTitle": {
+    "pt": "Peregrino+",
+    "en": "Pilgrim+",
+    "es": "Peregrino+",
+    "description": "Name of the supporter subscription"
+  },
+  "paywallPerkSeason": {
+    "pt": "A estação (Advento / Quaresma) — depois dos 3 dias grátis",
+    "en": "The season (Advent / Lent) — after the 3 free days",
+    "es": "La temporada litúrgica (Adviento / Cuaresma) — después de los 3 días gratis"
+  },
+  "paywallPerkWeeklyReview": {
+    "pt": "Revisão da semana: os 7 “Hoje:” + 3 perguntas",
+    "en": "Weekly review: the 7 “Today:” notes + 3 questions",
+    "es": "Repaso de la semana: los 7 “Hoy:” + 3 preguntas"
+  },
+  "paywallAlreadyPlus": {
+    "pt": "Você já é Peregrino+",
+    "en": "You're already Pilgrim+",
+    "es": "Ya eres Peregrino+"
+  },
+  "paywallHeadline": {
+    "pt": "Vá além na trilha",
+    "en": "Go further on the trail",
+    "es": "Ve más allá en la ruta"
+  },
+  "paywallThanks": {
+    "pt": "Obrigado por apoiar o Stway.",
+    "en": "Thank you for supporting Stway.",
+    "es": "Gracias por apoyar Stway."
+  },
+  "paywallPitch": {
+    "pt": "Um apoio direto ao projeto, com alguns extras.",
+    "en": "Direct support for the project, with a few extras.",
+    "es": "Un apoyo directo al proyecto, con algunos extras."
+  },
+  "paywallUnavailable": {
+    "pt": "Assinatura ainda não disponível nesta versão.",
+    "en": "Subscription isn't available in this version yet.",
+    "es": "La suscripción aún no está disponible en esta versión."
+  },
+  "paywallRestore": {
+    "pt": "Restaurar compra",
+    "en": "Restore purchase",
+    "es": "Restaurar compra"
+  },
+  "paywallPurchaseFailed": {
+    "pt": "Não foi possível concluir a compra.",
+    "en": "Couldn't complete the purchase.",
+    "es": "No se pudo completar la compra."
+  },
+  "paywallRestoreFailed": {
+    "pt": "Não foi possível restaurar a compra.",
+    "en": "Couldn't restore the purchase.",
+    "es": "No se pudo restaurar la compra."
+  },
+  "paywallPriceMonthly": {
+    "pt": "{price} por mês",
+    "en": "{price} per month",
+    "es": "{price} al mes",
+    "placeholders": {
+      "price": "String"
+    }
+  },
+  "paywallPriceAnnual": {
+    "pt": "{price} por ano",
+    "en": "{price} per year",
+    "es": "{price} al año",
+    "placeholders": {
+      "price": "String"
+    }
+  },
+  "paywallPriceLifetime": {
+    "pt": "{price} pagamento único",
+    "en": "{price} one-time payment",
+    "es": "{price} pago único",
+    "placeholders": {
+      "price": "String"
+    }
+  },
+  "paywallPriceWeekly": {
+    "pt": "{price} por semana",
+    "en": "{price} per week",
+    "es": "{price} a la semana",
+    "placeholders": {
+      "price": "String"
+    }
+  },
+  "paywallPriceMonths": {
+    "pt": "{price} por {months} meses",
+    "en": "{price} per {months} months",
+    "es": "{price} por {months} meses",
+    "placeholders": {
+      "months": "int",
+      "price": "String"
+    }
+  },
+  "practiceTitle": {
+    "pt": "Revisar erros",
+    "en": "Review mistakes",
+    "es": "Repasar errores"
+  },
+  "practiceIntro": {
+    "pt": "Volte às perguntas em que você errou. Cada acerto limpa a pergunta da fila.",
+    "en": "Go back to the questions you missed. Each right answer clears it from the queue.",
+    "es": "Vuelve a las preguntas que fallaste. Cada acierto quita la pregunta de la fila."
+  },
+  "practiceSubtitle": {
+    "pt": "Reforce as passagens",
+    "en": "Reinforce the passages",
+    "es": "Refuerza los pasajes"
+  },
+  "practiceEmptyTitle": {
+    "pt": "Nenhum erro guardado ainda",
+    "en": "No saved mistakes yet",
+    "es": "Aún no hay errores guardados"
+  },
+  "practiceEmptyBody": {
+    "pt": "Continue as cenas. Quando errar, a pergunta volta aqui.",
+    "en": "Keep going with the scenes. When you miss one, the question comes back here.",
+    "es": "Sigue con las escenas. Cuando falles, la pregunta vuelve aquí."
+  },
+  "memoryTitle": {
+    "pt": "Memorizar",
+    "en": "Memorize",
+    "es": "Memorizar"
+  },
+  "memorySubtitle": {
+    "pt": "Fixe na memória",
+    "en": "Commit it to memory",
+    "es": "Grábalo en la memoria"
+  },
+  "memoryReveal": {
+    "pt": "Revelar",
+    "en": "Reveal",
+    "es": "Revelar"
+  },
+  "memoryCard": {
+    "pt": "Carta",
+    "en": "Card",
+    "es": "Tarjeta"
+  },
+  "memoryNotYet": {
+    "pt": "Ainda não",
+    "en": "Not yet",
+    "es": "Todavía no"
+  },
+  "memoryKnown": {
+    "pt": "Já sei",
+    "en": "I know it",
+    "es": "Ya lo sé"
+  },
+  "memoryDoneTitle": {
+    "pt": "Sessão concluída",
+    "en": "Session complete",
+    "es": "Sesión completada"
+  },
+  "memoryDoneSummary": {
+    "pt": "{known} firmes · {learning} em progresso",
+    "en": "{known} solid · {learning} in progress",
+    "es": "{known} firmes · {learning} en progreso",
+    "placeholders": {
+      "known": "int",
+      "learning": "int"
+    }
+  },
+  "profileSectionPresence": {
+    "pt": "Presença",
+    "en": "Presence",
+    "es": "Presencia"
+  },
+  "profileSectionRanking": {
+    "pt": "Ranking e passos",
+    "en": "Ranking and steps",
+    "es": "Ranking y pasos"
+  },
+  "profileSectionDaysOnTop": {
+    "pt": "Dias no topo",
+    "en": "Days on top",
+    "es": "Días en la cima"
+  },
+  "profileSectionLastScene": {
+    "pt": "Última cena",
+    "en": "Last scene",
+    "es": "Última escena"
+  },
+  "profileSectionAccuracy": {
+    "pt": "Taxa de acertos",
+    "en": "Accuracy",
+    "es": "Tasa de aciertos"
+  },
+  "profileSectionMedals": {
+    "pt": "Medalhas",
+    "en": "Medals",
+    "es": "Medallas"
+  },
+  "profileSectionPresenceHint": {
+    "pt": "Semana, sequência e marcos, de Semente a Fruto",
+    "en": "Week, streak and milestones, from Seed to Fruit",
+    "es": "Semana, racha e hitos, de Semilla a Fruto"
+  },
+  "profileSectionRankingHint": {
+    "pt": "Posição e passos totais",
+    "en": "Position and total steps",
+    "es": "Posición y pasos totales"
+  },
+  "profileSectionDaysOnTopHint": {
+    "pt": "Quantos dias ficou em 1º no ranking geral",
+    "en": "How many days you were #1 in the overall ranking",
+    "es": "Cuántos días estuviste 1.º en el ranking general"
+  },
+  "profileSectionLastSceneHint": {
+    "pt": "Nome da última cena concluída",
+    "en": "Name of the last scene completed",
+    "es": "Nombre de la última escena completada"
+  },
+  "profileSectionAccuracyHint": {
+    "pt": "Percentual de acertos nas cenas",
+    "en": "Share of right answers in scenes",
+    "es": "Porcentaje de aciertos en las escenas"
+  },
+  "profileSectionBibleHint": {
+    "pt": "Livros e capítulos lidos",
+    "en": "Books and chapters read",
+    "es": "Libros y capítulos leídos"
+  },
+  "profileSectionTrailsHint": {
+    "pt": "Progresso nas trilhas e selos adquiridos",
+    "en": "Trail progress and seals earned",
+    "es": "Progreso en las rutas y sellos obtenidos"
+  },
+  "profileSectionMedalsHint": {
+    "pt": "Medalhas da jornada",
+    "en": "Journey medals",
+    "es": "Medallas del camino"
+  },
+  "portraitPhoto": {
+    "pt": "Foto",
+    "en": "Photo",
+    "es": "Foto"
+  },
+  "portraitLetter": {
+    "pt": "Letra",
+    "en": "Letter",
+    "es": "Letra"
+  },
+  "portraitAvatar": {
+    "pt": "Avatar",
+    "en": "Avatar",
+    "es": "Avatar"
+  },
+  "portraitPhotoHint": {
+    "pt": "A foto da sua conta",
+    "en": "Your account photo",
+    "es": "La foto de tu cuenta"
+  },
+  "portraitLetterHint": {
+    "pt": "As iniciais do nome",
+    "en": "Your name's initials",
+    "es": "Las iniciales de tu nombre"
+  },
+  "portraitAvatarHint": {
+    "pt": "Um peregrino ilustrado",
+    "en": "An illustrated pilgrim",
+    "es": "Un peregrino ilustrado"
+  },
+  "portraitEyebrow": {
+    "pt": "Retrato",
+    "en": "Portrait",
+    "es": "Retrato"
+  },
+  "portraitTitle": {
+    "pt": "Como você aparece no perfil",
+    "en": "How you appear on your profile",
+    "es": "Cómo apareces en el perfil"
+  },
+  "portraitNoPhoto": {
+    "pt": "Sem foto nesta conta",
+    "en": "No photo on this account",
+    "es": "Sin foto en esta cuenta"
+  },
+  "profilePrivacyShownToast": {
+    "pt": "{label} aparece no seu perfil na caravana.",
+    "en": "{label} shows on your caravan profile.",
+    "es": "{label} aparece en tu perfil de la caravana.",
+    "placeholders": {
+      "label": "String"
+    }
+  },
+  "profilePrivacyHiddenToast": {
+    "pt": "{label} fica só com você.",
+    "en": "{label} stays with you only.",
+    "es": "{label} queda solo para ti.",
+    "placeholders": {
+      "label": "String"
+    }
+  },
+  "profilePrivacyShownSemantics": {
+    "pt": "{label} visível para a caravana",
+    "en": "{label} visible to the caravan",
+    "es": "{label} visible para la caravana",
+    "placeholders": {
+      "label": "String"
+    }
+  },
+  "profilePrivacyHiddenSemantics": {
+    "pt": "{label} oculto da caravana",
+    "en": "{label} hidden from the caravan",
+    "es": "{label} oculto para la caravana",
+    "placeholders": {
+      "label": "String"
+    }
+  },
+  "journalTitle": {
+    "pt": "Anotações de estudo",
+    "en": "Study notes",
+    "es": "Notas de estudio"
+  },
+  "journalEmpty": {
+    "pt": "Ao fixar uma cena, sua resposta fica registrada aqui.",
+    "en": "When you lock in a scene, your answer is saved here.",
+    "es": "Al fijar una escena, tu respuesta queda guardada aquí."
+  },
+  "pilgrimFallbackName": {
+    "pt": "Peregrino",
+    "en": "Pilgrim",
+    "es": "Peregrino",
+    "description": "Shown when the user has no name"
+  },
+  "pilgrimRank": {
+    "pt": "{rank}º no ranking",
+    "en": "#{rank} in the ranking",
+    "es": "{rank}.º en el ranking",
+    "placeholders": {
+      "rank": "int"
+    }
+  },
+  "pilgrimRankOrdinal": {
+    "pt": "{rank}º",
+    "en": "#{rank}",
+    "es": "{rank}.º",
+    "placeholders": {
+      "rank": "int"
+    }
+  },
+  "pilgrimStatSteps": {
+    "pt": "Passos",
+    "en": "Steps",
+    "es": "Pasos"
+  },
+  "pilgrimStatScenes": {
+    "pt": "Cenas",
+    "en": "Scenes",
+    "es": "Escenas"
+  },
+  "pilgrimAccuracySharp": {
+    "pt": "Leitura afiada das Escrituras",
+    "en": "A sharp reader of Scripture",
+    "es": "Lectura aguda de las Escrituras"
+  },
+  "pilgrimAccuracyGood": {
+    "pt": "Boa compreensão nas cenas",
+    "en": "Good understanding in the scenes",
+    "es": "Buena comprensión en las escenas"
+  },
+  "pilgrimAccuracySteady": {
+    "pt": "Caminhando com firmeza",
+    "en": "Walking steadily",
+    "es": "Caminando con firmeza"
+  },
+  "pilgrimAccuracyForming": {
+    "pt": "Ainda em formação",
+    "en": "Still growing",
+    "es": "Aún en formación"
+  },
+  "pilgrimRankLeader": {
+    "pt": "Líder do ranking",
+    "en": "Ranking leader",
+    "es": "Líder del ranking"
+  },
+  "pilgrimRankRunnerUp": {
+    "pt": "Vice-líder",
+    "en": "Runner-up",
+    "es": "Subcampeón"
+  },
+  "pilgrimRankPodium": {
+    "pt": "No pódio",
+    "en": "On the podium",
+    "es": "En el podio"
+  },
+  "pilgrimRankListed": {
+    "pt": "No ranking",
+    "en": "In the ranking",
+    "es": "En el ranking"
+  },
+  "pilgrimRankWeekly": {
+    "pt": "Ranking semanal da caravana",
+    "en": "Caravan weekly ranking",
+    "es": "Ranking semanal de la caravana"
+  },
+  "pilgrimRankMonthly": {
+    "pt": "Ranking do mês",
+    "en": "Monthly ranking",
+    "es": "Ranking del mes"
+  },
+  "pilgrimCollections": {
+    "pt": "Coleções",
+    "en": "Collections",
+    "es": "Colecciones"
+  },
+  "pilgrimSceneFallback": {
+    "pt": "Cena",
+    "en": "Scene",
+    "es": "Escena"
+  },
+  "pilgrimTrail": {
+    "pt": "Trilha",
+    "en": "Trail",
+    "es": "Ruta"
+  },
+  "pilgrimYourTrail": {
+    "pt": "Sua trilha",
+    "en": "Your trail",
+    "es": "Tu ruta"
+  },
+  "pilgrimYourTrails": {
+    "pt": "Suas trilhas",
+    "en": "Your trails",
+    "es": "Tus rutas"
+  },
+  "pilgrimTrailsInProgress": {
+    "pt": "{count} em curso",
+    "en": "{count} in progress",
+    "es": "{count} en curso",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "pilgrimNoTrailYet": {
+    "pt": "Nenhuma trilha em andamento ainda.",
+    "en": "No trail in progress yet.",
+    "es": "Aún no hay ninguna ruta en curso."
+  },
+  "pilgrimSealsAndTrails": {
+    "pt": "Selos e trilhas",
+    "en": "Seals and trails",
+    "es": "Sellos y rutas"
+  },
+  "pilgrimAccuracyTitle": {
+    "pt": "Acertos",
+    "en": "Accuracy",
+    "es": "Aciertos"
+  },
+  "pilgrimPrivateTitle": {
+    "pt": "Perfil privado",
+    "en": "Private profile",
+    "es": "Perfil privado"
+  },
+  "pilgrimPrivateBody": {
+    "pt": "Escolheu não compartilhar detalhes com a caravana.",
+    "en": "Chose not to share details with the caravan.",
+    "es": "Eligió no compartir detalles con la caravana."
+  },
+  "pilgrimNoReadingYet": {
+    "pt": "Ainda sem leitura registrada",
+    "en": "No reading logged yet",
+    "es": "Aún sin lectura registrada"
+  },
+  "pilgrimChaptersWordMedal": {
+    "pt": "{chapters, plural, =1{1 capítulo} other{{chapters} capítulos}} · medalha Palavra",
+    "en": "{chapters, plural, =1{1 chapter} other{{chapters} chapters}} · Word medal",
+    "es": "{chapters, plural, =1{1 capítulo} other{{chapters} capítulos}} · medalla Palabra",
+    "placeholders": {
+      "chapters": "int"
+    }
+  },
+  "pilgrimChaptersBooks": {
+    "pt": "{chapters, plural, =1{1 capítulo} other{{chapters} capítulos}} · {books, plural, =1{1 livro} other{{books} livros}}",
+    "en": "{chapters, plural, =1{1 chapter} other{{chapters} chapters}} · {books, plural, =1{1 book} other{{books} books}}",
+    "es": "{chapters, plural, =1{1 capítulo} other{{chapters} capítulos}} · {books, plural, =1{1 libro} other{{books} libros}}",
+    "placeholders": {
+      "chapters": "int",
+      "books": "int"
+    }
+  },
+  "pilgrimScriptures": {
+    "pt": "Escrituras",
+    "en": "Scriptures",
+    "es": "Escrituras"
+  },
+  "pilgrimCompletedOn": {
+    "pt": "Concluída em {date}",
+    "en": "Completed on {date}",
+    "es": "Completada el {date}",
+    "placeholders": {
+      "date": "String"
+    }
+  },
+  "pilgrimWalked": {
+    "pt": "Caminhou",
+    "en": "Walked",
+    "es": "Caminó"
+  },
+  "pilgrimSeen": {
+    "pt": "Visto",
+    "en": "Seen",
+    "es": "Visto"
+  },
+  "pilgrimStreak": {
+    "pt": "Sequência",
+    "en": "Streak",
+    "es": "Racha"
+  },
+  "pilgrimStreakOngoing": {
+    "pt": "Em andamento",
+    "en": "Ongoing",
+    "es": "En curso"
+  },
+  "pilgrimLastStudyDay": {
+    "pt": "Último dia de estudo",
+    "en": "Last study day",
+    "es": "Último día de estudio"
+  },
+  "pilgrimLastSeen": {
+    "pt": "Visto por último · {when}",
+    "en": "Last seen · {when}",
+    "es": "Visto por última vez · {when}",
+    "placeholders": {
+      "when": "String"
+    }
+  },
+  "pilgrimCorrectRatio": {
+    "pt": "{correct}/{total} certas",
+    "en": "{correct}/{total} right",
+    "es": "{correct}/{total} correctas",
+    "placeholders": {
+      "correct": "int",
+      "total": "int"
+    }
+  },
+  "pilgrimCorrectOf": {
+    "pt": "{correct} de {total}",
+    "en": "{correct} of {total}",
+    "es": "{correct} de {total}",
+    "placeholders": {
+      "correct": "int",
+      "total": "int"
+    }
+  },
+  "pilgrimOnTheJourney": {
+    "pt": "na jornada",
+    "en": "on the journey",
+    "es": "en el camino"
+  },
+  "pilgrimCorrectOnJourney": {
+    "pt": "perguntas certas na jornada",
+    "en": "questions right on the journey",
+    "es": "preguntas correctas en el camino"
+  },
+  "pilgrimLedOverall": {
+    "pt": "Já liderou o ranking geral",
+    "en": "Has led the overall ranking",
+    "es": "Ya lideró el ranking general"
+  },
+  "pilgrimScenesOf": {
+    "pt": "{done} de {total} cenas",
+    "en": "{done} of {total} scenes",
+    "es": "{done} de {total} escenas",
+    "placeholders": {
+      "done": "int",
+      "total": "int"
+    }
+  },
+  "pilgrimPrivacyTitle": {
+    "pt": "Privacidade do perfil",
+    "en": "Profile privacy",
+    "es": "Privacidad del perfil"
+  },
+  "pilgrimPrivacyBody": {
+    "pt": "Toque no olho de cada card para escolher o que a caravana vê.",
+    "en": "Tap the eye on each card to choose what the caravan sees.",
+    "es": "Toca el ojo de cada tarjeta para elegir qué ve la caravana."
+  },
+  "profileTitle": {
+    "pt": "Perfil",
+    "en": "Profile",
+    "es": "Perfil"
+  },
+  "profileYourJourney": {
+    "pt": "Sua jornada",
+    "en": "Your journey",
+    "es": "Tu camino"
+  },
+  "profileYourNumbers": {
+    "pt": "Seus números",
+    "en": "Your numbers",
+    "es": "Tus números"
+  },
+  "profileSince": {
+    "pt": "Peregrino desde {month} de {year}",
+    "en": "Pilgrim since {month} {year}",
+    "es": "Peregrino desde {month} de {year}",
+    "placeholders": {
+      "month": "String",
+      "year": "int"
+    }
+  },
+  "profileStreakOf": {
+    "pt": "Sequência de {streak} de {goal} dias",
+    "en": "Streak of {streak} of {goal} days",
+    "es": "Racha de {streak} de {goal} días",
+    "placeholders": {
+      "streak": "int",
+      "goal": "int"
+    }
+  },
+  "profileStreakOfGoal": {
+    "pt": "de {goal}",
+    "en": "of {goal}",
+    "es": "de {goal}",
+    "placeholders": {
+      "goal": "int"
+    }
+  },
+  "profileYourStreak": {
+    "pt": "Sua sequência",
+    "en": "Your streak",
+    "es": "Tu racha"
+  },
+  "profileStreakGoalDone": {
+    "pt": "Compromisso de {goal} dias cumprido. Siga firme.",
+    "en": "{goal}-day commitment met. Keep going.",
+    "es": "Compromiso de {goal} días cumplido. Sigue firme.",
+    "placeholders": {
+      "goal": "int"
+    }
+  },
+  "profileStreakStart": {
+    "pt": "Uma cena hoje acende o primeiro dia.",
+    "en": "One scene today lights the first day.",
+    "es": "Una escena hoy enciende el primer día."
+  },
+  "profileStreakRemaining": {
+    "pt": "Faltam {left} para o compromisso de {goal} dias.",
+    "en": "{left} left for the {goal}-day commitment.",
+    "es": "Faltan {left} para el compromiso de {goal} días.",
+    "placeholders": {
+      "left": "int",
+      "goal": "int"
+    }
+  },
+  "profileWeekHistory": {
+    "pt": "Histórico das semanas",
+    "en": "Week history",
+    "es": "Historial de semanas"
+  },
+  "profileThisWeek": {
+    "pt": "Esta semana",
+    "en": "This week",
+    "es": "Esta semana"
+  },
+  "profileThisWeekSemantics": {
+    "pt": "Esta semana: {count} de 7 dias caminhados",
+    "en": "This week: {count} of 7 days walked",
+    "es": "Esta semana: {count} de 7 días caminados",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "profileOfSevenDays": {
+    "pt": "{count} de 7 dias",
+    "en": "{count} of 7 days",
+    "es": "{count} de 7 días",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "profileTodayLower": {
+    "pt": "hoje",
+    "en": "today",
+    "es": "hoy"
+  },
+  "profileLastThreeMonths": {
+    "pt": "Últimos 3 meses",
+    "en": "Last 3 months",
+    "es": "Últimos 3 meses"
+  },
+  "profileDaysPerWeek": {
+    "pt": "dias por semana",
+    "en": "days per week",
+    "es": "días por semana"
+  },
+  "profileThreeMonthsAgo": {
+    "pt": "há 3 meses",
+    "en": "3 months ago",
+    "es": "hace 3 meses"
+  },
+  "profileThisWeekLower": {
+    "pt": "esta semana",
+    "en": "this week",
+    "es": "esta semana"
+  },
+  "profileLampHelp": {
+    "pt": "Cada lamparina é uma semana: o azeite sobe a cada dia caminhado e a chama cresce.",
+    "en": "Each lamp is a week: the oil rises with every day walked and the flame grows.",
+    "es": "Cada lámpara es una semana: el aceite sube con cada día caminado y la llama crece."
+  },
+  "profileWeeksWalkedSemantics": {
+    "pt": "{walked} dias caminhados nas últimas {weeks} semanas",
+    "en": "{walked} days walked in the last {weeks} weeks",
+    "es": "{walked} días caminados en las últimas {weeks} semanas",
+    "placeholders": {
+      "walked": "int",
+      "weeks": "int"
+    }
+  },
+  "profileWdMon": {
+    "pt": "S",
+    "en": "M",
+    "es": "L"
+  },
+  "profileWdTue": {
+    "pt": "T",
+    "en": "T",
+    "es": "M"
+  },
+  "profileWdWed": {
+    "pt": "Q",
+    "en": "W",
+    "es": "X"
+  },
+  "profileWdThu": {
+    "pt": "Q",
+    "en": "T",
+    "es": "J"
+  },
+  "profileWdFri": {
+    "pt": "S",
+    "en": "F",
+    "es": "V"
+  },
+  "profileWdSat": {
+    "pt": "S",
+    "en": "S",
+    "es": "S"
+  },
+  "profileWdSun": {
+    "pt": "D",
+    "en": "S",
+    "es": "D"
+  }
+}

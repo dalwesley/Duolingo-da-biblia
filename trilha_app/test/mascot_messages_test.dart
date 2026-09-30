@@ -18,7 +18,7 @@ void main() {
           isReplay: false,
           isBoss: false,
         ),
-        'Clareza total',
+        '100% de acertos',
       );
       expect(
         CelebrationCopy.headline(
@@ -42,7 +42,7 @@ void main() {
           isReplay: false,
           isBoss: true,
         ),
-        'Boss vencido',
+        'Travessia concluída',
       );
     });
 
@@ -70,7 +70,7 @@ void main() {
     test('speaks about the step, not the scoreboard', () {
       expect(
         MascotMessages.celebration(isBoss: false, pct: 80),
-        'Bom passo. A trilha te espera amanhã.',
+        'Boa cena. A trilha te espera amanhã.',
       );
       expect(
         MascotMessages.celebration(isBoss: false, pct: 50),

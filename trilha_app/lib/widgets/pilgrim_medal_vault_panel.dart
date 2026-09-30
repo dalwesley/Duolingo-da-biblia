@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../l10n/app_language.dart';
+
 import '../data/trail_repository.dart';
 import '../models/caravan_pilgrim_profile.dart';
 import '../models/pilgrim_medals.dart';
@@ -201,13 +203,13 @@ class _PilgrimMedalVaultsPanelState extends State<PilgrimMedalVaultsPanel> {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   RelicChapter(
-                    title: 'Medalhas',
+                    title: context.l10n.medalVaultTitle,
                     accent: AppColors.medalGold,
                     // A barra de progresso já faz o papel do filete.
                     divided: journeyTotal == 0,
-                    action: const PrivacyEye(
-                      sections: {CaravanProfileSection.medals},
-                      label: 'Medalhas',
+                    action: PrivacyEye(
+                      sections: const {CaravanProfileSection.medals},
+                      label: context.l10n.medalVaultTitle,
                     ),
                   ),
                   if (journeyTotal > 0) ...[
@@ -234,8 +236,7 @@ class _PilgrimMedalVaultsPanelState extends State<PilgrimMedalVaultsPanel> {
                     Padding(
                       padding: const EdgeInsets.only(left: 13),
                       child: Text(
-                        'Cada cena concluída acende uma moeda. '
-                        'A primeira está a um passo.',
+                        context.l10n.medalVaultEmptyHint,
                         style: AppTypography.body(
                           size: 13,
                           color: a.textSecondary,
@@ -261,7 +262,7 @@ class _PilgrimMedalVaultsPanelState extends State<PilgrimMedalVaultsPanel> {
                   if (showJourney && _seasonVault != null) ...[
                     const SizedBox(height: AppSpace.lg),
                     _VaultSubhead(
-                      'Temporada',
+                      context.l10n.medalVaultSeason,
                       color: AppColors.medalGold.withValues(alpha: 0.85),
                     ),
                     const SizedBox(height: AppSpace.sm),
@@ -289,7 +290,7 @@ class _PilgrimMedalVaultsPanelState extends State<PilgrimMedalVaultsPanel> {
                   if (showEmpty) ...[
                     const SizedBox(height: AppSpace.lg + 2),
                     CopperCta(
-                      label: 'Caminhar a próxima cena',
+                      label: context.l10n.commonNextScene,
                       dense: true,
                       leading: CinematicGlyph.path,
                       trailing: null,
@@ -412,7 +413,7 @@ class _RareStrip extends StatelessWidget {
         const ListDivider(),
         const SizedBox(height: AppSpace.md),
         _VaultSubhead(
-          'Descobertas',
+          context.l10n.medalVaultDiscoveries,
           color: AppColors.medalMirra.withValues(alpha: 0.92),
         ),
         if (tiles.isNotEmpty) ...[
@@ -448,8 +449,8 @@ class _RareStrip extends StatelessWidget {
                     Expanded(
                       child: Text(
                         tiles.isEmpty
-                            ? 'Revelam-se no caminho — sem dica.'
-                            : 'Outras se revelam no caminho.',
+                            ? context.l10n.medalVaultMysteryEmpty
+                            : context.l10n.medalVaultMysteryMore,
                         style: AppTypography.body(
                           size: 13,
                           color: a.textSecondary,
@@ -485,14 +486,14 @@ class _MedalTabBar extends StatelessWidget {
       children: [
         Expanded(
           child: _MedalChapter(
-            label: 'Jornada',
+            label: context.l10n.medalVaultTabJourney,
             selected: tab == _MedalVaultTab.journey,
             onTap: () => onChanged(_MedalVaultTab.journey),
           ),
         ),
         Expanded(
           child: _MedalChapter(
-            label: 'Trilhas',
+            label: context.l10n.medalVaultTabTrails,
             count: trailCount,
             selected: tab == _MedalVaultTab.trails,
             onTap: () => onChanged(_MedalVaultTab.trails),
@@ -600,7 +601,7 @@ class _NextMedalSpotlight extends StatelessWidget {
     );
     return Semantics(
       button: true,
-      label: 'Próxima medalha: ${p.message}',
+      label: context.l10n.medalVaultNextSemantics(p.message),
       excludeSemantics: true,
       child: Material(
         color: Colors.transparent,
@@ -624,7 +625,7 @@ class _NextMedalSpotlight extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Próxima medalha',
+                        context.l10n.medalVaultNextTitle,
                         style: AppTypography.body(
                           size: 12,
                           weight: FontWeight.w800,
@@ -640,9 +641,7 @@ class _NextMedalSpotlight extends StatelessWidget {
                       ),
                       const SizedBox(height: 4),
                       Text(
-                        p.remaining == 1
-                            ? 'Falta 1 ${p.unitLabel}'
-                            : 'Faltam ${p.remaining} ${p.unitLabel}',
+                        context.l10n.medalVaultRemaining(p.remaining, p.unitLabel),
                         style: AppTypography.body(
                           size: 13,
                           weight: FontWeight.w600,

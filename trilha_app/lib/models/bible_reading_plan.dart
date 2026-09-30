@@ -1,3 +1,5 @@
+import '../l10n/l10n_global.dart';
+
 /// Plano de leitura: canônico ou cronológico.
 /// Navegação da aba Bíblia também oferece alfabética.
 enum BibleReadingOrder {
@@ -8,15 +10,17 @@ enum BibleReadingOrder {
   String get storageKey => name;
 
   String get label => switch (this) {
-        BibleReadingOrder.canonical => 'Ordem da Bíblia',
-        BibleReadingOrder.chronological => 'Ordem cronológica',
-        BibleReadingOrder.alphabetical => 'Ordem alfabética',
+        BibleReadingOrder.canonical => L10n.current.planOrderCanonical,
+        BibleReadingOrder.chronological => L10n.current.planOrderChronological,
+        BibleReadingOrder.alphabetical => L10n.current.planOrderAlphabetical,
       };
 
   String get shortLabel => switch (this) {
-        BibleReadingOrder.canonical => 'Canônica',
-        BibleReadingOrder.chronological => 'Cronológica',
-        BibleReadingOrder.alphabetical => 'Alfabética',
+        BibleReadingOrder.canonical => L10n.current.planOrderCanonicalShort,
+        BibleReadingOrder.chronological =>
+          L10n.current.planOrderChronologicalShort,
+        BibleReadingOrder.alphabetical =>
+          L10n.current.planOrderAlphabeticalShort,
       };
 
   /// Plano de leitura — A–Z não é um percurso de estudo.
@@ -170,7 +174,7 @@ class DailyReadingPortion {
   });
 
   String get summary {
-    if (chapters.isEmpty) return 'Plano concluído';
+    if (chapters.isEmpty) return L10n.current.planFinished;
     if (chapters.length == 1) return chapters.first.label;
     return '${chapters.first.label} → ${chapters.last.label}';
   }

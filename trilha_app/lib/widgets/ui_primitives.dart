@@ -384,6 +384,10 @@ class GhostCta extends StatelessWidget {
   final bool expanded;
   final EdgeInsetsGeometry padding;
 
+  /// Mesma altura e fonte do [CopperCta] — para quando os dois são
+  /// escolhas lado a lado (ex.: tentar de novo / pular).
+  final bool matchCopper;
+
   const GhostCta({
     super.key,
     required this.label,
@@ -392,6 +396,7 @@ class GhostCta extends StatelessWidget {
     this.danger = false,
     this.expanded = false,
     this.padding = const EdgeInsets.symmetric(vertical: 14, horizontal: 12),
+    this.matchCopper = false,
   });
 
   @override
@@ -419,7 +424,9 @@ class GhostCta extends StatelessWidget {
           width: expanded ? double.infinity : null,
           // Mesma família do CTA ouro (`.btn-ghost` do site): cantos 14,
           // altura mínima confortável, texto normal.
-          constraints: const BoxConstraints(minHeight: 48),
+          constraints: BoxConstraints(
+            minHeight: matchCopper ? CopperCta.height : 48,
+          ),
           padding: padding,
           decoration: BoxDecoration(
             color: danger
@@ -445,7 +452,10 @@ class GhostCta extends StatelessWidget {
                 child: Text(
                   label,
                   textAlign: TextAlign.center,
-                  style: CopperCta.labelStyle(size: 14, color: ink),
+                  style: CopperCta.labelStyle(
+                    size: matchCopper ? 16 : 14,
+                    color: ink,
+                  ),
                 ),
               ),
             ],

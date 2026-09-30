@@ -126,7 +126,14 @@ class CornerProfileCta extends StatelessWidget {
     );
     if (created == null) {
       final msg = corners.lastError ?? CornerCopy.sendFailed;
-      messenger?.showSnackBar(SnackBar(content: Text(msg)));
+      if (messenger != null) {
+        showAppToast(
+          messenger,
+          message: msg,
+          glyph: CinematicGlyph.wrong,
+          tone: AppToastTone.warn,
+        );
+      }
     }
   }
 }

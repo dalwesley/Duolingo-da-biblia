@@ -1,0 +1,389 @@
+{
+  "tomorrowNextTrail": {
+    "pt": "Próxima trilha",
+    "en": "Next trail",
+    "es": "Siguiente ruta"
+  },
+  "tomorrowTodayYouSaw": {
+    "pt": "Hoje você viu",
+    "en": "Today you saw",
+    "es": "Hoy viste"
+  },
+  "tomorrowNextTrailOnMap": {
+    "pt": "A próxima trilha já está no mapa.",
+    "en": "The next trail is already on the map.",
+    "es": "La siguiente ruta ya está en el mapa."
+  },
+  "tomorrowLine": {
+    "pt": "Amanhã: {title}",
+    "en": "Tomorrow: {title}",
+    "es": "Mañana: {title}",
+    "placeholders": {
+      "title": "String"
+    }
+  },
+  "tomorrowSceneWaits": {
+    "pt": "A cena espera você.",
+    "en": "The scene is waiting for you.",
+    "es": "La escena te espera."
+  },
+  "tomorrowSevenDays": {
+    "pt": "Sete dias. O hábito pegou.",
+    "en": "Seven days. The habit stuck.",
+    "es": "Siete días. El hábito pegó."
+  },
+  "tomorrowDayOf": {
+    "pt": "Dia {streak} de {goal}",
+    "en": "Day {streak} of {goal}",
+    "es": "Día {streak} de {goal}",
+    "placeholders": {
+      "streak": "int",
+      "goal": "int"
+    }
+  },
+  "tomorrowYesterday": {
+    "pt": "Ontem: {text}",
+    "en": "Yesterday: {text}",
+    "es": "Ayer: {text}",
+    "placeholders": {
+      "text": "String"
+    }
+  },
+  "tomorrowStoryContinues": {
+    "pt": "A história continua no texto.",
+    "en": "The story continues in the text.",
+    "es": "La historia sigue en el texto."
+  },
+  "growthStageSeed": {
+    "pt": "Semente",
+    "en": "Seed",
+    "es": "Semilla"
+  },
+  "growthStageSprout": {
+    "pt": "Broto",
+    "en": "Sprout",
+    "es": "Brote"
+  },
+  "growthStageBranch": {
+    "pt": "Ramo",
+    "en": "Branch",
+    "es": "Rama"
+  },
+  "growthStageTree": {
+    "pt": "Árvore",
+    "en": "Tree",
+    "es": "Árbol"
+  },
+  "growthStageFruit": {
+    "pt": "Fruto",
+    "en": "Fruit",
+    "es": "Fruto"
+  },
+  "growthHintDayZero": {
+    "pt": "dia 0",
+    "en": "day 0",
+    "es": "día 0"
+  },
+  "growthPerfect": {
+    "pt": "Cena perfeita",
+    "en": "Perfect scene",
+    "es": "Escena perfecta"
+  },
+  "growthPerfectWith": {
+    "pt": "Cena perfeita · {subtitle}",
+    "en": "Perfect scene · {subtitle}",
+    "es": "Escena perfecta · {subtitle}",
+    "placeholders": {
+      "subtitle": "String"
+    }
+  },
+  "growthFreezeUsed": {
+    "pt": "{subtitle} · gelo já usado nesta semana",
+    "en": "{subtitle} · freeze already used this week",
+    "es": "{subtitle} · hielo ya usado esta semana",
+    "placeholders": {
+      "subtitle": "String"
+    }
+  },
+  "growthSeedSubtitle": {
+    "pt": "Faça 1 cena hoje para virar Broto",
+    "en": "Do 1 scene today to become a Sprout",
+    "es": "Haz 1 escena hoy para volverte Brote"
+  },
+  "growthDaysToStage": {
+    "pt": "{count, plural, =1{Falta 1 dia de sequência para {stage}} other{Faltam {count} dias de sequência para {stage}}}",
+    "en": "{count, plural, =1{1 streak day left to reach {stage}} other{{count} streak days left to reach {stage}}}",
+    "es": "{count, plural, =1{Falta 1 día de racha para {stage}} other{Faltan {count} días de racha para {stage}}}",
+    "placeholders": {
+      "count": "int",
+      "stage": "String"
+    }
+  },
+  "growthFruitSubtitle": {
+    "pt": "{count, plural, =1{1 dia de sequência · deu fruto} other{{count} dias de sequência · deu fruto}}",
+    "en": "{count, plural, =1{1 streak day · it bore fruit} other{{count} streak days · it bore fruit}}",
+    "es": "{count, plural, =1{1 día de racha · dio fruto} other{{count} días de racha · dio fruto}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "mascotFailedKicker": {
+    "pt": "Faltou luz",
+    "en": "Lights out",
+    "es": "Faltó luz"
+  },
+  "mascotFailedDetail": {
+    "pt": "As lâmpadas acabaram antes do fim. A cena espera você — de novo, com calma.",
+    "en": "The lamps ran out before the end. The scene waits for you — again, slowly.",
+    "es": "Las lámparas se acabaron antes del final. La escena te espera — de nuevo, con calma."
+  },
+  "splashSlogan": {
+    "pt": "A Bíblia, cena a cena",
+    "en": "The Bible, scene by scene",
+    "es": "La Biblia, escena a escena"
+  },
+  "splashPreparing": {
+    "pt": "Preparando sua jornada…",
+    "en": "Preparing your journey…",
+    "es": "Preparando tu camino…"
+  },
+  "loginTitle": {
+    "pt": "Entre para continuar",
+    "en": "Sign in to continue",
+    "es": "Entra para continuar"
+  },
+  "loginBody": {
+    "pt": "Sua conta guarda seus passos, sua sequência e suas cenas — assim nada se perde entre aparelhos.",
+    "en": "Your account keeps your steps, streak and scenes — so nothing is lost between devices.",
+    "es": "Tu cuenta guarda tus pasos, tu racha y tus escenas — así no se pierde nada entre aparatos."
+  },
+  "loginLoadingBody": {
+    "pt": "Carregando seus passos, sua sequência e suas cenas…",
+    "en": "Loading your steps, streak and scenes…",
+    "es": "Cargando tus pasos, tu racha y tus escenas…"
+  },
+  "loginEntering": {
+    "pt": "Entrando…",
+    "en": "Signing in…",
+    "es": "Entrando…"
+  },
+  "loginWithApple": {
+    "pt": "Continuar com Apple",
+    "en": "Continue with Apple",
+    "es": "Continuar con Apple"
+  },
+  "loginWithGoogle": {
+    "pt": "Continuar com Google",
+    "en": "Continue with Google",
+    "es": "Continuar con Google"
+  },
+  "loginReconnect": {
+    "pt": "Tentar reconectar",
+    "en": "Try reconnecting",
+    "es": "Intentar reconectar"
+  },
+  "loginRequired": {
+    "pt": "É necessário entrar para usar o Stway.",
+    "en": "You need to sign in to use Stway.",
+    "es": "Necesitas entrar para usar Stway."
+  },
+  "loginHydrateError": {
+    "pt": "Não foi possível carregar seu progresso. Verifique a conexão e tente de novo.",
+    "en": "Couldn't load your progress. Check your connection and try again.",
+    "es": "No se pudo cargar tu progreso. Revisa la conexión e inténtalo de nuevo."
+  },
+  "loginGoogleError": {
+    "pt": "Falha no login com Google",
+    "en": "Google sign-in failed",
+    "es": "Falló el acceso con Google"
+  },
+  "loginAppleError": {
+    "pt": "Falha no login com Apple",
+    "en": "Apple sign-in failed",
+    "es": "Falló el acceso con Apple"
+  },
+  "companionErrorAlreadyHave": {
+    "pt": "Você já tem uma companhia.",
+    "en": "You already have a companion.",
+    "es": "Ya tienes una compañía."
+  },
+  "companionErrorSignInCreate": {
+    "pt": "Entre com Google para criar uma companhia.",
+    "en": "Sign in with Google to create a companion.",
+    "es": "Entra con Google para crear una compañía."
+  },
+  "companionErrorCreateInvite": {
+    "pt": "Não foi possível criar o convite.",
+    "en": "Couldn't create the invite.",
+    "es": "No se pudo crear la invitación."
+  },
+  "companionErrorSignInJoin": {
+    "pt": "Entre com Google para entrar numa companhia.",
+    "en": "Sign in with Google to join a companion.",
+    "es": "Entra con Google para unirte a una compañía."
+  },
+  "companionErrorInvalidCode": {
+    "pt": "Código inválido ou companhia já está completa.",
+    "en": "Invalid code or the companion pair is already full.",
+    "es": "Código inválido o la compañía ya está completa."
+  },
+  "companionErrorSignInWave": {
+    "pt": "Entre na conta para acenar no app.",
+    "en": "Sign in to wave in the app.",
+    "es": "Entra en la cuenta para saludar en la app."
+  },
+  "companionErrorWave": {
+    "pt": "Não foi possível enviar o aceno.",
+    "en": "Couldn't send the wave.",
+    "es": "No se pudo enviar el saludo."
+  },
+  "companionWeekDays": {
+    "pt": "{count} de 7 dias juntos nesta semana",
+    "en": "{count} of 7 days together this week",
+    "es": "{count} de 7 días juntos esta semana",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "companionWeekClosed": {
+    "pt": "Semana fechada juntos",
+    "en": "Week closed together",
+    "es": "Semana cerrada juntos"
+  },
+  "companionFallbackName": {
+    "pt": "Companheiro",
+    "en": "Companion",
+    "es": "Compañero"
+  },
+  "roomKindCelula": {
+    "pt": "Célula",
+    "en": "Cell group",
+    "es": "Célula"
+  },
+  "roomKindDiscipulado": {
+    "pt": "Discipulado",
+    "en": "Discipleship",
+    "es": "Discipulado"
+  },
+  "roomKindEbd": {
+    "pt": "EBD",
+    "en": "Sunday school",
+    "es": "Escuela bíblica"
+  },
+  "roomKindFamilia": {
+    "pt": "Família",
+    "en": "Family",
+    "es": "Familia"
+  },
+  "roomKindAmigos": {
+    "pt": "Amigos",
+    "en": "Friends",
+    "es": "Amigos"
+  },
+  "roomLeaderCelula": {
+    "pt": "Líder",
+    "en": "Leader",
+    "es": "Líder"
+  },
+  "roomLeaderDiscipulado": {
+    "pt": "Discipulador",
+    "en": "Mentor",
+    "es": "Discipulador"
+  },
+  "roomLeaderEbd": {
+    "pt": "Professor",
+    "en": "Teacher",
+    "es": "Profesor"
+  },
+  "roomLeaderFamilia": {
+    "pt": "Responsável",
+    "en": "Host",
+    "es": "Responsable"
+  },
+  "roomLeaderAmigos": {
+    "pt": "Anfitrião",
+    "en": "Host",
+    "es": "Anfitrión"
+  },
+  "roomNameHintCelula": {
+    "pt": "Ex.: Célula Norte",
+    "en": "E.g. North cell",
+    "es": "Ej.: Célula Norte"
+  },
+  "roomNameHintDiscipulado": {
+    "pt": "Ex.: Discipulado de quinta",
+    "en": "E.g. Thursday discipleship",
+    "es": "Ej.: Discipulado del jueves"
+  },
+  "roomNameHintEbd": {
+    "pt": "Ex.: EBD Jovens",
+    "en": "E.g. Youth class",
+    "es": "Ej.: Escuela de jóvenes"
+  },
+  "roomNameHintFamilia": {
+    "pt": "Ex.: Família Souza",
+    "en": "E.g. Souza family",
+    "es": "Ej.: Familia Souza"
+  },
+  "roomNameHintAmigos": {
+    "pt": "Ex.: Amigos da facul",
+    "en": "E.g. College friends",
+    "es": "Ej.: Amigos de la uni"
+  },
+  "roomStudyFallbackTitle": {
+    "pt": "Estudo da semana",
+    "en": "This week's study",
+    "es": "Estudio de la semana"
+  },
+  "roomFallbackName": {
+    "pt": "Grupo",
+    "en": "Group",
+    "es": "Grupo"
+  },
+  "roomErrorSignInCreate": {
+    "pt": "Entre com Google para criar um grupo.",
+    "en": "Sign in with Google to create a group.",
+    "es": "Entra con Google para crear un grupo."
+  },
+  "roomErrorCreate": {
+    "pt": "Não foi possível criar o grupo. Tente de novo.",
+    "en": "Couldn't create the group. Try again.",
+    "es": "No se pudo crear el grupo. Inténtalo de nuevo."
+  },
+  "roomErrorSignInJoin": {
+    "pt": "Entre com Google para entrar num grupo.",
+    "en": "Sign in with Google to join a group.",
+    "es": "Entra con Google para entrar a un grupo."
+  },
+  "roomErrorFullAskLeader": {
+    "pt": "Este grupo já tem {limit} pessoas. Peça ao líder para abrir outro grupo.",
+    "en": "This group already has {limit} people. Ask the leader to open another group.",
+    "es": "Este grupo ya tiene {limit} personas. Pide al líder que abra otro grupo.",
+    "placeholders": {
+      "limit": "int"
+    }
+  },
+  "roomErrorInvalidCode": {
+    "pt": "Código inválido ou grupo não encontrado.",
+    "en": "Invalid code or group not found.",
+    "es": "Código inválido o grupo no encontrado."
+  },
+  "roomErrorLostGroup": {
+    "pt": "Não achamos o grupo em que você estava.",
+    "en": "We couldn't find the group you were in.",
+    "es": "No encontramos el grupo en el que estabas."
+  },
+  "roomErrorCreateFirst": {
+    "pt": "Crie o grupo antes de chamar alguém.",
+    "en": "Create the group before inviting someone.",
+    "es": "Crea el grupo antes de invitar a alguien."
+  },
+  "roomErrorFull": {
+    "pt": "Este grupo já tem {limit} pessoas.",
+    "en": "This group already has {limit} people.",
+    "es": "Este grupo ya tiene {limit} personas.",
+    "placeholders": {
+      "limit": "int"
+    }
+  }
+}

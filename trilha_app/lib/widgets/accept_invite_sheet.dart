@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
+import '../l10n/app_language.dart';
 import '../services/invite_deep_link_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -88,10 +89,9 @@ class _AcceptInviteSheetState extends State<_AcceptInviteSheet> {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          const AppSheetHeader(
-            title: 'Aceitar convite',
-            subtitle:
-                'Se você copiou o código no WhatsApp, ele já aparece aqui',
+          AppSheetHeader(
+            title: context.l10n.inviteHaveCodeTitle,
+            subtitle: context.l10n.inviteHaveCodeSubtitle,
             center: true,
           ),
           const SizedBox(height: AppSpace.screen),
@@ -107,7 +107,7 @@ class _AcceptInviteSheetState extends State<_AcceptInviteSheet> {
             ).copyWith(letterSpacing: 4),
             decoration: InputDecoration(
               counterText: '',
-              hintText: 'Código',
+              hintText: context.l10n.inviteCodeHint,
               hintStyle: AppTypography.title(
                 color: a.textFaint,
                 size: 24,
@@ -136,13 +136,13 @@ class _AcceptInviteSheetState extends State<_AcceptInviteSheet> {
           ),
           const SizedBox(height: AppSpace.md),
           OutlineCta(
-            label: 'Escanear QR',
+            label: context.l10n.inviteScanQr,
             onTap: _scanQr,
             leading: CinematicGlyph.qr,
           ),
           const SizedBox(height: AppSpace.md),
           CopperCta(
-            label: 'Entrar',
+            label: context.l10n.inviteJoinCta,
             onTap: () => _submit(),
             trailing: null,
             dense: true,
@@ -194,7 +194,7 @@ class _QrScanPageState extends State<_QrScanPage> {
         backgroundColor: AppColors.night,
         foregroundColor: Colors.white,
         title: Text(
-          'Escanear QR',
+          context.l10n.inviteScanQr,
           style: AppTypography.title(size: 18, color: Colors.white),
         ),
       ),
@@ -217,7 +217,7 @@ class _QrScanPageState extends State<_QrScanPage> {
             right: AppSpace.xxl,
             bottom: 48 + MediaQuery.viewPaddingOf(context).bottom,
             child: Text(
-              'Aponte para o QR do convite',
+              context.l10n.inviteScanHint,
               textAlign: TextAlign.center,
               style: AppTypography.body(
                 color: Colors.white.withValues(alpha: 0.85),

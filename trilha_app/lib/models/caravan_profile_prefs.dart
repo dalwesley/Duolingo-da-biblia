@@ -1,3 +1,5 @@
+import '../l10n/l10n_global.dart';
+
 /// Seções do perfil público na caravana (bottom sheet ao tocar no ranking).
 enum CaravanProfileSection {
   presence,
@@ -11,32 +13,33 @@ enum CaravanProfileSection {
 }
 
 extension CaravanProfileSectionX on CaravanProfileSection {
-  String get label => switch (this) {
-        CaravanProfileSection.presence => 'Presença',
-        CaravanProfileSection.ranking => 'Ranking e passos',
-        CaravanProfileSection.daysAsLeader => 'Dias no topo',
-        CaravanProfileSection.lastMission => 'Última cena',
-        CaravanProfileSection.accuracy => 'Taxa de acertos',
-        CaravanProfileSection.bible => 'Bíblia',
-        CaravanProfileSection.trails => 'Trilhas',
-        CaravanProfileSection.medals => 'Medalhas',
-      };
+  String get label {
+    final l10n = L10n.current;
+    return switch (this) {
+      CaravanProfileSection.presence => l10n.profileSectionPresence,
+      CaravanProfileSection.ranking => l10n.profileSectionRanking,
+      CaravanProfileSection.daysAsLeader => l10n.profileSectionDaysOnTop,
+      CaravanProfileSection.lastMission => l10n.profileSectionLastScene,
+      CaravanProfileSection.accuracy => l10n.profileSectionAccuracy,
+      CaravanProfileSection.bible => l10n.navBible,
+      CaravanProfileSection.trails => l10n.navTrails,
+      CaravanProfileSection.medals => l10n.profileSectionMedals,
+    };
+  }
 
-  String get subtitle => switch (this) {
-        CaravanProfileSection.presence =>
-          'Semana caminhada, sequência e marcos (Semente → Fruto)',
-        CaravanProfileSection.ranking => 'Posição e passos totais',
-        CaravanProfileSection.daysAsLeader =>
-          'Quantos dias ficou em 1º no ranking geral',
-        CaravanProfileSection.lastMission =>
-          'Nome da última cena concluída',
-        CaravanProfileSection.accuracy =>
-          'Percentual de acertos nas cenas',
-        CaravanProfileSection.bible => 'Livros e capítulos lidos',
-        CaravanProfileSection.trails =>
-          'Progresso nas trilhas e selos adquiridos',
-        CaravanProfileSection.medals => 'Medalhas da jornada',
-      };
+  String get subtitle {
+    final l10n = L10n.current;
+    return switch (this) {
+      CaravanProfileSection.presence => l10n.profileSectionPresenceHint,
+      CaravanProfileSection.ranking => l10n.profileSectionRankingHint,
+      CaravanProfileSection.daysAsLeader => l10n.profileSectionDaysOnTopHint,
+      CaravanProfileSection.lastMission => l10n.profileSectionLastSceneHint,
+      CaravanProfileSection.accuracy => l10n.profileSectionAccuracyHint,
+      CaravanProfileSection.bible => l10n.profileSectionBibleHint,
+      CaravanProfileSection.trails => l10n.profileSectionTrailsHint,
+      CaravanProfileSection.medals => l10n.profileSectionMedalsHint,
+    };
+  }
 }
 
 /// O que outros peregrinos veem ao tocar no seu card na caravana.

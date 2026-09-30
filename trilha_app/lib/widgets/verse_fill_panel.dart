@@ -1,6 +1,7 @@
 import 'dart:math' as math;
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import '../l10n/app_language.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'act_feel.dart';
@@ -371,7 +372,7 @@ class _VerseFillPanelState extends State<VerseFillPanel>
                           ),
                           SizedBox(height: compact ? 4 : 8),
                           TextCta(
-                            label: 'Pular',
+                            label: context.l10n.commonSkip,
                             onTap: () => widget.onDone(false),
                             color: Appearance.of(context).textFaint,
                           ),
@@ -440,10 +441,10 @@ class _MemoryHeader extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SectionLabel('Palavra', color: accent),
+              SectionLabel(context.l10n.exerciseLabelWord, color: accent),
               const SizedBox(height: 6),
               Text(
-                'Complete o versículo',
+                context.l10n.exerciseTitleComplete,
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
                 style: AppTypography.title(
@@ -873,17 +874,24 @@ class _RevealBanner extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        correct ? 'Acertou' : 'Quase',
+                        correct
+                            ? context.l10n.feedbackCorrect
+                            : context.l10n.feedbackAlmost,
                         style: AppTypography.title(size: 18, color: color),
                       ),
                       const SizedBox(height: 2),
                       Text(
                         correct
-                            ? '+2 passos'
+                            ? context.l10n.commonPlusSteps(2)
                             : corrections.isEmpty
-                            ? 'Veja a palavra certa'
+                            ? context.l10n.feedbackSeeRightWord
                             : corrections
-                                  .map((c) => '${c.expected}, não ${c.got}')
+                                  .map(
+                                    (c) => context.l10n.feedbackCorrection(
+                                      c.expected,
+                                      c.got,
+                                    ),
+                                  )
                                   .join(' · '),
                         style: AppTypography.body(
                           size: 13,
@@ -900,7 +908,7 @@ class _RevealBanner extends StatelessWidget {
         ),
         const SizedBox(height: 12),
         CopperCta(
-          label: 'Continuar',
+          label: context.l10n.commonContinue,
           onTap: onContinue,
           trailing: CinematicGlyph.forward,
         ),

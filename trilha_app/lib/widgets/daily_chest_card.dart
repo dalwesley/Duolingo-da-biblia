@@ -17,6 +17,7 @@ import 'confetti_overlay.dart';
 import 'immersive_background.dart';
 import 'medal_cinematic_widgets.dart';
 import 'ui_primitives.dart';
+import '../l10n/app_language.dart';
 
 /// Baú do dia — recompensa cosmética variável, 1x/dia, ao completar a
 /// cena de hoje. Nunca dá passos/XP: não compete com o Cofre de medalhas
@@ -48,7 +49,7 @@ class DailyChestCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Baú do dia',
+                context.l10n.chestDailyTitle,
                 style: AppTypography.title(size: 14, color: a.text),
               ),
               const SizedBox(height: 2),
@@ -56,8 +57,8 @@ class DailyChestCard extends StatelessWidget {
                 showsTodayReward
                     ? lastReward.title
                     : (available
-                          ? 'Sua recompensa de hoje está pronta'
-                          : 'Complete a cena de hoje para abrir'),
+                          ? context.l10n.chestReady
+                          : context.l10n.chestLocked),
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
                 style: AppTypography.body(
@@ -105,7 +106,7 @@ class DailyChestCard extends StatelessWidget {
             if (available) ...[
               const SizedBox(height: AppSpace.md),
               CopperCta(
-                label: 'Abrir o baú',
+                label: context.l10n.chestOpen,
                 trailing: CinematicGlyph.gift,
                 dense: true,
                 onTap: () => _open(context),
@@ -262,7 +263,9 @@ class _DailyChestSheetState extends State<_DailyChestSheet>
                 children: [
                   const SizedBox(height: 28),
                   SectionLabel(
-                    reward == null ? 'Baú do dia' : _headline(reward.tier),
+                    reward == null
+                        ? context.l10n.chestDailyTitle
+                        : _headline(reward.tier),
                     color: accent,
                   ),
                   const SizedBox(height: 28),
@@ -301,13 +304,15 @@ class _DailyChestSheetState extends State<_DailyChestSheet>
                   const SizedBox(height: 22),
                   if (reward == null) ...[
                     Text(
-                      'A sequência de hoje guarda uma recompensa.',
+                      context.l10n.chestSheetTitle,
                       textAlign: TextAlign.center,
                       style: AppTypography.title(size: 20, color: a.text),
                     ),
                     const SizedBox(height: 10),
                     Text(
-                      _opening ? 'Abrindo…' : 'A revelação começa agora.',
+                      _opening
+                          ? context.l10n.chestOpening
+                          : context.l10n.chestRevealStarts,
                       textAlign: TextAlign.center,
                       style: AppTypography.body(
                         size: 14,
@@ -352,7 +357,7 @@ class _DailyChestSheetState extends State<_DailyChestSheet>
                     FadeTransition(
                       opacity: _reveal,
                       child: CopperCta(
-                        label: 'Continuar a jornada',
+                        label: context.l10n.commonContinue,
                         onTap: () => Navigator.pop(context),
                         trailing: CinematicGlyph.forward,
                         dense: true,
@@ -369,6 +374,6 @@ class _DailyChestSheetState extends State<_DailyChestSheet>
   }
 
   String _headline(PilgrimMedalTier tier) => tier == PilgrimMedalTier.mirra
-      ? 'Raríssimo'
-      : '${tierLabel(tier)} de hoje';
+      ? context.l10n.chestVeryRare
+      : context.l10n.chestTierToday(tierLabel(tier));
 }

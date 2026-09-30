@@ -1,3 +1,5 @@
+import '../l10n/l10n_global.dart';
+import '../l10n/question_overlay.dart';
 import '../utils/vf_claim.dart';
 import 'trail.dart';
 
@@ -69,20 +71,21 @@ enum ExerciseType {
   };
 
   String get labelPt => switch (this) {
-    ExerciseType.trueFalse => 'Verdadeiro / Falso',
-    ExerciseType.findInText => 'No texto',
-    ExerciseType.tap => 'Toque',
-    ExerciseType.connect => 'Conecte',
-    ExerciseType.textSupported => 'O texto diz',
-    ExerciseType.choice => 'Escolha',
-    ExerciseType.order => 'Ordene',
-    ExerciseType.match => 'Emparelhe',
-    ExerciseType.complete => 'Complete',
-    ExerciseType.insight => 'Insight',
-    ExerciseType.explain => 'Explique',
-    ExerciseType.classify => 'Classifique',
-    ExerciseType.review => 'Revisão',
-    ExerciseType.bestInterpretation => 'Interpretação',
+    ExerciseType.trueFalse => L10n.current.exerciseTypeTrueFalse,
+    ExerciseType.findInText => L10n.current.exerciseTypeFindInText,
+    ExerciseType.tap => L10n.current.exerciseTypeTap,
+    ExerciseType.connect => L10n.current.exerciseTypeConnect,
+    ExerciseType.textSupported => L10n.current.exerciseTypeTextSupported,
+    ExerciseType.choice => L10n.current.exerciseTypeChoice,
+    ExerciseType.order => L10n.current.exerciseTypeOrder,
+    ExerciseType.match => L10n.current.exerciseTypeMatch,
+    ExerciseType.complete => L10n.current.exerciseTypeComplete,
+    ExerciseType.insight => L10n.current.exerciseTypeInsight,
+    ExerciseType.explain => L10n.current.exerciseTypeExplain,
+    ExerciseType.classify => L10n.current.exerciseTypeClassify,
+    ExerciseType.review => L10n.current.exerciseTypeReview,
+    ExerciseType.bestInterpretation =>
+      L10n.current.exerciseTypeBestInterpretation,
   };
 
   bool get isPlayable => switch (this) {
@@ -158,6 +161,9 @@ class Exercise {
   final List<QuestionOption> matchLeft;
   final List<QuestionOption> matchRight;
 
+  /// Trecho literal do palco que prova a resposta — acende no feedback.
+  final String? evidenceSpan;
+
   const Exercise({
     required this.id,
     required this.type,
@@ -183,6 +189,7 @@ class Exercise {
     this.correctPairs = const {},
     this.matchLeft = const [],
     this.matchRight = const [],
+    this.evidenceSpan,
   });
 
   /// Há campo textual/herói além da pergunta (texto-tarefa).
@@ -304,8 +311,8 @@ class Exercise {
       return text;
     }
     return switch (type) {
-      ExerciseType.order => 'Monte a sequência.',
-      ExerciseType.match => 'Ligue cada par.',
+      ExerciseType.order => L10n.current.exerciseCueOrder,
+      ExerciseType.match => L10n.current.exerciseCueMatch,
       _ => '',
     };
   }
@@ -329,6 +336,35 @@ class Exercise {
     return null;
   }
 
+  /// Resposta certa em texto — aparece quando o erro revela a resposta.
+  String? get revealText {
+    String? textOf(String id, List<QuestionOption> pool) {
+      for (final o in pool) {
+        if (o.id == id && o.text.trim().isNotEmpty) return o.text.trim();
+      }
+      return null;
+    }
+
+    if (type == ExerciseType.order) {
+      final ids = correctOrder.isNotEmpty
+          ? correctOrder
+          : correctAnswer.split(',').map((s) => s.trim()).toList();
+      final parts = [for (final id in ids) ?textOf(id, effectiveOptions)];
+      return parts.isEmpty ? null : parts.join(' → ');
+    }
+    if (type == ExerciseType.match && correctPairs.isNotEmpty) {
+      final left = matchLeft.isNotEmpty ? matchLeft : effectiveOptions;
+      final parts = [
+        for (final e in correctPairs.entries)
+          if (textOf(e.key, left) != null &&
+              textOf(e.value, matchRight) != null)
+            '${textOf(e.key, left)} — ${textOf(e.value, matchRight)}',
+      ];
+      return parts.isEmpty ? null : parts.join('\n');
+    }
+    return correctOptionText;
+  }
+
   /// Verso no palco do complete: trecho com a lacuna no lugar da resposta.
   String? clozeStageText({String? fallbackPassage}) {
     if (!usesCompletePalco) return null;
@@ -340,44 +376,48 @@ class Exercise {
   }
 
   String get instructionVerb => switch (type) {
-    ExerciseType.trueFalse => 'Julgue',
+    ExerciseType.trueFalse => L10n.current.exerciseVerbJudge,
     ExerciseType.tap || ExerciseType.findInText =>
-      (passageA != null && passageB != null) ? 'Conecte' : 'Toque',
-    ExerciseType.order => 'Ordene',
-    ExerciseType.complete => 'Complete',
-    ExerciseType.connect || ExerciseType.match => 'Conecte',
+      (passageA != null && passageB != null)
+          ? L10n.current.exerciseTypeConnect
+          : L10n.current.exerciseTypeTap,
+    ExerciseType.order => L10n.current.exerciseTypeOrder,
+    ExerciseType.complete => L10n.current.exerciseTypeComplete,
+    ExerciseType.connect ||
+    ExerciseType.match => L10n.current.exerciseTypeConnect,
     ExerciseType.choice ||
     ExerciseType.textSupported ||
-    ExerciseType.bestInterpretation => 'Escolha',
-    _ => 'Responda',
+    ExerciseType.bestInterpretation => L10n.current.exerciseTypeChoice,
+    _ => L10n.current.exerciseVerbAnswer,
   };
 
   /// Título do ato — o objeto da ação, não só o verbo.
   String get instructionTitle => switch (type) {
-    ExerciseType.trueFalse => 'Julgue o versículo',
+    ExerciseType.trueFalse => L10n.current.exerciseTitleTrueFalse,
     ExerciseType.tap || ExerciseType.findInText =>
       (passageA != null && passageB != null)
-          ? 'Conecte os trechos'
-          : 'Toque a palavra',
-    ExerciseType.order => 'Ordene os fatos',
-    ExerciseType.complete => 'Complete o versículo',
-    ExerciseType.connect || ExerciseType.match => 'Conecte os trechos',
+          ? L10n.current.exerciseTitleConnect
+          : L10n.current.exerciseTitleTap,
+    ExerciseType.order => L10n.current.exerciseTitleOrder,
+    ExerciseType.complete => L10n.current.exerciseTitleComplete,
+    ExerciseType.connect ||
+    ExerciseType.match => L10n.current.exerciseTitleConnect,
     ExerciseType.choice ||
     ExerciseType.textSupported ||
-    ExerciseType.bestInterpretation => 'Escolha a resposta',
-    _ => 'Responda',
+    ExerciseType.bestInterpretation => L10n.current.exerciseTitleChoose,
+    _ => L10n.current.exerciseVerbAnswer,
   };
 
   /// Rótulo pequeno acima do enunciado no topo.
   String get taskPromptLabel => switch (type) {
-    ExerciseType.trueFalse => 'Afirmação',
-    ExerciseType.order => 'Sequência',
+    ExerciseType.trueFalse => L10n.current.exerciseLabelClaim,
+    ExerciseType.order => L10n.current.exerciseLabelSequence,
     ExerciseType.tap ||
     ExerciseType.findInText ||
-    ExerciseType.complete => 'Palavra',
-    ExerciseType.connect => 'Ponte',
-    ExerciseType.match => 'Pares',
-    _ => 'Pergunta',
+    ExerciseType.complete => L10n.current.exerciseLabelWord,
+    ExerciseType.connect => L10n.current.exerciseLabelBridge,
+    ExerciseType.match => L10n.current.exerciseLabelPairs,
+    _ => L10n.current.exerciseLabelQuestion,
   };
 
   /// Há enunciado para o topo — o palco fica só com o texto.
@@ -460,9 +500,9 @@ class Exercise {
 
     var options = parseOptions(json['options'] ?? json['items']);
     if (type == ExerciseType.trueFalse && options.isEmpty) {
-      options = const [
-        QuestionOption(id: 'true', text: 'Verdadeiro'),
-        QuestionOption(id: 'false', text: 'Falso'),
+      options = [
+        QuestionOption(id: 'true', text: QuestionOverlay.instance.trueLabel),
+        QuestionOption(id: 'false', text: QuestionOverlay.instance.falseLabel),
       ];
     }
 
@@ -543,6 +583,7 @@ class Exercise {
       correctPairs: correctPairs,
       matchLeft: parseOptions(json['matchLeft'] ?? json['left']),
       matchRight: parseOptions(json['matchRight'] ?? json['right']),
+      evidenceSpan: json['evidenceSpan'] as String?,
     );
   }
 
@@ -633,10 +674,12 @@ class Exercise {
 
   String feedbackFor(String selectedId, {required bool correct}) {
     if (type.isRevealOnly) {
-      return prompt.trim().isEmpty ? 'Seguir.' : '';
+      return prompt.trim().isEmpty ? L10n.current.feedbackFollow : '';
     }
     if (correct) {
-      return feedbackCorrect.trim().isEmpty ? 'Isso.' : feedbackCorrect.trim();
+      return feedbackCorrect.trim().isEmpty
+          ? L10n.current.feedbackCheer1
+          : feedbackCorrect.trim();
     }
     final specific = feedbackWrong[selectedId] ?? feedbackWrong['default'];
     if (specific != null && specific.trim().isNotEmpty) {
@@ -645,7 +688,7 @@ class Exercise {
     if (retryHint != null && retryHint!.trim().isNotEmpty) {
       return retryHint!.trim();
     }
-    return 'Tente de novo.';
+    return L10n.current.feedbackTryAgain;
   }
 
   static String _norm(String s) =>

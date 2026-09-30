@@ -1,10 +1,10 @@
 /// Divisões canônicas (ordem protestante) — Pentateuco, Históricos, etc.
 library;
 
+import '../l10n/l10n_global.dart';
+
 class BibleCanonGroup {
   final String id;
-  final String title;
-  final String blurb;
 
   /// Índices inclusivos no cânon de 66 livros (0-based).
   final int startIndex;
@@ -12,13 +12,39 @@ class BibleCanonGroup {
 
   const BibleCanonGroup({
     required this.id,
-    required this.title,
-    required this.blurb,
     required this.startIndex,
     required this.endIndex,
   });
 
   int get count => endIndex - startIndex + 1;
+
+  String get title => switch (id) {
+    'pentateuco' => L10n.current.canonPentateucoTitle,
+    'historicos' => L10n.current.canonHistoricosTitle,
+    'poeticos' => L10n.current.canonPoeticosTitle,
+    'profetas-maiores' => L10n.current.canonProfetasMaioresTitle,
+    'profetas-menores' => L10n.current.canonProfetasMenoresTitle,
+    'evangelhos' => L10n.current.canonEvangelhosTitle,
+    'historia-nt' => L10n.current.canonHistoriaNtTitle,
+    'paulinas' => L10n.current.canonPaulinasTitle,
+    'gerais' => L10n.current.canonGeraisTitle,
+    'profecia' => L10n.current.canonProfeciaTitle,
+    _ => L10n.current.canonPentateucoTitle,
+  };
+
+  String get blurb => switch (id) {
+    'pentateuco' => L10n.current.canonPentateucoBlurb,
+    'historicos' => L10n.current.canonHistoricosBlurb,
+    'poeticos' => L10n.current.canonPoeticosBlurb,
+    'profetas-maiores' => L10n.current.canonProfetasMaioresBlurb,
+    'profetas-menores' => L10n.current.canonProfetasMenoresBlurb,
+    'evangelhos' => L10n.current.canonEvangelhosBlurb,
+    'historia-nt' => L10n.current.canonHistoriaNtBlurb,
+    'paulinas' => L10n.current.canonPaulinasBlurb,
+    'gerais' => L10n.current.canonGeraisBlurb,
+    'profecia' => L10n.current.canonProfeciaBlurb,
+    _ => L10n.current.canonPentateucoBlurb,
+  };
 }
 
 class BibleCanonicalGroups {
@@ -28,72 +54,52 @@ class BibleCanonicalGroups {
     // Antigo Testamento (0–38)
     BibleCanonGroup(
       id: 'pentateuco',
-      title: 'Pentateuco',
-      blurb: 'A Lei — Gênesis a Deuteronômio',
       startIndex: 0,
       endIndex: 4,
     ),
     BibleCanonGroup(
       id: 'historicos',
-      title: 'Históricos',
-      blurb: 'Josué a Ester — a história de Israel',
       startIndex: 5,
       endIndex: 16,
     ),
     BibleCanonGroup(
       id: 'poeticos',
-      title: 'Poéticos e sabedoria',
-      blurb: 'Jó a Cantares',
       startIndex: 17,
       endIndex: 21,
     ),
     BibleCanonGroup(
       id: 'profetas-maiores',
-      title: 'Profetas maiores',
-      blurb: 'Isaías a Daniel',
       startIndex: 22,
       endIndex: 26,
     ),
     BibleCanonGroup(
       id: 'profetas-menores',
-      title: 'Profetas menores',
-      blurb: 'Oséias a Malaquias',
       startIndex: 27,
       endIndex: 38,
     ),
     // Novo Testamento (39–65)
     BibleCanonGroup(
       id: 'evangelhos',
-      title: 'Evangelhos',
-      blurb: 'Mateus a João — a vida de Jesus',
       startIndex: 39,
       endIndex: 42,
     ),
     BibleCanonGroup(
       id: 'historia-nt',
-      title: 'História',
-      blurb: 'Atos dos Apóstolos',
       startIndex: 43,
       endIndex: 43,
     ),
     BibleCanonGroup(
       id: 'paulinas',
-      title: 'Cartas paulinas',
-      blurb: 'Romanos a Filemom',
       startIndex: 44,
       endIndex: 56,
     ),
     BibleCanonGroup(
       id: 'gerais',
-      title: 'Cartas gerais',
-      blurb: 'Hebreus a Judas',
       startIndex: 57,
       endIndex: 64,
     ),
     BibleCanonGroup(
       id: 'profecia',
-      title: 'Profecia',
-      blurb: 'Apocalipse',
       startIndex: 65,
       endIndex: 65,
     ),

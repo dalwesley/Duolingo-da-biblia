@@ -1,0 +1,450 @@
+{
+  "settingsTitle": {
+    "pt": "Ajustes",
+    "en": "Settings",
+    "es": "Ajustes"
+  },
+  "settingsSubtitle": {
+    "pt": "Conta, aparência e lembretes",
+    "en": "Account, appearance and reminders",
+    "es": "Cuenta, apariencia y recordatorios"
+  },
+  "settingsUpToDate": {
+    "pt": "Você está na versão mais recente · {version}",
+    "en": "You're on the latest version · {version}",
+    "es": "Tienes la versión más reciente · {version}",
+    "placeholders": {
+      "version": "String"
+    }
+  },
+  "settingsGroupProgress": {
+    "pt": "Progresso",
+    "en": "Progress",
+    "es": "Progreso"
+  },
+  "settingsRhythmTitle": {
+    "pt": "Ritmo diário",
+    "en": "Daily pace",
+    "es": "Ritmo diario"
+  },
+  "settingsRhythmSubtitle": {
+    "pt": "Quantas cenas cabem no seu dia.",
+    "en": "How many scenes fit in your day.",
+    "es": "Cuántas escenas caben en tu día."
+  },
+  "settingsStreakGoalLabel": {
+    "pt": "Compromisso de sequência",
+    "en": "Streak commitment",
+    "es": "Compromiso de racha"
+  },
+  "settingsStreakGoalHint": {
+    "pt": "Até quantos dias você quer levar sua sequência.",
+    "en": "How many days you want to keep your streak going.",
+    "es": "Hasta cuántos días quieres llevar tu racha."
+  },
+  "settingsDays": {
+    "pt": "{count, plural, =1{1 dia} other{{count} dias}}",
+    "en": "{count, plural, =1{1 day} other{{count} days}}",
+    "es": "{count, plural, =1{1 día} other{{count} días}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "settingsGroupDevice": {
+    "pt": "Neste aparelho",
+    "en": "On this device",
+    "es": "En este dispositivo"
+  },
+  "settingsGroupAccountData": {
+    "pt": "Conta e dados",
+    "en": "Account and data",
+    "es": "Cuenta y datos"
+  },
+  "settingsRemindersTitle": {
+    "pt": "Lembretes",
+    "en": "Reminders",
+    "es": "Recordatorios"
+  },
+  "settingsDailyReminder": {
+    "pt": "Lembrete diário",
+    "en": "Daily reminder",
+    "es": "Recordatorio diario"
+  },
+  "settingsReminderAt": {
+    "pt": "Às {hour}h · toque para mudar",
+    "en": "At {hour}:00 · tap to change",
+    "es": "A las {hour}:00 · toca para cambiar",
+    "placeholders": {
+      "hour": "int"
+    }
+  },
+  "settingsSounds": {
+    "pt": "Sons",
+    "en": "Sounds",
+    "es": "Sonidos"
+  },
+  "settingsSoundsSubtitle": {
+    "pt": "Efeitos nas cenas",
+    "en": "Effects in scenes",
+    "es": "Efectos en las escenas"
+  },
+  "settingsFontSmall": {
+    "pt": "Pequeno",
+    "en": "Small",
+    "es": "Pequeño"
+  },
+  "settingsFontMedium": {
+    "pt": "Médio",
+    "en": "Medium",
+    "es": "Mediano"
+  },
+  "settingsFontLarge": {
+    "pt": "Grande",
+    "en": "Large",
+    "es": "Grande"
+  },
+  "settingsFontExtra": {
+    "pt": "Extra",
+    "en": "Extra large",
+    "es": "Extra"
+  },
+  "settingsGenesisTitle": {
+    "pt": "Gênesis 1–11",
+    "en": "Genesis 1–11",
+    "es": "Génesis 1–11"
+  },
+  "settingsAppearanceTitle": {
+    "pt": "Aparência",
+    "en": "Appearance",
+    "es": "Apariencia"
+  },
+  "settingsThemeLabel": {
+    "pt": "Tema",
+    "en": "Theme",
+    "es": "Tema"
+  },
+  "settingsThemeHint": {
+    "pt": "Um tema fixo, ou automático conforme o horário.",
+    "en": "A fixed theme, or automatic by time of day.",
+    "es": "Un tema fijo, o automático según la hora."
+  },
+  "settingsTextSize": {
+    "pt": "Tamanho do texto",
+    "en": "Text size",
+    "es": "Tamaño del texto"
+  },
+  "settingsTextSizeHint": {
+    "pt": "O versículo abaixo muda junto.",
+    "en": "The verse below changes with it.",
+    "es": "El versículo de abajo cambia con él."
+  },
+  "settingsSampleVerse": {
+    "pt": "No princípio, criou Deus os céus e a terra.",
+    "en": "In the beginning, God created the heavens and the earth.",
+    "es": "En el principio creó Dios los cielos y la tierra."
+  },
+  "settingsThemeLight": {
+    "pt": "Claro",
+    "en": "Light",
+    "es": "Claro"
+  },
+  "settingsThemeMedium": {
+    "pt": "Médio",
+    "en": "Medium",
+    "es": "Medio"
+  },
+  "settingsThemeDark": {
+    "pt": "Escuro",
+    "en": "Dark",
+    "es": "Oscuro"
+  },
+  "settingsThemeAuto": {
+    "pt": "Automático",
+    "en": "Automatic",
+    "es": "Automático"
+  },
+  "settingsThemeCaptionLight": {
+    "pt": "Sempre claro",
+    "en": "Always light",
+    "es": "Siempre claro"
+  },
+  "settingsThemeCaptionMedium": {
+    "pt": "Sempre em meia-luz",
+    "en": "Always dim",
+    "es": "Siempre en penumbra"
+  },
+  "settingsThemeCaptionDark": {
+    "pt": "Sempre escuro",
+    "en": "Always dark",
+    "es": "Siempre oscuro"
+  },
+  "settingsThemeCaptionAuto": {
+    "pt": "Muda com o horário",
+    "en": "Changes with the time of day",
+    "es": "Cambia con la hora"
+  },
+  "settingsThemeSemantics": {
+    "pt": "Tema da tela",
+    "en": "Screen theme",
+    "es": "Tema de la pantalla"
+  },
+  "settingsThemeSemanticsHint": {
+    "pt": "Toque ou deslize para escolher",
+    "en": "Tap or swipe to choose",
+    "es": "Toca o desliza para elegir"
+  },
+  "settingsAccount": {
+    "pt": "Conta",
+    "en": "Account",
+    "es": "Cuenta"
+  },
+  "settingsInCloud": {
+    "pt": "Na nuvem",
+    "en": "In the cloud",
+    "es": "En la nube"
+  },
+  "settingsDeviceOnly": {
+    "pt": "Só neste aparelho",
+    "en": "Only on this device",
+    "es": "Solo en este dispositivo"
+  },
+  "settingsSignOutFailed": {
+    "pt": "Não foi possível sair. Tente de novo.",
+    "en": "Couldn't sign out. Try again.",
+    "es": "No se pudo cerrar sesión. Inténtalo de nuevo."
+  },
+  "settingsBackupSubject": {
+    "pt": "Backup Stway",
+    "en": "Stway backup",
+    "es": "Copia de seguridad de Stway"
+  },
+  "settingsPasteBackupFirst": {
+    "pt": "Cole o backup na área de transferência primeiro.",
+    "en": "Copy a backup to the clipboard first.",
+    "es": "Copia primero una copia de seguridad al portapapeles."
+  },
+  "settingsBackupInvalid": {
+    "pt": "Backup inválido.",
+    "en": "Invalid backup.",
+    "es": "Copia de seguridad no válida."
+  },
+  "settingsProgressRestored": {
+    "pt": "Progresso restaurado.",
+    "en": "Progress restored.",
+    "es": "Progreso restaurado."
+  },
+  "settingsManualBackup": {
+    "pt": "Backup manual",
+    "en": "Manual backup",
+    "es": "Copia de seguridad manual"
+  },
+  "settingsManualBackupSubtitle": {
+    "pt": "Exportar ou restaurar o progresso",
+    "en": "Export or restore your progress",
+    "es": "Exportar o restaurar el progreso"
+  },
+  "settingsLastShort": {
+    "pt": "Último · {date}",
+    "en": "Last · {date}",
+    "es": "Última · {date}",
+    "placeholders": {
+      "date": "String"
+    }
+  },
+  "settingsSignOut": {
+    "pt": "Sair da conta",
+    "en": "Sign out",
+    "es": "Cerrar sesión"
+  },
+  "settingsSignOutSubtitle": {
+    "pt": "Limpa este aparelho · o progresso fica na nuvem",
+    "en": "Clears this device · your progress stays in the cloud",
+    "es": "Limpia este dispositivo · el progreso queda en la nube"
+  },
+  "settingsDeleteProgress": {
+    "pt": "Apagar progresso",
+    "en": "Delete progress",
+    "es": "Borrar progreso"
+  },
+  "settingsDeleteProgressSubtitle": {
+    "pt": "Apaga o progresso de vez · pede confirmação",
+    "en": "Deletes your progress for good · asks to confirm",
+    "es": "Borra el progreso para siempre · pide confirmación"
+  },
+  "settingsBackupSheetBody": {
+    "pt": "Exporte o progresso como texto, ou copie um backup e toque em restaurar.",
+    "en": "Export your progress as text, or copy a backup and tap restore.",
+    "es": "Exporta el progreso como texto, o copia una copia de seguridad y toca restaurar."
+  },
+  "settingsLastBackup": {
+    "pt": "Último backup · {date}",
+    "en": "Last backup · {date}",
+    "es": "Última copia · {date}",
+    "placeholders": {
+      "date": "String"
+    }
+  },
+  "settingsDeviceId": {
+    "pt": "Dispositivo · {id}",
+    "en": "Device · {id}",
+    "es": "Dispositivo · {id}",
+    "placeholders": {
+      "id": "String"
+    }
+  },
+  "settingsExport": {
+    "pt": "Exportar",
+    "en": "Export",
+    "es": "Exportar"
+  },
+  "settingsRestoreFromClipboard": {
+    "pt": "Restaurar da área de transferência",
+    "en": "Restore from clipboard",
+    "es": "Restaurar desde el portapapeles"
+  },
+  "settingsAbout": {
+    "pt": "Sobre",
+    "en": "About",
+    "es": "Acerca de"
+  },
+  "settingsCreditsTitle": {
+    "pt": "Traduções e créditos",
+    "en": "Translations and credits",
+    "es": "Traducciones y créditos"
+  },
+  "settingsCreditsSubtitle": {
+    "pt": "Textos bíblicos e ferramentas de estudo usados no Stway.",
+    "en": "Bible texts and study tools used in Stway.",
+    "es": "Textos bíblicos y herramientas de estudio usados en Stway."
+  },
+  "settingsStudyAttribution": {
+    "pt": "Estudo (Strong) — {attribution}",
+    "en": "Study (Strong's) — {attribution}",
+    "es": "Estudio (Strong) — {attribution}",
+    "placeholders": {
+      "attribution": "String"
+    }
+  },
+  "settingsAboutTitle": {
+    "pt": "Sobre o Stway",
+    "en": "About Stway",
+    "es": "Acerca de Stway"
+  },
+  "settingsAboutSubtitle": {
+    "pt": "Aprenda a Bíblia em cenas curtas, no seu ritmo.",
+    "en": "Learn the Bible in short scenes, at your own pace.",
+    "es": "Aprende la Biblia en escenas cortas, a tu ritmo."
+  },
+  "settingsVersion": {
+    "pt": "Versão",
+    "en": "Version",
+    "es": "Versión"
+  },
+  "settingsCheckingUpdate": {
+    "pt": "Procurando atualização…",
+    "en": "Checking for updates…",
+    "es": "Buscando actualización…"
+  },
+  "settingsCheck": {
+    "pt": "Verificar",
+    "en": "Check",
+    "es": "Verificar"
+  },
+  "settingsReplayIntro": {
+    "pt": "Rever introdução",
+    "en": "Replay intro",
+    "es": "Ver la introducción"
+  },
+  "settingsReplayIntroSubtitle": {
+    "pt": "A apresentação do começo, de novo",
+    "en": "The opening walkthrough, again",
+    "es": "La presentación del inicio, otra vez"
+  },
+  "settingsCreditsRowSubtitle": {
+    "pt": "Textos bíblicos e estudo",
+    "en": "Bible texts and study",
+    "es": "Textos bíblicos y estudio"
+  },
+  "settingsSupport": {
+    "pt": "Ajude a continuar",
+    "en": "Help keep it going",
+    "es": "Ayuda a continuar"
+  },
+  "settingsSubscriptionActive": {
+    "pt": "Assinatura ativa",
+    "en": "Subscription active",
+    "es": "Suscripción activa"
+  },
+  "settingsPlusTeaser": {
+    "pt": "Mais espaço para a companhia",
+    "en": "More room for your companion",
+    "es": "Más espacio para tu compañía"
+  },
+  "settingsSignedInAs": {
+    "pt": "Conectado como {email}",
+    "en": "Signed in as {email}",
+    "es": "Conectado como {email}",
+    "placeholders": {
+      "email": "String"
+    }
+  },
+  "settingsProgressInCloud": {
+    "pt": "Progresso na nuvem",
+    "en": "Progress in the cloud",
+    "es": "Progreso en la nube"
+  },
+  "settingsSignInAgain": {
+    "pt": "Entre de novo para sincronizar o progresso.",
+    "en": "Sign in again to sync your progress.",
+    "es": "Inicia sesión de nuevo para sincronizar el progreso."
+  },
+  "settingsSavedInCloud": {
+    "pt": "Salvo na nuvem · {date}",
+    "en": "Saved to the cloud · {date}",
+    "es": "Guardado en la nube · {date}",
+    "placeholders": {
+      "date": "String"
+    }
+  },
+  "settingsYourName": {
+    "pt": "Seu nome",
+    "en": "Your name",
+    "es": "Tu nombre"
+  },
+  "settingsSaveName": {
+    "pt": "Salvar nome",
+    "en": "Save name",
+    "es": "Guardar nombre"
+  },
+  "settingsPaceLight": {
+    "pt": "Leve",
+    "en": "Light",
+    "es": "Ligero"
+  },
+  "settingsPaceSteady": {
+    "pt": "Firme",
+    "en": "Steady",
+    "es": "Firme"
+  },
+  "settingsPaceIntense": {
+    "pt": "Intenso",
+    "en": "Intense",
+    "es": "Intenso"
+  },
+  "settingsScenes": {
+    "pt": "{count, plural, =1{1 cena} other{{count} cenas}}",
+    "en": "{count, plural, =1{1 scene} other{{count} scenes}}",
+    "es": "{count, plural, =1{1 escena} other{{count} escenas}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "settingsScenesPerDay": {
+    "pt": "{count, plural, =1{1 cena por dia} other{{count} cenas por dia}}",
+    "en": "{count, plural, =1{1 scene a day} other{{count} scenes a day}}",
+    "es": "{count, plural, =1{1 escena al día} other{{count} escenas al día}}",
+    "placeholders": {
+      "count": "int"
+    }
+  }
+}

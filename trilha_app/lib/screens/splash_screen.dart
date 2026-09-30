@@ -18,6 +18,7 @@ import '../widgets/tilt_star_sky.dart';
 import 'login_screen.dart';
 import 'main_shell.dart';
 import 'onboarding_screen.dart';
+import '../l10n/app_language.dart';
 
 /// Abertura STWAY — impacto de jogo + promessa de aprendizado.
 class SplashScreen extends StatefulWidget {
@@ -273,7 +274,7 @@ class _SplashScreenState extends State<SplashScreen>
                           const StwayTagline(size: 11),
                           const SizedBox(height: 10),
                           Text(
-                            'A Bíblia, cena a cena',
+                            context.l10n.splashSlogan,
                             textAlign: TextAlign.center,
                             style: AppTypography.title(
                               size: 16,
@@ -318,7 +319,7 @@ class _SplashScreenState extends State<SplashScreen>
                         ),
                         const SizedBox(height: 14),
                         Text(
-                          'Preparando sua jornada…',
+                          context.l10n.splashPreparing,
                           style: AppTypography.label(
                             size: 10,
                             letterSpacing: 1.4,

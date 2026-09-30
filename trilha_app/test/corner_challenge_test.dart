@@ -379,7 +379,7 @@ void main() {
       final invite = _challenge(status: CornerStatus.pending);
       expect(
         CornerCopy.stripLine(live: invite, uid: me, days: 3, won: 2, lost: 1),
-        'Natã te convidou',
+        'Natã te chamou',
       );
     });
 

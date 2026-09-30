@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../l10n/app_language.dart';
+import '../l10n/l10n_global.dart';
 import '../models/study_room.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -20,14 +22,15 @@ SeatState seatStateOf(RoomMember m) {
 }
 
 String seatLabel(RoomMember m) {
+  final l10n = L10n.current;
   return switch (seatStateOf(m)) {
-    SeatState.today => 'estudou hoje',
-    SeatState.week => 'estudou nesta semana',
+    SeatState.today => l10n.groupSeatToday,
+    SeatState.week => l10n.groupSeatWeek,
     SeatState.quiet =>
       m.daysSinceWalk() == null
-          ? 'ainda não estudou'
-          : 'sem estudar há ${m.daysSinceWalk()} dias',
-    SeatState.idle => 'ainda não estudou nesta semana',
+          ? l10n.groupSeatNever
+          : l10n.groupDaysAway(m.daysSinceWalk()!),
+    SeatState.idle => l10n.groupSeatIdle,
   };
 }
 
@@ -153,12 +156,14 @@ class _RosterRow extends StatelessWidget {
     final days = member.daysThisWeek;
     final quiet = state == SeatState.quiet;
     final idle = member.daysSinceWalk();
-    final name = member.isUser ? 'Você' : member.name;
+    final l10n = context.l10n;
+    final name = member.isUser ? l10n.commonYou : member.name;
 
     final caption = switch (state) {
-      SeatState.today => 'hoje',
+      SeatState.today => l10n.groupCaptionToday,
       SeatState.week => null,
-      SeatState.quiet => idle == null ? 'ainda não' : 'há $idle dias',
+      SeatState.quiet =>
+        idle == null ? l10n.groupCaptionNotYet : l10n.groupDaysAway(idle),
       SeatState.idle => null,
     };
 
@@ -178,7 +183,7 @@ class _RosterRow extends StatelessWidget {
 
     return Semantics(
       button: onTap != null,
-      label: '$name, $days ${days == 1 ? 'dia' : 'dias'} nesta semana',
+      label: l10n.groupRosterSemantics(name, days),
       child: InkWell(
         onTap: onTap == null
             ? null
@@ -302,7 +307,7 @@ class _RosterRow extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      days == 1 ? 'dia' : 'dias',
+                      l10n.groupDayUnit(days).trim(),
                       style: AppTypography.label(
                         size: 10,
                         letterSpacing: 0.4,

@@ -1,6 +1,9 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
+import '../theme/app_theme.dart';
+import 'cinematic_icon.dart';
+
 /// Chuva de 👋 subindo — o aceno chegou em casa.
 class WaveHandsOverlay extends StatefulWidget {
   final bool active;
@@ -123,7 +126,12 @@ class _WaveHandView extends StatelessWidget {
         opacity: fade.clamp(0.0, 0.95),
         child: Transform.rotate(
           angle: angle,
-          child: Text('👋', style: TextStyle(fontSize: hand.size, height: 1)),
+          child: CinematicIcon(
+            glyph: CinematicGlyph.heart,
+            size: hand.size,
+            accent: AppColors.accent,
+            framed: false,
+          ),
         ),
       ),
     );

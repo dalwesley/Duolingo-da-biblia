@@ -3,6 +3,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../data/trail_repository.dart';
+import '../l10n/app_language.dart';
 import '../models/trail.dart';
 import '../models/trail_catalog.dart';
 import '../services/progress_service.dart';
@@ -162,7 +163,7 @@ class _TrilhasScreenState extends State<TrilhasScreen>
     if (!mounted || !ok) return;
     showAppToastFor(
       context,
-      message: 'Sugestão guardada. Obrigado por abrir o caminho.',
+      message: context.l10n.suggestionTrailSent,
       glyph: CinematicGlyph.spark,
     );
   }
@@ -172,7 +173,7 @@ class _TrilhasScreenState extends State<TrilhasScreen>
     if (!mounted || !ok) return;
     showAppToastFor(
       context,
-      message: 'Sugestão guardada. Obrigado por indicar o autor.',
+      message: context.l10n.suggestionAuthorSent,
       glyph: CinematicGlyph.people,
     );
   }
@@ -195,15 +196,15 @@ class _TrilhasScreenState extends State<TrilhasScreen>
             mainAxisSize: MainAxisSize.min,
             children: [
               const SizedBox(height: AppSpace.sm),
-              const AppSheetHeader(
-                title: 'Teologia',
+              AppSheetHeader(
+                title: TrailRealm.teologia.label,
                 subtitle:
-                    'Hermenêutica, línguas originais e dogmática — em preparação.',
+                    ctx.l10n.realmTeologiaSoonBody,
                 center: true,
               ),
               const SizedBox(height: AppSpace.lg),
               SoftBadge(
-                text: 'Em breve',
+                text: ctx.l10n.commonComingSoon,
                 accent: visuals.accent,
                 textColor: visuals.accent,
               ),
@@ -302,19 +303,21 @@ class _TrilhasScreenState extends State<TrilhasScreen>
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Text(
-                  'As cenas ainda não chegaram',
+                  context.l10n.trailsEmptyTitle,
                   textAlign: TextAlign.center,
                   style: AppTypography.title(size: 18, color: a.text),
                 ),
                 const SizedBox(height: AppSpace.md),
                 Text(
-                  'O currículo baixa na primeira abertura. Se a rede oscilar, toque para tentar de novo.',
+                  context.l10n.trailsEmptyBody,
                   textAlign: TextAlign.center,
                   style: AppTypography.body(size: 14, color: a.textSecondary),
                 ),
                 const SizedBox(height: AppSpace.xxl),
                 CopperCta(
-                  label: _retryingCatalog ? 'Baixando…' : 'Tentar de novo',
+                  label: _retryingCatalog
+                      ? context.l10n.trailsDownloading
+                      : context.l10n.commonTryAgain,
                   onTap: _retryingCatalog ? null : _maybeShowOfflineDialog,
                   showArrow: false,
                 ),
@@ -402,9 +405,9 @@ class _TrilhasScreenState extends State<TrilhasScreen>
           ),
         _reveal(
           1,
-          const Padding(
-            padding: EdgeInsets.only(top: 4, bottom: AppSpace.lg),
-            child: _FilmChapterMark(label: 'Os caminhos'),
+          Padding(
+            padding: const EdgeInsets.only(top: 4, bottom: AppSpace.lg),
+            child: _FilmChapterMark(label: context.l10n.trailsAreasHeading),
           ),
         ),
         for (var i = 0; i < realms.length; i++)
@@ -559,14 +562,14 @@ class _NowPlayingStripState extends State<_NowPlayingStrip>
     final visuals = TrailVisuals.forTrail(widget.trail);
     final accent = visuals.accent;
     final label = widget.atRisk
-        ? 'Sequência cai em ${widget.countdown}'
-        : 'Em cena';
+        ? context.l10n.trailsStreakAtRisk(widget.countdown)
+        : context.l10n.trailsInProgress;
     final labelColor = widget.atRisk ? AppColors.ember : accent;
     final p = widget.progress;
 
     return Semantics(
       button: true,
-      label: 'Continuar · ${widget.mission.title}',
+      label: context.l10n.trailsContinueSemantics(widget.mission.localizedTitle),
       child: GestureDetector(
         onTapDown: (_) => setState(() => _pressed = true),
         onTapUp: (_) => setState(() => _pressed = false),
@@ -641,7 +644,7 @@ class _NowPlayingStripState extends State<_NowPlayingStrip>
                               SectionLabel(label, size: 10, color: labelColor),
                               const SizedBox(height: 4),
                               Text(
-                                widget.mission.title,
+                                widget.mission.localizedTitle,
                                 maxLines: 2,
                                 overflow: TextOverflow.ellipsis,
                                 style: AppTypography.title(
@@ -651,7 +654,11 @@ class _NowPlayingStripState extends State<_NowPlayingStrip>
                               ),
                               const SizedBox(height: 2),
                               Text(
-                                '${widget.trail.title} · ${p.done} de ${p.total} cenas',
+                                context.l10n.trailsLabeledScenesOf(
+                                  widget.trail.localizedTitle,
+                                  p.done,
+                                  p.total,
+                                ),
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
                                 style: AppTypography.body(
@@ -922,12 +929,15 @@ class _RealmPosterState extends State<_RealmPoster> {
     final stamps = locked ? const <_TrailStamp>[] : widget.info.stamps;
     final height = (featured ? 340.0 : 268.0) + (stamps.isEmpty ? 0 : 20);
     final progressLabel = locked
-        ? 'Em preparação'
+        ? context.l10n.commonComingSoon
         : widget.info.completedCount > 0
-        ? '${widget.info.completedCount} de ${widget.info.trailCount} trilhas'
+        ? context.l10n.trailsRealmTrailsDone(
+            widget.info.completedCount,
+            widget.info.trailCount,
+          )
         : widget.info.unlockedCount > 0
-        ? '${widget.info.unlockedCount} abertas'
-        : '${widget.info.trailCount} trilhas';
+        ? context.l10n.trailsRealmOpenCount(widget.info.unlockedCount)
+        : context.l10n.trailsRealmTrailCount(widget.info.trailCount);
     final scrollable = Scrollable.maybeOf(context);
     final act = widget.act - 1 < _romanActs.length
         ? _romanActs[widget.act - 1]
@@ -1066,7 +1076,7 @@ class _RealmPosterState extends State<_RealmPoster> {
                             Padding(
                               padding: const EdgeInsets.only(right: 10),
                               child: SectionLabel(
-                                'Em cena',
+                                context.l10n.journeyNow,
                                 size: 10,
                                 color: visuals.accent,
                               ),
@@ -1084,7 +1094,11 @@ class _RealmPosterState extends State<_RealmPoster> {
                             ),
                           ),
                           SectionLabel(
-                            locked ? 'Em breve' : 'Entrar',
+                            locked
+                                ? context.l10n.trailsLearnMore
+                                : (featured || widget.info.completedCount > 0
+                                      ? context.l10n.commonContinue
+                                      : context.l10n.commonStart),
                             color: visuals.accent,
                           ),
                           const SizedBox(width: 4),

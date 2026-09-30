@@ -1,3 +1,6 @@
+import 'package:intl/intl.dart';
+
+import '../l10n/l10n_global.dart';
 import '../widgets/cinematic_icon.dart';
 import 'caravan_pilgrim_profile.dart';
 import 'caravan_profile_prefs.dart';
@@ -40,13 +43,14 @@ class Recognition {
   });
 
   String get headline {
-    final name = fromName.trim().isEmpty ? 'Alguém' : fromName.trim();
+    final l = L10n.current;
+    final name = fromName.trim().isEmpty ? l.cornerSomeone : fromName.trim();
     if (kind == RecognitionKind.medal) {
       final title = medalTitleFor(subjectKey);
-      if (title == null) return '$name reconheceu uma medalha sua';
-      return '$name reconheceu a medalha $title';
+      if (title == null) return l.recognitionHeadlineMedalUnknown(name);
+      return l.recognitionHeadlineMedal(name, title);
     }
-    return '$name reconheceu a sua cena';
+    return l.recognitionHeadlineWalk(name);
   }
 
   /// O que foi visto, sem repetir quem enviou.
@@ -54,12 +58,14 @@ class Recognition {
     if (kind == RecognitionKind.walk) {
       return walkSubjectLabel(subjectKey);
     }
-    return medalTitleFor(subjectKey) ?? 'Uma medalha';
+    return medalTitleFor(subjectKey) ?? L10n.current.recognitionAMedal;
   }
 
   /// Linha completa para histórico: quem · o quê.
   String get historyLine {
-    final name = fromName.trim().isEmpty ? 'Alguém' : fromName.trim();
+    final name = fromName.trim().isEmpty
+        ? L10n.current.cornerSomeone
+        : fromName.trim();
     return '$name · $subjectLabel';
   }
 
@@ -110,36 +116,27 @@ List<RecognitionSenderGroup> groupRecognitionsBySender(List<Recognition> items) 
   ];
 }
 
-/// Cena do dia — data curta em PT.
+/// Cena do dia — data curta no idioma da interface.
 String walkSubjectLabel(String ymd) {
+  final l = L10n.current;
   final parts = ymd.split('-');
-  if (parts.length != 3) return 'A sua cena';
+  if (parts.length != 3) return l.recognitionYourScene;
   final y = int.tryParse(parts[0]);
   final m = int.tryParse(parts[1]);
   final d = int.tryParse(parts[2]);
-  if (y == null || m == null || d == null) return 'A sua cena';
-  const months = [
-    'jan',
-    'fev',
-    'mar',
-    'abr',
-    'mai',
-    'jun',
-    'jul',
-    'ago',
-    'set',
-    'out',
-    'nov',
-    'dez',
-  ];
-  if (m < 1 || m > 12) return 'A sua cena';
-  return 'Cena de $d ${months[m - 1]}';
+  if (y == null || m == null || d == null) return l.recognitionYourScene;
+  if (m < 1 || m > 12) return l.recognitionYourScene;
+  final date = DateFormat(
+    'd MMM',
+    l.localeName,
+  ).format(DateTime(y, m, d)).replaceAll('.', '');
+  return l.recognitionSceneOf(date);
 }
 
 /// Primeiro nome, curto, para o card de quem recebe.
 String recognitionFromName(String raw) {
   final trimmed = raw.trim().replaceAll(RegExp(r'\s+'), ' ');
-  if (trimmed.isEmpty) return 'Alguém';
+  if (trimmed.isEmpty) return L10n.current.cornerSomeone;
   final first = trimmed.split(' ').first;
   if (first.length <= 40) return first;
   return first.substring(0, 40);
@@ -265,10 +262,10 @@ String? medalTitleFor(String id, {DateTime? now}) {
   if (id.startsWith('track:trail:')) {
     final index = int.tryParse(id.split(':').last);
     return switch (index) {
-      0 => 'Primeiro passo',
-      1 => 'Semente',
-      2 => 'Caminhada',
-      3 => 'Peregrino',
+      0 => L10n.current.recognitionMedalFirstScene,
+      1 => L10n.current.recognitionMedalObservation,
+      2 => L10n.current.recognitionMedalUnderstanding,
+      3 => L10n.current.recognitionMedalInterpretation,
       _ => null,
     };
   }

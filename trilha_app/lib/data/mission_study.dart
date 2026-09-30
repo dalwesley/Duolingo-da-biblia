@@ -1,3 +1,4 @@
+import '../l10n/study_overlay.dart';
 import '../services/content_catalog_service.dart';
 
 /// Conteúdo de estudo por missão — profundidade além do quiz.
@@ -26,6 +27,7 @@ class MissionStudy {
   final String focusQuestion;
   final List<String> reflectionPrompts;
   final List<RelatedVerse> relatedVerses;
+  final String? slug;
 
   const MissionStudy({
     required this.passageRef,
@@ -36,9 +38,10 @@ class MissionStudy {
     required this.focusQuestion,
     required this.reflectionPrompts,
     this.relatedVerses = const [],
+    this.slug,
   });
 
-  factory MissionStudy.fromMap(Map<String, dynamic> remote) {
+  factory MissionStudy.fromMap(Map<String, dynamic> remote, {String? slug}) {
     return MissionStudy(
       passageRef: remote['passageRef'] as String? ?? '',
       passageText: remote['passageText'] as String? ?? '',
@@ -54,14 +57,39 @@ class MissionStudy {
           .map((e) => RelatedVerse.fromMap(Map<String, dynamic>.from(e)))
           .where((v) => v.reference.isNotEmpty)
           .toList(),
+      slug: slug ?? remote['slug'] as String?,
     );
+  }
+
+  String get localizedContext {
+    final s = slug;
+    if (s == null) return context;
+    return StudyOverlay.instance.field(s, 'context') ?? context;
+  }
+
+  String get localizedFocusQuestion {
+    final s = slug;
+    if (s == null) return focusQuestion;
+    return StudyOverlay.instance.field(s, 'focusQuestion') ?? focusQuestion;
+  }
+
+  String get localizedKeywordGloss {
+    final s = slug;
+    if (s == null) return keywordGloss;
+    return StudyOverlay.instance.field(s, 'keywordGloss') ?? keywordGloss;
+  }
+
+  List<String> get localizedReflectionPrompts {
+    final s = slug;
+    if (s == null) return reflectionPrompts;
+    return StudyOverlay.instance.reflectionPrompts(s) ?? reflectionPrompts;
   }
 
   /// Síncrono: usa o cache já carregado pelo catálogo.
   static MissionStudy? forSlug(String slug) {
     final remote = ContentCatalogService.instance.studiesCache?[slug];
     if (remote == null) return null;
-    return MissionStudy.fromMap(remote);
+    return MissionStudy.fromMap(remote, slug: slug);
   }
 
 

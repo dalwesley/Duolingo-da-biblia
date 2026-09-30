@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import '../l10n/app_language.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
@@ -30,9 +31,11 @@ class LeagueRiskCard extends StatelessWidget {
     }
 
     final a = Appearance.of(context);
+    final l10n = context.l10n;
     final days = LeagueService.daysLeft();
     final inZone = league.isInDemotionZone(rank, entries.length);
-    final closes = days <= 1 ? 'Fecha hoje' : '$days dias';
+    final closes =
+        days <= 1 ? l10n.cornerClosesToday : l10n.cornerDaysLeft(days);
     final tier = league.tier.shortLabel;
 
     return GlassCard(
@@ -54,15 +57,15 @@ class LeagueRiskCard extends StatelessWidget {
               children: [
                 Text(
                   inZone
-                      ? 'Zona de descida · $closes'
-                      : 'Perto da descida · $closes',
+                      ? l10n.leagueRiskZone(closes)
+                      : l10n.leagueRiskNear(closes),
                   style: AppTypography.title(size: 14, color: a.text),
                 ),
                 const SizedBox(height: 2),
                 Text(
                   inZone
-                      ? 'Você está em $rankº na $tier. Um passo pode segurar o lugar.'
-                      : 'Você está em $rankº na $tier. A caravana fecha em breve.',
+                      ? l10n.leagueRiskBodyHold(rank, tier)
+                      : l10n.leagueRiskBodyClosing(rank, tier),
                   style: AppTypography.body(
                     size: 12,
                     height: 1.35,

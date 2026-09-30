@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_language.dart';
 import 'package:provider/provider.dart';
 import '../services/progress_service.dart';
 import '../models/portrait_style.dart';
@@ -194,7 +195,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
                   ? [
                       IconButton(
                         onPressed: onTrailingTap,
-                        tooltip: 'Ajustes',
+                        tooltip: context.l10n.settingsTitle,
                         icon: CinematicIcon(
                           glyph: trailingGlyph ?? CinematicGlyph.tune,
                           size: 32,

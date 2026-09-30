@@ -5,6 +5,7 @@ import '../data/question_bank.dart';
 import '../data/entry_trails.dart';
 import '../data/trail_repository.dart';
 import '../widgets/character_seals_strip.dart';
+import '../l10n/app_language.dart';
 import '../models/caravan_pilgrim_profile.dart';
 import '../models/difficulty.dart';
 import '../models/pilgrim_medals.dart';
@@ -204,8 +205,8 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                     inline: true,
                     immersive: true,
                     dark: true,
-                    title: trail.title,
-                    subtitle: 'Em breve',
+                    title: trail.localizedTitle,
+                    subtitle: context.l10n.commonComingSoon,
                     onBack: () => Navigator.pop(context),
                     leadingGlyph: CinematicGlyphResolver.forTrail(trail.slug),
                     chromeAccent: TrailVisuals.forTrail(trail).accent,
@@ -222,8 +223,8 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                     children: [
                       EmptyState(
                         glyph: CinematicGlyphResolver.forTrail(trail.slug),
-                        title: 'Em breve',
-                        body: trail.description,
+                        title: context.l10n.commonComingSoon,
+                        body: trail.localizedDescription,
                         accent: AppTheme.parseHex(trail.color),
                       ),
                     ],
@@ -242,11 +243,11 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     final appearance = AppearanceStyle.resolve(mode);
 
     final eyebrow = _useThematicMap && trail.modules.isNotEmpty
-        ? 'Cena ${_roman(activeModule + 1)}'
+        ? context.l10n.trailsStage(_roman(activeModule + 1))
         : null;
     final headerTitle = _useThematicMap && trail.modules.isNotEmpty
         ? trail.modules[activeModule.clamp(0, trail.modules.length - 1)].title
-        : trail.title;
+        : trail.localizedTitle;
     final headerGlyph = _useThematicMap && trail.modules.isNotEmpty
         ? CinematicGlyphResolver.forModule(
             trail
@@ -287,7 +288,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                                 liveDone: prog.done,
                                 total: prog.total,
                               )
-                            : '${prog.done}/${prog.total} cenas'),
+                            : context.l10n.trailsScenesShort(prog.done, prog.total)),
                     onBack: () => Navigator.pop(context),
                     leadingGlyph: headerGlyph,
                     chromeAccent: _fromBank
@@ -310,7 +311,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                           ),
                           child: ModeBanner(
                             trailSlug: widget.slug,
-                            trailTitle: trail.title,
+                            trailTitle: trail.localizedTitle,
                             missionSlugs: allSlugs,
                             caption: modeBanner,
                           ),
@@ -341,7 +342,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                             difficultyId: null,
                             clearedModeIds: const [],
                             progressCaption:
-                                '$modeName · ${prog.done} de ${prog.total} cenas',
+                                context.l10n.trailsLabeledScenesOf(modeName, prog.done, prog.total),
                           ),
                         ),
                       if (_trailMedalChip(progress, trail) != null)
@@ -371,7 +372,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                             .take(mi)
                             .fold(0, (sum, m) => sum + m.missions.length);
                         final moduleTheme = GenesisModuleTheme.forModule(
-                          mod.title,
+                          mod.localizedTitle,
                           realm: _realm,
                           trailSlug: trail.slug,
                         );
@@ -394,7 +395,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
 
                         return GenesisModuleScenery(
                           theme: moduleTheme,
-                          moduleTitle: mod.title,
+                          moduleTitle: mod.localizedTitle,
                           sectionIndex: mi + 1,
                           isActiveChapter: isActive,
                           missionsDone: modDone,
@@ -503,7 +504,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
           child: Opacity(
             opacity: unlocked ? 1 : 0.5,
             child: SoftBadge(
-              text: 'Selo ${seal.name}',
+              text: context.l10n.trailMapSeal(seal.name),
               glyph: seal.glyph,
               textColor: a.text,
             ),

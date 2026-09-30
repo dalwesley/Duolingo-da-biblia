@@ -3,6 +3,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 import 'lantern_glyph.dart';
+import '../l10n/app_language.dart';
 
 /// Lâmpadas = vidas da missão.
 /// Cada erro apaga uma; zerar encerra a cena.
@@ -75,7 +76,7 @@ class LampsBar extends StatelessWidget {
         ),
         const SizedBox(width: 6),
         Text(
-          'Lâmpadas',
+          context.l10n.homeLampsTitle,
           style: AppTypography.label(
             size: 11,
             letterSpacing: 0.6,
@@ -95,7 +96,7 @@ class LampsBar extends StatelessWidget {
     );
 
     return Semantics(
-      label: '$current de $max lâmpadas. Cada erro apaga uma.',
+      label: context.l10n.homeLampsSemantics(current, max),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: fullWidth
@@ -108,7 +109,7 @@ class LampsBar extends StatelessWidget {
           if (!compact) ...[
             SizedBox(height: fullWidth ? 8 : 6),
             Text(
-              'Erro apaga uma · zerar encerra',
+              context.l10n.homeLampsHint,
               textAlign: TextAlign.center,
               style: AppTypography.body(
                 size: 11,

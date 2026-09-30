@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../l10n/app_language.dart';
 import '../services/backend_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
@@ -30,7 +31,7 @@ class _PortraitPickerSheet extends StatelessWidget {
     final selected = progress.settings.portraitStyle;
     final hasPhoto = PortraitFace.isUsablePhotoUrl(backend.userPhotoUrl);
     final name = progress.userName.trim().isEmpty
-        ? 'Peregrino'
+        ? context.l10n.pilgrimFallbackName
         : progress.userName.trim();
 
     return AppSheetPanel(
@@ -38,10 +39,10 @@ class _PortraitPickerSheet extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          const AppSheetHeader(
-            eyebrow: 'Retrato',
+          AppSheetHeader(
+            eyebrow: context.l10n.portraitEyebrow,
             eyebrowColor: AppColors.accent,
-            title: 'Como você aparece no caminho',
+            title: context.l10n.portraitTitle,
             center: true,
           ),
           const SizedBox(height: 22),
@@ -102,7 +103,7 @@ class _PortraitChoice extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final hint = style == PortraitStyle.photo && !available
-        ? 'Sem foto nesta conta'
+        ? context.l10n.portraitNoPhoto
         : style.hint;
 
     return GestureDetector(

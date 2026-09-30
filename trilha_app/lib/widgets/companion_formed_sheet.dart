@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_language.dart';
 import '../models/walk_companion.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -54,16 +55,21 @@ class _CompanionFormedSheet extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 20),
-          const AppSheetHeader(
-            title: 'Companhia formada',
+          AppSheetHeader(
+            title: context.l10n.companionSheetFormedTitle,
             center: true,
             celebration: true,
           ),
           const SizedBox(height: 10),
           Text(
             hasName
-                ? 'Agora você e $name caminham juntos.\nFechem os 7 dias da semana: +${WalkCompanion.weekTogetherBonusSteps} passos na jornada para os dois.'
-                : 'Vocês caminham juntos agora.\nFechem os 7 dias da semana: +${WalkCompanion.weekTogetherBonusSteps} passos na jornada para os dois.',
+                ? context.l10n.companionSheetFormedBodyNamed(
+                    name,
+                    WalkCompanion.weekTogetherBonusSteps,
+                  )
+                : context.l10n.companionSheetFormedBody(
+                    WalkCompanion.weekTogetherBonusSteps,
+                  ),
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 14,
@@ -73,7 +79,7 @@ class _CompanionFormedSheet extends StatelessWidget {
           ),
           const SizedBox(height: 28),
           CopperCta(
-            label: 'Andar juntos',
+            label: context.l10n.companionSheetFormedCta,
             onTap: () => Navigator.pop(context),
             trailing: null,
             dense: true,

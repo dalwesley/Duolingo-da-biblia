@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../data/entry_trails.dart';
+import '../l10n/app_language.dart';
 import '../data/question_bank.dart';
 import '../data/season_walk_catalog.dart';
 import '../data/trail_repository.dart';
@@ -268,8 +269,8 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     await showInviteQrSheet(
       context,
       code: code,
-      title: 'Uma companhia na trilha',
-      subtitle: 'Um companheiro. Sem ranking — só presença.',
+      title: context.l10n.celebrationInviteTitle,
+      subtitle: context.l10n.celebrationInviteSubtitle,
       inviterName: progress.userName,
     );
   }
@@ -557,7 +558,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
 
   String get _kicker {
     if (widget.failed) return CelebrationCopy.failedKicker;
-    if (_newSeal != null) return 'Encontro';
+    if (_newSeal != null) return context.l10n.celebrationSealKicker;
     return CelebrationCopy.kicker(
       perfect: widget.perfect,
       isReplay: widget.isReplay,
@@ -581,7 +582,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     required int pct,
   }) {
     if (widget.failed) {
-      return const MascotBubble(
+      return MascotBubble(
         glowing: true,
         message: CelebrationCopy.failedDetail,
       );
@@ -767,7 +768,8 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                     child: _ModeUpgradeCard(
                                       trailComplete: _trailComplete,
                                       currentLabel:
-                                          _currentMode?.labelPt ?? 'Observação',
+                                          _currentMode?.labelPt ??
+                                          TrailDifficulty.semente.labelPt,
                                       nextLabel: _nextMeta!.label,
                                       nextSubtitle: _nextMeta!.subtitle,
                                       onTryStep: () =>
@@ -804,12 +806,12 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                     // vira secundário.
                                     if (widget.failed) ...[
                                       CopperCta(
-                                        label: 'Tentar de novo',
+                                        label: context.l10n.commonTryAgain,
                                         onTap: _retryScene,
                                       ),
                                       const SizedBox(height: 10),
                                       GhostCta(
-                                        label: 'Voltar ao mapa',
+                                        label: context.l10n.celebrationBackToMap,
                                         onTap: () =>
                                             _leaveCelebration(toTrailMap: true),
                                       ),
@@ -817,14 +819,12 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                         progress.missionsToday <
                                             progress.settings.dailyGoal) ...[
                                       CopperCta(
-                                        label: _hook!.trailJustCompleted
-                                            ? 'Continuar no cânon'
-                                            : 'Próxima cena',
+                                        label: context.l10n.commonNextScene,
                                         onTap: _openTomorrow,
                                       ),
                                       const SizedBox(height: 10),
                                       GhostCta(
-                                        label: 'Até amanhã',
+                                        label: context.l10n.celebrationBackHome,
                                         onTap: () => _leaveCelebration(
                                           toTrailMap: false,
                                         ),
@@ -832,13 +832,14 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                     ] else ...[
                                       CopperCta(
                                         label: !_hookResolved || _hook != null
-                                            ? 'Até amanhã'
+                                            ? context.l10n.celebrationBackHome
                                             : (EntryTrails.continuesTo
                                                       .containsKey(
                                                         widget.missionSlug,
                                                       )
-                                                  ? 'Continuar no cânon'
-                                                  : 'Continuar a trilha'),
+                                                  ? context.l10n.commonContinue
+                                                  : context.l10n
+                                                        .celebrationBackToMap),
                                         trailing: null,
                                         onTap: () => _leaveCelebration(
                                           toTrailMap:
@@ -848,9 +849,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                       if (_hook != null) ...[
                                         const SizedBox(height: 10),
                                         GhostCta(
-                                          label: _hook!.trailJustCompleted
-                                              ? 'Continuar no cânon'
-                                              : 'Continuar a trilha',
+                                          label: context.l10n.commonNextScene,
                                           onTap: _openTomorrow,
                                         ),
                                       ],
@@ -883,7 +882,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                             false)) ...[
                                       const SizedBox(height: 4),
                                       TextCta(
-                                        label: 'Ajude a continuar',
+                                        label: context.l10n.celebrationHelpContinue,
                                         leading: CinematicGlyph.gift,
                                         color: appearance.textFaint,
                                         onTap: openDonatePage,
@@ -1023,7 +1022,10 @@ class _HeroBeat extends StatelessWidget {
         ],
         if (isBoss) ...[
           const SizedBox(height: 10),
-          const _ComboChip(label: 'Travessia', color: AppColors.sand),
+          _ComboChip(
+            label: context.l10n.crossingChip,
+            color: AppColors.sand,
+          ),
         ],
         if ((medalLine ?? '').trim().isNotEmpty) ...[
           const SizedBox(height: 8),
@@ -1046,7 +1048,7 @@ class _HeroBeat extends StatelessWidget {
                   child: _StatCard(
                     glyph: CinematicGlyph.path,
                     value: '+$stepsShown',
-                    label: 'Passos',
+                    label: context.l10n.celebrationStatSteps,
                     color: AppColors.accent,
                     delay: 0,
                     pulse: pulse,
@@ -1059,7 +1061,9 @@ class _HeroBeat extends StatelessWidget {
                   child: _StatCard(
                     glyph: CinematicGlyph.flame,
                     value: '$streakShown',
-                    label: streakShown == 1 ? 'Dia' : 'Dias',
+                    label: streakShown == 1
+                        ? context.l10n.celebrationStatDay
+                        : context.l10n.celebrationStatDays,
                     color: AppColors.streak,
                     delay: 0.08,
                     pulse: pulse,
@@ -1072,7 +1076,7 @@ class _HeroBeat extends StatelessWidget {
                   child: _StatCard(
                     glyph: CinematicGlyph.check,
                     value: '$pctShown%',
-                    label: 'Clareza',
+                    label: context.l10n.celebrationStatAccuracy,
                     color: AppColors.teal,
                     delay: 0.16,
                     pulse: pulse,
@@ -1134,14 +1138,11 @@ class _StreakIgniteState extends State<_StreakIgnite>
 
   String get _line {
     final left = widget.goal - widget.streak;
-    if (widget.streak == 1) return 'Sua sequência começou hoje.';
-    if (left == 0) return 'Compromisso de ${widget.goal} dias cumprido!';
-    if (left > 0) {
-      return left == 1
-          ? 'Falta 1 dia para o seu compromisso.'
-          : 'Faltam $left dias para o seu compromisso.';
-    }
-    return 'Além do compromisso de ${widget.goal} dias.';
+    final l10n = context.l10n;
+    if (widget.streak == 1) return l10n.celebrationStreakStarted;
+    if (left == 0) return l10n.celebrationCommitmentDone(widget.goal);
+    if (left > 0) return l10n.celebrationCommitmentLeft(left);
+    return l10n.celebrationCommitmentBeyond(widget.goal);
   }
 
   @override
@@ -1180,9 +1181,7 @@ class _StreakIgniteState extends State<_StreakIgnite>
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          widget.streak == 1
-                              ? '+1 dia · sequência de 1 dia'
-                              : '+1 dia · sequência de ${widget.streak} dias',
+                          context.l10n.celebrationStreakPlusDay(widget.streak),
                           style: AppTypography.body(
                             size: 16,
                             weight: FontWeight.w800,
@@ -1230,7 +1229,7 @@ class _CelebrationSecondaryRow extends StatelessWidget {
   Widget build(BuildContext context) {
     final share = onShareSeal != null
         ? TextCta(
-            label: 'Compartilhar',
+            label: context.l10n.commonShare,
             leading: CinematicGlyph.share,
             color: appearance.textSecondary,
             onTap: onShareSeal,
@@ -1238,7 +1237,7 @@ class _CelebrationSecondaryRow extends StatelessWidget {
         : shareStreak;
 
     final home = TextCta(
-      label: 'Voltar ao início',
+      label: context.l10n.celebrationBackHome,
       color: appearance.textSecondary,
       onTap: onHome,
     );
@@ -1270,7 +1269,7 @@ class _TomorrowBeatSkeleton extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        const _TomorrowKicker(label: 'Amanhã'),
+        _TomorrowKicker(label: context.l10n.celebrationTomorrowKicker),
         const SizedBox(height: 88),
       ],
     );
@@ -1418,7 +1417,7 @@ class _EchoBeat extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        const _TomorrowKicker(label: 'Hoje você viu'),
+        _TomorrowKicker(label: context.l10n.celebrationEchoKicker),
         const SizedBox(height: 18),
         Text(
           planted,
@@ -1675,6 +1674,7 @@ class _ModeUpgradeCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final l10n = context.l10n;
     return GlassCard(
       accent: true,
       padding: const EdgeInsets.fromLTRB(
@@ -1688,16 +1688,16 @@ class _ModeUpgradeCard extends StatelessWidget {
         children: [
           Text(
             trailComplete
-                ? 'Modo $currentLabel concluído'
-                : 'Cena concluída em $currentLabel',
+                ? l10n.celebrationModeDone(currentLabel)
+                : l10n.celebrationSceneDoneIn(currentLabel),
             textAlign: TextAlign.center,
             style: AppTypography.title(size: 16, color: a.text),
           ),
           const SizedBox(height: AppSpace.xs),
           Text(
             trailComplete
-                ? 'Que tal responder de novo em $nextLabel? $nextSubtitle'
-                : 'Quer tentar as perguntas desta cena em $nextLabel?',
+                ? l10n.celebrationModeRetryPrompt(nextLabel, nextSubtitle)
+                : l10n.celebrationModeTryPrompt(nextLabel),
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 13,
@@ -1708,8 +1708,8 @@ class _ModeUpgradeCard extends StatelessWidget {
           const SizedBox(height: AppSpace.md),
           CopperCta(
             label: trailComplete
-                ? 'Revisar uma cena em $nextLabel'
-                : 'Tentar em $nextLabel',
+                ? l10n.celebrationModeReviewCta(nextLabel)
+                : l10n.celebrationModeTryCta(nextLabel),
             trailing: null,
             padding: const EdgeInsets.symmetric(vertical: 13),
             onTap: onTryStep,
@@ -1717,7 +1717,7 @@ class _ModeUpgradeCard extends StatelessWidget {
           if (onSwitchTrail != null) ...[
             const SizedBox(height: AppSpace.sm),
             TextCta(
-              label: 'Mudar a trilha para $nextLabel',
+              label: l10n.celebrationModeSwitchCta(nextLabel),
               color: a.textSecondary,
               onTap: onSwitchTrail,
             ),

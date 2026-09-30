@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_language.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'act_feel.dart';
@@ -67,7 +68,9 @@ class _ChapterDot extends StatelessWidget {
 
     return Semantics(
       button: true,
-      label: read ? 'Capítulo $chapter, lido' : 'Capítulo $chapter',
+      label: read
+          ? context.l10n.bibleChapterReadSemantics(chapter)
+          : context.l10n.bibleChapterLabel(chapter),
       child: Material(
         color: Colors.transparent,
         child: InkWell(

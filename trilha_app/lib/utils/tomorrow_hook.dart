@@ -1,3 +1,4 @@
+import '../l10n/l10n_global.dart';
 import '../models/trail.dart';
 import '../services/bible_service.dart';
 import 'trail_progress.dart';
@@ -38,10 +39,10 @@ class TomorrowHook {
   }
 
   String get kicker => trailJustCompleted
-      ? 'Próxima trilha'
+      ? L10n.current.tomorrowNextTrail
       : hasEcho
-      ? 'Hoje você viu'
-      : 'Amanhã';
+      ? L10n.current.tomorrowTodayYouSaw
+      : L10n.current.homeHeroTomorrow;
 
   /// Linha do cartão de celebração: a fome, não a porta.
   String get trailer {
@@ -52,25 +53,25 @@ class TomorrowHook {
   }
 
   String get promiseLine => trailJustCompleted
-      ? 'A próxima trilha já está no mapa.'
+      ? L10n.current.tomorrowNextTrailOnMap
       : hasEcho
-      ? 'Amanhã: $title'
-      : 'A cena espera você.';
+      ? L10n.current.tomorrowLine(title)
+      : L10n.current.tomorrowSceneWaits;
 
   String get cardLine => trailJustCompleted
-      ? '${trailTitle ?? 'Amanhã'}: $title'
-      : 'Amanhã: $title';
+      ? '${trailTitle ?? L10n.current.homeHeroTomorrow}: $title'
+      : L10n.current.tomorrowLine(title);
 
   static String? commitLine({required int streak, required int goal}) {
     if (streak <= 0 || goal <= 0 || streak > goal) return null;
-    if (streak == goal && goal <= 7) return 'Sete dias. O hábito pegou.';
-    return 'Dia $streak de $goal';
+    if (streak == goal && goal <= 7) return L10n.current.tomorrowSevenDays;
+    return L10n.current.tomorrowDayOf(streak, goal);
   }
 
   static String? yesterdayLine(String? insight) {
     final text = (insight ?? '').trim();
     if (text.isEmpty) return null;
-    return 'Ontem: $text';
+    return L10n.current.tomorrowYesterday(text);
   }
 
   static String? echoDoorLine(String? echoQuestion) {
@@ -91,7 +92,7 @@ class TomorrowHook {
     for (final trail in trails) {
       for (final mission in trail.modules.expand((m) => m.missions)) {
         if (mission.slug == slug) {
-          final text = (mission.centralInsight ?? '').trim();
+          final text = (mission.localizedCentralInsight ?? '').trim();
           return text.isEmpty ? null : text;
         }
       }
@@ -112,20 +113,20 @@ class TomorrowHook {
       return breath;
     }
     for (final raw in [
-      mission.hookNote,
+      mission.localizedHookNote,
       mission.hookThread,
       mission.subtitle,
-      mission.intro,
+      mission.localizedIntro,
     ]) {
       final breath = firstBreath(raw, maxChars: maxChars);
       if (breath.isNotEmpty) return breath;
     }
-    return 'A história continua no texto.';
+    return L10n.current.tomorrowStoryContinues;
   }
 
   /// Trailer da celebração — a nota puxa; o verso fica para a entrada.
   static String pullOf(Mission mission, {int maxChars = 88}) {
-    for (final raw in [mission.hookNote, mission.hookThread]) {
+    for (final raw in [mission.localizedHookNote, mission.hookThread]) {
       final breath = firstBreath(raw, maxChars: maxChars);
       if (breath.isNotEmpty) return breath;
     }
@@ -133,7 +134,7 @@ class TomorrowHook {
     if (verse.isNotEmpty && !restatesTitle(mission.title, verse)) {
       return verse;
     }
-    for (final raw in [mission.subtitle, mission.intro]) {
+    for (final raw in [mission.subtitle, mission.localizedIntro]) {
       final breath = firstBreath(raw, maxChars: maxChars);
       if (breath.isNotEmpty) return breath;
     }
@@ -262,9 +263,9 @@ class TomorrowHook {
     required bool trailJustCompleted,
     String? todayInsight,
   }) {
-    final echo = (next.echoQuestion ?? '').trim();
+    final echo = (next.localizedEchoQuestion ?? '').trim();
     return TomorrowHook(
-      title: next.title.trim(),
+      title: next.localizedTitle.trim(),
       tease: teaseOf(next),
       pull: pullOf(next),
       missionSlug: next.slug,

@@ -1,0 +1,216 @@
+{
+  "notifChannelName": {
+    "pt": "Lembretes Stway",
+    "en": "Stway reminders",
+    "es": "Recordatorios Stway"
+  },
+  "notifChannelDesc": {
+    "pt": "Meta diária, cenas, prática, memorização e favoritos",
+    "en": "Daily goal, scenes, practice, memorization and favorites",
+    "es": "Meta diaria, escenas, práctica, memorización y favoritos"
+  },
+  "notifSignature": {
+    "pt": "O Peregrino",
+    "en": "The Pilgrim",
+    "es": "El Peregrino"
+  },
+  "notifSceneWaitingTitle": {
+    "pt": "Sua cena te espera",
+    "en": "Your scene is waiting",
+    "es": "Tu escena te espera"
+  },
+  "notifTomorrowTitle": {
+    "pt": "Amanhã",
+    "en": "Tomorrow",
+    "es": "Mañana"
+  },
+  "notifSceneWaitingBody": {
+    "pt": "Uma cena por dia. A sequência continua amanhã.",
+    "en": "One scene a day. The streak continues tomorrow.",
+    "es": "Una escena al día. La racha continúa mañana."
+  },
+  "notifWeeklyStepsTitle": {
+    "pt": "Passos da semana",
+    "en": "Weekly steps",
+    "es": "Pasos de la semana"
+  },
+  "notifWeeklyStepsBody": {
+    "pt": "Ainda dá tempo de fechar a semana.",
+    "en": "There's still time to finish the week.",
+    "es": "Aún da tiempo de cerrar la semana."
+  },
+  "notifResumeTitle": {
+    "pt": "Hora de retomar",
+    "en": "Time to pick it up again",
+    "es": "Hora de retomar"
+  },
+  "notifContinueTitle": {
+    "pt": "Continue de onde parou",
+    "en": "Continue where you left off",
+    "es": "Continúa donde lo dejaste"
+  },
+  "notifTodayGoalTitle": {
+    "pt": "Meta de hoje",
+    "en": "Today's goal",
+    "es": "Meta de hoy"
+  },
+  "notifReturningBody": {
+    "pt": "{name}, faz {count, plural, =1{1 dia} other{{count} dias}} sem estudar. Uma cena retoma a sequência.",
+    "en": "{name}, it's been {count, plural, =1{1 day} other{{count} days}} without studying. One scene restarts the streak.",
+    "es": "{name}, llevas {count, plural, =1{1 día} other{{count} días}} sin estudiar. Una escena retoma la racha.",
+    "placeholders": {
+      "name": "String",
+      "count": "int"
+    }
+  },
+  "notifSceneWaitsBody": {
+    "pt": "{name}, {title} espera.",
+    "en": "{name}, {title} is waiting.",
+    "es": "{name}, {title} espera.",
+    "placeholders": {
+      "name": "String",
+      "title": "String"
+    }
+  },
+  "notifStreakLeftBody": {
+    "pt": "{name}, você já anda há {streak, plural, =1{1 dia} other{{streak} dias}}. {left, plural, =1{Falta 1 cena} other{Faltam {left} cenas}} para acompanhar.",
+    "en": "{name}, you've been walking for {streak, plural, =1{1 day} other{{streak} days}}. {left, plural, =1{1 scene left} other{{left} scenes left}} to keep up.",
+    "es": "{name}, ya llevas {streak, plural, =1{1 día} other{{streak} días}}. {left, plural, =1{Falta 1 escena} other{Faltan {left} escenas}} para seguir el ritmo.",
+    "placeholders": {
+      "name": "String",
+      "streak": "int",
+      "left": "int"
+    }
+  },
+  "notifGoalLeftBody": {
+    "pt": "{left, plural, =1{Falta 1 cena} other{Faltam {left} cenas}} para fechar a meta de hoje.",
+    "en": "{left, plural, =1{1 scene left} other{{left} scenes left}} to finish today's goal.",
+    "es": "{left, plural, =1{Falta 1 escena} other{Faltan {left} escenas}} para cerrar la meta de hoy.",
+    "placeholders": {
+      "left": "int"
+    }
+  },
+  "notifDailyTitle": {
+    "pt": "Do dia",
+    "en": "For today",
+    "es": "Del día"
+  },
+  "notifQuestsLeftBody": {
+    "pt": "{count, plural, =1{Sobrou 1 gesto. Mais um e o dia fecha.} other{Ainda faltam {count} gestos do dia.}}",
+    "en": "{count, plural, =1{1 gesture left. One more and the day is done.} other{{count} daily gestures still left.}}",
+    "es": "{count, plural, =1{Queda 1 gesto. Uno más y el día cierra.} other{Aún faltan {count} gestos del día.}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "notifPracticeTitle": {
+    "pt": "Hora de praticar",
+    "en": "Time to practice",
+    "es": "Hora de practicar"
+  },
+  "notifMistakesBody": {
+    "pt": "{count, plural, =1{Tem 1 erro para reforçar. Pratique agora e fixe o aprendizado.} other{Tem {count} erros para reforçar. Prática rápida, mente firme.}}",
+    "en": "{count, plural, =1{You have 1 mistake to reinforce. Practice now and lock it in.} other{You have {count} mistakes to reinforce. Quick practice, steady mind.}}",
+    "es": "{count, plural, =1{Tienes 1 error para reforzar. Practica ahora y fija el aprendizaje.} other{Tienes {count} errores para reforzar. Práctica rápida, mente firme.}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "notifMemoryBody": {
+    "pt": "{count, plural, =1{Um versículo espera por você. Dois minutos bastam.} other{{count} versículos no deck. Memorizar reforça o aprendizado.}}",
+    "en": "{count, plural, =1{A verse is waiting for you. Two minutes is enough.} other{{count} verses in the deck. Memorizing reinforces learning.}}",
+    "es": "{count, plural, =1{Un versículo te espera. Bastan dos minutos.} other{{count} versículos en el mazo. Memorizar refuerza el aprendizaje.}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "notifFavoritesTitle": {
+    "pt": "Seus favoritos",
+    "en": "Your favorites",
+    "es": "Tus favoritos"
+  },
+  "notifFavoritesBody": {
+    "pt": "{count, plural, =1{Você guardou um versículo. Que tal revisitá-lo agora?} other{Você tem {count} favoritos. Releia um e treine a memória.}}",
+    "en": "{count, plural, =1{You saved a verse. Want to revisit it now?} other{You have {count} favorites. Reread one and train your memory.}}",
+    "es": "{count, plural, =1{Guardaste un versículo. ¿Qué tal revisitarlo ahora?} other{Tienes {count} favoritos. Relee uno y entrena la memoria.}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "notifWeeklyLeftBody": {
+    "pt": "{count, plural, =1{Falta 1 passo semanal. Feche o ciclo com calma.} other{Ainda faltam {count} passos semanais. A semana ainda é sua.}}",
+    "en": "{count, plural, =1{1 weekly step left. Close the cycle calmly.} other{{count} weekly steps still left. The week is still yours.}}",
+    "es": "{count, plural, =1{Falta 1 paso semanal. Cierra el ciclo con calma.} other{Aún faltan {count} pasos semanales. La semana todavía es tuya.}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "notifSeeYouTomorrowTitle": {
+    "pt": "Até amanhã",
+    "en": "See you tomorrow",
+    "es": "Hasta mañana"
+  },
+  "notifGoalDoneBody": {
+    "pt": "Meta feita. A sequência continua amanhã.",
+    "en": "Goal done. The streak continues tomorrow.",
+    "es": "Meta hecha. La racha continúa mañana."
+  },
+  "notifTrialEndingTitle": {
+    "pt": "Seu teste grátis termina amanhã",
+    "en": "Your free trial ends tomorrow",
+    "es": "Tu prueba gratis termina mañana"
+  },
+  "notifTrialEndingBody": {
+    "pt": "Gerencie sua assinatura Peregrino+ nas configurações se não quiser continuar.",
+    "en": "Manage your Pilgrim+ subscription in settings if you don't want to continue.",
+    "es": "Gestiona tu suscripción Peregrino+ en ajustes si no quieres continuar."
+  },
+  "widgetTomorrowTitle": {
+    "pt": "Amanhã: {title}",
+    "en": "Tomorrow: {title}",
+    "es": "Mañana: {title}",
+    "placeholders": {
+      "title": "String"
+    }
+  },
+  "widgetTodayTitle": {
+    "pt": "Hoje: {title}",
+    "en": "Today: {title}",
+    "es": "Hoy: {title}",
+    "placeholders": {
+      "title": "String"
+    }
+  },
+  "widgetGoalDone": {
+    "pt": "Meta concluída",
+    "en": "Goal complete",
+    "es": "Meta completada"
+  },
+  "widgetProgressScenes": {
+    "pt": "{goal, plural, =1{{done}/1 cena} other{{done}/{goal} cenas}}",
+    "en": "{goal, plural, =1{{done}/1 scene} other{{done}/{goal} scenes}}",
+    "es": "{goal, plural, =1{{done}/1 escena} other{{done}/{goal} escenas}}",
+    "placeholders": {
+      "done": "int",
+      "goal": "int"
+    }
+  },
+  "widgetTrailWaitsTomorrow": {
+    "pt": "A trilha espera amanhã",
+    "en": "The trail waits tomorrow",
+    "es": "La ruta espera mañana"
+  },
+  "widgetBehindCaravan": {
+    "pt": "Ficando para trás na caravana — caminhe hoje",
+    "en": "Falling behind the caravan — walk today",
+    "es": "Quedándote atrás en la caravana — camina hoy"
+  },
+  "widgetScenesLeftToday": {
+    "pt": "{count, plural, =1{Falta 1 cena hoje} other{Faltam {count} cenas hoje}}",
+    "en": "{count, plural, =1{1 scene left today} other{{count} scenes left today}}",
+    "es": "{count, plural, =1{Falta 1 escena hoy} other{Faltan {count} escenas hoy}}",
+    "placeholders": {
+      "count": "int"
+    }
+  }
+}

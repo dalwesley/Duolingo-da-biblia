@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../data/question_bank.dart';
 import '../data/trail_repository.dart';
+import '../l10n/app_language.dart';
 import '../models/trail.dart';
 import '../services/content_catalog_service.dart';
 import '../services/progress_service.dart';
@@ -63,9 +64,8 @@ class _PracticeScreenState extends State<PracticeScreen> {
       if (questions.isNotEmpty) {
         _mission = Mission(
           slug: 'practice-mistakes',
-          title: 'Revisar erros',
-          intro:
-              'Volte aos pontos em que você errou. Cada acerto limpa a pergunta da fila.',
+          title: context.l10n.practiceTitle,
+          intro: context.l10n.practiceIntro,
           type: 'lesson',
           stepsReward: 30,
           questions: questions,
@@ -114,8 +114,8 @@ class _PracticeScreenState extends State<PracticeScreen> {
                       inline: true,
                       immersive: true,
                       dark: true,
-                      title: 'Revisitar',
-                      subtitle: 'Reforce as passagens',
+                      title: context.l10n.practiceTitle,
+                      subtitle: context.l10n.practiceSubtitle,
                       onBack: () => Navigator.pop(context),
                       leadingGlyph: CinematicGlyph.refresh,
                       chromeAccent: AppColors.clay,
@@ -123,28 +123,10 @@ class _PracticeScreenState extends State<PracticeScreen> {
                   ),
                   Expanded(
                     child: Center(
-                      child: Padding(
-                        padding: const EdgeInsets.all(AppSpace.xxxl),
-                        child: Column(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            const CinematicIcon(
-                              glyph: CinematicGlyph.refresh,
-                              size: 56,
-                              accent: AppColors.accent,
-                              glowing: false,
-                            ),
-                            const SizedBox(height: AppSpace.section),
-                            Text(
-                              'Nenhum erro guardado ainda.\nContinue as cenas — quando errar, a pergunta volta aqui.',
-                              textAlign: TextAlign.center,
-                              style: AppTypography.body(
-                                color: appearance.textSecondary,
-                                height: 1.5,
-                              ),
-                            ),
-                          ],
-                        ),
+                      child: EmptyState(
+                        glyph: CinematicGlyph.refresh,
+                        title: context.l10n.practiceEmptyTitle,
+                        body: context.l10n.practiceEmptyBody,
                       ),
                     ),
                   ),

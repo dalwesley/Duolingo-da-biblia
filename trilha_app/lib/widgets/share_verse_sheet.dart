@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
+import '../l10n/app_language.dart';
 import '../services/bible_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
@@ -72,6 +73,7 @@ class _ShareVerseSheetState extends State<_ShareVerseSheet> {
 
   Future<void> _shareImage() async {
     if (_busy) return;
+    final shareText = context.l10n.bibleShareVia(_ref);
     setState(() => _busy = true);
     try {
       await Future<void>.delayed(const Duration(milliseconds: 50));
@@ -91,7 +93,7 @@ class _ShareVerseSheetState extends State<_ShareVerseSheet> {
       await SharePlus.instance.share(
         ShareParams(
           files: [XFile(file.path, mimeType: 'image/png')],
-          text: '$_ref — via Stway',
+          text: shareText,
           subject: '$_ref — Stway',
         ),
       );
@@ -109,7 +111,7 @@ class _ShareVerseSheetState extends State<_ShareVerseSheet> {
 — $_ref
 ${BibleService.translationName}
 
-Via Stway
+${context.l10n.bibleShareTextFooter}
 '''
             .trim();
     await SharePlus.instance.share(
@@ -124,7 +126,7 @@ Via Stway
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const AppSheetHeader(title: 'Compartilhar versículo', center: true),
+          AppSheetHeader(title: context.l10n.bibleShareTitle, center: true),
           const SizedBox(height: 14),
           RepaintBoundary(
             key: _boundaryKey,
@@ -137,7 +139,9 @@ Via Stway
           ),
           const SizedBox(height: 16),
           CopperCta(
-            label: _busy ? 'Preparando…' : 'Compartilhar imagem',
+            label: _busy
+                ? context.l10n.bibleSharePreparing
+                : context.l10n.bibleShareImage,
             onTap: _busy ? null : _shareImage,
             leading: CinematicGlyph.share,
             trailing: null,
@@ -146,7 +150,7 @@ Via Stway
           ),
           const SizedBox(height: AppSpace.sm),
           TextCta(
-            label: 'Compartilhar como texto',
+            label: context.l10n.bibleShareAsText,
             onTap: _busy ? null : _shareText,
           ),
         ],

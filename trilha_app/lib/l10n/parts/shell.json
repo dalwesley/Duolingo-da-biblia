@@ -1,0 +1,258 @@
+{
+  "navTrails": {
+    "pt": "Trilhas",
+    "en": "Trails",
+    "es": "Rutas"
+  },
+  "navBible": {
+    "pt": "Bíblia",
+    "en": "Bible",
+    "es": "Biblia"
+  },
+  "navTogether": {
+    "pt": "Juntos",
+    "en": "Together",
+    "es": "Juntos"
+  },
+  "navTabWithNews": {
+    "pt": "{tab}, com novidades",
+    "en": "{tab}, has updates",
+    "es": "{tab}, con novedades",
+    "placeholders": {
+      "tab": "String"
+    },
+    "description": "Screen reader label for a bottom tab with a badge"
+  },
+  "shellTrailsSubtitle": {
+    "pt": "O mapa da jornada",
+    "en": "The map of your journey",
+    "es": "El mapa del camino"
+  },
+  "shellTogetherSubtitle": {
+    "pt": "Companhia · Caravana · Grupos",
+    "en": "Companion · Caravan · Groups",
+    "es": "Compañía · Caravana · Grupos"
+  },
+  "shellReferralBonus": {
+    "pt": "{count, plural, =1{Seu convite valeu +{steps} passos} other{Seus convites valeram +{steps} passos}}",
+    "en": "{count, plural, =1{Your invite earned +{steps} steps} other{Your invites earned +{steps} steps}}",
+    "es": "{count, plural, =1{Tu invitación sumó +{steps} pasos} other{Tus invitaciones sumaron +{steps} pasos}}",
+    "placeholders": {
+      "count": "int",
+      "steps": "int"
+    }
+  },
+  "shellWeekTogetherBonus": {
+    "pt": "A companhia ganhou +{steps} passos na jornada",
+    "en": "Your companion earned +{steps} steps on the journey",
+    "es": "La compañía ganó +{steps} pasos en el camino",
+    "placeholders": {
+      "steps": "int"
+    }
+  },
+  "avatarChangePortrait": {
+    "pt": "Alterar retrato",
+    "en": "Change portrait",
+    "es": "Cambiar retrato"
+  },
+  "avatarOpenProfile": {
+    "pt": "Abrir perfil",
+    "en": "Open profile",
+    "es": "Abrir perfil"
+  },
+  "liturgyAdvent": {
+    "pt": "Advento",
+    "en": "Advent",
+    "es": "Adviento"
+  },
+  "liturgyAdventSubtitle": {
+    "pt": "Tempo de espera e preparação",
+    "en": "A season of waiting and preparing",
+    "es": "Tiempo de espera y preparación"
+  },
+  "liturgyChristmas": {
+    "pt": "Natal",
+    "en": "Christmas",
+    "es": "Navidad"
+  },
+  "liturgyChristmasSubtitle": {
+    "pt": "O Verbo se fez carne",
+    "en": "The Word became flesh",
+    "es": "El Verbo se hizo carne"
+  },
+  "liturgyLent": {
+    "pt": "Quaresma",
+    "en": "Lent",
+    "es": "Cuaresma"
+  },
+  "liturgyLentSubtitle": {
+    "pt": "Deserto, jejum e retorno",
+    "en": "Desert, fasting and return",
+    "es": "Desierto, ayuno y regreso"
+  },
+  "liturgyHolyWeek": {
+    "pt": "Semana Santa",
+    "en": "Holy Week",
+    "es": "Semana Santa"
+  },
+  "liturgyHolyWeekSubtitle": {
+    "pt": "Da cruz à espera da ressurreição",
+    "en": "From the cross to awaiting the resurrection",
+    "es": "De la cruz a la espera de la resurrección"
+  },
+  "liturgyEaster": {
+    "pt": "Páscoa",
+    "en": "Easter",
+    "es": "Pascua"
+  },
+  "liturgyEasterSubtitle": {
+    "pt": "Cristo ressuscitou",
+    "en": "Christ is risen",
+    "es": "Cristo resucitó"
+  },
+  "liturgyPentecost": {
+    "pt": "Pentecostes",
+    "en": "Pentecost",
+    "es": "Pentecostés"
+  },
+  "liturgyPentecostSubtitle": {
+    "pt": "O Espírito é derramado",
+    "en": "The Spirit is poured out",
+    "es": "El Espíritu es derramado"
+  },
+  "liturgyOrdinary": {
+    "pt": "Tempo comum",
+    "en": "Ordinary Time",
+    "es": "Tiempo ordinario"
+  },
+  "liturgyOrdinarySubtitle": {
+    "pt": "Crescimento na Palavra, dia a dia",
+    "en": "Growing in the Word, day by day",
+    "es": "Creciendo en la Palabra, día a día"
+  },
+  "liturgyQuestTitle": {
+    "pt": "Tempo de {season}",
+    "en": "{season} season",
+    "es": "Tiempo de {season}",
+    "placeholders": {
+      "season": "String"
+    },
+    "description": "Seasonal daily quest title, e.g. 'Tempo de Advento'"
+  },
+  "liturgyQuestSubtitle": {
+    "pt": "Leia um capítulo — foco: {ref}",
+    "en": "Read a chapter — focus: {ref}",
+    "es": "Lee un capítulo — enfoque: {ref}",
+    "placeholders": {
+      "ref": "String"
+    }
+  },
+  "updateDefaultMessage": {
+    "pt": "Uma nova versão do Stway está pronta, com melhorias e correções.",
+    "en": "A new version of Stway is ready, with improvements and fixes.",
+    "es": "Hay una nueva versión de Stway lista, con mejoras y correcciones."
+  },
+  "updateFirebaseUnavailable": {
+    "pt": "Firebase indisponível.",
+    "en": "Firebase unavailable.",
+    "es": "Firebase no disponible."
+  },
+  "updateNoneInCloud": {
+    "pt": "Nenhuma versão publicada na nuvem.",
+    "en": "No version published in the cloud.",
+    "es": "No hay ninguna versión publicada en la nube."
+  },
+  "updateCheckDisabled": {
+    "pt": "Checagem desligada.",
+    "en": "Update check is off.",
+    "es": "Verificación desactivada."
+  },
+  "updateCheckFailed": {
+    "pt": "Não foi possível verificar agora.",
+    "en": "Couldn't check right now.",
+    "es": "No se pudo verificar ahora."
+  },
+  "updateEyebrow": {
+    "pt": "Atualização",
+    "en": "Update",
+    "es": "Actualización"
+  },
+  "updateForceTitle": {
+    "pt": "Esta versão precisa atualizar",
+    "en": "This version needs an update",
+    "es": "Esta versión necesita actualizarse"
+  },
+  "updateSoftTitle": {
+    "pt": "Nova versão disponível",
+    "en": "New version available",
+    "es": "Nueva versión disponible"
+  },
+  "updateNow": {
+    "pt": "Atualizar agora",
+    "en": "Update now",
+    "es": "Actualizar ahora"
+  },
+  "updateStoreOpenFailed": {
+    "pt": "Não foi possível abrir a loja. Tente de novo.",
+    "en": "Couldn't open the store. Try again.",
+    "es": "No se pudo abrir la tienda. Inténtalo de nuevo."
+  },
+  "updateInStore": {
+    "pt": "Na loja",
+    "en": "In the store",
+    "es": "En la tienda"
+  },
+  "offlineDownloadFailed": {
+    "pt": "Não foi possível baixar as cenas. Tente de novo em instantes.",
+    "en": "Couldn't download the scenes. Try again in a moment.",
+    "es": "No se pudieron descargar las escenas. Inténtalo de nuevo en un momento."
+  },
+  "offlineNoInternet": {
+    "pt": "Sem internet no momento. Ligue o Wi‑Fi ou os dados e tente de novo.",
+    "en": "No internet right now. Turn on Wi‑Fi or mobile data and try again.",
+    "es": "Sin internet por ahora. Activa el Wi‑Fi o los datos e inténtalo de nuevo."
+  },
+  "offlineTitle": {
+    "pt": "As cenas ainda não chegaram",
+    "en": "The scenes haven't arrived yet",
+    "es": "Las escenas aún no llegaron"
+  },
+  "offlineBody": {
+    "pt": "Na primeira abertura, o Stway baixa o currículo da nuvem. Precisa de internet uma vez — depois fica no aparelho.",
+    "en": "The first time you open it, Stway downloads the curriculum from the cloud. It needs internet once — then it stays on your device.",
+    "es": "La primera vez que lo abres, Stway descarga el currículo de la nube. Necesita internet una vez — después queda en tu dispositivo."
+  },
+  "offlineDownloading": {
+    "pt": "Baixando…",
+    "en": "Downloading…",
+    "es": "Descargando…"
+  },
+  "resetTitle": {
+    "pt": "Apagar progresso",
+    "en": "Erase progress",
+    "es": "Borrar progreso"
+  },
+  "resetBody": {
+    "pt": "Todos os passos, a sequência e o progresso serão apagados. A introdução volta a aparecer. Não dá para desfazer.",
+    "en": "All your steps, your streak and your progress will be erased. The intro will show again. This can't be undone.",
+    "es": "Se borrarán todos los pasos, la racha y el progreso. La introducción volverá a aparecer. No se puede deshacer."
+  },
+  "resetConfirm": {
+    "pt": "Confirmar",
+    "en": "Confirm",
+    "es": "Confirmar"
+  },
+  "resetConfirmCountdown": {
+    "pt": "Confirmar · {seconds}s",
+    "en": "Confirm · {seconds}s",
+    "es": "Confirmar · {seconds}s",
+    "placeholders": {
+      "seconds": "int"
+    }
+  },
+  "resetAwareness": {
+    "pt": "Estou ciente de que vou perder o progresso",
+    "en": "I understand I'll lose my progress",
+    "es": "Entiendo que perderé mi progreso"
+  }
+}

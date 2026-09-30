@@ -56,7 +56,7 @@ void main() {
         myWeekly: 120,
         theirWeekly: 40,
       );
-      expect(c.insightLine, contains('poeira'));
+      expect(c.insightLine, contains('caminho'));
       expect(c.insightLine, isNot(contains('passos')));
     });
 
@@ -75,7 +75,7 @@ void main() {
     test('delay tiers 1-3 / 4-6 / 7+', () {
       final fresh = _base(theyLastWalk: _daysAgo(2));
       expect(fresh.delayCopy?.tier, CompanionDelayTier.fresh);
-      expect(fresh.nudgeShareText(), contains('ficando pra trás'));
+      expect(fresh.nudgeShareText(), contains('sua falta'));
       expect(
         fresh.nudgeShareText(),
         contains('trilha-biblia.web.app/abrir/juntos'),
@@ -84,14 +84,14 @@ void main() {
 
       final dusty = _base(theyLastWalk: _daysAgo(5));
       expect(dusty.delayCopy?.tier, CompanionDelayTier.dusty);
-      expect(dusty.nudgeShareText(), contains('poeira'));
-      expect(dusty.statusLine, contains('sente falta'));
+      expect(dusty.nudgeShareText(), contains('caminho continua aberto'));
+      expect(dusty.statusLine, contains('dias sem estudar'));
 
       final lost = _base(theyLastWalk: _daysAgo(9));
       expect(lost.delayCopy?.tier, CompanionDelayTier.lost);
-      expect(lost.nudgeShareText(), contains('Te perdi na multidão'));
-      expect(lost.nudgeShareText(), contains('retomar nossa caminhada'));
-      expect(lost.delayCopy?.headline, 'Te perdi na multidão');
+      expect(lost.nudgeShareText(), contains('lugar ao meu lado'));
+      expect(lost.nudgeShareText(), contains('já dei meus passos'));
+      expect(lost.delayCopy?.headline, 'Ainda tem lugar ao meu lado');
     });
 
     test('theyAreDusty when away without walking today', () {
@@ -109,7 +109,7 @@ void main() {
       );
       expect(
         _base(theyLastWalk: _daysAgo(5)).nudgePresets.first,
-        contains('poeira'),
+        contains('falta'),
       );
       expect(
         _base(theyLastWalk: _daysAgo(9)).nudgePresets.first,

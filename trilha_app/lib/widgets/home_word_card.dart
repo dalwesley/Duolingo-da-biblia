@@ -10,6 +10,7 @@ import '../utils/palco_verse.dart';
 import 'act_feel.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
+import '../l10n/app_language.dart';
 
 class _WordSnap {
   final String reference;
@@ -180,7 +181,7 @@ class _HomeWordCardState extends State<HomeWordCard> {
 
     return Semantics(
       button: widget.onOpen != null,
-      label: 'Ler ${snap.reference}',
+      label: context.l10n.homeWordRead(snap.reference),
       child: GestureDetector(
         behavior: HitTestBehavior.opaque,
         onTap: () {
@@ -215,7 +216,7 @@ class _HomeWordCardState extends State<HomeWordCard> {
                   const SizedBox(width: 8),
                   Expanded(
                     child: SectionLabel(
-                      snap.label,
+                      _labelText(context, snap.label),
                       color: AppColors.cedar.withValues(alpha: 0.95),
                     ),
                   ),
@@ -247,6 +248,15 @@ class _HomeWordCardState extends State<HomeWordCard> {
       ),
     );
   }
+
+  /// `label` guarda um valor interno ('Nesta cena' / 'Palavra') comparado na
+  /// lógica acima; só a exibição é traduzida.
+  static String _labelText(BuildContext context, String label) =>
+      switch (label) {
+        'Nesta cena' => context.l10n.homeWordInScene,
+        'Palavra' => context.l10n.homeWordWord,
+        _ => label,
+      };
 
   static String _clip(String text) {
     final t = text.trim();

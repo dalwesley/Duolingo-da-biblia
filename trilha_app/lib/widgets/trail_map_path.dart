@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_language.dart';
 import '../models/trail.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -321,12 +322,12 @@ class _MissionSceneCard extends StatelessWidget {
                           Expanded(
                             child: StageEyebrow(
                               label: mission.isBoss
-                                  ? 'Travessia'
+                                  ? context.l10n.trailMapCrossing
                                   : _current
-                                  ? 'Próxima cena'
+                                  ? context.l10n.commonNextScene
                                   : completed
-                                  ? 'Concluída'
-                                  : 'Cena',
+                                  ? context.l10n.trailsCleared
+                                  : context.l10n.trailMapScene,
                               accent: _current
                                   ? onSky
                                   : completed
@@ -337,7 +338,7 @@ class _MissionSceneCard extends StatelessWidget {
                           if (!unlocked) ...[
                             const Spacer(),
                             Text(
-                              'Bloqueada',
+                              context.l10n.trailMapLocked,
                               style: AppTypography.body(
                                 size: 11,
                                 weight: FontWeight.w600,
@@ -354,7 +355,7 @@ class _MissionSceneCard extends StatelessWidget {
                           Opacity(
                             opacity: unlocked ? (completed ? 0.45 : 1) : 0.35,
                             child: CinematicIcon.mission(
-                              mission.title,
+                              mission.localizedTitle,
                               isBoss: mission.isBoss,
                               size: _current ? 42 : 34,
                               accent: _current ? onSky : accent,
@@ -367,7 +368,7 @@ class _MissionSceneCard extends StatelessWidget {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  mission.title,
+                                  mission.localizedTitle,
                                   style: AppTypography.display(
                                     size: _current ? 20 : 18,
                                     weight: FontWeight.w800,
@@ -454,7 +455,7 @@ class _ContinueCue extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         Text(
-          'Continuar',
+          context.l10n.commonContinue,
           style: AppTypography.cta(
             size: 14,
             color: color,

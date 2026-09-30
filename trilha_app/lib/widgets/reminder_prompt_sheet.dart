@@ -8,24 +8,27 @@ import 'act_feel.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
+import '../l10n/app_language.dart';
 
-class _HourOption {
+enum _HourOption {
+  morning(7),
+  noon(12),
+  night(20);
+
   final int hour;
-  final String label;
-  final String echo;
 
-  const _HourOption({
-    required this.hour,
-    required this.label,
-    required this.echo,
-  });
+  const _HourOption(this.hour);
+
+  String label(AppLocalizations l10n) => switch (this) {
+    _HourOption.morning => l10n.reminderMorning,
+    _HourOption.noon => l10n.reminderNoon,
+    _HourOption.night => l10n.reminderNight,
+  };
+
+  String echo(AppLocalizations l10n) => l10n.reminderHour(hour);
 }
 
-const _hours = <_HourOption>[
-  _HourOption(hour: 7, label: 'Manhã', echo: '7h'),
-  _HourOption(hour: 12, label: 'Meio-dia', echo: '12h'),
-  _HourOption(hour: 20, label: 'Noite', echo: '20h'),
-];
+const _hours = _HourOption.values;
 
 /// Pedido de lembrete — depois da 1ª missão, com horário âncora.
 Future<void> showReminderPromptSheet(BuildContext context) async {
@@ -85,6 +88,7 @@ class _ReminderPromptSheetState extends State<_ReminderPromptSheet> {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final l10n = context.l10n;
     final selected = _hours.firstWhere(
       (h) => h.hour == _hour,
       orElse: () => _hours.first,
@@ -102,12 +106,14 @@ class _ReminderPromptSheetState extends State<_ReminderPromptSheet> {
               accent: AppColors.accent,
               glowing: false,
             ),
-            eyebrow: widget.fromSettings ? 'Lembrete diário' : 'O peregrino',
+            eyebrow: widget.fromSettings
+                ? l10n.reminderDailyEyebrow
+                : l10n.comebackEyebrow,
             eyebrowColor: AppColors.accent.withValues(alpha: 0.85),
-            title: 'Em que hora lembramos você?',
+            title: l10n.reminderTitle,
             subtitle: widget.fromSettings
-                ? 'Um aviso por dia, no horário que você escolher.'
-                : 'Um horário fixo cola o hábito. Amanhã te avisamos da próxima cena.',
+                ? l10n.reminderSubtitleSettings
+                : l10n.reminderSubtitle,
           ),
           const SizedBox(height: 16),
           Row(
@@ -129,14 +135,14 @@ class _ReminderPromptSheetState extends State<_ReminderPromptSheet> {
           ),
           const SizedBox(height: 20),
           CopperCta(
-            label: 'Lembrar às ${selected.echo}',
+            label: l10n.reminderRemindAt(selected.hour),
             onTap: () {
               Navigator.of(context).pop((true, _hour));
             },
           ),
           const SizedBox(height: 8),
           TextCta(
-            label: widget.fromSettings ? 'Cancelar' : 'Agora não',
+            label: widget.fromSettings ? l10n.commonCancel : l10n.commonNotNow,
             color: a.textFaint,
             onTap: () {
               Navigator.of(context).pop((false, _hour));
@@ -168,7 +174,7 @@ class _HourChip extends StatelessWidget {
       child: Column(
         children: [
           Text(
-            option.label,
+            option.label(context.l10n),
             style: AppTypography.label(
               size: 11,
               letterSpacing: 0.8,
@@ -177,7 +183,7 @@ class _HourChip extends StatelessWidget {
           ),
           const SizedBox(height: 4),
           Text(
-            option.echo,
+            option.echo(context.l10n),
             style: AppTypography.title(
               size: 16,
               color: selected ? AppColors.inkOnAccent : a.text,

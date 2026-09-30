@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../l10n/app_language.dart';
 import '../models/recognition.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -67,13 +68,13 @@ class PilgrimIdentityCard extends StatelessWidget {
   bool get _showPrecision =>
       showAccuracy && accuracyPercent != null && accuracyTotal > 0;
 
-  String? get _whisper {
+  String? _whisper(AppLocalizations l10n) {
     final parts = <String>[];
     if (showRank && rank > 0) {
-      parts.add(rank <= 3 ? pilgrimRankEpithet(rank) : '$rankº na caravana');
+      parts.add(rank <= 3 ? pilgrimRankEpithet(rank) : l10n.pilgrimRank(rank));
     }
     if (showLeaderDays && leaderDays > 0) {
-      parts.add(leaderDays == 1 ? '1 dia no topo' : '$leaderDays dias no topo');
+      parts.add(l10n.profileDaysOnTop(leaderDays));
     }
     final record = recordLine?.trim();
     if (record != null && record.isNotEmpty) parts.add(record);
@@ -87,8 +88,11 @@ class PilgrimIdentityCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final displayName = name.trim().isEmpty ? 'Peregrino' : name.trim();
-    final whisper = _whisper;
+    final l10n = context.l10n;
+    final displayName = name.trim().isEmpty
+        ? l10n.pilgrimFallbackName
+        : name.trim();
+    final whisper = _whisper(l10n);
     final rankTone = showRank && rank > 0 && rank <= 3;
 
     final stats = <Widget>[];
@@ -98,10 +102,10 @@ class PilgrimIdentityCard extends StatelessWidget {
     }
 
     if (showSteps) {
-      push(_IdentityStat(value: pilgrimFormatCount(steps), label: 'Passos'));
+      push(_IdentityStat(value: pilgrimFormatCount(steps), label: l10n.pilgrimStatSteps));
     }
     if (showMissions) {
-      push(_IdentityStat(value: pilgrimFormatCount(missions), label: 'Cenas'));
+      push(_IdentityStat(value: pilgrimFormatCount(missions), label: l10n.pilgrimStatScenes));
     }
     if (_showPrecision) {
       push(
@@ -185,7 +189,7 @@ class PilgrimIdentityCard extends StatelessWidget {
                     ] else if (editable) ...[
                       const SizedBox(height: AppSpace.xs + 2),
                       Text(
-                        'Peregrino da caravana',
+                        l10n.pilgrimFallbackName,
                         style: AppTypography.body(
                           size: 13,
                           color: a.textSecondary,

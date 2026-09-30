@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import '../l10n/app_language.dart';
 import '../models/trail.dart';
 import '../models/trail_catalog.dart';
 import '../services/backend_service.dart';
@@ -126,9 +127,13 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
       final String? statusLabel;
       if (done && clearedLabel != null) {
         if (replaying) {
-          statusLabel = '${TrailProgress.modeLabel(storedId)} em curso';
+          statusLabel = context.l10n.journeyModeInProgress(
+            TrailProgress.modeLabel(storedId),
+          );
         } else if (openId != null && !cleared.contains(openId)) {
-          statusLabel = '${TrailProgress.modeLabel(openId)} à frente';
+          statusLabel = context.l10n.journeyModeAhead(
+            TrailProgress.modeLabel(openId),
+          );
         } else {
           statusLabel = clearedLabel;
         }
@@ -244,15 +249,15 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
             children: [
               const SizedBox(height: AppSpace.sm),
               AppSheetHeader(
-                title: item.trail.title,
-                subtitle: item.trail.description,
+                title: item.trail.localizedTitle,
+                subtitle: item.trail.localizedDescription,
                 center: true,
               ),
               const SizedBox(height: AppSpace.xxl),
               Text(
                 item.state == JourneyNodeState.locked
-                    ? 'Continue a jornada anterior para alcançar este horizonte.'
-                    : 'Esta trilha ainda está sendo escrita — em breve no caminho.',
+                    ? context.l10n.journeyLockedHint
+                    : context.l10n.journeySoonHint,
                 textAlign: TextAlign.center,
                 style: AppTypography.label(
                   size: 13,
@@ -303,7 +308,7 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
                       immersive: true,
                       dark: true,
                       title: widget.realm.label,
-                      subtitle: visuals.eyebrow.toUpperCase(),
+                      subtitle: visuals.eyebrow,
                       onBack: () => Navigator.pop(context),
                       leadingGlyph: CinematicGlyph.path,
                       chromeAccent: AppColors.sand,
@@ -396,7 +401,7 @@ class _JumpChip extends StatelessWidget {
               ),
               const SizedBox(width: AppSpace.sm),
               Text(
-                'Onde você está',
+                context.l10n.journeyYouAreHere,
                 style: AppTypography.label(
                   size: 12,
                   color: Appearance.of(context).text,

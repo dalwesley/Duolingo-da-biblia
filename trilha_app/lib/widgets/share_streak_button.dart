@@ -5,6 +5,7 @@ import '../utils/appearance.dart';
 import 'act_feel.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
+import '../l10n/app_language.dart';
 
 /// Compartilhar a sequência — funciona mesmo com streak 0.
 class ShareStreakButton extends StatelessWidget {
@@ -23,36 +24,18 @@ class ShareStreakButton extends StatelessWidget {
     this.asLink = false,
   });
 
-  Future<void> _share() async {
+  Future<void> _share(AppLocalizations l10n) async {
     final name = userName.trim().isEmpty ? '' : '\n— $userName';
     final String body;
     if (streak > 0) {
-      final days = streak == 1 ? '1 dia' : '$streak dias';
-      body =
-          '''
-🔥 $days no Stway!
-
-Estou aprendendo a Bíblia em cenas curtas — $steps passos até agora.$name
-
-Baixe o Stway e venha junto.
-''';
+      body = l10n.streakShareDays(streak, steps, name);
     } else if (steps > 0) {
-      body =
-          '''
-🔥 Estou aprendendo a Bíblia no Stway — $steps passos até agora.$name
-
-Baixe o Stway e venha junto.
-''';
+      body = l10n.streakShareSteps(steps, name);
     } else {
-      body =
-          '''
-🔥 Comecei a aprender a Bíblia com o Stway.$name
-
-Baixe o Stway e venha junto.
-''';
+      body = l10n.streakShareStart(name);
     }
     await SharePlus.instance.share(
-      ShareParams(text: body.trim(), subject: 'Minha sequência no Stway'),
+      ShareParams(text: body.trim(), subject: l10n.streakShareSubject),
     );
   }
 
@@ -61,23 +44,23 @@ Baixe o Stway e venha junto.
     if (asLink) {
       final a = Appearance.of(context);
       return TextCta(
-        label: 'Compartilhar',
+        label: context.l10n.commonShare,
         leading: CinematicGlyph.share,
         color: a.textSecondary,
-        onTap: _share,
+        onTap: () => _share(context.l10n),
       );
     }
 
     if (compact) {
       final a = Appearance.of(context);
       return Tooltip(
-        message: 'Compartilhar sequência',
+        message: context.l10n.streakShareTooltip,
         child: Material(
           color: Colors.transparent,
           child: InkWell(
             onTap: () {
               ActHaptics.light();
-              _share();
+              _share(context.l10n);
             },
             borderRadius: BorderRadius.circular(AppRadii.sm),
             child: SizedBox(
@@ -99,7 +82,7 @@ Baixe o Stway e venha junto.
     return GestureDetector(
       onTap: () {
         ActHaptics.light();
-        _share();
+        _share(context.l10n);
       },
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
@@ -119,7 +102,7 @@ Baixe o Stway e venha junto.
             ),
             const SizedBox(width: AppSpace.sm),
             Text(
-              'Compartilhar',
+              context.l10n.commonShare,
               style: AppTypography.title(size: 12, color: a.text),
             ),
           ],

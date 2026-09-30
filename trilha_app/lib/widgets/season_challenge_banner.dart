@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
 
+import '../l10n/app_language.dart';
 import '../models/caravan_pilgrim_profile.dart';
 import '../models/pilgrim_medals.dart';
 import '../models/trail.dart';
@@ -25,6 +26,7 @@ class SeasonChallengeBanner extends StatelessWidget {
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
     final a = Appearance.of(context);
+    final l10n = context.l10n;
     final uid = context.read<BackendService>().uid ?? '';
     final profile = CaravanPilgrimProfile.fromProgress(
       progress: progress,
@@ -46,16 +48,16 @@ class SeasonChallengeBanner extends StatelessWidget {
     }
     // Abre numa folha: nunca fica vazio — mostra um estado calmo.
     if (season == null || season.tracks.isEmpty) {
-      return const _SeasonQuietCard(
-        title: 'Nenhum desafio aberto agora',
-        body: 'O próximo desafio chega com a nova estação litúrgica.',
+      return _SeasonQuietCard(
+        title: l10n.seasonChallengeEmptyTitle,
+        body: l10n.seasonChallengeEmptyBody,
       );
     }
     final track = season.tracks.first;
     if (track.isComplete) {
       return _SeasonQuietCard(
         title: season.vault.title,
-        body: 'Desafio concluído nesta estação. Bem caminhado.',
+        body: l10n.seasonChallengeDoneBody,
         done: true,
       );
     }
@@ -95,7 +97,7 @@ class SeasonChallengeBanner extends StatelessWidget {
                       Text(
                         next != null
                             ? next.hint
-                            : 'Desafio da temporada em andamento',
+                            : l10n.seasonChallengeInProgress,
                         style: AppTypography.body(
                           size: 12,
                           height: 1.35,
@@ -112,7 +114,9 @@ class SeasonChallengeBanner extends StatelessWidget {
             AppProgressBar(value: track.progress, color: accent, height: 6),
             const SizedBox(height: 6),
             Text(
-              '${(track.progress * 100).round()}% do caminho',
+              l10n.seasonChallengePathPercent(
+                (track.progress * 100).round(),
+              ),
               style: AppTypography.body(
                 size: 12,
                 weight: FontWeight.w700,
@@ -121,9 +125,9 @@ class SeasonChallengeBanner extends StatelessWidget {
             ),
             const SizedBox(height: AppSpace.md),
             CopperCta(
-              label: 'Convidar para o desafio',
+              label: l10n.seasonChallengeInvite,
               trailing: CinematicGlyph.share,
-              onTap: () => _share(vaultTitle),
+              onTap: () => _share(context, vaultTitle),
             ),
           ],
         ),
@@ -131,16 +135,11 @@ class SeasonChallengeBanner extends StatelessWidget {
     );
   }
 
-  static Future<void> _share(String title) async {
-    final body =
-        '''
-🕯️ Entrei no desafio $title no Stway.
-
-Vamos caminhar juntos essa temporada?
-
-${InviteDeepLinkService.openAppFooter()}
-'''
-            .trim();
+  static Future<void> _share(BuildContext context, String title) async {
+    final body = context.l10n.seasonChallengeShareBody(
+      title,
+      InviteDeepLinkService.openAppFooter(),
+    );
     await SharePlus.instance.share(ShareParams(text: body, subject: title));
   }
 }

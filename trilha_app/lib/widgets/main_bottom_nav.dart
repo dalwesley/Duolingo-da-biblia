@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_language.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'act_feel.dart';
@@ -28,12 +29,13 @@ class MainBottomNav extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const tabs = [
-      (glyph: CinematicGlyph.home, label: 'Hoje'),
-      (glyph: CinematicGlyph.path, label: 'Trilhas'),
-      (glyph: CinematicGlyph.book, label: 'Bíblia'),
-      (glyph: CinematicGlyph.people, label: 'Juntos'),
-      (glyph: CinematicGlyph.tune, label: 'Ajustes'),
+    final l10n = context.l10n;
+    final tabs = [
+      (glyph: CinematicGlyph.home, label: l10n.commonToday),
+      (glyph: CinematicGlyph.path, label: l10n.navTrails),
+      (glyph: CinematicGlyph.book, label: l10n.navBible),
+      (glyph: CinematicGlyph.people, label: l10n.navTogether),
+      (glyph: CinematicGlyph.tune, label: l10n.settingsTitle),
     ];
 
     final bottomInset = MediaQuery.of(context).padding.bottom;
@@ -75,7 +77,7 @@ class MainBottomNav extends StatelessWidget {
                     button: true,
                     selected: active,
                     label: alerts.contains(i)
-                        ? '${tab.label}, com novidades'
+                        ? l10n.navTabWithNews(tab.label)
                         : tab.label,
                     excludeSemantics: true,
                     child: Material(

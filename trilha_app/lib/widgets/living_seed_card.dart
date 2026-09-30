@@ -7,6 +7,7 @@ import '../utils/spiritual_growth.dart';
 import 'cinematic_icon.dart';
 import 'relic_panel.dart';
 import 'ui_primitives.dart';
+import '../l10n/app_language.dart';
 
 /// Marcos da sequência diária — deixa claro o que é e o próximo passo.
 class LivingSeedCard extends StatelessWidget {
@@ -126,7 +127,7 @@ class LivingSeedCard extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  growth.streak == 1 ? 'dia' : 'dias',
+                  context.l10n.growthDayUnit(growth.streak).trim(),
                   style: AppTypography.label(size: 10, color: a.textFaint),
                 ),
               ],
@@ -149,9 +150,7 @@ class LivingSeedCard extends StatelessWidget {
         children: [
           RelicChapter(
             title: growth.title,
-            whisper:
-                'Cada dia da sequência sobe um marco: '
-                'Semente, Broto, Ramo, Árvore e Fruto.',
+            whisper: context.l10n.growthWhisper,
             accent: accent,
             trailing: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
@@ -166,7 +165,7 @@ class LivingSeedCard extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  growth.streak == 1 ? 'dia' : 'dias',
+                  context.l10n.growthDayUnit(growth.streak).trim(),
                   style: AppTypography.label(size: 10, color: a.textFaint),
                 ),
               ],
@@ -187,9 +186,8 @@ class LivingSeedCard extends StatelessWidget {
           else if (next != null) ...[
             Text(
               daysLeft == 0
-                  ? 'Próximo marco: ${next.label}'
-                  : 'Próximo: ${next.label} · faltam $daysLeft '
-                        '${daysLeft == 1 ? 'dia' : 'dias'} na sequência',
+                  ? context.l10n.growthNextMilestone(next.label)
+                  : context.l10n.growthNextIn(next.label, daysLeft),
               style: AppTypography.body(
                 size: 13,
                 weight: FontWeight.w800,

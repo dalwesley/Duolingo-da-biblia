@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:home_widget/home_widget.dart';
 
+import '../l10n/l10n_global.dart';
 import 'progress_service.dart';
 
 /// Sincroniza streak e meta diária com o widget da tela inicial (Android/iOS).
@@ -59,6 +60,7 @@ class HomeWidgetService {
     if (progress == null || !progress.isLoaded) return;
     if (Platform.isIOS && !_iosGroupReady) return;
 
+    final l = L10n.current;
     final goal = progress.settings.dailyGoal.clamp(1, 99);
     final done = progress.walkedToday ? progress.missionsToday : 0;
     final streak = progress.streak;
@@ -74,13 +76,15 @@ class HomeWidgetService {
       nextTitle: progress.nextSceneTitle,
       nextTease: progress.nextSceneTease,
     );
-    final streakLabel = streak == 1 ? '1 dia' : '$streak dias';
+    final streakLabel = l.commonDays(streak);
     final nextTitle = (progress.nextSceneTitle ?? '').trim();
     final progressLabel = nextTitle.isNotEmpty
-        ? (goalMet ? 'Amanhã: $nextTitle' : 'Hoje: $nextTitle')
+        ? (goalMet
+            ? l.widgetTomorrowTitle(nextTitle)
+            : l.widgetTodayTitle(nextTitle))
         : (goalMet
-            ? 'Meta concluída'
-            : '$done/$goal cena${goal == 1 ? '' : 's'}');
+            ? l.widgetGoalDone
+            : l.widgetProgressScenes(done, goal));
 
     await HomeWidget.saveWidgetData('streak', streak);
     await HomeWidget.saveWidgetData('missions_done', done);
@@ -107,19 +111,18 @@ class HomeWidgetService {
     String? nextTitle,
     String? nextTease,
   }) {
+    final l = L10n.current;
     final tease = (nextTease ?? '').trim();
     if (goalMet) {
-      return tease.isEmpty ? 'A trilha espera amanhã' : tease;
+      return tease.isEmpty ? l.widgetTrailWaitsTomorrow : tease;
     }
     if (atRisk && streak > 0) {
-      return 'Ficando para trás na caravana — caminhe hoje';
+      return l.widgetBehindCaravan;
     }
     if (tease.isNotEmpty) return tease;
     final title = (nextTitle ?? '').trim();
     if (title.isNotEmpty) return title;
     final left = (goal - done).clamp(1, goal);
-    return left == 1
-        ? 'Falta 1 cena hoje'
-        : 'Faltam $left cenas hoje';
+    return l.widgetScenesLeftToday(left);
   }
 }

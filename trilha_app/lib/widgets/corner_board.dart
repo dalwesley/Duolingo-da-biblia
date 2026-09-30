@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../l10n/app_language.dart';
 import '../models/corner_challenge.dart';
 import '../services/backend_service.dart';
 import '../services/corner_service.dart';
@@ -45,7 +46,7 @@ class DesafioEntry extends StatelessWidget {
 
     return Semantics(
       button: true,
-      label: 'Desafio com ${CornerCopy.firstName(them)}',
+      label: context.l10n.cornerChallengeWith(CornerCopy.firstName(them)),
       excludeSemantics: true,
       child: GlassCard(
         glow: challenge.status == CornerStatus.active ? 0.7 : null,
@@ -167,7 +168,7 @@ class CornerBoard extends StatelessWidget {
 
     if (!backend.isActive) {
       if (hideEmptyChrome) return const SizedBox.shrink();
-      return const EmptyState(
+      return EmptyState(
         glyph: CinematicGlyph.flag,
         title: CornerCopy.boardEmptyTitle,
         body: CornerCopy.needsCloud,

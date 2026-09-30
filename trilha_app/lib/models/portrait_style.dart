@@ -1,3 +1,5 @@
+import '../l10n/l10n_global.dart';
+
 /// Como o peregrino aparece na caravana, na home e no perfil.
 enum PortraitStyle {
   photo,
@@ -9,15 +11,15 @@ extension PortraitStyleX on PortraitStyle {
   String get storageKey => name;
 
   String get label => switch (this) {
-        PortraitStyle.photo => 'Foto',
-        PortraitStyle.letter => 'Letra',
-        PortraitStyle.avatar => 'Avatar',
+        PortraitStyle.photo => L10n.current.portraitPhoto,
+        PortraitStyle.letter => L10n.current.portraitLetter,
+        PortraitStyle.avatar => L10n.current.portraitAvatar,
       };
 
   String get hint => switch (this) {
-        PortraitStyle.photo => 'A foto da sua conta',
-        PortraitStyle.letter => 'As iniciais do nome',
-        PortraitStyle.avatar => 'Um peregrino ilustrado',
+        PortraitStyle.photo => L10n.current.portraitPhotoHint,
+        PortraitStyle.letter => L10n.current.portraitLetterHint,
+        PortraitStyle.avatar => L10n.current.portraitAvatarHint,
       };
 
   static PortraitStyle fromStorage(String? raw) {

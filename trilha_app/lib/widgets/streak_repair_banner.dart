@@ -6,6 +6,7 @@ import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 import 'immersive_background.dart';
 import 'ui_primitives.dart';
+import '../l10n/app_language.dart';
 
 /// Oferta de reparo — restaura a sequência após faltar 1 dia (1×/mês).
 class StreakRepairBanner extends StatelessWidget {
@@ -40,12 +41,12 @@ class StreakRepairBanner extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Reparar sequência',
+                      context.l10n.streakRepairTitle,
                       style: AppTypography.title(size: 16, color: a.text),
                     ),
                     const SizedBox(height: 2),
                     Text(
-                      'Você tinha $broken dias. Restaure para $restored — 1× neste mês.',
+                      context.l10n.streakRepairBody(broken, restored),
                       style: AppTypography.body(
                         size: 12,
                         height: 1.35,
@@ -63,32 +64,22 @@ class StreakRepairBanner extends StatelessWidget {
             children: [
               Expanded(
                 child: CopperCta(
-                  label: 'Reparar',
+                  label: context.l10n.streakRepairAction,
                   trailing: CinematicGlyph.flame,
                   onTap: () async {
                     final ok = await progress.claimStreakRepair();
                     if (!context.mounted || !ok) return;
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
-                        content: Text(
-                          'Sequência restaurada · $restored dias',
-                          style: AppTypography.body(
-                            weight: FontWeight.w700,
-                            color: a.text,
-                          ),
-                        ),
-                        backgroundColor: AppColors.streak.withValues(
-                          alpha: 0.92,
-                        ),
-                        behavior: SnackBarBehavior.floating,
-                      ),
+                    showAppToastFor(
+                      context,
+                      message: context.l10n.streakRepairDone(restored),
+                      glyph: CinematicGlyph.flame,
                     );
                   },
                 ),
               ),
               const SizedBox(width: 10),
               TextCta(
-                label: 'Deixar',
+                label: context.l10n.streakRepairDismiss,
                 color: a.textFaint,
                 onTap: () async {
                   await progress.dismissStreakRepair();
@@ -132,12 +123,12 @@ class StreakRepairCelebrationCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  '$broken dias ainda podem voltar',
+                  context.l10n.streakRepairCanReturn(broken),
                   style: AppTypography.title(size: 14, color: a.text),
                 ),
                 const SizedBox(height: 2),
                 Text(
-                  'Continue com $restored · 1× neste mês',
+                  context.l10n.streakRepairContinueWith(restored),
                   style: AppTypography.body(
                     size: 12,
                     height: 1.3,
@@ -149,7 +140,7 @@ class StreakRepairCelebrationCard extends StatelessWidget {
             ),
           ),
           TextCta(
-            label: 'Reparar',
+            label: context.l10n.streakRepairAction,
             color: AppColors.streak,
             onTap: () async {
               await progress.claimStreakRepair();

@@ -1,0 +1,648 @@
+{
+  "companionSheetFormedTitle": {
+    "pt": "Companhia formada",
+    "en": "Companion joined",
+    "es": "Compañía formada"
+  },
+  "companionSheetFormedBodyNamed": {
+    "pt": "Agora você e {name} caminham juntos.\nFechem os 7 dias da semana: +{steps} passos na jornada para os dois.",
+    "en": "Now you and {name} walk together.\nComplete all 7 days of the week: +{steps} journey steps for both of you.",
+    "es": "Ahora tú y {name} caminan juntos.\nCompleten los 7 días de la semana: +{steps} pasos en el camino para los dos.",
+    "placeholders": {
+      "name": "String",
+      "steps": "int"
+    }
+  },
+  "companionSheetFormedBody": {
+    "pt": "Vocês caminham juntos agora.\nFechem os 7 dias da semana: +{steps} passos na jornada para os dois.",
+    "en": "You walk together now.\nComplete all 7 days of the week: +{steps} journey steps for both of you.",
+    "es": "Ahora caminan juntos.\nCompleten los 7 días de la semana: +{steps} pasos en el camino para los dos.",
+    "placeholders": {
+      "steps": "int"
+    }
+  },
+  "companionSheetFormedCta": {
+    "pt": "Caminhar juntos",
+    "en": "Walk together",
+    "es": "Caminar juntos"
+  },
+  "companionSheetInviteConfirmTitle": {
+    "pt": "Convite de companhia",
+    "en": "Companion invite",
+    "es": "Invitación de compañía"
+  },
+  "companionSheetInviteConfirmSubtitle": {
+    "pt": "Alguém te chamou para caminhar junto.\nUm toque — sem digitar código.",
+    "en": "Someone invited you to walk together.\nOne tap — no code to type.",
+    "es": "Alguien te invitó a caminar juntos.\nUn toque, sin escribir código."
+  },
+  "inviteAcceptCta": {
+    "pt": "Aceitar convite",
+    "en": "Accept invite",
+    "es": "Aceptar invitación"
+  },
+  "inviteCreateFailed": {
+    "pt": "Não foi possível criar o convite. Tente de novo.",
+    "en": "Couldn't create the invite. Try again.",
+    "es": "No se pudo crear la invitación. Inténtalo de nuevo."
+  },
+  "companionSheetPromptBody": {
+    "pt": "Um companheiro. Fechem os 7 dias da semana juntos — os dois ganham +{steps} passos na jornada.",
+    "en": "One companion. Complete all 7 days of the week together — you both get +{steps} journey steps.",
+    "es": "Un compañero. Completen juntos los 7 días de la semana: los dos ganan +{steps} pasos en el camino.",
+    "placeholders": {
+      "steps": "int"
+    }
+  },
+  "companionSheetPromptBodyTomorrow": {
+    "pt": "Amanhã: {scene}. Chame alguém para chegar junto.",
+    "en": "Tomorrow: {scene}. Invite someone to get there together.",
+    "es": "Mañana: {scene}. Invita a alguien para llegar juntos.",
+    "placeholders": {
+      "scene": "String"
+    }
+  },
+  "companionSheetEyebrow": {
+    "pt": "Companhia",
+    "en": "Companion",
+    "es": "Compañía"
+  },
+  "companionSheetPromptTitle": {
+    "pt": "Chame alguém para caminhar",
+    "en": "Invite someone to walk with you",
+    "es": "Invita a alguien a caminar"
+  },
+  "companionSheetInviteCta": {
+    "pt": "Chamar um companheiro",
+    "en": "Invite a companion",
+    "es": "Invitar a un compañero"
+  },
+  "inviteHaveCodeTitle": {
+    "pt": "Tenho um código",
+    "en": "I have a code",
+    "es": "Tengo un código"
+  },
+  "inviteHaveCodeSubtitle": {
+    "pt": "Se você copiou o código no WhatsApp, ele já aparece aqui",
+    "en": "If you copied the code on WhatsApp, it already shows up here",
+    "es": "Si copiaste el código en WhatsApp, ya aparece aquí"
+  },
+  "inviteCodeHint": {
+    "pt": "Código",
+    "en": "Code",
+    "es": "Código"
+  },
+  "inviteScanQr": {
+    "pt": "Escanear QR",
+    "en": "Scan QR",
+    "es": "Escanear QR"
+  },
+  "inviteJoinCta": {
+    "pt": "Entrar",
+    "en": "Join",
+    "es": "Entrar"
+  },
+  "inviteScanHint": {
+    "pt": "Aponte para o QR do convite",
+    "en": "Point at the invite QR code",
+    "es": "Apunta al QR de la invitación"
+  },
+  "juntosInboxNews": {
+    "pt": "Novidades · {count}",
+    "en": "What's new · {count}",
+    "es": "Novedades · {count}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "nudgeDefaultMessage": {
+    "pt": "Tô te esperando na trilha",
+    "en": "I'm waiting for you on the trail",
+    "es": "Te estoy esperando en la ruta",
+    "description": "Friend-to-friend wave message (casual, 1st person)."
+  },
+  "nudgeSendFailed": {
+    "pt": "Não foi possível enviar o aceno.",
+    "en": "Couldn't send the wave.",
+    "es": "No se pudo enviar el saludo."
+  },
+  "nudgeSent": {
+    "pt": "Aceno enviado. {name} vê ao abrir o Stway.",
+    "en": "Wave sent. {name} will see it when they open Stway.",
+    "es": "Saludo enviado. {name} lo verá al abrir Stway.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "nudgeShareSubject": {
+    "pt": "Vamos caminhar juntos?",
+    "en": "Shall we walk together?",
+    "es": "¿Caminamos juntos?"
+  },
+  "nudgeTitle": {
+    "pt": "Acenar para {name}",
+    "en": "Wave to {name}",
+    "es": "Saludar a {name}",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "nudgeAlreadySubtitle": {
+    "pt": "Você já acenou hoje. Mande também no WhatsApp, se quiser.",
+    "en": "You already waved today. Send it on WhatsApp too, if you like.",
+    "es": "Ya saludaste hoy. Envíalo también por WhatsApp, si quieres."
+  },
+  "nudgeInAppSubtitle": {
+    "pt": "Um aceno no app — {name} vê ao abrir o Stway.",
+    "en": "A wave in the app — {name} sees it when they open Stway.",
+    "es": "Un saludo en la app: {name} lo ve al abrir Stway.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "nudgeSignInSubtitle": {
+    "pt": "Entre na conta para acenar no app, ou mande no WhatsApp.",
+    "en": "Sign in to wave in the app, or send it on WhatsApp.",
+    "es": "Inicia sesión para saludar en la app, o envíalo por WhatsApp."
+  },
+  "waveCta": {
+    "pt": "Acenar",
+    "en": "Wave",
+    "es": "Saludar"
+  },
+  "nudgeCompanionFallback": {
+    "pt": "Companheiro",
+    "en": "Companion",
+    "es": "Compañero"
+  },
+  "nudgeCardHeadline": {
+    "pt": "Senti sua falta hoje",
+    "en": "Missed you today",
+    "es": "Te extrañé hoy",
+    "description": "Share image, friend voice."
+  },
+  "nudgeCardDaysAway": {
+    "pt": "{count, plural, =1{1 dia sem estudar} other{{count} dias sem estudar}}",
+    "en": "{count, plural, =1{1 day without studying} other{{count} days without studying}}",
+    "es": "{count, plural, =1{1 día sin estudiar} other{{count} días sin estudiar}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "nudgeCardWaiting": {
+    "pt": "Te esperando",
+    "en": "Waiting for you",
+    "es": "Esperándote"
+  },
+  "nudgeCardWalked": {
+    "pt": "{name} já caminhou",
+    "en": "{name} already walked",
+    "es": "{name} ya caminó",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "nudgeCardCta": {
+    "pt": "Vem retomar comigo no Stway",
+    "en": "Come back and walk with me on Stway",
+    "es": "Vuelve a caminar conmigo en Stway",
+    "description": "Share image, friend voice."
+  },
+  "inviteSomeone": {
+    "pt": "Alguém",
+    "en": "Someone",
+    "es": "Alguien"
+  },
+  "inviteRoomShareText": {
+    "pt": "Entre no Stway com o código {code}.\n\nAinda não tem o app? Baixe: {installUrl}",
+    "en": "Join me on Stway with the code {code}.\n\nDon't have the app yet? Download it: {installUrl}",
+    "es": "Entra en Stway con el código {code}.\n\n¿Aún no tienes la app? Descárgala: {installUrl}",
+    "placeholders": {
+      "code": "String",
+      "installUrl": "String"
+    }
+  },
+  "inviteCompanionShareText": {
+    "pt": "{name} te chamou pra caminhar junto no Stway.\nSem disputa — só presença.\n\nToque para aceitar (já tem o app):\n{link}\n\nAinda não tem o Stway? Baixe e toque no link de novo:\n{installUrl}",
+    "en": "{name} invited you to walk together on Stway.\nNo competition — just showing up.\n\nTap to accept (if you have the app):\n{link}\n\nDon't have Stway yet? Download it and tap the link again:\n{installUrl}",
+    "es": "{name} te invitó a caminar juntos en Stway.\nSin competir, solo presencia.\n\nToca para aceptar (si ya tienes la app):\n{link}\n\n¿Aún no tienes Stway? Descárgalo y toca el enlace otra vez:\n{installUrl}",
+    "placeholders": {
+      "name": "String",
+      "link": "String",
+      "installUrl": "String"
+    },
+    "description": "Share text sent to a friend."
+  },
+  "inviteCodeCopied": {
+    "pt": "Código copiado",
+    "en": "Code copied",
+    "es": "Código copiado"
+  },
+  "inviteShareSubject": {
+    "pt": "Convite Stway — caminhem juntos",
+    "en": "Stway invite — walk together",
+    "es": "Invitación de Stway: caminen juntos"
+  },
+  "inviteReadyTitle": {
+    "pt": "Seu convite está pronto",
+    "en": "Your invite is ready",
+    "es": "Tu invitación está lista"
+  },
+  "inviteSheetSubtitleCompanion": {
+    "pt": "Toque no link, mostre o QR ou envie o card",
+    "en": "Tap the link, show the QR or send the card",
+    "es": "Toca el enlace, muestra el QR o envía la tarjeta"
+  },
+  "inviteSheetSubtitleRoom": {
+    "pt": "Mostre o QR ou envie o código",
+    "en": "Show the QR or send the code",
+    "es": "Muestra el QR o envía el código"
+  },
+  "invitePreparing": {
+    "pt": "Preparando…",
+    "en": "Preparing…",
+    "es": "Preparando…"
+  },
+  "inviteShareCta": {
+    "pt": "Compartilhar convite",
+    "en": "Share invite",
+    "es": "Compartir invitación"
+  },
+  "inviteLinkHint": {
+    "pt": "O link abre o app e aceita sem digitar o código",
+    "en": "The link opens the app and accepts without typing the code",
+    "es": "El enlace abre la app y acepta sin escribir el código"
+  },
+  "inviteCardHeadline": {
+    "pt": "Caminhem juntos",
+    "en": "Walk together",
+    "es": "Caminen juntos"
+  },
+  "inviteCalledYou": {
+    "pt": "{name} te chamou",
+    "en": "{name} invited you",
+    "es": "{name} te invitó",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "inviteCardBody": {
+    "pt": "{name} te chamou para caminhar junto — sem disputa, só presença.",
+    "en": "{name} invited you to walk together — no competition, just showing up.",
+    "es": "{name} te invitó a caminar juntos: sin competir, solo presencia.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "inviteCardInstallHint": {
+    "pt": "Já tem o app? Toque no link do convite.\nAinda não? Baixe o Stway e toque de novo.",
+    "en": "Have the app? Tap the invite link.\nNot yet? Download Stway and tap again.",
+    "es": "¿Ya tienes la app? Toca el enlace de la invitación.\n¿Aún no? Descarga Stway y toca otra vez."
+  },
+  "juntosChromeTabAlert": {
+    "pt": "{label}, novidade",
+    "en": "{label}, new",
+    "es": "{label}, novedad",
+    "placeholders": {
+      "label": "String"
+    },
+    "description": "Screen reader label for a tab with news."
+  },
+  "groupSeatToday": {
+    "pt": "estudou hoje",
+    "en": "studied today",
+    "es": "estudió hoy"
+  },
+  "groupSeatWeek": {
+    "pt": "estudou nesta semana",
+    "en": "studied this week",
+    "es": "estudió esta semana"
+  },
+  "groupSeatNever": {
+    "pt": "ainda não estudou",
+    "en": "hasn't studied yet",
+    "es": "aún no estudió"
+  },
+  "groupSeatIdle": {
+    "pt": "ainda não estudou nesta semana",
+    "en": "hasn't studied this week yet",
+    "es": "aún no estudió esta semana"
+  },
+  "groupDaysAway": {
+    "pt": "{count, plural, =1{1 dia sem estudar} other{{count} dias sem estudar}}",
+    "en": "{count, plural, =1{1 day without studying} other{{count} days without studying}}",
+    "es": "{count, plural, =1{1 día sin estudiar} other{{count} días sin estudiar}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "groupCaptionToday": {
+    "pt": "hoje",
+    "en": "today",
+    "es": "hoy"
+  },
+  "groupCaptionNotYet": {
+    "pt": "ainda não",
+    "en": "not yet",
+    "es": "aún no"
+  },
+  "groupRosterSemantics": {
+    "pt": "{count, plural, =1{{name}, 1 dia nesta semana} other{{name}, {count} dias nesta semana}}",
+    "en": "{count, plural, =1{{name}, 1 day this week} other{{name}, {count} days this week}}",
+    "es": "{count, plural, =1{{name}, 1 día esta semana} other{{name}, {count} días esta semana}}",
+    "placeholders": {
+      "name": "String",
+      "count": "int"
+    }
+  },
+  "groupDayUnit": {
+    "pt": "{count, plural, =1{dia } other{dias }}",
+    "en": "{count, plural, =1{day } other{days }}",
+    "es": "{count, plural, =1{día } other{días }}",
+    "placeholders": {
+      "count": "int"
+    },
+    "description": "Unit under a day count. Trailing space avoids a merge-script false positive; code trims it."
+  },
+  "groupWeekStudy": {
+    "pt": "Estudo da semana",
+    "en": "Study of the week",
+    "es": "Estudio de la semana"
+  },
+  "groupStudySwap": {
+    "pt": "Trocar",
+    "en": "Change",
+    "es": "Cambiar"
+  },
+  "groupLeaderNoteTitle": {
+    "pt": "{title} {name}",
+    "en": "{title} {name}",
+    "es": "{title} {name}",
+    "placeholders": {
+      "title": "String",
+      "name": "String"
+    },
+    "description": "Leader role title followed by first name, e.g. 'Líder Ana'."
+  },
+  "groupStudyNobodyYet": {
+    "pt": "Ninguém fez ainda. Seja o primeiro.",
+    "en": "Nobody has done it yet. Be the first.",
+    "es": "Nadie lo hizo todavía. Sé el primero."
+  },
+  "groupStudyDoneCount": {
+    "pt": "{done} de {total} já fizeram",
+    "en": "{done} of {total} done",
+    "es": "{done} de {total} ya lo hicieron",
+    "placeholders": {
+      "done": "int",
+      "total": "int"
+    }
+  },
+  "groupStudyAgain": {
+    "pt": "Você já fez · Estudar de novo",
+    "en": "You're done · Study again",
+    "es": "Ya lo hiciste · Estudiar de nuevo"
+  },
+  "groupStudyCta": {
+    "pt": "Estudar com o grupo",
+    "en": "Study with the group",
+    "es": "Estudiar con el grupo"
+  },
+  "groupEmptyLeaderTitle": {
+    "pt": "Qual texto o grupo vai estudar nesta semana?",
+    "en": "Which passage will the group study this week?",
+    "es": "¿Qué texto va a estudiar el grupo esta semana?"
+  },
+  "groupEmptyMemberTitle": {
+    "pt": "O texto da semana ainda não chegou.",
+    "en": "This week's passage hasn't arrived yet.",
+    "es": "El texto de la semana aún no llegó."
+  },
+  "groupEmptyLeaderBody": {
+    "pt": "Todos recebem a mesma cena — mesmo quem ainda não chegou nela na trilha.",
+    "en": "Everyone gets the same scene — even those who haven't reached it on the trail yet.",
+    "es": "Todos reciben la misma escena, incluso quien aún no llegó a ella en la ruta."
+  },
+  "groupEmptyMemberBody": {
+    "pt": "{leader} escolhe a cena que o grupo estuda junto.",
+    "en": "{leader} picks the scene the group studies together.",
+    "es": "{leader} elige la escena que el grupo estudia junto.",
+    "placeholders": {
+      "leader": "String"
+    }
+  },
+  "groupPickStudyCta": {
+    "pt": "Escolher o estudo",
+    "en": "Choose the study",
+    "es": "Elegir el estudio"
+  },
+  "groupSeatDaysInWeek": {
+    "pt": "Dias na semana",
+    "en": "Days this week",
+    "es": "Días en la semana"
+  },
+  "groupSeatSteps": {
+    "pt": "Passos",
+    "en": "Steps",
+    "es": "Pasos"
+  },
+  "groupSeatStudyDone": {
+    "pt": "Feito",
+    "en": "Done",
+    "es": "Hecho"
+  },
+  "groupSeatStudyNotYet": {
+    "pt": "Ainda não",
+    "en": "Not yet",
+    "es": "Aún no"
+  },
+  "groupSeatAlreadyWaved": {
+    "pt": "Você já acenou para {name} hoje.",
+    "en": "You already waved to {name} today.",
+    "es": "Ya saludaste a {name} hoy.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "groupNewTitle": {
+    "pt": "Novo grupo",
+    "en": "New group",
+    "es": "Nuevo grupo"
+  },
+  "groupCreateCta": {
+    "pt": "Criar grupo",
+    "en": "Create group",
+    "es": "Crear grupo"
+  },
+  "groupSetupKindLabel": {
+    "pt": "Para que é o grupo",
+    "en": "What the group is for",
+    "es": "Para qué es el grupo"
+  },
+  "groupSetupNameLabel": {
+    "pt": "Nome",
+    "en": "Name",
+    "es": "Nombre"
+  },
+  "groupSetupLimitHint": {
+    "pt": "Até {limit} pessoas. Grupo grande? Abra outro — discipulado acontece em grupo pequeno.",
+    "en": "Up to {limit} people. Big group? Start another — discipleship happens in small groups.",
+    "es": "Hasta {limit} personas. ¿Grupo grande? Abre otro: el discipulado ocurre en grupos pequeños.",
+    "placeholders": {
+      "limit": "int"
+    }
+  },
+  "groupPickerMarkScene": {
+    "pt": "Marcar a cena",
+    "en": "Set the scene",
+    "es": "Marcar la escena"
+  },
+  "groupPickerIntro": {
+    "pt": "Todos do grupo recebem a mesma cena, mesmo quem ainda não chegou nela.",
+    "en": "Everyone in the group gets the same scene, even those who haven't reached it yet.",
+    "es": "Todos en el grupo reciben la misma escena, incluso quien aún no llegó a ella."
+  },
+  "groupPickerPreviewLabel": {
+    "pt": "O grupo vai ver",
+    "en": "The group will see",
+    "es": "El grupo verá"
+  },
+  "groupPickerNoteLabel": {
+    "pt": "Recado para o grupo",
+    "en": "Note for the group",
+    "es": "Mensaje para el grupo"
+  },
+  "groupPickerNoteHint": {
+    "pt": "Opcional. Ex.: Leiam até quarta, conversamos na quinta.",
+    "en": "Optional. E.g.: Read by Wednesday, we'll talk on Thursday.",
+    "es": "Opcional. Ej.: Lean hasta el miércoles, hablamos el jueves."
+  },
+  "groupPickerConfirmCta": {
+    "pt": "Marcar para o grupo",
+    "en": "Set for the group",
+    "es": "Marcar para el grupo"
+  },
+  "groupMenuCopyCode": {
+    "pt": "Copiar código {code}",
+    "en": "Copy code {code}",
+    "es": "Copiar código {code}",
+    "placeholders": {
+      "code": "String"
+    }
+  },
+  "groupMenuLeadSection": {
+    "pt": "Conduzir o grupo",
+    "en": "Lead the group",
+    "es": "Guiar el grupo"
+  },
+  "groupMenuEdit": {
+    "pt": "Editar nome e tipo",
+    "en": "Edit name and type",
+    "es": "Editar nombre y tipo"
+  },
+  "groupMenuGoal": {
+    "pt": "{count, plural, =1{Meta da semana · 1 passo} other{Meta da semana · {count} passos}}",
+    "en": "{count, plural, =1{Weekly goal · 1 step} other{Weekly goal · {count} steps}}",
+    "es": "{count, plural, =1{Meta de la semana · 1 paso} other{Meta de la semana · {count} pasos}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "groupMenuSetGoal": {
+    "pt": "Definir meta da semana",
+    "en": "Set weekly goal",
+    "es": "Definir meta de la semana"
+  },
+  "groupMenuClearStudy": {
+    "pt": "Tirar estudo da semana",
+    "en": "Remove study of the week",
+    "es": "Quitar estudio de la semana"
+  },
+  "groupMenuTransfer": {
+    "pt": "Passar a liderança",
+    "en": "Hand over leadership",
+    "es": "Pasar el liderazgo"
+  },
+  "groupMenuLeave": {
+    "pt": "Sair do grupo",
+    "en": "Leave the group",
+    "es": "Salir del grupo"
+  },
+  "groupMenuClose": {
+    "pt": "Encerrar o grupo",
+    "en": "Close the group",
+    "es": "Cerrar el grupo"
+  },
+  "groupInviteLabel": {
+    "pt": "Convite",
+    "en": "Invite",
+    "es": "Invitación"
+  },
+  "groupInviteBody": {
+    "pt": "{name} te chamou para o grupo · {kind}.",
+    "en": "{name} invited you to the group · {kind}.",
+    "es": "{name} te invitó al grupo · {kind}.",
+    "placeholders": {
+      "name": "String",
+      "kind": "String"
+    }
+  },
+  "groupInviteAccept": {
+    "pt": "Aceitar",
+    "en": "Accept",
+    "es": "Aceptar"
+  },
+  "groupInviteSendFailed": {
+    "pt": "Não foi possível enviar o convite. Tente de novo.",
+    "en": "Couldn't send the invite. Try again.",
+    "es": "No se pudo enviar la invitación. Inténtalo de nuevo."
+  },
+  "groupInviteUndoFailed": {
+    "pt": "Não foi possível desfazer o convite. Tente de novo.",
+    "en": "Couldn't undo the invite. Try again.",
+    "es": "No se pudo deshacer la invitación. Inténtalo de nuevo."
+  },
+  "groupCallTitle": {
+    "pt": "Chamar pessoas",
+    "en": "Invite people",
+    "es": "Invitar personas"
+  },
+  "groupCallSubtitle": {
+    "pt": "O convite aparece no app. Ou mande o link no WhatsApp.",
+    "en": "The invite shows up in the app. Or send the link on WhatsApp.",
+    "es": "La invitación aparece en la app. O envía el enlace por WhatsApp."
+  },
+  "groupCallEmpty": {
+    "pt": "Ninguém da caravana para chamar agora.",
+    "en": "No one from the caravan to invite right now.",
+    "es": "Nadie de la caravana para invitar ahora."
+  },
+  "groupCallFull": {
+    "pt": "Este grupo já tem {count} pessoas.",
+    "en": "This group already has {count} people.",
+    "es": "Este grupo ya tiene {count} personas.",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "groupInviteSent": {
+    "pt": "Convite enviado",
+    "en": "Invite sent",
+    "es": "Invitación enviada"
+  },
+  "groupInviteUndo": {
+    "pt": "Desfazer",
+    "en": "Undo",
+    "es": "Deshacer"
+  },
+  "groupInviteSending": {
+    "pt": "Enviando…",
+    "en": "Sending…",
+    "es": "Enviando…"
+  },
+  "groupInviteCta": {
+    "pt": "Chamar",
+    "en": "Invite",
+    "es": "Invitar"
+  }
+}

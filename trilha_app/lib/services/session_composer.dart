@@ -1,6 +1,8 @@
 import 'dart:math';
 
 import '../data/question_bank.dart';
+import '../l10n/l10n_global.dart';
+import '../l10n/question_overlay.dart';
 import '../models/difficulty.dart';
 import '../models/trail.dart';
 import '../services/progress_service.dart';
@@ -47,6 +49,7 @@ class SessionComposer {
   SessionComposer._();
 
   static Exercise fromBankQuestion(BankQuestion bq, {Random? rng}) {
+    bq = bq.withOverlay();
     final type = bq.type;
     final cid = (bq.correctAnswer ?? '').trim().isNotEmpty
         ? bq.correctAnswer!.trim()
@@ -75,10 +78,9 @@ class SessionComposer {
             template: bq.template,
           );
     final opts = List<QuestionOption>.from(repaired.options);
-    if (type == ExerciseType.choice ||
-        type == ExerciseType.textSupported ||
-        type == ExerciseType.bestInterpretation ||
-        type == ExerciseType.order) {
+    // V/F fica fixo (Verdadeiro, Falso). Todo o resto embaralha: a posição
+    // da resposta nunca pode ser pista.
+    if (type != ExerciseType.trueFalse) {
       opts.shuffle(rng);
     }
 
@@ -90,9 +92,7 @@ class SessionComposer {
       answer = _normalizeVfAnswer(answer, fallback: bq.correctOptionId);
       prompt = vfClaim(prompt);
     }
-    final cue = type == ExerciseType.trueFalse
-        ? prompt
-        : _actCue(bq, prompt);
+    final cue = type == ExerciseType.trueFalse ? prompt : _actCue(bq, prompt);
 
     return Exercise(
       id: bq.id,
@@ -103,9 +103,15 @@ class SessionComposer {
           : prompt,
       cue: cue,
       options: type == ExerciseType.trueFalse
-          ? const [
-              QuestionOption(id: 'true', text: 'Verdadeiro'),
-              QuestionOption(id: 'false', text: 'Falso'),
+          ? [
+              QuestionOption(
+                id: 'true',
+                text: QuestionOverlay.instance.trueLabel,
+              ),
+              QuestionOption(
+                id: 'false',
+                text: QuestionOverlay.instance.falseLabel,
+              ),
             ]
           : opts,
       correctAnswer: answer,
@@ -120,6 +126,7 @@ class SessionComposer {
       note: bq.note,
       noteLabel: bq.noteLabel,
       beat: bq.beat,
+      evidenceSpan: bq.evidenceSpan,
     );
   }
 
@@ -229,7 +236,7 @@ class SessionComposer {
   }) {
     final hookRef = (mission.hookRef ?? '').trim();
     final hookVerse = (mission.hookVerse ?? '').trim();
-    final hookNote = (mission.hookNote ?? '').trim();
+    final hookNote = (mission.localizedHookNote ?? '').trim();
     final hookThread = (mission.hookThread ?? '').trim();
     final fromStudyRef = (studyRef ?? '').trim();
     final fromStudyVerse = (studyVerse ?? '').trim();
@@ -252,14 +259,9 @@ class SessionComposer {
       verse = clipEntranceVerse(verse);
     }
 
-    final introNote = _noteFromIntro(mission.intro, verse: verse);
+    final introNote = _noteFromIntro(mission.localizedIntro, verse: verse);
     final note = _clipEntranceNote(
-      _firstNonEmpty([
-        hookNote,
-        hookThread,
-        fromStudyNote,
-        introNote,
-      ]),
+      _firstNonEmpty([hookNote, hookThread, fromStudyNote, introNote]),
     );
 
     return SessionEntrance(
@@ -307,10 +309,34 @@ class SessionComposer {
   }
 
   static const _feedbackStops = {
-    'para', 'porque', 'por', 'com', 'uma', 'uns', 'pelo', 'pela', 'depois',
-    'antes', 'quando', 'onde', 'quem', 'como', 'isso', 'este', 'esta',
-    'esse', 'essa', 'aquele', 'aquela', 'abre', 'desce', 'sobe', 'vai',
-    'disse', 'deus', 'senhor',
+    'para',
+    'porque',
+    'por',
+    'com',
+    'uma',
+    'uns',
+    'pelo',
+    'pela',
+    'depois',
+    'antes',
+    'quando',
+    'onde',
+    'quem',
+    'como',
+    'isso',
+    'este',
+    'esta',
+    'esse',
+    'essa',
+    'aquele',
+    'aquela',
+    'abre',
+    'desce',
+    'sobe',
+    'vai',
+    'disse',
+    'deus',
+    'senhor',
   };
 
   /// Trecho curto para o overlay de erro: janela em torno da palavra da pergunta,
@@ -332,7 +358,10 @@ class SessionComposer {
         .where((w) => w.length >= 4 && !_feedbackStops.contains(w))
         .map(foldKey)
         .toList();
-    final folded = [for (final w in words) foldKey(w.replaceAll(RegExp(r'[^\p{L}]', unicode: true), ''))];
+    final folded = [
+      for (final w in words)
+        foldKey(w.replaceAll(RegExp(r'[^\p{L}]', unicode: true), '')),
+    ];
 
     var anchor = -1;
     for (final n in needles) {
@@ -369,22 +398,21 @@ class SessionComposer {
     final raw = _tapCueWithoutSpoiler(bq, prompt);
     if (type == ExerciseType.complete) {
       final q = bq.question.trim();
-      if (_genericCompleteCue(raw) &&
-          q.isNotEmpty &&
-          !_genericCompleteCue(q)) {
+      if (_genericCompleteCue(raw) && q.isNotEmpty && !_genericCompleteCue(q)) {
         return q;
       }
     }
     if (type == ExerciseType.order && raw.trim().isEmpty) {
-      return 'Monte a sequência.';
+      return L10n.current.exerciseCueOrder;
     }
     if (type == ExerciseType.match && raw.trim().isEmpty) {
-      return 'Ligue cada par.';
+      return L10n.current.exerciseCueMatch;
     }
     return raw;
   }
 
   /// Tap: enunciado não pode ser o próprio trecho-alvo (`Toque no texto: X`).
+  /// O padrão PT detecta spoiler no banco (conteúdo ainda só em pt-BR).
   static String _tapCueWithoutSpoiler(BankQuestion bq, String prompt) {
     final rawCue = (bq.cue ?? '').trim().isNotEmpty ? bq.cue!.trim() : prompt;
     if (bq.type != ExerciseType.tap && bq.type != ExerciseType.findInText) {
@@ -405,7 +433,7 @@ class SessionComposer {
     if (!spoils(rawCue) && !spoils(prompt)) return rawCue;
     final ask = bq.question.trim();
     if (ask.isNotEmpty) return ask;
-    return 'Toque o trecho que responde.';
+    return L10n.current.exerciseCueTap;
   }
 
   static Exercise fromQuestion(Question q, {required String id, Random? rng}) {
@@ -426,10 +454,10 @@ class SessionComposer {
 
   /// Slot de gesto (aliases não contam como tipos distintos na sessão).
   static ExerciseType gestureSlot(ExerciseType t) => switch (t) {
-        ExerciseType.findInText => ExerciseType.tap,
-        ExerciseType.match => ExerciseType.connect,
-        _ => t,
-      };
+    ExerciseType.findInText => ExerciseType.tap,
+    ExerciseType.match => ExerciseType.connect,
+    _ => t,
+  };
 
   /// Teto de Escolher na sessão mista ([docs/SESSAO_TREINO.md] §4).
   static int maxChoiceActs(int sessionMax) =>
@@ -597,7 +625,8 @@ class SessionComposer {
           return false;
         }
         if (type == ExerciseType.tap) {
-          return q.type == ExerciseType.tap || q.type == ExerciseType.findInText;
+          return q.type == ExerciseType.tap ||
+              q.type == ExerciseType.findInText;
         }
         if (type == ExerciseType.connect) {
           return q.type == ExerciseType.connect || q.type == ExerciseType.match;
@@ -669,8 +698,9 @@ class SessionComposer {
           if (n >= maxChoiceActs(max)) continue;
         }
         if (t == ExerciseType.trueFalse) {
-          final n =
-              picked.where((q) => q.type == ExerciseType.trueFalse).length;
+          final n = picked
+              .where((q) => q.type == ExerciseType.trueFalse)
+              .length;
           if (n >= 2) continue;
         }
         final q = bestFor(t);
@@ -697,9 +727,7 @@ class SessionComposer {
     required Set<String> usedInSession,
     Set<ExerciseType> usedTypes = const {},
   }) {
-    final blocked = {
-      for (final t in usedTypes) gestureSlot(t),
-    };
+    final blocked = {for (final t in usedTypes) gestureSlot(t)};
     final all = QuestionBank.instance.bankQuestionsCacheOrEmpty
         .where(
           (q) =>
@@ -753,13 +781,12 @@ class SessionComposer {
 
     if (usesBank && trailSlug != null) {
       final diffId =
-          progress.difficultyForTrail(trailSlug) ??
-          TrailDifficulty.semente.id;
+          progress.difficultyForTrail(trailSlug) ?? TrailDifficulty.semente.id;
       difficulty = TrailDifficulty.fromId(diffId) ?? TrailDifficulty.semente;
       meta = await QuestionBank.instance.metaFor(difficulty);
     }
 
-    final insight = (mission.centralInsight ?? '').trim();
+    final insight = (mission.localizedCentralInsight ?? '').trim();
 
     // Prática / override: IDs do banco.
     if (questionIdsOverride != null && questionIdsOverride.isNotEmpty) {
@@ -795,8 +822,9 @@ class SessionComposer {
         section: mission.resolvedBankSection,
         trailSlug: mission.bankTrailSlug ?? trailSlug,
       );
-      final max = ProgressService.questionCountForMission(isBoss: mission.isBoss)
-          .clamp(5, 12);
+      final max = ProgressService.questionCountForMission(
+        isBoss: mission.isBoss,
+      ).clamp(5, 12);
       final picked = pickDiverseBankQuestions(
         pool: pool,
         usedIds: progress.usedQuestionIds.toSet(),
@@ -804,7 +832,9 @@ class SessionComposer {
         missionSlug: missionSlug,
         rng: rng,
       );
-      final converted = picked.map((q) => fromBankQuestion(q, rng: rng)).toList();
+      final converted = picked
+          .map((q) => fromBankQuestion(q, rng: rng))
+          .toList();
       final acts = arrangeActs(converted, max: max);
       if (acts.isNotEmpty) {
         return _planWithPalco(
@@ -827,11 +857,7 @@ class SessionComposer {
     final embedded = <Exercise>[];
     for (var i = 0; i < mission.questions.length; i++) {
       embedded.add(
-        fromQuestion(
-          mission.questions[i],
-          id: '${mission.slug}_q$i',
-          rng: rng,
-        ),
+        fromQuestion(mission.questions[i], id: '${mission.slug}_q$i', rng: rng),
       );
     }
     return _planWithPalco(

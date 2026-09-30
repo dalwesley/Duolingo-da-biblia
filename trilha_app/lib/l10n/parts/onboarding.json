@@ -1,0 +1,255 @@
+{
+  "onboardingHoldToCommit": {
+    "pt": "Segure para firmar",
+    "en": "Hold to commit",
+    "es": "Mantén pulsado para fijar"
+  },
+  "onboardingHolding": {
+    "pt": "Firmando…",
+    "en": "Committing…",
+    "es": "Fijando…"
+  },
+  "onboardingOpening": {
+    "pt": "Abrindo…",
+    "en": "Opening…",
+    "es": "Abriendo…"
+  },
+  "onboardingKickerGoal": {
+    "pt": "I   ·   A meta",
+    "en": "I   ·   The goal",
+    "es": "I   ·   La meta"
+  },
+  "onboardingKickerIntent": {
+    "pt": "II   ·   Seu motivo",
+    "en": "II   ·   Your reason",
+    "es": "II   ·   Tu motivo"
+  },
+  "onboardingKickerAppearance": {
+    "pt": "III   ·   Aparência",
+    "en": "III   ·   Appearance",
+    "es": "III   ·   Apariencia"
+  },
+  "onboardingKickerTomorrow": {
+    "pt": "IV   ·   Amanhã",
+    "en": "IV   ·   Tomorrow",
+    "es": "IV   ·   Mañana"
+  },
+  "onboardingKickerJourney": {
+    "pt": "V   ·   A jornada",
+    "en": "V   ·   The journey",
+    "es": "V   ·   La jornada"
+  },
+  "onboardingMinutes": {
+    "pt": "Minutos",
+    "en": "Minutes",
+    "es": "Minutos"
+  },
+  "onboardingEveryDay": {
+    "pt": "Todo dia.",
+    "en": "Every day.",
+    "es": "Todos los días."
+  },
+  "onboardingHabitBody": {
+    "pt": "Conhecer a Deus não pede uma maratona.\nPede que você volte, todo dia.",
+    "en": "Knowing God doesn't ask for a marathon.\nIt asks that you come back, every day.",
+    "es": "Conocer a Dios no pide una maratón.\nPide que vuelvas, todos los días."
+  },
+  "onboardingYourPace": {
+    "pt": "Seu ritmo",
+    "en": "Your pace",
+    "es": "Tu ritmo"
+  },
+  "onboardingPaceCaption": {
+    "pt": "{scenes, plural, =1{1 cena por dia · ~{minutes} min} other{{scenes} cenas por dia · ~{minutes} min}}",
+    "en": "{scenes, plural, =1{1 scene a day · ~{minutes} min} other{{scenes} scenes a day · ~{minutes} min}}",
+    "es": "{scenes, plural, =1{1 escena al día · ~{minutes} min} other{{scenes} escenas al día · ~{minutes} min}}",
+    "placeholders": {
+      "scenes": "int",
+      "minutes": "int"
+    }
+  },
+  "onboardingIntentKnowTitle": {
+    "pt": "Conhecer a Deus",
+    "en": "Know God",
+    "es": "Conocer a Dios"
+  },
+  "onboardingIntentKnowCaption": {
+    "pt": "de perto",
+    "en": "up close",
+    "es": "de cerca"
+  },
+  "onboardingIntentKnowPromise": {
+    "pt": "conhecer a Deus\ncomeça com uma cena.",
+    "en": "knowing God\nstarts with one scene.",
+    "es": "conocer a Dios\nempieza con una escena."
+  },
+  "onboardingIntentHabitTitle": {
+    "pt": "Criar uma sequência",
+    "en": "Build a streak",
+    "es": "Crear una racha"
+  },
+  "onboardingIntentHabitCaption": {
+    "pt": "todo dia",
+    "en": "every day",
+    "es": "todos los días"
+  },
+  "onboardingIntentHabitPromise": {
+    "pt": "a sequência\ncomeça hoje.",
+    "en": "the streak\nstarts today.",
+    "es": "la racha\nempieza hoy."
+  },
+  "onboardingIntentUnderstandTitle": {
+    "pt": "Entender a Bíblia",
+    "en": "Understand the Bible",
+    "es": "Entender la Biblia"
+  },
+  "onboardingIntentUnderstandCaption": {
+    "pt": "de verdade",
+    "en": "for real",
+    "es": "de verdad"
+  },
+  "onboardingIntentUnderstandPromise": {
+    "pt": "entender a Bíblia\ncomeça pelo começo.",
+    "en": "understanding the Bible\nstarts at the beginning.",
+    "es": "entender la Biblia\nempieza por el principio."
+  },
+  "onboardingIntentPeaceTitle": {
+    "pt": "Paz no dia",
+    "en": "Peace in your day",
+    "es": "Paz en el día"
+  },
+  "onboardingIntentPeaceCaption": {
+    "pt": "um respiro",
+    "en": "a breath",
+    "es": "un respiro"
+  },
+  "onboardingIntentPeacePromise": {
+    "pt": "a paz do dia\ncomeça aqui.",
+    "en": "the peace of the day\nstarts here.",
+    "es": "la paz del día\nempieza aquí."
+  },
+  "onboardingDefaultPromise": {
+    "pt": "a primeira cena\njá está no caminho.",
+    "en": "the first scene\nis already on the path.",
+    "es": "la primera escena\nya está en el camino."
+  },
+  "onboardingIntentQuestion": {
+    "pt": "O que te traz aqui?",
+    "en": "What brings you here?",
+    "es": "¿Qué te trae aquí?"
+  },
+  "onboardingIntentBody": {
+    "pt": "Cada cena: leia, responda, entenda.\nSeu motivo abre o caminho.",
+    "en": "Each scene: read, answer, understand.\nYour reason opens the path.",
+    "es": "Cada escena: lee, responde, entiende.\nTu motivo abre el camino."
+  },
+  "onboardingAppearanceTitle": {
+    "pt": "Escolha a aparência.",
+    "en": "Choose your appearance.",
+    "es": "Elige la apariencia."
+  },
+  "onboardingAppearanceBody": {
+    "pt": "Ela vale para o app inteiro.\nDá para trocar depois nos Ajustes.",
+    "en": "It applies to the whole app.\nYou can change it later in Settings.",
+    "es": "Vale para toda la app.\nPuedes cambiarla después en Ajustes."
+  },
+  "onboardingAppearanceSemantics": {
+    "pt": "Aparência {theme}",
+    "en": "Appearance {theme}",
+    "es": "Apariencia {theme}",
+    "placeholders": {
+      "theme": "String"
+    }
+  },
+  "onboardingTomorrowWord": {
+    "pt": "Amanhã",
+    "en": "Tomorrow",
+    "es": "Mañana"
+  },
+  "onboardingTomorrowBody": {
+    "pt": "O hábito nasce quando você volta.\nFirme com você mesmo um começo.",
+    "en": "The habit is born when you come back.\nCommit with yourself to a start.",
+    "es": "El hábito nace cuando vuelves.\nFija contigo mismo un comienzo."
+  },
+  "onboardingCommitmentLabel": {
+    "pt": "Meu compromisso",
+    "en": "My commitment",
+    "es": "Mi compromiso"
+  },
+  "onboardingRemindAtLabel": {
+    "pt": "Te lembramos às",
+    "en": "We'll remind you at",
+    "es": "Te recordamos a las"
+  },
+  "onboardingReminderMorning": {
+    "pt": "Um lembrete de manhã",
+    "en": "A morning reminder",
+    "es": "Un recordatorio por la mañana"
+  },
+  "onboardingReminderNoon": {
+    "pt": "Um lembrete ao meio-dia",
+    "en": "A midday reminder",
+    "es": "Un recordatorio al mediodía"
+  },
+  "onboardingReminderNight": {
+    "pt": "Um lembrete à noite",
+    "en": "An evening reminder",
+    "es": "Un recordatorio por la noche"
+  },
+  "onboardingStreakWeek": {
+    "pt": "Uma semana de sequência",
+    "en": "One week of streak",
+    "es": "Una semana de racha"
+  },
+  "onboardingStreakTwoWeeks": {
+    "pt": "Duas semanas de sequência",
+    "en": "Two weeks of streak",
+    "es": "Dos semanas de racha"
+  },
+  "onboardingStreakMonth": {
+    "pt": "Um mês inteiro",
+    "en": "A full month",
+    "es": "Un mes entero"
+  },
+  "onboardingStreakDays": {
+    "pt": "{count} dias de sequência",
+    "en": "{count} days of streak",
+    "es": "{count} días de racha",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "onboardingNamePrompt": {
+    "pt": "Como te chamamos",
+    "en": "What should we call you",
+    "es": "Cómo te llamamos"
+  },
+  "onboardingNameHint": {
+    "pt": "seu nome",
+    "en": "your name",
+    "es": "tu nombre"
+  },
+  "onboardingDayOneOf": {
+    "pt": "Hoje  ·  dia 1 de {goal}",
+    "en": "Today  ·  day 1 of {goal}",
+    "es": "Hoy  ·  día 1 de {goal}",
+    "placeholders": {
+      "goal": "int"
+    }
+  },
+  "onboardingFiveLamps": {
+    "pt": "5 lâmpadas",
+    "en": "5 lamps",
+    "es": "5 lámparas"
+  },
+  "onboardingFirstSceneTitle": {
+    "pt": "Quem criou o mundo?",
+    "en": "Who created the world?",
+    "es": "¿Quién creó el mundo?"
+  },
+  "onboardingFirstSceneMeta": {
+    "pt": "Leia · responda · entenda  ·  ~3 min",
+    "en": "Read · answer · understand  ·  ~3 min",
+    "es": "Lee · responde · entiende  ·  ~3 min"
+  }
+}

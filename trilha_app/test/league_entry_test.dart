@@ -20,7 +20,7 @@ void main() {
         lastSeenDate: '2025-12-20',
       );
       final pills = entry.metaPills(rank: 1);
-      expect(pills.map((p) => p.label), ['Líder', '25/12', 'Online 20/12']);
+      expect(pills.map((p) => p.label), ['Líder', '25/12', 'Visto 20/12']);
     });
 
     test('metaPills hides redundant online when walked today', () {
@@ -54,7 +54,7 @@ void main() {
         steps: 100,
         lastSeenDate: today,
       );
-      expect(entry.lastOnlineLabel, 'Online hoje');
+      expect(entry.lastOnlineLabel, 'Visto hoje');
     });
   });
 
@@ -72,9 +72,9 @@ void main() {
     });
 
     test('onlineCountLabel', () {
-      expect(LeagueService.onlineCountLabel(0), '0 online');
-      expect(LeagueService.onlineCountLabel(1), '1 online');
-      expect(LeagueService.onlineCountLabel(3), '3 online');
+      expect(LeagueService.onlineCountLabel(0), '0 estudando');
+      expect(LeagueService.onlineCountLabel(1), '1 estudando');
+      expect(LeagueService.onlineCountLabel(3), '3 estudando');
     });
   });
 }

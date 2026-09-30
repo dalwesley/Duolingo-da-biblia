@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 
+import '../l10n/l10n_global.dart';
 import 'backend_service.dart';
 
 /// Caminho pedido no mapa — os 4 reinos + catch-all.
@@ -12,28 +13,29 @@ enum TrailSuggestionRealm {
   outros;
 
   String get id => switch (this) {
-        antigoTestamento => 'antigo-testamento',
-        novoTestamento => 'novo-testamento',
-        vidaCrista => 'vida-crista',
-        teologia => 'teologia',
-        outros => 'outros',
-      };
+    antigoTestamento => 'antigo-testamento',
+    novoTestamento => 'novo-testamento',
+    vidaCrista => 'vida-crista',
+    teologia => 'teologia',
+    outros => 'outros',
+  };
 
+  /// Rótulo na interface (idioma atual). O valor gravado é [id].
   String get label => switch (this) {
-        antigoTestamento => 'Antigo Testamento',
-        novoTestamento => 'Novo Testamento',
-        vidaCrista => 'Vida Cristã',
-        teologia => 'Teologia',
-        outros => 'Outros',
-      };
+    antigoTestamento => L10n.current.realmAntigoTestamento,
+    novoTestamento => L10n.current.realmNovoTestamento,
+    vidaCrista => L10n.current.realmVidaCrista,
+    teologia => L10n.current.realmTeologia,
+    outros => L10n.current.realmOther,
+  };
 
   String get hint => switch (this) {
-        antigoTestamento => 'Ex.: Salmos, Êxodo, os profetas…',
-        novoTestamento => 'Ex.: o Sermão do Monte, Romanos, Atos…',
-        vidaCrista => 'Ex.: oração, jejum, a história da igreja…',
-        teologia => 'Ex.: Trindade, hermenêutica, hebraico…',
-        outros => 'Ex.: um tema, um livro ou uma pergunta que ainda falta…',
-      };
+    antigoTestamento => L10n.current.suggestionHintAntigoTestamento,
+    novoTestamento => L10n.current.suggestionHintNovoTestamento,
+    vidaCrista => L10n.current.suggestionHintVidaCrista,
+    teologia => L10n.current.suggestionHintTeologia,
+    outros => L10n.current.suggestionHintOther,
+  };
 
   static TrailSuggestionRealm? fromId(String? id) {
     if (id == null || id.isEmpty) return null;

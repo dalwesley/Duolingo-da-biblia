@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+import '../l10n/app_language.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'act_feel.dart';
@@ -65,17 +66,16 @@ class _ResetProgressSheetState extends State<_ResetProgressSheet> {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          const AppSheetHeader(
+          AppSheetHeader(
             center: true,
-            leading: CinematicIcon(
+            leading: const CinematicIcon(
               glyph: CinematicGlyph.fall,
               size: 52,
               accent: accent,
               glowing: false,
             ),
-            title: 'Resetar progresso',
-            subtitle:
-                'Todos os passos, a sequência e o progresso serão apagados. A introdução volta a aparecer. Não dá para desfazer.',
+            title: context.l10n.resetTitle,
+            subtitle: context.l10n.resetBody,
           ),
           const SizedBox(height: AppSpace.lg),
           _AwarenessCheck(
@@ -107,13 +107,15 @@ class _ResetProgressSheetState extends State<_ResetProgressSheet> {
               ),
             ),
             child: Text(
-              _remaining > 0 ? 'Confirmar · ${_remaining}s' : 'Confirmar',
+              _remaining > 0
+                  ? context.l10n.resetConfirmCountdown(_remaining)
+                  : context.l10n.resetConfirm,
               style: CopperCta.labelStyle(size: 16, color: Colors.white),
             ),
           ),
           const SizedBox(height: AppSpace.sm),
           GhostCta(
-            label: 'Cancelar',
+            label: context.l10n.commonCancel,
             expanded: true,
             onTap: () => Navigator.pop(context, false),
           ),
@@ -136,7 +138,7 @@ class _AwarenessCheck extends StatelessWidget {
 
     return Semantics(
       checked: checked,
-      label: 'Estou ciente de que vou perder o progresso',
+      label: context.l10n.resetAwareness,
       excludeSemantics: true,
       child: Material(
         color: Colors.transparent,
@@ -171,7 +173,7 @@ class _AwarenessCheck extends StatelessWidget {
                 const SizedBox(width: AppSpace.md),
                 Expanded(
                   child: Text(
-                    'Estou ciente de que vou perder o progresso',
+                    context.l10n.resetAwareness,
                     style: AppTypography.body(
                       size: 13,
                       height: 1.35,

@@ -1,3 +1,5 @@
+import '../l10n/app_language.dart';
+import '../l10n/l10n_global.dart';
 import '../models/season_walk.dart';
 import '../utils/liturgical_calendar.dart';
 
@@ -20,14 +22,17 @@ class SeasonWalkCatalog {
         insight: insight,
       );
 
-  static SeasonWalkCampaign advent2026(DateTime start) => SeasonWalkCampaign(
-        id: 'advento-2026',
-        kind: SeasonWalkKind.advent,
-        title: 'Advento 2026',
-        subtitle: 'Espera do Verbo · uma cena por dia',
-        start: DateTime(start.year, start.month, start.day),
-        days: _advent,
-      );
+  static SeasonWalkCampaign advent2026(DateTime start) {
+    final l = L10n.current;
+    return SeasonWalkCampaign(
+      id: 'advento-2026',
+      kind: SeasonWalkKind.advent,
+      title: l.seasonWalkAdvento2026Title,
+      subtitle: l.seasonWalkAdvento2026Subtitle,
+      start: DateTime(start.year, start.month, start.day),
+      days: _adventDays(l),
+    );
+  }
 
   static List<SeasonWalkCampaign> all([DateTime? now]) {
     final day = now ?? DateTime.now();
@@ -80,32 +85,63 @@ class SeasonWalkCatalog {
   static const _sl = 'salmos';
   static const _fp = 'filipenses';
 
-  static final _advent = <SeasonWalkDay>[
-    _day(1, 'evg-01-encarnacao', _evg, 'O Verbo se fez carne', 'Deus se aproximou'),
-    _day(2, 'gen-01-criador', _g, 'No princípio', 'Deus é o centro, não eu'),
-    _day(3, 'gen-03-imagem', _g, 'Imagem', 'Fomos feitos para refletir'),
-    _day(4, 'gen12-01-chamado', _g12, 'Chamado', 'A fé anda quando Deus chama'),
-    _day(5, 'gen12-04-alianca-estrelas', _g12, 'Estrelas', 'A promessa é maior que o medo'),
-    _day(6, 'gen12-09-moria', _g12, 'Moriah', 'Deus proverá o cordeiro'),
-    _day(7, 'exo-02-moises', _exo, 'Moisés', 'Deus levanta libertador'),
-    _day(8, 'exo-04-pascoa', _exo, 'Páscoa', 'O sangue guarda a casa'),
-    _day(9, 'sm-01-rei-no-monte', _sm, 'O Rei no monte', 'O Reino tem voz'),
-    _day(10, 'sm-02-pobres-de-espirito', _sm, 'Pobres de espírito', 'O Reino cabe no vazio'),
-    _day(11, 'sm-03-os-que-choram', _sm, 'Os que choram', 'Há conforto para quem chora'),
-    _day(12, 'sm-08-pacificadores', _sm, 'Pacificadores', 'Shalom é missão'),
-    _day(13, 'evg-02-batismo', _evg, 'Batismo', 'O céu se abre sobre o Filho'),
-    _day(14, 'evg-04-sermao', _evg, 'Sermão', 'O monte ensina o Reino'),
-    _day(15, 'or-01-pai-nosso', _or, 'Pai nosso', 'Orar é pedir o Reino'),
-    _day(16, 'salmos-louvor-02-o-senhor-e-o-meu-pas', _sl, 'Meu pastor', 'Nada me faltará'),
-    _day(17, 'fp-02-humildade', _fp, 'Humildade', 'Cristo desceu até a cruz'),
-    _day(18, 'evg-05-parabolas', _evg, 'Parábolas', 'O Reino se escuta em história'),
-    _day(19, 'evg-06-milagres', _evg, 'Milagres', 'O Reino toca o corpo'),
-    _day(20, 'sm-21-tesouros-e-ansiedade', _sm, 'Ansiedade', 'O tesouro puxa o coração'),
-    _day(21, 'evg-07-ceia', _evg, 'Ceia', 'O pão antecipa a entrega'),
-    _day(22, 'evg-08-cruz', _evg, 'Cruz', 'O Rei reina pregado'),
-    _day(23, 'evg-09-ressurreicao', _evg, 'Ressurreição', 'A espera não foi vã'),
-    _day(24, 'gen-04-descanso', _g, 'Descanso', 'O sétimo dia é dádiva'),
-    _day(25, 'fp-01-alegria', _fp, 'Alegria', 'Alegrai-vos no Senhor'),
-    _day(26, 'sm-05-fome-e-sede-de-justica', _sm, 'Fome de justiça', 'Quem tem fome será farto'),
-  ];
+  static List<SeasonWalkDay> _adventDays(AppLocalizations l) => [
+        _day(1, 'evg-01-encarnacao', _evg, l.seasonWalkAdvento2026Day01Title,
+            l.seasonWalkAdvento2026Day01Insight),
+        _day(2, 'gen-01-criador', _g, l.seasonWalkAdvento2026Day02Title,
+            l.seasonWalkAdvento2026Day02Insight),
+        _day(3, 'gen-03-imagem', _g, l.seasonWalkAdvento2026Day03Title,
+            l.seasonWalkAdvento2026Day03Insight),
+        _day(4, 'gen12-01-chamado', _g12, l.seasonWalkAdvento2026Day04Title,
+            l.seasonWalkAdvento2026Day04Insight),
+        _day(5, 'gen12-04-alianca-estrelas', _g12,
+            l.seasonWalkAdvento2026Day05Title,
+            l.seasonWalkAdvento2026Day05Insight),
+        _day(6, 'gen12-09-moria', _g12, l.seasonWalkAdvento2026Day06Title,
+            l.seasonWalkAdvento2026Day06Insight),
+        _day(7, 'exo-02-moises', _exo, l.seasonWalkAdvento2026Day07Title,
+            l.seasonWalkAdvento2026Day07Insight),
+        _day(8, 'exo-04-pascoa', _exo, l.seasonWalkAdvento2026Day08Title,
+            l.seasonWalkAdvento2026Day08Insight),
+        _day(9, 'sm-01-rei-no-monte', _sm, l.seasonWalkAdvento2026Day09Title,
+            l.seasonWalkAdvento2026Day09Insight),
+        _day(10, 'sm-02-pobres-de-espirito', _sm,
+            l.seasonWalkAdvento2026Day10Title,
+            l.seasonWalkAdvento2026Day10Insight),
+        _day(11, 'sm-03-os-que-choram', _sm, l.seasonWalkAdvento2026Day11Title,
+            l.seasonWalkAdvento2026Day11Insight),
+        _day(12, 'sm-08-pacificadores', _sm, l.seasonWalkAdvento2026Day12Title,
+            l.seasonWalkAdvento2026Day12Insight),
+        _day(13, 'evg-02-batismo', _evg, l.seasonWalkAdvento2026Day13Title,
+            l.seasonWalkAdvento2026Day13Insight),
+        _day(14, 'evg-04-sermao', _evg, l.seasonWalkAdvento2026Day14Title,
+            l.seasonWalkAdvento2026Day14Insight),
+        _day(15, 'or-01-pai-nosso', _or, l.seasonWalkAdvento2026Day15Title,
+            l.seasonWalkAdvento2026Day15Insight),
+        _day(16, 'salmos-louvor-02-o-senhor-e-o-meu-pas', _sl,
+            l.seasonWalkAdvento2026Day16Title,
+            l.seasonWalkAdvento2026Day16Insight),
+        _day(17, 'fp-02-humildade', _fp, l.seasonWalkAdvento2026Day17Title,
+            l.seasonWalkAdvento2026Day17Insight),
+        _day(18, 'evg-05-parabolas', _evg, l.seasonWalkAdvento2026Day18Title,
+            l.seasonWalkAdvento2026Day18Insight),
+        _day(19, 'evg-06-milagres', _evg, l.seasonWalkAdvento2026Day19Title,
+            l.seasonWalkAdvento2026Day19Insight),
+        _day(20, 'sm-21-tesouros-e-ansiedade', _sm,
+            l.seasonWalkAdvento2026Day20Title,
+            l.seasonWalkAdvento2026Day20Insight),
+        _day(21, 'evg-07-ceia', _evg, l.seasonWalkAdvento2026Day21Title,
+            l.seasonWalkAdvento2026Day21Insight),
+        _day(22, 'evg-08-cruz', _evg, l.seasonWalkAdvento2026Day22Title,
+            l.seasonWalkAdvento2026Day22Insight),
+        _day(23, 'evg-09-ressurreicao', _evg, l.seasonWalkAdvento2026Day23Title,
+            l.seasonWalkAdvento2026Day23Insight),
+        _day(24, 'gen-04-descanso', _g, l.seasonWalkAdvento2026Day24Title,
+            l.seasonWalkAdvento2026Day24Insight),
+        _day(25, 'fp-01-alegria', _fp, l.seasonWalkAdvento2026Day25Title,
+            l.seasonWalkAdvento2026Day25Insight),
+        _day(26, 'sm-05-fome-e-sede-de-justica', _sm,
+            l.seasonWalkAdvento2026Day26Title,
+            l.seasonWalkAdvento2026Day26Insight),
+      ];
 }

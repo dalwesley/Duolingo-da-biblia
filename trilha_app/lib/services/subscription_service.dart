@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 
+import '../l10n/l10n_global.dart';
 import 'notification_service.dart';
 
 /// Assinatura "Peregrino+" via RevenueCat.
@@ -113,12 +114,12 @@ class SubscriptionService extends ChangeNotifier {
     } on PlatformException catch (e) {
       final code = PurchasesErrorHelper.getErrorCode(e);
       if (code != PurchasesErrorCode.purchaseCancelledError) {
-        lastError = 'Não foi possível concluir a compra.';
+        lastError = L10n.current.paywallPurchaseFailed;
         debugPrint('Falha na compra: $code $e');
       }
       return false;
     } catch (e) {
-      lastError = 'Não foi possível concluir a compra.';
+      lastError = L10n.current.paywallPurchaseFailed;
       debugPrint('Falha na compra: $e');
       return false;
     } finally {
@@ -135,7 +136,7 @@ class SubscriptionService extends ChangeNotifier {
       final info = await Purchases.restorePurchases();
       _onCustomerInfo(info);
     } catch (e) {
-      lastError = 'Não foi possível restaurar a compra.';
+      lastError = L10n.current.paywallRestoreFailed;
       debugPrint('Falha ao restaurar compra: $e');
     } finally {
       loading = false;
@@ -145,20 +146,22 @@ class SubscriptionService extends ChangeNotifier {
 
   static String packageLabel(Package package) {
     final product = package.storeProduct;
-    final period = switch (package.packageType) {
-      PackageType.monthly => 'por mês',
-      PackageType.annual => 'por ano',
-      PackageType.lifetime => 'pagamento único',
-      PackageType.weekly => 'por semana',
-      PackageType.sixMonth => 'por 6 meses',
-      PackageType.threeMonth => 'por 3 meses',
-      PackageType.twoMonth => 'por 2 meses',
+    final price = product.priceString;
+    final l10n = L10n.current;
+    final label = switch (package.packageType) {
+      PackageType.monthly => l10n.paywallPriceMonthly(price),
+      PackageType.annual => l10n.paywallPriceAnnual(price),
+      PackageType.lifetime => l10n.paywallPriceLifetime(price),
+      PackageType.weekly => l10n.paywallPriceWeekly(price),
+      PackageType.sixMonth => l10n.paywallPriceMonths(6, price),
+      PackageType.threeMonth => l10n.paywallPriceMonths(3, price),
+      PackageType.twoMonth => l10n.paywallPriceMonths(2, price),
       _ => '',
     };
-    if (period.isEmpty) {
+    if (label.isEmpty) {
       final title = product.title.trim();
       return title.isEmpty ? product.priceString : '$title · ${product.priceString}';
     }
-    return '${product.priceString} $period';
+    return label;
   }
 }

@@ -1,0 +1,320 @@
+{
+  "modeSementeLabel": {
+    "pt": "Observação",
+    "en": "Observation",
+    "es": "Observación",
+    "description": "Nome do 1º modo (id interno semente)"
+  },
+  "modeCaminhadaLabel": {
+    "pt": "Compreensão",
+    "en": "Understanding",
+    "es": "Comprensión",
+    "description": "Nome do 2º modo (id interno caminhada)"
+  },
+  "modeProfundezasLabel": {
+    "pt": "Interpretação",
+    "en": "Interpretation",
+    "es": "Interpretación",
+    "description": "Nome do 3º modo (id interno profundezas)"
+  },
+  "modeSementeTagline": {
+    "pt": "O que o texto diz",
+    "en": "What the text says",
+    "es": "Lo que dice el texto"
+  },
+  "modeCaminhadaTagline": {
+    "pt": "O que o texto comunica",
+    "en": "What the text conveys",
+    "es": "Lo que comunica el texto"
+  },
+  "modeProfundezasTagline": {
+    "pt": "O que o texto significa",
+    "en": "What the text means",
+    "es": "Lo que significa el texto"
+  },
+  "modeSementeSkill1": {
+    "pt": "Reconhecer",
+    "en": "Recognize",
+    "es": "Reconocer"
+  },
+  "modeSementeSkill2": {
+    "pt": "Identificar",
+    "en": "Identify",
+    "es": "Identificar"
+  },
+  "modeSementeSkill3": {
+    "pt": "Ordenar",
+    "en": "Sequence",
+    "es": "Ordenar"
+  },
+  "modeCaminhadaSkill1": {
+    "pt": "Relacionar",
+    "en": "Relate",
+    "es": "Relacionar"
+  },
+  "modeCaminhadaSkill2": {
+    "pt": "Comparar",
+    "en": "Compare",
+    "es": "Comparar"
+  },
+  "modeCaminhadaSkill3": {
+    "pt": "Encadear",
+    "en": "Connect",
+    "es": "Encadenar"
+  },
+  "modeProfundezasSkill1": {
+    "pt": "Interpretar",
+    "en": "Interpret",
+    "es": "Interpretar"
+  },
+  "modeProfundezasSkill2": {
+    "pt": "Sustentar",
+    "en": "Support",
+    "es": "Sustentar"
+  },
+  "modeProfundezasSkill3": {
+    "pt": "Aplicar",
+    "en": "Apply",
+    "es": "Aplicar"
+  },
+  "modeSementeBlurb": {
+    "pt": "Repare nas palavras, nos fatos e na ordem em que acontecem.",
+    "en": "Notice the words, the facts, and the order they happen in.",
+    "es": "Fíjate en las palabras, los hechos y el orden en que suceden."
+  },
+  "modeCaminhadaBlurb": {
+    "pt": "Ligue os fatos: causas, contexto e o fio da narrativa.",
+    "en": "Connect the facts: causes, context, and the thread of the story.",
+    "es": "Conecta los hechos: causas, contexto y el hilo de la narración."
+  },
+  "modeProfundezasBlurb": {
+    "pt": "Busque o sentido: o que o texto revela de Deus e para você.",
+    "en": "Look for the meaning: what the text reveals about God and for you.",
+    "es": "Busca el sentido: lo que el texto revela de Dios y para ti."
+  },
+  "modeCleared": {
+    "pt": "{name} concluída",
+    "en": "{name} complete",
+    "es": "{name} completada",
+    "placeholders": {
+      "name": "String"
+    },
+    "description": "Modo concluído; name = nome do modo (Observação…)"
+  },
+  "modeLocked": {
+    "pt": "{name} bloqueada",
+    "en": "{name} locked",
+    "es": "{name} bloqueada",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "modeCurrent": {
+    "pt": "{name} atual",
+    "en": "{name}, current",
+    "es": "{name} actual",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "modeCaptionCleared": {
+    "pt": "concluída",
+    "en": "complete",
+    "es": "completada",
+    "description": "Legenda sob o emblema do modo"
+  },
+  "modeCaptionLocked": {
+    "pt": "bloqueada",
+    "en": "locked",
+    "es": "bloqueada"
+  },
+  "modeCaptionCurrent": {
+    "pt": "atual",
+    "en": "current",
+    "es": "actual"
+  },
+  "modeNamed": {
+    "pt": "Modo {name}",
+    "en": "{name} mode",
+    "es": "Modo {name}",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "modeOrdinal": {
+    "pt": "Modo {ordinal}",
+    "en": "Mode {ordinal}",
+    "es": "Modo {ordinal}",
+    "placeholders": {
+      "ordinal": "String"
+    },
+    "description": "ordinal = I, II, III"
+  },
+  "modeOrdinalBadge": {
+    "pt": "Modo {ordinal} · {badge}",
+    "en": "Mode {ordinal} · {badge}",
+    "es": "Modo {ordinal} · {badge}",
+    "placeholders": {
+      "ordinal": "String",
+      "badge": "String"
+    }
+  },
+  "modeBadgeLocked": {
+    "pt": "Bloqueada",
+    "en": "Locked",
+    "es": "Bloqueada"
+  },
+  "modeBadgeReview": {
+    "pt": "Revisão",
+    "en": "Review",
+    "es": "Repaso"
+  },
+  "modeBadgeHere": {
+    "pt": "Você está aqui",
+    "en": "You are here",
+    "es": "Estás aquí"
+  },
+  "modeBadgeCleared": {
+    "pt": "Concluída",
+    "en": "Complete",
+    "es": "Completada"
+  },
+  "modeBadgeInProgress": {
+    "pt": "Em andamento",
+    "en": "In progress",
+    "es": "En curso"
+  },
+  "modeBadgeCurrent": {
+    "pt": "Atual",
+    "en": "Current",
+    "es": "Actual"
+  },
+  "modeLockHint": {
+    "pt": "Conclua {name} para liberar",
+    "en": "Finish {name} to unlock",
+    "es": "Completa {name} para desbloquear",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "modePrevAlmostDone": {
+    "pt": "{name} quase concluída",
+    "en": "{name} almost complete",
+    "es": "{name} casi completada",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "modeScenesLeft": {
+    "pt": "{count, plural, =1{Falta 1 cena de {name}} other{Faltam {count} cenas de {name}}}",
+    "en": "{count, plural, =1{1 {name} scene left} other{{count} {name} scenes left}}",
+    "es": "{count, plural, =1{Falta 1 escena de {name}} other{Faltan {count} escenas de {name}}}",
+    "placeholders": {
+      "count": "int",
+      "name": "String"
+    }
+  },
+  "modeClearedReview": {
+    "pt": "Concluída · revise quando quiser",
+    "en": "Complete · review anytime",
+    "es": "Completada · repasa cuando quieras"
+  },
+  "modeStartFirstScene": {
+    "pt": "Comece pela primeira cena",
+    "en": "Start with the first scene",
+    "es": "Empieza por la primera escena"
+  },
+  "modeScenesProgress": {
+    "pt": "{done} de {total} cenas",
+    "en": "{done} of {total} scenes",
+    "es": "{done} de {total} escenas",
+    "placeholders": {
+      "done": "int",
+      "total": "int"
+    }
+  },
+  "modeSessionFootnote": {
+    "pt": "Troca só nesta sessão · ao fechar o app, volta para {mode}",
+    "en": "This session only · when you close the app, it goes back to {mode}",
+    "es": "Solo en esta sesión · al cerrar la app, vuelve a {mode}",
+    "placeholders": {
+      "mode": "String"
+    }
+  },
+  "modeRuleFootnote": {
+    "pt": "Três leituras do mesmo texto · conclua um modo para liberar o próximo",
+    "en": "Three readings of the same text · finish a mode to unlock the next",
+    "es": "Tres lecturas del mismo texto · completa un modo para desbloquear el siguiente"
+  },
+  "modeSheetEyebrow": {
+    "pt": "Modo de estudo",
+    "en": "Study mode",
+    "es": "Modo de estudio"
+  },
+  "modeSheetTitle": {
+    "pt": "Como você quer estudar?",
+    "en": "How do you want to study?",
+    "es": "¿Cómo quieres estudiar?"
+  },
+  "modePickerTitle": {
+    "pt": "Como você quer\nestudar?",
+    "en": "How do you want\nto study?",
+    "es": "¿Cómo quieres\nestudiar?"
+  },
+  "modePickerTopBar": {
+    "pt": "Antes de partir",
+    "en": "Before you set out",
+    "es": "Antes de partir"
+  },
+  "modeCtaStart": {
+    "pt": "Começar em {name}",
+    "en": "Start in {name}",
+    "es": "Empezar en {name}",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "modeCtaContinue": {
+    "pt": "Continuar em {name}",
+    "en": "Continue in {name}",
+    "es": "Continuar en {name}",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "modeCtaReview": {
+    "pt": "Revisar {name}",
+    "en": "Review {name}",
+    "es": "Repasar {name}",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "modeCtaStudy": {
+    "pt": "Estudar em {name}",
+    "en": "Study in {name}",
+    "es": "Estudiar en {name}",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "modeBannerSemantics": {
+    "pt": "Modo de estudo: {name}. {tagline}.",
+    "en": "Study mode: {name}. {tagline}.",
+    "es": "Modo de estudio: {name}. {tagline}.",
+    "placeholders": {
+      "name": "String",
+      "tagline": "String"
+    }
+  },
+  "modeBannerHint": {
+    "pt": "Toque para trocar de modo",
+    "en": "Tap to change mode",
+    "es": "Toca para cambiar de modo"
+  },
+  "modeSwitch": {
+    "pt": "Trocar",
+    "en": "Change",
+    "es": "Cambiar"
+  }
+}

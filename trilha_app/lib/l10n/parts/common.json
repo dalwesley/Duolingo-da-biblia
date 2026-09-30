@@ -1,0 +1,213 @@
+{
+  "commonOff": {
+    "pt": "Desligado",
+    "en": "Off",
+    "es": "Desactivado"
+  },
+  "commonActive": {
+    "pt": "Ativo",
+    "en": "Active",
+    "es": "Activo"
+  },
+  "languageTitle": {
+    "pt": "Idioma",
+    "en": "Language",
+    "es": "Idioma"
+  },
+  "languageHint": {
+    "pt": "Os textos das trilhas e a Bíblia continuam em português por enquanto.",
+    "en": "Trail content and the Bible are still in Portuguese for now.",
+    "es": "El contenido de las rutas y la Biblia siguen en portugués por ahora."
+  },
+  "languageDevice": {
+    "pt": "Do aparelho",
+    "en": "Device",
+    "es": "Del dispositivo"
+  },
+  "commonContinue": {
+    "pt": "Continuar",
+    "en": "Continue",
+    "es": "Continuar"
+  },
+  "commonStart": {
+    "pt": "Começar",
+    "en": "Start",
+    "es": "Empezar"
+  },
+  "commonNextScene": {
+    "pt": "Próxima cena",
+    "en": "Next scene",
+    "es": "Siguiente escena"
+  },
+  "commonBack": {
+    "pt": "Voltar",
+    "en": "Back",
+    "es": "Volver"
+  },
+  "commonClose": {
+    "pt": "Fechar",
+    "en": "Close",
+    "es": "Cerrar"
+  },
+  "commonGotIt": {
+    "pt": "Entendi",
+    "en": "Got it",
+    "es": "Entendido"
+  },
+  "commonNotNow": {
+    "pt": "Agora não",
+    "en": "Not now",
+    "es": "Ahora no"
+  },
+  "commonCancel": {
+    "pt": "Cancelar",
+    "en": "Cancel",
+    "es": "Cancelar"
+  },
+  "commonTryAgain": {
+    "pt": "Tentar de novo",
+    "en": "Try again",
+    "es": "Intentar de nuevo"
+  },
+  "commonShare": {
+    "pt": "Compartilhar",
+    "en": "Share",
+    "es": "Compartir"
+  },
+  "commonSendWhatsApp": {
+    "pt": "Mandar no WhatsApp",
+    "en": "Send on WhatsApp",
+    "es": "Enviar por WhatsApp"
+  },
+  "commonSkip": {
+    "pt": "Pular",
+    "en": "Skip",
+    "es": "Omitir"
+  },
+  "commonSave": {
+    "pt": "Salvar",
+    "en": "Save",
+    "es": "Guardar"
+  },
+  "commonComingSoon": {
+    "pt": "Em breve",
+    "en": "Coming soon",
+    "es": "Próximamente"
+  },
+  "commonCollect": {
+    "pt": "Coletar",
+    "en": "Collect",
+    "es": "Recoger"
+  },
+  "commonToday": {
+    "pt": "Hoje",
+    "en": "Today",
+    "es": "Hoy"
+  },
+  "commonYou": {
+    "pt": "Você",
+    "en": "You",
+    "es": "Tú"
+  },
+  "commonSteps": {
+    "pt": "{count, plural, =1{1 passo} other{{count} passos}}",
+    "en": "{count, plural, =1{1 step} other{{count} steps}}",
+    "es": "{count, plural, =1{1 paso} other{{count} pasos}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "commonPlusSteps": {
+    "pt": "+{count} passos",
+    "en": "+{count} steps",
+    "es": "+{count} pasos",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "commonDays": {
+    "pt": "{count, plural, =1{1 dia} other{{count} dias}}",
+    "en": "{count, plural, =1{1 day} other{{count} days}}",
+    "es": "{count, plural, =1{1 día} other{{count} días}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "authFirebaseNotReady": {
+    "pt": "Firebase ainda não está pronto.",
+    "en": "Firebase isn't ready yet.",
+    "es": "Firebase aún no está listo."
+  },
+  "authLoginInProgress": {
+    "pt": "Login em andamento.",
+    "en": "Sign-in already in progress.",
+    "es": "Inicio de sesión en curso."
+  },
+  "authMissingIdToken": {
+    "pt": "Google não retornou idToken. Confira se o SHA-1 da Play está no Firebase.",
+    "en": "Google didn't return an idToken. Check that the Play SHA-1 is in Firebase.",
+    "es": "Google no devolvió idToken. Revisa que el SHA-1 de Play esté en Firebase."
+  },
+  "authEnableProviders": {
+    "pt": "Ative os provedores no Firebase Console: Authentication → Sign-in method → Anonymous e/ou Google.",
+    "en": "Enable providers in Firebase Console: Authentication → Sign-in method → Anonymous and/or Google.",
+    "es": "Activa los proveedores en Firebase Console: Authentication → Sign-in method → Anonymous y/o Google."
+  },
+  "authNoInternet": {
+    "pt": "Sem conexão com a internet. Verifique o Wi‑Fi/dados do aparelho.",
+    "en": "No internet connection. Check your Wi‑Fi or mobile data.",
+    "es": "Sin conexión a internet. Revisa el Wi‑Fi o los datos del aparato."
+  },
+  "authTooManyRequests": {
+    "pt": "Muitas tentativas. Aguarde um pouco e tente de novo.",
+    "en": "Too many attempts. Wait a moment and try again.",
+    "es": "Demasiados intentos. Espera un poco e inténtalo de nuevo."
+  },
+  "authAccountExists": {
+    "pt": "Já existe uma conta com este e-mail usando outro método de login.",
+    "en": "An account already exists with this email using another sign-in method.",
+    "es": "Ya existe una cuenta con este correo usando otro método de acceso."
+  },
+  "authInvalidCredential": {
+    "pt": "Credencial Google inválida. Cadastre o SHA-1 do app no Firebase e baixe o google-services.json de novo.",
+    "en": "Invalid Google credential. Add the app SHA-1 in Firebase and download google-services.json again.",
+    "es": "Credencial de Google inválida. Registra el SHA-1 de la app en Firebase y descarga google-services.json de nuevo."
+  },
+  "authNetworkReset": {
+    "pt": "Falha de rede ao falar com o Firebase Auth (conexão resetada). Tente de novo em Wi‑Fi estável ou dados móveis.",
+    "en": "Network error talking to Firebase Auth (connection reset). Try again on stable Wi‑Fi or mobile data.",
+    "es": "Fallo de red al hablar con Firebase Auth (conexión reiniciada). Inténtalo de nuevo en Wi‑Fi estable o datos móviles."
+  },
+  "authGenericError": {
+    "pt": "Erro de Auth ({code}): {message}",
+    "en": "Auth error ({code}): {message}",
+    "es": "Error de Auth ({code}): {message}",
+    "placeholders": {
+      "code": "String",
+      "message": "String"
+    }
+  },
+  "commonScenes": {
+    "pt": "{count, plural, =1{1 cena} other{{count} cenas}}",
+    "en": "{count, plural, =1{1 scene} other{{count} scenes}}",
+    "es": "{count, plural, =1{1 escena} other{{count} escenas}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "commonTrail": {
+    "pt": "Trilha",
+    "en": "Trail",
+    "es": "Ruta"
+  },
+  "commonScene": {
+    "pt": "Cena",
+    "en": "Scene",
+    "es": "Escena"
+  },
+  "commonModule": {
+    "pt": "Módulo",
+    "en": "Module",
+    "es": "Módulo"
+  }
+}

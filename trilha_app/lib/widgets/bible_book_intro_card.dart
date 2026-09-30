@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../data/bible_book_intros.dart';
+import '../l10n/app_language.dart';
 import '../services/bible_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -19,7 +20,7 @@ class BibleBookIntroCard extends StatelessWidget {
 
     final a = Appearance.of(context);
     final who = intro.byTradition
-        ? '${intro.authorName} · tradição'
+        ? context.l10n.bibleIntroAuthorByTradition(intro.authorName)
         : intro.authorName;
 
     return GlassCard(
@@ -51,15 +52,18 @@ class BibleBookIntroCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Expanded(
-                child: _Meta(label: 'Quem', value: who),
+                child: _Meta(label: context.l10n.bibleIntroWho, value: who),
               ),
               const SizedBox(width: AppSpace.md),
               Expanded(
-                child: _Meta(label: 'Quando', value: intro.when),
+                child: _Meta(label: context.l10n.bibleIntroWhen, value: intro.when),
               ),
               const SizedBox(width: AppSpace.md),
               Expanded(
-                child: _Meta(label: 'Para quem', value: intro.audience),
+                child: _Meta(
+                  label: context.l10n.bibleIntroAudience,
+                  value: intro.audience,
+                ),
               ),
             ],
           ),

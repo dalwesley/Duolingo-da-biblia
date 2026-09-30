@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../l10n/app_language.dart';
 import '../models/bible_reading_plan.dart';
 import '../services/bible_reading_plan_service.dart';
 import '../services/progress_service.dart';
@@ -63,15 +64,10 @@ class _BibleReadingPlanScreenState extends State<BibleReadingPlanScreen> {
         _loading = false;
       });
       if (skipped > 0 && mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(
-              skipped == 1
-                  ? '1 capítulo já lido foi pulado'
-                  : '$skipped capítulos já lidos foram pulados',
-            ),
-            behavior: SnackBarBehavior.floating,
-          ),
+        showAppToastFor(
+          context,
+          message: context.l10n.planSkippedChaptersToast(skipped),
+          glyph: CinematicGlyph.book,
         );
       }
     } else {
@@ -119,14 +115,10 @@ class _BibleReadingPlanScreenState extends State<BibleReadingPlanScreen> {
       ],
     );
     if (!mounted) return;
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(
-          'Leitura do dia concluída · ${portion.chapters.length} '
-          '${portion.chapters.length == 1 ? 'capítulo' : 'capítulos'}',
-        ),
-        behavior: SnackBarBehavior.floating,
-      ),
+    showAppToastFor(
+      context,
+      message: context.l10n.planDayDoneToast(portion.chapters.length),
+      glyph: CinematicGlyph.book,
     );
     await _reload();
   }
@@ -142,11 +134,9 @@ class _BibleReadingPlanScreenState extends State<BibleReadingPlanScreen> {
   Future<void> _confirmClear() async {
     final ok = await showAppConfirm(
       context,
-      title: 'Encerrar plano?',
-      body:
-          'Seu progresso no plano será zerado. Os capítulos já '
-          'marcados como lidos na Bíblia permanecem.',
-      confirmLabel: 'Encerrar',
+      title: context.l10n.planEndConfirmTitle,
+      body: context.l10n.planEndConfirmBody,
+      confirmLabel: context.l10n.planEndConfirmAction,
       danger: true,
     );
     if (!ok || !mounted) return;
@@ -181,8 +171,10 @@ class _BibleReadingPlanScreenState extends State<BibleReadingPlanScreen> {
                 inline: true,
                 immersive: true,
                 dark: style.onDark,
-                title: 'Plano de leitura',
-                subtitle: plan.active ? plan.order.shortLabel : 'No seu ritmo',
+                title: context.l10n.planTitle,
+                subtitle: plan.active
+                    ? plan.order.shortLabel
+                    : context.l10n.planAtYourPace,
                 leadingGlyph: CinematicGlyph.book,
                 chromeAccent: AppColors.cedar,
                 onBack: () => Navigator.of(context).pop(),
@@ -271,14 +263,12 @@ class _SetupPlanBody extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Text(
-          'Quanto tempo você tem por dia?',
+          context.l10n.planSetupQuestion,
           style: AppTypography.title(size: 20, color: a.text),
         ),
         const SizedBox(height: AppSpace.xs),
         Text(
-          'Montamos a porção diária para caber nesse tempo — '
-          'na ordem da Bíblia ou na ordem dos acontecimentos. '
-          'Capítulos que você já leu são pulados.',
+          context.l10n.planSetupBody,
           style: AppTypography.body(
             size: 14,
             height: 1.45,
@@ -286,11 +276,11 @@ class _SetupPlanBody extends StatelessWidget {
           ),
         ),
         const SizedBox(height: AppSpace.section),
-        SectionLabel('Ordem'),
+        SectionLabel(context.l10n.planSectionOrder),
         const SizedBox(height: AppSpace.sm),
         _OrderToggle(value: order, onChanged: onOrder),
         const SizedBox(height: AppSpace.section),
-        SectionLabel('Tempo disponível'),
+        SectionLabel(context.l10n.planSectionTime),
         const SizedBox(height: AppSpace.sm),
         Wrap(
           spacing: 8,
@@ -298,7 +288,7 @@ class _SetupPlanBody extends StatelessWidget {
           children: [
             for (final m in _minuteOptions)
               AppSelectChip(
-                label: '$m min',
+                label: context.l10n.planMinutes(m),
                 selected: minutes == m,
                 onTap: () => onMinutes(m),
               ),
@@ -312,7 +302,7 @@ class _SetupPlanBody extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 CardHeader(
-                  label: 'Estimativa',
+                  label: context.l10n.planEstimate,
                   trailing: SoftBadge(
                     text: order.shortLabel,
                     accent: AppColors.cedar,
@@ -322,31 +312,35 @@ class _SetupPlanBody extends StatelessWidget {
                 const SizedBox(height: AppSpace.md),
                 if (alreadyRead > 0) ...[
                   _StatRow(
-                    label: 'Já lidos',
-                    value: '$alreadyRead caps. (pulados)',
+                    label: context.l10n.planAlreadyRead,
+                    value: context.l10n.planChaptersSkipped(alreadyRead),
                   ),
                   const SizedBox(height: 6),
                 ],
                 _StatRow(
-                  label: 'Restante',
+                  label: context.l10n.planRemaining,
                   value: remainingHours == null
                       ? '—'
                       : remainingHours == 0
-                      ? '~${preview!.remainingMinutes.round()} min'
-                      : '~$remainingHours h',
+                      ? context.l10n.planApproxMinutes(
+                          preview!.remainingMinutes.round(),
+                        )
+                      : context.l10n.planApproxHours(remainingHours),
                 ),
                 const SizedBox(height: 6),
                 _StatRow(
-                  label: 'No seu ritmo',
+                  label: context.l10n.planAtYourPace,
                   value: days == null || days == 0
-                      ? (preview!.remainingChapters == 0 ? 'Tudo lido' : '—')
+                      ? (preview!.remainingChapters == 0
+                            ? context.l10n.planAllRead
+                            : '—')
                       : days >= 365
-                      ? '~${(days / 30).round()} meses'
-                      : '~$days dias',
+                      ? context.l10n.planApproxMonths((days / 30).round())
+                      : context.l10n.planApproxDays(days),
                 ),
                 const SizedBox(height: 6),
                 _StatRow(
-                  label: 'Capítulos pendentes',
+                  label: context.l10n.planPendingChapters,
                   value: '${preview!.remainingChapters}',
                 ),
               ],
@@ -354,7 +348,7 @@ class _SetupPlanBody extends StatelessWidget {
           ),
         const SizedBox(height: AppSpace.section),
         CopperCta(
-          label: 'Começar plano · $minutes min/dia',
+          label: context.l10n.planStartCta(minutes),
           onTap: onStart,
           trailing: null,
         ),
@@ -396,33 +390,35 @@ class _ActivePlanBody extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               CardHeader(
-                label: 'Hoje',
+                label: context.l10n.commonToday,
                 trailing: SoftBadge(
-                  text: doneToday ? 'Feito' : '${plan.minutesPerDay} min',
+                  text: doneToday
+                      ? context.l10n.planDone
+                      : context.l10n.planMinutes(plan.minutesPerDay),
                   accent: doneToday ? AppColors.accent : AppColors.cedar,
                 ),
               ),
               const SizedBox(height: AppSpace.sm),
               Text(
                 finished
-                    ? 'Você concluiu a Bíblia neste plano.'
+                    ? context.l10n.planBibleFinished
                     : (p?.summary ?? '…'),
                 style: AppTypography.title(size: 18, color: a.text),
               ),
               if (p != null && !finished) ...[
                 const SizedBox(height: 4),
                 Text(
-                  '~${p.estimatedMinutes.round()} min · '
-                  '${p.chapters.length} '
-                  '${p.chapters.length == 1 ? 'capítulo' : 'capítulos'} · '
-                  '${plan.order.shortLabel}',
+                  context.l10n.planPortionMeta(
+                    p.estimatedMinutes.round(),
+                    p.chapters.length,
+                    plan.order.shortLabel,
+                  ),
                   style: AppTypography.body(size: 13, color: a.textSecondary),
                 ),
               ],
               const SizedBox(height: AppSpace.sm),
               Text(
-                '${plan.completedDays} '
-                '${plan.completedDays == 1 ? 'dia' : 'dias'} de leitura',
+                context.l10n.planReadingDays(plan.completedDays),
                 style: AppTypography.body(size: 12, color: a.textFaint),
               ),
             ],
@@ -430,7 +426,7 @@ class _ActivePlanBody extends StatelessWidget {
         ),
         if (p != null && !finished) ...[
           const SizedBox(height: AppSpace.section),
-          SectionLabel('Capítulos de hoje'),
+          SectionLabel(context.l10n.planTodayChapters),
           const SizedBox(height: AppSpace.sm),
           GlassCard(
             padding: EdgeInsets.zero,
@@ -459,7 +455,9 @@ class _ActivePlanBody extends StatelessWidget {
                               ),
                             ),
                             Text(
-                              '~${p.chapters[i].estimatedMinutes.toStringAsFixed(1)} min',
+                              context.l10n.planApproxMinutesDecimal(
+                                p.chapters[i].estimatedMinutes.toStringAsFixed(1),
+                              ),
                               style: AppTypography.body(
                                 size: 12,
                                 color: a.textFaint,
@@ -479,7 +477,7 @@ class _ActivePlanBody extends StatelessWidget {
           const SizedBox(height: AppSpace.md),
           if (!doneToday)
             CopperCta(
-              label: 'Marcar leitura do dia',
+              label: context.l10n.planMarkDayRead,
               onTap: onComplete,
               trailing: null,
             )
@@ -487,8 +485,7 @@ class _ActivePlanBody extends StatelessWidget {
             GlassCard(
               padding: const EdgeInsets.all(AppSpace.md),
               child: Text(
-                'Porção de hoje concluída. Volte amanhã — '
-                'ou continue explorando a Bíblia livremente.',
+                context.l10n.planTodayDoneBody,
                 style: AppTypography.body(
                   size: 14,
                   height: 1.4,
@@ -498,7 +495,7 @@ class _ActivePlanBody extends StatelessWidget {
             ),
         ],
         const SizedBox(height: AppSpace.section),
-        SectionLabel('Ajustar tempo'),
+        SectionLabel(context.l10n.planAdjustTime),
         const SizedBox(height: AppSpace.sm),
         Wrap(
           spacing: 8,
@@ -506,14 +503,18 @@ class _ActivePlanBody extends StatelessWidget {
           children: [
             for (final m in const [5, 10, 15, 20, 30, 45, 60])
               AppSelectChip(
-                label: '$m min',
+                label: context.l10n.planMinutes(m),
                 selected: plan.minutesPerDay == m,
                 onTap: () => onMinutesChanged(m),
               ),
           ],
         ),
         const SizedBox(height: AppSpace.section),
-        TextCta(label: 'Encerrar plano', onTap: onClear, danger: true),
+        TextCta(
+          label: context.l10n.planEndCta,
+          onTap: onClear,
+          danger: true,
+        ),
       ],
     );
   }

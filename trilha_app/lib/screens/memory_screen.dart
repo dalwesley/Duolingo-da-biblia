@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../data/memory_verses.dart';
+import '../l10n/app_language.dart';
 import '../services/bible_service.dart';
 import '../services/progress_service.dart';
 import '../services/sound_service.dart';
@@ -195,8 +196,8 @@ class _MemoryScreenState extends State<MemoryScreen>
                     inline: true,
                     immersive: true,
                     dark: true,
-                    title: 'Memorizar',
-                    subtitle: 'Fixe na memória',
+                    title: context.l10n.memoryTitle,
+                    subtitle: context.l10n.memorySubtitle,
                     onBack: () => Navigator.pop(context),
                     leadingGlyph: CinematicGlyph.heart,
                     chromeAccent: AppColors.clay,
@@ -247,7 +248,7 @@ class _MemoryScreenState extends State<MemoryScreen>
                                   if (!_revealed) {
                                     child = CopperCta(
                                       key: const ValueKey('reveal'),
-                                      label: 'Revelar',
+                                      label: context.l10n.memoryReveal,
                                       trailing: CinematicGlyph.spark,
                                       onTap: _revealCard,
                                     );
@@ -316,7 +317,7 @@ class _ProgressHeader extends StatelessWidget {
         Row(
           children: [
             SectionLabel(
-              'Carta',
+              context.l10n.memoryCard,
               color: AppColors.accent.withValues(alpha: 0.85),
             ),
             const Spacer(),
@@ -615,7 +616,7 @@ class _AnswerRow extends StatelessWidget {
       children: [
         Expanded(
           child: OutlineCta(
-            label: 'Ainda não',
+            label: context.l10n.memoryNotYet,
             leading: CinematicGlyph.refresh,
             color: AppColors.error,
             onTap: onLearning,
@@ -626,7 +627,7 @@ class _AnswerRow extends StatelessWidget {
         const SizedBox(width: AppSpace.md),
         Expanded(
           child: OutlineCta(
-            label: 'Já sei',
+            label: context.l10n.memoryKnown,
             leading: CinematicGlyph.check,
             color: AppColors.teal,
             onTap: onKnown,
@@ -668,24 +669,24 @@ class _DonePane extends StatelessWidget {
           ),
           const SizedBox(height: AppSpace.xl),
           Text(
-            'Sessão concluída',
+            context.l10n.memoryDoneTitle,
             textAlign: TextAlign.center,
             style: AppTypography.display(size: 28, color: a.text),
           ),
           const SizedBox(height: AppSpace.md),
           Text(
-            '$known firmes · $learning em progresso',
+            context.l10n.memoryDoneSummary(known, learning),
             textAlign: TextAlign.center,
             style: AppTypography.body(color: a.textSecondary),
           ),
           const SizedBox(height: AppSpace.xxl),
           CopperCta(
-            label: 'Tentar de novo',
+            label: context.l10n.commonTryAgain,
             trailing: CinematicGlyph.refresh,
             onTap: onAgain,
           ),
           const SizedBox(height: AppSpace.sm),
-          TextCta(label: 'Fechar', onTap: onClose),
+          TextCta(label: context.l10n.commonClose, onTap: onClose),
         ],
       ),
     );

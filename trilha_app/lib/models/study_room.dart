@@ -1,3 +1,4 @@
+import '../l10n/l10n_global.dart';
 import '../widgets/cinematic_icon.dart';
 import 'portrait_style.dart';
 
@@ -7,33 +8,40 @@ const int kRoomMemberLimit = 20;
 
 /// Para que o grupo existe — muda rótulo, ícone e textos.
 enum RoomKind {
-  celula('celula', 'Célula', CinematicGlyph.home),
-  discipulado('discipulado', 'Discipulado', CinematicGlyph.path),
-  ebd('ebd', 'EBD', CinematicGlyph.book),
-  familia('familia', 'Família', CinematicGlyph.heart),
-  amigos('amigos', 'Amigos', CinematicGlyph.people);
+  celula('celula', CinematicGlyph.home),
+  discipulado('discipulado', CinematicGlyph.path),
+  ebd('ebd', CinematicGlyph.book),
+  familia('familia', CinematicGlyph.heart),
+  amigos('amigos', CinematicGlyph.people);
 
   final String storageKey;
-  final String label;
   final CinematicGlyph glyph;
 
-  const RoomKind(this.storageKey, this.label, this.glyph);
+  const RoomKind(this.storageKey, this.glyph);
+
+  String get label => switch (this) {
+    RoomKind.celula => L10n.current.roomKindCelula,
+    RoomKind.discipulado => L10n.current.roomKindDiscipulado,
+    RoomKind.ebd => L10n.current.roomKindEbd,
+    RoomKind.familia => L10n.current.roomKindFamilia,
+    RoomKind.amigos => L10n.current.roomKindAmigos,
+  };
 
   /// Quem conduz o grupo, no vocabulário de cada tipo.
   String get leaderTitle => switch (this) {
-    RoomKind.celula => 'Líder',
-    RoomKind.discipulado => 'Discipulador',
-    RoomKind.ebd => 'Professor',
-    RoomKind.familia => 'Responsável',
-    RoomKind.amigos => 'Anfitrião',
+    RoomKind.celula => L10n.current.roomLeaderCelula,
+    RoomKind.discipulado => L10n.current.roomLeaderDiscipulado,
+    RoomKind.ebd => L10n.current.roomLeaderEbd,
+    RoomKind.familia => L10n.current.roomLeaderFamilia,
+    RoomKind.amigos => L10n.current.roomLeaderAmigos,
   };
 
   String get namePlaceholder => switch (this) {
-    RoomKind.celula => 'Ex.: Célula Norte',
-    RoomKind.discipulado => 'Ex.: Discipulado de quinta',
-    RoomKind.ebd => 'Ex.: EBD Jovens',
-    RoomKind.familia => 'Ex.: Família Souza',
-    RoomKind.amigos => 'Ex.: Amigos da facul',
+    RoomKind.celula => L10n.current.roomNameHintCelula,
+    RoomKind.discipulado => L10n.current.roomNameHintDiscipulado,
+    RoomKind.ebd => L10n.current.roomNameHintEbd,
+    RoomKind.familia => L10n.current.roomNameHintFamilia,
+    RoomKind.amigos => L10n.current.roomNameHintAmigos,
   };
 
   static RoomKind fromKey(String? raw) {
@@ -85,7 +93,9 @@ class RoomStudy {
     final title = (raw['title'] as String?)?.trim();
     return RoomStudy(
       missionSlug: slug,
-      title: title == null || title.isEmpty ? 'Estudo da semana' : title,
+      title: title == null || title.isEmpty
+          ? L10n.current.roomStudyFallbackTitle
+          : title,
       week: week,
       verseRef: (raw['verseRef'] as String?)?.trim(),
       verse: (raw['verse'] as String?)?.trim(),
@@ -165,11 +175,11 @@ class StudyRoom {
       code: code,
       name: (data['name'] as String?)?.trim().isNotEmpty == true
           ? data['name'] as String
-          : 'Grupo',
+          : L10n.current.roomFallbackName,
       ownerId: (data['ownerId'] as String?) ?? '',
       ownerName: (data['ownerName'] as String?)?.trim().isNotEmpty == true
           ? data['ownerName'] as String
-          : 'Anfitrião',
+          : L10n.current.roomLeaderAmigos,
       createdAt: createdAt,
       kind: RoomKind.fromKey(data['kind'] as String?),
       weeklyGoalSteps: (data['weeklyGoalSteps'] as num?)?.toInt(),
@@ -323,7 +333,7 @@ class RoomInvite {
       fromName: fromName,
       fromPhotoUrl: (data['fromPhotoUrl'] as String?)?.trim(),
       toUid: toUid,
-      toName: toName.isEmpty ? 'Alguém' : toName,
+      toName: toName.isEmpty ? L10n.current.cornerSomeone : toName,
       toPhotoUrl: (data['toPhotoUrl'] as String?)?.trim(),
       status: status,
     );

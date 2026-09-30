@@ -1,3 +1,4 @@
+import '../l10n/l10n_global.dart';
 import '../services/bible_service.dart';
 import '../services/progress_service.dart';
 import 'caravan_profile_prefs.dart';
@@ -223,7 +224,7 @@ class CaravanPilgrimProfile {
         _asName(data['name']) ??
         (fallbackName?.trim().isNotEmpty == true
             ? fallbackName!.trim()
-            : 'Aprendiz');
+            : L10n.current.pilgrimFallbackName);
     return CaravanPilgrimProfile(
       uid: uid,
       name: name,
@@ -283,8 +284,8 @@ class CaravanPilgrimProfile {
       trails.add(
         CaravanTrailSnapshot(
           slug: trail.slug,
-          title: trail.title,
-          description: trail.description,
+          title: trail.localizedTitle,
+          description: trail.localizedDescription,
           missionsDone: done,
           missionsTotal: slugs.length,
           clearedModes: List<String>.from(
@@ -309,9 +310,9 @@ class CaravanPilgrimProfile {
     String? missionRef;
     final hit = resolvedSlug == null ? null : missionBySlug[resolvedSlug];
     if (hit != null) {
-      missionTitle = hit.mission.title;
-      trailTitle = hit.trail.title;
-      missionInsight = hit.mission.centralInsight;
+      missionTitle = hit.mission.localizedTitle;
+      trailTitle = hit.trail.localizedTitle;
+      missionInsight = hit.mission.localizedCentralInsight;
       missionRef = hit.mission.hookRef;
     }
 
@@ -402,7 +403,7 @@ class CaravanPilgrimProfile {
         for (final mod in trail.modules)
           if (mod.missions.isNotEmpty)
             CaravanTrailModuleStop(
-              title: mod.title,
+              title: mod.localizedTitle,
               done: mod.missions.where((m) => completed.contains(m.slug)).length,
               total: mod.missions.length,
             ),
@@ -416,7 +417,7 @@ class CaravanPilgrimProfile {
     return [
       for (final mission in missions.take(6))
         CaravanTrailModuleStop(
-          title: mission.title,
+          title: mission.localizedTitle,
           done: completed.contains(mission.slug) ? 1 : 0,
           total: 1,
         ),

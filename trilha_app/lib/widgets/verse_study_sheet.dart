@@ -4,6 +4,8 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:share_plus/share_plus.dart';
+import '../l10n/app_language.dart';
+import '../l10n/l10n_global.dart';
 
 import '../services/bible_service.dart';
 import '../services/bible_study_service.dart';
@@ -84,7 +86,7 @@ Future<void> showVersePreviewDialog(
 
   final name = (bookIndex >= 0 && bookIndex < books.length)
       ? books[bookIndex].name
-      : 'Livro ${bookIndex + 1}';
+      : context.l10n.bibleBookFallback(bookIndex + 1);
   final end = verseEnd != null && verseEnd != verse ? verseEnd : verse;
 
   final verses = <String>[];
@@ -115,7 +117,7 @@ Future<void> showVersePreviewDialog(
           child: SingleChildScrollView(
             child: verses.isEmpty
                 ? Text(
-                    'Versículo indisponível nesta tradução.',
+                    ctx.l10n.verseStudyVerseUnavailable,
                     style: AppTypography.body(
                       color: a.textSecondary,
                       height: 1.35,
@@ -155,9 +157,9 @@ Future<void> showVersePreviewDialog(
           ),
         ),
         actions: [
-          TextCta(label: 'Fechar', onTap: () => Navigator.pop(ctx)),
+          TextCta(label: ctx.l10n.commonClose, onTap: () => Navigator.pop(ctx)),
           CopperCta(
-            label: 'Ir para o texto',
+            label: ctx.l10n.verseStudyGoToText,
             onTap: () {
               Navigator.pop(ctx);
               Navigator.pop(context);
@@ -243,18 +245,19 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
         if (t.pos == pos) return t;
       }
     }
-    const skip = {
-      'preposição',
-      'artigo',
-      'conjunção',
-      'conjunção consecut./conj.',
-      'marcador de objeto',
-      'advérbio',
-      'partícula',
-      'partícula relativa',
-      'partícula negativa',
-      'artigo demonstrativo',
-      'interjeição',
+    final loc = L10n.current;
+    final skip = {
+      loc.morphPrep,
+      loc.morphArticle,
+      loc.morphConjunction,
+      loc.morphConjConsecutive,
+      loc.morphObjectMarker,
+      loc.morphAdverb,
+      loc.morphParticle,
+      loc.morphRelativeParticle,
+      loc.morphNegativeParticle,
+      loc.morphDemonstrativeArticle,
+      loc.morphInterjection,
     };
     for (final t in tokens) {
       if (t.strong.isEmpty || isPunctuationStrong(t.strong)) continue;
@@ -360,7 +363,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
       if (translit.isNotEmpty) translit,
       '${token.strong}${gloss.isNotEmpty ? ' · $gloss' : ''}',
       '',
-      '$_ref — via Stway',
+      context.l10n.bibleShareVia(_ref),
     ].join('\n');
     await SharePlus.instance.share(
       ShareParams(text: body, subject: '${token.strong} — $_ref'),
@@ -387,7 +390,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                 children: [
                   Expanded(
                     child: AppSheetHeader(
-                      eyebrow: 'Estudar',
+                      eyebrow: context.l10n.verseStudyEyebrow,
                       eyebrowColor: AppColors.accent,
                       title: _ref,
                     ),
@@ -419,8 +422,8 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                         padding: const EdgeInsets.all(24),
                         child: Text(
                           needsRestart
-                              ? 'O estudo precisa de um reinício completo do app.\n\nPare o app e rode flutter run de novo (hot reload não basta).'
-                              : 'Não foi possível carregar o estudo.',
+                              ? context.l10n.verseStudyNeedsRestart
+                              : context.l10n.verseStudyLoadFailed,
                           textAlign: TextAlign.center,
                           style: AppTypography.body(
                             color: a.textSecondary,
@@ -436,7 +439,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                   if (study.tokens.isEmpty && study.crossRefs.isEmpty) {
                     return Center(
                       child: Text(
-                        'Sem dados de originais para este versículo.',
+                        context.l10n.verseStudyNoData,
                         style: AppTypography.body(color: a.textFaint),
                       ),
                     );
@@ -501,7 +504,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                                   study.crossRefs.isNotEmpty) ...[
                                 const SizedBox(height: 18),
                                 _SectionEyebrow(
-                                  'Referências cruzadas',
+                                  context.l10n.verseStudyCrossRefs,
                                   count: study.crossRefs.length,
                                 ),
                                 const SizedBox(height: 10),
@@ -593,13 +596,13 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             _SectionEyebrow(
-              'Referências cruzadas',
+              context.l10n.verseStudyCrossRefs,
               count: study.crossRefs.length,
             ),
             const SizedBox(height: 10),
             if (study.crossRefs.isEmpty)
               Text(
-                'Sem conexões catalogadas para este versículo.',
+                context.l10n.verseStudyNoCrossRefs,
                 style: AppTypography.body(
                   size: 13,
                   color: Appearance.of(context).textFaint,
@@ -657,7 +660,7 @@ class _StudyLoading extends StatelessWidget {
           const AppSpinner(),
           const SizedBox(height: 14),
           Text(
-            'Abrindo o léxico…',
+            context.l10n.verseStudyLoading,
             style: AppTypography.body(
               size: 13,
               color: Appearance.of(context).textFaint,
@@ -866,9 +869,21 @@ class _StudyTabs extends StatelessWidget {
         ),
         child: Row(
           children: [
-            _seg(a, 'Palavra', 0),
-            _seg(a, occ != null && occ! > 0 ? 'Usos · $occ' : 'Usos', 1),
-            _seg(a, xrefCount > 0 ? 'Conexões · $xrefCount' : 'Conexões', 2),
+            _seg(a, context.l10n.verseStudyTabWord, 0),
+            _seg(
+              a,
+              occ != null && occ! > 0
+                  ? context.l10n.verseStudyTabUsesCount(occ!)
+                  : context.l10n.verseStudyTabUses,
+              1,
+            ),
+            _seg(
+              a,
+              xrefCount > 0
+                  ? context.l10n.verseStudyTabLinksCount(xrefCount)
+                  : context.l10n.verseStudyTabLinks,
+              2,
+            ),
           ],
         ),
       ),
@@ -1017,13 +1032,13 @@ class _EmptyStudyHint extends StatelessWidget {
           ),
           const SizedBox(height: 12),
           Text(
-            'Toque numa palavra original',
+            context.l10n.verseStudyEmptyTitle,
             textAlign: TextAlign.center,
             style: AppTypography.title(size: 16, color: a.text),
           ),
           const SizedBox(height: 6),
           Text(
-            'O léxico Strong, a gramática e cada vez que ela aparece nas Escrituras abrem aqui.',
+            context.l10n.verseStudyEmptyBody,
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 13,
@@ -1087,7 +1102,7 @@ class _WordPane extends StatelessWidget {
     );
     final occ = study?.occurrences ?? 0;
     final strongLabel = copied
-        ? 'copiado'
+        ? context.l10n.verseStudyCopied
         : [
             token.strong,
             if (view.extended) 'STEP',
@@ -1150,7 +1165,7 @@ class _WordPane extends StatelessWidget {
             IconButton(
               visualDensity: VisualDensity.compact,
               onPressed: onShare,
-              tooltip: 'Compartilhar',
+              tooltip: context.l10n.commonShare,
               icon: CinematicIcon(
                 glyph: CinematicGlyph.share,
                 size: 18,
@@ -1164,7 +1179,7 @@ class _WordPane extends StatelessWidget {
         if (inVerse) ...[
           Center(
             child: SectionLabel(
-              'Neste versículo',
+              context.l10n.verseStudyInThisVerse,
               color: accent.withValues(alpha: 0.8),
             ),
           ),
@@ -1191,7 +1206,7 @@ class _WordPane extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'A Tradução Brasileira não traz esta forma à letra neste versículo.',
+            context.l10n.verseStudyNotLiteral,
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 12,
@@ -1293,7 +1308,7 @@ class _WordPane extends StatelessWidget {
         ] else ...[
           if (senses.isNotEmpty) ...[
             const SizedBox(height: 16),
-            const _SectionEyebrow('Definição'),
+            _SectionEyebrow(context.l10n.verseStudyDefinition),
             const SizedBox(height: 8),
             for (var i = 0; i < senses.length; i++) ...[
               if (i > 0) const SizedBox(height: 10),
@@ -1330,7 +1345,7 @@ class _WordPane extends StatelessWidget {
             const SizedBox(height: 16),
             if (view.isAffix && study!.occurrences > 200)
               Text(
-                'Partícula gramatical · ${study!.occurrences} formas no cânon. O sentido está no nome ou no verbo que ela acompanha.',
+                context.l10n.verseStudyParticleNote(study!.occurrences),
                 style: AppTypography.body(
                   size: 12,
                   height: 1.35,
@@ -1383,17 +1398,29 @@ class _SpanLine extends StatelessWidget {
         children: [
           Text(
             occurrences <= 1
-                ? 'Só neste versículo no índice.'
-                : '$occurrences lugares · de $a a $b',
+                ? context.l10n.verseStudyOnlyHere
+                : context.l10n.verseStudySpan(occurrences, a, b),
             style: AppTypography.body(size: 12, color: look.textFaint),
           ),
           if (!same) ...[
             const SizedBox(height: 8),
             Row(
               children: [
-                _miniRef(look, 'primeira', a, () => onOpenHit(first), accent),
+                _miniRef(
+                  look,
+                  context.l10n.verseStudyFirst,
+                  a,
+                  () => onOpenHit(first),
+                  accent,
+                ),
                 const SizedBox(width: 8),
-                _miniRef(look, 'última', b, () => onOpenHit(last), accent),
+                _miniRef(
+                  look,
+                  context.l10n.verseStudyLast,
+                  b,
+                  () => onOpenHit(last),
+                  accent,
+                ),
               ],
             ),
           ],
@@ -1496,10 +1523,12 @@ class _ConcordancePane extends StatelessWidget {
       children: [
         Text(
           filtered
-              ? 'Ocorrências em ${_bookName(books, filterBook!)}'
+              ? context.l10n.verseStudyOccurrencesIn(
+                  _bookName(books, filterBook!),
+                )
               : view.isAffix
-              ? 'Esta partícula aparece milhares de vezes. Abaixo, as formas perto deste versículo.'
-              : 'Neste livro — as aparições perto deste versículo.',
+              ? context.l10n.verseStudyParticleNearby
+              : context.l10n.verseStudyInThisBook,
           style: AppTypography.body(size: 13, height: 1.35, color: a.textFaint),
         ),
         if (byBook.length > 1) ...[
@@ -1538,7 +1567,7 @@ class _ConcordancePane extends StatelessWidget {
         const SizedBox(height: 12),
         if (hits.isEmpty)
           Text(
-            'Sem outras ocorrências neste recorte.',
+            context.l10n.verseStudyNoOtherHits,
             style: AppTypography.body(size: 13, color: a.textFaint),
           )
         else
@@ -1566,10 +1595,10 @@ class _ConcordancePane extends StatelessWidget {
           ],
         if (!filtered && scriptureHits.isNotEmpty) ...[
           const SizedBox(height: 16),
-          const _SectionEyebrow('Noutros livros'),
+          _SectionEyebrow(context.l10n.verseStudyOtherBooks),
           const SizedBox(height: 8),
           Text(
-            'A primeira aparição em cada livro onde a palavra é mais frequente.',
+            context.l10n.verseStudyOtherBooksBody,
             style: AppTypography.body(size: 12, color: a.textFaint),
           ),
           const SizedBox(height: 8),
@@ -1625,7 +1654,7 @@ class _FormVsLemma extends StatelessWidget {
       children: [
         Expanded(
           child: _ScriptCell(
-            eyebrow: 'Nesta forma',
+            eyebrow: context.l10n.verseStudyThisForm,
             script: form,
             translit: formTranslit,
             hebrew: hebrew,
@@ -1643,7 +1672,7 @@ class _FormVsLemma extends StatelessWidget {
         ),
         Expanded(
           child: _ScriptCell(
-            eyebrow: 'Lema',
+            eyebrow: context.l10n.verseStudyLemma,
             script: lemma,
             translit: lemmaTranslit,
             hebrew: hebrew,
@@ -1949,7 +1978,7 @@ List<ConcordanceHit> _aroundHits(
 
 String _bookName(List<BibleBook> books, int index) {
   if (index >= 0 && index < books.length) return books[index].name;
-  return 'Livro ${index + 1}';
+  return L10n.current.bibleBookFallback(index + 1);
 }
 
 String _cite(

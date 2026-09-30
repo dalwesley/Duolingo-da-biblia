@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../l10n/app_language.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'act_feel.dart';
@@ -34,13 +35,13 @@ class ComingSoonTrailsCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return _HorizonSlot(
-      eyebrow: 'No horizonte',
-      title: 'Lançamentos em breve',
-      body: 'Novos caminhos estão sendo preparados.',
-      primaryLabel: 'Sugerir uma trilha',
+      eyebrow: context.l10n.trailsHorizonEyebrow,
+      title: context.l10n.commonComingSoon,
+      body: context.l10n.trailsHorizonBody,
+      primaryLabel: context.l10n.suggestionTrailTitle,
       primaryGlyph: CinematicGlyph.spark,
       onPrimary: onSuggest,
-      secondaryLabel: 'Sugerir um autor',
+      secondaryLabel: context.l10n.suggestionAuthorTitle,
       secondaryGlyph: CinematicGlyph.people,
       onSecondary: onSuggestAuthor,
     );
@@ -76,12 +77,12 @@ class DonateCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Ajude a continuar',
+                      context.l10n.trailsDonateTitle,
                       style: AppTypography.title(size: 16, color: a.text),
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      'Uma contribuição voluntária para o próximo passo.',
+                      context.l10n.trailsDonateBody,
                       style: AppTypography.body(
                         size: 13,
                         height: 1.35,
@@ -95,7 +96,7 @@ class DonateCard extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           CopperCta(
-            label: 'Doar',
+            label: context.l10n.trailsDonateCta,
             leading: CinematicGlyph.gift,
             trailing: null,
             dense: true,

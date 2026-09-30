@@ -4,8 +4,10 @@ import 'package:provider/provider.dart';
 import '../models/corner_challenge.dart';
 import '../services/corner_service.dart';
 import 'app_sheet.dart';
+import 'cinematic_icon.dart';
 import 'corner_burst.dart';
 import 'crossing_burst.dart';
+import 'ui_primitives.dart';
 
 /// Confirma a saída da travessia e apaga a minha luz.
 Future<void> confirmCornerWithdraw(
@@ -43,8 +45,13 @@ Future<void> confirmCornerWithdraw(
   }
   final done = await corners.withdraw(challenge.id);
   if (!done) {
-    messenger?.showSnackBar(
-      SnackBar(content: Text(corners.lastError ?? CornerCopy.actionFailed)),
-    );
+    if (messenger != null) {
+      showAppToast(
+        messenger,
+        message: corners.lastError ?? CornerCopy.actionFailed,
+        glyph: CinematicGlyph.wrong,
+        tone: AppToastTone.warn,
+      );
+    }
   }
 }

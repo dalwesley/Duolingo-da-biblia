@@ -8,6 +8,7 @@ import 'act_feel.dart';
 import 'cinematic_icon.dart';
 import 'immersive_background.dart';
 import 'ui_primitives.dart';
+import '../l10n/app_language.dart';
 
 /// Três gestos do dia — um card, sem grupos de bônus.
 class DailyQuestsCard extends StatelessWidget {
@@ -35,14 +36,14 @@ class DailyQuestsCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           CardHeader(
-            label: 'Gestos de hoje',
+            label: context.l10n.questDailyTitle,
             glyph: CinematicGlyph.target,
             accent: AppColors.teal,
             trailing: CountBadge('$doneCount/${quests.length}'),
           ),
           const SizedBox(height: AppSpace.xs),
           Text(
-            'Passos extras além da cena.',
+            context.l10n.questDailySubtitle,
             style: AppTypography.body(
               size: 12,
               weight: FontWeight.w600,
@@ -115,7 +116,7 @@ class _QuestRow extends StatelessWidget {
                     ),
                     const SizedBox(height: 3),
                     Text(
-                      done ? 'Feito' : q.subtitle,
+                      done ? context.l10n.questDone : q.subtitle,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: AppTypography.body(

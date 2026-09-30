@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:trilha_app/l10n/app_language.dart';
 import 'package:trilha_app/models/difficulty.dart';
 import 'package:trilha_app/models/trail.dart';
 import 'package:trilha_app/models/trail_catalog.dart';
@@ -13,6 +14,9 @@ void main() {
   ) async {
     await tester.pumpWidget(
       MaterialApp(
+        locale: const Locale('pt'),
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
         theme: AppTheme.dark,
         home: const Scaffold(
           body: ModeEmblem(difficulty: TrailDifficulty.semente, cleared: true),
@@ -29,6 +33,9 @@ void main() {
   ) async {
     await tester.pumpWidget(
       MaterialApp(
+        locale: const Locale('pt'),
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
         theme: AppTheme.dark,
         home: const Scaffold(
           body: ModeEmblemStrip(
@@ -78,6 +85,9 @@ void main() {
 
     await tester.pumpWidget(
       MaterialApp(
+        locale: const Locale('pt'),
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
         theme: AppTheme.dark,
         home: Scaffold(
           body: SingleChildScrollView(
@@ -136,6 +146,9 @@ void main() {
 
     await tester.pumpWidget(
       MaterialApp(
+        locale: const Locale('pt'),
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
         theme: AppTheme.dark,
         home: Scaffold(
           body: SingleChildScrollView(
@@ -194,6 +207,9 @@ void main() {
 
     await tester.pumpWidget(
       MaterialApp(
+        locale: const Locale('pt'),
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
         theme: AppTheme.dark,
         home: Scaffold(
           body: SingleChildScrollView(
@@ -229,6 +245,9 @@ void main() {
     TrailDifficulty? tapped;
     await tester.pumpWidget(
       MaterialApp(
+        locale: const Locale('pt'),
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
         theme: AppTheme.dark,
         home: Scaffold(
           body: ModeEmblemStrip(

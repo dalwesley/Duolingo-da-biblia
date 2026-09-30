@@ -1,3 +1,4 @@
+import '../l10n/l10n_global.dart';
 import '../utils/liturgical_calendar.dart';
 
 /// Missões diárias — loop de retenção além da meta.
@@ -22,25 +23,25 @@ class DailyQuest {
 class DailyQuestDefs {
   /// Três gestos. Favoritar e memorizar não treinam formação o bastante
   /// para ocupar o Hoje; 100% já é medalha de Formação.
-  static const List<DailyQuest> core = [
+  static List<DailyQuest> get core => [
     DailyQuest(
       id: 'mission',
-      title: 'Uma cena',
-      subtitle: 'Complete uma cena',
+      title: L10n.current.questMissionTitle,
+      subtitle: L10n.current.questMissionSubtitle,
       target: 1,
       stepsReward: 15,
     ),
     DailyQuest(
       id: 'accuracy',
-      title: 'Olho firme',
-      subtitle: 'Termine uma cena com 80%+',
+      title: L10n.current.questAccuracyTitle,
+      subtitle: L10n.current.questAccuracySubtitle,
       target: 1,
       stepsReward: 25,
     ),
     DailyQuest(
       id: 'read',
-      title: 'Na Palavra',
-      subtitle: 'Leia um capítulo',
+      title: L10n.current.questReadTitle,
+      subtitle: L10n.current.questReadSubtitle,
       target: 1,
       stepsReward: 20,
     ),
@@ -56,25 +57,25 @@ class DailyQuestDefs {
 
 /// Passos semanais — ritmo de médio prazo.
 class WeeklyQuestDefs {
-  static const List<DailyQuest> all = [
+  static List<DailyQuest> get all => [
     DailyQuest(
       id: 'w_missions',
-      title: 'Cinco cenas',
-      subtitle: 'Complete 5 cenas nesta semana',
+      title: L10n.current.questWeeklyScenesTitle,
+      subtitle: L10n.current.questWeeklyScenesSubtitle,
       target: 5,
       stepsReward: 80,
     ),
     DailyQuest(
       id: 'w_days',
-      title: 'Quatro dias',
-      subtitle: 'Caminhe em 4 dias diferentes',
+      title: L10n.current.questWeeklyDaysTitle,
+      subtitle: L10n.current.questWeeklyDaysSubtitle,
       target: 4,
       stepsReward: 60,
     ),
     DailyQuest(
       id: 'w_perfect',
-      title: 'Duas nítidas',
-      subtitle: 'Duas cenas com 100% na semana',
+      title: L10n.current.questWeeklyPerfectTitle,
+      subtitle: L10n.current.questWeeklyPerfectSubtitle,
       target: 2,
       stepsReward: 100,
     ),
@@ -97,30 +98,30 @@ class TrailMilestone {
 
   String chestId(String trailSlug) => '$trailSlug:$percent';
 
-  static const List<TrailMilestone> all = [
+  static List<TrailMilestone> get all => [
     TrailMilestone(
       percent: 25,
       stepsReward: 40,
-      title: 'Primeiros passos',
-      subtitle: '25% da trilha',
+      title: L10n.current.questMilestone25Title,
+      subtitle: L10n.current.questMilestone25Subtitle,
     ),
     TrailMilestone(
       percent: 50,
       stepsReward: 70,
-      title: 'Meio do caminho',
-      subtitle: '50% da trilha',
+      title: L10n.current.questMilestone50Title,
+      subtitle: L10n.current.questMilestone50Subtitle,
     ),
     TrailMilestone(
       percent: 75,
       stepsReward: 100,
-      title: 'Quase lá',
-      subtitle: '75% da trilha',
+      title: L10n.current.questMilestone75Title,
+      subtitle: L10n.current.questMilestone75Subtitle,
     ),
     TrailMilestone(
       percent: 100,
       stepsReward: 150,
-      title: 'Jornada percorrida',
-      subtitle: '100% — continue caminhando',
+      title: L10n.current.questMilestone100Title,
+      subtitle: L10n.current.questMilestone100Subtitle,
     ),
   ];
 }

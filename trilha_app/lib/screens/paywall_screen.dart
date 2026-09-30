@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../l10n/app_language.dart';
 import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -14,13 +15,10 @@ import '../widgets/ui_primitives.dart';
 class PaywallScreen extends StatelessWidget {
   const PaywallScreen({super.key});
 
-  static const _perks = [
-    'A temporada (Advento / Quaresma) — depois dos 3 dias grátis',
-    'Revisão da semana: os 7 “Hoje:” + 3 atos',
-  ];
-
   @override
   Widget build(BuildContext context) {
+    final l10n = context.l10n;
+    final perks = [l10n.paywallPerkSeason, l10n.paywallPerkWeeklyReview];
     final subscription = context.watch<SubscriptionService>();
     final a = Appearance.of(context);
 
@@ -29,7 +27,7 @@ class PaywallScreen extends StatelessWidget {
         child: SafeArea(
           child: Column(
             children: [
-              TopBar(title: 'Peregrino+', onBack: () => Navigator.pop(context)),
+              TopBar(title: l10n.paywallTitle, onBack: () => Navigator.pop(context)),
               Expanded(
                 child: ListView(
                   padding: const EdgeInsets.all(AppSpace.lg),
@@ -45,16 +43,16 @@ class PaywallScreen extends StatelessWidget {
                     const SizedBox(height: AppSpace.lg),
                     Text(
                       subscription.isPeregrinoPlus
-                          ? 'Você já é Peregrino+'
-                          : 'Vá além na trilha',
+                          ? l10n.paywallAlreadyPlus
+                          : l10n.paywallHeadline,
                       textAlign: TextAlign.center,
                       style: AppTypography.display(size: 28, color: a.text),
                     ),
                     const SizedBox(height: AppSpace.sm),
                     Text(
                       subscription.isPeregrinoPlus
-                          ? 'Obrigado por apoiar o STWAY.'
-                          : 'Um apoio direto ao projeto, com alguns extras.',
+                          ? l10n.paywallThanks
+                          : l10n.paywallPitch,
                       textAlign: TextAlign.center,
                       style: AppTypography.body(
                         size: 14,
@@ -67,7 +65,7 @@ class PaywallScreen extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          for (final perk in _perks) ...[
+                          for (final perk in perks) ...[
                             Row(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -97,7 +95,7 @@ class PaywallScreen extends StatelessWidget {
                     const SizedBox(height: AppSpace.xl),
                     if (!subscription.isConfigured)
                       Text(
-                        'Assinatura ainda não disponível nesta versão.',
+                        l10n.paywallUnavailable,
                         textAlign: TextAlign.center,
                         style: AppTypography.body(size: 12, color: a.textFaint),
                       )
@@ -113,7 +111,7 @@ class PaywallScreen extends StatelessWidget {
                         const SizedBox(height: 10),
                       ],
                       TextCta(
-                        label: 'Restaurar compra',
+                        label: l10n.paywallRestore,
                         onTap: subscription.loading
                             ? null
                             : () => subscription.restore(),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../l10n/app_language.dart';
 import '../services/author_suggestion_service.dart';
 import '../services/backend_service.dart';
 import '../theme/app_theme.dart';
@@ -45,31 +46,31 @@ class _AuthorSuggestionSheetState extends State<_AuthorSuggestionSheet> {
   }
 
   bool get _ready => AuthorSuggestionService.isReady(
-        name: _nameCtrl.text,
-        phone: _phoneCtrl.text,
-        email: _emailCtrl.text,
-        instagram: _instagramCtrl.text,
-      );
+    name: _nameCtrl.text,
+    phone: _phoneCtrl.text,
+    email: _emailCtrl.text,
+    instagram: _instagramCtrl.text,
+  );
 
   String get _ctaHint {
     if (!AuthorSuggestionService.isValidName(_nameCtrl.text)) {
-      return 'Escreva o nome — pelo menos 2 letras.';
+      return context.l10n.suggestionAuthorHintName;
     }
     if (!AuthorSuggestionService.isValidPhone(_phoneCtrl.text)) {
-      return 'Confira o telefone, com DDD.';
+      return context.l10n.suggestionAuthorHintPhone;
     }
     if (!AuthorSuggestionService.isValidEmail(_emailCtrl.text)) {
-      return 'Confira o e-mail.';
+      return context.l10n.suggestionAuthorHintEmail;
     }
     if (!AuthorSuggestionService.isValidInstagram(_instagramCtrl.text)) {
-      return 'Confira o Instagram.';
+      return context.l10n.suggestionAuthorHintInstagram;
     }
     if (!AuthorSuggestionService.hasContact(
       phone: _phoneCtrl.text,
       email: _emailCtrl.text,
       instagram: _instagramCtrl.text,
     )) {
-      return 'Informe telefone, e-mail ou Instagram.';
+      return context.l10n.suggestionAuthorHintContact;
     }
     return '';
   }
@@ -97,8 +98,8 @@ class _AuthorSuggestionSheetState extends State<_AuthorSuggestionSheet> {
       setState(() {
         _sending = false;
         _error = backend.isActive
-            ? 'Não foi possível enviar. Tente de novo.'
-            : 'Entre para enviar a sugestão.';
+            ? context.l10n.suggestionSendError
+            : context.l10n.suggestionSignInToSend;
       });
       return;
     }
@@ -131,12 +132,12 @@ class _AuthorSuggestionSheetState extends State<_AuthorSuggestionSheet> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Sugerir um autor',
+                        context.l10n.suggestionAuthorTitle,
                         style: AppTypography.title(size: 18, color: a.text),
                       ),
                       const SizedBox(height: 2),
                       Text(
-                        'Quem ainda falta no mapa?',
+                        context.l10n.suggestionAuthorSubtitle,
                         style: AppTypography.body(
                           size: 13,
                           color: a.textSecondary,
@@ -158,9 +159,9 @@ class _AuthorSuggestionSheetState extends State<_AuthorSuggestionSheet> {
             ),
             const SizedBox(height: 18),
             _Field(
-              label: 'Nome',
+              label: context.l10n.suggestionAuthorName,
               controller: _nameCtrl,
-              hint: 'Como a pessoa se apresenta',
+              hint: context.l10n.suggestionAuthorNameHint,
               textCapitalization: TextCapitalization.words,
               keyboardType: TextInputType.name,
               textInputAction: TextInputAction.next,
@@ -169,7 +170,7 @@ class _AuthorSuggestionSheetState extends State<_AuthorSuggestionSheet> {
             ),
             const SizedBox(height: 12),
             _Field(
-              label: 'Telefone',
+              label: context.l10n.suggestionAuthorPhone,
               controller: _phoneCtrl,
               hint: '(11) 90000-0000',
               keyboardType: TextInputType.phone,
@@ -179,9 +180,9 @@ class _AuthorSuggestionSheetState extends State<_AuthorSuggestionSheet> {
             ),
             const SizedBox(height: 12),
             _Field(
-              label: 'E-mail',
+              label: context.l10n.suggestionAuthorEmail,
               controller: _emailCtrl,
-              hint: 'nome@email.com',
+              hint: context.l10n.suggestionAuthorEmailHint,
               keyboardType: TextInputType.emailAddress,
               textInputAction: TextInputAction.next,
               maxLength: AuthorSuggestionService.maxEmail,
@@ -191,7 +192,7 @@ class _AuthorSuggestionSheetState extends State<_AuthorSuggestionSheet> {
             _Field(
               label: 'Instagram',
               controller: _instagramCtrl,
-              hint: '@usuario',
+              hint: context.l10n.suggestionAuthorInstagramHint,
               keyboardType: TextInputType.text,
               textInputAction: TextInputAction.done,
               maxLength: 120,
@@ -215,7 +216,9 @@ class _AuthorSuggestionSheetState extends State<_AuthorSuggestionSheet> {
             ] else
               const SizedBox(height: 14),
             CopperCta(
-              label: _sending ? 'Enviando…' : 'Enviar sugestão',
+              label: _sending
+                  ? context.l10n.suggestionSending
+                  : context.l10n.suggestionSend,
               trailing: CinematicGlyph.people,
               busy: _sending,
               onTap: canSend ? _submit : null,

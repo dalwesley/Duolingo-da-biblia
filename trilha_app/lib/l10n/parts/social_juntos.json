@@ -1,0 +1,896 @@
+{
+  "juntosCaravanSignInLive": {
+    "pt": "Entre com Google para ver a caravana ao vivo.",
+    "en": "Sign in with Google to see the caravan live.",
+    "es": "Inicia sesión con Google para ver la caravana en vivo."
+  },
+  "juntosCaravanTimeout": {
+    "pt": "A caravana demorou para responder. Puxe para atualizar.",
+    "en": "The caravan took too long to respond. Pull to refresh.",
+    "es": "La caravana tardó en responder. Desliza para actualizar."
+  },
+  "juntosCaravanLoadError": {
+    "pt": "Não foi possível carregar a caravana. Puxe para atualizar.",
+    "en": "Couldn't load the caravan. Pull to refresh.",
+    "es": "No se pudo cargar la caravana. Desliza para actualizar."
+  },
+  "juntosWeekTogetherBonus": {
+    "pt": "A companhia ganhou +{count} passos na jornada",
+    "en": "Your companionship earned +{count} steps on the journey",
+    "es": "La compañía ganó +{count} pasos en el camino",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "juntosCaravanInviteCta": {
+    "pt": "Chamar para a caravana",
+    "en": "Invite to the caravan",
+    "es": "Invitar a la caravana"
+  },
+  "juntosOrInviteCompanion": {
+    "pt": "Ou chamar um companheiro",
+    "en": "Or invite a companion",
+    "es": "O invitar a un compañero"
+  },
+  "juntosCodeCopied": {
+    "pt": "Código copiado",
+    "en": "Code copied",
+    "es": "Código copiado"
+  },
+  "juntosInviteShort": {
+    "pt": "Chamar",
+    "en": "Invite",
+    "es": "Invitar"
+  },
+  "juntosHaveCode": {
+    "pt": "Tenho um código",
+    "en": "I have a code",
+    "es": "Tengo un código"
+  },
+  "juntosLeaveAllCompanionsCta": {
+    "pt": "Encerrar todas as companhias",
+    "en": "End all companionships",
+    "es": "Terminar todas las compañías"
+  },
+  "juntosSomeone": {
+    "pt": "Alguém",
+    "en": "Someone",
+    "es": "Alguien"
+  },
+  "juntosCaravanShareText": {
+    "pt": "{name} te chama pra caravana no Stway — aprenda a Bíblia em cenas curtas e caminhe junto no ranking.\n\nBaixe: {url}",
+    "en": "{name} is inviting you to the caravan on Stway — learn the Bible in short scenes and walk together on the leaderboard.\n\nGet it: {url}",
+    "es": "{name} te invita a la caravana en Stway — aprende la Biblia en escenas cortas y camina junto en el ranking.\n\nDescárgala: {url}",
+    "placeholders": {
+      "name": "String",
+      "url": "String"
+    },
+    "description": "Share text a friend sends; casual friend voice."
+  },
+  "juntosCaravanShareSubject": {
+    "pt": "Venha pra caravana no Stway",
+    "en": "Join the caravan on Stway",
+    "es": "Ven a la caravana en Stway"
+  },
+  "juntosCreateInviteError": {
+    "pt": "Não foi possível criar o convite. Tente de novo.",
+    "en": "Couldn't create the invite. Try again.",
+    "es": "No se pudo crear la invitación. Inténtalo de nuevo."
+  },
+  "juntosJoinError": {
+    "pt": "Não foi possível entrar. Tente de novo.",
+    "en": "Couldn't join. Try again.",
+    "es": "No se pudo entrar. Inténtalo de nuevo."
+  },
+  "juntosLeaveAllCompanionsTitle": {
+    "pt": "Encerrar todas as companhias?",
+    "en": "End all companionships?",
+    "es": "¿Terminar todas las compañías?"
+  },
+  "juntosLeaveAllCompanionsBody": {
+    "pt": "{count, plural, =1{A companhia termina. Você fica sem companheiro.} other{As {count} companhias terminam. Você fica sem companheiro.}}",
+    "en": "{count, plural, =1{The companionship ends. You'll have no companion.} other{All {count} companionships end. You'll have no companion.}}",
+    "es": "{count, plural, =1{La compañía termina. Te quedas sin compañero.} other{Las {count} compañías terminan. Te quedas sin compañero.}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "juntosLeaveAllConfirm": {
+    "pt": "Encerrar todas",
+    "en": "End all",
+    "es": "Terminar todas"
+  },
+  "juntosLeaveCompanionTitle": {
+    "pt": "Sair da companhia?",
+    "en": "Leave the companionship?",
+    "es": "¿Salir de la compañía?"
+  },
+  "juntosLeaveCompanionBody": {
+    "pt": "A companhia com esta pessoa termina. A caravana continua.",
+    "en": "Your companionship with this person ends. The caravan goes on.",
+    "es": "La compañía con esta persona termina. La caravana sigue."
+  },
+  "juntosLeaveConfirm": {
+    "pt": "Sair",
+    "en": "Leave",
+    "es": "Salir"
+  },
+  "juntosRoomQrSubtitle": {
+    "pt": "Aponte a câmera ou digite o código para entrar",
+    "en": "Point the camera or type the code to join",
+    "es": "Apunta la cámara o escribe el código para entrar"
+  },
+  "juntosRoomShareText": {
+    "pt": "Entra no grupo \"{name}\" no Stway.\nToque ou aponte a câmera:\n{url}\n\nCódigo: {code}\n\nA lista mostra quem estudou nesta semana.\n\nAinda não tem o app? Baixe: {storeUrl}",
+    "en": "Join the group \"{name}\" on Stway.\nTap or point your camera:\n{url}\n\nCode: {code}\n\nThe list shows who studied this week.\n\nDon't have the app yet? Get it: {storeUrl}",
+    "es": "Únete al grupo \"{name}\" en Stway.\nToca o apunta la cámara:\n{url}\n\nCódigo: {code}\n\nLa lista muestra quién estudió esta semana.\n\n¿Aún no tienes la app? Descárgala: {storeUrl}",
+    "placeholders": {
+      "name": "String",
+      "url": "String",
+      "code": "String",
+      "storeUrl": "String"
+    },
+    "description": "Share text a friend sends; casual friend voice."
+  },
+  "juntosRoomGoalTitle": {
+    "pt": "Meta de passos do grupo",
+    "en": "Group steps goal",
+    "es": "Meta de pasos del grupo"
+  },
+  "juntosRoomGoalHint": {
+    "pt": "Soma da semana. Em branco, tira a meta.",
+    "en": "Weekly total. Leave blank to remove the goal.",
+    "es": "Suma de la semana. En blanco, quita la meta."
+  },
+  "juntosSwitchRoomTitle": {
+    "pt": "Entrar em {name}?",
+    "en": "Join {name}?",
+    "es": "¿Entrar en {name}?",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "juntosSwitchRoomBody": {
+    "pt": "Você sai do grupo em que está agora.",
+    "en": "You'll leave the group you're in now.",
+    "es": "Saldrás del grupo en el que estás ahora."
+  },
+  "juntosAccept": {
+    "pt": "Aceitar",
+    "en": "Accept",
+    "es": "Aceptar"
+  },
+  "juntosRoomJoined": {
+    "pt": "Você entrou em {name}.",
+    "en": "You joined {name}.",
+    "es": "Entraste en {name}.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "juntosRoomJoinError": {
+    "pt": "Não foi possível entrar no grupo. Tente de novo.",
+    "en": "Couldn't join the group. Try again.",
+    "es": "No se pudo entrar al grupo. Inténtalo de nuevo."
+  },
+  "juntosDeclineInviteError": {
+    "pt": "Não foi possível recusar o convite. Tente de novo.",
+    "en": "Couldn't decline the invite. Try again.",
+    "es": "No se pudo rechazar la invitación. Inténtalo de nuevo."
+  },
+  "juntosCancelInviteError": {
+    "pt": "Não foi possível cancelar o convite. Tente de novo.",
+    "en": "Couldn't cancel the invite. Try again.",
+    "es": "No se pudo cancelar la invitación. Inténtalo de nuevo."
+  },
+  "juntosRoomCreated": {
+    "pt": "Grupo criado. Chame alguém da lista, ou mande o código {code}.",
+    "en": "Group created. Invite someone from the list, or send the code {code}.",
+    "es": "Grupo creado. Invita a alguien de la lista o envía el código {code}.",
+    "placeholders": {
+      "code": "String"
+    }
+  },
+  "juntosRoomChestClaimed": {
+    "pt": "Baú do grupo · +{count} passos",
+    "en": "Group chest · +{count} steps",
+    "es": "Cofre del grupo · +{count} pasos",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "juntosRoomChestAlready": {
+    "pt": "Baú já coletado nesta semana",
+    "en": "Chest already collected this week",
+    "es": "Cofre ya recogido esta semana"
+  },
+  "juntosLeader": {
+    "pt": "Líder",
+    "en": "Leader",
+    "es": "Líder"
+  },
+  "juntosRoomStudySet": {
+    "pt": "Estudo marcado para o grupo",
+    "en": "Study set for the group",
+    "es": "Estudio marcado para el grupo"
+  },
+  "juntosRoomStudySetError": {
+    "pt": "Não foi possível marcar o estudo. Tente de novo.",
+    "en": "Couldn't set the study. Try again.",
+    "es": "No se pudo marcar el estudio. Inténtalo de nuevo."
+  },
+  "juntosWavedAt": {
+    "pt": "Você acenou para {name}",
+    "en": "You waved at {name}",
+    "es": "Saludaste a {name}",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "juntosWaveError": {
+    "pt": "Não foi possível acenar. Tente de novo.",
+    "en": "Couldn't wave. Try again.",
+    "es": "No se pudo saludar. Inténtalo de nuevo."
+  },
+  "juntosEditRoomTitle": {
+    "pt": "Editar grupo",
+    "en": "Edit group",
+    "es": "Editar grupo"
+  },
+  "juntosCloseRoomTitle": {
+    "pt": "Encerrar o grupo?",
+    "en": "Close the group?",
+    "es": "¿Cerrar el grupo?"
+  },
+  "juntosCloseRoomBody": {
+    "pt": "O grupo some para todos e o código deixa de funcionar. Não é possível desfazer.",
+    "en": "The group disappears for everyone and the code stops working. This can't be undone.",
+    "es": "El grupo desaparece para todos y el código deja de funcionar. No se puede deshacer."
+  },
+  "juntosCloseConfirm": {
+    "pt": "Encerrar",
+    "en": "Close",
+    "es": "Cerrar"
+  },
+  "juntosTransferTitle": {
+    "pt": "Passar a liderança",
+    "en": "Hand over leadership",
+    "es": "Pasar el liderazgo"
+  },
+  "juntosTransferBody": {
+    "pt": "Quem assumir marca o estudo, a meta e acena para o grupo. Você continua na lista.",
+    "en": "Whoever takes over sets the study and the goal, and waves to the group. You stay on the list.",
+    "es": "Quien asuma marca el estudio y la meta, y saluda al grupo. Sigues en la lista."
+  },
+  "juntosTransferDone": {
+    "pt": "{name} agora conduz o grupo",
+    "en": "{name} now leads the group",
+    "es": "{name} ahora guía el grupo",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "juntosTransferError": {
+    "pt": "Não foi possível passar a liderança. Tente de novo.",
+    "en": "Couldn't hand over leadership. Try again.",
+    "es": "No se pudo pasar el liderazgo. Inténtalo de nuevo."
+  },
+  "juntosBeforeLeaveTitle": {
+    "pt": "Antes de sair",
+    "en": "Before you leave",
+    "es": "Antes de salir"
+  },
+  "juntosBeforeLeaveBody": {
+    "pt": "Escolha quem vai conduzir o grupo depois de você.",
+    "en": "Choose who will lead the group after you.",
+    "es": "Elige quién guiará el grupo después de ti."
+  },
+  "juntosChoose": {
+    "pt": "Escolher",
+    "en": "Choose",
+    "es": "Elegir"
+  },
+  "juntosJoinRoomTitle": {
+    "pt": "Entrar no grupo",
+    "en": "Join a group",
+    "es": "Entrar al grupo"
+  },
+  "juntosJoinRoomHint": {
+    "pt": "Código que você recebeu",
+    "en": "Code you received",
+    "es": "Código que recibiste"
+  },
+  "juntosJoin": {
+    "pt": "Entrar",
+    "en": "Join",
+    "es": "Entrar"
+  },
+  "juntosRoomJoinedGeneric": {
+    "pt": "Você entrou no grupo.",
+    "en": "You joined the group.",
+    "es": "Entraste al grupo."
+  },
+  "juntosLeaveRoomTitle": {
+    "pt": "Sair do grupo?",
+    "en": "Leave the group?",
+    "es": "¿Salir del grupo?"
+  },
+  "juntosLeaveRoomBody": {
+    "pt": "Você sai da lista. Para voltar, use o código de novo.",
+    "en": "You'll leave the list. To come back, use the code again.",
+    "es": "Sales de la lista. Para volver, usa el código de nuevo."
+  },
+  "juntosTabCompanion": {
+    "pt": "Companhia",
+    "en": "Companion",
+    "es": "Compañía"
+  },
+  "juntosTabCaravan": {
+    "pt": "Caravana",
+    "en": "Caravan",
+    "es": "Caravana"
+  },
+  "juntosTabGroups": {
+    "pt": "Grupos",
+    "en": "Groups",
+    "es": "Grupos"
+  },
+  "juntosTabChallenge": {
+    "pt": "Desafio",
+    "en": "Challenge",
+    "es": "Desafío"
+  },
+  "juntosThisMonth": {
+    "pt": "Este mês",
+    "en": "This month",
+    "es": "Este mes"
+  },
+  "juntosThisWeek": {
+    "pt": "Esta semana",
+    "en": "This week",
+    "es": "Esta semana"
+  },
+  "juntosCaravanWeekTitle": {
+    "pt": "Quem avançou nesta semana?",
+    "en": "Who moved ahead this week?",
+    "es": "¿Quién avanzó esta semana?"
+  },
+  "juntosCaravanMonthTitle": {
+    "pt": "Quem mais caminhou neste mês?",
+    "en": "Who walked the most this month?",
+    "es": "¿Quién caminó más este mes?"
+  },
+  "juntosCaravanWeekBody": {
+    "pt": "Só passos de cenas novas, de segunda a domingo. No fim da semana, os primeiros sobem de nível e os últimos descem.",
+    "en": "Only steps from new scenes, Monday to Sunday. At the end of the week, the top move up a level and the bottom move down.",
+    "es": "Solo pasos de escenas nuevas, de lunes a domingo. Al final de la semana, los primeros suben de nivel y los últimos bajan."
+  },
+  "juntosCaravanMonthBody": {
+    "pt": "Tudo conta: cenas, tarefas do dia, baús e companhia. Zera todo dia 1 — quem chegou agora também pode liderar.",
+    "en": "Everything counts: scenes, daily tasks, chests and companion. It resets on the 1st — newcomers can lead too.",
+    "es": "Todo cuenta: escenas, tareas del día, cofres y compañía. Se reinicia cada día 1 — quien acaba de llegar también puede liderar."
+  },
+  "juntosCaravanWeekStep1": {
+    "pt": "Passos\nda semana",
+    "en": "Steps\nthis week",
+    "es": "Pasos\nde la semana"
+  },
+  "juntosCaravanWeekStep2": {
+    "pt": "Lugar no\nranking",
+    "en": "Place on the\nleaderboard",
+    "es": "Lugar en\nel ranking"
+  },
+  "juntosCaravanWeekStep3": {
+    "pt": "Sobe ou\ndesce",
+    "en": "Move up\nor down",
+    "es": "Sube o\nbaja"
+  },
+  "juntosCaravanMonthStep1": {
+    "pt": "Estude\numa cena",
+    "en": "Study\na scene",
+    "es": "Estudia\nuna escena"
+  },
+  "juntosCaravanMonthStep2": {
+    "pt": "Some\npassos",
+    "en": "Add up\nsteps",
+    "es": "Suma\npasos"
+  },
+  "juntosCaravanMonthStep3": {
+    "pt": "Veja o\ncaminho",
+    "en": "See the\npath",
+    "es": "Mira el\ncamino"
+  },
+  "juntosCompanionExplainerTitle": {
+    "pt": "Quem caminha ao seu lado?",
+    "en": "Who walks beside you?",
+    "es": "¿Quién camina a tu lado?"
+  },
+  "juntosCompanionExplainerBody": {
+    "pt": "Uma companhia de estudo. No dia em que os dois caminham, o fio acende e a sequência cresce.",
+    "en": "A study companion. On days you both walk, the thread lights up and the streak grows.",
+    "es": "Una compañía de estudio. El día en que los dos caminan, el hilo se enciende y la racha crece."
+  },
+  "juntosChallengeExplainerTitle": {
+    "pt": "Quem chega até domingo?",
+    "en": "Who gets there by Sunday?",
+    "es": "¿Quién llega antes del domingo?"
+  },
+  "juntosChallengeExplainerBody": {
+    "pt": "Mesma cena, até domingo. Quem chegar ganha {reward} — se os dois chegarem, os dois ganham.",
+    "en": "Same scene, by Sunday. Whoever gets there earns {reward} — if you both do, you both earn it.",
+    "es": "Misma escena, hasta el domingo. Quien llegue gana {reward} — si los dos llegan, los dos ganan.",
+    "placeholders": {
+      "reward": "String"
+    }
+  },
+  "juntosChallengeStep1": {
+    "pt": "Mesma\ncena",
+    "en": "Same\nscene",
+    "es": "Misma\nescena"
+  },
+  "juntosChallengeStep2": {
+    "pt": "Chegar até\ndomingo",
+    "en": "Get there\nby Sunday",
+    "es": "Llegar antes\ndel domingo"
+  },
+  "juntosChallengeStep3": {
+    "pt": "+10 passos\nna chegada",
+    "en": "+10 steps\non arrival",
+    "es": "+10 pasos\nal llegar"
+  },
+  "juntosRoomsOfflineTitle": {
+    "pt": "Entre para criar o grupo",
+    "en": "Sign in to create the group",
+    "es": "Inicia sesión para crear el grupo"
+  },
+  "juntosRoomsOfflineBody": {
+    "pt": "O grupo fica na sua conta. Entre com Google para criar ou usar um código.",
+    "en": "The group lives in your account. Sign in with Google to create one or use a code.",
+    "es": "El grupo queda en tu cuenta. Inicia sesión con Google para crear uno o usar un código."
+  },
+  "juntosConnecting": {
+    "pt": "Conectando…",
+    "en": "Connecting…",
+    "es": "Conectando…"
+  },
+  "juntosRoomsOfflineFoot": {
+    "pt": "Sem login, o código não funciona",
+    "en": "Without signing in, the code won't work",
+    "es": "Sin iniciar sesión, el código no funciona"
+  },
+  "juntosRoomsEmptyEyebrow": {
+    "pt": "Célula · Discipulado · EBD",
+    "en": "Small group · Discipleship · Sunday school",
+    "es": "Célula · Discipulado · Escuela dominical"
+  },
+  "juntosRoomsEmptyTitle": {
+    "pt": "Quem estuda com você?",
+    "en": "Who studies with you?",
+    "es": "¿Quién estudia contigo?"
+  },
+  "juntosRoomsEmptyBody": {
+    "pt": "Um grupo fechado: célula, discipulado ou EBD. Marque a cena da semana e veja quem estudou — o convite vai no app ou no WhatsApp.",
+    "en": "A closed group: small group, discipleship or Sunday school. Set the scene of the week and see who studied — invite in the app or on WhatsApp.",
+    "es": "Un grupo cerrado: célula, discipulado o escuela dominical. Marca la escena de la semana y mira quién estudió — la invitación va por la app o por WhatsApp."
+  },
+  "juntosRoomBenefitStudy": {
+    "pt": "Estudo",
+    "en": "Study",
+    "es": "Estudio"
+  },
+  "juntosRoomBenefitStudyDetail": {
+    "pt": "Mesma cena",
+    "en": "Same scene",
+    "es": "Misma escena"
+  },
+  "juntosRoomBenefitList": {
+    "pt": "Lista",
+    "en": "List",
+    "es": "Lista"
+  },
+  "juntosRoomBenefitListDetail": {
+    "pt": "Quem estudou",
+    "en": "Who studied",
+    "es": "Quién estudió"
+  },
+  "juntosRoomBenefitWave": {
+    "pt": "Acenar",
+    "en": "Wave",
+    "es": "Saludar"
+  },
+  "juntosRoomBenefitWaveDetail": {
+    "pt": "Quem sumiu",
+    "en": "Who's gone quiet",
+    "es": "Quién desapareció"
+  },
+  "juntosCreateRoom": {
+    "pt": "Criar grupo",
+    "en": "Create group",
+    "es": "Crear grupo"
+  },
+  "juntosClosesToday": {
+    "pt": "Fecha hoje",
+    "en": "Closes today",
+    "es": "Cierra hoy"
+  },
+  "juntosDaysLeft": {
+    "pt": "{count, plural, =1{Falta 1 dia} other{Faltam {count} dias}}",
+    "en": "{count, plural, =1{1 day left} other{{count} days left}}",
+    "es": "{count, plural, =1{Falta 1 día} other{Faltan {count} días}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "juntosYouLower": {
+    "pt": "você",
+    "en": "you",
+    "es": "tú",
+    "description": "Used inside a sentence, e.g. 'Leader: you'."
+  },
+  "juntosRoomOnlyYou": {
+    "pt": "Só você no grupo por enquanto.",
+    "en": "Just you in the group for now.",
+    "es": "Solo tú en el grupo por ahora."
+  },
+  "juntosRoomNotStudiedToday": {
+    "pt": "Você ainda não estudou hoje.",
+    "en": "You haven't studied today yet.",
+    "es": "Aún no has estudiado hoy."
+  },
+  "juntosRoomAllStudied": {
+    "pt": "O grupo inteiro estudou nesta semana.",
+    "en": "The whole group studied this week.",
+    "es": "Todo el grupo estudió esta semana."
+  },
+  "juntosRoomHalfStudied": {
+    "pt": "Metade do grupo já estudou.",
+    "en": "Half the group has studied.",
+    "es": "La mitad del grupo ya estudió."
+  },
+  "juntosRoomMissingForHalf": {
+    "pt": "{count, plural, =1{Falta 1 pessoa para metade do grupo.} other{Faltam {count} pessoas para metade do grupo.}}",
+    "en": "{count, plural, =1{1 more person to reach half the group.} other{{count} more people to reach half the group.}}",
+    "es": "{count, plural, =1{Falta 1 persona para la mitad del grupo.} other{Faltan {count} personas para la mitad del grupo.}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "juntosRoomHintInvite": {
+    "pt": "Chame quem estuda com você: célula, família, amigos.",
+    "en": "Invite people who study with you: small group, family, friends.",
+    "es": "Invita a quien estudia contigo: célula, familia, amigos."
+  },
+  "juntosRoomHintClaimed": {
+    "pt": "Baú do grupo coletado nesta semana.",
+    "en": "Group chest collected this week.",
+    "es": "Cofre del grupo recogido esta semana."
+  },
+  "juntosRoomHintStudyToday": {
+    "pt": "Estude hoje para abrir o baú do grupo.",
+    "en": "Study today to open the group chest.",
+    "es": "Estudia hoy para abrir el cofre del grupo."
+  },
+  "juntosRoomHintHalfOrGoal": {
+    "pt": "O baú abre com metade do grupo ou a meta.",
+    "en": "The chest opens with half the group or the goal.",
+    "es": "El cofre se abre con la mitad del grupo o la meta."
+  },
+  "juntosRoomHintHalf": {
+    "pt": "O baú abre quando metade do grupo estudar.",
+    "en": "The chest opens when half the group studies.",
+    "es": "El cofre se abre cuando la mitad del grupo estudie."
+  },
+  "juntosRoomOptions": {
+    "pt": "Opções do grupo",
+    "en": "Group options",
+    "es": "Opciones del grupo"
+  },
+  "juntosRoomLeaderLine": {
+    "pt": "{leaderTitle}: {leader} · {count, plural, =1{1 pessoa} other{{count} pessoas}}",
+    "en": "{leaderTitle}: {leader} · {count, plural, =1{1 person} other{{count} people}}",
+    "es": "{leaderTitle}: {leader} · {count, plural, =1{1 persona} other{{count} personas}}",
+    "placeholders": {
+      "leaderTitle": "String",
+      "leader": "String",
+      "count": "int"
+    }
+  },
+  "juntosOfTotal": {
+    "pt": " de {total}",
+    "en": " of {total}",
+    "es": " de {total}",
+    "placeholders": {
+      "total": "int"
+    },
+    "description": "Follows a big number: '3 of 5'. Keep the leading space."
+  },
+  "juntosStudiedThisWeek": {
+    "pt": "estudaram nesta semana",
+    "en": "studied this week",
+    "es": "estudiaron esta semana"
+  },
+  "juntosRoomGoalLabel": {
+    "pt": "Meta do grupo",
+    "en": "Group goal",
+    "es": "Meta del grupo"
+  },
+  "juntosRoomGoalProgress": {
+    "pt": "{sum} / {goal} passos",
+    "en": "{sum} / {goal} steps",
+    "es": "{sum} / {goal} pasos",
+    "placeholders": {
+      "sum": "int",
+      "goal": "int"
+    }
+  },
+  "juntosStudyToday": {
+    "pt": "Estudar hoje",
+    "en": "Study today",
+    "es": "Estudiar hoy"
+  },
+  "juntosRoomChestOpen": {
+    "pt": "Abrir o baú do grupo · +{count} passos",
+    "en": "Open the group chest · +{count} steps",
+    "es": "Abrir el cofre del grupo · +{count} pasos",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "juntosRoomFull": {
+    "pt": "Grupo cheio. Para mais gente, abra outro grupo.",
+    "en": "Group full. For more people, start another group.",
+    "es": "Grupo lleno. Para más gente, abre otro grupo."
+  },
+  "juntosInvitePeople": {
+    "pt": "Chamar pessoas",
+    "en": "Invite people",
+    "es": "Invitar personas"
+  },
+  "juntosCopyCodeSemantics": {
+    "pt": "Copiar código {code}",
+    "en": "Copy code {code}",
+    "es": "Copiar código {code}",
+    "placeholders": {
+      "code": "String"
+    }
+  },
+  "juntosCodeLabel": {
+    "pt": "Código",
+    "en": "Code",
+    "es": "Código"
+  },
+  "juntosOnlineSemantics": {
+    "pt": "{countLabel}. Ver quem está estudando",
+    "en": "{countLabel}. See who's studying",
+    "es": "{countLabel}. Ver quién está estudiando",
+    "placeholders": {
+      "countLabel": "String"
+    }
+  },
+  "juntosWeekRankingEmpty": {
+    "pt": "O ranking da semana só aparece com gente de verdade na caravana.",
+    "en": "The weekly leaderboard only shows up with real people in the caravan.",
+    "es": "El ranking de la semana solo aparece con gente de verdad en la caravana."
+  },
+  "juntosPromoteZone": {
+    "pt": "Zona de subida · {tier}",
+    "en": "Promotion zone · {tier}",
+    "es": "Zona de ascenso · {tier}",
+    "placeholders": {
+      "tier": "String"
+    }
+  },
+  "juntosDemoteZone": {
+    "pt": "Zona de descida · {tier}",
+    "en": "Demotion zone · {tier}",
+    "es": "Zona de descenso · {tier}",
+    "placeholders": {
+      "tier": "String"
+    }
+  },
+  "juntosCaravanPilgrimsCount": {
+    "pt": "{count, plural, =1{1 peregrino da caravana} other{{count} peregrinos da caravana}}",
+    "en": "{count, plural, =1{1 pilgrim in the caravan} other{{count} pilgrims in the caravan}}",
+    "es": "{count, plural, =1{1 peregrino de la caravana} other{{count} peregrinos de la caravana}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "juntosStudyingNow": {
+    "pt": "Estudando agora",
+    "en": "Studying now",
+    "es": "Estudiando ahora"
+  },
+  "juntosWalkedToday": {
+    "pt": "Caminhou hoje",
+    "en": "Walked today",
+    "es": "Caminó hoy"
+  },
+  "juntosSeenToday": {
+    "pt": "Visto hoje",
+    "en": "Seen today",
+    "es": "Visto hoy"
+  },
+  "juntosTie": {
+    "pt": "Empate",
+    "en": "Tie",
+    "es": "Empate"
+  },
+  "juntosGapToAbove": {
+    "pt": "{gap} do {place}º",
+    "en": "{gap} behind #{place}",
+    "es": "{gap} del {place}º",
+    "placeholders": {
+      "gap": "int",
+      "place": "int"
+    },
+    "description": "Steps behind the person ranked just above (place = their position)."
+  },
+  "juntosCompanionsOfflineTitle": {
+    "pt": "Companhia precisa da nuvem",
+    "en": "Companion needs the cloud",
+    "es": "La compañía necesita la nube"
+  },
+  "juntosCompanionsOfflineBody": {
+    "pt": "Entre com Google para caminhar com alguém de verdade.",
+    "en": "Sign in with Google to walk with a real person.",
+    "es": "Inicia sesión con Google para caminar con alguien de verdad."
+  },
+  "juntosInviteCompanion": {
+    "pt": "Chamar um companheiro",
+    "en": "Invite a companion",
+    "es": "Invitar a un compañero"
+  },
+  "juntosCompanionStep1": {
+    "pt": "Os dois\nestudam",
+    "en": "You both\nstudy",
+    "es": "Los dos\nestudian"
+  },
+  "juntosCompanionStep2": {
+    "pt": "O dia conta\njuntos",
+    "en": "The day counts\ntogether",
+    "es": "El día cuenta\njuntos"
+  },
+  "juntosCompanionStep3": {
+    "pt": "Se um atrasa,\no outro acena",
+    "en": "If one falls behind,\nthe other waves",
+    "es": "Si uno se atrasa,\nel otro saluda"
+  },
+  "juntosCompanionFallback": {
+    "pt": "Companheiro",
+    "en": "Companion",
+    "es": "Compañero"
+  },
+  "juntosWaveAt": {
+    "pt": "Acenar para {name}",
+    "en": "Wave at {name}",
+    "es": "Saludar a {name}",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "juntosLeaveCompanionCta": {
+    "pt": "Sair da companhia",
+    "en": "Leave companionship",
+    "es": "Salir de la compañía"
+  },
+  "juntosBondNotStudying": {
+    "pt": "Sem estudar",
+    "en": "Not studying",
+    "es": "Sin estudiar"
+  },
+  "juntosBondYourTurn": {
+    "pt": "Sua vez",
+    "en": "Your turn",
+    "es": "Tu turno"
+  },
+  "juntosBondNotYet": {
+    "pt": "Ainda não",
+    "en": "Not yet",
+    "es": "Todavía no"
+  },
+  "juntosOpenInvite": {
+    "pt": "Convite aberto",
+    "en": "Open invite",
+    "es": "Invitación abierta"
+  },
+  "juntosWaiting": {
+    "pt": "Aguardando",
+    "en": "Waiting",
+    "es": "Esperando"
+  },
+  "juntosOpenInviteMissing": {
+    "pt": "Falta uma pessoa do outro lado",
+    "en": "Someone's missing on the other side",
+    "es": "Falta una persona del otro lado"
+  },
+  "juntosShowQrShare": {
+    "pt": "Mostrar QR e compartilhar",
+    "en": "Show QR and share",
+    "es": "Mostrar QR y compartir"
+  },
+  "juntosCancelInvite": {
+    "pt": "Cancelar convite",
+    "en": "Cancel invite",
+    "es": "Cancelar invitación"
+  },
+  "juntosWho": {
+    "pt": "Quem?",
+    "en": "Who?",
+    "es": "¿Quién?"
+  },
+  "juntosCodeTapToCopy": {
+    "pt": "Código {code}. Toque para copiar",
+    "en": "Code {code}. Tap to copy",
+    "es": "Código {code}. Toca para copiar",
+    "placeholders": {
+      "code": "String"
+    }
+  },
+  "juntosCopy": {
+    "pt": "Copiar",
+    "en": "Copy",
+    "es": "Copiar"
+  },
+  "juntosTogetherOfSeven": {
+    "pt": "{count} de 7 juntos",
+    "en": "{count} of 7 together",
+    "es": "{count} de 7 juntos",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "juntosTogetherLegend": {
+    "pt": "juntos",
+    "en": "together",
+    "es": "juntos"
+  },
+  "juntosFirstMilestone": {
+    "pt": "Primeiro marco: {count} dias juntos",
+    "en": "First milestone: {count} days together",
+    "es": "Primer hito: {count} días juntos",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "juntosNextMilestone": {
+    "pt": "Próximo marco: {count} dias",
+    "en": "Next milestone: {count} days",
+    "es": "Próximo hito: {count} días",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "juntosMilestoneLeft": {
+    "pt": "{count, plural, =1{Falta 1 para o marco de {next}} other{Faltam {count} para o marco de {next}}}",
+    "en": "{count, plural, =1{1 to go to the {next} milestone} other{{count} to go to the {next} milestone}}",
+    "es": "{count, plural, =1{Falta 1 para el hito de {next}} other{Faltan {count} para el hito de {next}}}",
+    "placeholders": {
+      "count": "int",
+      "next": "int"
+    }
+  },
+  "juntosMilestones": {
+    "pt": "Marcos",
+    "en": "Milestones",
+    "es": "Hitos"
+  },
+  "juntosWavedAtYou": {
+    "pt": "{name} acenou para você",
+    "en": "{name} waved at you",
+    "es": "{name} te saludó",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "juntosCaravanEmptyTitle": {
+    "pt": "A caravana ainda é pequena",
+    "en": "The caravan is still small",
+    "es": "La caravana aún es pequeña"
+  },
+  "juntosCaravanEmptyBody": {
+    "pt": "O ranking aparece com pelo menos mais uma pessoa caminhando. Chame alguém para a caravana — ou comece por uma companhia.",
+    "en": "The leaderboard shows up once at least one more person is walking. Invite someone to the caravan — or start with a companion.",
+    "es": "El ranking aparece con al menos una persona más caminando. Invita a alguien a la caravana — o empieza con una compañía."
+  }
+}

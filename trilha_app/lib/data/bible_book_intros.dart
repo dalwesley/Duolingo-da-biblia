@@ -2,8 +2,11 @@
 ///
 /// Chaves = [BibleChronology.normalizeAbbrev] (gn, jo, joao, …).
 /// Tom: tradição cristã evangélica, datas aproximadas, sem debate acadêmico.
+/// EN/ES: [BibleIntroOverlay] (assets/l10n/content/bible_intros_{en,es}.json).
 library;
 
+import '../l10n/bible_intro_overlay.dart';
+import '../l10n/l10n_global.dart';
 import 'bible_chronology.dart';
 
 class BibleBookIntro {
@@ -30,12 +33,51 @@ class BibleBookIntro {
     required this.audience,
   });
 
-  static const _traditionPrefix = 'Tradição: ';
+  static const _traditionPrefixPt = 'Tradição: ';
+  static const _traditionPrefixEn = 'Tradition: ';
+  static const _traditionPrefixEs = 'Tradición: ';
 
-  bool get byTradition => author.startsWith(_traditionPrefix);
+  bool get byTradition {
+    final a = author;
+    return a.startsWith(_traditionPrefixPt) ||
+        a.startsWith(_traditionPrefixEn) ||
+        a.startsWith(_traditionPrefixEs);
+  }
 
-  String get authorName =>
-      byTradition ? author.substring(_traditionPrefix.length) : author;
+  String get authorName {
+    if (author.startsWith(_traditionPrefixPt)) {
+      return author.substring(_traditionPrefixPt.length);
+    }
+    if (author.startsWith(_traditionPrefixEn)) {
+      return author.substring(_traditionPrefixEn.length);
+    }
+    if (author.startsWith(_traditionPrefixEs)) {
+      return author.substring(_traditionPrefixEs.length);
+    }
+    return author;
+  }
+
+  BibleBookIntro overlay(Map<String, String> fields) {
+    return BibleBookIntro(
+      title: fields['title']?.trim().isNotEmpty == true
+          ? fields['title']!.trim()
+          : title,
+      summary: fields['summary']?.trim().isNotEmpty == true
+          ? fields['summary']!.trim()
+          : (fields['about']?.trim().isNotEmpty == true
+              ? fields['about']!.trim()
+              : summary),
+      author: fields['author']?.trim().isNotEmpty == true
+          ? fields['author']!.trim()
+          : author,
+      when: fields['when']?.trim().isNotEmpty == true
+          ? fields['when']!.trim()
+          : when,
+      audience: fields['audience']?.trim().isNotEmpty == true
+          ? fields['audience']!.trim()
+          : audience,
+    );
+  }
 }
 
 class BibleBookIntros {
@@ -43,7 +85,13 @@ class BibleBookIntros {
 
   static BibleBookIntro? of(String abbrev, {String? bookName}) {
     final key = BibleChronology.normalizeAbbrev(abbrev, bookName: bookName);
-    return byAbbrev[key];
+    final base = byAbbrev[key];
+    if (base == null) return null;
+    final locale = L10n.current.localeName.split(RegExp(r'[_-]')).first;
+    if (locale == 'pt') return base;
+    final fields = BibleIntroOverlay.instance.fieldsFor(key);
+    if (fields == null || fields.isEmpty) return base;
+    return base.overlay(fields);
   }
 
   static const byAbbrev = <String, BibleBookIntro>{

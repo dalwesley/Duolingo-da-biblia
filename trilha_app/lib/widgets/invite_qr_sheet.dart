@@ -6,6 +6,7 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:share_plus/share_plus.dart';
+import '../l10n/app_language.dart';
 import '../services/app_update_service.dart';
 import '../services/invite_deep_link_service.dart';
 import '../theme/app_theme.dart';
@@ -20,7 +21,7 @@ import 'stway_brand.dart';
 Future<void> showInviteQrSheet(
   BuildContext context, {
   required String code,
-  String title = 'Seu convite está pronto',
+  String? title,
   String? subtitle,
   String? shareMessage,
   String? inviterName,
@@ -41,7 +42,7 @@ Future<void> showInviteQrSheet(
 
 class _InviteQrSheet extends StatefulWidget {
   final String code;
-  final String title;
+  final String? title;
   final String? subtitle;
   final String? shareMessage;
   final String? inviterName;
@@ -49,7 +50,7 @@ class _InviteQrSheet extends StatefulWidget {
 
   const _InviteQrSheet({
     required this.code,
-    required this.title,
+    this.title,
     this.subtitle,
     this.shareMessage,
     this.inviterName,
@@ -66,7 +67,7 @@ class _InviteQrSheetState extends State<_InviteQrSheet> {
 
   String get _name {
     final n = widget.inviterName?.trim() ?? '';
-    return n.isEmpty ? 'Alguém' : n;
+    return n.isEmpty ? context.l10n.inviteSomeone : n;
   }
 
   String get _installUrl => AppUpdateService.androidStoreUrl;
@@ -78,19 +79,10 @@ class _InviteQrSheetState extends State<_InviteQrSheet> {
   String get _defaultShareText {
     if (!widget.companionMode) {
       return widget.shareMessage ??
-          'Entre no Stway com o código ${widget.code}.\n\n'
-              'Ainda não tem o app? Baixe: $_installUrl';
+          context.l10n.inviteRoomShareText(widget.code, _installUrl);
     }
-    return '''
-$_name te convidou a caminhar junto no Stway.
-Sem disputa — só presença.
-
-Toque para aceitar (já tem o app):
-$_inviteLink
-
-Ainda não tem o Stway? Baixe e toque no link de novo:
-$_installUrl
-'''
+    return context.l10n
+        .inviteCompanionShareText(_name, _inviteLink, _installUrl)
         .trim();
   }
 
@@ -110,7 +102,7 @@ $_installUrl
     if (!mounted) return;
     showAppToastFor(
       context,
-      message: 'Código copiado',
+      message: context.l10n.inviteCodeCopied,
       glyph: CinematicGlyph.copy,
     );
   }
@@ -118,6 +110,8 @@ $_installUrl
   Future<void> _shareInvite() async {
     if (_busy) return;
     setState(() => _busy = true);
+    final text = widget.shareMessage ?? _defaultShareText;
+    final subject = context.l10n.inviteShareSubject;
     try {
       XFile? imageFile;
       if (widget.companionMode) {
@@ -138,12 +132,11 @@ $_installUrl
           }
         }
       }
-      final text = widget.shareMessage ?? _defaultShareText;
       await SharePlus.instance.share(
         ShareParams(
           files: imageFile == null ? null : [imageFile],
           text: text,
-          subject: 'Convite Stway — caminhem juntos',
+          subject: subject,
         ),
       );
     } finally {
@@ -216,12 +209,12 @@ $_installUrl
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               AppSheetHeader(
-                title: widget.title,
+                title: widget.title ?? context.l10n.inviteReadyTitle,
                 subtitle:
                     widget.subtitle ??
                     (widget.companionMode
-                        ? 'Toque no link, mostre o QR ou envie o card'
-                        : 'Mostre o QR ou envie o código'),
+                        ? context.l10n.inviteSheetSubtitleCompanion
+                        : context.l10n.inviteSheetSubtitleRoom),
                 center: true,
               ),
               const SizedBox(height: 14),
@@ -271,7 +264,9 @@ $_installUrl
               ),
               const SizedBox(height: 10),
               CopperCta(
-                label: _busy ? 'Preparando…' : 'Enviar convite',
+                label: _busy
+                    ? context.l10n.invitePreparing
+                    : context.l10n.inviteShareCta,
                 onTap: _busy ? null : _shareInvite,
                 leading: CinematicGlyph.share,
                 trailing: null,
@@ -280,7 +275,7 @@ $_installUrl
               ),
               const SizedBox(height: 6),
               Text(
-                'O link abre o app e aceita sem digitar o código',
+                context.l10n.inviteLinkHint,
                 textAlign: TextAlign.center,
                 style: AppTypography.body(size: 11, color: a.textFaint),
               ),
@@ -353,7 +348,7 @@ class _InvitePreviewTile extends StatelessWidget {
                   ),
                   const Spacer(),
                   Text(
-                    'Andem juntos',
+                    context.l10n.inviteCardHeadline,
                     style: AppTypography.display(
                       size: 16,
                       weight: FontWeight.w800,
@@ -362,7 +357,7 @@ class _InvitePreviewTile extends StatelessWidget {
                   ),
                   const SizedBox(height: 2),
                   Text(
-                    '$inviterName te convidou',
+                    context.l10n.inviteCalledYou(inviterName),
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: AppTypography.body(size: 11, color: a.textSecondary),
@@ -468,7 +463,7 @@ class InviteShareCard extends StatelessWidget {
                   ),
                   const SizedBox(height: 22),
                   Text(
-                    headline ?? 'Andem juntos',
+                    headline ?? context.l10n.inviteCardHeadline,
                     style:
                         AppTypography.display(
                           size: 28,
@@ -486,7 +481,7 @@ class InviteShareCard extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    '$inviterName te convidou a caminhar — sem disputa, só presença.',
+                    context.l10n.inviteCardBody(inviterName),
                     style: AppTypography.body(
                       size: 14,
                       height: 1.4,
@@ -510,7 +505,7 @@ class InviteShareCard extends StatelessWidget {
                     child: Column(
                       children: [
                         SectionLabel(
-                          'Código',
+                          context.l10n.inviteCodeHint,
                           color: Colors.white.withValues(alpha: 0.55),
                         ),
                         const SizedBox(height: 6),
@@ -528,7 +523,7 @@ class InviteShareCard extends StatelessWidget {
                   if (installHint) ...[
                     const SizedBox(height: 16),
                     Text(
-                      'Já tem o app? Toque no link do convite.\nAinda não? Baixe o Stway e toque de novo.',
+                      context.l10n.inviteCardInstallHint,
                       style: AppTypography.body(
                         size: 11,
                         height: 1.4,

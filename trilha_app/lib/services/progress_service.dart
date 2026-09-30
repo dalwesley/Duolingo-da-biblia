@@ -2,6 +2,8 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../l10n/app_language.dart';
+import '../l10n/l10n_global.dart';
 import '../models/pilgrim_chest.dart';
 import '../models/pilgrim_medals.dart';
 import '../models/bible_reading_plan.dart';
@@ -39,6 +41,9 @@ class AppSettings {
   /// Como o retrato aparece na caravana e no perfil.
   final PortraitStyle portraitStyle;
 
+  /// Idioma da interface. [AppLanguage.device] segue o aparelho.
+  final AppLanguage language;
+
   const AppSettings({
     this.sound = true,
     this.notifications = true,
@@ -50,6 +55,7 @@ class AppSettings {
     this.fontScale = 1.0,
     this.bibleReadingNight,
     this.portraitStyle = PortraitStyle.photo,
+    this.language = AppLanguage.device,
   });
 
   /// Compat: true quando o visual preferido é noturno.
@@ -66,6 +72,7 @@ class AppSettings {
     double? fontScale,
     bool? bibleReadingNight,
     PortraitStyle? portraitStyle,
+    AppLanguage? language,
   }) {
     return AppSettings(
       sound: sound ?? this.sound,
@@ -78,6 +85,7 @@ class AppSettings {
       fontScale: fontScale ?? this.fontScale,
       bibleReadingNight: bibleReadingNight ?? this.bibleReadingNight,
       portraitStyle: portraitStyle ?? this.portraitStyle,
+      language: language ?? this.language,
     );
   }
 }
@@ -104,6 +112,7 @@ class ProgressService extends ChangeNotifier {
   static const _keyAppearanceMode = 'appearanceMode';
   static const _keyBibleTranslation = 'bibleTranslationId';
   static const _keyFontScale = 'fontScale';
+  static const _keyLanguage = 'appLanguage';
   static const _keyBibleReadingNight = 'bibleReadingNight';
   static const _keyPortraitStyle = 'portraitStyle';
 
@@ -503,6 +512,7 @@ class ProgressService extends ChangeNotifier {
     firstOpenAtMs = prefs.getInt(_keyFirstOpenAtMs);
     _freshInstall = !hasSeenSplash;
     settings = _settingsFromPrefs(prefs);
+    L10n.setLocale(L10n.resolve(settings.language));
     if (prefs.containsKey(_keyNotificationsPrompted)) {
       notificationsPrompted = prefs.getBool(_keyNotificationsPrompted) ?? false;
     } else {
@@ -562,6 +572,7 @@ class ProgressService extends ChangeNotifier {
       portraitStyle: PortraitStyleX.fromStorage(
         prefs.getString(_keyPortraitStyle),
       ),
+      language: AppLanguageX.fromStorage(prefs.getString(_keyLanguage)),
     );
   }
 
@@ -586,6 +597,7 @@ class ProgressService extends ChangeNotifier {
       await prefs.setBool(_keyBibleReadingNight, settings.bibleReadingNight!);
     }
     await prefs.setString(_keyPortraitStyle, settings.portraitStyle.storageKey);
+    await prefs.setString(_keyLanguage, settings.language.storageKey);
     await prefs.setString(_keyBibleBrowseOrder, bibleBrowseOrder.storageKey);
   }
 
@@ -2282,6 +2294,7 @@ class ProgressService extends ChangeNotifier {
         'appearanceMode': settings.appearanceMode.storageKey,
         'bibleTranslationId': settings.bibleTranslationId,
         'fontScale': settings.fontScale,
+        'language': settings.language.storageKey,
         if (settings.bibleReadingNight != null)
           'bibleReadingNight': settings.bibleReadingNight,
         'portraitStyle': settings.portraitStyle.storageKey,
@@ -2868,6 +2881,9 @@ class ProgressService extends ChangeNotifier {
                 s['portraitStyle'] as String?,
               ) ??
               settings.portraitStyle,
+          language: s.containsKey('language')
+              ? AppLanguageX.fromStorage(s['language'] as String?)
+              : settings.language,
         );
       }
     }
@@ -2994,6 +3010,7 @@ class ProgressService extends ChangeNotifier {
     final translationChanged =
         newSettings.bibleTranslationId != settings.bibleTranslationId;
     settings = newSettings;
+    L10n.setLocale(L10n.resolve(settings.language));
     if (translationChanged) {
       await BibleService.instance.setTranslation(settings.bibleTranslationId);
     }

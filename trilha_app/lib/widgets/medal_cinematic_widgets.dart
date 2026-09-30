@@ -2,6 +2,7 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 
+import '../l10n/app_language.dart';
 import '../models/pilgrim_medals.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -643,8 +644,10 @@ class MedalTrackEmblem extends StatelessWidget {
     final diameter = compact ? 38.0 : 46.0;
     final halo = diameter + 12;
     final tierText = started && current != null
-        ? (trackState.isComplete ? 'Completa' : tierLabel(current.tier))
-        : 'A acender';
+        ? (trackState.isComplete
+              ? context.l10n.medalTrackComplete
+              : tierLabel(current.tier))
+        : context.l10n.medalTrackUnlit;
 
     return Semantics(
       button: true,

@@ -2,6 +2,7 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 
+import '../l10n/app_language.dart';
 import '../models/pilgrim_medals.dart';
 import '../models/recognition.dart';
 import '../services/medal_engagement_service.dart';
@@ -82,8 +83,8 @@ Future<void> showMedalMysterySheet(BuildContext context, int hiddenCount) {
     builder: (ctx) => _MedalDetailSheet(
       tile: PilgrimMedalTile(
         id: 'discovery:mystery',
-        title: hiddenCount == 1 ? 'Uma descoberta' : '$hiddenCount descobertas',
-        hint: 'Revelam-se no caminho — sem dica no cofre.',
+        title: ctx.l10n.medalMysteryTitle(hiddenCount),
+        hint: ctx.l10n.medalMysteryHint,
         glyph: CinematicGlyph.spark,
         tier: PilgrimMedalTier.mirra,
         unlocked: false,
@@ -198,13 +199,20 @@ class _MedalDetailSheetState extends State<_MedalDetailSheet>
     final tier = tierLabel(tile.tier);
     final isDiscovery = tile.secret;
     final ultra = tile.tier == PilgrimMedalTier.aurora;
+    final l10n = context.l10n;
     final headline = widget.celebration
         ? (ultra
-              ? 'Ultra rara'
-              : (isDiscovery ? 'Descoberta' : 'Nova medalha'))
+              ? l10n.medalTierAurora
+              : (isDiscovery
+                    ? l10n.medalHeadlineDiscovery
+                    : l10n.medalHeadlineNew))
         : (unlocked
-              ? (ultra ? 'Ultra rara' : (isDiscovery ? 'Rara' : tier))
-              : (isDiscovery ? 'Descoberta' : 'A conquistar'));
+              ? (ultra
+                    ? l10n.medalTierAurora
+                    : (isDiscovery ? l10n.medalHeadlineRare : tier))
+              : (isDiscovery
+                    ? l10n.medalHeadlineDiscovery
+                    : l10n.medalHeadlineLocked));
 
     return AppSheetPanel(
       tint: unlocked ? accent : null,
@@ -290,7 +298,7 @@ class _MedalDetailSheetState extends State<_MedalDetailSheet>
                   Text(
                     unlocked || isDiscovery
                         ? tile.hint
-                        : 'Como conquistar: ${tile.hint}',
+                        : context.l10n.medalHowToEarn(tile.hint),
                     textAlign: TextAlign.center,
                     style: AppTypography.body(
                       size: 14,
@@ -302,8 +310,10 @@ class _MedalDetailSheetState extends State<_MedalDetailSheet>
                 const SizedBox(height: 24),
                 CopperCta(
                   label: widget.celebration
-                      ? 'Continuar a jornada'
-                      : (unlocked ? 'Fechar' : 'Entendi'),
+                      ? context.l10n.commonContinue
+                      : (unlocked
+                            ? context.l10n.commonClose
+                            : context.l10n.commonGotIt),
                   onTap: () => Navigator.pop(context),
                   trailing: widget.celebration ? CinematicGlyph.forward : null,
                   dense: true,
@@ -377,13 +387,14 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
         ? track.levels[celebratedIndex]
         : current;
     final sparkUp = widget.celebration && celebrated?.isSpark == true;
+    final l10n = context.l10n;
     final headline = widget.celebration
-        ? (sparkUp ? 'Emblema aceso' : 'Subiu de nível')
+        ? (sparkUp ? l10n.medalHeadlineLit : l10n.medalHeadlineLevelUp)
         : (trackState.hasStarted
               ? (track.kind == PilgrimVaultKind.trail
-                    ? 'Emblema da trilha'
-                    : 'Emblema da jornada')
-              : 'A conquistar');
+                    ? l10n.medalHeadlineTrail
+                    : l10n.medalHeadlineJourney)
+              : l10n.medalHeadlineLocked);
 
     return AppSheetPanel(
       tint: trackState.hasStarted ? accent : null,
@@ -472,7 +483,7 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
               if (widget.celebration && celebrated != null) ...[
                 const SizedBox(height: 8),
                 Text(
-                  'Agora em ${tierLabel(celebrated.tier)}',
+                  context.l10n.medalNowTier(tierLabel(celebrated.tier)),
                   style: AppTypography.title(size: 14, color: accent),
                 ),
                 const SizedBox(height: 6),
@@ -490,7 +501,9 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
               _AlloyPath(trackState: trackState),
               const SizedBox(height: 20),
               CopperCta(
-                label: widget.celebration ? 'Continuar a jornada' : 'Fechar',
+                label: widget.celebration
+                    ? context.l10n.commonContinue
+                    : context.l10n.commonClose,
                 onTap: () => Navigator.pop(context),
                 trailing: widget.celebration ? CinematicGlyph.forward : null,
                 dense: true,
@@ -570,7 +583,7 @@ class _AlloyPath extends StatelessWidget {
           ),
         ] else if (trackState.isComplete) ...[
           Text(
-            'A escada está completa.',
+            context.l10n.medalAllLevelsDone,
             textAlign: TextAlign.center,
             style: AppTypography.body(size: 13, color: a.textFaint),
           ),
@@ -705,7 +718,10 @@ class _MedalVaultCompleteSheetState extends State<_MedalVaultCompleteSheet>
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const SectionLabel('Cofre completo', color: AppColors.medalGold),
+          SectionLabel(
+            context.l10n.medalVaultCompleteLabel,
+            color: AppColors.medalGold,
+          ),
           const SizedBox(height: 22),
           MedalVaultMedallion(
             tile: PilgrimMedalTile(
@@ -730,14 +746,13 @@ class _MedalVaultCompleteSheetState extends State<_MedalVaultCompleteSheet>
           ),
           const SizedBox(height: 8),
           Text(
-            'Todas as ${widget.total} medalhas',
+            context.l10n.medalVaultAllMedals(widget.total),
             textAlign: TextAlign.center,
             style: AppTypography.title(size: 14, color: AppColors.medalGold),
           ),
           const SizedBox(height: 12),
           Text(
-            'Você iluminou cada medalha deste cofre. '
-            'A caravana vê sua vitrine — continue caminhando na Palavra.',
+            context.l10n.medalVaultCompleteBody,
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 14,
@@ -747,7 +762,7 @@ class _MedalVaultCompleteSheetState extends State<_MedalVaultCompleteSheet>
           ),
           const SizedBox(height: 24),
           CopperCta(
-            label: 'Glória a Deus',
+            label: context.l10n.commonGotIt,
             onTap: () => Navigator.pop(context),
             trailing: CinematicGlyph.dove,
             dense: true,

@@ -7,6 +7,7 @@ import 'package:timezone/data/latest.dart' as tz_data;
 import 'package:timezone/timezone.dart' as tz;
 
 import '../data/memory_verses.dart';
+import '../l10n/l10n_global.dart';
 import '../models/daily_quest.dart';
 import '../utils/dust_copy.dart';
 import 'progress_service.dart';
@@ -71,11 +72,10 @@ class NotificationService {
   VoidCallback? onRemoteNudge;
 
   /// Assinatura discreta — dá identidade consistente sem inventar personagem visual novo.
-  static const _signature = 'O Peregrino';
+  static String get _signature => L10n.current.notifSignature;
   static const _channelId = 'trilha_habits';
-  static const _channelName = 'Lembretes Stway';
-  static const _channelDesc =
-      'Meta diária, cenas, prática, memorização e favoritos';
+  static String get _channelName => L10n.current.notifChannelName;
+  static String get _channelDesc => L10n.current.notifChannelDesc;
 
   static const _idMorning = 100;
   static const _idAfternoon = 101;
@@ -206,7 +206,7 @@ class NotificationService {
     }
     final notif = message.notification;
     if (notif == null || !_initialized) return;
-    const details = NotificationDetails(
+    final details = NotificationDetails(
       android: AndroidNotificationDetails(
         _channelId,
         _channelName,
@@ -273,10 +273,10 @@ class NotificationService {
         when: _nextSlot(progress.settings.reminderHour.clamp(6, 22), 0),
         copy: _ReminderCopy(
           title: (progress.nextSceneTitle ?? '').trim().isEmpty
-              ? 'Sua cena te espera'
-              : 'Amanhã',
+              ? L10n.current.notifSceneWaitingTitle
+              : L10n.current.notifTomorrowTitle,
           body: (progress.nextSceneTitle ?? '').trim().isEmpty
-              ? 'Uma cena por dia. A sequência continua amanhã.'
+              ? L10n.current.notifSceneWaitingBody
               : '${progress.nextSceneTitle}. ${progress.nextSceneTease ?? ''}'
                     .trim(),
           action: ReminderAction.home,
@@ -313,9 +313,9 @@ class NotificationService {
       await _schedule(
         id: _idWeekly,
         when: _nextWeekday(DateTime.saturday, 11, 0),
-        copy: const _ReminderCopy(
-          title: 'Passos da semana',
-          body: 'Ainda dá tempo de fechar a semana.',
+        copy: _ReminderCopy(
+          title: L10n.current.notifWeeklyStepsTitle,
+          body: L10n.current.notifWeeklyStepsBody,
           action: ReminderAction.weekly,
           priority: 4,
         ),
@@ -332,7 +332,7 @@ class NotificationService {
 
     final daysAway = progress.daysSinceLastPlayed;
     final name = progress.userName.trim().isEmpty
-        ? 'aprendiz'
+        ? L10n.current.homeDefaultName
         : progress.userName.trim().split(' ').first;
     final streak = progress.streak;
 
@@ -394,8 +394,9 @@ class NotificationService {
 
   List<_ReminderCopy> _buildHooks(ProgressService progress) {
     final hooks = <_ReminderCopy>[];
+    final l = L10n.current;
     final name = progress.userName.trim().isEmpty
-        ? 'aprendiz'
+        ? l.homeDefaultName
         : progress.userName.trim().split(' ').first;
     final goal = progress.settings.dailyGoal;
     final done = progress.walkedToday ? progress.missionsToday : 0;
@@ -415,10 +416,10 @@ class NotificationService {
           title: atRisk
               ? DustCopy.atRiskTitle(lateEvening: DateTime.now().hour >= 19)
               : returning
-              ? 'Hora de retomar'
+              ? l.notifResumeTitle
               : streak > 0
-              ? 'Continue a jornada'
-              : 'Meta de hoje',
+              ? l.notifContinueTitle
+              : l.notifTodayGoalTitle,
           body: atRisk
               ? DustCopy.atRiskBody(
                   name: name,
@@ -427,12 +428,12 @@ class NotificationService {
                   streak: streak,
                 )
               : returning
-              ? '$name, faz ${progress.daysSinceLastPlayed} ${progress.daysSinceLastPlayed == 1 ? 'dia' : 'dias'} sem caminhar. A trilha empoeira — uma cena limpa o caminho.'
+              ? l.notifReturningBody(name, progress.daysSinceLastPlayed)
               : (progress.nextSceneTitle ?? '').trim().isNotEmpty
-              ? '$name, ${progress.nextSceneTitle} espera.'
+              ? l.notifSceneWaitsBody(name, progress.nextSceneTitle!)
               : streak > 0
-              ? '$name, você já anda há $streak ${streak == 1 ? 'dia' : 'dias'}. Falta${left == 1 ? '' : 'm'} $left cena${left == 1 ? '' : 's'} para acompanhar.'
-              : 'Falta${left == 1 ? '' : 'm'} $left cena${left == 1 ? '' : 's'} para fechar a meta de hoje.',
+              ? l.notifStreakLeftBody(name, streak, left)
+              : l.notifGoalLeftBody(left),
           action: ReminderAction.home,
           priority: atRisk
               ? 120
@@ -448,10 +449,8 @@ class NotificationService {
     if (questsLeft > 0) {
       hooks.add(
         _ReminderCopy(
-          title: 'Do dia',
-          body: questsLeft == 1
-              ? 'Sobrou 1 gesto. Mais um e o dia fecha.'
-              : 'Ainda faltam $questsLeft gestos do dia.',
+          title: l.notifDailyTitle,
+          body: l.notifQuestsLeftBody(questsLeft),
           action: ReminderAction.home,
           priority: 80,
         ),
@@ -461,10 +460,8 @@ class NotificationService {
     if (mistakes > 0) {
       hooks.add(
         _ReminderCopy(
-          title: 'Hora de praticar',
-          body: mistakes == 1
-              ? 'Tem 1 erro para reforçar. Pratique agora e fixe o aprendizado.'
-              : 'Tem $mistakes erros para reforçar. Prática rápida, mente firme.',
+          title: l.notifPracticeTitle,
+          body: l.notifMistakesBody(mistakes),
           action: ReminderAction.practice,
           priority: 70,
         ),
@@ -474,10 +471,8 @@ class NotificationService {
     if (memoryPending > 0) {
       hooks.add(
         _ReminderCopy(
-          title: 'Memorizar',
-          body: memoryPending == 1
-              ? 'Um versículo espera por você. Dois minutos bastam.'
-              : '$memoryPending versículos no deck. Memorizar reforça o aprendizado.',
+          title: l.memoryTitle,
+          body: l.notifMemoryBody(memoryPending),
           action: ReminderAction.memory,
           priority: 55,
         ),
@@ -487,10 +482,8 @@ class NotificationService {
     if (favs > 0) {
       hooks.add(
         _ReminderCopy(
-          title: 'Seus favoritos',
-          body: favs == 1
-              ? 'Você guardou um versículo. Que tal revisitá-lo agora?'
-              : 'Você tem $favs favoritos. Releia um e treine a memória.',
+          title: l.notifFavoritesTitle,
+          body: l.notifFavoritesBody(favs),
           action: ReminderAction.favorites,
           priority: 40,
         ),
@@ -501,10 +494,8 @@ class NotificationService {
       final left = WeeklyQuestDefs.all.length - progress.weeklyQuestsCompleted;
       hooks.add(
         _ReminderCopy(
-          title: 'Passos da semana',
-          body: left == 1
-              ? 'Falta 1 passo semanal. Feche o ciclo com calma.'
-              : 'Ainda faltam $left passos semanais. A semana ainda é sua.',
+          title: l.notifWeeklyStepsTitle,
+          body: l.notifWeeklyLeftBody(left),
           action: ReminderAction.weekly,
           priority: 50,
         ),
@@ -515,9 +506,9 @@ class NotificationService {
       final title = (progress.nextSceneTitle ?? '').trim();
       hooks.add(
         _ReminderCopy(
-          title: title.isEmpty ? 'Até amanhã' : title,
+          title: title.isEmpty ? l.notifSeeYouTomorrowTitle : title,
           body: (progress.nextSceneTease ?? '').trim().isEmpty
-              ? 'Meta feita. A sequência continua amanhã.'
+              ? l.notifGoalDoneBody
               : progress.nextSceneTease!.trim(),
           action: ReminderAction.home,
           priority: 90,
@@ -549,7 +540,7 @@ class NotificationService {
           styleInformation: BigTextStyleInformation(copy.body),
           subText: _signature,
         ),
-        iOS: const DarwinNotificationDetails(
+        iOS: DarwinNotificationDetails(
           presentAlert: true,
           presentBadge: true,
           presentSound: true,
@@ -573,10 +564,9 @@ class NotificationService {
       await _schedule(
         id: _idTrialEnding,
         when: tz.TZDateTime.from(when, tz.local),
-        copy: const _ReminderCopy(
-          title: 'Seu teste grátis termina amanhã',
-          body:
-              'Gerencie sua assinatura Peregrino+ nas configurações se não quiser continuar.',
+        copy: _ReminderCopy(
+          title: L10n.current.notifTrialEndingTitle,
+          body: L10n.current.notifTrialEndingBody,
           action: ReminderAction.home,
           priority: 0,
         ),

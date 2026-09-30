@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_language.dart';
 import '../theme/app_theme.dart';
 import 'cinematic_icon.dart';
 import 'portrait_face.dart';
@@ -79,7 +80,9 @@ class UserAvatar extends StatelessWidget {
     if (onTap == null) return child;
     return Semantics(
       button: true,
-      label: editable ? 'Alterar retrato' : 'Abrir perfil',
+      label: editable
+          ? context.l10n.avatarChangePortrait
+          : context.l10n.avatarOpenProfile,
       child: GestureDetector(
         onTap: onTap,
         behavior: HitTestBehavior.opaque,

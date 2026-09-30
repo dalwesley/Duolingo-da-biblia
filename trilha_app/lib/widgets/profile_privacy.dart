@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../l10n/app_language.dart';
 import '../models/caravan_profile_prefs.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
@@ -55,8 +56,8 @@ class PrivacyEye extends StatelessWidget {
       showAppToastFor(
         context,
         message: next
-            ? '$label aparece no seu perfil na caravana.'
-            : '$label fica só com você.',
+            ? context.l10n.profilePrivacyShownToast(label)
+            : context.l10n.profilePrivacyHiddenToast(label),
         glyph: next ? CinematicGlyph.people : CinematicGlyph.lock,
         tone: next ? AppToastTone.accent : AppToastTone.warn,
       );
@@ -66,8 +67,8 @@ class PrivacyEye extends StatelessWidget {
       button: true,
       toggled: visible,
       label: visible
-          ? '$label visível para a caravana'
-          : '$label oculto da caravana',
+          ? context.l10n.profilePrivacyShownSemantics(label)
+          : context.l10n.profilePrivacyHiddenSemantics(label),
       excludeSemantics: true,
       child: GestureDetector(
         behavior: HitTestBehavior.opaque,

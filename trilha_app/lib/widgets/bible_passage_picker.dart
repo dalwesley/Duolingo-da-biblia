@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../data/bible_canonical_groups.dart';
+import '../l10n/app_language.dart';
 import '../services/bible_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
@@ -101,7 +102,7 @@ class _PassagePickerSheetState extends State<_PassagePickerSheet> {
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        const AppSheetHeader(title: 'Ir para'),
+        AppSheetHeader(title: context.l10n.biblePickerTitle),
         const SizedBox(height: AppSpace.md),
         Row(
           children: [
@@ -109,7 +110,9 @@ class _PassagePickerSheetState extends State<_PassagePickerSheet> {
               if (nt) const SizedBox(width: AppSpace.sm),
               Expanded(
                 child: AppSelectChip(
-                  label: nt ? 'Novo Testamento' : 'Antigo Testamento',
+                  label: nt
+                      ? context.l10n.bibleNewTestament
+                      : context.l10n.bibleOldTestament,
                   selected: _newTestament == nt,
                   accent: AppColors.cedar,
                   fontSize: 12,
@@ -170,7 +173,7 @@ class _PassagePickerSheetState extends State<_PassagePickerSheet> {
           children: [
             Semantics(
               button: true,
-              label: 'Voltar aos livros',
+              label: context.l10n.biblePickerBackToBooks,
               child: InkResponse(
                 onTap: () {
                   ActHaptics.tap();
@@ -196,8 +199,8 @@ class _PassagePickerSheetState extends State<_PassagePickerSheet> {
               child: AppSheetHeader(
                 title: book.name,
                 subtitle: read == 0
-                    ? '$total ${total == 1 ? 'capítulo' : 'capítulos'}'
-                    : '$read de $total lidos',
+                    ? context.l10n.bibleChapterCount(total)
+                    : context.l10n.bibleChaptersReadOf(read, total),
               ),
             ),
           ],
@@ -349,8 +352,8 @@ class BibleBookList extends StatelessWidget {
                   hint: onToggle == null
                       ? null
                       : expanded
-                      ? 'Toque para fechar'
-                      : 'Toque para abrir',
+                      ? context.l10n.bibleTapToClose
+                      : context.l10n.bibleTapToOpen,
                   child: GestureDetector(
                     onTap: onToggle,
                     behavior: HitTestBehavior.opaque,
@@ -418,8 +421,8 @@ class _BookRow extends StatelessWidget {
     final total = book.chapters.length;
     final done = total > 0 && read >= total;
     final detail = read == 0
-        ? (total == 1 ? '1 cap.' : '$total caps.')
-        : '$read de $total';
+        ? context.l10n.bibleChapterCountShort(total)
+        : context.l10n.bibleReadOf(read, total);
     final abbrev = book.abbrev.toUpperCase();
 
     return Semantics(
@@ -427,7 +430,7 @@ class _BookRow extends StatelessWidget {
       selected: selected,
       label: read == 0
           ? book.name
-          : '${book.name}, $read de $total capítulos lidos',
+          : context.l10n.bibleBookReadSemantics(book.name, read, total),
       excludeSemantics: true,
       child: Material(
         color: selected

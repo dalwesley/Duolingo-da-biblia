@@ -1,0 +1,498 @@
+{
+  "cornerCtaInvite": {
+    "pt": "Chamar para o desafio",
+    "en": "Invite to the challenge",
+    "es": "Invitar al desafío"
+  },
+  "cornerHoldInvite": {
+    "pt": "Segure para chamar",
+    "en": "Hold to invite",
+    "es": "Mantén pulsado para invitar"
+  },
+  "cornerHoldAccept": {
+    "pt": "Segure para aceitar",
+    "en": "Hold to accept",
+    "es": "Mantén pulsado para aceptar"
+  },
+  "cornerWalk": {
+    "pt": "Fazer a cena",
+    "en": "Do the scene",
+    "es": "Haz la escena"
+  },
+  "cornerWithdraw": {
+    "pt": "Sair do desafio",
+    "en": "Leave the challenge",
+    "es": "Salir del desafío"
+  },
+  "cornerWithdrawConfirm": {
+    "pt": "Sair",
+    "en": "Leave",
+    "es": "Salir"
+  },
+  "cornerKicker": {
+    "pt": "Desafio",
+    "en": "Challenge",
+    "es": "Desafío"
+  },
+  "cornerIncomingTitle": {
+    "pt": "Convite de desafio",
+    "en": "Challenge invite",
+    "es": "Invitación al desafío"
+  },
+  "cornerRecordChapter": {
+    "pt": "Desafios",
+    "en": "Challenges",
+    "es": "Desafíos"
+  },
+  "cornerDeadline": {
+    "pt": "Até domingo.",
+    "en": "By Sunday.",
+    "es": "Hasta el domingo."
+  },
+  "cornerClosesToday": {
+    "pt": "Fecha hoje",
+    "en": "Closes today",
+    "es": "Cierra hoy"
+  },
+  "cornerDaysLeft": {
+    "pt": "{count, plural, =1{Falta 1 dia} other{Faltam {count} dias}}",
+    "en": "{count, plural, =1{1 day left} other{{count} days left}}",
+    "es": "{count, plural, =1{Falta 1 día} other{Faltan {count} días}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "cornerArrivedMark": {
+    "pt": "Chegou",
+    "en": "Arrived",
+    "es": "Llegó"
+  },
+  "cornerOnTheWay": {
+    "pt": "A caminho",
+    "en": "On the way",
+    "es": "En camino"
+  },
+  "cornerLeftMark": {
+    "pt": "Saiu",
+    "en": "Left",
+    "es": "Salió"
+  },
+  "cornerBurstSent": {
+    "pt": "Convite enviado",
+    "en": "Invite sent",
+    "es": "Invitación enviada"
+  },
+  "cornerBurstAccepted": {
+    "pt": "Desafio aceito",
+    "en": "Challenge accepted",
+    "es": "Desafío aceptado"
+  },
+  "cornerTogether": {
+    "pt": "Chegaram juntos",
+    "en": "You arrived together",
+    "es": "Llegaron juntos"
+  },
+  "cornerBurstLeft": {
+    "pt": "Você saiu do desafio",
+    "en": "You left the challenge",
+    "es": "Saliste del desafío"
+  },
+  "cornerAcceptedBy": {
+    "pt": "{name} aceitou o desafio",
+    "en": "{name} accepted the challenge",
+    "es": "{name} aceptó el desafío",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "cornerYouArrived": {
+    "pt": "Você chegou",
+    "en": "You arrived",
+    "es": "Llegaste"
+  },
+  "cornerNoneHeadline": {
+    "pt": "Ninguém chegou desta vez",
+    "en": "Nobody arrived this time",
+    "es": "Nadie llegó esta vez"
+  },
+  "cornerTogetherLine": {
+    "pt": "Os dois fizeram a cena a tempo.",
+    "en": "You both did the scene in time.",
+    "es": "Los dos hicieron la escena a tiempo."
+  },
+  "cornerNoneLine": {
+    "pt": "O desafio fechou no domingo.",
+    "en": "The challenge closed on Sunday.",
+    "es": "El desafío cerró el domingo."
+  },
+  "cornerCancelled": {
+    "pt": "Desafio cancelado",
+    "en": "Challenge cancelled",
+    "es": "Desafío cancelado"
+  },
+  "cornerOtherPerson": {
+    "pt": "A outra pessoa",
+    "en": "The other person",
+    "es": "La otra persona"
+  },
+  "cornerOtherPersonLower": {
+    "pt": "a outra pessoa",
+    "en": "the other person",
+    "es": "la otra persona"
+  },
+  "cornerSomeone": {
+    "pt": "Alguém",
+    "en": "Someone",
+    "es": "Alguien"
+  },
+  "cornerTheyArrived": {
+    "pt": "{name} chegou",
+    "en": "{name} arrived",
+    "es": "{name} llegó",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "cornerNeedsCloud": {
+    "pt": "Entre com Google para chamar alguém.",
+    "en": "Sign in with Google to invite someone.",
+    "es": "Inicia sesión con Google para invitar a alguien."
+  },
+  "cornerBusyWeek": {
+    "pt": "Você já tem um desafio nesta semana.",
+    "en": "You already have a challenge this week.",
+    "es": "Ya tienes un desafío esta semana."
+  },
+  "cornerBusyAccept": {
+    "pt": "Você já tem um desafio. Chegue ou saia dele para aceitar.",
+    "en": "You already have a challenge. Finish it or leave it to accept.",
+    "es": "Ya tienes un desafío. Termínalo o sal de él para aceptar."
+  },
+  "cornerSendFailed": {
+    "pt": "Não foi possível enviar o convite. Tente de novo.",
+    "en": "Couldn't send the invite. Try again.",
+    "es": "No se pudo enviar la invitación. Inténtalo de nuevo."
+  },
+  "cornerActionFailed": {
+    "pt": "Não foi possível concluir. Tente de novo.",
+    "en": "Couldn't finish that. Try again.",
+    "es": "No se pudo completar. Inténtalo de nuevo."
+  },
+  "cornerDifferentTrail": {
+    "pt": "Vocês não estão na mesma trilha.",
+    "en": "You're not on the same trail.",
+    "es": "No están en la misma ruta."
+  },
+  "cornerDifferentScene": {
+    "pt": "Vocês não estão na mesma cena.",
+    "en": "You're not on the same scene.",
+    "es": "No están en la misma escena."
+  },
+  "cornerNoCorner": {
+    "pt": "Nenhuma cena em comum para o desafio.",
+    "en": "No scene in common for the challenge.",
+    "es": "Ninguna escena en común para el desafío."
+  },
+  "cornerSameStretch": {
+    "pt": "A mesma cena até domingo. +{count} passos para cada um que chegar.",
+    "en": "Same scene by Sunday. +{count} steps for each one who arrives.",
+    "es": "La misma escena hasta el domingo. +{count} pasos para cada uno que llegue.",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "cornerInviteTitle": {
+    "pt": "Desafio: {mission}",
+    "en": "Challenge: {mission}",
+    "es": "Desafío: {mission}",
+    "placeholders": {
+      "mission": "String"
+    }
+  },
+  "cornerInviteBodyAnon": {
+    "pt": "A mesma cena até domingo.\n+{count} passos para cada um que chegar.",
+    "en": "Same scene by Sunday.\n+{count} steps for each one who arrives.",
+    "es": "La misma escena hasta el domingo.\n+{count} pasos para cada uno que llegue.",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "cornerInviteBody": {
+    "pt": "Você e {name} fazem essa cena até domingo.\n+{count} passos para cada um que chegar.",
+    "en": "You and {name} do this scene by Sunday.\n+{count} steps for each one who arrives.",
+    "es": "Tú y {name} hacen esta escena hasta el domingo.\n+{count} pasos para cada uno que llegue.",
+    "placeholders": {
+      "name": "String",
+      "count": "int"
+    }
+  },
+  "cornerIncomingFromAnon": {
+    "pt": "Alguém te chamou para esta cena.",
+    "en": "Someone invited you to this scene.",
+    "es": "Alguien te invitó a esta escena."
+  },
+  "cornerIncomingFrom": {
+    "pt": "{name} te chamou para esta cena.",
+    "en": "{name} invited you to this scene.",
+    "es": "{name} te invitó a esta escena.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "cornerWithPeer": {
+    "pt": "Com {name} · até domingo",
+    "en": "With {name} · by Sunday",
+    "es": "Con {name} · hasta el domingo",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "cornerWaitingOnAnon": {
+    "pt": "Esperando o aceite.",
+    "en": "Waiting for them to accept.",
+    "es": "Esperando que acepte."
+  },
+  "cornerWaitingOn": {
+    "pt": "Esperando {name} aceitar.",
+    "en": "Waiting for {name} to accept.",
+    "es": "Esperando que {name} acepte.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "cornerWaitingArrival": {
+    "pt": "Você chegou · esperando {name}.",
+    "en": "You arrived · waiting for {name}.",
+    "es": "Llegaste · esperando a {name}.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "cornerTheyAhead": {
+    "pt": "{name} já chegou. Falta você.",
+    "en": "{name} already arrived. You're next.",
+    "es": "{name} ya llegó. Faltas tú.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "cornerTheyLeft": {
+    "pt": "{name} saiu. Você ainda pode chegar.",
+    "en": "{name} left. You can still arrive.",
+    "es": "{name} salió. Todavía puedes llegar.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "cornerTheyLeftClosed": {
+    "pt": "{name} saiu do desafio.",
+    "en": "{name} left the challenge.",
+    "es": "{name} salió del desafío.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "cornerYouLeft": {
+    "pt": "Você saiu do desafio.",
+    "en": "You left the challenge.",
+    "es": "Saliste del desafío."
+  },
+  "cornerDeclinedAnon": {
+    "pt": "O convite não foi aceito.",
+    "en": "The invite wasn't accepted.",
+    "es": "La invitación no fue aceptada."
+  },
+  "cornerDeclinedBy": {
+    "pt": "{name} não aceitou desta vez.",
+    "en": "{name} didn't accept this time.",
+    "es": "{name} no aceptó esta vez.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "cornerWithdrawTitle": {
+    "pt": "Sair do desafio?",
+    "en": "Leave the challenge?",
+    "es": "¿Salir del desafío?"
+  },
+  "cornerWithdrawPending": {
+    "pt": "O convite some para {name}.",
+    "en": "The invite disappears for {name}.",
+    "es": "La invitación desaparece para {name}.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "cornerWithdrawBody": {
+    "pt": "{name} continua e ainda pode chegar. Você fica sem os +{count} passos.",
+    "en": "{name} keeps going and can still arrive. You won't get the +{count} steps.",
+    "es": "{name} sigue y todavía puede llegar. Te quedas sin los +{count} pasos.",
+    "placeholders": {
+      "name": "String",
+      "count": "int"
+    }
+  },
+  "cornerRecordArrived": {
+    "pt": "{count, plural, =1{1 completa} other{{count} completas}}",
+    "en": "{count, plural, =1{1 completed} other{{count} completed}}",
+    "es": "{count, plural, =1{1 completada} other{{count} completadas}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "cornerRecordTogether": {
+    "pt": "{count, plural, =1{1 junto} other{{count} juntos}}",
+    "en": "{count, plural, =1{1 together} other{{count} together}}",
+    "es": "{count, plural, =1{1 lado a lado} other{{count} lado a lado}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "cornerTallyWon": {
+    "pt": "Ganhou",
+    "en": "Won",
+    "es": "Ganó"
+  },
+  "cornerTallyLost": {
+    "pt": "Perdeu",
+    "en": "Lost",
+    "es": "Perdió"
+  },
+  "cornerTallyTogether": {
+    "pt": "Juntos",
+    "en": "Together",
+    "es": "Juntos"
+  },
+  "cornerClosedChapter": {
+    "pt": "Encerrados",
+    "en": "Closed",
+    "es": "Cerrados"
+  },
+  "cornerBoardEmptyTitle": {
+    "pt": "Nenhum desafio ainda",
+    "en": "No challenges yet",
+    "es": "Ningún desafío aún"
+  },
+  "cornerBoardEmptyBody": {
+    "pt": "Na caravana, abra alguém na mesma cena e chame para o desafio. Quem chega até domingo ganha +{count} passos.",
+    "en": "In the caravan, open someone on the same scene and invite them to the challenge. Whoever arrives by Sunday gets +{count} steps.",
+    "es": "En la caravana, abre a alguien en la misma escena e invítalo al desafío. Quien llegue hasta el domingo gana +{count} pasos.",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "cornerBoardOpenCaravan": {
+    "pt": "Ver a caravana",
+    "en": "See the caravan",
+    "es": "Ver la caravana"
+  },
+  "cornerBoardIdle": {
+    "pt": "Nenhum desafio nesta semana. Chame alguém da caravana.",
+    "en": "No challenge this week. Invite someone from the caravan.",
+    "es": "Ningún desafío esta semana. Invita a alguien de la caravana."
+  },
+  "cornerStripIdle": {
+    "pt": "Nenhum nesta semana",
+    "en": "None this week",
+    "es": "Ninguno esta semana"
+  },
+  "cornerStripInvitedYou": {
+    "pt": "{name} te chamou",
+    "en": "{name} invited you",
+    "es": "{name} te invitó",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "cornerStripWaiting": {
+    "pt": "Esperando {name}",
+    "en": "Waiting for {name}",
+    "es": "Esperando a {name}",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "cornerStripWon": {
+    "pt": "{count, plural, other{{count} ganhou}}",
+    "en": "{count, plural, other{{count} won}}",
+    "es": "{count, plural, =1{1 ganado} other{{count} ganados}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "cornerStripLost": {
+    "pt": "{count, plural, other{{count} perdeu}}",
+    "en": "{count, plural, other{{count} lost}}",
+    "es": "{count, plural, =1{1 perdido} other{{count} perdidos}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "cornerResultLeft": {
+    "pt": "Você saiu · sem os +{count} passos",
+    "en": "You left · without the +{count} steps",
+    "es": "Saliste · sin los +{count} pasos",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "cornerResultWon": {
+    "pt": "Com {name} · +{count} passos",
+    "en": "With {name} · +{count} steps",
+    "es": "Con {name} · +{count} pasos",
+    "placeholders": {
+      "name": "String",
+      "count": "int"
+    }
+  },
+  "cornerResultTogether": {
+    "pt": "Com {name} · os dois chegaram",
+    "en": "With {name} · you both arrived",
+    "es": "Con {name} · llegaron los dos",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "cornerResultNone": {
+    "pt": "Com {name} · ninguém chegou",
+    "en": "With {name} · nobody arrived",
+    "es": "Con {name} · nadie llegó",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "cornerResultTheyArrived": {
+    "pt": "{name} chegou · você não chegou",
+    "en": "{name} arrived · you didn't",
+    "es": "{name} llegó · tú no llegaste",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "cornerResultTheyLeftMissed": {
+    "pt": "{name} saiu · você não chegou",
+    "en": "{name} left · you didn't arrive",
+    "es": "{name} salió · tú no llegaste",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "cornerWhisperTogether": {
+    "pt": "Cenas feitas lado a lado.",
+    "en": "Scenes done side by side.",
+    "es": "Escenas hechas lado a lado."
+  },
+  "cornerWhisperEach": {
+    "pt": "Cada cena feita conta.",
+    "en": "Every scene you do counts.",
+    "es": "Cada escena hecha cuenta."
+  },
+  "cornerChallengeWith": {
+    "pt": "Desafio com {name}",
+    "en": "Challenge with {name}",
+    "es": "Desafío con {name}",
+    "placeholders": {
+      "name": "String"
+    }
+  }
+}

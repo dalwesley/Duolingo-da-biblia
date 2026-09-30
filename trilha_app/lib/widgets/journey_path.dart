@@ -1,5 +1,6 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
+import '../l10n/app_language.dart';
 import '../models/difficulty.dart';
 import '../models/trail.dart';
 import '../models/trail_catalog.dart';
@@ -505,13 +506,13 @@ class _HeroStation extends StatelessWidget {
                       Row(
                         children: [
                           SectionLabel(
-                            'Cena ${_roman(item.chapterIndex)}',
+                            context.l10n.trailsTrailNumber(_roman(item.chapterIndex)),
                             size: 10,
                             color: modeColor.withValues(alpha: 0.9),
                           ),
                           const Spacer(),
                           SoftBadge(
-                            text: 'Agora',
+                            text: context.l10n.journeyNow,
                             accent: modeColor,
                             solid: true,
                           ),
@@ -523,14 +524,14 @@ class _HeroStation extends StatelessWidget {
                       ],
                       const SizedBox(height: AppSpace.md),
                       Text(
-                        item.trail.title,
+                        item.trail.localizedTitle,
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
                         style: AppTypography.display(size: 24, height: 1.08),
                       ),
                       const SizedBox(height: AppSpace.sm),
                       Text(
-                        item.trail.description,
+                        item.trail.localizedDescription,
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
                         style: AppTypography.body(
@@ -554,7 +555,7 @@ class _HeroStation extends StatelessWidget {
                             Expanded(
                               child: Text(
                                 item.statusLabel ??
-                                    '${item.done} de ${item.total} cenas',
+                                    context.l10n.trailsScenesOf(item.done, item.total),
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
                                 style: AppTypography.body(
@@ -571,7 +572,7 @@ class _HeroStation extends StatelessWidget {
                           else
                             const Spacer(),
                           Text(
-                            'Continuar',
+                            context.l10n.commonContinue,
                             style: AppTypography.cta(
                               size: 12,
                               color: modeColor,
@@ -676,13 +677,13 @@ class _QuietStation extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SectionLabel(
-                'Cena ${_roman(item.chapterIndex)}',
+                context.l10n.trailsTrailNumber(_roman(item.chapterIndex)),
                 size: 10,
                 color: a.textFaint,
               ),
               const SizedBox(height: 3),
               Text(
-                item.trail.title,
+                item.trail.localizedTitle,
                 style: AppTypography.display(
                   size: 20,
                   height: 1.1,
@@ -696,15 +697,15 @@ class _QuietStation extends StatelessWidget {
               const SizedBox(height: AppSpace.xs),
               Text(
                 isLocked
-                    ? 'Ainda além do horizonte'
+                    ? context.l10n.journeyBeyondHorizon
                     : isSoon
-                    ? 'Em breve neste caminho'
+                    ? context.l10n.commonComingSoon
                     : item.statusLabel ??
                           (isDone
-                              ? 'Concluída'
+                              ? context.l10n.trailsCleared
                               : item.total > 0
-                              ? '${item.done}/${item.total} cenas'
-                              : item.trail.description),
+                              ? context.l10n.trailsScenesShort(item.done, item.total)
+                              : item.trail.localizedDescription),
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: AppTypography.body(

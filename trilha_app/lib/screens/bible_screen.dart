@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../data/bible_canonical_groups.dart';
 import '../data/bible_chronology.dart';
+import '../l10n/app_language.dart';
 import '../models/bible_reading_plan.dart';
 import '../services/bible_service.dart';
 import '../services/progress_service.dart';
@@ -223,8 +224,8 @@ class _BibleScreenState extends State<BibleScreen> {
       inline: true,
       immersive: true,
       dark: appearance.onDark,
-      title: 'Bíblia',
-      subtitle: 'A Palavra, offline',
+      title: context.l10n.bibleTitle,
+      subtitle: LiturgicalCalendar.momentFor().subtitle,
       leadingGlyph: CinematicGlyph.book,
       chromeAccent: AppColors.cedar,
       onBack: nav.canPop() ? () => nav.pop() : null,
@@ -254,8 +255,8 @@ class _BibleScreenState extends State<BibleScreen> {
             inline: true,
             immersive: true,
             dark: Appearance.of(context).onDark,
-            title: 'Buscar',
-            subtitle: 'Livros e versículos',
+            title: context.l10n.bibleSearchTitle,
+            subtitle: context.l10n.bibleSearchSubtitle,
             onBack: _closeSearch,
             leadingGlyph: CinematicGlyph.book,
             chromeAccent: AppColors.cedar,
@@ -341,45 +342,45 @@ class _BibleLibrary extends StatelessWidget {
           ),
           child: topBar,
         ),
-        const SizedBox(height: AppSpace.afterTopBar),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: AppSpace.screen),
-          child: JuntosSegmentTabs(
-            index: pane,
-            onChanged: (i) {
-              if (i == pane) return;
-              ActHaptics.tap();
-              onPane(i);
-            },
-            items: [
-              (label: 'Bíblia', glyph: CinematicGlyph.book, alert: false),
-              (label: 'Leitura', glyph: CinematicGlyph.path, alert: planDue),
-            ],
-          ),
-        ),
-        if (booksPane) ...[
-          const SizedBox(height: AppSpace.md),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: AppSpace.screen),
-            child: _SearchButton(onTap: onSearch),
-          ),
-          const SizedBox(height: AppSpace.md),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: AppSpace.screen),
-            child: _OrderChips(order: order),
-          ),
-        ],
-        const SizedBox(height: AppSpace.md),
         Expanded(
           child: ListView(
             key: ValueKey(pane),
             padding: EdgeInsets.fromLTRB(
               AppSpace.screen,
-              0,
+              AppSpace.afterTopBar,
               AppSpace.screen,
               scrollPaddingBelowNav(context),
             ),
-            children: booksPane ? _bookList(context, order) : _readingList(),
+            children: [
+              JuntosSegmentTabs(
+                index: pane,
+                onChanged: (i) {
+                  if (i == pane) return;
+                  ActHaptics.tap();
+                  onPane(i);
+                },
+                items: [
+                  (
+                    label: context.l10n.bibleTitle,
+                    glyph: CinematicGlyph.book,
+                    alert: false,
+                  ),
+                  (
+                    label: context.l10n.bibleTabReading,
+                    glyph: CinematicGlyph.path,
+                    alert: planDue,
+                  ),
+                ],
+              ),
+              if (booksPane) ...[
+                const SizedBox(height: AppSpace.md),
+                _SearchButton(onTap: onSearch),
+                const SizedBox(height: AppSpace.md),
+                _OrderChips(order: order),
+              ],
+              const SizedBox(height: AppSpace.md),
+              ...booksPane ? _bookList(context, order) : _readingList(),
+            ],
           ),
         ),
       ],
@@ -460,7 +461,9 @@ class _BibleLibrary extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               _FoldHeader(
-                title: nt ? 'Novo Testamento' : 'Antigo Testamento',
+                title: nt
+                    ? context.l10n.bibleNewTestament
+                    : context.l10n.bibleOldTestament,
                 accent: accent,
                 count: count,
                 expanded: open,
@@ -566,12 +569,13 @@ class _FoldHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final motion = MediaQuery.disableAnimationsOf(context);
-    final booksLabel = count == 1 ? '1 livro' : '$count livros';
     return Semantics(
       button: true,
       expanded: expanded,
-      label: '$title, $booksLabel',
-      hint: expanded ? 'Toque para fechar' : 'Toque para abrir',
+      label: context.l10n.bibleSectionBooksSemantics(title, count),
+      hint: expanded
+          ? context.l10n.bibleTapToClose
+          : context.l10n.bibleTapToOpen,
       excludeSemantics: true,
       child: Material(
         color: Colors.transparent,
@@ -615,7 +619,7 @@ class _SearchButton extends StatelessWidget {
     final a = Appearance.of(context);
     return Semantics(
       button: true,
-      label: 'Buscar livro ou versículo',
+      label: context.l10n.bibleSearchButtonSemantics,
       excludeSemantics: true,
       child: Material(
         color: Colors.transparent,
@@ -643,7 +647,7 @@ class _SearchButton extends StatelessWidget {
                 const SizedBox(width: AppSpace.sm),
                 Expanded(
                   child: Text(
-                    'Buscar livro, versículo ou palavra…',
+                    context.l10n.bibleSearchButtonHint,
                     style: AppTypography.body(size: 14, color: a.textFaint),
                   ),
                 ),
@@ -702,13 +706,15 @@ class _ContinueHero extends StatelessWidget {
             children: [
               Expanded(
                 child: SectionLabel(
-                  fresh ? 'Comece por aqui' : 'Continuar leitura',
+                  fresh
+                      ? context.l10n.bibleHeroStartHere
+                      : context.l10n.bibleHeroContinueReading,
                   color: AppColors.cedar,
                 ),
               ),
               if (!fresh && read > 0)
                 Text(
-                  '$read de $total',
+                  context.l10n.bibleReadOf(read, total),
                   style: AppTypography.body(size: 12, color: a.textFaint),
                 ),
             ],
@@ -721,7 +727,7 @@ class _ContinueHero extends StatelessWidget {
           if (fresh) ...[
             const SizedBox(height: 4),
             Text(
-              'Jesus, a Palavra que se fez carne — um bom primeiro passo.',
+              context.l10n.bibleHeroFreshBlurb,
               style: AppTypography.body(size: 13, color: a.textSecondary),
             ),
           ],
@@ -752,7 +758,9 @@ class _ContinueHero extends StatelessWidget {
             const SizedBox(height: AppSpace.md),
           ],
           CopperCta(
-            label: fresh ? 'Começar a ler' : 'Continuar',
+            label: fresh
+                ? context.l10n.bibleHeroStartReading
+                : context.l10n.commonContinue,
             leading: CinematicGlyph.book,
             trailing: null,
             expanded: true,
@@ -782,10 +790,22 @@ class _OrderChips extends StatelessWidget {
             .read<ProgressService>()
             .setBibleBrowseOrder(BibleReadingOrder.values[i]);
       },
-      items: const [
-        (label: 'Canônica', glyph: CinematicGlyph.book, alert: false),
-        (label: 'Cronológica', glyph: CinematicGlyph.calendar, alert: false),
-        (label: 'Alfabética', glyph: CinematicGlyph.stack, alert: false),
+      items: [
+        (
+          label: context.l10n.planOrderCanonicalShort,
+          glyph: CinematicGlyph.book,
+          alert: false,
+        ),
+        (
+          label: context.l10n.planOrderChronologicalShort,
+          glyph: CinematicGlyph.calendar,
+          alert: false,
+        ),
+        (
+          label: context.l10n.planOrderAlphabeticalShort,
+          glyph: CinematicGlyph.stack,
+          alert: false,
+        ),
       ],
     );
   }
@@ -803,10 +823,13 @@ class _PlanCard extends StatelessWidget {
     final plan = context.select((ProgressService p) => p.bibleReadingPlan);
     final done = plan.active && plan.doneToday;
     final detail = !plan.active
-        ? 'Canônico ou cronológico, no seu tempo'
+        ? context.l10n.planCardIdle
         : done
-        ? 'Leitura de hoje feita'
-        : '${plan.minutesPerDay} min hoje · ${plan.order.shortLabel}';
+        ? context.l10n.planCardDoneToday
+        : context.l10n.planCardToday(
+            plan.minutesPerDay,
+            plan.order.shortLabel,
+          );
 
     return GlassCard(
       tint: AppColors.cedar,
@@ -824,7 +847,9 @@ class _PlanCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  plan.active ? 'Plano de leitura' : 'Criar um plano',
+                  plan.active
+                      ? context.l10n.planTitle
+                      : context.l10n.planCreate,
                   style: AppTypography.title(size: 16, color: a.text),
                 ),
                 const SizedBox(height: 2),
@@ -925,7 +950,7 @@ class _SeasonVerseCardState extends State<_SeasonVerseCard> {
                 ),
               ),
               Text(
-                'Ler o capítulo',
+                context.l10n.bibleReadChapter,
                 style: AppTypography.body(size: 12, color: a.textSecondary),
               ),
               const SizedBox(width: 2),
@@ -947,7 +972,7 @@ class _SavedChapter extends StatelessWidget {
       (ProgressService p) => p.bibleBookmarks.length,
     );
     return RelicChapter(
-      title: 'Guardados',
+      title: context.l10n.bibleSavedTitle,
       accent: AppColors.accent,
       divided: false,
       trailing: count == 0
@@ -969,12 +994,10 @@ class _SavedVerses extends StatelessWidget {
     final a = Appearance.of(context);
     final marks = context.watch<ProgressService>().parseBookmarks();
     if (marks.isEmpty) {
-      return const EmptyState(
+      return EmptyState(
         glyph: CinematicGlyph.bookmark,
-        title: 'Nenhum versículo guardado',
-        body:
-            'Na leitura, toque num versículo e escolha Guardar '
-            'para voltar a ele depois.',
+        title: context.l10n.bibleSavedEmptyTitle,
+        body: context.l10n.bibleSavedEmptyBody,
         accent: AppColors.accent,
       );
     }
@@ -1105,7 +1128,7 @@ class _SearchPane extends StatelessWidget {
       ),
       cursorColor: AppColors.cedar,
       decoration: InputDecoration(
-        hintText: 'Ex.: Apocalipse, amor, fé…',
+        hintText: context.l10n.bibleSearchFieldHint,
         hintStyle: AppTypography.body(color: a.textFaint),
         filled: true,
         fillColor: a.cardFillSoft,
@@ -1148,9 +1171,9 @@ class _SearchPane extends StatelessWidget {
             child: AppSpinner(color: AppColors.cedar),
           )
         else if (controller.text.trim().length >= 2 && hits.isEmpty)
-          const EmptyState(
+          EmptyState(
             glyph: CinematicGlyph.search,
-            title: 'Nenhum resultado encontrado',
+            title: context.l10n.bibleSearchEmpty,
             accent: AppColors.cedar,
           )
         else
@@ -1165,7 +1188,7 @@ class _SearchPane extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      h.isBook ? 'Livro' : h.citation,
+                      h.isBook ? context.l10n.bibleSearchBookHit : h.citation,
                       style: AppTypography.label(
                         size: 12,
                         color: AppColors.cedar,

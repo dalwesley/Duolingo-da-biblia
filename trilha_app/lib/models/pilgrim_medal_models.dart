@@ -1,3 +1,4 @@
+import '../l10n/l10n_global.dart';
 import 'caravan_pilgrim_profile.dart';
 import '../services/progress_service.dart';
 import '../widgets/cinematic_icon.dart';
@@ -139,8 +140,11 @@ class PilgrimVaultDef {
     final until = activeUntil;
     if (from == null || until == null) return false;
     final start = DateTime(from.year, from.month, from.day);
-    final end = DateTime(until.year, until.month, until.day)
-        .add(Duration(days: graceDays));
+    final end = DateTime(
+      until.year,
+      until.month,
+      until.day,
+    ).add(Duration(days: graceDays));
     final day = DateTime(now.year, now.month, now.day);
     return !day.isBefore(start) && !day.isAfter(end);
   }
@@ -150,10 +154,7 @@ class PilgrimTrackState {
   final PilgrimMedalTrackDef track;
   final int levelIndex;
 
-  const PilgrimTrackState({
-    required this.track,
-    required this.levelIndex,
-  });
+  const PilgrimTrackState({required this.track, required this.levelIndex});
 
   bool get hasStarted => levelIndex >= 0;
 
@@ -208,16 +209,15 @@ class PilgrimMedalTile {
     required PilgrimMedalTrackDef track,
     required PilgrimMedalLevelDef level,
     required bool unlocked,
-  }) =>
-      PilgrimMedalTile(
-        id: level.id,
-        title: level.title,
-        hint: level.hint,
-        glyph: level.glyph,
-        tier: level.tier,
-        unlocked: unlocked,
-        groupLabel: track.title,
-      );
+  }) => PilgrimMedalTile(
+    id: level.id,
+    title: level.title,
+    hint: level.hint,
+    glyph: level.glyph,
+    tier: level.tier,
+    unlocked: unlocked,
+    groupLabel: track.title,
+  );
 
   factory PilgrimMedalTile.fromTrack(PilgrimTrackState state) {
     final track = state.track;
@@ -338,7 +338,9 @@ class PilgrimTrackProximity {
   final int current;
   final int target;
   final int remaining;
-  final String unitLabel;
+
+  /// Unidade já com número e plural ("3 capítulos"), no idioma atual.
+  final String Function(int count) units;
 
   const PilgrimTrackProximity({
     required this.track,
@@ -347,27 +349,46 @@ class PilgrimTrackProximity {
     required this.current,
     required this.target,
     required this.remaining,
-    required this.unitLabel,
+    required this.units,
   });
 
+  /// Só o substantivo da unidade para [remaining] ("capítulos").
+  /// Prefira [remainingLabel]: aqui a frase fica montada por quem chama.
+  @Deprecated('Use remainingLabel')
+  String get unitLabel {
+    final counted = units(remaining);
+    final prefix = '$remaining ';
+    return counted.startsWith(prefix)
+        ? counted.substring(prefix.length)
+        : counted;
+  }
+
+  /// "Faltam 3 capítulos".
+  String get remainingLabel =>
+      L10n.current.medalProximityRemaining(remaining, units(remaining));
+
   String get message {
+    final l = L10n.current;
     final material = tierLabel(nextLevel.tier);
-    if (remaining == 1) {
-      return 'Falta 1 $unitLabel para $material em ${track.title}';
+    if (remaining != 1 && current > 0 && current <= remaining) {
+      return l.medalProximityToward(units(current), material, track.title);
     }
-    if (current > 0 && current <= remaining) {
-      return '$current $unitLabel rumo a $material em ${track.title}';
-    }
-    return 'Faltam $remaining $unitLabel para $material em ${track.title}';
+    return l.medalProximityLeft(
+      remaining,
+      units(remaining),
+      material,
+      track.title,
+    );
   }
 
   String get shortMessage {
+    final l = L10n.current;
     final material = tierLabel(nextLevel.tier);
-    if (remaining == 1) return 'Falta 1 para $material';
+    if (remaining == 1) return l.medalProximityShortLeft(remaining, material);
     if (current > 0 && current <= remaining) {
-      return '$current/$target rumo a $material';
+      return l.medalProximityShortToward(current, target, material);
     }
-    return 'Faltam $remaining para $material';
+    return l.medalProximityShortLeft(remaining, material);
   }
 
   String get monitorMessage {
@@ -376,23 +397,24 @@ class PilgrimTrackProximity {
   }
 
   /// Copy de puxar ação — Duolingo “2 lessons to go”.
-  String get actionMessage {
-    if (remaining == 1) return 'Falta 1 $unitLabel · ${track.title}';
-    return 'Faltam $remaining $unitLabel · ${track.title}';
-  }
+  String get actionMessage => L10n.current.medalProximityAction(
+    remaining,
+    units(remaining),
+    track.title,
+  );
 
   bool get isNearMiss => remaining > 0 && remaining <= 3;
 
   MedalCtaKind get ctaKind => switch (track.family) {
-        PilgrimMedalFamily.word => MedalCtaKind.bible,
-        PilgrimMedalFamily.memory => MedalCtaKind.memory,
-        PilgrimMedalFamily.formation when track.kind == PilgrimVaultKind.trail =>
-          MedalCtaKind.trail,
-        PilgrimMedalFamily.formation => MedalCtaKind.mission,
-        PilgrimMedalFamily.witness => MedalCtaKind.share,
-        PilgrimMedalFamily.season => MedalCtaKind.mission,
-        _ => MedalCtaKind.none,
-      };
+    PilgrimMedalFamily.word => MedalCtaKind.bible,
+    PilgrimMedalFamily.memory => MedalCtaKind.memory,
+    PilgrimMedalFamily.formation when track.kind == PilgrimVaultKind.trail =>
+      MedalCtaKind.trail,
+    PilgrimMedalFamily.formation => MedalCtaKind.mission,
+    PilgrimMedalFamily.witness => MedalCtaKind.share,
+    PilgrimMedalFamily.season => MedalCtaKind.mission,
+    _ => MedalCtaKind.none,
+  };
 }
 
 /// Compat: proximidade legada para raras (não usada).
@@ -413,27 +435,25 @@ class PilgrimMedalProximity {
     required this.unitLabel,
   });
 
-  String get message {
-    final title = def.title;
-    if (remaining == 1) return 'Falta 1 $unitLabel para «$title»';
-    return 'Faltam $remaining $unitLabel para «$title»';
-  }
+  String get message =>
+      L10n.current.medalRareLeft(remaining, unitLabel, def.title);
 
-  String get shortMessage {
-    if (remaining == 1) return 'Falta 1 para «${def.title}»';
-    return 'Faltam $remaining para «${def.title}»';
-  }
+  String get shortMessage =>
+      L10n.current.medalRareShortLeft(remaining, def.title);
 }
 
 enum MedalCtaKind { none, bible, memory, trail, share, mission }
 
-String tierLabel(PilgrimMedalTier tier) => switch (tier) {
-      PilgrimMedalTier.iron => 'Ferro',
-      PilgrimMedalTier.bronze => 'Bronze',
-      PilgrimMedalTier.silver => 'Prata',
-      PilgrimMedalTier.gold => 'Ouro',
-      PilgrimMedalTier.platinum => 'Platina',
-      PilgrimMedalTier.diamond => 'Diamante',
-      PilgrimMedalTier.mirra => 'Mirra',
-      PilgrimMedalTier.aurora => 'Ultra rara',
-    };
+String tierLabel(PilgrimMedalTier tier) {
+  final l = L10n.current;
+  return switch (tier) {
+    PilgrimMedalTier.iron => l.medalTierIron,
+    PilgrimMedalTier.bronze => l.medalTierBronze,
+    PilgrimMedalTier.silver => l.medalTierSilver,
+    PilgrimMedalTier.gold => l.medalTierGold,
+    PilgrimMedalTier.platinum => l.medalTierPlatinum,
+    PilgrimMedalTier.diamond => l.medalTierDiamond,
+    PilgrimMedalTier.mirra => l.medalTierMirra,
+    PilgrimMedalTier.aurora => l.medalTierAurora,
+  };
+}

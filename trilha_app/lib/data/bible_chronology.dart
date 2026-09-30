@@ -4,67 +4,53 @@
 /// [BibleBook.abbrev] de qualquer tradução offline.
 library;
 
+import '../l10n/l10n_global.dart';
+
 class BibleEra {
   final String id;
-  final String title;
-  final String blurb;
 
-  const BibleEra({
-    required this.id,
-    required this.title,
-    required this.blurb,
-  });
+  const BibleEra({required this.id});
+
+  String get title => switch (id) {
+    'origins' => L10n.current.eraOriginsTitle,
+    'exodus' => L10n.current.eraExodusTitle,
+    'conquest' => L10n.current.eraConquestTitle,
+    'united' => L10n.current.eraUnitedTitle,
+    'divided' => L10n.current.eraDividedTitle,
+    'exile' => L10n.current.eraExileTitle,
+    'return' => L10n.current.eraReturnTitle,
+    'gospels' => L10n.current.eraGospelsTitle,
+    'church' => L10n.current.eraChurchTitle,
+    _ => L10n.current.eraOriginsTitle,
+  };
+
+  String get blurb => switch (id) {
+    'origins' => L10n.current.eraOriginsBlurb,
+    'exodus' => L10n.current.eraExodusBlurb,
+    'conquest' => L10n.current.eraConquestBlurb,
+    'united' => L10n.current.eraUnitedBlurb,
+    'divided' => L10n.current.eraDividedBlurb,
+    'exile' => L10n.current.eraExileBlurb,
+    'return' => L10n.current.eraReturnBlurb,
+    'gospels' => L10n.current.eraGospelsBlurb,
+    'church' => L10n.current.eraChurchBlurb,
+    _ => L10n.current.eraOriginsBlurb,
+  };
 }
 
 class BibleChronology {
   BibleChronology._();
 
   static const eras = <BibleEra>[
-    BibleEra(
-      id: 'origins',
-      title: 'Origens e patriarcas',
-      blurb: 'Criação, Dilúvio e a família de Abraão',
-    ),
-    BibleEra(
-      id: 'exodus',
-      title: 'Êxodo e Lei',
-      blurb: 'Saída do Egito, Sinai e o deserto',
-    ),
-    BibleEra(
-      id: 'conquest',
-      title: 'Conquista e juízes',
-      blurb: 'Terra prometida e ciclo dos juízes',
-    ),
-    BibleEra(
-      id: 'united',
-      title: 'Monarquia unida',
-      blurb: 'Saul, Davi e Salomão',
-    ),
-    BibleEra(
-      id: 'divided',
-      title: 'Reinos e profetas',
-      blurb: 'Israel, Judá e a voz dos profetas',
-    ),
-    BibleEra(
-      id: 'exile',
-      title: 'Exílio',
-      blurb: 'Babilônia e a esperança do retorno',
-    ),
-    BibleEra(
-      id: 'return',
-      title: 'Retorno e restauração',
-      blurb: 'Templo, muros e o último dos profetas',
-    ),
-    BibleEra(
-      id: 'gospels',
-      title: 'Vida de Jesus',
-      blurb: 'Os quatro Evangelhos',
-    ),
-    BibleEra(
-      id: 'church',
-      title: 'Igreja e cartas',
-      blurb: 'Atos, epístolas e a consumação',
-    ),
+    BibleEra(id: 'origins'),
+    BibleEra(id: 'exodus'),
+    BibleEra(id: 'conquest'),
+    BibleEra(id: 'united'),
+    BibleEra(id: 'divided'),
+    BibleEra(id: 'exile'),
+    BibleEra(id: 'return'),
+    BibleEra(id: 'gospels'),
+    BibleEra(id: 'church'),
   ];
 
   /// Ordem dos livros pelos eventos (não pela data de composição).

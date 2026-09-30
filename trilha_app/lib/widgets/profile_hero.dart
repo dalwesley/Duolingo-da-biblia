@@ -1,7 +1,10 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
+import '../l10n/app_language.dart';
+import '../l10n/l10n_global.dart';
 import '../models/caravan_profile_prefs.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -56,25 +59,27 @@ class ProfileHero extends StatelessWidget {
   });
 
   static String sinceFrom(String? ymd) {
-    if (ymd == null || ymd.length < 7) return 'Peregrino da caravana';
+    final l = L10n.current;
+    if (ymd == null || ymd.length < 7) return l.pilgrimFallbackName;
     final parts = ymd.split('-');
     final year = int.tryParse(parts[0]);
     final month = int.tryParse(parts[1]);
     if (year == null || month == null || month < 1 || month > 12) {
-      return 'Peregrino da caravana';
+      return l.pilgrimFallbackName;
     }
-    const months = [
-      'janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', //
-      'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro',
-    ];
-    return 'Peregrino desde ${months[month - 1]} de $year';
+    final monthName = DateFormat.MMMM(l.localeName)
+        .format(DateTime(year, month))
+        .replaceAll('.', '');
+    return l.profileSince(monthName, year);
   }
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final l10n = context.l10n;
     final top = MediaQuery.viewPaddingOf(context).top;
-    final displayName = name.trim().isEmpty ? 'Peregrino' : name.trim();
+    final displayName =
+        name.trim().isEmpty ? l10n.pilgrimFallbackName : name.trim();
 
     return Stack(
       children: [
@@ -106,8 +111,8 @@ class ProfileHero extends StatelessWidget {
                   inline: true,
                   immersive: true,
                   dark: a.onDark,
-                  title: 'Perfil',
-                  subtitle: 'Sua caminhada',
+                  title: l10n.profileTitle,
+                  subtitle: l10n.profileYourJourney,
                   leadingGlyph: CinematicGlyph.spark,
                   onBack: onBack,
                   onTrailingTap: onSettings,
@@ -255,23 +260,24 @@ class _HeroStats extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final l10n = context.l10n;
     final items = <(String, String, CinematicGlyph, Color)>[
       (
         pilgrimFormatCount(steps),
-        'Passos',
+        l10n.pilgrimStatSteps,
         CinematicGlyph.path,
         AppColors.accent,
       ),
       (
         pilgrimFormatCount(missions),
-        'Cenas',
+        l10n.pilgrimStatScenes,
         CinematicGlyph.scroll,
         AppColors.teal,
       ),
       if (accuracyPercent != null)
         (
           '$accuracyPercent%',
-          'Clareza',
+          l10n.pilgrimAccuracyTitle,
           CinematicGlyph.check,
           AppColors.orchid,
         ),
@@ -329,13 +335,13 @@ class _HeroStats extends StatelessWidget {
             ),
           ],
           // Passos, clareza e dias no topo: um olho só para os números.
-          const PrivacyEye(
-            sections: {
+          PrivacyEye(
+            sections: const {
               CaravanProfileSection.ranking,
               CaravanProfileSection.accuracy,
               CaravanProfileSection.daysAsLeader,
             },
-            label: 'Seus números',
+            label: l10n.profileYourNumbers,
           ),
         ],
       ),
@@ -381,6 +387,7 @@ class _ConstancyCardState extends State<ConstancyCard> {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final l10n = context.l10n;
     final played = widget.playDates.toSet();
     final now = DateTime.now();
     final today = DateTime(now.year, now.month, now.day);
@@ -410,7 +417,7 @@ class _ConstancyCardState extends State<ConstancyCard> {
           Row(
             children: [
               Semantics(
-                label: 'Sequência de $streak de $goal dias',
+                label: l10n.profileStreakOf(streak, goal),
                 excludeSemantics: true,
                 child: SizedBox(
                   width: 76,
@@ -435,7 +442,7 @@ class _ConstancyCardState extends State<ConstancyCard> {
                             ),
                           ),
                           Text(
-                            'de $goal',
+                            l10n.profileStreakOfGoal(goal),
                             style: AppTypography.body(
                               size: 11,
                               weight: FontWeight.w700,
@@ -460,7 +467,7 @@ class _ConstancyCardState extends State<ConstancyCard> {
                             children: [
                               Flexible(
                                 child: Text(
-                                  'Sua sequência',
+                                  l10n.profileYourStreak,
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                   style: AppTypography.title(
@@ -483,20 +490,19 @@ class _ConstancyCardState extends State<ConstancyCard> {
                             ],
                           ),
                         ),
-                        const PrivacyEye(
-                          sections: {CaravanProfileSection.presence},
-                          label: 'Sequência',
+                        PrivacyEye(
+                          sections: const {CaravanProfileSection.presence},
+                          label: l10n.pilgrimStreak,
                         ),
                       ],
                     ),
                     const SizedBox(height: 4),
                     Text(
                       done
-                          ? 'Compromisso de $goal dias cumprido. Siga firme!'
+                          ? l10n.profileStreakGoalDone(goal)
                           : streak == 0
-                          ? 'Uma cena hoje acende o primeiro dia.'
-                          : 'Faltam ${goal - streak} para o compromisso de '
-                                '$goal dias.',
+                          ? l10n.profileStreakStart
+                          : l10n.profileStreakRemaining(goal - streak, goal),
                       style: AppTypography.body(
                         size: 13,
                         height: 1.35,
@@ -526,8 +532,8 @@ class _ConstancyCardState extends State<ConstancyCard> {
                 padding: const EdgeInsets.symmetric(vertical: AppSpace.sm),
                 child: Row(
                   children: [
-                    const Expanded(
-                      child: SectionLabel('Histórico das semanas'),
+                    Expanded(
+                      child: SectionLabel(l10n.profileWeekHistory),
                     ),
                     Icon(
                       _historyOpen
@@ -568,27 +574,35 @@ class _WeekDots extends StatelessWidget {
     required this.played,
   });
 
-  static const _letters = ['S', 'T', 'Q', 'Q', 'S', 'S', 'D'];
-
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final l10n = context.l10n;
+    final letters = [
+      l10n.profileWdMon,
+      l10n.profileWdTue,
+      l10n.profileWdWed,
+      l10n.profileWdThu,
+      l10n.profileWdFri,
+      l10n.profileWdSat,
+      l10n.profileWdSun,
+    ];
     final days = [for (var i = 0; i < 7; i++) start.add(Duration(days: i))];
     final count = days
         .where((d) => played.contains(ConstancyCard._key(d)))
         .length;
     return Semantics(
-      label: 'Esta semana: $count de 7 dias caminhados',
+      label: l10n.profileThisWeekSemantics(count),
       excludeSemantics: true,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Row(
             children: [
-              const SectionLabel('Esta semana'),
+              SectionLabel(l10n.profileThisWeek),
               const Spacer(),
               Text(
-                '$count de 7 dias',
+                l10n.profileOfSevenDays(count),
                 style: AppTypography.body(
                   size: 12,
                   weight: FontWeight.w700,
@@ -603,7 +617,7 @@ class _WeekDots extends StatelessWidget {
             children: [
               for (var i = 0; i < 7; i++)
                 _DayDot(
-                  letter: _letters[i],
+                  letter: letters[i],
                   on: played.contains(ConstancyCard._key(days[i])),
                   isToday: days[i] == today,
                   future: days[i].isAfter(today),
@@ -674,7 +688,7 @@ class _DayDot extends StatelessWidget {
         ),
         const SizedBox(height: 6),
         Text(
-          isToday ? 'hoje' : letter,
+          isToday ? context.l10n.profileTodayLower : letter,
           style: AppTypography.body(
             size: 11,
             weight: FontWeight.w800,
@@ -704,19 +718,20 @@ class _WeeksTrend extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final l10n = context.l10n;
     const maxBar = 28.0;
     return Semantics(
-      label: '$walked dias caminhados nas últimas $weeks semanas',
+      label: l10n.profileWeeksWalkedSemantics(walked, weeks),
       excludeSemantics: true,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Row(
             children: [
-              const SectionLabel('Últimos 3 meses'),
+              SectionLabel(l10n.profileLastThreeMonths),
               const Spacer(),
               Text(
-                'dias por semana',
+                l10n.profileDaysPerWeek,
                 style: AppTypography.body(
                   size: 12,
                   weight: FontWeight.w700,
@@ -748,7 +763,7 @@ class _WeeksTrend extends StatelessWidget {
           Row(
             children: [
               Text(
-                'há 3 meses',
+                l10n.profileThreeMonthsAgo,
                 style: AppTypography.body(
                   size: 11,
                   weight: FontWeight.w600,
@@ -757,7 +772,7 @@ class _WeeksTrend extends StatelessWidget {
               ),
               const Spacer(),
               Text(
-                'esta semana',
+                l10n.profileThisWeekLower,
                 style: AppTypography.body(
                   size: 11,
                   weight: FontWeight.w600,
@@ -768,7 +783,7 @@ class _WeeksTrend extends StatelessWidget {
           ),
           const SizedBox(height: AppSpace.md),
           Text(
-            'Cada lamparina é uma semana: o azeite sobe a cada dia caminhado e a chama cresce.',
+            l10n.profileLampHelp,
             style: AppTypography.verse(
               size: 14,
               color: a.textSecondary,

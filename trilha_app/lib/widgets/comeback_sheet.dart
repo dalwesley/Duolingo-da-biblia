@@ -6,6 +6,7 @@ import '../utils/appearance.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
+import '../l10n/app_language.dart';
 
 /// Sheet de retorno — sequência em espera + CTA para a próxima cena.
 Future<void> showComebackSheet(
@@ -29,10 +30,10 @@ class _ComebackSheet extends StatelessWidget {
     final progress = context.watch<ProgressService>();
     final a = Appearance.of(context);
     final days = progress.daysSinceLastPlayed;
+    final l10n = context.l10n;
     final name = progress.userName.trim().isEmpty
-        ? 'aprendiz'
+        ? l10n.homeDefaultName
         : progress.userName.trim().split(' ').first;
-    final daysLabel = days == 1 ? '1 dia' : '$days dias';
 
     return AppSheetPanel(
       child: Column(
@@ -45,17 +46,24 @@ class _ComebackSheet extends StatelessWidget {
               accent: AppColors.streak,
               glowing: false,
             ),
-            eyebrow: 'O peregrino',
+            eyebrow: l10n.comebackEyebrow,
             eyebrowColor: AppColors.streak.withValues(alpha: 0.85),
-            title: 'Sua sequência te espera',
+            title: l10n.comebackTitle,
             subtitle: days >= 2
-                ? '$name, faz $daysLabel sem uma cena. Uma só basta — e você ganha +${ProgressService.comebackBonusSteps} passos de boas-vindas.'
-                : '$name, a caravana sentiu sua falta. Uma cena retoma a sequência — +${ProgressService.comebackBonusSteps} passos te esperam.',
+                ? l10n.comebackSubtitleGap(
+                    name,
+                    days,
+                    ProgressService.comebackBonusSteps,
+                  )
+                : l10n.comebackSubtitle(
+                    name,
+                    ProgressService.comebackBonusSteps,
+                  ),
             center: true,
           ),
           const SizedBox(height: 20),
           CopperCta(
-            label: 'Continuar',
+            label: l10n.commonContinue,
             onTap: () async {
               await progress.acknowledgeComeback();
               if (!context.mounted) return;
@@ -65,7 +73,7 @@ class _ComebackSheet extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           TextCta(
-            label: 'Agora não',
+            label: l10n.commonNotNow,
             color: a.textFaint,
             onTap: () async {
               await progress.acknowledgeComeback();

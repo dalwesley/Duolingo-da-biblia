@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../l10n/app_language.dart';
 import '../services/companion_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
@@ -78,7 +79,7 @@ class JuntosInbox extends StatelessWidget {
               bottom: AppSpace.sm,
             ),
             child: SectionLabel(
-              'Novidades · ${items.length}',
+              context.l10n.juntosInboxNews(items.length),
               color: AppColors.accent.withValues(alpha: 0.9),
             ),
           ),

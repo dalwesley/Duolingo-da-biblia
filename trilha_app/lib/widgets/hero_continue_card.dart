@@ -18,6 +18,7 @@ import 'cinematic_icon.dart';
 import 'hero_card_atmosphere.dart';
 import 'immersive_background.dart';
 import 'ui_primitives.dart';
+import '../l10n/app_language.dart';
 
 /// Próxima cena — CTA único. Três faces cinematográficas:
 /// em risco = poeira + teia · gelo usado = congelado · em dia = vidro limpo.
@@ -211,7 +212,7 @@ class _HeroContinueCardState extends State<HeroContinueCard>
         !walkedToday &&
         TomorrowHook.promisedArrived(
           promisedTitle: progress.nextSceneTitle,
-          currentTitle: mission.title,
+          currentTitle: mission.localizedTitle,
         );
     final yesterday = !walkedToday
         ? TomorrowHook.yesterdayLine(progress.lastInsight)
@@ -219,28 +220,27 @@ class _HeroContinueCardState extends State<HeroContinueCard>
     final echoDoor = !walkedToday && arrived
         ? TomorrowHook.echoDoorLine(progress.lastEchoQuestion)
         : null;
+    final l10n = context.l10n;
     final ctaLabel = switch (mood) {
-      HeroCardMood.frozen => 'Retomar a trilha',
-      HeroCardMood.dusty => 'Continuar a trilha',
+      HeroCardMood.frozen => l10n.commonContinue,
+      HeroCardMood.dusty => l10n.commonContinue,
       HeroCardMood.alive =>
-        resting
-            ? 'Abrir agora'
-            : walkedToday
-            ? 'Continuar'
-            : echoDoor != null
-            ? 'Descobrir'
-            : 'Entrar',
+        resting || walkedToday
+            ? l10n.commonNextScene
+            : progress.lastPlayedDate == null
+            ? l10n.commonStart
+            : l10n.commonContinue,
     };
     final rewardColor = mission.isBoss ? AppColors.sand : style.footer;
     final world = CinematicResolver.ambientForHome(
       trailSlug: widget.trailSlug,
-      missionTitle: mission.title,
+      missionTitle: mission.localizedTitle,
       missionSlug: mission.slug,
     );
 
     final countdown = progress.streakRiskCountdown;
     final riskLine = switch (mood) {
-      HeroCardMood.frozen => 'O gelo cobriu ontem · sequência preservada',
+      HeroCardMood.frozen => l10n.homeHeroFrozenLine,
       HeroCardMood.dusty =>
         returningAfterGap
             ? DustCopy.heroGapLine(hasFreeze: hasFreeze)
@@ -261,14 +261,14 @@ class _HeroContinueCardState extends State<HeroContinueCard>
       HeroCardMood.dusty => style.stepLabel,
       HeroCardMood.alive =>
         resting
-            ? 'Amanhã'
+            ? l10n.homeHeroTomorrow
             : echoDoor != null
-            ? 'Eco de ontem'
+            ? l10n.homeHeroEcho
             : arrived
-            ? 'Hoje'
+            ? l10n.commonToday
             : walkedToday
-            ? 'Em dia'
-            : 'Cena pronta',
+            ? l10n.homeMoodAlive
+            : l10n.homeHeroReady,
     };
 
     final heroHeight = HeroContinueCard.stageHeight(context);
@@ -279,7 +279,7 @@ class _HeroContinueCardState extends State<HeroContinueCard>
 
     return Semantics(
       button: true,
-      label: '$ctaLabel · ${mission.title}',
+      label: '$ctaLabel · ${mission.localizedTitle}',
       child: GestureDetector(
         onTapDown: (_) => setState(() => _pressed = true),
         onTapUp: (details) {
@@ -408,7 +408,7 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                                   ),
                                   SizedBox(height: compact ? 6 : 10),
                                   Text(
-                                    mission.title,
+                                    mission.localizedTitle,
                                     maxLines: compact ? 2 : 3,
                                     overflow: TextOverflow.ellipsis,
                                     style: AppTypography.display(
@@ -524,10 +524,10 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                           Center(
                             child: Text(
                               resting
-                                  ? '+${mission.stepsReward} passos · extra de hoje'
+                                  ? l10n.homeHeroExtraSteps(mission.stepsReward)
                                   : mood == HeroCardMood.dusty
-                                  ? 'Protege a sequência · ~3 min'
-                                  : '~3 min',
+                                  ? l10n.homeHeroProtect
+                                  : l10n.homeHeroMinutes,
                               style: AppTypography.body(
                                 size: 13,
                                 weight: FontWeight.w700,
@@ -616,12 +616,12 @@ class _HeroContinueCardState extends State<HeroContinueCard>
           ),
           const SizedBox(height: 16),
           Text(
-            'Trilha concluída',
+            context.l10n.homeTrailDoneTitle,
             style: AppTypography.display(size: 28, color: a.text),
           ),
           const SizedBox(height: 8),
           Text(
-            'Escolha a próxima e continue aprendendo.',
+            context.l10n.homeTrailDoneBody,
             textAlign: TextAlign.center,
             style: AppTypography.body(color: a.textSecondary),
           ),
@@ -629,7 +629,7 @@ class _HeroContinueCardState extends State<HeroContinueCard>
             const SizedBox(height: 20),
             // Antes vinha sem onTap e aparecia apagado (parecia desligado).
             CopperCta(
-              label: 'Explorar trilhas',
+              label: context.l10n.homeSeeTrails,
               expanded: false,
               onTap: widget.onExploreTrails,
             ),
@@ -676,7 +676,7 @@ class _CtaBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            label.toUpperCase(),
+            label,
             style: AppTypography.cta(size: 18).copyWith(color: ink),
           ),
           const SizedBox(width: 12),
@@ -718,7 +718,7 @@ class _AliveShineCta extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            label.toUpperCase(),
+            label,
             style: AppTypography.cta(
               size: 18,
             ).copyWith(color: AppColors.inkOnAccent, letterSpacing: 1.4),

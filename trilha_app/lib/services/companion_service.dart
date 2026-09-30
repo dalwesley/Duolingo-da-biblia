@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../l10n/l10n_global.dart';
 import '../models/walk_companion.dart';
 import 'backend_service.dart';
 import 'progress_service.dart';
@@ -150,12 +151,12 @@ class CompanionService extends ChangeNotifier {
   Future<WalkCompanion?> createInvite(ProgressService progress) async {
     lastError = null;
     if (!canAdd) {
-      lastError = 'Você já tem uma companhia.';
+      lastError = L10n.current.companionErrorAlreadyHave;
       notifyListeners();
       return null;
     }
     if (!backend.isActive) {
-      lastError = 'Entre com Google para criar uma companhia.';
+      lastError = L10n.current.companionErrorSignInCreate;
       notifyListeners();
       return null;
     }
@@ -166,7 +167,7 @@ class CompanionService extends ChangeNotifier {
     );
     loading = false;
     if (created == null) {
-      lastError = 'Não foi possível criar o convite.';
+      lastError = L10n.current.companionErrorCreateInvite;
       notifyListeners();
       return null;
     }
@@ -182,12 +183,12 @@ class CompanionService extends ChangeNotifier {
   Future<bool> joinWithCode(String rawCode, ProgressService progress) async {
     lastError = null;
     if (!canAdd) {
-      lastError = 'Você já tem uma companhia.';
+      lastError = L10n.current.companionErrorAlreadyHave;
       notifyListeners();
       return false;
     }
     if (!backend.isActive) {
-      lastError = 'Entre com Google para entrar numa companhia.';
+      lastError = L10n.current.companionErrorSignInJoin;
       notifyListeners();
       return false;
     }
@@ -200,7 +201,7 @@ class CompanionService extends ChangeNotifier {
     );
     loading = false;
     if (joined == null) {
-      lastError = 'Código inválido ou companhia já está completa.';
+      lastError = L10n.current.companionErrorInvalidCode;
       notifyListeners();
       return false;
     }
@@ -252,7 +253,7 @@ class CompanionService extends ChangeNotifier {
   }) async {
     lastError = null;
     if (!backend.isActive) {
-      lastError = 'Entre na conta para acenar no app.';
+      lastError = L10n.current.companionErrorSignInWave;
       notifyListeners();
       return false;
     }
@@ -262,7 +263,7 @@ class CompanionService extends ChangeNotifier {
       message: message,
     );
     if (!ok) {
-      lastError = 'Não foi possível enviar o aceno.';
+      lastError = L10n.current.companionErrorWave;
       notifyListeners();
       return false;
     }

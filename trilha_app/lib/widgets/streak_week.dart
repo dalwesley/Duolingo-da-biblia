@@ -2,7 +2,9 @@ import 'dart:math' as math;
 import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
+import '../l10n/app_language.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -29,16 +31,10 @@ class StreakWeek extends StatelessWidget {
     final a = Appearance.of(context);
     final today = DateTime.now();
     final monday = today.subtract(Duration(days: today.weekday - 1));
-    const labels = ['S', 'T', 'Q', 'Q', 'S', 'S', 'D'];
-    const names = [
-      'segunda',
-      'terça',
-      'quarta',
-      'quinta',
-      'sexta',
-      'sábado',
-      'domingo',
-    ];
+    final l10n = context.l10n;
+    final tag = Localizations.localeOf(context).toLanguageTag();
+    final narrow = DateFormat('EEEEE', tag);
+    final full = DateFormat.EEEE(tag);
 
     bool played(DateTime day) =>
         playedOnDate?.call(day) ?? progress!.playedOnDate(day);
@@ -57,12 +53,15 @@ class StreakWeek extends StatelessWidget {
         final iced = frozen(day);
 
         final status = iced
-            ? 'protegido pelo gelo'
+            ? l10n.streakDayFrozen
             : active
-            ? 'feito'
-            : 'sem cena';
+            ? l10n.questDoneLower
+            : l10n.streakDayEmpty;
+        final dayName = full.format(day);
         return Semantics(
-          label: '${isToday ? 'Hoje, ' : ''}${names[i]}: $status',
+          label: isToday
+              ? l10n.streakDayTodaySemantics(dayName, status)
+              : l10n.streakDaySemantics(dayName, status),
           excludeSemantics: true,
           child: Column(
             children: [
@@ -93,7 +92,7 @@ class StreakWeek extends StatelessWidget {
                             framed: false,
                           )
                         : Text(
-                            labels[i],
+                            narrow.format(day).toUpperCase(),
                             style: AppTypography.label(
                               size: 10,
                               letterSpacing: 0,

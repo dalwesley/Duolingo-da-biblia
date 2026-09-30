@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
+import '../l10n/app_language.dart';
 import '../services/bible_service.dart';
 import '../services/progress_service.dart';
 import '../services/tts_service.dart';
@@ -297,11 +298,10 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
     await progress.recordBibleReading(book.abbrev, chapter);
     if (!mounted) return;
     final next = _next;
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        behavior: SnackBarBehavior.floating,
-        content: Text('${book.name} $chapter lido'),
-      ),
+    showAppToastFor(
+      context,
+      message: context.l10n.bibleReaderChapterReadToast(book.name, chapter),
+      glyph: CinematicGlyph.book,
     );
     if (next != null) {
       await Future<void>.delayed(const Duration(milliseconds: 420));
@@ -349,13 +349,13 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
-                'Não foi possível abrir ${widget.reference}',
+                context.l10n.bibleReaderOpenFailed(widget.reference),
                 textAlign: TextAlign.center,
                 style: AppTypography.body(color: reading.inkMuted),
               ),
               const SizedBox(height: AppSpace.lg),
               TextCta(
-                label: 'Fechar',
+                label: context.l10n.commonClose,
                 color: reading.ink,
                 onTap: () => Navigator.of(context).pop(),
               ),
@@ -437,15 +437,17 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
                       inline: true,
                       immersive: true,
                       title: book.name,
-                      subtitle:
-                          'Capítulo $_chapter · ${BibleService.byId(translationId).shortName}',
+                      subtitle: context.l10n.bibleReaderSubtitle(
+                        _chapter,
+                        BibleService.byId(translationId).shortName,
+                      ),
                       onBack: () => Navigator.of(context).pop(),
                       showLeading: false,
                       chromeAccent: AppColors.cedar,
                       onTitleTap: _openPicker,
                       trailing: Semantics(
                         button: true,
-                        label: 'Ajustes de leitura',
+                        label: context.l10n.bibleReaderSettings,
                         child: GestureDetector(
                           onTap: () => _showReadingSettings(context),
                           behavior: HitTestBehavior.opaque,
@@ -669,16 +671,16 @@ class _ChapterPageState extends State<_ChapterPage> {
           ),
           const SizedBox(height: AppSpace.xs),
           Text(
-            'Capítulo ${widget.chapter}',
+            context.l10n.bibleChapterLabel(widget.chapter),
             textAlign: TextAlign.center,
             style: AppTypography.title(size: 16, color: reading.verseNumber),
           ),
           const SizedBox(height: AppSpace.sm),
           Text(
             [
-              '${verses.length} versículos',
-              '$minutes min',
-              if (alreadyRead) 'lido',
+              context.l10n.bibleVerseCount(verses.length),
+              context.l10n.planMinutes(minutes),
+              if (alreadyRead) context.l10n.bibleReaderReadTag,
             ].join(' · '),
             textAlign: TextAlign.center,
             style: reading.metaStyle,
@@ -752,7 +754,7 @@ class _VerseBlock extends StatelessWidget {
 
     return Semantics(
       button: true,
-      label: 'Versículo $number. $text',
+      label: context.l10n.bibleVerseSemantics(number, text),
       excludeSemantics: true,
       child: GestureDetector(
         behavior: HitTestBehavior.opaque,
@@ -828,20 +830,20 @@ class _ChapterEnd extends StatelessWidget {
       children: [
         Center(
           child: Text(
-            'Fim de $bookName $chapter',
+            context.l10n.bibleReaderChapterEnd(bookName, chapter),
             style: reading.metaStyle.copyWith(fontStyle: FontStyle.italic),
           ),
         ),
         const SizedBox(height: AppSpace.lg),
         alreadyRead
             ? OutlineCta(
-                label: 'Capítulo lido',
+                label: context.l10n.bibleReaderChapterDone,
                 onTap: null,
                 leading: CinematicGlyph.check,
                 color: reading.verseNumber,
               )
             : CopperCta(
-                label: 'Concluir capítulo',
+                label: context.l10n.bibleReaderCompleteChapter,
                 leading: CinematicGlyph.check,
                 trailing: null,
                 expanded: true,
@@ -867,7 +869,10 @@ class _ChapterEnd extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          SectionLabel('A seguir', color: reading.verseNumber),
+                          SectionLabel(
+                            context.l10n.bibleReaderUpNext,
+                            color: reading.verseNumber,
+                          ),
                           const SizedBox(height: 4),
                           Text(
                             '${nextBook.name} ${n.chapter}',
@@ -1000,7 +1005,7 @@ class _ReaderDock extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     _RoundButton(
-                      tooltip: 'Capítulo anterior',
+                      tooltip: context.l10n.bibleReaderPrevChapter,
                       reading: reading,
                       onTap: onPrevious,
                       child: CinematicIcon(
@@ -1039,7 +1044,9 @@ class _ReaderDock extends StatelessWidget {
                               ),
                               const SizedBox(width: 8),
                               Text(
-                                playing ? 'Parar' : 'Ouvir',
+                                playing
+                                    ? context.l10n.bibleReaderStop
+                                    : context.l10n.bibleReaderListen,
                                 style: AppTypography.title(
                                   size: 14,
                                   color: playing ? reading.page : reading.ink,
@@ -1051,7 +1058,7 @@ class _ReaderDock extends StatelessWidget {
                       ),
                     ),
                     _RoundButton(
-                      tooltip: 'Próximo capítulo',
+                      tooltip: context.l10n.bibleReaderNextChapter,
                       reading: reading,
                       onTap: onNext,
                       child: CinematicIcon(
@@ -1199,7 +1206,9 @@ Future<void> _showVerseActions(
                 for (final q in [
                   (
                     glyph: CinematicGlyph.bookmark,
-                    label: saved ? 'Guardado' : 'Guardar',
+                    label: saved
+                        ? context.l10n.bibleVerseSaved
+                        : context.l10n.bibleVerseSave,
                     lit: saved,
                     onTap: () async {
                       final added = await progress.toggleBibleBookmark(
@@ -1213,7 +1222,7 @@ Future<void> _showVerseActions(
                   ),
                   (
                     glyph: CinematicGlyph.copy,
-                    label: 'Copiar',
+                    label: context.l10n.bibleVerseCopy,
                     lit: false,
                     onTap: () async {
                       await Clipboard.setData(
@@ -1222,18 +1231,17 @@ Future<void> _showVerseActions(
                       ActHaptics.light();
                       if (ctx.mounted) Navigator.pop(ctx);
                       if (context.mounted) {
-                        ScaffoldMessenger.of(context).showSnackBar(
-                          const SnackBar(
-                            behavior: SnackBarBehavior.floating,
-                            content: Text('Versículo copiado'),
-                          ),
+                        showAppToastFor(
+                          context,
+                          message: context.l10n.bibleVerseCopied,
+                          glyph: CinematicGlyph.copy,
                         );
                       }
                     },
                   ),
                   (
                     glyph: CinematicGlyph.share,
-                    label: 'Compartilhar',
+                    label: context.l10n.commonShare,
                     lit: false,
                     onTap: () async {
                       Navigator.pop(ctx);
@@ -1298,8 +1306,8 @@ Future<void> _showVerseActions(
             const SizedBox(height: AppSpace.md),
             action(
               glyph: CinematicGlyph.echo,
-              label: 'Ouvir daqui em diante',
-              detail: 'Leitura em voz alta, versículo a versículo',
+              label: context.l10n.bibleVerseListenFromHere,
+              detail: context.l10n.bibleVerseListenFromHereDetail,
               accent: reading.verseNumber,
               onTap: () {
                 Navigator.pop(ctx);
@@ -1308,8 +1316,8 @@ Future<void> _showVerseActions(
             ),
             action(
               glyph: CinematicGlyph.scroll,
-              label: 'Estudar este versículo',
-              detail: 'Originais, Strong, concordância e referências',
+              label: context.l10n.bibleVerseStudy,
+              detail: context.l10n.bibleVerseStudyDetail,
               accent: reading.verseNumber,
               onTap: () {
                 Navigator.pop(ctx);
@@ -1385,7 +1393,10 @@ Future<void> _showReadingSettings(BuildContext context) {
                 ),
               ),
               const SizedBox(height: AppSpace.xl),
-              SectionLabel('Tamanho do texto', color: a.sectionLabel),
+              SectionLabel(
+                context.l10n.bibleReaderTextSize,
+                color: a.sectionLabel,
+              ),
               const SizedBox(height: AppSpace.sm),
               Row(
                 children: [
@@ -1414,7 +1425,7 @@ Future<void> _showReadingSettings(BuildContext context) {
                 ],
               ),
               const SizedBox(height: AppSpace.xl),
-              SectionLabel('Papel', color: a.sectionLabel),
+              SectionLabel(context.l10n.bibleReaderPaper, color: a.sectionLabel),
               const SizedBox(height: AppSpace.sm),
               Row(
                 children: [
@@ -1437,7 +1448,10 @@ Future<void> _showReadingSettings(BuildContext context) {
                 ],
               ),
               const SizedBox(height: AppSpace.xl),
-              SectionLabel('Versão', color: a.sectionLabel),
+              SectionLabel(
+                context.l10n.bibleReaderVersion,
+                color: a.sectionLabel,
+              ),
               const SizedBox(height: AppSpace.sm),
               Row(
                 children: [
@@ -1495,22 +1509,20 @@ Future<void> _applyTranslation(
     await showAppDialog<void>(
       context,
       builder: (ctx) => AppDialog(
-        title: 'Tradução em breve',
+        title: context.l10n.bibleTranslationSoonTitle,
         content: Text(
-          'Ainda não temos ${translation.name}. Em breve essa tradução '
-          'entra no app. Você pode contribuir com o projeto para ajudar '
-          'a trazer mais versões.',
+          context.l10n.bibleTranslationSoonBody(translation.name),
         ),
         actions: [
           GhostCta(
-            label: 'Doar',
+            label: context.l10n.bibleDonate,
             onTap: () {
               Navigator.pop(ctx);
               _openDonatePage();
             },
           ),
           CopperCta(
-            label: 'Entendi',
+            label: context.l10n.commonGotIt,
             dense: true,
             trailing: null,
             onTap: () => Navigator.pop(ctx),
@@ -1592,7 +1604,7 @@ class _PaperSwatch extends StatelessWidget {
     return Semantics(
       button: true,
       selected: selected,
-      label: 'Papel ${paper.label}',
+      label: context.l10n.biblePaperSemantics(paper.label),
       excludeSemantics: true,
       child: Material(
         color: Colors.transparent,

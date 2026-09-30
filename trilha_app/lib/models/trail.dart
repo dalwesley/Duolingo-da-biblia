@@ -1,3 +1,4 @@
+import '../l10n/content_overlay.dart';
 import 'exercise.dart';
 
 export 'exercise.dart';
@@ -99,6 +100,26 @@ class Mission {
   bool get hasBibleHook =>
       (hookVerse ?? '').trim().isNotEmpty || (hookNote ?? '').trim().isNotEmpty;
 
+  /// Título localizado (overlay EN/ES) com fallback ao campo PT do currículo.
+  String get localizedTitle =>
+      ContentOverlay.instance.missionField(slug, 'title') ?? title;
+
+  String get localizedIntro =>
+      ContentOverlay.instance.missionField(slug, 'intro') ?? intro;
+
+  String? get localizedObjective =>
+      ContentOverlay.instance.missionField(slug, 'objective') ?? objective;
+
+  String? get localizedCentralInsight =>
+      ContentOverlay.instance.missionField(slug, 'centralInsight') ??
+      centralInsight;
+
+  String? get localizedHookNote =>
+      ContentOverlay.instance.missionField(slug, 'hookNote') ?? hookNote;
+
+  String? get localizedEchoQuestion =>
+      ContentOverlay.instance.missionField(slug, 'echoQuestion') ?? echoQuestion;
+
   factory Mission.fromJson(Map<String, dynamic> json) {
     final entrance = json['entrance'];
     Map<String, dynamic>? entranceMap;
@@ -145,15 +166,28 @@ class TrailModule {
   /// Chave do banco de perguntas (ex.: `abraao`, `opressao`).
   final String? section;
   final List<Mission> missions;
+  /// Índice do módulo na trilha — usado pelo overlay (`slug:index`).
+  final int index;
+  /// Slug da trilha pai — preenchido em [Trail.fromJson].
+  final String trailSlug;
 
   const TrailModule({
     required this.title,
     required this.icon,
     this.section,
     required this.missions,
+    this.index = 0,
+    this.trailSlug = '',
   });
 
-  factory TrailModule.fromJson(Map<String, dynamic> json) {
+  String get localizedTitle =>
+      ContentOverlay.instance.moduleTitle(trailSlug, index) ?? title;
+
+  factory TrailModule.fromJson(
+    Map<String, dynamic> json, {
+    int index = 0,
+    String trailSlug = '',
+  }) {
     return TrailModule(
       title: json['title'] as String,
       icon: json['icon'] as String,
@@ -161,6 +195,8 @@ class TrailModule {
       missions: (json['missions'] as List? ?? [])
           .map((e) => Mission.fromJson(e as Map<String, dynamic>))
           .toList(),
+      index: index,
+      trailSlug: trailSlug,
     );
   }
 }
@@ -195,9 +231,17 @@ class Trail {
   List<String> get missionSlugs =>
       modules.expand((m) => m.missions.map((mission) => mission.slug)).toList();
 
+  String get localizedTitle =>
+      ContentOverlay.instance.trailField(slug, 'title') ?? title;
+
+  String get localizedDescription =>
+      ContentOverlay.instance.trailField(slug, 'description') ?? description;
+
   factory Trail.fromJson(Map<String, dynamic> json) {
+    final slug = json['slug'] as String;
+    final mods = json['modules'] as List? ?? [];
     return Trail(
-      slug: json['slug'] as String,
+      slug: slug,
       title: json['title'] as String,
       description: json['description'] as String,
       icon: json['icon'] as String,
@@ -207,9 +251,14 @@ class Trail {
       color: json['color'] as String? ?? '#1B3A5C',
       realmId: json['realm'] as String? ?? 'antigo-testamento',
       categoryId: json['category'] as String? ?? 'pentateuco',
-      modules: (json['modules'] as List? ?? [])
-          .map((e) => TrailModule.fromJson(e as Map<String, dynamic>))
-          .toList(),
+      modules: [
+        for (var i = 0; i < mods.length; i++)
+          TrailModule.fromJson(
+            Map<String, dynamic>.from(mods[i] as Map),
+            index: i,
+            trailSlug: slug,
+          ),
+      ],
     );
   }
 }

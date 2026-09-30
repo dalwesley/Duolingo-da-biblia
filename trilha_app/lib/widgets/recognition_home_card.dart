@@ -32,8 +32,8 @@ class RecognitionHomeCard extends StatelessWidget {
         children: [
           Text(
             single
-                ? '${groups.first.name} reconheceu sua caminhada'
-                : 'Reconheceram sua caminhada',
+                ? '${groups.first.name} reconheceu sua jornada'
+                : 'Reconheceram sua jornada',
             style: AppTypography.title(size: 18, height: 1.25, color: a.text),
           ),
           const SizedBox(height: 12),

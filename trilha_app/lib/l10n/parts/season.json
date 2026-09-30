@@ -1,0 +1,173 @@
+{
+  "seasonChallengeTitle": {
+    "pt": "Desafio da estação",
+    "en": "Season challenge",
+    "es": "Desafío de la temporada"
+  },
+  "seasonChallengeSeeProgress": {
+    "pt": "Ver progresso",
+    "en": "See progress",
+    "es": "Ver progreso"
+  },
+  "seasonChallengeEmptyTitle": {
+    "pt": "Nenhum desafio da estação agora",
+    "en": "No season challenge right now",
+    "es": "Ningún desafío de temporada ahora"
+  },
+  "seasonChallengeEmptyBody": {
+    "pt": "O próximo chega com a nova estação litúrgica.",
+    "en": "The next one arrives with the new liturgical season.",
+    "es": "El próximo llega con la nueva temporada litúrgica."
+  },
+  "seasonChallengeDoneBody": {
+    "pt": "Desafio da estação concluído. Bem caminhado.",
+    "en": "Season challenge complete. Well walked.",
+    "es": "Desafío de la temporada concluido. Bien caminado."
+  },
+  "seasonChallengeInProgress": {
+    "pt": "Desafio da estação em andamento",
+    "en": "Season challenge in progress",
+    "es": "Desafío de la temporada en curso"
+  },
+  "seasonChallengePathPercent": {
+    "pt": "{percent}% do caminho",
+    "en": "{percent}% of the way",
+    "es": "{percent}% del camino",
+    "placeholders": {
+      "percent": "int"
+    }
+  },
+  "seasonChallengeInvite": {
+    "pt": "Chamar para o desafio",
+    "en": "Invite to the challenge",
+    "es": "Invitar al desafío"
+  },
+  "seasonChallengeShareBody": {
+    "pt": "🕯️ Entrei no desafio {title} no Stway.\n\nVamos caminhar juntos nesta estação?\n\n{footer}",
+    "en": "🕯️ I joined the {title} challenge on Stway.\n\nShall we walk this season together?\n\n{footer}",
+    "es": "🕯️ Entré al desafío {title} en Stway.\n\n¿Caminamos juntos en esta temporada?\n\n{footer}",
+    "placeholders": {
+      "title": "String",
+      "footer": "String"
+    }
+  },
+  "seasonDayOf": {
+    "pt": "Dia {day} de {total}",
+    "en": "Day {day} of {total}",
+    "es": "Día {day} de {total}",
+    "placeholders": {
+      "day": "String",
+      "total": "int"
+    }
+  },
+  "seasonStartsIn": {
+    "pt": "{count, plural, =1{Começa em 1 dia} other{Começa em {count} dias}}",
+    "en": "{count, plural, =1{Starts in 1 day} other{Starts in {count} days}}",
+    "es": "{count, plural, =1{Empieza en 1 día} other{Empieza en {count} días}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "seasonEnded": {
+    "pt": "Estação encerrada",
+    "en": "Season ended",
+    "es": "Temporada terminada"
+  },
+  "seasonFreeTrialLine": {
+    "pt": "Gratuito: 3 primeiros dias · depois, Peregrino+",
+    "en": "Free: first 3 days · then Pilgrim+",
+    "es": "Gratis: los 3 primeros días · después, Peregrino+"
+  },
+  "seasonDaysWalked": {
+    "pt": "{done} / {total} dias caminhados",
+    "en": "{done} / {total} days walked",
+    "es": "{done} / {total} días caminados",
+    "placeholders": {
+      "done": "int",
+      "total": "int"
+    }
+  },
+  "seasonWeek": {
+    "pt": "Semana {week}",
+    "en": "Week {week}",
+    "es": "Semana {week}",
+    "placeholders": {
+      "week": "int"
+    }
+  },
+  "seasonWeekReviewPro": {
+    "pt": "Revisão da semana · Peregrino+",
+    "en": "Week review · Pilgrim+",
+    "es": "Repaso de la semana · Peregrino+"
+  },
+  "seasonWeekReview": {
+    "pt": "Revisão da semana",
+    "en": "Week review",
+    "es": "Repaso de la semana"
+  },
+  "seasonDayLine": {
+    "pt": "Dia {day} · {title}",
+    "en": "Day {day} · {title}",
+    "es": "Día {day} · {title}",
+    "placeholders": {
+      "day": "int",
+      "title": "String"
+    }
+  },
+  "seasonProFromDay4": {
+    "pt": "Peregrino+ a partir do dia 4",
+    "en": "Pilgrim+ from day 4",
+    "es": "Peregrino+ a partir del día 4"
+  },
+  "seasonNotTodayYet": {
+    "pt": "Ainda não é hoje",
+    "en": "Not today yet",
+    "es": "Todavía no es hoy"
+  },
+  "seasonWeekReviewTitle": {
+    "pt": "Revisão da semana {week}",
+    "en": "Week {week} review",
+    "es": "Repaso de la semana {week}",
+    "placeholders": {
+      "week": "int"
+    }
+  },
+  "seasonWeekInsightsHeader": {
+    "pt": "Os 7 “Hoje:” desta semana",
+    "en": "This week's 7 “Today:” lines",
+    "es": "Los 7 “Hoy:” de esta semana"
+  },
+  "seasonTodayInsight": {
+    "pt": "Hoje: {insight}",
+    "en": "Today: {insight}",
+    "es": "Hoy: {insight}",
+    "placeholders": {
+      "insight": "String"
+    }
+  },
+  "seasonReviewPreparing": {
+    "pt": "Preparando…",
+    "en": "Preparing…",
+    "es": "Preparando…"
+  },
+  "seasonReviewStart": {
+    "pt": "3 perguntas de revisão",
+    "en": "3 review questions",
+    "es": "3 preguntas de repaso"
+  },
+  "seasonReviewEmpty": {
+    "pt": "Ainda não há perguntas desta semana no aparelho. Abra um dia primeiro.",
+    "en": "There are no questions from this week on the device yet. Open a day first.",
+    "es": "Aún no hay preguntas de esta semana en el aparato. Abre un día primero."
+  },
+  "seasonReviewMissionTitle": {
+    "pt": "Revisão da semana",
+    "en": "Week review",
+    "es": "Repaso de la semana"
+  },
+  "seasonReviewMissionIntro": {
+    "pt": "Três perguntas dos textos que você já estudou.",
+    "en": "Three questions from the texts you've already studied.",
+    "es": "Tres preguntas de los textos que ya estudiaste."
+  }
+}

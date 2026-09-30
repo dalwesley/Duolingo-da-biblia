@@ -1,6 +1,8 @@
 /// Números Strong clássicos vs. o sistema estendido STEP (H9xxx / G9xxx).
 library;
 
+import '../l10n/l10n_global.dart';
+
 final _strongRe = RegExp(r'^([HG])0*(\d{1,5})([A-Z]?)$', caseSensitive: false);
 
 class ParsedStrong {
@@ -63,38 +65,40 @@ StrongKind strongKind(String id) {
 }
 
 String strongKindLabel(StrongKind kind, {required bool hebrew}) {
+  final l = L10n.current;
   switch (kind) {
     case StrongKind.prefix:
-      return 'PREFIXO';
+      return l.strongKindPrefix;
     case StrongKind.suffix:
-      return 'SUFIXO';
+      return l.strongKindSuffix;
     case StrongKind.conjunction:
-      return 'CONJUNÇÃO';
+      return l.strongKindConjunction;
     case StrongKind.pronoun:
-      return 'PRONOME';
+      return l.strongKindPronoun;
     case StrongKind.particle:
-      return 'PARTÍCULA';
+      return l.strongKindParticle;
     case StrongKind.punctuation:
-      return 'PONTUAÇÃO';
+      return l.strongKindPunctuation;
     case StrongKind.word:
-      return hebrew ? 'HEBRAICO' : 'GREGO';
+      return hebrew ? l.strongKindHebrew : l.strongKindGreek;
   }
 }
 
 String strongKindNote(StrongKind kind) {
+  final l = L10n.current;
   switch (kind) {
     case StrongKind.prefix:
-      return 'Preposição ou artigo inseparável — cola-se à palavra seguinte. Não é verbete do Strong clássico.';
+      return l.strongNotePrefix;
     case StrongKind.suffix:
-      return 'Terminação gramatical, não um verbete de dicionário.';
+      return l.strongNoteSuffix;
     case StrongKind.conjunction:
-      return 'Conjunção prefixada (vav). O sentido está no verbo ou no nome que ela liga.';
+      return l.strongNoteConjunction;
     case StrongKind.pronoun:
-      return 'Pronome sufixado: quem recebe ou possui o que a palavra diz.';
+      return l.strongNotePronoun;
     case StrongKind.particle:
-      return 'Partícula gramatical do sistema STEP, não um número Strong clássico.';
+      return l.strongNoteParticle;
     case StrongKind.punctuation:
-      return 'Marca de leitura do texto hebraico, não uma palavra.';
+      return l.strongNotePunctuation;
     case StrongKind.word:
       return '';
   }

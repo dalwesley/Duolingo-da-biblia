@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../l10n/app_language.dart';
 import '../models/caravan_pilgrim_profile.dart';
 import '../models/caravan_profile_prefs.dart';
 import '../services/bible_service.dart';
@@ -136,15 +137,13 @@ class _MeScreenState extends State<MeScreen> {
     if (_overallRank > 0) {
       epithet = _overallRank <= 3
           ? pilgrimRankEpithet(_overallRank)
-          : '$_overallRankº na caravana';
+          : context.l10n.profileMonthRank(_overallRank);
       if (_overallRank <= 3) epithetColor = pilgrimRankAccent(_overallRank);
     }
     final leaderDays =
         profile?.daysAsCaravanLeader ?? progress.daysAsCaravanLeader;
     if (leaderDays > 0) {
-      final top = leaderDays == 1
-          ? '1 dia no topo'
-          : '$leaderDays dias no topo';
+      final top = context.l10n.profileDaysOnTop(leaderDays);
       epithet = epithet == null ? top : '$epithet · $top';
     }
     if (!record.isEmpty) {
@@ -325,11 +324,11 @@ class _NaPalavraBlock extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           RelicChapter(
-            title: 'Na Palavra',
+            title: context.l10n.profileInTheWord,
             accent: AppColors.cedar,
             whisper: hasBookmarks || hasShared
                 ? null
-                : 'Versos que você guarda e os que já saíram daqui.',
+                : context.l10n.profileInTheWordWhisper,
           ),
           const SizedBox(height: AppSpace.md),
           const _FavoritesSection(embedded: true),
@@ -390,7 +389,7 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         CardHeader(
-          label: 'Guardados',
+          label: context.l10n.profileSavedVerses,
           trailing: bookmarks.isEmpty
               ? null
               : CountBadge(
@@ -402,12 +401,12 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
         const SizedBox(height: AppSpace.md),
         if (bookmarks.isEmpty) ...[
           Text(
-            'Na Bíblia, toque num versículo e guarde no coração.',
+            context.l10n.profileSavedVersesEmpty,
             style: AppTypography.body(size: 13, color: a.textSecondary),
           ),
           const SizedBox(height: AppSpace.md),
           GhostCta(
-            label: 'Abrir a Bíblia',
+            label: context.l10n.profileOpenBible,
             leading: CinematicGlyph.book,
             expanded: true,
             onTap: openBible,
@@ -421,7 +420,7 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
                 if (i > 0) const RelicHairline(accent: AppColors.cedar),
                 Semantics(
                   button: true,
-                  label: 'Abrir $label',
+                  label: context.l10n.profileOpenRef(label),
                   excludeSemantics: true,
                   child: InkWell(
                     borderRadius: BorderRadius.circular(AppRadii.sm),
@@ -474,7 +473,7 @@ class _SharedVersesSection extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         CardHeader(
-          label: 'Enviados',
+          label: context.l10n.profileSharedVerses,
           trailing: refs.isEmpty
               ? null
               : CountBadge(
@@ -486,7 +485,7 @@ class _SharedVersesSection extends StatelessWidget {
         const SizedBox(height: AppSpace.md),
         if (refs.isEmpty)
           Text(
-            'Versículos que você compartilhar aparecem aqui — só a referência.',
+            context.l10n.profileSharedVersesEmpty,
             style: AppTypography.body(size: 13, color: a.textSecondary),
           )
         else
@@ -497,7 +496,7 @@ class _SharedVersesSection extends StatelessWidget {
               for (final ref in refs)
                 Semantics(
                   button: true,
-                  label: 'Abrir $ref',
+                  label: context.l10n.profileOpenRef(ref),
                   excludeSemantics: true,
                   child: Material(
                     color: AppColors.cedar.withValues(alpha: 0.08),

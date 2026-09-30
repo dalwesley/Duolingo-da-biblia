@@ -1,0 +1,899 @@
+{
+  "planOrderCanonical": {
+    "pt": "Ordem da Bíblia",
+    "en": "Bible order",
+    "es": "Orden de la Biblia"
+  },
+  "planOrderChronological": {
+    "pt": "Ordem cronológica",
+    "en": "Chronological order",
+    "es": "Orden cronológico"
+  },
+  "planOrderAlphabetical": {
+    "pt": "Ordem alfabética",
+    "en": "Alphabetical order",
+    "es": "Orden alfabético"
+  },
+  "planOrderCanonicalShort": {
+    "pt": "Canônica",
+    "en": "Canonical",
+    "es": "Canónico"
+  },
+  "planOrderChronologicalShort": {
+    "pt": "Cronológica",
+    "en": "Chronological",
+    "es": "Cronológico"
+  },
+  "planOrderAlphabeticalShort": {
+    "pt": "Alfabética",
+    "en": "Alphabetical",
+    "es": "Alfabético"
+  },
+  "planFinished": {
+    "pt": "Plano concluído",
+    "en": "Plan complete",
+    "es": "Plan completado"
+  },
+  "biblePaperAuto": {
+    "pt": "Automático",
+    "en": "Automatic",
+    "es": "Automático"
+  },
+  "biblePaperLight": {
+    "pt": "Clara",
+    "en": "Light",
+    "es": "Clara"
+  },
+  "biblePaperSepia": {
+    "pt": "Sépia",
+    "en": "Sepia",
+    "es": "Sepia"
+  },
+  "biblePaperNight": {
+    "pt": "Noite",
+    "en": "Night",
+    "es": "Noche"
+  },
+  "bibleChapterCount": {
+    "pt": "{count, plural, =1{1 capítulo} other{{count} capítulos}}",
+    "en": "{count, plural, =1{1 chapter} other{{count} chapters}}",
+    "es": "{count, plural, =1{1 capítulo} other{{count} capítulos}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "verseStudyAttribution": {
+    "pt": "Léxico e texto etiquetado: STEPBible / Tyndale House Cambridge (CC BY 4.0). Referências cruzadas: openbible.info (CC BY). Definições traduzidas automaticamente para português.",
+    "en": "Lexicon and tagged text: STEPBible / Tyndale House Cambridge (CC BY 4.0). Cross-references: openbible.info (CC BY). Definitions machine-translated into Portuguese.",
+    "es": "Léxico y texto etiquetado: STEPBible / Tyndale House Cambridge (CC BY 4.0). Referencias cruzadas: openbible.info (CC BY). Definiciones traducidas automáticamente al portugués."
+  },
+  "bibleIntroAuthorByTradition": {
+    "pt": "{author} · tradição",
+    "en": "{author} · by tradition",
+    "es": "{author} · según la tradición",
+    "placeholders": {
+      "author": "String"
+    }
+  },
+  "bibleIntroWho": {
+    "pt": "Quem",
+    "en": "Who",
+    "es": "Quién"
+  },
+  "bibleIntroWhen": {
+    "pt": "Quando",
+    "en": "When",
+    "es": "Cuándo"
+  },
+  "bibleIntroAudience": {
+    "pt": "Para quem",
+    "en": "For whom",
+    "es": "Para quién"
+  },
+  "bibleChapterLabel": {
+    "pt": "Capítulo {chapter}",
+    "en": "Chapter {chapter}",
+    "es": "Capítulo {chapter}",
+    "placeholders": {
+      "chapter": "int"
+    }
+  },
+  "bibleChapterReadSemantics": {
+    "pt": "Capítulo {chapter}, lido",
+    "en": "Chapter {chapter}, read",
+    "es": "Capítulo {chapter}, leído",
+    "placeholders": {
+      "chapter": "int"
+    }
+  },
+  "bibleShareVia": {
+    "pt": "{ref} — via Stway",
+    "en": "{ref} — via Stway",
+    "es": "{ref} — vía Stway",
+    "placeholders": {
+      "ref": "String"
+    },
+    "description": "Assinatura em textos compartilhados do versículo"
+  },
+  "bibleShareTextFooter": {
+    "pt": "Via Stway",
+    "en": "Via Stway",
+    "es": "Vía Stway"
+  },
+  "bibleShareTitle": {
+    "pt": "Compartilhar versículo",
+    "en": "Share verse",
+    "es": "Compartir versículo"
+  },
+  "bibleSharePreparing": {
+    "pt": "Preparando…",
+    "en": "Preparing…",
+    "es": "Preparando…"
+  },
+  "bibleShareImage": {
+    "pt": "Compartilhar imagem",
+    "en": "Share image",
+    "es": "Compartir imagen"
+  },
+  "bibleShareAsText": {
+    "pt": "Compartilhar como texto",
+    "en": "Share as text",
+    "es": "Compartir como texto"
+  },
+  "biblePickerTitle": {
+    "pt": "Ir para",
+    "en": "Go to",
+    "es": "Ir a"
+  },
+  "bibleNewTestament": {
+    "pt": "Novo Testamento",
+    "en": "New Testament",
+    "es": "Nuevo Testamento"
+  },
+  "bibleOldTestament": {
+    "pt": "Antigo Testamento",
+    "en": "Old Testament",
+    "es": "Antiguo Testamento"
+  },
+  "biblePickerBackToBooks": {
+    "pt": "Voltar aos livros",
+    "en": "Back to books",
+    "es": "Volver a los libros"
+  },
+  "bibleChaptersReadOf": {
+    "pt": "{read} de {total} lidos",
+    "en": "{read} of {total} read",
+    "es": "{read} de {total} leídos",
+    "placeholders": {
+      "read": "int",
+      "total": "int"
+    }
+  },
+  "bibleTapToClose": {
+    "pt": "Toque para fechar",
+    "en": "Tap to close",
+    "es": "Toca para cerrar"
+  },
+  "bibleTapToOpen": {
+    "pt": "Toque para abrir",
+    "en": "Tap to open",
+    "es": "Toca para abrir"
+  },
+  "bibleChapterCountShort": {
+    "pt": "{count, plural, =1{1 cap.} other{{count} caps.}}",
+    "en": "{count, plural, =1{1 ch.} other{{count} ch.}}",
+    "es": "{count, plural, =1{1 cap.} other{{count} caps.}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "bibleReadOf": {
+    "pt": "{read} de {total}",
+    "en": "{read} of {total}",
+    "es": "{read} de {total}",
+    "placeholders": {
+      "read": "int",
+      "total": "int"
+    }
+  },
+  "bibleBookReadSemantics": {
+    "pt": "{book}, {read} de {total} capítulos lidos",
+    "en": "{book}, {read} of {total} chapters read",
+    "es": "{book}, {read} de {total} capítulos leídos",
+    "placeholders": {
+      "book": "String",
+      "read": "int",
+      "total": "int"
+    }
+  },
+  "planSkippedChaptersToast": {
+    "pt": "{count, plural, =1{1 capítulo já lido foi pulado} other{{count} capítulos já lidos foram pulados}}",
+    "en": "{count, plural, =1{Skipped 1 chapter you already read} other{Skipped {count} chapters you already read}}",
+    "es": "{count, plural, =1{Se omitió 1 capítulo ya leído} other{Se omitieron {count} capítulos ya leídos}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "planDayDoneToast": {
+    "pt": "{count, plural, =1{Leitura do dia concluída · 1 capítulo} other{Leitura do dia concluída · {count} capítulos}}",
+    "en": "{count, plural, =1{Today's reading done · 1 chapter} other{Today's reading done · {count} chapters}}",
+    "es": "{count, plural, =1{Lectura del día completada · 1 capítulo} other{Lectura del día completada · {count} capítulos}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "planEndConfirmTitle": {
+    "pt": "Encerrar plano?",
+    "en": "End plan?",
+    "es": "¿Terminar el plan?"
+  },
+  "planEndConfirmBody": {
+    "pt": "Seu progresso no plano será zerado. Os capítulos já marcados como lidos na Bíblia permanecem.",
+    "en": "Your plan progress will be reset. Chapters already marked as read in the Bible stay marked.",
+    "es": "Tu progreso en el plan se reiniciará. Los capítulos ya marcados como leídos en la Biblia se mantienen."
+  },
+  "planEndConfirmAction": {
+    "pt": "Encerrar",
+    "en": "End",
+    "es": "Terminar"
+  },
+  "planTitle": {
+    "pt": "Plano de leitura",
+    "en": "Reading plan",
+    "es": "Plan de lectura"
+  },
+  "planAtYourPace": {
+    "pt": "No seu ritmo",
+    "en": "At your pace",
+    "es": "A tu ritmo"
+  },
+  "planSetupQuestion": {
+    "pt": "Quanto tempo você tem por dia?",
+    "en": "How much time do you have each day?",
+    "es": "¿Cuánto tiempo tienes al día?"
+  },
+  "planSetupBody": {
+    "pt": "Montamos a porção diária para caber nesse tempo — na ordem da Bíblia ou na ordem dos acontecimentos. Capítulos que você já leu são pulados.",
+    "en": "We build a daily portion that fits that time — in Bible order or in the order events happened. Chapters you've already read are skipped.",
+    "es": "Armamos la porción diaria para que quepa en ese tiempo — en el orden de la Biblia o en el orden de los acontecimientos. Los capítulos que ya leíste se omiten."
+  },
+  "planSectionOrder": {
+    "pt": "Ordem",
+    "en": "Order",
+    "es": "Orden"
+  },
+  "planSectionTime": {
+    "pt": "Tempo disponível",
+    "en": "Time available",
+    "es": "Tiempo disponible"
+  },
+  "planMinutes": {
+    "pt": "{minutes} min",
+    "en": "{minutes} min",
+    "es": "{minutes} min",
+    "placeholders": {
+      "minutes": "int"
+    }
+  },
+  "planEstimate": {
+    "pt": "Estimativa",
+    "en": "Estimate",
+    "es": "Estimación"
+  },
+  "planAlreadyRead": {
+    "pt": "Já lidos",
+    "en": "Already read",
+    "es": "Ya leídos"
+  },
+  "planChaptersSkipped": {
+    "pt": "{count, plural, =1{1 capítulo pulado} other{{count} capítulos pulados}}",
+    "en": "{count, plural, =1{1 chapter skipped} other{{count} chapters skipped}}",
+    "es": "{count, plural, =1{1 capítulo omitido} other{{count} capítulos omitidos}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "planRemaining": {
+    "pt": "Restante",
+    "en": "Remaining",
+    "es": "Restante"
+  },
+  "planApproxMinutes": {
+    "pt": "~{minutes} min",
+    "en": "~{minutes} min",
+    "es": "~{minutes} min",
+    "placeholders": {
+      "minutes": "int"
+    }
+  },
+  "planApproxMinutesDecimal": {
+    "pt": "~{minutes} min",
+    "en": "~{minutes} min",
+    "es": "~{minutes} min",
+    "placeholders": {
+      "minutes": "String"
+    }
+  },
+  "planApproxHours": {
+    "pt": "~{hours} h",
+    "en": "~{hours} h",
+    "es": "~{hours} h",
+    "placeholders": {
+      "hours": "int"
+    }
+  },
+  "planAllRead": {
+    "pt": "Tudo lido",
+    "en": "All read",
+    "es": "Todo leído"
+  },
+  "planApproxMonths": {
+    "pt": "{count, plural, =1{~1 mês} other{~{count} meses}}",
+    "en": "{count, plural, =1{~1 month} other{~{count} months}}",
+    "es": "{count, plural, =1{~1 mes} other{~{count} meses}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "planApproxDays": {
+    "pt": "{count, plural, =1{~1 dia} other{~{count} dias}}",
+    "en": "{count, plural, =1{~1 day} other{~{count} days}}",
+    "es": "{count, plural, =1{~1 día} other{~{count} días}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "planPendingChapters": {
+    "pt": "Capítulos pendentes",
+    "en": "Chapters left",
+    "es": "Capítulos pendientes"
+  },
+  "planStartCta": {
+    "pt": "Começar plano · {minutes} min/dia",
+    "en": "Start plan · {minutes} min/day",
+    "es": "Empezar plan · {minutes} min/día",
+    "placeholders": {
+      "minutes": "int"
+    }
+  },
+  "planDone": {
+    "pt": "Feito",
+    "en": "Done",
+    "es": "Hecho"
+  },
+  "planBibleFinished": {
+    "pt": "Você concluiu a Bíblia neste plano.",
+    "en": "You finished the Bible on this plan.",
+    "es": "Terminaste la Biblia con este plan."
+  },
+  "planPortionMeta": {
+    "pt": "{count, plural, =1{~{minutes} min · 1 capítulo · {order}} other{~{minutes} min · {count} capítulos · {order}}}",
+    "en": "{count, plural, =1{~{minutes} min · 1 chapter · {order}} other{~{minutes} min · {count} chapters · {order}}}",
+    "es": "{count, plural, =1{~{minutes} min · 1 capítulo · {order}} other{~{minutes} min · {count} capítulos · {order}}}",
+    "placeholders": {
+      "minutes": "int",
+      "count": "int",
+      "order": "String"
+    }
+  },
+  "planReadingDays": {
+    "pt": "{count, plural, =1{1 dia de leitura} other{{count} dias de leitura}}",
+    "en": "{count, plural, =1{1 day of reading} other{{count} days of reading}}",
+    "es": "{count, plural, =1{1 día de lectura} other{{count} días de lectura}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "planTodayChapters": {
+    "pt": "Capítulos de hoje",
+    "en": "Today's chapters",
+    "es": "Capítulos de hoy"
+  },
+  "planMarkDayRead": {
+    "pt": "Marcar leitura do dia",
+    "en": "Mark today's reading",
+    "es": "Marcar la lectura del día"
+  },
+  "planTodayDoneBody": {
+    "pt": "Porção de hoje concluída. Volte amanhã — ou continue explorando a Bíblia livremente.",
+    "en": "Today's portion is done. Come back tomorrow — or keep exploring the Bible freely.",
+    "es": "Porción de hoy completada. Vuelve mañana — o sigue explorando la Biblia libremente."
+  },
+  "planAdjustTime": {
+    "pt": "Ajustar tempo",
+    "en": "Adjust time",
+    "es": "Ajustar tiempo"
+  },
+  "planEndCta": {
+    "pt": "Encerrar plano",
+    "en": "End plan",
+    "es": "Terminar el plan"
+  },
+  "bibleTitle": {
+    "pt": "Bíblia",
+    "en": "Bible",
+    "es": "Biblia"
+  },
+  "bibleSearchTitle": {
+    "pt": "Buscar",
+    "en": "Search",
+    "es": "Buscar"
+  },
+  "bibleSearchSubtitle": {
+    "pt": "Livros e versículos",
+    "en": "Books and verses",
+    "es": "Libros y versículos"
+  },
+  "bibleTabReading": {
+    "pt": "Leitura",
+    "en": "Reading",
+    "es": "Lectura"
+  },
+  "bibleSectionBooksSemantics": {
+    "pt": "{count, plural, =1{{title}, 1 livro} other{{title}, {count} livros}}",
+    "en": "{count, plural, =1{{title}, 1 book} other{{title}, {count} books}}",
+    "es": "{count, plural, =1{{title}, 1 libro} other{{title}, {count} libros}}",
+    "placeholders": {
+      "title": "String",
+      "count": "int"
+    }
+  },
+  "bibleSearchButtonSemantics": {
+    "pt": "Buscar livro ou versículo",
+    "en": "Search book or verse",
+    "es": "Buscar libro o versículo"
+  },
+  "bibleSearchButtonHint": {
+    "pt": "Buscar livro, versículo ou palavra…",
+    "en": "Search book, verse or word…",
+    "es": "Buscar libro, versículo o palabra…"
+  },
+  "bibleHeroStartHere": {
+    "pt": "Comece por aqui",
+    "en": "Start here",
+    "es": "Empieza aquí"
+  },
+  "bibleHeroContinueReading": {
+    "pt": "Continuar leitura",
+    "en": "Continue reading",
+    "es": "Continuar lectura"
+  },
+  "bibleHeroFreshBlurb": {
+    "pt": "Jesus, a Palavra que se fez carne — um bom começo.",
+    "en": "Jesus, the Word made flesh — a good place to start.",
+    "es": "Jesús, la Palabra hecha carne — un buen comienzo."
+  },
+  "bibleHeroStartReading": {
+    "pt": "Começar a ler",
+    "en": "Start reading",
+    "es": "Empezar a leer"
+  },
+  "planCardIdle": {
+    "pt": "Canônico ou cronológico, no seu tempo",
+    "en": "Canonical or chronological, on your time",
+    "es": "Canónico o cronológico, a tu tiempo"
+  },
+  "planCardDoneToday": {
+    "pt": "Leitura de hoje feita",
+    "en": "Today's reading done",
+    "es": "Lectura de hoy hecha"
+  },
+  "planCardToday": {
+    "pt": "{minutes} min hoje · {order}",
+    "en": "{minutes} min today · {order}",
+    "es": "{minutes} min hoy · {order}",
+    "placeholders": {
+      "minutes": "int",
+      "order": "String"
+    }
+  },
+  "planCreate": {
+    "pt": "Criar um plano",
+    "en": "Create a plan",
+    "es": "Crear un plan"
+  },
+  "bibleReadChapter": {
+    "pt": "Ler o capítulo",
+    "en": "Read the chapter",
+    "es": "Leer el capítulo"
+  },
+  "bibleSavedTitle": {
+    "pt": "Guardados",
+    "en": "Saved",
+    "es": "Guardados"
+  },
+  "bibleSavedEmptyTitle": {
+    "pt": "Nenhum versículo guardado",
+    "en": "No saved verses",
+    "es": "Ningún versículo guardado"
+  },
+  "bibleSavedEmptyBody": {
+    "pt": "Na leitura, toque num versículo e escolha Guardar para voltar a ele depois.",
+    "en": "While reading, tap a verse and choose Save to come back to it later.",
+    "es": "Al leer, toca un versículo y elige Guardar para volver a él después."
+  },
+  "bibleSearchFieldHint": {
+    "pt": "Ex.: Apocalipse, amor, fé…",
+    "en": "E.g. Apocalipse, amor, fé…",
+    "es": "Ej.: Apocalipse, amor, fé…",
+    "description": "Os exemplos ficam em português: a busca é no texto bíblico em português."
+  },
+  "bibleSearchEmpty": {
+    "pt": "Nenhum resultado encontrado",
+    "en": "No results found",
+    "es": "No se encontraron resultados"
+  },
+  "bibleSearchBookHit": {
+    "pt": "Livro",
+    "en": "Book",
+    "es": "Libro"
+  },
+  "bibleReaderChapterReadToast": {
+    "pt": "{book} {chapter} lido",
+    "en": "{book} {chapter} read",
+    "es": "{book} {chapter} leído",
+    "placeholders": {
+      "book": "String",
+      "chapter": "int"
+    }
+  },
+  "bibleReaderOpenFailed": {
+    "pt": "Não foi possível abrir {reference}.",
+    "en": "Couldn't open {reference}.",
+    "es": "No se pudo abrir {reference}.",
+    "placeholders": {
+      "reference": "String"
+    }
+  },
+  "bibleReaderSubtitle": {
+    "pt": "Capítulo {chapter} · {translation}",
+    "en": "Chapter {chapter} · {translation}",
+    "es": "Capítulo {chapter} · {translation}",
+    "placeholders": {
+      "chapter": "int",
+      "translation": "String"
+    }
+  },
+  "bibleReaderSettings": {
+    "pt": "Ajustes de leitura",
+    "en": "Reading settings",
+    "es": "Ajustes de lectura"
+  },
+  "bibleVerseCount": {
+    "pt": "{count, plural, =1{1 versículo} other{{count} versículos}}",
+    "en": "{count, plural, =1{1 verse} other{{count} verses}}",
+    "es": "{count, plural, =1{1 versículo} other{{count} versículos}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "bibleReaderReadTag": {
+    "pt": "lido",
+    "en": "read",
+    "es": "leído"
+  },
+  "bibleVerseSemantics": {
+    "pt": "Versículo {number}. {text}",
+    "en": "Verse {number}. {text}",
+    "es": "Versículo {number}. {text}",
+    "placeholders": {
+      "number": "int",
+      "text": "String"
+    }
+  },
+  "bibleReaderChapterEnd": {
+    "pt": "Fim de {book} {chapter}",
+    "en": "End of {book} {chapter}",
+    "es": "Fin de {book} {chapter}",
+    "placeholders": {
+      "book": "String",
+      "chapter": "int"
+    }
+  },
+  "bibleReaderChapterDone": {
+    "pt": "Capítulo lido",
+    "en": "Chapter read",
+    "es": "Capítulo leído"
+  },
+  "bibleReaderCompleteChapter": {
+    "pt": "Concluir capítulo",
+    "en": "Finish chapter",
+    "es": "Terminar capítulo"
+  },
+  "bibleReaderUpNext": {
+    "pt": "A seguir",
+    "en": "Up next",
+    "es": "A continuación"
+  },
+  "bibleReaderPrevChapter": {
+    "pt": "Capítulo anterior",
+    "en": "Previous chapter",
+    "es": "Capítulo anterior"
+  },
+  "bibleReaderNextChapter": {
+    "pt": "Próximo capítulo",
+    "en": "Next chapter",
+    "es": "Siguiente capítulo"
+  },
+  "bibleReaderStop": {
+    "pt": "Parar",
+    "en": "Stop",
+    "es": "Detener"
+  },
+  "bibleReaderListen": {
+    "pt": "Ouvir",
+    "en": "Listen",
+    "es": "Escuchar"
+  },
+  "bibleVerseSaved": {
+    "pt": "Guardado",
+    "en": "Saved",
+    "es": "Guardado"
+  },
+  "bibleVerseSave": {
+    "pt": "Guardar",
+    "en": "Save",
+    "es": "Guardar"
+  },
+  "bibleVerseCopy": {
+    "pt": "Copiar",
+    "en": "Copy",
+    "es": "Copiar"
+  },
+  "bibleVerseCopied": {
+    "pt": "Versículo copiado",
+    "en": "Verse copied",
+    "es": "Versículo copiado"
+  },
+  "bibleVerseListenFromHere": {
+    "pt": "Ouvir daqui em diante",
+    "en": "Listen from here",
+    "es": "Escuchar desde aquí"
+  },
+  "bibleVerseListenFromHereDetail": {
+    "pt": "Leitura em voz alta, versículo a versículo",
+    "en": "Read aloud, verse by verse",
+    "es": "Lectura en voz alta, versículo a versículo"
+  },
+  "bibleVerseStudy": {
+    "pt": "Estudar este versículo",
+    "en": "Study this verse",
+    "es": "Estudiar este versículo"
+  },
+  "bibleVerseStudyDetail": {
+    "pt": "Originais, Strong, concordância e referências",
+    "en": "Original languages, Strong's, concordance and references",
+    "es": "Idiomas originales, Strong, concordancia y referencias"
+  },
+  "bibleReaderTextSize": {
+    "pt": "Tamanho do texto",
+    "en": "Text size",
+    "es": "Tamaño del texto"
+  },
+  "bibleReaderPaper": {
+    "pt": "Papel",
+    "en": "Paper",
+    "es": "Papel"
+  },
+  "bibleReaderVersion": {
+    "pt": "Versão",
+    "en": "Version",
+    "es": "Versión"
+  },
+  "bibleTranslationSoonTitle": {
+    "pt": "Tradução em breve",
+    "en": "Translation coming soon",
+    "es": "Traducción próximamente"
+  },
+  "bibleTranslationSoonBody": {
+    "pt": "Ainda não temos {name}. Em breve essa tradução entra no app. Você pode contribuir com o projeto para ajudar a trazer mais versões.",
+    "en": "We don't have {name} yet. It's coming to the app soon. You can support the project to help bring more versions.",
+    "es": "Todavía no tenemos {name}. Pronto esta traducción llegará a la app. Puedes apoyar el proyecto para ayudar a traer más versiones.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "bibleDonate": {
+    "pt": "Doar",
+    "en": "Donate",
+    "es": "Donar"
+  },
+  "biblePaperSemantics": {
+    "pt": "Papel {paper}",
+    "en": "{paper} paper",
+    "es": "Papel {paper}",
+    "placeholders": {
+      "paper": "String"
+    }
+  },
+  "bibleBookFallback": {
+    "pt": "Livro {number}",
+    "en": "Book {number}",
+    "es": "Libro {number}",
+    "placeholders": {
+      "number": "int"
+    }
+  },
+  "verseStudyVerseUnavailable": {
+    "pt": "Versículo indisponível nesta tradução.",
+    "en": "This verse isn't available in this translation.",
+    "es": "Versículo no disponible en esta traducción."
+  },
+  "verseStudyGoToText": {
+    "pt": "Ir para o texto",
+    "en": "Go to text",
+    "es": "Ir al texto"
+  },
+  "verseStudyEyebrow": {
+    "pt": "Estudar",
+    "en": "Study",
+    "es": "Estudiar"
+  },
+  "verseStudyNeedsRestart": {
+    "pt": "Feche e abra o app de novo para carregar o estudo.",
+    "en": "Close and reopen the app to load the study.",
+    "es": "Cierra y vuelve a abrir la app para cargar el estudio."
+  },
+  "verseStudyLoadFailed": {
+    "pt": "Não foi possível carregar o estudo.",
+    "en": "Couldn't load the study.",
+    "es": "No se pudo cargar el estudio."
+  },
+  "verseStudyNoData": {
+    "pt": "Sem dados de originais para este versículo.",
+    "en": "No original-language data for this verse.",
+    "es": "Sin datos de los originales para este versículo."
+  },
+  "verseStudyCrossRefs": {
+    "pt": "Referências cruzadas",
+    "en": "Cross-references",
+    "es": "Referencias cruzadas"
+  },
+  "verseStudyNoCrossRefs": {
+    "pt": "Sem conexões catalogadas para este versículo.",
+    "en": "No catalogued connections for this verse.",
+    "es": "Sin conexiones catalogadas para este versículo."
+  },
+  "verseStudyLoading": {
+    "pt": "Abrindo o léxico…",
+    "en": "Opening the lexicon…",
+    "es": "Abriendo el léxico…"
+  },
+  "verseStudyTabWord": {
+    "pt": "Palavra",
+    "en": "Word",
+    "es": "Palabra"
+  },
+  "verseStudyTabUses": {
+    "pt": "Usos",
+    "en": "Uses",
+    "es": "Usos"
+  },
+  "verseStudyTabUsesCount": {
+    "pt": "Usos · {count}",
+    "en": "Uses · {count}",
+    "es": "Usos · {count}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "verseStudyTabLinks": {
+    "pt": "Conexões",
+    "en": "Links",
+    "es": "Conexiones"
+  },
+  "verseStudyTabLinksCount": {
+    "pt": "Conexões · {count}",
+    "en": "Links · {count}",
+    "es": "Conexiones · {count}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "verseStudyEmptyTitle": {
+    "pt": "Toque numa palavra original",
+    "en": "Tap an original word",
+    "es": "Toca una palabra original"
+  },
+  "verseStudyEmptyBody": {
+    "pt": "O léxico Strong, a gramática e cada vez que ela aparece nas Escrituras abrem aqui.",
+    "en": "The Strong's lexicon, the grammar and every place it appears in the Scriptures open here.",
+    "es": "El léxico Strong, la gramática y cada vez que aparece en las Escrituras se abren aquí."
+  },
+  "verseStudyCopied": {
+    "pt": "Copiado",
+    "en": "Copied",
+    "es": "Copiado"
+  },
+  "verseStudyInThisVerse": {
+    "pt": "Neste versículo",
+    "en": "In this verse",
+    "es": "En este versículo"
+  },
+  "verseStudyNotLiteral": {
+    "pt": "A Tradução Brasileira não traz esta forma à letra neste versículo.",
+    "en": "The Tradução Brasileira doesn't render this form literally in this verse.",
+    "es": "La Tradução Brasileira no traduce esta forma al pie de la letra en este versículo."
+  },
+  "verseStudyDefinition": {
+    "pt": "Definição",
+    "en": "Definition",
+    "es": "Definición"
+  },
+  "verseStudyParticleNote": {
+    "pt": "Partícula gramatical · {count} formas no cânon. O sentido está no nome ou no verbo que ela acompanha.",
+    "en": "Grammatical particle · {count} forms in the canon. The meaning lies in the noun or verb it goes with.",
+    "es": "Partícula gramatical · {count} formas en el canon. El sentido está en el nombre o el verbo que acompaña.",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "verseStudyOnlyHere": {
+    "pt": "Só neste versículo no índice.",
+    "en": "Only in this verse in the index.",
+    "es": "Solo en este versículo en el índice."
+  },
+  "verseStudySpan": {
+    "pt": "{count} lugares · de {first} a {last}",
+    "en": "{count} places · from {first} to {last}",
+    "es": "{count} lugares · de {first} a {last}",
+    "placeholders": {
+      "count": "int",
+      "first": "String",
+      "last": "String"
+    }
+  },
+  "verseStudyFirst": {
+    "pt": "primeira",
+    "en": "first",
+    "es": "primera"
+  },
+  "verseStudyLast": {
+    "pt": "última",
+    "en": "last",
+    "es": "última"
+  },
+  "verseStudyOccurrencesIn": {
+    "pt": "Ocorrências em {book}",
+    "en": "Occurrences in {book}",
+    "es": "Apariciones en {book}",
+    "placeholders": {
+      "book": "String"
+    }
+  },
+  "verseStudyParticleNearby": {
+    "pt": "Esta partícula aparece milhares de vezes. Abaixo, as formas perto deste versículo.",
+    "en": "This particle appears thousands of times. Below are the forms near this verse.",
+    "es": "Esta partícula aparece miles de veces. Abajo, las formas cerca de este versículo."
+  },
+  "verseStudyInThisBook": {
+    "pt": "Neste livro — as aparições perto deste versículo.",
+    "en": "In this book — the appearances near this verse.",
+    "es": "En este libro — las apariciones cerca de este versículo."
+  },
+  "verseStudyNoOtherHits": {
+    "pt": "Sem outras ocorrências neste recorte.",
+    "en": "No other occurrences in this range.",
+    "es": "Sin otras apariciones en este rango."
+  },
+  "verseStudyOtherBooks": {
+    "pt": "Em outros livros",
+    "en": "In other books",
+    "es": "En otros libros"
+  },
+  "verseStudyOtherBooksBody": {
+    "pt": "A primeira aparição em cada livro onde a palavra é mais frequente.",
+    "en": "The first appearance in each book where the word is most frequent.",
+    "es": "La primera aparición en cada libro donde la palabra es más frecuente."
+  },
+  "verseStudyThisForm": {
+    "pt": "Nesta forma",
+    "en": "This form",
+    "es": "En esta forma"
+  },
+  "verseStudyLemma": {
+    "pt": "Lema",
+    "en": "Lemma",
+    "es": "Lema"
+  }
+}

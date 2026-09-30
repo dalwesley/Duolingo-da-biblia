@@ -5,6 +5,7 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../cinematic/cinematic_resolver.dart';
+import '../l10n/app_language.dart';
 import '../services/analytics_service.dart';
 import '../services/backend_service.dart';
 import '../services/league_service.dart';
@@ -47,37 +48,35 @@ enum _Beat { origin, habit, intent, sky, rhythm, threshold }
 
 /// O que a pessoa busca — molda o título do último ato.
 enum _Intent {
-  know(
-    'Conhecer a Deus',
-    'de perto',
-    CinematicGlyph.heart,
-    'conhecer a Deus\ncomeça com um passo.',
-  ),
-  habit(
-    'Criar constância',
-    'todo dia',
-    CinematicGlyph.flame,
-    'a constância\ncomeça hoje.',
-  ),
-  understand(
-    'Entender a Bíblia',
-    'de verdade',
-    CinematicGlyph.book,
-    'entender a Bíblia\ncomeça pelo começo.',
-  ),
-  peace(
-    'Paz no dia',
-    'um respiro',
-    CinematicGlyph.dove,
-    'a paz do dia\ncomeça aqui.',
-  );
+  know(CinematicGlyph.heart),
+  habit(CinematicGlyph.flame),
+  understand(CinematicGlyph.book),
+  peace(CinematicGlyph.dove);
 
-  final String title;
-  final String caption;
   final CinematicGlyph glyph;
-  final String promise;
 
-  const _Intent(this.title, this.caption, this.glyph, this.promise);
+  const _Intent(this.glyph);
+
+  String title(AppLocalizations l10n) => switch (this) {
+    _Intent.know => l10n.onboardingIntentKnowTitle,
+    _Intent.habit => l10n.onboardingIntentHabitTitle,
+    _Intent.understand => l10n.onboardingIntentUnderstandTitle,
+    _Intent.peace => l10n.onboardingIntentPeaceTitle,
+  };
+
+  String caption(AppLocalizations l10n) => switch (this) {
+    _Intent.know => l10n.onboardingIntentKnowCaption,
+    _Intent.habit => l10n.onboardingIntentHabitCaption,
+    _Intent.understand => l10n.onboardingIntentUnderstandCaption,
+    _Intent.peace => l10n.onboardingIntentPeaceCaption,
+  };
+
+  String promise(AppLocalizations l10n) => switch (this) {
+    _Intent.know => l10n.onboardingIntentKnowPromise,
+    _Intent.habit => l10n.onboardingIntentHabitPromise,
+    _Intent.understand => l10n.onboardingIntentUnderstandPromise,
+    _Intent.peace => l10n.onboardingIntentPeacePromise,
+  };
 }
 
 class _OnboardingScreenState extends State<OnboardingScreen>
@@ -413,13 +412,10 @@ class _OnboardingScreenState extends State<OnboardingScreen>
     }
   }
 
-  String get _ctaLabel => switch (_beat) {
-    _Beat.origin => 'Começar',
-    _Beat.habit => 'Continuar',
-    _Beat.intent => 'Continuar',
-    _Beat.sky => 'Este é o meu céu',
-    _Beat.rhythm => 'Segure para firmar',
-    _Beat.threshold => 'Entrar na trilha',
+  String _ctaLabel(AppLocalizations l10n) => switch (_beat) {
+    _Beat.origin || _Beat.threshold => l10n.commonStart,
+    _Beat.rhythm => l10n.onboardingHoldToCommit,
+    _Beat.habit || _Beat.intent || _Beat.sky => l10n.commonContinue,
   };
 
   bool get _showSkip => _beat != _Beat.threshold && !_finishing;
@@ -434,6 +430,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
   Widget build(BuildContext context) {
     final mode = _chromeMode;
     final appearance = AppearanceStyle.resolve(mode);
+    final l10n = context.l10n;
 
     return ImmersiveScaffold(
       mode: mode,
@@ -470,6 +467,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                               curve: Curves.easeOutCubic,
                             ))
                       .transform(_scene.value);
+              final ctaLabel = _ctaLabel(l10n);
 
               return SafeArea(
                 child: Column(
@@ -503,7 +501,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                                       vertical: 8,
                                     ),
                                     child: Text(
-                                      'Pular',
+                                      l10n.commonSkip,
                                       style: AppTypography.body(
                                         size: 13,
                                         weight: FontWeight.w700,
@@ -534,12 +532,14 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                             offset: Offset(0, 18 * (1 - cta)),
                             child: _beat == _Beat.rhythm && !_finishing
                                 ? _HoldCta(
-                                    label: _ctaLabel,
-                                    holdingLabel: 'Firmando…',
+                                    label: ctaLabel,
+                                    holdingLabel: l10n.onboardingHolding,
                                     onDone: _goNext,
                                   )
                                 : _SiteCta(
-                                    label: _finishing ? 'Abrindo…' : _ctaLabel,
+                                    label: _finishing
+                                        ? l10n.onboardingOpening
+                                        : ctaLabel,
                                     busy: _finishing,
                                     onTap: _finishing ? null : _goNext,
                                   ),
@@ -1027,15 +1027,28 @@ class _HabitBeat extends StatelessWidget {
     required this.onGoal,
   });
 
-  static const _paces = [
-    _Choice(1, 'Leve', '1 cena por dia · ~3 min'),
-    _Choice(2, 'Firme', '2 cenas por dia · ~6 min'),
-    _Choice(3, 'Intenso', '3 cenas por dia · ~9 min'),
+  static List<_Choice<int>> _paces(AppLocalizations l10n) => [
+    _Choice(
+      1,
+      l10n.settingsPaceLight,
+      l10n.onboardingPaceCaption(1, 3),
+    ),
+    _Choice(
+      2,
+      l10n.settingsPaceSteady,
+      l10n.onboardingPaceCaption(2, 6),
+    ),
+    _Choice(
+      3,
+      l10n.settingsPaceIntense,
+      l10n.onboardingPaceCaption(3, 9),
+    ),
   ];
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final l10n = context.l10n;
     final short = MediaQuery.sizeOf(context).height < 740;
     final number = short ? 84.0 : 104.0;
 
@@ -1043,7 +1056,7 @@ class _HabitBeat extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          _Kicker(text: 'II   ·   Um passo', scene: scene),
+          _Kicker(text: l10n.onboardingKickerGoal, scene: scene),
           SizedBox(height: short ? 18 : 28),
           _Reveal(
             scene: scene,
@@ -1105,7 +1118,11 @@ class _HabitBeat extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 6),
-                SectionLabel('Minutos', color: a.textSecondary, size: 13),
+                SectionLabel(
+                  l10n.onboardingMinutes,
+                  color: a.textSecondary,
+                  size: 13,
+                ),
               ],
             ),
           ),
@@ -1115,7 +1132,7 @@ class _HabitBeat extends StatelessWidget {
             from: 0.38,
             to: 0.66,
             child: Text(
-              'Todo dia.',
+              l10n.onboardingEveryDay,
               textAlign: TextAlign.center,
               style: AppTypography.display(
                 size: short ? 32 : 40,
@@ -1130,7 +1147,7 @@ class _HabitBeat extends StatelessWidget {
             from: 0.5,
             to: 0.78,
             child: Text(
-              'Conhecer a Deus não pede uma maratona.\nPede que você volte, todo dia.',
+              l10n.onboardingHabitBody,
               textAlign: TextAlign.center,
               style: AppTypography.body(
                 size: 14,
@@ -1146,8 +1163,8 @@ class _HabitBeat extends StatelessWidget {
             from: 0.64,
             to: 0.9,
             child: _ChoiceRow<int>(
-              label: 'Seu ritmo',
-              options: _paces,
+              label: l10n.onboardingYourPace,
+              options: _paces(l10n),
               selected: goal,
               onChanged: onGoal,
             ),
@@ -1183,22 +1200,23 @@ class _TomorrowBeat extends StatelessWidget {
     required this.onStreak,
   });
 
-  static String _moment(int h) => switch (h) {
-    < 11 => 'Um lembrete de manhã',
-    < 17 => 'Um lembrete ao meio-dia',
-    _ => 'Um lembrete à noite',
+  static String _moment(AppLocalizations l10n, int h) => switch (h) {
+    < 11 => l10n.onboardingReminderMorning,
+    < 17 => l10n.onboardingReminderNoon,
+    _ => l10n.onboardingReminderNight,
   };
 
-  static String _span(int days) => switch (days) {
-    7 => 'Uma semana de sequência',
-    14 => 'Duas semanas de sequência',
-    30 => 'Um mês inteiro',
-    _ => '$days dias de sequência',
+  static String _span(AppLocalizations l10n, int days) => switch (days) {
+    7 => l10n.onboardingStreakWeek,
+    14 => l10n.onboardingStreakTwoWeeks,
+    30 => l10n.onboardingStreakMonth,
+    _ => l10n.onboardingStreakDays(days),
   };
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final l10n = context.l10n;
     final short = MediaQuery.sizeOf(context).height < 740;
     final word = short ? 44.0 : 54.0;
 
@@ -1206,7 +1224,7 @@ class _TomorrowBeat extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          _Kicker(text: 'V   ·   Amanhã', scene: scene),
+          _Kicker(text: l10n.onboardingKickerTomorrow, scene: scene),
           SizedBox(height: short ? 18 : 28),
           _Reveal(
             scene: scene,
@@ -1240,7 +1258,7 @@ class _TomorrowBeat extends StatelessWidget {
                     },
                   ),
                   Text(
-                    'Amanhã',
+                    l10n.onboardingTomorrowWord,
                     textAlign: TextAlign.center,
                     style: AppTypography.display(
                       size: word,
@@ -1259,7 +1277,7 @@ class _TomorrowBeat extends StatelessWidget {
             from: 0.36,
             to: 0.64,
             child: Text(
-              'O hábito nasce quando você volta.\nFirme com você mesmo um começo.',
+              l10n.onboardingTomorrowBody,
               textAlign: TextAlign.center,
               style: AppTypography.body(
                 size: 14,
@@ -1286,18 +1304,20 @@ class _TomorrowBeat extends StatelessWidget {
             child: Column(
               children: [
                 _ChoiceRow<int>(
-                  label: 'Meu compromisso',
+                  label: l10n.onboardingCommitmentLabel,
                   options: [
-                    for (final d in streaks) _Choice(d, '$d dias', _span(d)),
+                    for (final d in streaks)
+                      _Choice(d, l10n.settingsDays(d), _span(l10n, d)),
                   ],
                   selected: streak,
                   onChanged: onStreak,
                 ),
                 SizedBox(height: short ? 14 : 18),
                 _ChoiceRow<int>(
-                  label: 'Te lembramos às',
+                  label: l10n.onboardingRemindAtLabel,
                   options: [
-                    for (final h in hours) _Choice(h, '${h}h', _moment(h)),
+                    for (final h in hours)
+                      _Choice(h, l10n.reminderHour(h), _moment(l10n, h)),
                   ],
                   selected: hour,
                   onChanged: onHour,
@@ -1435,12 +1455,21 @@ class _SkyBeat extends StatelessWidget {
 
   const _SkyBeat({required this.scene, required this.sky, required this.onSky});
 
-  static String _caption(AppearanceMode mode) => switch (mode) {
-    AppearanceMode.morning => 'céu claro',
-    AppearanceMode.afternoon => 'luz baixa',
-    AppearanceMode.night => 'céu escuro',
-    AppearanceMode.automatic => 'segue o horário',
-  };
+  static String _title(AppLocalizations l10n, AppearanceMode mode) =>
+      switch (mode) {
+        AppearanceMode.morning => l10n.settingsThemeLight,
+        AppearanceMode.afternoon => l10n.settingsThemeMedium,
+        AppearanceMode.night => l10n.settingsThemeDark,
+        AppearanceMode.automatic => l10n.settingsThemeAuto,
+      };
+
+  static String _caption(AppLocalizations l10n, AppearanceMode mode) =>
+      switch (mode) {
+        AppearanceMode.morning => l10n.settingsThemeCaptionLight,
+        AppearanceMode.afternoon => l10n.settingsThemeCaptionMedium,
+        AppearanceMode.night => l10n.settingsThemeCaptionDark,
+        AppearanceMode.automatic => l10n.settingsThemeCaptionAuto,
+      };
 
   static DayPhase _phase(AppearanceMode mode) =>
       AppearanceStyle.resolve(mode).phase;
@@ -1448,20 +1477,21 @@ class _SkyBeat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final l10n = context.l10n;
     final short = MediaQuery.sizeOf(context).height < 740;
 
     return _Stage(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          _Kicker(text: 'IV   ·   Seu céu', scene: scene),
+          _Kicker(text: l10n.onboardingKickerAppearance, scene: scene),
           SizedBox(height: short ? 16 : 24),
           _Reveal(
             scene: scene,
             from: 0.14,
             to: 0.44,
             child: Text(
-              'Escolha seu céu.',
+              l10n.onboardingAppearanceTitle,
               textAlign: TextAlign.center,
               style: AppTypography.display(
                 size: short ? 32 : 40,
@@ -1476,7 +1506,7 @@ class _SkyBeat extends StatelessWidget {
             from: 0.3,
             to: 0.58,
             child: Text(
-              'Ele te acompanha no app inteiro.\nDá para trocar depois nos ajustes.',
+              l10n.onboardingAppearanceBody,
               textAlign: TextAlign.center,
               style: AppTypography.body(
                 size: 14,
@@ -1497,9 +1527,11 @@ class _SkyBeat extends StatelessWidget {
                 for (final mode in AppearanceMode.values)
                   _OptionCard(
                     glyph: mode.glyph,
-                    title: mode.label,
-                    caption: _caption(mode),
-                    semantics: 'Céu ${mode.label}',
+                    title: _title(l10n, mode),
+                    caption: _caption(l10n, mode),
+                    semantics: l10n.onboardingAppearanceSemantics(
+                      _title(l10n, mode),
+                    ),
                     // Amostra do céu que o app vai usar.
                     gradient: DayPhaseHelper.backgroundGradient(_phase(mode)),
                     on: mode == sky,
@@ -1548,20 +1580,21 @@ class _IntentBeat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final l10n = context.l10n;
     final short = MediaQuery.sizeOf(context).height < 740;
 
     return _Stage(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          _Kicker(text: 'III   ·   Seu motivo', scene: scene),
+          _Kicker(text: l10n.onboardingKickerIntent, scene: scene),
           SizedBox(height: short ? 16 : 24),
           _Reveal(
             scene: scene,
             from: 0.14,
             to: 0.44,
             child: Text(
-              'O que te traz aqui?',
+              l10n.onboardingIntentQuestion,
               textAlign: TextAlign.center,
               style: AppTypography.display(
                 size: short ? 28 : 32,
@@ -1576,7 +1609,7 @@ class _IntentBeat extends StatelessWidget {
             from: 0.3,
             to: 0.58,
             child: Text(
-              'Cada cena: leia, responda, entenda.\nSeu motivo abre o caminho.',
+              l10n.onboardingIntentBody,
               textAlign: TextAlign.center,
               style: AppTypography.body(
                 size: 14,
@@ -1597,9 +1630,9 @@ class _IntentBeat extends StatelessWidget {
                 for (final i in _Intent.values)
                   _OptionCard(
                     glyph: i.glyph,
-                    title: i.title,
-                    caption: i.caption,
-                    semantics: i.title,
+                    title: i.title(l10n),
+                    caption: i.caption(l10n),
+                    semantics: i.title(l10n),
                     on: i == intent,
                     onTap: () => onIntent(i),
                   ),
@@ -1962,7 +1995,10 @@ class _StreakPath extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 8),
-        SectionLabel('Hoje  ·  dia 1 de $goal', color: AppColors.accent),
+        SectionLabel(
+          context.l10n.onboardingDayOneOf(goal),
+          color: AppColors.accent,
+        ),
       ],
     );
   }
@@ -2116,9 +2152,10 @@ class _NameLine extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final l10n = context.l10n;
     return Column(
       children: [
-        SectionLabel('Como te chamamos', color: a.textFaint),
+        SectionLabel(l10n.onboardingNamePrompt, color: a.textFaint),
         const SizedBox(height: 4),
         TextField(
           controller: controller,
@@ -2131,7 +2168,7 @@ class _NameLine extends StatelessWidget {
           ),
           cursorColor: AppColors.accent,
           decoration: InputDecoration(
-            hintText: 'seu nome',
+            hintText: l10n.onboardingNameHint,
             hintStyle: AppTypography.display(
               size: 20,
               weight: FontWeight.w700,
@@ -2174,10 +2211,12 @@ class _ThresholdBeat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final short = MediaQuery.sizeOf(context).height < 740;
+    final l10n = context.l10n;
     final greeting = ProgressService.isPlaceholderUserName(name)
         ? null
         : name.split(' ').first;
-    final promise = intent?.promise ?? 'o primeiro passo\njá está no caminho.';
+    final promise =
+        intent?.promise(l10n) ?? l10n.onboardingDefaultPromise;
     final title = greeting == null
         ? '${promise[0].toUpperCase()}${promise.substring(1)}'
         : '$greeting,\n$promise';
@@ -2191,7 +2230,7 @@ class _ThresholdBeat extends StatelessWidget {
       ),
       child: Column(
         children: [
-          _Kicker(text: 'VI   ·   A caminhada', scene: scene),
+          _Kicker(text: l10n.onboardingKickerJourney, scene: scene),
           const SizedBox(height: 12),
           _Reveal(
             scene: scene,
@@ -2237,15 +2276,16 @@ class _FirstMissionHero extends StatelessWidget {
   const _FirstMissionHero({required this.breath});
 
   static const _slug = 'genesis-1-11';
-  static const _title = 'Quem criou o mundo?';
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final l10n = context.l10n;
+    final title = l10n.onboardingFirstSceneTitle;
     final visuals = TrailVisuals.forSlug(_slug);
     final world = CinematicResolver.ambientForHome(
       trailSlug: _slug,
-      missionTitle: _title,
+      missionTitle: title,
     );
     final style = HeroCardMoodStyle.of(
       HeroCardMood.alive,
@@ -2313,20 +2353,20 @@ class _FirstMissionHero extends StatelessWidget {
                       _HeroChip(
                         glyph: visuals.glyph,
                         accent: visuals.accent,
-                        label: 'Gênesis 1–11',
+                        label: l10n.settingsGenesisTitle,
                       ),
-                      const _HeroChip(
+                      _HeroChip(
                         glyph: CinematicGlyph.lamp,
                         accent: AppColors.accent,
-                        label: '5 lâmpadas',
+                        label: l10n.onboardingFiveLamps,
                       ),
                     ],
                   ),
                   const Spacer(),
-                  SectionLabel('Cena pronta', color: style.label),
+                  SectionLabel(l10n.homeHeroReady, color: style.label),
                   const SizedBox(height: 10),
                   Text(
-                    _title,
+                    title,
                     style: AppTypography.display(
                       size: 28,
                       height: 1.08,
@@ -2335,7 +2375,7 @@ class _FirstMissionHero extends StatelessWidget {
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    'Leia · responda · entenda  ·  ~3 min',
+                    l10n.onboardingFirstSceneMeta,
                     style: AppTypography.body(
                       size: 14,
                       weight: FontWeight.w600,

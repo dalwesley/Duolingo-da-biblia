@@ -3,8 +3,10 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
+import '../l10n/app_language.dart';
 import '../models/corner_challenge.dart';
 import '../models/pilgrim_medal_models.dart';
 import '../models/study_room.dart';
@@ -196,8 +198,7 @@ class _LeagueScreenState extends State<LeagueScreen>
         setState(() {
           _playersLoading = false;
           _playersError =
-              backend.lastError ??
-              'Entre com Google para ver a caravana ao vivo.';
+              backend.lastError ?? context.l10n.juntosCaravanSignInLive;
         });
         return;
       }
@@ -266,16 +267,14 @@ class _LeagueScreenState extends State<LeagueScreen>
       if (!mounted) return;
       setState(() {
         _playersLoading = false;
-        _playersError =
-            'A caravana demorou para responder. Puxe para atualizar.';
+        _playersError = context.l10n.juntosCaravanTimeout;
       });
     } catch (e) {
       debugPrint('Falha ao carregar caravana: $e');
       if (!mounted) return;
       setState(() {
         _playersLoading = false;
-        _playersError =
-            'Não foi possível carregar a caravana. Puxe para atualizar.';
+        _playersError = context.l10n.juntosCaravanLoadError;
       });
     }
   }
@@ -294,12 +293,12 @@ class _LeagueScreenState extends State<LeagueScreen>
           .timeout(const Duration(seconds: 10));
       if (!mounted) return;
       if (result.weekTogetherBonusGranted) {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text(
-              'A companhia ganhou +${WalkCompanion.weekTogetherBonusSteps} passos na jornada',
-            ),
+        showAppToastFor(
+          context,
+          message: context.l10n.juntosWeekTogetherBonus(
+            WalkCompanion.weekTogetherBonusSteps,
           ),
+          glyph: CinematicGlyph.people,
         );
       }
     } catch (e) {
@@ -531,14 +530,14 @@ class _LeagueScreenState extends State<LeagueScreen>
     children.addAll([
       const SizedBox(height: AppSpace.md),
       CopperCta(
-        label: 'Chamar para a caravana',
+        label: context.l10n.juntosCaravanInviteCta,
         leading: CinematicGlyph.share,
         trailing: null,
         onTap: () => _shareCaravanInvite(context),
       ),
       const SizedBox(height: AppSpace.sm),
       GhostCta(
-        label: 'Ou chamar um companheiro',
+        label: context.l10n.juntosOrInviteCompanion,
         leading: CinematicGlyph.link,
         expanded: true,
         onTap: () => setState(() {
@@ -660,7 +659,7 @@ class _LeagueScreenState extends State<LeagueScreen>
               if (!context.mounted) return;
               showAppToastFor(
                 context,
-                message: 'Código copiado',
+                message: context.l10n.juntosCodeCopied,
                 glyph: CinematicGlyph.copy,
               );
             },
@@ -698,7 +697,7 @@ class _LeagueScreenState extends State<LeagueScreen>
               child: SizedBox(
                 height: _pairedCtaHeight,
                 child: CopperCta(
-                  label: 'Convidar',
+                  label: context.l10n.juntosInviteShort,
                   leading: CinematicGlyph.people,
                   trailing: null,
                   dense: true,
@@ -711,7 +710,7 @@ class _LeagueScreenState extends State<LeagueScreen>
             const SizedBox(width: AppSpace.sm),
             Expanded(
               child: GhostCta(
-                label: 'Aceitar',
+                label: context.l10n.juntosHaveCode,
                 leading: CinematicGlyph.qr,
                 onTap: companions.loading
                     ? null
@@ -729,7 +728,7 @@ class _LeagueScreenState extends State<LeagueScreen>
       list.add(
         Center(
           child: TextCta(
-            label: 'Encerrar todas as companhias',
+            label: context.l10n.juntosLeaveAllCompanionsCta,
             danger: true,
             onTap: companions.loading
                 ? null
@@ -771,13 +770,13 @@ class _LeagueScreenState extends State<LeagueScreen>
 
   Future<void> _shareCaravanInvite(BuildContext context) async {
     final name = context.read<ProgressService>().userName.trim();
-    final who = name.isEmpty ? 'Alguém' : name;
+    final l10n = context.l10n;
+    final who = name.isEmpty ? l10n.juntosSomeone : name;
     final store = AppUpdateService.androidStoreUrl;
     await SharePlus.instance.share(
       ShareParams(
-        text:
-            '$who te chama pra caravana no Stway — aprenda a Bíblia em cenas curtas e caminhe junto no ranking.\n\nBaixe: $store',
-        subject: 'Venha pra caravana no Stway',
+        text: l10n.juntosCaravanShareText(who, store),
+        subject: l10n.juntosCaravanShareSubject,
       ),
     );
   }
@@ -790,7 +789,7 @@ class _LeagueScreenState extends State<LeagueScreen>
     if (created == null) {
       showAppToastFor(
         context,
-        message: service.lastError ?? 'Falha ao criar',
+        message: service.lastError ?? context.l10n.juntosCreateInviteError,
         glyph: CinematicGlyph.wrong,
         tone: AppToastTone.warn,
       );
@@ -831,7 +830,7 @@ class _LeagueScreenState extends State<LeagueScreen>
     if (!joinedOk) {
       showAppToastFor(
         context,
-        message: service.lastError ?? 'Não foi possível entrar',
+        message: service.lastError ?? context.l10n.juntosJoinError,
         glyph: CinematicGlyph.wrong,
         tone: AppToastTone.warn,
       );
@@ -851,12 +850,10 @@ class _LeagueScreenState extends State<LeagueScreen>
     return showAppConfirm(
       context,
       danger: true,
-      title: 'Encerrar todas as companhias?',
-      body: count == 1
-          ? 'A companhia termina. Você fica sem companheiro.'
-          : 'As $count companhias terminam. Você fica sem companheiro.',
-      cancelLabel: 'Cancelar',
-      confirmLabel: 'Encerrar todas',
+      title: context.l10n.juntosLeaveAllCompanionsTitle,
+      body: context.l10n.juntosLeaveAllCompanionsBody(count),
+      cancelLabel: context.l10n.commonCancel,
+      confirmLabel: context.l10n.juntosLeaveAllConfirm,
     );
   }
 
@@ -864,10 +861,10 @@ class _LeagueScreenState extends State<LeagueScreen>
     return showAppConfirm(
       context,
       danger: true,
-      title: 'Sair da companhia?',
-      body: 'A companhia com esta pessoa termina. A caravana continua.',
-      cancelLabel: 'Cancelar',
-      confirmLabel: 'Sair',
+      title: context.l10n.juntosLeaveCompanionTitle,
+      body: context.l10n.juntosLeaveCompanionBody,
+      cancelLabel: context.l10n.commonCancel,
+      confirmLabel: context.l10n.juntosLeaveConfirm,
     );
   }
 
@@ -924,16 +921,15 @@ class _LeagueScreenState extends State<LeagueScreen>
       context,
       code: room.code,
       title: room.name,
-      subtitle: 'Aponte a câmera ou digite o código para entrar',
+      subtitle: context.l10n.juntosRoomQrSubtitle,
       companionMode: false,
       inviterName: progress.userName,
-      shareMessage:
-          'Entra no grupo "${room.name}" no Stway.\n'
-          'Toque ou aponte a câmera:\n'
-          '${InviteDeepLinkService.roomHttpsUrl(room.code)}\n\n'
-          'Código: ${room.code}\n\n'
-          'A lista mostra quem estudou nesta semana.\n\n'
-          'Ainda não tem o app? Baixe: ${AppUpdateService.androidStoreUrl}',
+      shareMessage: context.l10n.juntosRoomShareText(
+        room.name,
+        InviteDeepLinkService.roomHttpsUrl(room.code),
+        room.code,
+        AppUpdateService.androidStoreUrl,
+      ),
     );
     void callPeople() => showRoomCallSheet(
       context,
@@ -1016,9 +1012,9 @@ class _LeagueScreenState extends State<LeagueScreen>
     final raw = await showAppDialog<String>(
       context,
       builder: (ctx) => _TextInputDialog(
-        title: 'Meta de passos do grupo',
-        hint: 'Soma da semana. Em branco, tira a meta.',
-        confirmLabel: 'Salvar',
+        title: context.l10n.juntosRoomGoalTitle,
+        hint: context.l10n.juntosRoomGoalHint,
+        confirmLabel: context.l10n.commonSave,
         maxLength: 6,
         initialValue: current != null ? '$current' : '',
       ),
@@ -1086,10 +1082,10 @@ class _LeagueScreenState extends State<LeagueScreen>
     if (rooms.hasRoom && rooms.activeCode != invite.roomCode) {
       final go = await showAppConfirm(
         context,
-        title: 'Entrar em ${invite.roomName}?',
-        body: 'Você sai do grupo em que está agora.',
-        cancelLabel: 'Agora não',
-        confirmLabel: 'Entrar',
+        title: context.l10n.juntosSwitchRoomTitle(invite.roomName),
+        body: context.l10n.juntosSwitchRoomBody,
+        cancelLabel: context.l10n.commonNotNow,
+        confirmLabel: context.l10n.juntosAccept,
       );
       if (!go || !context.mounted) return;
     }
@@ -1103,8 +1099,10 @@ class _LeagueScreenState extends State<LeagueScreen>
       showAppToastFor(
         context,
         message: ok
-            ? 'Você entrou em ${rooms.activeRoom?.name ?? invite.roomName}.'
-            : rooms.lastError ?? 'Não foi possível entrar no grupo.',
+            ? context.l10n.juntosRoomJoined(
+                rooms.activeRoom?.name ?? invite.roomName,
+              )
+            : rooms.lastError ?? context.l10n.juntosRoomJoinError,
         glyph: ok ? CinematicGlyph.people : CinematicGlyph.wrong,
         tone: ok ? AppToastTone.accent : AppToastTone.warn,
       );
@@ -1121,7 +1119,7 @@ class _LeagueScreenState extends State<LeagueScreen>
     if (!context.mounted || ok) return;
     showAppToastFor(
       context,
-      message: 'Não foi possível recusar o convite.',
+      message: context.l10n.juntosDeclineInviteError,
       glyph: CinematicGlyph.wrong,
       tone: AppToastTone.warn,
     );
@@ -1138,7 +1136,7 @@ class _LeagueScreenState extends State<LeagueScreen>
     if (!ok) {
       showAppToastFor(
         context,
-        message: 'Não foi possível cancelar o convite.',
+        message: context.l10n.juntosCancelInviteError,
         glyph: CinematicGlyph.wrong,
         tone: AppToastTone.warn,
       );
@@ -1158,8 +1156,9 @@ class _LeagueScreenState extends State<LeagueScreen>
     if (ok) {
       showAppToastFor(
         context,
-        message:
-            'Grupo criado. Chame alguém da lista, ou mande o código ${context.read<RoomService>().activeCode}.',
+        message: context.l10n.juntosRoomCreated(
+          context.read<RoomService>().activeCode ?? '',
+        ),
         glyph: CinematicGlyph.people,
       );
     }
@@ -1175,8 +1174,8 @@ class _LeagueScreenState extends State<LeagueScreen>
     showAppToastFor(
       context,
       message: ok
-          ? 'Baú do grupo · +$bonus passos'
-          : 'Baú já coletado nesta semana',
+          ? context.l10n.juntosRoomChestClaimed(bonus)
+          : context.l10n.juntosRoomChestAlready,
       glyph: ok ? CinematicGlyph.gift : CinematicGlyph.wrong,
       tone: ok ? AppToastTone.accent : AppToastTone.warn,
     );
@@ -1191,7 +1190,8 @@ class _LeagueScreenState extends State<LeagueScreen>
       member: m,
       status: seatLabel(m),
       isLeader: m.uid == rooms.activeRoom?.ownerId,
-      leaderTitle: rooms.activeRoom?.kind.leaderTitle ?? 'Líder',
+      leaderTitle:
+          rooms.activeRoom?.kind.leaderTitle ?? context.l10n.juntosLeader,
       study: rooms.currentStudy,
       canCall: canCall,
       alreadyCalled: rooms.nudgedToday.contains(m.uid),
@@ -1206,7 +1206,7 @@ class _LeagueScreenState extends State<LeagueScreen>
     if (!context.mounted) return;
     showAppToastFor(
       context,
-      message: 'Código copiado',
+      message: context.l10n.juntosCodeCopied,
       glyph: CinematicGlyph.copy,
     );
   }
@@ -1220,8 +1220,8 @@ class _LeagueScreenState extends State<LeagueScreen>
     showAppToastFor(
       context,
       message: ok
-          ? 'Estudo marcado para o grupo'
-          : 'Não foi possível marcar o estudo.',
+          ? context.l10n.juntosRoomStudySet
+          : context.l10n.juntosRoomStudySetError,
       glyph: ok ? CinematicGlyph.book : CinematicGlyph.wrong,
       tone: ok ? AppToastTone.accent : AppToastTone.warn,
     );
@@ -1253,8 +1253,8 @@ class _LeagueScreenState extends State<LeagueScreen>
     showAppToastFor(
       context,
       message: ok
-          ? 'Você acenou para $first'
-          : 'Não foi possível acenar agora.',
+          ? context.l10n.juntosWavedAt(first)
+          : context.l10n.juntosWaveError,
       glyph: ok ? CinematicGlyph.bell : CinematicGlyph.wrong,
       tone: ok ? AppToastTone.accent : AppToastTone.warn,
     );
@@ -1283,8 +1283,8 @@ class _LeagueScreenState extends State<LeagueScreen>
       case RoomMenuAction.edit:
         final setup = await showRoomSetupSheet(
           context,
-          title: 'Editar grupo',
-          confirmLabel: 'Salvar',
+          title: context.l10n.juntosEditRoomTitle,
+          confirmLabel: context.l10n.commonSave,
           initialName: room.name,
           initialKind: room.kind,
         );
@@ -1302,12 +1302,10 @@ class _LeagueScreenState extends State<LeagueScreen>
         final ok = await showAppConfirm(
           context,
           danger: true,
-          title: 'Encerrar o grupo?',
-          body:
-              'O grupo some para todos e o código deixa de funcionar. '
-              'Não dá para desfazer.',
-          cancelLabel: 'Cancelar',
-          confirmLabel: 'Encerrar',
+          title: context.l10n.juntosCloseRoomTitle,
+          body: context.l10n.juntosCloseRoomBody,
+          cancelLabel: context.l10n.commonCancel,
+          confirmLabel: context.l10n.juntosCloseConfirm,
         );
         if (!ok || !context.mounted) return;
         await rooms.closeRoom(progress: progress);
@@ -1321,10 +1319,8 @@ class _LeagueScreenState extends State<LeagueScreen>
     final rooms = context.read<RoomService>();
     final to = await showRoomMemberPicker(
       context,
-      title: 'Passar a liderança',
-      body:
-          'Quem assumir marca o estudo, a meta e chama o grupo. '
-          'Você continua na lista.',
+      title: context.l10n.juntosTransferTitle,
+      body: context.l10n.juntosTransferBody,
       members: others,
     );
     if (to == null || !context.mounted) return false;
@@ -1333,8 +1329,8 @@ class _LeagueScreenState extends State<LeagueScreen>
     showAppToastFor(
       context,
       message: ok
-          ? '${to.name} agora conduz o grupo'
-          : 'Não foi possível passar a liderança.',
+          ? context.l10n.juntosTransferDone(to.name)
+          : context.l10n.juntosTransferError,
       glyph: ok ? CinematicGlyph.crown : CinematicGlyph.wrong,
       tone: ok ? AppToastTone.accent : AppToastTone.warn,
     );
@@ -1353,10 +1349,10 @@ class _LeagueScreenState extends State<LeagueScreen>
     if (isLeader && others.isNotEmpty) {
       final go = await showAppConfirm(
         context,
-        title: 'Antes de sair',
-        body: 'Escolha quem vai conduzir o grupo depois de você.',
-        cancelLabel: 'Cancelar',
-        confirmLabel: 'Escolher',
+        title: context.l10n.juntosBeforeLeaveTitle,
+        body: context.l10n.juntosBeforeLeaveBody,
+        cancelLabel: context.l10n.commonCancel,
+        confirmLabel: context.l10n.juntosChoose,
       );
       if (!go || !context.mounted) return;
       final ok = await _transferRoom(context, others);
@@ -1373,10 +1369,10 @@ class _LeagueScreenState extends State<LeagueScreen>
   Future<void> _showJoinRoom(BuildContext context) async {
     final code = await showAppDialog<String>(
       context,
-      builder: (ctx) => const _TextInputDialog(
-        title: 'Entrar no grupo',
-        hint: 'Código que você recebeu',
-        confirmLabel: 'Entrar',
+      builder: (ctx) => _TextInputDialog(
+        title: context.l10n.juntosJoinRoomTitle,
+        hint: context.l10n.juntosJoinRoomHint,
+        confirmLabel: context.l10n.juntosJoin,
         maxLength: 8,
         capitalize: true,
         letterSpacing: 3,
@@ -1397,7 +1393,7 @@ class _LeagueScreenState extends State<LeagueScreen>
     if (!ok) {
       showAppToastFor(
         context,
-        message: rooms.lastError ?? 'Não foi possível entrar no grupo.',
+        message: rooms.lastError ?? context.l10n.juntosRoomJoinError,
         glyph: CinematicGlyph.wrong,
         tone: AppToastTone.warn,
       );
@@ -1405,7 +1401,9 @@ class _LeagueScreenState extends State<LeagueScreen>
     }
     showAppToastFor(
       context,
-      message: 'Você entrou em ${rooms.activeRoom?.name ?? 'o grupo'}.',
+      message: rooms.activeRoom?.name != null
+          ? context.l10n.juntosRoomJoined(rooms.activeRoom!.name)
+          : context.l10n.juntosRoomJoinedGeneric,
       glyph: CinematicGlyph.people,
     );
   }
@@ -1414,10 +1412,10 @@ class _LeagueScreenState extends State<LeagueScreen>
     return showAppConfirm(
       context,
       danger: true,
-      title: 'Sair do grupo?',
-      body: 'Você sai da lista. Para voltar, use o código de novo.',
-      cancelLabel: 'Cancelar',
-      confirmLabel: 'Sair',
+      title: context.l10n.juntosLeaveRoomTitle,
+      body: context.l10n.juntosLeaveRoomBody,
+      cancelLabel: context.l10n.commonCancel,
+      confirmLabel: context.l10n.juntosLeaveConfirm,
     );
   }
 }
@@ -1443,9 +1441,21 @@ class _SegmentTabs extends StatelessWidget {
       index: index,
       onChanged: onChanged,
       items: [
-        (label: 'Companhia', glyph: CinematicGlyph.link, alert: companionAlert),
-        (label: 'Caravana', glyph: CinematicGlyph.podium, alert: caravanAlert),
-        (label: 'Grupos', glyph: CinematicGlyph.people, alert: gruposAlert),
+        (
+          label: context.l10n.juntosTabCompanion,
+          glyph: CinematicGlyph.link,
+          alert: companionAlert,
+        ),
+        (
+          label: context.l10n.juntosTabCaravan,
+          glyph: CinematicGlyph.podium,
+          alert: caravanAlert,
+        ),
+        (
+          label: context.l10n.juntosTabGroups,
+          glyph: CinematicGlyph.people,
+          alert: gruposAlert,
+        ),
       ],
     );
   }
@@ -1484,12 +1494,12 @@ class _CompanhiaStageCard extends StatelessWidget {
               },
               items: [
                 (
-                  label: 'Amizade',
+                  label: context.l10n.juntosTabCompanion,
                   glyph: CinematicGlyph.link,
                   alert: companionAlert,
                 ),
                 (
-                  label: 'Desafio',
+                  label: context.l10n.juntosTabChallenge,
                   glyph: CinematicGlyph.flag,
                   alert: desafioAlert,
                 ),
@@ -1532,14 +1542,14 @@ class _CaravanStageCard extends StatelessWidget {
                 ActHaptics.tap();
                 onPaneChanged(i);
               },
-              items: const [
+              items: [
                 (
-                  label: 'Este mês',
+                  label: context.l10n.juntosThisMonth,
                   glyph: CinematicGlyph.path,
                   alert: false,
                 ),
                 (
-                  label: 'Esta semana',
+                  label: context.l10n.juntosThisWeek,
                   glyph: CinematicGlyph.calendar,
                   alert: false,
                 ),
@@ -1565,22 +1575,23 @@ class _CaravanExplainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final l10n = context.l10n;
     final title = weekly
-        ? 'Quem avançou nesta semana?'
-        : 'Quem mais caminhou neste mês?';
+        ? l10n.juntosCaravanWeekTitle
+        : l10n.juntosCaravanMonthTitle;
     final body = weekly
-        ? 'Só passos de cenas novas, de segunda a domingo. No fim da semana, os primeiros sobem de divisão e os últimos descem.'
-        : 'Tudo conta: cenas, missões, baús e companhia. Zera todo dia 1 — quem chegou agora também pode liderar.';
+        ? l10n.juntosCaravanWeekBody
+        : l10n.juntosCaravanMonthBody;
     final steps = weekly
-        ? const [
-            (CinematicGlyph.calendar, 'Passos\nda semana'),
-            (CinematicGlyph.podium, 'Lugar no\nranking'),
-            (CinematicGlyph.rise, 'Sobe ou\ndesce'),
+        ? [
+            (CinematicGlyph.calendar, l10n.juntosCaravanWeekStep1),
+            (CinematicGlyph.podium, l10n.juntosCaravanWeekStep2),
+            (CinematicGlyph.rise, l10n.juntosCaravanWeekStep3),
           ]
-        : const [
-            (CinematicGlyph.path, 'Estude\numa cena'),
-            (CinematicGlyph.rise, 'Some\npassos'),
-            (CinematicGlyph.podium, 'Veja o\ncaminho'),
+        : [
+            (CinematicGlyph.path, l10n.juntosCaravanMonthStep1),
+            (CinematicGlyph.rise, l10n.juntosCaravanMonthStep2),
+            (CinematicGlyph.podium, l10n.juntosCaravanMonthStep3),
           ];
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -1683,13 +1694,13 @@ class _AmizadeExplainer extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Text(
-          'Quem caminha ao seu lado?',
+          context.l10n.juntosCompanionExplainerTitle,
           textAlign: TextAlign.center,
           style: AppTypography.display(size: 24, color: a.text),
         ),
         const SizedBox(height: AppSpace.sm),
         Text(
-          'Uma amizade de estudo. No dia em que os dois caminham, o fio acende e a sequência cresce.',
+          context.l10n.juntosCompanionExplainerBody,
           textAlign: TextAlign.center,
           style: AppTypography.body(
             size: 13,
@@ -1714,13 +1725,13 @@ class _DesafioExplainer extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Text(
-          'Quem chega junto na cena?',
+          context.l10n.juntosChallengeExplainerTitle,
           textAlign: TextAlign.center,
           style: AppTypography.display(size: 24, color: a.text),
         ),
         const SizedBox(height: AppSpace.sm),
         Text(
-          'Mesma cena, até domingo. Cada um que chegar ganha ${CornerCopy.reward} — os dois podem ganhar; não é duelo.',
+          context.l10n.juntosChallengeExplainerBody(CornerCopy.reward),
           textAlign: TextAlign.center,
           style: AppTypography.body(
             size: 13,
@@ -1739,15 +1750,15 @@ class _DesafioExplainer extends StatelessWidget {
 class _DesafioSteps extends StatelessWidget {
   const _DesafioSteps();
 
-  static const _steps = [
-    (CinematicGlyph.path, 'Mesma\ncena'),
-    (CinematicGlyph.calendar, 'Chegar até\ndomingo'),
-    (CinematicGlyph.rise, 'Cada um\nganha +10'),
-  ];
-
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final l10n = context.l10n;
+    final steps = [
+      (CinematicGlyph.path, l10n.juntosChallengeStep1),
+      (CinematicGlyph.calendar, l10n.juntosChallengeStep2),
+      (CinematicGlyph.rise, l10n.juntosChallengeStep3),
+    ];
     return Stack(
       children: [
         Positioned(
@@ -1762,7 +1773,7 @@ class _DesafioSteps extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            for (final s in _steps)
+            for (final s in steps)
               Expanded(
                 child: Column(
                   children: [
@@ -1832,14 +1843,13 @@ class _RoomsOfflineCard extends StatelessWidget {
           ),
           const SizedBox(height: 14),
           Text(
-            'Entre para criar o grupo',
+            context.l10n.juntosRoomsOfflineTitle,
             textAlign: TextAlign.center,
             style: AppTypography.display(size: 24, color: a.text),
           ),
           const SizedBox(height: 8),
           Text(
-            error ??
-                'O grupo fica na sua conta. Entre com Google para criar ou usar um código.',
+            error ?? context.l10n.juntosRoomsOfflineBody,
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 13,
@@ -1849,7 +1859,9 @@ class _RoomsOfflineCard extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           CopperCta(
-            label: loading ? 'Conectando…' : 'Tentar de novo',
+            label: loading
+                ? context.l10n.juntosConnecting
+                : context.l10n.commonTryAgain,
             onTap: loading ? null : onRetry,
             busy: loading,
             leading: CinematicGlyph.refresh,
@@ -1858,7 +1870,7 @@ class _RoomsOfflineCard extends StatelessWidget {
           ),
           const SizedBox(height: AppSpace.md),
           Text(
-            'Sem login, o código não funciona',
+            context.l10n.juntosRoomsOfflineFoot,
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 12,
@@ -1894,9 +1906,9 @@ class _RoomsEmptyState extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          const Center(
+          Center(
             child: SectionLabel(
-              'Célula · Discipulado · EBD',
+              context.l10n.juntosRoomsEmptyEyebrow,
               color: AppColors.accent,
             ),
           ),
@@ -1904,13 +1916,13 @@ class _RoomsEmptyState extends StatelessWidget {
           const _CircleOfSeats(),
           const SizedBox(height: AppSpace.lg),
           Text(
-            'Quem estuda com você?',
+            context.l10n.juntosRoomsEmptyTitle,
             textAlign: TextAlign.center,
             style: AppTypography.display(size: 28, color: a.text),
           ),
           const SizedBox(height: AppSpace.sm),
           Text(
-            'Um grupo fechado: célula, discipulado ou EBD. Marque a cena da semana e veja quem estudou — o convite vai no app ou no WhatsApp.',
+            context.l10n.juntosRoomsEmptyBody,
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 13,
@@ -1923,22 +1935,22 @@ class _RoomsEmptyState extends StatelessWidget {
             children: [
               _RoomBenefit(
                 glyph: CinematicGlyph.book,
-                label: 'Estudo',
-                detail: 'Mesma cena',
+                label: context.l10n.juntosRoomBenefitStudy,
+                detail: context.l10n.juntosRoomBenefitStudyDetail,
                 color: a.textSecondary,
               ),
               const SizedBox(width: 8),
               _RoomBenefit(
                 glyph: CinematicGlyph.people,
-                label: 'Lista',
-                detail: 'Quem estudou',
+                label: context.l10n.juntosRoomBenefitList,
+                detail: context.l10n.juntosRoomBenefitListDetail,
                 color: a.textSecondary,
               ),
               const SizedBox(width: 8),
               _RoomBenefit(
                 glyph: CinematicGlyph.bell,
-                label: 'Acenar',
-                detail: 'Quem sumiu',
+                label: context.l10n.juntosRoomBenefitWave,
+                detail: context.l10n.juntosRoomBenefitWaveDetail,
                 color: a.textSecondary,
               ),
             ],
@@ -1948,14 +1960,14 @@ class _RoomsEmptyState extends StatelessWidget {
             const AppSpinner()
           else ...[
             CopperCta(
-              label: 'Criar grupo',
+              label: context.l10n.juntosCreateRoom,
               onTap: onCreate,
               leading: CinematicGlyph.people,
               trailing: null,
             ),
             const SizedBox(height: AppSpace.sm),
             GhostCta(
-              label: 'Entrar com código',
+              label: context.l10n.juntosHaveCode,
               leading: CinematicGlyph.lock,
               expanded: true,
               onTap: onJoin,
@@ -2149,8 +2161,11 @@ class _RoomHearth extends StatelessWidget {
     final myPhoto = context.select((BackendService b) => b.userPhotoUrl);
     final a = Appearance.of(context);
     final days = LeagueService.daysLeft();
-    final closesText = days <= 1 ? 'Fecha hoje' : 'Fecha em $days dias';
-    final leader = isOwner ? 'você' : room.ownerName;
+    final l10n = context.l10n;
+    final closesText = days <= 1
+        ? l10n.juntosClosesToday
+        : l10n.juntosDaysLeft(days);
+    final leader = isOwner ? l10n.juntosYouLower : room.ownerName;
 
     final total = members.length;
     final lit = members.where((m) => m.walkedThisWeek).length;
@@ -2166,31 +2181,26 @@ class _RoomHearth extends StatelessWidget {
 
     final missing = ((total + 1) ~/ 2 - lit).clamp(0, total);
     final (String line, Color tone) = total <= 1
-        ? ('Só você no grupo por enquanto.', a.text)
+        ? (l10n.juntosRoomOnlyYou, a.text)
         : !walkedToday
-        ? ('Você ainda não estudou hoje.', AppColors.streak)
+        ? (l10n.juntosRoomNotStudiedToday, AppColors.streak)
         : lit == total
-        ? ('O grupo inteiro estudou nesta semana.', AppColors.accent)
+        ? (l10n.juntosRoomAllStudied, AppColors.accent)
         : halfway
-        ? ('Metade do grupo já estudou.', AppColors.accent)
-        : (
-            missing == 1
-                ? 'Falta 1 pessoa para metade do grupo.'
-                : 'Faltam $missing pessoas para metade do grupo.',
-            a.text,
-          );
+        ? (l10n.juntosRoomHalfStudied, AppColors.accent)
+        : (l10n.juntosRoomMissingForHalf(missing), a.text);
 
     final hint = total <= 1
-        ? 'Convide quem estuda com você: célula, família, amigos.'
+        ? l10n.juntosRoomHintInvite
         : claimed
-        ? 'Baú do grupo coletado nesta semana.'
+        ? l10n.juntosRoomHintClaimed
         : ready
         ? null
         : !walkedToday
-        ? 'Estude hoje para abrir o baú do grupo.'
+        ? l10n.juntosRoomHintStudyToday
         : goal != null && goal > 0
-        ? 'O baú abre com metade do grupo ou a meta.'
-        : 'O baú abre quando metade do grupo estudar.';
+        ? l10n.juntosRoomHintHalfOrGoal
+        : l10n.juntosRoomHintHalf;
 
     return GlassCard(
       tint: ready ? AppColors.accent : null,
@@ -2217,7 +2227,7 @@ class _RoomHearth extends StatelessWidget {
               ),
               const Spacer(),
               IconButton(
-                tooltip: 'Opções do grupo',
+                tooltip: l10n.juntosRoomOptions,
                 onPressed: onMenu,
                 icon: Icon(Icons.more_horiz_rounded, color: a.textSecondary),
               ),
@@ -2240,7 +2250,11 @@ class _RoomHearth extends StatelessWidget {
                 ),
                 const SizedBox(height: 4),
                 Text(
-                  '${room.kind.leaderTitle}: $leader · $total ${total == 1 ? 'pessoa' : 'pessoas'}',
+                  l10n.juntosRoomLeaderLine(
+                    room.kind.leaderTitle,
+                    leader,
+                    total,
+                  ),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: AppTypography.body(size: 13, color: a.textFaint),
@@ -2258,7 +2272,7 @@ class _RoomHearth extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      ' de $total',
+                      l10n.juntosOfTotal(total),
                       style: AppTypography.display(
                         size: 18,
                         height: 1.2,
@@ -2270,7 +2284,7 @@ class _RoomHearth extends StatelessWidget {
                       child: Padding(
                         padding: const EdgeInsets.only(bottom: 3),
                         child: Text(
-                          'estudaram nesta semana',
+                          l10n.juntosStudiedThisWeek,
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                           style: AppTypography.body(
@@ -2308,10 +2322,10 @@ class _RoomHearth extends StatelessWidget {
                   const SizedBox(height: AppSpace.md),
                   Row(
                     children: [
-                      const SectionLabel('Meta do grupo', size: 10),
+                      SectionLabel(l10n.juntosRoomGoalLabel, size: 10),
                       const Spacer(),
                       Text(
-                        '$sumSteps / $goal passos',
+                        l10n.juntosRoomGoalProgress(sumSteps, goal),
                         style: AppTypography.body(
                           size: 12,
                           weight: FontWeight.w800,
@@ -2329,7 +2343,7 @@ class _RoomHearth extends StatelessWidget {
                 if (!walkedToday && total > 1 && onWalk != null) ...[
                   const SizedBox(height: AppSpace.lg),
                   CopperCta(
-                    label: 'Estudar hoje',
+                    label: l10n.juntosStudyToday,
                     onTap: onWalk,
                     leading: CinematicGlyph.book,
                     dense: true,
@@ -2338,7 +2352,7 @@ class _RoomHearth extends StatelessWidget {
                 if (ready) ...[
                   const SizedBox(height: AppSpace.lg),
                   CopperCta(
-                    label: 'Abrir o baú do grupo · +$bonus passos',
+                    label: l10n.juntosRoomChestOpen(bonus),
                     onTap: onClaim,
                     leading: CinematicGlyph.gift,
                     trailing: null,
@@ -2376,7 +2390,7 @@ class _RoomInviteBar extends StatelessWidget {
         Expanded(
           child: full
               ? Text(
-                  'Grupo cheio. Para mais gente, abra outro grupo.',
+                  context.l10n.juntosRoomFull,
                   style: AppTypography.body(
                     size: 12,
                     height: 1.3,
@@ -2385,7 +2399,7 @@ class _RoomInviteBar extends StatelessWidget {
                   ),
                 )
               : GhostCta(
-                  label: 'Chamar pessoas',
+                  label: context.l10n.juntosInvitePeople,
                   leading: CinematicGlyph.people,
                   expanded: true,
                   padding: const EdgeInsets.symmetric(
@@ -2414,7 +2428,7 @@ class _RoomCodeChip extends StatelessWidget {
     final a = Appearance.of(context);
     return Semantics(
       button: true,
-      label: 'Copiar código $code',
+      label: context.l10n.juntosCopyCodeSemantics(code),
       child: InkWell(
         onTap: onTap,
         borderRadius: BorderRadius.circular(AppRadii.md),
@@ -2429,7 +2443,11 @@ class _RoomCodeChip extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SectionLabel('Código', size: 10, color: a.textFaint),
+              SectionLabel(
+                context.l10n.juntosCodeLabel,
+                size: 10,
+                color: a.textFaint,
+              ),
               const SizedBox(height: 2),
               Text(
                 code,
@@ -2527,7 +2545,10 @@ class _TextInputDialogState extends State<_TextInputDialog> {
         onSubmitted: (_) => _submit(),
       ),
       actions: [
-        GhostCta(label: 'Cancelar', onTap: () => Navigator.pop(context)),
+        GhostCta(
+          label: context.l10n.commonCancel,
+          onTap: () => Navigator.pop(context),
+        ),
         CopperCta(
           label: widget.confirmLabel,
           onTap: _submit,
@@ -2624,7 +2645,7 @@ class _LeaderboardBoard extends StatelessWidget {
             alignment: Alignment.centerLeft,
             child: Semantics(
               button: true,
-              label: '$countLabel. Ver quem está na trilha',
+              label: context.l10n.juntosOnlineSemantics(countLabel),
               child: Material(
                 color: Colors.transparent,
                 child: InkWell(
@@ -2650,7 +2671,7 @@ class _LeaderboardBoard extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.fromLTRB(14, 8, 14, 16),
           child: Text(
-            'O ranking da semana só aparece com gente de verdade na caravana.',
+            context.l10n.juntosWeekRankingEmpty,
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 13,
@@ -2666,8 +2687,9 @@ class _LeaderboardBoard extends StatelessWidget {
         if (weekly && rank == 1 && canPromote) {
           rows.add(
             _WeekZoneLabel(
-              text:
-                  'Zona de subida · ${LeagueTier.values[tierIndex + 1].shortLabel}',
+              text: context.l10n.juntosPromoteZone(
+                LeagueTier.values[tierIndex + 1].shortLabel,
+              ),
               up: true,
             ),
           );
@@ -2678,8 +2700,9 @@ class _LeaderboardBoard extends StatelessWidget {
             canDemote) {
           rows.add(
             _WeekZoneLabel(
-              text:
-                  'Zona de descida · ${LeagueTier.values[tierIndex - 1].shortLabel}',
+              text: context.l10n.juntosDemoteZone(
+                LeagueTier.values[tierIndex - 1].shortLabel,
+              ),
               up: false,
             ),
           );
@@ -2803,9 +2826,7 @@ class _CaravanOnlineSheet extends StatelessWidget {
     final a = Appearance.of(context);
     final maxH = MediaQuery.sizeOf(context).height * 0.72;
     final count = people.length;
-    final subtitle = count == 1
-        ? '1 peregrino da caravana'
-        : '$count peregrinos da caravana';
+    final subtitle = context.l10n.juntosCaravanPilgrimsCount(count);
 
     return AppSheetPanel(
       tint: AppColors.teal,
@@ -2840,7 +2861,7 @@ class _CaravanOnlineSheet extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'Na trilha agora',
+                                context.l10n.juntosStudyingNow,
                                 style: AppTypography.title(
                                   size: 20,
                                   color: a.text,
@@ -2954,7 +2975,9 @@ class _OnlineSheetRow extends StatelessWidget {
                     ),
                     const SizedBox(height: 2),
                     Text(
-                      walked ? 'Caminhou hoje' : 'Online',
+                      walked
+                          ? context.l10n.juntosWalkedToday
+                          : context.l10n.juntosSeenToday,
                       style: AppTypography.body(
                         size: 12,
                         weight: FontWeight.w800,
@@ -3008,15 +3031,19 @@ class _StandingRow extends StatelessWidget {
     return a.text;
   }
 
-  String get _gapLabel {
-    if (rank == 1) return 'líder';
-    if (gapToAbove <= 0) return 'empate';
-    return '$gapToAbove do ${rank - 1}º';
+  String _gapLabel(AppLocalizations l10n) {
+    if (rank == 1) return l10n.juntosLeader;
+    if (gapToAbove <= 0) return l10n.juntosTie;
+    return l10n.juntosGapToAbove(gapToAbove, rank - 1);
   }
 
-  String? get _presenceShort {
-    if (entry.walkedToday) return 'hoje';
-    return LeagueEntry.formatShortBrDate(entry.lastWalkDate);
+  String? _presenceShort(BuildContext context) {
+    if (entry.walkedToday) return context.l10n.commonToday;
+    final date = DateTime.tryParse(entry.lastWalkDate ?? '');
+    if (date == null) return null;
+    return DateFormat.Md(
+      Localizations.localeOf(context).toLanguageTag(),
+    ).format(date);
   }
 
   @override
@@ -3032,7 +3059,7 @@ class _StandingRow extends StatelessWidget {
     final muted = entry.isUser
         ? AppColors.inkOnAccent.withValues(alpha: 0.62)
         : a.textFaint;
-    final presence = _presenceShort;
+    final presence = _presenceShort(context);
 
     final ink = entry.isUser ? AppColors.inkOnAccent : a.text;
     final live = entry.walkedToday || entry.isOnlineToday;
@@ -3091,7 +3118,7 @@ class _StandingRow extends StatelessWidget {
             ),
             if (weeklySteps)
               Text(
-                _gapLabel,
+                _gapLabel(context.l10n),
                 style: AppTypography.label(
                   size: 10,
                   letterSpacing: 0.2,
@@ -3510,13 +3537,13 @@ class _CompanionsOfflineCard extends StatelessWidget {
           ),
           const SizedBox(height: 14),
           Text(
-            'Companhia precisa da nuvem',
+            context.l10n.juntosCompanionsOfflineTitle,
             textAlign: TextAlign.center,
             style: AppTypography.display(size: 24, color: a.text),
           ),
           const SizedBox(height: 8),
           Text(
-            error ?? 'Entre com Google para caminhar com alguém de verdade.',
+            error ?? context.l10n.juntosCompanionsOfflineBody,
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 13,
@@ -3526,7 +3553,9 @@ class _CompanionsOfflineCard extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           CopperCta(
-            label: loading ? 'Conectando…' : 'Tentar de novo',
+            label: loading
+                ? context.l10n.juntosConnecting
+                : context.l10n.commonTryAgain,
             onTap: loading ? null : onRetry,
             busy: loading,
             leading: CinematicGlyph.refresh,
@@ -3565,7 +3594,9 @@ class _CompanionsEmpty extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               _BondMember(
-                name: name.isEmpty ? 'Você' : name.split(' ').first,
+                name: name.isEmpty
+                    ? context.l10n.commonYou
+                    : name.split(' ').first,
                 walked: false,
                 highlight: false,
                 isUser: true,
@@ -3588,14 +3619,14 @@ class _CompanionsEmpty extends StatelessWidget {
           const AppSpinner()
         else ...[
           CopperCta(
-            label: 'Convidar amigo',
+            label: context.l10n.juntosInviteCompanion,
             onTap: onInvite,
             leading: CinematicGlyph.people,
             trailing: null,
           ),
           const SizedBox(height: AppSpace.sm),
           GhostCta(
-            label: 'Tenho um código',
+            label: context.l10n.juntosHaveCode,
             leading: CinematicGlyph.qr,
             expanded: true,
             onTap: onJoin,
@@ -3610,15 +3641,15 @@ class _CompanionsEmpty extends StatelessWidget {
 class _CompanionSteps extends StatelessWidget {
   const _CompanionSteps();
 
-  static const _steps = [
-    (CinematicGlyph.path, 'Os dois\nestudam'),
-    (CinematicGlyph.flame, 'O dia conta\njuntos'),
-    (CinematicGlyph.lamp, 'Se um atrasa,\no outro acena'),
-  ];
-
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final l10n = context.l10n;
+    final steps = [
+      (CinematicGlyph.path, l10n.juntosCompanionStep1),
+      (CinematicGlyph.flame, l10n.juntosCompanionStep2),
+      (CinematicGlyph.lamp, l10n.juntosCompanionStep3),
+    ];
     return Stack(
       children: [
         Positioned(
@@ -3633,7 +3664,7 @@ class _CompanionSteps extends StatelessWidget {
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            for (final s in _steps)
+            for (final s in steps)
               Expanded(
                 child: Column(
                   children: [
@@ -3715,10 +3746,10 @@ class _CompanionCard extends StatelessWidget {
     }
 
     final partnerLabel = companion.displayName.isEmpty
-        ? 'Companheiro'
+        ? context.l10n.juntosCompanionFallback
         : companion.displayName;
     final myLabel = myName.trim().isEmpty
-        ? 'Você'
+        ? context.l10n.commonYou
         : myName.trim().split(' ').first;
     final away = companion.theyDaysAway;
     final canNudge =
@@ -3746,8 +3777,7 @@ class _CompanionCard extends StatelessWidget {
         children: [
           if (companion.sharedDays > 0)
             SoftBadge(
-              text:
-                  '${companion.sharedDays} ${companion.sharedDays == 1 ? 'dia' : 'dias'}',
+              text: context.l10n.commonDays(companion.sharedDays),
               glyph: CinematicGlyph.flame,
               accent: AppColors.streak,
             ),
@@ -3806,8 +3836,8 @@ class _CompanionCard extends StatelessWidget {
             const SizedBox(height: AppSpace.lg),
             CopperCta(
               label: companion.iNudgedToday
-                  ? 'Mandar no WhatsApp'
-                  : 'Acenar para ${companion.partnerFirstName}',
+                  ? context.l10n.commonSendWhatsApp
+                  : context.l10n.juntosWaveAt(companion.partnerFirstName),
               onTap: onNudge,
               leading: companion.iNudgedToday
                   ? CinematicGlyph.share
@@ -3831,7 +3861,7 @@ class _CompanionCard extends StatelessWidget {
           Align(
             alignment: Alignment.centerRight,
             child: TextCta(
-              label: 'Sair da companhia',
+              label: context.l10n.juntosLeaveCompanionCta,
               danger: true,
               onTap: onLeave,
             ),
@@ -3869,11 +3899,12 @@ class _BondMember extends StatelessWidget {
   Widget build(BuildContext context) {
     const dustTone = AppColors.dust;
     final a = Appearance.of(context);
+    final l10n = context.l10n;
     final status = walked
-        ? 'Hoje'
+        ? l10n.commonToday
         : dusty
-        ? 'Na poeira'
-        : (highlight ? 'Sua vez' : 'Ainda não');
+        ? l10n.juntosBondNotStudying
+        : (highlight ? l10n.juntosBondYourTurn : l10n.juntosBondNotYet);
     final tone = walked
         ? AppColors.accent
         : dusty
@@ -3999,7 +4030,7 @@ class _OpenInviteStage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final myLabel = myName.trim().isEmpty
-        ? 'Você'
+        ? context.l10n.commonYou
         : myName.trim().split(' ').first;
     final a = Appearance.of(context);
     return GlassCard(
@@ -4007,11 +4038,17 @@ class _OpenInviteStage extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          const Row(
+          Row(
             children: [
-              SectionLabel('Convite aberto', color: AppColors.accent),
-              Spacer(),
-              SoftBadge(text: 'Aguardando', glyph: CinematicGlyph.lamp),
+              SectionLabel(
+                context.l10n.juntosOpenInvite,
+                color: AppColors.accent,
+              ),
+              const Spacer(),
+              SoftBadge(
+                text: context.l10n.juntosWaiting,
+                glyph: CinematicGlyph.lamp,
+              ),
             ],
           ),
           const SizedBox(height: AppSpace.lg),
@@ -4038,7 +4075,7 @@ class _OpenInviteStage extends StatelessWidget {
           ),
           const SizedBox(height: AppSpace.md),
           Text(
-            'Falta uma pessoa do outro lado',
+            context.l10n.juntosOpenInviteMissing,
             textAlign: TextAlign.center,
             style: AppTypography.title(size: 16, color: a.text),
           ),
@@ -4046,7 +4083,7 @@ class _OpenInviteStage extends StatelessWidget {
           _CodePlate(code: code, onCopy: onCopy),
           const SizedBox(height: AppSpace.md),
           CopperCta(
-            label: 'Mostrar QR e compartilhar',
+            label: context.l10n.juntosShowQrShare,
             onTap: onShowQr,
             leading: CinematicGlyph.qr,
             trailing: null,
@@ -4055,7 +4092,7 @@ class _OpenInviteStage extends StatelessWidget {
           Align(
             alignment: Alignment.centerRight,
             child: TextCta(
-              label: 'Cancelar convite',
+              label: context.l10n.juntosCancelInvite,
               danger: true,
               onTap: onLeave,
             ),
@@ -4098,7 +4135,7 @@ class _EmptySeat extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            'Quem?',
+            context.l10n.juntosWho,
             style: AppTypography.title(size: 14, color: a.textFaint),
           ),
         ],
@@ -4119,7 +4156,7 @@ class _CodePlate extends StatelessWidget {
     final a = Appearance.of(context);
     return Semantics(
       button: true,
-      label: 'Código $code. Toque para copiar',
+      label: context.l10n.juntosCodeTapToCopy(code),
       excludeSemantics: true,
       child: Material(
         color: Colors.transparent,
@@ -4137,7 +4174,7 @@ class _CodePlate extends StatelessWidget {
             ),
             child: Row(
               children: [
-                SectionLabel('Código', color: a.textFaint),
+                SectionLabel(context.l10n.juntosCodeLabel, color: a.textFaint),
                 const SizedBox(width: AppSpace.md),
                 Expanded(
                   child: Text(
@@ -4159,7 +4196,7 @@ class _CodePlate extends StatelessWidget {
                 ),
                 const SizedBox(width: 6),
                 Text(
-                  'Copiar',
+                  context.l10n.juntosCopy,
                   style: AppTypography.body(
                     size: 13,
                     weight: FontWeight.w800,
@@ -4188,7 +4225,10 @@ class _CompanionWeekStrip extends StatelessWidget {
     final now = DateTime.now();
     final todayIdx = now.weekday - 1; // seg=0
     final together = companion.bothWalkedThisWeek(alsoMine: mine);
-    const labels = ['S', 'T', 'Q', 'Q', 'S', 'S', 'D'];
+    final narrow = DateFormat(
+      'EEEEE',
+      Localizations.localeOf(context).toLanguageTag(),
+    );
     final monday = DateTime(
       now.year,
       now.month,
@@ -4200,10 +4240,10 @@ class _CompanionWeekStrip extends StatelessWidget {
       children: [
         Row(
           children: [
-            const SectionLabel('Esta semana', color: AppColors.accent),
+            SectionLabel(context.l10n.juntosThisWeek, color: AppColors.accent),
             const Spacer(),
             Text(
-              '$together de 7 juntos',
+              context.l10n.juntosTogetherOfSeven(together),
               style: AppTypography.body(
                 size: 13,
                 weight: FontWeight.w800,
@@ -4219,7 +4259,7 @@ class _CompanionWeekStrip extends StatelessWidget {
               if (i > 0) const SizedBox(width: 6),
               Expanded(
                 child: _WeekDot(
-                  label: labels[i],
+                  label: narrow.format(monday.add(Duration(days: i))),
                   presence: companion.presenceOn(
                     monday.add(Duration(days: i)),
                     now: now,
@@ -4239,14 +4279,24 @@ class _CompanionWeekStrip extends StatelessWidget {
           spacing: 14,
           runSpacing: 6,
           children: [
-            _WeekLegend(me: true, them: false, label: 'você', style: a),
+            _WeekLegend(
+              me: true,
+              them: false,
+              label: context.l10n.commonYou,
+              style: a,
+            ),
             _WeekLegend(
               me: false,
               them: true,
               label: companion.partnerFirstName,
               style: a,
             ),
-            _WeekLegend(me: true, them: true, label: 'juntos', style: a),
+            _WeekLegend(
+              me: true,
+              them: true,
+              label: context.l10n.juntosTogetherLegend,
+              style: a,
+            ),
           ],
         ),
       ],
@@ -4311,16 +4361,17 @@ class _CompanionMilestonesBlock extends StatelessWidget {
     final shared = companion.sharedDays;
     final next = companion.nextMilestone;
     final marks = WalkCompanion.milestones;
+    final l10n = context.l10n;
     final caption = shared == 0
-        ? 'Primeiro marco: $next dias juntos'
+        ? l10n.juntosFirstMilestone(next)
         : shared >= marks.last
-        ? 'Próximo marco: $next dias'
-        : 'Faltam ${next - shared} para o marco de $next';
+        ? l10n.juntosNextMilestone(next)
+        : l10n.juntosMilestoneLeft(next - shared, next);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const SectionLabel('Marcos', color: AppColors.accent),
+        SectionLabel(l10n.juntosMilestones, color: AppColors.accent),
         const SizedBox(height: 14),
         _MilestoneTrail(sharedDays: shared, next: next, style: a),
         if (shared < next) ...[
@@ -4406,7 +4457,7 @@ class _WeekDot extends StatelessWidget {
         ),
         const SizedBox(height: 6),
         Text(
-          isToday ? 'hoje' : label,
+          isToday ? context.l10n.commonToday : label,
           style: AppTypography.body(
             size: 11,
             weight: FontWeight.w800,
@@ -4767,7 +4818,7 @@ class _IncomingNudgeBanner extends StatelessWidget {
   Widget build(BuildContext context) {
     final from = companion.incomingNudgeFromName?.trim().isNotEmpty == true
         ? companion.incomingNudgeFromName!.trim().split(' ').first
-        : 'Companheiro';
+        : context.l10n.juntosCompanionFallback;
     final message = companion.incomingNudgeMessage?.trim();
     return Container(
       width: double.infinity,
@@ -4792,7 +4843,7 @@ class _IncomingNudgeBanner extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  '$from acenou para você',
+                  context.l10n.juntosWavedAtYou(from),
                   style: AppTypography.title(size: 14, color: AppColors.accent),
                 ),
                 if (message != null && message.isNotEmpty) ...[
@@ -4835,13 +4886,13 @@ class _CaravanEmptyCard extends StatelessWidget {
           ),
           const SizedBox(height: 14),
           Text(
-            'A caravana ainda é pequena',
+            context.l10n.juntosCaravanEmptyTitle,
             textAlign: TextAlign.center,
             style: AppTypography.display(size: 24, color: a.text),
           ),
           const SizedBox(height: 8),
           Text(
-            'O ranking aparece com pelo menos mais uma pessoa caminhando. Chame alguém para a caravana — ou comece por uma amizade.',
+            context.l10n.juntosCaravanEmptyBody,
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 13,
@@ -4899,7 +4950,7 @@ class _InlineErrorCard extends StatelessWidget {
                   child: Center(child: AppSpinner(inline: true)),
                 )
               : TextCta(
-                  label: 'Tentar de novo',
+                  label: context.l10n.commonTryAgain,
                   leading: CinematicGlyph.refresh,
                   onTap: onRetry,
                 ),

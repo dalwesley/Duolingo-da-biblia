@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../data/question_bank.dart';
 import '../data/season_walk_catalog.dart';
+import '../l10n/app_language.dart';
 import '../models/difficulty.dart';
 import '../models/season_walk.dart';
 import '../models/trail.dart';
@@ -39,6 +40,7 @@ class SeasonWalkScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final l10n = context.l10n;
     final progress = context.watch<ProgressService>();
     final sub = context.watch<SubscriptionService>();
     final now = DateTime.now();
@@ -77,15 +79,20 @@ class SeasonWalkScreen extends StatelessWidget {
                         children: [
                           Text(
                             inWindow
-                                ? 'Dia ${todayIndex ?? '—'} de ${campaign.length}'
+                                ? l10n.seasonDayOf(
+                                    '${todayIndex ?? '—'}',
+                                    campaign.length,
+                                  )
                                 : campaign.start.isAfter(today)
-                                ? 'Começa em ${_daysUntil(campaign.start, today)} dias'
-                                : 'Temporada encerrada',
+                                ? l10n.seasonStartsIn(
+                                    _daysUntil(campaign.start, today),
+                                  )
+                                : l10n.seasonEnded,
                             style: AppTypography.title(size: 16, color: a.text),
                           ),
                           const SizedBox(height: 6),
                           Text(
-                            'Gratuito: 3 primeiros dias · depois, Peregrino+',
+                            l10n.seasonFreeTrialLine,
                             style: AppTypography.body(
                               size: 13,
                               color: a.textSecondary,
@@ -99,7 +106,7 @@ class SeasonWalkScreen extends StatelessWidget {
                           ),
                           const SizedBox(height: 8),
                           Text(
-                            '$done / ${campaign.length} dias caminhados',
+                            l10n.seasonDaysWalked(done, campaign.length),
                             style: AppTypography.body(
                               size: 12,
                               color: a.textFaint,
@@ -154,6 +161,7 @@ class _WeekBlock extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final l10n = context.l10n;
     final progress = context.watch<ProgressService>();
     final days = campaign.week(weekIndex);
     final doneCount = days
@@ -173,7 +181,7 @@ class _WeekBlock extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          'Semana ${weekIndex + 1}',
+          l10n.seasonWeek(weekIndex + 1),
           style: AppTypography.title(size: 14, color: a.text),
         ),
         const SizedBox(height: 8),
@@ -190,7 +198,7 @@ class _WeekBlock extends StatelessWidget {
           const SizedBox(height: 8),
           if (reviewLocked)
             GhostCta(
-              label: 'Revisão da semana · Peregrino+',
+              label: l10n.seasonWeekReviewPro,
               leading: CinematicGlyph.lock,
               expanded: true,
               onTap: () {
@@ -201,7 +209,7 @@ class _WeekBlock extends StatelessWidget {
             )
           else
             CopperCta(
-              label: 'Revisão da semana',
+              label: l10n.seasonWeekReview,
               expanded: true,
               onTap: () {
                 final progress = context.read<ProgressService>();
@@ -225,7 +233,6 @@ class _WeekBlock extends StatelessWidget {
     );
   }
 }
-
 class _DayTile extends StatelessWidget {
   final SeasonWalkCampaign campaign;
   final SeasonWalkDay day;
@@ -246,6 +253,7 @@ class _DayTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final l10n = context.l10n;
     final progress = context.watch<ProgressService>();
     final date = day.dateOn(campaign.start);
     final ymd = _ymd(date);
@@ -289,16 +297,16 @@ class _DayTile extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Dia ${day.index} · ${day.title}',
+                      l10n.seasonDayLine(day.index, day.title),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: AppTypography.title(size: 14, color: a.text),
                     ),
                     Text(
                       access.needsPro
-                          ? 'Peregrino+ a partir do dia 4'
+                          ? l10n.seasonProFromDay4
                           : access.future
-                          ? 'Ainda não é hoje'
+                          ? l10n.seasonNotTodayYet
                           : day.insight,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
@@ -371,6 +379,7 @@ class _SeasonWalkReviewScreenState extends State<SeasonWalkReviewScreen> {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final l10n = context.l10n;
     return Scaffold(
       backgroundColor: Colors.transparent,
       body: ImmersiveBackground(
@@ -378,7 +387,7 @@ class _SeasonWalkReviewScreenState extends State<SeasonWalkReviewScreen> {
           child: Column(
             children: [
               TopBar(
-                title: 'Revisão da semana ${widget.weekIndex + 1}',
+                title: l10n.seasonWeekReviewTitle(widget.weekIndex + 1),
                 subtitle: widget.campaign.title,
                 onBack: () => Navigator.pop(context),
                 leadingGlyph: CinematicGlyph.scroll,
@@ -393,7 +402,7 @@ class _SeasonWalkReviewScreenState extends State<SeasonWalkReviewScreen> {
                   ),
                   children: [
                     Text(
-                      'Os 7 “Hoje:” desta semana',
+                      l10n.seasonWeekInsightsHeader,
                       style: AppTypography.title(size: 16, color: a.text),
                     ),
                     const SizedBox(height: 12),
@@ -406,7 +415,7 @@ class _SeasonWalkReviewScreenState extends State<SeasonWalkReviewScreen> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'Dia ${day.index} · ${day.title}',
+                                l10n.seasonDayLine(day.index, day.title),
                                 style: AppTypography.body(
                                   size: 12,
                                   color: a.textFaint,
@@ -414,7 +423,7 @@ class _SeasonWalkReviewScreenState extends State<SeasonWalkReviewScreen> {
                               ),
                               const SizedBox(height: 4),
                               Text(
-                                'Hoje: ${day.insight}',
+                                l10n.seasonTodayInsight(day.insight),
                                 style: AppTypography.title(
                                   size: 14,
                                   color: a.text,
@@ -426,7 +435,9 @@ class _SeasonWalkReviewScreenState extends State<SeasonWalkReviewScreen> {
                       ),
                     const SizedBox(height: AppSpace.lg),
                     CopperCta(
-                      label: _loading ? 'Preparando…' : '3 atos de revisão',
+                      label: _loading
+                          ? l10n.seasonReviewPreparing
+                          : l10n.seasonReviewStart,
                       expanded: true,
                       onTap: _loading ? null : _startReview,
                     ),
@@ -471,21 +482,17 @@ class _SeasonWalkReviewScreenState extends State<SeasonWalkReviewScreen> {
     if (!mounted) return;
     setState(() => _loading = false);
     if (ids.isEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(
-            'Ainda não há atos desta semana no aparelho. Abra um dia primeiro.',
-            style: AppTypography.body(color: AppColors.textOnDark),
-          ),
-          backgroundColor: AppColors.nightElevated,
-        ),
+      showAppToastFor(
+        context,
+        message: context.l10n.seasonReviewEmpty,
+        glyph: CinematicGlyph.calendar,
       );
       return;
     }
     final review = Mission(
       slug: 'walk-review-${widget.campaign.id}-${widget.weekIndex}',
-      title: 'Revisão da semana',
-      intro: 'Três atos dos textos que você já andou.',
+      title: context.l10n.seasonReviewMissionTitle,
+      intro: context.l10n.seasonReviewMissionIntro,
       type: 'lesson',
       stepsReward: 30,
       questions: const [],

@@ -1,4 +1,7 @@
-/// Copy de atraso — poeira na trilha, caravana à frente. Curto, cinematográfico.
+import '../l10n/l10n_global.dart';
+
+/// Copy de sequência em risco — calmo, no mundo do caminho: o que está em
+/// risco, quanto tempo falta, o que fazer. Sem poeira nem perseguição.
 class DustCopy {
   DustCopy._();
 
@@ -8,25 +11,26 @@ class DustCopy {
   // ── Notificações: título curto (cabe na bandeja) ─────────────────────────
 
   static String atRiskTitle({bool lateEvening = false}) {
+    final l = L10n.current;
     if (lateEvening) {
-      return _pick(const [
-        'Poeira no fim do dia',
-        'A caravana some no pó',
-        'Quase meia-noite de poeira',
+      return _pick([
+        l.dustDayEnding,
+        l.dustStillTime,
+        l.dustStreakWaits,
       ]);
     }
     final hour = DateTime.now().hour;
     if (hour < 14) {
-      return _pick(const [
-        'Comendo poeira',
-        'A trilha já empoeira',
-        'Um passo atrás',
+      return _pick([
+        l.dustSceneToday,
+        l.dustTrailWaits,
+        l.homeMoodDusty,
       ]);
     }
-    return _pick(const [
-      'Ficando para trás',
-      'Pó na sequência',
-      'A caravana te ultrapassa',
+    return _pick([
+      l.homeMoodDusty,
+      l.dustFewHours,
+      l.dustSceneTodayWaits,
     ]);
   }
 
@@ -36,18 +40,18 @@ class DustCopy {
     required bool hasFreeze,
     required int streak,
   }) {
-    final days = streak == 1 ? '1 dia' : '$streak dias';
+    final l = L10n.current;
     if (hasFreeze) {
       return _pick([
-        '$name · $countdown e o pó sobe. Uma cena limpa — ou o gelo cobre 1 dia.',
-        'Caravana na frente. Você com $days ainda em jogo. Faltam $countdown.',
-        'Trilha coberta de pó. $countdown · continue a caminhada (gelo a postos).',
+        l.dustRiskBodyFreeze1(name, countdown),
+        l.dustRiskBodyStreak(streak, countdown),
+        l.dustRiskBodyFreeze3(countdown),
       ]);
     }
     return _pick([
-      '$name · sem gelo e comendo poeira. Faltam $countdown. Uma cena e você alcança.',
-      '$days em risco sob o pó. Faltam $countdown — caminhe antes que suma.',
-      'A poeira engole a sequência. $countdown · uma cena limpa o caminho.',
+      l.dustRiskBodyNoFreeze1(name, countdown),
+      l.dustRiskBodyNoFreeze2(streak, countdown),
+      l.dustRiskBodyNoFreeze3(countdown),
     ]);
   }
 
@@ -56,37 +60,39 @@ class DustCopy {
     required String countdown,
     required bool hasFreeze,
   }) {
+    final l = L10n.current;
     if (hasFreeze) {
       return _pick([
-        '$name, o dia vira poeira. Faltam $countdown — caminhe, ou o gelo cobre 1 dia.',
-        'Últimas $countdown. Continue a caminhada antes que a caravana suma no pó.',
+        l.dustEveningFreeze1(name, countdown),
+        l.dustEveningFreeze2(countdown),
       ]);
     }
     return _pick([
-      '$name, faltam $countdown e sem gelo. Uma cena — ou a sequência vira poeira.',
-      'Noite fechando. $countdown · continue a caminhada agora.',
+      l.dustRiskBodyNoFreeze1(name, countdown),
+      l.dustEveningNoFreeze2(countdown),
     ]);
   }
 
   static String lostAwayTitle({required int daysAway}) {
+    final l = L10n.current;
     if (daysAway >= 3) {
-      return _pick(const [
-        'Sumiu na poeira',
-        'A trilha te espera',
-        'Volte do pó',
+      return _pick([
+        l.dustTrailWaits,
+        l.dustContinueWhere,
+        l.dustNextSceneWaits,
       ]);
     }
     if (daysAway >= 2) {
-      return _pick(const [
-        'Dois dias de poeira',
-        'Ainda dá para alcançar',
-        'Poeira acumulada',
+      return _pick([
+        l.dustTwoDays,
+        l.dustCanReturn,
+        l.dustComeBackToday,
       ]);
     }
-    return _pick(const [
-      'Um dia de poeira',
-      'Trilha empoeirada',
-      'Ficou para trás',
+    return _pick([
+      l.dustOneDay,
+      l.dustSceneWaits,
+      l.dustComeBackToday,
     ]);
   }
 
@@ -96,44 +102,48 @@ class DustCopy {
     required int daysAway,
     required bool hasFreeze,
   }) {
-    final days = streak == 1 ? '1 dia' : '$streak dias';
+    final l = L10n.current;
     if (daysAway >= 3) {
       return hasFreeze
-          ? '$name, $daysAway dias no pó. O gelo ainda cobre 1 falta — retome a caminhada.'
-          : '$name, $daysAway dias comendo poeira. Uma cena limpa o caminho e recomeça.';
+          ? l.dustAwayManyFreeze(name, daysAway)
+          : l.dustAwayManyNoFreeze(name, daysAway);
     }
     if (daysAway >= 2) {
       return hasFreeze
-          ? '$name, dois dias de poeira. Gelo ainda pode salvar 1 dia — volte hoje.'
-          : '$name, dois dias para trás. Uma cena e a caravana te vê de novo.';
+          ? l.dustAwayTwoFreeze(name)
+          : l.dustAwayTwoNoFreeze(name);
     }
     return streak > 0
-        ? '$name, $days cobertos de pó. Uma cena e você deixa a poeira para trás.'
-        : '$name, a trilha empoeirou. Uma cena basta para limpar o caminho.';
+        ? l.dustAwayStreak(name, streak)
+        : l.dustAwayNoStreak(name);
   }
 
   // ── UI in-app (curto, sob o card / marcos) ───────────────────────────────
 
   static String uiRiskLine({required bool hasFreeze}) {
+    final l = L10n.current;
     if (hasFreeze) {
-      return _pick(const [
-        'Comendo poeira · gelo ainda cobre 1 dia',
-        'Ficando para trás · gelo a postos',
-        'Pó na trilha · gelo cobre 1 falta',
+      return _pick([
+        l.dustUiFreeze1,
+        l.dustUiFreeze2,
+        l.dustUiFreeze3,
       ]);
     }
-    return _pick(const [
-      'Comendo poeira · caminhe agora',
-      'Ficando para trás · sem gelo',
-      'A caravana some · uma cena alcança',
+    return _pick([
+      l.dustUiNoFreeze1,
+      l.dustUiNoFreeze2,
+      l.dustUiNoFreeze3,
     ]);
   }
 
-  static String uiRiskDetail() => _pick(const [
-        'Ficando para trás · continue a caminhada',
-        'Comendo poeira · uma cena limpa o caminho',
-        'Pó na sequência · caminhe hoje',
-      ]);
+  static String uiRiskDetail() {
+    final l = L10n.current;
+    return _pick([
+      l.dustUiNoFreeze1,
+      l.dustUiDetail2,
+      l.dustUiDetail3,
+    ]);
+  }
 
   /// Linha do hero card (com countdown). Uma frase: o que acaba, quando, o que fazer.
   static String heroRiskLine({
@@ -141,21 +151,22 @@ class DustCopy {
     required bool hasFreeze,
     int streak = 0,
   }) {
-    final seq = streak <= 1
-        ? 'a sequência'
-        : 'a sequência de $streak dias';
+    final l = L10n.current;
+    // ≤1 dia: "a sequência" sem número (o plural =0/=1 cobre).
+    final n = streak < 0 ? 0 : streak;
     if (hasFreeze) {
-      return '$countdown para $seq cair. Faça a cena hoje — o gelo ainda salva 1 dia.';
+      return l.dustHeroRiskFreeze(n, countdown);
     }
-    return '$countdown para $seq cair. Faça a cena hoje.';
+    return l.dustHeroRiskNoFreeze(n, countdown);
   }
 
   /// Buraco já aberto (ontem vazio). Gelo da semana não cobre de novo.
   static String heroGapLine({required bool hasFreeze}) {
+    final l = L10n.current;
     if (hasFreeze) {
-      return 'Ontem ficou vazio. Faça a cena hoje — o gelo ainda salva 1 dia.';
+      return l.dustHeroGapFreeze;
     }
-    return 'Ontem ficou vazio. Faça a cena hoje para não perder a sequência.';
+    return l.dustHeroGapNoFreeze;
   }
 
   static String _pick(List<String> options) {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_language.dart';
 import '../theme/app_theme.dart';
 import '../utils/difficulty_visuals.dart';
 import '../utils/genesis_theme.dart';
@@ -103,7 +104,7 @@ class _ChapterTitleCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Cena ${_roman(sectionIndex)}',
+            context.l10n.trailsStage(_roman(sectionIndex)),
             style: AppTypography.body(
               size: 12,
               weight: FontWeight.w700,
@@ -150,7 +151,7 @@ class _ChapterTitleCard extends StatelessWidget {
               ),
               const SizedBox(height: 8),
               Text(
-                '$done de $total passos',
+                context.l10n.trailsScenesOf(done, total),
                 style: AppTypography.body(
                   size: 12,
                   weight: FontWeight.w600,
@@ -161,7 +162,9 @@ class _ChapterTitleCard extends StatelessWidget {
           ] else if (total > 0) ...[
             const SizedBox(height: 8),
             Text(
-              done >= total ? 'Concluída' : '$done de $total',
+              done >= total
+                  ? context.l10n.trailsCleared
+                  : context.l10n.trailsDoneOfTotal(done, total),
               style: AppTypography.body(
                 size: 12,
                 weight: FontWeight.w600,

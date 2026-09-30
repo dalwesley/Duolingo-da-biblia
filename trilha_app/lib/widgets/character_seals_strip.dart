@@ -2,6 +2,8 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 
+import '../l10n/app_language.dart';
+
 import '../data/entry_trails.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -100,7 +102,7 @@ class _SealEncounterSheetState extends State<_SealEncounterSheet> {
               ),
               const SizedBox(height: 22),
               CopperCta(
-                label: _busy ? 'Preparando…' : 'Compartilhar',
+                label: _busy ? context.l10n.bibleSharePreparing : context.l10n.commonShare,
                 expanded: true,
                 leading: CinematicGlyph.share,
                 trailing: null,
@@ -141,17 +143,20 @@ class CharacterSealsStrip extends StatelessWidget {
             ),
           ];
 
+    final l10n = context.l10n;
     final subtitle = acquiredOnly
-        ? (unlocked.length == 1
-              ? '1 selo — fato e verso, no texto.'
-              : '${unlocked.length} selos — fato e verso, no texto.')
+        ? l10n.sealsCountFact(unlocked.length)
         : unlocked.isEmpty
         ? (next == null
-              ? 'Fato e verso de quem o texto já mostrou.'
-              : 'Ainda no texto — começa em ${next.name}.')
+              ? l10n.sealsEmptyHint
+              : l10n.sealsStartsAt(next.name))
         : next == null
-        ? '${unlocked.length} de ${CharacterSeals.all.length} — a galeria está cheia.'
-        : '${unlocked.length} de ${CharacterSeals.all.length} — ainda no texto: ${next.name}';
+        ? l10n.sealsAllRevealed(unlocked.length, CharacterSeals.all.length)
+        : l10n.sealsStillInText(
+            unlocked.length,
+            CharacterSeals.all.length,
+            next.name,
+          );
 
     return GlassCard(
       padding: EdgeInsets.zero,
@@ -166,11 +171,11 @@ class CharacterSealsStrip extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   RelicChapter(
-                    title: 'Selos',
+                    title: l10n.sealsTitle,
                     whisper: subtitle,
-                    action: const PrivacyEye(
-                      sections: {CaravanProfileSection.trails},
-                      label: 'Selos e trilhas',
+                    action: PrivacyEye(
+                      sections: const {CaravanProfileSection.trails},
+                      label: l10n.pilgrimSealsAndTrails,
                     ),
                   ),
                   const SizedBox(height: 16),
@@ -252,7 +257,7 @@ class _SealMedallion extends StatelessWidget {
     final a = Appearance.of(context);
     return Semantics(
       button: unlocked,
-      label: unlocked ? 'Selo ${seal.name}' : 'Selo ainda fechado',
+      label: unlocked ? context.l10n.sealsSemanticsNamed(seal.name) : context.l10n.sealsSemanticsLocked,
       child: GestureDetector(
         key: ValueKey(seal.id),
         behavior: HitTestBehavior.opaque,

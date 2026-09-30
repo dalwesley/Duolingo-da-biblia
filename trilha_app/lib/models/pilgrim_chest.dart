@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import '../l10n/l10n_global.dart';
 import 'pilgrim_medal_models.dart';
 import '../widgets/cinematic_icon.dart';
 
@@ -12,19 +13,37 @@ export 'pilgrim_medals.dart' show tierColor;
 class PilgrimChestReward {
   final String id;
   final PilgrimMedalTier tier;
-  final String title;
-  final String message;
   final CinematicGlyph glyph;
   final int weight;
 
   const PilgrimChestReward({
     required this.id,
     required this.tier,
-    required this.title,
-    required this.message,
     required this.glyph,
     required this.weight,
   });
+
+  String get title => switch (id) {
+    'chest:grao' => L10n.current.chestGraoTitle,
+    'chest:passo' => L10n.current.chestPassoTitle,
+    'chest:lampada' => L10n.current.chestLampadaTitle,
+    'chest:mapa' => L10n.current.chestMapaTitle,
+    'chest:guardada' => L10n.current.chestGuardadaTitle,
+    'chest:voz' => L10n.current.chestVozTitle,
+    'chest:bencao' => L10n.current.chestBencaoTitle,
+    _ => L10n.current.chestGraoTitle,
+  };
+
+  String get message => switch (id) {
+    'chest:grao' => L10n.current.chestGraoMessage,
+    'chest:passo' => L10n.current.chestPassoMessage,
+    'chest:lampada' => L10n.current.chestLampadaMessage,
+    'chest:mapa' => L10n.current.chestMapaMessage,
+    'chest:guardada' => L10n.current.chestGuardadaMessage,
+    'chest:voz' => L10n.current.chestVozMessage,
+    'chest:bencao' => L10n.current.chestBencaoMessage,
+    _ => L10n.current.chestGraoMessage,
+  };
 }
 
 class PilgrimChestRewardDefs {
@@ -37,56 +56,42 @@ class PilgrimChestRewardDefs {
     PilgrimChestReward(
       id: 'chest:grao',
       tier: PilgrimMedalTier.iron,
-      title: 'Grão de trigo',
-      message: 'Pequeno hoje, semente de algo maior amanhã.',
       glyph: CinematicGlyph.seed,
       weight: 26,
     ),
     PilgrimChestReward(
       id: 'chest:passo',
       tier: PilgrimMedalTier.iron,
-      title: 'Passo firme',
-      message: 'Mais um dia caminhando — é isso que forma um peregrino.',
       glyph: CinematicGlyph.path,
       weight: 26,
     ),
     PilgrimChestReward(
       id: 'chest:lampada',
       tier: PilgrimMedalTier.bronze,
-      title: 'Lâmpada acesa',
-      message: '"Lâmpada para os meus pés é a tua palavra" — Salmos 119:105.',
       glyph: CinematicGlyph.lamp,
       weight: 18,
     ),
     PilgrimChestReward(
       id: 'chest:mapa',
       tier: PilgrimMedalTier.bronze,
-      title: 'Mapa do dia',
-      message: 'Uma curiosidade guardada: cada capítulo lido soma na sua trilha.',
       glyph: CinematicGlyph.scroll,
       weight: 18,
     ),
     PilgrimChestReward(
       id: 'chest:guardada',
       tier: PilgrimMedalTier.silver,
-      title: 'Palavra guardada',
-      message: 'Este momento vale um versículo guardado no coração hoje.',
       glyph: CinematicGlyph.heart,
       weight: 8,
     ),
     PilgrimChestReward(
       id: 'chest:voz',
       tier: PilgrimMedalTier.gold,
-      title: 'Voz da caravana',
-      message: 'Sua sequência já fala mais alto que qualquer palavra.',
       glyph: CinematicGlyph.share,
       weight: 3,
     ),
     PilgrimChestReward(
       id: 'chest:bencao',
       tier: PilgrimMedalTier.mirra,
-      title: 'Bênção rara',
-      message: '"O Senhor te abençoe e te guarde" — Números 6:24.',
       glyph: CinematicGlyph.star,
       weight: 1,
     ),

@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:path/path.dart' as p;
 import 'package:sqflite/sqflite.dart';
 
+import '../l10n/l10n_global.dart';
 import '../utils/lexicon_pt_overrides.dart';
 import '../utils/morphology.dart';
 
@@ -132,10 +133,7 @@ class BibleStudyService {
   BibleStudyService._();
 
   static const assetPath = 'assets/data/bible_study.sqlite.gz';
-  static const attribution =
-      'Léxico e texto etiquetado: STEPBible / Tyndale House Cambridge (CC BY 4.0). '
-      'Referências cruzadas: openbible.info (CC BY). '
-      'Definições traduzidas automaticamente para português.';
+  static String get attribution => L10n.current.verseStudyAttribution;
 
   Database? _db;
   Future<Database>? _opening;

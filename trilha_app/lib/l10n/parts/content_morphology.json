@@ -1,0 +1,644 @@
+{
+  "morphLangHebrew": {
+    "pt": "hebraico",
+    "en": "Hebrew",
+    "es": "hebreo"
+  },
+  "morphLangAramaic": {
+    "pt": "aramaico",
+    "en": "Aramaic",
+    "es": "arameo"
+  },
+  "morphLangGreek": {
+    "pt": "grego",
+    "en": "Greek",
+    "es": "griego"
+  },
+  "morphPrep": {
+    "pt": "preposição",
+    "en": "preposition",
+    "es": "preposición"
+  },
+  "morphArticle": {
+    "pt": "artigo",
+    "en": "article",
+    "es": "artículo"
+  },
+  "morphObjectMarker": {
+    "pt": "marcador de objeto",
+    "en": "object marker",
+    "es": "marcador de objeto"
+  },
+  "morphConjConsecutive": {
+    "pt": "conjunção consecut./conj.",
+    "en": "consecutive conjunction",
+    "es": "conjunción consecutiva"
+  },
+  "morphConjunction": {
+    "pt": "conjunção",
+    "en": "conjunction",
+    "es": "conjunción"
+  },
+  "morphAdverb": {
+    "pt": "advérbio",
+    "en": "adverb",
+    "es": "adverbio"
+  },
+  "morphPronominalSuffix": {
+    "pt": "sufixo pronominal",
+    "en": "pronominal suffix",
+    "es": "sufijo pronominal"
+  },
+  "morphInterjection": {
+    "pt": "interjeição",
+    "en": "interjection",
+    "es": "interjección"
+  },
+  "morphRelativeParticle": {
+    "pt": "partícula relativa",
+    "en": "relative particle",
+    "es": "partícula relativa"
+  },
+  "morphNegativeParticle": {
+    "pt": "partícula negativa",
+    "en": "negative particle",
+    "es": "partícula negativa"
+  },
+  "morphParticle": {
+    "pt": "partícula",
+    "en": "particle",
+    "es": "partícula"
+  },
+  "morphDemonstrativeArticle": {
+    "pt": "artigo demonstrativo",
+    "en": "demonstrative article",
+    "es": "artículo demostrativo"
+  },
+  "morphVerb": {
+    "pt": "verbo",
+    "en": "verb",
+    "es": "verbo"
+  },
+  "morphNoun": {
+    "pt": "substantivo",
+    "en": "noun",
+    "es": "sustantivo"
+  },
+  "morphSuffix": {
+    "pt": "sufixo",
+    "en": "suffix",
+    "es": "sufijo"
+  },
+  "morphAdjective": {
+    "pt": "adjetivo",
+    "en": "adjective",
+    "es": "adjetivo"
+  },
+  "morphAdverbConjAc": {
+    "pt": "advérbio/conj. (ac)",
+    "en": "adverb/conj. (ac)",
+    "es": "adverbio/conj. (ac)"
+  },
+  "morphStemQal": {
+    "pt": "qal",
+    "en": "qal",
+    "es": "qal"
+  },
+  "morphStemNifal": {
+    "pt": "nifal",
+    "en": "nifal",
+    "es": "nifal"
+  },
+  "morphStemPiel": {
+    "pt": "piel",
+    "en": "piel",
+    "es": "piel"
+  },
+  "morphStemPual": {
+    "pt": "pual",
+    "en": "pual",
+    "es": "pual"
+  },
+  "morphStemHifil": {
+    "pt": "hifil",
+    "en": "hiphil",
+    "es": "hifil"
+  },
+  "morphStemHofal": {
+    "pt": "hofal",
+    "en": "hophal",
+    "es": "hofal"
+  },
+  "morphStemHitpael": {
+    "pt": "hitpael",
+    "en": "hithpael",
+    "es": "hitpael"
+  },
+  "morphStemPolal": {
+    "pt": "polal",
+    "en": "polal",
+    "es": "polal"
+  },
+  "morphStemPulal": {
+    "pt": "pulal",
+    "en": "pulal",
+    "es": "pulal"
+  },
+  "morphTensePerfect": {
+    "pt": "perfeito",
+    "en": "perfect",
+    "es": "perfecto"
+  },
+  "morphTenseWayyiqtol": {
+    "pt": "sequencial imperfecto (wayyiqtol)",
+    "en": "sequential imperfect (wayyiqtol)",
+    "es": "imperfecto secuencial (wayyiqtol)"
+  },
+  "morphTenseImperfectHeb": {
+    "pt": "imperfecto",
+    "en": "imperfect",
+    "es": "imperfecto"
+  },
+  "morphTenseWeqatal": {
+    "pt": "sequencial perfeito (weqatal)",
+    "en": "sequential perfect (weqatal)",
+    "es": "perfecto secuencial (weqatal)"
+  },
+  "morphTenseCohortative": {
+    "pt": "coortativo",
+    "en": "cohortative",
+    "es": "cohortativo"
+  },
+  "morphTenseJussive": {
+    "pt": "jussivo",
+    "en": "jussive",
+    "es": "yusivo"
+  },
+  "morphTenseImperative": {
+    "pt": "imperativo",
+    "en": "imperative",
+    "es": "imperativo"
+  },
+  "morphTenseInfConstruct": {
+    "pt": "infinitivo construto",
+    "en": "infinitive construct",
+    "es": "infinitivo constructo"
+  },
+  "morphTenseInfAbsolute": {
+    "pt": "infinitivo absoluto",
+    "en": "infinitive absolute",
+    "es": "infinitivo absoluto"
+  },
+  "morphTenseParticiple": {
+    "pt": "particípio",
+    "en": "participle",
+    "es": "participio"
+  },
+  "morphTenseParticiplePassive": {
+    "pt": "particípio passivo",
+    "en": "passive participle",
+    "es": "participio pasivo"
+  },
+  "morphTensePresent": {
+    "pt": "presente",
+    "en": "present",
+    "es": "presente"
+  },
+  "morphTenseImperfectGk": {
+    "pt": "imperfeito",
+    "en": "imperfect",
+    "es": "imperfecto"
+  },
+  "morphTenseFuture": {
+    "pt": "futuro",
+    "en": "future",
+    "es": "futuro"
+  },
+  "morphTenseAorist": {
+    "pt": "aoristo",
+    "en": "aorist",
+    "es": "aoristo"
+  },
+  "morphTensePluperfect": {
+    "pt": "mais-que-perfeito",
+    "en": "pluperfect",
+    "es": "pluscuamperfecto"
+  },
+  "morphTenseUndefined": {
+    "pt": "tempo indefinido",
+    "en": "undefined tense",
+    "es": "tiempo indefinido"
+  },
+  "morphTenseSecondAorist": {
+    "pt": "2º aoristo/futuro",
+    "en": "2nd aorist/future",
+    "es": "2.º aoristo/futuro"
+  },
+  "morphNounCommon": {
+    "pt": "comum",
+    "en": "common",
+    "es": "común"
+  },
+  "morphNounGentilic": {
+    "pt": "gentílico",
+    "en": "gentilic",
+    "es": "gentilicio"
+  },
+  "morphNounProper": {
+    "pt": "próprio",
+    "en": "proper",
+    "es": "propio"
+  },
+  "morphNounTitle": {
+    "pt": "título",
+    "en": "title",
+    "es": "título"
+  },
+  "morphNounPlace": {
+    "pt": "lugar",
+    "en": "place",
+    "es": "lugar"
+  },
+  "morphDivineName": {
+    "pt": "nome divino",
+    "en": "divine name",
+    "es": "nombre divino"
+  },
+  "morphMasc": {
+    "pt": "masc.",
+    "en": "masc.",
+    "es": "masc."
+  },
+  "morphFem": {
+    "pt": "fem.",
+    "en": "fem.",
+    "es": "fem."
+  },
+  "morphBoth": {
+    "pt": "ambos",
+    "en": "both",
+    "es": "ambos"
+  },
+  "morphNeuter": {
+    "pt": "neutro",
+    "en": "neuter",
+    "es": "neutro"
+  },
+  "morphSing": {
+    "pt": "sing.",
+    "en": "sg.",
+    "es": "sing."
+  },
+  "morphPl": {
+    "pt": "pl.",
+    "en": "pl.",
+    "es": "pl."
+  },
+  "morphDual": {
+    "pt": "dual",
+    "en": "dual",
+    "es": "dual"
+  },
+  "morphAbsolute": {
+    "pt": "absoluto",
+    "en": "absolute",
+    "es": "absoluto"
+  },
+  "morphConstruct": {
+    "pt": "construto",
+    "en": "construct",
+    "es": "constructo"
+  },
+  "morphDetermined": {
+    "pt": "determinado",
+    "en": "determined",
+    "es": "determinado"
+  },
+  "morphSuffixPronominal": {
+    "pt": "pronominal",
+    "en": "pronominal",
+    "es": "pronominal"
+  },
+  "morphSuffixDirectional": {
+    "pt": "direcional",
+    "en": "directional",
+    "es": "direccional"
+  },
+  "morphSuffixParagogic": {
+    "pt": "paragógico",
+    "en": "paragogic",
+    "es": "paragógico"
+  },
+  "morphSuffixNunParagogic": {
+    "pt": "nun paragógico",
+    "en": "paragogic nun",
+    "es": "nun paragógico"
+  },
+  "morphPerson1": {
+    "pt": "1ª pessoa",
+    "en": "1st person",
+    "es": "1.ª persona"
+  },
+  "morphPerson2": {
+    "pt": "2ª pessoa",
+    "en": "2nd person",
+    "es": "2.ª persona"
+  },
+  "morphPerson3": {
+    "pt": "3ª pessoa",
+    "en": "3rd person",
+    "es": "3.ª persona"
+  },
+  "morphPerson1s": {
+    "pt": "1ª sing.",
+    "en": "1st sg.",
+    "es": "1.ª sing."
+  },
+  "morphPerson2s": {
+    "pt": "2ª sing.",
+    "en": "2nd sg.",
+    "es": "2.ª sing."
+  },
+  "morphPerson3s": {
+    "pt": "3ª sing.",
+    "en": "3rd sg.",
+    "es": "3.ª sing."
+  },
+  "morphPerson1p": {
+    "pt": "1ª pl.",
+    "en": "1st pl.",
+    "es": "1.ª pl."
+  },
+  "morphPerson2p": {
+    "pt": "2ª pl.",
+    "en": "2nd pl.",
+    "es": "2.ª pl."
+  },
+  "morphPerson3p": {
+    "pt": "3ª pl.",
+    "en": "3rd pl.",
+    "es": "3.ª pl."
+  },
+  "morphPronounPersonal": {
+    "pt": "pronome pessoal",
+    "en": "personal pronoun",
+    "es": "pronombre personal"
+  },
+  "morphPronounRelative": {
+    "pt": "pronome relativo",
+    "en": "relative pronoun",
+    "es": "pronombre relativo"
+  },
+  "morphPronounReciprocal": {
+    "pt": "pronome reciproc./correl.",
+    "en": "reciprocal/correlative pronoun",
+    "es": "pronombre recíproco/correl."
+  },
+  "morphPronounDemonstrative": {
+    "pt": "pronome demonstrativo",
+    "en": "demonstrative pronoun",
+    "es": "pronombre demostrativo"
+  },
+  "morphParticleInterrogative": {
+    "pt": "partícula interrogativa",
+    "en": "interrogative particle",
+    "es": "partícula interrogativa"
+  },
+  "morphPronounReflexive": {
+    "pt": "pronome reflexivo",
+    "en": "reflexive pronoun",
+    "es": "pronombre reflexivo"
+  },
+  "morphPronounPossessive": {
+    "pt": "pronome possessivo",
+    "en": "possessive pronoun",
+    "es": "pronombre posesivo"
+  },
+  "morphVoiceActive": {
+    "pt": "ativa",
+    "en": "active",
+    "es": "activa"
+  },
+  "morphVoiceMiddle": {
+    "pt": "média",
+    "en": "middle",
+    "es": "media"
+  },
+  "morphVoicePassive": {
+    "pt": "passiva",
+    "en": "passive",
+    "es": "pasiva"
+  },
+  "morphVoiceMiddlePassive": {
+    "pt": "médio-passiva",
+    "en": "middle-passive",
+    "es": "medio-pasiva"
+  },
+  "morphVoiceMiddleDeponent": {
+    "pt": "média deponente",
+    "en": "middle deponent",
+    "es": "media deponente"
+  },
+  "morphVoicePassiveDeponent": {
+    "pt": "passiva deponente",
+    "en": "passive deponent",
+    "es": "pasiva deponente"
+  },
+  "morphVoiceMidPassDeponent": {
+    "pt": "médio-passiva deponente",
+    "en": "middle-passive deponent",
+    "es": "medio-pasiva deponente"
+  },
+  "morphVoiceImpersonal": {
+    "pt": "impessoal",
+    "en": "impersonal",
+    "es": "impersonal"
+  },
+  "morphMoodIndicative": {
+    "pt": "indicativo",
+    "en": "indicative",
+    "es": "indicativo"
+  },
+  "morphMoodSubjunctive": {
+    "pt": "subjuntivo",
+    "en": "subjunctive",
+    "es": "subjuntivo"
+  },
+  "morphMoodOptative": {
+    "pt": "optativo",
+    "en": "optative",
+    "es": "optativo"
+  },
+  "morphMoodImperative": {
+    "pt": "imperativo",
+    "en": "imperative",
+    "es": "imperativo"
+  },
+  "morphMoodInfinitive": {
+    "pt": "infinitivo",
+    "en": "infinitive",
+    "es": "infinitivo"
+  },
+  "morphMoodParticiple": {
+    "pt": "particípio",
+    "en": "participle",
+    "es": "participio"
+  },
+  "morphCaseNominative": {
+    "pt": "nominativo",
+    "en": "nominative",
+    "es": "nominativo"
+  },
+  "morphCaseGenitive": {
+    "pt": "genitivo",
+    "en": "genitive",
+    "es": "genitivo"
+  },
+  "morphCaseDative": {
+    "pt": "dativo",
+    "en": "dative",
+    "es": "dativo"
+  },
+  "morphCaseAccusative": {
+    "pt": "acusativo",
+    "en": "accusative",
+    "es": "acusativo"
+  },
+  "morphCaseVocative": {
+    "pt": "vocativo",
+    "en": "vocative",
+    "es": "vocativo"
+  },
+  "morphExtraProper": {
+    "pt": "nome próprio",
+    "en": "proper name",
+    "es": "nombre propio"
+  },
+  "morphExtraTitle": {
+    "pt": "título",
+    "en": "title",
+    "es": "título"
+  },
+  "morphExtraLocal": {
+    "pt": "local",
+    "en": "local",
+    "es": "local"
+  },
+  "morphExtraGentilic": {
+    "pt": "gentílico",
+    "en": "gentilic",
+    "es": "gentilicio"
+  },
+  "morphNumberSingular": {
+    "pt": "singular",
+    "en": "singular",
+    "es": "singular"
+  },
+  "morphNumberPlural": {
+    "pt": "plural",
+    "en": "plural",
+    "es": "plural"
+  },
+  "morphNumberDual": {
+    "pt": "dual",
+    "en": "dual",
+    "es": "dual"
+  },
+  "morphInConstruct": {
+    "pt": "em construto",
+    "en": "in construct",
+    "es": "en constructo"
+  },
+  "morphPhrasePrepSuffixGloss": {
+    "pt": "Preposição com sufixo — {gloss}.",
+    "en": "Preposition with suffix — {gloss}.",
+    "es": "Preposición con sufijo — {gloss}.",
+    "placeholders": {
+      "gloss": "String"
+    }
+  },
+  "morphPhrasePrepSuffix": {
+    "pt": "Preposição com sufixo pronominal.",
+    "en": "Preposition with pronominal suffix.",
+    "es": "Preposición con sufijo pronominal."
+  },
+  "morphPhrasePrepGloss": {
+    "pt": "Preposição — {gloss}.",
+    "en": "Preposition — {gloss}.",
+    "es": "Preposición — {gloss}.",
+    "placeholders": {
+      "gloss": "String"
+    }
+  },
+  "morphPhrasePrep": {
+    "pt": "Preposição.",
+    "en": "Preposition.",
+    "es": "Preposición."
+  },
+  "morphPhraseConjGloss": {
+    "pt": "Conjunção — {gloss}.",
+    "en": "Conjunction — {gloss}.",
+    "es": "Conjunción — {gloss}.",
+    "placeholders": {
+      "gloss": "String"
+    }
+  },
+  "morphPhraseConj": {
+    "pt": "Conjunção.",
+    "en": "Conjunction.",
+    "es": "Conjunción."
+  },
+  "morphPhraseHeadGloss": {
+    "pt": "{head} — {gloss}.",
+    "en": "{head} — {gloss}.",
+    "es": "{head} — {gloss}.",
+    "placeholders": {
+      "head": "String",
+      "gloss": "String"
+    }
+  },
+  "morphPhraseHead": {
+    "pt": "{head}.",
+    "en": "{head}.",
+    "es": "{head}.",
+    "placeholders": {
+      "head": "String"
+    }
+  },
+  "morphPhraseVerbBits": {
+    "pt": "{bits} — {gloss}.",
+    "en": "{bits} — {gloss}.",
+    "es": "{bits} — {gloss}.",
+    "placeholders": {
+      "bits": "String",
+      "gloss": "String"
+    }
+  },
+  "morphPhraseVerbBitsPlain": {
+    "pt": "{bits}.",
+    "en": "{bits}.",
+    "es": "{bits}.",
+    "placeholders": {
+      "bits": "String"
+    }
+  },
+  "morphPhrasePersonOfNumber": {
+    "pt": "{person} do {number}",
+    "en": "{person} {number}",
+    "es": "{person} del {number}",
+    "placeholders": {
+      "person": "String",
+      "number": "String"
+    }
+  },
+  "morphGenderMasculine": {
+    "pt": "masculino",
+    "en": "masculine",
+    "es": "masculino"
+  },
+  "morphGenderFeminine": {
+    "pt": "feminino",
+    "en": "feminine",
+    "es": "femenino"
+  }
+}

@@ -100,7 +100,7 @@ void main() {
 
     expect(find.text('O Senhor é o meu pastor'), findsOneWidget);
     expect(find.text('AMANHÃ'), findsOneWidget);
-    expect(find.text('ABRIR AGORA'), findsOneWidget);
+    expect(find.text('Próxima cena'), findsOneWidget);
 
     final card = tester.getSize(find.byType(HeroContinueCard));
     expect(card.height, AppMetrics.heroStageHeight(800));

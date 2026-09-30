@@ -1,3 +1,4 @@
+import '../l10n/l10n_global.dart';
 import '../models/difficulty.dart';
 import '../models/trail.dart';
 import '../models/trail_catalog.dart';
@@ -67,8 +68,8 @@ class TrailProgress {
       for (final d in orderedClearedDifficulties(clearedModes)) d.labelPt,
     ];
     if (labels.isEmpty) return null;
-    if (labels.length == 1) return '${labels.first} concluída';
-    return '${labels.join(' · ')} concluídas';
+    if (labels.length == 1) return L10n.current.trailsModeCleared(labels.first);
+    return L10n.current.trailsModesCleared(labels.join(' · '));
   }
 
   /// Progresso do modo ativo: "Observação concluída" quando já selado.
@@ -80,12 +81,10 @@ class TrailProgress {
   }) {
     final label = modeLabel(activeDifficultyId);
     final active = activeDifficultyId ?? TrailDifficulty.semente.id;
-    if (total > 0 &&
-        clearedModes.contains(active) &&
-        liveDone >= total) {
-      return '$label concluída';
+    if (total > 0 && clearedModes.contains(active) && liveDone >= total) {
+      return L10n.current.trailsModeCleared(label);
     }
-    return '$label · $liveDone de $total cenas';
+    return L10n.current.trailsLabeledScenesOf(label, liveDone, total);
   }
 
   /// True quando há modo limpo e o modo ativo ainda não foi concluído
@@ -114,9 +113,9 @@ class TrailProgress {
     final clearedLabel = ordered.isNotEmpty
         ? ordered.last.labelPt
         : (TrailDifficulty.fromId(clearedModes.last)?.labelPt ??
-            clearedModes.last);
+              clearedModes.last);
     final activeLabel = TrailDifficulty.fromId(active)?.labelPt ?? active;
-    return '$clearedLabel concluída · progresso abaixo é do modo $activeLabel';
+    return L10n.current.trailsModeReplayHint(clearedLabel, activeLabel);
   }
 
   /// Quando o modo ativo já está selado — convite ao próximo, sem zerar a cena.
@@ -131,9 +130,9 @@ class TrailProgress {
     final next = current?.next;
     final label = current?.labelPt ?? active;
     if (next == null) {
-      return '$label concluída · os três modos desta trilha estão selados';
+      return L10n.current.trailsModeAllSealed(label);
     }
-    return '$label concluída · o próximo modo é ${next.labelPt}';
+    return L10n.current.trailsModeNextHint(label, next.labelPt);
   }
 
   static String modeLabel(String? difficultyId) {
@@ -154,7 +153,8 @@ class TrailProgress {
     required String? activeDifficultyId,
     required List<String> clearedModes,
   }) {
-    final start = TrailDifficulty.fromId(
+    final start =
+        TrailDifficulty.fromId(
           activeDifficultyId ?? TrailDifficulty.semente.id,
         ) ??
         TrailDifficulty.semente;
@@ -173,8 +173,10 @@ class TrailProgress {
   }) {
     final label = modeLabel(difficultyId);
     final active = difficultyId ?? TrailDifficulty.semente.id;
-    if (clearedModes.contains(active)) return '$label concluída';
-    return 'Modo $label';
+    if (clearedModes.contains(active)) {
+      return L10n.current.trailsModeCleared(label);
+    }
+    return L10n.current.trailsModeChip(label);
   }
 
   /// Trilha liberada se não há pré-requisito, se a pré-requisito está
@@ -192,8 +194,9 @@ class TrailProgress {
     if (trail.slug == 'ansiedade' || trail.slug == 'recomeco') return true;
     if (trail.realmId == TrailRealm.novoTestamento.id) return true;
     if (trail.unlockAfter == null) return true;
-    final prereq =
-        allTrails.where((t) => t.slug == trail.unlockAfter).firstOrNull;
+    final prereq = allTrails
+        .where((t) => t.slug == trail.unlockAfter)
+        .firstOrNull;
     if (prereq == null) return true;
     if (isTrailCompleted(
       prereq,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import '../l10n/app_language.dart';
 import '../models/question_report.dart';
 import '../services/backend_service.dart';
 import '../services/question_report_service.dart';
@@ -73,8 +74,8 @@ class _QuestionReportSheetState extends State<_QuestionReportSheet> {
       setState(() {
         _sending = false;
         _error = backend.isActive
-            ? 'Não foi possível enviar. Tente de novo.'
-            : 'Entre com Google para enviar o relato.';
+            ? context.l10n.reportSendError
+            : context.l10n.reportSignInRequired;
       });
       return;
     }
@@ -105,7 +106,7 @@ class _QuestionReportSheetState extends State<_QuestionReportSheet> {
                 const SizedBox(width: 12),
                 Expanded(
                   child: Text(
-                    'Relatar problema',
+                    context.l10n.reportTitle,
                     style: AppTypography.title(size: 18, color: a.text),
                   ),
                 ),
@@ -122,7 +123,7 @@ class _QuestionReportSheetState extends State<_QuestionReportSheet> {
             ),
             const SizedBox(height: 6),
             Text(
-              'Ajude a melhorar a trilha — erro teológico, interpretação, resposta ou texto.',
+              context.l10n.reportIntro,
               style: AppTypography.body(
                 size: 13,
                 height: 1.4,
@@ -166,9 +167,7 @@ class _QuestionReportSheetState extends State<_QuestionReportSheet> {
                                 ? Icons.radio_button_checked
                                 : Icons.radio_button_off,
                             size: 20,
-                            color: selected
-                                ? AppColors.accent
-                                : a.textFaint,
+                            color: selected ? AppColors.accent : a.textFaint,
                           ),
                           const SizedBox(width: 10),
                           Expanded(
@@ -209,17 +208,11 @@ class _QuestionReportSheetState extends State<_QuestionReportSheet> {
               textCapitalization: TextCapitalization.sentences,
               style: AppTypography.body(size: 14, color: a.text),
               decoration: InputDecoration(
-                hintText: 'Opcional: conte o que parece errado…',
-                hintStyle: AppTypography.body(
-                  size: 14,
-                  color: a.textFaint,
-                ),
+                hintText: context.l10n.reportCommentHint,
+                hintStyle: AppTypography.body(size: 14, color: a.textFaint),
                 filled: true,
                 fillColor: a.text.withValues(alpha: 0.04),
-                counterStyle: AppTypography.body(
-                  size: 11,
-                  color: a.textFaint,
-                ),
+                counterStyle: AppTypography.body(size: 11, color: a.textFaint),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(AppRadii.sm),
                   borderSide: BorderSide(color: a.cardBorder),
@@ -245,7 +238,9 @@ class _QuestionReportSheetState extends State<_QuestionReportSheet> {
             ],
             const SizedBox(height: 12),
             CopperCta(
-              label: _sending ? 'Enviando…' : 'Enviar relato',
+              label: _sending
+                  ? context.l10n.reportSending
+                  : context.l10n.reportSend,
               trailing: null,
               busy: _sending,
               onTap: canSend ? _submit : null,

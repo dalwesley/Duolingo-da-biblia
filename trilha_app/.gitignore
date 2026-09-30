@@ -60,3 +60,7 @@ assets/data/bible_study.sqlite
 # Tradução do léxico (cache + venv local)
 .venv-translate/
 scripts/.lexicon_pt_cache.json
+.venv-l10n/
+tool/.content_overlay_cache.json
+tool/.question_overlay_cache.json
+tool/question_overlay_partials/

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../l10n/app_language.dart';
 import '../models/question_report.dart';
 import '../models/trail.dart';
 import '../services/bible_service.dart';
@@ -20,6 +21,12 @@ class ExerciseFeedbackDialog extends StatefulWidget {
   final Color accent;
   final bool outOfLamps;
   final VoidCallback onContinue;
+
+  /// Deixar a pergunta para o fim da cena (com [willRequeue]).
+  final VoidCallback? onSkip;
+
+  /// Abre o texto da cena por cima — reler antes de tentar de novo.
+  final VoidCallback? onReadPassage;
   final String missionSlug;
   final String? trailSlug;
   final String? difficulty;
@@ -27,6 +34,12 @@ class ExerciseFeedbackDialog extends StatefulWidget {
 
   /// Acertos seguidos — a partir de 2 aparece no título.
   final int combo;
+
+  /// Erro que revela a resposta certa e o trecho que a prova.
+  final bool revealAnswer;
+
+  /// 2º erro: o aluno escolhe tentar de novo ou pular para o fim da cena.
+  final bool willRequeue;
 
   const ExerciseFeedbackDialog({
     super.key,
@@ -36,12 +49,16 @@ class ExerciseFeedbackDialog extends StatefulWidget {
     required this.isLast,
     required this.accent,
     required this.onContinue,
+    this.onSkip,
+    this.onReadPassage,
     required this.missionSlug,
     this.outOfLamps = false,
     this.trailSlug,
     this.difficulty,
     this.practiceMode = false,
     this.combo = 0,
+    this.revealAnswer = false,
+    this.willRequeue = false,
   });
 
   @override
@@ -70,7 +87,16 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
     caseSensitive: false,
   );
 
-  bool get _needsEvidence => !widget.isCorrect || widget.outOfLamps;
+  /// Tentar de novo e pular não mostram versículo nem porquê: o palco já
+  /// está na tela, e o porquê entregaria a resposta.
+  bool get _needsEvidence => _reveal || widget.outOfLamps;
+
+  bool get _holdsAnswer => !widget.isCorrect && !_reveal && !widget.outOfLamps;
+
+  bool get _reveal => !widget.isCorrect && widget.revealAnswer;
+
+  String get _span =>
+      _reveal ? (widget.exercise.evidenceSpan ?? '').trim() : '';
 
   @override
   void initState() {
@@ -124,6 +150,13 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
     widget.onContinue();
   }
 
+  void _skip() {
+    if (_advanced || !mounted) return;
+    _advanced = true;
+    _auto.stop();
+    (widget.onSkip ?? widget.onContinue)();
+  }
+
   String _compactFeedback(String raw) {
     final t = raw.trim();
     if (t.isEmpty) return t;
@@ -135,6 +168,7 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
   Future<void> _loadVerse() async {
     final existing = (widget.exercise.passageText ?? '').trim();
     final hint = [
+      if (_span.isNotEmpty) _span,
       widget.exercise.prompt,
       widget.exercise.displayCue,
       widget.selected,
@@ -144,7 +178,7 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
         () => _verseText = SessionComposer.clipFeedbackPassage(
           existing,
           hint: hint,
-          maxWords: 24,
+          maxWords: _span.isNotEmpty ? 32 : 24,
         ),
       );
       return;
@@ -160,7 +194,7 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
       () => _verseText = SessionComposer.clipFeedbackPassage(
         full.trim(),
         hint: hint,
-        maxWords: 24,
+        maxWords: _span.isNotEmpty ? 32 : 24,
       ),
     );
   }
@@ -196,15 +230,7 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
       ),
     );
     if (!mounted || !ok) return;
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(
-          'Relato enviado. Obrigado.',
-          style: AppTypography.body(color: AppColors.textOnDark),
-        ),
-        backgroundColor: AppColors.nightElevated,
-      ),
-    );
+    showAppToastFor(context, message: context.l10n.feedbackReportSent);
   }
 
   @override
@@ -215,22 +241,41 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
     final outOfLamps = widget.outOfLamps;
     final color = isCorrect ? accent : AppColors.error;
     final a = Appearance.of(context);
-    final feedback = _compactFeedback(
-      exercise.feedbackFor(widget.selected, correct: isCorrect),
-    );
-    const cheers = ['Acertou!', 'Isso!', 'Muito bem!', 'Na mosca!'];
+    final l10n = context.l10n;
+    final feedback = _holdsAnswer
+        ? (widget.willRequeue
+              ? l10n.feedbackRequeueHint
+              : l10n.feedbackRereadHint)
+        : _compactFeedback(
+            exercise.feedbackFor(widget.selected, correct: isCorrect),
+          );
+    final cheers = [
+      l10n.feedbackCheer1,
+      l10n.feedbackCheer2,
+      l10n.feedbackCheer3,
+      l10n.feedbackCheer4,
+    ];
     final combo = widget.combo;
     final cheer = cheers[(combo - 1).clamp(0, cheers.length - 1)];
+    final reveal = _reveal;
+    final answer = reveal ? (exercise.revealText ?? '').trim() : '';
     final title = outOfLamps
-        ? 'Sem lâmpadas'
+        ? l10n.feedbackOutOfLamps
         : isCorrect
         ? (combo >= 2 ? '$cheer  ×$combo' : cheer)
-        : 'Quase';
+        : reveal
+        ? l10n.feedbackSeeText
+        : widget.willRequeue
+        ? l10n.feedbackNotYet
+        : l10n.feedbackAlmost;
     final cta = outOfLamps
-        ? 'Encerrar com passos parciais'
+        ? l10n.feedbackEndPartial
         : isCorrect
-        ? 'Continuar'
-        : 'Tentar de novo';
+        ? l10n.commonContinue
+        : reveal
+        ? l10n.commonContinue
+        : l10n.commonTryAgain;
+    final canSkip = widget.willRequeue && !outOfLamps && !isCorrect;
     final glyph = outOfLamps
         ? CinematicGlyph.lamp
         : isCorrect
@@ -324,7 +369,7 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
                                   ),
                                 ),
                                 IconButton(
-                                  tooltip: 'Relatar problema nesta pergunta',
+                                  tooltip: l10n.feedbackReportTooltip,
                                   onPressed: _report,
                                   visualDensity: VisualDensity.compact,
                                   padding: EdgeInsets.zero,
@@ -357,6 +402,29 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
                                 ),
                               ),
                             ],
+                            if (_holdsAnswer &&
+                                widget.onReadPassage != null) ...[
+                              const SizedBox(height: 4),
+                              Align(
+                                alignment: Alignment.centerLeft,
+                                child: TextCta(
+                                  label: l10n.feedbackReadPassage,
+                                  leading: CinematicGlyph.book,
+                                  color: accent,
+                                  onTap: widget.onReadPassage,
+                                ),
+                              ),
+                            ],
+                            if (answer.isNotEmpty) ...[
+                              const SizedBox(height: 12),
+                              Padding(
+                                padding: const EdgeInsets.only(right: 12),
+                                child: _AnswerReveal(
+                                  answer: answer,
+                                  accent: accent,
+                                ),
+                              ),
+                            ],
                             if (showVerse) ...[
                               const SizedBox(height: 16),
                               Padding(
@@ -365,6 +433,8 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
                                   reference: ref,
                                   verse: verse,
                                   accent: color,
+                                  highlight: _span,
+                                  highlightColor: accent,
                                 ),
                               ),
                             ],
@@ -376,7 +446,7 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
                                 builder: (context, _) => CopperCta(
                                   label: cta,
                                   onTap: _advance,
-                                  trailing: isCorrect
+                                  trailing: isCorrect || reveal
                                       ? CinematicGlyph.forward
                                       : CinematicGlyph.refresh,
                                   showArrow: false,
@@ -384,6 +454,18 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
                                 ),
                               ),
                             ),
+                            if (canSkip) ...[
+                              const SizedBox(height: 8),
+                              Padding(
+                                padding: const EdgeInsets.only(right: 12),
+                                child: GhostCta(
+                                  label: l10n.feedbackSkipToEnd,
+                                  expanded: true,
+                                  matchCopper: true,
+                                  onTap: _skip,
+                                ),
+                              ),
+                            ],
                           ],
                         ),
                       ),
@@ -471,16 +553,77 @@ class _VerdictMark extends StatelessWidget {
   }
 }
 
+/// Resposta certa revelada no segundo erro.
+class _AnswerReveal extends StatelessWidget {
+  final String answer;
+  final Color accent;
+
+  const _AnswerReveal({required this.answer, required this.accent});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return InsetPanel(
+      borderColor: accent.withValues(alpha: 0.4),
+      padding: const EdgeInsets.fromLTRB(14, 10, 14, 12),
+      child: SizedBox(
+        width: double.infinity,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              context.l10n.feedbackAnswer,
+              style: AppTypography.label(
+                size: 11,
+                letterSpacing: 1.2,
+                color: accent,
+              ),
+            ),
+            const SizedBox(height: 6),
+            Text(
+              answer,
+              style: AppTypography.body(
+                size: 15,
+                weight: FontWeight.w700,
+                height: 1.4,
+                color: a.text,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
 class _VerseWell extends StatelessWidget {
   final String reference;
   final String verse;
   final Color accent;
 
+  /// Trecho que prova a resposta — acende dentro do versículo.
+  final String highlight;
+  final Color? highlightColor;
+
   const _VerseWell({
     required this.reference,
     required this.verse,
     required this.accent,
+    this.highlight = '',
+    this.highlightColor,
   });
+
+  /// Posição do trecho no versículo, ignorando caixa e pontuação nas bordas.
+  (int, int)? _spanRange() {
+    final needle = highlight
+        .trim()
+        .replaceAll(RegExp(r'^[^\p{L}]+|[^\p{L}]+$', unicode: true), '')
+        .toLowerCase();
+    if (needle.isEmpty) return null;
+    final i = verse.toLowerCase().indexOf(needle);
+    if (i < 0) return null;
+    return (i, i + needle.length);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -503,18 +646,46 @@ class _VerseWell extends StatelessWidget {
                 ),
               ),
             if (reference.isNotEmpty) const SizedBox(height: 8),
-            Text(
-              verse,
-              textAlign: TextAlign.center,
-              maxLines: 4,
-              overflow: TextOverflow.ellipsis,
-              style: AppTypography.verse(
+            () {
+              final base = AppTypography.verse(
                 size: 15,
                 weight: FontWeight.w600,
                 height: 1.4,
                 color: a.textSecondary,
-              ),
-            ),
+              );
+              final range = _spanRange();
+              if (range == null) {
+                return Text(
+                  verse,
+                  textAlign: TextAlign.center,
+                  maxLines: 4,
+                  overflow: TextOverflow.ellipsis,
+                  style: base,
+                );
+              }
+              final (start, end) = range;
+              final hot = highlightColor ?? accent;
+              return Text.rich(
+                TextSpan(
+                  style: base,
+                  children: [
+                    TextSpan(text: verse.substring(0, start)),
+                    TextSpan(
+                      text: verse.substring(start, end),
+                      style: base.copyWith(
+                        color: a.text,
+                        fontWeight: FontWeight.w800,
+                        backgroundColor: hot.withValues(alpha: 0.22),
+                      ),
+                    ),
+                    TextSpan(text: verse.substring(end)),
+                  ],
+                ),
+                textAlign: TextAlign.center,
+                maxLines: 5,
+                overflow: TextOverflow.ellipsis,
+              );
+            }(),
           ],
         ),
       ),

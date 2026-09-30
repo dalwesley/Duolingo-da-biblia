@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../l10n/l10n_global.dart';
 import 'remote_config_service.dart';
 import '../models/portrait_style.dart';
 
@@ -9,21 +10,15 @@ enum LeagueTier { semente, videira, oliveira, cedro, estrela }
 
 extension LeagueTierX on LeagueTier {
   String get label => switch (this) {
-        LeagueTier.semente => 'Caravana da Semente',
-        LeagueTier.videira => 'Caravana da Videira',
-        LeagueTier.oliveira => 'Caravana da Oliveira',
-        LeagueTier.cedro => 'Caravana do Cedro',
-        LeagueTier.estrela => 'Caravana da Estrela',
+        LeagueTier.semente => L10n.current.leagueTierSemente,
+        LeagueTier.videira => L10n.current.leagueTierVideira,
+        LeagueTier.oliveira => L10n.current.leagueTierOliveira,
+        LeagueTier.cedro => L10n.current.leagueTierCedro,
+        LeagueTier.estrela => L10n.current.leagueTierEstrela,
       };
 
   /// Nome curto para zonas do ranking.
-  String get shortLabel => switch (this) {
-        LeagueTier.semente => 'Semente',
-        LeagueTier.videira => 'Videira',
-        LeagueTier.oliveira => 'Oliveira',
-        LeagueTier.cedro => 'Cedro',
-        LeagueTier.estrela => 'Estrela',
-      };
+  String get shortLabel => label;
 }
 
 /// Resultado da semana anterior, aguardando o usuário ver.
@@ -59,13 +54,9 @@ class WeeklyRankTrend {
   });
 
   String get label => switch (drift) {
-        RankDrift.up => places == 1
-            ? 'Subiu 1 posição hoje'
-            : 'Subiu $places posições hoje',
-        RankDrift.down => places == 1
-            ? 'Desceu 1 posição hoje'
-            : 'Desceu $places posições hoje',
-        RankDrift.stable => 'Posição estável hoje',
+        RankDrift.up => L10n.current.leagueDriftUp(places),
+        RankDrift.down => L10n.current.leagueDriftDown(places),
+        RankDrift.stable => L10n.current.leagueDriftStable,
       };
 }
 
@@ -207,6 +198,7 @@ class LeagueEntry {
 
   /// Pílulas curtas para o card — papel, caminhada e presença.
   List<LeagueMetaPill> metaPills({int? rank}) {
+    final l = L10n.current;
     final pills = <LeagueMetaPill>[];
 
     if (rank != null && rank <= 3) {
@@ -214,9 +206,9 @@ class LeagueEntry {
         LeagueMetaPill(
           kind: LeaguePillKind.role,
           label: switch (rank) {
-            1 => 'Líder',
-            2 => 'Vice',
-            _ => 'Pódio',
+            1 => l.leagueRoleLeader,
+            2 => l.leagueRoleVice,
+            _ => l.leagueRolePodium,
           },
           emphasis: true,
         ),
@@ -230,9 +222,9 @@ class LeagueEntry {
 
     if (walkedToday) {
       pills.add(
-        const LeagueMetaPill(
+        LeagueMetaPill(
           kind: LeaguePillKind.walk,
-          label: 'Caminhou hoje',
+          label: l.leagueWalkedToday,
           emphasis: true,
         ),
       );
@@ -242,9 +234,9 @@ class LeagueEntry {
 
     if (onlineToday && !walkedToday) {
       pills.add(
-        const LeagueMetaPill(
+        LeagueMetaPill(
           kind: LeaguePillKind.online,
-          label: 'Online',
+          label: l.leagueSeenToday,
           emphasis: true,
         ),
       );
@@ -252,7 +244,10 @@ class LeagueEntry {
         !onlineToday &&
         lastSeenDate != lastWalkDate) {
       pills.add(
-        LeagueMetaPill(kind: LeaguePillKind.online, label: 'Online $seenBr'),
+        LeagueMetaPill(
+          kind: LeaguePillKind.online,
+          label: l.leagueSeenDate(seenBr),
+        ),
       );
     }
 
@@ -261,6 +256,7 @@ class LeagueEntry {
 
   /// Uma linha curta para o card do ranking.
   String? get activitySummary {
+    final l = L10n.current;
     final walkDays = _daysSince(lastWalkDate);
     final seenDays = _daysSince(lastSeenDate);
     final walkBr = formatShortBrDate(lastWalkDate);
@@ -271,28 +267,30 @@ class LeagueEntry {
     final walkedToday = walkDays == 0;
     final onlineToday = seenDays == 0;
 
-    if (walkedToday && onlineToday) return 'Ativo hoje';
-    if (walkedToday) return 'Caminhou hoje';
-    if (onlineToday && walkBr != null) return 'Online hoje · caminhou $walkBr';
-    if (onlineToday) return 'Online hoje';
-    if (walkBr != null && seenBr != null && lastWalkDate != lastSeenDate) {
-      return 'Caminhou $walkBr · online $seenBr';
+    if (walkedToday && onlineToday) return l.leagueActiveToday;
+    if (walkedToday) return l.leagueWalkedToday;
+    if (onlineToday && walkBr != null) {
+      return l.leagueSeenTodayWalked(walkBr);
     }
-    if (walkBr != null) return 'Caminhou $walkBr';
-    if (seenBr != null) return 'Online $seenBr';
+    if (onlineToday) return l.leagueSeenToday;
+    if (walkBr != null && seenBr != null && lastWalkDate != lastSeenDate) {
+      return l.leagueWalkedSeen(walkBr, seenBr);
+    }
+    if (walkBr != null) return l.leagueWalkedDate(walkBr);
+    if (seenBr != null) return l.leagueSeenDate(seenBr);
     return null;
   }
 
   String? get lastWalkLabel {
     final br = formatBrDate(lastWalkDate);
-    return br != null ? 'Última caminhada $br' : null;
+    return br != null ? L10n.current.leagueWalkedOn(br) : null;
   }
 
   String? get lastOnlineLabel {
     if (lastSeenDate == null || lastSeenDate!.isEmpty) return null;
-    if (_daysSince(lastSeenDate) == 0) return 'Online hoje';
+    if (_daysSince(lastSeenDate) == 0) return L10n.current.leagueSeenToday;
     final br = formatBrDate(lastSeenDate);
-    return br != null ? 'Online em $br' : null;
+    return br != null ? L10n.current.leagueSeenOn(br) : null;
   }
 
   static int? _daysSince(String? yyyyMmDd) {
@@ -361,11 +359,7 @@ class LeagueService extends ChangeNotifier {
     ];
   }
 
-  static String onlineCountLabel(int n) {
-    if (n <= 0) return '0 online';
-    if (n == 1) return '1 online';
-    return '$n online';
-  }
+  static String onlineCountLabel(int n) => L10n.current.leagueStudying(n);
 
   int tierIndex = 0;
 

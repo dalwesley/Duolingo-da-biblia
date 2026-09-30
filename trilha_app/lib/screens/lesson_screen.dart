@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../data/mission_study.dart';
+import '../l10n/app_language.dart';
 import '../data/question_bank.dart';
 import '../data/trail_repository.dart';
 import '../models/difficulty.dart';
@@ -85,8 +86,22 @@ class _LessonScreenState extends State<LessonScreen>
   int _questionIndex = 0;
   String? _selected;
   bool? _isCorrect;
-  int _correctCount = 0;
   int _combo = 0;
+
+  /// Erros no ato atual: o 1º pede tentar de novo; o 2º oferece pular
+  /// (a pergunta volta no fim da cena, sem revelar a resposta).
+  int _wrongsHere = 0;
+
+  /// O veredito atual oferece pular para o fim da cena.
+  bool _skipNow = false;
+
+  /// O veredito atual revela a resposta — só no erro da volta no fim.
+  bool _revealNow = false;
+
+  /// Atos que são a volta de uma pergunta pulada — não contam no placar.
+  final Set<int> _requeuedSlots = {};
+
+  DateTime? _actStartedAt;
   bool _showFeedback = false;
   bool _busy = false;
   int _lamps = ProgressService.maxLamps;
@@ -144,7 +159,7 @@ class _LessonScreenState extends State<LessonScreen>
           realmId = trail.realmId;
           for (final mod in trail.modules) {
             if (mod.missions.any((m) => m.slug == widget.missionSlug)) {
-              moduleTitle = mod.title;
+              moduleTitle = mod.localizedTitle;
               break;
             }
           }
@@ -198,14 +213,11 @@ class _LessonScreenState extends State<LessonScreen>
         final alreadyDone = visibleCompleted.contains(widget.missionSlug);
         if (!unlockedTrail || (!unlockedMission && !alreadyDone)) {
           if (!mounted) return;
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(
-                'Este passo ainda está bloqueado.',
-                style: AppTypography.body(color: AppColors.textOnDark),
-              ),
-              backgroundColor: AppColors.nightElevated,
-            ),
+          showAppToastFor(
+            context,
+            message: context.l10n.lessonLocked,
+            glyph: CinematicGlyph.lock,
+            tone: AppToastTone.warn,
           );
           Navigator.of(context).pop();
           return;
@@ -252,14 +264,11 @@ class _LessonScreenState extends State<LessonScreen>
     if (!mounted) return;
 
     if (plan.isEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(
-            'Não encontramos atos para esta cena. Verifique a conexão e tente de novo.',
-            style: AppTypography.body(color: AppColors.textOnDark),
-          ),
-          backgroundColor: AppColors.nightElevated,
-        ),
+      showAppToastFor(
+        context,
+        message: context.l10n.lessonLoadError,
+        glyph: CinematicGlyph.wrong,
+        tone: AppToastTone.warn,
       );
       Navigator.of(context).pop();
       return;
@@ -289,9 +298,9 @@ class _LessonScreenState extends State<LessonScreen>
       _phase = _Phase.intro;
       _mission = Mission(
         slug: mission.slug,
-        title: mission.title,
-        subtitle: '~3 min',
-        intro: mission.intro,
+        title: mission.localizedTitle,
+        subtitle: context.l10n.lessonDuration,
+        intro: mission.localizedIntro,
         type: mission.type,
         stepsReward: _scaledSteps(
           mission.stepsReward,
@@ -299,17 +308,18 @@ class _LessonScreenState extends State<LessonScreen>
         ),
         questions: mission.questions,
         exercises: plan.acts,
-        objective: mission.objective,
+        objective: mission.localizedObjective,
         centralInsight: plan.insight.isNotEmpty ? plan.insight : null,
         hookRef: hooks.ref,
         hookVerse: hooks.verse,
         hookNote: hooks.note,
-        echoQuestion: mission.echoQuestion,
+        echoQuestion: mission.localizedEchoQuestion,
         hookThread: hooks.thread,
         bankSection: mission.bankSection,
         bankTrailSlug: mission.bankTrailSlug,
       );
     });
+    // Eco usa o título PT canônico (persistência), não o overlay.
     unawaited(freshProgress.clearEchoIfArrived(mission.title));
   }
 
@@ -321,7 +331,7 @@ class _LessonScreenState extends State<LessonScreen>
       mission: mission,
       studyRef: study?.passageRef,
       studyVerse: study?.passageText,
-      studyContext: study?.context,
+      studyContext: study?.localizedContext,
       acts: acts,
     );
     final ref = (entrance.ref ?? '').trim();
@@ -359,8 +369,15 @@ class _LessonScreenState extends State<LessonScreen>
 
   int get _itemCount => _exercises.length;
 
-  int get _scoredItemCount =>
-      _exercises.where((e) => !e.type.isRevealOnly).length;
+  int get _scoredItemCount => [
+    for (var i = 0; i < _exercises.length; i++)
+      if (!_exercises[i].type.isRevealOnly && !_requeuedSlots.contains(i)) i,
+  ].length;
+
+  /// Acertos de primeira — tentar de novo e a volta no fim não contam.
+  int get _correctCount => _results.entries
+      .where((e) => e.value && !_requeuedSlots.contains(e.key))
+      .length;
 
   Exercise get _exercise => _exercises[_questionIndex];
 
@@ -381,6 +398,28 @@ class _LessonScreenState extends State<LessonScreen>
     final hookR = (_mission?.hookRef ?? '').trim();
     if (hookT.length >= 12) return (reference: hookR, text: hookT);
     return _microVerse();
+  }
+
+  /// Texto da cena por cima da pergunta — reler sem sair do fluxo.
+  Future<void> _openPassage() async {
+    final board = _board;
+    if (board == null) return;
+    unawaited(
+      AnalyticsService.instance.logEvent('passage_open', {
+        'mission_slug': widget.missionSlug,
+        'index': _questionIndex,
+        'after_error': _isCorrect == false ? 1 : 0,
+      }),
+    );
+    await showAppSheet<void>(
+      context,
+      builder: (_) => _PassageSheet(
+        reference: board.reference,
+        text: board.text,
+        accent: _sessionAccent,
+      ),
+    );
+    TtsService.instance.stop();
   }
 
   Future<void> _select(String optionId) async {
@@ -409,16 +448,31 @@ class _LessonScreenState extends State<LessonScreen>
     }
 
     final correct = ex.checkAnswer(optionId);
-    _results.putIfAbsent(_questionIndex, () => correct);
+    final slot = _questionIndex;
+    final requeued = _requeuedSlots.contains(slot);
+    final firstTry = !_results.containsKey(slot);
+    final attempt = _wrongsHere + 1;
+    _results.putIfAbsent(slot, () => correct);
+    var relit = false;
     if (correct) {
       SoundService.instance.playCorrect();
       _combo++;
       if (_combo >= 3) ActHaptics.success();
+      // Cinco seguidas reacendem uma lâmpada.
+      relit = _combo % 5 == 0 && !_outOfLamps && _lamps < _maxLamps;
     } else {
       SoundService.instance.playWrong();
       _combo = 0;
       _mistakeInSession = true;
+      _wrongsHere++;
     }
+    // A resposta só aparece quando a volta no fim também erra.
+    final reveal = !correct && requeued;
+    // V/F não tem segunda chance útil: o 1º erro já manda para o fim.
+    final skip =
+        !correct &&
+        !requeued &&
+        (_wrongsHere >= 2 || ex.type == ExerciseType.trueFalse);
 
     _impactPositive = correct;
     _impactFlash.forward(from: 0);
@@ -429,9 +483,11 @@ class _LessonScreenState extends State<LessonScreen>
     setState(() {
       _selected = optionId;
       _isCorrect = correct;
-      if (correct) {
-        _correctCount++;
-      } else {
+      _revealNow = reveal;
+      _skipNow = skip;
+      if (relit) _lamps = (_lamps + 1).clamp(0, _maxLamps);
+      // Só o primeiro erro de cada pergunta apaga lâmpada.
+      if (!correct && firstTry && !requeued) {
         _lamps = (_lamps - 1).clamp(0, _maxLamps);
         if (_lamps == 0) _outOfLamps = true;
       }
@@ -439,36 +495,48 @@ class _LessonScreenState extends State<LessonScreen>
     });
 
     final progress = context.read<ProgressService>();
-    if (!correct && progress.takeLampsTeach()) {
+    if (relit) {
+      showAppToastFor(
+        context,
+        message: context.l10n.lessonLampRelit,
+        glyph: CinematicGlyph.lamp,
+      );
+    }
+    if (!correct && firstTry && !requeued && progress.takeLampsTeach()) {
       final left = _lamps;
-      final msg = left <= 0
-          ? 'As lâmpadas acabaram — cada erro apaga uma.'
-          : left == 1
-          ? 'Resta 1 lâmpada — cada erro apaga uma.'
-          : 'Restam $left lâmpadas — cada erro apaga uma.';
+      final msg = context.l10n.lessonLampsLeft(left <= 0 ? 0 : left);
       showAppToastFor(context, message: msg, glyph: CinematicGlyph.lamp);
     }
     final trackBankId =
         ex.id.isNotEmpty && (_pickedIds.contains(ex.id) || widget.practiceMode);
     if (trackBankId) {
+      // Só o acerto de primeira tira a pergunta da revisão.
+      if (!correct && firstTry && !requeued) {
+        unawaited(progress.recordMistake(ex.id));
+      } else if (firstTry && !requeued) {
+        unawaited(progress.clearMistake(ex.id));
+      }
+    }
+    final elapsed = _actStartedAt == null
+        ? 0
+        : DateTime.now().difference(_actStartedAt!).inMilliseconds;
+    // Placar de acerto conta só a primeira tentativa da pergunta original.
+    if (firstTry && !requeued) {
       unawaited(
-        correct ? progress.clearMistake(ex.id) : progress.recordMistake(ex.id),
+        AnalyticsService.instance.logQuestionAnswered(
+          missionSlug: widget.missionSlug,
+          trailSlug: _trailSlug,
+          questionId: ex.id.isNotEmpty
+              ? ex.id
+              : '${widget.missionSlug}_e$_questionIndex',
+          questionIndex: _questionIndex,
+          correct: correct,
+          hintUsed: _hintUsed,
+          difficulty: _difficultyMeta?.difficulty.id,
+          isBoss: _mission?.isBoss ?? false,
+        ),
       );
     }
-    unawaited(
-      AnalyticsService.instance.logQuestionAnswered(
-        missionSlug: widget.missionSlug,
-        trailSlug: _trailSlug,
-        questionId: ex.id.isNotEmpty
-            ? ex.id
-            : '${widget.missionSlug}_e$_questionIndex',
-        questionIndex: _questionIndex,
-        correct: correct,
-        hintUsed: _hintUsed,
-        difficulty: _difficultyMeta?.difficulty.id,
-        isBoss: _mission?.isBoss ?? false,
-      ),
-    );
     unawaited(
       AnalyticsService.instance.logExerciseComplete(
         missionSlug: widget.missionSlug,
@@ -476,6 +544,11 @@ class _LessonScreenState extends State<LessonScreen>
         skill: ex.skill,
         index: _questionIndex,
         correct: correct,
+        attempt: attempt,
+        requeued: requeued,
+        revealed: reveal,
+        elapsedMs: elapsed,
+        difficulty: _difficultyMeta?.difficulty.id,
       ),
     );
 
@@ -492,7 +565,9 @@ class _LessonScreenState extends State<LessonScreen>
     // Toque já vibra no TextCta da dica.
     final ex = _exercise;
     final correctId = ex.resolvedCorrectAnswer.trim();
-    final wrong = ex.effectiveOptions.where((o) => o.id != correctId).toList();
+    final wrong = ex.effectiveOptions
+        .where((o) => o.id != correctId && !_eliminated.contains(o.id))
+        .toList();
     // Sem distrator eliminável — não marca dica como usada.
     if (wrong.isEmpty || correctId.isEmpty) return;
     // Garante que a resposta certa existe nas opções (evita eliminar o acerto).
@@ -501,7 +576,7 @@ class _LessonScreenState extends State<LessonScreen>
     wrong.shuffle();
     setState(() {
       _hintUsed = true;
-      _eliminated = {wrong.first.id};
+      _eliminated = {..._eliminated, wrong.first.id};
     });
   }
 
@@ -594,7 +669,9 @@ class _LessonScreenState extends State<LessonScreen>
     final studyRef = study?.passageRef.trim() ?? '';
     if (studyText.length >= 20) {
       return (
-        reference: studyRef.isNotEmpty ? studyRef : 'Verso',
+        reference: studyRef.isNotEmpty
+            ? studyRef
+            : context.l10n.lessonVerseFallback,
         text: studyText,
       );
     }
@@ -603,7 +680,9 @@ class _LessonScreenState extends State<LessonScreen>
     final hookRef = (_mission?.hookRef ?? '').trim();
     if (hookText.length >= 20) {
       return (
-        reference: hookRef.isNotEmpty ? hookRef : 'Verso',
+        reference: hookRef.isNotEmpty
+            ? hookRef
+            : context.l10n.lessonVerseFallback,
         text: hookText,
       );
     }
@@ -638,6 +717,7 @@ class _LessonScreenState extends State<LessonScreen>
 
   void _logExerciseStart() {
     if (_exercises.isEmpty) return;
+    _actStartedAt = DateTime.now();
     final ex = _exercise;
     AnalyticsService.instance.logExerciseStart(
       missionSlug: widget.missionSlug,
@@ -650,14 +730,11 @@ class _LessonScreenState extends State<LessonScreen>
   void _startQuiz() {
     TtsService.instance.stop();
     if (_exercises.isEmpty) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(
-            'Não encontramos atos para esta cena. Verifique a conexão e tente de novo.',
-            style: AppTypography.body(color: AppColors.textOnDark),
-          ),
-          backgroundColor: AppColors.nightElevated,
-        ),
+      showAppToastFor(
+        context,
+        message: context.l10n.lessonLoadError,
+        glyph: CinematicGlyph.wrong,
+        tone: AppToastTone.warn,
       );
       return;
     }
@@ -667,7 +744,8 @@ class _LessonScreenState extends State<LessonScreen>
     _logExerciseStart();
   }
 
-  void _continue() {
+  /// [skip]: o aluno escolheu deixar a pergunta para o fim da cena.
+  void _continue({bool skip = false}) {
     if (_mission == null) return;
     _impactFlash
       ..stop()
@@ -678,16 +756,33 @@ class _LessonScreenState extends State<LessonScreen>
       return;
     }
 
-    // Erro → tenta de novo (exceto insight).
     if (_isCorrect == false && !_exercise.type.isRevealOnly) {
-      setState(() {
-        _showFeedback = false;
-        _selected = null;
-        _isCorrect = null;
-        _hintUsed = false;
-        _eliminated = {};
-      });
-      return;
+      // Tentar de novo na hora; o versículo segue no palco.
+      if (!_revealNow && !(skip && _skipNow)) {
+        setState(() {
+          _showFeedback = false;
+          _selected = null;
+          _isCorrect = null;
+          _hintUsed = false;
+          _eliminated = {};
+        });
+        return;
+      }
+      // Pular: a pergunta volta no fim da cena (uma vez só).
+      if (skip && _skipNow) {
+        final ex = _exercise;
+        setState(() {
+          _exercises = [..._exercises, ex];
+          _requeuedSlots.add(_exercises.length - 1);
+        });
+        unawaited(
+          AnalyticsService.instance.logEvent('exercise_skip', {
+            'mission_slug': widget.missionSlug,
+            'type': ex.type.wireId,
+            'index': _questionIndex,
+          }),
+        );
+      }
     }
 
     if (_questionIndex < _itemCount - 1) {
@@ -699,9 +794,15 @@ class _LessonScreenState extends State<LessonScreen>
         _isCorrect = null;
         _hintUsed = false;
         _eliminated = {};
+        _wrongsHere = 0;
+        _skipNow = false;
+        _revealNow = false;
       });
       _logExerciseStart();
-    } else if (_mistakeInSession && !_reviewInserted) {
+    } else if (_mistakeInSession &&
+        !_reviewInserted &&
+        _requeuedSlots.isEmpty) {
+      // A revisão extra só entra quando nenhuma pergunta já voltou no fim.
       unawaited(_insertReview());
     } else {
       _finishLesson();
@@ -739,6 +840,9 @@ class _LessonScreenState extends State<LessonScreen>
       _isCorrect = null;
       _hintUsed = false;
       _eliminated = {};
+      _wrongsHere = 0;
+      _skipNow = false;
+      _revealNow = false;
     });
     _logExerciseStart();
   }
@@ -853,16 +957,20 @@ class _LessonScreenState extends State<LessonScreen>
                                   _combo >= 2
                                       ? '${_questionIndex + 1}/$total · ×$_combo'
                                       : '${_questionIndex + 1}/$total',
-                                _Phase.micro => 'Bônus',
-                                _Phase.insight => 'Hoje',
+                                _Phase.micro => context.l10n.lessonBonus,
+                                _Phase.insight => context.l10n.commonToday,
                               },
                               subtitle: switch (_phase) {
                                 _Phase.intro =>
                                   _difficultyMeta?.label ??
-                                      (mission.isBoss ? 'Travessia' : 'Treino'),
+                                      (mission.isBoss
+                                          ? context.l10n.lessonBoss
+                                          : context.l10n.lessonPractice),
                                 _Phase.quiz => _difficultyMeta?.label,
-                                _Phase.micro => 'Complete o verso',
-                                _Phase.insight => 'O que ficou',
+                                _Phase.micro =>
+                                  context.l10n.lessonMicroSubtitle,
+                                _Phase.insight =>
+                                  context.l10n.lessonInsightSubtitle,
                               },
                               onBack: _confirmExit,
                               leadingGlyph: CinematicGlyphResolver.forMission(
@@ -873,11 +981,35 @@ class _LessonScreenState extends State<LessonScreen>
                               trailing: _phase == _Phase.quiz
                                   ? Padding(
                                       padding: const EdgeInsets.only(right: 8),
-                                      child: LampsBar(
-                                        current: _lamps,
-                                        max: _maxLamps,
-                                        accent: accent,
-                                        compact: true,
+                                      child: Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        children: [
+                                          if (_board != null)
+                                            IconButton(
+                                              tooltip:
+                                                  context.l10n.lessonPassageTitle,
+                                              onPressed: () {
+                                                ActHaptics.tap();
+                                                _openPassage();
+                                              },
+                                              visualDensity:
+                                                  VisualDensity.compact,
+                                              icon: CinematicIcon(
+                                                glyph: CinematicGlyph.book,
+                                                size: 20,
+                                                accent: Colors.white.withValues(
+                                                  alpha: 0.78,
+                                                ),
+                                                framed: false,
+                                              ),
+                                            ),
+                                          LampsBar(
+                                            current: _lamps,
+                                            max: _maxLamps,
+                                            accent: accent,
+                                            compact: true,
+                                          ),
+                                        ],
                                       ),
                                     )
                                   : null,
@@ -947,6 +1079,8 @@ class _LessonScreenState extends State<LessonScreen>
                                     ? null
                                     : _useHint,
                                 outOfLamps: _outOfLamps,
+                                revealCorrect:
+                                    _revealNow && _isCorrect == false,
                                 index: _questionIndex,
                                 total: total,
                                 insightFallback: mission.centralInsight,
@@ -1043,7 +1177,11 @@ class _LessonScreenState extends State<LessonScreen>
                       accent: accent,
                       combo: _combo,
                       outOfLamps: _outOfLamps,
+                      revealAnswer: _revealNow,
+                      willRequeue: _skipNow,
                       onContinue: _continue,
+                      onSkip: () => _continue(skip: true),
+                      onReadPassage: _board == null ? null : _openPassage,
                       missionSlug: widget.missionSlug,
                       trailSlug: _trailSlug,
                       difficulty: _difficultyMeta?.difficulty.id,
@@ -1077,7 +1215,7 @@ class _ActProgress extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Semantics(
-      label: 'Ato ${index + 1} de $total',
+      label: context.l10n.lessonQuestionProgress(index + 1, total),
       child: Row(
         children: [
           for (var i = 0; i < total; i++) ...[
@@ -1115,6 +1253,67 @@ class _ActProgress extends StatelessWidget {
   }
 }
 
+/// Texto da cena aberto por cima da pergunta.
+class _PassageSheet extends StatelessWidget {
+  final String reference;
+  final String text;
+  final Color accent;
+
+  const _PassageSheet({
+    required this.reference,
+    required this.text,
+    required this.accent,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return AppSheetPanel(
+      padding: const EdgeInsets.fromLTRB(
+        AppSpace.xl,
+        AppSpace.md,
+        AppSpace.xl,
+        AppSpace.lg,
+      ),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          AppSheetHeader(
+            center: true,
+            eyebrow: context.l10n.lessonPassageTitle,
+            eyebrowColor: accent,
+            title: reference.isNotEmpty
+                ? reference
+                : context.l10n.lessonPassageTitle,
+          ),
+          const SizedBox(height: 16),
+          Flexible(
+            child: SingleChildScrollView(
+              child: Text(
+                text,
+                textAlign: TextAlign.center,
+                style: AppTypography.verse(
+                  size: 20,
+                  height: 1.5,
+                  color: a.text,
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: 12),
+          MissionListenButton(verse: text, accent: accent),
+          const SizedBox(height: 16),
+          CopperCta(
+            label: context.l10n.lessonBackToQuestion,
+            trailing: null,
+            onTap: () => Navigator.pop(context),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 /// Confirmação de saída no meio da missão.
 class _ExitSheet extends StatelessWidget {
   final int act;
@@ -1141,20 +1340,18 @@ class _ExitSheet extends StatelessWidget {
               size: 44,
               accent: AppColors.accent,
             ),
-            title: 'Sair da cena?',
-            subtitle:
-                'Você está no ato $act de $total. Saindo agora, '
-                'os passos desta cena não contam.',
+            title: context.l10n.lessonExitTitle,
+            subtitle: context.l10n.lessonExitBody(act, total),
           ),
           const SizedBox(height: 20),
           CopperCta(
-            label: 'Continuar cena',
+            label: context.l10n.commonContinue,
             trailing: null,
             onTap: () => Navigator.pop(context, false),
           ),
           const SizedBox(height: 10),
           GhostCta(
-            label: 'Sair mesmo assim',
+            label: context.l10n.lessonExitAnyway,
             danger: true,
             expanded: true,
             onTap: () => Navigator.pop(context, true),
@@ -1190,8 +1387,8 @@ class _IntroPanel extends StatelessWidget {
         : (note.isEmpty && fallbackIntro.isNotEmpty ? fallbackIntro : '');
     final a = Appearance.of(context);
     final pulse = mission.isBoss
-        ? 'Travessia · $itemCount atos'
-        : '~3 min · $itemCount atos';
+        ? context.l10n.lessonIntroBossPulse(itemCount)
+        : context.l10n.lessonIntroPulse(itemCount);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: AppSpace.screen),
@@ -1243,7 +1440,11 @@ class _IntroPanel extends StatelessWidget {
             accent: accent,
           ),
           const SizedBox(height: 10),
-          CopperCta(label: 'Começar', onTap: onStart, trailing: null),
+          CopperCta(
+            label: context.l10n.commonStart,
+            onTap: onStart,
+            trailing: null,
+          ),
           const SizedBox(height: AppSpace.sm),
         ],
       ),
@@ -1270,7 +1471,11 @@ class _InsightPanel extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          RelicChapter(title: 'Hoje', accent: accent, divided: false),
+          RelicChapter(
+            title: context.l10n.commonToday,
+            accent: accent,
+            divided: false,
+          ),
           const SizedBox(height: 14),
           Expanded(
             child: _WitnessPlate(
@@ -1287,7 +1492,11 @@ class _InsightPanel extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 10),
-          CopperCta(label: 'Continuar', onTap: onContinue, trailing: null),
+          CopperCta(
+            label: context.l10n.commonContinue,
+            onTap: onContinue,
+            trailing: null,
+          ),
           const SizedBox(height: AppSpace.sm),
         ],
       ),

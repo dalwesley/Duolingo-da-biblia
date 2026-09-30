@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../l10n/l10n_global.dart';
 import '../models/daily_quest.dart';
 import '../theme/app_colors.dart';
 
@@ -16,16 +17,40 @@ enum LiturgicalSeason {
 
 class LiturgicalMoment {
   final LiturgicalSeason season;
-  final String title;
-  final String subtitle;
   final String focusRef;
 
   const LiturgicalMoment({
     required this.season,
-    required this.title,
-    required this.subtitle,
     required this.focusRef,
   });
+
+  /// Nome da estação no idioma atual.
+  String get title {
+    final l10n = L10n.current;
+    return switch (season) {
+      LiturgicalSeason.advent => l10n.liturgyAdvent,
+      LiturgicalSeason.christmas => l10n.liturgyChristmas,
+      LiturgicalSeason.lent => l10n.liturgyLent,
+      LiturgicalSeason.holyWeek => l10n.liturgyHolyWeek,
+      LiturgicalSeason.easter => l10n.liturgyEaster,
+      LiturgicalSeason.pentecost => l10n.liturgyPentecost,
+      LiturgicalSeason.ordinary => l10n.liturgyOrdinary,
+    };
+  }
+
+  /// Frase curta da estação (subtítulo da aba Bíblia).
+  String get subtitle {
+    final l10n = L10n.current;
+    return switch (season) {
+      LiturgicalSeason.advent => l10n.liturgyAdventSubtitle,
+      LiturgicalSeason.christmas => l10n.liturgyChristmasSubtitle,
+      LiturgicalSeason.lent => l10n.liturgyLentSubtitle,
+      LiturgicalSeason.holyWeek => l10n.liturgyHolyWeekSubtitle,
+      LiturgicalSeason.easter => l10n.liturgyEasterSubtitle,
+      LiturgicalSeason.pentecost => l10n.liturgyPentecostSubtitle,
+      LiturgicalSeason.ordinary => l10n.liturgyOrdinarySubtitle,
+    };
+  }
 }
 
 /// Sincroniza o app com datas litúrgicas — diferencial vs. Ascend/Manna.
@@ -83,8 +108,6 @@ class LiturgicalCalendar {
     if (!day.isBefore(advent) && day.isBefore(christmasStart)) {
       return const LiturgicalMoment(
         season: LiturgicalSeason.advent,
-        title: 'Advento',
-        subtitle: 'Tempo de espera e preparação',
         focusRef: 'Isaías 9:6',
       );
     }
@@ -92,32 +115,24 @@ class LiturgicalCalendar {
         (!day.isBefore(DateTime(year, 1, 1)) && !day.isAfter(epiphany))) {
       return const LiturgicalMoment(
         season: LiturgicalSeason.christmas,
-        title: 'Natal',
-        subtitle: 'O Verbo se fez carne',
         focusRef: 'João 1:14',
       );
     }
     if (!day.isBefore(ashWednesday) && day.isBefore(palmSunday)) {
       return const LiturgicalMoment(
         season: LiturgicalSeason.lent,
-        title: 'Quaresma',
-        subtitle: 'Deserto, jejum e retorno',
         focusRef: 'Joel 2:12',
       );
     }
     if (!day.isBefore(palmSunday) && day.isBefore(easter)) {
       return const LiturgicalMoment(
         season: LiturgicalSeason.holyWeek,
-        title: 'Semana Santa',
-        subtitle: 'Da cruz à espera da ressurreição',
         focusRef: 'Isaías 53:5',
       );
     }
     if (!day.isBefore(easter) && day.isBefore(pentecost)) {
       return const LiturgicalMoment(
         season: LiturgicalSeason.easter,
-        title: 'Páscoa',
-        subtitle: 'Cristo ressuscitou',
         focusRef: '1 Coríntios 15:20',
       );
     }
@@ -126,16 +141,12 @@ class LiturgicalCalendar {
         day.day == pentecost.day) {
       return const LiturgicalMoment(
         season: LiturgicalSeason.pentecost,
-        title: 'Pentecostes',
-        subtitle: 'O Espírito é derramado',
         focusRef: 'Atos 2:1–4',
       );
     }
 
     return const LiturgicalMoment(
       season: LiturgicalSeason.ordinary,
-      title: 'Tempo comum',
-      subtitle: 'Crescimento na Palavra, dia a dia',
       focusRef: 'Salmos 119:105',
     );
   }
@@ -157,8 +168,8 @@ class LiturgicalCalendar {
     if (m.season == LiturgicalSeason.ordinary) return null;
     return DailyQuest(
       id: 'seasonal',
-      title: 'Tempo de ${m.title}',
-      subtitle: 'Leia um capítulo — foco: ${m.focusRef}',
+      title: L10n.current.liturgyQuestTitle(m.title),
+      subtitle: L10n.current.liturgyQuestSubtitle(m.focusRef),
       target: 1,
       stepsReward: 35,
     );

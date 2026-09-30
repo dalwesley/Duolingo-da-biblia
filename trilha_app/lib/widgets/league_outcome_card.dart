@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import '../l10n/app_language.dart';
 import '../services/backend_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
@@ -33,13 +34,14 @@ class LeagueOutcomeCard extends StatelessWidget {
     }
 
     final a = Appearance.of(context);
+    final l10n = context.l10n;
     final demoted = outcome == LeagueOutcome.demoted;
     final title = demoted
-        ? 'Você desceu de caravana'
-        : 'Semana da caravana encerrada';
+        ? l10n.leagueDemotedTitle(league.tier.label)
+        : l10n.leagueWeekEndedTitle;
     final message = demoted
-        ? 'Ficou em ${league.pendingRank}º. Na ${league.tier.label} dá para subir de novo.'
-        : 'Você ficou em ${league.pendingRank}º na ${league.tier.label}. Nova semana — continue caminhando.';
+        ? l10n.leagueDemotedBody(league.pendingRank, league.tier.label)
+        : l10n.leagueStayedBody(league.pendingRank, league.tier.label);
 
     return GlassCard(
       padding: AppMetrics.cardPadding,
@@ -75,7 +77,7 @@ class LeagueOutcomeCard extends StatelessWidget {
           ),
           const SizedBox(width: 8),
           _CollectButton(
-            label: 'Entendi',
+            label: l10n.commonGotIt,
             onDarkGold: false,
             onTap: () => _claim(context, league, outcome),
           ),
@@ -156,9 +158,10 @@ class _PromotionBannerState extends State<_PromotionBanner>
 
   @override
   Widget build(BuildContext context) {
+    final l10n = context.l10n;
     final rankLine = widget.rank > 0
-        ? 'Ficou em ${widget.rank}º · agora caminha na ${widget.tierLabel}'
-        : 'Agora caminha na ${widget.tierLabel}';
+        ? l10n.leaguePromotedRankLine(widget.rank, widget.tierLabel)
+        : l10n.leaguePromotedLevelOnly(widget.tierLabel);
 
     // Só a medalha respira; o cartão (gradientes, confete, textos) não é
     // reconstruído a cada frame.
@@ -220,7 +223,7 @@ class _PromotionBannerState extends State<_PromotionBanner>
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Você avançou de caravana',
+                          l10n.leaguePromotedTitle(widget.tierLabel),
                           style: AppTypography.title(
                             size: 16,
                             color: AppColors.inkOnAccent,
@@ -243,7 +246,7 @@ class _PromotionBannerState extends State<_PromotionBanner>
                   ),
                   const SizedBox(width: 8),
                   _CollectButton(
-                    label: 'Coletar',
+                    label: l10n.commonCollect,
                     onDarkGold: true,
                     onTap: widget.onCollect,
                   ),
@@ -302,7 +305,7 @@ class _PromotionMedal extends StatelessWidget {
                 right: -2,
                 bottom: -2,
                 child: SoftBadge(
-                  text: '$rankº',
+                  text: context.l10n.pilgrimRankOrdinal(rank),
                   accent: AppColors.accentSoft,
                   solid: true,
                 ),
@@ -322,7 +325,7 @@ class _BonusChip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SoftBadge(
-      text: '+$steps passos',
+      text: context.l10n.commonPlusSteps(steps),
       accent: AppColors.inkOnAccent,
       textColor: AppColors.inkOnAccent,
     );
@@ -389,6 +392,7 @@ class _LeaguePromotionSheet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final l10n = context.l10n;
     return AppSheetPanel(
       tint: AppColors.accent,
       padding: const EdgeInsets.fromLTRB(
@@ -434,16 +438,16 @@ class _LeaguePromotionSheet extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 20),
-          const AppSheetHeader(
-            title: 'Caravana avançou',
+          AppSheetHeader(
+            title: l10n.leagueLevelUpTitle,
             center: true,
             celebration: true,
           ),
           const SizedBox(height: 10),
           Text(
             rank > 0
-                ? 'Ficou em $rankº · agora caminha na\n$tierLabel'
-                : 'Agora você caminha na\n$tierLabel',
+                ? l10n.leagueLevelUpBodyRank(rank, tierLabel)
+                : l10n.leagueLevelUpBodyOnly(tierLabel),
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 14,
@@ -459,14 +463,14 @@ class _LeaguePromotionSheet extends StatelessWidget {
               vertical: AppSpace.md,
             ),
             child: Text(
-              '+$bonusSteps passos de encorajamento',
+              l10n.leagueBonusEncourage(bonusSteps),
               textAlign: TextAlign.center,
               style: AppTypography.title(size: 14, color: AppColors.accent),
             ),
           ),
           const SizedBox(height: 28),
           CopperCta(
-            label: 'Continuar',
+            label: l10n.commonContinue,
             onTap: () => Navigator.pop(context),
             trailing: null,
             dense: true,

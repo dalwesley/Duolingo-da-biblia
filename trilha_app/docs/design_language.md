@@ -86,31 +86,97 @@ chip/badge = `AppRadii.sm`; seleção = `AppRadii.pill`.
 - Os botões já vibram (`ActHaptics`) — não chame `HapticFeedback` junto.
   Em toque custom use `ActHaptics.tap/light/confirm`, não `HapticFeedback`.
 
+## Mundo central: o caminho
+
+O app tem **uma** imagem de fundo: a pessoa caminha uma trilha, cena a cena,
+e cada acerto são passos. Companhia, caravana e grupo caminham junto.
+Tudo o mais é subordinado a isso:
+
+- **cena** é o palco onde se estuda (não é teatro: sem "ato", "Em cena", "elenco");
+- **lâmpada** é a vida dentro da cena; **lamparina** é a semana no perfil;
+- **medalha** é a recompensa; o conjunto delas é o **cofre**.
+
+Fora do mundo (não usar em UI): céu como tema visual, poeira/perseguição,
+teatro (atos), escada, moeda, emblema, galeria.
+
+"Caminho" só em frase solta de narrador ("revelam-se no caminho"). Nunca
+como nome de coisa: não é área, não é progresso salvo, não é assinatura.
+
 ## Glossário
 
 | Conceito | Termo | Não usar |
 |---|---|---|
-| Unidade de estudo | **cena** | missão, lição |
-| Pontos | **passos** ("+40 passos") | pontos, XP; "passo" como sinônimo de cena |
-| Curso | **trilha** | — |
-| Progresso geral | **jornada** | — |
+| Unidade de estudo | **cena** | missão, lição, passo |
+| Parte de uma cena (cada exercício) | **pergunta** ("Pergunta 2 de 6", "6 perguntas") | ato |
+| Grupo de cenas dentro da trilha (módulo) | **etapa** ("Etapa II") | cena (colide com a unidade) |
+| Área de trilhas (AT, NT, Vida cristã, Teologia) | **área** | caminho, reino |
+| Pontos | **passos** ("+40 passos") | pontos, XP; "passo" como sinônimo de cena; "primeiros passos" como marco |
+| Curso | **trilha** | trilha como "online" ("Na trilha agora") |
+| Progresso geral | **jornada** | caminhada, caminho |
 | Dias seguidos | **sequência** | constância, dias seguidos |
-| Liga semanal | **caravana** | liga, divisão |
-| Par 1:1 | **companhia**; a pessoa é **companheiro(a)** | dupla, parceria, par |
+| Proteção da sequência | **gelo** | — |
+| Meta diária (cenas por dia) | **meta** / "Seu ritmo" como título | passos por dia |
+| Meta de sequência | **compromisso** | — |
+| Acerto em % | **acertos** ("92% de acertos") | clareza, precisão |
+| Tarefas diárias | **Tarefas do dia** | gestos (colide com os 6 gestos) |
+| Revisar | **revisar / revisão** | revisitar |
+| Aba social | **Juntos** (Companhia · Caravana · Grupos) | — |
+| Liga semanal | **caravana** — só o grupo da semana | liga, divisão; caravana como nível ou sequência |
+| Nível da caravana | **nível**; nome da árvore sozinho ("Você subiu para Oliveira") | "Caravana da Oliveira", divisão |
+| Par 1:1 | **companhia**; a pessoa é **companheiro(a)** | dupla, parceria, par, amizade, amigo |
 | Grupo de estudo | **grupo** | sala |
-| Peer challenge (mesma cena até domingo) | **desafio** | esquina, PvP, disputa |
+| Peer challenge (mesma cena até domingo) | **desafio** — é disputa: ganhar, perder, empate | esquina, PvP; "não é duelo" |
 | Boss / revisão de módulo | **travessia** (shipped na UI; títulos de conteúdo ainda podem dizer “Desafio: …”) | reusar “desafio” sozinho |
 | Desafio litúrgico | **desafio da estação** | só “desafio” |
-| Estação litúrgica (Advento/Quaresma) | **estação** / nome da campanha | caminhada (colide com id do modo) |
+| Estação litúrgica (Advento/Quaresma) | **estação** / nome da campanha | temporada; caminhada (colide com id do modo) |
+| Usuário (identidade) | **peregrino** | aprendiz; "Peregrino+" é nome de plano, não mexer |
+| Marca em texto corrido | **Stway** | STWAY (caixa alta) |
 | Histórico semanal no perfil | **lamparina** / jarro | lâmpada (vidas) |
 | Gesto social | **reconhecer** | curtir |
 | Lembrar quem já está (companhia, grupo) | **acenar / aceno** ("Acenar para Ana") | chamar, animar |
 | Trazer alguém novo (convite) | **chamar** ("Chamar pessoas", "Chamar um companheiro") | — |
 | Lembrete do app no horário | **lembrar** ("Lembrar às 20h") | chamar |
 | Slogan | **A Bíblia, cena a cena** | — |
-| Recompensa | **medalha**; **selo** só para selos de personagem | conquista |
+| Recompensa | **medalha**; **selo** só para selos de personagem | conquista, conquistar, emblema, moeda |
+| Modos (UI) | **Observação / Compreensão / Interpretação** | semente, caminhada, profundezas (ids internos); "mudar a trilha" para trocar de modo |
 | Texto bíblico | **Bíblia** (produto, leitura); **Palavra** em frase devocional; **Escrituras** (plural) em estudo | — |
 | Vidas | **lâmpada** | — |
+
+## Uma ação, um rótulo
+
+| Ação | Rótulo | Não usar |
+|---|---|---|
+| Primeira vez | **Começar** | Descobrir, Entrar na trilha |
+| Seguir de onde parou | **Continuar** | Continuar a jornada / no cânon / a trilha, Retomar, Abrir agora |
+| Depois de concluir a cena | **Próxima cena** | — |
+| Voltar | **Voltar** (destino só se ambíguo: "Voltar ao mapa") | Até amanhã como botão |
+| Trazer alguém novo | **Chamar** ("Chamar um companheiro", "Chamar pessoas", "Chamar para o desafio") | Convidar, Convidar amigo, Enviar convite |
+| Responder a convite recebido | **Aceitar** (sheet "Aceitar convite") | Entrar |
+| Digitar código | **Tenho um código** → botão **Entrar** | Entrar com código |
+| Lembrar quem já está | **Acenar** ("Acenar para Ana") | Enviar aceno, chamar |
+| Fora do app | **Mandar no WhatsApp** / **Compartilhar** | Também no WhatsApp |
+| Sair (membro) / acabar (dono) | **Sair do …** / **Encerrar …** | — |
+| Manter, na confirmação de saída | **Cancelar** | Continuar |
+| Receber recompensa | **Coletar** | — |
+| Fechar leitura / confirmar aviso | **Fechar** / **Entendi** | Glória a Deus, OK |
+| Guardar versículo (Bíblia) | **Guardar** | Salvar |
+| Salvar dado (Ajustes) | **Salvar** | Guardar |
+
+Feedback: sempre `showAppToastFor` (nunca `SnackBar` cru).
+Erro: "Não foi possível [verbo]. Tente de novo." (com ponto; nunca "Não deu para").
+Futuro: **Em breve** (detalhe opcional depois de " · ").
+
+## Voz por contexto
+
+| Contexto | Voz |
+|---|---|
+| Narrador (Hoje, cena, trilhas, perfil, Juntos) | você + para; frases curtas; calmo; mundo do caminho; sem urgência de perseguição |
+| Acerto na cena | curto, sem "!": "Isso.", "Acertou.", "Muito bem." |
+| Celebração | narrador; até um "!" |
+| Mascote | só na celebração; uma linha |
+| Técnica (Ajustes, erros, plano de leitura, ferramentas da Bíblia) | direta, sem metáfora: progresso, conta, backup, aparelho; "Apagar progresso", não "Resetar"; "Automático", não "Auto" |
+| Aparência | **Claro / Médio / Escuro / Automático** (muda com o horário) | 
+| Mensagem de amigo para amigo (aceno, texto de convite que a pessoa manda) | 1ª pessoa de quem manda; gíria, "pra" e emoji ok |
 
 ## Tom
 
@@ -131,3 +197,73 @@ chip/badge = `AppRadii.sm`; seleção = `AppRadii.pill`.
    - avançar: **Continuar**
    - repetir: **Tentar de novo**
 7. Reticências: "…" (um caractere).
+
+## Idiomas (pt-BR · en · es)
+
+Textos de interface moram em `lib/l10n/parts/*.json`, um arquivo por área,
+com as três línguas lado a lado:
+
+```json
+"homeDaysLeft": {
+  "pt": "{count, plural, =1{Falta 1 dia} other{Faltam {count} dias}}",
+  "en": "{count, plural, =1{1 day left} other{{count} days left}}",
+  "es": "{count, plural, =1{Falta 1 día} other{Faltan {count} días}}",
+  "placeholders": {"count": "int"}
+}
+```
+
+`python3 tool/l10n_merge.py` valida (chave duplicada, idioma faltando,
+placeholder não declarado), gera `lib/l10n/app_{pt,en,es}.arb` e roda
+`flutter gen-l10n` (código em `lib/l10n/gen/`). Nunca edite os `.arb` à mão.
+Fora de widget (model, util, serviço, notificação) use `L10n.current.chave`
+(`l10n/l10n_global.dart`); em widget, sempre `context.l10n`.
+
+- Use `context.l10n.chave` (import `l10n/app_language.dart`). Nunca string
+  solta em tela nova.
+- Chave com prefixo da tela (`settings…`, `lesson…`); genéricos em `common…`.
+- Contagem sempre com plural ICU: `{count, plural, =1{1 cena} other{{count} cenas}}`.
+  Nada de `n == 1 ? … : …` no código.
+- Frase inteira numa chave com placeholder (`Você subiu para {tier}`); nunca
+  concatene pedaços traduzidos.
+- Datas com `DateFormat(..., locale)`; nunca `dd/mm` montado à mão.
+- Nome do idioma no seletor é escrito nele mesmo (Português, English, Español).
+- Conteúdo (trilhas, perguntas, Bíblia, léxico) ainda é só pt-BR — não entra
+  no ARB.
+
+Glossário por idioma (mesma regra "uma palavra, um sentido"):
+
+| pt-BR | en | es |
+|---|---|---|
+| cena | scene | escena |
+| pergunta | question | pregunta |
+| etapa | stage | etapa |
+| área | area | área |
+| trilha | trail | ruta |
+| jornada | journey | camino |
+| passos | steps | pasos |
+| sequência | streak | racha |
+| gelo | freeze | hielo |
+| meta | goal | meta |
+| compromisso | commitment | compromiso |
+| acertos | accuracy | aciertos |
+| caravana | caravan | caravana |
+| nível | level | nivel |
+| companhia / companheiro(a) | companion | compañía / compañero(a) |
+| grupo | group | grupo |
+| desafio | challenge | desafío |
+| travessia | crossing | travesía |
+| estação | season | temporada litúrgica |
+| Juntos | Together | Juntos |
+| acenar / aceno | wave | saludar / saludo |
+| chamar | invite | invitar |
+| reconhecer | recognize | reconocer |
+| lâmpada | lamp | lámpara |
+| lamparina | oil lamp | candil |
+| medalha / selo / cofre | medal / seal / vault | medalla / sello / cofre |
+| peregrino | pilgrim | peregrino |
+| Observação / Compreensão / Interpretação | Observation / Understanding / Interpretation | Observación / Comprensión / Interpretación |
+| Ajustes | Settings | Ajustes |
+| Hoje · Trilhas · Bíblia | Today · Trails · Bible | Hoy · Rutas · Biblia |
+
+Tom em en: "you", frases curtas, sentence case. Em es: **tú** (não usted),
+imperativo de tú ("Continúa", "Invita").

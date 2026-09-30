@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/app_language.dart';
 import '../theme/app_theme.dart';
 import 'act_feel.dart';
 import 'app_sheet.dart';
@@ -36,16 +37,15 @@ class _CompanionInviteConfirmSheet extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          const AppSheetHeader(
-            leading: CinematicIcon(
+          AppSheetHeader(
+            leading: const CinematicIcon(
               glyph: CinematicGlyph.people,
               size: 44,
               accent: AppColors.accent,
               glowing: true,
             ),
-            title: 'Convite de companhia',
-            subtitle:
-                'Alguém te chamou para caminhar junto.\nUm toque — sem digitar código.',
+            title: context.l10n.companionSheetInviteConfirmTitle,
+            subtitle: context.l10n.companionSheetInviteConfirmSubtitle,
             center: true,
           ),
           const SizedBox(height: 18),
@@ -64,14 +64,14 @@ class _CompanionInviteConfirmSheet extends StatelessWidget {
           ),
           const SizedBox(height: 14),
           CopperCta(
-            label: 'Aceitar convite',
+            label: context.l10n.inviteAcceptCta,
             onTap: () => Navigator.pop(context, true),
             trailing: null,
             dense: true,
           ),
           const SizedBox(height: 8),
           GhostCta(
-            label: 'Agora não',
+            label: context.l10n.commonNotNow,
             expanded: true,
             onTap: () => Navigator.pop(context, false),
           ),

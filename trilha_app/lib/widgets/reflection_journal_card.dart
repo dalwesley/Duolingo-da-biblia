@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../data/mission_study.dart';
+import '../l10n/app_language.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -23,10 +24,10 @@ class ReflectionJournalCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           RelicChapter(
-            title: 'Anotações de estudo',
+            title: context.l10n.journalTitle,
             accent: AppColors.primaryLight,
             whisper: items.isEmpty
-                ? 'Ao fixar uma cena, sua resposta fica registrada aqui.'
+                ? context.l10n.journalEmpty
                 : null,
           ),
           if (items.isNotEmpty) ...[

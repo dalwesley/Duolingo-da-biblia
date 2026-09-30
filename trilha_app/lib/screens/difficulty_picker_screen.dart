@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show SystemUiOverlayStyle;
 import 'package:provider/provider.dart';
 import '../data/trail_repository.dart';
+import '../l10n/app_language.dart';
 import '../models/difficulty.dart';
 import '../services/analytics_service.dart';
 import '../services/progress_service.dart';
@@ -135,7 +136,7 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen>
                       inline: true,
                       immersive: true,
                       dark: true,
-                      title: 'Antes de partir',
+                      title: context.l10n.modePickerTopBar,
                       onBack: () => Navigator.pop(context),
                       leadingGlyph: CinematicGlyphResolver.forTrail(
                         widget.trailSlug,
@@ -151,13 +152,13 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen>
                     child: Column(
                       children: [
                         SectionLabel(
-                          'Modo de estudo',
+                          context.l10n.modeSheetEyebrow,
                           color: AppColors.accent,
                           textAlign: TextAlign.center,
                         ),
                         const SizedBox(height: AppSpace.sm),
                         Text(
-                          'Como você quer\nestudar?',
+                          context.l10n.modePickerTitle,
                           textAlign: TextAlign.center,
                           style: AppTypography.display(size: 28, height: 1.15),
                         ),

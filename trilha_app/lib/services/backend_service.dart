@@ -7,6 +7,7 @@ import 'package:flutter/foundation.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../firebase_options.dart';
+import '../l10n/l10n_global.dart';
 import '../models/recognition.dart';
 import '../models/study_room.dart';
 import '../models/walk_companion.dart';
@@ -371,7 +372,7 @@ class BackendService extends ChangeNotifier {
     if (!_firebaseReady) {
       await init();
       if (!_firebaseReady) {
-        final err = lastError ?? 'Firebase ainda não está pronto.';
+        final err = lastError ?? L10n.current.authFirebaseNotReady;
         _authLog('abort: Firebase not ready → $err');
         return GoogleSignInResult(ok: false, error: err);
       }
@@ -379,7 +380,7 @@ class BackendService extends ChangeNotifier {
 
     if (_googleBusy) {
       _authLog('signIn ignored: already busy');
-      return const GoogleSignInResult(ok: false, error: 'Login em andamento.');
+      return GoogleSignInResult(ok: false, error: L10n.current.authLoginInProgress);
     }
 
     if (isGoogleSignedIn) {
@@ -412,11 +413,10 @@ class BackendService extends ChangeNotifier {
         'idTokenLen=${idToken?.length ?? 0}',
       );
       if (idToken == null || idToken.isEmpty) {
-        const err =
-            'Google não retornou idToken. Confira se o SHA-1 da Play está no Firebase.';
+        final err = L10n.current.authMissingIdToken;
         lastError = err;
         _authLog('fail: empty idToken');
-        return const GoogleSignInResult(ok: false, error: err);
+        return GoogleSignInResult(ok: false, error: err);
       }
 
       final credential = GoogleAuthProvider.credential(idToken: idToken);
@@ -506,7 +506,7 @@ class BackendService extends ChangeNotifier {
     if (!_firebaseReady) {
       await init();
       if (!_firebaseReady) {
-        final err = lastError ?? 'Firebase ainda não está pronto.';
+        final err = lastError ?? L10n.current.authFirebaseNotReady;
         _authLog('abort Apple: Firebase not ready → $err');
         return AuthSignInResult(ok: false, error: err);
       }
@@ -672,18 +672,17 @@ class BackendService extends ChangeNotifier {
 
     return switch (e.code) {
       'operation-not-allowed' || 'admin-restricted-operation' =>
-        'Ative os provedores no Firebase Console: Authentication → Sign-in method → Anonymous e/ou Google.',
-      'network-request-failed' =>
-        'Sem conexão com a internet. Verifique o Wi‑Fi/dados do aparelho.',
-      'too-many-requests' =>
-        'Muitas tentativas. Aguarde um pouco e tente de novo.',
+        L10n.current.authEnableProviders,
+      'network-request-failed' => L10n.current.authNoInternet,
+      'too-many-requests' => L10n.current.authTooManyRequests,
       'account-exists-with-different-credential' =>
-        'Já existe uma conta com este e-mail usando outro método de login.',
-      'invalid-credential' =>
-        'Credencial Google inválida. Cadastre o SHA-1 do app no Firebase e baixe o google-services.json de novo.',
-      _ when looksLikeNetwork =>
-        'Falha de rede ao falar com o Firebase Auth (conexão resetada). Tente de novo em Wi‑Fi estável ou dados móveis.',
-      _ => 'Erro de Auth (${e.code}): ${e.message ?? e.code}',
+        L10n.current.authAccountExists,
+      'invalid-credential' => L10n.current.authInvalidCredential,
+      _ when looksLikeNetwork => L10n.current.authNetworkReset,
+      _ => L10n.current.authGenericError(
+        e.code,
+        e.message ?? e.code,
+      ),
     };
   }
 
@@ -1385,7 +1384,9 @@ class BackendService extends ChangeNotifier {
       if (prev.exists && prev.data()?['day'] == today) return true;
       await ref.set({
         'fromId': _uid,
-        'fromName': fromName.trim().isEmpty ? 'Alguém' : fromName.trim(),
+        'fromName': fromName.trim().isEmpty
+            ? L10n.current.cornerSomeone
+            : fromName.trim(),
         'roomName': roomName,
         'day': today,
         'at': FieldValue.serverTimestamp(),
@@ -1418,9 +1419,13 @@ class BackendService extends ChangeNotifier {
         'roomName': roomName,
         'kind': kind.storageKey,
         'fromUid': _uid,
-        'fromName': fromName.trim().isEmpty ? 'Alguém' : fromName.trim(),
+        'fromName': fromName.trim().isEmpty
+            ? L10n.current.cornerSomeone
+            : fromName.trim(),
         'toUid': toUid,
-        'toName': toName.trim().isEmpty ? 'Alguém' : toName.trim(),
+        'toName': toName.trim().isEmpty
+            ? L10n.current.cornerSomeone
+            : toName.trim(),
         'participantIds': [_uid, toUid],
         'status': RoomInviteStatus.pending.name,
         'createdAt': FieldValue.serverTimestamp(),

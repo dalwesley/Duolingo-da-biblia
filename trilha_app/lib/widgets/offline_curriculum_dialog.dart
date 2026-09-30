@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import '../l10n/app_language.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/network_reachability.dart';
@@ -84,8 +85,8 @@ class _OfflineCurriculumDialogState extends State<_OfflineCurriculumDialog>
     setState(() {
       _busy = false;
       _hint = online
-          ? 'Ainda não deu para baixar as missões. Toque de novo em instantes.'
-          : 'Sem internet no momento. Ligue o Wi‑Fi ou os dados e tente de novo.';
+          ? context.l10n.offlineDownloadFailed
+          : context.l10n.offlineNoInternet;
     });
     HapticFeedback.heavyImpact();
   }
@@ -98,7 +99,7 @@ class _OfflineCurriculumDialogState extends State<_OfflineCurriculumDialog>
     return PopScope(
       canPop: false,
       child: AppDialog(
-        title: 'Missões ainda não chegaram',
+        title: context.l10n.offlineTitle,
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -115,7 +116,7 @@ class _OfflineCurriculumDialogState extends State<_OfflineCurriculumDialog>
             ),
             const SizedBox(height: AppSpace.md),
             Text(
-              'Na primeira abertura o STWAY baixa o currículo da nuvem. Precisa de internet uma vez — depois fica no aparelho.',
+              context.l10n.offlineBody,
               textAlign: TextAlign.center,
               style: AppTypography.body(
                 size: 14,
@@ -150,7 +151,9 @@ class _OfflineCurriculumDialogState extends State<_OfflineCurriculumDialog>
         ),
         actions: [
           CopperCta(
-            label: _busy ? 'Baixando…' : 'Tentar de novo',
+            label: _busy
+                ? context.l10n.offlineDownloading
+                : context.l10n.commonTryAgain,
             onTap: _busy ? null : _retry,
             showArrow: false,
           ),

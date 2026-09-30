@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
+import '../l10n/app_language.dart';
 import '../models/walk_companion.dart';
 import '../services/companion_service.dart';
 import '../services/invite_deep_link_service.dart';
@@ -60,7 +61,7 @@ class _CompanionInvitePromptSheetState
       setState(() => _busy = false);
       showAppToastFor(
         context,
-        message: companions.lastError ?? 'Não foi possível criar o convite',
+        message: companions.lastError ?? context.l10n.inviteCreateFailed,
         glyph: CinematicGlyph.wrong,
         tone: AppToastTone.warn,
       );
@@ -78,8 +79,10 @@ class _CompanionInvitePromptSheetState
   Widget build(BuildContext context) {
     final scene = widget.tomorrowTitle?.trim() ?? '';
     final body = scene.isEmpty
-        ? 'Um amigo. Fechem os 7 dias da semana juntos — os dois ganham +${WalkCompanion.weekTogetherBonusSteps} passos na jornada.'
-        : 'Amanhã: $scene. Chame alguém para chegar junto.';
+        ? context.l10n.companionSheetPromptBody(
+            WalkCompanion.weekTogetherBonusSteps,
+          )
+        : context.l10n.companionSheetPromptBodyTomorrow(scene);
 
     return AppSheetPanel(
       child: Column(
@@ -92,22 +95,22 @@ class _CompanionInvitePromptSheetState
               accent: AppColors.accent,
               glowing: true,
             ),
-            eyebrow: 'Companhia',
+            eyebrow: context.l10n.companionSheetEyebrow,
             eyebrowColor: AppColors.accent.withValues(alpha: 0.85),
-            title: 'Chame alguém para caminhar',
+            title: context.l10n.companionSheetPromptTitle,
             subtitle: body,
             center: true,
           ),
           const SizedBox(height: 20),
           CopperCta(
-            label: 'Chamar um companheiro',
+            label: context.l10n.companionSheetInviteCta,
             onTap: _busy ? null : _invite,
             leading: CinematicGlyph.people,
             busy: _busy,
           ),
           const SizedBox(height: 8),
           GhostCta(
-            label: 'Agora não',
+            label: context.l10n.commonNotNow,
             expanded: true,
             onTap: _busy ? null : _dismiss,
           ),

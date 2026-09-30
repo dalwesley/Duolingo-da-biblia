@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../l10n/l10n_global.dart';
 import '../theme/app_theme.dart';
 import '../widgets/cinematic_icon.dart';
 import 'day_phase.dart';
@@ -15,10 +16,10 @@ extension AppearanceModeX on AppearanceMode {
   String get storageKey => name;
 
   String get label => switch (this) {
-        AppearanceMode.morning => 'Manhã',
-        AppearanceMode.afternoon => 'Tarde',
-        AppearanceMode.night => 'Noite',
-        AppearanceMode.automatic => 'Automático',
+        AppearanceMode.morning => L10n.current.settingsThemeLight,
+        AppearanceMode.afternoon => L10n.current.settingsThemeMedium,
+        AppearanceMode.night => L10n.current.settingsThemeDark,
+        AppearanceMode.automatic => L10n.current.settingsThemeAuto,
       };
 
   CinematicGlyph get glyph => switch (this) {

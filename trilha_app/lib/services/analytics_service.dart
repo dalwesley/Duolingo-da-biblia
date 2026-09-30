@@ -51,37 +51,30 @@ class AnalyticsService {
     required int daysSinceFirstOpen,
     required int? daysSinceFirstLesson,
     String? cohortTrail,
-  }) =>
-      _log('retention_pulse', {
-        'days_since_first_open': daysSinceFirstOpen,
-        'days_since_first_lesson': ?daysSinceFirstLesson,
-        'cohort_trail': ?(cohortTrail?.isNotEmpty == true ? cohortTrail : null),
-      });
+  }) => _log('retention_pulse', {
+    'days_since_first_open': daysSinceFirstOpen,
+    'days_since_first_lesson': ?daysSinceFirstLesson,
+    'cohort_trail': ?(cohortTrail?.isNotEmpty == true ? cohortTrail : null),
+  });
 
   /// Primeira missão concluída da conta (base de TTV / coorte D7).
   Future<void> logFirstLessonComplete({
     required String missionSlug,
     required String trailSlug,
     required int ttvSeconds,
-  }) =>
-      _log('first_lesson_complete', {
-        'mission_slug': missionSlug,
-        'trail_slug': trailSlug,
-        'ttv_seconds': ttvSeconds,
-      });
+  }) => _log('first_lesson_complete', {
+    'mission_slug': missionSlug,
+    'trail_slug': trailSlug,
+    'ttv_seconds': ttvSeconds,
+  });
 
-  Future<void> logLogin({required String method}) => _log(
-        'login',
-        {'method': method},
-      );
+  Future<void> logLogin({required String method}) =>
+      _log('login', {'method': method});
 
-  Future<void> logLoginFailed({String? reason}) => _log(
-        'login_failed',
-        {
-          if (reason != null && reason.isNotEmpty)
-            'reason': reason.length > 80 ? reason.substring(0, 80) : reason,
-        },
-      );
+  Future<void> logLoginFailed({String? reason}) => _log('login_failed', {
+    if (reason != null && reason.isNotEmpty)
+      'reason': reason.length > 80 ? reason.substring(0, 80) : reason,
+  });
 
   Future<void> logHomeView() => _log('home_view');
 
@@ -89,12 +82,11 @@ class AnalyticsService {
     required String missionSlug,
     String? trailSlug,
     String? difficulty,
-  }) =>
-      _log('lesson_start', {
-        'mission_slug': missionSlug,
-        'trail_slug': ?trailSlug,
-        'difficulty': ?difficulty,
-      });
+  }) => _log('lesson_start', {
+    'mission_slug': missionSlug,
+    'trail_slug': ?trailSlug,
+    'difficulty': ?difficulty,
+  });
 
   Future<void> logLessonComplete({
     required String missionSlug,
@@ -105,26 +97,24 @@ class AnalyticsService {
     bool isBoss = false,
     bool isReplay = false,
     bool perfect = false,
-  }) =>
-      _log('lesson_complete', {
-        'mission_slug': missionSlug,
-        'trail_slug': trailSlug,
-        'correct': correct,
-        'total': total,
-        'steps': steps,
-        'is_boss': isBoss,
-        'is_replay': isReplay,
-        'perfect': perfect,
-      });
+  }) => _log('lesson_complete', {
+    'mission_slug': missionSlug,
+    'trail_slug': trailSlug,
+    'correct': correct,
+    'total': total,
+    'steps': steps,
+    'is_boss': isBoss,
+    'is_replay': isReplay,
+    'perfect': perfect,
+  });
 
   Future<void> logDifficultyPick({
     required String trailSlug,
     required String difficulty,
-  }) =>
-      _log('difficulty_pick', {
-        'trail_slug': trailSlug,
-        'difficulty': difficulty,
-      });
+  }) => _log('difficulty_pick', {
+    'trail_slug': trailSlug,
+    'difficulty': difficulty,
+  });
 
   Future<void> logQuestionAnswered({
     required String missionSlug,
@@ -135,30 +125,28 @@ class AnalyticsService {
     String? questionId,
     String? difficulty,
     bool isBoss = false,
-  }) =>
-      _log('question_answered', {
-        'mission_slug': missionSlug,
-        'question_index': questionIndex,
-        'correct': correct,
-        'hint_used': hintUsed,
-        'is_boss': isBoss,
-        'trail_slug': ?trailSlug,
-        'question_id': ?questionId,
-        'difficulty': ?difficulty,
-      });
+  }) => _log('question_answered', {
+    'mission_slug': missionSlug,
+    'question_index': questionIndex,
+    'correct': correct,
+    'hint_used': hintUsed,
+    'is_boss': isBoss,
+    'trail_slug': ?trailSlug,
+    'question_id': ?questionId,
+    'difficulty': ?difficulty,
+  });
 
   Future<void> logExerciseStart({
     required String missionSlug,
     required String type,
     required String skill,
     required int index,
-  }) =>
-      _log('exercise_start', {
-        'mission_slug': missionSlug,
-        'type': type,
-        'skill': skill,
-        'index': index,
-      });
+  }) => _log('exercise_start', {
+    'mission_slug': missionSlug,
+    'type': type,
+    'skill': skill,
+    'index': index,
+  });
 
   Future<void> logExerciseComplete({
     required String missionSlug,
@@ -166,14 +154,23 @@ class AnalyticsService {
     required String skill,
     required int index,
     required bool correct,
-  }) =>
-      _log('exercise_complete', {
-        'mission_slug': missionSlug,
-        'type': type,
-        'skill': skill,
-        'index': index,
-        'correct': correct,
-      });
+    int attempt = 1,
+    bool requeued = false,
+    bool revealed = false,
+    int elapsedMs = 0,
+    String? difficulty,
+  }) => _log('exercise_complete', {
+    'mission_slug': missionSlug,
+    'type': type,
+    'skill': skill,
+    'index': index,
+    'correct': correct,
+    'attempt': attempt,
+    'requeued': requeued,
+    'revealed': revealed,
+    'elapsed_ms': elapsedMs,
+    'difficulty': ?difficulty,
+  });
 
   Future<void> logEvent(String name, [Map<String, Object>? params]) =>
       _log(name, params);

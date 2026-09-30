@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../l10n/l10n_global.dart';
 import '../theme/app_theme.dart';
 import 'caravan_pilgrim_profile.dart';
 import 'pilgrim_medal_catalog.dart';
@@ -14,12 +15,12 @@ class PilgrimMedals {
   PilgrimMedals._();
 
   static List<PilgrimVaultDef> allVaultDefs(List<Trail> catalog) => [
-        PilgrimMedalCatalog.journeyVault(),
-        PilgrimMedalCatalog.adventVaultFor(DateTime.now()),
-        PilgrimMedalCatalog.lentVaultFor(DateTime.now()),
-        ...PilgrimMedalCatalog.trailVaultsForCatalog(catalog),
-        PilgrimMedalCatalog.discoveryVault(),
-      ];
+    PilgrimMedalCatalog.journeyVault(),
+    PilgrimMedalCatalog.adventVaultFor(DateTime.now()),
+    PilgrimMedalCatalog.lentVaultFor(DateTime.now()),
+    ...PilgrimMedalCatalog.trailVaultsForCatalog(catalog),
+    PilgrimMedalCatalog.discoveryVault(),
+  ];
 
   static List<PilgrimVaultState> evaluateVaults({
     required CaravanPilgrimProfile profile,
@@ -65,17 +66,23 @@ class PilgrimMedals {
     }
 
     final startedSlugs = _startedTrailSlugs(profile, catalog);
-    final trailVaults = PilgrimMedalCatalog.trailVaultsForCatalog(catalog)
-        .where((v) => startedSlugs.contains(v.id.replaceFirst('trail:', '')))
-        .toList()
-      ..sort((a, b) {
-        final aSlug = a.id.replaceFirst('trail:', '');
-        final bSlug = b.id.replaceFirst('trail:', '');
-        final byProgress = _trailProgress(profile, catalog, bSlug)
-            .compareTo(_trailProgress(profile, catalog, aSlug));
-        if (byProgress != 0) return byProgress;
-        return a.order.compareTo(b.order);
-      });
+    final trailVaults =
+        PilgrimMedalCatalog.trailVaultsForCatalog(catalog)
+            .where(
+              (v) => startedSlugs.contains(v.id.replaceFirst('trail:', '')),
+            )
+            .toList()
+          ..sort((a, b) {
+            final aSlug = a.id.replaceFirst('trail:', '');
+            final bSlug = b.id.replaceFirst('trail:', '');
+            final byProgress = _trailProgress(
+              profile,
+              catalog,
+              bSlug,
+            ).compareTo(_trailProgress(profile, catalog, aSlug));
+            if (byProgress != 0) return byProgress;
+            return a.order.compareTo(b.order);
+          });
 
     for (final def in trailVaults) {
       vaults.add(
@@ -108,23 +115,24 @@ class PilgrimMedals {
     required CaravanPilgrimProfile profile,
     required List<Trail> catalog,
     PilgrimMedalEvalContext ctx = const PilgrimMedalEvalContext(),
-  }) =>
-      [
-        for (final vault in evaluateVaults(
-          profile: profile,
-          catalog: catalog,
-          ctx: ctx,
-        ))
-          ...vault.tracks,
-      ];
+  }) => [
+    for (final vault in evaluateVaults(
+      profile: profile,
+      catalog: catalog,
+      ctx: ctx,
+    ))
+      ...vault.tracks,
+  ];
 
   static int unlockedCount(
     CaravanPilgrimProfile profile,
     List<Trail> catalog, {
     PilgrimMedalEvalContext ctx = const PilgrimMedalEvalContext(),
-  }) =>
-      evaluateVaults(profile: profile, catalog: catalog, ctx: ctx)
-          .fold<int>(0, (sum, v) => sum + v.unlockedCount);
+  }) => evaluateVaults(
+    profile: profile,
+    catalog: catalog,
+    ctx: ctx,
+  ).fold<int>(0, (sum, v) => sum + v.unlockedCount);
 
   static bool isJourneyVaultComplete(
     CaravanPilgrimProfile profile,
@@ -183,7 +191,9 @@ class PilgrimMedals {
   }
 
   /// Raras só aparecem desbloqueadas — o resto é silhueta, sem dica.
-  static List<PilgrimMedalTile> visibleDiscoveryTiles(PilgrimVaultState? state) {
+  static List<PilgrimMedalTile> visibleDiscoveryTiles(
+    PilgrimVaultState? state,
+  ) {
     if (state == null) return const [];
     return [
       for (final status in state.rareMedals)
@@ -277,19 +287,17 @@ class PilgrimMedals {
     Set<String> celebratedIds,
     List<Trail> catalog, {
     PilgrimMedalEvalContext ctx = const PilgrimMedalEvalContext(),
-  }) =>
-      newRareUnlocks(profile, celebratedIds, catalog, ctx: ctx);
+  }) => newRareUnlocks(profile, celebratedIds, catalog, ctx: ctx);
 
   static List<String> newlyCompletedVaultIds({
     required List<PilgrimVaultState> vaults,
     required Set<String> alreadyCelebratedVaultIds,
-  }) =>
-      [
-        for (final state in vaults)
-          if (state.isComplete &&
-              !alreadyCelebratedVaultIds.contains(state.vault.id))
-            state.vault.id,
-      ];
+  }) => [
+    for (final state in vaults)
+      if (state.isComplete &&
+          !alreadyCelebratedVaultIds.contains(state.vault.id))
+        state.vault.id,
+  ];
 
   static PilgrimTrackProximity? nearestLocked({
     required CaravanPilgrimProfile profile,
@@ -311,18 +319,14 @@ class PilgrimMedals {
         current: step.current,
         target: step.target,
         remaining: step.remaining,
-        unitLabel: step.label,
+        units: step.units,
       );
       if (best == null || step.remaining < best!.remaining) {
         best = proximity;
       }
     }
 
-    final vaults = evaluateVaults(
-      profile: profile,
-      catalog: catalog,
-      ctx: ctx,
-    );
+    final vaults = evaluateVaults(profile: profile, catalog: catalog, ctx: ctx);
 
     if (priorityTrailSlug != null) {
       for (final state in vaults) {
@@ -356,13 +360,12 @@ class PilgrimMedals {
     required bool perfect,
     PilgrimMedalEvalContext ctx = const PilgrimMedalEvalContext(),
   }) {
-    final vaults = evaluateVaults(
-      profile: profile,
-      catalog: catalog,
-      ctx: ctx,
-    );
+    final vaults = evaluateVaults(profile: profile, catalog: catalog, ctx: ctx);
 
-    PilgrimTrackProximity? fromTrack(PilgrimTrackState trackState, String title) {
+    PilgrimTrackProximity? fromTrack(
+      PilgrimTrackState trackState,
+      String title,
+    ) {
       if (trackState.isComplete) return null;
       final step = _progressTowardTrack(trackState, profile, catalog, ctx);
       if (step == null) return null;
@@ -375,7 +378,7 @@ class PilgrimMedals {
         current: step.current,
         target: step.target,
         remaining: step.remaining,
-        unitLabel: step.label,
+        units: step.units,
       );
     }
 
@@ -442,11 +445,12 @@ class PilgrimMedals {
     }
     return switch (track.id) {
       PilgrimMedalCatalog.trackWordId => _wordLevel(levelIndex, profile),
-      PilgrimMedalCatalog.trackFormationId =>
-        _formationLevel(levelIndex, profile),
+      PilgrimMedalCatalog.trackFormationId => _formationLevel(
+        levelIndex,
+        profile,
+      ),
       PilgrimMedalCatalog.trackPathId => _pathLevel(levelIndex, profile),
-      PilgrimMedalCatalog.trackWitnessId =>
-        _witnessLevel(levelIndex, profile),
+      PilgrimMedalCatalog.trackWitnessId => _witnessLevel(levelIndex, profile),
       PilgrimMedalCatalog.trackMemoryId => _memoryLevel(levelIndex, profile),
       _ => false,
     };
@@ -499,10 +503,10 @@ class PilgrimMedals {
     DateTime end,
     int totalDays,
     int diamondTarget,
-    String label,
-  })? _seasonWindowFor(PilgrimMedalTrackDef track) {
-    final advent =
-        RegExp(r'^track:season:advento-(\d+)$').firstMatch(track.id);
+    String Function(int count) units,
+  })?
+  _seasonWindowFor(PilgrimMedalTrackDef track) {
+    final advent = RegExp(r'^track:season:advento-(\d+)$').firstMatch(track.id);
     if (advent != null) {
       final year = int.parse(advent.group(1)!);
       final w = PilgrimMedalCatalog.adventWindow(year);
@@ -511,11 +515,10 @@ class PilgrimMedals {
         end: w.end,
         totalDays: w.totalDays,
         diamondTarget: PilgrimMedalCatalog.adventDiamondDays(year),
-        label: 'Advento',
+        units: L10n.current.medalUnitAdventDays,
       );
     }
-    final lent =
-        RegExp(r'^track:season:quaresma-(\d+)$').firstMatch(track.id);
+    final lent = RegExp(r'^track:season:quaresma-(\d+)$').firstMatch(track.id);
     if (lent != null) {
       final year = int.parse(lent.group(1)!);
       final w = PilgrimMedalCatalog.lentWindow(year);
@@ -524,7 +527,7 @@ class PilgrimMedals {
         end: w.end,
         totalDays: w.totalDays,
         diamondTarget: PilgrimMedalCatalog.lentDiamondDays(year),
-        label: 'Quaresma',
+        units: L10n.current.medalUnitLentDays,
       );
     }
     return null;
@@ -575,23 +578,23 @@ class PilgrimMedals {
     CaravanPilgrimProfile profile,
     List<Trail> catalog,
     PilgrimMedalEvalContext ctx,
-  ) =>
-      switch (def.id) {
-        'discovery:founder' => _isFounder(ctx.firstOpenDate),
-        'discovery:comeback' => _hasComeback(ctx.playDates, minDays: 21),
-        'discovery:bible_before' => ctx.bibleBeforeMission,
-        'discovery:andando_na_luz' =>
-          profile.lifetimeQuestionsAnswered >= 50 &&
-              (profile.accuracyPercent ?? 0) >= 85,
-        'discovery:perfect_boss' =>
-          profile.perfectMissions.any((s) => s.contains('boss')),
-        'discovery:leader' => profile.daysAsCaravanLeader >= 1,
-        'discovery:accuracy_elite' => _hasAccuracyElite(profile),
-        'discovery:trail_flawless' => _hasFlawlessTrail(profile, catalog),
-        'discovery:reflection_deep' => ctx.reflectionCount >= 40,
-        'discovery:advent_week' => _hasSeasonStreak(ctx, minDays: 7),
-        _ => false,
-      };
+  ) => switch (def.id) {
+    'discovery:founder' => _isFounder(ctx.firstOpenDate),
+    'discovery:comeback' => _hasComeback(ctx.playDates, minDays: 21),
+    'discovery:bible_before' => ctx.bibleBeforeMission,
+    'discovery:andando_na_luz' =>
+      profile.lifetimeQuestionsAnswered >= 50 &&
+          (profile.accuracyPercent ?? 0) >= 85,
+    'discovery:perfect_boss' => profile.perfectMissions.any(
+      (s) => s.contains('boss'),
+    ),
+    'discovery:leader' => profile.daysAsCaravanLeader >= 1,
+    'discovery:accuracy_elite' => _hasAccuracyElite(profile),
+    'discovery:trail_flawless' => _hasFlawlessTrail(profile, catalog),
+    'discovery:reflection_deep' => ctx.reflectionCount >= 40,
+    'discovery:advent_week' => _hasSeasonStreak(ctx, minDays: 7),
+    _ => false,
+  };
 
   static int _seasonPlayDaysInWindow(
     PilgrimMedalEvalContext ctx,
@@ -610,21 +613,25 @@ class PilgrimMedals {
     return count;
   }
 
-  static bool _hasSeasonStreak(PilgrimMedalEvalContext ctx, {required int minDays}) {
+  static bool _hasSeasonStreak(
+    PilgrimMedalEvalContext ctx, {
+    required int minDays,
+  }) {
     final vault = PilgrimMedalCatalog.adventVaultFor(ctx.clock);
     final from = vault.activeFrom;
     final until = vault.activeUntil;
     if (from == null || until == null) return false;
     final start = DateTime(from.year, from.month, from.day);
     final end = DateTime(until.year, until.month, until.day);
-    final days = ctx.playDates
-        .map(DateTime.tryParse)
-        .whereType<DateTime>()
-        .map((d) => DateTime(d.year, d.month, d.day))
-        .where((d) => !d.isBefore(start) && !d.isAfter(end))
-        .toSet()
-        .toList()
-      ..sort();
+    final days =
+        ctx.playDates
+            .map(DateTime.tryParse)
+            .whereType<DateTime>()
+            .map((d) => DateTime(d.year, d.month, d.day))
+            .where((d) => !d.isBefore(start) && !d.isAfter(end))
+            .toSet()
+            .toList()
+          ..sort();
     if (days.length < minDays) return false;
     var run = 1;
     for (var i = 1; i < days.length; i++) {
@@ -647,8 +654,8 @@ class PilgrimMedals {
 
   static bool _hasComeback(List<String> playDates, {required int minDays}) {
     if (playDates.length < 2) return false;
-    final sorted = playDates.map(DateTime.tryParse).whereType<DateTime>().toList()
-      ..sort();
+    final sorted =
+        playDates.map(DateTime.tryParse).whereType<DateTime>().toList()..sort();
     if (sorted.length < 2) return false;
     for (var i = 1; i < sorted.length; i++) {
       if (sorted[i].difference(sorted[i - 1]).inDays >= minDays) return true;
@@ -702,8 +709,9 @@ class PilgrimMedals {
   ) {
     final trail = _trailBySlug(catalog, slug);
     if (trail == null || trail.missionSlugs.isEmpty) return 0;
-    final done =
-        trail.missionSlugs.where(profile.completedMissions.contains).length;
+    final done = trail.missionSlugs
+        .where(profile.completedMissions.contains)
+        .length;
     return done / trail.missionSlugs.length;
   }
 
@@ -740,15 +748,17 @@ class PilgrimMedals {
       return _seasonLevelProgress(track, levelIndex, ctx);
     }
     return switch (track.id) {
-      PilgrimMedalCatalog.trackWordId =>
-        _wordProgress(levelIndex, profile),
-      PilgrimMedalCatalog.trackFormationId =>
-        _formationProgress(levelIndex, profile),
+      PilgrimMedalCatalog.trackWordId => _wordProgress(levelIndex, profile),
+      PilgrimMedalCatalog.trackFormationId => _formationProgress(
+        levelIndex,
+        profile,
+      ),
       PilgrimMedalCatalog.trackPathId => _pathProgress(levelIndex, profile),
-      PilgrimMedalCatalog.trackWitnessId =>
-        _witnessProgress(levelIndex, profile),
-      PilgrimMedalCatalog.trackMemoryId =>
-        _memoryProgress(levelIndex, profile),
+      PilgrimMedalCatalog.trackWitnessId => _witnessProgress(
+        levelIndex,
+        profile,
+      ),
+      PilgrimMedalCatalog.trackMemoryId => _memoryProgress(levelIndex, profile),
       _ => null,
     };
   }
@@ -756,126 +766,108 @@ class PilgrimMedals {
   static _MedalStep? _wordProgress(int level, CaravanPilgrimProfile profile) =>
       switch (level) {
         0 => _step(
-            current: profile.bibleChaptersRead,
-            target: 1,
-            unit: 'capítulo',
-            unitPlural: 'capítulos',
-          ),
+          current: profile.bibleChaptersRead,
+          target: 1,
+          units: L10n.current.medalUnitChapters,
+        ),
         1 => _step(
-            current: profile.bibleChaptersRead,
-            target: 25,
-            unit: 'capítulo',
-            unitPlural: 'capítulos',
-          ),
+          current: profile.bibleChaptersRead,
+          target: 25,
+          units: L10n.current.medalUnitChapters,
+        ),
         2 => _step(
-            current: profile.bibleChaptersRead,
-            target: 100,
-            unit: 'capítulo',
-            unitPlural: 'capítulos',
-          ),
+          current: profile.bibleChaptersRead,
+          target: 100,
+          units: L10n.current.medalUnitChapters,
+        ),
         _ => null,
       };
 
   static _MedalStep? _formationProgress(
     int level,
     CaravanPilgrimProfile profile,
-  ) =>
-      switch (level) {
-        0 => _step(
-            current: profile.perfectMissions.length,
-            target: 1,
-            unit: 'cena perfeita',
-            unitPlural: 'cenas perfeitas',
-          ),
-        1 => _step(
-            current: profile.perfectMissions.length,
-            target: 10,
-            unit: 'cena perfeita',
-            unitPlural: 'cenas perfeitas',
-          ),
-        2 => _step(
-            current: profile.perfectMissions.length,
-            target: 25,
-            unit: 'cena perfeita',
-            unitPlural: 'cenas perfeitas',
-          ),
-        _ => null,
-      };
+  ) => switch (level) {
+    0 => _step(
+      current: profile.perfectMissions.length,
+      target: 1,
+      units: L10n.current.medalUnitPerfectScenes,
+    ),
+    1 => _step(
+      current: profile.perfectMissions.length,
+      target: 10,
+      units: L10n.current.medalUnitPerfectScenes,
+    ),
+    2 => _step(
+      current: profile.perfectMissions.length,
+      target: 25,
+      units: L10n.current.medalUnitPerfectScenes,
+    ),
+    _ => null,
+  };
 
   static _MedalStep? _pathProgress(int level, CaravanPilgrimProfile profile) =>
       switch (level) {
         0 => _step(
-            current: profile.streak,
-            target: 3,
-            unit: 'dia de sequência',
-            unitPlural: 'dias de sequência',
-          ),
+          current: profile.streak,
+          target: 3,
+          units: L10n.current.medalUnitStreakDays,
+        ),
         1 => _step(
-            current: profile.streak,
-            target: 14,
-            unit: 'dia de sequência',
-            unitPlural: 'dias de sequência',
-          ),
+          current: profile.streak,
+          target: 14,
+          units: L10n.current.medalUnitStreakDays,
+        ),
         2 => _step(
-            current: profile.streak,
-            target: 30,
-            unit: 'dia de sequência',
-            unitPlural: 'dias de sequência',
-          ),
+          current: profile.streak,
+          target: 30,
+          units: L10n.current.medalUnitStreakDays,
+        ),
         _ => null,
       };
 
   static _MedalStep? _witnessProgress(
     int level,
     CaravanPilgrimProfile profile,
-  ) =>
-      switch (level) {
-        0 => _step(
-            current: profile.sharedVerseCount,
-            target: 1,
-            unit: 'versículo compartilhado',
-            unitPlural: 'versículos compartilhados',
-          ),
-        1 => _step(
-            current: profile.sharedVerseCount,
-            target: 10,
-            unit: 'versículo compartilhado',
-            unitPlural: 'versículos compartilhados',
-          ),
-        2 => _step(
-            current: profile.sharedVerseCount,
-            target: 50,
-            unit: 'versículo compartilhado',
-            unitPlural: 'versículos compartilhados',
-          ),
-        _ => null,
-      };
+  ) => switch (level) {
+    0 => _step(
+      current: profile.sharedVerseCount,
+      target: 1,
+      units: L10n.current.medalUnitSharedVerses,
+    ),
+    1 => _step(
+      current: profile.sharedVerseCount,
+      target: 10,
+      units: L10n.current.medalUnitSharedVerses,
+    ),
+    2 => _step(
+      current: profile.sharedVerseCount,
+      target: 50,
+      units: L10n.current.medalUnitSharedVerses,
+    ),
+    _ => null,
+  };
 
   static _MedalStep? _memoryProgress(
     int level,
     CaravanPilgrimProfile profile,
-  ) =>
-      switch (level) {
-        0 => _step(
-            current: profile.memoryMasteredCount,
-            target: 1,
-            unit: 'versículo memorizado',
-            unitPlural: 'versículos memorizados',
-          ),
-        1 => _step(
-            current: profile.memoryMasteredCount,
-            target: 15,
-            unit: 'versículo memorizado',
-            unitPlural: 'versículos memorizados',
-          ),
-        2 => _step(
-            current: profile.memoryMasteredCount,
-            target: 50,
-            unit: 'versículo memorizado',
-            unitPlural: 'versículos memorizados',
-          ),
-        _ => null,
-      };
+  ) => switch (level) {
+    0 => _step(
+      current: profile.memoryMasteredCount,
+      target: 1,
+      units: L10n.current.medalUnitMemorizedVerses,
+    ),
+    1 => _step(
+      current: profile.memoryMasteredCount,
+      target: 15,
+      units: L10n.current.medalUnitMemorizedVerses,
+    ),
+    2 => _step(
+      current: profile.memoryMasteredCount,
+      target: 50,
+      units: L10n.current.medalUnitMemorizedVerses,
+    ),
+    _ => null,
+  };
 
   static _MedalStep? _trailLevelProgress(
     PilgrimMedalTrackDef track,
@@ -893,19 +885,13 @@ class PilgrimMedals {
         .length;
 
     if (levelIndex == 0) {
-      return _step(
-        current: done,
-        target: 1,
-        unit: 'cena',
-        unitPlural: 'cenas',
-      );
+      return _step(current: done, target: 1, units: L10n.current.commonScenes);
     }
     if (levelIndex == 1 || levelIndex == 2 || levelIndex == 3) {
       return _step(
         current: done,
         target: total,
-        unit: 'cena',
-        unitPlural: 'cenas',
+        units: L10n.current.commonScenes,
       );
     }
     return null;
@@ -919,23 +905,16 @@ class PilgrimMedals {
     final window = _seasonWindowFor(track);
     if (window == null) return null;
     final days = _seasonPlayDaysInWindow(ctx, window.start, window.end);
-    final unit = 'dia no ${window.label}';
-    final unitPlural = 'dias no ${window.label}';
+    final units = window.units;
     return switch (levelIndex) {
-      0 => _step(current: days, target: 1, unit: unit, unitPlural: unitPlural),
-      1 => _step(current: days, target: 7, unit: unit, unitPlural: unitPlural),
+      0 => _step(current: days, target: 1, units: units),
+      1 => _step(current: days, target: 7, units: units),
       2 => _step(
-          current: days,
-          target: (window.totalDays / 2).ceil(),
-          unit: unit,
-          unitPlural: unitPlural,
-        ),
-      3 => _step(
-          current: days,
-          target: window.diamondTarget,
-          unit: unit,
-          unitPlural: unitPlural,
-        ),
+        current: days,
+        target: (window.totalDays / 2).ceil(),
+        units: units,
+      ),
+      3 => _step(current: days, target: window.diamondTarget, units: units),
       _ => null,
     };
   }
@@ -943,18 +922,18 @@ class PilgrimMedals {
   static _MedalStep? _step({
     required int current,
     required int target,
-    required String unit,
-    required String unitPlural,
+    required String Function(int count) units,
   }) {
     if (target <= 0 || current >= target) return null;
     final remaining = target - current;
-    final label = remaining == 1 ? unit : unitPlural;
-    final showWithin = target <= 5 ? target : (target * 0.2).ceil().clamp(3, 10);
+    final showWithin = target <= 5
+        ? target
+        : (target * 0.2).ceil().clamp(3, 10);
     return _MedalStep(
       current: current,
       target: target,
       remaining: remaining,
-      label: label,
+      units: units,
       showWithin: showWithin,
     );
   }
@@ -964,25 +943,25 @@ class _MedalStep {
   final int current;
   final int target;
   final int remaining;
-  final String label;
+  final String Function(int count) units;
   final int showWithin;
 
   const _MedalStep({
     required this.current,
     required this.target,
     required this.remaining,
-    required this.label,
+    required this.units,
     required this.showWithin,
   });
 }
 
 Color tierColor(PilgrimMedalTier tier) => switch (tier) {
-      PilgrimMedalTier.iron => AppColors.medalIron,
-      PilgrimMedalTier.bronze => AppColors.medalBronze,
-      PilgrimMedalTier.silver => AppColors.medalSilver,
-      PilgrimMedalTier.gold => AppColors.medalGold,
-      PilgrimMedalTier.platinum => AppColors.medalPlatinum,
-      PilgrimMedalTier.diamond => AppColors.medalDiamond,
-      PilgrimMedalTier.mirra => AppColors.medalMirra,
-      PilgrimMedalTier.aurora => AppColors.medalAurora,
-    };
+  PilgrimMedalTier.iron => AppColors.medalIron,
+  PilgrimMedalTier.bronze => AppColors.medalBronze,
+  PilgrimMedalTier.silver => AppColors.medalSilver,
+  PilgrimMedalTier.gold => AppColors.medalGold,
+  PilgrimMedalTier.platinum => AppColors.medalPlatinum,
+  PilgrimMedalTier.diamond => AppColors.medalDiamond,
+  PilgrimMedalTier.mirra => AppColors.medalMirra,
+  PilgrimMedalTier.aurora => AppColors.medalAurora,
+};

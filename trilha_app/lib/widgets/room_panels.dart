@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 
 import '../data/trail_repository.dart';
+import '../l10n/app_language.dart';
 import '../models/study_room.dart';
 import '../models/trail.dart';
 import '../models/trail_catalog.dart';
@@ -78,13 +80,13 @@ class RoomStudyCard extends StatelessWidget {
                 Row(
                   children: [
                     SectionLabel(
-                      'Estudo da semana',
+                      context.l10n.groupWeekStudy,
                       color: meDone ? AppColors.teal : AppColors.accent,
                     ),
                     const Spacer(),
                     if (isLeader)
                       TextCta(
-                        label: 'Trocar',
+                        label: context.l10n.groupStudySwap,
                         leading: CinematicGlyph.pencil,
                         onTap: onPick,
                       ),
@@ -123,8 +125,10 @@ class RoomStudyCard extends StatelessWidget {
                       if (s.note != null && s.note!.isNotEmpty) ...[
                         const SizedBox(height: AppSpace.md),
                         _LeaderNote(
-                          title:
-                              '${room.kind.leaderTitle} ${_firstName(room.ownerName)}',
+                          title: context.l10n.groupLeaderNoteTitle(
+                            room.kind.leaderTitle,
+                            _firstName(room.ownerName),
+                          ),
                           note: s.note!,
                         ),
                       ],
@@ -138,8 +142,11 @@ class RoomStudyCard extends StatelessWidget {
                             Expanded(
                               child: Text(
                                 doneList.isEmpty
-                                    ? 'Ninguém fez ainda. Seja o primeiro.'
-                                    : '${doneList.length} de $total já fizeram',
+                                    ? context.l10n.groupStudyNobodyYet
+                                    : context.l10n.groupStudyDoneCount(
+                                        doneList.length,
+                                        total,
+                                      ),
                                 style: AppTypography.body(
                                   size: 13,
                                   weight: FontWeight.w700,
@@ -158,14 +165,14 @@ class RoomStudyCard extends StatelessWidget {
                       const SizedBox(height: AppSpace.lg),
                       if (meDone)
                         GhostCta(
-                          label: 'Você já fez · Estudar de novo',
+                          label: context.l10n.groupStudyAgain,
                           leading: CinematicGlyph.check,
                           expanded: true,
                           onTap: onOpen,
                         )
                       else
                         CopperCta(
-                          label: 'Estudar com o grupo',
+                          label: context.l10n.groupStudyCta,
                           onTap: onOpen,
                           leading: CinematicGlyph.book,
                         ),
@@ -202,7 +209,10 @@ class _EmptyStage extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          const SectionLabel('Estudo da semana', color: AppColors.accent),
+          SectionLabel(
+            context.l10n.groupWeekStudy,
+            color: AppColors.accent,
+          ),
           const SizedBox(height: AppSpace.md),
           CustomPaint(
             painter: _DashedFramePainter(color: a.textMuted(0.18)),
@@ -219,8 +229,8 @@ class _EmptyStage extends StatelessWidget {
                   const SizedBox(height: AppSpace.sm),
                   Text(
                     isLeader
-                        ? 'Qual texto o grupo vai estudar nesta semana?'
-                        : 'O texto da semana ainda não chegou.',
+                        ? context.l10n.groupEmptyLeaderTitle
+                        : context.l10n.groupEmptyMemberTitle,
                     textAlign: TextAlign.center,
                     style: AppTypography.verse(
                       size: 20,
@@ -231,8 +241,10 @@ class _EmptyStage extends StatelessWidget {
                   const SizedBox(height: 6),
                   Text(
                     isLeader
-                        ? 'Todos recebem a mesma cena — mesmo quem ainda não chegou nela na trilha.'
-                        : '${room.kind.leaderTitle} escolhe a cena que o grupo estuda junto.',
+                        ? context.l10n.groupEmptyLeaderBody
+                        : context.l10n.groupEmptyMemberBody(
+                            room.kind.leaderTitle,
+                          ),
                     textAlign: TextAlign.center,
                     style: AppTypography.body(
                       size: 13,
@@ -247,7 +259,7 @@ class _EmptyStage extends StatelessWidget {
           if (isLeader) ...[
             const SizedBox(height: AppSpace.lg),
             CopperCta(
-              label: 'Escolher o estudo',
+              label: context.l10n.groupPickStudyCta,
               onTap: onPick,
               leading: CinematicGlyph.book,
               trailing: null,
@@ -508,7 +520,7 @@ Future<bool?> showRoomSeatSheet(
             ),
             const SizedBox(height: AppSpace.md),
             AppSheetHeader(
-              title: member.isUser ? 'Você' : member.name,
+              title: member.isUser ? ctx.l10n.commonYou : member.name,
               center: true,
             ),
             if (isLeader) ...[
@@ -540,17 +552,22 @@ Future<bool?> showRoomSeatSheet(
                 children: [
                   _SeatStat(
                     value: '${member.daysThisWeek}/7',
-                    label: 'Dias na semana',
+                    label: ctx.l10n.groupSeatDaysInWeek,
                     highlight: member.daysThisWeek > 0,
                   ),
                   Container(width: 1, height: 28, color: a.cardBorder),
-                  _SeatStat(value: '${member.steps}', label: 'Passos'),
+                  _SeatStat(
+                    value: '${member.steps}',
+                    label: ctx.l10n.groupSeatSteps,
+                  ),
                   Container(width: 1, height: 28, color: a.cardBorder),
                   _SeatStat(
                     value: study == null
                         ? '—'
-                        : (member.didStudy(study) ? 'Feito' : 'Ainda não'),
-                    label: 'Estudo da semana',
+                        : (member.didStudy(study)
+                              ? ctx.l10n.groupSeatStudyDone
+                              : ctx.l10n.groupSeatStudyNotYet),
+                    label: ctx.l10n.groupWeekStudy,
                     highlight: member.didStudy(study),
                   ),
                 ],
@@ -559,7 +576,7 @@ Future<bool?> showRoomSeatSheet(
             if (canCall) ...[
               const SizedBox(height: AppSpace.lg),
               CopperCta(
-                label: 'Acenar para $first',
+                label: ctx.l10n.nudgeTitle(first),
                 onTap: () => Navigator.pop(ctx, true),
                 leading: CinematicGlyph.bell,
                 trailing: null,
@@ -567,7 +584,7 @@ Future<bool?> showRoomSeatSheet(
             ] else if (alreadyCalled) ...[
               const SizedBox(height: AppSpace.md),
               Text(
-                'Você já acenou para $first hoje.',
+                ctx.l10n.groupSeatAlreadyWaved(first),
                 textAlign: TextAlign.center,
                 style: AppTypography.body(size: 13, color: a.textFaint),
               ),
@@ -625,12 +642,16 @@ class _WeekDaysStrip extends StatelessWidget {
 
   const _WeekDaysStrip({required this.days});
 
-  static const _labels = ['S', 'T', 'Q', 'Q', 'S', 'S', 'D'];
-
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final today = DateTime.now().weekday;
+    final narrow = DateFormat(
+      'EEEEE',
+      Localizations.localeOf(context).toLanguageTag(),
+    );
+    // 1 de janeiro de 2024 foi segunda: dia d da semana = 2024-01-d.
+    String label(int d) => narrow.format(DateTime(2024, 1, d));
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
@@ -669,7 +690,7 @@ class _WeekDaysStrip extends StatelessWidget {
               ),
               const SizedBox(height: 4),
               Text(
-                _labels[d - 1],
+                label(d),
                 style: AppTypography.label(
                   size: 10,
                   letterSpacing: 0.4,
@@ -689,16 +710,16 @@ typedef RoomSetup = ({String name, RoomKind kind});
 
 Future<RoomSetup?> showRoomSetupSheet(
   BuildContext context, {
-  String title = 'Novo grupo',
-  String confirmLabel = 'Criar grupo',
+  String? title,
+  String? confirmLabel,
   String initialName = '',
   RoomKind initialKind = RoomKind.celula,
 }) {
   return showAppSheet<RoomSetup>(
     context,
     builder: (_) => _RoomSetupSheet(
-      title: title,
-      confirmLabel: confirmLabel,
+      title: title ?? context.l10n.groupNewTitle,
+      confirmLabel: confirmLabel ?? context.l10n.groupCreateCta,
       initialName: initialName,
       initialKind: initialKind,
     ),
@@ -749,7 +770,7 @@ class _RoomSetupSheetState extends State<_RoomSetupSheet> {
         children: [
           AppSheetHeader(title: widget.title),
           const SizedBox(height: AppSpace.lg),
-          const SectionLabel('Para que é o grupo'),
+          SectionLabel(context.l10n.groupSetupKindLabel),
           const SizedBox(height: AppSpace.sm),
           Wrap(
             spacing: 8,
@@ -764,7 +785,7 @@ class _RoomSetupSheetState extends State<_RoomSetupSheet> {
             ],
           ),
           const SizedBox(height: AppSpace.lg),
-          const SectionLabel('Nome'),
+          SectionLabel(context.l10n.groupSetupNameLabel),
           const SizedBox(height: AppSpace.sm),
           TextField(
             controller: _name,
@@ -779,8 +800,7 @@ class _RoomSetupSheetState extends State<_RoomSetupSheet> {
           ),
           const SizedBox(height: AppSpace.sm),
           Text(
-            'Até $kRoomMemberLimit pessoas. Grupo grande? Abra outro — '
-            'discipulado acontece em grupo pequeno.',
+            context.l10n.groupSetupLimitHint(kRoomMemberLimit),
             style: AppTypography.body(
               size: 12,
               height: 1.35,
@@ -917,7 +937,7 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
       mission: m,
       studyRef: study?.passageRef,
       studyVerse: study?.passageText,
-      studyContext: study?.context,
+      studyContext: study?.localizedContext,
     );
     var ref = (entrance.ref ?? '').trim();
     var verse = (entrance.verse ?? '').trim();
@@ -948,7 +968,7 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
       context,
       RoomStudy(
         missionSlug: m.slug,
-        title: m.title,
+        title: m.localizedTitle,
         verseRef: _stage?.ref ?? m.hookRef,
         verse: _stage?.verse ?? m.hookVerse,
         note: _note.text.trim(),
@@ -968,8 +988,8 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
         .clamp(0.0, screen - keyboard - top - 96)
         .toDouble();
     final heading = _mission != null
-        ? 'Marcar a cena'
-        : (_trail?.title ?? 'Estudo da semana');
+        ? context.l10n.groupPickerMarkScene
+        : (_trail?.localizedTitle ?? context.l10n.groupWeekStudy);
 
     return AppSheetPanel(
       child: SizedBox(
@@ -1032,7 +1052,7 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
         Padding(
           padding: const EdgeInsets.only(bottom: AppSpace.sm),
           child: Text(
-            'Todos do grupo recebem a mesma cena, mesmo quem ainda não chegou nela.',
+            context.l10n.groupPickerIntro,
             style: AppTypography.body(size: 13, color: a.textSecondary),
           ),
         ),
@@ -1046,8 +1066,8 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
               if (TrailRealm.fromId(t.realmId) == realm)
                 _PickRow(
                   leading: _TrailDisc(visuals: TrailVisuals.forTrail(t)),
-                  title: t.title,
-                  subtitle: '${t.missionSlugs.length} cenas',
+                  title: t.localizedTitle,
+                  subtitle: context.l10n.commonScenes(t.missionSlugs.length),
                   onTap: () => setState(() => _trail = t),
                 ),
           ],
@@ -1062,7 +1082,7 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
           if (mod.missions.isNotEmpty) ...[
             Padding(
               padding: const EdgeInsets.only(top: AppSpace.md, bottom: 4),
-              child: SectionLabel(mod.title),
+              child: SectionLabel(mod.localizedTitle),
             ),
             for (final m in mod.missions)
               _PickRow(
@@ -1070,7 +1090,7 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
                   n: trail.missionSlugs.indexOf(m.slug) + 1,
                   accent: TrailVisuals.forTrail(trail).accent,
                 ),
-                title: m.title,
+                title: m.localizedTitle,
                 subtitle: m.hookRef ?? m.subtitle,
                 onTap: () => _pickMission(m),
               ),
@@ -1084,7 +1104,7 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
     final stage = _stage;
     return ListView(
       children: [
-        SectionLabel('O grupo vai ver'),
+        SectionLabel(context.l10n.groupPickerPreviewLabel),
         const SizedBox(height: AppSpace.sm),
         InsetPanel(
           padding: const EdgeInsets.fromLTRB(14, 14, 14, 16),
@@ -1092,7 +1112,7 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Text(
-                m.title,
+                m.localizedTitle,
                 style: AppTypography.display(size: 20, color: a.text),
               ),
               const SizedBox(height: AppSpace.md),
@@ -1132,7 +1152,7 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
           ),
         ),
         const SizedBox(height: AppSpace.lg),
-        SectionLabel('Recado para o grupo'),
+        SectionLabel(context.l10n.groupPickerNoteLabel),
         const SizedBox(height: AppSpace.sm),
         TextField(
           controller: _note,
@@ -1141,13 +1161,13 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
           maxLines: 4,
           textCapitalization: TextCapitalization.sentences,
           style: AppTypography.body(size: 14, color: a.text),
-          decoration: const InputDecoration(
-            hintText: 'Opcional. Ex.: Leiam até quarta, conversamos na quinta.',
+          decoration: InputDecoration(
+            hintText: context.l10n.groupPickerNoteHint,
           ),
         ),
         const SizedBox(height: AppSpace.md),
         CopperCta(
-          label: 'Marcar para o grupo',
+          label: context.l10n.groupPickerConfirmCta,
           onTap: stage == null ? null : _confirm,
           busy: stage == null,
           leading: CinematicGlyph.check,
@@ -1332,36 +1352,36 @@ Future<RoomMenuAction?> showRoomMenu(
             const SizedBox(height: AppSpace.sm),
             item(
               RoomMenuAction.copyCode,
-              'Copiar código ${room.code}',
+              ctx.l10n.groupMenuCopyCode(room.code),
               CinematicGlyph.copy,
             ),
             if (isLeader) ...[
-              const Padding(
-                padding: EdgeInsets.only(top: AppSpace.md, bottom: 2),
-                child: SectionLabel('Conduzir o grupo'),
+              Padding(
+                padding: const EdgeInsets.only(top: AppSpace.md, bottom: 2),
+                child: SectionLabel(ctx.l10n.groupMenuLeadSection),
               ),
               item(
                 RoomMenuAction.edit,
-                'Editar nome e tipo',
+                ctx.l10n.groupMenuEdit,
                 CinematicGlyph.pencil,
               ),
               item(
                 RoomMenuAction.goal,
                 room.weeklyGoalSteps != null
-                    ? 'Meta da semana · ${room.weeklyGoalSteps} passos'
-                    : 'Definir meta da semana',
+                    ? ctx.l10n.groupMenuGoal(room.weeklyGoalSteps!)
+                    : ctx.l10n.groupMenuSetGoal,
                 CinematicGlyph.target,
               ),
               if (hasStudy)
                 item(
                   RoomMenuAction.clearStudy,
-                  'Tirar estudo da semana',
+                  ctx.l10n.groupMenuClearStudy,
                   CinematicGlyph.close,
                 ),
               if (canTransfer)
                 item(
                   RoomMenuAction.transfer,
-                  'Passar a liderança',
+                  ctx.l10n.groupMenuTransfer,
                   CinematicGlyph.crown,
                 ),
             ],
@@ -1371,14 +1391,14 @@ Future<RoomMenuAction?> showRoomMenu(
             ),
             item(
               RoomMenuAction.leave,
-              'Sair do grupo',
+              ctx.l10n.groupMenuLeave,
               CinematicGlyph.back,
               danger: true,
             ),
             if (isLeader)
               item(
                 RoomMenuAction.close,
-                'Encerrar o grupo',
+                ctx.l10n.groupMenuClose,
                 CinematicGlyph.stop,
                 danger: true,
               ),
@@ -1490,7 +1510,10 @@ class RoomIncomingInviteCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          const SectionLabel('Convite', color: AppColors.accent),
+          SectionLabel(
+            context.l10n.groupInviteLabel,
+            color: AppColors.accent,
+          ),
           const SizedBox(height: AppSpace.sm),
           Row(
             children: [
@@ -1513,7 +1536,7 @@ class RoomIncomingInviteCard extends StatelessWidget {
                     ),
                     const SizedBox(height: 2),
                     Text(
-                      '$from te chamou para este ${invite.kind.label.toLowerCase()}.',
+                      context.l10n.groupInviteBody(from, invite.kind.label),
                       style: AppTypography.body(
                         size: 13,
                         height: 1.3,
@@ -1527,7 +1550,7 @@ class RoomIncomingInviteCard extends StatelessWidget {
           ),
           const SizedBox(height: AppSpace.md),
           CopperCta(
-            label: 'Entrar no grupo',
+            label: context.l10n.groupInviteAccept,
             leading: CinematicGlyph.check,
             trailing: null,
             dense: true,
@@ -1535,7 +1558,10 @@ class RoomIncomingInviteCard extends StatelessWidget {
           ),
           const SizedBox(height: AppSpace.xs),
           Center(
-            child: TextCta(label: 'Agora não', onTap: onDecline),
+            child: TextCta(
+              label: context.l10n.commonNotNow,
+              onTap: onDecline,
+            ),
           ),
         ],
       ),
@@ -1603,7 +1629,7 @@ class _RoomCallSheetState extends State<_RoomCallSheet> {
         setState(() {
           _error =
               context.read<RoomService>().lastError ??
-              'Não deu para enviar o convite.';
+              context.l10n.groupInviteSendFailed;
         });
       }
     } finally {
@@ -1624,7 +1650,7 @@ class _RoomCallSheetState extends State<_RoomCallSheet> {
       if (ok) {
         setState(() => _invited.remove(uid));
       } else {
-        setState(() => _error = 'Não foi possível desfazer o convite.');
+        setState(() => _error = context.l10n.groupInviteUndoFailed);
       }
     } finally {
       if (mounted) setState(() => _busy.remove(uid));
@@ -1657,17 +1683,16 @@ class _RoomCallSheetState extends State<_RoomCallSheet> {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            const AppSheetHeader(
-              title: 'Chamar pessoas',
-              subtitle:
-                  'O convite aparece no app. Ou mande o link no WhatsApp.',
+            AppSheetHeader(
+              title: context.l10n.groupCallTitle,
+              subtitle: context.l10n.groupCallSubtitle,
             ),
             const SizedBox(height: AppSpace.md),
             if (people.isEmpty)
               Padding(
                 padding: const EdgeInsets.only(bottom: AppSpace.md),
                 child: Text(
-                  'Ninguém da caravana para chamar agora.',
+                  context.l10n.groupCallEmpty,
                   style: AppTypography.body(
                     size: 13,
                     height: 1.35,
@@ -1703,7 +1728,7 @@ class _RoomCallSheetState extends State<_RoomCallSheet> {
             if (full) ...[
               const SizedBox(height: AppSpace.sm),
               Text(
-                'Este grupo já tem $kRoomMemberLimit pessoas.',
+                context.l10n.groupCallFull(kRoomMemberLimit),
                 style: AppTypography.body(
                   size: 12,
                   weight: FontWeight.w700,
@@ -1713,7 +1738,7 @@ class _RoomCallSheetState extends State<_RoomCallSheet> {
             ],
             const SizedBox(height: AppSpace.md),
             GhostCta(
-              label: 'Mandar no WhatsApp',
+              label: context.l10n.commonSendWhatsApp,
               leading: CinematicGlyph.share,
               expanded: true,
               onTap: full ? null : widget.onShareLink,
@@ -1767,7 +1792,7 @@ class _CaravanInviteRow extends StatelessWidget {
           ),
           if (pending) ...[
             Text(
-              busy ? '…' : 'Convidado',
+              busy ? '…' : context.l10n.groupInviteSent,
               style: AppTypography.body(
                 size: 13,
                 weight: FontWeight.w800,
@@ -1775,10 +1800,15 @@ class _CaravanInviteRow extends StatelessWidget {
               ),
             ),
             const SizedBox(width: 4),
-            TextCta(label: 'Desfazer', onTap: busy ? null : onCancel),
+            TextCta(
+              label: context.l10n.groupInviteUndo,
+              onTap: busy ? null : onCancel,
+            ),
           ] else
             TextCta(
-              label: busy ? 'Enviando…' : 'Convidar',
+              label: busy
+                  ? context.l10n.groupInviteSending
+                  : context.l10n.groupInviteCta,
               color: AppColors.accent,
               onTap: !enabled || busy ? null : onInvite,
             ),

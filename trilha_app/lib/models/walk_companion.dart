@@ -1,3 +1,4 @@
+import '../l10n/l10n_global.dart';
 import '../services/invite_deep_link_service.dart';
 
 /// Um companheiro de caminhada (accountability 1:1, não ranking).
@@ -212,21 +213,22 @@ class WalkCompanion {
   }
 
   String get statusLine {
-    if (awaitingPartner) return 'Aguardando alguém entrar com o código';
+    final l = L10n.current;
+    if (awaitingPartner) return l.companionAwaitingCode;
     if (bothWalkedToday) {
       return sharedDays <= 1
-          ? 'Vocês caminharam juntos hoje'
-          : '$sharedDays dias caminhando juntos';
+          ? l.companionWalkedTogetherToday
+          : l.companionDaysTogether(sharedDays);
     }
     if (waitingOnThem) {
       final delay = delayCopy;
       if (delay != null) return delay.statusLine;
-      return 'Você já deu o passo — acene para $displayName';
+      return l.companionWaveFor(displayName);
     }
-    if (waitingOnMe) return '$displayName já caminhou — sua vez';
+    if (waitingOnMe) return l.companionYourTurn(displayName);
     final delay = delayCopy;
     if (delay != null) return delay.statusLine;
-    return 'Vamos dar o próximo passo juntos?';
+    return l.companionNextStepTogether;
   }
 
   /// Linha curta sob o status — presença, não ranking de passos.
@@ -236,9 +238,9 @@ class WalkCompanion {
     if (delay != null) return delay.insight;
     if (bothWalkedToday) {
       final n = togetherDaysThisWeek();
-      if (n > 0 && n < 7) return '$n de 7 dias juntos nesta semana';
+      if (n > 0 && n < 7) return L10n.current.companionWeekDays(n);
       if (coveredLeagueWeekTogether()) {
-        return 'Semana fechada juntos';
+        return L10n.current.companionWeekClosed;
       }
     }
     return null;
@@ -249,105 +251,78 @@ class WalkCompanion {
     if (awaitingPartner || theyWalkedToday) return null;
     final away = theyDaysAway;
     if (away == null || away < 1) return null;
+    final l = L10n.current;
     final them = displayName.trim().isEmpty
-        ? 'Companheiro'
+        ? l.companionFallbackName
         : displayName.trim().split(' ').first;
+    final footer = InviteDeepLinkService.openAppFooter();
     if (away <= 3) {
       return CompanionDelayCopy(
         daysAway: away,
         tier: CompanionDelayTier.fresh,
-        headline: 'Ficando para trás',
+        headline: l.companionDelayFreshHeadline,
         statusLine: away == 1
-            ? 'Você já deu o passo — $them ainda não apareceu'
-            : 'Você já deu o passo — $them está ${away}d atrás',
-        insight: 'Está ficando para trás na nossa caminhada',
-        shareCardLine: away == 1
-            ? '1 dia pra trás na caminhada'
-            : '$away dias pra trás na caminhada',
-        shareBody:
-            '''
-Oi $them 👋
-Você está ficando pra trás na nossa caminhada no Stway.
-Já dei meus passos de hoje e tô te esperando!
-Vem?
-
-${InviteDeepLinkService.openAppFooter()}
-'''
-                .trim(),
+            ? l.companionPartnerNotYet(them)
+            : l.companionPartnerAwayAfterStep(them, away),
+        insight: l.companionDelayFreshInsight,
+        shareCardLine: l.companionDaysWithoutStudy(away),
+        shareBody: '${l.companionShareFresh(them)}\n\n$footer'.trim(),
       );
     }
     if (away <= 6) {
       return CompanionDelayCopy(
         daysAway: away,
         tier: CompanionDelayTier.dusty,
-        headline: 'A trilha empoeirou',
-        statusLine: 'Faz $away dias — a trilha sente falta de $them',
-        insight: 'A poeira já cobriu o caminho',
-        shareCardLine: '$away dias na poeira',
-        shareBody:
-            '''
-Oi $them 👋
-Faz $away dias que a gente não caminha juntos no Stway.
-A poeira já cobriu a trilha — tô te esperando pra limpar o caminho!
-Vem?
-
-${InviteDeepLinkService.openAppFooter()}
-'''
-                .trim(),
+        headline: l.companionDelayDustyHeadline,
+        statusLine: l.companionPartnerAway(them, away),
+        insight: l.companionDelayDustyInsight,
+        shareCardLine: l.companionDaysWithoutStudy(away),
+        shareBody: '${l.companionShareDusty(them, away)}\n\n$footer'.trim(),
       );
     }
     return CompanionDelayCopy(
       daysAway: away,
       tier: CompanionDelayTier.lost,
-      headline: 'Te perdi na multidão',
-      statusLine: 'Te perdi na multidão — $away dias sem $them',
-      insight: 'Mas dá para retomar nossa caminhada',
-      shareCardLine: '$away dias sumido na multidão',
-      shareBody:
-          '''
-Oi $them 👋
-Te perdi na multidão!
-Faz $away dias que a gente não caminha juntos no Stway.
-
-Mas dá pra retomar nossa caminhada — já dei meus passos de hoje.
-Vem?
-
-${InviteDeepLinkService.openAppFooter()}
-'''
-              .trim(),
+      headline: l.companionDelayLostHeadline,
+      statusLine: l.companionPartnerAway(them, away),
+      insight: l.companionDelayLostInsight,
+      shareCardLine: l.companionDaysWithoutStudy(away),
+      shareBody: '${l.companionShareLost(them, away)}\n\n$footer'.trim(),
     );
   }
 
   /// Primeiro nome do parceiro, para copy.
   String get partnerFirstName {
     final n = displayName.trim();
+    // 'Companheiro' / 'Aguardando' são valores gravados, não texto de tela.
     if (n.isEmpty || n == 'Companheiro' || n == 'Aguardando') {
-      return 'Companheiro';
+      return L10n.current.companionFallbackName;
     }
     return n.split(' ').first;
   }
 
   /// Mensagens curtas do aceno — o parceiro lê no app.
   List<String> get nudgePresets {
+    final l = L10n.current;
     final away = theyDaysAway ?? 0;
     if (away >= 7) {
-      return const [
-        'Ainda tem lugar ao meu lado',
-        'Dá pra retomar — tô aqui',
-        'Dei meu passo hoje. Vem?',
+      return [
+        l.companionDelayLostHeadline,
+        l.companionPresetResume,
+        l.companionPresetStepCome,
       ];
     }
     if (away >= 4) {
-      return const [
-        'A poeira cobriu o caminho',
-        'Tô te esperando pra limpar a trilha',
-        'Dei meu passo hoje. Vem?',
+      return [
+        l.companionPresetMissed,
+        l.companionPresetComeBack,
+        l.companionPresetStepCome,
       ];
     }
-    return const [
-      'Tô te esperando na trilha',
-      'Já dei meu passo — falta o seu',
-      'Vamos caminhar juntos hoje',
+    return [
+      l.companionPresetOnTrail,
+      l.companionPresetYoursNext,
+      l.companionPresetWalkToday,
     ];
   }
 
@@ -361,16 +336,12 @@ ${InviteDeepLinkService.openAppFooter()}
   String nudgeShareText() {
     final delay = delayCopy;
     if (delay != null) return delay.shareBody;
+    final l = L10n.current;
     final them = displayName.trim().isEmpty
-        ? 'você'
+        ? l.companionShareFallbackName
         : displayName.trim().split(' ').first;
-    return '''
-Oi $them 👋
-Já dei meus passos de hoje no Stway — tô te esperando!
-Vem?
-
-${InviteDeepLinkService.openAppFooter()}
-'''
+    return '${l.companionShareDefault(them)}\n\n'
+            '${InviteDeepLinkService.openAppFooter()}'
         .trim();
   }
 

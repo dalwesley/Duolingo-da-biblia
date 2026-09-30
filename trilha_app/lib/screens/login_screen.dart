@@ -18,6 +18,7 @@ import '../widgets/cinematic_icon.dart';
 import '../widgets/ui_primitives.dart';
 import 'main_shell.dart';
 import 'onboarding_screen.dart';
+import '../l10n/app_language.dart';
 
 /// Porta de entrada — exige conta (Google; Apple no iOS) antes de usar o app.
 class LoginScreen extends StatefulWidget {
@@ -71,8 +72,7 @@ class _LoginScreenState extends State<LoginScreen> {
       if (!mounted) return;
       setState(() {
         _entering = false;
-        _error =
-            'Não foi possível carregar seu progresso. Verifique a conexão e tente de novo.';
+        _error = context.l10n.loginHydrateError;
       });
       // Mantém sessão mas não entra no app até hydrate ok.
       return;
@@ -122,7 +122,7 @@ class _LoginScreenState extends State<LoginScreen> {
       unawaited(AnalyticsService.instance.logLoginFailed(reason: result.error));
       setState(() {
         _entering = false;
-        _error = result.error ?? 'Falha no login com Google';
+        _error = result.error ?? context.l10n.loginGoogleError;
       });
       return;
     }
@@ -149,7 +149,7 @@ class _LoginScreenState extends State<LoginScreen> {
       unawaited(AnalyticsService.instance.logLoginFailed(reason: result.error));
       setState(() {
         _entering = false;
-        _error = result.error ?? 'Falha no login com Apple';
+        _error = result.error ?? context.l10n.loginAppleError;
       });
       return;
     }
@@ -192,15 +192,17 @@ class _LoginScreenState extends State<LoginScreen> {
               const StwayTagline(size: 9),
               const SizedBox(height: AppSpace.xxl),
               Text(
-                preparing ? 'Preparando sua jornada' : 'Entre para continuar',
+                preparing
+                    ? context.l10n.splashPreparing
+                    : context.l10n.loginTitle,
                 textAlign: TextAlign.center,
                 style: AppTypography.display(size: 28),
               ),
               const SizedBox(height: AppSpace.md),
               Text(
                 preparing
-                    ? 'Carregando seus passos, sua sequência e suas cenas…'
-                    : 'Sua conta guarda seus passos, sua sequência e suas cenas — assim nada se perde entre aparelhos.',
+                    ? context.l10n.loginLoadingBody
+                    : context.l10n.loginBody,
                 textAlign: TextAlign.center,
                 style: AppTypography.body(color: a.textSecondary),
               ),
@@ -229,7 +231,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     if (!backend.isFirebaseReady &&
                         !backend.isInitializing) ...[
                       GhostCta(
-                        label: 'Tentar reconectar',
+                        label: context.l10n.loginReconnect,
                         leading: CinematicGlyph.refresh,
                         expanded: true,
                         onTap: busy ? null : () => backend.retry(),
@@ -245,7 +247,9 @@ class _LoginScreenState extends State<LoginScreen> {
                           alignment: Alignment.centerLeft,
                           children: [
                             GhostCta(
-                              label: busy ? 'Entrando…' : 'Continuar com Apple',
+                              label: busy
+                                  ? context.l10n.loginEntering
+                                  : context.l10n.loginWithApple,
                               expanded: true,
                               onTap: busy ? null : _signInWithApple,
                             ),
@@ -267,7 +271,9 @@ class _LoginScreenState extends State<LoginScreen> {
                       const SizedBox(height: AppSpace.sm),
                     ],
                     CopperCta(
-                      label: busy ? 'Entrando…' : 'Continuar com Google',
+                      label: busy
+                          ? context.l10n.loginEntering
+                          : context.l10n.loginWithGoogle,
                       onTap: busy ? null : _signInWithGoogle,
                       busy: busy,
                       trailing: null,
@@ -278,7 +284,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               const SizedBox(height: AppSpace.lg),
               Text(
-                'É necessário entrar para usar o Stway.',
+                context.l10n.loginRequired,
                 textAlign: TextAlign.center,
                 style: AppTypography.label(
                   size: 11,
