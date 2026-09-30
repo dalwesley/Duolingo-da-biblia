@@ -805,7 +805,7 @@ class _WordRibbon extends StatelessWidget {
         if (!isPunctuationStrong(t.strong)) t,
     ];
     return SizedBox(
-      height: 72,
+      height: 76,
       child: ListView.separated(
         scrollDirection: Axis.horizontal,
         padding: const EdgeInsets.fromLTRB(16, 2, 16, 8),
@@ -943,11 +943,12 @@ class _TokenChip extends StatelessWidget {
                     style: AppTypography.original(
                       hebrew: hebrew,
                       size: hebrew ? 22 : 18,
+                      height: 1.2,
                       weight: FontWeight.w600,
                       color: a.text,
                     ),
                   ),
-                  const SizedBox(height: 3),
+                  const SizedBox(height: 2),
                   Text(
                     label,
                     maxLines: 1,

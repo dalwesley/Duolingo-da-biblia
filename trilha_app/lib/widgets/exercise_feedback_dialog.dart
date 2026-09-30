@@ -240,9 +240,8 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
     final isCorrect = widget.isCorrect;
     final accent = widget.accent;
     final outOfLamps = widget.outOfLamps;
-    // Veredito por papel: acerto/erro. O modo segue só no chrome
-    // (trecho que prova, ler o texto).
-    final color = isCorrect ? AppRoles.success : AppRoles.error;
+    // Acerto = ouro; erro = risk. Sem azul nos gestos.
+    final color = isCorrect ? AppRoles.action : AppRoles.error;
     final a = Appearance.of(context);
     final l10n = context.l10n;
     final feedback = _holdsAnswer
@@ -416,7 +415,7 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
                               padding: const EdgeInsets.only(right: 12),
                               child: _AnswerReveal(
                                 answer: answer,
-                                accent: AppRoles.success,
+                                accent: accent,
                               ),
                             ),
                           ],

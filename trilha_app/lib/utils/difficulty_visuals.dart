@@ -10,8 +10,8 @@ class DifficultyVisuals {
   /// Luminância do ouro de Observação — referência de punch no céu.
   static const _goldLuminance = 0.50;
 
-  /// Contorno / chrome por modo: broto → coral → orquídea.
-  /// Amarelo é ação/recompensa; teal e azul somem no céu — não usar.
+  /// Contorno / chrome por modo: mint → coral soft → lilac-azul.
+  /// Amarelo é ação/recompensa; glow azul é presença — não usar como modo.
   static Color accentFor(TrailDifficulty d) => switch (d) {
     TrailDifficulty.semente => AppRoles.observation,
     TrailDifficulty.caminhada => AppRoles.comprehension,

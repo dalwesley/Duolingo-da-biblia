@@ -5,7 +5,7 @@ import 'package:trilha_app/theme/app_colors.dart';
 import 'package:trilha_app/utils/difficulty_visuals.dart';
 
 void main() {
-  test('modos usam acentos fora da família azul/teal do céu', () {
+  test('modos usam mint, coral soft e lilac — nunca ouro de ação', () {
     expect(
       DifficultyVisuals.accentFor(TrailDifficulty.semente),
       AppRoles.observation,
@@ -25,7 +25,7 @@ void main() {
 
     expect(
       DifficultyVisuals.accentFor(TrailDifficulty.caminhada),
-      isNot(AppColors.teal),
+      isNot(AppColors.glow),
     );
     expect(
       DifficultyVisuals.accentFor(TrailDifficulty.profundezas),
@@ -33,7 +33,7 @@ void main() {
     );
   });
 
-  test('broto, coral e orquídea puncionam no céu como o ouro', () {
+  test('mint, coral e lilac puncionam no céu como o ouro', () {
     expect(AppColors.sprout.computeLuminance(), greaterThan(0.35));
     expect(AppColors.isSolidChrome(AppColors.sprout), isTrue);
     expect(AppColors.coral.computeLuminance(), greaterThan(0.35));

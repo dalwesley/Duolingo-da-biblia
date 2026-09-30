@@ -36,18 +36,22 @@ são matéria-prima do tema, não se usam direto em tela nova.
 
 | Papel | Token | Onde |
 |---|---|---|
-| Ação principal | `AppRoles.action` (amarelo) | `CopperCta`, o que avança |
-| Recompensa | `AppRoles.reward` (amarelo) | passos, medalha, baú, meta cumprida |
+| Ação principal | `AppRoles.action` (ouro `#F7BB01`) | `CopperCta`, o que avança |
+| Recompensa | `AppRoles.reward` (ouro) | passos, medalha, baú, meta cumprida |
 | Chrome | `AppRoles.chrome` (neutro) | nav, TopBar, ícone de aba — **igual em todas as abas** |
-| Seleção | `AppRoles.selected` (contorno claro) | chip, segmento, opção escolhida |
-| Sucesso / presença | `AppRoles.success` · `.presence` (teal) | acerto, concluído, "estudou hoje" |
-| Sequência | `AppRoles.streak` | só a sequência (chama, dias) |
-| Risco / erro | `AppRoles.risk` · `.error` | em perigo, falhou |
-| Modos | `.observation` (broto) · `.comprehension` (coral) · `.interpretation` (orquídea) | chrome da cena e do seletor |
-| Áreas | `.areaOldTestament` · `.areaNewTestament` · `.areaChristianLife` · `.areaTheology` | **só dentro de Trilhas** |
+| Seleção (cena) | fill branco + rim ouro | opção tocada, ainda não confirmada |
+| Idle (cena) | `nightElevated` + texto claro | placas de resposta no céu escuro |
+| Acerto na cena | `AppRoles.action` (ouro) | placa, veredito, barra, flash |
+| Sucesso / presença (home) | `AppRoles.presence` (glow) | orbs da semana, "estudou hoje" |
+| Lâmpadas (vidas) | `AppRoles.reward` (ouro) | acesas = luz |
+| Sequência | `AppRoles.streak` (âmbar) | **só** a chama |
+| Risco / erro | `AppRoles.error` | único vermelho |
 
-Regras:
-- Amarelo nunca marca seleção, modo, aba ou aviso.
+Regras (gesto):
+- Idle = poço escuro · Seleção = branco · Acerto = ouro · Erro = vermelho.
+- Sem azul/glow nos gestos (glow fica na home).
+- Cor do modo só no mapa / seletor.
+- Um CTA: `CopperCta` ouro.
 - A cena é o único lugar com placas claras (respostas em marfim — o "palco").
 - Cenário de tela cheia (céu pintado, Gênesis, trilha da marca, confete) só em
   splash, onboarding e celebração. No resto, o gradiente da fase do dia; cenário
@@ -65,8 +69,8 @@ Regras:
   com poço: `leadingIcon` 40; chip: `chipIcon` 14.
 - Erro inline: `InlineNotice` (card próprio; `standalone: false` dentro de
   outro card; `onRetry` mostra "Tentar de novo"). Nunca texto vermelho solto.
-- Seleção sobre placa clara (respostas da cena): contorno
-  `AppRoles.selectedOnLight` com `AppRoles.selectedOutlineWidth`.
+- Seleção sobre placa clara (respostas da cena): fill `AppRoles.action`
+  (ouro do Verificar). Contorno `selectedOnLight` é legado.
 - Título de seção/card: `RelicChapter` (ou `SectionLabel` para eyebrow). Sem
   marcas próprias por tela.
 - Barra de progresso: `AppProgressBar` (6 compacto / 16 padrão). `RelicProgress`

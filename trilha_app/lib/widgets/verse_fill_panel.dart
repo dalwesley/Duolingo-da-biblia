@@ -266,7 +266,8 @@ class _VerseFillPanelState extends State<VerseFillPanel>
                     _revealFlash.value >= 1) {
                   return const SizedBox.shrink();
                 }
-                final flashColor = _correct ? AppRoles.success : AppRoles.error;
+                final flashColor =
+                    _correct ? AppRoles.action : AppRoles.error;
                 return IgnorePointer(
                   child: DecoratedBox(
                     decoration: BoxDecoration(
@@ -737,7 +738,7 @@ class _BlankSlot extends StatelessWidget {
               size: fontSize * 0.85,
               weight: FontWeight.w600,
               height: 1.15,
-              color: AppRoles.success,
+              color: AppRoles.action,
             ),
           ),
         ],
@@ -745,17 +746,12 @@ class _BlankSlot extends StatelessWidget {
     } else {
       slot = GestureDetector(
         onTap: revealed ? null : onTap,
-        // Antes de conferir: sublinhado claro de seleção; conferido: acerto.
+        // Antes de conferir: claro (seleção); conferido: ouro.
         child: Text(
           value!,
           style: revealed
-              ? verseStyle.copyWith(color: AppRoles.success)
-              : verseStyle.copyWith(
-                  color: AppRoles.selected,
-                  decoration: TextDecoration.underline,
-                  decorationColor: AppRoles.selected,
-                  decorationThickness: 2,
-                ),
+              ? verseStyle.copyWith(color: AppRoles.action)
+              : verseStyle.copyWith(color: AppRoles.selected),
         ),
       );
     }
@@ -864,7 +860,7 @@ class _RevealBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final color = correct ? AppRoles.success : AppRoles.error;
+    final color = correct ? AppRoles.action : AppRoles.error;
 
     return Column(
       children: [

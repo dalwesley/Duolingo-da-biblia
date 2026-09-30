@@ -11,7 +11,6 @@ import 'act_feel.dart';
 import 'cinematic_icon.dart';
 import 'stage_plate.dart';
 import 'relic_panel.dart';
-import '../utils/difficulty_visuals.dart';
 import 'ui_primitives.dart';
 
 /// Player dos micro-atos — palco direto no fundo, sem card.
@@ -29,14 +28,14 @@ class _ActSkin {
     BoxShadow(color: AppColors.dropShadow, blurRadius: 0, offset: Offset(0, 4)),
   ];
 
-  static Color ivory(Color accent) => Color.lerp(AppColors.card, accent, 0.16)!;
+  /// Placa idle: poço elevado (não branco) — contraste no céu escuro.
+  static const idleFill = AppColors.nightElevated;
+  static const idleInk = AppColors.textOnDark;
 
-  /// Contorno da escolha ainda não confirmada — escuro sobre o marfim
-  /// (papel [AppRoles.selected]: contorno, não preenchimento).
-  static const selectedOutline = AppRoles.selectedOutlineWidth;
-  static const selectedInk = AppRoles.selectedOnLight;
+  /// Seleção: branco. Acerto: ouro. Erro: vermelho.
+  static const selectedFill = AppColors.card;
 
-  /// Tinta escura sobre placa clara (marfim, acerto).
+  /// Tinta escura sobre placa clara (branco / ouro).
   static const ink = AppColors.night;
 
   static ({
@@ -49,51 +48,52 @@ class _ActSkin {
     bool hot,
   })
   paint(_OptState state, Color accent) {
-    final ivory = _ActSkin.ivory(accent);
-    final onLight = DifficultyVisuals.onLight(accent);
     return switch (state) {
       _OptState.picked => (
-        fill: ivory,
-        well: ink,
-        wellFg: ivory,
-        wellBorder: ink,
+        fill: selectedFill,
+        well: Colors.transparent,
+        wellFg: ink,
+        wellBorder: ink.withValues(alpha: 0.22),
         text: ink,
-        outline: Border.all(color: selectedInk, width: selectedOutline),
+        outline: Border.all(
+          color: AppRoles.action.withValues(alpha: 0.85),
+          width: 2,
+        ),
         hot: true,
       ),
       _OptState.correct => (
-        fill: AppRoles.success,
-        well: ink,
-        wellFg: AppRoles.success,
-        wellBorder: ink,
-        text: ink,
+        fill: AppRoles.action,
+        well: Colors.transparent,
+        wellFg: AppRoles.onAction,
+        wellBorder: AppRoles.onAction.withValues(alpha: 0.35),
+        text: AppRoles.onAction,
         outline: null,
         hot: true,
       ),
       _OptState.wrong => (
         fill: AppRoles.error.withValues(alpha: 0.92),
-        well: AppColors.textOnDark,
-        wellFg: AppRoles.error,
-        wellBorder: AppColors.textOnDark,
+        well: Colors.transparent,
+        wellFg: AppColors.textOnDark,
+        wellBorder: AppColors.textOnDark.withValues(alpha: 0.55),
         text: AppColors.textOnDark,
         outline: null,
         hot: true,
       ),
       _OptState.dimmed => (
-        fill: ivory.withValues(alpha: 0.45),
+        fill: idleFill.withValues(alpha: 0.45),
         well: Colors.transparent,
-        wellFg: ink.withValues(alpha: 0.35),
-        wellBorder: onLight.withValues(alpha: 0.45),
-        text: ink.withValues(alpha: 0.38),
+        wellFg: idleInk.withValues(alpha: 0.35),
+        wellBorder: idleInk.withValues(alpha: 0.2),
+        text: idleInk.withValues(alpha: 0.38),
         outline: null,
         hot: false,
       ),
       _OptState.idle => (
-        fill: ivory,
+        fill: idleFill,
         well: Colors.transparent,
-        wellFg: onLight,
-        wellBorder: onLight,
-        text: ink,
+        wellFg: idleInk.withValues(alpha: 0.85),
+        wellBorder: idleInk.withValues(alpha: 0.22),
+        text: idleInk,
         outline: null,
         hot: false,
       ),
@@ -138,7 +138,7 @@ class ExercisePanel extends StatefulWidget {
     required this.onSelect,
     required this.index,
     required this.total,
-    this.accent = AppRoles.observation,
+    this.accent = AppRoles.chrome,
     this.hintUsed = false,
     this.eliminatedIds = const {},
     this.onHint,
@@ -341,7 +341,6 @@ class _ExercisePanelState extends State<ExercisePanel>
                   glyph: _gestureGlyph(ex),
                   label: ex.taskPromptLabel,
                   isPrompt: ex.showsStagePrompt,
-                  accent: widget.accent,
                 ),
               ),
               if (_showNote(ex)) ...[
@@ -353,7 +352,6 @@ class _ExercisePanelState extends State<ExercisePanel>
                     label: (ex.noteLabel ?? context.l10n.exerciseNoteLabel)
                         .trim(),
                     text: ex.note!.trim(),
-                    accent: widget.accent,
                   ),
                 ),
               ],
@@ -391,7 +389,7 @@ class _ExercisePanelState extends State<ExercisePanel>
           Positioned.fill(
             child: ActSparkBurst(
               active: widget.isCorrect == true,
-              color: AppRoles.success,
+              color: AppRoles.action,
             ),
           ),
         ],
@@ -703,8 +701,6 @@ class _ExercisePanelState extends State<ExercisePanel>
         ? widget.accent
         : widget.isCorrect == false
         ? AppRoles.error
-        : widget.isCorrect == true
-        ? AppRoles.success
         : widget.accent;
     return ReorderableListView.builder(
       itemCount: pool.length,
@@ -769,7 +765,7 @@ class _ExercisePanelState extends State<ExercisePanel>
     final left = ex.matchLeft.isNotEmpty ? ex.matchLeft : ex.effectiveOptions;
     final right = _shuffledMatchRight;
     return [
-      _MatchStepper(pickingLeft: _matchLeft == null, accent: widget.accent),
+      _MatchStepper(pickingLeft: _matchLeft == null),
       const SizedBox(height: AppSpace.md),
       Row(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -855,7 +851,7 @@ class _ExercisePanelState extends State<ExercisePanel>
               onTap: widget.hintUsed || _locked ? null : widget.onHint,
               color: widget.hintUsed || _locked
                   ? AppColors.textOnDark
-                  : widget.accent,
+                  : AppRoles.action,
             ),
           ),
         CopperCta(
@@ -904,18 +900,12 @@ TextStyle _verseWordStyle({
   color: color ?? AppColors.textOnDark,
 );
 
-/// Palavra posta na lacuna: acerto em [AppRoles.success]; antes de
-/// confirmar, sublinhado claro de seleção ([AppRoles.selected]).
+/// Palavra na lacuna: seleção = claro; acerto = ouro; (erro no poço).
 TextStyle _filledWordStyle(TextStyle base, _OptState state) {
   if (state == _OptState.correct) {
-    return base.copyWith(color: AppRoles.success);
+    return base.copyWith(color: AppRoles.action);
   }
-  return base.copyWith(
-    color: AppRoles.selected,
-    decoration: TextDecoration.underline,
-    decorationColor: AppRoles.selected,
-    decorationThickness: 2,
-  );
+  return base.copyWith(color: AppRoles.selected);
 }
 
 /// Glifo do gesto — pelo tipo, não pelo rótulo (que muda com o idioma).
@@ -939,14 +929,12 @@ class _GestureSeal extends StatelessWidget {
   final CinematicGlyph glyph;
   final String label;
   final bool isPrompt;
-  final Color accent;
 
   const _GestureSeal({
     required this.title,
     required this.glyph,
     required this.label,
     required this.isPrompt,
-    required this.accent,
   });
 
 
@@ -954,6 +942,8 @@ class _GestureSeal extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final cue = title.trim();
+    // Meta do gesto: muted (YouVersion/Duolingo) — ouro só no CTA.
+    final meta = a.sectionLabel;
     return Row(
       crossAxisAlignment: isPrompt
           ? CrossAxisAlignment.start
@@ -964,7 +954,7 @@ class _GestureSeal extends StatelessWidget {
           child: CinematicIcon(
             glyph: glyph,
             size: 22,
-            accent: accent,
+            accent: meta,
             framed: false,
           ),
         ),
@@ -974,7 +964,7 @@ class _GestureSeal extends StatelessWidget {
               ? Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    SectionLabel(label, color: accent),
+                    SectionLabel(label, color: meta),
                     const SizedBox(height: 6),
                     Text(
                       cue,
@@ -1003,12 +993,10 @@ class _GestureSeal extends StatelessWidget {
 class _ContextNote extends StatelessWidget {
   final String label;
   final String text;
-  final Color accent;
 
   const _ContextNote({
     required this.label,
     required this.text,
-    required this.accent,
   });
 
   @override
@@ -1019,14 +1007,14 @@ class _ContextNote extends StatelessWidget {
         Row(
           children: [
             Expanded(
-              child: Divider(color: accent.withValues(alpha: 0.35), height: 1),
+              child: Divider(color: a.divider, height: 1),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10),
-              child: SectionLabel(label, color: accent),
+              child: SectionLabel(label, color: a.sectionLabel),
             ),
             Expanded(
-              child: Divider(color: accent.withValues(alpha: 0.35), height: 1),
+              child: Divider(color: a.divider, height: 1),
             ),
           ],
         ),
@@ -1048,15 +1036,15 @@ class _ContextNote extends StatelessWidget {
 
 class _RefLabel extends StatelessWidget {
   final String reference;
-  final Color accent;
 
-  const _RefLabel({required this.reference, required this.accent});
+  const _RefLabel({required this.reference});
 
   @override
   Widget build(BuildContext context) {
     final ref = reference.trim();
     if (ref.isEmpty) return const SizedBox.shrink();
-    return Center(child: SectionLabel(ref, color: accent, size: 13));
+    final meta = Appearance.of(context).sectionLabel;
+    return Center(child: SectionLabel(ref, color: meta, size: 13));
   }
 }
 
@@ -1077,7 +1065,11 @@ class _Manuscript extends StatelessWidget {
     this.lit = false,
   });
 
-  BoxDecoration get _plate => StagePlate.decoration(accent: accent, lit: lit);
+  BoxDecoration get _plate => StagePlate.decoration(
+    // Acerto = glow no rim do palco; idle = chrome neutro.
+    accent: lit ? AppRoles.action : accent,
+    lit: lit,
+  );
 
   Widget _filledStage() {
     return LayoutBuilder(
@@ -1105,7 +1097,7 @@ class _Manuscript extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           if (ref.isNotEmpty) ...[
-            _RefLabel(reference: ref, accent: accent),
+            _RefLabel(reference: ref),
             const SizedBox(height: 14),
           ],
           child,
@@ -1144,7 +1136,7 @@ class _Manuscript extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             if (ref.isNotEmpty) ...[
-              _RefLabel(reference: ref, accent: accent),
+              _RefLabel(reference: ref),
               const SizedBox(height: 14),
             ],
             Expanded(child: stage),
@@ -1158,7 +1150,7 @@ class _Manuscript extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        _RefLabel(reference: ref, accent: accent),
+        _RefLabel(reference: ref),
         const SizedBox(height: 14),
         Expanded(child: stage),
       ],
@@ -1462,7 +1454,7 @@ Widget _connectStanza(ExercisePassage passage, Color accent, double size) {
     mainAxisSize: MainAxisSize.min,
     children: [
       if (ref.isNotEmpty) ...[
-        _RefLabel(reference: ref, accent: accent),
+        _RefLabel(reference: ref),
         const SizedBox(height: 8),
       ],
       Text(
@@ -1704,20 +1696,20 @@ class _VerseMark extends StatelessWidget {
     final color = switch (state) {
       _OptState.wrong => AppRoles.error,
       _OptState.dimmed => AppColors.textOnDark.withValues(alpha: 0.38),
-      _OptState.correct => AppRoles.success,
+      _OptState.correct => AppRoles.action,
       _OptState.picked => AppRoles.selected,
       _OptState.idle => AppColors.textOnDark,
     };
     final wash = switch (state) {
       _OptState.wrong => color.withValues(alpha: 0.18),
       _OptState.dimmed => Colors.transparent,
-      _OptState.correct => color.withValues(alpha: 0.28),
-      _OptState.picked => color.withValues(alpha: 0.10),
+      _OptState.correct => color.withValues(alpha: 0.22),
+      _OptState.picked => color.withValues(alpha: 0.12),
       _OptState.idle => Colors.transparent,
     };
     final underline = switch (state) {
       _OptState.idle => accent.withValues(alpha: 0.7),
-      _OptState.dimmed => Colors.transparent,
+      _OptState.dimmed || _OptState.picked => Colors.transparent,
       _ => color,
     };
 
@@ -1735,7 +1727,7 @@ class _VerseMark extends StatelessWidget {
           boxShadow: state == _OptState.correct
               ? [
                   BoxShadow(
-                    color: AppRoles.success.withValues(alpha: 0.32),
+                    color: AppRoles.action.withValues(alpha: 0.32),
                     blurRadius: 10,
                     offset: const Offset(0, 2),
                   ),
@@ -2097,8 +2089,8 @@ class _OrderPiece extends StatelessWidget {
             Icons.drag_indicator_rounded,
             size: AppMetrics.iconLg,
             color: locked
-                ? _ActSkin.ink.withValues(alpha: 0.18)
-                : DifficultyVisuals.onLight(accent).withValues(alpha: 0.85),
+                ? skin.text.withValues(alpha: 0.18)
+                : skin.text.withValues(alpha: 0.55),
           ),
         ],
       ),
@@ -2108,9 +2100,8 @@ class _OrderPiece extends StatelessWidget {
 
 class _MatchStepper extends StatelessWidget {
   final bool pickingLeft;
-  final Color accent;
 
-  const _MatchStepper({required this.pickingLeft, required this.accent});
+  const _MatchStepper({required this.pickingLeft});
 
   @override
   Widget build(BuildContext context) {
@@ -2125,13 +2116,13 @@ class _MatchStepper extends StatelessWidget {
             alignment: Alignment.center,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: on ? accent : a.divider,
+              color: on ? AppRoles.action : a.divider,
             ),
             child: Text(
               '$n',
               style: AppTypography.title(
                 size: 11,
-                color: on ? AppColors.night : a.textFaint,
+                color: on ? AppRoles.onAction : a.textFaint,
               ),
             ),
           ),
@@ -2141,7 +2132,7 @@ class _MatchStepper extends StatelessWidget {
             style: AppTypography.label(
               size: 10,
               letterSpacing: 0.8,
-              color: on ? accent : a.textFaint,
+              color: on ? AppRoles.action : a.textFaint,
             ),
           ),
         ],

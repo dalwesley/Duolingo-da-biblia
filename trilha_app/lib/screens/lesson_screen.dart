@@ -9,7 +9,6 @@ import '../data/question_bank.dart';
 import '../data/trail_repository.dart';
 import '../models/difficulty.dart';
 import '../models/trail.dart';
-import '../models/trail_catalog.dart';
 import '../services/analytics_service.dart';
 import '../services/bible_service.dart';
 import '../services/content_catalog_service.dart';
@@ -20,8 +19,6 @@ import '../services/sound_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
-import '../utils/difficulty_visuals.dart';
-import '../utils/genesis_theme.dart';
 import '../utils/palco_verse.dart';
 import '../utils/trail_progress.dart';
 import '../widgets/act_feel.dart';
@@ -72,8 +69,6 @@ class _LessonScreenState extends State<LessonScreen>
   Mission? _baseMission;
   Mission? _mission;
   String? _trailSlug;
-  String? _moduleTitle;
-  String? _realmId;
   List<String> _pickedIds = [];
   List<Exercise> _exercises = [];
   String _closingInsight = '';
@@ -144,19 +139,16 @@ class _LessonScreenState extends State<LessonScreen>
     Mission? mission = widget.missionOverride;
     String? trailSlug;
     String? moduleTitle;
-    String? realmId;
 
     if (mission != null) {
       trailSlug = 'genesis-1-11';
       moduleTitle = 'A Criação';
-      realmId = 'antigo-testamento';
     } else {
       mission = await _repo.getMissionBySlug(widget.missionSlug);
       trailSlug = await _repo.getTrailSlugForMission(widget.missionSlug);
       if (trailSlug != null) {
         final trail = await _repo.getTrailBySlug(trailSlug);
         if (trail != null) {
-          realmId = trail.realmId;
           for (final mod in trail.modules) {
             if (mod.missions.any((m) => m.slug == widget.missionSlug)) {
               moduleTitle = mod.localizedTitle;
@@ -285,8 +277,6 @@ class _LessonScreenState extends State<LessonScreen>
     setState(() {
       _baseMission = mission;
       _trailSlug = trailSlug;
-      _moduleTitle = moduleTitle;
-      _realmId = realmId;
       _pickedIds = plan.bankQuestionIds;
       _exercises = List<Exercise>.from(plan.acts);
       _closingInsight = plan.insight;
@@ -381,17 +371,9 @@ class _LessonScreenState extends State<LessonScreen>
 
   Exercise get _exercise => _exercises[_questionIndex];
 
-  GenesisModuleTheme get _theme => GenesisModuleTheme.forModule(
-    _moduleTitle ?? '',
-    realm: TrailRealm.fromId(_realmId),
-    trailSlug: _trailSlug,
-  );
-
-  Color get _sessionAccent {
-    final d = _difficultyMeta?.difficulty;
-    if (d != null) return DifficultyVisuals.accentFor(d);
-    return _theme.pathActive;
-  }
+  /// Chrome dos gestos: neutro. Ouro = CTA; glow = acerto.
+  /// Cor do modo fica no mapa / seletor.
+  Color get _gestureChrome => AppRoles.chrome;
 
   ({String reference, String text})? get _board {
     final hookT = (_mission?.hookVerse ?? '').trim();
@@ -416,7 +398,7 @@ class _LessonScreenState extends State<LessonScreen>
       builder: (_) => _PassageSheet(
         reference: board.reference,
         text: board.text,
-        accent: _sessionAccent,
+        accent: _gestureChrome,
       ),
     );
     TtsService.instance.stop();
@@ -892,7 +874,7 @@ class _LessonScreenState extends State<LessonScreen>
 
     final mission = _mission!;
     final total = _itemCount.clamp(1, 999);
-    final accent = _sessionAccent;
+    final accent = _gestureChrome;
 
     return Appearance(
       mode: mode,
@@ -1004,7 +986,7 @@ class _LessonScreenState extends State<LessonScreen>
                                           LampsBar(
                                             current: _lamps,
                                             max: _maxLamps,
-                                            accent: accent,
+                                            accent: AppRoles.reward,
                                             compact: true,
                                           ),
                                         ],
@@ -1018,7 +1000,6 @@ class _LessonScreenState extends State<LessonScreen>
                                 total: total,
                                 index: _questionIndex,
                                 results: _results,
-                                accent: accent,
                               ),
                               const SizedBox(height: 4),
                             ] else
@@ -1146,7 +1127,7 @@ class _LessonScreenState extends State<LessonScreen>
                                 radius: 1.1,
                                 colors: [
                                   (_impactPositive
-                                          ? AppRoles.success
+                                          ? AppRoles.action
                                           : AppRoles.error)
                                       .withValues(
                                         alpha:
@@ -1197,19 +1178,17 @@ class _LessonScreenState extends State<LessonScreen>
   }
 }
 
-/// Barra de atos: um segmento por pergunta — cor do modo se acertou de
-/// primeira, vermelho discreto se errou, o atual em destaque.
+/// Barra de atos: glow se acertou de primeira, vermelho se errou,
+/// o atual em destaque neutro.
 class _ActProgress extends StatelessWidget {
   final int total;
   final int index;
   final Map<int, bool> results;
-  final Color accent;
 
   const _ActProgress({
     required this.total,
     required this.index,
     required this.results,
-    required this.accent,
   });
 
   @override
@@ -1229,14 +1208,14 @@ class _ActProgress extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(AppRadii.pill),
                   color: switch (results[i]) {
-                    true => accent,
+                    true => AppRoles.action,
                     false => AppRoles.error.withValues(alpha: 0.75),
                     null => i == index ? a.text : a.progressTrack,
                   },
                   boxShadow: results[i] == true
                       ? [
                           BoxShadow(
-                            color: accent.withValues(alpha: 0.45),
+                            color: AppRoles.action.withValues(alpha: 0.45),
                             blurRadius: 8,
                           ),
                         ]

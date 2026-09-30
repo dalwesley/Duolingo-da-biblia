@@ -88,8 +88,8 @@ void main() {
     expect(filledStyle!.fontFamily, runStyle!.fontFamily);
     expect(filledStyle!.fontWeight, runStyle!.fontWeight);
     expect(filledStyle!.height, runStyle!.height);
-    // Antes de conferir: seleção (contorno claro), não amarelo nem o modo.
+    // Antes de conferir: seleção clara; depois: ouro no acerto.
     expect(filledStyle!.color, AppRoles.selected);
-    expect(filledStyle!.decoration, TextDecoration.underline);
+    expect(filledStyle!.decoration, isNull);
   });
 }

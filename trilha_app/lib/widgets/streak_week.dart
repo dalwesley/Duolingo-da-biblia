@@ -75,10 +75,11 @@ class StreakWeek extends StatelessWidget {
                   height: orbSize,
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: active ? AppRoles.streak : a.insetFill,
+                    // Presença (= estudou), não streak: rosa lê como erro.
+                    color: active ? AppRoles.presence : a.insetFill,
                     border: Border.all(
                       color: isToday
-                          ? AppRoles.streak
+                          ? AppRoles.presence
                           : active
                           ? Colors.transparent
                           : a.cardBorder,
@@ -100,7 +101,7 @@ class StreakWeek extends StatelessWidget {
                               letterSpacing: 0,
                               weight: FontWeight.w700,
                               color: isToday
-                                  ? AppRoles.streak.withValues(alpha: 0.95)
+                                  ? AppRoles.presence.withValues(alpha: 0.95)
                                   : a.textFaint,
                             ),
                           ),
@@ -114,7 +115,7 @@ class StreakWeek extends StatelessWidget {
                         style: AppTypography.label(
                           size: 10,
                           letterSpacing: 0.2,
-                          color: AppRoles.streak.withValues(alpha: 0.9),
+                          color: AppRoles.presence.withValues(alpha: 0.9),
                         ),
                       )
                     : null,
