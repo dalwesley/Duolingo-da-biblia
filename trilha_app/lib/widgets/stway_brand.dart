@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../theme/app_theme.dart';
 
 /// Marca STWAY — ícone da trilha + wordmark com o “A” em chevron.
@@ -48,20 +49,22 @@ class StwayWordmark extends StatelessWidget {
     this.letterSpacing = 8,
     this.letterColor,
     this.aColor,
-    this.weight = FontWeight.w900,
+    this.weight = FontWeight.w800,
   });
 
   @override
   Widget build(BuildContext context) {
     final letters = letterColor ?? Colors.white;
     final chevron = aColor ?? AppColors.accent;
-    final style = AppTypography.display(
-      size: fontSize,
-      exact: true,
-      weight: weight,
+    // Fonte da marca fixa em Exo 2 — não segue AppTypography.display,
+    // que pode mudar de voz (hoje Cormorant) sem mexer no logo.
+    final style = GoogleFonts.exo2(
+      fontSize: fontSize,
+      fontWeight: weight,
       color: letters,
       height: 1,
-    ).copyWith(letterSpacing: letterSpacing);
+      letterSpacing: letterSpacing,
+    );
 
     final aSize = fontSize * 0.72;
     return Row(
@@ -93,7 +96,7 @@ class _ChevronAPainter extends CustomPainter {
     final paint = Paint()
       ..color = color
       ..style = PaintingStyle.stroke
-      ..strokeWidth = size.width * 0.18
+      ..strokeWidth = size.width * 0.16
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round;
 
