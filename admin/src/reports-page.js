@@ -28,6 +28,29 @@ const REALM_LABELS = {
   outros: 'Outros',
 };
 
+const USER_REASON_LABELS = {
+  offensive_name: 'Nome ofensivo',
+  offensive_photo: 'Foto imprópria',
+  harassment: 'Assédio ou ameaça',
+  spam: 'Spam ou golpe',
+  other: 'Outro',
+};
+
+const USER_SOURCE_LABELS = {
+  ranking: 'Ranking',
+  recognition: 'Reconhecimento',
+  room_invite: 'Convite de grupo',
+  room: 'Grupo',
+  corner: 'Desafio',
+  companion: 'Companhia',
+};
+
+const USER_STATUS_LABELS = {
+  open: 'Aberta',
+  actioned: 'Ação tomada',
+  dismissed: 'Descartada',
+};
+
 const STATUS_LABELS = {
   open: 'Aberto',
   reviewed: 'Revisado',
@@ -73,17 +96,36 @@ function statusButtons(id, status, attr) {
   return `<button type="button" class="btn btn-sm btn-secondary" ${attr}="open" data-id="${escapeHtml(id)}">Reabrir</button>`;
 }
 
+function userReportButtons(id, status) {
+  if ((status || 'open') === 'open') {
+    return `
+      <button type="button" class="btn btn-sm btn-primary" data-user-status="actioned" data-id="${escapeHtml(id)}">Ação tomada</button>
+      <button type="button" class="btn btn-sm btn-ghost" data-user-status="dismissed" data-id="${escapeHtml(id)}">Descartar</button>
+    `;
+  }
+  return `<button type="button" class="btn btn-sm btn-secondary" data-user-status="open" data-id="${escapeHtml(id)}">Reabrir</button>`;
+}
+
+/** Horas desde a denúncia — a App Store pede resposta em até 24h. */
+function hoursSince(value) {
+  const ms = value?.toMillis?.();
+  if (!ms) return null;
+  return Math.floor((Date.now() - ms) / 3_600_000);
+}
+
 export async function renderReportsPage(root) {
   root.innerHTML = `<div class="page-header"><h1>Relatos</h1></div><div class="card"><p>Carregando…</p></div>`;
 
   let items = [];
   let suggestions = [];
   let authors = [];
+  let userReports = [];
   try {
-    [items, suggestions, authors] = await Promise.all([
+    [items, suggestions, authors, userReports] = await Promise.all([
       loadOrdered(COL.reports),
       loadOrdered(COL.suggestions),
       loadOrdered(COL.authorSuggestions),
+      loadOrdered(COL.userReports),
     ]);
   } catch (err) {
     root.innerHTML = `<div class="card"><p>Erro ao carregar relatos: ${escapeHtml(err.message || String(err))}</p></div>`;
@@ -94,6 +136,67 @@ export async function renderReportsPage(root) {
   let filterCategory = '';
   let filterSuggestionStatus = 'open';
   let filterAuthorStatus = 'open';
+  let filterUserStatus = 'open';
+
+  async function setUserReportStatus(id, status) {
+    try {
+      await updateDoc(doc(db, COL.userReports, id), {
+        status,
+        reviewedAt: Timestamp.now(),
+      });
+      const item = userReports.find((r) => r.id === id);
+      if (item) item.status = status;
+      showToast('Status atualizado', 'success');
+      render();
+    } catch (err) {
+      showToast(err.message || 'Falha ao atualizar', 'error');
+    }
+  }
+
+  function filteredUserReports() {
+    return userReports.filter(
+      (r) => !filterUserStatus || (r.status || 'open') === filterUserStatus,
+    );
+  }
+
+  function userReportsHtml() {
+    const list = filteredUserReports();
+    if (list.length === 0) {
+      return '<p class="field-hint">Nenhuma denúncia neste filtro.</p>';
+    }
+    return list
+      .map((r) => {
+        const reason = USER_REASON_LABELS[r.reason] || r.reason || '—';
+        const source = USER_SOURCE_LABELS[r.source] || r.source || '—';
+        const status = USER_STATUS_LABELS[r.status] || r.status || 'Aberta';
+        const hours = hoursSince(r.createdAt);
+        const late = (r.status || 'open') === 'open' && hours !== null && hours >= 24;
+        return `
+            <article class="ez-panel" style="margin-bottom:12px">
+              <div class="row-between" style="gap:12px;flex-wrap:wrap">
+                <div>
+                  <strong>${escapeHtml(r.targetName || '—')}</strong>
+                  <span class="badge badge-muted" style="margin-left:8px">${escapeHtml(reason)}</span>
+                  <span class="badge badge-muted" style="margin-left:4px">${escapeHtml(status)}</span>
+                  ${late ? '<span class="badge" style="margin-left:4px">+24h</span>' : ''}
+                  <p class="field-hint" style="margin:6px 0 0">
+                    ${escapeHtml(formatDate(r.createdAt))} · ${escapeHtml(source)}
+                    · alvo <code>${escapeHtml(r.targetUid || '')}</code>
+                    ${r.roomName ? ` · grupo “${escapeHtml(r.roomName)}” (${escapeHtml(r.roomCode || '')})` : ''}
+                  </p>
+                </div>
+                <div class="td-actions">
+                  ${userReportButtons(r.id, r.status)}
+                </div>
+              </div>
+              ${r.comment ? `<p style="margin-top:8px"><em>“${escapeHtml(r.comment)}”</em></p>` : ''}
+              <p class="field-hint" style="margin-top:8px">
+                Denunciado por <code>${escapeHtml(r.reporterUid || 'conta excluída')}</code>
+              </p>
+            </article>`;
+      })
+      .join('');
+  }
 
   async function setStatus(id, status) {
     try {
@@ -173,15 +276,35 @@ export async function renderReportsPage(root) {
     const openCount = items.filter((r) => (r.status || 'open') === 'open').length;
     const openSuggestions = suggestions.filter((r) => (r.status || 'open') === 'open').length;
     const openAuthors = authors.filter((r) => (r.status || 'open') === 'open').length;
+    const openUserReports = userReports.filter((r) => (r.status || 'open') === 'open').length;
 
     root.innerHTML = `
       <div class="page-header row-between">
         <div>
           <h1>Relatos e sugestões</h1>
-          <p class="page-sub">Erros de perguntas e caminhos pedidos pelo mapa — ${openCount} relatos, ${openSuggestions} trilhas e ${openAuthors} autores abertos</p>
+          <p class="page-sub">Denúncias, erros de perguntas e caminhos pedidos pelo mapa — ${openUserReports} denúncias, ${openCount} relatos, ${openSuggestions} trilhas e ${openAuthors} autores abertos</p>
         </div>
       </div>
       <div class="card filters-bar">
+        <select id="f-user-status">
+          <option value="">Todos status</option>
+          ${Object.entries(USER_STATUS_LABELS)
+            .map(
+              ([k, v]) =>
+                `<option value="${k}" ${filterUserStatus === k ? 'selected' : ''}>${v}</option>`,
+            )
+            .join('')}
+        </select>
+      </div>
+      <div class="card">
+        <h2 style="margin:0 0 4px;font-size:1.05rem">Denúncias de pessoas · ${openUserReports} abertas</h2>
+        <p class="field-hint" style="margin:0 0 12px">
+          Responder em até 24h. Para agir: corrigir nome/foto em <code>users/{uid}</code>
+          e nos placares, ou desativar a conta no Firebase Auth.
+        </p>
+        ${userReportsHtml()}
+      </div>
+      <div class="card filters-bar" style="margin-top:18px">
         <select id="f-status">
           <option value="">Todos status</option>
           ${Object.entries(STATUS_LABELS)
@@ -340,6 +463,15 @@ export async function renderReportsPage(root) {
         }
       </div>`;
 
+    document.getElementById('f-user-status')?.addEventListener('change', (e) => {
+      filterUserStatus = e.target.value;
+      render();
+    });
+    root.querySelectorAll('[data-user-status]').forEach((btn) => {
+      btn.addEventListener('click', () =>
+        setUserReportStatus(btn.dataset.id, btn.dataset.userStatus),
+      );
+    });
     document.getElementById('f-status')?.addEventListener('change', (e) => {
       filterStatus = e.target.value;
       render();

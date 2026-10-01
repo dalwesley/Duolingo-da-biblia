@@ -14,6 +14,7 @@ import '../models/walk_companion.dart';
 import '../models/corner_challenge.dart';
 import '../utils/appearance.dart';
 import '../utils/catalog_access.dart';
+import '../utils/content_filter.dart';
 import '../utils/tomorrow_hook.dart';
 import '../utils/trail_progress.dart';
 import '../models/portrait_style.dart';
@@ -3035,6 +3036,7 @@ class ProgressService extends ChangeNotifier {
     if (!isPlaceholderUserName(userName)) return false;
     final raw = displayName?.trim();
     if (raw == null || raw.isEmpty) return false;
+    if (!ContentFilter.isAllowed(raw)) return false;
     // Primeiro nome — mesmo critério do onboarding.
     final preferred = raw.split(RegExp(r'\s+')).first.trim();
     if (preferred.isEmpty || isPlaceholderUserName(preferred)) return false;

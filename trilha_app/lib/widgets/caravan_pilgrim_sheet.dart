@@ -9,6 +9,7 @@ import '../data/trail_repository.dart';
 import '../l10n/app_language.dart';
 import '../services/backend_service.dart';
 import '../services/league_service.dart';
+import '../services/moderation_service.dart';
 import '../theme/app_theme.dart';
 import 'act_feel.dart';
 import 'app_sheet.dart';
@@ -18,6 +19,7 @@ import 'living_seed_card.dart';
 import 'pilgrim_identity_card.dart';
 import 'pilgrim_profile_sections.dart';
 import 'ui_primitives.dart';
+import 'user_moderation_sheet.dart';
 
 /// Vitrine social — só para outros peregrinos da caravana.
 Future<void> showCaravanPilgrimSheet(
@@ -97,6 +99,12 @@ class _CaravanPilgrimSheetState extends State<_CaravanPilgrimSheet> {
     }
   }
 
+  /// Jogador real (com conta) — os de exemplo não têm uid.
+  String? get _reportableUid {
+    final uid = widget.entry.uid;
+    return uid == null || uid.isEmpty ? null : uid;
+  }
+
   @override
   Widget build(BuildContext context) {
     // Alça + margens do painel ficam fora da área de conteúdo.
@@ -144,7 +152,29 @@ class _CaravanPilgrimSheetState extends State<_CaravanPilgrimSheet> {
                   : ListView(
                       padding: const EdgeInsets.only(bottom: 24),
                       children: [
-                        const SizedBox(height: 12),
+                        if (_reportableUid case final uid?)
+                          Align(
+                            alignment: Alignment.centerRight,
+                            child: Padding(
+                              padding: const EdgeInsets.only(
+                                right: AppSpace.sm,
+                              ),
+                              child: UserModerationButton(
+                                uid: uid,
+                                name: widget.entry.name,
+                                source: UserReportSource.ranking,
+                                onDone: (outcome) {
+                                  // Bloqueado some do placar — fecha o perfil.
+                                  if (outcome == ModerationOutcome.blocked &&
+                                      context.mounted) {
+                                    Navigator.of(context).pop();
+                                  }
+                                },
+                              ),
+                            ),
+                          )
+                        else
+                          const SizedBox(height: 12),
                         Padding(
                           padding: const EdgeInsets.symmetric(
                             horizontal: AppSpace.screen,

@@ -18,6 +18,7 @@ import 'services/corner_service.dart';
 import 'services/league_service.dart';
 import 'services/home_widget_service.dart';
 import 'services/invite_deep_link_service.dart';
+import 'services/moderation_service.dart';
 import 'services/notification_service.dart';
 import 'services/progress_service.dart';
 import 'services/recognition_service.dart';
@@ -72,6 +73,14 @@ class TrilhaApp extends StatelessWidget {
           },
         ),
         ChangeNotifierProvider.value(value: RemoteConfigService.instance),
+        ChangeNotifierProxyProvider<BackendService, ModerationService>(
+          create: (_) => ModerationService.instance,
+          update: (_, backend, moderation) {
+            final m = moderation ?? ModerationService.instance;
+            unawaited(m.syncBinding(backend));
+            return m;
+          },
+        ),
         ChangeNotifierProxyProvider<BackendService, RoomService>(
           create: (ctx) => RoomService(ctx.read<BackendService>())..init(),
           update: (_, backend, previous) {

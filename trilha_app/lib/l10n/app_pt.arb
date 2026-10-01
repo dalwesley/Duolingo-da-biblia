@@ -723,6 +723,8 @@
       }
     }
   },
+  "contentNameNotAllowed": "Esse nome não pode ser usado. Escolha outro.",
+  "contentTextNotAllowed": "Esse recado tem palavras que não podem ser usadas.",
   "cornerAcceptedBy": "{name} aceitou o desafio",
   "@cornerAcceptedBy": {
     "placeholders": {
@@ -1034,6 +1036,13 @@
   "@crossingChip": {
     "description": "Selo da cena-chefe (boss) na celebração"
   },
+  "deleteAccountAwareness": "Estou ciente de que a conta e os dados serão apagados",
+  "deleteAccountBody": "Sua conta, o progresso salvo na nuvem, seu lugar nos rankings, grupos e companhias serão apagados. O app pode pedir para você entrar de novo, para confirmar que é você. Não dá para desfazer.",
+  "deleteAccountDone": "Conta excluída",
+  "deleteAccountFailed": "Não deu para excluir a conta. Tente de novo.",
+  "deleteAccountSubscriptionNote": "Excluir a conta não cancela a assinatura do Peregrino+. Cancele na App Store ou no Google Play.",
+  "deleteAccountTitle": "Excluir conta",
+  "deleteAccountWrongUser": "Entre com a mesma conta que você quer excluir.",
   "dustAwayManyFreeze": "{name}, {daysAway, plural, =1{1 dia sem caminhar} other{{daysAway} dias sem caminhar}}. O gelo ainda cobre 1 falta — retome a caminhada.",
   "@dustAwayManyFreeze": {
     "placeholders": {
@@ -2570,6 +2579,8 @@
   },
   "leagueWalkedToday": "Caminhou hoje",
   "leagueWeekEndedTitle": "Semana da caravana encerrada",
+  "legalPrivacy": "Privacidade",
+  "legalTerms": "Termos de uso",
   "lessonBackToQuestion": "Voltar à pergunta",
   "lessonBonus": "Bônus",
   "lessonBoss": "Travessia",
@@ -2697,6 +2708,7 @@
   "loginLoadingBody": "Carregando seus passos, sua sequência e suas cenas…",
   "loginReconnect": "Tentar reconectar",
   "loginRequired": "É necessário entrar para usar o Stway.",
+  "loginTermsNotice": "Ao entrar, você aceita os termos de uso e a política de privacidade. Não há tolerância para conteúdo ofensivo.",
   "loginTitle": "Entre para continuar",
   "loginWithApple": "Continuar com Apple",
   "loginWithGoogle": "Continuar com Google",
@@ -3360,6 +3372,72 @@
   "modeSheetTitle": "Como você quer estudar?",
   "modeStartFirstScene": "Comece pela primeira cena",
   "modeSwitch": "Trocar",
+  "moderationAlsoBlock": "Bloquear também",
+  "moderationBlock": "Bloquear",
+  "moderationBlockConfirm": "Bloquear {name}",
+  "@moderationBlockConfirm": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "moderationBlockFailed": "Não deu para bloquear. Tente de novo.",
+  "moderationBlockHint": "{name} some dos rankings para você e não consegue mais te convidar, desafiar ou reconhecer.",
+  "@moderationBlockHint": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "moderationBlocked": "Você bloqueou {name}.",
+  "@moderationBlocked": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "moderationCommentHint": "Conte o que aconteceu (opcional)",
+  "moderationMenuLabel": "Denunciar ou bloquear",
+  "moderationMenuSubtitle": "O que você quer fazer?",
+  "moderationReasonHarassment": "Assédio ou ameaça",
+  "moderationReasonOffensiveName": "Nome ofensivo",
+  "moderationReasonOffensivePhoto": "Foto imprópria",
+  "moderationReasonOther": "Outro motivo",
+  "moderationReasonSpam": "Spam ou golpe",
+  "moderationReport": "Denunciar",
+  "moderationReportFailed": "Não deu para enviar. Tente de novo.",
+  "moderationReportHint": "Nome, foto ou atitude imprópria. A equipe analisa em até 24 horas.",
+  "moderationReportSent": "Denúncia enviada. Obrigado por cuidar da caravana.",
+  "moderationReportTitle": "Denunciar {name}",
+  "@moderationReportTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "moderationSend": "Enviar denúncia",
+  "moderationUnblock": "Desbloquear",
+  "moderationUnblockHint": "{name} volta a aparecer para você.",
+  "@moderationUnblockHint": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "moderationUnblocked": "Você desbloqueou {name}.",
+  "@moderationUnblocked": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "moderationUnknownName": "Peregrino",
   "morphAbsolute": "absoluto",
   "morphAdjective": "adjetivo",
   "morphAdverb": "advérbio",
@@ -4868,6 +4946,16 @@
   "settingsBackupInvalid": "Backup inválido.",
   "settingsBackupSheetBody": "Exporte o progresso como texto, ou copie um backup e toque em restaurar.",
   "settingsBackupSubject": "Backup Stway",
+  "settingsBlockedEmpty": "Você não bloqueou ninguém.",
+  "settingsBlockedPeople": "Pessoas bloqueadas",
+  "settingsBlockedPeopleSubtitle": "{count, plural, =0{Ninguém bloqueado} =1{1 pessoa} other{{count} pessoas}}",
+  "@settingsBlockedPeopleSubtitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "settingsCheck": "Verificar",
   "settingsCheckingUpdate": "Procurando atualização…",
   "settingsCreditsRowSubtitle": "Textos bíblicos e estudo",
@@ -4882,6 +4970,8 @@
       }
     }
   },
+  "settingsDeleteAccount": "Excluir conta",
+  "settingsDeleteAccountSubtitle": "Apaga a conta e os dados na nuvem · pede confirmação",
   "settingsDeleteProgress": "Apagar progresso",
   "settingsDeleteProgressSubtitle": "Apaga o progresso de vez · pede confirmação",
   "settingsDeviceId": "Dispositivo · {id}",
@@ -4919,6 +5009,7 @@
       }
     }
   },
+  "settingsLegalSubtitle": "Regras de convivência e uso dos dados",
   "settingsManualBackup": "Backup manual",
   "settingsManualBackupSubtitle": "Exportar ou restaurar o progresso",
   "settingsPaceIntense": "Intenso",

@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 import '../models/recognition.dart';
 import '../l10n/app_language.dart';
 import '../l10n/l10n_global.dart';
+import '../services/moderation_service.dart';
 import '../services/recognition_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -15,6 +16,7 @@ import 'cinematic_icon.dart';
 import 'immersive_background.dart';
 import 'ui_primitives.dart';
 import 'user_avatar.dart';
+import 'user_moderation_sheet.dart';
 
 /// Lista quem reconheceu o quê — Home (depois de Entendi) e Perfil.
 Future<void> showRecognitionHistorySheet(BuildContext context) async {
@@ -277,6 +279,18 @@ class _SenderCard extends StatelessWidget {
                     color: a.textFaint,
                   ),
                 ),
+              UserModerationButton(
+                uid: first.fromUid,
+                name: group.name,
+                source: UserReportSource.recognition,
+                onDone: (outcome) {
+                  // Tira do histórico quem acabou de ser bloqueado.
+                  if (outcome == ModerationOutcome.blocked &&
+                      context.mounted) {
+                    context.read<RecognitionService>().refreshRecent();
+                  }
+                },
+              ),
             ],
           ),
           const SizedBox(height: AppSpace.md),

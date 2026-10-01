@@ -10,10 +10,12 @@ import '../models/trail_catalog.dart';
 import '../data/mission_study.dart';
 import '../services/bible_service.dart';
 import '../services/league_service.dart';
+import '../services/moderation_service.dart';
 import '../services/room_service.dart';
 import '../services/session_composer.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/content_filter.dart';
 import '../utils/trail_visuals.dart';
 import 'act_feel.dart';
 import 'app_sheet.dart';
@@ -22,6 +24,7 @@ import 'hero_card_atmosphere.dart';
 import 'immersive_background.dart';
 import 'user_avatar.dart';
 import 'ui_primitives.dart';
+import 'user_moderation_sheet.dart';
 
 /// Peças da aba Grupos: estudo da semana, quem precisa de um chamado e as
 /// sheets do líder (tipo/nome, escolher estudo, menu, passar liderança).
@@ -678,6 +681,7 @@ class _RoomSetupSheetState extends State<_RoomSetupSheet> {
     text: widget.initialName,
   );
   late RoomKind _kind = widget.initialKind;
+  String? _error;
 
   @override
   void dispose() {
@@ -688,6 +692,11 @@ class _RoomSetupSheetState extends State<_RoomSetupSheet> {
   void _submit() {
     final name = _name.text.trim();
     if (name.isEmpty) return;
+    // O nome do grupo aparece no convite para outras pessoas.
+    if (!ContentFilter.isAllowed(name)) {
+      setState(() => _error = context.l10n.contentNameNotAllowed);
+      return;
+    }
     Navigator.pop(context, (name: name, kind: _kind));
   }
 
@@ -725,7 +734,11 @@ class _RoomSetupSheetState extends State<_RoomSetupSheet> {
             decoration: InputDecoration(
               hintText: _kind.namePlaceholder,
               counterText: '',
+              errorText: _error,
             ),
+            onChanged: (_) {
+              if (_error != null) setState(() => _error = null);
+            },
             onSubmitted: (_) => _submit(),
           ),
           const SizedBox(height: AppSpace.sm),
@@ -830,6 +843,7 @@ class _RoomStudyPicker extends StatefulWidget {
 class _RoomStudyPickerState extends State<_RoomStudyPicker> {
   late final Future<List<Trail>> _trails = TrailRepository().getTrails();
   final _note = TextEditingController();
+  String? _noteError;
   Trail? _trail;
   Mission? _mission;
 
@@ -898,6 +912,10 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
   void _confirm() {
     final m = _mission;
     if (m == null) return;
+    if (!ContentFilter.isAllowed(_note.text)) {
+      setState(() => _noteError = context.l10n.contentTextNotAllowed);
+      return;
+    }
     Navigator.pop(
       context,
       RoomStudy(
@@ -1102,7 +1120,11 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
           style: AppTypography.body(size: 14, color: a.text),
           decoration: InputDecoration(
             hintText: context.l10n.groupPickerNoteHint,
+            errorText: _noteError,
           ),
+          onChanged: (_) {
+            if (_noteError != null) setState(() => _noteError = null);
+          },
         ),
         const SizedBox(height: AppSpace.md),
         CopperCta(
@@ -1473,6 +1495,13 @@ class RoomIncomingInviteCard extends StatelessWidget {
                     ),
                   ],
                 ),
+              ),
+              UserModerationButton(
+                uid: invite.fromUid,
+                name: invite.fromName,
+                source: UserReportSource.roomInvite,
+                roomCode: invite.roomCode,
+                roomName: invite.roomName,
               ),
             ],
           ),

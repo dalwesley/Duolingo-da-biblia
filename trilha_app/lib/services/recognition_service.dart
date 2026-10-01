@@ -5,6 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../models/recognition.dart';
 import 'backend_service.dart';
+import 'moderation_service.dart';
 
 /// Reconhecimentos recebidos e o que este aparelho já enviou.
 class RecognitionService extends ChangeNotifier {
@@ -13,9 +14,17 @@ class RecognitionService extends ChangeNotifier {
 
   final BackendService backend;
 
-  RecognitionService(this.backend);
+  RecognitionService(this.backend) {
+    ModerationService.instance.addListener(notifyListeners);
+  }
 
-  List<Recognition> incoming = const [];
+  List<Recognition> _incoming = const [];
+
+  /// Recebidos, sem quem eu bloqueei.
+  List<Recognition> get incoming => [
+    for (final r in _incoming)
+      if (!ModerationService.instance.isBlocked(r.fromUid)) r,
+  ];
   List<Recognition> recent = const [];
   bool recentLoading = false;
   StreamSubscription<List<Recognition>>? _sub;
@@ -61,7 +70,7 @@ class RecognitionService extends ChangeNotifier {
       _sub = null;
       _boundUid = null;
       if (incoming.isNotEmpty || recent.isNotEmpty) {
-        incoming = const [];
+        _incoming = const [];
         recent = const [];
         notifyListeners();
       }
@@ -76,7 +85,7 @@ class RecognitionService extends ChangeNotifier {
     _boundUid = uid;
     _sub = backend.watchIncomingRecognitions().listen(
       (list) {
-        incoming = list;
+        _incoming = list;
         notifyListeners();
       },
       onError: (Object e) {
@@ -96,7 +105,11 @@ class RecognitionService extends ChangeNotifier {
     recentLoading = true;
     notifyListeners();
     try {
-      recent = await backend.fetchRecentRecognitions();
+      final moderation = ModerationService.instance;
+      recent = [
+        for (final r in await backend.fetchRecentRecognitions())
+          if (!moderation.isBlocked(r.fromUid)) r,
+      ];
     } catch (e) {
       debugPrint('Falha ao carregar histórico de reconhecimentos: $e');
     } finally {
@@ -149,7 +162,8 @@ class RecognitionService extends ChangeNotifier {
   }
 
   Future<void> acknowledgeIncoming() async {
-    final ids = [for (final item in incoming) item.id];
+    // Inclui os de bloqueados: marcados como vistos, somem da caixa.
+    final ids = [for (final item in _incoming) item.id];
     if (ids.isEmpty) return;
     final ok = await backend.acknowledgeRecognitions(ids);
     if (!ok) return;
@@ -166,7 +180,7 @@ class RecognitionService extends ChangeNotifier {
         if (bd == null) return -1;
         return bd.compareTo(ad);
       });
-    incoming = const [];
+    _incoming = const [];
     notifyListeners();
     unawaited(refreshRecent());
   }
@@ -200,6 +214,7 @@ class RecognitionService extends ChangeNotifier {
   @override
   void dispose() {
     unawaited(_sub?.cancel());
+    ModerationService.instance.removeListener(notifyListeners);
     super.dispose();
   }
 }

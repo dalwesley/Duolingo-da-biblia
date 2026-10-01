@@ -445,3 +445,16 @@ exports.settleLeagueWeek = functions
     const closedWeek = league.addDays(currentWeek, -7);
     await league.settleWeek(getFirestore(), { closedWeek, currentWeek, logger });
   });
+
+// ---- Exclusão de conta (ver account.js) -----------------------------------
+
+const account = require('./account');
+
+/** Conta apagada no app (ou no Console): limpa o rastro no Firestore. */
+exports.onAuthUserDelete = functions
+  .runWith({ timeoutSeconds: 300, memory: '256MB' })
+  .auth.user()
+  .onDelete(async (user) => {
+    const failed = await account.purgeUserData(getFirestore(), user.uid, logger);
+    logger.info('conta: excluída', { uid: user.uid, failed });
+  });

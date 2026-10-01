@@ -7,6 +7,7 @@ import '../l10n/l10n_global.dart';
 import '../models/study_room.dart';
 import 'backend_service.dart';
 import 'league_service.dart';
+import 'moderation_service.dart';
 import 'progress_service.dart';
 
 /// Orquestra salas privadas: código local + sync Firebase via [BackendService].
@@ -29,7 +30,9 @@ class RoomService extends ChangeNotifier {
   StreamSubscription<QuerySnapshot<Map<String, dynamic>>>? _inviteSub;
   String? _listeningUid;
 
-  RoomService(this.backend);
+  RoomService(this.backend) {
+    ModerationService.instance.addListener(notifyListeners);
+  }
 
   bool get isLoaded => _loaded;
   String? get activeCode => activeRoom?.code;
@@ -42,7 +45,10 @@ class RoomService extends ChangeNotifier {
     if (uid == null) return const [];
     return [
       for (final invite in invites)
-        if (invite.toUid == uid && invite.isPending) invite,
+        if (invite.toUid == uid &&
+            invite.isPending &&
+            !ModerationService.instance.isBlocked(invite.fromUid))
+          invite,
     ];
   }
 
@@ -119,6 +125,7 @@ class RoomService extends ChangeNotifier {
   @override
   void dispose() {
     _inviteSub?.cancel();
+    ModerationService.instance.removeListener(notifyListeners);
     super.dispose();
   }
 

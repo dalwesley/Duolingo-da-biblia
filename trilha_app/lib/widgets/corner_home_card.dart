@@ -7,6 +7,7 @@ import '../models/corner_challenge.dart';
 import '../services/backend_service.dart';
 import '../services/corner_service.dart';
 import '../services/league_service.dart';
+import '../services/moderation_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -18,6 +19,7 @@ import 'immersive_background.dart';
 import 'juntos_chrome.dart';
 import 'ui_primitives.dart';
 import 'user_avatar.dart';
+import 'user_moderation_sheet.dart';
 
 /// Desafio — duas pessoas, a mesma cena, a bandeira no meio.
 ///
@@ -93,6 +95,22 @@ class CornerHomeCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          if (incoming)
+            Align(
+              alignment: Alignment.centerRight,
+              child: UserModerationButton(
+                uid: challenge.peerId(uid),
+                name: theirName,
+                source: UserReportSource.corner,
+                onDone: (outcome) {
+                  // Convite de quem foi bloqueado some na próxima leitura.
+                  if (outcome == ModerationOutcome.blocked &&
+                      context.mounted) {
+                    context.read<CornerService>().refresh();
+                  }
+                },
+              ),
+            ),
           _PairRow(
             myName: myName,
             theirName: theirName,

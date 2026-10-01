@@ -1040,6 +1040,14 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get contentNameNotAllowed =>
+      'That name can\'t be used. Pick another one.';
+
+  @override
+  String get contentTextNotAllowed =>
+      'That note has words that can\'t be used.';
+
+  @override
   String cornerAcceptedBy(String name) {
     return '$name accepted the challenge';
   }
@@ -1376,6 +1384,31 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get crossingChip => 'Crossing';
+
+  @override
+  String get deleteAccountAwareness =>
+      'I understand my account and data will be deleted';
+
+  @override
+  String get deleteAccountBody =>
+      'Your account, the progress saved in the cloud and your place in rankings, groups and companions will be deleted. The app may ask you to sign in again to confirm it\'s you. This can\'t be undone.';
+
+  @override
+  String get deleteAccountDone => 'Account deleted';
+
+  @override
+  String get deleteAccountFailed => 'Couldn\'t delete your account. Try again.';
+
+  @override
+  String get deleteAccountSubscriptionNote =>
+      'Deleting your account doesn\'t cancel your Peregrino+ subscription. Cancel it in the App Store or Google Play.';
+
+  @override
+  String get deleteAccountTitle => 'Delete account';
+
+  @override
+  String get deleteAccountWrongUser =>
+      'Sign in with the same account you want to delete.';
 
   @override
   String dustAwayManyFreeze(String name, int daysAway) {
@@ -3519,6 +3552,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get leagueWeekEndedTitle => 'Caravan week closed';
 
   @override
+  String get legalPrivacy => 'Privacy';
+
+  @override
+  String get legalTerms => 'Terms of use';
+
+  @override
   String get lessonBackToQuestion => 'Back to question';
 
   @override
@@ -3696,6 +3735,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get loginRequired => 'You need to sign in to use Stway.';
+
+  @override
+  String get loginTermsNotice =>
+      'By signing in, you accept the terms of use and the privacy policy. Offensive content is not tolerated.';
 
   @override
   String get loginTitle => 'Sign in to continue';
@@ -4589,6 +4632,92 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get modeSwitch => 'Change';
+
+  @override
+  String get moderationAlsoBlock => 'Also block';
+
+  @override
+  String get moderationBlock => 'Block';
+
+  @override
+  String moderationBlockConfirm(String name) {
+    return 'Block $name';
+  }
+
+  @override
+  String get moderationBlockFailed => 'Couldn\'t block. Try again.';
+
+  @override
+  String moderationBlockHint(String name) {
+    return '$name disappears from your rankings and can no longer invite, challenge or recognize you.';
+  }
+
+  @override
+  String moderationBlocked(String name) {
+    return 'You blocked $name.';
+  }
+
+  @override
+  String get moderationCommentHint => 'Tell us what happened (optional)';
+
+  @override
+  String get moderationMenuLabel => 'Report or block';
+
+  @override
+  String get moderationMenuSubtitle => 'What do you want to do?';
+
+  @override
+  String get moderationReasonHarassment => 'Harassment or threat';
+
+  @override
+  String get moderationReasonOffensiveName => 'Offensive name';
+
+  @override
+  String get moderationReasonOffensivePhoto => 'Inappropriate photo';
+
+  @override
+  String get moderationReasonOther => 'Something else';
+
+  @override
+  String get moderationReasonSpam => 'Spam or scam';
+
+  @override
+  String get moderationReport => 'Report';
+
+  @override
+  String get moderationReportFailed => 'Couldn\'t send it. Try again.';
+
+  @override
+  String get moderationReportHint =>
+      'Inappropriate name, photo or behavior. Our team reviews it within 24 hours.';
+
+  @override
+  String get moderationReportSent =>
+      'Report sent. Thanks for looking out for the caravan.';
+
+  @override
+  String moderationReportTitle(String name) {
+    return 'Report $name';
+  }
+
+  @override
+  String get moderationSend => 'Send report';
+
+  @override
+  String get moderationUnblock => 'Unblock';
+
+  @override
+  String moderationUnblockHint(String name) {
+    return '$name shows up for you again.';
+  }
+
+  @override
+  String moderationUnblocked(String name) {
+    return 'You unblocked $name.';
+  }
+
+  @override
+  String get moderationUnknownName => 'Pilgrim';
 
   @override
   String get morphAbsolute => 'absolute';
@@ -6967,6 +7096,24 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsBackupSubject => 'Stway backup';
 
   @override
+  String get settingsBlockedEmpty => 'You haven\'t blocked anyone.';
+
+  @override
+  String get settingsBlockedPeople => 'Blocked people';
+
+  @override
+  String settingsBlockedPeopleSubtitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count people',
+      one: '1 person',
+      zero: 'No one blocked',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get settingsCheck => 'Check';
 
   @override
@@ -6995,6 +7142,13 @@ class AppLocalizationsEn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get settingsDeleteAccount => 'Delete account';
+
+  @override
+  String get settingsDeleteAccountSubtitle =>
+      'Deletes your account and cloud data · asks to confirm';
 
   @override
   String get settingsDeleteProgress => 'Delete progress';
@@ -7050,6 +7204,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String settingsLastShort(String date) {
     return 'Last · $date';
   }
+
+  @override
+  String get settingsLegalSubtitle => 'Community rules and how data is used';
 
   @override
   String get settingsManualBackup => 'Manual backup';

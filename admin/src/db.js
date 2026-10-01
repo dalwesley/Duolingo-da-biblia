@@ -23,6 +23,7 @@ export const COL = {
   reports: 'content_question_reports',
   suggestions: 'content_trail_suggestions',
   authorSuggestions: 'content_author_suggestions',
+  userReports: 'user_reports',
 };
 
 function sortByOrder(items) {

@@ -13,15 +13,47 @@ import 'ui_primitives.dart';
 /// Confirmação irreversível. O botão só habilita depois de [waitSeconds]
 /// e com o aviso de perda de progresso marcado.
 Future<bool> showResetProgressSheet(BuildContext context) {
+  return _showDangerSheet(context, _DangerKind.resetProgress);
+}
+
+/// Mesma confirmação para excluir a conta (App Store 5.1.1(v)).
+/// [subscriptionNote]: avisa que a assinatura não cai junto (só com Peregrino+ ativo).
+Future<bool> showDeleteAccountSheet(
+  BuildContext context, {
+  bool subscriptionNote = false,
+}) {
+  return _showDangerSheet(
+    context,
+    _DangerKind.deleteAccount,
+    subscriptionNote: subscriptionNote,
+  );
+}
+
+enum _DangerKind { resetProgress, deleteAccount }
+
+Future<bool> _showDangerSheet(
+  BuildContext context,
+  _DangerKind kind, {
+  bool subscriptionNote = false,
+}) {
   ActHaptics.confirm();
   return showAppSheet<bool>(
     context,
-    builder: (_) => const _ResetProgressSheet(),
+    builder: (_) => _ResetProgressSheet(
+      kind: kind,
+      subscriptionNote: subscriptionNote,
+    ),
   ).then((value) => value == true);
 }
 
 class _ResetProgressSheet extends StatefulWidget {
-  const _ResetProgressSheet();
+  final _DangerKind kind;
+  final bool subscriptionNote;
+
+  const _ResetProgressSheet({
+    required this.kind,
+    this.subscriptionNote = false,
+  });
 
   @override
   State<_ResetProgressSheet> createState() => _ResetProgressSheetState();
@@ -60,6 +92,10 @@ class _ResetProgressSheetState extends State<_ResetProgressSheet> {
   Widget build(BuildContext context) {
     const accent = AppRoles.risk;
     final a = Appearance.of(context);
+    final l10n = context.l10n;
+    final deletesAccount = widget.kind == _DangerKind.deleteAccount;
+    final awareness =
+        deletesAccount ? l10n.deleteAccountAwareness : l10n.resetAwareness;
 
     return AppSheetPanel(
       tint: accent,
@@ -69,17 +105,33 @@ class _ResetProgressSheetState extends State<_ResetProgressSheet> {
         children: [
           AppSheetHeader(
             center: true,
-            leading: const CinematicIcon(
-              glyph: CinematicGlyph.fall,
+            leading: CinematicIcon(
+              glyph: deletesAccount
+                  ? CinematicGlyph.close
+                  : CinematicGlyph.fall,
               size: AppMetrics.iconHero,
               accent: accent,
               glowing: false,
             ),
-            title: context.l10n.resetTitle,
-            subtitle: context.l10n.resetBody,
+            title: deletesAccount ? l10n.deleteAccountTitle : l10n.resetTitle,
+            subtitle: deletesAccount ? l10n.deleteAccountBody : l10n.resetBody,
           ),
+          if (deletesAccount && widget.subscriptionNote) ...[
+            const SizedBox(height: AppSpace.md),
+            Text(
+              l10n.deleteAccountSubscriptionNote,
+              textAlign: TextAlign.center,
+              style: AppTypography.body(
+                size: 12,
+                height: 1.35,
+                weight: FontWeight.w600,
+                color: a.textSecondary,
+              ),
+            ),
+          ],
           const SizedBox(height: AppSpace.lg),
           _AwarenessCheck(
+            label: awareness,
             checked: _aware,
             onChanged: (value) {
               ActHaptics.tap();
@@ -109,8 +161,8 @@ class _ResetProgressSheetState extends State<_ResetProgressSheet> {
             ),
             child: Text(
               _remaining > 0
-                  ? context.l10n.resetConfirmCountdown(_remaining)
-                  : context.l10n.resetConfirm,
+                  ? l10n.resetConfirmCountdown(_remaining)
+                  : l10n.resetConfirm,
               style: CopperCta.labelStyle(
                 size: 16,
                 color: AppColors.textOnDark,
@@ -119,7 +171,7 @@ class _ResetProgressSheetState extends State<_ResetProgressSheet> {
           ),
           const SizedBox(height: AppSpace.sm),
           GhostCta(
-            label: context.l10n.commonCancel,
+            label: l10n.commonCancel,
             expanded: true,
             onTap: () => Navigator.pop(context, false),
           ),
@@ -130,10 +182,15 @@ class _ResetProgressSheetState extends State<_ResetProgressSheet> {
 }
 
 class _AwarenessCheck extends StatelessWidget {
+  final String label;
   final bool checked;
   final ValueChanged<bool> onChanged;
 
-  const _AwarenessCheck({required this.checked, required this.onChanged});
+  const _AwarenessCheck({
+    required this.label,
+    required this.checked,
+    required this.onChanged,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -142,7 +199,7 @@ class _AwarenessCheck extends StatelessWidget {
 
     return Semantics(
       checked: checked,
-      label: context.l10n.resetAwareness,
+      label: label,
       excludeSemantics: true,
       child: Material(
         color: Colors.transparent,
@@ -177,7 +234,7 @@ class _AwarenessCheck extends StatelessWidget {
                 const SizedBox(width: AppSpace.md),
                 Expanded(
                   child: Text(
-                    context.l10n.resetAwareness,
+                    label,
                     style: AppTypography.body(
                       size: 13,
                       height: 1.35,

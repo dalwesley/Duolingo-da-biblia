@@ -13,6 +13,7 @@ import '../models/study_room.dart';
 import '../models/walk_companion.dart';
 import '../services/backend_service.dart';
 import '../services/medal_engagement_service.dart';
+import '../services/moderation_service.dart';
 import '../services/progress_service.dart';
 import '../services/companion_service.dart';
 import '../services/corner_service.dart';
@@ -80,8 +81,22 @@ class LeagueScreen extends StatefulWidget {
 class _LeagueScreenState extends State<LeagueScreen>
     with SingleTickerProviderStateMixin, ShellTabFreezeMixin {
   late final AnimationController _enter;
-  List<LeagueEntry> _realPlayers = const [];
-  List<LeagueEntry> _overallPlayers = const [];
+  List<LeagueEntry> _loadedRealPlayers = const [];
+  List<LeagueEntry> _loadedOverallPlayers = const [];
+
+  /// Placar sem quem eu bloqueei.
+  List<LeagueEntry> get _realPlayers => _withoutBlocked(_loadedRealPlayers);
+  List<LeagueEntry> get _overallPlayers =>
+      _withoutBlocked(_loadedOverallPlayers);
+
+  static List<LeagueEntry> _withoutBlocked(List<LeagueEntry> entries) {
+    final moderation = ModerationService.instance;
+    if (moderation.blocked.isEmpty) return entries;
+    return [
+      for (final e in entries)
+        if (!moderation.isBlocked(e.uid)) e,
+    ];
+  }
 
   /// Variante A: Companhia primeiro (fosso), depois Caravana, depois Grupos.
   static const _tabCompanhia = 0;
@@ -219,7 +234,7 @@ class _LeagueScreenState extends State<LeagueScreen>
 
       if (!mounted) return;
       setState(() {
-        _realPlayers = [
+        _loadedRealPlayers = [
           for (final p in players)
             LeagueEntry(
               uid: p.uid,
@@ -231,7 +246,7 @@ class _LeagueScreenState extends State<LeagueScreen>
               portraitStyle: p.portraitStyle,
             ),
         ];
-        _overallPlayers = [
+        _loadedOverallPlayers = [
           for (final p in overallPlayers)
             LeagueEntry(
               uid: p.uid,
@@ -445,6 +460,8 @@ class _LeagueScreenState extends State<LeagueScreen>
     );
     final progress = context.read<ProgressService>();
     final league = context.watch<LeagueService>();
+    // Bloquear alguém tira a pessoa do placar na hora.
+    context.watch<ModerationService>();
 
     if (!league.isLoaded) {
       return [

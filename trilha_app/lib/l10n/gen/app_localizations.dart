@@ -1702,6 +1702,18 @@ abstract class AppLocalizations {
   /// **'{name} já caminhou — sua vez'**
   String companionYourTurn(String name);
 
+  /// No description provided for @contentNameNotAllowed.
+  ///
+  /// In pt, this message translates to:
+  /// **'Esse nome não pode ser usado. Escolha outro.'**
+  String get contentNameNotAllowed;
+
+  /// No description provided for @contentTextNotAllowed.
+  ///
+  /// In pt, this message translates to:
+  /// **'Esse recado tem palavras que não podem ser usadas.'**
+  String get contentTextNotAllowed;
+
   /// No description provided for @cornerAcceptedBy.
   ///
   /// In pt, this message translates to:
@@ -2193,6 +2205,48 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Travessia'**
   String get crossingChip;
+
+  /// No description provided for @deleteAccountAwareness.
+  ///
+  /// In pt, this message translates to:
+  /// **'Estou ciente de que a conta e os dados serão apagados'**
+  String get deleteAccountAwareness;
+
+  /// No description provided for @deleteAccountBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sua conta, o progresso salvo na nuvem, seu lugar nos rankings, grupos e companhias serão apagados. O app pode pedir para você entrar de novo, para confirmar que é você. Não dá para desfazer.'**
+  String get deleteAccountBody;
+
+  /// No description provided for @deleteAccountDone.
+  ///
+  /// In pt, this message translates to:
+  /// **'Conta excluída'**
+  String get deleteAccountDone;
+
+  /// No description provided for @deleteAccountFailed.
+  ///
+  /// In pt, this message translates to:
+  /// **'Não deu para excluir a conta. Tente de novo.'**
+  String get deleteAccountFailed;
+
+  /// No description provided for @deleteAccountSubscriptionNote.
+  ///
+  /// In pt, this message translates to:
+  /// **'Excluir a conta não cancela a assinatura do Peregrino+. Cancele na App Store ou no Google Play.'**
+  String get deleteAccountSubscriptionNote;
+
+  /// No description provided for @deleteAccountTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Excluir conta'**
+  String get deleteAccountTitle;
+
+  /// No description provided for @deleteAccountWrongUser.
+  ///
+  /// In pt, this message translates to:
+  /// **'Entre com a mesma conta que você quer excluir.'**
+  String get deleteAccountWrongUser;
 
   /// No description provided for @dustAwayManyFreeze.
   ///
@@ -5475,6 +5529,18 @@ abstract class AppLocalizations {
   /// **'Semana da caravana encerrada'**
   String get leagueWeekEndedTitle;
 
+  /// No description provided for @legalPrivacy.
+  ///
+  /// In pt, this message translates to:
+  /// **'Privacidade'**
+  String get legalPrivacy;
+
+  /// No description provided for @legalTerms.
+  ///
+  /// In pt, this message translates to:
+  /// **'Termos de uso'**
+  String get legalTerms;
+
   /// No description provided for @lessonBackToQuestion.
   ///
   /// In pt, this message translates to:
@@ -5750,6 +5816,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'É necessário entrar para usar o Stway.'**
   String get loginRequired;
+
+  /// No description provided for @loginTermsNotice.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ao entrar, você aceita os termos de uso e a política de privacidade. Não há tolerância para conteúdo ofensivo.'**
+  String get loginTermsNotice;
 
   /// No description provided for @loginTitle.
   ///
@@ -7052,6 +7124,150 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Trocar'**
   String get modeSwitch;
+
+  /// No description provided for @moderationAlsoBlock.
+  ///
+  /// In pt, this message translates to:
+  /// **'Bloquear também'**
+  String get moderationAlsoBlock;
+
+  /// No description provided for @moderationBlock.
+  ///
+  /// In pt, this message translates to:
+  /// **'Bloquear'**
+  String get moderationBlock;
+
+  /// No description provided for @moderationBlockConfirm.
+  ///
+  /// In pt, this message translates to:
+  /// **'Bloquear {name}'**
+  String moderationBlockConfirm(String name);
+
+  /// No description provided for @moderationBlockFailed.
+  ///
+  /// In pt, this message translates to:
+  /// **'Não deu para bloquear. Tente de novo.'**
+  String get moderationBlockFailed;
+
+  /// No description provided for @moderationBlockHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'{name} some dos rankings para você e não consegue mais te convidar, desafiar ou reconhecer.'**
+  String moderationBlockHint(String name);
+
+  /// No description provided for @moderationBlocked.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você bloqueou {name}.'**
+  String moderationBlocked(String name);
+
+  /// No description provided for @moderationCommentHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Conte o que aconteceu (opcional)'**
+  String get moderationCommentHint;
+
+  /// No description provided for @moderationMenuLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Denunciar ou bloquear'**
+  String get moderationMenuLabel;
+
+  /// No description provided for @moderationMenuSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'O que você quer fazer?'**
+  String get moderationMenuSubtitle;
+
+  /// No description provided for @moderationReasonHarassment.
+  ///
+  /// In pt, this message translates to:
+  /// **'Assédio ou ameaça'**
+  String get moderationReasonHarassment;
+
+  /// No description provided for @moderationReasonOffensiveName.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nome ofensivo'**
+  String get moderationReasonOffensiveName;
+
+  /// No description provided for @moderationReasonOffensivePhoto.
+  ///
+  /// In pt, this message translates to:
+  /// **'Foto imprópria'**
+  String get moderationReasonOffensivePhoto;
+
+  /// No description provided for @moderationReasonOther.
+  ///
+  /// In pt, this message translates to:
+  /// **'Outro motivo'**
+  String get moderationReasonOther;
+
+  /// No description provided for @moderationReasonSpam.
+  ///
+  /// In pt, this message translates to:
+  /// **'Spam ou golpe'**
+  String get moderationReasonSpam;
+
+  /// No description provided for @moderationReport.
+  ///
+  /// In pt, this message translates to:
+  /// **'Denunciar'**
+  String get moderationReport;
+
+  /// No description provided for @moderationReportFailed.
+  ///
+  /// In pt, this message translates to:
+  /// **'Não deu para enviar. Tente de novo.'**
+  String get moderationReportFailed;
+
+  /// No description provided for @moderationReportHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nome, foto ou atitude imprópria. A equipe analisa em até 24 horas.'**
+  String get moderationReportHint;
+
+  /// No description provided for @moderationReportSent.
+  ///
+  /// In pt, this message translates to:
+  /// **'Denúncia enviada. Obrigado por cuidar da caravana.'**
+  String get moderationReportSent;
+
+  /// No description provided for @moderationReportTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Denunciar {name}'**
+  String moderationReportTitle(String name);
+
+  /// No description provided for @moderationSend.
+  ///
+  /// In pt, this message translates to:
+  /// **'Enviar denúncia'**
+  String get moderationSend;
+
+  /// No description provided for @moderationUnblock.
+  ///
+  /// In pt, this message translates to:
+  /// **'Desbloquear'**
+  String get moderationUnblock;
+
+  /// No description provided for @moderationUnblockHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'{name} volta a aparecer para você.'**
+  String moderationUnblockHint(String name);
+
+  /// No description provided for @moderationUnblocked.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você desbloqueou {name}.'**
+  String moderationUnblocked(String name);
+
+  /// No description provided for @moderationUnknownName.
+  ///
+  /// In pt, this message translates to:
+  /// **'Peregrino'**
+  String get moderationUnknownName;
 
   /// No description provided for @morphAbsolute.
   ///
@@ -10887,6 +11103,24 @@ abstract class AppLocalizations {
   /// **'Backup Stway'**
   String get settingsBackupSubject;
 
+  /// No description provided for @settingsBlockedEmpty.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você não bloqueou ninguém.'**
+  String get settingsBlockedEmpty;
+
+  /// No description provided for @settingsBlockedPeople.
+  ///
+  /// In pt, this message translates to:
+  /// **'Pessoas bloqueadas'**
+  String get settingsBlockedPeople;
+
+  /// No description provided for @settingsBlockedPeopleSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =0{Ninguém bloqueado} =1{1 pessoa} other{{count} pessoas}}'**
+  String settingsBlockedPeopleSubtitle(int count);
+
   /// No description provided for @settingsCheck.
   ///
   /// In pt, this message translates to:
@@ -10928,6 +11162,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'{count, plural, =1{1 dia} other{{count} dias}}'**
   String settingsDays(int count);
+
+  /// No description provided for @settingsDeleteAccount.
+  ///
+  /// In pt, this message translates to:
+  /// **'Excluir conta'**
+  String get settingsDeleteAccount;
+
+  /// No description provided for @settingsDeleteAccountSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Apaga a conta e os dados na nuvem · pede confirmação'**
+  String get settingsDeleteAccountSubtitle;
 
   /// No description provided for @settingsDeleteProgress.
   ///
@@ -11024,6 +11270,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Último · {date}'**
   String settingsLastShort(String date);
+
+  /// No description provided for @settingsLegalSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Regras de convivência e uso dos dados'**
+  String get settingsLegalSubtitle;
 
   /// No description provided for @settingsManualBackup.
   ///

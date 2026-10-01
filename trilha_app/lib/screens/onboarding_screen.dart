@@ -12,6 +12,7 @@ import '../services/league_service.dart';
 import '../services/progress_service.dart';
 import '../services/tilt_parallax.dart';
 import '../theme/app_theme.dart';
+import '../utils/content_filter.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
 import '../utils/trail_visuals.dart';
@@ -346,6 +347,16 @@ class _OnboardingScreenState extends State<OnboardingScreen>
 
   Future<void> _finish({bool skipped = false}) async {
     if (_finishing) return;
+    // O nome vai para o ranking — palavrão fica de fora.
+    if (_askName && !ContentFilter.isAllowed(_nameController.text)) {
+      showAppToastFor(
+        context,
+        message: context.l10n.contentNameNotAllowed,
+        glyph: CinematicGlyph.wrong,
+        tone: AppToastTone.warn,
+      );
+      return;
+    }
     setState(() => _finishing = true);
     unawaited(
       AnalyticsService.instance.logEvent('onboarding_complete', {

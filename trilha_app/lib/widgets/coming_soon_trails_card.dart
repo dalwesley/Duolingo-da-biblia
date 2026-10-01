@@ -15,6 +15,15 @@ const aboutPageUrl = 'https://stway.com.br/sobre';
 /// Página de doação no site. O pagamento fica fora do app.
 const donatePageUrl = 'https://stway.com.br/doar';
 
+/// Termos de uso e política de privacidade (aceitos no login).
+const termsPageUrl = 'https://stway.com.br/termos';
+const privacyPageUrl = 'https://stway.com.br/privacidade';
+
+/// Abre uma página do site no navegador externo.
+Future<void> openSitePage(String url) {
+  return launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+}
+
 /// Abre a página Sobre no navegador externo.
 Future<void> openAboutPage() {
   return launchUrl(

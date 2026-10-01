@@ -4,6 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../l10n/l10n_global.dart';
 import '../models/walk_companion.dart';
 import 'backend_service.dart';
+import 'moderation_service.dart';
 import 'progress_service.dart';
 import 'subscription_service.dart';
 
@@ -40,6 +41,7 @@ class CompanionService extends ChangeNotifier {
 
   CompanionService(this.backend, [this.subscription]) {
     subscription?.addListener(_onSubscriptionChanged);
+    ModerationService.instance.addListener(notifyListeners);
   }
 
   void _onSubscriptionChanged() => notifyListeners();
@@ -49,7 +51,10 @@ class CompanionService extends ChangeNotifier {
   /// Primeiro aceno pendente — a Home usa para o card e as 👋.
   WalkCompanion? get incomingNudge {
     for (final c in companions) {
-      if (c.hasIncomingNudge) return c;
+      if (c.hasIncomingNudge &&
+          !ModerationService.instance.isBlocked(c.partnerUid)) {
+        return c;
+      }
     }
     return null;
   }
@@ -300,6 +305,7 @@ class CompanionService extends ChangeNotifier {
   @override
   void dispose() {
     subscription?.removeListener(_onSubscriptionChanged);
+    ModerationService.instance.removeListener(notifyListeners);
     super.dispose();
   }
 

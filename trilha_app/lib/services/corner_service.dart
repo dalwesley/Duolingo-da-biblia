@@ -7,6 +7,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../models/corner_challenge.dart';
 import 'analytics_service.dart';
 import 'backend_service.dart';
+import 'moderation_service.dart';
 import 'progress_service.dart';
 
 /// Desafio na aba Juntos (sob Companhia) — duas pessoas, a mesma cena, até domingo.
@@ -113,7 +114,16 @@ class CornerService extends ChangeNotifier {
           .collection('corners')
           .where('participantIds', arrayContains: uid)
           .get();
-      mine = [for (final doc in snap.docs) _fromDoc(doc)];
+      // Convite pendente de quem eu bloqueei não aparece.
+      final moderation = ModerationService.instance;
+      mine = snap.docs
+          .map(_fromDoc)
+          .where(
+            (c) => !(c.status == CornerStatus.pending &&
+                c.opponentId == uid &&
+                moderation.isBlocked(c.challengerId)),
+          )
+          .toList();
       lastError = null;
       _cloudSynced = true;
       await _collectAcceptReveals(uid);

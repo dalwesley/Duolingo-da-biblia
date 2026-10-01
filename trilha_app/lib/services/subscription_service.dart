@@ -75,6 +75,18 @@ class SubscriptionService extends ChangeNotifier {
     }
   }
 
+  /// Conta excluída: a compra deixa de apontar para o uid apagado.
+  Future<void> logOut() async {
+    if (!_initialized || _boundUid == null) return;
+    _boundUid = null;
+    try {
+      final info = await Purchases.logOut();
+      _onCustomerInfo(info);
+    } catch (e) {
+      debugPrint('SubscriptionService.logOut falhou: $e');
+    }
+  }
+
   Future<void> _loadOfferings() async {
     try {
       final offerings = await Purchases.getOfferings();

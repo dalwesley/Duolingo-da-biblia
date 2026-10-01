@@ -9,6 +9,23 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+## [1.0.33] — 2026-10-01
+
+Ajustes pedidos pela revisão da App Store.
+
+### Added
+- **Excluir conta** (Ajustes → Conta): confirmação com espera e aviso. Pede login de novo só quando precisa (Apple sempre, para revogar o token; Google só com sessão antiga). A Cloud Function `onAuthUserDelete` apaga o rastro no Firestore: perfil, placares, grupos (passa a liderança), companhias, convites, desafios e reconhecimentos
+- **Denunciar e bloquear**: bandeira no perfil do ranking, no convite de grupo, no convite de desafio e nos reconhecimentos. Bloqueio em `users/{uid}/blocks`; quem foi bloqueado some do placar e da caixa, e as regras recusam convite, desafio, reconhecimento e chamado vindos dele. Ajustes → Conta → Pessoas bloqueadas para desbloquear
+- Denúncias em `user_reports`, com fila no painel admin (Relatos → Denúncias de pessoas, selo +24h)
+- **Filtro de palavras** (pt/en/es) no nome do usuário, no nome de grupo e no recado do grupo; também barra nomes que imitam a equipe
+- **Termos de uso** (`/termos`) aceitos na tela de login; links para termos e privacidade em Ajustes → Sobre
+- Política de **privacidade** do app (`/privacidade`), que antes cobria só o site
+- Ícone próprio do iOS
+
+### Changed
+- App gratuito por enquanto: Peregrino+ fica oculto enquanto a RevenueCat não estiver configurada
+- Nome em Ajustes ganhou um lápis — antes parecia texto fixo
+
 ## [1.0.32] — 2026-09-30
 
 ### Added

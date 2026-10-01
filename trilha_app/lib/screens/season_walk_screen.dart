@@ -91,14 +91,16 @@ class SeasonWalkScreen extends StatelessWidget {
                                 : l10n.seasonEnded,
                             style: AppTypography.title(size: 16, color: a.text),
                           ),
-                          const SizedBox(height: 6),
-                          Text(
-                            l10n.seasonFreeTrialLine,
-                            style: AppTypography.body(
-                              size: 13,
-                              color: a.textSecondary,
+                          if (sub.isConfigured) ...[
+                            const SizedBox(height: 6),
+                            Text(
+                              l10n.seasonFreeTrialLine,
+                              style: AppTypography.body(
+                                size: 13,
+                                color: a.textSecondary,
+                              ),
                             ),
-                          ),
+                          ],
                           const SizedBox(height: 12),
                           AppProgressBar(
                             value: campaign.length == 0

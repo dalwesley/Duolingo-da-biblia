@@ -1,0 +1,188 @@
+{
+  "moderationMenuLabel": {
+    "pt": "Denunciar ou bloquear",
+    "en": "Report or block",
+    "es": "Denunciar o bloquear"
+  },
+  "moderationMenuSubtitle": {
+    "pt": "O que você quer fazer?",
+    "en": "What do you want to do?",
+    "es": "¿Qué quieres hacer?"
+  },
+  "moderationReport": {
+    "pt": "Denunciar",
+    "en": "Report",
+    "es": "Denunciar"
+  },
+  "moderationReportHint": {
+    "pt": "Nome, foto ou atitude imprópria. A equipe analisa em até 24 horas.",
+    "en": "Inappropriate name, photo or behavior. Our team reviews it within 24 hours.",
+    "es": "Nombre, foto o actitud inapropiada. El equipo lo revisa en 24 horas."
+  },
+  "moderationBlock": {
+    "pt": "Bloquear",
+    "en": "Block",
+    "es": "Bloquear"
+  },
+  "moderationBlockHint": {
+    "pt": "{name} some dos rankings para você e não consegue mais te convidar, desafiar ou reconhecer.",
+    "en": "{name} disappears from your rankings and can no longer invite, challenge or recognize you.",
+    "es": "{name} desaparece de tus rankings y ya no puede invitarte, desafiarte ni reconocerte.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "moderationUnblock": {
+    "pt": "Desbloquear",
+    "en": "Unblock",
+    "es": "Desbloquear"
+  },
+  "moderationUnblockHint": {
+    "pt": "{name} volta a aparecer para você.",
+    "en": "{name} shows up for you again.",
+    "es": "{name} vuelve a aparecer para ti.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "moderationReportTitle": {
+    "pt": "Denunciar {name}",
+    "en": "Report {name}",
+    "es": "Denunciar a {name}",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "moderationReasonOffensiveName": {
+    "pt": "Nome ofensivo",
+    "en": "Offensive name",
+    "es": "Nombre ofensivo"
+  },
+  "moderationReasonOffensivePhoto": {
+    "pt": "Foto imprópria",
+    "en": "Inappropriate photo",
+    "es": "Foto inapropiada"
+  },
+  "moderationReasonHarassment": {
+    "pt": "Assédio ou ameaça",
+    "en": "Harassment or threat",
+    "es": "Acoso o amenaza"
+  },
+  "moderationReasonSpam": {
+    "pt": "Spam ou golpe",
+    "en": "Spam or scam",
+    "es": "Spam o estafa"
+  },
+  "moderationReasonOther": {
+    "pt": "Outro motivo",
+    "en": "Something else",
+    "es": "Otro motivo"
+  },
+  "moderationCommentHint": {
+    "pt": "Conte o que aconteceu (opcional)",
+    "en": "Tell us what happened (optional)",
+    "es": "Cuéntanos qué pasó (opcional)"
+  },
+  "moderationAlsoBlock": {
+    "pt": "Bloquear também",
+    "en": "Also block",
+    "es": "Bloquear también"
+  },
+  "moderationSend": {
+    "pt": "Enviar denúncia",
+    "en": "Send report",
+    "es": "Enviar denuncia"
+  },
+  "moderationReportSent": {
+    "pt": "Denúncia enviada. Obrigado por cuidar da caravana.",
+    "en": "Report sent. Thanks for looking out for the caravan.",
+    "es": "Denuncia enviada. Gracias por cuidar la caravana."
+  },
+  "moderationReportFailed": {
+    "pt": "Não deu para enviar. Tente de novo.",
+    "en": "Couldn't send it. Try again.",
+    "es": "No se pudo enviar. Inténtalo de nuevo."
+  },
+  "moderationBlockConfirm": {
+    "pt": "Bloquear {name}",
+    "en": "Block {name}",
+    "es": "Bloquear a {name}",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "moderationBlocked": {
+    "pt": "Você bloqueou {name}.",
+    "en": "You blocked {name}.",
+    "es": "Bloqueaste a {name}.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "moderationUnblocked": {
+    "pt": "Você desbloqueou {name}.",
+    "en": "You unblocked {name}.",
+    "es": "Desbloqueaste a {name}.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "moderationBlockFailed": {
+    "pt": "Não deu para bloquear. Tente de novo.",
+    "en": "Couldn't block. Try again.",
+    "es": "No se pudo bloquear. Inténtalo de nuevo."
+  },
+  "moderationUnknownName": {
+    "pt": "Peregrino",
+    "en": "Pilgrim",
+    "es": "Peregrino"
+  },
+  "settingsBlockedPeople": {
+    "pt": "Pessoas bloqueadas",
+    "en": "Blocked people",
+    "es": "Personas bloqueadas"
+  },
+  "settingsBlockedPeopleSubtitle": {
+    "pt": "{count, plural, =0{Ninguém bloqueado} =1{1 pessoa} other{{count} pessoas}}",
+    "en": "{count, plural, =0{No one blocked} =1{1 person} other{{count} people}}",
+    "es": "{count, plural, =0{Nadie bloqueado} =1{1 persona} other{{count} personas}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "settingsBlockedEmpty": {
+    "pt": "Você não bloqueou ninguém.",
+    "en": "You haven't blocked anyone.",
+    "es": "No has bloqueado a nadie."
+  },
+  "contentNameNotAllowed": {
+    "pt": "Esse nome não pode ser usado. Escolha outro.",
+    "en": "That name can't be used. Pick another one.",
+    "es": "Ese nombre no se puede usar. Elige otro."
+  },
+  "contentTextNotAllowed": {
+    "pt": "Esse recado tem palavras que não podem ser usadas.",
+    "en": "That note has words that can't be used.",
+    "es": "Ese mensaje tiene palabras que no se pueden usar."
+  },
+  "loginTermsNotice": {
+    "pt": "Ao entrar, você aceita os termos de uso e a política de privacidade. Não há tolerância para conteúdo ofensivo.",
+    "en": "By signing in, you accept the terms of use and the privacy policy. Offensive content is not tolerated.",
+    "es": "Al entrar, aceptas los términos de uso y la política de privacidad. No se tolera contenido ofensivo."
+  },
+  "legalTerms": {
+    "pt": "Termos de uso",
+    "en": "Terms of use",
+    "es": "Términos de uso"
+  },
+  "legalPrivacy": {
+    "pt": "Privacidade",
+    "en": "Privacy",
+    "es": "Privacidad"
+  },
+  "settingsLegalSubtitle": {
+    "pt": "Regras de convivência e uso dos dados",
+    "en": "Community rules and how data is used",
+    "es": "Reglas de convivencia y uso de datos"
+  }
+}

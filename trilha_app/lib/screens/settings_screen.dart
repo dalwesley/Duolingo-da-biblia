@@ -18,12 +18,14 @@ import '../services/companion_service.dart';
 import '../services/corner_service.dart';
 import '../services/league_service.dart';
 import '../services/medal_engagement_service.dart';
+import '../services/moderation_service.dart';
 import '../services/notification_service.dart';
 import '../services/progress_service.dart';
 import '../services/sound_service.dart';
 import '../services/subscription_service.dart';
 import '../services/sync_service.dart';
 import '../theme/app_theme.dart';
+import '../utils/content_filter.dart';
 import '../utils/appearance.dart';
 import '../widgets/relic_panel.dart';
 import '../widgets/app_sheet.dart';
@@ -421,6 +423,15 @@ class _SettingsScreenState extends State<SettingsScreen>
 
   void _saveName(ProgressService progress) {
     FocusScope.of(context).unfocus();
+    if (!ContentFilter.isAllowed(_nameController.text)) {
+      showAppToastFor(
+        context,
+        message: context.l10n.contentNameNotAllowed,
+        glyph: CinematicGlyph.wrong,
+        tone: AppToastTone.warn,
+      );
+      return;
+    }
     progress.setUserName(_nameController.text);
     setState(() => _nameDirty = false);
     ActHaptics.light();
@@ -615,7 +626,8 @@ class _SettingsScreenState extends State<SettingsScreen>
 
   Widget _passportCard(ProgressService progress, AppearanceStyle a) {
     final backend = context.watch<BackendService>();
-    final plus = context.watch<SubscriptionService>().isPeregrinoPlus;
+    final sub = context.watch<SubscriptionService>();
+    final plus = sub.isPeregrinoPlus;
     final signedIn = backend.isSignedIn;
     return GlassCard(
       glow: 0.6,
@@ -653,21 +665,23 @@ class _SettingsScreenState extends State<SettingsScreen>
             onOpenProfile: widget.onOpenProfile,
             onSaveName: () => _saveName(progress),
           ),
-          const SizedBox(height: AppSpace.lg),
-          _PlusStrip(
-            plus: plus,
-            onTap: () => Navigator.push(
-              context,
-              MaterialPageRoute<void>(builder: (_) => const PaywallScreen()),
+          // App grátis por enquanto: sem chave da RevenueCat, sem faixa.
+          if (sub.isConfigured) ...[
+            const SizedBox(height: AppSpace.lg),
+            _PlusStrip(
+              plus: plus,
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute<void>(builder: (_) => const PaywallScreen()),
+              ),
             ),
-          ),
+          ],
         ],
       ),
     );
   }
 
   Future<void> _signOutGoogle(BackendService backend) async {
-    final progress = context.read<ProgressService>();
     final ok = await backend.signOutGoogle();
     if (!mounted) return;
     if (!ok) {
@@ -679,6 +693,45 @@ class _SettingsScreenState extends State<SettingsScreen>
       );
       return;
     }
+    await _leaveToLogin();
+  }
+
+  Future<void> _confirmDeleteAccount(BackendService backend) async {
+    MedalEngagementService.instance.cancelPending();
+    ScaffoldMessenger.of(context).clearSnackBars();
+    final confirmed = await showDeleteAccountSheet(
+      context,
+      subscriptionNote: context.read<SubscriptionService>().isConfigured,
+    );
+    if (!confirmed || !mounted) return;
+
+    final result = await backend.deleteAccount();
+    if (!mounted) return;
+    if (!result.ok) {
+      // Sem erro = a pessoa fechou o login de confirmação.
+      if (result.error != null) {
+        showAppToastFor(
+          context,
+          message: result.error!,
+          glyph: CinematicGlyph.wrong,
+          tone: AppToastTone.warn,
+        );
+      }
+      return;
+    }
+    // O toast sai depois da troca de tela — guarda o messenger da raiz.
+    final messenger = ScaffoldMessenger.of(context);
+    final done = context.l10n.deleteAccountDone;
+    await context.read<SubscriptionService>().logOut();
+    if (!mounted) return;
+    // Zera a memória e o espelho local da conta apagada.
+    await _leaveToLogin();
+    showAppToast(messenger, message: done);
+  }
+
+  /// Volta à tela de entrar sem herdar nada da conta que saiu.
+  Future<void> _leaveToLogin() async {
+    final progress = context.read<ProgressService>();
     // O reset zera capítulos e dispara a checagem de medalhas.
     // Sem isso, a folha de conquista abre na tela de entrar.
     MedalEngagementService.instance.cancelPending();
@@ -915,6 +968,16 @@ class _SettingsScreenState extends State<SettingsScreen>
         if (backend.isSignedIn) ...[
           _navRow(
             a,
+            context.l10n.settingsBlockedPeople,
+            context.l10n.settingsBlockedPeopleSubtitle(
+              context.watch<ModerationService>().blocked.length,
+            ),
+            glyph: CinematicGlyph.lock,
+            onTap: _openBlockedSheet,
+          ),
+          const _SettingsDivider(compact: true),
+          _navRow(
+            a,
             context.l10n.settingsSignOut,
             context.l10n.settingsSignOutSubtitle,
             glyph: CinematicGlyph.back,
@@ -933,7 +996,85 @@ class _SettingsScreenState extends State<SettingsScreen>
           labelColor: AppRoles.risk,
           onTap: () => _confirmResetProgress(progress),
         ),
+        if (backend.isSignedIn) ...[
+          const _SettingsDivider(compact: true),
+          _navRow(
+            a,
+            context.l10n.settingsDeleteAccount,
+            context.l10n.settingsDeleteAccountSubtitle,
+            glyph: CinematicGlyph.close,
+            accent: AppRoles.risk,
+            labelColor: AppRoles.risk,
+            onTap: backend.isGoogleBusy
+                ? null
+                : () => _confirmDeleteAccount(backend),
+          ),
+        ],
       ],
+    );
+  }
+
+  /// Quem eu bloqueei, com desbloquear ao lado de cada nome.
+  Future<void> _openBlockedSheet() {
+    return _openPickerSheet(
+      eyebrow: context.l10n.settingsAccount,
+      title: context.l10n.settingsBlockedPeople,
+      subtitle: context.l10n.moderationReportHint,
+      glyph: CinematicGlyph.lock,
+      body: (_) => Builder(
+        builder: (ctx) {
+          final a = Appearance.of(ctx);
+          final moderation = ctx.watch<ModerationService>();
+          final people = moderation.blocked.entries.toList()
+            ..sort((x, y) => x.value.toLowerCase().compareTo(y.value.toLowerCase()));
+          if (people.isEmpty) {
+            return Text(
+              ctx.l10n.settingsBlockedEmpty,
+              textAlign: TextAlign.center,
+              style: AppTypography.body(size: 14, color: a.textSecondary),
+            );
+          }
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              for (final person in people)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: AppSpace.sm),
+                  child: Row(
+                    children: [
+                      UserAvatar(
+                        name: person.value,
+                        seed: person.key,
+                        style: PortraitStyle.letter,
+                        radius: AppMetrics.avatarSm,
+                      ),
+                      const SizedBox(width: AppSpace.md),
+                      Expanded(
+                        child: Text(
+                          person.value.isEmpty
+                              ? ctx.l10n.moderationUnknownName
+                              : person.value,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: AppTypography.body(
+                            size: 14,
+                            weight: FontWeight.w700,
+                            color: a.text,
+                          ),
+                        ),
+                      ),
+                      TextCta(
+                        label: ctx.l10n.moderationUnblock,
+                        onTap: () => moderation.unblock(person.key),
+                      ),
+                    ],
+                  ),
+                ),
+            ],
+          );
+        },
+      ),
     );
   }
 
@@ -1082,6 +1223,22 @@ class _SettingsScreenState extends State<SettingsScreen>
           context.l10n.settingsAboutPageSubtitle,
           glyph: CinematicGlyph.path,
           onTap: openAboutPage,
+        ),
+        const _SettingsDivider(compact: true),
+        _navRow(
+          a,
+          context.l10n.legalTerms,
+          context.l10n.settingsLegalSubtitle,
+          glyph: CinematicGlyph.scroll,
+          onTap: () => openSitePage(termsPageUrl),
+        ),
+        const _SettingsDivider(compact: true),
+        _navRow(
+          a,
+          context.l10n.legalPrivacy,
+          context.l10n.settingsLegalSubtitle,
+          glyph: CinematicGlyph.shield,
+          onTap: () => openSitePage(privacyPageUrl),
         ),
         const SizedBox(height: AppSpace.lg),
         CopperCta(
@@ -1328,6 +1485,19 @@ class _ProfileHeader extends StatelessWidget {
                     ),
                     decoration: InputDecoration(
                       counterText: '',
+                      // Sem o lápis o nome parecia texto fixo.
+                      suffixIcon: nameDirty
+                          ? null
+                          : CinematicIcon(
+                              glyph: CinematicGlyph.pencil,
+                              size: AppMetrics.iconSm,
+                              accent: a.textFaint,
+                              framed: false,
+                            ),
+                      suffixIconConstraints: const BoxConstraints(
+                        minWidth: 24,
+                        minHeight: 24,
+                      ),
                       hintText: context.l10n.settingsYourName,
                       hintStyle: AppTypography.display(
                         size: 20,

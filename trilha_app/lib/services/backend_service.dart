@@ -660,6 +660,111 @@ class BackendService extends ChangeNotifier {
     }
   }
 
+  /// Exclui a conta (App Store 5.1.1(v)) e remove o usuário do Auth. A Cloud
+  /// Function `onAuthUserDelete` apaga o rastro no Firestore.
+  ///
+  /// Login de novo só quando precisa: com Apple, sempre (o código do login
+  /// revoga o token, exigência da Apple); com Google, só se o Firebase
+  /// recusar por sessão antiga (`requires-recent-login`).
+  /// `ok: false` sem `error` = a pessoa cancelou o login.
+  Future<AuthSignInResult> deleteAccount() async {
+    final user = currentUser;
+    if (!_firebaseReady || user == null) {
+      return AuthSignInResult(
+        ok: false,
+        error: L10n.current.deleteAccountFailed,
+      );
+    }
+    if (_googleBusy) {
+      return AuthSignInResult(ok: false, error: L10n.current.authLoginInProgress);
+    }
+
+    _googleBusy = true;
+    lastError = null;
+    notifyListeners();
+
+    try {
+      final useApple = isAppleSignedIn &&
+          (!isGoogleSignedIn || defaultTargetPlatform == TargetPlatform.iOS);
+      final uid = user.uid;
+
+      // Save pendente recriaria users/{uid} depois do delete.
+      _debounce?.cancel();
+      _saveGeneration++;
+
+      if (useApple) {
+        final cred = await user.reauthenticateWithProvider(AppleAuthProvider());
+        final code = cred.additionalUserInfo?.authorizationCode;
+        if (code != null && code.isNotEmpty) {
+          try {
+            await FirebaseAuth.instance.revokeTokenWithAuthorizationCode(code);
+          } catch (e) {
+            _authLog('deleteAccount: revoke Apple falhou: $e');
+          }
+        }
+        await user.delete();
+      } else {
+        try {
+          await user.delete();
+        } on FirebaseAuthException catch (e) {
+          if (e.code != 'requires-recent-login') rethrow;
+          _authLog('deleteAccount: sessão antiga — pede o Google de novo');
+          if (!await _reauthenticateWithGoogle(user)) {
+            lastError = L10n.current.authMissingIdToken;
+            return AuthSignInResult(ok: false, error: lastError);
+          }
+          await user.delete();
+        }
+      }
+
+      if (_googleInitialized) {
+        try {
+          await _google.signOut();
+        } catch (_) {}
+      }
+      await FirebaseAuth.instance.signOut();
+      _applyUser(null);
+      unawaited(AnalyticsService.instance.setUserId(null));
+      _authLog('deleteAccount ok uid=$uid');
+      return const AuthSignInResult(ok: true);
+    } on GoogleSignInException catch (e) {
+      _authLog('deleteAccount Google ${e.code.name}');
+      if (e.code == GoogleSignInExceptionCode.canceled) {
+        return const AuthSignInResult(ok: false);
+      }
+      lastError = L10n.current.deleteAccountFailed;
+      return AuthSignInResult(ok: false, error: lastError);
+    } on FirebaseAuthException catch (e) {
+      _authLog('deleteAccount FirebaseAuthException ${e.code}: ${e.message}');
+      if (e.code == 'canceled' || e.code == 'web-context-canceled') {
+        return const AuthSignInResult(ok: false);
+      }
+      lastError = e.code == 'user-mismatch'
+          ? L10n.current.deleteAccountWrongUser
+          : _authErrorMessage(e);
+      return AuthSignInResult(ok: false, error: lastError);
+    } catch (e, st) {
+      _authLog('deleteAccount unexpected: $e\n$st');
+      lastError = L10n.current.deleteAccountFailed;
+      return AuthSignInResult(ok: false, error: lastError);
+    } finally {
+      _googleBusy = false;
+      notifyListeners();
+    }
+  }
+
+  /// Confirma a identidade com o Google. `false` = sem idToken.
+  Future<bool> _reauthenticateWithGoogle(User user) async {
+    await _ensureGoogleSignInInitialized();
+    final googleUser = await _google.authenticate();
+    final idToken = googleUser.authentication.idToken;
+    if (idToken == null || idToken.isEmpty) return false;
+    await user.reauthenticateWithCredential(
+      GoogleAuthProvider.credential(idToken: idToken),
+    );
+    return true;
+  }
+
   static String _authErrorMessage(FirebaseAuthException e) {
     final msg = (e.message ?? '').toLowerCase();
     final looksLikeNetwork =

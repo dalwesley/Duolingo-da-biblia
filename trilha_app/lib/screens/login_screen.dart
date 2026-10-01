@@ -15,6 +15,7 @@ import '../utils/appearance.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/stway_brand.dart';
 import '../widgets/cinematic_icon.dart';
+import '../widgets/coming_soon_trails_card.dart';
 import '../widgets/ui_primitives.dart';
 import 'main_shell.dart';
 import 'onboarding_screen.dart';
@@ -190,22 +191,20 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               const SizedBox(height: 14),
               const StwayTagline(size: 11),
-              const SizedBox(height: AppSpace.xxl),
-              Text(
-                preparing
-                    ? context.l10n.splashPreparing
-                    : context.l10n.loginTitle,
-                textAlign: TextAlign.center,
-                style: AppTypography.display(size: 28),
-              ),
-              const SizedBox(height: AppSpace.md),
-              Text(
-                preparing
-                    ? context.l10n.loginLoadingBody
-                    : context.l10n.loginBody,
-                textAlign: TextAlign.center,
-                style: AppTypography.body(color: a.textSecondary),
-              ),
+              if (preparing) ...[
+                const SizedBox(height: AppSpace.xxl),
+                Text(
+                  context.l10n.splashPreparing,
+                  textAlign: TextAlign.center,
+                  style: AppTypography.display(size: 28),
+                ),
+                const SizedBox(height: AppSpace.md),
+                Text(
+                  context.l10n.loginLoadingBody,
+                  textAlign: TextAlign.center,
+                  style: AppTypography.body(color: a.textSecondary),
+                ),
+              ],
               const Spacer(flex: 3),
               if (_error != null) ...[
                 GlassCard(
@@ -282,15 +281,30 @@ class _LoginScreenState extends State<LoginScreen> {
                   ],
                 ),
               ),
+              // Aceite dos termos (App Store 1.2): entrar = concordar.
               const SizedBox(height: AppSpace.lg),
               Text(
-                context.l10n.loginRequired,
+                context.l10n.loginTermsNotice,
                 textAlign: TextAlign.center,
-                style: AppTypography.label(
+                style: AppTypography.body(
                   size: 11,
-                  letterSpacing: 0,
+                  height: 1.35,
                   color: a.textFaint,
                 ),
+              ),
+              Wrap(
+                alignment: WrapAlignment.center,
+                spacing: AppSpace.md,
+                children: [
+                  TextCta(
+                    label: context.l10n.legalTerms,
+                    onTap: () => openSitePage(termsPageUrl),
+                  ),
+                  TextCta(
+                    label: context.l10n.legalPrivacy,
+                    onTap: () => openSitePage(privacyPageUrl),
+                  ),
+                ],
               ),
               if (_versionLabel != null) ...[
                 const SizedBox(height: AppSpace.md),
