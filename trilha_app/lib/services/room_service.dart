@@ -26,6 +26,9 @@ class RoomService extends ChangeNotifier {
   List<RoomInvite> invites = const [];
   bool loading = false;
   String? lastError;
+
+  /// A sala salva não abriu por falha de rede (o código continua guardado).
+  bool loadFailed = false;
   bool _loaded = false;
   StreamSubscription<QuerySnapshot<Map<String, dynamic>>>? _inviteSub;
   String? _listeningUid;
@@ -247,8 +250,20 @@ class RoomService extends ChangeNotifier {
   Future<void> openRoom(String code, {ProgressService? progress}) async {
     if (!backend.isActive) return;
     loading = true;
+    lastError = null;
     notifyListeners();
-    final room = await backend.fetchRoom(code);
+    final StudyRoom? room;
+    try {
+      room = await backend.fetchRoom(code);
+    } catch (_) {
+      // Rede caiu: não é "perdeu o grupo" — guarda o código e deixa tentar.
+      lastError = L10n.current.roomErrorLoad;
+      loadFailed = true;
+      loading = false;
+      notifyListeners();
+      return;
+    }
+    loadFailed = false;
     if (room == null) {
       activeRoom = null;
       members = const [];

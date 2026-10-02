@@ -131,6 +131,9 @@ class AppLocalizationsEs extends AppLocalizations {
   String get bibleIntroWho => 'Quién';
 
   @override
+  String get bibleLoadError => 'No fue posible abrir la Biblia.';
+
+  @override
   String get bibleNewTestament => 'Nuevo Testamento';
 
   @override
@@ -883,6 +886,10 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get companionErrorInvalidCode =>
       'Código inválido o la compañía ya está completa.';
+
+  @override
+  String get companionErrorLoad =>
+      'No se pudo actualizar tu compañía. Revisa la conexión.';
 
   @override
   String get companionErrorSignInCreate =>
@@ -6687,6 +6694,9 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get roomErrorInvalidCode => 'Código inválido o grupo no encontrado.';
+
+  @override
+  String get roomErrorLoad => 'No se pudo abrir tu grupo. Revisa la conexión.';
 
   @override
   String get roomErrorLostGroup => 'No encontramos el grupo en el que estabas.';

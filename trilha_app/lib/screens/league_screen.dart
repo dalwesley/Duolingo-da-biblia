@@ -945,6 +945,20 @@ class _LeagueScreenState extends State<LeagueScreen>
 
     final incoming = rooms.incoming;
 
+    // Sala salva que não abriu: sem "criar/entrar" — trocaria de grupo.
+    if (!rooms.hasRoom && rooms.loadFailed) {
+      return [
+        _reveal(
+          1,
+          InlineNotice(
+            message: rooms.lastError ?? context.l10n.roomErrorLoad,
+            busy: rooms.loading,
+            onRetry: () => context.read<RoomService>().syncIfNeeded(),
+          ),
+        ),
+      ];
+    }
+
     if (!rooms.hasRoom) {
       return [
         for (final invite in incoming) ...[

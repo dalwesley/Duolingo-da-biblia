@@ -154,6 +154,11 @@ class BibleService {
   /// Troca a tradução ativa. Cache por id — não descarrega as outras.
   Future<void> setTranslation(String id) async {
     final next = byId(id);
+    debugPrint(
+      '[STWAY:Bible] setTranslation($id) → ${next.id} '
+      'available=${next.available} current=$_translationId '
+      'loaded=${_loaded.keys.toList()}',
+    );
     if (!next.available) return;
     if (_translationId == next.id && _loaded.containsKey(next.id)) return;
     _translationId = next.id;
@@ -170,20 +175,41 @@ class BibleService {
     }
     final cached = _loaded[useId];
     if (cached != null) return cached;
+    debugPrint(
+      '[STWAY:Bible] books($useId) '
+      '${_loading.containsKey(useId) ? 'joins pending load' : 'starts load'}',
+    );
     // Uma leitura por tradução, mesmo com vários pedidos simultâneos.
     return _loading[useId] ??= _decode(useId).then((list) {
       _loaded[useId] = list;
       return list;
-    }).whenComplete(() => _loading.remove(useId));
+    }, onError: (Object e, StackTrace st) {
+      debugPrint('[STWAY:Bible] books($useId) failed: $e\n$st');
+      throw e;
+    }).whenComplete(() {
+      // Bloco, não arrow: `remove` devolve este mesmo future, e
+      // whenComplete esperaria por ele — quem entrou na fila travava.
+      _loading.remove(useId);
+    });
   }
 
   Future<List<BibleBook>> _decode(String id) async {
     // rootBundle só no isolate principal; o parse (~4 MB) vai para outro.
+    final sw = Stopwatch()..start();
     final raw = await rootBundle.loadString(
       byId(id).assetPath!,
       cache: false,
     );
-    return compute(_parseBooks, raw);
+    debugPrint(
+      '[STWAY:Bible] decode($id) asset ${raw.length} chars '
+      'in ${sw.elapsedMilliseconds}ms',
+    );
+    final list = await compute(_parseBooks, raw);
+    debugPrint(
+      '[STWAY:Bible] decode($id) parsed ${list.length} books '
+      'in ${sw.elapsedMilliseconds}ms',
+    );
+    return list;
   }
 
   static String _norm(String s) => _normalize(s);

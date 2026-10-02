@@ -1572,6 +1572,7 @@ class BackendService extends ChangeNotifier {
     }
   }
 
+  /// `null` só quando a sala não existe mais. Falha de rede lança.
   Future<StudyRoom?> fetchRoom(String code) async {
     if (!isActive) return null;
     final normalized = code.trim().toUpperCase();
@@ -1581,7 +1582,7 @@ class BackendService extends ChangeNotifier {
       return StudyRoom.fromMap(normalized, doc.data()!);
     } catch (e) {
       debugPrint('Falha ao buscar sala: $e');
-      return null;
+      rethrow;
     }
   }
 
@@ -2238,6 +2239,8 @@ class BackendService extends ChangeNotifier {
     }
   }
 
+  /// `null` só quando a companhia não existe mais ou não é do usuário.
+  /// Falha de rede lança — quem chama não pode confundir com "acabou".
   Future<WalkCompanion?> fetchCompanion(String code) async {
     if (!isActive) return null;
     final normalized = code.trim().toUpperCase();
@@ -2249,9 +2252,11 @@ class BackendService extends ChangeNotifier {
       final guestId = data['guestId'] as String?;
       if (hostId != _uid && guestId != _uid) return null;
       return _companionFromDoc(normalized, data);
-    } catch (e) {
+    } on FirebaseException catch (e) {
+      // As regras negam leitura a quem não é host nem guest: saiu da dupla.
+      if (e.code == 'permission-denied') return null;
       debugPrint('Falha ao buscar companhia: $e');
-      return null;
+      rethrow;
     }
   }
 

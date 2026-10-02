@@ -268,6 +268,12 @@ abstract class AppLocalizations {
   /// **'Quem'**
   String get bibleIntroWho;
 
+  /// No description provided for @bibleLoadError.
+  ///
+  /// In pt, this message translates to:
+  /// **'Não foi possível abrir a Bíblia.'**
+  String get bibleLoadError;
+
   /// No description provided for @bibleNewTestament.
   ///
   /// In pt, this message translates to:
@@ -1479,6 +1485,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Código inválido ou companhia já está completa.'**
   String get companionErrorInvalidCode;
+
+  /// No description provided for @companionErrorLoad.
+  ///
+  /// In pt, this message translates to:
+  /// **'Não deu para atualizar sua companhia. Confira a internet.'**
+  String get companionErrorLoad;
 
   /// No description provided for @companionErrorSignInCreate.
   ///
@@ -10328,6 +10340,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Código inválido ou grupo não encontrado.'**
   String get roomErrorInvalidCode;
+
+  /// No description provided for @roomErrorLoad.
+  ///
+  /// In pt, this message translates to:
+  /// **'Não deu para abrir seu grupo. Confira a internet.'**
+  String get roomErrorLoad;
 
   /// No description provided for @roomErrorLostGroup.
   ///

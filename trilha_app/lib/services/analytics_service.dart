@@ -25,7 +25,11 @@ class AnalyticsService {
         }
       };
       PlatformDispatcher.instance.onError = (error, stack) {
-        if (!kDebugMode) {
+        // Devolver true marca o erro como tratado: no debug, sem este print,
+        // falhas async somem sem rastro.
+        if (kDebugMode) {
+          debugPrint('Uncaught async error: $error\n$stack');
+        } else {
           FirebaseCrashlytics.instance.recordError(error, stack, fatal: true);
         }
         return true;

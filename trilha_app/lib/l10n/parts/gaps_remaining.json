@@ -222,6 +222,11 @@
     "en": "Sign in with Google to join a companion.",
     "es": "Entra con Google para unirte a una compañía."
   },
+  "companionErrorLoad": {
+    "pt": "Não deu para atualizar sua companhia. Confira a internet.",
+    "en": "Couldn't update your companion. Check your connection.",
+    "es": "No se pudo actualizar tu compañía. Revisa la conexión."
+  },
   "companionErrorInvalidCode": {
     "pt": "Código inválido ou companhia já está completa.",
     "en": "Invalid code or the companion pair is already full.",
@@ -367,6 +372,11 @@
     "pt": "Código inválido ou grupo não encontrado.",
     "en": "Invalid code or group not found.",
     "es": "Código inválido o grupo no encontrado."
+  },
+  "roomErrorLoad": {
+    "pt": "Não deu para abrir seu grupo. Confira a internet.",
+    "en": "Couldn't open your group. Check your connection.",
+    "es": "No se pudo abrir tu grupo. Revisa la conexión."
   },
   "roomErrorLostGroup": {
     "pt": "Não achamos o grupo em que você estava.",

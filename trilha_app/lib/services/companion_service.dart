@@ -120,38 +120,49 @@ class CompanionService extends ChangeNotifier {
       return;
     }
     if (!backend.isActive) {
-      companions = [
-        for (final c in codes)
-          WalkCompanion(
-            code: c,
-            displayName: 'Companheiro',
-            sharedDays: 0,
-            iWalkedToday: false,
-            theyWalkedToday: false,
-            awaitingPartner: true,
-            isHost: true,
-          ),
-      ];
+      companions = [for (final c in codes) _placeholder(c)];
       _cloudSynced = false;
       notifyListeners();
       return;
     }
     loading = true;
+    lastError = null;
     notifyListeners();
     final out = <WalkCompanion>[];
     final valid = <String>[];
+    var failed = false;
     for (final code in codes) {
-      final c = await backend.fetchCompanion(code);
-      if (c == null) continue;
-      out.add(c);
+      try {
+        final c = await backend.fetchCompanion(code);
+        if (c == null) continue;
+        out.add(c);
+      } catch (_) {
+        // Rede caiu: mantém o código e o último retrato da dupla.
+        failed = true;
+        out.add(
+          companions.where((c) => c.code == code).firstOrNull ??
+              _placeholder(code),
+        );
+      }
       valid.add(code);
     }
     if (valid.length != codes.length) await _saveCodes(valid);
     companions = out;
     loading = false;
-    _cloudSynced = true;
+    _cloudSynced = !failed;
+    if (failed) lastError = L10n.current.companionErrorLoad;
     notifyListeners();
   }
+
+  static WalkCompanion _placeholder(String code) => WalkCompanion(
+    code: code,
+    displayName: 'Companheiro',
+    sharedDays: 0,
+    iWalkedToday: false,
+    theyWalkedToday: false,
+    awaitingPartner: true,
+    isHost: true,
+  );
 
   Future<WalkCompanion?> createInvite(ProgressService progress) async {
     lastError = null;

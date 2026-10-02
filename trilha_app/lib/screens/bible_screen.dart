@@ -104,6 +104,7 @@ class _BibleScreenState extends State<BibleScreen> with ShellTabFreezeMixin {
   bool _searchingBusy = false;
   String? _loadedTranslationId;
   bool _reloadScheduled = false;
+  bool _loadFailed = false;
   bool _openedInitialBook = false;
   Timer? _searchDebounce;
   int _searchGen = 0;
@@ -117,6 +118,7 @@ class _BibleScreenState extends State<BibleScreen> with ShellTabFreezeMixin {
   @override
   void initState() {
     super.initState();
+    debugPrint('[STWAY:Bible] screen init');
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) _load();
     });
@@ -131,13 +133,30 @@ class _BibleScreenState extends State<BibleScreen> with ShellTabFreezeMixin {
 
   Future<void> _load() async {
     final id = context.read<ProgressService>().settings.bibleTranslationId;
-    await BibleService.instance.setTranslation(id);
-    final books = await BibleService.instance.books();
+    debugPrint('[STWAY:Bible] screen load start id=$id');
+    final List<BibleBook> books;
+    try {
+      await BibleService.instance.setTranslation(id);
+      books = await BibleService.instance.books();
+    } catch (e, st) {
+      // Sem isto a falha some e a aba fica no spinner para sempre.
+      debugPrint('[STWAY:Bible] screen load failed: $e\n$st');
+      if (!mounted) return;
+      setState(() {
+        _loadFailed = true;
+        _reloadScheduled = false;
+      });
+      return;
+    }
+    debugPrint(
+      '[STWAY:Bible] screen load ok ${books.length} books mounted=$mounted',
+    );
     if (!mounted) return;
     setState(() {
       _books = books;
       _loadedTranslationId = id;
       _reloadScheduled = false;
+      _loadFailed = false;
     });
     if (_searching && _searchCtrl.text.trim().length >= 2) {
       _scheduleSearch(_searchCtrl.text);
@@ -154,8 +173,13 @@ class _BibleScreenState extends State<BibleScreen> with ShellTabFreezeMixin {
     }
   }
 
+  void _retryLoad() {
+    setState(() => _loadFailed = false);
+    _load();
+  }
+
   void _ensureTranslation(String id) {
-    if (_loadedTranslationId == id || _reloadScheduled) return;
+    if (_loadedTranslationId == id || _reloadScheduled || _loadFailed) return;
     _reloadScheduled = true;
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) _load();
@@ -246,7 +270,33 @@ class _BibleScreenState extends State<BibleScreen> with ShellTabFreezeMixin {
 
     final books = _books;
     if (books == null) {
-      return const AppSpinner();
+      if (!_loadFailed) return const AppSpinner();
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Padding(
+            padding: EdgeInsets.fromLTRB(
+              AppSpace.screen,
+              MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
+              AppSpace.screen,
+              0,
+            ),
+            child: _rootTopBar(),
+          ),
+          Expanded(
+            child: Center(
+              child: EmptyState(
+                glyph: CinematicGlyph.book,
+                title: context.l10n.bibleLoadError,
+                action: TextCta(
+                  label: context.l10n.commonTryAgain,
+                  onTap: _retryLoad,
+                ),
+              ),
+            ),
+          ),
+        ],
+      );
     }
 
     if (_searching) {
