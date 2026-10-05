@@ -37,7 +37,6 @@ import '../widgets/companion_formed_sheet.dart';
 import '../widgets/companion_invite_confirm_sheet.dart';
 import '../widgets/companion_nudge_sheet.dart';
 import '../widgets/hero_card_atmosphere.dart';
-import '../widgets/home_brand_backdrop.dart';
 import '../widgets/icon_well.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/invite_qr_sheet.dart';
@@ -358,7 +357,6 @@ class _LeagueScreenState extends State<LeagueScreen>
   }
 
   Widget _buildRoot(BuildContext context) {
-    final style = Appearance.of(context);
     final listen = tabListens;
     final companionNudge = listen
         ? context.watch<CompanionService>().incomingNudge
@@ -371,8 +369,6 @@ class _LeagueScreenState extends State<LeagueScreen>
         : context.read<RoomService>().incoming;
     return Stack(
       children: [
-        // Trilha STWAY velada — lobby social (não cena).
-        Positioned.fill(child: HomeBrandBackdrop(style: style)),
         RefreshIndicator(
           color: AppRoles.presence,
           onRefresh: _settle,

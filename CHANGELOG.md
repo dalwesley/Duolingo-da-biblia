@@ -9,6 +9,11 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+## [1.0.35] — 2026-10-05
+
+### Changed
+- Trilha STWAY velada sobre o céu escolhido no fundo de todas as abas (Hoje, Trilhas, Bíblia, Juntos, Ajustes). Antes só o Juntos tinha; as outras mostravam só o céu. Pintada uma vez no shell, sem piscar na troca de aba
+
 ## [1.0.34] — 2026-10-05
 
 Ajustes pedidos pela revisão da App Store.

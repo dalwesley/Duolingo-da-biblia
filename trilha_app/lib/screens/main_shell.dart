@@ -26,6 +26,7 @@ import '../widgets/juntos_inbox.dart';
 import '../widgets/app_update_sheet.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/corner_burst.dart';
+import '../widgets/home_brand_backdrop.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/main_bottom_nav.dart';
 import '../widgets/shell_tab_scope.dart';
@@ -550,6 +551,15 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       mode: mode,
       style: appearance,
       extendBody: true,
+      // Trilha STWAY velada sobre o céu, igual em todas as abas — fica
+      // fora do _TabFade para não piscar na troca.
+      background: Stack(
+        fit: StackFit.expand,
+        children: [
+          AmbientAtmosphere(phase: appearance.phase),
+          HomeBrandBackdrop(style: appearance),
+        ],
+      ),
       body: _TabFade(
         index: _index,
         child: IndexedStack(
