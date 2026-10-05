@@ -9,6 +9,17 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+## [1.0.34] — 2026-10-05
+
+Ajustes pedidos pela revisão da App Store.
+
+### Changed
+- iOS: removido `audio` de `UIBackgroundModes`. A narração da Bíblia já parava ao sair do app (Guideline 2.5.4)
+
+### Fixed
+- Falha de rede não faz mais o app esquecer o grupo ou a companhia; Juntos mostra aviso com "tentar de novo"
+- Bíblia: erro ao carregar mostra tela com "tentar de novo" em vez de spinner infinito
+
 ## [1.0.33] — 2026-10-01
 
 Ajustes pedidos pela revisão da App Store.
