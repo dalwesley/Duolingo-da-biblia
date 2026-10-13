@@ -18,12 +18,16 @@ import 'ui_primitives.dart';
 Future<String?> showCompanionInvitePromptSheet(
   BuildContext context, {
   String? tomorrowTitle,
+  bool dayTwo = false,
 }) {
   final progress = context.read<ProgressService>();
   return showAppSheet<String?>(
     context,
     isDismissible: true,
-    builder: (_) => _CompanionInvitePromptSheet(tomorrowTitle: tomorrowTitle),
+    builder: (_) => _CompanionInvitePromptSheet(
+      tomorrowTitle: tomorrowTitle,
+      dayTwo: dayTwo,
+    ),
   ).whenComplete(() {
     if (progress.companionInviteOffered) return;
     unawaited(progress.markCompanionInviteOffered());
@@ -32,8 +36,12 @@ Future<String?> showCompanionInvitePromptSheet(
 
 class _CompanionInvitePromptSheet extends StatefulWidget {
   final String? tomorrowTitle;
+  final bool dayTwo;
 
-  const _CompanionInvitePromptSheet({this.tomorrowTitle});
+  const _CompanionInvitePromptSheet({
+    this.tomorrowTitle,
+    this.dayTwo = false,
+  });
 
   @override
   State<_CompanionInvitePromptSheet> createState() =>
@@ -78,11 +86,19 @@ class _CompanionInvitePromptSheetState
   @override
   Widget build(BuildContext context) {
     final scene = widget.tomorrowTitle?.trim() ?? '';
-    final body = scene.isEmpty
-        ? context.l10n.companionSheetPromptBody(
-            WalkCompanion.weekTogetherBonusSteps,
-          )
-        : context.l10n.companionSheetPromptBodyTomorrow(scene);
+    final steps = WalkCompanion.weekTogetherBonusSteps;
+    final String body;
+    final String title;
+    if (widget.dayTwo) {
+      title = context.l10n.companionSheetPromptTitleDay2;
+      body = context.l10n.companionSheetPromptBodyDay2(steps);
+    } else if (scene.isEmpty) {
+      title = context.l10n.companionSheetPromptTitle;
+      body = context.l10n.companionSheetPromptBody(steps);
+    } else {
+      title = context.l10n.companionSheetPromptTitle;
+      body = context.l10n.companionSheetPromptBodyTomorrow(scene);
+    }
 
     return AppSheetPanel(
       child: Column(
@@ -96,7 +112,7 @@ class _CompanionInvitePromptSheetState
               glowing: true,
             ),
             eyebrow: context.l10n.companionSheetEyebrow,
-            title: context.l10n.companionSheetPromptTitle,
+            title: title,
             subtitle: body,
             center: true,
           ),

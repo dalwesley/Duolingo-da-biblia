@@ -37,6 +37,8 @@ import '../widgets/immersive_background.dart';
 import '../widgets/invite_qr_sheet.dart';
 import '../widgets/mascot_bubble.dart';
 import '../widgets/relic_panel.dart';
+import '../widgets/reminder_prompt_sheet.dart';
+import '../widgets/share_insight_card.dart';
 import '../widgets/share_seal_card.dart';
 import '../widgets/share_streak_button.dart';
 import '../widgets/streak_repair_banner.dart';
@@ -89,12 +91,12 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   bool _streakUp = false;
   bool _trailComplete = false;
   int _awardedSteps = 0;
-  bool _firstLessonSession = false;
   bool _leaving = false;
   String? _medalLine;
   CharacterSeal? _newSeal;
   CornerChallenge? _closedCorner;
   final _sealShareKey = GlobalKey();
+  final _insightShareKey = GlobalKey();
   TrailDifficulty? _currentMode;
   TrailDifficulty? _nextMode;
   DifficultyMeta? _nextMeta;
@@ -286,25 +288,34 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     final progress = context.read<ProgressService>();
     final companions = context.read<CompanionService>();
     final hasPartner = companions.companions.any((c) => !c.awaitingPartner);
-    if (!_firstLessonSession ||
-        progress.companionInviteOffered ||
-        hasPartner ||
-        companions.companions.isNotEmpty) {
-      return;
+    // Companhia no 2º dia seguido — Friend Streak, não na 1ª missão.
+    if (progress.streak >= 2 &&
+        !progress.companionInviteOffered &&
+        !hasPartner &&
+        companions.companions.isEmpty) {
+      final code = await showCompanionInvitePromptSheet(
+        context,
+        tomorrowTitle: _hook?.title,
+        dayTwo: true,
+      );
+      if (!mounted) return;
+      if (code != null && code.isNotEmpty) {
+        await showInviteQrSheet(
+          context,
+          code: code,
+          title: context.l10n.celebrationInviteTitle,
+          subtitle: context.l10n.celebrationInviteSubtitle,
+          inviterName: progress.userName,
+        );
+      }
     }
-    final code = await showCompanionInvitePromptSheet(
-      context,
-      tomorrowTitle: _hook?.title,
-    );
     if (!mounted) return;
-    if (code == null || code.isEmpty) return;
-    await showInviteQrSheet(
-      context,
-      code: code,
-      title: context.l10n.celebrationInviteTitle,
-      subtitle: context.l10n.celebrationInviteSubtitle,
-      inviterName: progress.userName,
-    );
+    // Lembrete “te vejo amanhã” — horário do compromisso.
+    if (!progress.notificationsPrompted &&
+        progress.firstLessonDate != null &&
+        progress.firstLessonDate!.isNotEmpty) {
+      await showReminderPromptSheet(context);
+    }
   }
 
   @override
@@ -313,8 +324,6 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     if (!_saved) {
       _saved = true;
       final progress = context.read<ProgressService>();
-      _firstLessonSession =
-          progress.firstLessonDate == null || progress.firstLessonDate!.isEmpty;
       final firstSealEncounter =
           !widget.failed &&
           CharacterSeals.unlocksOn(
@@ -774,6 +783,21 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                   ),
                 ),
                 ConfettiOverlay(active: !widget.failed, cinematic: true),
+                if ((_todayLine ?? '').trim().isNotEmpty && !widget.failed)
+                  Positioned(
+                    left: -4000,
+                    top: 0,
+                    child: SizedBox(
+                      width: 320,
+                      child: RepaintBoundary(
+                        key: _insightShareKey,
+                        child: ShareInsightCard(
+                          insight: _todayLine!,
+                          verseRef: _hook?.hookRef,
+                        ),
+                      ),
+                    ),
+                  ),
                 SafeArea(
                   child: LayoutBuilder(
                     builder: (context, constraints) {
@@ -947,6 +971,20 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                         ),
                                       ),
                                     ] else ...[
+                                      if (!widget.failed) ...[
+                                        Text(
+                                          context.l10n.celebrationSeeYouTomorrow(
+                                            progress.settings.reminderHour,
+                                          ),
+                                          textAlign: TextAlign.center,
+                                          style: AppTypography.body(
+                                            size: 13,
+                                            weight: FontWeight.w700,
+                                            color: appearance.textSecondary,
+                                          ),
+                                        ),
+                                        const SizedBox(height: 10),
+                                      ],
                                       CopperCta(
                                         label: !_hookResolved || _hook != null
                                             ? context.l10n.celebrationBackHome
@@ -973,6 +1011,15 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                     ],
                                     _CelebrationSecondaryRow(
                                       appearance: appearance,
+                                      onShareInsight:
+                                          (_todayLine ?? '').trim().isEmpty ||
+                                              widget.failed
+                                          ? null
+                                          : () => shareInsightImage(
+                                              boundaryKey: _insightShareKey,
+                                              insight: _todayLine!,
+                                              verseRef: _hook?.hookRef,
+                                            ),
                                       onShareSeal: _newSeal == null
                                           ? null
                                           : () => shareSealImage(
@@ -980,7 +1027,8 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                               seal: _newSeal!,
                                             ),
                                       shareStreak:
-                                          _newSeal == null &&
+                                          (_todayLine ?? '').trim().isEmpty &&
+                                              _newSeal == null &&
                                               progress.streak > 0 &&
                                               !progress.showStreakRepairOffer
                                           ? ShareStreakButton(
@@ -1342,6 +1390,7 @@ class _StreakIgniteState extends State<_StreakIgnite>
 
 class _CelebrationSecondaryRow extends StatelessWidget {
   final AppearanceStyle appearance;
+  final VoidCallback? onShareInsight;
   final VoidCallback? onShareSeal;
   final Widget? shareStreak;
   final VoidCallback onHome;
@@ -1350,6 +1399,7 @@ class _CelebrationSecondaryRow extends StatelessWidget {
   const _CelebrationSecondaryRow({
     required this.appearance,
     required this.onHome,
+    this.onShareInsight,
     this.onShareSeal,
     this.shareStreak,
     this.hideHome = false,
@@ -1357,7 +1407,14 @@ class _CelebrationSecondaryRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final share = onShareSeal != null
+    final share = onShareInsight != null
+        ? TextCta(
+            label: context.l10n.celebrationShareInsight,
+            leading: CinematicGlyph.share,
+            color: appearance.textSecondary,
+            onTap: onShareInsight,
+          )
+        : onShareSeal != null
         ? TextCta(
             label: context.l10n.commonShare,
             leading: CinematicGlyph.share,

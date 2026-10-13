@@ -62,6 +62,14 @@
       "scene": "String"
     }
   },
+  "companionSheetPromptBodyDay2": {
+    "pt": "Dois dias seguidos. Estuda com uma pessoa — não com trezentos. Vocês ganham +{steps} passos na semana juntos.",
+    "en": "Two days in a row. Study with one person — not three hundred. You both get +{steps} steps for the week together.",
+    "es": "Dos días seguidos. Estudia con una persona — no con trescientos. Ganan +{steps} pasos en la semana juntos.",
+    "placeholders": {
+      "steps": "int"
+    }
+  },
   "companionSheetEyebrow": {
     "pt": "Companhia",
     "en": "Companion",
@@ -71,6 +79,11 @@
     "pt": "Chame alguém para caminhar",
     "en": "Invite someone to walk with you",
     "es": "Invita a alguien a caminar"
+  },
+  "companionSheetPromptTitleDay2": {
+    "pt": "Caminha com alguém",
+    "en": "Walk with someone",
+    "es": "Camina con alguien"
   },
   "companionSheetInviteCta": {
     "pt": "Chamar um companheiro",

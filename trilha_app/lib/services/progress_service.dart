@@ -160,6 +160,7 @@ class ProgressService extends ChangeNotifier {
   static const _keyFirstOpenAtMs = 'cohortFirstOpenAtMs';
   static const _keyNotificationsPrompted = 'notificationsPrompted';
   static const _keyCompanionInviteOffered = 'companionInviteOffered';
+  static const _keyStrongTeachOffered = 'strongTeachOffered';
   static const _keyGeloTeachSeen = 'geloTeachSeen';
   static const _keyLampsTeachSeen = 'lampsTeachSeen';
 
@@ -372,8 +373,14 @@ class ProgressService extends ChangeNotifier {
   /// Pedido de notificação já aconteceu neste aparelho (depois da 1ª celebração).
   bool notificationsPrompted = false;
 
-  /// Convite de companhia da 1ª missão já foi oferecido (aceito ou recusado).
+  /// Convite de companhia (2º dia seguido) já foi oferecido (aceito ou recusado).
   bool companionInviteOffered = false;
+
+  /// Teach de Strong na 1ª semana já foi mostrado neste aparelho.
+  bool strongTeachOffered = false;
+
+  /// Após onboarding: Home abre a 1ª cena sozinha (só em memória).
+  bool pendingOpenFirstScene = false;
 
   /// Sheet "o gelo cobriu ontem" já foi mostrado neste aparelho.
   bool geloTeachSeen = false;
@@ -523,6 +530,7 @@ class ProgressService extends ChangeNotifier {
       notificationsPrompted = firstLesson != null && firstLesson.isNotEmpty;
     }
     companionInviteOffered = prefs.getBool(_keyCompanionInviteOffered) ?? false;
+    strongTeachOffered = prefs.getBool(_keyStrongTeachOffered) ?? false;
     geloTeachSeen = prefs.getBool(_keyGeloTeachSeen) ?? false;
     lampsTeachSeen = prefs.getBool(_keyLampsTeachSeen) ?? false;
     nextSceneTitle = prefs.getString(_keyNextSceneTitle);
@@ -531,6 +539,7 @@ class ProgressService extends ChangeNotifier {
     lastEchoQuestion = prefs.getString(_keyLastEchoQuestion);
     await prefs.setBool(_keyNotificationsPrompted, notificationsPrompted);
     await prefs.setBool(_keyCompanionInviteOffered, companionInviteOffered);
+    await prefs.setBool(_keyStrongTeachOffered, strongTeachOffered);
     bibleBrowseOrder = BibleReadingOrder.fromStorage(
       prefs.getString(_keyBibleBrowseOrder),
     );
@@ -583,6 +592,7 @@ class ProgressService extends ChangeNotifier {
     await prefs.setBool(_keyNotifications, settings.notifications);
     await prefs.setBool(_keyNotificationsPrompted, notificationsPrompted);
     await prefs.setBool(_keyCompanionInviteOffered, companionInviteOffered);
+    await prefs.setBool(_keyStrongTeachOffered, strongTeachOffered);
     await prefs.setInt(_keyDailyGoal, settings.dailyGoal);
     await prefs.setInt(_keyStreakGoal, settings.streakGoal);
     await prefs.setInt(_keyReminderHour, settings.reminderHour);
@@ -862,6 +872,8 @@ class ProgressService extends ChangeNotifier {
     comebackBonusPending = false;
     notificationsPrompted = false;
     companionInviteOffered = false;
+    strongTeachOffered = false;
+    pendingOpenFirstScene = false;
     nextSceneTitle = null;
     nextSceneTease = null;
     lastInsight = null;
@@ -1565,6 +1577,26 @@ class ProgressService extends ChangeNotifier {
     await _persistSettingsLocal();
     await _save();
     notifyListeners();
+  }
+
+  Future<void> markStrongTeachOffered() async {
+    if (strongTeachOffered) return;
+    strongTeachOffered = true;
+    await _persistSettingsLocal();
+    await _save();
+    notifyListeners();
+  }
+
+  /// Marca para a Home abrir a 1ª cena após onboarding (não persiste).
+  void requestOpenFirstScene() {
+    pendingOpenFirstScene = true;
+    notifyListeners();
+  }
+
+  bool takePendingOpenFirstScene() {
+    if (!pendingOpenFirstScene) return false;
+    pendingOpenFirstScene = false;
+    return true;
   }
 
   Future<void> setNextScene({
@@ -3079,6 +3111,8 @@ class ProgressService extends ChangeNotifier {
     comebackBonusPending = false;
     notificationsPrompted = false;
     companionInviteOffered = false;
+    strongTeachOffered = false;
+    pendingOpenFirstScene = false;
     nextSceneTitle = null;
     nextSceneTease = null;
     lastInsight = null;

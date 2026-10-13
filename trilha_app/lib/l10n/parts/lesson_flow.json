@@ -29,6 +29,27 @@
   "lessonMicroSubtitle": {"pt": "Complete o verso", "en": "Complete the verse", "es": "Completa el versículo"},
   "lessonInsightSubtitle": {"pt": "O que ficou", "en": "What stayed with you", "es": "Lo que quedó"},
   "lessonPassageTitle": {"pt": "Texto da cena", "en": "Scene text", "es": "Texto de la escena"},
+  "lessonStudyRefCta": {
+    "pt": "Estudar",
+    "en": "Study",
+    "es": "Estudiar",
+    "description": "Chip na referência do palco → Strong"
+  },
+  "lessonStrongTeachTitle": {
+    "pt": "Toque na referência",
+    "en": "Tap the reference",
+    "es": "Toca la referencia"
+  },
+  "lessonStrongTeachBody": {
+    "pt": "Abra Estudar no versículo do palco. Você vê a palavra no original — sem sair da cena.",
+    "en": "Open Study on the stage verse. You see the word in the original — without leaving the scene.",
+    "es": "Abre Estudiar en el versículo del escenario. Ves la palabra en el original — sin salir de la escena."
+  },
+  "lessonStrongTeachCta": {
+    "pt": "Abrir Estudar",
+    "en": "Open Study",
+    "es": "Abrir Estudiar"
+  },
   "lessonQuestionProgress": {"pt": "Pergunta {current} de {total}", "en": "Question {current} of {total}", "es": "Pregunta {current} de {total}", "placeholders": {"current": "int", "total": "int"}},
   "lessonBackToQuestion": {"pt": "Voltar à pergunta", "en": "Back to question", "es": "Volver a la pregunta"},
   "lessonExitTitle": {"pt": "Sair da cena?", "en": "Leave the scene?", "es": "¿Salir de la escena?"},
@@ -45,6 +66,19 @@
     "en": "{count, plural, =1{~3 min · 1 question} other{~3 min · {count} questions}}",
     "es": "{count, plural, =1{~3 min · 1 pregunta} other{~3 min · {count} preguntas}}",
     "placeholders": {"count": "int"}
+  },
+  "lessonIntroQuestions": {
+    "pt": "{count, plural, =1{1 pergunta} other{{count} perguntas}}",
+    "en": "{count, plural, =1{1 question} other{{count} questions}}",
+    "es": "{count, plural, =1{1 pregunta} other{{count} preguntas}}",
+    "placeholders": {"count": "int"},
+    "description": "Contagem de perguntas na entrada da cena"
+  },
+  "lessonIntroConsult": {
+    "pt": "Você pode consultar o texto durante a cena.",
+    "en": "You can look up the text during the scene.",
+    "es": "Puedes consultar el texto durante la escena.",
+    "description": "O texto do palco segue disponível nas perguntas"
   },
   "lessonListen": {"pt": "Ouvir o texto", "en": "Listen to the text", "es": "Escuchar el texto"},
   "lessonListenStop": {"pt": "Parar", "en": "Stop", "es": "Detener"},

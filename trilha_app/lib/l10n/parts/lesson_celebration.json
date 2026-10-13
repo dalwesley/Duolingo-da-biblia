@@ -29,5 +29,18 @@
   "celebrationModeTryPrompt": {"pt": "Quer tentar as perguntas desta cena em {mode}?", "en": "Want to try this scene's questions in {mode}?", "es": "¿Quieres intentar las preguntas de esta escena en {mode}?", "placeholders": {"mode": "String"}},
   "celebrationModeReviewCta": {"pt": "Revisar uma cena em {mode}", "en": "Review a scene in {mode}", "es": "Repasa una escena en {mode}", "placeholders": {"mode": "String"}},
   "celebrationModeTryCta": {"pt": "Tentar em {mode}", "en": "Try in {mode}", "es": "Intenta en {mode}", "placeholders": {"mode": "String"}},
-  "celebrationModeSwitchCta": {"pt": "Mudar para {mode}", "en": "Switch to {mode}", "es": "Cambia a {mode}", "placeholders": {"mode": "String"}}
+  "celebrationModeSwitchCta": {"pt": "Mudar para {mode}", "en": "Switch to {mode}", "es": "Cambia a {mode}", "placeholders": {"mode": "String"}},
+  "celebrationSeeYouTomorrow": {
+    "pt": "Te vejo amanhã às {hour}h",
+    "en": "See you tomorrow at {hour}:00",
+    "es": "Te veo mañana a las {hour}h",
+    "placeholders": {"hour": "int"},
+    "description": "Compromisso emocional pós-cena com o horário do lembrete"
+  },
+  "celebrationShareInsight": {
+    "pt": "Compartilhar o Hoje:",
+    "en": "Share today's insight",
+    "es": "Compartir el Hoy:"
+  }
 }
+

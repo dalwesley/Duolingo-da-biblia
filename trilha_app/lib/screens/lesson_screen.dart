@@ -38,6 +38,7 @@ import '../screens/celebration_screen.dart';
 import '../services/tts_service.dart';
 import '../widgets/set_piece.dart';
 import '../widgets/relic_panel.dart';
+import '../widgets/verse_study_sheet.dart';
 import '../screens/difficulty_picker_screen.dart';
 
 /// Sessão única: entrada → atos → (micro) → insight → saída.
@@ -461,7 +462,7 @@ class _LessonScreenState extends State<LessonScreen>
     if (correct) {
       SoundService.instance.playCorrect();
       _combo++;
-      if (_combo >= 3) ActHaptics.success();
+      if (_combo >= 2) ActHaptics.success();
     } else {
       SoundService.instance.playWrong();
       _combo = 0;
@@ -744,6 +745,62 @@ class _LessonScreenState extends State<LessonScreen>
       _phase = _Phase.quiz;
     });
     _logExerciseStart();
+    unawaited(_maybeTeachStrong());
+  }
+
+  /// Uma vez: ensina Strong a partir da referência do palco.
+  Future<void> _maybeTeachStrong() async {
+    if (widget.practiceMode) return;
+    final progress = context.read<ProgressService>();
+    if (progress.strongTeachOffered) return;
+    final ref = (_mission?.hookRef ?? '').trim();
+    if (ref.isEmpty) return;
+    await progress.markStrongTeachOffered();
+    if (!mounted) return;
+    final open = await showAppSheet<bool>(
+      context,
+      builder: (ctx) => AppSheetPanel(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            AppSheetHeader(
+              leading: const CinematicIcon(
+                glyph: CinematicGlyph.book,
+                size: AppMetrics.iconHero,
+                accent: AppRoles.chrome,
+                glowing: true,
+              ),
+              eyebrow: ctx.l10n.verseStudyEyebrow,
+              title: ctx.l10n.lessonStrongTeachTitle,
+              subtitle: ctx.l10n.lessonStrongTeachBody,
+              center: true,
+            ),
+            const SizedBox(height: 20),
+            CopperCta(
+              label: ctx.l10n.lessonStrongTeachCta,
+              onTap: () => Navigator.pop(ctx, true),
+              leading: CinematicGlyph.book,
+            ),
+            const SizedBox(height: 8),
+            GhostCta(
+              label: ctx.l10n.commonNotNow,
+              expanded: true,
+              onTap: () => Navigator.pop(ctx, false),
+            ),
+          ],
+        ),
+      ),
+    );
+    if (open == true && mounted) {
+      await showVerseStudyFromReference(context, ref);
+    }
+  }
+
+  Future<void> _openStrongFromRef(String reference) async {
+    final ref = reference.trim();
+    if (ref.isEmpty) return;
+    ActHaptics.tap();
+    await showVerseStudyFromReference(context, ref);
   }
 
   /// [skip]: o aluno escolheu deixar a pergunta para o fim da cena.
@@ -895,6 +952,11 @@ class _LessonScreenState extends State<LessonScreen>
     final mission = _mission!;
     final total = _itemCount.clamp(1, 999);
     final accent = _gestureChrome;
+    final modeLabel =
+        _difficultyMeta?.label ??
+        (mission.isBoss
+            ? context.l10n.lessonBoss
+            : context.l10n.lessonPractice);
 
     return Appearance(
       mode: mode,
@@ -954,17 +1016,13 @@ class _LessonScreenState extends State<LessonScreen>
                               immersive: true,
                               dark: true,
                               title: switch (_phase) {
-                                _Phase.intro => mission.title,
+                                _Phase.intro => modeLabel,
                                 _Phase.quiz => '${_questionIndex + 1}/$total',
                                 _Phase.micro => context.l10n.lessonBonus,
                                 _Phase.insight => context.l10n.commonToday,
                               },
                               subtitle: switch (_phase) {
-                                _Phase.intro =>
-                                  _difficultyMeta?.label ??
-                                      (mission.isBoss
-                                          ? context.l10n.lessonBoss
-                                          : context.l10n.lessonPractice),
+                                _Phase.intro => null,
                                 _Phase.quiz => _difficultyMeta?.label,
                                 _Phase.micro =>
                                   context.l10n.lessonMicroSubtitle,
@@ -1101,6 +1159,11 @@ class _LessonScreenState extends State<LessonScreen>
                             itemCount: total,
                             accent: accent,
                             onStart: _startQuiz,
+                            onStudyRef: () {
+                              final r = (mission.hookRef ?? '').trim();
+                              if (r.isEmpty) return;
+                              unawaited(_openStrongFromRef(r));
+                            },
                           ),
                           _Phase.insight => _InsightPanel(
                             key: const ValueKey('insight'),
@@ -1293,6 +1356,18 @@ class _PassageSheet extends StatelessWidget {
           ),
           const SizedBox(height: 12),
           MissionListenButton(verse: text, accent: accent),
+          if (reference.trim().isNotEmpty) ...[
+            const SizedBox(height: 10),
+            GhostCta(
+              label: context.l10n.lessonStudyRefCta,
+              leading: CinematicGlyph.book,
+              expanded: true,
+              onTap: () async {
+                Navigator.pop(context);
+                await showVerseStudyFromReference(context, reference);
+              },
+            ),
+          ],
           const SizedBox(height: 16),
           CopperCta(
             label: context.l10n.lessonBackToQuestion,
@@ -1358,6 +1433,7 @@ class _IntroPanel extends StatelessWidget {
   final int itemCount;
   final Color accent;
   final VoidCallback onStart;
+  final VoidCallback? onStudyRef;
 
   const _IntroPanel({
     super.key,
@@ -1365,6 +1441,7 @@ class _IntroPanel extends StatelessWidget {
     required this.itemCount,
     required this.accent,
     required this.onStart,
+    this.onStudyRef,
   });
 
   @override
@@ -1377,9 +1454,6 @@ class _IntroPanel extends StatelessWidget {
         ? verse
         : (note.isEmpty && fallbackIntro.isNotEmpty ? fallbackIntro : '');
     final a = Appearance.of(context);
-    final pulse = mission.isBoss
-        ? context.l10n.lessonIntroBossPulse(itemCount)
-        : context.l10n.lessonIntroPulse(itemCount);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: AppSpace.screen),
@@ -1387,16 +1461,38 @@ class _IntroPanel extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
-            pulse,
+            mission.title,
             textAlign: TextAlign.center,
-            style: AppTypography.body(
-              size: 13,
-              weight: FontWeight.w700,
-              color: a.textSecondary,
+            style: AppTypography.display(
+              size: 32,
+              height: 1.12,
+              color: a.text,
             ),
           ),
+          const SizedBox(height: 12),
+          Wrap(
+            alignment: WrapAlignment.center,
+            spacing: 8,
+            runSpacing: 8,
+            children: [
+              SoftBadge(
+                text: mission.isBoss
+                    ? context.l10n.lessonBoss
+                    : context.l10n.lessonDuration,
+                glyph: mission.isBoss
+                    ? CinematicGlyph.crown
+                    : CinematicGlyph.hourglass,
+                accent: AppRoles.chrome,
+              ),
+              SoftBadge(
+                text: context.l10n.lessonIntroQuestions(itemCount),
+                glyph: CinematicGlyph.scroll,
+                accent: AppRoles.chrome,
+              ),
+            ],
+          ),
           if (note.isNotEmpty) ...[
-            const SizedBox(height: 18),
+            const SizedBox(height: 16),
             Text(
               note,
               textAlign: TextAlign.center,
@@ -1404,7 +1500,7 @@ class _IntroPanel extends StatelessWidget {
                 size: 14,
                 height: 1.45,
                 weight: FontWeight.w600,
-                color: a.textSecondary,
+                color: a.text,
               ),
             ),
           ],
@@ -1412,19 +1508,34 @@ class _IntroPanel extends StatelessWidget {
             child: stageText.isEmpty
                 ? const SizedBox.shrink()
                 : Padding(
-                    padding: const EdgeInsets.only(top: 12, bottom: 10),
+                    padding: const EdgeInsets.only(top: 14, bottom: 8),
                     child: _WitnessPlate(
                       accent: accent,
                       reference: ref,
                       brandBack: true,
+                      pinTop: true,
+                      padding: const EdgeInsets.fromLTRB(18, 14, 18, 16),
+                      onStudy: ref.isEmpty ? null : onStudyRef,
                       child: Text(
                         stageText,
-                        textAlign: TextAlign.center,
-                        style: AppTypography.verse(size: 24, height: 1.5),
+                        textAlign: TextAlign.left,
+                        style: AppTypography.verse(size: 28, height: 1.45),
                       ),
                     ),
                   ),
           ),
+          if (stageText.isNotEmpty) ...[
+            Text(
+              context.l10n.lessonIntroConsult,
+              textAlign: TextAlign.center,
+              style: AppTypography.body(
+                size: 13,
+                height: 1.35,
+                color: a.textFaint,
+              ),
+            ),
+            const SizedBox(height: 12),
+          ],
           MissionListenButton(
             verse: stageText,
             insight: mission.centralInsight,
@@ -1501,31 +1612,63 @@ class _WitnessPlate extends StatelessWidget {
   final String? reference;
   final Widget child;
   final bool brandBack;
+  final VoidCallback? onStudy;
+
+  /// Texto começa no topo do card. O vazio fica embaixo, não em volta.
+  final bool pinTop;
+  final EdgeInsetsGeometry? padding;
 
   const _WitnessPlate({
     required this.accent,
     required this.child,
     this.reference,
     this.brandBack = false,
+    this.onStudy,
+    this.pinTop = false,
+    this.padding,
   });
 
   @override
   Widget build(BuildContext context) {
-    final face = _face();
+    final face = _face(context);
     if (!brandBack) return face;
     return BrandFlipCard(accent: accent, front: face);
   }
 
-  Widget _face() {
+  Widget _face(BuildContext context) {
     final ref = (reference ?? '').trim();
     return StagePlate(
       accent: accent,
+      padding: padding ?? const EdgeInsets.fromLTRB(22, 20, 22, 22),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           if (ref.isNotEmpty) ...[
-            Center(child: SectionLabel(ref, size: 13, color: accent)),
-            const SizedBox(height: 14),
+            onStudy == null
+                ? Center(child: SectionLabel(ref, size: 13, color: accent))
+                : Row(
+                    children: [
+                      Expanded(
+                        child: SectionLabel(
+                          ref,
+                          size: 13,
+                          color: accent,
+                          textAlign: TextAlign.start,
+                        ),
+                      ),
+                      const SizedBox(width: 12),
+                      GestureDetector(
+                        onTap: onStudy,
+                        behavior: HitTestBehavior.opaque,
+                        child: SoftBadge(
+                          text: context.l10n.lessonStudyRefCta,
+                          glyph: CinematicGlyph.book,
+                          accent: accent,
+                        ),
+                      ),
+                    ],
+                  ),
+            SizedBox(height: pinTop ? 10 : 14),
           ],
           Expanded(
             child: LayoutBuilder(
@@ -1536,7 +1679,9 @@ class _WitnessPlate extends StatelessWidget {
                     constraints: BoxConstraints(
                       minHeight: constraints.maxHeight,
                     ),
-                    child: Center(child: child),
+                    child: pinTop
+                        ? Align(alignment: Alignment.topCenter, child: child)
+                        : Center(child: child),
                   ),
                 );
               },

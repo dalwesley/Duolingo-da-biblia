@@ -390,6 +390,8 @@ class _OnboardingScreenState extends State<OnboardingScreen>
         ),
       );
       await progress.setHasSeenOnboarding(true);
+      // Pular/terminar → Home abre a 1ª cena sozinha (time-to-value).
+      progress.requestOpenFirstScene();
       await backend.saveNow(progress, LeagueService.weekKey(), league: league);
 
       if (!mounted) return;

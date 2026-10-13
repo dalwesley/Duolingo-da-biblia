@@ -7,6 +7,7 @@ import '../services/analytics_service.dart';
 import '../services/backend_service.dart';
 import '../services/companion_service.dart';
 import '../services/content_catalog_service.dart';
+import '../services/invite_deep_link_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
 import '../services/room_service.dart';
@@ -91,6 +92,16 @@ class _LoginScreenState extends State<LoginScreen> {
     );
     unawaited(ContentCatalogService.instance.ensureLoaded());
 
+    if (!mounted) return;
+
+    // Convite (Companhia/Grupo): pula o ritual e vai direto à 1ª cena.
+    final links = InviteDeepLinkService.instance;
+    final invited =
+        links.pendingCompanionCode != null || links.pendingRoomCode != null;
+    if (!progress.hasSeenOnboarding && invited) {
+      await progress.setHasSeenOnboarding(true);
+      progress.requestOpenFirstScene();
+    }
     if (!mounted) return;
 
     final next = progress.hasSeenOnboarding

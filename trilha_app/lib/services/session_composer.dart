@@ -494,11 +494,12 @@ class SessionComposer {
       bySlot.putIfAbsent(gestureSlot(e.type), () => []).add(e);
     }
 
+    // Toque primeiro — mão no texto (diversão); V/F em seguida.
     const preferred = <ExerciseType>[
-      ExerciseType.trueFalse,
       ExerciseType.tap,
-      ExerciseType.choice,
+      ExerciseType.trueFalse,
       ExerciseType.order,
+      ExerciseType.choice,
       ExerciseType.complete,
       ExerciseType.connect,
     ];
@@ -586,10 +587,10 @@ class SessionComposer {
     Random? rng,
   }) {
     const types = <ExerciseType>[
-      ExerciseType.trueFalse,
       ExerciseType.tap,
-      ExerciseType.choice,
+      ExerciseType.trueFalse,
       ExerciseType.order,
+      ExerciseType.choice,
       ExerciseType.complete,
       ExerciseType.connect,
     ];

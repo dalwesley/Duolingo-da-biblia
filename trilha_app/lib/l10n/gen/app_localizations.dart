@@ -1024,6 +1024,18 @@ abstract class AppLocalizations {
   /// **'Encontro'**
   String get celebrationSealKicker;
 
+  /// Compromisso emocional pós-cena com o horário do lembrete
+  ///
+  /// In pt, this message translates to:
+  /// **'Te vejo amanhã às {hour}h'**
+  String celebrationSeeYouTomorrow(int hour);
+
+  /// No description provided for @celebrationShareInsight.
+  ///
+  /// In pt, this message translates to:
+  /// **'Compartilhar o Hoje:'**
+  String get celebrationShareInsight;
+
   /// No description provided for @celebrationStatAccuracy.
   ///
   /// In pt, this message translates to:
@@ -1672,6 +1684,12 @@ abstract class AppLocalizations {
   /// **'Um companheiro. Fechem os 7 dias da semana juntos — os dois ganham +{steps} passos na jornada.'**
   String companionSheetPromptBody(int steps);
 
+  /// No description provided for @companionSheetPromptBodyDay2.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dois dias seguidos. Estuda com uma pessoa — não com trezentos. Vocês ganham +{steps} passos na semana juntos.'**
+  String companionSheetPromptBodyDay2(int steps);
+
   /// No description provided for @companionSheetPromptBodyTomorrow.
   ///
   /// In pt, this message translates to:
@@ -1683,6 +1701,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Chame alguém para caminhar'**
   String get companionSheetPromptTitle;
+
+  /// No description provided for @companionSheetPromptTitleDay2.
+  ///
+  /// In pt, this message translates to:
+  /// **'Caminha com alguém'**
+  String get companionSheetPromptTitleDay2;
 
   /// No description provided for @companionWalkedTogetherToday.
   ///
@@ -5619,11 +5643,23 @@ abstract class AppLocalizations {
   /// **'{count, plural, =1{Travessia · 1 pergunta} other{Travessia · {count} perguntas}}'**
   String lessonIntroBossPulse(int count);
 
+  /// O texto do palco segue disponível nas perguntas
+  ///
+  /// In pt, this message translates to:
+  /// **'Você pode consultar o texto durante a cena.'**
+  String get lessonIntroConsult;
+
   /// No description provided for @lessonIntroPulse.
   ///
   /// In pt, this message translates to:
   /// **'{count, plural, =1{~3 min · 1 pergunta} other{~3 min · {count} perguntas}}'**
   String lessonIntroPulse(int count);
+
+  /// Contagem de perguntas na entrada da cena
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 pergunta} other{{count} perguntas}}'**
+  String lessonIntroQuestions(int count);
 
   /// Lâmpada = vida dentro da cena
   ///
@@ -5678,6 +5714,30 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Pergunta {current} de {total}'**
   String lessonQuestionProgress(int current, int total);
+
+  /// No description provided for @lessonStrongTeachBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Abra Estudar no versículo do palco. Você vê a palavra no original — sem sair da cena.'**
+  String get lessonStrongTeachBody;
+
+  /// No description provided for @lessonStrongTeachCta.
+  ///
+  /// In pt, this message translates to:
+  /// **'Abrir Estudar'**
+  String get lessonStrongTeachCta;
+
+  /// No description provided for @lessonStrongTeachTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Toque na referência'**
+  String get lessonStrongTeachTitle;
+
+  /// Chip na referência do palco → Strong
+  ///
+  /// In pt, this message translates to:
+  /// **'Estudar'**
+  String get lessonStudyRefCta;
 
   /// Referência quando o versículo não tem referência
   ///

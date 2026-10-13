@@ -583,6 +583,14 @@ class AppLocalizationsEs extends AppLocalizations {
   String get celebrationSealKicker => 'Encuentro';
 
   @override
+  String celebrationSeeYouTomorrow(int hour) {
+    return 'Te veo mañana a las ${hour}h';
+  }
+
+  @override
+  String get celebrationShareInsight => 'Compartir el Hoy:';
+
+  @override
   String get celebrationStatAccuracy => 'Aciertos';
 
   @override
@@ -1019,12 +1027,20 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String companionSheetPromptBodyDay2(int steps) {
+    return 'Dos días seguidos. Estudia con una persona — no con trescientos. Ganan +$steps pasos en la semana juntos.';
+  }
+
+  @override
   String companionSheetPromptBodyTomorrow(String scene) {
     return 'Mañana: $scene. Invita a alguien para llegar juntos.';
   }
 
   @override
   String get companionSheetPromptTitle => 'Invita a alguien a caminar';
+
+  @override
+  String get companionSheetPromptTitleDay2 => 'Camina con alguien';
 
   @override
   String get companionWalkedTogetherToday => 'Caminaron juntos hoy';
@@ -3624,12 +3640,27 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String get lessonIntroConsult =>
+      'Puedes consultar el texto durante la escena.';
+
+  @override
   String lessonIntroPulse(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
       other: '~3 min · $count preguntas',
       one: '~3 min · 1 pregunta',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String lessonIntroQuestions(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count preguntas',
+      one: '1 pregunta',
     );
     return '$_temp0';
   }
@@ -3672,6 +3703,19 @@ class AppLocalizationsEs extends AppLocalizations {
   String lessonQuestionProgress(int current, int total) {
     return 'Pregunta $current de $total';
   }
+
+  @override
+  String get lessonStrongTeachBody =>
+      'Abre Estudiar en el versículo del escenario. Ves la palabra en el original — sin salir de la escena.';
+
+  @override
+  String get lessonStrongTeachCta => 'Abrir Estudiar';
+
+  @override
+  String get lessonStrongTeachTitle => 'Toca la referencia';
+
+  @override
+  String get lessonStudyRefCta => 'Estudiar';
 
   @override
   String get lessonVerseFallback => 'Versículo';

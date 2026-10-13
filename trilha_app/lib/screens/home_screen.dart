@@ -73,6 +73,7 @@ class _HomeScreenState extends State<HomeScreen>
   late final AnimationController _fadeIn;
   bool _comebackChecked = false;
   bool _reminderChecked = false;
+  bool _firstSceneChecked = false;
   bool _geloTeachChecked = false;
   bool _retryingCatalog = false;
   bool _offlineDialogShown = false;
@@ -209,6 +210,29 @@ class _HomeScreenState extends State<HomeScreen>
       if (_reminderChecked) return;
       _reminderChecked = true;
       showReminderPromptSheet(context);
+    });
+  }
+
+  /// Pós-onboarding: abre a 1ª cena sem esperar o toque no herói.
+  void _maybeOpenFirstScene(ProgressService progress, String? missionSlug) {
+    if (_firstSceneChecked) return;
+    if (!progress.pendingOpenFirstScene) {
+      _firstSceneChecked = true;
+      return;
+    }
+    final slug = (missionSlug ?? '').trim();
+    // Catálogo ainda carregando — tenta de novo no próximo frame.
+    if (slug.isEmpty) return;
+    if (!progress.takePendingOpenFirstScene()) {
+      _firstSceneChecked = true;
+      return;
+    }
+    _firstSceneChecked = true;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      final route = ModalRoute.of(context);
+      if (route == null || !route.isCurrent) return;
+      widget.onOpenMission(slug);
     });
   }
 
@@ -496,6 +520,7 @@ class _HomeScreenState extends State<HomeScreen>
     final goalMet = progress.dailyGoalMet;
 
     if (listen) {
+      _maybeOpenFirstScene(progress, current?.slug);
       _maybeShowComeback(progress, missionSlug: current?.slug);
       _maybePromptReminders(progress);
       _maybeTeachGelo(progress);

@@ -169,10 +169,8 @@ class CornerBoard extends StatelessWidget {
     final uid = backend.uid ?? '';
 
     if (!backend.isActive) {
-      return EmptyState(
-        glyph: CinematicGlyph.flag,
-        title: CornerCopy.boardEmptyTitle,
-        body: CornerCopy.needsCloud,
+      return const _BoardEmptyCard(
+        bodyIsCloud: true,
       );
     }
     if (corners.loading && corners.mine.isEmpty) {
@@ -184,11 +182,7 @@ class CornerBoard extends StatelessWidget {
 
     final board = CornerScoreboard.of(corners.mine, uid);
     if (board.isEmpty) {
-      return EmptyState(
-        glyph: CinematicGlyph.flag,
-        title: CornerCopy.boardEmptyTitle,
-        body: CornerCopy.boardEmptyBody,
-      );
+      return const _BoardEmptyCard();
     }
 
     final a = Appearance.of(context);
@@ -214,6 +208,25 @@ class CornerBoard extends StatelessWidget {
           _ClosedArchive(results: board.closed, uid: uid),
         ],
       ],
+    );
+  }
+}
+
+/// Vazio do desafio — ícone, título e texto no mesmo card das outras listas.
+class _BoardEmptyCard extends StatelessWidget {
+  final bool bodyIsCloud;
+
+  const _BoardEmptyCard({this.bodyIsCloud = false});
+
+  @override
+  Widget build(BuildContext context) {
+    return GlassCard(
+      padding: EdgeInsets.zero,
+      child: EmptyState(
+        glyph: CinematicGlyph.flag,
+        title: CornerCopy.boardEmptyTitle,
+        body: bodyIsCloud ? CornerCopy.needsCloud : CornerCopy.boardEmptyBody,
+      ),
     );
   }
 }

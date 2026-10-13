@@ -1691,52 +1691,65 @@ class _ExplainerSteps extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final mid = steps.length ~/ 2;
-    return Stack(
-      children: [
-        Positioned(
-          left: 40,
-          right: 40,
-          top: 19,
-          child: Container(
-            height: 1,
-            color: accent.withValues(alpha: 0.35),
-          ),
-        ),
-        Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
+    const well = 38.0;
+    // Folga para a linha parar na borda do círculo — o fill do poço é
+    // translúcido, então um fio contínuo aparece dentro do nó.
+    const gap = 3.0;
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final n = steps.length;
+        final col = n == 0 ? 0.0 : constraints.maxWidth / n;
+        final segment = col - well - gap * 2;
+        return Stack(
           children: [
-            for (var i = 0; i < steps.length; i++)
-              Expanded(
-                child: Column(
-                  children: [
-                    IconWell(
-                      size: 38,
-                      accent: i == mid ? accent : AppRoles.chrome,
-                      glowing: i == mid,
-                      child: CinematicIcon(
-                        glyph: steps[i].$1,
-                        size: AppMetrics.iconMd,
-                        accent: i == mid ? accent : AppRoles.chrome,
-                        framed: false,
-                      ),
-                    ),
-                    const SizedBox(height: 8),
-                    Text(
-                      steps[i].$2,
-                      textAlign: TextAlign.center,
-                      style: AppTypography.body(
-                        size: 12,
-                        height: 1.3,
-                        weight: FontWeight.w700,
-                        color: i == mid ? a.textSecondary : a.textFaint,
-                      ),
-                    ),
-                  ],
+            if (segment > 0)
+              for (var i = 0; i < n - 1; i++)
+                Positioned(
+                  left: col * (i + 0.5) + well / 2 + gap,
+                  top: well / 2,
+                  width: segment,
+                  height: 1,
+                  child: ColoredBox(
+                    color: accent.withValues(alpha: 0.35),
+                  ),
                 ),
-              ),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                for (var i = 0; i < steps.length; i++)
+                  Expanded(
+                    child: Column(
+                      children: [
+                        IconWell(
+                          size: well,
+                          accent: i == mid ? accent : AppRoles.chrome,
+                          glowing: i == mid,
+                          child: CinematicIcon(
+                            glyph: steps[i].$1,
+                            size: AppMetrics.iconMd,
+                            accent: i == mid ? accent : AppRoles.chrome,
+                            framed: false,
+                          ),
+                        ),
+                        const SizedBox(height: 8),
+                        Text(
+                          steps[i].$2,
+                          textAlign: TextAlign.center,
+                          style: AppTypography.body(
+                            size: 12,
+                            height: 1.3,
+                            weight: FontWeight.w700,
+                            color: i == mid ? a.textSecondary : a.textFaint,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+              ],
+            ),
           ],
-        ),
-      ],
+        );
+      },
     );
   }
 }

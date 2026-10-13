@@ -412,6 +412,16 @@
   "@celebrationSealKicker": {
     "description": "Rótulo acima do nome do personagem quando o aluno encontra um novo selo"
   },
+  "celebrationSeeYouTomorrow": "Te vejo amanhã às {hour}h",
+  "@celebrationSeeYouTomorrow": {
+    "description": "Compromisso emocional pós-cena com o horário do lembrete",
+    "placeholders": {
+      "hour": {
+        "type": "int"
+      }
+    }
+  },
+  "celebrationShareInsight": "Compartilhar o Hoje:",
   "celebrationStatAccuracy": "Acertos",
   "celebrationStatDay": "Dia",
   "@celebrationStatDay": {
@@ -690,6 +700,14 @@
       }
     }
   },
+  "companionSheetPromptBodyDay2": "Dois dias seguidos. Estuda com uma pessoa — não com trezentos. Vocês ganham +{steps} passos na semana juntos.",
+  "@companionSheetPromptBodyDay2": {
+    "placeholders": {
+      "steps": {
+        "type": "int"
+      }
+    }
+  },
   "companionSheetPromptBodyTomorrow": "Amanhã: {scene}. Chame alguém para chegar junto.",
   "@companionSheetPromptBodyTomorrow": {
     "placeholders": {
@@ -699,6 +717,7 @@
     }
   },
   "companionSheetPromptTitle": "Chame alguém para caminhar",
+  "companionSheetPromptTitleDay2": "Caminha com alguém",
   "companionWalkedTogetherToday": "Vocês caminharam juntos hoje",
   "companionWaveFor": "Você já deu o passo — acene para {name}",
   "@companionWaveFor": {
@@ -2632,8 +2651,21 @@
       }
     }
   },
+  "lessonIntroConsult": "Você pode consultar o texto durante a cena.",
+  "@lessonIntroConsult": {
+    "description": "O texto do palco segue disponível nas perguntas"
+  },
   "lessonIntroPulse": "{count, plural, =1{~3 min · 1 pergunta} other{~3 min · {count} perguntas}}",
   "@lessonIntroPulse": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "lessonIntroQuestions": "{count, plural, =1{1 pergunta} other{{count} perguntas}}",
+  "@lessonIntroQuestions": {
+    "description": "Contagem de perguntas na entrada da cena",
     "placeholders": {
       "count": {
         "type": "int"
@@ -2666,6 +2698,13 @@
         "type": "int"
       }
     }
+  },
+  "lessonStrongTeachBody": "Abra Estudar no versículo do palco. Você vê a palavra no original — sem sair da cena.",
+  "lessonStrongTeachCta": "Abrir Estudar",
+  "lessonStrongTeachTitle": "Toque na referência",
+  "lessonStudyRefCta": "Estudar",
+  "@lessonStudyRefCta": {
+    "description": "Chip na referência do palco → Strong"
   },
   "lessonVerseFallback": "Versículo",
   "@lessonVerseFallback": {
