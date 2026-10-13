@@ -1921,6 +1921,10 @@
   "@journeyBeyondHorizon": {
     "description": "Locked trail on the area path"
   },
+  "journeyInn": "Estalagem",
+  "@journeyInn": {
+    "description": "Parada entre fases no mapa da área"
+  },
   "journeyLockedHint": "Conclua a trilha anterior para liberar esta.",
   "journeyModeAhead": "{mode} à frente",
   "@journeyModeAhead": {
@@ -1939,6 +1943,15 @@
     }
   },
   "journeyNow": "Agora",
+  "journeyPhase": "Fase {nn}",
+  "@journeyPhase": {
+    "description": "Rótulo do marco de fase no mapa da área",
+    "placeholders": {
+      "nn": {
+        "type": "String"
+      }
+    }
+  },
   "journeyPlay": "Jogar",
   "@journeyPlay": {
     "description": "CTA da estação atual no mapa"

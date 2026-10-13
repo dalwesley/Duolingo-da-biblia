@@ -332,6 +332,21 @@
     "es": "Jugar",
     "description": "CTA da estação atual no mapa"
   },
+  "journeyInn": {
+    "pt": "Estalagem",
+    "en": "Inn",
+    "es": "Posada",
+    "description": "Parada entre fases no mapa da área"
+  },
+  "journeyPhase": {
+    "pt": "Fase {nn}",
+    "en": "Phase {nn}",
+    "es": "Fase {nn}",
+    "description": "Rótulo do marco de fase no mapa da área",
+    "placeholders": {
+      "nn": "String"
+    }
+  },
   "journeyBeyondHorizon": {
     "pt": "Ainda além do horizonte",
     "en": "Still beyond the horizon",

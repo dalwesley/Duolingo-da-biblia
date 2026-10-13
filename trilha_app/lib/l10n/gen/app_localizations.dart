@@ -4252,6 +4252,12 @@ abstract class AppLocalizations {
   /// **'Ainda além do horizonte'**
   String get journeyBeyondHorizon;
 
+  /// Parada entre fases no mapa da área
+  ///
+  /// In pt, this message translates to:
+  /// **'Estalagem'**
+  String get journeyInn;
+
   /// No description provided for @journeyLockedHint.
   ///
   /// In pt, this message translates to:
@@ -4275,6 +4281,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Agora'**
   String get journeyNow;
+
+  /// Rótulo do marco de fase no mapa da área
+  ///
+  /// In pt, this message translates to:
+  /// **'Fase {nn}'**
+  String journeyPhase(String nn);
 
   /// CTA da estação atual no mapa
   ///

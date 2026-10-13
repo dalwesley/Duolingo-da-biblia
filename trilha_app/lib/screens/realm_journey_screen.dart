@@ -318,9 +318,9 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
                 SliverToBoxAdapter(
                   child: Padding(
                     padding: EdgeInsets.fromLTRB(
-                      12,
+                      0,
                       4,
-                      12,
+                      0,
                       AppSpace.xxxl + bottom,
                     ),
                     child: JourneyPath(

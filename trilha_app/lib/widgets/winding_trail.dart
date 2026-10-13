@@ -3,6 +3,8 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
+import 'journey_phase_card.dart';
+
 /// Onde o nó senta na curva. Positivo = direita.
 ///
 /// Período de 8 nós, igual ao mapa do print: centro, direita, extremo,
@@ -65,12 +67,16 @@ class WindingStop extends ParentDataWidget<WindingParentData> {
   /// O traço mira o centro do filho inteiro — usado quando o nó é um card.
   final bool centerAnchor;
 
+  /// Marco de fase. O traço chega no topo e sai pela base, por baixo do card.
+  final bool gate;
+
   const WindingStop({
     super.key,
     required this.nodeSize,
     required this.passed,
     this.nodeLeading = true,
     this.centerAnchor = false,
+    this.gate = false,
     required super.child,
   });
 
@@ -94,6 +100,10 @@ class WindingStop extends ParentDataWidget<WindingParentData> {
       data.centerAnchor = centerAnchor;
       changed = true;
     }
+    if (data.gate != gate) {
+      data.gate = gate;
+      changed = true;
+    }
     if (changed) {
       final parent = renderObject.parent;
       if (parent is RenderWindingTrail) parent.markNeedsLayout();
@@ -109,6 +119,7 @@ class WindingParentData extends ContainerBoxParentData<RenderBox> {
   bool passed = false;
   bool nodeLeading = true;
   bool centerAnchor = false;
+  bool gate = false;
 }
 
 class RenderWindingTrail extends RenderBox
@@ -126,7 +137,11 @@ class RenderWindingTrail extends RenderBox
   int _waveOffset;
   final List<Offset> _anchors = [];
   final List<bool> _passed = [];
-  final List<Rect> _covers = [];
+  final List<Rect> _bounds = [];
+  final List<bool> _isStop = [];
+  final List<Rect?> _openings = [];
+  final List<Path> _covers = [];
+  bool _linkEdges = false;
 
   Color get walked => _walked;
   set walked(Color value) {
@@ -179,26 +194,39 @@ class RenderWindingTrail extends RenderBox
 
     _anchors.clear();
     _passed.clear();
+    _bounds.clear();
+    _isStop.clear();
+    _openings.clear();
     _covers.clear();
+    _linkEdges = false;
 
     // Um passo fixo entre centros. O print é uma serpente uniforme;
     // esticar um vão por causa do balão quebra o traço em pedaços.
     const pitch = 96.0;
     const clearance = 32.0;
     var centerY = boxes.isEmpty ? 0.0 : boxes.first.size.height / 2;
+    var spread = _waveOffset;
 
     for (var i = 0; i < boxes.length; i++) {
       final box = boxes[i];
       final data = box.parentData! as WindingParentData;
       final double left;
       final double nodeCx;
-      if (data.centerAnchor) {
+      if (data.gate) {
+        left = math.max(0.0, (width - box.size.width) / 2);
+        nodeCx = box.size.width / 2;
+        _linkEdges = true;
+      } else if (data.centerAnchor) {
         // O card desliza de uma borda à outra. A amplitude antiga usava o
         // tamanho do círculo e, com o card largo, tudo caía no meio.
-        final travel = math.max(0.0, width - box.size.width);
-        final shift = _cardSpread(i + _waveOffset);
-        left = travel * (shift + 1) / 2;
+        // Respiro lateral — o marco de fase (gate) ocupa a largura toda.
+        const inset = 12.0;
+        final travel = math.max(0.0, width - box.size.width - inset * 2);
+        final shift = _cardSpread(spread);
+        left = inset + travel * (shift + 1) / 2;
         nodeCx = box.size.width / 2;
+        spread++;
+        _linkEdges = true;
       } else {
         final cx = width / 2 + windingShift(i + _waveOffset) * amp;
         nodeCx = data.nodeLeading
@@ -207,18 +235,33 @@ class RenderWindingTrail extends RenderBox
         left = (cx - nodeCx)
             .clamp(0.0, math.max(0.0, width - box.size.width))
             .toDouble();
+        spread++;
       }
       final top = centerY - box.size.height / 2;
       data.offset = Offset(left, top);
+      final bounds = Rect.fromLTWH(left, top, box.size.width, box.size.height);
+      _bounds.add(bounds);
       _anchors.add(Offset(left + nodeCx, centerY));
       _passed.add(data.passed);
-      if (data.centerAnchor) {
-        _covers.add(Rect.fromLTWH(left, top, box.size.width, box.size.height));
+      _isStop.add(data.gate);
+      if (data.gate) {
+        _openings.add(bounds);
+        _covers.add(journeyPhaseTicketPath(bounds));
+      } else {
+        _openings.add(null);
+        if (data.centerAnchor) {
+          _covers.add(Path()..addRect(bounds.inflate(2)));
+        }
       }
 
       if (i + 1 < boxes.length) {
-        final nextHalf = boxes[i + 1].size.height / 2;
-        final gap = data.centerAnchor ? 44.0 : clearance;
+        final next = boxes[i + 1];
+        final nextData = next.parentData! as WindingParentData;
+        final nextHalf = next.size.height / 2;
+        final betweenPhases = data.gate || nextData.gate;
+        final gap = data.centerAnchor || data.gate
+            ? (betweenPhases ? 48.0 : 22.0)
+            : clearance;
         final minCenter = data.offset.dy + box.size.height + gap + nextHalf;
         centerY = math.max(centerY + pitch, minCenter);
       }
@@ -245,12 +288,12 @@ class RenderWindingTrail extends RenderBox
         final clip = Path()
           ..fillType = PathFillType.evenOdd
           ..addRect(offset & size);
-        for (final rect in _covers) {
-          clip.addRect(rect.inflate(2).shift(offset));
+        for (final cover in _covers) {
+          clip.addPath(cover.shift(offset), Offset.zero);
         }
         canvas.clipPath(clip);
       }
-      final cards = _covers.length == _anchors.length && _covers.length > 1;
+      final cards = _linkEdges && _bounds.length > 1;
       if (cards) {
         _strokeCards(canvas, offset, track, onlyWalked: false);
         _strokeCards(canvas, offset, walked, onlyWalked: true);
@@ -274,33 +317,92 @@ class RenderWindingTrail extends RenderBox
     final paint = Paint()
       ..color = color
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 4
+      ..strokeWidth = 3.5
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
       ..isAntiAlias = true;
 
-    for (var i = 0; i < _covers.length - 1; i++) {
+    for (var i = 0; i < _bounds.length - 1; i++) {
       if (_passed[i] != onlyWalked) continue;
-      final from = _covers[i];
-      final to = _covers[i + 1];
-      final start = Offset(from.center.dx, from.bottom) + offset;
-      final end =
-          Offset(
-            from.center.dx <= to.center.dx ? to.left : to.right,
-            to.center.dy,
-          ) +
-          offset;
-      canvas.drawPath(_dashed(_baseToSide(start, end)), paint);
+      final start = _leave(i) + offset;
+      final end = _approach(i + 1) + offset;
+      final path = _isStop[i + 1]
+          ? _intoStop(start, end)
+          : _baseToSide(start, end);
+      final shaft = _openings[i + 1];
+      if (shaft != null) {
+        path.lineTo(shaft.center.dx + offset.dx, shaft.bottom + offset.dy);
+      }
+      canvas.drawPath(_dashed(path), paint);
     }
   }
 
-  /// Desce reto da base e chega deitado na lateral.
+  /// Base do card — no marco de fase, o centro da base.
+  Offset _leave(int i) {
+    final shaft = _openings[i];
+    if (shaft != null) return Offset(shaft.center.dx, shaft.bottom);
+    final bounds = _bounds[i];
+    return Offset(bounds.center.dx, bounds.bottom);
+  }
+
+  /// Lateral do próximo card — no marco de fase, o centro do topo.
+  Offset _approach(int i) {
+    final shaft = _openings[i];
+    if (shaft != null) return Offset(shaft.center.dx, shaft.top);
+    final bounds = _bounds[i];
+    final fromX = _leave(i - 1).dx;
+    final onLeft = fromX <= bounds.center.dx;
+    return Offset(onLeft ? bounds.left : bounds.right, bounds.center.dy);
+  }
+
+  /// Desce da base e entra na lateral numa dobra só, sempre do mesmo raio.
+  /// A quina fica no vão, fora dos cards, para o tracejado não partir.
   Path _baseToSide(Offset a, Offset b) {
-    final dy = b.dy - a.dy;
+    final path = Path()..moveTo(a.dx, a.dy);
     final dx = b.dx - a.dx;
-    return Path()
-      ..moveTo(a.dx, a.dy)
-      ..cubicTo(a.dx, a.dy + dy * 0.62, b.dx - dx * 0.42, b.dy, b.dx, b.dy);
+    final dy = b.dy - a.dy;
+    if (dy < 6) {
+      path.lineTo(b.dx, b.dy);
+      return path;
+    }
+    final dir = dx >= 0 ? 1.0 : -1.0;
+    final adx = dx.abs();
+    final radius = math.min(40.0, math.min(dy, adx) * 0.92);
+    if (radius < 12) {
+      path.cubicTo(a.dx, a.dy + dy * 0.55, b.dx - dx * 0.2, b.dy, b.dx, b.dy);
+      return path;
+    }
+    final corner = Offset(a.dx, b.dy);
+    path
+      ..lineTo(a.dx, corner.dy - radius)
+      ..quadraticBezierTo(corner.dx, corner.dy, a.dx + dir * radius, b.dy)
+      ..lineTo(b.dx, b.dy);
+    return path;
+  }
+
+  /// Chega no topo do marco de fase. A curva fica acima do card.
+  Path _intoStop(Offset a, Offset b) {
+    final path = Path()..moveTo(a.dx, a.dy);
+    final dx = b.dx - a.dx;
+    final dy = b.dy - a.dy;
+    if (dy < 8 || dx.abs() < 8) {
+      path.lineTo(b.dx, b.dy);
+      return path;
+    }
+    final dir = dx >= 0 ? 1.0 : -1.0;
+    final radius = math.min(16.0, math.min(dy * 0.42, dx.abs() * 0.45));
+    if (dx.abs() < radius * 2 + 4) {
+      path.cubicTo(a.dx, a.dy + dy * 0.55, b.dx, b.dy - dy * 0.45, b.dx, b.dy);
+      return path;
+    }
+    final railY = a.dy + dy * 0.5;
+    path
+      ..lineTo(a.dx, railY - radius)
+      ..quadraticBezierTo(a.dx, railY, a.dx + dir * radius, railY)
+      ..lineTo(b.dx - dir * radius, railY)
+      ..quadraticBezierTo(b.dx, railY, b.dx, railY + radius)
+      ..lineTo(b.dx, b.dy);
+    return path;
   }
 
   void _stroke(
@@ -312,7 +414,7 @@ class RenderWindingTrail extends RenderBox
     final paint = Paint()
       ..color = color
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 4
+      ..strokeWidth = 3.5
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
       ..isAntiAlias = true;
@@ -374,8 +476,8 @@ class RenderWindingTrail extends RenderBox
   }
 
   Path _dashed(Path source) {
-    const dash = 11.0;
-    const gap = 8.0;
+    const dash = 8.0;
+    const gap = 5.0;
     final out = Path();
     for (final metric in source.computeMetrics()) {
       var distance = 0.0;

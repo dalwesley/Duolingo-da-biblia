@@ -2710,6 +2710,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get journeyBeyondHorizon => 'Ainda além do horizonte';
 
   @override
+  String get journeyInn => 'Estalagem';
+
+  @override
   String get journeyLockedHint =>
       'Conclua a trilha anterior para liberar esta.';
 
@@ -2725,6 +2728,11 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get journeyNow => 'Agora';
+
+  @override
+  String journeyPhase(String nn) {
+    return 'Fase $nn';
+  }
 
   @override
   String get journeyPlay => 'Jogar';

@@ -2710,6 +2710,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get journeyBeyondHorizon => 'Still beyond the horizon';
 
   @override
+  String get journeyInn => 'Inn';
+
+  @override
   String get journeyLockedHint =>
       'Complete the previous trail to unlock this one.';
 
@@ -2725,6 +2728,11 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get journeyNow => 'Now';
+
+  @override
+  String journeyPhase(String nn) {
+    return 'Phase $nn';
+  }
 
   @override
   String get journeyPlay => 'Play';
