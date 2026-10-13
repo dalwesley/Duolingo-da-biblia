@@ -112,7 +112,6 @@ void main() {
       ),
     );
 
-    expect(find.text('Observação concluída'), findsOneWidget);
     expect(find.byKey(const ValueKey('mode-emblem-semente')), findsWidgets);
     expect(find.byType(ModeEmblem), findsWidgets);
   });
@@ -174,7 +173,6 @@ void main() {
       ),
     );
 
-    expect(find.text('Modo Compreensão'), findsOneWidget);
     expect(find.byKey(const ValueKey('mode-emblem-caminhada')), findsWidgets);
   });
 
@@ -235,9 +233,9 @@ void main() {
     );
 
     expect(find.text('Modo Observação'), findsOneWidget);
-    expect(find.text('Observação · 7 de 23 passos'), findsOneWidget);
+    expect(find.text('Faltam 16 cenas'), findsOneWidget);
     expect(find.text('Agora'), findsOneWidget);
-    expect(find.text('Continuar'), findsOneWidget);
+    expect(find.text('Jogar'), findsOneWidget);
     expect(find.text('você está aqui'), findsNothing);
   });
 

@@ -1,16 +1,17 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 import '../l10n/app_language.dart';
 import '../models/trail.dart';
 import '../theme/app_theme.dart';
-import '../utils/appearance.dart';
 import '../utils/difficulty_visuals.dart';
 import '../utils/genesis_theme.dart';
 import '../utils/trail_progress.dart';
+import 'act_feel.dart';
 import 'cinematic_icon.dart';
-import 'stage_plate.dart';
-import 'ui_primitives.dart';
+import 'winding_trail.dart';
 
-/// Sequência editorial de cenas — tipografia no lugar de ícones de app.
+/// Cenas de uma etapa como níveis numa curva.
 class TrailMapPath extends StatelessWidget {
   final List<Mission> missions;
   final int startGlobalIndex;
@@ -41,435 +42,271 @@ class TrailMapPath extends StatelessWidget {
     if (missions.isEmpty) return const SizedBox.shrink();
 
     final accent = modeAccent ?? theme?.pathActive ?? AppRoles.chrome;
-    final inactive = theme?.pathInactive ?? Appearance.of(context).cardBorder;
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        for (var i = 0; i < missions.length; i++) ...[
-          Padding(
-            padding: EdgeInsets.only(
-              top: i == 0 ? 0 : AppSpace.sm,
-              bottom: i == missions.length - 1 ? 0 : 0,
-            ),
-            child: IntrinsicHeight(
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  SizedBox(
-                    width: 50,
-                    child: _TrailMapStepRail(
-                      activeAbove: i > 0 && _completed(missions[i - 1].slug),
-                      activeBelow: _completed(missions[i].slug),
-                      completed: _completed(missions[i].slug),
-                      unlocked: _unlocked(missions[i].slug),
-                      activeColor: accent,
-                      inactiveColor: inactive,
-                      showTop: i > 0,
-                      showBottom: i < missions.length - 1,
-                    ),
-                  ),
-                  const SizedBox(width: 14),
-                  Expanded(
-                    child: _MissionSceneCard(
-                      mission: missions[i],
-                      index: startGlobalIndex + i + 1,
-                      completed: _completed(missions[i].slug),
-                      unlocked: _unlocked(missions[i].slug),
-                      theme: theme,
-                      modeAccent: accent,
-                      onTap: _unlocked(missions[i].slug)
-                          ? () => onMissionTap?.call(missions[i].slug)
-                          : null,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ],
-      ],
+    return WindingTrail(
+      walked: accent,
+      track: Color.lerp(const Color(0xFFB7C6D6), AppColors.textOnDark, 0.15)!,
+      waveOffset: startGlobalIndex,
+      stops: [for (var i = 0; i < missions.length; i++) _stop(i, accent)],
+    );
+  }
+
+  WindingStop _stop(int i, Color accent) {
+    final mission = missions[i];
+    final completed = _completed(mission.slug);
+    final unlocked = _unlocked(mission.slug);
+    final current = unlocked && !completed;
+    final size = current ? 72.0 : (mission.isBoss ? 64.0 : 56.0);
+    final bubbleOnLeft = current && windingBubbleOnLeft(startGlobalIndex + i);
+    return WindingStop(
+      nodeSize: size,
+      passed: completed,
+      nodeLeading: !bubbleOnLeft,
+      child: _SceneLevel(
+        mission: mission,
+        indexLabel: '${startGlobalIndex + i + 1}',
+        completed: completed,
+        unlocked: unlocked,
+        current: current,
+        accent: accent,
+        size: size,
+        bubbleOnLeft: bubbleOnLeft,
+        onTap: unlocked ? () => onMissionTap?.call(mission.slug) : null,
+      ),
     );
   }
 }
 
-class _SceneConnector extends StatelessWidget {
-  final bool active;
-  final Color activeColor;
-  final Color inactiveColor;
+class _SceneLevel extends StatelessWidget {
+  final Mission mission;
+  final String indexLabel;
+  final bool completed;
+  final bool unlocked;
+  final bool current;
+  final Color accent;
+  final double size;
+  final bool bubbleOnLeft;
+  final VoidCallback? onTap;
 
-  const _SceneConnector({
-    required this.active,
-    required this.activeColor,
-    required this.inactiveColor,
+  const _SceneLevel({
+    required this.mission,
+    required this.indexLabel,
+    required this.completed,
+    required this.unlocked,
+    required this.current,
+    required this.accent,
+    required this.size,
+    required this.bubbleOnLeft,
+    required this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
-    final color = active ? activeColor : inactiveColor;
-    return SizedBox(
-      width: 24,
-      child: CustomPaint(
-        painter: _SceneConnectorPainter(
-          color: color.withValues(alpha: active ? 0.7 : 0.35),
+    final disc = _SceneDisc(
+      mission: mission,
+      indexLabel: indexLabel,
+      completed: completed,
+      unlocked: unlocked,
+      current: current,
+      accent: accent,
+      size: size,
+    );
+    final body = current
+        ? Row(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              if (bubbleOnLeft) ...[
+                _SceneBubble(mission: mission, accent: accent),
+                const SizedBox(width: 8),
+              ],
+              disc,
+              if (!bubbleOnLeft) ...[
+                const SizedBox(width: 8),
+                _SceneBubble(mission: mission, accent: accent),
+              ],
+            ],
+          )
+        : disc;
+    return Semantics(
+      label: mission.localizedTitle,
+      button: true,
+      enabled: onTap != null,
+      child: onTap == null
+          ? body
+          : ActPress(onTap: onTap, depth: current ? 3 : 2, child: body),
+    );
+  }
+}
+
+class _SceneDisc extends StatelessWidget {
+  final Mission mission;
+  final String indexLabel;
+  final bool completed;
+  final bool unlocked;
+  final bool current;
+  final Color accent;
+  final double size;
+
+  const _SceneDisc({
+    required this.mission,
+    required this.indexLabel,
+    required this.completed,
+    required this.unlocked,
+    required this.current,
+    required this.accent,
+    required this.size,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final reward = mission.isBoss;
+    final live = completed || current;
+    final fill = reward
+        ? (live ? AppRoles.reward : const Color(0xFFFFE7A3))
+        : (live ? accent : const Color(0xFFE7EEF6));
+    final ink = live
+        ? (reward ? const Color(0xFF3A2A00) : DifficultyVisuals.onSky(accent))
+        : const Color(0xFF4A5C72).withValues(alpha: unlocked ? 0.9 : 0.4);
+
+    if (reward) {
+      return _StarNode(
+        size: size,
+        fill: fill,
+        child: CinematicIcon(
+          glyph: CinematicGlyph.crown,
+          size: current ? 26 : 22,
+          accent: ink,
+          framed: false,
+        ),
+      );
+    }
+
+    return PathNode(
+      size: size,
+      fill: fill,
+      glow: current ? accent : null,
+      child: Text(
+        indexLabel,
+        style: AppTypography.title(
+          size: current ? 20 : 16,
+          height: 1,
+          color: ink,
         ),
       ),
     );
   }
 }
 
-class _SceneConnectorPainter extends CustomPainter {
-  final Color color;
+class _StarNode extends StatelessWidget {
+  final double size;
+  final Color fill;
+  final Widget child;
 
-  _SceneConnectorPainter({required this.color});
+  const _StarNode({
+    required this.size,
+    required this.fill,
+    required this.child,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final lip = Color.lerp(fill, const Color(0xFF1A2433), 0.28)!;
+    return SizedBox(
+      width: size,
+      height: size,
+      child: Stack(
+        alignment: Alignment.center,
+        children: [
+          CustomPaint(
+            size: Size.square(size),
+            painter: _StarPainter(color: lip, dy: 4),
+          ),
+          CustomPaint(
+            size: Size.square(size),
+            painter: _StarPainter(color: fill, dy: -1),
+          ),
+          child,
+        ],
+      ),
+    );
+  }
+}
+
+class _StarPainter extends CustomPainter {
+  final Color color;
+  final double dy;
+
+  const _StarPainter({required this.color, required this.dy});
 
   @override
   void paint(Canvas canvas, Size size) {
-    final paint = Paint()
-      ..color = color
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 2
-      ..strokeCap = StrokeCap.round;
-
+    final c = Offset(size.width / 2, size.height / 2 + dy);
+    final outer = size.width / 2;
+    final inner = outer * 0.58;
     final path = Path();
-    final midX = size.width / 2;
-    final variance = size.width * 0.6;
-
-    path.moveTo(midX, 0);
-    path.cubicTo(
-      midX + variance * 0.2,
-      size.height * 0.18,
-      midX - variance * 0.3,
-      size.height * 0.35,
-      midX + variance * 0.1,
-      size.height * 0.5,
-    );
-    path.cubicTo(
-      midX + variance * 0.35,
-      size.height * 0.65,
-      midX - variance * 0.15,
-      size.height * 0.82,
-      midX,
-      size.height,
-    );
-
-    const dashLength = 6.0;
-    const gap = 6.0;
-    for (final metric in path.computeMetrics()) {
-      var distance = 0.0;
-      while (distance < metric.length) {
-        final next = (distance + dashLength).clamp(0.0, metric.length);
-        canvas.drawPath(metric.extractPath(distance, next), paint);
-        distance = next + gap;
+    for (var i = 0; i < 10; i++) {
+      final radius = i.isEven ? outer : inner;
+      final angle = -math.pi / 2 + i * math.pi / 5;
+      final p = c + Offset(math.cos(angle), math.sin(angle)) * radius;
+      if (i == 0) {
+        path.moveTo(p.dx, p.dy);
+      } else {
+        path.lineTo(p.dx, p.dy);
       }
     }
+    path.close();
+    canvas.drawPath(path, Paint()..color = color);
   }
 
   @override
-  bool shouldRepaint(covariant _SceneConnectorPainter old) {
-    return old.color != color;
-  }
+  bool shouldRepaint(covariant _StarPainter old) =>
+      old.color != color || old.dy != dy;
 }
 
-class _TrailMapStepRail extends StatelessWidget {
-  final bool activeAbove;
-  final bool activeBelow;
-  final bool completed;
-  final bool unlocked;
-  final Color activeColor;
-  final Color inactiveColor;
-  final bool showTop;
-  final bool showBottom;
-
-  const _TrailMapStepRail({
-    required this.activeAbove,
-    required this.activeBelow,
-    required this.completed,
-    required this.unlocked,
-    required this.activeColor,
-    required this.inactiveColor,
-    required this.showTop,
-    required this.showBottom,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final dotColor = completed
-        ? activeColor
-        : unlocked
-        ? activeColor.withValues(alpha: 0.85)
-        : inactiveColor.withValues(alpha: 0.35);
-
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        if (showTop)
-          Expanded(
-            child: _SceneConnector(
-              active: activeAbove,
-              activeColor: activeColor,
-              inactiveColor: inactiveColor,
-            ),
-          ),
-        Container(
-          width: 12,
-          height: 12,
-          decoration: BoxDecoration(shape: BoxShape.circle, color: dotColor),
-        ),
-        if (showBottom)
-          Expanded(
-            child: _SceneConnector(
-              active: activeBelow,
-              activeColor: activeColor,
-              inactiveColor: inactiveColor,
-            ),
-          ),
-      ],
-    );
-  }
-}
-
-class _MissionSceneCard extends StatelessWidget {
+class _SceneBubble extends StatelessWidget {
   final Mission mission;
-  final int index;
-  final bool completed;
-  final bool unlocked;
-  final GenesisModuleTheme? theme;
-  final Color modeAccent;
-  final VoidCallback? onTap;
+  final Color accent;
 
-  const _MissionSceneCard({
-    required this.mission,
-    required this.index,
-    required this.completed,
-    required this.unlocked,
-    required this.theme,
-    required this.modeAccent,
-    this.onTap,
-  });
-
-  bool get _current => unlocked && !completed;
-
-  String get _indexLabel => index.toString().padLeft(2, '0');
+  const _SceneBubble({required this.mission, required this.accent});
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final accent = modeAccent;
-    final onSky = DifficultyVisuals.onSky(accent);
-
-    final radius = BorderRadius.circular(StagePlate.radius);
-    // Palco segue o visual (manhã/tarde/noite), não o noturno fixo.
-    final card = AnimatedContainer(
-      duration: AppMotion.standard,
-      curve: AppMotion.enter,
-      decoration: StagePlate.decoration(accent: accent, lit: _current).copyWith(
-        color: Color.lerp(a.cardFill, accent, _current ? 0.1 : 0.04),
-      ),
-      child: ClipRRect(
-        borderRadius: radius,
-        child: IntrinsicHeight(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              if (_current) Container(width: 5, color: onSky),
-              Container(
-                width: _current ? 64 : 56,
-                alignment: Alignment.topCenter,
-                padding: EdgeInsets.only(top: _current ? 18 : 16),
-                decoration: BoxDecoration(
-                  border: Border(
-                    right: BorderSide(
-                      color: unlocked ? a.divider : a.insetBorder,
-                    ),
-                  ),
-                  color: _current ? accent.withValues(alpha: 0.16) : null,
-                ),
-                child: Column(
-                  children: [
-                    Text(
-                      mission.isBoss ? '∞' : _indexLabel,
-                      style: AppTypography.display(
-                        size: _current ? 28 : 20,
-                        weight: FontWeight.w700,
-                        height: 1,
-                        color: unlocked
-                            ? (_current
-                                  ? onSky
-                                  : (completed ? a.textFaint : a.textSecondary))
-                            : a.textFaint,
-                      ),
-                    ),
-                    if (_current) ...[
-                      const SizedBox(height: 8),
-                      Container(width: 18, height: 1.5, color: onSky),
-                    ],
-                  ],
-                ),
-              ),
-              Expanded(
-                child: Padding(
-                  padding: EdgeInsets.fromLTRB(
-                    16,
-                    _current ? 16 : 14,
-                    16,
-                    _current ? 16 : 14,
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          Expanded(
-                            child: StageEyebrow(
-                              label: mission.isBoss
-                                  ? context.l10n.trailMapCrossing
-                                  : _current
-                                  ? context.l10n.commonNextScene
-                                  : completed
-                                  ? context.l10n.trailsCleared
-                                  : context.l10n.trailMapScene,
-                              accent: _current
-                                  ? onSky
-                                  : completed
-                                  ? accent.withValues(alpha: 0.55)
-                                  : a.textFaint,
-                            ),
-                          ),
-                          if (!unlocked) ...[
-                            const Spacer(),
-                            Text(
-                              context.l10n.trailMapLocked,
-                              style: AppTypography.body(
-                                size: 11,
-                                weight: FontWeight.w600,
-                                color: a.textFaint,
-                              ),
-                            ),
-                          ],
-                        ],
-                      ),
-                      const SizedBox(height: 8),
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Opacity(
-                            opacity: unlocked ? (completed ? 0.45 : 1) : 0.35,
-                            child: CinematicIcon.mission(
-                              mission.localizedTitle,
-                              isBoss: mission.isBoss,
-                              size: AppMetrics.leadingIcon,
-                              accent: _current ? onSky : accent,
-                              glowing: false,
-                            ),
-                          ),
-                          const SizedBox(width: 12),
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  mission.localizedTitle,
-                                  style: AppTypography.display(
-                                    size: _current ? 20 : 18,
-                                    weight: FontWeight.w800,
-                                    height: 1.15,
-                                    color: unlocked && !completed
-                                        ? a.text
-                                        : a.textFaint,
-                                  ),
-                                ),
-                                if (mission.subtitle.isNotEmpty) ...[
-                                  const SizedBox(height: AppSpace.xs),
-                                  Text(
-                                    mission.subtitle,
-                                    maxLines: 2,
-                                    overflow: TextOverflow.ellipsis,
-                                    style: AppTypography.body(
-                                      size: 13,
-                                      height: 1.3,
-                                      weight: FontWeight.w500,
-                                      color: a.textFaint,
-                                    ),
-                                  ),
-                                ],
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                      if (_current && mission.intro.isNotEmpty) ...[
-                        const SizedBox(height: 8),
-                        Text(
-                          mission.intro,
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                          style: AppTypography.body(
-                            size: 13,
-                            height: 1.4,
-                            weight: FontWeight.w500,
-                            color: a.textSecondary,
-                          ),
-                        ),
-                        const SizedBox(height: 14),
-                        _ContinueCue(color: onSky),
-                      ] else if (_current) ...[
-                        const SizedBox(height: 12),
-                        _ContinueCue(color: onSky),
-                      ],
-                    ],
-                  ),
-                ),
-              ),
-            ],
+    final ink = mission.isBoss ? AppRoles.reward : accent;
+    return Container(
+      width: 132,
+      padding: const EdgeInsets.fromLTRB(12, 8, 12, 8),
+      decoration: BoxDecoration(
+        color: const Color(0xFFE7EEF6),
+        borderRadius: BorderRadius.circular(16),
+        boxShadow: const [
+          BoxShadow(
+            color: Color(0x33000000),
+            blurRadius: 0,
+            offset: Offset(0, 3),
           ),
-        ),
+        ],
       ),
-    );
-
-    // Concluídas recuam — legíveis, sem disputar com a cena atual.
-    final faded = completed ? Opacity(opacity: 0.55, child: card) : card;
-
-    if (onTap == null) return faded;
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: radius,
-        splashColor: onSky.withValues(alpha: 0.1),
-        highlightColor: onSky.withValues(alpha: 0.05),
-        child: faded,
+      child: Column(
+        children: [
+          Text(
+            mission.localizedTitle,
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+            textAlign: TextAlign.center,
+            style: AppTypography.title(
+              size: 14,
+              height: 1.15,
+              color: const Color(0xFF1C2A3A),
+            ),
+          ),
+          const SizedBox(height: 4),
+          Text(
+            context.l10n.commonContinue,
+            style: AppTypography.cta(size: 14, color: ink),
+          ),
+        ],
       ),
-    );
-  }
-}
-
-/// Convite a seguir na cena atual — rótulo + glifo, sem seta no texto.
-class _ContinueCue extends StatelessWidget {
-  final Color color;
-
-  const _ContinueCue({required this.color});
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        Text(
-          context.l10n.commonContinue,
-          style: AppTypography.cta(
-            size: 14,
-            color: color,
-          ).copyWith(letterSpacing: 0.2),
-        ),
-        const SizedBox(width: 6),
-        CinematicIcon(
-          glyph: CinematicGlyph.forward,
-          size: AppMetrics.chipIcon,
-          accent: color,
-          framed: false,
-        ),
-      ],
     );
   }
 }

@@ -185,19 +185,17 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
     Scrollable.ensureVisible(
       ctx,
       alignment: 0.28,
-      duration: AppMotion.slow,
+      duration: MediaQuery.of(context).disableAnimations
+          ? Duration.zero
+          : AppMotion.slow,
       curve: AppMotion.enter,
     );
   }
 
   void _scheduleJumpToCurrent() {
     if (!mounted || _jumped) return;
-    if (_currentKey.currentContext == null) {
-      WidgetsBinding.instance.addPostFrameCallback(
-        (_) => _scheduleJumpToCurrent(),
-      );
-      return;
-    }
+    // A completed realm may have no current node. Do not reschedule forever.
+    if (_currentKey.currentContext == null) return;
     _jumped = true;
     Future.delayed(const Duration(milliseconds: 180), _jumpToCurrent);
   }
@@ -280,105 +278,61 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
       clearedTrailModes: progress.clearedTrailModes,
       trailDifficulties: progress.trailDifficulties,
     );
+    if (!_jumped && items.any((item) => item.state == JourneyNodeState.current)) {
+      WidgetsBinding.instance.addPostFrameCallback((_) => _scheduleJumpToCurrent());
+    }
     final bottom = MediaQuery.of(context).padding.bottom;
     final mode = progress.settings.appearanceMode;
     final appearance = AppearanceStyle.resolve(mode);
 
     // Regra de cor: a TopBar é chrome neutro (igual em todo o app); a cor da
-    // área mora só no conteúdo — caminho, estações e o chip "você está aqui".
+    // área mora só no conteúdo — caminho e estações.
     return ImmersiveScaffold(
       mode: mode,
       style: appearance,
-      body: Stack(
+      body: Column(
         children: [
-          Column(
-            children: [
-              Padding(
-                padding: EdgeInsets.fromLTRB(
-                  AppSpace.screen,
-                  MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
-                  AppSpace.screen,
-                  0,
-                ),
-                child: TopBar(
-                  inline: true,
-                  immersive: true,
-                  title: widget.realm.label,
-                  subtitle: visuals.eyebrow,
-                  onBack: () => Navigator.pop(context),
-                  leadingGlyph: CinematicGlyph.path,
-                  chromeAccent: AppRoles.chrome,
-                ),
-              ),
-              Expanded(
-                child: CustomScrollView(
-                  controller: _scroll,
-                  physics: const BouncingScrollPhysics(),
-                  slivers: [
-                    SliverToBoxAdapter(child: SizedBox(height: AppSpace.lg)),
-                    SliverToBoxAdapter(
-                      child: Padding(
-                        padding: EdgeInsets.fromLTRB(12, 4, 12, 120 + bottom),
-                        child: JourneyPath(
-                          items: items,
-                          accent: visuals.accent,
-                          glow: visuals.glow,
-                          currentKey: _currentKey,
-                          onTap: _onNodeTap,
-                        ),
-                      ),
+          Padding(
+            padding: EdgeInsets.fromLTRB(
+              AppSpace.screen,
+              MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
+              AppSpace.screen,
+              0,
+            ),
+            child: TopBar(
+              inline: true,
+              immersive: true,
+              title: widget.realm.label,
+              subtitle: visuals.eyebrow,
+              onBack: () => Navigator.pop(context),
+              leadingGlyph: CinematicGlyph.path,
+              chromeAccent: AppRoles.chrome,
+            ),
+          ),
+          Expanded(
+            child: CustomScrollView(
+              controller: _scroll,
+              physics: const BouncingScrollPhysics(),
+              slivers: [
+                SliverToBoxAdapter(child: SizedBox(height: AppSpace.lg)),
+                SliverToBoxAdapter(
+                  child: Padding(
+                    padding: EdgeInsets.fromLTRB(
+                      12,
+                      4,
+                      12,
+                      AppSpace.xxxl + bottom,
                     ),
-                  ],
+                    child: JourneyPath(
+                      items: items,
+                      accent: visuals.accent,
+                      glow: visuals.glow,
+                      currentKey: _currentKey,
+                      onTap: _onNodeTap,
+                    ),
+                  ),
                 ),
-              ),
-            ],
-          ),
-
-          // Soft jump control — not a loud FAB
-          Positioned(
-            right: 18,
-            bottom: 28 + bottom,
-            child: _JumpChip(accent: visuals.accent, onTap: _jumpToCurrent),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class _JumpChip extends StatelessWidget {
-  final Color accent;
-  final VoidCallback onTap;
-
-  const _JumpChip({required this.accent, required this.onTap});
-
-  @override
-  Widget build(BuildContext context) {
-    return GlassCard(
-      onTap: onTap,
-      tint: accent,
-      elevated: true,
-      padding: const EdgeInsets.symmetric(
-        horizontal: AppSpace.section,
-        vertical: AppSpace.md,
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          CinematicIcon(
-            glyph: CinematicGlyph.rise,
-            size: AppMetrics.iconSm,
-            accent: accent,
-            framed: false,
-            glowing: false,
-          ),
-          const SizedBox(width: AppSpace.sm),
-          Text(
-            context.l10n.journeyYouAreHere,
-            style: AppTypography.label(
-              size: 12,
-              color: Appearance.of(context).text,
-              letterSpacing: 0.3,
+              ],
             ),
           ),
         ],

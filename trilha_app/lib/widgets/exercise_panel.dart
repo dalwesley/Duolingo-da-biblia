@@ -1069,17 +1069,20 @@ class _Manuscript extends StatelessWidget {
     lit: lit,
   );
 
+  /// O palco mostra o trecho inteiro. Se não cabe na altura, encolhe —
+  /// sem rolagem interna, que cortava o versículo sem indicar scroll.
   Widget _filledStage() {
     return LayoutBuilder(
       builder: (context, constraints) {
-        return SingleChildScrollView(
-          physics: const BouncingScrollPhysics(),
-          child: ConstrainedBox(
-            constraints: BoxConstraints(minHeight: constraints.maxHeight),
-            child: Center(
-              child: SizedBox(width: double.infinity, child: child),
-            ),
-          ),
+        final maxW = constraints.maxWidth;
+        final maxH = constraints.maxHeight;
+        if (!maxW.isFinite || !maxH.isFinite || maxW <= 0 || maxH <= 0) {
+          return child;
+        }
+        return FittedBox(
+          fit: BoxFit.scaleDown,
+          alignment: Alignment.center,
+          child: SizedBox(width: maxW, child: child),
         );
       },
     );
