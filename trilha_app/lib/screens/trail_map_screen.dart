@@ -292,7 +292,10 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                                 liveDone: prog.done,
                                 total: prog.total,
                               )
-                            : context.l10n.trailsScenesShort(prog.done, prog.total)),
+                            : context.l10n.trailsScenesShort(
+                                prog.done,
+                                prog.total,
+                              )),
                     onBack: () => Navigator.pop(context),
                     leadingGlyph: headerGlyph,
                     // TopBar = chrome neutro; cor do modo/área só no conteúdo.

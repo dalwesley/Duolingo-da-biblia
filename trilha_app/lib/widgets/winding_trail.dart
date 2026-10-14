@@ -23,17 +23,83 @@ bool windingBubbleOnLeft(int index) {
   return windingShift(index + 1) >= here;
 }
 
+/// Curva com tracejado que corre no trecho andado — o mapa “vive”.
+/// Anima só a pintura; os cards não rebuildam.
+class FlowingWindingTrail extends StatefulWidget {
+  final Color walked;
+  final Color track;
+  final int waveOffset;
+  final List<WindingStop> stops;
+
+  const FlowingWindingTrail({
+    super.key,
+    required this.walked,
+    required this.track,
+    this.waveOffset = 0,
+    required this.stops,
+  });
+
+  @override
+  State<FlowingWindingTrail> createState() => _FlowingWindingTrailState();
+}
+
+class _FlowingWindingTrailState extends State<FlowingWindingTrail>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _flow;
+
+  @override
+  void initState() {
+    super.initState();
+    _flow = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 2800),
+    );
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (AppMotion.reduced(context)) {
+      _flow.stop();
+      _flow.value = 0;
+    } else if (!_flow.isAnimating) {
+      _flow.repeat();
+    }
+  }
+
+  @override
+  void dispose() {
+    _flow.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return WindingTrail(
+      walked: widget.walked,
+      track: widget.track,
+      waveOffset: widget.waveOffset,
+      flow: _flow,
+      stops: widget.stops,
+    );
+  }
+}
+
 /// Mapa de níveis: círculos numa curva larga, o traço liga o centro de cada um.
 class WindingTrail extends MultiChildRenderObjectWidget {
   final Color walked;
   final Color track;
   final int waveOffset;
 
+  /// Quando ligado, o picote do trecho andado corre com o ticker.
+  final Animation<double>? flow;
+
   const WindingTrail({
     super.key,
     required this.walked,
     required this.track,
     this.waveOffset = 0,
+    this.flow,
     required List<WindingStop> stops,
   }) : super(children: stops);
 
@@ -43,6 +109,7 @@ class WindingTrail extends MultiChildRenderObjectWidget {
       walked: walked,
       track: track,
       waveOffset: waveOffset,
+      flow: flow,
     );
   }
 
@@ -54,7 +121,8 @@ class WindingTrail extends MultiChildRenderObjectWidget {
     renderObject
       ..walked = walked
       ..track = track
-      ..waveOffset = waveOffset;
+      ..waveOffset = waveOffset
+      ..flow = flow;
   }
 }
 
@@ -71,6 +139,9 @@ class WindingStop extends ParentDataWidget<WindingParentData> {
   /// Marco de fase. O traço chega no topo e sai pela base, por baixo do card.
   final bool gate;
 
+  /// Estação atual — a pedra no vão que chega aqui vira farol.
+  final bool beacon;
+
   const WindingStop({
     super.key,
     required this.nodeSize,
@@ -78,6 +149,7 @@ class WindingStop extends ParentDataWidget<WindingParentData> {
     this.nodeLeading = true,
     this.centerAnchor = false,
     this.gate = false,
+    this.beacon = false,
     required super.child,
   });
 
@@ -105,6 +177,10 @@ class WindingStop extends ParentDataWidget<WindingParentData> {
       data.gate = gate;
       changed = true;
     }
+    if (data.beacon != beacon) {
+      data.beacon = beacon;
+      changed = true;
+    }
     if (changed) {
       final parent = renderObject.parent;
       if (parent is RenderWindingTrail) parent.markNeedsLayout();
@@ -121,6 +197,7 @@ class WindingParentData extends ContainerBoxParentData<RenderBox> {
   bool nodeLeading = true;
   bool centerAnchor = false;
   bool gate = false;
+  bool beacon = false;
 }
 
 class RenderWindingTrail extends RenderBox
@@ -131,18 +208,23 @@ class RenderWindingTrail extends RenderBox
     required this._walked,
     required this._track,
     required this._waveOffset,
+    this._flow,
   });
 
   Color _walked;
   Color _track;
   int _waveOffset;
+  Animation<double>? _flow;
   final List<Offset> _anchors = [];
   final List<bool> _passed = [];
+  final List<bool> _beacon = [];
   final List<Rect> _bounds = [];
   final List<bool> _isStop = [];
   final List<Rect?> _openings = [];
   final List<Path> _covers = [];
   bool _linkEdges = false;
+
+  double get _dashPhase => (_flow?.value ?? 0) * 13;
 
   Color get walked => _walked;
   set walked(Color value) {
@@ -163,6 +245,29 @@ class RenderWindingTrail extends RenderBox
     if (value == _waveOffset) return;
     _waveOffset = value;
     markNeedsLayout();
+  }
+
+  Animation<double>? get flow => _flow;
+  set flow(Animation<double>? value) {
+    if (identical(value, _flow)) return;
+    if (attached) _flow?.removeListener(_onFlow);
+    _flow = value;
+    if (attached) _flow?.addListener(_onFlow);
+    markNeedsPaint();
+  }
+
+  void _onFlow() => markNeedsPaint();
+
+  @override
+  void attach(PipelineOwner owner) {
+    super.attach(owner);
+    _flow?.addListener(_onFlow);
+  }
+
+  @override
+  void detach() {
+    _flow?.removeListener(_onFlow);
+    super.detach();
   }
 
   @override
@@ -195,6 +300,7 @@ class RenderWindingTrail extends RenderBox
 
     _anchors.clear();
     _passed.clear();
+    _beacon.clear();
     _bounds.clear();
     _isStop.clear();
     _openings.clear();
@@ -244,6 +350,7 @@ class RenderWindingTrail extends RenderBox
       _bounds.add(bounds);
       _anchors.add(Offset(left + nodeCx, centerY));
       _passed.add(data.passed);
+      _beacon.add(data.beacon);
       _isStop.add(data.gate);
       if (data.gate) {
         _openings.add(bounds);
@@ -348,13 +455,19 @@ class RenderWindingTrail extends RenderBox
       if (glowPaint != null) {
         canvas.drawPath(path, glowPaint);
       }
-      canvas.drawPath(_dashed(path), paint);
+      canvas.drawPath(
+        _dashed(path, phase: onlyWalked ? _dashPhase : 0),
+        paint,
+      );
+      final intoBeacon =
+          i + 1 < _beacon.length && _beacon[i + 1] && onlyWalked;
       _paintWaypoints(
         canvas,
         start,
         end,
         color,
         lit: onlyWalked,
+        beacon: intoBeacon,
       );
     }
   }
@@ -366,38 +479,44 @@ class RenderWindingTrail extends RenderBox
     Offset end,
     Color color, {
     required bool lit,
+    bool beacon = false,
   }) {
     final mid = Offset(
       (start.dx + end.dx) / 2,
       (start.dy + end.dy) / 2,
     );
-    final r = lit ? 6.5 : 5.0;
+    final r = beacon ? 9.0 : (lit ? 6.5 : 5.0);
     final lip = Color.lerp(color, const Color(0xFF1A2433), 0.32)!;
-    final fill = lit
+    final fill = lit || beacon
         ? color
         : Color.lerp(color, const Color(0xFF1A2433), 0.45)!;
 
     // Lábio de baixo (profundidade de botão).
     canvas.drawCircle(
-      mid.translate(0, 1.8),
+      mid.translate(0, beacon ? 2.4 : 1.8),
       r,
-      Paint()..color = lip.withValues(alpha: lit ? 0.95 : 0.7),
+      Paint()..color = lip.withValues(alpha: lit || beacon ? 0.95 : 0.7),
     );
-    if (lit) {
+    if (lit || beacon) {
       canvas.drawCircle(
         mid,
-        r + 3,
+        r + (beacon ? 7 : 3),
         Paint()
-          ..color = color.withValues(alpha: 0.22)
-          ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 3.5),
+          ..color = color.withValues(alpha: beacon ? 0.38 : 0.22)
+          ..maskFilter = MaskFilter.blur(
+            BlurStyle.normal,
+            beacon ? 6 : 3.5,
+          ),
       );
     }
     canvas.drawCircle(mid, r, Paint()..color = fill);
     canvas.drawCircle(
       mid.translate(0, -0.6),
-      r * 0.38,
+      r * (beacon ? 0.42 : 0.38),
       Paint()
-        ..color = AppColors.textOnDark.withValues(alpha: lit ? 0.55 : 0.28),
+        ..color = AppColors.textOnDark.withValues(
+          alpha: lit || beacon ? 0.6 : 0.28,
+        ),
     );
   }
 
@@ -500,7 +619,10 @@ class RenderWindingTrail extends RenderBox
       if (run.length >= 2) {
         final flowing = _flowing(run, offset);
         if (glowPaint != null) canvas.drawPath(flowing, glowPaint);
-        canvas.drawPath(_dashed(flowing), paint);
+        canvas.drawPath(
+          _dashed(flowing, phase: onlyWalked ? _dashPhase : 0),
+          paint,
+        );
       }
       run.clear();
     }
@@ -551,16 +673,20 @@ class RenderWindingTrail extends RenderBox
     return (side * 0.94 + nudge).clamp(-1.0, 1.0).toDouble();
   }
 
-  Path _dashed(Path source) {
+  Path _dashed(Path source, {double phase = 0}) {
     const dash = 8.0;
     const gap = 5.0;
+    final period = dash + gap;
     final out = Path();
     for (final metric in source.computeMetrics()) {
-      var distance = 0.0;
+      var distance = -((phase % period) + period) % period;
       while (distance < metric.length) {
+        final start = math.max(0.0, distance);
         final end = math.min(distance + dash, metric.length);
-        out.addPath(metric.extractPath(distance, end), Offset.zero);
-        distance = end + gap;
+        if (end > start) {
+          out.addPath(metric.extractPath(start, end), Offset.zero);
+        }
+        distance += period;
       }
     }
     return out;

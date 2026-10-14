@@ -116,6 +116,7 @@ class JourneyPath extends StatelessWidget {
           nodeSize: 72,
           passed: item.state == JourneyNodeState.completed,
           centerAnchor: true,
+          beacon: isCurrent,
           child: _TrailStation(
             item: station,
             accent: accent,
@@ -132,52 +133,12 @@ class JourneyPath extends StatelessWidget {
       0.28,
     )!;
 
-    return CustomPaint(
-      painter: _JourneyVeilPainter(accent: accent, glow: glow),
-      child: WindingTrail(
-        walked: accent,
-        track: track,
-        stops: stops,
-      ),
+    return FlowingWindingTrail(
+      walked: accent,
+      track: track,
+      stops: stops,
     );
   }
-}
-
-/// Véu da área atrás da curva — manchas suaves da cor do reino.
-class _JourneyVeilPainter extends CustomPainter {
-  final Color accent;
-  final Color glow;
-
-  const _JourneyVeilPainter({required this.accent, required this.glow});
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    if (size.isEmpty) return;
-
-    void blob(Offset c, double r, Color color, double alpha) {
-      canvas.drawCircle(
-        c,
-        r,
-        Paint()
-          ..shader = RadialGradient(
-            colors: [
-              color.withValues(alpha: alpha),
-              color.withValues(alpha: alpha * 0.35),
-              color.withValues(alpha: 0),
-            ],
-            stops: const [0.0, 0.45, 1.0],
-          ).createShader(Rect.fromCircle(center: c, radius: r)),
-      );
-    }
-
-    blob(Offset(size.width * 0.5, size.height * 0.06), size.width * 0.5, accent, 0.12);
-    blob(Offset(size.width * 0.82, size.height * 0.42), size.width * 0.36, accent, 0.08);
-    blob(Offset(size.width * 0.22, size.height * 0.68), size.width * 0.4, glow, 0.07);
-  }
-
-  @override
-  bool shouldRepaint(covariant _JourneyVeilPainter old) =>
-      old.accent != accent || old.glow != glow;
 }
 
 class _TrailStation extends StatelessWidget {

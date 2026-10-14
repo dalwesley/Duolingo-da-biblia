@@ -42,10 +42,15 @@ class TrailMapPath extends StatelessWidget {
     final a = Appearance.of(context);
     final accent = modeAccent ?? theme?.pathActive ?? AppRoles.chrome;
     final glow = Color.lerp(accent, Colors.white, 0.22)!;
+    final track = Color.lerp(
+      Color.lerp(a.progressTrack, AppColors.textOnDark, 0.42)!,
+      accent,
+      0.32,
+    )!;
 
-    return WindingTrail(
+    return FlowingWindingTrail(
       walked: accent,
-      track: Color.lerp(a.progressTrack, AppColors.textOnDark, 0.55)!,
+      track: track,
       waveOffset: startGlobalIndex,
       stops: [
         for (var i = 0; i < missions.length; i++)
@@ -86,6 +91,7 @@ class TrailMapPath extends StatelessWidget {
       nodeSize: 72,
       passed: completed,
       centerAnchor: true,
+      beacon: current,
       child: JourneyStationCard(
         title: mission.localizedTitle,
         eyebrow: eyebrow,
