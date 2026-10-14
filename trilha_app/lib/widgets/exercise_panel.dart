@@ -7,6 +7,7 @@ import '../l10n/app_language.dart';
 import '../models/trail.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/layout_utils.dart';
 import 'act_feel.dart';
 import 'cinematic_icon.dart';
 import 'stage_plate.dart';
@@ -356,31 +357,62 @@ class _ExercisePanelState extends State<ExercisePanel>
               const SizedBox(height: 14),
               if (palco != null)
                 Expanded(
-                  child: _in(
-                    0.12,
-                    0.72,
-                    // Palco fixo em todo gesto: o versículo é para ler e tocar,
-                    // nunca uma carta que gira ao toque.
-                    SizedBox.expand(child: palco),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Flexible(
+                        fit: FlexFit.loose,
+                        child: ConstrainedBox(
+                          constraints: const BoxConstraints(
+                            maxHeight: stageMaxHeight,
+                          ),
+                          child: _in(
+                            0.12,
+                            0.72,
+                            // Palco fixo em todo gesto: o versículo é para
+                            // ler e tocar, nunca uma carta que gira ao toque.
+                            SizedBox.expand(child: palco),
+                          ),
+                        ),
+                      ),
+                      if (below.isNotEmpty) ...[
+                        const SizedBox(height: 12),
+                        _in(
+                          0.35,
+                          1,
+                          Column(
+                            mainAxisSize: MainAxisSize.min,
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: below,
+                          ),
+                        ),
+                      ],
+                      if (showFooter) ...[
+                        const SizedBox(height: 10),
+                        _in(0.55, 1, _footer(ex, canConfirm)),
+                      ],
+                    ],
                   ),
                 )
-              else
+              else ...[
                 const Spacer(),
-              if (below.isNotEmpty) ...[
-                const SizedBox(height: 12),
-                _in(
-                  0.35,
-                  1,
-                  Column(
-                    mainAxisSize: MainAxisSize.min,
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: below,
+                if (below.isNotEmpty) ...[
+                  const SizedBox(height: 12),
+                  _in(
+                    0.35,
+                    1,
+                    Column(
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: below,
+                    ),
                   ),
-                ),
-              ],
-              if (showFooter) ...[
-                const SizedBox(height: 10),
-                _in(0.55, 1, _footer(ex, canConfirm)),
+                ],
+                if (showFooter) ...[
+                  const SizedBox(height: 10),
+                  _in(0.55, 1, _footer(ex, canConfirm)),
+                ],
               ],
             ],
           ),
@@ -935,7 +967,6 @@ class _GestureSeal extends StatelessWidget {
     required this.isPrompt,
   });
 
-
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
@@ -992,10 +1023,7 @@ class _ContextNote extends StatelessWidget {
   final String label;
   final String text;
 
-  const _ContextNote({
-    required this.label,
-    required this.text,
-  });
+  const _ContextNote({required this.label, required this.text});
 
   @override
   Widget build(BuildContext context) {
@@ -1004,16 +1032,12 @@ class _ContextNote extends StatelessWidget {
       children: [
         Row(
           children: [
-            Expanded(
-              child: Divider(color: a.divider, height: 1),
-            ),
+            Expanded(child: Divider(color: a.divider, height: 1)),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10),
               child: SectionLabel(label, color: a.sectionLabel),
             ),
-            Expanded(
-              child: Divider(color: a.divider, height: 1),
-            ),
+            Expanded(child: Divider(color: a.divider, height: 1)),
           ],
         ),
         const SizedBox(height: 10),

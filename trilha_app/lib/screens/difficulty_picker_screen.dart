@@ -8,6 +8,7 @@ import '../services/analytics_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/layout_utils.dart';
 import '../utils/day_phase.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
@@ -83,10 +84,8 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen>
   @override
   void initState() {
     super.initState();
-    _enter = AnimationController(
-      vsync: this,
-      duration: AppMotion.scene,
-    )..forward();
+    _enter = AnimationController(vsync: this, duration: AppMotion.scene)
+      ..forward();
     _load();
   }
 
@@ -119,6 +118,7 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen>
           backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
           body: ImmersiveBackground(
             appearance: appearance,
+            frameChild: false,
             child: SafeArea(
               child: ListView(
                 padding: const EdgeInsets.fromLTRB(
@@ -143,54 +143,72 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen>
                       ),
                     ),
                   ),
-                  const SizedBox(height: AppSpace.xl),
-                  FadeTransition(
-                    opacity: CurvedAnimation(
-                      parent: _enter,
-                      curve: const Interval(0, 0.4, curve: AppMotion.enter),
-                    ),
-                    child: Column(
-                      children: [
-                        SectionLabel(
-                          context.l10n.modeSheetEyebrow,
-                          textAlign: TextAlign.center,
-                        ),
-                        const SizedBox(height: AppSpace.sm),
-                        Text(
-                          context.l10n.modePickerTitle,
-                          textAlign: TextAlign.center,
-                          style: AppTypography.display(size: 28, height: 1.15),
-                        ),
-                        if (_trailTitle.isNotEmpty) ...[
-                          const SizedBox(height: AppSpace.md),
-                          Text(
-                            _trailTitle,
-                            textAlign: TextAlign.center,
-                            style: AppTypography.body(
-                              size: 13,
-                              height: 1.4,
-                              color: appearance.textSecondary,
+                  ContentFrame(
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: AppSpace.screen,
+                      ),
+                      child: Column(
+                        children: [
+                          const SizedBox(height: AppSpace.xl),
+                          FadeTransition(
+                            opacity: CurvedAnimation(
+                              parent: _enter,
+                              curve: const Interval(
+                                0,
+                                0.4,
+                                curve: AppMotion.enter,
+                              ),
+                            ),
+                            child: Column(
+                              children: [
+                                SectionLabel(
+                                  context.l10n.modeSheetEyebrow,
+                                  textAlign: TextAlign.center,
+                                ),
+                                const SizedBox(height: AppSpace.sm),
+                                Text(
+                                  context.l10n.modePickerTitle,
+                                  textAlign: TextAlign.center,
+                                  style: AppTypography.display(
+                                    size: 28,
+                                    height: 1.15,
+                                  ),
+                                ),
+                                if (_trailTitle.isNotEmpty) ...[
+                                  const SizedBox(height: AppSpace.md),
+                                  Text(
+                                    _trailTitle,
+                                    textAlign: TextAlign.center,
+                                    style: AppTypography.body(
+                                      size: 13,
+                                      height: 1.4,
+                                      color: appearance.textSecondary,
+                                    ),
+                                  ),
+                                ],
+                              ],
+                            ),
+                          ),
+                          const SizedBox(height: AppSpace.xxl),
+                          FadeTransition(
+                            opacity: CurvedAnimation(
+                              parent: _enter,
+                              curve: const Interval(
+                                0.2,
+                                0.8,
+                                curve: AppMotion.enter,
+                              ),
+                            ),
+                            child: ModeCarousel(
+                              trailSlug: widget.trailSlug,
+                              missionSlugs: _missionSlugs,
+                              height: 420,
+                              onCommitted: (_) => widget.onSelected(),
                             ),
                           ),
                         ],
-                      ],
-                    ),
-                  ),
-                  const SizedBox(height: AppSpace.xxl),
-                  FadeTransition(
-                    opacity: CurvedAnimation(
-                      parent: _enter,
-                      curve: const Interval(
-                        0.2,
-                        0.8,
-                        curve: AppMotion.enter,
                       ),
-                    ),
-                    child: ModeCarousel(
-                      trailSlug: widget.trailSlug,
-                      missionSlugs: _missionSlugs,
-                      height: 420,
-                      onCommitted: (_) => widget.onSelected(),
                     ),
                   ),
                 ],

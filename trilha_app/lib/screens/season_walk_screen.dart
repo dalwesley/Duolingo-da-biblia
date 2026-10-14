@@ -12,6 +12,7 @@ import '../services/progress_service.dart';
 import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/layout_utils.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/relic_panel.dart';
@@ -54,83 +55,94 @@ class SeasonWalkScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.transparent,
       body: ImmersiveBackground(
+        frameChild: false,
         child: SafeArea(
           child: Column(
             children: [
-              TopBar(
-                title: campaign.title,
-                subtitle: campaign.subtitle,
-                onBack: () => Navigator.pop(context),
-                leadingGlyph: CinematicGlyph.calendar,
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: AppSpace.screen,
+                ),
+                child: TopBar(
+                  title: campaign.title,
+                  subtitle: campaign.subtitle,
+                  onBack: () => Navigator.pop(context),
+                  leadingGlyph: CinematicGlyph.calendar,
+                ),
               ),
               Expanded(
-                child: ListView(
-                  padding: const EdgeInsets.fromLTRB(
-                    AppSpace.screen,
-                    AppSpace.md,
-                    AppSpace.screen,
-                    AppSpace.xl,
-                  ),
-                  children: [
-                    GlassCard(
-                      elevated: true,
-                      padding: AppMetrics.cardPadding,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            inWindow
-                                ? l10n.seasonDayOf(
-                                    '${todayIndex ?? '—'}',
-                                    campaign.length,
-                                  )
-                                : campaign.start.isAfter(today)
-                                ? l10n.seasonStartsIn(
-                                    _daysUntil(campaign.start, today),
-                                  )
-                                : l10n.seasonEnded,
-                            style: AppTypography.title(size: 16, color: a.text),
-                          ),
-                          if (sub.isConfigured) ...[
-                            const SizedBox(height: 6),
+                child: ContentFrame(
+                  child: ListView(
+                    padding: const EdgeInsets.fromLTRB(
+                      AppSpace.screen,
+                      AppSpace.md,
+                      AppSpace.screen,
+                      AppSpace.xl,
+                    ),
+                    children: [
+                      GlassCard(
+                        elevated: true,
+                        padding: AppMetrics.cardPadding,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
                             Text(
-                              l10n.seasonFreeTrialLine,
+                              inWindow
+                                  ? l10n.seasonDayOf(
+                                      '${todayIndex ?? '—'}',
+                                      campaign.length,
+                                    )
+                                  : campaign.start.isAfter(today)
+                                  ? l10n.seasonStartsIn(
+                                      _daysUntil(campaign.start, today),
+                                    )
+                                  : l10n.seasonEnded,
+                              style: AppTypography.title(
+                                size: 16,
+                                color: a.text,
+                              ),
+                            ),
+                            if (sub.isConfigured) ...[
+                              const SizedBox(height: 6),
+                              Text(
+                                l10n.seasonFreeTrialLine,
+                                style: AppTypography.body(
+                                  size: 13,
+                                  color: a.textSecondary,
+                                ),
+                              ),
+                            ],
+                            const SizedBox(height: 12),
+                            AppProgressBar(
+                              value: campaign.length == 0
+                                  ? 0
+                                  : (done / campaign.length).clamp(0.0, 1.0),
+                            ),
+                            const SizedBox(height: 8),
+                            Text(
+                              l10n.seasonDaysWalked(done, campaign.length),
                               style: AppTypography.body(
-                                size: 13,
-                                color: a.textSecondary,
+                                size: 12,
+                                color: a.textFaint,
                               ),
                             ),
                           ],
-                          const SizedBox(height: 12),
-                          AppProgressBar(
-                            value: campaign.length == 0
-                                ? 0
-                                : (done / campaign.length).clamp(0.0, 1.0),
-                          ),
-                          const SizedBox(height: 8),
-                          Text(
-                            l10n.seasonDaysWalked(done, campaign.length),
-                            style: AppTypography.body(
-                              size: 12,
-                              color: a.textFaint,
-                            ),
-                          ),
-                        ],
+                        ),
                       ),
-                    ),
-                    const SizedBox(height: AppSpace.section),
-                    for (var w = 0; w < campaign.weekCount; w++) ...[
-                      _WeekBlock(
-                        campaign: campaign,
-                        weekIndex: w,
-                        today: today,
-                        todayIndex: todayIndex,
-                        proConfigured: sub.isConfigured,
-                        isPro: sub.isPeregrinoPlus,
-                      ),
-                      const SizedBox(height: AppSpace.lg),
+                      const SizedBox(height: AppSpace.section),
+                      for (var w = 0; w < campaign.weekCount; w++) ...[
+                        _WeekBlock(
+                          campaign: campaign,
+                          weekIndex: w,
+                          today: today,
+                          todayIndex: todayIndex,
+                          proConfigured: sub.isConfigured,
+                          isPro: sub.isPeregrinoPlus,
+                        ),
+                        const SizedBox(height: AppSpace.lg),
+                      ],
                     ],
-                  ],
+                  ),
                 ),
               ),
             ],
@@ -382,66 +394,74 @@ class _SeasonWalkReviewScreenState extends State<SeasonWalkReviewScreen> {
     return Scaffold(
       backgroundColor: Colors.transparent,
       body: ImmersiveBackground(
+        frameChild: false,
         child: SafeArea(
           child: Column(
             children: [
-              TopBar(
-                title: l10n.seasonWeekReviewTitle(widget.weekIndex + 1),
-                subtitle: widget.campaign.title,
-                onBack: () => Navigator.pop(context),
-                leadingGlyph: CinematicGlyph.scroll,
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: AppSpace.screen,
+                ),
+                child: TopBar(
+                  title: l10n.seasonWeekReviewTitle(widget.weekIndex + 1),
+                  subtitle: widget.campaign.title,
+                  onBack: () => Navigator.pop(context),
+                  leadingGlyph: CinematicGlyph.scroll,
+                ),
               ),
               Expanded(
-                child: ListView(
-                  padding: const EdgeInsets.fromLTRB(
-                    AppSpace.screen,
-                    AppSpace.md,
-                    AppSpace.screen,
-                    AppSpace.xl,
-                  ),
-                  children: [
-                    RelicChapter(
-                      title: l10n.seasonWeekInsightsHeader,
-                      accent: AppRoles.chrome,
-                      divided: false,
+                child: ContentFrame(
+                  child: ListView(
+                    padding: const EdgeInsets.fromLTRB(
+                      AppSpace.screen,
+                      AppSpace.md,
+                      AppSpace.screen,
+                      AppSpace.xl,
                     ),
-                    const SizedBox(height: 12),
-                    for (final day in _days)
-                      Padding(
-                        padding: const EdgeInsets.only(bottom: 10),
-                        child: GlassCard(
-                          padding: AppMetrics.cardPaddingCompact,
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                l10n.seasonDayLine(day.index, day.title),
-                                style: AppTypography.body(
-                                  size: 12,
-                                  color: a.textFaint,
+                    children: [
+                      RelicChapter(
+                        title: l10n.seasonWeekInsightsHeader,
+                        accent: AppRoles.chrome,
+                        divided: false,
+                      ),
+                      const SizedBox(height: 12),
+                      for (final day in _days)
+                        Padding(
+                          padding: const EdgeInsets.only(bottom: 10),
+                          child: GlassCard(
+                            padding: AppMetrics.cardPaddingCompact,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  l10n.seasonDayLine(day.index, day.title),
+                                  style: AppTypography.body(
+                                    size: 12,
+                                    color: a.textFaint,
+                                  ),
                                 ),
-                              ),
-                              const SizedBox(height: 4),
-                              Text(
-                                l10n.seasonTodayInsight(day.insight),
-                                style: AppTypography.title(
-                                  size: 14,
-                                  color: a.text,
+                                const SizedBox(height: 4),
+                                Text(
+                                  l10n.seasonTodayInsight(day.insight),
+                                  style: AppTypography.title(
+                                    size: 14,
+                                    color: a.text,
+                                  ),
                                 ),
-                              ),
-                            ],
+                              ],
+                            ),
                           ),
                         ),
+                      const SizedBox(height: AppSpace.lg),
+                      CopperCta(
+                        label: _loading
+                            ? l10n.seasonReviewPreparing
+                            : l10n.seasonReviewStart,
+                        expanded: true,
+                        onTap: _loading ? null : _startReview,
                       ),
-                    const SizedBox(height: AppSpace.lg),
-                    CopperCta(
-                      label: _loading
-                          ? l10n.seasonReviewPreparing
-                          : l10n.seasonReviewStart,
-                      expanded: true,
-                      onTap: _loading ? null : _startReview,
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ],

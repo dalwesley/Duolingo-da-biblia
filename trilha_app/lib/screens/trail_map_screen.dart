@@ -17,6 +17,7 @@ import '../services/content_catalog_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/layout_utils.dart';
 import '../utils/day_phase.dart';
 import '../utils/difficulty_trails.dart';
 import '../utils/difficulty_visuals.dart';
@@ -199,6 +200,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
           backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
           body: ImmersiveBackground(
             appearance: appearance,
+            frameChild: false,
             child: Column(
               children: [
                 Padding(
@@ -219,20 +221,22 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                   ),
                 ),
                 Expanded(
-                  child: ListView(
-                    padding: const EdgeInsets.fromLTRB(
-                      AppSpace.screen,
-                      AppSpace.xxxl,
-                      AppSpace.screen,
-                      32,
-                    ),
-                    children: [
-                      EmptyState(
-                        glyph: CinematicGlyphResolver.forTrail(trail.slug),
-                        title: context.l10n.commonComingSoon,
-                        body: trail.localizedDescription,
+                  child: ContentFrame(
+                    child: ListView(
+                      padding: const EdgeInsets.fromLTRB(
+                        AppSpace.screen,
+                        AppSpace.xxxl,
+                        AppSpace.screen,
+                        32,
                       ),
-                    ],
+                      children: [
+                        EmptyState(
+                          glyph: CinematicGlyphResolver.forTrail(trail.slug),
+                          title: context.l10n.commonComingSoon,
+                          body: trail.localizedDescription,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ],
@@ -270,6 +274,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
           backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
           body: ImmersiveBackground(
             appearance: appearance,
+            frameChild: false,
             child: Column(
               children: [
                 Padding(
@@ -303,127 +308,133 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                   ),
                 ),
                 Expanded(
-                  child: ListView(
-                    controller: _scrollController,
-                    padding: const EdgeInsets.fromLTRB(0, AppSpace.md, 0, 64),
-                    children: [
-                      if (_fromBank)
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            AppSpace.screen,
-                            AppSpace.md,
-                            AppSpace.screen,
-                            AppSpace.sm,
+                  child: ContentFrame(
+                    child: ListView(
+                      controller: _scrollController,
+                      padding: const EdgeInsets.fromLTRB(0, AppSpace.md, 0, 64),
+                      children: [
+                        if (_fromBank)
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(
+                              AppSpace.screen,
+                              AppSpace.md,
+                              AppSpace.screen,
+                              AppSpace.sm,
+                            ),
+                            child: ModeBanner(
+                              trailSlug: widget.slug,
+                              trailTitle: trail.localizedTitle,
+                              missionSlugs: allSlugs,
+                              caption: modeBanner,
+                            ),
+                          )
+                        else if (modeBanner != null)
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(
+                              AppSpace.screen,
+                              0,
+                              AppSpace.screen,
+                              0,
+                            ),
+                            child: _ModeReplayBanner(
+                              text: modeBanner,
+                              difficultyId: difficultyId,
+                              sealed: sealedHint != null,
+                            ),
                           ),
-                          child: ModeBanner(
-                            trailSlug: widget.slug,
-                            trailTitle: trail.localizedTitle,
-                            missionSlugs: allSlugs,
-                            caption: modeBanner,
+                        if (!_fromBank)
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(
+                              AppSpace.screen,
+                              AppSpace.md,
+                              AppSpace.screen,
+                              AppSpace.sm,
+                            ),
+                            child: _TrailJourneyIntro(
+                              difficultyId: null,
+                              clearedModeIds: const [],
+                              progressCaption: context.l10n
+                                  .trailsLabeledScenesOf(
+                                    modeName,
+                                    prog.done,
+                                    prog.total,
+                                  ),
+                            ),
                           ),
-                        )
-                      else if (modeBanner != null)
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            AppSpace.screen,
-                            0,
-                            AppSpace.screen,
-                            0,
+                        if (_trailMedalChip(progress, trail) != null)
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(
+                              AppSpace.screen,
+                              0,
+                              AppSpace.screen,
+                              AppSpace.md,
+                            ),
+                            child: _trailMedalChip(progress, trail)!,
                           ),
-                          child: _ModeReplayBanner(
-                            text: modeBanner,
-                            difficultyId: difficultyId,
-                            sealed: sealedHint != null,
+                        if (_trailSealChip(progress, trail) != null)
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(
+                              AppSpace.screen,
+                              0,
+                              AppSpace.screen,
+                              AppSpace.md,
+                            ),
+                            child: _trailSealChip(progress, trail)!,
                           ),
-                        ),
-                      if (!_fromBank)
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            AppSpace.screen,
-                            AppSpace.md,
-                            AppSpace.screen,
-                            AppSpace.sm,
-                          ),
-                          child: _TrailJourneyIntro(
-                            difficultyId: null,
-                            clearedModeIds: const [],
-                            progressCaption:
-                                context.l10n.trailsLabeledScenesOf(modeName, prog.done, prog.total),
-                          ),
-                        ),
-                      if (_trailMedalChip(progress, trail) != null)
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            AppSpace.screen,
-                            0,
-                            AppSpace.screen,
-                            AppSpace.md,
-                          ),
-                          child: _trailMedalChip(progress, trail)!,
-                        ),
-                      if (_trailSealChip(progress, trail) != null)
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(
-                            AppSpace.screen,
-                            0,
-                            AppSpace.screen,
-                            AppSpace.md,
-                          ),
-                          child: _trailSealChip(progress, trail)!,
-                        ),
-                      ...trail.modules.asMap().entries.map((entry) {
-                        final mi = entry.key;
-                        final mod = entry.value;
-                        final start = trail.modules
-                            .take(mi)
-                            .fold(0, (sum, m) => sum + m.missions.length);
-                        final moduleTheme = GenesisModuleTheme.forModule(
-                          mod.localizedTitle,
-                          realm: _realm,
-                          trailSlug: trail.slug,
-                        );
-                        final isActive = mi == activeModule;
-                        final modDone = mod.missions
-                            .where((m) => completed.contains(m.slug))
-                            .length;
+                        ...trail.modules.asMap().entries.map((entry) {
+                          final mi = entry.key;
+                          final mod = entry.value;
+                          final start = trail.modules
+                              .take(mi)
+                              .fold(0, (sum, m) => sum + m.missions.length);
+                          final moduleTheme = GenesisModuleTheme.forModule(
+                            mod.localizedTitle,
+                            realm: _realm,
+                            trailSlug: trail.slug,
+                          );
+                          final isActive = mi == activeModule;
+                          final modDone = mod.missions
+                              .where((m) => completed.contains(m.slug))
+                              .length;
 
-                        final path = TrailMapPath(
-                          missions: mod.missions,
-                          startGlobalIndex: start,
-                          allSlugs: allSlugs,
-                          completedMissions: completed,
-                          theme: moduleTheme,
-                          modeAccent: modeAccent,
-                          onMissionTap: (slug) => Navigator.of(
-                            context,
-                          ).pushNamed('/lesson', arguments: slug),
-                        );
+                          final path = TrailMapPath(
+                            missions: mod.missions,
+                            startGlobalIndex: start,
+                            allSlugs: allSlugs,
+                            completedMissions: completed,
+                            theme: moduleTheme,
+                            modeAccent: modeAccent,
+                            onMissionTap: (slug) => Navigator.of(
+                              context,
+                            ).pushNamed('/lesson', arguments: slug),
+                          );
 
-                        return GenesisModuleScenery(
-                          theme: moduleTheme,
-                          moduleTitle: mod.localizedTitle,
-                          sectionIndex: mi + 1,
-                          isActiveChapter: isActive,
-                          missionsDone: modDone,
-                          missionsTotal: mod.missions.length,
-                          modeAccent: modeAccent,
-                          child: path,
-                        );
-                      }),
-                      Padding(
-                        padding: const EdgeInsets.fromLTRB(
-                          AppSpace.screen,
-                          AppSpace.md,
-                          AppSpace.screen,
-                          AppSpace.lg,
+                          return GenesisModuleScenery(
+                            theme: moduleTheme,
+                            moduleTitle: mod.localizedTitle,
+                            sectionIndex: mi + 1,
+                            isActiveChapter: isActive,
+                            missionsDone: modDone,
+                            missionsTotal: mod.missions.length,
+                            modeAccent: modeAccent,
+                            child: path,
+                          );
+                        }),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(
+                            AppSpace.screen,
+                            AppSpace.md,
+                            AppSpace.screen,
+                            AppSpace.lg,
+                          ),
+                          child: MilestoneChestsCard(
+                            trailSlug: trail.slug,
+                            done: prog.done,
+                            total: prog.total,
+                          ),
                         ),
-                        child: MilestoneChestsCard(
-                          trailSlug: trail.slug,
-                          done: prog.done,
-                          total: prog.total,
-                        ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               ],

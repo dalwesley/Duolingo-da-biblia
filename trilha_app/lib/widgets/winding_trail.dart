@@ -23,7 +23,7 @@ bool windingBubbleOnLeft(int index) {
   return windingShift(index + 1) >= here;
 }
 
-/// Curva com tracejado que corre no trecho andado — o mapa “vive”.
+/// Curva de pegadas; as andadas avançam no trecho percorrido.
 /// Anima só a pintura; os cards não rebuildam.
 class FlowingWindingTrail extends StatefulWidget {
   final Color walked;
@@ -224,7 +224,7 @@ class RenderWindingTrail extends RenderBox
   final List<Path> _covers = [];
   bool _linkEdges = false;
 
-  double get _dashPhase => (_flow?.value ?? 0) * 13;
+  double get _dashPhase => -(_flow?.value ?? 0) * 13;
 
   Color get walked => _walked;
   set walked(Color value) {
@@ -422,25 +422,6 @@ class RenderWindingTrail extends RenderBox
     Color color, {
     required bool onlyWalked,
   }) {
-    final paint = Paint()
-      ..color = color
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = onlyWalked ? 4.0 : 3.2
-      ..strokeCap = StrokeCap.round
-      ..strokeJoin = StrokeJoin.round
-      ..isAntiAlias = true;
-
-    final glowPaint = onlyWalked
-        ? (Paint()
-            ..color = color.withValues(alpha: 0.38)
-            ..style = PaintingStyle.stroke
-            ..strokeWidth = 10
-            ..strokeCap = StrokeCap.round
-            ..strokeJoin = StrokeJoin.round
-            ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 7)
-            ..isAntiAlias = true)
-        : null;
-
     for (var i = 0; i < _bounds.length - 1; i++) {
       if (_passed[i] != onlyWalked) continue;
       final start = _leave(i) + offset;
@@ -452,72 +433,25 @@ class RenderWindingTrail extends RenderBox
       if (shaft != null) {
         path.lineTo(shaft.center.dx + offset.dx, shaft.bottom + offset.dy);
       }
-      if (glowPaint != null) {
-        canvas.drawPath(path, glowPaint);
+      if (onlyWalked) {
+        canvas.drawPath(
+          path,
+          Paint()
+            ..color = color.withValues(alpha: 0.22)
+            ..style = PaintingStyle.stroke
+            ..strokeWidth = 10
+            ..strokeCap = StrokeCap.round
+            ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 6),
+        );
       }
-      canvas.drawPath(
-        _dashed(path, phase: onlyWalked ? _dashPhase : 0),
-        paint,
-      );
-      final intoBeacon =
-          i + 1 < _beacon.length && _beacon[i + 1] && onlyWalked;
-      _paintWaypoints(
+      _paintFootprints(
         canvas,
-        start,
-        end,
+        path,
         color,
+        phase: onlyWalked ? _dashPhase : 0,
         lit: onlyWalked,
-        beacon: intoBeacon,
       );
     }
-  }
-
-  /// Pedra no vão — mesmo lábio do [PathNode], em pintura.
-  void _paintWaypoints(
-    Canvas canvas,
-    Offset start,
-    Offset end,
-    Color color, {
-    required bool lit,
-    bool beacon = false,
-  }) {
-    final mid = Offset(
-      (start.dx + end.dx) / 2,
-      (start.dy + end.dy) / 2,
-    );
-    final r = beacon ? 9.0 : (lit ? 6.5 : 5.0);
-    final lip = Color.lerp(color, const Color(0xFF1A2433), 0.32)!;
-    final fill = lit || beacon
-        ? color
-        : Color.lerp(color, const Color(0xFF1A2433), 0.45)!;
-
-    // Lábio de baixo (profundidade de botão).
-    canvas.drawCircle(
-      mid.translate(0, beacon ? 2.4 : 1.8),
-      r,
-      Paint()..color = lip.withValues(alpha: lit || beacon ? 0.95 : 0.7),
-    );
-    if (lit || beacon) {
-      canvas.drawCircle(
-        mid,
-        r + (beacon ? 7 : 3),
-        Paint()
-          ..color = color.withValues(alpha: beacon ? 0.38 : 0.22)
-          ..maskFilter = MaskFilter.blur(
-            BlurStyle.normal,
-            beacon ? 6 : 3.5,
-          ),
-      );
-    }
-    canvas.drawCircle(mid, r, Paint()..color = fill);
-    canvas.drawCircle(
-      mid.translate(0, -0.6),
-      r * (beacon ? 0.42 : 0.38),
-      Paint()
-        ..color = AppColors.textOnDark.withValues(
-          alpha: lit || beacon ? 0.6 : 0.28,
-        ),
-    );
   }
 
   /// Base do card — no marco de fase, o centro da base.
@@ -594,34 +528,27 @@ class RenderWindingTrail extends RenderBox
     Color color, {
     required bool onlyWalked,
   }) {
-    final paint = Paint()
-      ..color = color
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = onlyWalked ? 4.0 : 3.2
-      ..strokeCap = StrokeCap.round
-      ..strokeJoin = StrokeJoin.round
-      ..isAntiAlias = true;
-
-    final glowPaint = onlyWalked
-        ? (Paint()
-            ..color = color.withValues(alpha: 0.34)
-            ..style = PaintingStyle.stroke
-            ..strokeWidth = 9
-            ..strokeCap = StrokeCap.round
-            ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 6)
-            ..isAntiAlias = true)
-        : null;
-
-    // Um Path só por trecho da mesma cor, depois picotado. A trilha é
-    // tracejada e segue a curva, não uma sequência de retas.
     final run = <Offset>[];
     void flush() {
       if (run.length >= 2) {
         final flowing = _flowing(run, offset);
-        if (glowPaint != null) canvas.drawPath(flowing, glowPaint);
-        canvas.drawPath(
-          _dashed(flowing, phase: onlyWalked ? _dashPhase : 0),
-          paint,
+        if (onlyWalked) {
+          canvas.drawPath(
+            flowing,
+            Paint()
+              ..color = color.withValues(alpha: 0.22)
+              ..style = PaintingStyle.stroke
+              ..strokeWidth = 9
+              ..strokeCap = StrokeCap.round
+              ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 6),
+          );
+        }
+        _paintFootprints(
+          canvas,
+          flowing,
+          color,
+          phase: onlyWalked ? _dashPhase : 0,
+          lit: onlyWalked,
         );
       }
       run.clear();
@@ -673,23 +600,91 @@ class RenderWindingTrail extends RenderBox
     return (side * 0.94 + nudge).clamp(-1.0, 1.0).toDouble();
   }
 
-  Path _dashed(Path source, {double phase = 0}) {
-    const dash = 8.0;
-    const gap = 5.0;
-    final period = dash + gap;
-    final out = Path();
+  /// Pegadas ao longo da curva — esquerda/direita, alinhadas à tangente.
+  void _paintFootprints(
+    Canvas canvas,
+    Path source,
+    Color color, {
+    double phase = 0,
+    required bool lit,
+  }) {
+    const step = 20.0;
+    final paint = Paint()
+      ..color = color.withValues(alpha: lit ? 0.95 : 0.55)
+      ..isAntiAlias = true;
     for (final metric in source.computeMetrics()) {
-      var distance = -((phase % period) + period) % period;
+      var distance = -((phase % step) + step) % step;
+      var leftFoot = true;
       while (distance < metric.length) {
-        final start = math.max(0.0, distance);
-        final end = math.min(distance + dash, metric.length);
-        if (end > start) {
-          out.addPath(metric.extractPath(start, end), Offset.zero);
+        if (distance >= 0) {
+          final tangent = metric.getTangentForOffset(distance);
+          if (tangent != null) {
+            _drawFootprint(
+              canvas,
+              tangent.position,
+              tangent.angle,
+              left: leftFoot,
+              paint: paint,
+              lit: lit,
+            );
+          }
         }
-        distance += period;
+        leftFoot = !leftFoot;
+        distance += step;
       }
     }
-    return out;
+  }
+
+  void _drawFootprint(
+    Canvas canvas,
+    Offset at,
+    double angle, {
+    required bool left,
+    required Paint paint,
+    required bool lit,
+  }) {
+    final scale = lit ? 1.05 : 0.9;
+    final side = left ? -1.0 : 1.0;
+    final normal = Offset(-math.sin(angle), math.cos(angle));
+    final center = at + normal * (3.4 * side * scale);
+
+    canvas.save();
+    canvas.translate(center.dx, center.dy);
+    // Tangente 0 = +X; a sola aponta “para frente” no caminho.
+    canvas.rotate(angle - math.pi / 2);
+
+    // Planta
+    canvas.drawOval(
+      Rect.fromCenter(
+        center: Offset(0, -1.2 * scale),
+        width: 5.2 * scale,
+        height: 8.2 * scale,
+      ),
+      paint,
+    );
+    // Calcanhar
+    canvas.drawOval(
+      Rect.fromCenter(
+        center: Offset(0, 4.0 * scale),
+        width: 4.0 * scale,
+        height: 3.6 * scale,
+      ),
+      paint,
+    );
+    // Dedos
+    for (var i = 0; i < 5; i++) {
+      final tx = (i - 2) * 1.2 * scale;
+      final ty = (-6.0 - (i == 2 ? 1.0 : 0.35)) * scale;
+      canvas.drawOval(
+        Rect.fromCenter(
+          center: Offset(tx, ty),
+          width: 1.35 * scale,
+          height: 1.85 * scale,
+        ),
+        paint,
+      );
+    }
+    canvas.restore();
   }
 
   /// Conversão centrípeta (alpha 0.5) para Bézier. Não dá laço quando um

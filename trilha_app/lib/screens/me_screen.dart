@@ -41,6 +41,7 @@ void openMeProfile(BuildContext context) {
           backgroundColor: Colors.transparent,
           body: ImmersiveBackground(
             appearance: appearance,
+            frameChild: false,
             child: MeScreen(onBack: () => Navigator.pop(ctx)),
           ),
         ),
@@ -150,9 +151,11 @@ class _MeScreenState extends State<MeScreen> {
       epithet = epithet == null ? record.line : '$epithet · ${record.line}';
     }
 
-    Widget pad(Widget child) => Padding(
-      padding: const EdgeInsets.symmetric(horizontal: AppSpace.screen),
-      child: child,
+    Widget pad(Widget child) => ContentFrame(
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: AppSpace.screen),
+        child: child,
+      ),
     );
 
     final body = <Widget>[

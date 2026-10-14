@@ -81,10 +81,8 @@ class _HomeScreenState extends State<HomeScreen>
   @override
   void initState() {
     super.initState();
-    _fadeIn = AnimationController(
-      vsync: this,
-      duration: AppMotion.slow,
-    )..forward();
+    _fadeIn = AnimationController(vsync: this, duration: AppMotion.slow)
+      ..forward();
     _load();
   }
 
@@ -302,6 +300,7 @@ class _HomeScreenState extends State<HomeScreen>
             backgroundColor: Colors.transparent,
             body: ImmersiveBackground(
               appearance: appearance,
+              frameChild: false,
               child: BibleScreen(
                 topBar: TopBar(
                   inline: true,
@@ -537,97 +536,119 @@ class _HomeScreenState extends State<HomeScreen>
     // da trilha vive só dentro do card herói. Cards comuns ficam neutros.
     return Stack(
       children: [
-        ListView(
-          padding: EdgeInsets.fromLTRB(
-            AppSpace.screen,
-            MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
-            AppSpace.screen,
-            scrollPaddingBelowNav(context),
-          ),
-          physics: const ClampingScrollPhysics(),
-          children: [
-            // Header: saudação + estação + pulso do dia.
-            _reveal(
-              0,
-              HomePlayerHeader(
-                onProfileTap: widget.onOpenProfile,
-                onTapMission: goalMet
-                    ? null
-                    : current != null
-                    ? () => widget.onOpenMission(current.slug)
-                    : widget.onOpenTrilhas,
-                onLiturgyTap: () =>
-                    _openBible(LiturgicalCalendar.momentFor().focusRef),
+        LayoutBuilder(
+          builder: (context, constraints) {
+            final gutter = contentGutterOf(constraints.maxWidth);
+            return ListView(
+              padding: EdgeInsets.fromLTRB(
+                0,
+                MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
+                0,
+                scrollPaddingBelowNav(context),
               ),
-            ),
-            const SizedBox(height: AppSpace.lg),
-            // CTA dominante: missão pronta.
-            _reveal(
-              1,
-              Column(
-                children: [
-                  HeroContinueCard(
-                    mission: current,
-                    trailTitle: active?.title ?? '',
-                    trailSlug: active?.slug ?? 'genesis-1-11',
-                    trailColor: active?.color ?? '#1B3A5C',
-                    onTap: current != null
-                        ? () => widget.onOpenMission(current.slug)
-                        : null,
-                    onExploreTrails: widget.onOpenTrilhas,
-                    goalMet: goalMet,
-                    atRisk: progress.isStreakAtRisk,
+              physics: const ClampingScrollPhysics(),
+              children: [
+                // Header: saudação + estação + pulso do dia.
+                Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: AppSpace.screen,
                   ),
-                  _WalkHomeCard(heroMissionSlug: current?.slug),
-                ],
-              ),
-            ),
-            if (cornerFace != null) ...[
-              const SizedBox(height: AppSpace.section),
-              _reveal(
-                2,
-                DesafioEntry(
-                  onTap: () {
-                    ActHaptics.tap();
-                    _openDesafioFace();
-                  },
+                  child: _reveal(
+                    0,
+                    HomePlayerHeader(
+                      onProfileTap: widget.onOpenProfile,
+                      onTapMission: goalMet
+                          ? null
+                          : current != null
+                          ? () => widget.onOpenMission(current.slug)
+                          : widget.onOpenTrilhas,
+                      onLiturgyTap: () =>
+                          _openBible(LiturgicalCalendar.momentFor().focusRef),
+                    ),
+                  ),
                 ),
-              ),
-            ],
-            // Uma coisa só abaixo da missão: o reparo da sequência, se houver.
-            if (progress.showStreakRepairOffer) ...[
-              const SizedBox(height: AppSpace.section),
-              _reveal(2, const StreakRepairBanner()),
-            ],
-            // O resto vive em "Mais para hoje" (abre em folha) e na aba
-            // Juntos — nada some, só deixa de disputar com a missão.
-            Builder(
-              builder: (context) {
-                final tiles = _moreToday(
-                  context,
-                  progress: progress,
-                  goalMet: goalMet,
-                  trails: trails,
-                  missionSlug: current?.slug,
-                );
-                if (tiles.isEmpty) return const SizedBox.shrink();
-                return Padding(
-                  padding: const EdgeInsets.only(top: AppSpace.section),
-                  child: _reveal(3, _MoreToday(tiles: tiles)),
-                );
-              },
-            ),
-            if (current == null) ...[
-              const SizedBox(height: AppSpace.section),
-              _reveal(
-                4,
-                HomeWordCard(
-                  mission: current,
-                  onOpen: (ref) => _openBible(ref),
+                Padding(
+                  padding: EdgeInsets.symmetric(
+                    horizontal: AppSpace.screen + gutter,
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      const SizedBox(height: AppSpace.lg),
+                      // CTA dominante: missão pronta.
+                      _reveal(
+                        1,
+                        Column(
+                          children: [
+                            HeroContinueCard(
+                              mission: current,
+                              trailTitle: active?.title ?? '',
+                              trailSlug: active?.slug ?? 'genesis-1-11',
+                              trailColor: active?.color ?? '#1B3A5C',
+                              onTap: current != null
+                                  ? () => widget.onOpenMission(current.slug)
+                                  : null,
+                              onExploreTrails: widget.onOpenTrilhas,
+                              goalMet: goalMet,
+                              atRisk: progress.isStreakAtRisk,
+                            ),
+                            _WalkHomeCard(heroMissionSlug: current?.slug),
+                          ],
+                        ),
+                      ),
+                      if (cornerFace != null) ...[
+                        const SizedBox(height: AppSpace.section),
+                        _reveal(
+                          2,
+                          DesafioEntry(
+                            onTap: () {
+                              ActHaptics.tap();
+                              _openDesafioFace();
+                            },
+                          ),
+                        ),
+                      ],
+                      // Uma coisa só abaixo da missão: o reparo da sequência, se houver.
+                      if (progress.showStreakRepairOffer) ...[
+                        const SizedBox(height: AppSpace.section),
+                        _reveal(2, const StreakRepairBanner()),
+                      ],
+                      // O resto vive em "Mais para hoje" (abre em folha) e na aba
+                      // Juntos — nada some, só deixa de disputar com a missão.
+                      Builder(
+                        builder: (context) {
+                          final tiles = _moreToday(
+                            context,
+                            progress: progress,
+                            goalMet: goalMet,
+                            trails: trails,
+                            missionSlug: current?.slug,
+                          );
+                          if (tiles.isEmpty) return const SizedBox.shrink();
+                          return Padding(
+                            padding: const EdgeInsets.only(
+                              top: AppSpace.section,
+                            ),
+                            child: _reveal(3, _MoreToday(tiles: tiles)),
+                          );
+                        },
+                      ),
+                      if (current == null) ...[
+                        const SizedBox(height: AppSpace.section),
+                        _reveal(
+                          4,
+                          HomeWordCard(
+                            mission: current,
+                            onOpen: (ref) => _openBible(ref),
+                          ),
+                        ),
+                      ],
+                    ],
+                  ),
                 ),
-              ),
-            ],
-          ],
+              ],
+            );
+          },
         ),
         WaveHandsOverlay(active: nudge != null),
       ],
@@ -649,9 +670,9 @@ class _CatalogUnavailable extends StatelessWidget {
     final a = Appearance.of(context);
     return ListView(
       padding: EdgeInsets.fromLTRB(
-        AppSpace.screen,
+        AppSpace.screen + contentGutterOf(MediaQuery.sizeOf(context).width),
         MediaQuery.viewPaddingOf(context).top + AppSpace.xxl,
-        AppSpace.screen,
+        AppSpace.screen + contentGutterOf(MediaQuery.sizeOf(context).width),
         scrollPaddingBelowNav(context),
       ),
       children: [
@@ -719,9 +740,9 @@ class _HomeSkeletonState extends State<_HomeSkeleton>
   Widget build(BuildContext context) {
     return ListView(
       padding: EdgeInsets.fromLTRB(
-        AppSpace.screen,
+        AppSpace.screen + contentGutterOf(MediaQuery.sizeOf(context).width),
         MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
-        AppSpace.screen,
+        AppSpace.screen + contentGutterOf(MediaQuery.sizeOf(context).width),
         scrollPaddingBelowNav(context),
       ),
       physics: const NeverScrollableScrollPhysics(),

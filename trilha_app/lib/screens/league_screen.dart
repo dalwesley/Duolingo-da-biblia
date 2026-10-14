@@ -115,10 +115,8 @@ class _LeagueScreenState extends State<LeagueScreen>
   @override
   void initState() {
     super.initState();
-    _enter = AnimationController(
-      vsync: this,
-      duration: AppMotion.scene,
-    )..forward();
+    _enter = AnimationController(vsync: this, duration: AppMotion.scene)
+      ..forward();
     InviteDeepLinkService.instance.addListener(_onPendingInvite);
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _settle();
@@ -372,71 +370,93 @@ class _LeagueScreenState extends State<LeagueScreen>
         RefreshIndicator(
           color: AppRoles.presence,
           onRefresh: _settle,
-          child: ListView(
-            physics: const AlwaysScrollableScrollPhysics(),
-            padding: EdgeInsets.fromLTRB(
-              AppSpace.screen,
-              widget.topBar == null
-                  ? AppSpace.sm
-                  : MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
-              AppSpace.screen,
-              scrollPaddingBelowNav(context),
-            ),
-            children: [
-              if (widget.topBar != null) ...[
-                widget.topBar!,
-                const SizedBox(height: AppSpace.afterTopBar),
-              ],
-              _reveal(
-                0,
-                _SegmentTabs(
-                  index: _tab,
-                  caravanAlert: JuntosInbox.caravanPending(context) > 0,
-                  companionAlert: companionNudge != null || cornerFace != null,
-                  gruposAlert: roomIncoming.isNotEmpty,
-                  onChanged: (i) {
-                    ActHaptics.tap();
-                    setState(() => _tab = i);
-                  },
+          child: LayoutBuilder(
+            builder: (context, constraints) {
+              final gutter = contentGutterOf(constraints.maxWidth);
+              return ListView(
+                physics: const AlwaysScrollableScrollPhysics(),
+                padding: EdgeInsets.fromLTRB(
+                  0,
+                  widget.topBar == null
+                      ? AppSpace.sm
+                      : MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
+                  0,
+                  scrollPaddingBelowNav(context),
                 ),
-              ),
-              const SizedBox(height: AppSpace.section),
-              // Troca de aba: um filho só — empilhar o anterior dobrava paint.
-              AnimatedSwitcher(
-                duration: AppMotion.standard,
-                switchInCurve: AppMotion.enter,
-                switchOutCurve: AppMotion.exit,
-                layoutBuilder: (current, _) =>
-                    current ?? const SizedBox.shrink(),
-                transitionBuilder: (child, animation) {
-                  return FadeTransition(
-                    opacity: animation,
-                    child: SlideTransition(
-                      position: Tween<Offset>(
-                        begin: const Offset(0.04, 0),
-                        end: Offset.zero,
-                      ).animate(animation),
-                      child: child,
-                    ),
-                  );
-                },
-                child: Column(
-                  key: ValueKey(_tab),
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: switch (_tab) {
-                    _tabCompanhia => _buildCompanions(context),
-                    _tabCaravana => [
-                      JuntosInbox(
-                        onOpenCaravana: () =>
-                            setState(() => _tab = _tabCaravana),
+                children: [
+                  if (widget.topBar != null) ...[
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: AppSpace.screen,
                       ),
-                      ..._buildLeague(context),
-                    ],
-                    _ => _buildRooms(context),
-                  },
-                ),
-              ),
-            ],
+                      child: widget.topBar!,
+                    ),
+                    const SizedBox(height: AppSpace.afterTopBar),
+                  ],
+                  Padding(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: AppSpace.screen + gutter,
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        _reveal(
+                          0,
+                          _SegmentTabs(
+                            index: _tab,
+                            caravanAlert:
+                                JuntosInbox.caravanPending(context) > 0,
+                            companionAlert:
+                                companionNudge != null || cornerFace != null,
+                            gruposAlert: roomIncoming.isNotEmpty,
+                            onChanged: (i) {
+                              ActHaptics.tap();
+                              setState(() => _tab = i);
+                            },
+                          ),
+                        ),
+                        const SizedBox(height: AppSpace.section),
+                        // Troca de aba: um filho só — empilhar o anterior dobrava paint.
+                        AnimatedSwitcher(
+                          duration: AppMotion.standard,
+                          switchInCurve: AppMotion.enter,
+                          switchOutCurve: AppMotion.exit,
+                          layoutBuilder: (current, _) =>
+                              current ?? const SizedBox.shrink(),
+                          transitionBuilder: (child, animation) {
+                            return FadeTransition(
+                              opacity: animation,
+                              child: SlideTransition(
+                                position: Tween<Offset>(
+                                  begin: const Offset(0.04, 0),
+                                  end: Offset.zero,
+                                ).animate(animation),
+                                child: child,
+                              ),
+                            );
+                          },
+                          child: Column(
+                            key: ValueKey(_tab),
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: switch (_tab) {
+                              _tabCompanhia => _buildCompanions(context),
+                              _tabCaravana => [
+                                JuntosInbox(
+                                  onOpenCaravana: () =>
+                                      setState(() => _tab = _tabCaravana),
+                                ),
+                                ..._buildLeague(context),
+                              ],
+                              _ => _buildRooms(context),
+                            },
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              );
+            },
           ),
         ),
       ],
@@ -1682,10 +1702,7 @@ class _ExplainerSteps extends StatelessWidget {
   final List<(CinematicGlyph, String)> steps;
   final Color accent;
 
-  const _ExplainerSteps({
-    required this.steps,
-    this.accent = AppRoles.presence,
-  });
+  const _ExplainerSteps({required this.steps, this.accent = AppRoles.presence});
 
   @override
   Widget build(BuildContext context) {
@@ -1709,9 +1726,7 @@ class _ExplainerSteps extends StatelessWidget {
                   top: well / 2,
                   width: segment,
                   height: 1,
-                  child: ColoredBox(
-                    color: accent.withValues(alpha: 0.35),
-                  ),
+                  child: ColoredBox(color: accent.withValues(alpha: 0.35)),
                 ),
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,

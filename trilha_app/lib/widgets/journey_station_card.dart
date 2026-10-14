@@ -141,9 +141,7 @@ class JourneyStationCard extends StatelessWidget {
                 size: quiet ? 11 : 12,
                 weight: FontWeight.w700,
                 height: 1.25,
-                color: quiet
-                    ? Color.lerp(a.textFaint, accent, 0.32)!
-                    : ink,
+                color: quiet ? Color.lerp(a.textFaint, accent, 0.32)! : ink,
               ),
             ),
           if (isCurrent && total > 0) ...[
@@ -326,18 +324,22 @@ class JourneyStationCard extends StatelessWidget {
         button: onTap != null,
         child: LayoutBuilder(
           builder: (context, constraints) {
+            final room = constraints.maxWidth;
+            // No tablet a coluna é mais larga: o teto do celular corta
+            // o título ("Deuteronômio") e deixa o card minúsculo no vão.
+            final wide = room >= 440;
             final fraction = isCurrent
                 ? 0.72
                 : quiet
                 ? 0.48
                 : 0.56;
-            final preferred = math.min(
-              isCurrent ? 220.0 : (quiet ? 152.0 : 176.0),
-              math.max(
-                quiet ? 128.0 : 148.0,
-                constraints.maxWidth * fraction,
-              ),
-            );
+            final cap = wide
+                ? (isCurrent ? 320.0 : (quiet ? 248.0 : 280.0))
+                : (isCurrent ? 220.0 : (quiet ? 152.0 : 176.0));
+            final floor = wide
+                ? (quiet ? 200.0 : 220.0)
+                : (quiet ? 128.0 : 148.0);
+            final preferred = math.min(cap, math.max(floor, room * fraction));
             final width = math.min(preferred, constraints.maxWidth);
             return SizedBox(width: width, child: tappable);
           },

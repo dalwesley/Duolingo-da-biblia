@@ -201,8 +201,7 @@ class _TrilhasScreenState extends State<TrilhasScreen>
               const SizedBox(height: AppSpace.sm),
               AppSheetHeader(
                 title: TrailRealm.teologia.label,
-                subtitle:
-                    ctx.l10n.realmTeologiaSoonBody,
+                subtitle: ctx.l10n.realmTeologiaSoonBody,
                 center: true,
               ),
               const SizedBox(height: AppSpace.lg),
@@ -299,9 +298,9 @@ class _TrilhasScreenState extends State<TrilhasScreen>
     if (_trails!.isEmpty) {
       return ListView(
         padding: EdgeInsets.fromLTRB(
-          AppSpace.screen,
+          AppSpace.screen + contentGutterOf(MediaQuery.sizeOf(context).width),
           topInset + AppSpace.xxl,
-          AppSpace.screen,
+          AppSpace.screen + contentGutterOf(MediaQuery.sizeOf(context).width),
           scrollPaddingBelowNav(context),
         ),
         children: [
@@ -356,98 +355,121 @@ class _TrilhasScreenState extends State<TrilhasScreen>
         ? 32 + MediaQuery.viewPaddingOf(context).bottom
         : scrollPaddingBelowNav(context);
 
-    return ListView(
-      padding: EdgeInsets.fromLTRB(
-        AppSpace.screen,
-        topPad,
-        AppSpace.screen,
-        bottomPad,
-      ),
-      physics: const BouncingScrollPhysics(),
-      children: [
-        if (widget.topBar != null) ...[
-          widget.topBar!,
-          const SizedBox(height: AppSpace.afterTopBar),
-        ],
-        if (active != null && current != null)
-          _reveal(
-            0,
-            TickerMode(
-              enabled: widget.portalsActive,
-              child: Padding(
-                padding: const EdgeInsets.only(bottom: AppSpace.section),
-                child: _NowPlayingStrip(
-                  trail: active,
-                  mission: current,
-                  progress: TrailProgress.getLiveProgress(
-                    active,
-                    progress.completedMissions,
-                  ),
-                  atRisk: progress.isStreakAtRisk,
-                  countdown: progress.streakRiskCountdown,
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (_) => TrailMapScreen(slug: active.slug),
-                      ),
-                    );
-                  },
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final gutter = contentGutterOf(constraints.maxWidth);
+        return ListView(
+          padding: EdgeInsets.fromLTRB(0, topPad, 0, bottomPad),
+          physics: const BouncingScrollPhysics(),
+          children: [
+            if (widget.topBar != null) ...[
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: AppSpace.screen,
                 ),
+                child: widget.topBar!,
+              ),
+              const SizedBox(height: AppSpace.afterTopBar),
+            ],
+            Padding(
+              padding: EdgeInsets.symmetric(
+                horizontal: AppSpace.screen + gutter,
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  if (active != null && current != null)
+                    _reveal(
+                      0,
+                      TickerMode(
+                        enabled: widget.portalsActive,
+                        child: Padding(
+                          padding: const EdgeInsets.only(
+                            bottom: AppSpace.section,
+                          ),
+                          child: _NowPlayingStrip(
+                            trail: active,
+                            mission: current,
+                            progress: TrailProgress.getLiveProgress(
+                              active,
+                              progress.completedMissions,
+                            ),
+                            atRisk: progress.isStreakAtRisk,
+                            countdown: progress.streakRiskCountdown,
+                            onTap: () {
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (_) =>
+                                      TrailMapScreen(slug: active.slug),
+                                ),
+                              );
+                            },
+                          ),
+                        ),
+                      ),
+                    ),
+                  _reveal(
+                    1,
+                    Padding(
+                      padding: const EdgeInsets.only(
+                        top: 4,
+                        bottom: AppSpace.lg,
+                      ),
+                      child: RelicChapter(
+                        title: context.l10n.trailsAreasHeading,
+                        accent: AppRoles.chrome,
+                      ),
+                    ),
+                  ),
+                  for (var i = 0; i < realms.length; i++)
+                    _reveal(
+                      2 + i,
+                      Column(
+                        children: [
+                          if (i > 0)
+                            _PathLink(
+                              from: RealmVisuals.of(realms[i - 1].realm).accent,
+                              to: RealmVisuals.of(realms[i].realm).accent,
+                              walked: realms[i - 1].completedCount > 0,
+                              animate: widget.portalsActive,
+                            ),
+                          _RealmPoster(
+                            info: realms[i],
+                            act: i + 1,
+                            featured:
+                                activeRealm == realms[i].realm &&
+                                !realms[i].locked,
+                            animate: widget.portalsActive,
+                            onTap: realms[i].locked
+                                ? _showTeologiaSoonSheet
+                                : () => _openRealm(realms[i].realm),
+                          ),
+                        ],
+                      ),
+                    ),
+                  _reveal(
+                    2 + realms.length,
+                    Padding(
+                      padding: const EdgeInsets.only(top: AppSpace.section),
+                      child: ComingSoonTrailsCard(
+                        onSuggest: _suggestTrail,
+                        onSuggestAuthor: _suggestAuthor,
+                      ),
+                    ),
+                  ),
+                  _reveal(
+                    3 + realms.length,
+                    Padding(
+                      padding: const EdgeInsets.only(top: AppSpace.section),
+                      child: DonateCard(onDonate: _openDonate),
+                    ),
+                  ),
+                ],
               ),
             ),
-          ),
-        _reveal(
-          1,
-          Padding(
-            padding: const EdgeInsets.only(top: 4, bottom: AppSpace.lg),
-            child: RelicChapter(
-              title: context.l10n.trailsAreasHeading,
-              accent: AppRoles.chrome,
-            ),
-          ),
-        ),
-        for (var i = 0; i < realms.length; i++)
-          _reveal(
-            2 + i,
-            Column(
-              children: [
-                if (i > 0)
-                  _PathLink(
-                    from: RealmVisuals.of(realms[i - 1].realm).accent,
-                    to: RealmVisuals.of(realms[i].realm).accent,
-                    walked: realms[i - 1].completedCount > 0,
-                    animate: widget.portalsActive,
-                  ),
-                _RealmPoster(
-                  info: realms[i],
-                  act: i + 1,
-                  featured: activeRealm == realms[i].realm && !realms[i].locked,
-                  animate: widget.portalsActive,
-                  onTap: realms[i].locked
-                      ? _showTeologiaSoonSheet
-                      : () => _openRealm(realms[i].realm),
-                ),
-              ],
-            ),
-          ),
-        _reveal(
-          2 + realms.length,
-          Padding(
-            padding: const EdgeInsets.only(top: AppSpace.section),
-            child: ComingSoonTrailsCard(
-              onSuggest: _suggestTrail,
-              onSuggestAuthor: _suggestAuthor,
-            ),
-          ),
-        ),
-        _reveal(
-          3 + realms.length,
-          Padding(
-            padding: const EdgeInsets.only(top: AppSpace.section),
-            child: DonateCard(onDonate: _openDonate),
-          ),
-        ),
-      ],
+          ],
+        );
+      },
     );
   }
 }
@@ -534,7 +556,9 @@ class _NowPlayingStripState extends State<_NowPlayingStrip>
 
     return Semantics(
       button: true,
-      label: context.l10n.trailsContinueSemantics(widget.mission.localizedTitle),
+      label: context.l10n.trailsContinueSemantics(
+        widget.mission.localizedTitle,
+      ),
       child: GestureDetector(
         onTapDown: (_) => setState(() => _pressed = true),
         onTapUp: (_) => setState(() => _pressed = false),
@@ -634,9 +658,7 @@ class _NowPlayingStripState extends State<_NowPlayingStrip>
                           child: AnimatedBuilder(
                             animation: _pulse,
                             builder: (context, child) {
-                              final t = AppMotion.move.transform(
-                                _pulse.value,
-                              );
+                              final t = AppMotion.move.transform(_pulse.value);
                               return Container(
                                 width: 50,
                                 height: 50,

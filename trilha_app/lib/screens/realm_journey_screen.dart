@@ -11,6 +11,7 @@ import '../services/progress_service.dart';
 import '../services/room_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/layout_utils.dart';
 import '../utils/realm_visuals.dart';
 import '../utils/trail_progress.dart';
 import '../widgets/act_feel.dart';
@@ -278,8 +279,11 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
       clearedTrailModes: progress.clearedTrailModes,
       trailDifficulties: progress.trailDifficulties,
     );
-    if (!_jumped && items.any((item) => item.state == JourneyNodeState.current)) {
-      WidgetsBinding.instance.addPostFrameCallback((_) => _scheduleJumpToCurrent());
+    if (!_jumped &&
+        items.any((item) => item.state == JourneyNodeState.current)) {
+      WidgetsBinding.instance.addPostFrameCallback(
+        (_) => _scheduleJumpToCurrent(),
+      );
     }
     final bottom = MediaQuery.of(context).padding.bottom;
     final mode = progress.settings.appearanceMode;
@@ -290,6 +294,7 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
     return ImmersiveScaffold(
       mode: mode,
       style: appearance,
+      frameBody: false,
       body: Column(
         children: [
           Padding(
@@ -310,29 +315,31 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
             ),
           ),
           Expanded(
-            child: CustomScrollView(
-              controller: _scroll,
-              physics: const BouncingScrollPhysics(),
-              slivers: [
-                SliverToBoxAdapter(child: SizedBox(height: AppSpace.lg)),
-                SliverToBoxAdapter(
-                  child: Padding(
-                    padding: EdgeInsets.fromLTRB(
-                      0,
-                      4,
-                      0,
-                      AppSpace.xxxl + bottom,
-                    ),
-                    child: JourneyPath(
-                      items: items,
-                      accent: visuals.accent,
-                      glow: visuals.glow,
-                      currentKey: _currentKey,
-                      onTap: _onNodeTap,
+            child: ContentFrame(
+              child: CustomScrollView(
+                controller: _scroll,
+                physics: const BouncingScrollPhysics(),
+                slivers: [
+                  SliverToBoxAdapter(child: SizedBox(height: AppSpace.lg)),
+                  SliverToBoxAdapter(
+                    child: Padding(
+                      padding: EdgeInsets.fromLTRB(
+                        0,
+                        4,
+                        0,
+                        AppSpace.xxxl + bottom,
+                      ),
+                      child: JourneyPath(
+                        items: items,
+                        accent: visuals.accent,
+                        glow: visuals.glow,
+                        currentKey: _currentKey,
+                        onTap: _onNodeTap,
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ],

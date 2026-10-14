@@ -19,6 +19,7 @@ import '../services/sound_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
+import '../utils/layout_utils.dart';
 import '../utils/palco_verse.dart';
 import '../utils/trail_progress.dart';
 import '../widgets/act_feel.dart';
@@ -122,10 +123,7 @@ class _LessonScreenState extends State<LessonScreen>
   @override
   void initState() {
     super.initState();
-    _impactFlash = AnimationController(
-      vsync: this,
-      duration: AppMotion.gentle,
-    );
+    _impactFlash = AnimationController(vsync: this, duration: AppMotion.gentle);
     _load();
   }
 
@@ -1043,8 +1041,9 @@ class _LessonScreenState extends State<LessonScreen>
                                         children: [
                                           if (_board != null)
                                             IconButton(
-                                              tooltip:
-                                                  context.l10n.lessonPassageTitle,
+                                              tooltip: context
+                                                  .l10n
+                                                  .lessonPassageTitle,
                                               onPressed: () {
                                                 ActHaptics.tap();
                                                 _openPassage();
@@ -1085,95 +1084,97 @@ class _LessonScreenState extends State<LessonScreen>
                         ),
                       ),
                       Expanded(
-                        child: switch (_phase) {
-                          // Ato sai para a esquerda, o próximo entra pela direita.
-                          // Tentar de novo não troca a chave: a pergunta fica e só o
-                          // estado local reinicia (mantendo a ordem montada).
-                          // Um filho só: empilhar o painel anterior (com pulse
-                          // vivo) + o novo dobrava o custo de paint na troca.
-                          _Phase.quiz => AnimatedSwitcher(
-                            duration: AppMotion.standard,
-                            switchInCurve: AppMotion.enter,
-                            switchOutCurve: AppMotion.exit,
-                            layoutBuilder: (current, _) =>
-                                current ?? const SizedBox.shrink(),
-                            transitionBuilder: (child, animation) {
-                              return FadeTransition(
-                                opacity: animation,
-                                child: SlideTransition(
-                                  position: Tween<Offset>(
-                                    begin: const Offset(0.08, 0),
-                                    end: Offset.zero,
-                                  ).animate(animation),
-                                  child: child,
-                                ),
-                              );
-                            },
-                            child: RepaintBoundary(
-                              key: ValueKey(
-                                'act-${_exercise.id}-$_questionIndex',
-                              ),
-                              child: ExercisePanel(
+                        child: ContentFrame(
+                          child: switch (_phase) {
+                            // Ato sai para a esquerda, o próximo entra pela direita.
+                            // Tentar de novo não troca a chave: a pergunta fica e só o
+                            // estado local reinicia (mantendo a ordem montada).
+                            // Um filho só: empilhar o painel anterior (com pulse
+                            // vivo) + o novo dobrava o custo de paint na troca.
+                            _Phase.quiz => AnimatedSwitcher(
+                              duration: AppMotion.standard,
+                              switchInCurve: AppMotion.enter,
+                              switchOutCurve: AppMotion.exit,
+                              layoutBuilder: (current, _) =>
+                                  current ?? const SizedBox.shrink(),
+                              transitionBuilder: (child, animation) {
+                                return FadeTransition(
+                                  opacity: animation,
+                                  child: SlideTransition(
+                                    position: Tween<Offset>(
+                                      begin: const Offset(0.08, 0),
+                                      end: Offset.zero,
+                                    ).animate(animation),
+                                    child: child,
+                                  ),
+                                );
+                              },
+                              child: RepaintBoundary(
                                 key: ValueKey(
-                                  '${_exercise.id}-$_questionIndex',
+                                  'act-${_exercise.id}-$_questionIndex',
                                 ),
-                                exercise: _exercise,
-                                selected: _selected,
-                                isCorrect: _isCorrect,
-                                showFeedback: _showFeedback,
-                                onSelect: _select,
-                                accent: accent,
-                                hintUsed: _hintUsed,
-                                eliminatedIds: _eliminated,
-                                onHint:
-                                    mission.isBoss || !_exercise.supportsHint
-                                    ? null
-                                    : _useHint,
-                                outOfLamps: _outOfLamps,
-                                revealCorrect:
-                                    _revealNow && _isCorrect == false,
-                                index: _questionIndex,
-                                total: total,
-                                insightFallback: mission.centralInsight,
-                                boardText: _board?.text,
-                                boardRef: _board?.reference,
+                                child: ExercisePanel(
+                                  key: ValueKey(
+                                    '${_exercise.id}-$_questionIndex',
+                                  ),
+                                  exercise: _exercise,
+                                  selected: _selected,
+                                  isCorrect: _isCorrect,
+                                  showFeedback: _showFeedback,
+                                  onSelect: _select,
+                                  accent: accent,
+                                  hintUsed: _hintUsed,
+                                  eliminatedIds: _eliminated,
+                                  onHint:
+                                      mission.isBoss || !_exercise.supportsHint
+                                      ? null
+                                      : _useHint,
+                                  outOfLamps: _outOfLamps,
+                                  revealCorrect:
+                                      _revealNow && _isCorrect == false,
+                                  index: _questionIndex,
+                                  total: total,
+                                  insightFallback: mission.centralInsight,
+                                  boardText: _board?.text,
+                                  boardRef: _board?.reference,
+                                ),
                               ),
                             ),
-                          ),
-                          _Phase.micro => () {
-                            final v = _microVerse();
-                            if (v == null) return const SizedBox.shrink();
-                            final ref = v.reference;
-                            final text = v.text;
-                            return VerseFillPanel(
-                              key: const ValueKey('micro'),
-                              reference: ref,
-                              verseText: text,
+                            _Phase.micro => () {
+                              final v = _microVerse();
+                              if (v == null) return const SizedBox.shrink();
+                              final ref = v.reference;
+                              final text = v.text;
+                              return VerseFillPanel(
+                                key: const ValueKey('micro'),
+                                reference: ref,
+                                verseText: text,
+                                accent: accent,
+                                onDone: _completeMicro,
+                              );
+                            }(),
+                            _Phase.intro => _IntroPanel(
+                              key: const ValueKey('intro'),
+                              mission: mission,
+                              itemCount: total,
                               accent: accent,
-                              onDone: _completeMicro,
-                            );
-                          }(),
-                          _Phase.intro => _IntroPanel(
-                            key: const ValueKey('intro'),
-                            mission: mission,
-                            itemCount: total,
-                            accent: accent,
-                            onStart: _startQuiz,
-                            onStudyRef: () {
-                              final r = (mission.hookRef ?? '').trim();
-                              if (r.isEmpty) return;
-                              unawaited(_openStrongFromRef(r));
-                            },
-                          ),
-                          _Phase.insight => _InsightPanel(
-                            key: const ValueKey('insight'),
-                            text: _closingInsight,
-                            accent: accent,
-                            onContinue: () {
-                              _pushCelebration(forced: _celebrationForced);
-                            },
-                          ),
-                        },
+                              onStart: _startQuiz,
+                              onStudyRef: () {
+                                final r = (mission.hookRef ?? '').trim();
+                                if (r.isEmpty) return;
+                                unawaited(_openStrongFromRef(r));
+                              },
+                            ),
+                            _Phase.insight => _InsightPanel(
+                              key: const ValueKey('insight'),
+                              text: _closingInsight,
+                              accent: accent,
+                              onContinue: () {
+                                _pushCelebration(forced: _celebrationForced);
+                              },
+                            ),
+                          },
+                        ),
                       ),
                     ],
                   ),
@@ -1463,11 +1464,7 @@ class _IntroPanel extends StatelessWidget {
           Text(
             mission.title,
             textAlign: TextAlign.center,
-            style: AppTypography.display(
-              size: 32,
-              height: 1.12,
-              color: a.text,
-            ),
+            style: AppTypography.display(size: 32, height: 1.12, color: a.text),
           ),
           const SizedBox(height: 12),
           Wrap(
@@ -1505,49 +1502,69 @@ class _IntroPanel extends StatelessWidget {
             ),
           ],
           Expanded(
-            child: stageText.isEmpty
-                ? const SizedBox.shrink()
-                : Padding(
-                    padding: const EdgeInsets.only(top: 14, bottom: 8),
-                    child: _WitnessPlate(
-                      accent: accent,
-                      reference: ref,
-                      brandBack: true,
-                      pinTop: true,
-                      padding: const EdgeInsets.fromLTRB(18, 14, 18, 16),
-                      onStudy: ref.isEmpty ? null : onStudyRef,
-                      child: Text(
-                        stageText,
-                        textAlign: TextAlign.left,
-                        style: AppTypography.verse(size: 28, height: 1.45),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                if (stageText.isNotEmpty)
+                  Flexible(
+                    fit: FlexFit.loose,
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 14, bottom: 8),
+                      child: ConstrainedBox(
+                        constraints: const BoxConstraints(
+                          maxHeight: stageMaxHeight,
+                        ),
+                        child: SizedBox.expand(
+                          child: _WitnessPlate(
+                            accent: accent,
+                            reference: ref,
+                            brandBack: true,
+                            pinTop: true,
+                            padding: const EdgeInsets.fromLTRB(18, 14, 18, 16),
+                            onStudy: ref.isEmpty ? null : onStudyRef,
+                            child: Text(
+                              stageText,
+                              textAlign: TextAlign.left,
+                              style: AppTypography.verse(
+                                size: 28,
+                                height: 1.45,
+                              ),
+                            ),
+                          ),
+                        ),
                       ),
                     ),
+                  )
+                else
+                  const Spacer(),
+                if (stageText.isNotEmpty) ...[
+                  Text(
+                    context.l10n.lessonIntroConsult,
+                    textAlign: TextAlign.center,
+                    style: AppTypography.body(
+                      size: 13,
+                      height: 1.35,
+                      color: a.textFaint,
+                    ),
                   ),
-          ),
-          if (stageText.isNotEmpty) ...[
-            Text(
-              context.l10n.lessonIntroConsult,
-              textAlign: TextAlign.center,
-              style: AppTypography.body(
-                size: 13,
-                height: 1.35,
-                color: a.textFaint,
-              ),
+                  const SizedBox(height: 12),
+                ],
+                MissionListenButton(
+                  verse: stageText,
+                  insight: mission.centralInsight,
+                  accent: accent,
+                ),
+                const SizedBox(height: 10),
+                CopperCta(
+                  label: context.l10n.commonStart,
+                  onTap: onStart,
+                  trailing: null,
+                ),
+                const SizedBox(height: AppSpace.sm),
+              ],
             ),
-            const SizedBox(height: 12),
-          ],
-          MissionListenButton(
-            verse: stageText,
-            insight: mission.centralInsight,
-            accent: accent,
           ),
-          const SizedBox(height: 10),
-          CopperCta(
-            label: context.l10n.commonStart,
-            onTap: onStart,
-            trailing: null,
-          ),
-          const SizedBox(height: AppSpace.sm),
         ],
       ),
     );
@@ -1580,26 +1597,42 @@ class _InsightPanel extends StatelessWidget {
           ),
           const SizedBox(height: 14),
           Expanded(
-            child: _WitnessPlate(
-              accent: accent,
-              child: Text(
-                text,
-                textAlign: TextAlign.center,
-                style: AppTypography.title(
-                  size: 20,
-                  height: 1.32,
-                  color: accent,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Flexible(
+                  fit: FlexFit.loose,
+                  child: ConstrainedBox(
+                    constraints: const BoxConstraints(
+                      maxHeight: stageMaxHeight,
+                    ),
+                    child: SizedBox.expand(
+                      child: _WitnessPlate(
+                        accent: accent,
+                        child: Text(
+                          text,
+                          textAlign: TextAlign.center,
+                          style: AppTypography.title(
+                            size: 20,
+                            height: 1.32,
+                            color: accent,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
                 ),
-              ),
+                const SizedBox(height: 10),
+                CopperCta(
+                  label: context.l10n.commonContinue,
+                  onTap: onContinue,
+                  trailing: null,
+                ),
+                const SizedBox(height: AppSpace.sm),
+              ],
             ),
           ),
-          const SizedBox(height: 10),
-          CopperCta(
-            label: context.l10n.commonContinue,
-            onTap: onContinue,
-            trailing: null,
-          ),
-          const SizedBox(height: AppSpace.sm),
         ],
       ),
     );

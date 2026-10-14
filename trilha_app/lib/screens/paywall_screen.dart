@@ -6,6 +6,7 @@ import '../services/progress_service.dart';
 import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/layout_utils.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/top_bar.dart';
@@ -28,6 +29,7 @@ class PaywallScreen extends StatelessWidget {
     return ImmersiveScaffold(
       mode: mode,
       style: a,
+      frameBody: false,
       body: Column(
         children: [
           Padding(
@@ -47,106 +49,111 @@ class PaywallScreen extends StatelessWidget {
             ),
           ),
           Expanded(
-            child: ListView(
-              padding: EdgeInsets.fromLTRB(
-                AppSpace.screen,
-                AppSpace.lg,
-                AppSpace.screen,
-                AppSpace.xxl + bottom,
-              ),
-              children: [
-                Center(
-                  child: CinematicIcon(
-                    glyph: CinematicGlyph.crown,
-                    size: AppMetrics.iconHero,
-                    accent: AppRoles.reward,
-                    glowing: true,
-                  ),
+            child: ContentFrame(
+              child: ListView(
+                padding: EdgeInsets.fromLTRB(
+                  AppSpace.screen,
+                  AppSpace.lg,
+                  AppSpace.screen,
+                  AppSpace.xxl + bottom,
                 ),
-                const SizedBox(height: AppSpace.lg),
-                Text(
-                  subscription.isPeregrinoPlus
-                      ? l10n.paywallAlreadyPlus
-                      : l10n.paywallHeadline,
-                  textAlign: TextAlign.center,
-                  style: AppTypography.display(size: 28, color: a.text),
-                ),
-                const SizedBox(height: AppSpace.sm),
-                Text(
-                  subscription.isPeregrinoPlus
-                      ? l10n.paywallThanks
-                      : l10n.paywallPitch,
-                  textAlign: TextAlign.center,
-                  style: AppTypography.body(size: 14, color: a.textSecondary),
-                ),
-                const SizedBox(height: AppSpace.xl),
-                GlassCard(
-                  padding: AppMetrics.cardPadding,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      for (final perk in perks) ...[
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            CinematicIcon(
-                              glyph: CinematicGlyph.check,
-                              size: AppMetrics.iconMd,
-                              accent: AppRoles.success,
-                              framed: false,
-                            ),
-                            const SizedBox(width: 10),
-                            Expanded(
-                              child: Text(
-                                perk,
-                                style: AppTypography.body(
-                                  size: 13,
-                                  color: a.textSecondary,
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                        const SizedBox(height: 10),
-                      ],
-                    ],
-                  ),
-                ),
-                const SizedBox(height: AppSpace.xl),
-                if (!subscription.isConfigured)
-                  Text(
-                    l10n.paywallUnavailable,
-                    textAlign: TextAlign.center,
-                    style: AppTypography.body(size: 12, color: a.textFaint),
-                  )
-                else if (!subscription.isPeregrinoPlus) ...[
-                  for (final package in subscription.availablePackages) ...[
-                    CopperCta(
-                      label: SubscriptionService.packageLabel(package),
-                      expanded: true,
-                      onTap: subscription.loading
-                          ? null
-                          : () => subscription.purchase(package),
+                children: [
+                  Center(
+                    child: CinematicIcon(
+                      glyph: CinematicGlyph.crown,
+                      size: AppMetrics.iconHero,
+                      accent: AppRoles.reward,
+                      glowing: true,
                     ),
-                    const SizedBox(height: 10),
-                  ],
-                  TextCta(
-                    label: l10n.paywallRestore,
-                    onTap: subscription.loading
-                        ? null
-                        : () => subscription.restore(),
-                    color: a.textSecondary,
                   ),
-                ],
-                if (subscription.lastError != null) ...[
+                  const SizedBox(height: AppSpace.lg),
+                  Text(
+                    subscription.isPeregrinoPlus
+                        ? l10n.paywallAlreadyPlus
+                        : l10n.paywallHeadline,
+                    textAlign: TextAlign.center,
+                    style: AppTypography.display(size: 28, color: a.text),
+                  ),
                   const SizedBox(height: AppSpace.sm),
                   Text(
-                    subscription.lastError!,
+                    subscription.isPeregrinoPlus
+                        ? l10n.paywallThanks
+                        : l10n.paywallPitch,
                     textAlign: TextAlign.center,
-                    style: AppTypography.body(size: 12, color: AppRoles.error),
+                    style: AppTypography.body(size: 14, color: a.textSecondary),
                   ),
+                  const SizedBox(height: AppSpace.xl),
+                  GlassCard(
+                    padding: AppMetrics.cardPadding,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        for (final perk in perks) ...[
+                          Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              CinematicIcon(
+                                glyph: CinematicGlyph.check,
+                                size: AppMetrics.iconMd,
+                                accent: AppRoles.success,
+                                framed: false,
+                              ),
+                              const SizedBox(width: 10),
+                              Expanded(
+                                child: Text(
+                                  perk,
+                                  style: AppTypography.body(
+                                    size: 13,
+                                    color: a.textSecondary,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 10),
+                        ],
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: AppSpace.xl),
+                  if (!subscription.isConfigured)
+                    Text(
+                      l10n.paywallUnavailable,
+                      textAlign: TextAlign.center,
+                      style: AppTypography.body(size: 12, color: a.textFaint),
+                    )
+                  else if (!subscription.isPeregrinoPlus) ...[
+                    for (final package in subscription.availablePackages) ...[
+                      CopperCta(
+                        label: SubscriptionService.packageLabel(package),
+                        expanded: true,
+                        onTap: subscription.loading
+                            ? null
+                            : () => subscription.purchase(package),
+                      ),
+                      const SizedBox(height: 10),
+                    ],
+                    TextCta(
+                      label: l10n.paywallRestore,
+                      onTap: subscription.loading
+                          ? null
+                          : () => subscription.restore(),
+                      color: a.textSecondary,
+                    ),
+                  ],
+                  if (subscription.lastError != null) ...[
+                    const SizedBox(height: AppSpace.sm),
+                    Text(
+                      subscription.lastError!,
+                      textAlign: TextAlign.center,
+                      style: AppTypography.body(
+                        size: 12,
+                        color: AppRoles.error,
+                      ),
+                    ),
+                  ],
                 ],
-              ],
+              ),
             ),
           ),
         ],

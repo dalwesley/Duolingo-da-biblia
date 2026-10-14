@@ -10,6 +10,7 @@ import '../services/progress_service.dart';
 import '../services/sound_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/layout_utils.dart';
 import '../utils/day_phase.dart';
 import '../widgets/act_feel.dart';
 import '../widgets/cinematic_icon.dart';
@@ -48,10 +49,7 @@ class _MemoryScreenState extends State<MemoryScreen>
       vsync: this,
       duration: const Duration(milliseconds: 1600),
     )..repeat(reverse: true);
-    _flip = AnimationController(
-      vsync: this,
-      duration: AppMotion.slow,
-    );
+    _flip = AnimationController(vsync: this, duration: AppMotion.slow);
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
       precacheImage(const AssetImage(_bgAsset), context);
@@ -184,6 +182,7 @@ class _MemoryScreenState extends State<MemoryScreen>
           backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
           body: ImmersiveBackground(
             appearance: appearance,
+            frameChild: false,
             child: Column(
               children: [
                 Padding(
@@ -205,89 +204,91 @@ class _MemoryScreenState extends State<MemoryScreen>
                   ),
                 ),
                 Expanded(
-                  child: _loading
-                      ? const AppSpinner()
-                      : _finished
-                      ? _DonePane(
-                          known: _known,
-                          learning: _learning,
-                          onAgain: _load,
-                          onClose: () => Navigator.pop(context),
-                        )
-                      : Padding(
-                          padding: EdgeInsets.fromLTRB(
-                            AppSpace.screen,
-                            AppSpace.sm,
-                            AppSpace.screen,
-                            AppSpace.xxl +
-                                MediaQuery.viewPaddingOf(context).bottom,
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.stretch,
-                            children: [
-                              _ProgressHeader(
-                                index: _index,
-                                total: _deck.length,
-                                revealed: _revealed,
-                                trackColor: appearance.progressTrack,
-                              ),
-                              const SizedBox(height: AppSpace.xl),
-                              Expanded(
-                                child: _FlashCard(
-                                  verse: _current,
+                  child: ContentFrame(
+                    child: _loading
+                        ? const AppSpinner()
+                        : _finished
+                        ? _DonePane(
+                            known: _known,
+                            learning: _learning,
+                            onAgain: _load,
+                            onClose: () => Navigator.pop(context),
+                          )
+                        : Padding(
+                            padding: EdgeInsets.fromLTRB(
+                              AppSpace.screen,
+                              AppSpace.sm,
+                              AppSpace.screen,
+                              AppSpace.xxl +
+                                  MediaQuery.viewPaddingOf(context).bottom,
+                            ),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.stretch,
+                              children: [
+                                _ProgressHeader(
+                                  index: _index,
+                                  total: _deck.length,
                                   revealed: _revealed,
-                                  pulse: _pulse,
-                                  flip: _flip,
-                                  onReveal: _revealCard,
+                                  trackColor: appearance.progressTrack,
                                 ),
-                              ),
-                              const SizedBox(height: AppSpace.lg),
-                              AnimatedBuilder(
-                                animation: _flip,
-                                builder: (context, _) {
-                                  final Widget child;
-                                  if (!_revealed) {
-                                    child = CopperCta(
-                                      key: const ValueKey('reveal'),
-                                      label: context.l10n.memoryReveal,
-                                      trailing: CinematicGlyph.spark,
-                                      onTap: _revealCard,
-                                    );
-                                  } else if (_flip.value >= 0.55) {
-                                    child = _AnswerRow(
-                                      key: const ValueKey('answers'),
-                                      onLearning: () => _answer(knew: false),
-                                      onKnown: () => _answer(knew: true),
-                                    );
-                                  } else {
-                                    child = const SizedBox(
-                                      key: ValueKey('flipping'),
-                                      height: 56,
-                                    );
-                                  }
-                                  return AnimatedSwitcher(
-                                    duration: AppMotion.standard,
-                                    switchInCurve: AppMotion.enter,
-                                    switchOutCurve: AppMotion.exit,
-                                    transitionBuilder: (widget, anim) {
-                                      return FadeTransition(
-                                        opacity: anim,
-                                        child: SlideTransition(
-                                          position: Tween<Offset>(
-                                            begin: const Offset(0, 0.12),
-                                            end: Offset.zero,
-                                          ).animate(anim),
-                                          child: widget,
-                                        ),
+                                const SizedBox(height: AppSpace.xl),
+                                Expanded(
+                                  child: _FlashCard(
+                                    verse: _current,
+                                    revealed: _revealed,
+                                    pulse: _pulse,
+                                    flip: _flip,
+                                    onReveal: _revealCard,
+                                  ),
+                                ),
+                                const SizedBox(height: AppSpace.lg),
+                                AnimatedBuilder(
+                                  animation: _flip,
+                                  builder: (context, _) {
+                                    final Widget child;
+                                    if (!_revealed) {
+                                      child = CopperCta(
+                                        key: const ValueKey('reveal'),
+                                        label: context.l10n.memoryReveal,
+                                        trailing: CinematicGlyph.spark,
+                                        onTap: _revealCard,
                                       );
-                                    },
-                                    child: child,
-                                  );
-                                },
-                              ),
-                            ],
+                                    } else if (_flip.value >= 0.55) {
+                                      child = _AnswerRow(
+                                        key: const ValueKey('answers'),
+                                        onLearning: () => _answer(knew: false),
+                                        onKnown: () => _answer(knew: true),
+                                      );
+                                    } else {
+                                      child = const SizedBox(
+                                        key: ValueKey('flipping'),
+                                        height: 56,
+                                      );
+                                    }
+                                    return AnimatedSwitcher(
+                                      duration: AppMotion.standard,
+                                      switchInCurve: AppMotion.enter,
+                                      switchOutCurve: AppMotion.exit,
+                                      transitionBuilder: (widget, anim) {
+                                        return FadeTransition(
+                                          opacity: anim,
+                                          child: SlideTransition(
+                                            position: Tween<Offset>(
+                                              begin: const Offset(0, 0.12),
+                                              end: Offset.zero,
+                                            ).animate(anim),
+                                            child: widget,
+                                          ),
+                                        );
+                                      },
+                                      child: child,
+                                    );
+                                  },
+                                ),
+                              ],
+                            ),
                           ),
-                        ),
+                  ),
                 ),
               ],
             ),

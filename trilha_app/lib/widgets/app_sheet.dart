@@ -3,6 +3,7 @@ import '../l10n/app_language.dart';
 
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/layout_utils.dart';
 import 'ui_primitives.dart';
 
 /// Sheets e diálogos do app — uma casca só.
@@ -31,6 +32,7 @@ Future<T?> showAppSheet<T>(
     isDismissible: isDismissible,
     enableDrag: enableDrag,
     useRootNavigator: useRootNavigator,
+    constraints: const BoxConstraints(maxWidth: contentMaxWidth),
     builder: builder,
   );
 }

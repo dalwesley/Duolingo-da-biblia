@@ -7,6 +7,7 @@ import '../services/bible_reading_plan_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/layout_utils.dart';
 import '../widgets/app_sheet.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
@@ -160,61 +161,79 @@ class _BibleReadingPlanScreenState extends State<BibleReadingPlanScreen> {
         backgroundColor: Colors.transparent,
         body: ImmersiveBackground(
           appearance: style,
+          frameChild: false,
           child: ListView(
             padding: EdgeInsets.fromLTRB(
-              AppSpace.screen,
+              0,
               MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
-              AppSpace.screen,
+              0,
               MediaQuery.viewPaddingOf(context).bottom + AppSpace.xl,
             ),
             children: [
-              TopBar(
-                inline: true,
-                immersive: true,
-                dark: style.onDark,
-                title: context.l10n.planTitle,
-                subtitle: plan.active
-                    ? plan.order.shortLabel
-                    : context.l10n.planAtYourPace,
-                leadingGlyph: CinematicGlyph.book,
-                chromeAccent: AppRoles.chrome,
-                onBack: () => Navigator.of(context).pop(),
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: AppSpace.screen,
+                ),
+                child: TopBar(
+                  inline: true,
+                  immersive: true,
+                  dark: style.onDark,
+                  title: context.l10n.planTitle,
+                  subtitle: plan.active
+                      ? plan.order.shortLabel
+                      : context.l10n.planAtYourPace,
+                  leadingGlyph: CinematicGlyph.book,
+                  chromeAccent: AppRoles.chrome,
+                  onBack: () => Navigator.of(context).pop(),
+                ),
               ),
               const SizedBox(height: AppSpace.afterTopBar),
-              if (_loading)
-                const Padding(
-                  padding: EdgeInsets.symmetric(vertical: 48),
-                  child: AppSpinner(),
-                )
-              else if (plan.active)
-                _ActivePlanBody(
-                  plan: plan,
-                  portion: _portion,
-                  onOpen: _openChapter,
-                  onComplete: _completeDay,
-                  onClear: _confirmClear,
-                  onMinutesChanged: (m) async {
-                    await context
-                        .read<ProgressService>()
-                        .updateBibleReadingPlanMinutes(m);
-                    await _reload();
-                  },
-                )
-              else
-                _SetupPlanBody(
-                  order: _draftOrder,
-                  minutes: _draftMinutes,
-                  preview: _preview,
-                  onOrder: (o) {
-                    setState(() => _draftOrder = o);
-                    _refreshPreview();
-                  },
-                  onMinutes: (m) {
-                    setState(() => _draftMinutes = m);
-                    _refreshPreview();
-                  },
-                  onStart: _start,
+              ContentFrame(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: AppSpace.screen,
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      if (_loading)
+                        const Padding(
+                          padding: EdgeInsets.symmetric(vertical: 48),
+                          child: AppSpinner(),
+                        )
+                      else if (plan.active)
+                        _ActivePlanBody(
+                          plan: plan,
+                          portion: _portion,
+                          onOpen: _openChapter,
+                          onComplete: _completeDay,
+                          onClear: _confirmClear,
+                          onMinutesChanged: (m) async {
+                            await context
+                                .read<ProgressService>()
+                                .updateBibleReadingPlanMinutes(m);
+                            await _reload();
+                          },
+                        )
+                      else
+                        _SetupPlanBody(
+                          order: _draftOrder,
+                          minutes: _draftMinutes,
+                          preview: _preview,
+                          onOrder: (o) {
+                            setState(() => _draftOrder = o);
+                            _refreshPreview();
+                          },
+                          onMinutes: (m) {
+                            setState(() => _draftMinutes = m);
+                            _refreshPreview();
+                          },
+                          onStart: _start,
+                        ),
+                    ],
+                  ),
                 ),
+              ),
             ],
           ),
         ),
@@ -401,9 +420,7 @@ class _ActivePlanBody extends StatelessWidget {
               ),
               const SizedBox(height: AppSpace.sm),
               Text(
-                finished
-                    ? context.l10n.planBibleFinished
-                    : (p?.summary ?? '…'),
+                finished ? context.l10n.planBibleFinished : (p?.summary ?? '…'),
                 style: AppTypography.title(size: 18, color: a.text),
               ),
               if (p != null && !finished) ...[
@@ -457,7 +474,9 @@ class _ActivePlanBody extends StatelessWidget {
                             ),
                             Text(
                               context.l10n.planApproxMinutesDecimal(
-                                p.chapters[i].estimatedMinutes.toStringAsFixed(1),
+                                p.chapters[i].estimatedMinutes.toStringAsFixed(
+                                  1,
+                                ),
                               ),
                               style: AppTypography.body(
                                 size: 12,
@@ -511,11 +530,7 @@ class _ActivePlanBody extends StatelessWidget {
           ],
         ),
         const SizedBox(height: AppSpace.section),
-        TextCta(
-          label: context.l10n.planEndCta,
-          onTap: onClear,
-          danger: true,
-        ),
+        TextCta(label: context.l10n.planEndCta, onTap: onClear, danger: true),
       ],
     );
   }
@@ -535,7 +550,8 @@ class _OrderToggle extends StatelessWidget {
       accent: AppRoles.presence,
       onChanged: (i) => onChanged(orders[i]),
       items: [
-        for (final o in orders) (label: o.shortLabel, glyph: null, mark: null, alert: false),
+        for (final o in orders)
+          (label: o.shortLabel, glyph: null, mark: null, alert: false),
       ],
     );
   }

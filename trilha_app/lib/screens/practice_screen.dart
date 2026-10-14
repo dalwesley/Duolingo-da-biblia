@@ -9,6 +9,7 @@ import '../services/content_catalog_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/layout_utils.dart';
 import '../utils/day_phase.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
@@ -101,6 +102,7 @@ class _PracticeScreenState extends State<PracticeScreen> {
             ),
             body: ImmersiveBackground(
               appearance: appearance,
+              frameChild: false,
               child: Column(
                 children: [
                   Padding(
@@ -122,11 +124,13 @@ class _PracticeScreenState extends State<PracticeScreen> {
                     ),
                   ),
                   Expanded(
-                    child: Center(
-                      child: EmptyState(
-                        glyph: CinematicGlyph.refresh,
-                        title: context.l10n.practiceEmptyTitle,
-                        body: context.l10n.practiceEmptyBody,
+                    child: ContentFrame(
+                      child: Center(
+                        child: EmptyState(
+                          glyph: CinematicGlyph.refresh,
+                          title: context.l10n.practiceEmptyTitle,
+                          body: context.l10n.practiceEmptyBody,
+                        ),
                       ),
                     ),
                   ),

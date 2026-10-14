@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
+import '../utils/layout_utils.dart';
 import '../utils/liturgical_calendar.dart';
 import 'ui_primitives.dart';
 
@@ -41,11 +42,15 @@ class ImmersiveBackground extends StatelessWidget {
   final AppearanceStyle? appearance;
   final Widget? background;
 
+  /// Falso quando a barra precisa da largura da tela e o miolo se limita sozinho.
+  final bool frameChild;
+
   const ImmersiveBackground({
     super.key,
     required this.child,
     this.appearance,
     this.background,
+    this.frameChild = true,
   });
 
   @override
@@ -56,7 +61,7 @@ class ImmersiveBackground extends StatelessWidget {
       fit: StackFit.expand,
       children: [
         background ?? AmbientAtmosphere(phase: style.phase),
-        child,
+        if (frameChild) ContentFrame(child: child) else child,
       ],
     );
   }
@@ -71,6 +76,9 @@ class ImmersiveScaffold extends StatelessWidget {
   final bool extendBody;
   final Widget? background;
 
+  /// Falso no shell: a barra e o menu usam a tela; cada aba limita o miolo.
+  final bool frameBody;
+
   const ImmersiveScaffold({
     super.key,
     required this.mode,
@@ -79,6 +87,7 @@ class ImmersiveScaffold extends StatelessWidget {
     this.bottomNavigationBar,
     this.extendBody = false,
     this.background,
+    this.frameBody = true,
   });
 
   @override
@@ -107,6 +116,7 @@ class ImmersiveScaffold extends StatelessWidget {
           body: ImmersiveBackground(
             appearance: style,
             background: background,
+            frameChild: frameBody,
             child: body,
           ),
           bottomNavigationBar: bottomNavigationBar,
@@ -155,12 +165,11 @@ class GlassCard extends StatelessWidget {
         (tint != null
             ? Color.lerp(style.cardFill, tint, 0.12)!
             : style.cardFill);
-    final borderColor =
-        (accent
-            ? AppMetrics.accentBorder(alpha: elevated ? 0.85 : 0.7)
-            : tint != null
-            ? tint!.withValues(alpha: 0.45)
-            : style.cardBorder);
+    final borderColor = (accent
+        ? AppMetrics.accentBorder(alpha: elevated ? 0.85 : 0.7)
+        : tint != null
+        ? tint!.withValues(alpha: 0.45)
+        : style.cardBorder);
 
     final content = Container(
       padding: padding,

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../l10n/app_language.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/layout_utils.dart';
 import 'act_feel.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
@@ -44,6 +45,8 @@ class MainBottomNav extends StatelessWidget {
 
     final bottomInset = MediaQuery.of(context).padding.bottom;
     final style = appearance ?? Appearance.of(context);
+    final wide = MediaQuery.sizeOf(context).width > contentMaxWidth;
+    final side = wide ? AppSpace.screen : AppSpace.md;
 
     // Chrome da nav: escala limitada — evita corte com fonte grande.
     return MediaQuery.withClampedTextScaling(
@@ -52,9 +55,9 @@ class MainBottomNav extends StatelessWidget {
         color: Colors.transparent,
         child: Padding(
           padding: EdgeInsets.fromLTRB(
-            AppSpace.md,
+            side,
             0,
-            AppSpace.md,
+            side,
             bottomInset > 0 ? bottomInset + 6 : AppSpace.md,
           ),
           child: Container(

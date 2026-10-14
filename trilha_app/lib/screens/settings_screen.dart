@@ -65,6 +65,7 @@ void openSettings(BuildContext context) {
             backgroundColor: Colors.transparent,
             body: ImmersiveBackground(
               appearance: appearance,
+              frameChild: false,
               child: SettingsScreen(
                 onOpenProfile: () => Navigator.pop(ctx),
                 topBar: TopBar(
@@ -111,10 +112,8 @@ class _SettingsScreenState extends State<SettingsScreen>
   @override
   void initState() {
     super.initState();
-    _entrance = AnimationController(
-      vsync: this,
-      duration: AppMotion.scene,
-    )..forward();
+    _entrance = AnimationController(vsync: this, duration: AppMotion.scene)
+      ..forward();
     _loadGenesisMissions();
     _loadVersionLabel();
     _nameController.addListener(_onNameChanged);
@@ -225,79 +224,104 @@ class _SettingsScreenState extends State<SettingsScreen>
       });
     }
 
-    return ListView(
-      padding: EdgeInsets.fromLTRB(
-        AppSpace.screen,
-        widget.topBar == null
-            ? AppSpace.sm
-            : MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
-        AppSpace.screen,
-        scrollPaddingBelowNav(context),
-      ),
-      physics: const ClampingScrollPhysics(),
-      children: [
-        if (widget.topBar != null) ...[
-          widget.topBar!,
-          const SizedBox(height: AppSpace.afterTopBar),
-        ],
-
-        _reveal(0, _passportCard(progress, a)),
-
-        // Sua jornada — como você estuda e em que ritmo.
-        _reveal(1, _groupLabel(a, context.l10n.settingsGroupProgress)),
-        _reveal(2, _studyModeCard(progress, a)),
-        const SizedBox(height: AppSpace.md),
-        _reveal(
-          3,
-          _groupedCard(
-            a,
-            title: context.l10n.settingsRhythmTitle,
-            subtitle: context.l10n.settingsRhythmSubtitle,
-            children: [
-              _RhythmPath(progress: progress),
-              const _SettingsDivider(),
-              _fieldLabel(a, context.l10n.settingsStreakGoalLabel),
-              const SizedBox(height: AppSpace.xs),
-              _fieldHint(a, context.l10n.settingsStreakGoalHint),
-              const SizedBox(height: AppSpace.md),
-              _streakGoalPicker(progress),
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final gutter = contentGutterOf(constraints.maxWidth);
+        return ListView(
+          padding: EdgeInsets.fromLTRB(
+            0,
+            widget.topBar == null
+                ? AppSpace.sm
+                : MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
+            0,
+            scrollPaddingBelowNav(context),
+          ),
+          physics: const ClampingScrollPhysics(),
+          children: [
+            if (widget.topBar != null) ...[
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: AppSpace.screen,
+                ),
+                child: widget.topBar!,
+              ),
+              const SizedBox(height: AppSpace.afterTopBar),
             ],
-          ),
-        ),
+            Padding(
+              padding: EdgeInsets.symmetric(
+                horizontal: AppSpace.screen + gutter,
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  _reveal(0, _passportCard(progress, a)),
 
-        // Neste aparelho — o que se vê e o que se ouve.
-        _reveal(4, _groupLabel(a, context.l10n.settingsGroupDevice)),
-        _reveal(
-          5,
-          KeyedSubtree(
-            key: _sectionKeys[_SettingsSection.aparencia],
-            child: _appearanceCard(progress, a),
-          ),
-        ),
-        const SizedBox(height: AppSpace.md),
-        _reveal(6, _languageCard(progress, a)),
-        const SizedBox(height: AppSpace.md),
-        _reveal(
-          6,
-          KeyedSubtree(
-            key: _sectionKeys[_SettingsSection.lembretes],
-            child: _remindersCard(progress, a),
-          ),
-        ),
+                  // Sua jornada — como você estuda e em que ritmo.
+                  _reveal(
+                    1,
+                    _groupLabel(a, context.l10n.settingsGroupProgress),
+                  ),
+                  _reveal(2, _studyModeCard(progress, a)),
+                  const SizedBox(height: AppSpace.md),
+                  _reveal(
+                    3,
+                    _groupedCard(
+                      a,
+                      title: context.l10n.settingsRhythmTitle,
+                      subtitle: context.l10n.settingsRhythmSubtitle,
+                      children: [
+                        _RhythmPath(progress: progress),
+                        const _SettingsDivider(),
+                        _fieldLabel(a, context.l10n.settingsStreakGoalLabel),
+                        const SizedBox(height: AppSpace.xs),
+                        _fieldHint(a, context.l10n.settingsStreakGoalHint),
+                        const SizedBox(height: AppSpace.md),
+                        _streakGoalPicker(progress),
+                      ],
+                    ),
+                  ),
 
-        // Conta e dados — backup, sair e resetar num lugar só.
-        _reveal(7, _groupLabel(a, context.l10n.settingsGroupAccountData)),
-        _reveal(
-          8,
-          KeyedSubtree(
-            key: _sectionKeys[_SettingsSection.conta],
-            child: _accountCard(a, sync, progress),
-          ),
-        ),
-        const SizedBox(height: AppSpace.md),
-        _reveal(9, _aboutBlock(a)),
-        const SizedBox(height: AppSpace.sm),
-      ],
+                  // Neste aparelho — o que se vê e o que se ouve.
+                  _reveal(4, _groupLabel(a, context.l10n.settingsGroupDevice)),
+                  _reveal(
+                    5,
+                    KeyedSubtree(
+                      key: _sectionKeys[_SettingsSection.aparencia],
+                      child: _appearanceCard(progress, a),
+                    ),
+                  ),
+                  const SizedBox(height: AppSpace.md),
+                  _reveal(6, _languageCard(progress, a)),
+                  const SizedBox(height: AppSpace.md),
+                  _reveal(
+                    6,
+                    KeyedSubtree(
+                      key: _sectionKeys[_SettingsSection.lembretes],
+                      child: _remindersCard(progress, a),
+                    ),
+                  ),
+
+                  // Conta e dados — backup, sair e resetar num lugar só.
+                  _reveal(
+                    7,
+                    _groupLabel(a, context.l10n.settingsGroupAccountData),
+                  ),
+                  _reveal(
+                    8,
+                    KeyedSubtree(
+                      key: _sectionKeys[_SettingsSection.conta],
+                      child: _accountCard(a, sync, progress),
+                    ),
+                  ),
+                  const SizedBox(height: AppSpace.md),
+                  _reveal(9, _aboutBlock(a)),
+                  const SizedBox(height: AppSpace.sm),
+                ],
+              ),
+            ),
+          ],
+        );
+      },
     );
   }
 
@@ -351,9 +375,7 @@ class _SettingsScreenState extends State<SettingsScreen>
           selected: current,
           onChanged: (lang) {
             if (lang == current) return;
-            progress.updateSettings(
-              progress.settings.copyWith(language: lang),
-            );
+            progress.updateSettings(progress.settings.copyWith(language: lang));
           },
         ),
       ],
@@ -1026,7 +1048,9 @@ class _SettingsScreenState extends State<SettingsScreen>
           final a = Appearance.of(ctx);
           final moderation = ctx.watch<ModerationService>();
           final people = moderation.blocked.entries.toList()
-            ..sort((x, y) => x.value.toLowerCase().compareTo(y.value.toLowerCase()));
+            ..sort(
+              (x, y) => x.value.toLowerCase().compareTo(y.value.toLowerCase()),
+            );
           if (people.isEmpty) {
             return Text(
               ctx.l10n.settingsBlockedEmpty,
@@ -1557,13 +1581,8 @@ class _ProfileHeader extends StatelessWidget {
 
 /// Escolha em trilho — o segmentado único do app ([AppSegmentedTabs]).
 class _SegmentTrack extends StatelessWidget {
-  final List<
-      ({
-        String label,
-        Widget? mark,
-        bool selected,
-        VoidCallback onTap,
-      })> items;
+  final List<({String label, Widget? mark, bool selected, VoidCallback onTap})>
+  items;
   final String? semanticsLabel;
 
   const _SegmentTrack({required this.items, this.semanticsLabel});
@@ -1579,12 +1598,7 @@ class _SegmentTrack extends StatelessWidget {
         onChanged: (i) => items[i].onTap(),
         items: [
           for (final item in items)
-            (
-              label: item.label,
-              glyph: null,
-              mark: item.mark,
-              alert: false,
-            ),
+            (label: item.label, glyph: null, mark: item.mark, alert: false),
         ],
       ),
     );

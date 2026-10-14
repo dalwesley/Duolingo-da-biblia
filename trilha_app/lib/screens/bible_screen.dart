@@ -385,63 +385,68 @@ class _BibleLibrary extends StatelessWidget {
     final topPad = MediaQuery.viewPaddingOf(context).top + AppSpace.sm;
     final booksPane = pane == 0;
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Padding(
-          padding: EdgeInsets.fromLTRB(
-            AppSpace.screen,
-            topPad,
-            AppSpace.screen,
-            0,
-          ),
-          child: topBar,
-        ),
-        Expanded(
-          child: ListView(
-            key: ValueKey(pane),
-            padding: EdgeInsets.fromLTRB(
-              AppSpace.screen,
-              AppSpace.afterTopBar,
-              AppSpace.screen,
-              scrollPaddingBelowNav(context),
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final side = AppSpace.screen + contentGutterOf(constraints.maxWidth);
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Padding(
+              padding: EdgeInsets.fromLTRB(
+                AppSpace.screen,
+                topPad,
+                AppSpace.screen,
+                0,
+              ),
+              child: topBar,
             ),
-            children: [
-              AppSegmentedTabs(
-                index: pane,
-                accent: AppRoles.reward,
-                onChanged: (i) {
-                  if (i == pane) return;
-                  ActHaptics.tap();
-                  onPane(i);
-                },
-                items: [
-                  (
-                    label: context.l10n.bibleTitle,
-                    glyph: CinematicGlyph.book,
-                    mark: null,
-                    alert: false,
+            Expanded(
+              child: ListView(
+                key: ValueKey(pane),
+                padding: EdgeInsets.fromLTRB(
+                  side,
+                  AppSpace.afterTopBar,
+                  side,
+                  scrollPaddingBelowNav(context),
+                ),
+                children: [
+                  AppSegmentedTabs(
+                    index: pane,
+                    accent: AppRoles.reward,
+                    onChanged: (i) {
+                      if (i == pane) return;
+                      ActHaptics.tap();
+                      onPane(i);
+                    },
+                    items: [
+                      (
+                        label: context.l10n.bibleTitle,
+                        glyph: CinematicGlyph.book,
+                        mark: null,
+                        alert: false,
+                      ),
+                      (
+                        label: context.l10n.bibleTabReading,
+                        glyph: CinematicGlyph.path,
+                        mark: null,
+                        alert: planDue,
+                      ),
+                    ],
                   ),
-                  (
-                    label: context.l10n.bibleTabReading,
-                    glyph: CinematicGlyph.path,
-                    mark: null,
-                    alert: planDue,
-                  ),
+                  if (booksPane) ...[
+                    const SizedBox(height: AppSpace.md),
+                    _SearchButton(onTap: onSearch),
+                    const SizedBox(height: AppSpace.md),
+                    _OrderChips(order: order),
+                  ],
+                  const SizedBox(height: AppSpace.md),
+                  ...booksPane ? _bookList(context, order) : _readingList(),
                 ],
               ),
-              if (booksPane) ...[
-                const SizedBox(height: AppSpace.md),
-                _SearchButton(onTap: onSearch),
-                const SizedBox(height: AppSpace.md),
-                _OrderChips(order: order),
-              ],
-              const SizedBox(height: AppSpace.md),
-              ...booksPane ? _bookList(context, order) : _readingList(),
-            ],
-          ),
-        ),
-      ],
+            ),
+          ],
+        );
+      },
     );
   }
 
@@ -848,9 +853,9 @@ class _OrderChips extends StatelessWidget {
       onChanged: (i) {
         if (i == index) return;
         ActHaptics.tap();
-        context
-            .read<ProgressService>()
-            .setBibleBrowseOrder(BibleReadingOrder.values[i]);
+        context.read<ProgressService>().setBibleBrowseOrder(
+          BibleReadingOrder.values[i],
+        );
       },
       items: [
         (
@@ -891,10 +896,7 @@ class _PlanCard extends StatelessWidget {
         ? context.l10n.planCardIdle
         : done
         ? context.l10n.planCardDoneToday
-        : context.l10n.planCardToday(
-            plan.minutesPerDay,
-            plan.order.shortLabel,
-          );
+        : context.l10n.planCardToday(plan.minutesPerDay, plan.order.shortLabel);
 
     return GlassCard(
       onTap: onOpen,
@@ -1219,9 +1221,9 @@ class _SearchPane extends StatelessWidget {
 
     final results = ListView(
       padding: EdgeInsets.fromLTRB(
-        AppSpace.screen,
+        AppSpace.screen + contentGutterOf(MediaQuery.sizeOf(context).width),
         AppSpace.lg,
-        AppSpace.screen,
+        AppSpace.screen + contentGutterOf(MediaQuery.sizeOf(context).width),
         scrollPaddingBelowNav(context),
       ),
       children: [
@@ -1300,7 +1302,11 @@ class _SearchPane extends StatelessWidget {
         ] else
           SizedBox(height: topPad),
         Padding(
-          padding: const EdgeInsets.symmetric(horizontal: AppSpace.screen),
+          padding: EdgeInsets.symmetric(
+            horizontal:
+                AppSpace.screen +
+                contentGutterOf(MediaQuery.sizeOf(context).width),
+          ),
           child: searchField,
         ),
         Expanded(child: results),

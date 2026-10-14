@@ -551,6 +551,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       mode: mode,
       style: appearance,
       extendBody: true,
+      frameBody: false,
       // Trilha STWAY velada sobre o céu, igual em todas as abas — fica
       // fora do _TabFade para não piscar na troca.
       background: Stack(

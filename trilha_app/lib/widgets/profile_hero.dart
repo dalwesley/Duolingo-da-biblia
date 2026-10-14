@@ -7,6 +7,7 @@ import '../l10n/app_language.dart';
 import '../l10n/l10n_global.dart';
 import '../models/caravan_profile_prefs.dart';
 import '../theme/app_theme.dart';
+import '../utils/layout_utils.dart';
 import '../utils/appearance.dart';
 import '../utils/spiritual_growth.dart';
 import 'act_feel.dart';
@@ -66,9 +67,9 @@ class ProfileHero extends StatelessWidget {
     if (year == null || month == null || month < 1 || month > 12) {
       return l.pilgrimFallbackName;
     }
-    final monthName = DateFormat.MMMM(l.localeName)
-        .format(DateTime(year, month))
-        .replaceAll('.', '');
+    final monthName = DateFormat.MMMM(
+      l.localeName,
+    ).format(DateTime(year, month)).replaceAll('.', '');
     return l.profileSince(monthName, year);
   }
 
@@ -77,20 +78,22 @@ class ProfileHero extends StatelessWidget {
     final a = Appearance.of(context);
     final l10n = context.l10n;
     final top = MediaQuery.viewPaddingOf(context).top;
-    final displayName =
-        name.trim().isEmpty ? l10n.pilgrimFallbackName : name.trim();
+    final displayName = name.trim().isEmpty
+        ? l10n.pilgrimFallbackName
+        : name.trim();
 
-    return Padding(
-      padding: EdgeInsets.fromLTRB(
-        AppSpace.screen,
-        top + AppSpace.sm,
-        AppSpace.screen,
-        0,
-      ),
-      child: Column(
-        children: [
-          if (onBack != null || onSettings != null)
-            TopBar(
+    final showBar = onBack != null || onSettings != null;
+    return Column(
+      children: [
+        if (showBar)
+          Padding(
+            padding: EdgeInsets.fromLTRB(
+              AppSpace.screen,
+              top + AppSpace.sm,
+              AppSpace.screen,
+              0,
+            ),
+            child: TopBar(
               inline: true,
               immersive: true,
               dark: a.onDark,
@@ -101,66 +104,80 @@ class ProfileHero extends StatelessWidget {
               onTrailingTap: onSettings,
               trailingGlyph: CinematicGlyph.tune,
             ),
-          const SizedBox(height: AppSpace.afterTopBar),
-          _GlowPortrait(
-            child: UserAvatar(
-              name: displayName,
-              photoUrl: photoUrl,
-              seed: seed,
-              style: style,
-              radius: AppMetrics.avatarHero,
-              borderColor: AppRoles.chrome,
-              editable: onEditPortrait != null,
-              onTap: onEditPortrait,
+          ),
+        ContentFrame(
+          child: Padding(
+            padding: EdgeInsets.fromLTRB(
+              AppSpace.screen,
+              showBar ? 0 : top + AppSpace.sm,
+              AppSpace.screen,
+              0,
+            ),
+            child: Column(
+              children: [
+                const SizedBox(height: AppSpace.afterTopBar),
+                _GlowPortrait(
+                  child: UserAvatar(
+                    name: displayName,
+                    photoUrl: photoUrl,
+                    seed: seed,
+                    style: style,
+                    radius: AppMetrics.avatarHero,
+                    borderColor: AppRoles.chrome,
+                    editable: onEditPortrait != null,
+                    onTap: onEditPortrait,
+                  ),
+                ),
+                const SizedBox(height: AppSpace.lg),
+                Text(
+                  displayName,
+                  textAlign: TextAlign.center,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTypography.display(
+                    size: 28,
+                    weight: FontWeight.w900,
+                    height: 1.05,
+                    color: a.text,
+                  ),
+                ),
+                if ((epithet ?? '').isNotEmpty) ...[
+                  const SizedBox(height: 6),
+                  Text(
+                    epithet!,
+                    textAlign: TextAlign.center,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: AppTypography.body(
+                      size: 14,
+                      weight: FontWeight.w800,
+                      color: epithetColor ?? AppRoles.chrome,
+                    ),
+                  ),
+                ],
+                if ((sinceLabel ?? '').isNotEmpty) ...[
+                  const SizedBox(height: 4),
+                  Text(
+                    sinceLabel!,
+                    textAlign: TextAlign.center,
+                    style: AppTypography.body(
+                      size: 13,
+                      weight: FontWeight.w600,
+                      color: a.textSecondary,
+                    ),
+                  ),
+                ],
+                const SizedBox(height: AppSpace.xl),
+                _HeroStats(
+                  steps: steps,
+                  missions: missions,
+                  accuracyPercent: accuracyPercent,
+                ),
+              ],
             ),
           ),
-          const SizedBox(height: AppSpace.lg),
-          Text(
-            displayName,
-            textAlign: TextAlign.center,
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: AppTypography.display(
-              size: 28,
-              weight: FontWeight.w900,
-              height: 1.05,
-              color: a.text,
-            ),
-          ),
-          if ((epithet ?? '').isNotEmpty) ...[
-            const SizedBox(height: 6),
-            Text(
-              epithet!,
-              textAlign: TextAlign.center,
-              maxLines: 2,
-              overflow: TextOverflow.ellipsis,
-              style: AppTypography.body(
-                size: 14,
-                weight: FontWeight.w800,
-                color: epithetColor ?? AppRoles.chrome,
-              ),
-            ),
-          ],
-          if ((sinceLabel ?? '').isNotEmpty) ...[
-            const SizedBox(height: 4),
-            Text(
-              sinceLabel!,
-              textAlign: TextAlign.center,
-              style: AppTypography.body(
-                size: 13,
-                weight: FontWeight.w600,
-                color: a.textSecondary,
-              ),
-            ),
-          ],
-          const SizedBox(height: AppSpace.xl),
-          _HeroStats(
-            steps: steps,
-            missions: missions,
-            accuracyPercent: accuracyPercent,
-          ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
@@ -512,9 +529,7 @@ class _ConstancyCardState extends State<ConstancyCard> {
                 padding: const EdgeInsets.symmetric(vertical: AppSpace.sm),
                 child: Row(
                   children: [
-                    Expanded(
-                      child: SectionLabel(l10n.profileWeekHistory),
-                    ),
+                    Expanded(child: SectionLabel(l10n.profileWeekHistory)),
                     RotatedBox(
                       quarterTurns: _historyOpen ? 3 : 1,
                       child: ListChevron(color: a.textSecondary),
@@ -978,8 +993,7 @@ class _OilVesselPainter extends CustomPainter {
     // Aba da boca: faixa um pouco mais larga que o corpo.
     canvas.drawRRect(
       RRect.fromLTRBR(0, 0, w, _rim, const Radius.circular(2)),
-      Paint()
-        ..color = glass.withValues(alpha: current ? 0.7 : 0.3),
+      Paint()..color = glass.withValues(alpha: current ? 0.7 : 0.3),
     );
 
     // Contorno: a semana atual um pouco mais acesa.
