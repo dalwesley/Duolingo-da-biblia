@@ -25,6 +25,7 @@ import '../utils/trail_progress.dart';
 import '../widgets/act_feel.dart';
 import '../widgets/app_sheet.dart';
 import '../widgets/cinematic_icon.dart';
+import '../widgets/cloud_mascot.dart';
 import '../widgets/exercise_feedback_dialog.dart';
 import '../widgets/exercise_panel.dart';
 import '../widgets/lamps_bar.dart';
@@ -208,12 +209,13 @@ class _LessonScreenState extends State<LessonScreen>
         final alreadyDone = visibleCompleted.contains(widget.missionSlug);
         if (!unlockedTrail || (!unlockedMission && !alreadyDone)) {
           if (!mounted) return;
-          showAppToastFor(
+          await showAppToastFor(
             context,
             message: context.l10n.lessonLocked,
             glyph: CinematicGlyph.lock,
             tone: AppToastTone.warn,
           );
+          if (!mounted) return;
           Navigator.of(context).pop();
           return;
         }
@@ -259,12 +261,8 @@ class _LessonScreenState extends State<LessonScreen>
     if (!mounted) return;
 
     if (plan.isEmpty) {
-      showAppToastFor(
-        context,
-        message: context.l10n.lessonLoadError,
-        glyph: CinematicGlyph.wrong,
-        tone: AppToastTone.warn,
-      );
+      await _showLoadError();
+      if (!mounted) return;
       Navigator.of(context).pop();
       return;
     }
@@ -728,15 +726,28 @@ class _LessonScreenState extends State<LessonScreen>
     );
   }
 
+  Future<void> _showLoadError() {
+    return showAppDialog<void>(
+      context,
+      builder: (ctx) => AppDialog(
+        leading: const CloudMascot(face: CloudFace.erro, size: 112),
+        content: Text(ctx.l10n.lessonLoadError),
+        actions: [
+          CopperCta(
+            label: ctx.l10n.commonGotIt,
+            dense: true,
+            trailing: null,
+            onTap: () => Navigator.pop(ctx),
+          ),
+        ],
+      ),
+    );
+  }
+
   void _startQuiz() {
     TtsService.instance.stop();
     if (_exercises.isEmpty) {
-      showAppToastFor(
-        context,
-        message: context.l10n.lessonLoadError,
-        glyph: CinematicGlyph.wrong,
-        tone: AppToastTone.warn,
-      );
+      unawaited(_showLoadError());
       return;
     }
     setState(() {
@@ -1156,7 +1167,6 @@ class _LessonScreenState extends State<LessonScreen>
                             _Phase.intro => _IntroPanel(
                               key: const ValueKey('intro'),
                               mission: mission,
-                              itemCount: total,
                               accent: accent,
                               onStart: _startQuiz,
                               onStudyRef: () {
@@ -1431,7 +1441,6 @@ class _ExitSheet extends StatelessWidget {
 
 class _IntroPanel extends StatelessWidget {
   final Mission mission;
-  final int itemCount;
   final Color accent;
   final VoidCallback onStart;
   final VoidCallback? onStudyRef;
@@ -1439,7 +1448,6 @@ class _IntroPanel extends StatelessWidget {
   const _IntroPanel({
     super.key,
     required this.mission,
-    required this.itemCount,
     required this.accent,
     required this.onStart,
     this.onStudyRef,
@@ -1465,28 +1473,6 @@ class _IntroPanel extends StatelessWidget {
             mission.title,
             textAlign: TextAlign.center,
             style: AppTypography.display(size: 32, height: 1.12, color: a.text),
-          ),
-          const SizedBox(height: 12),
-          Wrap(
-            alignment: WrapAlignment.center,
-            spacing: 8,
-            runSpacing: 8,
-            children: [
-              SoftBadge(
-                text: mission.isBoss
-                    ? context.l10n.lessonBoss
-                    : context.l10n.lessonDuration,
-                glyph: mission.isBoss
-                    ? CinematicGlyph.crown
-                    : CinematicGlyph.hourglass,
-                accent: AppRoles.chrome,
-              ),
-              SoftBadge(
-                text: context.l10n.lessonIntroQuestions(itemCount),
-                glyph: CinematicGlyph.scroll,
-                accent: AppRoles.chrome,
-              ),
-            ],
           ),
           if (note.isNotEmpty) ...[
             const SizedBox(height: 16),
@@ -1538,18 +1524,6 @@ class _IntroPanel extends StatelessWidget {
                   )
                 else
                   const Spacer(),
-                if (stageText.isNotEmpty) ...[
-                  Text(
-                    context.l10n.lessonIntroConsult,
-                    textAlign: TextAlign.center,
-                    style: AppTypography.body(
-                      size: 13,
-                      height: 1.35,
-                      color: a.textFaint,
-                    ),
-                  ),
-                  const SizedBox(height: 12),
-                ],
                 MissionListenButton(
                   verse: stageText,
                   insight: mission.centralInsight,
@@ -1735,18 +1709,8 @@ class _ActWarmup extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        const CinematicIcon(
-          glyph: CinematicGlyph.wrong,
-          size: 78,
-          accent: AppRoles.error,
-          glowing: true,
-        ),
-        const CinematicIcon(
-          glyph: CinematicGlyph.check,
-          size: 78,
-          accent: AppRoles.success,
-          glowing: true,
-        ),
+        const CloudMascot(face: CloudFace.erro, size: 64),
+        const CloudMascot(face: CloudFace.sucesso, size: 64),
         const CinematicIcon(
           glyph: CinematicGlyph.refresh,
           size: 18,

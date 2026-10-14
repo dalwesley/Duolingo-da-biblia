@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import '../l10n/app_language.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
-import '../utils/layout_utils.dart';
 import 'act_feel.dart';
 import 'cinematic_icon.dart';
+import 'cloud_mascot.dart';
 import 'immersive_background.dart';
 
 /// Tokens visuais compartilhados — barras, labels e badges iguais em toda a app.
@@ -416,6 +416,11 @@ class GhostCta extends StatelessWidget {
   /// escolhas lado a lado (ex.: tentar de novo / pular).
   final bool matchCopper;
 
+  /// Fundo e tinta quando a placa precisa ser clara (celebração).
+  final Color? fill;
+  final Color? foreground;
+  final Color? borderColor;
+
   const GhostCta({
     super.key,
     required this.label,
@@ -425,15 +430,18 @@ class GhostCta extends StatelessWidget {
     this.expanded = false,
     this.padding = const EdgeInsets.symmetric(vertical: 14, horizontal: 12),
     this.matchCopper = false,
+    this.fill,
+    this.foreground,
+    this.borderColor,
   });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final ink = danger ? AppColors.error : a.text;
-    final border = danger
-        ? AppColors.error.withValues(alpha: 0.45)
-        : a.cardBorder;
+    final ink = foreground ?? (danger ? AppColors.error : a.text);
+    final border =
+        borderColor ??
+        (danger ? AppColors.error.withValues(alpha: 0.45) : a.cardBorder);
 
     return Material(
       color: Colors.transparent,
@@ -457,9 +465,11 @@ class GhostCta extends StatelessWidget {
           ),
           padding: padding,
           decoration: BoxDecoration(
-            color: danger
-                ? AppColors.error.withValues(alpha: 0.08)
-                : a.cardFillSoft,
+            color:
+                fill ??
+                (danger
+                    ? AppColors.error.withValues(alpha: 0.08)
+                    : a.cardFillSoft),
             borderRadius: BorderRadius.circular(AppRadii.md),
             border: Border.all(color: border),
           ),
@@ -666,6 +676,7 @@ class SectionLabel extends StatelessWidget {
   final Color? color;
   final double size;
   final TextAlign? textAlign;
+  final int? maxLines;
 
   const SectionLabel(
     this.text, {
@@ -673,6 +684,7 @@ class SectionLabel extends StatelessWidget {
     this.color,
     this.size = 11,
     this.textAlign,
+    this.maxLines,
   });
 
   @override
@@ -681,6 +693,8 @@ class SectionLabel extends StatelessWidget {
     return Text(
       text.toUpperCase(),
       textAlign: textAlign,
+      maxLines: maxLines,
+      overflow: maxLines != null ? TextOverflow.ellipsis : null,
       style: AppTypography.label(
         size: size,
         letterSpacing: 1.3,
@@ -992,100 +1006,91 @@ class AppChoiceTile extends StatelessWidget {
 
 enum AppToastTone { accent, warn }
 
-/// Aviso cinematográfico — flutuante, filete dourado, acima da nav.
-void showAppToast(
-  ScaffoldMessengerState messenger, {
-  required String message,
-  CinematicGlyph glyph = CinematicGlyph.check,
-  AppToastTone tone = AppToastTone.accent,
-  double? bottomGap,
+/// Cara da nuvem para um aviso que antes era faixa.
+///
+/// Erro quando o caminho não abre. Triste na lâmpada que some, ou num
+/// cadeado que só guarda (sem tom de aviso). Feliz no gesto de companhia.
+/// O resto que deu certo é sucesso.
+CloudFace cloudFaceForNotice({
+  required AppToastTone tone,
+  required CinematicGlyph glyph,
 }) {
-  final accent = tone == AppToastTone.warn ? AppRoles.risk : AppRoles.success;
-  messenger.hideCurrentSnackBar();
-  messenger.showSnackBar(
-    SnackBar(
-      behavior: SnackBarBehavior.floating,
-      backgroundColor: Colors.transparent,
-      elevation: 0,
-      padding: EdgeInsets.zero,
-      duration: const Duration(milliseconds: 3400),
-      margin: EdgeInsets.fromLTRB(AppSpace.md, 0, AppSpace.md, bottomGap ?? 96),
-      content: _AppToastCard(message: message, glyph: glyph, accent: accent),
-    ),
-  );
+  if (glyph == CinematicGlyph.wrong) return CloudFace.erro;
+  if (glyph == CinematicGlyph.lamp) return CloudFace.triste;
+  if (glyph == CinematicGlyph.lock) {
+    return tone == AppToastTone.warn ? CloudFace.erro : CloudFace.triste;
+  }
+  if (tone == AppToastTone.warn) return CloudFace.erro;
+  if (glyph == CinematicGlyph.heart ||
+      glyph == CinematicGlyph.people ||
+      glyph == CinematicGlyph.gift ||
+      glyph == CinematicGlyph.flame ||
+      glyph == CinematicGlyph.bell ||
+      glyph == CinematicGlyph.crown) {
+    return CloudFace.feliz;
+  }
+  return CloudFace.sucesso;
 }
 
-void showAppToastFor(
+/// Aviso no lugar da faixa — diálogo com a nuvem, até a pessoa fechar.
+Future<void> showAppToastFor(
   BuildContext context, {
   required String message,
   CinematicGlyph glyph = CinematicGlyph.check,
   AppToastTone tone = AppToastTone.accent,
+  CloudFace? face,
 }) {
-  showAppToast(
-    ScaffoldMessenger.of(context),
-    message: message,
-    glyph: glyph,
-    tone: tone,
-    bottomGap: scrollPaddingBelowNav(context),
-  );
-}
-
-class _AppToastCard extends StatelessWidget {
-  final String message;
-  final CinematicGlyph glyph;
-  final Color accent;
-
-  const _AppToastCard({
-    required this.message,
-    required this.glyph,
-    required this.accent,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(AppRadii.md),
-        color: AppColors.nightElevated,
-        border: Border.all(color: accent.withValues(alpha: 0.85), width: 1.75),
-        boxShadow: AppLight.shadow(elevated: true),
-      ),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(AppRadii.md - 1),
-        child: IntrinsicHeight(
-          child: Row(
+  if (!context.mounted) return Future<void>.value();
+  final cloud = face ?? cloudFaceForNotice(tone: tone, glyph: glyph);
+  return showDialog<void>(
+    context: context,
+    barrierColor: AppColors.scrim,
+    builder: (ctx) {
+      final a = Appearance.of(ctx);
+      return Dialog(
+        backgroundColor: a.cardFill,
+        insetPadding: const EdgeInsets.symmetric(
+          horizontal: AppSpace.xxl,
+          vertical: AppSpace.xxl,
+        ),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(AppRadii.sheet),
+          side: BorderSide(
+            color: a.cardBorder,
+            width: AppMetrics.cardBorderWidth,
+          ),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(
+            AppSpace.xxl,
+            AppSpace.xxl,
+            AppSpace.xxl,
+            AppSpace.lg,
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Container(width: 4, color: accent),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(12, 12, 14, 12),
-                child: CinematicIcon(
-                  glyph: glyph,
-                  size: 22,
-                  accent: accent,
-                  framed: false,
-                  glowing: true,
-                ),
+              Center(child: CloudMascot(face: cloud, size: 112)),
+              const SizedBox(height: AppSpace.lg),
+              Text(
+                message,
+                textAlign: TextAlign.center,
+                style: AppTypography.body(size: 16, height: 1.4, color: a.text),
               ),
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(0, 12, 14, 12),
-                  child: Text(
-                    message,
-                    style: AppTypography.body(
-                      size: 14,
-                      weight: FontWeight.w800,
-                      height: 1.3,
-                      color: AppColors.textOnDark,
-                    ),
-                  ),
-                ),
+              const SizedBox(height: AppSpace.xl),
+              CopperCta(
+                label: ctx.l10n.commonGotIt,
+                dense: true,
+                trailing: null,
+                onTap: () => Navigator.pop(ctx),
               ),
             ],
           ),
         ),
-      ),
-    );
-  }
+      );
+    },
+  );
 }
 
 /// Divisória entre rows de um card — uma cor, 1px. [indent] alinha com o
@@ -1232,7 +1237,8 @@ class AppSheetHeader extends StatelessWidget {
 
 /// Estado vazio — glifo 40, título, texto e CTA opcional.
 class EmptyState extends StatelessWidget {
-  final CinematicGlyph glyph;
+  final CinematicGlyph? glyph;
+  final Widget? mark;
   final String title;
   final String? body;
   final Widget? action;
@@ -1240,12 +1246,13 @@ class EmptyState extends StatelessWidget {
 
   const EmptyState({
     super.key,
-    required this.glyph,
+    this.glyph,
+    this.mark,
     required this.title,
     this.body,
     this.action,
     this.accent,
-  });
+  }) : assert(glyph != null || mark != null);
 
   @override
   Widget build(BuildContext context) {
@@ -1258,11 +1265,12 @@ class EmptyState extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          CinematicIcon(
-            glyph: glyph,
-            size: AppMetrics.leadingIcon,
-            accent: accent ?? AppRoles.chrome,
-          ),
+          mark ??
+              CinematicIcon(
+                glyph: glyph!,
+                size: AppMetrics.leadingIcon,
+                accent: accent ?? AppRoles.chrome,
+              ),
           const SizedBox(height: AppSpace.md),
           Text(
             title,

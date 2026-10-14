@@ -7,6 +7,7 @@ import '../utils/appearance.dart';
 import 'act_feel.dart';
 import 'brand_flip_card.dart';
 import 'cinematic_icon.dart';
+import 'cloud_mascot.dart';
 import 'immersive_background.dart';
 import 'stage_plate.dart';
 import 'ui_primitives.dart';
@@ -51,18 +52,13 @@ class _VerseFillPanelState extends State<VerseFillPanel>
     _blankIndexes = _pickBlanks(_words);
     _options = _buildOptions(_words, _blankIndexes);
 
-    _stagger = AnimationController(
-      vsync: this,
-      duration: AppMotion.scene,
-    )..forward();
+    _stagger = AnimationController(vsync: this, duration: AppMotion.scene)
+      ..forward();
     _pulse = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 1400),
     )..repeat(reverse: true);
-    _revealFlash = AnimationController(
-      vsync: this,
-      duration: AppMotion.scene,
-    );
+    _revealFlash = AnimationController(vsync: this, duration: AppMotion.scene);
   }
 
   /// Ellipsis de trecho → pontuação legível; preserva vírgulas/pontos nos tokens.
@@ -266,8 +262,7 @@ class _VerseFillPanelState extends State<VerseFillPanel>
                     _revealFlash.value >= 1) {
                   return const SizedBox.shrink();
                 }
-                final flashColor =
-                    _correct ? AppRoles.action : AppRoles.error;
+                final flashColor = _correct ? AppRoles.action : AppRoles.error;
                 return IgnorePointer(
                   child: DecoratedBox(
                     decoration: BoxDecoration(
@@ -747,10 +742,7 @@ class _BlankSlot extends StatelessWidget {
       slot = GestureDetector(
         onTap: revealed ? null : onTap,
         // Ouro na lacuna — seleção clara some no texto do verso.
-        child: Text(
-          value!,
-          style: verseStyle.copyWith(color: AppRoles.action),
-        ),
+        child: Text(value!, style: verseStyle.copyWith(color: AppRoles.action)),
       );
     }
 
@@ -862,11 +854,9 @@ class _RevealBanner extends StatelessWidget {
             ),
             child: Row(
               children: [
-                CinematicIcon(
-                  glyph: correct ? CinematicGlyph.check : CinematicGlyph.wrong,
-                  size: AppMetrics.iconLg,
-                  accent: color,
-                  framed: false,
+                CloudMascot(
+                  face: correct ? CloudFace.sucesso : CloudFace.erro,
+                  size: 48,
                 ),
                 const SizedBox(width: 12),
                 Expanded(

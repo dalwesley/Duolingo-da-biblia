@@ -24,6 +24,7 @@ import '../widgets/corner_board.dart';
 import '../widgets/corner_home_card.dart';
 import '../widgets/juntos_inbox.dart';
 import '../widgets/cinematic_icon.dart';
+import '../widgets/cloud_mascot.dart';
 import '../widgets/comeback_sheet.dart';
 import '../widgets/daily_chest_card.dart';
 import '../widgets/daily_quests_card.dart';
@@ -681,6 +682,11 @@ class _CatalogUnavailable extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
+              CloudMascot(
+                face: retrying ? CloudFace.carregando : CloudFace.erro,
+                size: 120,
+              ),
+              const SizedBox(height: AppSpace.lg),
               Text(
                 context.l10n.homeCatalogEmptyTitle,
                 textAlign: TextAlign.center,
@@ -753,10 +759,21 @@ class _HomeSkeletonState extends State<_HomeSkeleton>
           height: HeroContinueCard.homeHeaderReserve,
         ),
         const SizedBox(height: AppSpace.lg),
-        _ShimmerBox(
-          controller: _shimmer,
+        SizedBox(
           height: HeroContinueCard.stageHeight(context),
-          radius: AppMetrics.heroRadius,
+          child: Stack(
+            alignment: Alignment.center,
+            children: [
+              Positioned.fill(
+                child: _ShimmerBox(
+                  controller: _shimmer,
+                  height: HeroContinueCard.stageHeight(context),
+                  radius: AppMetrics.heroRadius,
+                ),
+              ),
+              const CloudMascot(face: CloudFace.carregando, size: 112),
+            ],
+          ),
         ),
         const SizedBox(height: AppSpace.section),
         _ShimmerBox(controller: _shimmer, height: 96),

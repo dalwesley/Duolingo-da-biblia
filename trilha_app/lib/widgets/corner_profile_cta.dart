@@ -107,8 +107,8 @@ class CornerProfileCta extends StatelessWidget {
   /// Segurar o botão já é a confirmação — animação e envio na sequência.
   Future<void> _challenge(BuildContext context, CornerProposal proposal) async {
     final corners = context.read<CornerService>();
+    final host = Navigator.of(context).overlay?.context;
     final progress = context.read<ProgressService>();
-    final messenger = ScaffoldMessenger.maybeOf(context);
     // Animação primeiro; envio (e o rebuild do card) só depois que some.
     await showCornerBurst(
       context,
@@ -126,9 +126,10 @@ class CornerProfileCta extends StatelessWidget {
     );
     if (created == null) {
       final msg = corners.lastError ?? CornerCopy.sendFailed;
-      if (messenger != null) {
-        showAppToast(
-          messenger,
+      final target = context.mounted ? context : host;
+      if (target != null && target.mounted) {
+        await showAppToastFor(
+          target,
           message: msg,
           glyph: CinematicGlyph.wrong,
           tone: AppToastTone.warn,

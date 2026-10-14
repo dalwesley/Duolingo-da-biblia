@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import 'cloud_mascot.dart';
 import 'ui_primitives.dart';
-import 'trilha_mascot.dart';
 
 class MascotBubble extends StatelessWidget {
   final String message;
   final bool dark;
   final bool glowing;
+  final CloudFace face;
 
   const MascotBubble({
     super.key,
     required this.message,
     this.dark = true,
     this.glowing = false,
+    this.face = CloudFace.sucesso,
   });
 
   @override
@@ -22,10 +24,7 @@ class MascotBubble extends StatelessWidget {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
-        TrilhaMascot(
-          size: glowing ? AppMetrics.iconHero : AppMetrics.leadingIcon,
-          glowing: glowing,
-        ),
+        CloudMascot(face: face, size: 72),
         const SizedBox(width: 12),
         Expanded(
           // Balão de fala: canto do mascote reto (a “cauda”), demais no

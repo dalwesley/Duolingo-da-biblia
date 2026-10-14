@@ -12,6 +12,7 @@ import '../services/room_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../widgets/act_feel.dart';
+import '../widgets/cloud_mascot.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/stway_brand.dart';
 import '../widgets/tilt_star_sky.dart';
@@ -291,6 +292,8 @@ class _SplashScreenState extends State<SplashScreen>
                     opacity: barV,
                     child: Column(
                       children: [
+                        const CloudMascot(face: CloudFace.carregando, size: 96),
+                        const SizedBox(height: 18),
                         ClipRRect(
                           borderRadius: BorderRadius.circular(AppRadii.pill),
                           child: SizedBox(

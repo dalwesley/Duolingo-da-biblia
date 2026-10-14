@@ -63,6 +63,7 @@ flutter:
   assets:
     - assets/icon/app_icon.png
     - assets/icon/splash_bg.png
+    - assets/mascot/
     # Bíblia e estudo Strong vão no binário. Currículo (trilhas/perguntas)
     # vem do Firestore; os *_questions.json em assets/data/ são só seed/admin.
     - assets/data/bible_tb.json

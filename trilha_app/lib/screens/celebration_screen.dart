@@ -30,6 +30,7 @@ import '../models/corner_challenge.dart';
 import '../widgets/act_feel.dart';
 import '../widgets/companion_invite_prompt_sheet.dart';
 import '../widgets/cinematic_icon.dart';
+import '../widgets/cloud_mascot.dart';
 import '../widgets/coming_soon_trails_card.dart';
 import '../widgets/commit_strip.dart';
 import '../widgets/confetti_overlay.dart';
@@ -97,6 +98,12 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   CornerChallenge? _closedCorner;
   final _sealShareKey = GlobalKey();
   final _insightShareKey = GlobalKey();
+  final _stageKey = GlobalKey();
+  final _cloudKey = GlobalKey();
+  Offset? _rainSource;
+  double _rainSpan = 0;
+  bool _rainLocked = false;
+  bool _rainCapturePending = false;
   TrailDifficulty? _currentMode;
   TrailDifficulty? _nextMode;
   DifficultyMeta? _nextMeta;
@@ -136,10 +143,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
       vsync: this,
       duration: const Duration(milliseconds: 1100),
     );
-    _claimPop = AnimationController(
-      vsync: this,
-      duration: AppMotion.slow,
-    );
+    _claimPop = AnimationController(vsync: this, duration: AppMotion.slow);
     _claimScale = TweenSequence<double>([
       TweenSequenceItem(
         tween: Tween(
@@ -209,10 +213,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
             curve: const Interval(0.62, 1.0, curve: AppMotion.enter),
           ),
         );
-    _countProgress = CurvedAnimation(
-      parent: _count,
-      curve: AppMotion.enter,
-    );
+    _countProgress = CurvedAnimation(parent: _count, curve: AppMotion.enter);
 
     _count.addStatusListener((status) {
       if (status != AnimationStatus.completed || !mounted) return;
@@ -647,6 +648,47 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     return fromLesson.isEmpty ? null : fromLesson;
   }
 
+  /// Cena fechada: a nuvem de sucesso é a origem da chuva.
+  /// Selo novo ocupa o topo no lugar dela.
+  bool get _cloudRain => !widget.failed && _newSeal == null;
+
+  void _scheduleRainSource() {
+    if (_rainLocked || _rainCapturePending || !_cloudRain) return;
+    _rainCapturePending = true;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _rainCapturePending = false;
+      if (!mounted || _rainLocked || !_cloudRain) return;
+      // Espera a nuvem assentar — o slide de entrada muda a posição na tela.
+      if (_entrance.value < 0.62) {
+        _scheduleRainSource();
+        return;
+      }
+      final cloud = _cloudKey.currentContext?.findRenderObject() as RenderBox?;
+      final stage = _stageKey.currentContext?.findRenderObject() as RenderBox?;
+      if (cloud == null || !cloud.hasSize || stage == null || !stage.hasSize) {
+        _scheduleRainSource();
+        return;
+      }
+      final y = cloud.size.height * 0.8;
+      final left = cloud.localToGlobal(
+        Offset(cloud.size.width * 0.04, y),
+        ancestor: stage,
+      );
+      final right = cloud.localToGlobal(
+        Offset(cloud.size.width * 0.96, y),
+        ancestor: stage,
+      );
+      setState(() {
+        _rainSource = Offset(
+          ((left.dx + right.dx) / 2 / stage.size.width).clamp(0.0, 1.0),
+          (left.dy / stage.size.height).clamp(0.0, 1.0),
+        );
+        _rainSpan = ((right.dx - left.dx) / stage.size.width).clamp(0.2, 1.0);
+        _rainLocked = true;
+      });
+    });
+  }
+
   CinematicGlyph get _heroGlyph {
     if (widget.failed) return CinematicGlyph.lamp;
     final seal = _newSeal;
@@ -693,6 +735,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   }) {
     if (widget.failed) {
       return MascotBubble(
+        face: CloudFace.erro,
         glowing: true,
         message: CelebrationCopy.failedDetail,
       );
@@ -744,6 +787,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     );
     final appearance = AppearanceStyle.resolve(mode);
     final heroAccent = _heroAccent;
+    if (_cloudRain) _scheduleRainSource();
 
     return Appearance(
       mode: mode,
@@ -755,6 +799,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
           body: ImmersiveBackground(
             appearance: appearance,
             child: Stack(
+              key: _stageKey,
               fit: StackFit.expand,
               children: [
                 // Luz cinematográfica — bloom + raios suaves. Camada própria:
@@ -782,7 +827,6 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                     },
                   ),
                 ),
-                ConfettiOverlay(active: !widget.failed, cinematic: true),
                 if ((_todayLine ?? '').trim().isNotEmpty && !widget.failed)
                   Positioned(
                     left: -4000,
@@ -824,6 +868,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                         ),
                                       )
                                     : _HeroBeat(
+                                        cloudKey: _cloudRain ? _cloudKey : null,
                                         glyph: _heroGlyph,
                                         accent: heroAccent,
                                         perfect: widget.perfect,
@@ -876,6 +921,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                         vertical: 10,
                                       ),
                                       child: GlassCard(
+                                        color: _CelebrationPlate.fill,
                                         accent: true,
                                         elevated: true,
                                         padding: EdgeInsets.fromLTRB(
@@ -952,7 +998,8 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                       ),
                                       const SizedBox(height: 10),
                                       GhostCta(
-                                        label: context.l10n.celebrationBackToMap,
+                                        label:
+                                            context.l10n.celebrationBackToMap,
                                         onTap: () =>
                                             _leaveCelebration(toTrailMap: true),
                                       ),
@@ -973,14 +1020,15 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                     ] else ...[
                                       if (!widget.failed) ...[
                                         Text(
-                                          context.l10n.celebrationSeeYouTomorrow(
-                                            progress.settings.reminderHour,
-                                          ),
+                                          context.l10n
+                                              .celebrationSeeYouTomorrow(
+                                                progress.settings.reminderHour,
+                                              ),
                                           textAlign: TextAlign.center,
                                           style: AppTypography.body(
                                             size: 13,
                                             weight: FontWeight.w700,
-                                            color: appearance.textSecondary,
+                                            color: appearance.text,
                                           ),
                                         ),
                                         const SizedBox(height: 10),
@@ -993,7 +1041,8 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                                         widget.missionSlug,
                                                       )
                                                   ? context.l10n.commonContinue
-                                                  : context.l10n
+                                                  : context
+                                                        .l10n
                                                         .celebrationBackToMap),
                                         trailing: null,
                                         onTap: () => _leaveCelebration(
@@ -1005,6 +1054,10 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                         const SizedBox(height: 10),
                                         GhostCta(
                                           label: context.l10n.commonNextScene,
+                                          fill: _CelebrationPlate.fill,
+                                          foreground: _CelebrationPlate.ink,
+                                          borderColor: _CelebrationPlate.line
+                                              .withValues(alpha: 0.55),
                                           onTap: _openTomorrow,
                                         ),
                                       ],
@@ -1047,7 +1100,9 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                             false)) ...[
                                       const SizedBox(height: 4),
                                       TextCta(
-                                        label: context.l10n.celebrationHelpContinue,
+                                        label: context
+                                            .l10n
+                                            .celebrationHelpContinue,
                                         leading: CinematicGlyph.gift,
                                         color: appearance.textFaint,
                                         onTap: openDonatePage,
@@ -1063,6 +1118,13 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                     },
                   ),
                 ),
+                if (!widget.failed && (!_cloudRain || _rainSource != null))
+                  ConfettiOverlay(
+                    active: true,
+                    cinematic: true,
+                    source: _cloudRain ? _rainSource : null,
+                    sourceSpan: _cloudRain ? _rainSpan : 0,
+                  ),
               ],
             ),
           ),
@@ -1072,8 +1134,17 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   }
 }
 
+/// Placa clara da festa. Acompanha a nuvem; o céu da tela continua escuro.
+abstract final class _CelebrationPlate {
+  static const fill = Color(0xFFF4F7FB);
+  static const ink = AppColors.text;
+  static const muted = AppColors.textMuted;
+  static const line = Color(0xFF7E96AE);
+}
+
 /// Topo da celebração — emblema, vitória e os três cartões da primeira tela.
 class _HeroBeat extends StatelessWidget {
+  final Key? cloudKey;
   final CinematicGlyph glyph;
   final Color accent;
   final bool perfect;
@@ -1099,6 +1170,7 @@ class _HeroBeat extends StatelessWidget {
   final String? mascot;
 
   const _HeroBeat({
+    this.cloudKey,
     required this.glyph,
     required this.accent,
     required this.perfect,
@@ -1128,58 +1200,65 @@ class _HeroBeat extends StatelessWidget {
     final emblemSize = compact ? 72.0 : 118.0;
     final iconSize = compact ? 28.0 : 44.0;
     final inCommit = streak > 0 && streak <= streakGoal;
-    // Sem "SEM ERRO" — a headline já celebra a missão.
-    final showKicker = !perfect && kicker.trim().isNotEmpty;
-    final showClean = perfect;
+    // Cena fechada — limpa, bônus ou Travessia — é a nuvem. A lâmpada fica
+    // só quando a cena não fechou. Título, "Cena limpa" e a linha da
+    // medalha saem: a cara já diz o resultado.
+    final successCloud = glyph != CinematicGlyph.lamp;
+    final showKicker = !successCloud && !perfect && kicker.trim().isNotEmpty;
     return Column(
       children: [
         ScaleTransition(
           scale: scale,
-          child: RepaintBoundary(
-            child: AnimatedBuilder(
-              animation: pulse,
-              builder: (context, child) {
-                final breath = (math.sin(pulse.value * math.pi * 2) + 1) / 2;
-                return _CelebrationEmblem(
-                  accent: accent,
-                  perfect: perfect,
-                  breath: breath,
-                  size: emblemSize,
-                  child: child!,
-                );
-              },
-              child: RepaintBoundary(
-                child: CinematicIcon(
-                  glyph: glyph,
-                  size: iconSize,
-                  accent: perfect ? AppColors.inkOnAccent : AppColors.night,
-                  framed: false,
+          child: successCloud
+              ? CloudMascot(
+                  key: cloudKey,
+                  face: CloudFace.sucesso,
+                  size: (MediaQuery.sizeOf(context).width * 0.52).clamp(
+                    176.0,
+                    228.0,
+                  ),
+                )
+              : RepaintBoundary(
+                  child: AnimatedBuilder(
+                    animation: pulse,
+                    builder: (context, child) {
+                      final breath =
+                          (math.sin(pulse.value * math.pi * 2) + 1) / 2;
+                      return _CelebrationEmblem(
+                        accent: accent,
+                        perfect: perfect,
+                        breath: breath,
+                        size: emblemSize,
+                        child: child!,
+                      );
+                    },
+                    child: RepaintBoundary(
+                      child: CinematicIcon(
+                        glyph: glyph,
+                        size: iconSize,
+                        accent: perfect
+                            ? AppColors.inkOnAccent
+                            : AppColors.night,
+                        framed: false,
+                      ),
+                    ),
+                  ),
                 ),
-              ),
-            ),
-          ),
         ),
         if (showKicker) ...[
           SizedBox(height: compact ? 6 : 12),
           SectionLabel(kicker),
         ],
-        SizedBox(height: showKicker ? 6 : (compact ? 8 : 12)),
-        Text(
-          headline,
-          textAlign: TextAlign.center,
-          style: AppTypography.display(
-            size: compact ? 20 : 28,
-            height: 1.12,
-            weight: FontWeight.w900,
-          ),
-        ),
-        if (showClean) ...[
-          const SizedBox(height: 10),
-          SoftBadge(
-            text: context.l10n.celebrationCleanScene,
-            glyph: CinematicGlyph.check,
-            accent: AppRoles.reward,
-            solid: true,
+        if (!successCloud) ...[
+          SizedBox(height: showKicker ? 6 : (compact ? 8 : 12)),
+          Text(
+            headline,
+            textAlign: TextAlign.center,
+            style: AppTypography.display(
+              size: compact ? 20 : 28,
+              height: 1.12,
+              weight: FontWeight.w900,
+            ),
           ),
         ],
         if ((insight ?? '').trim().isNotEmpty) ...[
@@ -1199,16 +1278,13 @@ class _HeroBeat extends StatelessWidget {
         ],
         if (isBoss) ...[
           const SizedBox(height: 10),
-          _ComboChip(
-            label: context.l10n.crossingChip,
-            color: AppRoles.reward,
-          ),
+          _ComboChip(label: context.l10n.crossingChip, color: AppRoles.reward),
         ],
-        if ((medalLine ?? '').trim().isNotEmpty) ...[
+        if (!successCloud && (medalLine ?? '').trim().isNotEmpty) ...[
           const SizedBox(height: 8),
           _MedalProgressLine(text: medalLine!.trim()),
         ],
-        SizedBox(height: compact || denseStats ? 10 : 16),
+        SizedBox(height: successCloud ? 16 : (compact || denseStats ? 10 : 16)),
         AnimatedBuilder(
           animation: count,
           builder: (context, _) {
@@ -1411,21 +1487,21 @@ class _CelebrationSecondaryRow extends StatelessWidget {
         ? TextCta(
             label: context.l10n.celebrationShareInsight,
             leading: CinematicGlyph.share,
-            color: appearance.textSecondary,
+            color: appearance.text,
             onTap: onShareInsight,
           )
         : onShareSeal != null
         ? TextCta(
             label: context.l10n.commonShare,
             leading: CinematicGlyph.share,
-            color: appearance.textSecondary,
+            color: appearance.text,
             onTap: onShareSeal,
           )
         : shareStreak;
 
     final home = TextCta(
       label: context.l10n.celebrationBackHome,
-      color: appearance.textSecondary,
+      color: appearance.text,
       onTap: onHome,
     );
 
@@ -1472,12 +1548,12 @@ class _TomorrowKicker extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const Expanded(child: RelicHairline()),
+        const Expanded(child: RelicHairline(accent: _CelebrationPlate.line)),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 14),
-          child: SectionLabel(label, size: 12),
+          child: SectionLabel(label, size: 12, color: _CelebrationPlate.muted),
         ),
-        const Expanded(child: RelicHairline()),
+        const Expanded(child: RelicHairline(accent: _CelebrationPlate.line)),
       ],
     );
   }
@@ -1497,7 +1573,6 @@ class _TomorrowBeat extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
     if (hook.hasEcho) {
       return _EchoBeat(hook: hook, streak: streak, goal: goal);
     }
@@ -1510,7 +1585,11 @@ class _TomorrowBeat extends StatelessWidget {
         if (hook.trailJustCompleted &&
             (hook.trailTitle ?? '').trim().isNotEmpty) ...[
           const SizedBox(height: 8),
-          SectionLabel(hook.trailTitle!.trim(), color: a.textFaint, size: 10),
+          SectionLabel(
+            hook.trailTitle!.trim(),
+            color: _CelebrationPlate.muted,
+            size: 10,
+          ),
         ] else if (ref.isNotEmpty) ...[
           const SizedBox(height: 8),
           Text(
@@ -1519,7 +1598,7 @@ class _TomorrowBeat extends StatelessWidget {
             style: AppTypography.label(
               size: 11,
               letterSpacing: 1.4,
-              color: a.textFaint,
+              color: _CelebrationPlate.muted,
             ),
           ),
         ],
@@ -1527,20 +1606,12 @@ class _TomorrowBeat extends StatelessWidget {
         Text(
           hook.title,
           textAlign: TextAlign.center,
-          style:
-              AppTypography.display(
-                size: 28,
-                height: 1.08,
-                weight: FontWeight.w900,
-                color: a.text,
-              ).copyWith(
-                shadows: [
-                  Shadow(
-                    color: AppRoles.chrome.withValues(alpha: 0.18),
-                    blurRadius: 28,
-                  ),
-                ],
-              ),
+          style: AppTypography.display(
+            size: 28,
+            height: 1.08,
+            weight: FontWeight.w900,
+            color: _CelebrationPlate.ink,
+          ),
         ),
         if (pull.isNotEmpty) ...[
           const SizedBox(height: 12),
@@ -1551,7 +1622,7 @@ class _TomorrowBeat extends StatelessWidget {
               size: 18,
               height: 1.38,
               fontStyle: FontStyle.italic,
-              color: a.text,
+              color: _CelebrationPlate.ink,
             ),
           ),
         ],
@@ -1562,7 +1633,7 @@ class _TomorrowBeat extends StatelessWidget {
           style: AppTypography.body(
             size: 14,
             weight: FontWeight.w800,
-            color: a.text,
+            color: _CelebrationPlate.ink,
           ),
         ),
         if (CommitStrip.visible(streak: streak, goal: goal)) ...[
@@ -1588,7 +1659,6 @@ class _EchoBeat extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
     final planted = (hook.todayInsight ?? '').trim();
     final question = (hook.echoQuestion ?? '').trim();
     return Column(
@@ -1599,20 +1669,12 @@ class _EchoBeat extends StatelessWidget {
         Text(
           planted,
           textAlign: TextAlign.center,
-          style:
-              AppTypography.display(
-                size: 28,
-                height: 1.18,
-                weight: FontWeight.w900,
-                color: a.text,
-              ).copyWith(
-                shadows: [
-                  Shadow(
-                    color: AppRoles.chrome.withValues(alpha: 0.2),
-                    blurRadius: 28,
-                  ),
-                ],
-              ),
+          style: AppTypography.display(
+            size: 28,
+            height: 1.18,
+            weight: FontWeight.w900,
+            color: _CelebrationPlate.ink,
+          ),
         ),
         const SizedBox(height: 20),
         Text(
@@ -1622,7 +1684,7 @@ class _EchoBeat extends StatelessWidget {
             size: 20,
             height: 1.42,
             fontStyle: FontStyle.italic,
-            color: a.text,
+            color: _CelebrationPlate.ink,
           ),
         ),
         const SizedBox(height: 22),
@@ -1632,7 +1694,7 @@ class _EchoBeat extends StatelessWidget {
           style: AppTypography.body(
             size: 16,
             weight: FontWeight.w800,
-            color: a.text,
+            color: _CelebrationPlate.ink,
           ),
         ),
         if (CommitStrip.visible(streak: streak, goal: goal)) ...[
@@ -2022,7 +2084,6 @@ class _StatCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
     final claim = claimScale;
     Widget card = AnimatedBuilder(
       animation: pulse,
@@ -2046,13 +2107,13 @@ class _StatCard extends StatelessWidget {
         );
       },
       child: GlassCard(
+        color: _CelebrationPlate.fill,
         padding: EdgeInsets.symmetric(
           vertical: dense ? 6 : AppSpace.section,
           horizontal: dense ? 4 : AppSpace.sm,
         ),
         radius: dense ? AppRadii.sm : AppRadii.md,
-        tint: featured ? color : null,
-        glow: featured ? 0.35 : null,
+        tint: featured ? color : _CelebrationPlate.line,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -2069,7 +2130,7 @@ class _StatCard extends StatelessWidget {
               style: AppTypography.title(
                 size: dense ? (featured ? 16 : 12) : (featured ? 20 : 16),
                 weight: FontWeight.w900,
-                color: featured ? color : a.text,
+                color: featured ? color : _CelebrationPlate.ink,
               ),
             ),
             Text(
@@ -2080,7 +2141,9 @@ class _StatCard extends StatelessWidget {
                 size: 10,
                 weight: FontWeight.w600,
                 letterSpacing: 0.3,
-                color: featured ? color.withValues(alpha: 0.85) : a.textFaint,
+                color: featured
+                    ? color.withValues(alpha: 0.85)
+                    : _CelebrationPlate.muted,
               ),
             ),
           ],

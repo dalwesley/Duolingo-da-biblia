@@ -619,7 +619,6 @@ class _ExercisePanelState extends State<ExercisePanel>
     return Opacity(
       opacity: eliminated ? 0.38 : 1,
       child: _OptionTile(
-        mark: o.id.length <= 2 ? o.id.toUpperCase() : null,
         text: o.text,
         state: eliminated ? _OptState.dimmed : _state(o.id),
         accent: widget.accent,
@@ -774,7 +773,6 @@ class _ExercisePanelState extends State<ExercisePanel>
                     const SizedBox(width: 10),
                     Expanded(
                       child: _OrderPiece(
-                        index: i,
                         text: pool[i].text,
                         accent: widget.accent,
                         locked: _locked,
@@ -1919,7 +1917,6 @@ class _OptionTile extends StatelessWidget {
   final Color accent;
   final VoidCallback? onTap;
   final bool struck;
-  final String? mark;
 
   const _OptionTile({
     required this.text,
@@ -1927,13 +1924,11 @@ class _OptionTile extends StatelessWidget {
     required this.accent,
     this.onTap,
     this.struck = false,
-    this.mark,
   });
 
   @override
   Widget build(BuildContext context) {
     final skin = _ActSkin.paint(state, accent);
-    final wellBorder = skin.wellBorder;
     return ActShake(
       active: state == _OptState.wrong,
       child: ActPress(
@@ -1954,27 +1949,6 @@ class _OptionTile extends StatelessWidget {
           foregroundDecoration: _ActSkin.outlineOf(skin.outline),
           child: Row(
             children: [
-              if (mark != null) ...[
-                AnimatedContainer(
-                  duration: _ActSkin.anim,
-                  width: 28,
-                  height: 28,
-                  alignment: Alignment.center,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    color: skin.well,
-                    border: Border.all(
-                      color: wellBorder,
-                      width: skin.hot ? 0 : 1.6,
-                    ),
-                  ),
-                  child: Text(
-                    mark!,
-                    style: AppTypography.title(size: 12, color: skin.wellFg),
-                  ),
-                ),
-                const SizedBox(width: 12),
-              ],
               Expanded(
                 child: Text(
                   text,
@@ -2052,14 +2026,12 @@ class _OrderTickPainter extends CustomPainter {
 }
 
 class _OrderPiece extends StatelessWidget {
-  final int index;
   final String text;
   final Color accent;
   final bool locked;
   final _OptState state;
 
   const _OrderPiece({
-    required this.index,
     required this.text,
     required this.accent,
     required this.locked,
@@ -2069,7 +2041,6 @@ class _OrderPiece extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final skin = _ActSkin.paint(state, accent);
-    final wellBorder = skin.wellBorder;
     return AnimatedContainer(
       duration: _ActSkin.anim,
       curve: AppMotion.enter,
@@ -2084,22 +2055,6 @@ class _OrderPiece extends StatelessWidget {
       foregroundDecoration: _ActSkin.outlineOf(skin.outline),
       child: Row(
         children: [
-          AnimatedContainer(
-            duration: _ActSkin.anim,
-            width: 28,
-            height: 28,
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: skin.well,
-              border: Border.all(color: wellBorder, width: skin.hot ? 0 : 1.6),
-            ),
-            child: Text(
-              '${index + 1}',
-              style: AppTypography.title(size: 12, color: skin.wellFg),
-            ),
-          ),
-          const SizedBox(width: 12),
           Expanded(
             child: Text(
               text,

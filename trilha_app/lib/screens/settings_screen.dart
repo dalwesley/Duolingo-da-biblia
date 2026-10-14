@@ -741,14 +741,13 @@ class _SettingsScreenState extends State<SettingsScreen>
       }
       return;
     }
-    // O toast sai depois da troca de tela — guarda o messenger da raiz.
-    final messenger = ScaffoldMessenger.of(context);
+    // A pessoa lê o aviso antes de cair na tela de entrar.
     final done = context.l10n.deleteAccountDone;
     await context.read<SubscriptionService>().logOut();
     if (!mounted) return;
-    // Zera a memória e o espelho local da conta apagada.
+    await showAppToastFor(context, message: done);
+    if (!mounted) return;
     await _leaveToLogin();
-    showAppToast(messenger, message: done);
   }
 
   /// Volta à tela de entrar sem herdar nada da conta que saiu.

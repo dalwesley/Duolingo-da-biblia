@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
-import '../utils/appearance.dart';
 import '../utils/tomorrow_hook.dart';
 
 /// Semana frágil do compromisso — 7 pontos, o de hoje respira.
@@ -25,7 +24,6 @@ class CommitStrip extends StatelessWidget {
     if (!visible(streak: streak, goal: goal)) {
       return const SizedBox.shrink();
     }
-    final a = Appearance.of(context);
     final count = goal.clamp(1, 7);
     final label = TomorrowHook.commitLine(streak: streak, goal: goal);
 
@@ -47,7 +45,7 @@ class CommitStrip extends StatelessWidget {
             style: AppTypography.label(
               size: 11,
               letterSpacing: 1.1,
-              color: a.textSecondary,
+              color: AppColors.textMuted,
             ),
           ),
         ],
@@ -64,8 +62,7 @@ class _Dot extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final fill = lit ? AppRoles.streak : a.divider;
+    final fill = lit ? AppRoles.streak : const Color(0xFFD5DEE8);
     return AnimatedContainer(
       duration: AppMotion.standard,
       width: today ? 12 : 9,
@@ -78,7 +75,7 @@ class _Dot extends StatelessWidget {
               ? AppRoles.streak
               : lit
               ? AppRoles.streak.withValues(alpha: 0.35)
-              : a.cardBorder,
+              : const Color(0xFFB7C6D6),
           width: today ? 2 : 1,
         ),
       ),

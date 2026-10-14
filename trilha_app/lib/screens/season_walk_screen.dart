@@ -14,6 +14,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
 import '../widgets/cinematic_icon.dart';
+import '../widgets/cloud_mascot.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/relic_panel.dart';
 import '../widgets/top_bar.dart';
@@ -505,7 +506,7 @@ class _SeasonWalkReviewScreenState extends State<SeasonWalkReviewScreen> {
       showAppToastFor(
         context,
         message: context.l10n.seasonReviewEmpty,
-        glyph: CinematicGlyph.calendar,
+        face: CloudFace.erro,
       );
       return;
     }

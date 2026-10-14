@@ -14,6 +14,7 @@ import '../utils/layout_utils.dart';
 import '../utils/liturgical_calendar.dart';
 import '../widgets/act_feel.dart';
 import '../widgets/bible_passage_picker.dart';
+import '../widgets/cloud_mascot.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/juntos_chrome.dart';
@@ -286,7 +287,7 @@ class _BibleScreenState extends State<BibleScreen> with ShellTabFreezeMixin {
           Expanded(
             child: Center(
               child: EmptyState(
-                glyph: CinematicGlyph.book,
+                mark: const CloudMascot(face: CloudFace.erro, size: 120),
                 title: context.l10n.bibleLoadError,
                 action: TextCta(
                   label: context.l10n.commonTryAgain,

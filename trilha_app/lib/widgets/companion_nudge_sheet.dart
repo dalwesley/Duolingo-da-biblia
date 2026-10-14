@@ -10,7 +10,6 @@ import '../models/walk_companion.dart';
 import '../services/companion_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
-import '../utils/layout_utils.dart';
 import 'act_feel.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
@@ -109,25 +108,24 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
     );
     if (!mounted) return;
     setState(() => _sending = false);
-    final messenger = ScaffoldMessenger.of(context);
-    final gap = scrollPaddingBelowNav(context);
     if (!ok) {
-      showAppToast(
-        messenger,
+      await showAppToastFor(
+        context,
         message: companion.lastError ?? context.l10n.nudgeSendFailed,
         glyph: CinematicGlyph.wrong,
         tone: AppToastTone.warn,
-        bottomGap: gap,
       );
       return;
     }
+    final host = Navigator.of(context).overlay?.context;
     Navigator.of(context).pop();
-    showAppToast(
-      messenger,
-      message: context.l10n.nudgeSent(_them),
-      glyph: CinematicGlyph.heart,
-      bottomGap: gap,
-    );
+    if (host != null && host.mounted) {
+      await showAppToastFor(
+        host,
+        message: context.l10n.nudgeSent(_them),
+        glyph: CinematicGlyph.heart,
+      );
+    }
   }
 
   Future<void> _shareWhatsApp() async {
@@ -582,9 +580,7 @@ class CompanionNudgeShareCard extends StatelessWidget {
                                 l10n.nudgeCardCta,
                                 style: AppTypography.body(
                                   size: 12,
-                                  color: AppRoles.action.withValues(
-                                    alpha: 0.9,
-                                  ),
+                                  color: AppRoles.action.withValues(alpha: 0.9),
                                 ),
                               ),
                             ],

@@ -17,6 +17,7 @@ import '../widgets/act_feel.dart';
 import '../widgets/app_sheet.dart';
 import '../widgets/author_suggestion_sheet.dart';
 import '../widgets/cinematic_icon.dart';
+import '../widgets/cloud_mascot.dart';
 import '../widgets/coming_soon_trails_card.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/offline_curriculum_dialog.dart';
@@ -305,7 +306,10 @@ class _TrilhasScreenState extends State<TrilhasScreen>
         ),
         children: [
           EmptyState(
-            glyph: CinematicGlyph.path,
+            mark: CloudMascot(
+              face: _retryingCatalog ? CloudFace.carregando : CloudFace.erro,
+              size: 120,
+            ),
             title: context.l10n.trailsEmptyTitle,
             body: context.l10n.trailsEmptyBody,
             action: CopperCta(

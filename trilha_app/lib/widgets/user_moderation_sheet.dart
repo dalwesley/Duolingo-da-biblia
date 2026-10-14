@@ -10,6 +10,7 @@ import '../utils/appearance.dart';
 import 'act_feel.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
+import 'cloud_mascot.dart';
 import 'ui_primitives.dart';
 
 /// O que aconteceu na folha — quem abriu fecha o perfil se a pessoa sumiu.
@@ -25,7 +26,6 @@ Future<ModerationOutcome> showUserModerationSheet(
   String? roomName,
 }) async {
   ActHaptics.light();
-  final messenger = ScaffoldMessenger.of(context);
   final displayName = name.trim().isEmpty
       ? context.l10n.moderationUnknownName
       : name.trim();
@@ -48,7 +48,15 @@ Future<ModerationOutcome> showUserModerationSheet(
     ModerationOutcome.unblocked => l10n.moderationUnblocked(displayName),
     ModerationOutcome.none => null,
   };
-  if (message != null) showAppToast(messenger, message: message);
+  if (message != null && context.mounted) {
+    final face = switch (result) {
+      ModerationOutcome.blocked => CloudFace.triste,
+      ModerationOutcome.reported ||
+      ModerationOutcome.unblocked => CloudFace.sucesso,
+      ModerationOutcome.none => CloudFace.sucesso,
+    };
+    await showAppToastFor(context, message: message, face: face);
+  }
   return result;
 }
 

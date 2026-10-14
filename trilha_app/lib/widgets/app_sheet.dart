@@ -168,16 +168,18 @@ class _Filament extends StatelessWidget {
 
 /// Diálogo padrão — mesmo painel das sheets, centralizado.
 class AppDialog extends StatelessWidget {
-  final String title;
+  final String? title;
+  final Widget? leading;
   final Widget? content;
   final List<Widget> actions;
 
   const AppDialog({
     super.key,
-    required this.title,
+    this.title,
+    this.leading,
     this.content,
     this.actions = const [],
-  });
+  }) : assert(title != null || content != null);
 
   @override
   Widget build(BuildContext context) {
@@ -206,10 +208,20 @@ class AppDialog extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Text(title, style: AppTypography.title(size: 20, color: a.text)),
+            if (leading != null) ...[
+              Center(child: leading),
+              const SizedBox(height: AppSpace.lg),
+            ],
+            if (title != null)
+              Text(
+                title!,
+                textAlign: leading != null ? TextAlign.center : TextAlign.start,
+                style: AppTypography.title(size: 20, color: a.text),
+              ),
             if (content != null) ...[
-              const SizedBox(height: AppSpace.sm),
+              if (title != null) const SizedBox(height: AppSpace.sm),
               DefaultTextStyle.merge(
+                textAlign: leading != null ? TextAlign.center : TextAlign.start,
                 style: AppTypography.body(
                   height: 1.45,
                   color: a.textMuted(0.8),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
+import 'package:trilha_app/l10n/app_language.dart';
 import 'package:trilha_app/models/trail.dart';
 import 'package:trilha_app/services/progress_service.dart';
 import 'package:trilha_app/theme/app_theme.dart';
@@ -84,6 +85,9 @@ void main() {
       ChangeNotifierProvider(
         create: (_) => ProgressService(),
         child: MaterialApp(
+          locale: const Locale('pt'),
+          localizationsDelegates: AppLocalizations.localizationsDelegates,
+          supportedLocales: AppLocalizations.supportedLocales,
           theme: AppTheme.dark,
           home: const Scaffold(
             body: HeroContinueCard(

@@ -8,6 +8,7 @@ import '../services/session_composer.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
+import 'cloud_mascot.dart';
 import 'immersive_background.dart';
 import 'question_report_sheet.dart';
 import 'ui_primitives.dart';
@@ -71,7 +72,6 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
   String? _verseText;
 
   late final AnimationController _enter;
-  late final AnimationController _pulse;
 
   /// Acerto avança sozinho: o botão enche e, cheio, segue.
   late final AnimationController _auto;
@@ -102,21 +102,14 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
   @override
   void initState() {
     super.initState();
-    _enter = AnimationController(
-      vsync: this,
-      duration: AppMotion.slow,
-    )..forward();
-    _pulse = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 1800),
-    );
+    _enter = AnimationController(vsync: this, duration: AppMotion.slow)
+      ..forward();
     _auto = AnimationController(vsync: this, duration: _autoAdvance)
       ..addStatusListener((status) {
         if (status == AnimationStatus.completed) _advance();
       });
     _enter.addStatusListener((status) {
       if (status == AnimationStatus.completed && mounted) {
-        _pulse.repeat();
         if (_autoEnabled) _auto.forward();
       }
     });
@@ -138,7 +131,6 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
   @override
   void dispose() {
     _enter.dispose();
-    _pulse.dispose();
     _auto.dispose();
     super.dispose();
   }
@@ -278,11 +270,11 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
         ? l10n.commonContinue
         : l10n.commonTryAgain;
     final canSkip = widget.willRequeue && !outOfLamps && !isCorrect;
-    final glyph = outOfLamps
-        ? CinematicGlyph.lamp
+    final face = outOfLamps
+        ? CloudFace.triste
         : isCorrect
-        ? CinematicGlyph.check
-        : CinematicGlyph.wrong;
+        ? CloudFace.sucesso
+        : CloudFace.erro;
     final verse = (_verseText ?? '').trim();
     final ref = (exercise.reference ?? '').trim();
     final showVerse = _needsEvidence && verse.isNotEmpty;
@@ -330,136 +322,118 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
                       AppSpace.sm,
                     ),
                     child: GlassCard(
-                      tint: color,
                       radius: AppMetrics.heroRadius,
                       elevated: true,
-                      padding: const EdgeInsets.fromLTRB(18, 14, 10, 18),
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        crossAxisAlignment: CrossAxisAlignment.stretch,
+                      padding: const EdgeInsets.fromLTRB(18, 6, 18, 18),
+                      child: Stack(
                         children: [
-                          Row(
+                          Column(
+                            mainAxisSize: MainAxisSize.min,
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
-                              SizedBox(
-                                width: 56,
-                                height: 56,
-                                child: FittedBox(
+                              const SizedBox(height: 8),
+                              Center(
+                                child: SizedBox(
+                                  width: 96,
+                                  height: 96,
                                   child: _VerdictMark(
-                                    glyph: glyph,
-                                    color: color,
+                                    face: face,
                                     enter: _enter,
-                                    pulse: _pulse,
                                   ),
                                 ),
                               ),
-                              const SizedBox(width: 12),
-                              Expanded(
-                                child: Text(
-                                  title,
-                                  style: AppTypography.display(
-                                    size: combo >= 3 ? 28 : 24,
-                                    height: 1.1,
-                                    color: color,
-                                  ),
-                                ),
-                              ),
-                              IconButton(
-                                tooltip: l10n.feedbackReportTooltip,
-                                onPressed: _report,
-                                visualDensity: VisualDensity.compact,
-                                padding: EdgeInsets.zero,
-                                constraints: const BoxConstraints(
-                                  minWidth: 36,
-                                  minHeight: 36,
-                                ),
-                                icon: CinematicIcon(
-                                  glyph: CinematicGlyph.flag,
-                                  size: AppMetrics.iconMd,
-                                  accent: a.textFaint,
-                                  framed: false,
-                                ),
-                              ),
-                            ],
-                          ),
-                          if (feedback.isNotEmpty) ...[
-                            const SizedBox(height: 10),
-                            Padding(
-                              padding: const EdgeInsets.only(right: 12),
-                              child: Text(
-                                feedback,
-                                textAlign: TextAlign.start,
-                                style: AppTypography.body(
-                                  size: 14,
-                                  weight: FontWeight.w700,
-                                  height: 1.4,
+                              const SizedBox(height: 6),
+                              Text(
+                                title,
+                                textAlign: TextAlign.center,
+                                style: AppTypography.display(
+                                  size: combo >= 3 ? 28 : 24,
+                                  height: 1.1,
                                   color: a.text,
                                 ),
                               ),
-                            ),
-                          ],
-                          if (_holdsAnswer && widget.onReadPassage != null) ...[
-                            const SizedBox(height: 4),
-                            Align(
-                              alignment: Alignment.centerLeft,
-                              child: TextCta(
-                                label: l10n.feedbackReadPassage,
-                                leading: CinematicGlyph.book,
-                                color: accent,
-                                onTap: widget.onReadPassage,
+                              if (feedback.isNotEmpty) ...[
+                                const SizedBox(height: 8),
+                                Text(
+                                  feedback,
+                                  textAlign: TextAlign.center,
+                                  style: AppTypography.body(
+                                    size: 15,
+                                    height: 1.4,
+                                    color: a.textSecondary,
+                                  ),
+                                ),
+                              ],
+                              if (_holdsAnswer &&
+                                  widget.onReadPassage != null) ...[
+                                const SizedBox(height: 4),
+                                Center(
+                                  child: TextCta(
+                                    label: l10n.feedbackReadPassage,
+                                    leading: CinematicGlyph.book,
+                                    color: accent,
+                                    onTap: widget.onReadPassage,
+                                  ),
+                                ),
+                              ],
+                              if (answer.isNotEmpty) ...[
+                                const SizedBox(height: 12),
+                                _AnswerReveal(answer: answer, accent: accent),
+                              ],
+                              if (showVerse) ...[
+                                const SizedBox(height: 16),
+                                _VerseWell(
+                                  reference: ref,
+                                  verse: verse,
+                                  accent: color,
+                                  highlight: _span,
+                                  highlightColor: accent,
+                                ),
+                              ],
+                              const SizedBox(height: 16),
+                              AnimatedBuilder(
+                                animation: _auto,
+                                builder: (context, _) => CopperCta(
+                                  label: cta,
+                                  onTap: _advance,
+                                  trailing: isCorrect || reveal
+                                      ? CinematicGlyph.forward
+                                      : CinematicGlyph.refresh,
+                                  showArrow: false,
+                                  progress: _autoEnabled ? _auto.value : null,
+                                ),
                               ),
-                            ),
-                          ],
-                          if (answer.isNotEmpty) ...[
-                            const SizedBox(height: 12),
-                            Padding(
-                              padding: const EdgeInsets.only(right: 12),
-                              child: _AnswerReveal(
-                                answer: answer,
-                                accent: accent,
+                              if (canSkip) ...[
+                                const SizedBox(height: 8),
+                                GhostCta(
+                                  label: l10n.feedbackSkipToEnd,
+                                  expanded: true,
+                                  matchCopper: true,
+                                  onTap: _skip,
+                                ),
+                              ],
+                            ],
+                          ),
+                          Positioned(
+                            top: -4,
+                            right: -10,
+                            child: IconButton(
+                              tooltip: l10n.feedbackReportTooltip,
+                              onPressed: _report,
+                              visualDensity: VisualDensity.compact,
+                              padding: EdgeInsets.zero,
+                              constraints: const BoxConstraints(
+                                minWidth: 36,
+                                minHeight: 36,
                               ),
-                            ),
-                          ],
-                          if (showVerse) ...[
-                            const SizedBox(height: 16),
-                            Padding(
-                              padding: const EdgeInsets.only(right: 12),
-                              child: _VerseWell(
-                                reference: ref,
-                                verse: verse,
-                                accent: color,
-                                highlight: _span,
-                                highlightColor: accent,
-                              ),
-                            ),
-                          ],
-                          const SizedBox(height: 16),
-                          Padding(
-                            padding: const EdgeInsets.only(right: 12),
-                            child: AnimatedBuilder(
-                              animation: _auto,
-                              builder: (context, _) => CopperCta(
-                                label: cta,
-                                onTap: _advance,
-                                trailing: isCorrect || reveal
-                                    ? CinematicGlyph.forward
-                                    : CinematicGlyph.refresh,
-                                showArrow: false,
-                                progress: _autoEnabled ? _auto.value : null,
+                              icon: CinematicIcon(
+                                glyph: CinematicGlyph.flag,
+                                size: AppMetrics.iconMd,
+                                accent: a.textFaint,
+                                framed: false,
                               ),
                             ),
                           ),
-                          if (canSkip) ...[
-                            const SizedBox(height: 8),
-                            Padding(
-                              padding: const EdgeInsets.only(right: 12),
-                              child: GhostCta(
-                                label: l10n.feedbackSkipToEnd,
-                                expanded: true,
-                                matchCopper: true,
-                                onTap: _skip,
-                              ),
-                            ),
-                          ],
                         ],
                       ),
                     ),
@@ -475,73 +449,25 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
 }
 
 class _VerdictMark extends StatelessWidget {
-  final CinematicGlyph glyph;
-  final Color color;
+  final CloudFace face;
   final Animation<double> enter;
-  final Animation<double> pulse;
 
-  const _VerdictMark({
-    required this.glyph,
-    required this.color,
-    required this.enter,
-    required this.pulse,
-  });
+  const _VerdictMark({required this.face, required this.enter});
 
   @override
   Widget build(BuildContext context) {
     return AnimatedBuilder(
-      animation: Listenable.merge([enter, pulse]),
+      animation: enter,
       builder: (context, child) {
         final appear = AppMotion.pop.transform(
-          Interval(
-            0.18,
-            1,
-            curve: Curves.linear,
-          ).transform(enter.value).clamp(0.0, 1.0),
+          const Interval(0.18, 1).transform(enter.value).clamp(0.0, 1.0),
         );
-        final p = pulse.value;
-        final tilt = (1 - appear) * 0.18;
-        return SizedBox(
-          width: 120,
-          height: 120,
-          child: Stack(
-            alignment: Alignment.center,
-            children: [
-              for (var i = 0; i < 2; i++)
-                Opacity(
-                  opacity: (1 - p) * 0.42 * appear.clamp(0.0, 1.0),
-                  child: Transform.scale(
-                    scale: 0.72 + p * (0.55 + i * 0.22),
-                    child: DecoratedBox(
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        border: Border.all(
-                          color: color.withValues(alpha: 0.5 - i * 0.12),
-                          width: 1.6,
-                        ),
-                      ),
-                      child: const SizedBox(width: 88, height: 88),
-                    ),
-                  ),
-                ),
-              Transform.rotate(
-                angle: tilt,
-                child: Transform.scale(
-                  scale: 0.62 + 0.38 * appear.clamp(0.0, 1.15),
-                  child: child,
-                ),
-              ),
-            ],
-          ),
+        return Transform.scale(
+          scale: 0.72 + 0.28 * appear.clamp(0.0, 1.0),
+          child: child,
         );
       },
-      child: CinematicIcon(
-        glyph: glyph,
-        size: 78,
-        accent: color,
-        framed: true,
-        glowing: true,
-      ),
+      child: CloudMascot(face: face, size: 96),
     );
   }
 }

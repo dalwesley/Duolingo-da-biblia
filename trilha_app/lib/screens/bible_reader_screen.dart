@@ -36,10 +36,7 @@ class BibleReaderScreen extends StatefulWidget {
         reverseTransitionDuration: AppMotion.standard,
         pageBuilder: (_, _, _) => BibleReaderScreen(reference: reference),
         transitionsBuilder: (_, anim, _, child) {
-          final curved = CurvedAnimation(
-            parent: anim,
-            curve: AppMotion.enter,
-          );
+          final curved = CurvedAnimation(parent: anim, curve: AppMotion.enter);
           return FadeTransition(
             opacity: curved,
             child: SlideTransition(
@@ -188,9 +185,7 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
   void _onChapterShown() {
     final progress = context.read<ProgressService>();
     _progress = progress;
-    unawaited(
-      progress.setLastBibleSpot(_book.abbrev, _chapter, notify: false),
-    );
+    unawaited(progress.setLastBibleSpot(_book.abbrev, _chapter, notify: false));
     final tts = TtsService.instance;
     if (tts.sequenceKey != null && tts.sequenceKey != _chapterKey) {
       unawaited(tts.stop());
@@ -298,14 +293,13 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
     await progress.recordBibleReading(book.abbrev, chapter);
     if (!mounted) return;
     final next = _next;
-    showAppToastFor(
+    await showAppToastFor(
       context,
       message: context.l10n.bibleReaderChapterReadToast(book.name, chapter),
       glyph: CinematicGlyph.book,
     );
-    if (next != null) {
-      await Future<void>.delayed(const Duration(milliseconds: 420));
-      if (mounted && _chapter == chapter) _goTo(next.bookIndex, next.chapter);
+    if (next != null && mounted && _chapter == chapter) {
+      _goTo(next.bookIndex, next.chapter);
     }
   }
 
@@ -1471,7 +1465,10 @@ Future<void> _showReadingSettings(BuildContext context) {
                 ],
               ),
               const SizedBox(height: AppSpace.xl),
-              SectionLabel(context.l10n.bibleReaderPaper, color: a.sectionLabel),
+              SectionLabel(
+                context.l10n.bibleReaderPaper,
+                color: a.sectionLabel,
+              ),
               const SizedBox(height: AppSpace.sm),
               Row(
                 children: [
@@ -1555,9 +1552,7 @@ Future<void> _applyTranslation(
       context,
       builder: (ctx) => AppDialog(
         title: context.l10n.bibleTranslationSoonTitle,
-        content: Text(
-          context.l10n.bibleTranslationSoonBody(translation.name),
-        ),
+        content: Text(context.l10n.bibleTranslationSoonBody(translation.name)),
         actions: [
           GhostCta(
             label: context.l10n.bibleDonate,

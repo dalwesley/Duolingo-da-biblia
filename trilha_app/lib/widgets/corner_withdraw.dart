@@ -27,8 +27,8 @@ Future<void> confirmCornerWithdraw(
     danger: true,
   );
   if (!ok || !context.mounted) return;
+  final host = Navigator.of(context).overlay?.context;
   final corners = context.read<CornerService>();
-  final messenger = ScaffoldMessenger.maybeOf(context);
   // Deixa o diálogo terminar de fechar antes da animação entrar.
   await Future<void>.delayed(const Duration(milliseconds: 220));
   if (!context.mounted) return;
@@ -45,9 +45,10 @@ Future<void> confirmCornerWithdraw(
   }
   final done = await corners.withdraw(challenge.id);
   if (!done) {
-    if (messenger != null) {
-      showAppToast(
-        messenger,
+    final target = context.mounted ? context : host;
+    if (target != null && target.mounted) {
+      await showAppToastFor(
+        target,
         message: corners.lastError ?? CornerCopy.actionFailed,
         glyph: CinematicGlyph.wrong,
         tone: AppToastTone.warn,

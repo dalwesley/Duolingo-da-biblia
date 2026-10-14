@@ -86,6 +86,18 @@ Regras (gesto na cena):
 - Barra de progresso: `AppProgressBar` (6 compacto / 16 padrão). `RelicProgress`
   só como filete decorativo, nunca para o mesmo dado que outra tela mostra em barra.
 
+A nuvem (a que acompanhou o povo no deserto) é a companheira dos avisos.
+O cartão da próxima cena fica com o clima de antes: teia quando empoeirado,
+brilho quando em dia, gelo quando congelado. Sem nuvem no botão.
+
+- **Sucesso** na fala do fim da cena, também quando a cena fecha limpa ou com bônus. Sem coroa, sem "Cena limpa" e sem a linha da medalha: a cara já diz. Cena que não fechou usa a cara de erro.
+- **Erro** quando a tela inteira não abre (catálogo, trilhas, Bíblia) e há
+  "Tentar de novo". A cena que não carrega as perguntas abre um diálogo
+  com essa cara.
+- **Carregando** na splash e na primeira carga do catálogo.
+
+Avisos abrem um diálogo com a nuvem (`showAppToastFor`): erro quando o caminho não abre, triste na lâmpada ou no que foi guardado, feliz no gesto de companhia, sucesso no resto. No veredito da cena a nuvem fica no centro, grande, e o cartão não muda de cor: acerto é a cara de sucesso, erro é a cara de erro e lâmpadas acabadas são triste. Na celebração, a contagem e a próxima cena ficam em placa clara, para acompanhar a nuvem; o céu da tela continua escuro. Spinner de botão e o flash de erro dentro da cena continuam no glifo.
+
 ## Cores de texto (`Appearance.of(context)`)
 
 - `a.text` — principal
@@ -132,8 +144,9 @@ chip/badge = `AppRadii.sm`; seleção = `AppRadii.pill`.
 | Escolha | `AppSelectChip` |
 | Barra de progresso | `AppProgressBar` (16 padrão, 6 compacto); filete: `RelicProgress` |
 | Ponto de novidade | `AlertDot` |
-| Carregando | `AppSpinner` (`inline: true` em botão/linha) |
+| Carregando | `AppSpinner` em botão/linha; `CloudMascot` na splash e na 1ª carga do catálogo |
 | Vazio | `EmptyState` |
+| Nuvem | `CloudMascot` — quatro lugares, abaixo |
 
 ## Botões
 
@@ -234,7 +247,7 @@ como nome de coisa: não é área, não é progresso salvo, não é assinatura.
 | Guardar versículo (Bíblia) | **Guardar** | Salvar |
 | Salvar dado (Ajustes) | **Salvar** | Guardar |
 
-Feedback: sempre `showAppToastFor` (nunca `SnackBar` cru).
+Feedback: sempre `showAppToastFor` — diálogo com a nuvem (nunca `SnackBar`).
 Erro: "Não foi possível [verbo]. Tente de novo." (com ponto; nunca "Não deu para").
 Futuro: **Em breve** (detalhe opcional depois de " · ").
 

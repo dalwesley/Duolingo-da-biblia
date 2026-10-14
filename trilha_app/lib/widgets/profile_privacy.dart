@@ -59,7 +59,7 @@ class PrivacyEye extends StatelessWidget {
             ? context.l10n.profilePrivacyShownToast(label)
             : context.l10n.profilePrivacyHiddenToast(label),
         glyph: next ? CinematicGlyph.people : CinematicGlyph.lock,
-        tone: next ? AppToastTone.accent : AppToastTone.warn,
+        tone: AppToastTone.accent,
       );
     }
 

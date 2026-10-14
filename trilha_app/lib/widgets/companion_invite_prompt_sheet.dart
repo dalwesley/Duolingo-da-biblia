@@ -38,10 +38,7 @@ class _CompanionInvitePromptSheet extends StatefulWidget {
   final String? tomorrowTitle;
   final bool dayTwo;
 
-  const _CompanionInvitePromptSheet({
-    this.tomorrowTitle,
-    this.dayTwo = false,
-  });
+  const _CompanionInvitePromptSheet({this.tomorrowTitle, this.dayTwo = false});
 
   @override
   State<_CompanionInvitePromptSheet> createState() =>
@@ -67,12 +64,13 @@ class _CompanionInvitePromptSheetState
     if (!mounted) return;
     if (created == null) {
       setState(() => _busy = false);
-      showAppToastFor(
+      await showAppToastFor(
         context,
         message: companions.lastError ?? context.l10n.inviteCreateFailed,
         glyph: CinematicGlyph.wrong,
         tone: AppToastTone.warn,
       );
+      if (!mounted) return;
       Navigator.of(context).pop();
       return;
     }

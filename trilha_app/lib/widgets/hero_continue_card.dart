@@ -90,10 +90,7 @@ class _HeroContinueCardState extends State<HeroContinueCard>
       vsync: this,
       duration: const Duration(milliseconds: 1500),
     );
-    _burst = AnimationController(
-      vsync: this,
-      duration: AppMotion.slow,
-    );
+    _burst = AnimationController(vsync: this, duration: AppMotion.slow);
   }
 
   /// Toque vira gesto: o pó sopra / o gelo trinca / a luz abre — e só então
@@ -367,8 +364,8 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                             child: Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
-                                // Pulso isolado: sem isso cada frame repinta
-                                // o card inteiro (sombras, filtro, textos).
+                                // Pulso isolado: sem isso cada frame
+                                // repinta o card inteiro.
                                 RepaintBoundary(
                                   child: AnimatedBuilder(
                                     animation: _pulseController,
