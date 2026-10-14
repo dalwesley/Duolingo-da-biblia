@@ -13,7 +13,7 @@ import 'package:flutter/material.dart';
 /// Chrome (regra):
 /// - Fundo: Appearance / DayPhase / night*
 /// - Texto: textOnDark / Appearance.text|textMuted
-/// - Ouro sólido: [accent] (#F7BB01) — CTA / recompensa / seleção na cena
+/// - Ouro sólido: [accent] (#F4A80C) — CTA / recompensa / seleção na cena
 /// - Modos: Observação [sprout], Compreensão [coral], Interpretação [orchid]
 /// - Presença / sucesso: [glow] — path aceso da splash
 /// - CTA: [accent] chapado + inkOnAccent
@@ -21,22 +21,22 @@ import 'package:flutter/material.dart';
 class AppColors {
   AppColors._();
 
-  // Marca — azul trilha + amarelo do wordmark
-  static const primary = Color(0xFF4A9EFF);
-  static const primaryLight = Color(0xFF6BA8C4);
-  static const primaryDark = Color(0xFF040910);
+  // Marca — camadas da logo (navy → rim #4288D8) + “A” âmbar (#F4A80C).
+  static const primary = Color(0xFF3E86D6);
+  static const primaryLight = Color(0xFF7AACE4);
+  static const primaryDark = Color(0xFF060C16);
 
-  /// CTA / conquista — amarelo do wordmark STWAY (#F7BB01), chapado.
-  static const accent = Color(0xFFF7BB01);
-  static const accentDark = Color(0xFFC99200);
-  static const accentSoft = Color(0xFFD4C078);
+  /// CTA / conquista — âmbar do “A” no wordmark (#F4A80C), chapado.
+  static const accent = Color(0xFFF4A80C);
+  static const accentDark = Color(0xFFC48408);
+  static const accentSoft = Color(0xFFD4B06A);
 
-  /// Variante mais clara do accent — nunca como amarelo sólido de UI.
-  static const accentBright = Color(0xFFE0BE4A);
+  /// Variante mais clara do accent — nunca como ouro sólido de UI.
+  static const accentBright = Color(0xFFF6C24A);
   static const inkOnAccent = Color(0xFF140E00);
 
-  /// Path aceso da splash — presença / “estudou” / vida social (Hoje + Juntos).
-  static const glow = Color(0xFF5EB8E8);
+  /// Borda acesa da logo — presença / “estudou” / vida social (Hoje + Juntos).
+  static const glow = Color(0xFF5AA6E8);
 
   /// Alias legado — preferir [glow].
   static const teal = glow;
@@ -65,9 +65,9 @@ class AppColors {
   static const orchidBright = Color(0xFFA8B4FF);
   static const orchidSoft = Color(0xFFC4CAF0);
   static const inkOnOrchid = Color(0xFF0C0E1C);
-  static const ice = Color(0xFF5AABC0);
-  static const iceSoft = Color(0xFF8BB8C8);
-  static const iceDeep = Color(0xFF0E2E3C);
+  static const ice = Color(0xFF4E96DE);
+  static const iceSoft = Color(0xFF9EC4EA);
+  static const iceDeep = Color(0xFF102840);
 
   static const error = Color(0xFFFF4F63);
 
@@ -112,18 +112,18 @@ class AppColors {
     return Color.lerp(color, Colors.white, t)!;
   }
 
-  // HUD — void mais profundo, painéis com contraste de jogo
-  static const night = Color(0xFF070B14);
-  static const nightMid = Color(0xFF0E1624);
-  static const nightLight = Color(0xFF162033);
-  static const nightElevated = Color(0xFF1C2A42);
+  // HUD — camadas do ícone: void, papel escuro, papel médio.
+  static const night = Color(0xFF081018);
+  static const nightMid = Color(0xFF102038);
+  static const nightLight = Color(0xFF182848);
+  static const nightElevated = Color(0xFF1C3454);
   static const sheet = nightMid;
 
   /// Painéis de card por fase (Appearance.cardFill).
-  static const cardMorning = Color(0xFF152536);
-  static const cardMorningSoft = Color(0xFF1C3148);
-  static const cardAfternoon = Color(0xFF122E3E);
-  static const cardAfternoonSoft = Color(0xFF183848);
+  static const cardMorning = Color(0xFF16304A);
+  static const cardMorningSoft = Color(0xFF1C3C5C);
+  static const cardAfternoon = Color(0xFF123044);
+  static const cardAfternoonSoft = Color(0xFF184058);
 
   static const surface = Color(0xFFE8ECF2);
   static const card = Colors.white;
@@ -149,8 +149,8 @@ class AppColors {
   static const clayDeep = Color(0xFFB06858);
   static const cedar = Color(0xFF3DCFBE);
   static const cedarDeep = Color(0xFF1A6A5C);
-  static const slate = Color(0xFF7EB0D8);
-  static const slateDeep = Color(0xFF2A4A70);
+  static const slate = Color(0xFF6E9ED0);
+  static const slateDeep = Color(0xFF244868);
   static const sand = Color(0xFFE0B878);
   static const sandDeep = Color(0xFF8A5E30);
   static const ember = Color(0xFFFF7A45);
@@ -190,7 +190,7 @@ class AppRoles {
 
   /// Seleção sobre placa clara (respostas marfim da cena): contorno escuro
   /// (legado). Preferir fill [action] nas placas de resposta.
-  static const selectedOnLight = Color(0xCC070B14);
+  static const selectedOnLight = Color(0xCC081018);
   static const selectedOutlineWidth = 2.0;
 
   static const success = AppColors.glow;

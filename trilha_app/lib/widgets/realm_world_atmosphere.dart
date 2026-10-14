@@ -4,6 +4,7 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 
 import '../models/trail_catalog.dart';
+import '../theme/app_colors.dart';
 
 /// Mundo pintado de cada reino — céu, horizonte, astro e poeira viva.
 class RealmWorldAtmosphere extends StatefulWidget {
@@ -152,7 +153,7 @@ class _RealmWorldPainter extends CustomPainter {
         fire: Color(0xFFC47A28),
         earth: Color(0xFF0E0A08),
         star: Color(0xFFFFE08A),
-        sun: Color(0xFFF7BB01),
+        sun: AppColors.accent,
       ),
       TrailRealm.novoTestamento => const _Sky(
         zenith: Color(0xFF140818),

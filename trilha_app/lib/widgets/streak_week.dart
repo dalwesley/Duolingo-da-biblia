@@ -335,7 +335,7 @@ class _FrozenOrbPainter extends CustomPainter {
       ..shader = LinearGradient(
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
-        colors: [AppColors.iceSoft, AppColors.ice, const Color(0xFF3A8AAA)],
+        colors: [AppColors.iceSoft, AppColors.ice, const Color(0xFF2A6498)],
       ).createShader(Rect.fromCircle(center: c, radius: s))
       ..strokeWidth = 1.15
       ..strokeCap = StrokeCap.round

@@ -6,33 +6,33 @@ enum DayPhase { morning, afternoon, evening, night }
 /// Cores de céu por horário — só usadas por [DayPhaseHelper].
 class _PhaseSky {
   static const morning = [
-    Color(0xFF1A4A88),
-    Color(0xFF2A6AB0),
-    Color(0xFF1E5080),
+    Color(0xFF1A4E90),
+    Color(0xFF2E74C0),
+    Color(0xFF1E5890),
     Color(0xFF123050),
   ];
   static const afternoon = [
-    Color(0xFF0E4A68),
-    Color(0xFF1A7A98),
-    Color(0xFF2A98A8),
-    Color(0xFF145060),
+    Color(0xFF123860),
+    Color(0xFF1E5898),
+    Color(0xFF2A68B0),
+    Color(0xFF102848),
   ];
   static const evening = [
-    Color(0xFF101828),
-    Color(0xFF1A3058),
-    Color(0xFF243868),
-    Color(0xFF152038),
+    Color(0xFF0E1A2C),
+    Color(0xFF163058),
+    Color(0xFF1E4070),
+    Color(0xFF121E34),
   ];
   static const night = [
     AppColors.night,
     AppColors.nightMid,
-    Color(0xFF1A2A44),
-    Color(0xFF122038),
+    Color(0xFF1A3458),
+    Color(0xFF102030),
   ];
 
-  static const morningScaffold = Color(0xFF3A6088);
-  static const afternoonScaffold = Color(0xFF1A6A88);
-  static const eveningScaffold = Color(0xFF1A2848);
+  static const morningScaffold = Color(0xFF2A6098);
+  static const afternoonScaffold = Color(0xFF1A4878);
+  static const eveningScaffold = Color(0xFF162844);
 }
 
 class DayPhaseHelper {

@@ -154,7 +154,7 @@ class BrandTrail {
   static const asset = 'assets/icon/splash_bg.png';
 
   static const _blue = AppColors.primary;
-  static const _ice = Color(0xFFCFE6FF);
+  static const _ice = Color(0xFFE6EEF6);
   static const _gold = AppColors.accent;
   static const _lampWarm = Color(0xFFFFE7A8);
   static const _dusk = Color(0xFFFFD29A);

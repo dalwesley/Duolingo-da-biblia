@@ -36,7 +36,7 @@ são matéria-prima do tema, não se usam direto em tela nova.
 
 | Papel | Token | Onde |
 |---|---|---|
-| Ação principal | `AppRoles.action` (ouro `#F7BB01`) | `CopperCta`, o que avança |
+| Ação principal | `AppRoles.action` (ouro `#F4A80C`) | `CopperCta`, o que avança |
 | Recompensa | `AppRoles.reward` (ouro) | passos, medalha, baú, meta cumprida, podium |
 | Chrome | `AppRoles.chrome` (aço frio `#9EB0C4`) | nav, TopBar, ícone idle — **igual em todas as abas** |
 | Seleção (cena) | fill branco (`selected`) | **só** opção tocada na cena (gesto); nunca aba do shell |

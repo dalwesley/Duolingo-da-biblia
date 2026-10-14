@@ -127,7 +127,7 @@ class _GenesisPainter extends CustomPainter {
         ..shader = const LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
-          colors: [Color(0x00040910), Color(0xB3040910)],
+          colors: [Color(0x00060C16), Color(0xB3060C16)],
         ).createShader(low),
     );
 
