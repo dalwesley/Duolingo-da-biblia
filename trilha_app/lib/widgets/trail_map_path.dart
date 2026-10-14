@@ -70,12 +70,17 @@ class TrailMapPath extends StatelessWidget {
               ? JourneyNodeState.current
               : JourneyNodeState.locked);
     final index = startGlobalIndex + i + 1;
+    final roman = journeyRomanNumeral(index);
     final chrome = (current || completed)
         ? (mission.isBoss ? AppRoles.reward : accent)
         : null;
     final eyebrow = mission.isBoss
         ? context.l10n.trailMapCrossing
-        : '${context.l10n.commonScene} ${journeyRomanNumeral(index)}';
+        : '${context.l10n.commonScene} $roman';
+    final glyph = CinematicGlyphResolver.forMission(
+      mission.localizedTitle,
+      isBoss: mission.isBoss,
+    );
 
     return WindingStop(
       nodeSize: 72,
@@ -84,22 +89,20 @@ class TrailMapPath extends StatelessWidget {
       child: JourneyStationCard(
         title: mission.localizedTitle,
         eyebrow: eyebrow,
+        watermark: roman,
+        glyph: glyph,
         state: state,
         accent: accent,
         glow: glow,
         chrome: chrome,
         onTap: unlocked ? () => onMissionTap?.call(mission.slug) : null,
-        leading: mission.isBoss
-            ? CinematicIcon(
-                glyph: CinematicGlyph.crown,
-                size: 22,
-                accent: chrome ?? accent,
-                framed: false,
-              )
-            : null,
         statusLine: completed
             ? context.l10n.trailsCleared
-            : (unlocked ? null : context.l10n.journeyBeyondHorizon),
+            : (unlocked
+                  ? null
+                  : (mission.subtitle.trim().isEmpty
+                        ? context.l10n.journeyBeyondHorizon
+                        : mission.subtitle)),
         semanticsLabel: mission.localizedTitle,
       ),
     );

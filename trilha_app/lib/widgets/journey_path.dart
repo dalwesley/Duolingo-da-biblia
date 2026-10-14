@@ -7,7 +7,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/difficulty_visuals.dart';
 import '../utils/trail_progress.dart';
-import 'cinematic_icon.dart';
+import '../utils/trail_visuals.dart';
 import 'journey_phase_card.dart';
 import 'journey_station_card.dart';
 import 'mode_emblem.dart';
@@ -91,7 +91,7 @@ class JourneyPath extends StatelessWidget {
               whisper: whisper.isEmpty ? null : whisper,
               accent: accent,
               open: reached,
-              glyph: CinematicGlyph.book,
+              glyph: TrailVisuals.forCategory(item.category.id),
             ),
           ),
         );
@@ -126,12 +126,58 @@ class JourneyPath extends StatelessWidget {
       );
     }
 
-    return WindingTrail(
-      walked: accent,
-      track: Color.lerp(a.progressTrack, AppColors.textOnDark, 0.55)!,
-      stops: stops,
+    final track = Color.lerp(
+      Color.lerp(a.progressTrack, AppColors.textOnDark, 0.42)!,
+      accent,
+      0.28,
+    )!;
+
+    return CustomPaint(
+      painter: _JourneyVeilPainter(accent: accent, glow: glow),
+      child: WindingTrail(
+        walked: accent,
+        track: track,
+        stops: stops,
+      ),
     );
   }
+}
+
+/// Véu da área atrás da curva — manchas suaves da cor do reino.
+class _JourneyVeilPainter extends CustomPainter {
+  final Color accent;
+  final Color glow;
+
+  const _JourneyVeilPainter({required this.accent, required this.glow});
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    if (size.isEmpty) return;
+
+    void blob(Offset c, double r, Color color, double alpha) {
+      canvas.drawCircle(
+        c,
+        r,
+        Paint()
+          ..shader = RadialGradient(
+            colors: [
+              color.withValues(alpha: alpha),
+              color.withValues(alpha: alpha * 0.35),
+              color.withValues(alpha: 0),
+            ],
+            stops: const [0.0, 0.45, 1.0],
+          ).createShader(Rect.fromCircle(center: c, radius: r)),
+      );
+    }
+
+    blob(Offset(size.width * 0.5, size.height * 0.06), size.width * 0.5, accent, 0.12);
+    blob(Offset(size.width * 0.82, size.height * 0.42), size.width * 0.36, accent, 0.08);
+    blob(Offset(size.width * 0.22, size.height * 0.68), size.width * 0.4, glow, 0.07);
+  }
+
+  @override
+  bool shouldRepaint(covariant _JourneyVeilPainter old) =>
+      old.accent != accent || old.glow != glow;
 }
 
 class _TrailStation extends StatelessWidget {
@@ -155,13 +201,18 @@ class _TrailStation extends StatelessWidget {
     final isSoon = item.state == JourneyNodeState.soon;
     final isDone = item.state == JourneyNodeState.completed;
     final isCurrent = item.state == JourneyNodeState.current;
+    final visuals = TrailVisuals.forTrail(item.trail);
+    final roman = journeyRomanNumeral(item.chapterIndex);
 
     String? status;
     if (!isCurrent) {
-      if (isLocked) {
-        status = context.l10n.journeyBeyondHorizon;
-      } else if (isSoon) {
-        status = context.l10n.commonComingSoon;
+      if (isLocked || isSoon) {
+        final desc = item.trail.localizedDescription.trim();
+        status = desc.isEmpty
+            ? (isSoon
+                  ? context.l10n.commonComingSoon
+                  : context.l10n.journeyBeyondHorizon)
+            : desc;
       } else if (item.statusLabel != null) {
         status = item.statusLabel;
       } else if (isDone) {
@@ -175,9 +226,9 @@ class _TrailStation extends StatelessWidget {
 
     return JourneyStationCard(
       title: item.trail.localizedTitle,
-      eyebrow: context.l10n.trailsTrailNumber(
-        journeyRomanNumeral(item.chapterIndex),
-      ),
+      eyebrow: context.l10n.trailsTrailNumber(roman),
+      watermark: roman,
+      glyph: visuals.glyph,
       state: item.state,
       accent: accent,
       glow: glow,
@@ -188,7 +239,7 @@ class _TrailStation extends StatelessWidget {
           : ModeEmblem(
               key: ValueKey('mode-emblem-${mode.id}'),
               difficulty: mode,
-              size: 26,
+              size: 22,
               cleared: item.clearedModeIds.contains(mode.id),
               active: !item.clearedModeIds.contains(mode.id),
             ),

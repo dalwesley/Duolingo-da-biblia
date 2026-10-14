@@ -50,7 +50,7 @@ class DifficultyVisuals {
     return Color.lerp(accent, Colors.white, lift)!.withValues(alpha: alpha);
   }
 
-  /// Cartão da jornada — o modo entra no contorno, não no fill.
+  /// Cartão da jornada — o modo entra no contorno e num wash leve.
   /// Wash forte vira “app amador”; o palco fica noite, o acento pontua.
   static BoxDecoration stationCard({
     required Color accent,
@@ -58,13 +58,23 @@ class DifficultyVisuals {
     required bool lit,
     bool sealed = false,
   }) {
-    final wash = lit ? 0.07 : 0.0;
+    final wash = lit ? 0.16 : (sealed ? 0.08 : 0.0);
+    final edge = Color.lerp(baseFill, accent, wash)!;
     return BoxDecoration(
       borderRadius: BorderRadius.circular(AppRadii.lg),
-      color: wash == 0 ? baseFill : Color.lerp(baseFill, accent, wash),
+      gradient: LinearGradient(
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        colors: [
+          Color.lerp(edge, Colors.white, lit ? 0.06 : 0.02)!,
+          edge,
+          Color.lerp(baseFill, const Color(0xFF000000), lit ? 0.10 : 0.04)!,
+        ],
+        stops: const [0.0, 0.42, 1.0],
+      ),
       border: Border.all(
-        color: accent.withValues(alpha: lit ? 0.70 : (sealed ? 0.55 : 0.40)),
-        width: lit ? 1.4 : 1.15,
+        color: accent.withValues(alpha: lit ? 0.78 : (sealed ? 0.58 : 0.42)),
+        width: lit ? 1.5 : 1.15,
       ),
     );
   }

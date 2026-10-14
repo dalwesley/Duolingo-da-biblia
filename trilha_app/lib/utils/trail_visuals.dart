@@ -40,8 +40,12 @@ class TrailVisuals {
     return _palette(_glyphFor(slug, categoryId), realm);
   }
 
+  /// Glifo do marco de fase (categoria), sem slug de trilha.
+  static CinematicGlyph forCategory(String categoryId) =>
+      _glyphFor('', categoryId);
+
   static CinematicGlyph _glyphFor(String slug, String categoryId) =>
-      _glyphBySlug[slug] ??
+      (slug.isEmpty ? null : _glyphBySlug[slug]) ??
       switch (categoryId) {
         'pentateuco' => CinematicGlyph.book,
         'historicos-at' => CinematicGlyph.shield,

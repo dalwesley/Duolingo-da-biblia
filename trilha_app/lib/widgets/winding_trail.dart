@@ -3,6 +3,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
+import '../theme/app_theme.dart';
 import 'journey_phase_card.dart';
 
 /// Onde o nó senta na curva. Positivo = direita.
@@ -317,10 +318,21 @@ class RenderWindingTrail extends RenderBox
     final paint = Paint()
       ..color = color
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 3.5
+      ..strokeWidth = onlyWalked ? 4.0 : 3.2
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
       ..isAntiAlias = true;
+
+    final glowPaint = onlyWalked
+        ? (Paint()
+            ..color = color.withValues(alpha: 0.38)
+            ..style = PaintingStyle.stroke
+            ..strokeWidth = 10
+            ..strokeCap = StrokeCap.round
+            ..strokeJoin = StrokeJoin.round
+            ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 7)
+            ..isAntiAlias = true)
+        : null;
 
     for (var i = 0; i < _bounds.length - 1; i++) {
       if (_passed[i] != onlyWalked) continue;
@@ -333,8 +345,60 @@ class RenderWindingTrail extends RenderBox
       if (shaft != null) {
         path.lineTo(shaft.center.dx + offset.dx, shaft.bottom + offset.dy);
       }
+      if (glowPaint != null) {
+        canvas.drawPath(path, glowPaint);
+      }
       canvas.drawPath(_dashed(path), paint);
+      _paintWaypoints(
+        canvas,
+        start,
+        end,
+        color,
+        lit: onlyWalked,
+      );
     }
+  }
+
+  /// Pedra no vão — mesmo lábio do [PathNode], em pintura.
+  void _paintWaypoints(
+    Canvas canvas,
+    Offset start,
+    Offset end,
+    Color color, {
+    required bool lit,
+  }) {
+    final mid = Offset(
+      (start.dx + end.dx) / 2,
+      (start.dy + end.dy) / 2,
+    );
+    final r = lit ? 6.5 : 5.0;
+    final lip = Color.lerp(color, const Color(0xFF1A2433), 0.32)!;
+    final fill = lit
+        ? color
+        : Color.lerp(color, const Color(0xFF1A2433), 0.45)!;
+
+    // Lábio de baixo (profundidade de botão).
+    canvas.drawCircle(
+      mid.translate(0, 1.8),
+      r,
+      Paint()..color = lip.withValues(alpha: lit ? 0.95 : 0.7),
+    );
+    if (lit) {
+      canvas.drawCircle(
+        mid,
+        r + 3,
+        Paint()
+          ..color = color.withValues(alpha: 0.22)
+          ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 3.5),
+      );
+    }
+    canvas.drawCircle(mid, r, Paint()..color = fill);
+    canvas.drawCircle(
+      mid.translate(0, -0.6),
+      r * 0.38,
+      Paint()
+        ..color = AppColors.textOnDark.withValues(alpha: lit ? 0.55 : 0.28),
+    );
   }
 
   /// Base do card — no marco de fase, o centro da base.
@@ -414,17 +478,29 @@ class RenderWindingTrail extends RenderBox
     final paint = Paint()
       ..color = color
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 3.5
+      ..strokeWidth = onlyWalked ? 4.0 : 3.2
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
       ..isAntiAlias = true;
+
+    final glowPaint = onlyWalked
+        ? (Paint()
+            ..color = color.withValues(alpha: 0.34)
+            ..style = PaintingStyle.stroke
+            ..strokeWidth = 9
+            ..strokeCap = StrokeCap.round
+            ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 6)
+            ..isAntiAlias = true)
+        : null;
 
     // Um Path só por trecho da mesma cor, depois picotado. A trilha é
     // tracejada e segue a curva, não uma sequência de retas.
     final run = <Offset>[];
     void flush() {
       if (run.length >= 2) {
-        canvas.drawPath(_dashed(_flowing(run, offset)), paint);
+        final flowing = _flowing(run, offset);
+        if (glowPaint != null) canvas.drawPath(flowing, glowPaint);
+        canvas.drawPath(_dashed(flowing), paint);
       }
       run.clear();
     }

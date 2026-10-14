@@ -88,10 +88,12 @@ class JourneyPhaseCard extends StatelessWidget {
             child: CustomPaint(
               painter: _PhaseTicketPainter(
                 fill: a.cardFill,
-                edge: Color.lerp(a.cardBorder, accent, open ? 0.35 : 0.12)!,
+                accent: ink,
+                edge: Color.lerp(a.cardBorder, accent, open ? 0.55 : 0.18)!,
                 glow: open
-                    ? accent.withValues(alpha: 0.22)
+                    ? accent.withValues(alpha: 0.34)
                     : Colors.transparent,
+                open: open,
               ),
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(18, 22, 18, 22),
@@ -105,9 +107,26 @@ class JourneyPhaseCard extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(AppRadii.md),
                         border: Border.all(
-                          color: ink.withValues(alpha: 0.55),
+                          color: ink.withValues(alpha: open ? 0.7 : 0.4),
+                          width: 1.2,
                         ),
-                        color: ink.withValues(alpha: 0.08),
+                        gradient: LinearGradient(
+                          begin: Alignment.topLeft,
+                          end: Alignment.bottomRight,
+                          colors: [
+                            ink.withValues(alpha: open ? 0.22 : 0.08),
+                            ink.withValues(alpha: open ? 0.06 : 0.03),
+                          ],
+                        ),
+                        boxShadow: open
+                            ? [
+                                BoxShadow(
+                                  color: ink.withValues(alpha: 0.28),
+                                  blurRadius: 12,
+                                  offset: const Offset(0, 4),
+                                ),
+                              ]
+                            : null,
                       ),
                       child: CinematicIcon(
                         glyph: glyph,
@@ -124,9 +143,17 @@ class JourneyPhaseCard extends StatelessWidget {
                           SectionLabel(label, size: 11, color: ink),
                           const SizedBox(height: 3),
                           Container(
-                            width: 36,
-                            height: 1.5,
-                            color: ink.withValues(alpha: 0.85),
+                            width: 44,
+                            height: 2,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(2),
+                              gradient: LinearGradient(
+                                colors: [
+                                  ink,
+                                  ink.withValues(alpha: 0.15),
+                                ],
+                              ),
+                            ),
                           ),
                           const SizedBox(height: 8),
                           Text(
@@ -168,39 +195,80 @@ class JourneyPhaseCard extends StatelessWidget {
 
 class _PhaseTicketPainter extends CustomPainter {
   final Color fill;
+  final Color accent;
   final Color edge;
   final Color glow;
+  final bool open;
 
   const _PhaseTicketPainter({
     required this.fill,
+    required this.accent,
     required this.edge,
     required this.glow,
+    required this.open,
   });
 
   @override
   void paint(Canvas canvas, Size size) {
-    final path = journeyPhaseTicketPath(Offset.zero & size);
+    final bounds = Offset.zero & size;
+    final path = journeyPhaseTicketPath(bounds);
 
     if (glow.a > 0) {
       canvas.drawPath(
         path,
         Paint()
           ..color = glow
-          ..maskFilter = const MaskFilter.blur(BlurStyle.outer, 10),
+          ..maskFilter = const MaskFilter.blur(BlurStyle.outer, 14),
       );
     }
-    canvas
-      ..drawPath(path, Paint()..color = fill)
-      ..drawPath(
-        path,
-        Paint()
-          ..color = edge
-          ..style = PaintingStyle.stroke
-          ..strokeWidth = 1.2,
-      );
+
+    final wash = open ? 0.18 : 0.05;
+    canvas.drawPath(
+      path,
+      Paint()
+        ..shader = LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            Color.lerp(fill, accent, wash)!,
+            fill,
+            Color.lerp(fill, const Color(0xFF000000), open ? 0.14 : 0.06)!,
+          ],
+          stops: const [0.0, 0.45, 1.0],
+        ).createShader(bounds),
+    );
+
+    // Filete superior — o marco “acende” na borda de cima.
+    canvas.save();
+    canvas.clipPath(path);
+    canvas.drawRect(
+      Rect.fromLTWH(0, 0, size.width, 3.5),
+      Paint()
+        ..shader = LinearGradient(
+          colors: [
+            accent.withValues(alpha: 0),
+            accent.withValues(alpha: open ? 0.95 : 0.35),
+            accent.withValues(alpha: 0),
+          ],
+          stops: const [0.08, 0.5, 0.92],
+        ).createShader(Rect.fromLTWH(0, 0, size.width, 3.5)),
+    );
+    canvas.restore();
+
+    canvas.drawPath(
+      path,
+      Paint()
+        ..color = edge
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = open ? 1.45 : 1.15,
+    );
   }
 
   @override
   bool shouldRepaint(covariant _PhaseTicketPainter old) =>
-      old.fill != fill || old.edge != edge || old.glow != glow;
+      old.fill != fill ||
+      old.accent != accent ||
+      old.edge != edge ||
+      old.glow != glow ||
+      old.open != open;
 }

@@ -6,6 +6,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/difficulty_visuals.dart';
 import 'act_feel.dart';
+import 'cinematic_icon.dart';
 import 'immersive_background.dart';
 import 'ui_primitives.dart';
 
@@ -29,6 +30,12 @@ class JourneyStationCard extends StatelessWidget {
   /// Acento do chrome quando difere do [accent] (ex.: modo selado).
   final Color? chrome;
 
+  /// Glifo da trilha / cena — identidade à esquerda.
+  final CinematicGlyph? glyph;
+
+  /// Numeral romano grande no fundo (I, II…).
+  final String? watermark;
+
   const JourneyStationCard({
     super.key,
     required this.title,
@@ -44,6 +51,8 @@ class JourneyStationCard extends StatelessWidget {
     this.total = 0,
     this.semanticsLabel,
     this.chrome,
+    this.glyph,
+    this.watermark,
   });
 
   @override
@@ -57,156 +66,277 @@ class JourneyStationCard extends StatelessWidget {
     final ink = tone ?? accent;
     final left = (total - done).clamp(0, total);
     final lit = !isLocked && !isSoon && (isCurrent || tone != null || isDone);
+    final quiet = isLocked || isSoon;
+    final plateSize = isCurrent ? 40.0 : (quiet ? 32.0 : 36.0);
 
-    final body = Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Row(
-          children: [
-            if (leading != null) ...[leading!, const SizedBox(width: 8)],
-            Expanded(
-              child: SectionLabel(
-                eyebrow,
-                size: 10,
-                color: isCurrent ? ink : a.textFaint,
+    final textCol = Expanded(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              if (leading != null) ...[leading!, const SizedBox(width: 6)],
+              Expanded(
+                child: SectionLabel(
+                  eyebrow,
+                  size: 10,
+                  color: isCurrent
+                      ? ink
+                      : quiet
+                      ? Color.lerp(a.textFaint, accent, 0.4)!
+                      : a.textFaint,
+                ),
               ),
-            ),
-            if (isCurrent)
-              Text(
-                context.l10n.journeyNow,
-                style: AppTypography.label(size: 11, color: ink),
-              ),
-          ],
-        ),
-        const SizedBox(height: 6),
-        Text(
-          title,
-          maxLines: 2,
-          overflow: TextOverflow.ellipsis,
-          style: AppTypography.display(
-            size: isCurrent ? 20 : 18,
-            height: 1.1,
-            color: isLocked || isSoon ? a.textSecondary : a.text,
+              if (isCurrent)
+                Text(
+                  context.l10n.journeyNow,
+                  style: AppTypography.label(size: 11, color: ink),
+                ),
+              if (quiet)
+                Flexible(
+                  child: Text(
+                    isSoon
+                        ? context.l10n.commonComingSoon
+                        : context.l10n.journeyBeyondHorizon,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    textAlign: TextAlign.right,
+                    style: AppTypography.label(
+                      size: 9,
+                      color: Color.lerp(a.textFaint, accent, 0.45)!,
+                    ),
+                  ),
+                ),
+            ],
           ),
-        ),
-        const SizedBox(height: 4),
-        if (isCurrent && currentSubtitle != null)
+          const SizedBox(height: 5),
           Text(
-            currentSubtitle!,
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: AppTypography.body(
-              size: 12,
-              weight: FontWeight.w800,
-              color: ink,
-            ),
-          ),
-        if (!isCurrent)
-          Text(
-            statusLine ?? _defaultStatus(context, isLocked, isSoon, isDone),
+            title,
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
-            style: AppTypography.body(
-              size: 12,
-              weight: FontWeight.w700,
-              color: isLocked || isSoon ? a.textFaint : ink,
+            style: AppTypography.display(
+              size: isCurrent ? 20 : (quiet ? 16 : 18),
+              height: 1.1,
+              color: quiet ? a.textSecondary : a.text,
             ),
           ),
-        if (isCurrent && total > 0) ...[
-          const SizedBox(height: 8),
-          AppProgressBar(
-            value: done / total,
-            color: ink,
-            trackColor: a.progressTrack,
-            height: 6,
-          ),
-          const SizedBox(height: 6),
-          Text(
-            left > 0
-                ? context.l10n.journeyScenesLeft(left)
-                : (statusLine ?? context.l10n.trailsScenesOf(done, total)),
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: AppTypography.body(
-              size: 12,
-              weight: FontWeight.w700,
-              color: a.text,
+          const SizedBox(height: 4),
+          if (isCurrent && currentSubtitle != null)
+            Text(
+              currentSubtitle!,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: AppTypography.body(
+                size: 12,
+                weight: FontWeight.w800,
+                color: ink,
+              ),
             ),
-          ),
+          if (!isCurrent)
+            Text(
+              statusLine ?? _defaultStatus(context, isLocked, isSoon, isDone),
+              maxLines: quiet ? 2 : 2,
+              overflow: TextOverflow.ellipsis,
+              style: AppTypography.body(
+                size: quiet ? 11 : 12,
+                weight: FontWeight.w700,
+                height: 1.25,
+                color: quiet
+                    ? Color.lerp(a.textFaint, accent, 0.32)!
+                    : ink,
+              ),
+            ),
+          if (isCurrent && total > 0) ...[
+            const SizedBox(height: 8),
+            AppProgressBar(
+              value: done / total,
+              color: ink,
+              trackColor: a.progressTrack,
+              height: 6,
+            ),
+            const SizedBox(height: 6),
+            Text(
+              left > 0
+                  ? context.l10n.journeyScenesLeft(left)
+                  : (statusLine ?? context.l10n.trailsScenesOf(done, total)),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: AppTypography.body(
+                size: 12,
+                weight: FontWeight.w700,
+                color: a.text,
+              ),
+            ),
+          ],
+          if (isCurrent) ...[
+            const SizedBox(height: 10),
+            CopperCta(
+              label: context.l10n.journeyPlay,
+              dense: true,
+              decorative: true,
+              showGlow: false,
+              expanded: true,
+            ),
+          ],
         ],
-        if (isCurrent) ...[
-          const SizedBox(height: 8),
-          Align(
-            alignment: Alignment.centerRight,
-            child: Text(
-              context.l10n.journeyPlay,
-              style: AppTypography.cta(size: 14, color: ink),
+      ),
+    );
+
+    final body = Stack(
+      clipBehavior: Clip.none,
+      children: [
+        if (watermark != null && watermark!.isNotEmpty)
+          Positioned(
+            right: -4,
+            bottom: -10,
+            child: IgnorePointer(
+              child: Text(
+                watermark!,
+                style: AppTypography.display(
+                  size: isCurrent ? 56 : (quiet ? 40 : 48),
+                  height: 1,
+                  color: (quiet ? accent : ink).withValues(
+                    alpha: quiet ? 0.10 : 0.14,
+                  ),
+                ),
+              ),
             ),
           ),
-        ],
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            if (glyph != null) ...[
+              _GlyphPlate(
+                glyph: glyph!,
+                size: plateSize,
+                ink: quiet ? accent : ink,
+                quiet: quiet,
+                lit: isCurrent,
+              ),
+              SizedBox(width: quiet ? 10 : 12),
+            ],
+            textCol,
+          ],
+        ),
       ],
     );
 
-    final pad = const EdgeInsets.fromLTRB(14, 12, 14, 12);
-    final card = lit
-        ? DecoratedBox(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(AppRadii.lg),
-              boxShadow: [
-                BoxShadow(
-                  color: (isCurrent ? glow : ink).withValues(alpha: 0.28),
-                  blurRadius: 16,
-                  offset: const Offset(0, 6),
+    final pad = EdgeInsets.fromLTRB(
+      quiet ? 12 : 14,
+      quiet ? 10 : 12,
+      quiet ? 12 : 14,
+      quiet ? 10 : 12,
+    );
+
+    final Widget card;
+    if (lit) {
+      card = DecoratedBox(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(AppRadii.lg),
+          boxShadow: [
+            BoxShadow(
+              color: (isCurrent ? glow : ink).withValues(
+                alpha: isCurrent ? 0.30 : 0.20,
+              ),
+              blurRadius: isCurrent ? 18 : 12,
+              offset: const Offset(0, 6),
+            ),
+          ],
+        ),
+        child: DecoratedBox(
+          decoration: DifficultyVisuals.stationCard(
+            accent: ink,
+            baseFill: a.cardFill,
+            lit: isCurrent,
+            sealed: isDone && !isCurrent,
+          ),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(AppRadii.lg),
+            child: Stack(
+              children: [
+                Positioned(
+                  top: 0,
+                  left: 18,
+                  right: 18,
+                  child: CardFilament(color: ink, height: 2),
+                ),
+                Padding(
+                  padding: EdgeInsets.fromLTRB(
+                    14,
+                    isCurrent ? 14 : 12,
+                    14,
+                    isCurrent ? 12 : 12,
+                  ),
+                  child: body,
                 ),
               ],
             ),
-            child: DecoratedBox(
-              decoration: DifficultyVisuals.stationCard(
-                accent: ink,
-                baseFill: a.cardFill,
-                lit: isCurrent,
-                sealed: isDone && !isCurrent,
-              ),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(AppRadii.lg),
-                child: Stack(
-                  children: [
-                    Positioned(
-                      top: 0,
-                      left: 0,
-                      right: 0,
-                      height: 3,
-                      child: ColoredBox(color: ink),
+          ),
+        ),
+      );
+    } else {
+      card = GlassCard(
+        padding: EdgeInsets.zero,
+        tint: accent,
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(AppMetrics.cardRadius),
+          child: Stack(
+            children: [
+              Positioned(
+                left: 0,
+                top: 12,
+                bottom: 12,
+                child: Container(
+                  width: 3,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(2),
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [
+                        accent.withValues(alpha: 0),
+                        accent.withValues(alpha: 0.5),
+                        accent.withValues(alpha: 0),
+                      ],
                     ),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(14, 14, 14, 12),
-                      child: body,
-                    ),
-                  ],
+                  ),
                 ),
               ),
-            ),
-          )
-        : GlassCard(padding: pad, child: body);
+              Padding(padding: pad, child: body),
+            ],
+          ),
+        ),
+      );
+    }
+
+    final beacon = isCurrent ? _CurrentBeacon(color: ink, child: card) : card;
 
     final tappable = onTap == null
-        ? card
+        ? beacon
         : ActPress(
             onTap: onTap,
-            depth: isLocked || isSoon ? 0 : (isCurrent ? 3 : 2),
-            child: card,
+            depth: quiet ? 0 : (isCurrent ? 3 : 2),
+            child: beacon,
           );
 
     return Opacity(
-      opacity: isLocked || isSoon ? 0.72 : 1,
+      opacity: quiet ? 0.92 : 1,
       child: Semantics(
         label: semanticsLabel ?? title,
         button: onTap != null,
         child: LayoutBuilder(
           builder: (context, constraints) {
+            final fraction = isCurrent
+                ? 0.72
+                : quiet
+                ? 0.48
+                : 0.56;
             final preferred = math.min(
-              176.0,
-              math.max(148.0, constraints.maxWidth * 0.56),
+              isCurrent ? 220.0 : (quiet ? 152.0 : 176.0),
+              math.max(
+                quiet ? 128.0 : 148.0,
+                constraints.maxWidth * fraction,
+              ),
             );
             final width = math.min(preferred, constraints.maxWidth);
             return SizedBox(width: width, child: tappable);
@@ -227,6 +357,121 @@ class JourneyStationCard extends StatelessWidget {
     if (isDone) return context.l10n.trailsCleared;
     if (total > 0) return context.l10n.trailsScenesShort(done, total);
     return '';
+  }
+}
+
+class _GlyphPlate extends StatelessWidget {
+  final CinematicGlyph glyph;
+  final double size;
+  final Color ink;
+  final bool quiet;
+  final bool lit;
+
+  const _GlyphPlate({
+    required this.glyph,
+    required this.size,
+    required this.ink,
+    required this.quiet,
+    required this.lit,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: size,
+      height: size,
+      alignment: Alignment.center,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(AppRadii.md),
+        border: Border.all(
+          color: ink.withValues(alpha: lit ? 0.75 : (quiet ? 0.4 : 0.55)),
+          width: lit ? 1.3 : 1.1,
+        ),
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            ink.withValues(alpha: lit ? 0.24 : (quiet ? 0.10 : 0.14)),
+            ink.withValues(alpha: lit ? 0.06 : 0.03),
+          ],
+        ),
+      ),
+      child: CinematicIcon(
+        glyph: glyph,
+        size: size * 0.52,
+        accent: ink,
+        framed: false,
+      ),
+    );
+  }
+}
+
+/// Halo que respira na estação atual — “você está aqui”.
+class _CurrentBeacon extends StatefulWidget {
+  final Color color;
+  final Widget child;
+
+  const _CurrentBeacon({required this.color, required this.child});
+
+  @override
+  State<_CurrentBeacon> createState() => _CurrentBeaconState();
+}
+
+class _CurrentBeaconState extends State<_CurrentBeacon>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _pulse;
+
+  @override
+  void initState() {
+    super.initState();
+    _pulse = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 2200),
+    );
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    final reduced = AppMotion.reduced(context);
+    if (reduced) {
+      _pulse.stop();
+      _pulse.value = 0.55;
+    } else if (!_pulse.isAnimating) {
+      _pulse.repeat(reverse: true);
+    }
+  }
+
+  @override
+  void dispose() {
+    _pulse.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedBuilder(
+      animation: _pulse,
+      builder: (context, child) {
+        final t = Curves.easeInOut.transform(_pulse.value);
+        final glow = 0.14 + 0.16 * t;
+        final blur = 10 + 8 * t;
+        return DecoratedBox(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(AppRadii.lg + 4),
+            boxShadow: [
+              BoxShadow(
+                color: widget.color.withValues(alpha: glow),
+                blurRadius: blur,
+                spreadRadius: 0.5 + t,
+              ),
+            ],
+          ),
+          child: child,
+        );
+      },
+      child: widget.child,
+    );
   }
 }
 
