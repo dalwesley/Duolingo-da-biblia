@@ -219,7 +219,6 @@ class _LoginScreenState extends State<LoginScreen> {
               const Spacer(flex: 3),
               if (_error != null) ...[
                 GlassCard(
-                  tint: AppRoles.error,
                   padding: const EdgeInsets.all(AppSpace.md),
                   child: Text(
                     _error!,

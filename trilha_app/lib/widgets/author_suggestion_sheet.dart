@@ -203,7 +203,7 @@ class _AuthorSuggestionSheetState extends State<_AuthorSuggestionSheet> {
               const SizedBox(height: 8),
               Text(
                 _error!,
-                style: AppTypography.body(size: 13, color: AppRoles.error),
+                style: AppTypography.body(size: 13, color: a.textSecondary),
               ),
               const SizedBox(height: 8),
             ] else if (_ctaHint.isNotEmpty) ...[

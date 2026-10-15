@@ -412,7 +412,7 @@ class _HomeScreenState extends State<HomeScreen>
           glyph: CinematicGlyph.gem,
           title: l10n.chestDailyTitle,
           caption: l10n.chestReadyShort,
-          color: AppRoles.reward,
+          color: AppRoles.presence,
           hot: true,
           onTap: () => _openCardSheet(const DailyChestCard()),
         ),
@@ -430,7 +430,7 @@ class _HomeScreenState extends State<HomeScreen>
           glyph: CinematicGlyph.target,
           title: l10n.questDailyTitle,
           caption: l10n.homeQuestsExtraCaption,
-          color: AppRoles.reward,
+          color: AppRoles.presence,
           onTap: () => _openCardSheet(
             DailyQuestsCard(
               onQuestTap: (q) {

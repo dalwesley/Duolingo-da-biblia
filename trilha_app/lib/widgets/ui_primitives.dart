@@ -1320,12 +1320,7 @@ class InlineNotice extends StatelessWidget {
     final a = Appearance.of(context);
     final row = Row(
       children: [
-        const CinematicIcon(
-          glyph: CinematicGlyph.wrong,
-          size: AppMetrics.iconMd,
-          accent: AppRoles.error,
-          framed: false,
-        ),
+        const CloudMascot(face: CloudFace.erro, size: 32),
         const SizedBox(width: AppSpace.md),
         Expanded(
           child: Text(
@@ -1356,9 +1351,6 @@ class InlineNotice extends StatelessWidget {
     if (standalone) {
       return GlassCard(padding: AppMetrics.cardPaddingCompact, child: row);
     }
-    return InsetPanel(
-      borderColor: AppRoles.error.withValues(alpha: 0.45),
-      child: row,
-    );
+    return InsetPanel(child: row);
   }
 }

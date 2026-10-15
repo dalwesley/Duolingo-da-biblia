@@ -603,7 +603,7 @@ class _HeroContinueCardState extends State<HeroContinueCard>
     return GlassCard(
       onTap: widget.onExploreTrails,
       glow: 0.3,
-      tint: AppRoles.reward,
+      tint: AppRoles.presence,
       radius: AppMetrics.heroRadius,
       padding: const EdgeInsets.all(28),
       child: Column(
@@ -611,7 +611,7 @@ class _HeroContinueCardState extends State<HeroContinueCard>
           const CinematicIcon(
             glyph: CinematicGlyph.crown,
             size: AppMetrics.iconHero,
-            accent: AppRoles.reward,
+            accent: AppRoles.presence,
             glowing: false,
           ),
           const SizedBox(height: 16),

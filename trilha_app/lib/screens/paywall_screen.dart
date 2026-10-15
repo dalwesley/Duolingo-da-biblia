@@ -148,7 +148,7 @@ class PaywallScreen extends StatelessWidget {
                       textAlign: TextAlign.center,
                       style: AppTypography.body(
                         size: 12,
-                        color: AppRoles.error,
+                        color: a.textSecondary,
                       ),
                     ),
                   ],

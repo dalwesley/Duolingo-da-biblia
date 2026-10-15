@@ -141,7 +141,7 @@ class _OfflineCurriculumDialogState extends State<_OfflineCurriculumDialog>
                     style: AppTypography.body(
                       size: 12,
                       weight: FontWeight.w700,
-                      color: AppRoles.error,
+                      color: a.textSecondary,
                     ),
                   ),
                 ),

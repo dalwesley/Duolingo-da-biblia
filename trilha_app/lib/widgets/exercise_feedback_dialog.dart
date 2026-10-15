@@ -232,8 +232,6 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
     final isCorrect = widget.isCorrect;
     final accent = widget.accent;
     final outOfLamps = widget.outOfLamps;
-    // Acerto = ouro; erro = risk. Sem azul nos gestos.
-    final color = isCorrect ? AppRoles.action : AppRoles.error;
     final a = Appearance.of(context);
     final l10n = context.l10n;
     final feedback = _holdsAnswer
@@ -385,9 +383,9 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
                                 _VerseWell(
                                   reference: ref,
                                   verse: verse,
-                                  accent: color,
+                                  accent: AppRoles.presence,
                                   highlight: _span,
-                                  highlightColor: accent,
+                                  highlightColor: AppRoles.presence,
                                 ),
                               ],
                               const SizedBox(height: 16),

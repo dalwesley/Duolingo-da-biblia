@@ -69,13 +69,11 @@ class HomePlayerHeader extends StatelessWidget {
     final freezeUsed = p.freezeUsed;
     final freezeCount = freezeUsed || p.freezeAvailable ? 1 : 0;
     final goalFill = goal <= 0 ? 0.0 : done / goal;
-    final barColor = goalMet
-        ? AppRoles.reward
-        : (atRisk ? AppRoles.streak : AppRoles.presence);
+    final barColor = AppRoles.presence;
 
     return GlassCard(
       padding: const EdgeInsets.fromLTRB(14, 12, 14, 10),
-      tint: atRisk ? AppRoles.risk : null,
+      tint: goalMet ? AppRoles.presence : null,
       glow: goalMet ? 0.45 : null,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -85,8 +83,9 @@ class HomePlayerHeader extends StatelessWidget {
               Expanded(
                 child: Semantics(
                   button: onProfileTap != null,
-                  label:
-                      onProfileTap != null ? l10n.homeOpenProfile(name) : null,
+                  label: onProfileTap != null
+                      ? l10n.homeOpenProfile(name)
+                      : null,
                   child: GestureDetector(
                     onTap: () {
                       if (onProfileTap == null) return;
@@ -162,12 +161,12 @@ class HomePlayerHeader extends StatelessWidget {
                   accent: AppRoles.streak,
                   value: l10n.commonDays(streak),
                   hint: atRisk ? l10n.homeStatAtRisk : null,
-                  hintColor: AppRoles.risk,
+                  hintColor: a.textSecondary,
                 ),
                 const Spacer(),
                 _Stat(
                   glyph: CinematicGlyph.check,
-                  accent: goalMet ? AppRoles.reward : AppRoles.chrome,
+                  accent: goalMet ? AppRoles.presence : AppRoles.chrome,
                   value: '$done/$goal',
                   hint: l10n.homeStatGoal,
                 ),
@@ -176,8 +175,9 @@ class HomePlayerHeader extends StatelessWidget {
                   glyph: CinematicGlyph.frost,
                   accent: freezeUsed ? a.textFaint : AppRoles.chrome,
                   value: '$freezeCount',
-                  hint:
-                      freezeUsed ? l10n.homeStatFreezeUsed : l10n.homeStatFreeze,
+                  hint: freezeUsed
+                      ? l10n.homeStatFreezeUsed
+                      : l10n.homeStatFreeze,
                 ),
               ],
             ),
@@ -187,23 +187,15 @@ class HomePlayerHeader extends StatelessWidget {
             label: goalMet || left <= 0
                 ? l10n.homeGoalMet
                 : l10n.homeGoalLeft(left),
-            child: AppProgressBar(
-              value: goalFill,
-              color: barColor,
-              height: 6,
-            ),
+            child: AppProgressBar(value: goalFill, color: barColor, height: 6),
           ),
           const SizedBox(height: 6),
           Text(
-            goalMet || left <= 0
-                ? l10n.homeGoalMet
-                : l10n.homeGoalLeft(left),
+            goalMet || left <= 0 ? l10n.homeGoalMet : l10n.homeGoalLeft(left),
             style: AppTypography.body(
               size: 11,
               weight: FontWeight.w700,
-              color: goalMet || left <= 0
-                  ? AppRoles.reward
-                  : (atRisk ? AppRoles.streak : a.textFaint),
+              color: goalMet || left <= 0 ? AppRoles.presence : a.textFaint,
             ),
           ),
           const SizedBox(height: 10),

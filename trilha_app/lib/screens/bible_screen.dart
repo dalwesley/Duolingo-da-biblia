@@ -413,7 +413,7 @@ class _BibleLibrary extends StatelessWidget {
                 children: [
                   AppSegmentedTabs(
                     index: pane,
-                    accent: AppRoles.reward,
+                    accent: AppRoles.presence,
                     onChanged: (i) {
                       if (i == pane) return;
                       ActHaptics.tap();

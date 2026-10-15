@@ -224,7 +224,7 @@ class _TrailSuggestionSheetState extends State<_TrailSuggestionSheet> {
             if (_error != null) ...[
               Text(
                 _error!,
-                style: AppTypography.body(size: 13, color: AppRoles.error),
+                style: AppTypography.body(size: 13, color: a.textSecondary),
               ),
               const SizedBox(height: 8),
             ] else if (_ctaHint.isNotEmpty) ...[

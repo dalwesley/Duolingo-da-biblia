@@ -840,14 +840,12 @@ class _RevealBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final color = correct ? AppRoles.action : AppRoles.error;
 
     return Column(
       children: [
         SizedBox(
           width: double.infinity,
           child: GlassCard(
-            tint: color,
             padding: const EdgeInsets.symmetric(
               horizontal: AppSpace.lg,
               vertical: AppSpace.md,
@@ -867,7 +865,7 @@ class _RevealBanner extends StatelessWidget {
                         correct
                             ? context.l10n.feedbackCorrect
                             : context.l10n.feedbackAlmost,
-                        style: AppTypography.title(size: 18, color: color),
+                        style: AppTypography.title(size: 18, color: a.text),
                       ),
                       const SizedBox(height: 2),
                       Text(

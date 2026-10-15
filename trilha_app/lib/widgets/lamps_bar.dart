@@ -19,7 +19,7 @@ class LampsBar extends StatelessWidget {
   /// Altura reduzida em telas curtas.
   final bool compact;
 
-  /// Última lâmpada: pulso de risco (vermelho).
+  /// Última lâmpada: o flash vermelho é só a que acabou de apagar.
   final bool atRisk;
 
   /// Índice (0-based) da lâmpada que acabou de apagar — flash de erro.
@@ -42,7 +42,7 @@ class LampsBar extends StatelessWidget {
     final a = Appearance.of(context);
     final iconH = compact ? 24.0 : (fullWidth ? 30.0 : 28.0);
     final iconW = compact ? 18.0 : (fullWidth ? 22.0 : 20.0);
-    final litColor = atRisk && current > 0 ? AppRoles.streak : accent;
+    final litColor = accent;
     final icons = Row(
       mainAxisAlignment: fullWidth
           ? MainAxisAlignment.center
@@ -51,9 +51,7 @@ class LampsBar extends StatelessWidget {
       children: List.generate(max, (i) {
         final on = i < current;
         final flashing = flashOffIndex == i;
-        final color = flashing
-            ? AppRoles.error
-            : (on ? litColor : accent);
+        final color = flashing ? AppRoles.error : (on ? litColor : accent);
         return Padding(
           padding: EdgeInsets.only(
             left: i == 0 ? 0 : (fullWidth ? (compact ? 8 : 10) : 7),
@@ -63,7 +61,7 @@ class LampsBar extends StatelessWidget {
             duration: AppMotion.standard,
             curve: AppMotion.pop,
             child: AnimatedOpacity(
-              opacity: flashing ? 1 : (on ? 1 : 0.32),
+              opacity: flashing ? 1 : (on ? 1 : (atRisk ? 0.18 : 0.32)),
               duration: AppMotion.standard,
               child: CustomPaint(
                 size: Size(iconW, iconH),

@@ -36,21 +36,21 @@ são matéria-prima do tema, não se usam direto em tela nova.
 
 | Papel | Token | Onde |
 |---|---|---|
-| Ação principal | `AppRoles.action` (ouro `#F4A80C`) | `CopperCta`, o que avança |
-| Recompensa | `AppRoles.reward` (ouro) | passos, medalha, baú, meta cumprida, podium |
+| Ação principal | `AppRoles.action` (ouro `#F4A80C`) | `CopperCta`. Um ouro por tela, o do botão |
+| Recompensa | `AppRoles.reward` (ouro) | **só** o número de passos |
 | Chrome | `AppRoles.chrome` (aço frio `#9EB0C4`) | nav, TopBar, ícone idle — **igual em todas as abas** |
 | Seleção (cena) | fill branco (`selected`) | **só** opção tocada na cena (gesto); nunca aba do shell |
-| Aba ativa (shell) | fill escuro + rim do `accent` | `AppSegmentedTabs(accent:)` — presença ou reward do bloco |
+| Aba ativa (shell) | fill escuro + rim do `accent` | `AppSegmentedTabs(accent:)` — presença do bloco |
 | Idle (cena) | `nightElevated` + texto claro | placas de resposta no céu escuro |
-| Acerto na cena | `AppRoles.action` (ouro) | placa, veredito, barra, flash |
-| Presença / vida | `AppRoles.presence` (glow) | Hoje + Juntos: "estudou hoje", fio, Companhia, orbs |
-| Lâmpadas (vidas) | `AppRoles.reward` (ouro) | acesas = luz |
-| Sequência | `AppRoles.streak` (âmbar) | **só** a chama |
-| Risco / erro | `AppRoles.error` | único vermelho |
+| Acerto na cena | `AppRoles.action` (ouro) | placa da resposta certa |
+| Presença / vida | `AppRoles.presence` (`#51AEF0`, azul da nuvem) | acertos, "estudou hoje", borda da próxima cena, lâmpada acesa |
+| Lâmpadas (vidas) | `AppRoles.presence` | acesas = a luz da nuvem |
+| Sequência | `AppRoles.streak` (o mesmo ouro) | a chama, o mesmo metal do botão |
+| Risco / erro | `AppRoles.error` | flash da resposta errada na cena; ação destrutiva (sair, apagar) |
 
-**Dois eixos da marca** (âncora logo): ouro avança · glow vive · branco só no
-toque da cena · chrome segura o resto. No máx. 1 cromático de bloco + ouro
-pontual de recompensa/CTA — nunca espalhar ouro como decoração.
+**Família da marca** (logo + nuvem): navy, caminho branco, azul `#51AEF0`,
+um ouro `#F4A80C`. O ouro avança (o botão) e conta os passos. O azul é a
+vida. Modos e reinos só no mapa e no seletor. Medalhas só no cofre.
 
 Regras (gesto na cena):
 - Idle = poço escuro · Seleção = branco · Acerto = ouro · Erro = vermelho.
@@ -68,10 +68,7 @@ Regras (gesto na cena):
 - Juntos por bloco: Companhia/Grupos → `presence` no card; Desafio/Caravana →
   ouro só em placar/passos/podium (não na pílula do submenu).
 
-- Um segmentado: `AppSegmentedTabs(accent:)`. **Abas-mãe** (Juntos / Bíblia) =
-  `reward` (ouro); **submenu interno** (Companhia·Desafio, mês·semana, ordem
-  dos livros) = `presence` (glow). Aba ativa ≠ branco de cena. Chips soltos:
-  `AppSelectChip`.
+- Um segmentado: `AppSegmentedTabs(accent: AppRoles.presence)`. Aba ativa ≠ branco de cena. Chips soltos: `AppSelectChip`.
 - Um avatar: `UserAvatar` com raio `AppMetrics.avatarSm` (16) · `avatarMd` (20)
   · `avatarLg` (30); retrato de identidade só `avatarXl` (40, cartão do
   peregrino) e `avatarHero` (52, herói do perfil). "Você" na lista: fundo `AppRoles.selected` a 0.08 + borda 0.4.
@@ -171,8 +168,7 @@ Na cena (partida): HUD = progresso das perguntas + lâmpadas. Sequência
 lâmpada nem soma passos extras. Erro = flash vermelho + lâmpada que apaga.
 
 Na celebração: contagem de passos sobe e, ao fechar, háptico + pop no cartão
-de passos. **Cena limpa** (100% + lâmpadas intactas) aparece como selo;
-o multiplicador já está em `computeLessonSteps`.
+de passos. O multiplicador de cena limpa já está em `computeLessonSteps`.
 
 No mapa da área: estação atual é nível jogável (glow, barra, "Jogar", aviso
 de Travessia). Estações quietas com progresso mostram filete; beacon atual

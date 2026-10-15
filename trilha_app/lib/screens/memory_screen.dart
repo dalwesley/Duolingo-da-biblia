@@ -608,7 +608,7 @@ class _AnswerRow extends StatelessWidget {
           child: OutlineCta(
             label: context.l10n.memoryNotYet,
             leading: CinematicGlyph.refresh,
-            color: AppRoles.error,
+            color: AppRoles.chrome,
             onTap: onLearning,
             uppercase: false,
             padding: const EdgeInsets.symmetric(vertical: AppSpace.lg),

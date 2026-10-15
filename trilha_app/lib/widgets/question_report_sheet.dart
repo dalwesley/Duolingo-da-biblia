@@ -209,7 +209,7 @@ class _QuestionReportSheetState extends State<_QuestionReportSheet> {
               const SizedBox(height: 8),
               Text(
                 _error!,
-                style: AppTypography.body(size: 13, color: AppRoles.error),
+                style: AppTypography.body(size: 13, color: a.textSecondary),
               ),
             ],
             const SizedBox(height: 12),

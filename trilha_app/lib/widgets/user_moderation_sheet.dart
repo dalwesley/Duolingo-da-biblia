@@ -201,6 +201,7 @@ class _UserModerationSheetState extends State<_UserModerationSheet> {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     final l10n = context.l10n;
     final blocked = context.watch<ModerationService>().isBlocked(widget.uid);
 
@@ -237,7 +238,7 @@ class _UserModerationSheetState extends State<_UserModerationSheet> {
               const SizedBox(height: AppSpace.sm),
               Text(
                 _error!,
-                style: AppTypography.body(size: 13, color: AppRoles.error),
+                style: AppTypography.body(size: 13, color: a.textSecondary),
               ),
             ],
           ],

@@ -20,6 +20,7 @@ import '../utils/trail_visuals.dart';
 import 'act_feel.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
+import 'cloud_mascot.dart';
 import 'hero_card_atmosphere.dart';
 import 'immersive_background.dart';
 import 'user_avatar.dart';
@@ -1668,16 +1669,10 @@ class _RoomCallSheetState extends State<_RoomCallSheet> {
             if (_error != null) ...[
               const SizedBox(height: AppSpace.sm),
               GlassCard(
-                tint: AppRoles.error,
                 padding: AppMetrics.cardPaddingCompact,
                 child: Row(
                   children: [
-                    const CinematicIcon(
-                      glyph: CinematicGlyph.wrong,
-                      size: AppMetrics.iconSm,
-                      accent: AppRoles.error,
-                      framed: false,
-                    ),
+                    const CloudMascot(face: CloudFace.erro, size: 28),
                     const SizedBox(width: AppSpace.sm),
                     Expanded(
                       child: Text(

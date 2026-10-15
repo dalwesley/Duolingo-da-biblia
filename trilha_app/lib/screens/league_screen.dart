@@ -1518,7 +1518,7 @@ class _SegmentTabs extends StatelessWidget {
     return JuntosSegmentTabs(
       index: index,
       onChanged: onChanged,
-      accent: AppRoles.reward,
+      accent: AppRoles.presence,
       items: [
         (
           label: context.l10n.juntosTabCompanion,
@@ -1561,7 +1561,7 @@ class _CompanhiaStageCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final hasBody = body != null;
-    // Submenu interno = presença (azul); ouro fica nas abas-mãe.
+    // Submenu e abas-mãe usam o azul da nuvem. O ouro fica no botão.
     const tone = AppRoles.presence;
     return GlassCard(
       tint: tone,
@@ -1691,7 +1691,7 @@ class _CaravanExplainer extends StatelessWidget {
           ),
         ),
         const SizedBox(height: AppSpace.lg),
-        _ExplainerSteps(steps: steps, accent: AppRoles.reward),
+        _ExplainerSteps(steps: steps, accent: AppRoles.presence),
       ],
     );
   }
@@ -1832,7 +1832,7 @@ class _DesafioExplainer extends StatelessWidget {
         ),
         const SizedBox(height: AppSpace.lg),
         _ExplainerSteps(
-          accent: AppRoles.reward,
+          accent: AppRoles.presence,
           steps: [
             (CinematicGlyph.path, context.l10n.juntosChallengeStep1),
             (CinematicGlyph.calendar, context.l10n.juntosChallengeStep2),
@@ -2199,7 +2199,7 @@ class _RoomHearth extends StatelessWidget {
         : l10n.juntosRoomHintHalf;
 
     return GlassCard(
-      tint: ready ? AppRoles.reward : null,
+      tint: ready ? AppRoles.presence : null,
       glow: 0.35 + 0.6 * (total == 0 ? 0 : lit / total),
       elevated: ready,
       // Topo/direita curtos: o botão de opções (48) já traz o respiro.
@@ -3599,14 +3599,8 @@ class _BondMember extends StatelessWidget {
         : dusty
         ? l10n.juntosBondNotStudying
         : (highlight ? l10n.juntosBondYourTurn : l10n.juntosBondNotYet);
-    // Estudou hoje = presença; sua vez = risco; parado há dias = apagado.
-    final tone = walked
-        ? AppRoles.presence
-        : dusty
-        ? a.textFaint
-        : highlight
-        ? AppRoles.risk
-        : a.textFaint;
+    // Estudou hoje e a sua vez = azul da nuvem. Parado = apagado.
+    final tone = walked || highlight ? AppRoles.presence : a.textFaint;
 
     Widget avatar = UserAvatar(
       name: name,
@@ -4344,7 +4338,7 @@ class _MilestoneTrail extends StatelessWidget {
                             ? FontWeight.w800
                             : FontWeight.w600,
                         color: sharedDays >= m
-                            ? AppRoles.reward
+                            ? AppRoles.presence
                             : next == m
                             ? style.text
                             : style.textFaint,
@@ -4414,7 +4408,7 @@ class _MilestoneLine extends StatelessWidget {
             widthFactor: t,
             child: const DecoratedBox(
               decoration: BoxDecoration(
-                color: AppRoles.reward,
+                color: AppRoles.presence,
                 borderRadius: BorderRadius.all(Radius.circular(AppRadii.hair)),
               ),
             ),
@@ -4485,7 +4479,7 @@ class _MilestoneNodePainter extends CustomPainter {
     final center = Offset(size.width / 2, size.height / 2);
     final radius = size.width / 2 - 1.2;
     if (reached) {
-      canvas.drawCircle(center, radius, Paint()..color = AppRoles.reward);
+      canvas.drawCircle(center, radius, Paint()..color = AppRoles.presence);
       return;
     }
     canvas.drawCircle(center, radius, Paint()..color = empty);
@@ -4507,7 +4501,7 @@ class _MilestoneNodePainter extends CustomPainter {
           ..style = PaintingStyle.stroke
           ..strokeWidth = 2.4
           ..strokeCap = StrokeCap.round
-          ..color = AppRoles.reward,
+          ..color = AppRoles.presence,
       );
     }
   }

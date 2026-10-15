@@ -2,9 +2,10 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 
-/// Partículas de arena — volt, streak, cobalto.
+/// Partículas da festa — ouro do botão, azul da nuvem, caminho branco.
 class ConfettiOverlay extends StatefulWidget {
   final bool active;
+
   /// Burst mais denso e longo — telas de conquista.
   final bool cinematic;
 
@@ -40,11 +41,9 @@ class _ConfettiOverlayState extends State<ConfettiOverlay>
     final count = fromCloud ? 140 : (widget.cinematic ? 56 : 36);
     final palette = [
       AppColors.accent,
-      AppColors.accentDark,
+      AppColors.glow,
       AppColors.primary,
-      AppColors.teal,
-      AppColors.streak,
-      AppColors.sand,
+      const Color(0xFFE1E7EE),
     ];
     _particles = List.generate(count, (i) {
       final kind = i % 5;
@@ -67,7 +66,9 @@ class _ConfettiOverlayState extends State<ConfettiOverlay>
       }
       return _Particle(
         x: fromCloud ? along : rng.nextDouble(),
-        delay: rng.nextDouble() * (fromCloud ? 0.06 : (widget.cinematic ? 0.55 : 0.4)),
+        delay:
+            rng.nextDouble() *
+            (fromCloud ? 0.06 : (widget.cinematic ? 0.55 : 0.4)),
         speed: fromCloud
             ? 0.7 + rng.nextDouble() * 0.4
             : 0.45 + rng.nextDouble() * 0.9,
@@ -75,7 +76,9 @@ class _ConfettiOverlayState extends State<ConfettiOverlay>
             ? 5 + rng.nextDouble() * 11
             : 3.5 + rng.nextDouble() * (widget.cinematic ? 8 : 6),
         color: palette[i % palette.length],
-        drift: (rng.nextDouble() - 0.5) * (fromCloud ? 1 : (widget.cinematic ? 0.18 : 0.08)),
+        drift:
+            (rng.nextDouble() - 0.5) *
+            (fromCloud ? 1 : (widget.cinematic ? 0.18 : 0.08)),
         spin: (rng.nextDouble() - 0.5) * math.pi * (fromCloud ? 6 : 2),
         kind: kind,
         burstVx: burstVx,
@@ -183,7 +186,8 @@ class _ConfettiPainter extends CustomPainter {
         final spawnX = origin.dx + (p.x - 0.5) * span;
         final spawnY = origin.dy + p.drift * 10;
         x = spawnX + p.burstVx * size.width * t;
-        y = spawnY +
+        y =
+            spawnY +
             p.burstVy * size.width * t +
             p.burstG * size.height * t * t;
       } else {

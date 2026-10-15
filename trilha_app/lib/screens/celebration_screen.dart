@@ -563,7 +563,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                 ? l10n.setPieceTrailLineBase
                 : l10n.setPieceTrailLine(mode.labelPt),
             glyph: CinematicGlyph.flag,
-            light: AppRoles.reward,
+            light: AppRoles.presence,
             cta: l10n.commonContinue,
             sound: SetPieceSound.crossing,
           ),
@@ -702,10 +702,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   /// concluída é acerto; cena que não fechou fica neutra.
   Color get _heroAccent {
     if (widget.failed) return AppRoles.chrome;
-    if (_newSeal != null) return AppRoles.reward;
-    if (widget.perfect) return AppRoles.reward;
-    if (widget.isBoss) return AppRoles.reward;
-    return AppRoles.success;
+    return AppRoles.presence;
   }
 
   String get _kicker {
@@ -815,7 +812,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                         child: CustomPaint(
                           painter: _CelebrationAtmospherePainter(
                             accent: heroAccent,
-                            gold: AppRoles.reward,
+                            gold: AppRoles.presence,
                             breath: breath,
                             reveal: reveal,
                             perfect: widget.perfect,
@@ -922,7 +919,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                       ),
                                       child: GlassCard(
                                         color: _CelebrationPlate.fill,
-                                        accent: true,
+                                        tint: AppRoles.presence,
                                         elevated: true,
                                         padding: EdgeInsets.fromLTRB(
                                           (_hook?.hasEcho ?? false) ? 22 : 20,
@@ -1278,7 +1275,10 @@ class _HeroBeat extends StatelessWidget {
         ],
         if (isBoss) ...[
           const SizedBox(height: 10),
-          _ComboChip(label: context.l10n.crossingChip, color: AppRoles.reward),
+          _ComboChip(
+            label: context.l10n.crossingChip,
+            color: AppRoles.presence,
+          ),
         ],
         if (!successCloud && (medalLine ?? '').trim().isNotEmpty) ...[
           const SizedBox(height: 8),

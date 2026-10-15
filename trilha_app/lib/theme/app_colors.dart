@@ -35,14 +35,14 @@ class AppColors {
   static const accentBright = Color(0xFFF6C24A);
   static const inkOnAccent = Color(0xFF140E00);
 
-  /// Borda acesa da logo — presença / “estudou” / vida social (Hoje + Juntos).
-  static const glow = Color(0xFF5AA6E8);
+  /// Azul da nuvem e da borda acesa da logo — presença, acerto, vida.
+  static const glow = Color(0xFF51AEF0);
 
   /// Alias legado — preferir [glow].
   static const teal = glow;
 
-  /// Sequência (chama) — fogo âmbar, longe do vermelho de erro.
-  static const streak = Color(0xFFFF8A3D);
+  /// Sequência — o mesmo ouro do botão. Um metal só, não um segundo laranja.
+  static const streak = accent;
 
   /// Observação — mint frio, vizinho do glow (não disputa o ouro).
   static const sprout = Color(0xFF7DCF8A);
@@ -166,8 +166,9 @@ class AppColors {
 /// - [chrome] — nav, TopBar, ícone de aba (neutro, igual em todas);
 /// - [selected] — escolha no chrome escuro (contorno claro);
 /// - [success] / [presence] — vivo / "estudou hoje" / social (Hoje + Juntos);
-/// - [streak] — sequência (chama âmbar), só ela;
-/// - [risk] / [error] — algo em perigo ou que falhou;
+/// - [streak] — sequência, o mesmo ouro de [action];
+/// - [risk] / [error] — o flash da resposta errada dentro da cena, e a
+///   ação destrutiva (sair, apagar). Não pinta borda nem título de aviso;
 /// - modos: [observation] · [comprehension] · [interpretation];
 /// - áreas: [areaOldTestament] · [areaNewTestament] · [areaChristianLife] ·
 ///   [areaTheology] — só dentro de Trilhas.

@@ -327,7 +327,7 @@ class _LessonScreenState extends State<LessonScreen>
         title: mission.localizedTitle,
         line: l10n.lessonIntroBossPulse(_exercises.length),
         glyph: CinematicGlyph.crown,
-        light: AppRoles.reward,
+        light: AppRoles.presence,
         cta: l10n.commonStart,
       ),
     );
@@ -1071,7 +1071,7 @@ class _LessonScreenState extends State<LessonScreen>
                                           LampsBar(
                                             current: _lamps,
                                             max: _maxLamps,
-                                            accent: AppRoles.reward,
+                                            accent: AppRoles.presence,
                                             compact: true,
                                             atRisk: _lamps <= 1 && !_outOfLamps,
                                             flashOffIndex: _lampFlashOff,
