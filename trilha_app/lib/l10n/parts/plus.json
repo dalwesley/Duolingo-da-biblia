@@ -217,5 +217,54 @@
     "pt": "Com o Peregrino+",
     "en": "With Pilgrim+",
     "es": "Con Peregrino+"
+  },
+  "paywallYourPlan": {
+    "pt": "Seu plano",
+    "en": "Your plan",
+    "es": "Tu plan"
+  },
+  "paywallRenewsOn": {
+    "pt": "Renova em {date}.",
+    "en": "Renews on {date}.",
+    "es": "Se renueva el {date}.",
+    "placeholders": {
+      "date": "String"
+    }
+  },
+  "paywallTrialUntil": {
+    "pt": "Teste grátis até {date}. Depois, renova sozinho.",
+    "en": "Free trial until {date}. Then it renews automatically.",
+    "es": "Prueba gratis hasta el {date}. Después, se renueva sola.",
+    "placeholders": {
+      "date": "String"
+    }
+  },
+  "paywallEndsOn": {
+    "pt": "Cancelada. Seu acesso vai até {date}.",
+    "en": "Canceled. Your access lasts until {date}.",
+    "es": "Cancelada. Tu acceso dura hasta el {date}.",
+    "placeholders": {
+      "date": "String"
+    }
+  },
+  "paywallLifetimeActive": {
+    "pt": "Vitalício: não expira.",
+    "en": "Lifetime: it never expires.",
+    "es": "De por vida: no vence."
+  },
+  "paywallBillingIssue": {
+    "pt": "Houve um problema no pagamento. Atualize na loja para não perder o acesso.",
+    "en": "There was a payment problem. Update it in the store to keep access.",
+    "es": "Hubo un problema con el pago. Actualízalo en la tienda para no perder el acceso."
+  },
+  "paywallManage": {
+    "pt": "Gerenciar assinatura",
+    "en": "Manage subscription",
+    "es": "Gestionar suscripción"
+  },
+  "paywallManageHint": {
+    "pt": "Mudar de plano ou cancelar é na App Store ou no Google Play.",
+    "en": "Change plan or cancel in the App Store or Google Play.",
+    "es": "Cambiar de plan o cancelar se hace en App Store o Google Play."
   }
 }

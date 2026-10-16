@@ -5662,10 +5662,19 @@ class AppLocalizationsPt extends AppLocalizations {
   String get paywallBestValue => 'Melhor valor';
 
   @override
+  String get paywallBillingIssue =>
+      'Houve um problema no pagamento. Atualize na loja para não perder o acesso.';
+
+  @override
   String get paywallBuyOnce => 'Comprar';
 
   @override
   String get paywallCancelAnytime => 'Cancele quando quiser.';
+
+  @override
+  String paywallEndsOn(String date) {
+    return 'Cancelada. Seu acesso vai até $date.';
+  }
 
   @override
   String get paywallFreeForever =>
@@ -5681,6 +5690,16 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get paywallLaunchFreeTitle => 'Grátis no lançamento';
+
+  @override
+  String get paywallLifetimeActive => 'Vitalício: não expira.';
+
+  @override
+  String get paywallManage => 'Gerenciar assinatura';
+
+  @override
+  String get paywallManageHint =>
+      'Mudar de plano ou cancelar é na App Store ou no Google Play.';
 
   @override
   String get paywallPerkBadgeBody => 'No seu perfil, para a Caravana ver.';
@@ -5754,6 +5773,11 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get paywallPurchaseFailed => 'Não foi possível concluir a compra.';
+
+  @override
+  String paywallRenewsOn(String date) {
+    return 'Renova em $date.';
+  }
 
   @override
   String get paywallRestore => 'Restaurar compra';
@@ -5833,8 +5857,16 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String paywallTrialUntil(String date) {
+    return 'Teste grátis até $date. Depois, renova sozinho.';
+  }
+
+  @override
   String get paywallUnavailable =>
       'Assinatura ainda não disponível nesta versão.';
+
+  @override
+  String get paywallYourPlan => 'Seu plano';
 
   @override
   String get pilgrimAccuracyForming => 'Ainda em formação';

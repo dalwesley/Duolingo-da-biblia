@@ -3957,8 +3957,17 @@
   "paywallAppleEula": "Termos da Apple (EULA)",
   "paywallAutoRenew": "Renova automaticamente pelo mesmo preço até você cancelar. Cancele quando quiser na App Store ou no Google Play, até 24 horas antes da renovação.",
   "paywallBestValue": "Melhor valor",
+  "paywallBillingIssue": "Houve um problema no pagamento. Atualize na loja para não perder o acesso.",
   "paywallBuyOnce": "Comprar",
   "paywallCancelAnytime": "Cancele quando quiser.",
+  "paywallEndsOn": "Cancelada. Seu acesso vai até {date}.",
+  "@paywallEndsOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
   "paywallFreeForever": "Bíblia, cenas, os 3 modos e a liga continuam grátis. Sempre.",
   "paywallHeadline": "Caminhe com mais constância",
   "paywallLaunchFreeBody": "Tudo do Peregrino+ liberado até {date}. Depois, você decide se quer continuar.",
@@ -3970,6 +3979,9 @@
     }
   },
   "paywallLaunchFreeTitle": "Grátis no lançamento",
+  "paywallLifetimeActive": "Vitalício: não expira.",
+  "paywallManage": "Gerenciar assinatura",
+  "paywallManageHint": "Mudar de plano ou cancelar é na App Store ou no Google Play.",
   "paywallPerkBadgeBody": "No seu perfil, para a Caravana ver.",
   "paywallPerkBadgeTitle": "Selo de apoiador",
   "paywallPerkReinforceBody": "Seu acerto por modo e gesto, e perguntas do que você mais erra.",
@@ -4034,6 +4046,14 @@
     }
   },
   "paywallPurchaseFailed": "Não foi possível concluir a compra.",
+  "paywallRenewsOn": "Renova em {date}.",
+  "@paywallRenewsOn": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
   "paywallRestore": "Restaurar compra",
   "paywallRestoreFailed": "Não foi possível restaurar a compra.",
   "paywallSave": "Economize {percent}%",
@@ -4097,7 +4117,16 @@
       }
     }
   },
+  "paywallTrialUntil": "Teste grátis até {date}. Depois, renova sozinho.",
+  "@paywallTrialUntil": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
   "paywallUnavailable": "Assinatura ainda não disponível nesta versão.",
+  "paywallYourPlan": "Seu plano",
   "pilgrimAccuracyForming": "Ainda em formação",
   "pilgrimAccuracyGood": "Boa compreensão nas cenas",
   "pilgrimAccuracySharp": "Leitura afiada das Escrituras",

@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../l10n/l10n_global.dart';
 import 'analytics_service.dart';
@@ -40,6 +41,16 @@ class SubscriptionService extends ChangeNotifier {
 
   /// Já fez alguma compra de apoio (não libera nada, só o selo).
   bool isSupporter = false;
+
+  /// Assinatura ativa — para "Seu plano" e "Gerenciar assinatura".
+  String? plusProductId;
+  DateTime? plusExpiresAt;
+  bool plusWillRenew = false;
+  bool plusInTrial = false;
+  bool plusBillingIssue = false;
+
+  /// Link da loja para mudar de plano ou cancelar (RevenueCat).
+  String? managementUrl;
   List<Package> availablePackages = const [];
   List<Package> supportPackages = const [];
 
@@ -166,6 +177,12 @@ class SubscriptionService extends ChangeNotifier {
     final entitlement = info.entitlements.active[_entitlementId];
     final badgeBefore = hasBadge;
     isPeregrinoPlus = entitlement != null;
+    plusProductId = entitlement?.productIdentifier;
+    plusExpiresAt = DateTime.tryParse(entitlement?.expirationDate ?? '');
+    plusWillRenew = entitlement?.willRenew ?? false;
+    plusInTrial = entitlement?.periodType == PeriodType.trial;
+    plusBillingIssue = entitlement?.billingIssueDetectedAt != null;
+    managementUrl = info.managementURL;
     isSupporter = info.nonSubscriptionTransactions.any(
       (t) => t.productIdentifier.startsWith(_supportProductPrefix),
     );
@@ -190,7 +207,7 @@ class SubscriptionService extends ChangeNotifier {
   Future<bool> purchase(Package package) async {
     lastError = null;
     if (_debugFakeStore) {
-      return _debugFakePurchase(() => isPeregrinoPlus = true);
+      return _debugFakePurchase(() => _debugGrantPlus(package));
     }
     loading = true;
     notifyListeners();
@@ -281,6 +298,29 @@ class SubscriptionService extends ChangeNotifier {
     }
   }
 
+  /// Vitalício: assinatura ativa sem data de fim.
+  bool get plusLifetime => isPeregrinoPlus && plusExpiresAt == null;
+
+  /// Tipo do plano ativo (anual, mensal…), pelo produto da oferta.
+  PackageType? get plusPackageType => availablePackages
+      .where((p) => p.storeProduct.identifier == plusProductId)
+      .firstOrNull
+      ?.packageType;
+
+  /// Abre a tela da loja para mudar de plano ou cancelar.
+  Future<void> openManagement() async {
+    final url =
+        managementUrl ??
+        (defaultTargetPlatform == TargetPlatform.iOS
+            ? 'https://apps.apple.com/account/subscriptions'
+            : 'https://play.google.com/store/account/subscriptions');
+    try {
+      await launchUrl(Uri.parse(url), mode: LaunchMode.externalApplication);
+    } catch (e) {
+      debugPrint('Falha ao abrir gerenciamento da assinatura: $e');
+    }
+  }
+
   /// Plano anual da oferta atual, se houver.
   Package? get annualPackage => availablePackages
       .where((p) => p.packageType == PackageType.annual)
@@ -332,11 +372,39 @@ class SubscriptionService extends ChangeNotifier {
   bool get debugFakeStore => _debugFakeStore;
   bool get debugPromoOverride => _debugPromoOverride;
 
+  /// Preenche o plano simulado como a loja faria.
+  void _debugGrantPlus(Package? package) {
+    isPeregrinoPlus = true;
+    final type = package?.packageType ?? PackageType.annual;
+    final trial = package == null ? null : trialDays(package);
+    plusProductId = package?.storeProduct.identifier ?? 'plus_annual';
+    plusInTrial = trial != null;
+    plusWillRenew = type != PackageType.lifetime;
+    plusBillingIssue = false;
+    final now = DateTime.now();
+    plusExpiresAt = switch (type) {
+      PackageType.lifetime => null,
+      _ when trial != null => now.add(Duration(days: trial)),
+      PackageType.monthly => DateTime(now.year, now.month + 1, now.day),
+      _ => DateTime(now.year + 1, now.month, now.day),
+    };
+  }
+
   /// Assinante simulado (sem loja).
   void debugSetPlus(bool value) {
     if (!kDebugMode) return;
     final before = hasBadge;
-    isPeregrinoPlus = value;
+    if (value) {
+      _debugGrantPlus(
+        availablePackages
+            .where((p) => p.packageType == PackageType.annual)
+            .firstOrNull,
+      );
+    } else {
+      isPeregrinoPlus = false;
+      plusProductId = null;
+      plusExpiresAt = null;
+    }
     unawaited(_debugSave());
     notifyListeners();
     if (hasBadge != before) onBadgeChanged?.call(hasBadge);
@@ -400,7 +468,6 @@ class SubscriptionService extends ChangeNotifier {
       for (final e in raw)
         if (e.contains('=')) e.split('=').first: e.split('=').last,
     };
-    isPeregrinoPlus = m['plus'] == 'true';
     isSupporter = m['supporter'] == 'true';
     _debugPromoOverride = m['promo'] == 'true';
     _debugPromoUntil = DateTime.tryParse(m['until'] ?? '');
@@ -409,6 +476,7 @@ class SubscriptionService extends ChangeNotifier {
       availablePackages = _debugPlans();
       supportPackages = _debugSupport();
     }
+    if (m['plus'] == 'true') _debugGrantPlus(annualPackage);
     notifyListeners();
   }
 

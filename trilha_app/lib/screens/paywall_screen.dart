@@ -165,6 +165,10 @@ class _PaywallScreenState extends State<PaywallScreen> {
                     style: AppTypography.body(size: 14, color: a.textSecondary),
                   ),
                   const SizedBox(height: AppSpace.xl),
+                  if (paid) ...[
+                    _YourPlan(sub: sub),
+                    const SizedBox(height: AppSpace.lg),
+                  ],
                   const PlusPerkCard(detailed: true),
                   const SizedBox(height: AppSpace.md),
                   const _FreeForever(),
@@ -602,6 +606,78 @@ class _BuyBar extends StatelessWidget {
             ],
           ],
         ),
+      ),
+    );
+  }
+}
+
+/// Assinante: qual plano, até quando, e o caminho para mudar ou cancelar.
+class _YourPlan extends StatelessWidget {
+  final SubscriptionService sub;
+
+  const _YourPlan({required this.sub});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final l10n = context.l10n;
+    final until = sub.plusExpiresAt;
+    final date = until == null
+        ? ''
+        : DateFormat.yMMMd(l10n.localeName).format(until.toLocal());
+    final plan = switch (sub.plusPackageType) {
+      PackageType.annual => l10n.paywallPlanAnnual,
+      PackageType.monthly => l10n.paywallPlanMonthly,
+      PackageType.lifetime => l10n.paywallPlanLifetime,
+      _ => sub.plusLifetime ? l10n.paywallPlanLifetime : l10n.paywallTitle,
+    };
+    final status = sub.plusBillingIssue
+        ? l10n.paywallBillingIssue
+        : sub.plusLifetime
+        ? l10n.paywallLifetimeActive
+        : sub.plusInTrial
+        ? l10n.paywallTrialUntil(date)
+        : sub.plusWillRenew
+        ? l10n.paywallRenewsOn(date)
+        : l10n.paywallEndsOn(date);
+
+    return GlassCard(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Text(
+            l10n.paywallYourPlan.toUpperCase(),
+            style: AppTypography.body(
+              size: 12,
+              weight: FontWeight.w800,
+              color: AppRoles.reward,
+            ),
+          ),
+          const SizedBox(height: AppSpace.sm),
+          Text(plan, style: AppTypography.title(size: 18, color: a.text)),
+          const SizedBox(height: 2),
+          Text(
+            status,
+            style: AppTypography.body(
+              size: 13,
+              color: sub.plusBillingIssue ? AppRoles.risk : a.textSecondary,
+            ),
+          ),
+          if (!sub.plusLifetime) ...[
+            const SizedBox(height: AppSpace.md),
+            GhostCta(
+              label: l10n.paywallManage,
+              expanded: true,
+              onTap: sub.openManagement,
+            ),
+            const SizedBox(height: 6),
+            Text(
+              l10n.paywallManageHint,
+              textAlign: TextAlign.center,
+              style: AppTypography.body(size: 11, color: a.textFaint),
+            ),
+          ],
+        ],
       ),
     );
   }

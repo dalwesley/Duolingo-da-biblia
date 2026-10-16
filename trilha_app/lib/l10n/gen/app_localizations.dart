@@ -8763,6 +8763,12 @@ abstract class AppLocalizations {
   /// **'Melhor valor'**
   String get paywallBestValue;
 
+  /// No description provided for @paywallBillingIssue.
+  ///
+  /// In pt, this message translates to:
+  /// **'Houve um problema no pagamento. Atualize na loja para não perder o acesso.'**
+  String get paywallBillingIssue;
+
   /// No description provided for @paywallBuyOnce.
   ///
   /// In pt, this message translates to:
@@ -8774,6 +8780,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Cancele quando quiser.'**
   String get paywallCancelAnytime;
+
+  /// No description provided for @paywallEndsOn.
+  ///
+  /// In pt, this message translates to:
+  /// **'Cancelada. Seu acesso vai até {date}.'**
+  String paywallEndsOn(String date);
 
   /// No description provided for @paywallFreeForever.
   ///
@@ -8798,6 +8810,24 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Grátis no lançamento'**
   String get paywallLaunchFreeTitle;
+
+  /// No description provided for @paywallLifetimeActive.
+  ///
+  /// In pt, this message translates to:
+  /// **'Vitalício: não expira.'**
+  String get paywallLifetimeActive;
+
+  /// No description provided for @paywallManage.
+  ///
+  /// In pt, this message translates to:
+  /// **'Gerenciar assinatura'**
+  String get paywallManage;
+
+  /// No description provided for @paywallManageHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mudar de plano ou cancelar é na App Store ou no Google Play.'**
+  String get paywallManageHint;
 
   /// No description provided for @paywallPerkBadgeBody.
   ///
@@ -8913,6 +8943,12 @@ abstract class AppLocalizations {
   /// **'Não foi possível concluir a compra.'**
   String get paywallPurchaseFailed;
 
+  /// No description provided for @paywallRenewsOn.
+  ///
+  /// In pt, this message translates to:
+  /// **'Renova em {date}.'**
+  String paywallRenewsOn(String date);
+
   /// No description provided for @paywallRestore.
   ///
   /// In pt, this message translates to:
@@ -9003,11 +9039,23 @@ abstract class AppLocalizations {
   /// **'{count, plural, =1{1 dia grátis, depois {price}.} other{{count} dias grátis, depois {price}.}}'**
   String paywallTrialThen(int count, String price);
 
+  /// No description provided for @paywallTrialUntil.
+  ///
+  /// In pt, this message translates to:
+  /// **'Teste grátis até {date}. Depois, renova sozinho.'**
+  String paywallTrialUntil(String date);
+
   /// No description provided for @paywallUnavailable.
   ///
   /// In pt, this message translates to:
   /// **'Assinatura ainda não disponível nesta versão.'**
   String get paywallUnavailable;
+
+  /// No description provided for @paywallYourPlan.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu plano'**
+  String get paywallYourPlan;
 
   /// No description provided for @pilgrimAccuracyForming.
   ///
