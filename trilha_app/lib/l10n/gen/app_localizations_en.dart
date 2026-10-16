@@ -5683,7 +5683,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get paywallPitch =>
-      'Your support keeps Stway free for those who can\'t pay.';
+      'Your support keeps Stway free for those who can\'t pay.\nAnd you also get the benefits below.';
 
   @override
   String get paywallPlanAnnual => 'Annual';

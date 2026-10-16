@@ -8850,7 +8850,7 @@ abstract class AppLocalizations {
   /// No description provided for @paywallPitch.
   ///
   /// In pt, this message translates to:
-  /// **'Seu apoio mantém o Stway grátis para quem não pode pagar.'**
+  /// **'Seu apoio mantém o Stway grátis para quem não pode pagar.\nE você ainda ganha os benefícios abaixo.'**
   String get paywallPitch;
 
   /// No description provided for @paywallPlanAnnual.
