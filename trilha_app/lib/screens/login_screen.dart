@@ -17,6 +17,7 @@ import '../widgets/immersive_background.dart';
 import '../widgets/stway_brand.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/coming_soon_trails_card.dart';
+import '../widgets/cloud_mascot.dart';
 import '../widgets/ui_primitives.dart';
 import 'main_shell.dart';
 import 'onboarding_screen.dart';
@@ -197,17 +198,25 @@ class _LoginScreenState extends State<LoginScreen> {
               const Spacer(flex: 2),
               const Center(child: StwayLogo(size: 88)),
               const SizedBox(height: AppSpace.xxl),
-              const Center(
-                child: StwayWordmark(fontSize: 48, letterSpacing: 6),
+              Center(
+                child: StwayWordmark(
+                  fontSize: 48,
+                  letterSpacing: 6,
+                  letterColor: a.text,
+                ),
               ),
               const SizedBox(height: 14),
               const StwayTagline(size: 11),
               if (preparing) ...[
-                const SizedBox(height: AppSpace.xxl),
+                const SizedBox(height: AppSpace.xl),
+                const Center(
+                  child: CloudMascot(face: CloudFace.carregando, size: 88),
+                ),
+                const SizedBox(height: AppSpace.md),
                 Text(
                   context.l10n.splashPreparing,
                   textAlign: TextAlign.center,
-                  style: AppTypography.display(size: 28),
+                  style: AppTypography.display(size: 28, color: a.text),
                 ),
                 const SizedBox(height: AppSpace.md),
                 Text(

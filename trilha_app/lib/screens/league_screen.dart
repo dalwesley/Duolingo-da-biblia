@@ -41,6 +41,7 @@ import '../widgets/icon_well.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/invite_qr_sheet.dart';
 import '../widgets/shell_tab_scope.dart';
+import '../widgets/cloud_mascot.dart';
 import '../widgets/ui_primitives.dart';
 import '../widgets/user_avatar.dart';
 import '../widgets/recognition_actions.dart';
@@ -1737,12 +1738,12 @@ class _ExplainerSteps extends StatelessWidget {
                       children: [
                         IconWell(
                           size: well,
-                          accent: i == mid ? accent : AppRoles.chrome,
+                          accent: i == mid ? accent : a.chrome,
                           glowing: i == mid,
                           child: CinematicIcon(
                             glyph: steps[i].$1,
                             size: AppMetrics.iconMd,
-                            accent: i == mid ? accent : AppRoles.chrome,
+                            accent: i == mid ? accent : a.chrome,
                             framed: false,
                           ),
                         ),
@@ -1862,7 +1863,10 @@ class _RoomsOfflineCard extends StatelessWidget {
     return GlassCard(
       padding: EdgeInsets.zero,
       child: EmptyState(
-        glyph: CinematicGlyph.people,
+        mark: CloudMascot(
+          face: loading ? CloudFace.carregando : CloudFace.erro,
+          size: 96,
+        ),
         title: context.l10n.juntosRoomsOfflineTitle,
         body: error ?? context.l10n.juntosRoomsOfflineBody,
         action: Column(
@@ -1988,13 +1992,13 @@ class _RoomsEmptyState extends StatelessWidget {
   }
 }
 
-/// Roda de lugares em volta de uma lâmpada — o grupo antes de ter gente.
+/// Roda de lugares em volta do Anan — o grupo antes de ter gente.
 class _CircleOfSeats extends StatelessWidget {
   const _CircleOfSeats();
 
   @override
   Widget build(BuildContext context) {
-    const size = 120.0;
+    const size = 140.0;
     const seat = 22.0;
     const n = 6;
     final a = Appearance.of(context);
@@ -2010,21 +2014,14 @@ class _CircleOfSeats extends StatelessWidget {
                   shape: BoxShape.circle,
                   gradient: RadialGradient(
                     colors: [
-                      AppRoles.chrome.withValues(alpha: 0.18),
+                      a.chrome.withValues(alpha: 0.18),
                       Colors.transparent,
                     ],
                   ),
                 ),
               ),
             ),
-            const Center(
-              child: CinematicIcon(
-                glyph: CinematicGlyph.lamp,
-                size: AppMetrics.leadingIcon,
-                accent: AppRoles.chrome,
-                glowing: true,
-              ),
-            ),
+            const Center(child: CloudMascot(face: CloudFace.triste, size: 76)),
             for (var i = 0; i < n; i++)
               Positioned(
                 left:
@@ -2044,10 +2041,10 @@ class _CircleOfSeats extends StatelessWidget {
                     shape: BoxShape.circle,
                     // O primeiro lugar é você — a mesma marca de "você" das listas.
                     color: i == 0
-                        ? AppRoles.selected.withValues(alpha: 0.85)
+                        ? a.selected.withValues(alpha: 0.85)
                         : a.insetFill,
                     border: Border.all(
-                      color: i == 0 ? AppRoles.selected : a.cardBorder,
+                      color: i == 0 ? a.selected : a.cardBorder,
                     ),
                   ),
                 ),
@@ -2083,7 +2080,7 @@ class _RoomBenefit extends StatelessWidget {
             CinematicIcon(
               glyph: glyph,
               size: AppMetrics.iconMd,
-              accent: AppRoles.chrome,
+              accent: a.chrome,
               framed: false,
             ),
             const SizedBox(height: 5),
@@ -2212,7 +2209,7 @@ class _RoomHearth extends StatelessWidget {
               CinematicIcon(
                 glyph: room.kind.glyph,
                 size: AppMetrics.iconSm,
-                accent: AppRoles.chrome,
+                accent: a.chrome,
                 framed: false,
               ),
               const SizedBox(width: 6),
@@ -2220,7 +2217,7 @@ class _RoomHearth extends StatelessWidget {
               const SizedBox(width: AppSpace.sm),
               SoftBadge(
                 text: closesText,
-                accent: days <= 1 ? AppRoles.risk : AppRoles.chrome,
+                accent: days <= 1 ? AppRoles.risk : a.chrome,
               ),
               const Spacer(),
               _MenuButton(tooltip: l10n.juntosRoomOptions, onTap: onMenu),
@@ -2481,9 +2478,7 @@ class _TextInputDialogState extends State<_TextInputDialog> {
           ),
           focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(AppRadii.md),
-            borderSide: BorderSide(
-              color: AppRoles.selected.withValues(alpha: 0.7),
-            ),
+            borderSide: BorderSide(color: a.selected.withValues(alpha: 0.7)),
           ),
         ),
         onSubmitted: (_) => _submit(),
@@ -2782,12 +2777,6 @@ class _CaravanOnlineSheet extends StatelessWidget {
               return Padding(
                 padding: const EdgeInsets.fromLTRB(12, 0, 12, 8),
                 child: AppSheetHeader(
-                  leading: const CinematicIcon(
-                    glyph: CinematicGlyph.people,
-                    size: AppMetrics.leadingIcon,
-                    accent: AppRoles.presence,
-                    glowing: true,
-                  ),
                   title: context.l10n.juntosStudyingNow,
                   subtitle: subtitle,
                 ),
@@ -2837,7 +2826,7 @@ class _OnlineSheetRow extends StatelessWidget {
         child: Container(
           margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 2),
           padding: const EdgeInsets.fromLTRB(8, 10, 10, 10),
-          decoration: _youRowDecoration(entry.isUser),
+          decoration: _youRowDecoration(entry.isUser, a),
           child: Row(
             children: [
               _RankMark(rank: rank),
@@ -3017,7 +3006,7 @@ class _StandingRow extends StatelessWidget {
           margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 2),
           padding: const EdgeInsets.fromLTRB(8, 12, 10, 12),
           decoration: entry.isUser
-              ? _youRowDecoration(true)
+              ? _youRowDecoration(true, a)
               : BoxDecoration(
                   color: medal?.withValues(alpha: 0.07),
                   borderRadius: BorderRadius.circular(AppRadii.md),
@@ -3182,12 +3171,12 @@ class _MedalDisc extends StatelessWidget {
 
 /// "Você" na lista — a mesma marca em Caravana, Grupos e na folha de quem
 /// está online: fundo claro a 0.08 e contorno a 0.4 (nunca placa dourada).
-BoxDecoration? _youRowDecoration(bool isUser) {
+BoxDecoration? _youRowDecoration(bool isUser, AppearanceStyle a) {
   if (!isUser) return null;
   return BoxDecoration(
-    color: AppRoles.selected.withValues(alpha: 0.08),
+    color: a.selected.withValues(alpha: 0.08),
     borderRadius: BorderRadius.circular(AppRadii.md),
-    border: Border.all(color: AppRoles.selected.withValues(alpha: 0.4)),
+    border: Border.all(color: a.selected.withValues(alpha: 0.4)),
   );
 }
 
@@ -3316,7 +3305,10 @@ class _CompanionsOfflineCard extends StatelessWidget {
     return GlassCard(
       padding: EdgeInsets.zero,
       child: EmptyState(
-        glyph: CinematicGlyph.link,
+        mark: CloudMascot(
+          face: loading ? CloudFace.carregando : CloudFace.erro,
+          size: 96,
+        ),
         title: context.l10n.juntosCompanionsOfflineTitle,
         body: error ?? context.l10n.juntosCompanionsOfflineBody,
         action: CopperCta(
@@ -3369,12 +3361,7 @@ class _CompanionsEmpty extends StatelessWidget {
                 seed: myUid ?? name,
                 style: progress.settings.portraitStyle,
               ),
-              const Expanded(
-                child: SizedBox(
-                  height: 76,
-                  child: Center(child: BondThread(state: BondState.none)),
-                ),
-              ),
+              const Expanded(child: _WaitingThread(face: CloudFace.triste)),
               const _EmptySeat(),
             ],
           ),
@@ -3605,7 +3592,7 @@ class _BondMember extends StatelessWidget {
     Widget avatar = UserAvatar(
       name: name,
       radius: AppMetrics.avatarLg,
-      borderColor: isUser ? AppRoles.selected.withValues(alpha: 0.55) : null,
+      borderColor: isUser ? a.selected.withValues(alpha: 0.55) : null,
       photoUrl: photoUrl,
       seed: seed ?? name,
       style: style,
@@ -3749,12 +3736,7 @@ class _OpenInviteStage extends StatelessWidget {
                 seed: mySeed,
                 style: myStyle,
               ),
-              const Expanded(
-                child: SizedBox(
-                  height: 76,
-                  child: Center(child: BondThread(state: BondState.none)),
-                ),
-              ),
+              const Expanded(child: _WaitingThread(face: CloudFace.carregando)),
               const _EmptySeat(),
             ],
           ),
@@ -3782,6 +3764,28 @@ class _OpenInviteStage extends StatelessWidget {
               onTap: onLeave,
             ),
           ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Fio ainda apagado entre você e o lugar vazio, com o Anan no meio:
+/// triste sem companhia; esperando (carregando) com o convite aberto.
+class _WaitingThread extends StatelessWidget {
+  final CloudFace face;
+
+  const _WaitingThread({required this.face});
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      height: 76,
+      child: Stack(
+        alignment: Alignment.center,
+        children: [
+          const BondThread(state: BondState.none),
+          CloudMascot(face: face, size: 68),
         ],
       ),
     );
@@ -4143,7 +4147,7 @@ class _WeekDot extends StatelessWidget {
                     ? Colors.transparent
                     : style.text.withValues(alpha: 0.07),
                 border: isToday
-                    ? AppRoles.selected
+                    ? style.selected
                     : future
                     ? style.text.withValues(alpha: 0.08)
                     : Colors.transparent,
@@ -4441,7 +4445,10 @@ class _MilestoneNode extends StatelessWidget {
           reached: reached,
           current: current,
           arc: arc,
-          track: style.cardBorder.withValues(alpha: 0.7),
+          // Nó atual: anel na cor de seleção do tema.
+          track: current
+              ? style.selected
+              : style.cardBorder.withValues(alpha: 0.7),
           empty: style.cardFillSoft,
         ),
         child: reached
@@ -4489,7 +4496,7 @@ class _MilestoneNodePainter extends CustomPainter {
       Paint()
         ..style = PaintingStyle.stroke
         ..strokeWidth = current ? 1.8 : 1.1
-        ..color = current ? AppRoles.selected : track,
+        ..color = track,
     );
     if (current && arc > 0.01) {
       canvas.drawArc(
@@ -4531,10 +4538,10 @@ class _IncomingNudgeBanner extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(12, 10, 12, 10),
       child: Row(
         children: [
-          const CinematicIcon(
+          CinematicIcon(
             glyph: CinematicGlyph.lamp,
             size: AppMetrics.iconLg,
-            accent: AppRoles.chrome,
+            accent: a.chrome,
             framed: false,
             glowing: true,
           ),
@@ -4578,7 +4585,6 @@ class _CaravanEmptyCard extends StatelessWidget {
     return GlassCard(
       padding: EdgeInsets.zero,
       child: EmptyState(
-        glyph: CinematicGlyph.people,
         title: context.l10n.juntosCaravanEmptyTitle,
         body: context.l10n.juntosCaravanEmptyBody,
       ),

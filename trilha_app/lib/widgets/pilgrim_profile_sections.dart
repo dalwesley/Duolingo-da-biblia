@@ -42,12 +42,13 @@ String pilgrimShortStopLabel(String title) {
   return t;
 }
 
-Color pilgrimRankAccent(int rank) => switch (rank) {
-  1 => AppColors.medalGold,
-  2 => AppColors.medalSilver,
-  3 => AppColors.medalBronze,
-  _ => AppRoles.chrome,
-};
+Color pilgrimRankAccent(int rank, {Color fallback = AppRoles.chrome}) =>
+    switch (rank) {
+      1 => AppColors.medalGold,
+      2 => AppColors.medalSilver,
+      3 => AppColors.medalBronze,
+      _ => fallback,
+    };
 
 String pilgrimFormatDate(String? yyyyMmDd, {String empty = '—'}) {
   if (yyyyMmDd == null || yyyyMmDd.isEmpty) return empty;
@@ -407,7 +408,7 @@ class PilgrimMeRankHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final rankColor = pilgrimRankAccent(rank);
+    final rankColor = pilgrimRankAccent(rank, fallback: a.chrome);
     return RelicPanel(
       accent: rankColor,
       elevated: rank <= 3,
@@ -700,7 +701,7 @@ class PilgrimPrecisionArc extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     // Acerto alto = sucesso; abaixo disso, neutro (formando, não erro).
-    final tone = percent >= 80 ? AppRoles.success : AppRoles.chrome;
+    final tone = percent >= 80 ? AppRoles.success : a.chrome;
     final ring = stat
         ? 44.0
         : compact
@@ -940,7 +941,7 @@ class PilgrimTrailPath extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final complete = trail.isComplete;
-    final accent = complete ? AppRoles.success : AppRoles.chrome;
+    final accent = complete ? AppRoles.success : a.chrome;
     final l10n = context.l10n;
     final subtitle = trail.description.trim().isEmpty
         ? l10n.pilgrimScenesOf(trail.missionsDone, trail.missionsTotal)
@@ -1051,13 +1052,16 @@ class _OpenTrailRow extends StatelessWidget {
           ),
           const SizedBox(height: 3),
           Text(
-            context.l10n.pilgrimScenesOf(trail.missionsDone, trail.missionsTotal),
+            context.l10n.pilgrimScenesOf(
+              trail.missionsDone,
+              trail.missionsTotal,
+            ),
             style: AppTypography.body(size: 12, color: a.textFaint),
           ),
           const SizedBox(height: 8),
           AppProgressBar(
             value: trail.progress,
-            color: trail.isComplete ? AppRoles.success : AppRoles.chrome,
+            color: trail.isComplete ? AppRoles.success : a.chrome,
             height: 6,
           ),
         ],
@@ -1387,9 +1391,9 @@ class PilgrimOwnerPrivacyBanner extends StatelessWidget {
         ),
         child: Row(
           children: [
-            const CinematicIcon(
+            CinematicIcon(
               glyph: CinematicGlyph.tune,
-              accent: AppRoles.chrome,
+              accent: a.chrome,
               size: AppMetrics.leadingIcon,
             ),
             const SizedBox(width: AppSpace.md),

@@ -219,6 +219,7 @@ class MedalHaloRing extends StatelessWidget {
         painter: _MedalRingPainter(
           progress: progress,
           accent: accent,
+          track: Appearance.of(context).progressTrack,
           stroke: stroke,
         ),
         child: child == null ? null : Center(child: child),
@@ -230,11 +231,13 @@ class MedalHaloRing extends StatelessWidget {
 class _MedalRingPainter extends CustomPainter {
   final double progress;
   final Color accent;
+  final Color track;
   final double stroke;
 
   _MedalRingPainter({
     required this.progress,
     required this.accent,
+    required this.track,
     this.stroke = 5,
   });
 
@@ -243,12 +246,12 @@ class _MedalRingPainter extends CustomPainter {
     final center = Offset(size.width / 2, size.height / 2);
     final radius = size.width / 2 - stroke;
 
-    final track = Paint()
-      ..color = AppColors.textOnDark.withValues(alpha: 0.08)
+    final trackPaint = Paint()
+      ..color = track
       ..style = PaintingStyle.stroke
       ..strokeWidth = stroke
       ..strokeCap = StrokeCap.round;
-    canvas.drawCircle(center, radius, track);
+    canvas.drawCircle(center, radius, trackPaint);
 
     if (progress <= 0) return;
 
@@ -278,7 +281,10 @@ class _MedalRingPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant _MedalRingPainter old) =>
-      old.progress != progress || old.accent != accent || old.stroke != stroke;
+      old.progress != progress ||
+      old.accent != accent ||
+      old.track != track ||
+      old.stroke != stroke;
 }
 
 /// Medallion compacto para o grid do cofre — moeda metálica por material.

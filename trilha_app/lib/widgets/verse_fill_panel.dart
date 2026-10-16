@@ -560,6 +560,7 @@ class _VerseStage extends StatelessWidget {
       size: compact ? 20 : 22,
       weight: FontWeight.w600,
       height: 1.55,
+      color: Appearance.of(context).text,
     );
 
     final chosen = [
@@ -699,7 +700,7 @@ class _BlankSlot extends StatelessWidget {
     if (!filled) {
       final lineColor = active
           ? accent
-          : AppColors.textOnDark.withValues(alpha: 0.4);
+          : Appearance.of(context).text.withValues(alpha: 0.4);
       slot = SizedBox(
         width: minW,
         height: fontSize * 1.45,

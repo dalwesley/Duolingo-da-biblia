@@ -114,9 +114,7 @@ class SeasonChallengeBanner extends StatelessWidget {
             AppProgressBar(value: track.progress, color: accent, height: 6),
             const SizedBox(height: 6),
             Text(
-              l10n.seasonChallengePathPercent(
-                (track.progress * 100).round(),
-              ),
+              l10n.seasonChallengePathPercent((track.progress * 100).round()),
               style: AppTypography.body(
                 size: 12,
                 weight: FontWeight.w700,
@@ -158,7 +156,7 @@ class _SeasonQuietCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final accent = done ? AppRoles.success : AppRoles.chrome;
+    final accent = done ? AppRoles.success : a.chrome;
     return GlassCard(
       elevated: true,
       padding: AppMetrics.cardPadding,

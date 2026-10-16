@@ -199,11 +199,9 @@ class _RosterRow extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 8),
           decoration: member.isUser
               ? BoxDecoration(
-                  color: AppRoles.selected.withValues(alpha: 0.08),
+                  color: a.selected.withValues(alpha: 0.08),
                   borderRadius: BorderRadius.circular(AppRadii.md),
-                  border: Border.all(
-                    color: AppRoles.selected.withValues(alpha: 0.4),
-                  ),
+                  border: Border.all(color: a.selected.withValues(alpha: 0.4)),
                 )
               : null,
           child: Row(
@@ -217,12 +215,12 @@ class _RosterRow extends StatelessWidget {
                     Center(child: face),
                     // Coroa = dono do grupo (papel, não prêmio): chrome.
                     if (isLeader)
-                      const Positioned(
+                      Positioned(
                         right: -2,
                         bottom: -2,
                         child: _Badge(
-                          color: AppColors.nightElevated,
-                          ink: AppRoles.chrome,
+                          color: a.cardFill,
+                          ink: a.chrome,
                           glyph: CinematicGlyph.crown,
                         ),
                       ),
@@ -426,7 +424,7 @@ class _Badge extends StatelessWidget {
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         color: color,
-        border: Border.all(color: AppColors.night, width: 1.6),
+        border: Border.all(color: Appearance.of(context).cardFill, width: 1.6),
       ),
       child: Center(
         child: CinematicIcon(

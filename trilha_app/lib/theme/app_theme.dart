@@ -10,6 +10,7 @@ export 'app_transitions.dart';
 import 'app_colors.dart';
 import 'app_light.dart';
 import 'app_transitions.dart';
+import '../utils/appearance.dart';
 
 /// Tema STWAY — tipografia, raios, espaçamento e ThemeData.
 /// Cores: ver [AppColors] em `app_colors.dart` (fonte única).
@@ -278,30 +279,55 @@ class AppSpace {
 }
 
 class AppTheme {
-  static ThemeData get dark {
+  static ThemeData get dark =>
+      forStyle(AppearanceStyle.resolve(AppearanceMode.night));
+
+  static ThemeData get light =>
+      forStyle(AppearanceStyle.resolve(AppearanceMode.morning));
+
+  /// Material segue a aparência inteira (Claro, Médio, Escuro) — campos,
+  /// foco, spinner e snackbar não ficam presos ao papel escuro no Médio.
+  static ThemeData forStyle(AppearanceStyle style) =>
+      _byLook[style.look] ??= _build(style);
+
+  static final Map<AppearanceLook, ThemeData> _byLook = {};
+
+  static ThemeData _build(AppearanceStyle style) {
+    final light = !style.onDark;
+    final ink = style.text;
+    final surface = style.cardFill;
+    final card = style.cardFill;
+    final field = light ? style.insetFill : style.cardFillSoft;
+    final hairline = light
+        ? AppColors.text.withValues(alpha: 0.12)
+        : Colors.white12;
     final base = ThemeData(
       useMaterial3: true,
-      brightness: Brightness.dark,
-      colorScheme: const ColorScheme.dark(
-        primary: AppColors.primaryLight,
-        secondary: AppColors.accent,
-        surface: AppColors.nightMid,
-        onSurface: AppColors.textOnDark,
+      brightness: light ? Brightness.light : Brightness.dark,
+      colorScheme: ColorScheme(
+        brightness: light ? Brightness.light : Brightness.dark,
+        primary: light ? AppColors.primary : AppColors.primaryLight,
         onPrimary: AppColors.textOnDark,
+        secondary: AppColors.accent,
         onSecondary: AppColors.inkOnAccent,
         error: AppColors.error,
+        onError: AppColors.textOnDark,
+        surface: surface,
+        onSurface: ink,
         tertiary: AppColors.teal,
+        onTertiary: AppColors.textOnDark,
       ),
-      scaffoldBackgroundColor: AppColors.night,
-      cardColor: AppColors.nightLight,
-      dividerColor: Colors.white12,
-      canvasColor: AppColors.nightMid,
+      scaffoldBackgroundColor: light
+          ? const Color(0xFF6AABDE)
+          : AppColors.night,
+      cardColor: card,
+      dividerColor: hairline,
+      canvasColor: surface,
     );
 
-    final bodyTheme = GoogleFonts.nunitoTextTheme(base.textTheme).apply(
-      bodyColor: AppColors.textOnDark,
-      displayColor: AppColors.textOnDark,
-    );
+    final bodyTheme = GoogleFonts.nunitoTextTheme(
+      base.textTheme,
+    ).apply(bodyColor: ink, displayColor: ink);
 
     return base.copyWith(
       // Toda tela empurrada entra como aproximação de câmera. iOS mantém a
@@ -319,43 +345,42 @@ class AppTheme {
       splashFactory: NoSplash.splashFactory,
       splashColor: Colors.transparent,
       highlightColor: Colors.transparent,
-      hoverColor: Colors.white.withValues(alpha: 0.04),
+      hoverColor: (light ? Colors.black : Colors.white).withValues(alpha: 0.04),
+      iconTheme: IconThemeData(color: ink),
       textTheme: bodyTheme.copyWith(
-        displayLarge: AppTypography.display(size: 34),
-        displayMedium: AppTypography.display(size: 28),
-        displaySmall: AppTypography.display(size: 24),
+        displayLarge: AppTypography.display(size: 34, color: ink),
+        displayMedium: AppTypography.display(size: 28, color: ink),
+        displaySmall: AppTypography.display(size: 24, color: ink),
         headlineMedium: AppTypography.display(
           size: 22,
           weight: FontWeight.w700,
+          color: ink,
         ),
-        titleLarge: AppTypography.title(size: 20),
-        titleMedium: AppTypography.title(size: 16),
-        bodyLarge: AppTypography.body(size: 15),
-        bodyMedium: AppTypography.body(size: 14),
-        labelLarge: AppTypography.label(size: 12, color: AppColors.textOnDark),
-        labelSmall: AppTypography.label(),
+        titleLarge: AppTypography.title(size: 20, color: ink),
+        titleMedium: AppTypography.title(size: 16, color: ink),
+        bodyLarge: AppTypography.body(size: 15, color: ink),
+        bodyMedium: AppTypography.body(size: 14, color: ink),
+        labelLarge: AppTypography.label(size: 12, color: ink),
+        labelSmall: AppTypography.label(color: ink),
       ),
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
-        fillColor: AppColors.nightLight,
+        fillColor: field,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(AppRadii.sm),
-          borderSide: BorderSide(color: Colors.white.withValues(alpha: 0.16)),
+          borderSide: BorderSide(color: hairline),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(AppRadii.sm),
-          borderSide: const BorderSide(color: AppRoles.selected, width: 2),
+          borderSide: BorderSide(color: style.selected, width: 2),
         ),
       ),
       cardTheme: CardThemeData(
-        color: AppColors.nightLight,
+        color: card,
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppRadii.lg),
-          side: BorderSide(
-            color: AppColors.textOnDark.withValues(alpha: 0.14),
-            width: 1.5,
-          ),
+          side: BorderSide(color: hairline, width: 1.5),
         ),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
@@ -384,27 +409,25 @@ class AppTheme {
         ),
       ),
       textButtonTheme: TextButtonThemeData(
-        style: TextButton.styleFrom(
-          overlayColor: Colors.white.withValues(alpha: 0.06),
-        ),
+        style: TextButton.styleFrom(overlayColor: ink.withValues(alpha: 0.06)),
       ),
-      progressIndicatorTheme: const ProgressIndicatorThemeData(
-        color: AppRoles.chrome,
-        linearTrackColor: Colors.white12,
+      progressIndicatorTheme: ProgressIndicatorThemeData(
+        color: style.chrome,
+        linearTrackColor: hairline,
       ),
       snackBarTheme: SnackBarThemeData(
         behavior: SnackBarBehavior.floating,
         elevation: 0,
-        backgroundColor: AppColors.nightElevated,
+        backgroundColor: style.cardFillSoft,
         contentTextStyle: AppTypography.body(
           size: 14,
           weight: FontWeight.w800,
-          color: AppColors.textOnDark,
+          color: ink,
         ),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppRadii.md),
           side: BorderSide(
-            color: AppRoles.chrome.withValues(alpha: 0.4),
+            color: style.chrome.withValues(alpha: 0.4),
             width: 1.5,
           ),
         ),

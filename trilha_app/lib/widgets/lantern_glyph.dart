@@ -12,7 +12,8 @@ class LanternGlyph {
     final cx = w * 0.5;
     final ink = Paint()..color = color;
     final soft = Paint()..color = color.withValues(alpha: 0.55);
-    final hot = Paint()..color = Color.lerp(color, const Color(0xFFE8C878), 0.25)!;
+    final hot = Paint()
+      ..color = Color.lerp(color, const Color(0xFFE8C878), 0.25)!;
 
     // Anel superior (fill donut)
     final ringOuter = Path()
@@ -92,7 +93,14 @@ class LanternPainter extends CustomPainter {
   final bool lit;
   final Color color;
 
-  const LanternPainter({required this.lit, required this.color});
+  /// Tinta da lanterna apagada (tema: `a.text`); as alphas vêm daqui.
+  final Color unlitInk;
+
+  const LanternPainter({
+    required this.lit,
+    required this.color,
+    this.unlitInk = Colors.white,
+  });
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -102,13 +110,13 @@ class LanternPainter extends CustomPainter {
 
     final metal = lit
         ? Color.lerp(color, const Color(0xFF8A5A28), 0.25)!
-        : Colors.white.withValues(alpha: 0.42);
+        : unlitInk.withValues(alpha: 0.42);
     final metalHi = lit
         ? Color.lerp(color, const Color(0xFFE8C878), 0.18)!
-        : Colors.white.withValues(alpha: 0.4);
+        : unlitInk.withValues(alpha: 0.4);
     final metalLo = lit
         ? Color.lerp(color, const Color(0xFF3D2208), 0.5)!
-        : Colors.white.withValues(alpha: 0.22);
+        : unlitInk.withValues(alpha: 0.22);
 
     if (lit) {
       canvas.drawOval(
@@ -118,14 +126,15 @@ class LanternPainter extends CustomPainter {
           height: h * 0.55,
         ),
         Paint()
-          ..shader = RadialGradient(
-            colors: [
-              color.withValues(alpha: 0.22),
-              color.withValues(alpha: 0),
-            ],
-          ).createShader(
-            Rect.fromCircle(center: Offset(cx, h * 0.52), radius: w * 0.55),
-          ),
+          ..shader =
+              RadialGradient(
+                colors: [
+                  color.withValues(alpha: 0.22),
+                  color.withValues(alpha: 0),
+                ],
+              ).createShader(
+                Rect.fromCircle(center: Offset(cx, h * 0.52), radius: w * 0.55),
+              ),
       );
     }
 
@@ -172,7 +181,7 @@ class LanternPainter extends CustomPainter {
       Paint()
         ..color = lit
             ? color.withValues(alpha: 0.14)
-            : Colors.white.withValues(alpha: 0.06),
+            : unlitInk.withValues(alpha: 0.06),
     );
     canvas.drawRRect(
       body,
@@ -222,18 +231,19 @@ class LanternPainter extends CustomPainter {
       canvas.drawPath(
         flame,
         Paint()
-          ..shader = LinearGradient(
-            begin: Alignment.bottomCenter,
-            end: Alignment.topCenter,
-            colors: [
-              color,
-              Color.lerp(color, const Color(0xFFE8C878), 0.35)!,
-              Color.lerp(color, const Color(0xFFC99200), 0.15)!,
-            ],
-            stops: const [0, 0.55, 1],
-          ).createShader(
-            Rect.fromLTWH(cx - w * 0.14, h * 0.36, w * 0.28, h * 0.36),
-          ),
+          ..shader =
+              LinearGradient(
+                begin: Alignment.bottomCenter,
+                end: Alignment.topCenter,
+                colors: [
+                  color,
+                  Color.lerp(color, const Color(0xFFE8C878), 0.35)!,
+                  Color.lerp(color, const Color(0xFFC99200), 0.15)!,
+                ],
+                stops: const [0, 0.55, 1],
+              ).createShader(
+                Rect.fromLTWH(cx - w * 0.14, h * 0.36, w * 0.28, h * 0.36),
+              ),
       );
       canvas.drawOval(
         Rect.fromCenter(
@@ -250,12 +260,12 @@ class LanternPainter extends CustomPainter {
         Paint()
           ..strokeWidth = 1.3
           ..strokeCap = StrokeCap.round
-          ..color = Colors.white.withValues(alpha: 0.3),
+          ..color = unlitInk.withValues(alpha: 0.3),
       );
     }
   }
 
   @override
   bool shouldRepaint(covariant LanternPainter old) =>
-      old.lit != lit || old.color != color;
+      old.lit != lit || old.color != color || old.unlitInk != unlitInk;
 }

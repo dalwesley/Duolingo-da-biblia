@@ -458,7 +458,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                           text: widget.text,
                           links: links,
                           selectedPos: _selected?.pos,
-                          accent: AppRoles.selected,
+                          accent: a.selected,
                           onSelectPos: (pos) {
                             for (final t in study.tokens) {
                               if (t.pos == pos) {
@@ -535,7 +535,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
 
   /// Tom do painel da palavra — neutro (chrome) em hebraico e grego; a
   /// língua já aparece na escrita, não precisa de cor própria.
-  Color _langAccent() => AppRoles.chrome;
+  Color _langAccent() => Appearance.of(context).chrome;
 
   TokenStudyView _viewFor(StudyToken token, StrongEntry? entry) {
     return buildTokenStudyView(
@@ -860,7 +860,12 @@ class _StudyTabs extends StatelessWidget {
         accent: AppRoles.presence,
         onChanged: onChanged,
         items: [
-          (label: context.l10n.verseStudyTabWord, glyph: null, mark: null, alert: false),
+          (
+            label: context.l10n.verseStudyTabWord,
+            glyph: null,
+            mark: null,
+            alert: false,
+          ),
           (
             label: occ != null && occ! > 0
                 ? context.l10n.verseStudyTabUsesCount(occ!)
@@ -903,7 +908,7 @@ class _TokenChip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final hebrew = token.strong.toUpperCase().startsWith('H');
-    const accent = AppRoles.selected;
+    final accent = Appearance.of(context).selected;
     final label = gloss.isEmpty ? token.strong : gloss;
     final a = Appearance.of(context);
 
@@ -982,7 +987,6 @@ class _EmptyStudyHint extends StatelessWidget {
     return InsetPanel(
       padding: EdgeInsets.zero,
       child: EmptyState(
-        glyph: CinematicGlyph.scroll,
         title: context.l10n.verseStudyEmptyTitle,
         body: context.l10n.verseStudyEmptyBody,
       ),
@@ -1824,7 +1828,7 @@ class _CrossRefTile extends StatelessWidget {
                       margin: const EdgeInsets.only(right: 3),
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        color: i < dots ? AppRoles.chrome : a.textFaint,
+                        color: i < dots ? a.text : a.textFaint,
                       ),
                     ),
                 ],

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../l10n/app_language.dart';
 import '../models/corner_challenge.dart';
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
 import 'act_feel.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
@@ -28,8 +29,9 @@ class _CornerInviteSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     return AppSheetPanel(
-      tint: AppRoles.chrome,
+      tint: a.chrome,
       padding: const EdgeInsets.fromLTRB(
         AppSpace.xxl,
         AppSpace.md,
@@ -41,12 +43,6 @@ class _CornerInviteSheet extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           AppSheetHeader(
-            leading: const CinematicIcon(
-              glyph: CinematicGlyph.flag,
-              size: AppMetrics.leadingIcon,
-              accent: AppRoles.chrome,
-              glowing: true,
-            ),
             title: CornerCopy.inviteTitle(proposal.missionTitle),
             subtitle: CornerCopy.inviteBody(peerName),
             center: true,

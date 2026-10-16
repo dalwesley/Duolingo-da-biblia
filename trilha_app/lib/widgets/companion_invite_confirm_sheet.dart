@@ -4,7 +4,6 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'act_feel.dart';
 import 'app_sheet.dart';
-import 'cinematic_icon.dart';
 import 'invite_qr_sheet.dart';
 import 'ui_primitives.dart';
 
@@ -27,8 +26,9 @@ class _CompanionInviteConfirmSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     return AppSheetPanel(
-      tint: AppRoles.chrome,
+      tint: a.chrome,
       padding: const EdgeInsets.fromLTRB(
         AppSpace.xxl,
         AppSpace.md,
@@ -40,12 +40,6 @@ class _CompanionInviteConfirmSheet extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           AppSheetHeader(
-            leading: const CinematicIcon(
-              glyph: CinematicGlyph.people,
-              size: AppMetrics.leadingIcon,
-              accent: AppRoles.chrome,
-              glowing: true,
-            ),
             title: context.l10n.companionSheetInviteConfirmTitle,
             subtitle: context.l10n.companionSheetInviteConfirmSubtitle,
             center: true,
@@ -56,7 +50,7 @@ class _CompanionInviteConfirmSheet extends StatelessWidget {
             child: Text(
               code,
               textAlign: TextAlign.center,
-              style: inviteCodeStyle(Appearance.of(context)),
+              style: inviteCodeStyle(a),
             ),
           ),
           const SizedBox(height: 14),

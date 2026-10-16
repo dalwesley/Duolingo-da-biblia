@@ -42,8 +42,8 @@ class CornerHomeCard extends StatelessWidget {
     final waiting =
         challenge.status == CornerStatus.pending &&
         challenge.iAmChallenger(uid);
-    final canWalk = challenge.opensFor(uid, challenge.missionSlug) &&
-        onWalk != null;
+    final canWalk =
+        challenge.opensFor(uid, challenge.missionSlug) && onWalk != null;
     final settled =
         challenge.isClosed || (!challenge.isThisWeek && !incoming && !waiting);
     final live = challenge.status == CornerStatus.active;
@@ -104,8 +104,7 @@ class CornerHomeCard extends StatelessWidget {
                 source: UserReportSource.corner,
                 onDone: (outcome) {
                   // Convite de quem foi bloqueado some na próxima leitura.
-                  if (outcome == ModerationOutcome.blocked &&
-                      context.mounted) {
+                  if (outcome == ModerationOutcome.blocked && context.mounted) {
                     context.read<CornerService>().refresh();
                   }
                 },
@@ -212,7 +211,7 @@ class _WeekFuse extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final urgent = daysLeft <= 1;
-    final tone = urgent ? AppRoles.risk : AppRoles.chrome;
+    final tone = urgent ? AppRoles.risk : a.chrome;
     return Row(
       children: [
         Expanded(
@@ -225,9 +224,7 @@ class _WeekFuse extends StatelessWidget {
                     height: 4,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(AppRadii.hair),
-                      color: i >= 7 - daysLeft
-                          ? tone
-                          : a.progressTrack,
+                      color: i >= 7 - daysLeft ? tone : a.progressTrack,
                       boxShadow: i >= 7 - daysLeft
                           ? [
                               BoxShadow(
@@ -310,9 +307,7 @@ class _PairRow extends StatelessWidget {
 
     // Pendente: quem convidou fica sempre à esquerda do layout; some o
     // fio só do lado de quem ainda não aceitou (direita).
-    final pendingEnds = awaitingAccept
-        ? (BondEnd.dashed, BondEnd.gone)
-        : null;
+    final pendingEnds = awaitingAccept ? (BondEnd.dashed, BondEnd.gone) : null;
 
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -346,7 +341,7 @@ class _PairRow extends StatelessWidget {
                             state: BondState.idle,
                             left: pendingEnds.$1,
                             right: pendingEnds.$2,
-                            color: AppRoles.chrome,
+                            color: Appearance.of(context).chrome,
                           )
                         : BondThread(state: bond, color: AppRoles.success),
                   ),
@@ -420,17 +415,14 @@ class _WaitingMarkState extends State<_WaitingMark>
                 : (t < 0.72
                       ? 0.0
                       : AppMotion.move.transform((t - 0.72) / 0.28));
-            return Transform.rotate(
-              angle: turn * math.pi,
-              child: child,
-            );
+            return Transform.rotate(angle: turn * math.pi, child: child);
           },
           child: Container(
             width: 46,
             height: 46,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              color: AppColors.night,
+              color: a.insetFill,
               border: Border.all(
                 color: muted.withValues(alpha: 0.4),
                 width: 1.4,
@@ -571,8 +563,9 @@ class _FinishMarkState extends State<_FinishMark>
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     final boost = widget.lit ? 1.0 : 0.0;
-    final tone = widget.lit ? AppRoles.success : AppRoles.chrome;
+    final tone = widget.lit ? AppRoles.success : a.chrome;
     return AnimatedBuilder(
       animation: _pulse,
       builder: (context, child) {
@@ -582,20 +575,14 @@ class _FinishMarkState extends State<_FinishMark>
           height: 46,
           decoration: BoxDecoration(
             shape: BoxShape.circle,
-            color: Color.lerp(
-              AppColors.night,
-              tone,
-              0.16 + 0.1 * t + 0.2 * boost,
-            ),
+            color: Color.lerp(a.insetFill, tone, 0.16 + 0.1 * t + 0.2 * boost),
             border: Border.all(
               color: tone.withValues(alpha: 0.72 + 0.28 * t),
               width: 1.4,
             ),
             boxShadow: [
               BoxShadow(
-                color: tone.withValues(
-                  alpha: 0.22 + 0.38 * t + 0.2 * boost,
-                ),
+                color: tone.withValues(alpha: 0.22 + 0.38 * t + 0.2 * boost),
                 blurRadius: 10 + 10 * t,
               ),
             ],

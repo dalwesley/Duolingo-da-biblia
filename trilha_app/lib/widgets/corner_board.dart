@@ -10,6 +10,7 @@ import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
+import 'cloud_mascot.dart';
 import 'corner_home_card.dart';
 import 'immersive_background.dart';
 import 'ui_primitives.dart';
@@ -65,10 +66,10 @@ class DesafioEntry extends StatelessWidget {
               width: 108,
               child: Column(
                 children: [
-                  const CinematicIcon(
+                  CinematicIcon(
                     glyph: CinematicGlyph.flag,
                     size: AppMetrics.iconMd,
-                    accent: AppRoles.chrome,
+                    accent: a.chrome,
                     framed: false,
                   ),
                   const SizedBox(height: 6),
@@ -147,6 +148,7 @@ class _Person extends StatelessWidget {
 /// O que está valendo, o placar e cada desafio que já fechou.
 class CornerBoard extends StatelessWidget {
   final ValueChanged<String> onOpenMission;
+
   /// Mantido na API; o CTA de abrir a caravana mora no pai.
   final VoidCallback onOpenCaravana;
 
@@ -169,9 +171,7 @@ class CornerBoard extends StatelessWidget {
     final uid = backend.uid ?? '';
 
     if (!backend.isActive) {
-      return const _BoardEmptyCard(
-        bodyIsCloud: true,
-      );
+      return const _BoardEmptyCard(bodyIsCloud: true);
     }
     if (corners.loading && corners.mine.isEmpty) {
       return const Padding(
@@ -212,7 +212,8 @@ class CornerBoard extends StatelessWidget {
   }
 }
 
-/// Vazio do desafio — ícone, título e texto no mesmo card das outras listas.
+/// Vazio do desafio — o Anan triste (ninguém ainda), no mesmo card das
+/// outras listas.
 class _BoardEmptyCard extends StatelessWidget {
   final bool bodyIsCloud;
 
@@ -223,7 +224,7 @@ class _BoardEmptyCard extends StatelessWidget {
     return GlassCard(
       padding: EdgeInsets.zero,
       child: EmptyState(
-        glyph: CinematicGlyph.flag,
+        mark: const CloudMascot(face: CloudFace.triste, size: 96),
         title: CornerCopy.boardEmptyTitle,
         body: bodyIsCloud ? CornerCopy.needsCloud : CornerCopy.boardEmptyBody,
       ),
@@ -257,8 +258,7 @@ class _ClosedArchiveState extends State<_ClosedArchive> {
   int get _lostCount => widget.results
       .where(
         (r) =>
-            r.mark == CornerResultMark.lost ||
-            r.mark == CornerResultMark.left,
+            r.mark == CornerResultMark.lost || r.mark == CornerResultMark.left,
       )
       .length;
 
@@ -354,10 +354,7 @@ class _FilterDot extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 4),
-      child: Text(
-        '·',
-        style: AppTypography.body(size: 18, color: a.textFaint),
-      ),
+      child: Text('·', style: AppTypography.body(size: 18, color: a.textFaint)),
     );
   }
 }

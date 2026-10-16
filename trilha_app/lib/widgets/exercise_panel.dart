@@ -27,12 +27,15 @@ class _ActSkin {
 
   static final plateShadow = AppLight.lip();
 
-  /// Placa idle: poço elevado (não branco) — contraste no céu escuro.
-  static const idleFill = AppColors.nightElevated;
-  static const idleInk = AppColors.textOnDark;
+  /// Placa idle: segue o papel da aparência ([AppearanceStyle.stageFill]) —
+  /// poço elevado no escuro, papel branco no Claro.
+  static Color idleFill(AppearanceStyle a) => a.stageFill;
+  static Color idleInk(AppearanceStyle a) => a.text;
 
-  /// Seleção: branco. Acerto: ouro. Erro: vermelho.
-  static const selectedFill = AppColors.card;
+  /// Seleção: branco no céu escuro; no papel claro (onde idle já é branco)
+  /// um marfim quente. Acerto: ouro. Erro: vermelho.
+  static Color selectedFill(AppearanceStyle a) =>
+      a.onDark ? AppColors.card : const Color(0xFFFFF3D6);
 
   /// Tinta escura sobre placa clara (branco / ouro).
   static const ink = AppColors.night;
@@ -46,10 +49,12 @@ class _ActSkin {
     Border? outline,
     bool hot,
   })
-  paint(_OptState state, Color accent) {
+  paint(_OptState state, Color accent, AppearanceStyle a) {
+    final idleFill = _ActSkin.idleFill(a);
+    final idleInk = _ActSkin.idleInk(a);
     return switch (state) {
       _OptState.picked => (
-        fill: selectedFill,
+        fill: selectedFill(a),
         well: Colors.transparent,
         wellFg: ink,
         wellBorder: ink.withValues(alpha: 0.22),
@@ -878,7 +883,7 @@ class _ExercisePanelState extends State<ExercisePanel>
                   : context.l10n.exerciseHint,
               onTap: widget.hintUsed || _locked ? null : widget.onHint,
               color: widget.hintUsed || _locked
-                  ? AppColors.textOnDark
+                  ? Appearance.of(context).textFaint
                   : AppRoles.action,
             ),
           ),
@@ -1085,10 +1090,11 @@ class _Manuscript extends StatelessWidget {
     this.lit = false,
   });
 
-  BoxDecoration get _plate => StagePlate.decoration(
+  BoxDecoration _plate(BuildContext context) => StagePlate.decoration(
     // Acerto = glow no rim do palco; idle = chrome neutro.
     accent: lit ? AppRoles.action : accent,
     lit: lit,
+    style: Appearance.of(context),
   );
 
   /// O palco mostra o trecho inteiro. Se não cabe na altura, encolhe —
@@ -1130,7 +1136,7 @@ class _Manuscript extends StatelessWidget {
           ? Container(
               width: double.infinity,
               padding: const EdgeInsets.fromLTRB(18, 18, 18, 22),
-              decoration: _plate,
+              decoration: _plate(context),
               clipBehavior: Clip.none,
               child: content,
             )
@@ -1154,7 +1160,7 @@ class _Manuscript extends StatelessWidget {
         width: double.infinity,
         height: double.infinity,
         padding: const EdgeInsets.fromLTRB(22, 20, 22, 22),
-        decoration: _plate,
+        decoration: _plate(context),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
@@ -1282,7 +1288,11 @@ class _CompleteVerseState extends State<_CompleteVerse> {
     final before = hasBlank ? template.substring(0, match.start) : template;
     final after = hasBlank ? template.substring(last.end) : '';
     final size = _verseSizeFor(template);
-    final style = _verseWordStyle(size: size, height: 1.45);
+    final style = _verseWordStyle(
+      color: Appearance.of(context).text,
+      size: size,
+      height: 1.45,
+    );
 
     return _Manuscript(
       accent: widget.accent,
@@ -1327,7 +1337,10 @@ class _BlankGap extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final has = (filled ?? '').trim().isNotEmpty;
-    final probeStyle = _verseWordStyle(size: size);
+    final probeStyle = _verseWordStyle(
+      color: Appearance.of(context).text,
+      size: size,
+    );
     final probe = TextPainter(
       text: TextSpan(text: has ? filled! : expected, style: probeStyle),
       textDirection: TextDirection.ltr,
@@ -1361,7 +1374,11 @@ class _BlankGap extends StatelessWidget {
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
             style: _filledWordStyle(
-              _verseWordStyle(height: 1, size: size),
+              _verseWordStyle(
+                color: Appearance.of(context).text,
+                height: 1,
+                size: size,
+              ),
               state,
             ),
           ),
@@ -1444,7 +1461,8 @@ class _BridgePassages extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          if (passageA != null) _connectStanza(passageA!, accent, size),
+          if (passageA != null)
+            _connectStanza(context, passageA!, accent, size),
           if (passageA != null && passageB != null) ...[
             const SizedBox(height: 10),
             ActShake(
@@ -1463,7 +1481,8 @@ class _BridgePassages extends StatelessWidget {
             ),
             const SizedBox(height: 10),
           ],
-          if (passageB != null) _connectStanza(passageB!, accent, size),
+          if (passageB != null)
+            _connectStanza(context, passageB!, accent, size),
         ],
       ),
     );
@@ -1471,7 +1490,12 @@ class _BridgePassages extends StatelessWidget {
 }
 
 /// Cada trecho com a própria referência em cima — como todo palco.
-Widget _connectStanza(ExercisePassage passage, Color accent, double size) {
+Widget _connectStanza(
+  BuildContext context,
+  ExercisePassage passage,
+  Color accent,
+  double size,
+) {
   final ref = passage.ref.trim();
   return Column(
     mainAxisSize: MainAxisSize.min,
@@ -1483,7 +1507,11 @@ Widget _connectStanza(ExercisePassage passage, Color accent, double size) {
       Text(
         passage.text.trim(),
         textAlign: TextAlign.center,
-        style: _verseWordStyle(height: 1.45, size: size),
+        style: _verseWordStyle(
+          color: Appearance.of(context).text,
+          height: 1.45,
+          size: size,
+        ),
       ),
     ],
   );
@@ -1597,7 +1625,11 @@ class _PassageBlock extends StatelessWidget {
         : buildTapSpans(text, ex.effectiveOptions);
     final tappable = spans.any((s) => s.optionId != null);
     final size = _verseSizeFor(text);
-    final style = _verseWordStyle(height: 1.45, size: size);
+    final style = _verseWordStyle(
+      color: Appearance.of(context).text,
+      height: 1.45,
+      size: size,
+    );
     // A marca tem margem interna; a pontuação seguinte vai junto dela,
     // senão sobra um espaço antes da vírgula ("princípio ,").
     final tails = <int, String>{};
@@ -1712,16 +1744,17 @@ class _VerseMark extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     final hot =
         state == _OptState.correct ||
         state == _OptState.picked ||
         state == _OptState.wrong;
     final color = switch (state) {
       _OptState.wrong => AppRoles.error,
-      _OptState.dimmed => AppColors.textOnDark.withValues(alpha: 0.38),
+      _OptState.dimmed => a.text.withValues(alpha: 0.38),
       _OptState.correct => AppRoles.action,
-      _OptState.picked => AppRoles.selected,
-      _OptState.idle => AppColors.textOnDark,
+      _OptState.picked => a.selected,
+      _OptState.idle => a.text,
     };
     final wash = switch (state) {
       _OptState.wrong => color.withValues(alpha: 0.18),
@@ -1779,7 +1812,13 @@ class _VerseMark extends StatelessWidget {
       textBaseline: TextBaseline.alphabetic,
       children: [
         mark,
-        Text(punct, style: _verseWordStyle(size: size)),
+        Text(
+          punct,
+          style: _verseWordStyle(
+            color: Appearance.of(context).text,
+            size: size,
+          ),
+        ),
       ],
     );
   }
@@ -1802,7 +1841,7 @@ class _WordChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final skin = _ActSkin.paint(state, accent);
+    final skin = _ActSkin.paint(state, accent, Appearance.of(context));
     final used = state == _OptState.dimmed;
     return ActShake(
       active: state == _OptState.wrong,
@@ -1856,7 +1895,7 @@ class _VfSlab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final skin = _ActSkin.paint(state, accent);
+    final skin = _ActSkin.paint(state, accent, Appearance.of(context));
     final wellBorder = skin.wellBorder;
 
     return ActShake(
@@ -1928,7 +1967,7 @@ class _OptionTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final skin = _ActSkin.paint(state, accent);
+    final skin = _ActSkin.paint(state, accent, Appearance.of(context));
     return ActShake(
       active: state == _OptState.wrong,
       child: ActPress(
@@ -2040,7 +2079,7 @@ class _OrderPiece extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final skin = _ActSkin.paint(state, accent);
+    final skin = _ActSkin.paint(state, accent, Appearance.of(context));
     return AnimatedContainer(
       duration: _ActSkin.anim,
       curve: AppMotion.enter,

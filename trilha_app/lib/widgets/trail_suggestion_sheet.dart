@@ -9,6 +9,7 @@ import '../utils/appearance.dart';
 import 'act_feel.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
+import 'cloud_mascot.dart';
 import 'ui_primitives.dart';
 
 /// Abre o sheet para sugerir um caminho ainda fora do mapa.
@@ -116,12 +117,7 @@ class _TrailSuggestionSheetState extends State<_TrailSuggestionSheet> {
           children: [
             Row(
               children: [
-                const CinematicIcon(
-                  glyph: CinematicGlyph.spark,
-                  size: AppMetrics.leadingIcon,
-                  accent: AppRoles.chrome,
-                  glowing: false,
-                ),
+                const CloudMascot(face: CloudFace.feliz, size: 52),
                 const SizedBox(width: 12),
                 Expanded(
                   child: Column(
@@ -217,7 +213,7 @@ class _TrailSuggestionSheetState extends State<_TrailSuggestionSheet> {
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(AppRadii.sm),
-                  borderSide: const BorderSide(color: AppRoles.selected),
+                  borderSide: BorderSide(color: a.selected),
                 ),
               ),
             ),

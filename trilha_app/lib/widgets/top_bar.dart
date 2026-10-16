@@ -36,6 +36,8 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
   final String? subtitle;
   final VoidCallback? onBack;
+
+  /// A tinta da barra segue o papel da aparência, não estes flags.
   final bool immersive;
   final bool dark;
   final bool inline;
@@ -100,7 +102,9 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     final appearance = Appearance.of(context);
-    final onDark = immersive || dark || onBack != null;
+    // A barra tem papel próprio (navBarFill). A tinta segue esse papel,
+    // não o céu atrás — immersive/dark ficam na API das telas.
+    final onDark = appearance.onDark;
     final showAvatar = personalGreeting && onProfileTap != null;
     final userName = context.select((ProgressService p) => p.userName);
     final portraitStyle = context.select(
@@ -108,7 +112,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
     );
 
     // Chrome não herda a escala máxima da leitura — evita overflow em toda TopBar.
-    final mark = chromeAccent ?? AppRoles.chrome;
+    final mark = chromeAccent ?? appearance.chrome;
     final chrome = MediaQuery.withClampedTextScaling(
       maxScaleFactor: kTopBarMaxTextScale,
       child: inline
@@ -293,9 +297,7 @@ class _InlineChrome extends StatelessWidget {
         decoration: BoxDecoration(
           color: surface?.fill ?? appearance.navBarFill.withValues(alpha: 1),
           borderRadius: BorderRadius.circular(AppMetrics.cardRadius),
-          border: Border.all(
-            color: surface?.border ?? appearance.navBarBorder,
-          ),
+          border: Border.all(color: surface?.border ?? appearance.navBarBorder),
         ),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -375,12 +377,13 @@ class _InlineChrome extends StatelessWidget {
 }
 
 class _BackGlyph extends StatelessWidget {
-  final Color accent;
+  final Color? accent;
 
-  const _BackGlyph({this.accent = AppRoles.chrome});
+  const _BackGlyph({this.accent});
 
   @override
   Widget build(BuildContext context) {
+    final accent = this.accent ?? Appearance.of(context).chrome;
     return CinematicIcon(
       glyph: CinematicGlyph.back,
       size: 36,
@@ -394,16 +397,13 @@ class _BackGlyph extends StatelessWidget {
 class _MenuMark extends StatelessWidget {
   final CinematicGlyph glyph;
   final IconData? icon;
-  final Color accent;
+  final Color? accent;
 
-  const _MenuMark({
-    this.glyph = CinematicGlyph.spark,
-    this.icon,
-    this.accent = AppRoles.chrome,
-  });
+  const _MenuMark({this.glyph = CinematicGlyph.spark, this.icon, this.accent});
 
   @override
   Widget build(BuildContext context) {
+    final accent = this.accent ?? Appearance.of(context).chrome;
     const size = 36.0;
     if (icon != null) {
       return IconWell(
@@ -490,7 +490,11 @@ class _TitleBlock extends StatelessWidget {
             title,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: AppTypography.display(size: 20, height: 1.05),
+            style: AppTypography.display(
+              size: 20,
+              height: 1.05,
+              color: surface?.ink ?? a.text,
+            ),
           ),
         ],
       );
@@ -509,7 +513,8 @@ class _TitleBlock extends StatelessWidget {
             size: 20,
             height: 1.05,
             color:
-                surface?.ink ?? (onDark ? AppColors.textOnDark : AppColors.text),
+                surface?.ink ??
+                (onDark ? AppColors.textOnDark : AppColors.text),
           ),
         ),
         if (subtitle != null)

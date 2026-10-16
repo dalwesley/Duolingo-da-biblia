@@ -183,7 +183,6 @@ class _BibleReadingPlanScreenState extends State<BibleReadingPlanScreen> {
                       ? plan.order.shortLabel
                       : context.l10n.planAtYourPace,
                   leadingGlyph: CinematicGlyph.book,
-                  chromeAccent: AppRoles.chrome,
                   onBack: () => Navigator.of(context).pop(),
                 ),
               ),
@@ -325,7 +324,7 @@ class _SetupPlanBody extends StatelessWidget {
                   label: context.l10n.planEstimate,
                   trailing: SoftBadge(
                     text: order.shortLabel,
-                    accent: AppRoles.chrome,
+                    accent: a.chrome,
                     glyph: CinematicGlyph.book,
                   ),
                 ),
@@ -415,7 +414,7 @@ class _ActivePlanBody extends StatelessWidget {
                   text: doneToday
                       ? context.l10n.planDone
                       : context.l10n.planMinutes(plan.minutesPerDay),
-                  accent: doneToday ? AppRoles.success : AppRoles.chrome,
+                  accent: doneToday ? AppRoles.success : a.chrome,
                 ),
               ),
               const SizedBox(height: AppSpace.sm),

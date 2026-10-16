@@ -158,11 +158,11 @@ class _ChallengeCard extends StatelessWidget {
         ? CornerCopy.ctaInvite
         : CornerCopy.inviteTitle(proposal!.missionTitle);
     final sub = blocked ?? CornerCopy.sameStretch;
-    final accent = enabled ? AppRoles.chrome : a.textFaint;
+    final accent = enabled ? a.chrome : a.textFaint;
 
     return GlassCard(
       glow: enabled ? 0.45 : 0.1,
-      tint: AppRoles.chrome,
+      tint: a.chrome,
       radius: AppMetrics.heroRadius,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -239,7 +239,7 @@ class _StatusCard extends StatelessWidget {
       ),
       child: GlassCard(
         glow: 0.3,
-        tint: AppRoles.chrome,
+        tint: a.chrome,
         radius: AppMetrics.heroRadius,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,

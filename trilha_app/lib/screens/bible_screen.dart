@@ -253,7 +253,6 @@ class _BibleScreenState extends State<BibleScreen> with ShellTabFreezeMixin {
       title: context.l10n.bibleTitle,
       subtitle: LiturgicalCalendar.momentFor().subtitle,
       leadingGlyph: CinematicGlyph.book,
-      chromeAccent: AppRoles.chrome,
       onBack: nav.canPop() ? () => nav.pop() : null,
     );
   }
@@ -315,7 +314,6 @@ class _BibleScreenState extends State<BibleScreen> with ShellTabFreezeMixin {
             subtitle: context.l10n.bibleSearchSubtitle,
             onBack: _closeSearch,
             leadingGlyph: CinematicGlyph.book,
-            chromeAccent: AppRoles.chrome,
           ),
           controller: _searchCtrl,
           hits: _hits,
@@ -478,7 +476,7 @@ class _BibleLibrary extends StatelessWidget {
     String title,
     List<int> indices, {
     String? blurb,
-    Color accent = AppRoles.chrome,
+    Color? accent,
   }) {
     return [
       const SizedBox(height: AppSpace.lg),
@@ -503,7 +501,7 @@ class _BibleLibrary extends StatelessWidget {
 
   Widget _testament(BuildContext context, bool nt) {
     const otEnd = BibleService.oldTestamentCount;
-    const accent = AppRoles.chrome;
+    final accent = Appearance.of(context).chrome;
     final id = nt ? 'nt' : 'ot';
     final open = _sectionOpen(id);
     final groups = [
@@ -797,10 +795,8 @@ class _ContinueHero extends StatelessWidget {
           const SizedBox(height: AppSpace.md),
           Container(
             padding: const EdgeInsets.only(left: AppSpace.md),
-            decoration: const BoxDecoration(
-              border: Border(
-                left: BorderSide(color: AppRoles.chrome, width: 2),
-              ),
+            decoration: BoxDecoration(
+              border: Border(left: BorderSide(color: a.chrome, width: 2)),
             ),
             child: Text(
               preview,
@@ -903,10 +899,10 @@ class _PlanCard extends StatelessWidget {
       onTap: onOpen,
       child: Row(
         children: [
-          const CinematicIcon(
+          CinematicIcon(
             glyph: CinematicGlyph.calendar,
             size: AppMetrics.leadingIcon,
-            accent: AppRoles.chrome,
+            accent: a.chrome,
           ),
           const SizedBox(width: AppSpace.md),
           Expanded(
@@ -1036,11 +1032,8 @@ class _SavedChapter extends StatelessWidget {
     );
     return RelicChapter(
       title: context.l10n.bibleSavedTitle,
-      accent: AppRoles.chrome,
       divided: false,
-      trailing: count == 0
-          ? null
-          : CountBadge('$count', color: AppRoles.chrome, filled: false),
+      trailing: count == 0 ? null : CountBadge('$count', filled: false),
     );
   }
 }
@@ -1058,7 +1051,6 @@ class _SavedVerses extends StatelessWidget {
     final marks = context.watch<ProgressService>().parseBookmarks();
     if (marks.isEmpty) {
       return EmptyState(
-        glyph: CinematicGlyph.bookmark,
         title: context.l10n.bibleSavedEmptyTitle,
         body: context.l10n.bibleSavedEmptyBody,
       );
@@ -1214,7 +1206,7 @@ class _SearchPane extends StatelessWidget {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(AppRadii.lg),
-          borderSide: const BorderSide(color: AppRoles.selected),
+          borderSide: BorderSide(color: a.selected),
         ),
       ),
       onChanged: onChanged,
@@ -1235,7 +1227,6 @@ class _SearchPane extends StatelessWidget {
           )
         else if (controller.text.trim().length >= 2 && hits.isEmpty)
           EmptyState(
-            glyph: CinematicGlyph.search,
             title: context.l10n.bibleSearchEmpty,
           )
         else

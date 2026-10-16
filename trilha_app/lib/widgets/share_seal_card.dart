@@ -21,7 +21,8 @@ class ShareSealCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
+    // Imagem exportada: arte escura fixa (marca) — tinta clara em qualquer look.
+    final a = AppearanceStyle.resolve(AppearanceMode.night);
     return ClipRRect(
       borderRadius: BorderRadius.circular(AppRadii.lg),
       child: ConstrainedBox(

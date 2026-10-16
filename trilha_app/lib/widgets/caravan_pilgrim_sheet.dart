@@ -18,6 +18,7 @@ import 'corner_profile_cta.dart';
 import 'living_seed_card.dart';
 import 'pilgrim_identity_card.dart';
 import 'pilgrim_profile_sections.dart';
+import 'cloud_mascot.dart';
 import 'ui_primitives.dart';
 import 'user_moderation_sheet.dart';
 
@@ -139,7 +140,10 @@ class _CaravanPilgrimSheetState extends State<_CaravanPilgrimSheet> {
                   ? Center(
                       child: SingleChildScrollView(
                         child: EmptyState(
-                          glyph: CinematicGlyph.refresh,
+                          mark: const CloudMascot(
+                            face: CloudFace.erro,
+                            size: 96,
+                          ),
                           title: _error!,
                           action: GhostCta(
                             label: context.l10n.commonTryAgain,

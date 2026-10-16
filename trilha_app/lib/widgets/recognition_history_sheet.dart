@@ -406,7 +406,6 @@ class _EmptySheet extends StatelessWidget {
     final lines = message.split('\n');
     final rest = lines.skip(1).join('\n').trim();
     return EmptyState(
-      glyph: CinematicGlyph.people,
       title: lines.first,
       body: rest.isEmpty ? null : rest,
     );

@@ -119,13 +119,13 @@ class _PortraitChoice extends StatelessWidget {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 border: Border.all(
-                  color: selected ? AppRoles.selected : a.cardBorder,
+                  color: selected ? a.selected : a.cardBorder,
                   width: selected ? 2.2 : 1.2,
                 ),
                 boxShadow: selected
                     ? [
                         BoxShadow(
-                          color: AppRoles.selected.withValues(alpha: 0.2),
+                          color: a.selected.withValues(alpha: 0.2),
                           blurRadius: 12,
                           offset: const Offset(0, 2),
                         ),
@@ -149,7 +149,7 @@ class _PortraitChoice extends StatelessWidget {
               overflow: TextOverflow.ellipsis,
               style: AppTypography.title(
                 size: 14,
-                color: selected ? AppRoles.selected : a.text,
+                color: selected ? a.selected : a.text,
               ),
             ),
             const SizedBox(height: 2),

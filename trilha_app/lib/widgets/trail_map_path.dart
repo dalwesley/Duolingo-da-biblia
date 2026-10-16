@@ -40,10 +40,13 @@ class TrailMapPath extends StatelessWidget {
     if (missions.isEmpty) return const SizedBox.shrink();
 
     final a = Appearance.of(context);
-    final accent = modeAccent ?? theme?.pathActive ?? AppRoles.chrome;
+    final accent = modeAccent ?? theme?.pathActive ?? a.chrome;
     final glow = Color.lerp(accent, Colors.white, 0.22)!;
     final track = Color.lerp(
-      Color.lerp(a.progressTrack, AppColors.textOnDark, 0.42)!,
+      // Claro: trilho em tinta (sem puxar para o branco, some no céu).
+      a.onDark
+          ? Color.lerp(a.progressTrack, AppColors.textOnDark, 0.42)!
+          : a.text.withValues(alpha: 0.22),
       accent,
       0.32,
     )!;
@@ -59,21 +62,14 @@ class TrailMapPath extends StatelessWidget {
     );
   }
 
-  WindingStop _stop(
-    BuildContext context,
-    int i,
-    Color accent,
-    Color glow,
-  ) {
+  WindingStop _stop(BuildContext context, int i, Color accent, Color glow) {
     final mission = missions[i];
     final completed = _completed(mission.slug);
     final unlocked = _unlocked(mission.slug);
     final current = unlocked && !completed;
     final state = completed
         ? JourneyNodeState.completed
-        : (current
-              ? JourneyNodeState.current
-              : JourneyNodeState.locked);
+        : (current ? JourneyNodeState.current : JourneyNodeState.locked);
     final index = startGlobalIndex + i + 1;
     final roman = journeyRomanNumeral(index);
     final chrome = (current || completed)

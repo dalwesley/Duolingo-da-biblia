@@ -123,7 +123,7 @@ class ProfileHero extends StatelessWidget {
                     seed: seed,
                     style: style,
                     radius: AppMetrics.avatarHero,
-                    borderColor: AppRoles.chrome,
+                    borderColor: a.chrome,
                     editable: onEditPortrait != null,
                     onTap: onEditPortrait,
                   ),
@@ -151,7 +151,7 @@ class ProfileHero extends StatelessWidget {
                     style: AppTypography.body(
                       size: 14,
                       weight: FontWeight.w800,
-                      color: epithetColor ?? AppRoles.chrome,
+                      color: epithetColor ?? a.textSecondary,
                     ),
                   ),
                 ],

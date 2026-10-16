@@ -22,7 +22,9 @@ import '../widgets/brand_trail.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/genesis_hero.dart';
 import '../widgets/hero_card_atmosphere.dart';
+import '../widgets/home_brand_backdrop.dart';
 import '../widgets/immersive_background.dart';
+import '../widgets/cloud_mascot.dart';
 import '../widgets/ui_primitives.dart';
 import 'main_shell.dart';
 
@@ -35,8 +37,11 @@ import 'main_shell.dart';
 /// missão, na Home, já com o horário escolhido aqui.
 ///
 /// O primeiro ato é um plano de abertura: trevas, a Palavra, a luz.
-/// Depois, o fundo da Criação muda de ato. O texto entra como cartela.
-/// O quarto ato marca o retorno de amanhã. O nome, se faltar, entra ali.
+/// Logo depois, o Anan (a nuvem) se apresenta e pergunta o que a pessoa quer
+/// fazer: "Começar jornada" (e o "Pular") vão direto ao último ato, com os
+/// padrões; "Ajustar jornada" segue pelos atos. O fundo da Criação muda de ato. O texto entra como
+/// cartela. O quarto ato marca o retorno de amanhã. O nome, se faltar,
+/// entra ali.
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
 
@@ -44,7 +49,7 @@ class OnboardingScreen extends StatefulWidget {
   State<OnboardingScreen> createState() => _OnboardingScreenState();
 }
 
-enum _Beat { origin, habit, intent, sky, rhythm, threshold }
+enum _Beat { origin, anan, habit, intent, sky, rhythm, threshold }
 
 /// O que a pessoa busca — molda o título do último ato.
 enum _Intent {
@@ -96,6 +101,12 @@ class _OnboardingScreenState extends State<OnboardingScreen>
   bool _transitioning = false;
   bool _landed = false;
 
+  /// Fala do Anan: 0 = apresentação, 1 = o nome Stway + a pergunta.
+  int _ananPart = 0;
+
+  /// Pulou os ajustes ("Agora não" ou "Pular").
+  bool _skipped = false;
+
   // Escolhas do onboarding (salvas em _finish).
   int _dailyGoal = 1;
   _Intent? _intent;
@@ -122,6 +133,12 @@ class _OnboardingScreenState extends State<OnboardingScreen>
   // caminho inteiro aceso.
   static TrailShot _worldFor(_Beat beat) => switch (beat) {
     _Beat.origin => GenesisHero.endShot,
+    _Beat.anan => TrailShot.rest.copyWith(
+      exposure: 0.9,
+      glow: 0.85,
+      lit: 0.18,
+      stars: 0.9,
+    ),
     _Beat.habit => TrailShot.rest.copyWith(
       exposure: 0.95,
       glow: 1,
@@ -168,8 +185,12 @@ class _OnboardingScreenState extends State<OnboardingScreen>
     return base.withSky(AppearanceStyle.resolve(_sky));
   }
 
+  // A tinta segue o céu do mundo: antes do ato do céu (e no "Amanhã", sempre
+  // noite) a arte é escura — tinta clara; depois, o céu escolhido.
   AppearanceMode get _chromeMode =>
-      _index >= _Beat.sky.index ? _sky : AppearanceMode.morning;
+      _index >= _Beat.sky.index && _beat != _Beat.rhythm
+      ? _sky
+      : AppearanceMode.night;
 
   void _pickSky(AppearanceMode mode) {
     if (mode == _sky) return;
@@ -247,10 +268,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
       duration: const Duration(milliseconds: 1500),
     );
 
-    _cut = AnimationController(
-      vsync: this,
-      duration: AppMotion.gentle,
-    );
+    _cut = AnimationController(vsync: this, duration: AppMotion.gentle);
 
     // Já está no cache da splash; o fundo repinta a cada quadro.
     BrandTrail.ensureLoaded().then((_) {}, onError: (_) {});
@@ -260,6 +278,13 @@ class _OnboardingScreenState extends State<OnboardingScreen>
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
+      // Fundos de Claro/Médio prontos antes do ato do céu (sem piscar).
+      for (final asset in const [
+        HomeBrandBackdrop.lightAsset,
+        HomeBrandBackdrop.neutralAsset,
+      ]) {
+        precacheImage(AssetImage(asset), context).catchError((_) {});
+      }
       final settings = context.read<ProgressService>().settings;
       setState(() {
         _dailyGoal = settings.dailyGoal.clamp(1, 3);
@@ -306,12 +331,35 @@ class _OnboardingScreenState extends State<OnboardingScreen>
   }
 
   Future<void> _goNext() async {
-    if (_finishing || _transitioning) return;
+    if (_finishing || _transitioning || !_canAdvance) return;
+    if (_beat == _Beat.anan && _ananPart == 0) {
+      // Segunda fala no mesmo ato: a nuvem fica, o texto troca.
+      ActHaptics.light();
+      _landed = false;
+      setState(() => _ananPart = 1);
+      unawaited(_scene.forward(from: 0));
+      return;
+    }
+    if (_beat == _Beat.anan) _logChoice('setup', 'now');
     if (_index >= _beats.length - 1) {
       await _finish();
       return;
     }
+    await _cutTo(_index + 1);
+  }
 
+  /// "Agora não" e "Pular": o último ato, com os padrões.
+  void _skipToThreshold() {
+    if (_finishing || _transitioning) return;
+    _skipped = true;
+    _logChoice(
+      _beat == _Beat.anan ? 'setup' : 'skip',
+      _beat == _Beat.anan ? 'later' : _beat.name,
+    );
+    unawaited(_cutTo(_Beat.threshold.index));
+  }
+
+  Future<void> _cutTo(int index) async {
     _transitioning = true;
     FocusManager.instance.primaryFocus?.unfocus();
     ActHaptics.light();
@@ -323,29 +371,25 @@ class _OnboardingScreenState extends State<OnboardingScreen>
     );
     if (!mounted) return;
 
-    final next = _beats[_index + 1];
+    final next = _beats[index];
     _scene.value = 0;
     _scene.duration = _durationFor(next);
     _landed = false;
     setState(() {
       _fromWorld = _toWorld;
-      _index += 1;
+      _index = index;
       _toWorld = _shotFor(next);
       _transitioning = false;
     });
     _logStep();
     _world.forward(from: 0);
     unawaited(
-      _cut.animateTo(
-        0,
-        duration: AppMotion.slow,
-        curve: AppMotion.enter,
-      ),
+      _cut.animateTo(0, duration: AppMotion.slow, curve: AppMotion.enter),
     );
     unawaited(_scene.forward());
   }
 
-  Future<void> _finish({bool skipped = false}) async {
+  Future<void> _finish() async {
     if (_finishing) return;
     // O nome vai para o ranking — palavrão fica de fora.
     if (_askName && !ContentFilter.isAllowed(_nameController.text)) {
@@ -360,7 +404,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
     setState(() => _finishing = true);
     unawaited(
       AnalyticsService.instance.logEvent('onboarding_complete', {
-        'skipped': skipped ? 1 : 0,
+        'skipped': _skipped ? 1 : 0,
         'at_step': _beat.name,
         'daily_goal': _dailyGoal,
         'streak_goal': _streakGoal,
@@ -395,11 +439,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
       await backend.saveNow(progress, LeagueService.weekKey(), league: league);
 
       if (!mounted) return;
-      await _cut.animateTo(
-        1,
-        duration: AppMotion.slow,
-        curve: AppMotion.move,
-      );
+      await _cut.animateTo(1, duration: AppMotion.slow, curve: AppMotion.move);
       if (!mounted) return;
       await Navigator.of(context).pushReplacement(
         PageRouteBuilder(
@@ -426,11 +466,22 @@ class _OnboardingScreenState extends State<OnboardingScreen>
 
   String _ctaLabel(AppLocalizations l10n) => switch (_beat) {
     _Beat.origin || _Beat.threshold => l10n.commonStart,
+    _Beat.anan =>
+      _ananPart == 0 ? l10n.commonContinue : l10n.onboardingAnanLater,
     _Beat.rhythm => l10n.onboardingHoldToCommit,
     _Beat.habit || _Beat.intent || _Beat.sky => l10n.commonContinue,
   };
 
-  bool get _showSkip => _beat != _Beat.threshold && !_finishing;
+  /// Só o motivo não tem padrão: sem escolha, o Continuar fica apagado.
+  /// Os outros atos já abrem com uma opção marcada.
+  bool get _canAdvance => _beat != _Beat.intent || _intent != null;
+
+  /// Segunda fala do Anan: começar já ou ajustar.
+  bool get _ananAsks => _beat == _Beat.anan && _ananPart == 1;
+
+  // No Anan a escolha já é o "Começar jornada".
+  bool get _showSkip =>
+      _beat != _Beat.threshold && _beat != _Beat.anan && !_finishing;
 
   double get _skipOpacity {
     if (!_showSkip) return 0;
@@ -447,17 +498,37 @@ class _OnboardingScreenState extends State<OnboardingScreen>
     return ImmersiveScaffold(
       mode: mode,
       style: appearance,
-      background: AnimatedBuilder(
-        animation: Listenable.merge([_world, _breath, _scene, _tilt]),
-        builder: (context, _) => _WorldFrame(
-          from: _fromWorld,
-          to: _toWorld,
-          reveal: _world.value,
-          breath: _breath.value,
-          scene: _scene.value,
-          beat: _beat,
-          tilt: _tilt.value,
-        ),
+      background: Stack(
+        fit: StackFit.expand,
+        children: [
+          AnimatedBuilder(
+            animation: Listenable.merge([_world, _breath, _scene, _tilt]),
+            builder: (context, _) => _WorldFrame(
+              from: _fromWorld,
+              to: _toWorld,
+              reveal: _world.value,
+              breath: _breath.value,
+              scene: _scene.value,
+              beat: _beat,
+              tilt: _tilt.value,
+            ),
+          ),
+          // Claro e Médio têm arte própria no app: o fundo do tema escolhido
+          // entra por cima da trilha noturna, como fica no app inteiro.
+          AnimatedSwitcher(
+            duration: AppMotion.gentle,
+            switchInCurve: AppMotion.enter,
+            switchOutCurve: AppMotion.enter,
+            layoutBuilder: (current, previous) =>
+                Stack(fit: StackFit.expand, children: [...previous, ?current]),
+            child: appearance.look == AppearanceLook.night
+                ? const SizedBox.shrink(key: ValueKey('night'))
+                : HomeBrandBackdrop(
+                    key: ValueKey(appearance.look),
+                    style: appearance,
+                  ),
+          ),
+        ],
       ),
       body: Stack(
         fit: StackFit.expand,
@@ -468,16 +539,8 @@ class _OnboardingScreenState extends State<OnboardingScreen>
               // Na abertura, o botão só vem depois que a luz se abre.
               final cta =
                   (_beat == _Beat.origin
-                          ? const Interval(
-                              0.8,
-                              0.96,
-                              curve: AppMotion.enter,
-                            )
-                          : const Interval(
-                              0.64,
-                              0.94,
-                              curve: AppMotion.enter,
-                            ))
+                          ? const Interval(0.8, 0.96, curve: AppMotion.enter)
+                          : const Interval(0.64, 0.94, curve: AppMotion.enter))
                       .transform(_scene.value);
               final ctaLabel = _ctaLabel(l10n);
 
@@ -503,9 +566,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                               child: IgnorePointer(
                                 ignoring: _skipOpacity < 0.4 || _transitioning,
                                 child: GestureDetector(
-                                  onTap: _finishing
-                                      ? null
-                                      : () => _finish(skipped: true),
+                                  onTap: _finishing ? null : _skipToThreshold,
                                   behavior: HitTestBehavior.opaque,
                                   child: Padding(
                                     padding: const EdgeInsets.symmetric(
@@ -548,12 +609,32 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                                     holdingLabel: l10n.onboardingHolding,
                                     onDone: _goNext,
                                   )
-                                : CopperCta(
-                                    label: _finishing
-                                        ? l10n.onboardingOpening
-                                        : ctaLabel,
-                                    busy: _finishing,
-                                    onTap: _finishing ? null : _goNext,
+                                : Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      // Na pergunta do Anan, o ouro é começar
+                                      // já (com os padrões); ajustar é o
+                                      // secundário.
+                                      CopperCta(
+                                        label: _finishing
+                                            ? l10n.onboardingOpening
+                                            : ctaLabel,
+                                        busy: _finishing,
+                                        onTap: _finishing || !_canAdvance
+                                            ? null
+                                            : _ananAsks
+                                            ? _skipToThreshold
+                                            : _goNext,
+                                      ),
+                                      if (_ananAsks) ...[
+                                        const SizedBox(height: AppSpace.sm),
+                                        GhostCta(
+                                          label: l10n.onboardingAnanSetupNow,
+                                          expanded: true,
+                                          onTap: _goNext,
+                                        ),
+                                      ],
+                                    ],
                                   ),
                           ),
                         ),
@@ -585,6 +666,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
   Widget _buildBeat() {
     return switch (_beat) {
       _Beat.origin => _OriginBeat(scene: _scene),
+      _Beat.anan => _AnanBeat(scene: _scene, part: _ananPart),
       _Beat.habit => _HabitBeat(
         scene: _scene,
         breath: _breath,
@@ -740,7 +822,9 @@ class _FilmBar extends StatelessWidget {
                         FractionallySizedBox(
                           alignment: Alignment.centerLeft,
                           widthFactor: fill.clamp(0.0, 1.0),
-                          child: const ColoredBox(color: AppRoles.chrome),
+                          child: ColoredBox(
+                            color: Appearance.of(context).chrome,
+                          ),
                         ),
                       ],
                     ),
@@ -817,6 +901,34 @@ class _Kicker extends StatelessWidget {
           child: FittedBox(fit: BoxFit.scaleDown, child: SectionLabel(text)),
         );
       },
+    );
+  }
+}
+
+/// O Anan acompanha cada ato de ajuste: pequeno, acima do rótulo. Entra
+/// neutro e sorri — a mesma nuvem que se apresentou depois do prólogo.
+class _AnanGuide extends StatelessWidget {
+  final Animation<double> scene;
+
+  const _AnanGuide({required this.scene});
+
+  @override
+  Widget build(BuildContext context) {
+    final short = MediaQuery.sizeOf(context).height < 740;
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 6),
+      child: _Reveal(
+        scene: scene,
+        from: 0.02,
+        to: 0.3,
+        rise: 10,
+        scaleFrom: 0.85,
+        child: CloudMascot(
+          face: CloudFace.feliz,
+          size: short ? 52 : 64,
+          reactDelay: const Duration(milliseconds: 380),
+        ),
+      ),
     );
   }
 }
@@ -980,6 +1092,189 @@ class _OriginBeat extends StatelessWidget {
   }
 }
 
+/// O Anan se apresenta em duas falas. A nuvem entra uma vez e fica; a fala
+/// vem num balão claro (como a placa da celebração), legível sobre a
+/// trilha. Entre as falas só o texto do balão troca.
+class _AnanBeat extends StatelessWidget {
+  final Animation<double> scene;
+  final int part;
+
+  const _AnanBeat({required this.scene, required this.part});
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = context.l10n;
+    final short = MediaQuery.sizeOf(context).height < 740;
+    final hello = part == 0;
+    final enter = hello ? scene : kAlwaysCompleteAnimation;
+
+    return _Stage(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          _Reveal(
+            scene: enter,
+            from: 0.04,
+            to: 0.36,
+            rise: 18,
+            scaleFrom: 0.85,
+            child: CloudMascot(
+              face: CloudFace.feliz,
+              size: short ? 116 : 144,
+              reactDelay: const Duration(milliseconds: 520),
+            ),
+          ),
+          const SizedBox(height: AppSpace.sm),
+          _Reveal(
+            scene: enter,
+            from: 0.14,
+            to: 0.42,
+            rise: 10,
+            scaleFrom: 0.94,
+            child: _SpeechBubble(
+              // A segunda fala é mais alta: o balão cresce e a nuvem sobe
+              // deslizando, sem salto.
+              child: AnimatedSize(
+                duration: AppMotion.standard,
+                curve: AppMotion.move,
+                alignment: Alignment.topCenter,
+                child: KeyedSubtree(
+                  key: ValueKey(part),
+                  child: Column(
+                    children: [
+                      _Reveal(
+                        scene: scene,
+                        from: hello ? 0.2 : 0.06,
+                        to: hello ? 0.48 : 0.34,
+                        rise: 8,
+                        child: Text(
+                          hello
+                              ? l10n.onboardingAnanHelloTitle
+                              : l10n.onboardingAnanWayTitle,
+                          textAlign: TextAlign.center,
+                          style: AppTypography.display(
+                            size: short ? 23 : 26,
+                            height: 1.1,
+                            weight: FontWeight.w900,
+                            color: _SpeechBubble.ink,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      _Reveal(
+                        scene: scene,
+                        from: hello ? 0.3 : 0.16,
+                        to: hello ? 0.58 : 0.44,
+                        rise: 8,
+                        child: Text(
+                          hello
+                              ? l10n.onboardingAnanHelloBody
+                              : l10n.onboardingAnanWayBody,
+                          textAlign: TextAlign.center,
+                          style: AppTypography.body(
+                            size: 15,
+                            height: 1.5,
+                            weight: FontWeight.w600,
+                            color: _SpeechBubble.muted,
+                          ),
+                        ),
+                      ),
+                      if (!hello) ...[
+                        const SizedBox(height: AppSpace.md),
+                        _Reveal(
+                          scene: scene,
+                          from: 0.3,
+                          to: 0.58,
+                          rise: 8,
+                          child: Column(
+                            children: [
+                              Container(
+                                height: 1,
+                                width: 48,
+                                color: _SpeechBubble.line,
+                              ),
+                              const SizedBox(height: AppSpace.md),
+                              Text(
+                                l10n.onboardingAnanSetupQuestion,
+                                textAlign: TextAlign.center,
+                                style: AppTypography.title(
+                                  size: 16,
+                                  height: 1.35,
+                                  color: _SpeechBubble.ink,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Balão de fala claro com a ponta para a nuvem, acima.
+class _SpeechBubble extends StatelessWidget {
+  final Widget child;
+
+  const _SpeechBubble({required this.child});
+
+  static const fill = Color(0xFFF4F7FB);
+  static const ink = AppColors.text;
+  static const muted = AppColors.textMuted;
+  static const line = Color(0xFF7E96AE);
+  static const _tail = 16.0;
+
+  @override
+  Widget build(BuildContext context) {
+    return ConstrainedBox(
+      constraints: const BoxConstraints(maxWidth: 380),
+      child: Stack(
+        clipBehavior: Clip.none,
+        alignment: Alignment.topCenter,
+        children: [
+          Container(
+            width: double.infinity,
+            padding: const EdgeInsets.fromLTRB(22, 20, 22, 22),
+            decoration: BoxDecoration(
+              color: fill,
+              borderRadius: BorderRadius.circular(AppRadii.lg),
+              boxShadow: [
+                BoxShadow(
+                  color: AppColors.dropShadow,
+                  blurRadius: 24,
+                  offset: const Offset(0, 10),
+                ),
+              ],
+            ),
+            child: child,
+          ),
+          Positioned(
+            top: -_tail / 2 + 1,
+            child: Transform.rotate(
+              angle: math.pi / 4,
+              child: Container(
+                width: _tail,
+                height: _tail,
+                decoration: const BoxDecoration(
+                  color: fill,
+                  borderRadius: BorderRadius.only(topLeft: Radius.circular(3)),
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 /// Entra saindo da névoa: opacidade, desfoque e leve subida.
 class _Mist extends StatelessWidget {
   final Animation<double> scene;
@@ -1037,21 +1332,9 @@ class _HabitBeat extends StatelessWidget {
   });
 
   static List<_Choice<int>> _paces(AppLocalizations l10n) => [
-    _Choice(
-      1,
-      l10n.settingsPaceLight,
-      l10n.onboardingPaceCaption(1, 3),
-    ),
-    _Choice(
-      2,
-      l10n.settingsPaceSteady,
-      l10n.onboardingPaceCaption(2, 6),
-    ),
-    _Choice(
-      3,
-      l10n.settingsPaceIntense,
-      l10n.onboardingPaceCaption(3, 9),
-    ),
+    _Choice(1, l10n.settingsPaceLight, l10n.onboardingPaceCaption(1, 3)),
+    _Choice(2, l10n.settingsPaceSteady, l10n.onboardingPaceCaption(2, 6)),
+    _Choice(3, l10n.settingsPaceIntense, l10n.onboardingPaceCaption(3, 9)),
   ];
 
   @override
@@ -1065,6 +1348,7 @@ class _HabitBeat extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          _AnanGuide(scene: scene),
           _Kicker(text: l10n.onboardingKickerGoal, scene: scene),
           SizedBox(height: short ? 18 : 28),
           _Reveal(
@@ -1145,6 +1429,7 @@ class _HabitBeat extends StatelessWidget {
                 size: short ? 32 : 40,
                 height: 1.05,
                 weight: FontWeight.w900,
+                color: a.text,
               ),
             ),
           ),
@@ -1231,6 +1516,7 @@ class _TomorrowBeat extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          _AnanGuide(scene: scene),
           _Kicker(text: l10n.onboardingKickerTomorrow, scene: scene),
           SizedBox(height: short ? 18 : 28),
           _Reveal(
@@ -1470,6 +1756,7 @@ class _SkyBeat extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          _AnanGuide(scene: scene),
           _Kicker(text: l10n.onboardingKickerAppearance, scene: scene),
           SizedBox(height: short ? 16 : 24),
           _Reveal(
@@ -1483,6 +1770,7 @@ class _SkyBeat extends StatelessWidget {
                 size: short ? 32 : 40,
                 height: 1.05,
                 weight: FontWeight.w900,
+                color: a.text,
               ),
             ),
           ),
@@ -1573,6 +1861,7 @@ class _IntentBeat extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          _AnanGuide(scene: scene),
           _Kicker(text: l10n.onboardingKickerIntent, scene: scene),
           SizedBox(height: short ? 16 : 24),
           _Reveal(
@@ -1586,6 +1875,7 @@ class _IntentBeat extends StatelessWidget {
                 size: short ? 28 : 32,
                 height: 1.05,
                 weight: FontWeight.w900,
+                color: a.text,
               ),
             ),
           ),
@@ -1683,11 +1973,7 @@ class _HoldCtaState extends State<_HoldCta>
   void _cancel() {
     if (_done) return;
     _tick = 0;
-    _hold.animateBack(
-      0,
-      duration: AppMotion.standard,
-      curve: AppMotion.enter,
-    );
+    _hold.animateBack(0, duration: AppMotion.standard, curve: AppMotion.enter);
   }
 
   @override
@@ -1885,15 +2171,14 @@ class _OptionCard extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 16),
           decoration: BoxDecoration(
             color: on
-                ? AppMetrics.accentFill(color: AppRoles.selected, alpha: 0.12)
-                : AppColors.night.withValues(alpha: 0.78),
+                ? AppMetrics.accentFill(color: a.selected, alpha: 0.12)
+                : (a.onDark
+                      ? AppColors.night.withValues(alpha: 0.78)
+                      : a.cardFill),
             borderRadius: BorderRadius.circular(AppRadii.md),
             border: Border.all(
               color: on
-                  ? AppMetrics.accentBorder(
-                      color: AppRoles.selected,
-                      alpha: 0.7,
-                    )
+                  ? AppMetrics.accentBorder(color: a.selected, alpha: 0.7)
                   : a.cardBorder,
             ),
           ),
@@ -1907,7 +2192,7 @@ class _OptionCard extends StatelessWidget {
                         child: CinematicIcon(
                           glyph: glyph,
                           size: AppMetrics.iconLg,
-                          accent: on ? AppRoles.selected : a.text,
+                          accent: on ? a.selected : a.text,
                           framed: false,
                         ),
                       )
@@ -1937,7 +2222,7 @@ class _OptionCard extends StatelessWidget {
                         style: AppTypography.body(
                           size: 16,
                           weight: FontWeight.w700,
-                          color: on ? AppRoles.selected : a.text,
+                          color: on ? a.selected : a.text,
                         ),
                       ),
                       TextSpan(
@@ -1963,7 +2248,7 @@ class _OptionCard extends StatelessWidget {
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   border: Border.all(
-                    color: on ? AppRoles.selected : a.textFaint,
+                    color: on ? a.selected : a.textFaint,
                     width: 1.6,
                   ),
                 ),
@@ -1972,9 +2257,9 @@ class _OptionCard extends StatelessWidget {
                     duration: AppMotion.standard,
                     width: on ? 10 : 0,
                     height: on ? 10 : 0,
-                    decoration: const BoxDecoration(
+                    decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      color: AppRoles.selected,
+                      color: a.selected,
                     ),
                   ),
                 ),
@@ -2005,7 +2290,7 @@ class _NameLine extends StatelessWidget {
           textAlign: TextAlign.center,
           textCapitalization: TextCapitalization.words,
           style: AppTypography.display(size: 20, color: a.text),
-          cursorColor: AppRoles.selected,
+          cursorColor: a.selected,
           decoration: InputDecoration(
             hintText: l10n.onboardingNameHint,
             hintStyle: AppTypography.display(
@@ -2020,8 +2305,8 @@ class _NameLine extends StatelessWidget {
             enabledBorder: UnderlineInputBorder(
               borderSide: BorderSide(color: a.cardBorder),
             ),
-            focusedBorder: const UnderlineInputBorder(
-              borderSide: BorderSide(color: AppRoles.selected, width: 1.4),
+            focusedBorder: UnderlineInputBorder(
+              borderSide: BorderSide(color: a.selected, width: 1.4),
             ),
           ),
         ),
@@ -2067,7 +2352,22 @@ class _ThresholdBeat extends StatelessWidget {
       child: Column(
         children: [
           _Kicker(text: l10n.onboardingKickerJourney, scene: scene),
-          const SizedBox(height: 12),
+          const SizedBox(height: 8),
+          // O Anan volta para abrir a jornada — sucesso: deu certo, começou.
+          // Fica fora do cartão: a prévia é igual ao cartão da Home.
+          _Reveal(
+            scene: scene,
+            from: 0.06,
+            to: 0.34,
+            rise: 12,
+            scaleFrom: 0.85,
+            child: CloudMascot(
+              face: CloudFace.sucesso,
+              size: short ? 64 : 84,
+              reactDelay: const Duration(milliseconds: 450),
+            ),
+          ),
+          const SizedBox(height: 4),
           _Reveal(
             scene: scene,
             from: 0.14,
@@ -2079,6 +2379,7 @@ class _ThresholdBeat extends StatelessWidget {
                 size: short ? 28 : 32,
                 height: 1.08,
                 weight: FontWeight.w900,
+                color: Appearance.of(context).text,
               ),
             ),
           ),
@@ -2115,7 +2416,8 @@ class _FirstMissionHero extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
+    // Prévia do cartão herói: arte escura fixa — tinta clara em qualquer look.
+    final a = AppearanceStyle.resolve(AppearanceMode.night);
     final l10n = context.l10n;
     final title = l10n.onboardingFirstSceneTitle;
     final visuals = TrailVisuals.forSlug(_slug);
@@ -2125,98 +2427,103 @@ class _FirstMissionHero extends StatelessWidget {
     );
     final style = HeroCardMoodStyle.of(HeroCardMood.alive, a);
 
-    return Container(
-      width: double.infinity,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
-        border: Border.all(color: style.border, width: style.borderWidth),
-        boxShadow: AppMetrics.cardShadow(elevated: true),
-      ),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(AppMetrics.heroRadius - 0.5),
-        child: Stack(
-          fit: StackFit.expand,
-          children: [
-            AnimatedBuilder(
-              animation: breath,
-              builder: (context, child) {
-                final t = math.sin(breath.value * math.pi * 2);
-                final drift = math.cos(breath.value * math.pi * 2);
-                return Transform.scale(
-                  scale: 1.12 + 0.04 * t,
-                  child: Transform.translate(
-                    offset: Offset(8 * t, 10 * drift),
-                    child: child,
-                  ),
-                );
-              },
-              child: HeroCardColorGrade(
-                mood: HeroCardMood.alive,
-                child: CinematicBackdrop(world: world),
-              ),
-            ),
-            DecoratedBox(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [
-                    Colors.black.withValues(alpha: 0.04),
-                    Colors.black.withValues(alpha: 0.22),
-                    Color.lerp(
-                      a.cardFill,
-                      Colors.black,
-                      0.28,
-                    )!.withValues(alpha: 0.88),
-                  ],
-                  stops: const [0.0, 0.38, 1.0],
+    return Appearance(
+      style: a,
+      mode: AppearanceMode.night,
+      child: Container(
+        width: double.infinity,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
+          border: Border.all(color: style.border, width: style.borderWidth),
+          boxShadow: AppMetrics.cardShadow(elevated: true),
+        ),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(AppMetrics.heroRadius - 0.5),
+          child: Stack(
+            fit: StackFit.expand,
+            children: [
+              AnimatedBuilder(
+                animation: breath,
+                builder: (context, child) {
+                  final t = math.sin(breath.value * math.pi * 2);
+                  final drift = math.cos(breath.value * math.pi * 2);
+                  return Transform.scale(
+                    scale: 1.12 + 0.04 * t,
+                    child: Transform.translate(
+                      offset: Offset(8 * t, 10 * drift),
+                      child: child,
+                    ),
+                  );
+                },
+                child: HeroCardColorGrade(
+                  mood: HeroCardMood.alive,
+                  child: CinematicBackdrop(world: world),
                 ),
               ),
-            ),
-            const HeroCardAtmosphere(mood: HeroCardMood.alive),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(22, 20, 22, 22),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Wrap(
-                    spacing: 8,
-                    runSpacing: 6,
-                    children: [
-                      _HeroChip(
-                        glyph: visuals.glyph,
-                        label: l10n.settingsGenesisTitle,
-                      ),
-                      _HeroChip(
-                        glyph: CinematicGlyph.lamp,
-                        label: l10n.onboardingFiveLamps,
-                      ),
+              DecoratedBox(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [
+                      Colors.black.withValues(alpha: 0.04),
+                      Colors.black.withValues(alpha: 0.22),
+                      Color.lerp(
+                        a.cardFill,
+                        Colors.black,
+                        0.28,
+                      )!.withValues(alpha: 0.88),
                     ],
+                    stops: const [0.0, 0.38, 1.0],
                   ),
-                  const Spacer(),
-                  SectionLabel(l10n.homeHeroReady, color: style.label),
-                  const SizedBox(height: 10),
-                  Text(
-                    title,
-                    style: AppTypography.display(
-                      size: 28,
-                      height: 1.08,
-                      weight: FontWeight.w900,
-                    ),
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    l10n.onboardingFirstSceneMeta,
-                    style: AppTypography.body(
-                      size: 14,
-                      weight: FontWeight.w600,
-                      color: a.textSecondary,
-                    ),
-                  ),
-                ],
+                ),
               ),
-            ),
-          ],
+              const HeroCardAtmosphere(mood: HeroCardMood.alive),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(22, 20, 22, 22),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Wrap(
+                      spacing: 8,
+                      runSpacing: 6,
+                      children: [
+                        _HeroChip(
+                          glyph: visuals.glyph,
+                          label: l10n.settingsGenesisTitle,
+                        ),
+                        _HeroChip(
+                          glyph: CinematicGlyph.lamp,
+                          label: l10n.onboardingFiveLamps,
+                        ),
+                      ],
+                    ),
+                    const Spacer(),
+                    SectionLabel(l10n.homeHeroReady, color: style.label),
+                    const SizedBox(height: 10),
+                    Text(
+                      title,
+                      style: AppTypography.display(
+                        size: 28,
+                        height: 1.08,
+                        weight: FontWeight.w900,
+                        color: a.text,
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    Text(
+                      l10n.onboardingFirstSceneMeta,
+                      style: AppTypography.body(
+                        size: 14,
+                        weight: FontWeight.w600,
+                        color: a.textSecondary,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

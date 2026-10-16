@@ -105,6 +105,9 @@ class CopperCta extends StatefulWidget {
   final VoidCallback? onTap;
   final CinematicGlyph? trailing;
   final CinematicGlyph? leading;
+
+  /// Marca no lugar do glifo à esquerda — o Anan no botão do herói.
+  final Widget? leadingMark;
   final bool expanded;
   final EdgeInsetsGeometry? padding;
   final bool showArrow;
@@ -135,6 +138,7 @@ class CopperCta extends StatefulWidget {
     this.onTap,
     this.trailing = CinematicGlyph.forward,
     this.leading,
+    this.leadingMark,
     this.expanded = true,
     this.padding,
     this.showArrow = false,
@@ -211,8 +215,10 @@ class _CopperCtaState extends State<CopperCta> {
           ),
           padding: pad,
           decoration: BoxDecoration(
+            // Desligado = vidro fosco sobre o céu, não poço escuro (no
+            // Médio o poço virava laje preta no pé da tela).
             color: off
-                ? a.insetFill
+                ? (a.onDark ? a.text.withValues(alpha: 0.08) : a.insetFill)
                 : (w.progress == null ? AppRoles.action : null),
             gradient: off || w.progress == null
                 ? null
@@ -234,6 +240,9 @@ class _CopperCtaState extends State<CopperCta> {
                     color: AppColors.inkOnAccent,
                   ),
                 ),
+                const SizedBox(width: 10),
+              ] else if (w.leadingMark != null) ...[
+                w.leadingMark!,
                 const SizedBox(width: 10),
               ] else if (w.leading != null) ...[
                 CinematicIcon(
@@ -334,18 +343,15 @@ class OutlineCta extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ink = color ?? AppRoles.chrome;
+    final a = Appearance.of(context);
+    final ink = color ?? a.chrome;
     final enabled = onTap != null;
     final border = enabled
         ? ink.withValues(alpha: color != null ? 0.65 : 0.45)
-        : (color != null
-              ? ink.withValues(alpha: 0.35)
-              : Colors.white.withValues(alpha: 0.12));
+        : (color != null ? ink.withValues(alpha: 0.35) : a.cardBorder);
     final textColor = enabled
         ? ink
-        : (color != null
-              ? ink.withValues(alpha: 0.75)
-              : Colors.white.withValues(alpha: 0.35));
+        : (color != null ? ink.withValues(alpha: 0.75) : a.textFaint);
 
     final child = AnimatedOpacity(
       duration: AppMotion.quick,
@@ -356,7 +362,7 @@ class OutlineCta extends StatelessWidget {
         decoration: BoxDecoration(
           color: color != null
               ? ink.withValues(alpha: enabled ? 0.14 : 0.08)
-              : Colors.white.withValues(alpha: 0.04),
+              : a.text.withValues(alpha: 0.04),
           borderRadius: BorderRadius.circular(AppRadii.md),
           border: Border.all(color: border),
         ),
@@ -522,7 +528,7 @@ class AppProgressBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final fill = color ?? AppRoles.chrome;
+    final fill = color ?? a.chrome;
     final track = trackColor ?? a.progressTrack;
     final t = value.clamp(0.0, 1.0);
 
@@ -714,7 +720,7 @@ class CountBadge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ink = color ?? AppRoles.chrome;
+    final ink = color ?? Appearance.of(context).chrome;
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 5),
       decoration: BoxDecoration(
@@ -764,7 +770,7 @@ class SoftBadge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final tone = accent ?? AppRoles.chrome;
+    final tone = accent ?? a.chrome;
     final isBrand = tone.toARGB32() == AppColors.accent.toARGB32();
     final ink = solid ? AppColors.inkOnAccent : (textColor ?? a.text);
     return Container(
@@ -886,7 +892,7 @@ class AppSelectChip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final chrome = accent ?? AppRoles.selected;
+    final chrome = accent ?? a.selected;
     final gold = style == AppSelectChipStyle.solid && selected;
     final useCta = style != AppSelectChipStyle.soft;
 
@@ -920,7 +926,11 @@ class AppSelectChip extends StatelessWidget {
         );
       case AppSelectChipStyle.ghost:
         decoration = BoxDecoration(
-          color: selected ? Colors.white.withValues(alpha: 0.04) : null,
+          color: selected
+              ? (a.onDark
+                    ? Colors.white.withValues(alpha: 0.04)
+                    : AppColors.primary.withValues(alpha: 0.10))
+              : null,
           borderRadius: borderRadius,
           border: selected
               ? Border.all(
@@ -987,12 +997,12 @@ class AppChoiceTile extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 12),
           decoration: BoxDecoration(
             color: selected
-                ? (selectedAccent ?? AppRoles.selected).withValues(alpha: 0.12)
+                ? (selectedAccent ?? a.selected).withValues(alpha: 0.12)
                 : a.cardFillSoft,
             borderRadius: BorderRadius.circular(AppRadii.sm),
             border: Border.all(
               color: selected
-                  ? (selectedAccent ?? AppRoles.selected)
+                  ? (selectedAccent ?? a.selected)
                   : a.cardBorder.withValues(alpha: 0.55),
               width: selected ? 2 : 1,
             ),
@@ -1152,35 +1162,45 @@ class AlertDot extends StatelessWidget {
   }
 }
 
-/// Carregando — um spinner só. [inline] para dentro de botão/linha.
+/// Carregando. Em tela ou seção, é o Anan esperando (flutua); [inline]
+/// (botão, linha) continua o anel de 18 — a nuvem não cabe ali.
 class AppSpinner extends StatelessWidget {
-  final Color color;
+  final Color? color;
   final bool inline;
 
-  const AppSpinner({
-    super.key,
-    this.color = AppRoles.chrome,
-    this.inline = false,
-  });
+  const AppSpinner({super.key, this.color, this.inline = false});
 
   @override
   Widget build(BuildContext context) {
-    final spinner = CircularProgressIndicator(
-      color: color,
-      strokeWidth: inline ? 2 : 3,
+    if (!inline) {
+      return const Center(
+        child: CloudMascot(face: CloudFace.carregando, size: 72),
+      );
+    }
+    final color = this.color ?? Appearance.of(context).chrome;
+    return SizedBox(
+      width: 18,
+      height: 18,
+      child: CircularProgressIndicator(color: color, strokeWidth: 2),
     );
-    if (!inline) return Center(child: spinner);
-    return SizedBox(width: 18, height: 18, child: spinner);
   }
 }
 
-/// Título de sheet — eyebrow opcional, título 20 e apoio. Use no topo de
-/// todo [AppSheetPanel] comum; celebração usa [celebration] (display 28).
+/// Título de sheet — o Anan, eyebrow opcional, título 20 e apoio. Use no
+/// topo de todo [AppSheetPanel] comum; celebração usa [celebration]
+/// (display 28).
+///
+/// Toda sheet tem o Anan: centralizada, a nuvem fica acima do título;
+/// alinhada à esquerda, pequena ao lado dele. [face] escolhe a cara
+/// (feliz por padrão). [leading] troca a nuvem por outra marca (ex.: a
+/// própria nuvem maior); [cloud] false só quando a nuvem já está na sheet.
 class AppSheetHeader extends StatelessWidget {
   final String title;
   final String? eyebrow;
   final String? subtitle;
   final Widget? leading;
+  final CloudFace face;
+  final bool cloud;
   final Color? eyebrowColor;
   final bool center;
   final bool celebration;
@@ -1191,6 +1211,8 @@ class AppSheetHeader extends StatelessWidget {
     this.eyebrow,
     this.subtitle,
     this.leading,
+    this.face = CloudFace.feliz,
+    this.cloud = true,
     this.eyebrowColor,
     this.center = false,
     this.celebration = false,
@@ -1200,13 +1222,12 @@ class AppSheetHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final align = center ? TextAlign.center : TextAlign.start;
-    return Column(
+    final texts = Column(
       crossAxisAlignment: center
           ? CrossAxisAlignment.center
           : CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
       children: [
-        if (leading != null) ...[leading!, const SizedBox(height: AppSpace.md)],
         if (eyebrow != null) ...[
           SectionLabel(eyebrow!, color: eyebrowColor, textAlign: align),
           const SizedBox(height: 6),
@@ -1232,27 +1253,50 @@ class AppSheetHeader extends StatelessWidget {
         ],
       ],
     );
+    final mark = leading ?? (cloud ? CloudMascot(face: face, size: 88) : null);
+    if (center || leading != null || mark == null) {
+      return Column(
+        crossAxisAlignment: center
+            ? CrossAxisAlignment.center
+            : CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          if (mark != null) ...[mark, const SizedBox(height: AppSpace.md)],
+          texts,
+        ],
+      );
+    }
+    // Sheet de lista/formulário: nuvem pequena ao lado do título.
+    return Row(
+      children: [
+        CloudMascot(face: face, size: 52),
+        const SizedBox(width: AppSpace.md),
+        Expanded(child: texts),
+      ],
+    );
   }
 }
 
-/// Estado vazio — glifo 40, título, texto e CTA opcional.
+/// Estado vazio — o Anan, título, texto e CTA opcional.
+///
+/// Vazio é a nuvem triste (nada ainda) por padrão; [face] muda a cara
+/// (feliz quando o vazio é boa notícia, erro quando não abriu). [mark]
+/// troca a nuvem inteira (ex.: a nuvem num tamanho diferente).
 class EmptyState extends StatelessWidget {
-  final CinematicGlyph? glyph;
+  final CloudFace face;
   final Widget? mark;
   final String title;
   final String? body;
   final Widget? action;
-  final Color? accent;
 
   const EmptyState({
     super.key,
-    this.glyph,
+    this.face = CloudFace.triste,
     this.mark,
     required this.title,
     this.body,
     this.action,
-    this.accent,
-  }) : assert(glyph != null || mark != null);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -1265,12 +1309,7 @@ class EmptyState extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          mark ??
-              CinematicIcon(
-                glyph: glyph!,
-                size: AppMetrics.leadingIcon,
-                accent: accent ?? AppRoles.chrome,
-              ),
+          mark ?? CloudMascot(face: face, size: 96),
           const SizedBox(height: AppSpace.md),
           Text(
             title,

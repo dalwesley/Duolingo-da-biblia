@@ -8,6 +8,7 @@ import '../utils/appearance.dart';
 import 'act_feel.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
+import 'cloud_mascot.dart';
 import 'ui_primitives.dart';
 
 /// Confirmação irreversível. O botão só habilita depois de [waitSeconds]
@@ -39,10 +40,8 @@ Future<bool> _showDangerSheet(
   ActHaptics.confirm();
   return showAppSheet<bool>(
     context,
-    builder: (_) => _ResetProgressSheet(
-      kind: kind,
-      subscriptionNote: subscriptionNote,
-    ),
+    builder: (_) =>
+        _ResetProgressSheet(kind: kind, subscriptionNote: subscriptionNote),
   ).then((value) => value == true);
 }
 
@@ -94,8 +93,9 @@ class _ResetProgressSheetState extends State<_ResetProgressSheet> {
     final a = Appearance.of(context);
     final l10n = context.l10n;
     final deletesAccount = widget.kind == _DangerKind.deleteAccount;
-    final awareness =
-        deletesAccount ? l10n.deleteAccountAwareness : l10n.resetAwareness;
+    final awareness = deletesAccount
+        ? l10n.deleteAccountAwareness
+        : l10n.resetAwareness;
 
     return AppSheetPanel(
       tint: accent,
@@ -105,14 +105,7 @@ class _ResetProgressSheetState extends State<_ResetProgressSheet> {
         children: [
           AppSheetHeader(
             center: true,
-            leading: CinematicIcon(
-              glyph: deletesAccount
-                  ? CinematicGlyph.close
-                  : CinematicGlyph.fall,
-              size: AppMetrics.iconHero,
-              accent: accent,
-              glowing: false,
-            ),
+            leading: const CloudMascot(face: CloudFace.triste, size: 112),
             title: deletesAccount ? l10n.deleteAccountTitle : l10n.resetTitle,
             subtitle: deletesAccount ? l10n.deleteAccountBody : l10n.resetBody,
           ),

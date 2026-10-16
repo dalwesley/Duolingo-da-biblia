@@ -43,7 +43,7 @@ class ModeEmblem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final color = DifficultyVisuals.accentFor(difficulty);
-    final onSky = DifficultyVisuals.onSky(color);
+    final onSky = Appearance.of(context).ink(color);
     final ink = DifficultyVisuals.inkOn(difficulty);
     final stamp = (size * 0.38).clamp(12.0, 20.0);
     final dimmed = locked && !cleared;
@@ -108,7 +108,7 @@ class _ClearStamp extends StatelessWidget {
         shape: BoxShape.circle,
         color: fill,
         border: Border.all(
-          color: AppColors.night.withValues(alpha: 0.88),
+          color: Appearance.of(context).cardFill.withValues(alpha: 0.88),
           width: 1.6,
         ),
         boxShadow: [
@@ -239,7 +239,7 @@ class _LabeledMode extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final color = DifficultyVisuals.accentFor(difficulty);
-    final onSky = DifficultyVisuals.onSky(color);
+    final onSky = a.ink(color);
     final l10n = context.l10n;
     final caption = cleared
         ? l10n.modeCaptionCleared
@@ -312,7 +312,7 @@ class ModeStatusChip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final color = DifficultyVisuals.accentFor(difficulty);
-    final onSky = DifficultyVisuals.onSky(color);
+    final onSky = Appearance.of(context).ink(color);
     final label = cleared
         ? context.l10n.modeCleared(difficulty.labelPt)
         : context.l10n.modeNamed(difficulty.labelPt);

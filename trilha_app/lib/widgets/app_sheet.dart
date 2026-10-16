@@ -4,6 +4,7 @@ import '../l10n/app_language.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
+import 'cloud_mascot.dart';
 import 'ui_primitives.dart';
 
 /// Sheets e diálogos do app — uma casca só.
@@ -134,7 +135,7 @@ class SheetGrabber extends StatelessWidget {
       width: 40,
       height: 4,
       decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.22),
+        color: Appearance.of(context).progressTrack,
         borderRadius: BorderRadius.circular(AppRadii.pill),
       ),
     );
@@ -167,9 +168,14 @@ class _Filament extends StatelessWidget {
 }
 
 /// Diálogo padrão — mesmo painel das sheets, centralizado.
+///
+/// Todo diálogo tem o Anan no topo: [face] escolhe a cara (feliz por
+/// padrão; triste nas saídas de risco; erro quando algo falhou). [leading]
+/// troca a nuvem por outra marca só quando a própria nuvem já está ali.
 class AppDialog extends StatelessWidget {
   final String? title;
   final Widget? leading;
+  final CloudFace face;
   final Widget? content;
   final List<Widget> actions;
 
@@ -177,6 +183,7 @@ class AppDialog extends StatelessWidget {
     super.key,
     this.title,
     this.leading,
+    this.face = CloudFace.feliz,
     this.content,
     this.actions = const [],
   }) : assert(title != null || content != null);
@@ -208,20 +215,18 @@ class AppDialog extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            if (leading != null) ...[
-              Center(child: leading),
-              const SizedBox(height: AppSpace.lg),
-            ],
+            Center(child: leading ?? CloudMascot(face: face, size: 96)),
+            const SizedBox(height: AppSpace.lg),
             if (title != null)
               Text(
                 title!,
-                textAlign: leading != null ? TextAlign.center : TextAlign.start,
+                textAlign: TextAlign.center,
                 style: AppTypography.title(size: 20, color: a.text),
               ),
             if (content != null) ...[
               if (title != null) const SizedBox(height: AppSpace.sm),
               DefaultTextStyle.merge(
-                textAlign: leading != null ? TextAlign.center : TextAlign.start,
+                textAlign: TextAlign.center,
                 style: AppTypography.body(
                   height: 1.45,
                   color: a.textMuted(0.8),
@@ -260,7 +265,8 @@ Future<T?> showAppDialog<T>(
   );
 }
 
-/// Confirmação de duas saídas. [danger] pinta a confirmação de erro.
+/// Confirmação de duas saídas. [danger] pinta a confirmação de erro e deixa
+/// o Anan triste (sair, encerrar, desistir).
 Future<bool> showAppConfirm(
   BuildContext context, {
   required String title,
@@ -268,10 +274,12 @@ Future<bool> showAppConfirm(
   String? cancelLabel,
   required String confirmLabel,
   bool danger = false,
+  CloudFace? face,
 }) async {
   final ok = await showAppDialog<bool>(
     context,
     builder: (ctx) => AppDialog(
+      face: face ?? (danger ? CloudFace.triste : CloudFace.feliz),
       title: title,
       content: Text(body),
       actions: [

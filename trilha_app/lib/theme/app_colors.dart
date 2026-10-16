@@ -112,6 +112,21 @@ class AppColors {
     return Color.lerp(color, Colors.white, t)!;
   }
 
+  /// Par de [glyphInk] para papel claro: pastéis de modo viram a versão
+  /// escura; tons claros descem até ler no #F3F7FB. Ouro fica chapado.
+  static Color glyphInkOnLight(Color color) {
+    final v = color.toARGB32();
+    if (v == accent.toARGB32() || v == accentDark.toARGB32()) return color;
+    if (v == sprout.toARGB32()) return sproutDeep;
+    if (v == coral.toARGB32() || v == coralBright.toARGB32()) return coralDeep;
+    if (v == orchid.toARGB32() || v == orchidBright.toARGB32()) {
+      return orchidDeep;
+    }
+    final hsl = HSLColor.fromColor(color);
+    if (hsl.lightness <= 0.46) return color;
+    return hsl.withLightness(0.42).toColor();
+  }
+
   // HUD — camadas do ícone: void, papel escuro, papel médio.
   static const night = Color(0xFF081018);
   static const nightMid = Color(0xFF102038);
@@ -119,11 +134,14 @@ class AppColors {
   static const nightElevated = Color(0xFF1C3454);
   static const sheet = nightMid;
 
-  /// Painéis de card por fase (Appearance.cardFill).
-  static const cardMorning = Color(0xFF16304A);
-  static const cardMorningSoft = Color(0xFF1C3C5C);
-  static const cardAfternoon = Color(0xFF123044);
-  static const cardAfternoonSoft = Color(0xFF184058);
+  /// Papel por aparência (Appearance.cardFill). Família da logo:
+  /// caminho claro, azul do meio, vale.
+  static const cardMorning = Color(0xFFF3F7FB);
+  static const cardMorningSoft = Color(0xFFFFFFFF);
+  static const cardAfternoon = Color(0xFF1E5287);
+  static const cardAfternoonSoft = Color(0xFF28619C);
+  static const cardNight = Color(0xFF12243C);
+  static const cardNightSoft = Color(0xFF182E4A);
 
   static const surface = Color(0xFFE8ECF2);
   static const card = Colors.white;

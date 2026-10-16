@@ -75,7 +75,7 @@ void openSettings(BuildContext context) {
                   title: context.l10n.settingsTitle,
                   subtitle: context.l10n.settingsSubtitle,
                   leadingGlyph: CinematicGlyph.tune,
-                  chromeAccent: AppRoles.chrome,
+                  chromeAccent: appearance.chrome,
                   onBack: () => Navigator.pop(ctx),
                 ),
               ),
@@ -529,12 +529,6 @@ class _SettingsScreenState extends State<SettingsScreen>
               mainAxisSize: MainAxisSize.min,
               children: [
                 AppSheetHeader(
-                  leading: CinematicIcon(
-                    glyph: glyph,
-                    size: AppMetrics.leadingIcon,
-                    accent: AppRoles.chrome,
-                    glowing: false,
-                  ),
                   eyebrow: eyebrow,
                   title: title,
                   subtitle: subtitle,
@@ -556,7 +550,7 @@ class _SettingsScreenState extends State<SettingsScreen>
     String value, {
     required CinematicGlyph glyph,
     required VoidCallback? onTap,
-    Color accent = AppRoles.chrome,
+    Color? accent,
     Color? labelColor,
     Widget? trailing,
   }) {
@@ -575,7 +569,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                 CinematicIcon(
                   glyph: glyph,
                   size: AppMetrics.leadingIcon,
-                  accent: accent,
+                  accent: accent ?? a.chrome,
                   glowing: false,
                 ),
                 const SizedBox(width: AppSpace.md),
@@ -653,7 +647,7 @@ class _SettingsScreenState extends State<SettingsScreen>
     final signedIn = backend.isSignedIn;
     return GlassCard(
       glow: 0.6,
-      tint: AppRoles.chrome,
+      tint: a.chrome,
       padding: const EdgeInsets.fromLTRB(18, 18, 18, 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -861,7 +855,7 @@ class _SettingsScreenState extends State<SettingsScreen>
               CinematicIcon(
                 glyph: glyph,
                 size: AppMetrics.leadingIcon,
-                accent: value ? AppRoles.chrome : a.textFaint,
+                accent: value ? a.chrome : a.textFaint,
                 glowing: false,
               ),
               const SizedBox(width: AppSpace.md),
@@ -896,11 +890,7 @@ class _SettingsScreenState extends State<SettingsScreen>
   Widget _cardTitle(String title) {
     return Semantics(
       header: true,
-      child: RelicChapter(
-        title: title,
-        accent: AppRoles.chrome,
-        divided: false,
-      ),
+      child: RelicChapter(title: title, divided: false),
     );
   }
 
@@ -1335,7 +1325,7 @@ class _PlusStrip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final tone = plus ? AppRoles.reward : AppRoles.chrome;
+    final tone = plus ? AppRoles.reward : a.chrome;
     return Material(
       color: Colors.transparent,
       child: InkWell(
@@ -1483,7 +1473,7 @@ class _ProfileHeader extends StatelessWidget {
                 style: portraitStyle,
                 radius: AppMetrics.avatarLg,
                 borderColor: AppMetrics.accentBorder(
-                  color: AppRoles.chrome,
+                  color: a.chrome,
                   alpha: 0.6,
                 ),
                 onTap: onOpenProfile,
@@ -1499,7 +1489,7 @@ class _ProfileHeader extends StatelessWidget {
                     maxLength: 24,
                     textInputAction: TextInputAction.done,
                     onSubmitted: (_) => onSaveName(),
-                    cursorColor: AppRoles.selected,
+                    cursorColor: a.text,
                     style: AppTypography.display(
                       size: 20,
                       weight: FontWeight.w800,
@@ -1659,7 +1649,7 @@ class _RhythmPath extends StatelessWidget {
                       height: 2,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(AppRadii.pill),
-                        color: AppRoles.selected.withValues(alpha: 0.9),
+                        color: a.selected.withValues(alpha: 0.9),
                       ),
                     ),
                   ),
@@ -1759,9 +1749,9 @@ class _RhythmNode extends StatelessWidget {
       alignment: Alignment.center,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        color: selected ? AppRoles.selected : a.cardFill,
+        color: selected ? a.selected : a.cardFill,
         border: Border.all(
-          color: selected ? AppRoles.selected : a.cardBorder,
+          color: selected ? a.selected : a.cardBorder,
           width: selected ? 2 : 1.4,
         ),
         boxShadow: selected
@@ -1779,7 +1769,7 @@ class _RhythmNode extends StatelessWidget {
         style: AppTypography.title(
           size: selected ? 18 : 14,
           weight: FontWeight.w900,
-          color: selected ? AppColors.night : a.text,
+          color: selected ? a.onSelected : a.text,
         ),
       ),
     );
@@ -1812,7 +1802,7 @@ class _RhythmCaption extends StatelessWidget {
           overflow: TextOverflow.ellipsis,
           style: AppTypography.title(
             size: 12,
-            color: selected ? AppRoles.selected : a.textSecondary,
+            color: selected ? a.selected : a.textSecondary,
           ),
         ),
         const SizedBox(height: 2),
@@ -1832,7 +1822,7 @@ class _RhythmCaption extends StatelessWidget {
           height: 2,
           width: selected ? 28 : 0,
           decoration: BoxDecoration(
-            color: AppRoles.selected,
+            color: a.selected,
             borderRadius: BorderRadius.circular(AppRadii.pill),
           ),
         ),
@@ -2492,11 +2482,11 @@ class _SkyStageFace extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final color = Color.lerp(
-      Appearance.of(context).textSecondary,
-      accent,
-      AppMotion.enter.transform(focus),
-    )!;
+    final tile = AppearanceStyle.resolve(mode);
+    final idle = tile.onDark
+        ? AppColors.textOnDark.withValues(alpha: 0.72)
+        : const Color(0xFF1A3350);
+    final color = Color.lerp(idle, accent, AppMotion.enter.transform(focus))!;
     return Padding(
       padding: const EdgeInsets.fromLTRB(2, 10, 2, 8),
       child: Column(

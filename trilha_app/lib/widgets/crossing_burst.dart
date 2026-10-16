@@ -7,6 +7,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'act_feel.dart';
 import 'cinematic_icon.dart';
+import 'cloud_mascot.dart';
 import 'ui_primitives.dart';
 import 'user_avatar.dart';
 
@@ -228,6 +229,11 @@ class _CrossingBurstState extends State<_CrossingBurst>
       fit: StackFit.expand,
       children: [
         _Backdrop(alpha: alpha, glow: arrived ? 0.6 : 0.2),
+        // O Anan espera enquanto os dois caminham e comemora na chegada.
+        _Anan(
+          face: arrived ? CloudFace.sucesso : CloudFace.carregando,
+          alpha: alpha,
+        ),
         Center(
           child: Transform.scale(
             scale: zoom,
@@ -307,6 +313,11 @@ class _CrossingBurstState extends State<_CrossingBurst>
       fit: StackFit.expand,
       children: [
         _Backdrop(alpha: alpha, glow: 0.3),
+        // Quem sai deixa o Anan triste.
+        _Anan(
+          face: t >= _leaveAt ? CloudFace.triste : CloudFace.carregando,
+          alpha: alpha,
+        ),
         Center(
           child: SizedBox(
             width: _Stage.box,
@@ -512,6 +523,25 @@ class _Backdrop extends StatelessWidget {
             AppColors.night.withValues(alpha: 0.97 * alpha),
           ],
         ),
+      ),
+    );
+  }
+}
+
+/// O Anan acima do palco, acompanhando a travessia.
+class _Anan extends StatelessWidget {
+  final CloudFace face;
+  final double alpha;
+
+  const _Anan({required this.face, required this.alpha});
+
+  @override
+  Widget build(BuildContext context) {
+    return Align(
+      alignment: const Alignment(0, -0.62),
+      child: Opacity(
+        opacity: alpha.clamp(0.0, 1.0),
+        child: CloudMascot(face: face, size: 112, react: false),
       ),
     );
   }

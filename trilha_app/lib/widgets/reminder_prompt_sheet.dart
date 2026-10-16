@@ -6,7 +6,6 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'act_feel.dart';
 import 'app_sheet.dart';
-import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 import '../l10n/app_language.dart';
 
@@ -100,12 +99,7 @@ class _ReminderPromptSheetState extends State<_ReminderPromptSheet> {
         children: [
           AppSheetHeader(
             center: true,
-            leading: const CinematicIcon(
-              glyph: CinematicGlyph.bell,
-              size: AppMetrics.iconHero,
-              accent: AppRoles.chrome,
-              glowing: false,
-            ),
+
             eyebrow: widget.fromSettings
                 ? l10n.reminderDailyEyebrow
                 : l10n.comebackEyebrow,

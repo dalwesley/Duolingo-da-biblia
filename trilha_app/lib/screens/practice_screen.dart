@@ -14,6 +14,7 @@ import '../utils/day_phase.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/top_bar.dart';
+import '../widgets/cloud_mascot.dart';
 import '../widgets/ui_primitives.dart';
 import 'lesson_screen.dart';
 
@@ -92,7 +93,7 @@ class _PracticeScreenState extends State<PracticeScreen> {
 
     if (_mission == null) {
       return AnnotatedRegion<SystemUiOverlayStyle>(
-        value: SystemUiOverlayStyle.light,
+        value: appearance.systemOverlay,
         child: Appearance(
           mode: mode,
           style: appearance,
@@ -120,14 +121,13 @@ class _PracticeScreenState extends State<PracticeScreen> {
                       subtitle: context.l10n.practiceSubtitle,
                       onBack: () => Navigator.pop(context),
                       leadingGlyph: CinematicGlyph.refresh,
-                      chromeAccent: AppRoles.chrome,
                     ),
                   ),
                   Expanded(
                     child: ContentFrame(
                       child: Center(
                         child: EmptyState(
-                          glyph: CinematicGlyph.refresh,
+                          face: CloudFace.feliz,
                           title: context.l10n.practiceEmptyTitle,
                           body: context.l10n.practiceEmptyBody,
                         ),

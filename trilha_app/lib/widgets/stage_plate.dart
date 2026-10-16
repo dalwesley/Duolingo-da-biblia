@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
 import 'ui_primitives.dart';
 
 /// Palco compartilhado — gestos, entrada da lição e cards da trilha.
@@ -19,14 +20,22 @@ class StagePlate extends StatelessWidget {
 
   static const radius = AppRadii.xl;
 
-  static BoxDecoration decoration({required Color accent, bool lit = false}) {
+  static BoxDecoration decoration({
+    required Color accent,
+    bool lit = false,
+    AppearanceStyle? style,
+  }) {
+    final fill = style?.stageFill ?? AppColors.nightElevated;
+    final onDark = style?.onDark ?? true;
     return BoxDecoration(
       borderRadius: BorderRadius.circular(radius),
-      color: Color.lerp(AppColors.nightElevated, accent, lit ? 0.1 : 0.04),
+      color: Color.lerp(fill, accent, lit ? 0.1 : 0.04),
       border: Border.all(
         color: lit
             ? accent.withValues(alpha: 0.72)
-            : AppColors.textOnDark.withValues(alpha: 0.10),
+            : (onDark ? AppColors.textOnDark : AppColors.text).withValues(
+                alpha: 0.10,
+              ),
         width: lit ? 1.6 : 1,
       ),
       boxShadow: AppLight.shadow(elevated: true),
@@ -38,7 +47,11 @@ class StagePlate extends StatelessWidget {
     return Container(
       width: double.infinity,
       padding: padding,
-      decoration: decoration(accent: accent, lit: lit),
+      decoration: decoration(
+        accent: accent,
+        lit: lit,
+        style: Appearance.of(context),
+      ),
       child: child,
     );
   }

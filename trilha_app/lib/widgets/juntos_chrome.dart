@@ -25,17 +25,18 @@ class JuntosSegmentTabs extends StatelessWidget {
   final int index;
   final ValueChanged<int> onChanged;
   final List<({String label, CinematicGlyph? glyph, Widget? mark, bool alert})>
-      items;
+  items;
 
-  /// Cromático do bloco — presença, reward ou chrome.
-  final Color accent;
+  /// Cromático do bloco — presença ou reward. Sem valor: neutro do tema
+  /// (chrome no escuro, azul de seleção no papel).
+  final Color? accent;
 
   const JuntosSegmentTabs({
     super.key,
     required this.index,
     required this.onChanged,
     required this.items,
-    this.accent = AppRoles.chrome,
+    this.accent,
   });
 
   @override
@@ -43,6 +44,7 @@ class JuntosSegmentTabs extends StatelessWidget {
     const height = 52.0;
     const inset = 4.0;
     final a = Appearance.of(context);
+    final tone = accent ?? (a.onDark ? a.chrome : a.selected);
     return Container(
       height: height,
       padding: const EdgeInsets.all(inset),
@@ -68,15 +70,15 @@ class JuntosSegmentTabs extends StatelessWidget {
                   width: slot,
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Color.lerp(a.cardFill, accent, 0.22)!,
+                      color: Color.lerp(a.cardFill, tone, 0.22)!,
                       borderRadius: BorderRadius.circular(AppRadii.md),
                       border: Border.all(
-                        color: accent.withValues(alpha: 0.75),
+                        color: tone.withValues(alpha: 0.75),
                         width: 1.25,
                       ),
                       boxShadow: [
                         BoxShadow(
-                          color: accent.withValues(alpha: 0.28),
+                          color: tone.withValues(alpha: 0.28),
                           blurRadius: 14,
                           offset: const Offset(0, 3),
                         ),
@@ -92,7 +94,7 @@ class JuntosSegmentTabs extends StatelessWidget {
               Row(
                 children: [
                   for (var i = 0; i < n; i++)
-                    Expanded(child: _tab(context.l10n, a, i, items[i])),
+                    Expanded(child: _tab(context.l10n, a, i, items[i], tone)),
                 ],
               ),
             ],
@@ -107,11 +109,13 @@ class JuntosSegmentTabs extends StatelessWidget {
     AppearanceStyle a,
     int i,
     ({String label, CinematicGlyph? glyph, Widget? mark, bool alert}) item,
+    Color tone,
   ) {
     final selected = i == index;
     // Ativo = tinta do accent; idle = chrome frio. Branco fica na cena.
-    final ink = selected ? accent : a.iconMuted;
-    final leading = item.mark ??
+    final ink = selected ? tone : a.iconMuted;
+    final leading =
+        item.mark ??
         (item.glyph != null
             ? CinematicIcon(
                 glyph: item.glyph!,
@@ -282,6 +286,7 @@ class _BondThreadState extends State<BondThread>
   @override
   Widget build(BuildContext context) {
     final reduce = MediaQuery.of(context).disableAnimations;
+    final a = Appearance.of(context);
     return RepaintBoundary(
       child: AnimatedBuilder(
         animation: _flow,
@@ -290,6 +295,9 @@ class _BondThreadState extends State<BondThread>
           painter: _BondPainter(
             ends: widget.ends,
             color: widget.color,
+            dashInk: a.chrome,
+            idle: a.textFaint,
+            spark: a.text,
             t: reduce ? 0.5 : _flow.value,
           ),
         ),
@@ -301,11 +309,23 @@ class _BondThreadState extends State<BondThread>
 class _BondPainter extends CustomPainter {
   final (BondEnd, BondEnd)? ends;
   final Color color;
+
+  /// Tracejado de "ninguém" (chrome do tema).
+  final Color dashInk;
+
+  /// Trecho apagado de quem ainda não caminhou.
+  final Color idle;
+
+  /// Miolo da faísca.
+  final Color spark;
   final double t;
 
   const _BondPainter({
     required this.ends,
     required this.color,
+    required this.dashInk,
+    required this.idle,
+    required this.spark,
     required this.t,
   });
 
@@ -317,7 +337,7 @@ class _BondPainter extends CustomPainter {
 
     if (pair == null) {
       final dim = Paint()
-        ..color = AppRoles.chrome.withValues(alpha: 0.16)
+        ..color = dashInk.withValues(alpha: 0.16)
         ..strokeWidth = 1.4
         ..strokeCap = StrokeCap.round;
       const dash = 5.0;
@@ -333,7 +353,7 @@ class _BondPainter extends CustomPainter {
     final gray = Paint()
       ..strokeWidth = 2
       ..strokeCap = StrokeCap.round
-      ..color = AppColors.textMutedDark.withValues(alpha: 0.72);
+      ..color = idle.withValues(alpha: 0.72);
     final lit = Paint()
       ..strokeWidth = 2
       ..strokeCap = StrokeCap.round
@@ -348,7 +368,7 @@ class _BondPainter extends CustomPainter {
       if (end == BondEnd.gone || to <= from) return;
       if (end == BondEnd.dashed) {
         final dim = Paint()
-          ..color = AppRoles.chrome.withValues(alpha: 0.16)
+          ..color = dashInk.withValues(alpha: 0.16)
           ..strokeWidth = 1.4
           ..strokeCap = StrokeCap.round;
         const dash = 5.0;
@@ -395,13 +415,18 @@ class _BondPainter extends CustomPainter {
     canvas.drawCircle(
       Offset(sx, y),
       2.2,
-      Paint()..color = AppRoles.selected.withValues(alpha: 0.9 * fade),
+      Paint()..color = spark.withValues(alpha: 0.9 * fade),
     );
   }
 
   @override
   bool shouldRepaint(covariant _BondPainter old) =>
-      old.t != t || old.ends != ends || old.color != color;
+      old.t != t ||
+      old.ends != ends ||
+      old.color != color ||
+      old.dashInk != dashInk ||
+      old.idle != idle ||
+      old.spark != spark;
 }
 
 /// Anel que respira em volta de um retrato (quem já caminhou hoje).
@@ -456,6 +481,7 @@ class _JuntosHaloState extends State<JuntosHalo>
   Widget build(BuildContext context) {
     // Anel encostado no retrato (1.6 de cada lado), sem folga escura.
     final ring = widget.size + 3.2;
+    final chrome = Appearance.of(context).chrome;
     return SizedBox(
       width: ring,
       height: ring,
@@ -463,16 +489,14 @@ class _JuntosHaloState extends State<JuntosHalo>
         child: AnimatedBuilder(
           animation: _pulse,
           builder: (context, child) {
-            final t = widget.lit
-                ? AppMotion.move.transform(_pulse.value)
-                : 0.0;
+            final t = widget.lit ? AppMotion.move.transform(_pulse.value) : 0.0;
             return DecoratedBox(
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 border: Border.all(
                   color: widget.lit
                       ? widget.color.withValues(alpha: 0.55 + 0.35 * t)
-                      : AppRoles.chrome.withValues(alpha: 0.1),
+                      : chrome.withValues(alpha: 0.1),
                   width: 1.6,
                 ),
                 boxShadow: widget.lit

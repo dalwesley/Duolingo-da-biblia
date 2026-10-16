@@ -9,6 +9,7 @@ import '../utils/appearance.dart';
 import 'act_feel.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
+import 'cloud_mascot.dart';
 import 'ui_primitives.dart';
 
 /// Abre o sheet para indicar um autor ainda fora do mapa.
@@ -120,12 +121,7 @@ class _AuthorSuggestionSheetState extends State<_AuthorSuggestionSheet> {
           children: [
             Row(
               children: [
-                const CinematicIcon(
-                  glyph: CinematicGlyph.people,
-                  size: AppMetrics.leadingIcon,
-                  accent: AppRoles.chrome,
-                  glowing: false,
-                ),
+                const CloudMascot(face: CloudFace.feliz, size: 52),
                 const SizedBox(width: 12),
                 Expanded(
                   child: Column(
@@ -288,10 +284,7 @@ class _Field extends StatelessWidget {
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(AppRadii.sm),
               borderSide: BorderSide(
-                color: AppMetrics.accentBorder(
-                  color: AppRoles.selected,
-                  alpha: 0.7,
-                ),
+                color: AppMetrics.accentBorder(color: a.selected, alpha: 0.7),
               ),
             ),
           ),

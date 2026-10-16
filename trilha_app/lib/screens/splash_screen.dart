@@ -52,6 +52,17 @@ class _SplashScreenState extends State<SplashScreen>
     _boot();
   }
 
+  bool _cloudsCached = false;
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // Os corpos da nuvem já decodificados: a troca de cara não pisca.
+    if (_cloudsCached) return;
+    _cloudsCached = true;
+    unawaited(CloudMascot.precache(context));
+  }
+
   Future<void> _loadVersionLabel() async {
     final info = await PackageInfo.fromPlatform();
     if (!mounted) return;

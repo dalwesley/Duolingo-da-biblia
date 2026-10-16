@@ -27,7 +27,8 @@ class ShareInsightCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
+    // Imagem exportada: arte escura fixa (marca) — tinta clara em qualquer look.
+    final a = AppearanceStyle.resolve(AppearanceMode.night);
     final line = insight.trim();
     final ref = (verseRef ?? '').trim();
     final verse = (verseText ?? '').trim();

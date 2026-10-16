@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../models/portrait_style.dart';
-import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
 import 'pilgrim_mark.dart';
 
 export '../models/portrait_style.dart';
@@ -13,7 +13,9 @@ class PortraitFace extends StatelessWidget {
   final String? seed;
   final double size;
   final PortraitStyle style;
-  final Color letterColor;
+
+  /// Padrão: [AppearanceStyle.chrome] do tema atual.
+  final Color? letterColor;
 
   const PortraitFace({
     super.key,
@@ -22,7 +24,7 @@ class PortraitFace extends StatelessWidget {
     this.seed,
     required this.size,
     this.style = PortraitStyle.photo,
-    this.letterColor = AppRoles.chrome,
+    this.letterColor,
   });
 
   String get _seed {
@@ -80,7 +82,7 @@ class PortraitFace extends StatelessWidget {
         return _LetterFace(
           initials: initialsOf(name),
           size: size,
-          color: letterColor,
+          color: letterColor ?? Appearance.of(context).chrome,
         );
       case PortraitStyle.avatar:
         return mark;
@@ -120,7 +122,7 @@ class _LetterFace extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ColoredBox(
-      color: AppColors.nightLight,
+      color: Appearance.of(context).insetFill,
       child: Center(
         child: Text(
           initials,

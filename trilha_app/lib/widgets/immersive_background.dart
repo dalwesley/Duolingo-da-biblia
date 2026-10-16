@@ -20,6 +20,9 @@ class AmbientAtmosphere extends StatelessWidget {
     final season = LiturgicalCalendar.accentOf(
       LiturgicalCalendar.momentFor().season,
     );
+    final vignette = resolvedPhase == DayPhase.morning
+        ? AppLight.vignetteLight
+        : AppLight.vignette;
     // Céu da fase do dia → gradação da estação (luz de cima) → vinheta.
     return DecoratedBox(
       decoration: BoxDecoration(
@@ -27,9 +30,9 @@ class AmbientAtmosphere extends StatelessWidget {
       ),
       child: DecoratedBox(
         decoration: BoxDecoration(gradient: AppLight.grade(season)),
-        child: const DecoratedBox(
-          decoration: BoxDecoration(gradient: AppLight.vignette),
-          child: SizedBox.expand(),
+        child: DecoratedBox(
+          decoration: BoxDecoration(gradient: vignette),
+          child: const SizedBox.expand(),
         ),
       ),
     );
@@ -93,7 +96,7 @@ class ImmersiveScaffold extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final scaffoldBg = DayPhaseHelper.scaffoldBackground(style.phase);
-    final statusLight = style.onDark || style.look == AppearanceLook.morning;
+    final statusLight = style.onDark;
 
     return Appearance(
       mode: mode,
@@ -104,6 +107,7 @@ class ImmersiveScaffold extends StatelessWidget {
           statusBarIconBrightness: statusLight
               ? Brightness.light
               : Brightness.dark,
+          statusBarBrightness: statusLight ? Brightness.dark : Brightness.light,
           systemNavigationBarColor: Colors.transparent,
           systemNavigationBarIconBrightness: statusLight
               ? Brightness.light
@@ -213,7 +217,7 @@ class GlassCard extends StatelessWidget {
   }
 
   Widget _stage(AppearanceStyle style) {
-    final tone = tint ?? AppRoles.chrome;
+    final tone = tint ?? style.chrome;
     final g = glow!.clamp(0.0, 1.0);
     final base = color ?? style.cardFill;
     const border = AppMetrics.cardBorderWidth;
@@ -226,7 +230,7 @@ class GlassCard extends StatelessWidget {
           colors: [
             Color.lerp(base, tone, 0.06 + 0.12 * g)!,
             base,
-            Color.lerp(base, AppColors.night, 0.35)!,
+            Color.lerp(base, style.cardDepth, style.onDark ? 0.35 : 0.2)!,
           ],
           stops: const [0.0, 0.5, 1.0],
         ),
@@ -293,17 +297,14 @@ class GlassCard extends StatelessWidget {
 
 /// Linha fina que acende no meio e some nas pontas — topo dos palcos.
 class CardFilament extends StatelessWidget {
-  final Color color;
+  final Color? color;
   final double height;
 
-  const CardFilament({
-    super.key,
-    this.color = AppRoles.chrome,
-    this.height = 1.2,
-  });
+  const CardFilament({super.key, this.color, this.height = 1.2});
 
   @override
   Widget build(BuildContext context) {
+    final color = this.color ?? Appearance.of(context).chrome;
     return Container(
       height: height,
       decoration: BoxDecoration(

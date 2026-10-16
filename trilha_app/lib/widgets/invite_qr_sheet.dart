@@ -296,7 +296,8 @@ class _InvitePreviewTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
+    // Arte escura fixa (marca): tinta clara em qualquer look.
+    final a = AppearanceStyle.resolve(AppearanceMode.night);
     return ClipRRect(
       borderRadius: BorderRadius.circular(AppRadii.md),
       child: SizedBox(
@@ -385,123 +386,128 @@ class InviteShareCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(AppRadii.lg),
-      child: ConstrainedBox(
-        constraints: const BoxConstraints(minHeight: 280),
-        child: Stack(
-          children: [
-            const Positioned.fill(
-              child: ColoredBox(color: AppColors.primaryDark),
-            ),
-            Positioned.fill(
-              child: Opacity(
-                opacity: 0.42,
-                child: Image.asset(
-                  'assets/icon/splash_bg.png',
-                  fit: BoxFit.cover,
-                  alignment: const Alignment(0, -0.1),
-                  filterQuality: FilterQuality.high,
-                ),
+    // Arte escura fixa (marca): tinta clara em qualquer look.
+    final a = AppearanceStyle.resolve(AppearanceMode.night);
+    return Appearance(
+      style: a,
+      mode: AppearanceMode.night,
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(AppRadii.lg),
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(minHeight: 280),
+          child: Stack(
+            children: [
+              const Positioned.fill(
+                child: ColoredBox(color: AppColors.primaryDark),
               ),
-            ),
-            Positioned.fill(
-              child: DecoratedBox(
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: [
-                      Colors.black.withValues(alpha: 0.28),
-                      Colors.transparent,
-                      Colors.black.withValues(alpha: 0.55),
-                    ],
-                    stops: const [0, 0.4, 1],
+              Positioned.fill(
+                child: Opacity(
+                  opacity: 0.42,
+                  child: Image.asset(
+                    'assets/icon/splash_bg.png',
+                    fit: BoxFit.cover,
+                    alignment: const Alignment(0, -0.1),
+                    filterQuality: FilterQuality.high,
                   ),
                 ),
               ),
-            ),
-            Positioned.fill(
-              child: DecoratedBox(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(AppRadii.lg),
-                  border: Border.all(color: a.cardBorder),
+              Positioned.fill(
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [
+                        Colors.black.withValues(alpha: 0.28),
+                        Colors.transparent,
+                        Colors.black.withValues(alpha: 0.55),
+                      ],
+                      stops: const [0, 0.4, 1],
+                    ),
+                  ),
                 ),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(22, 20, 22, 20),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      const StwayLogo(size: 30),
-                      const SizedBox(width: 10),
-                      StwayWordmark(
-                        fontSize: 15,
-                        letterSpacing: 2.4,
-                        letterColor: a.text,
-                        aColor: AppColors.accent,
+              Positioned.fill(
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(AppRadii.lg),
+                    border: Border.all(color: a.cardBorder),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(22, 20, 22, 20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        const StwayLogo(size: 30),
+                        const SizedBox(width: 10),
+                        StwayWordmark(
+                          fontSize: 15,
+                          letterSpacing: 2.4,
+                          letterColor: a.text,
+                          aColor: AppColors.accent,
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 22),
+                    Text(
+                      headline ?? context.l10n.inviteCardHeadline,
+                      style: AppTypography.display(size: 28, color: a.text)
+                          .copyWith(
+                            shadows: [
+                              Shadow(
+                                color: Colors.black.withValues(alpha: 0.5),
+                                blurRadius: 12,
+                                offset: const Offset(0, 2),
+                              ),
+                            ],
+                          ),
+                    ),
+                    const SizedBox(height: 8),
+                    Text(
+                      context.l10n.inviteCardBody(inviterName),
+                      style: AppTypography.body(
+                        size: 14,
+                        height: 1.4,
+                        color: a.textSecondary,
                       ),
-                    ],
-                  ),
-                  const SizedBox(height: 22),
-                  Text(
-                    headline ?? context.l10n.inviteCardHeadline,
-                    style: AppTypography.display(size: 28, color: a.text)
-                        .copyWith(
-                          shadows: [
-                            Shadow(
-                              color: Colors.black.withValues(alpha: 0.5),
-                              blurRadius: 12,
-                              offset: const Offset(0, 2),
-                            ),
+                    ),
+                    const SizedBox(height: 22),
+                    SizedBox(
+                      width: double.infinity,
+                      child: InsetPanel(
+                        padding: const EdgeInsets.symmetric(
+                          vertical: 14,
+                          horizontal: 16,
+                        ),
+                        child: Column(
+                          children: [
+                            SectionLabel(context.l10n.inviteCodeHint),
+                            const SizedBox(height: 6),
+                            Text(code, style: inviteCodeStyle(a)),
                           ],
                         ),
-                  ),
-                  const SizedBox(height: 8),
-                  Text(
-                    context.l10n.inviteCardBody(inviterName),
-                    style: AppTypography.body(
-                      size: 14,
-                      height: 1.4,
-                      color: a.textSecondary,
-                    ),
-                  ),
-                  const SizedBox(height: 22),
-                  SizedBox(
-                    width: double.infinity,
-                    child: InsetPanel(
-                      padding: const EdgeInsets.symmetric(
-                        vertical: 14,
-                        horizontal: 16,
-                      ),
-                      child: Column(
-                        children: [
-                          SectionLabel(context.l10n.inviteCodeHint),
-                          const SizedBox(height: 6),
-                          Text(code, style: inviteCodeStyle(a)),
-                        ],
                       ),
                     ),
-                  ),
-                  if (installHint) ...[
-                    const SizedBox(height: 16),
-                    Text(
-                      context.l10n.inviteCardInstallHint,
-                      style: AppTypography.body(
-                        size: 11,
-                        height: 1.4,
-                        color: a.textFaint,
+                    if (installHint) ...[
+                      const SizedBox(height: 16),
+                      Text(
+                        context.l10n.inviteCardInstallHint,
+                        style: AppTypography.body(
+                          size: 11,
+                          height: 1.4,
+                          color: a.textFaint,
+                        ),
                       ),
-                    ),
+                    ],
                   ],
-                ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

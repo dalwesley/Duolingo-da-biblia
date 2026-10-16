@@ -195,11 +195,7 @@ class _WeekBlock extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        RelicChapter(
-          title: l10n.seasonWeek(weekIndex + 1),
-          accent: AppRoles.chrome,
-          divided: false,
-        ),
+        RelicChapter(title: l10n.seasonWeek(weekIndex + 1), divided: false),
         const SizedBox(height: 8),
         for (final day in days)
           _DayTile(
@@ -304,7 +300,7 @@ class _DayTile extends StatelessWidget {
               accent: done
                   ? AppRoles.success
                   : isToday
-                  ? AppRoles.chrome
+                  ? a.chrome
                   : a.textFaint,
             ),
             const SizedBox(width: 10),
@@ -422,7 +418,6 @@ class _SeasonWalkReviewScreenState extends State<SeasonWalkReviewScreen> {
                     children: [
                       RelicChapter(
                         title: l10n.seasonWeekInsightsHeader,
-                        accent: AppRoles.chrome,
                         divided: false,
                       ),
                       const SizedBox(height: 12),

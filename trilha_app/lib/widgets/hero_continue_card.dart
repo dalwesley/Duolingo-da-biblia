@@ -17,6 +17,7 @@ import 'cinematic_backdrop.dart';
 import 'cinematic_icon.dart';
 import 'hero_card_atmosphere.dart';
 import 'immersive_background.dart';
+import 'cloud_mascot.dart';
 import 'ui_primitives.dart';
 import '../l10n/app_language.dart';
 
@@ -178,7 +179,13 @@ class _HeroContinueCardState extends State<HeroContinueCard>
     final mission = widget.mission;
     if (mission == null) return _completedState(context);
 
-    final a = Appearance.of(context);
+    // Palco pintado (arte escura fixa): tinta clara e véus escuros em todos
+    // os looks — no Claro o scrim com `cardFill` clareava o rodapé.
+    final a = AppearanceStyle.resolve(AppearanceMode.night);
+    // Fora do Escuro, o cenário sobe para o azul do look ([ArtLift]) —
+    // senão o hero vira laje preta no céu claro.
+    final page = Appearance.of(context);
+    final scrimBase = a.cardFill;
     final visuals = TrailVisuals.forSlug(
       widget.trailSlug,
       color: widget.trailColor,
@@ -287,280 +294,293 @@ class _HeroContinueCardState extends State<HeroContinueCard>
     final borderWidth =
         style.borderWidth + (mood == HeroCardMood.alive ? 0.6 : 0);
 
-    return Semantics(
-      button: true,
-      label: '$ctaLabel · ${mission.localizedTitle}',
-      child: GestureDetector(
-        onTapDown: (_) => setState(() => _pressed = true),
-        onTapUp: (details) {
-          setState(() => _pressed = false);
-          if (resting) return;
-          _launch(details.globalPosition);
-        },
-        onTapCancel: () => setState(() => _pressed = false),
-        child: AnimatedScale(
-          scale: _pressed ? 0.986 : 1.0,
-          duration: AppMotion.instant,
-          curve: AppMotion.enter,
-          child: AnimatedContainer(
-            duration: AppMotion.slow,
+    return Appearance(
+      style: a,
+      mode: AppearanceMode.night,
+      child: Semantics(
+        button: true,
+        label: '$ctaLabel · ${mission.localizedTitle}',
+        child: GestureDetector(
+          onTapDown: (_) => setState(() => _pressed = true),
+          onTapUp: (details) {
+            setState(() => _pressed = false);
+            if (resting) return;
+            _launch(details.globalPosition);
+          },
+          onTapCancel: () => setState(() => _pressed = false),
+          child: AnimatedScale(
+            scale: _pressed ? 0.986 : 1.0,
+            duration: AppMotion.instant,
             curve: AppMotion.enter,
-            height: heroHeight,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
-              border: Border.all(color: style.border, width: borderWidth),
-              boxShadow: [
-                ...AppMetrics.cardShadow(elevated: true, hardLip: false),
-                if (mood == HeroCardMood.alive)
-                  BoxShadow(
-                    color: AppRoles.action.withValues(alpha: 0.22),
-                    blurRadius: 28,
-                    offset: const Offset(0, 12),
-                  ),
-              ],
-            ),
-            child: ClipRRect(
-              key: _stageKey,
-              borderRadius: BorderRadius.circular(
-                (AppMetrics.heroRadius - borderWidth).clamp(
-                  0.0,
-                  AppMetrics.heroRadius,
-                ),
-              ),
-              child: Stack(
-                children: [
-                  Positioned.fill(
-                    child: HeroCardColorGrade(
-                      mood: mood,
-                      child: CinematicBackdrop(world: world),
+            child: AnimatedContainer(
+              duration: AppMotion.slow,
+              curve: AppMotion.enter,
+              height: heroHeight,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
+                border: Border.all(color: style.border, width: borderWidth),
+                boxShadow: [
+                  ...AppMetrics.cardShadow(elevated: true, hardLip: false),
+                  if (mood == HeroCardMood.alive)
+                    BoxShadow(
+                      color: AppRoles.action.withValues(alpha: 0.22),
+                      blurRadius: 28,
+                      offset: const Offset(0, 12),
                     ),
+                ],
+              ),
+              child: ClipRRect(
+                key: _stageKey,
+                borderRadius: BorderRadius.circular(
+                  (AppMetrics.heroRadius - borderWidth).clamp(
+                    0.0,
+                    AppMetrics.heroRadius,
                   ),
-                  Positioned.fill(
-                    child: DecoratedBox(
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.topCenter,
-                          end: Alignment.bottomCenter,
-                          colors: _scrimColors(mood, a.cardFill),
-                          stops: const [0.0, 0.38, 1.0],
+                ),
+                child: Stack(
+                  children: [
+                    Positioned.fill(
+                      child: ArtLift(
+                        page: page,
+                        child: Stack(
+                          fit: StackFit.expand,
+                          children: [
+                            HeroCardColorGrade(
+                              mood: mood,
+                              child: CinematicBackdrop(world: world),
+                            ),
+                            DecoratedBox(
+                              decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                  begin: Alignment.topCenter,
+                                  end: Alignment.bottomCenter,
+                                  colors: _scrimColors(mood, scrimBase),
+                                  stops: const [0.0, 0.38, 1.0],
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                     ),
-                  ),
-                  // Peso da atmosfera sob o texto; só partículas finas por cima.
-                  Positioned.fill(
-                    child: HeroCardAtmosphere(
-                      mood: mood,
-                      layer: HeroAtmosphereLayer.back,
-                    ),
-                  ),
-                  Positioned.fill(
-                    child: Padding(
-                      padding: const EdgeInsets.fromLTRB(24, 24, 24, 22),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          _Chip(
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                // Pulso isolado: sem isso cada frame
-                                // repinta o card inteiro.
-                                RepaintBoundary(
-                                  child: AnimatedBuilder(
-                                    animation: _pulseController,
-                                    builder: (context, child) {
-                                      final scale = mood == HeroCardMood.alive
-                                          ? 1.0 + _pulseController.value * 0.06
-                                          : 1.0;
-                                      return Transform.scale(
-                                        scale: scale,
-                                        alignment: Alignment.center,
-                                        child: child,
-                                      );
-                                    },
-                                    child: CinematicIcon(
-                                      glyph: visuals.glyph,
-                                      size: AppMetrics.iconSm,
-                                      accent: AppRoles.chrome,
-                                      glowing: false,
-                                      framed: false,
-                                    ),
-                                  ),
-                                ),
-                                const SizedBox(width: 6),
-                                SectionLabel(
-                                  widget.trailTitle,
-                                  size: 10,
-                                  color: mood == HeroCardMood.dusty
-                                      ? a.textSecondary
-                                      : a.text,
-                                ),
-                              ],
-                            ),
-                          ),
-                          // Título e frase ficam com todo o meio do cartão: antes
-                          // a frase disputava espaço com os Spacers e perdia a
-                          // segunda linha (corte seco, sem reticências).
-                          Expanded(
-                            child: Align(
-                              alignment: const Alignment(-1, 0.1),
-                              child: Column(
-                                mainAxisSize: MainAxisSize.min,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  SectionLabel(
-                                    stepLabel,
-                                    size: 13,
-                                    color: style.label,
-                                  ),
-                                  SizedBox(height: compact ? 6 : 10),
-                                  Text(
-                                    mission.localizedTitle,
-                                    maxLines: compact ? 2 : 3,
-                                    overflow: TextOverflow.ellipsis,
-                                    style: AppTypography.display(
-                                      size: compact ? 28 : 32,
-                                      height: 1.08,
-                                      weight: FontWeight.w900,
-                                      color: a.text,
-                                    ),
-                                  ),
-                                  if (riskLine != null) ...[
-                                    SizedBox(height: compact ? 8 : 12),
-                                    Flexible(
-                                      child: Text(
-                                        riskLine,
-                                        maxLines: 2,
-                                        overflow: TextOverflow.ellipsis,
-                                        style: AppTypography.body(
-                                          size: 14,
-                                          weight: FontWeight.w700,
-                                          height: 1.35,
-                                          color: style.label.withValues(
-                                            alpha: 0.92,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                  if (tease.trim().isNotEmpty &&
-                                      mood != HeroCardMood.dusty) ...[
-                                    if (arrived && yesterday != null) ...[
-                                      const SizedBox(height: 8),
-                                      Text(
-                                        yesterday,
-                                        maxLines: 2,
-                                        overflow: TextOverflow.ellipsis,
-                                        style: AppTypography.body(
-                                          size: 13,
-                                          weight: FontWeight.w700,
-                                          color: a.textFaint,
-                                        ),
-                                      ),
-                                    ],
-                                    if (echoDoor != null) ...[
-                                      const SizedBox(height: 10),
-                                      Flexible(
-                                        child: Text(
-                                          echoDoor,
-                                          maxLines: 3,
-                                          overflow: TextOverflow.ellipsis,
-                                          style: AppTypography.verse(
-                                            size: 18,
-                                            height: 1.35,
-                                            fontStyle: FontStyle.italic,
-                                            color: a.text,
-                                          ),
-                                        ),
-                                      ),
-                                    ] else ...[
-                                      SizedBox(height: compact ? 8 : 12),
-                                      Flexible(
-                                        child: Text(
-                                          tease,
-                                          maxLines: 3,
-                                          overflow: TextOverflow.ellipsis,
-                                          style: AppTypography.verse(
-                                            size: 20,
-                                            height: 1.35,
-                                            color: a.text,
-                                          ),
-                                        ),
-                                      ),
-                                    ],
-                                  ] else if (mission.subtitle
-                                          .trim()
-                                          .isNotEmpty &&
-                                      mood == HeroCardMood.dusty) ...[
-                                    const SizedBox(height: 10),
-                                    Flexible(
-                                      child: Text(
-                                        mission.subtitle.trim(),
-                                        maxLines: 2,
-                                        overflow: TextOverflow.ellipsis,
-                                        style: AppTypography.body(
-                                          size: 14,
-                                          weight: FontWeight.w600,
-                                          color: a.textSecondary,
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ],
-                              ),
-                            ),
-                          ),
-                          SizedBox(height: compact ? 10 : 16),
-                          if (resting)
-                            GestureDetector(
-                              behavior: HitTestBehavior.opaque,
-                              onTapUp: (d) => _launch(d.globalPosition),
-                              child: _CtaBar(label: ctaLabel),
-                            )
-                          else
-                            _CtaBar(label: ctaLabel),
-                          const SizedBox(height: 10),
-                          Center(
-                            child: Text(
-                              resting
-                                  ? l10n.homeHeroExtraSteps(mission.stepsReward)
-                                  : mood == HeroCardMood.dusty
-                                  ? l10n.homeHeroProtect
-                                  : l10n.homeHeroMinutes,
-                              style: AppTypography.body(
-                                size: 13,
-                                weight: FontWeight.w700,
-                                color: footerColor.withValues(alpha: 0.78),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                  if (mood != HeroCardMood.alive)
+                    // Peso da atmosfera sob o texto; só partículas finas por cima.
                     Positioned.fill(
                       child: HeroCardAtmosphere(
                         mood: mood,
-                        layer: HeroAtmosphereLayer.front,
+                        layer: HeroAtmosphereLayer.back,
                       ),
                     ),
-                  Positioned.fill(
-                    child: IgnorePointer(
-                      child: AnimatedBuilder(
-                        animation: _burst,
-                        builder: (context, _) => CustomPaint(
-                          painter: HeroTapBurstPainter(
-                            mood: mood,
-                            progress: _burst.value,
-                            origin: _burstOrigin,
+                    Positioned.fill(
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(24, 24, 24, 22),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            _Chip(
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  // Pulso isolado: sem isso cada frame
+                                  // repinta o card inteiro.
+                                  RepaintBoundary(
+                                    child: AnimatedBuilder(
+                                      animation: _pulseController,
+                                      builder: (context, child) {
+                                        final scale = mood == HeroCardMood.alive
+                                            ? 1.0 +
+                                                  _pulseController.value * 0.06
+                                            : 1.0;
+                                        return Transform.scale(
+                                          scale: scale,
+                                          alignment: Alignment.center,
+                                          child: child,
+                                        );
+                                      },
+                                      child: CinematicIcon(
+                                        glyph: visuals.glyph,
+                                        size: AppMetrics.iconSm,
+                                        accent: AppRoles.chrome,
+                                        glowing: false,
+                                        framed: false,
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(width: 6),
+                                  SectionLabel(
+                                    widget.trailTitle,
+                                    size: 10,
+                                    color: mood == HeroCardMood.dusty
+                                        ? a.textSecondary
+                                        : a.text,
+                                  ),
+                                ],
+                              ),
+                            ),
+                            // Título e frase ficam com todo o meio do cartão: antes
+                            // a frase disputava espaço com os Spacers e perdia a
+                            // segunda linha (corte seco, sem reticências).
+                            Expanded(
+                              child: Align(
+                                alignment: const Alignment(-1, 0.1),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    SectionLabel(
+                                      stepLabel,
+                                      size: 13,
+                                      color: style.label,
+                                    ),
+                                    SizedBox(height: compact ? 6 : 10),
+                                    Text(
+                                      mission.localizedTitle,
+                                      maxLines: compact ? 2 : 3,
+                                      overflow: TextOverflow.ellipsis,
+                                      style: AppTypography.display(
+                                        size: compact ? 28 : 32,
+                                        height: 1.08,
+                                        weight: FontWeight.w900,
+                                        color: a.text,
+                                      ),
+                                    ),
+                                    if (riskLine != null) ...[
+                                      SizedBox(height: compact ? 8 : 12),
+                                      Flexible(
+                                        child: Text(
+                                          riskLine,
+                                          maxLines: 2,
+                                          overflow: TextOverflow.ellipsis,
+                                          style: AppTypography.body(
+                                            size: 14,
+                                            weight: FontWeight.w700,
+                                            height: 1.35,
+                                            color: style.label.withValues(
+                                              alpha: 0.92,
+                                            ),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                    if (tease.trim().isNotEmpty &&
+                                        mood != HeroCardMood.dusty) ...[
+                                      if (arrived && yesterday != null) ...[
+                                        const SizedBox(height: 8),
+                                        Text(
+                                          yesterday,
+                                          maxLines: 2,
+                                          overflow: TextOverflow.ellipsis,
+                                          style: AppTypography.body(
+                                            size: 13,
+                                            weight: FontWeight.w700,
+                                            color: a.textFaint,
+                                          ),
+                                        ),
+                                      ],
+                                      if (echoDoor != null) ...[
+                                        const SizedBox(height: 10),
+                                        Flexible(
+                                          child: Text(
+                                            echoDoor,
+                                            maxLines: 3,
+                                            overflow: TextOverflow.ellipsis,
+                                            style: AppTypography.verse(
+                                              size: 18,
+                                              height: 1.35,
+                                              fontStyle: FontStyle.italic,
+                                              color: a.text,
+                                            ),
+                                          ),
+                                        ),
+                                      ] else ...[
+                                        SizedBox(height: compact ? 8 : 12),
+                                        Flexible(
+                                          child: Text(
+                                            tease,
+                                            maxLines: 3,
+                                            overflow: TextOverflow.ellipsis,
+                                            style: AppTypography.verse(
+                                              size: 20,
+                                              height: 1.35,
+                                              color: a.text,
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ] else if (mission.subtitle
+                                            .trim()
+                                            .isNotEmpty &&
+                                        mood == HeroCardMood.dusty) ...[
+                                      const SizedBox(height: 10),
+                                      Flexible(
+                                        child: Text(
+                                          mission.subtitle.trim(),
+                                          maxLines: 2,
+                                          overflow: TextOverflow.ellipsis,
+                                          style: AppTypography.body(
+                                            size: 14,
+                                            weight: FontWeight.w600,
+                                            color: a.textSecondary,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ],
+                                ),
+                              ),
+                            ),
+                            SizedBox(height: compact ? 10 : 16),
+                            if (resting)
+                              GestureDetector(
+                                behavior: HitTestBehavior.opaque,
+                                onTapUp: (d) => _launch(d.globalPosition),
+                                child: _CtaBar(label: ctaLabel, mood: mood),
+                              )
+                            else
+                              _CtaBar(label: ctaLabel, mood: mood),
+                            const SizedBox(height: 10),
+                            Center(
+                              child: Text(
+                                resting
+                                    ? l10n.homeHeroExtraSteps(
+                                        mission.stepsReward,
+                                      )
+                                    : mood == HeroCardMood.dusty
+                                    ? l10n.homeHeroProtect
+                                    : l10n.homeHeroMinutes,
+                                style: AppTypography.body(
+                                  size: 13,
+                                  weight: FontWeight.w700,
+                                  color: footerColor.withValues(alpha: 0.78),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    if (mood != HeroCardMood.alive)
+                      Positioned.fill(
+                        child: HeroCardAtmosphere(
+                          mood: mood,
+                          layer: HeroAtmosphereLayer.front,
+                        ),
+                      ),
+                    Positioned.fill(
+                      child: IgnorePointer(
+                        child: AnimatedBuilder(
+                          animation: _burst,
+                          builder: (context, _) => CustomPaint(
+                            painter: HeroTapBurstPainter(
+                              mood: mood,
+                              progress: _burst.value,
+                              origin: _burstOrigin,
+                            ),
                           ),
                         ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),
@@ -640,12 +660,16 @@ class _HeroContinueCardState extends State<HeroContinueCard>
   }
 }
 
-/// CTA do herói — o mesmo botão principal do app, na versão grande.
-/// O humor do card (gelo, poeira) fica na atmosfera, não no botão.
+/// CTA do herói — o mesmo botão principal do app, na versão grande, com o
+/// Anan à esquerda do texto. O humor do card (gelo, poeira) fica na
+/// atmosfera; o Anan acompanha: feliz em dia, triste com poeira (a
+/// sequência em risco), parado esperando no gelo. Quando o card volta a
+/// ficar em dia, ele sorri de novo.
 class _CtaBar extends StatelessWidget {
   final String label;
+  final HeroCardMood mood;
 
-  const _CtaBar({required this.label});
+  const _CtaBar({required this.label, required this.mood});
 
   @override
   Widget build(BuildContext context) {
@@ -655,6 +679,14 @@ class _CtaBar extends StatelessWidget {
       decorative: true,
       showArrow: true,
       trailing: null,
+      leadingMark: CloudMascot(
+        face: switch (mood) {
+          HeroCardMood.alive => CloudFace.feliz,
+          HeroCardMood.dusty => CloudFace.triste,
+          HeroCardMood.frozen => CloudFace.carregando,
+        },
+        size: 46,
+      ),
     );
   }
 }

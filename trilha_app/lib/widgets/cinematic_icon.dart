@@ -1,6 +1,7 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
 import 'icon_well.dart';
 import 'lantern_glyph.dart';
 
@@ -233,8 +234,8 @@ class CinematicGlyphResolver {
       CinematicGlyph.echo => AppColors.clay,
       CinematicGlyph.book => accent ?? AppColors.accent,
       CinematicGlyph.scroll || CinematicGlyph.gap => accent ?? AppColors.sand,
-      CinematicGlyph.calendar || CinematicGlyph.hourglass =>
-        accent ?? AppColors.sand,
+      CinematicGlyph.calendar ||
+      CinematicGlyph.hourglass => accent ?? AppColors.sand,
       CinematicGlyph.check => accent ?? AppColors.accent,
       CinematicGlyph.tune ||
       CinematicGlyph.pencil ||
@@ -301,12 +302,18 @@ class CinematicIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final color = accent ?? CinematicGlyphResolver.paletteFor(glyph);
+    final onDark = Appearance.of(context).onDark;
     final glyphSize = framed
         ? (size - IconWell.borderWidth(size) * 2) * 0.82
         : size;
     final child = CustomPaint(
       size: Size.square(glyphSize),
-      painter: _GlyphPainter(glyph: glyph, color: color, premium: true),
+      painter: _GlyphPainter(
+        glyph: glyph,
+        color: color,
+        premium: true,
+        onDark: onDark,
+      ),
     );
 
     if (!framed) {
@@ -321,6 +328,7 @@ class CinematicIcon extends StatelessWidget {
       size: size,
       accent: color,
       glowing: glowing,
+      onDark: onDark,
       child: child,
     );
 
@@ -333,11 +341,13 @@ class _GlyphPainter extends CustomPainter {
   final CinematicGlyph glyph;
   final Color color;
   final bool premium;
+  final bool onDark;
 
   _GlyphPainter({
     required this.glyph,
     required this.color,
     this.premium = true,
+    this.onDark = true,
   });
 
   late Color _ink;
@@ -349,7 +359,9 @@ class _GlyphPainter extends CustomPainter {
     final c = Offset(size.width / 2, size.height / 2);
     final s = size.shortestSide;
 
-    _ink = AppColors.glyphInk(color);
+    _ink = onDark
+        ? AppColors.glyphInk(color)
+        : AppColors.glyphInkOnLight(color);
     _solid = Paint()..color = _ink;
     _soft = Paint()..color = _ink.withValues(alpha: 0.82);
 
@@ -540,10 +552,7 @@ class _GlyphPainter extends CustomPainter {
       ..addOval(
         Rect.fromCenter(center: Offset.zero, width: s * 0.54, height: s * 0.1),
       );
-    canvas.drawPath(
-      Path.combine(PathOperation.difference, ring, hole),
-      _solid,
-    );
+    canvas.drawPath(Path.combine(PathOperation.difference, ring, hole), _solid);
     canvas.restore();
     canvas.drawCircle(c + Offset(s * 0.3, -s * 0.24), s * 0.05, _soft);
   }
@@ -1005,11 +1014,7 @@ class _GlyphPainter extends CustomPainter {
 
   /// Trilha — três marcos numa diagonal, lê em 16px.
   void _path(Canvas canvas, Offset c, double s) {
-    final pts = [
-      Offset(-0.22, 0.24),
-      Offset(0.0, 0.0),
-      Offset(0.22, -0.24),
-    ];
+    final pts = [Offset(-0.22, 0.24), Offset(0.0, 0.0), Offset(0.22, -0.24)];
     final line = Path()
       ..moveTo(c.dx + pts[0].dx * s, c.dy + pts[0].dy * s)
       ..lineTo(c.dx + pts[1].dx * s, c.dy + pts[1].dy * s)
@@ -1443,11 +1448,7 @@ class _GlyphPainter extends CustomPainter {
   }
 
   void _share(Canvas canvas, Offset c, double s) {
-    final nodes = [
-      Offset(-0.18, -0.2),
-      Offset(0.22, 0.0),
-      Offset(-0.18, 0.2),
-    ];
+    final nodes = [Offset(-0.18, -0.2), Offset(0.22, 0.0), Offset(-0.18, 0.2)];
     canvas.drawLine(
       c + Offset(nodes[0].dx * s, nodes[0].dy * s),
       c + Offset(nodes[1].dx * s, nodes[1].dy * s),
@@ -1867,12 +1868,7 @@ class _GlyphPainter extends CustomPainter {
         c.dx + s * 0.18,
         c.dy - s * 0.32,
       )
-      ..quadraticBezierTo(
-        c.dx + s * 0.06,
-        c.dy - s * 0.12,
-        c.dx,
-        c.dy,
-      )
+      ..quadraticBezierTo(c.dx + s * 0.06, c.dy - s * 0.12, c.dx, c.dy)
       ..close();
     canvas.drawPath(left, _solid);
     canvas.drawPath(right, _soft);
@@ -1913,5 +1909,8 @@ class _GlyphPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant _GlyphPainter old) =>
-      old.glyph != glyph || old.color != color || old.premium != premium;
+      old.glyph != glyph ||
+      old.color != color ||
+      old.premium != premium ||
+      old.onDark != onDark;
 }

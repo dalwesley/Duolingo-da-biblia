@@ -201,6 +201,7 @@ class _TrilhasScreenState extends State<TrilhasScreen>
             children: [
               const SizedBox(height: AppSpace.sm),
               AppSheetHeader(
+                face: CloudFace.triste,
                 title: TrailRealm.teologia.label,
                 subtitle: ctx.l10n.realmTeologiaSoonBody,
                 center: true,
@@ -287,6 +288,7 @@ class _TrilhasScreenState extends State<TrilhasScreen>
   }
 
   Widget _buildTrilhas(BuildContext context) {
+    final a = Appearance.of(context);
     final progress = tabListens
         ? context.watch<ProgressService>()
         : context.read<ProgressService>();
@@ -421,7 +423,7 @@ class _TrilhasScreenState extends State<TrilhasScreen>
                       ),
                       child: RelicChapter(
                         title: context.l10n.trailsAreasHeading,
-                        accent: AppRoles.chrome,
+                        accent: a.chrome,
                       ),
                     ),
                   ),
@@ -902,7 +904,8 @@ class _RealmPosterState extends State<_RealmPoster> {
   @override
   Widget build(BuildContext context) {
     final visuals = RealmVisuals.of(widget.info.realm);
-    final a = Appearance.of(context);
+    // Cartaz = céu do reino + chão escuro: tinta clara fixa em todos os looks.
+    final a = AppearanceStyle.resolve(AppearanceMode.night);
     final locked = widget.info.locked;
     final featured = widget.featured;
     final stamps = locked ? const <_TrailStamp>[] : widget.info.stamps;
@@ -958,140 +961,152 @@ class _RealmPosterState extends State<_RealmPoster> {
                 : featured
                 ? 1
                 : 0.3,
-            child: Stack(
-              fit: StackFit.expand,
-              children: [
-                if (scrollable != null)
-                  Flow(
-                    delegate: _ParallaxFlowDelegate(
-                      scrollable: scrollable,
-                      itemContext: context,
-                      overscan: 1.22,
-                    ),
-                    children: [world],
-                  )
-                else
-                  world,
-                _BrandFloor(locked: locked),
-                // Numeral do ato — marca d'água de abertura de capítulo.
-                Positioned(
-                  left: 18,
-                  top: 10,
-                  child: IgnorePointer(
-                    child: Text(
-                      act,
-                      style: AppTypography.display(
-                        size: 48,
-                        weight: FontWeight.w900,
-                        color: visuals.accent.withValues(
-                          alpha: locked ? 0.1 : 0.2,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-                Align(
-                  alignment: Alignment.topCenter,
-                  child: Padding(
-                    padding: const EdgeInsets.only(top: 28),
-                    child: CinematicIcon(
-                      glyph: locked ? CinematicGlyph.lock : visuals.glyph,
-                      size: AppMetrics.iconHero,
-                      accent: visuals.accent,
-                      glowing: featured && widget.animate && !locked,
-                    ),
-                  ),
-                ),
-                Positioned(
-                  left: 20,
-                  right: 20,
-                  bottom: 18,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      SectionLabel(
-                        visuals.eyebrow,
-                        color: visuals.accent,
-                        textAlign: TextAlign.center,
-                      ),
-                      const SizedBox(height: 10),
-                      Text(
-                        widget.info.realm.label,
-                        textAlign: TextAlign.center,
-                        style: AppTypography.display(
-                          size: featured ? 32 : 28,
-                          color: a.text,
-                          height: 1.05,
-                        ),
-                      ),
-                      const SizedBox(height: 8),
-                      Text(
-                        visuals.tagline,
-                        textAlign: TextAlign.center,
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                        style: AppTypography.body(
-                          size: 13,
-                          height: 1.35,
-                          color: a.textSecondary,
-                        ),
-                      ),
-                      if (stamps.isNotEmpty) ...[
-                        const SizedBox(height: 14),
-                        _StampRow(stamps: stamps, accent: visuals.accent),
+            child: Appearance(
+              style: a,
+              mode: AppearanceMode.night,
+              child: Stack(
+                fit: StackFit.expand,
+                children: [
+                  ArtLift(
+                    page: Appearance.of(context),
+                    child: Stack(
+                      fit: StackFit.expand,
+                      children: [
+                        if (scrollable != null)
+                          Flow(
+                            delegate: _ParallaxFlowDelegate(
+                              scrollable: scrollable,
+                              itemContext: context,
+                              overscan: 1.22,
+                            ),
+                            children: [world],
+                          )
+                        else
+                          world,
+                        _BrandFloor(locked: locked),
                       ],
-                      const SizedBox(height: 14),
-                      AppProgressBar(
-                        value: locked ? 0 : widget.info.ratio,
-                        height: 6,
-                        color: visuals.accent,
-                        trackColor: visuals.accent.withValues(alpha: 0.18),
-                      ),
-                      const SizedBox(height: 10),
-                      Row(
-                        children: [
-                          if (featured)
-                            Padding(
-                              padding: const EdgeInsets.only(right: 10),
-                              child: SectionLabel(
-                                context.l10n.journeyNow,
-                                size: 10,
-                                color: visuals.accent,
-                              ),
-                            ),
-                          Expanded(
-                            child: Text(
-                              progressLabel,
-                              maxLines: 1,
-                              overflow: TextOverflow.ellipsis,
-                              style: AppTypography.body(
-                                size: 12,
-                                weight: FontWeight.w700,
-                                color: a.textSecondary,
-                              ),
-                            ),
-                          ),
-                          SectionLabel(
-                            locked
-                                ? context.l10n.trailsLearnMore
-                                : (featured || widget.info.completedCount > 0
-                                      ? context.l10n.commonContinue
-                                      : context.l10n.commonStart),
-                            color: visuals.accent,
-                          ),
-                          const SizedBox(width: 4),
-                          CinematicIcon(
-                            glyph: CinematicGlyph.forward,
-                            size: AppMetrics.iconSm,
-                            accent: visuals.accent,
-                            framed: false,
-                          ),
-                        ],
-                      ),
-                    ],
+                    ),
                   ),
-                ),
-              ],
+                  // Numeral do ato — marca d'água de abertura de capítulo.
+                  Positioned(
+                    left: 18,
+                    top: 10,
+                    child: IgnorePointer(
+                      child: Text(
+                        act,
+                        style: AppTypography.display(
+                          size: 48,
+                          weight: FontWeight.w900,
+                          color: visuals.accent.withValues(
+                            alpha: locked ? 0.1 : 0.2,
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Align(
+                    alignment: Alignment.topCenter,
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 28),
+                      child: CinematicIcon(
+                        glyph: locked ? CinematicGlyph.lock : visuals.glyph,
+                        size: AppMetrics.iconHero,
+                        accent: visuals.accent,
+                        glowing: featured && widget.animate && !locked,
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    left: 20,
+                    right: 20,
+                    bottom: 18,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        SectionLabel(
+                          visuals.eyebrow,
+                          color: visuals.accent,
+                          textAlign: TextAlign.center,
+                        ),
+                        const SizedBox(height: 10),
+                        Text(
+                          widget.info.realm.label,
+                          textAlign: TextAlign.center,
+                          style: AppTypography.display(
+                            size: featured ? 32 : 28,
+                            color: a.text,
+                            height: 1.05,
+                          ),
+                        ),
+                        const SizedBox(height: 8),
+                        Text(
+                          visuals.tagline,
+                          textAlign: TextAlign.center,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: AppTypography.body(
+                            size: 13,
+                            height: 1.35,
+                            color: a.textSecondary,
+                          ),
+                        ),
+                        if (stamps.isNotEmpty) ...[
+                          const SizedBox(height: 14),
+                          _StampRow(stamps: stamps, accent: visuals.accent),
+                        ],
+                        const SizedBox(height: 14),
+                        AppProgressBar(
+                          value: locked ? 0 : widget.info.ratio,
+                          height: 6,
+                          color: visuals.accent,
+                          trackColor: visuals.accent.withValues(alpha: 0.18),
+                        ),
+                        const SizedBox(height: 10),
+                        Row(
+                          children: [
+                            if (featured)
+                              Padding(
+                                padding: const EdgeInsets.only(right: 10),
+                                child: SectionLabel(
+                                  context.l10n.journeyNow,
+                                  size: 10,
+                                  color: visuals.accent,
+                                ),
+                              ),
+                            Expanded(
+                              child: Text(
+                                progressLabel,
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: AppTypography.body(
+                                  size: 12,
+                                  weight: FontWeight.w700,
+                                  color: a.textSecondary,
+                                ),
+                              ),
+                            ),
+                            SectionLabel(
+                              locked
+                                  ? context.l10n.trailsLearnMore
+                                  : (featured || widget.info.completedCount > 0
+                                        ? context.l10n.commonContinue
+                                        : context.l10n.commonStart),
+                              color: visuals.accent,
+                            ),
+                            const SizedBox(width: 4),
+                            CinematicIcon(
+                              glyph: CinematicGlyph.forward,
+                              size: AppMetrics.iconSm,
+                              accent: visuals.accent,
+                              framed: false,
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ),

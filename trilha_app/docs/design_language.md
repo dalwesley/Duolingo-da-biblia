@@ -83,17 +83,48 @@ Regras (gesto na cena):
 - Barra de progresso: `AppProgressBar` (6 compacto / 16 padrão). `RelicProgress`
   só como filete decorativo, nunca para o mesmo dado que outra tela mostra em barra.
 
-A nuvem (a que acompanhou o povo no deserto) é a companheira dos avisos.
+A nuvem se chama **Anan** ("nuvem" em hebraico), a que acompanhou o povo no deserto. É a companheira dos avisos.
 O cartão da próxima cena fica com o clima de antes: teia quando empoeirado,
-brilho quando em dia, gelo quando congelado. Sem nuvem no botão.
+brilho quando em dia, gelo quando congelado. O botão do herói ("Próxima cena" / "Continuar") leva o Anan à esquerda do texto, no clima do card: feliz em dia, triste com poeira, carregando (parado, esperando) no gelo.
 
 - **Sucesso** na fala do fim da cena, também quando a cena fecha limpa ou com bônus. Sem coroa, sem "Cena limpa" e sem a linha da medalha: a cara já diz. Cena que não fechou usa a cara de erro.
-- **Erro** quando a tela inteira não abre (catálogo, trilhas, Bíblia) e há
-  "Tentar de novo". A cena que não carrega as perguntas abre um diálogo
-  com essa cara.
+- **Sucesso** também na folha de subida de nível da liga, no lugar da coroa.
+- **Sucesso** no último ato do onboarding ("A jornada"), acima do título —
+  fora do cartão, que é a prévia do cartão da Home.
+- **Erro** quando a tela inteira não abre (catálogo, trilhas, Bíblia, Juntos
+  sem conexão, peregrino da caravana) e há "Tentar de novo". Enquanto tenta
+  de novo, a cara vira carregando. A cena que não carrega as perguntas abre
+  um diálogo com essa cara.
+- **Triste** no cartão "Você desceu" da liga e na confirmação de zerar
+  progresso ou excluir a conta. Pesa a decisão sem ameaçar.
+- **Feliz** no onboarding, logo depois do prólogo: o Anan se apresenta em
+  duas falas (o nome; o Stway) e pergunta o que a pessoa quer fazer.
+  "Começar jornada" (ouro) e "Pular" levam ao último ato, com os padrões;
+  "Ajustar jornada" segue pelos atos.
+- **Triste** no fio apagado da Companhia sem companheiro, entre você e o
+  "Quem?". Com o convite aberto, **carregando**: o Anan espera junto.
+- **Triste** no vazio do Desafio ("Nenhum desafio ainda"): ainda ninguém
+  com quem disputar.
+- **Triste** no centro da roda de lugares de Grupos vazio ("Quem estuda com
+  você?"), no lugar da lâmpada.
+
+Regra dos vazios de Juntos: sem ninguém ainda, o Anan fica triste.
 - **Carregando** na splash e na primeira carga do catálogo.
 
-Avisos abrem um diálogo com a nuvem (`showAppToastFor`): erro quando o caminho não abre, triste na lâmpada ou no que foi guardado, feliz no gesto de companhia, sucesso no resto. No veredito da cena a nuvem fica no centro, grande, e o cartão não muda de cor: acerto é a cara de sucesso, erro é a cara de erro e lâmpadas acabadas são triste. Na celebração, a contagem e a próxima cena ficam em placa clara, para acompanhar a nuvem; o céu da tela continua escuro. Spinner de botão e o flash de erro dentro da cena continuam no glifo.
+Vazio comum (busca sem resultado, nada guardado, caravana pequena) fica no
+glifo: a nuvem marca o que aconteceu com a pessoa, não a falta de dados.
+
+Onde mais o Anan entra por padrão: `EmptyState` (triste; `face` muda), `AppSpinner` de tela ou seção (carregando, flutuando; o `inline` de botão continua anel), `AnanBeside` ao lado de medalha, selo e baú (sucesso; trancada ou abrindo = carregando), cada ato de ajuste do onboarding (`_AnanGuide`), paywall, escolha de modo e "preparando" do login.
+
+A nuvem é viva: o corpo é imagem (`cloud_body_*.png`, uma borda por cara) e
+o rosto é desenhado em `CloudMascot`. Ao aparecer, parte do rosto neutro e
+reage — a barra do olho abre em X e a cabeça balança no erro; no sucesso os
+olhos viram arco, a boca abre e ela pula; na tristeza os olhos caem e ela
+afunda. Ele entra com um pop (cresce e aparece). Barra pisca de tempos em tempos (feliz, carregando, triste), às vezes duas vezes; de vez em quando faz um gesto parado (pulinho no feliz e no sucesso, suspiro no triste). Cutucar o Anan faz ele reagir sem roubar o toque do botão ou card por baixo. Trocar
+`face` no meio anima de onde está. `react: false` mostra a cara final direto;
+com "reduzir movimento" do sistema, nada se mexe.
+
+**O Anan aparece em toda interação com a pessoa:** diálogo, aviso, sheet e travessia. `AppSheetHeader` já traz a nuvem (centralizada acima do título; alinhada à esquerda, pequena ao lado), com `face` feliz por padrão e `cloud: false` só onde a nuvem já está na sheet. Na travessia (`showCrossingBurst`) ele espera em carregando, comemora (sucesso) na chegada e fica triste quando alguém sai. `AppDialog` já traz a nuvem no topo (`face`, feliz por padrão); `showAppConfirm` com `danger` fica triste; falha usa erro, espera usa carregando. Avisos abrem um diálogo com a nuvem (`showAppToastFor`): erro quando o caminho não abre, triste na lâmpada ou no que foi guardado, feliz no gesto de companhia, sucesso no resto. No veredito da cena a nuvem fica no centro, grande, e o cartão não muda de cor: acerto é a cara de sucesso, erro é a cara de erro e lâmpadas acabadas são triste. Na celebração, a contagem e a próxima cena ficam em placa clara, para acompanhar a nuvem; o céu da tela continua escuro. Spinner de botão e o flash de erro dentro da cena continuam no glifo.
 
 ## Cores de texto (`Appearance.of(context)`)
 
@@ -143,7 +174,7 @@ chip/badge = `AppRadii.sm`; seleção = `AppRadii.pill`.
 | Ponto de novidade | `AlertDot` |
 | Carregando | `AppSpinner` em botão/linha; `CloudMascot` na splash e na 1ª carga do catálogo |
 | Vazio | `EmptyState` |
-| Nuvem | `CloudMascot` — quatro lugares, abaixo |
+| Nuvem | `CloudMascot` — lugares listados abaixo |
 
 ## Botões
 
@@ -222,6 +253,7 @@ como nome de coisa: não é área, não é progresso salvo, não é assinatura.
 | Modos (UI) | **Observação / Compreensão / Interpretação** | semente, caminhada, profundezas (ids internos); "mudar a trilha" para trocar de modo |
 | Texto bíblico | **Bíblia** (produto, leitura); **Palavra** em frase devocional; **Escrituras** (plural) em estudo | — |
 | Vidas | **lâmpada** | — |
+| A nuvem companheira | **Anan** ("o Anan") | mascote, nuvenzinha |
 
 ## Uma ação, um rótulo
 

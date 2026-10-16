@@ -16,6 +16,7 @@ import 'cinematic_icon.dart';
 import 'confetti_overlay.dart';
 import 'immersive_background.dart';
 import 'medal_cinematic_widgets.dart';
+import 'cloud_mascot.dart';
 import 'ui_primitives.dart';
 import '../l10n/app_language.dart';
 
@@ -165,14 +166,8 @@ class _DailyChestSheetState extends State<_DailyChestSheet>
   @override
   void initState() {
     super.initState();
-    _anticipation = AnimationController(
-      vsync: this,
-      duration: AppMotion.scene,
-    );
-    _reveal = AnimationController(
-      vsync: this,
-      duration: AppMotion.scene,
-    );
+    _anticipation = AnimationController(vsync: this, duration: AppMotion.scene);
+    _reveal = AnimationController(vsync: this, duration: AppMotion.scene);
     _pulse = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 2800),
@@ -269,37 +264,43 @@ class _DailyChestSheetState extends State<_DailyChestSheet>
                     color: accent,
                   ),
                   const SizedBox(height: 28),
-                  AnimatedBuilder(
-                    animation: Listenable.merge([
-                      _anticipation,
-                      _reveal,
-                      _pulse,
-                    ]),
-                    builder: (context, _) {
-                      final wobble = _opening
-                          ? math.sin(_anticipation.value * math.pi * 7) *
-                                (1 - _anticipation.value) *
-                                0.16
-                          : 0.0;
-                      final breath =
-                          (math.sin(_pulse.value * math.pi * 2) + 1) / 2;
-                      final revealScale = reward != null
-                          ? AppMotion.spring.transform(_reveal.value)
-                          : 1.0;
-                      return Transform.rotate(
-                        angle: wobble,
-                        child: Transform.scale(
-                          scale: 0.86 + 0.14 * revealScale,
-                          child: MedalHeroEmblem(
-                            accent: accent,
-                            glyph: glyph,
-                            size: 72,
-                            breath: breath,
-                            glowing: true,
+                  // O Anan espera o baú abrir e comemora o que saiu.
+                  AnanBeside(
+                    face: reward != null
+                        ? CloudFace.sucesso
+                        : CloudFace.carregando,
+                    child: AnimatedBuilder(
+                      animation: Listenable.merge([
+                        _anticipation,
+                        _reveal,
+                        _pulse,
+                      ]),
+                      builder: (context, _) {
+                        final wobble = _opening
+                            ? math.sin(_anticipation.value * math.pi * 7) *
+                                  (1 - _anticipation.value) *
+                                  0.16
+                            : 0.0;
+                        final breath =
+                            (math.sin(_pulse.value * math.pi * 2) + 1) / 2;
+                        final revealScale = reward != null
+                            ? AppMotion.spring.transform(_reveal.value)
+                            : 1.0;
+                        return Transform.rotate(
+                          angle: wobble,
+                          child: Transform.scale(
+                            scale: 0.86 + 0.14 * revealScale,
+                            child: MedalHeroEmblem(
+                              accent: accent,
+                              glyph: glyph,
+                              size: 72,
+                              breath: breath,
+                              glowing: true,
+                            ),
                           ),
-                        ),
-                      );
-                    },
+                        );
+                      },
+                    ),
                   ),
                   const SizedBox(height: 22),
                   if (reward == null) ...[

@@ -5,6 +5,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/network_reachability.dart';
 import 'app_sheet.dart';
+import 'cloud_mascot.dart';
 import 'ui_primitives.dart';
 
 /// Diálogo: currículo ainda não baixou (rede, Firebase ou 1ª abertura).
@@ -40,26 +41,9 @@ class _OfflineCurriculumDialog extends StatefulWidget {
       _OfflineCurriculumDialogState();
 }
 
-class _OfflineCurriculumDialogState extends State<_OfflineCurriculumDialog>
-    with SingleTickerProviderStateMixin {
+class _OfflineCurriculumDialogState extends State<_OfflineCurriculumDialog> {
   bool _busy = false;
   String? _hint;
-  late final AnimationController _pulse;
-
-  @override
-  void initState() {
-    super.initState();
-    _pulse = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 1600),
-    )..repeat(reverse: true);
-  }
-
-  @override
-  void dispose() {
-    _pulse.dispose();
-    super.dispose();
-  }
 
   Future<void> _retry() async {
     if (_busy) return;
@@ -99,22 +83,12 @@ class _OfflineCurriculumDialogState extends State<_OfflineCurriculumDialog>
     return PopScope(
       canPop: false,
       child: AppDialog(
+        // Sem rede: erro; baixando de novo: espera.
+        face: _busy ? CloudFace.carregando : CloudFace.erro,
         title: context.l10n.offlineTitle,
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            AnimatedBuilder(
-              animation: _pulse,
-              builder: (context, child) {
-                final t = _pulse.value;
-                return Transform.scale(
-                  scale: 0.96 + 0.04 * t,
-                  child: Opacity(opacity: 0.82 + 0.18 * t, child: child),
-                );
-              },
-              child: const _DisconnectedTrailIcon(size: 88),
-            ),
-            const SizedBox(height: AppSpace.md),
             Text(
               context.l10n.offlineBody,
               textAlign: TextAlign.center,
@@ -161,145 +135,4 @@ class _OfflineCurriculumDialogState extends State<_OfflineCurriculumDialog>
       ),
     );
   }
-}
-
-/// Ícone: trilha que se parte no meio + sinal cortado (desconectado).
-class _DisconnectedTrailIcon extends StatelessWidget {
-  final double size;
-
-  const _DisconnectedTrailIcon({required this.size});
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      width: size,
-      height: size,
-      child: CustomPaint(painter: _DisconnectedTrailPainter()),
-    );
-  }
-}
-
-class _DisconnectedTrailPainter extends CustomPainter {
-  @override
-  void paint(Canvas canvas, Size size) {
-    final s = size.shortestSide;
-    final c = Offset(size.width / 2, size.height / 2);
-    const ink = AppRoles.risk;
-    final soft = ink.withValues(alpha: 0.35);
-    final mute = Colors.white.withValues(alpha: 0.22);
-
-    canvas.drawCircle(
-      c,
-      s * 0.46,
-      Paint()
-        ..color = ink.withValues(alpha: 0.12)
-        ..style = PaintingStyle.fill,
-    );
-    canvas.drawCircle(
-      c,
-      s * 0.46,
-      Paint()
-        ..color = ink.withValues(alpha: 0.35)
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = s * 0.018,
-    );
-
-    final arcPaint = Paint()
-      ..color = soft
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = s * 0.04
-      ..strokeCap = StrokeCap.round;
-
-    for (final r in [0.18, 0.28, 0.38]) {
-      canvas.drawArc(
-        Rect.fromCircle(center: c.translate(0, s * 0.06), radius: s * r),
-        -2.35,
-        1.55,
-        false,
-        arcPaint,
-      );
-    }
-
-    final pathPaint = Paint()
-      ..color = Colors.white.withValues(alpha: 0.88)
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = s * 0.055
-      ..strokeCap = StrokeCap.round
-      ..strokeJoin = StrokeJoin.round;
-
-    final left = Path()
-      ..moveTo(c.dx - s * 0.32, c.dy + s * 0.22)
-      ..quadraticBezierTo(
-        c.dx - s * 0.18,
-        c.dy + s * 0.02,
-        c.dx - s * 0.08,
-        c.dy + s * 0.08,
-      );
-    final right = Path()
-      ..moveTo(c.dx + s * 0.08, c.dy + s * 0.08)
-      ..quadraticBezierTo(
-        c.dx + s * 0.18,
-        c.dy + s * 0.14,
-        c.dx + s * 0.32,
-        c.dy - s * 0.02,
-      );
-    canvas.drawPath(left, pathPaint);
-    canvas.drawPath(right, pathPaint);
-
-    final node = Paint()..color = Colors.white.withValues(alpha: 0.9);
-    canvas.drawCircle(
-      Offset(c.dx - s * 0.32, c.dy + s * 0.22),
-      s * 0.045,
-      node,
-    );
-    canvas.drawCircle(
-      Offset(c.dx + s * 0.32, c.dy - s * 0.02),
-      s * 0.045,
-      node,
-    );
-
-    final gapCenter = Offset(c.dx, c.dy + s * 0.06);
-    canvas.drawCircle(
-      gapCenter,
-      s * 0.09,
-      Paint()..color = AppColors.nightElevated,
-    );
-    canvas.drawCircle(
-      gapCenter,
-      s * 0.09,
-      Paint()
-        ..color = ink.withValues(alpha: 0.55)
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = s * 0.02,
-    );
-
-    final slash = Paint()
-      ..color = ink
-      ..strokeWidth = s * 0.045
-      ..strokeCap = StrokeCap.round;
-    canvas.drawLine(
-      gapCenter + Offset(-s * 0.045, -s * 0.045),
-      gapCenter + Offset(s * 0.045, s * 0.045),
-      slash,
-    );
-    canvas.drawLine(
-      gapCenter + Offset(s * 0.045, -s * 0.045),
-      gapCenter + Offset(-s * 0.045, s * 0.045),
-      slash,
-    );
-
-    canvas.drawCircle(
-      gapCenter + Offset(-s * 0.14, -s * 0.1),
-      s * 0.018,
-      Paint()..color = mute,
-    );
-    canvas.drawCircle(
-      gapCenter + Offset(s * 0.15, s * 0.12),
-      s * 0.015,
-      Paint()..color = mute,
-    );
-  }
-
-  @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }

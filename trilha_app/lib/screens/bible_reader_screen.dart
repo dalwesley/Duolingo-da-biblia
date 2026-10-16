@@ -13,6 +13,7 @@ import '../utils/appearance.dart';
 import '../utils/bible_reading_theme.dart';
 import '../widgets/act_feel.dart';
 import '../widgets/app_sheet.dart';
+import '../widgets/cloud_mascot.dart';
 import '../widgets/bible_passage_picker.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/relic_panel.dart';
@@ -1422,6 +1423,8 @@ Future<void> _showReadingSettings(BuildContext context) {
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
+              const Center(child: CloudMascot(face: CloudFace.feliz, size: 72)),
+              const SizedBox(height: AppSpace.md),
               Text(
                 'Lâmpada para os meus pés é a tua palavra.',
                 textAlign: TextAlign.center,
@@ -1453,7 +1456,7 @@ Future<void> _showReadingSettings(BuildContext context) {
                       child: AppProgressBar(
                         value: (scale - 0.85) / 0.5,
                         height: 6,
-                        color: AppRoles.chrome,
+                        color: a.chrome,
                       ),
                     ),
                   ),
@@ -1551,6 +1554,7 @@ Future<void> _applyTranslation(
     await showAppDialog<void>(
       context,
       builder: (ctx) => AppDialog(
+        face: CloudFace.triste,
         title: context.l10n.bibleTranslationSoonTitle,
         content: Text(context.l10n.bibleTranslationSoonBody(translation.name)),
         actions: [
@@ -1657,7 +1661,7 @@ class _PaperSwatch extends StatelessWidget {
               color: look.page,
               borderRadius: BorderRadius.circular(AppRadii.md),
               border: Border.all(
-                color: selected ? AppRoles.selected : look.pageBorder,
+                color: selected ? appearance.selected : look.pageBorder,
                 width: selected ? 2 : 1,
               ),
             ),

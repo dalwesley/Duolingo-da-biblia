@@ -246,7 +246,9 @@ class BibleBookList extends StatelessWidget {
   final int? selectedIndex;
   final String? title;
   final String? blurb;
-  final Color accent;
+
+  /// Padrão: chrome do tema.
+  final Color? accent;
   final bool expanded;
   final VoidCallback? onToggle;
 
@@ -261,7 +263,7 @@ class BibleBookList extends StatelessWidget {
     this.selectedIndex,
     this.title,
     this.blurb,
-    this.accent = AppRoles.chrome,
+    this.accent,
     this.expanded = true,
     this.onToggle,
     this.framed = true,
@@ -432,7 +434,7 @@ class _BookRow extends StatelessWidget {
       excludeSemantics: true,
       child: Material(
         color: selected
-            ? AppRoles.selected.withValues(alpha: 0.08)
+            ? a.selected.withValues(alpha: 0.08)
             : Colors.transparent,
         child: InkWell(
           onTap: onTap,

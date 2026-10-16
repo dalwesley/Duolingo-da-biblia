@@ -231,7 +231,11 @@ class _UserModerationSheetState extends State<_UserModerationSheet> {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            AppSheetHeader(title: title, subtitle: subtitle),
+            AppSheetHeader(
+              face: CloudFace.triste,
+              title: title,
+              subtitle: subtitle,
+            ),
             const SizedBox(height: AppSpace.lg),
             body,
             if (_error != null) ...[
@@ -308,7 +312,7 @@ class _UserModerationSheetState extends State<_UserModerationSheet> {
                         ? Icons.radio_button_checked
                         : Icons.radio_button_off,
                     size: AppMetrics.iconMd,
-                    color: _reason == reason ? AppRoles.selected : a.textFaint,
+                    color: _reason == reason ? a.selected : a.textFaint,
                   ),
                   const SizedBox(width: 10),
                   Expanded(
@@ -348,9 +352,7 @@ class _UserModerationSheetState extends State<_UserModerationSheet> {
             ),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(AppRadii.sm),
-              borderSide: BorderSide(
-                color: AppRoles.selected.withValues(alpha: 0.7),
-              ),
+              borderSide: BorderSide(color: a.selected.withValues(alpha: 0.7)),
             ),
           ),
         ),

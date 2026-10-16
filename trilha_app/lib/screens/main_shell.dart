@@ -492,7 +492,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       photoUrl: photoUrl,
       onProfileTap: index == 0 ? _openProfile : null,
       showLeading: true,
-      chromeAccent: AppRoles.chrome,
+      chromeAccent: appearance.chrome,
       leadingGlyph: switch (index) {
         0 => CinematicGlyph.home,
         1 => CinematicGlyph.path,

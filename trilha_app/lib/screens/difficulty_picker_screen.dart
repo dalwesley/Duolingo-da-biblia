@@ -14,6 +14,7 @@ import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/mode_selector.dart';
 import '../widgets/top_bar.dart';
+import '../widgets/cloud_mascot.dart';
 import '../widgets/ui_primitives.dart';
 
 /// Primeira escolha do modo de estudo — mesma lista da sheet do mapa.
@@ -113,7 +114,7 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen>
       mode: mode,
       style: appearance,
       child: AnnotatedRegion<SystemUiOverlayStyle>(
-        value: SystemUiOverlayStyle.light,
+        value: appearance.systemOverlay,
         child: Scaffold(
           backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
           body: ImmersiveBackground(
@@ -162,6 +163,11 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen>
                             ),
                             child: Column(
                               children: [
+                                const CloudMascot(
+                                  face: CloudFace.feliz,
+                                  size: 72,
+                                ),
+                                const SizedBox(height: AppSpace.sm),
                                 SectionLabel(
                                   context.l10n.modeSheetEyebrow,
                                   textAlign: TextAlign.center,
@@ -173,6 +179,7 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen>
                                   style: AppTypography.display(
                                     size: 28,
                                     height: 1.15,
+                                    color: appearance.text,
                                   ),
                                 ),
                                 if (_trailTitle.isNotEmpty) ...[

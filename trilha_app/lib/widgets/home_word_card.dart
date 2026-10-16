@@ -198,7 +198,7 @@ class _HomeWordCardState extends State<HomeWordCard> {
                   CinematicIcon(
                     glyph: CinematicGlyph.book,
                     size: AppMetrics.iconSm,
-                    accent: AppRoles.chrome,
+                    accent: a.chrome,
                     framed: false,
                     glowing: false,
                   ),

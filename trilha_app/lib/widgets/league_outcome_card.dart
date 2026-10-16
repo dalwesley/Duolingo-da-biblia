@@ -10,6 +10,7 @@ import '../utils/appearance.dart';
 import 'act_feel.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
+import 'cloud_mascot.dart';
 import 'confetti_overlay.dart';
 import 'immersive_background.dart';
 import 'ui_primitives.dart';
@@ -47,12 +48,15 @@ class LeagueOutcomeCard extends StatelessWidget {
       padding: AppMetrics.cardPadding,
       child: Row(
         children: [
-          CinematicIcon(
-            glyph: demoted ? CinematicGlyph.demote : CinematicGlyph.rise,
-            size: AppMetrics.leadingIcon,
-            accent: demoted ? AppRoles.risk : AppRoles.chrome,
-            glowing: false,
-          ),
+          if (demoted)
+            const CloudMascot(face: CloudFace.triste, size: 56)
+          else
+            CinematicIcon(
+              glyph: CinematicGlyph.rise,
+              size: AppMetrics.leadingIcon,
+              accent: a.chrome,
+              glowing: false,
+            ),
           const SizedBox(width: 12),
           Expanded(
             child: Column(
@@ -429,16 +433,10 @@ class _LeaguePromotionSheet extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           const SizedBox(height: AppSpace.md),
-          const Center(
-            child: CinematicIcon(
-              glyph: CinematicGlyph.crown,
-              size: AppMetrics.iconHero,
-              accent: AppRoles.reward,
-              glowing: true,
-            ),
-          ),
+          const Center(child: CloudMascot(face: CloudFace.sucesso, size: 120)),
           const SizedBox(height: 20),
           AppSheetHeader(
+            cloud: false,
             title: l10n.leagueLevelUpTitle,
             center: true,
             celebration: true,

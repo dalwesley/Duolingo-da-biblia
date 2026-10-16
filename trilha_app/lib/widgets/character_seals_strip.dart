@@ -12,6 +12,7 @@ import 'app_sheet.dart';
 import 'cinematic_icon.dart';
 import 'embossed_glyph.dart';
 import 'share_seal_card.dart';
+import 'cloud_mascot.dart';
 import 'ui_primitives.dart';
 import 'profile_privacy.dart';
 import 'relic_panel.dart';
@@ -75,7 +76,14 @@ class _SealEncounterSheetState extends State<_SealEncounterSheet> {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              _EncounterSeal(glyph: seal.glyph, size: 72, unlocked: true),
+              AnanBeside(
+                size: 56,
+                child: _EncounterSeal(
+                  glyph: seal.glyph,
+                  size: 72,
+                  unlocked: true,
+                ),
+              ),
               const SizedBox(height: 14),
               SectionLabel(seal.name, size: 12, color: AppRoles.reward),
               const SizedBox(height: 10),
@@ -97,11 +105,17 @@ class _SealEncounterSheetState extends State<_SealEncounterSheet> {
               Text(
                 seal.verseText,
                 textAlign: TextAlign.center,
-                style: AppTypography.verse(size: 18, height: 1.45),
+                style: AppTypography.verse(
+                  size: 18,
+                  height: 1.45,
+                  color: a.text,
+                ),
               ),
               const SizedBox(height: 22),
               CopperCta(
-                label: _busy ? context.l10n.bibleSharePreparing : context.l10n.commonShare,
+                label: _busy
+                    ? context.l10n.bibleSharePreparing
+                    : context.l10n.commonShare,
                 expanded: true,
                 leading: CinematicGlyph.share,
                 trailing: null,
@@ -146,9 +160,7 @@ class CharacterSealsStrip extends StatelessWidget {
     final subtitle = acquiredOnly
         ? l10n.sealsCountFact(unlocked.length)
         : unlocked.isEmpty
-        ? (next == null
-              ? l10n.sealsEmptyHint
-              : l10n.sealsStartsAt(next.name))
+        ? (next == null ? l10n.sealsEmptyHint : l10n.sealsStartsAt(next.name))
         : next == null
         ? l10n.sealsAllRevealed(unlocked.length, CharacterSeals.all.length)
         : l10n.sealsStillInText(
@@ -222,7 +234,9 @@ class _SealMedallion extends StatelessWidget {
     final a = Appearance.of(context);
     return Semantics(
       button: unlocked,
-      label: unlocked ? context.l10n.sealsSemanticsNamed(seal.name) : context.l10n.sealsSemanticsLocked,
+      label: unlocked
+          ? context.l10n.sealsSemanticsNamed(seal.name)
+          : context.l10n.sealsSemanticsLocked,
       child: GestureDetector(
         key: ValueKey(seal.id),
         behavior: HitTestBehavior.opaque,

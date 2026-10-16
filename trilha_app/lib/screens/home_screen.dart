@@ -255,11 +255,6 @@ class _HomeScreenState extends State<HomeScreen>
               mainAxisSize: MainAxisSize.min,
               children: [
                 AppSheetHeader(
-                  leading: const CinematicIcon(
-                    glyph: CinematicGlyph.frost,
-                    size: AppMetrics.iconHero,
-                    accent: AppRoles.chrome,
-                  ),
                   title: ctx.l10n.homeFreezeSheetTitle,
                   subtitle: ctx.l10n.homeFreezeSheetBody,
                   center: true,
@@ -310,7 +305,6 @@ class _HomeScreenState extends State<HomeScreen>
                   title: ctx.l10n.navBible,
                   subtitle: ctx.l10n.homeBibleOfflineSubtitle,
                   leadingGlyph: CinematicGlyph.book,
-                  chromeAccent: AppRoles.chrome,
                   onBack: () => Navigator.pop(ctx),
                 ),
               ),
@@ -404,6 +398,7 @@ class _HomeScreenState extends State<HomeScreen>
     required String? missionSlug,
   }) {
     final l10n = context.l10n;
+    final a = Appearance.of(context);
     final juntos = JuntosInbox.pending(context);
     final mistakes = progress.mistakeQuestionIds.length;
     return [
@@ -421,7 +416,7 @@ class _HomeScreenState extends State<HomeScreen>
           glyph: CinematicGlyph.people,
           title: l10n.navTogether,
           caption: l10n.homeJuntosNews(juntos),
-          color: AppRoles.chrome,
+          color: a.chrome,
           hot: true,
           onTap: () => widget.onOpenLeague?.call(),
         ),
@@ -445,7 +440,7 @@ class _HomeScreenState extends State<HomeScreen>
           glyph: CinematicGlyph.crown,
           title: l10n.seasonChallengeTitle,
           caption: l10n.seasonChallengeSeeProgress,
-          color: AppRoles.chrome,
+          color: a.chrome,
           onTap: () => _openCardSheet(SeasonChallengeBanner(catalog: trails)),
         ),
       if (mistakes > 0)
@@ -453,7 +448,7 @@ class _HomeScreenState extends State<HomeScreen>
           glyph: CinematicGlyph.refresh,
           title: l10n.homeReviewTitle,
           caption: l10n.homeReviewCaption(mistakes),
-          color: AppRoles.chrome,
+          color: a.chrome,
           onTap: () => Navigator.of(
             context,
           ).push(MaterialPageRoute(builder: (_) => const PracticeScreen())),
@@ -892,10 +887,10 @@ class _WalkHomeCard extends StatelessWidget {
           onTap: () => openSeasonWalk(context),
           child: Row(
             children: [
-              const CinematicIcon(
+              CinematicIcon(
                 glyph: CinematicGlyph.calendar,
                 size: AppMetrics.leadingIcon,
-                accent: AppRoles.chrome,
+                accent: a.chrome,
               ),
               const SizedBox(width: AppSpace.md),
               Expanded(
@@ -1045,7 +1040,7 @@ class _MoreTileRowState extends State<_MoreTileRow> {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final tile = widget.tile;
-    final tone = AppColors.glyphInk(tile.color);
+    final tone = a.ink(tile.color);
     return Semantics(
       button: true,
       label: '${tile.title}, ${tile.caption}',

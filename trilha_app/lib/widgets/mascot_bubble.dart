@@ -32,8 +32,11 @@ class MascotBubble extends StatelessWidget {
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
             decoration: BoxDecoration(
+              // Véu escuro só nos looks escuros; no Claro, papel do card.
               color: dark
-                  ? Colors.black.withValues(alpha: 0.35)
+                  ? (a.onDark
+                        ? Colors.black.withValues(alpha: 0.35)
+                        : a.cardFill)
                   : AppColors.card,
               borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(AppMetrics.cardRadius),

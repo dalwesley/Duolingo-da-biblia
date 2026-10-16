@@ -9,6 +9,17 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+### Added
+- **Anan**, a nuvem companheira: o corpo é imagem e o rosto é desenhado. Ele reage ao aparecer, pisca, faz um gesto parado e responde ao toque. Entra em avisos, sheets, diálogos, travessia, vazios de Juntos, erros de tela e no começo da jornada
+
+### Changed
+- **Aparência** passa a mudar céu e cards juntos, na família azul da logo. Antes só o fundo andava; o papel continuava o mesmo navy
+- **Claro:** céu claro, cards em papel claro, texto escuro. Chip selecionado no azul da marca. Ícones da barra de status escuros
+- **Médio:** céu e cards no azul do meio, texto claro
+- **Escuro:** céu da noite e cards mais escuros que o Médio, texto claro
+- Trilha de fundo ganha arte clara e neutra para acompanhar o céu
+- Placas da cena, barra, chrome e o tema do Material seguem o papel de cada aparência
+
 ## [1.0.35] — 2026-10-05
 
 ### Changed

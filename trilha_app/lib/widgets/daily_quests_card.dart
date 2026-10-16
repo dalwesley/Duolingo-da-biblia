@@ -42,7 +42,7 @@ class DailyQuestsCard extends StatelessWidget {
               '$doneCount/${quests.length}',
               color: doneCount >= quests.length
                   ? AppRoles.success
-                  : AppRoles.chrome,
+                  : Appearance.of(context).chrome,
             ),
           ),
           const SizedBox(height: AppSpace.xs),
@@ -81,7 +81,7 @@ class _QuestRow extends StatelessWidget {
     final done = claimed || value >= q.target;
     final canTap = onTap != null && !claimed;
     // Ícone = chrome; concluída = sucesso; passos = recompensa.
-    final tone = done ? AppRoles.success : AppRoles.chrome;
+    final tone = done ? AppRoles.success : a.chrome;
 
     return Material(
       color: Colors.transparent,

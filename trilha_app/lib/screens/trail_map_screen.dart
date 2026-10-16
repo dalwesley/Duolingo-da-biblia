@@ -217,7 +217,6 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                     subtitle: context.l10n.commonComingSoon,
                     onBack: () => Navigator.pop(context),
                     leadingGlyph: CinematicGlyphResolver.forTrail(trail.slug),
-                    chromeAccent: AppRoles.chrome,
                   ),
                 ),
                 Expanded(
@@ -231,7 +230,6 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                       ),
                       children: [
                         EmptyState(
-                          glyph: CinematicGlyphResolver.forTrail(trail.slug),
                           title: context.l10n.commonComingSoon,
                           body: trail.localizedDescription,
                         ),
@@ -269,7 +267,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
       mode: mode,
       style: appearance,
       child: AnnotatedRegion<SystemUiOverlayStyle>(
-        value: SystemUiOverlayStyle.light,
+        value: appearance.systemOverlay,
         child: Scaffold(
           backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
           body: ImmersiveBackground(
@@ -304,7 +302,6 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                     onBack: () => Navigator.pop(context),
                     leadingGlyph: headerGlyph,
                     // TopBar = chrome neutro; cor do modo/área só no conteúdo.
-                    chromeAccent: AppRoles.chrome,
                   ),
                 ),
                 Expanded(
@@ -595,10 +592,9 @@ class _TrailJourneyIntro extends StatelessWidget {
         clearedModeIds.isEmpty) {
       return const SizedBox.shrink();
     }
+    final a = Appearance.of(context);
     final mode = TrailDifficulty.fromId(difficultyId);
-    final color = mode != null
-        ? DifficultyVisuals.accentFor(mode)
-        : AppRoles.chrome;
+    final color = mode != null ? DifficultyVisuals.accentFor(mode) : a.chrome;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -618,7 +614,7 @@ class _TrailJourneyIntro extends StatelessWidget {
             style: AppTypography.body(
               size: 12,
               weight: FontWeight.w700,
-              color: DifficultyVisuals.onSky(color).withValues(alpha: 0.88),
+              color: a.ink(color).withValues(alpha: 0.88),
             ),
           ),
         ],

@@ -177,7 +177,7 @@ class _MemoryScreenState extends State<MemoryScreen>
       mode: mode,
       style: appearance,
       child: AnnotatedRegion<SystemUiOverlayStyle>(
-        value: SystemUiOverlayStyle.light,
+        value: appearance.systemOverlay,
         child: Scaffold(
           backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
           body: ImmersiveBackground(
@@ -200,7 +200,6 @@ class _MemoryScreenState extends State<MemoryScreen>
                     subtitle: context.l10n.memorySubtitle,
                     onBack: () => Navigator.pop(context),
                     leadingGlyph: CinematicGlyph.heart,
-                    chromeAccent: AppRoles.chrome,
                   ),
                 ),
                 Expanded(
@@ -547,7 +546,8 @@ class _CardBack extends StatelessWidget {
                   size: 24,
                   weight: FontWeight.w600,
                   height: 1.45,
-                  color: Appearance.of(context).text,
+                  // Verso sobre a arte escura do cartão: tinta clara fixa.
+                  color: AppColors.textOnDark.withValues(alpha: 0.98),
                 ),
               ),
             ),
@@ -582,7 +582,7 @@ class _VerseSkeleton extends StatelessWidget {
       child: Container(
         height: 12,
         decoration: BoxDecoration(
-          color: Appearance.of(context).cardBorder,
+          color: AppColors.textOnDark.withValues(alpha: 0.14),
           borderRadius: BorderRadius.circular(AppRadii.pill),
         ),
       ),
@@ -608,7 +608,6 @@ class _AnswerRow extends StatelessWidget {
           child: OutlineCta(
             label: context.l10n.memoryNotYet,
             leading: CinematicGlyph.refresh,
-            color: AppRoles.chrome,
             onTap: onLearning,
             uppercase: false,
             padding: const EdgeInsets.symmetric(vertical: AppSpace.lg),

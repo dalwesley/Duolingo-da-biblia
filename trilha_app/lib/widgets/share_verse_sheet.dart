@@ -177,7 +177,8 @@ class ShareVerseCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
+    // Imagem exportada: arte escura fixa (marca) — tinta clara em qualquer look.
+    final a = AppearanceStyle.resolve(AppearanceMode.night);
     return ClipRRect(
       borderRadius: BorderRadius.circular(AppRadii.lg),
       child: ConstrainedBox(
@@ -262,11 +263,8 @@ class ShareVerseCard extends StatelessWidget {
                   const SizedBox(height: 22),
                   Text(
                     '$bookName $chapter:$verse',
-                    style:
-                        AppTypography.title(
-                          size: 12,
-                          color: a.textSecondary,
-                        ).copyWith(
+                    style: AppTypography.title(size: 12, color: a.textSecondary)
+                        .copyWith(
                           shadows: [
                             Shadow(
                               color: Colors.black.withValues(alpha: 0.45),

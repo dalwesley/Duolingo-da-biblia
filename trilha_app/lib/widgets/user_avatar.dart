@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../l10n/app_language.dart';
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 import 'portrait_face.dart';
 
@@ -33,17 +34,15 @@ class UserAvatar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final border = borderColor ?? AppRoles.chrome.withValues(alpha: 0.18);
+    final a = Appearance.of(context);
+    final border = borderColor ?? a.chrome.withValues(alpha: 0.18);
     // Rosto ocupa o círculo inteiro; a borda é desenhada por cima (não
     // empurra o rosto para dentro nem deixa folga escura em volta).
     final face = Container(
       width: radius * 2,
       height: radius * 2,
       clipBehavior: Clip.antiAlias,
-      decoration: const BoxDecoration(
-        shape: BoxShape.circle,
-        color: AppColors.nightLight,
-      ),
+      decoration: BoxDecoration(shape: BoxShape.circle, color: a.insetFill),
       foregroundDecoration: borderColor == Colors.transparent
           ? null
           : BoxDecoration(

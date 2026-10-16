@@ -76,7 +76,7 @@ class MainBottomNav extends StatelessWidget {
               children: List.generate(tabs.length, (i) {
                 final active = currentIndex == i;
                 final tab = tabs[i];
-                const tone = AppRoles.chrome;
+                final tone = style.chrome;
                 final color = active ? tone : style.iconMuted;
 
                 return Expanded(

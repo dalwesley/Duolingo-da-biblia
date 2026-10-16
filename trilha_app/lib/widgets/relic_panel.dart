@@ -11,7 +11,7 @@ import 'ui_primitives.dart';
 /// selo pedem [AppRoles.reward] explicitamente.
 class RelicPanel extends StatelessWidget {
   final Widget child;
-  final Color accent;
+  final Color? accent;
   final EdgeInsetsGeometry padding;
   final VoidCallback? onTap;
   final bool elevated;
@@ -19,7 +19,7 @@ class RelicPanel extends StatelessWidget {
   const RelicPanel({
     super.key,
     required this.child,
-    this.accent = AppRoles.chrome,
+    this.accent,
     this.padding = AppMetrics.cardPadding,
     this.onTap,
     this.elevated = false,
@@ -27,6 +27,7 @@ class RelicPanel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final accent = this.accent ?? Appearance.of(context).chrome;
     return GlassCard(
       padding: EdgeInsets.zero,
       elevated: elevated,
@@ -63,12 +64,13 @@ class RelicPanel extends StatelessWidget {
 
 /// Wash radial sutil — o mesmo fôlego dos selos e do cofre.
 class RelicAtmosphere extends StatelessWidget {
-  final Color accent;
+  final Color? accent;
 
-  const RelicAtmosphere({super.key, this.accent = AppRoles.chrome});
+  const RelicAtmosphere({super.key, this.accent});
 
   @override
   Widget build(BuildContext context) {
+    final accent = this.accent ?? Appearance.of(context).chrome;
     return IgnorePointer(
       child: DecoratedBox(
         decoration: BoxDecoration(
@@ -91,7 +93,7 @@ class RelicAtmosphere extends StatelessWidget {
 class RelicChapter extends StatelessWidget {
   final String title;
   final String? whisper;
-  final Color accent;
+  final Color? accent;
   final Widget? trailing;
   final bool displayTitle;
 
@@ -105,7 +107,7 @@ class RelicChapter extends StatelessWidget {
     super.key,
     required this.title,
     this.whisper,
-    this.accent = AppRoles.chrome,
+    this.accent,
     this.trailing,
     this.displayTitle = true,
     this.action,
@@ -114,6 +116,7 @@ class RelicChapter extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final accent = this.accent ?? Appearance.of(context).chrome;
     final a = Appearance.of(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -171,12 +174,13 @@ class RelicChapter extends StatelessWidget {
 }
 
 class RelicHairline extends StatelessWidget {
-  final Color accent;
+  final Color? accent;
 
-  const RelicHairline({super.key, this.accent = AppRoles.chrome});
+  const RelicHairline({super.key, this.accent});
 
   @override
   Widget build(BuildContext context) {
+    final accent = this.accent ?? Appearance.of(context).chrome;
     return Container(
       height: 1,
       decoration: BoxDecoration(
@@ -196,16 +200,13 @@ class RelicHairline extends StatelessWidget {
 /// mostra em barra (progresso de trilha), use [AppProgressBar].
 class RelicProgress extends StatelessWidget {
   final double value;
-  final Color accent;
+  final Color? accent;
 
-  const RelicProgress({
-    super.key,
-    required this.value,
-    this.accent = AppRoles.chrome,
-  });
+  const RelicProgress({super.key, required this.value, this.accent});
 
   @override
   Widget build(BuildContext context) {
+    final accent = this.accent ?? Appearance.of(context).chrome;
     final a = Appearance.of(context);
     final t = value.clamp(0.0, 1.0);
     return SizedBox(

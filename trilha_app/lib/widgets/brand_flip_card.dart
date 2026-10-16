@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
 import 'stage_plate.dart';
 import 'stway_brand.dart';
 
@@ -34,10 +35,8 @@ class _BrandFlipCardState extends State<BrandFlipCard>
   @override
   void initState() {
     super.initState();
-    _flip = AnimationController(
-      vsync: this,
-      duration: AppMotion.slow,
-    )..addListener(_onFlipTick);
+    _flip = AnimationController(vsync: this, duration: AppMotion.slow)
+      ..addListener(_onFlipTick);
   }
 
   @override
@@ -115,7 +114,10 @@ class _BrandBack extends StatelessWidget {
   Widget build(BuildContext context) {
     final radius = BorderRadius.circular(StagePlate.radius);
     return DecoratedBox(
-      decoration: StagePlate.decoration(accent: accent),
+      decoration: StagePlate.decoration(
+        accent: accent,
+        style: Appearance.of(context),
+      ),
       child: ClipRRect(
         borderRadius: radius,
         child: Stack(

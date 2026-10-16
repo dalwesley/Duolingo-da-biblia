@@ -266,10 +266,7 @@ class _ModeCarouselState extends State<ModeCarousel>
       vsync: this,
       duration: const Duration(seconds: 8),
     )..repeat();
-    _nudge = AnimationController(
-      vsync: this,
-      duration: AppMotion.slow,
-    );
+    _nudge = AnimationController(vsync: this, duration: AppMotion.slow);
   }
 
   @override
@@ -288,11 +285,7 @@ class _ModeCarouselState extends State<ModeCarousel>
   }
 
   void _goTo(int i) {
-    _pages.animateToPage(
-      i,
-      duration: AppMotion.slow,
-      curve: AppMotion.enter,
-    );
+    _pages.animateToPage(i, duration: AppMotion.slow, curve: AppMotion.enter);
   }
 
   Future<void> _confirm(ModeStatus s) async {
@@ -458,7 +451,9 @@ class _ModePortal extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
+    // Portal = cena escura + véu noturno: tinta clara fixa em todos os looks.
+    final a = AppearanceStyle.resolve(AppearanceMode.night);
+    final page = Appearance.of(context);
     final d = status.difficulty;
     final accent = DifficultyVisuals.accentFor(d);
     final onSky = DifficultyVisuals.onSky(accent);
@@ -477,136 +472,148 @@ class _ModePortal extends StatelessWidget {
       ),
     );
 
-    return DecoratedBox(
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
-        border: Border.all(
-          color: onSky.withValues(alpha: locked ? 0.22 : 0.25 + 0.55 * focus),
-          width: 1.4,
-        ),
-        boxShadow: [
-          BoxShadow(
-            color: accent.withValues(alpha: locked ? 0.06 : 0.30 * focus),
-            blurRadius: 34,
-            spreadRadius: -6,
-            offset: const Offset(0, 14),
+    return Appearance(
+      style: a,
+      mode: AppearanceMode.night,
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
+          border: Border.all(
+            color: onSky.withValues(alpha: locked ? 0.22 : 0.25 + 0.55 * focus),
+            width: 1.4,
           ),
-        ],
-      ),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(AppMetrics.heroRadius - 1),
-        child: Stack(
-          fit: StackFit.expand,
-          children: [
-            RepaintBoundary(
-              child: running
-                  ? AnimatedBuilder(
-                      animation: life,
-                      builder: (context, _) => scene(life.value),
-                    )
-                  : scene(0),
+          boxShadow: [
+            BoxShadow(
+              color: accent.withValues(alpha: locked ? 0.06 : 0.30 * focus),
+              blurRadius: 34,
+              spreadRadius: -6,
+              offset: const Offset(0, 14),
             ),
-            // Véu inferior: texto sempre legível sobre a cena.
-            DecoratedBox(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  stops: const [0.35, 1],
-                  colors: [
-                    AppColors.night.withValues(alpha: 0),
-                    AppColors.night.withValues(alpha: 0.88),
+          ],
+        ),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(AppMetrics.heroRadius - 1),
+          child: Stack(
+            fit: StackFit.expand,
+            children: [
+              ArtLift(
+                page: page,
+                child: Stack(
+                  fit: StackFit.expand,
+                  children: [
+                    RepaintBoundary(
+                      child: running
+                          ? AnimatedBuilder(
+                              animation: life,
+                              builder: (context, _) => scene(life.value),
+                            )
+                          : scene(0),
+                    ),
+                    // Véu inferior: texto sempre legível sobre a cena.
+                    DecoratedBox(
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment.topCenter,
+                          end: Alignment.bottomCenter,
+                          stops: const [0.35, 1],
+                          colors: [
+                            AppColors.night.withValues(alpha: 0),
+                            AppColors.night.withValues(alpha: 0.88),
+                          ],
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(20, 18, 20, 20),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Text(
-                        context.l10n.modeOrdinal(d.ordinalPt),
-                        style: AppTypography.label(
-                          size: 11,
-                          letterSpacing: 2.2,
-                          color: onSky.withValues(alpha: locked ? 0.5 : 0.9),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(20, 18, 20, 20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Text(
+                          context.l10n.modeOrdinal(d.ordinalPt),
+                          style: AppTypography.label(
+                            size: 11,
+                            letterSpacing: 2.2,
+                            color: onSky.withValues(alpha: locked ? 0.5 : 0.9),
+                          ),
+                        ),
+                        const Spacer(),
+                        if (badge != null)
+                          _GlassPill(
+                            text: badge,
+                            accent: accent,
+                            solid: status.current,
+                            glyph: locked
+                                ? CinematicGlyph.lock
+                                : status.cleared
+                                ? CinematicGlyph.check
+                                : null,
+                          ),
+                      ],
+                    ),
+                    Expanded(
+                      child: Center(
+                        child: Transform.translate(
+                          offset: Offset(parallax * -24, 0),
+                          child: _Halo(
+                            difficulty: d,
+                            accent: accent,
+                            locked: locked,
+                            life: running ? life : null,
+                          ),
                         ),
                       ),
-                      const Spacer(),
-                      if (badge != null)
-                        _GlassPill(
-                          text: badge,
-                          accent: accent,
-                          solid: status.current,
-                          glyph: locked
-                              ? CinematicGlyph.lock
-                              : status.cleared
-                              ? CinematicGlyph.check
-                              : null,
-                        ),
-                    ],
-                  ),
-                  Expanded(
-                    child: Center(
-                      child: Transform.translate(
-                        offset: Offset(parallax * -24, 0),
-                        child: _Halo(
-                          difficulty: d,
-                          accent: accent,
-                          locked: locked,
-                          life: running ? life : null,
-                        ),
+                    ),
+                    Text(
+                      d.labelPt,
+                      style: AppTypography.display(
+                        size: 28,
+                        height: 1.05,
+                        color: locked ? a.textFaint : a.text,
                       ),
                     ),
-                  ),
-                  Text(
-                    d.labelPt,
-                    style: AppTypography.display(
-                      size: 28,
-                      height: 1.05,
-                      color: locked ? a.textFaint : a.text,
+                    const SizedBox(height: 4),
+                    Text(
+                      d.taglinePt,
+                      style: AppTypography.body(
+                        size: 14,
+                        weight: FontWeight.w800,
+                        color: locked ? a.textFaint : onSky,
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 4),
-                  Text(
-                    d.taglinePt,
-                    style: AppTypography.body(
-                      size: 14,
-                      weight: FontWeight.w800,
-                      color: locked ? a.textFaint : onSky,
+                    const SizedBox(height: 6),
+                    Text(
+                      d.blurbPt,
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                      style: AppTypography.body(
+                        size: 13,
+                        height: 1.35,
+                        color: locked ? a.textFaint : a.textSecondary,
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 6),
-                  Text(
-                    d.blurbPt,
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                    style: AppTypography.body(
-                      size: 13,
-                      height: 1.35,
-                      color: locked ? a.textFaint : a.textSecondary,
+                    const SizedBox(height: 12),
+                    Wrap(
+                      spacing: 6,
+                      runSpacing: 6,
+                      children: [
+                        for (final skill in d.skillsPt)
+                          _SkillChip(text: skill, accent: accent, dim: locked),
+                      ],
                     ),
-                  ),
-                  const SizedBox(height: 12),
-                  Wrap(
-                    spacing: 6,
-                    runSpacing: 6,
-                    children: [
-                      for (final skill in d.skillsPt)
-                        _SkillChip(text: skill, accent: accent, dim: locked),
+                    if (status.progressLine != null) ...[
+                      const SizedBox(height: 14),
+                      _PortalProgress(status: status, accent: accent),
                     ],
-                  ),
-                  if (status.progressLine != null) ...[
-                    const SizedBox(height: 14),
-                    _PortalProgress(status: status, accent: accent),
                   ],
-                ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
@@ -948,7 +955,9 @@ class _ModeBannerState extends State<ModeBanner>
       (s) => s.current,
       orElse: () => statuses.first,
     );
-    final a = Appearance.of(context);
+    // Faixa = cena escura + véu noturno: tinta clara fixa em todos os looks.
+    final a = AppearanceStyle.resolve(AppearanceMode.night);
+    final page = Appearance.of(context);
     final d = current.difficulty;
     final accent = DifficultyVisuals.accentFor(d);
     final onSky = DifficultyVisuals.onSky(accent);
@@ -993,124 +1002,135 @@ class _ModeBannerState extends State<ModeBanner>
                 ),
               ],
             ),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(AppMetrics.heroRadius - 1),
-              child: Stack(
-                children: [
-                  Positioned.fill(
-                    child: RepaintBoundary(
-                      child: AnimatedBuilder(
-                        animation: _life,
-                        builder: (context, _) => CustomPaint(
-                          painter: ModeScenePainter(
-                            difficulty: d,
-                            color: accent,
-                            t: _life.value,
-                            intensity: 0.85,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Positioned.fill(
-                    child: DecoratedBox(
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.centerLeft,
-                          end: Alignment.centerRight,
-                          colors: [
-                            AppColors.night.withValues(alpha: 0.85),
-                            AppColors.night.withValues(alpha: 0.2),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(14, 14, 14, 14),
-                    child: Row(
-                      children: [
-                        _Halo(
-                          difficulty: d,
-                          accent: accent,
-                          life: _life,
-                          size: 64,
-                        ),
-                        const SizedBox(width: 10),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Text(
-                                context.l10n.modeOrdinalBadge(
-                                  d.ordinalPt,
-                                  current.badge ?? context.l10n.modeBadgeCurrent,
-                                ),
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                                style: AppTypography.label(
-                                  size: 10,
-                                  letterSpacing: 1.6,
-                                  color: onSky.withValues(alpha: 0.9),
-                                ),
-                              ),
-                              const SizedBox(height: 3),
-                              Text(
-                                d.labelPt,
-                                style: AppTypography.display(
-                                  size: 20,
-                                  height: 1.05,
-                                  color: a.text,
-                                ),
-                              ),
-                              const SizedBox(height: 2),
-                              Text(
-                                d.taglinePt,
-                                style: AppTypography.body(
-                                  size: 12,
-                                  weight: FontWeight.w700,
-                                  color: a.textSecondary,
-                                ),
-                              ),
-                              if (current.total > 0) ...[
-                                const SizedBox(height: 10),
-                                _PortalProgress(
-                                  status: current,
-                                  accent: accent,
-                                  line: line,
-                                ),
-                              ] else if (line != null) ...[
-                                const SizedBox(height: 6),
-                                Text(
-                                  line,
-                                  style: AppTypography.label(
-                                    size: 11,
-                                    color: a.textFaint,
+            child: Appearance(
+              style: a,
+              mode: AppearanceMode.night,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(AppMetrics.heroRadius - 1),
+                child: Stack(
+                  children: [
+                    Positioned.fill(
+                      child: ArtLift(
+                        page: page,
+                        child: Stack(
+                          fit: StackFit.expand,
+                          children: [
+                            RepaintBoundary(
+                              child: AnimatedBuilder(
+                                animation: _life,
+                                builder: (context, _) => CustomPaint(
+                                  painter: ModeScenePainter(
+                                    difficulty: d,
+                                    color: accent,
+                                    t: _life.value,
+                                    intensity: 0.85,
                                   ),
                                 ),
-                              ],
-                            ],
-                          ),
-                        ),
-                        const SizedBox(width: 10),
-                        Column(
-                          mainAxisSize: MainAxisSize.min,
-                          crossAxisAlignment: CrossAxisAlignment.end,
-                          children: [
-                            _ModeLadder(statuses: statuses),
-                            const SizedBox(height: 12),
-                            _GlassPill(
-                              text: context.l10n.modeSwitch,
-                              accent: accent,
-                              solid: false,
+                              ),
+                            ),
+                            DecoratedBox(
+                              decoration: BoxDecoration(
+                                gradient: LinearGradient(
+                                  begin: Alignment.centerLeft,
+                                  end: Alignment.centerRight,
+                                  colors: [
+                                    AppColors.night.withValues(alpha: 0.85),
+                                    AppColors.night.withValues(alpha: 0.2),
+                                  ],
+                                ),
+                              ),
                             ),
                           ],
                         ),
-                      ],
+                      ),
                     ),
-                  ),
-                ],
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(14, 14, 14, 14),
+                      child: Row(
+                        children: [
+                          _Halo(
+                            difficulty: d,
+                            accent: accent,
+                            life: _life,
+                            size: 64,
+                          ),
+                          const SizedBox(width: 10),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Text(
+                                  context.l10n.modeOrdinalBadge(
+                                    d.ordinalPt,
+                                    current.badge ??
+                                        context.l10n.modeBadgeCurrent,
+                                  ),
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: AppTypography.label(
+                                    size: 10,
+                                    letterSpacing: 1.6,
+                                    color: onSky.withValues(alpha: 0.9),
+                                  ),
+                                ),
+                                const SizedBox(height: 3),
+                                Text(
+                                  d.labelPt,
+                                  style: AppTypography.display(
+                                    size: 20,
+                                    height: 1.05,
+                                    color: a.text,
+                                  ),
+                                ),
+                                const SizedBox(height: 2),
+                                Text(
+                                  d.taglinePt,
+                                  style: AppTypography.body(
+                                    size: 12,
+                                    weight: FontWeight.w700,
+                                    color: a.textSecondary,
+                                  ),
+                                ),
+                                if (current.total > 0) ...[
+                                  const SizedBox(height: 10),
+                                  _PortalProgress(
+                                    status: current,
+                                    accent: accent,
+                                    line: line,
+                                  ),
+                                ] else if (line != null) ...[
+                                  const SizedBox(height: 6),
+                                  Text(
+                                    line,
+                                    style: AppTypography.label(
+                                      size: 11,
+                                      color: a.textFaint,
+                                    ),
+                                  ),
+                                ],
+                              ],
+                            ),
+                          ),
+                          const SizedBox(width: 10),
+                          Column(
+                            mainAxisSize: MainAxisSize.min,
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: [
+                              _ModeLadder(statuses: statuses),
+                              const SizedBox(height: 12),
+                              _GlassPill(
+                                text: context.l10n.modeSwitch,
+                                accent: accent,
+                                solid: false,
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
@@ -1156,7 +1176,9 @@ class _ModeLadder extends StatelessWidget {
                 ? accent.withValues(alpha: 0.25)
                 : Colors.transparent,
             border: Border.all(
-              color: s.locked ? AppRoles.chrome.withValues(alpha: 0.25) : accent,
+              color: s.locked
+                  ? AppRoles.chrome.withValues(alpha: 0.25)
+                  : accent,
               width: s.current ? 2.2 : 1.4,
             ),
             boxShadow: s.current

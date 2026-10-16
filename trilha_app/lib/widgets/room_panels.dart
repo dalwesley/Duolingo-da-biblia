@@ -71,7 +71,7 @@ class RoomStudyCard extends StatelessWidget {
 
     // Palco neutro enquanto falta estudar; teal (presença) quando fiz.
     return GlassCard(
-      tint: meDone ? AppRoles.presence : AppRoles.chrome,
+      tint: meDone ? AppRoles.presence : a.chrome,
       glow: meDone ? 0.3 : 0.75,
       elevated: !meDone,
       child: Column(
@@ -194,7 +194,7 @@ class _EmptyStage extends StatelessWidget {
     final a = Appearance.of(context);
     return GlassCard(
       glow: isLeader ? 0.55 : null,
-      tint: isLeader ? AppRoles.chrome : null,
+      tint: isLeader ? a.chrome : null,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -203,7 +203,6 @@ class _EmptyStage extends StatelessWidget {
           CustomPaint(
             painter: _DashedFramePainter(color: a.textFaint),
             child: EmptyState(
-              glyph: CinematicGlyph.scroll,
               title: isLeader
                   ? context.l10n.groupEmptyLeaderTitle
                   : context.l10n.groupEmptyMemberTitle,
@@ -249,10 +248,7 @@ class _VerseStage extends StatelessWidget {
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
-                colors: [
-                  AppRoles.chrome,
-                  AppRoles.chrome.withValues(alpha: 0.1),
-                ],
+                colors: [a.chrome, a.chrome.withValues(alpha: 0.1)],
               ),
             ),
           ),
@@ -304,7 +300,7 @@ class _LeaderNote extends StatelessWidget {
             child: CinematicIcon(
               glyph: CinematicGlyph.mail,
               size: AppMetrics.iconSm,
-              accent: AppRoles.chrome,
+              accent: a.chrome,
               framed: false,
             ),
           ),
@@ -344,6 +340,7 @@ class _FaceRow extends StatelessWidget {
     if (people.isEmpty) return const SizedBox.shrink();
     final shown = people.take(5).toList();
     final step = size * 0.64;
+    final ring = Appearance.of(context).cardFill;
     return SizedBox(
       width: size + step * (shown.length - 1),
       height: size,
@@ -352,14 +349,14 @@ class _FaceRow extends StatelessWidget {
           for (var i = 0; i < shown.length; i++)
             Positioned(
               left: step * i,
-              // Borda escura separa os rostos sobrepostos.
+              // Borda na cor do card separa os rostos sobrepostos.
               child: UserAvatar(
                 name: shown[i].name,
                 photoUrl: shown[i].photoUrl,
                 seed: shown[i].uid,
                 radius: size / 2,
                 style: shown[i].portraitStyle,
-                borderColor: AppColors.night,
+                borderColor: ring,
               ),
             ),
         ],
@@ -455,6 +452,7 @@ Future<bool?> showRoomSeatSheet(
             ),
             const SizedBox(height: AppSpace.md),
             AppSheetHeader(
+              cloud: false,
               title: member.isUser ? ctx.l10n.commonYou : member.name,
               center: true,
             ),
@@ -464,7 +462,7 @@ Future<bool?> showRoomSeatSheet(
                 child: SoftBadge(
                   text: leaderTitle,
                   glyph: CinematicGlyph.crown,
-                  accent: AppRoles.chrome,
+                  accent: a.chrome,
                 ),
               ),
             ],
@@ -604,7 +602,7 @@ class _WeekDaysStrip extends StatelessWidget {
                       : a.cardFillSoft,
                   border: Border.all(
                     color: d == today
-                        ? AppRoles.selected
+                        ? a.selected
                         : days.contains(d)
                         ? AppRoles.presence
                         : a.cardBorder,
@@ -790,14 +788,10 @@ class _KindChip extends StatelessWidget {
         duration: AppMotion.quick,
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 9),
         decoration: BoxDecoration(
-          color: selected
-              ? AppRoles.selected.withValues(alpha: 0.12)
-              : a.cardFillSoft,
+          color: selected ? a.selected.withValues(alpha: 0.12) : a.cardFillSoft,
           borderRadius: BorderRadius.circular(AppRadii.pill),
           border: Border.all(
-            color: selected
-                ? AppRoles.selected.withValues(alpha: 0.7)
-                : a.cardBorder,
+            color: selected ? a.selected.withValues(alpha: 0.7) : a.cardBorder,
           ),
         ),
         child: Row(
@@ -806,7 +800,7 @@ class _KindChip extends StatelessWidget {
             CinematicIcon(
               glyph: kind.glyph,
               size: AppMetrics.chipIcon,
-              accent: selected ? AppRoles.selected : a.textSecondary,
+              accent: selected ? a.selected : a.textSecondary,
               framed: false,
             ),
             const SizedBox(width: 6),
@@ -815,7 +809,7 @@ class _KindChip extends StatelessWidget {
               style: AppTypography.body(
                 size: 13,
                 weight: FontWeight.w800,
-                color: selected ? AppRoles.selected : a.text,
+                color: selected ? a.selected : a.text,
               ),
             ),
           ],
@@ -1284,7 +1278,7 @@ Future<RoomMenuAction?> showRoomMenu(
                 CinematicIcon(
                   glyph: glyph,
                   size: AppMetrics.leadingIcon,
-                  accent: danger ? AppRoles.risk : AppRoles.chrome,
+                  accent: danger ? AppRoles.risk : a.chrome,
                 ),
                 const SizedBox(width: AppSpace.md),
                 Expanded(
@@ -1460,7 +1454,7 @@ class RoomIncomingInviteCard extends StatelessWidget {
     final from = _firstName(invite.fromName);
     return GlassCard(
       glow: 0.7,
-      tint: AppRoles.chrome,
+      tint: a.chrome,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -1645,7 +1639,6 @@ class _RoomCallSheetState extends State<_RoomCallSheet> {
             const SizedBox(height: AppSpace.md),
             if (people.isEmpty)
               EmptyState(
-                glyph: CinematicGlyph.people,
                 title: context.l10n.groupCallEmpty,
               )
             else

@@ -9,6 +9,7 @@ import '../utils/appearance.dart';
 import 'act_feel.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
+import 'cloud_mascot.dart';
 import 'ui_primitives.dart';
 
 /// Abre o sheet para relatar erro teológico, interpretação, etc.
@@ -97,15 +98,11 @@ class _QuestionReportSheetState extends State<_QuestionReportSheet> {
           children: [
             Row(
               children: [
-                CinematicIcon(
-                  glyph: CinematicGlyph.book,
-                  size: AppMetrics.leadingIcon,
-                  accent: AppRoles.chrome,
-                  glowing: false,
-                ),
-                const SizedBox(width: 12),
                 Expanded(
-                  child: AppSheetHeader(title: context.l10n.reportTitle),
+                  child: AppSheetHeader(
+                    face: CloudFace.triste,
+                    title: context.l10n.reportTitle,
+                  ),
                 ),
                 IconButton(
                   onPressed: () => Navigator.of(context).pop(false),
@@ -145,7 +142,7 @@ class _QuestionReportSheetState extends State<_QuestionReportSheet> {
                             ? Icons.radio_button_checked
                             : Icons.radio_button_off,
                         size: AppMetrics.iconMd,
-                        color: selected ? AppRoles.selected : a.textFaint,
+                        color: selected ? a.selected : a.textFaint,
                       ),
                       const SizedBox(width: 10),
                       Expanded(
@@ -200,7 +197,7 @@ class _QuestionReportSheetState extends State<_QuestionReportSheet> {
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(AppRadii.sm),
                   borderSide: BorderSide(
-                    color: AppRoles.selected.withValues(alpha: 0.7),
+                    color: a.selected.withValues(alpha: 0.7),
                   ),
                 ),
               ),

@@ -393,11 +393,7 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
           label: context.l10n.profileSavedVerses,
           trailing: bookmarks.isEmpty
               ? null
-              : CountBadge(
-                  '${bookmarks.length}',
-                  color: AppRoles.chrome,
-                  filled: false,
-                ),
+              : CountBadge('${bookmarks.length}', filled: false),
         ),
         const SizedBox(height: AppSpace.md),
         if (bookmarks.isEmpty) ...[
@@ -475,11 +471,7 @@ class _SharedVersesSection extends StatelessWidget {
           label: context.l10n.profileSharedVerses,
           trailing: refs.isEmpty
               ? null
-              : CountBadge(
-                  '${refs.length}',
-                  color: AppRoles.chrome,
-                  filled: false,
-                ),
+              : CountBadge('${refs.length}', filled: false),
         ),
         const SizedBox(height: AppSpace.md),
         if (refs.isEmpty)

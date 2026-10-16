@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../l10n/app_language.dart';
 import '../l10n/l10n_global.dart';
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
 
 /// Mini bandeira do seletor de idioma — pintada, sem emoji.
 /// Auto não tem bandeira própria: usa a do idioma que o aparelho resolve.
@@ -64,6 +65,7 @@ class LanguageFlag extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     final badge = height * 0.55;
     return SizedBox(
       width: width,
@@ -103,7 +105,7 @@ class LanguageFlag extends StatelessWidget {
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: AppColors.nightElevated,
+                  color: a.cardFill,
                   border: Border.all(
                     color: AppRoles.presence.withValues(alpha: 0.9),
                     width: 1,
@@ -115,7 +117,7 @@ class LanguageFlag extends StatelessWidget {
                     fontSize: badge * 0.55,
                     fontWeight: FontWeight.w900,
                     height: 1,
-                    color: AppRoles.chrome,
+                    color: a.chrome,
                   ),
                 ),
               ),
@@ -144,7 +146,10 @@ class _FlagPainter extends CustomPainter {
   }
 
   void _br(Canvas canvas, Size size) {
-    canvas.drawRect(Offset.zero & size, Paint()..color = const Color(0xFF009C3B));
+    canvas.drawRect(
+      Offset.zero & size,
+      Paint()..color = const Color(0xFF009C3B),
+    );
     final diamond = Path()
       ..moveTo(size.width * 0.5, size.height * 0.12)
       ..lineTo(size.width * 0.92, size.height * 0.5)
@@ -200,5 +205,6 @@ class _FlagPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant _FlagPainter oldDelegate) => oldDelegate.id != id;
+  bool shouldRepaint(covariant _FlagPainter oldDelegate) =>
+      oldDelegate.id != id;
 }

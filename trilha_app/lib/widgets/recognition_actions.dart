@@ -11,6 +11,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'act_feel.dart';
 import 'app_sheet.dart';
+import 'cloud_mascot.dart';
 import 'cinematic_icon.dart';
 import 'medal_cinematic_widgets.dart';
 import 'ui_primitives.dart';
@@ -60,24 +61,18 @@ class RecognizeHeartButton extends StatelessWidget {
             ? l10n.recognitionMedalDone
             : l10n.recognitionSceneDone,
       RecognitionGiveStatus.failed =>
-        wasGiven
-            ? l10n.recognitionFailedWithdraw
-            : l10n.recognitionFailedGive,
+        wasGiven ? l10n.recognitionFailedWithdraw : l10n.recognitionFailedGive,
     };
     await showAppDialog<void>(
       context,
       builder: (ctx) => AppDialog(
+        face: switch (status) {
+          RecognitionGiveStatus.given ||
+          RecognitionGiveStatus.already => CloudFace.feliz,
+          RecognitionGiveStatus.removed => CloudFace.triste,
+          RecognitionGiveStatus.failed => CloudFace.erro,
+        },
         title: title,
-        content: Center(
-          child: CinematicIcon(
-            glyph: CinematicGlyph.heart,
-            size: AppMetrics.leadingIcon,
-            framed: false,
-            accent: status == RecognitionGiveStatus.failed
-                ? Appearance.of(context).textFaint
-                : AppRoles.success,
-          ),
-        ),
         actions: [
           CopperCta(
             label: ctx.l10n.commonGotIt,
@@ -476,7 +471,6 @@ class _MedalRecognizeRow extends StatelessWidget {
     );
   }
 }
-
 
 Future<RecognitionGiveStatus> giveRecognition(
   BuildContext context, {

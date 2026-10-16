@@ -9,6 +9,7 @@ import 'act_feel.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
 import 'relic_panel.dart';
+import 'cloud_mascot.dart';
 import 'ui_primitives.dart';
 import '../l10n/app_language.dart';
 
@@ -192,13 +193,9 @@ class _ChestOpenSheet extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           AppSheetHeader(
+            face: CloudFace.sucesso,
             center: true,
-            leading: const CinematicIcon(
-              glyph: CinematicGlyph.gift,
-              size: AppMetrics.iconHero,
-              accent: AppRoles.reward,
-              glowing: true,
-            ),
+
             title: milestone.title,
             subtitle: milestone.subtitle,
           ),
@@ -228,13 +225,11 @@ class WeeklyQuestsCard extends StatelessWidget {
     final progress = context.watch<ProgressService>();
 
     return RelicPanel(
-      accent: AppRoles.chrome,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           RelicChapter(
             title: context.l10n.questWeeklyTitle,
-            accent: AppRoles.chrome,
             divided: false,
             trailing: Text(
               context.l10n.questCountOf(
@@ -252,7 +247,7 @@ class WeeklyQuestsCard extends StatelessWidget {
           for (var i = 0; i < WeeklyQuestDefs.all.length; i++) ...[
             if (i > 0) ...[
               const SizedBox(height: 12),
-              const RelicHairline(accent: AppRoles.chrome),
+              const RelicHairline(),
               const SizedBox(height: 12),
             ],
             _WeeklyQuestRow(quest: WeeklyQuestDefs.all[i], progress: progress),
@@ -279,7 +274,7 @@ class _WeeklyQuestRow extends StatelessWidget {
     final done = claimed || value >= quest.target;
     final pct = (value / quest.target).clamp(0.0, 1.0);
     // Ícone e barra = chrome; concluída = sucesso; passos = recompensa.
-    final tone = claimed ? AppRoles.success : AppRoles.chrome;
+    final tone = claimed ? AppRoles.success : a.chrome;
     final bar = tone;
 
     return Row(

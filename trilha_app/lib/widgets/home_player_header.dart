@@ -166,14 +166,14 @@ class HomePlayerHeader extends StatelessWidget {
                 const Spacer(),
                 _Stat(
                   glyph: CinematicGlyph.check,
-                  accent: goalMet ? AppRoles.presence : AppRoles.chrome,
+                  accent: goalMet ? AppRoles.presence : a.chrome,
                   value: '$done/$goal',
                   hint: l10n.homeStatGoal,
                 ),
                 const SizedBox(width: AppSpace.md),
                 _Stat(
                   glyph: CinematicGlyph.frost,
-                  accent: freezeUsed ? a.textFaint : AppRoles.chrome,
+                  accent: freezeUsed ? a.textFaint : a.chrome,
                   value: '$freezeCount',
                   hint: freezeUsed
                       ? l10n.homeStatFreezeUsed

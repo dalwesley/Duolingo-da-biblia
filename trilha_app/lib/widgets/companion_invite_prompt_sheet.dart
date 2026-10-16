@@ -8,7 +8,6 @@ import '../models/walk_companion.dart';
 import '../services/companion_service.dart';
 import '../services/invite_deep_link_service.dart';
 import '../services/progress_service.dart';
-import '../theme/app_theme.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
@@ -103,12 +102,6 @@ class _CompanionInvitePromptSheetState
         mainAxisSize: MainAxisSize.min,
         children: [
           AppSheetHeader(
-            leading: const CinematicIcon(
-              glyph: CinematicGlyph.people,
-              size: AppMetrics.iconHero,
-              accent: AppRoles.chrome,
-              glowing: true,
-            ),
             eyebrow: context.l10n.companionSheetEyebrow,
             title: title,
             subtitle: body,

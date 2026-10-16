@@ -121,7 +121,7 @@ class _AcceptInviteSheetState extends State<_AcceptInviteSheet> {
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(AppRadii.md),
                 borderSide: BorderSide(
-                  color: AppRoles.selected.withValues(alpha: 0.4),
+                  color: a.selected.withValues(alpha: 0.4),
                 ),
               ),
             ),
@@ -182,15 +182,15 @@ class _QrScanPageState extends State<_QrScanPage> {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
+    // Câmera: tela sempre escura, tinta fixa clara (não segue o tema).
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
         backgroundColor: AppColors.night,
-        foregroundColor: a.text,
+        foregroundColor: AppColors.textOnDark,
         title: Text(
           context.l10n.inviteScanQr,
-          style: AppTypography.title(size: 18, color: a.text),
+          style: AppTypography.title(size: 18, color: AppColors.textOnDark),
         ),
       ),
       body: Stack(
@@ -215,7 +215,7 @@ class _QrScanPageState extends State<_QrScanPage> {
               context.l10n.inviteScanHint,
               textAlign: TextAlign.center,
               style: AppTypography.body(
-                color: a.textSecondary,
+                color: AppColors.textOnDark.withValues(alpha: 0.78),
                 weight: FontWeight.w600,
               ),
             ),

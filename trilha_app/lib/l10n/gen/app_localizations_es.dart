@@ -5462,6 +5462,30 @@ class AppLocalizationsEs extends AppLocalizations {
   String get offlineTitle => 'Las escenas aún no llegaron';
 
   @override
+  String get onboardingAnanHelloBody =>
+      'Mi nombre significa “nube”. Como la nube que guió al pueblo de Dios por el desierto, caminaré contigo por los senderos de Stway.';
+
+  @override
+  String get onboardingAnanHelloTitle => '¡Hola! Soy Anan.';
+
+  @override
+  String get onboardingAnanLater => 'Empezar jornada';
+
+  @override
+  String get onboardingAnanSetupNow => 'Ajustar jornada';
+
+  @override
+  String get onboardingAnanSetupQuestion => '¿Qué deseas hacer ahora?';
+
+  @override
+  String get onboardingAnanWayBody =>
+      'ST viene de step, que significa paso, y WAY significa camino.\n\nY toda caminata empieza con un simple paso.';
+
+  @override
+  String get onboardingAnanWayTitle =>
+      'El nombre Stway tiene todo que ver con esta caminata.';
+
+  @override
   String get onboardingAppearanceBody =>
       'Vale para toda la app.\nPuedes cambiarla después en Ajustes.';
 

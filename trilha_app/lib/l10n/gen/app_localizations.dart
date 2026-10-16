@@ -8391,6 +8391,48 @@ abstract class AppLocalizations {
   /// **'As cenas ainda não chegaram'**
   String get offlineTitle;
 
+  /// No description provided for @onboardingAnanHelloBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Meu nome quer dizer “nuvem”. Como a nuvem que guiou o povo de Deus no deserto, vou caminhar com você pelas trilhas do Stway.'**
+  String get onboardingAnanHelloBody;
+
+  /// No description provided for @onboardingAnanHelloTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Olá! Eu sou o Anan.'**
+  String get onboardingAnanHelloTitle;
+
+  /// No description provided for @onboardingAnanLater.
+  ///
+  /// In pt, this message translates to:
+  /// **'Começar jornada'**
+  String get onboardingAnanLater;
+
+  /// No description provided for @onboardingAnanSetupNow.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ajustar jornada'**
+  String get onboardingAnanSetupNow;
+
+  /// No description provided for @onboardingAnanSetupQuestion.
+  ///
+  /// In pt, this message translates to:
+  /// **'O que deseja fazer agora?'**
+  String get onboardingAnanSetupQuestion;
+
+  /// No description provided for @onboardingAnanWayBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'ST vem de step, que significa passo, e WAY significa caminho.\n\nE toda caminhada começa com um simples passo.'**
+  String get onboardingAnanWayBody;
+
+  /// No description provided for @onboardingAnanWayTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'O nome Stway tem tudo a ver com essa caminhada.'**
+  String get onboardingAnanWayTitle;
+
   /// No description provided for @onboardingAppearanceBody.
   ///
   /// In pt, this message translates to:

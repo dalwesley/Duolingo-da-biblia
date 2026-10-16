@@ -128,16 +128,15 @@ class JourneyPath extends StatelessWidget {
     }
 
     final track = Color.lerp(
-      Color.lerp(a.progressTrack, AppColors.textOnDark, 0.42)!,
+      // Claro: trilho em tinta (sem puxar para o branco, some no céu).
+      a.onDark
+          ? Color.lerp(a.progressTrack, AppColors.textOnDark, 0.42)!
+          : a.text.withValues(alpha: 0.22),
       accent,
       0.28,
     )!;
 
-    return FlowingWindingTrail(
-      walked: accent,
-      track: track,
-      stops: stops,
-    );
+    return FlowingWindingTrail(walked: accent, track: track, stops: stops);
   }
 }
 

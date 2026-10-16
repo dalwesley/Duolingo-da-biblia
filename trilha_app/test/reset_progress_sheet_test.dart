@@ -1,11 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:trilha_app/l10n/app_language.dart';
 import 'package:trilha_app/widgets/reset_progress_sheet.dart';
 
 void main() {
   Future<void> openSheet(WidgetTester tester, {required Future<bool> Function() show}) async {
     await tester.pumpWidget(
       MaterialApp(
+        locale: const Locale('pt'),
+        localizationsDelegates: AppLocalizations.localizationsDelegates,
+        supportedLocales: AppLocalizations.supportedLocales,
+        // Sem a reação da nuvem: o relógio do teste é só da contagem.
+        builder: (context, child) => MediaQuery(
+          data: MediaQuery.of(context).copyWith(disableAnimations: true),
+          child: child!,
+        ),
         home: Scaffold(
           body: Builder(
             builder: (context) => TextButton(

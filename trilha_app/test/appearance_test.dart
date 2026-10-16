@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:trilha_app/utils/appearance.dart';
 import 'package:trilha_app/utils/day_phase.dart';
@@ -12,10 +13,7 @@ void main() {
       AppearanceStyle.resolve(AppearanceMode.afternoon).phase,
       DayPhase.afternoon,
     );
-    expect(
-      AppearanceStyle.resolve(AppearanceMode.night).phase,
-      DayPhase.night,
-    );
+    expect(AppearanceStyle.resolve(AppearanceMode.night).phase, DayPhase.night);
   });
 
   test('automático segue o relógio e à noite usa o mesmo céu de Noite', () {
@@ -55,5 +53,32 @@ void main() {
     expect(morning.cardFill, isNot(night.cardFill));
     expect(afternoon.cardFill, isNot(night.cardFill));
     expect(morning.navBarFill, isNot(night.navBarFill));
+  });
+
+  test('claro é papel claro; médio fica acima do escuro', () {
+    final morning = AppearanceStyle.resolve(AppearanceMode.morning);
+    final afternoon = AppearanceStyle.resolve(AppearanceMode.afternoon);
+    final night = AppearanceStyle.resolve(AppearanceMode.night);
+
+    expect(morning.onDark, isFalse);
+    expect(afternoon.onDark, isTrue);
+    expect(night.onDark, isTrue);
+    expect(morning.cardFill, const Color(0xFFF3F7FB));
+    expect(afternoon.cardFill, const Color(0xFF1E5287));
+    expect(night.cardFill, const Color(0xFF12243C));
+    expect(morning.text, const Color(0xFF0E1620));
+    expect(morning.cardFill.computeLuminance(), greaterThan(0.7));
+    expect(
+      afternoon.cardFill.computeLuminance(),
+      greaterThan(night.cardFill.computeLuminance() + 0.05),
+    );
+    expect(
+      DayPhaseHelper.backgroundGradient(DayPhase.morning).colors.first,
+      const Color(0xFFC5DFF5),
+    );
+    expect(
+      DayPhaseHelper.backgroundGradient(DayPhase.afternoon).colors.first,
+      const Color(0xFF1A4E90),
+    );
   });
 }

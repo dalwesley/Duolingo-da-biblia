@@ -37,7 +37,7 @@ class BibleBookIntroCard extends StatelessWidget {
             width: 28,
             height: 3,
             decoration: BoxDecoration(
-              color: AppRoles.chrome,
+              color: a.chrome,
               borderRadius: BorderRadius.circular(AppRadii.hair),
             ),
           ),
@@ -55,7 +55,10 @@ class BibleBookIntroCard extends StatelessWidget {
               ),
               const SizedBox(width: AppSpace.md),
               Expanded(
-                child: _Meta(label: context.l10n.bibleIntroWhen, value: intro.when),
+                child: _Meta(
+                  label: context.l10n.bibleIntroWhen,
+                  value: intro.when,
+                ),
               ),
               const SizedBox(width: AppSpace.md),
               Expanded(

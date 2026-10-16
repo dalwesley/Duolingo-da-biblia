@@ -10,7 +10,9 @@ import '../l10n/app_language.dart';
 class LampsBar extends StatelessWidget {
   final int current;
   final int max;
-  final Color accent;
+
+  /// Nulo = `a.chrome` da aparência atual.
+  final Color? accent;
   final bool labeled;
 
   /// Faixa larga (topo da pergunta) — ocupa a largura disponível.
@@ -29,7 +31,7 @@ class LampsBar extends StatelessWidget {
     super.key,
     required this.current,
     this.max = 5,
-    this.accent = AppRoles.chrome,
+    this.accent,
     this.labeled = false,
     this.fullWidth = false,
     this.compact = false,
@@ -40,6 +42,7 @@ class LampsBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final accent = this.accent ?? a.chrome;
     final iconH = compact ? 24.0 : (fullWidth ? 30.0 : 28.0);
     final iconW = compact ? 18.0 : (fullWidth ? 22.0 : 20.0);
     final litColor = accent;
@@ -65,7 +68,11 @@ class LampsBar extends StatelessWidget {
               duration: AppMotion.standard,
               child: CustomPaint(
                 size: Size(iconW, iconH),
-                painter: LanternPainter(lit: on || flashing, color: color),
+                painter: LanternPainter(
+                  lit: on || flashing,
+                  color: color,
+                  unlitInk: a.text,
+                ),
               ),
             ),
           ),

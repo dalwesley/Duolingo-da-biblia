@@ -4,7 +4,6 @@ import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'app_sheet.dart';
-import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 import '../l10n/app_language.dart';
 
@@ -40,12 +39,6 @@ class _ComebackSheet extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           AppSheetHeader(
-            leading: const CinematicIcon(
-              glyph: CinematicGlyph.flame,
-              size: AppMetrics.iconHero,
-              accent: AppRoles.streak,
-              glowing: false,
-            ),
             eyebrow: l10n.comebackEyebrow,
             eyebrowColor: AppRoles.streak.withValues(alpha: 0.85),
             title: l10n.comebackTitle,

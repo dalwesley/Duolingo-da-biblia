@@ -6,16 +6,16 @@ enum DayPhase { morning, afternoon, evening, night }
 /// Cores de céu por horário — só usadas por [DayPhaseHelper].
 class _PhaseSky {
   static const morning = [
+    Color(0xFFC5DFF5),
+    Color(0xFF8EBFEE),
+    Color(0xFF5AA0E0),
+    Color(0xFF3A7EC4),
+  ];
+  static const afternoon = [
     Color(0xFF1A4E90),
     Color(0xFF2E74C0),
     Color(0xFF1E5890),
     Color(0xFF123050),
-  ];
-  static const afternoon = [
-    Color(0xFF123860),
-    Color(0xFF1E5898),
-    Color(0xFF2A68B0),
-    Color(0xFF102848),
   ];
   static const evening = [
     Color(0xFF0E1A2C),
@@ -30,8 +30,8 @@ class _PhaseSky {
     Color(0xFF102030),
   ];
 
-  static const morningScaffold = Color(0xFF2A6098);
-  static const afternoonScaffold = Color(0xFF1A4878);
+  static const morningScaffold = Color(0xFF6AABDE);
+  static const afternoonScaffold = Color(0xFF1E5890);
   static const eveningScaffold = Color(0xFF162844);
 }
 
@@ -60,29 +60,29 @@ class DayPhaseHelper {
   static LinearGradient backgroundGradient([DayPhase? phase]) {
     return switch (phase ?? current()) {
       DayPhase.morning => const LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: _PhaseSky.morning,
-          stops: [0.0, 0.35, 0.7, 1.0],
-        ),
+        begin: Alignment.topCenter,
+        end: Alignment.bottomCenter,
+        colors: _PhaseSky.morning,
+        stops: [0.0, 0.35, 0.7, 1.0],
+      ),
       DayPhase.afternoon => const LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: _PhaseSky.afternoon,
-          stops: [0.0, 0.35, 0.7, 1.0],
-        ),
+        begin: Alignment.topLeft,
+        end: Alignment.bottomRight,
+        colors: _PhaseSky.afternoon,
+        stops: [0.0, 0.35, 0.7, 1.0],
+      ),
       DayPhase.evening => const LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: _PhaseSky.evening,
-          stops: [0.0, 0.35, 0.7, 1.0],
-        ),
+        begin: Alignment.topCenter,
+        end: Alignment.bottomCenter,
+        colors: _PhaseSky.evening,
+        stops: [0.0, 0.35, 0.7, 1.0],
+      ),
       DayPhase.night => const LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: _PhaseSky.night,
-          stops: [0.0, 0.35, 0.7, 1.0],
-        ),
+        begin: Alignment.topCenter,
+        end: Alignment.bottomCenter,
+        colors: _PhaseSky.night,
+        stops: [0.0, 0.35, 0.7, 1.0],
+      ),
     };
   }
 

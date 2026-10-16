@@ -28,6 +28,8 @@ import 'services/sound_service.dart';
 import 'services/subscription_service.dart';
 import 'services/sync_service.dart';
 import 'theme/app_theme.dart';
+import 'utils/appearance.dart';
+import 'utils/day_phase.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -146,6 +148,10 @@ class TrilhaApp extends StatelessWidget {
           final language = context.select(
             (ProgressService p) => p.settings.language,
           );
+          final appearanceMode = context.select(
+            (ProgressService p) => p.settings.appearanceMode,
+          );
+          final appearance = AppearanceStyle.resolve(appearanceMode);
           SoundService.instance.setEnabled(sound);
           return MaterialApp(
             title: 'Stway',
@@ -153,19 +159,25 @@ class TrilhaApp extends StatelessWidget {
             locale: language.locale,
             supportedLocales: AppLocalizations.supportedLocales,
             localizationsDelegates: AppLocalizations.localizationsDelegates,
-            theme: AppTheme.dark,
-            darkTheme: AppTheme.dark,
-            themeMode: ThemeMode.dark,
+            theme: AppTheme.forStyle(appearance),
             builder: (context, child) {
               L10n.setLocale(Localizations.localeOf(context));
               // Fundo estável atrás das rotas — evita flash do window nativo.
-              return ColoredBox(
-                color: AppColors.night,
-                child: MediaQuery(
-                  data: MediaQuery.of(context).copyWith(
-                    textScaler: TextScaler.linear(fontScale.clamp(0.85, 1.35)),
+              // Appearance acima do Navigator: sheets e diálogos não ficam
+              // abaixo das telas e cairiam no fallback do relógio.
+              return Appearance(
+                style: appearance,
+                mode: appearanceMode,
+                child: ColoredBox(
+                  color: DayPhaseHelper.scaffoldBackground(appearance.phase),
+                  child: MediaQuery(
+                    data: MediaQuery.of(context).copyWith(
+                      textScaler: TextScaler.linear(
+                        fontScale.clamp(0.85, 1.35),
+                      ),
+                    ),
+                    child: child ?? const SizedBox.shrink(),
                   ),
-                  child: child ?? const SizedBox.shrink(),
                 ),
               );
             },

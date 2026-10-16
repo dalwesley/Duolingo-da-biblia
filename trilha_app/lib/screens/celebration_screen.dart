@@ -790,7 +790,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
       mode: mode,
       style: appearance,
       child: AnnotatedRegion<SystemUiOverlayStyle>(
-        value: SystemUiOverlayStyle.light,
+        value: appearance.systemOverlay,
         child: Scaffold(
           backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
           body: ImmersiveBackground(
@@ -1255,6 +1255,7 @@ class _HeroBeat extends StatelessWidget {
               size: compact ? 20 : 28,
               height: 1.12,
               weight: FontWeight.w900,
+              color: a.text,
             ),
           ),
         ],

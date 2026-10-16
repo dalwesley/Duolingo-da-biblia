@@ -14,6 +14,7 @@ import 'cinematic_icon.dart';
 import 'confetti_overlay.dart';
 import 'medal_cinematic_widgets.dart';
 import 'recognition_actions.dart';
+import 'cloud_mascot.dart';
 import 'ui_primitives.dart';
 
 Future<void> showTrackDetailSheet(
@@ -271,9 +272,13 @@ class _MedalDetailSheetState extends State<_MedalDetailSheet>
             ),
           ),
           const SizedBox(height: 22),
-          ScaleTransition(
-            scale: _heroScale,
-            child: MedalVaultMedallion(tile: tile, size: 104),
+          // Medalha nova: o Anan comemora; ainda trancada: espera junto.
+          AnanBeside(
+            face: unlocked ? CloudFace.sucesso : CloudFace.carregando,
+            child: ScaleTransition(
+              scale: _heroScale,
+              child: MedalVaultMedallion(tile: tile, size: 104),
+            ),
           ),
           const SizedBox(height: 18),
           FadeTransition(
@@ -458,9 +463,12 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
                 ),
               ),
               const SizedBox(height: 18),
-              MedalVaultMedallion(
-                tile: PilgrimMedalTile.fromTrack(trackState),
-                size: widget.celebration ? 112 : 104,
+              AnanBeside(
+                face: widget.celebration ? CloudFace.sucesso : CloudFace.feliz,
+                child: MedalVaultMedallion(
+                  tile: PilgrimMedalTile.fromTrack(trackState),
+                  size: widget.celebration ? 112 : 104,
+                ),
               ),
               const SizedBox(height: 14),
               Text(
@@ -723,16 +731,18 @@ class _MedalVaultCompleteSheetState extends State<_MedalVaultCompleteSheet>
             color: AppColors.medalGold,
           ),
           const SizedBox(height: 22),
-          MedalVaultMedallion(
-            tile: PilgrimMedalTile(
-              id: 'vault:complete',
-              title: widget.vaultTitle,
-              hint: '',
-              glyph: CinematicGlyph.crown,
-              tier: PilgrimMedalTier.gold,
-              unlocked: true,
+          AnanBeside(
+            child: MedalVaultMedallion(
+              tile: PilgrimMedalTile(
+                id: 'vault:complete',
+                title: widget.vaultTitle,
+                hint: '',
+                glyph: CinematicGlyph.crown,
+                tier: PilgrimMedalTier.gold,
+                unlocked: true,
+              ),
+              size: 96,
             ),
-            size: 96,
           ),
           const SizedBox(height: 18),
           Text(

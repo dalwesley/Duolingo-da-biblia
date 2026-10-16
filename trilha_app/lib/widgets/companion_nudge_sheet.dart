@@ -169,6 +169,7 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
     final already = live.iNudgedToday;
     final canSendApp = context.watch<CompanionService>().backend.isActive;
     final busy = _sending || _sharing;
+    final a = Appearance.of(context);
 
     return Stack(
       clipBehavior: Clip.none,
@@ -187,7 +188,7 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
           ),
         ),
         AppSheetPanel(
-          tint: AppRoles.chrome,
+          tint: a.chrome,
           padding: const EdgeInsets.fromLTRB(
             AppSpace.lg,
             AppSpace.md,
@@ -199,12 +200,6 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               AppSheetHeader(
-                leading: const CinematicIcon(
-                  glyph: CinematicGlyph.heart,
-                  size: AppMetrics.leadingIcon,
-                  accent: AppRoles.chrome,
-                  glowing: true,
-                ),
                 title: context.l10n.nudgeTitle(_them),
                 subtitle: already
                     ? context.l10n.nudgeAlreadySubtitle

@@ -5,6 +5,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
+import 'cloud_mascot.dart';
 import 'ui_primitives.dart';
 
 /// Mostra sheet de update. Retorna `true` se o usuário foi à loja.
@@ -33,7 +34,7 @@ class _AppUpdateSheet extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     // Obrigatório = risco; opcional = aviso neutro (amarelo só no CTA).
-    final accent = _force ? AppRoles.risk : AppRoles.chrome;
+    final accent = _force ? AppRoles.risk : a.chrome;
 
     return PopScope(
       canPop: !_force,
@@ -43,13 +44,9 @@ class _AppUpdateSheet extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             AppSheetHeader(
+              face: _force ? CloudFace.triste : CloudFace.feliz,
               center: true,
-              leading: CinematicIcon(
-                glyph: _force ? CinematicGlyph.shield : CinematicGlyph.spark,
-                size: AppMetrics.iconHero,
-                accent: accent,
-                glowing: false,
-              ),
+
               eyebrow: context.l10n.updateEyebrow,
               eyebrowColor: _force ? accent : null,
               title: _force

@@ -10,6 +10,7 @@ import '../utils/layout_utils.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/top_bar.dart';
+import '../widgets/cloud_mascot.dart';
 import '../widgets/ui_primitives.dart';
 
 /// Tela única de assinatura — só acessível pelo menu de Configurações,
@@ -59,11 +60,11 @@ class PaywallScreen extends StatelessWidget {
                 ),
                 children: [
                   Center(
-                    child: CinematicIcon(
-                      glyph: CinematicGlyph.crown,
-                      size: AppMetrics.iconHero,
-                      accent: AppRoles.reward,
-                      glowing: true,
+                    child: CloudMascot(
+                      face: subscription.isPeregrinoPlus
+                          ? CloudFace.sucesso
+                          : CloudFace.feliz,
+                      size: 112,
                     ),
                   ),
                   const SizedBox(height: AppSpace.lg),

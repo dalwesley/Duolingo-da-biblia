@@ -5,7 +5,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'act_feel.dart';
 import 'app_sheet.dart';
-import 'cinematic_icon.dart';
+import 'cloud_mascot.dart';
 import 'ui_primitives.dart';
 import 'confetti_overlay.dart';
 
@@ -46,16 +46,8 @@ class _CompanionFormedSheet extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           const SizedBox(height: 12),
-          const Center(
-            child: CinematicIcon(
-              glyph: CinematicGlyph.people,
-              size: AppMetrics.iconHero,
-              accent: AppRoles.reward,
-              glowing: true,
-            ),
-          ),
-          const SizedBox(height: 20),
           AppSheetHeader(
+            leading: const CloudMascot(face: CloudFace.sucesso, size: 120),
             title: context.l10n.companionSheetFormedTitle,
             center: true,
             celebration: true,

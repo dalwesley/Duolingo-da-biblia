@@ -20,6 +20,7 @@ import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/journey_path.dart';
 import '../widgets/top_bar.dart';
+import '../widgets/cloud_mascot.dart';
 import '../widgets/ui_primitives.dart';
 import 'trail_map_screen.dart';
 
@@ -247,6 +248,7 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
             children: [
               const SizedBox(height: AppSpace.sm),
               AppSheetHeader(
+                face: CloudFace.triste,
                 title: item.trail.localizedTitle,
                 subtitle: item.trail.localizedDescription,
                 center: true,
@@ -311,7 +313,6 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
               subtitle: visuals.eyebrow,
               onBack: () => Navigator.pop(context),
               leadingGlyph: CinematicGlyph.path,
-              chromeAccent: AppRoles.chrome,
             ),
           ),
           Expanded(

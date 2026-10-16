@@ -393,7 +393,7 @@ class _LessonScreenState extends State<LessonScreen>
 
   /// Chrome dos gestos: neutro. Ouro = CTA; glow = acerto.
   /// Cor do modo fica no mapa / seletor.
-  Color get _gestureChrome => AppRoles.chrome;
+  Color get _gestureChrome => Appearance.of(context).chrome;
 
   ({String reference, String text})? get _board {
     final hookT = (_mission?.hookVerse ?? '').trim();
@@ -773,12 +773,6 @@ class _LessonScreenState extends State<LessonScreen>
           mainAxisSize: MainAxisSize.min,
           children: [
             AppSheetHeader(
-              leading: const CinematicIcon(
-                glyph: CinematicGlyph.book,
-                size: AppMetrics.iconHero,
-                accent: AppRoles.chrome,
-                glowing: true,
-              ),
               eyebrow: ctx.l10n.verseStudyEyebrow,
               title: ctx.l10n.lessonStrongTeachTitle,
               subtitle: ctx.l10n.lessonStrongTeachBody,
@@ -976,7 +970,7 @@ class _LessonScreenState extends State<LessonScreen>
           if (!didPop) _confirmExit();
         },
         child: AnnotatedRegion<SystemUiOverlayStyle>(
-          value: SystemUiOverlayStyle.light,
+          value: appearance.systemOverlay,
           child: Scaffold(
             backgroundColor: DayPhaseHelper.scaffoldBackground(
               appearance.phase,
@@ -996,11 +990,19 @@ class _LessonScreenState extends State<LessonScreen>
                         gradient: LinearGradient(
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
-                          colors: [
-                            Colors.black.withValues(alpha: 0.1),
-                            Colors.transparent,
-                            Colors.black.withValues(alpha: 0.38),
-                          ],
+                          // Sombra de palco só no céu escuro; no Claro
+                          // ela só sujava o azul.
+                          colors: appearance.onDark
+                              ? [
+                                  Colors.black.withValues(alpha: 0.1),
+                                  Colors.transparent,
+                                  Colors.black.withValues(alpha: 0.38),
+                                ]
+                              : [
+                                  Colors.transparent,
+                                  Colors.transparent,
+                                  Colors.black.withValues(alpha: 0.06),
+                                ],
                           stops: const [0, 0.4, 1],
                         ),
                       ),
@@ -1064,7 +1066,9 @@ class _LessonScreenState extends State<LessonScreen>
                                               icon: CinematicIcon(
                                                 glyph: CinematicGlyph.book,
                                                 size: AppMetrics.iconMd,
-                                                accent: AppRoles.chrome,
+                                                accent: Appearance.of(
+                                                  context,
+                                                ).chrome,
                                                 framed: false,
                                               ),
                                             ),
@@ -1411,12 +1415,9 @@ class _ExitSheet extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           AppSheetHeader(
+            face: CloudFace.triste,
             center: true,
-            leading: const CinematicIcon(
-              glyph: CinematicGlyph.lamp,
-              size: AppMetrics.leadingIcon,
-              accent: AppRoles.chrome,
-            ),
+
             title: context.l10n.lessonExitTitle,
             subtitle: context.l10n.lessonExitBody(act, total),
           ),
@@ -1515,6 +1516,7 @@ class _IntroPanel extends StatelessWidget {
                               style: AppTypography.verse(
                                 size: 28,
                                 height: 1.45,
+                                color: a.text,
                               ),
                             ),
                           ),
@@ -1734,7 +1736,7 @@ class _ActWarmup extends StatelessWidget {
         ),
         DecoratedBox(
           decoration: BoxDecoration(
-            color: AppColors.nightElevated,
+            color: Appearance.of(context).stageFill,
             borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
             boxShadow: AppMetrics.cardShadow(elevated: true),
           ),

@@ -37,10 +37,10 @@ class LivingSeedCard extends StatelessWidget {
 
   /// Card da sequência: cor da sequência; risco só quando pode cair hoje;
   /// gelo fica neutro (a geada é do orbe, não do card).
-  Color _accent(SpiritualGrowth growth) {
+  Color _accent(SpiritualGrowth growth, AppearanceStyle a) {
     return switch (growth.mood) {
       SeedMood.atRisk => AppRoles.risk,
-      SeedMood.frozen => AppRoles.chrome,
+      SeedMood.frozen => a.chrome,
       SeedMood.perfectGlow ||
       SeedMood.thriving ||
       SeedMood.calm => AppRoles.streak,
@@ -67,7 +67,7 @@ class LivingSeedCard extends StatelessWidget {
 
   Widget _compact(BuildContext context, SpiritualGrowth growth) {
     final a = Appearance.of(context);
-    final accent = _accent(growth);
+    final accent = _accent(growth, a);
     return RelicPanel(
       accent: accent,
       padding: AppMetrics.cardPaddingCompact,
@@ -131,7 +131,7 @@ class LivingSeedCard extends StatelessWidget {
 
   Widget _profile(BuildContext context, SpiritualGrowth growth) {
     final a = Appearance.of(context);
-    final accent = _accent(growth);
+    final accent = _accent(growth, a);
     final next = growth.nextStage;
     final daysLeft = growth.daysToNext;
 

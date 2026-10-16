@@ -40,6 +40,14 @@ class AppLight {
         stops: const [0, 0.45, 1],
       );
 
+  /// Vinheta leve — o céu claro não pode fechar em preto nas bordas.
+  static const vignetteLight = RadialGradient(
+    center: Alignment(0, -0.15),
+    radius: 1.15,
+    colors: [Color(0x00000000), Color(0x00000000), Color(0x14000000)],
+    stops: [0, 0.62, 1],
+  );
+
   /// Vinheta de lente — escurece as bordas, guia o olho ao centro.
   static const vignette = RadialGradient(
     center: Alignment(0, -0.15),

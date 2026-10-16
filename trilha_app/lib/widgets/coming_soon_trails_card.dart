@@ -84,10 +84,10 @@ class DonateCard extends StatelessWidget {
         children: [
           Row(
             children: [
-              const CinematicIcon(
+              CinematicIcon(
                 glyph: CinematicGlyph.gift,
                 size: AppMetrics.leadingIcon,
-                accent: AppRoles.chrome,
+                accent: a.chrome,
               ),
               const SizedBox(width: 14),
               Expanded(
