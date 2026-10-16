@@ -4,10 +4,17 @@ import 'package:provider/provider.dart';
 import '../l10n/app_language.dart';
 import '../models/difficulty.dart';
 import '../models/exercise.dart';
+import '../data/question_bank.dart';
+import '../data/trail_repository.dart';
+import '../models/trail.dart';
+import '../screens/lesson_screen.dart';
 import '../screens/paywall_screen.dart';
+import '../services/analytics_service.dart';
+import '../services/content_catalog_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/reinforce_picker.dart';
 import '../utils/walk_stats.dart';
 import 'cinematic_icon.dart';
 import 'immersive_background.dart';
@@ -72,6 +79,10 @@ class ProfileAccuracyCard extends StatelessWidget {
                 l10n.profileAccuracyFewGestures(WalkStats.minGestureAnswers),
                 style: AppTypography.body(size: 12, color: a.textFaint),
               ),
+            if (weak != null) ...[
+              const SizedBox(height: AppSpace.md),
+              _ReinforceButton(gesture: weak.$1, mode: stats.weakestMode),
+            ],
           ],
         ],
       ),
@@ -223,6 +234,119 @@ class _Highlight extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+}
+
+/// Reforço do ponto fraco: até 5 perguntas do gesto mais fraco, das cenas
+/// já feitas (só nos modos que a pessoa já usa), em modo prática.
+class _ReinforceButton extends StatefulWidget {
+  final ExerciseType gesture;
+  final TrailDifficulty? mode;
+
+  const _ReinforceButton({required this.gesture, this.mode});
+
+  @override
+  State<_ReinforceButton> createState() => _ReinforceButtonState();
+}
+
+class _ReinforceButtonState extends State<_ReinforceButton> {
+  static const _recentScenes = 12;
+  static const _maxTrails = 4;
+
+  bool _loading = false;
+
+  Future<void> _start() async {
+    setState(() => _loading = true);
+    final progress = context.read<ProgressService>();
+    final trails = await TrailRepository().getTrails();
+    final trailOf = <String, Trail>{
+      for (final t in trails)
+        for (final mod in t.modules)
+          for (final m in mod.missions) m.slug: t,
+    };
+    final recent = progress.completedMissions.reversed
+        .where(trailOf.containsKey)
+        .take(_recentScenes)
+        .toList();
+    final trailSlugs = {
+      for (final slug in recent) trailOf[slug]!.slug,
+    }.take(_maxTrails).toSet();
+    for (final slug in trailSlugs) {
+      await ContentCatalogService.instance.ensureTrailBank(slug);
+    }
+
+    final pool = <ReinforceCandidate>[];
+    for (final slug in recent) {
+      final trail = trailOf[slug]!.slug;
+      if (!trailSlugs.contains(trail)) continue;
+      final modes = {
+        ?TrailDifficulty.fromId(progress.difficultyForTrail(trail)),
+        for (final id in progress.clearedTrailModes[trail] ?? const <String>[])
+          ?TrailDifficulty.fromId(id),
+      };
+      if (modes.isEmpty) modes.add(TrailDifficulty.semente);
+      for (final mode in modes) {
+        final qs = await QuestionBank.instance.listForMission(
+          difficulty: mode,
+          moduleTitle: null,
+          section: slug,
+          trailSlug: trail,
+        );
+        pool.addAll([
+          for (final q in qs) (id: q.id, type: q.type, mode: q.difficulty),
+        ]);
+      }
+    }
+    final ids = ReinforcePicker.pick(
+      pool: pool,
+      gesture: widget.gesture,
+      mode: widget.mode,
+      mistakes: progress.mistakeQuestionIds.toSet(),
+      used: progress.usedQuestionIds.toSet(),
+    );
+    if (!mounted) return;
+    setState(() => _loading = false);
+    final l10n = context.l10n;
+    if (ids.isEmpty) {
+      showAppToastFor(context, message: l10n.reinforceEmpty);
+      return;
+    }
+    AnalyticsService.instance.logEvent('reinforce_start', {
+      'gesture': widget.gesture.wireId,
+      'mode': widget.mode?.id ?? 'any',
+      'questions': ids.length,
+    });
+    final mission = Mission(
+      slug: 'reinforce-${widget.gesture.wireId}',
+      title: l10n.reinforceMissionTitle(widget.gesture.labelPt),
+      intro: l10n.reinforceMissionIntro(widget.gesture.labelPt),
+      type: 'lesson',
+      stepsReward: 30,
+      questions: const [],
+    );
+    await Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => LessonScreen(
+          missionSlug: mission.slug,
+          practiceMode: true,
+          missionOverride: mission,
+          questionIdsOverride: ids,
+        ),
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = context.l10n;
+    return CopperCta(
+      label: _loading
+          ? l10n.reinforcePreparing
+          : l10n.reinforceCta(widget.gesture.labelPt),
+      leading: CinematicGlyph.target,
+      expanded: true,
+      onTap: _loading ? null : _start,
     );
   }
 }

@@ -3978,6 +3978,7 @@
   },
   "paywallPerkBadge": "Selo de apoiador no seu perfil",
   "paywallPerkProfile": "No perfil: sua sequência semana a semana e o acerto por modo e por gesto",
+  "paywallPerkReinforce": "Reforço: perguntas do gesto em que você mais erra",
   "paywallPerkWeeklyReview": "Revisão da semana: o “Hoje:” de cada cena + 3 perguntas",
   "paywallPitch": "Um apoio direto ao projeto, com alguns extras.",
   "paywallPlanAnnual": "Anual",
@@ -4778,6 +4779,32 @@
   "recognitionWhoTitle": "Quem reconheceu",
   "recognitionYesterday": "Ontem",
   "recognitionYourScene": "Sua cena",
+  "reinforceCta": "Reforçar {gesture}",
+  "@reinforceCta": {
+    "placeholders": {
+      "gesture": {
+        "type": "String"
+      }
+    }
+  },
+  "reinforceEmpty": "Ainda não há perguntas desse gesto nas cenas que você fez.",
+  "reinforceMissionIntro": "Perguntas de {gesture} das cenas que você já fez.",
+  "@reinforceMissionIntro": {
+    "placeholders": {
+      "gesture": {
+        "type": "String"
+      }
+    }
+  },
+  "reinforceMissionTitle": "Reforço: {gesture}",
+  "@reinforceMissionTitle": {
+    "placeholders": {
+      "gesture": {
+        "type": "String"
+      }
+    }
+  },
+  "reinforcePreparing": "Preparando…",
   "reminderDailyEyebrow": "Lembrete diário",
   "reminderHour": "{hour}h",
   "@reminderHour": {

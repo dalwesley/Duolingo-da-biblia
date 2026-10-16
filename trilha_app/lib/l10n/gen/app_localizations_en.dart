@@ -5660,6 +5660,10 @@ class AppLocalizationsEn extends AppLocalizations {
       'On your profile: your streak week by week and accuracy by mode and gesture';
 
   @override
+  String get paywallPerkReinforce =>
+      'Practice: questions from the gesture you miss most';
+
+  @override
   String get paywallPerkWeeklyReview =>
       'Weekly review: each scene\'s “Today:” + 3 questions';
 
@@ -6752,6 +6756,28 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get recognitionYourScene => 'Your scene';
+
+  @override
+  String reinforceCta(String gesture) {
+    return 'Practice $gesture';
+  }
+
+  @override
+  String get reinforceEmpty =>
+      'There are no questions of this gesture in the scenes you\'ve done yet.';
+
+  @override
+  String reinforceMissionIntro(String gesture) {
+    return '$gesture questions from scenes you\'ve already done.';
+  }
+
+  @override
+  String reinforceMissionTitle(String gesture) {
+    return 'Practice: $gesture';
+  }
+
+  @override
+  String get reinforcePreparing => 'Preparing…';
 
   @override
   String get reminderDailyEyebrow => 'Daily reminder';

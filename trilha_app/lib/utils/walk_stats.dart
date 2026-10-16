@@ -46,6 +46,17 @@ class WalkStats {
     return low.$1 == strongest?.$1 ? null : low;
   }
 
+  /// Modo com menor acerto (entre os com respostas suficientes), se houver
+  /// pelo menos dois para comparar.
+  TrailDifficulty? get weakestMode {
+    final r = [
+      for (final e in byMode.entries)
+        if (e.value.total >= minGestureAnswers) e,
+    ];
+    if (r.length < 2) return null;
+    return r.reduce((a, b) => b.value.percent < a.value.percent ? b : a).key;
+  }
+
   /// [answerCorrect]/[answerTotal] usam chaves `modo.gesto` (ex.: `semente.tap`).
   factory WalkStats.from({
     required Map<String, int> answerCorrect,

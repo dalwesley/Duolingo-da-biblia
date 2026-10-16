@@ -8805,6 +8805,12 @@ abstract class AppLocalizations {
   /// **'No perfil: sua sequência semana a semana e o acerto por modo e por gesto'**
   String get paywallPerkProfile;
 
+  /// No description provided for @paywallPerkReinforce.
+  ///
+  /// In pt, this message translates to:
+  /// **'Reforço: perguntas do gesto em que você mais erra'**
+  String get paywallPerkReinforce;
+
   /// No description provided for @paywallPerkWeeklyReview.
   ///
   /// In pt, this message translates to:
@@ -10430,6 +10436,36 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Sua cena'**
   String get recognitionYourScene;
+
+  /// No description provided for @reinforceCta.
+  ///
+  /// In pt, this message translates to:
+  /// **'Reforçar {gesture}'**
+  String reinforceCta(String gesture);
+
+  /// No description provided for @reinforceEmpty.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ainda não há perguntas desse gesto nas cenas que você fez.'**
+  String get reinforceEmpty;
+
+  /// No description provided for @reinforceMissionIntro.
+  ///
+  /// In pt, this message translates to:
+  /// **'Perguntas de {gesture} das cenas que você já fez.'**
+  String reinforceMissionIntro(String gesture);
+
+  /// No description provided for @reinforceMissionTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Reforço: {gesture}'**
+  String reinforceMissionTitle(String gesture);
+
+  /// No description provided for @reinforcePreparing.
+  ///
+  /// In pt, this message translates to:
+  /// **'Preparando…'**
+  String get reinforcePreparing;
 
   /// No description provided for @reminderDailyEyebrow.
   ///

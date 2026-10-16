@@ -5708,6 +5708,10 @@ class AppLocalizationsEs extends AppLocalizations {
       'En tu perfil: tu racha semana a semana y los aciertos por modo y por gesto';
 
   @override
+  String get paywallPerkReinforce =>
+      'Refuerzo: preguntas del gesto en que más fallas';
+
+  @override
   String get paywallPerkWeeklyReview =>
       'Repaso de la semana: el “Hoy:” de cada escena + 3 preguntas';
 
@@ -6803,6 +6807,28 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get recognitionYourScene => 'Tu escena';
+
+  @override
+  String reinforceCta(String gesture) {
+    return 'Reforzar $gesture';
+  }
+
+  @override
+  String get reinforceEmpty =>
+      'Todavía no hay preguntas de este gesto en las escenas que hiciste.';
+
+  @override
+  String reinforceMissionIntro(String gesture) {
+    return 'Preguntas de $gesture de las escenas que ya hiciste.';
+  }
+
+  @override
+  String reinforceMissionTitle(String gesture) {
+    return 'Refuerzo: $gesture';
+  }
+
+  @override
+  String get reinforcePreparing => 'Preparando…';
 
   @override
   String get reminderDailyEyebrow => 'Recordatorio diario';

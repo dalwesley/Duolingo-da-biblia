@@ -74,6 +74,11 @@
     "en": "On your profile: your streak week by week and accuracy by mode and gesture",
     "es": "En tu perfil: tu racha semana a semana y los aciertos por modo y por gesto"
   },
+  "paywallPerkReinforce": {
+    "pt": "Reforço: perguntas do gesto em que você mais erra",
+    "en": "Practice: questions from the gesture you miss most",
+    "es": "Refuerzo: preguntas del gesto en que más fallas"
+  },
   "paywallPerkBadge": {
     "pt": "Selo de apoiador no seu perfil",
     "en": "Supporter badge on your profile",
@@ -884,5 +889,39 @@
     "pt": "Veja sua sequência semana a semana, o histórico das lamparinas e onde você acerta mais em cada modo e gesto.",
     "en": "See your streak week by week, your lamp history and where you do best in each mode and gesture.",
     "es": "Mira tu racha semana a semana, el historial de lámparas y dónde aciertas más en cada modo y gesto."
+  },
+  "reinforceCta": {
+    "pt": "Reforçar {gesture}",
+    "en": "Practice {gesture}",
+    "es": "Reforzar {gesture}",
+    "placeholders": {
+      "gesture": "String"
+    }
+  },
+  "reinforcePreparing": {
+    "pt": "Preparando…",
+    "en": "Preparing…",
+    "es": "Preparando…"
+  },
+  "reinforceEmpty": {
+    "pt": "Ainda não há perguntas desse gesto nas cenas que você fez.",
+    "en": "There are no questions of this gesture in the scenes you've done yet.",
+    "es": "Todavía no hay preguntas de este gesto en las escenas que hiciste."
+  },
+  "reinforceMissionTitle": {
+    "pt": "Reforço: {gesture}",
+    "en": "Practice: {gesture}",
+    "es": "Refuerzo: {gesture}",
+    "placeholders": {
+      "gesture": "String"
+    }
+  },
+  "reinforceMissionIntro": {
+    "pt": "Perguntas de {gesture} das cenas que você já fez.",
+    "en": "{gesture} questions from scenes you've already done.",
+    "es": "Preguntas de {gesture} de las escenas que ya hiciste.",
+    "placeholders": {
+      "gesture": "String"
+    }
   }
 }
