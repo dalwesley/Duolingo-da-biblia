@@ -8103,16 +8103,10 @@ abstract class AppLocalizations {
   /// **'{percent}% · {correct} de {total}'**
   String myWalkAccuracyLine(int percent, int correct, int total);
 
-  /// No description provided for @myWalkDaysLabel.
-  ///
-  /// In pt, this message translates to:
-  /// **'{count, plural, =1{dia caminhado} other{dias caminhados}}'**
-  String myWalkDaysLabel(int count);
-
   /// No description provided for @myWalkEntryCaption.
   ///
   /// In pt, this message translates to:
-  /// **'Seu ano e o acerto por modo e por gesto'**
+  /// **'Onde você acerta mais e o que pede reforço'**
   String get myWalkEntryCaption;
 
   /// No description provided for @myWalkGesturesEmpty.
@@ -8133,6 +8127,12 @@ abstract class AppLocalizations {
   /// **'Acerto por gesto'**
   String get myWalkGesturesHeader;
 
+  /// No description provided for @myWalkIntro.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu acerto de primeira em cada modo e em cada gesto.'**
+  String get myWalkIntro;
+
   /// No description provided for @myWalkModesBody.
   ///
   /// In pt, this message translates to:
@@ -8144,12 +8144,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Acerto por modo'**
   String get myWalkModesHeader;
-
-  /// No description provided for @myWalkMonthsSemantics.
-  ///
-  /// In pt, this message translates to:
-  /// **'{count, plural, =1{1 cena nova este ano, por mês} other{{count} cenas novas este ano, por mês}}'**
-  String myWalkMonthsSemantics(int count);
 
   /// No description provided for @myWalkNoAnswersYet.
   ///
@@ -8169,12 +8163,6 @@ abstract class AppLocalizations {
   /// **'Acerto por modo e por gesto'**
   String get myWalkPlusTitle;
 
-  /// No description provided for @myWalkScenesLabel.
-  ///
-  /// In pt, this message translates to:
-  /// **'{count, plural, =1{cena nova} other{cenas novas}}'**
-  String myWalkScenesLabel(int count);
-
   /// No description provided for @myWalkStrongest.
   ///
   /// In pt, this message translates to:
@@ -8192,18 +8180,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'A reforçar'**
   String get myWalkToStrengthen;
-
-  /// No description provided for @myWalkYearEmpty.
-  ///
-  /// In pt, this message translates to:
-  /// **'As cenas que você fizer aparecem aqui, mês a mês.'**
-  String get myWalkYearEmpty;
-
-  /// No description provided for @myWalkYearHeader.
-  ///
-  /// In pt, this message translates to:
-  /// **'Seu {year}'**
-  String myWalkYearHeader(int year);
 
   /// No description provided for @navBible.
   ///
@@ -8910,7 +8886,7 @@ abstract class AppLocalizations {
   /// No description provided for @paywallPerkJourney.
   ///
   /// In pt, this message translates to:
-  /// **'Minha caminhada: seu ano e o acerto por modo e por gesto'**
+  /// **'Minha caminhada: acerto por modo e por gesto, com o que reforçar'**
   String get paywallPerkJourney;
 
   /// No description provided for @paywallPerkWeeklyReview.

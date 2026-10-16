@@ -7,15 +7,7 @@ void main() {
   WalkStats build({
     Map<String, int> correct = const {},
     Map<String, int> total = const {},
-    Map<String, String> done = const {},
-    List<String> days = const [],
-  }) => WalkStats.from(
-    answerCorrect: correct,
-    answerTotal: total,
-    missionCompletedOn: done,
-    playDates: days,
-    year: 2026,
-  );
+  }) => WalkStats.from(answerCorrect: correct, answerTotal: total);
 
   test('sums accuracy by mode and by gesture', () {
     final s = build(
@@ -41,21 +33,5 @@ void main() {
     );
     expect(s.strongest!.$1, ExerciseType.tap);
     expect(s.weakest!.$1, ExerciseType.order);
-  });
-
-  test('counts this year only, per month', () {
-    final s = build(
-      done: {
-        'a': '2026-01-03',
-        'b': '2026-01-20',
-        'c': '2026-10-16',
-        'd': '2025-12-31',
-      },
-      days: ['2025-12-31', '2026-01-03', '2026-10-16'],
-    );
-    expect(s.scenesPerMonth[0], 2);
-    expect(s.scenesPerMonth[9], 1);
-    expect(s.scenesThisYear, 3);
-    expect(s.daysWalkedThisYear, 2);
   });
 }

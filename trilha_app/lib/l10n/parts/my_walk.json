@@ -5,46 +5,14 @@
     "es": "Mi camino"
   },
   "myWalkEntryCaption": {
-    "pt": "Seu ano e o acerto por modo e por gesto",
-    "en": "Your year and accuracy by mode and gesture",
-    "es": "Tu año y los aciertos por modo y por gesto"
+    "pt": "Onde você acerta mais e o que pede reforço",
+    "en": "Where you do best and what needs strengthening",
+    "es": "Dónde aciertas más y qué necesita refuerzo"
   },
-  "myWalkYearHeader": {
-    "pt": "Seu {year}",
-    "en": "Your {year}",
-    "es": "Tu {year}",
-    "placeholders": {
-      "year": "int"
-    }
-  },
-  "myWalkDaysLabel": {
-    "pt": "{count, plural, =1{dia caminhado} other{dias caminhados}}",
-    "en": "{count, plural, =1{day walked} other{days walked}}",
-    "es": "{count, plural, =1{día caminado} other{días caminados}}",
-    "placeholders": {
-      "count": "int"
-    }
-  },
-  "myWalkScenesLabel": {
-    "pt": "{count, plural, =1{cena nova} other{cenas novas}}",
-    "en": "{count, plural, =1{new scene} other{new scenes}}",
-    "es": "{count, plural, =1{escena nueva} other{escenas nuevas}}",
-    "placeholders": {
-      "count": "int"
-    }
-  },
-  "myWalkYearEmpty": {
-    "pt": "As cenas que você fizer aparecem aqui, mês a mês.",
-    "en": "The scenes you do show up here, month by month.",
-    "es": "Las escenas que hagas aparecen aquí, mes a mes."
-  },
-  "myWalkMonthsSemantics": {
-    "pt": "{count, plural, =1{1 cena nova este ano, por mês} other{{count} cenas novas este ano, por mês}}",
-    "en": "{count, plural, =1{1 new scene this year, by month} other{{count} new scenes this year, by month}}",
-    "es": "{count, plural, =1{1 escena nueva este año, por mes} other{{count} escenas nuevas este año, por mes}}",
-    "placeholders": {
-      "count": "int"
-    }
+  "myWalkIntro": {
+    "pt": "Seu acerto de primeira em cada modo e em cada gesto.",
+    "en": "Your first-try accuracy in each mode and each gesture.",
+    "es": "Tus aciertos al primer intento en cada modo y cada gesto."
   },
   "myWalkModesHeader": {
     "pt": "Acerto por modo",

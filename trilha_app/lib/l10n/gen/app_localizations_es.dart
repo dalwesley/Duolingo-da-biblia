@@ -5228,18 +5228,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String myWalkDaysLabel(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'días caminados',
-      one: 'día caminado',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get myWalkEntryCaption => 'Tu año y los aciertos por modo y por gesto';
+  String get myWalkEntryCaption => 'Dónde aciertas más y qué necesita refuerzo';
 
   @override
   String get myWalkGesturesEmpty =>
@@ -5262,22 +5251,15 @@ class AppLocalizationsEs extends AppLocalizations {
   String get myWalkGesturesHeader => 'Aciertos por gesto';
 
   @override
+  String get myWalkIntro =>
+      'Tus aciertos al primer intento en cada modo y cada gesto.';
+
+  @override
   String get myWalkModesBody =>
       'Respuestas correctas al primer intento en cada modo.';
 
   @override
   String get myWalkModesHeader => 'Aciertos por modo';
-
-  @override
-  String myWalkMonthsSemantics(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count escenas nuevas este año, por mes',
-      one: '1 escena nueva este año, por mes',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get myWalkNoAnswersYet => 'Sin respuestas aún';
@@ -5290,17 +5272,6 @@ class AppLocalizationsEs extends AppLocalizations {
   String get myWalkPlusTitle => 'Aciertos por modo y por gesto';
 
   @override
-  String myWalkScenesLabel(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'escenas nuevas',
-      one: 'escena nueva',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get myWalkStrongest => 'Punto fuerte';
 
   @override
@@ -5308,15 +5279,6 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get myWalkToStrengthen => 'Para reforzar';
-
-  @override
-  String get myWalkYearEmpty =>
-      'Las escenas que hagas aparecen aquí, mes a mes.';
-
-  @override
-  String myWalkYearHeader(int year) {
-    return 'Tu $year';
-  }
 
   @override
   String get navBible => 'Biblia';
@@ -5801,7 +5763,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get paywallPerkJourney =>
-      'Mi camino: tu año y los aciertos por modo y por gesto';
+      'Mi camino: aciertos por modo y por gesto, con lo que reforzar';
 
   @override
   String get paywallPerkWeeklyReview =>

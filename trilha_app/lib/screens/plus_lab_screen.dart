@@ -238,7 +238,9 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
                         line(
                           'Põe 3 cenas na semana da revisão (seg, qua, '
                           'sex) e soma respostas por modo e gesto. Não '
-                          'conclui cenas nem dá passos.',
+                          'conclui cenas nem dá passos. "Limpar" tira '
+                          'todas as cenas da semana da revisão e zera o '
+                          'acerto por modo e gesto.',
                         ),
                         button(
                           _busy ? 'Criando…' : 'Criar semana de revisão',

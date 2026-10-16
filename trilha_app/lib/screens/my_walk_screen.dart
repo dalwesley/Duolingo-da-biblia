@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 
 import '../l10n/app_language.dart';
@@ -20,10 +19,11 @@ import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import 'paywall_screen.dart';
 
-/// Minha caminhada: o ano mês a mês (aberto a todos) e, no Peregrino+, o
-/// acerto de primeira por modo e por gesto.
+/// Minha caminhada (Peregrino+): acerto de primeira por modo e por gesto,
+/// com ponto forte e o que reforçar.
 ///
-/// Calendário de constância, trilhas e acerto geral já ficam no Perfil.
+/// Constância, dias caminhados, cenas e acerto geral ficam no Perfil — esta
+/// tela não repete nada disso.
 class MyWalkScreen extends StatefulWidget {
   const MyWalkScreen({super.key});
 
@@ -46,15 +46,11 @@ class _MyWalkScreenState extends State<MyWalkScreen> {
     final l10n = context.l10n;
     final progress = context.watch<ProgressService>();
     final hasPlus = context.watch<SubscriptionService>().hasPlus;
-    final year = DateTime.now().year;
     final stats = WalkStats.from(
       answerCorrect: progress.answerCorrect,
       answerTotal: progress.answerTotal,
-      missionCompletedOn: progress.missionCompletedOn,
-      playDates: progress.playDates,
-      year: year,
     );
-    final quiet = stats.scenesThisYear == 0 && stats.answered == 0;
+    final quiet = stats.answered == 0;
 
     return Scaffold(
       backgroundColor: Colors.transparent,
@@ -89,9 +85,16 @@ class _MyWalkScreenState extends State<MyWalkScreen> {
                           size: 88,
                         ),
                       ),
+                      const SizedBox(height: AppSpace.md),
+                      Text(
+                        l10n.myWalkIntro,
+                        textAlign: TextAlign.center,
+                        style: AppTypography.body(
+                          size: 14,
+                          color: Appearance.of(context).textSecondary,
+                        ),
+                      ),
                       const SizedBox(height: AppSpace.lg),
-                      _YearCard(stats: stats, year: year),
-                      const SizedBox(height: AppSpace.section),
                       if (hasPlus) ...[
                         _ModesCard(stats: stats),
                         const SizedBox(height: AppSpace.section),
@@ -111,158 +114,6 @@ class _MyWalkScreenState extends State<MyWalkScreen> {
               ),
             ],
           ),
-        ),
-      ),
-    );
-  }
-}
-
-class _YearCard extends StatelessWidget {
-  final WalkStats stats;
-  final int year;
-
-  const _YearCard({required this.stats, required this.year});
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final l10n = context.l10n;
-    return GlassCard(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          RelicChapter(title: l10n.myWalkYearHeader(year), divided: false),
-          const SizedBox(height: AppSpace.md),
-          Row(
-            children: [
-              Expanded(
-                child: _Figure(
-                  value: '${stats.daysWalkedThisYear}',
-                  label: l10n.myWalkDaysLabel(stats.daysWalkedThisYear),
-                ),
-              ),
-              Expanded(
-                child: _Figure(
-                  value: '${stats.scenesThisYear}',
-                  label: l10n.myWalkScenesLabel(stats.scenesThisYear),
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: AppSpace.lg),
-          _MonthBars(perMonth: stats.scenesPerMonth),
-          if (stats.scenesThisYear == 0) ...[
-            const SizedBox(height: AppSpace.sm),
-            Text(
-              l10n.myWalkYearEmpty,
-              textAlign: TextAlign.center,
-              style: AppTypography.body(size: 12, color: a.textFaint),
-            ),
-          ],
-        ],
-      ),
-    );
-  }
-}
-
-class _Figure extends StatelessWidget {
-  final String value;
-  final String label;
-
-  const _Figure({required this.value, required this.label});
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Column(
-      children: [
-        Text(value, style: AppTypography.display(size: 28, color: a.text)),
-        Text(
-          label,
-          textAlign: TextAlign.center,
-          style: AppTypography.body(size: 12, color: a.textSecondary),
-        ),
-      ],
-    );
-  }
-}
-
-/// Cenas novas por mês: uma série, uma cor, número só no pico.
-class _MonthBars extends StatelessWidget {
-  final List<int> perMonth;
-
-  const _MonthBars({required this.perMonth});
-
-  static const _height = 72.0;
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final l10n = context.l10n;
-    final peak = perMonth.fold(0, (m, v) => v > m ? v : m);
-    final peakIndex = peak == 0 ? -1 : perMonth.indexOf(peak);
-    final current = DateTime.now().month - 1;
-    final initials = DateFormat.MMM(l10n.localeName);
-
-    return Semantics(
-      label: l10n.myWalkMonthsSemantics(perMonth.fold(0, (s, v) => s + v)),
-      child: ExcludeSemantics(
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.end,
-          children: [
-            for (var m = 0; m < 12; m++)
-              Expanded(
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 1),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      SizedBox(
-                        height: 16,
-                        child: m == peakIndex
-                            ? Text(
-                                '$peak',
-                                style: AppTypography.body(
-                                  size: 11,
-                                  weight: FontWeight.w700,
-                                  color: a.text,
-                                ),
-                              )
-                            : null,
-                      ),
-                      Container(
-                        height: peak == 0
-                            ? 2
-                            : (perMonth[m] / peak * _height).clamp(
-                                2.0,
-                                _height,
-                              ),
-                        decoration: BoxDecoration(
-                          color: perMonth[m] == 0 ? a.insetFill : a.chrome,
-                          borderRadius: const BorderRadius.vertical(
-                            top: Radius.circular(4),
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        initials
-                            .format(DateTime(2000, m + 1))
-                            .substring(0, 1)
-                            .toUpperCase(),
-                        style: AppTypography.body(
-                          size: 10,
-                          weight: m == current
-                              ? FontWeight.w700
-                              : FontWeight.w400,
-                          color: m == current ? a.text : a.textFaint,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-          ],
         ),
       ),
     );

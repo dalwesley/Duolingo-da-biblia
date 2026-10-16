@@ -5211,18 +5211,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String myWalkDaysLabel(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'dias caminhados',
-      one: 'dia caminhado',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get myWalkEntryCaption => 'Seu ano e o acerto por modo e por gesto';
+  String get myWalkEntryCaption => 'Onde você acerta mais e o que pede reforço';
 
   @override
   String get myWalkGesturesEmpty =>
@@ -5245,21 +5234,14 @@ class AppLocalizationsPt extends AppLocalizations {
   String get myWalkGesturesHeader => 'Acerto por gesto';
 
   @override
+  String get myWalkIntro =>
+      'Seu acerto de primeira em cada modo e em cada gesto.';
+
+  @override
   String get myWalkModesBody => 'Respostas certas de primeira em cada modo.';
 
   @override
   String get myWalkModesHeader => 'Acerto por modo';
-
-  @override
-  String myWalkMonthsSemantics(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count cenas novas este ano, por mês',
-      one: '1 cena nova este ano, por mês',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get myWalkNoAnswersYet => 'Sem respostas ainda';
@@ -5272,17 +5254,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get myWalkPlusTitle => 'Acerto por modo e por gesto';
 
   @override
-  String myWalkScenesLabel(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'cenas novas',
-      one: 'cena nova',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get myWalkStrongest => 'Ponto forte';
 
   @override
@@ -5290,15 +5261,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get myWalkToStrengthen => 'A reforçar';
-
-  @override
-  String get myWalkYearEmpty =>
-      'As cenas que você fizer aparecem aqui, mês a mês.';
-
-  @override
-  String myWalkYearHeader(int year) {
-    return 'Seu $year';
-  }
 
   @override
   String get navBible => 'Bíblia';
@@ -5780,7 +5742,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get paywallPerkJourney =>
-      'Minha caminhada: seu ano e o acerto por modo e por gesto';
+      'Minha caminhada: acerto por modo e por gesto, com o que reforçar';
 
   @override
   String get paywallPerkWeeklyReview =>

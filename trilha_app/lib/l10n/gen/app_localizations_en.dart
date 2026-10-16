@@ -5179,18 +5179,8 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String myWalkDaysLabel(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'days walked',
-      one: 'day walked',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get myWalkEntryCaption => 'Your year and accuracy by mode and gesture';
+  String get myWalkEntryCaption =>
+      'Where you do best and what needs strengthening';
 
   @override
   String get myWalkGesturesEmpty =>
@@ -5213,21 +5203,14 @@ class AppLocalizationsEn extends AppLocalizations {
   String get myWalkGesturesHeader => 'Accuracy by gesture';
 
   @override
+  String get myWalkIntro =>
+      'Your first-try accuracy in each mode and each gesture.';
+
+  @override
   String get myWalkModesBody => 'Answers right on the first try in each mode.';
 
   @override
   String get myWalkModesHeader => 'Accuracy by mode';
-
-  @override
-  String myWalkMonthsSemantics(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: '$count new scenes this year, by month',
-      one: '1 new scene this year, by month',
-    );
-    return '$_temp0';
-  }
 
   @override
   String get myWalkNoAnswersYet => 'No answers yet';
@@ -5240,17 +5223,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get myWalkPlusTitle => 'Accuracy by mode and gesture';
 
   @override
-  String myWalkScenesLabel(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other: 'new scenes',
-      one: 'new scene',
-    );
-    return '$_temp0';
-  }
-
-  @override
   String get myWalkStrongest => 'Strong point';
 
   @override
@@ -5258,15 +5230,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get myWalkToStrengthen => 'To strengthen';
-
-  @override
-  String get myWalkYearEmpty =>
-      'The scenes you do show up here, month by month.';
-
-  @override
-  String myWalkYearHeader(int year) {
-    return 'Your $year';
-  }
 
   @override
   String get navBible => 'Bible';
@@ -5752,7 +5715,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get paywallPerkJourney =>
-      'My walk: your year and accuracy by mode and gesture';
+      'My walk: accuracy by mode and gesture, with what to strengthen';
 
   @override
   String get paywallPerkWeeklyReview =>

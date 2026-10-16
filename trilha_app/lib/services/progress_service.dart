@@ -579,18 +579,19 @@ class ProgressService extends ChangeNotifier {
     await _save();
   }
 
-  /// Laboratório (debug): tira as datas de cenas que não foram concluídas de
-  /// verdade, zera o acerto por modo/gesto e reabre a revisão da semana.
+  /// Laboratório (debug): tira todas as datas da semana da revisão (é ali
+  /// que "Criar semana" põe as cenas), zera o acerto por modo/gesto e reabre
+  /// a revisão. Só para conta de teste.
   Future<void> debugClearLab() async {
     if (!kDebugMode) return;
-    final done = completedMissions.toSet();
+    final week = weeklyReviewWeekKey();
+    final inWeek = missionsCompletedInWeek(week).toSet();
     missionCompletedOn = {
       for (final e in missionCompletedOn.entries)
-        if (done.contains(e.key)) e.key: e.value,
+        if (!inWeek.contains(e.key)) e.key: e.value,
     };
     answerCorrect = {};
     answerTotal = {};
-    final week = weeklyReviewWeekKey();
     weeklyReviewsDone = weeklyReviewsDone.where((w) => w != week).toList();
     await _save();
   }

@@ -3702,15 +3702,7 @@
       }
     }
   },
-  "myWalkDaysLabel": "{count, plural, =1{dia caminhado} other{dias caminhados}}",
-  "@myWalkDaysLabel": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "myWalkEntryCaption": "Seu ano e o acerto por modo e por gesto",
+  "myWalkEntryCaption": "Onde você acerta mais e o que pede reforço",
   "myWalkGesturesEmpty": "Responda algumas cenas para ver seu acerto em cada gesto.",
   "myWalkGesturesFew": "{count, plural, =1{Com 1 resposta em pelo menos dois gestos, aparecem o ponto forte e o que reforçar.} other{Com {count} respostas em pelo menos dois gestos, aparecem o ponto forte e o que reforçar.}}",
   "@myWalkGesturesFew": {
@@ -3721,39 +3713,15 @@
     }
   },
   "myWalkGesturesHeader": "Acerto por gesto",
+  "myWalkIntro": "Seu acerto de primeira em cada modo e em cada gesto.",
   "myWalkModesBody": "Respostas certas de primeira em cada modo.",
   "myWalkModesHeader": "Acerto por modo",
-  "myWalkMonthsSemantics": "{count, plural, =1{1 cena nova este ano, por mês} other{{count} cenas novas este ano, por mês}}",
-  "@myWalkMonthsSemantics": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "myWalkNoAnswersYet": "Sem respostas ainda",
   "myWalkPlusBody": "No Peregrino+, você vê onde acerta mais, o que pede reforço e como vai em cada modo.",
   "myWalkPlusTitle": "Acerto por modo e por gesto",
-  "myWalkScenesLabel": "{count, plural, =1{cena nova} other{cenas novas}}",
-  "@myWalkScenesLabel": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
   "myWalkStrongest": "Ponto forte",
   "myWalkTitle": "Minha caminhada",
   "myWalkToStrengthen": "A reforçar",
-  "myWalkYearEmpty": "As cenas que você fizer aparecem aqui, mês a mês.",
-  "myWalkYearHeader": "Seu {year}",
-  "@myWalkYearHeader": {
-    "placeholders": {
-      "year": {
-        "type": "int"
-      }
-    }
-  },
   "navBible": "Bíblia",
   "navTabWithNews": "{tab}, com novidades",
   "@navTabWithNews": {
@@ -4043,7 +4011,7 @@
     }
   },
   "paywallPerkBadge": "Selo de apoiador no seu perfil",
-  "paywallPerkJourney": "Minha caminhada: seu ano e o acerto por modo e por gesto",
+  "paywallPerkJourney": "Minha caminhada: acerto por modo e por gesto, com o que reforçar",
   "paywallPerkWeeklyReview": "Revisão da semana: o “Hoje:” de cada cena + 3 perguntas",
   "paywallPitch": "Um apoio direto ao projeto, com alguns extras.",
   "paywallPlanAnnual": "Anual",
