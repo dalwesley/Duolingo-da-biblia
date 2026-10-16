@@ -69,10 +69,10 @@
     "en": "Weekly review: each scene's “Today:” + 3 questions",
     "es": "Repaso de la semana: el “Hoy:” de cada escena + 3 preguntas"
   },
-  "paywallPerkJourney": {
-    "pt": "Minha caminhada: acerto por modo e por gesto, com o que reforçar",
-    "en": "My walk: accuracy by mode and gesture, with what to strengthen",
-    "es": "Mi camino: aciertos por modo y por gesto, con lo que reforzar"
+  "paywallPerkProfile": {
+    "pt": "No perfil: sua sequência semana a semana e o acerto por modo e por gesto",
+    "en": "On your profile: your streak week by week and accuracy by mode and gesture",
+    "es": "En tu perfil: tu racha semana a semana y los aciertos por modo y por gesto"
   },
   "paywallPerkBadge": {
     "pt": "Selo de apoiador no seu perfil",
@@ -826,5 +826,63 @@
     "pt": "D",
     "en": "S",
     "es": "D"
+  },
+  "profileAccuracyHeader": {
+    "pt": "Seu acerto",
+    "en": "Your accuracy",
+    "es": "Tus aciertos"
+  },
+  "profileAccuracyBody": {
+    "pt": "Respostas certas de primeira, por modo e por gesto.",
+    "en": "Answers right on the first try, by mode and gesture.",
+    "es": "Respuestas correctas al primer intento, por modo y por gesto."
+  },
+  "profileAccuracyEmpty": {
+    "pt": "Responda algumas cenas para ver aqui seu acerto por modo e por gesto.",
+    "en": "Answer a few scenes to see your accuracy by mode and gesture here.",
+    "es": "Responde algunas escenas para ver aquí tus aciertos por modo y por gesto."
+  },
+  "profileAccuracyNoAnswers": {
+    "pt": "Sem respostas ainda",
+    "en": "No answers yet",
+    "es": "Sin respuestas aún"
+  },
+  "profileAccuracyLine": {
+    "pt": "{percent}% · {correct} de {total}",
+    "en": "{percent}% · {correct} of {total}",
+    "es": "{percent}% · {correct} de {total}",
+    "placeholders": {
+      "percent": "int",
+      "correct": "int",
+      "total": "int"
+    }
+  },
+  "profileAccuracyStrongest": {
+    "pt": "Ponto forte",
+    "en": "Strong point",
+    "es": "Punto fuerte"
+  },
+  "profileAccuracyToStrengthen": {
+    "pt": "A reforçar",
+    "en": "To strengthen",
+    "es": "Para reforzar"
+  },
+  "profileAccuracyFewGestures": {
+    "pt": "{count, plural, =1{Com 1 resposta em pelo menos dois gestos, aparecem o ponto forte e o que reforçar.} other{Com {count} respostas em pelo menos dois gestos, aparecem o ponto forte e o que reforçar.}}",
+    "en": "{count, plural, =1{With 1 answer in at least two gestures, your strong point and what to strengthen show up.} other{With {count} answers in at least two gestures, your strong point and what to strengthen show up.}}",
+    "es": "{count, plural, =1{Con 1 respuesta en al menos dos gestos, aparecen tu punto fuerte y lo que reforzar.} other{Con {count} respuestas en al menos dos gestos, aparecen tu punto fuerte y lo que reforzar.}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "profilePlusTeaserTitle": {
+    "pt": "Sua caminhada no Peregrino+",
+    "en": "Your walk with Pilgrim+",
+    "es": "Tu camino con Peregrino+"
+  },
+  "profilePlusTeaserBody": {
+    "pt": "Veja sua sequência semana a semana, o histórico das lamparinas e onde você acerta mais em cada modo e gesto.",
+    "en": "See your streak week by week, your lamp history and where you do best in each mode and gesture.",
+    "es": "Mira tu racha semana a semana, el historial de lámparas y dónde aciertas más en cada modo y gesto."
   }
 }

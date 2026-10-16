@@ -54,7 +54,7 @@ class _PaywallScreenState extends State<PaywallScreen> {
     final l10n = context.l10n;
     final perks = [
       l10n.paywallPerkWeeklyReview,
-      l10n.paywallPerkJourney,
+      l10n.paywallPerkProfile,
       l10n.paywallPerkBadge,
     ];
     final subscription = context.watch<SubscriptionService>();

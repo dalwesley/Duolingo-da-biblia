@@ -18,6 +18,7 @@ import '../widgets/immersive_background.dart';
 import '../widgets/milestone_chests.dart';
 import '../widgets/pilgrim_identity_card.dart';
 import '../widgets/pilgrim_profile_sections.dart';
+import '../widgets/profile_plus_cards.dart';
 import '../widgets/profile_privacy.dart';
 import '../widgets/portrait_picker_sheet.dart';
 import '../widgets/profile_hero.dart';
@@ -26,7 +27,6 @@ import '../widgets/relic_panel.dart';
 import '../widgets/recognition_history_sheet.dart';
 import '../widgets/ui_primitives.dart';
 import 'bible_screen.dart';
-import 'my_walk_screen.dart';
 import 'settings_screen.dart';
 
 /// Abre o perfil completo do usuário (avatar na home ou card na caravana).
@@ -123,6 +123,8 @@ class _MeScreenState extends State<MeScreen> {
     final progress = context.watch<ProgressService>();
     final backend = context.watch<BackendService>();
     final record = context.watch<CornerService>().record;
+    final sub = context.watch<SubscriptionService>();
+    final plusOpen = sub.plusFeaturesOpen;
     final profile = _caravanProfile;
     final accuracy =
         profile?.accuracyPercent ??
@@ -183,7 +185,7 @@ class _MeScreenState extends State<MeScreen> {
         pad(
           PilgrimIdentityCard(
             name: progress.userName,
-            supporter: context.watch<SubscriptionService>().hasBadge,
+            supporter: sub.hasBadge,
             photoUrl: backend.userPhotoUrl,
             seed: backend.uid,
             style: progress.settings.portraitStyle,
@@ -204,15 +206,19 @@ class _MeScreenState extends State<MeScreen> {
           ),
         ),
       const SizedBox(height: AppSpace.section),
-      pad(
-        ConstancyCard(
-          playDates: progress.playDates,
-          streak: progress.streak,
-          goal: progress.settings.streakGoal,
+      // Peregrino+: sequência semana a semana e acerto por modo/gesto.
+      if (plusOpen) ...[
+        pad(
+          ConstancyCard(
+            playDates: progress.playDates,
+            streak: progress.streak,
+            goal: progress.settings.streakGoal,
+          ),
         ),
-      ),
-      const SizedBox(height: AppSpace.md),
-      pad(const _MyWalkEntry()),
+        const SizedBox(height: AppSpace.md),
+        pad(const ProfileAccuracyCard()),
+      ] else
+        pad(const ProfilePlusTeaser()),
       if (progress.hasOpenWeeklyQuests) ...[
         const SizedBox(height: AppSpace.md),
         pad(const WeeklyQuestsCard()),
@@ -311,52 +317,6 @@ class _MeScreenState extends State<MeScreen> {
               children: body,
             ),
           ),
-        ],
-      ),
-    );
-  }
-}
-
-/// Entrada de Minha caminhada, logo abaixo da constância.
-class _MyWalkEntry extends StatelessWidget {
-  const _MyWalkEntry();
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final l10n = context.l10n;
-    return GlassCard(
-      padding: AppMetrics.cardPaddingCompact,
-      onTap: () => Navigator.of(
-        context,
-      ).push(MaterialPageRoute(builder: (_) => const MyWalkScreen())),
-      child: Row(
-        children: [
-          CinematicIcon(
-            glyph: CinematicGlyph.path,
-            size: AppMetrics.leadingIcon,
-            accent: a.chrome,
-          ),
-          const SizedBox(width: AppSpace.md),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  l10n.myWalkTitle,
-                  style: AppTypography.title(size: 14, color: a.text),
-                ),
-                Text(
-                  l10n.myWalkEntryCaption,
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: AppTypography.body(size: 12, color: a.textSecondary),
-                ),
-              ],
-            ),
-          ),
-          const SizedBox(width: AppSpace.sm),
-          ListChevron(color: a.textSecondary),
         ],
       ),
     );

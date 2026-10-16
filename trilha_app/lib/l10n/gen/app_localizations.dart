@@ -8097,90 +8097,6 @@ abstract class AppLocalizations {
   /// **'passiva deponente'**
   String get morphVoicePassiveDeponent;
 
-  /// No description provided for @myWalkAccuracyLine.
-  ///
-  /// In pt, this message translates to:
-  /// **'{percent}% · {correct} de {total}'**
-  String myWalkAccuracyLine(int percent, int correct, int total);
-
-  /// No description provided for @myWalkEntryCaption.
-  ///
-  /// In pt, this message translates to:
-  /// **'Onde você acerta mais e o que pede reforço'**
-  String get myWalkEntryCaption;
-
-  /// No description provided for @myWalkGesturesEmpty.
-  ///
-  /// In pt, this message translates to:
-  /// **'Responda algumas cenas para ver seu acerto em cada gesto.'**
-  String get myWalkGesturesEmpty;
-
-  /// No description provided for @myWalkGesturesFew.
-  ///
-  /// In pt, this message translates to:
-  /// **'{count, plural, =1{Com 1 resposta em pelo menos dois gestos, aparecem o ponto forte e o que reforçar.} other{Com {count} respostas em pelo menos dois gestos, aparecem o ponto forte e o que reforçar.}}'**
-  String myWalkGesturesFew(int count);
-
-  /// No description provided for @myWalkGesturesHeader.
-  ///
-  /// In pt, this message translates to:
-  /// **'Acerto por gesto'**
-  String get myWalkGesturesHeader;
-
-  /// No description provided for @myWalkIntro.
-  ///
-  /// In pt, this message translates to:
-  /// **'Seu acerto de primeira em cada modo e em cada gesto.'**
-  String get myWalkIntro;
-
-  /// No description provided for @myWalkModesBody.
-  ///
-  /// In pt, this message translates to:
-  /// **'Respostas certas de primeira em cada modo.'**
-  String get myWalkModesBody;
-
-  /// No description provided for @myWalkModesHeader.
-  ///
-  /// In pt, this message translates to:
-  /// **'Acerto por modo'**
-  String get myWalkModesHeader;
-
-  /// No description provided for @myWalkNoAnswersYet.
-  ///
-  /// In pt, this message translates to:
-  /// **'Sem respostas ainda'**
-  String get myWalkNoAnswersYet;
-
-  /// No description provided for @myWalkPlusBody.
-  ///
-  /// In pt, this message translates to:
-  /// **'No Peregrino+, você vê onde acerta mais, o que pede reforço e como vai em cada modo.'**
-  String get myWalkPlusBody;
-
-  /// No description provided for @myWalkPlusTitle.
-  ///
-  /// In pt, this message translates to:
-  /// **'Acerto por modo e por gesto'**
-  String get myWalkPlusTitle;
-
-  /// No description provided for @myWalkStrongest.
-  ///
-  /// In pt, this message translates to:
-  /// **'Ponto forte'**
-  String get myWalkStrongest;
-
-  /// No description provided for @myWalkTitle.
-  ///
-  /// In pt, this message translates to:
-  /// **'Minha caminhada'**
-  String get myWalkTitle;
-
-  /// No description provided for @myWalkToStrengthen.
-  ///
-  /// In pt, this message translates to:
-  /// **'A reforçar'**
-  String get myWalkToStrengthen;
-
   /// No description provided for @navBible.
   ///
   /// In pt, this message translates to:
@@ -8883,11 +8799,11 @@ abstract class AppLocalizations {
   /// **'Selo de apoiador no seu perfil'**
   String get paywallPerkBadge;
 
-  /// No description provided for @paywallPerkJourney.
+  /// No description provided for @paywallPerkProfile.
   ///
   /// In pt, this message translates to:
-  /// **'Minha caminhada: acerto por modo e por gesto, com o que reforçar'**
-  String get paywallPerkJourney;
+  /// **'No perfil: sua sequência semana a semana e o acerto por modo e por gesto'**
+  String get paywallPerkProfile;
 
   /// No description provided for @paywallPerkWeeklyReview.
   ///
@@ -9663,6 +9579,54 @@ abstract class AppLocalizations {
   /// **'Revisar erros'**
   String get practiceTitle;
 
+  /// No description provided for @profileAccuracyBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Respostas certas de primeira, por modo e por gesto.'**
+  String get profileAccuracyBody;
+
+  /// No description provided for @profileAccuracyEmpty.
+  ///
+  /// In pt, this message translates to:
+  /// **'Responda algumas cenas para ver aqui seu acerto por modo e por gesto.'**
+  String get profileAccuracyEmpty;
+
+  /// No description provided for @profileAccuracyFewGestures.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{Com 1 resposta em pelo menos dois gestos, aparecem o ponto forte e o que reforçar.} other{Com {count} respostas em pelo menos dois gestos, aparecem o ponto forte e o que reforçar.}}'**
+  String profileAccuracyFewGestures(int count);
+
+  /// No description provided for @profileAccuracyHeader.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu acerto'**
+  String get profileAccuracyHeader;
+
+  /// No description provided for @profileAccuracyLine.
+  ///
+  /// In pt, this message translates to:
+  /// **'{percent}% · {correct} de {total}'**
+  String profileAccuracyLine(int percent, int correct, int total);
+
+  /// No description provided for @profileAccuracyNoAnswers.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sem respostas ainda'**
+  String get profileAccuracyNoAnswers;
+
+  /// No description provided for @profileAccuracyStrongest.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ponto forte'**
+  String get profileAccuracyStrongest;
+
+  /// No description provided for @profileAccuracyToStrengthen.
+  ///
+  /// In pt, this message translates to:
+  /// **'A reforçar'**
+  String get profileAccuracyToStrengthen;
+
   /// No description provided for @profileDaysOnTop.
   ///
   /// In pt, this message translates to:
@@ -9722,6 +9686,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Abrir {ref}'**
   String profileOpenRef(String ref);
+
+  /// No description provided for @profilePlusTeaserBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Veja sua sequência semana a semana, o histórico das lamparinas e onde você acerta mais em cada modo e gesto.'**
+  String get profilePlusTeaserBody;
+
+  /// No description provided for @profilePlusTeaserTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sua caminhada no Peregrino+'**
+  String get profilePlusTeaserTitle;
 
   /// No description provided for @profilePrivacyHiddenSemantics.
   ///

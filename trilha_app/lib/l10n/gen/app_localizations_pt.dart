@@ -5206,63 +5206,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String get morphVoicePassiveDeponent => 'passiva deponente';
 
   @override
-  String myWalkAccuracyLine(int percent, int correct, int total) {
-    return '$percent% · $correct de $total';
-  }
-
-  @override
-  String get myWalkEntryCaption => 'Onde você acerta mais e o que pede reforço';
-
-  @override
-  String get myWalkGesturesEmpty =>
-      'Responda algumas cenas para ver seu acerto em cada gesto.';
-
-  @override
-  String myWalkGesturesFew(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other:
-          'Com $count respostas em pelo menos dois gestos, aparecem o ponto forte e o que reforçar.',
-      one:
-          'Com 1 resposta em pelo menos dois gestos, aparecem o ponto forte e o que reforçar.',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get myWalkGesturesHeader => 'Acerto por gesto';
-
-  @override
-  String get myWalkIntro =>
-      'Seu acerto de primeira em cada modo e em cada gesto.';
-
-  @override
-  String get myWalkModesBody => 'Respostas certas de primeira em cada modo.';
-
-  @override
-  String get myWalkModesHeader => 'Acerto por modo';
-
-  @override
-  String get myWalkNoAnswersYet => 'Sem respostas ainda';
-
-  @override
-  String get myWalkPlusBody =>
-      'No Peregrino+, você vê onde acerta mais, o que pede reforço e como vai em cada modo.';
-
-  @override
-  String get myWalkPlusTitle => 'Acerto por modo e por gesto';
-
-  @override
-  String get myWalkStrongest => 'Ponto forte';
-
-  @override
-  String get myWalkTitle => 'Minha caminhada';
-
-  @override
-  String get myWalkToStrengthen => 'A reforçar';
-
-  @override
   String get navBible => 'Bíblia';
 
   @override
@@ -5741,8 +5684,8 @@ class AppLocalizationsPt extends AppLocalizations {
   String get paywallPerkBadge => 'Selo de apoiador no seu perfil';
 
   @override
-  String get paywallPerkJourney =>
-      'Minha caminhada: acerto por modo e por gesto, com o que reforçar';
+  String get paywallPerkProfile =>
+      'No perfil: sua sequência semana a semana e o acerto por modo e por gesto';
 
   @override
   String get paywallPerkWeeklyReview =>
@@ -6294,6 +6237,44 @@ class AppLocalizationsPt extends AppLocalizations {
   String get practiceTitle => 'Revisar erros';
 
   @override
+  String get profileAccuracyBody =>
+      'Respostas certas de primeira, por modo e por gesto.';
+
+  @override
+  String get profileAccuracyEmpty =>
+      'Responda algumas cenas para ver aqui seu acerto por modo e por gesto.';
+
+  @override
+  String profileAccuracyFewGestures(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Com $count respostas em pelo menos dois gestos, aparecem o ponto forte e o que reforçar.',
+      one:
+          'Com 1 resposta em pelo menos dois gestos, aparecem o ponto forte e o que reforçar.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get profileAccuracyHeader => 'Seu acerto';
+
+  @override
+  String profileAccuracyLine(int percent, int correct, int total) {
+    return '$percent% · $correct de $total';
+  }
+
+  @override
+  String get profileAccuracyNoAnswers => 'Sem respostas ainda';
+
+  @override
+  String get profileAccuracyStrongest => 'Ponto forte';
+
+  @override
+  String get profileAccuracyToStrengthen => 'A reforçar';
+
+  @override
   String profileDaysOnTop(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -6338,6 +6319,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String profileOpenRef(String ref) {
     return 'Abrir $ref';
   }
+
+  @override
+  String get profilePlusTeaserBody =>
+      'Veja sua sequência semana a semana, o histórico das lamparinas e onde você acerta mais em cada modo e gesto.';
+
+  @override
+  String get profilePlusTeaserTitle => 'Sua caminhada no Peregrino+';
 
   @override
   String profilePrivacyHiddenSemantics(String label) {

@@ -16,7 +16,6 @@ import '../widgets/plus_offer_sheet.dart';
 import '../widgets/relic_panel.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
-import 'my_walk_screen.dart';
 import 'paywall_screen.dart';
 import 'support_screen.dart';
 import 'weekly_review_screen.dart';
@@ -279,10 +278,6 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
                         button(
                           'Revisão da semana',
                           () => _open(const WeeklyReviewScreen()),
-                        ),
-                        button(
-                          'Minha caminhada',
-                          () => _open(const MyWalkScreen()),
                         ),
                         button('Apoiar o Stway', () => openSupport(context)),
                       ]),

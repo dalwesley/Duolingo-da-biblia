@@ -3688,40 +3688,6 @@
   "morphVoiceMiddlePassive": "médio-passiva",
   "morphVoicePassive": "passiva",
   "morphVoicePassiveDeponent": "passiva deponente",
-  "myWalkAccuracyLine": "{percent}% · {correct} de {total}",
-  "@myWalkAccuracyLine": {
-    "placeholders": {
-      "percent": {
-        "type": "int"
-      },
-      "correct": {
-        "type": "int"
-      },
-      "total": {
-        "type": "int"
-      }
-    }
-  },
-  "myWalkEntryCaption": "Onde você acerta mais e o que pede reforço",
-  "myWalkGesturesEmpty": "Responda algumas cenas para ver seu acerto em cada gesto.",
-  "myWalkGesturesFew": "{count, plural, =1{Com 1 resposta em pelo menos dois gestos, aparecem o ponto forte e o que reforçar.} other{Com {count} respostas em pelo menos dois gestos, aparecem o ponto forte e o que reforçar.}}",
-  "@myWalkGesturesFew": {
-    "placeholders": {
-      "count": {
-        "type": "int"
-      }
-    }
-  },
-  "myWalkGesturesHeader": "Acerto por gesto",
-  "myWalkIntro": "Seu acerto de primeira em cada modo e em cada gesto.",
-  "myWalkModesBody": "Respostas certas de primeira em cada modo.",
-  "myWalkModesHeader": "Acerto por modo",
-  "myWalkNoAnswersYet": "Sem respostas ainda",
-  "myWalkPlusBody": "No Peregrino+, você vê onde acerta mais, o que pede reforço e como vai em cada modo.",
-  "myWalkPlusTitle": "Acerto por modo e por gesto",
-  "myWalkStrongest": "Ponto forte",
-  "myWalkTitle": "Minha caminhada",
-  "myWalkToStrengthen": "A reforçar",
   "navBible": "Bíblia",
   "navTabWithNews": "{tab}, com novidades",
   "@navTabWithNews": {
@@ -4011,7 +3977,7 @@
     }
   },
   "paywallPerkBadge": "Selo de apoiador no seu perfil",
-  "paywallPerkJourney": "Minha caminhada: acerto por modo e por gesto, com o que reforçar",
+  "paywallPerkProfile": "No perfil: sua sequência semana a semana e o acerto por modo e por gesto",
   "paywallPerkWeeklyReview": "Revisão da semana: o “Hoje:” de cada cena + 3 perguntas",
   "paywallPitch": "Um apoio direto ao projeto, com alguns extras.",
   "paywallPlanAnnual": "Anual",
@@ -4405,6 +4371,34 @@
   "practiceIntro": "Volte às perguntas em que você errou. Cada acerto limpa a pergunta da fila.",
   "practiceSubtitle": "Reforce as passagens",
   "practiceTitle": "Revisar erros",
+  "profileAccuracyBody": "Respostas certas de primeira, por modo e por gesto.",
+  "profileAccuracyEmpty": "Responda algumas cenas para ver aqui seu acerto por modo e por gesto.",
+  "profileAccuracyFewGestures": "{count, plural, =1{Com 1 resposta em pelo menos dois gestos, aparecem o ponto forte e o que reforçar.} other{Com {count} respostas em pelo menos dois gestos, aparecem o ponto forte e o que reforçar.}}",
+  "@profileAccuracyFewGestures": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "profileAccuracyHeader": "Seu acerto",
+  "profileAccuracyLine": "{percent}% · {correct} de {total}",
+  "@profileAccuracyLine": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      },
+      "correct": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "profileAccuracyNoAnswers": "Sem respostas ainda",
+  "profileAccuracyStrongest": "Ponto forte",
+  "profileAccuracyToStrengthen": "A reforçar",
   "profileDaysOnTop": "{count, plural, =1{1 dia no topo} other{{count} dias no topo}}",
   "@profileDaysOnTop": {
     "placeholders": {
@@ -4443,6 +4437,8 @@
       }
     }
   },
+  "profilePlusTeaserBody": "Veja sua sequência semana a semana, o histórico das lamparinas e onde você acerta mais em cada modo e gesto.",
+  "profilePlusTeaserTitle": "Sua caminhada no Peregrino+",
   "profilePrivacyHiddenSemantics": "{label} oculto da caravana",
   "@profilePrivacyHiddenSemantics": {
     "placeholders": {

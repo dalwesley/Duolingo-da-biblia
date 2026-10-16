@@ -86,7 +86,7 @@ class _WeeklyReviewScreenState extends State<WeeklyReviewScreen> {
   @override
   Widget build(BuildContext context) {
     final l10n = context.l10n;
-    final hasPlus = context.watch<SubscriptionService>().hasPlus;
+    final hasPlus = context.watch<SubscriptionService>().plusFeaturesOpen;
     final done = context.select(
       (ProgressService p) => p.isWeeklyReviewDone(_week),
     );

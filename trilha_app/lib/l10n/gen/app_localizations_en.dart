@@ -5174,64 +5174,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get morphVoicePassiveDeponent => 'passive deponent';
 
   @override
-  String myWalkAccuracyLine(int percent, int correct, int total) {
-    return '$percent% · $correct of $total';
-  }
-
-  @override
-  String get myWalkEntryCaption =>
-      'Where you do best and what needs strengthening';
-
-  @override
-  String get myWalkGesturesEmpty =>
-      'Answer a few scenes to see your accuracy in each gesture.';
-
-  @override
-  String myWalkGesturesFew(int count) {
-    String _temp0 = intl.Intl.pluralLogic(
-      count,
-      locale: localeName,
-      other:
-          'With $count answers in at least two gestures, your strong point and what to strengthen show up.',
-      one:
-          'With 1 answer in at least two gestures, your strong point and what to strengthen show up.',
-    );
-    return '$_temp0';
-  }
-
-  @override
-  String get myWalkGesturesHeader => 'Accuracy by gesture';
-
-  @override
-  String get myWalkIntro =>
-      'Your first-try accuracy in each mode and each gesture.';
-
-  @override
-  String get myWalkModesBody => 'Answers right on the first try in each mode.';
-
-  @override
-  String get myWalkModesHeader => 'Accuracy by mode';
-
-  @override
-  String get myWalkNoAnswersYet => 'No answers yet';
-
-  @override
-  String get myWalkPlusBody =>
-      'With Pilgrim+, you see where you do best, what needs strengthening and how you\'re doing in each mode.';
-
-  @override
-  String get myWalkPlusTitle => 'Accuracy by mode and gesture';
-
-  @override
-  String get myWalkStrongest => 'Strong point';
-
-  @override
-  String get myWalkTitle => 'My walk';
-
-  @override
-  String get myWalkToStrengthen => 'To strengthen';
-
-  @override
   String get navBible => 'Bible';
 
   @override
@@ -5714,8 +5656,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get paywallPerkBadge => 'Supporter badge on your profile';
 
   @override
-  String get paywallPerkJourney =>
-      'My walk: accuracy by mode and gesture, with what to strengthen';
+  String get paywallPerkProfile =>
+      'On your profile: your streak week by week and accuracy by mode and gesture';
 
   @override
   String get paywallPerkWeeklyReview =>
@@ -6268,6 +6210,44 @@ class AppLocalizationsEn extends AppLocalizations {
   String get practiceTitle => 'Review mistakes';
 
   @override
+  String get profileAccuracyBody =>
+      'Answers right on the first try, by mode and gesture.';
+
+  @override
+  String get profileAccuracyEmpty =>
+      'Answer a few scenes to see your accuracy by mode and gesture here.';
+
+  @override
+  String profileAccuracyFewGestures(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'With $count answers in at least two gestures, your strong point and what to strengthen show up.',
+      one:
+          'With 1 answer in at least two gestures, your strong point and what to strengthen show up.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get profileAccuracyHeader => 'Your accuracy';
+
+  @override
+  String profileAccuracyLine(int percent, int correct, int total) {
+    return '$percent% · $correct of $total';
+  }
+
+  @override
+  String get profileAccuracyNoAnswers => 'No answers yet';
+
+  @override
+  String get profileAccuracyStrongest => 'Strong point';
+
+  @override
+  String get profileAccuracyToStrengthen => 'To strengthen';
+
+  @override
   String profileDaysOnTop(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -6312,6 +6292,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String profileOpenRef(String ref) {
     return 'Open $ref';
   }
+
+  @override
+  String get profilePlusTeaserBody =>
+      'See your streak week by week, your lamp history and where you do best in each mode and gesture.';
+
+  @override
+  String get profilePlusTeaserTitle => 'Your walk with Pilgrim+';
 
   @override
   String profilePrivacyHiddenSemantics(String label) {

@@ -74,6 +74,10 @@ class SubscriptionService extends ChangeNotifier {
   /// Apoio avulso disponível na loja.
   bool get supportConfigured => isConfigured && supportPackages.isNotEmpty;
 
+  /// Recursos do Peregrino+ abertos: com assinatura/promoção, ou enquanto
+  /// não há como comprar (sem loja e sem promoção) — nada trava sem saída.
+  bool get plusFeaturesOpen => hasPlus || !showsPlus;
+
   /// Há algo do Peregrino+ para mostrar (loja configurada ou promoção).
   bool get showsPlus => isConfigured || launchPromoActive;
 
