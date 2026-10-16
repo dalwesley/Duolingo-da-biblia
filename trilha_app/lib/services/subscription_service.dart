@@ -5,7 +5,9 @@ import 'package:flutter/services.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 
 import '../l10n/l10n_global.dart';
+import 'analytics_service.dart';
 import 'notification_service.dart';
+import 'remote_config_service.dart';
 
 /// Assinatura "Peregrino+" via RevenueCat.
 ///
@@ -14,7 +16,14 @@ import 'notification_service.dart';
 /// funciona normalmente sem nenhuma conta RevenueCat criada. Criar a conta,
 /// os produtos na App Store Connect/Play Console e preencher as chaves é um
 /// passo manual fora deste código.
+///
+/// Recursos do Peregrino+ checam [hasPlus], nunca [isPeregrinoPlus]: durante
+/// o lançamento (`plus_launch_free_until` no Remote Config) todos têm acesso.
 class SubscriptionService extends ChangeNotifier {
+  SubscriptionService() {
+    RemoteConfigService.instance.addListener(notifyListeners);
+  }
+
   static const _entitlementId = 'peregrino_plus';
 
   // Preencher ao criar o projeto no dashboard da RevenueCat.
@@ -28,10 +37,33 @@ class SubscriptionService extends ChangeNotifier {
   bool _initialized = false;
   String? _boundUid;
 
+  /// Último dia da promoção de lançamento, se ela ainda vale hoje.
+  DateTime? get launchFreeUntil {
+    final until = RemoteConfigService.instance.plusLaunchFreeUntil;
+    if (until == null) return null;
+    final now = DateTime.now();
+    final today = DateTime(now.year, now.month, now.day);
+    return today.isAfter(until) ? null : until;
+  }
+
+  bool get launchPromoActive => launchFreeUntil != null;
+
+  /// Acesso aos recursos do Peregrino+: assinatura ou promoção de lançamento.
+  bool get hasPlus => isPeregrinoPlus || launchPromoActive;
+
+  /// Há algo do Peregrino+ para mostrar (loja configurada ou promoção).
+  bool get showsPlus => isConfigured || launchPromoActive;
+
   bool get isConfigured =>
       (defaultTargetPlatform == TargetPlatform.iOS && _apiKeyIos.isNotEmpty) ||
       (defaultTargetPlatform == TargetPlatform.android &&
           _apiKeyAndroid.isNotEmpty);
+
+  @override
+  void dispose() {
+    RemoteConfigService.instance.removeListener(notifyListeners);
+    super.dispose();
+  }
 
   Future<void> init({String? uid}) async {
     if (!isConfigured) return;
@@ -119,18 +151,28 @@ class SubscriptionService extends ChangeNotifier {
     lastError = null;
     loading = true;
     notifyListeners();
+    final productId = package.storeProduct.identifier;
+    void track(String stage) => unawaited(
+      AnalyticsService.instance.logPurchase(stage: stage, productId: productId),
+    );
+    track('start');
     try {
       final result = await Purchases.purchase(PurchaseParams.package(package));
       _onCustomerInfo(result.customerInfo);
+      track(isPeregrinoPlus ? 'success' : 'fail');
       return isPeregrinoPlus;
     } on PlatformException catch (e) {
       final code = PurchasesErrorHelper.getErrorCode(e);
-      if (code != PurchasesErrorCode.purchaseCancelledError) {
+      if (code == PurchasesErrorCode.purchaseCancelledError) {
+        track('cancel');
+      } else {
+        track('fail');
         lastError = L10n.current.paywallPurchaseFailed;
         debugPrint('Falha na compra: $code $e');
       }
       return false;
     } catch (e) {
+      track('fail');
       lastError = L10n.current.paywallPurchaseFailed;
       debugPrint('Falha na compra: $e');
       return false;

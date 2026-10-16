@@ -643,7 +643,8 @@ class _SettingsScreenState extends State<SettingsScreen>
   Widget _passportCard(ProgressService progress, AppearanceStyle a) {
     final backend = context.watch<BackendService>();
     final sub = context.watch<SubscriptionService>();
-    final plus = sub.isPeregrinoPlus;
+    final plus = sub.hasPlus;
+    final promoUntil = sub.isPeregrinoPlus ? null : sub.launchFreeUntil;
     final signedIn = backend.isSignedIn;
     return GlassCard(
       glow: 0.6,
@@ -681,11 +682,18 @@ class _SettingsScreenState extends State<SettingsScreen>
             onOpenProfile: widget.onOpenProfile,
             onSaveName: () => _saveName(progress),
           ),
-          // App grátis por enquanto: sem chave da RevenueCat, sem faixa.
-          if (sub.isConfigured) ...[
+          // Sem loja configurada e sem promoção de lançamento, sem faixa.
+          if (sub.showsPlus) ...[
             const SizedBox(height: AppSpace.lg),
             _PlusStrip(
               plus: plus,
+              promoLine: promoUntil == null
+                  ? null
+                  : context.l10n.settingsPlusLaunchFree(
+                      DateFormat('d MMM', context.l10n.localeName)
+                          .format(promoUntil)
+                          .replaceAll('.', ''),
+                    ),
               onTap: () => Navigator.push(
                 context,
                 MaterialPageRoute<void>(builder: (_) => const PaywallScreen()),
@@ -1318,9 +1326,12 @@ class _SettingsSwitch extends StatelessWidget {
 /// ativa = recompensa (amarelo, borda ≥ [AppMetrics.accentBorder]).
 class _PlusStrip extends StatelessWidget {
   final bool plus;
+
+  /// Linha da promoção de lançamento, no lugar de "Assinatura ativa".
+  final String? promoLine;
   final VoidCallback onTap;
 
-  const _PlusStrip({required this.plus, required this.onTap});
+  const _PlusStrip({required this.plus, required this.onTap, this.promoLine});
 
   @override
   Widget build(BuildContext context) {
@@ -1361,7 +1372,7 @@ class _PlusStrip extends StatelessWidget {
                     const SizedBox(height: 2),
                     Text(
                       plus
-                          ? context.l10n.settingsSubscriptionActive
+                          ? promoLine ?? context.l10n.settingsSubscriptionActive
                           : context.l10n.settingsPlusTeaser,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,

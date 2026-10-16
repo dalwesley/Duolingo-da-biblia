@@ -64,15 +64,33 @@
     "es": "Peregrino+",
     "description": "Name of the supporter subscription"
   },
-  "paywallPerkSeason": {
-    "pt": "A estação (Advento / Quaresma) — depois dos 3 dias grátis",
-    "en": "The season (Advent / Lent) — after the 3 free days",
-    "es": "La temporada litúrgica (Adviento / Cuaresma) — después de los 3 días gratis"
-  },
   "paywallPerkWeeklyReview": {
-    "pt": "Revisão da semana: os 7 “Hoje:” + 3 perguntas",
-    "en": "Weekly review: the 7 “Today:” notes + 3 questions",
-    "es": "Repaso de la semana: los 7 “Hoy:” + 3 preguntas"
+    "pt": "Revisão da semana: o “Hoje:” de cada cena + 3 perguntas",
+    "en": "Weekly review: each scene's “Today:” + 3 questions",
+    "es": "Repaso de la semana: el “Hoy:” de cada escena + 3 preguntas"
+  },
+  "paywallPerkJourney": {
+    "pt": "Minha caminhada: calendário, trilhas e acerto por modo",
+    "en": "My walk: calendar, trails and accuracy by mode",
+    "es": "Mi camino: calendario, rutas y aciertos por modo"
+  },
+  "paywallPerkBadge": {
+    "pt": "Selo Peregrino+ no seu perfil",
+    "en": "Pilgrim+ badge on your profile",
+    "es": "Sello Peregrino+ en tu perfil"
+  },
+  "paywallLaunchFreeTitle": {
+    "pt": "Grátis no lançamento",
+    "en": "Free at launch",
+    "es": "Gratis en el lanzamiento"
+  },
+  "paywallLaunchFreeBody": {
+    "pt": "Tudo do Peregrino+ liberado até {date}. Depois, você decide se quer continuar.",
+    "en": "Everything in Pilgrim+ is open until {date}. After that, you decide whether to continue.",
+    "es": "Todo Peregrino+ está abierto hasta el {date}. Después, tú decides si quieres continuar.",
+    "placeholders": {
+      "date": "String"
+    }
   },
   "paywallAlreadyPlus": {
     "pt": "Você já é Peregrino+",

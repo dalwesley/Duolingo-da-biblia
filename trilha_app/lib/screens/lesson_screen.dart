@@ -521,6 +521,14 @@ class _LessonScreenState extends State<LessonScreen>
         : DateTime.now().difference(_actStartedAt!).inMilliseconds;
     // Placar de acerto conta só a primeira tentativa da pergunta original.
     if (firstTry && !requeued) {
+      final mode = _difficultyMeta?.difficulty.id;
+      if (mode != null && !widget.practiceMode) {
+        progress.recordAnswer(
+          mode: mode,
+          type: ex.type.wireId,
+          correct: correct,
+        );
+      }
       unawaited(
         AnalyticsService.instance.logQuestionAnswered(
           missionSlug: widget.missionSlug,

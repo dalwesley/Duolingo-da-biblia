@@ -3945,8 +3945,18 @@
   "onboardingYourPace": "Seu ritmo",
   "paywallAlreadyPlus": "Você já é Peregrino+",
   "paywallHeadline": "Vá além na trilha",
-  "paywallPerkSeason": "A estação (Advento / Quaresma) — depois dos 3 dias grátis",
-  "paywallPerkWeeklyReview": "Revisão da semana: os 7 “Hoje:” + 3 perguntas",
+  "paywallLaunchFreeBody": "Tudo do Peregrino+ liberado até {date}. Depois, você decide se quer continuar.",
+  "@paywallLaunchFreeBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "paywallLaunchFreeTitle": "Grátis no lançamento",
+  "paywallPerkBadge": "Selo Peregrino+ no seu perfil",
+  "paywallPerkJourney": "Minha caminhada: calendário, trilhas e acerto por modo",
+  "paywallPerkWeeklyReview": "Revisão da semana: o “Hoje:” de cada cena + 3 perguntas",
   "paywallPitch": "Um apoio direto ao projeto, com alguns extras.",
   "paywallPriceAnnual": "{price} por ano",
   "@paywallPriceAnnual": {
@@ -4871,9 +4881,7 @@
     }
   },
   "seasonEnded": "Estação encerrada",
-  "seasonFreeTrialLine": "Gratuito: 3 primeiros dias · depois, Peregrino+",
   "seasonNotTodayYet": "Ainda não é hoje",
-  "seasonProFromDay4": "Peregrino+ a partir do dia 4",
   "seasonReviewEmpty": "Ainda não há perguntas desta semana no aparelho. Abra um dia primeiro.",
   "seasonReviewMissionIntro": "Três perguntas dos textos que você já estudou.",
   "seasonReviewMissionTitle": "Revisão da semana",
@@ -4959,7 +4967,6 @@
   },
   "seasonWeekInsightsHeader": "Os 7 “Hoje:” desta semana",
   "seasonWeekReview": "Revisão da semana",
-  "seasonWeekReviewPro": "Revisão da semana · Peregrino+",
   "seasonWeekReviewTitle": "Revisão da semana {week}",
   "@seasonWeekReviewTitle": {
     "placeholders": {
@@ -5078,7 +5085,15 @@
   "settingsPaceLight": "Leve",
   "settingsPaceSteady": "Firme",
   "settingsPasteBackupFirst": "Cole o backup na área de transferência primeiro.",
-  "settingsPlusTeaser": "Mais espaço para a companhia",
+  "settingsPlusLaunchFree": "Grátis no lançamento até {date}",
+  "@settingsPlusLaunchFree": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "settingsPlusTeaser": "Revisão da semana e Minha caminhada",
   "settingsProgressInCloud": "Progresso na nuvem",
   "settingsProgressRestored": "Progresso restaurado.",
   "settingsReminderAt": "Às {hour}h · toque para mudar",

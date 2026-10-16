@@ -5609,12 +5609,23 @@ class AppLocalizationsEn extends AppLocalizations {
   String get paywallHeadline => 'Go further on the trail';
 
   @override
-  String get paywallPerkSeason =>
-      'The season (Advent / Lent) — after the 3 free days';
+  String paywallLaunchFreeBody(String date) {
+    return 'Everything in Pilgrim+ is open until $date. After that, you decide whether to continue.';
+  }
+
+  @override
+  String get paywallLaunchFreeTitle => 'Free at launch';
+
+  @override
+  String get paywallPerkBadge => 'Pilgrim+ badge on your profile';
+
+  @override
+  String get paywallPerkJourney =>
+      'My walk: calendar, trails and accuracy by mode';
 
   @override
   String get paywallPerkWeeklyReview =>
-      'Weekly review: the 7 “Today:” notes + 3 questions';
+      'Weekly review: each scene\'s “Today:” + 3 questions';
 
   @override
   String get paywallPitch =>
@@ -6875,13 +6886,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get seasonEnded => 'Season ended';
 
   @override
-  String get seasonFreeTrialLine => 'Free: first 3 days · then Pilgrim+';
-
-  @override
   String get seasonNotTodayYet => 'Not today yet';
-
-  @override
-  String get seasonProFromDay4 => 'Pilgrim+ from day 4';
 
   @override
   String get seasonReviewEmpty =>
@@ -7102,9 +7107,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get seasonWeekReview => 'Week review';
 
   @override
-  String get seasonWeekReviewPro => 'Week review · Pilgrim+';
-
-  @override
   String seasonWeekReviewTitle(int week) {
     return 'Week $week review';
   }
@@ -7314,7 +7316,12 @@ class AppLocalizationsEn extends AppLocalizations {
       'Copy a backup to the clipboard first.';
 
   @override
-  String get settingsPlusTeaser => 'More room for your companion';
+  String settingsPlusLaunchFree(String date) {
+    return 'Free at launch until $date';
+  }
+
+  @override
+  String get settingsPlusTeaser => 'Weekly review and My walk';
 
   @override
   String get settingsProgressInCloud => 'Progress in the cloud';

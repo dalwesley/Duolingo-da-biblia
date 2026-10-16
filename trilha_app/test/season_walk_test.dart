@@ -20,40 +20,18 @@ void main() {
       expect(c.contains(start.subtract(const Duration(days: 1))), isFalse);
     });
 
-    test('days 1–3 stay free even without Pro', () {
+    test('every day up to today is open, no Plus needed', () {
       final start = LiturgicalCalendar.adventStart(2026);
       final c = SeasonWalkCatalog.advent2026(start);
-      final today = start.add(const Duration(days: 3));
-      final d1 = SeasonWalkCatalog.access(
-        campaign: c,
-        index: 1,
-        today: today,
-        proConfigured: true,
-        isPro: false,
-      );
-      final d4 = SeasonWalkCatalog.access(
-        campaign: c,
-        index: 4,
-        today: today,
-        proConfigured: true,
-        isPro: false,
-      );
-      expect(d1.playable, isTrue);
-      expect(d4.needsPro, isTrue);
-      expect(d4.playable, isFalse);
-    });
-
-    test('without IAP configured, day 4 stays open', () {
-      final start = LiturgicalCalendar.adventStart(2026);
-      final c = SeasonWalkCatalog.advent2026(start);
-      final access = SeasonWalkCatalog.access(
-        campaign: c,
-        index: 4,
-        today: start.add(const Duration(days: 4)),
-        proConfigured: false,
-        isPro: false,
-      );
-      expect(access.playable, isTrue);
+      final today = start.add(const Duration(days: 9));
+      for (var i = 1; i <= 10; i++) {
+        final access = SeasonWalkCatalog.access(
+          campaign: c,
+          index: i,
+          today: today,
+        );
+        expect(access.playable, isTrue, reason: 'day $i');
+      }
     });
 
     test('cannot skip into the future', () {
@@ -63,8 +41,6 @@ void main() {
         campaign: c,
         index: 10,
         today: start,
-        proConfigured: false,
-        isPro: false,
       );
       expect(access.future, isTrue);
       expect(access.playable, isFalse);

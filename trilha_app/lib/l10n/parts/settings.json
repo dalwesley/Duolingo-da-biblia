@@ -395,10 +395,18 @@
     "en": "Subscription active",
     "es": "Suscripción activa"
   },
+  "settingsPlusLaunchFree": {
+    "pt": "Grátis no lançamento até {date}",
+    "en": "Free at launch until {date}",
+    "es": "Gratis en el lanzamiento hasta el {date}",
+    "placeholders": {
+      "date": "String"
+    }
+  },
   "settingsPlusTeaser": {
-    "pt": "Mais espaço para a companhia",
-    "en": "More room for your companion",
-    "es": "Más espacio para tu compañía"
+    "pt": "Revisão da semana e Minha caminhada",
+    "en": "Weekly review and My walk",
+    "es": "Repaso de la semana y Mi camino"
   },
   "settingsSignedInAs": {
     "pt": "Conectado como {email}",

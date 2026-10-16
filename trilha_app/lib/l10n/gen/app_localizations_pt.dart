@@ -5637,12 +5637,23 @@ class AppLocalizationsPt extends AppLocalizations {
   String get paywallHeadline => 'Vá além na trilha';
 
   @override
-  String get paywallPerkSeason =>
-      'A estação (Advento / Quaresma) — depois dos 3 dias grátis';
+  String paywallLaunchFreeBody(String date) {
+    return 'Tudo do Peregrino+ liberado até $date. Depois, você decide se quer continuar.';
+  }
+
+  @override
+  String get paywallLaunchFreeTitle => 'Grátis no lançamento';
+
+  @override
+  String get paywallPerkBadge => 'Selo Peregrino+ no seu perfil';
+
+  @override
+  String get paywallPerkJourney =>
+      'Minha caminhada: calendário, trilhas e acerto por modo';
 
   @override
   String get paywallPerkWeeklyReview =>
-      'Revisão da semana: os 7 “Hoje:” + 3 perguntas';
+      'Revisão da semana: o “Hoje:” de cada cena + 3 perguntas';
 
   @override
   String get paywallPitch => 'Um apoio direto ao projeto, com alguns extras.';
@@ -6900,14 +6911,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get seasonEnded => 'Estação encerrada';
 
   @override
-  String get seasonFreeTrialLine =>
-      'Gratuito: 3 primeiros dias · depois, Peregrino+';
-
-  @override
   String get seasonNotTodayYet => 'Ainda não é hoje';
-
-  @override
-  String get seasonProFromDay4 => 'Peregrino+ a partir do dia 4';
 
   @override
   String get seasonReviewEmpty =>
@@ -7117,9 +7121,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get seasonWeekReview => 'Revisão da semana';
-
-  @override
-  String get seasonWeekReviewPro => 'Revisão da semana · Peregrino+';
 
   @override
   String seasonWeekReviewTitle(int week) {
@@ -7332,7 +7333,12 @@ class AppLocalizationsPt extends AppLocalizations {
       'Cole o backup na área de transferência primeiro.';
 
   @override
-  String get settingsPlusTeaser => 'Mais espaço para a companhia';
+  String settingsPlusLaunchFree(String date) {
+    return 'Grátis no lançamento até $date';
+  }
+
+  @override
+  String get settingsPlusTeaser => 'Revisão da semana e Minha caminhada';
 
   @override
   String get settingsProgressInCloud => 'Progresso na nuvem';

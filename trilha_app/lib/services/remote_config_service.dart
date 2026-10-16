@@ -15,12 +15,14 @@ class RemoteConfigService extends ChangeNotifier {
   static const _keyRoomChestBonus = 'room_chest_bonus_steps';
   static const _keyLeagueGroupSize = 'league_group_size';
   static const _keyLeagueServerSettlement = 'league_server_settlement';
+  static const _keyPlusLaunchFreeUntil = 'plus_launch_free_until';
 
   static const _defaults = <String, Object>{
     _keyReferralBonus: 50,
     _keyRoomChestBonus: 15,
     _keyLeagueGroupSize: 20,
     _keyLeagueServerSettlement: false,
+    _keyPlusLaunchFreeUntil: '',
   };
 
   FirebaseRemoteConfig? _rc;
@@ -54,6 +56,9 @@ class RemoteConfigService extends ChangeNotifier {
 
   bool _bool(String key) => _rc?.getBool(key) ?? (_defaults[key] as bool);
 
+  String _string(String key) =>
+      _rc?.getString(key) ?? (_defaults[key] as String);
+
   /// Bônus ao host quando o convidado completa a 1ª missão (referral).
   int get referralFirstMissionBonus => _int(_keyReferralBonus);
 
@@ -66,4 +71,14 @@ class RemoteConfigService extends ChangeNotifier {
   /// Subida/descida decidida pela Cloud Function `settleLeagueWeek`
   /// (`users/{uid}.leagueResult`). Desligado: o app fecha a semana sozinho.
   bool get leagueServerSettlement => _bool(_keyLeagueServerSettlement);
+
+  /// Último dia (YYYY-MM-DD, inclusive) do Peregrino+ grátis no lançamento.
+  /// Vazio ou inválido: sem promoção.
+  DateTime? get plusLaunchFreeUntil {
+    final raw = _string(_keyPlusLaunchFreeUntil).trim();
+    if (raw.isEmpty) return null;
+    final parsed = DateTime.tryParse(raw);
+    if (parsed == null) return null;
+    return DateTime(parsed.year, parsed.month, parsed.day);
+  }
 }

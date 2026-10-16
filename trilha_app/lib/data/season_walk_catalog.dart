@@ -62,17 +62,12 @@ class SeasonWalkCatalog {
     required SeasonWalkCampaign campaign,
     required int index,
     required DateTime today,
-    required bool proConfigured,
-    required bool isPro,
   }) {
     final item = campaign.dayAt(index);
     if (item == null) return SeasonWalkAccess.lockedFuture;
     final day = DateTime(today.year, today.month, today.day);
     final date = item.dateOn(campaign.start);
     if (date.isAfter(day)) return SeasonWalkAccess.lockedFuture;
-    if (!campaign.isFreeDay(index) && proConfigured && !isPro) {
-      return SeasonWalkAccess.lockedPro;
-    }
     return SeasonWalkAccess.open;
   }
 

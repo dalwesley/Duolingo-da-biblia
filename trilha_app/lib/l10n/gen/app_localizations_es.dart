@@ -5657,12 +5657,23 @@ class AppLocalizationsEs extends AppLocalizations {
   String get paywallHeadline => 'Ve más allá en la ruta';
 
   @override
-  String get paywallPerkSeason =>
-      'La temporada litúrgica (Adviento / Cuaresma) — después de los 3 días gratis';
+  String paywallLaunchFreeBody(String date) {
+    return 'Todo Peregrino+ está abierto hasta el $date. Después, tú decides si quieres continuar.';
+  }
+
+  @override
+  String get paywallLaunchFreeTitle => 'Gratis en el lanzamiento';
+
+  @override
+  String get paywallPerkBadge => 'Sello Peregrino+ en tu perfil';
+
+  @override
+  String get paywallPerkJourney =>
+      'Mi camino: calendario, rutas y aciertos por modo';
 
   @override
   String get paywallPerkWeeklyReview =>
-      'Repaso de la semana: los 7 “Hoy:” + 3 preguntas';
+      'Repaso de la semana: el “Hoy:” de cada escena + 3 preguntas';
 
   @override
   String get paywallPitch =>
@@ -6926,14 +6937,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get seasonEnded => 'Temporada terminada';
 
   @override
-  String get seasonFreeTrialLine =>
-      'Gratis: los 3 primeros días · después, Peregrino+';
-
-  @override
   String get seasonNotTodayYet => 'Todavía no es hoy';
-
-  @override
-  String get seasonProFromDay4 => 'Peregrino+ a partir del día 4';
 
   @override
   String get seasonReviewEmpty =>
@@ -7150,9 +7154,6 @@ class AppLocalizationsEs extends AppLocalizations {
   String get seasonWeekReview => 'Repaso de la semana';
 
   @override
-  String get seasonWeekReviewPro => 'Repaso de la semana · Peregrino+';
-
-  @override
   String seasonWeekReviewTitle(int week) {
     return 'Repaso de la semana $week';
   }
@@ -7362,7 +7363,12 @@ class AppLocalizationsEs extends AppLocalizations {
       'Copia primero una copia de seguridad al portapapeles.';
 
   @override
-  String get settingsPlusTeaser => 'Más espacio para tu compañía';
+  String settingsPlusLaunchFree(String date) {
+    return 'Gratis en el lanzamiento hasta el $date';
+  }
+
+  @override
+  String get settingsPlusTeaser => 'Repaso de la semana y Mi camino';
 
   @override
   String get settingsProgressInCloud => 'Progreso en la nube';

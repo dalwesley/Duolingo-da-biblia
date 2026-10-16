@@ -27,7 +27,6 @@ class SeasonWalkCampaign {
   final String subtitle;
   final DateTime start;
   final List<SeasonWalkDay> days;
-  static const freeDays = 3;
 
   const SeasonWalkCampaign({
     required this.id,
@@ -73,23 +72,18 @@ class SeasonWalkCampaign {
     final startAt = weekIndex * 7;
     return days.skip(startAt).take(7).toList();
   }
-
-  bool isFreeDay(int index) => index >= 1 && index <= freeDays;
 }
 
 class SeasonWalkAccess {
   final bool playable;
   final bool future;
-  final bool needsPro;
 
   const SeasonWalkAccess({
     required this.playable,
     this.future = false,
-    this.needsPro = false,
   });
 
   static const lockedFuture = SeasonWalkAccess(playable: false, future: true);
-  static const lockedPro = SeasonWalkAccess(playable: false, needsPro: true);
   static const open = SeasonWalkAccess(playable: true);
 
   /// Prefere ato errado da semana; senão um ainda não usado; senão o primeiro.

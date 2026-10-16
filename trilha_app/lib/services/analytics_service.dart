@@ -176,6 +176,20 @@ class AnalyticsService {
     'difficulty': ?difficulty,
   });
 
+  /// Paywall do Peregrino+ aberto. [state]: paid · promo · offer · unavailable.
+  Future<void> logPaywallView({required String source, required String state}) =>
+      _log('paywall_view', {'source': source, 'state': state});
+
+  /// Etapa da compra do Peregrino+: start · success · cancel · fail.
+  Future<void> logPurchase({required String stage, required String productId}) =>
+      _log('plus_purchase', {'stage': stage, 'product_id': productId});
+
+  /// Recurso do Peregrino+ aberto (ou bloqueado, com [hasPlus] falso).
+  Future<void> logPlusFeatureOpen({
+    required String feature,
+    required bool hasPlus,
+  }) => _log('plus_feature_open', {'feature': feature, 'has_plus': hasPlus});
+
   Future<void> logEvent(String name, [Map<String, Object>? params]) =>
       _log(name, params);
 

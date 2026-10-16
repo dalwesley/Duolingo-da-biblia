@@ -344,6 +344,13 @@ class ProgressService extends ChangeNotifier {
   /// Estatísticas agregadas para o perfil na caravana.
   int lifetimeQuestionsCorrect = 0;
   int lifetimeQuestionsAnswered = 0;
+
+  /// Dia (YYYY-MM-DD) em que cada cena foi feita pela primeira vez.
+  Map<String, String> missionCompletedOn = {};
+
+  /// Acerto de primeira por "modo.gesto" (ex.: `semente.tap`).
+  Map<String, int> answerCorrect = {};
+  Map<String, int> answerTotal = {};
   String? lastMissionSlug;
   String? lastMissionCompletedDate;
   String? lastBibleReadDate;
@@ -804,6 +811,9 @@ class ProgressService extends ChangeNotifier {
     streak = 0;
     lastPlayedDate = null;
     completedMissions = [];
+    missionCompletedOn = {};
+    answerCorrect = {};
+    answerTotal = {};
     missionsToday = 0;
     hasSeenOnboarding = false;
     userName = 'Aprendiz';
@@ -1865,6 +1875,20 @@ class ProgressService extends ChangeNotifier {
     _schedulePersist();
   }
 
+  /// Acerto de primeira por modo e gesto — base de Minha caminhada.
+  void recordAnswer({
+    required String mode,
+    required String type,
+    required bool correct,
+  }) {
+    final key = '$mode.$type';
+    answerTotal = {...answerTotal, key: (answerTotal[key] ?? 0) + 1};
+    if (correct) {
+      answerCorrect = {...answerCorrect, key: (answerCorrect[key] ?? 0) + 1};
+    }
+    _schedulePersist();
+  }
+
   Future<void> clearMistake(String questionId) async {
     if (!mistakeQuestionIds.contains(questionId)) return;
     mistakeQuestionIds = mistakeQuestionIds
@@ -2041,6 +2065,9 @@ class ProgressService extends ChangeNotifier {
           isReplay = true;
         } else {
           completedMissions = [...completedMissions, slug];
+          if (!missionCompletedOn.containsKey(slug)) {
+            missionCompletedOn = {...missionCompletedOn, slug: today};
+          }
         }
       }
 
@@ -2329,6 +2356,9 @@ class ProgressService extends ChangeNotifier {
       'caravanProfilePrefs': caravanProfilePrefs.toMap(),
       'lifetimeQuestionsCorrect': lifetimeQuestionsCorrect,
       'lifetimeQuestionsAnswered': lifetimeQuestionsAnswered,
+      'missionCompletedOn': missionCompletedOn,
+      'answerCorrect': answerCorrect,
+      'answerTotal': answerTotal,
       'lastMissionSlug': lastMissionSlug,
       'lastMissionCompletedDate': lastMissionCompletedDate,
       'lastBibleReadDate': lastBibleReadDate,
@@ -2860,6 +2890,27 @@ class ProgressService extends ChangeNotifier {
           lifetimeQuestionsAnswered = cloud;
         }
       }
+      if (data.containsKey('missionCompletedOn')) {
+        // Fica a data mais antiga: a primeira vez que a cena foi feita.
+        final merged = Map<String, String>.from(missionCompletedOn);
+        for (final e in _asStringMap(data['missionCompletedOn']).entries) {
+          final cur = merged[e.key];
+          if (cur == null || e.value.compareTo(cur) < 0) merged[e.key] = e.value;
+        }
+        missionCompletedOn = merged;
+      }
+      if (data.containsKey('answerCorrect')) {
+        answerCorrect = _mergeIntMapsMax(
+          answerCorrect,
+          _asIntMap(data['answerCorrect']),
+        );
+      }
+      if (data.containsKey('answerTotal')) {
+        answerTotal = _mergeIntMapsMax(
+          answerTotal,
+          _asIntMap(data['answerTotal']),
+        );
+      }
       if (data.containsKey('lastMissionSlug')) {
         final slug = data['lastMissionSlug'] as String?;
         if (slug != null && slug.isNotEmpty) {
@@ -3094,6 +3145,9 @@ class ProgressService extends ChangeNotifier {
     streak = 0;
     lastPlayedDate = null;
     completedMissions = [];
+    missionCompletedOn = {};
+    answerCorrect = {};
+    answerTotal = {};
     missionsToday = 0;
     hasSeenOnboarding = false;
     usedQuestionIds = [];
@@ -3174,6 +3228,8 @@ class ProgressService extends ChangeNotifier {
     lastPlayedDate = null;
     lifetimeQuestionsCorrect = 0;
     lifetimeQuestionsAnswered = 0;
+    answerCorrect = {};
+    answerTotal = {};
     daysAsCaravanLeader = 0;
     lastLeaderRankDay = null;
     lastMissionSlug = null;

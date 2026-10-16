@@ -8733,16 +8733,34 @@ abstract class AppLocalizations {
   /// **'Vá além na trilha'**
   String get paywallHeadline;
 
-  /// No description provided for @paywallPerkSeason.
+  /// No description provided for @paywallLaunchFreeBody.
   ///
   /// In pt, this message translates to:
-  /// **'A estação (Advento / Quaresma) — depois dos 3 dias grátis'**
-  String get paywallPerkSeason;
+  /// **'Tudo do Peregrino+ liberado até {date}. Depois, você decide se quer continuar.'**
+  String paywallLaunchFreeBody(String date);
+
+  /// No description provided for @paywallLaunchFreeTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Grátis no lançamento'**
+  String get paywallLaunchFreeTitle;
+
+  /// No description provided for @paywallPerkBadge.
+  ///
+  /// In pt, this message translates to:
+  /// **'Selo Peregrino+ no seu perfil'**
+  String get paywallPerkBadge;
+
+  /// No description provided for @paywallPerkJourney.
+  ///
+  /// In pt, this message translates to:
+  /// **'Minha caminhada: calendário, trilhas e acerto por modo'**
+  String get paywallPerkJourney;
 
   /// No description provided for @paywallPerkWeeklyReview.
   ///
   /// In pt, this message translates to:
-  /// **'Revisão da semana: os 7 “Hoje:” + 3 perguntas'**
+  /// **'Revisão da semana: o “Hoje:” de cada cena + 3 perguntas'**
   String get paywallPerkWeeklyReview;
 
   /// No description provided for @paywallPitch.
@@ -10707,23 +10725,11 @@ abstract class AppLocalizations {
   /// **'Estação encerrada'**
   String get seasonEnded;
 
-  /// No description provided for @seasonFreeTrialLine.
-  ///
-  /// In pt, this message translates to:
-  /// **'Gratuito: 3 primeiros dias · depois, Peregrino+'**
-  String get seasonFreeTrialLine;
-
   /// No description provided for @seasonNotTodayYet.
   ///
   /// In pt, this message translates to:
   /// **'Ainda não é hoje'**
   String get seasonNotTodayYet;
-
-  /// No description provided for @seasonProFromDay4.
-  ///
-  /// In pt, this message translates to:
-  /// **'Peregrino+ a partir do dia 4'**
-  String get seasonProFromDay4;
 
   /// No description provided for @seasonReviewEmpty.
   ///
@@ -11109,12 +11115,6 @@ abstract class AppLocalizations {
   /// **'Revisão da semana'**
   String get seasonWeekReview;
 
-  /// No description provided for @seasonWeekReviewPro.
-  ///
-  /// In pt, this message translates to:
-  /// **'Revisão da semana · Peregrino+'**
-  String get seasonWeekReviewPro;
-
   /// No description provided for @seasonWeekReviewTitle.
   ///
   /// In pt, this message translates to:
@@ -11445,10 +11445,16 @@ abstract class AppLocalizations {
   /// **'Cole o backup na área de transferência primeiro.'**
   String get settingsPasteBackupFirst;
 
+  /// No description provided for @settingsPlusLaunchFree.
+  ///
+  /// In pt, this message translates to:
+  /// **'Grátis no lançamento até {date}'**
+  String settingsPlusLaunchFree(String date);
+
   /// No description provided for @settingsPlusTeaser.
   ///
   /// In pt, this message translates to:
-  /// **'Mais espaço para a companhia'**
+  /// **'Revisão da semana e Minha caminhada'**
   String get settingsPlusTeaser;
 
   /// No description provided for @settingsProgressInCloud.

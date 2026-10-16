@@ -9,7 +9,6 @@ import '../models/season_walk.dart';
 import '../models/trail.dart';
 import '../services/content_catalog_service.dart';
 import '../services/progress_service.dart';
-import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
@@ -20,7 +19,6 @@ import '../widgets/relic_panel.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import 'lesson_screen.dart';
-import 'paywall_screen.dart';
 
 void openSeasonWalk(BuildContext context) {
   final progress = context.read<ProgressService>();
@@ -45,7 +43,6 @@ class SeasonWalkScreen extends StatelessWidget {
     final a = Appearance.of(context);
     final l10n = context.l10n;
     final progress = context.watch<ProgressService>();
-    final sub = context.watch<SubscriptionService>();
     final now = DateTime.now();
     final today = DateTime(now.year, now.month, now.day);
     final campaign = SeasonWalkCatalog.current(today);
@@ -103,16 +100,6 @@ class SeasonWalkScreen extends StatelessWidget {
                                 color: a.text,
                               ),
                             ),
-                            if (sub.isConfigured) ...[
-                              const SizedBox(height: 6),
-                              Text(
-                                l10n.seasonFreeTrialLine,
-                                style: AppTypography.body(
-                                  size: 13,
-                                  color: a.textSecondary,
-                                ),
-                              ),
-                            ],
                             const SizedBox(height: 12),
                             AppProgressBar(
                               value: campaign.length == 0
@@ -137,8 +124,6 @@ class SeasonWalkScreen extends StatelessWidget {
                           weekIndex: w,
                           today: today,
                           todayIndex: todayIndex,
-                          proConfigured: sub.isConfigured,
-                          isPro: sub.isPeregrinoPlus,
                         ),
                         const SizedBox(height: AppSpace.lg),
                       ],
@@ -162,16 +147,12 @@ class _WeekBlock extends StatelessWidget {
   final int weekIndex;
   final DateTime today;
   final int? todayIndex;
-  final bool proConfigured;
-  final bool isPro;
 
   const _WeekBlock({
     required this.campaign,
     required this.weekIndex,
     required this.today,
     required this.todayIndex,
-    required this.proConfigured,
-    required this.isPro,
   });
 
   @override
@@ -190,7 +171,6 @@ class _WeekBlock extends StatelessWidget {
     final weekEnded =
         days.isNotEmpty && !days.last.dateOn(campaign.start).isAfter(today);
     final reviewReady = weekEnded && doneCount >= (days.length / 2).ceil();
-    final reviewLocked = reviewReady && proConfigured && !isPro;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -203,24 +183,10 @@ class _WeekBlock extends StatelessWidget {
             day: day,
             today: today,
             todayIndex: todayIndex,
-            proConfigured: proConfigured,
-            isPro: isPro,
           ),
         if (reviewReady) ...[
           const SizedBox(height: 8),
-          if (reviewLocked)
-            GhostCta(
-              label: l10n.seasonWeekReviewPro,
-              leading: CinematicGlyph.lock,
-              expanded: true,
-              onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(builder: (_) => const PaywallScreen()),
-                );
-              },
-            )
-          else
-            CopperCta(
+          CopperCta(
               label: l10n.seasonWeekReview,
               expanded: true,
               onTap: () {
@@ -251,16 +217,12 @@ class _DayTile extends StatelessWidget {
   final SeasonWalkDay day;
   final DateTime today;
   final int? todayIndex;
-  final bool proConfigured;
-  final bool isPro;
 
   const _DayTile({
     required this.campaign,
     required this.day,
     required this.today,
     required this.todayIndex,
-    required this.proConfigured,
-    required this.isPro,
   });
 
   @override
@@ -277,8 +239,6 @@ class _DayTile extends StatelessWidget {
       campaign: campaign,
       index: day.index,
       today: today,
-      proConfigured: proConfigured,
-      isPro: isPro,
     );
     final isToday = todayIndex == day.index;
     final locked = !access.playable;
@@ -315,9 +275,7 @@ class _DayTile extends StatelessWidget {
                     style: AppTypography.title(size: 14, color: a.text),
                   ),
                   Text(
-                    access.needsPro
-                        ? l10n.seasonProFromDay4
-                        : access.future
+                    access.future
                         ? l10n.seasonNotTodayYet
                         : day.insight,
                     maxLines: 1,
@@ -339,12 +297,6 @@ class _DayTile extends StatelessWidget {
     bool done,
   ) async {
     if (access.future) return;
-    if (access.needsPro) {
-      await Navigator.of(
-        context,
-      ).push(MaterialPageRoute(builder: (_) => const PaywallScreen()));
-      return;
-    }
     if (!access.playable) return;
     await ContentCatalogService.instance.ensureTrailBank(day.trailSlug);
     if (!context.mounted) return;
