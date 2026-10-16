@@ -6,6 +6,18 @@ const { getMessaging } = require('firebase-admin/messaging');
 const functions = require('firebase-functions/v1');
 const { logger } = require('firebase-functions');
 
+/**
+ * Token FCM do peregrino: `users/{uid}/private/data` (app novo) ou
+ * `users/{uid}` (versões antigas, até o próximo save migrar).
+ */
+async function fcmTokenOf(db, uid) {
+  const priv = await db.doc(`users/${uid}/private/data`).get();
+  const token = priv.data()?.fcmToken;
+  if (typeof token === 'string' && token) return token;
+  const pub = await db.doc(`users/${uid}`).get();
+  return pub.data()?.fcmToken;
+}
+
 initializeApp();
 
 /**
@@ -40,8 +52,7 @@ exports.onCompanionNudge = functions.firestore
     }
 
     const db = getFirestore();
-    const userSnap = await db.doc(`users/${toId}`).get();
-    const token = userSnap.data()?.fcmToken;
+    const token = await fcmTokenOf(db, toId);
     if (!token || typeof token !== 'string') {
       logger.info('destinatário sem token FCM', { toId });
       return;
@@ -100,8 +111,7 @@ exports.onRecognition = functions.firestore
     if (!fromId || fromId === toId) return;
 
     const db = getFirestore();
-    const userSnap = await db.doc(`users/${toId}`).get();
-    const token = userSnap.data()?.fcmToken;
+    const token = await fcmTokenOf(db, toId);
     if (!token || typeof token !== 'string') {
       logger.info('reconhecimento sem token FCM', { toId });
       return;
@@ -196,8 +206,7 @@ exports.onRoomNudge = functions.firestore
     if (!fromId || fromId === toId) return;
 
     const db = getFirestore();
-    const userSnap = await db.doc(`users/${toId}`).get();
-    const token = userSnap.data()?.fcmToken;
+    const token = await fcmTokenOf(db, toId);
     if (!token || typeof token !== 'string') {
       logger.info('chamado do grupo sem token FCM', { toId });
       return;
@@ -258,8 +267,7 @@ exports.onRoomInvite = functions.firestore
     if (!toId || !fromId || toId === fromId) return;
 
     const db = getFirestore();
-    const userSnap = await db.doc(`users/${toId}`).get();
-    const token = userSnap.data()?.fcmToken;
+    const token = await fcmTokenOf(db, toId);
     if (!token || typeof token !== 'string') {
       logger.info('convite de grupo sem token FCM', { toId });
       return;

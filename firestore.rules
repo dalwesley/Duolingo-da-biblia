@@ -376,6 +376,13 @@ service cloud.firestore {
     }
 
     // Bloqueios: só o dono vê e mexe na própria lista.
+    // Dados pessoais (e-mail, token, reflexões, erros, códigos de sala e
+    // companhia, configurações): só o dono lê e grava. Functions usam o
+    // Admin SDK e não passam por aqui.
+    match /users/{uid}/private/{doc} {
+      allow read, write: if isSignedIn() && request.auth.uid == uid;
+    }
+
     match /users/{uid}/blocks/{blockedUid} {
       allow read, delete: if isSignedIn() && request.auth.uid == uid;
       allow create, update: if isSignedIn()

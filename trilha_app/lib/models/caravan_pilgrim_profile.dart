@@ -245,7 +245,9 @@ class CaravanPilgrimProfile {
           _asInt(data['sharedVerseCount']) ??
           _asStringList(data['sharedVerses']).length,
       memoryMasteredCount: _asStringList(data['memoryMastered']).length,
-      reflectionCount: _asStringMap(data['missionReflections']).length,
+      reflectionCount:
+          _asInt(data['reflectionCount']) ??
+          _asStringMap(data['missionReflections']).length,
       firstOpenDate: _asDateKey(data['firstOpenDate']),
       playDates: _asStringList(data['playDates']),
       daysAsCaravanLeader: _asInt(data['daysAsCaravanLeader']) ?? 0,

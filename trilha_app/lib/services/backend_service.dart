@@ -143,12 +143,12 @@ class BackendService extends ChangeNotifier {
   User? get currentUser =>
       _firebaseReady ? FirebaseAuth.instance.currentUser : null;
 
-  /// Guarda o token FCM em `users/{uid}`. O envio do aceno é a
+  /// Guarda o token FCM em `users/{uid}/private/data` (só o dono lê). O envio do aceno é a
   /// Cloud Function `onCompanionNudge` em `functions/`.
   Future<void> saveFcmToken(String token) async {
     if (!isActive) return;
     try {
-      await _db.doc('users/$_uid').set({
+      await _db.doc(_privatePath).set({
         'fcmToken': token,
         'fcmTokenUpdatedAt': FieldValue.serverTimestamp(),
       }, SetOptions(merge: true));
@@ -846,6 +846,76 @@ class BackendService extends ChangeNotifier {
     }
   }
 
+  /// Doc só do dono (regra: lê e grava só o próprio uid). Tudo que é
+  /// pessoal mora aqui; `users/{uid}` fica com o que perfil e rankings usam.
+  String get _privatePath => 'users/$_uid/private/data';
+
+  /// Campos que nunca ficam em `users/{uid}` (lido por qualquer peregrino).
+  static const privateKeys = {
+    'email',
+    'fcmToken',
+    'fcmTokenUpdatedAt',
+    'authProvider',
+    'missionReflections',
+    'mistakeQuestionIds',
+    'usedQuestionIds',
+    'answerCorrect',
+    'answerTotal',
+    'missionCompletedOn',
+    'weeklyReviewsDone',
+    'memoryScores',
+    'bibleBookmarks',
+    'sharedVerses',
+    'settings',
+    'bibleReadingPlan',
+    'companionCodes',
+    'activeRoomCode',
+    'claimedReferralRewards',
+    'firstOpenAtMs',
+  };
+
+  /// Separa o payload: privado vai para [_privatePath]; o público ganha
+  /// só os resumos que outros veem (contagem de reflexões, retrato).
+  static ({Map<String, dynamic> public, Map<String, dynamic> private})
+  splitPayload(Map<String, dynamic> full) {
+    final public = <String, dynamic>{};
+    final private = <String, dynamic>{};
+    for (final e in full.entries) {
+      (privateKeys.contains(e.key) ? private : public)[e.key] = e.value;
+    }
+    final reflections = full['missionReflections'];
+    if (reflections is Map) public['reflectionCount'] = reflections.length;
+    final settings = full['settings'];
+    if (settings is Map && settings['portraitStyle'] != null) {
+      public['portraitStyle'] = settings['portraitStyle'];
+    }
+    return (public: public, private: private);
+  }
+
+  /// Grava o progresso: primeiro o privado; só depois de ele dar certo o
+  /// público apaga as cópias antigas desses campos. Se o privado falhar
+  /// (regra ainda não publicada), o público segue como antes — nada se perde.
+  Future<void> _writeUserDocs(Map<String, dynamic> full) async {
+    final split = splitPayload(full);
+    var privateOk = false;
+    try {
+      await _db
+          .doc(_privatePath)
+          .set(split.private, SetOptions(merge: true))
+          .timeout(const Duration(seconds: 12));
+      privateOk = true;
+    } catch (e) {
+      _authLog('save private FAILED uid=$_uid: $e');
+    }
+    final public = privateOk
+        ? {...split.public, for (final k in privateKeys) k: FieldValue.delete()}
+        : {...split.public, ...split.private};
+    await _db
+        .doc('users/$_uid')
+        .set(public, SetOptions(merge: true))
+        .timeout(const Duration(seconds: 12));
+  }
+
   Map<String, dynamic> _payload(ProgressService p, {LeagueService? league}) {
     final user = currentUser;
     return {
@@ -930,10 +1000,7 @@ class BackendService extends ChangeNotifier {
       // 1) Progresso do usuário — nunca depende do ranking.
       // Timeout evita travar a cadeia _saveChain (e a aba Caravana) se a
       // rede/Firestore não responde.
-      await _db
-          .doc('users/$_uid')
-          .set(_payload(progress, league: league), SetOptions(merge: true))
-          .timeout(const Duration(seconds: 12));
+      await _writeUserDocs(_payload(progress, league: league));
       if (generation != _saveGeneration) return false;
       lastCloudSaveAt = DateTime.now();
       // Não notifyListeners aqui — evita refresh em cascata (companions).
@@ -1692,7 +1759,22 @@ class BackendService extends ChangeNotifier {
     if (!isActive) {
       return const UserBackupResult.error('backend inactive');
     }
-    return fetchPilgrimProfile(_uid!);
+    final public = await fetchPilgrimProfile(_uid!);
+    if (public.isError) return public;
+    Map<String, dynamic>? private;
+    try {
+      private =
+          (await _db
+                  .doc(_privatePath)
+                  .get()
+                  .timeout(const Duration(seconds: 10)))
+              .data();
+    } catch (e) {
+      // Sem o privado, segue com o público (cópias antigas ainda estão lá).
+      _authLog('fetch private FAILED uid=$_uid: $e');
+    }
+    if (private == null || private.isEmpty) return public;
+    return UserBackupResult.found({...?public.data, ...private});
   }
 
   /// Perfil público de outro peregrino (`users/{uid}`) — ranking + jornada.
