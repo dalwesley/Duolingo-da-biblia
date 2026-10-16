@@ -1,6 +1,8 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
+import 'package:purchases_flutter/purchases_flutter.dart';
 
 import '../l10n/app_language.dart';
 import '../services/analytics_service.dart';
@@ -13,10 +15,12 @@ import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/cloud_mascot.dart';
+import '../widgets/coming_soon_trails_card.dart';
 import '../widgets/ui_primitives.dart';
 
-/// Tela única de assinatura — só acessível pelo menu de Configurações,
-/// nunca como interrupção de sessão (onboarding, fim de missão, etc).
+/// Paywall do Peregrino+. Abre por Ajustes, pelos recursos bloqueados e
+/// pelas ofertas (no máx. 1 por semana, fora da cena) — nunca no meio de uma
+/// cena, no onboarding ou no login.
 class PaywallScreen extends StatefulWidget {
   /// De onde o paywall foi aberto (analytics), ex.: `settings`.
   final String source;
@@ -58,9 +62,10 @@ class _PaywallScreenState extends State<PaywallScreen> {
     final promoUntil = paid ? null : subscription.launchFreeUntil;
     final promoDate = promoUntil == null
         ? null
-        : DateFormat('d MMM', l10n.localeName)
-              .format(promoUntil)
-              .replaceAll('.', '');
+        : DateFormat(
+            'd MMM',
+            l10n.localeName,
+          ).format(promoUntil).replaceAll('.', '');
     final mode = context.watch<ProgressService>().settings.appearanceMode;
     final a = AppearanceStyle.resolve(mode);
     final bottom = MediaQuery.viewPaddingOf(context).bottom;
@@ -165,25 +170,8 @@ class _PaywallScreenState extends State<PaywallScreen> {
                       textAlign: TextAlign.center,
                       style: AppTypography.body(size: 12, color: a.textFaint),
                     )
-                  else if (!paid) ...[
-                    for (final package in subscription.availablePackages) ...[
-                      CopperCta(
-                        label: SubscriptionService.packageLabel(package),
-                        expanded: true,
-                        onTap: subscription.loading
-                            ? null
-                            : () => subscription.purchase(package),
-                      ),
-                      const SizedBox(height: 10),
-                    ],
-                    TextCta(
-                      label: l10n.paywallRestore,
-                      onTap: subscription.loading
-                          ? null
-                          : () => subscription.restore(),
-                      color: a.textSecondary,
-                    ),
-                  ],
+                  else if (!paid)
+                    _PlanPicker(subscription: subscription),
                   if (subscription.lastError != null) ...[
                     const SizedBox(height: AppSpace.sm),
                     Text(
@@ -200,6 +188,234 @@ class _PaywallScreenState extends State<PaywallScreen> {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+/// EULA padrão da Apple — exigido junto dos termos em assinatura no iOS.
+const _appleEulaUrl =
+    'https://www.apple.com/legal/internet-services/itunes/dev/stdeula/';
+
+/// Planos da loja: anual primeiro e já escolhido; um botão só para assinar.
+class _PlanPicker extends StatefulWidget {
+  final SubscriptionService subscription;
+
+  const _PlanPicker({required this.subscription});
+
+  @override
+  State<_PlanPicker> createState() => _PlanPickerState();
+}
+
+class _PlanPickerState extends State<_PlanPicker> {
+  String? _selectedId;
+
+  static int _rank(PackageType t) => switch (t) {
+    PackageType.annual => 0,
+    PackageType.monthly => 1,
+    PackageType.lifetime => 2,
+    _ => 3,
+  };
+
+  /// Dias do teste grátis do pacote, se houver.
+  static int? _trialDays(Package p) {
+    final intro = p.storeProduct.introductoryPrice;
+    if (intro == null || intro.price > 0) return null;
+    final n = intro.periodNumberOfUnits;
+    return switch (intro.periodUnit) {
+      PeriodUnit.day => n,
+      PeriodUnit.week => n * 7,
+      PeriodUnit.month => n * 30,
+      PeriodUnit.year => n * 365,
+      PeriodUnit.unknown => null,
+    };
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final l10n = context.l10n;
+    final sub = widget.subscription;
+    final packages = [...sub.availablePackages]
+      ..sort((x, y) => _rank(x.packageType).compareTo(_rank(y.packageType)));
+    if (packages.isEmpty) {
+      return Text(
+        l10n.paywallUnavailable,
+        textAlign: TextAlign.center,
+        style: AppTypography.body(size: 12, color: a.textFaint),
+      );
+    }
+    final selected = packages.firstWhere(
+      (p) => p.identifier == _selectedId,
+      orElse: () => packages.first,
+    );
+    final trial = _trialDays(selected);
+    final renews = selected.packageType != PackageType.lifetime;
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        for (final p in packages) ...[
+          _PlanTile(
+            package: p,
+            selected: p.identifier == selected.identifier,
+            trialDays: _trialDays(p),
+            onTap: () => setState(() => _selectedId = p.identifier),
+          ),
+          const SizedBox(height: 10),
+        ],
+        const SizedBox(height: AppSpace.sm),
+        CopperCta(
+          label: trial != null
+              ? l10n.paywallStartTrial(trial)
+              : renews
+              ? l10n.paywallSubscribe
+              : l10n.paywallBuyOnce,
+          expanded: true,
+          onTap: sub.loading ? null : () => sub.purchase(selected),
+        ),
+        const SizedBox(height: AppSpace.md),
+        Text(
+          [
+            if (trial != null)
+              l10n.paywallTrialThen(
+                trial,
+                SubscriptionService.packageLabel(selected),
+              ),
+            if (renews) l10n.paywallAutoRenew,
+          ].join(' '),
+          textAlign: TextAlign.center,
+          style: AppTypography.body(size: 11, color: a.textFaint),
+        ),
+        const SizedBox(height: AppSpace.sm),
+        Wrap(
+          alignment: WrapAlignment.center,
+          children: [
+            TextCta(
+              label: l10n.paywallRestore,
+              onTap: sub.loading ? null : () => sub.restore(),
+              color: a.textSecondary,
+            ),
+            TextCta(
+              label: l10n.legalTerms,
+              onTap: () => openSitePage(termsPageUrl),
+              color: a.textSecondary,
+            ),
+            TextCta(
+              label: l10n.legalPrivacy,
+              onTap: () => openSitePage(privacyPageUrl),
+              color: a.textSecondary,
+            ),
+            if (defaultTargetPlatform == TargetPlatform.iOS)
+              TextCta(
+                label: l10n.paywallAppleEula,
+                onTap: () => openSitePage(_appleEulaUrl),
+                color: a.textSecondary,
+              ),
+          ],
+        ),
+      ],
+    );
+  }
+}
+
+class _PlanTile extends StatelessWidget {
+  final Package package;
+  final bool selected;
+  final int? trialDays;
+  final VoidCallback onTap;
+
+  const _PlanTile({
+    required this.package,
+    required this.selected,
+    required this.trialDays,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final l10n = context.l10n;
+    final product = package.storeProduct;
+    final annual = package.packageType == PackageType.annual;
+    final title = switch (package.packageType) {
+      PackageType.annual => l10n.paywallPlanAnnual,
+      PackageType.monthly => l10n.paywallPlanMonthly,
+      PackageType.lifetime => l10n.paywallPlanLifetime,
+      _ => product.title,
+    };
+    final perMonth = annual ? product.pricePerMonthString : null;
+    return Semantics(
+      button: true,
+      selected: selected,
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: onTap,
+          borderRadius: BorderRadius.circular(AppRadii.md),
+          child: Ink(
+            padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(AppRadii.md),
+              color: selected
+                  ? AppMetrics.accentFill(alpha: 0.12)
+                  : a.insetFill,
+              border: Border.all(
+                width: selected ? 2 : 1,
+                color: selected
+                    ? AppMetrics.accentBorder(alpha: 0.8)
+                    : a.insetBorder,
+              ),
+            ),
+            child: Row(
+              children: [
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          Text(
+                            title,
+                            style: AppTypography.title(size: 15, color: a.text),
+                          ),
+                          if (annual) ...[
+                            const SizedBox(width: 8),
+                            SoftBadge(
+                              text: l10n.paywallBestValue,
+                              accent: AppRoles.reward,
+                            ),
+                          ],
+                        ],
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        [
+                          SubscriptionService.packageLabel(package),
+                          if (perMonth != null) l10n.paywallPerMonth(perMonth),
+                          if (trialDays != null)
+                            l10n.paywallTrialDays(trialDays!),
+                        ].join(' · '),
+                        style: AppTypography.body(
+                          size: 12,
+                          color: a.textSecondary,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                CinematicIcon(
+                  glyph: selected
+                      ? CinematicGlyph.check
+                      : CinematicGlyph.chevron,
+                  size: AppMetrics.iconMd,
+                  accent: selected ? AppRoles.reward : a.textFaint,
+                  framed: false,
+                ),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }

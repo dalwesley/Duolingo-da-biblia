@@ -4020,6 +4020,10 @@
   "onboardingTomorrowWord": "Amanhã",
   "onboardingYourPace": "Seu ritmo",
   "paywallAlreadyPlus": "Você já é Peregrino+",
+  "paywallAppleEula": "Termos da Apple (EULA)",
+  "paywallAutoRenew": "Renova automaticamente pelo mesmo preço até você cancelar. Cancele quando quiser na App Store ou no Google Play, até 24 horas antes da renovação.",
+  "paywallBestValue": "Melhor valor",
+  "paywallBuyOnce": "Comprar",
   "paywallHeadline": "Vá além na trilha",
   "paywallLaunchFreeBody": "Tudo do Peregrino+ liberado até {date}. Depois, você decide se quer continuar.",
   "@paywallLaunchFreeBody": {
@@ -4030,10 +4034,21 @@
     }
   },
   "paywallLaunchFreeTitle": "Grátis no lançamento",
-  "paywallPerkBadge": "Selo Peregrino+ no seu perfil",
+  "paywallPerMonth": "≈ {price}/mês",
+  "@paywallPerMonth": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "paywallPerkBadge": "Selo de apoiador no seu perfil",
   "paywallPerkJourney": "Minha caminhada: seu ano e o acerto por modo e por gesto",
   "paywallPerkWeeklyReview": "Revisão da semana: o “Hoje:” de cada cena + 3 perguntas",
   "paywallPitch": "Um apoio direto ao projeto, com alguns extras.",
+  "paywallPlanAnnual": "Anual",
+  "paywallPlanLifetime": "Vitalício",
+  "paywallPlanMonthly": "Mensal",
   "paywallPriceAnnual": "{price} por ano",
   "@paywallPriceAnnual": {
     "placeholders": {
@@ -4080,10 +4095,38 @@
   "paywallPurchaseFailed": "Não foi possível concluir a compra.",
   "paywallRestore": "Restaurar compra",
   "paywallRestoreFailed": "Não foi possível restaurar a compra.",
+  "paywallStartTrial": "{count, plural, =1{Começar 1 dia grátis} other{Começar {count} dias grátis}}",
+  "@paywallStartTrial": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "paywallSubscribe": "Assinar",
   "paywallThanks": "Obrigado por apoiar o Stway.",
   "paywallTitle": "Peregrino+",
   "@paywallTitle": {
     "description": "Name of the supporter subscription"
+  },
+  "paywallTrialDays": "{count, plural, =1{1 dia grátis} other{{count} dias grátis}}",
+  "@paywallTrialDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "paywallTrialThen": "{count, plural, =1{1 dia grátis, depois {price}.} other{{count} dias grátis, depois {price}.}}",
+  "@paywallTrialThen": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "price": {
+        "type": "String"
+      }
+    }
   },
   "paywallUnavailable": "Assinatura ainda não disponível nesta versão.",
   "pilgrimAccuracyForming": "Ainda em formação",
@@ -4360,6 +4403,26 @@
   "planTitle": "Plano de leitura",
   "planTodayChapters": "Capítulos de hoje",
   "planTodayDoneBody": "Porção de hoje concluída. Volte amanhã — ou continue explorando a Bíblia livremente.",
+  "plusOfferEndedBody": "Obrigado por caminhar com a gente. Cenas, modos e Bíblia continuam grátis. A revisão da semana e Minha caminhada agora ficam no Peregrino+.",
+  "plusOfferEndedTitle": "O lançamento acabou",
+  "plusOfferEndingBody": "Depois, a revisão da semana e Minha caminhada ficam no Peregrino+. Cenas, modos e Bíblia continuam grátis.",
+  "plusOfferEndingTitle": "O Peregrino+ grátis vai até {date}",
+  "@plusOfferEndingTitle": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "plusOfferScenesBody": "O Peregrino+ traz a revisão da semana e mostra onde você acerta mais. E ajuda a manter o Stway de pé.",
+  "plusOfferScenesTitle": "{count, plural, =1{1 cena caminhada} other{{count} cenas caminhadas}}",
+  "@plusOfferScenesTitle": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "portraitAvatar": "Avatar",
   "portraitAvatarHint": "Um peregrino ilustrado",
   "portraitEyebrow": "Retrato",
@@ -5431,6 +5494,21 @@
   "suggestionTrailSubtitle": "O que ainda falta no mapa?",
   "suggestionTrailTextLabel": "A trilha",
   "suggestionTrailTitle": "Sugerir uma trilha",
+  "supportAmount": "Apoiar com {price}",
+  "@supportAmount": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "supportBody": "O Stway é grátis para todos. Seu apoio paga servidores e novas trilhas. Não libera nada no app: é um presente, e você ganha o selo de apoiador.",
+  "supportFinePrint": "Pagamento único pela App Store ou Google Play. Não é assinatura.",
+  "supportHeadline": "Ajude o Stway a continuar",
+  "supportThanksBody": "Seu apoio ajuda mais gente a caminhar na Palavra. O selo de apoiador já está no seu perfil.",
+  "supportThanksTitle": "Obrigado!",
+  "supportTitle": "Apoiar o Stway",
+  "supporterBadge": "Apoiador",
   "tomorrowDayOf": "Dia {streak} de {goal}",
   "@tomorrowDayOf": {
     "placeholders": {

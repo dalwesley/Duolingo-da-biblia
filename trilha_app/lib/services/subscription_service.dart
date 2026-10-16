@@ -26,12 +26,23 @@ class SubscriptionService extends ChangeNotifier {
 
   static const _entitlementId = 'peregrino_plus';
 
+  /// Oferta da RevenueCat com as compras avulsas de apoio (consumíveis).
+  static const supportOfferingId = 'apoio';
+  static const _supportProductPrefix = 'apoio';
+
   // Preencher ao criar o projeto no dashboard da RevenueCat.
   static const _apiKeyAndroid = '';
   static const _apiKeyIos = '';
 
   bool isPeregrinoPlus = false;
+
+  /// Já fez alguma compra de apoio (não libera nada, só o selo).
+  bool isSupporter = false;
   List<Package> availablePackages = const [];
+  List<Package> supportPackages = const [];
+
+  /// Chamado quando o selo de apoiador muda (perfil público).
+  void Function(bool hasBadge)? onBadgeChanged;
   bool loading = false;
   String? lastError;
   bool _initialized = false;
@@ -48,8 +59,19 @@ class SubscriptionService extends ChangeNotifier {
 
   bool get launchPromoActive => launchFreeUntil != null;
 
+  /// Último dia da promoção no Remote Config, mesmo que já tenha passado.
+  DateTime? get launchPromoDate =>
+      RemoteConfigService.instance.plusLaunchFreeUntil;
+
   /// Acesso aos recursos do Peregrino+: assinatura ou promoção de lançamento.
   bool get hasPlus => isPeregrinoPlus || launchPromoActive;
+
+  /// Selo de apoiador: quem paga o Peregrino+ ou já apoiou. A promoção de
+  /// lançamento não dá selo.
+  bool get hasBadge => isPeregrinoPlus || isSupporter;
+
+  /// Apoio avulso disponível na loja.
+  bool get supportConfigured => isConfigured && supportPackages.isNotEmpty;
 
   /// Há algo do Peregrino+ para mostrar (loja configurada ou promoção).
   bool get showsPlus => isConfigured || launchPromoActive;
@@ -123,6 +145,9 @@ class SubscriptionService extends ChangeNotifier {
     try {
       final offerings = await Purchases.getOfferings();
       availablePackages = offerings.current?.availablePackages ?? const [];
+      supportPackages = [
+        ...?offerings.all[supportOfferingId]?.availablePackages,
+      ]..sort((a, b) => a.storeProduct.price.compareTo(b.storeProduct.price));
       notifyListeners();
     } catch (e) {
       debugPrint('Falha ao carregar ofertas: $e');
@@ -131,8 +156,13 @@ class SubscriptionService extends ChangeNotifier {
 
   void _onCustomerInfo(CustomerInfo info) {
     final entitlement = info.entitlements.active[_entitlementId];
+    final badgeBefore = hasBadge;
     isPeregrinoPlus = entitlement != null;
+    isSupporter = info.nonSubscriptionTransactions.any(
+      (t) => t.productIdentifier.startsWith(_supportProductPrefix),
+    );
     notifyListeners();
+    if (hasBadge != badgeBefore) onBadgeChanged?.call(hasBadge);
 
     final expiration = entitlement?.expirationDate;
     if (entitlement != null &&
@@ -140,7 +170,9 @@ class SubscriptionService extends ChangeNotifier {
         expiration != null) {
       final when = DateTime.tryParse(expiration);
       if (when != null) {
-        unawaited(NotificationService.instance.scheduleTrialEndingReminder(when));
+        unawaited(
+          NotificationService.instance.scheduleTrialEndingReminder(when),
+        );
       }
     } else {
       unawaited(NotificationService.instance.cancelTrialEndingReminder());
@@ -182,6 +214,45 @@ class SubscriptionService extends ChangeNotifier {
     }
   }
 
+  /// Compra de apoio avulsa. `true` se concluiu.
+  Future<bool> purchaseSupport(Package package) async {
+    lastError = null;
+    loading = true;
+    notifyListeners();
+    final productId = package.storeProduct.identifier;
+    void track(String stage) => unawaited(
+      AnalyticsService.instance.logEvent('support_purchase', {
+        'stage': stage,
+        'product_id': productId,
+      }),
+    );
+    track('start');
+    try {
+      final result = await Purchases.purchase(PurchaseParams.package(package));
+      _onCustomerInfo(result.customerInfo);
+      track('success');
+      return true;
+    } on PlatformException catch (e) {
+      final code = PurchasesErrorHelper.getErrorCode(e);
+      if (code == PurchasesErrorCode.purchaseCancelledError) {
+        track('cancel');
+      } else {
+        track('fail');
+        lastError = L10n.current.paywallPurchaseFailed;
+        debugPrint('Falha no apoio: $code $e');
+      }
+      return false;
+    } catch (e) {
+      track('fail');
+      lastError = L10n.current.paywallPurchaseFailed;
+      debugPrint('Falha no apoio: $e');
+      return false;
+    } finally {
+      loading = false;
+      notifyListeners();
+    }
+  }
+
   Future<void> restore() async {
     if (!isConfigured) return;
     loading = true;
@@ -214,7 +285,9 @@ class SubscriptionService extends ChangeNotifier {
     };
     if (label.isEmpty) {
       final title = product.title.trim();
-      return title.isEmpty ? product.priceString : '$title · ${product.priceString}';
+      return title.isEmpty
+          ? product.priceString
+          : '$title · ${product.priceString}';
     }
     return label;
   }

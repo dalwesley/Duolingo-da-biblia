@@ -9,6 +9,7 @@ import '../services/backend_service.dart';
 import '../services/corner_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
+import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
@@ -182,6 +183,7 @@ class _MeScreenState extends State<MeScreen> {
         pad(
           PilgrimIdentityCard(
             name: progress.userName,
+            supporter: context.watch<SubscriptionService>().hasBadge,
             photoUrl: backend.userPhotoUrl,
             seed: backend.uid,
             style: progress.settings.portraitStyle,

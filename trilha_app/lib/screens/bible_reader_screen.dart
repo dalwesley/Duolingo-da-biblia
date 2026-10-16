@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
-import 'package:url_launcher/url_launcher.dart';
 import '../l10n/app_language.dart';
 import '../services/bible_service.dart';
 import '../services/progress_service.dart';
@@ -21,6 +20,7 @@ import '../widgets/share_verse_sheet.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import '../widgets/verse_study_sheet.dart';
+import 'support_screen.dart';
 
 /// Leitor imersivo — tela cheia no papel da leitura, capítulo por deslize,
 /// chrome que some ao rolar e áudio versículo a versículo.
@@ -1537,13 +1537,6 @@ Future<void> _showReadingSettings(BuildContext context) {
   );
 }
 
-/// Doação abre no navegador. O pagamento fica nessa página, fora do app.
-const _donatePage = 'https://stway.com.br/doar';
-
-Future<void> _openDonatePage() async {
-  await launchUrl(Uri.parse(_donatePage), mode: LaunchMode.externalApplication);
-}
-
 Future<void> _applyTranslation(
   BuildContext context,
   BibleTranslation translation,
@@ -1562,7 +1555,7 @@ Future<void> _applyTranslation(
             label: context.l10n.bibleDonate,
             onTap: () {
               Navigator.pop(ctx);
-              _openDonatePage();
+              openSupport(context);
             },
           ),
           CopperCta(

@@ -8853,6 +8853,30 @@ abstract class AppLocalizations {
   /// **'Você já é Peregrino+'**
   String get paywallAlreadyPlus;
 
+  /// No description provided for @paywallAppleEula.
+  ///
+  /// In pt, this message translates to:
+  /// **'Termos da Apple (EULA)'**
+  String get paywallAppleEula;
+
+  /// No description provided for @paywallAutoRenew.
+  ///
+  /// In pt, this message translates to:
+  /// **'Renova automaticamente pelo mesmo preço até você cancelar. Cancele quando quiser na App Store ou no Google Play, até 24 horas antes da renovação.'**
+  String get paywallAutoRenew;
+
+  /// No description provided for @paywallBestValue.
+  ///
+  /// In pt, this message translates to:
+  /// **'Melhor valor'**
+  String get paywallBestValue;
+
+  /// No description provided for @paywallBuyOnce.
+  ///
+  /// In pt, this message translates to:
+  /// **'Comprar'**
+  String get paywallBuyOnce;
+
   /// No description provided for @paywallHeadline.
   ///
   /// In pt, this message translates to:
@@ -8871,10 +8895,16 @@ abstract class AppLocalizations {
   /// **'Grátis no lançamento'**
   String get paywallLaunchFreeTitle;
 
+  /// No description provided for @paywallPerMonth.
+  ///
+  /// In pt, this message translates to:
+  /// **'≈ {price}/mês'**
+  String paywallPerMonth(String price);
+
   /// No description provided for @paywallPerkBadge.
   ///
   /// In pt, this message translates to:
-  /// **'Selo Peregrino+ no seu perfil'**
+  /// **'Selo de apoiador no seu perfil'**
   String get paywallPerkBadge;
 
   /// No description provided for @paywallPerkJourney.
@@ -8894,6 +8924,24 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Um apoio direto ao projeto, com alguns extras.'**
   String get paywallPitch;
+
+  /// No description provided for @paywallPlanAnnual.
+  ///
+  /// In pt, this message translates to:
+  /// **'Anual'**
+  String get paywallPlanAnnual;
+
+  /// No description provided for @paywallPlanLifetime.
+  ///
+  /// In pt, this message translates to:
+  /// **'Vitalício'**
+  String get paywallPlanLifetime;
+
+  /// No description provided for @paywallPlanMonthly.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mensal'**
+  String get paywallPlanMonthly;
 
   /// No description provided for @paywallPriceAnnual.
   ///
@@ -8943,6 +8991,18 @@ abstract class AppLocalizations {
   /// **'Não foi possível restaurar a compra.'**
   String get paywallRestoreFailed;
 
+  /// No description provided for @paywallStartTrial.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{Começar 1 dia grátis} other{Começar {count} dias grátis}}'**
+  String paywallStartTrial(int count);
+
+  /// No description provided for @paywallSubscribe.
+  ///
+  /// In pt, this message translates to:
+  /// **'Assinar'**
+  String get paywallSubscribe;
+
   /// No description provided for @paywallThanks.
   ///
   /// In pt, this message translates to:
@@ -8954,6 +9014,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Peregrino+'**
   String get paywallTitle;
+
+  /// No description provided for @paywallTrialDays.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 dia grátis} other{{count} dias grátis}}'**
+  String paywallTrialDays(int count);
+
+  /// No description provided for @paywallTrialThen.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 dia grátis, depois {price}.} other{{count} dias grátis, depois {price}.}}'**
+  String paywallTrialThen(int count, String price);
 
   /// No description provided for @paywallUnavailable.
   ///
@@ -9494,6 +9566,42 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Porção de hoje concluída. Volte amanhã — ou continue explorando a Bíblia livremente.'**
   String get planTodayDoneBody;
+
+  /// No description provided for @plusOfferEndedBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Obrigado por caminhar com a gente. Cenas, modos e Bíblia continuam grátis. A revisão da semana e Minha caminhada agora ficam no Peregrino+.'**
+  String get plusOfferEndedBody;
+
+  /// No description provided for @plusOfferEndedTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'O lançamento acabou'**
+  String get plusOfferEndedTitle;
+
+  /// No description provided for @plusOfferEndingBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Depois, a revisão da semana e Minha caminhada ficam no Peregrino+. Cenas, modos e Bíblia continuam grátis.'**
+  String get plusOfferEndingBody;
+
+  /// No description provided for @plusOfferEndingTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'O Peregrino+ grátis vai até {date}'**
+  String plusOfferEndingTitle(String date);
+
+  /// No description provided for @plusOfferScenesBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'O Peregrino+ traz a revisão da semana e mostra onde você acerta mais. E ajuda a manter o Stway de pé.'**
+  String get plusOfferScenesBody;
+
+  /// No description provided for @plusOfferScenesTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 cena caminhada} other{{count} cenas caminhadas}}'**
+  String plusOfferScenesTitle(int count);
 
   /// No description provided for @portraitAvatar.
   ///
@@ -12260,6 +12368,54 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Sugerir uma trilha'**
   String get suggestionTrailTitle;
+
+  /// No description provided for @supportAmount.
+  ///
+  /// In pt, this message translates to:
+  /// **'Apoiar com {price}'**
+  String supportAmount(String price);
+
+  /// No description provided for @supportBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'O Stway é grátis para todos. Seu apoio paga servidores e novas trilhas. Não libera nada no app: é um presente, e você ganha o selo de apoiador.'**
+  String get supportBody;
+
+  /// No description provided for @supportFinePrint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Pagamento único pela App Store ou Google Play. Não é assinatura.'**
+  String get supportFinePrint;
+
+  /// No description provided for @supportHeadline.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ajude o Stway a continuar'**
+  String get supportHeadline;
+
+  /// No description provided for @supportThanksBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu apoio ajuda mais gente a caminhar na Palavra. O selo de apoiador já está no seu perfil.'**
+  String get supportThanksBody;
+
+  /// No description provided for @supportThanksTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Obrigado!'**
+  String get supportThanksTitle;
+
+  /// No description provided for @supportTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Apoiar o Stway'**
+  String get supportTitle;
+
+  /// No description provided for @supporterBadge.
+  ///
+  /// In pt, this message translates to:
+  /// **'Apoiador'**
+  String get supporterBadge;
 
   /// No description provided for @tomorrowDayOf.
   ///

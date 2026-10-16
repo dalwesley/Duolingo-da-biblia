@@ -11,10 +11,13 @@ import '../services/analytics_service.dart';
 import '../services/companion_service.dart';
 import '../services/content_catalog_service.dart';
 import '../services/corner_service.dart';
+import '../services/league_service.dart';
 import '../services/progress_service.dart';
+import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
+import '../utils/plus_offers.dart';
 import '../utils/liturgical_calendar.dart';
 import '../utils/trail_progress.dart';
 import '../utils/tomorrow_hook.dart';
@@ -40,6 +43,7 @@ import '../widgets/season_challenge_banner.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import '../widgets/wave_hands_overlay.dart';
+import '../widgets/plus_offer_sheet.dart';
 import 'bible_screen.dart';
 import 'memory_screen.dart';
 import 'practice_screen.dart';
@@ -75,6 +79,7 @@ class _HomeScreenState extends State<HomeScreen>
   late final AnimationController _fadeIn;
   bool _comebackChecked = false;
   bool _reminderChecked = false;
+  bool _plusOfferChecked = false;
   bool _firstSceneChecked = false;
   bool _geloTeachChecked = false;
   bool _retryingCatalog = false;
@@ -211,6 +216,37 @@ class _HomeScreenState extends State<HomeScreen>
       _reminderChecked = true;
       showReminderPromptSheet(context);
     });
+  }
+
+  /// Oferta do Peregrino+ (1×/semana, cada uma uma vez), só sem outra folha.
+  void _maybeOfferPlus(ProgressService progress) {
+    if (_plusOfferChecked) return;
+    if (progress.shouldShowComeback || !progress.notificationsPrompted) return;
+    _plusOfferChecked = true;
+    final sub = context.read<SubscriptionService>();
+    unawaited(() async {
+      final state = await loadPlusOfferState();
+      final week = LeagueService.weekKey();
+      final kind = PlusOffers.pick(
+        today: DateTime.now(),
+        paid: sub.isPeregrinoPlus,
+        storeReady: sub.isConfigured && sub.availablePackages.isNotEmpty,
+        scenesDone: progress.completedMissions.length,
+        promoUntil: sub.launchPromoDate,
+        shown: state.shown,
+        lastOfferWeek: state.lastWeek,
+        thisWeek: week,
+      );
+      if (kind == null || !mounted) return;
+      final route = ModalRoute.of(context);
+      if (route == null || !route.isCurrent) return;
+      await showPlusOfferSheet(
+        context,
+        kind: kind,
+        week: week,
+        promoUntil: sub.launchPromoDate,
+      );
+    }());
   }
 
   /// Pós-onboarding: abre a 1ª cena sem esperar o toque no herói.
@@ -535,6 +571,7 @@ class _HomeScreenState extends State<HomeScreen>
       _maybeOpenFirstScene(progress, current?.slug);
       _maybeShowComeback(progress, missionSlug: current?.slug);
       _maybePromptReminders(progress);
+      _maybeOfferPlus(progress);
       _maybeTeachGelo(progress);
     }
 

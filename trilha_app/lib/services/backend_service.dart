@@ -380,7 +380,10 @@ class BackendService extends ChangeNotifier {
 
     if (_googleBusy) {
       _authLog('signIn ignored: already busy');
-      return GoogleSignInResult(ok: false, error: L10n.current.authLoginInProgress);
+      return GoogleSignInResult(
+        ok: false,
+        error: L10n.current.authLoginInProgress,
+      );
     }
 
     if (isGoogleSignedIn) {
@@ -676,7 +679,10 @@ class BackendService extends ChangeNotifier {
       );
     }
     if (_googleBusy) {
-      return AuthSignInResult(ok: false, error: L10n.current.authLoginInProgress);
+      return AuthSignInResult(
+        ok: false,
+        error: L10n.current.authLoginInProgress,
+      );
     }
 
     _googleBusy = true;
@@ -684,7 +690,8 @@ class BackendService extends ChangeNotifier {
     notifyListeners();
 
     try {
-      final useApple = isAppleSignedIn &&
+      final useApple =
+          isAppleSignedIn &&
           (!isGoogleSignedIn || defaultTargetPlatform == TargetPlatform.iOS);
       final uid = user.uid;
 
@@ -776,18 +783,15 @@ class BackendService extends ChangeNotifier {
         msg.contains('failed to connect');
 
     return switch (e.code) {
-      'operation-not-allowed' || 'admin-restricted-operation' =>
-        L10n.current.authEnableProviders,
+      'operation-not-allowed' ||
+      'admin-restricted-operation' => L10n.current.authEnableProviders,
       'network-request-failed' => L10n.current.authNoInternet,
       'too-many-requests' => L10n.current.authTooManyRequests,
       'account-exists-with-different-credential' =>
         L10n.current.authAccountExists,
       'invalid-credential' => L10n.current.authInvalidCredential,
       _ when looksLikeNetwork => L10n.current.authNetworkReset,
-      _ => L10n.current.authGenericError(
-        e.code,
-        e.message ?? e.code,
-      ),
+      _ => L10n.current.authGenericError(e.code, e.message ?? e.code),
     };
   }
 
@@ -824,6 +828,22 @@ class BackendService extends ChangeNotifier {
       if (roomWalk != null && roomWalk.isNotEmpty) return roomWalk;
     }
     return null;
+  }
+
+  String? _publishedSupporter;
+
+  /// Selo de apoiador no perfil público (`users/{uid}.supporter`).
+  Future<void> publishSupporter(bool value) async {
+    final key = '$_uid:$value';
+    if (!isActive || _uid == null || _publishedSupporter == key) return;
+    try {
+      await _db.doc('users/$_uid').set({
+        'supporter': value,
+      }, SetOptions(merge: true));
+      _publishedSupporter = key;
+    } catch (e) {
+      debugPrint('Falha ao publicar selo de apoiador: $e');
+    }
   }
 
   Map<String, dynamic> _payload(ProgressService p, {LeagueService? league}) {
@@ -1794,7 +1814,8 @@ class BackendService extends ChangeNotifier {
           .get();
       if (seat.docs.isEmpty) return null;
       final members = [
-        for (final m in (seat.docs.first.data()['members'] as List? ?? const []))
+        for (final m
+            in (seat.docs.first.data()['members'] as List? ?? const []))
           if (m is String && m != uid) m,
       ];
       final players = <CloudPlayer>[];

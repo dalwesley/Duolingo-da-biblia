@@ -1,0 +1,154 @@
+{
+  "supportTitle": {
+    "pt": "Apoiar o Stway",
+    "en": "Support Stway",
+    "es": "Apoyar Stway"
+  },
+  "supportHeadline": {
+    "pt": "Ajude o Stway a continuar",
+    "en": "Help Stway keep going",
+    "es": "Ayuda a Stway a continuar"
+  },
+  "supportBody": {
+    "pt": "O Stway é grátis para todos. Seu apoio paga servidores e novas trilhas. Não libera nada no app: é um presente, e você ganha o selo de apoiador.",
+    "en": "Stway is free for everyone. Your support pays for servers and new trails. It doesn't unlock anything in the app: it's a gift, and you get the supporter badge.",
+    "es": "Stway es gratis para todos. Tu apoyo paga servidores y nuevas rutas. No desbloquea nada en la app: es un regalo, y recibes el sello de apoyo."
+  },
+  "supportAmount": {
+    "pt": "Apoiar com {price}",
+    "en": "Give {price}",
+    "es": "Apoyar con {price}",
+    "placeholders": {
+      "price": "String"
+    }
+  },
+  "supportFinePrint": {
+    "pt": "Pagamento único pela App Store ou Google Play. Não é assinatura.",
+    "en": "One-time payment through the App Store or Google Play. Not a subscription.",
+    "es": "Pago único por App Store o Google Play. No es una suscripción."
+  },
+  "supportThanksTitle": {
+    "pt": "Obrigado!",
+    "en": "Thank you!",
+    "es": "¡Gracias!"
+  },
+  "supportThanksBody": {
+    "pt": "Seu apoio ajuda mais gente a caminhar na Palavra. O selo de apoiador já está no seu perfil.",
+    "en": "Your support helps more people walk in the Word. The supporter badge is already on your profile.",
+    "es": "Tu apoyo ayuda a más personas a caminar en la Palabra. El sello de apoyo ya está en tu perfil."
+  },
+  "supporterBadge": {
+    "pt": "Apoiador",
+    "en": "Supporter",
+    "es": "Apoyo"
+  },
+  "paywallPlanAnnual": {
+    "pt": "Anual",
+    "en": "Annual",
+    "es": "Anual"
+  },
+  "paywallPlanMonthly": {
+    "pt": "Mensal",
+    "en": "Monthly",
+    "es": "Mensual"
+  },
+  "paywallPlanLifetime": {
+    "pt": "Vitalício",
+    "en": "Lifetime",
+    "es": "De por vida"
+  },
+  "paywallBestValue": {
+    "pt": "Melhor valor",
+    "en": "Best value",
+    "es": "Mejor valor"
+  },
+  "paywallPerMonth": {
+    "pt": "≈ {price}/mês",
+    "en": "≈ {price}/month",
+    "es": "≈ {price}/mes",
+    "placeholders": {
+      "price": "String"
+    }
+  },
+  "paywallTrialDays": {
+    "pt": "{count, plural, =1{1 dia grátis} other{{count} dias grátis}}",
+    "en": "{count, plural, =1{1 day free} other{{count} days free}}",
+    "es": "{count, plural, =1{1 día gratis} other{{count} días gratis}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "paywallStartTrial": {
+    "pt": "{count, plural, =1{Começar 1 dia grátis} other{Começar {count} dias grátis}}",
+    "en": "{count, plural, =1{Start 1 free day} other{Start {count} free days}}",
+    "es": "{count, plural, =1{Empezar 1 día gratis} other{Empezar {count} días gratis}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "paywallSubscribe": {
+    "pt": "Assinar",
+    "en": "Subscribe",
+    "es": "Suscribirme"
+  },
+  "paywallBuyOnce": {
+    "pt": "Comprar",
+    "en": "Buy",
+    "es": "Comprar"
+  },
+  "paywallTrialThen": {
+    "pt": "{count, plural, =1{1 dia grátis, depois {price}.} other{{count} dias grátis, depois {price}.}}",
+    "en": "{count, plural, =1{1 day free, then {price}.} other{{count} days free, then {price}.}}",
+    "es": "{count, plural, =1{1 día gratis, después {price}.} other{{count} días gratis, después {price}.}}",
+    "placeholders": {
+      "count": "int",
+      "price": "String"
+    }
+  },
+  "paywallAutoRenew": {
+    "pt": "Renova automaticamente pelo mesmo preço até você cancelar. Cancele quando quiser na App Store ou no Google Play, até 24 horas antes da renovação.",
+    "en": "Renews automatically at the same price until you cancel. Cancel anytime in the App Store or Google Play, at least 24 hours before renewal.",
+    "es": "Se renueva automáticamente al mismo precio hasta que canceles. Cancela cuando quieras en App Store o Google Play, al menos 24 horas antes de la renovación."
+  },
+  "paywallAppleEula": {
+    "pt": "Termos da Apple (EULA)",
+    "en": "Apple terms (EULA)",
+    "es": "Términos de Apple (EULA)"
+  },
+  "plusOfferScenesTitle": {
+    "pt": "{count, plural, =1{1 cena caminhada} other{{count} cenas caminhadas}}",
+    "en": "{count, plural, =1{1 scene walked} other{{count} scenes walked}}",
+    "es": "{count, plural, =1{1 escena caminada} other{{count} escenas caminadas}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "plusOfferScenesBody": {
+    "pt": "O Peregrino+ traz a revisão da semana e mostra onde você acerta mais. E ajuda a manter o Stway de pé.",
+    "en": "Pilgrim+ brings the weekly review and shows where you do best. And it helps keep Stway going.",
+    "es": "Peregrino+ trae el repaso de la semana y muestra dónde aciertas más. Y ayuda a mantener Stway en pie."
+  },
+  "plusOfferEndingTitle": {
+    "pt": "O Peregrino+ grátis vai até {date}",
+    "en": "Free Pilgrim+ lasts until {date}",
+    "es": "Peregrino+ gratis dura hasta el {date}",
+    "placeholders": {
+      "date": "String"
+    }
+  },
+  "plusOfferEndingBody": {
+    "pt": "Depois, a revisão da semana e Minha caminhada ficam no Peregrino+. Cenas, modos e Bíblia continuam grátis.",
+    "en": "After that, the weekly review and My walk stay in Pilgrim+. Scenes, modes and the Bible stay free.",
+    "es": "Después, el repaso de la semana y Mi camino quedan en Peregrino+. Escenas, modos y Biblia siguen gratis."
+  },
+  "plusOfferEndedTitle": {
+    "pt": "O lançamento acabou",
+    "en": "Launch is over",
+    "es": "El lanzamiento terminó"
+  },
+  "plusOfferEndedBody": {
+    "pt": "Obrigado por caminhar com a gente. Cenas, modos e Bíblia continuam grátis. A revisão da semana e Minha caminhada agora ficam no Peregrino+.",
+    "en": "Thanks for walking with us. Scenes, modes and the Bible stay free. The weekly review and My walk are now part of Pilgrim+.",
+    "es": "Gracias por caminar con nosotros. Escenas, modos y Biblia siguen gratis. El repaso de la semana y Mi camino ahora son parte de Peregrino+."
+  }
+}

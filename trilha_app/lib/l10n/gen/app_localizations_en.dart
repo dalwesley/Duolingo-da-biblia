@@ -5719,6 +5719,19 @@ class AppLocalizationsEn extends AppLocalizations {
   String get paywallAlreadyPlus => 'You\'re already Pilgrim+';
 
   @override
+  String get paywallAppleEula => 'Apple terms (EULA)';
+
+  @override
+  String get paywallAutoRenew =>
+      'Renews automatically at the same price until you cancel. Cancel anytime in the App Store or Google Play, at least 24 hours before renewal.';
+
+  @override
+  String get paywallBestValue => 'Best value';
+
+  @override
+  String get paywallBuyOnce => 'Buy';
+
+  @override
   String get paywallHeadline => 'Go further on the trail';
 
   @override
@@ -5730,7 +5743,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get paywallLaunchFreeTitle => 'Free at launch';
 
   @override
-  String get paywallPerkBadge => 'Pilgrim+ badge on your profile';
+  String paywallPerMonth(String price) {
+    return '≈ $price/month';
+  }
+
+  @override
+  String get paywallPerkBadge => 'Supporter badge on your profile';
 
   @override
   String get paywallPerkJourney =>
@@ -5743,6 +5761,15 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get paywallPitch =>
       'Direct support for the project, with a few extras.';
+
+  @override
+  String get paywallPlanAnnual => 'Annual';
+
+  @override
+  String get paywallPlanLifetime => 'Lifetime';
+
+  @override
+  String get paywallPlanMonthly => 'Monthly';
 
   @override
   String paywallPriceAnnual(String price) {
@@ -5779,10 +5806,46 @@ class AppLocalizationsEn extends AppLocalizations {
   String get paywallRestoreFailed => 'Couldn\'t restore the purchase.';
 
   @override
+  String paywallStartTrial(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Start $count free days',
+      one: 'Start 1 free day',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get paywallSubscribe => 'Subscribe';
+
+  @override
   String get paywallThanks => 'Thank you for supporting Stway.';
 
   @override
   String get paywallTitle => 'Pilgrim+';
+
+  @override
+  String paywallTrialDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count days free',
+      one: '1 day free',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String paywallTrialThen(int count, String price) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count days free, then $price.',
+      one: '1 day free, then $price.',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get paywallUnavailable =>
@@ -6165,6 +6228,37 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get planTodayDoneBody =>
       'Today\'s portion is done. Come back tomorrow — or keep exploring the Bible freely.';
+
+  @override
+  String get plusOfferEndedBody =>
+      'Thanks for walking with us. Scenes, modes and the Bible stay free. The weekly review and My walk are now part of Pilgrim+.';
+
+  @override
+  String get plusOfferEndedTitle => 'Launch is over';
+
+  @override
+  String get plusOfferEndingBody =>
+      'After that, the weekly review and My walk stay in Pilgrim+. Scenes, modes and the Bible stay free.';
+
+  @override
+  String plusOfferEndingTitle(String date) {
+    return 'Free Pilgrim+ lasts until $date';
+  }
+
+  @override
+  String get plusOfferScenesBody =>
+      'Pilgrim+ brings the weekly review and shows where you do best. And it helps keep Stway going.';
+
+  @override
+  String plusOfferScenesTitle(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count scenes walked',
+      one: '1 scene walked',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portraitAvatar => 'Avatar';
@@ -7873,6 +7967,35 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get suggestionTrailTitle => 'Suggest a trail';
+
+  @override
+  String supportAmount(String price) {
+    return 'Give $price';
+  }
+
+  @override
+  String get supportBody =>
+      'Stway is free for everyone. Your support pays for servers and new trails. It doesn\'t unlock anything in the app: it\'s a gift, and you get the supporter badge.';
+
+  @override
+  String get supportFinePrint =>
+      'One-time payment through the App Store or Google Play. Not a subscription.';
+
+  @override
+  String get supportHeadline => 'Help Stway keep going';
+
+  @override
+  String get supportThanksBody =>
+      'Your support helps more people walk in the Word. The supporter badge is already on your profile.';
+
+  @override
+  String get supportThanksTitle => 'Thank you!';
+
+  @override
+  String get supportTitle => 'Support Stway';
+
+  @override
+  String get supporterBadge => 'Supporter';
 
   @override
   String tomorrowDayOf(int streak, int goal) {

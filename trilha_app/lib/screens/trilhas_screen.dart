@@ -29,6 +29,7 @@ import '../widgets/trail_suggestion_sheet.dart';
 import '../widgets/ui_primitives.dart';
 import 'realm_journey_screen.dart';
 import 'trail_map_screen.dart';
+import 'support_screen.dart';
 
 /// Seleção de trilhas — cada reino é um caminho cinematográfico.
 class TrilhasScreen extends StatefulWidget {
@@ -182,7 +183,7 @@ class _TrilhasScreenState extends State<TrilhasScreen>
     );
   }
 
-  Future<void> _openDonate() => openDonatePage();
+  Future<void> _openDonate() => openSupport(context);
 
   void _showTeologiaSoonSheet() {
     final visuals = RealmVisuals.of(TrailRealm.teologia);

@@ -10,6 +10,7 @@ import 'relic_panel.dart';
 import 'streak_week.dart';
 import 'ui_primitives.dart';
 import 'user_avatar.dart';
+import 'cinematic_icon.dart';
 
 /// Cartão de identidade do perfil — o mesmo no perfil e na vitrine da caravana.
 class PilgrimIdentityCard extends StatelessWidget {
@@ -39,6 +40,9 @@ class PilgrimIdentityCard extends StatelessWidget {
   final String? recognizeWalkToUid;
   final String? recognizeWalkDate;
 
+  /// Selo de apoiador ao lado do nome.
+  final bool supporter;
+
   const PilgrimIdentityCard({
     super.key,
     required this.name,
@@ -64,6 +68,7 @@ class PilgrimIdentityCard extends StatelessWidget {
     this.playedOnDate,
     this.recognizeWalkToUid,
     this.recognizeWalkDate,
+    this.supporter = false,
   });
 
   bool get _showPrecision =>
@@ -103,10 +108,20 @@ class PilgrimIdentityCard extends StatelessWidget {
     }
 
     if (showSteps) {
-      push(_IdentityStat(value: pilgrimFormatCount(steps), label: l10n.pilgrimStatSteps));
+      push(
+        _IdentityStat(
+          value: pilgrimFormatCount(steps),
+          label: l10n.pilgrimStatSteps,
+        ),
+      );
     }
     if (showMissions) {
-      push(_IdentityStat(value: pilgrimFormatCount(missions), label: l10n.pilgrimStatScenes));
+      push(
+        _IdentityStat(
+          value: pilgrimFormatCount(missions),
+          label: l10n.pilgrimStatScenes,
+        ),
+      );
     }
     if (_showPrecision) {
       push(
@@ -162,6 +177,14 @@ class PilgrimIdentityCard extends StatelessWidget {
                             ),
                           ),
                         ),
+                        if (supporter) ...[
+                          const SizedBox(width: AppSpace.sm),
+                          SoftBadge(
+                            text: l10n.supporterBadge,
+                            glyph: CinematicGlyph.gift,
+                            accent: AppRoles.reward,
+                          ),
+                        ],
                         if (recognizeWalkToUid != null &&
                             recognizeWalkDate != null)
                           RecognizeHeartButton(

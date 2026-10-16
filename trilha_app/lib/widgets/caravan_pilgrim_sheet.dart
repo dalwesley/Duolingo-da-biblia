@@ -236,6 +236,7 @@ class _VisitorProfileMirror extends StatelessWidget {
       children: [
         PilgrimIdentityCard(
           name: profile.name,
+          supporter: profile.supporter,
           photoUrl: profile.photoUrl ?? entry.photoUrl,
           seed: profile.uid ?? entry.uid ?? profile.name,
           style: entry.portraitStyle,

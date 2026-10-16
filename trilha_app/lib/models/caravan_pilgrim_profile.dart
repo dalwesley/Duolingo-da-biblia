@@ -87,6 +87,9 @@ class CaravanPilgrimProfile {
   final String? lastMissionRef;
   final String? photoUrl;
 
+  /// Selo de apoiador (Peregrino+ pago ou apoio avulso).
+  final bool supporter;
+
   const CaravanPilgrimProfile({
     this.uid,
     required this.name,
@@ -121,6 +124,7 @@ class CaravanPilgrimProfile {
     this.lastMissionInsight,
     this.lastMissionRef,
     this.photoUrl,
+    this.supporter = false,
   });
 
   int get missionsCompleted => completedMissions.length;
@@ -142,9 +146,7 @@ class CaravanPilgrimProfile {
 
   int get otherOpenTrailCount {
     final featured = featuredTrail?.slug;
-    return trails
-        .where((t) => !t.isComplete && t.slug != featured)
-        .length;
+    return trails.where((t) => !t.isComplete && t.slug != featured).length;
   }
 
   /// Trilhas ainda em curso, a do foco primeiro.
@@ -220,7 +222,8 @@ class CaravanPilgrimProfile {
     String? fallbackName,
     String? fallbackPhotoUrl,
   }) {
-    final name = _asName(data['userName']) ??
+    final name =
+        _asName(data['userName']) ??
         _asName(data['name']) ??
         (fallbackName?.trim().isNotEmpty == true
             ? fallbackName!.trim()
@@ -231,27 +234,28 @@ class CaravanPilgrimProfile {
       steps: _asInt(data['steps']) ?? _asInt(data['xp']) ?? 0,
       streak: _asInt(data['streak']) ?? 0,
       lastWalkDate:
-          _asDateKey(data['lastWalkDate']) ?? _asDateKey(data['lastPlayedDate']),
+          _asDateKey(data['lastWalkDate']) ??
+          _asDateKey(data['lastPlayedDate']),
       lastSeenDate: _asDateKey(data['lastSeenDate']),
       completedMissions: _asStringList(data['completedMissions']),
       clearedTrailModes: _asStringListMap(data['clearedTrailModes']),
       readBibleChapters: _asStringList(data['readBibleChapters']),
       perfectMissions: _asStringList(data['perfectMissions']),
-      sharedVerseCount: _asInt(data['sharedVerseCount']) ??
+      sharedVerseCount:
+          _asInt(data['sharedVerseCount']) ??
           _asStringList(data['sharedVerses']).length,
       memoryMasteredCount: _asStringList(data['memoryMastered']).length,
       reflectionCount: _asStringMap(data['missionReflections']).length,
       firstOpenDate: _asDateKey(data['firstOpenDate']),
       playDates: _asStringList(data['playDates']),
       daysAsCaravanLeader: _asInt(data['daysAsCaravanLeader']) ?? 0,
-      lifetimeQuestionsCorrect:
-          _asInt(data['lifetimeQuestionsCorrect']) ?? 0,
-      lifetimeQuestionsAnswered:
-          _asInt(data['lifetimeQuestionsAnswered']) ?? 0,
+      lifetimeQuestionsCorrect: _asInt(data['lifetimeQuestionsCorrect']) ?? 0,
+      lifetimeQuestionsAnswered: _asInt(data['lifetimeQuestionsAnswered']) ?? 0,
       lastMissionSlug: _asName(data['lastMissionSlug']),
       lastMissionCompletedDate: _asDateKey(data['lastMissionCompletedDate']),
       prefs: CaravanProfilePrefs.fromMap(data['caravanProfilePrefs']),
       photoUrl: _asName(data['photoUrl']) ?? _asName(fallbackPhotoUrl),
+      supporter: data['supporter'] == true,
     );
   }
 
@@ -344,11 +348,12 @@ class CaravanPilgrimProfile {
       }
     }
 
-    final books = byBook.entries
-        .where((e) => e.value > 0)
-        .map((e) => abbrevToName[e.key] ?? e.key.toUpperCase())
-        .toList()
-      ..sort();
+    final books =
+        byBook.entries
+            .where((e) => e.value > 0)
+            .map((e) => abbrevToName[e.key] ?? e.key.toUpperCase())
+            .toList()
+          ..sort();
 
     final depthsCleared = clearedTrailModes.values.any(
       (modes) => modes.contains('profundezas'),
@@ -393,6 +398,7 @@ class CaravanPilgrimProfile {
       lastMissionInsight: missionInsight,
       lastMissionRef: missionRef,
       photoUrl: photoUrl,
+      supporter: supporter,
     );
   }
 
@@ -406,15 +412,15 @@ class CaravanPilgrimProfile {
           if (mod.missions.isNotEmpty)
             CaravanTrailModuleStop(
               title: mod.localizedTitle,
-              done: mod.missions.where((m) => completed.contains(m.slug)).length,
+              done: mod.missions
+                  .where((m) => completed.contains(m.slug))
+                  .length,
               total: mod.missions.length,
             ),
       ];
     }
 
-    final missions = [
-      for (final mod in trail.modules) ...mod.missions,
-    ];
+    final missions = [for (final mod in trail.modules) ...mod.missions];
     if (missions.length < 2) return const [];
     return [
       for (final mission in missions.take(6))

@@ -31,7 +31,6 @@ import '../widgets/act_feel.dart';
 import '../widgets/companion_invite_prompt_sheet.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/cloud_mascot.dart';
-import '../widgets/coming_soon_trails_card.dart';
 import '../widgets/commit_strip.dart';
 import '../widgets/confetti_overlay.dart';
 import '../widgets/immersive_background.dart';
@@ -48,6 +47,7 @@ import '../widgets/set_piece.dart';
 import '../widgets/user_avatar.dart';
 import 'lesson_screen.dart';
 import 'trail_map_screen.dart';
+import 'support_screen.dart';
 
 class CelebrationScreen extends StatefulWidget {
   final String missionSlug;
@@ -1102,7 +1102,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                             .celebrationHelpContinue,
                                         leading: CinematicGlyph.gift,
                                         color: appearance.textFaint,
-                                        onTap: openDonatePage,
+                                        onTap: () => openSupport(context),
                                       ),
                                     ],
                                   ],

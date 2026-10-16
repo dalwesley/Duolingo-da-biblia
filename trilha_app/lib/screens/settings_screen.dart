@@ -47,6 +47,7 @@ import '../widgets/user_avatar.dart';
 import 'login_screen.dart';
 import 'paywall_screen.dart';
 import 'onboarding_screen.dart';
+import 'support_screen.dart';
 
 const _genesisTrailSlug = 'genesis-1-11';
 
@@ -1268,7 +1269,7 @@ class _SettingsScreenState extends State<SettingsScreen>
           trailing: null,
           dense: true,
           showGlow: false,
-          onTap: openDonatePage,
+          onTap: () => openSupport(context),
         ),
       ],
     );
