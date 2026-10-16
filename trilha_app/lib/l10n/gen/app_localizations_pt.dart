@@ -7686,9 +7686,15 @@ class AppLocalizationsPt extends AppLocalizations {
       'Cole o backup na área de transferência primeiro.';
 
   @override
+  String get settingsPlusFreeBadge => 'Grátis';
+
+  @override
   String settingsPlusLaunchFree(String date) {
     return 'Grátis no lançamento até $date';
   }
+
+  @override
+  String get settingsPlusSubscribe => 'Assinar o Peregrino+';
 
   @override
   String get settingsPlusTeaser => 'Revisão da semana, constância e reforço';

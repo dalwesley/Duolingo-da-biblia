@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
 
 import '../l10n/app_language.dart';
+import '../l10n/gen/app_localizations.dart';
 import '../services/analytics_service.dart';
 import '../services/progress_service.dart';
 import '../services/subscription_service.dart';
@@ -622,6 +623,32 @@ class _BuyBar extends StatelessWidget {
   }
 }
 
+/// Nome do plano ativo (Anual, Mensal, Vitalício).
+String plusPlanLabel(AppLocalizations l10n, SubscriptionService sub) =>
+    switch (sub.plusPackageType) {
+      PackageType.annual => l10n.paywallPlanAnnual,
+      PackageType.monthly => l10n.paywallPlanMonthly,
+      PackageType.lifetime => l10n.paywallPlanLifetime,
+      _ => sub.plusLifetime ? l10n.paywallPlanLifetime : l10n.paywallTitle,
+    };
+
+/// Estado do plano: renova em, teste até, cancelada, problema de pagamento.
+String plusStatusLabel(AppLocalizations l10n, SubscriptionService sub) {
+  final until = sub.plusExpiresAt;
+  final date = until == null
+      ? ''
+      : DateFormat.yMMMd(l10n.localeName).format(until.toLocal());
+  return sub.plusBillingIssue
+      ? l10n.paywallBillingIssue
+      : sub.plusLifetime
+      ? l10n.paywallLifetimeActive
+      : sub.plusInTrial
+      ? l10n.paywallTrialUntil(date)
+      : sub.plusWillRenew
+      ? l10n.paywallRenewsOn(date)
+      : l10n.paywallEndsOn(date);
+}
+
 /// Assinante: qual plano, até quando, e o caminho para mudar ou cancelar.
 class _YourPlan extends StatelessWidget {
   final SubscriptionService sub;
@@ -632,25 +659,8 @@ class _YourPlan extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final l10n = context.l10n;
-    final until = sub.plusExpiresAt;
-    final date = until == null
-        ? ''
-        : DateFormat.yMMMd(l10n.localeName).format(until.toLocal());
-    final plan = switch (sub.plusPackageType) {
-      PackageType.annual => l10n.paywallPlanAnnual,
-      PackageType.monthly => l10n.paywallPlanMonthly,
-      PackageType.lifetime => l10n.paywallPlanLifetime,
-      _ => sub.plusLifetime ? l10n.paywallPlanLifetime : l10n.paywallTitle,
-    };
-    final status = sub.plusBillingIssue
-        ? l10n.paywallBillingIssue
-        : sub.plusLifetime
-        ? l10n.paywallLifetimeActive
-        : sub.plusInTrial
-        ? l10n.paywallTrialUntil(date)
-        : sub.plusWillRenew
-        ? l10n.paywallRenewsOn(date)
-        : l10n.paywallEndsOn(date);
+    final plan = plusPlanLabel(l10n, sub);
+    final status = plusStatusLabel(l10n, sub);
 
     return GlassCard(
       child: Column(

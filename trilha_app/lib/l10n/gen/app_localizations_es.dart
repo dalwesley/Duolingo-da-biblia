@@ -7717,9 +7717,15 @@ class AppLocalizationsEs extends AppLocalizations {
       'Copia primero una copia de seguridad al portapapeles.';
 
   @override
+  String get settingsPlusFreeBadge => 'Gratis';
+
+  @override
   String settingsPlusLaunchFree(String date) {
     return 'Gratis en el lanzamiento hasta el $date';
   }
+
+  @override
+  String get settingsPlusSubscribe => 'Suscribirme a Peregrino+';
 
   @override
   String get settingsPlusTeaser => 'Repaso de la semana, constancia y refuerzo';

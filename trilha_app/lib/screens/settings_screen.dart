@@ -646,7 +646,6 @@ class _SettingsScreenState extends State<SettingsScreen>
   Widget _passportCard(ProgressService progress, AppearanceStyle a) {
     final backend = context.watch<BackendService>();
     final sub = context.watch<SubscriptionService>();
-    final plus = sub.hasPlus;
     final promoUntil = sub.isPeregrinoPlus ? null : sub.launchFreeUntil;
     final signedIn = backend.isSignedIn;
     return GlassCard(
@@ -689,7 +688,11 @@ class _SettingsScreenState extends State<SettingsScreen>
           if (sub.showsPlus) ...[
             const SizedBox(height: AppSpace.lg),
             _PlusStrip(
-              plus: plus,
+              paid: sub.isPeregrinoPlus,
+              paidLine: sub.isPeregrinoPlus
+                  ? '${plusPlanLabel(context.l10n, sub)} · '
+                        '${plusStatusLabel(context.l10n, sub)}'
+                  : null,
               promoLine: promoUntil == null
                   ? null
                   : context.l10n.settingsPlusLaunchFree(
@@ -1341,77 +1344,110 @@ class _SettingsSwitch extends StatelessWidget {
   }
 }
 
-/// Faixa Peregrino+ dentro do passaporte. Convite = poço neutro; assinatura
-/// ativa = recompensa (amarelo, borda ≥ [AppMetrics.accentBorder]).
+/// Faixa Peregrino+ dentro do passaporte. Sempre com a identidade do Plus
+/// (coroa e rótulo dourados) e o estado escrito: sem assinatura traz o
+/// botão "Assinar"; na promoção, "Grátis"; assinante, "Ativo" + o plano.
 class _PlusStrip extends StatelessWidget {
-  final bool plus;
+  final bool paid;
 
-  /// Linha da promoção de lançamento, no lugar de "Assinatura ativa".
+  /// Linha da promoção de lançamento ("Grátis no lançamento até…").
   final String? promoLine;
+
+  /// Assinante: "Anual · Renova em…".
+  final String? paidLine;
   final VoidCallback onTap;
 
-  const _PlusStrip({required this.plus, required this.onTap, this.promoLine});
+  const _PlusStrip({
+    required this.paid,
+    required this.onTap,
+    this.promoLine,
+    this.paidLine,
+  });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final tone = plus ? AppRoles.reward : a.chrome;
+    final l10n = context.l10n;
+    final promo = !paid && promoLine != null;
+    final offer = !paid && !promo;
+    final line = paid
+        ? paidLine ?? l10n.settingsSubscriptionActive
+        : promo
+        ? promoLine!
+        : l10n.settingsPlusTeaser;
+
     return Material(
       color: Colors.transparent,
       child: InkWell(
         onTap: onTap,
         borderRadius: BorderRadius.circular(AppRadii.md),
         child: Ink(
-          padding: const EdgeInsets.fromLTRB(12, 10, 10, 10),
+          padding: const EdgeInsets.fromLTRB(12, 12, 12, 12),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(AppRadii.md),
-            color: plus ? AppMetrics.accentFill(alpha: 0.12) : a.insetFill,
+            color: AppMetrics.accentFill(alpha: paid ? 0.14 : 0.08),
             border: Border.all(
-              color: plus ? AppMetrics.accentBorder(alpha: 0.6) : a.insetBorder,
+              color: AppMetrics.accentBorder(alpha: paid ? 0.7 : 0.45),
             ),
           ),
-          child: Row(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              CinematicIcon(
-                glyph: CinematicGlyph.crown,
-                size: AppMetrics.iconLg,
-                accent: tone,
-                glowing: plus,
-                framed: false,
+              Row(
+                children: [
+                  CinematicIcon(
+                    glyph: CinematicGlyph.crown,
+                    size: AppMetrics.iconLg,
+                    accent: AppRoles.reward,
+                    glowing: paid,
+                    framed: false,
+                  ),
+                  const SizedBox(width: AppSpace.md),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        SectionLabel('Peregrino+', color: AppRoles.reward),
+                        const SizedBox(height: 2),
+                        Text(
+                          line,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: AppTypography.body(
+                            size: 13,
+                            weight: FontWeight.w700,
+                            color: a.textSecondary,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: AppSpace.sm),
+                  if (paid)
+                    SoftBadge(
+                      text: l10n.commonActive,
+                      glyph: CinematicGlyph.check,
+                      solid: true,
+                    )
+                  else if (promo)
+                    SoftBadge(
+                      text: l10n.settingsPlusFreeBadge,
+                      accent: AppRoles.reward,
+                    )
+                  else
+                    ListChevron(color: a.textFaint),
+                ],
               ),
-              const SizedBox(width: AppSpace.md),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    SectionLabel(
-                      'Peregrino+',
-                      color: plus ? AppRoles.reward : null,
-                    ),
-                    const SizedBox(height: 2),
-                    Text(
-                      plus
-                          ? promoLine ?? context.l10n.settingsSubscriptionActive
-                          : context.l10n.settingsPlusTeaser,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: AppTypography.body(
-                        size: 13,
-                        weight: FontWeight.w700,
-                        color: a.textSecondary,
-                      ),
-                    ),
-                  ],
+              if (offer) ...[
+                const SizedBox(height: AppSpace.md),
+                CopperCta(
+                  label: l10n.settingsPlusSubscribe,
+                  leading: CinematicGlyph.crown,
+                  dense: true,
+                  expanded: true,
+                  onTap: onTap,
                 ),
-              ),
-              if (plus)
-                SoftBadge(
-                  text: context.l10n.commonActive,
-                  glyph: CinematicGlyph.check,
-                  solid: true,
-                )
-              else
-                ListChevron(color: a.textFaint),
+              ],
             ],
           ),
         ),

@@ -7667,9 +7667,15 @@ class AppLocalizationsEn extends AppLocalizations {
       'Copy a backup to the clipboard first.';
 
   @override
+  String get settingsPlusFreeBadge => 'Free';
+
+  @override
   String settingsPlusLaunchFree(String date) {
     return 'Free at launch until $date';
   }
+
+  @override
+  String get settingsPlusSubscribe => 'Get Pilgrim+';
 
   @override
   String get settingsPlusTeaser => 'Weekly review, consistency and practice';

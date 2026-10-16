@@ -11925,11 +11925,23 @@ abstract class AppLocalizations {
   /// **'Cole o backup na área de transferência primeiro.'**
   String get settingsPasteBackupFirst;
 
+  /// No description provided for @settingsPlusFreeBadge.
+  ///
+  /// In pt, this message translates to:
+  /// **'Grátis'**
+  String get settingsPlusFreeBadge;
+
   /// No description provided for @settingsPlusLaunchFree.
   ///
   /// In pt, this message translates to:
   /// **'Grátis no lançamento até {date}'**
   String settingsPlusLaunchFree(String date);
+
+  /// No description provided for @settingsPlusSubscribe.
+  ///
+  /// In pt, this message translates to:
+  /// **'Assinar o Peregrino+'**
+  String get settingsPlusSubscribe;
 
   /// No description provided for @settingsPlusTeaser.
   ///
