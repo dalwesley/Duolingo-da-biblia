@@ -38,7 +38,7 @@ Character count: about 2,300, under the 4,000 limit.
 STWAY helps Portuguese-speaking Christians build a daily habit of reading and studying the Bible: one short passage a day, studied in three levels (observation, comprehension, interpretation). Sign in with Apple; any Apple ID works.
 
 NEW IN THIS VERSION: PEREGRINO+ (OPTIONAL SUBSCRIPTION)
-The Bible, every lesson in all three levels, rankings and study groups stay free. Peregrino+ adds:
+The Bible, every lesson in all three levels, rankings and study partners stay free. Peregrino+ adds:
 - Weekly review: each lesson's key idea from the week plus 3 questions.
 - On the profile: the weekly streak history and accuracy by level and by question type.
 - Practice of the weak spot: questions of the type the user misses most.

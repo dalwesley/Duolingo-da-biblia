@@ -6247,7 +6247,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get plusNoticeFreeScenes => 'Every scene and trail, in all 3 modes';
 
   @override
-  String get plusNoticeFreeSocial => 'League, Caravan and Together';
+  String get plusNoticeFreeSocial => 'League, Caravan and study partner';
 
   @override
   String get plusNoticeFreeStreak => 'Your daily streak and reminders';

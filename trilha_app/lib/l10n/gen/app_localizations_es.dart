@@ -6297,7 +6297,7 @@ class AppLocalizationsEs extends AppLocalizations {
       'Todas las escenas y rutas, en los 3 modos';
 
   @override
-  String get plusNoticeFreeSocial => 'Liga, Caravana y Juntos';
+  String get plusNoticeFreeSocial => 'Liga, Caravana y compañía';
 
   @override
   String get plusNoticeFreeStreak => 'Tu racha diaria y los recordatorios';

@@ -9642,7 +9642,7 @@ abstract class AppLocalizations {
   /// No description provided for @plusNoticeFreeSocial.
   ///
   /// In pt, this message translates to:
-  /// **'Liga, Caravana e Juntos'**
+  /// **'Liga, Caravana e companhia'**
   String get plusNoticeFreeSocial;
 
   /// No description provided for @plusNoticeFreeStreak.
