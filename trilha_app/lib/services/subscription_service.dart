@@ -50,7 +50,7 @@ class SubscriptionService extends ChangeNotifier {
 
   /// Último dia da promoção de lançamento, se ela ainda vale hoje.
   DateTime? get launchFreeUntil {
-    final until = RemoteConfigService.instance.plusLaunchFreeUntil;
+    final until = launchPromoDate;
     if (until == null) return null;
     final now = DateTime.now();
     final today = DateTime(now.year, now.month, now.day);
@@ -60,8 +60,9 @@ class SubscriptionService extends ChangeNotifier {
   bool get launchPromoActive => launchFreeUntil != null;
 
   /// Último dia da promoção no Remote Config, mesmo que já tenha passado.
-  DateTime? get launchPromoDate =>
-      RemoteConfigService.instance.plusLaunchFreeUntil;
+  DateTime? get launchPromoDate => _debugPromoOverride
+      ? _debugPromoUntil
+      : RemoteConfigService.instance.plusLaunchFreeUntil;
 
   /// Acesso aos recursos do Peregrino+: assinatura ou promoção de lançamento.
   bool get hasPlus => isPeregrinoPlus || launchPromoActive;
@@ -77,6 +78,7 @@ class SubscriptionService extends ChangeNotifier {
   bool get showsPlus => isConfigured || launchPromoActive;
 
   bool get isConfigured =>
+      _debugFakeStore ||
       (defaultTargetPlatform == TargetPlatform.iOS && _apiKeyIos.isNotEmpty) ||
       (defaultTargetPlatform == TargetPlatform.android &&
           _apiKeyAndroid.isNotEmpty);
@@ -181,6 +183,9 @@ class SubscriptionService extends ChangeNotifier {
 
   Future<bool> purchase(Package package) async {
     lastError = null;
+    if (_debugFakeStore) {
+      return _debugFakePurchase(() => isPeregrinoPlus = true);
+    }
     loading = true;
     notifyListeners();
     final productId = package.storeProduct.identifier;
@@ -217,6 +222,7 @@ class SubscriptionService extends ChangeNotifier {
   /// Compra de apoio avulsa. `true` se concluiu.
   Future<bool> purchaseSupport(Package package) async {
     lastError = null;
+    if (_debugFakeStore) return _debugFakePurchase(() => isSupporter = true);
     loading = true;
     notifyListeners();
     final productId = package.storeProduct.identifier;
@@ -254,7 +260,7 @@ class SubscriptionService extends ChangeNotifier {
   }
 
   Future<void> restore() async {
-    if (!isConfigured) return;
+    if (!isConfigured || _debugFakeStore) return;
     loading = true;
     notifyListeners();
     try {
@@ -291,4 +297,122 @@ class SubscriptionService extends ChangeNotifier {
     }
     return label;
   }
+
+  // --- Laboratório do Peregrino+ (só em build de desenvolvimento) ---------
+
+  bool _debugFakeStore = false;
+  bool _debugPromoOverride = false;
+  DateTime? _debugPromoUntil;
+
+  bool get debugFakeStore => _debugFakeStore;
+  bool get debugPromoOverride => _debugPromoOverride;
+
+  /// Assinante simulado (sem loja).
+  void debugSetPlus(bool value) {
+    if (!kDebugMode) return;
+    final before = hasBadge;
+    isPeregrinoPlus = value;
+    notifyListeners();
+    if (hasBadge != before) onBadgeChanged?.call(hasBadge);
+  }
+
+  /// Apoiador simulado (sem loja).
+  void debugSetSupporter(bool value) {
+    if (!kDebugMode) return;
+    final before = hasBadge;
+    isSupporter = value;
+    notifyListeners();
+    if (hasBadge != before) onBadgeChanged?.call(hasBadge);
+  }
+
+  /// Troca a data da promoção. [override] false volta ao Remote Config.
+  void debugSetPromo({required bool override, DateTime? until}) {
+    if (!kDebugMode) return;
+    _debugPromoOverride = override;
+    _debugPromoUntil = until == null
+        ? null
+        : DateTime(until.year, until.month, until.day);
+    notifyListeners();
+  }
+
+  /// Loja falsa: planos e apoios de mentira; compras viram sucesso na hora.
+  void debugSetFakeStore(bool value) {
+    if (!kDebugMode) return;
+    _debugFakeStore = value;
+    if (value) {
+      availablePackages = _debugPlans();
+      supportPackages = _debugSupport();
+    } else {
+      availablePackages = const [];
+      supportPackages = const [];
+    }
+    notifyListeners();
+  }
+
+  Future<bool> _debugFakePurchase(void Function() grant) async {
+    final before = hasBadge;
+    loading = true;
+    notifyListeners();
+    await Future<void>.delayed(const Duration(milliseconds: 700));
+    grant();
+    loading = false;
+    notifyListeners();
+    if (hasBadge != before) onBadgeChanged?.call(hasBadge);
+    return true;
+  }
+
+  static Package _debugPackage(
+    String id,
+    PackageType type,
+    double price,
+    String priceString, {
+    String offering = 'default',
+    String? perMonth,
+    IntroductoryPrice? intro,
+  }) => Package(
+    id,
+    type,
+    StoreProduct(
+      id,
+      '',
+      id,
+      price,
+      priceString,
+      'BRL',
+      introductoryPrice: intro,
+      pricePerMonthString: perMonth,
+    ),
+    PresentedOfferingContext(offering, null, null),
+  );
+
+  static List<Package> _debugPlans() => [
+    _debugPackage('plus_monthly', PackageType.monthly, 12.90, r'R$ 12,90'),
+    _debugPackage(
+      'plus_annual',
+      PackageType.annual,
+      79.90,
+      r'R$ 79,90',
+      perMonth: r'R$ 6,66',
+      intro: const IntroductoryPrice(
+        0,
+        r'R$ 0,00',
+        'P14D',
+        1,
+        PeriodUnit.day,
+        14,
+      ),
+    ),
+    _debugPackage('plus_lifetime', PackageType.lifetime, 199.0, r'R$ 199,00'),
+  ];
+
+  static List<Package> _debugSupport() => [
+    for (final (id, price) in [(5, 5.0), (15, 15.0), (30, 30.0)])
+      _debugPackage(
+        'apoio_$id',
+        PackageType.custom,
+        price,
+        'R\$ $id,00',
+        offering: supportOfferingId,
+      ),
+  ];
 }

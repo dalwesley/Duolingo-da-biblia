@@ -21,6 +21,13 @@ Future<({Set<String> shown, String? lastWeek})> loadPlusOfferState() async {
   );
 }
 
+/// Laboratório: esquece as ofertas vistas neste aparelho.
+Future<void> resetPlusOfferState() async {
+  final prefs = await SharedPreferences.getInstance();
+  await prefs.remove(_prefsShown);
+  await prefs.remove(_prefsLastWeek);
+}
+
 Future<void> _markShown(PlusOfferKind kind, String week) async {
   final prefs = await SharedPreferences.getInstance();
   final shown = (prefs.getStringList(_prefsShown) ?? const <String>[]).toSet()

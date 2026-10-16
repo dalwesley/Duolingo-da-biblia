@@ -1,5 +1,6 @@
 import 'dart:math' as math;
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
@@ -47,6 +48,7 @@ import '../widgets/user_avatar.dart';
 import 'login_screen.dart';
 import 'paywall_screen.dart';
 import 'onboarding_screen.dart';
+import 'plus_lab_screen.dart';
 import 'support_screen.dart';
 
 const _genesisTrailSlug = 'genesis-1-11';
@@ -691,9 +693,10 @@ class _SettingsScreenState extends State<SettingsScreen>
               promoLine: promoUntil == null
                   ? null
                   : context.l10n.settingsPlusLaunchFree(
-                      DateFormat('d MMM', context.l10n.localeName)
-                          .format(promoUntil)
-                          .replaceAll('.', ''),
+                      DateFormat(
+                        'd MMM',
+                        context.l10n.localeName,
+                      ).format(promoUntil).replaceAll('.', ''),
                     ),
               onTap: () => Navigator.push(
                 context,
@@ -1262,6 +1265,18 @@ class _SettingsScreenState extends State<SettingsScreen>
           glyph: CinematicGlyph.shield,
           onTap: () => openSitePage(privacyPageUrl),
         ),
+        if (kDebugMode) ...[
+          const _SettingsDivider(compact: true),
+          _navRow(
+            a,
+            'Laboratório Peregrino+',
+            'Só em desenvolvimento',
+            glyph: CinematicGlyph.tune,
+            onTap: () => Navigator.of(context).push(
+              MaterialPageRoute<void>(builder: (_) => const PlusLabScreen()),
+            ),
+          ),
+        ],
         const SizedBox(height: AppSpace.lg),
         CopperCta(
           label: context.l10n.settingsSupport,

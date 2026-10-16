@@ -543,6 +543,58 @@ class ProgressService extends ChangeNotifier {
   bool isWeeklyReviewDone(String mondayKey) =>
       weeklyReviewsDone.contains(mondayKey);
 
+  /// Laboratório (debug): põe [slugs] na semana da revisão (seg, qua, sex),
+  /// reabre a revisão dessa semana e soma respostas de mentira por modo e
+  /// gesto. Não mexe em cenas concluídas, passos nem sequência.
+  Future<void> debugSeedReviewWeek(List<String> slugs) async {
+    if (!kDebugMode) return;
+    final week = weeklyReviewWeekKey();
+    final monday = DateTime.parse(week);
+    final seeded = Map<String, String>.from(missionCompletedOn);
+    for (var i = 0; i < slugs.length; i++) {
+      final day = DateTime(monday.year, monday.month, monday.day + i * 2);
+      seeded.putIfAbsent(
+        slugs[i],
+        () => day.toIso8601String().substring(0, 10),
+      );
+    }
+    missionCompletedOn = seeded;
+    weeklyReviewsDone = weeklyReviewsDone.where((w) => w != week).toList();
+    const fake = {
+      'semente.true_false': (8, 10),
+      'semente.tap': (6, 8),
+      'caminhada.choice': (5, 9),
+      'caminhada.order': (2, 6),
+      'profundezas.connect': (3, 7),
+      'profundezas.complete': (4, 5),
+    };
+    final c = Map<String, int>.from(answerCorrect);
+    final t = Map<String, int>.from(answerTotal);
+    for (final e in fake.entries) {
+      c[e.key] = (c[e.key] ?? 0) + e.value.$1;
+      t[e.key] = (t[e.key] ?? 0) + e.value.$2;
+    }
+    answerCorrect = c;
+    answerTotal = t;
+    await _save();
+  }
+
+  /// Laboratório (debug): tira as datas de cenas que não foram concluídas de
+  /// verdade, zera o acerto por modo/gesto e reabre a revisão da semana.
+  Future<void> debugClearLab() async {
+    if (!kDebugMode) return;
+    final done = completedMissions.toSet();
+    missionCompletedOn = {
+      for (final e in missionCompletedOn.entries)
+        if (done.contains(e.key)) e.key: e.value,
+    };
+    answerCorrect = {};
+    answerTotal = {};
+    final week = weeklyReviewWeekKey();
+    weeklyReviewsDone = weeklyReviewsDone.where((w) => w != week).toList();
+    await _save();
+  }
+
   /// Há revisão da semana pendente hoje.
   bool get weeklyReviewReady {
     final week = weeklyReviewWeekKey();
@@ -2949,8 +3001,9 @@ class ProgressService extends ChangeNotifier {
         final merged = Map<String, String>.from(missionCompletedOn);
         for (final e in _asStringMap(data['missionCompletedOn']).entries) {
           final cur = merged[e.key];
-          if (cur == null || e.value.compareTo(cur) < 0)
+          if (cur == null || e.value.compareTo(cur) < 0) {
             merged[e.key] = e.value;
+          }
         }
         missionCompletedOn = merged;
       }
