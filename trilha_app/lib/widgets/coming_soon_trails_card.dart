@@ -10,7 +10,8 @@ import 'immersive_background.dart';
 import 'ui_primitives.dart';
 
 /// Página institucional no site (nome, missão, valores).
-const aboutPageUrl = 'https://stway.com.br/sobre';
+/// `?src=app`: a página esconde os links de doação (regra das lojas).
+const aboutPageUrl = 'https://stway.com.br/sobre/?src=app';
 
 /// Página de doação no site. O pagamento fica fora do app.
 
