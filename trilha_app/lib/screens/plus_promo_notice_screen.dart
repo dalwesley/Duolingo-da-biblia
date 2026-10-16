@@ -146,18 +146,6 @@ class PlusPromoNoticeScreen extends StatelessWidget {
                   ],
                   const SizedBox(height: AppSpace.xl),
                   _Block(
-                    title: _ended
-                        ? l10n.plusNoticeLockedHeader
-                        : l10n.plusNoticeLockedHeaderSoon(date),
-                    accent: AppRoles.reward,
-                    highlighted: true,
-                    rows: [
-                      for (final (glyph, label) in locked)
-                        _Row(glyph: glyph, label: label, locked: true),
-                    ],
-                  ),
-                  const SizedBox(height: AppSpace.md),
-                  _Block(
                     title: l10n.plusNoticeFreeHeader,
                     accent: a.textSecondary,
                     rows: [
@@ -167,6 +155,18 @@ class PlusPromoNoticeScreen extends StatelessWidget {
                           label: label,
                           locked: false,
                         ),
+                    ],
+                  ),
+                  const SizedBox(height: AppSpace.md),
+                  _Block(
+                    title: _ended
+                        ? l10n.plusNoticeLockedHeader
+                        : l10n.plusNoticeLockedHeaderSoon(date),
+                    accent: AppRoles.reward,
+                    highlighted: true,
+                    rows: [
+                      for (final (glyph, label) in locked)
+                        _Row(glyph: glyph, label: label, locked: true),
                     ],
                   ),
                 ],

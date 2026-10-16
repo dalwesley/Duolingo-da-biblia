@@ -6271,11 +6271,11 @@ class AppLocalizationsEs extends AppLocalizations {
   String get plusNoticeFreeStreak => 'Tu racha diaria y los recordatorios';
 
   @override
-  String get plusNoticeLockedHeader => 'Ahora es parte de Peregrino+';
+  String get plusNoticeLockedHeader => 'Solo con Peregrino+';
 
   @override
   String plusNoticeLockedHeaderSoon(String date) {
-    return 'Desde el $date, parte de Peregrino+';
+    return 'Desde el $date, solo con Peregrino+';
   }
 
   @override

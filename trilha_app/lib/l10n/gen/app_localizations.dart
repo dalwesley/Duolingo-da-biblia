@@ -9606,13 +9606,13 @@ abstract class AppLocalizations {
   /// No description provided for @plusNoticeLockedHeader.
   ///
   /// In pt, this message translates to:
-  /// **'Agora fica no Peregrino+'**
+  /// **'Só no Peregrino+'**
   String get plusNoticeLockedHeader;
 
   /// No description provided for @plusNoticeLockedHeaderSoon.
   ///
   /// In pt, this message translates to:
-  /// **'A partir de {date}, fica no Peregrino+'**
+  /// **'A partir de {date}, só no Peregrino+'**
   String plusNoticeLockedHeaderSoon(String date);
 
   /// No description provided for @plusOfferDaysLeft.

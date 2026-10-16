@@ -6221,11 +6221,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get plusNoticeFreeStreak => 'Your daily streak and reminders';
 
   @override
-  String get plusNoticeLockedHeader => 'Now part of Pilgrim+';
+  String get plusNoticeLockedHeader => 'Only with Pilgrim+';
 
   @override
   String plusNoticeLockedHeaderSoon(String date) {
-    return 'From $date, part of Pilgrim+';
+    return 'From $date, only with Pilgrim+';
   }
 
   @override

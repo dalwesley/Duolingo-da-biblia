@@ -6249,11 +6249,11 @@ class AppLocalizationsPt extends AppLocalizations {
   String get plusNoticeFreeStreak => 'Sua sequência diária e os lembretes';
 
   @override
-  String get plusNoticeLockedHeader => 'Agora fica no Peregrino+';
+  String get plusNoticeLockedHeader => 'Só no Peregrino+';
 
   @override
   String plusNoticeLockedHeaderSoon(String date) {
-    return 'A partir de $date, fica no Peregrino+';
+    return 'A partir de $date, só no Peregrino+';
   }
 
   @override
