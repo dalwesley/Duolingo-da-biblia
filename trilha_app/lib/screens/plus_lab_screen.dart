@@ -68,6 +68,83 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
     _toast('Semana criada: ${slugs.join(', ')}');
   }
 
+  /// Qual opção de promoção está valendo agora (para marcar o botão).
+  String _promoChoice(SubscriptionService sub) {
+    if (!sub.debugPromoOverride) return 'rc';
+    final until = sub.launchPromoDate;
+    if (until == null) return 'none';
+    return switch (until.difference(_inDays(0)).inDays) {
+      20 => '20',
+      5 => '5',
+      -1 => 'ended',
+      _ => 'other',
+    };
+  }
+
+  void _setPromo(
+    SubscriptionService sub, {
+    bool override = true,
+    DateTime? until,
+  }) {
+    sub.debugSetPromo(override: override, until: until);
+    final date = _ymd(sub.launchPromoDate);
+    final store = sub.isConfigured;
+    _toast(switch ((override, sub.launchPromoActive, until)) {
+      (false, _, _) =>
+        'Remote Config: ${sub.launchPromoDate == null ? 'sem promoção' : 'até $date'}',
+      (_, true, _) => 'Promoção até $date: todos têm o Peregrino+',
+      (_, false, _) when !store =>
+        'Sem promoção e sem loja: nada trava. Ligue a loja falsa',
+      (_, false, null) => 'Sem promoção: sem assinatura, o Plus trava',
+      _ => 'Promoção encerrada ($date): sem assinatura, o Plus trava',
+    });
+  }
+
+  /// Roda a mesma regra da oferta automática da Home e mostra o resultado.
+  Future<void> _runRule() async {
+    final sub = context.read<SubscriptionService>();
+    final progress = context.read<ProgressService>();
+    final state = await loadPlusOfferState();
+    final week = LeagueService.weekKey();
+    final storeReady = sub.isConfigured && sub.availablePackages.isNotEmpty;
+    final promo = sub.launchPromoDate;
+    final scenes = progress.completedMissions.length;
+    final kind = PlusOffers.pick(
+      today: DateTime.now(),
+      paid: sub.isPeregrinoPlus,
+      storeReady: storeReady,
+      scenesDone: scenes,
+      promoUntil: promo,
+      shown: state.shown,
+      lastOfferWeek: state.lastWeek,
+      thisWeek: week,
+    );
+    if (!mounted) return;
+    if (kind != null) {
+      await showPlusOfferSheet(
+        context,
+        kind: kind,
+        week: week,
+        promoUntil: promo,
+      );
+      return;
+    }
+    final promoActive = promo != null && !_inDays(0).isAfter(promo);
+    _toast(
+      sub.isPeregrinoPlus
+          ? 'Nenhuma: assinante não recebe oferta'
+          : !storeReady
+          ? 'Nenhuma: sem loja. Ligue a loja falsa'
+          : state.lastWeek == week
+          ? 'Nenhuma: já houve oferta nesta semana. Zere as ofertas'
+          : promoActive
+          ? 'Nenhuma: na promoção só avisa nos últimos 7 dias'
+          : scenes < PlusOffers.scenesForOffer
+          ? 'Nenhuma: só $scenes cenas concluídas (precisa de 7)'
+          : 'Nenhuma: todas já foram vistas. Zere as ofertas',
+    );
+  }
+
   Future<void> _clear() async {
     await context.read<ProgressService>().debugClearLab();
     _toast('Dados do laboratório limpos');
@@ -203,34 +280,33 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
                         ),
                       ]),
                       section('Promoção de lançamento', [
-                        button(
-                          'Termina em 20 dias',
-                          () => sub.debugSetPromo(
-                            override: true,
-                            until: _inDays(20),
+                        line(
+                          'Muda a data da promoção neste aparelho (fica '
+                          'salva ao fechar o app). Veja o efeito no '
+                          'Perfil, na revisão da semana, no paywall e em '
+                          'Ajustes. Sem loja, nada trava: ligue a loja '
+                          'falsa para ver o Plus bloqueado.',
+                        ),
+                        for (final (id, label, days) in [
+                          ('20', 'Termina em 20 dias', 20),
+                          ('5', 'Termina em 5 dias', 5),
+                          ('ended', 'Acabou ontem', -1),
+                        ])
+                          button(
+                            _promoChoice(sub) == id ? '● $label' : label,
+                            () => _setPromo(sub, until: _inDays(days)),
                           ),
+                        button(
+                          _promoChoice(sub) == 'none'
+                              ? '● Sem promoção'
+                              : 'Sem promoção',
+                          () => _setPromo(sub),
                         ),
                         button(
-                          'Termina em 5 dias',
-                          () => sub.debugSetPromo(
-                            override: true,
-                            until: _inDays(5),
-                          ),
-                        ),
-                        button(
-                          'Acabou ontem',
-                          () => sub.debugSetPromo(
-                            override: true,
-                            until: _inDays(-1),
-                          ),
-                        ),
-                        button(
-                          'Sem promoção',
-                          () => sub.debugSetPromo(override: true),
-                        ),
-                        button(
-                          'Voltar ao Remote Config',
-                          () => sub.debugSetPromo(override: false),
+                          _promoChoice(sub) == 'rc'
+                              ? '● Usar o Remote Config'
+                              : 'Usar o Remote Config',
+                          () => _setPromo(sub, override: false),
                         ),
                       ]),
                       section('Dados de teste', [
@@ -253,6 +329,7 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
                           'abertura do app. Zere e reabra o app para '
                           'testar a regra.',
                         ),
+                        button('Testar a regra agora', _runRule),
                         button('Zerar ofertas vistas', () async {
                           await resetPlusOfferState();
                           _toast('Ofertas zeradas');

@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../l10n/l10n_global.dart';
 import 'analytics_service.dart';
@@ -22,6 +23,7 @@ import 'remote_config_service.dart';
 class SubscriptionService extends ChangeNotifier {
   SubscriptionService() {
     RemoteConfigService.instance.addListener(notifyListeners);
+    if (kDebugMode) unawaited(_debugRestore());
   }
 
   static const _entitlementId = 'peregrino_plus';
@@ -335,6 +337,7 @@ class SubscriptionService extends ChangeNotifier {
     if (!kDebugMode) return;
     final before = hasBadge;
     isPeregrinoPlus = value;
+    unawaited(_debugSave());
     notifyListeners();
     if (hasBadge != before) onBadgeChanged?.call(hasBadge);
   }
@@ -344,6 +347,7 @@ class SubscriptionService extends ChangeNotifier {
     if (!kDebugMode) return;
     final before = hasBadge;
     isSupporter = value;
+    unawaited(_debugSave());
     notifyListeners();
     if (hasBadge != before) onBadgeChanged?.call(hasBadge);
   }
@@ -355,6 +359,7 @@ class SubscriptionService extends ChangeNotifier {
     _debugPromoUntil = until == null
         ? null
         : DateTime(until.year, until.month, until.day);
+    unawaited(_debugSave());
     notifyListeners();
   }
 
@@ -369,6 +374,41 @@ class SubscriptionService extends ChangeNotifier {
       availablePackages = const [];
       supportPackages = const [];
     }
+    unawaited(_debugSave());
+    notifyListeners();
+  }
+
+  static const _debugPrefsKey = 'plusLabState';
+
+  /// Guarda a simulação: sobrevive a fechar o app (testar a oferta da Home).
+  Future<void> _debugSave() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setStringList(_debugPrefsKey, [
+      'plus=$isPeregrinoPlus',
+      'supporter=$isSupporter',
+      'store=$_debugFakeStore',
+      'promo=$_debugPromoOverride',
+      'until=${_debugPromoUntil?.toIso8601String().substring(0, 10) ?? ''}',
+    ]);
+  }
+
+  Future<void> _debugRestore() async {
+    final prefs = await SharedPreferences.getInstance();
+    final raw = prefs.getStringList(_debugPrefsKey);
+    if (raw == null) return;
+    final m = {
+      for (final e in raw)
+        if (e.contains('=')) e.split('=').first: e.split('=').last,
+    };
+    isPeregrinoPlus = m['plus'] == 'true';
+    isSupporter = m['supporter'] == 'true';
+    _debugPromoOverride = m['promo'] == 'true';
+    _debugPromoUntil = DateTime.tryParse(m['until'] ?? '');
+    if (m['store'] == 'true') {
+      _debugFakeStore = true;
+      availablePackages = _debugPlans();
+      supportPackages = _debugSupport();
+    }
     notifyListeners();
   }
 
@@ -378,6 +418,7 @@ class SubscriptionService extends ChangeNotifier {
     notifyListeners();
     await Future<void>.delayed(const Duration(milliseconds: 700));
     grant();
+    unawaited(_debugSave());
     loading = false;
     notifyListeners();
     if (hasBadge != before) onBadgeChanged?.call(hasBadge);
