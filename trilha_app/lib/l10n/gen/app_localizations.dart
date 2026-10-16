@@ -9645,6 +9645,12 @@ abstract class AppLocalizations {
   /// **'{count, plural, =1{Testar 1 dia grátis} other{Testar {count} dias grátis}}'**
   String plusOfferTryFree(int count);
 
+  /// No description provided for @plusPerksHeader.
+  ///
+  /// In pt, this message translates to:
+  /// **'Com o Peregrino+'**
+  String get plusPerksHeader;
+
   /// No description provided for @portraitAvatar.
   ///
   /// In pt, this message translates to:
@@ -9836,12 +9842,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Abrir {ref}'**
   String profileOpenRef(String ref);
-
-  /// No description provided for @profilePlusTeaserBody.
-  ///
-  /// In pt, this message translates to:
-  /// **'Veja sua sequência semana a semana, o histórico das lamparinas e onde você acerta mais em cada modo e gesto.'**
-  String get profilePlusTeaserBody;
 
   /// No description provided for @profilePlusTeaserTitle.
   ///

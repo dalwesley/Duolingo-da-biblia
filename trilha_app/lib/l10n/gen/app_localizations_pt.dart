@@ -6299,6 +6299,9 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get plusPerksHeader => 'Com o Peregrino+';
+
+  @override
   String get portraitAvatar => 'Avatar';
 
   @override
@@ -6425,10 +6428,6 @@ class AppLocalizationsPt extends AppLocalizations {
   String profileOpenRef(String ref) {
     return 'Abrir $ref';
   }
-
-  @override
-  String get profilePlusTeaserBody =>
-      'Veja sua sequência semana a semana, o histórico das lamparinas e onde você acerta mais em cada modo e gesto.';
 
   @override
   String get profilePlusTeaserTitle => 'Sua caminhada no Peregrino+';

@@ -18,6 +18,7 @@ import '../utils/reinforce_picker.dart';
 import '../utils/walk_stats.dart';
 import 'cinematic_icon.dart';
 import 'immersive_background.dart';
+import 'plus_perks.dart';
 import 'relic_panel.dart';
 import 'ui_primitives.dart';
 
@@ -120,10 +121,7 @@ class ProfilePlusTeaser extends StatelessWidget {
             ],
           ),
           const SizedBox(height: AppSpace.sm),
-          Text(
-            l10n.profilePlusTeaserBody,
-            style: AppTypography.body(size: 13, color: a.textSecondary),
-          ),
+          const PlusPerkCard(boxed: false),
           const SizedBox(height: AppSpace.lg),
           CopperCta(
             label: l10n.weeklyReviewSeePlus,

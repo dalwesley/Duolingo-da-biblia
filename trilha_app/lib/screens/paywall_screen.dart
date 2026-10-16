@@ -15,6 +15,7 @@ import '../widgets/cinematic_icon.dart';
 import '../widgets/cloud_mascot.dart';
 import '../widgets/coming_soon_trails_card.dart';
 import '../widgets/immersive_background.dart';
+import '../widgets/plus_perks.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 
@@ -155,7 +156,7 @@ class _PaywallScreenState extends State<PaywallScreen> {
                     style: AppTypography.body(size: 14, color: a.textSecondary),
                   ),
                   const SizedBox(height: AppSpace.xl),
-                  const _Perks(),
+                  const PlusPerkCard(detailed: true),
                   const SizedBox(height: AppSpace.md),
                   const _FreeForever(),
                   if (offer) ...[
@@ -217,79 +218,6 @@ class _PaywallScreenState extends State<PaywallScreen> {
               error: sub.lastError,
               onTap: sub.loading ? null : () => sub.purchase(selected!),
             ),
-        ],
-      ),
-    );
-  }
-}
-
-/// Os quatro benefícios: ícone, título e uma frase.
-class _Perks extends StatelessWidget {
-  const _Perks();
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final l10n = context.l10n;
-    final perks = [
-      (
-        CinematicGlyph.scroll,
-        l10n.paywallPerkWeeklyTitle,
-        l10n.paywallPerkWeeklyBody,
-      ),
-      (
-        CinematicGlyph.path,
-        l10n.paywallPerkStreakTitle,
-        l10n.paywallPerkStreakBody,
-      ),
-      (
-        CinematicGlyph.target,
-        l10n.paywallPerkReinforceTitle,
-        l10n.paywallPerkReinforceBody,
-      ),
-      (
-        CinematicGlyph.gift,
-        l10n.paywallPerkBadgeTitle,
-        l10n.paywallPerkBadgeBody,
-      ),
-    ];
-    return GlassCard(
-      padding: AppMetrics.cardPadding,
-      child: Column(
-        children: [
-          for (var i = 0; i < perks.length; i++) ...[
-            if (i > 0) const SizedBox(height: AppSpace.lg),
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                CinematicIcon(
-                  glyph: perks[i].$1,
-                  size: AppMetrics.leadingIcon,
-                  accent: a.chrome,
-                ),
-                const SizedBox(width: AppSpace.md),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        perks[i].$2,
-                        style: AppTypography.title(size: 15, color: a.text),
-                      ),
-                      const SizedBox(height: 2),
-                      Text(
-                        perks[i].$3,
-                        style: AppTypography.body(
-                          size: 13,
-                          color: a.textSecondary,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-          ],
         ],
       ),
     );

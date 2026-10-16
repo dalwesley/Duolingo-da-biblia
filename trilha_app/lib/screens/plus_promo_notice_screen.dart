@@ -12,6 +12,7 @@ import '../utils/plus_offers.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/cloud_mascot.dart';
 import '../widgets/immersive_background.dart';
+import '../widgets/plus_perks.dart';
 import '../widgets/ui_primitives.dart';
 import 'paywall_screen.dart';
 
@@ -50,11 +51,6 @@ class PlusPromoNoticeScreen extends StatelessWidget {
     final trial = annual == null ? null : SubscriptionService.trialDays(annual);
     final perMonth = annual?.storeProduct.pricePerMonthString;
 
-    final locked = [
-      (CinematicGlyph.scroll, l10n.paywallPerkWeeklyTitle),
-      (CinematicGlyph.path, l10n.paywallPerkStreakTitle),
-      (CinematicGlyph.target, l10n.paywallPerkReinforceTitle),
-    ];
     final free = [
       l10n.plusNoticeFreeBible,
       l10n.plusNoticeFreeScenes,
@@ -145,29 +141,13 @@ class PlusPromoNoticeScreen extends StatelessWidget {
                     ),
                   ],
                   const SizedBox(height: AppSpace.xl),
-                  _Block(
-                    title: l10n.plusNoticeFreeHeader,
-                    accent: a.textSecondary,
-                    rows: [
-                      for (final label in free)
-                        _Row(
-                          glyph: CinematicGlyph.check,
-                          label: label,
-                          locked: false,
-                        ),
-                    ],
-                  ),
+                  _FreeBlock(title: l10n.plusNoticeFreeHeader, labels: free),
                   const SizedBox(height: AppSpace.md),
-                  _Block(
-                    title: _ended
+                  PlusPerkCard(
+                    header: _ended
                         ? l10n.plusNoticeLockedHeader
                         : l10n.plusNoticeLockedHeaderSoon(date),
-                    accent: AppRoles.reward,
-                    highlighted: true,
-                    rows: [
-                      for (final (glyph, label) in locked)
-                        _Row(glyph: glyph, label: label, locked: true),
-                    ],
+                    locked: true,
                   ),
                 ],
               ),
@@ -223,32 +203,22 @@ class PlusPromoNoticeScreen extends StatelessWidget {
   }
 }
 
-class _Block extends StatelessWidget {
+/// "Continua grátis, sempre": mesmo formato do [PlusPerkCard], em neutro.
+class _FreeBlock extends StatelessWidget {
   final String title;
-  final Color accent;
-  final bool highlighted;
-  final List<Widget> rows;
+  final List<String> labels;
 
-  const _Block({
-    required this.title,
-    required this.accent,
-    required this.rows,
-    this.highlighted = false,
-  });
+  const _FreeBlock({required this.title, required this.labels});
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     return Container(
-      padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
+      padding: const EdgeInsets.fromLTRB(16, 14, 16, 16),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(AppRadii.md),
-        color: highlighted ? AppMetrics.accentFill(alpha: 0.10) : a.insetFill,
-        border: Border.all(
-          color: highlighted
-              ? AppMetrics.accentBorder(alpha: 0.6)
-              : a.insetBorder,
-        ),
+        color: a.insetFill,
+        border: Border.all(color: a.insetBorder),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -258,53 +228,31 @@ class _Block extends StatelessWidget {
             style: AppTypography.body(
               size: 12,
               weight: FontWeight.w800,
-              color: accent,
+              color: a.textSecondary,
             ),
           ),
           const SizedBox(height: AppSpace.md),
-          for (var i = 0; i < rows.length; i++) ...[
+          for (var i = 0; i < labels.length; i++) ...[
             if (i > 0) const SizedBox(height: 10),
-            rows[i],
+            Row(
+              children: [
+                CinematicIcon(
+                  glyph: CinematicGlyph.check,
+                  size: AppMetrics.iconLg,
+                  accent: a.textSecondary,
+                ),
+                const SizedBox(width: AppSpace.md),
+                Expanded(
+                  child: Text(
+                    labels[i],
+                    style: AppTypography.title(size: 15, color: a.text),
+                  ),
+                ),
+              ],
+            ),
           ],
         ],
       ),
-    );
-  }
-}
-
-class _Row extends StatelessWidget {
-  final CinematicGlyph glyph;
-  final String label;
-  final bool locked;
-
-  const _Row({required this.glyph, required this.label, required this.locked});
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Row(
-      children: [
-        CinematicIcon(
-          glyph: glyph,
-          size: AppMetrics.iconMd,
-          accent: locked ? AppRoles.reward : a.textSecondary,
-          framed: false,
-        ),
-        const SizedBox(width: AppSpace.md),
-        Expanded(
-          child: Text(
-            label,
-            style: AppTypography.title(size: 14, color: a.text),
-          ),
-        ),
-        if (locked)
-          CinematicIcon(
-            glyph: CinematicGlyph.lock,
-            size: AppMetrics.iconMd,
-            accent: a.textFaint,
-            framed: false,
-          ),
-      ],
     );
   }
 }

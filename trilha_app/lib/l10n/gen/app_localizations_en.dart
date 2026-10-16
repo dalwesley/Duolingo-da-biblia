@@ -6271,6 +6271,9 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get plusPerksHeader => 'With Pilgrim+';
+
+  @override
   String get portraitAvatar => 'Avatar';
 
   @override
@@ -6397,10 +6400,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String profileOpenRef(String ref) {
     return 'Open $ref';
   }
-
-  @override
-  String get profilePlusTeaserBody =>
-      'See your streak week by week, your lamp history and where you do best in each mode and gesture.';
 
   @override
   String get profilePlusTeaserTitle => 'Your walk with Pilgrim+';

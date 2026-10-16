@@ -11,9 +11,9 @@ import '../utils/appearance.dart';
 import '../utils/plus_offers.dart';
 import 'act_feel.dart';
 import 'app_sheet.dart';
-import 'cinematic_icon.dart';
 import 'cloud_mascot.dart';
 import 'confetti_overlay.dart';
+import 'plus_perks.dart';
 import 'ui_primitives.dart';
 
 const _prefsShown = 'plusOffersShown';
@@ -117,7 +117,7 @@ class _PlusOfferSheet extends StatelessWidget {
             ),
           ),
           const SizedBox(height: AppSpace.lg),
-          const _PerkList(),
+          const PlusPerkCard(),
           const SizedBox(height: AppSpace.xl),
           CopperCta(
             label: trial != null
@@ -186,54 +186,6 @@ class _SceneMarks extends StatelessWidget {
                 ),
               ),
             ),
-        ],
-      ),
-    );
-  }
-}
-
-/// Os três benefícios do Plus, compactos.
-class _PerkList extends StatelessWidget {
-  const _PerkList();
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final l10n = context.l10n;
-    final perks = [
-      (CinematicGlyph.scroll, l10n.paywallPerkWeeklyTitle),
-      (CinematicGlyph.path, l10n.paywallPerkStreakTitle),
-      (CinematicGlyph.target, l10n.paywallPerkReinforceTitle),
-    ];
-    return Container(
-      padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(AppRadii.md),
-        color: a.insetFill,
-        border: Border.all(color: a.insetBorder),
-      ),
-      child: Column(
-        children: [
-          for (var i = 0; i < perks.length; i++) ...[
-            if (i > 0) const SizedBox(height: 10),
-            Row(
-              children: [
-                CinematicIcon(
-                  glyph: perks[i].$1,
-                  size: AppMetrics.iconMd,
-                  accent: AppRoles.reward,
-                  framed: false,
-                ),
-                const SizedBox(width: AppSpace.md),
-                Expanded(
-                  child: Text(
-                    perks[i].$2,
-                    style: AppTypography.title(size: 14, color: a.text),
-                  ),
-                ),
-              ],
-            ),
-          ],
         ],
       ),
     );

@@ -176,6 +176,22 @@ chip/badge = `AppRadii.sm`; seleção = `AppRadii.pill`.
 | Vazio | `EmptyState` |
 | Nuvem | `CloudMascot` — lugares listados abaixo |
 
+## Peregrino+
+
+Tudo que lista o que o Plus dá usa `PlusPerkCard`
+(`lib/widgets/plus_perks.dart`). Nenhuma tela monta lista própria.
+
+- Os benefícios vêm de `PlusPerk`: revisão da semana (`scroll`), sua
+  constância (`path`), reforço do ponto fraco (`target`) e selo de
+  apoiador (`gift`). Mesmo ícone, título e frase em todo lugar.
+- Identidade: fundo `accentFill(0.10)`, borda `accentBorder(0.6)`, rótulo
+  dourado (`AppRoles.reward`) em caixa alta e ícone emoldurado em dourado.
+- Variações: `detailed` (com a frase, no paywall), compacto (só títulos,
+  na oferta e no Perfil), `locked` (cadeado, no aviso de fim da
+  promoção), `boxed: false` (dentro de outro cartão).
+- Para dizer o que continua grátis, use o mesmo formato em neutro (texto
+  secundário), nunca em dourado.
+
 ## Botões
 
 - Principal: `CopperCta`. Secundário: `GhostCta`. Terciário: `TextCta`.
