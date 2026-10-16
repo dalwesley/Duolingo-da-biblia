@@ -11,6 +11,7 @@ import '../utils/layout_utils.dart';
 import '../utils/plus_offers.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/cloud_mascot.dart';
+import '../widgets/home_brand_backdrop.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/plus_perks.dart';
 import '../widgets/ui_primitives.dart';
@@ -62,6 +63,14 @@ class PlusPromoNoticeScreen extends StatelessWidget {
       mode: mode,
       style: a,
       frameBody: false,
+      // A trilha STWAY do tema escolhido, como no fundo das abas.
+      background: Stack(
+        fit: StackFit.expand,
+        children: [
+          AmbientAtmosphere(phase: a.phase),
+          HomeBrandBackdrop(style: a),
+        ],
+      ),
       body: Column(
         children: [
           Expanded(
