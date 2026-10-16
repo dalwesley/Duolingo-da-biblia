@@ -8097,6 +8097,114 @@ abstract class AppLocalizations {
   /// **'passiva deponente'**
   String get morphVoicePassiveDeponent;
 
+  /// No description provided for @myWalkAccuracyLine.
+  ///
+  /// In pt, this message translates to:
+  /// **'{percent}% · {correct} de {total}'**
+  String myWalkAccuracyLine(int percent, int correct, int total);
+
+  /// No description provided for @myWalkDaysLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{dia caminhado} other{dias caminhados}}'**
+  String myWalkDaysLabel(int count);
+
+  /// No description provided for @myWalkEntryCaption.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu ano e o acerto por modo e por gesto'**
+  String get myWalkEntryCaption;
+
+  /// No description provided for @myWalkGesturesEmpty.
+  ///
+  /// In pt, this message translates to:
+  /// **'Responda algumas cenas para ver seu acerto em cada gesto.'**
+  String get myWalkGesturesEmpty;
+
+  /// No description provided for @myWalkGesturesFew.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{Com 1 resposta em pelo menos dois gestos, aparecem o ponto forte e o que reforçar.} other{Com {count} respostas em pelo menos dois gestos, aparecem o ponto forte e o que reforçar.}}'**
+  String myWalkGesturesFew(int count);
+
+  /// No description provided for @myWalkGesturesHeader.
+  ///
+  /// In pt, this message translates to:
+  /// **'Acerto por gesto'**
+  String get myWalkGesturesHeader;
+
+  /// No description provided for @myWalkModesBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Respostas certas de primeira em cada modo.'**
+  String get myWalkModesBody;
+
+  /// No description provided for @myWalkModesHeader.
+  ///
+  /// In pt, this message translates to:
+  /// **'Acerto por modo'**
+  String get myWalkModesHeader;
+
+  /// No description provided for @myWalkMonthsSemantics.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 cena nova este ano, por mês} other{{count} cenas novas este ano, por mês}}'**
+  String myWalkMonthsSemantics(int count);
+
+  /// No description provided for @myWalkNoAnswersYet.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sem respostas ainda'**
+  String get myWalkNoAnswersYet;
+
+  /// No description provided for @myWalkPlusBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'No Peregrino+, você vê onde acerta mais, o que pede reforço e como vai em cada modo.'**
+  String get myWalkPlusBody;
+
+  /// No description provided for @myWalkPlusTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Acerto por modo e por gesto'**
+  String get myWalkPlusTitle;
+
+  /// No description provided for @myWalkScenesLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{cena nova} other{cenas novas}}'**
+  String myWalkScenesLabel(int count);
+
+  /// No description provided for @myWalkStrongest.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ponto forte'**
+  String get myWalkStrongest;
+
+  /// No description provided for @myWalkTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Minha caminhada'**
+  String get myWalkTitle;
+
+  /// No description provided for @myWalkToStrengthen.
+  ///
+  /// In pt, this message translates to:
+  /// **'A reforçar'**
+  String get myWalkToStrengthen;
+
+  /// No description provided for @myWalkYearEmpty.
+  ///
+  /// In pt, this message translates to:
+  /// **'As cenas que você fizer aparecem aqui, mês a mês.'**
+  String get myWalkYearEmpty;
+
+  /// No description provided for @myWalkYearHeader.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu {year}'**
+  String myWalkYearHeader(int year);
+
   /// No description provided for @navBible.
   ///
   /// In pt, this message translates to:
@@ -8772,7 +8880,7 @@ abstract class AppLocalizations {
   /// No description provided for @paywallPerkJourney.
   ///
   /// In pt, this message translates to:
-  /// **'Minha caminhada: calendário, trilhas e acerto por modo'**
+  /// **'Minha caminhada: seu ano e o acerto por modo e por gesto'**
   String get paywallPerkJourney;
 
   /// No description provided for @paywallPerkWeeklyReview.

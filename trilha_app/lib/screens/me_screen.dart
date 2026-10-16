@@ -25,6 +25,7 @@ import '../widgets/relic_panel.dart';
 import '../widgets/recognition_history_sheet.dart';
 import '../widgets/ui_primitives.dart';
 import 'bible_screen.dart';
+import 'my_walk_screen.dart';
 import 'settings_screen.dart';
 
 /// Abre o perfil completo do usuário (avatar na home ou card na caravana).
@@ -208,6 +209,8 @@ class _MeScreenState extends State<MeScreen> {
           goal: progress.settings.streakGoal,
         ),
       ),
+      const SizedBox(height: AppSpace.md),
+      pad(const _MyWalkEntry()),
       if (progress.hasOpenWeeklyQuests) ...[
         const SizedBox(height: AppSpace.md),
         pad(const WeeklyQuestsCard()),
@@ -306,6 +309,52 @@ class _MeScreenState extends State<MeScreen> {
               children: body,
             ),
           ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Entrada de Minha caminhada, logo abaixo da constância.
+class _MyWalkEntry extends StatelessWidget {
+  const _MyWalkEntry();
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final l10n = context.l10n;
+    return GlassCard(
+      padding: AppMetrics.cardPaddingCompact,
+      onTap: () => Navigator.of(
+        context,
+      ).push(MaterialPageRoute(builder: (_) => const MyWalkScreen())),
+      child: Row(
+        children: [
+          CinematicIcon(
+            glyph: CinematicGlyph.path,
+            size: AppMetrics.leadingIcon,
+            accent: a.chrome,
+          ),
+          const SizedBox(width: AppSpace.md),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  l10n.myWalkTitle,
+                  style: AppTypography.title(size: 14, color: a.text),
+                ),
+                Text(
+                  l10n.myWalkEntryCaption,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTypography.body(size: 12, color: a.textSecondary),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(width: AppSpace.sm),
+          ListChevron(color: a.textSecondary),
         ],
       ),
     );

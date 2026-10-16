@@ -5174,6 +5174,101 @@ class AppLocalizationsEn extends AppLocalizations {
   String get morphVoicePassiveDeponent => 'passive deponent';
 
   @override
+  String myWalkAccuracyLine(int percent, int correct, int total) {
+    return '$percent% · $correct of $total';
+  }
+
+  @override
+  String myWalkDaysLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'days walked',
+      one: 'day walked',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get myWalkEntryCaption => 'Your year and accuracy by mode and gesture';
+
+  @override
+  String get myWalkGesturesEmpty =>
+      'Answer a few scenes to see your accuracy in each gesture.';
+
+  @override
+  String myWalkGesturesFew(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'With $count answers in at least two gestures, your strong point and what to strengthen show up.',
+      one:
+          'With 1 answer in at least two gestures, your strong point and what to strengthen show up.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get myWalkGesturesHeader => 'Accuracy by gesture';
+
+  @override
+  String get myWalkModesBody => 'Answers right on the first try in each mode.';
+
+  @override
+  String get myWalkModesHeader => 'Accuracy by mode';
+
+  @override
+  String myWalkMonthsSemantics(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count new scenes this year, by month',
+      one: '1 new scene this year, by month',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get myWalkNoAnswersYet => 'No answers yet';
+
+  @override
+  String get myWalkPlusBody =>
+      'With Pilgrim+, you see where you do best, what needs strengthening and how you\'re doing in each mode.';
+
+  @override
+  String get myWalkPlusTitle => 'Accuracy by mode and gesture';
+
+  @override
+  String myWalkScenesLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'new scenes',
+      one: 'new scene',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get myWalkStrongest => 'Strong point';
+
+  @override
+  String get myWalkTitle => 'My walk';
+
+  @override
+  String get myWalkToStrengthen => 'To strengthen';
+
+  @override
+  String get myWalkYearEmpty =>
+      'The scenes you do show up here, month by month.';
+
+  @override
+  String myWalkYearHeader(int year) {
+    return 'Your $year';
+  }
+
+  @override
   String get navBible => 'Bible';
 
   @override
@@ -5639,7 +5734,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get paywallPerkJourney =>
-      'My walk: calendar, trails and accuracy by mode';
+      'My walk: your year and accuracy by mode and gesture';
 
   @override
   String get paywallPerkWeeklyReview =>

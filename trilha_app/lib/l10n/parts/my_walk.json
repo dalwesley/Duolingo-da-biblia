@@ -1,0 +1,112 @@
+{
+  "myWalkTitle": {
+    "pt": "Minha caminhada",
+    "en": "My walk",
+    "es": "Mi camino"
+  },
+  "myWalkEntryCaption": {
+    "pt": "Seu ano e o acerto por modo e por gesto",
+    "en": "Your year and accuracy by mode and gesture",
+    "es": "Tu año y los aciertos por modo y por gesto"
+  },
+  "myWalkYearHeader": {
+    "pt": "Seu {year}",
+    "en": "Your {year}",
+    "es": "Tu {year}",
+    "placeholders": {
+      "year": "int"
+    }
+  },
+  "myWalkDaysLabel": {
+    "pt": "{count, plural, =1{dia caminhado} other{dias caminhados}}",
+    "en": "{count, plural, =1{day walked} other{days walked}}",
+    "es": "{count, plural, =1{día caminado} other{días caminados}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "myWalkScenesLabel": {
+    "pt": "{count, plural, =1{cena nova} other{cenas novas}}",
+    "en": "{count, plural, =1{new scene} other{new scenes}}",
+    "es": "{count, plural, =1{escena nueva} other{escenas nuevas}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "myWalkYearEmpty": {
+    "pt": "As cenas que você fizer aparecem aqui, mês a mês.",
+    "en": "The scenes you do show up here, month by month.",
+    "es": "Las escenas que hagas aparecen aquí, mes a mes."
+  },
+  "myWalkMonthsSemantics": {
+    "pt": "{count, plural, =1{1 cena nova este ano, por mês} other{{count} cenas novas este ano, por mês}}",
+    "en": "{count, plural, =1{1 new scene this year, by month} other{{count} new scenes this year, by month}}",
+    "es": "{count, plural, =1{1 escena nueva este año, por mes} other{{count} escenas nuevas este año, por mes}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "myWalkModesHeader": {
+    "pt": "Acerto por modo",
+    "en": "Accuracy by mode",
+    "es": "Aciertos por modo"
+  },
+  "myWalkModesBody": {
+    "pt": "Respostas certas de primeira em cada modo.",
+    "en": "Answers right on the first try in each mode.",
+    "es": "Respuestas correctas al primer intento en cada modo."
+  },
+  "myWalkNoAnswersYet": {
+    "pt": "Sem respostas ainda",
+    "en": "No answers yet",
+    "es": "Sin respuestas aún"
+  },
+  "myWalkAccuracyLine": {
+    "pt": "{percent}% · {correct} de {total}",
+    "en": "{percent}% · {correct} of {total}",
+    "es": "{percent}% · {correct} de {total}",
+    "placeholders": {
+      "percent": "int",
+      "correct": "int",
+      "total": "int"
+    }
+  },
+  "myWalkGesturesHeader": {
+    "pt": "Acerto por gesto",
+    "en": "Accuracy by gesture",
+    "es": "Aciertos por gesto"
+  },
+  "myWalkGesturesEmpty": {
+    "pt": "Responda algumas cenas para ver seu acerto em cada gesto.",
+    "en": "Answer a few scenes to see your accuracy in each gesture.",
+    "es": "Responde algunas escenas para ver tus aciertos en cada gesto."
+  },
+  "myWalkStrongest": {
+    "pt": "Ponto forte",
+    "en": "Strong point",
+    "es": "Punto fuerte"
+  },
+  "myWalkToStrengthen": {
+    "pt": "A reforçar",
+    "en": "To strengthen",
+    "es": "Para reforzar"
+  },
+  "myWalkGesturesFew": {
+    "pt": "{count, plural, =1{Com 1 resposta em pelo menos dois gestos, aparecem o ponto forte e o que reforçar.} other{Com {count} respostas em pelo menos dois gestos, aparecem o ponto forte e o que reforçar.}}",
+    "en": "{count, plural, =1{With 1 answer in at least two gestures, your strong point and what to strengthen show up.} other{With {count} answers in at least two gestures, your strong point and what to strengthen show up.}}",
+    "es": "{count, plural, =1{Con 1 respuesta en al menos dos gestos, aparecen tu punto fuerte y lo que reforzar.} other{Con {count} respuestas en al menos dos gestos, aparecen tu punto fuerte y lo que reforzar.}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "myWalkPlusTitle": {
+    "pt": "Acerto por modo e por gesto",
+    "en": "Accuracy by mode and gesture",
+    "es": "Aciertos por modo y por gesto"
+  },
+  "myWalkPlusBody": {
+    "pt": "No Peregrino+, você vê onde acerta mais, o que pede reforço e como vai em cada modo.",
+    "en": "With Pilgrim+, you see where you do best, what needs strengthening and how you're doing in each mode.",
+    "es": "Con Peregrino+, ves dónde aciertas más, qué necesita refuerzo y cómo vas en cada modo."
+  }
+}

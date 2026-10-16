@@ -5206,6 +5206,101 @@ class AppLocalizationsPt extends AppLocalizations {
   String get morphVoicePassiveDeponent => 'passiva deponente';
 
   @override
+  String myWalkAccuracyLine(int percent, int correct, int total) {
+    return '$percent% · $correct de $total';
+  }
+
+  @override
+  String myWalkDaysLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'dias caminhados',
+      one: 'dia caminhado',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get myWalkEntryCaption => 'Seu ano e o acerto por modo e por gesto';
+
+  @override
+  String get myWalkGesturesEmpty =>
+      'Responda algumas cenas para ver seu acerto em cada gesto.';
+
+  @override
+  String myWalkGesturesFew(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Com $count respostas em pelo menos dois gestos, aparecem o ponto forte e o que reforçar.',
+      one:
+          'Com 1 resposta em pelo menos dois gestos, aparecem o ponto forte e o que reforçar.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get myWalkGesturesHeader => 'Acerto por gesto';
+
+  @override
+  String get myWalkModesBody => 'Respostas certas de primeira em cada modo.';
+
+  @override
+  String get myWalkModesHeader => 'Acerto por modo';
+
+  @override
+  String myWalkMonthsSemantics(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count cenas novas este ano, por mês',
+      one: '1 cena nova este ano, por mês',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get myWalkNoAnswersYet => 'Sem respostas ainda';
+
+  @override
+  String get myWalkPlusBody =>
+      'No Peregrino+, você vê onde acerta mais, o que pede reforço e como vai em cada modo.';
+
+  @override
+  String get myWalkPlusTitle => 'Acerto por modo e por gesto';
+
+  @override
+  String myWalkScenesLabel(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'cenas novas',
+      one: 'cena nova',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get myWalkStrongest => 'Ponto forte';
+
+  @override
+  String get myWalkTitle => 'Minha caminhada';
+
+  @override
+  String get myWalkToStrengthen => 'A reforçar';
+
+  @override
+  String get myWalkYearEmpty =>
+      'As cenas que você fizer aparecem aqui, mês a mês.';
+
+  @override
+  String myWalkYearHeader(int year) {
+    return 'Seu $year';
+  }
+
+  @override
   String get navBible => 'Bíblia';
 
   @override
@@ -5667,7 +5762,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get paywallPerkJourney =>
-      'Minha caminhada: calendário, trilhas e acerto por modo';
+      'Minha caminhada: seu ano e o acerto por modo e por gesto';
 
   @override
   String get paywallPerkWeeklyReview =>
