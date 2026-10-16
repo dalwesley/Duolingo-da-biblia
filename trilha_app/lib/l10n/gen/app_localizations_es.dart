@@ -2617,6 +2617,17 @@ class AppLocalizationsEs extends AppLocalizations {
   String get homeTrailDoneTitle => 'Ruta completada';
 
   @override
+  String homeWeeklyReviewCaption(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count escenas para repasar',
+      one: '1 escena para repasar',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get homeWordInScene => 'En esta escena';
 
   @override
@@ -5376,6 +5387,13 @@ class AppLocalizationsEs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get notifWeeklyReviewBody =>
+      'Repasa el “Hoy:” de las escenas que hiciste.';
+
+  @override
+  String get notifWeeklyReviewTitle => 'Tu repaso de la semana está listo';
 
   @override
   String get notifWeeklyStepsBody => 'Aún da tiempo de cerrar la semana.';
@@ -8176,6 +8194,85 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get waveCta => 'Saludar';
+
+  @override
+  String get weeklyReviewDoneBody =>
+      'Repaso hecho. La próxima semana hay otro.';
+
+  @override
+  String weeklyReviewEmptyBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other:
+          'Haz al menos $count escenas nuevas en la semana para tener el repaso.',
+      one: 'Haz al menos 1 escena nueva en la semana para tener el repaso.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyReviewEmptyTitle => 'Todavía no hay repaso';
+
+  @override
+  String weeklyReviewHeadline(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count escenas esta semana',
+      one: '1 escena esta semana',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyReviewInsightsHeader => 'El “Hoy:” de cada escena';
+
+  @override
+  String get weeklyReviewIntro =>
+      'Relee el “Hoy:” de cada escena y responde 3 preguntas sobre ellas.';
+
+  @override
+  String get weeklyReviewMissionIntro =>
+      'Tres preguntas de las escenas de esta semana.';
+
+  @override
+  String get weeklyReviewMissionTitle => 'Repaso de la semana';
+
+  @override
+  String get weeklyReviewNoQuestions =>
+      'No encontré las preguntas de estas escenas en el dispositivo. Inténtalo de nuevo con internet.';
+
+  @override
+  String get weeklyReviewPlusBody =>
+      'Con Peregrino+, el repaso trae el “Hoy:” de cada escena y 3 preguntas sobre ellas.';
+
+  @override
+  String get weeklyReviewPreparing => 'Preparando…';
+
+  @override
+  String weeklyReviewRange(String start, String end) {
+    return '$start – $end';
+  }
+
+  @override
+  String weeklyReviewSceneLine(String trail, String scene) {
+    return '$trail · $scene';
+  }
+
+  @override
+  String get weeklyReviewSeePlus => 'Conocer Peregrino+';
+
+  @override
+  String get weeklyReviewStart => 'Responder 3 preguntas';
+
+  @override
+  String get weeklyReviewTitle => 'Repaso de la semana';
+
+  @override
+  String weeklyReviewTodayInsight(String insight) {
+    return 'Hoy: $insight';
+  }
 
   @override
   String get widgetBehindCaravan =>

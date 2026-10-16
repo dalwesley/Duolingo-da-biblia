@@ -19,7 +19,15 @@ Future<void> firebaseMessagingBackgroundHandler(RemoteMessage message) async {
 }
 
 /// Ação ao tocar na notificação (deep link leve).
-enum ReminderAction { home, practice, memory, favorites, weekly, league }
+enum ReminderAction {
+  home,
+  practice,
+  memory,
+  favorites,
+  weekly,
+  league,
+  weeklyReview,
+}
 
 extension ReminderActionX on ReminderAction {
   String get payload => name;
@@ -86,6 +94,7 @@ class NotificationService {
   static const _idLost2 = 106;
   static const _idRemote = 107;
   static const _idTrialEnding = 108;
+  static const _idWeeklyReview = 109;
   static const _legacyDaily = 1;
 
   static const _allIds = [
@@ -97,6 +106,7 @@ class NotificationService {
     _idSoft,
     _idLost1,
     _idLost2,
+    _idWeeklyReview,
   ];
 
   Future<void> init({bool requestPermission = false}) async {
@@ -161,7 +171,11 @@ class NotificationService {
       final messaging = FirebaseMessaging.instance;
       if (requestPermission && !_remotePermissionAsked) {
         _remotePermissionAsked = true;
-        await messaging.requestPermission(alert: true, badge: true, sound: true);
+        await messaging.requestPermission(
+          alert: true,
+          badge: true,
+          sound: true,
+        );
         final token = await messaging.getToken();
         if (token != null) {
           remoteToken = token;
@@ -322,7 +336,29 @@ class NotificationService {
       );
     }
 
+    await _scheduleWeeklyReview(progress);
     await _scheduleLostLearner(progress);
+  }
+
+  /// Domingo 18h: revisão da semana pronta (cenas suficientes, ainda não feita).
+  Future<void> _scheduleWeeklyReview(ProgressService progress) async {
+    final when = _nextWeekday(DateTime.sunday, 18, 0);
+    final week = progress.weeklyReviewWeekKey(when);
+    if (progress.isWeeklyReviewDone(week)) return;
+    if (progress.missionsCompletedInWeek(week).length <
+        ProgressService.weeklyReviewMinScenes) {
+      return;
+    }
+    await _schedule(
+      id: _idWeeklyReview,
+      when: when,
+      copy: _ReminderCopy(
+        title: L10n.current.notifWeeklyReviewTitle,
+        body: L10n.current.notifWeeklyReviewBody,
+        action: ReminderAction.weeklyReview,
+        priority: 4,
+      ),
+    );
   }
 
   /// D+1 / D+2 — copy de ausência mesmo sem reabrir o app.

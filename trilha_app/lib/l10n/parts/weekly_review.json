@@ -1,0 +1,122 @@
+{
+  "weeklyReviewTitle": {
+    "pt": "Revisão da semana",
+    "en": "Weekly review",
+    "es": "Repaso de la semana"
+  },
+  "weeklyReviewRange": {
+    "pt": "{start} – {end}",
+    "en": "{start} – {end}",
+    "es": "{start} – {end}",
+    "placeholders": {
+      "start": "String",
+      "end": "String"
+    }
+  },
+  "weeklyReviewHeadline": {
+    "pt": "{count, plural, =1{1 cena nesta semana} other{{count} cenas nesta semana}}",
+    "en": "{count, plural, =1{1 scene this week} other{{count} scenes this week}}",
+    "es": "{count, plural, =1{1 escena esta semana} other{{count} escenas esta semana}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "weeklyReviewEmptyTitle": {
+    "pt": "Ainda não há revisão",
+    "en": "No review yet",
+    "es": "Todavía no hay repaso"
+  },
+  "weeklyReviewEmptyBody": {
+    "pt": "{count, plural, =1{Faça pelo menos 1 cena nova na semana para ter a revisão.} other{Faça pelo menos {count} cenas novas na semana para ter a revisão.}}",
+    "en": "{count, plural, =1{Do at least 1 new scene in the week to get the review.} other{Do at least {count} new scenes in the week to get the review.}}",
+    "es": "{count, plural, =1{Haz al menos 1 escena nueva en la semana para tener el repaso.} other{Haz al menos {count} escenas nuevas en la semana para tener el repaso.}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "weeklyReviewDoneBody": {
+    "pt": "Revisão feita. Na próxima semana tem outra.",
+    "en": "Review done. There's another one next week.",
+    "es": "Repaso hecho. La próxima semana hay otro."
+  },
+  "weeklyReviewIntro": {
+    "pt": "Releia o “Hoje:” de cada cena e responda 3 perguntas sobre elas.",
+    "en": "Reread each scene's “Today:” and answer 3 questions about them.",
+    "es": "Relee el “Hoy:” de cada escena y responde 3 preguntas sobre ellas."
+  },
+  "weeklyReviewPlusBody": {
+    "pt": "No Peregrino+, a revisão traz o “Hoje:” de cada cena e 3 perguntas sobre elas.",
+    "en": "With Pilgrim+, the review brings each scene's “Today:” and 3 questions about them.",
+    "es": "Con Peregrino+, el repaso trae el “Hoy:” de cada escena y 3 preguntas sobre ellas."
+  },
+  "weeklyReviewInsightsHeader": {
+    "pt": "O “Hoje:” de cada cena",
+    "en": "Each scene's “Today:”",
+    "es": "El “Hoy:” de cada escena"
+  },
+  "weeklyReviewSeePlus": {
+    "pt": "Conhecer o Peregrino+",
+    "en": "See Pilgrim+",
+    "es": "Conocer Peregrino+"
+  },
+  "weeklyReviewPreparing": {
+    "pt": "Preparando…",
+    "en": "Preparing…",
+    "es": "Preparando…"
+  },
+  "weeklyReviewStart": {
+    "pt": "Responder 3 perguntas",
+    "en": "Answer 3 questions",
+    "es": "Responder 3 preguntas"
+  },
+  "weeklyReviewNoQuestions": {
+    "pt": "Não achei as perguntas destas cenas no aparelho. Tente de novo com internet.",
+    "en": "Couldn't find these scenes' questions on the device. Try again online.",
+    "es": "No encontré las preguntas de estas escenas en el dispositivo. Inténtalo de nuevo con internet."
+  },
+  "weeklyReviewMissionTitle": {
+    "pt": "Revisão da semana",
+    "en": "Weekly review",
+    "es": "Repaso de la semana"
+  },
+  "weeklyReviewMissionIntro": {
+    "pt": "Três perguntas das cenas desta semana.",
+    "en": "Three questions from this week's scenes.",
+    "es": "Tres preguntas de las escenas de esta semana."
+  },
+  "weeklyReviewSceneLine": {
+    "pt": "{trail} · {scene}",
+    "en": "{trail} · {scene}",
+    "es": "{trail} · {scene}",
+    "placeholders": {
+      "trail": "String",
+      "scene": "String"
+    }
+  },
+  "weeklyReviewTodayInsight": {
+    "pt": "Hoje: {insight}",
+    "en": "Today: {insight}",
+    "es": "Hoy: {insight}",
+    "placeholders": {
+      "insight": "String"
+    }
+  },
+  "homeWeeklyReviewCaption": {
+    "pt": "{count, plural, =1{1 cena para rever} other{{count} cenas para rever}}",
+    "en": "{count, plural, =1{1 scene to look back on} other{{count} scenes to look back on}}",
+    "es": "{count, plural, =1{1 escena para repasar} other{{count} escenas para repasar}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "notifWeeklyReviewTitle": {
+    "pt": "Sua revisão da semana está pronta",
+    "en": "Your weekly review is ready",
+    "es": "Tu repaso de la semana está listo"
+  },
+  "notifWeeklyReviewBody": {
+    "pt": "Reveja o “Hoje:” das cenas que você fez.",
+    "en": "Look back at the “Today:” of the scenes you did.",
+    "es": "Repasa el “Hoy:” de las escenas que hiciste."
+  }
+}

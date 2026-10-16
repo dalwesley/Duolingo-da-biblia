@@ -4078,6 +4078,12 @@ abstract class AppLocalizations {
   /// **'Trilha concluída'**
   String get homeTrailDoneTitle;
 
+  /// No description provided for @homeWeeklyReviewCaption.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 cena para rever} other{{count} cenas para rever}}'**
+  String homeWeeklyReviewCaption(int count);
+
   /// No description provided for @homeWordInScene.
   ///
   /// In pt, this message translates to:
@@ -8264,6 +8270,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'{count, plural, =1{Falta 1 passo semanal. Feche o ciclo com calma.} other{Ainda faltam {count} passos semanais. A semana ainda é sua.}}'**
   String notifWeeklyLeftBody(int count);
+
+  /// No description provided for @notifWeeklyReviewBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Reveja o “Hoje:” das cenas que você fez.'**
+  String get notifWeeklyReviewBody;
+
+  /// No description provided for @notifWeeklyReviewTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sua revisão da semana está pronta'**
+  String get notifWeeklyReviewTitle;
 
   /// No description provided for @notifWeeklyStepsBody.
   ///
@@ -12662,6 +12680,108 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Acenar'**
   String get waveCta;
+
+  /// No description provided for @weeklyReviewDoneBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Revisão feita. Na próxima semana tem outra.'**
+  String get weeklyReviewDoneBody;
+
+  /// No description provided for @weeklyReviewEmptyBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{Faça pelo menos 1 cena nova na semana para ter a revisão.} other{Faça pelo menos {count} cenas novas na semana para ter a revisão.}}'**
+  String weeklyReviewEmptyBody(int count);
+
+  /// No description provided for @weeklyReviewEmptyTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ainda não há revisão'**
+  String get weeklyReviewEmptyTitle;
+
+  /// No description provided for @weeklyReviewHeadline.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 cena nesta semana} other{{count} cenas nesta semana}}'**
+  String weeklyReviewHeadline(int count);
+
+  /// No description provided for @weeklyReviewInsightsHeader.
+  ///
+  /// In pt, this message translates to:
+  /// **'O “Hoje:” de cada cena'**
+  String get weeklyReviewInsightsHeader;
+
+  /// No description provided for @weeklyReviewIntro.
+  ///
+  /// In pt, this message translates to:
+  /// **'Releia o “Hoje:” de cada cena e responda 3 perguntas sobre elas.'**
+  String get weeklyReviewIntro;
+
+  /// No description provided for @weeklyReviewMissionIntro.
+  ///
+  /// In pt, this message translates to:
+  /// **'Três perguntas das cenas desta semana.'**
+  String get weeklyReviewMissionIntro;
+
+  /// No description provided for @weeklyReviewMissionTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Revisão da semana'**
+  String get weeklyReviewMissionTitle;
+
+  /// No description provided for @weeklyReviewNoQuestions.
+  ///
+  /// In pt, this message translates to:
+  /// **'Não achei as perguntas destas cenas no aparelho. Tente de novo com internet.'**
+  String get weeklyReviewNoQuestions;
+
+  /// No description provided for @weeklyReviewPlusBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'No Peregrino+, a revisão traz o “Hoje:” de cada cena e 3 perguntas sobre elas.'**
+  String get weeklyReviewPlusBody;
+
+  /// No description provided for @weeklyReviewPreparing.
+  ///
+  /// In pt, this message translates to:
+  /// **'Preparando…'**
+  String get weeklyReviewPreparing;
+
+  /// No description provided for @weeklyReviewRange.
+  ///
+  /// In pt, this message translates to:
+  /// **'{start} – {end}'**
+  String weeklyReviewRange(String start, String end);
+
+  /// No description provided for @weeklyReviewSceneLine.
+  ///
+  /// In pt, this message translates to:
+  /// **'{trail} · {scene}'**
+  String weeklyReviewSceneLine(String trail, String scene);
+
+  /// No description provided for @weeklyReviewSeePlus.
+  ///
+  /// In pt, this message translates to:
+  /// **'Conhecer o Peregrino+'**
+  String get weeklyReviewSeePlus;
+
+  /// No description provided for @weeklyReviewStart.
+  ///
+  /// In pt, this message translates to:
+  /// **'Responder 3 perguntas'**
+  String get weeklyReviewStart;
+
+  /// No description provided for @weeklyReviewTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Revisão da semana'**
+  String get weeklyReviewTitle;
+
+  /// No description provided for @weeklyReviewTodayInsight.
+  ///
+  /// In pt, this message translates to:
+  /// **'Hoje: {insight}'**
+  String weeklyReviewTodayInsight(String insight);
 
   /// No description provided for @widgetBehindCaravan.
   ///

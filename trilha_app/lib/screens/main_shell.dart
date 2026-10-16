@@ -40,6 +40,7 @@ import 'league_screen.dart';
 import 'me_screen.dart';
 import 'memory_screen.dart';
 import 'practice_screen.dart';
+import 'weekly_review_screen.dart';
 import 'settings_screen.dart';
 import 'trilhas_screen.dart';
 import 'trail_map_screen.dart';
@@ -433,6 +434,13 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       case ReminderAction.favorites:
       case ReminderAction.weekly:
         _openProfile();
+      case ReminderAction.weeklyReview:
+        setState(() {
+          _index = 0;
+        });
+        Navigator.of(
+          context,
+        ).push(MaterialPageRoute(builder: (_) => const WeeklyReviewScreen()));
     }
   }
 

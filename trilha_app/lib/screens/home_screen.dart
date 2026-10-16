@@ -43,6 +43,7 @@ import '../widgets/wave_hands_overlay.dart';
 import 'bible_screen.dart';
 import 'memory_screen.dart';
 import 'practice_screen.dart';
+import 'weekly_review_screen.dart';
 import 'season_walk_screen.dart';
 
 /// Home — um único trabalho: a próxima cena.
@@ -401,7 +402,23 @@ class _HomeScreenState extends State<HomeScreen>
     final a = Appearance.of(context);
     final juntos = JuntosInbox.pending(context);
     final mistakes = progress.mistakeQuestionIds.length;
+    final reviewScenes = progress.weeklyReviewReady
+        ? progress
+              .missionsCompletedInWeek(progress.weeklyReviewWeekKey())
+              .length
+        : 0;
     return [
+      if (reviewScenes > 0)
+        _MoreTile(
+          glyph: CinematicGlyph.scroll,
+          title: l10n.weeklyReviewTitle,
+          caption: l10n.homeWeeklyReviewCaption(reviewScenes),
+          color: a.chrome,
+          hot: DateTime.now().weekday == DateTime.sunday,
+          onTap: () => Navigator.of(
+            context,
+          ).push(MaterialPageRoute(builder: (_) => const WeeklyReviewScreen())),
+        ),
       if (progress.dailyChestAvailable)
         _MoreTile(
           glyph: CinematicGlyph.gem,

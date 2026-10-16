@@ -2608,6 +2608,17 @@ class AppLocalizationsEn extends AppLocalizations {
   String get homeTrailDoneTitle => 'Trail complete';
 
   @override
+  String homeWeeklyReviewCaption(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count scenes to look back on',
+      one: '1 scene to look back on',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get homeWordInScene => 'In this scene';
 
   @override
@@ -5326,6 +5337,13 @@ class AppLocalizationsEn extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get notifWeeklyReviewBody =>
+      'Look back at the “Today:” of the scenes you did.';
+
+  @override
+  String get notifWeeklyReviewTitle => 'Your weekly review is ready';
 
   @override
   String get notifWeeklyStepsBody => 'There\'s still time to finish the week.';
@@ -8124,6 +8142,84 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get waveCta => 'Wave';
+
+  @override
+  String get weeklyReviewDoneBody =>
+      'Review done. There\'s another one next week.';
+
+  @override
+  String weeklyReviewEmptyBody(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Do at least $count new scenes in the week to get the review.',
+      one: 'Do at least 1 new scene in the week to get the review.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyReviewEmptyTitle => 'No review yet';
+
+  @override
+  String weeklyReviewHeadline(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count scenes this week',
+      one: '1 scene this week',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get weeklyReviewInsightsHeader => 'Each scene\'s “Today:”';
+
+  @override
+  String get weeklyReviewIntro =>
+      'Reread each scene\'s “Today:” and answer 3 questions about them.';
+
+  @override
+  String get weeklyReviewMissionIntro =>
+      'Three questions from this week\'s scenes.';
+
+  @override
+  String get weeklyReviewMissionTitle => 'Weekly review';
+
+  @override
+  String get weeklyReviewNoQuestions =>
+      'Couldn\'t find these scenes\' questions on the device. Try again online.';
+
+  @override
+  String get weeklyReviewPlusBody =>
+      'With Pilgrim+, the review brings each scene\'s “Today:” and 3 questions about them.';
+
+  @override
+  String get weeklyReviewPreparing => 'Preparing…';
+
+  @override
+  String weeklyReviewRange(String start, String end) {
+    return '$start – $end';
+  }
+
+  @override
+  String weeklyReviewSceneLine(String trail, String scene) {
+    return '$trail · $scene';
+  }
+
+  @override
+  String get weeklyReviewSeePlus => 'See Pilgrim+';
+
+  @override
+  String get weeklyReviewStart => 'Answer 3 questions';
+
+  @override
+  String get weeklyReviewTitle => 'Weekly review';
+
+  @override
+  String weeklyReviewTodayInsight(String insight) {
+    return 'Today: $insight';
+  }
 
   @override
   String get widgetBehindCaravan => 'Falling behind the caravan — walk today';

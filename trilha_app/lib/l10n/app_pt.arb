@@ -1844,6 +1844,14 @@
   },
   "homeTrailDoneBody": "Escolha a próxima e continue aprendendo.",
   "homeTrailDoneTitle": "Trilha concluída",
+  "homeWeeklyReviewCaption": "{count, plural, =1{1 cena para rever} other{{count} cenas para rever}}",
+  "@homeWeeklyReviewCaption": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "homeWordInScene": "Nesta cena",
   "homeWordRead": "Ler {reference}",
   "@homeWordRead": {
@@ -3792,6 +3800,8 @@
       }
     }
   },
+  "notifWeeklyReviewBody": "Reveja o “Hoje:” das cenas que você fez.",
+  "notifWeeklyReviewTitle": "Sua revisão da semana está pronta",
   "notifWeeklyStepsBody": "Ainda dá tempo de fechar a semana.",
   "notifWeeklyStepsTitle": "Passos da semana",
   "nudgeAlreadySubtitle": "Você já acenou hoje. Mande também no WhatsApp, se quiser.",
@@ -5676,6 +5686,64 @@
   "verseStudyThisForm": "Nesta forma",
   "verseStudyVerseUnavailable": "Versículo indisponível nesta tradução.",
   "waveCta": "Acenar",
+  "weeklyReviewDoneBody": "Revisão feita. Na próxima semana tem outra.",
+  "weeklyReviewEmptyBody": "{count, plural, =1{Faça pelo menos 1 cena nova na semana para ter a revisão.} other{Faça pelo menos {count} cenas novas na semana para ter a revisão.}}",
+  "@weeklyReviewEmptyBody": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyReviewEmptyTitle": "Ainda não há revisão",
+  "weeklyReviewHeadline": "{count, plural, =1{1 cena nesta semana} other{{count} cenas nesta semana}}",
+  "@weeklyReviewHeadline": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "weeklyReviewInsightsHeader": "O “Hoje:” de cada cena",
+  "weeklyReviewIntro": "Releia o “Hoje:” de cada cena e responda 3 perguntas sobre elas.",
+  "weeklyReviewMissionIntro": "Três perguntas das cenas desta semana.",
+  "weeklyReviewMissionTitle": "Revisão da semana",
+  "weeklyReviewNoQuestions": "Não achei as perguntas destas cenas no aparelho. Tente de novo com internet.",
+  "weeklyReviewPlusBody": "No Peregrino+, a revisão traz o “Hoje:” de cada cena e 3 perguntas sobre elas.",
+  "weeklyReviewPreparing": "Preparando…",
+  "weeklyReviewRange": "{start} – {end}",
+  "@weeklyReviewRange": {
+    "placeholders": {
+      "start": {
+        "type": "String"
+      },
+      "end": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyReviewSceneLine": "{trail} · {scene}",
+  "@weeklyReviewSceneLine": {
+    "placeholders": {
+      "trail": {
+        "type": "String"
+      },
+      "scene": {
+        "type": "String"
+      }
+    }
+  },
+  "weeklyReviewSeePlus": "Conhecer o Peregrino+",
+  "weeklyReviewStart": "Responder 3 perguntas",
+  "weeklyReviewTitle": "Revisão da semana",
+  "weeklyReviewTodayInsight": "Hoje: {insight}",
+  "@weeklyReviewTodayInsight": {
+    "placeholders": {
+      "insight": {
+        "type": "String"
+      }
+    }
+  },
   "widgetBehindCaravan": "Ficando para trás na caravana — caminhe hoje",
   "widgetGoalDone": "Meta concluída",
   "widgetProgressScenes": "{goal, plural, =1{{done}/1 cena} other{{done}/{goal} cenas}}",

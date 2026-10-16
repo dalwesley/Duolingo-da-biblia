@@ -26,8 +26,10 @@ class AppSettings {
   final bool sound;
   final bool notifications;
   final int dailyGoal;
+
   /// Compromisso de sequência (7 / 14 / 30). A meta diária continua 1 missão.
   final int streakGoal;
+
   /// Hora local do lembrete principal (6–22).
   final int reminderHour;
   final AppearanceMode appearanceMode;
@@ -206,6 +208,7 @@ class ProgressService extends ChangeNotifier {
   String? nextSceneTitle;
   String? nextSceneTease;
   String? lastInsight;
+
   /// Pergunta aberta plantada ontem — porta do Eco no dia seguinte.
   String? lastEchoQuestion;
   Map<String, String> trailDifficulties = {};
@@ -351,6 +354,9 @@ class ProgressService extends ChangeNotifier {
   /// Acerto de primeira por "modo.gesto" (ex.: `semente.tap`).
   Map<String, int> answerCorrect = {};
   Map<String, int> answerTotal = {};
+
+  /// Semanas (segunda YYYY-MM-DD) com a revisão da semana concluída.
+  List<String> weeklyReviewsDone = [];
   String? lastMissionSlug;
   String? lastMissionCompletedDate;
   String? lastBibleReadDate;
@@ -495,6 +501,53 @@ class ProgressService extends ChangeNotifier {
       int.parse(parts[2]),
     ).add(const Duration(days: 1));
     return d.toIso8601String().substring(0, 10);
+  }
+
+  /// Slug da cena sintética da revisão da semana: `weekly-review-<segunda>`.
+  static const weeklyReviewSlugPrefix = 'weekly-review-';
+
+  /// Mínimo de cenas novas na semana para haver revisão.
+  static const weeklyReviewMinScenes = 2;
+
+  /// Segunda (YYYY-MM-DD) da semana que a revisão cobre hoje: no domingo, a
+  /// semana que termina; de segunda a sábado, a semana anterior.
+  String weeklyReviewWeekKey([DateTime? now]) {
+    final d = now ?? DateTime.now();
+    final ref = d.weekday == DateTime.sunday
+        ? d
+        : DateTime(d.year, d.month, d.day).subtract(const Duration(days: 7));
+    return _weekMondayKey(ref);
+  }
+
+  /// Cenas feitas pela primeira vez na semana de [mondayKey], em ordem.
+  List<String> missionsCompletedInWeek(String mondayKey) {
+    final monday = DateTime.tryParse(mondayKey);
+    if (monday == null) return const [];
+    final sunday = DateTime(
+      monday.year,
+      monday.month,
+      monday.day + 6,
+    ).toIso8601String().substring(0, 10);
+    final hits =
+        missionCompletedOn.entries
+            .where(
+              (e) =>
+                  e.value.compareTo(mondayKey) >= 0 &&
+                  e.value.compareTo(sunday) <= 0,
+            )
+            .toList()
+          ..sort((a, b) => a.value.compareTo(b.value));
+    return [for (final e in hits) e.key];
+  }
+
+  bool isWeeklyReviewDone(String mondayKey) =>
+      weeklyReviewsDone.contains(mondayKey);
+
+  /// Há revisão da semana pendente hoje.
+  bool get weeklyReviewReady {
+    final week = weeklyReviewWeekKey();
+    return !isWeeklyReviewDone(week) &&
+        missionsCompletedInWeek(week).length >= weeklyReviewMinScenes;
   }
 
   String _weekMondayKey([DateTime? now]) {
@@ -814,6 +867,7 @@ class ProgressService extends ChangeNotifier {
     missionCompletedOn = {};
     answerCorrect = {};
     answerTotal = {};
+    weeklyReviewsDone = [];
     missionsToday = 0;
     hasSeenOnboarding = false;
     userName = 'Aprendiz';
@@ -1473,9 +1527,7 @@ class ProgressService extends ChangeNotifier {
 
   /// O gelo cobriu ontem — o card congelado só vale para este buraco.
   bool get yesterdayWasFrozen {
-    return wasFrozenOnDate(
-      DateTime.now().subtract(const Duration(days: 1)),
-    );
+    return wasFrozenOnDate(DateTime.now().subtract(const Duration(days: 1)));
   }
 
   /// De fato caminhou neste dia civil (não usa missionsToday residual de ontem).
@@ -1812,8 +1864,7 @@ class ProgressService extends ChangeNotifier {
     List<String> missionSlugs = const [],
   }) async {
     if (_sessionTrailDifficulties.containsKey(trailSlug)) return false;
-    final stored =
-        trailDifficulties[trailSlug] ?? TrailDifficulty.semente.id;
+    final stored = trailDifficulties[trailSlug] ?? TrailDifficulty.semente.id;
     final open = TrailProgress.openDifficultyId(
       activeDifficultyId: stored,
       clearedModes: clearedModesFor(trailSlug),
@@ -1821,11 +1872,7 @@ class ProgressService extends ChangeNotifier {
     if (open == null || open == stored) return false;
     final next = TrailDifficulty.fromId(open);
     if (next == null || !isDifficultyUnlocked(trailSlug, next)) return false;
-    await setTrailDifficulty(
-      trailSlug,
-      open,
-      missionSlugs: missionSlugs,
-    );
+    await setTrailDifficulty(trailSlug, open, missionSlugs: missionSlugs);
     return true;
   }
 
@@ -2055,6 +2102,12 @@ class ProgressService extends ChangeNotifier {
     var awarded = 0;
     await _batch(() async {
       _ensureQuestDay();
+      if (slug.startsWith(weeklyReviewSlugPrefix)) {
+        final week = slug.substring(weeklyReviewSlugPrefix.length);
+        if (!weeklyReviewsDone.contains(week)) {
+          weeklyReviewsDone = [...weeklyReviewsDone, week];
+        }
+      }
       final today = _todayKey();
       final alreadyToday = lastPlayedDate == today;
       final wasGoalMet = missionsToday >= settings.dailyGoal;
@@ -2359,6 +2412,7 @@ class ProgressService extends ChangeNotifier {
       'missionCompletedOn': missionCompletedOn,
       'answerCorrect': answerCorrect,
       'answerTotal': answerTotal,
+      'weeklyReviewsDone': weeklyReviewsDone,
       'lastMissionSlug': lastMissionSlug,
       'lastMissionCompletedDate': lastMissionCompletedDate,
       'lastBibleReadDate': lastBibleReadDate,
@@ -2895,7 +2949,8 @@ class ProgressService extends ChangeNotifier {
         final merged = Map<String, String>.from(missionCompletedOn);
         for (final e in _asStringMap(data['missionCompletedOn']).entries) {
           final cur = merged[e.key];
-          if (cur == null || e.value.compareTo(cur) < 0) merged[e.key] = e.value;
+          if (cur == null || e.value.compareTo(cur) < 0)
+            merged[e.key] = e.value;
         }
         missionCompletedOn = merged;
       }
@@ -2903,6 +2958,12 @@ class ProgressService extends ChangeNotifier {
         answerCorrect = _mergeIntMapsMax(
           answerCorrect,
           _asIntMap(data['answerCorrect']),
+        );
+      }
+      if (data.containsKey('weeklyReviewsDone')) {
+        weeklyReviewsDone = _unionStringLists(
+          weeklyReviewsDone,
+          _asStringList(data['weeklyReviewsDone']),
         );
       }
       if (data.containsKey('answerTotal')) {
@@ -2959,8 +3020,11 @@ class ProgressService extends ChangeNotifier {
           sound: s['sound'] as bool? ?? settings.sound,
           notifications: s['notifications'] as bool? ?? settings.notifications,
           dailyGoal: (s['dailyGoal'] as num?)?.toInt() ?? settings.dailyGoal,
-          streakGoal: ((s['streakGoal'] as num?)?.toInt() ?? settings.streakGoal)
-              .clamp(7, 30),
+          streakGoal:
+              ((s['streakGoal'] as num?)?.toInt() ?? settings.streakGoal).clamp(
+                7,
+                30,
+              ),
           reminderHour:
               ((s['reminderHour'] as num?)?.toInt() ?? settings.reminderHour)
                   .clamp(6, 22),
@@ -2978,9 +3042,8 @@ class ProgressService extends ChangeNotifier {
           bibleReadingNight: s.containsKey('bibleReadingNight')
               ? s['bibleReadingNight'] as bool?
               : settings.bibleReadingNight,
-          portraitStyle: PortraitStyleX.tryParse(
-                s['portraitStyle'] as String?,
-              ) ??
+          portraitStyle:
+              PortraitStyleX.tryParse(s['portraitStyle'] as String?) ??
               settings.portraitStyle,
           language: s.containsKey('language')
               ? AppLanguageX.fromStorage(s['language'] as String?)
@@ -3148,6 +3211,7 @@ class ProgressService extends ChangeNotifier {
     missionCompletedOn = {};
     answerCorrect = {};
     answerTotal = {};
+    weeklyReviewsDone = [];
     missionsToday = 0;
     hasSeenOnboarding = false;
     usedQuestionIds = [];
@@ -3214,7 +3278,8 @@ class ProgressService extends ChangeNotifier {
   /// Datas soltas não contam: um reset antigo apagava missões e deixava
   /// acertos, liderança, modos e dias — e as descobertas continuavam.
   void _dropOrphanedWalkStats() {
-    final journeyGone = steps == 0 &&
+    final journeyGone =
+        steps == 0 &&
         streak == 0 &&
         completedMissions.isEmpty &&
         perfectMissions.isEmpty &&
