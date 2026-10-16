@@ -13,7 +13,6 @@ import 'ui_primitives.dart';
 const aboutPageUrl = 'https://stway.com.br/sobre';
 
 /// Página de doação no site. O pagamento fica fora do app.
-const donatePageUrl = 'https://stway.com.br/doar';
 
 /// Termos de uso e política de privacidade (aceitos no login).
 const termsPageUrl = 'https://stway.com.br/termos';
@@ -28,14 +27,6 @@ Future<void> openSitePage(String url) {
 Future<void> openAboutPage() {
   return launchUrl(
     Uri.parse(aboutPageUrl),
-    mode: LaunchMode.externalApplication,
-  );
-}
-
-/// Abre a página de doação no navegador externo.
-Future<void> openDonatePage() {
-  return launchUrl(
-    Uri.parse(donatePageUrl),
     mode: LaunchMode.externalApplication,
   );
 }

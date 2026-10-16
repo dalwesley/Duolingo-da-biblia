@@ -45,6 +45,7 @@ import '../widgets/streak_repair_banner.dart';
 import '../widgets/ui_primitives.dart';
 import '../widgets/set_piece.dart';
 import '../widgets/user_avatar.dart';
+import '../services/subscription_service.dart';
 import 'lesson_screen.dart';
 import 'trail_map_screen.dart';
 import 'support_screen.dart';
@@ -1092,9 +1093,12 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                           _leaveCelebration(toTrailMap: false),
                                       hideHome: true,
                                     ),
-                                    if (_trailComplete ||
-                                        (_hook?.trailJustCompleted ??
-                                            false)) ...[
+                                    if ((_trailComplete ||
+                                            (_hook?.trailJustCompleted ??
+                                                false)) &&
+                                        context
+                                            .watch<SubscriptionService>()
+                                            .supportConfigured) ...[
                                       const SizedBox(height: 4),
                                       TextCta(
                                         label: context

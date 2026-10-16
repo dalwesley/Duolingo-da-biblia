@@ -9,21 +9,17 @@ import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/cloud_mascot.dart';
-import '../widgets/coming_soon_trails_card.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 
-/// Abre o apoio: compra avulsa na loja quando configurada; senão, a página
-/// de doação do site (como antes).
+/// Abre o apoio (compra avulsa na loja). Sem loja não há apoio no app —
+/// os botões que chamam isto somem (doação externa é vetada pela loja).
 Future<void> openSupport(BuildContext context) async {
-  if (context.read<SubscriptionService>().supportConfigured) {
-    await Navigator.of(
-      context,
-    ).push(MaterialPageRoute<void>(builder: (_) => const SupportScreen()));
-    return;
-  }
-  await openDonatePage();
+  if (!context.read<SubscriptionService>().supportConfigured) return;
+  await Navigator.of(
+    context,
+  ).push(MaterialPageRoute<void>(builder: (_) => const SupportScreen()));
 }
 
 /// "Apoiar o Stway": compra avulsa que não libera nada — só o selo de

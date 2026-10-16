@@ -27,6 +27,7 @@ import '../widgets/shell_tab_scope.dart';
 import '../widgets/stway_brand.dart';
 import '../widgets/trail_suggestion_sheet.dart';
 import '../widgets/ui_primitives.dart';
+import '../services/subscription_service.dart';
 import 'realm_journey_screen.dart';
 import 'trail_map_screen.dart';
 import 'support_screen.dart';
@@ -464,13 +465,14 @@ class _TrilhasScreenState extends State<TrilhasScreen>
                       ),
                     ),
                   ),
-                  _reveal(
-                    3 + realms.length,
-                    Padding(
-                      padding: const EdgeInsets.only(top: AppSpace.section),
-                      child: DonateCard(onDonate: _openDonate),
+                  if (context.watch<SubscriptionService>().supportConfigured)
+                    _reveal(
+                      3 + realms.length,
+                      Padding(
+                        padding: const EdgeInsets.only(top: AppSpace.section),
+                        child: DonateCard(onDonate: _openDonate),
+                      ),
                     ),
-                  ),
                 ],
               ),
             ),

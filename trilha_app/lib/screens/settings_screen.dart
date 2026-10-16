@@ -1277,15 +1277,18 @@ class _SettingsScreenState extends State<SettingsScreen>
             ),
           ),
         ],
-        const SizedBox(height: AppSpace.lg),
-        CopperCta(
-          label: context.l10n.settingsSupport,
-          leading: CinematicGlyph.gift,
-          trailing: null,
-          dense: true,
-          showGlow: false,
-          onTap: () => openSupport(context),
-        ),
+        // Apoio só por compra no app; sem loja, o botão some.
+        if (context.watch<SubscriptionService>().supportConfigured) ...[
+          const SizedBox(height: AppSpace.lg),
+          CopperCta(
+            label: context.l10n.settingsSupport,
+            leading: CinematicGlyph.gift,
+            trailing: null,
+            dense: true,
+            showGlow: false,
+            onTap: () => openSupport(context),
+          ),
+        ],
       ],
     );
   }

@@ -20,6 +20,7 @@ import '../widgets/share_verse_sheet.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import '../widgets/verse_study_sheet.dart';
+import '../services/subscription_service.dart';
 import 'support_screen.dart';
 
 /// Leitor imersivo — tela cheia no papel da leitura, capítulo por deslize,
@@ -1551,13 +1552,14 @@ Future<void> _applyTranslation(
         title: context.l10n.bibleTranslationSoonTitle,
         content: Text(context.l10n.bibleTranslationSoonBody(translation.name)),
         actions: [
-          GhostCta(
-            label: context.l10n.bibleDonate,
-            onTap: () {
-              Navigator.pop(ctx);
-              openSupport(context);
-            },
-          ),
+          if (context.read<SubscriptionService>().supportConfigured)
+            GhostCta(
+              label: context.l10n.bibleDonate,
+              onTap: () {
+                Navigator.pop(ctx);
+                openSupport(context);
+              },
+            ),
           CopperCta(
             label: context.l10n.commonGotIt,
             dense: true,
