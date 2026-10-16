@@ -64,26 +64,6 @@
     "es": "Peregrino+",
     "description": "Name of the supporter subscription"
   },
-  "paywallPerkWeeklyReview": {
-    "pt": "Revisão da semana: o “Hoje:” de cada cena + 3 perguntas",
-    "en": "Weekly review: each scene's “Today:” + 3 questions",
-    "es": "Repaso de la semana: el “Hoy:” de cada escena + 3 preguntas"
-  },
-  "paywallPerkProfile": {
-    "pt": "No perfil: sua sequência semana a semana e o acerto por modo e por gesto",
-    "en": "On your profile: your streak week by week and accuracy by mode and gesture",
-    "es": "En tu perfil: tu racha semana a semana y los aciertos por modo y por gesto"
-  },
-  "paywallPerkReinforce": {
-    "pt": "Reforço: perguntas do gesto em que você mais erra",
-    "en": "Practice: questions from the gesture you miss most",
-    "es": "Refuerzo: preguntas del gesto en que más fallas"
-  },
-  "paywallPerkBadge": {
-    "pt": "Selo de apoiador no seu perfil",
-    "en": "Supporter badge on your profile",
-    "es": "Sello de apoyo en tu perfil"
-  },
   "paywallLaunchFreeTitle": {
     "pt": "Grátis no lançamento",
     "en": "Free at launch",
@@ -103,9 +83,9 @@
     "es": "Ya eres Peregrino+"
   },
   "paywallHeadline": {
-    "pt": "Vá além na trilha",
-    "en": "Go further on the trail",
-    "es": "Ve más allá en la ruta"
+    "pt": "Caminhe com mais constância",
+    "en": "Walk with more consistency",
+    "es": "Camina con más constancia"
   },
   "paywallThanks": {
     "pt": "Obrigado por apoiar o Stway.",
@@ -113,9 +93,9 @@
     "es": "Gracias por apoyar Stway."
   },
   "paywallPitch": {
-    "pt": "Um apoio direto ao projeto, com alguns extras.",
-    "en": "Direct support for the project, with a few extras.",
-    "es": "Un apoyo directo al proyecto, con algunos extras."
+    "pt": "Seu apoio mantém o Stway grátis para quem não pode pagar.",
+    "en": "Your support keeps Stway free for those who can't pay.",
+    "es": "Tu apoyo mantiene Stway gratis para quien no puede pagar."
   },
   "paywallUnavailable": {
     "pt": "Assinatura ainda não disponível nesta versão.",
@@ -922,6 +902,108 @@
     "es": "Preguntas de {gesture} de las escenas que ya hiciste.",
     "placeholders": {
       "gesture": "String"
+    }
+  },
+  "paywallPerkWeeklyTitle": {
+    "pt": "Revisão da semana",
+    "en": "Weekly review",
+    "es": "Repaso de la semana"
+  },
+  "paywallPerkWeeklyBody": {
+    "pt": "O “Hoje:” de cada cena e 3 perguntas, todo domingo.",
+    "en": "Each scene's “Today:” and 3 questions, every Sunday.",
+    "es": "El “Hoy:” de cada escena y 3 preguntas, cada domingo."
+  },
+  "paywallPerkStreakTitle": {
+    "pt": "Sua constância",
+    "en": "Your consistency",
+    "es": "Tu constancia"
+  },
+  "paywallPerkStreakBody": {
+    "pt": "A sequência semana a semana e o histórico das lamparinas, no perfil.",
+    "en": "Your streak week by week and your lamp history, on your profile.",
+    "es": "Tu racha semana a semana y el historial de lámparas, en tu perfil."
+  },
+  "paywallPerkReinforceTitle": {
+    "pt": "Reforço do ponto fraco",
+    "en": "Practice your weak spot",
+    "es": "Refuerzo del punto débil"
+  },
+  "paywallPerkReinforceBody": {
+    "pt": "Seu acerto por modo e gesto, e perguntas do que você mais erra.",
+    "en": "Your accuracy by mode and gesture, and questions on what you miss most.",
+    "es": "Tus aciertos por modo y gesto, y preguntas de lo que más fallas."
+  },
+  "paywallPerkBadgeTitle": {
+    "pt": "Selo de apoiador",
+    "en": "Supporter badge",
+    "es": "Sello de apoyo"
+  },
+  "paywallPerkBadgeBody": {
+    "pt": "No seu perfil, para a Caravana ver.",
+    "en": "On your profile, for the Caravan to see.",
+    "es": "En tu perfil, para que la Caravana lo vea."
+  },
+  "paywallFreeForever": {
+    "pt": "Bíblia, cenas, os 3 modos e a liga continuam grátis. Sempre.",
+    "en": "The Bible, scenes, all 3 modes and the league stay free. Always.",
+    "es": "La Biblia, las escenas, los 3 modos y la liga siguen gratis. Siempre."
+  },
+  "paywallSave": {
+    "pt": "Economize {percent}%",
+    "en": "Save {percent}%",
+    "es": "Ahorra {percent}%",
+    "placeholders": {
+      "percent": "int"
+    }
+  },
+  "paywallPricePerMonthShort": {
+    "pt": "{price}/mês",
+    "en": "{price}/mo",
+    "es": "{price}/mes",
+    "placeholders": {
+      "price": "String"
+    }
+  },
+  "paywallCancelAnytime": {
+    "pt": "Cancele quando quiser.",
+    "en": "Cancel anytime.",
+    "es": "Cancela cuando quieras."
+  },
+  "paywallTimelineTitle": {
+    "pt": "Como funciona o teste",
+    "en": "How the trial works",
+    "es": "Cómo funciona la prueba"
+  },
+  "paywallTimelineToday": {
+    "pt": "Hoje",
+    "en": "Today",
+    "es": "Hoy"
+  },
+  "paywallTimelineTodayBody": {
+    "pt": "Tudo do Peregrino+ liberado, sem pagar nada.",
+    "en": "Everything in Pilgrim+ unlocked, nothing to pay.",
+    "es": "Todo Peregrino+ desbloqueado, sin pagar nada."
+  },
+  "paywallTimelineDay": {
+    "pt": "Dia {day}",
+    "en": "Day {day}",
+    "es": "Día {day}",
+    "placeholders": {
+      "day": "int"
+    }
+  },
+  "paywallTimelineReminderBody": {
+    "pt": "Avisamos que o teste está acabando.",
+    "en": "We remind you the trial is ending.",
+    "es": "Te avisamos que la prueba está terminando."
+  },
+  "paywallTimelineChargeBody": {
+    "pt": "Começa a cobrança: {price}. Cancele antes e não paga nada.",
+    "en": "Billing starts: {price}. Cancel before and pay nothing.",
+    "es": "Empieza el cobro: {price}. Cancela antes y no pagas nada.",
+    "placeholders": {
+      "price": "String"
     }
   }
 }

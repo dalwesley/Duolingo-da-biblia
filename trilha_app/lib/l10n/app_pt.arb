@@ -3958,7 +3958,9 @@
   "paywallAutoRenew": "Renova automaticamente pelo mesmo preço até você cancelar. Cancele quando quiser na App Store ou no Google Play, até 24 horas antes da renovação.",
   "paywallBestValue": "Melhor valor",
   "paywallBuyOnce": "Comprar",
-  "paywallHeadline": "Vá além na trilha",
+  "paywallCancelAnytime": "Cancele quando quiser.",
+  "paywallFreeForever": "Bíblia, cenas, os 3 modos e a liga continuam grátis. Sempre.",
+  "paywallHeadline": "Caminhe com mais constância",
   "paywallLaunchFreeBody": "Tudo do Peregrino+ liberado até {date}. Depois, você decide se quer continuar.",
   "@paywallLaunchFreeBody": {
     "placeholders": {
@@ -3968,19 +3970,15 @@
     }
   },
   "paywallLaunchFreeTitle": "Grátis no lançamento",
-  "paywallPerMonth": "≈ {price}/mês",
-  "@paywallPerMonth": {
-    "placeholders": {
-      "price": {
-        "type": "String"
-      }
-    }
-  },
-  "paywallPerkBadge": "Selo de apoiador no seu perfil",
-  "paywallPerkProfile": "No perfil: sua sequência semana a semana e o acerto por modo e por gesto",
-  "paywallPerkReinforce": "Reforço: perguntas do gesto em que você mais erra",
-  "paywallPerkWeeklyReview": "Revisão da semana: o “Hoje:” de cada cena + 3 perguntas",
-  "paywallPitch": "Um apoio direto ao projeto, com alguns extras.",
+  "paywallPerkBadgeBody": "No seu perfil, para a Caravana ver.",
+  "paywallPerkBadgeTitle": "Selo de apoiador",
+  "paywallPerkReinforceBody": "Seu acerto por modo e gesto, e perguntas do que você mais erra.",
+  "paywallPerkReinforceTitle": "Reforço do ponto fraco",
+  "paywallPerkStreakBody": "A sequência semana a semana e o histórico das lamparinas, no perfil.",
+  "paywallPerkStreakTitle": "Sua constância",
+  "paywallPerkWeeklyBody": "O “Hoje:” de cada cena e 3 perguntas, todo domingo.",
+  "paywallPerkWeeklyTitle": "Revisão da semana",
+  "paywallPitch": "Seu apoio mantém o Stway grátis para quem não pode pagar.",
   "paywallPlanAnnual": "Anual",
   "paywallPlanLifetime": "Vitalício",
   "paywallPlanMonthly": "Mensal",
@@ -4019,6 +4017,14 @@
       }
     }
   },
+  "paywallPricePerMonthShort": "{price}/mês",
+  "@paywallPricePerMonthShort": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
   "paywallPriceWeekly": "{price} por semana",
   "@paywallPriceWeekly": {
     "placeholders": {
@@ -4030,6 +4036,14 @@
   "paywallPurchaseFailed": "Não foi possível concluir a compra.",
   "paywallRestore": "Restaurar compra",
   "paywallRestoreFailed": "Não foi possível restaurar a compra.",
+  "paywallSave": "Economize {percent}%",
+  "@paywallSave": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
   "paywallStartTrial": "{count, plural, =1{Começar 1 dia grátis} other{Começar {count} dias grátis}}",
   "@paywallStartTrial": {
     "placeholders": {
@@ -4040,6 +4054,26 @@
   },
   "paywallSubscribe": "Assinar",
   "paywallThanks": "Obrigado por apoiar o Stway.",
+  "paywallTimelineChargeBody": "Começa a cobrança: {price}. Cancele antes e não paga nada.",
+  "@paywallTimelineChargeBody": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "paywallTimelineDay": "Dia {day}",
+  "@paywallTimelineDay": {
+    "placeholders": {
+      "day": {
+        "type": "int"
+      }
+    }
+  },
+  "paywallTimelineReminderBody": "Avisamos que o teste está acabando.",
+  "paywallTimelineTitle": "Como funciona o teste",
+  "paywallTimelineToday": "Hoje",
+  "paywallTimelineTodayBody": "Tudo do Peregrino+ liberado, sem pagar nada.",
   "paywallTitle": "Peregrino+",
   "@paywallTitle": {
     "description": "Name of the supporter subscription"

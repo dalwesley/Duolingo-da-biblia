@@ -5685,7 +5685,14 @@ class AppLocalizationsEs extends AppLocalizations {
   String get paywallBuyOnce => 'Comprar';
 
   @override
-  String get paywallHeadline => 'Ve más allá en la ruta';
+  String get paywallCancelAnytime => 'Cancela cuando quieras.';
+
+  @override
+  String get paywallFreeForever =>
+      'La Biblia, las escenas, los 3 modos y la liga siguen gratis. Siempre.';
+
+  @override
+  String get paywallHeadline => 'Camina con más constancia';
 
   @override
   String paywallLaunchFreeBody(String date) {
@@ -5696,28 +5703,36 @@ class AppLocalizationsEs extends AppLocalizations {
   String get paywallLaunchFreeTitle => 'Gratis en el lanzamiento';
 
   @override
-  String paywallPerMonth(String price) {
-    return '≈ $price/mes';
-  }
+  String get paywallPerkBadgeBody =>
+      'En tu perfil, para que la Caravana lo vea.';
 
   @override
-  String get paywallPerkBadge => 'Sello de apoyo en tu perfil';
+  String get paywallPerkBadgeTitle => 'Sello de apoyo';
 
   @override
-  String get paywallPerkProfile =>
-      'En tu perfil: tu racha semana a semana y los aciertos por modo y por gesto';
+  String get paywallPerkReinforceBody =>
+      'Tus aciertos por modo y gesto, y preguntas de lo que más fallas.';
 
   @override
-  String get paywallPerkReinforce =>
-      'Refuerzo: preguntas del gesto en que más fallas';
+  String get paywallPerkReinforceTitle => 'Refuerzo del punto débil';
 
   @override
-  String get paywallPerkWeeklyReview =>
-      'Repaso de la semana: el “Hoy:” de cada escena + 3 preguntas';
+  String get paywallPerkStreakBody =>
+      'Tu racha semana a semana y el historial de lámparas, en tu perfil.';
+
+  @override
+  String get paywallPerkStreakTitle => 'Tu constancia';
+
+  @override
+  String get paywallPerkWeeklyBody =>
+      'El “Hoy:” de cada escena y 3 preguntas, cada domingo.';
+
+  @override
+  String get paywallPerkWeeklyTitle => 'Repaso de la semana';
 
   @override
   String get paywallPitch =>
-      'Un apoyo directo al proyecto, con algunos extras.';
+      'Tu apoyo mantiene Stway gratis para quien no puede pagar.';
 
   @override
   String get paywallPlanAnnual => 'Anual';
@@ -5749,6 +5764,11 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String paywallPricePerMonthShort(String price) {
+    return '$price/mes';
+  }
+
+  @override
   String paywallPriceWeekly(String price) {
     return '$price a la semana';
   }
@@ -5761,6 +5781,11 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get paywallRestoreFailed => 'No se pudo restaurar la compra.';
+
+  @override
+  String paywallSave(int percent) {
+    return 'Ahorra $percent%';
+  }
 
   @override
   String paywallStartTrial(int count) {
@@ -5778,6 +5803,30 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get paywallThanks => 'Gracias por apoyar Stway.';
+
+  @override
+  String paywallTimelineChargeBody(String price) {
+    return 'Empieza el cobro: $price. Cancela antes y no pagas nada.';
+  }
+
+  @override
+  String paywallTimelineDay(int day) {
+    return 'Día $day';
+  }
+
+  @override
+  String get paywallTimelineReminderBody =>
+      'Te avisamos que la prueba está terminando.';
+
+  @override
+  String get paywallTimelineTitle => 'Cómo funciona la prueba';
+
+  @override
+  String get paywallTimelineToday => 'Hoy';
+
+  @override
+  String get paywallTimelineTodayBody =>
+      'Todo Peregrino+ desbloqueado, sin pagar nada.';
 
   @override
   String get paywallTitle => 'Peregrino+';

@@ -62,14 +62,6 @@
     "en": "Best value",
     "es": "Mejor valor"
   },
-  "paywallPerMonth": {
-    "pt": "≈ {price}/mês",
-    "en": "≈ {price}/month",
-    "es": "≈ {price}/mes",
-    "placeholders": {
-      "price": "String"
-    }
-  },
   "paywallTrialDays": {
     "pt": "{count, plural, =1{1 dia grátis} other{{count} dias grátis}}",
     "en": "{count, plural, =1{1 day free} other{{count} days free}}",

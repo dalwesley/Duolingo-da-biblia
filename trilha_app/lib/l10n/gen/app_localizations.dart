@@ -8769,10 +8769,22 @@ abstract class AppLocalizations {
   /// **'Comprar'**
   String get paywallBuyOnce;
 
+  /// No description provided for @paywallCancelAnytime.
+  ///
+  /// In pt, this message translates to:
+  /// **'Cancele quando quiser.'**
+  String get paywallCancelAnytime;
+
+  /// No description provided for @paywallFreeForever.
+  ///
+  /// In pt, this message translates to:
+  /// **'Bíblia, cenas, os 3 modos e a liga continuam grátis. Sempre.'**
+  String get paywallFreeForever;
+
   /// No description provided for @paywallHeadline.
   ///
   /// In pt, this message translates to:
-  /// **'Vá além na trilha'**
+  /// **'Caminhe com mais constância'**
   String get paywallHeadline;
 
   /// No description provided for @paywallLaunchFreeBody.
@@ -8787,40 +8799,58 @@ abstract class AppLocalizations {
   /// **'Grátis no lançamento'**
   String get paywallLaunchFreeTitle;
 
-  /// No description provided for @paywallPerMonth.
+  /// No description provided for @paywallPerkBadgeBody.
   ///
   /// In pt, this message translates to:
-  /// **'≈ {price}/mês'**
-  String paywallPerMonth(String price);
+  /// **'No seu perfil, para a Caravana ver.'**
+  String get paywallPerkBadgeBody;
 
-  /// No description provided for @paywallPerkBadge.
+  /// No description provided for @paywallPerkBadgeTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Selo de apoiador no seu perfil'**
-  String get paywallPerkBadge;
+  /// **'Selo de apoiador'**
+  String get paywallPerkBadgeTitle;
 
-  /// No description provided for @paywallPerkProfile.
+  /// No description provided for @paywallPerkReinforceBody.
   ///
   /// In pt, this message translates to:
-  /// **'No perfil: sua sequência semana a semana e o acerto por modo e por gesto'**
-  String get paywallPerkProfile;
+  /// **'Seu acerto por modo e gesto, e perguntas do que você mais erra.'**
+  String get paywallPerkReinforceBody;
 
-  /// No description provided for @paywallPerkReinforce.
+  /// No description provided for @paywallPerkReinforceTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Reforço: perguntas do gesto em que você mais erra'**
-  String get paywallPerkReinforce;
+  /// **'Reforço do ponto fraco'**
+  String get paywallPerkReinforceTitle;
 
-  /// No description provided for @paywallPerkWeeklyReview.
+  /// No description provided for @paywallPerkStreakBody.
   ///
   /// In pt, this message translates to:
-  /// **'Revisão da semana: o “Hoje:” de cada cena + 3 perguntas'**
-  String get paywallPerkWeeklyReview;
+  /// **'A sequência semana a semana e o histórico das lamparinas, no perfil.'**
+  String get paywallPerkStreakBody;
+
+  /// No description provided for @paywallPerkStreakTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sua constância'**
+  String get paywallPerkStreakTitle;
+
+  /// No description provided for @paywallPerkWeeklyBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'O “Hoje:” de cada cena e 3 perguntas, todo domingo.'**
+  String get paywallPerkWeeklyBody;
+
+  /// No description provided for @paywallPerkWeeklyTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Revisão da semana'**
+  String get paywallPerkWeeklyTitle;
 
   /// No description provided for @paywallPitch.
   ///
   /// In pt, this message translates to:
-  /// **'Um apoio direto ao projeto, com alguns extras.'**
+  /// **'Seu apoio mantém o Stway grátis para quem não pode pagar.'**
   String get paywallPitch;
 
   /// No description provided for @paywallPlanAnnual.
@@ -8865,6 +8895,12 @@ abstract class AppLocalizations {
   /// **'{price} por {months} meses'**
   String paywallPriceMonths(int months, String price);
 
+  /// No description provided for @paywallPricePerMonthShort.
+  ///
+  /// In pt, this message translates to:
+  /// **'{price}/mês'**
+  String paywallPricePerMonthShort(String price);
+
   /// No description provided for @paywallPriceWeekly.
   ///
   /// In pt, this message translates to:
@@ -8889,6 +8925,12 @@ abstract class AppLocalizations {
   /// **'Não foi possível restaurar a compra.'**
   String get paywallRestoreFailed;
 
+  /// No description provided for @paywallSave.
+  ///
+  /// In pt, this message translates to:
+  /// **'Economize {percent}%'**
+  String paywallSave(int percent);
+
   /// No description provided for @paywallStartTrial.
   ///
   /// In pt, this message translates to:
@@ -8906,6 +8948,42 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Obrigado por apoiar o Stway.'**
   String get paywallThanks;
+
+  /// No description provided for @paywallTimelineChargeBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Começa a cobrança: {price}. Cancele antes e não paga nada.'**
+  String paywallTimelineChargeBody(String price);
+
+  /// No description provided for @paywallTimelineDay.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dia {day}'**
+  String paywallTimelineDay(int day);
+
+  /// No description provided for @paywallTimelineReminderBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Avisamos que o teste está acabando.'**
+  String get paywallTimelineReminderBody;
+
+  /// No description provided for @paywallTimelineTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Como funciona o teste'**
+  String get paywallTimelineTitle;
+
+  /// No description provided for @paywallTimelineToday.
+  ///
+  /// In pt, this message translates to:
+  /// **'Hoje'**
+  String get paywallTimelineToday;
+
+  /// No description provided for @paywallTimelineTodayBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Tudo do Peregrino+ liberado, sem pagar nada.'**
+  String get paywallTimelineTodayBody;
 
   /// Name of the supporter subscription
   ///
