@@ -116,9 +116,9 @@
     }
   },
   "plusOfferScenesBody": {
-    "pt": "O Peregrino+ traz a revisão da semana e mostra onde você acerta mais. E ajuda a manter o Stway de pé.",
-    "en": "Pilgrim+ brings the weekly review and shows where you do best. And it helps keep Stway going.",
-    "es": "Peregrino+ trae el repaso de la semana y muestra dónde aciertas más. Y ayuda a mantener Stway en pie."
+    "pt": "Você está criando um hábito. O Peregrino+ ajuda a não parar e mantém o Stway grátis para quem não pode pagar.",
+    "en": "You're building a habit. Pilgrim+ helps you keep going and keeps Stway free for those who can't pay.",
+    "es": "Estás creando un hábito. Peregrino+ te ayuda a no parar y mantiene Stway gratis para quien no puede pagar."
   },
   "plusOfferEndingTitle": {
     "pt": "O Peregrino+ grátis vai até {date}",
@@ -142,5 +142,29 @@
     "pt": "Obrigado por caminhar com a gente. Cenas, modos e Bíblia continuam grátis. A revisão da semana e Minha caminhada agora ficam no Peregrino+.",
     "en": "Thanks for walking with us. Scenes, modes and the Bible stay free. The weekly review and My walk are now part of Pilgrim+.",
     "es": "Gracias por caminar con nosotros. Escenas, modos y Biblia siguen gratis. El repaso de la semana y Mi camino ahora son parte de Peregrino+."
+  },
+  "plusOfferTryFree": {
+    "pt": "{count, plural, =1{Testar 1 dia grátis} other{Testar {count} dias grátis}}",
+    "en": "{count, plural, =1{Try 1 day free} other{Try {count} days free}}",
+    "es": "{count, plural, =1{Probar 1 día gratis} other{Probar {count} días gratis}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "plusOfferFromPrice": {
+    "pt": "Depois, a partir de {price}/mês. Cancele quando quiser.",
+    "en": "Then from {price}/month. Cancel anytime.",
+    "es": "Después, desde {price}/mes. Cancela cuando quieras.",
+    "placeholders": {
+      "price": "String"
+    }
+  },
+  "plusOfferDaysLeft": {
+    "pt": "{count, plural, =1{Falta 1 dia} other{Faltam {count} dias}}",
+    "en": "{count, plural, =1{1 day left} other{{count} days left}}",
+    "es": "{count, plural, =1{Falta 1 día} other{Faltan {count} días}}",
+    "placeholders": {
+      "count": "int"
+    }
   }
 }

@@ -279,6 +279,25 @@ class SubscriptionService extends ChangeNotifier {
     }
   }
 
+  /// Plano anual da oferta atual, se houver.
+  Package? get annualPackage => availablePackages
+      .where((p) => p.packageType == PackageType.annual)
+      .firstOrNull;
+
+  /// Dias do teste grátis do pacote, se houver.
+  static int? trialDays(Package p) {
+    final intro = p.storeProduct.introductoryPrice;
+    if (intro == null || intro.price > 0) return null;
+    final n = intro.periodNumberOfUnits;
+    return switch (intro.periodUnit) {
+      PeriodUnit.day => n,
+      PeriodUnit.week => n * 7,
+      PeriodUnit.month => n * 30,
+      PeriodUnit.year => n * 365,
+      PeriodUnit.unknown => null,
+    };
+  }
+
   static String packageLabel(Package package) {
     final product = package.storeProduct;
     final price = product.priceString;

@@ -45,20 +45,6 @@ int _rank(PackageType t) => switch (t) {
   _ => 3,
 };
 
-/// Dias do teste grátis do pacote, se houver.
-int? _trialDays(Package p) {
-  final intro = p.storeProduct.introductoryPrice;
-  if (intro == null || intro.price > 0) return null;
-  final n = intro.periodNumberOfUnits;
-  return switch (intro.periodUnit) {
-    PeriodUnit.day => n,
-    PeriodUnit.week => n * 7,
-    PeriodUnit.month => n * 30,
-    PeriodUnit.year => n * 365,
-    PeriodUnit.unknown => null,
-  };
-}
-
 class _PaywallScreenState extends State<PaywallScreen> {
   String? _selectedId;
 
@@ -105,7 +91,9 @@ class _PaywallScreenState extends State<PaywallScreen> {
             (p) => p.identifier == _selectedId,
             orElse: () => packages.first,
           );
-    final trial = selected == null ? null : _trialDays(selected);
+    final trial = selected == null
+        ? null
+        : SubscriptionService.trialDays(selected);
     final renews = selected?.packageType != PackageType.lifetime;
 
     return ImmersiveScaffold(
@@ -179,7 +167,7 @@ class _PaywallScreenState extends State<PaywallScreen> {
                             .where((x) => x.packageType == PackageType.monthly)
                             .firstOrNull,
                         selected: p.identifier == selected!.identifier,
-                        trialDays: _trialDays(p),
+                        trialDays: SubscriptionService.trialDays(p),
                         onTap: () => setState(() => _selectedId = p.identifier),
                       ),
                       const SizedBox(height: 10),

@@ -9543,6 +9543,12 @@ abstract class AppLocalizations {
   /// **'Porção de hoje concluída. Volte amanhã — ou continue explorando a Bíblia livremente.'**
   String get planTodayDoneBody;
 
+  /// No description provided for @plusOfferDaysLeft.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{Falta 1 dia} other{Faltam {count} dias}}'**
+  String plusOfferDaysLeft(int count);
+
   /// No description provided for @plusOfferEndedBody.
   ///
   /// In pt, this message translates to:
@@ -9567,10 +9573,16 @@ abstract class AppLocalizations {
   /// **'O Peregrino+ grátis vai até {date}'**
   String plusOfferEndingTitle(String date);
 
+  /// No description provided for @plusOfferFromPrice.
+  ///
+  /// In pt, this message translates to:
+  /// **'Depois, a partir de {price}/mês. Cancele quando quiser.'**
+  String plusOfferFromPrice(String price);
+
   /// No description provided for @plusOfferScenesBody.
   ///
   /// In pt, this message translates to:
-  /// **'O Peregrino+ traz a revisão da semana e mostra onde você acerta mais. E ajuda a manter o Stway de pé.'**
+  /// **'Você está criando um hábito. O Peregrino+ ajuda a não parar e mantém o Stway grátis para quem não pode pagar.'**
   String get plusOfferScenesBody;
 
   /// No description provided for @plusOfferScenesTitle.
@@ -9578,6 +9590,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'{count, plural, =1{1 cena caminhada} other{{count} cenas caminhadas}}'**
   String plusOfferScenesTitle(int count);
+
+  /// No description provided for @plusOfferTryFree.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{Testar 1 dia grátis} other{Testar {count} dias grátis}}'**
+  String plusOfferTryFree(int count);
 
   /// No description provided for @portraitAvatar.
   ///

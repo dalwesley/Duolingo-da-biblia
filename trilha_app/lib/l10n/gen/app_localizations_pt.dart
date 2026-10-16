@@ -6215,6 +6215,17 @@ class AppLocalizationsPt extends AppLocalizations {
       'Porção de hoje concluída. Volte amanhã — ou continue explorando a Bíblia livremente.';
 
   @override
+  String plusOfferDaysLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Faltam $count dias',
+      one: 'Falta 1 dia',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get plusOfferEndedBody =>
       'Obrigado por caminhar com a gente. Cenas, modos e Bíblia continuam grátis. A revisão da semana e Minha caminhada agora ficam no Peregrino+.';
 
@@ -6231,8 +6242,13 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String plusOfferFromPrice(String price) {
+    return 'Depois, a partir de $price/mês. Cancele quando quiser.';
+  }
+
+  @override
   String get plusOfferScenesBody =>
-      'O Peregrino+ traz a revisão da semana e mostra onde você acerta mais. E ajuda a manter o Stway de pé.';
+      'Você está criando um hábito. O Peregrino+ ajuda a não parar e mantém o Stway grátis para quem não pode pagar.';
 
   @override
   String plusOfferScenesTitle(int count) {
@@ -6241,6 +6257,17 @@ class AppLocalizationsPt extends AppLocalizations {
       locale: localeName,
       other: '$count cenas caminhadas',
       one: '1 cena caminhada',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String plusOfferTryFree(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Testar $count dias grátis',
+      one: 'Testar 1 dia grátis',
     );
     return '$_temp0';
   }
