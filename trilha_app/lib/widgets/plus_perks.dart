@@ -5,6 +5,7 @@ import '../l10n/gen/app_localizations.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
+import 'immersive_background.dart';
 import 'ui_primitives.dart';
 
 /// Os benefícios do Peregrino+ — fonte única de ícone, título e frase.
@@ -37,8 +38,8 @@ enum PlusPerk {
   };
 }
 
-/// Cartão do Peregrino+: fundo e borda dourados, rótulo dourado em caixa
-/// alta, ícones emoldurados em dourado.
+/// Cartão do Peregrino+: superfície dos cards tingida de dourado com brilho
+/// no topo, rótulo dourado em caixa alta, ícones emoldurados em dourado.
 ///
 /// [detailed] mostra a frase de cada benefício (paywall). [locked] põe o
 /// cadeado à direita (aviso de fim da promoção). [boxed] false tira o
@@ -87,13 +88,12 @@ class PlusPerkCard extends StatelessWidget {
     );
 
     if (!boxed) return content;
-    return Container(
+    // Superfície sólida dos cards, puxada para o dourado, com brilho de
+    // palco no topo — lê bem sobre a trilha do fundo.
+    return GlassCard(
+      tint: AppRoles.reward,
+      glow: 0.5,
       padding: const EdgeInsets.fromLTRB(16, 14, 16, 16),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(AppRadii.md),
-        color: AppMetrics.accentFill(alpha: 0.10),
-        border: Border.all(color: AppMetrics.accentBorder(alpha: 0.6)),
-      ),
       child: content,
     );
   }

@@ -331,8 +331,8 @@ class _PlanTile extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(AppRadii.md),
               color: selected
-                  ? AppMetrics.accentFill(alpha: 0.12)
-                  : a.insetFill,
+                  ? Color.lerp(a.cardFill, AppRoles.reward, 0.14)
+                  : a.cardFill,
               border: Border.all(
                 width: selected ? 2 : 1,
                 color: selected
