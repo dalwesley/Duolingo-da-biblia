@@ -2337,6 +2337,43 @@ class AppLocalizationsPt extends AppLocalizations {
   String get groupWeekStudy => 'Estudo da semana';
 
   @override
+  String get groupsSoonBody =>
+      'Estamos preparando os grupos para células, discipulado e EBD. Aguarde: quando abrirem, você fica sabendo aqui.';
+
+  @override
+  String get groupsSoonComingHeader => 'O que vem por aí';
+
+  @override
+  String get groupsSoonEyebrow => 'Em breve';
+
+  @override
+  String get groupsSoonItemLeader => 'O líder acompanha quem já fez';
+
+  @override
+  String get groupsSoonItemStudy => 'Um estudo por semana para o grupo';
+
+  @override
+  String get groupsSoonItemTogether =>
+      'Todos caminham juntos, com meta semanal';
+
+  @override
+  String get groupsSoonJoined =>
+      'Combinado! Avisaremos você quando os grupos abrirem.';
+
+  @override
+  String get groupsSoonMeanwhile =>
+      'Enquanto isso, chame alguém para caminhar com você na Companhia e siga na Caravana.';
+
+  @override
+  String get groupsSoonNotifyMe => 'Quero ser avisado';
+
+  @override
+  String get groupsSoonSaving => 'Guardando…';
+
+  @override
+  String get groupsSoonTitle => 'Os grupos estão chegando';
+
+  @override
   String growthDayUnit(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,

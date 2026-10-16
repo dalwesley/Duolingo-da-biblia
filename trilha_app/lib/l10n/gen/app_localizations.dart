@@ -3724,6 +3724,72 @@ abstract class AppLocalizations {
   /// **'Estudo da semana'**
   String get groupWeekStudy;
 
+  /// No description provided for @groupsSoonBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Estamos preparando os grupos para células, discipulado e EBD. Aguarde: quando abrirem, você fica sabendo aqui.'**
+  String get groupsSoonBody;
+
+  /// No description provided for @groupsSoonComingHeader.
+  ///
+  /// In pt, this message translates to:
+  /// **'O que vem por aí'**
+  String get groupsSoonComingHeader;
+
+  /// No description provided for @groupsSoonEyebrow.
+  ///
+  /// In pt, this message translates to:
+  /// **'Em breve'**
+  String get groupsSoonEyebrow;
+
+  /// No description provided for @groupsSoonItemLeader.
+  ///
+  /// In pt, this message translates to:
+  /// **'O líder acompanha quem já fez'**
+  String get groupsSoonItemLeader;
+
+  /// No description provided for @groupsSoonItemStudy.
+  ///
+  /// In pt, this message translates to:
+  /// **'Um estudo por semana para o grupo'**
+  String get groupsSoonItemStudy;
+
+  /// No description provided for @groupsSoonItemTogether.
+  ///
+  /// In pt, this message translates to:
+  /// **'Todos caminham juntos, com meta semanal'**
+  String get groupsSoonItemTogether;
+
+  /// No description provided for @groupsSoonJoined.
+  ///
+  /// In pt, this message translates to:
+  /// **'Combinado! Avisaremos você quando os grupos abrirem.'**
+  String get groupsSoonJoined;
+
+  /// No description provided for @groupsSoonMeanwhile.
+  ///
+  /// In pt, this message translates to:
+  /// **'Enquanto isso, chame alguém para caminhar com você na Companhia e siga na Caravana.'**
+  String get groupsSoonMeanwhile;
+
+  /// No description provided for @groupsSoonNotifyMe.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quero ser avisado'**
+  String get groupsSoonNotifyMe;
+
+  /// No description provided for @groupsSoonSaving.
+  ///
+  /// In pt, this message translates to:
+  /// **'Guardando…'**
+  String get groupsSoonSaving;
+
+  /// No description provided for @groupsSoonTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Os grupos estão chegando'**
+  String get groupsSoonTitle;
+
   /// Unit shown under the streak number. Trailing space only dodges the merge validator; code trims it.
   ///
   /// In pt, this message translates to:

@@ -47,6 +47,7 @@ import '../widgets/user_avatar.dart';
 import '../widgets/recognition_actions.dart';
 import '../widgets/room_roster.dart';
 import '../widgets/room_panels.dart';
+import 'groups_soon_screen.dart';
 import 'lesson_screen.dart';
 
 /// Altura comum quando CTA ouro e fantasma ficam lado a lado
@@ -145,6 +146,11 @@ class _LeagueScreenState extends State<LeagueScreen>
     if (!mounted || _handlingInvite) return;
     final links = InviteDeepLinkService.instance;
     final roomCode = links.takePendingRoomCode();
+    if (roomCode != null && !RemoteConfigService.instance.groupsEnabled) {
+      links.takeWantGruposTab();
+      await openGroupsSoon(context, source: 'invite_link');
+      return;
+    }
     if (roomCode != null) {
       links.takeWantGruposTab();
       _handlingInvite = true;
@@ -366,6 +372,9 @@ class _LeagueScreenState extends State<LeagueScreen>
     final roomIncoming = listen
         ? context.watch<RoomService>().incoming
         : context.read<RoomService>().incoming;
+    final groupsOn = listen
+        ? context.watch<RemoteConfigService>().groupsEnabled
+        : context.read<RemoteConfigService>().groupsEnabled;
     return Stack(
       children: [
         RefreshIndicator(
@@ -409,9 +418,15 @@ class _LeagueScreenState extends State<LeagueScreen>
                                 JuntosInbox.caravanPending(context) > 0,
                             companionAlert:
                                 companionNudge != null || cornerFace != null,
-                            gruposAlert: roomIncoming.isNotEmpty,
+                            gruposAlert: groupsOn && roomIncoming.isNotEmpty,
                             onChanged: (i) {
                               ActHaptics.tap();
+                              // Grupos fechados: aviso em tela inteira, a
+                              // aba atual fica.
+                              if (i == _tabGrupos && !groupsOn) {
+                                openGroupsSoon(context, source: 'tab');
+                                return;
+                              }
                               setState(() => _tab = i);
                             },
                           ),
@@ -440,6 +455,9 @@ class _LeagueScreenState extends State<LeagueScreen>
                             key: ValueKey(_tab),
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: switch (_tab) {
+                              _tabGrupos when !groupsOn => _buildCompanions(
+                                context,
+                              ),
                               _tabCompanhia => _buildCompanions(context),
                               _tabCaravana => [
                                 JuntosInbox(

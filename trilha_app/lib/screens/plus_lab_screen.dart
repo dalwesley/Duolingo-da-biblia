@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 import '../data/trail_repository.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
+import '../services/remote_config_service.dart';
 import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -277,6 +278,11 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
                           'Loja falsa (planos e apoios de mentira)',
                           sub.debugFakeStore,
                           sub.debugSetFakeStore,
+                        ),
+                        toggle(
+                          'Grupos abertos (simulado)',
+                          context.watch<RemoteConfigService>().groupsEnabled,
+                          RemoteConfigService.instance.debugSetGroupsEnabled,
                         ),
                       ]),
                       section('Promoção de lançamento', [

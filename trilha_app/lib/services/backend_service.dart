@@ -916,6 +916,21 @@ class BackendService extends ChangeNotifier {
         .timeout(const Duration(seconds: 12));
   }
 
+  /// "Quero ser avisado" dos grupos: guarda no doc privado, para avisar
+  /// quem pediu quando os grupos chegarem.
+  Future<bool> joinGroupsWaitlist() async {
+    if (!isActive) return false;
+    try {
+      await _db.doc(_privatePath).set({
+        'groupsWaitlistAt': FieldValue.serverTimestamp(),
+      }, SetOptions(merge: true));
+      return true;
+    } catch (e) {
+      debugPrint('Falha ao entrar na lista dos grupos: $e');
+      return false;
+    }
+  }
+
   Map<String, dynamic> _payload(ProgressService p, {LeagueService? league}) {
     final user = currentUser;
     return {

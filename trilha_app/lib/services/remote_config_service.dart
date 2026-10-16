@@ -16,6 +16,7 @@ class RemoteConfigService extends ChangeNotifier {
   static const _keyLeagueGroupSize = 'league_group_size';
   static const _keyLeagueServerSettlement = 'league_server_settlement';
   static const _keyPlusLaunchFreeUntil = 'plus_launch_free_until';
+  static const _keyGroupsEnabled = 'groups_enabled';
 
   static const _defaults = <String, Object>{
     _keyReferralBonus: 50,
@@ -23,6 +24,7 @@ class RemoteConfigService extends ChangeNotifier {
     _keyLeagueGroupSize: 20,
     _keyLeagueServerSettlement: false,
     _keyPlusLaunchFreeUntil: '',
+    _keyGroupsEnabled: false,
   };
 
   FirebaseRemoteConfig? _rc;
@@ -71,6 +73,20 @@ class RemoteConfigService extends ChangeNotifier {
   /// Subida/descida decidida pela Cloud Function `settleLeagueWeek`
   /// (`users/{uid}.leagueResult`). Desligado: o app fecha a semana sozinho.
   bool get leagueServerSettlement => _bool(_keyLeagueServerSettlement);
+
+  /// Grupos (criar, entrar, convites). Desligado: a aba mostra "em breve"
+  /// até existirem os planos Líder/Igreja. [debugGroupsEnabled] força no
+  /// laboratório.
+  bool get groupsEnabled =>
+      (kDebugMode && debugGroupsEnabled) || _bool(_keyGroupsEnabled);
+
+  bool debugGroupsEnabled = false;
+
+  void debugSetGroupsEnabled(bool value) {
+    if (!kDebugMode) return;
+    debugGroupsEnabled = value;
+    notifyListeners();
+  }
 
   /// Último dia (YYYY-MM-DD, inclusive) do Peregrino+ grátis no lançamento.
   /// Vazio ou inválido: sem promoção.

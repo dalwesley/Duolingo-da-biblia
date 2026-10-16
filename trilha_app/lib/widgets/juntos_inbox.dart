@@ -6,6 +6,7 @@ import '../services/companion_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
 import '../services/recognition_service.dart';
+import '../services/remote_config_service.dart';
 import '../services/room_service.dart';
 import '../theme/app_theme.dart';
 import 'league_outcome_card.dart';
@@ -28,7 +29,10 @@ class JuntosInbox extends StatelessWidget {
   static int pending(BuildContext context) {
     var n = caravanPending(context);
     if (context.watch<CompanionService>().incomingNudge != null) n++;
-    n += context.watch<RoomService>().incoming.length;
+    // Convites de grupo só contam com os grupos abertos.
+    if (context.watch<RemoteConfigService>().groupsEnabled) {
+      n += context.watch<RoomService>().incoming.length;
+    }
     return n;
   }
 
