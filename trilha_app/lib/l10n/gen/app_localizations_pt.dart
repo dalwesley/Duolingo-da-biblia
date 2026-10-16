@@ -6215,6 +6215,48 @@ class AppLocalizationsPt extends AppLocalizations {
       'Porção de hoje concluída. Volte amanhã — ou continue explorando a Bíblia livremente.';
 
   @override
+  String get plusNoticeContinue => 'Continuar com o Peregrino+';
+
+  @override
+  String plusNoticeEndedBody(String date) {
+    return 'O lançamento terminou em $date. Obrigado por caminhar com a gente desde o começo.';
+  }
+
+  @override
+  String get plusNoticeEndedTitle => 'O Peregrino+ grátis acabou';
+
+  @override
+  String plusNoticeEndingBody(String date) {
+    return 'Ele vai até $date. Depois, você escolhe se quer continuar.';
+  }
+
+  @override
+  String get plusNoticeEndingTitle => 'Seu Peregrino+ grátis está acabando';
+
+  @override
+  String get plusNoticeFreeBible => 'A Bíblia completa';
+
+  @override
+  String get plusNoticeFreeHeader => 'Continua grátis, sempre';
+
+  @override
+  String get plusNoticeFreeScenes => 'Todas as cenas e trilhas, nos 3 modos';
+
+  @override
+  String get plusNoticeFreeSocial => 'Liga, Caravana e Juntos';
+
+  @override
+  String get plusNoticeFreeStreak => 'Sua sequência diária e os lembretes';
+
+  @override
+  String get plusNoticeLockedHeader => 'Agora fica no Peregrino+';
+
+  @override
+  String plusNoticeLockedHeaderSoon(String date) {
+    return 'A partir de $date, fica no Peregrino+';
+  }
+
+  @override
   String plusOfferDaysLeft(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -6223,22 +6265,6 @@ class AppLocalizationsPt extends AppLocalizations {
       one: 'Falta 1 dia',
     );
     return '$_temp0';
-  }
-
-  @override
-  String get plusOfferEndedBody =>
-      'Obrigado por caminhar com a gente. Cenas, modos e Bíblia continuam grátis. A revisão da semana e Minha caminhada agora ficam no Peregrino+.';
-
-  @override
-  String get plusOfferEndedTitle => 'O lançamento acabou';
-
-  @override
-  String get plusOfferEndingBody =>
-      'Depois, a revisão da semana e Minha caminhada ficam no Peregrino+. Cenas, modos e Bíblia continuam grátis.';
-
-  @override
-  String plusOfferEndingTitle(String date) {
-    return 'O Peregrino+ grátis vai até $date';
   }
 
   @override
@@ -7597,7 +7623,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get settingsPlusTeaser => 'Revisão da semana e Minha caminhada';
+  String get settingsPlusTeaser => 'Revisão da semana, constância e reforço';
 
   @override
   String get settingsProgressInCloud => 'Progresso na nuvem';

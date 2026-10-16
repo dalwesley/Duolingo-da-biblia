@@ -6187,6 +6187,48 @@ class AppLocalizationsEn extends AppLocalizations {
       'Today\'s portion is done. Come back tomorrow — or keep exploring the Bible freely.';
 
   @override
+  String get plusNoticeContinue => 'Continue with Pilgrim+';
+
+  @override
+  String plusNoticeEndedBody(String date) {
+    return 'Launch ended on $date. Thank you for walking with us from the start.';
+  }
+
+  @override
+  String get plusNoticeEndedTitle => 'Free Pilgrim+ has ended';
+
+  @override
+  String plusNoticeEndingBody(String date) {
+    return 'It lasts until $date. After that, you choose whether to continue.';
+  }
+
+  @override
+  String get plusNoticeEndingTitle => 'Your free Pilgrim+ is ending';
+
+  @override
+  String get plusNoticeFreeBible => 'The full Bible';
+
+  @override
+  String get plusNoticeFreeHeader => 'Still free, always';
+
+  @override
+  String get plusNoticeFreeScenes => 'Every scene and trail, in all 3 modes';
+
+  @override
+  String get plusNoticeFreeSocial => 'League, Caravan and Together';
+
+  @override
+  String get plusNoticeFreeStreak => 'Your daily streak and reminders';
+
+  @override
+  String get plusNoticeLockedHeader => 'Now part of Pilgrim+';
+
+  @override
+  String plusNoticeLockedHeaderSoon(String date) {
+    return 'From $date, part of Pilgrim+';
+  }
+
+  @override
   String plusOfferDaysLeft(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -6195,22 +6237,6 @@ class AppLocalizationsEn extends AppLocalizations {
       one: '1 day left',
     );
     return '$_temp0';
-  }
-
-  @override
-  String get plusOfferEndedBody =>
-      'Thanks for walking with us. Scenes, modes and the Bible stay free. The weekly review and My walk are now part of Pilgrim+.';
-
-  @override
-  String get plusOfferEndedTitle => 'Launch is over';
-
-  @override
-  String get plusOfferEndingBody =>
-      'After that, the weekly review and My walk stay in Pilgrim+. Scenes, modes and the Bible stay free.';
-
-  @override
-  String plusOfferEndingTitle(String date) {
-    return 'Free Pilgrim+ lasts until $date';
   }
 
   @override
@@ -7579,7 +7605,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get settingsPlusTeaser => 'Weekly review and My walk';
+  String get settingsPlusTeaser => 'Weekly review, consistency and practice';
 
   @override
   String get settingsProgressInCloud => 'Progress in the cloud';

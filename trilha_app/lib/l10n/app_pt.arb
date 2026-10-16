@@ -4372,22 +4372,44 @@
   "planTitle": "Plano de leitura",
   "planTodayChapters": "Capítulos de hoje",
   "planTodayDoneBody": "Porção de hoje concluída. Volte amanhã — ou continue explorando a Bíblia livremente.",
+  "plusNoticeContinue": "Continuar com o Peregrino+",
+  "plusNoticeEndedBody": "O lançamento terminou em {date}. Obrigado por caminhar com a gente desde o começo.",
+  "@plusNoticeEndedBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "plusNoticeEndedTitle": "O Peregrino+ grátis acabou",
+  "plusNoticeEndingBody": "Ele vai até {date}. Depois, você escolhe se quer continuar.",
+  "@plusNoticeEndingBody": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "plusNoticeEndingTitle": "Seu Peregrino+ grátis está acabando",
+  "plusNoticeFreeBible": "A Bíblia completa",
+  "plusNoticeFreeHeader": "Continua grátis, sempre",
+  "plusNoticeFreeScenes": "Todas as cenas e trilhas, nos 3 modos",
+  "plusNoticeFreeSocial": "Liga, Caravana e Juntos",
+  "plusNoticeFreeStreak": "Sua sequência diária e os lembretes",
+  "plusNoticeLockedHeader": "Agora fica no Peregrino+",
+  "plusNoticeLockedHeaderSoon": "A partir de {date}, fica no Peregrino+",
+  "@plusNoticeLockedHeaderSoon": {
+    "placeholders": {
+      "date": {
+        "type": "String"
+      }
+    }
+  },
   "plusOfferDaysLeft": "{count, plural, =1{Falta 1 dia} other{Faltam {count} dias}}",
   "@plusOfferDaysLeft": {
     "placeholders": {
       "count": {
         "type": "int"
-      }
-    }
-  },
-  "plusOfferEndedBody": "Obrigado por caminhar com a gente. Cenas, modos e Bíblia continuam grátis. A revisão da semana e Minha caminhada agora ficam no Peregrino+.",
-  "plusOfferEndedTitle": "O lançamento acabou",
-  "plusOfferEndingBody": "Depois, a revisão da semana e Minha caminhada ficam no Peregrino+. Cenas, modos e Bíblia continuam grátis.",
-  "plusOfferEndingTitle": "O Peregrino+ grátis vai até {date}",
-  "@plusOfferEndingTitle": {
-    "placeholders": {
-      "date": {
-        "type": "String"
       }
     }
   },
@@ -5281,7 +5303,7 @@
       }
     }
   },
-  "settingsPlusTeaser": "Revisão da semana e Minha caminhada",
+  "settingsPlusTeaser": "Revisão da semana, constância e reforço",
   "settingsProgressInCloud": "Progresso na nuvem",
   "settingsProgressRestored": "Progresso restaurado.",
   "settingsReminderAt": "Às {hour}h · toque para mudar",

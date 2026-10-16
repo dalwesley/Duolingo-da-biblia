@@ -9543,35 +9543,83 @@ abstract class AppLocalizations {
   /// **'Porção de hoje concluída. Volte amanhã — ou continue explorando a Bíblia livremente.'**
   String get planTodayDoneBody;
 
+  /// No description provided for @plusNoticeContinue.
+  ///
+  /// In pt, this message translates to:
+  /// **'Continuar com o Peregrino+'**
+  String get plusNoticeContinue;
+
+  /// No description provided for @plusNoticeEndedBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'O lançamento terminou em {date}. Obrigado por caminhar com a gente desde o começo.'**
+  String plusNoticeEndedBody(String date);
+
+  /// No description provided for @plusNoticeEndedTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'O Peregrino+ grátis acabou'**
+  String get plusNoticeEndedTitle;
+
+  /// No description provided for @plusNoticeEndingBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ele vai até {date}. Depois, você escolhe se quer continuar.'**
+  String plusNoticeEndingBody(String date);
+
+  /// No description provided for @plusNoticeEndingTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu Peregrino+ grátis está acabando'**
+  String get plusNoticeEndingTitle;
+
+  /// No description provided for @plusNoticeFreeBible.
+  ///
+  /// In pt, this message translates to:
+  /// **'A Bíblia completa'**
+  String get plusNoticeFreeBible;
+
+  /// No description provided for @plusNoticeFreeHeader.
+  ///
+  /// In pt, this message translates to:
+  /// **'Continua grátis, sempre'**
+  String get plusNoticeFreeHeader;
+
+  /// No description provided for @plusNoticeFreeScenes.
+  ///
+  /// In pt, this message translates to:
+  /// **'Todas as cenas e trilhas, nos 3 modos'**
+  String get plusNoticeFreeScenes;
+
+  /// No description provided for @plusNoticeFreeSocial.
+  ///
+  /// In pt, this message translates to:
+  /// **'Liga, Caravana e Juntos'**
+  String get plusNoticeFreeSocial;
+
+  /// No description provided for @plusNoticeFreeStreak.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sua sequência diária e os lembretes'**
+  String get plusNoticeFreeStreak;
+
+  /// No description provided for @plusNoticeLockedHeader.
+  ///
+  /// In pt, this message translates to:
+  /// **'Agora fica no Peregrino+'**
+  String get plusNoticeLockedHeader;
+
+  /// No description provided for @plusNoticeLockedHeaderSoon.
+  ///
+  /// In pt, this message translates to:
+  /// **'A partir de {date}, fica no Peregrino+'**
+  String plusNoticeLockedHeaderSoon(String date);
+
   /// No description provided for @plusOfferDaysLeft.
   ///
   /// In pt, this message translates to:
   /// **'{count, plural, =1{Falta 1 dia} other{Faltam {count} dias}}'**
   String plusOfferDaysLeft(int count);
-
-  /// No description provided for @plusOfferEndedBody.
-  ///
-  /// In pt, this message translates to:
-  /// **'Obrigado por caminhar com a gente. Cenas, modos e Bíblia continuam grátis. A revisão da semana e Minha caminhada agora ficam no Peregrino+.'**
-  String get plusOfferEndedBody;
-
-  /// No description provided for @plusOfferEndedTitle.
-  ///
-  /// In pt, this message translates to:
-  /// **'O lançamento acabou'**
-  String get plusOfferEndedTitle;
-
-  /// No description provided for @plusOfferEndingBody.
-  ///
-  /// In pt, this message translates to:
-  /// **'Depois, a revisão da semana e Minha caminhada ficam no Peregrino+. Cenas, modos e Bíblia continuam grátis.'**
-  String get plusOfferEndingBody;
-
-  /// No description provided for @plusOfferEndingTitle.
-  ///
-  /// In pt, this message translates to:
-  /// **'O Peregrino+ grátis vai até {date}'**
-  String plusOfferEndingTitle(String date);
 
   /// No description provided for @plusOfferFromPrice.
   ///
@@ -11772,7 +11820,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsPlusTeaser.
   ///
   /// In pt, this message translates to:
-  /// **'Revisão da semana e Minha caminhada'**
+  /// **'Revisão da semana, constância e reforço'**
   String get settingsPlusTeaser;
 
   /// No description provided for @settingsProgressInCloud.

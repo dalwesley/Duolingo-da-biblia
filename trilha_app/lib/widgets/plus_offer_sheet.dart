@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../l10n/app_language.dart';
 import '../screens/paywall_screen.dart';
+import '../screens/plus_promo_notice_screen.dart';
 import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -52,18 +52,26 @@ Future<void> showPlusOfferSheet(
 }) async {
   await _markShown(kind, week);
   if (!context.mounted) return;
-  if (kind == PlusOfferKind.sevenScenes) ActHaptics.confirm();
-  await showAppSheet<void>(
-    context,
-    builder: (_) => _PlusOfferSheet(kind: kind, promoUntil: promoUntil),
-  );
+  // Fim da promoção: aviso grande, em tela inteira.
+  if (kind != PlusOfferKind.sevenScenes) {
+    await Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        fullscreenDialog: true,
+        builder: (_) => PlusPromoNoticeScreen(
+          kind: kind,
+          promoUntil: promoUntil ?? DateTime.now(),
+        ),
+      ),
+    );
+    return;
+  }
+  ActHaptics.confirm();
+  await showAppSheet<void>(context, builder: (_) => const _PlusOfferSheet());
 }
 
+/// Oferta das 7 cenas: comemoração + Peregrino+.
 class _PlusOfferSheet extends StatelessWidget {
-  final PlusOfferKind kind;
-  final DateTime? promoUntil;
-
-  const _PlusOfferSheet({required this.kind, this.promoUntil});
+  const _PlusOfferSheet();
 
   @override
   Widget build(BuildContext context) {
@@ -73,39 +81,11 @@ class _PlusOfferSheet extends StatelessWidget {
     final annual = sub.annualPackage;
     final trial = annual == null ? null : SubscriptionService.trialDays(annual);
     final perMonth = annual?.storeProduct.pricePerMonthString;
-    final celebrate = kind == PlusOfferKind.sevenScenes;
-
-    final now = DateTime.now();
-    final today = DateTime(now.year, now.month, now.day);
-    final daysLeft = promoUntil == null
-        ? 0
-        : promoUntil!.difference(today).inDays + 1;
-    final date = promoUntil == null
-        ? ''
-        : DateFormat(
-            'd MMM',
-            l10n.localeName,
-          ).format(promoUntil!).replaceAll('.', '');
-    final (title, body) = switch (kind) {
-      PlusOfferKind.sevenScenes => (
-        l10n.plusOfferScenesTitle(PlusOffers.scenesForOffer),
-        l10n.plusOfferScenesBody,
-      ),
-      PlusOfferKind.promoEndingSoon => (
-        l10n.plusOfferEndingTitle(date),
-        l10n.plusOfferEndingBody,
-      ),
-      PlusOfferKind.promoEnded => (
-        l10n.plusOfferEndedTitle,
-        l10n.plusOfferEndedBody,
-      ),
-    };
+    const kind = PlusOfferKind.sevenScenes;
 
     return AppSheetPanel(
       tint: AppRoles.reward,
-      background: celebrate
-          ? const ConfettiOverlay(active: true, cinematic: true)
-          : null,
+      background: const ConfettiOverlay(active: true, cinematic: true),
       padding: const EdgeInsets.fromLTRB(
         AppSpace.xl,
         AppSpace.screen,
@@ -117,24 +97,18 @@ class _PlusOfferSheet extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           AppSheetHeader(
-            leading: CloudMascot(
-              face: celebrate ? CloudFace.sucesso : CloudFace.feliz,
-              size: 104,
-            ),
+            leading: const CloudMascot(face: CloudFace.sucesso, size: 104),
             eyebrow: l10n.paywallTitle,
             eyebrowColor: AppRoles.reward,
-            title: title,
+            title: l10n.plusOfferScenesTitle(PlusOffers.scenesForOffer),
             center: true,
             celebration: true,
           ),
           const SizedBox(height: AppSpace.md),
-          if (celebrate)
-            const _SceneMarks(count: PlusOffers.scenesForOffer)
-          else if (kind == PlusOfferKind.promoEndingSoon && daysLeft > 0)
-            _Countdown(days: daysLeft),
+          const _SceneMarks(count: PlusOffers.scenesForOffer),
           const SizedBox(height: AppSpace.md),
           Text(
-            body,
+            l10n.plusOfferScenesBody,
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 14,
@@ -213,32 +187,6 @@ class _SceneMarks extends StatelessWidget {
               ),
             ),
         ],
-      ),
-    );
-  }
-}
-
-/// Contagem até o fim da promoção.
-class _Countdown extends StatelessWidget {
-  final int days;
-
-  const _Countdown({required this.days});
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Center(
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 8),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(AppRadii.md),
-          color: AppMetrics.accentFill(alpha: 0.14),
-          border: Border.all(color: AppMetrics.accentBorder(alpha: 0.7)),
-        ),
-        child: Text(
-          context.l10n.plusOfferDaysLeft(days),
-          style: AppTypography.display(size: 22, color: a.text),
-        ),
       ),
     );
   }
