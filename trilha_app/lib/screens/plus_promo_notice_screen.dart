@@ -98,57 +98,70 @@ class PlusPromoNoticeScreen extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: AppSpace.md),
-                  Text(
-                    l10n.paywallTitle.toUpperCase(),
-                    textAlign: TextAlign.center,
-                    style: AppTypography.body(
-                      size: 12,
-                      weight: FontWeight.w800,
-                      color: AppRoles.reward,
-                    ),
-                  ),
-                  const SizedBox(height: AppSpace.sm),
-                  Text(
-                    _ended
-                        ? l10n.plusNoticeEndedTitle
-                        : l10n.plusNoticeEndingTitle,
-                    textAlign: TextAlign.center,
-                    style: AppTypography.display(size: 30, color: a.text),
-                  ),
-                  const SizedBox(height: AppSpace.sm),
-                  Text(
-                    _ended
-                        ? l10n.plusNoticeEndedBody(date)
-                        : l10n.plusNoticeEndingBody(date),
-                    textAlign: TextAlign.center,
-                    style: AppTypography.body(
-                      size: 14,
-                      height: 1.45,
-                      color: a.textSecondary,
-                    ),
-                  ),
-                  if (!_ended && daysLeft > 0) ...[
-                    const SizedBox(height: AppSpace.md),
-                    Center(
-                      child: Container(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 18,
-                          vertical: 8,
-                        ),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(AppRadii.md),
-                          color: AppMetrics.accentFill(alpha: 0.14),
-                          border: Border.all(
-                            color: AppMetrics.accentBorder(alpha: 0.7),
+                  GlassCard(
+                    padding: const EdgeInsets.fromLTRB(20, 18, 20, 20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        Text(
+                          l10n.paywallTitle.toUpperCase(),
+                          textAlign: TextAlign.center,
+                          style: AppTypography.body(
+                            size: 12,
+                            weight: FontWeight.w800,
+                            color: AppRoles.reward,
                           ),
                         ),
-                        child: Text(
-                          l10n.plusOfferDaysLeft(daysLeft),
-                          style: AppTypography.display(size: 22, color: a.text),
+                        const SizedBox(height: AppSpace.sm),
+                        Text(
+                          _ended
+                              ? l10n.plusNoticeEndedTitle
+                              : l10n.plusNoticeEndingTitle,
+                          textAlign: TextAlign.center,
+                          style: AppTypography.display(size: 30, color: a.text),
                         ),
-                      ),
+                        const SizedBox(height: AppSpace.sm),
+                        Text(
+                          _ended
+                              ? l10n.plusNoticeEndedBody(date)
+                              : l10n.plusNoticeEndingBody(date),
+                          textAlign: TextAlign.center,
+                          style: AppTypography.body(
+                            size: 14,
+                            height: 1.45,
+                            color: a.textSecondary,
+                          ),
+                        ),
+                        if (!_ended && daysLeft > 0) ...[
+                          const SizedBox(height: AppSpace.md),
+                          Center(
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 18,
+                                vertical: 8,
+                              ),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(
+                                  AppRadii.md,
+                                ),
+                                color: AppMetrics.accentFill(alpha: 0.14),
+                                border: Border.all(
+                                  color: AppMetrics.accentBorder(alpha: 0.7),
+                                ),
+                              ),
+                              child: Text(
+                                l10n.plusOfferDaysLeft(daysLeft),
+                                style: AppTypography.display(
+                                  size: 22,
+                                  color: a.text,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ],
                     ),
-                  ],
+                  ),
                   const SizedBox(height: AppSpace.xl),
                   _FreeBlock(title: l10n.plusNoticeFreeHeader, labels: free),
                   const SizedBox(height: AppSpace.md),

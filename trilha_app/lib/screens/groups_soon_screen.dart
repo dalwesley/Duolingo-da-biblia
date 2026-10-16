@@ -116,29 +116,37 @@ class _GroupsSoonScreenState extends State<GroupsSoonScreen> {
                     ),
                   ),
                   const SizedBox(height: AppSpace.md),
-                  Text(
-                    l10n.groupsSoonEyebrow.toUpperCase(),
-                    textAlign: TextAlign.center,
-                    style: AppTypography.body(
-                      size: 12,
-                      weight: FontWeight.w800,
-                      color: AppRoles.reward,
-                    ),
-                  ),
-                  const SizedBox(height: AppSpace.sm),
-                  Text(
-                    l10n.groupsSoonTitle,
-                    textAlign: TextAlign.center,
-                    style: AppTypography.display(size: 30, color: a.text),
-                  ),
-                  const SizedBox(height: AppSpace.sm),
-                  Text(
-                    l10n.groupsSoonBody,
-                    textAlign: TextAlign.center,
-                    style: AppTypography.body(
-                      size: 14,
-                      height: 1.45,
-                      color: a.textSecondary,
+                  GlassCard(
+                    padding: const EdgeInsets.fromLTRB(20, 18, 20, 20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        Text(
+                          l10n.groupsSoonEyebrow.toUpperCase(),
+                          textAlign: TextAlign.center,
+                          style: AppTypography.body(
+                            size: 12,
+                            weight: FontWeight.w800,
+                            color: AppRoles.reward,
+                          ),
+                        ),
+                        const SizedBox(height: AppSpace.sm),
+                        Text(
+                          l10n.groupsSoonTitle,
+                          textAlign: TextAlign.center,
+                          style: AppTypography.display(size: 30, color: a.text),
+                        ),
+                        const SizedBox(height: AppSpace.sm),
+                        Text(
+                          l10n.groupsSoonBody,
+                          textAlign: TextAlign.center,
+                          style: AppTypography.body(
+                            size: 14,
+                            height: 1.45,
+                            color: a.textSecondary,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                   const SizedBox(height: AppSpace.xl),

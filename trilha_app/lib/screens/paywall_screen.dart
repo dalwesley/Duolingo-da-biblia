@@ -145,24 +145,35 @@ class _PaywallScreenState extends State<PaywallScreen> {
                     ),
                   ),
                   const SizedBox(height: AppSpace.md),
-                  Text(
-                    paid
-                        ? l10n.paywallAlreadyPlus
-                        : promoDate != null
-                        ? l10n.paywallLaunchFreeTitle
-                        : l10n.paywallHeadline,
-                    textAlign: TextAlign.center,
-                    style: AppTypography.display(size: 28, color: a.text),
-                  ),
-                  const SizedBox(height: AppSpace.sm),
-                  Text(
-                    paid
-                        ? l10n.paywallThanks
-                        : promoDate != null
-                        ? l10n.paywallLaunchFreeBody(promoDate)
-                        : l10n.paywallPitch,
-                    textAlign: TextAlign.center,
-                    style: AppTypography.body(size: 14, color: a.textSecondary),
+                  GlassCard(
+                    padding: const EdgeInsets.fromLTRB(20, 18, 20, 20),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        Text(
+                          paid
+                              ? l10n.paywallAlreadyPlus
+                              : promoDate != null
+                              ? l10n.paywallLaunchFreeTitle
+                              : l10n.paywallHeadline,
+                          textAlign: TextAlign.center,
+                          style: AppTypography.display(size: 28, color: a.text),
+                        ),
+                        const SizedBox(height: AppSpace.sm),
+                        Text(
+                          paid
+                              ? l10n.paywallThanks
+                              : promoDate != null
+                              ? l10n.paywallLaunchFreeBody(promoDate)
+                              : l10n.paywallPitch,
+                          textAlign: TextAlign.center,
+                          style: AppTypography.body(
+                            size: 14,
+                            color: a.textSecondary,
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                   const SizedBox(height: AppSpace.xl),
                   if (paid) ...[
