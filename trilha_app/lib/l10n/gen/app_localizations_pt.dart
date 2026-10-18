@@ -5739,31 +5739,39 @@ class AppLocalizationsPt extends AppLocalizations {
       'Mudar de plano ou cancelar é na App Store ou no Google Play.';
 
   @override
-  String get paywallPerkBadgeBody => 'No seu perfil, para a Caravana ver.';
+  String get paywallPerkBadgeBody =>
+      'Um selo no seu perfil. Quem abre seu nome na Caravana vê que você apoia o Stway.';
 
   @override
   String get paywallPerkBadgeTitle => 'Selo de apoiador';
 
   @override
   String get paywallPerkReinforceBody =>
-      'Seu acerto por modo e gesto, e perguntas do que você mais erra.';
+      'No perfil, o tipo de pergunta que você mais erra. Depois, um treino só com esse tipo.';
 
   @override
   String get paywallPerkReinforceTitle => 'Reforço do ponto fraco';
 
   @override
+  String get paywallPerkSeasonBody =>
+      'Advento, Páscoa, Natal e muito mais. Trilhas exclusivas para quem é Peregrino+.';
+
+  @override
+  String get paywallPerkSeasonTitle => 'Temporadas sazonais';
+
+  @override
   String get paywallPerkStreakBody =>
-      'A sequência semana a semana e o histórico das lamparinas, no perfil.';
+      'Acompanhe sua sequência, os dias desta semana e como foram os últimos três meses.';
 
   @override
   String get paywallPerkStreakTitle => 'Sua constância';
 
   @override
   String get paywallPerkWeeklyBody =>
-      'O “Hoje:” de cada cena e 3 perguntas, todo domingo.';
+      'No domingo, uma cena especial para reforçar tudo o que você aprendeu na semana.';
 
   @override
-  String get paywallPerkWeeklyTitle => 'Revisão da semana';
+  String get paywallPerkWeeklyTitle => 'Revisão semanal';
 
   @override
   String get paywallPitch =>
@@ -7267,6 +7275,11 @@ class AppLocalizationsPt extends AppLocalizations {
   String get seasonNotTodayYet => 'Ainda não é hoje';
 
   @override
+  String seasonPlusFromDay(int day) {
+    return 'Peregrino+ a partir do dia $day.';
+  }
+
+  @override
   String get seasonReviewEmpty =>
       'Ainda não há perguntas desta semana no aparelho. Abra um dia primeiro.';
 
@@ -7697,7 +7710,8 @@ class AppLocalizationsPt extends AppLocalizations {
   String get settingsPlusSubscribe => 'Assinar o Peregrino+';
 
   @override
-  String get settingsPlusTeaser => 'Revisão da semana, constância e reforço';
+  String get settingsPlusTeaser =>
+      'Temporadas sazonais, revisão semanal, constância e reforço';
 
   @override
   String get settingsProgressInCloud => 'Progresso na nuvem';

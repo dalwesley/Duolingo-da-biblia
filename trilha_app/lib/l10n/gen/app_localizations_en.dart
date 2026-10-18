@@ -5710,28 +5710,36 @@ class AppLocalizationsEn extends AppLocalizations {
       'Change plan or cancel in the App Store or Google Play.';
 
   @override
-  String get paywallPerkBadgeBody => 'On your profile, for the Caravan to see.';
+  String get paywallPerkBadgeBody =>
+      'A badge on your profile. People who open your name in the Caravan see that you support Stway.';
 
   @override
   String get paywallPerkBadgeTitle => 'Supporter badge';
 
   @override
   String get paywallPerkReinforceBody =>
-      'Your accuracy by mode and gesture, and questions on what you miss most.';
+      'On your profile, the kind of question you miss most. Then a practice round of only that kind.';
 
   @override
   String get paywallPerkReinforceTitle => 'Practice your weak spot';
 
   @override
+  String get paywallPerkSeasonBody =>
+      'Advent, Easter, Christmas and more. Journeys exclusive to Pilgrim+.';
+
+  @override
+  String get paywallPerkSeasonTitle => 'Seasonal journeys';
+
+  @override
   String get paywallPerkStreakBody =>
-      'Your streak week by week and your lamp history, on your profile.';
+      'Follow your streak, the days of this week, and how the last three months went.';
 
   @override
   String get paywallPerkStreakTitle => 'Your consistency';
 
   @override
   String get paywallPerkWeeklyBody =>
-      'Each scene\'s “Today:” and 3 questions, every Sunday.';
+      'On Sunday, a special scene to reinforce everything you learned that week.';
 
   @override
   String get paywallPerkWeeklyTitle => 'Weekly review';
@@ -7240,6 +7248,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get seasonNotTodayYet => 'Not today yet';
 
   @override
+  String seasonPlusFromDay(int day) {
+    return 'Pilgrim+ from day $day.';
+  }
+
+  @override
   String get seasonReviewEmpty =>
       'There are no questions from this week on the device yet. Open a day first.';
 
@@ -7678,7 +7691,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsPlusSubscribe => 'Get Pilgrim+';
 
   @override
-  String get settingsPlusTeaser => 'Weekly review, consistency and practice';
+  String get settingsPlusTeaser =>
+      'Seasonal journeys, weekly review, consistency and practice';
 
   @override
   String get settingsProgressInCloud => 'Progress in the cloud';

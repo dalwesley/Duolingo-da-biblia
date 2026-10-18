@@ -90,7 +90,7 @@ lib/
 | `BibleService` / `BibleStudyService` | Bíblia + Strong offline |
 | `TtsService` | Leitura em voz alta — **aba Bíblia** |
 | `RemoteConfigService` | Liga / baú da sala / bônus de convite |
-| `SubscriptionService` | Peregrino+ via RevenueCat — **no-op sem chaves** |
+| `SubscriptionService` | Peregrino+ via RevenueCat — **no-op sem chaves**; benefícios abertos até a loja existir |
 | `AppUpdateService` | Soft/force update via `content_meta/app_release` |
 | `AnalyticsService` | Funil de eventos |
 | `QuestionReportService` | Relatos de pergunta |
@@ -242,7 +242,7 @@ Contrato de sessão: [`SESSAO_TREINO.md`](SESSAO_TREINO.md) v1.2.
 | Medalhas v3.2 | feito — faísca, cofres, sazonal, proximidade |
 | `lifeChallenge` / `dailyChallenge` | **não** no player (`MissionStudy` ignora o campo) |
 | `content_exercises` / `skillEstimates` | **não** — fases futuras |
-| Monetização / IAP | casca RevenueCat **inativa** (chaves vazias); Caminhada/áudio/revisão no código; perk extra = companheiros |
+| Monetização / IAP | Peregrino+ **inativo** (chaves vazias). Revisão, constância, reforço e selo no código; Caminhada e áudio grátis. Sem perk de companheiros |
 | Jornada canônica (unlock) | código existe; bypass só com `--dart-define=OPEN_ALL_TRAILS=true` |
 
 ### Hierarquia de dados (alvo)
@@ -443,7 +443,7 @@ Não versionar secrets (`.env`, keystores). Ver `trilha_app/RELEASE.md` para SHA
 | Progresso | `trilha_app/lib/services/progress_service.dart` |
 | Catálogo | `trilha_app/lib/services/content_catalog_service.dart` |
 | Sessão | `session_composer.dart` · `lesson_screen.dart` · `exercise_panel.dart` |
-| Assinatura (casca) | `subscription_service.dart` · `paywall_screen.dart` |
+| Assinatura | `subscription_service.dart` · `paywall_screen.dart` · `weekly_review_screen.dart` |
 | Medalhas v3.2 | `models/pilgrim_medal_catalog.dart` |
 | Modelos de trilha | `trilha_app/lib/models/trail.dart` |
 | Persistência admin | `admin/src/db.js` |

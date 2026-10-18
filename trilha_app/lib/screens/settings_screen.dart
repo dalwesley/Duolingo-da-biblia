@@ -724,6 +724,8 @@ class _SettingsScreenState extends State<SettingsScreen>
       );
       return;
     }
+    await context.read<SubscriptionService>().logOut();
+    if (!mounted) return;
     await _leaveToLogin();
   }
 

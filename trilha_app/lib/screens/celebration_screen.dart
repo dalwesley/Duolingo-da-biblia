@@ -7,6 +7,7 @@ import '../data/entry_trails.dart';
 import '../l10n/app_language.dart';
 import '../data/question_bank.dart';
 import '../data/season_walk_catalog.dart';
+import '../models/season_walk.dart';
 import '../data/trail_repository.dart';
 import '../models/caravan_pilgrim_profile.dart';
 import '../models/difficulty.dart';
@@ -342,6 +343,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
       }
       _streakBefore = progress.streak;
       final walkedBefore = progress.walkedToday;
+      final plusOpen = context.read<SubscriptionService>().plusFeaturesOpen;
       // Fanfarra junto da entrada do herói — não espera rede/salvamento.
       Future.delayed(const Duration(milliseconds: 300), () {
         if (!mounted) return;
@@ -381,7 +383,9 @@ class _CelebrationScreenState extends State<CelebrationScreen>
               if (date.isAfter(today)) continue;
               final ymd =
                   '${date.year.toString().padLeft(4, '0')}-${date.month.toString().padLeft(2, '0')}-${date.day.toString().padLeft(2, '0')}';
-              await progress.markWalkDate(campaign.id, ymd);
+              if (!SeasonWalkAccess.needsPlusDay(d.index) || plusOpen) {
+                await progress.markWalkDate(campaign.id, ymd);
+              }
               break;
             }
             if (firstSealEncounter && mounted) {

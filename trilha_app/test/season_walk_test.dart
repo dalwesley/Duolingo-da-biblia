@@ -20,7 +20,7 @@ void main() {
       expect(c.contains(start.subtract(const Duration(days: 1))), isFalse);
     });
 
-    test('every day up to today is open, no Plus needed', () {
+    test('with Plus, every day up to today is open', () {
       final start = LiturgicalCalendar.adventStart(2026);
       final c = SeasonWalkCatalog.advent2026(start);
       final today = start.add(const Duration(days: 9));
@@ -29,8 +29,36 @@ void main() {
           campaign: c,
           index: i,
           today: today,
+          plusOpen: true,
         );
         expect(access.playable, isTrue, reason: 'day $i');
+        expect(access.needsPlus, isFalse, reason: 'day $i');
+      }
+    });
+
+    test('without Plus, days 1–3 stay open and day 4 asks for it', () {
+      final start = LiturgicalCalendar.adventStart(2026);
+      final c = SeasonWalkCatalog.advent2026(start);
+      final today = start.add(const Duration(days: 9));
+      for (var i = 1; i <= 3; i++) {
+        final access = SeasonWalkCatalog.access(
+          campaign: c,
+          index: i,
+          today: today,
+          plusOpen: false,
+        );
+        expect(access.playable, isTrue, reason: 'day $i');
+      }
+      for (var i = 4; i <= 10; i++) {
+        final access = SeasonWalkCatalog.access(
+          campaign: c,
+          index: i,
+          today: today,
+          plusOpen: false,
+        );
+        expect(access.playable, isFalse, reason: 'day $i');
+        expect(access.needsPlus, isTrue, reason: 'day $i');
+        expect(access.future, isFalse, reason: 'day $i');
       }
     });
 
@@ -41,9 +69,11 @@ void main() {
         campaign: c,
         index: 10,
         today: start,
+        plusOpen: true,
       );
       expect(access.future, isTrue);
       expect(access.playable, isFalse);
+      expect(access.needsPlus, isFalse);
     });
 
     test('in September the 40-day walk is gone; Advent is next', () {

@@ -109,6 +109,14 @@
     "en": "Not today yet",
     "es": "Todavía no es hoy"
   },
+  "seasonPlusFromDay": {
+    "pt": "Peregrino+ a partir do dia {day}.",
+    "en": "Pilgrim+ from day {day}.",
+    "es": "Peregrino+ desde el día {day}.",
+    "placeholders": {
+      "day": "int"
+    }
+  },
   "seasonWeekReviewTitle": {
     "pt": "Revisão da semana {week}",
     "en": "Week {week} review",

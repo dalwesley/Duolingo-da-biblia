@@ -177,6 +177,7 @@ class _MeScreenState extends State<MeScreen> {
           sinceLabel: ProfileHero.sinceFrom(
             progress.firstLessonDate ?? progress.firstOpenDate,
           ),
+          supporter: sub.hasBadge,
           steps: progress.steps,
           missions: progress.completedMissions.length,
           accuracyPercent: accuracy,

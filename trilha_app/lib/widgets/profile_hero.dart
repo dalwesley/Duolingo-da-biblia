@@ -37,6 +37,7 @@ class ProfileHero extends StatelessWidget {
 
   /// "Peregrino desde setembro de 2026".
   final String? sinceLabel;
+  final bool supporter;
   final int steps;
   final int missions;
   final int? accuracyPercent;
@@ -53,6 +54,7 @@ class ProfileHero extends StatelessWidget {
     this.epithet,
     this.epithetColor,
     this.sinceLabel,
+    this.supporter = false,
     required this.steps,
     required this.missions,
     this.accuracyPercent,
@@ -141,6 +143,14 @@ class ProfileHero extends StatelessWidget {
                     color: a.text,
                   ),
                 ),
+                if (supporter) ...[
+                  const SizedBox(height: 8),
+                  SoftBadge(
+                    text: l10n.supporterBadge,
+                    glyph: CinematicGlyph.gift,
+                    accent: AppRoles.reward,
+                  ),
+                ],
                 if ((epithet ?? '').isNotEmpty) ...[
                   const SizedBox(height: 6),
                   Text(

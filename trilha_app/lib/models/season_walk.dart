@@ -16,8 +16,11 @@ class SeasonWalkDay {
     required this.insight,
   });
 
-  DateTime dateOn(DateTime start) =>
-      DateTime(start.year, start.month, start.day).add(Duration(days: index - 1));
+  DateTime dateOn(DateTime start) => DateTime(
+    start.year,
+    start.month,
+    start.day,
+  ).add(Duration(days: index - 1));
 }
 
 class SeasonWalkCampaign {
@@ -39,8 +42,11 @@ class SeasonWalkCampaign {
 
   DateTime get end => days.isEmpty
       ? start
-      : DateTime(start.year, start.month, start.day)
-          .add(Duration(days: days.length - 1));
+      : DateTime(
+          start.year,
+          start.month,
+          start.day,
+        ).add(Duration(days: days.length - 1));
 
   int get length => days.length;
 
@@ -78,13 +84,23 @@ class SeasonWalkAccess {
   final bool playable;
   final bool future;
 
+  /// Dia da temporada que só o Peregrino+ abre. A cena segue livre na trilha.
+  final bool needsPlus;
+
+  /// Os três primeiros dias são de todo mundo. O 4º pede o Plus.
+  static const freeDays = 3;
+
   const SeasonWalkAccess({
     required this.playable,
     this.future = false,
+    this.needsPlus = false,
   });
 
   static const lockedFuture = SeasonWalkAccess(playable: false, future: true);
+  static const lockedPlus = SeasonWalkAccess(playable: false, needsPlus: true);
   static const open = SeasonWalkAccess(playable: true);
+
+  static bool needsPlusDay(int index) => index > freeDays;
 
   /// Prefere ato errado da semana; senão um ainda não usado; senão o primeiro.
   static String? pickReviewActId({

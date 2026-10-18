@@ -11,10 +11,10 @@ App Flutter para missões diárias + painel admin no Firebase.
 | [`docs/PITCH_NOS_VS_ELES.md`](docs/PITCH_NOS_VS_ELES.md) | Pitch 1 página · concorrência |
 | [`docs/TECNICA.md`](docs/TECNICA.md) | Arquitetura, stack, Firestore, sync |
 | [`ROADMAP.md`](ROADMAP.md) | Norte, checklist e prioridades |
-| [`MONETIZATION.md`](MONETIZATION.md) | Hipóteses de receita (IAP casca; Pro depois do D7) |
+| [`MONETIZATION.md`](MONETIZATION.md) | Peregrino+ (código pronto, chaves vazias; ligar depois do D7) |
 | [`docs/MEDALHAS_CALIBRATION.md`](docs/MEDALHAS_CALIBRATION.md) | Medalhas v3.2 vigentes |
 
-**Estado (28 set/2026):** app **1.0.29+29** · 8.370 atos V2 na nuvem · validador verde · sessão 6/8 · D7 **ainda aberto** (planilha vazia). IAP Peregrino+ no código, **chaves vazias**. Fosso vs mercado: pedagogia (6 gestos · Strong) + par (Companhia / Desafio) — não “missões em PT-BR” (Bibliando e Bíblia Fácil já falam isso). Simplificação UX Fases 0–4: [`docs/PLANO_SIMPLIFICACAO.md`](docs/PLANO_SIMPLIFICACAO.md).
+**Estado (28 set/2026):** app **1.0.29+29** · 8.370 atos V2 na nuvem · validador verde · sessão 6/8 · D7 **ainda aberto** (planilha vazia). Peregrino+ no código, **chaves vazias** — revisão, constância, reforço e selo ficam abertos. Fosso vs mercado: pedagogia (6 gestos · Strong) + par (Companhia / Desafio) — não “missões em PT-BR” (Bibliando e Bíblia Fácil já falam isso). Simplificação UX Fases 0–4: [`docs/PLANO_SIMPLIFICACAO.md`](docs/PLANO_SIMPLIFICACAO.md).
 
 Canvas de concorrência: `stway-concorrencia-direta-indireta.canvas.tsx`
 

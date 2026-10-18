@@ -105,7 +105,7 @@ SESSÃO (2–4 min)
 | Retenção medida (D7) | Protocolo pronto; planilha vazia — falta 10–20 testers |
 | Escola editorial vitrine | Infra ok (gerador + TB); falta autor humano em Gn/Sermão |
 | Marca / polish / aquisição | Shell cinemático ok; gigantes ganham por confiança |
-| IAP | Casca Peregrino+ **inativa**; Caminhada/áudio/revisão já no app; não ligar chaves antes do D7 |
+| IAP | Peregrino+ **inativo** (chaves vazias). Caminhada e áudio grátis; revisão trava só com loja. Não ligar chaves antes do D7 |
 | Igreja em escala | YouVersion *Plans with Friends* (até 300) + Hallow Family. Nós: sala ~12 + par |
 | Janela PT-BR | Três vozes dizem “missão”. Fosso = pedagogia, não idioma nem slogan |
 | Prática IRL | `lifeChallenge` ainda fora do player — Bíblia Fácil já vende “missão prática do dia” |

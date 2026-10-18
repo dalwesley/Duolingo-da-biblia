@@ -73,8 +73,9 @@ class TrilhaApp extends StatelessWidget {
             sub.onBadgeChanged = (v) => unawaited(backend.publishSupporter(v));
             unawaited(
               sub.bindUid(backend.uid).then((_) {
-                if (sub.isConfigured) {
-                  return backend.publishSupporter(sub.hasBadge);
+                // Nunca grava `false`: sair da conta não tira o selo da Caravana.
+                if (backend.isActive && sub.hasBadge) {
+                  return backend.publishSupporter(true);
                 }
               }),
             );

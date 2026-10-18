@@ -5760,31 +5760,38 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get paywallPerkBadgeBody =>
-      'En tu perfil, para que la Caravana lo vea.';
+      'Un sello en tu perfil. Quien abre tu nombre en la Caravana ve que apoyas Stway.';
 
   @override
   String get paywallPerkBadgeTitle => 'Sello de apoyo';
 
   @override
   String get paywallPerkReinforceBody =>
-      'Tus aciertos por modo y gesto, y preguntas de lo que más fallas.';
+      'En tu perfil, el tipo de pregunta que más fallas. Después, una práctica solo de ese tipo.';
 
   @override
   String get paywallPerkReinforceTitle => 'Refuerzo del punto débil';
 
   @override
+  String get paywallPerkSeasonBody =>
+      'Adviento, Pascua, Navidad y mucho más. Rutas exclusivas para quien es Peregrino+.';
+
+  @override
+  String get paywallPerkSeasonTitle => 'Temporadas';
+
+  @override
   String get paywallPerkStreakBody =>
-      'Tu racha semana a semana y el historial de lámparas, en tu perfil.';
+      'Sigue tu racha, los días de esta semana y cómo fueron los últimos tres meses.';
 
   @override
   String get paywallPerkStreakTitle => 'Tu constancia';
 
   @override
   String get paywallPerkWeeklyBody =>
-      'El “Hoy:” de cada escena y 3 preguntas, cada domingo.';
+      'El domingo, una escena especial para reforzar todo lo que aprendiste en la semana.';
 
   @override
-  String get paywallPerkWeeklyTitle => 'Repaso de la semana';
+  String get paywallPerkWeeklyTitle => 'Repaso semanal';
 
   @override
   String get paywallPitch =>
@@ -7294,6 +7301,11 @@ class AppLocalizationsEs extends AppLocalizations {
   String get seasonNotTodayYet => 'Todavía no es hoy';
 
   @override
+  String seasonPlusFromDay(int day) {
+    return 'Peregrino+ desde el día $day.';
+  }
+
+  @override
   String get seasonReviewEmpty =>
       'Aún no hay preguntas de esta semana en el aparato. Abre un día primero.';
 
@@ -7728,7 +7740,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get settingsPlusSubscribe => 'Suscribirme a Peregrino+';
 
   @override
-  String get settingsPlusTeaser => 'Repaso de la semana, constancia y refuerzo';
+  String get settingsPlusTeaser =>
+      'Temporadas, repaso semanal, constancia y refuerzo';
 
   @override
   String get settingsProgressInCloud => 'Progreso en la nube';

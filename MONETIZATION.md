@@ -1,308 +1,192 @@
 # Monetização STWAY
 
 Não cobramos para começar. Não cobramos para ler a Palavra.
-Shipar Pro só depois do D7 ok.
+Não preencher as chaves RevenueCat antes do D7 ok.
 
-28 ago 2026 · **estado do código 20 set/2026 abaixo.**
-
----
-
-## Estado no app (20 set)
-
-Não confundir **casca** com **produto**.
-
-| Peça | Código | Produto |
-|------|--------|---------|
-| SDK RevenueCat (`purchases_flutter`) | Sim | Chaves `_apiKeyAndroid` / `_apiKeyIos` **vazias** → nunca inicializa |
-| Tela Peregrino+ | Sim — só em Configurações | Não interrompe sessão (alinhado: sem paywall no splash/missão) |
-| Entitlement `peregrino_plus` | Sim | Sempre `false` sem chaves |
-| Perk implementado | 3 → 6 companheiros | **Não** é nenhum dos 5 itens do Pro abaixo |
-| Soft paywalls (0 lâmpadas, gelo, Strong, dia 3) | **Não** | — |
-| Caminhada (Advento / Quaresma) / revisão da semana | **Sim** | Sem temporada genérica de 40 dias. Dia 4+ e revisão só travam com chaves |
-| Áudio da missão | **Sim** (entrada da missão) | Grátis por enquanto — não está no paywall |
-| Família / Igreja / Stripe | **Não** | — |
-
-Ordem de implementação (seção no fim) **não mudou**. Não preencher as chaves RevenueCat antes da 1ª Caminhada piloto.
+16 out 2026. O produto no código é o **Peregrino+**, e a Caminhada a partir do dia 4 faz parte dele. Áudio, célula e gelo não.
 
 ---
 
-## O que tem no Pro
+## Estado no app
 
-Quem paga **R$ 119,90/ano** ganha isto. Cinco coisas. Nada além.
+Chaves `_apiKeyAndroid` / `_apiKeyIos` **vazias**. O SDK não inicia, ninguém compra, e `plusFeaturesOpen` deixa a Caminhada, a revisão, a constância e o reforço **abertos**. Sem loja e sem promoção, a faixa some.
 
-**1. A Caminhada inteira**
-Uma temporada com data: Advento ou Quaresma. Todo mundo no mesmo dia.
-Grátis: os 3 primeiros dias.
-Pro: o restante da temporada, a revisão no fim de cada semana, o fecho.
+| Peça | Código | Hoje |
+|------|--------|------|
+| RevenueCat (`purchases_flutter`) | Sim | Não inicializa |
+| Paywall | Sim — Ajustes, perfil, revisão, oferta da Home | Sem botão de compra |
+| Entitlement `peregrino_plus` | Sim | Sempre falso |
+| Promoção `plus_launch_free_until` | Sim | Vazia = sem promoção. Ligada, todo mundo tem o Plus e a compra some |
+| Revisão da semana | Sim, com trava | Aberta enquanto não há loja |
+| Constância + reforço do ponto fraco | Sim, no perfil | Abertos enquanto não há loja |
+| Selo de apoiador | Sim, na Caravana (`users/{uid}.supporter`) | Não aparece no herói do próprio perfil |
+| Apoio avulso (`apoio`) | Sim | Some sem a oferta na loja |
+| Caminhada | Sim, a partir do dia 4 | Aberta enquanto não há loja. Dias 1–3 sempre abertos. A cena segue na aba Trilhas |
+| Família / Igreja / Stripe / `isPro` no Firestore | Não | — |
 
-**2. Áudio na missão**
-A passagem lida + 1 insight (~90 segundos). Toda missão. No ônibus, no trânsito.
-
-**3. A semana de volta**
-Uma página com os 7 “Hoje:” da semana + 3 atos de revisão daquele texto.
-Não é a fila de erros. É lembrar a Palavra que você já andou.
-
-**4. Preparo da célula**
-Uma página: “o que este texto pede do grupo nesta semana.”
-Mesmo se a pessoa não for líder. Quem for, sente o plano Igreja.
-
-**5. Não perder o ritmo**
-- Continuar a missão sem gastar lâmpada
-- 3 gelos por semana (grátis tem 1)
-- 3 repairs por mês (grátis tem 1)
-- Strong ilimitado (grátis tem 5 consultas/dia)
-
-Família (SKU à parte, R$ 179,90/ano): as 5 coisas acima em até 5 contas.
+Checklist da loja, ainda em aberto: [`store/ios/app-review-notes-iap.md`](store/ios/app-review-notes-iap.md).
 
 ---
 
-## O que o grátis já tem (não entra no Pro)
+## O que o Peregrino+ dá
 
-- Missão do dia, streak, quests
-- Gênesis → NT nos 3 modos (Observação / Compreensão / Interpretação)
-- Bíblia offline
-- 1 grupo de ~12 pessoas, Companhia, Caravana, Desafio
-- 5 lâmpadas · 1 gelo/semana · 1 repair/mês
-- Strong 5× por dia
-- 3 dias de qualquer estação (Advento/Quaresma)
+Quem assina ganha isto. Cinco coisas.
+
+**1. A Caminhada**
+A temporada no cartão da Home. Os 3 primeiros dias são de todo mundo. Do 4º em diante, o cartão abre o Peregrino+, e a revisão daquela semana também. A cena do dia continua na aba Trilhas. Sem loja, nada trava.
+
+**2. Revisão da semana**
+O “Hoje:” de cada cena feita na semana e 3 perguntas, de preferência as que a pessoa errou. Sem o Plus, a Home ainda mostra que a revisão existe; a tela lista as cenas e leva ao paywall. Não é a fila de erros (essa continua grátis).
+
+**3. Sua constância**
+No perfil: sequência contra a meta, a semana dia a dia, e as últimas 12 semanas (cada coluna é uma lamparina).
+
+**4. Reforço do ponto fraco**
+Acerto por modo e por gesto, e até 5 perguntas do gesto que mais erra, em modo prática.
+
+**5. Selo de apoiador**
+No perfil que a Caravana abre. Quem assina ou quem fez um apoio avulso. A promoção de lançamento não dá selo.
+
+O texto do paywall: o apoio mantém o Stway grátis para quem não pode pagar, e estes benefícios vêm junto.
 
 ---
 
-## O que o Pro *não* tem
+## O que continua grátis
 
-Não é sala maior. Não é criar trilha. Não é Kahoot.
-Isso ou é Igreja (playlist, várias células de 12) ou não entra nunca.
-Ver a seção no fim deste arquivo.
+- Cena do dia, sequência, missões, gelo, lâmpadas, reparo, Strong
+- Cânon nos 3 modos (Observação / Compreensão / Interpretação), inclusive Profundezas
+- Bíblia offline e áudio da cena (passagem + “Hoje:”)
+- Os 3 primeiros dias da Caminhada (o restante pede o Peregrino+; a cena segue na aba Trilhas)
+- 1 companhia, Caravana, grupo, Desafio
+- Fila de erros
+
+---
+
+## Apoio avulso
+
+Oferta RevenueCat `apoio`. Pagamento único. Não libera recurso. Dá o mesmo selo.
+
+Previsto na loja: `apoio_5`, `apoio_15`, `apoio_30`. Some de Ajustes, Trilhas, Bíblia e do fim de trilha enquanto a oferta não existe.
 
 ---
 
 ## Preços
 
-O produto é o **anual**. Mensal existe para o anual parecer barato.
+O app não grava preço. Mostra o que a loja devolver. Anual primeiro na lista.
 
-| | Paga | Equivale a |
-|---|---|---|
-| Pro anual | **R$ 119,90/ano** | R$ 9,99/mês |
-| Pro mensal | R$ 24,90/mês | âncora — poucos devem escolher |
-| Pro Família | R$ 179,90/ano | até 5 contas |
-| Trial | 7 dias | 7º streak **ou** véspera de Caminhada |
-| Célula | R$ 79/mês | até 25 · Pro incluso · web |
-| Igreja | R$ 199/mês | até 100 · web |
-
-Paywall diz: *“R$ 9,99/mês, cobrado R$ 119,90/ano”*.
-Nunca “2 meses grátis”.
-
-Enrolar Apple Small Business (15%). Sem isso o anual líquido cai de ~R$ 102 para ~R$ 84.
-
-Sem a 1ª Caminhada piloto (próxima Quaresma ou Advento), não abrir IAP.
-
----
-
-## As três ideias (salas grandes · criar trilha · Kahoot)
-
-Nenhuma entra no **Pro individual**. Duas viram Igreja, de outro jeito. Uma não entra nunca.
-
-### 1. Grupos maiores — não
-
-Lifeway 2025: célula que discipula tem **8–16** pessoas. Acima disso o membro some, o líder não aguenta, a igreja deveria *abrir outra célula*, não inchar a sala.
-
-Vender “sala de 50” é vender o contrário do produto. O ranking de 80 nomes não é discipulado — é lista de presença.
-
-O código hoje **não tem teto**. Quando houver gate:
-
-- Free / Pro: **1 sala, ~12 pessoas** (tamanho pedagógico, não paywall)
-- Célula (Igreja): até **3 salas de 12**, não 1 sala de 36
-- Igreja: visão de campus (várias células), não um placar único de 100
-
-Quem pede sala grande está pedindo **mais grupos**, não um grupo maior.
-
-### 2. Usuário cria trilhas — não no Pro, não aberto
-
-YouVersion tem plano de parceiro com revisão de 30 dias e *mesmo assim* vira alvo teológico (TPT, autores controversos). STWAY não é devocional: cada missão tem 6 gestos, palco TB, evidência, validador. Autor de célula não produz isso. Gerador no bolso do usuário = teologia duvidosa com o selo STWAY.
-
-Apple exige moderação de UGC (guideline 1.2). Marca de formação bíblica não sobrevive a “qualquer um publica treino”.
-
-O ROADMAP já cravou: trilha privada da sala, **fora** de `content_trails`, **sem** UGC público.
-
-O que *sim*, no plano Igreja (não no Pro):
-
-- **Playlist da sala** — o líder escolhe missões *do catálogo* para a semana. Ordem, não autoria.
-- Depois: trilha privada com teto duro (passagem TB + 1 MCQ + 1 insight, só a sala vê, validador ligado).
-
-Duolingo não deixa o aluno criar o curso. Kahoot deixa, porque Kahoot não promete ensinar a Palavra.
-
-### 3. Kahoot na sala — não
-
-O ROADMAP já lista em **nunca**: *PvP trivia tempo real estilo Desafio Bíblico*.
-
-- A frase-mãe é *“enquanto outros te fazem jogar a Bíblia…”*. Kahoot *é* jogar. Show do Biblião e Impostor Bíblico já donos desse job no BR.
-- Kahoot existe. Igreja usa de graça (10 pessoas) ou ~US$ 3–9/mês. Construir um Kahoot pior, dentro do hábito diário, é outro produto.
-- Tempo real exige todo mundo online na mesma hora. Célula brasileira se encontra 1× por semana. Missão STWAY é **assíncrona** (4 min de manhã).
-- Buzz + velocidade treina o oposto dos 6 gestos: não ler o texto, apertar rápido.
-- Custo: presença, host screen, latência. Meses. Firestore não é motor de quiz ao vivo.
-
-O que *parece* Kahoot e *é* STWAY, só na Igreja, depois do dashboard:
-
-**Encontro** — 10–15 min quando o grupo está junto. 3 atos *desta semana* (já estudados), sem cronômetro, sem pódio de velocidade. O líder projeta; a sala responde. Depois conversam o “Hoje:”. Não é trivia. É a missão em voz alta.
-
-Até lá: a célula abre o Kahoot no projetor. Não é o nosso fosso.
-
----
-
-## O que entra onde
-
-| | Pro (pessoa) | Igreja (líder) | Nunca |
+| | Plano de 28 ago | Laboratório (debug) | Decisão |
 |---|---|---|---|
-| Caminhada + áudio + revisão | sim | incluso | |
-| Gelo / lâmpada / Strong | sim | incluso | packs avulsos |
-| Família (5 contas) | sim | — | |
-| Sala grande | não | **mais salas**, não mais gente na mesma | placar de 80 |
-| Criar trilha | não | playlist do catálogo → depois MCQ privado | UGC público / gerador solto |
-| Quiz ao vivo | não | Encontro (sem buzz), radar | Kahoot / PvP / Desafio Bíblico |
+| Anual | R$ 119,90 | R$ 79,90 | Ainda não cravado na loja |
+| Mensal | R$ 24,90 (âncora) | R$ 12,90 | Mensal continua âncora: existe para o anual parecer barato |
+| Teste | 7 dias, no 7º streak ou na véspera da Caminhada | 14 dias no anual falso | O teste real é o da App Store / Play. Notas de revisão pedem **14 dias** |
+| Vitalício | Proibido | O código mostra se a oferta tiver | Não criar o produto na loja |
+| Família | R$ 179,90/ano, 5 contas | Não existe | Depois |
 
-Regra ([LEARNING_ENGINE](docs/LEARNING_ENGINE.md) §46): *isso torna o usuário melhor em ler, compreender, conectar, interpretar, lembrar ou viver a Palavra?*
-Sala inchada, UGC e buzz: não.
+Paywall diz o preço por mês e o total do período. Nunca “2 meses grátis”.
 
----
-
-## Onde aparece o paywall
-
-Nunca: splash, login, onboarding, primeira trilha, picker de dificuldade.
-
-**Uma vez, forte** — 7º dia de streak **ou** véspera de Caminhada (Advento/Quaresma).
-Sheet com anual destacado, trial de 7 dias.
-Copy: a temporada, não o gelo.
-
-**Nos pontos de dor (suave)**
-- 0 lâmpadas → *Continuar com Pro*
-- Streak em risco → *Proteger caminhada*
-- Strong no teto → *Estudo ilimitado*
-- Dia 3 da Caminhada → *Seguir a temporada*
-- Trilha-escola → *Modo escola*
-- Settings → gerenciar / restaurar / Família / presentear
-
-A indústria oferece trial no dia 0. A gente recusa de propósito:
-trial depois do hábito, D7 intacto.
+Na revisão da Apple, `plus_launch_free_until` fica **vazio**. Com a data preenchida o revisor não acha o botão de compra.
 
 ---
 
-## Família
+## Onde aparece
 
-Casal, filhos, grupo do WhatsApp.
+Nunca: splash, login, onboarding, primeira trilha, no meio da cena.
 
-- 1 pagador + 4 convites (deep link que já existe)
-- R$ 179,90 vs 2 anuais a R$ 239,80 — vale no segundo membro
+**Sozinho, no máximo 1 vez por semana** (Home, sem outra folha aberta):
 
----
+- Promoção acabando (faltam 7 dias ou menos)
+- Promoção acabou
+- 7 cenas concluídas, fora da promoção
 
-## Igreja (fase 2)
+Cada uma dessas, uma vez.
 
-Não é tesouraria nem escala. É discipulado: a célula no mesmo currículo, o líder vê quem travou.
+**No ponto do recurso**
 
-| | Preço | Cabe |
-|---|---|---|
-| Free | — | 1 sala, ~12 pessoas, sem painel |
-| Célula | R$ 79/mês | 25 pessoas + Pro pra todo mundo |
-| Igreja | R$ 199/mês | 100 + trilha privada da sala |
+- Dia 4+ da Caminhada, no cartão da Home → conhecer o Peregrino+
+- Revisão da semana da temporada, e a revisão comum, sem Plus → o mesmo paywall
+- Perfil sem Plus → o mesmo cartão, no lugar da constância e do acerto
+- Ajustes → plano, restaurar, gerenciar
+- Apoio → Ajustes, Trilhas, Bíblia, fim de trilha
 
-25 pessoas comprando Pro = R$ 2.997/ano.
-Célula = R$ 948/ano. O líder paga uma nota.
-
-Cobra na **web** (Stripe + Pix). App só mostra status.
-Apple não deixa multi-seat ir de IAP.
-
-Piloto: 1–3 líderes, 2 semanas, Pro de cortesia — **antes** de cobrar.
+Trial no dia 0 continua recusado. A oferta das 7 cenas é o substituto do “7º dia” — e é pior se a pessoa fizer as 7 no mesmo dia. Ver comparação.
 
 ---
 
-## Bolsa pastoral
+## O que não vender
 
-Pastor, seminarista, líder de célula piloto: Pro de 12 meses, grant manual no admin.
-Não é caridade tardia. É canal — e desarma “estão vendendo a Bíblia”.
+- Packs de gelo, reparo ou lâmpada
+- Travar o cânon, o áudio, o Strong ou as Profundezas. A Caminhada trava no dia 4; a cena não
+- Battle pass / skin / anúncio na cena
+- Vitalício
+- Sala maior, UGC, Kahoot
+- Mais companheiros como benefício (o teto é 1; o código antigo que ouvia a assinatura não muda isso)
 
----
-
-## Calendário
-
-A janela não é cupom. É o lançamento da Caminhada.
-
-- Advento / Quaresma / Páscoa → Caminhada nova + anual a R$ 96,90 no 1º ano (1× por conta)
-- Resto do ano → preço cheio R$ 119,90 · sem Caminhada genérica; espera a próxima janela litúrgica
-- Presentear Pro no Natal (SKU presente, 12 meses)
-
-Mensal nunca entra em promo (precisa continuar caro).
+Se o anual converter mal, o motivo de pagar não ficou claro. Não abrir loja de energia.
 
 ---
 
-## Não vender (fase 1)
+## Comparação — plano de 28 ago e o que ficou
 
-- Packs de gelo, repair ou lâmpada
-- Battle pass / skin / ads na missão
-- Lifetime
-- Profundezas do caminho canônico
-- Sala maior como SKU do Pro
-- UGC / “crie sua trilha”
-- Kahoot / trivia tempo real
+O plano antigo vendia a **temporada**. O app volta a vender isso: a Caminhada a partir do dia 4. Áudio, célula e gelo continuam de fora. A cena do cânon continua grátis.
 
-Se o anual converter mal: a Caminhada não ficou clara — não abrir loja de energia.
+| | Plano 28 ago | No app agora | Leitura |
+|---|---|---|---|
+| Motivo de pagar | Caminhada (dia 4+), áudio, revisão, preparo de célula | Caminhada (dia 4+), revisão, constância, reforço, selo | A temporada voltou. Áudio e célula não |
+| Caminhada | 3 dias grátis, o resto Pro | 3 dias grátis, o resto Plus. A cena segue na aba Trilhas | Igual ao plano, sem esconder o texto |
+| Áudio da cena | Pro | Grátis | Melhor para o ônibus. Deixou de ser razão de assinar |
+| Revisão | 7 “Hoje:” + fecho da temporada | “Hoje:” da semana + 3 perguntas | A revisão semanal **existe** e trava. O fecho da temporada, não |
+| Preparo de célula | Página no Pro, ponte para Igreja | Não existe | Adiado. O Pro individual não apresenta mais o plano Igreja |
+| Gelo / lâmpada / Strong | Pro alivia o teto | Grátis, sem teto pago | Melhor. Era o caminho para a loja de energia que o plano pedia para não abrir |
+| Companhia | Docs da casca: 3→6 | Teto 1, para todo mundo | Melhor. Mais dupla não ensina a ler |
+| Quando cobra | 7º streak **ou** véspera da Caminhada | 7 cenas concluídas (vida inteira), 1× | Pior se houver maratona: o paywall pode abrir no dia 1. Igual ao D7 só quando é uma cena por dia |
+| Teste | 7 dias | 14 dias nas notas de revisão e no lab | Em aberto. 14 dias protege o D7 e atrasa a cobrança. Cravar na loja, não nos dois lugares |
+| Vitalício | Nunca | Código e termos aceitam, se a oferta existir | Pior se alguém criar o SKU. Mata o anual |
+| Avulso | Proibido (packs) | Gorjeta, só selo, três valores | Não é pack de energia. Mesmo assim chegou **antes** da Família — a ordem antiga era o contrário |
+| Família / Igreja | Perto, antes do avulso | Fora | Adiado, não cancelado |
+| `isPro` no Firestore | Webhook | Só o selo (`supporter`) | O aparelho é a fonte da compra. Bolsa pastoral e família não têm onde gravar |
+| Tom | A temporada | “Seu apoio mantém o app grátis” | Honesto se for verdade. Mais fácil de ler como culpa. O cânon grátis desarma “estão vendendo a Bíblia”; a frase do paywall puxa de volta |
+
+O que **não** piorou: Bíblia, cânon e Profundezas seguem grátis. O paywall não entra na cena. Restaurar, gerenciar, EULA, termos e o aviso de que excluir a conta não cancela a loja estão feitos. Sem chave, nada trava sem saída.
+
+A Caminhada no dia 4 é o motivo de pagar. Gelo e lâmpada continuam fora: se o anual converter mal, não abrir loja de energia.
 
 ---
 
-## Ordem de implementação
+## Ordem daqui pra frente
 
 Só depois do D7 com testers.
 
-0. ~~Casca RevenueCat + tela em Config~~ — **feito 1.0.23**, chaves vazias de propósito
-1. Apple Small Business 15% + Play
-2. Preencher chaves RevenueCat (`peregrino_plus` / `family`) — não IAP cru
-3. `isPro` no Firestore via webhook
-4. Paywall (default anual) + restore — e **só então** nos pontos de dor (não só Config)
-5. **Caminhada piloto** (conteúdo + Caravana da temporada + paywall no dia 3)
-6. Áudio da missão + revisão da semana
-7. Gates de alívio: gelo, repair, lâmpada, Strong
-8. Settings + convite Família + presentear
-9. Dunning Android (1/3 do churn Play é boleto recusado)
-10. Winback: semana 2 e dia 330 (1/3 dos anuais cancela no mês 1)
-11. Igreja na web + códigos-presente
+1. Apple Small Business 15% + o equivalente no Play
+2. Produtos na loja: `plus_annual` (teste de 14 dias, salvo decisão contrária), `plus_monthly`, `apoio_5` / `apoio_15` / `apoio_30`. Sem vitalício
+3. RevenueCat: entitlement `peregrino_plus`, oferta padrão, oferta `apoio`. Preencher as duas chaves
+4. Sandbox: comprar, teste, restaurar, gerenciar, cancelar, um apoio
+5. Revisão da Apple com `plus_launch_free_until` vazio. A data entra depois da aprovação
+6. Selo no herói do próprio perfil (a Caravana já vê)
+7. Sair da conta também desliga o RevenueCat (hoje só excluir conta desliga)
+
+Depois, se o anual existir de verdade:
+
+8. `isPro` no Firestore via webhook — bolsa e família dependem disso
+9. Família (até 5) antes de qualquer outro avulso
+10. Winback (semana 2 e dia 330) e cobrança recusada no Android
+11. Igreja na web (Stripe + Pix). App só mostra status
 12. Bolsa pastoral no admin
+
+Preparo de célula, playlist da sala e Encontro continuam no plano Igreja. Não entram no Peregrino+.
 
 ---
 
-## Metas (90 dias)
+## Metas (90 dias depois de ligar)
+
+As de 28 ago seguem como hipótese, não como medida. Ainda não há D7.
 
 | | Base | Esticar |
 |---|---|---|
 | Trial entre quem chegou em D7 | 8–12% | 15% |
 | Trial vira pago | 28–38% | 42% |
-| Free vira Pro sem trial | 1,5–3% | 4% |
+| Free vira Plus sem trial | 1,5–3% | 4% |
 | Pagantes / D7 | **4–6%** | 8% |
 | $ novo em anual | ≥ 60% | ≥ 75% |
-| Churn do mensal | < 10% | < 8% |
 | D7 vs antes do paywall | não cair > **5%** | 0% |
 
-### Conta com 1.000 pessoas em D7 (base)
-
-100 trials → 35 pagos.
-+ 18 Pro diretos.
-= **53 pagantes (5,3%)**.
-
-Caixa ano 1 ≈ R$ 7,9 mil bruto · R$ 6,7 mil líquido.
-
-Isso não paga anúncio caro.
-Pro financia editorial e abre Igreja — uma Célula a R$ 79/mês ≈ 8 anuais.
-
----
-
-## Por que mudou (o plano de antes)
-
-- “2 meses grátis” era mentira: R$ 19,90×12 = R$ 238,80. O desconto era ~6 meses.
-- Duolingo Super anual no BR é R$ 179,90, não “R$ 30–50/mês”.
-- Gate de Profundezas treinava o free em trivia.
-- Packs de gelo violam o ROADMAP (“nunca loja estilo Ascend”).
-- Trial na 3ª missão e no 7º streak ao mesmo tempo — gatilho duplo.
-- 35–45% trial→pago é teto da indústria, não piso. Mediana = 37%.
-- −10% no D7 mata produto de hábito. Guardrail agora: −5%.
-- Faltava Família. Igreja sem assentos nem billing.
-- O Pro só aliviava fricção. Faltava a Caminhada — o motivo de pagar no dia que deu certo.
-
-Pesquisa e gráficos: canvas `stway-monetizacao-28ago2026`.
+A oferta nas 7 cenas é o risco desse −5%. Se a pessoa ainda não voltou no sétimo dia, a folha não deveria abrir.

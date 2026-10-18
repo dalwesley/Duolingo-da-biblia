@@ -7,8 +7,10 @@ import '../l10n/app_language.dart';
 import '../models/difficulty.dart';
 import '../models/season_walk.dart';
 import '../models/trail.dart';
+import '../services/analytics_service.dart';
 import '../services/content_catalog_service.dart';
 import '../services/progress_service.dart';
+import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
@@ -19,8 +21,33 @@ import '../widgets/relic_panel.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import 'lesson_screen.dart';
+import 'paywall_screen.dart';
+
+/// Dia 4+ sem Peregrino+ abre o paywall. Com loja desligada, [plusFeaturesOpen]
+/// segue verdadeiro e a temporada continua aberta.
+void openSeasonPaywall(BuildContext context) {
+  final sub = context.read<SubscriptionService>();
+  AnalyticsService.instance.logPlusFeatureOpen(
+    feature: 'season_walk',
+    hasPlus: sub.hasPlus,
+  );
+  Navigator.of(context).push(
+    MaterialPageRoute<void>(
+      builder: (_) => const PaywallScreen(source: 'season_walk'),
+    ),
+  );
+}
 
 void openSeasonWalk(BuildContext context) {
+  final now = DateTime.now();
+  final today = DateTime(now.year, now.month, now.day);
+  final campaign = SeasonWalkCatalog.current(today);
+  final index = campaign.dayIndexOn(today);
+  final plusOpen = context.read<SubscriptionService>().plusFeaturesOpen;
+  if (index != null && SeasonWalkAccess.needsPlusDay(index) && !plusOpen) {
+    openSeasonPaywall(context);
+    return;
+  }
   final progress = context.read<ProgressService>();
   final mode = progress.settings.appearanceMode;
   final appearance = AppearanceStyle.resolve(mode);
@@ -168,6 +195,7 @@ class _WeekBlock extends StatelessWidget {
           ),
         )
         .length;
+    final plusOpen = context.watch<SubscriptionService>().plusFeaturesOpen;
     final weekEnded =
         days.isNotEmpty && !days.last.dateOn(campaign.start).isAfter(today);
     final reviewReady = weekEnded && doneCount >= (days.length / 2).ceil();
@@ -187,25 +215,29 @@ class _WeekBlock extends StatelessWidget {
         if (reviewReady) ...[
           const SizedBox(height: 8),
           CopperCta(
-              label: l10n.seasonWeekReview,
-              expanded: true,
-              onTap: () {
-                final progress = context.read<ProgressService>();
-                final mode = progress.settings.appearanceMode;
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (_) => Appearance(
-                      mode: mode,
-                      style: AppearanceStyle.resolve(mode),
-                      child: SeasonWalkReviewScreen(
-                        campaign: campaign,
-                        weekIndex: weekIndex,
-                      ),
+            label: plusOpen ? l10n.seasonWeekReview : l10n.weeklyReviewSeePlus,
+            expanded: true,
+            onTap: () {
+              if (!plusOpen) {
+                openSeasonPaywall(context);
+                return;
+              }
+              final progress = context.read<ProgressService>();
+              final mode = progress.settings.appearanceMode;
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => Appearance(
+                    mode: mode,
+                    style: AppearanceStyle.resolve(mode),
+                    child: SeasonWalkReviewScreen(
+                      campaign: campaign,
+                      weekIndex: weekIndex,
                     ),
                   ),
-                );
-              },
-            ),
+                ),
+              );
+            },
+          ),
         ],
       ],
     );
@@ -235,10 +267,12 @@ class _DayTile extends StatelessWidget {
     final done =
         progress.isWalkDateDone(campaign.id, ymd) ||
         progress.isMissionCompleted(day.missionSlug);
+    final plusOpen = context.watch<SubscriptionService>().plusFeaturesOpen;
     final access = SeasonWalkCatalog.access(
       campaign: campaign,
       index: day.index,
       today: today,
+      plusOpen: plusOpen,
     );
     final isToday = todayIndex == day.index;
     final locked = !access.playable;
@@ -277,6 +311,8 @@ class _DayTile extends StatelessWidget {
                   Text(
                     access.future
                         ? l10n.seasonNotTodayYet
+                        : access.needsPlus
+                        ? l10n.seasonPlusFromDay(SeasonWalkAccess.freeDays + 1)
                         : day.insight,
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
@@ -297,6 +333,10 @@ class _DayTile extends StatelessWidget {
     bool done,
   ) async {
     if (access.future) return;
+    if (access.needsPlus) {
+      openSeasonPaywall(context);
+      return;
+    }
     if (!access.playable) return;
     await ContentCatalogService.instance.ensureTrailBank(day.trailSlug);
     if (!context.mounted) return;

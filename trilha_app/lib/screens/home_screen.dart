@@ -230,7 +230,7 @@ class _HomeScreenState extends State<HomeScreen>
       final kind = PlusOffers.pick(
         today: DateTime.now(),
         paid: sub.isPeregrinoPlus,
-        storeReady: sub.isConfigured && sub.availablePackages.isNotEmpty,
+        storeReady: sub.canPurchase,
         scenesDone: progress.completedMissions.length,
         promoUntil: sub.launchPromoDate,
         shown: state.shown,

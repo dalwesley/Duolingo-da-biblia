@@ -87,7 +87,7 @@ class _PaywallScreenState extends State<PaywallScreen> {
     final packages = [...sub.availablePackages]
       ..sort((x, y) => _rank(x.packageType).compareTo(_rank(y.packageType)));
     final offer =
-        !paid && promoDate == null && sub.isConfigured && packages.isNotEmpty;
+        !paid && promoDate == null && sub.canPurchase;
     final selected = packages.isEmpty
         ? null
         : packages.firstWhere(
@@ -136,7 +136,7 @@ class _PaywallScreenState extends State<PaywallScreen> {
                   AppSpace.screen,
                   AppSpace.lg,
                   AppSpace.screen,
-                  offer ? AppSpace.xl : AppSpace.xxl + bottom,
+                  AppSpace.xl + bottom,
                 ),
                 children: [
                   Center(
@@ -181,9 +181,7 @@ class _PaywallScreenState extends State<PaywallScreen> {
                     _YourPlan(sub: sub),
                     const SizedBox(height: AppSpace.lg),
                   ],
-                  const PlusPerkCard(detailed: true),
-                  const SizedBox(height: AppSpace.md),
-                  const _FreeForever(),
+                  PlusPerkCard(detailed: true, footer: const _FreeForever()),
                   if (offer) ...[
                     const SizedBox(height: AppSpace.xl),
                     for (final p in packages) ...[
@@ -203,23 +201,53 @@ class _PaywallScreenState extends State<PaywallScreen> {
                       _TrialTimeline(
                         days: trial,
                         price: SubscriptionService.packageLabel(selected!),
+                        footnote: [
+                          l10n.paywallTrialThen(
+                            trial,
+                            SubscriptionService.packageLabel(selected),
+                          ),
+                          if (renews) l10n.paywallAutoRenew,
+                        ].join(' '),
+                      ),
+                    ] else if (renews) ...[
+                      const SizedBox(height: AppSpace.lg),
+                      Text(
+                        l10n.paywallAutoRenew,
+                        textAlign: TextAlign.center,
+                        style: AppTypography.body(size: 11, color: a.textFaint),
                       ),
                     ],
                     const SizedBox(height: AppSpace.lg),
-                    Text(
-                      [
-                        if (trial != null)
-                          l10n.paywallTrialThen(
-                            trial,
-                            SubscriptionService.packageLabel(selected!),
-                          ),
-                        if (renews) l10n.paywallAutoRenew,
-                      ].join(' '),
-                      textAlign: TextAlign.center,
-                      style: AppTypography.body(size: 11, color: a.textFaint),
-                    ),
-                    const SizedBox(height: AppSpace.sm),
                     _LegalLinks(sub: sub),
+                    const SizedBox(height: AppSpace.xl),
+                    if (sub.lastError != null) ...[
+                      Text(
+                        sub.lastError!,
+                        textAlign: TextAlign.center,
+                        style: AppTypography.body(
+                          size: 12,
+                          color: a.textSecondary,
+                        ),
+                      ),
+                      const SizedBox(height: AppSpace.sm),
+                    ],
+                    CopperCta(
+                      label: trial != null
+                          ? l10n.paywallStartTrial(trial)
+                          : renews
+                          ? l10n.paywallSubscribe
+                          : l10n.paywallBuyOnce,
+                      expanded: true,
+                      onTap: sub.loading ? null : () => sub.purchase(selected!),
+                    ),
+                    if (renews) ...[
+                      const SizedBox(height: 6),
+                      Text(
+                        l10n.paywallCancelAnytime,
+                        textAlign: TextAlign.center,
+                        style: AppTypography.body(size: 12, color: a.textFaint),
+                      ),
+                    ],
                   ] else if (!paid && promoDate == null) ...[
                     const SizedBox(height: AppSpace.xl),
                     Text(
@@ -232,17 +260,6 @@ class _PaywallScreenState extends State<PaywallScreen> {
               ),
             ),
           ),
-          if (offer)
-            _BuyBar(
-              label: trial != null
-                  ? l10n.paywallStartTrial(trial)
-                  : renews
-                  ? l10n.paywallSubscribe
-                  : l10n.paywallBuyOnce,
-              note: renews ? l10n.paywallCancelAnytime : null,
-              error: sub.lastError,
-              onTap: sub.loading ? null : () => sub.purchase(selected!),
-            ),
         ],
       ),
     );
@@ -443,8 +460,13 @@ class _PlanTile extends StatelessWidget {
 class _TrialTimeline extends StatelessWidget {
   final int days;
   final String price;
+  final String footnote;
 
-  const _TrialTimeline({required this.days, required this.price});
+  const _TrialTimeline({
+    required this.days,
+    required this.price,
+    required this.footnote,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -525,6 +547,14 @@ class _TrialTimeline extends StatelessWidget {
                 ],
               ),
             ),
+          if (footnote.isNotEmpty) ...[
+            const SizedBox(height: AppSpace.lg),
+            Text(
+              footnote,
+              textAlign: TextAlign.center,
+              style: AppTypography.body(size: 11, color: a.textFaint),
+            ),
+          ],
         ],
       ),
     );
@@ -546,23 +576,23 @@ class _LegalLinks extends StatelessWidget {
         TextCta(
           label: l10n.paywallRestore,
           onTap: sub.loading ? null : () => sub.restore(),
-          color: a.textSecondary,
+          color: a.text,
         ),
         TextCta(
           label: l10n.legalTerms,
           onTap: () => openSitePage(termsPageUrl),
-          color: a.textSecondary,
+          color: a.text,
         ),
         TextCta(
           label: l10n.legalPrivacy,
           onTap: () => openSitePage(privacyPageUrl),
-          color: a.textSecondary,
+          color: a.text,
         ),
         if (defaultTargetPlatform == TargetPlatform.iOS)
           TextCta(
             label: l10n.paywallAppleEula,
             onTap: () => openSitePage(_appleEulaUrl),
-            color: a.textSecondary,
+            color: a.text,
           ),
       ],
     );
@@ -570,59 +600,6 @@ class _LegalLinks extends StatelessWidget {
 }
 
 /// Botão de assinar fixo embaixo — sempre à vista, com a nota curta.
-class _BuyBar extends StatelessWidget {
-  final String label;
-  final String? note;
-  final String? error;
-  final VoidCallback? onTap;
-
-  const _BuyBar({
-    required this.label,
-    required this.onTap,
-    this.note,
-    this.error,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final bottom = MediaQuery.viewPaddingOf(context).bottom;
-    return ContentFrame(
-      child: Padding(
-        padding: EdgeInsets.fromLTRB(
-          AppSpace.screen,
-          AppSpace.sm,
-          AppSpace.screen,
-          AppSpace.md + bottom,
-        ),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            if (error != null) ...[
-              Text(
-                error!,
-                textAlign: TextAlign.center,
-                style: AppTypography.body(size: 12, color: a.textSecondary),
-              ),
-              const SizedBox(height: AppSpace.sm),
-            ],
-            CopperCta(label: label, expanded: true, onTap: onTap),
-            if (note != null) ...[
-              const SizedBox(height: 6),
-              Text(
-                note!,
-                textAlign: TextAlign.center,
-                style: AppTypography.body(size: 12, color: a.textFaint),
-              ),
-            ],
-          ],
-        ),
-      ),
-    );
-  }
-}
-
 /// Nome do plano ativo (Anual, Mensal, Vitalício).
 String plusPlanLabel(AppLocalizations l10n, SubscriptionService sub) =>
     switch (sub.plusPackageType) {

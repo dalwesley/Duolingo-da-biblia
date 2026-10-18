@@ -3993,14 +3993,16 @@
   "paywallLifetimeActive": "Vitalício: não expira.",
   "paywallManage": "Gerenciar assinatura",
   "paywallManageHint": "Mudar de plano ou cancelar é na App Store ou no Google Play.",
-  "paywallPerkBadgeBody": "No seu perfil, para a Caravana ver.",
+  "paywallPerkBadgeBody": "Um selo no seu perfil. Quem abre seu nome na Caravana vê que você apoia o Stway.",
   "paywallPerkBadgeTitle": "Selo de apoiador",
-  "paywallPerkReinforceBody": "Seu acerto por modo e gesto, e perguntas do que você mais erra.",
+  "paywallPerkReinforceBody": "No perfil, o tipo de pergunta que você mais erra. Depois, um treino só com esse tipo.",
   "paywallPerkReinforceTitle": "Reforço do ponto fraco",
-  "paywallPerkStreakBody": "A sequência semana a semana e o histórico das lamparinas, no perfil.",
+  "paywallPerkSeasonBody": "Advento, Páscoa, Natal e muito mais. Trilhas exclusivas para quem é Peregrino+.",
+  "paywallPerkSeasonTitle": "Temporadas sazonais",
+  "paywallPerkStreakBody": "Acompanhe sua sequência, os dias desta semana e como foram os últimos três meses.",
   "paywallPerkStreakTitle": "Sua constância",
-  "paywallPerkWeeklyBody": "O “Hoje:” de cada cena e 3 perguntas, todo domingo.",
-  "paywallPerkWeeklyTitle": "Revisão da semana",
+  "paywallPerkWeeklyBody": "No domingo, uma cena especial para reforçar tudo o que você aprendeu na semana.",
+  "paywallPerkWeeklyTitle": "Revisão semanal",
   "paywallPitch": "Seu apoio mantém o Stway grátis para quem não pode pagar.\nE você ainda ganha os benefícios abaixo.",
   "paywallPlanAnnual": "Anual",
   "paywallPlanLifetime": "Vitalício",
@@ -5132,6 +5134,14 @@
   },
   "seasonEnded": "Estação encerrada",
   "seasonNotTodayYet": "Ainda não é hoje",
+  "seasonPlusFromDay": "Peregrino+ a partir do dia {day}.",
+  "@seasonPlusFromDay": {
+    "placeholders": {
+      "day": {
+        "type": "int"
+      }
+    }
+  },
   "seasonReviewEmpty": "Ainda não há perguntas desta semana no aparelho. Abra um dia primeiro.",
   "seasonReviewMissionIntro": "Três perguntas dos textos que você já estudou.",
   "seasonReviewMissionTitle": "Revisão da semana",
@@ -5345,7 +5355,7 @@
     }
   },
   "settingsPlusSubscribe": "Assinar o Peregrino+",
-  "settingsPlusTeaser": "Revisão da semana, constância e reforço",
+  "settingsPlusTeaser": "Temporadas sazonais, revisão semanal, constância e reforço",
   "settingsProgressInCloud": "Progresso na nuvem",
   "settingsProgressRestored": "Progresso restaurado.",
   "settingsReminderAt": "Às {hour}h · toque para mudar",

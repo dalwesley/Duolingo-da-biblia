@@ -8898,7 +8898,7 @@ abstract class AppLocalizations {
   /// No description provided for @paywallPerkBadgeBody.
   ///
   /// In pt, this message translates to:
-  /// **'No seu perfil, para a Caravana ver.'**
+  /// **'Um selo no seu perfil. Quem abre seu nome na Caravana vê que você apoia o Stway.'**
   String get paywallPerkBadgeBody;
 
   /// No description provided for @paywallPerkBadgeTitle.
@@ -8910,7 +8910,7 @@ abstract class AppLocalizations {
   /// No description provided for @paywallPerkReinforceBody.
   ///
   /// In pt, this message translates to:
-  /// **'Seu acerto por modo e gesto, e perguntas do que você mais erra.'**
+  /// **'No perfil, o tipo de pergunta que você mais erra. Depois, um treino só com esse tipo.'**
   String get paywallPerkReinforceBody;
 
   /// No description provided for @paywallPerkReinforceTitle.
@@ -8919,10 +8919,22 @@ abstract class AppLocalizations {
   /// **'Reforço do ponto fraco'**
   String get paywallPerkReinforceTitle;
 
+  /// No description provided for @paywallPerkSeasonBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Advento, Páscoa, Natal e muito mais. Trilhas exclusivas para quem é Peregrino+.'**
+  String get paywallPerkSeasonBody;
+
+  /// No description provided for @paywallPerkSeasonTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Temporadas sazonais'**
+  String get paywallPerkSeasonTitle;
+
   /// No description provided for @paywallPerkStreakBody.
   ///
   /// In pt, this message translates to:
-  /// **'A sequência semana a semana e o histórico das lamparinas, no perfil.'**
+  /// **'Acompanhe sua sequência, os dias desta semana e como foram os últimos três meses.'**
   String get paywallPerkStreakBody;
 
   /// No description provided for @paywallPerkStreakTitle.
@@ -8934,13 +8946,13 @@ abstract class AppLocalizations {
   /// No description provided for @paywallPerkWeeklyBody.
   ///
   /// In pt, this message translates to:
-  /// **'O “Hoje:” de cada cena e 3 perguntas, todo domingo.'**
+  /// **'No domingo, uma cena especial para reforçar tudo o que você aprendeu na semana.'**
   String get paywallPerkWeeklyBody;
 
   /// No description provided for @paywallPerkWeeklyTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Revisão da semana'**
+  /// **'Revisão semanal'**
   String get paywallPerkWeeklyTitle;
 
   /// No description provided for @paywallPitch.
@@ -11211,6 +11223,12 @@ abstract class AppLocalizations {
   /// **'Ainda não é hoje'**
   String get seasonNotTodayYet;
 
+  /// No description provided for @seasonPlusFromDay.
+  ///
+  /// In pt, this message translates to:
+  /// **'Peregrino+ a partir do dia {day}.'**
+  String seasonPlusFromDay(int day);
+
   /// No description provided for @seasonReviewEmpty.
   ///
   /// In pt, this message translates to:
@@ -11946,7 +11964,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsPlusTeaser.
   ///
   /// In pt, this message translates to:
-  /// **'Revisão da semana, constância e reforço'**
+  /// **'Temporadas sazonais, revisão semanal, constância e reforço'**
   String get settingsPlusTeaser;
 
   /// No description provided for @settingsProgressInCloud.

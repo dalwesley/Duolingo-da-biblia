@@ -19,7 +19,7 @@ Não somos YouVersion (ler), nem Hallow (orar), nem Ascend/Bible Way (jogo com p
 | **Hábito / social** | Sequência (gelo + teach 1×), quests, Companhia → Caravana → Grupos, **Desafio** sob Companhia, retrato, widget iOS/Android · simplificação UX Fases 0–4 ([`docs/PLANO_SIMPLIFICACAO.md`](docs/PLANO_SIMPLIFICACAO.md)) |
 | **Medalhas** | **v3.2** no app — faísca + cofres; sazonal Advento + proximidade no mapa ([`docs/MEDALHAS_CALIBRATION.md`](docs/MEDALHAS_CALIBRATION.md)) |
 | **Strong / TTS** | Strong na missão e na Bíblia; TTS na aba Bíblia **e** na entrada da missão (passagem + insight) |
-| **IAP** | Casca RevenueCat (`Peregrino+`) — **chaves vazias**, perk = 3→6 companheiros, tela só em Config. **Não é o Pro** de [`MONETIZATION.md`](MONETIZATION.md) |
+| **IAP** | Peregrino+ no código (revisão, constância, reforço, selo, apoio) — **chaves vazias**, tudo aberto. Não é o Pro de 28 ago. Plano: [`MONETIZATION.md`](MONETIZATION.md) |
 | **`lifeChallenge`** | 1 campo `dailyChallenge` no study `sm-08-pacificadores` — o app **não lê** |
 | **Caminhada** | Só Advento/Quaresma. Sem temporada genérica de 40 dias no outono. |
 | **Trilhas por dor** | `ansiedade` e `recomeco` (5 missões cada, banco emprestado) em Vida Cristã → cânon |
@@ -75,7 +75,7 @@ Histórico de releases: [`CHANGELOG.md`](CHANGELOG.md).
 - [x] Remote Config no boot (liga / baú / bônus de convite)
 - [x] TTS na aba Bíblia **e** áudio da missão (passagem + insight)
 - [x] Medalhas v3.2 — cofres, sazonal Advento, proximidade no Hoje/mapa
-- [x] Paywall casca Peregrino+ (inativo sem chaves RevenueCat)
+- [x] Peregrino+ no app (paywall, revisão, constância, reforço, selo, apoio) — inativo sem chaves RevenueCat
 
 ### Piloto Sermão do Monte — estrutura
 
@@ -182,12 +182,12 @@ Tese: apps ensinam conhecimento; STWAY fecha com **obediência concreta** (Serm�
 
 ## Em seguida — monetizar + célula (após D7 ok)
 
-Ver `MONETIZATION.md`. Não shipar Pro antes do hábito provar valor.
+Ver `MONETIZATION.md`. Não preencher as chaves antes do hábito provar valor. Não travar gelo, lâmpada ou Strong.
 
-- [x] **Caminhada no app** — Advento 2026 (calendário, 3 dias grátis, revisão). Sem temporada genérica de 40 dias. IAP desligado.
-- [ ] STWAY Pro: ligar chaves RevenueCat + soft paywalls A–F **depois** do D7; alívio (gelo/lâmpadas/Strong) é suporte. (Casca Peregrino+ já no app)
-- [ ] Soft paywalls nos pontos A–F do MONETIZATION.md · default anual R$ 119,90 · copy da temporada (hoje o paywall só abre em Config)
-- [ ] Pro Família (até 5) antes de packs avulsos
+- [x] **Caminhada no app** — Advento 2026. Dias 1–3 grátis; do dia 4 em diante, Peregrino+ (aberto enquanto não há loja). A cena segue na aba Trilhas.
+- [x] **Peregrino+** — Caminhada (dia 4+), revisão da semana, constância, reforço, selo e apoio avulso. Chaves vazias: nada trava e ninguém compra.
+- [ ] Ligar a loja **depois** do D7: chaves RevenueCat, anual + mensal, apoio. Sem vitalício. Checklist em `store/ios/app-review-notes-iap.md`
+- [ ] Família (até 5) só depois do anual ligado — e antes de qualquer outro avulso
 - [ ] Plano Igreja piloto (1–3 líderes): Grupos + progresso + códigos presente Pro · billing Stripe/Pix na web
 - [ ] Radar (após Igreja): **playlist da sala** (missões do catálogo na ordem da semana) → depois trilha privada MCQ, fora de `content_trails`; **não** UGC aberto
 - [ ] Radar: mais *salas* de ~12 (não uma sala de 50). Encontro da célula sem cronômetro — **não** Kahoot/PvP

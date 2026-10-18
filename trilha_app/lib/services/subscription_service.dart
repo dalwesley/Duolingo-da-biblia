@@ -7,6 +7,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../l10n/l10n_global.dart';
+import '../utils/plus_access.dart';
 import 'analytics_service.dart';
 import 'notification_service.dart';
 import 'remote_config_service.dart';
@@ -60,6 +61,10 @@ class SubscriptionService extends ChangeNotifier {
   String? lastError;
   bool _initialized = false;
   String? _boundUid;
+  Future<void> _bindChain = Future<void>.value();
+
+  /// A oferta da loja chegou com planos. Falha ou lista vazia não trava nada.
+  bool _offeringsReady = false;
 
   /// Último dia da promoção de lançamento, se ela ainda vale hoje.
   DateTime? get launchFreeUntil {
@@ -87,9 +92,13 @@ class SubscriptionService extends ChangeNotifier {
   /// Apoio avulso disponível na loja.
   bool get supportConfigured => isConfigured && supportPackages.isNotEmpty;
 
-  /// Recursos do Peregrino+ abertos: com assinatura/promoção, ou enquanto
-  /// não há como comprar (sem loja e sem promoção) — nada trava sem saída.
-  bool get plusFeaturesOpen => hasPlus || !showsPlus;
+  /// Há plano comprável na tela. Chave sem oferta (rede, loja vazia) não conta.
+  bool get canPurchase =>
+      isConfigured && _offeringsReady && availablePackages.isNotEmpty;
+
+  /// Aberto com Plus, ou enquanto não há plano para comprar — nada trava sem saída.
+  bool get plusFeaturesOpen =>
+      PlusAccess.featuresOpen(hasPlus: hasPlus, canPurchase: canPurchase);
 
   /// Há algo do Peregrino+ para mostrar (loja configurada ou promoção).
   bool get showsPlus => isConfigured || launchPromoActive;
@@ -130,14 +139,25 @@ class SubscriptionService extends ChangeNotifier {
     }
   }
 
-  /// Liga a compra à conta Firebase quando o login completa (ou troca).
-  Future<void> bindUid(String? uid) async {
+  /// Liga a compra à conta Firebase. Sem uid, encerra a sessão da loja
+  /// para a próxima pessoa não herdar o Plus na memória.
+  Future<void> bindUid(String? uid) {
+    final run = _bindChain.then((_) => _bindNow(uid));
+    _bindChain = run.catchError((Object _) {});
+    return run;
+  }
+
+  Future<void> _bindNow(String? uid) async {
+    if (uid == null || uid.isEmpty) {
+      await _endSession();
+      return;
+    }
     if (!isConfigured) return;
     if (!_initialized) {
       await init(uid: uid);
       return;
     }
-    if (uid == null || uid.isEmpty || uid == _boundUid) return;
+    if (uid == _boundUid) return;
     _boundUid = uid;
     try {
       await Purchases.logIn(uid);
@@ -148,16 +168,33 @@ class SubscriptionService extends ChangeNotifier {
     }
   }
 
-  /// Conta excluída: a compra deixa de apontar para o uid apagado.
-  Future<void> logOut() async {
-    if (!_initialized || _boundUid == null) return;
+  /// Sai da conta ou exclui: solta o RevenueCat e esquece o Plus local.
+  Future<void> logOut() => bindUid(null);
+
+  Future<void> _endSession() async {
+    final wasBound = _boundUid != null;
     _boundUid = null;
+    _clearLocalPlus();
+    if (kDebugMode) unawaited(_debugSave());
+    if (!_initialized || !wasBound) return;
     try {
       final info = await Purchases.logOut();
       _onCustomerInfo(info);
     } catch (e) {
       debugPrint('SubscriptionService.logOut falhou: $e');
     }
+  }
+
+  /// Não publica o selo: sair da conta não apaga o apoiador na Caravana.
+  void _clearLocalPlus() {
+    isPeregrinoPlus = false;
+    isSupporter = false;
+    plusProductId = null;
+    plusExpiresAt = null;
+    plusWillRenew = false;
+    plusInTrial = false;
+    plusBillingIssue = false;
+    notifyListeners();
   }
 
   Future<void> _loadOfferings() async {
@@ -167,9 +204,13 @@ class SubscriptionService extends ChangeNotifier {
       supportPackages = [
         ...?offerings.all[supportOfferingId]?.availablePackages,
       ]..sort((a, b) => a.storeProduct.price.compareTo(b.storeProduct.price));
+      _offeringsReady = availablePackages.isNotEmpty;
       notifyListeners();
     } catch (e) {
+      _offeringsReady = false;
+      availablePackages = const [];
       debugPrint('Falha ao carregar ofertas: $e');
+      notifyListeners();
     }
   }
 
@@ -438,9 +479,11 @@ class SubscriptionService extends ChangeNotifier {
     if (value) {
       availablePackages = _debugPlans();
       supportPackages = _debugSupport();
+      _offeringsReady = true;
     } else {
       availablePackages = const [];
       supportPackages = const [];
+      _offeringsReady = false;
     }
     unawaited(_debugSave());
     notifyListeners();
@@ -475,6 +518,7 @@ class SubscriptionService extends ChangeNotifier {
       _debugFakeStore = true;
       availablePackages = _debugPlans();
       supportPackages = _debugSupport();
+      _offeringsReady = true;
     }
     if (m['plus'] == 'true') _debugGrantPlus(annualPackage);
     notifyListeners();

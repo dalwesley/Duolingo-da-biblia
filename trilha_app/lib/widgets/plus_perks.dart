@@ -11,12 +11,14 @@ import 'ui_primitives.dart';
 /// Os benefícios do Peregrino+ — fonte única de ícone, título e frase.
 /// Toda tela que lista o Plus usa [PlusPerkCard]; nada de lista própria.
 enum PlusPerk {
+  season,
   weeklyReview,
   consistency,
   reinforce,
   badge;
 
   CinematicGlyph get glyph => switch (this) {
+    PlusPerk.season => CinematicGlyph.calendar,
     PlusPerk.weeklyReview => CinematicGlyph.scroll,
     PlusPerk.consistency => CinematicGlyph.path,
     PlusPerk.reinforce => CinematicGlyph.target,
@@ -24,6 +26,7 @@ enum PlusPerk {
   };
 
   String title(AppLocalizations l10n) => switch (this) {
+    PlusPerk.season => l10n.paywallPerkSeasonTitle,
     PlusPerk.weeklyReview => l10n.paywallPerkWeeklyTitle,
     PlusPerk.consistency => l10n.paywallPerkStreakTitle,
     PlusPerk.reinforce => l10n.paywallPerkReinforceTitle,
@@ -31,6 +34,7 @@ enum PlusPerk {
   };
 
   String body(AppLocalizations l10n) => switch (this) {
+    PlusPerk.season => l10n.paywallPerkSeasonBody,
     PlusPerk.weeklyReview => l10n.paywallPerkWeeklyBody,
     PlusPerk.consistency => l10n.paywallPerkStreakBody,
     PlusPerk.reinforce => l10n.paywallPerkReinforceBody,
@@ -49,6 +53,7 @@ class PlusPerkCard extends StatelessWidget {
   final bool detailed;
   final bool locked;
   final bool boxed;
+  final Widget? footer;
 
   const PlusPerkCard({
     super.key,
@@ -56,6 +61,7 @@ class PlusPerkCard extends StatelessWidget {
     this.detailed = false,
     this.locked = false,
     this.boxed = true,
+    this.footer,
   });
 
   @override
@@ -83,6 +89,10 @@ class PlusPerkCard extends StatelessWidget {
             detailed: detailed,
             locked: locked,
           ),
+        ],
+        if (footer != null) ...[
+          SizedBox(height: detailed ? AppSpace.lg : 10),
+          footer!,
         ],
       ],
     );

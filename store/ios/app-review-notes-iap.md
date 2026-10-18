@@ -39,6 +39,7 @@ STWAY helps Portuguese-speaking Christians build a daily habit of reading and st
 
 NEW IN THIS VERSION: PEREGRINO+ (OPTIONAL SUBSCRIPTION)
 The Bible, every lesson in all three levels, rankings and study partners stay free. Peregrino+ adds:
+- The liturgical season (Advent, and later seasons when they exist): days 1–3 are free; from day 4 the Home card opens the paywall. The same lesson stays available on the Trails tab. Each week's season review is included.
 - Weekly review: each lesson's key idea from the week plus 3 questions.
 - On the profile: the weekly streak history and accuracy by level and by question type.
 - Practice of the weak spot: questions of the type the user misses most.
@@ -50,6 +51,7 @@ How to find the purchase:
 1. Settings › tap the "Peregrino+" card, or
 2. Profile › "Sua caminhada no Peregrino+" card › "Conhecer o Peregrino+", or
 3. After 7 lessons, a sheet offers Peregrino+ on the home screen (at most once a week).
+4. During Advent (or the next season), from day 4 the season card on Home opens the paywall. Days 1–3 of the season open the calendar.
 The paywall shows the plans, the price per period, the trial terms, the auto-renew notice, Restore, Terms of Use, Privacy Policy and Apple's EULA. Subscribers see their plan, renewal date and a "Gerenciar assinatura" (Manage subscription) button that opens the App Store subscriptions page.
 
 SUPPORT TIPS (CONSUMABLE)

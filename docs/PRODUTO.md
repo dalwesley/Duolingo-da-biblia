@@ -28,7 +28,7 @@
 | **Simplificação 28 set** | Fases 0–4 em [`PLANO_SIMPLIFICACAO.md`](PLANO_SIMPLIFICACAO.md). Fase 5 (convite unificado) adiável. |
 | **Prática IRL** | `dailyChallenge` existe em **1** study (`sm-08`); o modelo `MissionStudy` **não parseia** — sem check-in |
 | **Prova com usuário** | Protocolo D7 pronto ([`D7_TESTER_PROTOCOLO.md`](D7_TESTER_PROTOCOLO.md)); planilha vazia — falta 10–20 testers |
-| **Monetização** | Casca RevenueCat (`Peregrino+`) **sem chaves** — IAP inativo. Perk previsto: 3→6 companheiros. Pro de verdade = [`MONETIZATION.md`](../MONETIZATION.md) (depois do D7) |
+| **Monetização** | Peregrino+ **sem chaves** — IAP inativo, benefícios abertos. Dá revisão, constância, reforço e selo; apoio avulso só dá o selo. Plano: [`MONETIZATION.md`](../MONETIZATION.md) (ligar só depois do D7) |
 
 ---
 
@@ -192,7 +192,7 @@ Ordem das abas em Juntos: **Companhia → Caravana → Grupos**. Desafio não é
 
 ## Monetização
 
-Hoje: **IAP inativo**. Há tela Peregrino+ e SDK RevenueCat, mas as chaves estão vazias — ninguém compra. Caminhada, áudio da missão e revisão da semana **já estão no app**; dia 4+ da Caminhada só trava se as chaves existirem. Perk extra quando ligar: **mais companheiros**. Direção: [`MONETIZATION.md`](../MONETIZATION.md). Não gatear Profundezas do canônico. Não preencher as chaves RevenueCat antes do D7.
+Hoje: **IAP inativo**. O Peregrino+ está no app (paywall, revisão da semana, constância, reforço do ponto fraco, selo, apoio avulso), mas as chaves RevenueCat estão vazias — ninguém compra e esses benefícios ficam abertos. Caminhada e áudio da cena são grátis e não travam quando a loja ligar. Não gatear Profundezas do cânon. Não preencher as chaves antes do D7. Direção: [`MONETIZATION.md`](../MONETIZATION.md).
 
 ---
 
@@ -297,6 +297,6 @@ Por ameaça: Bibliando → Bible Way → Bíblia Fácil → Verbo → Show do Bi
 | Caravana | Liga (Geral / Semana) |
 | Companhia | Par 1:1 |
 | Grupo | Estudo em célula/EBD (código `Room*`) |
-| Peregrino+ | Casca de assinatura — IAP inativo |
+| Peregrino+ | Assinatura opcional — revisão, constância, reforço e selo. IAP inativo (chaves vazias) |
 | Relato | Report de exercício → admin |
 | Competência | Observar → … → Aplicar ([§9](LEARNING_ENGINE.md)) |
