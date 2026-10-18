@@ -3886,6 +3886,96 @@ abstract class AppLocalizations {
   /// **'Cada dia da sequência sobe um marco: Semente, Broto, Ramo, Árvore e Fruto.'**
   String get growthWhisper;
 
+  /// No description provided for @guidedPlanActsSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'A igreja nasce, um capítulo por dia'**
+  String get guidedPlanActsSubtitle;
+
+  /// No description provided for @guidedPlanActsTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Atos em 28 dias'**
+  String get guidedPlanActsTitle;
+
+  /// No description provided for @guidedPlanDayOf.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dia {day} de {total}'**
+  String guidedPlanDayOf(int day, int total);
+
+  /// No description provided for @guidedPlanFinished.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você concluiu «{plan}».'**
+  String guidedPlanFinished(String plan);
+
+  /// No description provided for @guidedPlanGenesisSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Da criação a José, dois capítulos por dia'**
+  String get guidedPlanGenesisSubtitle;
+
+  /// No description provided for @guidedPlanGenesisTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Gênesis em 25 dias'**
+  String get guidedPlanGenesisTitle;
+
+  /// No description provided for @guidedPlanGospelsSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mateus, Marcos, Lucas e João'**
+  String get guidedPlanGospelsSubtitle;
+
+  /// No description provided for @guidedPlanGospelsTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Evangelhos em 30 dias'**
+  String get guidedPlanGospelsTitle;
+
+  /// No description provided for @guidedPlanMeta.
+  ///
+  /// In pt, this message translates to:
+  /// **'{subtitle} · ~{minutes} min/dia'**
+  String guidedPlanMeta(String subtitle, int minutes);
+
+  /// No description provided for @guidedPlanNewTestamentSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'De Mateus a Apocalipse, cerca de 3 capítulos por dia'**
+  String get guidedPlanNewTestamentSubtitle;
+
+  /// No description provided for @guidedPlanNewTestamentTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Novo Testamento em 90 dias'**
+  String get guidedPlanNewTestamentTitle;
+
+  /// No description provided for @guidedPlanPsalmsSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Um capítulo de Provérbios e alguns Salmos por dia'**
+  String get guidedPlanPsalmsSubtitle;
+
+  /// No description provided for @guidedPlanPsalmsTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Salmos e Provérbios em 31 dias'**
+  String get guidedPlanPsalmsTitle;
+
+  /// No description provided for @guidedPlansBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Leituras com começo, meio e fim. Cada dia já vem pronto; perdeu um, continua de onde parou.'**
+  String get guidedPlansBody;
+
+  /// No description provided for @guidedPlansHeader.
+  ///
+  /// In pt, this message translates to:
+  /// **'Planos guiados'**
+  String get guidedPlansHeader;
+
   /// No description provided for @homeBibleOfflineSubtitle.
   ///
   /// In pt, this message translates to:
@@ -8259,6 +8349,24 @@ abstract class AppLocalizations {
   /// **'{count, plural, =1{Sobrou 1 gesto. Mais um e o dia fecha.} other{Ainda faltam {count} gestos do dia.}}'**
   String notifQuestsLeftBody(int count);
 
+  /// No description provided for @notifReadingPlanBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sua porção da Bíblia de hoje está esperando.'**
+  String get notifReadingPlanBody;
+
+  /// No description provided for @notifReadingPlanGuidedBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dia {day} de «{plan}» está esperando.'**
+  String notifReadingPlanGuidedBody(int day, String plan);
+
+  /// No description provided for @notifReadingPlanTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Hora da leitura'**
+  String get notifReadingPlanTitle;
+
   /// No description provided for @notifResumeTitle.
   ///
   /// In pt, this message translates to:
@@ -8906,6 +9014,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Selo de apoiador'**
   String get paywallPerkBadgeTitle;
+
+  /// No description provided for @paywallPerkPlansBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Evangelhos em 30 dias, Novo Testamento em 90 e outros, no seu ritmo.'**
+  String get paywallPerkPlansBody;
+
+  /// No description provided for @paywallPerkPlansTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Planos de leitura guiados'**
+  String get paywallPerkPlansTitle;
 
   /// No description provided for @paywallPerkReinforceBody.
   ///
@@ -9614,6 +9734,30 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Restante'**
   String get planRemaining;
+
+  /// No description provided for @planReminderBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Um aviso por dia, na hora que você escolher, até a leitura do dia.'**
+  String get planReminderBody;
+
+  /// No description provided for @planReminderHeader.
+  ///
+  /// In pt, this message translates to:
+  /// **'Lembrete diário'**
+  String get planReminderHeader;
+
+  /// No description provided for @planReminderHour.
+  ///
+  /// In pt, this message translates to:
+  /// **'{hour}h'**
+  String planReminderHour(String hour);
+
+  /// No description provided for @planReminderOff.
+  ///
+  /// In pt, this message translates to:
+  /// **'Desligado'**
+  String get planReminderOff;
 
   /// No description provided for @planSectionOrder.
   ///

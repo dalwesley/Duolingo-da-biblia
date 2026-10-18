@@ -2,9 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../l10n/app_language.dart';
+import '../data/guided_reading_plans.dart';
 import '../models/bible_reading_plan.dart';
+import '../services/analytics_service.dart';
 import '../services/bible_reading_plan_service.dart';
+import '../services/notification_service.dart';
 import '../services/progress_service.dart';
+import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
@@ -15,6 +19,7 @@ import '../widgets/juntos_chrome.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import 'bible_screen.dart';
+import 'paywall_screen.dart';
 
 /// Plano de leitura — canônico ou cronológico, no tempo que couber no dia.
 class BibleReadingPlanScreen extends StatefulWidget {
@@ -37,6 +42,9 @@ class _BibleReadingPlanScreenState extends State<BibleReadingPlanScreen> {
   })?
   _preview;
   bool _loading = true;
+
+  /// Minutos médios por dia de cada plano guiado (cartões da escolha).
+  Map<String, double> _guidedMinutes = const {};
 
   @override
   void initState() {
@@ -78,10 +86,17 @@ class _BibleReadingPlanScreenState extends State<BibleReadingPlanScreen> {
         minutesPerDay: _draftMinutes,
         readKeys: progress.readBibleChapters.toSet(),
       );
+      final minutes = <String, double>{
+        for (final def in GuidedReadingPlan.all)
+          def.id: await BibleReadingPlanService.instance.guidedMinutesPerDay(
+            def,
+          ),
+      };
       if (!mounted) return;
       setState(() {
         _portion = null;
         _preview = preview;
+        _guidedMinutes = minutes;
         _loading = false;
       });
     }
@@ -106,6 +121,31 @@ class _BibleReadingPlanScreenState extends State<BibleReadingPlanScreen> {
     await _reload();
   }
 
+  /// Planos guiados são do Peregrino+; sem ele, o paywall.
+  Future<void> _startGuided(GuidedReadingPlan def) async {
+    final sub = context.read<SubscriptionService>();
+    AnalyticsService.instance.logPlusFeatureOpen(
+      feature: 'guided_plan',
+      hasPlus: sub.hasPlus,
+    );
+    if (!sub.plusFeaturesOpen) {
+      await Navigator.of(context).push(
+        MaterialPageRoute<void>(
+          builder: (_) => const PaywallScreen(source: 'reading_plan'),
+        ),
+      );
+      return;
+    }
+    await context.read<ProgressService>().startGuidedReadingPlan(def.id);
+    await _reload();
+  }
+
+  Future<void> _setReminder(int? hour) async {
+    final progress = context.read<ProgressService>();
+    await progress.setBibleReadingReminder(hour);
+    await NotificationService.instance.syncFromProgress(progress);
+  }
+
   Future<void> _completeDay() async {
     final portion = _portion;
     if (portion == null || portion.finished || portion.chapters.isEmpty) return;
@@ -117,6 +157,11 @@ class _BibleReadingPlanScreenState extends State<BibleReadingPlanScreen> {
       ],
     );
     if (!mounted) return;
+    final progress = context.read<ProgressService>();
+    if (progress.bibleReadingPlan.reminderHour != null) {
+      await NotificationService.instance.syncFromProgress(progress);
+      if (!mounted) return;
+    }
     showAppToastFor(
       context,
       message: context.l10n.planDayDoneToast(portion.chapters.length),
@@ -180,7 +225,10 @@ class _BibleReadingPlanScreenState extends State<BibleReadingPlanScreen> {
                   dark: style.onDark,
                   title: context.l10n.planTitle,
                   subtitle: plan.active
-                      ? plan.order.shortLabel
+                      ? (GuidedReadingPlan.byId(
+                              plan.guidedId,
+                            )?.title(context.l10n) ??
+                            plan.order.shortLabel)
                       : context.l10n.planAtYourPace,
                   leadingGlyph: CinematicGlyph.book,
                   onBack: () => Navigator.of(context).pop(),
@@ -207,6 +255,7 @@ class _BibleReadingPlanScreenState extends State<BibleReadingPlanScreen> {
                           onOpen: _openChapter,
                           onComplete: _completeDay,
                           onClear: _confirmClear,
+                          onReminder: _setReminder,
                           onMinutesChanged: (m) async {
                             await context
                                 .read<ProgressService>()
@@ -228,6 +277,11 @@ class _BibleReadingPlanScreenState extends State<BibleReadingPlanScreen> {
                             _refreshPreview();
                           },
                           onStart: _start,
+                          guidedMinutes: _guidedMinutes,
+                          guidedLocked: !context
+                              .watch<SubscriptionService>()
+                              .plusFeaturesOpen,
+                          onStartGuided: _startGuided,
                         ),
                     ],
                   ),
@@ -255,6 +309,9 @@ class _SetupPlanBody extends StatelessWidget {
   final ValueChanged<BibleReadingOrder> onOrder;
   final ValueChanged<int> onMinutes;
   final VoidCallback onStart;
+  final Map<String, double> guidedMinutes;
+  final bool guidedLocked;
+  final ValueChanged<GuidedReadingPlan> onStartGuided;
 
   const _SetupPlanBody({
     required this.order,
@@ -263,6 +320,9 @@ class _SetupPlanBody extends StatelessWidget {
     required this.onOrder,
     required this.onMinutes,
     required this.onStart,
+    required this.guidedMinutes,
+    required this.guidedLocked,
+    required this.onStartGuided,
   });
 
   static const _minuteOptions = [5, 10, 15, 20, 30, 45, 60];
@@ -371,7 +431,98 @@ class _SetupPlanBody extends StatelessWidget {
           onTap: onStart,
           trailing: null,
         ),
+        const SizedBox(height: AppSpace.section),
+        Row(
+          children: [
+            Expanded(child: SectionLabel(context.l10n.guidedPlansHeader)),
+            SoftBadge(
+              text: context.l10n.paywallTitle,
+              glyph: CinematicGlyph.crown,
+              accent: AppRoles.reward,
+            ),
+          ],
+        ),
+        const SizedBox(height: AppSpace.xs),
+        Text(
+          context.l10n.guidedPlansBody,
+          style: AppTypography.body(size: 13, color: a.textSecondary),
+        ),
+        const SizedBox(height: AppSpace.sm),
+        for (final def in GuidedReadingPlan.all) ...[
+          _GuidedPlanTile(
+            def: def,
+            minutesPerDay: guidedMinutes[def.id],
+            locked: guidedLocked,
+            onTap: () => onStartGuided(def),
+          ),
+          const SizedBox(height: 8),
+        ],
       ],
+    );
+  }
+}
+
+class _GuidedPlanTile extends StatelessWidget {
+  final GuidedReadingPlan def;
+  final double? minutesPerDay;
+  final bool locked;
+  final VoidCallback onTap;
+
+  const _GuidedPlanTile({
+    required this.def,
+    required this.minutesPerDay,
+    required this.locked,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final l10n = context.l10n;
+    final m = minutesPerDay;
+    return GlassCard(
+      padding: AppMetrics.cardPaddingCompact,
+      onTap: onTap,
+      child: Row(
+        children: [
+          CinematicIcon(
+            glyph: CinematicGlyph.book,
+            size: AppMetrics.leadingIcon,
+            accent: AppRoles.reward,
+          ),
+          const SizedBox(width: AppSpace.md),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  def.title(l10n),
+                  style: AppTypography.title(size: 15, color: a.text),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  m == null
+                      ? def.subtitle(l10n)
+                      : l10n.guidedPlanMeta(
+                          def.subtitle(l10n),
+                          m.round().clamp(1, 120),
+                        ),
+                  style: AppTypography.body(size: 12, color: a.textSecondary),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(width: AppSpace.sm),
+          locked
+              ? CinematicIcon(
+                  glyph: CinematicGlyph.lock,
+                  size: AppMetrics.iconMd,
+                  accent: a.textFaint,
+                  framed: false,
+                )
+              : ListChevron(color: a.textFaint),
+        ],
+      ),
     );
   }
 }
@@ -383,6 +534,7 @@ class _ActivePlanBody extends StatelessWidget {
   final VoidCallback onComplete;
   final VoidCallback onClear;
   final ValueChanged<int> onMinutesChanged;
+  final ValueChanged<int?> onReminder;
 
   const _ActivePlanBody({
     required this.plan,
@@ -391,7 +543,10 @@ class _ActivePlanBody extends StatelessWidget {
     required this.onComplete,
     required this.onClear,
     required this.onMinutesChanged,
+    required this.onReminder,
   });
+
+  static const _reminderHours = [6, 7, 8, 12, 19, 21];
 
   @override
   Widget build(BuildContext context) {
@@ -399,6 +554,8 @@ class _ActivePlanBody extends StatelessWidget {
     final p = portion;
     final doneToday = plan.doneToday;
     final finished = p?.finished == true;
+    final guided = GuidedReadingPlan.byId(plan.guidedId);
+    final planLabel = guided?.title(context.l10n) ?? plan.order.shortLabel;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -413,13 +570,22 @@ class _ActivePlanBody extends StatelessWidget {
                 trailing: SoftBadge(
                   text: doneToday
                       ? context.l10n.planDone
+                      : guided != null
+                      ? context.l10n.guidedPlanDayOf(
+                          (plan.cursor + 1).clamp(1, guided.days),
+                          guided.days,
+                        )
                       : context.l10n.planMinutes(plan.minutesPerDay),
                   accent: doneToday ? AppRoles.success : a.chrome,
                 ),
               ),
               const SizedBox(height: AppSpace.sm),
               Text(
-                finished ? context.l10n.planBibleFinished : (p?.summary ?? '…'),
+                finished
+                    ? (guided != null
+                          ? context.l10n.guidedPlanFinished(planLabel)
+                          : context.l10n.planBibleFinished)
+                    : (p?.summary ?? '…'),
                 style: AppTypography.title(size: 18, color: a.text),
               ),
               if (p != null && !finished) ...[
@@ -428,7 +594,7 @@ class _ActivePlanBody extends StatelessWidget {
                   context.l10n.planPortionMeta(
                     p.estimatedMinutes.round(),
                     p.chapters.length,
-                    plan.order.shortLabel,
+                    planLabel,
                   ),
                   style: AppTypography.body(size: 13, color: a.textSecondary),
                 ),
@@ -513,18 +679,48 @@ class _ActivePlanBody extends StatelessWidget {
               ),
             ),
         ],
+        // No guiado o dia já vem pronto: sem ajuste de tempo.
+        if (guided == null) ...[
+          const SizedBox(height: AppSpace.section),
+          SectionLabel(context.l10n.planAdjustTime),
+          const SizedBox(height: AppSpace.sm),
+          Wrap(
+            spacing: 8,
+            runSpacing: 8,
+            children: [
+              for (final m in const [5, 10, 15, 20, 30, 45, 60])
+                AppSelectChip(
+                  label: context.l10n.planMinutes(m),
+                  selected: plan.minutesPerDay == m,
+                  onTap: () => onMinutesChanged(m),
+                ),
+            ],
+          ),
+        ],
         const SizedBox(height: AppSpace.section),
-        SectionLabel(context.l10n.planAdjustTime),
+        SectionLabel(context.l10n.planReminderHeader),
+        const SizedBox(height: AppSpace.xs),
+        Text(
+          context.l10n.planReminderBody,
+          style: AppTypography.body(size: 13, color: a.textSecondary),
+        ),
         const SizedBox(height: AppSpace.sm),
         Wrap(
           spacing: 8,
           runSpacing: 8,
           children: [
-            for (final m in const [5, 10, 15, 20, 30, 45, 60])
+            AppSelectChip(
+              label: context.l10n.planReminderOff,
+              selected: plan.reminderHour == null,
+              onTap: () => onReminder(null),
+            ),
+            for (final h in _reminderHours)
               AppSelectChip(
-                label: context.l10n.planMinutes(m),
-                selected: plan.minutesPerDay == m,
-                onTap: () => onMinutesChanged(m),
+                label: context.l10n.planReminderHour(
+                  h.toString().padLeft(2, '0'),
+                ),
+                selected: plan.reminderHour == h,
+                onTap: () => onReminder(h),
               ),
           ],
         ),

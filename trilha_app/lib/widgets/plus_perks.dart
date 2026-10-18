@@ -13,6 +13,7 @@ import 'ui_primitives.dart';
 enum PlusPerk {
   season,
   weeklyReview,
+  readingPlans,
   consistency,
   reinforce,
   badge;
@@ -20,6 +21,7 @@ enum PlusPerk {
   CinematicGlyph get glyph => switch (this) {
     PlusPerk.season => CinematicGlyph.calendar,
     PlusPerk.weeklyReview => CinematicGlyph.scroll,
+    PlusPerk.readingPlans => CinematicGlyph.book,
     PlusPerk.consistency => CinematicGlyph.path,
     PlusPerk.reinforce => CinematicGlyph.target,
     PlusPerk.badge => CinematicGlyph.gift,
@@ -28,6 +30,7 @@ enum PlusPerk {
   String title(AppLocalizations l10n) => switch (this) {
     PlusPerk.season => l10n.paywallPerkSeasonTitle,
     PlusPerk.weeklyReview => l10n.paywallPerkWeeklyTitle,
+    PlusPerk.readingPlans => l10n.paywallPerkPlansTitle,
     PlusPerk.consistency => l10n.paywallPerkStreakTitle,
     PlusPerk.reinforce => l10n.paywallPerkReinforceTitle,
     PlusPerk.badge => l10n.paywallPerkBadgeTitle,
@@ -36,6 +39,7 @@ enum PlusPerk {
   String body(AppLocalizations l10n) => switch (this) {
     PlusPerk.season => l10n.paywallPerkSeasonBody,
     PlusPerk.weeklyReview => l10n.paywallPerkWeeklyBody,
+    PlusPerk.readingPlans => l10n.paywallPerkPlansBody,
     PlusPerk.consistency => l10n.paywallPerkStreakBody,
     PlusPerk.reinforce => l10n.paywallPerkReinforceBody,
     PlusPerk.badge => l10n.paywallPerkBadgeBody,

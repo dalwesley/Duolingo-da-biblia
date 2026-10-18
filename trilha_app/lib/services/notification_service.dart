@@ -6,6 +6,7 @@ import 'package:flutter_timezone/flutter_timezone.dart';
 import 'package:timezone/data/latest.dart' as tz_data;
 import 'package:timezone/timezone.dart' as tz;
 
+import '../data/guided_reading_plans.dart';
 import '../data/memory_verses.dart';
 import '../l10n/l10n_global.dart';
 import '../models/daily_quest.dart';
@@ -27,6 +28,7 @@ enum ReminderAction {
   weekly,
   league,
   weeklyReview,
+  readingPlan,
 }
 
 extension ReminderActionX on ReminderAction {
@@ -95,6 +97,7 @@ class NotificationService {
   static const _idRemote = 107;
   static const _idTrialEnding = 108;
   static const _idWeeklyReview = 109;
+  static const _idReadingPlan = 110;
   static const _legacyDaily = 1;
 
   static const _allIds = [
@@ -107,6 +110,7 @@ class NotificationService {
     _idLost1,
     _idLost2,
     _idWeeklyReview,
+    _idReadingPlan,
   ];
 
   Future<void> init({bool requestPermission = false}) async {
@@ -298,6 +302,8 @@ class NotificationService {
         ),
         daily: true,
       );
+      await _scheduleWeeklyReview(progress);
+      await _scheduleReadingPlan(progress);
       await _scheduleLostLearner(progress);
       return;
     }
@@ -337,7 +343,39 @@ class NotificationService {
     }
 
     await _scheduleWeeklyReview(progress);
+    await _scheduleReadingPlan(progress);
     await _scheduleLostLearner(progress);
+  }
+
+  /// Lembrete diário do plano de leitura, na hora escolhida. Se o dia já foi
+  /// lido, começa amanhã.
+  Future<void> _scheduleReadingPlan(ProgressService progress) async {
+    final plan = progress.bibleReadingPlan;
+    final hour = plan.reminderHour;
+    if (!plan.active || hour == null) return;
+    var when = _nextSlot(hour, 0);
+    final now = tz.TZDateTime.now(tz.local);
+    final isToday =
+        when.year == now.year && when.month == now.month && when.day == now.day;
+    if (plan.doneToday && isToday) when = when.add(const Duration(days: 1));
+    final guided = GuidedReadingPlan.byId(plan.guidedId);
+    final l = L10n.current;
+    await _schedule(
+      id: _idReadingPlan,
+      when: when,
+      copy: _ReminderCopy(
+        title: l.notifReadingPlanTitle,
+        body: guided == null
+            ? l.notifReadingPlanBody
+            : l.notifReadingPlanGuidedBody(
+                (plan.cursor + 1).clamp(1, guided.days),
+                guided.title(l),
+              ),
+        action: ReminderAction.readingPlan,
+        priority: 3,
+      ),
+      daily: true,
+    );
   }
 
   /// Domingo 18h: revisão da semana pronta (cenas suficientes, ainda não feita).

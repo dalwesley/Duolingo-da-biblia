@@ -1678,6 +1678,48 @@
   "growthStageSprout": "Broto",
   "growthStageTree": "Árvore",
   "growthWhisper": "Cada dia da sequência sobe um marco: Semente, Broto, Ramo, Árvore e Fruto.",
+  "guidedPlanActsSubtitle": "A igreja nasce, um capítulo por dia",
+  "guidedPlanActsTitle": "Atos em 28 dias",
+  "guidedPlanDayOf": "Dia {day} de {total}",
+  "@guidedPlanDayOf": {
+    "placeholders": {
+      "day": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "guidedPlanFinished": "Você concluiu «{plan}».",
+  "@guidedPlanFinished": {
+    "placeholders": {
+      "plan": {
+        "type": "String"
+      }
+    }
+  },
+  "guidedPlanGenesisSubtitle": "Da criação a José, dois capítulos por dia",
+  "guidedPlanGenesisTitle": "Gênesis em 25 dias",
+  "guidedPlanGospelsSubtitle": "Mateus, Marcos, Lucas e João",
+  "guidedPlanGospelsTitle": "Evangelhos em 30 dias",
+  "guidedPlanMeta": "{subtitle} · ~{minutes} min/dia",
+  "@guidedPlanMeta": {
+    "placeholders": {
+      "subtitle": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "guidedPlanNewTestamentSubtitle": "De Mateus a Apocalipse, cerca de 3 capítulos por dia",
+  "guidedPlanNewTestamentTitle": "Novo Testamento em 90 dias",
+  "guidedPlanPsalmsSubtitle": "Um capítulo de Provérbios e alguns Salmos por dia",
+  "guidedPlanPsalmsTitle": "Salmos e Provérbios em 31 dias",
+  "guidedPlansBody": "Leituras com começo, meio e fim. Cada dia já vem pronto; perdeu um, continua de onde parou.",
+  "guidedPlansHeader": "Planos guiados",
   "homeBibleOfflineSubtitle": "Leia sem internet",
   "homeCatalogDownloading": "Baixando…",
   "homeCatalogEmptyBody": "As cenas baixam na primeira abertura. Se a conexão falhar, toque para tentar de novo.",
@@ -3758,6 +3800,19 @@
       }
     }
   },
+  "notifReadingPlanBody": "Sua porção da Bíblia de hoje está esperando.",
+  "notifReadingPlanGuidedBody": "Dia {day} de «{plan}» está esperando.",
+  "@notifReadingPlanGuidedBody": {
+    "placeholders": {
+      "day": {
+        "type": "int"
+      },
+      "plan": {
+        "type": "String"
+      }
+    }
+  },
+  "notifReadingPlanTitle": "Hora da leitura",
   "notifResumeTitle": "Hora de retomar",
   "notifReturningBody": "{name}, faz {count, plural, =1{1 dia} other{{count} dias}} sem estudar. Uma cena retoma a sequência.",
   "@notifReturningBody": {
@@ -3995,6 +4050,8 @@
   "paywallManageHint": "Mudar de plano ou cancelar é na App Store ou no Google Play.",
   "paywallPerkBadgeBody": "Um selo no seu perfil. Quem abre seu nome na Caravana vê que você apoia o Stway.",
   "paywallPerkBadgeTitle": "Selo de apoiador",
+  "paywallPerkPlansBody": "Evangelhos em 30 dias, Novo Testamento em 90 e outros, no seu ritmo.",
+  "paywallPerkPlansTitle": "Planos de leitura guiados",
   "paywallPerkReinforceBody": "No perfil, o tipo de pergunta que você mais erra. Depois, um treino só com esse tipo.",
   "paywallPerkReinforceTitle": "Reforço do ponto fraco",
   "paywallPerkSeasonBody": "Advento, Páscoa, Natal e muito mais. Trilhas exclusivas para quem é Peregrino+.",
@@ -4391,6 +4448,17 @@
     }
   },
   "planRemaining": "Restante",
+  "planReminderBody": "Um aviso por dia, na hora que você escolher, até a leitura do dia.",
+  "planReminderHeader": "Lembrete diário",
+  "planReminderHour": "{hour}h",
+  "@planReminderHour": {
+    "placeholders": {
+      "hour": {
+        "type": "String"
+      }
+    }
+  },
+  "planReminderOff": "Desligado",
   "planSectionOrder": "Ordem",
   "planSectionTime": "Tempo disponível",
   "planSetupBody": "Montamos a porção diária para caber nesse tempo — na ordem da Bíblia ou na ordem dos acontecimentos. Capítulos que você já leu são pulados.",

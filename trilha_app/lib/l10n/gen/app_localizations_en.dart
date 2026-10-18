@@ -2461,6 +2461,61 @@ class AppLocalizationsEn extends AppLocalizations {
       'Each streak day climbs a milestone: Seed, Sprout, Branch, Tree and Fruit.';
 
   @override
+  String get guidedPlanActsSubtitle => 'The church is born, one chapter a day';
+
+  @override
+  String get guidedPlanActsTitle => 'Acts in 28 days';
+
+  @override
+  String guidedPlanDayOf(int day, int total) {
+    return 'Day $day of $total';
+  }
+
+  @override
+  String guidedPlanFinished(String plan) {
+    return 'You finished “$plan”.';
+  }
+
+  @override
+  String get guidedPlanGenesisSubtitle =>
+      'From creation to Joseph, two chapters a day';
+
+  @override
+  String get guidedPlanGenesisTitle => 'Genesis in 25 days';
+
+  @override
+  String get guidedPlanGospelsSubtitle => 'Matthew, Mark, Luke and John';
+
+  @override
+  String get guidedPlanGospelsTitle => 'Gospels in 30 days';
+
+  @override
+  String guidedPlanMeta(String subtitle, int minutes) {
+    return '$subtitle · ~$minutes min/day';
+  }
+
+  @override
+  String get guidedPlanNewTestamentSubtitle =>
+      'From Matthew to Revelation, about 3 chapters a day';
+
+  @override
+  String get guidedPlanNewTestamentTitle => 'New Testament in 90 days';
+
+  @override
+  String get guidedPlanPsalmsSubtitle =>
+      'A chapter of Proverbs and a few Psalms a day';
+
+  @override
+  String get guidedPlanPsalmsTitle => 'Psalms and Proverbs in 31 days';
+
+  @override
+  String get guidedPlansBody =>
+      'Readings with a beginning, middle and end. Each day comes ready; miss one and pick up where you left off.';
+
+  @override
+  String get guidedPlansHeader => 'Guided plans';
+
+  @override
   String get homeBibleOfflineSubtitle => 'Read without internet';
 
   @override
@@ -5302,6 +5357,17 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get notifReadingPlanBody => 'Today\'s Bible reading is waiting.';
+
+  @override
+  String notifReadingPlanGuidedBody(int day, String plan) {
+    return 'Day $day of “$plan” is waiting.';
+  }
+
+  @override
+  String get notifReadingPlanTitle => 'Time to read';
+
+  @override
   String get notifResumeTitle => 'Time to pick it up again';
 
   @override
@@ -5715,6 +5781,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get paywallPerkBadgeTitle => 'Supporter badge';
+
+  @override
+  String get paywallPerkPlansBody =>
+      'Gospels in 30 days, New Testament in 90 and more, at your pace.';
+
+  @override
+  String get paywallPerkPlansTitle => 'Guided reading plans';
 
   @override
   String get paywallPerkReinforceBody =>
@@ -6222,6 +6295,21 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get planRemaining => 'Remaining';
+
+  @override
+  String get planReminderBody =>
+      'One nudge a day, at the time you choose, until today\'s reading.';
+
+  @override
+  String get planReminderHeader => 'Daily reminder';
+
+  @override
+  String planReminderHour(String hour) {
+    return '$hour:00';
+  }
+
+  @override
+  String get planReminderOff => 'Off';
 
   @override
   String get planSectionOrder => 'Order';

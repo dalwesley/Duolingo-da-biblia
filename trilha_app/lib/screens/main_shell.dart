@@ -39,6 +39,7 @@ import 'home_screen.dart';
 import 'league_screen.dart';
 import 'me_screen.dart';
 import 'memory_screen.dart';
+import 'bible_reading_plan_screen.dart';
 import 'practice_screen.dart';
 import 'weekly_review_screen.dart';
 import 'settings_screen.dart';
@@ -441,6 +442,10 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
         Navigator.of(
           context,
         ).push(MaterialPageRoute(builder: (_) => const WeeklyReviewScreen()));
+      case ReminderAction.readingPlan:
+        Navigator.of(context).push(
+          MaterialPageRoute(builder: (_) => const BibleReadingPlanScreen()),
+        );
     }
   }
 

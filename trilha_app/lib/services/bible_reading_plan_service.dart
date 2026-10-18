@@ -1,4 +1,5 @@
 import '../data/bible_chronology.dart';
+import '../data/guided_reading_plans.dart';
 import '../models/bible_reading_plan.dart';
 import 'bible_service.dart';
 import 'progress_service.dart';
@@ -13,14 +14,14 @@ class BibleReadingPlanService {
     final indices = switch (order) {
       // Alfabética é só navegação; plano cai na ordem da Bíblia.
       BibleReadingOrder.canonical || BibleReadingOrder.alphabetical => [
-          for (var i = 0; i < books.length; i++) i,
-        ],
+        for (var i = 0; i < books.length; i++) i,
+      ],
       BibleReadingOrder.chronological => [
-          for (final e in BibleChronology.chronologicalIndices([
-            for (final b in books) (abbrev: b.abbrev, name: b.name),
-          ]))
-            e.bookIndex,
-        ],
+        for (final e in BibleChronology.chronologicalIndices([
+          for (final b in books) (abbrev: b.abbrev, name: b.name),
+        ]))
+          e.bookIndex,
+      ],
     };
 
     final out = <PlanChapterRef>[];
@@ -63,11 +64,86 @@ class BibleReadingPlanService {
     return i;
   }
 
+  /// Capítulos de cada dia do plano guiado, já com tamanho para o tempo.
+  Future<List<List<PlanChapterRef>>> guidedDays(GuidedReadingPlan def) async {
+    final books = await BibleService.instance.books();
+    final days = def.build([for (final b in books) b.chapters.length]);
+    return [
+      for (final day in days)
+        [
+          for (final c in day)
+            if (c.book < books.length &&
+                c.chapter <= books[c.book].chapters.length)
+              _ref(books[c.book], c.book, c.chapter),
+        ],
+    ];
+  }
+
+  /// Minutos médios por dia do plano guiado (para o cartão de escolha).
+  Future<double> guidedMinutesPerDay(GuidedReadingPlan def) async {
+    final days = await guidedDays(def);
+    if (days.isEmpty) return 0;
+    var total = 0.0;
+    for (final d in days) {
+      for (final c in d) {
+        total += c.estimatedMinutes;
+      }
+    }
+    return total / days.length;
+  }
+
+  PlanChapterRef _ref(BibleBook book, int bookIndex, int chapter) {
+    final verses = book.chapters[chapter - 1];
+    var chars = 0;
+    for (final v in verses) {
+      chars += v.length;
+    }
+    return PlanChapterRef(
+      bookIndex: bookIndex,
+      bookName: book.name,
+      abbrev: book.abbrev,
+      chapter: chapter,
+      verseCount: verses.length,
+      charCount: chars,
+    );
+  }
+
+  /// Guiado: o dia [BibleReadingPlan.cursor] inteiro, sem pular lidos.
+  Future<DailyReadingPortion> _guidedPortion(BibleReadingPlan plan) async {
+    final def = GuidedReadingPlan.byId(plan.guidedId);
+    final days = def == null
+        ? const <List<PlanChapterRef>>[]
+        : await guidedDays(def);
+    final day = plan.cursor;
+    if (!plan.active || day >= days.length) {
+      return DailyReadingPortion(
+        chapters: const [],
+        estimatedMinutes: 0,
+        fromCursor: day,
+        toCursor: day,
+        finished: true,
+      );
+    }
+    final chapters = days[day];
+    var minutes = 0.0;
+    for (final c in chapters) {
+      minutes += c.estimatedMinutes;
+    }
+    return DailyReadingPortion(
+      chapters: chapters,
+      estimatedMinutes: minutes,
+      fromCursor: day,
+      toCursor: day + 1,
+      finished: chapters.isEmpty,
+    );
+  }
+
   Future<DailyReadingPortion> portionFor({
     required BibleReadingPlan plan,
     required Set<String> readKeys,
     List<PlanChapterRef>? sequence,
   }) async {
+    if (plan.isGuided) return _guidedPortion(plan);
     final seq = sequence ?? await buildSequence(plan.order);
     // Pula o que já foi lido na Bíblia (fora do plano ou em dias anteriores).
     final start = firstUnreadCursor(seq, readKeys, from: plan.cursor);
@@ -116,13 +192,15 @@ class BibleReadingPlanService {
   }
 
   Future<
-      ({
-        int totalChapters,
-        int remainingChapters,
-        double totalMinutes,
-        double remainingMinutes,
-        int estimatedDays,
-      })> previewStats({
+    ({
+      int totalChapters,
+      int remainingChapters,
+      double totalMinutes,
+      double remainingMinutes,
+      int estimatedDays,
+    })
+  >
+  previewStats({
     required BibleReadingOrder order,
     required int minutesPerDay,
     required Set<String> readKeys,

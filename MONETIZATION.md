@@ -30,7 +30,7 @@ Checklist da loja, ainda em aberto: [`store/ios/app-review-notes-iap.md`](store/
 
 ## O que o Peregrino+ dá
 
-Quem assina ganha isto. Cinco coisas.
+Quem assina ganha isto. Seis coisas.
 
 **1. A Caminhada**
 A temporada no cartão da Home. Os 3 primeiros dias são de todo mundo. Do 4º em diante, o cartão abre o Peregrino+, e a revisão daquela semana também. A cena do dia continua na aba Trilhas. Sem loja, nada trava.
@@ -38,13 +38,16 @@ A temporada no cartão da Home. Os 3 primeiros dias são de todo mundo. Do 4º e
 **2. Revisão da semana**
 O “Hoje:” de cada cena feita na semana e 3 perguntas, de preferência as que a pessoa errou. Sem o Plus, a Home ainda mostra que a revisão existe; a tela lista as cenas e leva ao paywall. Não é a fila de erros (essa continua grátis).
 
-**3. Sua constância**
+**3. Planos de leitura guiados**
+Evangelhos em 30 dias, Salmos e Provérbios em 31, Atos em 28, Gênesis em 25 e Novo Testamento em 90. Cada dia já vem pronto; o dia só avança quando a pessoa marca a leitura, então não há atraso. Catálogo em `trilha_app/lib/data/guided_reading_plans.dart`. O plano da Bíblia inteira, no ritmo da pessoa, continua grátis.
+
+**4. Sua constância**
 No perfil: sequência contra a meta, a semana dia a dia, e as últimas 12 semanas (cada coluna é uma lamparina).
 
-**4. Reforço do ponto fraco**
+**5. Reforço do ponto fraco**
 Acerto por modo e por gesto, e até 5 perguntas do gesto que mais erra, em modo prática.
 
-**5. Selo de apoiador**
+**6. Selo de apoiador**
 No perfil que a Caravana abre. Quem assina ou quem fez um apoio avulso. A promoção de lançamento não dá selo.
 
 O texto do paywall: o apoio mantém o Stway grátis para quem não pode pagar, e estes benefícios vêm junto.
@@ -56,6 +59,7 @@ O texto do paywall: o apoio mantém o Stway grátis para quem não pode pagar, e
 - Cena do dia, sequência, missões, gelo, lâmpadas, reparo, Strong
 - Cânon nos 3 modos (Observação / Compreensão / Interpretação), inclusive Profundezas
 - Bíblia offline e áudio da cena (passagem + “Hoje:”)
+- Plano de leitura da Bíblia inteira (canônico ou cronológico, no tempo que couber) e o lembrete diário de qualquer plano
 - Os 3 primeiros dias da Caminhada (o restante pede o Peregrino+; a cena segue na aba Trilhas)
 - 1 companhia, Caravana, grupo, Desafio
 - Fila de erros

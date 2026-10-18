@@ -1,0 +1,140 @@
+{
+  "paywallPerkPlansTitle": {
+    "pt": "Planos de leitura guiados",
+    "en": "Guided reading plans",
+    "es": "Planes de lectura guiados"
+  },
+  "paywallPerkPlansBody": {
+    "pt": "Evangelhos em 30 dias, Novo Testamento em 90 e outros, no seu ritmo.",
+    "en": "Gospels in 30 days, New Testament in 90 and more, at your pace.",
+    "es": "Evangelios en 30 días, Nuevo Testamento en 90 y otros, a tu ritmo."
+  },
+  "guidedPlansHeader": {
+    "pt": "Planos guiados",
+    "en": "Guided plans",
+    "es": "Planes guiados"
+  },
+  "guidedPlansBody": {
+    "pt": "Leituras com começo, meio e fim. Cada dia já vem pronto; perdeu um, continua de onde parou.",
+    "en": "Readings with a beginning, middle and end. Each day comes ready; miss one and pick up where you left off.",
+    "es": "Lecturas con principio, medio y fin. Cada día viene listo; si faltas uno, sigues donde quedaste."
+  },
+  "guidedPlanMeta": {
+    "pt": "{subtitle} · ~{minutes} min/dia",
+    "en": "{subtitle} · ~{minutes} min/day",
+    "es": "{subtitle} · ~{minutes} min/día",
+    "placeholders": {
+      "subtitle": "String",
+      "minutes": "int"
+    }
+  },
+  "guidedPlanDayOf": {
+    "pt": "Dia {day} de {total}",
+    "en": "Day {day} of {total}",
+    "es": "Día {day} de {total}",
+    "placeholders": {
+      "day": "int",
+      "total": "int"
+    }
+  },
+  "guidedPlanFinished": {
+    "pt": "Você concluiu «{plan}».",
+    "en": "You finished “{plan}”.",
+    "es": "Terminaste «{plan}».",
+    "placeholders": {
+      "plan": "String"
+    }
+  },
+  "guidedPlanGospelsTitle": {
+    "pt": "Evangelhos em 30 dias",
+    "en": "Gospels in 30 days",
+    "es": "Evangelios en 30 días"
+  },
+  "guidedPlanGospelsSubtitle": {
+    "pt": "Mateus, Marcos, Lucas e João",
+    "en": "Matthew, Mark, Luke and John",
+    "es": "Mateo, Marcos, Lucas y Juan"
+  },
+  "guidedPlanPsalmsTitle": {
+    "pt": "Salmos e Provérbios em 31 dias",
+    "en": "Psalms and Proverbs in 31 days",
+    "es": "Salmos y Proverbios en 31 días"
+  },
+  "guidedPlanPsalmsSubtitle": {
+    "pt": "Um capítulo de Provérbios e alguns Salmos por dia",
+    "en": "A chapter of Proverbs and a few Psalms a day",
+    "es": "Un capítulo de Proverbios y algunos Salmos al día"
+  },
+  "guidedPlanActsTitle": {
+    "pt": "Atos em 28 dias",
+    "en": "Acts in 28 days",
+    "es": "Hechos en 28 días"
+  },
+  "guidedPlanActsSubtitle": {
+    "pt": "A igreja nasce, um capítulo por dia",
+    "en": "The church is born, one chapter a day",
+    "es": "Nace la iglesia, un capítulo al día"
+  },
+  "guidedPlanGenesisTitle": {
+    "pt": "Gênesis em 25 dias",
+    "en": "Genesis in 25 days",
+    "es": "Génesis en 25 días"
+  },
+  "guidedPlanGenesisSubtitle": {
+    "pt": "Da criação a José, dois capítulos por dia",
+    "en": "From creation to Joseph, two chapters a day",
+    "es": "De la creación a José, dos capítulos al día"
+  },
+  "guidedPlanNewTestamentTitle": {
+    "pt": "Novo Testamento em 90 dias",
+    "en": "New Testament in 90 days",
+    "es": "Nuevo Testamento en 90 días"
+  },
+  "guidedPlanNewTestamentSubtitle": {
+    "pt": "De Mateus a Apocalipse, cerca de 3 capítulos por dia",
+    "en": "From Matthew to Revelation, about 3 chapters a day",
+    "es": "De Mateo a Apocalipsis, unos 3 capítulos al día"
+  },
+  "planReminderHeader": {
+    "pt": "Lembrete diário",
+    "en": "Daily reminder",
+    "es": "Recordatorio diario"
+  },
+  "planReminderBody": {
+    "pt": "Um aviso por dia, na hora que você escolher, até a leitura do dia.",
+    "en": "One nudge a day, at the time you choose, until today's reading.",
+    "es": "Un aviso al día, a la hora que elijas, hasta la lectura del día."
+  },
+  "planReminderOff": {
+    "pt": "Desligado",
+    "en": "Off",
+    "es": "Apagado"
+  },
+  "planReminderHour": {
+    "pt": "{hour}h",
+    "en": "{hour}:00",
+    "es": "{hour} h",
+    "placeholders": {
+      "hour": "String"
+    }
+  },
+  "notifReadingPlanTitle": {
+    "pt": "Hora da leitura",
+    "en": "Time to read",
+    "es": "Hora de leer"
+  },
+  "notifReadingPlanBody": {
+    "pt": "Sua porção da Bíblia de hoje está esperando.",
+    "en": "Today's Bible reading is waiting.",
+    "es": "Tu lectura bíblica de hoy te espera."
+  },
+  "notifReadingPlanGuidedBody": {
+    "pt": "Dia {day} de «{plan}» está esperando.",
+    "en": "Day {day} of “{plan}” is waiting.",
+    "es": "El día {day} de «{plan}» te espera.",
+    "placeholders": {
+      "day": "int",
+      "plan": "String"
+    }
+  }
+}

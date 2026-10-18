@@ -1313,14 +1313,43 @@ class ProgressService extends ChangeNotifier {
       lastCompletedDay: null,
       completedDays: 0,
       startedAt: today,
+      reminderHour: bibleReadingPlan.reminderHour,
     );
     await _save();
     notifyListeners();
   }
 
+  /// Plano guiado (Peregrino+): começa no dia 1. Mantém o lembrete que já
+  /// estava ligado.
+  Future<void> startGuidedReadingPlan(String guidedId) async {
+    bibleReadingPlan = BibleReadingPlan(
+      active: true,
+      order: BibleReadingOrder.canonical,
+      minutesPerDay: bibleReadingPlan.minutesPerDay,
+      cursor: 0,
+      lastCompletedDay: null,
+      completedDays: 0,
+      startedAt: _todayKey(),
+      guidedId: guidedId,
+      reminderHour: bibleReadingPlan.reminderHour,
+    );
+    await _save();
+    notifyListeners();
+  }
+
+  /// Lembrete diário do plano (grátis). null desliga.
+  Future<void> setBibleReadingReminder(int? hour) async {
+    bibleReadingPlan = hour == null
+        ? bibleReadingPlan.copyWith(clearReminder: true)
+        : bibleReadingPlan.copyWith(reminderHour: hour.clamp(0, 23));
+    await _save();
+    notifyListeners();
+  }
+
   /// Avança o cursor do plano por cima de capítulos já lidos na Bíblia.
+  /// No plano guiado o dia é fixo: nada é pulado.
   Future<int> syncBibleReadingPlanWithReadChapters() async {
-    if (!bibleReadingPlan.active) return 0;
+    if (!bibleReadingPlan.active || bibleReadingPlan.isGuided) return 0;
     final seq = await BibleReadingPlanService.instance.buildSequence(
       bibleReadingPlan.order,
     );
@@ -2863,6 +2892,7 @@ class ProgressService extends ChangeNotifier {
         if (!bibleReadingPlan.active ||
             (remote.active &&
                 remote.order == bibleReadingPlan.order &&
+                remote.guidedId == bibleReadingPlan.guidedId &&
                 remote.cursor >= bibleReadingPlan.cursor) ||
             (remote.active && !bibleReadingPlan.active)) {
           bibleReadingPlan = remote;

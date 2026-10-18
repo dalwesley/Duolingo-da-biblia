@@ -10,18 +10,16 @@ enum BibleReadingOrder {
   String get storageKey => name;
 
   String get label => switch (this) {
-        BibleReadingOrder.canonical => L10n.current.planOrderCanonical,
-        BibleReadingOrder.chronological => L10n.current.planOrderChronological,
-        BibleReadingOrder.alphabetical => L10n.current.planOrderAlphabetical,
-      };
+    BibleReadingOrder.canonical => L10n.current.planOrderCanonical,
+    BibleReadingOrder.chronological => L10n.current.planOrderChronological,
+    BibleReadingOrder.alphabetical => L10n.current.planOrderAlphabetical,
+  };
 
   String get shortLabel => switch (this) {
-        BibleReadingOrder.canonical => L10n.current.planOrderCanonicalShort,
-        BibleReadingOrder.chronological =>
-          L10n.current.planOrderChronologicalShort,
-        BibleReadingOrder.alphabetical =>
-          L10n.current.planOrderAlphabeticalShort,
-      };
+    BibleReadingOrder.canonical => L10n.current.planOrderCanonicalShort,
+    BibleReadingOrder.chronological => L10n.current.planOrderChronologicalShort,
+    BibleReadingOrder.alphabetical => L10n.current.planOrderAlphabeticalShort,
+  };
 
   /// Plano de leitura — A–Z não é um percurso de estudo.
   static const planOrders = [
@@ -50,6 +48,15 @@ class BibleReadingPlan {
   final int completedDays;
   final String startedAt;
 
+  /// Plano guiado ([GuidedReadingPlan.id]); null = Bíblia inteira no ritmo.
+  /// No guiado, [cursor] é o índice do próximo dia.
+  final String? guidedId;
+
+  /// Hora do lembrete diário (0–23); null = sem lembrete.
+  final int? reminderHour;
+
+  bool get isGuided => guidedId != null;
+
   const BibleReadingPlan({
     required this.active,
     required this.order,
@@ -58,6 +65,8 @@ class BibleReadingPlan {
     required this.lastCompletedDay,
     required this.completedDays,
     required this.startedAt,
+    this.guidedId,
+    this.reminderHour,
   });
 
   static const inactive = BibleReadingPlan(
@@ -85,6 +94,8 @@ class BibleReadingPlan {
     bool clearLastCompletedDay = false,
     int? completedDays,
     String? startedAt,
+    int? reminderHour,
+    bool clearReminder = false,
   }) {
     return BibleReadingPlan(
       active: active ?? this.active,
@@ -96,29 +107,37 @@ class BibleReadingPlan {
           : (lastCompletedDay ?? this.lastCompletedDay),
       completedDays: completedDays ?? this.completedDays,
       startedAt: startedAt ?? this.startedAt,
+      guidedId: guidedId,
+      reminderHour: clearReminder ? null : (reminderHour ?? this.reminderHour),
     );
   }
 
   Map<String, dynamic> toMap() => {
-        'active': active,
-        'order': order.storageKey,
-        'minutesPerDay': minutesPerDay,
-        'cursor': cursor,
-        'lastCompletedDay': lastCompletedDay,
-        'completedDays': completedDays,
-        'startedAt': startedAt,
-      };
+    'active': active,
+    'order': order.storageKey,
+    'minutesPerDay': minutesPerDay,
+    'cursor': cursor,
+    'lastCompletedDay': lastCompletedDay,
+    'completedDays': completedDays,
+    'startedAt': startedAt,
+    'guidedId': guidedId,
+    'reminderHour': reminderHour,
+  };
 
   static BibleReadingPlan fromMap(dynamic raw) {
     if (raw is! Map) return inactive;
     return BibleReadingPlan(
       active: raw['active'] == true,
       order: BibleReadingOrder.fromStorage(raw['order']?.toString()),
-      minutesPerDay: (raw['minutesPerDay'] as num?)?.toInt().clamp(5, 120) ?? 15,
+      minutesPerDay:
+          (raw['minutesPerDay'] as num?)?.toInt().clamp(5, 120) ?? 15,
       cursor: (raw['cursor'] as num?)?.toInt().clamp(0, 100000) ?? 0,
       lastCompletedDay: raw['lastCompletedDay']?.toString(),
-      completedDays: (raw['completedDays'] as num?)?.toInt().clamp(0, 100000) ?? 0,
+      completedDays:
+          (raw['completedDays'] as num?)?.toInt().clamp(0, 100000) ?? 0,
       startedAt: raw['startedAt']?.toString() ?? '',
+      guidedId: raw['guidedId']?.toString(),
+      reminderHour: (raw['reminderHour'] as num?)?.toInt().clamp(0, 23),
     );
   }
 }

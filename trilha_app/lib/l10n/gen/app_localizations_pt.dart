@@ -2461,6 +2461,61 @@ class AppLocalizationsPt extends AppLocalizations {
       'Cada dia da sequência sobe um marco: Semente, Broto, Ramo, Árvore e Fruto.';
 
   @override
+  String get guidedPlanActsSubtitle => 'A igreja nasce, um capítulo por dia';
+
+  @override
+  String get guidedPlanActsTitle => 'Atos em 28 dias';
+
+  @override
+  String guidedPlanDayOf(int day, int total) {
+    return 'Dia $day de $total';
+  }
+
+  @override
+  String guidedPlanFinished(String plan) {
+    return 'Você concluiu «$plan».';
+  }
+
+  @override
+  String get guidedPlanGenesisSubtitle =>
+      'Da criação a José, dois capítulos por dia';
+
+  @override
+  String get guidedPlanGenesisTitle => 'Gênesis em 25 dias';
+
+  @override
+  String get guidedPlanGospelsSubtitle => 'Mateus, Marcos, Lucas e João';
+
+  @override
+  String get guidedPlanGospelsTitle => 'Evangelhos em 30 dias';
+
+  @override
+  String guidedPlanMeta(String subtitle, int minutes) {
+    return '$subtitle · ~$minutes min/dia';
+  }
+
+  @override
+  String get guidedPlanNewTestamentSubtitle =>
+      'De Mateus a Apocalipse, cerca de 3 capítulos por dia';
+
+  @override
+  String get guidedPlanNewTestamentTitle => 'Novo Testamento em 90 dias';
+
+  @override
+  String get guidedPlanPsalmsSubtitle =>
+      'Um capítulo de Provérbios e alguns Salmos por dia';
+
+  @override
+  String get guidedPlanPsalmsTitle => 'Salmos e Provérbios em 31 dias';
+
+  @override
+  String get guidedPlansBody =>
+      'Leituras com começo, meio e fim. Cada dia já vem pronto; perdeu um, continua de onde parou.';
+
+  @override
+  String get guidedPlansHeader => 'Planos guiados';
+
+  @override
   String get homeBibleOfflineSubtitle => 'Leia sem internet';
 
   @override
@@ -5334,6 +5389,18 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String get notifReadingPlanBody =>
+      'Sua porção da Bíblia de hoje está esperando.';
+
+  @override
+  String notifReadingPlanGuidedBody(int day, String plan) {
+    return 'Dia $day de «$plan» está esperando.';
+  }
+
+  @override
+  String get notifReadingPlanTitle => 'Hora da leitura';
+
+  @override
   String get notifResumeTitle => 'Hora de retomar';
 
   @override
@@ -5744,6 +5811,13 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get paywallPerkBadgeTitle => 'Selo de apoiador';
+
+  @override
+  String get paywallPerkPlansBody =>
+      'Evangelhos em 30 dias, Novo Testamento em 90 e outros, no seu ritmo.';
+
+  @override
+  String get paywallPerkPlansTitle => 'Planos de leitura guiados';
 
   @override
   String get paywallPerkReinforceBody =>
@@ -6251,6 +6325,21 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get planRemaining => 'Restante';
+
+  @override
+  String get planReminderBody =>
+      'Um aviso por dia, na hora que você escolher, até a leitura do dia.';
+
+  @override
+  String get planReminderHeader => 'Lembrete diário';
+
+  @override
+  String planReminderHour(String hour) {
+    return '${hour}h';
+  }
+
+  @override
+  String get planReminderOff => 'Desligado';
 
   @override
   String get planSectionOrder => 'Ordem';
