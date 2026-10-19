@@ -4054,8 +4054,8 @@
   "paywallPerkPlansTitle": "Planos de leitura guiados",
   "paywallPerkReinforceBody": "No perfil, o tipo de pergunta que você mais erra. Depois, um treino só com esse tipo.",
   "paywallPerkReinforceTitle": "Reforço do ponto fraco",
-  "paywallPerkSeasonBody": "Advento, Páscoa, Natal e muito mais. Trilhas exclusivas para quem é Peregrino+.",
-  "paywallPerkSeasonTitle": "Temporadas sazonais",
+  "paywallPerkSeasonBody": "Caminhadas do calendário cristão, como o Advento: todos no mesmo dia, do 4º dia em diante.",
+  "paywallPerkSeasonTitle": "Caminhadas sazonais",
   "paywallPerkStreakBody": "Acompanhe sua sequência, os dias desta semana e como foram os últimos três meses.",
   "paywallPerkStreakTitle": "Sua constância",
   "paywallPerkWeeklyBody": "No domingo, uma cena especial para reforçar tudo o que você aprendeu na semana.",
@@ -4549,6 +4549,14 @@
     }
   },
   "plusPerksHeader": "Com o Peregrino+",
+  "plusPerksMore": "{count, plural, =1{E mais 1 benefício} other{E mais {count} benefícios}}",
+  "@plusPerksMore": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "portraitAvatar": "Avatar",
   "portraitAvatarHint": "Um peregrino ilustrado",
   "portraitEyebrow": "Retrato",
@@ -5423,7 +5431,7 @@
     }
   },
   "settingsPlusSubscribe": "Assinar o Peregrino+",
-  "settingsPlusTeaser": "Temporadas sazonais, revisão semanal, constância e reforço",
+  "settingsPlusTeaser": "Caminhadas sazonais, planos de leitura e revisão da semana",
   "settingsProgressInCloud": "Progresso na nuvem",
   "settingsProgressRestored": "Progresso restaurado.",
   "settingsReminderAt": "Às {hour}h · toque para mudar",

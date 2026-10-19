@@ -5798,10 +5798,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get paywallPerkSeasonBody =>
-      'Advent, Easter, Christmas and more. Journeys exclusive to Pilgrim+.';
+      'Walks through the Christian calendar, like Advent: everyone on the same day, from day 4 on.';
 
   @override
-  String get paywallPerkSeasonTitle => 'Seasonal journeys';
+  String get paywallPerkSeasonTitle => 'Seasonal walks';
 
   @override
   String get paywallPerkStreakBody =>
@@ -6436,6 +6436,17 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get plusPerksHeader => 'With Pilgrim+';
+
+  @override
+  String plusPerksMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'And $count more benefits',
+      one: 'And 1 more benefit',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portraitAvatar => 'Avatar';
@@ -7780,7 +7791,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get settingsPlusTeaser =>
-      'Seasonal journeys, weekly review, consistency and practice';
+      'Seasonal walks, reading plans and weekly review';
 
   @override
   String get settingsProgressInCloud => 'Progress in the cloud';

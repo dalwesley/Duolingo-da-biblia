@@ -9042,13 +9042,13 @@ abstract class AppLocalizations {
   /// No description provided for @paywallPerkSeasonBody.
   ///
   /// In pt, this message translates to:
-  /// **'Advento, Páscoa, Natal e muito mais. Trilhas exclusivas para quem é Peregrino+.'**
+  /// **'Caminhadas do calendário cristão, como o Advento: todos no mesmo dia, do 4º dia em diante.'**
   String get paywallPerkSeasonBody;
 
   /// No description provided for @paywallPerkSeasonTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Temporadas sazonais'**
+  /// **'Caminhadas sazonais'**
   String get paywallPerkSeasonTitle;
 
   /// No description provided for @paywallPerkStreakBody.
@@ -9920,6 +9920,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Com o Peregrino+'**
   String get plusPerksHeader;
+
+  /// No description provided for @plusPerksMore.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{E mais 1 benefício} other{E mais {count} benefícios}}'**
+  String plusPerksMore(int count);
 
   /// No description provided for @portraitAvatar.
   ///
@@ -12108,7 +12114,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsPlusTeaser.
   ///
   /// In pt, this message translates to:
-  /// **'Temporadas sazonais, revisão semanal, constância e reforço'**
+  /// **'Caminhadas sazonais, planos de leitura e revisão da semana'**
   String get settingsPlusTeaser;
 
   /// No description provided for @settingsProgressInCloud.

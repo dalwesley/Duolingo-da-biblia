@@ -266,5 +266,13 @@
     "pt": "Mudar de plano ou cancelar é na App Store ou no Google Play.",
     "en": "Change plan or cancel in the App Store or Google Play.",
     "es": "Cambiar de plan o cancelar se hace en App Store o Google Play."
+  },
+  "plusPerksMore": {
+    "pt": "{count, plural, =1{E mais 1 benefício} other{E mais {count} benefícios}}",
+    "en": "{count, plural, =1{And 1 more benefit} other{And {count} more benefits}}",
+    "es": "{count, plural, =1{Y 1 beneficio más} other{Y {count} beneficios más}}",
+    "placeholders": {
+      "count": "int"
+    }
   }
 }

@@ -5828,10 +5828,10 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get paywallPerkSeasonBody =>
-      'Advento, Páscoa, Natal e muito mais. Trilhas exclusivas para quem é Peregrino+.';
+      'Caminhadas do calendário cristão, como o Advento: todos no mesmo dia, do 4º dia em diante.';
 
   @override
-  String get paywallPerkSeasonTitle => 'Temporadas sazonais';
+  String get paywallPerkSeasonTitle => 'Caminhadas sazonais';
 
   @override
   String get paywallPerkStreakBody =>
@@ -6466,6 +6466,17 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get plusPerksHeader => 'Com o Peregrino+';
+
+  @override
+  String plusPerksMore(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'E mais $count benefícios',
+      one: 'E mais 1 benefício',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get portraitAvatar => 'Avatar';
@@ -7800,7 +7811,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get settingsPlusTeaser =>
-      'Temporadas sazonais, revisão semanal, constância e reforço';
+      'Caminhadas sazonais, planos de leitura e revisão da semana';
 
   @override
   String get settingsProgressInCloud => 'Progresso na nuvem';

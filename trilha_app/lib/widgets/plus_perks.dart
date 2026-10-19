@@ -18,6 +18,13 @@ enum PlusPerk {
   reinforce,
   badge;
 
+  /// Os três que abrem as listas curtas (ofertas, aviso, perfil).
+  static const highlights = [
+    PlusPerk.season,
+    PlusPerk.readingPlans,
+    PlusPerk.weeklyReview,
+  ];
+
   CinematicGlyph get glyph => switch (this) {
     PlusPerk.season => CinematicGlyph.calendar,
     PlusPerk.weeklyReview => CinematicGlyph.scroll,
@@ -49,7 +56,8 @@ enum PlusPerk {
 /// Cartão do Peregrino+: superfície dos cards tingida de dourado com brilho
 /// no topo, rótulo dourado em caixa alta, ícones emoldurados em dourado.
 ///
-/// [detailed] mostra a frase de cada benefício (paywall). [locked] põe o
+/// [detailed] mostra todos, com a frase de cada um (paywall); o compacto
+/// mostra só [PlusPerk.highlights] e "e mais N". [locked] põe o
 /// cadeado à direita (aviso de fim da promoção). [boxed] false tira o
 /// fundo, para quando o cartão já está dentro de outro.
 class PlusPerkCard extends StatelessWidget {
@@ -72,6 +80,8 @@ class PlusPerkCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final l10n = context.l10n;
     final iconSize = detailed ? AppMetrics.leadingIcon : AppMetrics.iconLg;
+    final perks = detailed ? PlusPerk.values : PlusPerk.highlights;
+    final more = PlusPerk.values.length - perks.length;
 
     final content = Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -85,13 +95,24 @@ class PlusPerkCard extends StatelessWidget {
           ),
         ),
         const SizedBox(height: AppSpace.md),
-        for (var i = 0; i < PlusPerk.values.length; i++) ...[
+        for (var i = 0; i < perks.length; i++) ...[
           if (i > 0) SizedBox(height: detailed ? AppSpace.lg : 10),
           _PerkRow(
-            perk: PlusPerk.values[i],
+            perk: perks[i],
             iconSize: iconSize,
             detailed: detailed,
             locked: locked,
+          ),
+        ],
+        if (more > 0) ...[
+          const SizedBox(height: 10),
+          Text(
+            l10n.plusPerksMore(more),
+            style: AppTypography.body(
+              size: 13,
+              weight: FontWeight.w700,
+              color: Appearance.of(context).textSecondary,
+            ),
           ),
         ],
         if (footer != null) ...[
