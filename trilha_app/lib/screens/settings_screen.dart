@@ -260,10 +260,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                   _reveal(0, _passportCard(progress, a)),
 
                   // Sua jornada — como você estuda e em que ritmo.
-                  _reveal(
-                    1,
-                    _groupLabel(a, context.l10n.settingsGroupProgress),
-                  ),
+                  const SizedBox(height: AppSpace.xl),
                   _reveal(2, _studyModeCard(progress, a)),
                   const SizedBox(height: AppSpace.md),
                   _reveal(
@@ -285,7 +282,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                   ),
 
                   // Neste aparelho — o que se vê e o que se ouve.
-                  _reveal(4, _groupLabel(a, context.l10n.settingsGroupDevice)),
+                  const SizedBox(height: AppSpace.xl),
                   _reveal(
                     5,
                     KeyedSubtree(
@@ -304,21 +301,23 @@ class _SettingsScreenState extends State<SettingsScreen>
                     ),
                   ),
 
-                  // Conta e dados — backup, sair e resetar num lugar só.
-                  _reveal(
-                    7,
-                    _groupLabel(a, context.l10n.settingsGroupAccountData),
-                  ),
+                  // Conta e dados — o dia a dia em cima; o que apaga, à
+                  // parte e por último.
+                  const SizedBox(height: AppSpace.xl),
                   _reveal(
                     8,
                     KeyedSubtree(
                       key: _sectionKeys[_SettingsSection.conta],
-                      child: _accountCard(a, sync, progress),
+                      child: _accountCard(a, sync),
                     ),
                   ),
                   const SizedBox(height: AppSpace.md),
+                  _reveal(8, _dangerCard(a, progress)),
+
+                  // Sobre — o Stway em poucas linhas; versão e termos no pé.
+                  const SizedBox(height: AppSpace.xl),
                   _reveal(9, _aboutBlock(a)),
-                  const SizedBox(height: AppSpace.sm),
+                  _reveal(10, _footer(a)),
                 ],
               ),
             ),
@@ -498,17 +497,6 @@ class _SettingsScreenState extends State<SettingsScreen>
         const SizedBox(height: AppSpace.md),
         const _FontPreview(),
       ],
-    );
-  }
-
-  /// Rótulo de grupo entre cards — organiza a tela em quatro blocos.
-  Widget _groupLabel(AppearanceStyle a, String text) {
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(4, AppSpace.xl, 4, AppSpace.sm),
-      child: Semantics(
-        header: true,
-        child: SectionLabel(text, color: a.textFaint),
-      ),
     );
   }
 
@@ -970,13 +958,9 @@ class _SettingsScreenState extends State<SettingsScreen>
     );
   }
 
-  /// Backup, sair e resetar — um card, linhas curtas; o perigoso em
-  /// vermelho no fim e sempre com confirmação.
-  Widget _accountCard(
-    AppearanceStyle a,
-    SyncService sync,
-    ProgressService progress,
-  ) {
+  /// Backup, bloqueios e sair — o que se usa no dia a dia. Sair não apaga
+  /// nada (o progresso fica na nuvem), então não leva vermelho.
+  Widget _accountCard(AppearanceStyle a, SyncService sync) {
     final backend = context.watch<BackendService>();
     final last = sync.lastSyncAt;
     return _groupedCard(
@@ -992,8 +976,8 @@ class _SettingsScreenState extends State<SettingsScreen>
           glyph: CinematicGlyph.share,
           onTap: () => _openBackupSheet(sync),
         ),
-        const _SettingsDivider(compact: true),
         if (backend.isSignedIn) ...[
+          const _SettingsDivider(compact: true),
           _navRow(
             a,
             context.l10n.settingsBlockedPeople,
@@ -1009,12 +993,22 @@ class _SettingsScreenState extends State<SettingsScreen>
             context.l10n.settingsSignOut,
             context.l10n.settingsSignOutSubtitle,
             glyph: CinematicGlyph.back,
-            accent: AppRoles.risk,
-            labelColor: AppRoles.risk,
             onTap: backend.isGoogleBusy ? null : () => _signOutGoogle(backend),
           ),
-          const _SettingsDivider(compact: true),
         ],
+      ],
+    );
+  }
+
+  /// O que apaga de vez — card próprio, em vermelho e sempre com
+  /// confirmação, longe das linhas do dia a dia.
+  Widget _dangerCard(AppearanceStyle a, ProgressService progress) {
+    final backend = context.watch<BackendService>();
+    return _groupedCard(
+      a,
+      title: context.l10n.settingsDangerTitle,
+      subtitle: context.l10n.settingsDangerSubtitle,
+      children: [
         _navRow(
           a,
           context.l10n.settingsDeleteProgress,
@@ -1195,7 +1189,8 @@ class _SettingsScreenState extends State<SettingsScreen>
     );
   }
 
-  /// Sobre: versão, introdução e créditos em linhas; doação no fim.
+  /// Sobre: conhecer o Stway, rever a introdução e créditos; doação no fim.
+  /// Versão e termos ficam no rodapé ([_footer]).
   Widget _aboutBlock(AppearanceStyle a) {
     final credits = [
       for (final t in BibleService.catalog.where((t) => t.available))
@@ -1209,20 +1204,10 @@ class _SettingsScreenState extends State<SettingsScreen>
       children: [
         _navRow(
           a,
-          context.l10n.settingsVersion,
-          _checkingUpdate
-              ? context.l10n.settingsCheckingUpdate
-              : (_versionLabel ?? '…'),
-          glyph: CinematicGlyph.refresh,
-          onTap: _checkingUpdate ? null : _checkForUpdates,
-          trailing: Text(
-            _checkingUpdate ? '' : context.l10n.settingsCheck,
-            style: AppTypography.body(
-              size: 12,
-              weight: FontWeight.w800,
-              color: a.textSecondary,
-            ),
-          ),
+          context.l10n.settingsAboutPage,
+          context.l10n.settingsAboutPageSubtitle,
+          glyph: CinematicGlyph.path,
+          onTap: openAboutPage,
         ),
         const _SettingsDivider(compact: true),
         _navRow(
@@ -1245,30 +1230,6 @@ class _SettingsScreenState extends State<SettingsScreen>
           context.l10n.settingsCreditsRowSubtitle,
           glyph: CinematicGlyph.book,
           onTap: () => _openCreditsSheet(credits),
-        ),
-        const _SettingsDivider(compact: true),
-        _navRow(
-          a,
-          context.l10n.settingsAboutPage,
-          context.l10n.settingsAboutPageSubtitle,
-          glyph: CinematicGlyph.path,
-          onTap: openAboutPage,
-        ),
-        const _SettingsDivider(compact: true),
-        _navRow(
-          a,
-          context.l10n.legalTerms,
-          context.l10n.settingsLegalSubtitle,
-          glyph: CinematicGlyph.scroll,
-          onTap: () => openSitePage(termsPageUrl),
-        ),
-        const _SettingsDivider(compact: true),
-        _navRow(
-          a,
-          context.l10n.legalPrivacy,
-          context.l10n.settingsLegalSubtitle,
-          glyph: CinematicGlyph.shield,
-          onTap: () => openSitePage(privacyPageUrl),
         ),
         if (kDebugMode) ...[
           const _SettingsDivider(compact: true),
@@ -1297,6 +1258,52 @@ class _SettingsScreenState extends State<SettingsScreen>
       ],
     );
   }
+
+  /// Rodapé: termos e privacidade como links; a versão embaixo, e tocar
+  /// nela procura atualização.
+  Widget _footer(AppearanceStyle a) {
+    final l10n = context.l10n;
+    final linkStyle = AppTypography.body(
+      size: 12,
+      weight: FontWeight.w700,
+      color: a.textSecondary,
+    );
+    final versionLine = _checkingUpdate
+        ? l10n.settingsCheckingUpdate
+        : '${l10n.settingsVersion} ${_versionLabel ?? '…'} · ${l10n.settingsCheck}';
+    Widget link(String label, VoidCallback? onTap) => Semantics(
+      button: true,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(AppRadii.sm),
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(minHeight: 44),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: AppSpace.sm),
+            child: Center(widthFactor: 1, child: Text(label, style: linkStyle)),
+          ),
+        ),
+      ),
+    );
+
+    return Padding(
+      padding: const EdgeInsets.only(top: AppSpace.lg, bottom: AppSpace.sm),
+      child: Column(
+        children: [
+          Wrap(
+            alignment: WrapAlignment.center,
+            crossAxisAlignment: WrapCrossAlignment.center,
+            children: [
+              link(l10n.legalTerms, () => openSitePage(termsPageUrl)),
+              Text('·', style: linkStyle.copyWith(color: a.textFaint)),
+              link(l10n.legalPrivacy, () => openSitePage(privacyPageUrl)),
+            ],
+          ),
+          link(versionLine, _checkingUpdate ? null : _checkForUpdates),
+        ],
+      ),
+    );
+  }
 }
 
 class _SettingsDivider extends StatelessWidget {
@@ -1316,7 +1323,7 @@ class _SettingsDivider extends StatelessWidget {
 }
 
 /// Seções dos ajustes — âncoras de rolagem. Sem cor própria: os cards são
-/// neutros e o rótulo de grupo organiza a tela.
+/// neutros, cada um com seu título; o espaço maior entre blocos agrupa.
 enum _SettingsSection { jornada, aparencia, lembretes, conta }
 
 /// Interruptor dos ajustes — "ligado" é estado ([AppRoles.success]), não a

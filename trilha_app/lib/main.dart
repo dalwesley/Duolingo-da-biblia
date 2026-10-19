@@ -70,6 +70,7 @@ class TrilhaApp extends StatelessWidget {
           create: (_) => SubscriptionService()..init(),
           update: (_, backend, previous) {
             final sub = previous ?? SubscriptionService();
+            NotificationService.instance.plusOpen = () => sub.plusFeaturesOpen;
             sub.onBadgeChanged = (v) => unawaited(backend.publishSupporter(v));
             unawaited(
               sub.bindUid(backend.uid).then((_) {

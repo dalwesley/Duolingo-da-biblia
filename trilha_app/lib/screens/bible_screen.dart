@@ -4,15 +4,20 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../data/bible_canonical_groups.dart';
 import '../data/bible_chronology.dart';
+import '../data/guided_reading_plans.dart';
 import '../l10n/app_language.dart';
 import '../models/bible_reading_plan.dart';
+import '../services/analytics_service.dart';
+import '../services/bible_reading_plan_service.dart';
 import '../services/bible_service.dart';
 import '../services/progress_service.dart';
+import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
 import '../utils/liturgical_calendar.dart';
 import '../widgets/act_feel.dart';
+import '../widgets/app_sheet.dart';
 import '../widgets/bible_passage_picker.dart';
 import '../widgets/cloud_mascot.dart';
 import '../widgets/cinematic_icon.dart';
@@ -24,6 +29,7 @@ import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import 'bible_reader_screen.dart';
 import 'bible_reading_plan_screen.dart';
+import 'paywall_screen.dart';
 
 export 'bible_reader_screen.dart' show BibleReaderScreen;
 
@@ -426,13 +432,23 @@ class _BibleLibrary extends StatelessWidget {
                       ),
                       (
                         label: context.l10n.bibleTabReading,
-                        glyph: CinematicGlyph.path,
+                        glyph: CinematicGlyph.calendar,
                         mark: null,
                         alert: planDue,
                       ),
                     ],
                   ),
                   if (booksPane) ...[
+                    const SizedBox(height: AppSpace.md),
+                    // Navegação livre: retoma de onde parou no leitor.
+                    _ContinueHero(
+                      books: books,
+                      onOpenReference: onOpenReference,
+                    ),
+                    _SavedVerses(
+                      books: books,
+                      onOpenReference: onOpenReference,
+                    ),
                     const SizedBox(height: AppSpace.md),
                     _SearchButton(onTap: onSearch),
                     const SizedBox(height: AppSpace.md),
@@ -457,18 +473,9 @@ class _BibleLibrary extends StatelessWidget {
     };
   }
 
+  /// Planos (Peregrino+, com dias grátis): o plano ativo e o catálogo.
   List<Widget> _readingList() {
-    return [
-      _ContinueHero(books: books, onOpenReference: onOpenReference),
-      const SizedBox(height: AppSpace.md),
-      _SeasonVerseCard(onOpenReference: onOpenReference),
-      const SizedBox(height: AppSpace.md),
-      _PlanCard(onOpen: onOpenPlan),
-      const SizedBox(height: AppSpace.xxl),
-      const _SavedChapter(),
-      const SizedBox(height: AppSpace.md),
-      _SavedVerses(books: books, onOpenReference: onOpenReference),
-    ];
+    return [_PlanCard(onOpen: onOpenPlan), const _PlansCatalog()];
   }
 
   List<Widget> _group(
@@ -887,191 +894,340 @@ class _PlanCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final l10n = context.l10n;
     final plan = context.select((ProgressService p) => p.bibleReadingPlan);
-    final done = plan.active && plan.doneToday;
-    final detail = !plan.active
-        ? context.l10n.planCardIdle
-        : done
-        ? context.l10n.planCardDoneToday
-        : context.l10n.planCardToday(plan.minutesPerDay, plan.order.shortLabel);
+    final plusOpen = context.select(
+      (SubscriptionService s) => s.plusFeaturesOpen,
+    );
+    if (!plan.active) return const SizedBox.shrink();
+    final guided = GuidedReadingPlan.byId(plan.guidedId);
+    final done = plan.doneToday;
+    final locked = plan.lockedToday(plusOpen: plusOpen);
+    final detail = done
+        ? l10n.planCardDoneToday
+        : locked
+        ? l10n.paywallTitle
+        : guided != null
+        ? l10n.guidedPlanDayOf(
+            (plan.cursor + 1).clamp(1, guided.days),
+            guided.days,
+          )
+        : l10n.planCardToday(plan.minutesPerDay, plan.order.shortLabel);
 
-    return GlassCard(
-      onTap: onOpen,
-      child: Row(
-        children: [
-          CinematicIcon(
-            glyph: CinematicGlyph.calendar,
-            size: AppMetrics.leadingIcon,
-            accent: a.chrome,
-          ),
-          const SizedBox(width: AppSpace.md),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  plan.active
-                      ? context.l10n.planTitle
-                      : context.l10n.planCreate,
-                  style: AppTypography.title(size: 16, color: a.text),
-                ),
-                const SizedBox(height: 2),
-                Text(
-                  detail,
-                  style: AppTypography.body(size: 13, color: a.textSecondary),
-                ),
-              ],
+    return Padding(
+      padding: const EdgeInsets.only(bottom: AppSpace.md),
+      child: GlassCard(
+        onTap: onOpen,
+        child: Row(
+          children: [
+            CinematicIcon(
+              glyph: CinematicGlyph.calendar,
+              size: AppMetrics.leadingIcon,
+              accent: a.chrome,
             ),
-          ),
-          const SizedBox(width: AppSpace.sm),
-          if (done)
-            const CinematicIcon(
-              glyph: CinematicGlyph.check,
-              size: AppMetrics.iconMd,
-              accent: AppRoles.success,
-              framed: false,
-            )
-          else
-            ListChevron(color: a.textFaint),
-        ],
+            const SizedBox(width: AppSpace.md),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  SectionLabel(l10n.commonToday),
+                  const SizedBox(height: 2),
+                  Text(
+                    guided?.title(l10n) ?? l10n.plansWholeBibleTitle,
+                    style: AppTypography.title(size: 16, color: a.text),
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    detail,
+                    style: AppTypography.body(size: 13, color: a.textSecondary),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(width: AppSpace.sm),
+            if (done)
+              const CinematicIcon(
+                glyph: CinematicGlyph.check,
+                size: AppMetrics.iconMd,
+                accent: AppRoles.success,
+                framed: false,
+              )
+            else if (locked)
+              const CinematicIcon(
+                glyph: CinematicGlyph.lock,
+                size: AppMetrics.iconMd,
+                accent: AppRoles.reward,
+                framed: false,
+              )
+            else
+              ListChevron(color: a.textFaint),
+          ],
+        ),
       ),
     );
   }
 }
 
-/// Palavra do tempo litúrgico — o texto em si, não só a referência.
-class _SeasonVerseCard extends StatefulWidget {
-  final ValueChanged<String> onOpenReference;
-
-  const _SeasonVerseCard({required this.onOpenReference});
+/// Catálogo de planos: a Bíblia inteira (grátis, sempre) e os guiados (só
+/// com o Peregrino+, sem dias grátis). O plano em andamento leva "Ativo".
+class _PlansCatalog extends StatefulWidget {
+  const _PlansCatalog();
 
   @override
-  State<_SeasonVerseCard> createState() => _SeasonVerseCardState();
+  State<_PlansCatalog> createState() => _PlansCatalogState();
 }
 
-class _SeasonVerseCardState extends State<_SeasonVerseCard> {
-  Future<String?>? _text;
-  String? _key;
+class _PlansCatalogState extends State<_PlansCatalog> {
+  Map<String, double> _minutes = const {};
+
+  @override
+  void initState() {
+    super.initState();
+    _loadMinutes();
+  }
+
+  Future<void> _loadMinutes() async {
+    final out = <String, double>{
+      for (final def in GuidedReadingPlan.all)
+        def.id: await BibleReadingPlanService.instance.guidedMinutesPerDay(def),
+    };
+    if (mounted) setState(() => _minutes = out);
+  }
+
+  Future<void> _openPlan({bool setup = false}) => Navigator.of(context).push(
+    MaterialPageRoute<void>(
+      builder: (_) => BibleReadingPlanScreen(setup: setup),
+    ),
+  );
+
+  Future<void> _tapWholeBible(BibleReadingPlan plan) async {
+    if (plan.active && !plan.isGuided) return _openPlan();
+    // Troca é confirmada na própria tela, ao começar.
+    await _openPlan(setup: plan.active);
+  }
+
+  Future<void> _tapGuided(BibleReadingPlan plan, GuidedReadingPlan def) async {
+    if (plan.active && plan.guidedId == def.id) return _openPlan();
+    final progress = context.read<ProgressService>();
+    final sub = context.read<SubscriptionService>();
+    AnalyticsService.instance.logPlusFeatureOpen(
+      feature: 'guided_plan',
+      hasPlus: sub.hasPlus,
+    );
+    if (!sub.plusFeaturesOpen) {
+      await Navigator.of(context).push(
+        MaterialPageRoute<void>(
+          builder: (_) => const PaywallScreen(source: 'guided_plan'),
+        ),
+      );
+      return;
+    }
+    if (plan.active) {
+      final ok = await showAppConfirm(
+        context,
+        title: context.l10n.planSwitchTitle,
+        body: context.l10n.planSwitchBody,
+        confirmLabel: context.l10n.modeSwitch,
+      );
+      if (!ok || !mounted) return;
+    }
+    await progress.startGuidedReadingPlan(def.id);
+    if (mounted) await _openPlan();
+  }
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final translationId = context.select(
-      (ProgressService p) => p.settings.bibleTranslationId,
-    );
-    final moment = LiturgicalCalendar.momentFor();
-    final key = '${moment.focusRef}|$translationId';
-    if (_key != key) {
-      _key = key;
-      _text = BibleService.instance.passageText(moment.focusRef);
-    }
+    final l10n = context.l10n;
+    final plan = context.select((ProgressService p) => p.bibleReadingPlan);
+    final sub = context.watch<SubscriptionService>();
 
     return GlassCard(
-      onTap: () => widget.onOpenReference(moment.focusRef),
+      padding: const EdgeInsets.fromLTRB(
+        AppSpace.md,
+        AppSpace.md,
+        AppSpace.md,
+        AppSpace.xs,
+      ),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          SectionLabel(moment.title, color: a.sectionLabel),
-          const SizedBox(height: 2),
+          CardHeader(
+            label: l10n.plansCatalogHeader,
+            glyph: CinematicGlyph.calendar,
+            trailing: sub.showsPlus
+                ? SoftBadge(
+                    text: l10n.paywallTitle,
+                    glyph: CinematicGlyph.crown,
+                    accent: AppRoles.reward,
+                  )
+                : null,
+          ),
+          const SizedBox(height: AppSpace.xs),
           Text(
-            moment.subtitle,
-            style: AppTypography.title(size: 14, color: a.textSecondary),
+            sub.plusFeaturesOpen
+                ? l10n.plansCatalogBody
+                : l10n.plansGuidedPlusNote,
+            style: AppTypography.body(
+              size: 13,
+              height: 1.4,
+              color: a.textSecondary,
+            ),
           ),
-          const SizedBox(height: AppSpace.md),
-          FutureBuilder<String?>(
-            future: _text,
-            builder: (context, snap) {
-              final text = snap.data;
-              return AnimatedSwitcher(
-                duration: AppMotion.standard,
-                child: Text(
-                  text == null ? ' ' : '“${text.trim()}”',
-                  key: ValueKey(text == null),
-                  maxLines: 5,
-                  overflow: TextOverflow.ellipsis,
-                  style: AppTypography.verse(
-                    size: 21,
-                    height: 1.35,
-                    weight: FontWeight.w600,
-                    color: a.text,
-                  ),
-                ),
-              );
-            },
+          const SizedBox(height: AppSpace.xs),
+          _CatalogRow(
+            title: l10n.plansWholeBibleTitle,
+            subtitle: l10n.planCardIdle,
+            active: plan.active && !plan.isGuided,
+            onTap: () => _tapWholeBible(plan),
           ),
-          const SizedBox(height: AppSpace.sm),
-          Row(
-            children: [
-              Expanded(
-                child: Text(
-                  moment.focusRef,
-                  style: AppTypography.label(size: 12, color: a.textSecondary),
-                ),
-              ),
-              Text(
-                context.l10n.bibleReadChapter,
-                style: AppTypography.body(size: 12, color: a.textSecondary),
-              ),
-              const SizedBox(width: 2),
-              ListChevron(color: a.textFaint, size: 16),
-            ],
-          ),
+          for (final def in GuidedReadingPlan.all) ...[
+            const ListDivider(),
+            _CatalogRow(
+              title: def.title(l10n),
+              subtitle: _minutes[def.id] == null
+                  ? def.subtitle(l10n)
+                  : l10n.guidedPlanMeta(
+                      def.subtitle(l10n),
+                      _minutes[def.id]!.round().clamp(1, 120),
+                    ),
+              active: plan.active && plan.guidedId == def.id,
+              locked: !sub.plusFeaturesOpen,
+              onTap: () => _tapGuided(plan, def),
+            ),
+          ],
         ],
       ),
     );
   }
 }
 
-class _SavedChapter extends StatelessWidget {
-  const _SavedChapter();
+class _CatalogRow extends StatelessWidget {
+  final String title;
+  final String subtitle;
+  final bool active;
+
+  /// Guiado sem Peregrino+: cadeado no lugar da seta.
+  final bool locked;
+  final VoidCallback onTap;
+
+  const _CatalogRow({
+    required this.title,
+    required this.subtitle,
+    required this.active,
+    required this.onTap,
+    this.locked = false,
+  });
 
   @override
   Widget build(BuildContext context) {
-    final count = context.select(
-      (ProgressService p) => p.bibleBookmarks.length,
-    );
-    return RelicChapter(
-      title: context.l10n.bibleSavedTitle,
-      divided: false,
-      trailing: count == 0 ? null : CountBadge('$count', filled: false),
+    final a = Appearance.of(context);
+    return InkWell(
+      onTap: onTap,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 12),
+        child: Row(
+          children: [
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    title,
+                    style: AppTypography.title(size: 15, color: a.text),
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    subtitle,
+                    style: AppTypography.body(size: 12, color: a.textSecondary),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(width: AppSpace.sm),
+            if (active)
+              SoftBadge(
+                text: context.l10n.commonActive,
+                accent: AppRoles.success,
+              )
+            else if (locked)
+              CinematicIcon(
+                glyph: CinematicGlyph.lock,
+                size: AppMetrics.iconMd,
+                accent: a.textFaint,
+                framed: false,
+              )
+            else
+              ListChevron(color: a.textFaint),
+          ],
+        ),
+      ),
     );
   }
 }
 
-/// Versículos guardados, com o texto — toque abre no leitor.
-class _SavedVerses extends StatelessWidget {
+/// Versículos guardados, com o texto — toque abre no leitor. Título e
+/// contagem moram dentro do card; vazio, some. Mostra os 3 primeiros.
+class _SavedVerses extends StatefulWidget {
   final List<BibleBook> books;
   final ValueChanged<String> onOpenReference;
 
   const _SavedVerses({required this.books, required this.onOpenReference});
 
   @override
+  State<_SavedVerses> createState() => _SavedVersesState();
+}
+
+class _SavedVersesState extends State<_SavedVerses> {
+  static const _preview = 3;
+  bool _expanded = false;
+
+  @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final marks = context.watch<ProgressService>().parseBookmarks();
-    if (marks.isEmpty) {
-      return EmptyState(
-        title: context.l10n.bibleSavedEmptyTitle,
-        body: context.l10n.bibleSavedEmptyBody,
-      );
-    }
+    if (marks.isEmpty) return const SizedBox.shrink();
 
-    final byAbbrev = {for (final b in books) b.abbrev.toLowerCase(): b};
-    return GlassCard(
-      padding: const EdgeInsets.symmetric(horizontal: AppSpace.lg),
-      child: Column(
-        children: [
-          for (var i = 0; i < marks.length; i++) ...[
-            if (i > 0) const ListDivider(),
-            _SavedRow(
-              mark: marks[i],
-              book: byAbbrev[marks[i].abbrev],
-              ink: a.text,
-              chevron: a.textFaint,
-              onOpen: onOpenReference,
+    final byAbbrev = {for (final b in widget.books) b.abbrev.toLowerCase(): b};
+    final shown = _expanded ? marks : marks.take(_preview).toList();
+    return Padding(
+      padding: const EdgeInsets.only(top: AppSpace.md),
+      child: GlassCard(
+        padding: const EdgeInsets.fromLTRB(
+          AppSpace.lg,
+          AppSpace.md,
+          AppSpace.lg,
+          0,
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            CardHeader(
+              label: context.l10n.bibleSavedTitle,
+              glyph: CinematicGlyph.bookmark,
+              trailing: CountBadge('${marks.length}', filled: false),
             ),
+            for (var i = 0; i < shown.length; i++) ...[
+              if (i > 0) const ListDivider(),
+              _SavedRow(
+                mark: shown[i],
+                book: byAbbrev[shown[i].abbrev],
+                ink: a.text,
+                chevron: a.textFaint,
+                onOpen: widget.onOpenReference,
+              ),
+            ],
+            if (marks.length > _preview) ...[
+              const ListDivider(),
+              TextCta(
+                label: _expanded
+                    ? context.l10n.bibleSavedSeeLess
+                    : context.l10n.bibleSavedSeeAll(marks.length),
+                onTap: () => setState(() => _expanded = !_expanded),
+              ),
+            ],
           ],
-        ],
+        ),
       ),
     );
   }
@@ -1226,9 +1382,7 @@ class _SearchPane extends StatelessWidget {
             child: AppSpinner(),
           )
         else if (controller.text.trim().length >= 2 && hits.isEmpty)
-          EmptyState(
-            title: context.l10n.bibleSearchEmpty,
-          )
+          EmptyState(title: context.l10n.bibleSearchEmpty)
         else
           ...hits.map((h) {
             return Padding(

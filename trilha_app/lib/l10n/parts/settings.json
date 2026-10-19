@@ -17,11 +17,6 @@
       "version": "String"
     }
   },
-  "settingsGroupProgress": {
-    "pt": "Progresso",
-    "en": "Progress",
-    "es": "Progreso"
-  },
   "settingsRhythmTitle": {
     "pt": "Ritmo diário",
     "en": "Daily pace",
@@ -50,15 +45,15 @@
       "count": "int"
     }
   },
-  "settingsGroupDevice": {
-    "pt": "Neste aparelho",
-    "en": "On this device",
-    "es": "En este dispositivo"
+  "settingsDangerTitle": {
+    "pt": "Apagar dados",
+    "en": "Delete data",
+    "es": "Borrar datos"
   },
-  "settingsGroupAccountData": {
-    "pt": "Conta e dados",
-    "en": "Account and data",
-    "es": "Cuenta y datos"
+  "settingsDangerSubtitle": {
+    "pt": "Não tem como desfazer.",
+    "en": "This can't be undone.",
+    "es": "No se puede deshacer."
   },
   "settingsRemindersTitle": {
     "pt": "Lembretes",

@@ -436,17 +436,17 @@ abstract class AppLocalizations {
   /// **'Versão'**
   String get bibleReaderVersion;
 
-  /// No description provided for @bibleSavedEmptyBody.
+  /// No description provided for @bibleSavedSeeAll.
   ///
   /// In pt, this message translates to:
-  /// **'Na leitura, toque num versículo e escolha Guardar para voltar a ele depois.'**
-  String get bibleSavedEmptyBody;
+  /// **'Ver todos · {count}'**
+  String bibleSavedSeeAll(int count);
 
-  /// No description provided for @bibleSavedEmptyTitle.
+  /// No description provided for @bibleSavedSeeLess.
   ///
   /// In pt, this message translates to:
-  /// **'Nenhum versículo guardado'**
-  String get bibleSavedEmptyTitle;
+  /// **'Ver menos'**
+  String get bibleSavedSeeLess;
 
   /// No description provided for @bibleSavedTitle.
   ///
@@ -541,7 +541,7 @@ abstract class AppLocalizations {
   /// No description provided for @bibleTabReading.
   ///
   /// In pt, this message translates to:
-  /// **'Leitura'**
+  /// **'Planos'**
   String get bibleTabReading;
 
   /// No description provided for @bibleTapToClose.
@@ -3964,18 +3964,6 @@ abstract class AppLocalizations {
   /// **'Salmos e Provérbios em 31 dias'**
   String get guidedPlanPsalmsTitle;
 
-  /// No description provided for @guidedPlansBody.
-  ///
-  /// In pt, this message translates to:
-  /// **'Leituras com começo, meio e fim. Cada dia já vem pronto; perdeu um, continua de onde parou.'**
-  String get guidedPlansBody;
-
-  /// No description provided for @guidedPlansHeader.
-  ///
-  /// In pt, this message translates to:
-  /// **'Planos guiados'**
-  String get guidedPlansHeader;
-
   /// No description provided for @homeBibleOfflineSubtitle.
   ///
   /// In pt, this message translates to:
@@ -6020,12 +6008,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Falha no login com Apple'**
   String get loginAppleError;
-
-  /// No description provided for @loginBody.
-  ///
-  /// In pt, this message translates to:
-  /// **'Sua conta guarda seus passos, sua sequência e suas cenas — assim nada se perde entre aparelhos.'**
-  String get loginBody;
 
   /// No description provided for @loginEntering.
   ///
@@ -9018,13 +9000,13 @@ abstract class AppLocalizations {
   /// No description provided for @paywallPerkPlansBody.
   ///
   /// In pt, this message translates to:
-  /// **'Evangelhos em 30 dias, Novo Testamento em 90 e outros, no seu ritmo.'**
+  /// **'A Bíblia inteira no seu ritmo, Evangelhos em 30 dias, Novo Testamento em 90 e outros.'**
   String get paywallPerkPlansBody;
 
   /// No description provided for @paywallPerkPlansTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Planos de leitura guiados'**
+  /// **'Planos de leitura'**
   String get paywallPerkPlansTitle;
 
   /// No description provided for @paywallPerkReinforceBody.
@@ -9525,12 +9507,6 @@ abstract class AppLocalizations {
   /// **'Suas trilhas'**
   String get pilgrimYourTrails;
 
-  /// No description provided for @planAdjustTime.
-  ///
-  /// In pt, this message translates to:
-  /// **'Ajustar tempo'**
-  String get planAdjustTime;
-
   /// No description provided for @planAllRead.
   ///
   /// In pt, this message translates to:
@@ -9560,12 +9536,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'~{minutes} min'**
   String planApproxMinutes(int minutes);
-
-  /// No description provided for @planApproxMinutesDecimal.
-  ///
-  /// In pt, this message translates to:
-  /// **'~{minutes} min'**
-  String planApproxMinutesDecimal(String minutes);
 
   /// No description provided for @planApproxMonths.
   ///
@@ -9609,17 +9579,17 @@ abstract class AppLocalizations {
   /// **'{count, plural, =1{1 capítulo pulado} other{{count} capítulos pulados}}'**
   String planChaptersSkipped(int count);
 
-  /// No description provided for @planCreate.
-  ///
-  /// In pt, this message translates to:
-  /// **'Criar um plano'**
-  String get planCreate;
-
   /// No description provided for @planDayDoneToast.
   ///
   /// In pt, this message translates to:
   /// **'{count, plural, =1{Leitura do dia concluída · 1 capítulo} other{Leitura do dia concluída · {count} capítulos}}'**
   String planDayDoneToast(int count);
+
+  /// No description provided for @planDayNumber.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dia {day}'**
+  String planDayNumber(int day);
 
   /// No description provided for @planDone.
   ///
@@ -9663,6 +9633,12 @@ abstract class AppLocalizations {
   /// **'Plano concluído'**
   String get planFinished;
 
+  /// No description provided for @planLockedGuidedBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Os planos guiados são do Peregrino+. A Bíblia inteira continua grátis.'**
+  String get planLockedGuidedBody;
+
   /// No description provided for @planMarkDayRead.
   ///
   /// In pt, this message translates to:
@@ -9674,6 +9650,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'{minutes} min'**
   String planMinutes(int minutes);
+
+  /// No description provided for @planNextReading.
+  ///
+  /// In pt, this message translates to:
+  /// **'Próxima leitura'**
+  String get planNextReading;
 
   /// No description provided for @planOrderAlphabetical.
   ///
@@ -9720,8 +9702,20 @@ abstract class AppLocalizations {
   /// No description provided for @planPortionMeta.
   ///
   /// In pt, this message translates to:
-  /// **'{count, plural, =1{~{minutes} min · 1 capítulo · {order}} other{~{minutes} min · {count} capítulos · {order}}}'**
-  String planPortionMeta(int minutes, int count, String order);
+  /// **'{count, plural, =1{~{minutes} min · 1 capítulo} other{~{minutes} min · {count} capítulos}}'**
+  String planPortionMeta(int minutes, int count);
+
+  /// No description provided for @planProgressBible.
+  ///
+  /// In pt, this message translates to:
+  /// **'{percent}% da Bíblia lida'**
+  String planProgressBible(int percent);
+
+  /// No description provided for @planProgressGuided.
+  ///
+  /// In pt, this message translates to:
+  /// **'{percent}% do plano'**
+  String planProgressGuided(int percent);
 
   /// No description provided for @planReadingDays.
   ///
@@ -9795,23 +9789,59 @@ abstract class AppLocalizations {
   /// **'Começar plano · {minutes} min/dia'**
   String planStartCta(int minutes);
 
+  /// No description provided for @planSwitchBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'O plano atual será encerrado. Os capítulos já lidos continuam marcados na Bíblia.'**
+  String get planSwitchBody;
+
+  /// No description provided for @planSwitchTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Trocar de plano?'**
+  String get planSwitchTitle;
+
+  /// No description provided for @planTimePerDay.
+  ///
+  /// In pt, this message translates to:
+  /// **'Tempo por dia'**
+  String get planTimePerDay;
+
   /// No description provided for @planTitle.
   ///
   /// In pt, this message translates to:
   /// **'Plano de leitura'**
   String get planTitle;
 
-  /// No description provided for @planTodayChapters.
-  ///
-  /// In pt, this message translates to:
-  /// **'Capítulos de hoje'**
-  String get planTodayChapters;
-
   /// No description provided for @planTodayDoneBody.
   ///
   /// In pt, this message translates to:
   /// **'Porção de hoje concluída. Volte amanhã — ou continue explorando a Bíblia livremente.'**
   String get planTodayDoneBody;
+
+  /// No description provided for @plansCatalogBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Cada dia já vem pronto; perdeu um, continua de onde parou.'**
+  String get plansCatalogBody;
+
+  /// No description provided for @plansCatalogHeader.
+  ///
+  /// In pt, this message translates to:
+  /// **'Planos de leitura'**
+  String get plansCatalogHeader;
+
+  /// No description provided for @plansGuidedPlusNote.
+  ///
+  /// In pt, this message translates to:
+  /// **'A Bíblia inteira é grátis, sempre. Os planos guiados são do Peregrino+.'**
+  String get plansGuidedPlusNote;
+
+  /// No description provided for @plansWholeBibleTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Bíblia inteira'**
+  String get plansWholeBibleTitle;
 
   /// No description provided for @plusNoticeContinue.
   ///
@@ -11937,6 +11967,18 @@ abstract class AppLocalizations {
   /// **'Lembrete diário'**
   String get settingsDailyReminder;
 
+  /// No description provided for @settingsDangerSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Não tem como desfazer.'**
+  String get settingsDangerSubtitle;
+
+  /// No description provided for @settingsDangerTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Apagar dados'**
+  String get settingsDangerTitle;
+
   /// No description provided for @settingsDays.
   ///
   /// In pt, this message translates to:
@@ -12015,24 +12057,6 @@ abstract class AppLocalizations {
   /// **'Gênesis 1–11'**
   String get settingsGenesisTitle;
 
-  /// No description provided for @settingsGroupAccountData.
-  ///
-  /// In pt, this message translates to:
-  /// **'Conta e dados'**
-  String get settingsGroupAccountData;
-
-  /// No description provided for @settingsGroupDevice.
-  ///
-  /// In pt, this message translates to:
-  /// **'Neste aparelho'**
-  String get settingsGroupDevice;
-
-  /// No description provided for @settingsGroupProgress.
-  ///
-  /// In pt, this message translates to:
-  /// **'Progresso'**
-  String get settingsGroupProgress;
-
   /// No description provided for @settingsInCloud.
   ///
   /// In pt, this message translates to:
@@ -12050,12 +12074,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Último · {date}'**
   String settingsLastShort(String date);
-
-  /// No description provided for @settingsLegalSubtitle.
-  ///
-  /// In pt, this message translates to:
-  /// **'Regras de convivência e uso dos dados'**
-  String get settingsLegalSubtitle;
 
   /// No description provided for @settingsManualBackup.
   ///

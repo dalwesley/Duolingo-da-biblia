@@ -227,11 +227,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get bibleReaderVersion => 'Version';
 
   @override
-  String get bibleSavedEmptyBody =>
-      'While reading, tap a verse and choose Save to come back to it later.';
+  String bibleSavedSeeAll(int count) {
+    return 'See all · $count';
+  }
 
   @override
-  String get bibleSavedEmptyTitle => 'No saved verses';
+  String get bibleSavedSeeLess => 'See less';
 
   @override
   String get bibleSavedTitle => 'Saved';
@@ -289,7 +290,7 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get bibleTabReading => 'Reading';
+  String get bibleTabReading => 'Plans';
 
   @override
   String get bibleTapToClose => 'Tap to close';
@@ -2509,13 +2510,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get guidedPlanPsalmsTitle => 'Psalms and Proverbs in 31 days';
 
   @override
-  String get guidedPlansBody =>
-      'Readings with a beginning, middle and end. Each day comes ready; miss one and pick up where you left off.';
-
-  @override
-  String get guidedPlansHeader => 'Guided plans';
-
-  @override
   String get homeBibleOfflineSubtitle => 'Read without internet';
 
   @override
@@ -3872,10 +3866,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get loginAppleError => 'Apple sign-in failed';
-
-  @override
-  String get loginBody =>
-      'Your account keeps your steps, streak and scenes — so nothing is lost between devices.';
 
   @override
   String get loginEntering => 'Signing in…';
@@ -5784,10 +5774,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get paywallPerkPlansBody =>
-      'Gospels in 30 days, New Testament in 90 and more, at your pace.';
+      'The whole Bible at your pace, Gospels in 30 days, New Testament in 90 and more.';
 
   @override
-  String get paywallPerkPlansTitle => 'Guided reading plans';
+  String get paywallPerkPlansTitle => 'Reading plans';
 
   @override
   String get paywallPerkReinforceBody =>
@@ -6133,9 +6123,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get pilgrimYourTrails => 'Your trails';
 
   @override
-  String get planAdjustTime => 'Adjust time';
-
-  @override
   String get planAllRead => 'All read';
 
   @override
@@ -6159,11 +6146,6 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String planApproxMinutes(int minutes) {
-    return '~$minutes min';
-  }
-
-  @override
-  String planApproxMinutesDecimal(String minutes) {
     return '~$minutes min';
   }
 
@@ -6207,9 +6189,6 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get planCreate => 'Create a plan';
-
-  @override
   String planDayDoneToast(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -6218,6 +6197,11 @@ class AppLocalizationsEn extends AppLocalizations {
       one: 'Today\'s reading done · 1 chapter',
     );
     return '$_temp0';
+  }
+
+  @override
+  String planDayNumber(int day) {
+    return 'Day $day';
   }
 
   @override
@@ -6243,12 +6227,19 @@ class AppLocalizationsEn extends AppLocalizations {
   String get planFinished => 'Plan complete';
 
   @override
+  String get planLockedGuidedBody =>
+      'Guided plans are part of Pilgrim+. The whole Bible stays free.';
+
+  @override
   String get planMarkDayRead => 'Mark today\'s reading';
 
   @override
   String planMinutes(int minutes) {
     return '$minutes min';
   }
+
+  @override
+  String get planNextReading => 'Next reading';
 
   @override
   String get planOrderAlphabetical => 'Alphabetical order';
@@ -6272,14 +6263,24 @@ class AppLocalizationsEn extends AppLocalizations {
   String get planPendingChapters => 'Chapters left';
 
   @override
-  String planPortionMeta(int minutes, int count, String order) {
+  String planPortionMeta(int minutes, int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '~$minutes min · $count chapters · $order',
-      one: '~$minutes min · 1 chapter · $order',
+      other: '~$minutes min · $count chapters',
+      one: '~$minutes min · 1 chapter',
     );
     return '$_temp0';
+  }
+
+  @override
+  String planProgressBible(int percent) {
+    return '$percent% of the Bible read';
+  }
+
+  @override
+  String planProgressGuided(int percent) {
+    return '$percent% of the plan';
   }
 
   @override
@@ -6341,14 +6342,35 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get planTitle => 'Reading plan';
+  String get planSwitchBody =>
+      'Your current plan will end. Chapters you\'ve read stay marked in the Bible.';
 
   @override
-  String get planTodayChapters => 'Today\'s chapters';
+  String get planSwitchTitle => 'Switch plans?';
+
+  @override
+  String get planTimePerDay => 'Time per day';
+
+  @override
+  String get planTitle => 'Reading plan';
 
   @override
   String get planTodayDoneBody =>
       'Today\'s portion is done. Come back tomorrow — or keep exploring the Bible freely.';
+
+  @override
+  String get plansCatalogBody =>
+      'Each day comes ready; miss one and pick up where you left off.';
+
+  @override
+  String get plansCatalogHeader => 'Reading plans';
+
+  @override
+  String get plansGuidedPlusNote =>
+      'The whole Bible is always free. Guided plans are part of Pilgrim+.';
+
+  @override
+  String get plansWholeBibleTitle => 'Whole Bible';
 
   @override
   String get plusNoticeContinue => 'Continue with Pilgrim+';
@@ -7684,6 +7706,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsDailyReminder => 'Daily reminder';
 
   @override
+  String get settingsDangerSubtitle => 'This can\'t be undone.';
+
+  @override
+  String get settingsDangerTitle => 'Delete data';
+
+  @override
   String settingsDays(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -7735,15 +7763,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsGenesisTitle => 'Genesis 1–11';
 
   @override
-  String get settingsGroupAccountData => 'Account and data';
-
-  @override
-  String get settingsGroupDevice => 'On this device';
-
-  @override
-  String get settingsGroupProgress => 'Progress';
-
-  @override
   String get settingsInCloud => 'In the cloud';
 
   @override
@@ -7755,9 +7774,6 @@ class AppLocalizationsEn extends AppLocalizations {
   String settingsLastShort(String date) {
     return 'Last · $date';
   }
-
-  @override
-  String get settingsLegalSubtitle => 'Community rules and how data is used';
 
   @override
   String get settingsManualBackup => 'Manual backup';

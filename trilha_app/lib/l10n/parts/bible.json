@@ -306,14 +306,6 @@
       "minutes": "int"
     }
   },
-  "planApproxMinutesDecimal": {
-    "pt": "~{minutes} min",
-    "en": "~{minutes} min",
-    "es": "~{minutes} min",
-    "placeholders": {
-      "minutes": "String"
-    }
-  },
   "planApproxHours": {
     "pt": "~{hours} h",
     "en": "~{hours} h",
@@ -367,13 +359,12 @@
     "es": "Terminaste la Biblia con este plan."
   },
   "planPortionMeta": {
-    "pt": "{count, plural, =1{~{minutes} min · 1 capítulo · {order}} other{~{minutes} min · {count} capítulos · {order}}}",
-    "en": "{count, plural, =1{~{minutes} min · 1 chapter · {order}} other{~{minutes} min · {count} chapters · {order}}}",
-    "es": "{count, plural, =1{~{minutes} min · 1 capítulo · {order}} other{~{minutes} min · {count} capítulos · {order}}}",
+    "pt": "{count, plural, =1{~{minutes} min · 1 capítulo} other{~{minutes} min · {count} capítulos}}",
+    "en": "{count, plural, =1{~{minutes} min · 1 chapter} other{~{minutes} min · {count} chapters}}",
+    "es": "{count, plural, =1{~{minutes} min · 1 capítulo} other{~{minutes} min · {count} capítulos}}",
     "placeholders": {
       "minutes": "int",
-      "count": "int",
-      "order": "String"
+      "count": "int"
     }
   },
   "planReadingDays": {
@@ -384,10 +375,34 @@
       "count": "int"
     }
   },
-  "planTodayChapters": {
-    "pt": "Capítulos de hoje",
-    "en": "Today's chapters",
-    "es": "Capítulos de hoy"
+  "planNextReading": {
+    "pt": "Próxima leitura",
+    "en": "Next reading",
+    "es": "Próxima lectura"
+  },
+  "planDayNumber": {
+    "pt": "Dia {day}",
+    "en": "Day {day}",
+    "es": "Día {day}",
+    "placeholders": {
+      "day": "int"
+    }
+  },
+  "planProgressBible": {
+    "pt": "{percent}% da Bíblia lida",
+    "en": "{percent}% of the Bible read",
+    "es": "{percent}% de la Biblia leída",
+    "placeholders": {
+      "percent": "int"
+    }
+  },
+  "planProgressGuided": {
+    "pt": "{percent}% do plano",
+    "en": "{percent}% of the plan",
+    "es": "{percent}% del plan",
+    "placeholders": {
+      "percent": "int"
+    }
   },
   "planMarkDayRead": {
     "pt": "Marcar leitura do dia",
@@ -399,10 +414,10 @@
     "en": "Today's portion is done. Come back tomorrow — or keep exploring the Bible freely.",
     "es": "Porción de hoy completada. Vuelve mañana — o sigue explorando la Biblia libremente."
   },
-  "planAdjustTime": {
-    "pt": "Ajustar tempo",
-    "en": "Adjust time",
-    "es": "Ajustar tiempo"
+  "planTimePerDay": {
+    "pt": "Tempo por dia",
+    "en": "Time per day",
+    "es": "Tiempo por día"
   },
   "planEndCta": {
     "pt": "Encerrar plano",
@@ -430,9 +445,9 @@
     "es": "Libros y versículos"
   },
   "bibleTabReading": {
-    "pt": "Leitura",
-    "en": "Reading",
-    "es": "Lectura"
+    "pt": "Planos",
+    "en": "Plans",
+    "es": "Planes"
   },
   "bibleSectionBooksSemantics": {
     "pt": "{count, plural, =1{{title}, 1 livro} other{{title}, {count} livros}}",
@@ -492,11 +507,6 @@
       "order": "String"
     }
   },
-  "planCreate": {
-    "pt": "Criar um plano",
-    "en": "Create a plan",
-    "es": "Crear un plan"
-  },
   "bibleReadChapter": {
     "pt": "Ler o capítulo",
     "en": "Read the chapter",
@@ -506,16 +516,6 @@
     "pt": "Guardados",
     "en": "Saved",
     "es": "Guardados"
-  },
-  "bibleSavedEmptyTitle": {
-    "pt": "Nenhum versículo guardado",
-    "en": "No saved verses",
-    "es": "Ningún versículo guardado"
-  },
-  "bibleSavedEmptyBody": {
-    "pt": "Na leitura, toque num versículo e escolha Guardar para voltar a ele depois.",
-    "en": "While reading, tap a verse and choose Save to come back to it later.",
-    "es": "Al leer, toca un versículo y elige Guardar para volver a él después."
   },
   "bibleSearchFieldHint": {
     "pt": "Ex.: Apocalipse, amor, fé…",
@@ -900,5 +900,18 @@
     "pt": "Lema",
     "en": "Lemma",
     "es": "Lema"
+  },
+  "bibleSavedSeeAll": {
+    "pt": "Ver todos · {count}",
+    "en": "See all · {count}",
+    "es": "Ver todos · {count}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "bibleSavedSeeLess": {
+    "pt": "Ver menos",
+    "en": "See less",
+    "es": "Ver menos"
   }
 }

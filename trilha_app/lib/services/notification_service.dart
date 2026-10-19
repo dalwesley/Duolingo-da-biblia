@@ -62,6 +62,10 @@ class NotificationService {
   static final NotificationService instance = NotificationService._();
   NotificationService._();
 
+  /// Plus aberto agora (assinatura ou nada para comprar). Ligado no main;
+  /// sem ligação, nada trava.
+  bool Function() plusOpen = () => true;
+
   final FlutterLocalNotificationsPlugin _plugin =
       FlutterLocalNotificationsPlugin();
   bool _initialized = false;
@@ -353,6 +357,8 @@ class NotificationService {
     final plan = progress.bibleReadingPlan;
     final hour = plan.reminderHour;
     if (!plan.active || hour == null) return;
+    // Dias grátis gastos e sem Plus: nada de lembrete para um dia travado.
+    if (plan.isGuided && !plusOpen()) return;
     var when = _nextSlot(hour, 0);
     final now = tz.TZDateTime.now(tz.local);
     final isToday =

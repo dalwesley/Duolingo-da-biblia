@@ -38,8 +38,8 @@ A temporada no cartão da Home. Os 3 primeiros dias são de todo mundo. Do 4º e
 **2. Revisão da semana**
 O “Hoje:” de cada cena feita na semana e 3 perguntas, de preferência as que a pessoa errou. Sem o Plus, a Home ainda mostra que a revisão existe; a tela lista as cenas e leva ao paywall. Não é a fila de erros (essa continua grátis).
 
-**3. Planos de leitura guiados**
-Evangelhos em 30 dias, Salmos e Provérbios em 31, Atos em 28, Gênesis em 25 e Novo Testamento em 90. Cada dia já vem pronto; o dia só avança quando a pessoa marca a leitura, então não há atraso. Catálogo em `trilha_app/lib/data/guided_reading_plans.dart`. O plano da Bíblia inteira, no ritmo da pessoa, continua grátis.
+**3. Planos de leitura**
+Todos os planos, na aba Planos da Bíblia: a Bíblia inteira no ritmo da pessoa (canônica ou cronológica, no tempo que couber) e os guiados — Evangelhos em 30 dias, Salmos e Provérbios em 31, Atos em 28, Gênesis em 25 e Novo Testamento em 90. A **Bíblia inteira é grátis, sempre**. Os **planos guiados são só do Peregrino+, sem dias grátis**: sem Plus, a lista mostra cadeado e o toque abre o paywall. Se a assinatura acabar no meio de um guiado, a leitura do dia trava e o lembrete dele para. Cada dia já vem pronto; o dia só avança quando a pessoa marca a leitura, então não há atraso. Catálogo em `trilha_app/lib/data/guided_reading_plans.dart`. A Bíblia em si — ler, buscar, continuar de onde parou, guardar versículos — é grátis.
 
 **4. Sua constância**
 No perfil: sequência contra a meta, a semana dia a dia, e as últimas 12 semanas (cada coluna é uma lamparina).
@@ -59,7 +59,8 @@ O texto do paywall: o apoio mantém o Stway grátis para quem não pode pagar, e
 - Cena do dia, sequência, missões, gelo, lâmpadas, reparo, Strong
 - Cânon nos 3 modos (Observação / Compreensão / Interpretação), inclusive Profundezas
 - Bíblia offline e áudio da cena (passagem + “Hoje:”)
-- Plano de leitura da Bíblia inteira (canônico ou cronológico, no tempo que couber) e o lembrete diário de qualquer plano
+- A Bíblia: ler, buscar, continuar de onde parou, guardar versículos
+- O plano de leitura da Bíblia inteira (canônico ou cronológico, no seu tempo) e o lembrete diário dele
 - Os 3 primeiros dias da Caminhada (o restante pede o Peregrino+; a cena segue na aba Trilhas)
 - 1 companhia, Caravana, grupo, Desafio
 - Fila de erros

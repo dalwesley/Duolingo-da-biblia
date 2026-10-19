@@ -182,7 +182,7 @@ Tudo que lista o que o Plus dá usa `PlusPerkCard`
 (`lib/widgets/plus_perks.dart`). Nenhuma tela monta lista própria.
 
 - Os benefícios vêm de `PlusPerk`: caminhadas sazonais (`calendar`),
-  revisão semanal (`scroll`), planos de leitura guiados (`book`), sua
+  revisão semanal (`scroll`), planos de leitura (`book`), sua
   constância (`path`), reforço do ponto
   fraco (`target`) e selo de apoiador (`gift`). Mesmo ícone, título e frase
   em todo lugar.

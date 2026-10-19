@@ -186,8 +186,15 @@
   "bibleReaderTextSize": "Tamanho do texto",
   "bibleReaderUpNext": "A seguir",
   "bibleReaderVersion": "Versão",
-  "bibleSavedEmptyBody": "Na leitura, toque num versículo e escolha Guardar para voltar a ele depois.",
-  "bibleSavedEmptyTitle": "Nenhum versículo guardado",
+  "bibleSavedSeeAll": "Ver todos · {count}",
+  "@bibleSavedSeeAll": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "bibleSavedSeeLess": "Ver menos",
   "bibleSavedTitle": "Guardados",
   "bibleSearchBookHit": "Livro",
   "bibleSearchButtonHint": "Buscar livro, versículo ou palavra…",
@@ -224,7 +231,7 @@
       }
     }
   },
-  "bibleTabReading": "Leitura",
+  "bibleTabReading": "Planos",
   "bibleTapToClose": "Toque para fechar",
   "bibleTapToOpen": "Toque para abrir",
   "bibleTitle": "Bíblia",
@@ -1718,8 +1725,6 @@
   "guidedPlanNewTestamentTitle": "Novo Testamento em 90 dias",
   "guidedPlanPsalmsSubtitle": "Um capítulo de Provérbios e alguns Salmos por dia",
   "guidedPlanPsalmsTitle": "Salmos e Provérbios em 31 dias",
-  "guidedPlansBody": "Leituras com começo, meio e fim. Cada dia já vem pronto; perdeu um, continua de onde parou.",
-  "guidedPlansHeader": "Planos guiados",
   "homeBibleOfflineSubtitle": "Leia sem internet",
   "homeCatalogDownloading": "Baixando…",
   "homeCatalogEmptyBody": "As cenas baixam na primeira abertura. Se a conexão falhar, toque para tentar de novo.",
@@ -2816,7 +2821,6 @@
     }
   },
   "loginAppleError": "Falha no login com Apple",
-  "loginBody": "Sua conta guarda seus passos, sua sequência e suas cenas — assim nada se perde entre aparelhos.",
   "loginEntering": "Entrando…",
   "loginGoogleError": "Falha no login com Google",
   "loginHydrateError": "Não foi possível carregar seu progresso. Verifique a conexão e tente de novo.",
@@ -4050,8 +4054,8 @@
   "paywallManageHint": "Mudar de plano ou cancelar é na App Store ou no Google Play.",
   "paywallPerkBadgeBody": "Um selo no seu perfil. Quem abre seu nome na Caravana vê que você apoia o Stway.",
   "paywallPerkBadgeTitle": "Selo de apoiador",
-  "paywallPerkPlansBody": "Evangelhos em 30 dias, Novo Testamento em 90 e outros, no seu ritmo.",
-  "paywallPerkPlansTitle": "Planos de leitura guiados",
+  "paywallPerkPlansBody": "A Bíblia inteira no seu ritmo, Evangelhos em 30 dias, Novo Testamento em 90 e outros.",
+  "paywallPerkPlansTitle": "Planos de leitura",
   "paywallPerkReinforceBody": "No perfil, o tipo de pergunta que você mais erra. Depois, um treino só com esse tipo.",
   "paywallPerkReinforceTitle": "Reforço do ponto fraco",
   "paywallPerkSeasonBody": "Caminhadas do calendário cristão, como o Advento: todos no mesmo dia, do 4º dia em diante.",
@@ -4327,7 +4331,6 @@
   "pilgrimWalked": "Caminhou",
   "pilgrimYourTrail": "Sua trilha",
   "pilgrimYourTrails": "Suas trilhas",
-  "planAdjustTime": "Ajustar tempo",
   "planAllRead": "Tudo lido",
   "planAlreadyRead": "Já lidos",
   "planApproxDays": "{count, plural, =1{~1 dia} other{~{count} dias}}",
@@ -4351,14 +4354,6 @@
     "placeholders": {
       "minutes": {
         "type": "int"
-      }
-    }
-  },
-  "planApproxMinutesDecimal": "~{minutes} min",
-  "@planApproxMinutesDecimal": {
-    "placeholders": {
-      "minutes": {
-        "type": "String"
       }
     }
   },
@@ -4393,11 +4388,18 @@
       }
     }
   },
-  "planCreate": "Criar um plano",
   "planDayDoneToast": "{count, plural, =1{Leitura do dia concluída · 1 capítulo} other{Leitura do dia concluída · {count} capítulos}}",
   "@planDayDoneToast": {
     "placeholders": {
       "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planDayNumber": "Dia {day}",
+  "@planDayNumber": {
+    "placeholders": {
+      "day": {
         "type": "int"
       }
     }
@@ -4409,6 +4411,7 @@
   "planEndCta": "Encerrar plano",
   "planEstimate": "Estimativa",
   "planFinished": "Plano concluído",
+  "planLockedGuidedBody": "Os planos guiados são do Peregrino+. A Bíblia inteira continua grátis.",
   "planMarkDayRead": "Marcar leitura do dia",
   "planMinutes": "{minutes} min",
   "@planMinutes": {
@@ -4418,6 +4421,7 @@
       }
     }
   },
+  "planNextReading": "Próxima leitura",
   "planOrderAlphabetical": "Ordem alfabética",
   "planOrderAlphabeticalShort": "Alfabética",
   "planOrderCanonical": "Ordem da Bíblia",
@@ -4425,7 +4429,7 @@
   "planOrderChronological": "Ordem cronológica",
   "planOrderChronologicalShort": "Cronológica",
   "planPendingChapters": "Capítulos pendentes",
-  "planPortionMeta": "{count, plural, =1{~{minutes} min · 1 capítulo · {order}} other{~{minutes} min · {count} capítulos · {order}}}",
+  "planPortionMeta": "{count, plural, =1{~{minutes} min · 1 capítulo} other{~{minutes} min · {count} capítulos}}",
   "@planPortionMeta": {
     "placeholders": {
       "minutes": {
@@ -4433,9 +4437,22 @@
       },
       "count": {
         "type": "int"
-      },
-      "order": {
-        "type": "String"
+      }
+    }
+  },
+  "planProgressBible": "{percent}% da Bíblia lida",
+  "@planProgressBible": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "planProgressGuided": "{percent}% do plano",
+  "@planProgressGuided": {
+    "placeholders": {
+      "percent": {
+        "type": "int"
       }
     }
   },
@@ -4479,9 +4496,15 @@
       }
     }
   },
+  "planSwitchBody": "O plano atual será encerrado. Os capítulos já lidos continuam marcados na Bíblia.",
+  "planSwitchTitle": "Trocar de plano?",
+  "planTimePerDay": "Tempo por dia",
   "planTitle": "Plano de leitura",
-  "planTodayChapters": "Capítulos de hoje",
   "planTodayDoneBody": "Porção de hoje concluída. Volte amanhã — ou continue explorando a Bíblia livremente.",
+  "plansCatalogBody": "Cada dia já vem pronto; perdeu um, continua de onde parou.",
+  "plansCatalogHeader": "Planos de leitura",
+  "plansGuidedPlusNote": "A Bíblia inteira é grátis, sempre. Os planos guiados são do Peregrino+.",
+  "plansWholeBibleTitle": "Bíblia inteira",
   "plusNoticeContinue": "Continuar com o Peregrino+",
   "plusNoticeEndedBody": "O lançamento terminou em {date}. Obrigado por caminhar com a gente desde o começo.",
   "@plusNoticeEndedBody": {
@@ -5367,6 +5390,8 @@
   "settingsCreditsSubtitle": "Textos bíblicos e ferramentas de estudo usados no Stway.",
   "settingsCreditsTitle": "Traduções e créditos",
   "settingsDailyReminder": "Lembrete diário",
+  "settingsDangerSubtitle": "Não tem como desfazer.",
+  "settingsDangerTitle": "Apagar dados",
   "settingsDays": "{count, plural, =1{1 dia} other{{count} dias}}",
   "@settingsDays": {
     "placeholders": {
@@ -5394,9 +5419,6 @@
   "settingsFontMedium": "Médio",
   "settingsFontSmall": "Pequeno",
   "settingsGenesisTitle": "Gênesis 1–11",
-  "settingsGroupAccountData": "Conta e dados",
-  "settingsGroupDevice": "Neste aparelho",
-  "settingsGroupProgress": "Progresso",
   "settingsInCloud": "Na nuvem",
   "settingsLastBackup": "Último backup · {date}",
   "@settingsLastBackup": {
@@ -5414,7 +5436,6 @@
       }
     }
   },
-  "settingsLegalSubtitle": "Regras de convivência e uso dos dados",
   "settingsManualBackup": "Backup manual",
   "settingsManualBackupSubtitle": "Exportar ou restaurar o progresso",
   "settingsPaceIntense": "Intenso",

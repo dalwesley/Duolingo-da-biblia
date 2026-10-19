@@ -18,6 +18,7 @@ import '../widgets/stway_brand.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/coming_soon_trails_card.dart';
 import '../widgets/cloud_mascot.dart';
+import '../widgets/tilt_star_sky.dart';
 import '../widgets/ui_primitives.dart';
 import 'main_shell.dart';
 import 'onboarding_screen.dart';
@@ -177,169 +178,242 @@ class _LoginScreenState extends State<LoginScreen> {
     final backend = context.watch<BackendService>();
     final busy = _entering || backend.isAuthBusy || backend.isInitializing;
     final preparing = _entering && backend.isSignedIn;
-    final mode = context.watch<ProgressService>().settings.appearanceMode;
-    final appearance = AppearanceStyle.resolve(mode);
-    final a = appearance;
+    // Arte da marca é sempre noturna: o chrome segue o look Escuro aqui,
+    // seja qual for a aparência salva — senão texto escuro some no azul.
+    const mode = AppearanceMode.night;
+    final a = AppearanceStyle.resolve(mode);
 
     return ImmersiveScaffold(
       mode: mode,
-      style: appearance,
+      style: a,
+      background: const _LoginBackdrop(),
       body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(
-            AppSpace.screen,
-            AppSpace.xxl,
-            AppSpace.screen,
-            AppSpace.screen,
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              const Spacer(flex: 2),
-              const Center(child: StwayLogo(size: 88)),
-              const SizedBox(height: AppSpace.xxl),
-              Center(
-                child: StwayWordmark(
-                  fontSize: 48,
-                  letterSpacing: 6,
-                  letterColor: a.text,
-                ),
-              ),
-              const SizedBox(height: 14),
-              const StwayTagline(size: 11),
-              if (preparing) ...[
-                const SizedBox(height: AppSpace.xl),
-                const Center(
-                  child: CloudMascot(face: CloudFace.carregando, size: 88),
-                ),
-                const SizedBox(height: AppSpace.md),
-                Text(
-                  context.l10n.splashPreparing,
-                  textAlign: TextAlign.center,
-                  style: AppTypography.display(size: 28, color: a.text),
-                ),
-                const SizedBox(height: AppSpace.md),
-                Text(
-                  context.l10n.loginLoadingBody,
-                  textAlign: TextAlign.center,
-                  style: AppTypography.body(color: a.textSecondary),
-                ),
-              ],
-              const Spacer(flex: 3),
-              if (_error != null) ...[
-                GlassCard(
-                  padding: const EdgeInsets.all(AppSpace.md),
-                  child: Text(
-                    _error!,
-                    textAlign: TextAlign.center,
-                    style: AppTypography.body(
-                      size: 12,
-                      weight: FontWeight.w600,
-                      color: a.text,
-                    ),
+        child: LayoutBuilder(
+          builder: (context, constraints) => SingleChildScrollView(
+            physics: const ClampingScrollPhysics(),
+            child: ConstrainedBox(
+              constraints: BoxConstraints(minHeight: constraints.maxHeight),
+              child: IntrinsicHeight(
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(
+                    AppSpace.screen,
+                    48,
+                    AppSpace.screen,
+                    AppSpace.md,
                   ),
-                ),
-                const SizedBox(height: AppSpace.md),
-              ],
-              AbsorbPointer(
-                absorbing: busy,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    if (!backend.isFirebaseReady &&
-                        !backend.isInitializing) ...[
-                      GhostCta(
-                        label: context.l10n.loginReconnect,
-                        leading: CinematicGlyph.refresh,
-                        expanded: true,
-                        onTap: busy ? null : () => backend.retry(),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      // Mesmo topo da splash — sair/entrar não “pula” de tela.
+                      const Center(
+                        child: StwayWordmark(fontSize: 48, letterSpacing: 6),
                       ),
-                      const SizedBox(height: AppSpace.sm),
-                    ],
-                    if (_showApple) ...[
-                      Opacity(
-                        opacity: busy ? 0.55 : 1,
-                        // GhostCta só aceita CinematicGlyph no leading; o logo
-                        // da Apple (obrigatório no botão) fica sobreposto à esquerda.
-                        child: Stack(
-                          alignment: Alignment.centerLeft,
+                      const SizedBox(height: 14),
+                      const StwayTagline(size: 11),
+                      const SizedBox(height: 10),
+                      Text(
+                        context.l10n.splashSlogan,
+                        textAlign: TextAlign.center,
+                        style: AppTypography.title(
+                          size: 16,
+                          weight: FontWeight.w700,
+                          color: a.text,
+                        ),
+                      ),
+                      const Spacer(),
+                      Center(
+                        child: CloudMascot(
+                          face: preparing
+                              ? CloudFace.carregando
+                              : CloudFace.feliz,
+                          size: 84,
+                        ),
+                      ),
+                      const SizedBox(height: AppSpace.md),
+                      Text(
+                        preparing
+                            ? context.l10n.splashPreparing
+                            : context.l10n.loginTitle,
+                        textAlign: TextAlign.center,
+                        style: AppTypography.display(size: 28, color: a.text),
+                      ),
+                      if (preparing) ...[
+                        const SizedBox(height: AppSpace.sm),
+                        Text(
+                          context.l10n.loginLoadingBody,
+                          textAlign: TextAlign.center,
+                          style: AppTypography.body(
+                            size: 14,
+                            height: 1.4,
+                            color: a.textSecondary,
+                          ),
+                        ),
+                      ],
+                      const SizedBox(height: AppSpace.xl),
+                      if (_error != null) ...[
+                        GlassCard(
+                          padding: const EdgeInsets.all(AppSpace.md),
+                          child: Text(
+                            _error!,
+                            textAlign: TextAlign.center,
+                            style: AppTypography.body(
+                              size: 12,
+                              weight: FontWeight.w600,
+                              color: a.text,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(height: AppSpace.md),
+                      ],
+                      AbsorbPointer(
+                        absorbing: busy,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
-                            GhostCta(
+                            if (!backend.isFirebaseReady &&
+                                !backend.isInitializing) ...[
+                              GhostCta(
+                                label: context.l10n.loginReconnect,
+                                leading: CinematicGlyph.refresh,
+                                expanded: true,
+                                onTap: busy ? null : () => backend.retry(),
+                              ),
+                              const SizedBox(height: AppSpace.sm),
+                            ],
+                            if (_showApple) ...[
+                              Opacity(
+                                opacity: busy ? 0.55 : 1,
+                                // GhostCta só aceita CinematicGlyph no leading;
+                                // o logo da Apple (obrigatório no botão) fica
+                                // sobreposto à esquerda.
+                                child: Stack(
+                                  alignment: Alignment.centerLeft,
+                                  children: [
+                                    GhostCta(
+                                      label: busy
+                                          ? context.l10n.loginEntering
+                                          : context.l10n.loginWithApple,
+                                      expanded: true,
+                                      onTap: busy ? null : _signInWithApple,
+                                    ),
+                                    Positioned(
+                                      left: AppSpace.lg,
+                                      child: IgnorePointer(
+                                        child: busy
+                                            ? AppSpinner(
+                                                inline: true,
+                                                color: a.text,
+                                              )
+                                            : Icon(
+                                                Icons.apple,
+                                                size: 22,
+                                                color: a.text,
+                                              ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              const SizedBox(height: AppSpace.sm),
+                            ],
+                            CopperCta(
                               label: busy
                                   ? context.l10n.loginEntering
-                                  : context.l10n.loginWithApple,
-                              expanded: true,
-                              onTap: busy ? null : _signInWithApple,
-                            ),
-                            Positioned(
-                              left: AppSpace.lg,
-                              child: IgnorePointer(
-                                child: busy
-                                    ? AppSpinner(inline: true, color: a.text)
-                                    : Icon(
-                                        Icons.apple,
-                                        size: 22,
-                                        color: a.text,
-                                      ),
-                              ),
+                                  : context.l10n.loginWithGoogle,
+                              onTap: busy ? null : _signInWithGoogle,
+                              busy: busy,
+                              trailing: null,
+                              showArrow: false,
                             ),
                           ],
                         ),
                       ),
-                      const SizedBox(height: AppSpace.sm),
+                      // Aceite dos termos (App Store 1.2): entrar = concordar.
+                      const SizedBox(height: AppSpace.lg),
+                      Text(
+                        context.l10n.loginTermsNotice,
+                        textAlign: TextAlign.center,
+                        style: AppTypography.body(
+                          size: 11,
+                          height: 1.4,
+                          color: a.textSecondary,
+                        ),
+                      ),
+                      const SizedBox(height: AppSpace.xs),
+                      Wrap(
+                        alignment: WrapAlignment.center,
+                        crossAxisAlignment: WrapCrossAlignment.center,
+                        spacing: AppSpace.md,
+                        children: [
+                          TextCta(
+                            label: context.l10n.legalTerms,
+                            color: a.text,
+                            onTap: () => openSitePage(termsPageUrl),
+                          ),
+                          TextCta(
+                            label: context.l10n.legalPrivacy,
+                            color: a.text,
+                            onTap: () => openSitePage(privacyPageUrl),
+                          ),
+                        ],
+                      ),
+                      if (_versionLabel != null)
+                        Text(
+                          _versionLabel!,
+                          textAlign: TextAlign.center,
+                          style: AppTypography.label(
+                            size: 10,
+                            letterSpacing: 0.8,
+                            color: a.textFaint,
+                          ),
+                        ),
                     ],
-                    CopperCta(
-                      label: busy
-                          ? context.l10n.loginEntering
-                          : context.l10n.loginWithGoogle,
-                      onTap: busy ? null : _signInWithGoogle,
-                      busy: busy,
-                      trailing: null,
-                      showArrow: false,
-                    ),
-                  ],
-                ),
-              ),
-              // Aceite dos termos (App Store 1.2): entrar = concordar.
-              const SizedBox(height: AppSpace.lg),
-              Text(
-                context.l10n.loginTermsNotice,
-                textAlign: TextAlign.center,
-                style: AppTypography.body(
-                  size: 11,
-                  height: 1.35,
-                  color: a.textFaint,
-                ),
-              ),
-              Wrap(
-                alignment: WrapAlignment.center,
-                spacing: AppSpace.md,
-                children: [
-                  TextCta(
-                    label: context.l10n.legalTerms,
-                    onTap: () => openSitePage(termsPageUrl),
-                  ),
-                  TextCta(
-                    label: context.l10n.legalPrivacy,
-                    onTap: () => openSitePage(privacyPageUrl),
-                  ),
-                ],
-              ),
-              if (_versionLabel != null) ...[
-                const SizedBox(height: AppSpace.md),
-                Text(
-                  _versionLabel!,
-                  textAlign: TextAlign.center,
-                  style: AppTypography.label(
-                    size: 10,
-                    letterSpacing: 0.8,
-                    color: a.textFaint,
                   ),
                 ),
-              ],
-            ],
+              ),
+            ),
           ),
         ),
+      ),
+    );
+  }
+}
+
+/// Arte do caminho STWAY (a mesma da splash) + céu estrelado, com véu
+/// escuro embaixo para o botão e os termos lerem bem sobre a trilha clara.
+class _LoginBackdrop extends StatelessWidget {
+  const _LoginBackdrop();
+
+  @override
+  Widget build(BuildContext context) {
+    return const ColoredBox(
+      color: AppColors.primaryDark,
+      child: Stack(
+        fit: StackFit.expand,
+        children: [
+          Image(
+            image: AssetImage(StwayPathBackdrop.asset),
+            fit: BoxFit.cover,
+            alignment: Alignment.center,
+            filterQuality: FilterQuality.high,
+          ),
+          TiltStarSky(),
+          DecoratedBox(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                stops: [0, 0.4, 0.62, 1],
+                colors: [
+                  Color(0x00000000),
+                  Color(0x00000000),
+                  Color(0x9905101F),
+                  Color(0xF205101F),
+                ],
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

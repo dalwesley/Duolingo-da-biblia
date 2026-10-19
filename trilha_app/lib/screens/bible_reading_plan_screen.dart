@@ -22,8 +22,13 @@ import 'bible_screen.dart';
 import 'paywall_screen.dart';
 
 /// Plano de leitura — canônico ou cronológico, no tempo que couber no dia.
+///
+/// [setup]: abre na escolha da Bíblia inteira mesmo com um plano ativo
+/// (trocar de plano a partir da aba Planos).
 class BibleReadingPlanScreen extends StatefulWidget {
-  const BibleReadingPlanScreen({super.key});
+  final bool setup;
+
+  const BibleReadingPlanScreen({super.key, this.setup = false});
 
   @override
   State<BibleReadingPlanScreen> createState() => _BibleReadingPlanScreenState();
@@ -42,9 +47,10 @@ class _BibleReadingPlanScreenState extends State<BibleReadingPlanScreen> {
   })?
   _preview;
   bool _loading = true;
+  late bool _setupMode = widget.setup;
 
-  /// Minutos médios por dia de cada plano guiado (cartões da escolha).
-  Map<String, double> _guidedMinutes = const {};
+  /// Avanço do plano ativo: capítulos lidos da sequência, ou dias do guiado.
+  ({int done, int total})? _progress;
 
   @override
   void initState() {
@@ -57,19 +63,37 @@ class _BibleReadingPlanScreenState extends State<BibleReadingPlanScreen> {
     final plan = progress.bibleReadingPlan;
     setState(() => _loading = true);
 
-    if (plan.active) {
+    if (plan.active && !_setupMode) {
       _draftOrder = plan.order;
       _draftMinutes = plan.minutesPerDay;
       final skipped = await progress.syncBibleReadingPlanWithReadChapters();
       if (!mounted) return;
       final synced = progress.bibleReadingPlan;
+      final readKeys = progress.readBibleChapters.toSet();
+      final guided = GuidedReadingPlan.byId(synced.guidedId);
+      final sequence = guided == null
+          ? await BibleReadingPlanService.instance.buildSequence(synced.order)
+          : null;
       final portion = await BibleReadingPlanService.instance.portionFor(
         plan: synced,
-        readKeys: progress.readBibleChapters.toSet(),
+        readKeys: readKeys,
+        sequence: sequence,
       );
       if (!mounted) return;
       setState(() {
         _portion = portion;
+        _progress = sequence != null
+            ? (
+                done: sequence
+                    .where(
+                      (c) => readKeys.contains(
+                        ProgressService.bibleChapterKey(c.abbrev, c.chapter),
+                      ),
+                    )
+                    .length,
+                total: sequence.length,
+              )
+            : (done: synced.cursor.clamp(0, guided!.days), total: guided.days);
         _preview = null;
         _loading = false;
       });
@@ -86,17 +110,10 @@ class _BibleReadingPlanScreenState extends State<BibleReadingPlanScreen> {
         minutesPerDay: _draftMinutes,
         readKeys: progress.readBibleChapters.toSet(),
       );
-      final minutes = <String, double>{
-        for (final def in GuidedReadingPlan.all)
-          def.id: await BibleReadingPlanService.instance.guidedMinutesPerDay(
-            def,
-          ),
-      };
       if (!mounted) return;
       setState(() {
         _portion = null;
         _preview = preview;
-        _guidedMinutes = minutes;
         _loading = false;
       });
     }
@@ -114,30 +131,41 @@ class _BibleReadingPlanScreenState extends State<BibleReadingPlanScreen> {
   }
 
   Future<void> _start() async {
-    await context.read<ProgressService>().startBibleReadingPlan(
+    final progress = context.read<ProgressService>();
+    if (progress.bibleReadingPlan.active) {
+      final ok = await showAppConfirm(
+        context,
+        title: context.l10n.planSwitchTitle,
+        body: context.l10n.planSwitchBody,
+        confirmLabel: context.l10n.modeSwitch,
+      );
+      if (!ok || !mounted) return;
+    }
+    await progress.startBibleReadingPlan(
       order: _draftOrder,
       minutesPerDay: _draftMinutes,
     );
+    _setupMode = false;
     await _reload();
   }
 
-  /// Planos guiados são do Peregrino+; sem ele, o paywall.
-  Future<void> _startGuided(GuidedReadingPlan def) async {
+  /// Plano guiado sem Peregrino+: o paywall; ao voltar, recarrega.
+  Future<void> _openPaywall() async {
     final sub = context.read<SubscriptionService>();
     AnalyticsService.instance.logPlusFeatureOpen(
-      feature: 'guided_plan',
+      feature: 'reading_plan',
       hasPlus: sub.hasPlus,
     );
-    if (!sub.plusFeaturesOpen) {
-      await Navigator.of(context).push(
-        MaterialPageRoute<void>(
-          builder: (_) => const PaywallScreen(source: 'reading_plan'),
-        ),
-      );
-      return;
-    }
-    await context.read<ProgressService>().startGuidedReadingPlan(def.id);
-    await _reload();
+    await Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => const PaywallScreen(source: 'reading_plan'),
+      ),
+    );
+    if (!mounted) return;
+    await NotificationService.instance.syncFromProgress(
+      context.read<ProgressService>(),
+    );
+    if (mounted) setState(() {});
   }
 
   Future<void> _setReminder(int? hour) async {
@@ -198,6 +226,8 @@ class _BibleReadingPlanScreenState extends State<BibleReadingPlanScreen> {
     final mode = context.watch<ProgressService>().settings.appearanceMode;
     final style = AppearanceStyle.resolve(mode);
     final plan = context.watch<ProgressService>().bibleReadingPlan;
+    final plusOpen = context.watch<SubscriptionService>().plusFeaturesOpen;
+    final showActive = plan.active && !_setupMode;
 
     return Appearance(
       mode: mode,
@@ -224,7 +254,7 @@ class _BibleReadingPlanScreenState extends State<BibleReadingPlanScreen> {
                   immersive: true,
                   dark: style.onDark,
                   title: context.l10n.planTitle,
-                  subtitle: plan.active
+                  subtitle: showActive
                       ? (GuidedReadingPlan.byId(
                               plan.guidedId,
                             )?.title(context.l10n) ??
@@ -248,10 +278,13 @@ class _BibleReadingPlanScreenState extends State<BibleReadingPlanScreen> {
                           padding: EdgeInsets.symmetric(vertical: 48),
                           child: AppSpinner(),
                         )
-                      else if (plan.active)
+                      else if (showActive)
                         _ActivePlanBody(
                           plan: plan,
                           portion: _portion,
+                          locked: plan.lockedToday(plusOpen: plusOpen),
+                          onUnlock: _openPaywall,
+                          progress: _progress,
                           onOpen: _openChapter,
                           onComplete: _completeDay,
                           onClear: _confirmClear,
@@ -277,11 +310,6 @@ class _BibleReadingPlanScreenState extends State<BibleReadingPlanScreen> {
                             _refreshPreview();
                           },
                           onStart: _start,
-                          guidedMinutes: _guidedMinutes,
-                          guidedLocked: !context
-                              .watch<SubscriptionService>()
-                              .plusFeaturesOpen,
-                          onStartGuided: _startGuided,
                         ),
                     ],
                   ),
@@ -309,9 +337,8 @@ class _SetupPlanBody extends StatelessWidget {
   final ValueChanged<BibleReadingOrder> onOrder;
   final ValueChanged<int> onMinutes;
   final VoidCallback onStart;
-  final Map<String, double> guidedMinutes;
-  final bool guidedLocked;
-  final ValueChanged<GuidedReadingPlan> onStartGuided;
+
+  /// Sem Plus: avisa dos dias grátis junto do botão.
 
   const _SetupPlanBody({
     required this.order,
@@ -320,9 +347,6 @@ class _SetupPlanBody extends StatelessWidget {
     required this.onOrder,
     required this.onMinutes,
     required this.onStart,
-    required this.guidedMinutes,
-    required this.guidedLocked,
-    required this.onStartGuided,
   });
 
   static const _minuteOptions = [5, 10, 15, 20, 30, 45, 60];
@@ -355,25 +379,41 @@ class _SetupPlanBody extends StatelessWidget {
           ),
         ),
         const SizedBox(height: AppSpace.section),
-        SectionLabel(context.l10n.planSectionOrder),
-        const SizedBox(height: AppSpace.sm),
-        _OrderToggle(value: order, onChanged: onOrder),
-        const SizedBox(height: AppSpace.section),
-        SectionLabel(context.l10n.planSectionTime),
-        const SizedBox(height: AppSpace.sm),
-        Wrap(
-          spacing: 8,
-          runSpacing: 8,
-          children: [
-            for (final m in _minuteOptions)
-              AppSelectChip(
-                label: context.l10n.planMinutes(m),
-                selected: minutes == m,
-                onTap: () => onMinutes(m),
+        GlassCard(
+          padding: const EdgeInsets.all(AppSpace.md),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              CardHeader(
+                label: context.l10n.planSectionOrder,
+                glyph: CinematicGlyph.book,
               ),
-          ],
+              const SizedBox(height: AppSpace.sm),
+              _OrderToggle(value: order, onChanged: onOrder),
+              const SizedBox(height: AppSpace.md),
+              const ListDivider(),
+              const SizedBox(height: AppSpace.md),
+              CardHeader(
+                label: context.l10n.planSectionTime,
+                glyph: CinematicGlyph.hourglass,
+              ),
+              const SizedBox(height: AppSpace.sm),
+              Wrap(
+                spacing: 8,
+                runSpacing: 8,
+                children: [
+                  for (final m in _minuteOptions)
+                    AppSelectChip(
+                      label: context.l10n.planMinutes(m),
+                      selected: minutes == m,
+                      onTap: () => onMinutes(m),
+                    ),
+                ],
+              ),
+            ],
+          ),
         ),
-        const SizedBox(height: AppSpace.section),
+        const SizedBox(height: AppSpace.md),
         if (preview != null)
           GlassCard(
             padding: const EdgeInsets.all(AppSpace.md),
@@ -431,98 +471,7 @@ class _SetupPlanBody extends StatelessWidget {
           onTap: onStart,
           trailing: null,
         ),
-        const SizedBox(height: AppSpace.section),
-        Row(
-          children: [
-            Expanded(child: SectionLabel(context.l10n.guidedPlansHeader)),
-            SoftBadge(
-              text: context.l10n.paywallTitle,
-              glyph: CinematicGlyph.crown,
-              accent: AppRoles.reward,
-            ),
-          ],
-        ),
-        const SizedBox(height: AppSpace.xs),
-        Text(
-          context.l10n.guidedPlansBody,
-          style: AppTypography.body(size: 13, color: a.textSecondary),
-        ),
-        const SizedBox(height: AppSpace.sm),
-        for (final def in GuidedReadingPlan.all) ...[
-          _GuidedPlanTile(
-            def: def,
-            minutesPerDay: guidedMinutes[def.id],
-            locked: guidedLocked,
-            onTap: () => onStartGuided(def),
-          ),
-          const SizedBox(height: 8),
-        ],
       ],
-    );
-  }
-}
-
-class _GuidedPlanTile extends StatelessWidget {
-  final GuidedReadingPlan def;
-  final double? minutesPerDay;
-  final bool locked;
-  final VoidCallback onTap;
-
-  const _GuidedPlanTile({
-    required this.def,
-    required this.minutesPerDay,
-    required this.locked,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final l10n = context.l10n;
-    final m = minutesPerDay;
-    return GlassCard(
-      padding: AppMetrics.cardPaddingCompact,
-      onTap: onTap,
-      child: Row(
-        children: [
-          CinematicIcon(
-            glyph: CinematicGlyph.book,
-            size: AppMetrics.leadingIcon,
-            accent: AppRoles.reward,
-          ),
-          const SizedBox(width: AppSpace.md),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  def.title(l10n),
-                  style: AppTypography.title(size: 15, color: a.text),
-                ),
-                const SizedBox(height: 2),
-                Text(
-                  m == null
-                      ? def.subtitle(l10n)
-                      : l10n.guidedPlanMeta(
-                          def.subtitle(l10n),
-                          m.round().clamp(1, 120),
-                        ),
-                  style: AppTypography.body(size: 12, color: a.textSecondary),
-                ),
-              ],
-            ),
-          ),
-          const SizedBox(width: AppSpace.sm),
-          locked
-              ? CinematicIcon(
-                  glyph: CinematicGlyph.lock,
-                  size: AppMetrics.iconMd,
-                  accent: a.textFaint,
-                  framed: false,
-                )
-              : ListChevron(color: a.textFaint),
-        ],
-      ),
     );
   }
 }
@@ -530,6 +479,11 @@ class _GuidedPlanTile extends StatelessWidget {
 class _ActivePlanBody extends StatelessWidget {
   final BibleReadingPlan plan;
   final DailyReadingPortion? portion;
+  final ({int done, int total})? progress;
+
+  /// Dias grátis gastos e sem Plus: no lugar dos capítulos, o convite.
+  final bool locked;
+  final VoidCallback onUnlock;
   final ValueChanged<PlanChapterRef> onOpen;
   final VoidCallback onComplete;
   final VoidCallback onClear;
@@ -539,6 +493,9 @@ class _ActivePlanBody extends StatelessWidget {
   const _ActivePlanBody({
     required this.plan,
     required this.portion,
+    required this.progress,
+    required this.locked,
+    required this.onUnlock,
     required this.onOpen,
     required this.onComplete,
     required this.onClear,
@@ -546,187 +503,311 @@ class _ActivePlanBody extends StatelessWidget {
     required this.onReminder,
   });
 
+  static const _minuteOptions = [5, 10, 15, 20, 30, 45, 60];
   static const _reminderHours = [6, 7, 8, 12, 19, 21];
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final l10n = context.l10n;
     final p = portion;
     final doneToday = plan.doneToday;
     final finished = p?.finished == true;
     final guided = GuidedReadingPlan.byId(plan.guidedId);
-    final planLabel = guided?.title(context.l10n) ?? plan.order.shortLabel;
+    final planLabel = guided?.title(l10n) ?? plan.order.shortLabel;
+    final chapters = p == null || finished
+        ? const <PlanChapterRef>[]
+        : p.chapters;
+    final pr = progress;
+    final ratio = pr == null || pr.total == 0 ? 0.0 : pr.done / pr.total;
+    final percent = (ratio * 100).floor();
+
+    final String headline;
+    if (finished) {
+      headline = guided != null
+          ? l10n.guidedPlanFinished(planLabel)
+          : l10n.planBibleFinished;
+    } else if (doneToday) {
+      headline = l10n.planCardDoneToday;
+    } else {
+      headline = p?.summary ?? '…';
+    }
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
+        // Hoje: o que ler, quanto falta e a ação — tudo no mesmo card.
         GlassCard(
-          padding: const EdgeInsets.all(AppSpace.md),
+          padding: EdgeInsets.zero,
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              CardHeader(
-                label: context.l10n.commonToday,
-                trailing: SoftBadge(
-                  text: doneToday
-                      ? context.l10n.planDone
-                      : guided != null
-                      ? context.l10n.guidedPlanDayOf(
-                          (plan.cursor + 1).clamp(1, guided.days),
-                          guided.days,
-                        )
-                      : context.l10n.planMinutes(plan.minutesPerDay),
-                  accent: doneToday ? AppRoles.success : a.chrome,
+              Padding(
+                padding: const EdgeInsets.all(AppSpace.md),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    CardHeader(
+                      label: l10n.commonToday,
+                      trailing: SoftBadge(
+                        text: doneToday || finished
+                            ? l10n.planDone
+                            : locked
+                            ? l10n.paywallTitle
+                            : guided != null
+                            ? l10n.guidedPlanDayOf(
+                                (plan.cursor + 1).clamp(1, guided.days),
+                                guided.days,
+                              )
+                            : l10n.planDayNumber(plan.completedDays + 1),
+                        glyph: doneToday || finished
+                            ? CinematicGlyph.check
+                            : locked
+                            ? CinematicGlyph.crown
+                            : null,
+                        accent: doneToday || finished
+                            ? AppRoles.success
+                            : locked
+                            ? AppRoles.reward
+                            : a.chrome,
+                      ),
+                    ),
+                    const SizedBox(height: AppSpace.sm),
+                    Text(
+                      headline,
+                      style: AppTypography.title(size: 20, color: a.text),
+                    ),
+                    const SizedBox(height: 4),
+                    if (doneToday && !finished)
+                      Text(
+                        l10n.planTodayDoneBody,
+                        style: AppTypography.body(
+                          size: 13,
+                          height: 1.4,
+                          color: a.textSecondary,
+                        ),
+                      )
+                    else if (p != null && !finished)
+                      Text(
+                        l10n.planPortionMeta(
+                          p.estimatedMinutes.round(),
+                          p.chapters.length,
+                        ),
+                        style: AppTypography.body(
+                          size: 13,
+                          color: a.textSecondary,
+                        ),
+                      ),
+                    if (pr != null) ...[
+                      const SizedBox(height: AppSpace.md),
+                      AppProgressBar(
+                        value: ratio,
+                        color: doneToday || finished ? AppRoles.success : null,
+                      ),
+                      const SizedBox(height: 6),
+                      Row(
+                        children: [
+                          Expanded(
+                            child: Text(
+                              guided != null
+                                  ? l10n.planProgressGuided(percent)
+                                  : l10n.planProgressBible(percent),
+                              style: AppTypography.body(
+                                size: 12,
+                                weight: FontWeight.w700,
+                                color: a.textSecondary,
+                              ),
+                            ),
+                          ),
+                          Text(
+                            l10n.planReadingDays(plan.completedDays),
+                            style: AppTypography.body(
+                              size: 12,
+                              color: a.textFaint,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ],
                 ),
               ),
-              const SizedBox(height: AppSpace.sm),
-              Text(
-                finished
-                    ? (guided != null
-                          ? context.l10n.guidedPlanFinished(planLabel)
-                          : context.l10n.planBibleFinished)
-                    : (p?.summary ?? '…'),
-                style: AppTypography.title(size: 18, color: a.text),
-              ),
-              if (p != null && !finished) ...[
-                const SizedBox(height: 4),
-                Text(
-                  context.l10n.planPortionMeta(
-                    p.estimatedMinutes.round(),
-                    p.chapters.length,
-                    planLabel,
+              if (locked && chapters.isNotEmpty) ...[
+                const ListDivider(),
+                Padding(
+                  padding: const EdgeInsets.all(AppSpace.md),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Text(
+                        l10n.planLockedGuidedBody,
+                        style: AppTypography.body(
+                          size: 14,
+                          height: 1.4,
+                          color: a.textSecondary,
+                        ),
+                      ),
+                      const SizedBox(height: AppSpace.md),
+                      CopperCta(
+                        label: l10n.plusNoticeContinue,
+                        onTap: onUnlock,
+                        trailing: null,
+                      ),
+                    ],
                   ),
-                  style: AppTypography.body(size: 13, color: a.textSecondary),
                 ),
+              ] else if (chapters.isNotEmpty) ...[
+                const ListDivider(),
+                if (doneToday)
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(
+                      AppSpace.md,
+                      AppSpace.md,
+                      AppSpace.md,
+                      0,
+                    ),
+                    child: SectionLabel(l10n.planNextReading),
+                  ),
+                for (var i = 0; i < chapters.length; i++) ...[
+                  if (i > 0)
+                    const ListDivider(
+                      indent: AppSpace.md,
+                      endIndent: AppSpace.md,
+                    ),
+                  _ChapterRow(
+                    chapter: chapters[i],
+                    onTap: () => onOpen(chapters[i]),
+                  ),
+                ],
+                if (!doneToday)
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(
+                      AppSpace.md,
+                      AppSpace.sm,
+                      AppSpace.md,
+                      AppSpace.md,
+                    ),
+                    child: CopperCta(
+                      label: l10n.planMarkDayRead,
+                      onTap: onComplete,
+                      trailing: null,
+                    ),
+                  ),
               ],
-              const SizedBox(height: AppSpace.sm),
-              Text(
-                context.l10n.planReadingDays(plan.completedDays),
-                style: AppTypography.body(size: 12, color: a.textFaint),
-              ),
             ],
           ),
         ),
-        if (p != null && !finished) ...[
-          const SizedBox(height: AppSpace.section),
-          SectionLabel(context.l10n.planTodayChapters),
-          const SizedBox(height: AppSpace.sm),
-          GlassCard(
-            padding: EdgeInsets.zero,
-            child: Column(
-              children: [
-                for (var i = 0; i < p.chapters.length; i++) ...[
-                  if (i > 0) const ListDivider(),
-                  Material(
-                    color: Colors.transparent,
-                    child: InkWell(
-                      onTap: () => onOpen(p.chapters[i]),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: AppSpace.md,
-                          vertical: AppSpace.md,
-                        ),
-                        child: Row(
-                          children: [
-                            Expanded(
-                              child: Text(
-                                p.chapters[i].label,
-                                style: AppTypography.title(
-                                  size: 14,
-                                  color: a.text,
-                                ),
-                              ),
-                            ),
-                            Text(
-                              context.l10n.planApproxMinutesDecimal(
-                                p.chapters[i].estimatedMinutes.toStringAsFixed(
-                                  1,
-                                ),
-                              ),
-                              style: AppTypography.body(
-                                size: 12,
-                                color: a.textFaint,
-                              ),
-                            ),
-                            const SizedBox(width: 4),
-                            ListChevron(color: a.textFaint),
-                          ],
-                        ),
+        const SizedBox(height: AppSpace.section),
+        // Ajustes do plano: escolhas sobre o card, nunca soltas no fundo.
+        GlassCard(
+          padding: const EdgeInsets.all(AppSpace.md),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              // No guiado o dia já vem pronto: sem ajuste de tempo.
+              if (guided == null) ...[
+                CardHeader(
+                  label: l10n.planTimePerDay,
+                  glyph: CinematicGlyph.hourglass,
+                ),
+                const SizedBox(height: AppSpace.sm),
+                Wrap(
+                  spacing: 8,
+                  runSpacing: 8,
+                  children: [
+                    for (final m in _minuteOptions)
+                      AppSelectChip(
+                        label: l10n.planMinutes(m),
+                        selected: plan.minutesPerDay == m,
+                        onTap: () => onMinutesChanged(m),
                       ),
-                    ),
-                  ),
-                ],
+                  ],
+                ),
+                const SizedBox(height: AppSpace.md),
+                const ListDivider(),
+                const SizedBox(height: AppSpace.md),
               ],
-            ),
-          ),
-          const SizedBox(height: AppSpace.md),
-          if (!doneToday)
-            CopperCta(
-              label: context.l10n.planMarkDayRead,
-              onTap: onComplete,
-              trailing: null,
-            )
-          else
-            GlassCard(
-              padding: const EdgeInsets.all(AppSpace.md),
-              child: Text(
-                context.l10n.planTodayDoneBody,
+              CardHeader(
+                label: l10n.planReminderHeader,
+                glyph: CinematicGlyph.bell,
+              ),
+              const SizedBox(height: AppSpace.xs),
+              Text(
+                l10n.planReminderBody,
                 style: AppTypography.body(
-                  size: 14,
+                  size: 13,
                   height: 1.4,
                   color: a.textSecondary,
                 ),
               ),
-            ),
-        ],
-        // No guiado o dia já vem pronto: sem ajuste de tempo.
-        if (guided == null) ...[
-          const SizedBox(height: AppSpace.section),
-          SectionLabel(context.l10n.planAdjustTime),
-          const SizedBox(height: AppSpace.sm),
-          Wrap(
-            spacing: 8,
-            runSpacing: 8,
-            children: [
-              for (final m in const [5, 10, 15, 20, 30, 45, 60])
-                AppSelectChip(
-                  label: context.l10n.planMinutes(m),
-                  selected: plan.minutesPerDay == m,
-                  onTap: () => onMinutesChanged(m),
-                ),
+              const SizedBox(height: AppSpace.sm),
+              Wrap(
+                spacing: 8,
+                runSpacing: 8,
+                children: [
+                  AppSelectChip(
+                    label: l10n.planReminderOff,
+                    selected: plan.reminderHour == null,
+                    onTap: () => onReminder(null),
+                  ),
+                  for (final h in _reminderHours)
+                    AppSelectChip(
+                      label: l10n.planReminderHour(
+                        h.toString().padLeft(2, '0'),
+                      ),
+                      selected: plan.reminderHour == h,
+                      onTap: () => onReminder(h),
+                    ),
+                ],
+              ),
             ],
           ),
-        ],
-        const SizedBox(height: AppSpace.section),
-        SectionLabel(context.l10n.planReminderHeader),
-        const SizedBox(height: AppSpace.xs),
-        Text(
-          context.l10n.planReminderBody,
-          style: AppTypography.body(size: 13, color: a.textSecondary),
         ),
-        const SizedBox(height: AppSpace.sm),
-        Wrap(
-          spacing: 8,
-          runSpacing: 8,
-          children: [
-            AppSelectChip(
-              label: context.l10n.planReminderOff,
-              selected: plan.reminderHour == null,
-              onTap: () => onReminder(null),
-            ),
-            for (final h in _reminderHours)
-              AppSelectChip(
-                label: context.l10n.planReminderHour(
-                  h.toString().padLeft(2, '0'),
-                ),
-                selected: plan.reminderHour == h,
-                onTap: () => onReminder(h),
-              ),
-          ],
-        ),
-        const SizedBox(height: AppSpace.section),
-        TextCta(label: context.l10n.planEndCta, onTap: onClear, danger: true),
+        const SizedBox(height: AppSpace.md),
+        TextCta(label: l10n.planEndCta, onTap: onClear, danger: true),
       ],
+    );
+  }
+}
+
+class _ChapterRow extends StatelessWidget {
+  final PlanChapterRef chapter;
+  final VoidCallback onTap;
+
+  const _ChapterRow({required this.chapter, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: onTap,
+        child: Padding(
+          padding: const EdgeInsets.symmetric(
+            horizontal: AppSpace.md,
+            vertical: 14,
+          ),
+          child: Row(
+            children: [
+              Expanded(
+                child: Text(
+                  chapter.label,
+                  style: AppTypography.title(size: 15, color: a.text),
+                ),
+              ),
+              Text(
+                context.l10n.planApproxMinutes(
+                  chapter.estimatedMinutes.round().clamp(1, 99),
+                ),
+                style: AppTypography.body(size: 12, color: a.textFaint),
+              ),
+              const SizedBox(width: 4),
+              ListChevron(color: a.textFaint),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

@@ -85,6 +85,11 @@ class BibleReadingPlan {
     return lastCompletedDay == today;
   }
 
+  /// Hoje a leitura está travada: plano guiado sem Peregrino+ (por exemplo,
+  /// a assinatura acabou no meio). A Bíblia inteira nunca trava.
+  bool lockedToday({required bool plusOpen}) =>
+      active && isGuided && !plusOpen && !doneToday;
+
   BibleReadingPlan copyWith({
     bool? active,
     BibleReadingOrder? order,
@@ -112,7 +117,13 @@ class BibleReadingPlan {
     );
   }
 
+  /// Versão do formato salvo. Plano de versão anterior é lido como inativo:
+  /// em 2026-10-19 os planos viraram Peregrino+ (3 dias grátis) e todos os
+  /// planos existentes foram zerados, no aparelho e na nuvem.
+  static const schema = 2;
+
   Map<String, dynamic> toMap() => {
+    'v': schema,
     'active': active,
     'order': order.storageKey,
     'minutesPerDay': minutesPerDay,
@@ -126,6 +137,7 @@ class BibleReadingPlan {
 
   static BibleReadingPlan fromMap(dynamic raw) {
     if (raw is! Map) return inactive;
+    if ((raw['v'] as num?)?.toInt() != schema) return inactive;
     return BibleReadingPlan(
       active: raw['active'] == true,
       order: BibleReadingOrder.fromStorage(raw['order']?.toString()),
