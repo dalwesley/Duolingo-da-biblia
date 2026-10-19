@@ -54,6 +54,10 @@ class JourneyPath extends StatelessWidget {
   final void Function(JourneyPathItem item) onTap;
   final GlobalKey? currentKey;
 
+  /// Portão com o nome da categoria a cada troca. Desligado quando o
+  /// caminho tem uma categoria só — o título da tela já diz qual é.
+  final bool phaseCards;
+
   const JourneyPath({
     super.key,
     required this.items,
@@ -61,6 +65,7 @@ class JourneyPath extends StatelessWidget {
     required this.glow,
     required this.onTap,
     this.currentKey,
+    this.phaseCards = true,
   });
 
   @override
@@ -74,7 +79,7 @@ class JourneyPath extends StatelessWidget {
     var phase = 0;
 
     for (final item in items) {
-      if (item.category != lastCategory) {
+      if (phaseCards && item.category != lastCategory) {
         phase++;
         final whisper = item.category.description;
         final reached =

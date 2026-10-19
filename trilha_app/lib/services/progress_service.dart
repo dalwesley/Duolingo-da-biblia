@@ -1547,13 +1547,6 @@ class ProgressService extends ChangeNotifier {
     }
   }
 
-  /// Reflexões recentes (mais novas primeiro), até [limit].
-  List<MapEntry<String, String>> recentReflections({int limit = 3}) {
-    final entries = missionReflections.entries.toList();
-    if (entries.length <= limit) return entries.reversed.toList();
-    return entries.sublist(entries.length - limit).reversed.toList();
-  }
-
   void _recordSession() {
     final today = _todayKey();
     if (lastPlayedDate == today) return;

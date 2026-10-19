@@ -16,6 +16,10 @@ class RelicPanel extends StatelessWidget {
   final VoidCallback? onTap;
   final bool elevated;
 
+  /// Palco: com valor (0–1), o cartão acende na cor de [accent] em vez do
+  /// wash quase invisível. Para o que é lugar (perfil, trilha), não lista.
+  final double? glow;
+
   const RelicPanel({
     super.key,
     required this.child,
@@ -23,11 +27,22 @@ class RelicPanel extends StatelessWidget {
     this.padding = AppMetrics.cardPadding,
     this.onTap,
     this.elevated = false,
+    this.glow,
   });
 
   @override
   Widget build(BuildContext context) {
     final accent = this.accent ?? Appearance.of(context).chrome;
+    if (glow != null) {
+      return GlassCard(
+        tint: accent,
+        glow: glow!.clamp(0.0, 1.0),
+        elevated: elevated,
+        onTap: onTap,
+        padding: padding,
+        child: child,
+      );
+    }
     return GlassCard(
       padding: EdgeInsets.zero,
       elevated: elevated,

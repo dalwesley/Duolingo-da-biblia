@@ -225,12 +225,15 @@ class WeeklyQuestsCard extends StatelessWidget {
     final progress = context.watch<ProgressService>();
 
     return RelicPanel(
+      accent: AppRoles.presence,
+      glow: 0.4,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           RelicChapter(
             title: context.l10n.questWeeklyTitle,
             divided: false,
+            accent: AppRoles.presence,
             trailing: Text(
               context.l10n.questCountOf(
                 progress.weeklyQuestsCompleted,
@@ -247,7 +250,7 @@ class WeeklyQuestsCard extends StatelessWidget {
           for (var i = 0; i < WeeklyQuestDefs.all.length; i++) ...[
             if (i > 0) ...[
               const SizedBox(height: 12),
-              const RelicHairline(),
+              const RelicHairline(accent: AppRoles.presence),
               const SizedBox(height: 12),
             ],
             _WeeklyQuestRow(quest: WeeklyQuestDefs.all[i], progress: progress),
@@ -273,8 +276,8 @@ class _WeeklyQuestRow extends StatelessWidget {
     final claimed = progress.isWeeklyQuestClaimed(quest.id);
     final done = claimed || value >= quest.target;
     final pct = (value / quest.target).clamp(0.0, 1.0);
-    // Ícone e barra = chrome; concluída = sucesso; passos = recompensa.
-    final tone = claimed ? AppRoles.success : a.chrome;
+    // Em curso é a vida (azul); concluída vira ouro, como a recompensa.
+    final tone = done ? AppRoles.reward : AppRoles.presence;
     final bar = tone;
 
     return Row(
@@ -327,7 +330,7 @@ class _WeeklyQuestRow extends StatelessWidget {
                     style: AppTypography.label(
                       size: 10,
                       letterSpacing: 1.2,
-                      color: AppRoles.success.withValues(alpha: 0.85),
+                      color: AppRoles.reward,
                     ),
                   )
                 : Text(

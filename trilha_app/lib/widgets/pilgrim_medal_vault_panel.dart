@@ -10,17 +10,15 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'medal_cinematic_widgets.dart';
 import 'medal_unlock_sheet.dart';
+import 'recognition_history_sheet.dart';
 import 'cinematic_icon.dart';
 import 'immersive_background.dart';
-import 'juntos_chrome.dart';
 import 'ui_primitives.dart';
 import 'profile_privacy.dart';
 import 'relic_panel.dart';
 import '../models/caravan_profile_prefs.dart';
 
-enum _MedalVaultTab { journey, trails }
-
-/// Cofre — 5 emblemas da jornada, não um álbum de 24 moedas.
+/// Cofre — medalhas da jornada e das trilhas no mesmo grupo.
 class PilgrimMedalVaultsPanel extends StatefulWidget {
   final CaravanPilgrimProfile profile;
   final PilgrimMedalEvalContext evalContext;
@@ -31,12 +29,16 @@ class PilgrimMedalVaultsPanel extends StatefulWidget {
   /// Dono sem nenhuma medalha — CTA que leva de volta à trilha.
   final VoidCallback? onStartWalking;
 
+  /// Dentro do cofre: só o miolo, sem o cartão próprio.
+  final bool embedded;
+
   const PilgrimMedalVaultsPanel({
     super.key,
     required this.profile,
     this.evalContext = const PilgrimMedalEvalContext(),
     this.recognizeToUid,
     this.onStartWalking,
+    this.embedded = false,
   });
 
   @override
@@ -47,8 +49,6 @@ class PilgrimMedalVaultsPanel extends StatefulWidget {
 class _PilgrimMedalVaultsPanelState extends State<PilgrimMedalVaultsPanel> {
   List<PilgrimVaultState>? _vaults;
   List<Trail> _catalog = const [];
-  _MedalVaultTab _tab = _MedalVaultTab.journey;
-  String? _selectedTrailVaultId;
 
   @override
   void initState() {
@@ -73,38 +73,10 @@ class _PilgrimMedalVaultsPanelState extends State<PilgrimMedalVaultsPanel> {
       catalog: catalog,
       ctx: widget.evalContext,
     );
-    final trailVaults = vaults
-        .where((v) => v.vault.kind == PilgrimVaultKind.trail)
-        .toList();
     setState(() {
       _catalog = catalog;
       _vaults = vaults;
-      _selectedTrailVaultId ??= trailVaults.isNotEmpty
-          ? trailVaults.first.vault.id
-          : null;
-      if (_selectedTrailVaultId != null &&
-          trailVaults.every((v) => v.vault.id != _selectedTrailVaultId)) {
-        _selectedTrailVaultId = trailVaults.isNotEmpty
-            ? trailVaults.first.vault.id
-            : null;
-      }
     });
-  }
-
-  PilgrimTrackState? _trackById(String id) {
-    for (final vault in _vaults ?? const <PilgrimVaultState>[]) {
-      for (final track in vault.tracks) {
-        if (track.track.id == id) return track;
-      }
-    }
-    return null;
-  }
-
-  PilgrimVaultState? _vaultById(String id) {
-    for (final vault in _vaults ?? const <PilgrimVaultState>[]) {
-      if (vault.vault.id == id) return vault;
-    }
-    return null;
   }
 
   PilgrimVaultState? get _journeyVault {
@@ -144,158 +116,94 @@ class _PilgrimMedalVaultsPanelState extends State<PilgrimMedalVaultsPanel> {
 
     final journey = _journeyVault;
     final trailVaults = _trailVaults;
-    final hasTrails = trailVaults.isNotEmpty;
-    final showJourney = !hasTrails || _tab == _MedalVaultTab.journey;
-    final selectedTrail = _selectedTrailVaultId == null
-        ? null
-        : _vaultById(_selectedTrailVaultId!);
+    final tracks = <PilgrimTrackState>[
+      ...?journey?.tracks,
+      ...?_seasonVault?.tracks,
+      for (final vault in trailVaults)
+        if (vault.tracks.isNotEmpty) vault.tracks.first,
+    ];
 
     final proximity = PilgrimMedals.nearestLocked(
       profile: widget.profile,
       catalog: _catalog,
       ctx: widget.evalContext,
-      priorityTrailSlug: showJourney
-          ? null
-          : selectedTrail?.vault.id.replaceFirst('trail:', ''),
     );
-
-    // Próxima medalha de toda a coleção (sem prioridade de aba) — a meta
-    // que mais puxa: "Faltam 3 cenas para Prata".
-    final spot = PilgrimMedals.nearestLocked(
-      profile: widget.profile,
-      catalog: _catalog,
-      ctx: widget.evalContext,
-    );
-    final spotTrack = spot == null ? null : _trackById(spot.track.id);
 
     final rareTiles = PilgrimMedals.visibleDiscoveryTiles(_discoveryVault);
     final hiddenRares = PilgrimMedals.hiddenDiscoveryCount(_discoveryVault);
 
     final a = Appearance.of(context);
-    final journeyLit = journey?.unlockedCount ?? 0;
-    final journeyTotal = journey?.total ?? 0;
     final anyLit = vaults.any((v) => v.unlockedCount > 0);
     final showEmpty = !anyLit && widget.onStartWalking != null;
 
+    final body = Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        if (!widget.embedded)
+          RelicChapter(
+            title: context.l10n.medalVaultTitle,
+            accent: AppColors.medalGold,
+            divided: false,
+            action: PrivacyEye(
+              sections: const {CaravanProfileSection.medals},
+              label: context.l10n.medalVaultTitle,
+            ),
+          ),
+        if (!widget.embedded) const SizedBox(height: AppSpace.md),
+        if (showEmpty) ...[
+          Padding(
+            padding: const EdgeInsets.only(left: 13),
+            child: Text(
+              context.l10n.medalVaultEmptyHint,
+              style: AppTypography.body(size: 13, color: a.textSecondary),
+            ),
+          ),
+          const SizedBox(height: AppSpace.md),
+        ],
+        if (tracks.isNotEmpty)
+          _MedalGrid(
+            tracks: tracks,
+            featuredTrackId: proximity?.track.id,
+            recognizeToUid: widget.recognizeToUid,
+          ),
+        if (rareTiles.isNotEmpty || hiddenRares > 0) ...[
+          const SizedBox(height: AppSpace.lg),
+          _RareStrip(
+            tiles: rareTiles,
+            hiddenCount: hiddenRares,
+            recognizeToUid: widget.recognizeToUid,
+          ),
+        ],
+        if (showEmpty) ...[
+          const SizedBox(height: AppSpace.lg),
+          CopperCta(
+            label: context.l10n.commonNextScene,
+            dense: true,
+            leading: CinematicGlyph.path,
+            trailing: null,
+            onTap: widget.onStartWalking,
+          ),
+        ],
+      ],
+    );
+    if (widget.embedded) return body;
     return GlassCard(
       padding: EdgeInsets.zero,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(AppMetrics.cardRadius),
         child: Stack(
           children: [
-            Positioned.fill(
+            const Positioned.fill(
               child: IgnorePointer(
                 child: CustomPaint(
-                  painter: const MedalSpotlightPainter(
+                  painter: MedalSpotlightPainter(
                     accent: AppColors.medalGold,
                     intensity: 0.9,
                   ),
                 ),
               ),
             ),
-            Padding(
-              padding: AppMetrics.cardPadding,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  RelicChapter(
-                    title: context.l10n.medalVaultTitle,
-                    accent: AppColors.medalGold,
-                    // A barra de progresso já faz o papel do filete.
-                    divided: journeyTotal == 0,
-                    action: PrivacyEye(
-                      sections: const {CaravanProfileSection.medals},
-                      label: context.l10n.medalVaultTitle,
-                    ),
-                  ),
-                  if (journeyTotal > 0) ...[
-                    const SizedBox(height: AppSpace.sm),
-                    RelicProgress(
-                      value: journeyLit / journeyTotal,
-                      accent: AppColors.medalGold,
-                    ),
-                  ],
-                  if (spot != null && spotTrack != null) ...[
-                    const SizedBox(height: AppSpace.md),
-                    _NextMedalSpotlight(
-                      proximity: spot,
-                      onTap: () => showTrackDetailSheet(
-                        context,
-                        spotTrack,
-                        highlightLevelIndex: spotTrack.levelIndex + 1,
-                        recognizeToUid: widget.recognizeToUid,
-                      ),
-                    ),
-                  ],
-                  if (showEmpty) ...[
-                    const SizedBox(height: AppSpace.xs + 2),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 13),
-                      child: Text(
-                        context.l10n.medalVaultEmptyHint,
-                        style: AppTypography.body(
-                          size: 13,
-                          color: a.textSecondary,
-                        ),
-                      ),
-                    ),
-                  ],
-                  const SizedBox(height: AppSpace.md),
-                  if (hasTrails) ...[
-                    _MedalTabBar(
-                      tab: _tab,
-                      trailCount: trailVaults.length,
-                      onChanged: (tab) => setState(() => _tab = tab),
-                    ),
-                    const SizedBox(height: AppSpace.md),
-                  ],
-                  if (showJourney && journey != null)
-                    _FamilyEmblemRow(
-                      tracks: journey.tracks,
-                      featuredTrackId: proximity?.track.id,
-                      recognizeToUid: widget.recognizeToUid,
-                    ),
-                  if (showJourney && _seasonVault != null) ...[
-                    const SizedBox(height: AppSpace.lg),
-                    _VaultSubhead(
-                      context.l10n.medalVaultSeason,
-                      color: AppColors.medalGold.withValues(alpha: 0.85),
-                    ),
-                    const SizedBox(height: AppSpace.sm),
-                    _FamilyEmblemRow(
-                      tracks: _seasonVault!.tracks,
-                      featuredTrackId: proximity?.track.id,
-                      recognizeToUid: widget.recognizeToUid,
-                    ),
-                  ],
-                  if (!showJourney)
-                    _TrailEmblemStrip(
-                      vaults: trailVaults,
-                      featuredTrackId: proximity?.track.id,
-                      recognizeToUid: widget.recognizeToUid,
-                    ),
-                  if (showJourney &&
-                      (rareTiles.isNotEmpty || hiddenRares > 0)) ...[
-                    const SizedBox(height: AppSpace.lg + 2),
-                    _RareStrip(
-                      tiles: rareTiles,
-                      hiddenCount: hiddenRares,
-                      recognizeToUid: widget.recognizeToUid,
-                    ),
-                  ],
-                  if (showEmpty) ...[
-                    const SizedBox(height: AppSpace.lg + 2),
-                    CopperCta(
-                      label: context.l10n.commonNextScene,
-                      dense: true,
-                      leading: CinematicGlyph.path,
-                      trailing: null,
-                      onTap: widget.onStartWalking,
-                    ),
-                  ],
-                ],
-              ),
-            ),
+            Padding(padding: AppMetrics.cardPadding, child: body),
           ],
         ),
       ),
@@ -303,12 +211,12 @@ class _PilgrimMedalVaultsPanelState extends State<PilgrimMedalVaultsPanel> {
   }
 }
 
-class _FamilyEmblemRow extends StatelessWidget {
+class _MedalGrid extends StatelessWidget {
   final List<PilgrimTrackState> tracks;
   final String? featuredTrackId;
   final String? recognizeToUid;
 
-  const _FamilyEmblemRow({
+  const _MedalGrid({
     required this.tracks,
     this.featuredTrackId,
     this.recognizeToUid,
@@ -317,74 +225,31 @@ class _FamilyEmblemRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (tracks.isEmpty) return const SizedBox.shrink();
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        for (final track in tracks)
-          Expanded(
-            child: MedalTrackEmblem(
-              trackState: track,
-              featured: track.track.id == featuredTrackId,
-              onTap: () => showTrackDetailSheet(
-                context,
-                track,
-                recognizeToUid: recognizeToUid,
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        const cols = 5;
+        final cell = constraints.maxWidth / cols;
+        return Wrap(
+          children: [
+            for (final track in tracks)
+              SizedBox(
+                width: cell,
+                child: MedalTrackEmblem(
+                  trackState: track,
+                  featured: track.track.id == featuredTrackId,
+                  heartKeys: recognizeToUid == null
+                      ? track.earnedMedalIds
+                      : null,
+                  onTap: () => showTrackDetailSheet(
+                    context,
+                    track,
+                    recognizeToUid: recognizeToUid,
+                  ),
+                ),
               ),
-            ),
-          ),
-      ],
-    );
-  }
-}
-
-class _TrailEmblemStrip extends StatelessWidget {
-  final List<PilgrimVaultState> vaults;
-  final String? featuredTrackId;
-  final String? recognizeToUid;
-
-  const _TrailEmblemStrip({
-    required this.vaults,
-    this.featuredTrackId,
-    this.recognizeToUid,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final tracks = [
-      for (final vault in vaults)
-        if (vault.tracks.isNotEmpty) vault.tracks.first,
-    ];
-    if (tracks.isEmpty) return const SizedBox.shrink();
-    if (tracks.length == 1) {
-      return MedalTrackEmblem(
-        trackState: tracks.first,
-        featured: true,
-        onTap: () => showTrackDetailSheet(
-          context,
-          tracks.first,
-          recognizeToUid: recognizeToUid,
-        ),
-      );
-    }
-    return Wrap(
-      alignment: WrapAlignment.center,
-      spacing: 8,
-      runSpacing: 10,
-      children: [
-        for (final track in tracks)
-          SizedBox(
-            width: 72,
-            child: MedalTrackEmblem(
-              trackState: track,
-              featured: track.track.id == featuredTrackId,
-              onTap: () => showTrackDetailSheet(
-                context,
-                track,
-                recognizeToUid: recognizeToUid,
-              ),
-            ),
-          ),
-      ],
+          ],
+        );
+      },
     );
   }
 }
@@ -419,14 +284,28 @@ class _RareStrip extends StatelessWidget {
             runSpacing: AppSpace.sm + 2,
             children: [
               for (final tile in tiles)
-                MedalVaultMedallion(
-                  tile: tile,
-                  size: 52,
-                  onTap: () => showMedalTileSheet(
-                    context,
-                    tile,
-                    recognizeToUid: recognizeToUid,
-                  ),
+                Stack(
+                  clipBehavior: Clip.none,
+                  children: [
+                    MedalVaultMedallion(
+                      tile: tile,
+                      size: 52,
+                      onTap: () => showMedalTileSheet(
+                        context,
+                        tile,
+                        recognizeToUid: recognizeToUid,
+                      ),
+                    ),
+                    if (recognizeToUid == null && tile.unlocked)
+                      Positioned(
+                        right: -2,
+                        bottom: -2,
+                        child: ReceivedHeartBadge(
+                          subjectKeys: {tile.id},
+                          compact: true,
+                        ),
+                      ),
+                  ],
                 ),
             ],
           ),
@@ -465,40 +344,6 @@ class _RareStrip extends StatelessWidget {
   }
 }
 
-class _MedalTabBar extends StatelessWidget {
-  final _MedalVaultTab tab;
-  final int trailCount;
-  final ValueChanged<_MedalVaultTab> onChanged;
-
-  const _MedalTabBar({
-    required this.tab,
-    required this.trailCount,
-    required this.onChanged,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return AppSegmentedTabs(
-      index: tab.index,
-      onChanged: (i) => onChanged(_MedalVaultTab.values[i]),
-      items: [
-        (
-          label: context.l10n.medalVaultTabJourney,
-          glyph: null,
-          mark: null,
-          alert: false,
-        ),
-        (
-          label: '${context.l10n.medalVaultTabTrails} · $trailCount',
-          glyph: null,
-          mark: null,
-          alert: false,
-        ),
-      ],
-    );
-  }
-}
-
 /// Subtítulo interno do cofre — caixa normal, legível.
 class _VaultSubhead extends StatelessWidget {
   final String text;
@@ -509,108 +354,5 @@ class _VaultSubhead extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(text, style: AppTypography.title(size: 12, color: color));
-  }
-}
-
-/// "Próxima medalha": a moeda que falta, o halo do quanto já andou e o
-/// recado de ação ("Faltam 3 cenas para Prata em Palavra").
-class _NextMedalSpotlight extends StatelessWidget {
-  final PilgrimTrackProximity proximity;
-  final VoidCallback onTap;
-
-  const _NextMedalSpotlight({required this.proximity, required this.onTap});
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final p = proximity;
-    final accent = tierColor(p.nextLevel.tier);
-    final ratio = p.target <= 0 ? 0.0 : (p.current / p.target).clamp(0.0, 1.0);
-    final tile = PilgrimMedalTile.fromLevel(
-      track: p.track,
-      level: p.nextLevel,
-      unlocked: false,
-    );
-    return Semantics(
-      button: true,
-      label: context.l10n.medalVaultNextSemantics(p.message),
-      excludeSemantics: true,
-      child: Material(
-        color: Colors.transparent,
-        child: InkWell(
-          onTap: onTap,
-          borderRadius: BorderRadius.circular(AppRadii.md),
-          child: InsetPanel(
-            borderColor: accent.withValues(alpha: 0.45),
-            child: Row(
-              children: [
-                MedalHaloRing(
-                  progress: ratio,
-                  accent: accent,
-                  size: 66,
-                  stroke: 3,
-                  child: MedalVaultMedallion(tile: tile, size: 48),
-                ),
-                const SizedBox(width: AppSpace.md),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        context.l10n.medalVaultNextTitle,
-                        style: AppTypography.body(
-                          size: 12,
-                          weight: FontWeight.w800,
-                          color: accent,
-                        ),
-                      ),
-                      const SizedBox(height: 2),
-                      Text(
-                        '${tierLabel(p.nextLevel.tier)} · ${p.track.title}',
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: AppTypography.title(size: 16, color: a.text),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        context.l10n.medalVaultRemaining(p.remaining, p.unitLabel),
-                        style: AppTypography.body(
-                          size: 13,
-                          weight: FontWeight.w600,
-                          color: a.textSecondary,
-                        ),
-                      ),
-                      const SizedBox(height: 8),
-                      Row(
-                        children: [
-                          Expanded(
-                            child: AppProgressBar(
-                              value: ratio,
-                              color: accent,
-                              height: 6,
-                            ),
-                          ),
-                          const SizedBox(width: 8),
-                          Text(
-                            '${p.current}/${p.target}',
-                            style: AppTypography.body(
-                              size: 12,
-                              weight: FontWeight.w800,
-                              color: a.textSecondary,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(width: 6),
-                ListChevron(color: a.textFaint),
-              ],
-            ),
-          ),
-        ),
-      ),
-    );
   }
 }

@@ -100,6 +100,7 @@ exports.onCompanionNudge = functions.firestore
 
 /**
  * Quando alguém reconhece a cena ou uma medalha, avisa quem recebeu.
+ * O aviso não diz o nome: quem não é Peregrino+ vê o coração, não quem foi.
  * O corpo não usa texto livre do remetente.
  */
 exports.onRecognition = functions.firestore
@@ -117,7 +118,6 @@ exports.onRecognition = functions.firestore
       return;
     }
 
-    const fromName = (data.fromName || 'Alguém').trim().split(/\s+/)[0] || 'Alguém';
     const body = data.kind === 'medal'
       ? 'Reconheceu uma medalha sua.'
       : 'Reconheceu a sua cena.';
@@ -126,7 +126,7 @@ exports.onRecognition = functions.firestore
       await getMessaging().send({
         token,
         notification: {
-          title: `${fromName} viu o seu passo`,
+          title: 'Alguém viu o seu passo',
           body,
         },
         data: {

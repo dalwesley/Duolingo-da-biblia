@@ -20,9 +20,9 @@ import '../widgets/cinematic_icon.dart';
 import '../widgets/cloud_mascot.dart';
 import '../widgets/coming_soon_trails_card.dart';
 import '../widgets/immersive_background.dart';
+import '../widgets/journey_sky.dart';
 import '../widgets/offline_curriculum_dialog.dart';
 import '../widgets/realm_world_atmosphere.dart';
-import '../widgets/relic_panel.dart';
 import '../widgets/shell_tab_scope.dart';
 import '../widgets/trail_suggestion_sheet.dart';
 import '../widgets/ui_primitives.dart';
@@ -31,7 +31,7 @@ import 'realm_journey_screen.dart';
 import 'trail_map_screen.dart';
 import 'support_screen.dart';
 
-/// Seleção de trilhas — cada reino é um caminho cinematográfico.
+/// Seleção de trilhas — linhas por grupo, um card por caminho.
 class TrilhasScreen extends StatefulWidget {
   final TrailRepository repo;
   final bool asPushedPage;
@@ -140,7 +140,7 @@ class _TrilhasScreenState extends State<TrilhasScreen>
     );
   }
 
-  void _openRealm(TrailRealm realm) {
+  void _openJourney(TrailJourney journey) {
     final trails = _trails!;
     Navigator.of(context).push(
       PageRouteBuilder(
@@ -155,7 +155,7 @@ class _TrilhasScreenState extends State<TrilhasScreen>
             opacity: fade,
             child: ScaleTransition(
               scale: Tween<double>(begin: 1.04, end: 1).animate(fade),
-              child: RealmJourneyScreen(realm: realm, allTrails: trails),
+              child: RealmJourneyScreen(journey: journey, allTrails: trails),
             ),
           );
         },
@@ -185,8 +185,8 @@ class _TrilhasScreenState extends State<TrilhasScreen>
 
   Future<void> _openDonate() => openSupport(context);
 
-  void _showTeologiaSoonSheet() {
-    final visuals = RealmVisuals.of(TrailRealm.teologia);
+  void _showSoonSheet(TrailJourney journey) {
+    final visuals = RealmVisuals.of(journey.realm);
     showAppSheet<void>(
       context,
       builder: (ctx) {
@@ -203,8 +203,10 @@ class _TrilhasScreenState extends State<TrilhasScreen>
               const SizedBox(height: AppSpace.sm),
               AppSheetHeader(
                 face: CloudFace.triste,
-                title: TrailRealm.teologia.label,
-                subtitle: ctx.l10n.realmTeologiaSoonBody,
+                title: journey.label,
+                subtitle: journey.description.trim().isEmpty
+                    ? ctx.l10n.trailsJourneySoonBody
+                    : journey.description,
                 center: true,
               ),
               const SizedBox(height: AppSpace.lg),
@@ -220,16 +222,13 @@ class _TrilhasScreenState extends State<TrilhasScreen>
     );
   }
 
-  _RealmInfo _infoFor(
-    TrailRealm realm,
+  _JourneyInfo _infoFor(
+    TrailJourney journey,
     List<Trail> trails,
-    ProgressService progress, {
-    bool locked = false,
-  }) {
-    final realmTrails = trails
-        .where((t) => TrailRealm.fromId(t.realmId) == realm)
-        .toList();
-    final unlocked = realmTrails
+    ProgressService progress,
+  ) {
+    final journeyTrails = trails.where((t) => t.journey == journey).toList();
+    final unlocked = journeyTrails
         .where(
           (t) =>
               TrailProgress.isTrailUnlocked(
@@ -242,7 +241,7 @@ class _TrilhasScreenState extends State<TrilhasScreen>
               !t.comingSoon,
         )
         .length;
-    final completed = realmTrails
+    final completed = journeyTrails
         .where(
           (t) => TrailProgress.isTrailCompleted(
             t,
@@ -251,12 +250,14 @@ class _TrilhasScreenState extends State<TrilhasScreen>
           ),
         )
         .length;
-    return _RealmInfo(
-      realm: realm,
-      trailCount: realmTrails.length,
+    return _JourneyInfo(
+      journey: journey,
+      trailCount: journeyTrails.length,
       unlockedCount: unlocked,
       completedCount: completed,
-      locked: locked,
+      locked: journeyTrails.every(
+        (t) => t.comingSoon || t.missionSlugs.isEmpty,
+      ),
     );
   }
 
@@ -266,7 +267,6 @@ class _TrilhasScreenState extends State<TrilhasScreen>
   }
 
   Widget _buildTrilhas(BuildContext context) {
-    final a = Appearance.of(context);
     final progress = tabListens
         ? context.watch<ProgressService>()
         : context.read<ProgressService>();
@@ -313,21 +313,25 @@ class _TrilhasScreenState extends State<TrilhasScreen>
     final current = active == null
         ? null
         : TrailProgress.getCurrentMission(active, progress.completedMissions);
-    final activeRealm = active == null
-        ? null
-        : TrailRealm.fromId(active.realmId);
-    final realms = [
-      _infoFor(TrailRealm.antigoTestamento, trails, progress),
-      _infoFor(TrailRealm.novoTestamento, trails, progress),
-      _infoFor(TrailRealm.vidaCrista, trails, progress),
-      _infoFor(
-        TrailRealm.teologia,
-        trails,
-        progress,
-        locked: trails
-            .where((t) => TrailRealm.fromId(t.realmId) == TrailRealm.teologia)
-            .every((t) => t.comingSoon || t.missionSlugs.isEmpty),
-      ),
+    final activeJourney = active?.journey;
+    // Todo card aparece; sem trilha publicada ainda, fica "Em breve"
+    // (como Teologia hoje) e vai para o fim da linha — o que já dá para
+    // andar vem primeiro, na ordem do catálogo.
+    final shelves = [
+      for (final shelf in TrailShelf.values)
+        (
+          shelf: shelf,
+          cards: () {
+            final all = [
+              for (final journey in TrailJourney.forShelf(shelf))
+                _infoFor(journey, trails, progress),
+            ];
+            return [
+              ...all.where((info) => !info.locked),
+              ...all.where((info) => info.locked),
+            ];
+          }(),
+        ),
     ];
 
     final topPad = widget.topBar != null
@@ -355,6 +359,58 @@ class _TrilhasScreenState extends State<TrilhasScreen>
               ),
               const SizedBox(height: AppSpace.afterTopBar),
             ],
+            if (active != null && current != null)
+              _reveal(
+                0,
+                TickerMode(
+                  enabled: widget.portalsActive,
+                  child: Padding(
+                    padding: EdgeInsets.fromLTRB(
+                      AppSpace.screen + gutter,
+                      0,
+                      AppSpace.screen + gutter,
+                      AppSpace.section,
+                    ),
+                    child: _NowPlayingStrip(
+                      trail: active,
+                      mission: current,
+                      progress: TrailProgress.getLiveProgress(
+                        active,
+                        progress.completedMissions,
+                      ),
+                      atRisk: progress.isStreakAtRisk,
+                      countdown: progress.streakRiskCountdown,
+                      onTap: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                            builder: (_) => TrailMapScreen(slug: active.slug),
+                          ),
+                        );
+                      },
+                    ),
+                  ),
+                ),
+              ),
+            for (var i = 0; i < shelves.length; i++)
+              _reveal(
+                1 + i,
+                Padding(
+                  padding: const EdgeInsets.only(bottom: AppSpace.section),
+                  child:
+                      (shelves[i].shelf == TrailShelf.biblia
+                      ? _PosterCarousel.new
+                      : _JourneyShelf.new)(
+                        shelf: shelves[i].shelf,
+                        cards: shelves[i].cards,
+                        activeJourney: activeJourney,
+                        inset: AppSpace.screen + gutter,
+                        animate: widget.portalsActive,
+                        onOpen: (info) => info.locked
+                            ? _showSoonSheet(info.journey)
+                            : _openJourney(info.journey),
+                      ),
+                ),
+              ),
             Padding(
               padding: EdgeInsets.symmetric(
                 horizontal: AppSpace.screen + gutter,
@@ -362,79 +418,10 @@ class _TrilhasScreenState extends State<TrilhasScreen>
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  if (active != null && current != null)
-                    _reveal(
-                      0,
-                      TickerMode(
-                        enabled: widget.portalsActive,
-                        child: Padding(
-                          padding: const EdgeInsets.only(
-                            bottom: AppSpace.section,
-                          ),
-                          child: _NowPlayingStrip(
-                            trail: active,
-                            mission: current,
-                            progress: TrailProgress.getLiveProgress(
-                              active,
-                              progress.completedMissions,
-                            ),
-                            atRisk: progress.isStreakAtRisk,
-                            countdown: progress.streakRiskCountdown,
-                            onTap: () {
-                              Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (_) =>
-                                      TrailMapScreen(slug: active.slug),
-                                ),
-                              );
-                            },
-                          ),
-                        ),
-                      ),
-                    ),
                   _reveal(
-                    1,
+                    1 + shelves.length,
                     Padding(
-                      padding: const EdgeInsets.only(
-                        top: 4,
-                        bottom: AppSpace.lg,
-                      ),
-                      child: RelicChapter(
-                        title: context.l10n.trailsAreasHeading,
-                        accent: a.chrome,
-                      ),
-                    ),
-                  ),
-                  for (var i = 0; i < realms.length; i++)
-                    _reveal(
-                      2 + i,
-                      Column(
-                        children: [
-                          if (i > 0)
-                            _PathLink(
-                              from: RealmVisuals.of(realms[i - 1].realm).accent,
-                              to: RealmVisuals.of(realms[i].realm).accent,
-                              walked: realms[i - 1].completedCount > 0,
-                              animate: widget.portalsActive,
-                            ),
-                          _RealmPoster(
-                            info: realms[i],
-                            act: i + 1,
-                            featured:
-                                activeRealm == realms[i].realm &&
-                                !realms[i].locked,
-                            animate: widget.portalsActive,
-                            onTap: realms[i].locked
-                                ? _showTeologiaSoonSheet
-                                : () => _openRealm(realms[i].realm),
-                          ),
-                        ],
-                      ),
-                    ),
-                  _reveal(
-                    2 + realms.length,
-                    Padding(
-                      padding: const EdgeInsets.only(top: AppSpace.section),
+                      padding: const EdgeInsets.only(top: AppSpace.sm),
                       child: ComingSoonTrailsCard(
                         onSuggest: _suggestTrail,
                         onSuggestAuthor: _suggestAuthor,
@@ -443,7 +430,7 @@ class _TrilhasScreenState extends State<TrilhasScreen>
                   ),
                   if (context.watch<SubscriptionService>().supportConfigured)
                     _reveal(
-                      3 + realms.length,
+                      2 + shelves.length,
                       Padding(
                         padding: const EdgeInsets.only(top: AppSpace.section),
                         child: DonateCard(onDonate: _openDonate),
@@ -459,15 +446,15 @@ class _TrilhasScreenState extends State<TrilhasScreen>
   }
 }
 
-class _RealmInfo {
-  final TrailRealm realm;
+class _JourneyInfo {
+  final TrailJourney journey;
   final int trailCount;
   final int unlockedCount;
   final int completedCount;
   final bool locked;
 
-  const _RealmInfo({
-    required this.realm,
+  const _JourneyInfo({
+    required this.journey,
     required this.trailCount,
     required this.unlockedCount,
     required this.completedCount,
@@ -672,65 +659,332 @@ class _NowPlayingStripState extends State<_NowPlayingStrip>
   }
 }
 
-/// Trecho do caminho entre dois reinos — pontilhado que desce e brilha.
-class _PathLink extends StatefulWidget {
-  final Color from;
-  final Color to;
-  final bool walked;
+/// Linha da Bíblia: pôsteres em carrossel. O do meio cresce e anima o céu;
+/// os vizinhos recuam e apagam, e o céu corre mais devagar que o card.
+/// Tocar no vizinho traz ele ao centro; tocar no do meio abre o caminho.
+class _PosterCarousel extends StatefulWidget {
+  final TrailShelf shelf;
+  final List<_JourneyInfo> cards;
+  final TrailJourney? activeJourney;
+  final double inset;
   final bool animate;
+  final ValueChanged<_JourneyInfo> onOpen;
 
-  const _PathLink({
-    required this.from,
-    required this.to,
-    required this.walked,
+  const _PosterCarousel({
+    required this.shelf,
+    required this.cards,
+    required this.activeJourney,
+    required this.inset,
     required this.animate,
+    required this.onOpen,
   });
 
   @override
-  State<_PathLink> createState() => _PathLinkState();
+  State<_PosterCarousel> createState() => _PosterCarouselState();
 }
 
-class _PathLinkState extends State<_PathLink>
-    with SingleTickerProviderStateMixin {
-  late final AnimationController _flow = AnimationController(
-    vsync: this,
-    duration: const Duration(milliseconds: 2400),
+class _PosterCarouselState extends State<_PosterCarousel> {
+  late final PageController _pages = PageController(
+    viewportFraction: 0.66,
+    initialPage: math.max(
+      0,
+      widget.cards.indexWhere((c) => c.journey == widget.activeJourney),
+    ),
   );
 
   @override
-  void initState() {
-    super.initState();
-    if (widget.animate) _flow.repeat();
-  }
-
-  @override
-  void didUpdateWidget(covariant _PathLink oldWidget) {
-    super.didUpdateWidget(oldWidget);
-    if (widget.animate && !_flow.isAnimating) {
-      _flow.repeat();
-    } else if (!widget.animate && _flow.isAnimating) {
-      _flow.stop();
-    }
-  }
-
-  @override
   void dispose() {
-    _flow.dispose();
+    _pages.dispose();
     super.dispose();
+  }
+
+  double get _page {
+    if (_pages.hasClients && _pages.position.haveDimensions) {
+      return _pages.page ?? _pages.initialPage.toDouble();
+    }
+    return _pages.initialPage.toDouble();
+  }
+
+  void _tap(int index) {
+    if (index == _page.round()) {
+      widget.onOpen(widget.cards[index]);
+      return;
+    }
+    ActHaptics.tap();
+    _pages.animateToPage(
+      index,
+      duration: AppMotion.gentle,
+      curve: AppMotion.enter,
+    );
   }
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 28,
-      width: double.infinity,
-      child: RepaintBoundary(
-        child: CustomPaint(
-          painter: _PathLinkPainter(
-            from: widget.from,
-            to: widget.to,
-            walked: widget.walked,
-            flow: _flow,
+    final cards = widget.cards;
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final posterWidth = constraints.maxWidth * _pages.viewportFraction;
+        final height = (posterWidth * 1.22).clamp(270.0, 360.0);
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: widget.inset),
+              child: SectionLabel(widget.shelf.label, size: 12),
+            ),
+            const SizedBox(height: AppSpace.md),
+            SizedBox(
+              height: height,
+              child: PageView.builder(
+                controller: _pages,
+                physics: const BouncingScrollPhysics(),
+                itemCount: cards.length,
+                onPageChanged: (_) => ActHaptics.tap(),
+                itemBuilder: (context, i) => AnimatedBuilder(
+                  animation: _pages,
+                  builder: (context, _) {
+                    final delta = (_page - i).clamp(-1.0, 1.0);
+                    final distance = delta.abs();
+                    return Transform.scale(
+                      scale: 1 - 0.1 * distance,
+                      child: Opacity(
+                        opacity: 1 - 0.45 * distance,
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 6),
+                          child: _JourneyPoster(
+                            info: cards[i],
+                            focused: distance < 0.5,
+                            active: cards[i].journey == widget.activeJourney,
+                            parallax: delta,
+                            animate: widget.animate,
+                            onTap: () => _tap(i),
+                          ),
+                        ),
+                      ),
+                    );
+                  },
+                ),
+              ),
+            ),
+            if (cards.length > 1) ...[
+              const SizedBox(height: AppSpace.md),
+              AnimatedBuilder(
+                animation: _pages,
+                builder: (context, _) {
+                  final current = _page.round();
+                  return Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      for (var i = 0; i < cards.length; i++)
+                        AnimatedContainer(
+                          duration: AppMotion.quick,
+                          margin: const EdgeInsets.symmetric(horizontal: 3),
+                          width: i == current ? 16 : 6,
+                          height: 6,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(3),
+                            color: AppColors.textOnDark.withValues(
+                              alpha: i == current ? 0.9 : 0.3,
+                            ),
+                          ),
+                        ),
+                    ],
+                  );
+                },
+              ),
+            ],
+          ],
+        );
+      },
+    );
+  }
+}
+
+/// Pôster de um caminho da Bíblia: a paisagem da área de ponta a ponta,
+/// selo com o progresso no alto e o nome em serifa. O céu é o mesmo que
+/// abre a tela do caminho (Hero), então o toque parece entrar no pôster.
+class _JourneyPoster extends StatefulWidget {
+  final _JourneyInfo info;
+  final bool focused;
+  final bool active;
+  final double parallax;
+  final bool animate;
+  final VoidCallback onTap;
+
+  const _JourneyPoster({
+    required this.info,
+    required this.focused,
+    required this.active,
+    required this.parallax,
+    required this.animate,
+    required this.onTap,
+  });
+
+  @override
+  State<_JourneyPoster> createState() => _JourneyPosterState();
+}
+
+class _JourneyPosterState extends State<_JourneyPoster> {
+  bool _pressed = false;
+
+  @override
+  Widget build(BuildContext context) {
+    final info = widget.info;
+    final journey = info.journey;
+    final visuals = RealmVisuals.of(journey.realm);
+    final locked = info.locked;
+    final focused = widget.focused;
+    final night = AppearanceStyle.resolve(AppearanceMode.night);
+    final countLabel = locked
+        ? context.l10n.commonComingSoon
+        : info.completedCount > 0
+        ? context.l10n.trailsRealmTrailsDone(
+            info.completedCount,
+            info.trailCount,
+          )
+        : info.unlockedCount > 0
+        ? context.l10n.trailsRealmOpenCount(info.unlockedCount)
+        : context.l10n.trailsRealmTrailCount(info.trailCount);
+    final cta = locked
+        ? context.l10n.trailsLearnMore
+        : (widget.active || info.completedCount > 0
+              ? context.l10n.commonContinue
+              : context.l10n.commonStart);
+
+    return Semantics(
+      button: true,
+      label: '${journey.label}. $countLabel',
+      excludeSemantics: true,
+      child: GestureDetector(
+        onTapDown: (_) => setState(() => _pressed = true),
+        onTapUp: (_) => setState(() => _pressed = false),
+        onTapCancel: () => setState(() => _pressed = false),
+        onTap: () {
+          if (widget.focused) ActHaptics.confirm();
+          widget.onTap();
+        },
+        child: AnimatedScale(
+          scale: _pressed ? 0.98 : 1,
+          duration: AppMotion.quick,
+          curve: AppMotion.enter,
+          child: GlassCard(
+            padding: EdgeInsets.zero,
+            radius: AppMetrics.heroRadius,
+            tint: widget.active && !locked ? AppRoles.action : visuals.accent,
+            glow: locked ? 0.15 : (focused ? 0.9 : 0.35),
+            color: const Color(0xFF0A1018),
+            child: Appearance(
+              style: night,
+              mode: AppearanceMode.night,
+              child: Stack(
+                fit: StackFit.expand,
+                children: [
+                  // Céu com folga dos lados: o parallax corre sem mostrar borda.
+                  Positioned(
+                    top: 0,
+                    bottom: 0,
+                    left: -36 - widget.parallax * 28,
+                    right: -36 + widget.parallax * 28,
+                    child: Hero(
+                      tag: journeySkyTag(journey),
+                      flightShuttleBuilder: journeySkyShuttle,
+                      child: RealmWorldAtmosphere(
+                        realm: journey.realm,
+                        animate: widget.animate && focused && !locked,
+                        locked: locked,
+                        featured: focused,
+                      ),
+                    ),
+                  ),
+                  const DecoratedBox(
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [
+                          Color(0x0006080C),
+                          Color(0x2206080C),
+                          Color(0xCC06080C),
+                        ],
+                        stops: [0.0, 0.5, 1.0],
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(
+                      AppSpace.lg,
+                      AppSpace.xl,
+                      AppSpace.lg,
+                      AppSpace.lg,
+                    ),
+                    child: Column(
+                      children: [
+                        _RealmMark(
+                          size: 68,
+                          glyph: journey.categories.length > 1
+                              ? visuals.glyph
+                              : TrailVisuals.forCategory(
+                                  journey.categories.single.id,
+                                ),
+                          accent: visuals.accent,
+                          ratio: info.ratio,
+                          locked: locked,
+                          featured: focused && widget.animate,
+                        ),
+                        const Spacer(),
+                        Text(
+                          journey.label,
+                          maxLines: 2,
+                          textAlign: TextAlign.center,
+                          overflow: TextOverflow.ellipsis,
+                          style: AppTypography.display(
+                            size: 30,
+                            color: night.text,
+                            height: 1.0,
+                          ),
+                        ),
+                        const SizedBox(height: AppSpace.xs + 2),
+                        Text(
+                          countLabel,
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: AppTypography.body(
+                            size: 12,
+                            weight: FontWeight.w700,
+                            color: night.textSecondary,
+                          ),
+                        ),
+                        const SizedBox(height: AppSpace.md),
+                        AnimatedOpacity(
+                          opacity: focused ? 1 : 0,
+                          duration: AppMotion.quick,
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: AppSpace.xl,
+                              vertical: AppSpace.sm + 2,
+                            ),
+                            decoration: BoxDecoration(
+                              color: locked
+                                  ? night.textSecondary.withValues(alpha: 0.2)
+                                  : AppRoles.action,
+                              borderRadius: BorderRadius.circular(99),
+                            ),
+                            child: Text(
+                              cta,
+                              style: AppTypography.body(
+                                size: 14,
+                                weight: FontWeight.w800,
+                                color: locked ? night.text : AppRoles.onAction,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
         ),
       ),
@@ -738,119 +992,145 @@ class _PathLinkState extends State<_PathLink>
   }
 }
 
-class _PathLinkPainter extends CustomPainter {
-  final Color from;
-  final Color to;
-  final bool walked;
-  final Animation<double> flow;
+/// Linha da aba Trilhas. Todo card tem o mesmo tamanho em todas as linhas;
+/// o que não cabe rola para o lado, já aberto no card onde a pessoa está.
+class _JourneyShelf extends StatefulWidget {
+  final TrailShelf shelf;
+  final List<_JourneyInfo> cards;
+  final TrailJourney? activeJourney;
+  final double inset;
+  final bool animate;
+  final ValueChanged<_JourneyInfo> onOpen;
 
-  _PathLinkPainter({
-    required this.from,
-    required this.to,
-    required this.walked,
-    required this.flow,
-  }) : super(repaint: flow);
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final cx = size.width / 2;
-    final h = size.height;
-    final alpha = walked ? 0.85 : 0.4;
-    const dot = 3.0;
-    const gap = 9.0;
-    final offset = flow.value * gap;
-    final paint = Paint()..style = PaintingStyle.fill;
-    for (var y = -gap + offset; y < h; y += gap) {
-      if (y < 0) continue;
-      final t = (y / h).clamp(0.0, 1.0);
-      final c = Color.lerp(from, to, t)!;
-      // Fica mais fino perto das pontas — parece sair de dentro do pôster.
-      final edge = math.sin(t * math.pi).clamp(0.35, 1.0);
-      paint.color = c.withValues(alpha: alpha * edge);
-      canvas.drawCircle(Offset(cx, y), dot * 0.5 * (0.7 + 0.3 * edge), paint);
-    }
-    // Marco no meio do trecho.
-    final mid = Offset(cx, h / 2);
-    final c = Color.lerp(from, to, 0.5)!;
-    canvas.drawCircle(
-      mid,
-      6,
-      Paint()
-        ..color = c.withValues(alpha: walked ? 0.28 : 0.12)
-        ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 4),
-    );
-    final diamond = Path()
-      ..moveTo(mid.dx, mid.dy - 4)
-      ..lineTo(mid.dx + 4, mid.dy)
-      ..lineTo(mid.dx, mid.dy + 4)
-      ..lineTo(mid.dx - 4, mid.dy)
-      ..close();
-    canvas.drawPath(
-      diamond,
-      Paint()..color = c.withValues(alpha: walked ? 0.95 : 0.5),
-    );
-  }
+  const _JourneyShelf({
+    required this.shelf,
+    required this.cards,
+    required this.activeJourney,
+    required this.inset,
+    required this.animate,
+    required this.onOpen,
+  });
 
   @override
-  bool shouldRepaint(covariant _PathLinkPainter old) =>
-      old.from != from || old.to != to || old.walked != walked;
+  State<_JourneyShelf> createState() => _JourneyShelfState();
 }
 
-const _romanActs = ['I', 'II', 'III', 'IV', 'V', 'VI'];
+class _JourneyShelfState extends State<_JourneyShelf> {
+  static const _gap = AppSpace.sm + 2;
 
-/// Estação da área. O anel mostra o quanto já foi caminhado;
-/// as trilhas de dentro abrem num toque.
-class _RealmPoster extends StatefulWidget {
-  final _RealmInfo info;
-  final int act;
+  ScrollController? _scroll;
+
+  @override
+  void dispose() {
+    _scroll?.dispose();
+    super.dispose();
+  }
+
+  double _initialOffset(double cardWidth, double viewport) {
+    final index = widget.cards.indexWhere(
+      (c) => c.journey == widget.activeJourney,
+    );
+    if (index <= 0) return 0;
+    final step = cardWidth + _gap;
+    final extent = widget.cards.length * step - _gap + widget.inset * 2;
+    final max = math.max(0.0, extent - viewport);
+    // Deixa um pedaço do card anterior à vista — mostra que a linha rola.
+    return (index * step - step * 0.4).clamp(0.0, max);
+  }
+
+  Widget _card(_JourneyInfo info) => _JourneyCard(
+    info: info,
+    featured: info.journey == widget.activeJourney && !info.locked,
+    animate: widget.animate,
+    onTap: () => widget.onOpen(info),
+  );
+
+  @override
+  Widget build(BuildContext context) {
+    final cards = widget.cards;
+    final height = 84 + 52 * MediaQuery.textScalerOf(context).scale(1);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: EdgeInsets.symmetric(horizontal: widget.inset),
+          child: SectionLabel(widget.shelf.label, size: 12),
+        ),
+        const SizedBox(height: AppSpace.sm),
+        LayoutBuilder(
+          builder: (context, constraints) {
+            final viewport = constraints.maxWidth;
+            final content = viewport - widget.inset * 2;
+            // ~2,4 cards à vista: o pedaço do próximo mostra que rola.
+            final width = ((content - _gap * 2) / 2.4).clamp(120.0, 180.0);
+            _scroll ??= ScrollController(
+              initialScrollOffset: _initialOffset(width, viewport),
+            );
+            return SizedBox(
+              height: height,
+              child: ListView.separated(
+                controller: _scroll,
+                scrollDirection: Axis.horizontal,
+                physics: const BouncingScrollPhysics(),
+                padding: EdgeInsets.symmetric(horizontal: widget.inset),
+                itemCount: cards.length,
+                separatorBuilder: (_, _) => const SizedBox(width: _gap),
+                itemBuilder: (_, i) =>
+                    SizedBox(width: width, child: _card(cards[i])),
+              ),
+            );
+          },
+        ),
+      ],
+    );
+  }
+}
+
+/// Card de um caminho: anel de progresso, nome e quanto já foi andado.
+class _JourneyCard extends StatefulWidget {
+  final _JourneyInfo info;
   final bool featured;
   final bool animate;
   final VoidCallback onTap;
 
-  const _RealmPoster({
+  const _JourneyCard({
     required this.info,
-    required this.act,
     required this.featured,
     required this.animate,
     required this.onTap,
   });
 
   @override
-  State<_RealmPoster> createState() => _RealmPosterState();
+  State<_JourneyCard> createState() => _JourneyCardState();
 }
 
-class _RealmPosterState extends State<_RealmPoster> {
+class _JourneyCardState extends State<_JourneyCard> {
   bool _pressed = false;
 
   @override
   Widget build(BuildContext context) {
-    final visuals = RealmVisuals.of(widget.info.realm);
-    final locked = widget.info.locked;
-    final featured = widget.featured && !locked;
+    final info = widget.info;
+    final journey = info.journey;
+    final visuals = RealmVisuals.of(journey.realm);
+    final glyph = journey.categories.length > 1
+        ? visuals.glyph
+        : TrailVisuals.forCategory(journey.categories.single.id);
+    final locked = info.locked;
+    final featured = widget.featured;
     final progressLabel = locked
         ? context.l10n.commonComingSoon
-        : widget.info.completedCount > 0
+        : info.completedCount > 0
         ? context.l10n.trailsRealmTrailsDone(
-            widget.info.completedCount,
-            widget.info.trailCount,
+            info.completedCount,
+            info.trailCount,
           )
-        : widget.info.unlockedCount > 0
-        ? context.l10n.trailsRealmOpenCount(widget.info.unlockedCount)
-        : context.l10n.trailsRealmTrailCount(widget.info.trailCount);
-    final act = widget.act - 1 < _romanActs.length
-        ? _romanActs[widget.act - 1]
-        : '${widget.act}';
-    final cta = locked
-        ? context.l10n.trailsLearnMore
-        : (featured || widget.info.completedCount > 0
-              ? context.l10n.commonContinue
-              : context.l10n.commonStart);
+        : info.unlockedCount > 0
+        ? context.l10n.trailsRealmOpenCount(info.unlockedCount)
+        : context.l10n.trailsRealmTrailCount(info.trailCount);
 
-    // Céu do reino é noturno; o texto acompanha, senão some no astro.
-    final night = AppearanceStyle.resolve(AppearanceMode.night);
     return Semantics(
       button: true,
-      label: '${widget.info.realm.label}. $progressLabel',
+      label: '${journey.label}. $progressLabel',
       excludeSemantics: true,
       child: GestureDetector(
         onTapDown: (_) => setState(() => _pressed = true),
@@ -861,129 +1141,52 @@ class _RealmPosterState extends State<_RealmPoster> {
           widget.onTap();
         },
         child: AnimatedScale(
-          scale: _pressed ? 0.985 : 1,
+          scale: _pressed ? 0.97 : 1,
           duration: AppMotion.quick,
           curve: AppMotion.enter,
-          child: GlassCard(
-            padding: EdgeInsets.zero,
-            radius: AppMetrics.heroRadius,
-            tint: visuals.accent,
-            glow: locked ? 0.15 : (featured ? 0.85 : 0.45),
-            color: const Color(0xFF0A1018),
-            child: SizedBox(
-              height: featured ? 148 : 128,
-              child: Appearance(
-                style: night,
-                mode: AppearanceMode.night,
-                child: Stack(
-                  fit: StackFit.expand,
-                  children: [
-                    Positioned(
-                      top: -36,
-                      left: 0,
-                      right: 0,
-                      height: 240,
-                      child: RealmWorldAtmosphere(
-                        realm: widget.info.realm,
-                        animate: widget.animate && !locked,
-                        locked: locked,
-                        featured: featured,
-                        terrain: false,
-                      ),
-                    ),
-                    const DecoratedBox(
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.centerLeft,
-                          end: Alignment.centerRight,
-                          colors: [
-                            Color(0x9906080C),
-                            Color(0x5506080C),
-                            Color(0x1406080C),
-                          ],
-                          stops: [0.0, 0.55, 1.0],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
-                      child: Row(
-                        children: [
-                          _RealmMark(
-                            glyph: visuals.glyph,
-                            accent: visuals.accent,
-                            ratio: widget.info.ratio,
-                            locked: locked,
-                            featured: featured && widget.animate,
-                          ),
-                          const SizedBox(width: 12),
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                SectionLabel(
-                                  '$act · ${visuals.eyebrow}',
-                                  size: 10,
-                                  color: visuals.accent,
-                                ),
-                                const SizedBox(height: 2),
-                                Text(
-                                  widget.info.realm.label,
-                                  maxLines: 1,
-                                  overflow: TextOverflow.ellipsis,
-                                  style: AppTypography.title(
-                                    size: 16,
-                                    color: night.text,
-                                  ),
-                                ),
-                                const SizedBox(height: 2),
-                                Text(
-                                  visuals.tagline,
-                                  maxLines: 1,
-                                  overflow: TextOverflow.ellipsis,
-                                  style: AppTypography.body(
-                                    size: 12,
-                                    color: night.textSecondary,
-                                  ),
-                                ),
-                                const SizedBox(height: 8),
-                                Row(
-                                  children: [
-                                    Expanded(
-                                      child: Text(
-                                        progressLabel,
-                                        maxLines: 1,
-                                        overflow: TextOverflow.ellipsis,
-                                        style: AppTypography.body(
-                                          size: 12,
-                                          weight: FontWeight.w700,
-                                          color: night.textSecondary,
-                                        ),
-                                      ),
-                                    ),
-                                    const SizedBox(width: 8),
-                                    SectionLabel(
-                                      cta,
-                                      size: 10,
-                                      color: visuals.accent,
-                                    ),
-                                    const SizedBox(width: 2),
-                                    ListChevron(
-                                      color: visuals.accent,
-                                      size: 16,
-                                    ),
-                                  ],
-                                ),
-                              ],
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
+          child: _JourneyCardFace(
+            realm: journey.realm,
+            accent: visuals.accent,
+            locked: locked,
+            featured: featured,
+            animate: widget.animate,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                _RealmMark(
+                  size: 40,
+                  glyph: glyph,
+                  accent: visuals.accent,
+                  ratio: info.ratio,
+                  locked: locked,
+                  featured: featured && widget.animate,
                 ),
-              ),
+                const Spacer(),
+                Text(
+                  journey.label,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTypography.title(
+                    size: 14,
+                    color: AppColors.textOnDark.withValues(
+                      alpha: locked ? 0.7 : 1,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: AppSpace.xs),
+                Text(
+                  progressLabel,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTypography.body(
+                    size: 11,
+                    weight: FontWeight.w700,
+                    color: featured
+                        ? AppRoles.action
+                        : AppColors.textOnDark.withValues(alpha: 0.78),
+                  ),
+                ),
+              ],
             ),
           ),
         ),
@@ -992,8 +1195,72 @@ class _RealmPosterState extends State<_RealmPoster> {
   }
 }
 
+/// Fundo do card: o céu da área (o mesmo dos pôsteres antigos), escurecido
+/// embaixo para o texto. Só o card onde a pessoa está anima o céu.
+class _JourneyCardFace extends StatelessWidget {
+  final TrailRealm realm;
+  final Color accent;
+  final bool locked;
+  final bool featured;
+  final bool animate;
+  final Widget child;
+
+  const _JourneyCardFace({
+    required this.realm,
+    required this.accent,
+    required this.locked,
+    required this.featured,
+    required this.animate,
+    required this.child,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final night = AppearanceStyle.resolve(AppearanceMode.night);
+    return GlassCard(
+      padding: EdgeInsets.zero,
+      tint: accent,
+      glow: locked ? 0.15 : (featured ? 0.85 : 0.45),
+      color: const Color(0xFF0A1018),
+      child: Appearance(
+        style: night,
+        mode: AppearanceMode.night,
+        child: Stack(
+          fit: StackFit.expand,
+          children: [
+            Positioned.fill(
+              child: RealmWorldAtmosphere(
+                realm: realm,
+                animate: animate && featured && !locked,
+                locked: locked,
+                featured: featured,
+              ),
+            ),
+            const DecoratedBox(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                    Color(0x1406080C),
+                    Color(0x3306080C),
+                    Color(0xA306080C),
+                  ],
+                  stops: [0.0, 0.45, 1.0],
+                ),
+              ),
+            ),
+            Padding(padding: const EdgeInsets.all(AppSpace.md), child: child),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
 /// Anel do reino — o progresso da área, com o glifo no centro.
 class _RealmMark extends StatelessWidget {
+  final double size;
   final CinematicGlyph glyph;
   final Color accent;
   final double ratio;
@@ -1001,6 +1268,7 @@ class _RealmMark extends StatelessWidget {
   final bool featured;
 
   const _RealmMark({
+    this.size = 52,
     required this.glyph,
     required this.accent,
     required this.ratio,
@@ -1011,9 +1279,10 @@ class _RealmMark extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final inner = size * 0.7;
     return SizedBox(
-      width: 52,
-      height: 52,
+      width: size,
+      height: size,
       child: DecoratedBox(
         decoration: BoxDecoration(
           shape: BoxShape.circle,
@@ -1039,8 +1308,8 @@ class _RealmMark extends StatelessWidget {
                 color: accent.withValues(alpha: locked ? 0.12 : 0.22),
               ),
               child: SizedBox(
-                width: 36,
-                height: 36,
+                width: inner,
+                height: inner,
                 child: Center(
                   child: CinematicIcon(
                     glyph: locked ? CinematicGlyph.lock : glyph,

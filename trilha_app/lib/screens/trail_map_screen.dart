@@ -27,6 +27,7 @@ import '../widgets/act_feel.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/genesis_trail_scenery.dart';
 import '../widgets/immersive_background.dart';
+import '../widgets/journey_sky.dart';
 import '../widgets/medal_unlock_sheet.dart';
 import '../widgets/milestone_chests.dart';
 import '../widgets/mode_emblem.dart';
@@ -48,6 +49,7 @@ class TrailMapScreen extends StatefulWidget {
 class _TrailMapScreenState extends State<TrailMapScreen> {
   final _repo = TrailRepository();
   final _scrollController = ScrollController();
+  final _currentKey = GlobalKey();
   Trail? _trail;
   bool _didAutoScroll = false;
   bool _checkingDifficulty = true;
@@ -116,20 +118,33 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     return (trail.modules.length - 1).clamp(0, trail.modules.length);
   }
 
+  /// Abre com a cena atual à vista — não nas já concluídas lá em cima.
   void _maybeScrollToActive(int moduleIndex) {
-    if (_didAutoScroll || moduleIndex <= 0) return;
+    if (_didAutoScroll) return;
     _didAutoScroll = true;
+    final still = MediaQuery.of(context).disableAnimations;
     // Espera o 1º layout assentar — animar no primeiro frame compete com paint.
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      Future<void>.delayed(const Duration(milliseconds: 280), () {
+      Future<void>.delayed(const Duration(milliseconds: 280), () async {
         if (!mounted || !_scrollController.hasClients) return;
-        final target = (160.0 + moduleIndex * 520).clamp(
-          0.0,
-          _scrollController.position.maxScrollExtent,
-        );
-        _scrollController.animateTo(
-          target,
-          duration: AppMotion.scene,
+        // Etapa longe do topo ainda não foi montada: chega perto antes.
+        if (moduleIndex > 0 && _currentKey.currentContext == null) {
+          final target = (160.0 + moduleIndex * 520).clamp(
+            0.0,
+            _scrollController.position.maxScrollExtent,
+          );
+          await _scrollController.animateTo(
+            target,
+            duration: still ? const Duration(milliseconds: 1) : AppMotion.scene,
+            curve: AppMotion.enter,
+          );
+        }
+        final current = _currentKey.currentContext;
+        if (!mounted || current == null) return;
+        await Scrollable.ensureVisible(
+          current,
+          alignment: 0.4,
+          duration: still ? Duration.zero : AppMotion.slow,
           curve: AppMotion.enter,
         );
       });
@@ -249,19 +264,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     final mode = progress.settings.appearanceMode;
     final appearance = AppearanceStyle.resolve(mode);
 
-    final eyebrow = _useThematicMap && trail.modules.isNotEmpty
-        ? context.l10n.trailsStage(_roman(activeModule + 1))
-        : null;
-    final headerTitle = _useThematicMap && trail.modules.isNotEmpty
-        ? trail.modules[activeModule.clamp(0, trail.modules.length - 1)].title
-        : trail.localizedTitle;
-    final headerGlyph = _useThematicMap && trail.modules.isNotEmpty
-        ? CinematicGlyphResolver.forModule(
-            trail
-                .modules[activeModule.clamp(0, trail.modules.length - 1)]
-                .title,
-          )
-        : CinematicGlyphResolver.forTrail(trail.slug);
+    final currentSlug = TrailProgress.getCurrentMission(trail, completed)?.slug;
 
     return Appearance(
       mode: mode,
@@ -273,6 +276,11 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
           body: ImmersiveBackground(
             appearance: appearance,
             frameChild: false,
+            // Mesmo fundo da tela do caminho; o céu da área voa de lá pra cá.
+            background: JourneySkyBackdrop(
+              journey: trail.journey,
+              appearance: appearance,
+            ),
             child: Column(
               children: [
                 Padding(
@@ -282,25 +290,27 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                     AppSpace.screen,
                     0,
                   ),
+                  // Nome da trilha no topo; a etapa já tem o card dela logo
+                  // abaixo (antes os dois diziam "Etapa I · Abraão").
                   child: TopBar(
                     inline: true,
                     immersive: true,
-                    title: headerTitle,
-                    subtitle:
-                        eyebrow ??
-                        (_fromBank
-                            ? TrailProgress.activeModeProgressLabel(
-                                clearedModes: cleared,
-                                activeDifficultyId: difficultyId,
-                                liveDone: prog.done,
-                                total: prog.total,
-                              )
-                            : context.l10n.trailsScenesShort(
-                                prog.done,
-                                prog.total,
-                              )),
+                    title: trail.localizedTitle,
+                    subtitle: _useThematicMap
+                        ? trail.journey.label
+                        : (_fromBank
+                              ? TrailProgress.activeModeProgressLabel(
+                                  clearedModes: cleared,
+                                  activeDifficultyId: difficultyId,
+                                  liveDone: prog.done,
+                                  total: prog.total,
+                                )
+                              : context.l10n.trailsScenesShort(
+                                  prog.done,
+                                  prog.total,
+                                )),
                     onBack: () => Navigator.pop(context),
-                    leadingGlyph: headerGlyph,
+                    leadingGlyph: CinematicGlyphResolver.forTrail(trail.slug),
                     // TopBar = chrome neutro; cor do modo/área só no conteúdo.
                   ),
                 ),
@@ -404,6 +414,8 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                             onMissionTap: (slug) => Navigator.of(
                               context,
                             ).pushNamed('/lesson', arguments: slug),
+                            currentKey: _currentKey,
+                            currentSlug: currentSlug,
                           );
 
                           return GenesisModuleScenery(
@@ -440,12 +452,6 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
         ),
       ),
     );
-  }
-
-  static String _roman(int n) {
-    const map = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X'];
-    if (n >= 1 && n <= map.length) return map[n - 1];
-    return '$n';
   }
 
   Widget? _trailMedalChip(ProgressService progress, Trail trail) {

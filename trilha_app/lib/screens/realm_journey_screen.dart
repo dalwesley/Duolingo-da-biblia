@@ -19,19 +19,20 @@ import '../widgets/app_sheet.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/journey_path.dart';
+import '../widgets/journey_sky.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/cloud_mascot.dart';
 import '../widgets/ui_primitives.dart';
 import 'trail_map_screen.dart';
 
-/// Peregrinação cinematográfica — trilhas dentro de um reino.
+/// Peregrinação cinematográfica — as trilhas de um card da aba Trilhas.
 class RealmJourneyScreen extends StatefulWidget {
-  final TrailRealm realm;
+  final TrailJourney journey;
   final List<Trail> allTrails;
 
   const RealmJourneyScreen({
     super.key,
-    required this.realm,
+    required this.journey,
     required this.allTrails,
   });
 
@@ -98,10 +99,11 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
   @override
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
-    final visuals = RealmVisuals.of(widget.realm);
+    final journey = widget.journey;
+    final visuals = RealmVisuals.of(journey.realm);
     final items = realmJourneyItems(
       context,
-      realm: widget.realm,
+      journey: journey,
       allTrails: widget.allTrails,
       progress: progress,
     );
@@ -121,6 +123,8 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
       mode: mode,
       style: appearance,
       frameBody: false,
+      // Fundo das abas com o céu da área no topo (pousa do pôster).
+      background: JourneySkyBackdrop(journey: journey, appearance: appearance),
       body: Column(
         children: [
           Padding(
@@ -133,8 +137,11 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
             child: TopBar(
               inline: true,
               immersive: true,
-              title: widget.realm.label,
-              subtitle: visuals.eyebrow,
+              title: journey.label,
+              // Card de uma categoria só: a área vira o subtítulo.
+              subtitle: journey.categories.length > 1
+                  ? visuals.eyebrow
+                  : journey.shelf.label,
               onBack: () => Navigator.pop(context),
               leadingGlyph: CinematicGlyph.path,
             ),
@@ -160,6 +167,7 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
                         glow: visuals.glow,
                         currentKey: _currentKey,
                         onTap: _onNodeTap,
+                        phaseCards: journey.categories.length > 1,
                       ),
                     ),
                   ),
@@ -173,24 +181,23 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
   }
 }
 
-/// Trilhas de uma área na ordem do cânon, com o estado de cada uma.
+/// Trilhas de um card na ordem do cânon, com o estado de cada uma.
 List<JourneyPathItem> realmJourneyItems(
   BuildContext context, {
-  required TrailRealm realm,
+  required TrailJourney journey,
   required List<Trail> allTrails,
   required ProgressService progress,
 }) {
   final completed = progress.completedMissions;
   final clearedTrailModes = progress.clearedTrailModes;
   final trailDifficulties = progress.trailDifficulties;
-  final realmTrails =
-      allTrails.where((t) => TrailRealm.fromId(t.realmId) == realm).toList()
-        ..sort((a, b) {
-          final ca = TrailCategory.fromId(a.categoryId).order;
-          final cb = TrailCategory.fromId(b.categoryId).order;
-          if (ca != cb) return ca.compareTo(cb);
-          return a.order.compareTo(b.order);
-        });
+  final realmTrails = allTrails.where((t) => t.journey == journey).toList()
+    ..sort((a, b) {
+      final ca = TrailCategory.fromId(a.categoryId).order;
+      final cb = TrailCategory.fromId(b.categoryId).order;
+      if (ca != cb) return ca.compareTo(cb);
+      return a.order.compareTo(b.order);
+    });
 
   var sawCurrent = false;
   final items = <JourneyPathItem>[];

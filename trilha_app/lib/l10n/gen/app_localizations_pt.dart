@@ -419,6 +419,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get categoryApocalipseTitle => 'Apocalipse ou Revelação';
 
   @override
+  String get categoryCristologiaBlurb =>
+      'Quem é Jesus: Deus e homem, profeta, sacerdote e rei. A trilha percorre a pessoa e a obra dele — encarnação, cruz, ressurreição e senhorio.';
+
+  @override
   String get categoryCristologiaTitle => 'Cristologia';
 
   @override
@@ -437,6 +441,10 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get categoryEvangelhosTitle => 'Evangelhos';
+
+  @override
+  String get categoryHermeneuticaBlurb =>
+      'Como ler a Bíblia com atenção e fidelidade. O texto no seu contexto, o tipo de livro e o lugar de Cristo na história toda, sem forçar um versículo isolado.';
 
   @override
   String get categoryHermeneuticaTitle => 'Hermenêutica';
@@ -466,10 +474,28 @@ class AppLocalizationsPt extends AppLocalizations {
   String get categoryIntertestamentarioTitle => 'Período intertestamentário';
 
   @override
+  String get categoryLinguasBlurb =>
+      'Um primeiro caminho no hebraico e no grego da Bíblia: alfabeto, raízes e como uma tradução nasce. O objetivo é ler com mais cuidado, sem substituir a Bíblia em português.';
+
+  @override
   String get categoryLinguasTitle => 'Línguas originais';
 
   @override
   String get categoryOracaoTitle => 'Oração';
+
+  @override
+  String get categoryPanoramaBlurb =>
+      'A Bíblia como uma história só, da criação à nova criação. Antes de entrar livro a livro, esta trilha mostra o arco, a ordem dos livros e o lugar de cada parte.';
+
+  @override
+  String get categoryPanoramaTitle => 'Panorama';
+
+  @override
+  String get categoryParabolasMilagresBlurb =>
+      'O ensino e os sinais de Jesus. As parábolas mostram como é o Reino; os milagres revelam quem ele é — pão, vista, tempestade, vida — em eco com o Antigo Testamento.';
+
+  @override
+  String get categoryParabolasMilagresTitle => 'Parábolas e milagres';
 
   @override
   String get categoryPentateucoBlurb =>
@@ -477,6 +503,13 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get categoryPentateucoTitle => 'Pentateuco';
+
+  @override
+  String get categoryPersonagensBlurb =>
+      'Vidas que carregam a história: Abraão, Moisés, Davi, os profetas, Maria, Pedro, Paulo. Cada trilha segue uma pessoa por vários livros, com suas falhas, e o modo como essa vida aponta para Cristo.';
+
+  @override
+  String get categoryPersonagensTitle => 'Personagens';
 
   @override
   String get categoryPoeticosBlurb =>
@@ -500,7 +533,25 @@ class AppLocalizationsPt extends AppLocalizations {
   String get categoryProfetasMenoresTitle => 'Profetas menores';
 
   @override
+  String get categoryPromessaCumprimentoBlurb =>
+      'Promessas que Deus faz no Antigo Testamento e o modo como Jesus as cumpre. Descendência, páscoa, rei davídico, servo sofredor e a nova aliança, lidos ao lado do Evangelho.';
+
+  @override
+  String get categoryPromessaCumprimentoTitle => 'Promessa e cumprimento';
+
+  @override
+  String get categorySistematicaBlurb =>
+      'A doutrina reunida a partir da Bíblia inteira: Deus, o ser humano, a salvação, o Espírito, a igreja e o fim da história — e o fio que liga tudo, da criação à nova criação.';
+
+  @override
   String get categorySistematicaTitle => 'Sistemática e dogmática';
+
+  @override
+  String get categoryTemasBiblicosBlurb =>
+      'Fios que atravessam a Escritura inteira: aliança, reino, presença de Deus, santidade, justiça, exílio e volta. Cada trilha acompanha um tema, de Gênesis ao Apocalipse.';
+
+  @override
+  String get categoryTemasBiblicosTitle => 'Temas bíblicos';
 
   @override
   String get celebrationBackHome => 'Voltar ao início';
@@ -2878,6 +2929,9 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get journeyPlay => 'Jogar';
+
+  @override
+  String get journeySabedoriaTitle => 'Sabedoria e Salmos';
 
   @override
   String journeyScenesLeft(int count) {
@@ -5858,6 +5912,13 @@ class AppLocalizationsPt extends AppLocalizations {
   String get paywallPerkPlansTitle => 'Planos de leitura';
 
   @override
+  String get paywallPerkRecognitionBody =>
+      'Veja quem da caravana tocou no coração da sua cena e das suas medalhas.';
+
+  @override
+  String get paywallPerkRecognitionTitle => 'Quem reconheceu';
+
+  @override
   String get paywallPerkReinforceBody =>
       'No perfil, o tipo de pergunta que você mais erra. Depois, um treino só com esse tipo.';
 
@@ -6069,7 +6130,7 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String get pilgrimCollections => 'Coleções';
+  String get pilgrimCollections => 'Cofre';
 
   @override
   String pilgrimCompletedOn(String date) {
@@ -6995,6 +7056,17 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String recognitionCardHearts(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count corações na sua jornada',
+      one: '1 coração na sua jornada',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String recognitionDaysAgo(int count) {
     return 'Há $count dias';
   }
@@ -7032,7 +7104,21 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
+  String recognitionHeartOnMedal(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count corações nesta medalha',
+      one: '1 coração nesta medalha',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get recognitionHomeSeeWho => 'Ver quem reconheceu';
+
+  @override
+  String get recognitionHomeTitleAnonymous => 'Alguém reconheceu sua jornada';
 
   @override
   String get recognitionHomeTitleMany => 'Reconheceram sua jornada';
@@ -7124,6 +7210,9 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get recognitionWhichMedal => 'Qual medalha você viu?';
+
+  @override
+  String get recognitionWhoLockedBody => 'O Peregrino+ mostra quem foi.';
 
   @override
   String get recognitionWhoTitle => 'Quem reconheceu';
@@ -8442,6 +8531,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get trailsInProgress => 'Em andamento';
 
   @override
+  String get trailsJourneySoonBody =>
+      'Estas trilhas ainda estão sendo preparadas.';
+
+  @override
   String trailsLabeledScenesOf(String label, int done, int total) {
     String _temp0 = intl.Intl.pluralLogic(
       total,
@@ -8539,6 +8632,9 @@ class AppLocalizationsPt extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get trailsShelfBible => 'Bíblia';
 
   @override
   String trailsStage(String roman) {

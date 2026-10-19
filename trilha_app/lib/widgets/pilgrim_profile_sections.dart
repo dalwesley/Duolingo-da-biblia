@@ -20,6 +20,7 @@ import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 import 'character_seals_strip.dart';
 import 'living_seed_card.dart';
+import 'juntos_chrome.dart';
 import 'relic_panel.dart';
 import 'streak_week.dart';
 import 'ui_primitives.dart';
@@ -145,6 +146,65 @@ Future<CaravanPilgrimProfile> loadEnrichedVisitorProfile({
   }
 }
 
+/// Selos e medalhas no mesmo cofre: uma tampa dourada, duas gavetas.
+class PilgrimChest extends StatefulWidget {
+  final Widget seals;
+  final Widget medals;
+
+  const PilgrimChest({super.key, required this.seals, required this.medals});
+
+  @override
+  State<PilgrimChest> createState() => _PilgrimChestState();
+}
+
+class _PilgrimChestState extends State<PilgrimChest> {
+  var _seals = false;
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = context.l10n;
+    return RelicPanel(
+      accent: AppRoles.reward,
+      glow: 0.7,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          RelicChapter(
+            title: l10n.pilgrimCollections,
+            accent: AppRoles.reward,
+            divided: false,
+            action: PrivacyEye(
+              sections: {
+                _seals
+                    ? CaravanProfileSection.trails
+                    : CaravanProfileSection.medals,
+              },
+              label: _seals ? l10n.pilgrimSealsAndTrails : l10n.medalVaultTitle,
+            ),
+          ),
+          const SizedBox(height: AppSpace.md),
+          AppSegmentedTabs(
+            index: _seals ? 1 : 0,
+            accent: AppRoles.reward,
+            onChanged: (i) => setState(() => _seals = i == 1),
+            items: [
+              (
+                label: l10n.medalVaultTitle,
+                glyph: null,
+                mark: null,
+                alert: false,
+              ),
+              (label: l10n.sealsTitle, glyph: null, mark: null, alert: false),
+            ],
+          ),
+          const SizedBox(height: AppSpace.lg),
+          if (_seals) widget.seals else widget.medals,
+        ],
+      ),
+    );
+  }
+}
+
 class PilgrimProfileDetailSections extends StatelessWidget {
   final CaravanPilgrimProfile profile;
   final LeagueEntry entry;
@@ -196,35 +256,30 @@ class PilgrimProfileDetailSections extends StatelessWidget {
     }
 
     void addCollections() {
-      if (collectionsFirst && isOwner) {
-        add(
-          Align(
-            alignment: Alignment.centerLeft,
-            child: SectionLabel(L10n.current.pilgrimCollections),
-          ),
-        );
-      }
-
       final acquiredSeals = CharacterSeals.unlocked(profile.completedMissions);
-      if (_show(CaravanProfileSection.trails) &&
-          (isOwner || acquiredSeals.isNotEmpty)) {
-        add(
-          CharacterSealsStrip(
-            completed: profile.completedMissions,
-            acquiredOnly: !isOwner,
-          ),
-        );
-      }
+      final showSeals =
+          _show(CaravanProfileSection.trails) &&
+          (isOwner || acquiredSeals.isNotEmpty);
+      final showMedals = _show(CaravanProfileSection.medals);
+      final seals = CharacterSealsStrip(
+        completed: profile.completedMissions,
+        acquiredOnly: !isOwner,
+        embedded: showMedals,
+      );
+      final medals = PilgrimMedalVaultsPanel(
+        profile: profile,
+        evalContext: PilgrimMedalEvalContext.fromProfile(profile),
+        recognizeToUid: isOwner ? null : profile.uid,
+        onStartWalking: isOwner ? onStartWalking : null,
+        embedded: showSeals,
+      );
 
-      if (_show(CaravanProfileSection.medals)) {
-        add(
-          PilgrimMedalVaultsPanel(
-            profile: profile,
-            evalContext: PilgrimMedalEvalContext.fromProfile(profile),
-            recognizeToUid: isOwner ? null : profile.uid,
-            onStartWalking: isOwner ? onStartWalking : null,
-          ),
-        );
+      if (showSeals && showMedals) {
+        add(PilgrimChest(seals: seals, medals: medals));
+      } else if (showSeals) {
+        add(seals);
+      } else if (showMedals) {
+        add(medals);
       }
 
       if (collectionsFirst && _show(CaravanProfileSection.bible)) {
@@ -941,7 +996,7 @@ class PilgrimTrailPath extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final complete = trail.isComplete;
-    final accent = complete ? AppRoles.success : a.chrome;
+    final accent = complete ? AppRoles.reward : AppRoles.presence;
     final l10n = context.l10n;
     final subtitle = trail.description.trim().isEmpty
         ? l10n.pilgrimScenesOf(trail.missionsDone, trail.missionsTotal)
@@ -951,6 +1006,7 @@ class PilgrimTrailPath extends StatelessWidget {
       padding: EdgeInsets.only(bottom: compact ? 10 : 0),
       child: RelicPanel(
         accent: accent,
+        glow: compact ? null : 0.45,
         padding: compact
             ? AppMetrics.cardPaddingCompact
             : AppMetrics.cardPadding,
@@ -986,7 +1042,7 @@ class PilgrimTrailPath extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 12),
-            AppProgressBar(value: trail.progress, color: accent, height: 6),
+            AppProgressBar(value: trail.progress, color: accent),
             if (trail.modules.length >= 2) ...[
               const SizedBox(height: 16),
               _PilgrimHorizontalTrail(
@@ -1045,7 +1101,9 @@ class _OpenTrailRow extends StatelessWidget {
                 style: AppTypography.label(
                   size: 11,
                   letterSpacing: 0.8,
-                  color: a.textSecondary,
+                  color: trail.isComplete
+                      ? AppRoles.reward
+                      : AppRoles.presence,
                 ),
               ),
             ],
@@ -1061,7 +1119,7 @@ class _OpenTrailRow extends StatelessWidget {
           const SizedBox(height: 8),
           AppProgressBar(
             value: trail.progress,
-            color: trail.isComplete ? AppRoles.success : a.chrome,
+            color: trail.isComplete ? AppRoles.reward : AppRoles.presence,
             height: 6,
           ),
         ],

@@ -172,6 +172,13 @@ class PilgrimTrackState {
 
   int get unlockedLevelCount => hasStarted ? levelIndex + 1 : 0;
 
+  /// Ids dos degraus já acesos — cada um pode receber um coração.
+  Set<String> get earnedMedalIds {
+    if (!hasStarted || track.levels.isEmpty) return const {};
+    final last = levelIndex.clamp(0, track.levels.length - 1);
+    return {for (var i = 0; i <= last; i++) track.levels[i].id};
+  }
+
   double get progress =>
       track.levels.isEmpty ? 0 : unlockedLevelCount / track.levels.length;
 }

@@ -8,6 +8,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 import 'embossed_glyph.dart';
+import 'recognition_history_sheet.dart';
 
 /// Halo radial + raios suaves — fundo de sheets e tiles de medalha.
 class MedalSpotlightPainter extends CustomPainter {
@@ -574,12 +575,16 @@ class MedalTrackEmblem extends StatelessWidget {
   final bool compact;
   final bool featured;
 
+  /// Degraus já acesos, para o número de corações no próprio cofre.
+  final Set<String>? heartKeys;
+
   const MedalTrackEmblem({
     super.key,
     required this.trackState,
     required this.onTap,
     this.compact = false,
     this.featured = false,
+    this.heartKeys,
   });
 
   @override
@@ -631,7 +636,21 @@ class MedalTrackEmblem extends StatelessWidget {
                     accent: started ? accent : a.textMuted(0.25),
                     size: halo,
                     stroke: 2.5,
-                    child: MedalVaultMedallion(tile: tile, size: diameter),
+                    child: Stack(
+                      clipBehavior: Clip.none,
+                      children: [
+                        MedalVaultMedallion(tile: tile, size: diameter),
+                        if (heartKeys != null)
+                          Positioned(
+                            right: -2,
+                            bottom: -2,
+                            child: ReceivedHeartBadge(
+                              subjectKeys: heartKeys!,
+                              compact: true,
+                            ),
+                          ),
+                      ],
+                    ),
                   ),
                 ),
                 const SizedBox(height: 6),

@@ -766,6 +766,12 @@ abstract class AppLocalizations {
   /// **'Apocalipse ou Revelação'**
   String get categoryApocalipseTitle;
 
+  /// No description provided for @categoryCristologiaBlurb.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quem é Jesus: Deus e homem, profeta, sacerdote e rei. A trilha percorre a pessoa e a obra dele — encarnação, cruz, ressurreição e senhorio.'**
+  String get categoryCristologiaBlurb;
+
   /// No description provided for @categoryCristologiaTitle.
   ///
   /// In pt, this message translates to:
@@ -801,6 +807,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Evangelhos'**
   String get categoryEvangelhosTitle;
+
+  /// No description provided for @categoryHermeneuticaBlurb.
+  ///
+  /// In pt, this message translates to:
+  /// **'Como ler a Bíblia com atenção e fidelidade. O texto no seu contexto, o tipo de livro e o lugar de Cristo na história toda, sem forçar um versículo isolado.'**
+  String get categoryHermeneuticaBlurb;
 
   /// No description provided for @categoryHermeneuticaTitle.
   ///
@@ -850,6 +862,12 @@ abstract class AppLocalizations {
   /// **'Período intertestamentário'**
   String get categoryIntertestamentarioTitle;
 
+  /// No description provided for @categoryLinguasBlurb.
+  ///
+  /// In pt, this message translates to:
+  /// **'Um primeiro caminho no hebraico e no grego da Bíblia: alfabeto, raízes e como uma tradução nasce. O objetivo é ler com mais cuidado, sem substituir a Bíblia em português.'**
+  String get categoryLinguasBlurb;
+
   /// No description provided for @categoryLinguasTitle.
   ///
   /// In pt, this message translates to:
@@ -862,6 +880,30 @@ abstract class AppLocalizations {
   /// **'Oração'**
   String get categoryOracaoTitle;
 
+  /// No description provided for @categoryPanoramaBlurb.
+  ///
+  /// In pt, this message translates to:
+  /// **'A Bíblia como uma história só, da criação à nova criação. Antes de entrar livro a livro, esta trilha mostra o arco, a ordem dos livros e o lugar de cada parte.'**
+  String get categoryPanoramaBlurb;
+
+  /// No description provided for @categoryPanoramaTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Panorama'**
+  String get categoryPanoramaTitle;
+
+  /// No description provided for @categoryParabolasMilagresBlurb.
+  ///
+  /// In pt, this message translates to:
+  /// **'O ensino e os sinais de Jesus. As parábolas mostram como é o Reino; os milagres revelam quem ele é — pão, vista, tempestade, vida — em eco com o Antigo Testamento.'**
+  String get categoryParabolasMilagresBlurb;
+
+  /// No description provided for @categoryParabolasMilagresTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Parábolas e milagres'**
+  String get categoryParabolasMilagresTitle;
+
   /// No description provided for @categoryPentateucoBlurb.
   ///
   /// In pt, this message translates to:
@@ -873,6 +915,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Pentateuco'**
   String get categoryPentateucoTitle;
+
+  /// No description provided for @categoryPersonagensBlurb.
+  ///
+  /// In pt, this message translates to:
+  /// **'Vidas que carregam a história: Abraão, Moisés, Davi, os profetas, Maria, Pedro, Paulo. Cada trilha segue uma pessoa por vários livros, com suas falhas, e o modo como essa vida aponta para Cristo.'**
+  String get categoryPersonagensBlurb;
+
+  /// No description provided for @categoryPersonagensTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Personagens'**
+  String get categoryPersonagensTitle;
 
   /// No description provided for @categoryPoeticosBlurb.
   ///
@@ -910,11 +964,41 @@ abstract class AppLocalizations {
   /// **'Profetas menores'**
   String get categoryProfetasMenoresTitle;
 
+  /// No description provided for @categoryPromessaCumprimentoBlurb.
+  ///
+  /// In pt, this message translates to:
+  /// **'Promessas que Deus faz no Antigo Testamento e o modo como Jesus as cumpre. Descendência, páscoa, rei davídico, servo sofredor e a nova aliança, lidos ao lado do Evangelho.'**
+  String get categoryPromessaCumprimentoBlurb;
+
+  /// No description provided for @categoryPromessaCumprimentoTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Promessa e cumprimento'**
+  String get categoryPromessaCumprimentoTitle;
+
+  /// No description provided for @categorySistematicaBlurb.
+  ///
+  /// In pt, this message translates to:
+  /// **'A doutrina reunida a partir da Bíblia inteira: Deus, o ser humano, a salvação, o Espírito, a igreja e o fim da história — e o fio que liga tudo, da criação à nova criação.'**
+  String get categorySistematicaBlurb;
+
   /// No description provided for @categorySistematicaTitle.
   ///
   /// In pt, this message translates to:
   /// **'Sistemática e dogmática'**
   String get categorySistematicaTitle;
+
+  /// No description provided for @categoryTemasBiblicosBlurb.
+  ///
+  /// In pt, this message translates to:
+  /// **'Fios que atravessam a Escritura inteira: aliança, reino, presença de Deus, santidade, justiça, exílio e volta. Cada trilha acompanha um tema, de Gênesis ao Apocalipse.'**
+  String get categoryTemasBiblicosBlurb;
+
+  /// No description provided for @categoryTemasBiblicosTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Temas bíblicos'**
+  String get categoryTemasBiblicosTitle;
 
   /// No description provided for @celebrationBackHome.
   ///
@@ -4521,6 +4605,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Jogar'**
   String get journeyPlay;
+
+  /// No description provided for @journeySabedoriaTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sabedoria e Salmos'**
+  String get journeySabedoriaTitle;
 
   /// No description provided for @journeyScenesLeft.
   ///
@@ -9093,6 +9183,18 @@ abstract class AppLocalizations {
   /// **'Planos de leitura'**
   String get paywallPerkPlansTitle;
 
+  /// No description provided for @paywallPerkRecognitionBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Veja quem da caravana tocou no coração da sua cena e das suas medalhas.'**
+  String get paywallPerkRecognitionBody;
+
+  /// No description provided for @paywallPerkRecognitionTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quem reconheceu'**
+  String get paywallPerkRecognitionTitle;
+
   /// No description provided for @paywallPerkReinforceBody.
   ///
   /// In pt, this message translates to:
@@ -9366,7 +9468,7 @@ abstract class AppLocalizations {
   /// No description provided for @pilgrimCollections.
   ///
   /// In pt, this message translates to:
-  /// **'Coleções'**
+  /// **'Cofre'**
   String get pilgrimCollections;
 
   /// No description provided for @pilgrimCompletedOn.
@@ -10791,6 +10893,12 @@ abstract class AppLocalizations {
   /// **'{a} e {b}'**
   String recognitionAndTwo(String a, String b);
 
+  /// No description provided for @recognitionCardHearts.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 coração na sua jornada} other{{count} corações na sua jornada}}'**
+  String recognitionCardHearts(int count);
+
   /// No description provided for @recognitionDaysAgo.
   ///
   /// In pt, this message translates to:
@@ -10845,11 +10953,23 @@ abstract class AppLocalizations {
   /// **'{name} reconheceu sua cena'**
   String recognitionHeadlineWalk(String name);
 
+  /// No description provided for @recognitionHeartOnMedal.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 coração nesta medalha} other{{count} corações nesta medalha}}'**
+  String recognitionHeartOnMedal(int count);
+
   /// No description provided for @recognitionHomeSeeWho.
   ///
   /// In pt, this message translates to:
   /// **'Ver quem reconheceu'**
   String get recognitionHomeSeeWho;
+
+  /// No description provided for @recognitionHomeTitleAnonymous.
+  ///
+  /// In pt, this message translates to:
+  /// **'Alguém reconheceu sua jornada'**
+  String get recognitionHomeTitleAnonymous;
 
   /// No description provided for @recognitionHomeTitleMany.
   ///
@@ -10958,6 +11078,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Qual medalha você viu?'**
   String get recognitionWhichMedal;
+
+  /// No description provided for @recognitionWhoLockedBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'O Peregrino+ mostra quem foi.'**
+  String get recognitionWhoLockedBody;
 
   /// No description provided for @recognitionWhoTitle.
   ///
@@ -13107,6 +13233,12 @@ abstract class AppLocalizations {
   /// **'Em andamento'**
   String get trailsInProgress;
 
+  /// No description provided for @trailsJourneySoonBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Estas trilhas ainda estão sendo preparadas.'**
+  String get trailsJourneySoonBody;
+
   /// label is a study mode name or a trail title
   ///
   /// In pt, this message translates to:
@@ -13184,6 +13316,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'{total, plural, =1{{done}/1 cena} other{{done}/{total} cenas}}'**
   String trailsScenesShort(int done, int total);
+
+  /// No description provided for @trailsShelfBible.
+  ///
+  /// In pt, this message translates to:
+  /// **'Bíblia'**
+  String get trailsShelfBible;
 
   /// Module number in Roman numerals, e.g. Etapa II
   ///

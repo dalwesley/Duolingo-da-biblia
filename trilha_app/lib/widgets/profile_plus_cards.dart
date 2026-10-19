@@ -40,10 +40,16 @@ class ProfileAccuracyCard extends StatelessWidget {
     final weak = stats.weakest;
 
     return GlassCard(
+      tint: AppRoles.presence,
+      glow: 0.4,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          RelicChapter(title: l10n.profileAccuracyHeader, divided: false),
+          RelicChapter(
+            title: l10n.profileAccuracyHeader,
+            divided: false,
+            accent: AppRoles.presence,
+          ),
           const SizedBox(height: AppSpace.sm),
           Text(
             stats.answered == 0
@@ -99,7 +105,11 @@ class ProfilePlusTeaser extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final l10n = context.l10n;
+    // Palco dourado no máximo: entre os cards azuis do perfil, a oferta
+    // precisa ler como o único lugar que pede a assinatura.
     return GlassCard(
+      tint: AppRoles.reward,
+      glow: 1,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -107,9 +117,8 @@ class ProfilePlusTeaser extends StatelessWidget {
             children: [
               CinematicIcon(
                 glyph: CinematicGlyph.crown,
-                size: AppMetrics.iconLg,
-                accent: a.chrome,
-                framed: false,
+                size: AppMetrics.leadingIcon,
+                accent: AppRoles.reward,
               ),
               const SizedBox(width: AppSpace.md),
               Expanded(
@@ -173,7 +182,10 @@ class _MeterRow extends StatelessWidget {
           ],
         ),
         const SizedBox(height: 6),
-        AppProgressBar(value: empty ? 0 : accuracy.percent / 100),
+        AppProgressBar(
+          value: empty ? 0 : accuracy.percent / 100,
+          color: AppRoles.presence,
+        ),
       ],
     );
   }

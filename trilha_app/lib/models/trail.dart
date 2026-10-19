@@ -1,5 +1,6 @@
 import '../l10n/content_overlay.dart';
 import 'exercise.dart';
+import 'trail_catalog.dart';
 
 export 'exercise.dart';
 
@@ -10,7 +11,10 @@ class QuestionOption {
   const QuestionOption({required this.id, required this.text});
 
   factory QuestionOption.fromJson(Map<String, dynamic> json) {
-    return QuestionOption(id: json['id'] as String, text: json['text'] as String);
+    return QuestionOption(
+      id: json['id'] as String,
+      text: json['text'] as String,
+    );
   }
 }
 
@@ -55,19 +59,23 @@ class Mission {
   final String type;
   final int stepsReward;
   final List<Question> questions;
+
   /// Learning Engine v2 — preservado no modelo para admin/legado;
   /// o runtime monta a sessão só pelo banco (`SessionComposer`).
   final List<Exercise> exercises;
   final String? objective;
   final String? centralInsight;
+
   /// Entrada bíblica (≤ ~5 s): verso + nota de contexto/curiosidade + fio de conexão.
   final String? hookRef;
   final String? hookVerse;
   final String? hookNote;
   final String? hookThread;
+
   /// Pergunta aberta que esta missão responde — plantada ontem, aberta no Eco.
   /// Escrita à mão; sem este campo a celebração fica no gancho clássico.
   final String? echoQuestion;
+
   /// Banco de atos — se vazio, usa [slug] / a trilha da sessão.
   final String? bankSection;
   final String? bankTrailSlug;
@@ -118,7 +126,8 @@ class Mission {
       ContentOverlay.instance.missionField(slug, 'hookNote') ?? hookNote;
 
   String? get localizedEchoQuestion =>
-      ContentOverlay.instance.missionField(slug, 'echoQuestion') ?? echoQuestion;
+      ContentOverlay.instance.missionField(slug, 'echoQuestion') ??
+      echoQuestion;
 
   factory Mission.fromJson(Map<String, dynamic> json) {
     final entrance = json['entrance'];
@@ -133,7 +142,8 @@ class Mission {
       subtitle: json['subtitle'] as String? ?? '',
       intro: json['intro'] as String? ?? '',
       type: json['type'] as String? ?? 'lesson',
-      stepsReward: (json['stepsReward'] as int?) ?? (json['xpReward'] as int?) ?? 50,
+      stepsReward:
+          (json['stepsReward'] as int?) ?? (json['xpReward'] as int?) ?? 50,
       questions: (json['questions'] as List? ?? [])
           .map((e) => Question.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -144,7 +154,8 @@ class Mission {
       objective: json['objective'] as String?,
       centralInsight: json['centralInsight'] as String?,
       hookRef: json['hookRef'] as String? ?? entranceMap?['ref'] as String?,
-      hookVerse: json['hookVerse'] as String? ?? entranceMap?['verse'] as String?,
+      hookVerse:
+          json['hookVerse'] as String? ?? entranceMap?['verse'] as String?,
       hookNote: json['hookNote'] as String? ?? entranceMap?['note'] as String?,
       hookThread:
           json['hookThread'] as String? ?? entranceMap?['thread'] as String?,
@@ -163,11 +174,14 @@ class Mission {
 class TrailModule {
   final String title;
   final String icon;
+
   /// Chave do banco de perguntas (ex.: `abraao`, `opressao`).
   final String? section;
   final List<Mission> missions;
+
   /// Índice do módulo na trilha — usado pelo overlay (`slug:index`).
   final int index;
+
   /// Slug da trilha pai — preenchido em [Trail.fromJson].
   final String trailSlug;
 
@@ -233,6 +247,10 @@ class Trail {
 
   String get localizedTitle =>
       ContentOverlay.instance.trailField(slug, 'title') ?? title;
+
+  /// Card da aba Trilhas onde esta trilha mora.
+  TrailJourney get journey =>
+      TrailJourney.forTrail(realmId: realmId, categoryId: categoryId);
 
   String get localizedDescription =>
       ContentOverlay.instance.trailField(slug, 'description') ?? description;

@@ -31,6 +31,12 @@ const REALMS = [
 ];
 
 const CATEGORIES = [
+  // Bíblia toda: gravadas no AT, cada uma vira um card próprio no app.
+  { value: 'panorama', label: 'Panorama (Bíblia toda)', realm: 'antigo-testamento' },
+  { value: 'personagens', label: 'Personagens (Bíblia toda)', realm: 'antigo-testamento' },
+  { value: 'promessa-cumprimento', label: 'Promessa e cumprimento (Bíblia toda)', realm: 'antigo-testamento' },
+  { value: 'temas-biblicos', label: 'Temas bíblicos (Bíblia toda)', realm: 'antigo-testamento' },
+  { value: 'parabolas-milagres', label: 'Parábolas e milagres (Bíblia toda)', realm: 'antigo-testamento' },
   { value: 'pentateuco', label: 'Pentateuco', realm: 'antigo-testamento' },
   { value: 'historicos-at', label: 'Históricos (AT)', realm: 'antigo-testamento' },
   { value: 'poeticos', label: 'Poéticos', realm: 'antigo-testamento' },

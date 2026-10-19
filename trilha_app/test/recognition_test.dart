@@ -94,6 +94,59 @@ void main() {
       expect(unknown.subjectLabel, 'Uma medalha');
     });
 
+    test('heart count stays on the medal and drops repeated ids', () {
+      const medal = Recognition(
+        id: 'ana_pedro_medal_track:path:streak_14',
+        fromUid: 'ana',
+        fromName: 'Ana',
+        toUid: 'pedro',
+        kind: RecognitionKind.medal,
+        subjectKey: 'track:path:streak_14',
+      );
+      const sameAgain = Recognition(
+        id: 'ana_pedro_medal_track:path:streak_14',
+        fromUid: 'ana',
+        fromName: 'Ana',
+        toUid: 'pedro',
+        kind: RecognitionKind.medal,
+        subjectKey: 'track:path:streak_14',
+      );
+      const otherMedal = Recognition(
+        id: 'lia_pedro_medal_track:path:streak_3',
+        fromUid: 'lia',
+        fromName: 'Lia',
+        toUid: 'pedro',
+        kind: RecognitionKind.medal,
+        subjectKey: 'track:path:streak_3',
+      );
+      const walk = Recognition(
+        id: 'ana_pedro_walk_2026-09-22',
+        fromUid: 'ana',
+        fromName: 'Ana',
+        toUid: 'pedro',
+        kind: RecognitionKind.walk,
+        subjectKey: '2026-09-22',
+      );
+
+      expect(
+        countRecognitions(
+          [medal, sameAgain, otherMedal, walk],
+          kind: RecognitionKind.medal,
+          subjectKeys: {'track:path:streak_14'},
+        ),
+        1,
+      );
+      expect(
+        countRecognitions(
+          [medal, otherMedal],
+          kind: RecognitionKind.medal,
+          subjectKeys: {'track:path:streak_14', 'track:path:streak_3'},
+        ),
+        2,
+      );
+      expect(countRecognitions([medal, walk]), 2);
+    });
+
     test('first name is what the other person reads', () {
       expect(recognitionFromName('  Ana Maria  '), 'Ana');
       expect(recognitionFromName(''), 'Alguém');

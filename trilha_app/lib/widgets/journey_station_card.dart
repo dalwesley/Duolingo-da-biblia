@@ -76,37 +76,43 @@ class JourneyStationCard extends StatelessWidget {
           Row(
             children: [
               if (leading != null) ...[leading!, const SizedBox(width: 6)],
-              Expanded(
-                child: SectionLabel(
-                  eyebrow,
-                  size: 10,
-                  color: isCurrent
-                      ? ink
-                      : quiet
-                      ? Color.lerp(a.textFaint, accent, 0.4)!
-                      : a.textFaint,
-                ),
+              // Rótulo inteiro numa linha; o estado à direita é que encolhe
+              // (dividir a largura meio a meio quebrava "TRILHA III").
+              SectionLabel(
+                eyebrow,
+                size: 10,
+                maxLines: 1,
+                color: isCurrent
+                    ? ink
+                    : quiet
+                    ? Color.lerp(a.textFaint, accent, 0.4)!
+                    : a.textFaint,
               ),
-              if (isCurrent)
-                Text(
-                  context.l10n.journeyNow,
-                  style: AppTypography.label(size: 11, color: ink),
-                ),
-              if (quiet)
-                Flexible(
-                  child: Text(
-                    isSoon
-                        ? context.l10n.commonComingSoon
-                        : context.l10n.journeyBeyondHorizon,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    textAlign: TextAlign.right,
-                    style: AppTypography.label(
-                      size: 9,
-                      color: Color.lerp(a.textFaint, accent, 0.45)!,
-                    ),
-                  ),
-                ),
+              const SizedBox(width: 6),
+              Expanded(
+                child: isCurrent
+                    ? Text(
+                        context.l10n.journeyNow,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        textAlign: TextAlign.right,
+                        style: AppTypography.label(size: 11, color: ink),
+                      )
+                    : quiet
+                    ? Text(
+                        isSoon
+                            ? context.l10n.commonComingSoon
+                            : context.l10n.journeyBeyondHorizon,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        textAlign: TextAlign.right,
+                        style: AppTypography.label(
+                          size: 9,
+                          color: Color.lerp(a.textFaint, accent, 0.45)!,
+                        ),
+                      )
+                    : const SizedBox.shrink(),
+              ),
             ],
           ),
           const SizedBox(height: 5),

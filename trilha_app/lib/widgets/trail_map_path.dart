@@ -19,6 +19,10 @@ class TrailMapPath extends StatelessWidget {
   final Color? modeAccent;
   final void Function(String slug)? onMissionTap;
 
+  /// Presa na cena [currentSlug] — o mapa rola até ela ao abrir.
+  final GlobalKey? currentKey;
+  final String? currentSlug;
+
   const TrailMapPath({
     super.key,
     required this.missions,
@@ -28,6 +32,8 @@ class TrailMapPath extends StatelessWidget {
     this.theme,
     this.modeAccent,
     this.onMissionTap,
+    this.currentKey,
+    this.currentSlug,
   });
 
   bool _completed(String slug) => completedMissions.contains(slug);
@@ -84,6 +90,7 @@ class TrailMapPath extends StatelessWidget {
     );
 
     return WindingStop(
+      key: mission.slug == currentSlug ? currentKey : null,
       nodeSize: 72,
       passed: completed,
       centerAnchor: true,

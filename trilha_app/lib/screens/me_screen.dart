@@ -14,6 +14,7 @@ import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
+import '../widgets/act_feel.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/milestone_chests.dart';
@@ -23,7 +24,6 @@ import '../widgets/profile_plus_cards.dart';
 import '../widgets/profile_privacy.dart';
 import '../widgets/portrait_picker_sheet.dart';
 import '../widgets/profile_hero.dart';
-import '../widgets/reflection_journal_card.dart';
 import '../widgets/relic_panel.dart';
 import '../widgets/recognition_history_sheet.dart';
 import '../widgets/ui_primitives.dart';
@@ -254,6 +254,10 @@ class _MeScreenState extends State<MeScreen> {
               CaravanProfileSection.daysAsLeader,
               CaravanProfileSection.accuracy,
               CaravanProfileSection.presence,
+              // Escrituras e última cena repetem o cofre e "Suas trilhas".
+              // Na caravana os dois continuam, para quem abre o perfil de outro.
+              CaravanProfileSection.bible,
+              CaravanProfileSection.lastMission,
             },
             includeStreakMilestones: false,
             collectionsFirst: true,
@@ -271,10 +275,6 @@ class _MeScreenState extends State<MeScreen> {
       else ...[
         pad(const _FavoritesSection()),
         pad(const _SharedVersesSection()),
-      ],
-      if (progress.missionReflections.isNotEmpty) ...[
-        const SizedBox(height: AppSpace.md),
-        pad(const ReflectionJournalCard()),
       ],
       const SizedBox(height: AppSpace.section),
       pad(const RecognitionHistoryCard()),
@@ -337,11 +337,14 @@ class _NaPalavraBlock extends StatelessWidget {
     final hasShared = progress.sharedVerses.isNotEmpty;
 
     return RelicPanel(
+      accent: AppRoles.presence,
+      glow: 0.35,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           RelicChapter(
             title: context.l10n.profileInTheWord,
+            accent: AppRoles.presence,
             whisper: hasBookmarks || hasShared
                 ? null
                 : context.l10n.profileInTheWordWhisper,
@@ -349,9 +352,9 @@ class _NaPalavraBlock extends StatelessWidget {
           const SizedBox(height: AppSpace.md),
           const _FavoritesSection(embedded: true),
           if (hasShared && hasBookmarks) ...[
-            const SizedBox(height: AppSpace.md),
+            const SizedBox(height: AppSpace.sm),
             const RelicHairline(),
-            const SizedBox(height: AppSpace.md),
+            const SizedBox(height: AppSpace.sm),
           ],
           const _SharedVersesSection(embedded: true),
         ],
@@ -371,18 +374,44 @@ class _FavoritesSection extends StatefulWidget {
 
 class _FavoritesSectionState extends State<_FavoritesSection> {
   Map<String, String> _namesByAbbrev = const {};
+  Map<String, String> _verseByKey = const {};
+  String? _loadedKeys;
+  bool _open = false;
 
-  @override
-  void initState() {
-    super.initState();
-    _loadNames();
+  static String _key(({String abbrev, int chapter, int verse}) b) =>
+      '${b.abbrev}:${b.chapter}:${b.verse}';
+
+  void _schedule(
+    List<({String abbrev, int chapter, int verse})> shown,
+  ) {
+    final stamp = shown.map(_key).join('|');
+    if (stamp == _loadedKeys) return;
+    _loadedKeys = stamp;
+    WidgetsBinding.instance.addPostFrameCallback(
+      (_) => _load(shown, stamp),
+    );
   }
 
-  Future<void> _loadNames() async {
+  Future<void> _load(
+    List<({String abbrev, int chapter, int verse})> shown,
+    String stamp,
+  ) async {
     final books = await BibleService.instance.books();
-    if (!mounted) return;
+    if (!mounted || stamp != _loadedKeys) return;
+    final names = {for (final b in books) b.abbrev.toLowerCase(): b.name};
+    final verses = <String, String>{};
+    for (final b in shown) {
+      final text = (await BibleService.instance.verseText(
+        b.abbrev,
+        b.chapter,
+        b.verse,
+      ))?.trim();
+      if (text != null && text.isNotEmpty) verses[_key(b)] = text;
+    }
+    if (!mounted || stamp != _loadedKeys) return;
     setState(() {
-      _namesByAbbrev = {for (final b in books) b.abbrev.toLowerCase(): b.name};
+      _namesByAbbrev = names;
+      _verseByKey = verses;
     });
   }
 
@@ -395,7 +424,9 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
   @override
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
-    final bookmarks = progress.parseBookmarks().take(8).toList();
+    final all = progress.parseBookmarks();
+    final shown = all.take(8).toList();
+    if (_open) _schedule(shown);
     final a = Appearance.of(context);
     void openBible() => Navigator.of(
       context,
@@ -404,14 +435,17 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
     final content = Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        CardHeader(
-          label: context.l10n.profileSavedVerses,
-          trailing: bookmarks.isEmpty
-              ? null
-              : CountBadge('${bookmarks.length}', filled: false),
-        ),
-        const SizedBox(height: AppSpace.md),
-        if (bookmarks.isEmpty) ...[
+        if (all.isEmpty)
+          CardHeader(label: context.l10n.profileSavedVerses)
+        else
+          _FoldHeader(
+            label: context.l10n.profileSavedVerses,
+            count: all.length,
+            open: _open,
+            onTap: () => setState(() => _open = !_open),
+          ),
+        if (shown.isEmpty) ...[
+          const SizedBox(height: AppSpace.md),
           Text(
             context.l10n.profileSavedVersesEmpty,
             style: AppTypography.body(size: 13, color: a.textSecondary),
@@ -424,41 +458,23 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
             onTap: openBible,
           ),
         ] else
-          ...bookmarks.asMap().entries.map((entry) {
-            final i = entry.key;
-            final label = _label(entry.value);
-            return Column(
+          _FoldBody(
+            open: _open,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                if (i > 0) const RelicHairline(),
-                Semantics(
-                  button: true,
-                  label: context.l10n.profileOpenRef(label),
-                  excludeSemantics: true,
-                  child: InkWell(
-                    borderRadius: BorderRadius.circular(AppRadii.sm),
-                    onTap: () => BibleReaderScreen.open(context, label),
-                    child: ConstrainedBox(
-                      constraints: const BoxConstraints(minHeight: 48),
-                      child: Row(
-                        children: [
-                          Expanded(
-                            child: Text(
-                              label,
-                              style: AppTypography.verse(
-                                size: 16,
-                                color: a.text,
-                              ),
-                            ),
-                          ),
-                          ListChevron(color: a.textFaint),
-                        ],
-                      ),
-                    ),
+                for (var i = 0; i < shown.length; i++) ...[
+                  if (i > 0) const RelicHairline(),
+                  _WordRow(
+                    reference: _label(shown[i]),
+                    verse: _verseByKey[_key(shown[i])],
+                    onTap: () =>
+                        BibleReaderScreen.open(context, _label(shown[i])),
                   ),
-                ),
+                ],
               ],
-            );
-          }),
+            ),
+          ),
       ],
     );
 
@@ -468,81 +484,236 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
   }
 }
 
-class _SharedVersesSection extends StatelessWidget {
+class _SharedVersesSection extends StatefulWidget {
   final bool embedded;
 
   const _SharedVersesSection({this.embedded = false});
 
   @override
+  State<_SharedVersesSection> createState() => _SharedVersesSectionState();
+}
+
+class _SharedVersesSectionState extends State<_SharedVersesSection> {
+  Map<String, String> _texts = const {};
+  String? _loaded;
+  bool _open = false;
+
+  void _schedule(List<String> refs) {
+    final stamp = refs.join('|');
+    if (stamp == _loaded) return;
+    _loaded = stamp;
+    WidgetsBinding.instance.addPostFrameCallback((_) => _load(refs, stamp));
+  }
+
+  Future<void> _load(List<String> refs, String stamp) async {
+    final texts = <String, String>{};
+    for (final ref in refs) {
+      final text = (await BibleService.instance.passageText(ref))?.trim();
+      if (text != null && text.isNotEmpty) texts[ref] = text;
+    }
+    if (!mounted || stamp != _loaded) return;
+    setState(() => _texts = texts);
+  }
+
+  @override
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
-    final refs = progress.sharedVerses.take(12).toList();
+    final all = progress.sharedVerses;
+    final refs = all.take(12).toList();
+    if (_open) _schedule(refs);
     final a = Appearance.of(context);
 
     final content = Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        CardHeader(
-          label: context.l10n.profileSharedVerses,
-          trailing: refs.isEmpty
-              ? null
-              : CountBadge('${refs.length}', filled: false),
-        ),
-        const SizedBox(height: AppSpace.md),
+        if (all.isEmpty)
+          CardHeader(label: context.l10n.profileSharedVerses)
+        else
+          _FoldHeader(
+            label: context.l10n.profileSharedVerses,
+            count: all.length,
+            open: _open,
+            onTap: () => setState(() => _open = !_open),
+          ),
         if (refs.isEmpty)
-          Text(
-            context.l10n.profileSharedVersesEmpty,
-            style: AppTypography.body(size: 13, color: a.textSecondary),
+          Padding(
+            padding: const EdgeInsets.only(top: AppSpace.md),
+            child: Text(
+              context.l10n.profileSharedVersesEmpty,
+              style: AppTypography.body(size: 13, color: a.textSecondary),
+            ),
           )
         else
-          Wrap(
-            spacing: AppSpace.sm,
-            runSpacing: AppSpace.sm,
-            children: [
-              for (final ref in refs)
-                Semantics(
-                  button: true,
-                  label: context.l10n.profileOpenRef(ref),
-                  excludeSemantics: true,
-                  child: Material(
-                    color: a.insetFill,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(AppRadii.sm),
-                      side: BorderSide(color: a.cardBorder),
-                    ),
-                    clipBehavior: Clip.antiAlias,
-                    child: InkWell(
-                      onTap: () => BibleReaderScreen.open(context, ref),
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(minHeight: 44),
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: AppSpace.md,
-                          ),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Text(
-                                ref,
-                                style: AppTypography.verse(
-                                  size: 14,
-                                  color: a.text,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
+          _FoldBody(
+            open: _open,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                for (var i = 0; i < refs.length; i++) ...[
+                  if (i > 0) const RelicHairline(),
+                  _WordRow(
+                    reference: refs[i],
+                    verse: _texts[refs[i]],
+                    onTap: () => BibleReaderScreen.open(context, refs[i]),
                   ),
-                ),
-            ],
+                ],
+              ],
+            ),
           ),
       ],
     );
 
-    if (embedded) return content;
+    if (widget.embedded) return content;
 
     return RelicPanel(child: content);
+  }
+}
+
+/// Título da lista: toque abre ou fecha. Fechado, só o nome e a contagem.
+class _FoldHeader extends StatelessWidget {
+  final String label;
+  final int count;
+  final bool open;
+  final VoidCallback onTap;
+
+  const _FoldHeader({
+    required this.label,
+    required this.count,
+    required this.open,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final still = MediaQuery.disableAnimationsOf(context);
+    return Semantics(
+      button: true,
+      expanded: open,
+      label: label,
+      excludeSemantics: true,
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: () {
+            ActHaptics.tap();
+            onTap();
+          },
+          borderRadius: BorderRadius.circular(AppRadii.sm),
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(minHeight: 44),
+            child: Row(
+              children: [
+                Expanded(child: SectionLabel(label)),
+                CountBadge('$count', filled: false, color: AppRoles.presence),
+                const SizedBox(width: AppSpace.sm),
+                AnimatedRotation(
+                  turns: open ? 0.25 : 0,
+                  duration: still ? Duration.zero : AppMotion.quick,
+                  curve: AppMotion.enter,
+                  child: ListChevron(color: a.textSecondary),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _FoldBody extends StatelessWidget {
+  final bool open;
+  final Widget child;
+
+  const _FoldBody({required this.open, required this.child});
+
+  @override
+  Widget build(BuildContext context) {
+    final still = MediaQuery.disableAnimationsOf(context);
+    return AnimatedSize(
+      duration: still ? Duration.zero : AppMotion.standard,
+      curve: open ? AppMotion.enter : AppMotion.exit,
+      alignment: Alignment.topCenter,
+      child: open
+          ? Padding(
+              padding: const EdgeInsets.only(top: AppSpace.sm),
+              child: child,
+            )
+          : const SizedBox(width: double.infinity),
+    );
+  }
+}
+
+/// Referência em cima, o versículo embaixo. O toque abre a leitura.
+class _WordRow extends StatelessWidget {
+  final String reference;
+  final String? verse;
+  final VoidCallback onTap;
+
+  const _WordRow({
+    required this.reference,
+    this.verse,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final quote = verse?.trim();
+    final hasQuote = quote != null && quote.isNotEmpty;
+    return Semantics(
+      button: true,
+      label: context.l10n.profileOpenRef(reference),
+      excludeSemantics: true,
+      child: InkWell(
+        borderRadius: BorderRadius.circular(AppRadii.sm),
+        onTap: onTap,
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(minHeight: 48),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: AppSpace.sm),
+            child: Row(
+              children: [
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        reference,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: hasQuote
+                            ? AppTypography.body(
+                                size: 12,
+                                weight: FontWeight.w800,
+                                color: a.textSecondary,
+                              )
+                            : AppTypography.verse(size: 16, color: a.text),
+                      ),
+                      if (hasQuote) ...[
+                        const SizedBox(height: 2),
+                        Text(
+                          quote,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: AppTypography.verse(
+                            size: 16,
+                            height: 1.35,
+                            color: a.text,
+                          ),
+                        ),
+                      ],
+                    ],
+                  ),
+                ),
+                const SizedBox(width: AppSpace.sm),
+                ListChevron(color: a.textFaint),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }

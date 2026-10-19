@@ -16,7 +16,8 @@ enum PlusPerk {
   readingPlans,
   consistency,
   reinforce,
-  badge;
+  badge,
+  recognition;
 
   /// Os três que abrem as listas curtas (ofertas, aviso, perfil).
   static const highlights = [
@@ -32,6 +33,7 @@ enum PlusPerk {
     PlusPerk.consistency => CinematicGlyph.path,
     PlusPerk.reinforce => CinematicGlyph.target,
     PlusPerk.badge => CinematicGlyph.gift,
+    PlusPerk.recognition => CinematicGlyph.heart,
   };
 
   String title(AppLocalizations l10n) => switch (this) {
@@ -41,6 +43,7 @@ enum PlusPerk {
     PlusPerk.consistency => l10n.paywallPerkStreakTitle,
     PlusPerk.reinforce => l10n.paywallPerkReinforceTitle,
     PlusPerk.badge => l10n.paywallPerkBadgeTitle,
+    PlusPerk.recognition => l10n.paywallPerkRecognitionTitle,
   };
 
   String body(AppLocalizations l10n) => switch (this) {
@@ -50,6 +53,7 @@ enum PlusPerk {
     PlusPerk.consistency => l10n.paywallPerkStreakBody,
     PlusPerk.reinforce => l10n.paywallPerkReinforceBody,
     PlusPerk.badge => l10n.paywallPerkBadgeBody,
+    PlusPerk.recognition => l10n.paywallPerkRecognitionBody,
   };
 }
 

@@ -293,12 +293,14 @@
   "canonProfetasMenoresTitle": "Profetas menores",
   "categoryApocalipseBlurb": "O livro de Apocalipse, escrito por João Evangelista.",
   "categoryApocalipseTitle": "Apocalipse ou Revelação",
+  "categoryCristologiaBlurb": "Quem é Jesus: Deus e homem, profeta, sacerdote e rei. A trilha percorre a pessoa e a obra dele — encarnação, cruz, ressurreição e senhorio.",
   "categoryCristologiaTitle": "Cristologia",
   "categoryDiscipuladoTitle": "Discipulado",
   "categoryEpistolasBlurb": "Vinte e uma cartas às primeiras igrejas — treze de Paulo e oito de outros autores.",
   "categoryEpistolasTitle": "Epístolas ou cartas apostólicas",
   "categoryEvangelhosBlurb": "Nascimento, ministério, morte, ressurreição e ascensão de Jesus — Mateus a João.",
   "categoryEvangelhosTitle": "Evangelhos",
+  "categoryHermeneuticaBlurb": "Como ler a Bíblia com atenção e fidelidade. O texto no seu contexto, o tipo de livro e o lugar de Cristo na história toda, sem forçar um versículo isolado.",
   "categoryHermeneuticaTitle": "Hermenêutica",
   "categoryHistoriaIgrejaTitle": "História da Igreja",
   "categoryHistoricosAtBlurb": "A história de Israel da conquista da Terra Prometida até o exílio babilônico.",
@@ -307,17 +309,29 @@
   "categoryHistoricosNtTitle": "História da Igreja primitiva",
   "categoryIntertestamentarioBlurb": "Os cerca de 400 anos de silêncio entre o Antigo e o Novo Testamento.",
   "categoryIntertestamentarioTitle": "Período intertestamentário",
+  "categoryLinguasBlurb": "Um primeiro caminho no hebraico e no grego da Bíblia: alfabeto, raízes e como uma tradução nasce. O objetivo é ler com mais cuidado, sem substituir a Bíblia em português.",
   "categoryLinguasTitle": "Línguas originais",
   "categoryOracaoTitle": "Oração",
+  "categoryPanoramaBlurb": "A Bíblia como uma história só, da criação à nova criação. Antes de entrar livro a livro, esta trilha mostra o arco, a ordem dos livros e o lugar de cada parte.",
+  "categoryPanoramaTitle": "Panorama",
+  "categoryParabolasMilagresBlurb": "O ensino e os sinais de Jesus. As parábolas mostram como é o Reino; os milagres revelam quem ele é — pão, vista, tempestade, vida — em eco com o Antigo Testamento.",
+  "categoryParabolasMilagresTitle": "Parábolas e milagres",
   "categoryPentateucoBlurb": "Os cinco primeiros livros da Bíblia — a Torá, o Livro da Lei, em ordem cronológica.",
   "categoryPentateucoTitle": "Pentateuco",
+  "categoryPersonagensBlurb": "Vidas que carregam a história: Abraão, Moisés, Davi, os profetas, Maria, Pedro, Paulo. Cada trilha segue uma pessoa por vários livros, com suas falhas, e o modo como essa vida aponta para Cristo.",
+  "categoryPersonagensTitle": "Personagens",
   "categoryPoeticosBlurb": "Poesia, sabedoria, provérbios e cânticos — organizados por relevância.",
   "categoryPoeticosTitle": "Livros poéticos",
   "categoryProfetasMaioresBlurb": "Isaías a Daniel — obras mais extensas entre os registros proféticos.",
   "categoryProfetasMaioresTitle": "Profetas maiores",
   "categoryProfetasMenoresBlurb": "Oséias a Malaquias — doze livros; o nome refere-se à extensão, não à importância.",
   "categoryProfetasMenoresTitle": "Profetas menores",
+  "categoryPromessaCumprimentoBlurb": "Promessas que Deus faz no Antigo Testamento e o modo como Jesus as cumpre. Descendência, páscoa, rei davídico, servo sofredor e a nova aliança, lidos ao lado do Evangelho.",
+  "categoryPromessaCumprimentoTitle": "Promessa e cumprimento",
+  "categorySistematicaBlurb": "A doutrina reunida a partir da Bíblia inteira: Deus, o ser humano, a salvação, o Espírito, a igreja e o fim da história — e o fio que liga tudo, da criação à nova criação.",
   "categorySistematicaTitle": "Sistemática e dogmática",
+  "categoryTemasBiblicosBlurb": "Fios que atravessam a Escritura inteira: aliança, reino, presença de Deus, santidade, justiça, exílio e volta. Cada trilha acompanha um tema, de Gênesis ao Apocalipse.",
+  "categoryTemasBiblicosTitle": "Temas bíblicos",
   "celebrationBackHome": "Voltar ao início",
   "celebrationBackToMap": "Voltar ao mapa",
   "celebrationCleanScene": "Cena limpa",
@@ -2035,6 +2049,7 @@
   "@journeyPlay": {
     "description": "CTA da estação atual no mapa"
   },
+  "journeySabedoriaTitle": "Sabedoria e Salmos",
   "journeyScenesLeft": "{count, plural, =1{Falta 1 cena} other{Faltam {count} cenas}}",
   "@journeyScenesLeft": {
     "placeholders": {
@@ -4070,6 +4085,8 @@
   "paywallPerkBadgeTitle": "Selo de apoiador",
   "paywallPerkPlansBody": "A Bíblia inteira no seu ritmo, Evangelhos em 30 dias, Novo Testamento em 90 e outros.",
   "paywallPerkPlansTitle": "Planos de leitura",
+  "paywallPerkRecognitionBody": "Veja quem da caravana tocou no coração da sua cena e das suas medalhas.",
+  "paywallPerkRecognitionTitle": "Quem reconheceu",
   "paywallPerkReinforceBody": "No perfil, o tipo de pergunta que você mais erra. Depois, um treino só com esse tipo.",
   "paywallPerkReinforceTitle": "Reforço do ponto fraco",
   "paywallPerkSeasonBody": "Caminhadas do calendário cristão, como o Advento: todos no mesmo dia, do 4º dia em diante.",
@@ -4239,7 +4256,7 @@
       }
     }
   },
-  "pilgrimCollections": "Coleções",
+  "pilgrimCollections": "Cofre",
   "pilgrimCompletedOn": "Concluída em {date}",
   "@pilgrimCompletedOn": {
     "placeholders": {
@@ -4905,6 +4922,14 @@
       }
     }
   },
+  "recognitionCardHearts": "{count, plural, =1{1 coração na sua jornada} other{{count} corações na sua jornada}}",
+  "@recognitionCardHearts": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "recognitionDaysAgo": "Há {count} dias",
   "@recognitionDaysAgo": {
     "placeholders": {
@@ -4945,7 +4970,16 @@
       }
     }
   },
+  "recognitionHeartOnMedal": "{count, plural, =1{1 coração nesta medalha} other{{count} corações nesta medalha}}",
+  "@recognitionHeartOnMedal": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "recognitionHomeSeeWho": "Ver quem reconheceu",
+  "recognitionHomeTitleAnonymous": "Alguém reconheceu sua jornada",
   "recognitionHomeTitleMany": "Reconheceram sua jornada",
   "recognitionHomeTitleSingle": "{name} reconheceu sua jornada",
   "@recognitionHomeTitleSingle": {
@@ -5012,6 +5046,7 @@
   "recognitionSummaryEmpty": "Cena do dia e medalhas que outros viram em você.",
   "recognitionTapToWithdraw": "Toque de novo para retirar",
   "recognitionWhichMedal": "Qual medalha você viu?",
+  "recognitionWhoLockedBody": "O Peregrino+ mostra quem foi.",
   "recognitionWhoTitle": "Quem reconheceu",
   "recognitionYesterday": "Ontem",
   "recognitionYourScene": "Sua cena",
@@ -5829,6 +5864,7 @@
   "trailsHorizonBody": "Novas trilhas estão sendo preparadas.",
   "trailsHorizonEyebrow": "No horizonte",
   "trailsInProgress": "Em andamento",
+  "trailsJourneySoonBody": "Estas trilhas ainda estão sendo preparadas.",
   "trailsLabeledScenesOf": "{total, plural, =1{{label} · {done} de 1 cena} other{{label} · {done} de {total} cenas}}",
   "@trailsLabeledScenesOf": {
     "description": "label is a study mode name or a trail title",
@@ -5951,6 +5987,7 @@
       }
     }
   },
+  "trailsShelfBible": "Bíblia",
   "trailsStage": "Etapa {roman}",
   "@trailsStage": {
     "description": "Module number in Roman numerals, e.g. Etapa II",

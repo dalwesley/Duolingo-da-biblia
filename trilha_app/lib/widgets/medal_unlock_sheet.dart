@@ -14,6 +14,7 @@ import 'cinematic_icon.dart';
 import 'confetti_overlay.dart';
 import 'medal_cinematic_widgets.dart';
 import 'recognition_actions.dart';
+import 'recognition_history_sheet.dart';
 import 'cloud_mascot.dart';
 import 'ui_primitives.dart';
 
@@ -259,12 +260,14 @@ class _MedalDetailSheetState extends State<_MedalDetailSheet>
                     if (!widget.celebration && unlocked)
                       Align(
                         alignment: Alignment.centerRight,
-                        child: RecognizeHeartButton(
-                          toUid: widget.recognizeToUid,
-                          kind: RecognitionKind.medal,
-                          subjectKey: tile.id,
-                          padding: EdgeInsets.zero,
-                        ),
+                        child: widget.recognizeToUid == null
+                            ? ReceivedHeartBadge(subjectKeys: {tile.id})
+                            : RecognizeHeartButton(
+                                toUid: widget.recognizeToUid,
+                                kind: RecognitionKind.medal,
+                                subjectKey: tile.id,
+                                padding: EdgeInsets.zero,
+                              ),
                       ),
                   ],
                 ),
@@ -452,12 +455,16 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
                         current != null)
                       Align(
                         alignment: Alignment.centerRight,
-                        child: RecognizeHeartButton(
-                          toUid: widget.recognizeToUid,
-                          kind: RecognitionKind.medal,
-                          subjectKey: current.id,
-                          padding: EdgeInsets.zero,
-                        ),
+                        child: widget.recognizeToUid == null
+                            ? ReceivedHeartBadge(
+                                subjectKeys: trackState.earnedMedalIds,
+                              )
+                            : RecognizeHeartButton(
+                                toUid: widget.recognizeToUid,
+                                kind: RecognitionKind.medal,
+                                subjectKey: current.id,
+                                padding: EdgeInsets.zero,
+                              ),
                       ),
                   ],
                 ),

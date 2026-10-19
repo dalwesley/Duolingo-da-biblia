@@ -27,6 +27,16 @@ class RecognitionService extends ChangeNotifier {
   ];
   List<Recognition> recent = const [];
   bool recentLoading = false;
+
+  /// Vistos e ainda não vistos, sem repetir o mesmo gesto.
+  List<Recognition> get received {
+    final seen = <String>{};
+    return [
+      for (final item in [...incoming, ...recent])
+        if (seen.add(item.id)) item,
+    ];
+  }
+
   StreamSubscription<List<Recognition>>? _sub;
   String? _boundUid;
   Set<String> _given = {};

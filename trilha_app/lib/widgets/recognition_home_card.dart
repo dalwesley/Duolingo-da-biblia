@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../models/recognition.dart';
 import '../services/recognition_service.dart';
+import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
@@ -23,8 +24,10 @@ class RecognitionHomeCard extends StatelessWidget {
   Widget build(BuildContext context) {
     if (items.isEmpty) return const SizedBox.shrink();
     final a = Appearance.of(context);
+    final plus = context.watch<SubscriptionService>().plusFeaturesOpen;
     final groups = groupRecognitionsBySender(items);
     final single = groups.length == 1;
+    final l10n = context.l10n;
 
     return GlassCard(
       padding: AppMetrics.cardPadding,
@@ -32,24 +35,29 @@ class RecognitionHomeCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            single
-                ? context.l10n.recognitionHomeTitleSingle(groups.first.name)
-                : context.l10n.recognitionHomeTitleMany,
+            plus
+                ? (single
+                      ? l10n.recognitionHomeTitleSingle(groups.first.name)
+                      : l10n.recognitionHomeTitleMany)
+                : l10n.recognitionHomeTitleAnonymous,
             style: AppTypography.title(size: 18, height: 1.25, color: a.text),
           ),
           const SizedBox(height: 12),
-          _HeartList(groups: groups, single: single, style: a),
+          _HeartList(groups: groups, showNames: plus && !single, style: a),
           const SizedBox(height: 16),
           CopperCta(
-            label: context.l10n.commonGotIt,
+            label: l10n.commonGotIt,
             dense: true,
             leading: null,
             trailing: null,
             onTap: () async {
+              final reveal = context
+                  .read<SubscriptionService>()
+                  .plusFeaturesOpen;
               final service = context.read<RecognitionService>();
               await service.acknowledgeIncoming();
-              if (!context.mounted) return;
-              // Mantém o rastro — quem reconheceu o quê fica no histórico.
+              if (!context.mounted || !reveal) return;
+              // O nome fica no histórico — só o Peregrino+ abre a lista.
               await showRecognitionHistorySheet(context);
             },
           ),
@@ -67,24 +75,23 @@ class RecognitionHomeCard extends StatelessWidget {
 
 class _HeartList extends StatelessWidget {
   final List<RecognitionSenderGroup> groups;
-  final bool single;
+  final bool showNames;
   final AppearanceStyle style;
 
   const _HeartList({
     required this.groups,
-    required this.single,
+    required this.showNames,
     required this.style,
   });
 
   @override
   Widget build(BuildContext context) {
     final labels = <String>[
-      if (single)
-        for (final item in groups.first.items) item.subjectLabel
-      else
-        for (final group in groups)
-          for (final item in group.items)
-            '${group.name} · ${item.subjectLabel}',
+      for (final group in groups)
+        for (final item in group.items)
+          showNames
+              ? '${group.name} · ${item.subjectLabel}'
+              : item.subjectLabel,
     ];
 
     return Column(

@@ -35,8 +35,7 @@ class TrailVisuals {
     String categoryId = '',
     String color = '#1B3A5C',
   }) {
-    final realm =
-        _realmBySlug[slug] ?? TrailCategory.fromId(categoryId).realm;
+    final realm = _realmBySlug[slug] ?? TrailCategory.fromId(categoryId).realm;
     return _palette(_glyphFor(slug, categoryId), realm);
   }
 
@@ -47,6 +46,11 @@ class TrailVisuals {
   static CinematicGlyph _glyphFor(String slug, String categoryId) =>
       (slug.isEmpty ? null : _glyphBySlug[slug]) ??
       switch (categoryId) {
+        'panorama' => CinematicGlyph.path,
+        'personagens' => CinematicGlyph.people,
+        'promessa-cumprimento' => CinematicGlyph.link,
+        'temas-biblicos' => CinematicGlyph.tree,
+        'parabolas-milagres' => CinematicGlyph.lamp,
         'pentateuco' => CinematicGlyph.book,
         'historicos-at' => CinematicGlyph.shield,
         'poeticos' => CinematicGlyph.dove,

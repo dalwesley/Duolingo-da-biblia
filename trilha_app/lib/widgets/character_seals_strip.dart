@@ -135,10 +135,14 @@ class CharacterSealsStrip extends StatelessWidget {
   final Iterable<String> completed;
   final bool acquiredOnly;
 
+  /// Dentro do cofre: só o miolo, sem o cartão próprio.
+  final bool embedded;
+
   const CharacterSealsStrip({
     super.key,
     required this.completed,
     this.acquiredOnly = false,
+    this.embedded = false,
   });
 
   @override
@@ -169,25 +173,25 @@ class CharacterSealsStrip extends StatelessWidget {
             next.name,
           );
 
-    // Selo é recompensa: o card leva o wash e o filete de [AppRoles.reward].
-    return RelicPanel(
-      accent: AppRoles.reward,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          RelicChapter(
-            title: l10n.sealsTitle,
-            whisper: subtitle,
-            action: PrivacyEye(
-              sections: const {CaravanProfileSection.trails},
-              label: l10n.pilgrimSealsAndTrails,
-            ),
+    final gallery = _EncounterGallery(seals: shown, unlocked: unlocked);
+    if (embedded) return gallery;
+    final body = Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        RelicChapter(
+          title: l10n.sealsTitle,
+          whisper: subtitle,
+          accent: AppRoles.reward,
+          action: PrivacyEye(
+            sections: const {CaravanProfileSection.trails},
+            label: l10n.pilgrimSealsAndTrails,
           ),
-          const SizedBox(height: 16),
-          _EncounterGallery(seals: shown, unlocked: unlocked),
-        ],
-      ),
+        ),
+        const SizedBox(height: 16),
+        gallery,
+      ],
     );
+    return RelicPanel(accent: AppRoles.reward, child: body);
   }
 }
 

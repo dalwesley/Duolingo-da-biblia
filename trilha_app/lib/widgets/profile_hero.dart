@@ -15,13 +15,13 @@ import 'cinematic_icon.dart';
 import 'immersive_background.dart';
 import 'pilgrim_profile_sections.dart';
 import 'profile_privacy.dart';
+import 'relic_panel.dart';
 import 'top_bar.dart';
 import 'ui_primitives.dart';
 import 'user_avatar.dart';
 
-/// Topo do perfil do dono: retrato grande, nome, título e os três números
-/// que contam a caminhada, sobre o gradiente da fase do dia (sem cenário).
-/// Substitui barra + cartão de identidade.
+/// Topo do perfil do dono: um cartão só — retrato, nome, título e os três
+/// números da caminhada — sobre o gradiente da fase do dia (sem cenário).
 class ProfileHero extends StatelessWidget {
   final String name;
   final String? photoUrl;
@@ -118,67 +118,16 @@ class ProfileHero extends StatelessWidget {
             child: Column(
               children: [
                 const SizedBox(height: AppSpace.afterTopBar),
-                _GlowPortrait(
-                  child: UserAvatar(
-                    name: displayName,
-                    photoUrl: photoUrl,
-                    seed: seed,
-                    style: style,
-                    radius: AppMetrics.avatarHero,
-                    borderColor: a.chrome,
-                    editable: onEditPortrait != null,
-                    onTap: onEditPortrait,
-                  ),
-                ),
-                const SizedBox(height: AppSpace.lg),
-                Text(
-                  displayName,
-                  textAlign: TextAlign.center,
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: AppTypography.display(
-                    size: 28,
-                    weight: FontWeight.w900,
-                    height: 1.05,
-                    color: a.text,
-                  ),
-                ),
-                if (supporter) ...[
-                  const SizedBox(height: 8),
-                  SoftBadge(
-                    text: l10n.supporterBadge,
-                    glyph: CinematicGlyph.gift,
-                    accent: AppRoles.reward,
-                  ),
-                ],
-                if ((epithet ?? '').isNotEmpty) ...[
-                  const SizedBox(height: 6),
-                  Text(
-                    epithet!,
-                    textAlign: TextAlign.center,
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                    style: AppTypography.body(
-                      size: 14,
-                      weight: FontWeight.w800,
-                      color: epithetColor ?? a.textSecondary,
-                    ),
-                  ),
-                ],
-                if ((sinceLabel ?? '').isNotEmpty) ...[
-                  const SizedBox(height: 4),
-                  Text(
-                    sinceLabel!,
-                    textAlign: TextAlign.center,
-                    style: AppTypography.body(
-                      size: 13,
-                      weight: FontWeight.w600,
-                      color: a.textSecondary,
-                    ),
-                  ),
-                ],
-                const SizedBox(height: AppSpace.xl),
-                _HeroStats(
+                _ProfileIdentityCard(
+                  name: displayName,
+                  photoUrl: photoUrl,
+                  seed: seed,
+                  style: style,
+                  onEditPortrait: onEditPortrait,
+                  epithet: epithet,
+                  epithetColor: epithetColor,
+                  sinceLabel: sinceLabel,
+                  supporter: supporter,
                   steps: steps,
                   missions: missions,
                   accuracyPercent: accuracyPercent,
@@ -192,63 +141,139 @@ class ProfileHero extends StatelessWidget {
   }
 }
 
-/// Brilho neutro que respira devagar em volta do retrato.
-class _GlowPortrait extends StatefulWidget {
-  final Widget child;
+/// Retrato à esquerda, nome e título ao lado, números embaixo — um cartão
+/// baixo. O olho da caravana fica nos outros cards, não aqui.
+class _ProfileIdentityCard extends StatelessWidget {
+  final String name;
+  final String? photoUrl;
+  final String? seed;
+  final PortraitStyle style;
+  final VoidCallback? onEditPortrait;
+  final String? epithet;
+  final Color? epithetColor;
+  final String? sinceLabel;
+  final bool supporter;
+  final int steps;
+  final int missions;
+  final int? accuracyPercent;
 
-  const _GlowPortrait({required this.child});
-
-  @override
-  State<_GlowPortrait> createState() => _GlowPortraitState();
-}
-
-class _GlowPortraitState extends State<_GlowPortrait>
-    with SingleTickerProviderStateMixin {
-  late final AnimationController _c = AnimationController(
-    vsync: this,
-    duration: const Duration(milliseconds: 4200),
-  );
-
-  @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-    if (MediaQuery.of(context).disableAnimations) {
-      _c.stop();
-    } else if (!_c.isAnimating) {
-      _c.repeat();
-    }
-  }
-
-  @override
-  void dispose() {
-    _c.dispose();
-    super.dispose();
-  }
+  const _ProfileIdentityCard({
+    required this.name,
+    this.photoUrl,
+    this.seed,
+    this.style = PortraitStyle.photo,
+    this.onEditPortrait,
+    this.epithet,
+    this.epithetColor,
+    this.sinceLabel,
+    this.supporter = false,
+    required this.steps,
+    required this.missions,
+    this.accuracyPercent,
+  });
 
   @override
   Widget build(BuildContext context) {
-    // Só a sombra anima: retrato em cache e o hero não repinta por frame.
-    return RepaintBoundary(
-      child: AnimatedBuilder(
-        animation: _c,
-        builder: (context, child) {
-          final t = 0.5 + 0.5 * math.sin(_c.value * math.pi * 2);
-          // Só o brilho respira em volta — sem anel afastado, o retrato
-          // encosta na própria borda.
-          return Container(
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              boxShadow: [
-                BoxShadow(
-                  color: AppRoles.chrome.withValues(alpha: 0.1 + 0.1 * t),
-                  blurRadius: 26 + 14 * t,
+    final a = Appearance.of(context);
+    final l10n = context.l10n;
+    final epithetText = (epithet ?? '').trim();
+    final sinceText = (sinceLabel ?? '').trim();
+
+    return RelicPanel(
+      elevated: true,
+      accent: AppRoles.presence,
+      glow: 0.6,
+      padding: const EdgeInsets.fromLTRB(
+        AppSpace.lg,
+        AppSpace.lg,
+        AppSpace.lg,
+        AppSpace.md,
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
+            children: [
+              UserAvatar(
+                name: name,
+                photoUrl: photoUrl,
+                seed: seed,
+                style: style,
+                radius: AppMetrics.avatarXl,
+                borderColor: AppRoles.presence,
+                editable: onEditPortrait != null,
+                onTap: onEditPortrait,
+              ),
+              const SizedBox(width: AppSpace.lg),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Flexible(
+                          child: Text(
+                            name,
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: AppTypography.display(
+                              size: 24,
+                              weight: FontWeight.w800,
+                              height: 1.05,
+                              color: a.text,
+                            ),
+                          ),
+                        ),
+                        if (supporter) ...[
+                          const SizedBox(width: AppSpace.sm),
+                          SoftBadge(
+                            text: l10n.supporterBadge,
+                            glyph: CinematicGlyph.gift,
+                            accent: AppRoles.reward,
+                          ),
+                        ],
+                      ],
+                    ),
+                    if (epithetText.isNotEmpty) ...[
+                      const SizedBox(height: AppSpace.xs),
+                      Text(
+                        epithetText,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: AppTypography.body(
+                          size: 14,
+                          weight: FontWeight.w800,
+                          color: epithetColor ?? a.textSecondary,
+                        ),
+                      ),
+                    ],
+                    if (sinceText.isNotEmpty) ...[
+                      const SizedBox(height: AppSpace.xs),
+                      Text(
+                        sinceText,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: AppTypography.body(
+                          size: 13,
+                          weight: FontWeight.w600,
+                          color: a.textFaint,
+                        ),
+                      ),
+                    ],
+                  ],
                 ),
-              ],
-            ),
-            child: child,
-          );
-        },
-        child: RepaintBoundary(child: widget.child),
+              ),
+            ],
+          ),
+          const SizedBox(height: AppSpace.md),
+          const RelicHairline(),
+          const SizedBox(height: AppSpace.md),
+          _HeroStats(
+            steps: steps,
+            missions: missions,
+            accuracyPercent: accuracyPercent,
+          ),
+        ],
       ),
     );
   }
@@ -269,67 +294,69 @@ class _HeroStats extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final l10n = context.l10n;
-    final items = <(String, String, CinematicGlyph, Color)>[
+    // Ouro só no número de passos; o resto fica na cor do texto.
+    final items = <(String, String, CinematicGlyph, Color, Color)>[
       (
         pilgrimFormatCount(steps),
         l10n.pilgrimStatSteps,
         CinematicGlyph.path,
+        AppRoles.reward,
         AppRoles.reward,
       ),
       (
         pilgrimFormatCount(missions),
         l10n.pilgrimStatScenes,
         CinematicGlyph.scroll,
-        AppRoles.success,
+        AppRoles.presence,
+        a.text,
       ),
       if (accuracyPercent != null)
         (
           '$accuracyPercent%',
           l10n.pilgrimAccuracyTitle,
           CinematicGlyph.check,
-          AppRoles.success,
+          AppRoles.presence,
+          a.text,
         ),
     ];
-    return GlassCard(
-      padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
-      child: Row(
-        children: [
-          for (var i = 0; i < items.length; i++) ...[
-            if (i > 0) Container(width: 1, height: 36, color: a.cardBorder),
-            Expanded(
-              child: Semantics(
-                label: '${items[i].$1} ${items[i].$2}',
-                excludeSemantics: true,
+    return Row(
+      children: [
+        for (var i = 0; i < items.length; i++) ...[
+          if (i > 0) const SizedBox(width: AppSpace.sm),
+          Expanded(
+            child: Semantics(
+              label: '${items[i].$1} ${items[i].$2}',
+              excludeSemantics: true,
+              child: InsetPanel(
+                padding: const EdgeInsets.symmetric(
+                  vertical: AppSpace.sm,
+                  horizontal: 6,
+                ),
+                borderColor: items[i].$4.withValues(alpha: 0.55),
                 child: Column(
                   children: [
-                    Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        CinematicIcon(
-                          glyph: items[i].$3,
-                          size: AppMetrics.iconSm,
-                          accent: items[i].$4,
-                          framed: false,
+                    CinematicIcon(
+                      glyph: items[i].$3,
+                      size: AppMetrics.iconLg,
+                      accent: items[i].$4,
+                    ),
+                    const SizedBox(height: 4),
+                    FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: Text(
+                        items[i].$1,
+                        style: AppTypography.display(
+                          size: 20,
+                          weight: FontWeight.w900,
+                          color: items[i].$5,
                         ),
-                        const SizedBox(width: 6),
-                        Flexible(
-                          child: FittedBox(
-                            fit: BoxFit.scaleDown,
-                            child: Text(
-                              items[i].$1,
-                              style: AppTypography.display(
-                                size: 20,
-                                weight: FontWeight.w900,
-                                color: a.text,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
+                      ),
                     ),
                     const SizedBox(height: 2),
                     Text(
                       items[i].$2,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                       style: AppTypography.body(
                         size: 12,
                         weight: FontWeight.w700,
@@ -340,18 +367,9 @@ class _HeroStats extends StatelessWidget {
                 ),
               ),
             ),
-          ],
-          // Passos, clareza e dias no topo: um olho só para os números.
-          PrivacyEye(
-            sections: const {
-              CaravanProfileSection.ranking,
-              CaravanProfileSection.accuracy,
-              CaravanProfileSection.daysAsLeader,
-            },
-            label: l10n.profileYourNumbers,
           ),
         ],
-      ),
+      ],
     );
   }
 }
@@ -418,6 +436,8 @@ class _ConstancyCardState extends State<ConstancyCard> {
     final done = streak >= goal && goal > 0;
 
     return GlassCard(
+      tint: AppRoles.streak,
+      glow: 0.45,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [

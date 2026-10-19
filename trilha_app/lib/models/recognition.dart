@@ -96,7 +96,28 @@ class RecognitionSenderGroup {
   const RecognitionSenderGroup(this.name, this.items);
 }
 
-List<RecognitionSenderGroup> groupRecognitionsBySender(List<Recognition> items) {
+/// Quantos reconhecimentos batem com o filtro, sem contar o mesmo id duas vezes.
+int countRecognitions(
+  Iterable<Recognition> items, {
+  RecognitionKind? kind,
+  Set<String>? subjectKeys,
+}) {
+  final seen = <String>{};
+  var count = 0;
+  for (final item in items) {
+    if (kind != null && item.kind != kind) continue;
+    if (subjectKeys != null && !subjectKeys.contains(item.subjectKey)) {
+      continue;
+    }
+    if (!seen.add(item.id)) continue;
+    count++;
+  }
+  return count;
+}
+
+List<RecognitionSenderGroup> groupRecognitionsBySender(
+  List<Recognition> items,
+) {
   final order = <String>[];
   final map = <String, List<Recognition>>{};
   for (final item in items) {

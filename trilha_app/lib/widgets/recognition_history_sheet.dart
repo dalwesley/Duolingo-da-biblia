@@ -6,8 +6,10 @@ import 'package:provider/provider.dart';
 import '../models/recognition.dart';
 import '../l10n/app_language.dart';
 import '../l10n/l10n_global.dart';
+import '../screens/paywall_screen.dart';
 import '../services/moderation_service.dart';
 import '../services/recognition_service.dart';
+import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'act_feel.dart';
@@ -19,17 +21,37 @@ import 'user_avatar.dart';
 import 'user_moderation_sheet.dart';
 
 /// Lista quem reconheceu o quê — Home (depois de Entendi) e Perfil.
-Future<void> showRecognitionHistorySheet(BuildContext context) async {
+///
+/// [medalIds] limita à medalha aberta. Sem Peregrino+, a folha mostra o
+/// número e o que foi visto, e esconde o nome.
+Future<void> showRecognitionHistorySheet(
+  BuildContext context, {
+  Set<String>? medalIds,
+}) async {
   final service = context.read<RecognitionService>();
   unawaited(service.refreshRecent());
   await showAppSheet<void>(
     context,
-    builder: (_) => const _RecognitionHistorySheet(),
+    builder: (_) => _RecognitionHistorySheet(medalIds: medalIds),
   );
 }
 
-/// Atalho no perfil: rostos de quem reconheceu e o último gesto — abre o
-/// histórico completo.
+List<Recognition> _sheetItems(
+  RecognitionService service,
+  Set<String>? medalIds,
+) {
+  final all = service.received;
+  if (medalIds == null) return all;
+  return [
+    for (final item in all)
+      if (item.kind == RecognitionKind.medal &&
+          medalIds.contains(item.subjectKey))
+        item,
+  ];
+}
+
+/// Atalho no perfil. Peregrino+ vê os rostos; os outros só o número
+/// de corações.
 class RecognitionHistoryCard extends StatelessWidget {
   const RecognitionHistoryCard({super.key});
 
@@ -37,13 +59,16 @@ class RecognitionHistoryCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final l10n = context.l10n;
-    final items = context.watch<RecognitionService>().recent;
+    final plus = context.watch<SubscriptionService>().plusFeaturesOpen;
+    final items = context.watch<RecognitionService>().received;
     final groups = groupRecognitionsBySender(items);
     final latest = items.isEmpty ? null : items.first;
 
     final subtitle = items.isEmpty
         ? l10n.recognitionEmptyCard
-        : _peopleLine(l10n, groups);
+        : plus
+        ? _peopleLine(l10n, groups)
+        : l10n.recognitionCardHearts(items.length);
 
     return Semantics(
       button: true,
@@ -89,7 +114,7 @@ class RecognitionHistoryCard extends StatelessWidget {
                 ListChevron(color: a.textFaint),
               ],
             ),
-            if (latest != null) ...[
+            if (plus && latest != null) ...[
               const SizedBox(height: AppSpace.md),
               InsetPanel(
                 padding: const EdgeInsets.fromLTRB(
@@ -156,19 +181,25 @@ class RecognitionHistoryCard extends StatelessWidget {
 }
 
 class _RecognitionHistorySheet extends StatelessWidget {
-  const _RecognitionHistorySheet();
+  final Set<String>? medalIds;
+
+  const _RecognitionHistorySheet({this.medalIds});
 
   @override
   Widget build(BuildContext context) {
     final l10n = context.l10n;
     final service = context.watch<RecognitionService>();
-    final items = service.recent;
+    final plus = context.watch<SubscriptionService>().plusFeaturesOpen;
+    final items = _sheetItems(service, medalIds);
     final groups = groupRecognitionsBySender(items);
     final loading = service.recentLoading && items.isEmpty;
+    final revealNames = plus || items.isEmpty;
 
     final summary = items.isEmpty
         ? l10n.recognitionSummaryEmpty
-        : l10n.recognitionSummaryCounts(items.length, groups.length);
+        : revealNames
+        ? l10n.recognitionSummaryCounts(items.length, groups.length)
+        : l10n.recognitionCardHearts(items.length);
 
     return AppSheetPanel(
       child: ConstrainedBox(
@@ -197,6 +228,8 @@ class _RecognitionHistorySheet extends StatelessWidget {
                     )
                   : items.isEmpty
                   ? _EmptySheet(message: l10n.recognitionEmptySheet)
+                  : !revealNames
+                  ? _LockedWho(items: items)
                   : ListView.separated(
                       shrinkWrap: true,
                       padding: const EdgeInsets.only(bottom: AppSpace.lg),
@@ -219,6 +252,169 @@ class _RecognitionHistorySheet extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+/// Sem Peregrino+: o que foi visto, sem o nome de quem tocou.
+class _LockedWho extends StatelessWidget {
+  final List<Recognition> items;
+
+  const _LockedWho({required this.items});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final l10n = context.l10n;
+    final seen = <String>{};
+    final chips = <Recognition>[
+      for (final item in items)
+        if (seen.add('${item.kind.name}:${item.subjectKey}')) item,
+    ];
+
+    return ListView(
+      shrinkWrap: true,
+      padding: const EdgeInsets.only(bottom: AppSpace.lg),
+      children: [
+        Text(
+          l10n.recognitionWhoLockedBody,
+          textAlign: TextAlign.center,
+          style: AppTypography.body(
+            size: 14,
+            height: 1.4,
+            color: a.textSecondary,
+          ),
+        ),
+        const SizedBox(height: AppSpace.lg),
+        Wrap(
+          spacing: 6,
+          runSpacing: 6,
+          alignment: WrapAlignment.center,
+          children: [for (final item in chips) _SubjectChip(item: item)],
+        ),
+        const SizedBox(height: AppSpace.lg),
+        CopperCta(
+          label: l10n.weeklyReviewSeePlus,
+          dense: true,
+          leading: CinematicGlyph.crown,
+          trailing: null,
+          onTap: () {
+            final nav = Navigator.of(context);
+            nav.pop();
+            nav.push(
+              MaterialPageRoute<void>(
+                builder: (_) => const PaywallScreen(source: 'recognition'),
+              ),
+            );
+          },
+        ),
+      ],
+    );
+  }
+}
+
+/// Coração com o número — no canto da medalha e no cofre.
+class HeartCountMark extends StatelessWidget {
+  final int count;
+  final VoidCallback? onTap;
+  final bool compact;
+
+  const HeartCountMark({
+    super.key,
+    required this.count,
+    this.onTap,
+    this.compact = false,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    if (count <= 0) return const SizedBox.shrink();
+    final l10n = context.l10n;
+    final mark = DecoratedBox(
+      decoration: BoxDecoration(
+        color: AppRoles.success.withValues(alpha: compact ? 0.92 : 0.16),
+        borderRadius: BorderRadius.circular(compact ? 10 : 22),
+        border: Border.all(
+          color: compact
+              ? Appearance.of(context).cardFill
+              : AppRoles.success.withValues(alpha: 0.7),
+          width: compact ? 1.5 : 1,
+        ),
+      ),
+      child: Padding(
+        padding: EdgeInsets.symmetric(
+          horizontal: compact ? 5 : 8,
+          vertical: compact ? 2 : 6,
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            CinematicIcon(
+              glyph: CinematicGlyph.heart,
+              size: compact ? 12 : AppMetrics.iconSm,
+              accent: compact ? AppColors.textOnDark : AppRoles.success,
+              framed: false,
+            ),
+            SizedBox(width: compact ? 2 : 4),
+            Text(
+              '$count',
+              style: AppTypography.title(
+                size: compact ? 10 : 14,
+                color: compact ? AppColors.textOnDark : AppRoles.success,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+
+    return Semantics(
+      button: onTap != null,
+      label: l10n.recognitionHeartOnMedal(count),
+      excludeSemantics: true,
+      child: onTap == null
+          ? IgnorePointer(child: mark)
+          : Material(
+              color: Colors.transparent,
+              child: InkWell(
+                onTap: onTap,
+                borderRadius: BorderRadius.circular(22),
+                child: mark,
+              ),
+            ),
+    );
+  }
+}
+
+/// Número de corações recebidos nesta medalha. O toque abre quem foi,
+/// ou a folha travada quando não há Peregrino+.
+class ReceivedHeartBadge extends StatelessWidget {
+  final Set<String> subjectKeys;
+  final bool compact;
+
+  const ReceivedHeartBadge({
+    super.key,
+    required this.subjectKeys,
+    this.compact = false,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    if (subjectKeys.isEmpty) return const SizedBox.shrink();
+    final count = countRecognitions(
+      context.watch<RecognitionService>().received,
+      kind: RecognitionKind.medal,
+      subjectKeys: subjectKeys,
+    );
+    return HeartCountMark(
+      count: count,
+      compact: compact,
+      onTap: compact
+          ? null
+          : () {
+              ActHaptics.tap();
+              showRecognitionHistorySheet(context, medalIds: subjectKeys);
+            },
     );
   }
 }
@@ -285,8 +481,7 @@ class _SenderCard extends StatelessWidget {
                 source: UserReportSource.recognition,
                 onDone: (outcome) {
                   // Tira do histórico quem acabou de ser bloqueado.
-                  if (outcome == ModerationOutcome.blocked &&
-                      context.mounted) {
+                  if (outcome == ModerationOutcome.blocked && context.mounted) {
                     context.read<RecognitionService>().refreshRecent();
                   }
                 },
@@ -405,10 +600,7 @@ class _EmptySheet extends StatelessWidget {
   Widget build(BuildContext context) {
     final lines = message.split('\n');
     final rest = lines.skip(1).join('\n').trim();
-    return EmptyState(
-      title: lines.first,
-      body: rest.isEmpty ? null : rest,
-    );
+    return EmptyState(title: lines.first, body: rest.isEmpty ? null : rest);
   }
 }
 

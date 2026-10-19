@@ -215,5 +215,41 @@
     "pt": "Ver quem reconheceu",
     "en": "See who recognized you",
     "es": "Ver quién te reconoció"
+  },
+  "recognitionHomeTitleAnonymous": {
+    "pt": "Alguém reconheceu sua jornada",
+    "en": "Someone recognized your journey",
+    "es": "Alguien reconoció tu camino"
+  },
+  "recognitionCardHearts": {
+    "pt": "{count, plural, =1{1 coração na sua jornada} other{{count} corações na sua jornada}}",
+    "en": "{count, plural, =1{1 heart on your journey} other{{count} hearts on your journey}}",
+    "es": "{count, plural, =1{1 corazón en tu camino} other{{count} corazones en tu camino}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "recognitionHeartOnMedal": {
+    "pt": "{count, plural, =1{1 coração nesta medalha} other{{count} corações nesta medalha}}",
+    "en": "{count, plural, =1{1 heart on this medal} other{{count} hearts on this medal}}",
+    "es": "{count, plural, =1{1 corazón en esta medalla} other{{count} corazones en esta medalla}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "recognitionWhoLockedBody": {
+    "pt": "O Peregrino+ mostra quem foi.",
+    "en": "Pilgrim+ shows who it was.",
+    "es": "Peregrino+ muestra quién fue."
+  },
+  "paywallPerkRecognitionTitle": {
+    "pt": "Quem reconheceu",
+    "en": "Who recognized you",
+    "es": "Quién reconoció"
+  },
+  "paywallPerkRecognitionBody": {
+    "pt": "Veja quem da caravana tocou no coração da sua cena e das suas medalhas.",
+    "en": "See who in the caravan tapped the heart on your scene and your medals.",
+    "es": "Mira quién de la caravana tocó el corazón en tu escena y en tus medallas."
   }
 }
