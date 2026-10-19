@@ -351,9 +351,9 @@
     "es": "Esta semana"
   },
   "juntosCaravanWeekTitle": {
-    "pt": "Quem avançou nesta semana?",
-    "en": "Who moved ahead this week?",
-    "es": "¿Quién avanzó esta semana?"
+    "pt": "O ranking da semana",
+    "en": "The weekly ranking",
+    "es": "El ranking de la semana"
   },
   "juntosCaravanMonthTitle": {
     "pt": "Quem mais caminhou neste mês?",
@@ -361,9 +361,9 @@
     "es": "¿Quién caminó más este mes?"
   },
   "juntosCaravanWeekBody": {
-    "pt": "Só passos de cenas novas, de segunda a domingo. No fim da semana, os primeiros sobem de nível e os últimos descem.",
-    "en": "Only steps from new scenes, Monday to Sunday. At the end of the week, the top move up a level and the bottom move down.",
-    "es": "Solo pasos de escenas nuevas, de lunes a domingo. Al final de la semana, los primeros suben de nivel y los últimos bajan."
+    "pt": "É aqui que tudo acontece. Os passos de cenas novas, de segunda a domingo, decidem quem sobe e quem desce.",
+    "en": "This is where it happens. Steps from new scenes, Monday to Sunday, decide who moves up and who moves down.",
+    "es": "Aquí es donde todo pasa. Los pasos de escenas nuevas, de lunes a domingo, deciden quién sube y quién baja."
   },
   "juntosCaravanMonthBody": {
     "pt": "Tudo conta: cenas, tarefas do dia, baús e companhia. Zera todo dia 1 — quem chegou agora também pode liderar.",
@@ -376,14 +376,14 @@
     "es": "Pasos\nde la semana"
   },
   "juntosCaravanWeekStep2": {
-    "pt": "Lugar no\nranking",
-    "en": "Place on the\nleaderboard",
-    "es": "Lugar en\nel ranking"
+    "pt": "Quem\nsobe",
+    "en": "Who moves\nup",
+    "es": "Quién\nsube"
   },
   "juntosCaravanWeekStep3": {
-    "pt": "Sobe ou\ndesce",
-    "en": "Move up\nor down",
-    "es": "Sube o\nbaja"
+    "pt": "Quem\ndesce",
+    "en": "Who moves\ndown",
+    "es": "Quién\nbaja"
   },
   "juntosCaravanMonthStep1": {
     "pt": "Estude\numa cena",
@@ -667,10 +667,15 @@
       "countLabel": "String"
     }
   },
+  "juntosWeekRankingEmptyTitle": {
+    "pt": "Ainda só você",
+    "en": "Still just you",
+    "es": "Todavía solo tú"
+  },
   "juntosWeekRankingEmpty": {
-    "pt": "O ranking da semana só aparece com gente de verdade na caravana.",
-    "en": "The weekly leaderboard only shows up with real people in the caravan.",
-    "es": "El ranking de la semana solo aparece con gente de verdad en la caravana."
+    "pt": "O ranking começa quando outra pessoa entra na caravana.",
+    "en": "The ranking starts when someone else joins the caravan.",
+    "es": "El ranking empieza cuando otra persona entra en la caravana."
   },
   "juntosPromoteZone": {
     "pt": "Zona de subida · {tier}",

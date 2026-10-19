@@ -60,6 +60,9 @@ class MainShell extends StatefulWidget {
 class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
   int _index = 0;
 
+  /// Cada toque em Juntos no menu pede a aba Caravana de novo.
+  int _caravanaVisit = 0;
+
   /// Abas já montadas. A aberta monta na hora; as demais entram uma por vez
   /// depois que a Home assenta — a 1ª abertura não constrói as cinco juntas.
   final Set<int> _built = {};
@@ -604,6 +607,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
               () => LeagueScreen(
                 topBar: tabBar(3),
                 active: _index == 3,
+                caravanaVisit: _caravanaVisit,
                 onOpenOwnProfile: _openProfile,
                 onOpenMission: _openMission,
                 onGoToday: () => setState(() => _index = 0),
@@ -627,6 +631,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
           currentIndex: _index,
           onTap: (i) => setState(() {
             if (_index == 2 && i != 2) unawaited(TtsService.instance.stop());
+            if (i == 3) _caravanaVisit++;
             _index = i;
           }),
           immersive: true,

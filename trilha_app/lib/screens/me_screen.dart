@@ -9,6 +9,7 @@ import '../services/backend_service.dart';
 import '../services/corner_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
+import '../services/remote_config_service.dart';
 import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -122,6 +123,8 @@ class _MeScreenState extends State<MeScreen> {
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
     final backend = context.watch<BackendService>();
+    // Desafio fechado: o recorde não aparece no Perfil.
+    final challengeOn = context.watch<RemoteConfigService>().challengeEnabled;
     final record = context.watch<CornerService>().record;
     final sub = context.watch<SubscriptionService>();
     final plusOpen = sub.plusFeaturesOpen;
@@ -151,7 +154,7 @@ class _MeScreenState extends State<MeScreen> {
       final top = context.l10n.profileDaysOnTop(leaderDays);
       epithet = epithet == null ? top : '$epithet · $top';
     }
-    if (!record.isEmpty) {
+    if (challengeOn && !record.isEmpty) {
       epithet = epithet == null ? record.line : '$epithet · ${record.line}';
     }
 
@@ -203,7 +206,7 @@ class _MeScreenState extends State<MeScreen> {
                 progress.lifetimeQuestionsAnswered,
             rank: _overallRank,
             leaderDays: leaderDays,
-            recordLine: record.isEmpty ? null : record.line,
+            recordLine: !challengeOn || record.isEmpty ? null : record.line,
           ),
         ),
       const SizedBox(height: AppSpace.section),

@@ -47,7 +47,7 @@ import '../widgets/user_avatar.dart';
 import '../widgets/recognition_actions.dart';
 import '../widgets/room_roster.dart';
 import '../widgets/room_panels.dart';
-import 'groups_soon_screen.dart';
+import 'coming_soon_screen.dart';
 import 'lesson_screen.dart';
 
 /// Altura comum quando CTA ouro e fantasma ficam lado a lado
@@ -59,6 +59,10 @@ class LeagueScreen extends StatefulWidget {
 
   /// Quando a aba Juntos está visível — processa deep link pendente.
   final bool active;
+
+  /// Sobe a cada toque em Juntos no menu. A aba volta para Caravana.
+  final int caravanaVisit;
+
   final VoidCallback? onOpenOwnProfile;
 
   /// Abre uma missão (desafio do canto) e volta para a missão de hoje
@@ -70,6 +74,7 @@ class LeagueScreen extends StatefulWidget {
     super.key,
     this.topBar,
     this.active = true,
+    this.caravanaVisit = 0,
     this.onOpenOwnProfile,
     this.onOpenMission,
     this.onGoToday,
@@ -99,14 +104,13 @@ class _LeagueScreenState extends State<LeagueScreen>
     ];
   }
 
-  /// Variante A: Companhia primeiro (fosso), depois Caravana, depois Grupos.
   static const _tabCompanhia = 0;
   static const _tabCaravana = 1;
   static const _tabGrupos = 2;
 
-  int _tab = _tabCompanhia;
+  int _tab = _tabCaravana;
   int _companhiaPane = 0; // 0 = amizade, 1 = desafio
-  int _caravanPane = 0; // 0 = mês, 1 = semana
+  int _caravanPane = 0; // 0 = semana, 1 = mês
   bool _handlingInvite = false;
   bool _playersLoading = false;
   bool _playersLoadedOnce = false;
@@ -129,6 +133,10 @@ class _LeagueScreenState extends State<LeagueScreen>
   @override
   void didUpdateWidget(covariant LeagueScreen oldWidget) {
     super.didUpdateWidget(oldWidget);
+    if (widget.caravanaVisit != oldWidget.caravanaVisit) {
+      _tab = _tabCaravana;
+      _caravanPane = 0;
+    }
     if (widget.active && !oldWidget.active) {
       _consumePendingInvite();
       // Recarrega ranking ao abrir a aba — evita lista vazia se o 1º fetch
@@ -146,9 +154,14 @@ class _LeagueScreenState extends State<LeagueScreen>
     if (!mounted || _handlingInvite) return;
     final links = InviteDeepLinkService.instance;
     final roomCode = links.takePendingRoomCode();
-    if (roomCode != null && !RemoteConfigService.instance.groupsEnabled) {
+    final rc = RemoteConfigService.instance;
+    if (roomCode != null && !rc.groupsEnabled) {
       links.takeWantGruposTab();
-      await openGroupsSoon(context, source: 'invite_link');
+      await openComingSoon(
+        context,
+        ComingSoonFeature.groups,
+        source: 'invite_link',
+      );
       return;
     }
     if (roomCode != null) {
@@ -162,7 +175,10 @@ class _LeagueScreenState extends State<LeagueScreen>
       }
       return;
     }
-    if (links.takeWantCompanhiaTab()) {
+    // Companhia fechada: o pedido de aba cai na Caravana; o painel resolve
+    // para o Desafio se só ele estiver aberto.
+    if (links.takeWantCompanhiaTab() &&
+        (rc.companionEnabled || rc.challengeEnabled)) {
       setState(() {
         _tab = _tabCompanhia;
         _companhiaPane = 0;
@@ -170,6 +186,14 @@ class _LeagueScreenState extends State<LeagueScreen>
     }
     final code = links.takePendingCompanionCode();
     if (code == null) return;
+    if (!rc.companionEnabled) {
+      await openComingSoon(
+        context,
+        ComingSoonFeature.companion,
+        source: 'invite_link',
+      );
+      return;
+    }
     _handlingInvite = true;
     setState(() {
       _tab = _tabCompanhia;
@@ -372,9 +396,20 @@ class _LeagueScreenState extends State<LeagueScreen>
     final roomIncoming = listen
         ? context.watch<RoomService>().incoming
         : context.read<RoomService>().incoming;
-    final groupsOn = listen
-        ? context.watch<RemoteConfigService>().groupsEnabled
-        : context.read<RemoteConfigService>().groupsEnabled;
+    final rc = listen
+        ? context.watch<RemoteConfigService>()
+        : context.read<RemoteConfigService>();
+    final groupsOn = rc.groupsEnabled;
+    final companionOn = rc.companionEnabled;
+    final challengeOn = rc.challengeEnabled;
+    // A aba Companhia abre com a companhia ou com o desafio.
+    final companhiaOn = companionOn || challengeOn;
+    // Aba fechada mostra a vizinha aberta; a Caravana sempre abre.
+    final tab = switch (_tab) {
+      _tabGrupos when !groupsOn => companhiaOn ? _tabCompanhia : _tabCaravana,
+      _tabCompanhia when !companhiaOn => _tabCaravana,
+      _ => _tab,
+    };
     return Stack(
       children: [
         RefreshIndicator(
@@ -413,18 +448,31 @@ class _LeagueScreenState extends State<LeagueScreen>
                         _reveal(
                           0,
                           _SegmentTabs(
-                            index: _tab,
+                            index: tab,
                             caravanAlert:
                                 JuntosInbox.caravanPending(context) > 0,
                             companionAlert:
-                                companionNudge != null || cornerFace != null,
+                                (companionOn && companionNudge != null) ||
+                                (challengeOn && cornerFace != null),
                             gruposAlert: groupsOn && roomIncoming.isNotEmpty,
                             onChanged: (i) {
                               ActHaptics.tap();
-                              // Grupos fechados: aviso em tela inteira, a
-                              // aba atual fica.
+                              // Aba fechada: aviso em tela inteira, a aba
+                              // atual fica.
                               if (i == _tabGrupos && !groupsOn) {
-                                openGroupsSoon(context, source: 'tab');
+                                openComingSoon(
+                                  context,
+                                  ComingSoonFeature.groups,
+                                  source: 'tab',
+                                );
+                                return;
+                              }
+                              if (i == _tabCompanhia && !companhiaOn) {
+                                openComingSoon(
+                                  context,
+                                  ComingSoonFeature.companion,
+                                  source: 'tab',
+                                );
                                 return;
                               }
                               setState(() => _tab = i);
@@ -452,12 +500,9 @@ class _LeagueScreenState extends State<LeagueScreen>
                             );
                           },
                           child: Column(
-                            key: ValueKey(_tab),
+                            key: ValueKey(tab),
                             crossAxisAlignment: CrossAxisAlignment.stretch,
-                            children: switch (_tab) {
-                              _tabGrupos when !groupsOn => _buildCompanions(
-                                context,
-                              ),
+                            children: switch (tab) {
                               _tabCompanhia => _buildCompanions(context),
                               _tabCaravana => [
                                 JuntosInbox(
@@ -520,7 +565,7 @@ class _LeagueScreenState extends State<LeagueScreen>
     context.select((BackendService b) => (b.uid, b.userPhotoUrl));
     final backend = context.read<BackendService>();
     final pane = _caravanPane.clamp(0, 1);
-    final weekly = pane == 1;
+    final weekly = pane == 0;
     final children = <Widget>[
       _reveal(
         1,
@@ -617,16 +662,18 @@ class _LeagueScreenState extends State<LeagueScreen>
         trailing: null,
         onTap: () => _shareCaravanInvite(context),
       ),
-      const SizedBox(height: AppSpace.sm),
-      GhostCta(
-        label: context.l10n.juntosOrInviteCompanion,
-        leading: CinematicGlyph.link,
-        expanded: true,
-        onTap: () => setState(() {
-          _tab = _tabCompanhia;
-          _companhiaPane = 0;
-        }),
-      ),
+      if (context.watch<RemoteConfigService>().companionEnabled) ...[
+        const SizedBox(height: AppSpace.sm),
+        GhostCta(
+          label: context.l10n.juntosOrInviteCompanion,
+          leading: CinematicGlyph.link,
+          expanded: true,
+          onTap: () => setState(() {
+            _tab = _tabCompanhia;
+            _companhiaPane = 0;
+          }),
+        ),
+      ],
     ]);
 
     return children;
@@ -638,7 +685,11 @@ class _LeagueScreenState extends State<LeagueScreen>
     context.select((ProgressService p) => p.userName);
     final progress = context.read<ProgressService>();
     final corners = context.watch<CornerService>();
-    final pane = _companhiaPane.clamp(0, 1);
+    final rc = context.watch<RemoteConfigService>();
+    // Painel fechado cai no outro (a aba só abre com um dos dois aberto).
+    var pane = _companhiaPane.clamp(0, 1);
+    if (pane == 0 && !rc.companionEnabled) pane = 1;
+    if (pane == 1 && !rc.challengeEnabled) pane = 0;
 
     Widget? stageBody;
     if (pane == 0 && companions.isLoaded && companions.companions.isEmpty) {
@@ -652,10 +703,19 @@ class _LeagueScreenState extends State<LeagueScreen>
         1,
         _CompanhiaStageCard(
           pane: pane,
-          companionAlert: companions.incomingNudge != null,
-          desafioAlert: corners.face != null,
-          onPaneChanged: (value) =>
-              setState(() => _companhiaPane = value.clamp(0, 1)),
+          companionAlert:
+              rc.companionEnabled && companions.incomingNudge != null,
+          desafioAlert: rc.challengeEnabled && corners.face != null,
+          onPaneChanged: (value) {
+            final closed = value == 0
+                ? (rc.companionEnabled ? null : ComingSoonFeature.companion)
+                : (rc.challengeEnabled ? null : ComingSoonFeature.challenge);
+            if (closed != null) {
+              openComingSoon(context, closed, source: 'pane');
+              return;
+            }
+            setState(() => _companhiaPane = value.clamp(0, 1));
+          },
           body: stageBody,
         ),
       ),
@@ -1627,8 +1687,8 @@ class _CaravanStageCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final weekly = pane == 1;
-    // Submenu mês/semana = presença; ouro do ranking fica na lista.
+    final weekly = pane == 0;
+    // Submenu semana/mês = presença; ouro do ranking fica na lista.
     return GlassCard(
       tint: AppRoles.presence,
       glow: 0.32,
@@ -1644,14 +1704,14 @@ class _CaravanStageCard extends StatelessWidget {
             },
             items: [
               (
-                label: context.l10n.juntosThisMonth,
-                glyph: CinematicGlyph.path,
+                label: context.l10n.juntosThisWeek,
+                glyph: CinematicGlyph.calendar,
                 mark: null,
                 alert: false,
               ),
               (
-                label: context.l10n.juntosThisWeek,
-                glyph: CinematicGlyph.calendar,
+                label: context.l10n.juntosThisMonth,
+                glyph: CinematicGlyph.path,
                 mark: null,
                 alert: false,
               ),
@@ -1683,8 +1743,8 @@ class _CaravanExplainer extends StatelessWidget {
     final steps = weekly
         ? [
             (CinematicGlyph.calendar, l10n.juntosCaravanWeekStep1),
-            (CinematicGlyph.podium, l10n.juntosCaravanWeekStep2),
-            (CinematicGlyph.rise, l10n.juntosCaravanWeekStep3),
+            (CinematicGlyph.rise, l10n.juntosCaravanWeekStep2),
+            (CinematicGlyph.demote, l10n.juntosCaravanWeekStep3),
           ]
         : [
             (CinematicGlyph.path, l10n.juntosCaravanMonthStep1),
@@ -2541,8 +2601,19 @@ class _LeaderboardBoard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
     final list = weekly ? weeklyEntries : entries;
+    // Sem outro peregrino o ranking semanal não existe: o Anan ocupa o lugar.
+    if (weekly && (!weeklyCompetitive || list.isEmpty)) {
+      return GlassCard(
+        padding: EdgeInsets.zero,
+        child: EmptyState(
+          title: context.l10n.juntosWeekRankingEmptyTitle,
+          body: context.l10n.juntosWeekRankingEmpty,
+        ),
+      );
+    }
+
+    final a = Appearance.of(context);
     final online = LeagueService.onlineNow(entries);
     final countLabel = LeagueService.onlineCountLabel(online.length);
 
@@ -2621,64 +2692,47 @@ class _LeaderboardBoard extends StatelessWidget {
         ),
     ];
 
-    if (weekly && (!weeklyCompetitive || list.isEmpty)) {
-      rows.add(
-        Padding(
-          padding: const EdgeInsets.fromLTRB(14, 8, 14, 16),
-          child: Text(
-            context.l10n.juntosWeekRankingEmpty,
-            textAlign: TextAlign.center,
-            style: AppTypography.body(
-              size: 13,
-              height: 1.35,
-              color: a.textSecondary,
-            ),
-          ),
-        ),
-      );
-    } else {
-      for (var i = 0; i < list.length; i++) {
-        final rank = i + 1;
-        if (weekly && rank == 1 && canPromote) {
-          rows.add(
-            _WeekZoneLabel(
-              text: context.l10n.juntosPromoteZone(
-                LeagueTier.values[tierIndex + 1].shortLabel,
-              ),
-              up: true,
-            ),
-          );
-        }
-        if (weekly &&
-            LeagueService.demoteCountFor(list.length) > 0 &&
-            rank ==
-                list.length - LeagueService.demoteCountFor(list.length) + 1 &&
-            canDemote) {
-          rows.add(
-            _WeekZoneLabel(
-              text: context.l10n.juntosDemoteZone(
-                LeagueTier.values[tierIndex - 1].shortLabel,
-              ),
-              up: false,
-            ),
-          );
-        }
+    for (var i = 0; i < list.length; i++) {
+      final rank = i + 1;
+      if (weekly && rank == 1 && canPromote) {
         rows.add(
-          _StandingRow(
-            entry: list[i],
-            rank: rank,
-            weeklySteps: weekly,
-            gapToAbove: i == 0 ? 0 : list[i - 1].steps - list[i].steps,
-            showDivider: i < list.length - 1 && !list[i + 1].isUser,
-            onOpenOwnProfile: onOpenOwnProfile,
+          _WeekZoneLabel(
+            text: context.l10n.juntosPromoteZone(
+              LeagueTier.values[tierIndex + 1].shortLabel,
+            ),
+            up: true,
           ),
         );
-        if (weekly &&
-            rank == LeagueService.promoteCountFor(list.length) &&
-            rank < list.length &&
-            canPromote) {
-          rows.add(const _WeekZoneDivider());
-        }
+      }
+      if (weekly &&
+          LeagueService.demoteCountFor(list.length) > 0 &&
+          rank ==
+              list.length - LeagueService.demoteCountFor(list.length) + 1 &&
+          canDemote) {
+        rows.add(
+          _WeekZoneLabel(
+            text: context.l10n.juntosDemoteZone(
+              LeagueTier.values[tierIndex - 1].shortLabel,
+            ),
+            up: false,
+          ),
+        );
+      }
+      rows.add(
+        _StandingRow(
+          entry: list[i],
+          rank: rank,
+          weeklySteps: weekly,
+          gapToAbove: i == 0 ? 0 : list[i - 1].steps - list[i].steps,
+          showDivider: i < list.length - 1 && !list[i + 1].isUser,
+          onOpenOwnProfile: onOpenOwnProfile,
+        ),
+      );
+      if (weekly &&
+          rank == LeagueService.promoteCountFor(list.length) &&
+          rank < list.length &&
+          canPromote) {
+        rows.add(const _WeekZoneDivider());
       }
     }
 

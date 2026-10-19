@@ -18,6 +18,7 @@ import '../services/companion_service.dart';
 import '../services/corner_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
+import '../services/remote_config_service.dart';
 import '../services/sound_service.dart';
 import '../services/room_service.dart';
 import '../theme/app_theme.dart';
@@ -292,7 +293,8 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     final companions = context.read<CompanionService>();
     final hasPartner = companions.companions.any((c) => !c.awaitingPartner);
     // Companhia no 2º dia seguido — Friend Streak, não na 1ª missão.
-    if (progress.streak >= 2 &&
+    if (RemoteConfigService.instance.companionEnabled &&
+        progress.streak >= 2 &&
         !progress.companionInviteOffered &&
         !hasPartner &&
         companions.companions.isEmpty) {
@@ -455,7 +457,9 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                   break;
                 }
               }
-              if (closed != null && mounted) {
+              if (closed != null &&
+                  mounted &&
+                  RemoteConfigService.instance.challengeEnabled) {
                 setState(() => _closedCorner = closed);
               }
             }

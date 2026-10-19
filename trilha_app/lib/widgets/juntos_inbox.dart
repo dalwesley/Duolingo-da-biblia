@@ -28,9 +28,13 @@ class JuntosInbox extends StatelessWidget {
   /// Novidades de Juntos para o cartão da Home. O desafio tem linha própria.
   static int pending(BuildContext context) {
     var n = caravanPending(context);
-    if (context.watch<CompanionService>().incomingNudge != null) n++;
-    // Convites de grupo só contam com os grupos abertos.
-    if (context.watch<RemoteConfigService>().groupsEnabled) {
+    final rc = context.watch<RemoteConfigService>();
+    // Aceno e convites de grupo só contam com a companhia e os grupos abertos.
+    if (rc.companionEnabled &&
+        context.watch<CompanionService>().incomingNudge != null) {
+      n++;
+    }
+    if (rc.groupsEnabled) {
       n += context.watch<RoomService>().incoming.length;
     }
     return n;

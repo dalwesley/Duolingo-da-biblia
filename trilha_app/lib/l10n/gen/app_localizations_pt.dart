@@ -111,7 +111,7 @@ class AppLocalizationsPt extends AppLocalizations {
       'Jesus, a Palavra que se fez carne — um bom começo.';
 
   @override
-  String get bibleHeroStartHere => 'Comece por aqui';
+  String get bibleHeroStartHere => 'Continuar leitura';
 
   @override
   String get bibleHeroStartReading => 'Começar a ler';
@@ -621,6 +621,26 @@ class AppLocalizationsPt extends AppLocalizations {
   String get celebrationTomorrowKicker => 'Amanhã';
 
   @override
+  String get challengeSoonBody =>
+      'Estamos preparando o desafio: você chama alguém e os dois fazem a mesma cena até domingo. Aguarde: quando abrir, você fica sabendo aqui.';
+
+  @override
+  String get challengeSoonItemCall => 'Chame alguém da Caravana';
+
+  @override
+  String get challengeSoonItemScene => 'A mesma cena para os dois, até domingo';
+
+  @override
+  String get challengeSoonItemWin => 'Ganha quem acertar mais';
+
+  @override
+  String get challengeSoonJoined =>
+      'Combinado! Avisaremos você quando o desafio abrir.';
+
+  @override
+  String get challengeSoonTitle => 'O desafio está chegando';
+
+  @override
   String get chestBencaoMessage =>
       '\"O Senhor te abençoe e te guarde\" — Números 6:24.';
 
@@ -735,6 +755,26 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get comebackTitle => 'Sua sequência te espera';
+
+  @override
+  String get comingSoonComingHeader => 'O que vem por aí';
+
+  @override
+  String get comingSoonEyebrow => 'Em breve';
+
+  @override
+  String get comingSoonMeanwhileCaravan =>
+      'Enquanto isso, siga na Caravana: cada cena conta passos na semana.';
+
+  @override
+  String get comingSoonMeanwhileCompanion =>
+      'Enquanto isso, chame alguém para caminhar com você na Companhia e siga na Caravana.';
+
+  @override
+  String get comingSoonNotifyMe => 'Quero ser avisado';
+
+  @override
+  String get comingSoonSaving => 'Guardando…';
 
   @override
   String get commonActive => 'Ativo';
@@ -1038,6 +1078,27 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get companionSheetPromptTitleDay2 => 'Caminha com alguém';
+
+  @override
+  String get companionSoonBody =>
+      'Estamos preparando a companhia: alguém para caminhar com você, um dia de cada vez. Aguarde: quando abrir, você fica sabendo aqui.';
+
+  @override
+  String get companionSoonItemNudge =>
+      'Um aceno lembra quem ainda não caminhou';
+
+  @override
+  String get companionSoonItemPair => 'Uma pessoa caminha com você';
+
+  @override
+  String get companionSoonItemToday => 'Vocês veem quem já caminhou hoje';
+
+  @override
+  String get companionSoonJoined =>
+      'Combinado! Avisaremos você quando a companhia abrir.';
+
+  @override
+  String get companionSoonTitle => 'A companhia está chegando';
 
   @override
   String get companionWalkedTogetherToday => 'Vocês caminharam juntos hoje';
@@ -2342,12 +2403,6 @@ class AppLocalizationsPt extends AppLocalizations {
       'Estamos preparando os grupos para células, discipulado e EBD. Aguarde: quando abrirem, você fica sabendo aqui.';
 
   @override
-  String get groupsSoonComingHeader => 'O que vem por aí';
-
-  @override
-  String get groupsSoonEyebrow => 'Em breve';
-
-  @override
   String get groupsSoonItemLeader => 'O líder acompanha quem já fez';
 
   @override
@@ -2360,16 +2415,6 @@ class AppLocalizationsPt extends AppLocalizations {
   @override
   String get groupsSoonJoined =>
       'Combinado! Avisaremos você quando os grupos abrirem.';
-
-  @override
-  String get groupsSoonMeanwhile =>
-      'Enquanto isso, chame alguém para caminhar com você na Companhia e siga na Caravana.';
-
-  @override
-  String get groupsSoonNotifyMe => 'Quero ser avisado';
-
-  @override
-  String get groupsSoonSaving => 'Guardando…';
 
   @override
   String get groupsSoonTitle => 'Os grupos estão chegando';
@@ -2940,19 +2985,19 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get juntosCaravanWeekBody =>
-      'Só passos de cenas novas, de segunda a domingo. No fim da semana, os primeiros sobem de nível e os últimos descem.';
+      'É aqui que tudo acontece. Os passos de cenas novas, de segunda a domingo, decidem quem sobe e quem desce.';
 
   @override
   String get juntosCaravanWeekStep1 => 'Passos\nda semana';
 
   @override
-  String get juntosCaravanWeekStep2 => 'Lugar no\nranking';
+  String get juntosCaravanWeekStep2 => 'Quem\nsobe';
 
   @override
-  String get juntosCaravanWeekStep3 => 'Sobe ou\ndesce';
+  String get juntosCaravanWeekStep3 => 'Quem\ndesce';
 
   @override
-  String get juntosCaravanWeekTitle => 'Quem avançou nesta semana?';
+  String get juntosCaravanWeekTitle => 'O ranking da semana';
 
   @override
   String juntosChallengeExplainerBody(String reward) {
@@ -3454,7 +3499,10 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get juntosWeekRankingEmpty =>
-      'O ranking da semana só aparece com gente de verdade na caravana.';
+      'O ranking começa quando outra pessoa entra na caravana.';
+
+  @override
+  String get juntosWeekRankingEmptyTitle => 'Ainda só você';
 
   @override
   String juntosWeekTogetherBonus(int count) {
@@ -6432,6 +6480,9 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get plusNoticeFreeSocial => 'Liga, Caravana e companhia';
+
+  @override
+  String get plusNoticeFreeSocialCaravan => 'Liga e Caravana';
 
   @override
   String get plusNoticeFreeStreak => 'Sua sequência diária e os lembretes';

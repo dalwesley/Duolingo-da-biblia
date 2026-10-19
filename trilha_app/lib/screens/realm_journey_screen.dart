@@ -71,115 +71,6 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
     super.dispose();
   }
 
-  List<JourneyPathItem> _buildItems(
-    List<String> completed, {
-    Map<String, List<String>> clearedTrailModes = const {},
-    Map<String, String> trailDifficulties = const {},
-  }) {
-    final realmTrails =
-        widget.allTrails
-            .where((t) => TrailRealm.fromId(t.realmId) == widget.realm)
-            .toList()
-          ..sort((a, b) {
-            final ca = TrailCategory.fromId(a.categoryId).order;
-            final cb = TrailCategory.fromId(b.categoryId).order;
-            if (ca != cb) return ca.compareTo(cb);
-            return a.order.compareTo(b.order);
-          });
-
-    var sawCurrent = false;
-    final items = <JourneyPathItem>[];
-
-    for (final trail in realmTrails) {
-      final unlocked = TrailProgress.isTrailUnlocked(
-        trail,
-        widget.allTrails,
-        completed,
-        clearedTrailModes: clearedTrailModes,
-      );
-      final done = TrailProgress.isTrailCompleted(
-        trail,
-        completed,
-        clearedTrailModes: clearedTrailModes,
-      );
-      final prog = TrailProgress.getProgress(
-        trail,
-        completed,
-        clearedTrailModes: clearedTrailModes,
-      );
-      final hasContent = trail.missionSlugs.isNotEmpty && !trail.comingSoon;
-      final cleared = clearedTrailModes[trail.slug] ?? const <String>[];
-      final live = TrailProgress.getLiveProgress(trail, completed);
-      final storedId = TrailProgress.resolvedDifficultyId(
-        trail.slug,
-        trailDifficulties[trail.slug],
-      );
-      final openId = TrailProgress.openDifficultyId(
-        activeDifficultyId: storedId,
-        clearedModes: cleared,
-      );
-      final replaying = TrailProgress.isReplayingUnclearedMode(
-        clearedModes: cleared,
-        activeDifficultyId: storedId,
-        liveDone: live.done,
-        total: live.total,
-      );
-      final clearedLabel = TrailProgress.clearedModeStatusLabel(cleared);
-      final String? statusLabel;
-      if (done && clearedLabel != null) {
-        if (replaying) {
-          statusLabel = context.l10n.journeyModeInProgress(
-            TrailProgress.modeLabel(storedId),
-          );
-        } else if (openId != null && !cleared.contains(openId)) {
-          statusLabel = context.l10n.journeyModeAhead(
-            TrailProgress.modeLabel(openId),
-          );
-        } else {
-          statusLabel = clearedLabel;
-        }
-      } else if (!done && unlocked && hasContent && storedId != null) {
-        statusLabel = TrailProgress.activeModeProgressLabel(
-          clearedModes: cleared,
-          activeDifficultyId: storedId,
-          liveDone: live.done,
-          total: live.total,
-        );
-      } else {
-        statusLabel = null;
-      }
-
-      final JourneyNodeState state;
-      if (!unlocked) {
-        state = JourneyNodeState.locked;
-      } else if (done) {
-        state = JourneyNodeState.completed;
-      } else if (!hasContent) {
-        state = JourneyNodeState.soon;
-      } else if (!sawCurrent) {
-        state = JourneyNodeState.current;
-        sawCurrent = true;
-      } else {
-        state = JourneyNodeState.upcoming;
-      }
-
-      items.add(
-        JourneyPathItem(
-          trail: trail,
-          state: state,
-          category: TrailCategory.fromId(trail.categoryId),
-          done: prog.done,
-          total: prog.total,
-          statusLabel: statusLabel,
-          clearedModeIds: cleared,
-          activeDifficultyId: openId ?? storedId,
-        ),
-      );
-    }
-
-    return items;
-  }
-
   void _jumpToCurrent() {
     if (!mounted) return;
     final ctx = _currentKey.currentContext;
@@ -202,84 +93,17 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
     Future.delayed(const Duration(milliseconds: 180), _jumpToCurrent);
   }
 
-  void _onNodeTap(JourneyPathItem item) {
-    ActHaptics.tap();
-    final trail = item.trail;
-    final canOpen =
-        item.state == JourneyNodeState.current ||
-        item.state == JourneyNodeState.completed ||
-        item.state == JourneyNodeState.upcoming;
-
-    if (canOpen && trail.missionSlugs.isNotEmpty && !trail.comingSoon) {
-      Navigator.of(context).push(
-        PageRouteBuilder(
-          transitionDuration: AppMotion.slow,
-          pageBuilder: (_, animation, secondaryAnimation) {
-            return FadeTransition(
-              opacity: CurvedAnimation(
-                parent: animation,
-                curve: AppMotion.enter,
-              ),
-              child: TrailMapScreen(slug: trail.slug),
-            );
-          },
-        ),
-      );
-      return;
-    }
-
-    _showSoonSheet(item);
-  }
-
-  void _showSoonSheet(JourneyPathItem item) {
-    final visuals = RealmVisuals.of(widget.realm);
-    showAppSheet<void>(
-      context,
-      builder: (ctx) {
-        return AppSheetPanel(
-          padding: const EdgeInsets.fromLTRB(
-            AppSpace.xxl,
-            AppSpace.md,
-            AppSpace.xxl,
-            AppSpace.xxl,
-          ),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              const SizedBox(height: AppSpace.sm),
-              AppSheetHeader(
-                face: CloudFace.triste,
-                title: item.trail.localizedTitle,
-                subtitle: item.trail.localizedDescription,
-                center: true,
-              ),
-              const SizedBox(height: AppSpace.xxl),
-              Text(
-                item.state == JourneyNodeState.locked
-                    ? context.l10n.journeyLockedHint
-                    : context.l10n.journeySoonHint,
-                textAlign: TextAlign.center,
-                style: AppTypography.label(
-                  size: 13,
-                  color: visuals.accent.withValues(alpha: 0.9),
-                  letterSpacing: 0.3,
-                ),
-              ),
-            ],
-          ),
-        );
-      },
-    );
-  }
+  void _onNodeTap(JourneyPathItem item) => openJourneyItem(context, item);
 
   @override
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
     final visuals = RealmVisuals.of(widget.realm);
-    final items = _buildItems(
-      progress.completedMissions,
-      clearedTrailModes: progress.clearedTrailModes,
-      trailDifficulties: progress.trailDifficulties,
+    final items = realmJourneyItems(
+      context,
+      realm: widget.realm,
+      allTrails: widget.allTrails,
+      progress: progress,
     );
     if (!_jumped &&
         items.any((item) => item.state == JourneyNodeState.current)) {
@@ -347,4 +171,180 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
       ),
     );
   }
+}
+
+/// Trilhas de uma área na ordem do cânon, com o estado de cada uma.
+List<JourneyPathItem> realmJourneyItems(
+  BuildContext context, {
+  required TrailRealm realm,
+  required List<Trail> allTrails,
+  required ProgressService progress,
+}) {
+  final completed = progress.completedMissions;
+  final clearedTrailModes = progress.clearedTrailModes;
+  final trailDifficulties = progress.trailDifficulties;
+  final realmTrails =
+      allTrails.where((t) => TrailRealm.fromId(t.realmId) == realm).toList()
+        ..sort((a, b) {
+          final ca = TrailCategory.fromId(a.categoryId).order;
+          final cb = TrailCategory.fromId(b.categoryId).order;
+          if (ca != cb) return ca.compareTo(cb);
+          return a.order.compareTo(b.order);
+        });
+
+  var sawCurrent = false;
+  final items = <JourneyPathItem>[];
+
+  for (final trail in realmTrails) {
+    final unlocked = TrailProgress.isTrailUnlocked(
+      trail,
+      allTrails,
+      completed,
+      clearedTrailModes: clearedTrailModes,
+    );
+    final done = TrailProgress.isTrailCompleted(
+      trail,
+      completed,
+      clearedTrailModes: clearedTrailModes,
+    );
+    final prog = TrailProgress.getProgress(
+      trail,
+      completed,
+      clearedTrailModes: clearedTrailModes,
+    );
+    final hasContent = trail.missionSlugs.isNotEmpty && !trail.comingSoon;
+    final cleared = clearedTrailModes[trail.slug] ?? const <String>[];
+    final live = TrailProgress.getLiveProgress(trail, completed);
+    final storedId = TrailProgress.resolvedDifficultyId(
+      trail.slug,
+      trailDifficulties[trail.slug],
+    );
+    final openId = TrailProgress.openDifficultyId(
+      activeDifficultyId: storedId,
+      clearedModes: cleared,
+    );
+    final replaying = TrailProgress.isReplayingUnclearedMode(
+      clearedModes: cleared,
+      activeDifficultyId: storedId,
+      liveDone: live.done,
+      total: live.total,
+    );
+    final clearedLabel = TrailProgress.clearedModeStatusLabel(cleared);
+    final String? statusLabel;
+    if (done && clearedLabel != null) {
+      if (replaying) {
+        statusLabel = context.l10n.journeyModeInProgress(
+          TrailProgress.modeLabel(storedId),
+        );
+      } else if (openId != null && !cleared.contains(openId)) {
+        statusLabel = context.l10n.journeyModeAhead(
+          TrailProgress.modeLabel(openId),
+        );
+      } else {
+        statusLabel = clearedLabel;
+      }
+    } else if (!done && unlocked && hasContent && storedId != null) {
+      statusLabel = TrailProgress.activeModeProgressLabel(
+        clearedModes: cleared,
+        activeDifficultyId: storedId,
+        liveDone: live.done,
+        total: live.total,
+      );
+    } else {
+      statusLabel = null;
+    }
+
+    final JourneyNodeState state;
+    if (!unlocked) {
+      state = JourneyNodeState.locked;
+    } else if (done) {
+      state = JourneyNodeState.completed;
+    } else if (!hasContent) {
+      state = JourneyNodeState.soon;
+    } else if (!sawCurrent) {
+      state = JourneyNodeState.current;
+      sawCurrent = true;
+    } else {
+      state = JourneyNodeState.upcoming;
+    }
+
+    items.add(
+      JourneyPathItem(
+        trail: trail,
+        state: state,
+        category: TrailCategory.fromId(trail.categoryId),
+        done: prog.done,
+        total: prog.total,
+        statusLabel: statusLabel,
+        clearedModeIds: cleared,
+        activeDifficultyId: openId ?? storedId,
+      ),
+    );
+  }
+
+  return items;
+}
+
+/// Abre a trilha; bloqueada ou sem conteúdo mostra o aviso.
+void openJourneyItem(BuildContext context, JourneyPathItem item) {
+  ActHaptics.tap();
+  final trail = item.trail;
+  final canOpen =
+      item.state == JourneyNodeState.current ||
+      item.state == JourneyNodeState.completed ||
+      item.state == JourneyNodeState.upcoming;
+
+  if (canOpen && trail.missionSlugs.isNotEmpty && !trail.comingSoon) {
+    Navigator.of(context).push(
+      PageRouteBuilder(
+        transitionDuration: AppMotion.slow,
+        pageBuilder: (_, animation, secondaryAnimation) {
+          return FadeTransition(
+            opacity: CurvedAnimation(parent: animation, curve: AppMotion.enter),
+            child: TrailMapScreen(slug: trail.slug),
+          );
+        },
+      ),
+    );
+    return;
+  }
+
+  final visuals = RealmVisuals.of(TrailRealm.fromId(trail.realmId));
+  showAppSheet<void>(
+    context,
+    builder: (ctx) {
+      return AppSheetPanel(
+        padding: const EdgeInsets.fromLTRB(
+          AppSpace.xxl,
+          AppSpace.md,
+          AppSpace.xxl,
+          AppSpace.xxl,
+        ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const SizedBox(height: AppSpace.sm),
+            AppSheetHeader(
+              face: CloudFace.triste,
+              title: trail.localizedTitle,
+              subtitle: trail.localizedDescription,
+              center: true,
+            ),
+            const SizedBox(height: AppSpace.xxl),
+            Text(
+              item.state == JourneyNodeState.locked
+                  ? ctx.l10n.journeyLockedHint
+                  : ctx.l10n.journeySoonHint,
+              textAlign: TextAlign.center,
+              style: AppTypography.label(
+                size: 13,
+                color: visuals.accent.withValues(alpha: 0.9),
+                letterSpacing: 0.3,
+              ),
+            ),
+          ],
+        ),
+      );
+    },
+  );
 }

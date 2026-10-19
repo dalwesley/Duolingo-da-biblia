@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 
 import '../l10n/app_language.dart';
 import '../services/progress_service.dart';
+import '../services/remote_config_service.dart';
 import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -55,7 +56,9 @@ class PlusPromoNoticeScreen extends StatelessWidget {
     final free = [
       l10n.plusNoticeFreeBible,
       l10n.plusNoticeFreeScenes,
-      l10n.plusNoticeFreeSocial,
+      context.watch<RemoteConfigService>().companionEnabled
+          ? l10n.plusNoticeFreeSocial
+          : l10n.plusNoticeFreeSocialCaravan,
       l10n.plusNoticeFreeStreak,
     ];
 
@@ -88,7 +91,12 @@ class PlusPromoNoticeScreen extends StatelessWidget {
                     child: IconButton(
                       tooltip: l10n.commonNotNow,
                       onPressed: () => Navigator.of(context).pop(),
-                      icon: Icon(Icons.close_rounded, color: a.textSecondary),
+                      icon: CinematicIcon(
+                        glyph: CinematicGlyph.close,
+                        size: AppMetrics.iconLg,
+                        accent: a.textSecondary,
+                        framed: false,
+                      ),
                     ),
                   ),
                   Center(

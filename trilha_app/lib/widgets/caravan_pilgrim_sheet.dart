@@ -10,6 +10,7 @@ import '../l10n/app_language.dart';
 import '../services/backend_service.dart';
 import '../services/league_service.dart';
 import '../services/moderation_service.dart';
+import '../services/remote_config_service.dart';
 import '../theme/app_theme.dart';
 import 'act_feel.dart';
 import 'app_sheet.dart';
@@ -190,7 +191,10 @@ class _CaravanPilgrimSheetState extends State<_CaravanPilgrimSheet> {
                             catalog: _catalog,
                           ),
                         ),
-                        CornerProfileCta(profile: profile, catalog: _catalog),
+                        if (context
+                            .watch<RemoteConfigService>()
+                            .challengeEnabled)
+                          CornerProfileCta(profile: profile, catalog: _catalog),
                       ],
                     ),
             ),

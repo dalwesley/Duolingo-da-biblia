@@ -318,7 +318,9 @@
     "pt": "{count, plural, =1{Falta 1 cena} other{Faltam {count} cenas}}",
     "en": "{count, plural, =1{1 scene left} other{{count} scenes left}}",
     "es": "{count, plural, =1{Falta 1 escena} other{Faltan {count} escenas}}",
-    "placeholders": {"count": "int"}
+    "placeholders": {
+      "count": "int"
+    }
   },
   "journeyTravessiaAhead": {
     "pt": "Travessia à frente",

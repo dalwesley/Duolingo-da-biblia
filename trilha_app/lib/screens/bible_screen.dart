@@ -91,7 +91,7 @@ String _foldPt(String input) {
 }
 
 /// Aba Bíblia — duas faces. Bíblia: busca e livros, na ordem escolhida.
-/// Leitura: continuar, plano, tempo litúrgico e versículos guardados.
+/// Leitura: continuar, plano e tempo litúrgico.
 /// A leitura abre em tela cheia ([BibleReaderScreen]), por cima da barra de abas.
 class BibleScreen extends StatefulWidget {
   final Widget? topBar;
@@ -116,7 +116,7 @@ class _BibleScreenState extends State<BibleScreen> with ShellTabFreezeMixin {
   Timer? _searchDebounce;
   int _searchGen = 0;
 
-  /// 0 = livros. 1 = plano, tempo litúrgico e guardados.
+  /// 0 = livros. 1 = plano e tempo litúrgico.
   int _pane = 0;
 
   /// Seções fechadas: ot, nt, era:…, letra:…
@@ -440,17 +440,13 @@ class _BibleLibrary extends StatelessWidget {
                   ),
                   if (booksPane) ...[
                     const SizedBox(height: AppSpace.md),
+                    _SearchButton(onTap: onSearch),
+                    const SizedBox(height: AppSpace.md),
                     // Navegação livre: retoma de onde parou no leitor.
                     _ContinueHero(
                       books: books,
                       onOpenReference: onOpenReference,
                     ),
-                    _SavedVerses(
-                      books: books,
-                      onOpenReference: onOpenReference,
-                    ),
-                    const SizedBox(height: AppSpace.md),
-                    _SearchButton(onTap: onSearch),
                     const SizedBox(height: AppSpace.md),
                     _OrderChips(order: order),
                   ],
@@ -790,7 +786,7 @@ class _ContinueHero extends StatelessWidget {
           const SizedBox(height: AppSpace.xs),
           Text(
             reference,
-            style: AppTypography.display(size: 28, color: a.text),
+            style: AppTypography.display(size: 24, color: a.text),
           ),
           if (fresh) ...[
             const SizedBox(height: 4),
@@ -799,7 +795,7 @@ class _ContinueHero extends StatelessWidget {
               style: AppTypography.body(size: 13, color: a.textSecondary),
             ),
           ],
-          const SizedBox(height: AppSpace.md),
+          const SizedBox(height: AppSpace.sm),
           Container(
             padding: const EdgeInsets.only(left: AppSpace.md),
             decoration: BoxDecoration(
@@ -807,10 +803,10 @@ class _ContinueHero extends StatelessWidget {
             ),
             child: Text(
               preview,
-              maxLines: 3,
+              maxLines: 2,
               overflow: TextOverflow.ellipsis,
               style: AppTypography.verse(
-                size: 18,
+                size: 16,
                 height: 1.4,
                 weight: FontWeight.w500,
                 fontStyle: FontStyle.italic,
@@ -818,11 +814,11 @@ class _ContinueHero extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(height: AppSpace.lg),
+          const SizedBox(height: AppSpace.md),
           if (!fresh && read > 0) ...[
             AppProgressBar(
               value: read / total,
-              height: 6,
+              height: 4,
               color: AppRoles.success,
             ),
             const SizedBox(height: AppSpace.md),
@@ -834,6 +830,7 @@ class _ContinueHero extends StatelessWidget {
             leading: CinematicGlyph.book,
             trailing: null,
             expanded: true,
+            dense: true,
             onTap: () => onOpenReference(reference),
           ),
         ],
@@ -851,9 +848,12 @@ class _OrderChips extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final index = BibleReadingOrder.values.indexOf(order);
+    final a = Appearance.of(context);
     return AppSegmentedTabs(
       index: index,
       accent: AppRoles.presence,
+      // Na arte da trilha o poço translúcido deixa a onda atravessar o texto.
+      fill: a.cardFill,
       onChanged: (i) {
         if (i == index) return;
         ActHaptics.tap();
@@ -1159,143 +1159,6 @@ class _CatalogRow extends StatelessWidget {
               )
             else
               ListChevron(color: a.textFaint),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-/// Versículos guardados, com o texto — toque abre no leitor. Título e
-/// contagem moram dentro do card; vazio, some. Mostra os 3 primeiros.
-class _SavedVerses extends StatefulWidget {
-  final List<BibleBook> books;
-  final ValueChanged<String> onOpenReference;
-
-  const _SavedVerses({required this.books, required this.onOpenReference});
-
-  @override
-  State<_SavedVerses> createState() => _SavedVersesState();
-}
-
-class _SavedVersesState extends State<_SavedVerses> {
-  static const _preview = 3;
-  bool _expanded = false;
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final marks = context.watch<ProgressService>().parseBookmarks();
-    if (marks.isEmpty) return const SizedBox.shrink();
-
-    final byAbbrev = {for (final b in widget.books) b.abbrev.toLowerCase(): b};
-    final shown = _expanded ? marks : marks.take(_preview).toList();
-    return Padding(
-      padding: const EdgeInsets.only(top: AppSpace.md),
-      child: GlassCard(
-        padding: const EdgeInsets.fromLTRB(
-          AppSpace.lg,
-          AppSpace.md,
-          AppSpace.lg,
-          0,
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            CardHeader(
-              label: context.l10n.bibleSavedTitle,
-              glyph: CinematicGlyph.bookmark,
-              trailing: CountBadge('${marks.length}', filled: false),
-            ),
-            for (var i = 0; i < shown.length; i++) ...[
-              if (i > 0) const ListDivider(),
-              _SavedRow(
-                mark: shown[i],
-                book: byAbbrev[shown[i].abbrev],
-                ink: a.text,
-                chevron: a.textFaint,
-                onOpen: widget.onOpenReference,
-              ),
-            ],
-            if (marks.length > _preview) ...[
-              const ListDivider(),
-              TextCta(
-                label: _expanded
-                    ? context.l10n.bibleSavedSeeLess
-                    : context.l10n.bibleSavedSeeAll(marks.length),
-                onTap: () => setState(() => _expanded = !_expanded),
-              ),
-            ],
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class _SavedRow extends StatelessWidget {
-  final ({String abbrev, int chapter, int verse}) mark;
-  final BibleBook? book;
-  final Color ink;
-  final Color chevron;
-  final ValueChanged<String> onOpen;
-
-  const _SavedRow({
-    required this.mark,
-    required this.book,
-    required this.ink,
-    required this.chevron,
-    required this.onOpen,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final name = book?.name ?? mark.abbrev.toUpperCase();
-    String? text;
-    final chapters = book?.chapters;
-    if (chapters != null &&
-        mark.chapter <= chapters.length &&
-        mark.verse <= chapters[mark.chapter - 1].length) {
-      text = chapters[mark.chapter - 1][mark.verse - 1];
-    }
-    final ref = '$name ${mark.chapter}:${mark.verse}';
-    return InkWell(
-      onTap: () => onOpen(ref),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: AppSpace.md),
-        child: Row(
-          children: [
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    ref,
-                    style: AppTypography.label(
-                      size: 12,
-                      color: a.textSecondary,
-                    ),
-                  ),
-                  if (text != null) ...[
-                    const SizedBox(height: 4),
-                    Text(
-                      text,
-                      maxLines: 3,
-                      overflow: TextOverflow.ellipsis,
-                      style: AppTypography.verse(
-                        size: 18,
-                        height: 1.35,
-                        weight: FontWeight.w500,
-                        color: ink,
-                      ),
-                    ),
-                  ],
-                ],
-              ),
-            ),
-            const SizedBox(width: AppSpace.sm),
-            ListChevron(color: chevron),
           ],
         ),
       ),

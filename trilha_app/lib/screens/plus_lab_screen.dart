@@ -284,6 +284,16 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
                           context.watch<RemoteConfigService>().groupsEnabled,
                           RemoteConfigService.instance.debugSetGroupsEnabled,
                         ),
+                        toggle(
+                          'Companhia aberta (simulado)',
+                          context.watch<RemoteConfigService>().companionEnabled,
+                          RemoteConfigService.instance.debugSetCompanionEnabled,
+                        ),
+                        toggle(
+                          'Desafio aberto (simulado)',
+                          context.watch<RemoteConfigService>().challengeEnabled,
+                          RemoteConfigService.instance.debugSetChallengeEnabled,
+                        ),
                       ]),
                       section('Promoção de lançamento', [
                         line(

@@ -31,12 +31,18 @@ class JuntosSegmentTabs extends StatelessWidget {
   /// (chrome no escuro, azul de seleção no papel).
   final Color? accent;
 
+  /// Fundo do trilho. Sem valor, o poço translúcido ([AppearanceStyle.insetFill]).
+  /// Sobre a arte da trilha, use [AppearanceStyle.cardFill]: o desenho
+  /// não atravessa o texto.
+  final Color? fill;
+
   const JuntosSegmentTabs({
     super.key,
     required this.index,
     required this.onChanged,
     required this.items,
     this.accent,
+    this.fill,
   });
 
   @override
@@ -49,9 +55,9 @@ class JuntosSegmentTabs extends StatelessWidget {
       height: height,
       padding: const EdgeInsets.all(inset),
       decoration: BoxDecoration(
-        color: a.insetFill,
+        color: fill ?? a.insetFill,
         borderRadius: BorderRadius.circular(AppRadii.lg),
-        border: Border.all(color: a.insetBorder),
+        border: Border.all(color: fill == null ? a.insetBorder : a.cardBorder),
       ),
       child: LayoutBuilder(
         builder: (context, c) {

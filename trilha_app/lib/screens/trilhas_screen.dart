@@ -24,7 +24,6 @@ import '../widgets/offline_curriculum_dialog.dart';
 import '../widgets/realm_world_atmosphere.dart';
 import '../widgets/relic_panel.dart';
 import '../widgets/shell_tab_scope.dart';
-import '../widgets/stway_brand.dart';
 import '../widgets/trail_suggestion_sheet.dart';
 import '../widgets/ui_primitives.dart';
 import '../services/subscription_service.dart';
@@ -252,31 +251,8 @@ class _TrilhasScreenState extends State<TrilhasScreen>
           ),
         )
         .length;
-    final stamps = [
-      for (final t in realmTrails)
-        _TrailStamp(
-          visuals: TrailVisuals.forTrail(t),
-          ratio:
-              TrailProgress.getProgress(
-                t,
-                progress.completedMissions,
-                clearedTrailModes: progress.clearedTrailModes,
-              ).pct /
-              100,
-          open:
-              !t.comingSoon &&
-              t.missionSlugs.isNotEmpty &&
-              TrailProgress.isTrailUnlocked(
-                t,
-                trails,
-                progress.completedMissions,
-                clearedTrailModes: progress.clearedTrailModes,
-              ),
-        ),
-    ];
     return _RealmInfo(
       realm: realm,
-      stamps: stamps,
       trailCount: realmTrails.length,
       unlockedCount: unlocked,
       completedCount: completed,
@@ -483,21 +459,8 @@ class _TrilhasScreenState extends State<TrilhasScreen>
   }
 }
 
-class _TrailStamp {
-  final TrailVisuals visuals;
-  final double ratio;
-  final bool open;
-
-  const _TrailStamp({
-    required this.visuals,
-    required this.ratio,
-    required this.open,
-  });
-}
-
 class _RealmInfo {
   final TrailRealm realm;
-  final List<_TrailStamp> stamps;
   final int trailCount;
   final int unlockedCount;
   final int completedCount;
@@ -505,7 +468,6 @@ class _RealmInfo {
 
   const _RealmInfo({
     required this.realm,
-    this.stamps = const [],
     required this.trailCount,
     required this.unlockedCount,
     required this.completedCount,
@@ -760,7 +722,7 @@ class _PathLinkState extends State<_PathLink>
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 56,
+      height: 28,
       width: double.infinity,
       child: RepaintBoundary(
         child: CustomPaint(
@@ -812,16 +774,16 @@ class _PathLinkPainter extends CustomPainter {
     final c = Color.lerp(from, to, 0.5)!;
     canvas.drawCircle(
       mid,
-      9,
+      6,
       Paint()
         ..color = c.withValues(alpha: walked ? 0.28 : 0.12)
-        ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 6),
+        ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 4),
     );
     final diamond = Path()
-      ..moveTo(mid.dx, mid.dy - 5.5)
-      ..lineTo(mid.dx + 5.5, mid.dy)
-      ..lineTo(mid.dx, mid.dy + 5.5)
-      ..lineTo(mid.dx - 5.5, mid.dy)
+      ..moveTo(mid.dx, mid.dy - 4)
+      ..lineTo(mid.dx + 4, mid.dy)
+      ..lineTo(mid.dx, mid.dy + 4)
+      ..lineTo(mid.dx - 4, mid.dy)
       ..close();
     canvas.drawPath(
       diamond,
@@ -834,54 +796,10 @@ class _PathLinkPainter extends CustomPainter {
       old.from != from || old.to != to || old.walked != walked;
 }
 
-/// Céu do pôster anda mais devagar que o scroll — profundidade.
-class _ParallaxFlowDelegate extends FlowDelegate {
-  final ScrollableState scrollable;
-  final BuildContext itemContext;
-  final double overscan;
-
-  _ParallaxFlowDelegate({
-    required this.scrollable,
-    required this.itemContext,
-    required this.overscan,
-  }) : super(repaint: scrollable.position);
-
-  @override
-  BoxConstraints getConstraintsForChild(int i, BoxConstraints constraints) {
-    return BoxConstraints.tightFor(
-      width: constraints.maxWidth,
-      height: constraints.maxHeight * overscan,
-    );
-  }
-
-  @override
-  void paintChildren(FlowPaintingContext context) {
-    final box = itemContext.findRenderObject() as RenderBox?;
-    final viewport = scrollable.context.findRenderObject() as RenderBox?;
-    if (box == null || viewport == null || !box.hasSize) {
-      context.paintChild(0);
-      return;
-    }
-    final itemOffset = box.localToGlobal(
-      box.size.centerLeft(Offset.zero),
-      ancestor: viewport,
-    );
-    final viewH = scrollable.position.viewportDimension;
-    final fraction = (itemOffset.dy / viewH).clamp(0.0, 1.0);
-    final extra = context.size.height * (overscan - 1);
-    final dy = -extra * fraction;
-    context.paintChild(0, transform: Matrix4.translationValues(0, dy, 0));
-  }
-
-  @override
-  bool shouldRepaint(_ParallaxFlowDelegate old) =>
-      scrollable != old.scrollable ||
-      itemContext != old.itemContext ||
-      overscan != old.overscan;
-}
-
 const _romanActs = ['I', 'II', 'III', 'IV', 'V', 'VI'];
 
+/// Estação da área. O anel mostra o quanto já foi caminhado;
+/// as trilhas de dentro abrem num toque.
 class _RealmPoster extends StatefulWidget {
   final _RealmInfo info;
   final int act;
@@ -907,12 +825,8 @@ class _RealmPosterState extends State<_RealmPoster> {
   @override
   Widget build(BuildContext context) {
     final visuals = RealmVisuals.of(widget.info.realm);
-    // Cartaz = céu do reino + chão escuro: tinta clara fixa em todos os looks.
-    final a = AppearanceStyle.resolve(AppearanceMode.night);
     final locked = widget.info.locked;
-    final featured = widget.featured;
-    final stamps = locked ? const <_TrailStamp>[] : widget.info.stamps;
-    final height = (featured ? 340.0 : 268.0) + (stamps.isEmpty ? 0 : 20);
+    final featured = widget.featured && !locked;
     final progressLabel = locked
         ? context.l10n.commonComingSoon
         : widget.info.completedCount > 0
@@ -923,192 +837,152 @@ class _RealmPosterState extends State<_RealmPoster> {
         : widget.info.unlockedCount > 0
         ? context.l10n.trailsRealmOpenCount(widget.info.unlockedCount)
         : context.l10n.trailsRealmTrailCount(widget.info.trailCount);
-    final scrollable = Scrollable.maybeOf(context);
     final act = widget.act - 1 < _romanActs.length
         ? _romanActs[widget.act - 1]
         : '${widget.act}';
+    final cta = locked
+        ? context.l10n.trailsLearnMore
+        : (featured || widget.info.completedCount > 0
+              ? context.l10n.commonContinue
+              : context.l10n.commonStart);
 
-    final world = RealmWorldAtmosphere(
-      realm: widget.info.realm,
-      animate: widget.animate && !locked,
-      locked: locked,
-      featured: featured,
-      terrain: false,
-    );
-
-    return GestureDetector(
-      onTapDown: (_) => setState(() => _pressed = true),
-      onTapUp: (_) => setState(() => _pressed = false),
-      onTapCancel: () => setState(() => _pressed = false),
-      onTap: () {
-        ActHaptics.confirm();
-        widget.onTap();
-      },
-      child: AnimatedScale(
-        scale: _pressed ? 0.985 : 1,
-        duration: AppMotion.quick,
-        curve: AppMotion.enter,
-        child: AnimatedContainer(
-          duration: AppMotion.gentle,
+    // Céu do reino é noturno; o texto acompanha, senão some no astro.
+    final night = AppearanceStyle.resolve(AppearanceMode.night);
+    return Semantics(
+      button: true,
+      label: '${widget.info.realm.label}. $progressLabel',
+      excludeSemantics: true,
+      child: GestureDetector(
+        onTapDown: (_) => setState(() => _pressed = true),
+        onTapUp: (_) => setState(() => _pressed = false),
+        onTapCancel: () => setState(() => _pressed = false),
+        onTap: () {
+          ActHaptics.confirm();
+          widget.onTap();
+        },
+        child: AnimatedScale(
+          scale: _pressed ? 0.985 : 1,
+          duration: AppMotion.quick,
           curve: AppMotion.enter,
-          height: height,
-          // Cartaz = palco (GlassCard `glow`): borda e brilho na cor da área,
-          // mais aceso no reino em que a pessoa está. O céu do reino fica
-          // dentro do card — cenário só dentro de card herói.
           child: GlassCard(
-            radius: AppMetrics.heroRadius,
             padding: EdgeInsets.zero,
+            radius: AppMetrics.heroRadius,
             tint: visuals.accent,
-            glow: locked
-                ? 0
-                : featured
-                ? 1
-                : 0.3,
-            child: Appearance(
-              style: a,
-              mode: AppearanceMode.night,
-              child: Stack(
-                fit: StackFit.expand,
-                children: [
-                  ArtLift(
-                    page: Appearance.of(context),
-                    child: Stack(
-                      fit: StackFit.expand,
-                      children: [
-                        if (scrollable != null)
-                          Flow(
-                            delegate: _ParallaxFlowDelegate(
-                              scrollable: scrollable,
-                              itemContext: context,
-                              overscan: 1.22,
-                            ),
-                            children: [world],
-                          )
-                        else
-                          world,
-                        _BrandFloor(locked: locked),
-                      ],
+            glow: locked ? 0.15 : (featured ? 0.85 : 0.45),
+            color: const Color(0xFF0A1018),
+            child: SizedBox(
+              height: featured ? 148 : 128,
+              child: Appearance(
+                style: night,
+                mode: AppearanceMode.night,
+                child: Stack(
+                  fit: StackFit.expand,
+                  children: [
+                    Positioned(
+                      top: -36,
+                      left: 0,
+                      right: 0,
+                      height: 240,
+                      child: RealmWorldAtmosphere(
+                        realm: widget.info.realm,
+                        animate: widget.animate && !locked,
+                        locked: locked,
+                        featured: featured,
+                        terrain: false,
+                      ),
                     ),
-                  ),
-                  // Numeral do ato — marca d'água de abertura de capítulo.
-                  Positioned(
-                    left: 18,
-                    top: 10,
-                    child: IgnorePointer(
-                      child: Text(
-                        act,
-                        style: AppTypography.display(
-                          size: 48,
-                          weight: FontWeight.w900,
-                          color: visuals.accent.withValues(
-                            alpha: locked ? 0.1 : 0.2,
-                          ),
+                    const DecoratedBox(
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment.centerLeft,
+                          end: Alignment.centerRight,
+                          colors: [
+                            Color(0x9906080C),
+                            Color(0x5506080C),
+                            Color(0x1406080C),
+                          ],
+                          stops: [0.0, 0.55, 1.0],
                         ),
                       ),
                     ),
-                  ),
-                  Align(
-                    alignment: Alignment.topCenter,
-                    child: Padding(
-                      padding: const EdgeInsets.only(top: 28),
-                      child: CinematicIcon(
-                        glyph: locked ? CinematicGlyph.lock : visuals.glyph,
-                        size: AppMetrics.iconHero,
-                        accent: visuals.accent,
-                        glowing: featured && widget.animate && !locked,
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    left: 20,
-                    right: 20,
-                    bottom: 18,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.stretch,
-                      children: [
-                        SectionLabel(
-                          visuals.eyebrow,
-                          color: visuals.accent,
-                          textAlign: TextAlign.center,
-                        ),
-                        const SizedBox(height: 10),
-                        Text(
-                          widget.info.realm.label,
-                          textAlign: TextAlign.center,
-                          style: AppTypography.display(
-                            size: featured ? 32 : 28,
-                            color: a.text,
-                            height: 1.05,
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
+                      child: Row(
+                        children: [
+                          _RealmMark(
+                            glyph: visuals.glyph,
+                            accent: visuals.accent,
+                            ratio: widget.info.ratio,
+                            locked: locked,
+                            featured: featured && widget.animate,
                           ),
-                        ),
-                        const SizedBox(height: 8),
-                        Text(
-                          visuals.tagline,
-                          textAlign: TextAlign.center,
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                          style: AppTypography.body(
-                            size: 13,
-                            height: 1.35,
-                            color: a.textSecondary,
-                          ),
-                        ),
-                        if (stamps.isNotEmpty) ...[
-                          const SizedBox(height: 14),
-                          _StampRow(stamps: stamps, accent: visuals.accent),
-                        ],
-                        const SizedBox(height: 14),
-                        AppProgressBar(
-                          value: locked ? 0 : widget.info.ratio,
-                          height: 6,
-                          color: visuals.accent,
-                          trackColor: visuals.accent.withValues(alpha: 0.18),
-                        ),
-                        const SizedBox(height: 10),
-                        Row(
-                          children: [
-                            if (featured)
-                              Padding(
-                                padding: const EdgeInsets.only(right: 10),
-                                child: SectionLabel(
-                                  context.l10n.journeyNow,
+                          const SizedBox(width: 12),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                SectionLabel(
+                                  '$act · ${visuals.eyebrow}',
                                   size: 10,
                                   color: visuals.accent,
                                 ),
-                              ),
-                            Expanded(
-                              child: Text(
-                                progressLabel,
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                                style: AppTypography.body(
-                                  size: 12,
-                                  weight: FontWeight.w700,
-                                  color: a.textSecondary,
+                                const SizedBox(height: 2),
+                                Text(
+                                  widget.info.realm.label,
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: AppTypography.title(
+                                    size: 16,
+                                    color: night.text,
+                                  ),
                                 ),
-                              ),
+                                const SizedBox(height: 2),
+                                Text(
+                                  visuals.tagline,
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: AppTypography.body(
+                                    size: 12,
+                                    color: night.textSecondary,
+                                  ),
+                                ),
+                                const SizedBox(height: 8),
+                                Row(
+                                  children: [
+                                    Expanded(
+                                      child: Text(
+                                        progressLabel,
+                                        maxLines: 1,
+                                        overflow: TextOverflow.ellipsis,
+                                        style: AppTypography.body(
+                                          size: 12,
+                                          weight: FontWeight.w700,
+                                          color: night.textSecondary,
+                                        ),
+                                      ),
+                                    ),
+                                    const SizedBox(width: 8),
+                                    SectionLabel(
+                                      cta,
+                                      size: 10,
+                                      color: visuals.accent,
+                                    ),
+                                    const SizedBox(width: 2),
+                                    ListChevron(
+                                      color: visuals.accent,
+                                      size: 16,
+                                    ),
+                                  ],
+                                ),
+                              ],
                             ),
-                            SectionLabel(
-                              locked
-                                  ? context.l10n.trailsLearnMore
-                                  : (featured || widget.info.completedCount > 0
-                                        ? context.l10n.commonContinue
-                                        : context.l10n.commonStart),
-                              color: visuals.accent,
-                            ),
-                            const SizedBox(width: 4),
-                            CinematicIcon(
-                              glyph: CinematicGlyph.forward,
-                              size: AppMetrics.iconSm,
-                              accent: visuals.accent,
-                              framed: false,
-                            ),
-                          ],
-                        ),
-                      ],
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             ),
           ),
@@ -1118,197 +992,64 @@ class _RealmPosterState extends State<_RealmPoster> {
   }
 }
 
-/// Chão do cartaz: a trilha STWAY, escura, sob o céu estrelado do reino.
-///
-/// O caminho aparece nas laterais. O centro, onde está o título, fica no escuro.
-class _BrandFloor extends StatelessWidget {
-  final bool locked;
-
-  const _BrandFloor({required this.locked});
-
-  @override
-  Widget build(BuildContext context) {
-    return IgnorePointer(
-      child: Stack(
-        fit: StackFit.expand,
-        children: [
-          ShaderMask(
-            blendMode: BlendMode.dstIn,
-            shaderCallback: (rect) => const LinearGradient(
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-              colors: [
-                Color(0x00FFFFFF),
-                Color(0x00FFFFFF),
-                Color(0xB8FFFFFF),
-                Color(0x8CFFFFFF),
-              ],
-              stops: [0.0, 0.28, 0.5, 1.0],
-            ).createShader(rect),
-            child: ColorFiltered(
-              colorFilter: ColorFilter.matrix(
-                locked
-                    ? const <double>[
-                        0.16,
-                        0.02,
-                        0.01,
-                        0,
-                        4,
-                        0.01,
-                        0.18,
-                        0.03,
-                        0,
-                        4,
-                        0.01,
-                        0.03,
-                        0.22,
-                        0,
-                        6,
-                        0,
-                        0,
-                        0,
-                        1,
-                        0,
-                      ]
-                    : const <double>[
-                        0.34,
-                        0.05,
-                        0.02,
-                        0,
-                        8,
-                        0.02,
-                        0.38,
-                        0.08,
-                        0,
-                        10,
-                        0.02,
-                        0.08,
-                        0.52,
-                        0,
-                        14,
-                        0,
-                        0,
-                        0,
-                        1,
-                        0,
-                      ],
-              ),
-              child: const StwayPathBackdrop(
-                alignment: Alignment(0, 0.22),
-                fit: BoxFit.cover,
-              ),
-            ),
-          ),
-          const DecoratedBox(
-            decoration: BoxDecoration(
-              gradient: RadialGradient(
-                center: Alignment(0, 0.35),
-                radius: 0.85,
-                colors: [
-                  Color(0xE0000000),
-                  Color(0x99000000),
-                  Color(0x00000000),
-                ],
-                stops: [0.0, 0.42, 1.0],
-              ),
-            ),
-          ),
-          const DecoratedBox(
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [
-                  Color(0x00000000),
-                  Color(0x00000000),
-                  Color(0x8A000000),
-                  Color(0xCC000000),
-                ],
-                stops: [0.0, 0.42, 0.68, 1.0],
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-/// Selos das trilhas do reino — anel de progresso em volta do glifo.
-class _StampRow extends StatelessWidget {
-  static const _max = 6;
-
-  final List<_TrailStamp> stamps;
+/// Anel do reino — o progresso da área, com o glifo no centro.
+class _RealmMark extends StatelessWidget {
+  final CinematicGlyph glyph;
   final Color accent;
+  final double ratio;
+  final bool locked;
+  final bool featured;
 
-  const _StampRow({required this.stamps, required this.accent});
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final shown = stamps.take(_max).toList();
-    final extra = stamps.length - shown.length;
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        for (final s in shown)
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 4),
-            child: _StampDisc(stamp: s),
-          ),
-        if (extra > 0)
-          Padding(
-            padding: const EdgeInsets.only(left: 6),
-            child: Text(
-              '+$extra',
-              style: AppTypography.label(size: 12, color: a.textSecondary),
-            ),
-          ),
-      ],
-    );
-  }
-}
-
-class _StampDisc extends StatelessWidget {
-  static const _size = 34.0;
-
-  final _TrailStamp stamp;
-
-  const _StampDisc({required this.stamp});
+  const _RealmMark({
+    required this.glyph,
+    required this.accent,
+    required this.ratio,
+    required this.locked,
+    required this.featured,
+  });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final accent = stamp.visuals.accent;
-    final done = stamp.ratio >= 1;
     return SizedBox(
-      width: _size,
-      height: _size,
-      child: CustomPaint(
-        painter: _RingPainter(
-          ratio: stamp.open ? stamp.ratio : 0,
-          color: accent,
-          track: stamp.open
-              ? accent.withValues(alpha: 0.22)
-              : a.cardBorder.withValues(alpha: 0.5),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.all(4),
-          child: DecoratedBox(
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: done ? accent.withValues(alpha: 0.9) : a.insetFill,
+      width: 52,
+      height: 52,
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          boxShadow: [
+            BoxShadow(
+              color: accent.withValues(
+                alpha: locked ? 0 : (featured ? 0.55 : 0.32),
+              ),
+              blurRadius: featured ? 18 : 12,
             ),
-            child: Center(
-              child: CinematicIcon(
-                glyph: stamp.open ? stamp.visuals.glyph : CinematicGlyph.lock,
-                size: AppMetrics.chipIcon,
-                accent: done
-                    ? AppColors.night
-                    : stamp.open
-                    ? accent
-                    : a.textFaint,
-                framed: false,
+          ],
+        ),
+        child: CustomPaint(
+          painter: _RingPainter(
+            ratio: locked ? 0 : ratio,
+            color: accent,
+            track: accent.withValues(alpha: locked ? 0.2 : 0.45),
+          ),
+          child: Center(
+            child: DecoratedBox(
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: accent.withValues(alpha: locked ? 0.12 : 0.22),
+              ),
+              child: SizedBox(
+                width: 36,
+                height: 36,
+                child: Center(
+                  child: CinematicIcon(
+                    glyph: locked ? CinematicGlyph.lock : glyph,
+                    size: AppMetrics.iconMd,
+                    accent: locked ? a.textFaint : accent,
+                    framed: false,
+                    glowing: featured,
+                  ),
+                ),
               ),
             ),
           ),
@@ -1331,7 +1072,7 @@ class _RingPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    const stroke = 2.5;
+    const stroke = 3.0;
     final rect = (Offset.zero & size).deflate(stroke / 2);
     canvas.drawArc(
       rect,

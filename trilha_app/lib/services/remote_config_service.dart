@@ -17,6 +17,8 @@ class RemoteConfigService extends ChangeNotifier {
   static const _keyLeagueServerSettlement = 'league_server_settlement';
   static const _keyPlusLaunchFreeUntil = 'plus_launch_free_until';
   static const _keyGroupsEnabled = 'groups_enabled';
+  static const _keyCompanionEnabled = 'companion_enabled';
+  static const _keyChallengeEnabled = 'challenge_enabled';
 
   static const _defaults = <String, Object>{
     _keyReferralBonus: 50,
@@ -25,6 +27,8 @@ class RemoteConfigService extends ChangeNotifier {
     _keyLeagueServerSettlement: false,
     _keyPlusLaunchFreeUntil: '',
     _keyGroupsEnabled: false,
+    _keyCompanionEnabled: false,
+    _keyChallengeEnabled: false,
   };
 
   FirebaseRemoteConfig? _rc;
@@ -85,6 +89,34 @@ class RemoteConfigService extends ChangeNotifier {
   void debugSetGroupsEnabled(bool value) {
     if (!kDebugMode) return;
     debugGroupsEnabled = value;
+    notifyListeners();
+  }
+
+  /// Companhia (par 1:1, aceno, convite por código). Desligada: a aba
+  /// Companhia mostra "em breve" e nada chama para a companhia.
+  /// [debugCompanionEnabled] força no laboratório.
+  bool get companionEnabled =>
+      (kDebugMode && debugCompanionEnabled) || _bool(_keyCompanionEnabled);
+
+  bool debugCompanionEnabled = false;
+
+  void debugSetCompanionEnabled(bool value) {
+    if (!kDebugMode) return;
+    debugCompanionEnabled = value;
+    notifyListeners();
+  }
+
+  /// Desafio (mesma cena até domingo). Desligado: o painel Desafio mostra
+  /// "em breve" e some da Home, do perfil da Caravana e do Perfil.
+  /// [debugChallengeEnabled] força no laboratório.
+  bool get challengeEnabled =>
+      (kDebugMode && debugChallengeEnabled) || _bool(_keyChallengeEnabled);
+
+  bool debugChallengeEnabled = false;
+
+  void debugSetChallengeEnabled(bool value) {
+    if (!kDebugMode) return;
+    debugChallengeEnabled = value;
     notifyListeners();
   }
 

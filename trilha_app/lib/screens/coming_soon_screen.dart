@@ -6,6 +6,7 @@ import '../l10n/app_language.dart';
 import '../services/analytics_service.dart';
 import '../services/backend_service.dart';
 import '../services/progress_service.dart';
+import '../services/remote_config_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
@@ -15,28 +16,49 @@ import '../widgets/home_brand_backdrop.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/ui_primitives.dart';
 
-/// Abre o aviso de grupos em tela inteira.
-Future<void> openGroupsSoon(BuildContext context, {required String source}) {
-  AnalyticsService.instance.logEvent('groups_soon_view', {'source': source});
+/// O que ainda não abriu e espera liberação por Remote Config.
+enum ComingSoonFeature {
+  groups('groups'),
+  companion('companion'),
+  challenge('challenge');
+
+  const ComingSoonFeature(this.key);
+
+  /// Prefixo do evento de analytics e do campo da lista de espera.
+  final String key;
+}
+
+/// Abre o aviso "em breve" de [feature] em tela inteira.
+Future<void> openComingSoon(
+  BuildContext context,
+  ComingSoonFeature feature, {
+  required String source,
+}) {
+  AnalyticsService.instance.logEvent('${feature.key}_soon_view', {
+    'source': source,
+  });
   return Navigator.of(context).push(
     MaterialPageRoute<void>(
       fullscreenDialog: true,
-      builder: (_) => const GroupsSoonScreen(),
+      builder: (_) => ComingSoonScreen(feature: feature),
     ),
   );
 }
 
-/// Grupos ainda não abriram (chegam com os planos Líder e Igreja): o Anan
-/// avisa, conta o que vem e guarda quem quer ser avisado.
-class GroupsSoonScreen extends StatefulWidget {
-  const GroupsSoonScreen({super.key});
+/// Algo ainda não abriu (grupos chegam com os planos Líder e Igreja;
+/// companhia e desafio, depois do lançamento): o Anan avisa, conta o que
+/// vem e guarda quem quer ser avisado.
+class ComingSoonScreen extends StatefulWidget {
+  final ComingSoonFeature feature;
+
+  const ComingSoonScreen({super.key, required this.feature});
 
   @override
-  State<GroupsSoonScreen> createState() => _GroupsSoonScreenState();
+  State<ComingSoonScreen> createState() => _ComingSoonScreenState();
 }
 
-class _GroupsSoonScreenState extends State<GroupsSoonScreen> {
-  static const _prefsKey = 'groupsWaitlistJoined';
+class _ComingSoonScreenState extends State<ComingSoonScreen> {
+  String get _prefsKey => '${widget.feature.key}WaitlistJoined';
 
   bool _joined = false;
   bool _busy = false;
@@ -53,10 +75,10 @@ class _GroupsSoonScreenState extends State<GroupsSoonScreen> {
 
   Future<void> _join() async {
     setState(() => _busy = true);
-    await context.read<BackendService>().joinGroupsWaitlist();
+    await context.read<BackendService>().joinWaitlist(widget.feature.key);
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool(_prefsKey, true);
-    AnalyticsService.instance.logEvent('groups_waitlist_join');
+    AnalyticsService.instance.logEvent('${widget.feature.key}_waitlist_join');
     if (!mounted) return;
     setState(() {
       _busy = false;
@@ -72,11 +94,51 @@ class _GroupsSoonScreenState extends State<GroupsSoonScreen> {
     final top = MediaQuery.viewPaddingOf(context).top;
     final bottom = MediaQuery.viewPaddingOf(context).bottom;
 
-    final coming = [
-      (CinematicGlyph.home, l10n.groupsSoonItemStudy),
-      (CinematicGlyph.people, l10n.groupsSoonItemTogether),
-      (CinematicGlyph.target, l10n.groupsSoonItemLeader),
-    ];
+    final companionOpen = context.watch<RemoteConfigService>().companionEnabled;
+    final meanwhile = companionOpen
+        ? l10n.comingSoonMeanwhileCompanion
+        : l10n.comingSoonMeanwhileCaravan;
+    final (
+      title,
+      body,
+      joined,
+      meanwhileLine,
+      coming,
+    ) = switch (widget.feature) {
+      ComingSoonFeature.groups => (
+        l10n.groupsSoonTitle,
+        l10n.groupsSoonBody,
+        l10n.groupsSoonJoined,
+        meanwhile,
+        [
+          (CinematicGlyph.home, l10n.groupsSoonItemStudy),
+          (CinematicGlyph.people, l10n.groupsSoonItemTogether),
+          (CinematicGlyph.target, l10n.groupsSoonItemLeader),
+        ],
+      ),
+      ComingSoonFeature.companion => (
+        l10n.companionSoonTitle,
+        l10n.companionSoonBody,
+        l10n.companionSoonJoined,
+        l10n.comingSoonMeanwhileCaravan,
+        [
+          (CinematicGlyph.link, l10n.companionSoonItemPair),
+          (CinematicGlyph.path, l10n.companionSoonItemToday),
+          (CinematicGlyph.bell, l10n.companionSoonItemNudge),
+        ],
+      ),
+      ComingSoonFeature.challenge => (
+        l10n.challengeSoonTitle,
+        l10n.challengeSoonBody,
+        l10n.challengeSoonJoined,
+        meanwhile,
+        [
+          (CinematicGlyph.podium, l10n.challengeSoonItemCall),
+          (CinematicGlyph.book, l10n.challengeSoonItemScene),
+          (CinematicGlyph.crown, l10n.challengeSoonItemWin),
+        ],
+      ),
+    };
 
     return ImmersiveScaffold(
       mode: mode,
@@ -106,7 +168,12 @@ class _GroupsSoonScreenState extends State<GroupsSoonScreen> {
                     child: IconButton(
                       tooltip: l10n.commonBack,
                       onPressed: () => Navigator.of(context).pop(),
-                      icon: Icon(Icons.close_rounded, color: a.textSecondary),
+                      icon: CinematicIcon(
+                        glyph: CinematicGlyph.close,
+                        size: AppMetrics.iconLg,
+                        accent: a.textSecondary,
+                        framed: false,
+                      ),
                     ),
                   ),
                   Center(
@@ -122,7 +189,7 @@ class _GroupsSoonScreenState extends State<GroupsSoonScreen> {
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
                         Text(
-                          l10n.groupsSoonEyebrow.toUpperCase(),
+                          l10n.comingSoonEyebrow.toUpperCase(),
                           textAlign: TextAlign.center,
                           style: AppTypography.body(
                             size: 12,
@@ -132,13 +199,13 @@ class _GroupsSoonScreenState extends State<GroupsSoonScreen> {
                         ),
                         const SizedBox(height: AppSpace.sm),
                         Text(
-                          l10n.groupsSoonTitle,
+                          title,
                           textAlign: TextAlign.center,
                           style: AppTypography.display(size: 30, color: a.text),
                         ),
                         const SizedBox(height: AppSpace.sm),
                         Text(
-                          l10n.groupsSoonBody,
+                          body,
                           textAlign: TextAlign.center,
                           style: AppTypography.body(
                             size: 14,
@@ -155,7 +222,7 @@ class _GroupsSoonScreenState extends State<GroupsSoonScreen> {
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: [
                         Text(
-                          l10n.groupsSoonComingHeader.toUpperCase(),
+                          l10n.comingSoonComingHeader.toUpperCase(),
                           style: AppTypography.body(
                             size: 12,
                             weight: FontWeight.w800,
@@ -200,7 +267,7 @@ class _GroupsSoonScreenState extends State<GroupsSoonScreen> {
                         const SizedBox(width: AppSpace.md),
                         Expanded(
                           child: Text(
-                            l10n.groupsSoonMeanwhile,
+                            meanwhileLine,
                             style: AppTypography.body(
                               size: 13,
                               color: a.textSecondary,
@@ -228,15 +295,15 @@ class _GroupsSoonScreenState extends State<GroupsSoonScreen> {
                 children: [
                   if (_joined)
                     Text(
-                      l10n.groupsSoonJoined,
+                      joined,
                       textAlign: TextAlign.center,
                       style: AppTypography.title(size: 15, color: a.text),
                     )
                   else
                     CopperCta(
                       label: _busy
-                          ? l10n.groupsSoonSaving
-                          : l10n.groupsSoonNotifyMe,
+                          ? l10n.comingSoonSaving
+                          : l10n.comingSoonNotifyMe,
                       leading: CinematicGlyph.bell,
                       expanded: true,
                       onTap: _busy ? null : _join,

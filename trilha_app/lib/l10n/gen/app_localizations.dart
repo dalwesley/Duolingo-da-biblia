@@ -235,7 +235,7 @@ abstract class AppLocalizations {
   /// No description provided for @bibleHeroStartHere.
   ///
   /// In pt, this message translates to:
-  /// **'Comece por aqui'**
+  /// **'Continuar leitura'**
   String get bibleHeroStartHere;
 
   /// No description provided for @bibleHeroStartReading.
@@ -1078,6 +1078,42 @@ abstract class AppLocalizations {
   /// **'Amanhã'**
   String get celebrationTomorrowKicker;
 
+  /// No description provided for @challengeSoonBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Estamos preparando o desafio: você chama alguém e os dois fazem a mesma cena até domingo. Aguarde: quando abrir, você fica sabendo aqui.'**
+  String get challengeSoonBody;
+
+  /// No description provided for @challengeSoonItemCall.
+  ///
+  /// In pt, this message translates to:
+  /// **'Chame alguém da Caravana'**
+  String get challengeSoonItemCall;
+
+  /// No description provided for @challengeSoonItemScene.
+  ///
+  /// In pt, this message translates to:
+  /// **'A mesma cena para os dois, até domingo'**
+  String get challengeSoonItemScene;
+
+  /// No description provided for @challengeSoonItemWin.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ganha quem acertar mais'**
+  String get challengeSoonItemWin;
+
+  /// No description provided for @challengeSoonJoined.
+  ///
+  /// In pt, this message translates to:
+  /// **'Combinado! Avisaremos você quando o desafio abrir.'**
+  String get challengeSoonJoined;
+
+  /// No description provided for @challengeSoonTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'O desafio está chegando'**
+  String get challengeSoonTitle;
+
   /// No description provided for @chestBencaoMessage.
   ///
   /// In pt, this message translates to:
@@ -1269,6 +1305,42 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Sua sequência te espera'**
   String get comebackTitle;
+
+  /// No description provided for @comingSoonComingHeader.
+  ///
+  /// In pt, this message translates to:
+  /// **'O que vem por aí'**
+  String get comingSoonComingHeader;
+
+  /// No description provided for @comingSoonEyebrow.
+  ///
+  /// In pt, this message translates to:
+  /// **'Em breve'**
+  String get comingSoonEyebrow;
+
+  /// No description provided for @comingSoonMeanwhileCaravan.
+  ///
+  /// In pt, this message translates to:
+  /// **'Enquanto isso, siga na Caravana: cada cena conta passos na semana.'**
+  String get comingSoonMeanwhileCaravan;
+
+  /// No description provided for @comingSoonMeanwhileCompanion.
+  ///
+  /// In pt, this message translates to:
+  /// **'Enquanto isso, chame alguém para caminhar com você na Companhia e siga na Caravana.'**
+  String get comingSoonMeanwhileCompanion;
+
+  /// No description provided for @comingSoonNotifyMe.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quero ser avisado'**
+  String get comingSoonNotifyMe;
+
+  /// No description provided for @comingSoonSaving.
+  ///
+  /// In pt, this message translates to:
+  /// **'Guardando…'**
+  String get comingSoonSaving;
 
   /// No description provided for @commonActive.
   ///
@@ -1707,6 +1779,42 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Caminha com alguém'**
   String get companionSheetPromptTitleDay2;
+
+  /// No description provided for @companionSoonBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Estamos preparando a companhia: alguém para caminhar com você, um dia de cada vez. Aguarde: quando abrir, você fica sabendo aqui.'**
+  String get companionSoonBody;
+
+  /// No description provided for @companionSoonItemNudge.
+  ///
+  /// In pt, this message translates to:
+  /// **'Um aceno lembra quem ainda não caminhou'**
+  String get companionSoonItemNudge;
+
+  /// No description provided for @companionSoonItemPair.
+  ///
+  /// In pt, this message translates to:
+  /// **'Uma pessoa caminha com você'**
+  String get companionSoonItemPair;
+
+  /// No description provided for @companionSoonItemToday.
+  ///
+  /// In pt, this message translates to:
+  /// **'Vocês veem quem já caminhou hoje'**
+  String get companionSoonItemToday;
+
+  /// No description provided for @companionSoonJoined.
+  ///
+  /// In pt, this message translates to:
+  /// **'Combinado! Avisaremos você quando a companhia abrir.'**
+  String get companionSoonJoined;
+
+  /// No description provided for @companionSoonTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'A companhia está chegando'**
+  String get companionSoonTitle;
 
   /// No description provided for @companionWalkedTogetherToday.
   ///
@@ -3730,18 +3838,6 @@ abstract class AppLocalizations {
   /// **'Estamos preparando os grupos para células, discipulado e EBD. Aguarde: quando abrirem, você fica sabendo aqui.'**
   String get groupsSoonBody;
 
-  /// No description provided for @groupsSoonComingHeader.
-  ///
-  /// In pt, this message translates to:
-  /// **'O que vem por aí'**
-  String get groupsSoonComingHeader;
-
-  /// No description provided for @groupsSoonEyebrow.
-  ///
-  /// In pt, this message translates to:
-  /// **'Em breve'**
-  String get groupsSoonEyebrow;
-
   /// No description provided for @groupsSoonItemLeader.
   ///
   /// In pt, this message translates to:
@@ -3765,24 +3861,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Combinado! Avisaremos você quando os grupos abrirem.'**
   String get groupsSoonJoined;
-
-  /// No description provided for @groupsSoonMeanwhile.
-  ///
-  /// In pt, this message translates to:
-  /// **'Enquanto isso, chame alguém para caminhar com você na Companhia e siga na Caravana.'**
-  String get groupsSoonMeanwhile;
-
-  /// No description provided for @groupsSoonNotifyMe.
-  ///
-  /// In pt, this message translates to:
-  /// **'Quero ser avisado'**
-  String get groupsSoonNotifyMe;
-
-  /// No description provided for @groupsSoonSaving.
-  ///
-  /// In pt, this message translates to:
-  /// **'Guardando…'**
-  String get groupsSoonSaving;
 
   /// No description provided for @groupsSoonTitle.
   ///
@@ -4603,7 +4681,7 @@ abstract class AppLocalizations {
   /// No description provided for @juntosCaravanWeekBody.
   ///
   /// In pt, this message translates to:
-  /// **'Só passos de cenas novas, de segunda a domingo. No fim da semana, os primeiros sobem de nível e os últimos descem.'**
+  /// **'É aqui que tudo acontece. Os passos de cenas novas, de segunda a domingo, decidem quem sobe e quem desce.'**
   String get juntosCaravanWeekBody;
 
   /// No description provided for @juntosCaravanWeekStep1.
@@ -4615,19 +4693,19 @@ abstract class AppLocalizations {
   /// No description provided for @juntosCaravanWeekStep2.
   ///
   /// In pt, this message translates to:
-  /// **'Lugar no\nranking'**
+  /// **'Quem\nsobe'**
   String get juntosCaravanWeekStep2;
 
   /// No description provided for @juntosCaravanWeekStep3.
   ///
   /// In pt, this message translates to:
-  /// **'Sobe ou\ndesce'**
+  /// **'Quem\ndesce'**
   String get juntosCaravanWeekStep3;
 
   /// No description provided for @juntosCaravanWeekTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Quem avançou nesta semana?'**
+  /// **'O ranking da semana'**
   String get juntosCaravanWeekTitle;
 
   /// No description provided for @juntosChallengeExplainerBody.
@@ -5412,8 +5490,14 @@ abstract class AppLocalizations {
   /// No description provided for @juntosWeekRankingEmpty.
   ///
   /// In pt, this message translates to:
-  /// **'O ranking da semana só aparece com gente de verdade na caravana.'**
+  /// **'O ranking começa quando outra pessoa entra na caravana.'**
   String get juntosWeekRankingEmpty;
+
+  /// No description provided for @juntosWeekRankingEmptyTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ainda só você'**
+  String get juntosWeekRankingEmptyTitle;
 
   /// No description provided for @juntosWeekTogetherBonus.
   ///
@@ -9896,6 +9980,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Liga, Caravana e companhia'**
   String get plusNoticeFreeSocial;
+
+  /// No description provided for @plusNoticeFreeSocialCaravan.
+  ///
+  /// In pt, this message translates to:
+  /// **'Liga e Caravana'**
+  String get plusNoticeFreeSocialCaravan;
 
   /// No description provided for @plusNoticeFreeStreak.
   ///

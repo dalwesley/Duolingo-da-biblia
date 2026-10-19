@@ -13,6 +13,7 @@ import '../services/content_catalog_service.dart';
 import '../services/corner_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
+import '../services/remote_config_service.dart';
 import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -578,7 +579,12 @@ class _HomeScreenState extends State<HomeScreen>
     final nudge = listen
         ? context.watch<CompanionService>().incomingNudge
         : context.read<CompanionService>().incomingNudge;
-    final cornerFace = listen
+    final challengeOn = listen
+        ? context.watch<RemoteConfigService>().challengeEnabled
+        : context.read<RemoteConfigService>().challengeEnabled;
+    final cornerFace = !challengeOn
+        ? null
+        : listen
         ? context.watch<CornerService>().face
         : context.read<CornerService>().face;
 

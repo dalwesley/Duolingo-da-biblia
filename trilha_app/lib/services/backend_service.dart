@@ -916,17 +916,18 @@ class BackendService extends ChangeNotifier {
         .timeout(const Duration(seconds: 12));
   }
 
-  /// "Quero ser avisado" dos grupos: guarda no doc privado, para avisar
-  /// quem pediu quando os grupos chegarem.
-  Future<bool> joinGroupsWaitlist() async {
+  /// "Quero ser avisado" do que ainda não abriu (`groups`, `companion`,
+  /// `challenge`): guarda `{feature}WaitlistAt` no doc privado, para avisar
+  /// quem pediu quando abrir.
+  Future<bool> joinWaitlist(String feature) async {
     if (!isActive) return false;
     try {
       await _db.doc(_privatePath).set({
-        'groupsWaitlistAt': FieldValue.serverTimestamp(),
+        '${feature}WaitlistAt': FieldValue.serverTimestamp(),
       }, SetOptions(merge: true));
       return true;
     } catch (e) {
-      debugPrint('Falha ao entrar na lista dos grupos: $e');
+      debugPrint('Falha ao entrar na lista de espera ($feature): $e');
       return false;
     }
   }
