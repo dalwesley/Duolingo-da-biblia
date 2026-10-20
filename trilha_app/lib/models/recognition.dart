@@ -200,6 +200,14 @@ class RecognizableMedal {
     this.glyph = CinematicGlyph.gem,
     this.tier = PilgrimMedalTier.bronze,
   });
+
+  /// Nome da moeda no cofre. A trilha se chama Caminho; o degrau
+  /// (“Três dias firmes”) só existe dentro da medalha.
+  String get coinTitle {
+    final family = group?.trim();
+    if (family != null && family.isNotEmpty) return family;
+    return title;
+  }
 }
 
 /// Medalhas já conquistadas que o visitante pode reconhecer, uma a uma.
@@ -254,15 +262,33 @@ List<RecognizableMedal> recognizableMedals({
   return out;
 }
 
-/// Título da medalha a partir do id. Trilha usa o degrau, sem o nome do livro.
-String? medalTitleFor(String id, {DateTime? now}) {
+/// Medalha do catálogo a partir do id — título, glifo e metal.
+RecognizableMedal? medalById(String id, {DateTime? now}) {
+  RecognizableMedal fromLevel(
+    PilgrimMedalLevelDef level,
+    PilgrimMedalTrackDef track,
+  ) => RecognizableMedal(
+    id: level.id,
+    title: level.title,
+    group: track.title,
+    glyph: track.glyph,
+    tier: level.tier,
+  );
+
   for (final track in PilgrimMedalCatalog.journeyTracks) {
     for (final level in track.levels) {
-      if (level.id == id) return level.title;
+      if (level.id == id) return fromLevel(level, track);
     }
   }
   for (final medal in PilgrimMedalCatalog.rareMedals) {
-    if (medal.id == id) return medal.title;
+    if (medal.id == id) {
+      return RecognizableMedal(
+        id: medal.id,
+        title: medal.title,
+        glyph: medal.glyph,
+        tier: medal.tier,
+      );
+    }
   }
   final year = (now ?? DateTime.now()).year;
   for (final y in [year - 1, year, year + 1]) {
@@ -272,23 +298,41 @@ String? medalTitleFor(String id, {DateTime? now}) {
     ]) {
       for (final track in vault.tracks) {
         for (final level in track.levels) {
-          if (level.id == id) return level.title;
+          if (level.id == id) return fromLevel(level, track);
         }
       }
       for (final rare in vault.rareMedals) {
-        if (rare.id == id) return rare.title;
+        if (rare.id == id) {
+          return RecognizableMedal(
+            id: rare.id,
+            title: rare.title,
+            glyph: rare.glyph,
+            tier: rare.tier,
+          );
+        }
       }
     }
   }
   if (id.startsWith('track:trail:')) {
     final index = int.tryParse(id.split(':').last);
-    return switch (index) {
+    final title = switch (index) {
       0 => L10n.current.recognitionMedalFirstScene,
       1 => L10n.current.recognitionMedalObservation,
       2 => L10n.current.recognitionMedalUnderstanding,
       3 => L10n.current.recognitionMedalInterpretation,
       _ => null,
     };
+    if (title == null) return null;
+    return RecognizableMedal(
+      id: id,
+      title: title,
+      glyph: CinematicGlyph.book,
+      tier: PilgrimMedalTier.bronze,
+    );
   }
   return null;
 }
+
+/// Nome que a pessoa vê na moeda. Degrau de trilha usa o nome da medalha.
+String? medalTitleFor(String id, {DateTime? now}) =>
+    medalById(id, now: now)?.coinTitle;

@@ -42,6 +42,9 @@ class ProfileHero extends StatelessWidget {
   final int missions;
   final int? accuracyPercent;
 
+  /// A barra já está presa acima do scroll (perfil com voltar).
+  final bool chromePinned;
+
   const ProfileHero({
     super.key,
     required this.name,
@@ -58,6 +61,7 @@ class ProfileHero extends StatelessWidget {
     required this.steps,
     required this.missions,
     this.accuracyPercent,
+    this.chromePinned = false,
   });
 
   static String sinceFrom(String? ymd) {
@@ -77,41 +81,22 @@ class ProfileHero extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
     final l10n = context.l10n;
     final top = MediaQuery.viewPaddingOf(context).top;
     final displayName = name.trim().isEmpty
         ? l10n.pilgrimFallbackName
         : name.trim();
 
-    final showBar = onBack != null || onSettings != null;
+    final hasChrome = onBack != null || onSettings != null;
+    final showBar = hasChrome && !chromePinned;
     return Column(
       children: [
-        if (showBar)
-          Padding(
-            padding: EdgeInsets.fromLTRB(
-              AppSpace.screen,
-              top + AppSpace.sm,
-              AppSpace.screen,
-              0,
-            ),
-            child: TopBar(
-              inline: true,
-              immersive: true,
-              dark: a.onDark,
-              title: l10n.profileTitle,
-              subtitle: l10n.profileYourJourney,
-              leadingGlyph: CinematicGlyph.spark,
-              onBack: onBack,
-              onTrailingTap: onSettings,
-              trailingGlyph: CinematicGlyph.tune,
-            ),
-          ),
+        if (showBar) ProfileHeroBar(onBack: onBack, onSettings: onSettings),
         ContentFrame(
           child: Padding(
             padding: EdgeInsets.fromLTRB(
               AppSpace.screen,
-              showBar ? 0 : top + AppSpace.sm,
+              hasChrome ? 0 : top + AppSpace.sm,
               AppSpace.screen,
               0,
             ),
@@ -137,6 +122,40 @@ class ProfileHero extends StatelessWidget {
           ),
         ),
       ],
+    );
+  }
+}
+
+/// Barra do perfil. Com voltar, o dono da tela a deixa fora do scroll.
+class ProfileHeroBar extends StatelessWidget {
+  final VoidCallback? onBack;
+  final VoidCallback? onSettings;
+
+  const ProfileHeroBar({super.key, this.onBack, this.onSettings});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final l10n = context.l10n;
+    final top = MediaQuery.viewPaddingOf(context).top;
+    return Padding(
+      padding: EdgeInsets.fromLTRB(
+        AppSpace.screen,
+        top + AppSpace.sm,
+        AppSpace.screen,
+        0,
+      ),
+      child: TopBar(
+        inline: true,
+        immersive: true,
+        dark: a.onDark,
+        title: l10n.profileTitle,
+        subtitle: l10n.profileYourJourney,
+        leadingGlyph: CinematicGlyph.spark,
+        onBack: onBack,
+        onTrailingTap: onSettings,
+        trailingGlyph: CinematicGlyph.tune,
+      ),
     );
   }
 }
@@ -575,6 +594,7 @@ class _ConstancyCardState extends State<ConstancyCard> {
               perWeek: perWeek,
               walked: walked,
               weeks: ConstancyCard.weeks,
+              start: start,
             ),
           ],
         ],
@@ -726,24 +746,52 @@ class _DayDot extends StatelessWidget {
   }
 }
 
-/// Últimas semanas em barras: altura = dias caminhados naquela semana.
-/// Lê como tendência ("estou caminhando mais?"), não como grade de dados.
+/// Últimas semanas: uma lamparina por semana, agrupadas pelo mês.
+/// O número dentro do frasco é os dias caminhados, de 7.
 class _WeeksTrend extends StatelessWidget {
   final List<int> perWeek;
   final int walked;
   final int weeks;
 
+  /// Segunda-feira da primeira coluna.
+  final DateTime start;
+
   const _WeeksTrend({
     required this.perWeek,
     required this.walked,
     required this.weeks,
+    required this.start,
   });
+
+  /// A semana fica no mês da quinta: é o dia que cai na maior parte dela.
+  static List<_MonthSpan> _spans(DateTime start, int weeks) {
+    final spans = <_MonthSpan>[];
+    for (var i = 0; i < weeks; i++) {
+      final thursday = start.add(Duration(days: 7 * i + 3));
+      final month = DateTime(thursday.year, thursday.month);
+      if (spans.isNotEmpty &&
+          spans.last.month.year == month.year &&
+          spans.last.month.month == month.month) {
+        spans.last.count++;
+      } else {
+        spans.add(_MonthSpan(month, i));
+      }
+    }
+    return spans;
+  }
+
+  static String _monthName(DateTime month, String locale) {
+    return DateFormat('MMM', locale).format(month).replaceAll('.', '');
+  }
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final l10n = context.l10n;
-    const maxBar = 28.0;
+    const maxBar = 48.0;
+    const monthGap = 12.0;
+    const weekGap = 4.0;
+    final spans = _spans(start, perWeek.length);
     return Semantics(
       label: l10n.profileWeeksWalkedSemantics(walked, weeks),
       excludeSemantics: true,
@@ -765,58 +813,81 @@ class _WeeksTrend extends StatelessWidget {
             ],
           ),
           const SizedBox(height: AppSpace.md),
-          // Cada coluna é uma semana: trilho = 7 dias, ouro = dias
-          // caminhados, número em cima quando houve caminhada.
           Row(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
-              for (var w = 0; w < perWeek.length; w++) ...[
-                if (w > 0) const SizedBox(width: 6),
+              for (var g = 0; g < spans.length; g++) ...[
+                if (g > 0) const SizedBox(width: monthGap),
                 Expanded(
-                  child: _WeekBar(
-                    days: perWeek[w],
-                    height: maxBar,
-                    current: w == perWeek.length - 1,
-                    index: w,
+                  flex: spans[g].count,
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      for (var i = 0; i < spans[g].count; i++) ...[
+                        if (i > 0) const SizedBox(width: weekGap),
+                        Expanded(
+                          child: _WeekBar(
+                            days: perWeek[spans[g].start + i],
+                            height: maxBar,
+                            current: spans[g].start + i == perWeek.length - 1,
+                            index: spans[g].start + i,
+                          ),
+                        ),
+                      ],
+                    ],
                   ),
                 ),
               ],
             ],
           ),
-          const SizedBox(height: 6),
+          const SizedBox(height: 2),
           Row(
             children: [
-              Text(
-                l10n.profileThreeMonthsAgo,
-                style: AppTypography.body(
-                  size: 11,
-                  weight: FontWeight.w600,
-                  color: a.textFaint,
+              for (var g = 0; g < spans.length; g++) ...[
+                if (g > 0) const SizedBox(width: monthGap),
+                Expanded(
+                  flex: spans[g].count,
+                  child: Text(
+                    _monthName(spans[g].month, l10n.localeName),
+                    textAlign: TextAlign.center,
+                    maxLines: 1,
+                    softWrap: false,
+                    overflow: TextOverflow.fade,
+                    style: AppTypography.body(
+                      size: 12,
+                      weight: g == spans.length - 1
+                          ? FontWeight.w800
+                          : FontWeight.w600,
+                      color: g == spans.length - 1
+                          ? AppRoles.streak
+                          : a.textSecondary,
+                    ),
+                  ),
                 ),
-              ),
-              const Spacer(),
-              Text(
-                l10n.profileThisWeekLower,
-                style: AppTypography.body(
-                  size: 11,
-                  weight: FontWeight.w600,
-                  color: a.textFaint,
-                ),
-              ),
+              ],
             ],
           ),
-          const SizedBox(height: AppSpace.md),
+          const SizedBox(height: AppSpace.sm),
           Text(
             l10n.profileLampHelp,
-            style: AppTypography.verse(
-              size: 14,
+            style: AppTypography.body(
+              size: 13,
+              weight: FontWeight.w600,
               color: a.textSecondary,
-            ).copyWith(fontStyle: FontStyle.italic),
+            ),
           ),
         ],
       ),
     );
   }
+}
+
+class _MonthSpan {
+  final DateTime month;
+  final int start;
+  int count;
+
+  _MonthSpan(this.month, this.start) : count = 1;
 }
 
 /// Uma semana como jarro de azeite: cada dia caminhado enche um pouco mais
@@ -868,47 +939,68 @@ class _WeekBarState extends State<_WeekBar>
     final target = widget.days / 7;
     return Column(
       children: [
-        SizedBox(
-          height: 16,
-          child: widget.days > 0
-              ? Text(
-                  '${widget.days}',
-                  style: AppTypography.body(
-                    size: 11,
-                    weight: FontWeight.w800,
-                    color: widget.current ? a.text : a.textSecondary,
-                  ),
-                )
-              : null,
-        ),
-        // Chama no pavio: cresce com a semana; semana vazia, sem chama.
-        AnimatedBuilder(
-          animation: _wave,
-          builder: (context, _) => CustomPaint(
-            size: const Size(double.infinity, 22),
-            painter: _WickFlamePainter(
-              days: widget.days,
-              phase: _wave.value * 2 * math.pi + widget.index * 1.3,
+        // Chama só diz se a semana acendeu. A conta fica no número.
+        ClipRect(
+          child: AnimatedBuilder(
+            animation: _wave,
+            builder: (context, _) => CustomPaint(
+              size: const Size(double.infinity, 22),
+              painter: _WickFlamePainter(
+                days: widget.days,
+                phase: _wave.value * 2 * math.pi + widget.index * 1.3,
+              ),
             ),
           ),
         ),
-        // O azeite é derramado ao abrir: sobe do fundo até o nível.
+        // O azeite sobe reto até o dia. O número fica no meio do frasco:
+        // escuro quando o azeite cobre o centro, claro quando fica no vidro.
         TweenAnimationBuilder<double>(
           tween: Tween(begin: 0, end: target),
           duration: Duration(milliseconds: 700 + widget.index * 40),
           curve: AppMotion.enter,
-          builder: (context, level, _) => AnimatedBuilder(
-            animation: _wave,
-            builder: (context, _) => CustomPaint(
-              size: Size(double.infinity, widget.height),
-              painter: _OilVesselPainter(
-                level: level,
-                phase: _wave.value * 2 * math.pi + widget.index * 0.9,
-                glass: a.text,
-                current: widget.current,
+          builder: (context, level, _) {
+            final onOil = level >= 0.5;
+            return SizedBox(
+              height: widget.height,
+              width: double.infinity,
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  CustomPaint(
+                    size: Size(double.infinity, widget.height),
+                    painter: _OilVesselPainter(
+                      level: level,
+                      glass: a.text,
+                      current: widget.current,
+                    ),
+                  ),
+                  Text(
+                    '${widget.days}',
+                    style: AppTypography.body(
+                      size: 13,
+                      weight: FontWeight.w800,
+                      height: 1,
+                      color: onOil ? AppRoles.onAction : a.text,
+                    ),
+                  ),
+                ],
               ),
-            ),
-          ),
+            );
+          },
+        ),
+        // A seta cabe numa coluna só. "Esta semana" escrito embaixo
+        // cobria os três últimos frascos.
+        const SizedBox(height: 3),
+        SizedBox(
+          height: 7,
+          child: widget.current
+              ? const Center(
+                  child: CustomPaint(
+                    size: Size(12, 7),
+                    painter: _WeekCaretPainter(color: AppRoles.streak),
+                  ),
+                )
+              : null,
         ),
       ],
     );
@@ -917,20 +1009,17 @@ class _WeekBarState extends State<_WeekBar>
 
 class _OilVesselPainter extends CustomPainter {
   final double level;
-  final double phase;
   final Color glass;
   final bool current;
 
   _OilVesselPainter({
     required this.level,
-    required this.phase,
     required this.glass,
     required this.current,
   });
 
   // Jarro reto: paredes retas, fundo arredondado e aba na boca — o
   // recipiente simples do azeite, sem virar garrafa.
-  static const _neckBottom = 0.0;
   static const _rim = 4.0;
 
   Path _vessel(Size size) {
@@ -957,7 +1046,7 @@ class _OilVesselPainter extends CustomPainter {
     final h = size.height;
     final vessel = _vessel(size);
 
-    // Vidro translúcido o bastante para ver o azeite.
+    // Vidro visível mesmo na semana vazia — o jarro vazio também é um dado.
     canvas.drawPath(
       vessel,
       Paint()
@@ -965,87 +1054,105 @@ class _OilVesselPainter extends CustomPainter {
           begin: Alignment.centerLeft,
           end: Alignment.centerRight,
           colors: [
-            glass.withValues(alpha: 0.12),
-            glass.withValues(alpha: 0.05),
+            glass.withValues(alpha: current ? 0.18 : 0.14),
+            glass.withValues(alpha: 0.07),
           ],
         ).createShader(Offset.zero & size),
     );
 
+    // Cheio encosta na boca. A borda do azeite é reta para o nível ser óbvio.
+    final top = _rim;
+    final span = h - top;
+    final surface = h - span * level;
+
     if (level > 0) {
       canvas.save();
       canvas.clipPath(vessel);
-      final top = _rim + 2 + h * _neckBottom;
-      final surface = h - (h - top) * level;
-      final amp = level >= 0.99 ? 0.0 : 1.1;
-      final oil = Path()..moveTo(0, surface);
-      for (var x = 0.0; x <= w; x += 1) {
-        oil.lineTo(x, surface + math.sin(phase + x / w * 2 * math.pi) * amp);
-      }
-      oil
-        ..lineTo(w, h)
-        ..lineTo(0, h)
-        ..close();
-      canvas.drawPath(
-        oil,
+      canvas.drawRect(
+        Rect.fromLTRB(0, surface, w, h),
         Paint()
           ..shader = LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              const Color(0xFFFFE08A).withValues(alpha: current ? 1 : 0.85),
-              AppColors.accent.withValues(alpha: current ? 1 : 0.85),
-              const Color(0xFFB07A00).withValues(alpha: current ? 1 : 0.85),
+              const Color(0xFFFFE08A).withValues(alpha: current ? 1 : 0.9),
+              AppRoles.streak.withValues(alpha: current ? 1 : 0.9),
+              const Color(0xFFB07A00).withValues(alpha: current ? 1 : 0.9),
             ],
             stops: const [0, 0.35, 1],
-          ).createShader(Rect.fromLTRB(0, surface - 2, w, h)),
+          ).createShader(Rect.fromLTRB(0, surface, w, h)),
       );
-      canvas.drawLine(
-        Offset(w * 0.2, surface + 1.1),
-        Offset(w * 0.5, surface + 1.1),
-        Paint()
-          ..color = Colors.white.withValues(alpha: 0.35)
-          ..strokeWidth = 1
-          ..strokeCap = StrokeCap.round,
-      );
+      // A linha do nível não corta o algarismo no meio do frasco.
+      final numberBand = 8.0;
+      if ((surface - h / 2).abs() >= numberBand) {
+        canvas.drawLine(
+          Offset(0, surface),
+          Offset(w, surface),
+          Paint()
+            ..color = const Color(0xFFFFF4C8).withValues(alpha: 0.95)
+            ..strokeWidth = 1.5,
+        );
+      }
       canvas.restore();
     }
 
     // Reflexo vertical na parede.
     canvas.drawLine(
-      Offset(w * 0.26, h * 0.3),
+      Offset(w * 0.26, h * 0.28),
       Offset(w * 0.26, h * 0.78),
       Paint()
-        ..color = Colors.white.withValues(alpha: 0.16)
+        ..color = Colors.white.withValues(alpha: 0.2)
         ..strokeWidth = 1.3
         ..strokeCap = StrokeCap.round,
     );
 
-    // Aba da boca: faixa um pouco mais larga que o corpo.
+    // Aba da boca: o sétimo dia, o jarro cheio.
     canvas.drawRRect(
       RRect.fromLTRBR(0, 0, w, _rim, const Radius.circular(2)),
-      Paint()..color = glass.withValues(alpha: current ? 0.7 : 0.3),
+      Paint()
+        ..color = (current ? AppRoles.streak : glass).withValues(
+          alpha: current ? 0.9 : 0.45,
+        ),
     );
 
-    // Contorno: a semana atual um pouco mais acesa.
     canvas.drawPath(
       vessel,
       Paint()
         ..style = PaintingStyle.stroke
-        ..strokeWidth = current ? 1.4 : 1
-        ..color = glass.withValues(alpha: current ? 0.55 : 0.22),
+        ..strokeWidth = current ? 1.6 : 1.1
+        ..color = (current ? AppRoles.streak : glass).withValues(
+          alpha: current ? 0.85 : 0.4,
+        ),
     );
   }
 
   @override
   bool shouldRepaint(covariant _OilVesselPainter old) =>
-      old.level != level ||
-      old.phase != phase ||
-      old.glass != glass ||
-      old.current != current;
+      old.level != level || old.glass != glass || old.current != current;
 }
 
-/// Chama sobre o jarro: nenhuma (semana vazia), pequena (1–3 dias), média
-/// (4–6) ou grande com brilho (semana inteira) — Lv 6:13, Mt 25:4.
+/// Seta para cima, na largura de um frasco: marca só a semana atual.
+class _WeekCaretPainter extends CustomPainter {
+  final Color color;
+
+  const _WeekCaretPainter({required this.color});
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final path = Path()
+      ..moveTo(size.width / 2, 0)
+      ..lineTo(size.width, size.height)
+      ..lineTo(0, size.height)
+      ..close();
+    canvas.drawPath(path, Paint()..color = color);
+  }
+
+  @override
+  bool shouldRepaint(covariant _WeekCaretPainter old) => old.color != color;
+}
+
+/// Chama sobre o jarro: apagada (semana vazia), acesa (houve caminhada)
+/// ou alta na semana inteira. A quantidade de dias está no número.
 class _WickFlamePainter extends CustomPainter {
   final int days;
   final double phase;
@@ -1054,8 +1161,7 @@ class _WickFlamePainter extends CustomPainter {
 
   double get _tier => switch (days) {
     <= 0 => 0,
-    <= 3 => 0.45,
-    <= 6 => 0.72,
+    < 7 => 0.62,
     _ => 1,
   };
 

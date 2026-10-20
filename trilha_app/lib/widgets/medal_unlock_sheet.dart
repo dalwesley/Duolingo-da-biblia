@@ -14,6 +14,7 @@ import 'cinematic_icon.dart';
 import 'confetti_overlay.dart';
 import 'medal_cinematic_widgets.dart';
 import 'recognition_actions.dart';
+import 'recognition_heart_badge.dart';
 import 'recognition_history_sheet.dart';
 import 'cloud_mascot.dart';
 import 'ui_primitives.dart';
@@ -261,7 +262,16 @@ class _MedalDetailSheetState extends State<_MedalDetailSheet>
                       Align(
                         alignment: Alignment.centerRight,
                         child: widget.recognizeToUid == null
-                            ? ReceivedHeartBadge(subjectKeys: {tile.id})
+                            ? ReceivedHeartBadge(
+                                subjectKeys: {tile.id},
+                                onTap: () {
+                                  ActHaptics.tap();
+                                  showRecognitionHistorySheet(
+                                    context,
+                                    medalIds: {tile.id},
+                                  );
+                                },
+                              )
                             : RecognizeHeartButton(
                                 toUid: widget.recognizeToUid,
                                 kind: RecognitionKind.medal,
@@ -458,6 +468,13 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
                         child: widget.recognizeToUid == null
                             ? ReceivedHeartBadge(
                                 subjectKeys: trackState.earnedMedalIds,
+                                onTap: () {
+                                  ActHaptics.tap();
+                                  showRecognitionHistorySheet(
+                                    context,
+                                    medalIds: trackState.earnedMedalIds,
+                                  );
+                                },
                               )
                             : RecognizeHeartButton(
                                 toUid: widget.recognizeToUid,

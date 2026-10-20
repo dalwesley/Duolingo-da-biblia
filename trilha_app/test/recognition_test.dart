@@ -78,9 +78,9 @@ void main() {
         kind: RecognitionKind.medal,
         subjectKey: 'track:path:streak_14',
       );
-      expect(medal.headline, 'Ana reconheceu a medalha Duas semanas');
-      expect(medal.subjectLabel, 'Duas semanas');
-      expect(medal.historyLine, 'Ana · Duas semanas');
+      expect(medal.headline, 'Ana reconheceu Caminho');
+      expect(medal.subjectLabel, 'Caminho');
+      expect(medal.historyLine, 'Ana · Caminho');
 
       const unknown = Recognition(
         id: 'c',

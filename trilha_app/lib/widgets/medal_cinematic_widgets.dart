@@ -8,7 +8,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 import 'embossed_glyph.dart';
-import 'recognition_history_sheet.dart';
+import 'recognition_heart_badge.dart';
 
 /// Halo radial + raios suaves — fundo de sheets e tiles de medalha.
 class MedalSpotlightPainter extends CustomPainter {

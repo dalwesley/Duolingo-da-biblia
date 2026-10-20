@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../models/pilgrim_medals.dart';
 import '../models/recognition.dart';
 import '../l10n/app_language.dart';
 import '../l10n/l10n_global.dart';
@@ -12,18 +13,14 @@ import '../services/recognition_service.dart';
 import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
-import 'act_feel.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
-import 'immersive_background.dart';
 import 'ui_primitives.dart';
 import 'user_avatar.dart';
 import 'user_moderation_sheet.dart';
 
-/// Lista quem reconheceu o quê — Home (depois de Entendi) e Perfil.
-///
-/// [medalIds] limita à medalha aberta. Sem Peregrino+, a folha mostra o
-/// número e o que foi visto, e esconde o nome.
+/// Quem reconheceu. [medalIds] limita à medalha do coração tocado.
+/// Sem Peregrino+, a folha mostra o que foi visto e esconde o nome.
 Future<void> showRecognitionHistorySheet(
   BuildContext context, {
   Set<String>? medalIds,
@@ -36,150 +33,6 @@ Future<void> showRecognitionHistorySheet(
   );
 }
 
-List<Recognition> _sheetItems(
-  RecognitionService service,
-  Set<String>? medalIds,
-) {
-  final all = service.received;
-  if (medalIds == null) return all;
-  return [
-    for (final item in all)
-      if (item.kind == RecognitionKind.medal &&
-          medalIds.contains(item.subjectKey))
-        item,
-  ];
-}
-
-/// Atalho no perfil. Peregrino+ vê os rostos; os outros só o número
-/// de corações.
-class RecognitionHistoryCard extends StatelessWidget {
-  const RecognitionHistoryCard({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final l10n = context.l10n;
-    final plus = context.watch<SubscriptionService>().plusFeaturesOpen;
-    final items = context.watch<RecognitionService>().received;
-    final groups = groupRecognitionsBySender(items);
-    final latest = items.isEmpty ? null : items.first;
-
-    final subtitle = items.isEmpty
-        ? l10n.recognitionEmptyCard
-        : plus
-        ? _peopleLine(l10n, groups)
-        : l10n.recognitionCardHearts(items.length);
-
-    return Semantics(
-      button: true,
-      label: l10n.recognitionSemanticsWho(subtitle),
-      excludeSemantics: true,
-      child: GlassCard(
-        tint: items.isEmpty ? null : AppRoles.success,
-        onTap: () {
-          ActHaptics.tap();
-          showRecognitionHistorySheet(context);
-        },
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                _HeartSeal(size: AppMetrics.leadingIcon, lit: items.isNotEmpty),
-                const SizedBox(width: AppSpace.md),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        l10n.recognitionWhoTitle,
-                        style: AppTypography.title(size: 16, color: a.text),
-                      ),
-                      const SizedBox(height: 3),
-                      Text(
-                        subtitle,
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                        style: AppTypography.body(
-                          size: 12,
-                          height: 1.35,
-                          weight: FontWeight.w600,
-                          color: a.textSecondary,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(width: AppSpace.sm),
-                ListChevron(color: a.textFaint),
-              ],
-            ),
-            if (plus && latest != null) ...[
-              const SizedBox(height: AppSpace.md),
-              InsetPanel(
-                padding: const EdgeInsets.fromLTRB(
-                  AppSpace.md,
-                  10,
-                  AppSpace.md,
-                  10,
-                ),
-                child: Row(
-                  children: [
-                    _FaceStack(groups: groups),
-                    const SizedBox(width: AppSpace.md),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            latest.headline,
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
-                            style: AppTypography.body(
-                              size: 13,
-                              weight: FontWeight.w700,
-                              color: a.text,
-                            ),
-                          ),
-                          if (whenLabel(latest.createdAt)
-                              case final whenText?) ...[
-                            const SizedBox(height: 2),
-                            Text(
-                              whenText,
-                              style: AppTypography.label(
-                                size: 10,
-                                letterSpacing: 0.6,
-                                color: a.textFaint,
-                              ),
-                            ),
-                          ],
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ],
-        ),
-      ),
-    );
-  }
-
-  static String _peopleLine(
-    AppLocalizations l10n,
-    List<RecognitionSenderGroup> groups,
-  ) {
-    final names = groups.map((g) => g.name).toList();
-    final who = switch (names.length) {
-      1 => names[0],
-      2 => l10n.recognitionAndTwo(names[0], names[1]),
-      _ => l10n.recognitionAndMore(names[0], names[1], names.length - 2),
-    };
-    return l10n.recognitionSawJourney(names.length, who);
-  }
-}
-
 class _RecognitionHistorySheet extends StatelessWidget {
   final Set<String>? medalIds;
 
@@ -190,67 +43,80 @@ class _RecognitionHistorySheet extends StatelessWidget {
     final l10n = context.l10n;
     final service = context.watch<RecognitionService>();
     final plus = context.watch<SubscriptionService>().plusFeaturesOpen;
-    final items = _sheetItems(service, medalIds);
+    final items = [
+      for (final item in service.received)
+        if (medalIds == null ||
+            (item.kind == RecognitionKind.medal &&
+                medalIds!.contains(item.subjectKey)))
+          item,
+    ];
     final groups = groupRecognitionsBySender(items);
     final loading = service.recentLoading && items.isEmpty;
     final revealNames = plus || items.isEmpty;
 
+    // Com os nomes, a pessoa é o conteúdo. A contagem fica para quem
+    // ainda não vê quem foi.
     final summary = items.isEmpty
         ? l10n.recognitionSummaryEmpty
         : revealNames
-        ? l10n.recognitionSummaryCounts(items.length, groups.length)
+        ? null
         : l10n.recognitionCardHearts(items.length);
 
+    final body = loading
+        ? const Padding(
+            padding: EdgeInsets.all(AppSpace.xxxl),
+            child: AppSpinner(),
+          )
+        : items.isEmpty
+        ? _EmptySheet(message: l10n.recognitionEmptySheet)
+        : !revealNames
+        ? _LockedWho(items: items)
+        : ListView.separated(
+            shrinkWrap: true,
+            primary: false,
+            padding: const EdgeInsets.only(bottom: AppSpace.xs),
+            itemCount: groups.length,
+            separatorBuilder: (_, _) =>
+                const ListDivider(indent: 14, endIndent: 14),
+            itemBuilder: (context, i) => _Reveal(
+              index: i,
+              child: _SenderCard(group: groups[i]),
+            ),
+          );
+
+    // A lista encolhe com o conteúdo e só passa a rolar perto de metade
+    // da tela. Sem isso a folha estica e o Fechar fica num vazio.
     return AppSheetPanel(
-      child: ConstrainedBox(
-        constraints: BoxConstraints(
-          maxHeight: MediaQuery.sizeOf(context).height * 0.78,
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            const SizedBox(height: AppSpace.xs),
-            AppSheetHeader(
-              leading: _HeartSeal(
-                size: AppMetrics.iconHero,
-                lit: items.isNotEmpty,
-              ),
-              title: l10n.recognitionWhoTitle,
-              subtitle: summary,
-              center: true,
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          const SizedBox(height: AppSpace.xs),
+          AppSheetHeader(
+            leading: _HeartSeal(
+              size: AppMetrics.iconHero,
+              lit: items.isNotEmpty,
             ),
-            const SizedBox(height: AppSpace.lg),
-            Flexible(
-              child: loading
-                  ? const Padding(
-                      padding: EdgeInsets.all(AppSpace.xxxl),
-                      child: AppSpinner(),
-                    )
-                  : items.isEmpty
-                  ? _EmptySheet(message: l10n.recognitionEmptySheet)
-                  : !revealNames
-                  ? _LockedWho(items: items)
-                  : ListView.separated(
-                      shrinkWrap: true,
-                      padding: const EdgeInsets.only(bottom: AppSpace.lg),
-                      itemCount: groups.length,
-                      separatorBuilder: (_, _) =>
-                          const SizedBox(height: AppSpace.sm),
-                      itemBuilder: (context, i) => _Reveal(
-                        index: i,
-                        child: _SenderCard(group: groups[i]),
-                      ),
-                    ),
+            title: l10n.recognitionWhoTitle,
+            subtitle: summary,
+            center: true,
+          ),
+          const SizedBox(height: AppSpace.lg),
+          ConstrainedBox(
+            constraints: BoxConstraints(
+              maxHeight: MediaQuery.sizeOf(context).height * 0.5,
             ),
-            CopperCta(
-              label: l10n.commonClose,
-              dense: true,
-              leading: null,
-              trailing: null,
-              onTap: () => Navigator.of(context).pop(),
-            ),
-          ],
-        ),
+            child: body,
+          ),
+          const SizedBox(height: AppSpace.lg),
+          CopperCta(
+            label: l10n.commonClose,
+            dense: true,
+            leading: null,
+            trailing: null,
+            onTap: () => Navigator.of(context).pop(),
+          ),
+        ],
       ),
     );
   }
@@ -274,7 +140,8 @@ class _LockedWho extends StatelessWidget {
 
     return ListView(
       shrinkWrap: true,
-      padding: const EdgeInsets.only(bottom: AppSpace.lg),
+      primary: false,
+      padding: const EdgeInsets.only(bottom: AppSpace.xs),
       children: [
         Text(
           l10n.recognitionWhoLockedBody,
@@ -313,114 +180,8 @@ class _LockedWho extends StatelessWidget {
   }
 }
 
-/// Coração com o número — no canto da medalha e no cofre.
-class HeartCountMark extends StatelessWidget {
-  final int count;
-  final VoidCallback? onTap;
-  final bool compact;
-
-  const HeartCountMark({
-    super.key,
-    required this.count,
-    this.onTap,
-    this.compact = false,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    if (count <= 0) return const SizedBox.shrink();
-    final l10n = context.l10n;
-    final mark = DecoratedBox(
-      decoration: BoxDecoration(
-        color: AppRoles.success.withValues(alpha: compact ? 0.92 : 0.16),
-        borderRadius: BorderRadius.circular(compact ? 10 : 22),
-        border: Border.all(
-          color: compact
-              ? Appearance.of(context).cardFill
-              : AppRoles.success.withValues(alpha: 0.7),
-          width: compact ? 1.5 : 1,
-        ),
-      ),
-      child: Padding(
-        padding: EdgeInsets.symmetric(
-          horizontal: compact ? 5 : 8,
-          vertical: compact ? 2 : 6,
-        ),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            CinematicIcon(
-              glyph: CinematicGlyph.heart,
-              size: compact ? 12 : AppMetrics.iconSm,
-              accent: compact ? AppColors.textOnDark : AppRoles.success,
-              framed: false,
-            ),
-            SizedBox(width: compact ? 2 : 4),
-            Text(
-              '$count',
-              style: AppTypography.title(
-                size: compact ? 10 : 14,
-                color: compact ? AppColors.textOnDark : AppRoles.success,
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-
-    return Semantics(
-      button: onTap != null,
-      label: l10n.recognitionHeartOnMedal(count),
-      excludeSemantics: true,
-      child: onTap == null
-          ? IgnorePointer(child: mark)
-          : Material(
-              color: Colors.transparent,
-              child: InkWell(
-                onTap: onTap,
-                borderRadius: BorderRadius.circular(22),
-                child: mark,
-              ),
-            ),
-    );
-  }
-}
-
-/// Número de corações recebidos nesta medalha. O toque abre quem foi,
-/// ou a folha travada quando não há Peregrino+.
-class ReceivedHeartBadge extends StatelessWidget {
-  final Set<String> subjectKeys;
-  final bool compact;
-
-  const ReceivedHeartBadge({
-    super.key,
-    required this.subjectKeys,
-    this.compact = false,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    if (subjectKeys.isEmpty) return const SizedBox.shrink();
-    final count = countRecognitions(
-      context.watch<RecognitionService>().received,
-      kind: RecognitionKind.medal,
-      subjectKeys: subjectKeys,
-    );
-    return HeartCountMark(
-      count: count,
-      compact: compact,
-      onTap: compact
-          ? null
-          : () {
-              ActHaptics.tap();
-              showRecognitionHistorySheet(context, medalIds: subjectKeys);
-            },
-    );
-  }
-}
-
-/// Uma pessoa e tudo o que ela reconheceu — o rosto primeiro, os gestos
-/// embaixo.
+/// Uma pessoa, no mesmo desenho da lista da trilha: rosto, nome,
+/// discos do que ela viu e o número à direita.
 class _SenderCard extends StatelessWidget {
   final RecognitionSenderGroup group;
 
@@ -429,75 +190,223 @@ class _SenderCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final l10n = context.l10n;
     final first = group.items.first;
-    final count = group.items.length;
-    return InsetPanel(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+    final medals = <RecognizableMedal>[];
+    final walks = <Recognition>[];
+    final unknown = <Recognition>[];
+    for (final item in group.items) {
+      if (item.kind == RecognitionKind.walk) {
+        walks.add(item);
+        continue;
+      }
+      final face = medalById(item.subjectKey);
+      if (face == null) {
+        unknown.add(item);
+      } else {
+        medals.add(face);
+      }
+    }
+    final whenText = whenLabel(first.createdAt);
+    final today = whenText == l10n.commonToday;
+    final discs = <({CinematicGlyph glyph, Color accent})>[
+      for (final medal in medals)
+        (glyph: medal.glyph, accent: tierColor(medal.tier)),
+      for (final _ in walks)
+        (glyph: CinematicGlyph.path, accent: AppRoles.presence),
+      for (final _ in unknown)
+        (glyph: CinematicGlyph.gem, accent: AppColors.medalGold),
+    ];
+    final caption = medals.length == 1 && walks.isEmpty && unknown.isEmpty
+        ? medals.first.coinTitle
+        : walks.length == 1 && medals.isEmpty && unknown.isEmpty
+        ? walks.first.subjectLabel
+        : unknown.length == 1 && medals.isEmpty && walks.isEmpty
+        ? unknown.first.subjectLabel
+        : null;
+
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(8, 12, 0, 12),
+      child: Row(
         children: [
-          Row(
+          UserAvatar(
+            name: group.name,
+            seed: first.fromUid,
+            style: PortraitStyle.letter,
+            radius: AppMetrics.avatarMd,
+            borderColor: AppRoles.presence,
+          ),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  group.name,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTypography.title(size: 14, color: a.text),
+                ),
+                const SizedBox(height: 4),
+                _SeenLine(discs: discs, caption: caption),
+              ],
+            ),
+          ),
+          const SizedBox(width: 8),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.end,
             children: [
-              UserAvatar(
-                name: group.name,
-                seed: first.fromUid,
-                style: PortraitStyle.letter,
-                radius: AppMetrics.avatarMd,
-              ),
-              const SizedBox(width: AppSpace.md),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      group.name,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: AppTypography.title(size: 16, color: a.text),
-                    ),
-                    const SizedBox(height: 1),
-                    Text(
-                      context.l10n.recognitionSawYou(count),
-                      style: AppTypography.body(
-                        size: 12,
-                        weight: FontWeight.w600,
-                        color: a.textSecondary,
-                      ),
-                    ),
-                  ],
+              Text(
+                '${group.items.length}',
+                style: AppTypography.title(
+                  size: 18,
+                  weight: FontWeight.w900,
+                  color: a.text,
                 ),
               ),
-              if (whenLabel(first.createdAt) case final whenText?)
+              if (whenText != null)
                 Text(
                   whenText,
                   style: AppTypography.label(
                     size: 10,
-                    letterSpacing: 0.6,
-                    color: a.textFaint,
+                    letterSpacing: 0.2,
+                    weight: FontWeight.w800,
+                    color: today ? AppRoles.presence : a.textFaint,
                   ),
                 ),
-              UserModerationButton(
-                uid: first.fromUid,
-                name: group.name,
-                source: UserReportSource.recognition,
-                onDone: (outcome) {
-                  // Tira do histórico quem acabou de ser bloqueado.
-                  if (outcome == ModerationOutcome.blocked && context.mounted) {
-                    context.read<RecognitionService>().refreshRecent();
-                  }
-                },
-              ),
             ],
           ),
-          const SizedBox(height: AppSpace.md),
-          Wrap(
-            spacing: 6,
-            runSpacing: 6,
-            children: [
-              for (final item in group.items) _SubjectChip(item: item),
-            ],
+          IconButtonTheme(
+            data: IconButtonThemeData(
+              style: IconButton.styleFrom(
+                tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                minimumSize: const Size(32, 32),
+                padding: EdgeInsets.zero,
+                visualDensity: VisualDensity.compact,
+              ),
+            ),
+            child: UserModerationButton(
+              uid: first.fromUid,
+              name: group.name,
+              source: UserReportSource.recognition,
+              onDone: (outcome) {
+                if (outcome == ModerationOutcome.blocked && context.mounted) {
+                  context.read<RecognitionService>().refreshRecent();
+                }
+              },
+            ),
           ),
         ],
       ),
+    );
+  }
+}
+
+/// Discos do que a pessoa viu, no mesmo tamanho da linha de medalhas da trilha.
+class _SeenLine extends StatelessWidget {
+  final List<({CinematicGlyph glyph, Color accent})> discs;
+  final String? caption;
+
+  const _SeenLine({required this.discs, this.caption});
+
+  @override
+  Widget build(BuildContext context) {
+    const size = 24.0;
+    const overlap = 16.0;
+    final shown = discs.take(3).toList();
+    final extra = discs.length - shown.length;
+    final slots = shown.length + (extra > 0 ? 1 : 0);
+    if (slots == 0 && caption == null) return const SizedBox.shrink();
+
+    return Row(
+      children: [
+        if (slots > 0)
+          SizedBox(
+            width: size + (slots - 1) * overlap,
+            height: size,
+            child: Stack(
+              children: [
+                for (var i = 0; i < shown.length; i++)
+                  Positioned(
+                    left: i * overlap,
+                    child: _Disc(
+                      glyph: shown[i].glyph,
+                      accent: shown[i].accent,
+                    ),
+                  ),
+                if (extra > 0)
+                  Positioned(
+                    left: shown.length * overlap,
+                    child: _Disc(
+                      glyph: CinematicGlyph.gem,
+                      accent: AppColors.medalGold,
+                      overlay: '+$extra',
+                    ),
+                  ),
+              ],
+            ),
+          ),
+        if (caption != null) ...[
+          if (slots > 0) const SizedBox(width: 8),
+          Expanded(
+            child: Text(
+              caption!,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: AppTypography.body(
+                size: 12,
+                weight: FontWeight.w700,
+                color: Appearance.of(context).textSecondary,
+              ),
+            ),
+          ),
+        ],
+      ],
+    );
+  }
+}
+
+class _Disc extends StatelessWidget {
+  final CinematicGlyph glyph;
+  final Color accent;
+  final String? overlay;
+
+  const _Disc({required this.glyph, required this.accent, this.overlay});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 24,
+      height: 24,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: Appearance.of(context).cardFill,
+        border: Border.all(color: accent, width: 1.4),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.28),
+            blurRadius: 3,
+            offset: const Offset(0, 1),
+          ),
+        ],
+      ),
+      alignment: Alignment.center,
+      child: overlay != null
+          ? Text(
+              overlay!,
+              style: AppTypography.label(
+                size: 10,
+                letterSpacing: 0,
+                weight: FontWeight.w900,
+                color: accent,
+              ),
+            )
+          : CinematicIcon(
+              glyph: glyph,
+              size: AppMetrics.chipIcon,
+              accent: accent,
+              framed: false,
+            ),
     );
   }
 }
@@ -532,60 +441,6 @@ class _HeartSeal extends StatelessWidget {
       size: size,
       accent: lit ? AppRoles.success : Appearance.of(context).textFaint,
       glowing: lit,
-    );
-  }
-}
-
-/// Rostos sobrepostos de quem reconheceu (até 3, depois "+N").
-class _FaceStack extends StatelessWidget {
-  final List<RecognitionSenderGroup> groups;
-
-  const _FaceStack({required this.groups});
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    const size = AppMetrics.avatarSm * 2;
-    const step = size * 0.64;
-    final shown = groups.take(3).toList();
-    final extra = groups.length - shown.length;
-    final slots = shown.length + (extra > 0 ? 1 : 0);
-    return SizedBox(
-      width: size + (slots - 1) * step,
-      height: size,
-      child: Stack(
-        children: [
-          for (var i = 0; i < shown.length; i++)
-            Positioned(
-              left: i * step,
-              child: UserAvatar(
-                name: shown[i].name,
-                seed: shown[i].items.first.fromUid,
-                style: PortraitStyle.letter,
-                radius: size / 2,
-                borderColor: a.cardFill,
-              ),
-            ),
-          if (extra > 0)
-            Positioned(
-              left: shown.length * step,
-              child: Container(
-                width: size,
-                height: size,
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: Color.lerp(a.cardFill, AppRoles.chrome, 0.12),
-                  border: Border.all(color: a.cardFill, width: 1.5),
-                ),
-                child: Text(
-                  '+$extra',
-                  style: AppTypography.label(size: 10, color: a.textSecondary),
-                ),
-              ),
-            ),
-        ],
-      ),
     );
   }
 }

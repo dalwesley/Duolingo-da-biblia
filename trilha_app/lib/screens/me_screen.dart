@@ -25,7 +25,7 @@ import '../widgets/profile_privacy.dart';
 import '../widgets/portrait_picker_sheet.dart';
 import '../widgets/profile_hero.dart';
 import '../widgets/relic_panel.dart';
-import '../widgets/recognition_history_sheet.dart';
+import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import 'bible_screen.dart';
 import 'settings_screen.dart';
@@ -175,6 +175,7 @@ class _MeScreenState extends State<MeScreen> {
           onEditPortrait: () => showPortraitPickerSheet(context),
           onBack: widget.onBack,
           onSettings: () => openSettings(context),
+          chromePinned: true,
           epithet: epithet,
           epithetColor: epithetColor,
           sinceLabel: ProfileHero.sinceFrom(
@@ -276,22 +277,59 @@ class _MeScreenState extends State<MeScreen> {
         pad(const _FavoritesSection()),
         pad(const _SharedVersesSection()),
       ],
-      const SizedBox(height: AppSpace.section),
-      pad(const RecognitionHistoryCard()),
-      const SizedBox(height: AppSpace.sm),
     ]);
 
     // Só no próprio perfil os cards mostram o olho de privacidade.
-    if (hero || widget.topBar == null) {
+    // Voltar fica preso; barra de aba sobe com o conteúdo.
+    if (hero) {
+      return ProfilePrivacyScope(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            ProfileHeroBar(
+              onBack: widget.onBack,
+              onSettings: () => openSettings(context),
+            ),
+            Expanded(
+              child: ListView(
+                padding: EdgeInsets.fromLTRB(
+                  0,
+                  0,
+                  0,
+                  scrollPaddingBelowNav(context),
+                ),
+                children: body,
+              ),
+            ),
+          ],
+        ),
+      );
+    }
+
+    final bottom = scrollPaddingBelowNav(context);
+    if (widget.topBar == null || !topBarStaysFixed(widget.topBar)) {
       return ProfilePrivacyScope(
         child: ListView(
           padding: EdgeInsets.fromLTRB(
             0,
-            hero ? 0 : AppSpace.lg,
+            widget.topBar == null
+                ? AppSpace.lg
+                : MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
             0,
-            scrollPaddingBelowNav(context),
+            bottom,
           ),
-          children: body,
+          children: [
+            if (widget.topBar != null) ...[
+              Padding(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: AppSpace.screen,
+                ),
+                child: widget.topBar!,
+              ),
+              const SizedBox(height: AppSpace.afterTopBar),
+            ],
+            ...body,
+          ],
         ),
       );
     }
@@ -312,12 +350,7 @@ class _MeScreenState extends State<MeScreen> {
           ),
           Expanded(
             child: ListView(
-              padding: EdgeInsets.fromLTRB(
-                0,
-                AppSpace.afterTopBar,
-                0,
-                scrollPaddingBelowNav(context),
-              ),
+              padding: EdgeInsets.fromLTRB(0, AppSpace.afterTopBar, 0, bottom),
               children: body,
             ),
           ),
@@ -381,15 +414,11 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
   static String _key(({String abbrev, int chapter, int verse}) b) =>
       '${b.abbrev}:${b.chapter}:${b.verse}';
 
-  void _schedule(
-    List<({String abbrev, int chapter, int verse})> shown,
-  ) {
+  void _schedule(List<({String abbrev, int chapter, int verse})> shown) {
     final stamp = shown.map(_key).join('|');
     if (stamp == _loadedKeys) return;
     _loadedKeys = stamp;
-    WidgetsBinding.instance.addPostFrameCallback(
-      (_) => _load(shown, stamp),
-    );
+    WidgetsBinding.instance.addPostFrameCallback((_) => _load(shown, stamp));
   }
 
   Future<void> _load(
@@ -651,11 +680,7 @@ class _WordRow extends StatelessWidget {
   final String? verse;
   final VoidCallback onTap;
 
-  const _WordRow({
-    required this.reference,
-    this.verse,
-    required this.onTap,
-  });
+  const _WordRow({required this.reference, this.verse, required this.onTap});
 
   @override
   Widget build(BuildContext context) {

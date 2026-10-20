@@ -31,11 +31,19 @@ class FlowingWindingTrail extends StatefulWidget {
   final int waveOffset;
   final List<WindingStop> stops;
 
+  /// false: o tracejado para onde a pessoa já chegou. O resto fica limpo.
+  final bool showAhead;
+
+  /// O Anan, fora da curva. Senta na entrada do card onde as pegadas chegam.
+  final Widget? walker;
+
   const FlowingWindingTrail({
     super.key,
     required this.walked,
     required this.track,
     this.waveOffset = 0,
+    this.showAhead = true,
+    this.walker,
     required this.stops,
   });
 
@@ -79,8 +87,9 @@ class _FlowingWindingTrailState extends State<FlowingWindingTrail>
       walked: widget.walked,
       track: widget.track,
       waveOffset: widget.waveOffset,
+      showAhead: widget.showAhead,
       flow: _flow,
-      stops: widget.stops,
+      stops: [...widget.stops, if (widget.walker != null) widget.walker!],
     );
   }
 }
@@ -90,6 +99,7 @@ class WindingTrail extends MultiChildRenderObjectWidget {
   final Color walked;
   final Color track;
   final int waveOffset;
+  final bool showAhead;
 
   /// Quando ligado, o picote do trecho andado corre com o ticker.
   final Animation<double>? flow;
@@ -99,8 +109,9 @@ class WindingTrail extends MultiChildRenderObjectWidget {
     required this.walked,
     required this.track,
     this.waveOffset = 0,
+    this.showAhead = true,
     this.flow,
-    required List<WindingStop> stops,
+    required List<Widget> stops,
   }) : super(children: stops);
 
   @override
@@ -109,6 +120,7 @@ class WindingTrail extends MultiChildRenderObjectWidget {
       walked: walked,
       track: track,
       waveOffset: waveOffset,
+      showAhead: showAhead,
       flow: flow,
     );
   }
@@ -122,6 +134,7 @@ class WindingTrail extends MultiChildRenderObjectWidget {
       ..walked = walked
       ..track = track
       ..waveOffset = waveOffset
+      ..showAhead = showAhead
       ..flow = flow;
   }
 }
@@ -181,10 +194,31 @@ class WindingStop extends ParentDataWidget<WindingParentData> {
       data.beacon = beacon;
       changed = true;
     }
+    if (data.walker) {
+      data.walker = false;
+      changed = true;
+    }
     if (changed) {
       final parent = renderObject.parent;
       if (parent is RenderWindingTrail) parent.markNeedsLayout();
     }
+  }
+
+  @override
+  Type get debugTypicalAncestorWidgetClass => WindingTrail;
+}
+
+/// Companheiro da curva. Não é parada: senta na chegada das pegadas.
+class WindingWalker extends ParentDataWidget<WindingParentData> {
+  const WindingWalker({super.key, required super.child});
+
+  @override
+  void applyParentData(RenderObject renderObject) {
+    final data = renderObject.parentData! as WindingParentData;
+    if (data.walker) return;
+    data.walker = true;
+    final parent = renderObject.parent;
+    if (parent is RenderWindingTrail) parent.markNeedsLayout();
   }
 
   @override
@@ -198,6 +232,7 @@ class WindingParentData extends ContainerBoxParentData<RenderBox> {
   bool centerAnchor = false;
   bool gate = false;
   bool beacon = false;
+  bool walker = false;
 }
 
 class RenderWindingTrail extends RenderBox
@@ -208,13 +243,16 @@ class RenderWindingTrail extends RenderBox
     required this._walked,
     required this._track,
     required this._waveOffset,
+    required this._showAhead,
     this._flow,
   });
 
   Color _walked;
   Color _track;
   int _waveOffset;
+  bool _showAhead;
   Animation<double>? _flow;
+  bool _walkerVisible = false;
   final List<Offset> _anchors = [];
   final List<bool> _passed = [];
   final List<bool> _beacon = [];
@@ -245,6 +283,13 @@ class RenderWindingTrail extends RenderBox
     if (value == _waveOffset) return;
     _waveOffset = value;
     markNeedsLayout();
+  }
+
+  bool get showAhead => _showAhead;
+  set showAhead(bool value) {
+    if (value == _showAhead) return;
+    _showAhead = value;
+    markNeedsPaint();
   }
 
   Animation<double>? get flow => _flow;
@@ -282,13 +327,18 @@ class RenderWindingTrail extends RenderBox
     final width = constraints.maxWidth.isFinite ? constraints.maxWidth : 360.0;
     final loose = BoxConstraints(maxWidth: width);
     final boxes = <RenderBox>[];
+    RenderBox? walker;
     var maxNode = 56.0;
     var child = firstChild;
     while (child != null) {
       child.layout(loose, parentUsesSize: true);
       final data = child.parentData! as WindingParentData;
-      boxes.add(child);
-      maxNode = math.max(maxNode, data.nodeSize);
+      if (data.walker) {
+        walker = child;
+      } else {
+        boxes.add(child);
+        maxNode = math.max(maxNode, data.nodeSize);
+      }
       child = data.nextSibling;
     }
 
@@ -375,14 +425,72 @@ class RenderWindingTrail extends RenderBox
       }
     }
 
-    final height = boxes.isEmpty
+    var height = boxes.isEmpty
         ? 0.0
         : (boxes.last.parentData! as WindingParentData).offset.dy +
               boxes.last.size.height +
               8;
+    _walkerVisible = false;
+    if (walker != null) {
+      final placed = _placeWalker(walker, width);
+      if (placed) {
+        _walkerVisible = true;
+        final data = walker.parentData! as WindingParentData;
+        height = math.max(height, data.offset.dy + walker.size.height + 8);
+      }
+    }
     size = constraints.constrain(
       Size(width, math.max(height, constraints.minHeight)),
     );
+  }
+
+  /// O Anan na entrada do card onde o trecho andado termina.
+  /// Concluir a trilha marca o card como passado e o traço segue até o próximo.
+  bool _placeWalker(RenderBox walker, double width) {
+    final arrival = _arrivalIndex();
+    if (arrival == null) return false;
+    final at = _arrivalPoint(arrival);
+    final bounds = _bounds[arrival];
+    final data = walker.parentData! as WindingParentData;
+    final w = walker.size.width;
+    final h = walker.size.height;
+    final fromTop = _isStop[arrival] || arrival == 0;
+    // Encosta na borda, quase todo para fora, para não cobrir o título.
+    const tuck = 10.0;
+    final double left;
+    final double top;
+    if (fromTop) {
+      left = at.dx - w / 2;
+      top = at.dy - h + tuck;
+    } else {
+      final onLeft = at.dx <= bounds.center.dx;
+      left = onLeft ? at.dx - w + tuck : at.dx - tuck;
+      top = at.dy - h / 2;
+    }
+    data.offset = Offset(
+      left.clamp(0.0, math.max(0.0, width - w)).toDouble(),
+      math.max(0.0, top),
+    );
+    return true;
+  }
+
+  /// Último card alcançado pelas pegadas. Sem trecho andado, a estação atual.
+  int? _arrivalIndex() {
+    int? arrival;
+    for (var i = 0; i < _passed.length - 1; i++) {
+      if (_passed[i]) arrival = i + 1;
+    }
+    if (arrival != null) return arrival;
+    for (var i = 0; i < _beacon.length; i++) {
+      if (_beacon[i]) return i;
+    }
+    return null;
+  }
+
+  Offset _arrivalPoint(int i) {
+    final bounds = _bounds[i];
+    if (i <= 0 || _isStop[i]) return Offset(bounds.center.dx, bounds.top);
+    return _approach(i);
   }
 
   @override
@@ -403,15 +511,30 @@ class RenderWindingTrail extends RenderBox
       }
       final cards = _linkEdges && _bounds.length > 1;
       if (cards) {
-        _strokeCards(canvas, offset, track, onlyWalked: false);
+        if (_showAhead) {
+          _strokeCards(canvas, offset, track, onlyWalked: false);
+        }
         _strokeCards(canvas, offset, walked, onlyWalked: true);
       } else {
-        _stroke(canvas, offset, track, onlyWalked: false);
+        if (_showAhead) {
+          _stroke(canvas, offset, track, onlyWalked: false);
+        }
         _stroke(canvas, offset, walked, onlyWalked: true);
       }
       if (hideCards) canvas.restore();
     }
-    defaultPaint(context, offset);
+    if (_walkerVisible) {
+      defaultPaint(context, offset);
+      return;
+    }
+    var child = firstChild;
+    while (child != null) {
+      final data = child.parentData! as WindingParentData;
+      if (!data.walker) {
+        context.paintChild(child, offset + data.offset);
+      }
+      child = data.nextSibling;
+    }
   }
 
   /// Sai da base do card de cima e entra na lateral do de baixo — o lado
@@ -712,7 +835,26 @@ class RenderWindingTrail extends RenderBox
 
   @override
   bool hitTestChildren(BoxHitTestResult result, {required Offset position}) {
-    return defaultHitTestChildren(result, position: position);
+    if (_walkerVisible) {
+      return defaultHitTestChildren(result, position: position);
+    }
+    var child = lastChild;
+    while (child != null) {
+      final data = child.parentData! as WindingParentData;
+      final box = child;
+      if (!data.walker) {
+        final hit = result.addWithPaintOffset(
+          offset: data.offset,
+          position: position,
+          hitTest: (result, transformed) {
+            return box.hitTest(result, position: transformed);
+          },
+        );
+        if (hit) return true;
+      }
+      child = data.previousSibling;
+    }
+    return false;
   }
 }
 

@@ -237,17 +237,15 @@ class _BibleReadingPlanScreenState extends State<BibleReadingPlanScreen> {
         body: ImmersiveBackground(
           appearance: style,
           frameChild: false,
-          child: ListView(
-            padding: EdgeInsets.fromLTRB(
-              0,
-              MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
-              0,
-              MediaQuery.viewPaddingOf(context).bottom + AppSpace.xl,
-            ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: AppSpace.screen,
+                padding: EdgeInsets.fromLTRB(
+                  AppSpace.screen,
+                  MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
+                  AppSpace.screen,
+                  0,
                 ),
                 child: TopBar(
                   inline: true,
@@ -264,55 +262,66 @@ class _BibleReadingPlanScreenState extends State<BibleReadingPlanScreen> {
                   onBack: () => Navigator.of(context).pop(),
                 ),
               ),
-              const SizedBox(height: AppSpace.afterTopBar),
-              ContentFrame(
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: AppSpace.screen,
+              Expanded(
+                child: ListView(
+                  padding: EdgeInsets.fromLTRB(
+                    0,
+                    AppSpace.afterTopBar,
+                    0,
+                    MediaQuery.viewPaddingOf(context).bottom + AppSpace.xl,
                   ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      if (_loading)
-                        const Padding(
-                          padding: EdgeInsets.symmetric(vertical: 48),
-                          child: AppSpinner(),
-                        )
-                      else if (showActive)
-                        _ActivePlanBody(
-                          plan: plan,
-                          portion: _portion,
-                          locked: plan.lockedToday(plusOpen: plusOpen),
-                          onUnlock: _openPaywall,
-                          progress: _progress,
-                          onOpen: _openChapter,
-                          onComplete: _completeDay,
-                          onClear: _confirmClear,
-                          onReminder: _setReminder,
-                          onMinutesChanged: (m) async {
-                            await context
-                                .read<ProgressService>()
-                                .updateBibleReadingPlanMinutes(m);
-                            await _reload();
-                          },
-                        )
-                      else
-                        _SetupPlanBody(
-                          order: _draftOrder,
-                          minutes: _draftMinutes,
-                          preview: _preview,
-                          onOrder: (o) {
-                            setState(() => _draftOrder = o);
-                            _refreshPreview();
-                          },
-                          onMinutes: (m) {
-                            setState(() => _draftMinutes = m);
-                            _refreshPreview();
-                          },
-                          onStart: _start,
+                  children: [
+                    ContentFrame(
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: AppSpace.screen,
                         ),
-                    ],
-                  ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            if (_loading)
+                              const Padding(
+                                padding: EdgeInsets.symmetric(vertical: 48),
+                                child: AppSpinner(),
+                              )
+                            else if (showActive)
+                              _ActivePlanBody(
+                                plan: plan,
+                                portion: _portion,
+                                locked: plan.lockedToday(plusOpen: plusOpen),
+                                onUnlock: _openPaywall,
+                                progress: _progress,
+                                onOpen: _openChapter,
+                                onComplete: _completeDay,
+                                onClear: _confirmClear,
+                                onReminder: _setReminder,
+                                onMinutesChanged: (m) async {
+                                  await context
+                                      .read<ProgressService>()
+                                      .updateBibleReadingPlanMinutes(m);
+                                  await _reload();
+                                },
+                              )
+                            else
+                              _SetupPlanBody(
+                                order: _draftOrder,
+                                minutes: _draftMinutes,
+                                preview: _preview,
+                                onOrder: (o) {
+                                  setState(() => _draftOrder = o);
+                                  _refreshPreview();
+                                },
+                                onMinutes: (m) {
+                                  setState(() => _draftMinutes = m);
+                                  _refreshPreview();
+                                },
+                                onStart: _start,
+                              ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],

@@ -10290,7 +10290,7 @@ abstract class AppLocalizations {
   /// No description provided for @profileDaysPerWeek.
   ///
   /// In pt, this message translates to:
-  /// **'dias por semana'**
+  /// **'de 7 dias'**
   String get profileDaysPerWeek;
 
   /// No description provided for @profileInTheWord.
@@ -10308,7 +10308,7 @@ abstract class AppLocalizations {
   /// No description provided for @profileLampHelp.
   ///
   /// In pt, this message translates to:
-  /// **'Cada lamparina é uma semana: o azeite sobe a cada dia caminhado e a chama cresce.'**
+  /// **'Cada lamparina é uma semana. O número é quantos dias você caminhou.'**
   String get profileLampHelp;
 
   /// No description provided for @profileLastThreeMonths.

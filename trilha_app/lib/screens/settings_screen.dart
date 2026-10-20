@@ -230,18 +230,22 @@ class _SettingsScreenState extends State<SettingsScreen>
     return LayoutBuilder(
       builder: (context, constraints) {
         final gutter = contentGutterOf(constraints.maxWidth);
-        return ListView(
+        final fixed = topBarStaysFixed(widget.topBar);
+        final topInset = MediaQuery.viewPaddingOf(context).top + AppSpace.sm;
+        final list = ListView(
           padding: EdgeInsets.fromLTRB(
             0,
-            widget.topBar == null
+            fixed
+                ? AppSpace.afterTopBar
+                : widget.topBar == null
                 ? AppSpace.sm
-                : MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
+                : topInset,
             0,
             scrollPaddingBelowNav(context),
           ),
           physics: const ClampingScrollPhysics(),
           children: [
-            if (widget.topBar != null) ...[
+            if (widget.topBar != null && !fixed) ...[
               Padding(
                 padding: const EdgeInsets.symmetric(
                   horizontal: AppSpace.screen,
@@ -321,6 +325,22 @@ class _SettingsScreenState extends State<SettingsScreen>
                 ],
               ),
             ),
+          ],
+        );
+        if (!fixed) return list;
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Padding(
+              padding: EdgeInsets.fromLTRB(
+                AppSpace.screen,
+                topInset,
+                AppSpace.screen,
+                0,
+              ),
+              child: widget.topBar!,
+            ),
+            Expanded(child: list),
           ],
         );
       },

@@ -393,66 +393,93 @@ class _BibleLibrary extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, constraints) {
         final side = AppSpace.screen + contentGutterOf(constraints.maxWidth);
-        return Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
+        final a = Appearance.of(context);
+        final fixed = topBarStaysFixed(topBar);
+        final library = <Widget>[
+          AppSegmentedTabs(
+            index: pane,
+            accent: AppRoles.presence,
+            fill: a.cardFill,
+            onChanged: (i) {
+              if (i == pane) return;
+              ActHaptics.tap();
+              onPane(i);
+            },
+            items: [
+              (
+                label: context.l10n.bibleTitle,
+                glyph: CinematicGlyph.book,
+                mark: null,
+                alert: false,
+              ),
+              (
+                label: context.l10n.bibleTabReading,
+                glyph: CinematicGlyph.calendar,
+                mark: null,
+                alert: planDue,
+              ),
+            ],
+          ),
+          if (booksPane) ...[
+            const SizedBox(height: AppSpace.md),
+            _SearchButton(onTap: onSearch),
+            const SizedBox(height: AppSpace.md),
+            // Navegação livre: retoma de onde parou no leitor.
+            _ContinueHero(books: books, onOpenReference: onOpenReference),
+            const SizedBox(height: AppSpace.md),
+            _OrderChips(order: order),
+          ],
+          const SizedBox(height: AppSpace.md),
+          ...booksPane ? _bookList(context, order) : _readingList(),
+        ];
+        // Voltar (Bíblia aberta por cima) fica preso. Na aba, a barra sobe.
+        if (fixed) {
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Padding(
+                padding: EdgeInsets.fromLTRB(
+                  AppSpace.screen,
+                  topPad,
+                  AppSpace.screen,
+                  0,
+                ),
+                child: topBar,
+              ),
+              Expanded(
+                child: ListView(
+                  key: ValueKey(pane),
+                  padding: EdgeInsets.fromLTRB(
+                    side,
+                    AppSpace.afterTopBar,
+                    side,
+                    scrollPaddingBelowNav(context),
+                  ),
+                  children: library,
+                ),
+              ),
+            ],
+          );
+        }
+        return ListView(
+          key: ValueKey(pane),
+          padding: EdgeInsets.fromLTRB(
+            0,
+            topPad,
+            0,
+            scrollPaddingBelowNav(context),
+          ),
           children: [
             Padding(
-              padding: EdgeInsets.fromLTRB(
-                AppSpace.screen,
-                topPad,
-                AppSpace.screen,
-                0,
-              ),
+              padding: const EdgeInsets.symmetric(horizontal: AppSpace.screen),
               child: topBar,
             ),
-            Expanded(
-              child: ListView(
-                key: ValueKey(pane),
-                padding: EdgeInsets.fromLTRB(
-                  side,
-                  AppSpace.afterTopBar,
-                  side,
-                  scrollPaddingBelowNav(context),
-                ),
-                children: [
-                  AppSegmentedTabs(
-                    index: pane,
-                    accent: AppRoles.presence,
-                    onChanged: (i) {
-                      if (i == pane) return;
-                      ActHaptics.tap();
-                      onPane(i);
-                    },
-                    items: [
-                      (
-                        label: context.l10n.bibleTitle,
-                        glyph: CinematicGlyph.book,
-                        mark: null,
-                        alert: false,
-                      ),
-                      (
-                        label: context.l10n.bibleTabReading,
-                        glyph: CinematicGlyph.calendar,
-                        mark: null,
-                        alert: planDue,
-                      ),
-                    ],
-                  ),
-                  if (booksPane) ...[
-                    const SizedBox(height: AppSpace.md),
-                    _SearchButton(onTap: onSearch),
-                    const SizedBox(height: AppSpace.md),
-                    // Navegação livre: retoma de onde parou no leitor.
-                    _ContinueHero(
-                      books: books,
-                      onOpenReference: onOpenReference,
-                    ),
-                    const SizedBox(height: AppSpace.md),
-                    _OrderChips(order: order),
-                  ],
-                  const SizedBox(height: AppSpace.md),
-                  ...booksPane ? _bookList(context, order) : _readingList(),
-                ],
+            const SizedBox(height: AppSpace.afterTopBar),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: side),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: library,
               ),
             ),
           ],

@@ -8,6 +8,7 @@ import '../utils/appearance.dart';
 import '../utils/difficulty_visuals.dart';
 import '../utils/trail_progress.dart';
 import '../utils/trail_visuals.dart';
+import 'cloud_mascot.dart';
 import 'journey_phase_card.dart';
 import 'journey_station_card.dart';
 import 'mode_emblem.dart';
@@ -119,6 +120,8 @@ class JourneyPath extends StatelessWidget {
         WindingStop(
           key: isCurrent ? currentKey : null,
           nodeSize: 72,
+          // Concluída: as pegadas saem daqui e chegam no próximo card.
+          // Atual: o traço para na entrada, com o Anan.
           passed: item.state == JourneyNodeState.completed,
           centerAnchor: true,
           beacon: isCurrent,
@@ -141,7 +144,16 @@ class JourneyPath extends StatelessWidget {
       0.28,
     )!;
 
-    return FlowingWindingTrail(walked: accent, track: track, stops: stops);
+    return FlowingWindingTrail(
+      walked: accent,
+      track: track,
+      // O tracejado só existe no trecho já percorrido.
+      showAhead: false,
+      stops: stops,
+      walker: const WindingWalker(
+        child: CloudMascot(face: CloudFace.feliz, size: 56, react: false),
+      ),
+    );
   }
 }
 

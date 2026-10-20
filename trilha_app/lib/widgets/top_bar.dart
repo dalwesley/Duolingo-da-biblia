@@ -12,6 +12,9 @@ import 'user_avatar.dart';
 /// Altura mínima do chrome inline (sem AppBar — evita espaço morto).
 const double kTopBarInlineHeight = 48;
 
+/// Só a barra com botão voltar fica fixa. Sem voltar, ela sobe com a tela.
+bool topBarStaysFixed(Widget? bar) => bar is TopBar && bar.onBack != null;
+
 /// Escala de texto no chrome: a leitura escala até 1.35, a barra sobe só até aqui.
 const double kTopBarMaxTextScale = 1.2;
 

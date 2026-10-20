@@ -6727,7 +6727,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get profileDaysPerWeek => 'días por semana';
+  String get profileDaysPerWeek => 'de 7 días';
 
   @override
   String get profileInTheWord => 'En la Palabra';
@@ -6738,7 +6738,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get profileLampHelp =>
-      'Cada lámpara es una semana: el aceite sube con cada día caminado y la llama crece.';
+      'Cada lámpara es una semana. El número es cuántos días caminaste.';
 
   @override
   String get profileLastThreeMonths => 'Últimos 3 meses';

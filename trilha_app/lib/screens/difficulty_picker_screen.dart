@@ -121,17 +121,15 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen>
             appearance: appearance,
             frameChild: false,
             child: SafeArea(
-              child: ListView(
-                padding: const EdgeInsets.fromLTRB(
-                  0,
-                  AppSpace.md,
-                  0,
-                  AppSpace.xxl,
-                ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: AppSpace.screen,
+                    padding: const EdgeInsets.fromLTRB(
+                      AppSpace.screen,
+                      AppSpace.md,
+                      AppSpace.screen,
+                      0,
                     ),
                     child: TopBar(
                       inline: true,
@@ -144,78 +142,85 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen>
                       ),
                     ),
                   ),
-                  ContentFrame(
-                    child: Padding(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: AppSpace.screen,
-                      ),
-                      child: Column(
-                        children: [
-                          const SizedBox(height: AppSpace.xl),
-                          FadeTransition(
-                            opacity: CurvedAnimation(
-                              parent: _enter,
-                              curve: const Interval(
-                                0,
-                                0.4,
-                                curve: AppMotion.enter,
-                              ),
+                  Expanded(
+                    child: ListView(
+                      padding: const EdgeInsets.fromLTRB(0, 0, 0, AppSpace.xxl),
+                      children: [
+                        ContentFrame(
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: AppSpace.screen,
                             ),
                             child: Column(
                               children: [
-                                const CloudMascot(
-                                  face: CloudFace.feliz,
-                                  size: 72,
-                                ),
-                                const SizedBox(height: AppSpace.sm),
-                                SectionLabel(
-                                  context.l10n.modeSheetEyebrow,
-                                  textAlign: TextAlign.center,
-                                ),
-                                const SizedBox(height: AppSpace.sm),
-                                Text(
-                                  context.l10n.modePickerTitle,
-                                  textAlign: TextAlign.center,
-                                  style: AppTypography.display(
-                                    size: 28,
-                                    height: 1.15,
-                                    color: appearance.text,
-                                  ),
-                                ),
-                                if (_trailTitle.isNotEmpty) ...[
-                                  const SizedBox(height: AppSpace.md),
-                                  Text(
-                                    _trailTitle,
-                                    textAlign: TextAlign.center,
-                                    style: AppTypography.body(
-                                      size: 13,
-                                      height: 1.4,
-                                      color: appearance.textSecondary,
+                                const SizedBox(height: AppSpace.xl),
+                                FadeTransition(
+                                  opacity: CurvedAnimation(
+                                    parent: _enter,
+                                    curve: const Interval(
+                                      0,
+                                      0.4,
+                                      curve: AppMotion.enter,
                                     ),
                                   ),
-                                ],
+                                  child: Column(
+                                    children: [
+                                      const CloudMascot(
+                                        face: CloudFace.feliz,
+                                        size: 72,
+                                      ),
+                                      const SizedBox(height: AppSpace.sm),
+                                      SectionLabel(
+                                        context.l10n.modeSheetEyebrow,
+                                        textAlign: TextAlign.center,
+                                      ),
+                                      const SizedBox(height: AppSpace.sm),
+                                      Text(
+                                        context.l10n.modePickerTitle,
+                                        textAlign: TextAlign.center,
+                                        style: AppTypography.display(
+                                          size: 28,
+                                          height: 1.15,
+                                          color: appearance.text,
+                                        ),
+                                      ),
+                                      if (_trailTitle.isNotEmpty) ...[
+                                        const SizedBox(height: AppSpace.md),
+                                        Text(
+                                          _trailTitle,
+                                          textAlign: TextAlign.center,
+                                          style: AppTypography.body(
+                                            size: 13,
+                                            height: 1.4,
+                                            color: appearance.textSecondary,
+                                          ),
+                                        ),
+                                      ],
+                                    ],
+                                  ),
+                                ),
+                                const SizedBox(height: AppSpace.xxl),
+                                FadeTransition(
+                                  opacity: CurvedAnimation(
+                                    parent: _enter,
+                                    curve: const Interval(
+                                      0.2,
+                                      0.8,
+                                      curve: AppMotion.enter,
+                                    ),
+                                  ),
+                                  child: ModeCarousel(
+                                    trailSlug: widget.trailSlug,
+                                    missionSlugs: _missionSlugs,
+                                    height: 420,
+                                    onCommitted: (_) => widget.onSelected(),
+                                  ),
+                                ),
                               ],
                             ),
                           ),
-                          const SizedBox(height: AppSpace.xxl),
-                          FadeTransition(
-                            opacity: CurvedAnimation(
-                              parent: _enter,
-                              curve: const Interval(
-                                0.2,
-                                0.8,
-                                curve: AppMotion.enter,
-                              ),
-                            ),
-                            child: ModeCarousel(
-                              trailSlug: widget.trailSlug,
-                              missionSlugs: _missionSlugs,
-                              height: 420,
-                              onCommitted: (_) => widget.onSelected(),
-                            ),
-                          ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   ),
                 ],

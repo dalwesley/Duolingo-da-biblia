@@ -10,7 +10,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'medal_cinematic_widgets.dart';
 import 'medal_unlock_sheet.dart';
-import 'recognition_history_sheet.dart';
+import 'recognition_heart_badge.dart';
 import 'cinematic_icon.dart';
 import 'immersive_background.dart';
 import 'ui_primitives.dart';
