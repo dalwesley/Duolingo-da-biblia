@@ -572,7 +572,7 @@ class _ActivePlanBody extends StatelessWidget {
                         glyph: doneToday || finished
                             ? CinematicGlyph.check
                             : locked
-                            ? CinematicGlyph.crown
+                            ? CinematicGlyph.plus
                             : null,
                         accent: doneToday || finished
                             ? AppRoles.success

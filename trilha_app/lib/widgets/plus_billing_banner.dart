@@ -90,7 +90,7 @@ class _PlusBillingBannerState extends State<PlusBillingBanner> {
             Row(
               children: [
                 CinematicIcon(
-                  glyph: CinematicGlyph.crown,
+                  glyph: CinematicGlyph.plus,
                   size: AppMetrics.leadingIcon,
                   accent: paying ? AppRoles.risk : AppRoles.reward,
                   glowing: false,

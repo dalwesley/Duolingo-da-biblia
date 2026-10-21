@@ -1178,10 +1178,7 @@ class _JourneyCardState extends State<_JourneyCard> {
                     ),
                     const Spacer(),
                     if (plusTag)
-                      SoftBadge(
-                        text: context.l10n.paywallTitle,
-                        accent: AppRoles.reward,
-                      ),
+                      const CinematicIcon(glyph: CinematicGlyph.plus, size: 30),
                   ],
                 ),
                 const Spacer(),

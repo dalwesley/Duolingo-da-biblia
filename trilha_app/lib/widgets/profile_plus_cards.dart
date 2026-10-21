@@ -176,7 +176,7 @@ class ProfilePlusTeaser extends StatelessWidget {
           Row(
             children: [
               CinematicIcon(
-                glyph: CinematicGlyph.crown,
+                glyph: CinematicGlyph.plus,
                 size: AppMetrics.leadingIcon,
                 accent: AppRoles.reward,
               ),

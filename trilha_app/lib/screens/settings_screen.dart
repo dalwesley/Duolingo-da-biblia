@@ -1425,7 +1425,7 @@ class _PlusStrip extends StatelessWidget {
               Row(
                 children: [
                   CinematicIcon(
-                    glyph: CinematicGlyph.crown,
+                    glyph: CinematicGlyph.plus,
                     size: AppMetrics.iconLg,
                     accent: AppRoles.reward,
                     glowing: paid,
@@ -1471,7 +1471,7 @@ class _PlusStrip extends StatelessWidget {
                 const SizedBox(height: AppSpace.md),
                 CopperCta(
                   label: l10n.settingsPlusSubscribe,
-                  leading: CinematicGlyph.crown,
+                  leading: CinematicGlyph.plus,
                   dense: true,
                   expanded: true,
                   onTap: onTap,

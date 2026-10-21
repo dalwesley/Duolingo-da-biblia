@@ -192,9 +192,7 @@ class PilgrimIdentityCard extends StatelessWidget {
                             text: pioneer
                                 ? l10n.pioneerBadge
                                 : l10n.pilgrimBadge,
-                            glyph: pioneer
-                                ? CinematicGlyph.flag
-                                : CinematicGlyph.crown,
+                            glyph: CinematicGlyph.plus,
                             accent: AppRoles.reward,
                           ),
                         ],

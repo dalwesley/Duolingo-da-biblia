@@ -163,7 +163,7 @@ class _LockedWho extends StatelessWidget {
         CopperCta(
           label: l10n.weeklyReviewSeePlus,
           dense: true,
-          leading: CinematicGlyph.crown,
+          leading: CinematicGlyph.plus,
           trailing: null,
           onTap: () {
             final nav = Navigator.of(context);

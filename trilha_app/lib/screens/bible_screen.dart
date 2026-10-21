@@ -1079,7 +1079,7 @@ class _PlansCatalogState extends State<_PlansCatalog> {
             trailing: sub.showsPlus
                 ? SoftBadge(
                     text: l10n.paywallTitle,
-                    glyph: CinematicGlyph.crown,
+                    glyph: CinematicGlyph.plus,
                     accent: AppRoles.reward,
                   )
                 : null,

@@ -147,7 +147,7 @@ class _PaywallScreenState extends State<PaywallScreen> {
               dark: true,
               title: l10n.paywallTitle,
               onBack: () => Navigator.pop(context),
-              leadingGlyph: CinematicGlyph.crown,
+              leadingGlyph: CinematicGlyph.plus,
             ),
           ),
           Expanded(

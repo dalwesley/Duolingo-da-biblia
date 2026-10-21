@@ -73,6 +73,9 @@ enum CinematicGlyph {
   stop,
   sprout,
   hourglass,
+  // Marca do Peregrino+: o Anan com um +. Só para o Plus (selo, cartões,
+  // paywall); a coroa fica com Travessia, perfeição e liderança.
+  plus,
 }
 
 class CinematicGlyphResolver {
@@ -236,6 +239,7 @@ class CinematicGlyphResolver {
       CinematicGlyph.scroll || CinematicGlyph.gap => accent ?? AppColors.sand,
       CinematicGlyph.calendar ||
       CinematicGlyph.hourglass => accent ?? AppColors.sand,
+      CinematicGlyph.plus => AppColors.medalGold,
       CinematicGlyph.check => accent ?? AppColors.accent,
       CinematicGlyph.tune ||
       CinematicGlyph.pencil ||
@@ -488,6 +492,8 @@ class _GlyphPainter extends CustomPainter {
         _sprout(canvas, c, s);
       case CinematicGlyph.hourglass:
         _hourglass(canvas, c, s);
+      case CinematicGlyph.plus:
+        _plusMark(canvas, c, s);
     }
   }
 
@@ -1905,6 +1911,55 @@ class _GlyphPainter extends CustomPainter {
       ..lineTo(c.dx - s * 0.04, c.dy + s * 0.08)
       ..close();
     canvas.drawPath(sand, _solid);
+  }
+
+  /// Anan em silhueta (três bolhas sobre a base) com o + no alto, à
+  /// direita, como no nome "Peregrino+". Um respiro separa o + da nuvem.
+  void _plusMark(Canvas canvas, Offset c, double s) {
+    final o = c + Offset(-s * 0.05, s * 0.08);
+    Path circle(double dx, double dy, double r) => Path()
+      ..addOval(
+        Rect.fromCircle(center: o + Offset(dx * s, dy * s), radius: r * s),
+      );
+    var cloud = Path()
+      ..addRRect(
+        RRect.fromRectAndRadius(
+          Rect.fromLTRB(
+            o.dx - s * 0.36,
+            o.dy - s * 0.02,
+            o.dx + s * 0.36,
+            o.dy + s * 0.22,
+          ),
+          Radius.circular(s * 0.12),
+        ),
+      );
+    for (final puff in [
+      circle(-0.17, 0.02, 0.15),
+      circle(0.02, -0.08, 0.21),
+      circle(0.21, 0.05, 0.14),
+    ]) {
+      cloud = Path.combine(PathOperation.union, cloud, puff);
+    }
+    Path cross(Offset at, double arm, double bar) => Path.combine(
+      PathOperation.union,
+      Path()..addRRect(
+        RRect.fromRectAndRadius(
+          Rect.fromCenter(center: at, width: arm, height: bar),
+          Radius.circular(bar / 2),
+        ),
+      ),
+      Path()..addRRect(
+        RRect.fromRectAndRadius(
+          Rect.fromCenter(center: at, width: bar, height: arm),
+          Radius.circular(bar / 2),
+        ),
+      ),
+    );
+    final at = c + Offset(s * 0.29, -s * 0.27);
+    final plus = cross(at, s * 0.28, s * 0.1);
+    final gap = cross(at, s * 0.42, s * 0.24);
+    canvas.drawPath(Path.combine(PathOperation.difference, cloud, gap), _solid);
+    canvas.drawPath(plus, _solid);
   }
 
   @override

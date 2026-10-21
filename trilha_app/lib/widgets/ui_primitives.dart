@@ -1036,7 +1036,8 @@ CloudFace cloudFaceForNotice({
       glyph == CinematicGlyph.gift ||
       glyph == CinematicGlyph.flame ||
       glyph == CinematicGlyph.bell ||
-      glyph == CinematicGlyph.crown) {
+      glyph == CinematicGlyph.crown ||
+      glyph == CinematicGlyph.plus) {
     return CloudFace.feliz;
   }
   return CloudFace.sucesso;
