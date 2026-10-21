@@ -23,16 +23,15 @@ aqui está de onde vem conteúdo novo e por que alguém fica depois de zerar.
 
 ### Os três trilhos de proteção (não negociáveis)
 
-1. **O critério é o princípio de organização, não a etiqueta do reino no
-   banco.** Sermão do Monte pode estar marcado como `vida-crista`, mas é
-   passagem de Mateus em ordem: é território, é grátis. Tema pago é o que
-   salta pelo cânon atrás de um assunto.
+1. **O critério é a área.** Antigo e Novo Testamento são território,
+   grátis. Todo o resto é rota, Plus, inclusive o Sermão do Monte
+   (decidido em 21 out 2026): a passagem de Mateus 5–7 segue grátis
+   pela trilha do NT; a trilha temática do Sermão é Plus.
 2. **Cena em rota paga continua alcançável grátis pela trilha do seu
    livro.** O Plus vende seleção, ordem, estudo e destino — nunca acesso
    à cena. Quem quiser montar o caminho na mão, monta.
-3. **Toda família de temas tem amostra grátis.** A primeira trilha (ou o
-   primeiro módulo) de cada grupo temático fica aberta. Amostra é vitrine
-   permanente, não promoção.
+3. **Toda trilha temática tem amostra grátis.** A 1ª cena de cada trilha
+   Plus fica aberta. Amostra é vitrine permanente, não promoção.
 
 ---
 

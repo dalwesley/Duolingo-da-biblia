@@ -9303,6 +9303,18 @@ abstract class AppLocalizations {
   /// **'Seus dias'**
   String get paywallPerkStreakTitle;
 
+  /// No description provided for @paywallPerkThemesBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sermão do Monte, Oração, Família, Ansiedade e outras rotas da Vida Cristã. A primeira cena de cada uma é grátis.'**
+  String get paywallPerkThemesBody;
+
+  /// No description provided for @paywallPerkThemesTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Trilhas por tema'**
+  String get paywallPerkThemesTitle;
+
   /// No description provided for @paywallPerkWeeklyBody.
   ///
   /// In pt, this message translates to:

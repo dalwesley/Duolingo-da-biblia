@@ -14,6 +14,9 @@ import 'journey_phase_card.dart';
 /// traço entre eles vira um talo reto.
 double windingShift(int index) => math.sin(index * math.pi / 4);
 
+/// Quanto o Anan entra no card. O resto fica na trilha, fora do título.
+const _walkerTuck = 10.0;
+
 /// Curva de pegadas; as andadas avançam no trecho percorrido.
 /// Anima só a pintura; os cards não rebuildam.
 class FlowingWindingTrail extends StatefulWidget {
@@ -25,7 +28,8 @@ class FlowingWindingTrail extends StatefulWidget {
   /// false: as pegadas param onde a pessoa já chegou. O trilho segue.
   final bool showAhead;
 
-  /// O Anan, fora da curva. Senta na entrada do card onde as pegadas chegam.
+  /// O Anan, fora da curva. Senta onde as pegadas chegam — na lateral do
+  /// card, ou na base quando o trilho nasce nele.
   final Widget? walker;
 
   const FlowingWindingTrail({
@@ -428,7 +432,17 @@ class RenderWindingTrail extends RenderBox
         final gap = data.centerAnchor || data.gate
             ? (betweenPhases ? 48.0 : 22.0)
             : clearance;
-        final minCenter = data.offset.dy + box.size.height + gap + nextHalf;
+        // O Anan senta na base do primeiro card. O próximo precisa caber
+        // abaixo dele, senão a nuvem cobre o título de quem vem depois.
+        final ananBelow =
+            walker != null &&
+            i == 0 &&
+            !data.gate &&
+            !data.passed &&
+            data.beacon;
+        final room = ananBelow ? walker.size.height - _walkerTuck + 8 : 0.0;
+        final minCenter =
+            data.offset.dy + box.size.height + math.max(gap, room) + nextHalf;
         centerY = math.max(centerY + pitch, minCenter);
       }
     }
@@ -456,26 +470,32 @@ class RenderWindingTrail extends RenderBox
 
   /// O Anan na entrada do card onde o trecho andado termina.
   /// Concluir a trilha marca o card como passado e o traço segue até o próximo.
+  /// Sem marco acima, o trilho nasce na base do primeiro card — é ali que ele senta.
   bool _placeWalker(RenderBox walker, double width) {
     final arrival = _arrivalIndex();
     if (arrival == null) return false;
-    final at = _arrivalPoint(arrival);
     final bounds = _bounds[arrival];
     final data = walker.parentData! as WindingParentData;
     final w = walker.size.width;
     final h = walker.size.height;
-    final fromTop = _isStop[arrival] || arrival == 0;
     // Encosta na borda, quase todo para fora, para não cobrir o título.
-    const tuck = 10.0;
+    const tuck = _walkerTuck;
     final double left;
     final double top;
-    if (fromTop) {
+    if (arrival == 0 && !_isStop[arrival]) {
+      final at = _leave(arrival);
       left = at.dx - w / 2;
-      top = at.dy - h + tuck;
+      top = at.dy - tuck;
     } else {
-      final onLeft = at.dx <= bounds.center.dx;
-      left = onLeft ? at.dx - w + tuck : at.dx - tuck;
-      top = at.dy - h / 2;
+      final at = _arrivalPoint(arrival);
+      if (_isStop[arrival]) {
+        left = at.dx - w / 2;
+        top = at.dy - h + tuck;
+      } else {
+        final onLeft = at.dx <= bounds.center.dx;
+        left = onLeft ? at.dx - w + tuck : at.dx - tuck;
+        top = at.dy - h / 2;
+      }
     }
     data.offset = Offset(
       left.clamp(0.0, math.max(0.0, width - w)).toDouble(),

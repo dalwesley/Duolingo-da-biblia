@@ -51,8 +51,9 @@ void main() {
 
   Future<void> pumpPath(
     WidgetTester tester,
-    List<JourneyPathItem> items,
-  ) async {
+    List<JourneyPathItem> items, {
+    bool phaseCards = true,
+  }) async {
     await tester.binding.setSurfaceSize(const Size(390, 2000));
     addTearDown(() => tester.binding.setSurfaceSize(null));
     await tester.pumpWidget(
@@ -73,6 +74,7 @@ void main() {
             accent: AppColors.accent,
             glow: AppColors.accent,
             onTap: (_) {},
+            phaseCards: phaseCards,
           ),
         ),
       ),
@@ -140,5 +142,32 @@ void main() {
       item(exodus, JourneyNodeState.current),
     ]);
     expectAnanAtEntrance(tester, 'Êxodo');
+  });
+
+  testWidgets('sem marco, o Anan senta na base do primeiro card', (
+    tester,
+  ) async {
+    final gen1 = trail('genesis-1-11', 'Gênesis 1-11', 1);
+    final gen2 = trail('genesis-12-50', 'Gênesis 12-50', 2);
+
+    await pumpPath(
+      tester,
+      [
+        item(gen1, JourneyNodeState.current),
+        item(gen2, JourneyNodeState.locked),
+      ],
+      phaseCards: false,
+    );
+
+    final anan = tester.getRect(find.byType(CloudMascot));
+    final card = cardOf(tester, 'Gênesis 1-11');
+    final next = cardOf(tester, 'Gênesis 12-50');
+    expect(
+      (anan.center.dx - card.center.dx).abs(),
+      lessThan(8),
+      reason: 'Anan fora do conector da base\nanan=$anan\ncard=$card',
+    );
+    expect((anan.top - card.bottom).abs(), lessThan(16));
+    expect(anan.bottom, lessThanOrEqualTo(next.top + 1));
   });
 }

@@ -5962,6 +5962,13 @@ class AppLocalizationsEn extends AppLocalizations {
   String get paywallPerkStreakTitle => 'Your days';
 
   @override
+  String get paywallPerkThemesBody =>
+      'Sermon on the Mount, Prayer, Family, Anxiety and other Christian life paths. The first scene of each is free.';
+
+  @override
+  String get paywallPerkThemesTitle => 'Theme trails';
+
+  @override
   String get paywallPerkWeeklyBody =>
       'Once a week, you look back at what you learned. The questions start with what you missed.';
 

@@ -26,6 +26,7 @@ import '../widgets/shell_tab_scope.dart';
 import '../widgets/trail_suggestion_sheet.dart';
 import '../widgets/ui_primitives.dart';
 import '../services/subscription_service.dart';
+import '../utils/plus_access.dart';
 import 'realm_journey_screen.dart';
 import 'trail_map_screen.dart';
 import 'support_screen.dart';
@@ -1121,6 +1122,11 @@ class _JourneyCardState extends State<_JourneyCard> {
         : TrailVisuals.forCategory(journey.categories.single.id);
     final locked = info.locked;
     final featured = widget.featured;
+    // Tema é Peregrino+ (a 1ª cena de cada trilha segue grátis).
+    final plusTag =
+        !locked &&
+        PlusAccess.realmIsPlus(journey.realm) &&
+        !context.watch<SubscriptionService>().plusFeaturesOpen;
     final progressLabel = locked
         ? context.l10n.commonComingSoon
         : info.completedCount > 0
@@ -1134,7 +1140,9 @@ class _JourneyCardState extends State<_JourneyCard> {
 
     return Semantics(
       button: true,
-      label: '${journey.label}. $progressLabel',
+      label: plusTag
+          ? '${journey.label}. ${context.l10n.paywallTitle}. $progressLabel'
+          : '${journey.label}. $progressLabel',
       excludeSemantics: true,
       child: GestureDetector(
         onTapDown: (_) => setState(() => _pressed = true),
@@ -1157,13 +1165,24 @@ class _JourneyCardState extends State<_JourneyCard> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                _RealmMark(
-                  size: 40,
-                  glyph: glyph,
-                  accent: visuals.accent,
-                  ratio: info.ratio,
-                  locked: locked,
-                  featured: featured && widget.animate,
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    _RealmMark(
+                      size: 40,
+                      glyph: glyph,
+                      accent: visuals.accent,
+                      ratio: info.ratio,
+                      locked: locked,
+                      featured: featured && widget.animate,
+                    ),
+                    const Spacer(),
+                    if (plusTag)
+                      SoftBadge(
+                        text: context.l10n.paywallTitle,
+                        accent: AppRoles.reward,
+                      ),
+                  ],
                 ),
                 const Spacer(),
                 Text(

@@ -6011,6 +6011,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get paywallPerkStreakTitle => 'Tus días';
 
   @override
+  String get paywallPerkThemesBody =>
+      'Sermón del Monte, Oración, Familia, Ansiedad y otras rutas de Vida Cristiana. La primera escena de cada una es gratis.';
+
+  @override
+  String get paywallPerkThemesTitle => 'Rutas por tema';
+
+  @override
   String get paywallPerkWeeklyBody =>
       'Una vez por semana, vuelves a lo que aprendiste. Las preguntas empiezan por lo que fallaste.';
 

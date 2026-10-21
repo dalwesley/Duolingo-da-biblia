@@ -19,6 +19,7 @@ import '../services/sound_service.dart';
 import '../services/subscription_service.dart';
 import 'paywall_screen.dart';
 import '../theme/app_theme.dart';
+import '../utils/plus_access.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
 import '../utils/layout_utils.dart';
@@ -233,6 +234,18 @@ class _LessonScreenState extends State<LessonScreen>
           );
           if (!mounted) return;
           Navigator.of(context).pop();
+          return;
+        }
+        // Trilha temática: da 2ª cena em diante só com o Peregrino+.
+        // A checagem mora aqui para valer no mapa, na Home e no deep link.
+        if (!mounted) return;
+        if (PlusAccess.missionNeedsPlus(trail, widget.missionSlug) &&
+            !context.read<SubscriptionService>().plusFeaturesOpen) {
+          await Navigator.of(context).pushReplacement(
+            MaterialPageRoute<void>(
+              builder: (_) => const PaywallScreen(source: 'trail'),
+            ),
+          );
           return;
         }
       }

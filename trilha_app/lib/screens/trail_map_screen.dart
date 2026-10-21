@@ -6,6 +6,8 @@ import 'package:provider/provider.dart';
 import '../data/question_bank.dart';
 import '../data/entry_trails.dart';
 import '../data/trail_repository.dart';
+import '../services/subscription_service.dart';
+import '../utils/plus_access.dart';
 import '../widgets/character_seals_strip.dart';
 import '../l10n/app_language.dart';
 import '../models/caravan_pilgrim_profile.dart';
@@ -172,6 +174,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     }
 
     final trail = _trail!;
+    final plusOpen = context.watch<SubscriptionService>().plusFeaturesOpen;
     final allSlugs = trail.missionSlugs;
     final completed = progress.completedMissionsForTrail(
       trailSlug: widget.slug,
@@ -416,6 +419,10 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                             ).pushNamed('/lesson', arguments: slug),
                             currentKey: _currentKey,
                             currentSlug: currentSlug,
+                            plusLocked: plusOpen
+                                ? null
+                                : (slug) =>
+                                      PlusAccess.missionNeedsPlus(trail, slug),
                           );
 
                           return GenesisModuleScenery(

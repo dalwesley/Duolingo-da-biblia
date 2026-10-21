@@ -1,3 +1,6 @@
+import '../models/trail.dart';
+import '../models/trail_catalog.dart';
+
 /// Regras puras do Peregrino+: quando o recurso fica aberto.
 class PlusAccess {
   PlusAccess._();
@@ -9,6 +12,23 @@ class PlusAccess {
   /// Anual de lançamento (Pioneiro). No Android a loja pode devolver o id
   /// com o plano base (`plus_founder_annual:annual`).
   static const pioneerProductId = 'plus_founder_annual';
+
+  /// Livro é grátis: Antigo e Novo Testamento. O resto (Vida Cristã,
+  /// Teologia, trilhas por dor, Sermão do Monte incluso) é tema, e tema é
+  /// Peregrino+. As cenas do Sermão continuam grátis pela trilha de Mateus.
+  static bool realmIsPlus(TrailRealm realm) =>
+      realm != TrailRealm.antigoTestamento &&
+      realm != TrailRealm.novoTestamento;
+
+  static bool trailIsPlus(Trail trail) =>
+      realmIsPlus(TrailRealm.fromId(trail.realmId));
+
+  /// A cena pede Plus? Numa trilha Plus, a 1ª cena é amostra grátis.
+  static bool missionNeedsPlus(Trail trail, String missionSlug) {
+    if (!trailIsPlus(trail)) return false;
+    final slugs = trail.missionSlugs;
+    return slugs.isNotEmpty && slugs.first != missionSlug;
+  }
 
   static bool isPioneerProduct(String? id) =>
       id != null &&

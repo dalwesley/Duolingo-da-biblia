@@ -24,6 +24,10 @@ class TrailMapPath extends StatelessWidget {
   final GlobalKey? currentKey;
   final String? currentSlug;
 
+  /// Cenas que pedem o Peregrino+ (trilha temática, da 2ª em diante, sem
+  /// Plus). Continuam tocáveis: o toque leva ao paywall.
+  final bool Function(String slug)? plusLocked;
+
   const TrailMapPath({
     super.key,
     required this.missions,
@@ -35,6 +39,7 @@ class TrailMapPath extends StatelessWidget {
     this.onMissionTap,
     this.currentKey,
     this.currentSlug,
+    this.plusLocked,
   });
 
   bool _completed(String slug) => completedMissions.contains(slug);
@@ -79,6 +84,7 @@ class TrailMapPath extends StatelessWidget {
     final completed = _completed(mission.slug);
     final unlocked = _unlocked(mission.slug);
     final current = unlocked && !completed;
+    final needsPlus = !completed && (plusLocked?.call(mission.slug) ?? false);
     final state = completed
         ? JourneyNodeState.completed
         : (current ? JourneyNodeState.current : JourneyNodeState.locked);
@@ -113,6 +119,8 @@ class TrailMapPath extends StatelessWidget {
         onTap: unlocked ? () => onMissionTap?.call(mission.slug) : null,
         statusLine: completed
             ? context.l10n.trailsCleared
+            : needsPlus
+            ? context.l10n.plusNoticeLockedHeader
             : (unlocked
                   ? null
                   : (mission.subtitle.trim().isEmpty

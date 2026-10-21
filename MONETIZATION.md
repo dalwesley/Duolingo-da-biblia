@@ -44,13 +44,16 @@ como benefício pago de uma fase futura. Não se vende o que ainda não existe.
 > Toda a Bíblia, livro por livro, é grátis.
 > Os caminhos por tema, as jornadas e as revisões são o Peregrino+.
 
-- **Território (grátis):** trilhas por livro e pela ordem da passagem.
-- **Rota (Plus):** trilhas por dor, tema ou doutrina sobre o cânon inteiro
-  (Vida Cristã e Teologia são, por natureza, rotas), com amostra grátis:
-  a primeira trilha ou módulo de cada grupo temático.
-- O critério é o **princípio de organização**, não a etiqueta do reino no
-  banco: Sermão do Monte é passagem de Mateus em ordem = território,
-  mesmo se marcado `vida-crista`.
+- **Território (grátis):** as áreas Antigo Testamento e Novo Testamento.
+- **Rota (Plus):** todo o resto: Vida Cristã, Teologia e as trilhas por
+  dor (Ansiedade, Recomeço), **Sermão do Monte incluso** (decidido em
+  21 out 2026: é trilha temática; Mateus 5–7 segue grátis pela trilha do
+  NT). Amostra grátis: **a 1ª cena de cada trilha** Plus; da 2ª em
+  diante, o toque abre o paywall (`PlusAccess.missionNeedsPlus`,
+  checado no `LessonScreen` — vale para mapa, Home e deep link).
+- A regra é pela área (`realm`), não pela trilha: área nova fora de AT/NT
+  já nasce Plus. A Caminhada de temporada usa cenas dessas trilhas e
+  segue a regra própria dela (dias 1–3 grátis), não a da trilha.
 - Cena dentro de rota paga continua alcançável grátis pela trilha do seu
   livro. O Plus vende seleção, ordem, estudo e destino — nunca a cena.
 
@@ -100,7 +103,7 @@ calendário de temporadas), montada de cenas que já existem nas trilhas:
 - Memorização de versículos (flashcards com SRS leve) e fila de erros
 - O plano de leitura da Bíblia inteira (canônico ou cronológico) + lembrete
 - Os 3 primeiros dias de cada Caminhada de temporada
-- A primeira trilha (ou módulo) de cada grupo temático — amostra permanente
+- A 1ª cena de cada trilha temática — amostra permanente
 - 1 companhia, Caravana, grupo básico, Desafio
 
 ## Divisão grátis × Plus
@@ -114,7 +117,7 @@ calendário de temporadas), montada de cenas que já existem nas trilhas:
 | Planos de formação | Bíblia inteira + amostra dos guiados | Guiados completos e planos por objetivo |
 | Conexões bíblicas | Dentro das missões (gesto connect) | Estudos e explorações aprofundadas |
 | Caminhadas | Dias 1–3 de cada temporada | Temporadas completas + Caminhadas Premium |
-| Trilhas temáticas (Vida Cristã / Teologia) | Primeira trilha ou módulo de cada grupo | Rotas temáticas completas (cenas sempre grátis pelo livro) |
+| Trilhas temáticas (Vida Cristã, Teologia, por dor, Sermão do Monte) | 1ª cena de cada trilha | Trilhas temáticas completas (passagens sempre grátis pelo AT/NT) |
 | Desafios e conquistas | Regulares | Experiências especiais |
 | Comunidade | Grupos e interação básica | Jornadas cooperativas especiais (Fase 3) |
 | Progresso | XP, sequência e trilhas | Análise de aprendizagem por tema (Fase 2) |
