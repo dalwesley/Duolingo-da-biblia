@@ -36,8 +36,8 @@ class JourneyStationCard extends StatelessWidget {
   /// Numeral romano grande no fundo (I, II…).
   final String? watermark;
 
-  /// Cena que pede o Peregrino+: o "Agora" vira "Peregrino+" e o botão
-  /// convida a continuar com o Plus (o toque leva ao paywall).
+  /// Cena que pede o Peregrino+: o botão, na largura do card, diz
+  /// "Continuar" / "com o Peregrino+" (o toque leva ao paywall).
   final bool plusLocked;
 
   const JourneyStationCard({
@@ -83,6 +83,8 @@ class JourneyStationCard extends StatelessWidget {
               if (leading != null) ...[leading!, const SizedBox(width: 6)],
               // Rótulo inteiro numa linha; o estado à direita é que encolhe
               // (dividir a largura meio a meio quebrava "TRILHA III").
+              // Com Peregrino+, o nome mora no botão — aqui ele virava
+              // "Peregr…".
               SectionLabel(
                 eyebrow,
                 size: 10,
@@ -93,20 +95,18 @@ class JourneyStationCard extends StatelessWidget {
                     ? Color.lerp(a.textFaint, accent, 0.4)!
                     : a.textFaint,
               ),
-              const SizedBox(width: 6),
-              Expanded(
-                child: isCurrent
-                    ? Text(
-                        plusLocked
-                            ? context.l10n.paywallTitle
-                            : context.l10n.journeyNow,
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        textAlign: TextAlign.right,
-                        style: AppTypography.label(size: 11, color: ink),
-                      )
-                    : const SizedBox.shrink(),
-              ),
+              if (isCurrent && !plusLocked) ...[
+                const SizedBox(width: 6),
+                Flexible(
+                  child: Text(
+                    context.l10n.journeyNow,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    textAlign: TextAlign.right,
+                    style: AppTypography.label(size: 11, color: ink),
+                  ),
+                ),
+              ],
             ],
           ),
           const SizedBox(height: 5),
@@ -166,13 +166,10 @@ class JourneyStationCard extends StatelessWidget {
               ),
             ),
           ],
-          if (isCurrent) ...[
+          if (isCurrent && !plusLocked) ...[
             const SizedBox(height: 10),
             CopperCta(
-              label: plusLocked
-                  ? context.l10n.plusNoticeContinue
-                  : context.l10n.journeyPlay,
-              leading: plusLocked ? CinematicGlyph.plus : null,
+              label: context.l10n.journeyPlay,
               dense: true,
               decorative: true,
               showGlow: false,
@@ -203,20 +200,44 @@ class JourneyStationCard extends StatelessWidget {
               ),
             ),
           ),
-        Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            if (glyph != null) ...[
-              _GlyphPlate(
-                glyph: glyph!,
-                size: plateSize,
-                ink: quiet ? accent : ink,
-                quiet: quiet,
-                lit: isCurrent,
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                if (glyph != null) ...[
+                  _GlyphPlate(
+                    glyph: glyph!,
+                    size: plateSize,
+                    ink: quiet ? accent : ink,
+                    quiet: quiet,
+                    lit: isCurrent,
+                  ),
+                  SizedBox(width: quiet ? 10 : 12),
+                ],
+                textCol,
+              ],
+            ),
+            // Fora da coluna do título: ali o rótulo quebrava no meio
+            // da palavra ("Continua / r com o / Peregrino / +").
+            if (isCurrent && plusLocked) ...[
+              const SizedBox(height: 10),
+              CopperCta(
+                label: context.l10n.commonContinue,
+                subtitle: context.l10n.journeyPlusCtaDetail,
+                leading: CinematicGlyph.plus,
+                trailing: null,
+                dense: true,
+                decorative: true,
+                showGlow: false,
+                expanded: true,
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 12,
+                  vertical: 7,
+                ),
               ),
-              SizedBox(width: quiet ? 10 : 12),
             ],
-            textCol,
           ],
         ),
       ],

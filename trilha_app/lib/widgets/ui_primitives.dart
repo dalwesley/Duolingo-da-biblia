@@ -102,6 +102,11 @@ class AppMetrics {
 /// (sem caixa alta), brilho dourado embaixo e leve aperto no toque.
 class CopperCta extends StatefulWidget {
   final String label;
+
+  /// Segunda linha, curta. O par fica junto, ao lado do ícone, e cada
+  /// linha cabe inteira — para um rótulo que não entra numa linha só
+  /// (o card estreito do mapa).
+  final String? subtitle;
   final VoidCallback? onTap;
   final CinematicGlyph? trailing;
   final CinematicGlyph? leading;
@@ -135,6 +140,7 @@ class CopperCta extends StatefulWidget {
   const CopperCta({
     super.key,
     required this.label,
+    this.subtitle,
     this.onTap,
     this.trailing = CinematicGlyph.forward,
     this.leading,
@@ -247,18 +253,46 @@ class _CopperCtaState extends State<CopperCta> {
               ] else if (w.leading != null) ...[
                 CinematicIcon(
                   glyph: w.leading!,
-                  size: w.dense ? 16 : 18,
+                  size: w.subtitle != null ? 20 : (w.dense ? 16 : 18),
                   accent: ink,
                   framed: false,
                 ),
                 const SizedBox(width: 8),
               ],
               Flexible(
-                child: Text(
-                  w.label,
-                  textAlign: TextAlign.center,
-                  style: CopperCta.labelStyle(size: fontSize, color: ink),
-                ),
+                fit: w.subtitle == null ? FlexFit.tight : FlexFit.loose,
+                child: w.subtitle == null
+                    ? Text(
+                        w.label,
+                        textAlign: TextAlign.center,
+                        style: CopperCta.labelStyle(size: fontSize, color: ink),
+                      )
+                    : Column(
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            w.label,
+                            maxLines: 1,
+                            softWrap: false,
+                            overflow: TextOverflow.ellipsis,
+                            style: CopperCta.labelStyle(
+                              size: fontSize,
+                              color: ink,
+                            ),
+                          ),
+                          Text(
+                            w.subtitle!,
+                            maxLines: 1,
+                            softWrap: false,
+                            overflow: TextOverflow.ellipsis,
+                            style: CopperCta.labelStyle(
+                              size: fontSize,
+                              color: ink,
+                            ),
+                          ),
+                        ],
+                      ),
               ),
               if (!w.busy && w.showArrow) ...[
                 const SizedBox(width: 8),

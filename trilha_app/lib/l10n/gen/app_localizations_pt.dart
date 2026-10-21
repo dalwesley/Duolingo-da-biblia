@@ -2965,6 +2965,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get journeyPlay => 'Jogar';
 
   @override
+  String get journeyPlusCtaDetail => 'com o Peregrino+';
+
+  @override
   String get journeySabedoriaTitle => 'Sabedoria e Salmos';
 
   @override

@@ -2077,6 +2077,10 @@
   "@journeyPlay": {
     "description": "CTA da estação atual no mapa"
   },
+  "journeyPlusCtaDetail": "com o Peregrino+",
+  "@journeyPlusCtaDetail": {
+    "description": "Segunda linha do botão da estação atual quando a cena pede o Peregrino+. A primeira é commonContinue."
+  },
   "journeySabedoriaTitle": "Sabedoria e Salmos",
   "journeyScenesLeft": "{count, plural, =1{Falta 1 cena} other{Faltam {count} cenas}}",
   "@journeyScenesLeft": {

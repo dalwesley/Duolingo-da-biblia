@@ -4648,6 +4648,12 @@ abstract class AppLocalizations {
   /// **'Jogar'**
   String get journeyPlay;
 
+  /// Segunda linha do botão da estação atual quando a cena pede o Peregrino+. A primeira é commonContinue.
+  ///
+  /// In pt, this message translates to:
+  /// **'com o Peregrino+'**
+  String get journeyPlusCtaDetail;
+
   /// No description provided for @journeySabedoriaTitle.
   ///
   /// In pt, this message translates to:

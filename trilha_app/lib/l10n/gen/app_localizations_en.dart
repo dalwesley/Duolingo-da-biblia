@@ -2964,6 +2964,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get journeyPlay => 'Play';
 
   @override
+  String get journeyPlusCtaDetail => 'with Pilgrim+';
+
+  @override
   String get journeySabedoriaTitle => 'Wisdom and Psalms';
 
   @override
