@@ -9282,7 +9282,7 @@ abstract class AppLocalizations {
   /// No description provided for @paywallPerkSeasonBody.
   ///
   /// In pt, this message translates to:
-  /// **'Advento, Páscoa, Natal e outras estações, cada uma com um caminho próprio.'**
+  /// **'Caminhadas das estações do ano, como o Advento: um passo por dia e a revisão de cada semana.'**
   String get paywallPerkSeasonBody;
 
   /// No description provided for @paywallPerkSeasonTitle.
@@ -12134,12 +12134,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Espera do Verbo · uma cena por dia'**
   String get seasonWalkAdvento2026Subtitle;
-
-  /// No description provided for @seasonWalkAdvento2026Title.
-  ///
-  /// In pt, this message translates to:
-  /// **'Advento 2026'**
-  String get seasonWalkAdvento2026Title;
 
   /// No description provided for @seasonWeek.
   ///

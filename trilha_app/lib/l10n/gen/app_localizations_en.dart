@@ -5949,7 +5949,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get paywallPerkSeasonBody =>
-      'Advent, Easter, Christmas and other seasons, each with a path of its own.';
+      'Walks through the seasons of the year, like Advent: one step a day and a review each week.';
 
   @override
   String get paywallPerkSeasonTitle => 'Season trails';
@@ -7814,9 +7814,6 @@ class AppLocalizationsEn extends AppLocalizations {
   @override
   String get seasonWalkAdvento2026Subtitle =>
       'Waiting for the Word · one scene a day';
-
-  @override
-  String get seasonWalkAdvento2026Title => 'Advent 2026';
 
   @override
   String seasonWeek(int week) {

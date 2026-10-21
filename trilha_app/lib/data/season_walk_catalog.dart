@@ -21,12 +21,13 @@ class SeasonWalkCatalog {
     insight: insight,
   );
 
-  static SeasonWalkCampaign advent2026(DateTime start) {
+  /// Mesmo roteiro todo ano; id e título levam o ano do início.
+  static SeasonWalkCampaign advent(DateTime start) {
     final l = L10n.current;
     return SeasonWalkCampaign(
-      id: 'advento-2026',
+      id: 'advento-${start.year}',
       kind: SeasonWalkKind.advent,
-      title: l.seasonWalkAdvento2026Title,
+      title: l.medalAdventVaultTitle('${start.year}'),
       subtitle: l.seasonWalkAdvento2026Subtitle,
       start: DateTime(start.year, start.month, start.day),
       days: _adventDays(l),
@@ -36,7 +37,7 @@ class SeasonWalkCatalog {
   static List<SeasonWalkCampaign> all([DateTime? now]) {
     final day = now ?? DateTime.now();
     final adventStart = LiturgicalCalendar.adventStart(day.year);
-    return [advent2026(adventStart)];
+    return [advent(adventStart)];
   }
 
   /// Campanha visível: janela ativa, senão a próxima.

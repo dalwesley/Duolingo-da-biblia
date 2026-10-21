@@ -5999,7 +5999,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get paywallPerkSeasonBody =>
-      'Adviento, Pascua, Navidad y otras temporadas, cada una con un camino propio.';
+      'Caminatas por las temporadas del año, como el Adviento: un paso por día y un repaso cada semana.';
 
   @override
   String get paywallPerkSeasonTitle => 'Rutas de temporada';
@@ -7864,9 +7864,6 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get seasonWalkAdvento2026Subtitle =>
       'Espera del Verbo · una escena por día';
-
-  @override
-  String get seasonWalkAdvento2026Title => 'Adviento 2026';
 
   @override
   String seasonWeek(int week) {

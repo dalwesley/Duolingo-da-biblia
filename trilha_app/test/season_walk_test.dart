@@ -13,16 +13,26 @@ void main() {
   group('SeasonWalkCatalog', () {
     test('advent 2026 has 26 shared days', () {
       final start = LiturgicalCalendar.adventStart(2026);
-      final c = SeasonWalkCatalog.advent2026(start);
+      final c = SeasonWalkCatalog.advent(start);
       expect(c.days, hasLength(26));
       expect(c.kind, SeasonWalkKind.advent);
       expect(c.dayIndexOn(start), 1);
       expect(c.contains(start.subtract(const Duration(days: 1))), isFalse);
     });
 
+    test('next year gets its own advent id', () {
+      final c = SeasonWalkCatalog.current(DateTime(2027, 12, 5));
+      expect(c.id, 'advento-2027');
+      expect(c.start, LiturgicalCalendar.adventStart(2027));
+      expect(
+        SeasonWalkCatalog.current(DateTime(2026, 12, 5)).id,
+        'advento-2026',
+      );
+    });
+
     test('with Plus, every day up to today is open', () {
       final start = LiturgicalCalendar.adventStart(2026);
-      final c = SeasonWalkCatalog.advent2026(start);
+      final c = SeasonWalkCatalog.advent(start);
       final today = start.add(const Duration(days: 9));
       for (var i = 1; i <= 10; i++) {
         final access = SeasonWalkCatalog.access(
@@ -38,7 +48,7 @@ void main() {
 
     test('without Plus, days 1–3 stay open and day 4 asks for it', () {
       final start = LiturgicalCalendar.adventStart(2026);
-      final c = SeasonWalkCatalog.advent2026(start);
+      final c = SeasonWalkCatalog.advent(start);
       final today = start.add(const Duration(days: 9));
       for (var i = 1; i <= 3; i++) {
         final access = SeasonWalkCatalog.access(
@@ -64,7 +74,7 @@ void main() {
 
     test('cannot skip into the future', () {
       final start = LiturgicalCalendar.adventStart(2026);
-      final c = SeasonWalkCatalog.advent2026(start);
+      final c = SeasonWalkCatalog.advent(start);
       final access = SeasonWalkCatalog.access(
         campaign: c,
         index: 10,
