@@ -8,6 +8,7 @@ import '../models/trail_catalog.dart';
 import '../services/backend_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
+import '../services/plus_log.dart';
 import '../services/room_service.dart';
 import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
@@ -25,6 +26,7 @@ import '../widgets/journey_sky.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/cloud_mascot.dart';
 import '../widgets/ui_primitives.dart';
+import 'paywall_screen.dart';
 import 'trail_map_screen.dart';
 
 /// Peregrinação cinematográfica — as trilhas de um card da aba Trilhas.
@@ -300,17 +302,12 @@ List<JourneyPathItem> realmJourneyItems(
             !plusOpen &&
             unlocked &&
             !done &&
-            PlusAccess.trailIsPlus(trail) &&
-            PlusAccess.missionNeedsPlus(
+            TrailProgress.nextSceneNeedsPlus(
               trail,
-              TrailProgress.getCurrentMission(
-                    trail,
-                    progress.completedMissionsForTrail(
-                      trailSlug: trail.slug,
-                      missionSlugs: trail.missionSlugs,
-                    ),
-                  )?.slug ??
-                  '',
+              progress.completedMissionsForTrail(
+                trailSlug: trail.slug,
+                missionSlugs: trail.missionSlugs,
+              ),
             ),
         lockedBy: unlocked
             ? null
@@ -331,6 +328,27 @@ List<JourneyPathItem> realmJourneyItems(
 void openJourneyItem(BuildContext context, JourneyPathItem item) {
   ActHaptics.tap();
   final trail = item.trail;
+  if (PlusAccess.trailIsPlus(trail)) {
+    final open = context.read<SubscriptionService>().plusFeaturesOpen;
+    PlusLog.log(
+      'trava',
+      'trilha ${trail.slug} no caminho: '
+          '${item.plusLocked
+              ? 'próxima cena pede Plus, paywall'
+              : open
+              ? 'Plus aberto, mapa'
+              : 'amostra ou sem cena pendente, mapa'}',
+    );
+  }
+  // Trilha temática cuja próxima cena pede o Plus: o toque é a compra.
+  if (item.plusLocked) {
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (_) => const PaywallScreen(source: 'trail'),
+      ),
+    );
+    return;
+  }
   final canOpen =
       item.state == JourneyNodeState.current ||
       item.state == JourneyNodeState.completed ||

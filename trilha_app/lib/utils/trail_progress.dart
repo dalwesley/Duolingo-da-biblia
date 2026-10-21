@@ -294,6 +294,15 @@ class TrailProgress {
         trail.slug == 'recomeco';
   }
 
+  /// A próxima cena desta trilha pede o Peregrino+? Falso quando a trilha
+  /// é grátis, quando a próxima é a 1ª (amostra) ou quando não falta cena.
+  static bool nextSceneNeedsPlus(Trail trail, List<String> completed) {
+    if (!PlusAccess.trailIsPlus(trail)) return false;
+    final next = getCurrentMission(trail, completed);
+    if (next == null) return false;
+    return PlusAccess.missionNeedsPlus(trail, next.slug);
+  }
+
   static Mission? getCurrentMission(Trail trail, List<String> completed) {
     final allSlugs = missionSlugs(trail);
     for (final mod in trail.modules) {

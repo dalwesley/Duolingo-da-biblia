@@ -199,6 +199,8 @@ class _TrailStation extends StatelessWidget {
             : item.lockedBy != null
             ? context.l10n.journeyLockedFinish(item.lockedBy!)
             : context.l10n.journeyBeyondHorizon;
+      } else if (item.plusLocked) {
+        status = context.l10n.plusNoticeLockedHeader;
       } else if (item.statusLabel != null) {
         status = item.statusLabel;
       } else if (isDone) {

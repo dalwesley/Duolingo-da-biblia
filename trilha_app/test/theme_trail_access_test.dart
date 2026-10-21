@@ -2,6 +2,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:trilha_app/models/trail.dart';
 import 'package:trilha_app/models/trail_catalog.dart';
 import 'package:trilha_app/utils/plus_access.dart';
+import 'package:trilha_app/utils/trail_progress.dart';
 
 Trail _trail(String realmId) => Trail(
   slug: 'test-$realmId',
@@ -73,5 +74,18 @@ void main() {
       expect(PlusAccess.missionNeedsPlus(t, 'm2'), isTrue);
       expect(PlusAccess.missionNeedsPlus(t, 'm3'), isTrue);
     }
+  });
+
+  test('próxima cena pede Plus só depois da amostra', () {
+    final t = _trail(TrailRealm.vidaCrista.id);
+    expect(TrailProgress.nextSceneNeedsPlus(t, []), isFalse);
+    expect(TrailProgress.nextSceneNeedsPlus(t, ['m1']), isTrue);
+    expect(TrailProgress.nextSceneNeedsPlus(t, ['m1', 'm2', 'm3']), isFalse);
+    expect(
+      TrailProgress.nextSceneNeedsPlus(_trail(TrailRealm.novoTestamento.id), [
+        'm1',
+      ]),
+      isFalse,
+    );
   });
 }
