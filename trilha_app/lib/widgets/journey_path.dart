@@ -118,6 +118,7 @@ class JourneyPath extends StatelessWidget {
         statusLabel: item.statusLabel,
         clearedModeIds: item.clearedModeIds,
         activeDifficultyId: item.activeDifficultyId,
+        lockedBy: item.lockedBy,
       );
       final isCurrent = item.state == JourneyNodeState.current;
       stops.add(

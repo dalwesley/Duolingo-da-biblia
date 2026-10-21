@@ -9,6 +9,7 @@ import '../data/question_bank.dart';
 import '../data/trail_repository.dart';
 import '../models/difficulty.dart';
 import '../models/trail.dart';
+import '../services/plus_log.dart';
 import '../services/analytics_service.dart';
 import '../services/bible_service.dart';
 import '../services/content_catalog_service.dart';
@@ -144,6 +145,13 @@ class _LessonScreenState extends State<LessonScreen>
   }
 
   Future<void> _load() async {
+    if (widget.requiresPlus) {
+      final open = context.read<SubscriptionService>().plusFeaturesOpen;
+      PlusLog.log(
+        'trava',
+        'cena ${widget.missionSlug} exige Plus: ${open ? 'liberada' : 'paywall'}',
+      );
+    }
     if (widget.requiresPlus &&
         !context.read<SubscriptionService>().plusFeaturesOpen) {
       await Navigator.of(context).pushReplacement(
@@ -195,6 +203,13 @@ class _LessonScreenState extends State<LessonScreen>
       if (!mounted) return;
     }
 
+    if (widget.skipTrailLock) {
+      PlusLog.log(
+        'trava',
+        'cena ${widget.missionSlug} aberta por fluxo próprio '
+            '(Caminhada, repetir): trava de trilha não se aplica',
+      );
+    }
     // Deep link / rota direta: não deixa pular unlock de trilha ou passo.
     // Caminhada e Esquina ativa já autorizaram a cena.
     final cornerOpens =
@@ -239,6 +254,19 @@ class _LessonScreenState extends State<LessonScreen>
         // Trilha temática: da 2ª cena em diante só com o Peregrino+.
         // A checagem mora aqui para valer no mapa, na Home e no deep link.
         if (!mounted) return;
+        if (PlusAccess.trailIsPlus(trail)) {
+          final needs = PlusAccess.missionNeedsPlus(trail, widget.missionSlug);
+          final open = context.read<SubscriptionService>().plusFeaturesOpen;
+          PlusLog.log(
+            'trava',
+            'trilha temática ${trail.slug} · cena ${widget.missionSlug}: '
+                '${!needs
+                    ? 'amostra grátis (1ª cena)'
+                    : open
+                    ? 'Plus aberto, liberada'
+                    : 'sem Plus, paywall'}',
+          );
+        }
         if (PlusAccess.missionNeedsPlus(trail, widget.missionSlug) &&
             !context.read<SubscriptionService>().plusFeaturesOpen) {
           await Navigator.of(context).pushReplacement(

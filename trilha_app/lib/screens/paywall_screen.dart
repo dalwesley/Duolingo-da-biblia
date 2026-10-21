@@ -6,6 +6,7 @@ import 'package:purchases_flutter/purchases_flutter.dart';
 
 import '../l10n/app_language.dart';
 import '../l10n/gen/app_localizations.dart';
+import '../services/plus_log.dart';
 import '../services/analytics_service.dart';
 import '../services/progress_service.dart';
 import '../services/subscription_service.dart';
@@ -68,6 +69,7 @@ class _PaywallScreenState extends State<PaywallScreen> {
         : sub.canPurchase
         ? 'offer'
         : 'unavailable';
+    PlusLog.log('paywall', 'aberto por ${widget.source} (estado $_viewState)');
     AnalyticsService.instance.logPaywallView(
       source: widget.source,
       state: _viewState,

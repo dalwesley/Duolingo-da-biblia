@@ -1,9 +1,11 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
 import '../data/trail_repository.dart';
 import '../services/league_service.dart';
+import '../services/plus_log.dart';
 import '../services/progress_service.dart';
 import '../services/remote_config_service.dart';
 import '../services/subscription_service.dart';
@@ -265,6 +267,57 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
                           'cenas: ${progress.missionsCompletedInWeek(week).length} · '
                           'feita: ${progress.isWeeklyReviewDone(week)}',
                         ),
+                      ]),
+                      section('Registro do Plus', [
+                        line(
+                          'Loja, ofertas, assinatura, compras, config e '
+                          'travas, mais recente no topo. No console: '
+                          'adb logcat | grep Plus',
+                        ),
+                        ListenableBuilder(
+                          listenable: PlusLog.instance,
+                          builder: (context, _) {
+                            final entries = PlusLog.instance.entries;
+                            if (entries.isEmpty) return line('(vazio)');
+                            return Container(
+                              constraints: const BoxConstraints(maxHeight: 320),
+                              padding: const EdgeInsets.all(AppSpace.sm),
+                              decoration: BoxDecoration(
+                                color: a.insetFill,
+                                borderRadius: BorderRadius.circular(
+                                  AppRadii.sm,
+                                ),
+                              ),
+                              child: ListView.builder(
+                                shrinkWrap: true,
+                                itemCount: entries.length,
+                                itemBuilder: (_, i) => Padding(
+                                  padding: const EdgeInsets.only(bottom: 6),
+                                  child: SelectableText(
+                                    entries[i].toString(),
+                                    style: TextStyle(
+                                      fontFamily: 'monospace',
+                                      fontSize: 11,
+                                      height: 1.3,
+                                      color: a.textSecondary,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            );
+                          },
+                        ),
+                        const SizedBox(height: AppSpace.sm),
+                        button('Registrar o estado agora', () {
+                          PlusLog.log('laboratório', sub.debugSnapshot);
+                        }),
+                        button('Copiar registro', () async {
+                          await Clipboard.setData(
+                            ClipboardData(text: PlusLog.instance.dump()),
+                          );
+                          _toast('Registro copiado');
+                        }),
+                        button('Limpar registro', PlusLog.instance.clear),
                       ]),
                       section('Assinatura e apoio', [
                         toggle(

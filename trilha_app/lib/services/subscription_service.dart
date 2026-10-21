@@ -12,6 +12,7 @@ import '../l10n/l10n_global.dart';
 import '../utils/plus_access.dart';
 import 'analytics_service.dart';
 import 'notification_service.dart';
+import 'plus_log.dart';
 import 'remote_config_service.dart';
 
 /// Assinatura "Peregrino+" via RevenueCat.
@@ -28,6 +29,36 @@ import 'remote_config_service.dart';
 /// com loja, fecha sem Plus mesmo se a oferta falhar — o cache do último
 /// entitlement segura o assinante até vencer + 7 dias de graça.
 class SubscriptionService extends ChangeNotifier {
+  String? _lastSnapshot;
+
+  /// Retrato do acesso numa linha: loja, oferta, Plus, promoção, Pioneiro.
+  String get debugSnapshot {
+    final ids = [for (final p in packagesForSale) p.storeProduct.identifier];
+    return 'loja=${isConfigured ? (_debugFakeStore ? 'falsa' : 'real') : 'sem chave'}'
+        ' ofertas=${_offeringsReady ? ids.join(',') : 'não'}'
+        ' assinante=$isPeregrinoPlus${_plusFromCache ? '(cache)' : ''}'
+        ' plano=${plusProductId ?? '-'}'
+        ' teste=$plusInTrial promo=${launchPromoActive ? _ymd(launchFreeUntil) : 'não'}'
+        ' aberto=$plusFeaturesOpen podeComprar=$canPurchase'
+        ' pioneiro=${pioneerOnSale ? 'à venda' : 'fora'} $pioneerTaken/$pioneerCap'
+        ' apoiador=$isSupporter';
+  }
+
+  static String _ymd(DateTime? d) =>
+      d == null ? '-' : d.toIso8601String().substring(0, 10);
+
+  /// Todo aviso de mudança passa por aqui: registra o retrato quando ele
+  /// muda (inclui os interruptores do laboratório).
+  @override
+  void notifyListeners() {
+    final snap = debugSnapshot;
+    if (snap != _lastSnapshot) {
+      _lastSnapshot = snap;
+      PlusLog.log('estado', snap);
+    }
+    super.notifyListeners();
+  }
+
   SubscriptionService() {
     RemoteConfigService.instance.addListener(notifyListeners);
     unawaited(_restoreLocalState());
@@ -260,7 +291,7 @@ class SubscriptionService extends ChangeNotifier {
             notifyListeners();
           },
           onError: (Object e) {
-            debugPrint('Contagem do Pioneiro indisponível: $e');
+            PlusLog.log('pioneiro', 'contagem indisponível: $e');
           },
         );
   }
@@ -273,7 +304,14 @@ class SubscriptionService extends ChangeNotifier {
   }
 
   Future<void> init({String? uid}) async {
-    if (!isConfigured) return;
+    if (!isConfigured) {
+      PlusLog.log(
+        'loja',
+        'sem chave RevenueCat para ${defaultTargetPlatform.name}: '
+            'tudo aberto (fail-open). Ligue a loja falsa para testar travas.',
+      );
+      return;
+    }
     if (_initialized) {
       await bindUid(uid);
       return;
@@ -287,12 +325,16 @@ class SubscriptionService extends ChangeNotifier {
         PurchasesConfiguration(apiKey)..appUserID = uid,
       );
       _boundUid = uid;
+      PlusLog.log(
+        'loja',
+        'RevenueCat configurado, conta ${PlusLog.shortUid(uid)}',
+      );
       Purchases.addCustomerInfoUpdateListener(_onCustomerInfo);
       final info = await Purchases.getCustomerInfo();
       _onCustomerInfo(info);
       await _loadOfferings();
     } catch (e) {
-      debugPrint('SubscriptionService.init falhou: $e');
+      PlusLog.log('loja', 'init falhou: $e');
     }
   }
 
@@ -336,6 +378,10 @@ class SubscriptionService extends ChangeNotifier {
       unawaited(_savePlusHistory());
     }
     _boundUid = uid;
+    PlusLog.log(
+      'loja',
+      'conta ${switching ? 'trocada' : 'ligada'}: ${PlusLog.shortUid(uid)}',
+    );
     try {
       await Purchases.logIn(uid);
       final info = await Purchases.getCustomerInfo();
@@ -500,12 +546,18 @@ class SubscriptionService extends ChangeNotifier {
         ...?offerings.all[supportOfferingId]?.availablePackages,
       ]..sort((a, b) => a.storeProduct.price.compareTo(b.storeProduct.price));
       _offeringsReady = availablePackages.isNotEmpty;
+      PlusLog.log(
+        'ofertas',
+        'padrão=${offerings.current?.identifier ?? '-'} '
+            'planos=${[for (final p in availablePackages) '${p.storeProduct.identifier} ${p.storeProduct.priceString}'].join(' | ')} '
+            'apoio=${supportPackages.length}',
+      );
       notifyListeners();
       await _loadTrialEligibility();
     } catch (e) {
       _offeringsReady = false;
       availablePackages = const [];
-      debugPrint('Falha ao carregar ofertas: $e');
+      PlusLog.log('ofertas', 'falha ao carregar: $e');
       notifyListeners();
     }
   }
@@ -517,9 +569,13 @@ class SubscriptionService extends ChangeNotifier {
     try {
       final map = await Purchases.checkTrialOrIntroductoryPriceEligibility(ids);
       _trialEligibility = {for (final e in map.entries) e.key: e.value.status};
+      PlusLog.log(
+        'teste',
+        'elegibilidade ${[for (final e in _trialEligibility.entries) '${e.key}=${e.value.name.replaceFirst('introEligibilityStatus', '')}'].join(' ')}',
+      );
       notifyListeners();
     } catch (e) {
-      debugPrint('SubscriptionService elegibilidade falhou: $e');
+      PlusLog.log('teste', 'elegibilidade falhou: $e');
     }
   }
 
@@ -560,6 +616,12 @@ class SubscriptionService extends ChangeNotifier {
     isSupporter = info.nonSubscriptionTransactions.any(
       (t) => t.productIdentifier.startsWith(_supportProductPrefix),
     );
+    PlusLog.log(
+      'assinatura',
+      'loja respondeu: ativo=$isPeregrinoPlus plano=${plusProductId ?? '-'} '
+          'fim=${_ymd(plusExpiresAt)} renova=$plusWillRenew '
+          'teste=$plusInTrial cobrança=${plusBillingIssue ? 'problema' : 'ok'}',
+    );
     unawaited(_saveEntitlementCache());
     notifyListeners();
 
@@ -590,25 +652,31 @@ class SubscriptionService extends ChangeNotifier {
       AnalyticsService.instance.logPurchase(stage: stage, productId: productId),
     );
     track('start');
+    PlusLog.log('compra', 'início $productId');
     try {
       final result = await Purchases.purchase(PurchaseParams.package(package));
       _onCustomerInfo(result.customerInfo);
       track(isPeregrinoPlus ? 'success' : 'fail');
+      PlusLog.log(
+        'compra',
+        '$productId ${isPeregrinoPlus ? 'concluída' : 'sem entitlement'}',
+      );
       return isPeregrinoPlus;
     } on PlatformException catch (e) {
       final code = PurchasesErrorHelper.getErrorCode(e);
       if (code == PurchasesErrorCode.purchaseCancelledError) {
         track('cancel');
+        PlusLog.log('compra', '$productId cancelada pela pessoa');
       } else {
         track('fail');
         lastError = L10n.current.paywallPurchaseFailed;
-        debugPrint('Falha na compra: $code $e');
+        PlusLog.log('compra', '$productId falhou: ${code.name} $e');
       }
       return false;
     } catch (e) {
       track('fail');
       lastError = L10n.current.paywallPurchaseFailed;
-      debugPrint('Falha na compra: $e');
+      PlusLog.log('compra', '$productId falhou: $e');
       return false;
     } finally {
       loading = false;
@@ -634,6 +702,7 @@ class SubscriptionService extends ChangeNotifier {
       final result = await Purchases.purchase(PurchaseParams.package(package));
       _onCustomerInfo(result.customerInfo);
       track('success');
+      PlusLog.log('apoio', '$productId concluído');
       return true;
     } on PlatformException catch (e) {
       final code = PurchasesErrorHelper.getErrorCode(e);
@@ -642,13 +711,13 @@ class SubscriptionService extends ChangeNotifier {
       } else {
         track('fail');
         lastError = L10n.current.paywallPurchaseFailed;
-        debugPrint('Falha no apoio: $code $e');
+        PlusLog.log('apoio', '$productId falhou: ${code.name} $e');
       }
       return false;
     } catch (e) {
       track('fail');
       lastError = L10n.current.paywallPurchaseFailed;
-      debugPrint('Falha no apoio: $e');
+      PlusLog.log('apoio', '$productId falhou: $e');
       return false;
     } finally {
       loading = false;
@@ -661,15 +730,20 @@ class SubscriptionService extends ChangeNotifier {
     loading = true;
     notifyListeners();
     try {
+      PlusLog.log('restaurar', 'início');
       final info = await Purchases.restorePurchases();
       _onCustomerInfo(info);
+      PlusLog.log(
+        'restaurar',
+        isPeregrinoPlus ? 'Plus encontrado' : 'nenhuma assinatura ativa',
+      );
       unawaited(
         AnalyticsService.instance.logRestore(isPeregrinoPlus ? 'plus' : 'none'),
       );
     } catch (e) {
       lastError = L10n.current.paywallRestoreFailed;
       unawaited(AnalyticsService.instance.logRestore('error'));
-      debugPrint('Falha ao restaurar compra: $e');
+      PlusLog.log('restaurar', 'falhou: $e');
     } finally {
       loading = false;
       notifyListeners();
@@ -859,6 +933,7 @@ class SubscriptionService extends ChangeNotifier {
   /// Loja falsa: planos e apoios de mentira; compras viram sucesso na hora.
   void debugSetFakeStore(bool value) {
     if (!kDebugMode) return;
+    PlusLog.log('laboratório', 'loja falsa ${value ? 'ligada' : 'desligada'}');
     _debugFakeStore = value;
     if (value) {
       availablePackages = _debugPlans();

@@ -3,6 +3,8 @@ import 'dart:async';
 import 'package:firebase_remote_config/firebase_remote_config.dart';
 import 'package:flutter/foundation.dart';
 
+import 'plus_log.dart';
+
 /// Calibração de gamificação via Firebase Remote Config.
 ///
 /// Cada valor tem um default igual ao que hoje está fixo no código — nada
@@ -49,16 +51,29 @@ class RemoteConfigService extends ChangeNotifier {
       await rc.setDefaults(_defaults);
       _rc = rc;
       await rc.fetchAndActivate();
+      _logPlusKeys('carregado');
       notifyListeners();
       await _updates?.cancel();
       _updates = rc.onConfigUpdated.listen((_) async {
         await rc.activate();
+        _logPlusKeys('atualizado');
         notifyListeners();
       });
     } catch (e) {
       debugPrint('RemoteConfigService.init falhou: $e');
+      PlusLog.log('config', 'Remote Config falhou, valendo os padrões: $e');
     }
   }
+
+  void _logPlusKeys(String when) => PlusLog.log(
+    'config',
+    'Remote Config $when: '
+        '$_keyPlusLaunchFreeUntil="${_string(_keyPlusLaunchFreeUntil)}" '
+        '$_keyPioneerUntil="${_string(_keyPioneerUntil)}" '
+        '$_keyGroupsEnabled=${_bool(_keyGroupsEnabled)} '
+        '$_keyCompanionEnabled=${_bool(_keyCompanionEnabled)} '
+        '$_keyChallengeEnabled=${_bool(_keyChallengeEnabled)}',
+  );
 
   int _int(String key) => _rc?.getInt(key) ?? (_defaults[key] as int);
 
