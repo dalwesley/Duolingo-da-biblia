@@ -144,7 +144,9 @@ YouVersion tudo grátis. Salário mínimo 2026: R$ 1.621.
   assinou continua renovando a R$ 89,90 (a loja mantém o preço de quem
   já assinou). A contagem das primeiras compras fica em `stats/pioneer`
   (o webhook soma uma vez por conta; cancelar não devolve a vaga). Tirar
-  o produto da oferta ao chegar em 200 continua sendo ação na loja.
+  o produto da oferta ao chegar em 200 continua sendo ação na loja,
+  mas o app já esconde o Pioneiro quando o contador bate o teto
+  (`packagesForSale`), então a demora na loja não vende vaga a mais.
 - **Vitalício: não criar o produto.** Se um dia existir, mínimo de 8× o anual.
 - Sem plano semestral.
 - Ajuste fino depois de 60–90 dias com D7 medido: testar R$ 99,90 ×

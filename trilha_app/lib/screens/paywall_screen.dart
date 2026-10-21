@@ -103,7 +103,7 @@ class _PaywallScreenState extends State<PaywallScreen> {
     final a = AppearanceStyle.resolve(mode);
     final bottom = MediaQuery.viewPaddingOf(context).bottom;
 
-    final packages = [...sub.availablePackages]
+    final packages = [...sub.packagesForSale]
       ..sort((x, y) => _rank(x).compareTo(_rank(y)));
     // Durante a promoção também dá para assinar: quem quer garantir o
     // plano não espera o fim da gratuidade (a compra começa hoje).

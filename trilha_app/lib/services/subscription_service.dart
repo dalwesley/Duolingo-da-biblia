@@ -199,6 +199,15 @@ class SubscriptionService extends ChangeNotifier {
 
   int get pioneerCap => _pioneerCap;
 
+  /// Vagas do Pioneiro esgotadas pelo contador do servidor.
+  bool get pioneerSoldOut => (_pioneerCount ?? 0) >= _pioneerCap;
+
+  /// Pacotes à venda: sem o Pioneiro quando as vagas acabaram, mesmo que
+  /// a oferta da loja ainda o traga (tirar da loja é manual e atrasa).
+  List<Package> get packagesForSale => pioneerSoldOut
+      ? availablePackages.where((p) => !isFounderPackage(p)).toList()
+      : availablePackages;
+
   void _listenPioneerCount() {
     if (Firebase.apps.isEmpty) return;
     _pioneerListen = FirebaseFirestore.instance
@@ -654,7 +663,7 @@ class SubscriptionService extends ChangeNotifier {
 
   /// Pacote Fundador da oferta atual, se ainda estiver à venda.
   Package? get founderPackage =>
-      availablePackages.where(isFounderPackage).firstOrNull;
+      packagesForSale.where(isFounderPackage).firstOrNull;
 
   /// Tipo do plano ativo (anual, mensal…), pelo produto da oferta.
   PackageType? get plusPackageType => availablePackages
@@ -772,6 +781,14 @@ class SubscriptionService extends ChangeNotifier {
     if (!kDebugMode) return;
     isSupporter = value;
     unawaited(_debugSave());
+    notifyListeners();
+  }
+
+  /// Simula o contador do Pioneiro (testar as vagas esgotadas sem servidor).
+  void debugSetPioneerCount(int count, {int? cap}) {
+    if (!kDebugMode) return;
+    _pioneerCount = count;
+    if (cap != null && cap > 0) _pioneerCap = cap;
     notifyListeners();
   }
 

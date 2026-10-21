@@ -83,6 +83,27 @@ void main() {
     expect(plusPlanLabel(l10n, sub), 'Pioneiro');
   });
 
+  test('Pioneiro some da venda quando as vagas acabam', () {
+    SharedPreferences.setMockInitialValues({});
+    final sub = SubscriptionService();
+    sub.debugSetFakeStore(true);
+
+    sub.debugSetPioneerCount(199, cap: 200);
+    expect(sub.pioneerSoldOut, isFalse);
+    expect(sub.founderPackage, isNotNull);
+
+    sub.debugSetPioneerCount(200);
+    expect(sub.pioneerSoldOut, isTrue);
+    expect(sub.founderPackage, isNull);
+    expect(
+      sub.packagesForSale.any(SubscriptionService.isFounderPackage),
+      isFalse,
+    );
+    // O anual e o mensal continuam à venda.
+    expect(sub.annualPackage, isNotNull);
+    expect(sub.packagesForSale, hasLength(sub.availablePackages.length - 1));
+  });
+
   test('cache dentro da validade concede o Plus, sem fim gravado', () async {
     final expires = DateTime.now().add(const Duration(days: 30));
     final sub = await bootWithCache([
