@@ -28,6 +28,9 @@ class TrailMapPath extends StatelessWidget {
   /// Plus). Continuam tocáveis: o toque leva ao paywall.
   final bool Function(String slug)? plusLocked;
 
+  /// Toque numa cena que pede o Plus: abre a compra, não a cena.
+  final void Function(String slug)? onPlusTap;
+
   const TrailMapPath({
     super.key,
     required this.missions,
@@ -40,6 +43,7 @@ class TrailMapPath extends StatelessWidget {
     this.currentKey,
     this.currentSlug,
     this.plusLocked,
+    this.onPlusTap,
   });
 
   bool _completed(String slug) => completedMissions.contains(slug);
@@ -116,7 +120,11 @@ class TrailMapPath extends StatelessWidget {
         accent: accent,
         glow: glow,
         chrome: chrome,
-        onTap: unlocked ? () => onMissionTap?.call(mission.slug) : null,
+        onTap: !unlocked
+            ? null
+            : needsPlus && onPlusTap != null
+            ? () => onPlusTap!(mission.slug)
+            : () => onMissionTap?.call(mission.slug),
         plusLocked: needsPlus,
         statusLine: completed
             ? context.l10n.trailsCleared

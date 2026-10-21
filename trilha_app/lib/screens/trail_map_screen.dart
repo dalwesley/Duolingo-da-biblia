@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 import '../data/question_bank.dart';
 import '../data/entry_trails.dart';
 import '../data/trail_repository.dart';
+import '../services/plus_log.dart';
 import '../services/subscription_service.dart';
 import '../utils/plus_access.dart';
 import '../widgets/character_seals_strip.dart';
@@ -38,6 +39,7 @@ import '../widgets/top_bar.dart';
 import '../widgets/trail_map_path.dart';
 import '../widgets/ui_primitives.dart';
 import 'difficulty_picker_screen.dart';
+import 'paywall_screen.dart';
 
 class TrailMapScreen extends StatefulWidget {
   final String slug;
@@ -423,6 +425,19 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                                 ? null
                                 : (slug) =>
                                       PlusAccess.missionNeedsPlus(trail, slug),
+                            onPlusTap: (slug) {
+                              PlusLog.log(
+                                'trava',
+                                'mapa ${trail.slug} · cena $slug: '
+                                    'sem Plus, paywall',
+                              );
+                              Navigator.of(context).push(
+                                MaterialPageRoute<void>(
+                                  builder: (_) =>
+                                      const PaywallScreen(source: 'trail'),
+                                ),
+                              );
+                            },
                           );
 
                           return GenesisModuleScenery(
