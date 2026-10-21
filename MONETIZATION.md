@@ -52,7 +52,10 @@ como benefício pago de uma fase futura. Não se vende o que ainda não existe.
   diante, o toque abre o paywall (`PlusAccess.missionNeedsPlus`,
   checado no `LessonScreen` — vale para mapa, Home e deep link).
 - A regra é pela área (`realm`), não pela trilha: área nova fora de AT/NT
-  já nasce Plus. A Caminhada de temporada usa cenas dessas trilhas e
+  já nasce Plus. Trilha Plus não espera pré-requisito de outra área (quem
+  assina não precisa terminar Atos para abrir História da Igreja); a
+  ordem dentro do próprio caminho continua, e o cadeado diz o que falta
+  (“Termine História da Igreja para abrir”). A Caminhada de temporada usa cenas dessas trilhas e
   segue a regra própria dela (dias 1–3 grátis), não a da trilha.
 - Cena dentro de rota paga continua alcançável grátis pela trilha do seu
   livro. O Plus vende seleção, ordem, estudo e destino — nunca a cena.

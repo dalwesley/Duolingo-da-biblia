@@ -2935,6 +2935,11 @@ class AppLocalizationsPt extends AppLocalizations {
   String get journeyInn => 'Estalagem';
 
   @override
+  String journeyLockedFinish(String trail) {
+    return 'Termine $trail para abrir';
+  }
+
+  @override
   String get journeyLockedHint =>
       'Conclua a trilha anterior para liberar esta.';
 

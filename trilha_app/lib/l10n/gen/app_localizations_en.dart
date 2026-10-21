@@ -2934,6 +2934,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get journeyInn => 'Inn';
 
   @override
+  String journeyLockedFinish(String trail) {
+    return 'Finish $trail to open';
+  }
+
+  @override
   String get journeyLockedHint =>
       'Complete the previous trail to unlock this one.';
 

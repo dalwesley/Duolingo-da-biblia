@@ -34,6 +34,9 @@ class JourneyPathItem {
   /// Modo ativo nesta trilha (`semente` = Observação).
   final String? activeDifficultyId;
 
+  /// Nome da trilha que falta terminar, quando esta está trancada.
+  final String? lockedBy;
+
   const JourneyPathItem({
     required this.trail,
     required this.state,
@@ -44,6 +47,7 @@ class JourneyPathItem {
     this.statusLabel,
     this.clearedModeIds = const [],
     this.activeDifficultyId,
+    this.lockedBy,
   });
 }
 
@@ -186,6 +190,8 @@ class _TrailStation extends StatelessWidget {
       if (isLocked || isSoon) {
         status = isSoon
             ? context.l10n.commonComingSoon
+            : item.lockedBy != null
+            ? context.l10n.journeyLockedFinish(item.lockedBy!)
             : context.l10n.journeyBeyondHorizon;
       } else if (item.statusLabel != null) {
         status = item.statusLabel;

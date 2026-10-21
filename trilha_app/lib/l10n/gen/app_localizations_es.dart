@@ -2946,6 +2946,11 @@ class AppLocalizationsEs extends AppLocalizations {
   String get journeyInn => 'Posada';
 
   @override
+  String journeyLockedFinish(String trail) {
+    return 'Termina $trail para abrir';
+  }
+
+  @override
   String get journeyLockedHint =>
       'Completa la ruta anterior para desbloquear esta.';
 

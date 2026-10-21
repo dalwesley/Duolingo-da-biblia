@@ -386,6 +386,14 @@
       "mode": "String"
     }
   },
+  "journeyLockedFinish": {
+    "pt": "Termine {trail} para abrir",
+    "en": "Finish {trail} to open",
+    "es": "Termina {trail} para abrir",
+    "placeholders": {
+      "trail": "String"
+    }
+  },
   "journeyLockedHint": {
     "pt": "Conclua a trilha anterior para liberar esta.",
     "en": "Complete the previous trail to unlock this one.",

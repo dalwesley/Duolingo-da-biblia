@@ -4,6 +4,7 @@ import '../models/trail.dart';
 import '../models/trail_catalog.dart';
 import 'catalog_access.dart';
 import 'difficulty_trails.dart';
+import 'plus_access.dart';
 
 class TrailProgress {
   static List<String> missionSlugs(Trail trail) => trail.missionSlugs;
@@ -199,6 +200,24 @@ class TrailProgress {
     )) {
       return true;
     }
+    return blockingTrail(
+          trail,
+          allTrails,
+          completed,
+          clearedTrailModes: clearedTrailModes,
+        ) ==
+        null;
+  }
+
+  /// A trilha que falta terminar para abrir [trail] (a anterior no mesmo
+  /// caminho, senão o pré-requisito), ou null se nada trava. Não olha o
+  /// progresso da própria trilha — isso fica em [isTrailUnlocked].
+  static Trail? blockingTrail(
+    Trail trail,
+    List<Trail> allTrails,
+    List<String> completed, {
+    Map<String, List<String>> clearedTrailModes = const {},
+  }) {
     final previous = _previousContentTrail(trail, allTrails);
     if (previous != null &&
         !isTrailCompleted(
@@ -206,21 +225,23 @@ class TrailProgress {
           completed,
           clearedTrailModes: clearedTrailModes,
         )) {
-      return false;
+      return previous;
     }
-    if (trail.unlockAfter == null) return true;
+    if (trail.unlockAfter == null) return null;
     final prereq = allTrails
         .where((t) => t.slug == trail.unlockAfter)
         .firstOrNull;
-    if (prereq == null) return true;
+    if (prereq == null) return null;
     if (prereq.journey != trail.journey && _skipsOutsidePrereq(trail)) {
-      return true;
+      return null;
     }
     return isTrailCompleted(
-      prereq,
-      completed,
-      clearedTrailModes: clearedTrailModes,
-    );
+          prereq,
+          completed,
+          clearedTrailModes: clearedTrailModes,
+        )
+        ? null
+        : prereq;
   }
 
   /// Progresso vivo ou modo já selado — a trilha não volta a sumir.
@@ -253,19 +274,21 @@ class TrailProgress {
   }
 
   static int _journeyOrder(Trail a, Trail b) {
-    final category = TrailCategory.fromId(a.categoryId).order.compareTo(
-      TrailCategory.fromId(b.categoryId).order,
-    );
+    final category = TrailCategory.fromId(
+      a.categoryId,
+    ).order.compareTo(TrailCategory.fromId(b.categoryId).order);
     if (category != 0) return category;
     final order = a.order.compareTo(b.order);
     if (order != 0) return order;
     return a.slug.compareTo(b.slug);
   }
 
-  /// Não exige um caminho de fora: NT inteiro, e a vitrine que abre
-  /// Discipulado sem passar pelo Antigo Testamento.
+  /// Não exige um caminho de fora: NT inteiro e toda trilha Peregrino+
+  /// (quem paga pelo tema não espera terminar Atos ou Salmos). Dentro do
+  /// próprio caminho a ordem continua valendo.
   static bool _skipsOutsidePrereq(Trail trail) {
     if (trail.realmId == TrailRealm.novoTestamento.id) return true;
+    if (PlusAccess.trailIsPlus(trail)) return true;
     return trail.slug == 'sermao-do-monte' ||
         trail.slug == 'ansiedade' ||
         trail.slug == 'recomeco';

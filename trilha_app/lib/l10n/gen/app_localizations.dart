@@ -4606,6 +4606,12 @@ abstract class AppLocalizations {
   /// **'Estalagem'**
   String get journeyInn;
 
+  /// No description provided for @journeyLockedFinish.
+  ///
+  /// In pt, this message translates to:
+  /// **'Termine {trail} para abrir'**
+  String journeyLockedFinish(String trail);
+
   /// No description provided for @journeyLockedHint.
   ///
   /// In pt, this message translates to:

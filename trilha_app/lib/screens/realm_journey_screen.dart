@@ -293,6 +293,14 @@ List<JourneyPathItem> realmJourneyItems(
         statusLabel: statusLabel,
         clearedModeIds: cleared,
         activeDifficultyId: openId ?? storedId,
+        lockedBy: unlocked
+            ? null
+            : TrailProgress.blockingTrail(
+                trail,
+                allTrails,
+                completed,
+                clearedTrailModes: clearedTrailModes,
+              )?.localizedTitle,
       ),
     );
   }
@@ -347,7 +355,9 @@ void openJourneyItem(BuildContext context, JourneyPathItem item) {
             const SizedBox(height: AppSpace.xxl),
             Text(
               item.state == JourneyNodeState.locked
-                  ? ctx.l10n.journeyLockedHint
+                  ? (item.lockedBy != null
+                        ? ctx.l10n.journeyLockedFinish(item.lockedBy!)
+                        : ctx.l10n.journeyLockedHint)
                   : ctx.l10n.journeySoonHint,
               textAlign: TextAlign.center,
               style: AppTypography.label(

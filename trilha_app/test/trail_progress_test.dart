@@ -17,20 +17,40 @@ void main() {
         title: 'Mod 1',
         icon: '🌍',
         missions: [
-          Mission(slug: 'm1', title: 'M1', intro: '', type: 'lesson', stepsReward: 50, questions: []),
-          Mission(slug: 'm2', title: 'M2', intro: '', type: 'lesson', stepsReward: 50, questions: []),
+          Mission(
+            slug: 'm1',
+            title: 'M1',
+            intro: '',
+            type: 'lesson',
+            stepsReward: 50,
+            questions: [],
+          ),
+          Mission(
+            slug: 'm2',
+            title: 'M2',
+            intro: '',
+            type: 'lesson',
+            stepsReward: 50,
+            questions: [],
+          ),
         ],
       ),
     ],
   );
 
   test('first mission is always unlocked', () {
-    expect(TrailProgress.isMissionUnlocked('m1', trail.missionSlugs, []), isTrue);
+    expect(
+      TrailProgress.isMissionUnlocked('m1', trail.missionSlugs, []),
+      isTrue,
+    );
   });
 
   test('mission unlock respects sequence when catalog gated', () {
-    final unlocked =
-        TrailProgress.isMissionUnlocked('m2', trail.missionSlugs, []);
+    final unlocked = TrailProgress.isMissionUnlocked(
+      'm2',
+      trail.missionSlugs,
+      [],
+    );
     if (CatalogAccess.openAllForTesting) {
       expect(unlocked, isTrue);
     } else {
@@ -288,10 +308,7 @@ void main() {
 
     expect(TrailProgress.isTrailUnlocked(restart, path, ['a1']), isTrue);
     expect(TrailProgress.isTrailUnlocked(sermon, path, ['a1']), isFalse);
-    expect(
-      TrailProgress.isTrailUnlocked(sermon, path, ['a1', 'r1']),
-      isTrue,
-    );
+    expect(TrailProgress.isTrailUnlocked(sermon, path, ['a1', 'r1']), isTrue);
   });
 
   test('a trail already started stays open behind an unfinished one', () {
@@ -339,30 +356,30 @@ void main() {
     expect(TrailProgress.isTrailUnlocked(matthew, path, ['g1']), isTrue);
   });
 
-  test('a trail outside NT still waits for a prerequisite in another journey', () {
-    final psalms = contentTrail(
-      slug: 'salmos',
-      mission: 'p1',
-      order: 21,
-      categoryId: 'poeticos',
-    );
-    final prayer = contentTrail(
-      slug: 'oracao',
-      mission: 'o1',
-      order: 210,
-      unlockAfter: 'salmos',
-      realmId: 'vida-crista',
-      categoryId: 'oracao',
-    );
-    expect(
-      TrailProgress.isTrailUnlocked(prayer, [psalms, prayer], []),
-      isFalse,
-    );
-    expect(
-      TrailProgress.isTrailUnlocked(prayer, [psalms, prayer], ['p1']),
-      isTrue,
-    );
-  });
+  test(
+    'uma trilha Peregrino+ não espera o pré-requisito de outra área',
+    () {
+      final psalms = contentTrail(
+        slug: 'salmos',
+        mission: 'p1',
+        order: 21,
+        categoryId: 'poeticos',
+      );
+      final prayer = contentTrail(
+        slug: 'oracao',
+        mission: 'o1',
+        order: 210,
+        unlockAfter: 'salmos',
+        realmId: 'vida-crista',
+        categoryId: 'oracao',
+      );
+      // Oração é tema (Plus): quem assina não precisa terminar Salmos.
+      expect(
+        TrailProgress.isTrailUnlocked(prayer, [psalms, prayer], []),
+        isTrue,
+      );
+    },
+  );
 
   test('trail unlock requires prerequisite when catalog gated', () {
     final trails = [
@@ -380,8 +397,10 @@ void main() {
       ),
     ];
     final locked = TrailProgress.isTrailUnlocked(trails[1], trails, []);
-    final afterDone =
-        TrailProgress.isTrailUnlocked(trails[1], trails, ['m1', 'm2']);
+    final afterDone = TrailProgress.isTrailUnlocked(trails[1], trails, [
+      'm1',
+      'm2',
+    ]);
     if (CatalogAccess.openAllForTesting) {
       expect(locked, isTrue);
       expect(afterDone, isTrue);
@@ -389,5 +408,58 @@ void main() {
       expect(locked, isFalse);
       expect(afterDone, isTrue);
     }
+  });
+
+  test('trilha Plus não espera AT/NT, mas segue a ordem do caminho', () {
+    Trail make(String slug, String realm, String? after, int order) => Trail(
+      slug: slug,
+      title: slug,
+      description: '',
+      icon: '📖',
+      order: order,
+      unlockAfter: after,
+      comingSoon: false,
+      color: '#2F5D4A',
+      realmId: realm,
+      categoryId: realm == 'vida-crista' ? 'historia-igreja' : 'historia',
+      modules: [
+        TrailModule(
+          title: 'Mod',
+          icon: '🌍',
+          missions: [
+            Mission(
+              slug: '$slug-1',
+              title: 'M',
+              intro: '',
+              type: 'lesson',
+              stepsReward: 50,
+              questions: [],
+            ),
+          ],
+        ),
+      ],
+    );
+    final atos = make('atos', 'novo-testamento', null, 1);
+    final historia = make('historia-igreja', 'vida-crista', 'atos', 1);
+    final primitiva = make(
+      'igreja-primitiva',
+      'vida-crista',
+      'historia-igreja',
+      2,
+    );
+    final all = [atos, historia, primitiva];
+
+    expect(TrailProgress.blockingTrail(historia, all, []), isNull);
+    expect(
+      TrailProgress.blockingTrail(primitiva, all, [])?.slug,
+      'historia-igreja',
+    );
+    expect(
+      TrailProgress.blockingTrail(primitiva, all, ['historia-igreja-1']),
+      isNull,
+    );
+    if (CatalogAccess.openAllForTesting) return;
+    expect(TrailProgress.isTrailUnlocked(historia, all, []), isTrue);
+    expect(TrailProgress.isTrailUnlocked(primitiva, all, []), isFalse);
   });
 }

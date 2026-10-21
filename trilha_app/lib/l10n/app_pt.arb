@@ -2038,6 +2038,14 @@
   "@journeyInn": {
     "description": "Parada entre fases no mapa da área"
   },
+  "journeyLockedFinish": "Termine {trail} para abrir",
+  "@journeyLockedFinish": {
+    "placeholders": {
+      "trail": {
+        "type": "String"
+      }
+    }
+  },
   "journeyLockedHint": "Conclua a trilha anterior para liberar esta.",
   "journeyModeAhead": "{mode} à frente",
   "@journeyModeAhead": {
