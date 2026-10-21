@@ -1,6 +1,7 @@
 import '../l10n/l10n_global.dart';
 import '../services/bible_service.dart';
 import '../services/progress_service.dart';
+import '../utils/plus_access.dart';
 import 'caravan_profile_prefs.dart';
 import 'trail.dart';
 
@@ -93,6 +94,10 @@ class CaravanPilgrimProfile {
   /// Selo de Peregrino (assinatura ativa, `plusActive` do webhook).
   final bool pilgrim;
 
+  /// Selo de Pioneiro: assinatura ativa no plano de lançamento
+  /// (`plusProductId` do webhook). Substitui o de Peregrino na tela.
+  final bool pioneer;
+
   const CaravanPilgrimProfile({
     this.uid,
     required this.name,
@@ -129,6 +134,7 @@ class CaravanPilgrimProfile {
     this.photoUrl,
     this.supporter = false,
     this.pilgrim = false,
+    this.pioneer = false,
   });
 
   int get missionsCompleted => completedMissions.length;
@@ -263,6 +269,9 @@ class CaravanPilgrimProfile {
       photoUrl: _asName(data['photoUrl']) ?? _asName(fallbackPhotoUrl),
       supporter: data['supporter'] == true,
       pilgrim: data['plusActive'] == true,
+      pioneer:
+          data['plusActive'] == true &&
+          PlusAccess.isPioneerProduct(data['plusProductId'] as String?),
     );
   }
 
@@ -407,6 +416,7 @@ class CaravanPilgrimProfile {
       photoUrl: photoUrl,
       supporter: supporter,
       pilgrim: pilgrim,
+      pioneer: pioneer,
     );
   }
 

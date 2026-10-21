@@ -4181,10 +4181,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get medalFormationPerfect25Title => 'Spot on';
 
   @override
-  String get medalFounderHint => 'Joined the app during the testing period';
+  String get medalFounderHint => 'Arrived at Stway in 2026, its first year';
 
   @override
-  String get medalFounderTitle => 'Pioneer';
+  String get medalFounderTitle => 'First hour';
 
   @override
   String get medalHeadlineDiscovery => 'Discovery';
@@ -6293,6 +6293,9 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get pilgrimYourTrails => 'Your trails';
+
+  @override
+  String get pioneerBadge => 'Pioneer';
 
   @override
   String get planAllRead => 'All read';

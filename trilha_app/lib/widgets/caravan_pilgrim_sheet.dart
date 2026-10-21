@@ -242,6 +242,7 @@ class _VisitorProfileMirror extends StatelessWidget {
           name: profile.name,
           supporter: profile.supporter,
           pilgrim: profile.pilgrim,
+          pioneer: profile.pioneer,
           photoUrl: profile.photoUrl ?? entry.photoUrl,
           seed: profile.uid ?? entry.uid ?? profile.name,
           style: entry.portraitStyle,

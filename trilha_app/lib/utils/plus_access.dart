@@ -6,6 +6,14 @@ class PlusAccess {
   /// e problema de cobrança sem liberar para sempre.
   static const graceDays = 7;
 
+  /// Anual de lançamento (Pioneiro). No Android a loja pode devolver o id
+  /// com o plano base (`plus_founder_annual:annual`).
+  static const pioneerProductId = 'plus_founder_annual';
+
+  static bool isPioneerProduct(String? id) =>
+      id != null &&
+      (id == pioneerProductId || id.startsWith('$pioneerProductId:'));
+
   /// Aberto para quem tem Plus (assinatura, promoção ou graça do cache).
   ///
   /// Sem loja **configurada** (build sem chaves, de propósito) nada fecha:

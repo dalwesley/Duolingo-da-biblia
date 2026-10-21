@@ -349,6 +349,11 @@ dia), registro compartilhado `reviewSlotDays` e ofertas suprimidas.
 
 Selo de Peregrino (só assinante) e selo de Apoiador (só apoio avulso)
 são selos distintos, no perfil e na Caravana (`plusActive` do webhook).
+Quem assina o plano Pioneiro vê o selo **Pioneiro** no lugar do de
+Peregrino (um selo só; `plusActive` + `plusProductId` do webhook, e
+`hasPioneerBadge` no próprio perfil). Como o de Peregrino, vale enquanto
+a assinatura está ativa. Para “Pioneiro” ter um sentido só, a medalha
+de quem chegou em 2026 passou a se chamar **Primeira hora**.
 
 Testes: 56 da área + suíte completa 428 passando (16 falhas
 pré-existentes fora da monetização, nos mesmos 8 arquivos) + 20 nas

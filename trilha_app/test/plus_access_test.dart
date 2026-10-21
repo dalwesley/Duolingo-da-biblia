@@ -70,4 +70,12 @@ void main() {
       );
     });
   });
+
+  test('produto do Pioneiro, com ou sem o plano base do Android', () {
+    expect(PlusAccess.isPioneerProduct('plus_founder_annual'), isTrue);
+    expect(PlusAccess.isPioneerProduct('plus_founder_annual:annual'), isTrue);
+    expect(PlusAccess.isPioneerProduct('plus_annual'), isFalse);
+    expect(PlusAccess.isPioneerProduct('plus_founder_annual_x'), isFalse);
+    expect(PlusAccess.isPioneerProduct(null), isFalse);
+  });
 }

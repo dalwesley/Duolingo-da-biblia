@@ -44,6 +44,10 @@ class ProfileHero extends StatelessWidget {
 
   /// Selo de Peregrino (assinatura Peregrino+) — exclusivo do assinante.
   final bool pilgrim;
+
+  /// Selo de Pioneiro: assinante do plano de lançamento. Aparece no lugar
+  /// do de Peregrino (é o mesmo Peregrino+, com o preço do começo).
+  final bool pioneer;
   final int steps;
   final int missions;
   final int? accuracyPercent;
@@ -65,6 +69,7 @@ class ProfileHero extends StatelessWidget {
     this.sinceLabel,
     this.supporter = false,
     this.pilgrim = false,
+    this.pioneer = false,
     required this.steps,
     required this.missions,
     this.accuracyPercent,
@@ -121,6 +126,7 @@ class ProfileHero extends StatelessWidget {
                   sinceLabel: sinceLabel,
                   supporter: supporter,
                   pilgrim: pilgrim,
+                  pioneer: pioneer,
                   steps: steps,
                   missions: missions,
                   accuracyPercent: accuracyPercent,
@@ -181,6 +187,7 @@ class _ProfileIdentityCard extends StatelessWidget {
   final String? sinceLabel;
   final bool supporter;
   final bool pilgrim;
+  final bool pioneer;
   final int steps;
   final int missions;
   final int? accuracyPercent;
@@ -196,6 +203,7 @@ class _ProfileIdentityCard extends StatelessWidget {
     this.sinceLabel,
     this.supporter = false,
     this.pilgrim = false,
+    this.pioneer = false,
     required this.steps,
     required this.missions,
     this.accuracyPercent,
@@ -253,11 +261,15 @@ class _ProfileIdentityCard extends StatelessWidget {
                             ),
                           ),
                         ),
-                        if (pilgrim) ...[
+                        if (pioneer || pilgrim) ...[
                           const SizedBox(width: AppSpace.sm),
                           SoftBadge(
-                            text: l10n.pilgrimBadge,
-                            glyph: CinematicGlyph.crown,
+                            text: pioneer
+                                ? l10n.pioneerBadge
+                                : l10n.pilgrimBadge,
+                            glyph: pioneer
+                                ? CinematicGlyph.flag
+                                : CinematicGlyph.crown,
                             accent: AppRoles.reward,
                           ),
                         ],

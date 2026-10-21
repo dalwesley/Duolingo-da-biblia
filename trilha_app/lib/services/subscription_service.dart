@@ -48,7 +48,7 @@ class SubscriptionService extends ChangeNotifier {
   /// Produto anual de lançamento (R$ 89,90 travado enquanto renovar).
   /// Produto separado porque na loja o preço mora no produto: ao fim do
   /// corte ele sai da oferta e quem assinou continua no preço original.
-  static const founderProductId = 'plus_founder_annual';
+  static const founderProductId = PlusAccess.pioneerProductId;
 
   /// Teto das primeiras compras do Pioneiro, se o servidor ainda não disse.
   static const pioneerCapDefault = 200;
@@ -160,6 +160,10 @@ class SubscriptionService extends ChangeNotifier {
   /// Selo de Peregrino: exclusivo de quem assina o Peregrino+. A promoção
   /// de lançamento não dá selo.
   bool get hasPilgrimBadge => isPeregrinoPlus;
+
+  /// Selo de Pioneiro: assinante do plano de lançamento. Na tela ele
+  /// substitui o de Peregrino.
+  bool get hasPioneerBadge => isPeregrinoPlus && plusIsFounder;
 
   /// Selo de Apoiador: exclusivo de quem fez apoio avulso — é o campo
   /// [isSupporter], sem mistura com o de Peregrino.
@@ -677,10 +681,10 @@ class SubscriptionService extends ChangeNotifier {
 
   /// O pacote é o anual Fundador (mesmo tipo anual, outro produto).
   static bool isFounderPackage(Package p) =>
-      p.storeProduct.identifier == founderProductId;
+      PlusAccess.isPioneerProduct(p.storeProduct.identifier);
 
   /// A assinatura ativa é o Fundador de lançamento.
-  bool get plusIsFounder => plusProductId == founderProductId;
+  bool get plusIsFounder => PlusAccess.isPioneerProduct(plusProductId);
 
   /// Pacote Fundador da oferta atual, se ainda estiver à venda.
   Package? get founderPackage =>
@@ -784,13 +788,13 @@ class SubscriptionService extends ChangeNotifier {
   }
 
   /// Assinante simulado (sem loja).
-  void debugSetPlus(bool value) {
+  void debugSetPlus(bool value, {bool pioneer = false}) {
     if (!kDebugMode) return;
     if (value) {
       _debugGrantPlus(
-        availablePackages
-            .where((p) => p.packageType == PackageType.annual)
-            .firstOrNull,
+        pioneer
+            ? availablePackages.where(isFounderPackage).firstOrNull
+            : annualPackage,
       );
     } else {
       isPeregrinoPlus = false;

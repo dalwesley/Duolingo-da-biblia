@@ -6546,13 +6546,13 @@ abstract class AppLocalizations {
   /// No description provided for @medalFounderHint.
   ///
   /// In pt, this message translates to:
-  /// **'Entrou no app durante o período de testes'**
+  /// **'Chegou ao Stway em 2026, o primeiro ano'**
   String get medalFounderHint;
 
   /// No description provided for @medalFounderTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Pioneiro'**
+  /// **'Primeira hora'**
   String get medalFounderTitle;
 
   /// No description provided for @medalHeadlineDiscovery.
@@ -9782,6 +9782,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Suas trilhas'**
   String get pilgrimYourTrails;
+
+  /// No description provided for @pioneerBadge.
+  ///
+  /// In pt, this message translates to:
+  /// **'Pioneiro'**
+  String get pioneerBadge;
 
   /// No description provided for @planAllRead.
   ///

@@ -80,6 +80,11 @@ void main() {
     // Quem assina o Pioneiro vê esse nome no plano ativo.
     sub.plusProductId = SubscriptionService.founderProductId;
     expect(sub.plusIsFounder, isTrue);
+    // Selo de Pioneiro só com a assinatura ativa.
+    sub.isPeregrinoPlus = false;
+    expect(sub.hasPioneerBadge, isFalse);
+    sub.isPeregrinoPlus = true;
+    expect(sub.hasPioneerBadge, isTrue);
     final l10n = lookupAppLocalizations(const Locale('pt'));
     expect(plusPlanLabel(l10n, sub), 'Pioneiro');
   });

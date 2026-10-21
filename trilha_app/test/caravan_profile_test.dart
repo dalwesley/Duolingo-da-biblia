@@ -21,8 +21,10 @@ void main() {
     });
 
     test('shouldShow hides from others when off', () {
-      final prefs =
-          const CaravanProfilePrefs().copyWithSection(CaravanProfileSection.accuracy, false);
+      final prefs = const CaravanProfilePrefs().copyWithSection(
+        CaravanProfileSection.accuracy,
+        false,
+      );
       expect(
         prefs.shouldShow(CaravanProfileSection.accuracy, isOwner: false),
         isFalse,
@@ -72,10 +74,10 @@ void main() {
       );
       expect(profile.featuredTrail?.slug, 'genesis-1-11');
       expect(profile.otherOpenTrailCount, 2);
-      expect(
-        profile.restOpenTrails.map((t) => t.slug),
-        ['ansiedade', 'sermao'],
-      );
+      expect(profile.restOpenTrails.map((t) => t.slug), [
+        'ansiedade',
+        'sermao',
+      ]);
 
       const openOnly = CaravanPilgrimProfile(
         name: 'João',
@@ -102,6 +104,40 @@ void main() {
   });
 
   group('CaravanPilgrimProfile.fromCloudMap', () {
+    test('selo de Pioneiro: só com Plus ativo no plano de lançamento', () {
+      CaravanPilgrimProfile read(Map<String, dynamic> data) =>
+          CaravanPilgrimProfile.fromCloudMap(
+            uid: 'u1',
+            data: {'userName': 'Ana', ...data},
+          );
+
+      final pioneer = read({
+        'plusActive': true,
+        'plusProductId': 'plus_founder_annual',
+      });
+      expect(pioneer.pioneer, isTrue);
+      expect(pioneer.pilgrim, isTrue);
+
+      expect(
+        read({
+          'plusActive': true,
+          'plusProductId': 'plus_founder_annual:annual',
+        }).pioneer,
+        isTrue,
+      );
+      expect(
+        read({'plusActive': true, 'plusProductId': 'plus_annual'}).pioneer,
+        isFalse,
+      );
+      expect(
+        read({
+          'plusActive': false,
+          'plusProductId': 'plus_founder_annual',
+        }).pioneer,
+        isFalse,
+      );
+    });
+
     test('reads ranking fields from typical cloud payload', () {
       final profile = CaravanPilgrimProfile.fromCloudMap(
         uid: 'u1',
@@ -184,7 +220,11 @@ void main() {
               title: 'A Criação',
               icon: '☀️',
               missions: [
-                _mission('gen-01', 'No princípio', insight: 'Deus fala e há luz'),
+                _mission(
+                  'gen-01',
+                  'No princípio',
+                  insight: 'Deus fala e há luz',
+                ),
               ],
             ),
             TrailModule(
@@ -209,7 +249,10 @@ void main() {
         ),
       ];
 
-      final out = await profile.enriched(catalog: catalog, bibleBooks: const []);
+      final out = await profile.enriched(
+        catalog: catalog,
+        bibleBooks: const [],
+      );
       expect(out.trails, hasLength(1));
       expect(out.trails.first.description, 'Do princípio aos primeiros povos');
       expect(out.trails.first.modules, hasLength(3));
@@ -222,45 +265,50 @@ void main() {
       expect(out.lastMissionRef, 'Gênesis 3:9');
     });
 
-    test('infers last scene from completed missions when slug is missing',
-        () async {
-      const profile = CaravanPilgrimProfile(
-        name: 'Josias',
-        steps: 10,
-        completedMissions: ['gen-01', 'gen-02'],
-      );
-      final catalog = [
-        Trail(
-          slug: 'genesis-1-11',
-          title: 'Gênesis 1–11',
-          description: 'Do princípio aos primeiros povos',
-          icon: '📖',
-          order: 1,
-          comingSoon: false,
-          color: '#2F5D4A',
-          modules: [
-            TrailModule(
-              title: 'A Criação',
-              icon: '☀️',
-              missions: [_mission('gen-01', 'No princípio')],
-            ),
-            TrailModule(
-              title: 'O Jardim',
-              icon: '🌳',
-              missions: [
-                _mission('gen-02', 'A queda', hookRef: 'Gênesis 3:9'),
-                _mission('gen-02b', 'Caim'),
-              ],
-            ),
-          ],
-        ),
-      ];
+    test(
+      'infers last scene from completed missions when slug is missing',
+      () async {
+        const profile = CaravanPilgrimProfile(
+          name: 'Josias',
+          steps: 10,
+          completedMissions: ['gen-01', 'gen-02'],
+        );
+        final catalog = [
+          Trail(
+            slug: 'genesis-1-11',
+            title: 'Gênesis 1–11',
+            description: 'Do princípio aos primeiros povos',
+            icon: '📖',
+            order: 1,
+            comingSoon: false,
+            color: '#2F5D4A',
+            modules: [
+              TrailModule(
+                title: 'A Criação',
+                icon: '☀️',
+                missions: [_mission('gen-01', 'No princípio')],
+              ),
+              TrailModule(
+                title: 'O Jardim',
+                icon: '🌳',
+                missions: [
+                  _mission('gen-02', 'A queda', hookRef: 'Gênesis 3:9'),
+                  _mission('gen-02b', 'Caim'),
+                ],
+              ),
+            ],
+          ),
+        ];
 
-      final out = await profile.enriched(catalog: catalog, bibleBooks: const []);
-      expect(out.lastMissionTitle, 'A queda');
-      expect(out.lastTrailTitle, 'Gênesis 1–11');
-      expect(out.lastMissionRef, 'Gênesis 3:9');
-    });
+        final out = await profile.enriched(
+          catalog: catalog,
+          bibleBooks: const [],
+        );
+        expect(out.lastMissionTitle, 'A queda');
+        expect(out.lastTrailTitle, 'Gênesis 1–11');
+        expect(out.lastMissionRef, 'Gênesis 3:9');
+      },
+    );
   });
 }
 
@@ -269,17 +317,16 @@ Mission _mission(
   String title, {
   String? insight,
   String? hookRef,
-}) =>
-    Mission(
-      slug: slug,
-      title: title,
-      intro: '',
-      type: 'lesson',
-      stepsReward: 50,
-      questions: const [],
-      centralInsight: insight,
-      hookRef: hookRef,
-    );
+}) => Mission(
+  slug: slug,
+  title: title,
+  intro: '',
+  type: 'lesson',
+  stepsReward: 50,
+  questions: const [],
+  centralInsight: insight,
+  hookRef: hookRef,
+);
 
 class _FakeTimestamp {
   final DateTime value;

@@ -46,6 +46,10 @@ class PilgrimIdentityCard extends StatelessWidget {
   /// Selo de Peregrino ao lado do nome (assinatura) — selo distinto.
   final bool pilgrim;
 
+  /// Selo de Pioneiro: assinante do plano de lançamento. Aparece no lugar
+  /// do de Peregrino (é o mesmo Peregrino+, com o preço do começo).
+  final bool pioneer;
+
   const PilgrimIdentityCard({
     super.key,
     required this.name,
@@ -73,6 +77,7 @@ class PilgrimIdentityCard extends StatelessWidget {
     this.recognizeWalkDate,
     this.supporter = false,
     this.pilgrim = false,
+    this.pioneer = false,
   });
 
   bool get _showPrecision =>
@@ -181,11 +186,15 @@ class PilgrimIdentityCard extends StatelessWidget {
                             ),
                           ),
                         ),
-                        if (pilgrim) ...[
+                        if (pioneer || pilgrim) ...[
                           const SizedBox(width: AppSpace.sm),
                           SoftBadge(
-                            text: l10n.pilgrimBadge,
-                            glyph: CinematicGlyph.crown,
+                            text: pioneer
+                                ? l10n.pioneerBadge
+                                : l10n.pilgrimBadge,
+                            glyph: pioneer
+                                ? CinematicGlyph.flag
+                                : CinematicGlyph.crown,
                             accent: AppRoles.reward,
                           ),
                         ],

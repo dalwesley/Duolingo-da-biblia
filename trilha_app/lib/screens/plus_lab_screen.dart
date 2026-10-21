@@ -273,6 +273,11 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
                           sub.debugSetPlus,
                         ),
                         toggle(
+                          'Assinante Pioneiro (simulado, selo próprio)',
+                          sub.hasPioneerBadge,
+                          (v) => sub.debugSetPlus(v, pioneer: true),
+                        ),
+                        toggle(
                           'Apoiador (simulado)',
                           sub.isSupporter,
                           sub.debugSetSupporter,
