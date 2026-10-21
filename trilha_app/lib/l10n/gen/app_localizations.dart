@@ -9444,8 +9444,8 @@ abstract class AppLocalizations {
   /// No description provided for @paywallTimelineDay.
   ///
   /// In pt, this message translates to:
-  /// **'Dia {day}'**
-  String paywallTimelineDay(int day);
+  /// **'Dia {day} · {date}'**
+  String paywallTimelineDay(int day, String date);
 
   /// No description provided for @paywallTimelineReminderBody.
   ///
@@ -9456,8 +9456,8 @@ abstract class AppLocalizations {
   /// No description provided for @paywallTimelineTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Como funciona o teste'**
-  String get paywallTimelineTitle;
+  /// **'Como funciona o teste de {days} dias grátis'**
+  String paywallTimelineTitle(int days);
 
   /// No description provided for @paywallTimelineToday.
   ///

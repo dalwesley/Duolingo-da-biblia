@@ -535,14 +535,24 @@ class _PlanExplain extends StatelessWidget {
     final renews = package.packageType != PackageType.lifetime;
     final days = trialDays;
     final founder = SubscriptionService.isFounderPackage(package);
+    // Data real de cada marco: "Dia 14" é hoje + 14, quando o teste acaba
+    // e a loja cobra.
+    final now = DateTime.now();
+    String trialDate(int day) => DateFormat(
+      'd MMM',
+      l10n.localeName,
+    ).format(DateTime(now.year, now.month, now.day + day)).replaceAll('.', '');
     if (days != null) {
       final steps = _PlanSteps(
-        title: l10n.paywallTimelineTitle,
+        title: l10n.paywallTimelineTitle(days),
         steps: [
           (l10n.paywallTimelineToday, l10n.paywallTimelineTodayBody),
-          (l10n.paywallTimelineDay(days - 1), l10n.paywallTimelineReminderBody),
           (
-            l10n.paywallTimelineDay(days),
+            l10n.paywallTimelineDay(days - 1, trialDate(days - 1)),
+            l10n.paywallTimelineReminderBody,
+          ),
+          (
+            l10n.paywallTimelineDay(days, trialDate(days)),
             l10n.paywallTimelineChargeBody(price),
           ),
         ],

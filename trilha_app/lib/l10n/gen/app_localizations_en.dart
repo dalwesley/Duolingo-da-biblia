@@ -6061,8 +6061,8 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String paywallTimelineDay(int day) {
-    return 'Day $day';
+  String paywallTimelineDay(int day, String date) {
+    return 'Day $day · $date';
   }
 
   @override
@@ -6070,7 +6070,9 @@ class AppLocalizationsEn extends AppLocalizations {
       'We remind you the trial is ending.';
 
   @override
-  String get paywallTimelineTitle => 'How the trial works';
+  String paywallTimelineTitle(int days) {
+    return 'How the $days-day free trial works';
+  }
 
   @override
   String get paywallTimelineToday => 'Today';

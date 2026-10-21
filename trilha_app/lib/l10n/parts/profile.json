@@ -984,9 +984,12 @@
     "es": "Cancela cuando quieras."
   },
   "paywallTimelineTitle": {
-    "pt": "Como funciona o teste",
-    "en": "How the trial works",
-    "es": "Cómo funciona la prueba"
+    "pt": "Como funciona o teste de {days} dias grátis",
+    "en": "How the {days}-day free trial works",
+    "es": "Cómo funciona la prueba gratis de {days} días",
+    "placeholders": {
+      "days": "int"
+    }
   },
   "paywallTimelineToday": {
     "pt": "Hoje",
@@ -999,11 +1002,12 @@
     "es": "Todo Peregrino+ desbloqueado, sin pagar nada."
   },
   "paywallTimelineDay": {
-    "pt": "Dia {day}",
-    "en": "Day {day}",
-    "es": "Día {day}",
+    "pt": "Dia {day} · {date}",
+    "en": "Day {day} · {date}",
+    "es": "Día {day} · {date}",
     "placeholders": {
-      "day": "int"
+      "day": "int",
+      "date": "String"
     }
   },
   "paywallTimelineReminderBody": {

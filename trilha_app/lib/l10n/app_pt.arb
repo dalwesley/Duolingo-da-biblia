@@ -4236,16 +4236,26 @@
       }
     }
   },
-  "paywallTimelineDay": "Dia {day}",
+  "paywallTimelineDay": "Dia {day} · {date}",
   "@paywallTimelineDay": {
     "placeholders": {
       "day": {
         "type": "int"
+      },
+      "date": {
+        "type": "String"
       }
     }
   },
   "paywallTimelineReminderBody": "Avisamos que o teste está acabando.",
-  "paywallTimelineTitle": "Como funciona o teste",
+  "paywallTimelineTitle": "Como funciona o teste de {days} dias grátis",
+  "@paywallTimelineTitle": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
   "paywallTimelineToday": "Hoje",
   "paywallTimelineTodayBody": "Tudo do Peregrino+ liberado, sem pagar nada.",
   "paywallTitle": "Peregrino+",
