@@ -157,6 +157,7 @@ class ProgressService extends ChangeNotifier {
 
   /// Coorte D7: primeiro open / primeira missão (ISO date YYYY-MM-DD).
   static const _keyFirstOpenDate = 'cohortFirstOpenDate';
+  static const _keyDesbravador = 'desbravador';
   static const _keyFirstLessonDate = 'cohortFirstLessonDate';
   static const _keyFirstLessonTrail = 'cohortFirstLessonTrail';
   static const _keyFirstOpenAtMs = 'cohortFirstOpenAtMs';
@@ -380,6 +381,10 @@ class ProgressService extends ChangeNotifier {
   String? lastMissionCompletedDate;
   String? lastBibleReadDate;
   bool bibleBeforeMission = false;
+
+  /// Testou o app antes do lançamento. Vem de `users/{uid}.desbravador`,
+  /// que só o servidor grava: o app lê e guarda, nunca envia.
+  bool desbravador = false;
   int daysAsCaravanLeader = 0;
   String? lastLeaderRankDay;
 
@@ -674,6 +679,7 @@ class ProgressService extends ChangeNotifier {
     hasSeenSplash = prefs.getBool(_keyHasSeenSplash) ?? false;
     hasSeenOnboarding = prefs.getBool(_keyHasSeenOnboarding) ?? false;
     firstOpenDate = prefs.getString(_keyFirstOpenDate);
+    desbravador = prefs.getBool(_keyDesbravador) ?? false;
     firstLessonDate = prefs.getString(_keyFirstLessonDate);
     firstLessonTrailSlug = prefs.getString(_keyFirstLessonTrail);
     firstOpenAtMs = prefs.getInt(_keyFirstOpenAtMs);
@@ -1048,10 +1054,12 @@ class ProgressService extends ChangeNotifier {
     lastEchoQuestion = null;
     lastBibleReadDate = null;
     bibleBeforeMission = false;
+    desbravador = false;
     _dropOrphanedWalkStats();
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove(_keyHasSeenOnboarding);
     await prefs.remove(_keyFirstOpenDate);
+    await prefs.remove(_keyDesbravador);
     await prefs.remove(_keyFirstLessonDate);
     await prefs.remove(_keyFirstLessonTrail);
     await prefs.remove(_keyFirstOpenAtMs);
@@ -2700,6 +2708,13 @@ class ProgressService extends ChangeNotifier {
   /// Aplica documento da nuvem (v1 parcial ou v2 completo) na memória da sessão.
   Future<void> applyFromCloud(Map<String, dynamic> data) async {
     final version = (data['version'] as num?)?.toInt() ?? 1;
+
+    // Marca do servidor: só liga. O cache local (sem o campo) não desliga.
+    if (data['desbravador'] == true && !desbravador) {
+      desbravador = true;
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setBool(_keyDesbravador, true);
+    }
 
     if (data.containsKey('xp') || data.containsKey('steps')) {
       final cloudSteps =

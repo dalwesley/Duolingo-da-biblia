@@ -4194,10 +4194,10 @@ class AppLocalizationsEs extends AppLocalizations {
   String get medalFormationPerfect25Title => 'Todo correcto';
 
   @override
-  String get medalFounderHint => 'Llegaste a Stway en 2026, su primer año';
+  String get medalFounderHint => 'Probaste Stway antes del lanzamiento';
 
   @override
-  String get medalFounderTitle => 'Primera hora';
+  String get medalFounderTitle => 'Explorador';
 
   @override
   String get medalHeadlineDiscovery => 'Descubrimiento';

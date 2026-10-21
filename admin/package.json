@@ -20,6 +20,7 @@
     "repair:v2meta": "node scripts/repair_v2_metadata.mjs",
     "adapt:verbs": "node scripts/adapt_difficulty_verbs.mjs",
     "pipeline:v2": "node scripts/run_v2_pipeline.mjs",
+    "mark:desbravadores": "node scripts/mark_desbravadores.mjs",
     "audit:rankings": "node scripts/audit_rankings.mjs",
     "audit:rankings:fix": "node scripts/audit_rankings.mjs --fix",
     "test:rankings": "node --test scripts/_ranking_mirror.test.mjs"

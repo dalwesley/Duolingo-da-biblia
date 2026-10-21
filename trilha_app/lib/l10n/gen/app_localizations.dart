@@ -6546,13 +6546,13 @@ abstract class AppLocalizations {
   /// No description provided for @medalFounderHint.
   ///
   /// In pt, this message translates to:
-  /// **'Chegou ao Stway em 2026, o primeiro ano'**
+  /// **'Testou o Stway antes do lançamento'**
   String get medalFounderHint;
 
   /// No description provided for @medalFounderTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Primeira hora'**
+  /// **'Desbravador'**
   String get medalFounderTitle;
 
   /// No description provided for @medalHeadlineDiscovery.

@@ -579,7 +579,7 @@ class PilgrimMedals {
     List<Trail> catalog,
     PilgrimMedalEvalContext ctx,
   ) => switch (def.id) {
-    'discovery:founder' => _isFounder(ctx.firstOpenDate),
+    'discovery:founder' => ctx.desbravador,
     'discovery:comeback' => _hasComeback(ctx.playDates, minDays: 21),
     'discovery:bible_before' => ctx.bibleBeforeMission,
     'discovery:andando_na_luz' =>
@@ -643,13 +643,6 @@ class PilgrimMedals {
       }
     }
     return false;
-  }
-
-  static bool _isFounder(String? firstOpenDate) {
-    if (firstOpenDate == null || firstOpenDate.isEmpty) return false;
-    final parsed = DateTime.tryParse(firstOpenDate);
-    if (parsed == null) return false;
-    return parsed.year <= 2026;
   }
 
   static bool _hasComeback(List<String> playDates, {required int minDays}) {

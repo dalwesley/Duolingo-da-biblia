@@ -104,6 +104,23 @@ void main() {
   });
 
   group('CaravanPilgrimProfile.fromCloudMap', () {
+    test('Desbravador: lido da marca do servidor', () {
+      expect(
+        CaravanPilgrimProfile.fromCloudMap(
+          uid: 'u1',
+          data: {'userName': 'Ana', 'desbravador': true},
+        ).desbravador,
+        isTrue,
+      );
+      expect(
+        CaravanPilgrimProfile.fromCloudMap(
+          uid: 'u1',
+          data: {'userName': 'Ana'},
+        ).desbravador,
+        isFalse,
+      );
+    });
+
     test('selo de Pioneiro: só com Plus ativo no plano de lançamento', () {
       CaravanPilgrimProfile read(Map<String, dynamic> data) =>
           CaravanPilgrimProfile.fromCloudMap(

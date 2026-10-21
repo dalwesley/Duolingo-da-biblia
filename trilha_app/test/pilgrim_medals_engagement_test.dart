@@ -18,7 +18,7 @@ void main() {
         profile,
         {'discovery:founder'},
         const [],
-        ctx: const PilgrimMedalEvalContext(firstOpenDate: '2026-01-01'),
+        ctx: const PilgrimMedalEvalContext(desbravador: true),
       );
       expect(
         pending.map((s) => s.def.id),
@@ -29,7 +29,7 @@ void main() {
           profile,
           const {},
           const [],
-          ctx: const PilgrimMedalEvalContext(firstOpenDate: '2026-01-01'),
+          ctx: const PilgrimMedalEvalContext(desbravador: true),
         ).map((s) => s.def.id),
         contains('discovery:founder'),
       );
@@ -98,7 +98,7 @@ void main() {
       final discovery = PilgrimMedals.evaluateVaults(
         profile: profile,
         catalog: const [],
-        ctx: const PilgrimMedalEvalContext(firstOpenDate: '2026-01-01'),
+        ctx: const PilgrimMedalEvalContext(desbravador: true),
       ).firstWhere((v) => v.vault.kind == PilgrimVaultKind.discovery);
 
       final visible = PilgrimMedals.visibleDiscoveryTiles(discovery);
@@ -126,6 +126,31 @@ void main() {
       );
       expect(word.length, 1);
       expect(word.first.level.id, 'track:word:chapters_25');
+    });
+
+    test('Desbravador vem da marca do servidor, não da data', () {
+      const profile = CaravanPilgrimProfile(
+        name: 'Ana',
+        steps: 1,
+        firstOpenDate: '2026-01-01',
+      );
+      List<String> rares(PilgrimMedalEvalContext ctx) => [
+        for (final s in PilgrimMedals.newRareUnlocks(
+          profile,
+          const {},
+          const [],
+          ctx: ctx,
+        ))
+          s.def.id,
+      ];
+      expect(
+        rares(const PilgrimMedalEvalContext(firstOpenDate: '2026-01-01')),
+        isNot(contains('discovery:founder')),
+      );
+      expect(
+        rares(const PilgrimMedalEvalContext(desbravador: true)),
+        contains('discovery:founder'),
+      );
     });
 
     test('founder is silent', () {
@@ -163,10 +188,7 @@ void main() {
         const [],
         ctx: const PilgrimMedalEvalContext(bibleBeforeMission: true),
       );
-      expect(
-        pending.map((s) => s.def.id),
-        contains('discovery:bible_before'),
-      );
+      expect(pending.map((s) => s.def.id), contains('discovery:bible_before'));
     });
 
     test('advent vault visible during window', () {
@@ -174,9 +196,7 @@ void main() {
       final vaults = PilgrimMedals.evaluateVaults(
         profile: profile,
         catalog: const [],
-        ctx: PilgrimMedalEvalContext(
-          now: DateTime(2026, 12, 1),
-        ),
+        ctx: PilgrimMedalEvalContext(now: DateTime(2026, 12, 1)),
       );
       expect(
         vaults.any((v) => v.vault.id == PilgrimMedalCatalog.advent2026VaultId),
@@ -189,9 +209,7 @@ void main() {
       final vaults = PilgrimMedals.evaluateVaults(
         profile: profile,
         catalog: const [],
-        ctx: PilgrimMedalEvalContext(
-          now: DateTime(2026, 9, 2),
-        ),
+        ctx: PilgrimMedalEvalContext(now: DateTime(2026, 9, 2)),
       );
       expect(
         vaults.any((v) => v.vault.id == PilgrimMedalCatalog.advent2026VaultId),

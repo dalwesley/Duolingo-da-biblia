@@ -98,6 +98,9 @@ class CaravanPilgrimProfile {
   /// (`plusProductId` do webhook). Substitui o de Peregrino na tela.
   final bool pioneer;
 
+  /// Testou o app antes do lançamento (`desbravador`, só o servidor marca).
+  final bool desbravador;
+
   const CaravanPilgrimProfile({
     this.uid,
     required this.name,
@@ -135,6 +138,7 @@ class CaravanPilgrimProfile {
     this.supporter = false,
     this.pilgrim = false,
     this.pioneer = false,
+    this.desbravador = false,
   });
 
   int get missionsCompleted => completedMissions.length;
@@ -205,6 +209,7 @@ class CaravanPilgrimProfile {
       lastMissionSlug: progress.lastMissionSlug,
       lastMissionCompletedDate: progress.lastMissionCompletedDate,
       prefs: progress.caravanProfilePrefs,
+      desbravador: progress.desbravador,
     );
   }
 
@@ -272,6 +277,7 @@ class CaravanPilgrimProfile {
       pioneer:
           data['plusActive'] == true &&
           PlusAccess.isPioneerProduct(data['plusProductId'] as String?),
+      desbravador: data['desbravador'] == true,
     );
   }
 
@@ -417,6 +423,7 @@ class CaravanPilgrimProfile {
       supporter: supporter,
       pilgrim: pilgrim,
       pioneer: pioneer,
+      desbravador: desbravador,
     );
   }
 

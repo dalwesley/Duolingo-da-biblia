@@ -297,6 +297,10 @@ class PilgrimMedalEvalContext {
   final int? lastMissionCompletedAtMs;
   final String? lastBibleReadDate;
   final bool bibleBeforeMission;
+
+  /// Testou o app antes do lançamento (`users/{uid}.desbravador`, marcado
+  /// só pelo servidor).
+  final bool desbravador;
   final DateTime? now;
 
   const PilgrimMedalEvalContext({
@@ -306,6 +310,7 @@ class PilgrimMedalEvalContext {
     this.lastMissionCompletedAtMs,
     this.lastBibleReadDate,
     this.bibleBeforeMission = false,
+    this.desbravador = false,
     this.now,
   });
 
@@ -319,6 +324,7 @@ class PilgrimMedalEvalContext {
       playDates: profile.playDates,
       reflectionCount: profile.reflectionCount,
       firstOpenDate: profile.firstOpenDate,
+      desbravador: profile.desbravador,
       now: now,
     );
   }
@@ -333,6 +339,7 @@ class PilgrimMedalEvalContext {
       firstOpenDate: progress.firstOpenDate,
       lastBibleReadDate: progress.lastBibleReadDate,
       bibleBeforeMission: progress.bibleBeforeMission,
+      desbravador: progress.desbravador,
       now: now,
     );
   }

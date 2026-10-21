@@ -167,7 +167,13 @@ service cloud.firestore {
         && (resource == null
             ? !('pioneerCounted' in request.resource.data)
             : request.resource.data.get('pioneerCounted', false)
-                == resource.data.get('pioneerCounted', false));
+                == resource.data.get('pioneerCounted', false))
+        // Desbravador (testou antes do lançamento): só o script do admin
+        // marca (admin/scripts/mark_desbravadores.mjs).
+        && (resource == null
+            ? !('desbravador' in request.resource.data)
+            : request.resource.data.get('desbravador', false)
+                == resource.data.get('desbravador', false));
     }
 
     // Contagem do Pioneiro (primeiras compras de plus_founder_annual).

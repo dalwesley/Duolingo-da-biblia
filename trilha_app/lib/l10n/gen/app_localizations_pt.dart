@@ -4180,10 +4180,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get medalFormationPerfect25Title => 'Tudo certo';
 
   @override
-  String get medalFounderHint => 'Chegou ao Stway em 2026, o primeiro ano';
+  String get medalFounderHint => 'Testou o Stway antes do lançamento';
 
   @override
-  String get medalFounderTitle => 'Primeira hora';
+  String get medalFounderTitle => 'Desbravador';
 
   @override
   String get medalHeadlineDiscovery => 'Descoberta';

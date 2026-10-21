@@ -353,7 +353,12 @@ Quem assina o plano Pioneiro vê o selo **Pioneiro** no lugar do de
 Peregrino (um selo só; `plusActive` + `plusProductId` do webhook, e
 `hasPioneerBadge` no próprio perfil). Como o de Peregrino, vale enquanto
 a assinatura está ativa. Para “Pioneiro” ter um sentido só, a medalha
-de quem chegou em 2026 passou a se chamar **Primeira hora**.
+dos testadores se chama **Desbravador**: vem da marca
+`users/{uid}.desbravador`, gravada só por
+`admin/scripts/mark_desbravadores.mjs` (rules barram o cliente), não
+mais da data da primeira abertura. Rodar com `--all-current --apply`
+antes do lançamento; se os dados forem zerados, rodar de novo com
+`--file exports/desbravadores.json` depois do reset.
 
 Testes: 56 da área + suíte completa 428 passando (16 falhas
 pré-existentes fora da monetização, nos mesmos 8 arquivos) + 20 nas
