@@ -137,7 +137,44 @@ service cloud.firestore {
         && (resource == null
             ? !('leagueResult' in request.resource.data)
             : request.resource.data.get('leagueResult', null)
-                == resource.data.get('leagueResult', null));
+                == resource.data.get('leagueResult', null))
+        // Selo e estado do Peregrino+ são do servidor (webhook RevenueCat
+        // em functions/revenuecat.js). O cliente lê, nunca grava: sem
+        // isto, qualquer um se dava o selo mexendo no próprio doc.
+        && (resource == null
+            ? !('supporter' in request.resource.data)
+                || request.resource.data.supporter == false
+            : request.resource.data.get('supporter', false)
+                == resource.data.get('supporter', false))
+        && (resource == null
+            ? !('plusActive' in request.resource.data)
+                || request.resource.data.plusActive == false
+            : request.resource.data.get('plusActive', false)
+                == resource.data.get('plusActive', false))
+        && (resource == null
+            ? !('plusProductId' in request.resource.data)
+            : request.resource.data.get('plusProductId', null)
+                == resource.data.get('plusProductId', null))
+        && (resource == null
+            ? !('plusExpiresAt' in request.resource.data)
+            : request.resource.data.get('plusExpiresAt', null)
+                == resource.data.get('plusExpiresAt', null))
+        && (resource == null
+            ? !('plusWillRenew' in request.resource.data)
+            : request.resource.data.get('plusWillRenew', null)
+                == resource.data.get('plusWillRenew', null))
+        // Vaga do Pioneiro: só o webhook marca. O cliente não se conta.
+        && (resource == null
+            ? !('pioneerCounted' in request.resource.data)
+            : request.resource.data.get('pioneerCounted', false)
+                == resource.data.get('pioneerCounted', false));
+    }
+
+    // Contagem do Pioneiro (primeiras compras de plus_founder_annual).
+    // O webhook soma; o paywall só lê.
+    match /stats/pioneer {
+      allow read: if true;
+      allow write: if false;
     }
 
     // Liga semanal: qualquer autenticado lê; o dono só grava o próprio

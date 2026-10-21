@@ -428,6 +428,112 @@ exports.submitSiteForm = functions
     }
   });
 
+// ---- Peregrino+: webhook do RevenueCat (ver revenuecat.js) ---------------
+
+const revenueCat = require('./revenuecat');
+
+/**
+ * Grava `users/{uid}.plus*` (e o selo, no apoio avulso) a partir do
+ * RevenueCat. Sem o segredo configurado, 503 — nunca grava sem conferir.
+ */
+exports.revenueCatWebhook = functions
+  .region('us-central1')
+  .https.onRequest(async (req, res) => {
+    res.set('Cache-Control', 'no-store');
+    const secret =
+      (functions.config().revenuecat &&
+        functions.config().revenuecat.auth) ||
+      process.env.REVENUECAT_WEBHOOK_AUTH ||
+      '';
+    if (!secret) {
+      res.status(503).json({ ok: false, error: 'Webhook não configurado.' });
+      return;
+    }
+    if (req.method !== 'POST') {
+      res.status(405).json({ ok: false, error: 'Use POST.' });
+      return;
+    }
+    if (!revenueCat.authorized(req.get('authorization'), secret)) {
+      res.status(401).json({ ok: false, error: 'Não autorizado.' });
+      return;
+    }
+    const event = req.body && req.body.event;
+    const state = revenueCat.plusStateFromEvent(event);
+    const slot = revenueCat.pioneerSlotFromEvent(event);
+    if (!state && !slot) {
+      // Evento que não muda o Plus nem ocupa vaga de Pioneiro.
+      res.status(200).json({ ok: true, ignored: true });
+      return;
+    }
+    try {
+      const db = getFirestore();
+      if (state) {
+        await db
+          .doc(`users/${state.uid}`)
+          .set(
+            { ...state.fields, plusUpdatedAt: FieldValue.serverTimestamp() },
+            { merge: true },
+          );
+        // Escritas companheiras (TRANSFER: desligar a conta de origem).
+        // Só em doc que já existe: evento atrasado não cria doc-zumbi de
+        // conta excluída só com os campos do Plus.
+        for (const extra of state.also || []) {
+          const ref = db.doc(`users/${extra.uid}`);
+          const snap = await ref.get();
+          if (!snap.exists) continue;
+          await ref.set(
+            { ...extra.fields, plusUpdatedAt: FieldValue.serverTimestamp() },
+            { merge: true },
+          );
+        }
+      }
+      if (slot) await claimPioneerSlot(db, slot);
+      logger.info('revenuecat: estado gravado', {
+        uid: (state && state.uid) || slot.uid,
+        type: event && event.type,
+        pioneer: Boolean(slot),
+      });
+      res.status(200).json({ ok: true });
+    } catch (err) {
+      logger.error('revenuecat: falha ao gravar', err);
+      res.status(500).json({ ok: false, error: 'Falha ao gravar.' });
+    }
+  });
+
+/**
+ * Primeira compra do Pioneiro soma 1 em `stats/pioneer`. A mesma conta
+ * não soma de novo. Transferência de quem já contou só marca o destino.
+ */
+async function claimPioneerSlot(db, slot) {
+  const userRef = db.doc(`users/${slot.uid}`);
+  const statRef = db.doc('stats/pioneer');
+  const sourceRefs = (slot.from || []).map((uid) => db.doc(`users/${uid}`));
+  await db.runTransaction(async (tx) => {
+    const user = await tx.get(userRef);
+    const sources = [];
+    for (const ref of sourceRefs) sources.push(await tx.get(ref));
+    const stat = await tx.get(statRef);
+    const decision = revenueCat.pioneerClaimDecision({
+      alreadyCounted: user.get('pioneerCounted') === true,
+      sourceCounted: sources.some((s) => s.get('pioneerCounted') === true),
+      count: stat.get('count'),
+    });
+    if (decision.action === 'skip') return;
+    tx.set(userRef, { pioneerCounted: true }, { merge: true });
+    if (decision.action === 'increment') {
+      tx.set(
+        statRef,
+        {
+          count: decision.count,
+          cap: revenueCat.PIONEER_CAP,
+          updatedAt: FieldValue.serverTimestamp(),
+        },
+        { merge: true },
+      );
+    }
+  });
+}
+
 // ---- Caravana: salas e fechamento semanal (ver league.js) -----------------
 
 const league = require('./league');
