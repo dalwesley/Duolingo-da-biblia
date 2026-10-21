@@ -117,6 +117,7 @@ class TrailMapPath extends StatelessWidget {
         glow: glow,
         chrome: chrome,
         onTap: unlocked ? () => onMissionTap?.call(mission.slug) : null,
+        plusLocked: needsPlus,
         statusLine: completed
             ? context.l10n.trailsCleared
             : needsPlus

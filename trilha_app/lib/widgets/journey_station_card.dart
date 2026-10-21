@@ -36,6 +36,10 @@ class JourneyStationCard extends StatelessWidget {
   /// Numeral romano grande no fundo (I, II…).
   final String? watermark;
 
+  /// Cena que pede o Peregrino+: o "Agora" vira "Peregrino+" e o botão
+  /// convida a continuar com o Plus (o toque leva ao paywall).
+  final bool plusLocked;
+
   const JourneyStationCard({
     super.key,
     required this.title,
@@ -53,6 +57,7 @@ class JourneyStationCard extends StatelessWidget {
     this.chrome,
     this.glyph,
     this.watermark,
+    this.plusLocked = false,
   });
 
   @override
@@ -92,7 +97,9 @@ class JourneyStationCard extends StatelessWidget {
               Expanded(
                 child: isCurrent
                     ? Text(
-                        context.l10n.journeyNow,
+                        plusLocked
+                            ? context.l10n.paywallTitle
+                            : context.l10n.journeyNow,
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         textAlign: TextAlign.right,
@@ -162,7 +169,10 @@ class JourneyStationCard extends StatelessWidget {
           if (isCurrent) ...[
             const SizedBox(height: 10),
             CopperCta(
-              label: context.l10n.journeyPlay,
+              label: plusLocked
+                  ? context.l10n.plusNoticeContinue
+                  : context.l10n.journeyPlay,
+              leading: plusLocked ? CinematicGlyph.plus : null,
               dense: true,
               decorative: true,
               showGlow: false,
@@ -425,9 +435,10 @@ class _CurrentBeaconState extends State<_CurrentBeacon>
       duration: const Duration(milliseconds: 2200),
     );
     _glow = _pulse.drive(
-      Tween<double>(begin: 0.35, end: 1).chain(
-        CurveTween(curve: Curves.easeInOut),
-      ),
+      Tween<double>(
+        begin: 0.35,
+        end: 1,
+      ).chain(CurveTween(curve: Curves.easeInOut)),
     );
   }
 

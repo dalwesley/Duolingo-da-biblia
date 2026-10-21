@@ -203,9 +203,8 @@ class GenesisModuleTheme {
           narrative: title.trim().isEmpty
               ? 'Sua jornada pela Palavra.'
               : '$title — avance cena a cena.',
-          verse: resolved == TrailRealm.novoTestamento
-              ? 'Novo Testamento'
-              : 'Antigo Testamento',
+          // Nome da área da trilha (Vida Cristã, Teologia…), não só AT/NT.
+          verse: resolved.label,
           swatch: resolved == TrailRealm.novoTestamento
               ? ModulePalettes.ntFallback
               : ModulePalettes.atFallback,

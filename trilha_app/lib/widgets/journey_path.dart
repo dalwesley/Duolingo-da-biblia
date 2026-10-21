@@ -37,6 +37,9 @@ class JourneyPathItem {
   /// Nome da trilha que falta terminar, quando esta está trancada.
   final String? lockedBy;
 
+  /// A próxima cena desta trilha pede o Peregrino+.
+  final bool plusLocked;
+
   const JourneyPathItem({
     required this.trail,
     required this.state,
@@ -48,6 +51,7 @@ class JourneyPathItem {
     this.clearedModeIds = const [],
     this.activeDifficultyId,
     this.lockedBy,
+    this.plusLocked = false,
   });
 }
 
@@ -119,6 +123,7 @@ class JourneyPath extends StatelessWidget {
         clearedModeIds: item.clearedModeIds,
         activeDifficultyId: item.activeDifficultyId,
         lockedBy: item.lockedBy,
+        plusLocked: item.plusLocked,
       );
       final isCurrent = item.state == JourneyNodeState.current;
       stops.add(
@@ -231,6 +236,7 @@ class _TrailStation extends StatelessWidget {
       done: item.done,
       total: item.total,
       semanticsLabel: item.trail.localizedTitle,
+      plusLocked: item.plusLocked,
     );
   }
 }

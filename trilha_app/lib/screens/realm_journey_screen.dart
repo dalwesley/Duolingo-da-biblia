@@ -9,9 +9,11 @@ import '../services/backend_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
 import '../services/room_service.dart';
+import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
+import '../utils/plus_access.dart';
 import '../utils/realm_visuals.dart';
 import '../utils/trail_progress.dart';
 import '../widgets/act_feel.dart';
@@ -199,6 +201,7 @@ List<JourneyPathItem> realmJourneyItems(
   final completed = progress.completedMissions;
   final clearedTrailModes = progress.clearedTrailModes;
   final trailDifficulties = progress.trailDifficulties;
+  final plusOpen = context.watch<SubscriptionService>().plusFeaturesOpen;
   final realmTrails = allTrails.where((t) => t.journey == journey).toList()
     ..sort((a, b) {
       final ca = TrailCategory.fromId(a.categoryId).order;
@@ -293,6 +296,22 @@ List<JourneyPathItem> realmJourneyItems(
         statusLabel: statusLabel,
         clearedModeIds: cleared,
         activeDifficultyId: openId ?? storedId,
+        plusLocked:
+            !plusOpen &&
+            unlocked &&
+            !done &&
+            PlusAccess.trailIsPlus(trail) &&
+            PlusAccess.missionNeedsPlus(
+              trail,
+              TrailProgress.getCurrentMission(
+                    trail,
+                    progress.completedMissionsForTrail(
+                      trailSlug: trail.slug,
+                      missionSlugs: trail.missionSlugs,
+                    ),
+                  )?.slug ??
+                  '',
+            ),
         lockedBy: unlocked
             ? null
             : TrailProgress.blockingTrail(
