@@ -71,6 +71,9 @@ class AppColors {
 
   static const error = Color(0xFFFF4F63);
 
+  /// Curtida — vermelho chapado do coração. Não é [error] (resposta errada).
+  static const heart = Color(0xFFE23B4A);
+
   /// Poeira — quem está parado há dias (dupla, semente, aceno).
   static const dust = Color(0xFFC4A070);
 
@@ -81,7 +84,8 @@ class AppColors {
   static const scrim = Color(0x9E000000);
   static const errorSoft = Color(0xFFFFC4CC);
 
-  /// Ouro, mint, coral e lilac — chrome de modo/CTA, sem misturar branco no glifo.
+  /// Ouro, mint, coral, lilac e o vermelho da curtida — chrome chapado,
+  /// sem misturar branco no glifo.
   static bool isSolidChrome(Color color) {
     final v = color.toARGB32();
     return v == accent.toARGB32() ||
@@ -90,7 +94,8 @@ class AppColors {
         v == coral.toARGB32() ||
         v == coralBright.toARGB32() ||
         v == orchid.toARGB32() ||
-        v == orchidBright.toARGB32();
+        v == orchidBright.toARGB32() ||
+        v == heart.toARGB32();
   }
 
   /// Tinta de glifo que punciona no céu pintado e nos cards.
@@ -117,6 +122,7 @@ class AppColors {
   static Color glyphInkOnLight(Color color) {
     final v = color.toARGB32();
     if (v == accent.toARGB32() || v == accentDark.toARGB32()) return color;
+    if (v == heart.toARGB32()) return color;
     if (v == sprout.toARGB32()) return sproutDeep;
     if (v == coral.toARGB32() || v == coralBright.toARGB32()) return coralDeep;
     if (v == orchid.toARGB32() || v == orchidBright.toARGB32()) {
@@ -217,6 +223,9 @@ class AppRoles {
   static const streak = AppColors.streak;
   static const risk = AppColors.error;
   static const error = AppColors.error;
+
+  /// Coração de curtida em medalha e selo.
+  static const heart = AppColors.heart;
 
   static const observation = AppColors.sprout;
   static const comprehension = AppColors.coral;

@@ -439,7 +439,7 @@ class _HeartSeal extends StatelessWidget {
     return CinematicIcon(
       glyph: CinematicGlyph.heart,
       size: size,
-      accent: lit ? AppRoles.success : Appearance.of(context).textFaint,
+      accent: lit ? AppRoles.heart : Appearance.of(context).textFaint,
       glowing: lit,
     );
   }

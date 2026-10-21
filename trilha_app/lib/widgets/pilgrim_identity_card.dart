@@ -40,8 +40,11 @@ class PilgrimIdentityCard extends StatelessWidget {
   final String? recognizeWalkToUid;
   final String? recognizeWalkDate;
 
-  /// Selo de apoiador ao lado do nome.
+  /// Selo de apoiador ao lado do nome (apoio avulso).
   final bool supporter;
+
+  /// Selo de Peregrino ao lado do nome (assinatura) — selo distinto.
+  final bool pilgrim;
 
   const PilgrimIdentityCard({
     super.key,
@@ -69,6 +72,7 @@ class PilgrimIdentityCard extends StatelessWidget {
     this.recognizeWalkToUid,
     this.recognizeWalkDate,
     this.supporter = false,
+    this.pilgrim = false,
   });
 
   bool get _showPrecision =>
@@ -177,6 +181,14 @@ class PilgrimIdentityCard extends StatelessWidget {
                             ),
                           ),
                         ),
+                        if (pilgrim) ...[
+                          const SizedBox(width: AppSpace.sm),
+                          SoftBadge(
+                            text: l10n.pilgrimBadge,
+                            glyph: CinematicGlyph.crown,
+                            accent: AppRoles.reward,
+                          ),
+                        ],
                         if (supporter) ...[
                           const SizedBox(width: AppSpace.sm),
                           SoftBadge(

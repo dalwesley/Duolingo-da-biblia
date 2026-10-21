@@ -365,10 +365,9 @@ class _BondPainter extends CustomPainter {
       ..strokeCap = StrokeCap.round
       ..color = color;
     final glow = Paint()
-      ..strokeWidth = 6
+      ..strokeWidth = 7
       ..strokeCap = StrokeCap.round
-      ..color = color.withValues(alpha: 0.22)
-      ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 4);
+      ..color = color.withValues(alpha: 0.2);
 
     void stretch(double from, double to, BondEnd end) {
       if (end == BondEnd.gone || to <= from) return;
@@ -413,10 +412,8 @@ class _BondPainter extends CustomPainter {
     final fade = math.sin(math.pi * t);
     canvas.drawCircle(
       Offset(sx, y),
-      5,
-      Paint()
-        ..color = color.withValues(alpha: 0.45 * fade)
-        ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 5),
+      4.5,
+      Paint()..color = color.withValues(alpha: 0.35 * fade),
     );
     canvas.drawCircle(
       Offset(sx, y),
@@ -460,6 +457,9 @@ class _JuntosHaloState extends State<JuntosHalo>
     vsync: this,
     duration: const Duration(milliseconds: 1800),
   );
+  late final Animation<double> _glow = _pulse.drive(
+    Tween<double>(begin: 0.45, end: 1).chain(CurveTween(curve: AppMotion.move)),
+  );
 
   @override
   void initState() {
@@ -488,39 +488,41 @@ class _JuntosHaloState extends State<JuntosHalo>
     // Anel encostado no retrato (1.6 de cada lado), sem folga escura.
     final ring = widget.size + 3.2;
     final chrome = Appearance.of(context).chrome;
+    final ringColor = widget.lit
+        ? widget.color.withValues(alpha: 0.9)
+        : chrome.withValues(alpha: 0.1);
     return SizedBox(
       width: ring,
       height: ring,
-      child: RepaintBoundary(
-        child: AnimatedBuilder(
-          animation: _pulse,
-          builder: (context, child) {
-            final t = widget.lit ? AppMotion.move.transform(_pulse.value) : 0.0;
-            return DecoratedBox(
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                border: Border.all(
-                  color: widget.lit
-                      ? widget.color.withValues(alpha: 0.55 + 0.35 * t)
-                      : chrome.withValues(alpha: 0.1),
-                  width: 1.6,
+      child: Stack(
+        clipBehavior: Clip.none,
+        alignment: Alignment.center,
+        children: [
+          if (widget.lit)
+            FadeTransition(
+              opacity: _glow,
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  boxShadow: [
+                    BoxShadow(
+                      color: widget.color.withValues(alpha: 0.4),
+                      blurRadius: 16,
+                    ),
+                  ],
                 ),
-                boxShadow: widget.lit
-                    ? [
-                        BoxShadow(
-                          color: widget.color.withValues(
-                            alpha: 0.18 + 0.22 * t,
-                          ),
-                          blurRadius: 10 + 8 * t,
-                        ),
-                      ]
-                    : null,
+                child: SizedBox.square(dimension: ring),
               ),
-              child: child,
-            );
-          },
-          child: RepaintBoundary(child: Center(child: widget.child)),
-        ),
+            ),
+          DecoratedBox(
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              border: Border.all(color: ringColor, width: 1.6),
+            ),
+            child: SizedBox.square(dimension: ring),
+          ),
+          Center(child: widget.child),
+        ],
       ),
     );
   }

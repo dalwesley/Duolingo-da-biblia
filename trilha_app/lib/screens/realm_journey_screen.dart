@@ -49,9 +49,15 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
       _scheduleJumpToCurrent();
-      // Mesma conta noutro aparelho pode ter avançado — puxa antes de pintar.
-      unawaited(_pullCloudProgress());
+      // Depois do fade de entrada, para não reconstruir a lista no meio dele.
+      final wait = MediaQuery.disableAnimationsOf(context)
+          ? Duration.zero
+          : AppMotion.standard;
+      Future<void>.delayed(wait, () {
+        if (mounted) unawaited(_pullCloudProgress());
+      });
     });
   }
 
@@ -91,7 +97,10 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
     // A completed realm may have no current node. Do not reschedule forever.
     if (_currentKey.currentContext == null) return;
     _jumped = true;
-    Future.delayed(const Duration(milliseconds: 180), _jumpToCurrent);
+    final wait = MediaQuery.disableAnimationsOf(context)
+        ? Duration.zero
+        : AppMotion.standard;
+    Future<void>.delayed(wait, _jumpToCurrent);
   }
 
   void _onNodeTap(JourneyPathItem item) => openJourneyItem(context, item);
@@ -123,7 +132,6 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
       mode: mode,
       style: appearance,
       frameBody: false,
-      // Fundo das abas com o céu da área no topo (pousa do pôster).
       background: JourneySkyBackdrop(journey: journey, appearance: appearance),
       body: Column(
         children: [
@@ -302,15 +310,14 @@ void openJourneyItem(BuildContext context, JourneyPathItem item) {
       item.state == JourneyNodeState.upcoming;
 
   if (canOpen && trail.missionSlugs.isNotEmpty && !trail.comingSoon) {
+    final reduced = MediaQuery.disableAnimationsOf(context);
     Navigator.of(context).push(
-      PageRouteBuilder(
-        transitionDuration: AppMotion.slow,
-        pageBuilder: (_, animation, secondaryAnimation) {
-          return FadeTransition(
-            opacity: CurvedAnimation(parent: animation, curve: AppMotion.enter),
-            child: TrailMapScreen(slug: trail.slug),
-          );
-        },
+      PageRouteBuilder<void>(
+        transitionDuration: reduced ? Duration.zero : AppMotion.standard,
+        reverseTransitionDuration: reduced ? Duration.zero : AppMotion.quick,
+        pageBuilder: (_, _, _) => TrailMapScreen(slug: trail.slug),
+        transitionsBuilder: (_, animation, _, child) =>
+            FadeTransition(opacity: animation, child: child),
       ),
     );
     return;

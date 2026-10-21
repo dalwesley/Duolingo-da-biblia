@@ -4,6 +4,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../l10n/app_language.dart';
 import '../screens/paywall_screen.dart';
+import '../services/analytics_service.dart';
 import '../screens/plus_promo_notice_screen.dart';
 import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
@@ -51,9 +52,11 @@ Future<void> showPlusOfferSheet(
   DateTime? promoUntil,
 }) async {
   await _markShown(kind, week);
+  AnalyticsService.instance.logOfferSheet(kind: kind.source, action: 'view');
   if (!context.mounted) return;
   // Fim da promoção: aviso grande, em tela inteira.
-  if (kind != PlusOfferKind.sevenScenes) {
+  if (kind == PlusOfferKind.promoEnded ||
+      kind == PlusOfferKind.promoEndingSoon) {
     await Navigator.of(context).push(
       MaterialPageRoute<void>(
         fullscreenDialog: true,
@@ -66,12 +69,20 @@ Future<void> showPlusOfferSheet(
     return;
   }
   ActHaptics.confirm();
-  await showAppSheet<void>(context, builder: (_) => const _PlusOfferSheet());
+  await showAppSheet<void>(
+    context,
+    builder: (_) => _PlusOfferSheet(kind: kind),
+  );
 }
 
-/// Oferta das 7 cenas: comemoração + Peregrino+.
+/// Oferta das 7 cenas e convite de retorno: comemoração + Peregrino+.
 class _PlusOfferSheet extends StatelessWidget {
-  const _PlusOfferSheet();
+  final PlusOfferKind kind;
+
+  const _PlusOfferSheet({required this.kind});
+
+  bool get _winback =>
+      kind == PlusOfferKind.winbackEarly || kind == PlusOfferKind.winbackLate;
 
   @override
   Widget build(BuildContext context) {
@@ -79,9 +90,8 @@ class _PlusOfferSheet extends StatelessWidget {
     final l10n = context.l10n;
     final sub = context.watch<SubscriptionService>();
     final annual = sub.annualPackage;
-    final trial = annual == null ? null : SubscriptionService.trialDays(annual);
+    final trial = annual == null ? null : sub.trialDaysFor(annual);
     final perMonth = annual?.storeProduct.pricePerMonthString;
-    const kind = PlusOfferKind.sevenScenes;
 
     return AppSheetPanel(
       tint: AppRoles.reward,
@@ -100,15 +110,19 @@ class _PlusOfferSheet extends StatelessWidget {
             leading: const CloudMascot(face: CloudFace.sucesso, size: 104),
             eyebrow: l10n.paywallTitle,
             eyebrowColor: AppRoles.reward,
-            title: l10n.plusOfferScenesTitle(PlusOffers.scenesForOffer),
+            title: _winback
+                ? l10n.plusOfferWinbackTitle
+                : l10n.plusOfferScenesTitle(PlusOffers.scenesForOffer),
             center: true,
             celebration: true,
           ),
           const SizedBox(height: AppSpace.md),
-          const _SceneMarks(count: PlusOffers.scenesForOffer),
-          const SizedBox(height: AppSpace.md),
+          if (!_winback) ...[
+            const _SceneMarks(count: PlusOffers.scenesForOffer),
+            const SizedBox(height: AppSpace.md),
+          ],
           Text(
-            l10n.plusOfferScenesBody,
+            _winback ? l10n.plusOfferWinbackBody : l10n.plusOfferScenesBody,
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 14,
@@ -125,6 +139,10 @@ class _PlusOfferSheet extends StatelessWidget {
                 : l10n.weeklyReviewSeePlus,
             expanded: true,
             onTap: () {
+              AnalyticsService.instance.logOfferSheet(
+                kind: kind.source,
+                action: 'cta',
+              );
               final nav = Navigator.of(context);
               nav.pop();
               nav.push(
@@ -146,7 +164,13 @@ class _PlusOfferSheet extends StatelessWidget {
           TextCta(
             label: l10n.commonNotNow,
             color: a.textFaint,
-            onTap: () => Navigator.of(context).pop(),
+            onTap: () {
+              AnalyticsService.instance.logOfferSheet(
+                kind: kind.source,
+                action: 'dismiss',
+              );
+              Navigator.of(context).pop();
+            },
           ),
         ],
       ),

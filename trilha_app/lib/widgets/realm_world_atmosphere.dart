@@ -41,8 +41,13 @@ class _RealmWorldAtmosphereState extends State<RealmWorldAtmosphere>
       vsync: this,
       duration: const Duration(milliseconds: 14000),
     );
-    if (widget.animate) _drift.repeat();
     _motes = _buildMotes();
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    _syncDrift();
   }
 
   @override
@@ -51,9 +56,14 @@ class _RealmWorldAtmosphereState extends State<RealmWorldAtmosphere>
     if (oldWidget.realm != widget.realm || oldWidget.locked != widget.locked) {
       _motes = _buildMotes();
     }
-    if (widget.animate && !_drift.isAnimating) {
-      _drift.repeat();
-    } else if (!widget.animate && _drift.isAnimating) {
+    _syncDrift();
+  }
+
+  void _syncDrift() {
+    final calm = MediaQuery.maybeDisableAnimationsOf(context) ?? false;
+    if (widget.animate && !calm) {
+      if (!_drift.isAnimating) _drift.repeat();
+    } else if (_drift.isAnimating) {
       _drift.stop();
     }
   }
@@ -62,10 +72,10 @@ class _RealmWorldAtmosphereState extends State<RealmWorldAtmosphere>
     final seed = widget.realm.index * 131 + (widget.locked ? 7 : 3);
     final rng = math.Random(seed);
     final count = widget.locked
-        ? 10
+        ? 8
         : widget.featured
-        ? 42
-        : 28;
+        ? 18
+        : 14;
     return List.generate(count, (i) {
       return _Mote(
         x: rng.nextDouble(),
@@ -86,25 +96,47 @@ class _RealmWorldAtmosphereState extends State<RealmWorldAtmosphere>
 
   @override
   Widget build(BuildContext context) {
-    // Camada própria: a deriva a 60fps não repinta o pôster por cima.
-    return RepaintBoundary(
-      child: IgnorePointer(
-        child: AnimatedBuilder(
-          animation: _drift,
-          builder: (context, _) {
-            return CustomPaint(
-              painter: _RealmWorldPainter(
-                realm: widget.realm,
-                locked: widget.locked,
-                featured: widget.featured,
-                terrain: widget.terrain,
-                t: widget.animate ? _drift.value : 0.12,
-                motes: _motes,
+    final drifting = widget.animate && _drift.isAnimating;
+    final still = _RealmWorldPainter(
+      realm: widget.realm,
+      locked: widget.locked,
+      featured: widget.featured,
+      terrain: widget.terrain,
+      t: 0.12,
+      motes: _motes,
+      moving: false,
+      includeMotes: !drifting,
+    );
+    return IgnorePointer(
+      child: Stack(
+        fit: StackFit.expand,
+        children: [
+          // Céu, morro e vinheta pintam uma vez. A lista rola por cima.
+          RepaintBoundary(
+            child: CustomPaint(painter: still, size: Size.infinite),
+          ),
+          if (drifting)
+            RepaintBoundary(
+              child: AnimatedBuilder(
+                animation: _drift,
+                builder: (context, _) {
+                  return CustomPaint(
+                    painter: _RealmWorldPainter(
+                      realm: widget.realm,
+                      locked: widget.locked,
+                      featured: widget.featured,
+                      terrain: widget.terrain,
+                      t: _drift.value,
+                      motes: _motes,
+                      moving: true,
+                      includeMotes: true,
+                    ),
+                    size: Size.infinite,
+                  );
+                },
               ),
-              size: Size.infinite,
-            );
-          },
-        ),
+            ),
+        ],
       ),
     );
   }
@@ -135,6 +167,8 @@ class _RealmWorldPainter extends CustomPainter {
   final bool terrain;
   final double t;
   final List<_Mote> motes;
+  final bool moving;
+  final bool includeMotes;
 
   _RealmWorldPainter({
     required this.realm,
@@ -143,6 +177,8 @@ class _RealmWorldPainter extends CustomPainter {
     required this.terrain,
     required this.t,
     required this.motes,
+    required this.moving,
+    required this.includeMotes,
   });
 
   _Sky _sky() {
@@ -189,6 +225,11 @@ class _RealmWorldPainter extends CustomPainter {
     final sat = locked ? 0.45 : 1.0;
     Color c(Color x) => Color.lerp(const Color(0xFF1A1E24), x, sat)!;
 
+    if (moving) {
+      _paintMotes(canvas, size, sky, c);
+      return;
+    }
+
     canvas.drawRect(
       rect,
       Paint()
@@ -212,7 +253,7 @@ class _RealmWorldPainter extends CustomPainter {
         _paintPillars(canvas, size, sky, c);
       }
     }
-    _paintMotes(canvas, size, sky, c);
+    if (includeMotes) _paintMotes(canvas, size, sky, c);
     _paintVignette(canvas, size);
     if (locked) {
       canvas.drawRect(
@@ -397,11 +438,13 @@ class _RealmWorldPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant _RealmWorldPainter old) =>
-      old.t != t ||
+      old.moving != moving ||
+      old.includeMotes != includeMotes ||
       old.realm != realm ||
       old.locked != locked ||
       old.featured != featured ||
-      old.terrain != terrain;
+      old.terrain != terrain ||
+      (moving && old.t != t);
 }
 
 class _Sky {

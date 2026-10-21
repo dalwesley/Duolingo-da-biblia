@@ -6,6 +6,7 @@ import '../utils/appearance.dart';
 import '../utils/genesis_theme.dart';
 import '../utils/trail_progress.dart';
 import 'cinematic_icon.dart';
+import 'cloud_mascot.dart';
 import 'journey_station_card.dart';
 import 'winding_trail.dart';
 
@@ -61,6 +62,11 @@ class TrailMapPath extends StatelessWidget {
       walked: accent,
       track: track,
       waveOffset: startGlobalIndex,
+      // Pegadas só no trecho concluído. À frente, tracejado fino.
+      showAhead: false,
+      walker: const WindingWalker(
+        child: CloudMascot(face: CloudFace.feliz, size: 56, react: false),
+      ),
       stops: [
         for (var i = 0; i < missions.length; i++)
           _stop(context, i, accent, glow),

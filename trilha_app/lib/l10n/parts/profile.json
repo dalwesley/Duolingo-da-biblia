@@ -77,6 +77,14 @@
       "date": "String"
     }
   },
+  "paywallPromoSubscribeNote": {
+    "pt": "Você pode assinar desde já: o plano começa hoje, pelas regras da loja, sem esperar {date}.",
+    "en": "You can subscribe right away: the plan starts today, under the store's terms, without waiting for {date}.",
+    "es": "Puedes suscribirte ya: el plan empieza hoy, según las reglas de la tienda, sin esperar al {date}.",
+    "placeholders": {
+      "date": "String"
+    }
+  },
   "paywallAlreadyPlus": {
     "pt": "Você já é Peregrino+",
     "en": "You're already Pilgrim+",
@@ -900,59 +908,59 @@
     }
   },
   "paywallPerkSeasonTitle": {
-    "pt": "Caminhadas sazonais",
-    "en": "Seasonal walks",
-    "es": "Caminatas de temporada"
+    "pt": "Trilhas da estação",
+    "en": "Season trails",
+    "es": "Rutas de temporada"
   },
   "paywallPerkSeasonBody": {
-    "pt": "Caminhadas do calendário cristão, como o Advento: todos no mesmo dia, do 4º dia em diante.",
-    "en": "Walks through the Christian calendar, like Advent: everyone on the same day, from day 4 on.",
-    "es": "Caminatas del calendario cristiano, como el Adviento: todos el mismo día, desde el 4.º día."
+    "pt": "Advento, Páscoa, Natal e outras estações, cada uma com um caminho próprio.",
+    "en": "Advent, Easter, Christmas and other seasons, each with a path of its own.",
+    "es": "Adviento, Pascua, Navidad y otras temporadas, cada una con un camino propio."
   },
   "paywallPerkWeeklyTitle": {
-    "pt": "Revisão semanal",
+    "pt": "Revisão da semana",
     "en": "Weekly review",
-    "es": "Repaso semanal"
+    "es": "Repaso de la semana"
   },
   "paywallPerkWeeklyBody": {
-    "pt": "No domingo, uma cena especial para reforçar tudo o que você aprendeu na semana.",
-    "en": "On Sunday, a special scene to reinforce everything you learned that week.",
-    "es": "El domingo, una escena especial para reforzar todo lo que aprendiste en la semana."
+    "pt": "Uma vez por semana, você revê o que aprendeu. As perguntas começam pelo que errou.",
+    "en": "Once a week, you look back at what you learned. The questions start with what you missed.",
+    "es": "Una vez por semana, vuelves a lo que aprendiste. Las preguntas empiezan por lo que fallaste."
   },
   "paywallPerkStreakTitle": {
-    "pt": "Sua constância",
-    "en": "Your consistency",
-    "es": "Tu constancia"
+    "pt": "Seus dias",
+    "en": "Your days",
+    "es": "Tus días"
   },
   "paywallPerkStreakBody": {
-    "pt": "Acompanhe sua sequência, os dias desta semana e como foram os últimos três meses.",
-    "en": "Follow your streak, the days of this week, and how the last three months went.",
-    "es": "Sigue tu racha, los días de esta semana y cómo fueron los últimos tres meses."
+    "pt": "Sua sequência, os dias desta semana e como você caminhou nos últimos três meses.",
+    "en": "Your streak, the days of this week, and how you walked over the last three months.",
+    "es": "Tu racha, los días de esta semana y cómo caminaste en los últimos tres meses."
   },
   "paywallPerkReinforceTitle": {
-    "pt": "Reforço do ponto fraco",
-    "en": "Practice your weak spot",
-    "es": "Refuerzo del punto débil"
+    "pt": "O que você mais erra",
+    "en": "What you miss most",
+    "es": "Lo que más fallas"
   },
   "paywallPerkReinforceBody": {
-    "pt": "No perfil, o tipo de pergunta que você mais erra. Depois, um treino só com esse tipo.",
-    "en": "On your profile, the kind of question you miss most. Then a practice round of only that kind.",
-    "es": "En tu perfil, el tipo de pregunta que más fallas. Después, una práctica solo de ese tipo."
+    "pt": "Você vê onde tropeça. Depois, um treino só daquilo.",
+    "en": "You see where you stumble. Then a practice round of just that.",
+    "es": "Ves dónde tropiezas. Después, una práctica solo de eso."
   },
   "paywallPerkBadgeTitle": {
-    "pt": "Selo de apoiador",
-    "en": "Supporter badge",
-    "es": "Sello de apoyo"
+    "pt": "Selo de Peregrino",
+    "en": "Pilgrim badge",
+    "es": "Sello de Peregrino"
   },
   "paywallPerkBadgeBody": {
-    "pt": "Um selo no seu perfil. Quem abre seu nome na Caravana vê que você apoia o Stway.",
-    "en": "A badge on your profile. People who open your name in the Caravan see that you support Stway.",
-    "es": "Un sello en tu perfil. Quien abre tu nombre en la Caravana ve que apoyas Stway."
+    "pt": "Um selo exclusivo no seu perfil e na Caravana.",
+    "en": "An exclusive badge on your profile and in the Caravan.",
+    "es": "Un sello exclusivo en tu perfil y en la Caravana."
   },
   "paywallFreeForever": {
-    "pt": "Bíblia, cenas, os 3 modos e a liga continuam grátis. Sempre.",
-    "en": "The Bible, scenes, all 3 modes and the league stay free. Always.",
-    "es": "La Biblia, las escenas, los 3 modos y la liga siguen gratis. Siempre."
+    "pt": "A Bíblia e as cenas continuam grátis. Sempre.",
+    "en": "The Bible and the scenes stay free. Always.",
+    "es": "La Biblia y las escenas siguen gratis. Siempre."
   },
   "paywallSave": {
     "pt": "Economize {percent}%",

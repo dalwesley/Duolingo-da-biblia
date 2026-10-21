@@ -1445,6 +1445,26 @@
   "exerciseTypeTrueFalse": "Verdadeiro / Falso",
   "exerciseVerbAnswer": "Responda",
   "exerciseVerbJudge": "Julgue",
+  "explainAnswerLabel": "Resposta certa",
+  "explainCorrectAnswer": "Resposta certa: {text}",
+  "@explainCorrectAnswer": {
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
+  "explainErrorsEmptyBody": "Quando você errar uma pergunta, ela aparece aqui com a resposta certa e o porquê.",
+  "explainErrorsEmptyTitle": "Nenhum erro guardado",
+  "explainErrorsEntry": "{count, plural, =1{1 erro guardado, com a explicação} other{{count} erros guardados, com as explicações}}",
+  "@explainErrorsEntry": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "explainErrorsTitle": "Erros explicados",
   "feedbackAlmost": "Quase",
   "feedbackAnswer": "Resposta",
   "feedbackCheer1": "Isso.",
@@ -4067,7 +4087,26 @@
       }
     }
   },
-  "paywallFreeForever": "Bíblia, cenas, os 3 modos e a liga continuam grátis. Sempre.",
+  "paywallFounderBadge": "Lançamento",
+  "paywallFounderBody": "Um valor promocional para você, pioneiro do Stway. Você paga {price} por ano, para sempre, enquanto renovar.",
+  "@paywallFounderBody": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "paywallFounderCounter": "de {cap} pioneiros",
+  "@paywallFounderCounter": {
+    "placeholders": {
+      "cap": {
+        "type": "int"
+      }
+    }
+  },
+  "paywallFounderNote": "Paga hoje. O preço fica.",
+  "paywallFounderTitle": "O preço do lançamento",
+  "paywallFreeForever": "A Bíblia e as cenas continuam grátis. Sempre.",
   "paywallHeadline": "Caminhe com mais constância",
   "paywallLaunchFreeBody": "Tudo do Peregrino+ liberado até {date}. Depois, você decide se quer continuar.",
   "@paywallLaunchFreeBody": {
@@ -4081,22 +4120,24 @@
   "paywallLifetimeActive": "Vitalício: não expira.",
   "paywallManage": "Gerenciar assinatura",
   "paywallManageHint": "Mudar de plano ou cancelar é na App Store ou no Google Play.",
-  "paywallPerkBadgeBody": "Um selo no seu perfil. Quem abre seu nome na Caravana vê que você apoia o Stway.",
-  "paywallPerkBadgeTitle": "Selo de apoiador",
-  "paywallPerkPlansBody": "A Bíblia inteira no seu ritmo, Evangelhos em 30 dias, Novo Testamento em 90 e outros.",
+  "paywallPerkBadgeBody": "Um selo exclusivo no seu perfil e na Caravana.",
+  "paywallPerkBadgeTitle": "Selo de Peregrino",
+  "paywallPerkExplainBody": "Cada erro fica guardado, com a resposta certa e o porquê.",
+  "paywallPerkPlansBody": "Os Evangelhos em 30 dias, o Novo Testamento em 90 e outros caminhos.",
   "paywallPerkPlansTitle": "Planos de leitura",
-  "paywallPerkRecognitionBody": "Veja quem da caravana tocou no coração da sua cena e das suas medalhas.",
-  "paywallPerkRecognitionTitle": "Quem reconheceu",
-  "paywallPerkReinforceBody": "No perfil, o tipo de pergunta que você mais erra. Depois, um treino só com esse tipo.",
-  "paywallPerkReinforceTitle": "Reforço do ponto fraco",
-  "paywallPerkSeasonBody": "Caminhadas do calendário cristão, como o Advento: todos no mesmo dia, do 4º dia em diante.",
-  "paywallPerkSeasonTitle": "Caminhadas sazonais",
-  "paywallPerkStreakBody": "Acompanhe sua sequência, os dias desta semana e como foram os últimos três meses.",
-  "paywallPerkStreakTitle": "Sua constância",
-  "paywallPerkWeeklyBody": "No domingo, uma cena especial para reforçar tudo o que você aprendeu na semana.",
-  "paywallPerkWeeklyTitle": "Revisão semanal",
+  "paywallPerkRecognitionBody": "Veja quem reconheceu a sua caminhada e as suas conquistas.",
+  "paywallPerkRecognitionTitle": "Reconhecimento",
+  "paywallPerkReinforceBody": "Você vê onde tropeça. Depois, um treino só daquilo.",
+  "paywallPerkReinforceTitle": "O que você mais erra",
+  "paywallPerkSeasonBody": "Advento, Páscoa, Natal e outras estações, cada uma com um caminho próprio.",
+  "paywallPerkSeasonTitle": "Trilhas da estação",
+  "paywallPerkStreakBody": "Sua sequência, os dias desta semana e como você caminhou nos últimos três meses.",
+  "paywallPerkStreakTitle": "Seus dias",
+  "paywallPerkWeeklyBody": "Uma vez por semana, você revê o que aprendeu. As perguntas começam pelo que errou.",
+  "paywallPerkWeeklyTitle": "Revisão da semana",
   "paywallPitch": "Seu apoio mantém o Stway grátis para quem não pode pagar.\nE você ainda ganha os benefícios abaixo.",
   "paywallPlanAnnual": "Anual",
+  "paywallPlanFounder": "Pioneiro",
   "paywallPlanLifetime": "Vitalício",
   "paywallPlanMonthly": "Mensal",
   "paywallPriceAnnual": "{price} por ano",
@@ -4146,6 +4187,14 @@
   "@paywallPriceWeekly": {
     "placeholders": {
       "price": {
+        "type": "String"
+      }
+    }
+  },
+  "paywallPromoSubscribeNote": "Você pode assinar desde já: o plano começa hoje, pelas regras da loja, sem esperar {date}.",
+  "@paywallPromoSubscribeNote": {
+    "placeholders": {
+      "date": {
         "type": "String"
       }
     }
@@ -4237,6 +4286,7 @@
   "pilgrimAccuracySharp": "Leitura afiada das Escrituras",
   "pilgrimAccuracySteady": "Caminhando com firmeza",
   "pilgrimAccuracyTitle": "Acertos",
+  "pilgrimBadge": "Peregrino",
   "pilgrimChaptersBooks": "{chapters, plural, =1{1 capítulo} other{{chapters} capítulos}} · {books, plural, =1{1 livro} other{{books} livros}}",
   "@pilgrimChaptersBooks": {
     "placeholders": {
@@ -4442,7 +4492,7 @@
   "planEndCta": "Encerrar plano",
   "planEstimate": "Estimativa",
   "planFinished": "Plano concluído",
-  "planLockedGuidedBody": "Os planos guiados são do Peregrino+. A Bíblia inteira continua grátis.",
+  "planLockedGuidedBody": "Seus 3 dias grátis deste plano acabaram. Ele continua no Peregrino+; a Bíblia inteira segue grátis.",
   "planMarkDayRead": "Marcar leitura do dia",
   "planMinutes": "{minutes} min",
   "@planMinutes": {
@@ -4534,8 +4584,15 @@
   "planTodayDoneBody": "Porção de hoje concluída. Volte amanhã — ou continue explorando a Bíblia livremente.",
   "plansCatalogBody": "Cada dia já vem pronto; perdeu um, continua de onde parou.",
   "plansCatalogHeader": "Planos de leitura",
-  "plansGuidedPlusNote": "A Bíblia inteira é grátis, sempre. Os planos guiados são do Peregrino+.",
+  "plansGuidedPlusNote": "A Bíblia inteira é grátis, sempre. Nos guiados, os primeiros 3 dias são grátis; depois, Peregrino+.",
   "plansWholeBibleTitle": "Bíblia inteira",
+  "plusBillingHomeAction": "Ver meu plano",
+  "plusBillingHomeBody": "A loja não conseguiu cobrar. Atualize o pagamento para não perder o acesso quando o plano vencer.",
+  "plusBillingHomeTitle": "Problema no pagamento do Peregrino+",
+  "plusEndedHomeBody": "Suas revisões, planos guiados e a Caminhada estão esperando. A Bíblia e as cenas continuam grátis, como sempre.",
+  "plusEndedHomeTitle": "Seu Peregrino+ acabou",
+  "plusGraceHomeBody": "Você ainda tem alguns dias de acesso enquanto a loja confirma. Abra para conferir seu plano.",
+  "plusGraceHomeTitle": "Seu Peregrino+ venceu há pouco",
   "plusNoticeContinue": "Continuar com o Peregrino+",
   "plusNoticeEndedBody": "O lançamento terminou em {date}. Obrigado por caminhar com a gente desde o começo.",
   "@plusNoticeEndedBody": {
@@ -4603,6 +4660,8 @@
       }
     }
   },
+  "plusOfferWinbackBody": "Seu Peregrino+ acabou, mas suas revisões, planos e a Caminhada continuam aqui. Voltar é um toque — e mantém o Stway grátis para quem não pode pagar.",
+  "plusOfferWinbackTitle": "Sua caminhada Plus sente sua falta",
   "plusPerksHeader": "Com o Peregrino+",
   "plusPerksMore": "{count, plural, =1{E mais 1 benefício} other{E mais {count} benefícios}}",
   "@plusPerksMore": {
@@ -4662,10 +4721,10 @@
       }
     }
   },
-  "profileDaysPerWeek": "de 7 dias",
+  "profileDaysPerWeek": "dias por semana",
   "profileInTheWord": "Na Palavra",
   "profileInTheWordWhisper": "Versos que você guarda e os que já saíram daqui.",
-  "profileLampHelp": "Cada lamparina é uma semana. O número é quantos dias você caminhou.",
+  "profileLampHelp": "Cada lamparina é uma semana: o azeite sobe a cada dia caminhado e a chama cresce.",
   "profileLastThreeMonths": "Últimos 3 meses",
   "profileMonthRank": "{rank}º no ranking do mês",
   "@profileMonthRank": {
@@ -5130,6 +5189,7 @@
     }
   },
   "resetTitle": "Apagar progresso",
+  "reviewSlotTaken": "A revisão de hoje já foi feita — esta fica para amanhã.",
   "roomErrorCreate": "Não foi possível criar o grupo. Tente de novo.",
   "roomErrorCreateFirst": "Crie o grupo antes de chamar alguém.",
   "roomErrorFull": "Este grupo já tem {limit} pessoas.",
@@ -5502,7 +5562,7 @@
     }
   },
   "settingsPlusSubscribe": "Assinar o Peregrino+",
-  "settingsPlusTeaser": "Caminhadas sazonais, planos de leitura e revisão da semana",
+  "settingsPlusTeaser": "Trilhas da estação, planos de leitura e revisão da semana",
   "settingsProgressInCloud": "Progresso na nuvem",
   "settingsProgressRestored": "Progresso restaurado.",
   "settingsReminderAt": "Às {hour}h · toque para mudar",
@@ -6125,7 +6185,7 @@
   "weeklyReviewMissionIntro": "Três perguntas das cenas desta semana.",
   "weeklyReviewMissionTitle": "Revisão da semana",
   "weeklyReviewNoQuestions": "Não achei as perguntas destas cenas no aparelho. Tente de novo com internet.",
-  "weeklyReviewPlusBody": "No Peregrino+, a revisão traz o “Hoje:” de cada cena e 3 perguntas sobre elas.",
+  "weeklyReviewPlusBody": "Com o Peregrino+, você revê o que cada cena ensinou e responde 3 perguntas.",
   "weeklyReviewPreparing": "Preparando…",
   "weeklyReviewRange": "{start} – {end}",
   "@weeklyReviewRange": {

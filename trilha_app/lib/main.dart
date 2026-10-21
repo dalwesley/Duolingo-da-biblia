@@ -71,15 +71,9 @@ class TrilhaApp extends StatelessWidget {
           update: (_, backend, previous) {
             final sub = previous ?? SubscriptionService();
             NotificationService.instance.plusOpen = () => sub.plusFeaturesOpen;
-            sub.onBadgeChanged = (v) => unawaited(backend.publishSupporter(v));
-            unawaited(
-              sub.bindUid(backend.uid).then((_) {
-                // Nunca grava `false`: sair da conta não tira o selo da Caravana.
-                if (backend.isActive && sub.hasBadge) {
-                  return backend.publishSupporter(true);
-                }
-              }),
-            );
+            // O selo na Caravana é gravado pelo webhook do RevenueCat;
+            // o app só liga a conta à loja.
+            unawaited(sub.bindUid(backend.uid));
             return sub;
           },
         ),

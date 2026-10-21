@@ -839,8 +839,7 @@ class _AtmospherePainter extends CustomPainter {
           ..strokeWidth = 2.2 + (i % 3) * 1.0
           ..color = const Color(
             0xFF3A2814,
-          ).withValues(alpha: 0.2 + breathe * 0.05 + (i % 2) * 0.04)
-          ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 1.1),
+          ).withValues(alpha: 0.28 + breathe * 0.05 + (i % 2) * 0.04),
       );
     }
   }

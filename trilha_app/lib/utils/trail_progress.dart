@@ -179,9 +179,12 @@ class TrailProgress {
     return L10n.current.trailsModeChip(label);
   }
 
-  /// Trilha liberada se não há pré-requisito, se a pré-requisito está
-  /// completa em [completed], ou se já foi concluída em algum modo
-  /// ([clearedTrailModes]) — evita re-bloquear ao trocar dificuldade.
+  /// Uma trilha por vez no mesmo caminho.
+  ///
+  /// A anterior (mesma jornada, na ordem do mapa) precisa estar concluída.
+  /// Quem já andou nesta trilha não perde o acesso. Pré-requisito de outro
+  /// caminho continua valendo, exceto Novo Testamento e a vitrine de Vida
+  /// Cristã — esses não esperam o Antigo Testamento.
   static bool isTrailUnlocked(
     Trail trail,
     List<Trail> allTrails,
@@ -189,23 +192,83 @@ class TrailProgress {
     Map<String, List<String>> clearedTrailModes = const {},
   }) {
     if (CatalogAccess.openAllForTesting) return true;
-    // Vitrine D7 + NT: abertos sem exigir o caminho do AT.
-    if (trail.slug == 'sermao-do-monte') return true;
-    if (trail.slug == 'ansiedade' || trail.slug == 'recomeco') return true;
-    if (trail.realmId == TrailRealm.novoTestamento.id) return true;
-    if (trail.unlockAfter == null) return true;
-    final prereq = allTrails
-        .where((t) => t.slug == trail.unlockAfter)
-        .firstOrNull;
-    if (prereq == null) return true;
-    if (isTrailCompleted(
-      prereq,
+    if (_alreadyWalked(
+      trail,
       completed,
       clearedTrailModes: clearedTrailModes,
     )) {
       return true;
     }
-    return false;
+    final previous = _previousContentTrail(trail, allTrails);
+    if (previous != null &&
+        !isTrailCompleted(
+          previous,
+          completed,
+          clearedTrailModes: clearedTrailModes,
+        )) {
+      return false;
+    }
+    if (trail.unlockAfter == null) return true;
+    final prereq = allTrails
+        .where((t) => t.slug == trail.unlockAfter)
+        .firstOrNull;
+    if (prereq == null) return true;
+    if (prereq.journey != trail.journey && _skipsOutsidePrereq(trail)) {
+      return true;
+    }
+    return isTrailCompleted(
+      prereq,
+      completed,
+      clearedTrailModes: clearedTrailModes,
+    );
+  }
+
+  /// Progresso vivo ou modo já selado — a trilha não volta a sumir.
+  static bool _alreadyWalked(
+    Trail trail,
+    List<String> completed, {
+    Map<String, List<String>> clearedTrailModes = const {},
+  }) {
+    if (isTrailCompleted(
+      trail,
+      completed,
+      clearedTrailModes: clearedTrailModes,
+    )) {
+      return true;
+    }
+    return getLiveProgress(trail, completed).done > 0;
+  }
+
+  /// Trilha anterior com cenas, na mesma ordem do mapa do caminho.
+  static Trail? _previousContentTrail(Trail trail, List<Trail> allTrails) {
+    final peers = allTrails.where((t) => t.journey == trail.journey).toList()
+      ..sort(_journeyOrder);
+    Trail? previous;
+    for (final peer in peers) {
+      if (peer.slug == trail.slug) return previous;
+      if (peer.comingSoon || peer.missionSlugs.isEmpty) continue;
+      previous = peer;
+    }
+    return null;
+  }
+
+  static int _journeyOrder(Trail a, Trail b) {
+    final category = TrailCategory.fromId(a.categoryId).order.compareTo(
+      TrailCategory.fromId(b.categoryId).order,
+    );
+    if (category != 0) return category;
+    final order = a.order.compareTo(b.order);
+    if (order != 0) return order;
+    return a.slug.compareTo(b.slug);
+  }
+
+  /// Não exige um caminho de fora: NT inteiro, e a vitrine que abre
+  /// Discipulado sem passar pelo Antigo Testamento.
+  static bool _skipsOutsidePrereq(Trail trail) {
+    if (trail.realmId == TrailRealm.novoTestamento.id) return true;
+    return trail.slug == 'sermao-do-monte' ||
+        trail.slug == 'ansiedade' ||
+        trail.slug == 'recomeco';
   }
 
   static Mission? getCurrentMission(Trail trail, List<String> completed) {

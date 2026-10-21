@@ -16,6 +16,7 @@ enum PlusPerk {
   readingPlans,
   consistency,
   reinforce,
+  explainErrors,
   badge,
   recognition;
 
@@ -32,6 +33,7 @@ enum PlusPerk {
     PlusPerk.readingPlans => CinematicGlyph.book,
     PlusPerk.consistency => CinematicGlyph.path,
     PlusPerk.reinforce => CinematicGlyph.target,
+    PlusPerk.explainErrors => CinematicGlyph.lamp,
     PlusPerk.badge => CinematicGlyph.gift,
     PlusPerk.recognition => CinematicGlyph.heart,
   };
@@ -42,6 +44,7 @@ enum PlusPerk {
     PlusPerk.readingPlans => l10n.paywallPerkPlansTitle,
     PlusPerk.consistency => l10n.paywallPerkStreakTitle,
     PlusPerk.reinforce => l10n.paywallPerkReinforceTitle,
+    PlusPerk.explainErrors => l10n.explainErrorsTitle,
     PlusPerk.badge => l10n.paywallPerkBadgeTitle,
     PlusPerk.recognition => l10n.paywallPerkRecognitionTitle,
   };
@@ -52,6 +55,7 @@ enum PlusPerk {
     PlusPerk.readingPlans => l10n.paywallPerkPlansBody,
     PlusPerk.consistency => l10n.paywallPerkStreakBody,
     PlusPerk.reinforce => l10n.paywallPerkReinforceBody,
+    PlusPerk.explainErrors => l10n.paywallPerkExplainBody,
     PlusPerk.badge => l10n.paywallPerkBadgeBody,
     PlusPerk.recognition => l10n.paywallPerkRecognitionBody,
   };

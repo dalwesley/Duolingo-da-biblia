@@ -1,5 +1,4 @@
 import 'dart:math' as math;
-import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -320,16 +319,14 @@ class _FrozenOrbPainter extends CustomPainter {
       c,
       s * 0.42,
       Paint()
-        ..color = AppColors.iceSoft.withValues(alpha: 0.12 + breathe * 0.04)
-        ..maskFilter = const ui.MaskFilter.blur(ui.BlurStyle.normal, 2.4),
+        ..color = AppColors.iceSoft.withValues(alpha: 0.2 + breathe * 0.04),
     );
 
     final armGlow = Paint()
       ..color = AppColors.iceSoft.withValues(alpha: 0.7)
-      ..strokeWidth = 2.15
+      ..strokeWidth = 2.8
       ..strokeCap = StrokeCap.round
-      ..style = PaintingStyle.stroke
-      ..maskFilter = const ui.MaskFilter.blur(ui.BlurStyle.normal, 1.1);
+      ..style = PaintingStyle.stroke;
 
     final arm = Paint()
       ..shader = LinearGradient(

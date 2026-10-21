@@ -16,6 +16,8 @@ import '../services/corner_service.dart';
 import '../services/progress_service.dart';
 import '../services/session_composer.dart';
 import '../services/sound_service.dart';
+import '../services/subscription_service.dart';
+import 'paywall_screen.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
@@ -54,6 +56,10 @@ class LessonScreen extends StatefulWidget {
   final Mission? missionOverride;
   final List<String>? questionIdsOverride;
 
+  /// Lição que só o Peregrino+ abre (revisões, reforço). A checagem mora
+  /// aqui também — não só no botão que empurra a rota.
+  final bool requiresPlus;
+
   const LessonScreen({
     super.key,
     required this.missionSlug,
@@ -61,6 +67,7 @@ class LessonScreen extends StatefulWidget {
     this.skipTrailLock = false,
     this.missionOverride,
     this.questionIdsOverride,
+    this.requiresPlus = false,
   });
 
   @override
@@ -136,6 +143,15 @@ class _LessonScreenState extends State<LessonScreen>
   }
 
   Future<void> _load() async {
+    if (widget.requiresPlus &&
+        !context.read<SubscriptionService>().plusFeaturesOpen) {
+      await Navigator.of(context).pushReplacement(
+        MaterialPageRoute<void>(
+          builder: (_) => const PaywallScreen(source: 'lesson_gate'),
+        ),
+      );
+      return;
+    }
     await ContentCatalogService.instance.ensureLoaded();
     if (!mounted) return;
     final progress = context.read<ProgressService>();
@@ -527,6 +543,7 @@ class _LessonScreenState extends State<LessonScreen>
           mode: mode,
           type: ex.type.wireId,
           correct: correct,
+          trailSlug: _trailSlug,
         );
       }
       unawaited(

@@ -276,7 +276,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
           body: ImmersiveBackground(
             appearance: appearance,
             frameChild: false,
-            // Mesmo fundo da tela do caminho; o céu da área voa de lá pra cá.
+            // Mesmo fundo da tela do caminho.
             background: JourneySkyBackdrop(
               journey: trail.journey,
               appearance: appearance,

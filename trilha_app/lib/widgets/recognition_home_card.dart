@@ -107,7 +107,7 @@ class _HeartList extends StatelessWidget {
                 child: CinematicIcon(
                   glyph: CinematicGlyph.heart,
                   size: AppMetrics.iconSm,
-                  accent: AppRoles.success,
+                  accent: AppRoles.heart,
                   framed: false,
                 ),
               ),

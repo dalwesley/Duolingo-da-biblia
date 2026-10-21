@@ -830,21 +830,9 @@ class BackendService extends ChangeNotifier {
     return null;
   }
 
-  String? _publishedSupporter;
-
-  /// Selo de apoiador no perfil público (`users/{uid}.supporter`).
-  Future<void> publishSupporter(bool value) async {
-    final key = '$_uid:$value';
-    if (!isActive || _uid == null || _publishedSupporter == key) return;
-    try {
-      await _db.doc('users/$_uid').set({
-        'supporter': value,
-      }, SetOptions(merge: true));
-      _publishedSupporter = key;
-    } catch (e) {
-      debugPrint('Falha ao publicar selo de apoiador: $e');
-    }
-  }
+  // Selo de apoiador (`users/{uid}.supporter`): quem grava é só o webhook
+  // do RevenueCat (functions/revenuecat.js). As rules barram o cliente —
+  // não há escrita deste campo no app.
 
   /// Doc só do dono (regra: lê e grava só o próprio uid). Tudo que é
   /// pessoal mora aqui; `users/{uid}` fica com o que perfil e rankings usam.

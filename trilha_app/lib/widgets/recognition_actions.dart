@@ -119,11 +119,11 @@ class RecognizeHeartButton extends StatelessWidget {
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: given
-                  ? AppRoles.success.withValues(alpha: 0.18)
+                  ? AppRoles.heart.withValues(alpha: 0.18)
                   : AppRoles.chrome.withValues(alpha: 0.06),
               border: Border.all(
                 color: given
-                    ? AppRoles.success.withValues(alpha: 0.7)
+                    ? AppRoles.heart.withValues(alpha: 0.7)
                     : AppRoles.chrome.withValues(alpha: 0.2),
               ),
             ),
@@ -133,7 +133,7 @@ class RecognizeHeartButton extends StatelessWidget {
                 size: AppMetrics.iconLg,
                 framed: false,
                 accent: given
-                    ? AppRoles.success
+                    ? AppRoles.heart
                     : Appearance.of(context).textFaint,
               ),
             ),

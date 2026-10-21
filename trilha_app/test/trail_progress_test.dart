@@ -220,6 +220,150 @@ void main() {
     expect(TrailProgress.isTrailUnlocked(sermao, [trail, sermao], []), isTrue);
   });
 
+  Trail contentTrail({
+    required String slug,
+    required String mission,
+    int order = 1,
+    String? unlockAfter,
+    String realmId = 'antigo-testamento',
+    String categoryId = 'pentateuco',
+  }) {
+    return Trail(
+      slug: slug,
+      title: slug,
+      description: '',
+      icon: '📖',
+      order: order,
+      unlockAfter: unlockAfter,
+      comingSoon: false,
+      color: '#2F5D4A',
+      realmId: realmId,
+      categoryId: categoryId,
+      modules: [
+        TrailModule(
+          title: 'Mod',
+          icon: '🌍',
+          missions: [
+            Mission(
+              slug: mission,
+              title: mission,
+              intro: '',
+              type: 'lesson',
+              stepsReward: 50,
+              questions: [],
+            ),
+          ],
+        ),
+      ],
+    );
+  }
+
+  test('same journey opens one trail at a time', () {
+    final anxiety = contentTrail(
+      slug: 'ansiedade',
+      mission: 'a1',
+      order: 0,
+      realmId: 'vida-crista',
+      categoryId: 'discipulado',
+    );
+    final restart = contentTrail(
+      slug: 'recomeco',
+      mission: 'r1',
+      order: 1,
+      realmId: 'vida-crista',
+      categoryId: 'discipulado',
+    );
+    final sermon = contentTrail(
+      slug: 'sermao-do-monte',
+      mission: 's1',
+      order: 199,
+      realmId: 'vida-crista',
+      categoryId: 'discipulado',
+    );
+    final path = [anxiety, restart, sermon];
+
+    expect(TrailProgress.isTrailUnlocked(anxiety, path, []), isTrue);
+    expect(TrailProgress.isTrailUnlocked(restart, path, []), isFalse);
+    expect(TrailProgress.isTrailUnlocked(sermon, path, []), isFalse);
+
+    expect(TrailProgress.isTrailUnlocked(restart, path, ['a1']), isTrue);
+    expect(TrailProgress.isTrailUnlocked(sermon, path, ['a1']), isFalse);
+    expect(
+      TrailProgress.isTrailUnlocked(sermon, path, ['a1', 'r1']),
+      isTrue,
+    );
+  });
+
+  test('a trail already started stays open behind an unfinished one', () {
+    final anxiety = contentTrail(
+      slug: 'ansiedade',
+      mission: 'a1',
+      order: 0,
+      realmId: 'vida-crista',
+      categoryId: 'discipulado',
+    );
+    final sermon = contentTrail(
+      slug: 'sermao-do-monte',
+      mission: 's1',
+      order: 199,
+      realmId: 'vida-crista',
+      categoryId: 'discipulado',
+    );
+    expect(
+      TrailProgress.isTrailUnlocked(sermon, [anxiety, sermon], ['s1']),
+      isTrue,
+    );
+  });
+
+  test('NT chains inside the journey and does not wait for the OT', () {
+    final exodus = contentTrail(slug: 'exodo', mission: 'e1', order: 3);
+    final gospels = contentTrail(
+      slug: 'evangelhos',
+      mission: 'g1',
+      order: 40,
+      unlockAfter: 'exodo',
+      realmId: 'novo-testamento',
+      categoryId: 'evangelhos',
+    );
+    final matthew = contentTrail(
+      slug: 'mateus',
+      mission: 'm1',
+      order: 41,
+      realmId: 'novo-testamento',
+      categoryId: 'evangelhos',
+    );
+    final path = [exodus, gospels, matthew];
+
+    expect(TrailProgress.isTrailUnlocked(gospels, path, []), isTrue);
+    expect(TrailProgress.isTrailUnlocked(matthew, path, []), isFalse);
+    expect(TrailProgress.isTrailUnlocked(matthew, path, ['g1']), isTrue);
+  });
+
+  test('a trail outside NT still waits for a prerequisite in another journey', () {
+    final psalms = contentTrail(
+      slug: 'salmos',
+      mission: 'p1',
+      order: 21,
+      categoryId: 'poeticos',
+    );
+    final prayer = contentTrail(
+      slug: 'oracao',
+      mission: 'o1',
+      order: 210,
+      unlockAfter: 'salmos',
+      realmId: 'vida-crista',
+      categoryId: 'oracao',
+    );
+    expect(
+      TrailProgress.isTrailUnlocked(prayer, [psalms, prayer], []),
+      isFalse,
+    );
+    expect(
+      TrailProgress.isTrailUnlocked(prayer, [psalms, prayer], ['p1']),
+      isTrue,
+    );
+  });
+
   test('trail unlock requires prerequisite when catalog gated', () {
     final trails = [
       trail,

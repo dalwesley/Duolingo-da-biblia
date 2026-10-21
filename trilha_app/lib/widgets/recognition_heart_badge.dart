@@ -7,10 +7,9 @@ import '../services/recognition_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
-import 'ui_primitives.dart';
 
-/// Coração com o número. No cofre é só o número; na medalha aberta, o toque
-/// mostra quem reconheceu.
+/// Coração com o número. No cofre é o selo pequeno; na medalha aberta, o toque
+/// mostra quem reconheceu. Some quando ninguém curtiu.
 class HeartCountMark extends StatelessWidget {
   final int count;
   final bool compact;
@@ -26,40 +25,43 @@ class HeartCountMark extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (count <= 0) return const SizedBox.shrink();
+    // No cofre o selo é pequeno. Na medalha aberta cabe na marca de ~32×60
+    // e o toque continua com 44.
     final mark = DecoratedBox(
       decoration: BoxDecoration(
-        color: AppRoles.success.withValues(alpha: compact ? 0.92 : 0.16),
-        borderRadius: BorderRadius.circular(compact ? 10 : 22),
+        color: AppRoles.heart.withValues(alpha: 0.92),
+        borderRadius: BorderRadius.circular(10),
         border: Border.all(
-          color: compact
-              ? Appearance.of(context).cardFill
-              : AppRoles.success.withValues(alpha: 0.7),
+          color: Appearance.of(context).cardFill,
           width: compact ? 1.5 : 1,
         ),
       ),
-      child: Padding(
-        padding: EdgeInsets.symmetric(
-          horizontal: compact ? 5 : 8,
-          vertical: compact ? 2 : 6,
-        ),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            CinematicIcon(
-              glyph: CinematicGlyph.heart,
-              size: compact ? 12 : AppMetrics.iconSm,
-              accent: compact ? AppColors.textOnDark : AppRoles.success,
-              framed: false,
-            ),
-            SizedBox(width: compact ? 2 : 4),
-            Text(
-              '$count',
-              style: AppTypography.title(
-                size: compact ? 10 : 14,
-                color: compact ? AppColors.textOnDark : AppRoles.success,
+      child: SizedBox(
+        height: compact ? null : 32,
+        child: Padding(
+          padding: EdgeInsets.symmetric(
+            horizontal: compact ? 5 : 8,
+            vertical: compact ? 2 : 0,
+          ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              CinematicIcon(
+                glyph: CinematicGlyph.heart,
+                size: compact ? 12 : 16,
+                accent: AppColors.textOnDark,
+                framed: false,
               ),
-            ),
-          ],
+              SizedBox(width: compact ? 2 : 3),
+              Text(
+                '$count',
+                style: AppTypography.title(
+                  size: compact ? 10 : 12,
+                  color: AppColors.textOnDark,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
@@ -74,15 +76,21 @@ class HeartCountMark extends StatelessWidget {
               color: Colors.transparent,
               child: InkWell(
                 onTap: onTap,
-                borderRadius: BorderRadius.circular(22),
-                child: mark,
+                borderRadius: BorderRadius.circular(16),
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(
+                    minWidth: 44,
+                    minHeight: 44,
+                  ),
+                  child: Center(child: mark),
+                ),
               ),
             ),
     );
   }
 }
 
-/// Número de corações recebidos nesta medalha.
+/// Corações recebidos nesta medalha.
 class ReceivedHeartBadge extends StatelessWidget {
   final Set<String> subjectKeys;
   final bool compact;

@@ -1,5 +1,7 @@
 import 'dart:async';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:purchases_flutter/purchases_flutter.dart';
@@ -22,13 +24,38 @@ import 'remote_config_service.dart';
 ///
 /// Recursos do Peregrino+ checam [hasPlus], nunca [isPeregrinoPlus]: durante
 /// o lançamento (`plus_launch_free_until` no Remote Config) todos têm acesso.
+/// O gate das telas é [plusFeaturesOpen]: sem loja configurada abre tudo;
+/// com loja, fecha sem Plus mesmo se a oferta falhar — o cache do último
+/// entitlement segura o assinante até vencer + 7 dias de graça.
 class SubscriptionService extends ChangeNotifier {
   SubscriptionService() {
     RemoteConfigService.instance.addListener(notifyListeners);
+    unawaited(_restoreLocalState());
     if (kDebugMode) unawaited(_debugRestore());
+    _listenPioneerCount();
+  }
+
+  /// Histórico primeiro (o mais antigo), cache depois (o mais recente):
+  /// em sequência, para a semeadura do fim do Plus não correr com a
+  /// leitura do histórico e a data regredir.
+  Future<void> _restoreLocalState() async {
+    await _restorePlusHistory();
+    await _restoreEntitlementCache();
   }
 
   static const _entitlementId = 'peregrino_plus';
+
+  /// Produto anual de lançamento (R$ 89,90 travado enquanto renovar).
+  /// Produto separado porque na loja o preço mora no produto: ao fim do
+  /// corte ele sai da oferta e quem assinou continua no preço original.
+  static const founderProductId = 'plus_founder_annual';
+
+  /// Teto das primeiras compras do Pioneiro, se o servidor ainda não disse.
+  static const pioneerCapDefault = 200;
+  static const _pioneerStatsPath = 'stats/pioneer';
+
+  /// Produto anual regular (o "herói", único com teste grátis).
+  static const annualProductId = 'plus_annual';
 
   /// Oferta da RevenueCat com as compras avulsas de apoio (consumíveis).
   static const supportOfferingId = 'apoio';
@@ -55,8 +82,6 @@ class SubscriptionService extends ChangeNotifier {
   List<Package> availablePackages = const [];
   List<Package> supportPackages = const [];
 
-  /// Chamado quando o selo de apoiador muda (perfil público).
-  void Function(bool hasBadge)? onBadgeChanged;
   bool loading = false;
   String? lastError;
   bool _initialized = false;
@@ -65,6 +90,11 @@ class SubscriptionService extends ChangeNotifier {
 
   /// A oferta da loja chegou com planos. Falha ou lista vazia não trava nada.
   bool _offeringsReady = false;
+
+  /// Elegibilidade de teste grátis por produto (RevenueCat). Sem resposta
+  /// ou "desconhecido", a tela NÃO promete trial: no Android o status é
+  /// sempre desconhecido, e a própria loja mostra o teste na compra.
+  Map<String, IntroEligibilityStatus> _trialEligibility = const {};
 
   /// Último dia da promoção de lançamento, se ela ainda vale hoje.
   DateTime? get launchFreeUntil {
@@ -82,12 +112,57 @@ class SubscriptionService extends ChangeNotifier {
       ? _debugPromoUntil
       : RemoteConfigService.instance.plusLaunchFreeUntil;
 
-  /// Acesso aos recursos do Peregrino+: assinatura ou promoção de lançamento.
+  /// Veio do cache local (loja ainda não respondeu nesta abertura).
+  bool _plusFromCache = false;
+
+  /// A loja já respondeu nesta sessão: o cache não fala mais depois disso.
+  bool _storeAnswered = false;
+
+  /// Conta dona do cache restaurado (vazio em cache antigo, sem dono).
+  String? _cachedUid;
+
+  /// Quando o Plus acabou pela última vez (para o convite de retorno).
+  DateTime? _lastPlusEndedAt;
+
+  /// Conta a que esse fim pertence (histórico antigo pode não ter dono).
+  String? _historyUid;
+
+  /// Último fim do Peregrino+ conhecido **desta conta**, ou null.
+  /// Histórico de outra conta neste aparelho não vaza: sem dono gravado
+  /// (cache antigo) vale; com dono diferente da conta ligada, não.
+  DateTime? get lastPlusEndedAt {
+    final ended = _lastPlusEndedAt;
+    if (ended == null) return null;
+    final owner = _historyUid;
+    if (owner != null &&
+        owner.isNotEmpty &&
+        _boundUid != null &&
+        owner != _boundUid) {
+      return null;
+    }
+    return ended;
+  }
+
+  /// Assinatura vencida há pouco, ainda dentro da graça do cache.
+  bool get plusInGrace =>
+      _plusFromCache &&
+      isPeregrinoPlus &&
+      plusExpiresAt != null &&
+      DateTime.now().isAfter(plusExpiresAt!);
+
+  /// Acesso aos recursos do Peregrino+: assinatura, promoção de
+  /// lançamento ou cache dentro da validade/graça (ver [PlusAccess]).
   bool get hasPlus => isPeregrinoPlus || launchPromoActive;
 
-  /// Selo de apoiador: quem paga o Peregrino+ ou já apoiou. A promoção de
-  /// lançamento não dá selo.
+  /// Algum selo (laboratório e checagens genéricas).
   bool get hasBadge => isPeregrinoPlus || isSupporter;
+
+  /// Selo de Peregrino: exclusivo de quem assina o Peregrino+. A promoção
+  /// de lançamento não dá selo.
+  bool get hasPilgrimBadge => isPeregrinoPlus;
+
+  /// Selo de Apoiador: exclusivo de quem fez apoio avulso — é o campo
+  /// [isSupporter], sem mistura com o de Peregrino.
 
   /// Apoio avulso disponível na loja.
   bool get supportConfigured => isConfigured && supportPackages.isNotEmpty;
@@ -96,9 +171,10 @@ class SubscriptionService extends ChangeNotifier {
   bool get canPurchase =>
       isConfigured && _offeringsReady && availablePackages.isNotEmpty;
 
-  /// Aberto com Plus, ou enquanto não há plano para comprar — nada trava sem saída.
+  /// Aberto com Plus, ou num build sem loja configurada. Loja configurada
+  /// sem oferta (falha/rede) não abre mais: fecha com o cache de graça.
   bool get plusFeaturesOpen =>
-      PlusAccess.featuresOpen(hasPlus: hasPlus, canPurchase: canPurchase);
+      PlusAccess.featuresOpen(hasPlus: hasPlus, storeConfigured: isConfigured);
 
   /// Há algo do Peregrino+ para mostrar (loja configurada ou promoção).
   bool get showsPlus => isConfigured || launchPromoActive;
@@ -109,9 +185,56 @@ class SubscriptionService extends ChangeNotifier {
       (defaultTargetPlatform == TargetPlatform.android &&
           _apiKeyAndroid.isNotEmpty);
 
+  /// Compras do Pioneiro já contadas. Null enquanto `stats/pioneer` não existe.
+  int? _pioneerCount;
+  int _pioneerCap = pioneerCapDefault;
+  StreamSubscription<DocumentSnapshot<Map<String, dynamic>>>? _pioneerListen;
+
+  /// Vagas ocupadas, no máximo o teto. Zero enquanto o documento não existe.
+  int get pioneerTaken {
+    final n = _pioneerCount ?? 0;
+    if (n <= 0) return 0;
+    return n > _pioneerCap ? _pioneerCap : n;
+  }
+
+  int get pioneerCap => _pioneerCap;
+
+  void _listenPioneerCount() {
+    if (Firebase.apps.isEmpty) return;
+    _pioneerListen = FirebaseFirestore.instance
+        .doc(_pioneerStatsPath)
+        .snapshots()
+        .listen(
+          (snap) {
+            if (!snap.exists) {
+              _pioneerCount = null;
+            } else {
+              final data = snap.data();
+              final raw = data?['count'];
+              _pioneerCount = raw is int
+                  ? raw
+                  : raw is num
+                  ? raw.toInt()
+                  : null;
+              final cap = data?['cap'];
+              if (cap is int && cap > 0) {
+                _pioneerCap = cap;
+              } else if (cap is num && cap > 0) {
+                _pioneerCap = cap.toInt();
+              }
+            }
+            notifyListeners();
+          },
+          onError: (Object e) {
+            debugPrint('Contagem do Pioneiro indisponível: $e');
+          },
+        );
+  }
+
   @override
   void dispose() {
     RemoteConfigService.instance.removeListener(notifyListeners);
+    unawaited(_pioneerListen?.cancel());
     super.dispose();
   }
 
@@ -152,18 +275,40 @@ class SubscriptionService extends ChangeNotifier {
       await _endSession();
       return;
     }
+    // Cache de outra conta neste aparelho não atravessa a troca: sem
+    // isto, a pessoa nova herdava o Plus até a loja responder — e para
+    // sempre, se a resposta falhasse.
+    if (_plusFromCache &&
+        _cachedUid != null &&
+        _cachedUid!.isNotEmpty &&
+        _cachedUid != uid) {
+      _clearLocalPlus();
+    }
     if (!isConfigured) return;
     if (!_initialized) {
       await init(uid: uid);
       return;
     }
     if (uid == _boundUid) return;
+    // Troca de conta: o Plus de quem sai cai antes de a loja responder
+    // pela conta nova — nada de janela com o acesso do dono anterior,
+    // e a transição não grava o fim do Plus de um no histórico do outro.
+    final switching = _boundUid != null;
+    if (switching) _clearLocalPlus();
+    // Histórico de ex-assinante de outra conta não atravessa a troca.
+    if (_historyUid != null && _historyUid!.isNotEmpty && _historyUid != uid) {
+      _lastPlusEndedAt = null;
+      _historyUid = null;
+      unawaited(_savePlusHistory());
+    }
     _boundUid = uid;
     try {
       await Purchases.logIn(uid);
       final info = await Purchases.getCustomerInfo();
       _onCustomerInfo(info);
     } catch (e) {
+      // Troca de conta sem resposta da loja: solta o Plus de quem saiu.
+      if (switching) _clearLocalPlus();
       debugPrint('SubscriptionService.bindUid falhou: $e');
     }
   }
@@ -194,7 +339,123 @@ class SubscriptionService extends ChangeNotifier {
     plusWillRenew = false;
     plusInTrial = false;
     plusBillingIssue = false;
+    _plusFromCache = false;
+    unawaited(_clearEntitlementCache());
     notifyListeners();
+  }
+
+  // --- Cache do entitlement (graça offline) --------------------------------
+  //
+  // A loja é a fonte; isto é só a última resposta dela, gravada no aparelho.
+  // Se a próxima abertura não conseguir falar com a loja, o assinante não
+  // perde o Plus na hora: vale até vencer, mais [PlusAccess.graceDays].
+
+  static const _cachePrefsKey = 'plusEntitlementCache';
+
+  Future<void> _saveEntitlementCache() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setStringList(_cachePrefsKey, [
+        'plus=$isPeregrinoPlus',
+        'supporter=$isSupporter',
+        'product=${plusProductId ?? ''}',
+        'expires=${plusExpiresAt?.toIso8601String() ?? ''}',
+        'willRenew=$plusWillRenew',
+        'trial=$plusInTrial',
+        'billing=$plusBillingIssue',
+        'uid=${_boundUid ?? ''}',
+      ]);
+    } catch (e) {
+      debugPrint('SubscriptionService cache falhou: $e');
+    }
+  }
+
+  Future<void> _clearEntitlementCache() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.remove(_cachePrefsKey);
+    } catch (_) {}
+  }
+
+  Future<void> _restoreEntitlementCache() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final raw = prefs.getStringList(_cachePrefsKey);
+      if (raw == null) return;
+      final m = {
+        for (final e in raw)
+          if (e.contains('=')) e.split('=').first: e.split('=').last,
+      };
+      final expires = DateTime.tryParse(m['expires'] ?? '');
+      final active = PlusAccess.cachedPlusActive(
+        cachedPlus: m['plus'] == 'true',
+        expiresAt: expires,
+        now: DateTime.now(),
+      );
+      // A loja já respondeu nesta sessão (ou o debug concedeu): o cache
+      // é só a foto anterior — não ressuscita Plus que a loja encerrou,
+      // nem o da conta anterior neste aparelho.
+      if (_storeAnswered || isPeregrinoPlus) return;
+      _cachedUid = (m['uid'] ?? '').isEmpty ? null : m['uid'];
+      isSupporter = m['supporter'] == 'true';
+      if (!active) {
+        // Plus que acabou com o app fechado (além da graça): a data do
+        // cache é o fim dele. Sem isto, o convite de retorno (14 dias)
+        // só alcançava quem voltasse na 1ª semana — justamente quem
+        // menos precisava ser chamado de volta.
+        if (m['plus'] == 'true' && expires != null) {
+          if (_lastPlusEndedAt == null || expires.isAfter(_lastPlusEndedAt!)) {
+            _lastPlusEndedAt = expires;
+            _historyUid = _cachedUid;
+            unawaited(_savePlusHistory());
+          }
+        }
+        notifyListeners();
+        return;
+      }
+      _plusFromCache = true;
+      isPeregrinoPlus = true;
+      plusProductId = (m['product'] ?? '').isEmpty ? null : m['product'];
+      plusExpiresAt = expires;
+      plusWillRenew = m['willRenew'] == 'true';
+      plusInTrial = m['trial'] == 'true';
+      plusBillingIssue = m['billing'] == 'true';
+      notifyListeners();
+    } catch (e) {
+      debugPrint('SubscriptionService restore cache falhou: $e');
+    }
+  }
+
+  static const _historyPrefsKey = 'plusHistoryCache';
+
+  Future<void> _savePlusHistory() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setStringList(_historyPrefsKey, [
+        'ended=${_lastPlusEndedAt?.toIso8601String() ?? ''}',
+        'uid=${_boundUid ?? _historyUid ?? ''}',
+      ]);
+    } catch (_) {}
+  }
+
+  Future<void> _restorePlusHistory() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final raw = prefs.getStringList(_historyPrefsKey);
+      if (raw == null) return;
+      for (final e in raw) {
+        if (e.startsWith('ended=')) {
+          // Só um fim de verdade entra: '' não apaga o que o cache semeou.
+          final parsed = DateTime.tryParse(e.substring(6));
+          if (parsed != null) _lastPlusEndedAt = parsed;
+        }
+        if (e.startsWith('uid=')) {
+          final owner = e.substring(4);
+          if (owner.isNotEmpty) _historyUid = owner;
+        }
+      }
+      if (_lastPlusEndedAt != null) notifyListeners();
+    } catch (_) {}
   }
 
   Future<void> _loadOfferings() async {
@@ -206,6 +467,7 @@ class SubscriptionService extends ChangeNotifier {
       ]..sort((a, b) => a.storeProduct.price.compareTo(b.storeProduct.price));
       _offeringsReady = availablePackages.isNotEmpty;
       notifyListeners();
+      await _loadTrialEligibility();
     } catch (e) {
       _offeringsReady = false;
       availablePackages = const [];
@@ -214,10 +476,47 @@ class SubscriptionService extends ChangeNotifier {
     }
   }
 
+  Future<void> _loadTrialEligibility() async {
+    if (_debugFakeStore) return; // o laboratório marca todo mundo elegível
+    final ids = [for (final p in availablePackages) p.storeProduct.identifier];
+    if (ids.isEmpty) return;
+    try {
+      final map = await Purchases.checkTrialOrIntroductoryPriceEligibility(ids);
+      _trialEligibility = {for (final e in map.entries) e.key: e.value.status};
+      notifyListeners();
+    } catch (e) {
+      debugPrint('SubscriptionService elegibilidade falhou: $e');
+    }
+  }
+
+  /// Dias de teste grátis que dá para **prometer na tela** para [p]:
+  /// só com elegibilidade confirmada. Quem já testou/assinou (o público
+  /// do winback!) ou está em status desconhecido vê a assinatura direta
+  /// — prometer trial para inelegível é cobrança-surpresa e reembolso.
+  int? trialDaysFor(Package p) {
+    final status = _trialEligibility[p.storeProduct.identifier];
+    if (status != IntroEligibilityStatus.introEligibilityStatusEligible) {
+      return null;
+    }
+    return trialDays(p);
+  }
+
   void _onCustomerInfo(CustomerInfo info) {
     final entitlement = info.entitlements.active[_entitlementId];
-    final badgeBefore = hasBadge;
+    final wasPlus = isPeregrinoPlus;
+    final prevExpiry = plusExpiresAt;
+    _storeAnswered = true;
+    _plusFromCache = false;
     isPeregrinoPlus = entitlement != null;
+    if (wasPlus && !isPeregrinoPlus) {
+      // O Plus acabou: guarda quando (e de quem), para o retorno (winback).
+      _lastPlusEndedAt = prevExpiry ?? DateTime.now();
+      _historyUid = _boundUid;
+      unawaited(_savePlusHistory());
+    }
+    if (wasPlus != isPeregrinoPlus && availablePackages.isNotEmpty) {
+      unawaited(_loadTrialEligibility());
+    }
     plusProductId = entitlement?.productIdentifier;
     plusExpiresAt = DateTime.tryParse(entitlement?.expirationDate ?? '');
     plusWillRenew = entitlement?.willRenew ?? false;
@@ -227,8 +526,8 @@ class SubscriptionService extends ChangeNotifier {
     isSupporter = info.nonSubscriptionTransactions.any(
       (t) => t.productIdentifier.startsWith(_supportProductPrefix),
     );
+    unawaited(_saveEntitlementCache());
     notifyListeners();
-    if (hasBadge != badgeBefore) onBadgeChanged?.call(hasBadge);
 
     final expiration = entitlement?.expirationDate;
     if (entitlement != null &&
@@ -330,8 +629,12 @@ class SubscriptionService extends ChangeNotifier {
     try {
       final info = await Purchases.restorePurchases();
       _onCustomerInfo(info);
+      unawaited(
+        AnalyticsService.instance.logRestore(isPeregrinoPlus ? 'plus' : 'none'),
+      );
     } catch (e) {
       lastError = L10n.current.paywallRestoreFailed;
+      unawaited(AnalyticsService.instance.logRestore('error'));
       debugPrint('Falha ao restaurar compra: $e');
     } finally {
       loading = false;
@@ -341,6 +644,17 @@ class SubscriptionService extends ChangeNotifier {
 
   /// Vitalício: assinatura ativa sem data de fim.
   bool get plusLifetime => isPeregrinoPlus && plusExpiresAt == null;
+
+  /// O pacote é o anual Fundador (mesmo tipo anual, outro produto).
+  static bool isFounderPackage(Package p) =>
+      p.storeProduct.identifier == founderProductId;
+
+  /// A assinatura ativa é o Fundador de lançamento.
+  bool get plusIsFounder => plusProductId == founderProductId;
+
+  /// Pacote Fundador da oferta atual, se ainda estiver à venda.
+  Package? get founderPackage =>
+      availablePackages.where(isFounderPackage).firstOrNull;
 
   /// Tipo do plano ativo (anual, mensal…), pelo produto da oferta.
   PackageType? get plusPackageType => availablePackages
@@ -362,9 +676,11 @@ class SubscriptionService extends ChangeNotifier {
     }
   }
 
-  /// Plano anual da oferta atual, se houver.
+  /// Plano anual regular da oferta atual, se houver. O Fundador é anual
+  /// também, mas não entra aqui: quem usa este getter quer o plano com
+  /// teste grátis (folha de oferta, aviso de promoção).
   Package? get annualPackage => availablePackages
-      .where((p) => p.packageType == PackageType.annual)
+      .where((p) => p.packageType == PackageType.annual && !isFounderPackage(p))
       .firstOrNull;
 
   /// Dias do teste grátis do pacote, se houver.
@@ -417,7 +733,9 @@ class SubscriptionService extends ChangeNotifier {
   void _debugGrantPlus(Package? package) {
     isPeregrinoPlus = true;
     final type = package?.packageType ?? PackageType.annual;
-    final trial = package == null ? null : trialDays(package);
+    final trial = package == null
+        ? null
+        : SubscriptionService.trialDays(package);
     plusProductId = package?.storeProduct.identifier ?? 'plus_annual';
     plusInTrial = trial != null;
     plusWillRenew = type != PackageType.lifetime;
@@ -434,7 +752,6 @@ class SubscriptionService extends ChangeNotifier {
   /// Assinante simulado (sem loja).
   void debugSetPlus(bool value) {
     if (!kDebugMode) return;
-    final before = hasBadge;
     if (value) {
       _debugGrantPlus(
         availablePackages
@@ -448,17 +765,27 @@ class SubscriptionService extends ChangeNotifier {
     }
     unawaited(_debugSave());
     notifyListeners();
-    if (hasBadge != before) onBadgeChanged?.call(hasBadge);
   }
 
   /// Apoiador simulado (sem loja).
   void debugSetSupporter(bool value) {
     if (!kDebugMode) return;
-    final before = hasBadge;
     isSupporter = value;
     unawaited(_debugSave());
     notifyListeners();
-    if (hasBadge != before) onBadgeChanged?.call(hasBadge);
+  }
+
+  /// Simula elegibilidade de trial no laboratório (testar o winback
+  /// sem promessa de teste para quem já testou).
+  void debugSetTrialEligible(String productId, bool eligible) {
+    if (!kDebugMode) return;
+    _trialEligibility = {
+      ..._trialEligibility,
+      productId: eligible
+          ? IntroEligibilityStatus.introEligibilityStatusEligible
+          : IntroEligibilityStatus.introEligibilityStatusIneligible,
+    };
+    notifyListeners();
   }
 
   /// Troca a data da promoção. [override] false volta ao Remote Config.
@@ -480,10 +807,16 @@ class SubscriptionService extends ChangeNotifier {
       availablePackages = _debugPlans();
       supportPackages = _debugSupport();
       _offeringsReady = true;
+      _trialEligibility = {
+        for (final p in availablePackages)
+          p.storeProduct.identifier:
+              IntroEligibilityStatus.introEligibilityStatusEligible,
+      };
     } else {
       availablePackages = const [];
       supportPackages = const [];
       _offeringsReady = false;
+      _trialEligibility = const {};
     }
     unawaited(_debugSave());
     notifyListeners();
@@ -519,13 +852,17 @@ class SubscriptionService extends ChangeNotifier {
       availablePackages = _debugPlans();
       supportPackages = _debugSupport();
       _offeringsReady = true;
+      _trialEligibility = {
+        for (final p in availablePackages)
+          p.storeProduct.identifier:
+              IntroEligibilityStatus.introEligibilityStatusEligible,
+      };
     }
     if (m['plus'] == 'true') _debugGrantPlus(annualPackage);
     notifyListeners();
   }
 
   Future<bool> _debugFakePurchase(void Function() grant) async {
-    final before = hasBadge;
     loading = true;
     notifyListeners();
     await Future<void>.delayed(const Duration(milliseconds: 700));
@@ -533,7 +870,6 @@ class SubscriptionService extends ChangeNotifier {
     unawaited(_debugSave());
     loading = false;
     notifyListeners();
-    if (hasBadge != before) onBadgeChanged?.call(hasBadge);
     return true;
   }
 
@@ -561,14 +897,23 @@ class SubscriptionService extends ChangeNotifier {
     PresentedOfferingContext(offering, null, null),
   );
 
+  // Espelha a loja real decidida em out/2026 (ver MONETIZATION.md):
+  // mensal 19,90 · Fundador 89,90 sem teste · anual 119,90 com 14 dias.
   static List<Package> _debugPlans() => [
-    _debugPackage('plus_monthly', PackageType.monthly, 12.90, r'R$ 12,90'),
+    _debugPackage('plus_monthly', PackageType.monthly, 19.90, r'R$ 19,90'),
     _debugPackage(
-      'plus_annual',
+      founderProductId,
       PackageType.annual,
-      79.90,
-      r'R$ 79,90',
-      perMonth: r'R$ 6,66',
+      89.90,
+      r'R$ 89,90',
+      perMonth: r'R$ 7,49',
+    ),
+    _debugPackage(
+      annualProductId,
+      PackageType.annual,
+      119.90,
+      r'R$ 119,90',
+      perMonth: r'R$ 9,99',
       intro: const IntroductoryPrice(
         0,
         r'R$ 0,00',
@@ -578,11 +923,10 @@ class SubscriptionService extends ChangeNotifier {
         14,
       ),
     ),
-    _debugPackage('plus_lifetime', PackageType.lifetime, 199.0, r'R$ 199,00'),
   ];
 
   static List<Package> _debugSupport() => [
-    for (final (id, price) in [(5, 5.0), (15, 15.0), (30, 30.0)])
+    for (final (id, price) in [(5, 5.0), (15, 15.0), (30, 30.0), (50, 50.0)])
       _debugPackage(
         'apoio_$id',
         PackageType.custom,

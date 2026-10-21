@@ -25,8 +25,8 @@ import '../widgets/ui_primitives.dart';
 /// pelas ofertas (no máx. 1 por semana, fora da cena) — nunca no meio de uma
 /// cena, no onboarding ou no login.
 ///
-/// Ordem: por que apoiar → o que vem → o que segue grátis → planos → como o
-/// teste funciona. O botão de assinar fica fixo embaixo.
+/// Ordem: por que apoiar → o que vem → o que segue grátis → planos, cada
+/// um com a explicação colada nele → assinar (ao fim da lista).
 class PaywallScreen extends StatefulWidget {
   /// De onde o paywall foi aberto (analytics), ex.: `settings`.
   final String source;
@@ -41,31 +41,49 @@ class PaywallScreen extends StatefulWidget {
 const _appleEulaUrl =
     'https://www.apple.com/legal/internet-services/itunes/dev/stdeula/';
 
-int _rank(PackageType t) => switch (t) {
-  PackageType.annual => 0,
-  PackageType.monthly => 1,
-  PackageType.lifetime => 2,
-  _ => 3,
-};
+/// Pioneiro primeiro (é a oferta de lançamento), depois o anual herói,
+/// o mensal âncora e o restante. Os dois anuais têm o mesmo tipo —
+/// desempata o produto.
+int _rank(Package p) => SubscriptionService.isFounderPackage(p)
+    ? 0
+    : switch (p.packageType) {
+        PackageType.annual => 1,
+        PackageType.monthly => 2,
+        PackageType.lifetime => 3,
+        _ => 4,
+      };
 
 class _PaywallScreenState extends State<PaywallScreen> {
   String? _selectedId;
+  String _viewState = 'offer';
 
   @override
   void initState() {
     super.initState();
     final sub = context.read<SubscriptionService>();
-    final state = sub.isPeregrinoPlus
+    _viewState = sub.isPeregrinoPlus
         ? 'paid'
         : sub.launchPromoActive
         ? 'promo'
-        : sub.isConfigured
+        : sub.canPurchase
         ? 'offer'
         : 'unavailable';
     AnalyticsService.instance.logPaywallView(
       source: widget.source,
-      state: state,
+      state: _viewState,
     );
+  }
+
+  @override
+  void dispose() {
+    // Fechar sem virar assinante nesta visita fecha o funil.
+    if (_viewState != 'paid') {
+      AnalyticsService.instance.logPaywallDismiss(
+        source: widget.source,
+        state: _viewState,
+      );
+    }
+    super.dispose();
   }
 
   @override
@@ -73,6 +91,7 @@ class _PaywallScreenState extends State<PaywallScreen> {
     final l10n = context.l10n;
     final sub = context.watch<SubscriptionService>();
     final paid = sub.isPeregrinoPlus;
+    if (paid) _viewState = 'paid';
     final promoUntil = paid ? null : sub.launchFreeUntil;
     final promoDate = promoUntil == null
         ? null
@@ -85,18 +104,20 @@ class _PaywallScreenState extends State<PaywallScreen> {
     final bottom = MediaQuery.viewPaddingOf(context).bottom;
 
     final packages = [...sub.availablePackages]
-      ..sort((x, y) => _rank(x.packageType).compareTo(_rank(y.packageType)));
-    final offer =
-        !paid && promoDate == null && sub.canPurchase;
+      ..sort((x, y) => _rank(x).compareTo(_rank(y)));
+    // Durante a promoção também dá para assinar: quem quer garantir o
+    // plano não espera o fim da gratuidade (a compra começa hoje).
+    final offer = !paid && sub.canPurchase;
+    // A oferta pode chegar depois da abertura (loja lenta): o estado do
+    // funil acompanha a tela, não congela no primeiro frame.
+    if (offer && _viewState == 'unavailable') _viewState = 'offer';
     final selected = packages.isEmpty
         ? null
         : packages.firstWhere(
             (p) => p.identifier == _selectedId,
             orElse: () => packages.first,
           );
-    final trial = selected == null
-        ? null
-        : SubscriptionService.trialDays(selected);
+    final trial = selected == null ? null : sub.trialDaysFor(selected);
     final renews = selected?.packageType != PackageType.lifetime;
 
     return ImmersiveScaffold(
@@ -180,10 +201,25 @@ class _PaywallScreenState extends State<PaywallScreen> {
                   if (paid) ...[
                     _YourPlan(sub: sub),
                     const SizedBox(height: AppSpace.lg),
+                    // Assinante também acha Restaurar/Termos/Privacidade.
+                    _LegalLinks(sub: sub),
+                    const SizedBox(height: AppSpace.lg),
                   ],
                   PlusPerkCard(detailed: true, footer: const _FreeForever()),
                   if (offer) ...[
                     const SizedBox(height: AppSpace.xl),
+                    if (promoDate != null) ...[
+                      Text(
+                        l10n.paywallPromoSubscribeNote(promoDate),
+                        textAlign: TextAlign.center,
+                        style: AppTypography.body(
+                          size: 12,
+                          height: 1.4,
+                          color: a.textSecondary,
+                        ),
+                      ),
+                      const SizedBox(height: AppSpace.md),
+                    ],
                     for (final p in packages) ...[
                       _PlanTile(
                         package: p,
@@ -191,31 +227,25 @@ class _PaywallScreenState extends State<PaywallScreen> {
                             .where((x) => x.packageType == PackageType.monthly)
                             .firstOrNull,
                         selected: p.identifier == selected!.identifier,
-                        trialDays: SubscriptionService.trialDays(p),
-                        onTap: () => setState(() => _selectedId = p.identifier),
+                        trialDays: sub.trialDaysFor(p),
+                        onTap: () {
+                          AnalyticsService.instance.logPaywallPlanSelect(
+                            source: widget.source,
+                            productId: p.storeProduct.identifier,
+                          );
+                          setState(() => _selectedId = p.identifier);
+                        },
                       ),
+                      if (p.identifier == selected.identifier) ...[
+                        const SizedBox(height: 10),
+                        _PlanExplain(
+                          package: p,
+                          trialDays: sub.trialDaysFor(p),
+                          pioneerTaken: sub.pioneerTaken,
+                          pioneerCap: sub.pioneerCap,
+                        ),
+                      ],
                       const SizedBox(height: 10),
-                    ],
-                    if (trial != null) ...[
-                      const SizedBox(height: AppSpace.md),
-                      _TrialTimeline(
-                        days: trial,
-                        price: SubscriptionService.packageLabel(selected!),
-                        footnote: [
-                          l10n.paywallTrialThen(
-                            trial,
-                            SubscriptionService.packageLabel(selected),
-                          ),
-                          if (renews) l10n.paywallAutoRenew,
-                        ].join(' '),
-                      ),
-                    ] else if (renews) ...[
-                      const SizedBox(height: AppSpace.lg),
-                      Text(
-                        l10n.paywallAutoRenew,
-                        textAlign: TextAlign.center,
-                        style: AppTypography.body(size: 11, color: a.textFaint),
-                      ),
                     ],
                     const SizedBox(height: AppSpace.lg),
                     _LegalLinks(sub: sub),
@@ -248,13 +278,20 @@ class _PaywallScreenState extends State<PaywallScreen> {
                         style: AppTypography.body(size: 12, color: a.textFaint),
                       ),
                     ],
-                  ] else if (!paid && promoDate == null) ...[
+                  ] else if (!paid) ...[
+                    // Sem oferta na tela (falha da loja), Restaurar continua:
+                    // é exatamente quem trocou de aparelho que precisa dele.
                     const SizedBox(height: AppSpace.xl),
-                    Text(
-                      l10n.paywallUnavailable,
-                      textAlign: TextAlign.center,
-                      style: AppTypography.body(size: 12, color: a.textFaint),
-                    ),
+                    if (promoDate == null)
+                      Text(
+                        l10n.paywallUnavailable,
+                        textAlign: TextAlign.center,
+                        style: AppTypography.body(size: 12, color: a.textFaint),
+                      ),
+                    if (sub.isConfigured) ...[
+                      const SizedBox(height: AppSpace.lg),
+                      _LegalLinks(sub: sub),
+                    ],
                   ],
                 ],
               ),
@@ -327,12 +364,15 @@ class _PlanTile extends StatelessWidget {
     final l10n = context.l10n;
     final product = package.storeProduct;
     final type = package.packageType;
-    final title = switch (type) {
-      PackageType.annual => l10n.paywallPlanAnnual,
-      PackageType.monthly => l10n.paywallPlanMonthly,
-      PackageType.lifetime => l10n.paywallPlanLifetime,
-      _ => product.title,
-    };
+    final founder = SubscriptionService.isFounderPackage(package);
+    final title = founder
+        ? l10n.paywallPlanFounder
+        : switch (type) {
+            PackageType.annual => l10n.paywallPlanAnnual,
+            PackageType.monthly => l10n.paywallPlanMonthly,
+            PackageType.lifetime => l10n.paywallPlanLifetime,
+            _ => product.title,
+          };
     final savings = _savings();
     final perMonth = type == PackageType.annual
         ? product.pricePerMonthString
@@ -409,7 +449,12 @@ class _PlanTile extends StatelessWidget {
                             title,
                             style: AppTypography.title(size: 16, color: a.text),
                           ),
-                          if (type == PackageType.annual)
+                          if (founder)
+                            SoftBadge(
+                              text: l10n.paywallFounderBadge,
+                              accent: AppRoles.reward,
+                            )
+                          else if (type == PackageType.annual)
                             SoftBadge(
                               text: savings != null
                                   ? l10n.paywallSave(savings)
@@ -418,6 +463,17 @@ class _PlanTile extends StatelessWidget {
                             ),
                         ],
                       ),
+                      if (founder) ...[
+                        const SizedBox(height: 2),
+                        Text(
+                          l10n.paywallFounderNote,
+                          style: AppTypography.body(
+                            size: 12,
+                            weight: FontWeight.w700,
+                            color: a.textSecondary,
+                          ),
+                        ),
+                      ],
                       if (trialDays != null) ...[
                         const SizedBox(height: 2),
                         Text(
@@ -456,15 +512,70 @@ class _PlanTile extends StatelessWidget {
   }
 }
 
-/// Como o teste funciona: hoje, o lembrete na véspera, a cobrança.
-class _TrialTimeline extends StatelessWidget {
-  final int days;
+/// Explicação do plano escolhido, colada nele. O teste conta os dias.
+/// O Pioneiro diz o preço de hoje. O mensal só guarda a renovação,
+/// para o aviso não ficar solto na tela.
+class _PlanExplain extends StatelessWidget {
+  final Package package;
+  final int? trialDays;
+  final int pioneerTaken;
+  final int pioneerCap;
+
+  const _PlanExplain({
+    required this.package,
+    required this.trialDays,
+    required this.pioneerTaken,
+    required this.pioneerCap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = context.l10n;
+    final price = SubscriptionService.packageLabel(package);
+    final renews = package.packageType != PackageType.lifetime;
+    final days = trialDays;
+    if (days != null) {
+      return _PlanSteps(
+        title: l10n.paywallTimelineTitle,
+        steps: [
+          (l10n.paywallTimelineToday, l10n.paywallTimelineTodayBody),
+          (l10n.paywallTimelineDay(days - 1), l10n.paywallTimelineReminderBody),
+          (
+            l10n.paywallTimelineDay(days),
+            l10n.paywallTimelineChargeBody(price),
+          ),
+        ],
+        footnote: renews ? l10n.paywallAutoRenew : '',
+      );
+    }
+    if (SubscriptionService.isFounderPackage(package)) {
+      return _PioneerNote(
+        price: package.storeProduct.priceString,
+        taken: pioneerTaken,
+        cap: pioneerCap,
+        footnote: renews ? l10n.paywallAutoRenew : '',
+      );
+    }
+    if (!renews) return const SizedBox.shrink();
+    return _PlanSteps(
+      title: '',
+      steps: const [],
+      footnote: l10n.paywallAutoRenew,
+    );
+  }
+}
+
+/// O preço do Pioneiro, o contador das vagas e a nota legal no mesmo card.
+class _PioneerNote extends StatelessWidget {
   final String price;
+  final int taken;
+  final int cap;
   final String footnote;
 
-  const _TrialTimeline({
-    required this.days,
+  const _PioneerNote({
     required this.price,
+    required this.taken,
+    required this.cap,
     required this.footnote,
   });
 
@@ -472,86 +583,184 @@ class _TrialTimeline extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final l10n = context.l10n;
-    final steps = [
-      (l10n.paywallTimelineToday, l10n.paywallTimelineTodayBody),
-      (l10n.paywallTimelineDay(days - 1), l10n.paywallTimelineReminderBody),
-      (l10n.paywallTimelineDay(days), l10n.paywallTimelineChargeBody(price)),
-    ];
     return GlassCard(
       padding: AppMetrics.cardPadding,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
-            l10n.paywallTimelineTitle,
-            style: AppTypography.title(size: 15, color: a.text),
+            l10n.paywallFounderTitle,
+            style: AppTypography.title(size: 16, color: a.text),
           ),
           const SizedBox(height: AppSpace.md),
-          for (var i = 0; i < steps.length; i++)
-            IntrinsicHeight(
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  SizedBox(
-                    width: 22,
-                    child: Column(
-                      children: [
-                        Container(
-                          width: 12,
-                          height: 12,
-                          margin: const EdgeInsets.only(top: 4),
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            color: i == 0 ? AppRoles.reward : a.insetFill,
-                            border: Border.all(
-                              color: i == 0 ? AppRoles.reward : a.textFaint,
-                              width: 2,
-                            ),
-                          ),
-                        ),
-                        if (i < steps.length - 1)
-                          Expanded(
-                            child: Container(width: 2, color: a.insetBorder),
-                          ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(width: AppSpace.sm),
-                  Expanded(
-                    child: Padding(
-                      padding: EdgeInsets.only(
-                        bottom: i < steps.length - 1 ? AppSpace.md : 0,
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text(
-                            steps[i].$1,
-                            style: AppTypography.body(
-                              size: 13,
-                              weight: FontWeight.w700,
-                              color: a.text,
-                            ),
-                          ),
-                          Text(
-                            steps[i].$2,
-                            style: AppTypography.body(
-                              size: 12,
-                              color: a.textSecondary,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
+          _PioneerCounter(taken: taken, cap: cap),
+          const SizedBox(height: AppSpace.md),
+          Text(
+            l10n.paywallFounderBody(price),
+            style: AppTypography.body(size: 14, color: a.text),
+          ),
           if (footnote.isNotEmpty) ...[
             const SizedBox(height: AppSpace.lg),
             Text(
               footnote,
-              textAlign: TextAlign.center,
+              style: AppTypography.body(size: 11, color: a.textFaint),
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+/// Quantas vagas do Pioneiro já foram ocupadas, de um teto fixo.
+class _PioneerCounter extends StatelessWidget {
+  final int taken;
+  final int cap;
+
+  const _PioneerCounter({required this.taken, required this.cap});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final l10n = context.l10n;
+    final total = cap <= 0 ? 1 : cap;
+    final fill = (taken / total).clamp(0.0, 1.0);
+    final label =
+        '${taken.clamp(0, total)} ${l10n.paywallFounderCounter(total)}';
+    return Semantics(
+      label: label,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.baseline,
+            textBaseline: TextBaseline.alphabetic,
+            children: [
+              Text(
+                '${taken.clamp(0, total)}',
+                style: AppTypography.display(size: 24, color: a.text),
+              ),
+              const SizedBox(width: AppSpace.sm),
+              Text(
+                l10n.paywallFounderCounter(total),
+                style: AppTypography.body(size: 13, color: a.textSecondary),
+              ),
+            ],
+          ),
+          const SizedBox(height: AppSpace.sm),
+          ClipRRect(
+            borderRadius: BorderRadius.circular(AppRadii.hair),
+            child: SizedBox(
+              height: AppSpace.xs,
+              child: Stack(
+                fit: StackFit.expand,
+                children: [
+                  ColoredBox(color: a.insetFill),
+                  FractionallySizedBox(
+                    alignment: Alignment.centerLeft,
+                    widthFactor: fill,
+                    child: const ColoredBox(color: AppRoles.reward),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Passos do teste e a nota legal no mesmo card. A nota fica apagada
+/// para não repetir o que os passos já disseram.
+class _PlanSteps extends StatelessWidget {
+  final String title;
+  final List<(String, String)> steps;
+  final String footnote;
+
+  const _PlanSteps({
+    required this.title,
+    required this.steps,
+    required this.footnote,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return GlassCard(
+      padding: AppMetrics.cardPadding,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          if (title.isNotEmpty)
+            Text(title, style: AppTypography.title(size: 16, color: a.text)),
+          if (steps.isNotEmpty) ...[
+            const SizedBox(height: AppSpace.md),
+            for (var i = 0; i < steps.length; i++)
+              IntrinsicHeight(
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    SizedBox(
+                      width: 22,
+                      child: Column(
+                        children: [
+                          Container(
+                            width: 12,
+                            height: 12,
+                            margin: const EdgeInsets.only(top: 4),
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: i == 0 ? AppRoles.reward : a.insetFill,
+                              border: Border.all(
+                                color: i == 0 ? AppRoles.reward : a.textFaint,
+                                width: 2,
+                              ),
+                            ),
+                          ),
+                          if (i < steps.length - 1)
+                            Expanded(
+                              child: Container(width: 2, color: a.insetBorder),
+                            ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(width: AppSpace.sm),
+                    Expanded(
+                      child: Padding(
+                        padding: EdgeInsets.only(
+                          bottom: i < steps.length - 1 ? AppSpace.md : 0,
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(
+                              steps[i].$1,
+                              style: AppTypography.body(
+                                size: 13,
+                                weight: FontWeight.w700,
+                                color: a.text,
+                              ),
+                            ),
+                            Text(
+                              steps[i].$2,
+                              style: AppTypography.body(
+                                size: 12,
+                                color: a.textSecondary,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+          ],
+          if (footnote.isNotEmpty) ...[
+            SizedBox(height: steps.isEmpty ? 0 : AppSpace.lg),
+            Text(
+              footnote,
               style: AppTypography.body(size: 11, color: a.textFaint),
             ),
           ],
@@ -599,15 +808,17 @@ class _LegalLinks extends StatelessWidget {
   }
 }
 
-/// Botão de assinar fixo embaixo — sempre à vista, com a nota curta.
-/// Nome do plano ativo (Anual, Mensal, Vitalício).
+/// Nome do plano ativo (Pioneiro, Anual, Mensal, Vitalício). Pioneiro
+/// vem antes do tipo: o produto é anual, no preço do lançamento.
 String plusPlanLabel(AppLocalizations l10n, SubscriptionService sub) =>
-    switch (sub.plusPackageType) {
-      PackageType.annual => l10n.paywallPlanAnnual,
-      PackageType.monthly => l10n.paywallPlanMonthly,
-      PackageType.lifetime => l10n.paywallPlanLifetime,
-      _ => sub.plusLifetime ? l10n.paywallPlanLifetime : l10n.paywallTitle,
-    };
+    sub.plusIsFounder
+    ? l10n.paywallPlanFounder
+    : switch (sub.plusPackageType) {
+        PackageType.annual => l10n.paywallPlanAnnual,
+        PackageType.monthly => l10n.paywallPlanMonthly,
+        PackageType.lifetime => l10n.paywallPlanLifetime,
+        _ => sub.plusLifetime ? l10n.paywallPlanLifetime : l10n.paywallTitle,
+      };
 
 /// Estado do plano: renova em, teste até, cancelada, problema de pagamento.
 String plusStatusLabel(AppLocalizations l10n, SubscriptionService sub) {

@@ -37,7 +37,13 @@ class ProfileHero extends StatelessWidget {
 
   /// "Peregrino desde setembro de 2026".
   final String? sinceLabel;
+
+  /// Selo de Apoiador (apoio avulso) — selo próprio, distinto do de
+  /// Peregrino ([pilgrim]).
   final bool supporter;
+
+  /// Selo de Peregrino (assinatura Peregrino+) — exclusivo do assinante.
+  final bool pilgrim;
   final int steps;
   final int missions;
   final int? accuracyPercent;
@@ -58,6 +64,7 @@ class ProfileHero extends StatelessWidget {
     this.epithetColor,
     this.sinceLabel,
     this.supporter = false,
+    this.pilgrim = false,
     required this.steps,
     required this.missions,
     this.accuracyPercent,
@@ -113,6 +120,7 @@ class ProfileHero extends StatelessWidget {
                   epithetColor: epithetColor,
                   sinceLabel: sinceLabel,
                   supporter: supporter,
+                  pilgrim: pilgrim,
                   steps: steps,
                   missions: missions,
                   accuracyPercent: accuracyPercent,
@@ -172,6 +180,7 @@ class _ProfileIdentityCard extends StatelessWidget {
   final Color? epithetColor;
   final String? sinceLabel;
   final bool supporter;
+  final bool pilgrim;
   final int steps;
   final int missions;
   final int? accuracyPercent;
@@ -186,6 +195,7 @@ class _ProfileIdentityCard extends StatelessWidget {
     this.epithetColor,
     this.sinceLabel,
     this.supporter = false,
+    this.pilgrim = false,
     required this.steps,
     required this.missions,
     this.accuracyPercent,
@@ -243,6 +253,14 @@ class _ProfileIdentityCard extends StatelessWidget {
                             ),
                           ),
                         ),
+                        if (pilgrim) ...[
+                          const SizedBox(width: AppSpace.sm),
+                          SoftBadge(
+                            text: l10n.pilgrimBadge,
+                            glyph: CinematicGlyph.crown,
+                            accent: AppRoles.reward,
+                          ),
+                        ],
                         if (supporter) ...[
                           const SizedBox(width: AppSpace.sm),
                           SoftBadge(
@@ -748,7 +766,7 @@ class _DayDot extends StatelessWidget {
 
 /// Últimas semanas: uma lamparina por semana, agrupadas pelo mês.
 /// O número dentro do frasco é os dias caminhados, de 7.
-class _WeeksTrend extends StatelessWidget {
+class _WeeksTrend extends StatefulWidget {
   final List<int> perWeek;
   final int walked;
   final int weeks;
@@ -762,6 +780,45 @@ class _WeeksTrend extends StatelessWidget {
     required this.weeks,
     required this.start,
   });
+
+  @override
+  State<_WeeksTrend> createState() => _WeeksTrendState();
+}
+
+class _WeeksTrendState extends State<_WeeksTrend>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _wave = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 2600),
+  );
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    _syncWave();
+  }
+
+  @override
+  void didUpdateWidget(_WeeksTrend oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    _syncWave();
+  }
+
+  void _syncWave() {
+    final still = MediaQuery.maybeDisableAnimationsOf(context) ?? false;
+    final lit = widget.perWeek.any((days) => days > 0);
+    if (lit && !still) {
+      if (!_wave.isAnimating) _wave.repeat();
+    } else {
+      _wave.stop();
+    }
+  }
+
+  @override
+  void dispose() {
+    _wave.dispose();
+    super.dispose();
+  }
 
   /// A semana fica no mês da quinta: é o dia que cai na maior parte dela.
   static List<_MonthSpan> _spans(DateTime start, int weeks) {
@@ -791,9 +848,9 @@ class _WeeksTrend extends StatelessWidget {
     const maxBar = 48.0;
     const monthGap = 12.0;
     const weekGap = 4.0;
-    final spans = _spans(start, perWeek.length);
+    final spans = _spans(widget.start, widget.perWeek.length);
     return Semantics(
-      label: l10n.profileWeeksWalkedSemantics(walked, weeks),
+      label: l10n.profileWeeksWalkedSemantics(widget.walked, widget.weeks),
       excludeSemantics: true,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -827,10 +884,12 @@ class _WeeksTrend extends StatelessWidget {
                         if (i > 0) const SizedBox(width: weekGap),
                         Expanded(
                           child: _WeekBar(
-                            days: perWeek[spans[g].start + i],
+                            days: widget.perWeek[spans[g].start + i],
                             height: maxBar,
-                            current: spans[g].start + i == perWeek.length - 1,
+                            current:
+                                spans[g].start + i == widget.perWeek.length - 1,
                             index: spans[g].start + i,
+                            wave: _wave,
                           ),
                         ),
                       ],
@@ -892,90 +951,66 @@ class _MonthSpan {
 
 /// Uma semana como jarro de azeite: cada dia caminhado enche um pouco mais
 /// — o óleo da unção, a lâmpada que não se apaga (Mt 25:4).
-class _WeekBar extends StatefulWidget {
+class _WeekBar extends StatelessWidget {
   final int days;
   final double height;
   final bool current;
   final int index;
+  final Animation<double> wave;
 
   const _WeekBar({
     required this.days,
     required this.height,
     required this.current,
     required this.index,
+    required this.wave,
   });
-
-  @override
-  State<_WeekBar> createState() => _WeekBarState();
-}
-
-class _WeekBarState extends State<_WeekBar>
-    with SingleTickerProviderStateMixin {
-  late final AnimationController _wave = AnimationController(
-    vsync: this,
-    duration: const Duration(milliseconds: 2600),
-  );
-
-  @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-    final still = MediaQuery.maybeDisableAnimationsOf(context) ?? false;
-    if (widget.days > 0 && !still) {
-      if (!_wave.isAnimating) _wave.repeat();
-    } else {
-      _wave.stop();
-    }
-  }
-
-  @override
-  void dispose() {
-    _wave.dispose();
-    super.dispose();
-  }
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final target = widget.days / 7;
+    final target = days / 7;
     return Column(
       children: [
         // Chama só diz se a semana acendeu. A conta fica no número.
         ClipRect(
-          child: AnimatedBuilder(
-            animation: _wave,
-            builder: (context, _) => CustomPaint(
-              size: const Size(double.infinity, 22),
-              painter: _WickFlamePainter(
-                days: widget.days,
-                phase: _wave.value * 2 * math.pi + widget.index * 1.3,
-              ),
-            ),
-          ),
+          child: days == 0
+              ? const SizedBox(height: 22)
+              : AnimatedBuilder(
+                  animation: wave,
+                  builder: (context, _) => CustomPaint(
+                    size: const Size(double.infinity, 22),
+                    painter: _WickFlamePainter(
+                      days: days,
+                      phase: wave.value * 2 * math.pi + index * 1.3,
+                    ),
+                  ),
+                ),
         ),
         // O azeite sobe reto até o dia. O número fica no meio do frasco:
         // escuro quando o azeite cobre o centro, claro quando fica no vidro.
         TweenAnimationBuilder<double>(
           tween: Tween(begin: 0, end: target),
-          duration: Duration(milliseconds: 700 + widget.index * 40),
+          duration: Duration(milliseconds: 700 + index * 40),
           curve: AppMotion.enter,
           builder: (context, level, _) {
             final onOil = level >= 0.5;
             return SizedBox(
-              height: widget.height,
+              height: height,
               width: double.infinity,
               child: Stack(
                 alignment: Alignment.center,
                 children: [
                   CustomPaint(
-                    size: Size(double.infinity, widget.height),
+                    size: Size(double.infinity, height),
                     painter: _OilVesselPainter(
                       level: level,
                       glass: a.text,
-                      current: widget.current,
+                      current: current,
                     ),
                   ),
                   Text(
-                    '${widget.days}',
+                    '$days',
                     style: AppTypography.body(
                       size: 13,
                       weight: FontWeight.w800,
@@ -993,7 +1028,7 @@ class _WeekBarState extends State<_WeekBar>
         const SizedBox(height: 3),
         SizedBox(
           height: 7,
-          child: widget.current
+          child: current
               ? const Center(
                   child: CustomPaint(
                     size: Size(12, 7),

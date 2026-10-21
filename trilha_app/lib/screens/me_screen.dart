@@ -181,7 +181,8 @@ class _MeScreenState extends State<MeScreen> {
           sinceLabel: ProfileHero.sinceFrom(
             progress.firstLessonDate ?? progress.firstOpenDate,
           ),
-          supporter: sub.hasBadge,
+          supporter: sub.isSupporter,
+          pilgrim: sub.hasPilgrimBadge,
           steps: progress.steps,
           missions: progress.completedMissions.length,
           accuracyPercent: accuracy,
@@ -190,7 +191,8 @@ class _MeScreenState extends State<MeScreen> {
         pad(
           PilgrimIdentityCard(
             name: progress.userName,
-            supporter: sub.hasBadge,
+            supporter: sub.isSupporter,
+            pilgrim: sub.hasPilgrimBadge,
             photoUrl: backend.userPhotoUrl,
             seed: backend.uid,
             style: progress.settings.portraitStyle,
@@ -222,6 +224,8 @@ class _MeScreenState extends State<MeScreen> {
         ),
         const SizedBox(height: AppSpace.md),
         pad(const ProfileAccuracyCard()),
+        const SizedBox(height: AppSpace.md),
+        pad(const ExplainedErrorsCard()),
       ] else
         pad(const ProfilePlusTeaser()),
       if (progress.hasOpenWeeklyQuests) ...[

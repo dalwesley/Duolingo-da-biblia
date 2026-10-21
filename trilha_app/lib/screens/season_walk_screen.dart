@@ -198,7 +198,13 @@ class _WeekBlock extends StatelessWidget {
     final plusOpen = context.watch<SubscriptionService>().plusFeaturesOpen;
     final weekEnded =
         days.isNotEmpty && !days.last.dateOn(campaign.start).isAfter(today);
-    final reviewReady = weekEnded && doneCount >= (days.length / 2).ceil();
+    // 1 revisão por dia: o fechamento só é oferecido se esta semana ainda
+    // não fechou e nenhuma outra revisão ocupou o dia de hoje.
+    final reviewReady =
+        weekEnded &&
+        doneCount >= (days.length / 2).ceil() &&
+        !progress.isSeasonReviewDone(campaign.id, weekIndex) &&
+        !progress.isReviewDoneToday;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -380,6 +386,46 @@ class _SeasonWalkReviewScreenState extends State<SeasonWalkReviewScreen> {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final l10n = context.l10n;
+    // Gate na própria tela: sem Plus, nada de insights nem perguntas —
+    // mesmo se uma rota futura abrir esta revisão direto.
+    final plusOpen = context.watch<SubscriptionService>().plusFeaturesOpen;
+    if (!plusOpen) {
+      return Scaffold(
+        backgroundColor: Colors.transparent,
+        body: ImmersiveBackground(
+          frameChild: false,
+          child: SafeArea(
+            child: Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: AppSpace.screen,
+                  ),
+                  child: TopBar(
+                    title: l10n.seasonWeekReviewTitle(widget.weekIndex + 1),
+                    subtitle: widget.campaign.title,
+                    onBack: () => Navigator.pop(context),
+                    leadingGlyph: CinematicGlyph.scroll,
+                  ),
+                ),
+                Expanded(
+                  child: ContentFrame(
+                    child: Padding(
+                      padding: const EdgeInsets.all(AppSpace.screen),
+                      child: CopperCta(
+                        label: l10n.weeklyReviewSeePlus,
+                        expanded: true,
+                        onTap: () => openSeasonPaywall(context),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      );
+    }
     return Scaffold(
       backgroundColor: Colors.transparent,
       body: ImmersiveBackground(
@@ -460,8 +506,22 @@ class _SeasonWalkReviewScreenState extends State<SeasonWalkReviewScreen> {
   }
 
   Future<void> _startReview() async {
-    setState(() => _loading = true);
+    if (!context.read<SubscriptionService>().plusFeaturesOpen) {
+      openSeasonPaywall(context);
+      return;
+    }
+    // 1 revisão por dia: se outra revisão ocupou hoje, esta espera.
     final progress = context.read<ProgressService>();
+    if (progress.isReviewDoneToday &&
+        !progress.isSeasonReviewDone(widget.campaign.id, widget.weekIndex)) {
+      showAppToastFor(
+        context,
+        message: context.l10n.reviewSlotTaken,
+        face: CloudFace.erro,
+      );
+      return;
+    }
+    setState(() => _loading = true);
     final slugs = {for (final d in _days) d.trailSlug};
     for (final slug in slugs) {
       await ContentCatalogService.instance.ensureTrailBank(slug);
@@ -514,6 +574,7 @@ class _SeasonWalkReviewScreenState extends State<SeasonWalkReviewScreen> {
           practiceMode: true,
           missionOverride: review,
           questionIdsOverride: ids,
+          requiresPlus: true,
         ),
       ),
     );

@@ -545,6 +545,7 @@ class _FinishMark extends StatefulWidget {
 class _FinishMarkState extends State<_FinishMark>
     with SingleTickerProviderStateMixin {
   late final AnimationController _pulse;
+  late final Animation<double> _glow;
 
   @override
   void initState() {
@@ -553,6 +554,9 @@ class _FinishMarkState extends State<_FinishMark>
       vsync: this,
       duration: const Duration(milliseconds: 1600),
     )..repeat(reverse: true);
+    _glow = _pulse.drive(
+      Tween<double>(begin: 0.4, end: 1).chain(CurveTween(curve: AppMotion.move)),
+    );
   }
 
   @override
@@ -566,32 +570,55 @@ class _FinishMarkState extends State<_FinishMark>
     final a = Appearance.of(context);
     final boost = widget.lit ? 1.0 : 0.0;
     final tone = widget.lit ? AppRoles.success : a.chrome;
-    return AnimatedBuilder(
-      animation: _pulse,
-      builder: (context, child) {
-        final t = AppMotion.move.transform(_pulse.value);
-        return Container(
-          width: 46,
-          height: 46,
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            color: Color.lerp(a.insetFill, tone, 0.16 + 0.1 * t + 0.2 * boost),
-            border: Border.all(
-              color: tone.withValues(alpha: 0.72 + 0.28 * t),
-              width: 1.4,
-            ),
-            boxShadow: [
-              BoxShadow(
-                color: tone.withValues(alpha: 0.22 + 0.38 * t + 0.2 * boost),
-                blurRadius: 10 + 10 * t,
+    return SizedBox(
+      width: 46,
+      height: 46,
+      child: Stack(
+        clipBehavior: Clip.none,
+        alignment: Alignment.center,
+        children: [
+          FadeTransition(
+            opacity: _glow,
+            child: DecoratedBox(
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                boxShadow: [
+                  BoxShadow(
+                    color: tone.withValues(alpha: widget.lit ? 0.8 : 0.45),
+                    blurRadius: 16,
+                  ),
+                ],
               ),
-            ],
+              child: const SizedBox.square(dimension: 46),
+            ),
           ),
-          child: CustomPaint(
-            painter: _FinishFlagPainter(wave: _pulse.value, color: tone),
+          AnimatedBuilder(
+            animation: _pulse,
+            builder: (context, _) {
+              final t = AppMotion.move.transform(_pulse.value);
+              return Container(
+                width: 46,
+                height: 46,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Color.lerp(
+                    a.insetFill,
+                    tone,
+                    0.16 + 0.1 * t + 0.2 * boost,
+                  ),
+                  border: Border.all(
+                    color: tone.withValues(alpha: 0.72 + 0.28 * t),
+                    width: 1.4,
+                  ),
+                ),
+                child: CustomPaint(
+                  painter: _FinishFlagPainter(wave: _pulse.value, color: tone),
+                ),
+              );
+            },
           ),
-        );
-      },
+        ],
+      ),
     );
   }
 }

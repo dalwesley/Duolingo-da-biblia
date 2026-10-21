@@ -85,10 +85,20 @@ class BibleReadingPlan {
     return lastCompletedDay == today;
   }
 
-  /// Hoje a leitura está travada: plano guiado sem Peregrino+ (por exemplo,
-  /// a assinatura acabou no meio). A Bíblia inteira nunca trava.
+  /// Dias iniciais de todo plano guiado, para qualquer pessoa: dá para
+  /// começar e provar antes de o Peregrino+ entrar (como a Caminhada).
+  static const guidedFreeDays = 3;
+
+  /// Hoje a leitura está travada: plano guiado, amostra usada e sem
+  /// Peregrino+ (por exemplo, a assinatura acabou no meio). Quem ainda
+  /// está nos [guidedFreeDays] — ou já leu hoje — não trava.
+  /// A Bíblia inteira nunca trava.
   bool lockedToday({required bool plusOpen}) =>
-      active && isGuided && !plusOpen && !doneToday;
+      active &&
+      isGuided &&
+      !plusOpen &&
+      !doneToday &&
+      completedDays >= guidedFreeDays;
 
   BibleReadingPlan copyWith({
     bool? active,
@@ -118,8 +128,8 @@ class BibleReadingPlan {
   }
 
   /// Versão do formato salvo. Plano de versão anterior é lido como inativo:
-  /// em 2026-10-19 os planos viraram Peregrino+ (3 dias grátis) e todos os
-  /// planos existentes foram zerados, no aparelho e na nuvem.
+  /// quando os guiados viraram Peregrino+ (com 3 dias grátis no começo),
+  /// todos os planos existentes foram zerados, no aparelho e na nuvem.
   static const schema = 2;
 
   Map<String, dynamic> toMap() => {

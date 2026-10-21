@@ -5,6 +5,7 @@ import 'package:provider/provider.dart';
 import '../data/trail_repository.dart';
 import '../data/season_walk_catalog.dart';
 import '../l10n/app_language.dart';
+import '../models/season_walk.dart';
 import '../models/trail.dart';
 import '../widgets/act_feel.dart';
 import '../services/analytics_service.dart';
@@ -44,6 +45,7 @@ import '../widgets/season_challenge_banner.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import '../widgets/wave_hands_overlay.dart';
+import '../widgets/plus_billing_banner.dart';
 import '../widgets/plus_offer_sheet.dart';
 import 'bible_screen.dart';
 import 'memory_screen.dart';
@@ -233,10 +235,12 @@ class _HomeScreenState extends State<HomeScreen>
         paid: sub.isPeregrinoPlus,
         storeReady: sub.canPurchase,
         scenesDone: progress.completedMissions.length,
+        accountAgeDays: progress.accountAgeDays,
         promoUntil: sub.launchPromoDate,
         shown: state.shown,
         lastOfferWeek: state.lastWeek,
         thisWeek: week,
+        plusEndedAt: sub.lastPlusEndedAt,
       );
       if (kind == null || !mounted) return;
       final route = ModalRoute.of(context);
@@ -444,8 +448,23 @@ class _HomeScreenState extends State<HomeScreen>
               .missionsCompletedInWeek(progress.weeklyReviewWeekKey())
               .length
         : 0;
+    // Hierarquia da revisão (1 fluxo de revisão por dia): fechamento da
+    // temporada pendente silencia a oferta da semana; qualquer revisão
+    // feita hoje encerra as ofertas até amanhã.
+    final now = DateTime.now();
+    final campaign = SeasonWalkCatalog.current(now);
+    String ymdOf(DateTime d) => d.toIso8601String().substring(0, 10);
+    final seasonReviewPending = SeasonWalkAccess.weekReviewPending(
+      campaign: campaign,
+      today: now,
+      isDayDone: (d) =>
+          progress.isWalkDateDone(campaign.id, ymdOf(d.dateOn(campaign.start))),
+      isReviewDone: (w) => progress.isSeasonReviewDone(campaign.id, w),
+    );
     return [
-      if (reviewScenes > 0)
+      if (reviewScenes > 0 &&
+          !seasonReviewPending &&
+          !progress.isReviewDoneToday)
         _MoreTile(
           glyph: CinematicGlyph.scroll,
           title: l10n.weeklyReviewTitle,
@@ -497,6 +516,7 @@ class _HomeScreenState extends State<HomeScreen>
           color: a.chrome,
           onTap: () => _openCardSheet(SeasonChallengeBanner(catalog: trails)),
         ),
+      // A fila de erros é grátis para todo mundo — inclusive assinante.
       if (mistakes > 0)
         _MoreTile(
           glyph: CinematicGlyph.refresh,
@@ -587,7 +607,6 @@ class _HomeScreenState extends State<HomeScreen>
         : listen
         ? context.watch<CornerService>().face
         : context.read<CornerService>().face;
-
     // Fundo = gradiente da fase do dia do shell (ImmersiveScaffold); a arte
     // da trilha vive só dentro do card herói. Cards comuns ficam neutros.
     return Stack(
@@ -669,6 +688,11 @@ class _HomeScreenState extends State<HomeScreen>
                         const SizedBox(height: AppSpace.section),
                         _reveal(2, const StreakRepairBanner()),
                       ],
+                      // Cobrança do Peregrino+ falhou, venceu na graça ou
+                      // acabou nesta semana: o banner decide se aparece
+                      // (e carrega o próprio espaçamento — dispensar não
+                      // deixa buraco na Home).
+                      _reveal(2, const PlusBillingBanner()),
                       // O resto vive em "Mais para hoje" (abre em folha) e na aba
                       // Juntos — nada some, só deixa de disputar com a missão.
                       Builder(

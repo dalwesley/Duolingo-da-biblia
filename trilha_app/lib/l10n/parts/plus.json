@@ -57,6 +57,88 @@
     "en": "Lifetime",
     "es": "De por vida"
   },
+  "paywallPerkExplainBody": {
+    "pt": "Cada erro fica guardado, com a resposta certa e o porquê.",
+    "en": "Each mistake stays saved, with the right answer and why.",
+    "es": "Cada error queda guardado, con la respuesta correcta y el porqué."
+  },
+  "explainErrorsTitle": {
+    "pt": "Erros explicados",
+    "en": "Mistakes, explained",
+    "es": "Errores explicados"
+  },
+  "explainCorrectAnswer": {
+    "pt": "Resposta certa: {text}",
+    "en": "Right answer: {text}",
+    "es": "Respuesta correcta: {text}",
+    "placeholders": {
+      "text": "String"
+    }
+  },
+  "explainAnswerLabel": {
+    "pt": "Resposta certa",
+    "en": "Right answer",
+    "es": "Respuesta correcta"
+  },
+  "explainErrorsEntry": {
+    "pt": "{count, plural, =1{1 erro guardado, com a explicação} other{{count} erros guardados, com as explicações}}",
+    "en": "{count, plural, =1{1 saved mistake, explained} other{{count} saved mistakes, explained}}",
+    "es": "{count, plural, =1{1 error guardado, con la explicación} other{{count} errores guardados, con las explicaciones}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "explainErrorsEmptyTitle": {
+    "pt": "Nenhum erro guardado",
+    "en": "No saved mistakes",
+    "es": "Ningún error guardado"
+  },
+  "explainErrorsEmptyBody": {
+    "pt": "Quando você errar uma pergunta, ela aparece aqui com a resposta certa e o porquê.",
+    "en": "When you miss a question, it shows up here with the right answer and why.",
+    "es": "Cuando falles una pregunta, aparecerá aquí con la respuesta correcta y el porqué."
+  },
+  "pilgrimBadge": {
+    "pt": "Peregrino",
+    "en": "Pilgrim",
+    "es": "Peregrino"
+  },
+  "paywallPlanFounder": {
+    "pt": "Pioneiro",
+    "en": "Pioneer",
+    "es": "Pionero"
+  },
+  "paywallFounderBadge": {
+    "pt": "Lançamento",
+    "en": "Launch",
+    "es": "Lanzamiento"
+  },
+  "paywallFounderNote": {
+    "pt": "Paga hoje. O preço fica.",
+    "en": "Pay today. The price stays.",
+    "es": "Pagas hoy. El precio se queda."
+  },
+  "paywallFounderCounter": {
+    "pt": "de {cap} pioneiros",
+    "en": "of {cap} pioneers",
+    "es": "de {cap} pioneros",
+    "placeholders": {
+      "cap": "int"
+    }
+  },
+  "paywallFounderTitle": {
+    "pt": "O preço do lançamento",
+    "en": "The launch price",
+    "es": "El precio de lanzamiento"
+  },
+  "paywallFounderBody": {
+    "pt": "Um valor promocional para você, pioneiro do Stway. Você paga {price} por ano, para sempre, enquanto renovar.",
+    "en": "A promotional price for you, a Stway pioneer. You pay {price} a year, for as long as you renew.",
+    "es": "Un precio promocional para ti, pionero de Stway. Pagas {price} al año, para siempre, mientras renueves.",
+    "placeholders": {
+      "price": "String"
+    }
+  },
   "paywallBestValue": {
     "pt": "Melhor valor",
     "en": "Best value",
@@ -279,5 +361,50 @@
     "placeholders": {
       "count": "int"
     }
+  },
+  "plusOfferWinbackTitle": {
+    "pt": "Sua caminhada Plus sente sua falta",
+    "en": "Your Pilgrim+ walk misses you",
+    "es": "Tu caminata Plus te extraña"
+  },
+  "plusOfferWinbackBody": {
+    "pt": "Seu Peregrino+ acabou, mas suas revisões, planos e a Caminhada continuam aqui. Voltar é um toque — e mantém o Stway grátis para quem não pode pagar.",
+    "en": "Your Pilgrim+ ended, but your reviews, plans and the Walk are still here. Coming back is one tap — and keeps Stway free for those who can't pay.",
+    "es": "Tu Peregrino+ terminó, pero tus repasos, planes y la Caminata siguen aquí. Volver es un toque — y mantiene Stway gratis para quien no puede pagar."
+  },
+  "plusBillingHomeTitle": {
+    "pt": "Problema no pagamento do Peregrino+",
+    "en": "Payment problem with Pilgrim+",
+    "es": "Problema con el pago de Peregrino+"
+  },
+  "plusBillingHomeBody": {
+    "pt": "A loja não conseguiu cobrar. Atualize o pagamento para não perder o acesso quando o plano vencer.",
+    "en": "The store couldn't charge you. Update your payment so you don't lose access when the plan ends.",
+    "es": "La tienda no pudo cobrar. Actualiza el pago para no perder el acceso cuando venza el plan."
+  },
+  "plusGraceHomeTitle": {
+    "pt": "Seu Peregrino+ venceu há pouco",
+    "en": "Your Pilgrim+ just ended",
+    "es": "Tu Peregrino+ venció hace poco"
+  },
+  "plusGraceHomeBody": {
+    "pt": "Você ainda tem alguns dias de acesso enquanto a loja confirma. Abra para conferir seu plano.",
+    "en": "You still have a few days of access while the store confirms. Open to check your plan.",
+    "es": "Aún tienes unos días de acceso mientras la tienda confirma. Abre para ver tu plan."
+  },
+  "plusBillingHomeAction": {
+    "pt": "Ver meu plano",
+    "en": "See my plan",
+    "es": "Ver mi plan"
+  },
+  "plusEndedHomeTitle": {
+    "pt": "Seu Peregrino+ acabou",
+    "en": "Your Pilgrim+ has ended",
+    "es": "Tu Peregrino+ terminó"
+  },
+  "plusEndedHomeBody": {
+    "pt": "Suas revisões, planos guiados e a Caminhada estão esperando. A Bíblia e as cenas continuam grátis, como sempre.",
+    "en": "Your reviews, guided plans and the Walk are waiting. The Bible and scenes stay free, as always.",
+    "es": "Tus repasos, planes guiados y la Caminata te esperan. La Biblia y las escenas siguen gratis, como siempre."
   }
 }

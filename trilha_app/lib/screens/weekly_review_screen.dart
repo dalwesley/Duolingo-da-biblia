@@ -209,6 +209,27 @@ class _WeeklyReviewScreenState extends State<WeeklyReviewScreen> {
 
   /// Até 3 perguntas, uma por cena em rodízio, preferindo as erradas.
   Future<void> _start(List<_Scene> scenes) async {
+    // Gate na tela, não só no botão que a abre: rota/notificação futura
+    // não pode montar a revisão paga direto.
+    final progress0 = context.read<ProgressService>();
+    // 1 revisão por dia, também por esta rota: se o fechamento da
+    // temporada ocupou hoje, a da semana espera amanhã.
+    if (progress0.isReviewDoneToday && !progress0.isWeeklyReviewDone(_week)) {
+      showAppToastFor(
+        context,
+        message: context.l10n.reviewSlotTaken,
+        face: CloudFace.erro,
+      );
+      return;
+    }
+    if (!context.read<SubscriptionService>().plusFeaturesOpen) {
+      await Navigator.of(context).push(
+        MaterialPageRoute<void>(
+          builder: (_) => const PaywallScreen(source: 'weekly_review'),
+        ),
+      );
+      return;
+    }
     setState(() => _starting = true);
     final progress = context.read<ProgressService>();
     for (final slug in {for (final s in scenes) s.trail.slug}) {
@@ -271,6 +292,7 @@ class _WeeklyReviewScreenState extends State<WeeklyReviewScreen> {
           practiceMode: true,
           missionOverride: review,
           questionIdsOverride: ids,
+          requiresPlus: true,
         ),
       ),
     );

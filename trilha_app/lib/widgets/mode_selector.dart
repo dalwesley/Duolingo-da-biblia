@@ -1408,11 +1408,10 @@ class ModeScenePainter extends CustomPainter {
     canvas.drawPath(
       lit,
       Paint()
-        ..color = color.withValues(alpha: 0.3 * k * fade)
-        ..strokeWidth = 6
+        ..color = color.withValues(alpha: 0.22 * k * fade)
+        ..strokeWidth = 8
         ..style = PaintingStyle.stroke
-        ..strokeCap = StrokeCap.round
-        ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 4),
+        ..strokeCap = StrokeCap.round,
     );
     canvas.drawPath(
       lit,
@@ -1448,9 +1447,7 @@ class ModeScenePainter extends CustomPainter {
       canvas.drawCircle(
         head,
         9,
-        Paint()
-          ..color = color.withValues(alpha: 0.35 * k)
-          ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 5),
+        Paint()..color = color.withValues(alpha: 0.28 * k),
       );
       canvas.drawCircle(
         head,

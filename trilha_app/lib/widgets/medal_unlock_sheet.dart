@@ -252,47 +252,45 @@ class _MedalDetailSheetState extends State<_MedalDetailSheet>
             opacity: _titleOpacity,
             child: SlideTransition(
               position: _titleSlide,
-              child: SizedBox(
-                height: 44,
-                child: Stack(
-                  alignment: Alignment.center,
-                  children: [
-                    SectionLabel(headline, color: accent),
-                    if (!widget.celebration && unlocked)
-                      Align(
-                        alignment: Alignment.centerRight,
-                        child: widget.recognizeToUid == null
-                            ? ReceivedHeartBadge(
-                                subjectKeys: {tile.id},
-                                onTap: () {
-                                  ActHaptics.tap();
-                                  showRecognitionHistorySheet(
-                                    context,
-                                    medalIds: {tile.id},
-                                  );
-                                },
-                              )
-                            : RecognizeHeartButton(
-                                toUid: widget.recognizeToUid,
-                                kind: RecognitionKind.medal,
-                                subjectKey: tile.id,
-                                padding: EdgeInsets.zero,
-                              ),
-                      ),
-                  ],
-                ),
+              child: SectionLabel(headline, color: accent),
+            ),
+          ),
+          const SizedBox(height: 28),
+          // Medalha nova: o Anan comemora; ainda trancada: espera junto.
+          // Aberto, o coração ocupa o canto do Anan e o Anan sobe.
+          if (widget.celebration || !unlocked)
+            AnanBeside(
+              face: unlocked ? CloudFace.sucesso : CloudFace.carregando,
+              child: ScaleTransition(
+                scale: _heroScale,
+                child: MedalVaultMedallion(tile: tile, size: 104),
+              ),
+            )
+          else
+            _MedalCompany(
+              face: CloudFace.sucesso,
+              heart: widget.recognizeToUid == null
+                  ? ReceivedHeartBadge(
+                      subjectKeys: {tile.id},
+                      onTap: () {
+                        ActHaptics.tap();
+                        showRecognitionHistorySheet(
+                          context,
+                          medalIds: {tile.id},
+                        );
+                      },
+                    )
+                  : RecognizeHeartButton(
+                      toUid: widget.recognizeToUid,
+                      kind: RecognitionKind.medal,
+                      subjectKey: tile.id,
+                      padding: EdgeInsets.zero,
+                    ),
+              medal: ScaleTransition(
+                scale: _heroScale,
+                child: MedalVaultMedallion(tile: tile, size: 104),
               ),
             ),
-          ),
-          const SizedBox(height: 22),
-          // Medalha nova: o Anan comemora; ainda trancada: espera junto.
-          AnanBeside(
-            face: unlocked ? CloudFace.sucesso : CloudFace.carregando,
-            child: ScaleTransition(
-              scale: _heroScale,
-              child: MedalVaultMedallion(tile: tile, size: 104),
-            ),
-          ),
           const SizedBox(height: 18),
           FadeTransition(
             opacity: _bodyOpacity,
@@ -454,46 +452,43 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              SizedBox(
-                height: 44,
-                child: Stack(
-                  alignment: Alignment.center,
-                  children: [
-                    SectionLabel(headline, color: accent),
-                    if (!widget.celebration &&
-                        trackState.hasStarted &&
-                        current != null)
-                      Align(
-                        alignment: Alignment.centerRight,
-                        child: widget.recognizeToUid == null
-                            ? ReceivedHeartBadge(
-                                subjectKeys: trackState.earnedMedalIds,
-                                onTap: () {
-                                  ActHaptics.tap();
-                                  showRecognitionHistorySheet(
-                                    context,
-                                    medalIds: trackState.earnedMedalIds,
-                                  );
-                                },
-                              )
-                            : RecognizeHeartButton(
-                                toUid: widget.recognizeToUid,
-                                kind: RecognitionKind.medal,
-                                subjectKey: current.id,
-                                padding: EdgeInsets.zero,
-                              ),
-                      ),
-                  ],
+              SectionLabel(headline, color: accent),
+              const SizedBox(height: 28),
+              if (widget.celebration || current == null || !trackState.hasStarted)
+                AnanBeside(
+                  face: widget.celebration
+                      ? CloudFace.sucesso
+                      : CloudFace.feliz,
+                  child: MedalVaultMedallion(
+                    tile: PilgrimMedalTile.fromTrack(trackState),
+                    size: widget.celebration ? 112 : 104,
+                  ),
+                )
+              else
+                _MedalCompany(
+                  face: CloudFace.feliz,
+                  heart: widget.recognizeToUid == null
+                      ? ReceivedHeartBadge(
+                          subjectKeys: trackState.earnedMedalIds,
+                          onTap: () {
+                            ActHaptics.tap();
+                            showRecognitionHistorySheet(
+                              context,
+                              medalIds: trackState.earnedMedalIds,
+                            );
+                          },
+                        )
+                      : RecognizeHeartButton(
+                          toUid: widget.recognizeToUid,
+                          kind: RecognitionKind.medal,
+                          subjectKey: current.id,
+                          padding: EdgeInsets.zero,
+                        ),
+                  medal: MedalVaultMedallion(
+                    tile: PilgrimMedalTile.fromTrack(trackState),
+                    size: 104,
+                  ),
                 ),
-              ),
-              const SizedBox(height: 18),
-              AnanBeside(
-                face: widget.celebration ? CloudFace.sucesso : CloudFace.feliz,
-                child: MedalVaultMedallion(
-                  tile: PilgrimMedalTile.fromTrack(trackState),
-                  size: widget.celebration ? 112 : 104,
-                ),
-              ),
               const SizedBox(height: 14),
               Text(
                 track.title,
@@ -803,6 +798,43 @@ class _MedalVaultCompleteSheetState extends State<_MedalVaultCompleteSheet>
           ),
         ],
       ),
+    );
+  }
+}
+
+/// Medalha aberta: o Anan fica no alto, à esquerda; o coração ocupa o
+/// canto em que ele estava, no mesmo tamanho.
+class _MedalCompany extends StatelessWidget {
+  static const anan = 64.0;
+
+  final Widget medal;
+  final CloudFace face;
+  final Widget heart;
+
+  const _MedalCompany({
+    required this.medal,
+    required this.face,
+    required this.heart,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      clipBehavior: Clip.none,
+      alignment: Alignment.center,
+      children: [
+        medal,
+        Positioned(
+          left: -anan * 0.62,
+          top: -anan * 0.34,
+          child: CloudMascot(face: face, size: anan),
+        ),
+        Positioned(
+          right: -anan * 0.8,
+          bottom: -anan * 0.12,
+          child: heart,
+        ),
+      ],
     );
   }
 }

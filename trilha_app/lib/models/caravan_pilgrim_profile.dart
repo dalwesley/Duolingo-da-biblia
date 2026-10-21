@@ -87,8 +87,11 @@ class CaravanPilgrimProfile {
   final String? lastMissionRef;
   final String? photoUrl;
 
-  /// Selo de apoiador (Peregrino+ pago ou apoio avulso).
+  /// Selo de Apoiador (apoio avulso), gravado pelo webhook.
   final bool supporter;
+
+  /// Selo de Peregrino (assinatura ativa, `plusActive` do webhook).
+  final bool pilgrim;
 
   const CaravanPilgrimProfile({
     this.uid,
@@ -125,6 +128,7 @@ class CaravanPilgrimProfile {
     this.lastMissionRef,
     this.photoUrl,
     this.supporter = false,
+    this.pilgrim = false,
   });
 
   int get missionsCompleted => completedMissions.length;
@@ -258,6 +262,7 @@ class CaravanPilgrimProfile {
       prefs: CaravanProfilePrefs.fromMap(data['caravanProfilePrefs']),
       photoUrl: _asName(data['photoUrl']) ?? _asName(fallbackPhotoUrl),
       supporter: data['supporter'] == true,
+      pilgrim: data['plusActive'] == true,
     );
   }
 
@@ -401,6 +406,7 @@ class CaravanPilgrimProfile {
       lastMissionRef: missionRef,
       photoUrl: photoUrl,
       supporter: supporter,
+      pilgrim: pilgrim,
     );
   }
 

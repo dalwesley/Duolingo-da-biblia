@@ -115,6 +115,7 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
       paid: sub.isPeregrinoPlus,
       storeReady: storeReady,
       scenesDone: scenes,
+      accountAgeDays: progress.accountAgeDays,
       promoUntil: promo,
       shown: state.shown,
       lastOfferWeek: state.lastWeek,
@@ -142,6 +143,8 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
           ? 'Nenhuma: na promoção só avisa nos últimos 7 dias'
           : scenes < PlusOffers.scenesForOffer
           ? 'Nenhuma: só $scenes cenas concluídas (precisa de 7)'
+          : progress.accountAgeDays < PlusOffers.minAccountAgeDays
+          ? 'Nenhuma: conta nova demais para a oferta das 7 cenas'
           : 'Nenhuma: todas já foram vistas. Zere as ofertas',
     );
   }

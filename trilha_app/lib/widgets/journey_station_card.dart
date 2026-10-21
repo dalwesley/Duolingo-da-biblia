@@ -98,19 +98,6 @@ class JourneyStationCard extends StatelessWidget {
                         textAlign: TextAlign.right,
                         style: AppTypography.label(size: 11, color: ink),
                       )
-                    : quiet
-                    ? Text(
-                        isSoon
-                            ? context.l10n.commonComingSoon
-                            : context.l10n.journeyBeyondHorizon,
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        textAlign: TextAlign.right,
-                        style: AppTypography.label(
-                          size: 9,
-                          color: Color.lerp(a.textFaint, accent, 0.45)!,
-                        ),
-                      )
                     : const SizedBox.shrink(),
               ),
             ],
@@ -324,7 +311,7 @@ class JourneyStationCard extends StatelessWidget {
           );
 
     return Opacity(
-      opacity: quiet ? 0.92 : 1,
+      opacity: quiet ? 0.62 : 1,
       child: Semantics(
         label: semanticsLabel ?? title,
         button: onTap != null,
@@ -428,6 +415,7 @@ class _CurrentBeacon extends StatefulWidget {
 class _CurrentBeaconState extends State<_CurrentBeacon>
     with SingleTickerProviderStateMixin {
   late final AnimationController _pulse;
+  late final Animation<double> _glow;
 
   @override
   void initState() {
@@ -435,6 +423,11 @@ class _CurrentBeaconState extends State<_CurrentBeacon>
     _pulse = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 2200),
+    );
+    _glow = _pulse.drive(
+      Tween<double>(begin: 0.35, end: 1).chain(
+        CurveTween(curve: Curves.easeInOut),
+      ),
     );
   }
 
@@ -458,27 +451,30 @@ class _CurrentBeaconState extends State<_CurrentBeacon>
 
   @override
   Widget build(BuildContext context) {
-    return AnimatedBuilder(
-      animation: _pulse,
-      builder: (context, child) {
-        final t = Curves.easeInOut.transform(_pulse.value);
-        final glow = 0.14 + 0.16 * t;
-        final blur = 10 + 8 * t;
-        return DecoratedBox(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(AppRadii.lg + 4),
-            boxShadow: [
-              BoxShadow(
-                color: widget.color.withValues(alpha: glow),
-                blurRadius: blur,
-                spreadRadius: 0.5 + t,
+    // O halo é uma camada parada. O pulso só muda a opacidade — o desfoque
+    // do BoxShadow não se recalcula a cada frame.
+    return Stack(
+      clipBehavior: Clip.none,
+      children: [
+        Positioned.fill(
+          child: FadeTransition(
+            opacity: _glow,
+            child: DecoratedBox(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(AppRadii.lg + 4),
+                boxShadow: [
+                  BoxShadow(
+                    color: widget.color.withValues(alpha: 0.30),
+                    blurRadius: 16,
+                    spreadRadius: 1,
+                  ),
+                ],
               ),
-            ],
+            ),
           ),
-          child: child,
-        );
-      },
-      child: widget.child,
+        ),
+        widget.child,
+      ],
     );
   }
 }

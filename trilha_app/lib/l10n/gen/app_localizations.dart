@@ -3436,6 +3436,42 @@ abstract class AppLocalizations {
   /// **'Julgue'**
   String get exerciseVerbJudge;
 
+  /// No description provided for @explainAnswerLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Resposta certa'**
+  String get explainAnswerLabel;
+
+  /// No description provided for @explainCorrectAnswer.
+  ///
+  /// In pt, this message translates to:
+  /// **'Resposta certa: {text}'**
+  String explainCorrectAnswer(String text);
+
+  /// No description provided for @explainErrorsEmptyBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quando você errar uma pergunta, ela aparece aqui com a resposta certa e o porquê.'**
+  String get explainErrorsEmptyBody;
+
+  /// No description provided for @explainErrorsEmptyTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nenhum erro guardado'**
+  String get explainErrorsEmptyTitle;
+
+  /// No description provided for @explainErrorsEntry.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 erro guardado, com a explicação} other{{count} erros guardados, com as explicações}}'**
+  String explainErrorsEntry(int count);
+
+  /// No description provided for @explainErrorsTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Erros explicados'**
+  String get explainErrorsTitle;
+
   /// No description provided for @feedbackAlmost.
   ///
   /// In pt, this message translates to:
@@ -9117,10 +9153,40 @@ abstract class AppLocalizations {
   /// **'Cancelada. Seu acesso vai até {date}.'**
   String paywallEndsOn(String date);
 
+  /// No description provided for @paywallFounderBadge.
+  ///
+  /// In pt, this message translates to:
+  /// **'Lançamento'**
+  String get paywallFounderBadge;
+
+  /// No description provided for @paywallFounderBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Um valor promocional para você, pioneiro do Stway. Você paga {price} por ano, para sempre, enquanto renovar.'**
+  String paywallFounderBody(String price);
+
+  /// No description provided for @paywallFounderCounter.
+  ///
+  /// In pt, this message translates to:
+  /// **'de {cap} pioneiros'**
+  String paywallFounderCounter(int cap);
+
+  /// No description provided for @paywallFounderNote.
+  ///
+  /// In pt, this message translates to:
+  /// **'Paga hoje. O preço fica.'**
+  String get paywallFounderNote;
+
+  /// No description provided for @paywallFounderTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'O preço do lançamento'**
+  String get paywallFounderTitle;
+
   /// No description provided for @paywallFreeForever.
   ///
   /// In pt, this message translates to:
-  /// **'Bíblia, cenas, os 3 modos e a liga continuam grátis. Sempre.'**
+  /// **'A Bíblia e as cenas continuam grátis. Sempre.'**
   String get paywallFreeForever;
 
   /// No description provided for @paywallHeadline.
@@ -9162,19 +9228,25 @@ abstract class AppLocalizations {
   /// No description provided for @paywallPerkBadgeBody.
   ///
   /// In pt, this message translates to:
-  /// **'Um selo no seu perfil. Quem abre seu nome na Caravana vê que você apoia o Stway.'**
+  /// **'Um selo exclusivo no seu perfil e na Caravana.'**
   String get paywallPerkBadgeBody;
 
   /// No description provided for @paywallPerkBadgeTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Selo de apoiador'**
+  /// **'Selo de Peregrino'**
   String get paywallPerkBadgeTitle;
+
+  /// No description provided for @paywallPerkExplainBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Cada erro fica guardado, com a resposta certa e o porquê.'**
+  String get paywallPerkExplainBody;
 
   /// No description provided for @paywallPerkPlansBody.
   ///
   /// In pt, this message translates to:
-  /// **'A Bíblia inteira no seu ritmo, Evangelhos em 30 dias, Novo Testamento em 90 e outros.'**
+  /// **'Os Evangelhos em 30 dias, o Novo Testamento em 90 e outros caminhos.'**
   String get paywallPerkPlansBody;
 
   /// No description provided for @paywallPerkPlansTitle.
@@ -9186,61 +9258,61 @@ abstract class AppLocalizations {
   /// No description provided for @paywallPerkRecognitionBody.
   ///
   /// In pt, this message translates to:
-  /// **'Veja quem da caravana tocou no coração da sua cena e das suas medalhas.'**
+  /// **'Veja quem reconheceu a sua caminhada e as suas conquistas.'**
   String get paywallPerkRecognitionBody;
 
   /// No description provided for @paywallPerkRecognitionTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Quem reconheceu'**
+  /// **'Reconhecimento'**
   String get paywallPerkRecognitionTitle;
 
   /// No description provided for @paywallPerkReinforceBody.
   ///
   /// In pt, this message translates to:
-  /// **'No perfil, o tipo de pergunta que você mais erra. Depois, um treino só com esse tipo.'**
+  /// **'Você vê onde tropeça. Depois, um treino só daquilo.'**
   String get paywallPerkReinforceBody;
 
   /// No description provided for @paywallPerkReinforceTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Reforço do ponto fraco'**
+  /// **'O que você mais erra'**
   String get paywallPerkReinforceTitle;
 
   /// No description provided for @paywallPerkSeasonBody.
   ///
   /// In pt, this message translates to:
-  /// **'Caminhadas do calendário cristão, como o Advento: todos no mesmo dia, do 4º dia em diante.'**
+  /// **'Advento, Páscoa, Natal e outras estações, cada uma com um caminho próprio.'**
   String get paywallPerkSeasonBody;
 
   /// No description provided for @paywallPerkSeasonTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Caminhadas sazonais'**
+  /// **'Trilhas da estação'**
   String get paywallPerkSeasonTitle;
 
   /// No description provided for @paywallPerkStreakBody.
   ///
   /// In pt, this message translates to:
-  /// **'Acompanhe sua sequência, os dias desta semana e como foram os últimos três meses.'**
+  /// **'Sua sequência, os dias desta semana e como você caminhou nos últimos três meses.'**
   String get paywallPerkStreakBody;
 
   /// No description provided for @paywallPerkStreakTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Sua constância'**
+  /// **'Seus dias'**
   String get paywallPerkStreakTitle;
 
   /// No description provided for @paywallPerkWeeklyBody.
   ///
   /// In pt, this message translates to:
-  /// **'No domingo, uma cena especial para reforçar tudo o que você aprendeu na semana.'**
+  /// **'Uma vez por semana, você revê o que aprendeu. As perguntas começam pelo que errou.'**
   String get paywallPerkWeeklyBody;
 
   /// No description provided for @paywallPerkWeeklyTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Revisão semanal'**
+  /// **'Revisão da semana'**
   String get paywallPerkWeeklyTitle;
 
   /// No description provided for @paywallPitch.
@@ -9254,6 +9326,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Anual'**
   String get paywallPlanAnnual;
+
+  /// No description provided for @paywallPlanFounder.
+  ///
+  /// In pt, this message translates to:
+  /// **'Pioneiro'**
+  String get paywallPlanFounder;
 
   /// No description provided for @paywallPlanLifetime.
   ///
@@ -9302,6 +9380,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'{price} por semana'**
   String paywallPriceWeekly(String price);
+
+  /// No description provided for @paywallPromoSubscribeNote.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você pode assinar desde já: o plano começa hoje, pelas regras da loja, sem esperar {date}.'**
+  String paywallPromoSubscribeNote(String date);
 
   /// No description provided for @paywallPurchaseFailed.
   ///
@@ -9452,6 +9536,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Acertos'**
   String get pilgrimAccuracyTitle;
+
+  /// No description provided for @pilgrimBadge.
+  ///
+  /// In pt, this message translates to:
+  /// **'Peregrino'**
+  String get pilgrimBadge;
 
   /// No description provided for @pilgrimChaptersBooks.
   ///
@@ -9822,7 +9912,7 @@ abstract class AppLocalizations {
   /// No description provided for @planLockedGuidedBody.
   ///
   /// In pt, this message translates to:
-  /// **'Os planos guiados são do Peregrino+. A Bíblia inteira continua grátis.'**
+  /// **'Seus 3 dias grátis deste plano acabaram. Ele continua no Peregrino+; a Bíblia inteira segue grátis.'**
   String get planLockedGuidedBody;
 
   /// No description provided for @planMarkDayRead.
@@ -10020,7 +10110,7 @@ abstract class AppLocalizations {
   /// No description provided for @plansGuidedPlusNote.
   ///
   /// In pt, this message translates to:
-  /// **'A Bíblia inteira é grátis, sempre. Os planos guiados são do Peregrino+.'**
+  /// **'A Bíblia inteira é grátis, sempre. Nos guiados, os primeiros 3 dias são grátis; depois, Peregrino+.'**
   String get plansGuidedPlusNote;
 
   /// No description provided for @plansWholeBibleTitle.
@@ -10028,6 +10118,48 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Bíblia inteira'**
   String get plansWholeBibleTitle;
+
+  /// No description provided for @plusBillingHomeAction.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ver meu plano'**
+  String get plusBillingHomeAction;
+
+  /// No description provided for @plusBillingHomeBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'A loja não conseguiu cobrar. Atualize o pagamento para não perder o acesso quando o plano vencer.'**
+  String get plusBillingHomeBody;
+
+  /// No description provided for @plusBillingHomeTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Problema no pagamento do Peregrino+'**
+  String get plusBillingHomeTitle;
+
+  /// No description provided for @plusEndedHomeBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Suas revisões, planos guiados e a Caminhada estão esperando. A Bíblia e as cenas continuam grátis, como sempre.'**
+  String get plusEndedHomeBody;
+
+  /// No description provided for @plusEndedHomeTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu Peregrino+ acabou'**
+  String get plusEndedHomeTitle;
+
+  /// No description provided for @plusGraceHomeBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você ainda tem alguns dias de acesso enquanto a loja confirma. Abra para conferir seu plano.'**
+  String get plusGraceHomeBody;
+
+  /// No description provided for @plusGraceHomeTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu Peregrino+ venceu há pouco'**
+  String get plusGraceHomeTitle;
 
   /// No description provided for @plusNoticeContinue.
   ///
@@ -10136,6 +10268,18 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'{count, plural, =1{Testar 1 dia grátis} other{Testar {count} dias grátis}}'**
   String plusOfferTryFree(int count);
+
+  /// No description provided for @plusOfferWinbackBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu Peregrino+ acabou, mas suas revisões, planos e a Caminhada continuam aqui. Voltar é um toque — e mantém o Stway grátis para quem não pode pagar.'**
+  String get plusOfferWinbackBody;
+
+  /// No description provided for @plusOfferWinbackTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sua caminhada Plus sente sua falta'**
+  String get plusOfferWinbackTitle;
 
   /// No description provided for @plusPerksHeader.
   ///
@@ -10290,7 +10434,7 @@ abstract class AppLocalizations {
   /// No description provided for @profileDaysPerWeek.
   ///
   /// In pt, this message translates to:
-  /// **'de 7 dias'**
+  /// **'dias por semana'**
   String get profileDaysPerWeek;
 
   /// No description provided for @profileInTheWord.
@@ -10308,7 +10452,7 @@ abstract class AppLocalizations {
   /// No description provided for @profileLampHelp.
   ///
   /// In pt, this message translates to:
-  /// **'Cada lamparina é uma semana. O número é quantos dias você caminhou.'**
+  /// **'Cada lamparina é uma semana: o azeite sobe a cada dia caminhado e a chama cresce.'**
   String get profileLampHelp;
 
   /// No description provided for @profileLastThreeMonths.
@@ -11331,6 +11475,12 @@ abstract class AppLocalizations {
   /// **'Apagar progresso'**
   String get resetTitle;
 
+  /// No description provided for @reviewSlotTaken.
+  ///
+  /// In pt, this message translates to:
+  /// **'A revisão de hoje já foi feita — esta fica para amanhã.'**
+  String get reviewSlotTaken;
+
   /// No description provided for @roomErrorCreate.
   ///
   /// In pt, this message translates to:
@@ -12348,7 +12498,7 @@ abstract class AppLocalizations {
   /// No description provided for @settingsPlusTeaser.
   ///
   /// In pt, this message translates to:
-  /// **'Caminhadas sazonais, planos de leitura e revisão da semana'**
+  /// **'Trilhas da estação, planos de leitura e revisão da semana'**
   String get settingsPlusTeaser;
 
   /// No description provided for @settingsProgressInCloud.
@@ -13674,7 +13824,7 @@ abstract class AppLocalizations {
   /// No description provided for @weeklyReviewPlusBody.
   ///
   /// In pt, this message translates to:
-  /// **'No Peregrino+, a revisão traz o “Hoje:” de cada cena e 3 perguntas sobre elas.'**
+  /// **'Com o Peregrino+, você revê o que cada cena ensinou e responde 3 perguntas.'**
   String get weeklyReviewPlusBody;
 
   /// No description provided for @weeklyReviewPreparing.

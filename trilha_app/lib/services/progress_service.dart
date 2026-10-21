@@ -303,6 +303,10 @@ class ProgressService extends ChangeNotifier {
   /// Pontuação de memorização por id (0–5).
   Map<String, int> memoryScores = {};
 
+  /// Dias já usados de cada plano guiado (amostra de 3 dias é por plano,
+  /// não por tentativa: encerrar e recomeçar não renova a amostra).
+  Map<String, int> guidedSampleDays = {};
+
   /// Versículos considerados firmes (score alto mantido).
   List<String> memoryMastered = [];
 
@@ -355,8 +359,23 @@ class ProgressService extends ChangeNotifier {
   Map<String, int> answerCorrect = {};
   Map<String, int> answerTotal = {};
 
+  /// Acerto de primeira por trilha (slug). Coleta silenciosa desde
+  /// out/2026: é a matéria-prima do futuro mapa de domínio por livro —
+  /// sem histórico acumulado, o mapa não existe quando for desenhado.
+  Map<String, int> trailAnswerCorrect = {};
+  Map<String, int> trailAnswerTotal = {};
+
   /// Semanas (segunda YYYY-MM-DD) com a revisão da semana concluída.
   List<String> weeklyReviewsDone = [];
+
+  /// Dias (yyyy-mm-dd) com a Revisão do Dia concluída. Só os últimos dias
+  /// importam (o tile de hoje); a lista é podada ao gravar.
+  List<String> dailyReviewsDone = [];
+
+  /// Dias em que QUALQUER revisão (dia, semana ou temporada) ocupou o
+  /// dia. Regra de produto: no máximo um fluxo de revisão por dia —
+  /// as ofertas das outras revisões somem até amanhã.
+  List<String> reviewSlotDays = [];
   String? lastMissionSlug;
   String? lastMissionCompletedDate;
   String? lastBibleReadDate;
@@ -505,6 +524,11 @@ class ProgressService extends ChangeNotifier {
 
   /// Slug da cena sintética da revisão da semana: `weekly-review-<segunda>`.
   static const weeklyReviewSlugPrefix = 'weekly-review-';
+  static const dailyReviewSlugPrefix = 'daily-review-';
+
+  /// Slug da revisão de fechamento de semana da Caminhada sazonal:
+  /// `walk-review-<campanha>-<semana>`.
+  static const seasonReviewSlugPrefix = 'walk-review-';
 
   /// Mínimo de cenas novas na semana para haver revisão.
   static const weeklyReviewMinScenes = 2;
@@ -542,6 +566,26 @@ class ProgressService extends ChangeNotifier {
 
   bool isWeeklyReviewDone(String mondayKey) =>
       weeklyReviewsDone.contains(mondayKey);
+
+  /// Revisão do Dia (Peregrino+) já concluída hoje.
+  bool get isDailyReviewDoneToday => dailyReviewsDone.contains(_todayKey());
+
+  /// Alguma revisão já ocupou o dia de hoje (regra: 1 revisão/dia).
+  bool get isReviewDoneToday => reviewSlotDays.contains(_todayKey());
+
+  /// O fechamento da semana [weekIndex] da Caminhada [campaignId] foi feito.
+  bool isSeasonReviewDone(String campaignId, int weekIndex) => completedMissions
+      .contains('$seasonReviewSlugPrefix$campaignId-$weekIndex');
+
+  /// Ocupa o "slot" de revisão de hoje para todas as revisões.
+  void _markReviewSlotToday() {
+    final today = _todayKey();
+    if (reviewSlotDays.contains(today)) return;
+    reviewSlotDays = [...reviewSlotDays, today]..sort();
+    if (reviewSlotDays.length > 14) {
+      reviewSlotDays = reviewSlotDays.sublist(reviewSlotDays.length - 14);
+    }
+  }
 
   /// Laboratório (debug): põe [slugs] na semana da revisão (seg, qua, sex),
   /// reabre a revisão dessa semana e soma respostas de mentira por modo e
@@ -592,6 +636,8 @@ class ProgressService extends ChangeNotifier {
     };
     answerCorrect = {};
     answerTotal = {};
+    trailAnswerCorrect = {};
+    trailAnswerTotal = {};
     weeklyReviewsDone = weeklyReviewsDone.where((w) => w != week).toList();
     await _save();
   }
@@ -920,7 +966,11 @@ class ProgressService extends ChangeNotifier {
     missionCompletedOn = {};
     answerCorrect = {};
     answerTotal = {};
+    trailAnswerCorrect = {};
+    trailAnswerTotal = {};
     weeklyReviewsDone = [];
+    dailyReviewsDone = [];
+    reviewSlotDays = [];
     missionsToday = 0;
     hasSeenOnboarding = false;
     userName = 'Aprendiz';
@@ -973,6 +1023,7 @@ class ProgressService extends ChangeNotifier {
     vaultCompleteCelebratedIds = [];
     medalVaultCompleteCelebrated = false;
     bibleReadingPlan = BibleReadingPlan.inactive;
+    guidedSampleDays = {};
     memoryScores = {};
     memoryMastered = [];
     weeklySteps = 0;
@@ -1120,6 +1171,23 @@ class ProgressService extends ChangeNotifier {
   bool get missedExactlyOneDay {
     if (lastPlayedDate == null) return false;
     return _dayAfterKey(lastPlayedDate!) == _yesterdayKey();
+  }
+
+  /// Dias civis desde a primeira abertura (0 = hoje). Sem data, 0:
+  /// conta nova é o caso conservador para ofertas e gatilhos.
+  int get accountAgeDays {
+    final raw = firstOpenDate;
+    if (raw == null || raw.isEmpty) return 0;
+    final parts = raw.split('-');
+    if (parts.length != 3) return 0;
+    final first = DateTime(
+      int.tryParse(parts[0]) ?? 0,
+      int.tryParse(parts[1]) ?? 1,
+      int.tryParse(parts[2]) ?? 1,
+    );
+    final now = DateTime.now();
+    final today = DateTime(now.year, now.month, now.day);
+    return today.difference(first).inDays.clamp(0, 9999);
   }
 
   /// Dias civis desde o último passo (0 = hoje).
@@ -1319,16 +1387,19 @@ class ProgressService extends ChangeNotifier {
     notifyListeners();
   }
 
-  /// Plano guiado (Peregrino+): começa no dia 1. Mantém o lembrete que já
-  /// estava ligado.
+  /// Plano guiado: começa no dia 1 — ou retoma de onde a amostra deste
+  /// plano parou. Encerrar e recomeçar **não** renova os dias grátis:
+  /// [guidedSampleDays] guarda quanto de cada plano já foi usado.
+  /// Mantém o lembrete que já estava ligado.
   Future<void> startGuidedReadingPlan(String guidedId) async {
+    final used = (guidedSampleDays[guidedId] ?? 0).clamp(0, 100000);
     bibleReadingPlan = BibleReadingPlan(
       active: true,
       order: BibleReadingOrder.canonical,
       minutesPerDay: bibleReadingPlan.minutesPerDay,
-      cursor: 0,
+      cursor: used,
       lastCompletedDay: null,
-      completedDays: 0,
+      completedDays: used,
       startedAt: _todayKey(),
       guidedId: guidedId,
       reminderHour: bibleReadingPlan.reminderHour,
@@ -1399,6 +1470,16 @@ class ProgressService extends ChangeNotifier {
           ? bibleReadingPlan.completedDays
           : bibleReadingPlan.completedDays + 1,
     );
+    // Amostra por plano: quanto deste guiado já foi usado fica gravado
+    // fora do plano ativo, para recomeçar não renovar os dias grátis.
+    final guidedId = bibleReadingPlan.guidedId;
+    if (guidedId != null &&
+        bibleReadingPlan.completedDays > (guidedSampleDays[guidedId] ?? 0)) {
+      guidedSampleDays = {
+        ...guidedSampleDays,
+        guidedId: bibleReadingPlan.completedDays,
+      };
+    }
     await _save();
     notifyListeners();
   }
@@ -1998,17 +2079,39 @@ class ProgressService extends ChangeNotifier {
   }
 
   /// Acerto de primeira por modo e gesto — base de Minha caminhada.
+  /// Com [trailSlug], alimenta também o acerto por trilha (domínio).
   void recordAnswer({
     required String mode,
     required String type,
     required bool correct,
+    String? trailSlug,
   }) {
     final key = '$mode.$type';
     answerTotal = {...answerTotal, key: (answerTotal[key] ?? 0) + 1};
     if (correct) {
       answerCorrect = {...answerCorrect, key: (answerCorrect[key] ?? 0) + 1};
     }
+    final trail = trailSlug?.trim() ?? '';
+    if (trail.isNotEmpty) {
+      trailAnswerTotal = {
+        ...trailAnswerTotal,
+        trail: (trailAnswerTotal[trail] ?? 0) + 1,
+      };
+      if (correct) {
+        trailAnswerCorrect = {
+          ...trailAnswerCorrect,
+          trail: (trailAnswerCorrect[trail] ?? 0) + 1,
+        };
+      }
+    }
     _schedulePersist();
+  }
+
+  /// Acerto (0–100) numa trilha, ou null se ainda não há respostas nela.
+  int? trailAccuracyPercent(String trailSlug) {
+    final total = trailAnswerTotal[trailSlug] ?? 0;
+    if (total <= 0) return null;
+    return (((trailAnswerCorrect[trailSlug] ?? 0) / total) * 100).round();
   }
 
   Future<void> clearMistake(String questionId) async {
@@ -2181,6 +2284,24 @@ class ProgressService extends ChangeNotifier {
         final week = slug.substring(weeklyReviewSlugPrefix.length);
         if (!weeklyReviewsDone.contains(week)) {
           weeklyReviewsDone = [...weeklyReviewsDone, week];
+        }
+      }
+      // Qualquer revisão concluída ocupa o dia: as outras ofertas de
+      // revisão somem até amanhã (1 fluxo de revisão por dia).
+      if (slug.startsWith(weeklyReviewSlugPrefix) ||
+          slug.startsWith(dailyReviewSlugPrefix) ||
+          slug.startsWith(seasonReviewSlugPrefix)) {
+        _markReviewSlotToday();
+      }
+      if (slug.startsWith(dailyReviewSlugPrefix)) {
+        final day = slug.substring(dailyReviewSlugPrefix.length);
+        if (!dailyReviewsDone.contains(day)) {
+          dailyReviewsDone = [...dailyReviewsDone, day]
+            ..sort()
+            ..removeRange(
+              0,
+              dailyReviewsDone.length > 14 ? dailyReviewsDone.length - 14 : 0,
+            );
         }
       }
       final today = _todayKey();
@@ -2462,6 +2583,7 @@ class ProgressService extends ChangeNotifier {
       'medalVaultCompleteCelebrated': medalVaultCompleteCelebrated,
       'vaultCompleteCelebratedIds': vaultCompleteCelebratedIds,
       'bibleReadingPlan': bibleReadingPlan.toMap(),
+      'guidedSampleDays': guidedSampleDays,
       'memoryScores': memoryScores,
       'memoryMastered': memoryMastered,
       'usedQuestionIds': usedQuestionIds,
@@ -2487,7 +2609,11 @@ class ProgressService extends ChangeNotifier {
       'missionCompletedOn': missionCompletedOn,
       'answerCorrect': answerCorrect,
       'answerTotal': answerTotal,
+      'trailAnswerCorrect': trailAnswerCorrect,
+      'trailAnswerTotal': trailAnswerTotal,
       'weeklyReviewsDone': weeklyReviewsDone,
+      'dailyReviewsDone': dailyReviewsDone,
+      'reviewSlotDays': reviewSlotDays,
       'lastMissionSlug': lastMissionSlug,
       'lastMissionCompletedDate': lastMissionCompletedDate,
       'lastBibleReadDate': lastBibleReadDate,
@@ -2891,6 +3017,12 @@ class ProgressService extends ChangeNotifier {
           bibleReadingPlan = remote;
         }
       }
+      if (data.containsKey('guidedSampleDays')) {
+        guidedSampleDays = _mergeIntMapsMax(
+          guidedSampleDays,
+          _asIntMap(data['guidedSampleDays']),
+        );
+      }
       if (data.containsKey('memoryScores')) {
         memoryScores = _mergeIntMapsMax(
           memoryScores,
@@ -3037,6 +3169,18 @@ class ProgressService extends ChangeNotifier {
           _asIntMap(data['answerCorrect']),
         );
       }
+      if (data.containsKey('dailyReviewsDone')) {
+        dailyReviewsDone = _unionStringLists(
+          dailyReviewsDone,
+          _asStringList(data['dailyReviewsDone']),
+        );
+      }
+      if (data.containsKey('reviewSlotDays')) {
+        reviewSlotDays = _unionStringLists(
+          reviewSlotDays,
+          _asStringList(data['reviewSlotDays']),
+        );
+      }
       if (data.containsKey('weeklyReviewsDone')) {
         weeklyReviewsDone = _unionStringLists(
           weeklyReviewsDone,
@@ -3047,6 +3191,18 @@ class ProgressService extends ChangeNotifier {
         answerTotal = _mergeIntMapsMax(
           answerTotal,
           _asIntMap(data['answerTotal']),
+        );
+      }
+      if (data.containsKey('trailAnswerCorrect')) {
+        trailAnswerCorrect = _mergeIntMapsMax(
+          trailAnswerCorrect,
+          _asIntMap(data['trailAnswerCorrect']),
+        );
+      }
+      if (data.containsKey('trailAnswerTotal')) {
+        trailAnswerTotal = _mergeIntMapsMax(
+          trailAnswerTotal,
+          _asIntMap(data['trailAnswerTotal']),
         );
       }
       if (data.containsKey('lastMissionSlug')) {
@@ -3288,7 +3444,11 @@ class ProgressService extends ChangeNotifier {
     missionCompletedOn = {};
     answerCorrect = {};
     answerTotal = {};
+    trailAnswerCorrect = {};
+    trailAnswerTotal = {};
     weeklyReviewsDone = [];
+    dailyReviewsDone = [];
+    reviewSlotDays = [];
     missionsToday = 0;
     hasSeenOnboarding = false;
     usedQuestionIds = [];
@@ -3338,6 +3498,7 @@ class ProgressService extends ChangeNotifier {
     vaultCompleteCelebratedIds = [];
     medalVaultCompleteCelebrated = false;
     bibleReadingPlan = BibleReadingPlan.inactive;
+    guidedSampleDays = {};
     memoryScores = {};
     memoryMastered = [];
     weeklySteps = 0;
@@ -3372,6 +3533,8 @@ class ProgressService extends ChangeNotifier {
     lifetimeQuestionsAnswered = 0;
     answerCorrect = {};
     answerTotal = {};
+    trailAnswerCorrect = {};
+    trailAnswerTotal = {};
     daysAsCaravanLeader = 0;
     lastLeaderRankDay = null;
     lastMissionSlug = null;

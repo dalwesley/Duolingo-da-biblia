@@ -1,4 +1,5 @@
 import 'dart:math' as math;
+import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -13,16 +14,6 @@ import 'journey_phase_card.dart';
 /// traço entre eles vira um talo reto.
 double windingShift(int index) => math.sin(index * math.pi / 4);
 
-/// O balão fica do lado oposto ao rumo da curva, para o traço sair limpo
-/// do círculo. No extremo da tela a curva desce quase reta, então o balão
-/// entra para o centro.
-bool windingBubbleOnLeft(int index) {
-  final here = windingShift(index);
-  if (here > 0.75) return true;
-  if (here < -0.75) return false;
-  return windingShift(index + 1) >= here;
-}
-
 /// Curva de pegadas; as andadas avançam no trecho percorrido.
 /// Anima só a pintura; os cards não rebuildam.
 class FlowingWindingTrail extends StatefulWidget {
@@ -31,7 +22,7 @@ class FlowingWindingTrail extends StatefulWidget {
   final int waveOffset;
   final List<WindingStop> stops;
 
-  /// false: o tracejado para onde a pessoa já chegou. O resto fica limpo.
+  /// false: as pegadas param onde a pessoa já chegou. O trilho segue.
   final bool showAhead;
 
   /// O Anan, fora da curva. Senta na entrada do card onde as pegadas chegam.
@@ -235,6 +226,17 @@ class WindingParentData extends ContainerBoxParentData<RenderBox> {
   bool walker = false;
 }
 
+/// Trecho já medido. O ticker só desloca as pegadas; a curva não se refaz.
+class _TrailStroke {
+  _TrailStroke({required this.path, required this.lit, required this.width})
+    : metrics = path.computeMetrics().toList(growable: false);
+
+  final Path path;
+  final bool lit;
+  final double width;
+  final List<ui.PathMetric> metrics;
+}
+
 class RenderWindingTrail extends RenderBox
     with
         ContainerRenderObjectMixin<RenderBox, WindingParentData>,
@@ -260,7 +262,11 @@ class RenderWindingTrail extends RenderBox
   final List<bool> _isStop = [];
   final List<Rect?> _openings = [];
   final List<Path> _covers = [];
+  final List<_TrailStroke> _strokes = [];
+  Path? _clip;
   bool _linkEdges = false;
+
+  final Paint _foot = Paint()..isAntiAlias = true;
 
   double get _dashPhase => -(_flow?.value ?? 0) * 13;
 
@@ -355,6 +361,8 @@ class RenderWindingTrail extends RenderBox
     _isStop.clear();
     _openings.clear();
     _covers.clear();
+    _strokes.clear();
+    _clip = null;
     _linkEdges = false;
 
     // Um passo fixo entre centros. O print é uma serpente uniforme;
@@ -442,6 +450,8 @@ class RenderWindingTrail extends RenderBox
     size = constraints.constrain(
       Size(width, math.max(height, constraints.minHeight)),
     );
+    _cacheStrokes();
+    _cacheClip();
   }
 
   /// O Anan na entrada do card onde o trecho andado termina.
@@ -495,33 +505,14 @@ class RenderWindingTrail extends RenderBox
 
   @override
   void paint(PaintingContext context, Offset offset) {
-    if (_anchors.length > 1) {
+    if (_strokes.isNotEmpty) {
       final canvas = context.canvas;
-      final hideCards = _covers.isNotEmpty;
-      if (hideCards) {
-        canvas.save();
-        // O tracejado para na borda do card. O miolo fica limpo.
-        final clip = Path()
-          ..fillType = PathFillType.evenOdd
-          ..addRect(offset & size);
-        for (final cover in _covers) {
-          clip.addPath(cover.shift(offset), Offset.zero);
-        }
-        canvas.clipPath(clip);
-      }
-      final cards = _linkEdges && _bounds.length > 1;
-      if (cards) {
-        if (_showAhead) {
-          _strokeCards(canvas, offset, track, onlyWalked: false);
-        }
-        _strokeCards(canvas, offset, walked, onlyWalked: true);
-      } else {
-        if (_showAhead) {
-          _stroke(canvas, offset, track, onlyWalked: false);
-        }
-        _stroke(canvas, offset, walked, onlyWalked: true);
-      }
-      if (hideCards) canvas.restore();
+      canvas.save();
+      canvas.translate(offset.dx, offset.dy);
+      final clip = _clip;
+      if (clip != null) canvas.clipPath(clip);
+      _paintStrokes(canvas);
+      canvas.restore();
     }
     if (_walkerVisible) {
       defaultPaint(context, offset);
@@ -537,43 +528,124 @@ class RenderWindingTrail extends RenderBox
     }
   }
 
-  /// Sai da base do card de cima e entra na lateral do de baixo — o lado
-  /// que está virado para o card anterior.
-  void _strokeCards(
-    Canvas canvas,
-    Offset offset,
-    Color color, {
-    required bool onlyWalked,
-  }) {
-    for (var i = 0; i < _bounds.length - 1; i++) {
-      if (_passed[i] != onlyWalked) continue;
-      final start = _leave(i) + offset;
-      final end = _approach(i + 1) + offset;
-      final path = _isStop[i + 1]
-          ? _intoStop(start, end)
-          : _baseToSide(start, end);
-      final shaft = _openings[i + 1];
-      if (shaft != null) {
-        path.lineTo(shaft.center.dx + offset.dx, shaft.bottom + offset.dy);
+  /// A curva e o recorte dos cards nascem no layout. O frame só carimba.
+  void _cacheStrokes() {
+    _strokes.clear();
+    if (_anchors.length < 2) return;
+    if (_linkEdges && _bounds.length > 1) {
+      for (var i = 0; i < _bounds.length - 1; i++) {
+        final start = _leave(i);
+        final end = _approach(i + 1);
+        final path = _isStop[i + 1]
+            ? _intoStop(start, end)
+            : _baseToSide(start, end);
+        final shaft = _openings[i + 1];
+        if (shaft != null) {
+          path.lineTo(shaft.center.dx, shaft.bottom);
+        }
+        _strokes.add(_TrailStroke(path: path, lit: _passed[i], width: 10));
       }
-      if (onlyWalked) {
-        canvas.drawPath(
-          path,
-          Paint()
-            ..color = color.withValues(alpha: 0.22)
-            ..style = PaintingStyle.stroke
-            ..strokeWidth = 10
-            ..strokeCap = StrokeCap.round
-            ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 6),
+      return;
+    }
+    _appendRun(onlyWalked: false);
+    _appendRun(onlyWalked: true);
+  }
+
+  void _appendRun({required bool onlyWalked}) {
+    final run = <Offset>[];
+    void flush() {
+      if (run.length >= 2) {
+        _strokes.add(
+          _TrailStroke(
+            path: _flowing(run, Offset.zero),
+            lit: onlyWalked,
+            width: 9,
+          ),
         );
       }
-      _paintFootprints(
+      run.clear();
+    }
+
+    for (var i = 0; i < _anchors.length - 1; i++) {
+      if (_passed[i] != onlyWalked) {
+        flush();
+        continue;
+      }
+      if (run.isEmpty) run.add(_anchors[i]);
+      run.add(_anchors[i + 1]);
+    }
+    flush();
+  }
+
+  void _cacheClip() {
+    if (_covers.isEmpty) {
+      _clip = null;
+      return;
+    }
+    // O tracejado para na borda do card. O miolo fica limpo.
+    final clip = Path()
+      ..fillType = PathFillType.evenOdd
+      ..addRect(Offset.zero & size);
+    for (final cover in _covers) {
+      clip.addPath(cover, Offset.zero);
+    }
+    _clip = clip;
+  }
+
+  void _paintStrokes(Canvas canvas) {
+    final phase = _dashPhase;
+    for (final stroke in _strokes) {
+      if (!stroke.lit && !_showAhead) {
+        _paintOpenPath(canvas, stroke);
+        continue;
+      }
+      final color = stroke.lit ? _walked : _track;
+      _foot.color = color.withValues(alpha: stroke.lit ? 0.95 : 0.55);
+      _stampFeet(
         canvas,
-        path,
-        color,
-        phase: onlyWalked ? _dashPhase : 0,
-        lit: onlyWalked,
+        stroke.metrics,
+        phase: stroke.lit ? phase : 0,
+        lit: stroke.lit,
       );
+    }
+  }
+
+  /// Tracejado fino na mesma curva das pegadas. As pegadas ficam no trecho concluído.
+  void _paintOpenPath(Canvas canvas, _TrailStroke stroke) {
+    const dash = 4.5;
+    const gap = 3.5;
+    const thick = 1.2;
+    final mark = Paint()
+      ..color = _walked.withValues(alpha: 0.82)
+      ..style = PaintingStyle.fill
+      ..isAntiAlias = true;
+    for (final metric in stroke.metrics) {
+      var distance = 0.0;
+      while (distance < metric.length) {
+        final end = math.min(distance + dash, metric.length);
+        final span = end - distance;
+        if (span > 1.2) {
+          final tangent = metric.getTangentForOffset((distance + end) / 2);
+          if (tangent != null) {
+            canvas.save();
+            canvas.translate(tangent.position.dx, tangent.position.dy);
+            canvas.rotate(tangent.angle);
+            canvas.drawRRect(
+              RRect.fromRectAndRadius(
+                Rect.fromCenter(
+                  center: Offset.zero,
+                  width: span,
+                  height: thick,
+                ),
+                const Radius.circular(0.6),
+              ),
+              mark,
+            );
+            canvas.restore();
+          }
+        }
+        distance = end + gap;
+      }
     }
   }
 
@@ -607,7 +679,8 @@ class RenderWindingTrail extends RenderBox
     }
     final dir = dx >= 0 ? 1.0 : -1.0;
     final adx = dx.abs();
-    final radius = math.min(40.0, math.min(dy, adx) * 0.92);
+    // Curva larga: o cotovelo de 40 px lia como ângulo reto no tracejado.
+    final radius = math.min(72.0, math.min(dy, adx) * 0.92);
     if (radius < 12) {
       path.cubicTo(a.dx, a.dy + dy * 0.55, b.dx - dx * 0.2, b.dy, b.dx, b.dy);
       return path;
@@ -643,49 +716,6 @@ class RenderWindingTrail extends RenderBox
       ..quadraticBezierTo(b.dx, railY, b.dx, railY + radius)
       ..lineTo(b.dx, b.dy);
     return path;
-  }
-
-  void _stroke(
-    Canvas canvas,
-    Offset offset,
-    Color color, {
-    required bool onlyWalked,
-  }) {
-    final run = <Offset>[];
-    void flush() {
-      if (run.length >= 2) {
-        final flowing = _flowing(run, offset);
-        if (onlyWalked) {
-          canvas.drawPath(
-            flowing,
-            Paint()
-              ..color = color.withValues(alpha: 0.22)
-              ..style = PaintingStyle.stroke
-              ..strokeWidth = 9
-              ..strokeCap = StrokeCap.round
-              ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 6),
-          );
-        }
-        _paintFootprints(
-          canvas,
-          flowing,
-          color,
-          phase: onlyWalked ? _dashPhase : 0,
-          lit: onlyWalked,
-        );
-      }
-      run.clear();
-    }
-
-    for (var i = 0; i < _anchors.length - 1; i++) {
-      if (_passed[i] != onlyWalked) {
-        flush();
-        continue;
-      }
-      if (run.isEmpty) run.add(_anchors[i]);
-      run.add(_anchors[i + 1]);
-    }
-    flush();
   }
 
   /// Catmull-Rom pelos centros: a tangente segue a viagem, em vez de chegar
@@ -724,18 +754,14 @@ class RenderWindingTrail extends RenderBox
   }
 
   /// Pegadas ao longo da curva — esquerda/direita, alinhadas à tangente.
-  void _paintFootprints(
+  void _stampFeet(
     Canvas canvas,
-    Path source,
-    Color color, {
+    List<ui.PathMetric> metrics, {
     double phase = 0,
     required bool lit,
   }) {
     const step = 20.0;
-    final paint = Paint()
-      ..color = color.withValues(alpha: lit ? 0.95 : 0.55)
-      ..isAntiAlias = true;
-    for (final metric in source.computeMetrics()) {
+    for (final metric in metrics) {
       var distance = -((phase % step) + step) % step;
       var leftFoot = true;
       while (distance < metric.length) {
@@ -747,7 +773,7 @@ class RenderWindingTrail extends RenderBox
               tangent.position,
               tangent.angle,
               left: leftFoot,
-              paint: paint,
+              paint: _foot,
               lit: lit,
             );
           }
@@ -855,65 +881,5 @@ class RenderWindingTrail extends RenderBox
       child = data.previousSibling;
     }
     return false;
-  }
-}
-
-/// Círculo de nível, com o lábio de baixo do botão.
-class PathNode extends StatelessWidget {
-  final double size;
-  final Color fill;
-  final Color? glow;
-  final Widget child;
-
-  const PathNode({
-    super.key,
-    required this.size,
-    required this.fill,
-    this.glow,
-    required this.child,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final lip = Color.lerp(fill, const Color(0xFF1A2433), 0.28)!;
-    return SizedBox(
-      width: size,
-      height: size,
-      child: Stack(
-        children: [
-          Positioned(
-            left: 0,
-            right: 0,
-            top: 5,
-            bottom: 0,
-            child: DecoratedBox(
-              decoration: BoxDecoration(shape: BoxShape.circle, color: lip),
-            ),
-          ),
-          Positioned(
-            left: 0,
-            right: 0,
-            top: 0,
-            bottom: 5,
-            child: DecoratedBox(
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: fill,
-                boxShadow: glow == null
-                    ? null
-                    : [
-                        BoxShadow(
-                          color: glow!.withValues(alpha: 0.45),
-                          blurRadius: 12,
-                          spreadRadius: 1,
-                        ),
-                      ],
-              ),
-              child: Center(child: child),
-            ),
-          ),
-        ],
-      ),
-    );
   }
 }

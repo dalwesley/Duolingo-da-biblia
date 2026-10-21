@@ -2162,6 +2162,35 @@ class AppLocalizationsEs extends AppLocalizations {
   String get exerciseVerbJudge => 'Juzga';
 
   @override
+  String get explainAnswerLabel => 'Respuesta correcta';
+
+  @override
+  String explainCorrectAnswer(String text) {
+    return 'Respuesta correcta: $text';
+  }
+
+  @override
+  String get explainErrorsEmptyBody =>
+      'Cuando falles una pregunta, aparecerá aquí con la respuesta correcta y el porqué.';
+
+  @override
+  String get explainErrorsEmptyTitle => 'Ningún error guardado';
+
+  @override
+  String explainErrorsEntry(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count errores guardados, con las explicaciones',
+      one: '1 error guardado, con la explicación',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get explainErrorsTitle => 'Errores explicados';
+
+  @override
   String get feedbackAlmost => 'Casi';
 
   @override
@@ -5893,8 +5922,27 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String get paywallFounderBadge => 'Lanzamiento';
+
+  @override
+  String paywallFounderBody(String price) {
+    return 'Un precio promocional para ti, pionero de Stway. Pagas $price al año, para siempre, mientras renueves.';
+  }
+
+  @override
+  String paywallFounderCounter(int cap) {
+    return 'de $cap pioneros';
+  }
+
+  @override
+  String get paywallFounderNote => 'Pagas hoy. El precio se queda.';
+
+  @override
+  String get paywallFounderTitle => 'El precio de lanzamiento';
+
+  @override
   String get paywallFreeForever =>
-      'La Biblia, las escenas, los 3 modos y la liga siguen gratis. Siempre.';
+      'La Biblia y las escenas siguen gratis. Siempre.';
 
   @override
   String get paywallHeadline => 'Camina con más constancia';
@@ -5919,52 +5967,56 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get paywallPerkBadgeBody =>
-      'Un sello en tu perfil. Quien abre tu nombre en la Caravana ve que apoyas Stway.';
+      'Un sello exclusivo en tu perfil y en la Caravana.';
 
   @override
-  String get paywallPerkBadgeTitle => 'Sello de apoyo';
+  String get paywallPerkBadgeTitle => 'Sello de Peregrino';
+
+  @override
+  String get paywallPerkExplainBody =>
+      'Cada error queda guardado, con la respuesta correcta y el porqué.';
 
   @override
   String get paywallPerkPlansBody =>
-      'La Biblia completa a tu ritmo, Evangelios en 30 días, Nuevo Testamento en 90 y otros.';
+      'Los Evangelios en 30 días, el Nuevo Testamento en 90 y otros caminos.';
 
   @override
   String get paywallPerkPlansTitle => 'Planes de lectura';
 
   @override
   String get paywallPerkRecognitionBody =>
-      'Mira quién de la caravana tocó el corazón en tu escena y en tus medallas.';
+      'Mira quién reconoció tu caminata y tus logros.';
 
   @override
-  String get paywallPerkRecognitionTitle => 'Quién reconoció';
+  String get paywallPerkRecognitionTitle => 'Reconocimiento';
 
   @override
   String get paywallPerkReinforceBody =>
-      'En tu perfil, el tipo de pregunta que más fallas. Después, una práctica solo de ese tipo.';
+      'Ves dónde tropiezas. Después, una práctica solo de eso.';
 
   @override
-  String get paywallPerkReinforceTitle => 'Refuerzo del punto débil';
+  String get paywallPerkReinforceTitle => 'Lo que más fallas';
 
   @override
   String get paywallPerkSeasonBody =>
-      'Caminatas del calendario cristiano, como el Adviento: todos el mismo día, desde el 4.º día.';
+      'Adviento, Pascua, Navidad y otras temporadas, cada una con un camino propio.';
 
   @override
-  String get paywallPerkSeasonTitle => 'Caminatas de temporada';
+  String get paywallPerkSeasonTitle => 'Rutas de temporada';
 
   @override
   String get paywallPerkStreakBody =>
-      'Sigue tu racha, los días de esta semana y cómo fueron los últimos tres meses.';
+      'Tu racha, los días de esta semana y cómo caminaste en los últimos tres meses.';
 
   @override
-  String get paywallPerkStreakTitle => 'Tu constancia';
+  String get paywallPerkStreakTitle => 'Tus días';
 
   @override
   String get paywallPerkWeeklyBody =>
-      'El domingo, una escena especial para reforzar todo lo que aprendiste en la semana.';
+      'Una vez por semana, vuelves a lo que aprendiste. Las preguntas empiezan por lo que fallaste.';
 
   @override
-  String get paywallPerkWeeklyTitle => 'Repaso semanal';
+  String get paywallPerkWeeklyTitle => 'Repaso de la semana';
 
   @override
   String get paywallPitch =>
@@ -5972,6 +6024,9 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get paywallPlanAnnual => 'Anual';
+
+  @override
+  String get paywallPlanFounder => 'Pionero';
 
   @override
   String get paywallPlanLifetime => 'De por vida';
@@ -6007,6 +6062,11 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String paywallPriceWeekly(String price) {
     return '$price a la semana';
+  }
+
+  @override
+  String paywallPromoSubscribeNote(String date) {
+    return 'Puedes suscribirte ya: el plan empieza hoy, según las reglas de la tienda, sin esperar al $date.';
   }
 
   @override
@@ -6120,6 +6180,9 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get pilgrimAccuracyTitle => 'Aciertos';
+
+  @override
+  String get pilgrimBadge => 'Peregrino';
 
   @override
   String pilgrimChaptersBooks(int chapters, int books) {
@@ -6387,7 +6450,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get planLockedGuidedBody =>
-      'Los planes guiados son de Peregrino+. La Biblia entera sigue gratis.';
+      'Tus 3 días gratis de este plan terminaron. Continúa con Peregrino+; la Biblia entera sigue gratis.';
 
   @override
   String get planMarkDayRead => 'Marcar la lectura del día';
@@ -6526,10 +6589,34 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get plansGuidedPlusNote =>
-      'La Biblia entera es siempre gratis. Los planes guiados son de Peregrino+.';
+      'La Biblia entera es siempre gratis. Los guiados empiezan con 3 días gratis; después, Peregrino+.';
 
   @override
   String get plansWholeBibleTitle => 'Biblia completa';
+
+  @override
+  String get plusBillingHomeAction => 'Ver mi plan';
+
+  @override
+  String get plusBillingHomeBody =>
+      'La tienda no pudo cobrar. Actualiza el pago para no perder el acceso cuando venza el plan.';
+
+  @override
+  String get plusBillingHomeTitle => 'Problema con el pago de Peregrino+';
+
+  @override
+  String get plusEndedHomeBody =>
+      'Tus repasos, planes guiados y la Caminata te esperan. La Biblia y las escenas siguen gratis, como siempre.';
+
+  @override
+  String get plusEndedHomeTitle => 'Tu Peregrino+ terminó';
+
+  @override
+  String get plusGraceHomeBody =>
+      'Aún tienes unos días de acceso mientras la tienda confirma. Abre para ver tu plan.';
+
+  @override
+  String get plusGraceHomeTitle => 'Tu Peregrino+ venció hace poco';
 
   @override
   String get plusNoticeContinue => 'Continuar con Peregrino+';
@@ -6618,6 +6705,13 @@ class AppLocalizationsEs extends AppLocalizations {
     );
     return '$_temp0';
   }
+
+  @override
+  String get plusOfferWinbackBody =>
+      'Tu Peregrino+ terminó, pero tus repasos, planes y la Caminata siguen aquí. Volver es un toque — y mantiene Stway gratis para quien no puede pagar.';
+
+  @override
+  String get plusOfferWinbackTitle => 'Tu caminata Plus te extraña';
 
   @override
   String get plusPerksHeader => 'Con Peregrino+';
@@ -6727,7 +6821,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get profileDaysPerWeek => 'de 7 días';
+  String get profileDaysPerWeek => 'días por semana';
 
   @override
   String get profileInTheWord => 'En la Palabra';
@@ -6738,7 +6832,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get profileLampHelp =>
-      'Cada lámpara es una semana. El número es cuántos días caminaste.';
+      'Cada lámpara es una semana: el aceite sube con cada día caminado y la llama crece.';
 
   @override
   String get profileLastThreeMonths => 'Últimos 3 meses';
@@ -7385,6 +7479,10 @@ class AppLocalizationsEs extends AppLocalizations {
   String get resetTitle => 'Borrar progreso';
 
   @override
+  String get reviewSlotTaken =>
+      'El repaso de hoy ya se hizo — este queda para mañana.';
+
+  @override
   String get roomErrorCreate =>
       'No se pudo crear el grupo. Inténtalo de nuevo.';
 
@@ -7997,7 +8095,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get settingsPlusTeaser =>
-      'Caminatas de temporada, planes de lectura y repaso semanal';
+      'Rutas de temporada, planes de lectura y repaso de la semana';
 
   @override
   String get settingsProgressInCloud => 'Progreso en la nube';
@@ -8891,7 +8989,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get weeklyReviewPlusBody =>
-      'Con Peregrino+, el repaso trae el “Hoy:” de cada escena y 3 preguntas sobre ellas.';
+      'Con Peregrino+, vuelves a lo que enseñó cada escena y respondes 3 preguntas.';
 
   @override
   String get weeklyReviewPreparing => 'Preparando…';

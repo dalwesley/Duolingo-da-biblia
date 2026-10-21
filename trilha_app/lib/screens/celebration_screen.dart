@@ -7,7 +7,6 @@ import '../data/entry_trails.dart';
 import '../l10n/app_language.dart';
 import '../data/question_bank.dart';
 import '../data/season_walk_catalog.dart';
-import '../models/season_walk.dart';
 import '../data/trail_repository.dart';
 import '../models/caravan_pilgrim_profile.dart';
 import '../models/difficulty.dart';
@@ -345,7 +344,6 @@ class _CelebrationScreenState extends State<CelebrationScreen>
       }
       _streakBefore = progress.streak;
       final walkedBefore = progress.walkedToday;
-      final plusOpen = context.read<SubscriptionService>().plusFeaturesOpen;
       // Fanfarra junto da entrada do herói — não espera rede/salvamento.
       Future.delayed(const Duration(milliseconds: 300), () {
         if (!mounted) return;
@@ -385,9 +383,11 @@ class _CelebrationScreenState extends State<CelebrationScreen>
               if (date.isAfter(today)) continue;
               final ymd =
                   '${date.year.toString().padLeft(4, '0')}-${date.month.toString().padLeft(2, '0')}-${date.day.toString().padLeft(2, '0')}';
-              if (!SeasonWalkAccess.needsPlusDay(d.index) || plusOpen) {
-                await progress.markWalkDate(campaign.id, ymd);
-              }
+              // A cena é grátis na trilha: quem fez, fez — o dia da
+              // Caminhada é creditado mesmo sem Plus (a entrada pela
+              // temporada e a revisão seguem do Peregrino+). Assinar
+              // depois encontra a caminhada andando, não zerada.
+              await progress.markWalkDate(campaign.id, ymd);
               break;
             }
             if (firstSealEncounter && mounted) {
@@ -1208,7 +1208,6 @@ class _HeroBeat extends StatelessWidget {
     final a = Appearance.of(context);
     final emblemSize = compact ? 72.0 : 118.0;
     final iconSize = compact ? 28.0 : 44.0;
-    final inCommit = streak > 0 && streak <= streakGoal;
     // Cena fechada — limpa, bônus ou Travessia — é a nuvem. A lâmpada fica
     // só quando a cena não fechou. Título, "Cena limpa" e a linha da
     // medalha saem: a cara já diz o resultado.
@@ -1316,9 +1315,6 @@ class _HeroBeat extends StatelessWidget {
                     value: '+$stepsShown',
                     label: context.l10n.celebrationStatSteps,
                     color: AppRoles.reward,
-                    delay: 0,
-                    pulse: pulse,
-                    featured: !inCommit,
                     dense: denseStats || compact,
                     claimScale: claimScale,
                   ),
@@ -1332,9 +1328,6 @@ class _HeroBeat extends StatelessWidget {
                         ? context.l10n.celebrationStatDay
                         : context.l10n.celebrationStatDays,
                     color: AppRoles.streak,
-                    delay: 0.08,
-                    pulse: pulse,
-                    featured: inCommit,
                     dense: denseStats || compact,
                   ),
                 ),
@@ -1345,8 +1338,6 @@ class _HeroBeat extends StatelessWidget {
                     value: '$pctShown%',
                     label: context.l10n.celebrationStatAccuracy,
                     color: AppRoles.success,
-                    delay: 0.16,
-                    pulse: pulse,
                     dense: denseStats || compact,
                   ),
                 ),
@@ -2077,9 +2068,6 @@ class _StatCard extends StatelessWidget {
   final String value;
   final String label;
   final Color color;
-  final double delay;
-  final AnimationController pulse;
-  final bool featured;
   final bool dense;
   final Animation<double>? claimScale;
 
@@ -2088,9 +2076,6 @@ class _StatCard extends StatelessWidget {
     required this.value,
     required this.label,
     required this.color,
-    required this.delay,
-    required this.pulse,
-    this.featured = false,
     this.dense = false,
     this.claimScale,
   });
@@ -2098,69 +2083,44 @@ class _StatCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final claim = claimScale;
-    Widget card = AnimatedBuilder(
-      animation: pulse,
-      builder: (context, child) {
-        final phase = (pulse.value + delay) % 1.0;
-        final breath = (math.sin(phase * math.pi * 2) + 1) / 2;
-        return DecoratedBox(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(AppRadii.sm),
-            boxShadow: [
-              BoxShadow(
-                color: color.withValues(
-                  alpha: dense ? 0.04 : 0.08 + breath * 0.1,
-                ),
-                blurRadius: dense ? 6 : 10 + breath * 8,
-              ),
-            ],
+    Widget card = GlassCard(
+      color: _CelebrationPlate.fill,
+      padding: EdgeInsets.symmetric(
+        vertical: dense ? 8 : AppSpace.section,
+        horizontal: dense ? 6 : AppSpace.sm,
+      ),
+      radius: dense ? AppRadii.sm : AppRadii.md,
+      tint: _CelebrationPlate.line,
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          CinematicIcon(
+            glyph: glyph,
+            size: dense ? AppMetrics.chipIcon : AppMetrics.iconMd,
+            accent: color,
+            framed: false,
           ),
-          // Só a sombra respira; o cartão fica numa camada em cache.
-          child: RepaintBoundary(child: child),
-        );
-      },
-      child: GlassCard(
-        color: _CelebrationPlate.fill,
-        padding: EdgeInsets.symmetric(
-          vertical: dense ? 6 : AppSpace.section,
-          horizontal: dense ? 4 : AppSpace.sm,
-        ),
-        radius: dense ? AppRadii.sm : AppRadii.md,
-        tint: featured ? color : _CelebrationPlate.line,
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            CinematicIcon(
-              glyph: glyph,
-              size: dense ? AppMetrics.chipIcon : AppMetrics.iconMd,
-              accent: color,
-              framed: false,
-              glowing: featured,
+          SizedBox(height: dense ? 2 : AppSpace.xs),
+          Text(
+            value,
+            style: AppTypography.title(
+              size: dense ? 16 : 20,
+              weight: FontWeight.w900,
+              color: _CelebrationPlate.ink,
             ),
-            SizedBox(height: dense ? 2 : AppSpace.xs),
-            Text(
-              value,
-              style: AppTypography.title(
-                size: dense ? (featured ? 16 : 12) : (featured ? 20 : 16),
-                weight: FontWeight.w900,
-                color: featured ? color : _CelebrationPlate.ink,
-              ),
+          ),
+          Text(
+            label,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: AppTypography.label(
+              size: 10,
+              weight: FontWeight.w600,
+              letterSpacing: 0.3,
+              color: _CelebrationPlate.muted,
             ),
-            Text(
-              label,
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-              style: AppTypography.label(
-                size: 10,
-                weight: FontWeight.w600,
-                letterSpacing: 0.3,
-                color: featured
-                    ? color.withValues(alpha: 0.85)
-                    : _CelebrationPlate.muted,
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
     if (claim != null) {

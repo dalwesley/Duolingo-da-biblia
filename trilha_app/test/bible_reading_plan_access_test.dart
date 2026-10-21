@@ -25,8 +25,18 @@ void main() {
     }
   });
 
-  test('a guided plan without Plus locks from day one', () {
-    final plan = _plan(completedDays: 0, guidedId: 'evangelhos-30');
+  test('a guided plan without Plus starts with free days', () {
+    for (final d in [0, 1, 2]) {
+      final plan = _plan(completedDays: d, guidedId: 'evangelhos-30');
+      expect(plan.lockedToday(plusOpen: false), isFalse, reason: 'day $d');
+    }
+  });
+
+  test('a guided plan locks once the free days are used', () {
+    final plan = _plan(
+      completedDays: BibleReadingPlan.guidedFreeDays,
+      guidedId: 'evangelhos-30',
+    );
     expect(plan.lockedToday(plusOpen: false), isTrue);
     expect(plan.lockedToday(plusOpen: true), isFalse);
   });

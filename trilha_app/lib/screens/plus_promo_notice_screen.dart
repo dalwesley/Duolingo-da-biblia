@@ -3,6 +3,7 @@ import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 
 import '../l10n/app_language.dart';
+import '../services/analytics_service.dart';
 import '../services/progress_service.dart';
 import '../services/remote_config_service.dart';
 import '../services/subscription_service.dart';
@@ -50,7 +51,7 @@ class PlusPromoNoticeScreen extends StatelessWidget {
     final daysLeft = promoUntil.difference(today).inDays + 1;
 
     final annual = sub.annualPackage;
-    final trial = annual == null ? null : SubscriptionService.trialDays(annual);
+    final trial = annual == null ? null : sub.trialDaysFor(annual);
     final perMonth = annual?.storeProduct.pricePerMonthString;
 
     final free = [
@@ -90,7 +91,13 @@ class PlusPromoNoticeScreen extends StatelessWidget {
                     alignment: Alignment.centerRight,
                     child: IconButton(
                       tooltip: l10n.commonNotNow,
-                      onPressed: () => Navigator.of(context).pop(),
+                      onPressed: () {
+                        AnalyticsService.instance.logOfferSheet(
+                          kind: kind.source,
+                          action: 'dismiss',
+                        );
+                        Navigator.of(context).pop();
+                      },
                       icon: CinematicIcon(
                         glyph: CinematicGlyph.close,
                         size: AppMetrics.iconLg,
@@ -201,6 +208,10 @@ class PlusPromoNoticeScreen extends StatelessWidget {
                         : l10n.plusNoticeContinue,
                     expanded: true,
                     onTap: () {
+                      AnalyticsService.instance.logOfferSheet(
+                        kind: kind.source,
+                        action: 'cta',
+                      );
                       final nav = Navigator.of(context);
                       nav.pop();
                       nav.push(
@@ -221,7 +232,13 @@ class PlusPromoNoticeScreen extends StatelessWidget {
                   TextCta(
                     label: l10n.commonNotNow,
                     color: a.textFaint,
-                    onTap: () => Navigator.of(context).pop(),
+                    onTap: () {
+                      AnalyticsService.instance.logOfferSheet(
+                        kind: kind.source,
+                        action: 'dismiss',
+                      );
+                      Navigator.of(context).pop();
+                    },
                   ),
                 ],
               ),

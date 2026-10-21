@@ -414,20 +414,18 @@ class BrandTrail {
       Paint()
         ..style = PaintingStyle.stroke
         ..strokeCap = StrokeCap.round
-        ..strokeWidth = w * 0.05
+        ..strokeWidth = w * 0.09
         ..blendMode = BlendMode.plus
-        ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 14)
-        ..color = _blue.withValues(alpha: 0.3 * lit),
+        ..color = _blue.withValues(alpha: 0.22 * lit),
     );
     canvas.drawPath(
       seg,
       Paint()
         ..style = PaintingStyle.stroke
         ..strokeCap = StrokeCap.round
-        ..strokeWidth = 2
+        ..strokeWidth = 3.5
         ..blendMode = BlendMode.plus
-        ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 2)
-        ..color = _ice.withValues(alpha: 0.55 * lit),
+        ..color = _ice.withValues(alpha: 0.45 * lit),
     );
 
     // Frente da luz.

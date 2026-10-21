@@ -147,7 +147,7 @@ class JourneyPath extends StatelessWidget {
     return FlowingWindingTrail(
       walked: accent,
       track: track,
-      // O tracejado só existe no trecho já percorrido.
+      // Trilho liga todos os cards. Pegadas só saem do card concluído.
       showAhead: false,
       stops: stops,
       walker: const WindingWalker(
@@ -184,12 +184,9 @@ class _TrailStation extends StatelessWidget {
     String? status;
     if (!isCurrent) {
       if (isLocked || isSoon) {
-        final desc = item.trail.localizedDescription.trim();
-        status = desc.isEmpty
-            ? (isSoon
-                  ? context.l10n.commonComingSoon
-                  : context.l10n.journeyBeyondHorizon)
-            : desc;
+        status = isSoon
+            ? context.l10n.commonComingSoon
+            : context.l10n.journeyBeyondHorizon;
       } else if (item.statusLabel != null) {
         status = item.statusLabel;
       } else if (isDone) {

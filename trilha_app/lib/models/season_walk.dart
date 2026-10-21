@@ -102,6 +102,31 @@ class SeasonWalkAccess {
 
   static bool needsPlusDay(int index) => index > freeDays;
 
+  /// Há fechamento de semana da temporada pendente? (Semana terminou,
+  /// metade dos dias feita e a revisão daquela semana ainda não saiu.)
+  /// É o topo da hierarquia de revisões do dia: enquanto ele existe,
+  /// as ofertas das outras revisões ficam quietas.
+  static bool weekReviewPending({
+    required SeasonWalkCampaign campaign,
+    required DateTime today,
+    required bool Function(SeasonWalkDay day) isDayDone,
+    required bool Function(int weekIndex) isReviewDone,
+  }) {
+    final t = DateTime(today.year, today.month, today.day);
+    for (var w = 0; w < campaign.weekCount; w++) {
+      final days = campaign.week(w);
+      if (days.isEmpty || isReviewDone(w)) continue;
+      final lastDay = days.last.dateOn(campaign.start);
+      if (lastDay.isAfter(t)) continue;
+      // Fechamento tem semana de validade: esquecido, ele expira e as
+      // outras revisões voltam a ser oferecidas.
+      if (t.difference(lastDay).inDays > 6) continue;
+      final done = days.where(isDayDone).length;
+      if (done >= (days.length / 2).ceil()) return true;
+    }
+    return false;
+  }
+
   /// Prefere ato errado da semana; senão um ainda não usado; senão o primeiro.
   static String? pickReviewActId({
     required Iterable<String> poolIds,

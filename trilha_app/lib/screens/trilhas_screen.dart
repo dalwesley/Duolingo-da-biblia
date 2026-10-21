@@ -20,7 +20,6 @@ import '../widgets/cinematic_icon.dart';
 import '../widgets/cloud_mascot.dart';
 import '../widgets/coming_soon_trails_card.dart';
 import '../widgets/immersive_background.dart';
-import '../widgets/journey_sky.dart';
 import '../widgets/offline_curriculum_dialog.dart';
 import '../widgets/realm_world_atmosphere.dart';
 import '../widgets/shell_tab_scope.dart';
@@ -142,23 +141,15 @@ class _TrilhasScreenState extends State<TrilhasScreen>
 
   void _openJourney(TrailJourney journey) {
     final trails = _trails!;
+    final reduced = MediaQuery.disableAnimationsOf(context);
     Navigator.of(context).push(
-      PageRouteBuilder(
-        transitionDuration: AppMotion.gentle,
-        reverseTransitionDuration: AppMotion.gentle,
-        pageBuilder: (_, animation, secondaryAnimation) {
-          final fade = CurvedAnimation(
-            parent: animation,
-            curve: AppMotion.enter,
-          );
-          return FadeTransition(
-            opacity: fade,
-            child: ScaleTransition(
-              scale: Tween<double>(begin: 1.04, end: 1).animate(fade),
-              child: RealmJourneyScreen(journey: journey, allTrails: trails),
-            ),
-          );
-        },
+      PageRouteBuilder<void>(
+        transitionDuration: reduced ? Duration.zero : AppMotion.standard,
+        reverseTransitionDuration: reduced ? Duration.zero : AppMotion.quick,
+        pageBuilder: (_, _, _) =>
+            RealmJourneyScreen(journey: journey, allTrails: trails),
+        transitionsBuilder: (_, animation, _, child) =>
+            FadeTransition(opacity: animation, child: child),
       ),
     );
   }
@@ -493,6 +484,9 @@ class _NowPlayingStripState extends State<_NowPlayingStrip>
     vsync: this,
     duration: const Duration(milliseconds: 1800),
   )..repeat(reverse: true);
+  late final Animation<double> _glow = _pulse.drive(
+    Tween<double>(begin: 0.4, end: 1).chain(CurveTween(curve: AppMotion.move)),
+  );
   bool _pressed = false;
 
   @override
@@ -613,36 +607,51 @@ class _NowPlayingStripState extends State<_NowPlayingStrip>
                         ),
                         const SizedBox(width: 14),
                         RepaintBoundary(
-                          child: AnimatedBuilder(
-                            animation: _pulse,
-                            builder: (context, child) {
-                              final t = AppMotion.move.transform(_pulse.value);
-                              return Container(
-                                width: 50,
-                                height: 50,
-                                decoration: BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  color: AppRoles.action,
-                                  boxShadow: [
-                                    BoxShadow(
-                                      color: AppRoles.action.withValues(
-                                        alpha: 0.18 + 0.28 * t,
-                                      ),
-                                      blurRadius: 10 + 12 * t,
-                                      spreadRadius: 1 + 2 * t,
+                          child: SizedBox(
+                            width: 50,
+                            height: 50,
+                            child: Stack(
+                              clipBehavior: Clip.none,
+                              alignment: Alignment.center,
+                              children: [
+                                const Positioned.fill(
+                                  child: DecoratedBox(
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      color: AppRoles.action,
                                     ),
-                                  ],
+                                  ),
                                 ),
-                                child: child,
-                              );
-                            },
-                            child: const Center(
-                              child: CinematicIcon(
-                                glyph: CinematicGlyph.forward,
-                                size: AppMetrics.iconMd,
-                                accent: AppRoles.onAction,
-                                framed: false,
-                              ),
+                                FadeTransition(
+                                  opacity: _glow,
+                                  child: DecoratedBox(
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: AppRoles.action.withValues(
+                                            alpha: 0.46,
+                                          ),
+                                          blurRadius: 18,
+                                          spreadRadius: 2,
+                                        ),
+                                      ],
+                                    ),
+                                    child: const SizedBox(
+                                      width: 50,
+                                      height: 50,
+                                    ),
+                                  ),
+                                ),
+                                const Center(
+                                  child: CinematicIcon(
+                                    glyph: CinematicGlyph.forward,
+                                    size: AppMetrics.iconMd,
+                                    accent: AppRoles.onAction,
+                                    framed: false,
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
                         ),
@@ -801,8 +810,7 @@ class _PosterCarouselState extends State<_PosterCarousel> {
 }
 
 /// Pôster de um caminho da Bíblia: a paisagem da área de ponta a ponta,
-/// selo com o progresso no alto e o nome em serifa. O céu é o mesmo que
-/// abre a tela do caminho (Hero), então o toque parece entrar no pôster.
+/// selo com o progresso no alto e o nome em serifa.
 class _JourneyPoster extends StatefulWidget {
   final _JourneyInfo info;
   final bool focused;
@@ -885,15 +893,11 @@ class _JourneyPosterState extends State<_JourneyPoster> {
                     bottom: 0,
                     left: -36 - widget.parallax * 28,
                     right: -36 + widget.parallax * 28,
-                    child: Hero(
-                      tag: journeySkyTag(journey),
-                      flightShuttleBuilder: journeySkyShuttle,
-                      child: RealmWorldAtmosphere(
-                        realm: journey.realm,
-                        animate: widget.animate && focused && !locked,
-                        locked: locked,
-                        featured: focused,
-                      ),
+                    child: RealmWorldAtmosphere(
+                      realm: journey.realm,
+                      animate: widget.animate && focused && !locked,
+                      locked: locked,
+                      featured: focused,
                     ),
                   ),
                   const DecoratedBox(

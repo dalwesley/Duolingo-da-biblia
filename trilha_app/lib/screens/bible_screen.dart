@@ -29,7 +29,6 @@ import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import 'bible_reader_screen.dart';
 import 'bible_reading_plan_screen.dart';
-import 'paywall_screen.dart';
 
 export 'bible_reader_screen.dart' show BibleReaderScreen;
 
@@ -995,8 +994,8 @@ class _PlanCard extends StatelessWidget {
   }
 }
 
-/// Catálogo de planos: a Bíblia inteira (grátis, sempre) e os guiados (só
-/// com o Peregrino+, sem dias grátis). O plano em andamento leva "Ativo".
+/// Catálogo de planos: a Bíblia inteira (grátis, sempre) e os guiados
+/// (3 dias grátis, depois Peregrino+). O plano em andamento leva "Ativo".
 class _PlansCatalog extends StatefulWidget {
   const _PlansCatalog();
 
@@ -1041,14 +1040,9 @@ class _PlansCatalogState extends State<_PlansCatalog> {
       feature: 'guided_plan',
       hasPlus: sub.hasPlus,
     );
-    if (!sub.plusFeaturesOpen) {
-      await Navigator.of(context).push(
-        MaterialPageRoute<void>(
-          builder: (_) => const PaywallScreen(source: 'guided_plan'),
-        ),
-      );
-      return;
-    }
+    // Sem Plus, começa igual: os primeiros dias do guiado são grátis
+    // (BibleReadingPlan.guidedFreeDays). A trava aparece no dia seguinte
+    // ao fim da amostra, dentro do plano — não na porta.
     if (plan.active) {
       final ok = await showAppConfirm(
         context,
@@ -1119,7 +1113,13 @@ class _PlansCatalogState extends State<_PlansCatalog> {
                       _minutes[def.id]!.round().clamp(1, 120),
                     ),
               active: plan.active && plan.guidedId == def.id,
-              locked: !sub.plusFeaturesOpen,
+              // Cadeado só no plano ativo com a amostra já usada: os
+              // demais começam grátis, então a seta é o convite certo.
+              locked:
+                  !sub.plusFeaturesOpen &&
+                  plan.active &&
+                  plan.guidedId == def.id &&
+                  plan.lockedToday(plusOpen: sub.plusFeaturesOpen),
               onTap: () => _tapGuided(plan, def),
             ),
           ],

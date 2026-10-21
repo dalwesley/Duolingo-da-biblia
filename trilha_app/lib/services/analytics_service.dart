@@ -177,18 +177,48 @@ class AnalyticsService {
   });
 
   /// Paywall do Peregrino+ aberto. [state]: paid · promo · offer · unavailable.
-  Future<void> logPaywallView({required String source, required String state}) =>
-      _log('paywall_view', {'source': source, 'state': state});
+  Future<void> logPaywallView({
+    required String source,
+    required String state,
+  }) => _log('paywall_view', {'source': source, 'state': state});
 
   /// Etapa da compra do Peregrino+: start · success · cancel · fail.
-  Future<void> logPurchase({required String stage, required String productId}) =>
-      _log('plus_purchase', {'stage': stage, 'product_id': productId});
+  Future<void> logPurchase({
+    required String stage,
+    required String productId,
+  }) => _log('plus_purchase', {'stage': stage, 'product_id': productId});
+
+  /// Paywall fechado sem comprar (o funil precisa do denominador).
+  Future<void> logPaywallDismiss({
+    required String source,
+    required String state,
+  }) => _log('paywall_dismiss', {'source': source, 'state': state});
+
+  /// Plano tocado na lista do paywall (antes de assinar).
+  Future<void> logPaywallPlanSelect({
+    required String source,
+    required String productId,
+  }) =>
+      _log('paywall_plan_select', {'source': source, 'product_id': productId});
+
+  /// Resultado do Restaurar compra: plus · none · error.
+  Future<void> logRestore(String result) =>
+      _log('paywall_restore', {'result': result});
+
+  /// Folha/aviso de oferta do Peregrino+: view · cta · dismiss.
+  /// Sem isto, a etapa folha → paywall do funil era invisível.
+  Future<void> logOfferSheet({required String kind, required String action}) =>
+      _log('plus_offer_sheet', {'kind': kind, 'action': action});
 
   /// Recurso do Peregrino+ aberto (ou bloqueado, com [hasPlus] falso).
+  /// Firebase só aceita string ou número no parâmetro.
   Future<void> logPlusFeatureOpen({
     required String feature,
     required bool hasPlus,
-  }) => _log('plus_feature_open', {'feature': feature, 'has_plus': hasPlus});
+  }) => _log('plus_feature_open', {
+    'feature': feature,
+    'has_plus': hasPlus ? 1 : 0,
+  });
 
   Future<void> logEvent(String name, [Map<String, Object>? params]) =>
       _log(name, params);
@@ -196,9 +226,22 @@ class AnalyticsService {
   Future<void> _log(String name, [Map<String, Object>? params]) async {
     if (!_ready) return;
     try {
-      await _analytics?.logEvent(name: name, parameters: params);
+      await _analytics?.logEvent(
+        name: name,
+        parameters: params == null ? null : _firebaseParams(params),
+      );
     } catch (e) {
       debugPrint('Analytics log $name failed: $e');
     }
+  }
+
+  /// O SDK rejeita `bool`. Número 1/0 preserva o sim/não.
+  Map<String, Object> _firebaseParams(Map<String, Object> params) {
+    return {
+      for (final entry in params.entries)
+        entry.key: entry.value is bool
+            ? ((entry.value as bool) ? 1 : 0)
+            : entry.value,
+    };
   }
 }
