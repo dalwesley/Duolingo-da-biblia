@@ -50,7 +50,7 @@ class PlusPromoNoticeScreen extends StatelessWidget {
     final today = DateTime(now.year, now.month, now.day);
     final daysLeft = promoUntil.difference(today).inDays + 1;
 
-    final annual = sub.annualPackage;
+    final annual = sub.annualOnSale;
     final trial = annual == null ? null : sub.trialDaysFor(annual);
     final perMonth = annual?.storeProduct.pricePerMonthString;
 

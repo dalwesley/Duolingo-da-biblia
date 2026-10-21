@@ -89,7 +89,7 @@ class _PlusOfferSheet extends StatelessWidget {
     final a = Appearance.of(context);
     final l10n = context.l10n;
     final sub = context.watch<SubscriptionService>();
-    final annual = sub.annualPackage;
+    final annual = sub.annualOnSale;
     final trial = annual == null ? null : sub.trialDaysFor(annual);
     final perMonth = annual?.storeProduct.pricePerMonthString;
 

@@ -18,12 +18,14 @@
 const ENTITLEMENT_ID = 'peregrino_plus';
 const SUPPORT_PREFIX = 'apoio';
 
-/// Anual de lançamento. A vaga é da primeira compra, não de quem ainda
-/// está ativo: cancelar não devolve, renovar não soma de novo.
+/// Anual de lançamento, com teste de 14 dias. A vaga é do primeiro
+/// pagamento, não do início do teste: quem desiste no teste não ocupa
+/// vaga. Cancelar depois de pagar não devolve, renovar não soma de novo.
 const PIONEER_PRODUCT_ID = 'plus_founder_annual';
 const PIONEER_CAP = 200;
 const PIONEER_SLOT_TYPES = new Set([
   'INITIAL_PURCHASE',
+  'RENEWAL',
   'PRODUCT_CHANGE',
   'TRANSFER',
 ]);
@@ -130,8 +132,11 @@ function isPioneerProduct(id) {
 
 /**
  * Esta compra ocupa uma vaga de Pioneiro? Null se não.
- * Sandbox não conta. Renovação, cancelamento e expiração não contam.
- * TRANSFER de uma conta que já ocupou vaga herda (`from`), sem somar.
+ * Sandbox não conta. Começo de teste não conta: a vaga vem na conversão
+ * do teste (RENEWAL com `is_trial_conversion`). Outras renovações,
+ * cancelamento e expiração não contam.
+ * TRANSFER de uma conta que já ocupou vaga herda (`from`), sem somar;
+ * TRANSFER ainda no teste só herda (`inheritOnly`), a conversão soma depois.
  */
 function pioneerSlotFromEvent(event) {
   if (!event || typeof event !== 'object') return null;
@@ -139,6 +144,11 @@ function pioneerSlotFromEvent(event) {
   const type = String(event.type || '');
   if (!PIONEER_SLOT_TYPES.has(type)) return null;
   if (!isPioneerProduct(event.product_id) && !isPioneerProduct(event.new_product_id)) {
+    return null;
+  }
+  const inTrial = String(event.period_type || '') === 'TRIAL';
+  if (type === 'RENEWAL' && event.is_trial_conversion !== true) return null;
+  if ((type === 'INITIAL_PURCHASE' || type === 'PRODUCT_CHANGE') && inTrial) {
     return null;
   }
   let uid = String(event.app_user_id || '').trim();
@@ -152,17 +162,21 @@ function pioneerSlotFromEvent(event) {
           .map((u) => String(u || '').trim())
           .filter((u) => u && !u.startsWith('$RCAnonymousID') && u !== uid)
       : [];
-  return { uid, from };
+  return type === 'TRANSFER' && inTrial
+    ? { uid, from, inheritOnly: true }
+    : { uid, from };
 }
 
 /**
  * O que fazer com a vaga, dados os docs já lidos.
  * `skip`: esta conta já contou. `inherit`: a origem já contou, a vaga
- * só muda de conta. `increment`: primeira compra, soma 1.
+ * só muda de conta. `increment`: primeiro pagamento, soma 1.
+ * `inheritOnly` (transferência ainda no teste) nunca soma.
  */
-function pioneerClaimDecision({ alreadyCounted, sourceCounted, count }) {
+function pioneerClaimDecision({ alreadyCounted, sourceCounted, count, inheritOnly }) {
   if (alreadyCounted) return { action: 'skip' };
   if (sourceCounted) return { action: 'inherit' };
+  if (inheritOnly) return { action: 'skip' };
   const next = (typeof count === 'number' && count > 0 ? count : 0) + 1;
   return { action: 'increment', count: next };
 }

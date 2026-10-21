@@ -19,8 +19,10 @@ subscribers pay and never get the badge on the Caravan.
 - [ ] Paid Apps agreement, tax and banking are active in App Store Connect.
 - [ ] Subscription group "Peregrino+" with `plus_annual` (14-day free
       trial as an introductory offer), `plus_monthly` and
-      `plus_founder_annual` (launch-only locked price; removed from sale
-      after the first 200 subscribers or 60 days). No lifetime product.
+      `plus_founder_annual` (launch-only locked price, with the same
+      14-day free trial as an introductory offer; removed from sale
+      after the first 200 paying subscribers or 60 days). No lifetime
+      product.
 - [ ] Consumables `apoio_5`, `apoio_15`, `apoio_30` and `apoio_50`
       (support tips).
 - [ ] Every product has a pt-BR display name, a description and a
@@ -66,7 +68,7 @@ The Bible, every lesson in all three levels, rankings and study partners stay fr
 - Practice of the weak spot: questions of the type the user misses most.
 - A supporter badge on the profile.
 
-Plans: annual (with a 14-day free trial), monthly, and a launch-only “Pioneiro” annual at a lower price that stays while it renews — auto-renewable, in one subscription group. Pioneiro charges today and has no free trial.
+Plans: during launch, the paywall shows a launch-only “Pioneiro” annual (14-day free trial, then a lower price that stays while it renews) and a monthly plan. After launch, the Pioneiro is replaced by the regular annual (also with a 14-day free trial). All are auto-renewable, in one subscription group.
 
 How to find the purchase:
 1. Settings › tap the "Peregrino+" card, or

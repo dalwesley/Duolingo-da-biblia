@@ -283,6 +283,12 @@ class _PlusLabScreenState extends State<PlusLabScreen> {
                           sub.debugSetFakeStore,
                         ),
                         toggle(
+                          'Pioneiro esgotado (${sub.pioneerTaken}/${sub.pioneerCap})',
+                          sub.pioneerSoldOut,
+                          (v) =>
+                              sub.debugSetPioneerCount(v ? sub.pioneerCap : 0),
+                        ),
+                        toggle(
                           'Grupos abertos (simulado)',
                           context.watch<RemoteConfigService>().groupsEnabled,
                           RemoteConfigService.instance.debugSetGroupsEnabled,

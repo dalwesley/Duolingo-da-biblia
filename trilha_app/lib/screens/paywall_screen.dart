@@ -513,8 +513,8 @@ class _PlanTile extends StatelessWidget {
 }
 
 /// Explicação do plano escolhido, colada nele. O teste conta os dias.
-/// O Pioneiro diz o preço de hoje. O mensal só guarda a renovação,
-/// para o aviso não ficar solto na tela.
+/// O Pioneiro diz o preço travado (e, com teste, os dias vêm abaixo).
+/// O mensal só guarda a renovação, para o aviso não ficar solto na tela.
 class _PlanExplain extends StatelessWidget {
   final Package package;
   final int? trialDays;
@@ -534,8 +534,9 @@ class _PlanExplain extends StatelessWidget {
     final price = SubscriptionService.packageLabel(package);
     final renews = package.packageType != PackageType.lifetime;
     final days = trialDays;
+    final founder = SubscriptionService.isFounderPackage(package);
     if (days != null) {
-      return _PlanSteps(
+      final steps = _PlanSteps(
         title: l10n.paywallTimelineTitle,
         steps: [
           (l10n.paywallTimelineToday, l10n.paywallTimelineTodayBody),
@@ -547,8 +548,22 @@ class _PlanExplain extends StatelessWidget {
         ],
         footnote: renews ? l10n.paywallAutoRenew : '',
       );
+      if (!founder) return steps;
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          _PioneerNote(
+            price: package.storeProduct.priceString,
+            taken: pioneerTaken,
+            cap: pioneerCap,
+            footnote: '',
+          ),
+          const SizedBox(height: AppSpace.md),
+          steps,
+        ],
+      );
     }
-    if (SubscriptionService.isFounderPackage(package)) {
+    if (founder) {
       return _PioneerNote(
         price: package.storeProduct.priceString,
         taken: pioneerTaken,
@@ -593,8 +608,12 @@ class _PioneerNote extends StatelessWidget {
             style: AppTypography.title(size: 16, color: a.text),
           ),
           const SizedBox(height: AppSpace.md),
-          _PioneerCounter(taken: taken, cap: cap),
-          const SizedBox(height: AppSpace.md),
+          // "0 de 200" no primeiro dia parece app vazio: o contador só
+          // aparece quando já há gente suficiente para animar.
+          if (taken >= _PioneerCounter.showFrom) ...[
+            _PioneerCounter(taken: taken, cap: cap),
+            const SizedBox(height: AppSpace.md),
+          ],
           Text(
             l10n.paywallFounderBody(price),
             style: AppTypography.body(size: 14, color: a.text),
@@ -618,6 +637,9 @@ class _PioneerCounter extends StatelessWidget {
   final int cap;
 
   const _PioneerCounter({required this.taken, required this.cap});
+
+  /// Vagas ocupadas a partir das quais o contador aparece.
+  static const showFrom = 20;
 
   @override
   Widget build(BuildContext context) {

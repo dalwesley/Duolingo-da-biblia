@@ -177,6 +177,57 @@ test('Pioneiro: primeira compra ocupa vaga; renovar, cancelar e sandbox não', (
   );
 });
 
+test('Pioneiro: começo do teste não ocupa vaga; a conversão ocupa', () => {
+  const base = {
+    app_user_id: 'uid1',
+    product_id: 'plus_founder_annual',
+    environment: 'PRODUCTION',
+  };
+  assert.equal(
+    RC.pioneerSlotFromEvent({ ...base, type: 'INITIAL_PURCHASE', period_type: 'TRIAL' }),
+    null,
+  );
+  assert.deepEqual(
+    RC.pioneerSlotFromEvent({ ...base, type: 'INITIAL_PURCHASE', period_type: 'NORMAL' }),
+    { uid: 'uid1', from: [] },
+  );
+  assert.deepEqual(
+    RC.pioneerSlotFromEvent({ ...base, type: 'RENEWAL', is_trial_conversion: true }),
+    { uid: 'uid1', from: [] },
+  );
+  assert.equal(
+    RC.pioneerSlotFromEvent({ ...base, type: 'RENEWAL', is_trial_conversion: false }),
+    null,
+  );
+  assert.equal(
+    RC.pioneerSlotFromEvent({
+      ...base,
+      type: 'PRODUCT_CHANGE',
+      product_id: 'plus_annual',
+      new_product_id: 'plus_founder_annual',
+      period_type: 'TRIAL',
+    }),
+    null,
+  );
+
+  const moved = RC.pioneerSlotFromEvent({
+    ...base,
+    type: 'TRANSFER',
+    period_type: 'TRIAL',
+    transferred_from: ['uid-velho'],
+    transferred_to: ['uid-novo'],
+  });
+  assert.deepEqual(moved, { uid: 'uid-novo', from: ['uid-velho'], inheritOnly: true });
+  assert.deepEqual(
+    RC.pioneerClaimDecision({ alreadyCounted: false, sourceCounted: false, count: 4, inheritOnly: true }),
+    { action: 'skip' },
+  );
+  assert.deepEqual(
+    RC.pioneerClaimDecision({ alreadyCounted: false, sourceCounted: true, count: 4, inheritOnly: true }),
+    { action: 'inherit' },
+  );
+});
+
 test('Pioneiro: troca para o produto e transferência anônima contam uma vez', () => {
   const changed = RC.pioneerSlotFromEvent({
     type: 'PRODUCT_CHANGE',

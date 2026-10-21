@@ -9162,7 +9162,7 @@ abstract class AppLocalizations {
   /// No description provided for @paywallFounderBody.
   ///
   /// In pt, this message translates to:
-  /// **'Um valor promocional para você, pioneiro do Stway. Você paga {price} por ano, para sempre, enquanto renovar.'**
+  /// **'Um valor de lançamento para quem chega primeiro ao Stway. Você paga {price} por ano enquanto renovar.'**
   String paywallFounderBody(String price);
 
   /// No description provided for @paywallFounderCounter.
@@ -9174,7 +9174,7 @@ abstract class AppLocalizations {
   /// No description provided for @paywallFounderNote.
   ///
   /// In pt, this message translates to:
-  /// **'Paga hoje. O preço fica.'**
+  /// **'O preço fica enquanto você renovar.'**
   String get paywallFounderNote;
 
   /// No description provided for @paywallFounderTitle.

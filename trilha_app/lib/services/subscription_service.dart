@@ -202,11 +202,32 @@ class SubscriptionService extends ChangeNotifier {
   /// Vagas do Pioneiro esgotadas pelo contador do servidor.
   bool get pioneerSoldOut => (_pioneerCount ?? 0) >= _pioneerCap;
 
-  /// Pacotes à venda: sem o Pioneiro quando as vagas acabaram, mesmo que
-  /// a oferta da loja ainda o traga (tirar da loja é manual e atrasa).
-  List<Package> get packagesForSale => pioneerSoldOut
-      ? availablePackages.where((p) => !isFounderPackage(p)).toList()
-      : availablePackages;
+  /// Último dia de venda do Pioneiro (`pioneer_until`), mesmo que já tenha
+  /// passado. Null: sem prazo, só o teto de vagas.
+  DateTime? get pioneerUntil => _debugPioneerUntilOverride
+      ? _debugPioneerUntil
+      : RemoteConfigService.instance.pioneerUntil;
+
+  /// O Pioneiro está à venda: veio na oferta, há vaga e o prazo não passou.
+  bool get pioneerOnSale {
+    if (!availablePackages.any(isFounderPackage)) return false;
+    if (pioneerSoldOut) return false;
+    final until = pioneerUntil;
+    if (until == null) return true;
+    final now = DateTime.now();
+    return !DateTime(now.year, now.month, now.day).isAfter(until);
+  }
+
+  /// Pacotes à venda. No lançamento o Pioneiro é o único anual (com o
+  /// teste de 14 dias); acabadas as vagas ou o prazo, entra o anual
+  /// regular. Não depende de a loja tirar o produto da oferta a tempo.
+  List<Package> get packagesForSale => [
+    for (final p in availablePackages)
+      if (pioneerOnSale
+          ? p.storeProduct.identifier != annualProductId
+          : !isFounderPackage(p))
+        p,
+  ];
 
   void _listenPioneerCount() {
     if (Firebase.apps.isEmpty) return;
@@ -665,6 +686,10 @@ class SubscriptionService extends ChangeNotifier {
   Package? get founderPackage =>
       packagesForSale.where(isFounderPackage).firstOrNull;
 
+  /// O anual à venda agora: o Pioneiro no lançamento, depois o regular.
+  /// Folha de oferta e aviso de promoção falam deste.
+  Package? get annualOnSale => founderPackage ?? annualPackage;
+
   /// Tipo do plano ativo (anual, mensal…), pelo produto da oferta.
   PackageType? get plusPackageType => availablePackages
       .where((p) => p.storeProduct.identifier == plusProductId)
@@ -792,6 +817,17 @@ class SubscriptionService extends ChangeNotifier {
     notifyListeners();
   }
 
+  bool _debugPioneerUntilOverride = false;
+  DateTime? _debugPioneerUntil;
+
+  /// Simula o prazo do Pioneiro (`pioneer_until`) no laboratório e nos testes.
+  void debugSetPioneerUntil(DateTime? until) {
+    if (!kDebugMode) return;
+    _debugPioneerUntilOverride = true;
+    _debugPioneerUntil = until;
+    notifyListeners();
+  }
+
   /// Simula elegibilidade de trial no laboratório (testar o winback
   /// sem promessa de teste para quem já testou).
   void debugSetTrialEligible(String productId, bool eligible) {
@@ -915,7 +951,7 @@ class SubscriptionService extends ChangeNotifier {
   );
 
   // Espelha a loja real decidida em out/2026 (ver MONETIZATION.md):
-  // mensal 19,90 · Fundador 89,90 sem teste · anual 119,90 com 14 dias.
+  // mensal 19,90 · Pioneiro 89,90 e anual 119,90, os dois com 14 dias.
   static List<Package> _debugPlans() => [
     _debugPackage('plus_monthly', PackageType.monthly, 19.90, r'R$ 19,90'),
     _debugPackage(
@@ -924,6 +960,14 @@ class SubscriptionService extends ChangeNotifier {
       89.90,
       r'R$ 89,90',
       perMonth: r'R$ 7,49',
+      intro: const IntroductoryPrice(
+        0,
+        r'R$ 0,00',
+        'P14D',
+        1,
+        PeriodUnit.day,
+        14,
+      ),
     ),
     _debugPackage(
       annualProductId,

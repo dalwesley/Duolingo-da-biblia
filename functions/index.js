@@ -501,7 +501,7 @@ exports.revenueCatWebhook = functions
   });
 
 /**
- * Primeira compra do Pioneiro soma 1 em `stats/pioneer`. A mesma conta
+ * Primeiro pagamento do Pioneiro soma 1 em `stats/pioneer`. A mesma conta
  * não soma de novo. Transferência de quem já contou só marca o destino.
  */
 async function claimPioneerSlot(db, slot) {
@@ -517,6 +517,7 @@ async function claimPioneerSlot(db, slot) {
       alreadyCounted: user.get('pioneerCounted') === true,
       sourceCounted: sources.some((s) => s.get('pioneerCounted') === true),
       count: stat.get('count'),
+      inheritOnly: slot.inheritOnly === true,
     });
     if (decision.action === 'skip') return;
     tx.set(userRef, { pioneerCounted: true }, { merge: true });

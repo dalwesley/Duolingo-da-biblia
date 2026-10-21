@@ -5926,7 +5926,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String paywallFounderBody(String price) {
-    return 'Un precio promocional para ti, pionero de Stway. Pagas $price al año, para siempre, mientras renueves.';
+    return 'Un precio de lanzamiento para quien llega primero a Stway. Pagas $price al año mientras renueves.';
   }
 
   @override
@@ -5935,7 +5935,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get paywallFounderNote => 'Pagas hoy. El precio se queda.';
+  String get paywallFounderNote => 'El precio se queda mientras renueves.';
 
   @override
   String get paywallFounderTitle => 'El precio de lanzamiento';

@@ -63,7 +63,8 @@ void main() {
       sub.annualPackage?.storeProduct.identifier,
       SubscriptionService.annualProductId,
     );
-    expect(sub.trialDaysFor(founder), isNull);
+    // No lançamento o Pioneiro também tem os 14 dias de teste.
+    expect(sub.trialDaysFor(founder), 14);
     expect(sub.trialDaysFor(sub.annualPackage!), 14);
 
     // Laboratório espelha a loja decidida: sem vitalício, apoio de 50.
@@ -83,25 +84,55 @@ void main() {
     expect(plusPlanLabel(l10n, sub), 'Pioneiro');
   });
 
-  test('Pioneiro some da venda quando as vagas acabam', () {
+  List<String> forSale(SubscriptionService sub) => [
+    for (final p in sub.packagesForSale) p.storeProduct.identifier,
+  ];
+
+  test('no lançamento o Pioneiro é o único anual à venda', () {
     SharedPreferences.setMockInitialValues({});
     final sub = SubscriptionService();
     sub.debugSetFakeStore(true);
+    sub.debugSetPioneerUntil(null);
 
     sub.debugSetPioneerCount(199, cap: 200);
-    expect(sub.pioneerSoldOut, isFalse);
-    expect(sub.founderPackage, isNotNull);
+    expect(sub.pioneerOnSale, isTrue);
+    expect(forSale(sub), contains(SubscriptionService.founderProductId));
+    expect(forSale(sub), isNot(contains(SubscriptionService.annualProductId)));
+    expect(sub.annualOnSale, same(sub.founderPackage));
+  });
 
-    sub.debugSetPioneerCount(200);
+  test('vagas esgotadas: o anual regular volta no lugar do Pioneiro', () {
+    SharedPreferences.setMockInitialValues({});
+    final sub = SubscriptionService();
+    sub.debugSetFakeStore(true);
+    sub.debugSetPioneerUntil(null);
+
+    sub.debugSetPioneerCount(200, cap: 200);
     expect(sub.pioneerSoldOut, isTrue);
+    expect(sub.pioneerOnSale, isFalse);
     expect(sub.founderPackage, isNull);
+    expect(forSale(sub), contains(SubscriptionService.annualProductId));
+    expect(forSale(sub), isNot(contains(SubscriptionService.founderProductId)));
     expect(
-      sub.packagesForSale.any(SubscriptionService.isFounderPackage),
-      isFalse,
+      sub.annualOnSale?.storeProduct.identifier,
+      SubscriptionService.annualProductId,
     );
-    // O anual e o mensal continuam à venda.
-    expect(sub.annualPackage, isNotNull);
-    expect(sub.packagesForSale, hasLength(sub.availablePackages.length - 1));
+  });
+
+  test('prazo do Pioneiro: vale até o dia, inclusive', () {
+    SharedPreferences.setMockInitialValues({});
+    final sub = SubscriptionService();
+    sub.debugSetFakeStore(true);
+    sub.debugSetPioneerCount(10, cap: 200);
+    final now = DateTime.now();
+    final today = DateTime(now.year, now.month, now.day);
+
+    sub.debugSetPioneerUntil(today);
+    expect(sub.pioneerOnSale, isTrue);
+
+    sub.debugSetPioneerUntil(today.subtract(const Duration(days: 1)));
+    expect(sub.pioneerOnSale, isFalse);
+    expect(forSale(sub), contains(SubscriptionService.annualProductId));
   });
 
   test('cache dentro da validade concede o Plus, sem fim gravado', () async {

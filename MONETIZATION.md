@@ -133,20 +133,33 @@ YouVersion tudo grátis. Salário mínimo 2026: R$ 1.621.
 | Plano | Preço | Papel |
 |---|---|---|
 | Mensal | **R$ 19,90/mês** | Âncora: existe para o anual ser óbvio e para quem apoia por poucos meses |
-| Anual | **R$ 119,90/ano** (R$ 9,99/mês) | **O herói.** Metade do mensal × 12 (“pague 6, leve 12”). Trial de 14 dias, só nele |
-| Pioneiro | **R$ 89,90/ano travado enquanto renovar** | No paywall, “Pioneiro”. Lançamento: primeiros 200 assinantes **ou** 60 dias, o que vier primeiro. Preço permanente enquanto renovar |
+| Anual | **R$ 119,90/ano** (R$ 9,99/mês) | **O herói depois do lançamento.** Metade do mensal × 12 (“pague 6, leve 12”). Trial de 14 dias. Fica fora do paywall enquanto o Pioneiro está à venda |
+| Pioneiro | **R$ 89,90/ano travado enquanto renovar** | **O único anual no lançamento**, com o mesmo trial de 14 dias. Primeiros 200 pagantes **ou** até `pioneer_until`, o que vier primeiro. Preço permanente enquanto renovar |
 
 - O app não grava preço; mostra o que a loja devolver. Anual primeiro.
+- **Lançamento (decidido em 21 out 2026):** o paywall mostra só
+  Pioneiro (14 dias grátis + preço travado) e Mensal. Uma escolha, com
+  teste e desconto juntos, sem dois anuais lado a lado. Quando as vagas
+  ou o prazo acabam, o app troca sozinho o Pioneiro pelo Anual regular
+  (`packagesForSale`). Sem promoção “Plus grátis” no lançamento: o
+  trial faz esse papel, e a promoção deixaria o Pioneiro sem motivo de
+  compra. A loja dá **um** trial por grupo de assinatura: quem testou o
+  Pioneiro não ganha outro teste no Anual.
 - **Fundador é produto separado** (`plus_founder_annual`): na loja, preço
   mora no produto — não existe o mesmo anual a dois preços. Mesmo grupo
   de assinatura e mesmo entitlement `peregrino_plus`; só muda o preço.
   Ao bater o corte, o produto sai da oferta: ninguém novo compra e quem
   assinou continua renovando a R$ 89,90 (a loja mantém o preço de quem
-  já assinou). A contagem das primeiras compras fica em `stats/pioneer`
-  (o webhook soma uma vez por conta; cancelar não devolve a vaga). Tirar
-  o produto da oferta ao chegar em 200 continua sendo ação na loja,
-  mas o app já esconde o Pioneiro quando o contador bate o teto
-  (`packagesForSale`), então a demora na loja não vende vaga a mais.
+  já assinou). A contagem fica em `stats/pioneer`: a vaga é
+  do **primeiro pagamento**, não do início do teste (o webhook soma na
+  compra sem teste ou na conversão do teste, `is_trial_conversion`; uma
+  vez por conta; cancelar depois de pagar não devolve a vaga). Quem está
+  no teste quando as vagas acabam converte normalmente, então o total
+  pode passar um pouco de 200 — aceito. Tirar o produto da oferta no
+  corte continua sendo ação na loja, mas o app já esconde o Pioneiro
+  quando o contador bate o teto ou passa `pioneer_until` (Remote Config,
+  YYYY-MM-DD inclusive; vazio = sem prazo), então a demora na loja não
+  vende vaga a mais.
 - **Vitalício: não criar o produto.** Se um dia existir, mínimo de 8× o anual.
 - Sem plano semestral.
 - Ajuste fino depois de 60–90 dias com D7 medido: testar R$ 99,90 ×
@@ -201,7 +214,8 @@ montagem editorial couber, senão é o primeiro lançamento seguinte.
 
 1. Cravar os preços desta tabela nas lojas, em BRL direto
 2. Produtos: `plus_annual` (trial 14 dias), `plus_monthly`,
-   `plus_founder_annual` (R$ 89,90, sai da oferta no corte),
+   `plus_founder_annual` (R$ 89,90, **trial 14 dias**, sai da oferta no
+   corte); preencher `pioneer_until` com o fim dos 60 dias,
    `apoio_5/15/30/50`. Sem vitalício
 3. RevenueCat: entitlement `peregrino_plus`, oferta padrão, oferta `apoio`;
    preencher `_apiKeyAndroid`/`_apiKeyIos`
@@ -315,7 +329,7 @@ abre mais.
 | Gates | Em profundidade: telas, `_start` e `LessonScreen(requiresPlus)` |
 | Cache de entitlement | Com dono (uid), graça de 7 dias, aposentado quando a loja responde |
 | Amostra de plano guiado | 3 dias por plano, registrada (`guidedSampleDays`); recomeçar retoma, não renova |
-| Trial | 14 dias no anual; só prometido com elegibilidade confirmada (`trialDaysFor`) |
+| Trial | 14 dias no Pioneiro e no anual; só prometido com elegibilidade confirmada (`trialDaysFor`) |
 | Funil | View/dismiss/plano/compra/restore + folha de oferta + abertura de recurso |
 | Winback | Semana 2 e ~1 ano, com histórico semeado do cache e amarrado à conta |
 | Webhook RevenueCat → Firestore | Pronto e testado (incl. TRANSFER nos dois sentidos); desligado sem o segredo |
@@ -324,9 +338,12 @@ abre mais.
 
 Pioneiro no código: produto identificado num lugar só
 (`plus_founder_annual`), primeiro e pré-selecionado no paywall com selo
-próprio, `annualPackage` (trial) ignora ele, laboratório espelha a loja
-real (sem vitalício, apoio de 50). O paywall mostra o contador
-“N de 200 pioneiros”, a partir de zero.
+próprio. Enquanto `pioneerOnSale`, é o único anual (`packagesForSale`)
+e é o anual das folhas de oferta e do aviso de promoção
+(`annualOnSale`); `annualPackage` continua sendo o regular. O
+laboratório espelha a loja real (Pioneiro e anual com 14 dias, sem
+vitalício, apoio de 50) e simula “Pioneiro esgotado”. O contador
+“N de 200 pioneiros” só aparece a partir de 20 vagas ocupadas.
 Revisões não empilham: 1 fluxo/dia com hierarquia (temporada > semana >
 dia), registro compartilhado `reviewSlotDays` e ofertas suprimidas.
 

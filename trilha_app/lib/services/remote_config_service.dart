@@ -16,6 +16,7 @@ class RemoteConfigService extends ChangeNotifier {
   static const _keyLeagueGroupSize = 'league_group_size';
   static const _keyLeagueServerSettlement = 'league_server_settlement';
   static const _keyPlusLaunchFreeUntil = 'plus_launch_free_until';
+  static const _keyPioneerUntil = 'pioneer_until';
   static const _keyGroupsEnabled = 'groups_enabled';
   static const _keyCompanionEnabled = 'companion_enabled';
   static const _keyChallengeEnabled = 'challenge_enabled';
@@ -26,6 +27,7 @@ class RemoteConfigService extends ChangeNotifier {
     _keyLeagueGroupSize: 20,
     _keyLeagueServerSettlement: false,
     _keyPlusLaunchFreeUntil: '',
+    _keyPioneerUntil: '',
     _keyGroupsEnabled: false,
     _keyCompanionEnabled: false,
     _keyChallengeEnabled: false,
@@ -122,8 +124,14 @@ class RemoteConfigService extends ChangeNotifier {
 
   /// Último dia (YYYY-MM-DD, inclusive) do Peregrino+ grátis no lançamento.
   /// Vazio ou inválido: sem promoção.
-  DateTime? get plusLaunchFreeUntil {
-    final raw = _string(_keyPlusLaunchFreeUntil).trim();
+  DateTime? get plusLaunchFreeUntil => _date(_keyPlusLaunchFreeUntil);
+
+  /// Último dia (YYYY-MM-DD, inclusive) de venda do Pioneiro. Vazio ou
+  /// inválido: sem prazo, vale só o teto de vagas.
+  DateTime? get pioneerUntil => _date(_keyPioneerUntil);
+
+  DateTime? _date(String key) {
+    final raw = _string(key).trim();
     if (raw.isEmpty) return null;
     final parsed = DateTime.tryParse(raw);
     if (parsed == null) return null;
