@@ -3250,6 +3250,18 @@ abstract class AppLocalizations {
   /// **'Dica'**
   String get exerciseHint;
 
+  /// No description provided for @exerciseHintShowHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Toque para ver a dica'**
+  String get exerciseHintShowHint;
+
+  /// No description provided for @exerciseHintShowQuestion.
+  ///
+  /// In pt, this message translates to:
+  /// **'Toque para ver a pergunta'**
+  String get exerciseHintShowQuestion;
+
   /// No description provided for @exerciseHintUsed.
   ///
   /// In pt, this message translates to:
@@ -6056,6 +6068,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Sair da cena?'**
   String get lessonExitTitle;
+
+  /// No description provided for @lessonFactsLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'O que o texto diz'**
+  String get lessonFactsLabel;
 
   /// No description provided for @lessonInsightSubtitle.
   ///

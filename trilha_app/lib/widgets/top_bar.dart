@@ -76,6 +76,10 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
   /// Toque no título (ex.: trocar livro no leitor). Mostra um chevron.
   final VoidCallback? onTitleTap;
 
+  /// Faixa dentro da barra, sob a linha do título (ex.: passos da cena).
+  /// Só no modo [inline].
+  final Widget? bottom;
+
   const TopBar({
     super.key,
     required this.title,
@@ -97,6 +101,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
     this.trailingGlyph,
     this.trailing,
     this.onTitleTap,
+    this.bottom,
   });
 
   @override
@@ -141,6 +146,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
               trailingGlyph: trailingGlyph,
               trailing: trailing,
               onTitleTap: onTitleTap,
+              bottom: bottom,
             )
           : AppBar(
               primary: true,
@@ -262,6 +268,7 @@ class _InlineChrome extends StatelessWidget {
   final CinematicGlyph? trailingGlyph;
   final Widget? trailing;
   final VoidCallback? onTitleTap;
+  final Widget? bottom;
 
   const _InlineChrome({
     required this.appearance,
@@ -285,10 +292,12 @@ class _InlineChrome extends StatelessWidget {
     this.trailingGlyph,
     this.trailing,
     this.onTitleTap,
+    this.bottom,
   });
 
   @override
   Widget build(BuildContext context) {
+    final row = _row();
     return Material(
       color: Colors.transparent,
       elevation: 8,
@@ -302,79 +311,95 @@ class _InlineChrome extends StatelessWidget {
           borderRadius: BorderRadius.circular(AppMetrics.cardRadius),
           border: Border.all(color: surface?.border ?? appearance.navBarBorder),
         ),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            if (onBack != null) ...[
-              GestureDetector(
-                onTap: onBack,
-                behavior: HitTestBehavior.opaque,
-                child: _BackGlyph(accent: chromeAccent),
+        child: bottom == null
+            ? row
+            : Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  row,
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(10, 6, 10, 6),
+                    child: bottom,
+                  ),
+                ],
               ),
-              const SizedBox(width: 8),
-            ] else if (showAvatar) ...[
-              UserAvatar(
-                photoUrl: photoUrl,
-                name: userName,
-                radius: AppMetrics.avatarSm,
-                onTap: onProfileTap,
-                style: portraitStyle,
-              ),
-              const SizedBox(width: 10),
-            ] else if (showLeading) ...[
-              _MenuMark(
-                glyph: leadingGlyph,
-                icon: leadingIcon,
-                accent: chromeAccent,
-              ),
-              const SizedBox(width: 8),
-            ] else ...[
-              const SizedBox(width: 10),
-            ],
-            Expanded(
-              child: _TitleBlock(
-                title: title,
-                subtitle: subtitle,
-                personalGreeting: personalGreeting,
-                onDark: onDark,
-                onTap: onTitleTap,
-                surface: surface,
-              ),
-            ),
-            if (trailing != null) ...[
-              const SizedBox(width: 8),
-              trailing!,
-            ] else if (showTrailingAvatar) ...[
-              const SizedBox(width: 8),
-              UserAvatar(
-                photoUrl: photoUrl,
-                name: userName,
-                radius: AppMetrics.avatarSm,
-                style: portraitStyle,
-              ),
-            ] else if (onTrailingTap != null) ...[
-              const SizedBox(width: 4),
-              GestureDetector(
-                onTap: onTrailingTap,
-                behavior: HitTestBehavior.opaque,
-                child: CinematicIcon(
-                  glyph: trailingGlyph ?? CinematicGlyph.tune,
-                  size: 36,
-                  accent: chromeAccent,
-                  glowing: false,
-                ),
-              ),
-            ] else if (onBack != null && showLeading) ...[
-              const SizedBox(width: 8),
-              _MenuMark(
-                glyph: leadingGlyph,
-                icon: leadingIcon,
-                accent: chromeAccent,
-              ),
-            ],
-          ],
-        ),
       ),
+    );
+  }
+
+  Widget _row() {
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        if (onBack != null) ...[
+          GestureDetector(
+            onTap: onBack,
+            behavior: HitTestBehavior.opaque,
+            child: _BackGlyph(accent: chromeAccent),
+          ),
+          const SizedBox(width: 8),
+        ] else if (showAvatar) ...[
+          UserAvatar(
+            photoUrl: photoUrl,
+            name: userName,
+            radius: AppMetrics.avatarSm,
+            onTap: onProfileTap,
+            style: portraitStyle,
+          ),
+          const SizedBox(width: 10),
+        ] else if (showLeading) ...[
+          _MenuMark(
+            glyph: leadingGlyph,
+            icon: leadingIcon,
+            accent: chromeAccent,
+          ),
+          const SizedBox(width: 8),
+        ] else ...[
+          const SizedBox(width: 10),
+        ],
+        Expanded(
+          child: _TitleBlock(
+            title: title,
+            subtitle: subtitle,
+            personalGreeting: personalGreeting,
+            onDark: onDark,
+            onTap: onTitleTap,
+            surface: surface,
+          ),
+        ),
+        if (trailing != null) ...[
+          const SizedBox(width: 8),
+          trailing!,
+        ] else if (showTrailingAvatar) ...[
+          const SizedBox(width: 8),
+          UserAvatar(
+            photoUrl: photoUrl,
+            name: userName,
+            radius: AppMetrics.avatarSm,
+            style: portraitStyle,
+          ),
+        ] else if (onTrailingTap != null) ...[
+          const SizedBox(width: 4),
+          GestureDetector(
+            onTap: onTrailingTap,
+            behavior: HitTestBehavior.opaque,
+            child: CinematicIcon(
+              glyph: trailingGlyph ?? CinematicGlyph.tune,
+              size: 36,
+              accent: chromeAccent,
+              glowing: false,
+            ),
+          ),
+        ] else if (onBack != null && showLeading) ...[
+          const SizedBox(width: 8),
+          _MenuMark(
+            glyph: leadingGlyph,
+            icon: leadingIcon,
+            accent: chromeAccent,
+          ),
+        ],
+      ],
     );
   }
 }

@@ -22,15 +22,18 @@ import 'paywall_screen.dart';
 import '../theme/app_theme.dart';
 import '../utils/plus_access.dart';
 import '../utils/appearance.dart';
+import '../utils/difficulty_visuals.dart';
 import '../utils/day_phase.dart';
 import '../utils/layout_utils.dart';
 import '../utils/palco_verse.dart';
 import '../utils/trail_progress.dart';
+import '../widgets/anan_speech.dart';
 import '../widgets/act_feel.dart';
 import '../widgets/app_sheet.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/cloud_mascot.dart';
 import '../widgets/exercise_feedback_dialog.dart';
+import '../widgets/evidence_verse.dart';
 import '../widgets/exercise_panel.dart';
 import '../widgets/lamps_bar.dart';
 import '../widgets/brand_flip_card.dart';
@@ -113,6 +116,9 @@ class _LessonScreenState extends State<LessonScreen>
   bool _showFeedback = false;
   bool _busy = false;
   int _lamps = ProgressService.maxLamps;
+
+  /// Uma lamparina por pergunta da cena (a revisão extra não acende outra).
+  int _lampCount = ProgressService.maxLamps;
   bool _hintUsed = false;
   Set<String> _eliminated = {};
   bool _outOfLamps = false;
@@ -281,6 +287,7 @@ class _LessonScreenState extends State<LessonScreen>
 
     final usesBank = QuestionBank.instance.hasBankForTrail(bankTrail);
 
+    Trail? trailForMode;
     if (usesBank && bankTrail != null) {
       if ((mission.bankTrailSlug ?? '').isEmpty) {
         if (!mounted) return;
@@ -294,7 +301,7 @@ class _LessonScreenState extends State<LessonScreen>
           return;
         }
       }
-      final trailForMode = await _repo.getTrailBySlug(bankTrail);
+      trailForMode = await _repo.getTrailBySlug(bankTrail);
       if (!mounted) return;
       await context.read<ProgressService>().advancePastClearedMode(
         bankTrail,
@@ -304,6 +311,9 @@ class _LessonScreenState extends State<LessonScreen>
 
     if (!mounted) return;
     final freshProgress = context.read<ProgressService>();
+    final slugs = trailForMode?.missionSlugs ?? const <String>[];
+    var sceneIndex = slugs.indexOf(mission.slug);
+    if (sceneIndex < 0) sceneIndex = slugs.indexOf(widget.missionSlug);
     final plan = await SessionComposer.compose(
       mission: mission,
       missionSlug: widget.missionSlug,
@@ -313,6 +323,7 @@ class _LessonScreenState extends State<LessonScreen>
       progress: freshProgress,
       practiceMode: widget.practiceMode,
       questionIdsOverride: widget.questionIdsOverride,
+      sceneIndex: sceneIndex,
     );
 
     if (!mounted) return;
@@ -333,7 +344,7 @@ class _LessonScreenState extends State<LessonScreen>
     );
 
     setState(() {
-      _baseMission = mission;
+      _baseMission = mission!;
       _trailSlug = trailSlug;
       _pickedIds = plan.bankQuestionIds;
       _exercises = List<Exercise>.from(plan.acts);
@@ -342,7 +353,11 @@ class _LessonScreenState extends State<LessonScreen>
       _mistakeInSession = false;
       _reviewInserted = false;
       _difficultyMeta = plan.difficultyMeta;
-      _lamps = ProgressService.lampsForMission(isBoss: mission!.isBoss);
+      _lampCount = plan.acts
+          .where((e) => !e.type.isRevealOnly)
+          .length
+          .clamp(1, 99);
+      _lamps = _lampCount;
       _phase = _Phase.intro;
       _mission = Mission(
         slug: mission.slug,
@@ -429,8 +444,7 @@ class _LessonScreenState extends State<LessonScreen>
         MissionStudy.forSlug(mission.resolvedBankSection);
   }
 
-  int get _maxLamps =>
-      ProgressService.lampsForMission(isBoss: _mission?.isBoss ?? false);
+  int get _maxLamps => _lampCount;
 
   int _scaledSteps(int base, double multiplier) => (base * multiplier).round();
 
@@ -451,6 +465,17 @@ class _LessonScreenState extends State<LessonScreen>
   /// Chrome dos gestos: neutro. Ouro = CTA; glow = acerto.
   /// Cor do modo fica no mapa / seletor.
   Color get _gestureChrome => Appearance.of(context).chrome;
+
+  /// Luz do modo nos gestos: lacuna, rótulo, palco e progresso. No papel
+  /// claro vira o tom escuro (verde claro some no branco).
+  Color get _modeLight {
+    final d = _difficultyMeta?.difficulty;
+    if (d == null) return _gestureChrome;
+    final tone = DifficultyVisuals.accentFor(d);
+    return Appearance.of(context).onDark
+        ? tone
+        : DifficultyVisuals.onLight(tone);
+  }
 
   ({String reference, String text})? get _board {
     final hookT = (_mission?.hookVerse ?? '').trim();
@@ -631,6 +656,11 @@ class _LessonScreenState extends State<LessonScreen>
     if (_hintUsed || _selected != null || _showFeedback) return;
     // Toque já vibra no TextCta da dica.
     final ex = _exercise;
+    // Banco V3: a dica é uma frase de onde olhar; nenhuma opção some.
+    if (ex.textHint != null) {
+      setState(() => _hintUsed = true);
+      return;
+    }
     final correctId = ex.resolvedCorrectAnswer.trim();
     final wrong = ex.effectiveOptions
         .where((o) => o.id != correctId && !_eliminated.contains(o.id))
@@ -727,6 +757,8 @@ class _LessonScreenState extends State<LessonScreen>
     _goToCelebration(forced: forced);
   }
 
+  /// Bônus fecha toda cena com versículo. Não é a lacuna do Completar: lá
+  /// é uma palavra; aqui a pessoa monta a frase com várias.
   bool _canOfferMicro() => _microVerse() != null;
 
   /// Palco da missão — nunca um verso de outra trilha (ex.: Salmos no meio de Gênesis).
@@ -953,7 +985,8 @@ class _LessonScreenState extends State<LessonScreen>
       difficulty: diffId,
       trailSlug: _trailSlug ?? 'genesis-1-11',
       usedInSession: _exercises.map((e) => e.id).toSet(),
-      usedTypes: _exercises.map((e) => e.type).toSet(),
+      // Por gesto visto: Toque com lacuna bloqueia o Completar também.
+      usedTypes: _exercises.map(SessionComposer.exerciseSlot).toSet(),
     );
     if (rev == null) {
       _reviewInserted = false;
@@ -1096,15 +1129,16 @@ class _LessonScreenState extends State<LessonScreen>
                               dark: true,
                               title: switch (_phase) {
                                 _Phase.intro => modeLabel,
-                                _Phase.quiz => '${_questionIndex + 1}/$total',
+                                // O tipo do gesto; o passo já está na faixa.
+                                _Phase.quiz => _exercise.taskPromptLabel,
                                 _Phase.micro => context.l10n.lessonBonus,
                                 _Phase.insight => context.l10n.commonToday,
                               },
                               subtitle: switch (_phase) {
                                 _Phase.intro => null,
-                                _Phase.quiz => _difficultyMeta?.label,
-                                _Phase.micro =>
-                                  context.l10n.lessonMicroSubtitle,
+                                _Phase.quiz => null,
+                                // O pedido já está no balão do Anan.
+                                _Phase.micro => null,
                                 _Phase.insight =>
                                   context.l10n.lessonInsightSubtitle,
                               },
@@ -1144,6 +1178,7 @@ class _LessonScreenState extends State<LessonScreen>
                                             current: _lamps,
                                             max: _maxLamps,
                                             accent: AppRoles.presence,
+                                            flame: AppRoles.lamp,
                                             compact: true,
                                             atRisk: _lamps <= 1 && !_outOfLamps,
                                             flashOffIndex: _lampFlashOff,
@@ -1152,17 +1187,17 @@ class _LessonScreenState extends State<LessonScreen>
                                       ),
                                     )
                                   : null,
+                              // Passos da cena dentro da barra, finos.
+                              bottom: _phase == _Phase.quiz
+                                  ? _ActProgress(
+                                      total: total,
+                                      index: _questionIndex,
+                                      results: _results,
+                                      accent: _modeLight,
+                                    )
+                                  : null,
                             ),
-                            if (_phase == _Phase.quiz) ...[
-                              const SizedBox(height: 10),
-                              _ActProgress(
-                                total: total,
-                                index: _questionIndex,
-                                results: _results,
-                              ),
-                              const SizedBox(height: 4),
-                            ] else
-                              const SizedBox(height: 8),
+                            const SizedBox(height: 8),
                           ],
                         ),
                       ),
@@ -1205,7 +1240,7 @@ class _LessonScreenState extends State<LessonScreen>
                                   isCorrect: _isCorrect,
                                   showFeedback: _showFeedback,
                                   onSelect: _select,
-                                  accent: accent,
+                                  accent: _modeLight,
                                   hintUsed: _hintUsed,
                                   eliminatedIds: _eliminated,
                                   onHint:
@@ -1232,14 +1267,14 @@ class _LessonScreenState extends State<LessonScreen>
                                 key: const ValueKey('micro'),
                                 reference: ref,
                                 verseText: text,
-                                accent: accent,
+                                accent: _modeLight,
                                 onDone: _completeMicro,
                               );
                             }(),
                             _Phase.intro => _IntroPanel(
                               key: const ValueKey('intro'),
                               mission: mission,
-                              accent: accent,
+                              accent: _modeLight,
                               onStart: _startQuiz,
                               onStudyRef: () {
                                 final r = (mission.hookRef ?? '').trim();
@@ -1250,6 +1285,9 @@ class _LessonScreenState extends State<LessonScreen>
                             _Phase.insight => _InsightPanel(
                               key: const ValueKey('insight'),
                               text: _closingInsight,
+                              facts: _study?.localizedFacts ?? const [],
+                              passageRef: _study?.passageRef ?? '',
+                              passageText: _study?.passageText ?? '',
                               accent: accent,
                               onContinue: () {
                                 _pushCelebration(forced: _celebrationForced);
@@ -1338,22 +1376,25 @@ class _LessonScreenState extends State<LessonScreen>
   }
 }
 
-/// Barra de atos: glow se acertou de primeira, vermelho se errou,
-/// o atual em destaque neutro.
+/// Barra de atos: ouro se acertou de primeira, vermelho se errou,
+/// o atual aceso na cor do modo; o trilho leva um eco dela.
 class _ActProgress extends StatelessWidget {
   final int total;
   final int index;
   final Map<int, bool> results;
+  final Color accent;
 
   const _ActProgress({
     required this.total,
     required this.index,
     required this.results,
+    required this.accent,
   });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final track = Color.lerp(a.progressTrack, accent, 0.22)!;
     return Semantics(
       label: context.l10n.lessonQuestionProgress(index + 1, total),
       child: Row(
@@ -1364,19 +1405,26 @@ class _ActProgress extends StatelessWidget {
               child: AnimatedContainer(
                 duration: AppMotion.gentle,
                 curve: AppMotion.enter,
-                height: i == index ? 8 : 5,
+                height: i == index ? 2.5 : 2,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(AppRadii.pill),
                   color: switch (results[i]) {
                     true => AppRoles.action,
                     false => AppRoles.error.withValues(alpha: 0.75),
-                    null => i == index ? a.text : a.progressTrack,
+                    null => i == index ? accent : track,
                   },
                   boxShadow: results[i] == true
                       ? [
                           BoxShadow(
                             color: AppRoles.action.withValues(alpha: 0.45),
-                            blurRadius: 8,
+                            blurRadius: 4,
+                          ),
+                        ]
+                      : (results[i] == null && i == index)
+                      ? [
+                          BoxShadow(
+                            color: accent.withValues(alpha: 0.5),
+                            blurRadius: 4,
                           ),
                         ]
                       : null,
@@ -1538,24 +1586,34 @@ class _IntroPanel extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Text(
-            mission.title,
-            textAlign: TextAlign.center,
-            style: AppTypography.display(size: 32, height: 1.12, color: a.text),
-          ),
-          if (note.isNotEmpty) ...[
-            const SizedBox(height: 16),
-            Text(
-              note,
-              textAlign: TextAlign.center,
-              style: AppTypography.body(
-                size: 14,
-                height: 1.45,
-                weight: FontWeight.w600,
-                color: a.text,
-              ),
+          // Abertura no mesmo cabeçalho dos gestos: o Anan apresenta a cena.
+          AnanSideSpeech(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  mission.title,
+                  style: AppTypography.title(
+                    size: 18,
+                    height: 1.15,
+                    color: AnanSpeechBubble.ink,
+                  ),
+                ),
+                if (note.isNotEmpty) ...[
+                  const SizedBox(height: 6),
+                  Text(
+                    note,
+                    style: AppTypography.body(
+                      size: 14,
+                      height: 1.4,
+                      weight: FontWeight.w600,
+                      color: AnanSpeechBubble.muted,
+                    ),
+                  ),
+                ],
+              ],
             ),
-          ],
+          ),
           Expanded(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -1575,14 +1633,14 @@ class _IntroPanel extends StatelessWidget {
                             accent: accent,
                             reference: ref,
                             brandBack: true,
-                            pinTop: true,
-                            padding: const EdgeInsets.fromLTRB(18, 14, 18, 16),
                             onStudy: ref.isEmpty ? null : onStudyRef,
+                            // Versículo como nos gestos: centrado, mesmo corpo.
                             child: Text(
                               stageText,
-                              textAlign: TextAlign.left,
+                              textAlign: TextAlign.center,
                               style: AppTypography.verse(
-                                size: 28,
+                                size: 24,
+                                weight: FontWeight.w600,
                                 height: 1.45,
                                 color: a.text,
                               ),
@@ -1615,8 +1673,13 @@ class _IntroPanel extends StatelessWidget {
   }
 }
 
-class _InsightPanel extends StatelessWidget {
+/// Placa Hoje: o insight da cena e, quando o estudo traz, os fatos que a
+/// pessoa leva. Tocar um fato acende no versículo o trecho que o prova.
+class _InsightPanel extends StatefulWidget {
   final String text;
+  final List<StudyFact> facts;
+  final String passageRef;
+  final String passageText;
   final Color accent;
   final VoidCallback onContinue;
 
@@ -1625,10 +1688,42 @@ class _InsightPanel extends StatelessWidget {
     required this.text,
     required this.accent,
     required this.onContinue,
+    this.facts = const [],
+    this.passageRef = '',
+    this.passageText = '',
   });
 
   @override
+  State<_InsightPanel> createState() => _InsightPanelState();
+}
+
+class _InsightPanelState extends State<_InsightPanel> {
+  int? _active;
+
+  Widget _insight({required bool expand}) {
+    final plate = _WitnessPlate(
+      accent: widget.accent,
+      child: Text(
+        widget.text,
+        textAlign: TextAlign.center,
+        style: AppTypography.title(
+          size: 20,
+          height: 1.32,
+          color: widget.accent,
+        ),
+      ),
+    );
+    return expand ? SizedBox.expand(child: plate) : plate;
+  }
+
+  @override
   Widget build(BuildContext context) {
+    final facts = widget.facts;
+    final cta = CopperCta(
+      label: context.l10n.commonContinue,
+      onTap: widget.onContinue,
+      trailing: null,
+    );
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: AppSpace.screen),
       child: Column(
@@ -1636,48 +1731,157 @@ class _InsightPanel extends StatelessWidget {
         children: [
           RelicChapter(
             title: context.l10n.commonToday,
-            accent: accent,
+            accent: widget.accent,
             divided: false,
           ),
           const SizedBox(height: 14),
           Expanded(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Flexible(
-                  fit: FlexFit.loose,
-                  child: ConstrainedBox(
-                    constraints: const BoxConstraints(
-                      maxHeight: stageMaxHeight,
-                    ),
-                    child: SizedBox.expand(
-                      child: _WitnessPlate(
-                        accent: accent,
-                        child: Text(
-                          text,
-                          textAlign: TextAlign.center,
-                          style: AppTypography.title(
-                            size: 20,
-                            height: 1.32,
-                            color: accent,
+            child: facts.isEmpty
+                ? Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Flexible(
+                        fit: FlexFit.loose,
+                        child: ConstrainedBox(
+                          constraints: const BoxConstraints(
+                            maxHeight: stageMaxHeight,
+                          ),
+                          child: _insight(expand: true),
+                        ),
+                      ),
+                      const SizedBox(height: 10),
+                      cta,
+                      const SizedBox(height: AppSpace.sm),
+                    ],
+                  )
+                : Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Expanded(
+                        child: SingleChildScrollView(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              _insight(expand: false),
+                              const SizedBox(height: AppSpace.lg),
+                              SectionLabel(
+                                context.l10n.lessonFactsLabel,
+                                size: 12,
+                              ),
+                              const SizedBox(height: AppSpace.sm),
+                              for (var i = 0; i < facts.length; i++)
+                                _FactRow(
+                                  text: facts[i].text,
+                                  accent: widget.accent,
+                                  active: _active == i,
+                                  onTap:
+                                      facts[i].evidenceSpan.trim().isEmpty ||
+                                          widget.passageText.trim().isEmpty
+                                      ? null
+                                      : () {
+                                          ActHaptics.tap();
+                                          setState(
+                                            () => _active = _active == i
+                                                ? null
+                                                : i,
+                                          );
+                                        },
+                                ),
+                              AnimatedSize(
+                                duration: AppMotion.standard,
+                                curve: AppMotion.enter,
+                                alignment: Alignment.topCenter,
+                                child: _evidence(),
+                              ),
+                            ],
                           ),
                         ),
                       ),
-                    ),
+                      const SizedBox(height: 10),
+                      cta,
+                      const SizedBox(height: AppSpace.sm),
+                    ],
                   ),
-                ),
-                const SizedBox(height: 10),
-                CopperCta(
-                  label: context.l10n.commonContinue,
-                  onTap: onContinue,
-                  trailing: null,
-                ),
-                const SizedBox(height: AppSpace.sm),
-              ],
-            ),
           ),
         ],
+      ),
+    );
+  }
+
+  Widget _evidence() {
+    final i = _active;
+    if (i == null || i >= widget.facts.length) return const SizedBox.shrink();
+    final span = PalcoVerse.swapDivineName(widget.facts[i].evidenceSpan.trim());
+    final verse = SessionComposer.clipFeedbackPassage(
+      PalcoVerse.swapDivineName(widget.passageText.trim()),
+      hint: span,
+      maxWords: 32,
+    );
+    return Padding(
+      padding: const EdgeInsets.only(top: AppSpace.sm),
+      child: EvidenceVerse(
+        key: ValueKey('fact-$i'),
+        reference: widget.passageRef.trim(),
+        verse: verse,
+        accent: AppRoles.presence,
+        highlight: span,
+        highlightColor: AppRoles.presence,
+      ),
+    );
+  }
+}
+
+/// Um fato da placa Hoje. Aceso quando o seu trecho está no versículo.
+class _FactRow extends StatelessWidget {
+  final String text;
+  final Color accent;
+  final bool active;
+  final VoidCallback? onTap;
+
+  const _FactRow({
+    required this.text,
+    required this.accent,
+    required this.active,
+    this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return InkWell(
+      onTap: onTap,
+      borderRadius: BorderRadius.circular(10),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 4),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(top: 7, right: 10),
+              child: AnimatedContainer(
+                duration: AppMotion.standard,
+                width: 6,
+                height: 6,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: active ? AppRoles.presence : accent,
+                ),
+              ),
+            ),
+            Expanded(
+              child: Text(
+                text,
+                style: AppTypography.body(
+                  size: 15,
+                  height: 1.35,
+                  weight: active ? FontWeight.w700 : FontWeight.w500,
+                  color: active ? a.text : a.textSecondary,
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -1691,18 +1895,12 @@ class _WitnessPlate extends StatelessWidget {
   final bool brandBack;
   final VoidCallback? onStudy;
 
-  /// Texto começa no topo do card. O vazio fica embaixo, não em volta.
-  final bool pinTop;
-  final EdgeInsetsGeometry? padding;
-
   const _WitnessPlate({
     required this.accent,
     required this.child,
     this.reference,
     this.brandBack = false,
     this.onStudy,
-    this.pinTop = false,
-    this.padding,
   });
 
   @override
@@ -1714,22 +1912,25 @@ class _WitnessPlate extends StatelessWidget {
 
   Widget _face(BuildContext context) {
     final ref = (reference ?? '').trim();
+    // Mesmo palco dos gestos: luz do modo, referência neutra.
+    final meta = Appearance.of(context).sectionLabel;
     return StagePlate(
       accent: accent,
-      padding: padding ?? const EdgeInsets.fromLTRB(22, 20, 22, 22),
+      tint: true,
+      padding: const EdgeInsets.fromLTRB(22, 20, 22, 22),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           if (ref.isNotEmpty) ...[
             onStudy == null
-                ? Center(child: SectionLabel(ref, size: 13, color: accent))
+                ? Center(child: SectionLabel(ref, size: 13, color: meta))
                 : Row(
                     children: [
                       Expanded(
                         child: SectionLabel(
                           ref,
                           size: 13,
-                          color: accent,
+                          color: meta,
                           textAlign: TextAlign.start,
                         ),
                       ),
@@ -1745,7 +1946,7 @@ class _WitnessPlate extends StatelessWidget {
                       ),
                     ],
                   ),
-            SizedBox(height: pinTop ? 10 : 14),
+            const SizedBox(height: 14),
           ],
           Expanded(
             child: LayoutBuilder(
@@ -1756,9 +1957,7 @@ class _WitnessPlate extends StatelessWidget {
                     constraints: BoxConstraints(
                       minHeight: constraints.maxHeight,
                     ),
-                    child: pinTop
-                        ? Align(alignment: Alignment.topCenter, child: child)
-                        : Center(child: child),
+                    child: Center(child: child),
                   ),
                 );
               },

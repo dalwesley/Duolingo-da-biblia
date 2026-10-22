@@ -169,13 +169,10 @@ class ProgressService extends ChangeNotifier {
 
   static const maxLamps = 5;
 
-  /// Boss: menos margem de erro.
-  static const bossMaxLamps = 3;
-  static const normalQuestionCount = 6;
+  /// Cena comum: 5 gestos + Bônus (um gesto descansa por cena, ver
+  /// [SessionComposer.withRestingGesture]).
+  static const normalQuestionCount = 5;
   static const bossQuestionCount = 8;
-
-  static int lampsForMission({required bool isBoss}) =>
-      isBoss ? bossMaxLamps : maxLamps;
 
   static int questionCountForMission({required bool isBoss}) =>
       isBoss ? bossQuestionCount : normalQuestionCount;

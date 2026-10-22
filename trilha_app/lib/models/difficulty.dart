@@ -170,6 +170,9 @@ class BankQuestion {
   /// Trecho literal do palco que prova a resposta (banco V3).
   final String? evidenceSpan;
 
+  /// Dica de onde olhar, sem dar a resposta (banco V3, ≤90 chars).
+  final String? hint;
+
   /// Aplica overlay EN/ES (enunciado, feedback, opções interpretativas).
   /// `passageText` / refs / tokens do versículo permanecem no PT base.
   BankQuestion withOverlay() {
@@ -180,6 +183,7 @@ class BankQuestion {
     final lo = ov.field(id, 'learningObjective');
     final fc = ov.field(id, 'feedbackCorrect');
     final fwOv = ov.feedbackWrongFor(id);
+    final hintOv = ov.field(id, 'hint');
     final mappedOpts = [
       for (final o in options)
         QuestionOption(id: o.id, text: ov.optionText(id, o.id) ?? o.text),
@@ -218,6 +222,7 @@ class BankQuestion {
       learningObjective: lo ?? learningObjective,
       evidence: evidence,
       evidenceSpan: evidenceSpan,
+      hint: hintOv ?? hint,
     );
   }
 
@@ -249,6 +254,7 @@ class BankQuestion {
     this.learningObjective,
     this.evidence = const [],
     this.evidenceSpan,
+    this.hint,
   });
 
   factory BankQuestion.fromJson(Map<String, dynamic> json) {
@@ -330,6 +336,7 @@ class BankQuestion {
               .toList() ??
           const [],
       evidenceSpan: json['evidenceSpan'] as String?,
+      hint: json['hint'] as String?,
     );
   }
 
@@ -363,6 +370,7 @@ class BankQuestion {
         'learningObjective': learningObjective,
       if (evidence.isNotEmpty) 'evidence': evidence,
       if (evidenceSpan != null) 'evidenceSpan': evidenceSpan,
+      if (hint != null) 'hint': hint,
     };
   }
 

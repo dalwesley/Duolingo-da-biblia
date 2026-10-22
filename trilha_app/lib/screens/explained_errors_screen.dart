@@ -210,7 +210,7 @@ class _ExplainedErrorsScreenState extends State<ExplainedErrorsScreen> {
   }
 }
 
-/// Uma trilha por bloco: o nome num cartão, as questões da cena dentro de outro.
+/// Uma trilha, um cartão: o nome e as cenas dentro.
 class _TrailSheet extends StatelessWidget {
   final String? title;
   final TrailVisuals visuals;
@@ -226,52 +226,49 @@ class _TrailSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final children = <Widget>[];
-    final name = title?.trim() ?? '';
-    if (name.isNotEmpty) children.add(_masthead(context, name));
-    for (var p = 0; p < passages.length; p++) {
-      if (children.isNotEmpty) {
-        children.add(SizedBox(height: p == 0 ? AppSpace.xl : AppSpace.xxl));
-      }
-      children.add(_passageCard(context, passages[p]));
-    }
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: children,
-    );
-  }
-
-  Widget _masthead(BuildContext context, String name) {
     final a = Appearance.of(context);
+    final body = <Widget>[];
+    final name = title?.trim() ?? '';
+    if (name.isNotEmpty) {
+      body.add(
+        Row(
+          children: [
+            CinematicIcon(
+              glyph: visuals.glyph,
+              size: AppMetrics.leadingIcon,
+              accent: visuals.accent,
+              framed: true,
+              glowing: false,
+            ),
+            const SizedBox(width: AppSpace.md),
+            Expanded(
+              child: Text(
+                name,
+                style: AppTypography.title(size: 20, color: a.text),
+              ),
+            ),
+          ],
+        ),
+      );
+    }
+    for (final passage in passages) {
+      if (body.isNotEmpty) {
+        body.add(const SizedBox(height: AppSpace.lg));
+        body.add(const ListDivider());
+        body.add(const SizedBox(height: AppSpace.lg));
+      }
+      body.addAll(_passage(context, passage));
+    }
     return GlassCard(
       tint: visuals.accent,
-      glow: 0.55,
-      padding: const EdgeInsets.symmetric(
-        horizontal: AppSpace.lg,
-        vertical: AppSpace.md,
-      ),
-      child: Row(
-        children: [
-          CinematicIcon(
-            glyph: visuals.glyph,
-            size: AppMetrics.leadingIcon,
-            accent: visuals.accent,
-            framed: true,
-            glowing: false,
-          ),
-          const SizedBox(width: AppSpace.md),
-          Expanded(
-            child: Text(
-              name,
-              style: AppTypography.title(size: 20, color: a.text),
-            ),
-          ),
-        ],
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: body,
       ),
     );
   }
 
-  Widget _passageCard(BuildContext context, ExplainedPassageGroup passage) {
+  List<Widget> _passage(BuildContext context, ExplainedPassageGroup passage) {
     final a = Appearance.of(context);
     final scene = sceneOf(passage)?.trim() ?? '';
     final ref = (passage.items.first.verseRef ?? '').trim();
@@ -279,35 +276,33 @@ class _TrailSheet extends StatelessWidget {
     final body = <Widget>[];
     if (title.isNotEmpty) {
       body.add(
-        Text(title, style: AppTypography.title(size: 16, color: a.text)),
+        Text(
+          title,
+          style: AppTypography.body(
+            size: 15,
+            weight: FontWeight.w700,
+            color: a.textSecondary,
+          ),
+        ),
       );
-      body.add(const SizedBox(height: AppSpace.md));
-      body.add(const ListDivider());
       body.add(const SizedBox(height: AppSpace.md));
     }
     for (var i = 0; i < passage.items.length; i++) {
       if (i > 0) {
-        body.add(const SizedBox(height: AppSpace.md));
+        body.add(const SizedBox(height: AppSpace.lg));
         body.add(const ListDivider());
-        body.add(const SizedBox(height: AppSpace.md));
+        body.add(const SizedBox(height: AppSpace.lg));
       }
-      body.add(_MistakeRow(mistake: passage.items[i], accent: visuals.accent));
+      body.add(_MistakeRow(mistake: passage.items[i]));
     }
-    return GlassCard(
-      padding: AppMetrics.cardPadding,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: body,
-      ),
-    );
+    return body;
   }
 }
 
 class _MistakeRow extends StatelessWidget {
   final ExplainedMistake mistake;
-  final Color accent;
 
-  const _MistakeRow({required this.mistake, required this.accent});
+  const _MistakeRow({required this.mistake});
 
   @override
   Widget build(BuildContext context) {
@@ -336,7 +331,11 @@ class _MistakeRow extends StatelessWidget {
         const SizedBox(height: AppSpace.sm),
         Text(
           mistake.prompt,
-          style: AppTypography.title(size: 16, color: a.text),
+          style: AppTypography.body(
+            size: 16,
+            weight: FontWeight.w500,
+            color: a.text,
+          ),
         ),
         const SizedBox(height: AppSpace.md),
         if ((mistake.yours ?? '').isNotEmpty) ...[
@@ -344,17 +343,45 @@ class _MistakeRow extends StatelessWidget {
             context.l10n.explainYourAnswer(mistake.yours!),
             style: AppTypography.body(size: 13, color: a.textSecondary),
           ),
+          if ((mistake.whyYours ?? '').isNotEmpty) ...[
+            const SizedBox(height: AppSpace.xs),
+            Text(
+              mistake.whyYours!,
+              style: AppTypography.body(
+                size: 13,
+                weight: FontWeight.w500,
+                color: a.textSecondary,
+              ),
+            ),
+          ],
           const SizedBox(height: AppSpace.sm),
         ],
-        Text(
-          context.l10n.explainCorrectAnswer(mistake.correct),
-          style: AppTypography.title(size: 16, color: accent),
+        Text.rich(
+          TextSpan(
+            style: AppTypography.body(
+              size: 14,
+              weight: FontWeight.w500,
+              color: a.textSecondary,
+            ),
+            children: [
+              TextSpan(text: context.l10n.explainAnswerLabel),
+              const TextSpan(text: ': '),
+              TextSpan(
+                text: mistake.correct,
+                style: AppTypography.body(
+                  size: 15,
+                  weight: FontWeight.w700,
+                  color: a.text,
+                ),
+              ),
+            ],
+          ),
         ),
         if (mistake.why.isNotEmpty) ...[
-          const SizedBox(height: 4),
+          const SizedBox(height: AppSpace.sm),
           Text(
             mistake.why,
-            style: AppTypography.body(size: 14, color: a.text),
+            style: AppTypography.title(size: 16, height: 1.35, color: a.text),
           ),
         ],
       ],

@@ -13,6 +13,9 @@ class LampsBar extends StatelessWidget {
 
   /// Nulo = `a.chrome` da aparência atual.
   final Color? accent;
+
+  /// Cor da chama e do brilho das acesas. Nula = a mesma de [accent].
+  final Color? flame;
   final bool labeled;
 
   /// Faixa larga (topo da pergunta) — ocupa a largura disponível.
@@ -32,6 +35,7 @@ class LampsBar extends StatelessWidget {
     required this.current,
     this.max = 5,
     this.accent,
+    this.flame,
     this.labeled = false,
     this.fullWidth = false,
     this.compact = false,
@@ -43,8 +47,10 @@ class LampsBar extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final accent = this.accent ?? a.chrome;
-    final iconH = compact ? 24.0 : (fullWidth ? 30.0 : 28.0);
-    final iconW = compact ? 18.0 : (fullWidth ? 22.0 : 20.0);
+    // Travessia acende mais lamparinas: no topo da cena elas apertam.
+    final dense = compact && max > 6;
+    final iconH = dense ? 20.0 : (compact ? 24.0 : (fullWidth ? 30.0 : 28.0));
+    final iconW = dense ? 15.0 : (compact ? 18.0 : (fullWidth ? 22.0 : 20.0));
     final litColor = accent;
     final icons = Row(
       mainAxisAlignment: fullWidth
@@ -57,7 +63,9 @@ class LampsBar extends StatelessWidget {
         final color = flashing ? AppRoles.error : (on ? litColor : accent);
         return Padding(
           padding: EdgeInsets.only(
-            left: i == 0 ? 0 : (fullWidth ? (compact ? 8 : 10) : 7),
+            left: i == 0
+                ? 0
+                : (fullWidth ? (compact ? 8 : 10) : (dense ? 4 : 7)),
           ),
           child: AnimatedScale(
             scale: flashing ? 1.18 : (on ? 1 : 0.9),
@@ -72,6 +80,7 @@ class LampsBar extends StatelessWidget {
                   lit: on || flashing,
                   color: color,
                   unlitInk: a.text,
+                  flame: flashing ? null : flame,
                 ),
               ),
             ),

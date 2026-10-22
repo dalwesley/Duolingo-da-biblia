@@ -7,15 +7,18 @@ import 'trail_progress.dart';
 class TomorrowHook {
   final String title;
   final String tease;
+
   /// Trailer da próxima cena — nota, não o versículo de entrada.
   final String pull;
   final String? missionSlug;
   final String? trailTitle;
   final String? trailSlug;
   final bool trailJustCompleted;
+
   /// Insight da missão que acabou — o corte HOJE / AMANHÃ.
   final String? todayInsight;
   final String? hookRef;
+
   /// Pergunta aberta da próxima missão — Eco (só se escrita à mão).
   final String? echoQuestion;
 
@@ -52,11 +55,13 @@ class TomorrowHook {
     return tease.trim();
   }
 
-  String get promiseLine => trailJustCompleted
+  /// Promessa no pé do cartão. Sem trilha nova nem eco, é o encontro de
+  /// amanhã na hora do lembrete.
+  String promiseLine({required int reminderHour}) => trailJustCompleted
       ? L10n.current.tomorrowNextTrailOnMap
       : hasEcho
       ? L10n.current.tomorrowLine(title)
-      : L10n.current.tomorrowSceneWaits;
+      : L10n.current.celebrationSeeYouTomorrow(reminderHour);
 
   String get cardLine => trailJustCompleted
       ? '${trailTitle ?? L10n.current.homeHeroTomorrow}: $title'
@@ -153,10 +158,10 @@ class TomorrowHook {
   }
 
   static String _fold(String raw) {
-    var s = raw.toLowerCase().replaceAll('jeová', 'senhor').replaceAll(
-          'jeova',
-          'senhor',
-        );
+    var s = raw
+        .toLowerCase()
+        .replaceAll('jeová', 'senhor')
+        .replaceAll('jeova', 'senhor');
     const from = 'áàâãäéèêëíìîïóòôõöúùûüç';
     const to = 'aaaaaeeeeiiiiooooouuuuc';
     final buf = StringBuffer();
@@ -273,7 +278,9 @@ class TomorrowHook {
       trailSlug: trailSlug,
       trailJustCompleted: trailJustCompleted,
       todayInsight: todayInsight,
-      hookRef: (next.hookRef ?? '').trim().isEmpty ? null : next.hookRef!.trim(),
+      hookRef: (next.hookRef ?? '').trim().isEmpty
+          ? null
+          : next.hookRef!.trim(),
       echoQuestion: echo.isEmpty ? null : echo,
     );
   }
@@ -286,15 +293,15 @@ class TomorrowHook {
   }) {
     if (trails.isEmpty) return null;
     final finished = (justFinishedSlug ?? '').trim();
-    final todayInsight =
-        finished.isEmpty ? null : insightOf(trails, finished);
+    final todayInsight = finished.isEmpty ? null : insightOf(trails, finished);
 
     // Celebração: o amanhã é a próxima cena DA trilha que acabou —
     // não a primeira trilha "ativa" do catálogo (Ansiedade vinha antes).
     final homeTrail = finished.isEmpty
         ? null
         : trails.where((t) => t.missionSlugs.contains(finished)).firstOrNull;
-    final active = homeTrail ??
+    final active =
+        homeTrail ??
         TrailProgress.findActiveTrail(
           trails,
           completed,

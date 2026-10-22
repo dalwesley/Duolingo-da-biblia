@@ -4,7 +4,9 @@ import 'package:flutter/material.dart';
 import '../l10n/app_language.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/difficulty_visuals.dart';
 import 'act_feel.dart';
+import 'anan_speech.dart';
 import 'brand_flip_card.dart';
 import 'cinematic_icon.dart';
 import 'cloud_mascot.dart';
@@ -340,32 +342,43 @@ class _VerseFillPanelState extends State<VerseFillPanel>
                       ),
                       child: Column(
                         children: [
-                          Wrap(
-                            spacing: 10,
-                            runSpacing: 10,
-                            alignment: WrapAlignment.center,
-                            children: [
-                              for (var i = 0; i < _options.length; i++)
-                                _WordChip(
-                                  label: _options[i],
-                                  used: used.contains(_options[i]),
-                                  accent: accent,
-                                  stagger: _stagger,
-                                  index: i,
-                                  onTap: used.contains(_options[i])
-                                      ? () {
-                                          final slot = _picked.entries
-                                              .where(
-                                                (e) => e.value == _options[i],
-                                              )
-                                              .map((e) => e.key)
-                                              .firstOrNull;
-                                          if (slot != null) _clearSlot(slot);
-                                        }
-                                      : () => _select(_options[i]),
-                                ),
-                            ],
-                          ),
+                          // Mesma laje dos gestos: 3 por linha, todas
+                          // da mesma largura (a última linha não estica).
+                          for (var r = 0; r < _options.length; r += 3) ...[
+                            if (r > 0) const SizedBox(height: 10),
+                            Row(
+                              children: [
+                                for (var i = r; i < r + 3; i++) ...[
+                                  if (i > r) const SizedBox(width: 10),
+                                  Expanded(
+                                    child: i >= _options.length
+                                        ? const SizedBox.shrink()
+                                        : _WordChip(
+                                            label: _options[i],
+                                            used: used.contains(_options[i]),
+                                            stagger: _stagger,
+                                            index: i,
+                                            onTap: used.contains(_options[i])
+                                                ? () {
+                                                    final slot = _picked.entries
+                                                        .where(
+                                                          (e) =>
+                                                              e.value ==
+                                                              _options[i],
+                                                        )
+                                                        .map((e) => e.key)
+                                                        .firstOrNull;
+                                                    if (slot != null) {
+                                                      _clearSlot(slot);
+                                                    }
+                                                  }
+                                                : () => _select(_options[i]),
+                                          ),
+                                  ),
+                                ],
+                              ],
+                            ),
+                          ],
                           SizedBox(height: compact ? 4 : 8),
                           TextCta(
                             label: context.l10n.commonSkip,
@@ -406,6 +419,8 @@ class _VerseFillPanelState extends State<VerseFillPanel>
   }
 }
 
+/// Cabeçalho do bônus no padrão dos gestos: o Anan pede o verso no balão,
+/// e as lacunas preenchidas contam ali mesmo. Pula a cada palavra posta.
 class _MemoryHeader extends StatelessWidget {
   final Color accent;
   final int filled;
@@ -419,57 +434,40 @@ class _MemoryHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Padding(
-          padding: const EdgeInsets.only(top: 2),
-          child: CinematicIcon(
-            glyph: CinematicGlyph.spark,
-            size: AppMetrics.iconLg,
-            accent: accent,
-            framed: false,
-          ),
-        ),
-        const SizedBox(width: 10),
-        Expanded(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              SectionLabel(context.l10n.exerciseLabelWord, color: accent),
-              const SizedBox(height: 6),
-              Text(
-                context.l10n.exerciseTitleComplete,
-                maxLines: 2,
-                overflow: TextOverflow.ellipsis,
-                style: AppTypography.title(
-                  size: 20,
-                  height: 1.28,
-                  color: a.text,
-                ),
+    final mark = DifficultyVisuals.onLight(accent);
+    return AnanSideSpeech(
+      hop: filled,
+      child: Row(
+        children: [
+          Expanded(
+            child: Text(
+              context.l10n.exerciseTitleComplete,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              style: AppTypography.title(
+                size: 18,
+                height: 1.15,
+                color: AnanSpeechBubble.ink,
               ),
-            ],
+            ),
           ),
-        ),
-        const SizedBox(width: 10),
-        Row(
-          children: [
-            for (var i = 0; i < total; i++) ...[
-              if (i > 0) const SizedBox(width: 6),
-              AnimatedContainer(
-                duration: AppMotion.standard,
-                width: i < filled ? 18 : 8,
-                height: 8,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(AppRadii.pill),
-                  color: i < filled ? accent : a.progressTrack,
-                ),
+          const SizedBox(width: 10),
+          for (var i = 0; i < total; i++) ...[
+            if (i > 0) const SizedBox(width: 5),
+            AnimatedContainer(
+              duration: AppMotion.standard,
+              width: i < filled ? 16 : 7,
+              height: 7,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(AppRadii.pill),
+                color: i < filled
+                    ? mark
+                    : AnanSpeechBubble.line.withValues(alpha: 0.35),
               ),
-            ],
+            ),
           ],
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
@@ -763,7 +761,6 @@ class _BlankSlot extends StatelessWidget {
 class _WordChip extends StatelessWidget {
   final String label;
   final bool used;
-  final Color accent;
   final AnimationController stagger;
   final int index;
   final VoidCallback onTap;
@@ -771,7 +768,6 @@ class _WordChip extends StatelessWidget {
   const _WordChip({
     required this.label,
     required this.used,
-    required this.accent,
     required this.stagger,
     required this.index,
     required this.onTap,
@@ -779,6 +775,7 @@ class _WordChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     final start = 0.42 + index * 0.07;
     final curve = CurvedAnimation(
       parent: stagger,
@@ -789,6 +786,8 @@ class _WordChip extends StatelessWidget {
       ),
     );
 
+    // Laje dos gestos: poço do palco. Usada = apagada (o ouro já marca a
+    // palavra no verso); tocar de novo devolve.
     return FadeTransition(
       opacity: curve,
       child: SlideTransition(
@@ -799,23 +798,27 @@ class _WordChip extends StatelessWidget {
         child: ActPress(
           onTap: onTap,
           depth: 4,
-          child: AnimatedContainer(
+          child: AnimatedOpacity(
             duration: AppMotion.quick,
-            constraints: const BoxConstraints(minHeight: 56),
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(AppRadii.xl),
-              // Usada: placa ouro (seleção na cena). Idle: marfim.
-              color: used
-                  ? AppRoles.action
-                  : Color.lerp(AppColors.card, accent, 0.16)!,
-              boxShadow: AppLight.lip(),
-            ),
-            child: Text(
-              label,
-              style: AppTypography.title(
-                size: 14,
-                color: used ? AppRoles.onAction : AppColors.night,
+            opacity: used ? 0.38 : 1,
+            child: AnimatedContainer(
+              duration: AppMotion.quick,
+              height: 56,
+              alignment: Alignment.center,
+              padding: const EdgeInsets.symmetric(horizontal: 8),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(AppRadii.xl),
+                color: a.stageFill,
+                boxShadow: AppLight.lip(),
+              ),
+              child: FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  label,
+                  maxLines: 1,
+                  textAlign: TextAlign.center,
+                  style: AppTypography.title(size: 15, color: a.text),
+                ),
               ),
             ),
           ),

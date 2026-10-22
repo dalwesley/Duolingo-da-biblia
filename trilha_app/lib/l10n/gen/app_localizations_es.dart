@@ -2072,6 +2072,12 @@ class AppLocalizationsEs extends AppLocalizations {
   String get exerciseHint => 'Pista';
 
   @override
+  String get exerciseHintShowHint => 'Toca para ver la pista';
+
+  @override
+  String get exerciseHintShowQuestion => 'Toca para ver la pregunta';
+
+  @override
   String get exerciseHintUsed => 'Pista usada';
 
   @override
@@ -3898,6 +3904,9 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get lessonExitTitle => '¿Salir de la escena?';
+
+  @override
+  String get lessonFactsLabel => 'Lo que dice el texto';
 
   @override
   String get lessonInsightSubtitle => 'Lo que quedó';

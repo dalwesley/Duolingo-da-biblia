@@ -1384,6 +1384,8 @@
     "description": "Inicial de Falso no botão"
   },
   "exerciseHint": "Dica",
+  "exerciseHintShowHint": "Toque para ver a dica",
+  "exerciseHintShowQuestion": "Toque para ver a pergunta",
   "exerciseHintUsed": "Dica usada",
   "exerciseLabelBridge": "Ponte",
   "exerciseLabelClaim": "Afirmação",
@@ -2796,6 +2798,7 @@
     }
   },
   "lessonExitTitle": "Sair da cena?",
+  "lessonFactsLabel": "O que o texto diz",
   "lessonInsightSubtitle": "O que ficou",
   "lessonIntroBossPulse": "{count, plural, =1{Travessia · 1 pergunta} other{Travessia · {count} perguntas}}",
   "@lessonIntroBossPulse": {

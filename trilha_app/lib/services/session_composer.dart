@@ -127,6 +127,7 @@ class SessionComposer {
       noteLabel: bq.noteLabel,
       beat: bq.beat,
       evidenceSpan: bq.evidenceSpan,
+      retryHint: bq.hint,
     );
   }
 
@@ -459,6 +460,40 @@ class SessionComposer {
     _ => t,
   };
 
+  /// Gesto que a pessoa vê: o Toque que vira lacuna no palco é o mesmo
+  /// gesto do Completar ("Palavra"). Conta como um só — uma lacuna por sessão.
+  static ExerciseType exerciseSlot(Exercise e) =>
+      e.usesCompletePalco ? ExerciseType.complete : gestureSlot(e.type);
+
+  static ExerciseType bankSlot(BankQuestion q) {
+    if (q.type == ExerciseType.tap &&
+        q.passageA == null &&
+        q.passageB == null &&
+        ((q.template ?? '').contains('___') ||
+            fromBankQuestion(q).usesCompletePalco)) {
+      return ExerciseType.complete;
+    }
+    return gestureSlot(q.type);
+  }
+
+  /// Ponte (conectar / ligar pares / toque entre dois trechos) fora do ar
+  /// até o gesto ser refeito. Desligar aqui some com ela de toda sessão.
+  static const bridgeHidden = false;
+
+  static bool isHiddenGesture(
+    ExerciseType type, {
+    Object? passageA,
+    Object? passageB,
+  }) {
+    if (!bridgeHidden) return false;
+    if (gestureSlot(type) == ExerciseType.connect) return true;
+    final tapLike = type == ExerciseType.tap || type == ExerciseType.findInText;
+    return tapLike && (passageA != null || passageB != null);
+  }
+
+  static bool _servable(BankQuestion q) =>
+      !isHiddenGesture(q.type, passageA: q.passageA, passageB: q.passageB);
+
   /// Teto de Escolher na sessão mista ([docs/SESSAO_TREINO.md] §4).
   static int maxChoiceActs(int sessionMax) =>
       (sessionMax * 0.4).floor().clamp(1, sessionMax);
@@ -482,6 +517,13 @@ class SessionComposer {
   static List<Exercise> arrangeActs(List<Exercise> raw, {int max = 6}) {
     final playable = raw
         .where((e) => e.hasPlayableContent && e.type != ExerciseType.insight)
+        .where(
+          (e) => !isHiddenGesture(
+            e.type,
+            passageA: e.passageA,
+            passageB: e.passageB,
+          ),
+        )
         .where((e) => (e.beat ?? '').toLowerCase() != 'revisão')
         .where((e) {
           final id = e.id.toLowerCase();
@@ -491,7 +533,7 @@ class SessionComposer {
 
     final bySlot = <ExerciseType, List<Exercise>>{};
     for (final e in playable) {
-      bySlot.putIfAbsent(gestureSlot(e.type), () => []).add(e);
+      bySlot.putIfAbsent(exerciseSlot(e), () => []).add(e);
     }
 
     // Toque primeiro — mão no texto (diversão); V/F em seguida.
@@ -507,11 +549,15 @@ class SessionComposer {
     final ordered = <Exercise>[];
 
     int countSlot(ExerciseType slot) =>
-        ordered.where((e) => gestureSlot(e.type) == slot).length;
+        ordered.where((e) => exerciseSlot(e) == slot).length;
 
     bool canAdd(Exercise e) {
       if (ordered.length >= max) return false;
-      final slot = gestureSlot(e.type);
+      final slot = exerciseSlot(e);
+      if (slot == ExerciseType.complete &&
+          countSlot(ExerciseType.complete) >= 1) {
+        return false;
+      }
       if (slot == ExerciseType.choice &&
           countSlot(ExerciseType.choice) >= maxChoiceActs(max)) {
         return false;
@@ -522,7 +568,7 @@ class SessionComposer {
       }
       if (ordered.length >= 3) {
         final last3 = ordered.sublist(ordered.length - 3);
-        if (last3.every((x) => gestureSlot(x.type) == slot)) return false;
+        if (last3.every((x) => exerciseSlot(x) == slot)) return false;
       }
       return true;
     }
@@ -537,7 +583,7 @@ class SessionComposer {
           t == ExerciseType.choice &&
           countSlot(ExerciseType.choice) >= 1) {
         final first = ordered.indexWhere(
-          (x) => gestureSlot(x.type) == ExerciseType.choice,
+          (x) => exerciseSlot(x) == ExerciseType.choice,
         );
         final insertAt = first >= 0
             ? (first + 2).clamp(0, ordered.length)
@@ -576,6 +622,50 @@ class SessionComposer {
     return ordered;
   }
 
+  /// Roda do descanso: na cena comum (5 + Bônus) um gesto fica de fora e
+  /// volta na cena seguinte, quando sai o próximo da roda.
+  static const restRotation = <ExerciseType>[
+    ExerciseType.trueFalse,
+    ExerciseType.tap,
+    ExerciseType.choice,
+    ExerciseType.order,
+    ExerciseType.complete,
+    ExerciseType.connect,
+  ];
+
+  /// Tira do [pool] o gesto que descansa na cena [sceneIndex] da trilha.
+  /// Cada modo começa num ponto da roda, para Observação e Compreensão da
+  /// mesma cena não perderem o mesmo gesto. Refazendo a cena, descansa o
+  /// primeiro gesto já visto — o que ficou de fora da 1ª vez entra.
+  /// Com 5 gestos ou menos no banco, nada sai.
+  static List<BankQuestion> withRestingGesture({
+    required List<BankQuestion> pool,
+    required int sceneIndex,
+    required TrailDifficulty difficulty,
+    Set<String> usedIds = const {},
+  }) {
+    final servable = pool.where(_servable).toList();
+    final slotOf = {for (final q in servable) q.id: bankSlot(q)};
+    final present = slotOf.values.toSet();
+    if (present.length <= ProgressService.normalQuestionCount) return pool;
+
+    final n = restRotation.length;
+    final base = sceneIndex + difficulty.index * 2;
+    final wheel = [
+      for (var k = 0; k < n; k++) restRotation[(base + k) % n],
+    ].where(present.contains).toList();
+
+    bool seen(ExerciseType slot) => servable
+        .where((q) => slotOf[q.id] == slot)
+        .every((q) => usedIds.contains(q.id));
+
+    final replay = servable.any((q) => usedIds.contains(q.id));
+    final rest = replay
+        ? wheel.firstWhere(seen, orElse: () => wheel.first)
+        : wheel.first;
+    return pool.where((q) => (slotOf[q.id] ?? bankSlot(q)) != rest).toList();
+  }
+
   /// Primeiro 1 de cada gesto; depois preenche até [max] (2º Escolher ≤ 40%).
   /// V/F: alterna verdadeiro/falso (evita Firestore legado só-falso).
   /// Nunca repete o mesmo enunciado V/F (verdadeiro + falso do mesmo ato).
@@ -595,6 +685,8 @@ class SessionComposer {
       ExerciseType.connect,
     ];
     final random = rng ?? Random(missionSlug.hashCode);
+    final slotOf = {for (final q in pool) q.id: bankSlot(q)};
+    ExerciseType slotFor(BankQuestion q) => slotOf[q.id] ?? gestureSlot(q.type);
     final picked = <BankQuestion>[];
     final seenIds = <String>{};
     final seenVfStems = <String>{};
@@ -619,23 +711,17 @@ class SessionComposer {
     }
 
     BankQuestion? bestFor(ExerciseType type) {
-      final matches = pool.where((q) {
+      final matches = pool.where(_servable).where((q) {
         if (type == ExerciseType.trueFalse) {
           if (!vfAvailable(q)) return false;
         } else if (seenIds.contains(q.id)) {
           return false;
         }
-        if (type == ExerciseType.tap) {
-          return q.type == ExerciseType.tap ||
-              q.type == ExerciseType.findInText;
-        }
-        if (type == ExerciseType.connect) {
-          return q.type == ExerciseType.connect || q.type == ExerciseType.match;
-        }
+        if (type == ExerciseType.trueFalse) return q.type == type;
         if (type == ExerciseType.choice) {
           return q.type == type && choiceServeable(q);
         }
-        return q.type == type;
+        return slotFor(q) == type;
       }).toList();
       if (matches.isEmpty) return null;
 
@@ -694,9 +780,13 @@ class SessionComposer {
         if (picked.length >= max) break;
         if (t == ExerciseType.choice) {
           final n = picked
-              .where((q) => gestureSlot(q.type) == ExerciseType.choice)
+              .where((q) => slotFor(q) == ExerciseType.choice)
               .length;
           if (n >= maxChoiceActs(max)) continue;
+        }
+        if (t == ExerciseType.complete &&
+            picked.any((q) => slotFor(q) == ExerciseType.complete)) {
+          continue;
         }
         if (t == ExerciseType.trueFalse) {
           final n = picked
@@ -736,7 +826,8 @@ class SessionComposer {
               q.trailSlug == trailSlug &&
               QuestionBank.matchesMissionSection(q, missionSlug) &&
               !usedInSession.contains(q.id) &&
-              !blocked.contains(gestureSlot(q.type)),
+              !blocked.contains(bankSlot(q)) &&
+              _servable(q),
         )
         .toList();
     if (all.isEmpty) return null;
@@ -775,6 +866,9 @@ class SessionComposer {
     required ProgressService progress,
     bool practiceMode = false,
     List<String>? questionIdsOverride,
+
+    /// Posição da cena na trilha — escolhe o gesto que descansa.
+    int? sceneIndex,
     Random? rng,
   }) async {
     DifficultyMeta? meta;
@@ -826,9 +920,18 @@ class SessionComposer {
       final max = ProgressService.questionCountForMission(
         isBoss: mission.isBoss,
       ).clamp(5, 12);
+      final usedIds = progress.usedQuestionIds.toSet();
+      final scenePool = !mission.isBoss && sceneIndex != null && sceneIndex >= 0
+          ? withRestingGesture(
+              pool: pool,
+              sceneIndex: sceneIndex,
+              difficulty: difficulty,
+              usedIds: usedIds,
+            )
+          : pool;
       final picked = pickDiverseBankQuestions(
-        pool: pool,
-        usedIds: progress.usedQuestionIds.toSet(),
+        pool: scenePool,
+        usedIds: usedIds,
         max: max,
         missionSlug: missionSlug,
         rng: rng,

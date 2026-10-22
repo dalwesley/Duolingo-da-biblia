@@ -9,8 +9,10 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 import 'cloud_mascot.dart';
+import 'evidence_verse.dart';
 import 'immersive_background.dart';
 import 'question_report_sheet.dart';
+import 'anan_speech.dart';
 import 'ui_primitives.dart';
 
 /// Veredito do ato — painel na base, mesmo para acerto e erro.
@@ -77,9 +79,15 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
   late final AnimationController _auto;
   bool _advanced = false;
 
+  /// Tocou no painel: a pessoa quer ler com calma, a contagem para de vez.
+  bool _held = false;
+
   static const _autoAdvance = Duration(milliseconds: 2200);
 
-  bool get _autoEnabled => widget.isCorrect && !widget.outOfLamps;
+  /// Acerto com o trecho aceso: tempo para ler as palavras que provaram.
+  static const _autoAdvanceWithVerse = Duration(milliseconds: 3600);
+
+  bool get _autoEnabled => widget.isCorrect && !widget.outOfLamps && !_held;
   late final Animation<double> _scrim;
   late final Animation<double> _lift;
 
@@ -89,25 +97,35 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
   );
 
   /// Tentar de novo e pular não mostram versículo nem porquê: o palco já
-  /// está na tela, e o porquê entregaria a resposta.
-  bool get _needsEvidence => _reveal || widget.outOfLamps;
+  /// está na tela, e o porquê entregaria a resposta. No acerto, o versículo
+  /// volta só quando o banco diz qual trecho provou (V3).
+  bool get _needsEvidence => _reveal || widget.outOfLamps || _spanOnCorrect;
+
+  bool get _spanOnCorrect =>
+      widget.isCorrect &&
+      !widget.exercise.type.isRevealOnly &&
+      (widget.exercise.evidenceSpan ?? '').trim().isNotEmpty;
 
   bool get _holdsAnswer => !widget.isCorrect && !_reveal && !widget.outOfLamps;
 
   bool get _reveal => !widget.isCorrect && widget.revealAnswer;
 
-  String get _span =>
-      _reveal ? (widget.exercise.evidenceSpan ?? '').trim() : '';
+  String get _span => _reveal || _spanOnCorrect
+      ? (widget.exercise.evidenceSpan ?? '').trim()
+      : '';
 
   @override
   void initState() {
     super.initState();
     _enter = AnimationController(vsync: this, duration: AppMotion.slow)
       ..forward();
-    _auto = AnimationController(vsync: this, duration: _autoAdvance)
-      ..addStatusListener((status) {
-        if (status == AnimationStatus.completed) _advance();
-      });
+    _auto =
+        AnimationController(
+          vsync: this,
+          duration: _spanOnCorrect ? _autoAdvanceWithVerse : _autoAdvance,
+        )..addStatusListener((status) {
+          if (status == AnimationStatus.completed) _advance();
+        });
     _enter.addStatusListener((status) {
       if (status == AnimationStatus.completed && mounted) {
         if (_autoEnabled) _auto.forward();
@@ -133,6 +151,12 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
     _enter.dispose();
     _auto.dispose();
     super.dispose();
+  }
+
+  void _hold() {
+    if (_held || !_autoEnabled) return;
+    _auto.stop();
+    setState(() => _held = true);
   }
 
   /// Um avanço só — pelo toque ou pelo fim da contagem.
@@ -237,7 +261,7 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
     final feedback = _holdsAnswer
         ? (widget.willRequeue
               ? l10n.feedbackRequeueHint
-              : l10n.feedbackRereadHint)
+              : exercise.textHint ?? l10n.feedbackRereadHint)
         : _compactFeedback(
             exercise.feedbackFor(widget.selected, correct: isCorrect),
           );
@@ -308,131 +332,149 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
               );
             },
             child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 520),
+              constraints: const BoxConstraints(maxWidth: 560),
               child: RepaintBoundary(
                 child: Material(
                   color: Colors.transparent,
                   child: Padding(
                     padding: const EdgeInsets.fromLTRB(
-                      AppSpace.screen,
+                      AppSpace.sm,
                       0,
-                      AppSpace.screen,
+                      AppSpace.sm,
                       AppSpace.sm,
                     ),
-                    child: GlassCard(
-                      radius: AppMetrics.heroRadius,
-                      elevated: true,
-                      padding: const EdgeInsets.fromLTRB(18, 6, 18, 18),
-                      child: Stack(
-                        children: [
-                          Column(
-                            mainAxisSize: MainAxisSize.min,
-                            crossAxisAlignment: CrossAxisAlignment.stretch,
-                            children: [
-                              const SizedBox(height: 8),
-                              Center(
-                                child: SizedBox(
-                                  width: 96,
-                                  height: 96,
-                                  child: _VerdictMark(
-                                    face: face,
-                                    enter: _enter,
-                                  ),
-                                ),
-                              ),
-                              const SizedBox(height: 6),
-                              Text(
-                                title,
-                                textAlign: TextAlign.center,
-                                style: AppTypography.display(
-                                  size: combo >= 3 ? 28 : 24,
-                                  height: 1.1,
-                                  color: a.text,
-                                ),
-                              ),
-                              if (feedback.isNotEmpty) ...[
+                    child: Listener(
+                      onPointerDown: (_) => _hold(),
+                      child: GlassCard(
+                        radius: AppMetrics.heroRadius,
+                        elevated: true,
+                        padding: const EdgeInsets.fromLTRB(16, 8, 16, 20),
+                        child: Stack(
+                          children: [
+                            Column(
+                              mainAxisSize: MainAxisSize.min,
+                              crossAxisAlignment: CrossAxisAlignment.stretch,
+                              children: [
                                 const SizedBox(height: 8),
-                                Text(
-                                  feedback,
-                                  textAlign: TextAlign.center,
-                                  style: AppTypography.body(
-                                    size: 15,
-                                    height: 1.4,
-                                    color: a.textSecondary,
-                                  ),
-                                ),
-                              ],
-                              if (_holdsAnswer &&
-                                  widget.onReadPassage != null) ...[
-                                const SizedBox(height: 4),
                                 Center(
-                                  child: TextCta(
-                                    label: l10n.feedbackReadPassage,
-                                    leading: CinematicGlyph.book,
-                                    color: accent,
-                                    onTap: widget.onReadPassage,
+                                  child: SizedBox(
+                                    width: 96,
+                                    height: 96,
+                                    child: _VerdictMark(
+                                      face: face,
+                                      enter: _enter,
+                                    ),
                                   ),
                                 ),
-                              ],
-                              if (answer.isNotEmpty) ...[
-                                const SizedBox(height: 12),
-                                _AnswerReveal(answer: answer, accent: accent),
-                              ],
-                              if (showVerse) ...[
+                                const SizedBox(height: AppSpace.sm),
+                                // O veredito e o porquê saem da boca do Anan.
+                                AnanSpeechBubble(
+                                  padding: const EdgeInsets.fromLTRB(
+                                    20,
+                                    16,
+                                    20,
+                                    18,
+                                  ),
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      Text(
+                                        title,
+                                        textAlign: TextAlign.center,
+                                        style: AppTypography.display(
+                                          size: combo >= 3 ? 32 : 28,
+                                          height: 1.1,
+                                          color: AnanSpeechBubble.ink,
+                                        ),
+                                      ),
+                                      if (feedback.isNotEmpty) ...[
+                                        const SizedBox(height: 6),
+                                        Text(
+                                          feedback,
+                                          textAlign: TextAlign.center,
+                                          style: AppTypography.body(
+                                            size: 18,
+                                            height: 1.45,
+                                            color: AnanSpeechBubble.ink,
+                                          ),
+                                        ),
+                                      ],
+                                    ],
+                                  ),
+                                ),
+                                if (_holdsAnswer &&
+                                    widget.onReadPassage != null) ...[
+                                  const SizedBox(height: 4),
+                                  Center(
+                                    child: TextCta(
+                                      label: l10n.feedbackReadPassage,
+                                      leading: CinematicGlyph.book,
+                                      color: accent,
+                                      onTap: widget.onReadPassage,
+                                    ),
+                                  ),
+                                ],
+                                if (answer.isNotEmpty) ...[
+                                  const SizedBox(height: 12),
+                                  _AnswerReveal(answer: answer, accent: accent),
+                                ],
+                                if (showVerse) ...[
+                                  const SizedBox(height: 16),
+                                  EvidenceVerse(
+                                    reference: ref,
+                                    verse: verse,
+                                    accent: AppRoles.presence,
+                                    highlight: _span,
+                                    highlightColor: AppRoles.presence,
+                                    verseSize: 19,
+                                  ),
+                                ],
                                 const SizedBox(height: 16),
-                                _VerseWell(
-                                  reference: ref,
-                                  verse: verse,
-                                  accent: AppRoles.presence,
-                                  highlight: _span,
-                                  highlightColor: AppRoles.presence,
+                                AnimatedBuilder(
+                                  animation: _auto,
+                                  builder: (context, _) => CopperCta(
+                                    label: cta,
+                                    onTap: _advance,
+                                    trailing: isCorrect || reveal
+                                        ? CinematicGlyph.forward
+                                        : CinematicGlyph.refresh,
+                                    showArrow: false,
+                                    progress: _autoEnabled ? _auto.value : null,
+                                  ),
                                 ),
+                                if (canSkip) ...[
+                                  const SizedBox(height: 8),
+                                  GhostCta(
+                                    label: l10n.feedbackSkipToEnd,
+                                    expanded: true,
+                                    matchCopper: true,
+                                    onTap: _skip,
+                                  ),
+                                ],
                               ],
-                              const SizedBox(height: 16),
-                              AnimatedBuilder(
-                                animation: _auto,
-                                builder: (context, _) => CopperCta(
-                                  label: cta,
-                                  onTap: _advance,
-                                  trailing: isCorrect || reveal
-                                      ? CinematicGlyph.forward
-                                      : CinematicGlyph.refresh,
-                                  showArrow: false,
-                                  progress: _autoEnabled ? _auto.value : null,
+                            ),
+                            Positioned(
+                              top: -4,
+                              right: -10,
+                              child: IconButton(
+                                tooltip: l10n.feedbackReportTooltip,
+                                onPressed: _report,
+                                visualDensity: VisualDensity.compact,
+                                padding: EdgeInsets.zero,
+                                constraints: const BoxConstraints(
+                                  minWidth: 36,
+                                  minHeight: 36,
                                 ),
-                              ),
-                              if (canSkip) ...[
-                                const SizedBox(height: 8),
-                                GhostCta(
-                                  label: l10n.feedbackSkipToEnd,
-                                  expanded: true,
-                                  matchCopper: true,
-                                  onTap: _skip,
+                                icon: CinematicIcon(
+                                  glyph: CinematicGlyph.flag,
+                                  size: AppMetrics.iconMd,
+                                  accent: a.textFaint,
+                                  framed: false,
                                 ),
-                              ],
-                            ],
-                          ),
-                          Positioned(
-                            top: -4,
-                            right: -10,
-                            child: IconButton(
-                              tooltip: l10n.feedbackReportTooltip,
-                              onPressed: _report,
-                              visualDensity: VisualDensity.compact,
-                              padding: EdgeInsets.zero,
-                              constraints: const BoxConstraints(
-                                minWidth: 36,
-                                minHeight: 36,
-                              ),
-                              icon: CinematicIcon(
-                                glyph: CinematicGlyph.flag,
-                                size: AppMetrics.iconMd,
-                                accent: a.textFaint,
-                                framed: false,
                               ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ),
                   ),
@@ -506,103 +548,6 @@ class _AnswerReveal extends StatelessWidget {
                 color: a.text,
               ),
             ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class _VerseWell extends StatelessWidget {
-  final String reference;
-  final String verse;
-  final Color accent;
-
-  /// Trecho que prova a resposta — acende dentro do versículo.
-  final String highlight;
-  final Color? highlightColor;
-
-  const _VerseWell({
-    required this.reference,
-    required this.verse,
-    required this.accent,
-    this.highlight = '',
-    this.highlightColor,
-  });
-
-  /// Posição do trecho no versículo, ignorando caixa e pontuação nas bordas.
-  (int, int)? _spanRange() {
-    final needle = highlight
-        .trim()
-        .replaceAll(RegExp(r'^[^\p{L}]+|[^\p{L}]+$', unicode: true), '')
-        .toLowerCase();
-    if (needle.isEmpty) return null;
-    final i = verse.toLowerCase().indexOf(needle);
-    if (i < 0) return null;
-    return (i, i + needle.length);
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return InsetPanel(
-      borderColor: accent.withValues(alpha: 0.22),
-      padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
-      child: SizedBox(
-        width: double.infinity,
-        child: Column(
-          children: [
-            if (reference.isNotEmpty)
-              Text(
-                reference,
-                textAlign: TextAlign.center,
-                style: AppTypography.label(
-                  size: 11,
-                  letterSpacing: 1.2,
-                  color: accent,
-                ),
-              ),
-            if (reference.isNotEmpty) const SizedBox(height: 8),
-            () {
-              final base = AppTypography.verse(
-                size: 15,
-                weight: FontWeight.w600,
-                height: 1.4,
-                color: a.textSecondary,
-              );
-              final range = _spanRange();
-              if (range == null) {
-                return Text(
-                  verse,
-                  textAlign: TextAlign.center,
-                  maxLines: 4,
-                  overflow: TextOverflow.ellipsis,
-                  style: base,
-                );
-              }
-              final (start, end) = range;
-              final hot = highlightColor ?? accent;
-              return Text.rich(
-                TextSpan(
-                  style: base,
-                  children: [
-                    TextSpan(text: verse.substring(0, start)),
-                    TextSpan(
-                      text: verse.substring(start, end),
-                      style: base.copyWith(
-                        color: a.text,
-                        fontWeight: FontWeight.w800,
-                        backgroundColor: hot.withValues(alpha: 0.22),
-                      ),
-                    ),
-                    TextSpan(text: verse.substring(end)),
-                  ],
-                ),
-                textAlign: TextAlign.center,
-                maxLines: 5,
-                overflow: TextOverflow.ellipsis,
-              );
-            }(),
           ],
         ),
       ),

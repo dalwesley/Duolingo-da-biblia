@@ -12,6 +12,9 @@ class ExplainedMistake {
   /// O que a pessoa marcou. Gravado no erro; no verdadeiro ou falso
   /// antigo, a outra opção.
   final String? yours;
+
+  /// Por que a marcação não se sustenta (o `feedbackWrong` daquela opção).
+  final String? whyYours;
   final String? verseRef;
   final String trailSlug;
   final String section;
@@ -25,6 +28,7 @@ class ExplainedMistake {
     required this.correct,
     required this.why,
     this.yours,
+    this.whyYours,
     this.verseRef,
     this.trailSlug = '',
     this.section = '',
@@ -68,7 +72,7 @@ ExplainedMistake? explainBankQuestion(BankQuestion q, {String? yours}) {
   }
 
   final String correct;
-  if (overlay.correctOrder.isNotEmpty) {
+  if (overlay.type == ExerciseType.order && overlay.correctOrder.isNotEmpty) {
     correct = overlay.correctOrder.map(textOf).join(' → ');
   } else {
     final answer = (overlay.correctAnswer ?? overlay.correctOptionId).trim();
@@ -76,10 +80,12 @@ ExplainedMistake? explainBankQuestion(BankQuestion q, {String? yours}) {
     correct = textOf(answer);
   }
 
+  final marked = _storedOrInferred(overlay, correct, yours);
   return ExplainedMistake(
     prompt: prompt,
     correct: correct,
-    yours: _storedOrInferred(overlay, correct, yours),
+    yours: marked,
+    whyYours: _whyYours(q, overlay, marked),
     why: readingWhy(overlay.feedbackCorrect),
     verseRef: overlay.verseRef,
     trailSlug: overlay.trailSlug,
@@ -140,6 +146,23 @@ String? _storedOrInferred(BankQuestion q, String correct, String? stored) {
   final text = stored?.trim() ?? '';
   if (text.isNotEmpty) return text;
   return _yourAnswer(q, correct);
+}
+
+/// O porquê da opção marcada. A marcação é guardada como texto, no idioma
+/// em que a pessoa jogou: procura nas opções do banco e do overlay.
+String? _whyYours(BankQuestion base, BankQuestion overlay, String? marked) {
+  final text = marked?.trim() ?? '';
+  if (text.isEmpty) return null;
+  String? id;
+  for (final option in [...overlay.options, ...base.options]) {
+    if (option.text.trim() == text) {
+      id = option.id;
+      break;
+    }
+  }
+  if (id == null || id == overlay.correctOptionId) return null;
+  final why = (overlay.feedbackWrong[id] ?? '').trim();
+  return why.isEmpty ? null : why;
 }
 
 /// No verdadeiro ou falso a outra opção é a que a pessoa marcou.

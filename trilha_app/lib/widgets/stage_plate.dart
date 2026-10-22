@@ -8,6 +8,7 @@ class StagePlate extends StatelessWidget {
   final Color accent;
   final Widget child;
   final bool lit;
+  final bool tint;
   final EdgeInsetsGeometry padding;
 
   const StagePlate({
@@ -15,18 +16,47 @@ class StagePlate extends StatelessWidget {
     required this.accent,
     required this.child,
     this.lit = false,
+    this.tint = false,
     this.padding = const EdgeInsets.fromLTRB(22, 20, 22, 22),
   });
 
   static const radius = AppRadii.xl;
 
+  /// [tint]: luz do modo — o tom do modo desce de cima no palco e acende
+  /// a borda (gestos da cena). Sem [tint], o palco fica neutro.
   static BoxDecoration decoration({
     required Color accent,
     bool lit = false,
+    bool tint = false,
     AppearanceStyle? style,
   }) {
     final fill = style?.stageFill ?? AppColors.nightElevated;
     final onDark = style?.onDark ?? true;
+    if (tint && !lit) {
+      return BoxDecoration(
+        borderRadius: BorderRadius.circular(radius),
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            Color.lerp(fill, accent, onDark ? 0.14 : 0.08)!,
+            Color.lerp(fill, accent, 0.03)!,
+          ],
+        ),
+        border: Border.all(
+          color: accent.withValues(alpha: onDark ? 0.42 : 0.32),
+          width: 1.2,
+        ),
+        boxShadow: [
+          ...AppLight.shadow(elevated: true),
+          BoxShadow(
+            color: accent.withValues(alpha: onDark ? 0.16 : 0.10),
+            blurRadius: 28,
+            spreadRadius: -6,
+          ),
+        ],
+      );
+    }
     return BoxDecoration(
       borderRadius: BorderRadius.circular(radius),
       color: Color.lerp(fill, accent, lit ? 0.1 : 0.04),
@@ -50,6 +80,7 @@ class StagePlate extends StatelessWidget {
       decoration: decoration(
         accent: accent,
         lit: lit,
+        tint: tint,
         style: Appearance.of(context),
       ),
       child: child,

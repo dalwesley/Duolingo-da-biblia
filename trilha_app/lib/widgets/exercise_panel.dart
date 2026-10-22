@@ -9,6 +9,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
 import 'act_feel.dart';
+import 'anan_speech.dart';
 import 'cinematic_icon.dart';
 import 'stage_plate.dart';
 import 'relic_panel.dart';
@@ -342,9 +343,9 @@ class _ExercisePanelState extends State<ExercisePanel>
                   title: ex.displayCue.trim().isNotEmpty
                       ? ex.displayCue
                       : ex.instructionTitle,
-                  glyph: _gestureGlyph(ex),
-                  label: ex.taskPromptLabel,
                   isPrompt: ex.showsStagePrompt,
+                  picked: widget.selected ?? _picked,
+                  hint: widget.hintUsed ? ex.textHint : null,
                 ),
               ),
               if (_showNote(ex)) ...[
@@ -605,9 +606,12 @@ class _ExercisePanelState extends State<ExercisePanel>
           return _chipBank(ex.effectiveOptions, occupyVerse: true);
         }
         if (ex.prefersVerseTap) return const [];
+        if (ex.passageA != null || ex.passageB != null) {
+          return _bridgeBank(ex);
+        }
         return _chipBank(ex.effectiveOptions);
       case ExerciseType.connect:
-        return _chipBank(ex.effectiveOptions, occupyVerse: true);
+        return _bridgeBank(ex);
       case ExerciseType.order:
         return [_orderList()];
       case ExerciseType.match:
@@ -618,6 +622,11 @@ class _ExercisePanelState extends State<ExercisePanel>
         return _optionBank(options);
     }
   }
+
+  List<Widget> _bridgeBank(Exercise ex) => _chipBank([
+    for (final o in ex.effectiveOptions)
+      QuestionOption(id: o.id, text: _bridgeLabel(o.text)),
+  ], occupyVerse: true);
 
   Widget _tileFor(QuestionOption o) {
     final eliminated = widget.eliminatedIds.contains(o.id);
@@ -877,6 +886,7 @@ class _ExercisePanelState extends State<ExercisePanel>
         if (hintAvailable)
           Align(
             alignment: Alignment.centerLeft,
+            // Dica é apoio: tinta de legenda — o ouro fica só no Verificar.
             child: TextCta(
               label: widget.hintUsed
                   ? context.l10n.exerciseHintUsed
@@ -884,13 +894,24 @@ class _ExercisePanelState extends State<ExercisePanel>
               onTap: widget.hintUsed || _locked ? null : widget.onHint,
               color: widget.hintUsed || _locked
                   ? Appearance.of(context).textFaint
-                  : AppRoles.action,
+                  : Appearance.of(context).textSecondary,
             ),
           ),
-        CopperCta(
-          label: context.l10n.exerciseCheck,
-          onTap: canConfirm && !waiting ? _confirmChoice : null,
-          trailing: null,
+        // Ao armar, o botão dá um pulinho: a resposta escolhida pede o toque.
+        TweenAnimationBuilder<double>(
+          key: ValueKey(canConfirm),
+          tween: Tween(begin: canConfirm ? 0.94 : 1, end: 1),
+          duration: AppMotion.gentle,
+          curve: AppMotion.pop,
+          builder: (context, scale, child) =>
+              Transform.scale(scale: scale, child: child),
+          child: CopperCta(
+            label: context.l10n.exerciseCheck,
+            onTap: canConfirm && !waiting ? _confirmChoice : null,
+            trailing: null,
+            // Ouro sempre: antes da escolha só não responde ao toque.
+            decorative: !canConfirm || waiting,
+          ),
         ),
       ],
     );
@@ -941,82 +962,133 @@ TextStyle _filledWordStyle(TextStyle base, _OptState state) {
   );
 }
 
-/// Glifo do gesto — pelo tipo, não pelo rótulo (que muda com o idioma).
-CinematicGlyph _gestureGlyph(Exercise ex) => switch (ex.type) {
-  ExerciseType.trueFalse => CinematicGlyph.scales,
-  ExerciseType.tap || ExerciseType.findInText =>
-    (ex.passageA != null && ex.passageB != null)
-        ? CinematicGlyph.link
-        : CinematicGlyph.tap,
-  ExerciseType.order => CinematicGlyph.stack,
-  ExerciseType.complete => CinematicGlyph.gap,
-  ExerciseType.connect || ExerciseType.match => CinematicGlyph.link,
-  ExerciseType.choice ||
-  ExerciseType.textSupported ||
-  ExerciseType.bestInterpretation => CinematicGlyph.target,
-  _ => CinematicGlyph.book,
-};
-
-class _GestureSeal extends StatelessWidget {
+/// O enunciado como fala do Anan. O tipo do gesto fica na barra de cima.
+///
+/// Pedida a dica (banco V3), o balão vira e mostra a frase. Daí em diante
+/// um toque no balão alterna entre a dica e a pergunta.
+class _GestureSeal extends StatefulWidget {
   final String title;
-  final CinematicGlyph glyph;
-  final String label;
   final bool isPrompt;
+  final String? picked;
+  final String? hint;
 
   const _GestureSeal({
     required this.title,
-    required this.glyph,
-    required this.label,
     required this.isPrompt,
+    this.picked,
+    this.hint,
   });
 
   @override
+  State<_GestureSeal> createState() => _GestureSealState();
+}
+
+class _GestureSealState extends State<_GestureSeal> {
+  late bool _onHint = _tip.isNotEmpty;
+
+  String get _tip => (widget.hint ?? '').trim();
+
+  @override
+  void didUpdateWidget(covariant _GestureSeal oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    final had = (oldWidget.hint ?? '').trim().isNotEmpty;
+    if (!had && _tip.isNotEmpty) _onHint = true;
+    if (_tip.isEmpty) _onHint = false;
+  }
+
+  @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final cue = title.trim();
-    // Meta do gesto: muted (YouVersion/Duolingo) — ouro só no CTA.
-    final meta = a.sectionLabel;
-    return Row(
-      crossAxisAlignment: isPrompt
-          ? CrossAxisAlignment.start
-          : CrossAxisAlignment.center,
-      children: [
-        Padding(
-          padding: EdgeInsets.only(top: isPrompt ? 2 : 0),
-          child: CinematicIcon(
-            glyph: glyph,
-            size: 22,
-            accent: meta,
+    final cue = widget.title.trim();
+    const ink = AnanSpeechBubble.ink;
+    final tip = _tip;
+    return AnanSideSpeech(
+      hop: widget.picked,
+      flipped: tip.isNotEmpty && _onHint,
+      back: tip.isEmpty ? null : _hintFace(tip),
+      onTap: tip.isEmpty
+          ? null
+          : () {
+              ActHaptics.tap();
+              setState(() => _onHint = !_onHint);
+            },
+      // A pergunta inteira, sempre: afirmação longa (V/F do banco V3) desce
+      // um passo no tamanho em vez de ser cortada.
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(
+            cue,
+            maxLines: 6,
+            overflow: TextOverflow.ellipsis,
+            style: AppTypography.title(
+              size: cue.length > 90 ? 16 : (widget.isPrompt ? 18 : 17),
+              height: 1.15,
+              color: ink,
+            ),
+          ),
+          if (tip.isNotEmpty) _turnCue(context.l10n.exerciseHintShowHint),
+        ],
+      ),
+    );
+  }
+
+  /// Rodapé dos dois lados do balão: diz que ele vira com um toque.
+  Widget _turnCue(String label) {
+    return Padding(
+      padding: const EdgeInsets.only(top: 8),
+      child: Row(
+        children: [
+          const CinematicIcon(
+            glyph: CinematicGlyph.refresh,
+            size: 14,
+            accent: AnanSpeechBubble.mark,
             framed: false,
+            glowing: false,
+          ),
+          const SizedBox(width: 6),
+          Flexible(
+            child: Text(
+              label,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: AppTypography.body(
+                size: 12,
+                weight: FontWeight.w700,
+                color: AnanSpeechBubble.mark,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _hintFace(String tip) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(
+          context.l10n.exerciseHint.toUpperCase(),
+          style: AppTypography.label(
+            size: 11,
+            letterSpacing: 1.2,
+            color: AnanSpeechBubble.mark,
           ),
         ),
-        const SizedBox(width: 10),
-        Expanded(
-          child: isPrompt
-              ? Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    SectionLabel(label, color: meta),
-                    const SizedBox(height: 6),
-                    Text(
-                      cue,
-                      maxLines: 3,
-                      overflow: TextOverflow.ellipsis,
-                      style: AppTypography.title(
-                        size: 20,
-                        height: 1.28,
-                        color: a.text,
-                      ),
-                    ),
-                  ],
-                )
-              : Text(
-                  cue,
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: AppTypography.title(size: 18, color: a.text),
-                ),
+        const SizedBox(height: 4),
+        Text(
+          tip,
+          maxLines: 3,
+          overflow: TextOverflow.ellipsis,
+          style: AppTypography.title(
+            size: 17,
+            height: 1.2,
+            color: AnanSpeechBubble.ink,
+          ),
         ),
+        _turnCue(context.l10n.exerciseHintShowQuestion),
       ],
     );
   }
@@ -1091,9 +1163,10 @@ class _Manuscript extends StatelessWidget {
   });
 
   BoxDecoration _plate(BuildContext context) => StagePlate.decoration(
-    // Acerto = glow no rim do palco; idle = chrome neutro.
+    // Acerto = glow de ouro no rim do palco; idle = luz do modo.
     accent: lit ? AppRoles.action : accent,
     lit: lit,
+    tint: true,
     style: Appearance.of(context),
   );
 
@@ -1423,6 +1496,9 @@ class _BlankGap extends StatelessWidget {
   }
 }
 
+/// Ponte: duas margens (trechos) e a tábua entre elas. A ideia escolhida
+/// assenta na tábua — em letra de interface, não de versículo, porque é
+/// leitura nossa e não Escritura. No acerto, a ponte acende de ponta a ponta.
 class _BridgePassages extends StatelessWidget {
   final ExercisePassage? passageA;
   final ExercisePassage? passageB;
@@ -1453,6 +1529,7 @@ class _BridgePassages extends StatelessWidget {
     final size = _verseSizeFor(
       '${passageA?.text ?? ''} ${passageB?.text ?? ''}',
     );
+    final both = passageA != null && passageB != null;
     return _Manuscript(
       accent: accent,
       framed: true,
@@ -1463,22 +1540,20 @@ class _BridgePassages extends StatelessWidget {
         children: [
           if (passageA != null)
             _connectStanza(context, passageA!, accent, size),
-          if (passageA != null && passageB != null) ...[
+          if (both) ...[
             const SizedBox(height: 10),
+            _BridgeRope(state: state, accent: accent),
             ActShake(
               active: state == _OptState.wrong,
-              child: Center(
-                child: _BlankGap(
-                  size: size,
-                  filled: picked,
-                  expected: expected,
-                  state: state,
-                  accent: accent,
-                  pulse: pulse,
-                  onClear: onClear,
-                ),
+              child: _BridgePlank(
+                filled: picked,
+                state: state,
+                accent: accent,
+                pulse: pulse,
+                onClear: onClear,
               ),
             ),
+            _BridgeRope(state: state, accent: accent),
             const SizedBox(height: 10),
           ],
           if (passageB != null)
@@ -1487,6 +1562,153 @@ class _BridgePassages extends StatelessWidget {
       ),
     );
   }
+}
+
+/// Primeira letra maiúscula: as ideias da ponte vêm do banco em caixa mista.
+String _bridgeLabel(String text) {
+  final t = text.trim();
+  if (t.isEmpty) return t;
+  return t[0].toUpperCase() + t.substring(1);
+}
+
+/// Fio que liga a margem à tábua: tênue à espera, aceso no acerto.
+class _BridgeRope extends StatelessWidget {
+  final _OptState state;
+  final Color accent;
+
+  const _BridgeRope({required this.state, required this.accent});
+
+  @override
+  Widget build(BuildContext context) {
+    final color = switch (state) {
+      _OptState.correct => AppRoles.action,
+      _OptState.wrong => AppRoles.error.withValues(alpha: 0.6),
+      _OptState.picked => AppRoles.action.withValues(alpha: 0.6),
+      _ => accent.withValues(alpha: 0.45),
+    };
+    return AnimatedContainer(
+      duration: _ActSkin.anim,
+      curve: AppMotion.enter,
+      width: state == _OptState.correct ? 3 : 2,
+      height: 16,
+      decoration: BoxDecoration(
+        color: color,
+        borderRadius: BorderRadius.circular(AppRadii.pill),
+      ),
+    );
+  }
+}
+
+/// A tábua da ponte. Vazia: encaixe tracejado que pulsa. Cheia: a ideia
+/// escolhida (toque devolve ao banco).
+class _BridgePlank extends StatelessWidget {
+  final String? filled;
+  final _OptState state;
+  final Color accent;
+  final AnimationController pulse;
+  final VoidCallback? onClear;
+
+  const _BridgePlank({
+    required this.filled,
+    required this.state,
+    required this.accent,
+    required this.pulse,
+    this.onClear,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final label = _bridgeLabel(filled ?? '');
+    if (label.isEmpty) {
+      // FadeTransition + camada própria: a tábua pulsa sem repintar o palco.
+      return RepaintBoundary(
+        child: FadeTransition(
+          opacity: pulse.drive(
+            CurveTween(
+              curve: AppMotion.move,
+            ).chain(Tween<double>(begin: 0.55, end: 1)),
+          ),
+          child: CustomPaint(
+            painter: _DashedPillPainter(color: accent),
+            child: SizedBox(
+              width: 200,
+              height: 48,
+              child: Center(
+                child: Text(
+                  '?',
+                  style: AppTypography.title(size: 20, color: accent),
+                ),
+              ),
+            ),
+          ),
+        ),
+      );
+    }
+
+    final skin = _ActSkin.paint(state, accent, Appearance.of(context));
+    return GestureDetector(
+      onTap: state == _OptState.picked ? onClear : null,
+      child: AnimatedContainer(
+        duration: _ActSkin.anim,
+        curve: AppMotion.enter,
+        constraints: const BoxConstraints(minWidth: 200, maxWidth: 300),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 13),
+        decoration: BoxDecoration(
+          color: skin.fill,
+          borderRadius: BorderRadius.circular(AppRadii.pill),
+          border: skin.outline,
+          boxShadow: _ActSkin.plateShadow,
+        ),
+        child: Text(
+          label,
+          textAlign: TextAlign.center,
+          maxLines: 2,
+          overflow: TextOverflow.ellipsis,
+          style: AppTypography.title(size: 16, height: 1.2, color: skin.text)
+              .copyWith(
+                decoration: state == _OptState.wrong
+                    ? TextDecoration.lineThrough
+                    : null,
+                decorationColor: skin.text,
+              ),
+        ),
+      ),
+    );
+  }
+}
+
+class _DashedPillPainter extends CustomPainter {
+  final Color color;
+
+  const _DashedPillPainter({required this.color});
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final rect = (Offset.zero & size).deflate(1);
+    final pill = RRect.fromRectAndRadius(
+      rect,
+      Radius.circular(rect.height / 2),
+    );
+    canvas.drawRRect(pill, Paint()..color = color.withValues(alpha: 0.08));
+    final path = Path()..addRRect(pill);
+    final paint = Paint()
+      ..color = color
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 2
+      ..strokeCap = StrokeCap.round;
+    const dash = 7.0;
+    const gap = 6.0;
+    for (final metric in path.computeMetrics()) {
+      var d = 0.0;
+      while (d < metric.length) {
+        canvas.drawPath(metric.extractPath(d, d + dash), paint);
+        d += dash + gap;
+      }
+    }
+  }
+
+  @override
+  bool shouldRepaint(_DashedPillPainter old) => old.color != color;
 }
 
 /// Cada trecho com a própria referência em cima — como todo palco.
@@ -1753,19 +1975,20 @@ class _VerseMark extends StatelessWidget {
       _OptState.wrong => AppRoles.error,
       _OptState.dimmed => a.text.withValues(alpha: 0.38),
       _OptState.correct => AppRoles.action,
-      _OptState.picked => a.selected,
+      // Escolhida: o amarelo de ação, como a palavra na lacuna.
+      _OptState.picked => AppRoles.action,
       _OptState.idle => a.text,
     };
     final wash = switch (state) {
       _OptState.wrong => color.withValues(alpha: 0.18),
       _OptState.dimmed => Colors.transparent,
       _OptState.correct => color.withValues(alpha: 0.22),
-      _OptState.picked => color.withValues(alpha: 0.12),
+      _OptState.picked => color.withValues(alpha: 0.24),
       _OptState.idle => Colors.transparent,
     };
     final underline = switch (state) {
       _OptState.idle => accent.withValues(alpha: 0.7),
-      _OptState.dimmed || _OptState.picked => Colors.transparent,
+      _OptState.dimmed => Colors.transparent,
       _ => color,
     };
 
@@ -1895,8 +2118,16 @@ class _VfSlab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final skin = _ActSkin.paint(state, accent, Appearance.of(context));
+    final a = Appearance.of(context);
+    final skin = _ActSkin.paint(state, accent, a);
     final wellBorder = skin.wellBorder;
+    // Selecionada: o selo leva o azul do palco (no Claro o palco é papel,
+    // então fica a tinta escura da placa).
+    final pickedWell = state == _OptState.picked && a.onDark;
+    final hotWell = pickedWell ? a.stageFill : skin.text;
+    final hotMark = pickedWell
+        ? AppColors.textOnDark
+        : skin.fill.withValues(alpha: 1);
 
     return ActShake(
       active: state == _OptState.wrong,
@@ -1923,17 +2154,21 @@ class _VfSlab extends StatelessWidget {
                 width: 30,
                 height: 30,
                 alignment: Alignment.center,
+                // Aceso: o selo inverte (poço cheio na tinta da placa) — o
+                // contorno fino sumia na placa clara da seleção.
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: skin.well,
-                  border: Border.all(
-                    color: wellBorder,
-                    width: skin.hot ? 0 : 1.6,
-                  ),
+                  color: skin.hot ? hotWell : skin.well,
+                  border: skin.hot
+                      ? null
+                      : Border.all(color: wellBorder, width: 1.6),
                 ),
                 child: Text(
                   mark,
-                  style: AppTypography.title(size: 14, color: skin.wellFg),
+                  style: AppTypography.title(
+                    size: 14,
+                    color: skin.hot ? hotMark : skin.wellFg,
+                  ),
                 ),
               ),
               const SizedBox(height: 8),

@@ -18,6 +18,27 @@ class RelatedVerse {
   }
 }
 
+/// Fato literal da cena e o trecho do versículo que o prova (banco V3).
+class StudyFact {
+  final String text;
+  final String evidenceRef;
+  final String evidenceSpan;
+
+  const StudyFact({
+    required this.text,
+    this.evidenceRef = '',
+    this.evidenceSpan = '',
+  });
+
+  factory StudyFact.fromMap(Map<String, dynamic> map) {
+    return StudyFact(
+      text: map['text'] as String? ?? '',
+      evidenceRef: map['evidenceRef'] as String? ?? '',
+      evidenceSpan: map['evidenceSpan'] as String? ?? '',
+    );
+  }
+}
+
 class MissionStudy {
   final String passageRef;
   final String passageText;
@@ -27,6 +48,7 @@ class MissionStudy {
   final String focusQuestion;
   final List<String> reflectionPrompts;
   final List<RelatedVerse> relatedVerses;
+  final List<StudyFact> facts;
   final String? slug;
 
   const MissionStudy({
@@ -38,6 +60,7 @@ class MissionStudy {
     required this.focusQuestion,
     required this.reflectionPrompts,
     this.relatedVerses = const [],
+    this.facts = const [],
     this.slug,
   });
 
@@ -56,6 +79,11 @@ class MissionStudy {
           .whereType<Map>()
           .map((e) => RelatedVerse.fromMap(Map<String, dynamic>.from(e)))
           .where((v) => v.reference.isNotEmpty)
+          .toList(),
+      facts: (remote['facts'] as List? ?? [])
+          .whereType<Map>()
+          .map((e) => StudyFact.fromMap(Map<String, dynamic>.from(e)))
+          .where((f) => f.text.trim().isNotEmpty)
           .toList(),
       slug: slug ?? remote['slug'] as String?,
     );
@@ -85,13 +113,30 @@ class MissionStudy {
     return StudyOverlay.instance.reflectionPrompts(s) ?? reflectionPrompts;
   }
 
+  /// Fatos no idioma do app. O overlay traz só o texto, na mesma ordem;
+  /// o trecho que prova fica no PT do palco.
+  List<StudyFact> get localizedFacts {
+    final s = slug;
+    final texts = s == null
+        ? null
+        : StudyOverlay.instance.stringList(s, 'facts');
+    if (texts == null || texts.length != facts.length) return facts;
+    return [
+      for (var i = 0; i < facts.length; i++)
+        StudyFact(
+          text: texts[i],
+          evidenceRef: facts[i].evidenceRef,
+          evidenceSpan: facts[i].evidenceSpan,
+        ),
+    ];
+  }
+
   /// Síncrono: usa o cache já carregado pelo catálogo.
   static MissionStudy? forSlug(String slug) {
     final remote = ContentCatalogService.instance.studiesCache?[slug];
     if (remote == null) return null;
     return MissionStudy.fromMap(remote, slug: slug);
   }
-
 
   /// Texto do versículo para releitura no erro (por referência).
   static String? verseText(String? ref) {

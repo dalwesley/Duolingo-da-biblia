@@ -2062,6 +2062,12 @@ class AppLocalizationsPt extends AppLocalizations {
   String get exerciseHint => 'Dica';
 
   @override
+  String get exerciseHintShowHint => 'Toque para ver a dica';
+
+  @override
+  String get exerciseHintShowQuestion => 'Toque para ver a pergunta';
+
+  @override
   String get exerciseHintUsed => 'Dica usada';
 
   @override
@@ -3884,6 +3890,9 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get lessonExitTitle => 'Sair da cena?';
+
+  @override
+  String get lessonFactsLabel => 'O que o texto diz';
 
   @override
   String get lessonInsightSubtitle => 'O que ficou';

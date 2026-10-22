@@ -50,13 +50,24 @@ são matéria-prima do tema, não se usam direto em tela nova.
 
 **Família da marca** (logo + nuvem): navy, caminho branco, azul `#51AEF0`,
 um ouro `#F4A80C`. O ouro avança (o botão) e conta os passos. O azul é a
-vida. Modos e reinos só no mapa e no seletor. Medalhas só no cofre.
+vida. Reinos só no mapa e no seletor; o modo também acende a cena. Medalhas só no cofre.
 
 Regras (gesto na cena):
 - Idle = poço escuro · Seleção = branco · Acerto = ouro · Erro = vermelho.
 - Sem azul/glow nos gestos da partida (glow = lobby social, não placa de resposta).
-- Cor do modo só no mapa / seletor.
-- Um CTA: `CopperCta` ouro.
+- Cor do modo = luz do palco na cena (2026-10-21): borda e luz do palco,
+  rótulo do gesto, lacuna e segmento atual do progresso. Nunca na placa de
+  resposta (acerto continua ouro, erro vermelho). No Claro, tom escuro do modo.
+- Um CTA: `CopperCta` ouro. O Verificar fica sempre ouro (antes da escolha
+  só não responde) e dá um pulinho ao armar; a Dica é tinta de legenda.
+- O enunciado é fala do Anan: Anan pequeno (feliz) à esquerda e a pergunta
+  no balão claro (`AnanSpeechBubble`, `tail: AnanTail.left`), só o texto.
+- Lâmpadas: lanterna no azul de presença; chama e brilho da acesa em âmbar
+  (`AppRoles.lamp`); apagadas ficam no contorno fraco.
+- Abertura da cena = mesmo cabeçalho (`AnanSideSpeech`: título + nota no balão)
+  e mesmo palco dos gestos (luz do modo, versículo centrado, ref neutra).
+- Barra da cena: título = tipo do gesto (Palavra, Afirmação…), sem "x/6"
+  nem modo; os passos finos ficam dentro da barra (`TopBar.bottom`). Pulinho a cada escolha; a cara do veredito fica no diálogo.
 - A cena é o único lugar com placas claras (respostas em marfim — o "palco").
 - Cenário de marca (`BrandTrail` / splash): splash, onboarding, celebração;
   **lobby** (Hoje / Juntos) pode levar trilha velada. Bíblia / Ajustes /
@@ -239,7 +250,7 @@ como nome de coisa: não é área, não é progresso salvo, não é assinatura.
 | Conceito | Termo | Não usar |
 |---|---|---|
 | Unidade de estudo | **cena** | missão, lição, passo |
-| Parte de uma cena (cada exercício) | **pergunta** ("Pergunta 2 de 6", "6 perguntas") | ato |
+| Parte de uma cena (cada exercício) | **pergunta** ("Pergunta 2 de 5", "5 perguntas") | ato |
 | Grupo de cenas dentro da trilha (módulo) | **etapa** ("Etapa II") | cena (colide com a unidade) |
 | Área de trilhas (AT, NT, Vida cristã, Teologia) | **área** | caminho, reino |
 | Pontos | **passos** ("+40 passos") | pontos, XP; "passo" como sinônimo de cena; "primeiros passos" como marco |

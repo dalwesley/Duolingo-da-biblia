@@ -735,6 +735,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   }
 
   Widget _centerBeat({
+    required bool compact,
     required ProgressService progress,
     required bool isBoss,
     required int pct,
@@ -748,8 +749,10 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     if (_hook != null) {
       return _TomorrowBeat(
         hook: _hook!,
+        compact: compact,
         streak: progress.streak,
         goal: progress.settings.streakGoal,
+        reminderHour: progress.settings.reminderHour,
       );
     }
     if (!_hookResolved) {
@@ -849,277 +852,281 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                 SafeArea(
                   child: LayoutBuilder(
                     builder: (context, constraints) {
-                      final compact = constraints.maxHeight < 780;
-                      return Padding(
-                        padding: EdgeInsets.fromLTRB(
-                          24,
-                          compact ? 8 : 12,
-                          24,
-                          12,
+                      final compact = constraints.maxHeight < 820;
+                      // A nuvem cede a altura que falta: em tela baixa,
+                      // herói, números, Amanhã e botões cabem sem rolar.
+                      final cloudSize = math
+                          .min(
+                            MediaQuery.sizeOf(context).width * 0.52,
+                            constraints.maxHeight * (compact ? 0.2 : 0.24),
+                          )
+                          .clamp(compact ? 112.0 : 150.0, 228.0);
+                      final hero = _HeroBeat(
+                        cloudKey: _cloudRain ? _cloudKey : null,
+                        cloudSize: cloudSize,
+                        glyph: _heroGlyph,
+                        accent: heroAccent,
+                        perfect: widget.perfect,
+                        isBoss: widget.isBoss,
+                        compact: compact || (_hook?.hasEcho ?? false),
+                        pulse: _pulse,
+                        scale: _heroScale,
+                        claimScale: _claimScale,
+                        kicker: _kicker,
+                        headline: _headline,
+                        insight: (_hook?.hasEcho ?? false) ? null : _todayLine,
+                        medalLine: _medalLine,
+                        count: _countProgress,
+                        awardedSteps: _awardedSteps,
+                        streak: progress.streak,
+                        streakFrom: _streakUp ? _streakBefore : null,
+                        streakUp: _streakUp,
+                        streakGoal: progress.settings.streakGoal,
+                        pct: pct,
+                        denseStats: true,
+                        mascot:
+                            widget.failed ||
+                                compact ||
+                                (_hook?.hasEcho ?? false)
+                            ? null
+                            : MascotMessages.celebration(
+                                isBoss: isBoss,
+                                pct: pct,
+                                perfect: widget.perfect,
+                                isReplay: widget.isReplay,
+                              ),
+                      );
+                      Widget titled(Widget child) => FadeTransition(
+                        opacity: _titleOpacity,
+                        child: SlideTransition(
+                          position: _titleSlide,
+                          child: child,
                         ),
-                        child: Column(
-                          children: [
-                            FadeTransition(
-                              opacity: _titleOpacity,
-                              child: SlideTransition(
-                                position: _titleSlide,
-                                child: _newSeal != null
-                                    ? ScaleTransition(
-                                        scale: _heroScale,
-                                        child: RepaintBoundary(
-                                          key: _sealShareKey,
-                                          child: ShareSealCard(seal: _newSeal!),
+                      );
+                      final topBlocks = <Widget>[
+                        if (_newSeal != null)
+                          titled(
+                            ScaleTransition(
+                              scale: _heroScale,
+                              child: RepaintBoundary(
+                                key: _sealShareKey,
+                                child: ShareSealCard(seal: _newSeal!),
+                              ),
+                            ),
+                          )
+                        else
+                          for (final block in hero.blocks(context))
+                            titled(block),
+                        FadeTransition(
+                          opacity: _bodyOpacity,
+                          child: SlideTransition(
+                            position: _bodySlide,
+                            child: GlassCard(
+                              color: _CelebrationPlate.fill,
+                              tint: AppRoles.presence,
+                              elevated: true,
+                              padding: EdgeInsets.fromLTRB(
+                                (_hook?.hasEcho ?? false) ? 22 : 20,
+                                (_hook?.hasEcho ?? false)
+                                    ? (compact ? 22 : 28)
+                                    : (compact ? 16 : 20),
+                                (_hook?.hasEcho ?? false) ? 22 : 20,
+                                (_hook?.hasEcho ?? false)
+                                    ? (compact ? 20 : 24)
+                                    : (compact ? 14 : 18),
+                              ),
+                              child: _centerBeat(
+                                compact: compact,
+                                progress: progress,
+                                isBoss: isBoss,
+                                pct: pct,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ];
+                      const pad = EdgeInsets.fromLTRB(24, 8, 24, 12);
+                      // Itens espalhados por igual: o mesmo vão entre nuvem,
+                      // números, sequência, Amanhã e botões. Se não couber,
+                      // rola em vez de cortar.
+                      return SingleChildScrollView(
+                        padding: pad,
+                        child: ConstrainedBox(
+                          constraints: BoxConstraints(
+                            minHeight: constraints.maxHeight - pad.vertical,
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              for (final block in topBlocks)
+                                Padding(
+                                  padding: const EdgeInsets.only(bottom: 10),
+                                  child: block,
+                                ),
+                              if (showModeUp && _newSeal == null)
+                                Padding(
+                                  padding: const EdgeInsets.only(bottom: 8),
+                                  child: FadeTransition(
+                                    opacity: _statsOpacity,
+                                    child: SlideTransition(
+                                      position: _statsSlide,
+                                      child: _ModeUpgradeCard(
+                                        trailComplete: _trailComplete,
+                                        currentLabel:
+                                            _currentMode?.labelPt ??
+                                            TrailDifficulty.semente.labelPt,
+                                        nextLabel: _nextMeta!.label,
+                                        nextSubtitle: _nextMeta!.subtitle,
+                                        onTryStep: () => _acceptNextMode(
+                                          replayThisStep: true,
                                         ),
-                                      )
-                                    : _HeroBeat(
-                                        cloudKey: _cloudRain ? _cloudKey : null,
-                                        glyph: _heroGlyph,
-                                        accent: heroAccent,
-                                        perfect: widget.perfect,
-                                        isBoss: widget.isBoss,
-                                        compact:
-                                            compact ||
-                                            (_hook?.hasEcho ?? false),
-                                        pulse: _pulse,
-                                        scale: _heroScale,
-                                        claimScale: _claimScale,
-                                        kicker: _kicker,
-                                        headline: _headline,
-                                        insight: (_hook?.hasEcho ?? false)
-                                            ? null
-                                            : _todayLine,
-                                        medalLine: _medalLine,
-                                        count: _countProgress,
-                                        awardedSteps: _awardedSteps,
-                                        streak: progress.streak,
-                                        streakFrom: _streakUp
-                                            ? _streakBefore
+                                        onSwitchTrail: _trailComplete
+                                            ? () => _acceptNextMode(
+                                                replayThisStep: false,
+                                              )
                                             : null,
-                                        streakUp: _streakUp,
-                                        streakGoal:
-                                            progress.settings.streakGoal,
-                                        pct: pct,
-                                        denseStats: true,
-                                        mascot:
-                                            widget.failed ||
-                                                compact ||
-                                                (_hook?.hasEcho ?? false)
-                                            ? null
-                                            : MascotMessages.celebration(
-                                                isBoss: isBoss,
-                                                pct: pct,
-                                                perfect: widget.perfect,
-                                                isReplay: widget.isReplay,
-                                              ),
                                       ),
-                              ),
-                            ),
-                            Expanded(
-                              child: FadeTransition(
-                                opacity: _bodyOpacity,
+                                    ),
+                                  ),
+                                ),
+                              if (_closedCorner != null)
+                                Padding(
+                                  padding: const EdgeInsets.only(bottom: 8),
+                                  child: _CornerClosedBeat(
+                                    challenge: _closedCorner!,
+                                    myUid: context.read<BackendService>().uid,
+                                  ),
+                                ),
+                              FadeTransition(
+                                opacity: _ctaOpacity,
                                 child: SlideTransition(
-                                  position: _bodySlide,
-                                  child: Center(
-                                    child: SingleChildScrollView(
-                                      padding: const EdgeInsets.symmetric(
-                                        vertical: 10,
-                                      ),
-                                      child: GlassCard(
-                                        color: _CelebrationPlate.fill,
-                                        tint: AppRoles.presence,
-                                        elevated: true,
-                                        padding: EdgeInsets.fromLTRB(
-                                          (_hook?.hasEcho ?? false) ? 22 : 20,
-                                          (_hook?.hasEcho ?? false)
-                                              ? (compact ? 22 : 28)
-                                              : (compact ? 16 : 20),
-                                          (_hook?.hasEcho ?? false) ? 22 : 20,
-                                          (_hook?.hasEcho ?? false)
-                                              ? (compact ? 20 : 24)
-                                              : (compact ? 14 : 18),
-                                        ),
-                                        child: _centerBeat(
-                                          progress: progress,
-                                          isBoss: isBoss,
-                                          pct: pct,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ),
-                            if (showModeUp && _newSeal == null)
-                              Padding(
-                                padding: const EdgeInsets.only(bottom: 8),
-                                child: FadeTransition(
-                                  opacity: _statsOpacity,
-                                  child: SlideTransition(
-                                    position: _statsSlide,
-                                    child: _ModeUpgradeCard(
-                                      trailComplete: _trailComplete,
-                                      currentLabel:
-                                          _currentMode?.labelPt ??
-                                          TrailDifficulty.semente.labelPt,
-                                      nextLabel: _nextMeta!.label,
-                                      nextSubtitle: _nextMeta!.subtitle,
-                                      onTryStep: () =>
-                                          _acceptNextMode(replayThisStep: true),
-                                      onSwitchTrail: _trailComplete
-                                          ? () => _acceptNextMode(
-                                              replayThisStep: false,
-                                            )
-                                          : null,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            if (_closedCorner != null)
-                              Padding(
-                                padding: const EdgeInsets.only(bottom: 8),
-                                child: _CornerClosedBeat(
-                                  challenge: _closedCorner!,
-                                  myUid: context.read<BackendService>().uid,
-                                ),
-                              ),
-                            FadeTransition(
-                              opacity: _ctaOpacity,
-                              child: SlideTransition(
-                                position: _ctaSlide,
-                                child: Column(
-                                  children: [
-                                    if (progress.showStreakRepairOffer) ...[
-                                      const StreakRepairCelebrationCard(),
-                                      const SizedBox(height: AppSpace.md),
-                                    ],
-                                    // Meta do dia ainda aberta (ritmo 2–3):
-                                    // o principal é seguir; "até amanhã"
-                                    // vira secundário.
-                                    if (widget.failed) ...[
-                                      CopperCta(
-                                        label: context.l10n.commonTryAgain,
-                                        onTap: _retryScene,
-                                      ),
-                                      const SizedBox(height: 10),
-                                      GhostCta(
-                                        label:
-                                            context.l10n.celebrationBackToMap,
-                                        onTap: () =>
-                                            _leaveCelebration(toTrailMap: true),
-                                      ),
-                                    ] else if (_hook != null &&
-                                        progress.missionsToday <
-                                            progress.settings.dailyGoal) ...[
-                                      CopperCta(
-                                        label: context.l10n.commonNextScene,
-                                        onTap: _openTomorrow,
-                                      ),
-                                      const SizedBox(height: 10),
-                                      GhostCta(
-                                        label: context.l10n.celebrationBackHome,
-                                        onTap: () => _leaveCelebration(
-                                          toTrailMap: false,
-                                        ),
-                                      ),
-                                    ] else ...[
-                                      if (!widget.failed) ...[
-                                        Text(
-                                          context.l10n
-                                              .celebrationSeeYouTomorrow(
-                                                progress.settings.reminderHour,
-                                              ),
-                                          textAlign: TextAlign.center,
-                                          style: AppTypography.body(
-                                            size: 13,
-                                            weight: FontWeight.w700,
-                                            color: appearance.text,
-                                          ),
-                                        ),
-                                        const SizedBox(height: 10),
+                                  position: _ctaSlide,
+                                  child: Column(
+                                    children: [
+                                      if (progress.showStreakRepairOffer) ...[
+                                        const StreakRepairCelebrationCard(),
+                                        const SizedBox(height: AppSpace.md),
                                       ],
-                                      CopperCta(
-                                        label: !_hookResolved || _hook != null
-                                            ? context.l10n.celebrationBackHome
-                                            : (EntryTrails.continuesTo
-                                                      .containsKey(
-                                                        widget.missionSlug,
-                                                      )
-                                                  ? context.l10n.commonContinue
-                                                  : context
-                                                        .l10n
-                                                        .celebrationBackToMap),
-                                        trailing: null,
-                                        onTap: () => _leaveCelebration(
-                                          toTrailMap:
-                                              _hookResolved && _hook == null,
+                                      // Meta do dia ainda aberta (ritmo 2–3):
+                                      // o principal é seguir; "até amanhã"
+                                      // vira secundário.
+                                      if (widget.failed) ...[
+                                        CopperCta(
+                                          label: context.l10n.commonTryAgain,
+                                          onTap: _retryScene,
                                         ),
-                                      ),
-                                      if (_hook != null) ...[
                                         const SizedBox(height: 10),
                                         GhostCta(
+                                          label:
+                                              context.l10n.celebrationBackToMap,
+                                          onTap: () => _leaveCelebration(
+                                            toTrailMap: true,
+                                          ),
+                                        ),
+                                      ] else if (_hook != null &&
+                                          progress.missionsToday <
+                                              progress.settings.dailyGoal) ...[
+                                        CopperCta(
                                           label: context.l10n.commonNextScene,
-                                          fill: _CelebrationPlate.fill,
-                                          foreground: _CelebrationPlate.ink,
-                                          borderColor: _CelebrationPlate.line
-                                              .withValues(alpha: 0.55),
                                           onTap: _openTomorrow,
+                                        ),
+                                        const SizedBox(height: 10),
+                                        GhostCta(
+                                          label:
+                                              context.l10n.celebrationBackHome,
+                                          onTap: () => _leaveCelebration(
+                                            toTrailMap: false,
+                                          ),
+                                        ),
+                                      ] else ...[
+                                        // "Te vejo amanhã" mora no cartão.
+                                        CopperCta(
+                                          label: !_hookResolved || _hook != null
+                                              ? context.l10n.celebrationBackHome
+                                              : (EntryTrails.continuesTo
+                                                        .containsKey(
+                                                          widget.missionSlug,
+                                                        )
+                                                    ? context
+                                                          .l10n
+                                                          .commonContinue
+                                                    : context
+                                                          .l10n
+                                                          .celebrationBackToMap),
+                                          trailing: null,
+                                          onTap: () => _leaveCelebration(
+                                            toTrailMap:
+                                                _hookResolved && _hook == null,
+                                          ),
+                                        ),
+                                        if (_hook != null) ...[
+                                          const SizedBox(height: 10),
+                                          GhostCta(
+                                            label: context.l10n.commonNextScene,
+                                            fill: _CelebrationPlate.fill,
+                                            foreground: _CelebrationPlate.ink,
+                                            borderColor: _CelebrationPlate.line
+                                                .withValues(alpha: 0.55),
+                                            onTap: _openTomorrow,
+                                          ),
+                                        ],
+                                      ],
+                                      _CelebrationSecondaryRow(
+                                        appearance: appearance,
+                                        onShareInsight:
+                                            (_todayLine ?? '').trim().isEmpty ||
+                                                widget.failed
+                                            ? null
+                                            : () => shareInsightImage(
+                                                boundaryKey: _insightShareKey,
+                                                insight: _todayLine!,
+                                                verseRef: _hook?.hookRef,
+                                              ),
+                                        onShareSeal: _newSeal == null
+                                            ? null
+                                            : () => shareSealImage(
+                                                boundaryKey: _sealShareKey,
+                                                seal: _newSeal!,
+                                              ),
+                                        shareStreak:
+                                            (_todayLine ?? '').trim().isEmpty &&
+                                                _newSeal == null &&
+                                                progress.streak > 0 &&
+                                                !progress.showStreakRepairOffer
+                                            ? ShareStreakButton(
+                                                streak: progress.streak,
+                                                userName: progress.userName,
+                                                steps: progress.steps,
+                                                asLink: true,
+                                              )
+                                            : null,
+                                        onHome: () => _leaveCelebration(
+                                          toTrailMap: false,
+                                        ),
+                                        hideHome: true,
+                                      ),
+                                      if ((_trailComplete ||
+                                              (_hook?.trailJustCompleted ??
+                                                  false)) &&
+                                          context
+                                              .watch<SubscriptionService>()
+                                              .supportConfigured) ...[
+                                        const SizedBox(height: 4),
+                                        TextCta(
+                                          label: context
+                                              .l10n
+                                              .celebrationHelpContinue,
+                                          leading: CinematicGlyph.gift,
+                                          color: appearance.textFaint,
+                                          onTap: () => openSupport(context),
                                         ),
                                       ],
                                     ],
-                                    _CelebrationSecondaryRow(
-                                      appearance: appearance,
-                                      onShareInsight:
-                                          (_todayLine ?? '').trim().isEmpty ||
-                                              widget.failed
-                                          ? null
-                                          : () => shareInsightImage(
-                                              boundaryKey: _insightShareKey,
-                                              insight: _todayLine!,
-                                              verseRef: _hook?.hookRef,
-                                            ),
-                                      onShareSeal: _newSeal == null
-                                          ? null
-                                          : () => shareSealImage(
-                                              boundaryKey: _sealShareKey,
-                                              seal: _newSeal!,
-                                            ),
-                                      shareStreak:
-                                          (_todayLine ?? '').trim().isEmpty &&
-                                              _newSeal == null &&
-                                              progress.streak > 0 &&
-                                              !progress.showStreakRepairOffer
-                                          ? ShareStreakButton(
-                                              streak: progress.streak,
-                                              userName: progress.userName,
-                                              steps: progress.steps,
-                                              asLink: true,
-                                            )
-                                          : null,
-                                      onHome: () =>
-                                          _leaveCelebration(toTrailMap: false),
-                                      hideHome: true,
-                                    ),
-                                    if ((_trailComplete ||
-                                            (_hook?.trailJustCompleted ??
-                                                false)) &&
-                                        context
-                                            .watch<SubscriptionService>()
-                                            .supportConfigured) ...[
-                                      const SizedBox(height: 4),
-                                      TextCta(
-                                        label: context
-                                            .l10n
-                                            .celebrationHelpContinue,
-                                        leading: CinematicGlyph.gift,
-                                        color: appearance.textFaint,
-                                        onTap: () => openSupport(context),
-                                      ),
-                                    ],
-                                  ],
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       );
                     },
@@ -1152,6 +1159,7 @@ abstract final class _CelebrationPlate {
 /// Topo da celebração — emblema, vitória e os três cartões da primeira tela.
 class _HeroBeat extends StatelessWidget {
   final Key? cloudKey;
+  final double cloudSize;
   final CinematicGlyph glyph;
   final Color accent;
   final bool perfect;
@@ -1178,6 +1186,7 @@ class _HeroBeat extends StatelessWidget {
 
   const _HeroBeat({
     this.cloudKey,
+    this.cloudSize = 200,
     required this.glyph,
     required this.accent,
     required this.perfect,
@@ -1201,8 +1210,9 @@ class _HeroBeat extends StatelessWidget {
     this.mascot,
   });
 
-  @override
-  Widget build(BuildContext context) {
+  /// Os blocos do herói, sem respiro entre eles: a tela de celebração os
+  /// espalha por igual na altura (nuvem, números, sequência, recado).
+  List<Widget> blocks(BuildContext context) {
     final a = Appearance.of(context);
     final emblemSize = compact ? 72.0 : 118.0;
     final iconSize = compact ? 28.0 : 44.0;
@@ -1211,145 +1221,152 @@ class _HeroBeat extends StatelessWidget {
     // medalha saem: a cara já diz o resultado.
     final successCloud = glyph != CinematicGlyph.lamp;
     final showKicker = !successCloud && !perfect && kicker.trim().isNotEmpty;
-    return Column(
-      children: [
-        ScaleTransition(
-          scale: scale,
-          child: successCloud
-              ? CloudMascot(
-                  key: cloudKey,
-                  face: CloudFace.sucesso,
-                  size: (MediaQuery.sizeOf(context).width * 0.52).clamp(
-                    176.0,
-                    228.0,
-                  ),
-                )
-              : RepaintBoundary(
-                  child: AnimatedBuilder(
-                    animation: pulse,
-                    builder: (context, child) {
-                      final breath =
-                          (math.sin(pulse.value * math.pi * 2) + 1) / 2;
-                      return _CelebrationEmblem(
-                        accent: accent,
-                        perfect: perfect,
-                        breath: breath,
-                        size: emblemSize,
-                        child: child!,
-                      );
-                    },
-                    child: RepaintBoundary(
-                      child: CinematicIcon(
-                        glyph: glyph,
-                        size: iconSize,
-                        accent: perfect
-                            ? AppColors.inkOnAccent
-                            : AppColors.night,
-                        framed: false,
+    return [
+      Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          ScaleTransition(
+            scale: scale,
+            child: successCloud
+                ? CloudMascot(
+                    key: cloudKey,
+                    face: CloudFace.sucesso,
+                    size: cloudSize,
+                  )
+                : RepaintBoundary(
+                    child: AnimatedBuilder(
+                      animation: pulse,
+                      builder: (context, child) {
+                        final breath =
+                            (math.sin(pulse.value * math.pi * 2) + 1) / 2;
+                        return _CelebrationEmblem(
+                          accent: accent,
+                          perfect: perfect,
+                          breath: breath,
+                          size: emblemSize,
+                          child: child!,
+                        );
+                      },
+                      child: RepaintBoundary(
+                        child: CinematicIcon(
+                          glyph: glyph,
+                          size: iconSize,
+                          accent: perfect
+                              ? AppColors.inkOnAccent
+                              : AppColors.night,
+                          framed: false,
+                        ),
                       ),
                     ),
                   ),
-                ),
-        ),
-        if (showKicker) ...[
-          SizedBox(height: compact ? 6 : 12),
-          SectionLabel(kicker),
-        ],
-        if (!successCloud) ...[
-          SizedBox(height: showKicker ? 6 : (compact ? 8 : 12)),
-          Text(
-            headline,
-            textAlign: TextAlign.center,
-            style: AppTypography.display(
-              size: compact ? 20 : 28,
-              height: 1.12,
-              weight: FontWeight.w900,
-              color: a.text,
+          ),
+          if (showKicker) ...[
+            SizedBox(height: compact ? 6 : 12),
+            SectionLabel(kicker),
+          ],
+          if (!successCloud) ...[
+            SizedBox(height: showKicker ? 6 : (compact ? 8 : 12)),
+            Text(
+              headline,
+              textAlign: TextAlign.center,
+              style: AppTypography.display(
+                size: compact ? 20 : 28,
+                height: 1.12,
+                weight: FontWeight.w900,
+                color: a.text,
+              ),
             ),
-          ),
-        ],
-        if ((insight ?? '').trim().isNotEmpty) ...[
-          const SizedBox(height: 8),
-          Text(
-            insight!.trim(),
-            textAlign: TextAlign.center,
-            maxLines: 2,
-            overflow: TextOverflow.ellipsis,
-            style: AppTypography.body(
-              size: 14,
-              weight: FontWeight.w700,
-              height: 1.35,
-              color: a.textSecondary,
+          ],
+          if ((insight ?? '').trim().isNotEmpty) ...[
+            const SizedBox(height: 8),
+            Text(
+              insight!.trim(),
+              textAlign: TextAlign.center,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              style: AppTypography.body(
+                size: 14,
+                weight: FontWeight.w700,
+                height: 1.35,
+                color: a.textSecondary,
+              ),
             ),
-          ),
+          ],
+          if (isBoss) ...[
+            const SizedBox(height: 10),
+            _ComboChip(
+              label: context.l10n.crossingChip,
+              color: AppRoles.presence,
+            ),
+          ],
+          if (!successCloud && (medalLine ?? '').trim().isNotEmpty) ...[
+            const SizedBox(height: 8),
+            _MedalProgressLine(text: medalLine!.trim()),
+          ],
         ],
-        if (isBoss) ...[
-          const SizedBox(height: 10),
-          _ComboChip(
-            label: context.l10n.crossingChip,
-            color: AppRoles.presence,
-          ),
-        ],
-        if (!successCloud && (medalLine ?? '').trim().isNotEmpty) ...[
-          const SizedBox(height: 8),
-          _MedalProgressLine(text: medalLine!.trim()),
-        ],
-        SizedBox(height: successCloud ? 16 : (compact || denseStats ? 10 : 16)),
-        AnimatedBuilder(
-          animation: count,
-          builder: (context, _) {
-            final t = count.value;
-            final stepsShown = (awardedSteps * t).round();
-            final from = streakFrom;
-            final streakShown = from != null
-                ? (from + (streak - from) * t).round()
-                : (streak * t).round();
-            final pctShown = (pct * t).round();
-            return Row(
-              children: [
-                Expanded(
-                  child: _StatCard(
-                    glyph: CinematicGlyph.path,
-                    value: '+$stepsShown',
-                    label: context.l10n.celebrationStatSteps,
-                    color: AppRoles.reward,
-                    dense: denseStats || compact,
-                    claimScale: claimScale,
-                  ),
+      ),
+      AnimatedBuilder(
+        animation: count,
+        builder: (context, _) {
+          final t = count.value;
+          final stepsShown = (awardedSteps * t).round();
+          final from = streakFrom;
+          final streakShown = from != null
+              ? (from + (streak - from) * t).round()
+              : (streak * t).round();
+          final pctShown = (pct * t).round();
+          return Row(
+            children: [
+              Expanded(
+                child: _StatCard(
+                  glyph: CinematicGlyph.path,
+                  value: '+$stepsShown',
+                  label: context.l10n.celebrationStatSteps,
+                  color: AppRoles.reward,
+                  dense: denseStats || compact,
+                  claimScale: claimScale,
                 ),
-                SizedBox(width: denseStats || compact ? 6 : AppSpace.sm),
-                Expanded(
-                  child: _StatCard(
-                    glyph: CinematicGlyph.flame,
-                    value: '$streakShown',
-                    label: streakShown == 1
-                        ? context.l10n.celebrationStatDay
-                        : context.l10n.celebrationStatDays,
-                    color: AppRoles.streak,
-                    dense: denseStats || compact,
-                  ),
+              ),
+              SizedBox(width: denseStats || compact ? 6 : AppSpace.sm),
+              Expanded(
+                child: _StatCard(
+                  glyph: CinematicGlyph.flame,
+                  value: '$streakShown',
+                  label: streakShown == 1
+                      ? context.l10n.celebrationStatDay
+                      : context.l10n.celebrationStatDays,
+                  color: AppRoles.streak,
+                  dense: denseStats || compact,
                 ),
-                SizedBox(width: denseStats || compact ? 6 : AppSpace.sm),
-                Expanded(
-                  child: _StatCard(
-                    glyph: CinematicGlyph.check,
-                    value: '$pctShown%',
-                    label: context.l10n.celebrationStatAccuracy,
-                    color: AppRoles.success,
-                    dense: denseStats || compact,
-                  ),
+              ),
+              SizedBox(width: denseStats || compact ? 6 : AppSpace.sm),
+              Expanded(
+                child: _StatCard(
+                  glyph: CinematicGlyph.check,
+                  value: '$pctShown%',
+                  label: context.l10n.celebrationStatAccuracy,
+                  color: AppRoles.success,
+                  dense: denseStats || compact,
                 ),
-              ],
-            );
-          },
-        ),
-        if (streakUp) ...[
-          SizedBox(height: compact ? 8 : 12),
-          _StreakIgnite(streak: streak, goal: streakGoal),
-        ],
-        if ((mascot ?? '').trim().isNotEmpty) ...[
-          SizedBox(height: compact ? 10 : 14),
-          MascotBubble(message: mascot!.trim()),
+              ),
+            ],
+          );
+        },
+      ),
+      if (streakUp) _StreakIgnite(streak: streak, goal: streakGoal),
+      if ((mascot ?? '').trim().isNotEmpty)
+        MascotBubble(message: mascot!.trim()),
+    ];
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final parts = blocks(context);
+    return Column(
+      children: [
+        for (var i = 0; i < parts.length; i++) ...[
+          if (i > 0) SizedBox(height: compact ? 10 : 14),
+          parts[i],
         ],
       ],
     );
@@ -1564,19 +1581,30 @@ class _TomorrowKicker extends StatelessWidget {
 /// Spoiler da próxima cena — centro da mesma tela.
 class _TomorrowBeat extends StatelessWidget {
   final TomorrowHook hook;
+
+  /// Tela baixa: título e frase um passo menores, respiros mais curtos.
+  final bool compact;
   final int streak;
   final int goal;
+  final int reminderHour;
 
   const _TomorrowBeat({
     required this.hook,
+    this.compact = false,
     required this.streak,
     required this.goal,
+    required this.reminderHour,
   });
 
   @override
   Widget build(BuildContext context) {
     if (hook.hasEcho) {
-      return _EchoBeat(hook: hook, streak: streak, goal: goal);
+      return _EchoBeat(
+        hook: hook,
+        streak: streak,
+        goal: goal,
+        reminderHour: reminderHour,
+      );
     }
     final pull = hook.trailer;
     final ref = (hook.hookRef ?? '').trim();
@@ -1604,33 +1632,33 @@ class _TomorrowBeat extends StatelessWidget {
             ),
           ),
         ],
-        const SizedBox(height: 16),
+        SizedBox(height: compact ? 10 : 16),
         Text(
           hook.title,
           textAlign: TextAlign.center,
           style: AppTypography.display(
-            size: 28,
+            size: compact ? 24 : 28,
             height: 1.08,
             weight: FontWeight.w900,
             color: _CelebrationPlate.ink,
           ),
         ),
         if (pull.isNotEmpty) ...[
-          const SizedBox(height: 12),
+          SizedBox(height: compact ? 8 : 12),
           Text(
             pull,
             textAlign: TextAlign.center,
             style: AppTypography.verse(
-              size: 18,
-              height: 1.38,
+              size: compact ? 16 : 18,
+              height: compact ? 1.3 : 1.38,
               fontStyle: FontStyle.italic,
               color: _CelebrationPlate.ink,
             ),
           ),
         ],
-        const SizedBox(height: 16),
+        SizedBox(height: compact ? 10 : 16),
         Text(
-          hook.promiseLine,
+          hook.promiseLine(reminderHour: reminderHour),
           textAlign: TextAlign.center,
           style: AppTypography.body(
             size: 14,
@@ -1639,7 +1667,7 @@ class _TomorrowBeat extends StatelessWidget {
           ),
         ),
         if (CommitStrip.visible(streak: streak, goal: goal)) ...[
-          const SizedBox(height: 18),
+          SizedBox(height: compact ? 12 : 18),
           CommitStrip(streak: streak, goal: goal),
         ],
       ],
@@ -1652,11 +1680,13 @@ class _EchoBeat extends StatelessWidget {
   final TomorrowHook hook;
   final int streak;
   final int goal;
+  final int reminderHour;
 
   const _EchoBeat({
     required this.hook,
     required this.streak,
     required this.goal,
+    required this.reminderHour,
   });
 
   @override
@@ -1691,7 +1721,7 @@ class _EchoBeat extends StatelessWidget {
         ),
         const SizedBox(height: 22),
         Text(
-          hook.promiseLine,
+          hook.promiseLine(reminderHour: reminderHour),
           textAlign: TextAlign.center,
           style: AppTypography.body(
             size: 16,

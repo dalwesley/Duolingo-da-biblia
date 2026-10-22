@@ -198,7 +198,8 @@ class AppColors {
 ///   [areaTheology] — só dentro de Trilhas.
 ///
 /// Na cena: idle escuro · seleção branca · acerto ouro · erro vermelho.
-/// Cor de modo fica no mapa / seletor, não nos gestos.
+/// Cor de modo = luz do palco (borda, rótulo, lacuna, progresso), nunca
+/// na placa de resposta.
 /// Glow ([presence]) = home / orbs, não gestos.
 class AppRoles {
   AppRoles._();
@@ -226,6 +227,10 @@ class AppRoles {
 
   /// Coração de curtida em medalha e selo.
   static const heart = AppColors.heart;
+
+  /// Chama e brilho da lâmpada acesa (vidas da cena): âmbar quente dentro
+  /// da lanterna, que segue no azul de presença.
+  static const lamp = Color(0xFFFFB547);
 
   static const observation = AppColors.sprout;
   static const comprehension = AppColors.coral;

@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -40,18 +42,185 @@ class AnanSpeech extends StatelessWidget {
   }
 }
 
+/// O Anan ao lado, falando: nuvem pequena à esquerda e o balão com a ponta
+/// para ele. Mesmo cabeçalho na abertura da cena e em cada gesto. Dá um
+/// pulinho quando [hop] muda para um valor não nulo (ex.: cada escolha).
+///
+/// Com [back], o balão tem verso: [flipped] o vira na vertical para mostrar
+/// [back] (ex.: a dica) e [onTap] deixa a pessoa virar de volta.
+class AnanSideSpeech extends StatefulWidget {
+  final Widget child;
+  final Object? hop;
+  final CloudFace face;
+  final Widget? back;
+  final bool flipped;
+  final VoidCallback? onTap;
+
+  const AnanSideSpeech({
+    super.key,
+    required this.child,
+    this.hop,
+    this.face = CloudFace.feliz,
+    this.back,
+    this.flipped = false,
+    this.onTap,
+  });
+
+  static const ananSize = 52.0;
+  static const padding = EdgeInsets.fromLTRB(16, 12, 16, 14);
+
+  @override
+  State<AnanSideSpeech> createState() => _AnanSideSpeechState();
+}
+
+class _AnanSideSpeechState extends State<AnanSideSpeech>
+    with TickerProviderStateMixin {
+  late final AnimationController _hop = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 420),
+  );
+
+  // Criado já no initState: preguiçoso, nasceria no primeiro virar com o
+  // valor final e o balão trocaria de lado sem girar.
+  late final AnimationController _flip;
+
+  @override
+  void initState() {
+    super.initState();
+    _flip = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 520),
+      value: widget.flipped ? 1 : 0,
+    );
+  }
+
+  @override
+  void didUpdateWidget(covariant AnanSideSpeech oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    final still = MediaQuery.maybeDisableAnimationsOf(context) ?? false;
+    if (!still && widget.hop != null && widget.hop != oldWidget.hop) {
+      _hop.forward(from: 0);
+    }
+    if (widget.flipped != oldWidget.flipped) {
+      final target = widget.flipped ? 1.0 : 0.0;
+      if (still) {
+        _flip.value = target;
+      } else {
+        _flip.animateTo(target, curve: AppMotion.move);
+      }
+    }
+  }
+
+  @override
+  void dispose() {
+    _hop.dispose();
+    _flip.dispose();
+    super.dispose();
+  }
+
+  /// Frente e verso no mesmo lugar: o balão fica com a altura do maior,
+  /// e só o lado virado para a pessoa aparece.
+  Widget _bubble() {
+    final back = widget.back;
+    if (back == null) {
+      return AnanSpeechBubble(
+        tail: AnanTail.left,
+        padding: AnanSideSpeech.padding,
+        child: widget.child,
+      );
+    }
+    return GestureDetector(
+      behavior: HitTestBehavior.opaque,
+      onTap: widget.onTap,
+      child: AnimatedBuilder(
+        animation: _flip,
+        builder: (context, _) {
+          final t = _flip.value;
+          final showBack = t >= 0.5;
+          final angle = showBack ? (t - 1) * math.pi : t * math.pi;
+          return Transform(
+            alignment: Alignment.center,
+            transform: Matrix4.identity()
+              ..setEntry(3, 2, 0.0012)
+              ..rotateX(angle),
+            child: AnanSpeechBubble(
+              tail: AnanTail.left,
+              padding: AnanSideSpeech.padding,
+              child: Stack(
+                alignment: Alignment.centerLeft,
+                children: [
+                  Visibility(
+                    visible: !showBack,
+                    maintainSize: true,
+                    maintainAnimation: true,
+                    maintainState: true,
+                    child: widget.child,
+                  ),
+                  Visibility(
+                    visible: showBack,
+                    maintainSize: true,
+                    maintainAnimation: true,
+                    maintainState: true,
+                    child: back,
+                  ),
+                ],
+              ),
+            ),
+          );
+        },
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        AnimatedBuilder(
+          animation: _hop,
+          builder: (context, child) {
+            final t = math.sin(_hop.value * math.pi);
+            return Transform.translate(
+              offset: Offset(0, -6 * t),
+              child: Transform.scale(scale: 1 + 0.06 * t, child: child),
+            );
+          },
+          child: CloudMascot(
+            face: widget.face,
+            size: AnanSideSpeech.ananSize,
+            react: false,
+          ),
+        ),
+        const SizedBox(width: 14),
+        Expanded(child: _bubble()),
+      ],
+    );
+  }
+}
+
+/// De que lado está o Anan: a ponta do balão aponta para ele.
+enum AnanTail {
+  /// Anan acima, ao centro (padrão do onboarding).
+  top,
+
+  /// Anan à esquerda, no meio da altura (enunciado da cena).
+  left,
+}
+
 /// Balão de fala claro, com a ponta no topo, ao centro, para o Anan acima.
 /// Sozinho quando a nuvem entra separada (onboarding).
 class AnanSpeechBubble extends StatelessWidget {
   final Widget child;
   final EdgeInsetsGeometry padding;
   final double maxWidth;
+  final AnanTail tail;
 
   const AnanSpeechBubble({
     super.key,
     required this.child,
     this.padding = defaultPadding,
     this.maxWidth = double.infinity,
+    this.tail = AnanTail.top,
   });
 
   static const defaultPadding = EdgeInsets.fromLTRB(22, 20, 22, 22);
@@ -72,6 +241,16 @@ class AnanSpeechBubble extends StatelessWidget {
 
   static const _tailWidth = 22.0;
   static const _tailHeight = 11.0;
+
+  static const _tailPaint = CustomPaint(
+    size: Size(_tailWidth, _tailHeight + _rimWidth),
+    painter: _TailPainter(
+      fill: fill,
+      rim: rim,
+      rimWidth: _rimWidth,
+      tipHeight: _tailHeight,
+    ),
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -105,19 +284,18 @@ class AnanSpeechBubble extends StatelessWidget {
             ),
           ),
           // A base da ponta cobre o contorno do balão; só os dois lados de
-          // cima levam o azul.
-          const Positioned(
-            top: -_tailHeight + _rimWidth,
-            child: CustomPaint(
-              size: Size(_tailWidth, _tailHeight + _rimWidth),
-              painter: _TailPainter(
-                fill: fill,
-                rim: rim,
-                rimWidth: _rimWidth,
-                tipHeight: _tailHeight,
+          // fora levam o azul.
+          if (tail == AnanTail.top)
+            const Positioned(top: -_tailHeight + _rimWidth, child: _tailPaint)
+          else
+            const Positioned(
+              left: -_tailHeight + _rimWidth,
+              top: 0,
+              bottom: 0,
+              child: Center(
+                child: RotatedBox(quarterTurns: 3, child: _tailPaint),
               ),
             ),
-          ),
         ],
       ),
     );

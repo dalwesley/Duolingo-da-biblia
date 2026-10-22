@@ -9,6 +9,7 @@ BankQuestion q(
   String id, {
   String correct = 'b',
   List<String> order = const [],
+  ExerciseType type = ExerciseType.choice,
 }) => BankQuestion(
   id: id,
   difficulty: TrailDifficulty.semente,
@@ -23,6 +24,7 @@ BankQuestion q(
   feedbackCorrect: 'Beta é a certa porque o texto diz isso.',
   feedbackWrong: const {'a': 'Alpha não.'},
   correctOrder: order,
+  type: type,
 );
 
 void main() {
@@ -37,8 +39,17 @@ void main() {
       expect(m.why, contains('Beta é a certa'));
     });
 
+    test('a opção marcada traz o porquê dela', () {
+      final m = explainBankQuestion(q('q1'), yours: 'Alpha');
+      expect(m!.yours, 'Alpha');
+      expect(m.whyYours, 'Alpha não.');
+      expect(explainBankQuestion(q('q1'), yours: 'Gama')!.whyYours, isNull);
+    });
+
     test('gesto de ordenar vira a sequência certa', () {
-      final m = explainBankQuestion(q('q2', order: ['b', 'a', 'c']));
+      final m = explainBankQuestion(
+        q('q2', order: ['b', 'a', 'c'], type: ExerciseType.order),
+      );
       expect(m!.correct, 'Beta → Alpha → Gama');
     });
 
@@ -105,6 +116,7 @@ void main() {
           feedbackCorrect: 'Certo: a terra está sem forma.',
           feedbackWrong: const {},
           type: ExerciseType.trueFalse,
+          correctOrder: const ['a', 'b', 'c'],
         ),
       );
       expect(m!.correct, 'Falso');

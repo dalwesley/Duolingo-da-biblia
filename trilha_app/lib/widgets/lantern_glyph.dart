@@ -96,10 +96,14 @@ class LanternPainter extends CustomPainter {
   /// Tinta da lanterna apagada (tema: `a.text`); as alphas vêm daqui.
   final Color unlitInk;
 
+  /// Cor da chama e do brilho da acesa. Nula = a mesma do metal ([color]).
+  final Color? flame;
+
   const LanternPainter({
     required this.lit,
     required this.color,
     this.unlitInk = Colors.white,
+    this.flame,
   });
 
   @override
@@ -107,6 +111,7 @@ class LanternPainter extends CustomPainter {
     final w = size.width;
     final h = size.height;
     final cx = w * 0.5;
+    final fire = flame ?? color;
 
     final metal = lit
         ? Color.lerp(color, const Color(0xFF8A5A28), 0.25)!
@@ -121,19 +126,20 @@ class LanternPainter extends CustomPainter {
     if (lit) {
       canvas.drawOval(
         Rect.fromCenter(
-          center: Offset(cx, h * 0.52),
-          width: w * 0.95,
-          height: h * 0.55,
+          center: Offset(cx, h * 0.55),
+          width: w * 1.5,
+          height: h * 0.9,
         ),
+        // Brilho da chama: a acesa precisa brilhar no céu escuro.
         Paint()
           ..shader =
               RadialGradient(
                 colors: [
-                  color.withValues(alpha: 0.22),
-                  color.withValues(alpha: 0),
+                  fire.withValues(alpha: 0.45),
+                  fire.withValues(alpha: 0),
                 ],
               ).createShader(
-                Rect.fromCircle(center: Offset(cx, h * 0.52), radius: w * 0.55),
+                Rect.fromCircle(center: Offset(cx, h * 0.55), radius: w * 0.75),
               ),
       );
     }
@@ -226,7 +232,7 @@ class LanternPainter extends CustomPainter {
         flame,
         Paint()
           ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 1.8)
-          ..color = color.withValues(alpha: 0.7),
+          ..color = fire.withValues(alpha: 0.7),
       );
       canvas.drawPath(
         flame,
@@ -236,22 +242,23 @@ class LanternPainter extends CustomPainter {
                 begin: Alignment.bottomCenter,
                 end: Alignment.topCenter,
                 colors: [
-                  color,
-                  Color.lerp(color, const Color(0xFFE8C878), 0.35)!,
-                  Color.lerp(color, const Color(0xFFC99200), 0.15)!,
+                  fire,
+                  Color.lerp(fire, const Color(0xFFE8C878), 0.35)!,
+                  Color.lerp(fire, const Color(0xFFC99200), 0.15)!,
                 ],
                 stops: const [0, 0.55, 1],
               ).createShader(
                 Rect.fromLTWH(cx - w * 0.14, h * 0.36, w * 0.28, h * 0.36),
               ),
       );
+      // Miolo quente-claro: o ponto mais vivo da chama.
       canvas.drawOval(
         Rect.fromCenter(
-          center: Offset(cx, h * 0.58),
-          width: w * 0.08,
-          height: h * 0.12,
+          center: Offset(cx, h * 0.6),
+          width: w * 0.1,
+          height: h * 0.14,
         ),
-        Paint()..color = color.withValues(alpha: 0.35),
+        Paint()..color = const Color(0xFFFFF4D6).withValues(alpha: 0.9),
       );
     } else {
       canvas.drawLine(
@@ -267,5 +274,8 @@ class LanternPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant LanternPainter old) =>
-      old.lit != lit || old.color != color || old.unlitInk != unlitInk;
+      old.lit != lit ||
+      old.color != color ||
+      old.unlitInk != unlitInk ||
+      old.flame != flame;
 }

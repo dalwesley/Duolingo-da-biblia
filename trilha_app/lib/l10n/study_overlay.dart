@@ -92,10 +92,14 @@ class StudyOverlay {
     return t.isEmpty ? null : t;
   }
 
-  List<String>? reflectionPrompts(String slug) {
+  List<String>? reflectionPrompts(String slug) =>
+      stringList(slug, 'reflectionPrompts');
+
+  /// Lista de frases do overlay (ex.: `facts`, na mesma ordem do PT).
+  List<String>? stringList(String slug, String key) {
     final e = entryFor(slug);
     if (e == null) return null;
-    final raw = e['reflectionPrompts'];
+    final raw = e[key];
     if (raw is! List) return null;
     final out = raw
         .map((e) => e.toString().trim())

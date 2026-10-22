@@ -309,7 +309,8 @@ void main() {
       const mission = Mission(
         slug: 'gen-boss-01',
         title: 'Desafio: A Criação',
-        intro: 'Hora de provar o que aprendeu sobre a Criação. Respire fundo — você consegue!',
+        intro:
+            'Hora de provar o que aprendeu sobre a Criação. Respire fundo — você consegue!',
         type: 'boss',
         stepsReward: 100,
         questions: [],
@@ -681,7 +682,23 @@ void main() {
           rng: Random(1),
         );
         expect(picked.where((q) => q.type == ExerciseType.choice).length, 2);
-        expect(picked.length, inInclusiveRange(7, 8));
+        // Ponte fora do ar (perde o "con") e o Toque com lacuna conta como
+        // Completar: uma "Palavra" só.
+        expect(
+          picked.length,
+          inInclusiveRange(SessionComposer.bridgeHidden ? 5 : 6, 8),
+        );
+        expect(
+          picked
+              .where(
+                (q) => SessionComposer.bankSlot(q) == ExerciseType.complete,
+              )
+              .length,
+          1,
+        );
+        if (SessionComposer.bridgeHidden) {
+          expect(picked.any((q) => q.type == ExerciseType.connect), isFalse);
+        }
         expect(
           picked.where((q) => q.type == ExerciseType.trueFalse).length,
           lessThanOrEqualTo(2),
@@ -1008,6 +1025,86 @@ void main() {
       expect(ex.reference, 'Gn 1:4');
       expect(ex.feedbackCorrect, 'Certo.');
       expect(ex.feedbackFor('b', correct: false), 'Leia de novo.');
+    });
+  });
+
+  group('SessionComposer.withRestingGesture', () {
+    BankQuestion q(String id, ExerciseType type) => BankQuestion(
+      id: id,
+      trailSlug: 'genesis-1-11',
+      difficulty: TrailDifficulty.semente,
+      section: 'gen-01-criador',
+      question: id,
+      type: type,
+      options: const [
+        QuestionOption(id: 'a', text: 'A'),
+        QuestionOption(id: 'b', text: 'B'),
+      ],
+      correctOptionId: 'a',
+      feedbackCorrect: 'Ok',
+      feedbackWrong: const {},
+    );
+
+    final pool = [
+      q('vf', ExerciseType.trueFalse),
+      q('tap', ExerciseType.findInText),
+      q('ch', ExerciseType.choice),
+      q('ord', ExerciseType.order),
+      q('comp', ExerciseType.complete),
+      q('con', ExerciseType.connect),
+    ];
+
+    Set<String> restingIds(List<BankQuestion> kept) =>
+        pool.map((e) => e.id).toSet().difference(kept.map((e) => e.id).toSet());
+
+    test('each scene rests the next gesture of the wheel', () {
+      final rested = [
+        for (var i = 0; i < 6; i++)
+          ...restingIds(
+            SessionComposer.withRestingGesture(
+              pool: pool,
+              sceneIndex: i,
+              difficulty: TrailDifficulty.semente,
+            ),
+          ),
+      ];
+      expect(rested, ['vf', 'tap', 'ch', 'ord', 'comp', 'con']);
+    });
+
+    test('modes of the same scene rest different gestures', () {
+      final rested = {
+        for (final d in TrailDifficulty.values)
+          ...restingIds(
+            SessionComposer.withRestingGesture(
+              pool: pool,
+              sceneIndex: 0,
+              difficulty: d,
+            ),
+          ),
+      };
+      expect(rested, hasLength(3));
+    });
+
+    test('replay brings back the gesture that rested', () {
+      final seen = {'tap', 'ch', 'ord', 'comp', 'con'}; // vf rested 1st time
+      final kept = SessionComposer.withRestingGesture(
+        pool: pool,
+        sceneIndex: 0,
+        difficulty: TrailDifficulty.semente,
+        usedIds: seen,
+      );
+      expect(kept.any((e) => e.id == 'vf'), isTrue);
+      expect(kept, hasLength(5));
+    });
+
+    test('a bank with 5 gestures keeps them all', () {
+      final five = pool.where((e) => e.id != 'con').toList();
+      final kept = SessionComposer.withRestingGesture(
+        pool: five,
+        sceneIndex: 0,
+        difficulty: TrailDifficulty.semente,
+      );
+      expect(kept, hasLength(5));
     });
   });
 

@@ -382,9 +382,7 @@ class Exercise {
           .split(',')
           .map((s) => s.trim())
           .where((s) => s.isNotEmpty);
-      final parts = [
-        for (final id in ids) textOf(id, effectiveOptions) ?? id,
-      ];
+      final parts = [for (final id in ids) textOf(id, effectiveOptions) ?? id];
       return parts.isEmpty ? null : parts.join(' → ');
     }
     if (type == ExerciseType.match) {
@@ -478,9 +476,17 @@ class Exercise {
       ..sort((a, b) => b.text.length.compareTo(a.text.length));
   }
 
+  /// Dica em texto (banco V3): aponta onde olhar sem dizer a resposta.
+  /// Com ela, o botão Dica mostra a frase em vez de apagar uma opção.
+  String? get textHint {
+    final t = (retryHint ?? '').trim();
+    return t.isEmpty ? null : t;
+  }
+
   bool get supportsHint =>
       !type.isRevealOnly &&
-      (type == ExerciseType.choice ||
+      (textHint != null ||
+          type == ExerciseType.choice ||
           type == ExerciseType.textSupported ||
           type == ExerciseType.connect ||
           type == ExerciseType.tap ||
