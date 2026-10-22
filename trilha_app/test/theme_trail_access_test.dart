@@ -4,7 +4,7 @@ import 'package:trilha_app/models/trail_catalog.dart';
 import 'package:trilha_app/utils/plus_access.dart';
 import 'package:trilha_app/utils/trail_progress.dart';
 
-Trail _trail(String realmId) => Trail(
+Trail _trail(String realmId, {String categoryId = 'pentateuco'}) => Trail(
   slug: 'test-$realmId',
   title: 'Test',
   description: '',
@@ -13,6 +13,7 @@ Trail _trail(String realmId) => Trail(
   comingSoon: false,
   color: '#2F5D4A',
   realmId: realmId,
+  categoryId: categoryId,
   modules: [
     TrailModule(
       title: 'Mod 1',
@@ -54,16 +55,33 @@ Trail _trail(String realmId) => Trail(
 );
 
 void main() {
-  test('livro é grátis: AT e NT nunca pedem Plus', () {
-    for (final realm in [
-      TrailRealm.antigoTestamento,
-      TrailRealm.novoTestamento,
+  test('card da Bíblia é grátis: AT e NT não pedem Plus', () {
+    for (final (realm, category) in [
+      (TrailRealm.antigoTestamento.id, 'pentateuco'),
+      (TrailRealm.antigoTestamento.id, 'profetas-menores'),
+      (TrailRealm.novoTestamento.id, 'evangelhos'),
+      (TrailRealm.novoTestamento.id, 'epistolas'),
     ]) {
-      final t = _trail(realm.id);
-      expect(PlusAccess.trailIsPlus(t), isFalse);
+      final t = _trail(realm, categoryId: category);
+      expect(PlusAccess.trailIsPlus(t), isFalse, reason: category);
       expect(PlusAccess.missionNeedsPlus(t, 'm2'), isFalse);
       expect(PlusAccess.missionNeedsPlus(t, 'm3'), isFalse);
     }
+  });
+
+  test('Sabedoria e os temas são Plus, com a 1ª cena de amostra', () {
+    final wisdom = _trail(
+      TrailRealm.antigoTestamento.id,
+      categoryId: 'poeticos',
+    );
+    expect(wisdom.journey, TrailJourney.sabedoria);
+    expect(PlusAccess.trailIsPlus(wisdom), isTrue);
+    expect(PlusAccess.missionNeedsPlus(wisdom, 'm1'), isFalse);
+    expect(PlusAccess.missionNeedsPlus(wisdom, 'm2'), isTrue);
+
+    final themes = _trail(TrailRealm.novoTestamento.id, categoryId: 'panorama');
+    expect(themes.journey, TrailJourney.panorama);
+    expect(PlusAccess.trailIsPlus(themes), isTrue);
   });
 
   test('tema é Plus, com a 1ª cena de amostra', () {

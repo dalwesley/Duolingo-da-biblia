@@ -12,6 +12,7 @@ import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/cloud_mascot.dart';
+import '../widgets/anan_speech.dart';
 import '../widgets/home_brand_backdrop.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/ui_primitives.dart';
@@ -176,14 +177,9 @@ class _ComingSoonScreenState extends State<ComingSoonScreen> {
                       ),
                     ),
                   ),
-                  Center(
-                    child: CloudMascot(
-                      face: _joined ? CloudFace.sucesso : CloudFace.carregando,
-                      size: 120,
-                    ),
-                  ),
-                  const SizedBox(height: AppSpace.md),
-                  GlassCard(
+                  // O recado de abertura é a fala do Anan.
+                  AnanSpeech(
+                    face: _joined ? CloudFace.sucesso : CloudFace.carregando,
                     padding: const EdgeInsets.fromLTRB(20, 18, 20, 20),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -194,14 +190,17 @@ class _ComingSoonScreenState extends State<ComingSoonScreen> {
                           style: AppTypography.body(
                             size: 12,
                             weight: FontWeight.w800,
-                            color: AppRoles.reward,
+                            color: AnanSpeechBubble.mark,
                           ),
                         ),
                         const SizedBox(height: AppSpace.sm),
                         Text(
                           title,
                           textAlign: TextAlign.center,
-                          style: AppTypography.display(size: 30, color: a.text),
+                          style: AppTypography.display(
+                            size: 30,
+                            color: AnanSpeechBubble.ink,
+                          ),
                         ),
                         const SizedBox(height: AppSpace.sm),
                         Text(
@@ -210,7 +209,7 @@ class _ComingSoonScreenState extends State<ComingSoonScreen> {
                           style: AppTypography.body(
                             size: 14,
                             height: 1.45,
-                            color: a.textSecondary,
+                            color: AnanSpeechBubble.muted,
                           ),
                         ),
                       ],

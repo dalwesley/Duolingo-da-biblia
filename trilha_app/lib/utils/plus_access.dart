@@ -1,5 +1,4 @@
 import '../models/trail.dart';
-import '../models/trail_catalog.dart';
 
 /// Regras puras do Peregrino+: quando o recurso fica aberto.
 class PlusAccess {
@@ -13,15 +12,10 @@ class PlusAccess {
   /// com o plano base (`plus_founder_annual:annual`).
   static const pioneerProductId = 'plus_founder_annual';
 
-  /// Livro é grátis: Antigo e Novo Testamento. O resto (Vida Cristã,
-  /// Teologia, trilhas por dor, Sermão do Monte incluso) é tema, e tema é
-  /// Peregrino+. As cenas do Sermão continuam grátis pela trilha de Mateus.
-  static bool realmIsPlus(TrailRealm realm) =>
-      realm != TrailRealm.antigoTestamento &&
-      realm != TrailRealm.novoTestamento;
-
-  static bool trailIsPlus(Trail trail) =>
-      realmIsPlus(TrailRealm.fromId(trail.realmId));
+  /// O card da Bíblia (Antigo e Novo Testamento) é grátis. Sabedoria, os
+  /// outros temas, Vida Cristã e Teologia são Peregrino+. As cenas do
+  /// Sermão continuam grátis pela trilha de Mateus.
+  static bool trailIsPlus(Trail trail) => trail.journey.requiresPlus;
 
   /// A cena pede Plus? Numa trilha Plus, a 1ª cena é amostra grátis.
   static bool missionNeedsPlus(Trail trail, String missionSlug) {

@@ -81,6 +81,7 @@ class _ExplainedErrorsScreenState extends State<ExplainedErrorsScreen> {
     var items = explainMistakes(
       mistakeIds: ids,
       byId: QuestionBank.instance.byId,
+      answers: progress.mistakeAnswers,
     );
     // Ids antigos podem não começar pelo slug da trilha: se nada
     // resolveu, carrega o banco inteiro uma vez antes de desistir.
@@ -89,6 +90,7 @@ class _ExplainedErrorsScreenState extends State<ExplainedErrorsScreen> {
       items = explainMistakes(
         mistakeIds: ids,
         byId: QuestionBank.instance.byId,
+        answers: progress.mistakeAnswers,
       );
     }
     if (!mounted) return;
@@ -208,7 +210,7 @@ class _ExplainedErrorsScreenState extends State<ExplainedErrorsScreen> {
   }
 }
 
-/// Uma trilha, um cartão. Os trechos são seções dentro dele.
+/// Uma trilha por bloco: o nome num cartão, as questões da cena dentro de outro.
 class _TrailSheet extends StatelessWidget {
   final String? title;
   final TrailVisuals visuals;
@@ -226,81 +228,77 @@ class _TrailSheet extends StatelessWidget {
   Widget build(BuildContext context) {
     final children = <Widget>[];
     final name = title?.trim() ?? '';
-    if (name.isNotEmpty) {
-      children.add(_masthead(context, name));
-      children.add(const SizedBox(height: AppSpace.md));
-      children.add(const ListDivider());
-      children.add(const SizedBox(height: AppSpace.lg));
-    }
+    if (name.isNotEmpty) children.add(_masthead(context, name));
     for (var p = 0; p < passages.length; p++) {
-      final passage = passages[p];
-      if (p > 0) children.add(const SizedBox(height: AppSpace.xl));
-      final head = _head(context, passage);
-      if (head != null) {
-        children.add(head);
-        children.add(const SizedBox(height: AppSpace.md));
+      if (children.isNotEmpty) {
+        children.add(SizedBox(height: p == 0 ? AppSpace.xl : AppSpace.xxl));
       }
-      for (var i = 0; i < passage.items.length; i++) {
-        if (i > 0) {
-          children.add(const SizedBox(height: AppSpace.md));
-          children.add(const ListDivider());
-          children.add(const SizedBox(height: AppSpace.md));
-        }
-        children.add(
-          _MistakeRow(mistake: passage.items[i], accent: visuals.accent),
-        );
-      }
+      children.add(_passageCard(context, passages[p]));
     }
-    return GlassCard(
-      padding: AppMetrics.cardPadding,
-      tint: visuals.accent,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: children,
-      ),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: children,
     );
   }
 
   Widget _masthead(BuildContext context, String name) {
     final a = Appearance.of(context);
-    return Row(
-      children: [
-        CinematicIcon(
-          glyph: visuals.glyph,
-          size: AppMetrics.leadingIcon,
-          accent: visuals.accent,
-          framed: true,
-          glowing: false,
-        ),
-        const SizedBox(width: AppSpace.md),
-        Expanded(
-          child: Text(
-            name,
-            style: AppTypography.title(size: 16, color: a.text),
+    return GlassCard(
+      tint: visuals.accent,
+      glow: 0.55,
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppSpace.lg,
+        vertical: AppSpace.md,
+      ),
+      child: Row(
+        children: [
+          CinematicIcon(
+            glyph: visuals.glyph,
+            size: AppMetrics.leadingIcon,
+            accent: visuals.accent,
+            framed: true,
+            glowing: false,
           ),
-        ),
-      ],
+          const SizedBox(width: AppSpace.md),
+          Expanded(
+            child: Text(
+              name,
+              style: AppTypography.title(size: 20, color: a.text),
+            ),
+          ),
+        ],
+      ),
     );
   }
 
-  Widget? _head(BuildContext context, ExplainedPassageGroup passage) {
+  Widget _passageCard(BuildContext context, ExplainedPassageGroup passage) {
     final a = Appearance.of(context);
+    final scene = sceneOf(passage)?.trim() ?? '';
     final ref = (passage.items.first.verseRef ?? '').trim();
-    final scene = sceneOf(passage);
-    final label = ref.isNotEmpty ? ref : scene;
-    if (label == null || label.isEmpty) return null;
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        SectionLabel(label, color: visuals.accent),
-        if (scene != null && ref.isNotEmpty && scene != ref) ...[
-          const SizedBox(height: 4),
-          Text(
-            scene,
-            style: AppTypography.body(size: 12, color: a.textSecondary),
-          ),
-        ],
-      ],
+    final title = scene.isNotEmpty && scene != ref ? scene : '';
+    final body = <Widget>[];
+    if (title.isNotEmpty) {
+      body.add(
+        Text(title, style: AppTypography.title(size: 16, color: a.text)),
+      );
+      body.add(const SizedBox(height: AppSpace.md));
+      body.add(const ListDivider());
+      body.add(const SizedBox(height: AppSpace.md));
+    }
+    for (var i = 0; i < passage.items.length; i++) {
+      if (i > 0) {
+        body.add(const SizedBox(height: AppSpace.md));
+        body.add(const ListDivider());
+        body.add(const SizedBox(height: AppSpace.md));
+      }
+      body.add(_MistakeRow(mistake: passage.items[i], accent: visuals.accent));
+    }
+    return GlassCard(
+      padding: AppMetrics.cardPadding,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: body,
+      ),
     );
   }
 }
@@ -318,98 +316,67 @@ class _MistakeRow extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        _line(
-          glyph: DifficultyVisuals.glyphFor(mistake.difficulty),
-          color: mode,
-          child: Text(
-            mistake.difficulty.labelPt,
-            style: AppTypography.body(size: 13, color: mode),
-          ),
+        Wrap(
+          spacing: AppSpace.lg,
+          runSpacing: AppSpace.xs,
+          crossAxisAlignment: WrapCrossAlignment.center,
+          children: [
+            _chip(
+              DifficultyVisuals.glyphFor(mistake.difficulty),
+              mode,
+              mistake.difficulty.labelPt,
+            ),
+            _chip(
+              _gestureGlyph(mistake.gesture),
+              a.sectionLabel,
+              mistake.gesture.labelPt,
+            ),
+          ],
         ),
         const SizedBox(height: AppSpace.sm),
-        _line(
-          glyph: _gestureGlyph(mistake.gesture),
-          color: a.sectionLabel,
-          child: Text(
-            mistake.gesture.labelPt,
-            style: AppTypography.body(size: 13, color: a.sectionLabel),
-          ),
+        Text(
+          mistake.prompt,
+          style: AppTypography.title(size: 16, color: a.text),
         ),
-        const SizedBox(height: AppSpace.sm),
-        _line(
-          glyph: CinematicGlyph.pencil,
-          color: a.textSecondary,
-          align: CrossAxisAlignment.start,
-          child: Text(
-            mistake.prompt,
-            style: AppTypography.body(size: 14, color: a.text),
+        const SizedBox(height: AppSpace.md),
+        if ((mistake.yours ?? '').isNotEmpty) ...[
+          Text(
+            context.l10n.explainYourAnswer(mistake.yours!),
+            style: AppTypography.body(size: 13, color: a.textSecondary),
           ),
-        ),
-        const SizedBox(height: AppSpace.sm),
-        _line(
-          glyph: CinematicGlyph.check,
-          color: accent,
-          align: CrossAxisAlignment.start,
-          child: _answer(),
+          const SizedBox(height: AppSpace.sm),
+        ],
+        Text(
+          context.l10n.explainCorrectAnswer(mistake.correct),
+          style: AppTypography.title(size: 16, color: accent),
         ),
         if (mistake.why.isNotEmpty) ...[
-          const SizedBox(height: AppSpace.sm),
-          _line(
-            glyph: CinematicGlyph.scroll,
-            color: a.textSecondary,
-            align: CrossAxisAlignment.start,
-            child: Text(
-              mistake.why,
-              style: AppTypography.body(size: 14, color: a.textSecondary),
-            ),
+          const SizedBox(height: 4),
+          Text(
+            mistake.why,
+            style: AppTypography.body(size: 14, color: a.text),
           ),
         ],
       ],
     );
   }
 
-  Widget _answer() {
-    final style = AppTypography.title(size: 16, color: accent);
-    if (mistake.gesture != ExerciseType.order) {
-      return Text(mistake.correct, style: style);
-    }
-    final parts = [
-      for (final part in mistake.correct.split(' → '))
-        if (part.trim().isNotEmpty) part.trim(),
-    ];
-    if (parts.length < 2) return Text(mistake.correct, style: style);
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+  Widget _chip(CinematicGlyph glyph, Color color, String label) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
       children: [
-        for (var i = 0; i < parts.length; i++) ...[
-          if (i > 0) const SizedBox(height: 6),
-          Text(parts[i], style: style),
-        ],
+        CinematicIcon(
+          glyph: glyph,
+          size: AppMetrics.iconSm,
+          accent: color,
+          framed: false,
+          glowing: false,
+        ),
+        const SizedBox(width: AppSpace.xs),
+        Text(label, style: AppTypography.body(size: 13, color: color)),
       ],
     );
   }
-}
-
-Widget _line({
-  required CinematicGlyph glyph,
-  required Color color,
-  required Widget child,
-  CrossAxisAlignment align = CrossAxisAlignment.center,
-}) {
-  return Row(
-    crossAxisAlignment: align,
-    children: [
-      CinematicIcon(
-        glyph: glyph,
-        size: 22,
-        accent: color,
-        framed: false,
-        glowing: false,
-      ),
-      const SizedBox(width: AppSpace.sm),
-      Expanded(child: child),
-    ],
-  );
 }
 
 CinematicGlyph _gestureGlyph(ExerciseType type) => switch (type) {

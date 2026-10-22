@@ -568,7 +568,9 @@ class _LessonScreenState extends State<LessonScreen>
     if (trackBankId) {
       // Só o acerto de primeira tira a pergunta da revisão.
       if (!correct && firstTry && !requeued) {
-        unawaited(progress.recordMistake(ex.id));
+        unawaited(
+          progress.recordMistake(ex.id, answer: ex.labelForAnswer(optionId)),
+        );
       } else if (firstTry && !requeued) {
         unawaited(progress.clearMistake(ex.id));
       }

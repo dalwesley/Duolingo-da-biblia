@@ -846,6 +846,7 @@ class BackendService extends ChangeNotifier {
     'authProvider',
     'missionReflections',
     'mistakeQuestionIds',
+    'mistakeAnswers',
     'usedQuestionIds',
     'answerCorrect',
     'answerTotal',

@@ -17,6 +17,7 @@ import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/cloud_mascot.dart';
+import '../widgets/anan_speech.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/relic_panel.dart';
 import '../widgets/top_bar.dart';
@@ -143,7 +144,6 @@ class _WeeklyReviewScreenState extends State<WeeklyReviewScreen> {
     required bool hasPlus,
     required bool done,
   }) {
-    final a = Appearance.of(context);
     final l10n = context.l10n;
     final empty = scenes.length < ProgressService.weeklyReviewMinScenes;
     final face = empty
@@ -153,26 +153,42 @@ class _WeeklyReviewScreenState extends State<WeeklyReviewScreen> {
         : CloudFace.feliz;
 
     return [
-      Center(child: CloudMascot(face: face, size: 96)),
-      const SizedBox(height: AppSpace.md),
-      Text(
-        empty
-            ? l10n.weeklyReviewEmptyTitle
-            : l10n.weeklyReviewHeadline(scenes.length),
-        textAlign: TextAlign.center,
-        style: AppTypography.display(size: 24, color: a.text),
-      ),
-      const SizedBox(height: AppSpace.sm),
-      Text(
-        empty
-            ? l10n.weeklyReviewEmptyBody(ProgressService.weeklyReviewMinScenes)
-            : done
-            ? l10n.weeklyReviewDoneBody
-            : hasPlus
-            ? l10n.weeklyReviewIntro
-            : l10n.weeklyReviewPlusBody,
-        textAlign: TextAlign.center,
-        style: AppTypography.body(size: 14, color: a.textSecondary),
+      // O recado de abertura é a fala do Anan.
+      AnanSpeech(
+        face: face,
+        padding: const EdgeInsets.fromLTRB(20, 18, 20, 20),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text(
+              empty
+                  ? l10n.weeklyReviewEmptyTitle
+                  : l10n.weeklyReviewHeadline(scenes.length),
+              textAlign: TextAlign.center,
+              style: AppTypography.display(
+                size: 24,
+                color: AnanSpeechBubble.ink,
+              ),
+            ),
+            const SizedBox(height: AppSpace.sm),
+            Text(
+              empty
+                  ? l10n.weeklyReviewEmptyBody(
+                      ProgressService.weeklyReviewMinScenes,
+                    )
+                  : done
+                  ? l10n.weeklyReviewDoneBody
+                  : hasPlus
+                  ? l10n.weeklyReviewIntro
+                  : l10n.weeklyReviewPlusBody,
+              textAlign: TextAlign.center,
+              style: AppTypography.body(
+                size: 14,
+                color: AnanSpeechBubble.muted,
+              ),
+            ),
+          ],
+        ),
       ),
       if (!empty) ...[
         const SizedBox(height: AppSpace.xl),

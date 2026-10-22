@@ -31,6 +31,44 @@ void main() {
     );
   });
 
+  test('free bible shelf is the two testaments side by side', () {
+    expect(TrailJourney.forShelf(TrailShelf.biblia), [
+      TrailJourney.antigoTestamento,
+      TrailJourney.novoTestamento,
+    ]);
+    expect(TrailJourney.antigoTestamento.requiresPlus, isFalse);
+    expect(TrailJourney.novoTestamento.requiresPlus, isFalse);
+  });
+
+  test('themes and the other plus shelves keep their card order', () {
+    expect(TrailJourney.forShelf(TrailShelf.tematicos), [
+      TrailJourney.sabedoria,
+      TrailJourney.panorama,
+      TrailJourney.personagens,
+      TrailJourney.promessaCumprimento,
+      TrailJourney.temasBiblicos,
+      TrailJourney.parabolasMilagres,
+    ]);
+    expect(TrailJourney.forShelf(TrailShelf.vidaCrista), [
+      TrailJourney.discipulado,
+      TrailJourney.oracao,
+      TrailJourney.historiaIgreja,
+    ]);
+    expect(TrailJourney.forShelf(TrailShelf.teologia), [
+      TrailJourney.hermeneutica,
+      TrailJourney.linguas,
+      TrailJourney.sistematica,
+      TrailJourney.cristologia,
+    ]);
+    for (final journey in [
+      ...TrailJourney.forShelf(TrailShelf.tematicos),
+      ...TrailJourney.forShelf(TrailShelf.vidaCrista),
+      ...TrailJourney.forShelf(TrailShelf.teologia),
+    ]) {
+      expect(journey.requiresPlus, isTrue, reason: journey.name);
+    }
+  });
+
   test('whole-Bible cards accept either testament', () {
     expect(
       of('novo-testamento', 'promessa-cumprimento'),

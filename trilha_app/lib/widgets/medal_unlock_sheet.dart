@@ -802,8 +802,8 @@ class _MedalVaultCompleteSheetState extends State<_MedalVaultCompleteSheet>
   }
 }
 
-/// Medalha aberta: o Anan fica no alto, à esquerda; o coração ocupa o
-/// canto em que ele estava, no mesmo tamanho.
+/// Medalha aberta: o Anan fica no alto, à esquerda. O coração senta na
+/// lateral direita da moeda, pouco abaixo do meio.
 class _MedalCompany extends StatelessWidget {
   static const anan = 64.0;
 
@@ -830,8 +830,8 @@ class _MedalCompany extends StatelessWidget {
           child: CloudMascot(face: face, size: anan),
         ),
         Positioned(
-          right: -anan * 0.8,
-          bottom: -anan * 0.12,
+          right: -18,
+          bottom: 14,
           child: heart,
         ),
       ],

@@ -742,7 +742,6 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     if (widget.failed) {
       return MascotBubble(
         face: CloudFace.erro,
-        glowing: true,
         message: CelebrationCopy.failedDetail,
       );
     }
@@ -757,7 +756,6 @@ class _CelebrationScreenState extends State<CelebrationScreen>
       return const _TomorrowBeatSkeleton();
     }
     return MascotBubble(
-      glowing: true,
       message: MascotMessages.celebration(
         isBoss: isBoss,
         pct: pct,
@@ -1351,7 +1349,7 @@ class _HeroBeat extends StatelessWidget {
         ],
         if ((mascot ?? '').trim().isNotEmpty) ...[
           SizedBox(height: compact ? 10 : 14),
-          MascotBubble(glowing: true, message: mascot!.trim()),
+          MascotBubble(message: mascot!.trim()),
         ],
       ],
     );

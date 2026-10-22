@@ -90,7 +90,7 @@ enum TrailCategory {
     cristologia => L10n.current.categoryCristologiaTitle,
   };
 
-  /// Blurb da categoria (idioma atual). Vazio onde ainda não há texto.
+  /// Blurb da categoria (idioma atual).
   String get description => switch (this) {
     pentateuco => L10n.current.categoryPentateucoBlurb,
     historicosAt => L10n.current.categoryHistoricosAtBlurb,
@@ -111,7 +111,9 @@ enum TrailCategory {
     linguas => L10n.current.categoryLinguasBlurb,
     sistematica => L10n.current.categorySistematicaBlurb,
     cristologia => L10n.current.categoryCristologiaBlurb,
-    discipulado || oracao || historiaIgreja => '',
+    discipulado => L10n.current.categoryDiscipuladoBlurb,
+    oracao => L10n.current.categoryOracaoBlurb,
+    historiaIgreja => L10n.current.categoryHistoriaIgrejaBlurb,
   };
 
   static TrailCategory fromId(String? id) {
@@ -133,14 +135,20 @@ enum TrailCategory {
         ..sort((a, b) => a.order.compareTo(b.order));
 }
 
-/// Linha da aba Trilhas — agrupa os cards lado a lado.
+/// Linha da aba Trilhas.
+///
+/// [biblia] é grátis: Antigo e Novo Testamento, dois cards lado a lado.
+/// [tematicos] e [vidaCrista] são carrosséis do Peregrino+.
+/// [teologia] fica em cards; com as trilhas `comingSoon`, a tela diz "Em breve".
 enum TrailShelf {
   biblia,
+  tematicos,
   vidaCrista,
   teologia;
 
   String get label => switch (this) {
     biblia => L10n.current.trailsShelfBible,
+    tematicos => L10n.current.trailsShelfThemes,
     vidaCrista => TrailRealm.vidaCrista.label,
     teologia => TrailRealm.teologia.label,
   };
@@ -149,9 +157,6 @@ enum TrailShelf {
 /// Card da aba Trilhas: abre um caminho de trilhas. AT e NT juntam várias
 /// categorias; nas outras linhas cada categoria é um card.
 enum TrailJourney {
-  panorama(TrailShelf.biblia, TrailRealm.antigoTestamento, [
-    TrailCategory.panorama,
-  ]),
   antigoTestamento(TrailShelf.biblia, TrailRealm.antigoTestamento, [
     TrailCategory.pentateuco,
     TrailCategory.historicosAt,
@@ -166,20 +171,23 @@ enum TrailJourney {
     TrailCategory.apocalipse,
   ]),
   // Poéticos saem do card do AT: Jó, Salmos, Provérbios, Eclesiastes e
-  // Cantares ganham card próprio na linha da Bíblia.
-  sabedoria(TrailShelf.biblia, TrailRealm.antigoTestamento, [
+  // Cantares são o card Sabedoria, no carrossel Temáticos (Peregrino+).
+  sabedoria(TrailShelf.tematicos, TrailRealm.antigoTestamento, [
     TrailCategory.poeticos,
   ]),
-  personagens(TrailShelf.biblia, TrailRealm.novoTestamento, [
+  panorama(TrailShelf.tematicos, TrailRealm.antigoTestamento, [
+    TrailCategory.panorama,
+  ]),
+  personagens(TrailShelf.tematicos, TrailRealm.novoTestamento, [
     TrailCategory.personagens,
   ]),
-  promessaCumprimento(TrailShelf.biblia, TrailRealm.novoTestamento, [
+  promessaCumprimento(TrailShelf.tematicos, TrailRealm.novoTestamento, [
     TrailCategory.promessaCumprimento,
   ]),
-  temasBiblicos(TrailShelf.biblia, TrailRealm.antigoTestamento, [
+  temasBiblicos(TrailShelf.tematicos, TrailRealm.antigoTestamento, [
     TrailCategory.temasBiblicos,
   ]),
-  parabolasMilagres(TrailShelf.biblia, TrailRealm.novoTestamento, [
+  parabolasMilagres(TrailShelf.tematicos, TrailRealm.novoTestamento, [
     TrailCategory.parabolasMilagres,
   ]),
   discipulado(TrailShelf.vidaCrista, TrailRealm.vidaCrista, [
@@ -212,11 +220,19 @@ enum TrailJourney {
     _ => categories.length > 1 ? realm.label : categories.single.label,
   };
 
-  /// O que esta trilha será. Vazio nos cards que já abrem o caminho.
-  String get description =>
-      categories.length == 1 ? categories.single.description : '';
+  /// O que há neste caminho — a frase do card e da folha "Em breve".
+  String get description => switch (this) {
+    antigoTestamento => L10n.current.journeyAntigoTestamentoBody,
+    novoTestamento => L10n.current.journeyNovoTestamentoBody,
+    sabedoria => L10n.current.journeySabedoriaBody,
+    _ => categories.single.description,
+  };
 
-  /// Cards da Bíblia que atravessam os dois Testamentos: a trilha pode estar
+  /// Só o card da Bíblia (AT e NT) é grátis. Temáticos — inclusive Sabedoria —,
+  /// Vida Cristã e Teologia são Peregrino+.
+  bool get requiresPlus => shelf != TrailShelf.biblia;
+
+  /// Cards temáticos que atravessam os dois Testamentos: a trilha pode estar
   /// gravada no AT ou no NT.
   bool get spansCanon =>
       this == panorama ||

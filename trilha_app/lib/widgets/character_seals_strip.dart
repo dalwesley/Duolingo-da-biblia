@@ -273,6 +273,46 @@ class _SealMedallion extends StatelessWidget {
   }
 }
 
+/// O selo sozinho, fora da prateleira — no cartão da etapa do mapa. Já
+/// ganho, o toque abre o encontro; antes disso fica em cera apagada
+/// ("próximo"), sem toque.
+class CharacterSealMark extends StatelessWidget {
+  final CharacterSeal seal;
+  final bool unlocked;
+  final double size;
+
+  const CharacterSealMark({
+    super.key,
+    required this.seal,
+    required this.unlocked,
+    this.size = 52,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Semantics(
+      button: unlocked,
+      label: unlocked
+          ? context.l10n.sealsSemanticsNamed(seal.name)
+          : context.l10n.sealsSemanticsLocked,
+      excludeSemantics: true,
+      child: GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: unlocked ? () => showCharacterSealSheet(context, seal) : null,
+        child: Transform.rotate(
+          angle: ((seal.id.hashCode % 9) - 4) * 0.028,
+          child: _EncounterSeal(
+            glyph: seal.glyph,
+            size: size,
+            unlocked: unlocked,
+            next: !unlocked,
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 class _EncounterSeal extends StatelessWidget {
   final CinematicGlyph glyph;
   final double size;

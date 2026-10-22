@@ -8,6 +8,10 @@ class ExplainedMistake {
   final String prompt;
   final String correct;
   final String why;
+
+  /// O que a pessoa marcou. Gravado no erro; no verdadeiro ou falso
+  /// antigo, a outra opção.
+  final String? yours;
   final String? verseRef;
   final String trailSlug;
   final String section;
@@ -20,6 +24,7 @@ class ExplainedMistake {
     required this.prompt,
     required this.correct,
     required this.why,
+    this.yours,
     this.verseRef,
     this.trailSlug = '',
     this.section = '',
@@ -48,7 +53,9 @@ class ExplainedTrailGroup {
 
 /// Monta a explicação de uma pergunta do banco. Null quando falta o
 /// essencial (enunciado ou resposta certa) — a página pula esses.
-ExplainedMistake? explainBankQuestion(BankQuestion q) {
+/// [yours] é a marcação guardada; se vier vazia, o verdadeiro ou falso
+/// ainda infere a outra opção.
+ExplainedMistake? explainBankQuestion(BankQuestion q, {String? yours}) {
   final overlay = q.withOverlay();
   final prompt = (overlay.prompt ?? overlay.question).trim();
   if (prompt.isEmpty) return null;
@@ -72,6 +79,7 @@ ExplainedMistake? explainBankQuestion(BankQuestion q) {
   return ExplainedMistake(
     prompt: prompt,
     correct: correct,
+    yours: _storedOrInferred(overlay, correct, yours),
     why: readingWhy(overlay.feedbackCorrect),
     verseRef: overlay.verseRef,
     trailSlug: overlay.trailSlug,
@@ -127,6 +135,25 @@ String _passageKey(ExplainedMistake item) {
   return item.trailSlug;
 }
 
+/// Marcação guardada, ou — só no verdadeiro ou falso antigo — a outra opção.
+String? _storedOrInferred(BankQuestion q, String correct, String? stored) {
+  final text = stored?.trim() ?? '';
+  if (text.isNotEmpty) return text;
+  return _yourAnswer(q, correct);
+}
+
+/// No verdadeiro ou falso a outra opção é a que a pessoa marcou.
+String? _yourAnswer(BankQuestion q, String correct) {
+  if (q.type != ExerciseType.trueFalse) return null;
+  final others = [
+    for (final option in q.options)
+      if (option.text.trim().isNotEmpty && option.text.trim() != correct)
+        option.text.trim(),
+  ];
+  if (others.length != 1) return null;
+  return others.first;
+}
+
 /// O `feedbackCorrect` do banco às vezes abre com "Certo:" ou "Exato:".
 /// Na página a resposta já tem o seu lugar; aqui fica só a frase de leitura.
 String readingWhy(String why) {
@@ -163,6 +190,7 @@ String readingWhy(String why) {
 List<ExplainedMistake> explainMistakes({
   required List<String> mistakeIds,
   required BankQuestion? Function(String id) byId,
+  Map<String, String> answers = const {},
   int cap = 20,
 }) {
   final out = <ExplainedMistake>[];
@@ -170,7 +198,7 @@ List<ExplainedMistake> explainMistakes({
     if (out.length >= cap) break;
     final q = byId(id);
     if (q == null) continue;
-    final explained = explainBankQuestion(q);
+    final explained = explainBankQuestion(q, yours: answers[id]);
     if (explained != null) out.add(explained);
   }
   return out;

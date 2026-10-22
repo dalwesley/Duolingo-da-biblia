@@ -1,68 +1,36 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
-import '../utils/appearance.dart';
+import 'anan_speech.dart';
 import 'cloud_mascot.dart';
-import 'ui_primitives.dart';
 
+/// Recado curto do Anan (celebração): o mesmo balão do resto do app
+/// ([AnanSpeech]), com a nuvem menor — a cena já tem o palco grande.
 class MascotBubble extends StatelessWidget {
   final String message;
-  final bool dark;
-  final bool glowing;
   final CloudFace face;
 
   const MascotBubble({
     super.key,
     required this.message,
-    this.dark = true,
-    this.glowing = false,
     this.face = CloudFace.sucesso,
   });
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.end,
-      children: [
-        CloudMascot(face: face, size: 72),
-        const SizedBox(width: 12),
-        Expanded(
-          // Balão de fala: canto do mascote reto (a “cauda”), demais no
-          // raio de card — por isso não é GlassCard.
-          child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-            decoration: BoxDecoration(
-              // Véu escuro só nos looks escuros; no Claro, papel do card.
-              color: dark
-                  ? (a.onDark
-                        ? Colors.black.withValues(alpha: 0.35)
-                        : a.cardFill)
-                  : AppColors.card,
-              borderRadius: const BorderRadius.only(
-                topLeft: Radius.circular(AppMetrics.cardRadius),
-                topRight: Radius.circular(AppMetrics.cardRadius),
-                bottomRight: Radius.circular(AppMetrics.cardRadius),
-              ),
-              border: Border.all(
-                color: dark
-                    ? a.cardBorder
-                    : Colors.black.withValues(alpha: 0.08),
-                width: AppMetrics.cardBorderWidth,
-              ),
-              boxShadow: glowing ? AppMetrics.cardShadow(elevated: true) : null,
-            ),
-            child: Text(
-              message,
-              style: AppTypography.body(
-                size: 14,
-                weight: FontWeight.w700,
-                height: 1.35,
-                color: dark ? a.text : AppColors.text,
-              ),
-            ),
-          ),
+    return AnanSpeech(
+      face: face,
+      ananSize: 64,
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+      child: Text(
+        message,
+        textAlign: TextAlign.center,
+        style: AppTypography.body(
+          size: 14,
+          weight: FontWeight.w700,
+          height: 1.35,
+          color: AnanSpeechBubble.ink,
         ),
-      ],
+      ),
     );
   }
 }

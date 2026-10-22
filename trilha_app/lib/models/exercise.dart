@@ -365,6 +365,51 @@ class Exercise {
     return correctOptionText;
   }
 
+  /// Texto do que a pessoa marcou — vai para o livro de erros.
+  String? labelForAnswer(String answer) {
+    final raw = answer.trim();
+    if (raw.isEmpty) return null;
+
+    String? textOf(String id, List<QuestionOption> pool) {
+      for (final o in pool) {
+        if (o.id == id && o.text.trim().isNotEmpty) return o.text.trim();
+      }
+      return null;
+    }
+
+    if (type == ExerciseType.order) {
+      final ids = raw
+          .split(',')
+          .map((s) => s.trim())
+          .where((s) => s.isNotEmpty);
+      final parts = [
+        for (final id in ids) textOf(id, effectiveOptions) ?? id,
+      ];
+      return parts.isEmpty ? null : parts.join(' → ');
+    }
+    if (type == ExerciseType.match) {
+      final left = matchLeft.isNotEmpty ? matchLeft : effectiveOptions;
+      final parts = <String>[];
+      for (final piece in raw.split(',')) {
+        final kv = piece.split(':');
+        if (kv.length != 2) continue;
+        final a = textOf(kv[0].trim(), left);
+        final b = textOf(kv[1].trim(), matchRight);
+        if (a != null && b != null) parts.add('$a — $b');
+      }
+      if (parts.isNotEmpty) return parts.join('\n');
+    }
+    final direct = textOf(raw, effectiveOptions);
+    if (direct != null) return direct;
+    final want = _norm(raw);
+    for (final o in effectiveOptions) {
+      if (_norm(o.text) == want && o.text.trim().isNotEmpty) {
+        return o.text.trim();
+      }
+    }
+    return raw;
+  }
+
   /// Verso no palco do complete: trecho com a lacuna no lugar da resposta.
   String? clozeStageText({String? fallbackPassage}) {
     if (!usesCompletePalco) return null;

@@ -295,6 +295,7 @@
   "categoryApocalipseTitle": "Apocalipse ou Revelação",
   "categoryCristologiaBlurb": "Quem é Jesus: Deus e homem, profeta, sacerdote e rei. A trilha percorre a pessoa e a obra dele — encarnação, cruz, ressurreição e senhorio.",
   "categoryCristologiaTitle": "Cristologia",
+  "categoryDiscipuladoBlurb": "Seguir Jesus no dia a dia: o Sermão do Monte, a família, a missão e as horas difíceis, como ansiedade e recomeço. Fé que vira caminho.",
   "categoryDiscipuladoTitle": "Discipulado",
   "categoryEpistolasBlurb": "Vinte e uma cartas às primeiras igrejas — treze de Paulo e oito de outros autores.",
   "categoryEpistolasTitle": "Epístolas ou cartas apostólicas",
@@ -302,6 +303,7 @@
   "categoryEvangelhosTitle": "Evangelhos",
   "categoryHermeneuticaBlurb": "Como ler a Bíblia com atenção e fidelidade. O texto no seu contexto, o tipo de livro e o lugar de Cristo na história toda, sem forçar um versículo isolado.",
   "categoryHermeneuticaTitle": "Hermenêutica",
+  "categoryHistoriaIgrejaBlurb": "Como a fé chegou até nós: a vida comum em Atos, a perseguição, os concílios e credos, e a Reforma que voltou ao Evangelho.",
   "categoryHistoriaIgrejaTitle": "História da Igreja",
   "categoryHistoricosAtBlurb": "A história de Israel da conquista da Terra Prometida até o exílio babilônico.",
   "categoryHistoricosAtTitle": "Livros históricos",
@@ -311,6 +313,7 @@
   "categoryIntertestamentarioTitle": "Período intertestamentário",
   "categoryLinguasBlurb": "Um primeiro caminho no hebraico e no grego da Bíblia: alfabeto, raízes e como uma tradução nasce. O objetivo é ler com mais cuidado, sem substituir a Bíblia em português.",
   "categoryLinguasTitle": "Línguas originais",
+  "categoryOracaoBlurb": "O Pai Nosso como escola de oração, a perseverança e a ajuda do Espírito. E o jejum como forma de render o desejo diante do Pai.",
   "categoryOracaoTitle": "Oração",
   "categoryPanoramaBlurb": "A Bíblia como uma história só, da criação à nova criação. Antes de entrar livro a livro, esta trilha mostra o arco, a ordem dos livros e o lugar de cada parte.",
   "categoryPanoramaTitle": "Panorama",
@@ -1465,6 +1468,14 @@
     }
   },
   "explainErrorsTitle": "Erros explicados",
+  "explainYourAnswer": "Sua resposta: {text}",
+  "@explainYourAnswer": {
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
   "feedbackAlmost": "Quase",
   "feedbackAnswer": "Resposta",
   "feedbackCheer1": "Isso.",
@@ -2030,6 +2041,7 @@
   "inviteSomeone": "Alguém",
   "journalEmpty": "Ao fixar uma cena, sua resposta fica registrada aqui.",
   "journalTitle": "Anotações de estudo",
+  "journeyAntigoTestamentoBody": "De Gênesis a Malaquias: a criação, os patriarcas, a Lei, a conquista, os reis e os profetas. Cada livro é uma trilha, do Pentateuco ao silêncio entre os Testamentos.",
   "journeyBeyondHorizon": "Ainda além do horizonte",
   "@journeyBeyondHorizon": {
     "description": "Locked trail on the area path"
@@ -2063,6 +2075,7 @@
       }
     }
   },
+  "journeyNovoTestamentoBody": "De Mateus ao Apocalipse: a vida de Jesus nos Evangelhos, o nascimento da igreja em Atos, as cartas às primeiras comunidades e a esperança da volta de Cristo.",
   "journeyNow": "Agora",
   "journeyPhase": "Fase {nn}",
   "@journeyPhase": {
@@ -2073,7 +2086,7 @@
       }
     }
   },
-  "journeyPlay": "Jogar",
+  "journeyPlay": "Entrar",
   "@journeyPlay": {
     "description": "CTA da estação atual no mapa"
   },
@@ -2081,7 +2094,8 @@
   "@journeyPlusCtaDetail": {
     "description": "Segunda linha do botão da estação atual quando a cena pede o Peregrino+. A primeira é commonContinue."
   },
-  "journeySabedoriaTitle": "Sabedoria e Salmos",
+  "journeySabedoriaBody": "Jó, Salmos, Provérbios, Eclesiastes e Cantares. A dor que pergunta, a oração que canta, o conselho para cada dia e o amor: a fé vivida no chão da vida.",
+  "journeySabedoriaTitle": "Sabedoria",
   "journeyScenesLeft": "{count, plural, =1{Falta 1 cena} other{Faltam {count} cenas}}",
   "@journeyScenesLeft": {
     "placeholders": {
@@ -4304,6 +4318,8 @@
     }
   },
   "paywallUnavailable": "Assinatura ainda não disponível nesta versão.",
+  "paywallWelcomeBody": "Seu apoio mantém o Stway grátis para quem não pode pagar.",
+  "paywallWelcomeTitle": "Você é Peregrino+!",
   "paywallYourPlan": "Seu plano",
   "pilgrimAccuracyForming": "Ainda em formação",
   "pilgrimAccuracyGood": "Boa compreensão nas cenas",
@@ -5942,11 +5958,22 @@
       }
     }
   },
+  "trailsDoorIntroBible": "A Bíblia inteira, livro a livro. O Antigo Testamento guarda a promessa; o Novo mostra o cumprimento em Jesus. Cada livro é uma trilha.",
+  "trailsDoorIntroHowItWorks": "Cada trilha é feita de etapas e cenas curtas. Ao terminar uma trilha, a seguinte se abre.",
+  "trailsDoorIntroLabel": "Antes de começar",
+  "trailsDoorIntroLife": "A fé no dia a dia. Discipulado, oração e a história da igreja: como seguir Jesus hoje, como orar e como a fé chegou até nós.",
+  "trailsDoorIntroStudy": "Ferramentas para ler a Bíblia com mais cuidado: hermenêutica, hebraico e grego, doutrina e a pessoa de Cristo, sempre a partir do próprio texto.",
+  "trailsDoorIntroThemes": "A Bíblia lida por fios, não por livros: o panorama da história, as pessoas que a carregam, as promessas e o cumprimento, os grandes temas, as parábolas e a sabedoria. Cada trilha segue um fio por vários livros.",
   "trailsDownloading": "Baixando…",
   "trailsEmptyBody": "O currículo baixa na primeira abertura. Se a rede oscilar, toque para tentar de novo.",
   "trailsEmptyTitle": "As cenas ainda não chegaram",
   "trailsHorizonBody": "Novas trilhas estão sendo preparadas.",
   "trailsHorizonEyebrow": "No horizonte",
+  "trailsHubBibleBody": "Antigo e Novo Testamento.",
+  "trailsHubStudy": "Estudo",
+  "trailsHubStudyBody": "Hermenêutica, línguas e doutrina.",
+  "trailsHubThemes": "Temas",
+  "trailsHubThemesBody": "Sabedoria, panorama e os fios da Bíblia.",
   "trailsInProgress": "Em andamento",
   "trailsJourneySoonBody": "Estas trilhas ainda estão sendo preparadas.",
   "trailsLabeledScenesOf": "{total, plural, =1{{label} · {done} de 1 cena} other{{label} · {done} de {total} cenas}}",
@@ -6021,6 +6048,7 @@
       }
     }
   },
+  "trailsPlusHeading": "Peregrino+",
   "trailsRealmOpenCount": "{count, plural, =1{1 aberta} other{{count} abertas}}",
   "@trailsRealmOpenCount": {
     "description": "Number of unlocked trails in an area",
@@ -6071,7 +6099,13 @@
       }
     }
   },
+  "trailsSectionFormation": "Formação",
+  "trailsSectionFormationBody": "Aprofunde sua fé e viva a Palavra no dia a dia.",
+  "trailsSectionScriptures": "Escrituras",
+  "trailsSectionScripturesBody": "Conheça a história, o plano e as promessas de Deus.",
+  "trailsSeeAll": "Ver todas",
   "trailsShelfBible": "Bíblia",
+  "trailsShelfThemes": "Temáticos",
   "trailsStage": "Etapa {roman}",
   "@trailsStage": {
     "description": "Module number in Roman numerals, e.g. Etapa II",

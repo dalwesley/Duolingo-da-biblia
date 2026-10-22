@@ -18,6 +18,9 @@ class GenesisModuleScenery extends StatelessWidget {
   final int? missionsTotal;
   final Color? modeAccent;
 
+  /// Marca no canto do cartão da etapa (o selo de personagem dela).
+  final Widget? badge;
+
   const GenesisModuleScenery({
     super.key,
     required this.theme,
@@ -28,6 +31,7 @@ class GenesisModuleScenery extends StatelessWidget {
     this.missionsDone,
     this.missionsTotal,
     this.modeAccent,
+    this.badge,
   });
 
   @override
@@ -46,6 +50,7 @@ class GenesisModuleScenery extends StatelessWidget {
             missionsDone: missionsDone,
             missionsTotal: missionsTotal,
             accent: accent,
+            badge: badge,
           ),
           SizedBox(height: isActiveChapter ? 28 : 18),
           child,
@@ -64,6 +69,7 @@ class _ChapterTitleCard extends StatelessWidget {
   final int? missionsDone;
   final int? missionsTotal;
   final Color accent;
+  final Widget? badge;
 
   const _ChapterTitleCard({
     required this.title,
@@ -73,6 +79,7 @@ class _ChapterTitleCard extends StatelessWidget {
     this.missionsDone,
     this.missionsTotal,
     required this.accent,
+    this.badge,
   });
 
   @override
@@ -106,23 +113,39 @@ class _ChapterTitleCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            context.l10n.trailsStage(_roman(sectionIndex)),
-            style: AppTypography.body(
-              size: 12,
-              weight: FontWeight.w700,
-              color: a.textFaint,
-            ),
-          ),
-          const SizedBox(height: 8),
-          Text(
-            title,
-            style: AppTypography.display(
-              size: highlighted ? 24 : 20,
-              weight: FontWeight.w600,
-              height: 1.12,
-              color: highlighted ? a.text : a.textSecondary,
-            ),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      context.l10n.trailsStage(_roman(sectionIndex)),
+                      style: AppTypography.body(
+                        size: 12,
+                        weight: FontWeight.w700,
+                        color: a.textFaint,
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    Text(
+                      title,
+                      style: AppTypography.display(
+                        size: highlighted ? 24 : 20,
+                        weight: FontWeight.w600,
+                        height: 1.12,
+                        color: highlighted ? a.text : a.textSecondary,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              if (badge != null) ...[
+                const SizedBox(width: AppSpace.md),
+                badge!,
+              ],
+            ],
           ),
           if (highlighted) ...[
             const SizedBox(height: 12),
@@ -138,11 +161,7 @@ class _ChapterTitleCard extends StatelessWidget {
             const SizedBox(height: 14),
             Text(
               theme.verse,
-              style: AppTypography.verse(
-                size: 16,
-                height: 1.4,
-                color: a.text,
-              ),
+              style: AppTypography.verse(size: 16, height: 1.4, color: a.text),
             ),
             if (total > 0) ...[
               const SizedBox(height: 16),

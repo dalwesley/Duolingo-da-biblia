@@ -25,6 +25,7 @@ import '../widgets/hero_card_atmosphere.dart';
 import '../widgets/home_brand_backdrop.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/cloud_mascot.dart';
+import '../widgets/anan_speech.dart';
 import '../widgets/ui_primitives.dart';
 import 'main_shell.dart';
 
@@ -1131,7 +1132,8 @@ class _AnanBeat extends StatelessWidget {
             to: 0.42,
             rise: 10,
             scaleFrom: 0.94,
-            child: _SpeechBubble(
+            child: AnanSpeechBubble(
+              maxWidth: 380,
               // A segunda fala é mais alta: o balão cresce e a nuvem sobe
               // deslizando, sem salto.
               child: AnimatedSize(
@@ -1156,7 +1158,7 @@ class _AnanBeat extends StatelessWidget {
                             size: short ? 23 : 26,
                             height: 1.1,
                             weight: FontWeight.w900,
-                            color: _SpeechBubble.ink,
+                            color: AnanSpeechBubble.ink,
                           ),
                         ),
                       ),
@@ -1175,7 +1177,7 @@ class _AnanBeat extends StatelessWidget {
                             size: 15,
                             height: 1.5,
                             weight: FontWeight.w600,
-                            color: _SpeechBubble.muted,
+                            color: AnanSpeechBubble.muted,
                           ),
                         ),
                       ),
@@ -1191,7 +1193,7 @@ class _AnanBeat extends StatelessWidget {
                               Container(
                                 height: 1,
                                 width: 48,
-                                color: _SpeechBubble.line,
+                                color: AnanSpeechBubble.line,
                               ),
                               const SizedBox(height: AppSpace.md),
                               Text(
@@ -1200,7 +1202,7 @@ class _AnanBeat extends StatelessWidget {
                                 style: AppTypography.title(
                                   size: 16,
                                   height: 1.35,
-                                  color: _SpeechBubble.ink,
+                                  color: AnanSpeechBubble.ink,
                                 ),
                               ),
                             ],
@@ -1209,62 +1211,6 @@ class _AnanBeat extends StatelessWidget {
                       ],
                     ],
                   ),
-                ),
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-/// Balão de fala claro com a ponta para a nuvem, acima.
-class _SpeechBubble extends StatelessWidget {
-  final Widget child;
-
-  const _SpeechBubble({required this.child});
-
-  static const fill = Color(0xFFF4F7FB);
-  static const ink = AppColors.text;
-  static const muted = AppColors.textMuted;
-  static const line = Color(0xFF7E96AE);
-  static const _tail = 16.0;
-
-  @override
-  Widget build(BuildContext context) {
-    return ConstrainedBox(
-      constraints: const BoxConstraints(maxWidth: 380),
-      child: Stack(
-        clipBehavior: Clip.none,
-        alignment: Alignment.topCenter,
-        children: [
-          Container(
-            width: double.infinity,
-            padding: const EdgeInsets.fromLTRB(22, 20, 22, 22),
-            decoration: BoxDecoration(
-              color: fill,
-              borderRadius: BorderRadius.circular(AppRadii.lg),
-              boxShadow: [
-                BoxShadow(
-                  color: AppColors.dropShadow,
-                  blurRadius: 24,
-                  offset: const Offset(0, 10),
-                ),
-              ],
-            ),
-            child: child,
-          ),
-          Positioned(
-            top: -_tail / 2 + 1,
-            child: Transform.rotate(
-              angle: math.pi / 4,
-              child: Container(
-                width: _tail,
-                height: _tail,
-                decoration: const BoxDecoration(
-                  color: fill,
-                  borderRadius: BorderRadius.only(topLeft: Radius.circular(3)),
                 ),
               ),
             ),

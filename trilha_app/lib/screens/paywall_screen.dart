@@ -13,9 +13,13 @@ import '../services/subscription_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
+import '../widgets/act_feel.dart';
+import '../widgets/app_sheet.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/cloud_mascot.dart';
+import '../widgets/anan_speech.dart';
 import '../widgets/coming_soon_trails_card.dart';
+import '../widgets/confetti_overlay.dart';
 import '../widgets/home_brand_backdrop.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/plus_perks.dart';
@@ -74,6 +78,14 @@ class _PaywallScreenState extends State<PaywallScreen> {
       source: widget.source,
       state: _viewState,
     );
+  }
+
+  /// Compra nova: o Anan comemora uma vez. Reabrir o paywall já pago,
+  /// ou restaurar, só mostra o plano — a festa não se repete.
+  Future<void> _subscribe(Package package) async {
+    final ok = await context.read<SubscriptionService>().purchase(package);
+    if (!ok || !mounted) return;
+    await showPlusWelcomeSheet(context);
   }
 
   @override
@@ -162,14 +174,9 @@ class _PaywallScreenState extends State<PaywallScreen> {
                   AppSpace.xl + bottom,
                 ),
                 children: [
-                  Center(
-                    child: CloudMascot(
-                      face: paid ? CloudFace.sucesso : CloudFace.feliz,
-                      size: 96,
-                    ),
-                  ),
-                  const SizedBox(height: AppSpace.md),
-                  GlassCard(
+                  // O recado de abertura é a fala do Anan.
+                  AnanSpeech(
+                    face: paid ? CloudFace.sucesso : CloudFace.feliz,
                     padding: const EdgeInsets.fromLTRB(20, 18, 20, 20),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -181,7 +188,10 @@ class _PaywallScreenState extends State<PaywallScreen> {
                               ? l10n.paywallLaunchFreeTitle
                               : l10n.paywallHeadline,
                           textAlign: TextAlign.center,
-                          style: AppTypography.display(size: 28, color: a.text),
+                          style: AppTypography.display(
+                            size: 28,
+                            color: AnanSpeechBubble.ink,
+                          ),
                         ),
                         const SizedBox(height: AppSpace.sm),
                         Text(
@@ -193,7 +203,7 @@ class _PaywallScreenState extends State<PaywallScreen> {
                           textAlign: TextAlign.center,
                           style: AppTypography.body(
                             size: 14,
-                            color: a.textSecondary,
+                            color: AnanSpeechBubble.muted,
                           ),
                         ),
                       ],
@@ -270,7 +280,7 @@ class _PaywallScreenState extends State<PaywallScreen> {
                           ? l10n.paywallSubscribe
                           : l10n.paywallBuyOnce,
                       expanded: true,
-                      onTap: sub.loading ? null : () => sub.purchase(selected!),
+                      onTap: sub.loading ? null : () => _subscribe(selected!),
                     ),
                     if (renews) ...[
                       const SizedBox(height: 6),
@@ -920,6 +930,63 @@ class _YourPlan extends StatelessWidget {
               style: AppTypography.body(size: 11, color: a.textFaint),
             ),
           ],
+        ],
+      ),
+    );
+  }
+}
+
+/// Festa do Anan no instante em que a assinatura confirma.
+Future<void> showPlusWelcomeSheet(BuildContext context) {
+  ActHaptics.confirm();
+  return showAppSheet<void>(context, builder: (_) => const _PlusWelcomeSheet());
+}
+
+class _PlusWelcomeSheet extends StatelessWidget {
+  const _PlusWelcomeSheet();
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final l10n = context.l10n;
+
+    return AppSheetPanel(
+      tint: AppRoles.reward,
+      background: const ConfettiOverlay(active: true, cinematic: true),
+      padding: const EdgeInsets.fromLTRB(
+        AppSpace.xxl,
+        AppSpace.screen + 8,
+        AppSpace.xxl,
+        AppSpace.screen,
+      ),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          const SizedBox(height: 12),
+          AppSheetHeader(
+            leading: const CloudMascot(face: CloudFace.sucesso, size: 120),
+            title: l10n.paywallWelcomeTitle,
+            center: true,
+            celebration: true,
+          ),
+          const SizedBox(height: 10),
+          Text(
+            l10n.paywallWelcomeBody,
+            textAlign: TextAlign.center,
+            style: AppTypography.body(
+              size: 14,
+              height: 1.45,
+              color: a.textSecondary,
+            ),
+          ),
+          const SizedBox(height: 28),
+          CopperCta(
+            label: l10n.commonGotIt,
+            onTap: () => Navigator.pop(context),
+            trailing: null,
+            dense: true,
+          ),
         ],
       ),
     );

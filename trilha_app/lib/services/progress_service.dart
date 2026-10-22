@@ -230,6 +230,10 @@ class ProgressService extends ChangeNotifier {
   Map<String, List<String>> seasonWalkDays = {};
   List<String> usedQuestionIds = [];
   List<String> mistakeQuestionIds = [];
+
+  /// Texto da marcação, por id da pergunta. Só existe a partir do erro
+  /// que a gravou; erros antigos ficam sem.
+  Map<String, String> mistakeAnswers = {};
   List<String> playDates = [];
   bool streakFreezeAvailable = true;
   String? streakFreezeWeek;
@@ -998,6 +1002,7 @@ class ProgressService extends ChangeNotifier {
     seasonWalkDays = {};
     usedQuestionIds = [];
     mistakeQuestionIds = [];
+    mistakeAnswers = {};
     playDates = [];
     frozenDates = [];
     streakFreezeAvailable = true;
@@ -2075,15 +2080,32 @@ class ProgressService extends ChangeNotifier {
   }
 
   /// Livro de erros da sessão — não notifica a Home/IndexedStack no meio do ato.
-  Future<void> recordMistake(String questionId) async {
-    if (mistakeQuestionIds.contains(questionId)) return;
-    mistakeQuestionIds = [...mistakeQuestionIds, questionId];
-    if (mistakeQuestionIds.length > 80) {
-      mistakeQuestionIds = mistakeQuestionIds.sublist(
-        mistakeQuestionIds.length - 80,
-      );
+  /// [answer] é o texto da marcação, para a página de erros.
+  Future<void> recordMistake(String questionId, {String? answer}) async {
+    final text = answer?.trim() ?? '';
+    var changed = false;
+    if (!mistakeQuestionIds.contains(questionId)) {
+      mistakeQuestionIds = [...mistakeQuestionIds, questionId];
+      if (mistakeQuestionIds.length > 80) {
+        mistakeQuestionIds = mistakeQuestionIds.sublist(
+          mistakeQuestionIds.length - 80,
+        );
+      }
+      changed = true;
     }
-    _schedulePersist();
+    final kept = mistakeQuestionIds.toSet();
+    if (mistakeAnswers.keys.any((id) => !kept.contains(id))) {
+      mistakeAnswers = {
+        for (final e in mistakeAnswers.entries)
+          if (kept.contains(e.key)) e.key: e.value,
+      };
+      changed = true;
+    }
+    if (text.isNotEmpty && mistakeAnswers[questionId] != text) {
+      mistakeAnswers = {...mistakeAnswers, questionId: text};
+      changed = true;
+    }
+    if (changed) _schedulePersist();
   }
 
   /// Acerto de primeira por modo e gesto — base de Minha caminhada.
@@ -2127,6 +2149,9 @@ class ProgressService extends ChangeNotifier {
     mistakeQuestionIds = mistakeQuestionIds
         .where((id) => id != questionId)
         .toList();
+    if (mistakeAnswers.containsKey(questionId)) {
+      mistakeAnswers = {...mistakeAnswers}..remove(questionId);
+    }
     _schedulePersist();
   }
 
@@ -2596,6 +2621,7 @@ class ProgressService extends ChangeNotifier {
       'memoryMastered': memoryMastered,
       'usedQuestionIds': usedQuestionIds,
       'mistakeQuestionIds': mistakeQuestionIds,
+      'mistakeAnswers': mistakeAnswers,
       'playDates': playDates,
       'trailDifficulties': trailDifficulties,
       'pinnedTrailDifficulties': pinnedTrailDifficulties,
@@ -3062,6 +3088,18 @@ class ProgressService extends ChangeNotifier {
           _asStringList(data['mistakeQuestionIds']),
         );
       }
+      if (data.containsKey('mistakeAnswers')) {
+        mistakeAnswers = {
+          ...mistakeAnswers,
+          ..._asStringMap(data['mistakeAnswers']),
+        };
+      }
+      if (mistakeAnswers.keys.any((id) => !mistakeQuestionIds.contains(id))) {
+        mistakeAnswers = {
+          for (final e in mistakeAnswers.entries)
+            if (mistakeQuestionIds.contains(e.key)) e.key: e.value,
+        };
+      }
       if (data.containsKey('trailDifficulties')) {
         trailDifficulties = {
           ...trailDifficulties,
@@ -3468,6 +3506,7 @@ class ProgressService extends ChangeNotifier {
     hasSeenOnboarding = false;
     usedQuestionIds = [];
     mistakeQuestionIds = [];
+    mistakeAnswers = {};
     playDates = [];
     frozenDates = [];
     seasonWalkDays = {};

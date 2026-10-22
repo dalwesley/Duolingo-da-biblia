@@ -425,6 +425,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get categoryCristologiaTitle => 'Christology';
 
   @override
+  String get categoryDiscipuladoBlurb =>
+      'Following Jesus day by day: the Sermon on the Mount, family, mission and the hard seasons, like anxiety and starting over. Faith that becomes a path.';
+
+  @override
   String get categoryDiscipuladoTitle => 'Discipleship';
 
   @override
@@ -447,6 +451,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get categoryHermeneuticaTitle => 'Hermeneutics';
+
+  @override
+  String get categoryHistoriaIgrejaBlurb =>
+      'How the faith reached us: shared life in Acts, persecution, the councils and creeds, and the Reformation that returned to the Gospel.';
 
   @override
   String get categoryHistoriaIgrejaTitle => 'Church history';
@@ -478,6 +486,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get categoryLinguasTitle => 'Original languages';
+
+  @override
+  String get categoryOracaoBlurb =>
+      'The Lord\'s Prayer as a school of prayer, perseverance and the help of the Spirit. And fasting as a way to surrender desire before the Father.';
 
   @override
   String get categoryOracaoTitle => 'Prayer';
@@ -2183,6 +2195,11 @@ class AppLocalizationsEn extends AppLocalizations {
   String get explainErrorsTitle => 'Mistakes, explained';
 
   @override
+  String explainYourAnswer(String text) {
+    return 'Your answer: $text';
+  }
+
+  @override
   String get feedbackAlmost => 'Almost';
 
   @override
@@ -2928,6 +2945,10 @@ class AppLocalizationsEn extends AppLocalizations {
   String get journalTitle => 'Study notes';
 
   @override
+  String get journeyAntigoTestamentoBody =>
+      'From Genesis to Malachi: creation, the patriarchs, the Law, the conquest, the kings and the prophets. Each book is a trail, from the Pentateuch to the silence between the Testaments.';
+
+  @override
   String get journeyBeyondHorizon => 'Still beyond the horizon';
 
   @override
@@ -2953,6 +2974,10 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get journeyNovoTestamentoBody =>
+      'From Matthew to Revelation: the life of Jesus in the Gospels, the birth of the church in Acts, the letters to the first communities and the hope of Christ\'s return.';
+
+  @override
   String get journeyNow => 'Now';
 
   @override
@@ -2961,13 +2986,17 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get journeyPlay => 'Play';
+  String get journeyPlay => 'Enter';
 
   @override
   String get journeyPlusCtaDetail => 'with Pilgrim+';
 
   @override
-  String get journeySabedoriaTitle => 'Wisdom and Psalms';
+  String get journeySabedoriaBody =>
+      'Job, Psalms, Proverbs, Ecclesiastes and Song of Songs. Pain that asks, prayer that sings, counsel for each day and love: faith lived in ordinary life.';
+
+  @override
+  String get journeySabedoriaTitle => 'Wisdom';
 
   @override
   String journeyScenesLeft(int count) {
@@ -6131,6 +6160,13 @@ class AppLocalizationsEn extends AppLocalizations {
       'Subscription isn\'t available in this version yet.';
 
   @override
+  String get paywallWelcomeBody =>
+      'Your support keeps Stway free for those who can\'t pay.';
+
+  @override
+  String get paywallWelcomeTitle => 'You\'re Pilgrim+!';
+
+  @override
   String get paywallYourPlan => 'Your plan';
 
   @override
@@ -8605,6 +8641,29 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get trailsDoorIntroBible =>
+      'The whole Bible, book by book. The Old Testament holds the promise; the New shows it fulfilled in Jesus. Each book is a trail.';
+
+  @override
+  String get trailsDoorIntroHowItWorks =>
+      'Each trail is made of stages and short scenes. When you finish a trail, the next one opens.';
+
+  @override
+  String get trailsDoorIntroLabel => 'Before you start';
+
+  @override
+  String get trailsDoorIntroLife =>
+      'Faith in everyday life. Discipleship, prayer, and church history: how to follow Jesus today, how to pray, and how the faith reached us.';
+
+  @override
+  String get trailsDoorIntroStudy =>
+      'Tools to read the Bible more carefully: hermeneutics, Hebrew and Greek, doctrine, and the person of Christ, always starting from the text itself.';
+
+  @override
+  String get trailsDoorIntroThemes =>
+      'The Bible read by threads, not by books: the big picture, the people who carry the story, promise and fulfillment, the great themes, the parables, and wisdom. Each trail follows one thread across many books.';
+
+  @override
   String get trailsDownloading => 'Downloading…';
 
   @override
@@ -8619,6 +8678,22 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get trailsHorizonEyebrow => 'On the horizon';
+
+  @override
+  String get trailsHubBibleBody => 'Old and New Testaments.';
+
+  @override
+  String get trailsHubStudy => 'Study';
+
+  @override
+  String get trailsHubStudyBody => 'Hermeneutics, languages, and doctrine.';
+
+  @override
+  String get trailsHubThemes => 'Themes';
+
+  @override
+  String get trailsHubThemesBody =>
+      'Wisdom, overview, and the threads of the Bible.';
 
   @override
   String get trailsInProgress => 'In progress';
@@ -8669,6 +8744,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String trailsModesCleared(String modes) {
     return '$modes complete';
   }
+
+  @override
+  String get trailsPlusHeading => 'Peregrino+';
 
   @override
   String trailsRealmOpenCount(int count) {
@@ -8726,7 +8804,27 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get trailsSectionFormation => 'Formation';
+
+  @override
+  String get trailsSectionFormationBody =>
+      'Go deeper in faith and live the Word each day.';
+
+  @override
+  String get trailsSectionScriptures => 'Scripture';
+
+  @override
+  String get trailsSectionScripturesBody =>
+      'The story, the plan, and the promises of God.';
+
+  @override
+  String get trailsSeeAll => 'See all';
+
+  @override
   String get trailsShelfBible => 'Bible';
+
+  @override
+  String get trailsShelfThemes => 'Themes';
 
   @override
   String trailsStage(String roman) {

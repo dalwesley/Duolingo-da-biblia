@@ -90,6 +90,55 @@ void main() {
       expect(groups.last.passages.single.items.single.prompt, 'outra trilha');
     });
 
+    test('verdadeiro ou falso guarda a outra opção como a sua', () {
+      final m = explainBankQuestion(
+        BankQuestion(
+          id: 'tf',
+          difficulty: TrailDifficulty.semente,
+          section: 'gen-01',
+          question: 'A terra já está ordenada?',
+          options: const [
+            QuestionOption(id: 'true', text: 'Verdadeiro'),
+            QuestionOption(id: 'false', text: 'Falso'),
+          ],
+          correctOptionId: 'false',
+          feedbackCorrect: 'Certo: a terra está sem forma.',
+          feedbackWrong: const {},
+          type: ExerciseType.trueFalse,
+        ),
+      );
+      expect(m!.correct, 'Falso');
+      expect(m.yours, 'Verdadeiro');
+      expect(m.why, 'A terra está sem forma.');
+    });
+
+    test('marcação guardada aparece em qualquer gesto', () {
+      final bank = {
+        'gap': BankQuestion(
+          id: 'gap',
+          difficulty: TrailDifficulty.caminhada,
+          section: 'gen-01',
+          question: 'Havia ___ sobre a face do abismo.',
+          options: const [
+            QuestionOption(id: 'a', text: 'luz'),
+            QuestionOption(id: 'b', text: 'trevas'),
+            QuestionOption(id: 'c', text: 'águas'),
+          ],
+          correctOptionId: 'b',
+          feedbackCorrect: 'Havia trevas sobre a face do abismo.',
+          feedbackWrong: const {},
+          type: ExerciseType.complete,
+        ),
+      };
+      final out = explainMistakes(
+        mistakeIds: ['gap'],
+        byId: (id) => bank[id],
+        answers: const {'gap': 'luz'},
+      );
+      expect(out.single.correct, 'trevas');
+      expect(out.single.yours, 'luz');
+    });
+
     test('a leitura tira Certo e Exato e deixa a frase', () {
       expect(
         readingWhy('Certo: a terra está sem forma e vazia.'),

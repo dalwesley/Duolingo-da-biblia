@@ -235,7 +235,7 @@ void main() {
     expect(find.text('Modo Observação'), findsOneWidget);
     expect(find.text('Faltam 16 cenas'), findsOneWidget);
     expect(find.text('Agora'), findsOneWidget);
-    expect(find.text('Jogar'), findsOneWidget);
+    expect(find.text('Entrar'), findsOneWidget);
     expect(find.text('você está aqui'), findsNothing);
   });
 

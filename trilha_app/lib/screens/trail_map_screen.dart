@@ -383,16 +383,6 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                             ),
                             child: _trailMedalChip(progress, trail)!,
                           ),
-                        if (_trailSealChip(progress, trail) != null)
-                          Padding(
-                            padding: const EdgeInsets.fromLTRB(
-                              AppSpace.screen,
-                              0,
-                              AppSpace.screen,
-                              AppSpace.md,
-                            ),
-                            child: _trailSealChip(progress, trail)!,
-                          ),
                         ...trail.modules.asMap().entries.map((entry) {
                           final mi = entry.key;
                           final mod = entry.value;
@@ -448,6 +438,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                             missionsDone: modDone,
                             missionsTotal: mod.missions.length,
                             modeAccent: modeAccent,
+                            badge: _sealMarkFor(progress, trail, mod),
                             child: path,
                           );
                         }),
@@ -525,9 +516,12 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     );
   }
 
-  Widget? _trailSealChip(ProgressService progress, Trail trail) {
+  /// Selo de personagem no canto do cartão da etapa que o guarda. Aparece
+  /// já ganho, ou apagado quando a cena dele é a próxima.
+  Widget? _sealMarkFor(ProgressService progress, Trail trail, TrailModule mod) {
     final seal = CharacterSeals.forTrail(trail.slug);
     if (seal == null) return null;
+    if (!mod.missions.any((m) => m.slug == seal.missionSlug)) return null;
     final unlocked = progress.isMissionCompleted(seal.missionSlug);
     if (!unlocked) {
       final next = trail.missionSlugs
@@ -535,25 +529,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
           .firstOrNull;
       if (next != seal.missionSlug) return null;
     }
-    final a = Appearance.of(context);
-    return Align(
-      alignment: Alignment.centerLeft,
-      child: Material(
-        color: Colors.transparent,
-        child: InkWell(
-          onTap: unlocked ? () => showCharacterSealSheet(context, seal) : null,
-          borderRadius: BorderRadius.circular(AppRadii.sm),
-          child: Opacity(
-            opacity: unlocked ? 1 : 0.5,
-            child: SoftBadge(
-              text: context.l10n.trailMapSeal(seal.name),
-              glyph: seal.glyph,
-              textColor: a.text,
-            ),
-          ),
-        ),
-      ),
-    );
+    return CharacterSealMark(seal: seal, unlocked: unlocked);
   }
 }
 

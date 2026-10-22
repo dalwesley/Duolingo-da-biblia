@@ -9,6 +9,7 @@ import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/cloud_mascot.dart';
+import '../widgets/anan_speech.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
@@ -73,27 +74,35 @@ class _SupportScreenState extends State<SupportScreen> {
                       AppSpace.xl,
                     ),
                     children: [
-                      Center(
-                        child: CloudMascot(
-                          face: _thanked ? CloudFace.sucesso : CloudFace.feliz,
-                          size: 104,
-                        ),
-                      ),
-                      const SizedBox(height: AppSpace.lg),
-                      Text(
-                        _thanked
-                            ? l10n.supportThanksTitle
-                            : l10n.supportHeadline,
-                        textAlign: TextAlign.center,
-                        style: AppTypography.display(size: 26, color: a.text),
-                      ),
-                      const SizedBox(height: AppSpace.sm),
-                      Text(
-                        _thanked ? l10n.supportThanksBody : l10n.supportBody,
-                        textAlign: TextAlign.center,
-                        style: AppTypography.body(
-                          size: 14,
-                          color: a.textSecondary,
+                      // O recado de abertura é a fala do Anan.
+                      AnanSpeech(
+                        face: _thanked ? CloudFace.sucesso : CloudFace.feliz,
+                        padding: const EdgeInsets.fromLTRB(20, 18, 20, 20),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          children: [
+                            Text(
+                              _thanked
+                                  ? l10n.supportThanksTitle
+                                  : l10n.supportHeadline,
+                              textAlign: TextAlign.center,
+                              style: AppTypography.display(
+                                size: 26,
+                                color: AnanSpeechBubble.ink,
+                              ),
+                            ),
+                            const SizedBox(height: AppSpace.sm),
+                            Text(
+                              _thanked
+                                  ? l10n.supportThanksBody
+                                  : l10n.supportBody,
+                              textAlign: TextAlign.center,
+                              style: AppTypography.body(
+                                size: 14,
+                                color: AnanSpeechBubble.muted,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                       const SizedBox(height: AppSpace.xl),

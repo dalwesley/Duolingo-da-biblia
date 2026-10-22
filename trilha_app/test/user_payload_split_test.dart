@@ -12,6 +12,7 @@ void main() {
       'companionCodes': ['XYZ'],
       'missionReflections': {'a': 'texto', 'b': 'outro'},
       'mistakeQuestionIds': ['q1'],
+      'mistakeAnswers': {'q1': 'Falso'},
       'settings': {'portraitStyle': 'photo', 'sound': true},
     });
     expect(
@@ -24,6 +25,7 @@ void main() {
       'companionCodes',
       'missionReflections',
       'mistakeQuestionIds',
+      'mistakeAnswers',
       'settings',
     ]) {
       expect(split.public.containsKey(k), isFalse, reason: k);

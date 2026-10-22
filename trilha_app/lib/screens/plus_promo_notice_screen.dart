@@ -13,6 +13,7 @@ import '../utils/layout_utils.dart';
 import '../utils/plus_offers.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/cloud_mascot.dart';
+import '../widgets/anan_speech.dart';
 import '../widgets/home_brand_backdrop.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/plus_perks.dart';
@@ -106,14 +107,9 @@ class PlusPromoNoticeScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Center(
-                    child: CloudMascot(
-                      face: _ended ? CloudFace.feliz : CloudFace.triste,
-                      size: 112,
-                    ),
-                  ),
-                  const SizedBox(height: AppSpace.md),
-                  GlassCard(
+                  // O recado de abertura é a fala do Anan.
+                  AnanSpeech(
+                    face: _ended ? CloudFace.feliz : CloudFace.triste,
                     padding: const EdgeInsets.fromLTRB(20, 18, 20, 20),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -124,7 +120,7 @@ class PlusPromoNoticeScreen extends StatelessWidget {
                           style: AppTypography.body(
                             size: 12,
                             weight: FontWeight.w800,
-                            color: AppRoles.reward,
+                            color: AnanSpeechBubble.mark,
                           ),
                         ),
                         const SizedBox(height: AppSpace.sm),
@@ -133,7 +129,10 @@ class PlusPromoNoticeScreen extends StatelessWidget {
                               ? l10n.plusNoticeEndedTitle
                               : l10n.plusNoticeEndingTitle,
                           textAlign: TextAlign.center,
-                          style: AppTypography.display(size: 30, color: a.text),
+                          style: AppTypography.display(
+                            size: 30,
+                            color: AnanSpeechBubble.ink,
+                          ),
                         ),
                         const SizedBox(height: AppSpace.sm),
                         Text(
@@ -144,7 +143,7 @@ class PlusPromoNoticeScreen extends StatelessWidget {
                           style: AppTypography.body(
                             size: 14,
                             height: 1.45,
-                            color: a.textSecondary,
+                            color: AnanSpeechBubble.muted,
                           ),
                         ),
                         if (!_ended && daysLeft > 0) ...[
@@ -168,7 +167,7 @@ class PlusPromoNoticeScreen extends StatelessWidget {
                                 l10n.plusOfferDaysLeft(daysLeft),
                                 style: AppTypography.display(
                                   size: 22,
-                                  color: a.text,
+                                  color: AnanSpeechBubble.ink,
                                 ),
                               ),
                             ),

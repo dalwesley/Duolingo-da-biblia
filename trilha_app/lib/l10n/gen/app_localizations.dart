@@ -778,6 +778,12 @@ abstract class AppLocalizations {
   /// **'Cristologia'**
   String get categoryCristologiaTitle;
 
+  /// No description provided for @categoryDiscipuladoBlurb.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seguir Jesus no dia a dia: o Sermão do Monte, a família, a missão e as horas difíceis, como ansiedade e recomeço. Fé que vira caminho.'**
+  String get categoryDiscipuladoBlurb;
+
   /// No description provided for @categoryDiscipuladoTitle.
   ///
   /// In pt, this message translates to:
@@ -819,6 +825,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Hermenêutica'**
   String get categoryHermeneuticaTitle;
+
+  /// No description provided for @categoryHistoriaIgrejaBlurb.
+  ///
+  /// In pt, this message translates to:
+  /// **'Como a fé chegou até nós: a vida comum em Atos, a perseguição, os concílios e credos, e a Reforma que voltou ao Evangelho.'**
+  String get categoryHistoriaIgrejaBlurb;
 
   /// No description provided for @categoryHistoriaIgrejaTitle.
   ///
@@ -873,6 +885,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Línguas originais'**
   String get categoryLinguasTitle;
+
+  /// No description provided for @categoryOracaoBlurb.
+  ///
+  /// In pt, this message translates to:
+  /// **'O Pai Nosso como escola de oração, a perseverança e a ajuda do Espírito. E o jejum como forma de render o desejo diante do Pai.'**
+  String get categoryOracaoBlurb;
 
   /// No description provided for @categoryOracaoTitle.
   ///
@@ -3472,6 +3490,12 @@ abstract class AppLocalizations {
   /// **'Erros explicados'**
   String get explainErrorsTitle;
 
+  /// No description provided for @explainYourAnswer.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sua resposta: {text}'**
+  String explainYourAnswer(String text);
+
   /// No description provided for @feedbackAlmost.
   ///
   /// In pt, this message translates to:
@@ -4594,6 +4618,12 @@ abstract class AppLocalizations {
   /// **'Anotações de estudo'**
   String get journalTitle;
 
+  /// No description provided for @journeyAntigoTestamentoBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'De Gênesis a Malaquias: a criação, os patriarcas, a Lei, a conquista, os reis e os profetas. Cada livro é uma trilha, do Pentateuco ao silêncio entre os Testamentos.'**
+  String get journeyAntigoTestamentoBody;
+
   /// Locked trail on the area path
   ///
   /// In pt, this message translates to:
@@ -4630,6 +4660,12 @@ abstract class AppLocalizations {
   /// **'{mode} em curso'**
   String journeyModeInProgress(String mode);
 
+  /// No description provided for @journeyNovoTestamentoBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'De Mateus ao Apocalipse: a vida de Jesus nos Evangelhos, o nascimento da igreja em Atos, as cartas às primeiras comunidades e a esperança da volta de Cristo.'**
+  String get journeyNovoTestamentoBody;
+
   /// No description provided for @journeyNow.
   ///
   /// In pt, this message translates to:
@@ -4645,7 +4681,7 @@ abstract class AppLocalizations {
   /// CTA da estação atual no mapa
   ///
   /// In pt, this message translates to:
-  /// **'Jogar'**
+  /// **'Entrar'**
   String get journeyPlay;
 
   /// Segunda linha do botão da estação atual quando a cena pede o Peregrino+. A primeira é commonContinue.
@@ -4654,10 +4690,16 @@ abstract class AppLocalizations {
   /// **'com o Peregrino+'**
   String get journeyPlusCtaDetail;
 
+  /// No description provided for @journeySabedoriaBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Jó, Salmos, Provérbios, Eclesiastes e Cantares. A dor que pergunta, a oração que canta, o conselho para cada dia e o amor: a fé vivida no chão da vida.'**
+  String get journeySabedoriaBody;
+
   /// No description provided for @journeySabedoriaTitle.
   ///
   /// In pt, this message translates to:
-  /// **'Sabedoria e Salmos'**
+  /// **'Sabedoria'**
   String get journeySabedoriaTitle;
 
   /// No description provided for @journeyScenesLeft.
@@ -9525,6 +9567,18 @@ abstract class AppLocalizations {
   /// **'Assinatura ainda não disponível nesta versão.'**
   String get paywallUnavailable;
 
+  /// No description provided for @paywallWelcomeBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu apoio mantém o Stway grátis para quem não pode pagar.'**
+  String get paywallWelcomeBody;
+
+  /// No description provided for @paywallWelcomeTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você é Peregrino+!'**
+  String get paywallWelcomeTitle;
+
   /// No description provided for @paywallYourPlan.
   ///
   /// In pt, this message translates to:
@@ -13371,6 +13425,42 @@ abstract class AppLocalizations {
   /// **'{done} de {total}'**
   String trailsDoneOfTotal(int done, int total);
 
+  /// No description provided for @trailsDoorIntroBible.
+  ///
+  /// In pt, this message translates to:
+  /// **'A Bíblia inteira, livro a livro. O Antigo Testamento guarda a promessa; o Novo mostra o cumprimento em Jesus. Cada livro é uma trilha.'**
+  String get trailsDoorIntroBible;
+
+  /// No description provided for @trailsDoorIntroHowItWorks.
+  ///
+  /// In pt, this message translates to:
+  /// **'Cada trilha é feita de etapas e cenas curtas. Ao terminar uma trilha, a seguinte se abre.'**
+  String get trailsDoorIntroHowItWorks;
+
+  /// No description provided for @trailsDoorIntroLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Antes de começar'**
+  String get trailsDoorIntroLabel;
+
+  /// No description provided for @trailsDoorIntroLife.
+  ///
+  /// In pt, this message translates to:
+  /// **'A fé no dia a dia. Discipulado, oração e a história da igreja: como seguir Jesus hoje, como orar e como a fé chegou até nós.'**
+  String get trailsDoorIntroLife;
+
+  /// No description provided for @trailsDoorIntroStudy.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ferramentas para ler a Bíblia com mais cuidado: hermenêutica, hebraico e grego, doutrina e a pessoa de Cristo, sempre a partir do próprio texto.'**
+  String get trailsDoorIntroStudy;
+
+  /// No description provided for @trailsDoorIntroThemes.
+  ///
+  /// In pt, this message translates to:
+  /// **'A Bíblia lida por fios, não por livros: o panorama da história, as pessoas que a carregam, as promessas e o cumprimento, os grandes temas, as parábolas e a sabedoria. Cada trilha segue um fio por vários livros.'**
+  String get trailsDoorIntroThemes;
+
   /// No description provided for @trailsDownloading.
   ///
   /// In pt, this message translates to:
@@ -13400,6 +13490,36 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'No horizonte'**
   String get trailsHorizonEyebrow;
+
+  /// No description provided for @trailsHubBibleBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Antigo e Novo Testamento.'**
+  String get trailsHubBibleBody;
+
+  /// No description provided for @trailsHubStudy.
+  ///
+  /// In pt, this message translates to:
+  /// **'Estudo'**
+  String get trailsHubStudy;
+
+  /// No description provided for @trailsHubStudyBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Hermenêutica, línguas e doutrina.'**
+  String get trailsHubStudyBody;
+
+  /// No description provided for @trailsHubThemes.
+  ///
+  /// In pt, this message translates to:
+  /// **'Temas'**
+  String get trailsHubThemes;
+
+  /// No description provided for @trailsHubThemesBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sabedoria, panorama e os fios da Bíblia.'**
+  String get trailsHubThemesBody;
 
   /// No description provided for @trailsInProgress.
   ///
@@ -13461,6 +13581,12 @@ abstract class AppLocalizations {
   /// **'{modes} concluídas'**
   String trailsModesCleared(String modes);
 
+  /// No description provided for @trailsPlusHeading.
+  ///
+  /// In pt, this message translates to:
+  /// **'Peregrino+'**
+  String get trailsPlusHeading;
+
   /// Number of unlocked trails in an area
   ///
   /// In pt, this message translates to:
@@ -13491,11 +13617,47 @@ abstract class AppLocalizations {
   /// **'{total, plural, =1{{done}/1 cena} other{{done}/{total} cenas}}'**
   String trailsScenesShort(int done, int total);
 
+  /// No description provided for @trailsSectionFormation.
+  ///
+  /// In pt, this message translates to:
+  /// **'Formação'**
+  String get trailsSectionFormation;
+
+  /// No description provided for @trailsSectionFormationBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Aprofunde sua fé e viva a Palavra no dia a dia.'**
+  String get trailsSectionFormationBody;
+
+  /// No description provided for @trailsSectionScriptures.
+  ///
+  /// In pt, this message translates to:
+  /// **'Escrituras'**
+  String get trailsSectionScriptures;
+
+  /// No description provided for @trailsSectionScripturesBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Conheça a história, o plano e as promessas de Deus.'**
+  String get trailsSectionScripturesBody;
+
+  /// No description provided for @trailsSeeAll.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ver todas'**
+  String get trailsSeeAll;
+
   /// No description provided for @trailsShelfBible.
   ///
   /// In pt, this message translates to:
   /// **'Bíblia'**
   String get trailsShelfBible;
+
+  /// No description provided for @trailsShelfThemes.
+  ///
+  /// In pt, this message translates to:
+  /// **'Temáticos'**
+  String get trailsShelfThemes;
 
   /// Module number in Roman numerals, e.g. Etapa II
   ///
