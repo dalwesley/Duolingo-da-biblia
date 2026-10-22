@@ -2203,5 +2203,2192 @@
     "trail": "oseias",
     "section": "oseias-oseias-03-desafio-oseias",
     "id": "oseias-pro-oseias-oseias-03-desafio-oseias-06"
+  },
+  {
+    "id": "oseias-sem-os-03-fornicacao-01",
+    "trail": "oseias",
+    "section": "os-03-fornicacao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Jeová manda Oseias tomar uma mulher de fornicação.",
+    "prompt": "Jeová manda Oseias tomar uma mulher de fornicação.",
+    "cue": "Jeová manda Oseias tomar uma mulher de fornicação.",
+    "verseRef": "Oséias 1:2",
+    "learningObjective": "Sair sabendo que o casamento de Oseias retrata a terra apartada de Jeová.",
+    "evidence": [
+      "Oséias 1:2"
+    ],
+    "feedbackCorrect": "Certo: a ordem abre o livro.",
+    "feedbackWrong": {
+      "false": "O versículo traz essa ordem a Oseias."
+    },
+    "passageText": "Quando Jeová falou, ao princípio, com Oseias, disse Jeová a Oseias: Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "oseias-sem-os-03-fornicacao-02",
+    "trail": "oseias",
+    "section": "os-03-fornicacao",
+    "difficulty": "semente",
+    "type": "tap",
+    "skill": "observe",
+    "question": "Em Oséias 1:2, toque a palavra que falta em \"uma mulher de ___\"?",
+    "prompt": "Em Oséias 1:2, toque a palavra que falta em \"uma mulher de ___\"?",
+    "cue": "Em Oséias 1:2, toque a palavra que falta em \"uma mulher de ___\"?",
+    "verseRef": "Oséias 1:2",
+    "learningObjective": "Sair sabendo que o casamento de Oseias retrata a terra apartada de Jeová.",
+    "evidence": [
+      "Oséias 1:2"
+    ],
+    "feedbackCorrect": "Exato: mulher de fornicação.",
+    "feedbackWrong": {
+      "a": "Filhos vêm na sequência.",
+      "c": "Terra é quem comete o mesmo mal."
+    },
+    "passageText": "Quando Jeová falou, ao princípio, com Oseias, disse Jeová a Oseias: Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová.",
+    "template": "uma mulher de ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "filhos"
+      },
+      {
+        "id": "b",
+        "text": "fornicação"
+      },
+      {
+        "id": "c",
+        "text": "terra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "oseias-sem-os-03-fornicacao-03",
+    "trail": "oseias",
+    "section": "os-03-fornicacao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "O que Jeová ordena a Oseias?",
+    "prompt": "O que Jeová ordena a Oseias?",
+    "cue": "O que Jeová ordena a Oseias?",
+    "verseRef": "Oséias 1:2",
+    "learningObjective": "Sair sabendo que o casamento de Oseias retrata a terra apartada de Jeová.",
+    "evidence": [
+      "Oséias 1:2"
+    ],
+    "feedbackCorrect": "Certo: tomar mulher infiel por causa da terra.",
+    "feedbackWrong": {
+      "b": "Jeová fala; não manda calar.",
+      "c": "Não há aliança política neste versículo.",
+      "d": "O versículo não fala de oferta no templo."
+    },
+    "passageText": "Quando Jeová falou, ao princípio, com Oseias, disse Jeová a Oseias: Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tomar uma mulher de fornicação, porque a terra se aparta."
+      },
+      {
+        "id": "b",
+        "text": "Deixar a terra e calar até o povo pedir."
+      },
+      {
+        "id": "c",
+        "text": "Casar com uma princesa para selar paz com Judá."
+      },
+      {
+        "id": "d",
+        "text": "Oferecer o filho no templo em lugar do casamento."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-sem-os-03-fornicacao-04",
+    "trail": "oseias",
+    "section": "os-03-fornicacao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Qual é a ordem dos fatos em Oséias 1:2?",
+    "prompt": "Qual é a ordem dos fatos em Oséias 1:2?",
+    "cue": "Qual é a ordem dos fatos em Oséias 1:2?",
+    "verseRef": "Oséias 1:2",
+    "learningObjective": "Sair sabendo que o casamento de Oseias retrata a terra apartada de Jeová.",
+    "evidence": [
+      "Oséias 1:2"
+    ],
+    "feedbackCorrect": "Certo: fala, ordem e então a razão.",
+    "feedbackWrong": {
+      "b": "A ordem vem depois de Jeová falar.",
+      "c": "A terra explica a ordem, não a precede."
+    },
+    "passageText": "Quando Jeová falou, ao princípio, com Oseias, disse Jeová a Oseias: Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová fala com Oseias ao princípio."
+      },
+      {
+        "id": "b",
+        "text": "Manda tomar mulher e filhos de fornicação."
+      },
+      {
+        "id": "c",
+        "text": "A razão é a terra que se aparta de Jeová."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-sem-os-03-fornicacao-05",
+    "trail": "oseias",
+    "section": "os-03-fornicacao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Complete a frase: \"porque a ___ comete fornicação\"",
+    "prompt": "Complete a frase: \"porque a ___ comete fornicação\"",
+    "cue": "Complete a frase: \"porque a ___ comete fornicação\"",
+    "verseRef": "Oséias 1:2",
+    "learningObjective": "Sair sabendo que o casamento de Oseias retrata a terra apartada de Jeová.",
+    "evidence": [
+      "Oséias 1:2"
+    ],
+    "feedbackCorrect": "Certo: a terra comete fornicação.",
+    "feedbackWrong": {
+      "b": "Mulher é quem ele deve tomar.",
+      "c": "Filhos acompanham a ordem."
+    },
+    "passageText": "Quando Jeová falou, ao princípio, com Oseias, disse Jeová a Oseias: Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová.",
+    "template": "porque a ___ comete fornicação",
+    "options": [
+      {
+        "id": "a",
+        "text": "terra"
+      },
+      {
+        "id": "b",
+        "text": "mulher"
+      },
+      {
+        "id": "c",
+        "text": "filhos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-sem-os-03-fornicacao-06",
+    "trail": "oseias",
+    "section": "os-03-fornicacao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Oséias 1:2 comunica que se liga a este contexto?",
+    "prompt": "O que Oséias 1:2 comunica que se liga a este contexto?",
+    "cue": "O que Oséias 1:2 comunica que se liga a este contexto?",
+    "verseRef": "Oséias 1:2",
+    "learningObjective": "Sair sabendo que o casamento de Oseias retrata a terra apartada de Jeová.",
+    "evidence": [
+      "Oséias 1:2"
+    ],
+    "feedbackCorrect": "Certo: a ordem mostra a terra infiel.",
+    "feedbackWrong": {
+      "b": "Não há tratado neste versículo.",
+      "c": "Não se fala de templo."
+    },
+    "passageText": "Quando Jeová falou, ao princípio, com Oseias, disse Jeová a Oseias: Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová.",
+    "passageA": {
+      "ref": "Oséias 1:2",
+      "text": "Quando Jeová falou, ao princípio, com Oseias, disse Jeová a Oseias: Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Infidelidade a Deus é adultério"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Aliança rompida"
+      },
+      {
+        "id": "b",
+        "text": "Paz com Judá"
+      },
+      {
+        "id": "c",
+        "text": "Culto no templo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-cam-os-03-fornicacao-01",
+    "trail": "oseias",
+    "section": "os-03-fornicacao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "A fornicação, no texto, é só da família e não tem a ver com a terra.",
+    "prompt": "A fornicação, no texto, é só da família e não tem a ver com a terra.",
+    "cue": "A fornicação, no texto, é só da família e não tem a ver com a terra.",
+    "verseRef": "Oséias 1:2",
+    "learningObjective": "Sair sabendo que o casamento de Oseias retrata a terra apartada de Jeová.",
+    "evidence": [
+      "Oséias 1:2"
+    ],
+    "feedbackCorrect": "Certo: a terra é quem se aparta de Jeová.",
+    "feedbackWrong": {
+      "true": "O porque da ordem é a fornicação da terra."
+    },
+    "passageText": "Quando Jeová falou, ao princípio, com Oseias, disse Jeová a Oseias: Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "id": "oseias-cam-os-03-fornicacao-02",
+    "trail": "oseias",
+    "section": "os-03-fornicacao",
+    "difficulty": "caminhada",
+    "type": "tap",
+    "skill": "understand",
+    "question": "Em Oséias 1:2, toque a palavra que falta em \"e ___ de fornicação\"?",
+    "prompt": "Em Oséias 1:2, toque a palavra que falta em \"e ___ de fornicação\"?",
+    "cue": "Em Oséias 1:2, toque a palavra que falta em \"e ___ de fornicação\"?",
+    "verseRef": "Oséias 1:2",
+    "learningObjective": "Sair sabendo que o casamento de Oseias retrata a terra apartada de Jeová.",
+    "evidence": [
+      "Oséias 1:2"
+    ],
+    "feedbackCorrect": "Exato: também filhos de fornicação.",
+    "feedbackWrong": {
+      "a": "Mulher é a primeira ordem.",
+      "c": "Terra explica o porque."
+    },
+    "passageText": "Quando Jeová falou, ao princípio, com Oseias, disse Jeová a Oseias: Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová.",
+    "template": "e ___ de fornicação",
+    "options": [
+      {
+        "id": "a",
+        "text": "mulher"
+      },
+      {
+        "id": "b",
+        "text": "filhos"
+      },
+      {
+        "id": "c",
+        "text": "terra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "oseias-cam-os-03-fornicacao-03",
+    "trail": "oseias",
+    "section": "os-03-fornicacao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Por que o casamento do profeta importa para ler o livro?",
+    "prompt": "Por que o casamento do profeta importa para ler o livro?",
+    "cue": "Por que o casamento do profeta importa para ler o livro?",
+    "verseRef": "Oséias 1:2",
+    "learningObjective": "Sair sabendo que o casamento de Oseias retrata a terra apartada de Jeová.",
+    "evidence": [
+      "Oséias 1:2"
+    ],
+    "feedbackCorrect": "Certo: a casa dele mostra a infidelidade do povo.",
+    "feedbackWrong": {
+      "b": "Jeová liga a ordem à terra.",
+      "c": "O texto acusa a terra, não só a mulher.",
+      "d": "A ordem vem de Jeová."
+    },
+    "passageText": "Quando Jeová falou, ao princípio, com Oseias, disse Jeová a Oseias: Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A dor da casa revela a dor de Jeová com a terra."
+      },
+      {
+        "id": "b",
+        "text": "O casamento é detalhe privado, sem ligação com Israel."
+      },
+      {
+        "id": "c",
+        "text": "A terra permanece fiel, e só a mulher erra."
+      },
+      {
+        "id": "d",
+        "text": "Oseias escolhe a mulher sem ordem de Jeová."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-cam-os-03-fornicacao-04",
+    "trail": "oseias",
+    "section": "os-03-fornicacao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Oséias 1:2?",
+    "prompt": "Como se encadeiam os eventos de Oséias 1:2?",
+    "cue": "Como se encadeiam os eventos de Oséias 1:2?",
+    "verseRef": "Oséias 1:2",
+    "learningObjective": "Sair sabendo que o casamento de Oseias retrata a terra apartada de Jeová.",
+    "evidence": [
+      "Oséias 1:2"
+    ],
+    "feedbackCorrect": "Certo: fala, ordem e então a razão.",
+    "feedbackWrong": {
+      "b": "A ordem vem depois de Jeová falar.",
+      "c": "A terra explica a ordem, não a precede."
+    },
+    "passageText": "Quando Jeová falou, ao princípio, com Oseias, disse Jeová a Oseias: Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová fala com Oseias ao princípio."
+      },
+      {
+        "id": "b",
+        "text": "Manda tomar mulher e filhos de fornicação."
+      },
+      {
+        "id": "c",
+        "text": "A razão é a terra que se aparta de Jeová."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-cam-os-03-fornicacao-05",
+    "trail": "oseias",
+    "section": "os-03-fornicacao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Complete a frase: \"disse Jeová a ___\"",
+    "prompt": "Complete a frase: \"disse Jeová a ___\"",
+    "cue": "Complete a frase: \"disse Jeová a ___\"",
+    "verseRef": "Oséias 1:2",
+    "learningObjective": "Sair sabendo que o casamento de Oseias retrata a terra apartada de Jeová.",
+    "evidence": [
+      "Oséias 1:2"
+    ],
+    "feedbackCorrect": "Certo: a ordem é dita a Oseias.",
+    "feedbackWrong": {
+      "b": "Terra é a razão, não o ouvinte.",
+      "c": "Filhos fazem parte da ordem."
+    },
+    "passageText": "Quando Jeová falou, ao princípio, com Oseias, disse Jeová a Oseias: Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová.",
+    "template": "disse Jeová a ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "Oseias"
+      },
+      {
+        "id": "b",
+        "text": "terra"
+      },
+      {
+        "id": "c",
+        "text": "filhos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-cam-os-03-fornicacao-06",
+    "trail": "oseias",
+    "section": "os-03-fornicacao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "Que relação Oséias 1:2 estabelece com este contexto?",
+    "prompt": "Que relação Oséias 1:2 estabelece com este contexto?",
+    "cue": "Que relação Oséias 1:2 estabelece com este contexto?",
+    "verseRef": "Oséias 1:2",
+    "learningObjective": "Sair sabendo que o casamento de Oseias retrata a terra apartada de Jeová.",
+    "evidence": [
+      "Oséias 1:2"
+    ],
+    "feedbackCorrect": "Certo: a casa do profeta espelha a terra.",
+    "feedbackWrong": {
+      "b": "O porque está dito.",
+      "c": "A terra se aparta."
+    },
+    "passageText": "Quando Jeová falou, ao princípio, com Oseias, disse Jeová a Oseias: Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová.",
+    "passageA": {
+      "ref": "Oséias 1:2",
+      "text": "Quando Jeová falou, ao princípio, com Oseias, disse Jeová a Oseias: Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Infidelidade a Deus é adultério"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Casa como espelho"
+      },
+      {
+        "id": "b",
+        "text": "Ordem sem motivo"
+      },
+      {
+        "id": "c",
+        "text": "Terra ainda fiel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-pro-os-03-fornicacao-01",
+    "trail": "oseias",
+    "section": "os-03-fornicacao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "O casamento do profeta torna visível a aliança rompida.",
+    "prompt": "O casamento do profeta torna visível a aliança rompida.",
+    "cue": "O casamento do profeta torna visível a aliança rompida.",
+    "verseRef": "Oséias 1:2",
+    "learningObjective": "Sair sabendo que o casamento de Oseias retrata a terra apartada de Jeová.",
+    "evidence": [
+      "Oséias 1:2"
+    ],
+    "feedbackCorrect": "Certo: a casa de Oseias espelha a terra.",
+    "feedbackWrong": {
+      "false": "Jeová liga a ordem ao afastamento da terra."
+    },
+    "passageText": "Quando Jeová falou, ao princípio, com Oseias, disse Jeová a Oseias: Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "oseias-pro-os-03-fornicacao-02",
+    "trail": "oseias",
+    "section": "os-03-fornicacao",
+    "difficulty": "profundezas",
+    "type": "tap",
+    "skill": "interpret",
+    "question": "Em Oséias 1:2, toque a palavra que falta em \"ao ___, com Oseias\"?",
+    "prompt": "Em Oséias 1:2, toque a palavra que falta em \"ao ___, com Oseias\"?",
+    "cue": "Em Oséias 1:2, toque a palavra que falta em \"ao ___, com Oseias\"?",
+    "verseRef": "Oséias 1:2",
+    "learningObjective": "Sair sabendo que o casamento de Oseias retrata a terra apartada de Jeová.",
+    "evidence": [
+      "Oséias 1:2"
+    ],
+    "feedbackCorrect": "Exato: Jeová falou ao princípio.",
+    "feedbackWrong": {
+      "a": "Mulher é a ordem, não o tempo.",
+      "c": "Terra é a razão, não o momento."
+    },
+    "passageText": "Quando Jeová falou, ao princípio, com Oseias, disse Jeová a Oseias: Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová.",
+    "template": "ao ___, com Oseias",
+    "options": [
+      {
+        "id": "a",
+        "text": "mulher"
+      },
+      {
+        "id": "b",
+        "text": "princípio"
+      },
+      {
+        "id": "c",
+        "text": "terra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "oseias-pro-os-03-fornicacao-03",
+    "trail": "oseias",
+    "section": "os-03-fornicacao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "O que essa ordem impede o leitor de pensar?",
+    "prompt": "O que essa ordem impede o leitor de pensar?",
+    "cue": "O que essa ordem impede o leitor de pensar?",
+    "verseRef": "Oséias 1:2",
+    "learningObjective": "Sair sabendo que o casamento de Oseias retrata a terra apartada de Jeová.",
+    "evidence": [
+      "Oséias 1:2"
+    ],
+    "feedbackCorrect": "Certo: infidelidade a Deus não é falta leve.",
+    "feedbackWrong": {
+      "b": "A imagem do adultério mostra que dói.",
+      "c": "Oseias entra na história, não observa de fora.",
+      "d": "O texto fala de apartar-se de Jeová."
+    },
+    "passageText": "Quando Jeová falou, ao princípio, com Oseias, disse Jeová a Oseias: Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que apartar-se de Deus é quebra de aliança."
+      },
+      {
+        "id": "b",
+        "text": "Que Jeová é indiferente ao culto de outros deuses."
+      },
+      {
+        "id": "c",
+        "text": "Que o profeta fica de fora da dor do povo."
+      },
+      {
+        "id": "d",
+        "text": "Que a terra é fiel e o problema é só político."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-pro-os-03-fornicacao-04",
+    "trail": "oseias",
+    "section": "os-03-fornicacao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Oséias 1:2?",
+    "prompt": "Qual sequência revela o sentido de Oséias 1:2?",
+    "cue": "Qual sequência revela o sentido de Oséias 1:2?",
+    "verseRef": "Oséias 1:2",
+    "learningObjective": "Sair sabendo que o casamento de Oseias retrata a terra apartada de Jeová.",
+    "evidence": [
+      "Oséias 1:2"
+    ],
+    "feedbackCorrect": "Certo: fala, ordem e então a razão.",
+    "feedbackWrong": {
+      "b": "A ordem vem depois de Jeová falar.",
+      "c": "A terra explica a ordem, não a precede."
+    },
+    "passageText": "Quando Jeová falou, ao princípio, com Oseias, disse Jeová a Oseias: Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová fala com Oseias ao princípio."
+      },
+      {
+        "id": "b",
+        "text": "Manda tomar mulher e filhos de fornicação."
+      },
+      {
+        "id": "c",
+        "text": "A razão é a terra que se aparta de Jeová."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-pro-os-03-fornicacao-05",
+    "trail": "oseias",
+    "section": "os-03-fornicacao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Complete a frase: \"toma uma ___ de fornicação\"",
+    "prompt": "Complete a frase: \"toma uma ___ de fornicação\"",
+    "cue": "Complete a frase: \"toma uma ___ de fornicação\"",
+    "verseRef": "Oséias 1:2",
+    "learningObjective": "Sair sabendo que o casamento de Oseias retrata a terra apartada de Jeová.",
+    "evidence": [
+      "Oséias 1:2"
+    ],
+    "feedbackCorrect": "Certo: ele deve tomar uma mulher.",
+    "feedbackWrong": {
+      "b": "Terra é quem se aparta.",
+      "c": "Princípio marca o tempo da fala."
+    },
+    "passageText": "Quando Jeová falou, ao princípio, com Oseias, disse Jeová a Oseias: Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová.",
+    "template": "toma uma ___ de fornicação",
+    "options": [
+      {
+        "id": "a",
+        "text": "mulher"
+      },
+      {
+        "id": "b",
+        "text": "terra"
+      },
+      {
+        "id": "c",
+        "text": "princípio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-pro-os-03-fornicacao-06",
+    "trail": "oseias",
+    "section": "os-03-fornicacao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "Que sentido de Oséias 1:2 se liga a este contexto?",
+    "prompt": "Que sentido de Oséias 1:2 se liga a este contexto?",
+    "cue": "Que sentido de Oséias 1:2 se liga a este contexto?",
+    "verseRef": "Oséias 1:2",
+    "learningObjective": "Sair sabendo que o casamento de Oseias retrata a terra apartada de Jeová.",
+    "evidence": [
+      "Oséias 1:2"
+    ],
+    "feedbackCorrect": "Certo: apartar-se de Jeová é infidelidade.",
+    "feedbackWrong": {
+      "a": "A imagem pesa como adultério.",
+      "c": "Jeová fala; Oseias não fica mudo."
+    },
+    "passageText": "Quando Jeová falou, ao princípio, com Oseias, disse Jeová a Oseias: Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová.",
+    "passageA": {
+      "ref": "Oséias 1:2",
+      "text": "Quando Jeová falou, ao princípio, com Oseias, disse Jeová a Oseias: Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Infidelidade a Deus é adultério"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Falta sem peso"
+      },
+      {
+        "id": "b",
+        "text": "Adultério da terra"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio do profeta"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "oseias-sem-os-04-deserto-01",
+    "trail": "oseias",
+    "section": "os-04-deserto",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Jeová diz que a atrairá e falará ao seu coração.",
+    "prompt": "Jeová diz que a atrairá e falará ao seu coração.",
+    "cue": "Jeová diz que a atrairá e falará ao seu coração.",
+    "verseRef": "Oséias 2:14–15",
+    "learningObjective": "Sair sabendo que Jeová atrai a infiel e promete esperança.",
+    "evidence": [
+      "Oséias 2:14–15"
+    ],
+    "feedbackCorrect": "Certo: o movimento é atrair e falar.",
+    "feedbackWrong": {
+      "false": "O versículo começa com atrair, levar e falar."
+    },
+    "passageText": "Portanto, eis que eu a atrairei, e a levarei para o deserto, e lhe falarei ao coração. Dali, lhe darei as suas vinhas e o vale de Acor, para uma porta de esperança; ali, cantará ela como nos dias da sua mocidade e como no dia em que subiu da terra do Egito.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "oseias-sem-os-04-deserto-02",
+    "trail": "oseias",
+    "section": "os-04-deserto",
+    "difficulty": "semente",
+    "type": "tap",
+    "skill": "observe",
+    "question": "Em Oséias 2:14–15, toque a palavra que falta em \"lhe falarei ao ___\"?",
+    "prompt": "Em Oséias 2:14–15, toque a palavra que falta em \"lhe falarei ao ___\"?",
+    "cue": "Em Oséias 2:14–15, toque a palavra que falta em \"lhe falarei ao ___\"?",
+    "verseRef": "Oséias 2:14–15",
+    "learningObjective": "Sair sabendo que Jeová atrai a infiel e promete esperança.",
+    "evidence": [
+      "Oséias 2:14–15"
+    ],
+    "feedbackCorrect": "Exato: ele fala ao coração.",
+    "feedbackWrong": {
+      "a": "Deserto é o lugar.",
+      "c": "Vinhas são o dom que vem dali."
+    },
+    "passageText": "Portanto, eis que eu a atrairei, e a levarei para o deserto, e lhe falarei ao coração. Dali, lhe darei as suas vinhas e o vale de Acor, para uma porta de esperança; ali, cantará ela como nos dias da sua mocidade e como no dia em que subiu da terra do Egito.",
+    "template": "lhe falarei ao ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "deserto"
+      },
+      {
+        "id": "b",
+        "text": "coração"
+      },
+      {
+        "id": "c",
+        "text": "vinhas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "oseias-sem-os-04-deserto-03",
+    "trail": "oseias",
+    "section": "os-04-deserto",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "O que Jeová promete fazer com a infiel?",
+    "prompt": "O que Jeová promete fazer com a infiel?",
+    "cue": "O que Jeová promete fazer com a infiel?",
+    "verseRef": "Oséias 2:14–15",
+    "learningObjective": "Sair sabendo que Jeová atrai a infiel e promete esperança.",
+    "evidence": [
+      "Oséias 2:14–15"
+    ],
+    "feedbackCorrect": "Certo: atrair, levar e falar ao coração.",
+    "feedbackWrong": {
+      "b": "No deserto ele fala.",
+      "c": "Acor é porta de esperança.",
+      "d": "Ela canta como no dia em que subiu do Egito."
+    },
+    "passageText": "Portanto, eis que eu a atrairei, e a levarei para o deserto, e lhe falarei ao coração. Dali, lhe darei as suas vinhas e o vale de Acor, para uma porta de esperança; ali, cantará ela como nos dias da sua mocidade e como no dia em que subiu da terra do Egito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Atraí-la e falar-lhe ao coração."
+      },
+      {
+        "id": "b",
+        "text": "Entregá-la ao silêncio do deserto."
+      },
+      {
+        "id": "c",
+        "text": "Fechar o vale e apagar a mocidade."
+      },
+      {
+        "id": "d",
+        "text": "Devolvê-la ao Egito sem esperança."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-sem-os-04-deserto-04",
+    "trail": "oseias",
+    "section": "os-04-deserto",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Qual é a ordem dos fatos em Oséias 2:14–15?",
+    "prompt": "Qual é a ordem dos fatos em Oséias 2:14–15?",
+    "cue": "Qual é a ordem dos fatos em Oséias 2:14–15?",
+    "verseRef": "Oséias 2:14–15",
+    "learningObjective": "Sair sabendo que Jeová atrai a infiel e promete esperança.",
+    "evidence": [
+      "Oséias 2:14–15"
+    ],
+    "feedbackCorrect": "Certo: atrair, falar e então a porta.",
+    "feedbackWrong": {
+      "b": "A fala acontece no deserto, não antes da atração.",
+      "c": "A esperança fecha a promessa."
+    },
+    "passageText": "Portanto, eis que eu a atrairei, e a levarei para o deserto, e lhe falarei ao coração. Dali, lhe darei as suas vinhas e o vale de Acor, para uma porta de esperança; ali, cantará ela como nos dias da sua mocidade e como no dia em que subiu da terra do Egito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová a atrai e a leva ao deserto."
+      },
+      {
+        "id": "b",
+        "text": "Ali fala ao coração."
+      },
+      {
+        "id": "c",
+        "text": "Dá vinhas e o vale de Acor como porta de esperança."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-sem-os-04-deserto-05",
+    "trail": "oseias",
+    "section": "os-04-deserto",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Complete a frase: \"eu a ___\"",
+    "prompt": "Complete a frase: \"eu a ___\"",
+    "cue": "Complete a frase: \"eu a ___\"",
+    "verseRef": "Oséias 2:14–15",
+    "learningObjective": "Sair sabendo que Jeová atrai a infiel e promete esperança.",
+    "evidence": [
+      "Oséias 2:14–15"
+    ],
+    "feedbackCorrect": "Certo: ele a atrairá.",
+    "feedbackWrong": {
+      "b": "Deserto é o destino.",
+      "c": "Vinhas são o dom posterior."
+    },
+    "passageText": "Portanto, eis que eu a atrairei, e a levarei para o deserto, e lhe falarei ao coração. Dali, lhe darei as suas vinhas e o vale de Acor, para uma porta de esperança; ali, cantará ela como nos dias da sua mocidade e como no dia em que subiu da terra do Egito.",
+    "template": "eu a ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "atrairei"
+      },
+      {
+        "id": "b",
+        "text": "deserto"
+      },
+      {
+        "id": "c",
+        "text": "vinhas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-sem-os-04-deserto-06",
+    "trail": "oseias",
+    "section": "os-04-deserto",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Oséias 2:14–15 comunica que se liga a este contexto?",
+    "prompt": "O que Oséias 2:14–15 comunica que se liga a este contexto?",
+    "cue": "O que Oséias 2:14–15 comunica que se liga a este contexto?",
+    "verseRef": "Oséias 2:14–15",
+    "learningObjective": "Sair sabendo que Jeová atrai a infiel e promete esperança.",
+    "evidence": [
+      "Oséias 2:14–15"
+    ],
+    "feedbackCorrect": "Certo: ele atrai a infiel de volta.",
+    "feedbackWrong": {
+      "b": "Ele fala ao coração.",
+      "c": "O canto lembra a saída, não a volta ao jugo."
+    },
+    "passageText": "Portanto, eis que eu a atrairei, e a levarei para o deserto, e lhe falarei ao coração. Dali, lhe darei as suas vinhas e o vale de Acor, para uma porta de esperança; ali, cantará ela como nos dias da sua mocidade e como no dia em que subiu da terra do Egito.",
+    "passageA": {
+      "ref": "Oséias 2:14–15",
+      "text": "Portanto, eis que eu a atrairei, e a levarei para o deserto, e lhe falarei ao coração. Dali, lhe darei as suas vinhas e o vale de Acor, para uma porta de esperança; ali, cantará ela como nos dias da sua mocidade e como no dia em que subiu da terra do Egito."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus corteja o infiel de volta"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Convite de volta"
+      },
+      {
+        "id": "b",
+        "text": "Silêncio final"
+      },
+      {
+        "id": "c",
+        "text": "Volta ao Egito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-cam-os-04-deserto-01",
+    "trail": "oseias",
+    "section": "os-04-deserto",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "O deserto, neste texto, é o lugar onde ele a abandona em silêncio.",
+    "prompt": "O deserto, neste texto, é o lugar onde ele a abandona em silêncio.",
+    "cue": "O deserto, neste texto, é o lugar onde ele a abandona em silêncio.",
+    "verseRef": "Oséias 2:14–15",
+    "learningObjective": "Sair sabendo que Jeová atrai a infiel e promete esperança.",
+    "evidence": [
+      "Oséias 2:14–15"
+    ],
+    "feedbackCorrect": "Certo: no deserto ele fala ao coração.",
+    "feedbackWrong": {
+      "true": "Levar ao deserto vem junto com falar."
+    },
+    "passageText": "Portanto, eis que eu a atrairei, e a levarei para o deserto, e lhe falarei ao coração. Dali, lhe darei as suas vinhas e o vale de Acor, para uma porta de esperança; ali, cantará ela como nos dias da sua mocidade e como no dia em que subiu da terra do Egito.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "id": "oseias-cam-os-04-deserto-02",
+    "trail": "oseias",
+    "section": "os-04-deserto",
+    "difficulty": "caminhada",
+    "type": "tap",
+    "skill": "understand",
+    "question": "Em Oséias 2:14–15, toque a palavra que falta em \"para o ___\"?",
+    "prompt": "Em Oséias 2:14–15, toque a palavra que falta em \"para o ___\"?",
+    "cue": "Em Oséias 2:14–15, toque a palavra que falta em \"para o ___\"?",
+    "verseRef": "Oséias 2:14–15",
+    "learningObjective": "Sair sabendo que Jeová atrai a infiel e promete esperança.",
+    "evidence": [
+      "Oséias 2:14–15"
+    ],
+    "feedbackCorrect": "Exato: ele a leva para o deserto.",
+    "feedbackWrong": {
+      "a": "Coração é a quem ele fala.",
+      "c": "Egito é a memória da saída."
+    },
+    "passageText": "Portanto, eis que eu a atrairei, e a levarei para o deserto, e lhe falarei ao coração. Dali, lhe darei as suas vinhas e o vale de Acor, para uma porta de esperança; ali, cantará ela como nos dias da sua mocidade e como no dia em que subiu da terra do Egito.",
+    "template": "para o ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "coração"
+      },
+      {
+        "id": "b",
+        "text": "deserto"
+      },
+      {
+        "id": "c",
+        "text": "Egito"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "oseias-cam-os-04-deserto-03",
+    "trail": "oseias",
+    "section": "os-04-deserto",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "O que o deserto significa nesta promessa?",
+    "prompt": "O que o deserto significa nesta promessa?",
+    "cue": "O que o deserto significa nesta promessa?",
+    "verseRef": "Oséias 2:14–15",
+    "learningObjective": "Sair sabendo que Jeová atrai a infiel e promete esperança.",
+    "evidence": [
+      "Oséias 2:14–15"
+    ],
+    "feedbackCorrect": "Certo: é lugar de fala, não de descarte.",
+    "feedbackWrong": {
+      "b": "Há fala e porta de esperança.",
+      "c": "Ele a leva para restaurar, não para substituir.",
+      "d": "Acor é chamado esperança."
+    },
+    "passageText": "Portanto, eis que eu a atrairei, e a levarei para o deserto, e lhe falarei ao coração. Dali, lhe darei as suas vinhas e o vale de Acor, para uma porta de esperança; ali, cantará ela como nos dias da sua mocidade e como no dia em que subiu da terra do Egito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lugar onde ele volta a falar ao coração."
+      },
+      {
+        "id": "b",
+        "text": "Castigo final, sem palavra e sem volta."
+      },
+      {
+        "id": "c",
+        "text": "Troca da aliança por outra terra."
+      },
+      {
+        "id": "d",
+        "text": "Fim da esperança no vale de Acor."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-cam-os-04-deserto-04",
+    "trail": "oseias",
+    "section": "os-04-deserto",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Oséias 2:14–15?",
+    "prompt": "Como se encadeiam os eventos de Oséias 2:14–15?",
+    "cue": "Como se encadeiam os eventos de Oséias 2:14–15?",
+    "verseRef": "Oséias 2:14–15",
+    "learningObjective": "Sair sabendo que Jeová atrai a infiel e promete esperança.",
+    "evidence": [
+      "Oséias 2:14–15"
+    ],
+    "feedbackCorrect": "Certo: atrair, falar e então a porta.",
+    "feedbackWrong": {
+      "b": "A fala acontece no deserto, não antes da atração.",
+      "c": "A esperança fecha a promessa."
+    },
+    "passageText": "Portanto, eis que eu a atrairei, e a levarei para o deserto, e lhe falarei ao coração. Dali, lhe darei as suas vinhas e o vale de Acor, para uma porta de esperança; ali, cantará ela como nos dias da sua mocidade e como no dia em que subiu da terra do Egito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová a atrai e a leva ao deserto."
+      },
+      {
+        "id": "b",
+        "text": "Ali fala ao coração."
+      },
+      {
+        "id": "c",
+        "text": "Dá vinhas e o vale de Acor como porta de esperança."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-cam-os-04-deserto-05",
+    "trail": "oseias",
+    "section": "os-04-deserto",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Complete a frase: \"vale de ___\"",
+    "prompt": "Complete a frase: \"vale de ___\"",
+    "cue": "Complete a frase: \"vale de ___\"",
+    "verseRef": "Oséias 2:14–15",
+    "learningObjective": "Sair sabendo que Jeová atrai a infiel e promete esperança.",
+    "evidence": [
+      "Oséias 2:14–15"
+    ],
+    "feedbackCorrect": "Certo: o vale é Acor.",
+    "feedbackWrong": {
+      "b": "Deserto é para onde ele a leva.",
+      "c": "Egito é a memória da subida."
+    },
+    "passageText": "Portanto, eis que eu a atrairei, e a levarei para o deserto, e lhe falarei ao coração. Dali, lhe darei as suas vinhas e o vale de Acor, para uma porta de esperança; ali, cantará ela como nos dias da sua mocidade e como no dia em que subiu da terra do Egito.",
+    "template": "vale de ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "Acor"
+      },
+      {
+        "id": "b",
+        "text": "deserto"
+      },
+      {
+        "id": "c",
+        "text": "Egito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-cam-os-04-deserto-06",
+    "trail": "oseias",
+    "section": "os-04-deserto",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "Que relação Oséias 2:14–15 estabelece com este contexto?",
+    "prompt": "Que relação Oséias 2:14–15 estabelece com este contexto?",
+    "cue": "Que relação Oséias 2:14–15 estabelece com este contexto?",
+    "verseRef": "Oséias 2:14–15",
+    "learningObjective": "Sair sabendo que Jeová atrai a infiel e promete esperança.",
+    "evidence": [
+      "Oséias 2:14–15"
+    ],
+    "feedbackCorrect": "Certo: o deserto é lugar de fala.",
+    "feedbackWrong": {
+      "a": "Ele promete falar.",
+      "c": "Acor é porta de esperança."
+    },
+    "passageText": "Portanto, eis que eu a atrairei, e a levarei para o deserto, e lhe falarei ao coração. Dali, lhe darei as suas vinhas e o vale de Acor, para uma porta de esperança; ali, cantará ela como nos dias da sua mocidade e como no dia em que subiu da terra do Egito.",
+    "passageA": {
+      "ref": "Oséias 2:14–15",
+      "text": "Portanto, eis que eu a atrairei, e a levarei para o deserto, e lhe falarei ao coração. Dali, lhe darei as suas vinhas e o vale de Acor, para uma porta de esperança; ali, cantará ela como nos dias da sua mocidade e como no dia em que subiu da terra do Egito."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus corteja o infiel de volta"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deserto sem voz"
+      },
+      {
+        "id": "b",
+        "text": "Fala no deserto"
+      },
+      {
+        "id": "c",
+        "text": "Porta fechada"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "oseias-pro-os-04-deserto-01",
+    "trail": "oseias",
+    "section": "os-04-deserto",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "O vale de Acor é chamado porta de esperança.",
+    "prompt": "O vale de Acor é chamado porta de esperança.",
+    "cue": "O vale de Acor é chamado porta de esperança.",
+    "verseRef": "Oséias 2:14–15",
+    "learningObjective": "Sair sabendo que Jeová atrai a infiel e promete esperança.",
+    "evidence": [
+      "Oséias 2:14–15"
+    ],
+    "feedbackCorrect": "Certo: Acor vira porta, não só memória de culpa.",
+    "feedbackWrong": {
+      "false": "O texto dá esse nome ao vale."
+    },
+    "passageText": "Portanto, eis que eu a atrairei, e a levarei para o deserto, e lhe falarei ao coração. Dali, lhe darei as suas vinhas e o vale de Acor, para uma porta de esperança; ali, cantará ela como nos dias da sua mocidade e como no dia em que subiu da terra do Egito.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "oseias-pro-os-04-deserto-02",
+    "trail": "oseias",
+    "section": "os-04-deserto",
+    "difficulty": "profundezas",
+    "type": "tap",
+    "skill": "interpret",
+    "question": "Em Oséias 2:14–15, toque a palavra que falta em \"porta de ___\"?",
+    "prompt": "Em Oséias 2:14–15, toque a palavra que falta em \"porta de ___\"?",
+    "cue": "Em Oséias 2:14–15, toque a palavra que falta em \"porta de ___\"?",
+    "verseRef": "Oséias 2:14–15",
+    "learningObjective": "Sair sabendo que Jeová atrai a infiel e promete esperança.",
+    "evidence": [
+      "Oséias 2:14–15"
+    ],
+    "feedbackCorrect": "Exato: Acor é porta de esperança.",
+    "feedbackWrong": {
+      "a": "Vinhas são o dom ao lado.",
+      "c": "Deserto é o caminho, não o nome da porta."
+    },
+    "passageText": "Portanto, eis que eu a atrairei, e a levarei para o deserto, e lhe falarei ao coração. Dali, lhe darei as suas vinhas e o vale de Acor, para uma porta de esperança; ali, cantará ela como nos dias da sua mocidade e como no dia em que subiu da terra do Egito.",
+    "template": "porta de ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "vinhas"
+      },
+      {
+        "id": "b",
+        "text": "esperança"
+      },
+      {
+        "id": "c",
+        "text": "deserto"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "oseias-pro-os-04-deserto-03",
+    "trail": "oseias",
+    "section": "os-04-deserto",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "O que essa promessa revela sobre o juízo de Jeová?",
+    "prompt": "O que essa promessa revela sobre o juízo de Jeová?",
+    "cue": "O que essa promessa revela sobre o juízo de Jeová?",
+    "verseRef": "Oséias 2:14–15",
+    "learningObjective": "Sair sabendo que Jeová atrai a infiel e promete esperança.",
+    "evidence": [
+      "Oséias 2:14–15"
+    ],
+    "feedbackCorrect": "Certo: o juízo não é a última palavra dele.",
+    "feedbackWrong": {
+      "b": "Há porta de esperança.",
+      "c": "O canto lembra a saída, não a volta ao jugo.",
+      "d": "A fala confirma o cuidado, não o cancela."
+    },
+    "passageText": "Portanto, eis que eu a atrairei, e a levarei para o deserto, e lhe falarei ao coração. Dali, lhe darei as suas vinhas e o vale de Acor, para uma porta de esperança; ali, cantará ela como nos dias da sua mocidade e como no dia em que subiu da terra do Egito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Depois da acusação, ele ainda corteja."
+      },
+      {
+        "id": "b",
+        "text": "A infiel fica sem caminho de volta."
+      },
+      {
+        "id": "c",
+        "text": "Esperança aqui é só nostalgia do Egito."
+      },
+      {
+        "id": "d",
+        "text": "Falar ao coração anula a aliança."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-pro-os-04-deserto-04",
+    "trail": "oseias",
+    "section": "os-04-deserto",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Oséias 2:14–15?",
+    "prompt": "Qual sequência revela o sentido de Oséias 2:14–15?",
+    "cue": "Qual sequência revela o sentido de Oséias 2:14–15?",
+    "verseRef": "Oséias 2:14–15",
+    "learningObjective": "Sair sabendo que Jeová atrai a infiel e promete esperança.",
+    "evidence": [
+      "Oséias 2:14–15"
+    ],
+    "feedbackCorrect": "Certo: atrair, falar e então a porta.",
+    "feedbackWrong": {
+      "b": "A fala acontece no deserto, não antes da atração.",
+      "c": "A esperança fecha a promessa."
+    },
+    "passageText": "Portanto, eis que eu a atrairei, e a levarei para o deserto, e lhe falarei ao coração. Dali, lhe darei as suas vinhas e o vale de Acor, para uma porta de esperança; ali, cantará ela como nos dias da sua mocidade e como no dia em que subiu da terra do Egito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová a atrai e a leva ao deserto."
+      },
+      {
+        "id": "b",
+        "text": "Ali fala ao coração."
+      },
+      {
+        "id": "c",
+        "text": "Dá vinhas e o vale de Acor como porta de esperança."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-pro-os-04-deserto-05",
+    "trail": "oseias",
+    "section": "os-04-deserto",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Complete a frase: \"nos dias da sua ___\"",
+    "prompt": "Complete a frase: \"nos dias da sua ___\"",
+    "cue": "Complete a frase: \"nos dias da sua ___\"",
+    "verseRef": "Oséias 2:14–15",
+    "learningObjective": "Sair sabendo que Jeová atrai a infiel e promete esperança.",
+    "evidence": [
+      "Oséias 2:14–15"
+    ],
+    "feedbackCorrect": "Certo: ela cantará como na mocidade.",
+    "feedbackWrong": {
+      "b": "Vinhas são o dom da terra.",
+      "c": "Coração é a quem ele fala."
+    },
+    "passageText": "Portanto, eis que eu a atrairei, e a levarei para o deserto, e lhe falarei ao coração. Dali, lhe darei as suas vinhas e o vale de Acor, para uma porta de esperança; ali, cantará ela como nos dias da sua mocidade e como no dia em que subiu da terra do Egito.",
+    "template": "nos dias da sua ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "mocidade"
+      },
+      {
+        "id": "b",
+        "text": "vinhas"
+      },
+      {
+        "id": "c",
+        "text": "coração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-pro-os-04-deserto-06",
+    "trail": "oseias",
+    "section": "os-04-deserto",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "Que sentido de Oséias 2:14–15 se liga a este contexto?",
+    "prompt": "Que sentido de Oséias 2:14–15 se liga a este contexto?",
+    "cue": "Que sentido de Oséias 2:14–15 se liga a este contexto?",
+    "verseRef": "Oséias 2:14–15",
+    "learningObjective": "Sair sabendo que Jeová atrai a infiel e promete esperança.",
+    "evidence": [
+      "Oséias 2:14–15"
+    ],
+    "feedbackCorrect": "Certo: a culpa não fecha a boca de Deus.",
+    "feedbackWrong": {
+      "a": "Há esperança depois da acusação.",
+      "c": "A promessa é concreta: vinhas e porta."
+    },
+    "passageText": "Portanto, eis que eu a atrairei, e a levarei para o deserto, e lhe falarei ao coração. Dali, lhe darei as suas vinhas e o vale de Acor, para uma porta de esperança; ali, cantará ela como nos dias da sua mocidade e como no dia em que subiu da terra do Egito.",
+    "passageA": {
+      "ref": "Oséias 2:14–15",
+      "text": "Portanto, eis que eu a atrairei, e a levarei para o deserto, e lhe falarei ao coração. Dali, lhe darei as suas vinhas e o vale de Acor, para uma porta de esperança; ali, cantará ela como nos dias da sua mocidade e como no dia em que subiu da terra do Egito."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus corteja o infiel de volta"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Juízo sem fim"
+      },
+      {
+        "id": "b",
+        "text": "Cortejo depois da culpa"
+      },
+      {
+        "id": "c",
+        "text": "Nostalgia vazia"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "oseias-sem-os-05-menino-01",
+    "trail": "oseias",
+    "section": "os-05-menino",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Jeová diz que amou Israel quando era menino e o chamou do Egito.",
+    "prompt": "Jeová diz que amou Israel quando era menino e o chamou do Egito.",
+    "cue": "Jeová diz que amou Israel quando era menino e o chamou do Egito.",
+    "verseRef": "Oséias 11:1–4",
+    "learningObjective": "Sair sabendo que Jeová amou Israel como filho e o curou sem ser reconhecido.",
+    "evidence": [
+      "Oséias 11:1–4"
+    ],
+    "feedbackCorrect": "Certo: o amor é de pai, desde o Egito.",
+    "feedbackWrong": {
+      "false": "O versículo abre com esse amor e esse chamado."
+    },
+    "passageText": "Quando Israel era menino, eu o amei e do Egito chamei a meu filho. Todavia, eu ensinava a Efraim a andar; levava-os nos meus braços, porém não conheceram que eu os curava. Eu os atraía com cordas de homem, com laços de amor; eu era para com eles como quem tira o jugo de cima dos seus queixos e lhes punha diante o mantimento.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "oseias-sem-os-05-menino-02",
+    "trail": "oseias",
+    "section": "os-05-menino",
+    "difficulty": "semente",
+    "type": "tap",
+    "skill": "observe",
+    "question": "Em Oséias 11:1–4, toque a palavra que falta em \"Quando Israel era ___, eu o amei\"?",
+    "prompt": "Em Oséias 11:1–4, toque a palavra que falta em \"Quando Israel era ___, eu o amei\"?",
+    "cue": "Em Oséias 11:1–4, toque a palavra que falta em \"Quando Israel era ___, eu o amei\"?",
+    "verseRef": "Oséias 11:1–4",
+    "learningObjective": "Sair sabendo que Jeová amou Israel como filho e o curou sem ser reconhecido.",
+    "evidence": [
+      "Oséias 11:1–4"
+    ],
+    "feedbackCorrect": "Exato: Israel era menino.",
+    "feedbackWrong": {
+      "a": "Egito é de onde o chamou.",
+      "c": "Filho é como o chama."
+    },
+    "passageText": "Quando Israel era menino, eu o amei e do Egito chamei a meu filho. Todavia, eu ensinava a Efraim a andar; levava-os nos meus braços, porém não conheceram que eu os curava. Eu os atraía com cordas de homem, com laços de amor; eu era para com eles como quem tira o jugo de cima dos seus queixos e lhes punha diante o mantimento.",
+    "template": "Quando Israel era ___, eu o amei",
+    "options": [
+      {
+        "id": "a",
+        "text": "Egito"
+      },
+      {
+        "id": "b",
+        "text": "menino"
+      },
+      {
+        "id": "c",
+        "text": "filho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "oseias-sem-os-05-menino-03",
+    "trail": "oseias",
+    "section": "os-05-menino",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Como Jeová descreve o que fez por Israel?",
+    "prompt": "Como Jeová descreve o que fez por Israel?",
+    "cue": "Como Jeová descreve o que fez por Israel?",
+    "verseRef": "Oséias 11:1–4",
+    "learningObjective": "Sair sabendo que Jeová amou Israel como filho e o curou sem ser reconhecido.",
+    "evidence": [
+      "Oséias 11:1–4"
+    ],
+    "feedbackCorrect": "Certo: amou, chamou, ensinou e alimentou.",
+    "feedbackWrong": {
+      "b": "Ele chama do Egito.",
+      "c": "Ele tira o jugo e põe comida.",
+      "d": "Quem cura é Jeová, não Efraim."
+    },
+    "passageText": "Quando Israel era menino, eu o amei e do Egito chamei a meu filho. Todavia, eu ensinava a Efraim a andar; levava-os nos meus braços, porém não conheceram que eu os curava. Eu os atraía com cordas de homem, com laços de amor; eu era para com eles como quem tira o jugo de cima dos seus queixos e lhes punha diante o mantimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amou o menino e o chamou do Egito."
+      },
+      {
+        "id": "b",
+        "text": "Deixou o filho no Egito sem chamar."
+      },
+      {
+        "id": "c",
+        "text": "Cobrou o jugo e escondeu o mantimento."
+      },
+      {
+        "id": "d",
+        "text": "Esperou que Efraim o curasse primeiro."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-sem-os-05-menino-04",
+    "trail": "oseias",
+    "section": "os-05-menino",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Qual é a ordem dos fatos em Oséias 11:1–4?",
+    "prompt": "Qual é a ordem dos fatos em Oséias 11:1–4?",
+    "cue": "Qual é a ordem dos fatos em Oséias 11:1–4?",
+    "verseRef": "Oséias 11:1–4",
+    "learningObjective": "Sair sabendo que Jeová amou Israel como filho e o curou sem ser reconhecido.",
+    "evidence": [
+      "Oséias 11:1–4"
+    ],
+    "feedbackCorrect": "Certo: amor, colo e então o pão.",
+    "feedbackWrong": {
+      "b": "O colo vem depois do chamado do Egito.",
+      "c": "O mantimento fecha o cuidado."
+    },
+    "passageText": "Quando Israel era menino, eu o amei e do Egito chamei a meu filho. Todavia, eu ensinava a Efraim a andar; levava-os nos meus braços, porém não conheceram que eu os curava. Eu os atraía com cordas de homem, com laços de amor; eu era para com eles como quem tira o jugo de cima dos seus queixos e lhes punha diante o mantimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová amou Israel menino e o chamou do Egito."
+      },
+      {
+        "id": "b",
+        "text": "Ensinou Efraim a andar e o levou nos braços."
+      },
+      {
+        "id": "c",
+        "text": "Atraiu com laços de amor, tirou o jugo e deu mantimento."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-sem-os-05-menino-05",
+    "trail": "oseias",
+    "section": "os-05-menino",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Complete a frase: \"chamei a meu ___\"",
+    "prompt": "Complete a frase: \"chamei a meu ___\"",
+    "cue": "Complete a frase: \"chamei a meu ___\"",
+    "verseRef": "Oséias 11:1–4",
+    "learningObjective": "Sair sabendo que Jeová amou Israel como filho e o curou sem ser reconhecido.",
+    "evidence": [
+      "Oséias 11:1–4"
+    ],
+    "feedbackCorrect": "Certo: chamou a seu filho.",
+    "feedbackWrong": {
+      "b": "Menino diz a idade.",
+      "c": "Egito é o lugar."
+    },
+    "passageText": "Quando Israel era menino, eu o amei e do Egito chamei a meu filho. Todavia, eu ensinava a Efraim a andar; levava-os nos meus braços, porém não conheceram que eu os curava. Eu os atraía com cordas de homem, com laços de amor; eu era para com eles como quem tira o jugo de cima dos seus queixos e lhes punha diante o mantimento.",
+    "template": "chamei a meu ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "filho"
+      },
+      {
+        "id": "b",
+        "text": "menino"
+      },
+      {
+        "id": "c",
+        "text": "Egito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-sem-os-05-menino-06",
+    "trail": "oseias",
+    "section": "os-05-menino",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Oséias 11:1–4 comunica que se liga a este contexto?",
+    "prompt": "O que Oséias 11:1–4 comunica que se liga a este contexto?",
+    "cue": "O que Oséias 11:1–4 comunica que se liga a este contexto?",
+    "verseRef": "Oséias 11:1–4",
+    "learningObjective": "Sair sabendo que Jeová amou Israel como filho e o curou sem ser reconhecido.",
+    "evidence": [
+      "Oséias 11:1–4"
+    ],
+    "feedbackCorrect": "Certo: a memória é de pai.",
+    "feedbackWrong": {
+      "b": "Ele chama e carrega.",
+      "c": "Ele tira o jugo."
+    },
+    "passageText": "Quando Israel era menino, eu o amei e do Egito chamei a meu filho. Todavia, eu ensinava a Efraim a andar; levava-os nos meus braços, porém não conheceram que eu os curava. Eu os atraía com cordas de homem, com laços de amor; eu era para com eles como quem tira o jugo de cima dos seus queixos e lhes punha diante o mantimento.",
+    "passageA": {
+      "ref": "Oséias 11:1–4",
+      "text": "Quando Israel era menino, eu o amei e do Egito chamei a meu filho. Todavia, eu ensinava a Efraim a andar; levava-os nos meus braços, porém não conheceram que eu os curava. Eu os atraía com cordas de homem, com laços de amor; eu era para com eles como quem tira o jugo de cima dos seus queixos e lhes punha diante o mantimento."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O amor de Deus é de pai"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor de pai"
+      },
+      {
+        "id": "b",
+        "text": "Chamado vazio"
+      },
+      {
+        "id": "c",
+        "text": "Jugo permanente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-cam-os-05-menino-01",
+    "trail": "oseias",
+    "section": "os-05-menino",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Efraim reconheceu logo que Jeová o curava.",
+    "prompt": "Efraim reconheceu logo que Jeová o curava.",
+    "cue": "Efraim reconheceu logo que Jeová o curava.",
+    "verseRef": "Oséias 11:1–4",
+    "learningObjective": "Sair sabendo que Jeová amou Israel como filho e o curou sem ser reconhecido.",
+    "evidence": [
+      "Oséias 11:1–4"
+    ],
+    "feedbackCorrect": "Certo: não conheceram que ele os curava.",
+    "feedbackWrong": {
+      "true": "O texto marca o não reconhecimento."
+    },
+    "passageText": "Quando Israel era menino, eu o amei e do Egito chamei a meu filho. Todavia, eu ensinava a Efraim a andar; levava-os nos meus braços, porém não conheceram que eu os curava. Eu os atraía com cordas de homem, com laços de amor; eu era para com eles como quem tira o jugo de cima dos seus queixos e lhes punha diante o mantimento.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "id": "oseias-cam-os-05-menino-02",
+    "trail": "oseias",
+    "section": "os-05-menino",
+    "difficulty": "caminhada",
+    "type": "tap",
+    "skill": "understand",
+    "question": "Em Oséias 11:1–4, toque a palavra que falta em \"do ___ chamei a meu filho\"?",
+    "prompt": "Em Oséias 11:1–4, toque a palavra que falta em \"do ___ chamei a meu filho\"?",
+    "cue": "Em Oséias 11:1–4, toque a palavra que falta em \"do ___ chamei a meu filho\"?",
+    "verseRef": "Oséias 11:1–4",
+    "learningObjective": "Sair sabendo que Jeová amou Israel como filho e o curou sem ser reconhecido.",
+    "evidence": [
+      "Oséias 11:1–4"
+    ],
+    "feedbackCorrect": "Exato: o chamado sai do Egito.",
+    "feedbackWrong": {
+      "a": "Menino é a idade do amor.",
+      "c": "Amor nomeia os laços."
+    },
+    "passageText": "Quando Israel era menino, eu o amei e do Egito chamei a meu filho. Todavia, eu ensinava a Efraim a andar; levava-os nos meus braços, porém não conheceram que eu os curava. Eu os atraía com cordas de homem, com laços de amor; eu era para com eles como quem tira o jugo de cima dos seus queixos e lhes punha diante o mantimento.",
+    "template": "do ___ chamei a meu filho",
+    "options": [
+      {
+        "id": "a",
+        "text": "menino"
+      },
+      {
+        "id": "b",
+        "text": "Egito"
+      },
+      {
+        "id": "c",
+        "text": "amor"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "oseias-cam-os-05-menino-03",
+    "trail": "oseias",
+    "section": "os-05-menino",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "O que o não reconhecimento de Efraim revela?",
+    "prompt": "O que o não reconhecimento de Efraim revela?",
+    "cue": "O que o não reconhecimento de Efraim revela?",
+    "verseRef": "Oséias 11:1–4",
+    "learningObjective": "Sair sabendo que Jeová amou Israel como filho e o curou sem ser reconhecido.",
+    "evidence": [
+      "Oséias 11:1–4"
+    ],
+    "feedbackCorrect": "Certo: o cuidado veio antes da gratidão.",
+    "feedbackWrong": {
+      "b": "O texto diz que não conheceram.",
+      "c": "Ele os levava nos braços para curar.",
+      "d": "Ele põe o mantimento diante deles."
+    },
+    "passageText": "Quando Israel era menino, eu o amei e do Egito chamei a meu filho. Todavia, eu ensinava a Efraim a andar; levava-os nos meus braços, porém não conheceram que eu os curava. Eu os atraía com cordas de homem, com laços de amor; eu era para com eles como quem tira o jugo de cima dos seus queixos e lhes punha diante o mantimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová curava e eles não conheceram."
+      },
+      {
+        "id": "b",
+        "text": "Efraim entendeu cedo e retribuiu logo."
+      },
+      {
+        "id": "c",
+        "text": "Os braços de Jeová eram castigo sem cura."
+      },
+      {
+        "id": "d",
+        "text": "O mantimento dependia de eles pedirem certo."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-cam-os-05-menino-04",
+    "trail": "oseias",
+    "section": "os-05-menino",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Oséias 11:1–4?",
+    "prompt": "Como se encadeiam os eventos de Oséias 11:1–4?",
+    "cue": "Como se encadeiam os eventos de Oséias 11:1–4?",
+    "verseRef": "Oséias 11:1–4",
+    "learningObjective": "Sair sabendo que Jeová amou Israel como filho e o curou sem ser reconhecido.",
+    "evidence": [
+      "Oséias 11:1–4"
+    ],
+    "feedbackCorrect": "Certo: amor, colo e então o pão.",
+    "feedbackWrong": {
+      "b": "O colo vem depois do chamado do Egito.",
+      "c": "O mantimento fecha o cuidado."
+    },
+    "passageText": "Quando Israel era menino, eu o amei e do Egito chamei a meu filho. Todavia, eu ensinava a Efraim a andar; levava-os nos meus braços, porém não conheceram que eu os curava. Eu os atraía com cordas de homem, com laços de amor; eu era para com eles como quem tira o jugo de cima dos seus queixos e lhes punha diante o mantimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová amou Israel menino e o chamou do Egito."
+      },
+      {
+        "id": "b",
+        "text": "Ensinou Efraim a andar e o levou nos braços."
+      },
+      {
+        "id": "c",
+        "text": "Atraiu com laços de amor, tirou o jugo e deu mantimento."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-cam-os-05-menino-05",
+    "trail": "oseias",
+    "section": "os-05-menino",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Complete a frase: \"nos meus ___\"",
+    "prompt": "Complete a frase: \"nos meus ___\"",
+    "cue": "Complete a frase: \"nos meus ___\"",
+    "verseRef": "Oséias 11:1–4",
+    "learningObjective": "Sair sabendo que Jeová amou Israel como filho e o curou sem ser reconhecido.",
+    "evidence": [
+      "Oséias 11:1–4"
+    ],
+    "feedbackCorrect": "Certo: levava-os nos braços.",
+    "feedbackWrong": {
+      "b": "Amor nomeia os laços.",
+      "c": "Jugo é o que ele remove."
+    },
+    "passageText": "Quando Israel era menino, eu o amei e do Egito chamei a meu filho. Todavia, eu ensinava a Efraim a andar; levava-os nos meus braços, porém não conheceram que eu os curava. Eu os atraía com cordas de homem, com laços de amor; eu era para com eles como quem tira o jugo de cima dos seus queixos e lhes punha diante o mantimento.",
+    "template": "nos meus ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "braços"
+      },
+      {
+        "id": "b",
+        "text": "amor"
+      },
+      {
+        "id": "c",
+        "text": "jugo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-cam-os-05-menino-06",
+    "trail": "oseias",
+    "section": "os-05-menino",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "Que relação Oséias 11:1–4 estabelece com este contexto?",
+    "prompt": "Que relação Oséias 11:1–4 estabelece com este contexto?",
+    "cue": "Que relação Oséias 11:1–4 estabelece com este contexto?",
+    "verseRef": "Oséias 11:1–4",
+    "learningObjective": "Sair sabendo que Jeová amou Israel como filho e o curou sem ser reconhecido.",
+    "evidence": [
+      "Oséias 11:1–4"
+    ],
+    "feedbackCorrect": "Certo: eles não conheceram a cura.",
+    "feedbackWrong": {
+      "b": "Quem ensina a andar é Jeová.",
+      "c": "O mantimento é posto diante deles."
+    },
+    "passageText": "Quando Israel era menino, eu o amei e do Egito chamei a meu filho. Todavia, eu ensinava a Efraim a andar; levava-os nos meus braços, porém não conheceram que eu os curava. Eu os atraía com cordas de homem, com laços de amor; eu era para com eles como quem tira o jugo de cima dos seus queixos e lhes punha diante o mantimento.",
+    "passageA": {
+      "ref": "Oséias 11:1–4",
+      "text": "Quando Israel era menino, eu o amei e do Egito chamei a meu filho. Todavia, eu ensinava a Efraim a andar; levava-os nos meus braços, porém não conheceram que eu os curava. Eu os atraía com cordas de homem, com laços de amor; eu era para com eles como quem tira o jugo de cima dos seus queixos e lhes punha diante o mantimento."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O amor de Deus é de pai"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cura ignorada"
+      },
+      {
+        "id": "b",
+        "text": "Filho que ensina"
+      },
+      {
+        "id": "c",
+        "text": "Pão escondido"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-pro-os-05-menino-01",
+    "trail": "oseias",
+    "section": "os-05-menino",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Os laços com que Jeová atrai são laços de amor, não só de força.",
+    "prompt": "Os laços com que Jeová atrai são laços de amor, não só de força.",
+    "cue": "Os laços com que Jeová atrai são laços de amor, não só de força.",
+    "verseRef": "Oséias 11:1–4",
+    "learningObjective": "Sair sabendo que Jeová amou Israel como filho e o curou sem ser reconhecido.",
+    "evidence": [
+      "Oséias 11:1–4"
+    ],
+    "feedbackCorrect": "Certo: cordas de homem e laços de amor.",
+    "feedbackWrong": {
+      "false": "Ele também tira o jugo e põe o mantimento."
+    },
+    "passageText": "Quando Israel era menino, eu o amei e do Egito chamei a meu filho. Todavia, eu ensinava a Efraim a andar; levava-os nos meus braços, porém não conheceram que eu os curava. Eu os atraía com cordas de homem, com laços de amor; eu era para com eles como quem tira o jugo de cima dos seus queixos e lhes punha diante o mantimento.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "oseias-pro-os-05-menino-02",
+    "trail": "oseias",
+    "section": "os-05-menino",
+    "difficulty": "profundezas",
+    "type": "tap",
+    "skill": "interpret",
+    "question": "Em Oséias 11:1–4, toque a palavra que falta em \"com laços de ___\"?",
+    "prompt": "Em Oséias 11:1–4, toque a palavra que falta em \"com laços de ___\"?",
+    "cue": "Em Oséias 11:1–4, toque a palavra que falta em \"com laços de ___\"?",
+    "verseRef": "Oséias 11:1–4",
+    "learningObjective": "Sair sabendo que Jeová amou Israel como filho e o curou sem ser reconhecido.",
+    "evidence": [
+      "Oséias 11:1–4"
+    ],
+    "feedbackCorrect": "Exato: os laços são de amor.",
+    "feedbackWrong": {
+      "a": "Braços são onde os levava.",
+      "c": "Jugo é o que ele tira."
+    },
+    "passageText": "Quando Israel era menino, eu o amei e do Egito chamei a meu filho. Todavia, eu ensinava a Efraim a andar; levava-os nos meus braços, porém não conheceram que eu os curava. Eu os atraía com cordas de homem, com laços de amor; eu era para com eles como quem tira o jugo de cima dos seus queixos e lhes punha diante o mantimento.",
+    "template": "com laços de ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "braços"
+      },
+      {
+        "id": "b",
+        "text": "amor"
+      },
+      {
+        "id": "c",
+        "text": "jugo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "oseias-pro-os-05-menino-03",
+    "trail": "oseias",
+    "section": "os-05-menino",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que imagem de Deus Oséias 11 sustenta?",
+    "prompt": "Que imagem de Deus Oséias 11 sustenta?",
+    "cue": "Que imagem de Deus Oséias 11 sustenta?",
+    "verseRef": "Oséias 11:1–4",
+    "learningObjective": "Sair sabendo que Jeová amou Israel como filho e o curou sem ser reconhecido.",
+    "evidence": [
+      "Oséias 11:1–4"
+    ],
+    "feedbackCorrect": "Certo: Deus se relaciona como pai que carrega.",
+    "feedbackWrong": {
+      "b": "Há braços, laços e mantimento.",
+      "c": "O chamado tira do Egito.",
+      "d": "O cuidado continua depois do chamado."
+    },
+    "passageText": "Quando Israel era menino, eu o amei e do Egito chamei a meu filho. Todavia, eu ensinava a Efraim a andar; levava-os nos meus braços, porém não conheceram que eu os curava. Eu os atraía com cordas de homem, com laços de amor; eu era para com eles como quem tira o jugo de cima dos seus queixos e lhes punha diante o mantimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pai que ensina a andar e tira o jugo."
+      },
+      {
+        "id": "b",
+        "text": "Juiz que só acusa e não se aproxima."
+      },
+      {
+        "id": "c",
+        "text": "Rei que exige filho sem dar pão."
+      },
+      {
+        "id": "d",
+        "text": "Estrangeiro que chama e depois some."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-pro-os-05-menino-04",
+    "trail": "oseias",
+    "section": "os-05-menino",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Oséias 11:1–4?",
+    "prompt": "Qual sequência revela o sentido de Oséias 11:1–4?",
+    "cue": "Qual sequência revela o sentido de Oséias 11:1–4?",
+    "verseRef": "Oséias 11:1–4",
+    "learningObjective": "Sair sabendo que Jeová amou Israel como filho e o curou sem ser reconhecido.",
+    "evidence": [
+      "Oséias 11:1–4"
+    ],
+    "feedbackCorrect": "Certo: amor, colo e então o pão.",
+    "feedbackWrong": {
+      "b": "O colo vem depois do chamado do Egito.",
+      "c": "O mantimento fecha o cuidado."
+    },
+    "passageText": "Quando Israel era menino, eu o amei e do Egito chamei a meu filho. Todavia, eu ensinava a Efraim a andar; levava-os nos meus braços, porém não conheceram que eu os curava. Eu os atraía com cordas de homem, com laços de amor; eu era para com eles como quem tira o jugo de cima dos seus queixos e lhes punha diante o mantimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová amou Israel menino e o chamou do Egito."
+      },
+      {
+        "id": "b",
+        "text": "Ensinou Efraim a andar e o levou nos braços."
+      },
+      {
+        "id": "c",
+        "text": "Atraiu com laços de amor, tirou o jugo e deu mantimento."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-pro-os-05-menino-05",
+    "trail": "oseias",
+    "section": "os-05-menino",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Complete a frase: \"lhes punha diante o ___\"",
+    "prompt": "Complete a frase: \"lhes punha diante o ___\"",
+    "cue": "Complete a frase: \"lhes punha diante o ___\"",
+    "verseRef": "Oséias 11:1–4",
+    "learningObjective": "Sair sabendo que Jeová amou Israel como filho e o curou sem ser reconhecido.",
+    "evidence": [
+      "Oséias 11:1–4"
+    ],
+    "feedbackCorrect": "Certo: ele punha o mantimento diante deles.",
+    "feedbackWrong": {
+      "b": "Filho é quem recebe.",
+      "c": "Egito ficou para trás."
+    },
+    "passageText": "Quando Israel era menino, eu o amei e do Egito chamei a meu filho. Todavia, eu ensinava a Efraim a andar; levava-os nos meus braços, porém não conheceram que eu os curava. Eu os atraía com cordas de homem, com laços de amor; eu era para com eles como quem tira o jugo de cima dos seus queixos e lhes punha diante o mantimento.",
+    "template": "lhes punha diante o ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "mantimento"
+      },
+      {
+        "id": "b",
+        "text": "filho"
+      },
+      {
+        "id": "c",
+        "text": "Egito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "oseias-pro-os-05-menino-06",
+    "trail": "oseias",
+    "section": "os-05-menino",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "Que sentido de Oséias 11:1–4 se liga a este contexto?",
+    "prompt": "Que sentido de Oséias 11:1–4 se liga a este contexto?",
+    "cue": "Que sentido de Oséias 11:1–4 se liga a este contexto?",
+    "verseRef": "Oséias 11:1–4",
+    "learningObjective": "Sair sabendo que Jeová amou Israel como filho e o curou sem ser reconhecido.",
+    "evidence": [
+      "Oséias 11:1–4"
+    ],
+    "feedbackCorrect": "Certo: Deus se chega como quem alimenta.",
+    "feedbackWrong": {
+      "a": "Há braços e pão.",
+      "c": "Egito é de onde ele chama, não a casa final."
+    },
+    "passageText": "Quando Israel era menino, eu o amei e do Egito chamei a meu filho. Todavia, eu ensinava a Efraim a andar; levava-os nos meus braços, porém não conheceram que eu os curava. Eu os atraía com cordas de homem, com laços de amor; eu era para com eles como quem tira o jugo de cima dos seus queixos e lhes punha diante o mantimento.",
+    "passageA": {
+      "ref": "Oséias 11:1–4",
+      "text": "Quando Israel era menino, eu o amei e do Egito chamei a meu filho. Todavia, eu ensinava a Efraim a andar; levava-os nos meus braços, porém não conheceram que eu os curava. Eu os atraía com cordas de homem, com laços de amor; eu era para com eles como quem tira o jugo de cima dos seus queixos e lhes punha diante o mantimento."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O amor de Deus é de pai"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Distância de rei"
+      },
+      {
+        "id": "b",
+        "text": "Colo que alimenta"
+      },
+      {
+        "id": "c",
+        "text": "Egito como casa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
   }
 ]

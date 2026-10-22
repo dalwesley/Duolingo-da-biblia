@@ -2185,5 +2185,2192 @@
     "trail": "lamentacoes",
     "section": "lamentacoes-luto-03-desafio-esperanca-no",
     "id": "lamentacoes-pro-lamentacoes-luto-03-desafio-esperanca-no-06"
+  },
+  {
+    "id": "lamentacoes-sem-lm-03-solitaria-01",
+    "trail": "lamentacoes",
+    "section": "lm-03-solitaria",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "A cidade que estava cheia de povo agora está sentada solitária.",
+    "prompt": "A cidade que estava cheia de povo agora está sentada solitária.",
+    "cue": "A cidade que estava cheia de povo agora está sentada solitária.",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Sair sabendo que a queda de Jerusalém aparece como solidão, viuvez e trabalho.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "feedbackCorrect": "Certo: a plenitude virou solidão.",
+    "feedbackWrong": {
+      "false": "O versículo opõe cheia de povo e sentada solitária."
+    },
+    "passageText": "Como está sentada solitária a cidade que estava cheia de povo! Tornou-se viúva a que era grande entre as nações; Ficou sujeita ao trabalho forçado a que era princesa entre as províncias.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "lamentacoes-sem-lm-03-solitaria-02",
+    "trail": "lamentacoes",
+    "section": "lm-03-solitaria",
+    "difficulty": "semente",
+    "type": "tap",
+    "skill": "observe",
+    "question": "Em Lamentações 1:1, toque a palavra que falta em \"está sentada ___ a cidade\"?",
+    "prompt": "Em Lamentações 1:1, toque a palavra que falta em \"está sentada ___ a cidade\"?",
+    "cue": "Em Lamentações 1:1, toque a palavra que falta em \"está sentada ___ a cidade\"?",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Sair sabendo que a queda de Jerusalém aparece como solidão, viuvez e trabalho.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "feedbackCorrect": "Exato: a cidade está sentada solitária.",
+    "feedbackWrong": {
+      "a": "Viúva vem na frase seguinte.",
+      "c": "Povo é o que ela tinha antes."
+    },
+    "passageText": "Como está sentada solitária a cidade que estava cheia de povo! Tornou-se viúva a que era grande entre as nações; Ficou sujeita ao trabalho forçado a que era princesa entre as províncias.",
+    "template": "está sentada ___ a cidade",
+    "options": [
+      {
+        "id": "a",
+        "text": "viúva"
+      },
+      {
+        "id": "b",
+        "text": "solitária"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "lamentacoes-sem-lm-03-solitaria-03",
+    "trail": "lamentacoes",
+    "section": "lm-03-solitaria",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Como Lamentações 1:1 descreve a cidade?",
+    "prompt": "Como Lamentações 1:1 descreve a cidade?",
+    "cue": "Como Lamentações 1:1 descreve a cidade?",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Sair sabendo que a queda de Jerusalém aparece como solidão, viuvez e trabalho.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "feedbackCorrect": "Certo: cheia virou só, grande virou viúva.",
+    "feedbackWrong": {
+      "b": "O texto fala do que ela era, não do que é.",
+      "c": "A queda é o assunto, não a inocência.",
+      "d": "Não há festa; há solidão e trabalho."
+    },
+    "passageText": "Como está sentada solitária a cidade que estava cheia de povo! Tornou-se viúva a que era grande entre as nações; Ficou sujeita ao trabalho forçado a que era princesa entre as províncias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Solitária, viúva e sob trabalho."
+      },
+      {
+        "id": "b",
+        "text": "Cheia, livre e princesa ainda hoje."
+      },
+      {
+        "id": "c",
+        "text": "Vazia de culpa e rica entre as nações."
+      },
+      {
+        "id": "d",
+        "text": "Em festa, com o povo de volta às portas."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-sem-lm-03-solitaria-04",
+    "trail": "lamentacoes",
+    "section": "lm-03-solitaria",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Qual é a ordem dos fatos em Lamentações 1:1?",
+    "prompt": "Qual é a ordem dos fatos em Lamentações 1:1?",
+    "cue": "Qual é a ordem dos fatos em Lamentações 1:1?",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Sair sabendo que a queda de Jerusalém aparece como solidão, viuvez e trabalho.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "feedbackCorrect": "Certo: solidão, viuvez e então o trabalho.",
+    "feedbackWrong": {
+      "b": "A viuvez vem depois da solidão.",
+      "c": "O trabalho fecha a queda da princesa."
+    },
+    "passageText": "Como está sentada solitária a cidade que estava cheia de povo! Tornou-se viúva a que era grande entre as nações; Ficou sujeita ao trabalho forçado a que era princesa entre as províncias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cidade cheia está agora sentada solitária."
+      },
+      {
+        "id": "b",
+        "text": "A grande entre as nações tornou-se viúva."
+      },
+      {
+        "id": "c",
+        "text": "A princesa ficou sujeita a trabalho forçado."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-sem-lm-03-solitaria-05",
+    "trail": "lamentacoes",
+    "section": "lm-03-solitaria",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Complete a frase: \"Tornou-se ___ a que era grande\"",
+    "prompt": "Complete a frase: \"Tornou-se ___ a que era grande\"",
+    "cue": "Complete a frase: \"Tornou-se ___ a que era grande\"",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Sair sabendo que a queda de Jerusalém aparece como solidão, viuvez e trabalho.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "feedbackCorrect": "Certo: a grande tornou-se viúva.",
+    "feedbackWrong": {
+      "b": "Povo é o que a enchia antes.",
+      "c": "Cidade é quem sofre, não o título."
+    },
+    "passageText": "Como está sentada solitária a cidade que estava cheia de povo! Tornou-se viúva a que era grande entre as nações; Ficou sujeita ao trabalho forçado a que era princesa entre as províncias.",
+    "template": "Tornou-se ___ a que era grande",
+    "options": [
+      {
+        "id": "a",
+        "text": "viúva"
+      },
+      {
+        "id": "b",
+        "text": "povo"
+      },
+      {
+        "id": "c",
+        "text": "cidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-sem-lm-03-solitaria-06",
+    "trail": "lamentacoes",
+    "section": "lm-03-solitaria",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Lamentações 1:1 comunica que se liga a este contexto?",
+    "prompt": "O que Lamentações 1:1 comunica que se liga a este contexto?",
+    "cue": "O que Lamentações 1:1 comunica que se liga a este contexto?",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Sair sabendo que a queda de Jerusalém aparece como solidão, viuvez e trabalho.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "feedbackCorrect": "Certo: o versículo dá corpo ao luto.",
+    "feedbackWrong": {
+      "b": "A princesa já caiu.",
+      "c": "Não é geografia; é lamento."
+    },
+    "passageText": "Como está sentada solitária a cidade que estava cheia de povo! Tornou-se viúva a que era grande entre as nações; Ficou sujeita ao trabalho forçado a que era princesa entre as províncias.",
+    "passageA": {
+      "ref": "Lamentações 1:1",
+      "text": "Como está sentada solitária a cidade que estava cheia de povo! Tornou-se viúva a que era grande entre as nações; Ficou sujeita ao trabalho forçado a que era princesa entre as províncias."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O luto da cidade é concreto"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Luto concreto"
+      },
+      {
+        "id": "b",
+        "text": "Festa da princesa"
+      },
+      {
+        "id": "c",
+        "text": "Mapa das nações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-cam-lm-03-solitaria-01",
+    "trail": "lamentacoes",
+    "section": "lm-03-solitaria",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "O texto chama a cidade de princesa livre entre as províncias.",
+    "prompt": "O texto chama a cidade de princesa livre entre as províncias.",
+    "cue": "O texto chama a cidade de princesa livre entre as províncias.",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Sair sabendo que a queda de Jerusalém aparece como solidão, viuvez e trabalho.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "feedbackCorrect": "Certo: a princesa ficou sujeita a trabalho.",
+    "feedbackWrong": {
+      "true": "Ela era princesa; agora está sob trabalho forçado."
+    },
+    "passageText": "Como está sentada solitária a cidade que estava cheia de povo! Tornou-se viúva a que era grande entre as nações; Ficou sujeita ao trabalho forçado a que era princesa entre as províncias.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "id": "lamentacoes-cam-lm-03-solitaria-02",
+    "trail": "lamentacoes",
+    "section": "lm-03-solitaria",
+    "difficulty": "caminhada",
+    "type": "tap",
+    "skill": "understand",
+    "question": "Em Lamentações 1:1, toque a palavra que falta em \"era ___ entre as províncias\"?",
+    "prompt": "Em Lamentações 1:1, toque a palavra que falta em \"era ___ entre as províncias\"?",
+    "cue": "Em Lamentações 1:1, toque a palavra que falta em \"era ___ entre as províncias\"?",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Sair sabendo que a queda de Jerusalém aparece como solidão, viuvez e trabalho.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "feedbackCorrect": "Exato: ela era princesa entre as províncias.",
+    "feedbackWrong": {
+      "a": "Viúva é o que ela se tornou.",
+      "c": "Povo enchia a cidade, não o título."
+    },
+    "passageText": "Como está sentada solitária a cidade que estava cheia de povo! Tornou-se viúva a que era grande entre as nações; Ficou sujeita ao trabalho forçado a que era princesa entre as províncias.",
+    "template": "era ___ entre as províncias",
+    "options": [
+      {
+        "id": "a",
+        "text": "viúva"
+      },
+      {
+        "id": "b",
+        "text": "princesa"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "lamentacoes-cam-lm-03-solitaria-03",
+    "trail": "lamentacoes",
+    "section": "lm-03-solitaria",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "O que a imagem da viúva faz com a grandeza antiga?",
+    "prompt": "O que a imagem da viúva faz com a grandeza antiga?",
+    "cue": "O que a imagem da viúva faz com a grandeza antiga?",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Sair sabendo que a queda de Jerusalém aparece como solidão, viuvez e trabalho.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "feedbackCorrect": "Certo: a honra antiga agora é luto.",
+    "feedbackWrong": {
+      "b": "O texto lembra que ela era grande.",
+      "c": "O trabalho forçado é o presente da cena.",
+      "d": "Não há festa; há sujeição."
+    },
+    "passageText": "Como está sentada solitária a cidade que estava cheia de povo! Tornou-se viúva a que era grande entre as nações; Ficou sujeita ao trabalho forçado a que era princesa entre as províncias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mostra a honra antiga convertida em perda."
+      },
+      {
+        "id": "b",
+        "text": "Prova que a cidade nunca foi grande."
+      },
+      {
+        "id": "c",
+        "text": "Anuncia que o trabalho forçado já acabou."
+      },
+      {
+        "id": "d",
+        "text": "Troca o povo por uma festa nas províncias."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-cam-lm-03-solitaria-04",
+    "trail": "lamentacoes",
+    "section": "lm-03-solitaria",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Lamentações 1:1?",
+    "prompt": "Como se encadeiam os eventos de Lamentações 1:1?",
+    "cue": "Como se encadeiam os eventos de Lamentações 1:1?",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Sair sabendo que a queda de Jerusalém aparece como solidão, viuvez e trabalho.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "feedbackCorrect": "Certo: solidão, viuvez e então o trabalho.",
+    "feedbackWrong": {
+      "b": "A viuvez vem depois da solidão.",
+      "c": "O trabalho fecha a queda da princesa."
+    },
+    "passageText": "Como está sentada solitária a cidade que estava cheia de povo! Tornou-se viúva a que era grande entre as nações; Ficou sujeita ao trabalho forçado a que era princesa entre as províncias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cidade cheia está agora sentada solitária."
+      },
+      {
+        "id": "b",
+        "text": "A grande entre as nações tornou-se viúva."
+      },
+      {
+        "id": "c",
+        "text": "A princesa ficou sujeita a trabalho forçado."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-cam-lm-03-solitaria-05",
+    "trail": "lamentacoes",
+    "section": "lm-03-solitaria",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Complete a frase: \"grande entre as ___\"",
+    "prompt": "Complete a frase: \"grande entre as ___\"",
+    "cue": "Complete a frase: \"grande entre as ___\"",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Sair sabendo que a queda de Jerusalém aparece como solidão, viuvez e trabalho.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "feedbackCorrect": "Certo: ela era grande entre as nações.",
+    "feedbackWrong": {
+      "b": "Princesa é o título entre as províncias.",
+      "c": "Povo enchia a cidade."
+    },
+    "passageText": "Como está sentada solitária a cidade que estava cheia de povo! Tornou-se viúva a que era grande entre as nações; Ficou sujeita ao trabalho forçado a que era princesa entre as províncias.",
+    "template": "grande entre as ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "nações"
+      },
+      {
+        "id": "b",
+        "text": "princesa"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-cam-lm-03-solitaria-06",
+    "trail": "lamentacoes",
+    "section": "lm-03-solitaria",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "Que relação Lamentações 1:1 estabelece com este contexto?",
+    "prompt": "Que relação Lamentações 1:1 estabelece com este contexto?",
+    "cue": "Que relação Lamentações 1:1 estabelece com este contexto?",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Sair sabendo que a queda de Jerusalém aparece como solidão, viuvez e trabalho.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "feedbackCorrect": "Certo: a grandeza antiga agora é perda.",
+    "feedbackWrong": {
+      "b": "O texto lembra o que ela foi.",
+      "c": "O trabalho é forçado, não livre."
+    },
+    "passageText": "Como está sentada solitária a cidade que estava cheia de povo! Tornou-se viúva a que era grande entre as nações; Ficou sujeita ao trabalho forçado a que era princesa entre as províncias.",
+    "passageA": {
+      "ref": "Lamentações 1:1",
+      "text": "Como está sentada solitária a cidade que estava cheia de povo! Tornou-se viúva a que era grande entre as nações; Ficou sujeita ao trabalho forçado a que era princesa entre as províncias."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O luto da cidade é concreto"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Honra que caiu"
+      },
+      {
+        "id": "b",
+        "text": "Cidade sem história"
+      },
+      {
+        "id": "c",
+        "text": "Trabalho voluntário"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-pro-lm-03-solitaria-01",
+    "trail": "lamentacoes",
+    "section": "lm-03-solitaria",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Viuvez, aqui, nomeia a perda de honra da cidade grande.",
+    "prompt": "Viuvez, aqui, nomeia a perda de honra da cidade grande.",
+    "cue": "Viuvez, aqui, nomeia a perda de honra da cidade grande.",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Sair sabendo que a queda de Jerusalém aparece como solidão, viuvez e trabalho.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "feedbackCorrect": "Certo: a grande entre as nações tornou-se viúva.",
+    "feedbackWrong": {
+      "false": "O luto usa a imagem da viúva para a cidade caída."
+    },
+    "passageText": "Como está sentada solitária a cidade que estava cheia de povo! Tornou-se viúva a que era grande entre as nações; Ficou sujeita ao trabalho forçado a que era princesa entre as províncias.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "lamentacoes-pro-lm-03-solitaria-02",
+    "trail": "lamentacoes",
+    "section": "lm-03-solitaria",
+    "difficulty": "profundezas",
+    "type": "tap",
+    "skill": "interpret",
+    "question": "Em Lamentações 1:1, toque a palavra que falta em \"cheia de ___\"?",
+    "prompt": "Em Lamentações 1:1, toque a palavra que falta em \"cheia de ___\"?",
+    "cue": "Em Lamentações 1:1, toque a palavra que falta em \"cheia de ___\"?",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Sair sabendo que a queda de Jerusalém aparece como solidão, viuvez e trabalho.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "feedbackCorrect": "Exato: a cidade estava cheia de povo.",
+    "feedbackWrong": {
+      "a": "Viúva é a imagem da queda.",
+      "c": "Princesa era o título antigo."
+    },
+    "passageText": "Como está sentada solitária a cidade que estava cheia de povo! Tornou-se viúva a que era grande entre as nações; Ficou sujeita ao trabalho forçado a que era princesa entre as províncias.",
+    "template": "cheia de ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "viúva"
+      },
+      {
+        "id": "b",
+        "text": "povo"
+      },
+      {
+        "id": "c",
+        "text": "princesa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "lamentacoes-pro-lm-03-solitaria-03",
+    "trail": "lamentacoes",
+    "section": "lm-03-solitaria",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "O que esse retrato impede o leitor de fazer?",
+    "prompt": "O que esse retrato impede o leitor de fazer?",
+    "cue": "O que esse retrato impede o leitor de fazer?",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Sair sabendo que a queda de Jerusalém aparece como solidão, viuvez e trabalho.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "feedbackCorrect": "Certo: o luto não pode ficar abstrato.",
+    "feedbackWrong": {
+      "b": "Lembrar a plenitude é parte do luto.",
+      "c": "O trabalho está no versículo.",
+      "d": "A solidão é exatamente o que se deve ver."
+    },
+    "passageText": "Como está sentada solitária a cidade que estava cheia de povo! Tornou-se viúva a que era grande entre as nações; Ficou sujeita ao trabalho forçado a que era princesa entre as províncias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tratar a queda como ideia sem rosto."
+      },
+      {
+        "id": "b",
+        "text": "Lembrar que a cidade um dia foi cheia."
+      },
+      {
+        "id": "c",
+        "text": "Ver trabalho forçado na princesa caída."
+      },
+      {
+        "id": "d",
+        "text": "Nomear a solidão de quem perdeu o povo."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-pro-lm-03-solitaria-04",
+    "trail": "lamentacoes",
+    "section": "lm-03-solitaria",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Lamentações 1:1?",
+    "prompt": "Qual sequência revela o sentido de Lamentações 1:1?",
+    "cue": "Qual sequência revela o sentido de Lamentações 1:1?",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Sair sabendo que a queda de Jerusalém aparece como solidão, viuvez e trabalho.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "feedbackCorrect": "Certo: solidão, viuvez e então o trabalho.",
+    "feedbackWrong": {
+      "b": "A viuvez vem depois da solidão.",
+      "c": "O trabalho fecha a queda da princesa."
+    },
+    "passageText": "Como está sentada solitária a cidade que estava cheia de povo! Tornou-se viúva a que era grande entre as nações; Ficou sujeita ao trabalho forçado a que era princesa entre as províncias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cidade cheia está agora sentada solitária."
+      },
+      {
+        "id": "b",
+        "text": "A grande entre as nações tornou-se viúva."
+      },
+      {
+        "id": "c",
+        "text": "A princesa ficou sujeita a trabalho forçado."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-pro-lm-03-solitaria-05",
+    "trail": "lamentacoes",
+    "section": "lm-03-solitaria",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Complete a frase: \"sujeita ao trabalho ___\"",
+    "prompt": "Complete a frase: \"sujeita ao trabalho ___\"",
+    "cue": "Complete a frase: \"sujeita ao trabalho ___\"",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Sair sabendo que a queda de Jerusalém aparece como solidão, viuvez e trabalho.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "feedbackCorrect": "Certo: o trabalho é forçado.",
+    "feedbackWrong": {
+      "b": "Viúva é a imagem anterior.",
+      "c": "Povo não qualifica o trabalho."
+    },
+    "passageText": "Como está sentada solitária a cidade que estava cheia de povo! Tornou-se viúva a que era grande entre as nações; Ficou sujeita ao trabalho forçado a que era princesa entre as províncias.",
+    "template": "sujeita ao trabalho ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "forçado"
+      },
+      {
+        "id": "b",
+        "text": "viúva"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-pro-lm-03-solitaria-06",
+    "trail": "lamentacoes",
+    "section": "lm-03-solitaria",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "Que sentido de Lamentações 1:1 se liga a este contexto?",
+    "prompt": "Que sentido de Lamentações 1:1 se liga a este contexto?",
+    "cue": "Que sentido de Lamentações 1:1 se liga a este contexto?",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Sair sabendo que a queda de Jerusalém aparece como solidão, viuvez e trabalho.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "feedbackCorrect": "Certo: a queda tem cidade, viúva e jugo.",
+    "feedbackWrong": {
+      "a": "O luto aqui tem endereço.",
+      "c": "A glória é o que se perdeu."
+    },
+    "passageText": "Como está sentada solitária a cidade que estava cheia de povo! Tornou-se viúva a que era grande entre as nações; Ficou sujeita ao trabalho forçado a que era princesa entre as províncias.",
+    "passageA": {
+      "ref": "Lamentações 1:1",
+      "text": "Como está sentada solitária a cidade que estava cheia de povo! Tornou-se viúva a que era grande entre as nações; Ficou sujeita ao trabalho forçado a que era princesa entre as províncias."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O luto da cidade é concreto"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Culpa abstrata"
+      },
+      {
+        "id": "b",
+        "text": "Queda com rosto"
+      },
+      {
+        "id": "c",
+        "text": "Glória intacta"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "lamentacoes-sem-lm-04-palavra-01",
+    "trail": "lamentacoes",
+    "section": "lm-04-palavra",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Jeová fez o que intentou e cumpriu a palavra dos dias antigos.",
+    "prompt": "Jeová fez o que intentou e cumpriu a palavra dos dias antigos.",
+    "cue": "Jeová fez o que intentou e cumpriu a palavra dos dias antigos.",
+    "verseRef": "Lamentações 2:17",
+    "learningObjective": "Sair sabendo que a queda cumpre o que Jeová já tinha falado.",
+    "evidence": [
+      "Lamentações 2:17"
+    ],
+    "feedbackCorrect": "Certo: o desastre cumpre a palavra.",
+    "feedbackWrong": {
+      "false": "O versículo abre com intento e palavra cumprida."
+    },
+    "passageText": "Fez Jeová o que intentou; cumpriu a sua palavra que ordenou nos dias antigos; derrubou e não mostrou piedade. Fez que o inimigo se alegrasse sobre ti, exaltou o poder dos teus adversários.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "lamentacoes-sem-lm-04-palavra-02",
+    "trail": "lamentacoes",
+    "section": "lm-04-palavra",
+    "difficulty": "semente",
+    "type": "tap",
+    "skill": "observe",
+    "question": "Em Lamentações 2:17, toque a palavra que falta em \"cumpriu a sua ___ que ordenou\"?",
+    "prompt": "Em Lamentações 2:17, toque a palavra que falta em \"cumpriu a sua ___ que ordenou\"?",
+    "cue": "Em Lamentações 2:17, toque a palavra que falta em \"cumpriu a sua ___ que ordenou\"?",
+    "verseRef": "Lamentações 2:17",
+    "learningObjective": "Sair sabendo que a queda cumpre o que Jeová já tinha falado.",
+    "evidence": [
+      "Lamentações 2:17"
+    ],
+    "feedbackCorrect": "Exato: ele cumpriu a sua palavra.",
+    "feedbackWrong": {
+      "a": "O inimigo se alegra depois.",
+      "c": "Piedade é o que ele não mostrou."
+    },
+    "passageText": "Fez Jeová o que intentou; cumpriu a sua palavra que ordenou nos dias antigos; derrubou e não mostrou piedade. Fez que o inimigo se alegrasse sobre ti, exaltou o poder dos teus adversários.",
+    "template": "cumpriu a sua ___ que ordenou",
+    "options": [
+      {
+        "id": "a",
+        "text": "inimigo"
+      },
+      {
+        "id": "b",
+        "text": "palavra"
+      },
+      {
+        "id": "c",
+        "text": "piedade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "lamentacoes-sem-lm-04-palavra-03",
+    "trail": "lamentacoes",
+    "section": "lm-04-palavra",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Quem o versículo põe por trás da queda?",
+    "prompt": "Quem o versículo põe por trás da queda?",
+    "cue": "Quem o versículo põe por trás da queda?",
+    "verseRef": "Lamentações 2:17",
+    "learningObjective": "Sair sabendo que a queda cumpre o que Jeová já tinha falado.",
+    "evidence": [
+      "Lamentações 2:17"
+    ],
+    "feedbackCorrect": "Certo: Jeová fez o que intentou.",
+    "feedbackWrong": {
+      "b": "O inimigo se alegra, mas não é a origem.",
+      "c": "A princesa é a cidade caída, não a causa.",
+      "d": "Há palavra ordenada nos dias antigos."
+    },
+    "passageText": "Fez Jeová o que intentou; cumpriu a sua palavra que ordenou nos dias antigos; derrubou e não mostrou piedade. Fez que o inimigo se alegrasse sobre ti, exaltou o poder dos teus adversários.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová, que cumpriu a palavra antiga."
+      },
+      {
+        "id": "b",
+        "text": "Só o inimigo, agindo sem Deus saber."
+      },
+      {
+        "id": "c",
+        "text": "A princesa, que derrubou a própria cidade."
+      },
+      {
+        "id": "d",
+        "text": "O acaso, sem palavra anterior."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-sem-lm-04-palavra-04",
+    "trail": "lamentacoes",
+    "section": "lm-04-palavra",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Qual é a ordem dos fatos em Lamentações 2:17?",
+    "prompt": "Qual é a ordem dos fatos em Lamentações 2:17?",
+    "cue": "Qual é a ordem dos fatos em Lamentações 2:17?",
+    "verseRef": "Lamentações 2:17",
+    "learningObjective": "Sair sabendo que a queda cumpre o que Jeová já tinha falado.",
+    "evidence": [
+      "Lamentações 2:17"
+    ],
+    "feedbackCorrect": "Certo: intento, palavra e então a alegria do inimigo.",
+    "feedbackWrong": {
+      "b": "A palavra antiga vem antes da festa do inimigo.",
+      "c": "Os adversários fecham a cena, não a abrem."
+    },
+    "passageText": "Fez Jeová o que intentou; cumpriu a sua palavra que ordenou nos dias antigos; derrubou e não mostrou piedade. Fez que o inimigo se alegrasse sobre ti, exaltou o poder dos teus adversários.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová fez o que intentou."
+      },
+      {
+        "id": "b",
+        "text": "Cumpriu a palavra ordenada nos dias antigos."
+      },
+      {
+        "id": "c",
+        "text": "O inimigo se alegrou e o poder dos adversários foi exaltado."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-sem-lm-04-palavra-05",
+    "trail": "lamentacoes",
+    "section": "lm-04-palavra",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Complete a frase: \"derrubou e não mostrou ___\"",
+    "prompt": "Complete a frase: \"derrubou e não mostrou ___\"",
+    "cue": "Complete a frase: \"derrubou e não mostrou ___\"",
+    "verseRef": "Lamentações 2:17",
+    "learningObjective": "Sair sabendo que a queda cumpre o que Jeová já tinha falado.",
+    "evidence": [
+      "Lamentações 2:17"
+    ],
+    "feedbackCorrect": "Certo: nesse ato não houve piedade.",
+    "feedbackWrong": {
+      "b": "Palavra é o que foi cumprido.",
+      "c": "Inimigo é quem se alegra."
+    },
+    "passageText": "Fez Jeová o que intentou; cumpriu a sua palavra que ordenou nos dias antigos; derrubou e não mostrou piedade. Fez que o inimigo se alegrasse sobre ti, exaltou o poder dos teus adversários.",
+    "template": "derrubou e não mostrou ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "piedade"
+      },
+      {
+        "id": "b",
+        "text": "palavra"
+      },
+      {
+        "id": "c",
+        "text": "inimigo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-sem-lm-04-palavra-06",
+    "trail": "lamentacoes",
+    "section": "lm-04-palavra",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Lamentações 2:17 comunica que se liga a este contexto?",
+    "prompt": "O que Lamentações 2:17 comunica que se liga a este contexto?",
+    "cue": "O que Lamentações 2:17 comunica que se liga a este contexto?",
+    "verseRef": "Lamentações 2:17",
+    "learningObjective": "Sair sabendo que a queda cumpre o que Jeová já tinha falado.",
+    "evidence": [
+      "Lamentações 2:17"
+    ],
+    "feedbackCorrect": "Certo: a queda cumpre o que foi dito.",
+    "feedbackWrong": {
+      "b": "Há intento, não acaso.",
+      "c": "A alegria do inimigo não é inocente."
+    },
+    "passageText": "Fez Jeová o que intentou; cumpriu a sua palavra que ordenou nos dias antigos; derrubou e não mostrou piedade. Fez que o inimigo se alegrasse sobre ti, exaltou o poder dos teus adversários.",
+    "passageA": {
+      "ref": "Lamentações 2:17",
+      "text": "Fez Jeová o que intentou; cumpriu a sua palavra que ordenou nos dias antigos; derrubou e não mostrou piedade. Fez que o inimigo se alegrasse sobre ti, exaltou o poder dos teus adversários."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O juízo cumpre a palavra antiga"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Palavra cumprida"
+      },
+      {
+        "id": "b",
+        "text": "Acaso da guerra"
+      },
+      {
+        "id": "c",
+        "text": "Festa inocente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-cam-lm-04-palavra-01",
+    "trail": "lamentacoes",
+    "section": "lm-04-palavra",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "O texto diz que Jeová derrubou e ao mesmo tempo mostrou piedade.",
+    "prompt": "O texto diz que Jeová derrubou e ao mesmo tempo mostrou piedade.",
+    "cue": "O texto diz que Jeová derrubou e ao mesmo tempo mostrou piedade.",
+    "verseRef": "Lamentações 2:17",
+    "learningObjective": "Sair sabendo que a queda cumpre o que Jeová já tinha falado.",
+    "evidence": [
+      "Lamentações 2:17"
+    ],
+    "feedbackCorrect": "Certo: derrubou e não mostrou piedade.",
+    "feedbackWrong": {
+      "true": "A frase nega a piedade nesse ato."
+    },
+    "passageText": "Fez Jeová o que intentou; cumpriu a sua palavra que ordenou nos dias antigos; derrubou e não mostrou piedade. Fez que o inimigo se alegrasse sobre ti, exaltou o poder dos teus adversários.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "id": "lamentacoes-cam-lm-04-palavra-02",
+    "trail": "lamentacoes",
+    "section": "lm-04-palavra",
+    "difficulty": "caminhada",
+    "type": "tap",
+    "skill": "understand",
+    "question": "Em Lamentações 2:17, toque a palavra que falta em \"o ___ se alegrasse sobre ti\"?",
+    "prompt": "Em Lamentações 2:17, toque a palavra que falta em \"o ___ se alegrasse sobre ti\"?",
+    "cue": "Em Lamentações 2:17, toque a palavra que falta em \"o ___ se alegrasse sobre ti\"?",
+    "verseRef": "Lamentações 2:17",
+    "learningObjective": "Sair sabendo que a queda cumpre o que Jeová já tinha falado.",
+    "evidence": [
+      "Lamentações 2:17"
+    ],
+    "feedbackCorrect": "Exato: o inimigo se alegra sobre a cidade.",
+    "feedbackWrong": {
+      "a": "A palavra é o que foi cumprido.",
+      "c": "Poder é o que foi exaltado nos adversários."
+    },
+    "passageText": "Fez Jeová o que intentou; cumpriu a sua palavra que ordenou nos dias antigos; derrubou e não mostrou piedade. Fez que o inimigo se alegrasse sobre ti, exaltou o poder dos teus adversários.",
+    "template": "o ___ se alegrasse sobre ti",
+    "options": [
+      {
+        "id": "a",
+        "text": "palavra"
+      },
+      {
+        "id": "b",
+        "text": "inimigo"
+      },
+      {
+        "id": "c",
+        "text": "poder"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "lamentacoes-cam-lm-04-palavra-03",
+    "trail": "lamentacoes",
+    "section": "lm-04-palavra",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como se relacionam palavra antiga e alegria do inimigo?",
+    "prompt": "Como se relacionam palavra antiga e alegria do inimigo?",
+    "cue": "Como se relacionam palavra antiga e alegria do inimigo?",
+    "verseRef": "Lamentações 2:17",
+    "learningObjective": "Sair sabendo que a queda cumpre o que Jeová já tinha falado.",
+    "evidence": [
+      "Lamentações 2:17"
+    ],
+    "feedbackCorrect": "Certo: a alegria do inimigo cabe no cumprimento.",
+    "feedbackWrong": {
+      "b": "A palavra se cumpre; não é cancelada.",
+      "c": "O texto diz que não houve piedade nesse ato.",
+      "d": "A palavra é de Jeová, não dos adversários."
+    },
+    "passageText": "Fez Jeová o que intentou; cumpriu a sua palavra que ordenou nos dias antigos; derrubou e não mostrou piedade. Fez que o inimigo se alegrasse sobre ti, exaltou o poder dos teus adversários.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O inimigo se alegra dentro do que Jeová cumpriu."
+      },
+      {
+        "id": "b",
+        "text": "A alegria do inimigo cancela a palavra antiga."
+      },
+      {
+        "id": "c",
+        "text": "A piedade de Jeová impede a queda anunciada."
+      },
+      {
+        "id": "d",
+        "text": "Os adversários escrevem a palavra no lugar de Jeová."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-cam-lm-04-palavra-04",
+    "trail": "lamentacoes",
+    "section": "lm-04-palavra",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Lamentações 2:17?",
+    "prompt": "Como se encadeiam os eventos de Lamentações 2:17?",
+    "cue": "Como se encadeiam os eventos de Lamentações 2:17?",
+    "verseRef": "Lamentações 2:17",
+    "learningObjective": "Sair sabendo que a queda cumpre o que Jeová já tinha falado.",
+    "evidence": [
+      "Lamentações 2:17"
+    ],
+    "feedbackCorrect": "Certo: intento, palavra e então a alegria do inimigo.",
+    "feedbackWrong": {
+      "b": "A palavra antiga vem antes da festa do inimigo.",
+      "c": "Os adversários fecham a cena, não a abrem."
+    },
+    "passageText": "Fez Jeová o que intentou; cumpriu a sua palavra que ordenou nos dias antigos; derrubou e não mostrou piedade. Fez que o inimigo se alegrasse sobre ti, exaltou o poder dos teus adversários.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová fez o que intentou."
+      },
+      {
+        "id": "b",
+        "text": "Cumpriu a palavra ordenada nos dias antigos."
+      },
+      {
+        "id": "c",
+        "text": "O inimigo se alegrou e o poder dos adversários foi exaltado."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-cam-lm-04-palavra-05",
+    "trail": "lamentacoes",
+    "section": "lm-04-palavra",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Complete a frase: \"exaltou o ___ dos teus adversários\"",
+    "prompt": "Complete a frase: \"exaltou o ___ dos teus adversários\"",
+    "cue": "Complete a frase: \"exaltou o ___ dos teus adversários\"",
+    "verseRef": "Lamentações 2:17",
+    "learningObjective": "Sair sabendo que a queda cumpre o que Jeová já tinha falado.",
+    "evidence": [
+      "Lamentações 2:17"
+    ],
+    "feedbackCorrect": "Certo: o poder dos adversários foi exaltado.",
+    "feedbackWrong": {
+      "b": "Palavra pertence a Jeová.",
+      "c": "Piedade é o que não foi mostrado."
+    },
+    "passageText": "Fez Jeová o que intentou; cumpriu a sua palavra que ordenou nos dias antigos; derrubou e não mostrou piedade. Fez que o inimigo se alegrasse sobre ti, exaltou o poder dos teus adversários.",
+    "template": "exaltou o ___ dos teus adversários",
+    "options": [
+      {
+        "id": "a",
+        "text": "poder"
+      },
+      {
+        "id": "b",
+        "text": "palavra"
+      },
+      {
+        "id": "c",
+        "text": "piedade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-cam-lm-04-palavra-06",
+    "trail": "lamentacoes",
+    "section": "lm-04-palavra",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "Que relação Lamentações 2:17 estabelece com este contexto?",
+    "prompt": "Que relação Lamentações 2:17 estabelece com este contexto?",
+    "cue": "Que relação Lamentações 2:17 estabelece com este contexto?",
+    "verseRef": "Lamentações 2:17",
+    "learningObjective": "Sair sabendo que a queda cumpre o que Jeová já tinha falado.",
+    "evidence": [
+      "Lamentações 2:17"
+    ],
+    "feedbackCorrect": "Certo: o juízo já tinha palavra.",
+    "feedbackWrong": {
+      "a": "O autor do intento é Jeová.",
+      "c": "O texto nega piedade nesse derrubar."
+    },
+    "passageText": "Fez Jeová o que intentou; cumpriu a sua palavra que ordenou nos dias antigos; derrubou e não mostrou piedade. Fez que o inimigo se alegrasse sobre ti, exaltou o poder dos teus adversários.",
+    "passageA": {
+      "ref": "Lamentações 2:17",
+      "text": "Fez Jeová o que intentou; cumpriu a sua palavra que ordenou nos dias antigos; derrubou e não mostrou piedade. Fez que o inimigo se alegrasse sobre ti, exaltou o poder dos teus adversários."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O juízo cumpre a palavra antiga"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Inimigo como autor"
+      },
+      {
+        "id": "b",
+        "text": "Juízo anunciado"
+      },
+      {
+        "id": "c",
+        "text": "Piedade no ato"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "lamentacoes-pro-lm-04-palavra-01",
+    "trail": "lamentacoes",
+    "section": "lm-04-palavra",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "A alegria do inimigo não apaga que a palavra de Jeová se cumpriu.",
+    "prompt": "A alegria do inimigo não apaga que a palavra de Jeová se cumpriu.",
+    "cue": "A alegria do inimigo não apaga que a palavra de Jeová se cumpriu.",
+    "verseRef": "Lamentações 2:17",
+    "learningObjective": "Sair sabendo que a queda cumpre o que Jeová já tinha falado.",
+    "evidence": [
+      "Lamentações 2:17"
+    ],
+    "feedbackCorrect": "Certo: o inimigo se alegra dentro do cumprimento.",
+    "feedbackWrong": {
+      "false": "A alegria do adversário vem depois da palavra cumprida."
+    },
+    "passageText": "Fez Jeová o que intentou; cumpriu a sua palavra que ordenou nos dias antigos; derrubou e não mostrou piedade. Fez que o inimigo se alegrasse sobre ti, exaltou o poder dos teus adversários.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "lamentacoes-pro-lm-04-palavra-02",
+    "trail": "lamentacoes",
+    "section": "lm-04-palavra",
+    "difficulty": "profundezas",
+    "type": "tap",
+    "skill": "interpret",
+    "question": "Em Lamentações 2:17, toque a palavra que falta em \"nos dias ___\"?",
+    "prompt": "Em Lamentações 2:17, toque a palavra que falta em \"nos dias ___\"?",
+    "cue": "Em Lamentações 2:17, toque a palavra que falta em \"nos dias ___\"?",
+    "verseRef": "Lamentações 2:17",
+    "learningObjective": "Sair sabendo que a queda cumpre o que Jeová já tinha falado.",
+    "evidence": [
+      "Lamentações 2:17"
+    ],
+    "feedbackCorrect": "Exato: a palavra foi ordenada nos dias antigos.",
+    "feedbackWrong": {
+      "a": "O inimigo é figura do presente.",
+      "c": "Poder é o que foi exaltado nos adversários."
+    },
+    "passageText": "Fez Jeová o que intentou; cumpriu a sua palavra que ordenou nos dias antigos; derrubou e não mostrou piedade. Fez que o inimigo se alegrasse sobre ti, exaltou o poder dos teus adversários.",
+    "template": "nos dias ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "inimigo"
+      },
+      {
+        "id": "b",
+        "text": "antigos"
+      },
+      {
+        "id": "c",
+        "text": "poder"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "lamentacoes-pro-lm-04-palavra-03",
+    "trail": "lamentacoes",
+    "section": "lm-04-palavra",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "O que essa leitura impede diante da catástrofe?",
+    "prompt": "O que essa leitura impede diante da catástrofe?",
+    "cue": "O que essa leitura impede diante da catástrofe?",
+    "verseRef": "Lamentações 2:17",
+    "learningObjective": "Sair sabendo que a queda cumpre o que Jeová já tinha falado.",
+    "evidence": [
+      "Lamentações 2:17"
+    ],
+    "feedbackCorrect": "Certo: o juízo não é surpresa sem palavra.",
+    "feedbackWrong": {
+      "b": "Lembrar a palavra é o centro do versículo.",
+      "c": "A alegria do inimigo está no texto.",
+      "d": "A falta de piedade também está dita."
+    },
+    "passageText": "Fez Jeová o que intentou; cumpriu a sua palavra que ordenou nos dias antigos; derrubou e não mostrou piedade. Fez que o inimigo se alegrasse sobre ti, exaltou o poder dos teus adversários.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tratar o juízo como acidente sem aviso."
+      },
+      {
+        "id": "b",
+        "text": "Lembrar que a palavra antiga se cumpriu."
+      },
+      {
+        "id": "c",
+        "text": "Ver o inimigo alegrar-se sobre a cidade."
+      },
+      {
+        "id": "d",
+        "text": "Negar piedade nesse ato de derrubar."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-pro-lm-04-palavra-04",
+    "trail": "lamentacoes",
+    "section": "lm-04-palavra",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Lamentações 2:17?",
+    "prompt": "Qual sequência revela o sentido de Lamentações 2:17?",
+    "cue": "Qual sequência revela o sentido de Lamentações 2:17?",
+    "verseRef": "Lamentações 2:17",
+    "learningObjective": "Sair sabendo que a queda cumpre o que Jeová já tinha falado.",
+    "evidence": [
+      "Lamentações 2:17"
+    ],
+    "feedbackCorrect": "Certo: intento, palavra e então a alegria do inimigo.",
+    "feedbackWrong": {
+      "b": "A palavra antiga vem antes da festa do inimigo.",
+      "c": "Os adversários fecham a cena, não a abrem."
+    },
+    "passageText": "Fez Jeová o que intentou; cumpriu a sua palavra que ordenou nos dias antigos; derrubou e não mostrou piedade. Fez que o inimigo se alegrasse sobre ti, exaltou o poder dos teus adversários.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová fez o que intentou."
+      },
+      {
+        "id": "b",
+        "text": "Cumpriu a palavra ordenada nos dias antigos."
+      },
+      {
+        "id": "c",
+        "text": "O inimigo se alegrou e o poder dos adversários foi exaltado."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-pro-lm-04-palavra-05",
+    "trail": "lamentacoes",
+    "section": "lm-04-palavra",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Complete a frase: \"Fez ___ o que intentou\"",
+    "prompt": "Complete a frase: \"Fez ___ o que intentou\"",
+    "cue": "Complete a frase: \"Fez ___ o que intentou\"",
+    "verseRef": "Lamentações 2:17",
+    "learningObjective": "Sair sabendo que a queda cumpre o que Jeová já tinha falado.",
+    "evidence": [
+      "Lamentações 2:17"
+    ],
+    "feedbackCorrect": "Certo: Jeová fez o que intentou.",
+    "feedbackWrong": {
+      "b": "O inimigo se alegra; não é o sujeito do intento.",
+      "c": "Poder é dos adversários, não quem intenta."
+    },
+    "passageText": "Fez Jeová o que intentou; cumpriu a sua palavra que ordenou nos dias antigos; derrubou e não mostrou piedade. Fez que o inimigo se alegrasse sobre ti, exaltou o poder dos teus adversários.",
+    "template": "Fez ___ o que intentou",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "inimigo"
+      },
+      {
+        "id": "c",
+        "text": "poder"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-pro-lm-04-palavra-06",
+    "trail": "lamentacoes",
+    "section": "lm-04-palavra",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "Que sentido de Lamentações 2:17 se liga a este contexto?",
+    "prompt": "Que sentido de Lamentações 2:17 se liga a este contexto?",
+    "cue": "Que sentido de Lamentações 2:17 se liga a este contexto?",
+    "verseRef": "Lamentações 2:17",
+    "learningObjective": "Sair sabendo que a queda cumpre o que Jeová já tinha falado.",
+    "evidence": [
+      "Lamentações 2:17"
+    ],
+    "feedbackCorrect": "Certo: Deus não ficou sem palavra.",
+    "feedbackWrong": {
+      "a": "Houve palavra nos dias antigos.",
+      "c": "A queda tem juiz, não só vencedor."
+    },
+    "passageText": "Fez Jeová o que intentou; cumpriu a sua palavra que ordenou nos dias antigos; derrubou e não mostrou piedade. Fez que o inimigo se alegrasse sobre ti, exaltou o poder dos teus adversários.",
+    "passageA": {
+      "ref": "Lamentações 2:17",
+      "text": "Fez Jeová o que intentou; cumpriu a sua palavra que ordenou nos dias antigos; derrubou e não mostrou piedade. Fez que o inimigo se alegrasse sobre ti, exaltou o poder dos teus adversários."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O juízo cumpre a palavra antiga"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Silêncio de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Aviso que se cumpre"
+      },
+      {
+        "id": "c",
+        "text": "Vitória sem juiz"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "lamentacoes-sem-lm-05-trono-01",
+    "trail": "lamentacoes",
+    "section": "lm-05-trono",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "O texto diz que o trono de Jeová caiu com a cidade.",
+    "prompt": "O texto diz que o trono de Jeová caiu com a cidade.",
+    "cue": "O texto diz que o trono de Jeová caiu com a cidade.",
+    "verseRef": "Lamentações 5:19–22",
+    "learningObjective": "Sair sabendo que o lamento pede volta mesmo temendo a rejeição.",
+    "evidence": [
+      "Lamentações 5:19–22"
+    ],
+    "feedbackCorrect": "Certo: Jeová permanece e o trono subsiste.",
+    "feedbackWrong": {
+      "true": "O versículo afirma permanência de geração em geração."
+    },
+    "passageText": "Tu, Jeová, permaneces para sempre; o teu trono subsiste de geração em geração. Por que te esqueces de nós para sempre? E nos abandonas por tanto tempo? Converte-nos a ti, Jeová, e seremos convertidos; renova os nossos dias como dantes, se é que não nos tens, de todo, rejeitado, se é que não estás sobremaneira irado contra nós.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "id": "lamentacoes-sem-lm-05-trono-02",
+    "trail": "lamentacoes",
+    "section": "lm-05-trono",
+    "difficulty": "semente",
+    "type": "tap",
+    "skill": "observe",
+    "question": "Em Lamentações 5:19–22, toque a palavra que falta em \"o teu ___ subsiste de geração em geração\"?",
+    "prompt": "Em Lamentações 5:19–22, toque a palavra que falta em \"o teu ___ subsiste de geração em geração\"?",
+    "cue": "Em Lamentações 5:19–22, toque a palavra que falta em \"o teu ___ subsiste de geração em geração\"?",
+    "verseRef": "Lamentações 5:19–22",
+    "learningObjective": "Sair sabendo que o lamento pede volta mesmo temendo a rejeição.",
+    "evidence": [
+      "Lamentações 5:19–22"
+    ],
+    "feedbackCorrect": "Exato: o trono subsiste.",
+    "feedbackWrong": {
+      "a": "Dias são os que se pede renovar.",
+      "c": "Geração marca a duração, não o sujeito."
+    },
+    "passageText": "Tu, Jeová, permaneces para sempre; o teu trono subsiste de geração em geração. Por que te esqueces de nós para sempre? E nos abandonas por tanto tempo? Converte-nos a ti, Jeová, e seremos convertidos; renova os nossos dias como dantes, se é que não nos tens, de todo, rejeitado, se é que não estás sobremaneira irado contra nós.",
+    "template": "o teu ___ subsiste de geração em geração",
+    "options": [
+      {
+        "id": "a",
+        "text": "dias"
+      },
+      {
+        "id": "b",
+        "text": "trono"
+      },
+      {
+        "id": "c",
+        "text": "geração"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "lamentacoes-sem-lm-05-trono-03",
+    "trail": "lamentacoes",
+    "section": "lm-05-trono",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "O que Lamentações 5 afirma sobre Jeová?",
+    "prompt": "O que Lamentações 5 afirma sobre Jeová?",
+    "cue": "O que Lamentações 5 afirma sobre Jeová?",
+    "verseRef": "Lamentações 5:19–22",
+    "learningObjective": "Sair sabendo que o lamento pede volta mesmo temendo a rejeição.",
+    "evidence": [
+      "Lamentações 5:19–22"
+    ],
+    "feedbackCorrect": "Certo: ele permanece e o trono subsiste.",
+    "feedbackWrong": {
+      "b": "A oração ainda fala com ele.",
+      "c": "O trono é dele, de geração em geração.",
+      "d": "Há pedido, não sentença muda."
+    },
+    "passageText": "Tu, Jeová, permaneces para sempre; o teu trono subsiste de geração em geração. Por que te esqueces de nós para sempre? E nos abandonas por tanto tempo? Converte-nos a ti, Jeová, e seremos convertidos; renova os nossos dias como dantes, se é que não nos tens, de todo, rejeitado, se é que não estás sobremaneira irado contra nós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová permanece e o trono não cai."
+      },
+      {
+        "id": "b",
+        "text": "Jeová acabou com a cidade e também sumiu."
+      },
+      {
+        "id": "c",
+        "text": "O trono passou à geração do inimigo."
+      },
+      {
+        "id": "d",
+        "text": "A rejeição final já foi declarada sem pedido."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-sem-lm-05-trono-04",
+    "trail": "lamentacoes",
+    "section": "lm-05-trono",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Qual é a ordem dos fatos em Lamentações 5:19–22?",
+    "prompt": "Qual é a ordem dos fatos em Lamentações 5:19–22?",
+    "cue": "Qual é a ordem dos fatos em Lamentações 5:19–22?",
+    "verseRef": "Lamentações 5:19–22",
+    "learningObjective": "Sair sabendo que o lamento pede volta mesmo temendo a rejeição.",
+    "evidence": [
+      "Lamentações 5:19–22"
+    ],
+    "feedbackCorrect": "Certo: trono, pergunta e então o pedido.",
+    "feedbackWrong": {
+      "b": "A pergunta vem depois da permanência.",
+      "c": "O pedido fecha a oração, não a abre."
+    },
+    "passageText": "Tu, Jeová, permaneces para sempre; o teu trono subsiste de geração em geração. Por que te esqueces de nós para sempre? E nos abandonas por tanto tempo? Converte-nos a ti, Jeová, e seremos convertidos; renova os nossos dias como dantes, se é que não nos tens, de todo, rejeitado, se é que não estás sobremaneira irado contra nós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová permanece e o trono subsiste."
+      },
+      {
+        "id": "b",
+        "text": "O povo pergunta pelo esquecimento e pelo abandono."
+      },
+      {
+        "id": "c",
+        "text": "Pede conversão e renovação, temendo a rejeição."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-sem-lm-05-trono-05",
+    "trail": "lamentacoes",
+    "section": "lm-05-trono",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Complete a frase: \"Tu, ___, permaneces para sempre\"",
+    "prompt": "Complete a frase: \"Tu, ___, permaneces para sempre\"",
+    "cue": "Complete a frase: \"Tu, ___, permaneces para sempre\"",
+    "verseRef": "Lamentações 5:19–22",
+    "learningObjective": "Sair sabendo que o lamento pede volta mesmo temendo a rejeição.",
+    "evidence": [
+      "Lamentações 5:19–22"
+    ],
+    "feedbackCorrect": "Certo: Jeová é quem permanece.",
+    "feedbackWrong": {
+      "b": "O trono subsiste porque ele permanece.",
+      "c": "Dias são os do povo."
+    },
+    "passageText": "Tu, Jeová, permaneces para sempre; o teu trono subsiste de geração em geração. Por que te esqueces de nós para sempre? E nos abandonas por tanto tempo? Converte-nos a ti, Jeová, e seremos convertidos; renova os nossos dias como dantes, se é que não nos tens, de todo, rejeitado, se é que não estás sobremaneira irado contra nós.",
+    "template": "Tu, ___, permaneces para sempre",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "trono"
+      },
+      {
+        "id": "c",
+        "text": "dias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-sem-lm-05-trono-06",
+    "trail": "lamentacoes",
+    "section": "lm-05-trono",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Lamentações 5:19–22 comunica que se liga a este contexto?",
+    "prompt": "O que Lamentações 5:19–22 comunica que se liga a este contexto?",
+    "cue": "O que Lamentações 5:19–22 comunica que se liga a este contexto?",
+    "verseRef": "Lamentações 5:19–22",
+    "learningObjective": "Sair sabendo que o lamento pede volta mesmo temendo a rejeição.",
+    "evidence": [
+      "Lamentações 5:19–22"
+    ],
+    "feedbackCorrect": "Certo: quem permanece é Jeová.",
+    "feedbackWrong": {
+      "b": "Eles ainda oram; não estão só esquecidos.",
+      "c": "A oração ainda tem voz."
+    },
+    "passageText": "Tu, Jeová, permaneces para sempre; o teu trono subsiste de geração em geração. Por que te esqueces de nós para sempre? E nos abandonas por tanto tempo? Converte-nos a ti, Jeová, e seremos convertidos; renova os nossos dias como dantes, se é que não nos tens, de todo, rejeitado, se é que não estás sobremaneira irado contra nós.",
+    "passageA": {
+      "ref": "Lamentações 5:19–22",
+      "text": "Tu, Jeová, permaneces para sempre; o teu trono subsiste de geração em geração. Por que te esqueces de nós para sempre? E nos abandonas por tanto tempo? Converte-nos a ti, Jeová, e seremos convertidos; renova os nossos dias como dantes, se é que não nos tens, de todo, rejeitado, se é que não estás sobremaneira irado contra nós."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "No luto ainda se pede restauração"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Trono que fica"
+      },
+      {
+        "id": "b",
+        "text": "Cidade esquecida"
+      },
+      {
+        "id": "c",
+        "text": "Ira sem fala"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-cam-lm-05-trono-01",
+    "trail": "lamentacoes",
+    "section": "lm-05-trono",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "O povo pergunta se foi esquecido e abandonado por tanto tempo.",
+    "prompt": "O povo pergunta se foi esquecido e abandonado por tanto tempo.",
+    "cue": "O povo pergunta se foi esquecido e abandonado por tanto tempo.",
+    "verseRef": "Lamentações 5:19–22",
+    "learningObjective": "Sair sabendo que o lamento pede volta mesmo temendo a rejeição.",
+    "evidence": [
+      "Lamentações 5:19–22"
+    ],
+    "feedbackCorrect": "Certo: a oração nomeia esquecimento e abandono.",
+    "feedbackWrong": {
+      "false": "As perguntas estão no meio do poema final."
+    },
+    "passageText": "Tu, Jeová, permaneces para sempre; o teu trono subsiste de geração em geração. Por que te esqueces de nós para sempre? E nos abandonas por tanto tempo? Converte-nos a ti, Jeová, e seremos convertidos; renova os nossos dias como dantes, se é que não nos tens, de todo, rejeitado, se é que não estás sobremaneira irado contra nós.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "lamentacoes-cam-lm-05-trono-02",
+    "trail": "lamentacoes",
+    "section": "lm-05-trono",
+    "difficulty": "caminhada",
+    "type": "tap",
+    "skill": "understand",
+    "question": "Em Lamentações 5:19–22, toque a palavra que falta em \"renova os nossos ___ como dantes\"?",
+    "prompt": "Em Lamentações 5:19–22, toque a palavra que falta em \"renova os nossos ___ como dantes\"?",
+    "cue": "Em Lamentações 5:19–22, toque a palavra que falta em \"renova os nossos ___ como dantes\"?",
+    "verseRef": "Lamentações 5:19–22",
+    "learningObjective": "Sair sabendo que o lamento pede volta mesmo temendo a rejeição.",
+    "evidence": [
+      "Lamentações 5:19–22"
+    ],
+    "feedbackCorrect": "Exato: o pedido é renovar os dias.",
+    "feedbackWrong": {
+      "a": "O trono é o que permanece.",
+      "c": "Geração fala da duração do trono."
+    },
+    "passageText": "Tu, Jeová, permaneces para sempre; o teu trono subsiste de geração em geração. Por que te esqueces de nós para sempre? E nos abandonas por tanto tempo? Converte-nos a ti, Jeová, e seremos convertidos; renova os nossos dias como dantes, se é que não nos tens, de todo, rejeitado, se é que não estás sobremaneira irado contra nós.",
+    "template": "renova os nossos ___ como dantes",
+    "options": [
+      {
+        "id": "a",
+        "text": "trono"
+      },
+      {
+        "id": "b",
+        "text": "dias"
+      },
+      {
+        "id": "c",
+        "text": "geração"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "lamentacoes-cam-lm-05-trono-03",
+    "trail": "lamentacoes",
+    "section": "lm-05-trono",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como a pergunta pelo abandono convive com o pedido?",
+    "prompt": "Como a pergunta pelo abandono convive com o pedido?",
+    "cue": "Como a pergunta pelo abandono convive com o pedido?",
+    "verseRef": "Lamentações 5:19–22",
+    "learningObjective": "Sair sabendo que o lamento pede volta mesmo temendo a rejeição.",
+    "evidence": [
+      "Lamentações 5:19–22"
+    ],
+    "feedbackCorrect": "Certo: o medo não cancela a oração.",
+    "feedbackWrong": {
+      "b": "O pedido de renovar vem no texto.",
+      "c": "O trono subsiste.",
+      "d": "Eles ainda falam."
+    },
+    "passageText": "Tu, Jeová, permaneces para sempre; o teu trono subsiste de geração em geração. Por que te esqueces de nós para sempre? E nos abandonas por tanto tempo? Converte-nos a ti, Jeová, e seremos convertidos; renova os nossos dias como dantes, se é que não nos tens, de todo, rejeitado, se é que não estás sobremaneira irado contra nós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eles perguntam e ainda assim pedem volta."
+      },
+      {
+        "id": "b",
+        "text": "A pergunta substitui o pedido de renovação."
+      },
+      {
+        "id": "c",
+        "text": "O trono caído impede qualquer oração."
+      },
+      {
+        "id": "d",
+        "text": "A ira já fechou a boca do povo."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-cam-lm-05-trono-04",
+    "trail": "lamentacoes",
+    "section": "lm-05-trono",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Lamentações 5:19–22?",
+    "prompt": "Como se encadeiam os eventos de Lamentações 5:19–22?",
+    "cue": "Como se encadeiam os eventos de Lamentações 5:19–22?",
+    "verseRef": "Lamentações 5:19–22",
+    "learningObjective": "Sair sabendo que o lamento pede volta mesmo temendo a rejeição.",
+    "evidence": [
+      "Lamentações 5:19–22"
+    ],
+    "feedbackCorrect": "Certo: trono, pergunta e então o pedido.",
+    "feedbackWrong": {
+      "b": "A pergunta vem depois da permanência.",
+      "c": "O pedido fecha a oração, não a abre."
+    },
+    "passageText": "Tu, Jeová, permaneces para sempre; o teu trono subsiste de geração em geração. Por que te esqueces de nós para sempre? E nos abandonas por tanto tempo? Converte-nos a ti, Jeová, e seremos convertidos; renova os nossos dias como dantes, se é que não nos tens, de todo, rejeitado, se é que não estás sobremaneira irado contra nós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová permanece e o trono subsiste."
+      },
+      {
+        "id": "b",
+        "text": "O povo pergunta pelo esquecimento e pelo abandono."
+      },
+      {
+        "id": "c",
+        "text": "Pede conversão e renovação, temendo a rejeição."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-cam-lm-05-trono-05",
+    "trail": "lamentacoes",
+    "section": "lm-05-trono",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Complete a frase: \"permaneces para ___\"",
+    "prompt": "Complete a frase: \"permaneces para ___\"",
+    "cue": "Complete a frase: \"permaneces para ___\"",
+    "verseRef": "Lamentações 5:19–22",
+    "learningObjective": "Sair sabendo que o lamento pede volta mesmo temendo a rejeição.",
+    "evidence": [
+      "Lamentações 5:19–22"
+    ],
+    "feedbackCorrect": "Certo: Jeová permanece para sempre.",
+    "feedbackWrong": {
+      "b": "O trono subsiste; não é o prazo desta lacuna.",
+      "c": "Dias são os do povo, no pedido."
+    },
+    "passageText": "Tu, Jeová, permaneces para sempre; o teu trono subsiste de geração em geração. Por que te esqueces de nós para sempre? E nos abandonas por tanto tempo? Converte-nos a ti, Jeová, e seremos convertidos; renova os nossos dias como dantes, se é que não nos tens, de todo, rejeitado, se é que não estás sobremaneira irado contra nós.",
+    "template": "permaneces para ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "sempre"
+      },
+      {
+        "id": "b",
+        "text": "trono"
+      },
+      {
+        "id": "c",
+        "text": "dias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-cam-lm-05-trono-06",
+    "trail": "lamentacoes",
+    "section": "lm-05-trono",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "Que relação Lamentações 5:19–22 estabelece com este contexto?",
+    "prompt": "Que relação Lamentações 5:19–22 estabelece com este contexto?",
+    "cue": "Que relação Lamentações 5:19–22 estabelece com este contexto?",
+    "verseRef": "Lamentações 5:19–22",
+    "learningObjective": "Sair sabendo que o lamento pede volta mesmo temendo a rejeição.",
+    "evidence": [
+      "Lamentações 5:19–22"
+    ],
+    "feedbackCorrect": "Certo: o lamento pede renovação.",
+    "feedbackWrong": {
+      "b": "Eles falam.",
+      "c": "O trono não muda de dono."
+    },
+    "passageText": "Tu, Jeová, permaneces para sempre; o teu trono subsiste de geração em geração. Por que te esqueces de nós para sempre? E nos abandonas por tanto tempo? Converte-nos a ti, Jeová, e seremos convertidos; renova os nossos dias como dantes, se é que não nos tens, de todo, rejeitado, se é que não estás sobremaneira irado contra nós.",
+    "passageA": {
+      "ref": "Lamentações 5:19–22",
+      "text": "Tu, Jeová, permaneces para sempre; o teu trono subsiste de geração em geração. Por que te esqueces de nós para sempre? E nos abandonas por tanto tempo? Converte-nos a ti, Jeová, e seremos convertidos; renova os nossos dias como dantes, se é que não nos tens, de todo, rejeitado, se é que não estás sobremaneira irado contra nós."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "No luto ainda se pede restauração"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedido de volta"
+      },
+      {
+        "id": "b",
+        "text": "Silêncio final"
+      },
+      {
+        "id": "c",
+        "text": "Troca de trono"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-pro-lm-05-trono-01",
+    "trail": "lamentacoes",
+    "section": "lm-05-trono",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "O pedido final é ser convertido e ter os dias renovados.",
+    "prompt": "O pedido final é ser convertido e ter os dias renovados.",
+    "cue": "O pedido final é ser convertido e ter os dias renovados.",
+    "verseRef": "Lamentações 5:19–22",
+    "learningObjective": "Sair sabendo que o lamento pede volta mesmo temendo a rejeição.",
+    "evidence": [
+      "Lamentações 5:19–22"
+    ],
+    "feedbackCorrect": "Certo: converte-nos, e seremos convertidos.",
+    "feedbackWrong": {
+      "false": "A renovação é pedida, não presumida."
+    },
+    "passageText": "Tu, Jeová, permaneces para sempre; o teu trono subsiste de geração em geração. Por que te esqueces de nós para sempre? E nos abandonas por tanto tempo? Converte-nos a ti, Jeová, e seremos convertidos; renova os nossos dias como dantes, se é que não nos tens, de todo, rejeitado, se é que não estás sobremaneira irado contra nós.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "lamentacoes-pro-lm-05-trono-02",
+    "trail": "lamentacoes",
+    "section": "lm-05-trono",
+    "difficulty": "profundezas",
+    "type": "tap",
+    "skill": "interpret",
+    "question": "Em Lamentações 5:19–22, toque a palavra que falta em \"se é que não estás sobremaneira ___ contra nós\"?",
+    "prompt": "Em Lamentações 5:19–22, toque a palavra que falta em \"se é que não estás sobremaneira ___ contra nós\"?",
+    "cue": "Em Lamentações 5:19–22, toque a palavra que falta em \"se é que não estás sobremaneira ___ contra nós\"?",
+    "verseRef": "Lamentações 5:19–22",
+    "learningObjective": "Sair sabendo que o lamento pede volta mesmo temendo a rejeição.",
+    "evidence": [
+      "Lamentações 5:19–22"
+    ],
+    "feedbackCorrect": "Exato: o temor é que Jeová esteja irado.",
+    "feedbackWrong": {
+      "a": "O trono subsiste; não é o medo.",
+      "c": "Dias são o objeto da renovação."
+    },
+    "passageText": "Tu, Jeová, permaneces para sempre; o teu trono subsiste de geração em geração. Por que te esqueces de nós para sempre? E nos abandonas por tanto tempo? Converte-nos a ti, Jeová, e seremos convertidos; renova os nossos dias como dantes, se é que não nos tens, de todo, rejeitado, se é que não estás sobremaneira irado contra nós.",
+    "template": "se é que não estás sobremaneira ___ contra nós",
+    "options": [
+      {
+        "id": "a",
+        "text": "trono"
+      },
+      {
+        "id": "b",
+        "text": "irado"
+      },
+      {
+        "id": "c",
+        "text": "dias"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "lamentacoes-pro-lm-05-trono-03",
+    "trail": "lamentacoes",
+    "section": "lm-05-trono",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "O que essa oração ensina sobre lamento fiel?",
+    "prompt": "O que essa oração ensina sobre lamento fiel?",
+    "cue": "O que essa oração ensina sobre lamento fiel?",
+    "verseRef": "Lamentações 5:19–22",
+    "learningObjective": "Sair sabendo que o lamento pede volta mesmo temendo a rejeição.",
+    "evidence": [
+      "Lamentações 5:19–22"
+    ],
+    "feedbackCorrect": "Certo: lamento fiel pede restauração sem negar o temor.",
+    "feedbackWrong": {
+      "b": "O trono permanece.",
+      "c": "O pedido é “converte-nos”, não cobrança fria.",
+      "d": "Os dias antigos são o modelo, não o substituto de Jeová."
+    },
+    "passageText": "Tu, Jeová, permaneces para sempre; o teu trono subsiste de geração em geração. Por que te esqueces de nós para sempre? E nos abandonas por tanto tempo? Converte-nos a ti, Jeová, e seremos convertidos; renova os nossos dias como dantes, se é que não nos tens, de todo, rejeitado, se é que não estás sobremaneira irado contra nós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pede volta mesmo temendo rejeição."
+      },
+      {
+        "id": "b",
+        "text": "Cala, porque o trono também caiu."
+      },
+      {
+        "id": "c",
+        "text": "Exige renovação como direito sem graça."
+      },
+      {
+        "id": "d",
+        "text": "Troca o trono pela memória dos dias antigos."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-pro-lm-05-trono-04",
+    "trail": "lamentacoes",
+    "section": "lm-05-trono",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Lamentações 5:19–22?",
+    "prompt": "Qual sequência revela o sentido de Lamentações 5:19–22?",
+    "cue": "Qual sequência revela o sentido de Lamentações 5:19–22?",
+    "verseRef": "Lamentações 5:19–22",
+    "learningObjective": "Sair sabendo que o lamento pede volta mesmo temendo a rejeição.",
+    "evidence": [
+      "Lamentações 5:19–22"
+    ],
+    "feedbackCorrect": "Certo: trono, pergunta e então o pedido.",
+    "feedbackWrong": {
+      "b": "A pergunta vem depois da permanência.",
+      "c": "O pedido fecha a oração, não a abre."
+    },
+    "passageText": "Tu, Jeová, permaneces para sempre; o teu trono subsiste de geração em geração. Por que te esqueces de nós para sempre? E nos abandonas por tanto tempo? Converte-nos a ti, Jeová, e seremos convertidos; renova os nossos dias como dantes, se é que não nos tens, de todo, rejeitado, se é que não estás sobremaneira irado contra nós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová permanece e o trono subsiste."
+      },
+      {
+        "id": "b",
+        "text": "O povo pergunta pelo esquecimento e pelo abandono."
+      },
+      {
+        "id": "c",
+        "text": "Pede conversão e renovação, temendo a rejeição."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-pro-lm-05-trono-05",
+    "trail": "lamentacoes",
+    "section": "lm-05-trono",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Complete a frase: \"de todo, ___\"",
+    "prompt": "Complete a frase: \"de todo, ___\"",
+    "cue": "Complete a frase: \"de todo, ___\"",
+    "verseRef": "Lamentações 5:19–22",
+    "learningObjective": "Sair sabendo que o lamento pede volta mesmo temendo a rejeição.",
+    "evidence": [
+      "Lamentações 5:19–22"
+    ],
+    "feedbackCorrect": "Certo: o temor é ter sido rejeitado de todo.",
+    "feedbackWrong": {
+      "b": "O trono é esperança, não o medo.",
+      "c": "Dias são a renovação pedida."
+    },
+    "passageText": "Tu, Jeová, permaneces para sempre; o teu trono subsiste de geração em geração. Por que te esqueces de nós para sempre? E nos abandonas por tanto tempo? Converte-nos a ti, Jeová, e seremos convertidos; renova os nossos dias como dantes, se é que não nos tens, de todo, rejeitado, se é que não estás sobremaneira irado contra nós.",
+    "template": "de todo, ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "rejeitado"
+      },
+      {
+        "id": "b",
+        "text": "trono"
+      },
+      {
+        "id": "c",
+        "text": "dias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "lamentacoes-pro-lm-05-trono-06",
+    "trail": "lamentacoes",
+    "section": "lm-05-trono",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "Que sentido de Lamentações 5:19–22 se liga a este contexto?",
+    "prompt": "Que sentido de Lamentações 5:19–22 se liga a este contexto?",
+    "cue": "Que sentido de Lamentações 5:19–22 se liga a este contexto?",
+    "verseRef": "Lamentações 5:19–22",
+    "learningObjective": "Sair sabendo que o lamento pede volta mesmo temendo a rejeição.",
+    "evidence": [
+      "Lamentações 5:19–22"
+    ],
+    "feedbackCorrect": "Certo: o luto ainda ora.",
+    "feedbackWrong": {
+      "a": "Há palavras, não só mudez.",
+      "c": "A glória da cidade já caiu."
+    },
+    "passageText": "Tu, Jeová, permaneces para sempre; o teu trono subsiste de geração em geração. Por que te esqueces de nós para sempre? E nos abandonas por tanto tempo? Converte-nos a ti, Jeová, e seremos convertidos; renova os nossos dias como dantes, se é que não nos tens, de todo, rejeitado, se é que não estás sobremaneira irado contra nós.",
+    "passageA": {
+      "ref": "Lamentações 5:19–22",
+      "text": "Tu, Jeová, permaneces para sempre; o teu trono subsiste de geração em geração. Por que te esqueces de nós para sempre? E nos abandonas por tanto tempo? Converte-nos a ti, Jeová, e seremos convertidos; renova os nossos dias como dantes, se é que não nos tens, de todo, rejeitado, se é que não estás sobremaneira irado contra nós."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "No luto ainda se pede restauração"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Desespero mudo"
+      },
+      {
+        "id": "b",
+        "text": "Oração no luto"
+      },
+      {
+        "id": "c",
+        "text": "Glória da cidade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
   }
 ]

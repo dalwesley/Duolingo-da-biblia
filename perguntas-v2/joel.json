@@ -2257,5 +2257,2192 @@
     "trail": "joel",
     "section": "joel-joel-03-desafio-joel",
     "id": "joel-pro-joel-joel-03-desafio-joel-06"
+  },
+  {
+    "id": "joel-sem-jl-03-gafanhoto-01",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "O gafanhoto comeu o que a lagarta deixou.",
+    "prompt": "O gafanhoto comeu o que a lagarta deixou.",
+    "cue": "O gafanhoto comeu o que a lagarta deixou.",
+    "verseRef": "Joel 1:4",
+    "learningObjective": "Sair sabendo que Joel descreve o juízo como uma perda que se completa.",
+    "evidence": [
+      "Joel 1:4"
+    ],
+    "feedbackCorrect": "Certo: a perda passa de um ao outro.",
+    "feedbackWrong": {
+      "false": "A primeira frase é essa passagem."
+    },
+    "passageText": "O gafanhoto comeu o que a lagarta deixou; e o brugo comeu o que o gafanhoto deixou; e o hasil comeu o que o brugo deixou.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "joel-sem-jl-03-gafanhoto-02",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "semente",
+    "type": "tap",
+    "skill": "observe",
+    "question": "Em Joel 1:4, toque a palavra que falta em \"O ___ comeu o que a lagarta deixou\"?",
+    "prompt": "Em Joel 1:4, toque a palavra que falta em \"O ___ comeu o que a lagarta deixou\"?",
+    "cue": "Em Joel 1:4, toque a palavra que falta em \"O ___ comeu o que a lagarta deixou\"?",
+    "verseRef": "Joel 1:4",
+    "learningObjective": "Sair sabendo que Joel descreve o juízo como uma perda que se completa.",
+    "evidence": [
+      "Joel 1:4"
+    ],
+    "feedbackCorrect": "Exato: o gafanhoto come o resto da lagarta.",
+    "feedbackWrong": {
+      "a": "Brugo vem na frase seguinte.",
+      "c": "Hasil fecha a cadeia."
+    },
+    "passageText": "O gafanhoto comeu o que a lagarta deixou; e o brugo comeu o que o gafanhoto deixou; e o hasil comeu o que o brugo deixou.",
+    "template": "O ___ comeu o que a lagarta deixou",
+    "options": [
+      {
+        "id": "a",
+        "text": "brugo"
+      },
+      {
+        "id": "b",
+        "text": "gafanhoto"
+      },
+      {
+        "id": "c",
+        "text": "hasil"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "joel-sem-jl-03-gafanhoto-03",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "O que Joel 1:4 descreve?",
+    "prompt": "O que Joel 1:4 descreve?",
+    "cue": "O que Joel 1:4 descreve?",
+    "verseRef": "Joel 1:4",
+    "learningObjective": "Sair sabendo que Joel descreve o juízo como uma perda que se completa.",
+    "evidence": [
+      "Joel 1:4"
+    ],
+    "feedbackCorrect": "Certo: uma perda que passa de inseto a inseto.",
+    "feedbackWrong": {
+      "b": "O tom é de consumo, não de fartura.",
+      "c": "Cada um come o que o outro deixou.",
+      "d": "A chuva não está neste versículo."
+    },
+    "passageText": "O gafanhoto comeu o que a lagarta deixou; e o brugo comeu o que o gafanhoto deixou; e o hasil comeu o que o brugo deixou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Uma cadeia em que cada um come o resto."
+      },
+      {
+        "id": "b",
+        "text": "Uma colheita farta repartida entre o povo."
+      },
+      {
+        "id": "c",
+        "text": "Um só inseto que deixa a maior parte."
+      },
+      {
+        "id": "d",
+        "text": "A volta da chuva antes de qualquer perda."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-sem-jl-03-gafanhoto-04",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Qual é a ordem dos fatos em Joel 1:4?",
+    "prompt": "Qual é a ordem dos fatos em Joel 1:4?",
+    "cue": "Qual é a ordem dos fatos em Joel 1:4?",
+    "verseRef": "Joel 1:4",
+    "learningObjective": "Sair sabendo que Joel descreve o juízo como uma perda que se completa.",
+    "evidence": [
+      "Joel 1:4"
+    ],
+    "feedbackCorrect": "Certo: lagarta, gafanhoto, brugo e então o hasil.",
+    "feedbackWrong": {
+      "b": "O brugo vem depois do gafanhoto.",
+      "c": "O hasil fecha a cadeia."
+    },
+    "passageText": "O gafanhoto comeu o que a lagarta deixou; e o brugo comeu o que o gafanhoto deixou; e o hasil comeu o que o brugo deixou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O gafanhoto comeu o que a lagarta deixou."
+      },
+      {
+        "id": "b",
+        "text": "O brugo comeu o que o gafanhoto deixou."
+      },
+      {
+        "id": "c",
+        "text": "O hasil comeu o que o brugo deixou."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-sem-jl-03-gafanhoto-05",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Complete a frase: \"o que a ___ deixou\"",
+    "prompt": "Complete a frase: \"o que a ___ deixou\"",
+    "cue": "Complete a frase: \"o que a ___ deixou\"",
+    "verseRef": "Joel 1:4",
+    "learningObjective": "Sair sabendo que Joel descreve o juízo como uma perda que se completa.",
+    "evidence": [
+      "Joel 1:4"
+    ],
+    "feedbackCorrect": "Certo: a lagarta deixou o que o gafanhoto comeu.",
+    "feedbackWrong": {
+      "b": "Gafanhoto é quem come esse resto.",
+      "c": "Brugo vem depois."
+    },
+    "passageText": "O gafanhoto comeu o que a lagarta deixou; e o brugo comeu o que o gafanhoto deixou; e o hasil comeu o que o brugo deixou.",
+    "template": "o que a ___ deixou",
+    "options": [
+      {
+        "id": "a",
+        "text": "lagarta"
+      },
+      {
+        "id": "b",
+        "text": "gafanhoto"
+      },
+      {
+        "id": "c",
+        "text": "brugo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-sem-jl-03-gafanhoto-06",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Joel 1:4 comunica que se liga a este contexto?",
+    "prompt": "O que Joel 1:4 comunica que se liga a este contexto?",
+    "cue": "O que Joel 1:4 comunica que se liga a este contexto?",
+    "verseRef": "Joel 1:4",
+    "learningObjective": "Sair sabendo que Joel descreve o juízo como uma perda que se completa.",
+    "evidence": [
+      "Joel 1:4"
+    ],
+    "feedbackCorrect": "Certo: a cadeia não deixa sobra.",
+    "feedbackWrong": {
+      "b": "Nada é guardado neste versículo.",
+      "c": "Não se fala de chuva."
+    },
+    "passageText": "O gafanhoto comeu o que a lagarta deixou; e o brugo comeu o que o gafanhoto deixou; e o hasil comeu o que o brugo deixou.",
+    "passageA": {
+      "ref": "Joel 1:4",
+      "text": "O gafanhoto comeu o que a lagarta deixou; e o brugo comeu o que o gafanhoto deixou; e o hasil comeu o que o brugo deixou."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O juízo pode chegar como perda"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Perda sem resto"
+      },
+      {
+        "id": "b",
+        "text": "Colheita guardada"
+      },
+      {
+        "id": "c",
+        "text": "Chuva antecipada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-cam-jl-03-gafanhoto-01",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "O hasil deixou sobra bastante depois de comer.",
+    "prompt": "O hasil deixou sobra bastante depois de comer.",
+    "cue": "O hasil deixou sobra bastante depois de comer.",
+    "verseRef": "Joel 1:4",
+    "learningObjective": "Sair sabendo que Joel descreve o juízo como uma perda que se completa.",
+    "evidence": [
+      "Joel 1:4"
+    ],
+    "feedbackCorrect": "Certo: o hasil come o que o brugo deixou.",
+    "feedbackWrong": {
+      "true": "A cadeia não anuncia sobra para o povo."
+    },
+    "passageText": "O gafanhoto comeu o que a lagarta deixou; e o brugo comeu o que o gafanhoto deixou; e o hasil comeu o que o brugo deixou.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "id": "joel-cam-jl-03-gafanhoto-02",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "caminhada",
+    "type": "tap",
+    "skill": "understand",
+    "question": "Em Joel 1:4, toque a palavra que falta em \"o ___ comeu o que o gafanhoto deixou\"?",
+    "prompt": "Em Joel 1:4, toque a palavra que falta em \"o ___ comeu o que o gafanhoto deixou\"?",
+    "cue": "Em Joel 1:4, toque a palavra que falta em \"o ___ comeu o que o gafanhoto deixou\"?",
+    "verseRef": "Joel 1:4",
+    "learningObjective": "Sair sabendo que Joel descreve o juízo como uma perda que se completa.",
+    "evidence": [
+      "Joel 1:4"
+    ],
+    "feedbackCorrect": "Exato: o brugo come o resto do gafanhoto.",
+    "feedbackWrong": {
+      "a": "Lagarta é a primeira.",
+      "c": "Hasil come o resto do brugo."
+    },
+    "passageText": "O gafanhoto comeu o que a lagarta deixou; e o brugo comeu o que o gafanhoto deixou; e o hasil comeu o que o brugo deixou.",
+    "template": "o ___ comeu o que o gafanhoto deixou",
+    "options": [
+      {
+        "id": "a",
+        "text": "lagarta"
+      },
+      {
+        "id": "b",
+        "text": "brugo"
+      },
+      {
+        "id": "c",
+        "text": "hasil"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "joel-cam-jl-03-gafanhoto-03",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Por que a ordem dos insetos importa?",
+    "prompt": "Por que a ordem dos insetos importa?",
+    "cue": "Por que a ordem dos insetos importa?",
+    "verseRef": "Joel 1:4",
+    "learningObjective": "Sair sabendo que Joel descreve o juízo como uma perda que se completa.",
+    "evidence": [
+      "Joel 1:4"
+    ],
+    "feedbackCorrect": "Certo: a perda se completa em etapas.",
+    "feedbackWrong": {
+      "b": "Nada indica praga leve.",
+      "c": "Ninguém devolve; todos comem.",
+      "d": "A lagarta abre a cadeia."
+    },
+    "passageText": "O gafanhoto comeu o que a lagarta deixou; e o brugo comeu o que o gafanhoto deixou; e o hasil comeu o que o brugo deixou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O que sobra de um vira comida do seguinte."
+      },
+      {
+        "id": "b",
+        "text": "A ordem mostra que a praga foi leve."
+      },
+      {
+        "id": "c",
+        "text": "O hasil devolve o que o gafanhoto comeu."
+      },
+      {
+        "id": "d",
+        "text": "A lagarta chega por último e restaura o campo."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-cam-jl-03-gafanhoto-04",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Joel 1:4?",
+    "prompt": "Como se encadeiam os eventos de Joel 1:4?",
+    "cue": "Como se encadeiam os eventos de Joel 1:4?",
+    "verseRef": "Joel 1:4",
+    "learningObjective": "Sair sabendo que Joel descreve o juízo como uma perda que se completa.",
+    "evidence": [
+      "Joel 1:4"
+    ],
+    "feedbackCorrect": "Certo: lagarta, gafanhoto, brugo e então o hasil.",
+    "feedbackWrong": {
+      "b": "O brugo vem depois do gafanhoto.",
+      "c": "O hasil fecha a cadeia."
+    },
+    "passageText": "O gafanhoto comeu o que a lagarta deixou; e o brugo comeu o que o gafanhoto deixou; e o hasil comeu o que o brugo deixou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O gafanhoto comeu o que a lagarta deixou."
+      },
+      {
+        "id": "b",
+        "text": "O brugo comeu o que o gafanhoto deixou."
+      },
+      {
+        "id": "c",
+        "text": "O hasil comeu o que o brugo deixou."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-cam-jl-03-gafanhoto-05",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Complete a frase: \"e o ___ comeu o que o brugo deixou\"",
+    "prompt": "Complete a frase: \"e o ___ comeu o que o brugo deixou\"",
+    "cue": "Complete a frase: \"e o ___ comeu o que o brugo deixou\"",
+    "verseRef": "Joel 1:4",
+    "learningObjective": "Sair sabendo que Joel descreve o juízo como uma perda que se completa.",
+    "evidence": [
+      "Joel 1:4"
+    ],
+    "feedbackCorrect": "Certo: o hasil come o resto do brugo.",
+    "feedbackWrong": {
+      "b": "Lagarta abre a sequência.",
+      "c": "Gafanhoto está no meio."
+    },
+    "passageText": "O gafanhoto comeu o que a lagarta deixou; e o brugo comeu o que o gafanhoto deixou; e o hasil comeu o que o brugo deixou.",
+    "template": "e o ___ comeu o que o brugo deixou",
+    "options": [
+      {
+        "id": "a",
+        "text": "hasil"
+      },
+      {
+        "id": "b",
+        "text": "lagarta"
+      },
+      {
+        "id": "c",
+        "text": "gafanhoto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-cam-jl-03-gafanhoto-06",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "Que relação Joel 1:4 estabelece com este contexto?",
+    "prompt": "Que relação Joel 1:4 estabelece com este contexto?",
+    "cue": "Que relação Joel 1:4 estabelece com este contexto?",
+    "verseRef": "Joel 1:4",
+    "learningObjective": "Sair sabendo que Joel descreve o juízo como uma perda que se completa.",
+    "evidence": [
+      "Joel 1:4"
+    ],
+    "feedbackCorrect": "Certo: um resto vira comida do próximo.",
+    "feedbackWrong": {
+      "a": "A cadeia não é leve.",
+      "c": "Ninguém restaura o campo aqui."
+    },
+    "passageText": "O gafanhoto comeu o que a lagarta deixou; e o brugo comeu o que o gafanhoto deixou; e o hasil comeu o que o brugo deixou.",
+    "passageA": {
+      "ref": "Joel 1:4",
+      "text": "O gafanhoto comeu o que a lagarta deixou; e o brugo comeu o que o gafanhoto deixou; e o hasil comeu o que o brugo deixou."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O juízo pode chegar como perda"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Praga leve"
+      },
+      {
+        "id": "b",
+        "text": "Perda em etapas"
+      },
+      {
+        "id": "c",
+        "text": "Campo restaurado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "joel-pro-jl-03-gafanhoto-01",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "A sequência mostra um juízo que não deixa resto.",
+    "prompt": "A sequência mostra um juízo que não deixa resto.",
+    "cue": "A sequência mostra um juízo que não deixa resto.",
+    "verseRef": "Joel 1:4",
+    "learningObjective": "Sair sabendo que Joel descreve o juízo como uma perda que se completa.",
+    "evidence": [
+      "Joel 1:4"
+    ],
+    "feedbackCorrect": "Certo: cada um come o que o outro poupou.",
+    "feedbackWrong": {
+      "false": "O versículo é uma cadeia sem folga."
+    },
+    "passageText": "O gafanhoto comeu o que a lagarta deixou; e o brugo comeu o que o gafanhoto deixou; e o hasil comeu o que o brugo deixou.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "joel-pro-jl-03-gafanhoto-02",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "profundezas",
+    "type": "tap",
+    "skill": "interpret",
+    "question": "Em Joel 1:4, toque a palavra que falta em \"o que a ___ deixou\"?",
+    "prompt": "Em Joel 1:4, toque a palavra que falta em \"o que a ___ deixou\"?",
+    "cue": "Em Joel 1:4, toque a palavra que falta em \"o que a ___ deixou\"?",
+    "verseRef": "Joel 1:4",
+    "learningObjective": "Sair sabendo que Joel descreve o juízo como uma perda que se completa.",
+    "evidence": [
+      "Joel 1:4"
+    ],
+    "feedbackCorrect": "Exato: a lagarta é a primeira a deixar resto.",
+    "feedbackWrong": {
+      "a": "Brugo come depois do gafanhoto.",
+      "c": "Hasil é o último da cadeia."
+    },
+    "passageText": "O gafanhoto comeu o que a lagarta deixou; e o brugo comeu o que o gafanhoto deixou; e o hasil comeu o que o brugo deixou.",
+    "template": "o que a ___ deixou",
+    "options": [
+      {
+        "id": "a",
+        "text": "brugo"
+      },
+      {
+        "id": "b",
+        "text": "lagarta"
+      },
+      {
+        "id": "c",
+        "text": "hasil"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "joel-pro-jl-03-gafanhoto-03",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "O que essa cadeia prepara o leitor para ouvir?",
+    "prompt": "O que essa cadeia prepara o leitor para ouvir?",
+    "cue": "O que essa cadeia prepara o leitor para ouvir?",
+    "verseRef": "Joel 1:4",
+    "learningObjective": "Sair sabendo que Joel descreve o juízo como uma perda que se completa.",
+    "evidence": [
+      "Joel 1:4"
+    ],
+    "feedbackCorrect": "Certo: o juízo pode esvaziar a colheita inteira.",
+    "feedbackWrong": {
+      "b": "O versículo é o retrato da perda.",
+      "c": "Não há celeiro salvo aqui.",
+      "d": "A terra é comida até o fim."
+    },
+    "passageText": "O gafanhoto comeu o que a lagarta deixou; e o brugo comeu o que o gafanhoto deixou; e o hasil comeu o que o brugo deixou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que a perda pode não deixar resto."
+      },
+      {
+        "id": "b",
+        "text": "Que Deus ignora o que acontece no campo."
+      },
+      {
+        "id": "c",
+        "text": "Que o povo guardou celeiro cheio."
+      },
+      {
+        "id": "d",
+        "text": "Que inseto nenhum tocou a terra."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-pro-jl-03-gafanhoto-04",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Joel 1:4?",
+    "prompt": "Qual sequência revela o sentido de Joel 1:4?",
+    "cue": "Qual sequência revela o sentido de Joel 1:4?",
+    "verseRef": "Joel 1:4",
+    "learningObjective": "Sair sabendo que Joel descreve o juízo como uma perda que se completa.",
+    "evidence": [
+      "Joel 1:4"
+    ],
+    "feedbackCorrect": "Certo: lagarta, gafanhoto, brugo e então o hasil.",
+    "feedbackWrong": {
+      "b": "O brugo vem depois do gafanhoto.",
+      "c": "O hasil fecha a cadeia."
+    },
+    "passageText": "O gafanhoto comeu o que a lagarta deixou; e o brugo comeu o que o gafanhoto deixou; e o hasil comeu o que o brugo deixou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O gafanhoto comeu o que a lagarta deixou."
+      },
+      {
+        "id": "b",
+        "text": "O brugo comeu o que o gafanhoto deixou."
+      },
+      {
+        "id": "c",
+        "text": "O hasil comeu o que o brugo deixou."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-pro-jl-03-gafanhoto-05",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Complete a frase: \"comeu o que o ___ deixou\"",
+    "prompt": "Complete a frase: \"comeu o que o ___ deixou\"",
+    "cue": "Complete a frase: \"comeu o que o ___ deixou\"",
+    "verseRef": "Joel 1:4",
+    "learningObjective": "Sair sabendo que Joel descreve o juízo como uma perda que se completa.",
+    "evidence": [
+      "Joel 1:4"
+    ],
+    "feedbackCorrect": "Certo: o hasil come o que o brugo deixou.",
+    "feedbackWrong": {
+      "b": "Hasil é quem come, não quem deixou nesta lacuna.",
+      "c": "Lagarta é a primeira."
+    },
+    "passageText": "O gafanhoto comeu o que a lagarta deixou; e o brugo comeu o que o gafanhoto deixou; e o hasil comeu o que o brugo deixou.",
+    "template": "comeu o que o ___ deixou",
+    "options": [
+      {
+        "id": "a",
+        "text": "brugo"
+      },
+      {
+        "id": "b",
+        "text": "hasil"
+      },
+      {
+        "id": "c",
+        "text": "lagarta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-pro-jl-03-gafanhoto-06",
+    "trail": "joel",
+    "section": "jl-03-gafanhoto",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "Que sentido de Joel 1:4 se liga a este contexto?",
+    "prompt": "Que sentido de Joel 1:4 se liga a este contexto?",
+    "cue": "Que sentido de Joel 1:4 se liga a este contexto?",
+    "verseRef": "Joel 1:4",
+    "learningObjective": "Sair sabendo que Joel descreve o juízo como uma perda que se completa.",
+    "evidence": [
+      "Joel 1:4"
+    ],
+    "feedbackCorrect": "Certo: a perda retrata um juízo.",
+    "feedbackWrong": {
+      "a": "Não é detalhe solto: é sequência.",
+      "c": "Não há festa de safra."
+    },
+    "passageText": "O gafanhoto comeu o que a lagarta deixou; e o brugo comeu o que o gafanhoto deixou; e o hasil comeu o que o brugo deixou.",
+    "passageA": {
+      "ref": "Joel 1:4",
+      "text": "O gafanhoto comeu o que a lagarta deixou; e o brugo comeu o que o gafanhoto deixou; e o hasil comeu o que o brugo deixou."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O juízo pode chegar como perda"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Acaso no campo"
+      },
+      {
+        "id": "b",
+        "text": "Juízo que esvazia"
+      },
+      {
+        "id": "c",
+        "text": "Festa da safra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "joel-sem-jl-04-coracao-01",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Joel manda rasgar o coração e não os vestidos.",
+    "prompt": "Joel manda rasgar o coração e não os vestidos.",
+    "cue": "Joel manda rasgar o coração e não os vestidos.",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sair sabendo que a conversão que Joel pede é interior e se apoia na misericórdia.",
+    "evidence": [
+      "Joel 2:13"
+    ],
+    "feedbackCorrect": "Certo: o corte pedido é interior.",
+    "feedbackWrong": {
+      "false": "O versículo opõe coração e vestidos."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus, porque ele é clemente, cheio de compaixão, tardio para se irar e de muita misericórdia e se arrepende do mal.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "joel-sem-jl-04-coracao-02",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "semente",
+    "type": "tap",
+    "skill": "observe",
+    "question": "Em Joel 2:13, toque a palavra que falta em \"Rasgai o vosso ___\"?",
+    "prompt": "Em Joel 2:13, toque a palavra que falta em \"Rasgai o vosso ___\"?",
+    "cue": "Em Joel 2:13, toque a palavra que falta em \"Rasgai o vosso ___\"?",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sair sabendo que a conversão que Joel pede é interior e se apoia na misericórdia.",
+    "evidence": [
+      "Joel 2:13"
+    ],
+    "feedbackCorrect": "Exato: o que se rasga é o coração.",
+    "feedbackWrong": {
+      "a": "Vestidos são o que não se deve rasgar no lugar.",
+      "c": "Deus é para quem eles se convertem."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus, porque ele é clemente, cheio de compaixão, tardio para se irar e de muita misericórdia e se arrepende do mal.",
+    "template": "Rasgai o vosso ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "vestidos"
+      },
+      {
+        "id": "b",
+        "text": "coração"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "joel-sem-jl-04-coracao-03",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "O que Joel pede que o povo rasgue?",
+    "prompt": "O que Joel pede que o povo rasgue?",
+    "cue": "O que Joel pede que o povo rasgue?",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sair sabendo que a conversão que Joel pede é interior e se apoia na misericórdia.",
+    "evidence": [
+      "Joel 2:13"
+    ],
+    "feedbackCorrect": "Certo: o coração, não a roupa.",
+    "feedbackWrong": {
+      "b": "Os vestidos são o contraste negativo.",
+      "c": "Não se rasga o nome de Deus.",
+      "d": "A misericórdia é dele, não o que o povo rasga."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus, porque ele é clemente, cheio de compaixão, tardio para se irar e de muita misericórdia e se arrepende do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O coração, e não os vestidos."
+      },
+      {
+        "id": "b",
+        "text": "Os vestidos, deixando o coração intacto."
+      },
+      {
+        "id": "c",
+        "text": "O nome de Deus, em sinal de luto."
+      },
+      {
+        "id": "d",
+        "text": "A misericórdia, para merecer a volta."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-sem-jl-04-coracao-04",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Qual é a ordem dos fatos em Joel 2:13?",
+    "prompt": "Qual é a ordem dos fatos em Joel 2:13?",
+    "cue": "Qual é a ordem dos fatos em Joel 2:13?",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sair sabendo que a conversão que Joel pede é interior e se apoia na misericórdia.",
+    "evidence": [
+      "Joel 2:13"
+    ],
+    "feedbackCorrect": "Certo: coração, volta e então o caráter de Deus.",
+    "feedbackWrong": {
+      "b": "A conversão vem com o rasgar do coração.",
+      "c": "O caráter de Deus fundamenta o convite no fim."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus, porque ele é clemente, cheio de compaixão, tardio para se irar e de muita misericórdia e se arrepende do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rasgai o coração, não os vestidos."
+      },
+      {
+        "id": "b",
+        "text": "Convertei-vos a Jeová, vosso Deus."
+      },
+      {
+        "id": "c",
+        "text": "Ele é clemente, compassivo e tardio em irar-se."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-sem-jl-04-coracao-05",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Complete a frase: \"convertei-vos a ___, vosso Deus\"",
+    "prompt": "Complete a frase: \"convertei-vos a ___, vosso Deus\"",
+    "cue": "Complete a frase: \"convertei-vos a ___, vosso Deus\"",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sair sabendo que a conversão que Joel pede é interior e se apoia na misericórdia.",
+    "evidence": [
+      "Joel 2:13"
+    ],
+    "feedbackCorrect": "Certo: a volta é para Jeová.",
+    "feedbackWrong": {
+      "b": "Coração é o que se rasga.",
+      "c": "Vestidos não são o destinatário."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus, porque ele é clemente, cheio de compaixão, tardio para se irar e de muita misericórdia e se arrepende do mal.",
+    "template": "convertei-vos a ___, vosso Deus",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "coração"
+      },
+      {
+        "id": "c",
+        "text": "vestidos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-sem-jl-04-coracao-06",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Joel 2:13 comunica que se liga a este contexto?",
+    "prompt": "O que Joel 2:13 comunica que se liga a este contexto?",
+    "cue": "O que Joel 2:13 comunica que se liga a este contexto?",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sair sabendo que a conversão que Joel pede é interior e se apoia na misericórdia.",
+    "evidence": [
+      "Joel 2:13"
+    ],
+    "feedbackCorrect": "Certo: o pedido é o coração.",
+    "feedbackWrong": {
+      "b": "A roupa é o que não basta.",
+      "c": "Ele é tardio em irar-se."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus, porque ele é clemente, cheio de compaixão, tardio para se irar e de muita misericórdia e se arrepende do mal.",
+    "passageA": {
+      "ref": "Joel 2:13",
+      "text": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus, porque ele é clemente, cheio de compaixão, tardio para se irar e de muita misericórdia e se arrepende do mal."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus quer o coração, não só a veste"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Volta interior"
+      },
+      {
+        "id": "b",
+        "text": "Roupa rasgada"
+      },
+      {
+        "id": "c",
+        "text": "Ira apressada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-cam-jl-04-coracao-01",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "A razão da volta é que Jeová é duro e rápido para se irar.",
+    "prompt": "A razão da volta é que Jeová é duro e rápido para se irar.",
+    "cue": "A razão da volta é que Jeová é duro e rápido para se irar.",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sair sabendo que a conversão que Joel pede é interior e se apoia na misericórdia.",
+    "evidence": [
+      "Joel 2:13"
+    ],
+    "feedbackCorrect": "Certo: ele é clemente e tardio em irar-se.",
+    "feedbackWrong": {
+      "true": "O texto lista compaixão, misericórdia e arrependimento do mal."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus, porque ele é clemente, cheio de compaixão, tardio para se irar e de muita misericórdia e se arrepende do mal.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "id": "joel-cam-jl-04-coracao-02",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "caminhada",
+    "type": "tap",
+    "skill": "understand",
+    "question": "Em Joel 2:13, toque a palavra que falta em \"não os vossos ___\"?",
+    "prompt": "Em Joel 2:13, toque a palavra que falta em \"não os vossos ___\"?",
+    "cue": "Em Joel 2:13, toque a palavra que falta em \"não os vossos ___\"?",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sair sabendo que a conversão que Joel pede é interior e se apoia na misericórdia.",
+    "evidence": [
+      "Joel 2:13"
+    ],
+    "feedbackCorrect": "Exato: não são os vestidos.",
+    "feedbackWrong": {
+      "a": "Coração é o que deve ser rasgado.",
+      "c": "Mal é aquilo de que ele se arrepende."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus, porque ele é clemente, cheio de compaixão, tardio para se irar e de muita misericórdia e se arrepende do mal.",
+    "template": "não os vossos ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "coração"
+      },
+      {
+        "id": "b",
+        "text": "vestidos"
+      },
+      {
+        "id": "c",
+        "text": "mal"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "joel-cam-jl-04-coracao-03",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Em que o convite se apoia?",
+    "prompt": "Em que o convite se apoia?",
+    "cue": "Em que o convite se apoia?",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sair sabendo que a conversão que Joel pede é interior e se apoia na misericórdia.",
+    "evidence": [
+      "Joel 2:13"
+    ],
+    "feedbackCorrect": "Certo: em quem Jeová é.",
+    "feedbackWrong": {
+      "b": "Ele é tardio em irar-se e se arrepende do mal.",
+      "c": "O pano é justamente o que não basta.",
+      "d": "O coração é o que deve abrir-se."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus, porque ele é clemente, cheio de compaixão, tardio para se irar e de muita misericórdia e se arrepende do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Na clemência e na misericórdia de Jeová."
+      },
+      {
+        "id": "b",
+        "text": "No medo de um Deus que não se arrepende."
+      },
+      {
+        "id": "c",
+        "text": "No valor do pano rasgado diante dos outros."
+      },
+      {
+        "id": "d",
+        "text": "Na certeza de que o coração pode ficar fechado."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-cam-jl-04-coracao-04",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Joel 2:13?",
+    "prompt": "Como se encadeiam os eventos de Joel 2:13?",
+    "cue": "Como se encadeiam os eventos de Joel 2:13?",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sair sabendo que a conversão que Joel pede é interior e se apoia na misericórdia.",
+    "evidence": [
+      "Joel 2:13"
+    ],
+    "feedbackCorrect": "Certo: coração, volta e então o caráter de Deus.",
+    "feedbackWrong": {
+      "b": "A conversão vem com o rasgar do coração.",
+      "c": "O caráter de Deus fundamenta o convite no fim."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus, porque ele é clemente, cheio de compaixão, tardio para se irar e de muita misericórdia e se arrepende do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rasgai o coração, não os vestidos."
+      },
+      {
+        "id": "b",
+        "text": "Convertei-vos a Jeová, vosso Deus."
+      },
+      {
+        "id": "c",
+        "text": "Ele é clemente, compassivo e tardio em irar-se."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-cam-jl-04-coracao-05",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Complete a frase: \"tardio para se ___\"",
+    "prompt": "Complete a frase: \"tardio para se ___\"",
+    "cue": "Complete a frase: \"tardio para se ___\"",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sair sabendo que a conversão que Joel pede é interior e se apoia na misericórdia.",
+    "evidence": [
+      "Joel 2:13"
+    ],
+    "feedbackCorrect": "Certo: ele é tardio para se irar.",
+    "feedbackWrong": {
+      "b": "Coração é o do povo.",
+      "c": "Mal é o que ele deixa."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus, porque ele é clemente, cheio de compaixão, tardio para se irar e de muita misericórdia e se arrepende do mal.",
+    "template": "tardio para se ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "irar"
+      },
+      {
+        "id": "b",
+        "text": "coração"
+      },
+      {
+        "id": "c",
+        "text": "mal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-cam-jl-04-coracao-06",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "Que relação Joel 2:13 estabelece com este contexto?",
+    "prompt": "Que relação Joel 2:13 estabelece com este contexto?",
+    "cue": "Que relação Joel 2:13 estabelece com este contexto?",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sair sabendo que a conversão que Joel pede é interior e se apoia na misericórdia.",
+    "evidence": [
+      "Joel 2:13"
+    ],
+    "feedbackCorrect": "Certo: o convite nasce de quem ele é.",
+    "feedbackWrong": {
+      "a": "Ele é clemente.",
+      "c": "O externo sem coração é recusado."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus, porque ele é clemente, cheio de compaixão, tardio para se irar e de muita misericórdia e se arrepende do mal.",
+    "passageA": {
+      "ref": "Joel 2:13",
+      "text": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus, porque ele é clemente, cheio de compaixão, tardio para se irar e de muita misericórdia e se arrepende do mal."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus quer o coração, não só a veste"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus fechado"
+      },
+      {
+        "id": "b",
+        "text": "Misericórdia que chama"
+      },
+      {
+        "id": "c",
+        "text": "Luto só externo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "joel-pro-jl-04-coracao-01",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "A conversão se apoia no caráter de Deus, não no gesto da roupa.",
+    "prompt": "A conversão se apoia no caráter de Deus, não no gesto da roupa.",
+    "cue": "A conversão se apoia no caráter de Deus, não no gesto da roupa.",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sair sabendo que a conversão que Joel pede é interior e se apoia na misericórdia.",
+    "evidence": [
+      "Joel 2:13"
+    ],
+    "feedbackCorrect": "Certo: o porque é quem ele é.",
+    "feedbackWrong": {
+      "false": "Clemente, compassivo e misericordioso sustentam o convite."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus, porque ele é clemente, cheio de compaixão, tardio para se irar e de muita misericórdia e se arrepende do mal.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "joel-pro-jl-04-coracao-02",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "profundezas",
+    "type": "tap",
+    "skill": "interpret",
+    "question": "Em Joel 2:13, toque a palavra que falta em \"cheio de ___\"?",
+    "prompt": "Em Joel 2:13, toque a palavra que falta em \"cheio de ___\"?",
+    "cue": "Em Joel 2:13, toque a palavra que falta em \"cheio de ___\"?",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sair sabendo que a conversão que Joel pede é interior e se apoia na misericórdia.",
+    "evidence": [
+      "Joel 2:13"
+    ],
+    "feedbackCorrect": "Exato: ele é cheio de compaixão.",
+    "feedbackWrong": {
+      "a": "Coração é o do povo.",
+      "c": "Vestidos são o gesto recusado."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus, porque ele é clemente, cheio de compaixão, tardio para se irar e de muita misericórdia e se arrepende do mal.",
+    "template": "cheio de ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "coração"
+      },
+      {
+        "id": "b",
+        "text": "compaixão"
+      },
+      {
+        "id": "c",
+        "text": "vestidos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "joel-pro-jl-04-coracao-03",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "O que esse convite corrige?",
+    "prompt": "O que esse convite corrige?",
+    "cue": "O que esse convite corrige?",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sair sabendo que a conversão que Joel pede é interior e se apoia na misericórdia.",
+    "evidence": [
+      "Joel 2:13"
+    ],
+    "feedbackCorrect": "Certo: luto que fica só na aparência.",
+    "feedbackWrong": {
+      "b": "Misericórdia é a razão da volta.",
+      "c": "Converter-se está no versículo.",
+      "d": "O interior é o que ele pede."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus, porque ele é clemente, cheio de compaixão, tardio para se irar e de muita misericórdia e se arrepende do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aparência de luto sem volta do coração."
+      },
+      {
+        "id": "b",
+        "text": "A ideia de que Deus é misericordioso."
+      },
+      {
+        "id": "c",
+        "text": "O chamado para se converter a Jeová."
+      },
+      {
+        "id": "d",
+        "text": "A pressa de rasgar o que está por dentro."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-pro-jl-04-coracao-04",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Joel 2:13?",
+    "prompt": "Qual sequência revela o sentido de Joel 2:13?",
+    "cue": "Qual sequência revela o sentido de Joel 2:13?",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sair sabendo que a conversão que Joel pede é interior e se apoia na misericórdia.",
+    "evidence": [
+      "Joel 2:13"
+    ],
+    "feedbackCorrect": "Certo: coração, volta e então o caráter de Deus.",
+    "feedbackWrong": {
+      "b": "A conversão vem com o rasgar do coração.",
+      "c": "O caráter de Deus fundamenta o convite no fim."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus, porque ele é clemente, cheio de compaixão, tardio para se irar e de muita misericórdia e se arrepende do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rasgai o coração, não os vestidos."
+      },
+      {
+        "id": "b",
+        "text": "Convertei-vos a Jeová, vosso Deus."
+      },
+      {
+        "id": "c",
+        "text": "Ele é clemente, compassivo e tardio em irar-se."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-pro-jl-04-coracao-05",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Complete a frase: \"se arrepende do ___\"",
+    "prompt": "Complete a frase: \"se arrepende do ___\"",
+    "cue": "Complete a frase: \"se arrepende do ___\"",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sair sabendo que a conversão que Joel pede é interior e se apoia na misericórdia.",
+    "evidence": [
+      "Joel 2:13"
+    ],
+    "feedbackCorrect": "Certo: ele se arrepende do mal.",
+    "feedbackWrong": {
+      "b": "Vestidos são o gesto humano.",
+      "c": "Coração é o que o povo deve rasgar."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus, porque ele é clemente, cheio de compaixão, tardio para se irar e de muita misericórdia e se arrepende do mal.",
+    "template": "se arrepende do ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "mal"
+      },
+      {
+        "id": "b",
+        "text": "vestidos"
+      },
+      {
+        "id": "c",
+        "text": "coração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-pro-jl-04-coracao-06",
+    "trail": "joel",
+    "section": "jl-04-coracao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "Que sentido de Joel 2:13 se liga a este contexto?",
+    "prompt": "Que sentido de Joel 2:13 se liga a este contexto?",
+    "cue": "Que sentido de Joel 2:13 se liga a este contexto?",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sair sabendo que a conversão que Joel pede é interior e se apoia na misericórdia.",
+    "evidence": [
+      "Joel 2:13"
+    ],
+    "feedbackCorrect": "Certo: Deus quer o interior convertido.",
+    "feedbackWrong": {
+      "a": "A veste não substitui o coração.",
+      "c": "Há convite, não só medo."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus, porque ele é clemente, cheio de compaixão, tardio para se irar e de muita misericórdia e se arrepende do mal.",
+    "passageA": {
+      "ref": "Joel 2:13",
+      "text": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus, porque ele é clemente, cheio de compaixão, tardio para se irar e de muita misericórdia e se arrepende do mal."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus quer o coração, não só a veste"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Gestos que bastam"
+      },
+      {
+        "id": "b",
+        "text": "Coração convertido"
+      },
+      {
+        "id": "c",
+        "text": "Medo sem volta"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "joel-sem-jl-05-anos-01",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Jeová promete restituir os anos que o gafanhoto comeu.",
+    "prompt": "Jeová promete restituir os anos que o gafanhoto comeu.",
+    "cue": "Jeová promete restituir os anos que o gafanhoto comeu.",
+    "verseRef": "Joel 2:25",
+    "learningObjective": "Sair sabendo que Jeová promete devolver os anos consumidos pela praga.",
+    "evidence": [
+      "Joel 2:25"
+    ],
+    "feedbackCorrect": "Certo: a perda não é a última frase.",
+    "feedbackWrong": {
+      "false": "O versículo abre com restituir."
+    },
+    "passageText": "Restituir-vos-ei os anos que tem comido o gafanhoto, o brugo, o hasil e a lagarta, o meu grande exército que enviei entre vós.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "joel-sem-jl-05-anos-02",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "semente",
+    "type": "tap",
+    "skill": "observe",
+    "question": "Em Joel 2:25, toque a palavra que falta em \"Restituir-vos-ei os ___\"?",
+    "prompt": "Em Joel 2:25, toque a palavra que falta em \"Restituir-vos-ei os ___\"?",
+    "cue": "Em Joel 2:25, toque a palavra que falta em \"Restituir-vos-ei os ___\"?",
+    "verseRef": "Joel 2:25",
+    "learningObjective": "Sair sabendo que Jeová promete devolver os anos consumidos pela praga.",
+    "evidence": [
+      "Joel 2:25"
+    ],
+    "feedbackCorrect": "Exato: ele restitui os anos.",
+    "feedbackWrong": {
+      "a": "Gafanhoto é quem comeu.",
+      "c": "Exército nomeia a praga."
+    },
+    "passageText": "Restituir-vos-ei os anos que tem comido o gafanhoto, o brugo, o hasil e a lagarta, o meu grande exército que enviei entre vós.",
+    "template": "Restituir-vos-ei os ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "gafanhoto"
+      },
+      {
+        "id": "b",
+        "text": "anos"
+      },
+      {
+        "id": "c",
+        "text": "exército"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "joel-sem-jl-05-anos-03",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "O que Jeová promete em Joel 2:25?",
+    "prompt": "O que Jeová promete em Joel 2:25?",
+    "cue": "O que Jeová promete em Joel 2:25?",
+    "verseRef": "Joel 2:25",
+    "learningObjective": "Sair sabendo que Jeová promete devolver os anos consumidos pela praga.",
+    "evidence": [
+      "Joel 2:25"
+    ],
+    "feedbackCorrect": "Certo: devolver os anos consumidos.",
+    "feedbackWrong": {
+      "b": "A promessa é restituir, não repetir a perda.",
+      "c": "Ele fala em devolver.",
+      "d": "A colheita comida é o que entra na conta."
+    },
+    "passageText": "Restituir-vos-ei os anos que tem comido o gafanhoto, o brugo, o hasil e a lagarta, o meu grande exército que enviei entre vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Restituir os anos que a praga comeu."
+      },
+      {
+        "id": "b",
+        "text": "Enviar outro exército para acabar o resto."
+      },
+      {
+        "id": "c",
+        "text": "Esquecer os anos sem devolver nada."
+      },
+      {
+        "id": "d",
+        "text": "Trocar o gafanhoto por uma festa sem colheita."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-sem-jl-05-anos-04",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Qual é a ordem dos fatos em Joel 2:25?",
+    "prompt": "Qual é a ordem dos fatos em Joel 2:25?",
+    "cue": "Qual é a ordem dos fatos em Joel 2:25?",
+    "verseRef": "Joel 2:25",
+    "learningObjective": "Sair sabendo que Jeová promete devolver os anos consumidos pela praga.",
+    "evidence": [
+      "Joel 2:25"
+    ],
+    "feedbackCorrect": "Certo: perda, exército dele e então a restituição.",
+    "feedbackWrong": {
+      "b": "O nome exército interpreta a praga, não a antecede.",
+      "c": "Restituir é a promessa final."
+    },
+    "passageText": "Restituir-vos-ei os anos que tem comido o gafanhoto, o brugo, o hasil e a lagarta, o meu grande exército que enviei entre vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A praga comeu os anos do povo."
+      },
+      {
+        "id": "b",
+        "text": "Jeová chama esse conjunto de meu grande exército."
+      },
+      {
+        "id": "c",
+        "text": "Ele promete restituir o que foi comido."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-sem-jl-05-anos-05",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Complete a frase: \"o brugo, o ___ e a lagarta\"",
+    "prompt": "Complete a frase: \"o brugo, o ___ e a lagarta\"",
+    "cue": "Complete a frase: \"o brugo, o ___ e a lagarta\"",
+    "verseRef": "Joel 2:25",
+    "learningObjective": "Sair sabendo que Jeová promete devolver os anos consumidos pela praga.",
+    "evidence": [
+      "Joel 2:25"
+    ],
+    "feedbackCorrect": "Certo: hasil está na lista dos que comeram.",
+    "feedbackWrong": {
+      "b": "Anos são o que se restitui.",
+      "c": "Exército é o nome do conjunto."
+    },
+    "passageText": "Restituir-vos-ei os anos que tem comido o gafanhoto, o brugo, o hasil e a lagarta, o meu grande exército que enviei entre vós.",
+    "template": "o brugo, o ___ e a lagarta",
+    "options": [
+      {
+        "id": "a",
+        "text": "hasil"
+      },
+      {
+        "id": "b",
+        "text": "anos"
+      },
+      {
+        "id": "c",
+        "text": "exército"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-sem-jl-05-anos-06",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Joel 2:25 comunica que se liga a este contexto?",
+    "prompt": "O que Joel 2:25 comunica que se liga a este contexto?",
+    "cue": "O que Joel 2:25 comunica que se liga a este contexto?",
+    "verseRef": "Joel 2:25",
+    "learningObjective": "Sair sabendo que Jeová promete devolver os anos consumidos pela praga.",
+    "evidence": [
+      "Joel 2:25"
+    ],
+    "feedbackCorrect": "Certo: a promessa é restituir.",
+    "feedbackWrong": {
+      "b": "Ele diz que enviou.",
+      "c": "Os anos não ficam perdidos."
+    },
+    "passageText": "Restituir-vos-ei os anos que tem comido o gafanhoto, o brugo, o hasil e a lagarta, o meu grande exército que enviei entre vós.",
+    "passageA": {
+      "ref": "Joel 2:25",
+      "text": "Restituir-vos-ei os anos que tem comido o gafanhoto, o brugo, o hasil e a lagarta, o meu grande exército que enviei entre vós."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus restitui o que o juízo comeu"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Anos devolvidos"
+      },
+      {
+        "id": "b",
+        "text": "Praga sem dono"
+      },
+      {
+        "id": "c",
+        "text": "Perda eterna"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-cam-jl-05-anos-01",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "O exército da praga é chamado de outro deus, não de Jeová.",
+    "prompt": "O exército da praga é chamado de outro deus, não de Jeová.",
+    "cue": "O exército da praga é chamado de outro deus, não de Jeová.",
+    "verseRef": "Joel 2:25",
+    "learningObjective": "Sair sabendo que Jeová promete devolver os anos consumidos pela praga.",
+    "evidence": [
+      "Joel 2:25"
+    ],
+    "feedbackCorrect": "Certo: é o grande exército que ele enviou.",
+    "feedbackWrong": {
+      "true": "O texto diz “que enviei”."
+    },
+    "passageText": "Restituir-vos-ei os anos que tem comido o gafanhoto, o brugo, o hasil e a lagarta, o meu grande exército que enviei entre vós.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "id": "joel-cam-jl-05-anos-02",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "caminhada",
+    "type": "tap",
+    "skill": "understand",
+    "question": "Em Joel 2:25, toque a palavra que falta em \"o meu grande ___\"?",
+    "prompt": "Em Joel 2:25, toque a palavra que falta em \"o meu grande ___\"?",
+    "cue": "Em Joel 2:25, toque a palavra que falta em \"o meu grande ___\"?",
+    "verseRef": "Joel 2:25",
+    "learningObjective": "Sair sabendo que Jeová promete devolver os anos consumidos pela praga.",
+    "evidence": [
+      "Joel 2:25"
+    ],
+    "feedbackCorrect": "Exato: a praga é o grande exército dele.",
+    "feedbackWrong": {
+      "a": "Anos são o que se devolve.",
+      "c": "Hasil é um dos que comeram."
+    },
+    "passageText": "Restituir-vos-ei os anos que tem comido o gafanhoto, o brugo, o hasil e a lagarta, o meu grande exército que enviei entre vós.",
+    "template": "o meu grande ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "anos"
+      },
+      {
+        "id": "b",
+        "text": "exército"
+      },
+      {
+        "id": "c",
+        "text": "hasil"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "joel-cam-jl-05-anos-03",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Quem enviou o exército que comeu os anos?",
+    "prompt": "Quem enviou o exército que comeu os anos?",
+    "cue": "Quem enviou o exército que comeu os anos?",
+    "verseRef": "Joel 2:25",
+    "learningObjective": "Sair sabendo que Jeová promete devolver os anos consumidos pela praga.",
+    "evidence": [
+      "Joel 2:25"
+    ],
+    "feedbackCorrect": "Certo: o próprio Jeová, que agora restitui.",
+    "feedbackWrong": {
+      "b": "Ele diz “que enviei”.",
+      "c": "Não é o povo quem envia.",
+      "d": "Há um eu que enviou."
+    },
+    "passageText": "Restituir-vos-ei os anos que tem comido o gafanhoto, o brugo, o hasil e a lagarta, o meu grande exército que enviei entre vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová, que chama a praga de meu exército."
+      },
+      {
+        "id": "b",
+        "text": "Um inimigo à parte, sem ligação com ele."
+      },
+      {
+        "id": "c",
+        "text": "O povo, que soltou os insetos no campo."
+      },
+      {
+        "id": "d",
+        "text": "Ninguém: a praga não tem remetente."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-cam-jl-05-anos-04",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Joel 2:25?",
+    "prompt": "Como se encadeiam os eventos de Joel 2:25?",
+    "cue": "Como se encadeiam os eventos de Joel 2:25?",
+    "verseRef": "Joel 2:25",
+    "learningObjective": "Sair sabendo que Jeová promete devolver os anos consumidos pela praga.",
+    "evidence": [
+      "Joel 2:25"
+    ],
+    "feedbackCorrect": "Certo: perda, exército dele e então a restituição.",
+    "feedbackWrong": {
+      "b": "O nome exército interpreta a praga, não a antecede.",
+      "c": "Restituir é a promessa final."
+    },
+    "passageText": "Restituir-vos-ei os anos que tem comido o gafanhoto, o brugo, o hasil e a lagarta, o meu grande exército que enviei entre vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A praga comeu os anos do povo."
+      },
+      {
+        "id": "b",
+        "text": "Jeová chama esse conjunto de meu grande exército."
+      },
+      {
+        "id": "c",
+        "text": "Ele promete restituir o que foi comido."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-cam-jl-05-anos-05",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Complete a frase: \"que ___ entre vós\"",
+    "prompt": "Complete a frase: \"que ___ entre vós\"",
+    "cue": "Complete a frase: \"que ___ entre vós\"",
+    "verseRef": "Joel 2:25",
+    "learningObjective": "Sair sabendo que Jeová promete devolver os anos consumidos pela praga.",
+    "evidence": [
+      "Joel 2:25"
+    ],
+    "feedbackCorrect": "Certo: ele enviou o exército.",
+    "feedbackWrong": {
+      "b": "Anos são o objeto da volta.",
+      "c": "Gafanhoto é parte do exército."
+    },
+    "passageText": "Restituir-vos-ei os anos que tem comido o gafanhoto, o brugo, o hasil e a lagarta, o meu grande exército que enviei entre vós.",
+    "template": "que ___ entre vós",
+    "options": [
+      {
+        "id": "a",
+        "text": "enviei"
+      },
+      {
+        "id": "b",
+        "text": "anos"
+      },
+      {
+        "id": "c",
+        "text": "gafanhoto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-cam-jl-05-anos-06",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "Que relação Joel 2:25 estabelece com este contexto?",
+    "prompt": "Que relação Joel 2:25 estabelece com este contexto?",
+    "cue": "Que relação Joel 2:25 estabelece com este contexto?",
+    "verseRef": "Joel 2:25",
+    "learningObjective": "Sair sabendo que Jeová promete devolver os anos consumidos pela praga.",
+    "evidence": [
+      "Joel 2:25"
+    ],
+    "feedbackCorrect": "Certo: quem enviou também restitui.",
+    "feedbackWrong": {
+      "a": "É o exército dele.",
+      "c": "Ele se dirige ao povo."
+    },
+    "passageText": "Restituir-vos-ei os anos que tem comido o gafanhoto, o brugo, o hasil e a lagarta, o meu grande exército que enviei entre vós.",
+    "passageA": {
+      "ref": "Joel 2:25",
+      "text": "Restituir-vos-ei os anos que tem comido o gafanhoto, o brugo, o hasil e a lagarta, o meu grande exército que enviei entre vós."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus restitui o que o juízo comeu"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Exército alheio"
+      },
+      {
+        "id": "b",
+        "text": "Mão que devolve"
+      },
+      {
+        "id": "c",
+        "text": "Campo esquecido"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "joel-pro-jl-05-anos-01",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Restituir, aqui, significa que o juízo não esgota a bondade de Deus.",
+    "prompt": "Restituir, aqui, significa que o juízo não esgota a bondade de Deus.",
+    "cue": "Restituir, aqui, significa que o juízo não esgota a bondade de Deus.",
+    "verseRef": "Joel 2:25",
+    "learningObjective": "Sair sabendo que Jeová promete devolver os anos consumidos pela praga.",
+    "evidence": [
+      "Joel 2:25"
+    ],
+    "feedbackCorrect": "Certo: quem enviou a praga também devolve os anos.",
+    "feedbackWrong": {
+      "false": "O mesmo Senhor fala em restituir."
+    },
+    "passageText": "Restituir-vos-ei os anos que tem comido o gafanhoto, o brugo, o hasil e a lagarta, o meu grande exército que enviei entre vós.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "joel-pro-jl-05-anos-02",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "profundezas",
+    "type": "tap",
+    "skill": "interpret",
+    "question": "Em Joel 2:25, toque a palavra que falta em \"e a ___, o meu grande\"?",
+    "prompt": "Em Joel 2:25, toque a palavra que falta em \"e a ___, o meu grande\"?",
+    "cue": "Em Joel 2:25, toque a palavra que falta em \"e a ___, o meu grande\"?",
+    "verseRef": "Joel 2:25",
+    "learningObjective": "Sair sabendo que Jeová promete devolver os anos consumidos pela praga.",
+    "evidence": [
+      "Joel 2:25"
+    ],
+    "feedbackCorrect": "Exato: a lagarta está na lista dos que comeram.",
+    "feedbackWrong": {
+      "a": "Anos são o que se restitui.",
+      "c": "Exército é o nome do conjunto."
+    },
+    "passageText": "Restituir-vos-ei os anos que tem comido o gafanhoto, o brugo, o hasil e a lagarta, o meu grande exército que enviei entre vós.",
+    "template": "e a ___, o meu grande",
+    "options": [
+      {
+        "id": "a",
+        "text": "anos"
+      },
+      {
+        "id": "b",
+        "text": "lagarta"
+      },
+      {
+        "id": "c",
+        "text": "exército"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "joel-pro-jl-05-anos-03",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "O que a restituição diz sobre o juízo?",
+    "prompt": "O que a restituição diz sobre o juízo?",
+    "cue": "O que a restituição diz sobre o juízo?",
+    "verseRef": "Joel 2:25",
+    "learningObjective": "Sair sabendo que Jeová promete devolver os anos consumidos pela praga.",
+    "evidence": [
+      "Joel 2:25"
+    ],
+    "feedbackCorrect": "Certo: o juízo não é o fim da história com Deus.",
+    "feedbackWrong": {
+      "b": "A promessa é que os anos voltam.",
+      "c": "Ele assume o envio e ainda assim restitui.",
+      "d": "Os anos são o que ele devolve."
+    },
+    "passageText": "Restituir-vos-ei os anos que tem comido o gafanhoto, o brugo, o hasil e a lagarta, o meu grande exército que enviei entre vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quem feriu a colheita pode devolvê-la."
+      },
+      {
+        "id": "b",
+        "text": "O juízo apaga os anos para sempre."
+      },
+      {
+        "id": "c",
+        "text": "Restituir significa que a praga foi um engano."
+      },
+      {
+        "id": "d",
+        "text": "O exército fica e os anos não voltam."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-pro-jl-05-anos-04",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Joel 2:25?",
+    "prompt": "Qual sequência revela o sentido de Joel 2:25?",
+    "cue": "Qual sequência revela o sentido de Joel 2:25?",
+    "verseRef": "Joel 2:25",
+    "learningObjective": "Sair sabendo que Jeová promete devolver os anos consumidos pela praga.",
+    "evidence": [
+      "Joel 2:25"
+    ],
+    "feedbackCorrect": "Certo: perda, exército dele e então a restituição.",
+    "feedbackWrong": {
+      "b": "O nome exército interpreta a praga, não a antecede.",
+      "c": "Restituir é a promessa final."
+    },
+    "passageText": "Restituir-vos-ei os anos que tem comido o gafanhoto, o brugo, o hasil e a lagarta, o meu grande exército que enviei entre vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A praga comeu os anos do povo."
+      },
+      {
+        "id": "b",
+        "text": "Jeová chama esse conjunto de meu grande exército."
+      },
+      {
+        "id": "c",
+        "text": "Ele promete restituir o que foi comido."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-pro-jl-05-anos-05",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Complete a frase: \"os anos que tem comido o ___\"",
+    "prompt": "Complete a frase: \"os anos que tem comido o ___\"",
+    "cue": "Complete a frase: \"os anos que tem comido o ___\"",
+    "verseRef": "Joel 2:25",
+    "learningObjective": "Sair sabendo que Jeová promete devolver os anos consumidos pela praga.",
+    "evidence": [
+      "Joel 2:25"
+    ],
+    "feedbackCorrect": "Certo: o gafanhoto encabeça os que comeram.",
+    "feedbackWrong": {
+      "b": "Exército é o conjunto.",
+      "c": "Hasil vem na lista, não nesta lacuna."
+    },
+    "passageText": "Restituir-vos-ei os anos que tem comido o gafanhoto, o brugo, o hasil e a lagarta, o meu grande exército que enviei entre vós.",
+    "template": "os anos que tem comido o ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "gafanhoto"
+      },
+      {
+        "id": "b",
+        "text": "exército"
+      },
+      {
+        "id": "c",
+        "text": "hasil"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "joel-pro-jl-05-anos-06",
+    "trail": "joel",
+    "section": "jl-05-anos",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "Que sentido de Joel 2:25 se liga a este contexto?",
+    "prompt": "Que sentido de Joel 2:25 se liga a este contexto?",
+    "cue": "Que sentido de Joel 2:25 se liga a este contexto?",
+    "verseRef": "Joel 2:25",
+    "learningObjective": "Sair sabendo que Jeová promete devolver os anos consumidos pela praga.",
+    "evidence": [
+      "Joel 2:25"
+    ],
+    "feedbackCorrect": "Certo: há futuro depois do que foi comido.",
+    "feedbackWrong": {
+      "a": "A restituição abre o amanhã.",
+      "c": "O que volta é o que a praga comeu."
+    },
+    "passageText": "Restituir-vos-ei os anos que tem comido o gafanhoto, o brugo, o hasil e a lagarta, o meu grande exército que enviei entre vós.",
+    "passageA": {
+      "ref": "Joel 2:25",
+      "text": "Restituir-vos-ei os anos que tem comido o gafanhoto, o brugo, o hasil e a lagarta, o meu grande exército que enviei entre vós."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus restitui o que o juízo comeu"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Juízo sem amanhã"
+      },
+      {
+        "id": "b",
+        "text": "Bondade depois da perda"
+      },
+      {
+        "id": "c",
+        "text": "Festa sem colheita"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
   }
 ]

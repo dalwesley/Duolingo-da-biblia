@@ -1522,6 +1522,55 @@
         ]
       },
       {
+        "title": "O custo",
+        "icon": "🌾",
+        "section": "custo",
+        "missions": [
+          {
+            "slug": "rute-03-mara",
+            "title": "Chamai-me Mara",
+            "intro": "Noemi volta a Belém e recusa o nome doce. Pede Mara, porque saiu cheia e voltou vazia.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": [],
+            "hookRef": "Rute 1:20–21",
+            "hookVerse": "Respondeu-lhes ela: Não me chameis Noemi, chamai-me Mara, pois o Todo-Poderoso me encheu de grande amargura. Eu saí daqui cheia, e Jeová me fez voltar vazia. Por que me chamais Noemi, visto que Jeová deu testemunho contra mim, e o Todo-Poderoso me afligiu?",
+            "hookNote": "A amargura não é falta de fé muda. É oração que diz o que ela sente de Deus.",
+            "centralInsight": "A perda pode fazer Deus parecer adversário",
+            "objective": "Sair sabendo que Noemi nomeia a amargura e atribui o vazio a Jeová.",
+            "echoQuestion": "Rute colou a vida a Noemi. Como Noemi nomeia o que sente ao chegar?"
+          },
+          {
+            "slug": "rute-04-asas",
+            "title": "Debaixo das asas",
+            "intro": "Boaz vê a lealdade de Rute e pede que Jeová a recompense. O abrigo é debaixo das asas do Deus de Israel.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": [],
+            "hookRef": "Rute 2:12",
+            "hookVerse": "Jeová te dê o galardão do que fizeste, e te seja concedida plena recompensa da parte de Jeová, Deus de Israel, debaixo de cujas asas vieste buscar refúgio.",
+            "hookNote": "O favor no campo ganha nome teológico: refúgio sob as asas de Jeová.",
+            "centralInsight": "Refúgio debaixo das asas de Deus",
+            "objective": "Sair sabendo que Boaz liga a lealdade de Rute ao refúgio no Deus de Israel.",
+            "echoQuestion": "Noemi voltou vazia. Onde Rute busca abrigo no campo?"
+          },
+          {
+            "slug": "rute-05-capa",
+            "title": "Estende a tua capa",
+            "intro": "Na eira, Rute pede a Boaz que estenda a capa. O resgate tem nome: parente chegado, e tem custo.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": [],
+            "hookRef": "Rute 3:9–11",
+            "hookVerse": "perguntou-lhe: Quem és tu? Respondeu-lhe ela: Sou Rute, tua serva. Estende a tua capa sobre a tua serva; porque tu és parente chegado. Ele disse: Bendita sejas de Jeová, minha filha. Mostraste mais bondade agora do que em outro tempo, visto que não escolheste mancebos pobres ou ricos. Agora, minha filha, não temas; eu farei tudo o que disseres, porque todo o povo da minha cidade sabe que és mulher virtuosa.",
+            "hookNote": "Estender a capa é pedir cobertura de resgate. Boaz não zomba: chama-a virtuosa e promete fazer.",
+            "centralInsight": "Redenção pede quem aceite o custo",
+            "objective": "Sair sabendo que Rute pede a Boaz cobertura de parente e ele aceita o encargo.",
+            "echoQuestion": "Há refúgio debaixo das asas. Que cobertura Rute pede a Boaz?"
+          }
+        ]
+      },
+      {
         "title": "Redenção",
         "section": "redencao",
         "icon": "💍",
@@ -2607,6 +2656,55 @@
             "hookNote": "Amor forte como a morte.",
             "centralInsight": "O que isso revela sobre a aliança de Deus?",
             "objective": "O que este passo ensina sobre selado?"
+          }
+        ]
+      },
+      {
+        "title": "A busca",
+        "icon": "🌙",
+        "section": "busca",
+        "missions": [
+          {
+            "slug": "ct-03-beijos",
+            "title": "Melhor do que o vinho",
+            "intro": "O cântico não começa com regra. Começa com desejo: a amada quer a boca, o nome e a casa do amado.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": [],
+            "hookRef": "Cantares 1:2–4",
+            "hookVerse": "Beije-me ele com os beijos de sua boca; Pois melhor é o teu amor do que o vinho. Os teus perfumes têm um odor suave, O teu nome é como unguento derramado, Por isso as donzelas te amam. Atrai-me tu; correremos após ti: O rei acaba de me introduzir nos seus aposentos; Nós nos alegraremos e regozijaremos em ti, Faremos menção do teu amor mais do que do vinho; É com razão que te amam.",
+            "hookNote": "Amor, aqui, não é ideia. É presença pedida: beijo, perfume, nome e aposentos.",
+            "centralInsight": "O amor deseja a presença",
+            "objective": "Sair sabendo que o cântico abre pelo desejo da presença do amado.",
+            "echoQuestion": "O amor está selado no coração. Onde esse desejo começa?"
+          },
+          {
+            "slug": "ct-04-pertence",
+            "title": "Meu, e eu dele",
+            "intro": "No meio do poema, a amada resume a aliança numa frase só: pertença dos dois lados.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": [],
+            "hookRef": "Cantares 2:16",
+            "hookVerse": "O meu amado é meu, e eu sou dele; Ele apascenta o seu rebanho entre as açucenas.",
+            "hookNote": "Não é posse de um só. Ela é dele, e ele é dela. O pastor está entre as açucenas.",
+            "centralInsight": "Amor de aliança é pertença mútua",
+            "objective": "Sair sabendo que o cântico fala de pertença dos dois lados.",
+            "echoQuestion": "O amor deseja a presença. Essa presença vira o quê entre os dois?"
+          },
+          {
+            "slug": "ct-05-busca",
+            "title": "Busquei o que a alma ama",
+            "intro": "De noite ela procura. Não acha no leito, pergunta aos guardas e, quando acha, não solta.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": [],
+            "hookRef": "Cantares 3:1–4",
+            "hookVerse": "De noite no meu leito, busquei aquele, a quem a minha alma ama: Busquei-o, porém não o achei. Levantar-me-ei, pois, e rodearei a cidade; Pelas ruas e pelas praças Buscarei aquele a quem a minha alma ama: Busquei-o, porém não o achei. Encontraram-me os guardas que rondam a cidade, Aos quais disse eu: Vistes, porventura, aquele a quem a minha alma ama? Apenas me tinha apartado deles, Quando achei aquele a quem a minha alma ama. Agarrei-me a ele, e não o deixei ir embora, Até tê-lo eu introduzido na casa de minha mãe, E na câmara daquela que me concebeu.",
+            "hookNote": "O amor do cântico não é só declaração. É busca que atravessa a cidade até achar.",
+            "centralInsight": "Quem ama procura até achar",
+            "objective": "Sair sabendo que o amor do cântico procura e, ao achar, não solta.",
+            "echoQuestion": "Há pertença mútua. O que ela faz quando o amado não está no leito?"
           },
           {
             "slug": "cantares-amor-03-desafio-alianca-de-a",
@@ -2855,6 +2953,55 @@
             "hookNote": "Novas a cada manhã.",
             "centralInsight": "O que isso revela sobre a aliança de Deus?",
             "objective": "O que este passo ensina sobre misericórdias?"
+          }
+        ]
+      },
+      {
+        "title": "A cidade",
+        "icon": "🕯️",
+        "section": "cidade",
+        "missions": [
+          {
+            "slug": "lm-03-solitaria",
+            "title": "Sentada solitária",
+            "intro": "O livro abre com uma cidade que já foi cheia e agora está só, viúva e sob trabalho.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": [],
+            "hookRef": "Lamentações 1:1",
+            "hookVerse": "Como está sentada solitária a cidade que estava cheia de povo! Tornou-se viúva a que era grande entre as nações; Ficou sujeita ao trabalho forçado a que era princesa entre as províncias.",
+            "hookNote": "O luto não é abstrato. É Jerusalém sem povo, sem honra e sem liberdade.",
+            "centralInsight": "O luto da cidade é concreto",
+            "objective": "Sair sabendo que a queda de Jerusalém aparece como solidão, viuvez e trabalho.",
+            "echoQuestion": "Há misericórdia no meio do luto. Como o livro descreve a cidade caída?"
+          },
+          {
+            "slug": "lm-04-palavra",
+            "title": "Cumpriu a sua palavra",
+            "intro": "O desastre não foi acidente. O poema diz que Jeová fez o que intentou e cumpriu a palavra antiga.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": [],
+            "hookRef": "Lamentações 2:17",
+            "hookVerse": "Fez Jeová o que intentou; cumpriu a sua palavra que ordenou nos dias antigos; derrubou e não mostrou piedade. Fez que o inimigo se alegrasse sobre ti, exaltou o poder dos teus adversários.",
+            "hookNote": "O inimigo se alegra, mas o versículo não entrega o roteiro ao inimigo. A palavra de Jeová se cumpre.",
+            "centralInsight": "O juízo cumpre a palavra antiga",
+            "objective": "Sair sabendo que a queda cumpre o que Jeová já tinha falado.",
+            "echoQuestion": "A cidade está solitária. Esse desastre foi acidente ou palavra cumprida?"
+          },
+          {
+            "slug": "lm-05-trono",
+            "title": "Tu permaneces",
+            "intro": "O poema acaba olhando para o trono que não cai e pedindo: converte-nos, renova os nossos dias.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": [],
+            "hookRef": "Lamentações 5:19–22",
+            "hookVerse": "Tu, Jeová, permaneces para sempre; o teu trono subsiste de geração em geração. Por que te esqueces de nós para sempre? E nos abandonas por tanto tempo? Converte-nos a ti, Jeová, e seremos convertidos; renova os nossos dias como dantes, se é que não nos tens, de todo, rejeitado, se é que não estás sobremaneira irado contra nós.",
+            "hookNote": "O luto não termina em desespero mudo. Termina numa pergunta e num pedido diante de quem permanece.",
+            "centralInsight": "No luto ainda se pede restauração",
+            "objective": "Sair sabendo que o lamento pede volta mesmo temendo a rejeição.",
+            "echoQuestion": "A palavra se cumpriu na queda. Diante do trono, o que ainda se pede?"
           },
           {
             "slug": "lamentacoes-luto-03-desafio-esperanca-no",
@@ -3117,6 +3264,55 @@
             "hookNote": "Não sacrifício vazio.",
             "centralInsight": "O que isso revela sobre a aliança de Deus?",
             "objective": "O que este passo ensina sobre misericórdia?"
+          }
+        ]
+      },
+      {
+        "title": "O pai",
+        "icon": "💔",
+        "section": "pai",
+        "missions": [
+          {
+            "slug": "os-03-fornicacao",
+            "title": "Uma mulher de fornicação",
+            "intro": "Jeová manda Oseias tomar uma mulher infiel. O casamento vira espelho da terra que se aparta.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": [],
+            "hookRef": "Oséias 1:2",
+            "hookVerse": "Quando Jeová falou, ao princípio, com Oseias, disse Jeová a Oseias: Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová.",
+            "hookNote": "O profeta não observa de fora. A dor do adultério entra na casa dele.",
+            "centralInsight": "Infidelidade a Deus é adultério",
+            "objective": "Sair sabendo que o casamento de Oseias retrata a terra apartada de Jeová.",
+            "echoQuestion": "Deus pede misericórdia, não só sacrifício. Como essa dor aparece na vida do profeta?"
+          },
+          {
+            "slug": "os-04-deserto",
+            "title": "Falarei ao coração",
+            "intro": "Depois da acusação, Jeová diz que vai atrair, levar ao deserto e abrir uma porta de esperança.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": [],
+            "hookRef": "Oséias 2:14–15",
+            "hookVerse": "Portanto, eis que eu a atrairei, e a levarei para o deserto, e lhe falarei ao coração. Dali, lhe darei as suas vinhas e o vale de Acor, para uma porta de esperança; ali, cantará ela como nos dias da sua mocidade e como no dia em que subiu da terra do Egito.",
+            "hookNote": "O deserto, aqui, não é abandono. É o lugar onde ele volta a falar ao coração.",
+            "centralInsight": "Deus corteja o infiel de volta",
+            "objective": "Sair sabendo que Jeová atrai a infiel e promete esperança.",
+            "echoQuestion": "A infidelidade dói como adultério. O que Jeová faz com a infiel?"
+          },
+          {
+            "slug": "os-05-menino",
+            "title": "Quando Israel era menino",
+            "intro": "Jeová lembra o amor de pai: chamou o filho do Egito, ensinou a andar e tirou o jugo.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": [],
+            "hookRef": "Oséias 11:1–4",
+            "hookVerse": "Quando Israel era menino, eu o amei e do Egito chamei a meu filho. Todavia, eu ensinava a Efraim a andar; levava-os nos meus braços, porém não conheceram que eu os curava. Eu os atraía com cordas de homem, com laços de amor; eu era para com eles como quem tira o jugo de cima dos seus queixos e lhes punha diante o mantimento.",
+            "hookNote": "O tom muda de tribunal para colo. A infidelidade dói porque o laço era de pai.",
+            "centralInsight": "O amor de Deus é de pai",
+            "objective": "Sair sabendo que Jeová amou Israel como filho e o curou sem ser reconhecido.",
+            "echoQuestion": "Ele corteja a infiel. Que tipo de amor está por trás desse cortejo?"
           },
           {
             "slug": "oseias-oseias-03-desafio-oseias",
@@ -3181,6 +3377,55 @@
             "hookNote": "Promessa para toda a carne.",
             "centralInsight": "O que isso revela sobre a aliança de Deus?",
             "objective": "O que este passo ensina sobre derramarei?"
+          }
+        ]
+      },
+      {
+        "title": "A volta",
+        "icon": "🌾",
+        "section": "volta",
+        "missions": [
+          {
+            "slug": "jl-03-gafanhoto",
+            "title": "O que o gafanhoto deixou",
+            "intro": "Joel abre com uma cadeia de perda: o que um inseto deixa, o outro come.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": [],
+            "hookRef": "Joel 1:4",
+            "hookVerse": "O gafanhoto comeu o que a lagarta deixou; e o brugo comeu o que o gafanhoto deixou; e o hasil comeu o que o brugo deixou.",
+            "hookNote": "O juízo chega como colheita que some de mão em mão, até não restar.",
+            "centralInsight": "O juízo pode chegar como perda",
+            "objective": "Sair sabendo que Joel descreve o juízo como uma perda que se completa.",
+            "echoQuestion": "Há promessa do Espírito. Antes dela, o que a terra perdeu?"
+          },
+          {
+            "slug": "jl-04-coracao",
+            "title": "Rasgai o coração",
+            "intro": "Joel não pede só roupa rasgada. Pede o coração, porque Jeová é clemente e tardio em irar-se.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": [],
+            "hookRef": "Joel 2:13",
+            "hookVerse": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus, porque ele é clemente, cheio de compaixão, tardio para se irar e de muita misericórdia e se arrepende do mal.",
+            "hookNote": "O gesto externo não substitui a volta. O convite apoia-se em quem Deus é.",
+            "centralInsight": "Deus quer o coração, não só a veste",
+            "objective": "Sair sabendo que a conversão que Joel pede é interior e se apoia na misericórdia.",
+            "echoQuestion": "A colheita foi comida. O que Jeová pede em resposta?"
+          },
+          {
+            "slug": "jl-05-anos",
+            "title": "Restituirei os anos",
+            "intro": "O mesmo exército que comeu a colheita não tem a última palavra. Jeová promete restituir os anos.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": [],
+            "hookRef": "Joel 2:25",
+            "hookVerse": "Restituir-vos-ei os anos que tem comido o gafanhoto, o brugo, o hasil e a lagarta, o meu grande exército que enviei entre vós.",
+            "hookNote": "Gafanhoto, brugo, hasil e lagarta são chamados o grande exército dele. A perda também cabe na mão que restitui.",
+            "centralInsight": "Deus restitui o que o juízo comeu",
+            "objective": "Sair sabendo que Jeová promete devolver os anos consumidos pela praga.",
+            "echoQuestion": "Ele pediu o coração. O que promete a quem volta?"
           },
           {
             "slug": "joel-joel-03-desafio-joel",
@@ -3245,6 +3490,55 @@
             "hookNote": "Culto sem justiça não basta.",
             "centralInsight": "O que isso revela sobre a aliança de Deus?",
             "objective": "O que este passo ensina sobre deixai?"
+          }
+        ]
+      },
+      {
+        "title": "O chamado",
+        "icon": "🐑",
+        "section": "chamado-amos",
+        "missions": [
+          {
+            "slug": "am-03-conhecido",
+            "title": "Só a vós tenho conhecido",
+            "intro": "Amós diz que conhecer Israel não é favor sem conta. A eleição aumenta a visita sobre a iniquidade.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": [],
+            "hookRef": "Amós 3:2",
+            "hookVerse": "De todas as famílias da terra só a vós vos tenho conhecido; portanto, visitarei sobre vós todas as vossas iniquidades.",
+            "hookNote": "“Conhecer”, aqui, é relação de aliança. Por isso a visita vem sobre este povo, não apesar disso.",
+            "centralInsight": "Eleição aumenta a responsabilidade",
+            "objective": "Sair sabendo que ser conhecido por Jeová torna a iniquidade mais grave.",
+            "echoQuestion": "O juízo deve correr como águas. Por que ele começa pela casa conhecida?"
+          },
+          {
+            "slug": "am-04-bem",
+            "title": "Buscai o bem",
+            "intro": "Amós não separa culto e porta da cidade. Buscar o bem é o caminho para viver.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": [],
+            "hookRef": "Amós 5:14–15",
+            "hookVerse": "Buscai o bem e não o mal, para que vivais; e assim Jeová, Deus dos Exércitos, será convosco, como dizeis. Aborrecei o mal, e amai o bem, e estabelecei na porta o juízo. Pode ser que Jeová, Deus dos Exércitos, se compadeça do resto de José.",
+            "hookNote": "O juízo na porta é o lugar onde o pobre encontra ou não encontra justiça.",
+            "centralInsight": "Deus pede o bem, não só o culto",
+            "objective": "Sair sabendo que viver diante de Jeová inclui odiar o mal e julgar na porta.",
+            "echoQuestion": "Ser conhecido aumenta a conta. O que, então, o povo deve buscar?"
+          },
+          {
+            "slug": "am-05-pastor",
+            "title": "Não era profeta",
+            "intro": "Amós responde a Amazias: não vinha de escola de profetas. Jeová o tirou de seguir o rebanho.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": [],
+            "hookRef": "Amós 7:14–15",
+            "hookVerse": "Então, respondeu Amós e disse a Amazias: Eu não era profeta nem filho de profeta, mas era pastor de gado e cultivador de sicômoros. Jeová tirou-me de seguir o rebanho e disse-me: Vai, profetiza ao meu povo de Israel.",
+            "hookNote": "O chamado não depende do currículo. Pastor de gado e de sicômoros é enviado a Israel.",
+            "centralInsight": "Deus chama quem não se candidatou",
+            "objective": "Sair sabendo que Jeová tirou Amós do rebanho para profetizar a Israel.",
+            "echoQuestion": "O bem se busca na porta. Quem Jeová manda dizer isso?"
           },
           {
             "slug": "amos-amos-03-desafio-amos",
@@ -3309,6 +3603,55 @@
             "hookNote": "Esperança final.",
             "centralInsight": "O que isso revela sobre a aliança de Deus?",
             "objective": "O que este passo ensina sobre reino?"
+          }
+        ]
+      },
+      {
+        "title": "O irmão",
+        "icon": "⛰️",
+        "section": "irmao",
+        "missions": [
+          {
+            "slug": "ob-03-soberba",
+            "title": "Quem me derrubará?",
+            "intro": "Edom mora no alto e diz que ninguém o derruba. Jeová responde do mesmo alto.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": [],
+            "hookRef": "Obadias 3–4",
+            "hookVerse": "A soberba do teu coração acaba de te enganar, ó tu que habitas nas fendas do penhasco, e cuja habitação é elevada; que dizes no teu coração: Quem me derrubará em terra? Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+            "hookNote": "Penhasco, águia e estrelas não são abrigo quando a soberba engana o coração.",
+            "centralInsight": "Altura não protege do juízo",
+            "objective": "Sair sabendo que a soberba de Edom será derrubada de onde ela se esconde.",
+            "echoQuestion": "O reino será de Jeová. O que a altura de Edom não consegue segurar?"
+          },
+          {
+            "slug": "ob-04-irmao",
+            "title": "Violência contra o irmão",
+            "intro": "Edom não ficou neutro no dia de Jacó. Ficou do lado oposto e entrou na partilha.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": [],
+            "hookRef": "Obadias 10–11",
+            "hookVerse": "Por causa da violência feita a teu irmão Jacó, cobrir-te-á a vergonha, e serás exterminado para sempre. No dia em que estiveste do lado oposto, no dia em que estrangeiros lhe levaram os bens, e forasteiros lhe entraram nas portas e deitaram sortes sobre Jerusalém, tu também eras como um deles.",
+            "hookNote": "A vergonha vem da violência contra o irmão, não de uma guerra qualquer.",
+            "centralInsight": "Festejar a queda do irmão é culpa",
+            "objective": "Sair sabendo que Edom se fez como um dos que saquearam Jerusalém.",
+            "echoQuestion": "A altura não protege. Contra quem essa altura se voltou?"
+          },
+          {
+            "slug": "ob-05-dia",
+            "title": "Como tens feito",
+            "intro": "O dia de Jeová está perto de todas as nações. O que Edom fez volta sobre a sua cabeça.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": [],
+            "hookRef": "Obadias 15",
+            "hookVerse": "Pois o Dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+            "hookNote": "O juízo não é só local. O feito retorna sobre quem o praticou.",
+            "centralInsight": "O mal feito volta sobre quem o fez",
+            "objective": "Sair sabendo que o dia de Jeová devolve a cada nação o que ela fez.",
+            "echoQuestion": "Edom ficou contra o irmão. O que acontece com esse feito?"
           },
           {
             "slug": "obadias-obadias-03-desafio-obadias",
@@ -3394,6 +3737,55 @@
             "hookNote": "Misericórdia que incomoda.",
             "centralInsight": "O que isso revela sobre a aliança de Deus?",
             "objective": "O que este passo ensina sobre cidade?"
+          }
+        ]
+      },
+      {
+        "title": "A misericórdia",
+        "icon": "🌿",
+        "section": "misericordia-jn",
+        "missions": [
+          {
+            "slug": "jonas-03-ventre",
+            "title": "Do ventre do peixe",
+            "intro": "Dentro do peixe, Jonas ora. Do Sheol ele grita, e diz que Jeová ouviu a sua voz.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": [],
+            "hookRef": "Jonas 2:1–2",
+            "hookVerse": "Então, orou Jonas a Jeová, seu Deus, lá do ventre do peixe. Ele disse: Da minha aflição, clamei a Jeová, e ele me respondeu; do ventre do Sheol gritei, e tu ouviste a minha voz.",
+            "hookNote": "A oração não espera o templo. Nasce na aflição, no fundo, e ainda assim é ouvida.",
+            "centralInsight": "A oração pode nascer no fundo",
+            "objective": "Sair sabendo que Jonas clamou do ventre e Jeová respondeu.",
+            "echoQuestion": "A cidade se arrependeu. Antes disso, o que Jonas fez no fundo do peixe?"
+          },
+          {
+            "slug": "jonas-04-ira",
+            "title": "Jonas se ira",
+            "intro": "Quando Deus perdoa Nínive, Jonas se ira. Ele foge porque sabia que Jeová é clemente.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": [],
+            "hookRef": "Jonas 4:2",
+            "hookVerse": "Orou a Jeová e disse: Ah! Jeová, não foi esta a minha palavra, estando eu ainda no meu país? Por isso é que me apressei a fugir para Társis, pois eu sabia que tu és um Deus clemente e misericordioso, tardio em irar-se e de grande beneficência e que te arrependes do mal.",
+            "hookNote": "A misericórdia de Deus, que salva a cidade, ofende o profeta que queria o juízo.",
+            "centralInsight": "A misericórdia de Deus pode ofender",
+            "objective": "Sair sabendo que Jonas fugiu porque conhecia a clemência de Jeová.",
+            "echoQuestion": "Do fundo ele foi ouvido. Por que essa mesma misericórdia o ira?"
+          },
+          {
+            "slug": "jonas-05-cidade",
+            "title": "E Nínive?",
+            "intro": "Jonas tem pena da planta que não cultivou. Jeová pergunta se não terá compaixão da cidade inteira.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": [],
+            "hookRef": "Jonas 4:10–11",
+            "hookVerse": "Jeová disse: Tu tiveste compaixão do palma-christi, pela qual não trabalhaste, nem fizeste crescer; que nasceu numa noite e numa noite pereceu. Não hei de eu ter compaixão da grande cidade de Nínive, em que há mais de cento e vinte mil pessoas que não sabem discernir entre a sua mão direita e a sua esquerda, e também muito gado?",
+            "hookNote": "A planta durou uma noite. A cidade tem gente que não distingue a mão direita da esquerda, e também gado.",
+            "centralInsight": "Deus se importa com a cidade desprezada",
+            "objective": "Sair sabendo que a compaixão de Jeová alcança Nínive, não só a planta de Jonas.",
+            "echoQuestion": "A misericórdia o ofendeu. Com quem Jeová compara essa pena?"
           },
           {
             "slug": "jonas-ninive-02-desafio-jonas",
@@ -3458,6 +3850,55 @@
             "hookNote": "De ti me sairá o Dominador.",
             "centralInsight": "O que isso revela sobre a aliança de Deus?",
             "objective": "O que este passo ensina sobre belém?"
+          }
+        ]
+      },
+      {
+        "title": "A promessa",
+        "icon": "🌟",
+        "section": "promessa-mq",
+        "missions": [
+          {
+            "slug": "mq-03-monte",
+            "title": "O monte da casa",
+            "intro": "Miquéias vê povos subindo ao monte de Jeová para aprender os caminhos dele.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": [],
+            "hookRef": "Miquéias 4:1–2",
+            "hookVerse": "Mas acontecerá nos últimos dias que o monte da casa de Jeová será estabelecido no cume dos montes e será exaltado sobre os outeiros; e a ele concorrerão povos. Irão muitas nações e dirão: Vinde, subamos ao monte de Jeová e à Casa do Deus de Jacó; ele nos ensinará acerca dos seus caminhos, e andaremos nas suas veredas; porque de Sião sairá a lei, e de Jerusalém, a palavra do Senhor.",
+            "hookNote": "A paz que o livro espera não começa na força das nações. Começa na instrução que sai de Sião.",
+            "centralInsight": "A paz das nações começa na instrução",
+            "objective": "Sair sabendo que as nações sobem ao monte para aprender os caminhos de Jeová.",
+            "echoQuestion": "Deus pede justiça, misericórdia e humildade. Para onde as nações caminham?"
+          },
+          {
+            "slug": "mq-04-belem",
+            "title": "A pequena Belém",
+            "intro": "O reinante de Israel não sai de uma capital orgulhosa. Sai de Belém, pequena entre os milhares de Judá.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": [],
+            "hookRef": "Miquéias 5:2",
+            "hookVerse": "Mas tu, Belém Efrata, que és pequena para se achar entre os milhares de Judá, de ti é que me sairá aquele que há de ser reinante em Israel e cujas saídas são desde os tempos antigos, desde a eternidade.",
+            "hookNote": "Pequena não é esquecida. De Belém sai aquele cujas origens vêm desde a eternidade.",
+            "centralInsight": "O reinante prometido nasce pequeno",
+            "objective": "Sair sabendo que o governante prometido sai de Belém e vem desde a eternidade.",
+            "echoQuestion": "As nações sobem ao monte. De onde sai quem há de reinar?"
+          },
+          {
+            "slug": "mq-05-mar",
+            "title": "No fundo do mar",
+            "intro": "Miquéias fecha perguntando quem é semelhante a Deus: ele perdoa, não retém a ira e lança os pecados no mar.",
+            "type": "lesson",
+            "xpReward": 50,
+            "questions": [],
+            "hookRef": "Miquéias 7:18–19",
+            "hookVerse": "Quem é Deus semelhante a ti, que perdoas a iniquidade e que te esqueces da transgressão do resto da tua herança? Ele não retém para sempre a sua ira, porque se deleita na misericórdia. Ele voltará e terá compaixão de nós; pisará aos pés as nossas iniquidades. Tu lançarás todos os seus pecados no fundo do mar.",
+            "hookNote": "A misericórdia não é esquecimento vago. É perdão que pisa a iniquidade e a lança no fundo.",
+            "centralInsight": "Deus lança os pecados no fundo do mar",
+            "objective": "Sair sabendo que o perdão de Deus deleita-se na misericórdia e não retém a ira.",
+            "echoQuestion": "O reinante nasce pequeno. O que esse Deus faz com a iniquidade?"
           },
           {
             "slug": "miqueias-miqueias-03-desafio-miqueias",

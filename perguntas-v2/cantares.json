@@ -2185,5 +2185,2192 @@
     "trail": "cantares",
     "section": "cantares-amor-03-desafio-alianca-de-a",
     "id": "cantares-pro-cantares-amor-03-desafio-alianca-de-a-06"
+  },
+  {
+    "id": "cantares-sem-ct-03-beijos-01",
+    "trail": "cantares",
+    "section": "ct-03-beijos",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "A amada diz que o amor do amado é melhor do que o vinho.",
+    "prompt": "A amada diz que o amor do amado é melhor do que o vinho.",
+    "cue": "A amada diz que o amor do amado é melhor do que o vinho.",
+    "verseRef": "Cantares 1:2–4",
+    "learningObjective": "Sair sabendo que o cântico abre pelo desejo da presença do amado.",
+    "evidence": [
+      "Cantares 1:2–4"
+    ],
+    "feedbackCorrect": "Certo: o amor é posto acima do vinho.",
+    "feedbackWrong": {
+      "false": "O texto faz essa comparação logo no início."
+    },
+    "passageText": "Beije-me ele com os beijos de sua boca; Pois melhor é o teu amor do que o vinho. Os teus perfumes têm um odor suave, O teu nome é como unguento derramado, Por isso as donzelas te amam. Atrai-me tu; correremos após ti: O rei acaba de me introduzir nos seus aposentos; Nós nos alegraremos e regozijaremos em ti, Faremos menção do teu amor mais do que do vinho; É com razão que te amam.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "cantares-sem-ct-03-beijos-02",
+    "trail": "cantares",
+    "section": "ct-03-beijos",
+    "difficulty": "semente",
+    "type": "tap",
+    "skill": "observe",
+    "question": "Em Cantares 1:2–4, toque a palavra que falta em \"melhor é o teu ___ do que o vinho\"?",
+    "prompt": "Em Cantares 1:2–4, toque a palavra que falta em \"melhor é o teu ___ do que o vinho\"?",
+    "cue": "Em Cantares 1:2–4, toque a palavra que falta em \"melhor é o teu ___ do que o vinho\"?",
+    "verseRef": "Cantares 1:2–4",
+    "learningObjective": "Sair sabendo que o cântico abre pelo desejo da presença do amado.",
+    "evidence": [
+      "Cantares 1:2–4"
+    ],
+    "feedbackCorrect": "Exato: o amor é melhor do que o vinho.",
+    "feedbackWrong": {
+      "a": "O vinho é a comparação, não a lacuna.",
+      "c": "O nome vem depois, como unguento."
+    },
+    "passageText": "Beije-me ele com os beijos de sua boca; Pois melhor é o teu amor do que o vinho. Os teus perfumes têm um odor suave, O teu nome é como unguento derramado, Por isso as donzelas te amam. Atrai-me tu; correremos após ti: O rei acaba de me introduzir nos seus aposentos; Nós nos alegraremos e regozijaremos em ti, Faremos menção do teu amor mais do que do vinho; É com razão que te amam.",
+    "template": "melhor é o teu ___ do que o vinho",
+    "options": [
+      {
+        "id": "a",
+        "text": "vinho"
+      },
+      {
+        "id": "b",
+        "text": "amor"
+      },
+      {
+        "id": "c",
+        "text": "nome"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "cantares-sem-ct-03-beijos-03",
+    "trail": "cantares",
+    "section": "ct-03-beijos",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "O que a amada pede logo no início do cântico?",
+    "prompt": "O que a amada pede logo no início do cântico?",
+    "cue": "O que a amada pede logo no início do cântico?",
+    "verseRef": "Cantares 1:2–4",
+    "learningObjective": "Sair sabendo que o cântico abre pelo desejo da presença do amado.",
+    "evidence": [
+      "Cantares 1:2–4"
+    ],
+    "feedbackCorrect": "Certo: ela pede a presença, mais do que o vinho.",
+    "feedbackWrong": {
+      "b": "Ela pede aproximação, não distância.",
+      "c": "Não há contrato; há desejo e nome.",
+      "d": "O rei a introduz; o nome é celebrado."
+    },
+    "passageText": "Beije-me ele com os beijos de sua boca; Pois melhor é o teu amor do que o vinho. Os teus perfumes têm um odor suave, O teu nome é como unguento derramado, Por isso as donzelas te amam. Atrai-me tu; correremos após ti: O rei acaba de me introduzir nos seus aposentos; Nós nos alegraremos e regozijaremos em ti, Faremos menção do teu amor mais do que do vinho; É com razão que te amam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os beijos da boca, porque o amor vale mais que o vinho."
+      },
+      {
+        "id": "b",
+        "text": "Que o amado se afaste e a deixe em silêncio."
+      },
+      {
+        "id": "c",
+        "text": "Um contrato escrito diante das donzelas da corte."
+      },
+      {
+        "id": "d",
+        "text": "Que o rei feche os aposentos e apague o nome."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-sem-ct-03-beijos-04",
+    "trail": "cantares",
+    "section": "ct-03-beijos",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Qual é a ordem dos fatos em Cantares 1:2–4?",
+    "prompt": "Qual é a ordem dos fatos em Cantares 1:2–4?",
+    "cue": "Qual é a ordem dos fatos em Cantares 1:2–4?",
+    "verseRef": "Cantares 1:2–4",
+    "learningObjective": "Sair sabendo que o cântico abre pelo desejo da presença do amado.",
+    "evidence": [
+      "Cantares 1:2–4"
+    ],
+    "feedbackCorrect": "Certo: desejo, nome e então a casa do rei.",
+    "feedbackWrong": {
+      "b": "O nome vem depois da comparação com o vinho.",
+      "c": "Os aposentos fecham o movimento, não o abrem."
+    },
+    "passageText": "Beije-me ele com os beijos de sua boca; Pois melhor é o teu amor do que o vinho. Os teus perfumes têm um odor suave, O teu nome é como unguento derramado, Por isso as donzelas te amam. Atrai-me tu; correremos após ti: O rei acaba de me introduzir nos seus aposentos; Nós nos alegraremos e regozijaremos em ti, Faremos menção do teu amor mais do que do vinho; É com razão que te amam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A amada pede os beijos e põe o amor acima do vinho."
+      },
+      {
+        "id": "b",
+        "text": "O nome do amado é como unguento, e as donzelas o amam."
+      },
+      {
+        "id": "c",
+        "text": "Ela pede atração e entra nos aposentos do rei."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-sem-ct-03-beijos-05",
+    "trail": "cantares",
+    "section": "ct-03-beijos",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Complete a frase: \"Beije-me ele com os ___ de sua boca\"",
+    "prompt": "Complete a frase: \"Beije-me ele com os ___ de sua boca\"",
+    "cue": "Complete a frase: \"Beije-me ele com os ___ de sua boca\"",
+    "verseRef": "Cantares 1:2–4",
+    "learningObjective": "Sair sabendo que o cântico abre pelo desejo da presença do amado.",
+    "evidence": [
+      "Cantares 1:2–4"
+    ],
+    "feedbackCorrect": "Certo: o pedido começa pelos beijos.",
+    "feedbackWrong": {
+      "b": "Amor é a comparação com o vinho.",
+      "c": "Vinho não é o que ela pede na boca."
+    },
+    "passageText": "Beije-me ele com os beijos de sua boca; Pois melhor é o teu amor do que o vinho. Os teus perfumes têm um odor suave, O teu nome é como unguento derramado, Por isso as donzelas te amam. Atrai-me tu; correremos após ti: O rei acaba de me introduzir nos seus aposentos; Nós nos alegraremos e regozijaremos em ti, Faremos menção do teu amor mais do que do vinho; É com razão que te amam.",
+    "template": "Beije-me ele com os ___ de sua boca",
+    "options": [
+      {
+        "id": "a",
+        "text": "beijos"
+      },
+      {
+        "id": "b",
+        "text": "amor"
+      },
+      {
+        "id": "c",
+        "text": "vinho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-sem-ct-03-beijos-06",
+    "trail": "cantares",
+    "section": "ct-03-beijos",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Cantares 1:2–4 comunica que se liga a este contexto?",
+    "prompt": "O que Cantares 1:2–4 comunica que se liga a este contexto?",
+    "cue": "O que Cantares 1:2–4 comunica que se liga a este contexto?",
+    "verseRef": "Cantares 1:2–4",
+    "learningObjective": "Sair sabendo que o cântico abre pelo desejo da presença do amado.",
+    "evidence": [
+      "Cantares 1:2–4"
+    ],
+    "feedbackCorrect": "Certo: o trecho pede a pessoa do amado.",
+    "feedbackWrong": {
+      "b": "O vinho só serve de comparação.",
+      "c": "Não é crónica de corte; é desejo."
+    },
+    "passageText": "Beije-me ele com os beijos de sua boca; Pois melhor é o teu amor do que o vinho. Os teus perfumes têm um odor suave, O teu nome é como unguento derramado, Por isso as donzelas te amam. Atrai-me tu; correremos após ti: O rei acaba de me introduzir nos seus aposentos; Nós nos alegraremos e regozijaremos em ti, Faremos menção do teu amor mais do que do vinho; É com razão que te amam.",
+    "passageA": {
+      "ref": "Cantares 1:2–4",
+      "text": "Beije-me ele com os beijos de sua boca; Pois melhor é o teu amor do que o vinho. Os teus perfumes têm um odor suave, O teu nome é como unguento derramado, Por isso as donzelas te amam. Atrai-me tu; correremos após ti: O rei acaba de me introduzir nos seus aposentos; Nós nos alegraremos e regozijaremos em ti, Faremos menção do teu amor mais do que do vinho; É com razão que te amam."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O amor deseja a presença"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Desejo da presença"
+      },
+      {
+        "id": "b",
+        "text": "Preço do vinho"
+      },
+      {
+        "id": "c",
+        "text": "Festa da corte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-cam-ct-03-beijos-01",
+    "trail": "cantares",
+    "section": "ct-03-beijos",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "A amada pede distância e que o nome do amado fique escondido.",
+    "prompt": "A amada pede distância e que o nome do amado fique escondido.",
+    "cue": "A amada pede distância e que o nome do amado fique escondido.",
+    "verseRef": "Cantares 1:2–4",
+    "learningObjective": "Sair sabendo que o cântico abre pelo desejo da presença do amado.",
+    "evidence": [
+      "Cantares 1:2–4"
+    ],
+    "feedbackCorrect": "Certo: ela pede beijos, atração e os aposentos.",
+    "feedbackWrong": {
+      "true": "O nome é unguento derramado, e ela pede para ser atraída."
+    },
+    "passageText": "Beije-me ele com os beijos de sua boca; Pois melhor é o teu amor do que o vinho. Os teus perfumes têm um odor suave, O teu nome é como unguento derramado, Por isso as donzelas te amam. Atrai-me tu; correremos após ti: O rei acaba de me introduzir nos seus aposentos; Nós nos alegraremos e regozijaremos em ti, Faremos menção do teu amor mais do que do vinho; É com razão que te amam.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "id": "cantares-cam-ct-03-beijos-02",
+    "trail": "cantares",
+    "section": "ct-03-beijos",
+    "difficulty": "caminhada",
+    "type": "tap",
+    "skill": "understand",
+    "question": "Em Cantares 1:2–4, toque a palavra que falta em \"O teu ___ é como unguento derramado\"?",
+    "prompt": "Em Cantares 1:2–4, toque a palavra que falta em \"O teu ___ é como unguento derramado\"?",
+    "cue": "Em Cantares 1:2–4, toque a palavra que falta em \"O teu ___ é como unguento derramado\"?",
+    "verseRef": "Cantares 1:2–4",
+    "learningObjective": "Sair sabendo que o cântico abre pelo desejo da presença do amado.",
+    "evidence": [
+      "Cantares 1:2–4"
+    ],
+    "feedbackCorrect": "Exato: o nome é como unguento derramado.",
+    "feedbackWrong": {
+      "a": "Amor já foi comparado ao vinho.",
+      "c": "O rei aparece na entrada dos aposentos."
+    },
+    "passageText": "Beije-me ele com os beijos de sua boca; Pois melhor é o teu amor do que o vinho. Os teus perfumes têm um odor suave, O teu nome é como unguento derramado, Por isso as donzelas te amam. Atrai-me tu; correremos após ti: O rei acaba de me introduzir nos seus aposentos; Nós nos alegraremos e regozijaremos em ti, Faremos menção do teu amor mais do que do vinho; É com razão que te amam.",
+    "template": "O teu ___ é como unguento derramado",
+    "options": [
+      {
+        "id": "a",
+        "text": "amor"
+      },
+      {
+        "id": "b",
+        "text": "nome"
+      },
+      {
+        "id": "c",
+        "text": "rei"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "cantares-cam-ct-03-beijos-03",
+    "trail": "cantares",
+    "section": "ct-03-beijos",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como se ligam boca, nome e aposentos neste começo?",
+    "prompt": "Como se ligam boca, nome e aposentos neste começo?",
+    "cue": "Como se ligam boca, nome e aposentos neste começo?",
+    "verseRef": "Cantares 1:2–4",
+    "learningObjective": "Sair sabendo que o cântico abre pelo desejo da presença do amado.",
+    "evidence": [
+      "Cantares 1:2–4"
+    ],
+    "feedbackCorrect": "Certo: o desejo caminha até a presença.",
+    "feedbackWrong": {
+      "b": "Os aposentos são o destino do pedido.",
+      "c": "O amado é o centro, não uma ilustração.",
+      "d": "As donzelas amam o nome; não bloqueiam a porta."
+    },
+    "passageText": "Beije-me ele com os beijos de sua boca; Pois melhor é o teu amor do que o vinho. Os teus perfumes têm um odor suave, O teu nome é como unguento derramado, Por isso as donzelas te amam. Atrai-me tu; correremos após ti: O rei acaba de me introduzir nos seus aposentos; Nós nos alegraremos e regozijaremos em ti, Faremos menção do teu amor mais do que do vinho; É com razão que te amam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O desejo vai da boca ao nome e chega à presença."
+      },
+      {
+        "id": "b",
+        "text": "O nome substitui a presença e dispensa os aposentos."
+      },
+      {
+        "id": "c",
+        "text": "O vinho é o tema, e o amado só ilustra a festa."
+      },
+      {
+        "id": "d",
+        "text": "As donzelas impedem a entrada na casa do rei."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-cam-ct-03-beijos-04",
+    "trail": "cantares",
+    "section": "ct-03-beijos",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Cantares 1:2–4?",
+    "prompt": "Como se encadeiam os eventos de Cantares 1:2–4?",
+    "cue": "Como se encadeiam os eventos de Cantares 1:2–4?",
+    "verseRef": "Cantares 1:2–4",
+    "learningObjective": "Sair sabendo que o cântico abre pelo desejo da presença do amado.",
+    "evidence": [
+      "Cantares 1:2–4"
+    ],
+    "feedbackCorrect": "Certo: desejo, nome e então a casa do rei.",
+    "feedbackWrong": {
+      "b": "O nome vem depois da comparação com o vinho.",
+      "c": "Os aposentos fecham o movimento, não o abrem."
+    },
+    "passageText": "Beije-me ele com os beijos de sua boca; Pois melhor é o teu amor do que o vinho. Os teus perfumes têm um odor suave, O teu nome é como unguento derramado, Por isso as donzelas te amam. Atrai-me tu; correremos após ti: O rei acaba de me introduzir nos seus aposentos; Nós nos alegraremos e regozijaremos em ti, Faremos menção do teu amor mais do que do vinho; É com razão que te amam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A amada pede os beijos e põe o amor acima do vinho."
+      },
+      {
+        "id": "b",
+        "text": "O nome do amado é como unguento, e as donzelas o amam."
+      },
+      {
+        "id": "c",
+        "text": "Ela pede atração e entra nos aposentos do rei."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-cam-ct-03-beijos-05",
+    "trail": "cantares",
+    "section": "ct-03-beijos",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Complete a frase: \"Por isso as ___ te amam\"",
+    "prompt": "Complete a frase: \"Por isso as ___ te amam\"",
+    "cue": "Complete a frase: \"Por isso as ___ te amam\"",
+    "verseRef": "Cantares 1:2–4",
+    "learningObjective": "Sair sabendo que o cântico abre pelo desejo da presença do amado.",
+    "evidence": [
+      "Cantares 1:2–4"
+    ],
+    "feedbackCorrect": "Certo: as donzelas amam o nome derramado.",
+    "feedbackWrong": {
+      "b": "Beijos são o pedido da amada.",
+      "c": "O rei a introduz; não é o sujeito desta frase."
+    },
+    "passageText": "Beije-me ele com os beijos de sua boca; Pois melhor é o teu amor do que o vinho. Os teus perfumes têm um odor suave, O teu nome é como unguento derramado, Por isso as donzelas te amam. Atrai-me tu; correremos após ti: O rei acaba de me introduzir nos seus aposentos; Nós nos alegraremos e regozijaremos em ti, Faremos menção do teu amor mais do que do vinho; É com razão que te amam.",
+    "template": "Por isso as ___ te amam",
+    "options": [
+      {
+        "id": "a",
+        "text": "donzelas"
+      },
+      {
+        "id": "b",
+        "text": "beijos"
+      },
+      {
+        "id": "c",
+        "text": "rei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-cam-ct-03-beijos-06",
+    "trail": "cantares",
+    "section": "ct-03-beijos",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "Que relação Cantares 1:2–4 estabelece com este contexto?",
+    "prompt": "Que relação Cantares 1:2–4 estabelece com este contexto?",
+    "cue": "Que relação Cantares 1:2–4 estabelece com este contexto?",
+    "verseRef": "Cantares 1:2–4",
+    "learningObjective": "Sair sabendo que o cântico abre pelo desejo da presença do amado.",
+    "evidence": [
+      "Cantares 1:2–4"
+    ],
+    "feedbackCorrect": "Certo: ela pede ser atraída até os aposentos.",
+    "feedbackWrong": {
+      "a": "O nome é derramado, não escondido.",
+      "c": "O vinho fica abaixo do amor."
+    },
+    "passageText": "Beije-me ele com os beijos de sua boca; Pois melhor é o teu amor do que o vinho. Os teus perfumes têm um odor suave, O teu nome é como unguento derramado, Por isso as donzelas te amam. Atrai-me tu; correremos após ti: O rei acaba de me introduzir nos seus aposentos; Nós nos alegraremos e regozijaremos em ti, Faremos menção do teu amor mais do que do vinho; É com razão que te amam.",
+    "passageA": {
+      "ref": "Cantares 1:2–4",
+      "text": "Beije-me ele com os beijos de sua boca; Pois melhor é o teu amor do que o vinho. Os teus perfumes têm um odor suave, O teu nome é como unguento derramado, Por isso as donzelas te amam. Atrai-me tu; correremos após ti: O rei acaba de me introduzir nos seus aposentos; Nós nos alegraremos e regozijaremos em ti, Faremos menção do teu amor mais do que do vinho; É com razão que te amam."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O amor deseja a presença"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Nome que se esconde"
+      },
+      {
+        "id": "b",
+        "text": "Amor que atrai"
+      },
+      {
+        "id": "c",
+        "text": "Vinho como senhor"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "cantares-pro-ct-03-beijos-01",
+    "trail": "cantares",
+    "section": "ct-03-beijos",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "O nome comparado a unguento mostra um amor que se espalha.",
+    "prompt": "O nome comparado a unguento mostra um amor que se espalha.",
+    "cue": "O nome comparado a unguento mostra um amor que se espalha.",
+    "verseRef": "Cantares 1:2–4",
+    "learningObjective": "Sair sabendo que o cântico abre pelo desejo da presença do amado.",
+    "evidence": [
+      "Cantares 1:2–4"
+    ],
+    "feedbackCorrect": "Certo: unguento derramado espalha, e as donzelas amam.",
+    "feedbackWrong": {
+      "false": "O odor do nome alcança as donzelas; não fica guardado."
+    },
+    "passageText": "Beije-me ele com os beijos de sua boca; Pois melhor é o teu amor do que o vinho. Os teus perfumes têm um odor suave, O teu nome é como unguento derramado, Por isso as donzelas te amam. Atrai-me tu; correremos após ti: O rei acaba de me introduzir nos seus aposentos; Nós nos alegraremos e regozijaremos em ti, Faremos menção do teu amor mais do que do vinho; É com razão que te amam.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "cantares-pro-ct-03-beijos-02",
+    "trail": "cantares",
+    "section": "ct-03-beijos",
+    "difficulty": "profundezas",
+    "type": "tap",
+    "skill": "interpret",
+    "question": "Em Cantares 1:2–4, toque a palavra que falta em \"O ___ acaba de me introduzir nos seus aposentos\"?",
+    "prompt": "Em Cantares 1:2–4, toque a palavra que falta em \"O ___ acaba de me introduzir nos seus aposentos\"?",
+    "cue": "Em Cantares 1:2–4, toque a palavra que falta em \"O ___ acaba de me introduzir nos seus aposentos\"?",
+    "verseRef": "Cantares 1:2–4",
+    "learningObjective": "Sair sabendo que o cântico abre pelo desejo da presença do amado.",
+    "evidence": [
+      "Cantares 1:2–4"
+    ],
+    "feedbackCorrect": "Exato: o rei a introduz nos aposentos.",
+    "feedbackWrong": {
+      "a": "O nome é unguento, não quem abre a porta.",
+      "c": "O vinho é a comparação do amor."
+    },
+    "passageText": "Beije-me ele com os beijos de sua boca; Pois melhor é o teu amor do que o vinho. Os teus perfumes têm um odor suave, O teu nome é como unguento derramado, Por isso as donzelas te amam. Atrai-me tu; correremos após ti: O rei acaba de me introduzir nos seus aposentos; Nós nos alegraremos e regozijaremos em ti, Faremos menção do teu amor mais do que do vinho; É com razão que te amam.",
+    "template": "O ___ acaba de me introduzir nos seus aposentos",
+    "options": [
+      {
+        "id": "a",
+        "text": "nome"
+      },
+      {
+        "id": "b",
+        "text": "rei"
+      },
+      {
+        "id": "c",
+        "text": "vinho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "cantares-pro-ct-03-beijos-03",
+    "trail": "cantares",
+    "section": "ct-03-beijos",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "O que este começo ensina sobre o amor que o poema canta?",
+    "prompt": "O que este começo ensina sobre o amor que o poema canta?",
+    "cue": "O que este começo ensina sobre o amor que o poema canta?",
+    "verseRef": "Cantares 1:2–4",
+    "learningObjective": "Sair sabendo que o cântico abre pelo desejo da presença do amado.",
+    "evidence": [
+      "Cantares 1:2–4"
+    ],
+    "feedbackCorrect": "Certo: amor de verdade deseja a pessoa.",
+    "feedbackWrong": {
+      "b": "Ela pede presença, não fama no lugar da pessoa.",
+      "c": "O nome é derramado, não oculto.",
+      "d": "O texto põe o amor acima do vinho."
+    },
+    "passageText": "Beije-me ele com os beijos de sua boca; Pois melhor é o teu amor do que o vinho. Os teus perfumes têm um odor suave, O teu nome é como unguento derramado, Por isso as donzelas te amam. Atrai-me tu; correremos após ti: O rei acaba de me introduzir nos seus aposentos; Nós nos alegraremos e regozijaremos em ti, Faremos menção do teu amor mais do que do vinho; É com razão que te amam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor de verdade deseja a pessoa, não só o benefício."
+      },
+      {
+        "id": "b",
+        "text": "O amor maduro dispensa presença e se contenta com fama."
+      },
+      {
+        "id": "c",
+        "text": "O nome do amado deve ficar oculto para ser santo."
+      },
+      {
+        "id": "d",
+        "text": "O desejo da boca torna o amor inferior ao vinho."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-pro-ct-03-beijos-04",
+    "trail": "cantares",
+    "section": "ct-03-beijos",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Cantares 1:2–4?",
+    "prompt": "Qual sequência revela o sentido de Cantares 1:2–4?",
+    "cue": "Qual sequência revela o sentido de Cantares 1:2–4?",
+    "verseRef": "Cantares 1:2–4",
+    "learningObjective": "Sair sabendo que o cântico abre pelo desejo da presença do amado.",
+    "evidence": [
+      "Cantares 1:2–4"
+    ],
+    "feedbackCorrect": "Certo: desejo, nome e então a casa do rei.",
+    "feedbackWrong": {
+      "b": "O nome vem depois da comparação com o vinho.",
+      "c": "Os aposentos fecham o movimento, não o abrem."
+    },
+    "passageText": "Beije-me ele com os beijos de sua boca; Pois melhor é o teu amor do que o vinho. Os teus perfumes têm um odor suave, O teu nome é como unguento derramado, Por isso as donzelas te amam. Atrai-me tu; correremos após ti: O rei acaba de me introduzir nos seus aposentos; Nós nos alegraremos e regozijaremos em ti, Faremos menção do teu amor mais do que do vinho; É com razão que te amam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A amada pede os beijos e põe o amor acima do vinho."
+      },
+      {
+        "id": "b",
+        "text": "O nome do amado é como unguento, e as donzelas o amam."
+      },
+      {
+        "id": "c",
+        "text": "Ela pede atração e entra nos aposentos do rei."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-pro-ct-03-beijos-05",
+    "trail": "cantares",
+    "section": "ct-03-beijos",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Complete a frase: \"Os teus ___ têm um odor suave\"",
+    "prompt": "Complete a frase: \"Os teus ___ têm um odor suave\"",
+    "cue": "Complete a frase: \"Os teus ___ têm um odor suave\"",
+    "verseRef": "Cantares 1:2–4",
+    "learningObjective": "Sair sabendo que o cântico abre pelo desejo da presença do amado.",
+    "evidence": [
+      "Cantares 1:2–4"
+    ],
+    "feedbackCorrect": "Certo: os perfumes têm odor suave.",
+    "feedbackWrong": {
+      "b": "Donzelas amam; não são o odor.",
+      "c": "Aposentos são o lugar da entrada."
+    },
+    "passageText": "Beije-me ele com os beijos de sua boca; Pois melhor é o teu amor do que o vinho. Os teus perfumes têm um odor suave, O teu nome é como unguento derramado, Por isso as donzelas te amam. Atrai-me tu; correremos após ti: O rei acaba de me introduzir nos seus aposentos; Nós nos alegraremos e regozijaremos em ti, Faremos menção do teu amor mais do que do vinho; É com razão que te amam.",
+    "template": "Os teus ___ têm um odor suave",
+    "options": [
+      {
+        "id": "a",
+        "text": "perfumes"
+      },
+      {
+        "id": "b",
+        "text": "donzelas"
+      },
+      {
+        "id": "c",
+        "text": "aposentos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-pro-ct-03-beijos-06",
+    "trail": "cantares",
+    "section": "ct-03-beijos",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "Que sentido de Cantares 1:2–4 se liga a este contexto?",
+    "prompt": "Que sentido de Cantares 1:2–4 se liga a este contexto?",
+    "cue": "Que sentido de Cantares 1:2–4 se liga a este contexto?",
+    "verseRef": "Cantares 1:2–4",
+    "learningObjective": "Sair sabendo que o cântico abre pelo desejo da presença do amado.",
+    "evidence": [
+      "Cantares 1:2–4"
+    ],
+    "feedbackCorrect": "Certo: o sentido é a presença, não a fama só.",
+    "feedbackWrong": {
+      "a": "Fama sem pessoa não é o pedido.",
+      "b": "O nome se espalha; não se cala."
+    },
+    "passageText": "Beije-me ele com os beijos de sua boca; Pois melhor é o teu amor do que o vinho. Os teus perfumes têm um odor suave, O teu nome é como unguento derramado, Por isso as donzelas te amam. Atrai-me tu; correremos após ti: O rei acaba de me introduzir nos seus aposentos; Nós nos alegraremos e regozijaremos em ti, Faremos menção do teu amor mais do que do vinho; É com razão que te amam.",
+    "passageA": {
+      "ref": "Cantares 1:2–4",
+      "text": "Beije-me ele com os beijos de sua boca; Pois melhor é o teu amor do que o vinho. Os teus perfumes têm um odor suave, O teu nome é como unguento derramado, Por isso as donzelas te amam. Atrai-me tu; correremos após ti: O rei acaba de me introduzir nos seus aposentos; Nós nos alegraremos e regozijaremos em ti, Faremos menção do teu amor mais do que do vinho; É com razão que te amam."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O amor deseja a presença"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fama sem pessoa"
+      },
+      {
+        "id": "b",
+        "text": "Silêncio do nome"
+      },
+      {
+        "id": "c",
+        "text": "Presença desejada"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "id": "cantares-sem-ct-04-pertence-01",
+    "trail": "cantares",
+    "section": "ct-04-pertence",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "A amada diz que o amado é dela e que ela é dele.",
+    "prompt": "A amada diz que o amado é dela e que ela é dele.",
+    "cue": "A amada diz que o amado é dela e que ela é dele.",
+    "verseRef": "Cantares 2:16",
+    "learningObjective": "Sair sabendo que o cântico fala de pertença dos dois lados.",
+    "evidence": [
+      "Cantares 2:16"
+    ],
+    "feedbackCorrect": "Certo: a frase é dos dois lados.",
+    "feedbackWrong": {
+      "false": "O versículo une “é meu” e “sou dele”."
+    },
+    "passageText": "O meu amado é meu, e eu sou dele; Ele apascenta o seu rebanho entre as açucenas.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "cantares-sem-ct-04-pertence-02",
+    "trail": "cantares",
+    "section": "ct-04-pertence",
+    "difficulty": "semente",
+    "type": "tap",
+    "skill": "observe",
+    "question": "Em Cantares 2:16, toque a palavra que falta em \"O meu ___ é meu, e eu sou dele\"?",
+    "prompt": "Em Cantares 2:16, toque a palavra que falta em \"O meu ___ é meu, e eu sou dele\"?",
+    "cue": "Em Cantares 2:16, toque a palavra que falta em \"O meu ___ é meu, e eu sou dele\"?",
+    "verseRef": "Cantares 2:16",
+    "learningObjective": "Sair sabendo que o cântico fala de pertença dos dois lados.",
+    "evidence": [
+      "Cantares 2:16"
+    ],
+    "feedbackCorrect": "Exato: o meu amado é meu.",
+    "feedbackWrong": {
+      "a": "O rebanho vem na frase seguinte.",
+      "c": "Açucenas são o pasto, não o sujeito."
+    },
+    "passageText": "O meu amado é meu, e eu sou dele; Ele apascenta o seu rebanho entre as açucenas.",
+    "template": "O meu ___ é meu, e eu sou dele",
+    "options": [
+      {
+        "id": "a",
+        "text": "rebanho"
+      },
+      {
+        "id": "b",
+        "text": "amado"
+      },
+      {
+        "id": "c",
+        "text": "açucenas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "cantares-sem-ct-04-pertence-03",
+    "trail": "cantares",
+    "section": "ct-04-pertence",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "O que Cantares 2:16 afirma sobre os dois?",
+    "prompt": "O que Cantares 2:16 afirma sobre os dois?",
+    "cue": "O que Cantares 2:16 afirma sobre os dois?",
+    "verseRef": "Cantares 2:16",
+    "learningObjective": "Sair sabendo que o cântico fala de pertença dos dois lados.",
+    "evidence": [
+      "Cantares 2:16"
+    ],
+    "feedbackCorrect": "Certo: a pertença é dos dois lados.",
+    "feedbackWrong": {
+      "b": "O versículo também diz que ele é dela.",
+      "c": "O rebanho é dele; a frase é sobre os dois.",
+      "d": "As açucenas são o pasto, não o amado."
+    },
+    "passageText": "O meu amado é meu, e eu sou dele; Ele apascenta o seu rebanho entre as açucenas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O amado é dela, e ela é dele."
+      },
+      {
+        "id": "b",
+        "text": "Só ela pertence a ele; ele permanece livre."
+      },
+      {
+        "id": "c",
+        "text": "O rebanho é dela, e o amado fica de fora."
+      },
+      {
+        "id": "d",
+        "text": "As açucenas substituem o amado no poema."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-sem-ct-04-pertence-04",
+    "trail": "cantares",
+    "section": "ct-04-pertence",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Qual é a ordem dos fatos em Cantares 2:16?",
+    "prompt": "Qual é a ordem dos fatos em Cantares 2:16?",
+    "cue": "Qual é a ordem dos fatos em Cantares 2:16?",
+    "verseRef": "Cantares 2:16",
+    "learningObjective": "Sair sabendo que o cântico fala de pertença dos dois lados.",
+    "evidence": [
+      "Cantares 2:16"
+    ],
+    "feedbackCorrect": "Certo: pertença dela, pertença dele, depois o pastoreio.",
+    "feedbackWrong": {
+      "b": "“Eu sou dele” responde ao “é meu”, não vem antes.",
+      "c": "O rebanho fecha o versículo, não o abre."
+    },
+    "passageText": "O meu amado é meu, e eu sou dele; Ele apascenta o seu rebanho entre as açucenas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela diz: o meu amado é meu."
+      },
+      {
+        "id": "b",
+        "text": "E completa: eu sou dele."
+      },
+      {
+        "id": "c",
+        "text": "Ele apascenta o rebanho entre as açucenas."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-sem-ct-04-pertence-05",
+    "trail": "cantares",
+    "section": "ct-04-pertence",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Complete a frase: \"Ele apascenta o seu ___ entre as açucenas\"",
+    "prompt": "Complete a frase: \"Ele apascenta o seu ___ entre as açucenas\"",
+    "cue": "Complete a frase: \"Ele apascenta o seu ___ entre as açucenas\"",
+    "verseRef": "Cantares 2:16",
+    "learningObjective": "Sair sabendo que o cântico fala de pertença dos dois lados.",
+    "evidence": [
+      "Cantares 2:16"
+    ],
+    "feedbackCorrect": "Certo: o rebanho é o que ele apascenta.",
+    "feedbackWrong": {
+      "b": "Amado é o pastor, não o rebanho.",
+      "c": "Dele é a pertença, não o gado."
+    },
+    "passageText": "O meu amado é meu, e eu sou dele; Ele apascenta o seu rebanho entre as açucenas.",
+    "template": "Ele apascenta o seu ___ entre as açucenas",
+    "options": [
+      {
+        "id": "a",
+        "text": "rebanho"
+      },
+      {
+        "id": "b",
+        "text": "amado"
+      },
+      {
+        "id": "c",
+        "text": "dele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-sem-ct-04-pertence-06",
+    "trail": "cantares",
+    "section": "ct-04-pertence",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Cantares 2:16 comunica que se liga a este contexto?",
+    "prompt": "O que Cantares 2:16 comunica que se liga a este contexto?",
+    "cue": "O que Cantares 2:16 comunica que se liga a este contexto?",
+    "verseRef": "Cantares 2:16",
+    "learningObjective": "Sair sabendo que o cântico fala de pertença dos dois lados.",
+    "evidence": [
+      "Cantares 2:16"
+    ],
+    "feedbackCorrect": "Certo: o versículo é aliança dos dois lados.",
+    "feedbackWrong": {
+      "b": "Há pastor e rebanho, não pasto vazio.",
+      "c": "Vinho não entra neste versículo."
+    },
+    "passageText": "O meu amado é meu, e eu sou dele; Ele apascenta o seu rebanho entre as açucenas.",
+    "passageA": {
+      "ref": "Cantares 2:16",
+      "text": "O meu amado é meu, e eu sou dele; Ele apascenta o seu rebanho entre as açucenas."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Amor de aliança é pertença mútua"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pertença mútua"
+      },
+      {
+        "id": "b",
+        "text": "Pasto sem dono"
+      },
+      {
+        "id": "c",
+        "text": "Festa do vinho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-cam-ct-04-pertence-01",
+    "trail": "cantares",
+    "section": "ct-04-pertence",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "O amado aparece longe do rebanho, sem lugar de pasto.",
+    "prompt": "O amado aparece longe do rebanho, sem lugar de pasto.",
+    "cue": "O amado aparece longe do rebanho, sem lugar de pasto.",
+    "verseRef": "Cantares 2:16",
+    "learningObjective": "Sair sabendo que o cântico fala de pertença dos dois lados.",
+    "evidence": [
+      "Cantares 2:16"
+    ],
+    "feedbackCorrect": "Certo: ele apascenta entre as açucenas.",
+    "feedbackWrong": {
+      "true": "O texto o põe com o rebanho, não afastado."
+    },
+    "passageText": "O meu amado é meu, e eu sou dele; Ele apascenta o seu rebanho entre as açucenas.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "id": "cantares-cam-ct-04-pertence-02",
+    "trail": "cantares",
+    "section": "ct-04-pertence",
+    "difficulty": "caminhada",
+    "type": "tap",
+    "skill": "understand",
+    "question": "Em Cantares 2:16, toque a palavra que falta em \"entre as ___\"?",
+    "prompt": "Em Cantares 2:16, toque a palavra que falta em \"entre as ___\"?",
+    "cue": "Em Cantares 2:16, toque a palavra que falta em \"entre as ___\"?",
+    "verseRef": "Cantares 2:16",
+    "learningObjective": "Sair sabendo que o cântico fala de pertença dos dois lados.",
+    "evidence": [
+      "Cantares 2:16"
+    ],
+    "feedbackCorrect": "Exato: o rebanho está entre as açucenas.",
+    "feedbackWrong": {
+      "a": "Amado é o pastor, não o lugar.",
+      "c": "Dele fecha a pertença, não o pasto."
+    },
+    "passageText": "O meu amado é meu, e eu sou dele; Ele apascenta o seu rebanho entre as açucenas.",
+    "template": "entre as ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "amado"
+      },
+      {
+        "id": "b",
+        "text": "açucenas"
+      },
+      {
+        "id": "c",
+        "text": "dele"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "cantares-cam-ct-04-pertence-03",
+    "trail": "cantares",
+    "section": "ct-04-pertence",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "O que a imagem do rebanho acrescenta à frase de pertença?",
+    "prompt": "O que a imagem do rebanho acrescenta à frase de pertença?",
+    "cue": "O que a imagem do rebanho acrescenta à frase de pertença?",
+    "verseRef": "Cantares 2:16",
+    "learningObjective": "Sair sabendo que o cântico fala de pertença dos dois lados.",
+    "evidence": [
+      "Cantares 2:16"
+    ],
+    "feedbackCorrect": "Certo: pertença aqui também é cuidado.",
+    "feedbackWrong": {
+      "b": "O pasto é presença, não abandono.",
+      "c": "Ele está com o rebanho, como pastor.",
+      "d": "A imagem confirma o cuidado, não o anula."
+    },
+    "passageText": "O meu amado é meu, e eu sou dele; Ele apascenta o seu rebanho entre as açucenas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele não só é dela: ele apascenta."
+      },
+      {
+        "id": "b",
+        "text": "O pasto mostra que o amor acabou em distância."
+      },
+      {
+        "id": "c",
+        "text": "O rebanho prova que ela ficou sem pastor."
+      },
+      {
+        "id": "d",
+        "text": "As açucenas anulam a frase “eu sou dele”."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-cam-ct-04-pertence-04",
+    "trail": "cantares",
+    "section": "ct-04-pertence",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Cantares 2:16?",
+    "prompt": "Como se encadeiam os eventos de Cantares 2:16?",
+    "cue": "Como se encadeiam os eventos de Cantares 2:16?",
+    "verseRef": "Cantares 2:16",
+    "learningObjective": "Sair sabendo que o cântico fala de pertença dos dois lados.",
+    "evidence": [
+      "Cantares 2:16"
+    ],
+    "feedbackCorrect": "Certo: pertença dela, pertença dele, depois o pastoreio.",
+    "feedbackWrong": {
+      "b": "“Eu sou dele” responde ao “é meu”, não vem antes.",
+      "c": "O rebanho fecha o versículo, não o abre."
+    },
+    "passageText": "O meu amado é meu, e eu sou dele; Ele apascenta o seu rebanho entre as açucenas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela diz: o meu amado é meu."
+      },
+      {
+        "id": "b",
+        "text": "E completa: eu sou dele."
+      },
+      {
+        "id": "c",
+        "text": "Ele apascenta o rebanho entre as açucenas."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-cam-ct-04-pertence-05",
+    "trail": "cantares",
+    "section": "ct-04-pertence",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Complete a frase: \"e eu sou ___\"",
+    "prompt": "Complete a frase: \"e eu sou ___\"",
+    "cue": "Complete a frase: \"e eu sou ___\"",
+    "verseRef": "Cantares 2:16",
+    "learningObjective": "Sair sabendo que o cântico fala de pertença dos dois lados.",
+    "evidence": [
+      "Cantares 2:16"
+    ],
+    "feedbackCorrect": "Certo: ela também é dele.",
+    "feedbackWrong": {
+      "b": "Rebanho não completa “eu sou”.",
+      "c": "Açucenas são o lugar do pasto."
+    },
+    "passageText": "O meu amado é meu, e eu sou dele; Ele apascenta o seu rebanho entre as açucenas.",
+    "template": "e eu sou ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "dele"
+      },
+      {
+        "id": "b",
+        "text": "rebanho"
+      },
+      {
+        "id": "c",
+        "text": "açucenas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-cam-ct-04-pertence-06",
+    "trail": "cantares",
+    "section": "ct-04-pertence",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "Que relação Cantares 2:16 estabelece com este contexto?",
+    "prompt": "Que relação Cantares 2:16 estabelece com este contexto?",
+    "cue": "Que relação Cantares 2:16 estabelece com este contexto?",
+    "verseRef": "Cantares 2:16",
+    "learningObjective": "Sair sabendo que o cântico fala de pertença dos dois lados.",
+    "evidence": [
+      "Cantares 2:16"
+    ],
+    "feedbackCorrect": "Certo: apascentar é o cuidado da pertença.",
+    "feedbackWrong": {
+      "b": "Ele está no pasto, não em fuga.",
+      "c": "Não há troca; há o rebanho dele."
+    },
+    "passageText": "O meu amado é meu, e eu sou dele; Ele apascenta o seu rebanho entre as açucenas.",
+    "passageA": {
+      "ref": "Cantares 2:16",
+      "text": "O meu amado é meu, e eu sou dele; Ele apascenta o seu rebanho entre as açucenas."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Amor de aliança é pertença mútua"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cuidado do pastor"
+      },
+      {
+        "id": "b",
+        "text": "Fuga do amado"
+      },
+      {
+        "id": "c",
+        "text": "Troca de rebanho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-pro-ct-04-pertence-01",
+    "trail": "cantares",
+    "section": "ct-04-pertence",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "A pertença do cântico é mútua, não domínio de um lado só.",
+    "prompt": "A pertença do cântico é mútua, não domínio de um lado só.",
+    "cue": "A pertença do cântico é mútua, não domínio de um lado só.",
+    "verseRef": "Cantares 2:16",
+    "learningObjective": "Sair sabendo que o cântico fala de pertença dos dois lados.",
+    "evidence": [
+      "Cantares 2:16"
+    ],
+    "feedbackCorrect": "Certo: os dois se nomeiam um do outro.",
+    "feedbackWrong": {
+      "false": "“Meu” e “dele” fecham o círculo da aliança."
+    },
+    "passageText": "O meu amado é meu, e eu sou dele; Ele apascenta o seu rebanho entre as açucenas.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "cantares-pro-ct-04-pertence-02",
+    "trail": "cantares",
+    "section": "ct-04-pertence",
+    "difficulty": "profundezas",
+    "type": "tap",
+    "skill": "interpret",
+    "question": "Em Cantares 2:16, toque a palavra que falta em \"Ele ___ o seu rebanho\"?",
+    "prompt": "Em Cantares 2:16, toque a palavra que falta em \"Ele ___ o seu rebanho\"?",
+    "cue": "Em Cantares 2:16, toque a palavra que falta em \"Ele ___ o seu rebanho\"?",
+    "verseRef": "Cantares 2:16",
+    "learningObjective": "Sair sabendo que o cântico fala de pertença dos dois lados.",
+    "evidence": [
+      "Cantares 2:16"
+    ],
+    "feedbackCorrect": "Exato: ele apascenta o rebanho.",
+    "feedbackWrong": {
+      "a": "Amado é quem faz, não o verbo.",
+      "c": "Açucenas são o lugar do pasto."
+    },
+    "passageText": "O meu amado é meu, e eu sou dele; Ele apascenta o seu rebanho entre as açucenas.",
+    "template": "Ele ___ o seu rebanho",
+    "options": [
+      {
+        "id": "a",
+        "text": "amado"
+      },
+      {
+        "id": "b",
+        "text": "apascenta"
+      },
+      {
+        "id": "c",
+        "text": "açucenas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "cantares-pro-ct-04-pertence-03",
+    "trail": "cantares",
+    "section": "ct-04-pertence",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura a frase “meu” e “dele” sustenta?",
+    "prompt": "Que leitura a frase “meu” e “dele” sustenta?",
+    "cue": "Que leitura a frase “meu” e “dele” sustenta?",
+    "verseRef": "Cantares 2:16",
+    "learningObjective": "Sair sabendo que o cântico fala de pertença dos dois lados.",
+    "evidence": [
+      "Cantares 2:16"
+    ],
+    "feedbackCorrect": "Certo: aliança não é posse de um lado só.",
+    "feedbackWrong": {
+      "b": "O poema diz “meu” sem vergonha.",
+      "c": "O pastor e a amada estão na mesma frase.",
+      "d": "Mútuo não apaga quem é quem."
+    },
+    "passageText": "O meu amado é meu, e eu sou dele; Ele apascenta o seu rebanho entre as açucenas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aliança verdadeira é pertença mútua."
+      },
+      {
+        "id": "b",
+        "text": "Amor maduro evita dizer “meu” para não prender."
+      },
+      {
+        "id": "c",
+        "text": "O pastor cuida do campo e dispensa a amada."
+      },
+      {
+        "id": "d",
+        "text": "Pertença mútua é o mesmo que perder a diferença."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-pro-ct-04-pertence-04",
+    "trail": "cantares",
+    "section": "ct-04-pertence",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Cantares 2:16?",
+    "prompt": "Qual sequência revela o sentido de Cantares 2:16?",
+    "cue": "Qual sequência revela o sentido de Cantares 2:16?",
+    "verseRef": "Cantares 2:16",
+    "learningObjective": "Sair sabendo que o cântico fala de pertença dos dois lados.",
+    "evidence": [
+      "Cantares 2:16"
+    ],
+    "feedbackCorrect": "Certo: pertença dela, pertença dele, depois o pastoreio.",
+    "feedbackWrong": {
+      "b": "“Eu sou dele” responde ao “é meu”, não vem antes.",
+      "c": "O rebanho fecha o versículo, não o abre."
+    },
+    "passageText": "O meu amado é meu, e eu sou dele; Ele apascenta o seu rebanho entre as açucenas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela diz: o meu amado é meu."
+      },
+      {
+        "id": "b",
+        "text": "E completa: eu sou dele."
+      },
+      {
+        "id": "c",
+        "text": "Ele apascenta o rebanho entre as açucenas."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-pro-ct-04-pertence-05",
+    "trail": "cantares",
+    "section": "ct-04-pertence",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Complete a frase: \"Ele apascenta ___ rebanho entre as açucenas\"",
+    "prompt": "Complete a frase: \"Ele apascenta ___ rebanho entre as açucenas\"",
+    "cue": "Complete a frase: \"Ele apascenta ___ rebanho entre as açucenas\"",
+    "verseRef": "Cantares 2:16",
+    "learningObjective": "Sair sabendo que o cântico fala de pertença dos dois lados.",
+    "evidence": [
+      "Cantares 2:16"
+    ],
+    "feedbackCorrect": "Certo: ele apascenta o seu rebanho.",
+    "feedbackWrong": {
+      "b": "Amado é o pastor, não o pronome.",
+      "c": "Dele fecha a pertença da amada."
+    },
+    "passageText": "O meu amado é meu, e eu sou dele; Ele apascenta o seu rebanho entre as açucenas.",
+    "template": "Ele apascenta ___ rebanho entre as açucenas",
+    "options": [
+      {
+        "id": "a",
+        "text": "seu"
+      },
+      {
+        "id": "b",
+        "text": "amado"
+      },
+      {
+        "id": "c",
+        "text": "dele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-pro-ct-04-pertence-06",
+    "trail": "cantares",
+    "section": "ct-04-pertence",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "Que sentido de Cantares 2:16 se liga a este contexto?",
+    "prompt": "Que sentido de Cantares 2:16 se liga a este contexto?",
+    "cue": "Que sentido de Cantares 2:16 se liga a este contexto?",
+    "verseRef": "Cantares 2:16",
+    "learningObjective": "Sair sabendo que o cântico fala de pertença dos dois lados.",
+    "evidence": [
+      "Cantares 2:16"
+    ],
+    "feedbackCorrect": "Certo: o sentido é aliança, não domínio unilateral.",
+    "feedbackWrong": {
+      "a": "Os dois se pertencem.",
+      "c": "O amado é nomeado, não anônimo."
+    },
+    "passageText": "O meu amado é meu, e eu sou dele; Ele apascenta o seu rebanho entre as açucenas.",
+    "passageA": {
+      "ref": "Cantares 2:16",
+      "text": "O meu amado é meu, e eu sou dele; Ele apascenta o seu rebanho entre as açucenas."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Amor de aliança é pertença mútua"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Domínio de um só"
+      },
+      {
+        "id": "b",
+        "text": "Aliança dos dois"
+      },
+      {
+        "id": "c",
+        "text": "Campo sem nome"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "cantares-sem-ct-05-busca-01",
+    "trail": "cantares",
+    "section": "ct-05-busca",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "De noite, no leito, ela buscou o amado e logo o encontrou ali.",
+    "prompt": "De noite, no leito, ela buscou o amado e logo o encontrou ali.",
+    "cue": "De noite, no leito, ela buscou o amado e logo o encontrou ali.",
+    "verseRef": "Cantares 3:1–4",
+    "learningObjective": "Sair sabendo que o amor do cântico procura e, ao achar, não solta.",
+    "evidence": [
+      "Cantares 3:1–4"
+    ],
+    "feedbackCorrect": "Certo: no leito ela buscou e não achou.",
+    "feedbackWrong": {
+      "true": "O texto diz: busquei-o, porém não o achei."
+    },
+    "passageText": "De noite no meu leito, busquei aquele, a quem a minha alma ama: Busquei-o, porém não o achei. Levantar-me-ei, pois, e rodearei a cidade; Pelas ruas e pelas praças Buscarei aquele a quem a minha alma ama: Busquei-o, porém não o achei. Encontraram-me os guardas que rondam a cidade, Aos quais disse eu: Vistes, porventura, aquele a quem a minha alma ama? Apenas me tinha apartado deles, Quando achei aquele a quem a minha alma ama. Agarrei-me a ele, e não o deixei ir embora, Até tê-lo eu introduzido na casa de minha mãe, E na câmara daquela que me concebeu.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "id": "cantares-sem-ct-05-busca-02",
+    "trail": "cantares",
+    "section": "ct-05-busca",
+    "difficulty": "semente",
+    "type": "tap",
+    "skill": "observe",
+    "question": "Em Cantares 3:1–4, toque a palavra que falta em \"busquei aquele, a quem a minha ___ ama\"?",
+    "prompt": "Em Cantares 3:1–4, toque a palavra que falta em \"busquei aquele, a quem a minha ___ ama\"?",
+    "cue": "Em Cantares 3:1–4, toque a palavra que falta em \"busquei aquele, a quem a minha ___ ama\"?",
+    "verseRef": "Cantares 3:1–4",
+    "learningObjective": "Sair sabendo que o amor do cântico procura e, ao achar, não solta.",
+    "evidence": [
+      "Cantares 3:1–4"
+    ],
+    "feedbackCorrect": "Exato: a alma ama aquele a quem ela busca.",
+    "feedbackWrong": {
+      "a": "A cidade é o lugar da ronda.",
+      "c": "A mãe aparece só no fim, em casa."
+    },
+    "passageText": "De noite no meu leito, busquei aquele, a quem a minha alma ama: Busquei-o, porém não o achei. Levantar-me-ei, pois, e rodearei a cidade; Pelas ruas e pelas praças Buscarei aquele a quem a minha alma ama: Busquei-o, porém não o achei. Encontraram-me os guardas que rondam a cidade, Aos quais disse eu: Vistes, porventura, aquele a quem a minha alma ama? Apenas me tinha apartado deles, Quando achei aquele a quem a minha alma ama. Agarrei-me a ele, e não o deixei ir embora, Até tê-lo eu introduzido na casa de minha mãe, E na câmara daquela que me concebeu.",
+    "template": "busquei aquele, a quem a minha ___ ama",
+    "options": [
+      {
+        "id": "a",
+        "text": "cidade"
+      },
+      {
+        "id": "b",
+        "text": "alma"
+      },
+      {
+        "id": "c",
+        "text": "mãe"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "cantares-sem-ct-05-busca-03",
+    "trail": "cantares",
+    "section": "ct-05-busca",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "O que acontece quando ela busca o amado no leito?",
+    "prompt": "O que acontece quando ela busca o amado no leito?",
+    "cue": "O que acontece quando ela busca o amado no leito?",
+    "verseRef": "Cantares 3:1–4",
+    "learningObjective": "Sair sabendo que o amor do cântico procura e, ao achar, não solta.",
+    "evidence": [
+      "Cantares 3:1–4"
+    ],
+    "feedbackCorrect": "Certo: no leito a busca ainda não acha.",
+    "feedbackWrong": {
+      "b": "O encontro não é no leito.",
+      "c": "Os guardas aparecem na cidade, sem trazê-lo.",
+      "d": "A casa da mãe vem depois do encontro."
+    },
+    "passageText": "De noite no meu leito, busquei aquele, a quem a minha alma ama: Busquei-o, porém não o achei. Levantar-me-ei, pois, e rodearei a cidade; Pelas ruas e pelas praças Buscarei aquele a quem a minha alma ama: Busquei-o, porém não o achei. Encontraram-me os guardas que rondam a cidade, Aos quais disse eu: Vistes, porventura, aquele a quem a minha alma ama? Apenas me tinha apartado deles, Quando achei aquele a quem a minha alma ama. Agarrei-me a ele, e não o deixei ir embora, Até tê-lo eu introduzido na casa de minha mãe, E na câmara daquela que me concebeu.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela busca e não o acha."
+      },
+      {
+        "id": "b",
+        "text": "Ela o acha dormindo e permanece ali."
+      },
+      {
+        "id": "c",
+        "text": "Os guardas já o trazem até a cama."
+      },
+      {
+        "id": "d",
+        "text": "A mãe o apresenta antes de ela sair."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-sem-ct-05-busca-04",
+    "trail": "cantares",
+    "section": "ct-05-busca",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Qual é a ordem dos fatos em Cantares 3:1–4?",
+    "prompt": "Qual é a ordem dos fatos em Cantares 3:1–4?",
+    "cue": "Qual é a ordem dos fatos em Cantares 3:1–4?",
+    "verseRef": "Cantares 3:1–4",
+    "learningObjective": "Sair sabendo que o amor do cântico procura e, ao achar, não solta.",
+    "evidence": [
+      "Cantares 3:1–4"
+    ],
+    "feedbackCorrect": "Certo: falta, busca na cidade e então o apego.",
+    "feedbackWrong": {
+      "b": "A cidade vem depois do leito vazio.",
+      "c": "Agarrar é o fim do encontro, não o começo."
+    },
+    "passageText": "De noite no meu leito, busquei aquele, a quem a minha alma ama: Busquei-o, porém não o achei. Levantar-me-ei, pois, e rodearei a cidade; Pelas ruas e pelas praças Buscarei aquele a quem a minha alma ama: Busquei-o, porém não o achei. Encontraram-me os guardas que rondam a cidade, Aos quais disse eu: Vistes, porventura, aquele a quem a minha alma ama? Apenas me tinha apartado deles, Quando achei aquele a quem a minha alma ama. Agarrei-me a ele, e não o deixei ir embora, Até tê-lo eu introduzido na casa de minha mãe, E na câmara daquela que me concebeu.",
+    "options": [
+      {
+        "id": "a",
+        "text": "De noite, no leito, ela busca e não acha."
+      },
+      {
+        "id": "b",
+        "text": "Levanta-se, rodeia a cidade e pergunta aos guardas."
+      },
+      {
+        "id": "c",
+        "text": "Quando acha, agarra-se a ele e não o solta."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-sem-ct-05-busca-05",
+    "trail": "cantares",
+    "section": "ct-05-busca",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Complete a frase: \"De noite no meu ___, busquei aquele\"",
+    "prompt": "Complete a frase: \"De noite no meu ___, busquei aquele\"",
+    "cue": "Complete a frase: \"De noite no meu ___, busquei aquele\"",
+    "verseRef": "Cantares 3:1–4",
+    "learningObjective": "Sair sabendo que o amor do cântico procura e, ao achar, não solta.",
+    "evidence": [
+      "Cantares 3:1–4"
+    ],
+    "feedbackCorrect": "Certo: a busca começa no leito.",
+    "feedbackWrong": {
+      "b": "Alma é quem ama, não o lugar.",
+      "c": "A cidade vem quando ela se levanta."
+    },
+    "passageText": "De noite no meu leito, busquei aquele, a quem a minha alma ama: Busquei-o, porém não o achei. Levantar-me-ei, pois, e rodearei a cidade; Pelas ruas e pelas praças Buscarei aquele a quem a minha alma ama: Busquei-o, porém não o achei. Encontraram-me os guardas que rondam a cidade, Aos quais disse eu: Vistes, porventura, aquele a quem a minha alma ama? Apenas me tinha apartado deles, Quando achei aquele a quem a minha alma ama. Agarrei-me a ele, e não o deixei ir embora, Até tê-lo eu introduzido na casa de minha mãe, E na câmara daquela que me concebeu.",
+    "template": "De noite no meu ___, busquei aquele",
+    "options": [
+      {
+        "id": "a",
+        "text": "leito"
+      },
+      {
+        "id": "b",
+        "text": "alma"
+      },
+      {
+        "id": "c",
+        "text": "cidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-sem-ct-05-busca-06",
+    "trail": "cantares",
+    "section": "ct-05-busca",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Cantares 3:1–4 comunica que se liga a este contexto?",
+    "prompt": "O que Cantares 3:1–4 comunica que se liga a este contexto?",
+    "cue": "O que Cantares 3:1–4 comunica que se liga a este contexto?",
+    "verseRef": "Cantares 3:1–4",
+    "learningObjective": "Sair sabendo que o amor do cântico procura e, ao achar, não solta.",
+    "evidence": [
+      "Cantares 3:1–4"
+    ],
+    "feedbackCorrect": "Certo: o trecho é a procura que não para.",
+    "feedbackWrong": {
+      "b": "Ela se levanta; não fica no sono.",
+      "c": "Os guardas são passagem, não o tema."
+    },
+    "passageText": "De noite no meu leito, busquei aquele, a quem a minha alma ama: Busquei-o, porém não o achei. Levantar-me-ei, pois, e rodearei a cidade; Pelas ruas e pelas praças Buscarei aquele a quem a minha alma ama: Busquei-o, porém não o achei. Encontraram-me os guardas que rondam a cidade, Aos quais disse eu: Vistes, porventura, aquele a quem a minha alma ama? Apenas me tinha apartado deles, Quando achei aquele a quem a minha alma ama. Agarrei-me a ele, e não o deixei ir embora, Até tê-lo eu introduzido na casa de minha mãe, E na câmara daquela que me concebeu.",
+    "passageA": {
+      "ref": "Cantares 3:1–4",
+      "text": "De noite no meu leito, busquei aquele, a quem a minha alma ama: Busquei-o, porém não o achei. Levantar-me-ei, pois, e rodearei a cidade; Pelas ruas e pelas praças Buscarei aquele a quem a minha alma ama: Busquei-o, porém não o achei. Encontraram-me os guardas que rondam a cidade, Aos quais disse eu: Vistes, porventura, aquele a quem a minha alma ama? Apenas me tinha apartado deles, Quando achei aquele a quem a minha alma ama. Agarrei-me a ele, e não o deixei ir embora, Até tê-lo eu introduzido na casa de minha mãe, E na câmara daquela que me concebeu."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Quem ama procura até achar"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Busca até achar"
+      },
+      {
+        "id": "b",
+        "text": "Sono sem saída"
+      },
+      {
+        "id": "c",
+        "text": "Ronda dos guardas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-cam-ct-05-busca-01",
+    "trail": "cantares",
+    "section": "ct-05-busca",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Ela rodeia a cidade e pergunta aos guardas pelo amado.",
+    "prompt": "Ela rodeia a cidade e pergunta aos guardas pelo amado.",
+    "cue": "Ela rodeia a cidade e pergunta aos guardas pelo amado.",
+    "verseRef": "Cantares 3:1–4",
+    "learningObjective": "Sair sabendo que o amor do cântico procura e, ao achar, não solta.",
+    "evidence": [
+      "Cantares 3:1–4"
+    ],
+    "feedbackCorrect": "Certo: a busca sai do leito e vai às ruas.",
+    "feedbackWrong": {
+      "false": "Ela fala aos guardas que rondam a cidade."
+    },
+    "passageText": "De noite no meu leito, busquei aquele, a quem a minha alma ama: Busquei-o, porém não o achei. Levantar-me-ei, pois, e rodearei a cidade; Pelas ruas e pelas praças Buscarei aquele a quem a minha alma ama: Busquei-o, porém não o achei. Encontraram-me os guardas que rondam a cidade, Aos quais disse eu: Vistes, porventura, aquele a quem a minha alma ama? Apenas me tinha apartado deles, Quando achei aquele a quem a minha alma ama. Agarrei-me a ele, e não o deixei ir embora, Até tê-lo eu introduzido na casa de minha mãe, E na câmara daquela que me concebeu.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "cantares-cam-ct-05-busca-02",
+    "trail": "cantares",
+    "section": "ct-05-busca",
+    "difficulty": "caminhada",
+    "type": "tap",
+    "skill": "understand",
+    "question": "Em Cantares 3:1–4, toque a palavra que falta em \"Encontraram-me os ___ que rondam a cidade\"?",
+    "prompt": "Em Cantares 3:1–4, toque a palavra que falta em \"Encontraram-me os ___ que rondam a cidade\"?",
+    "cue": "Em Cantares 3:1–4, toque a palavra que falta em \"Encontraram-me os ___ que rondam a cidade\"?",
+    "verseRef": "Cantares 3:1–4",
+    "learningObjective": "Sair sabendo que o amor do cântico procura e, ao achar, não solta.",
+    "evidence": [
+      "Cantares 3:1–4"
+    ],
+    "feedbackCorrect": "Exato: os guardas a encontram na cidade.",
+    "feedbackWrong": {
+      "a": "Alma é quem ama, não quem ronda.",
+      "c": "O leito é onde a busca começou."
+    },
+    "passageText": "De noite no meu leito, busquei aquele, a quem a minha alma ama: Busquei-o, porém não o achei. Levantar-me-ei, pois, e rodearei a cidade; Pelas ruas e pelas praças Buscarei aquele a quem a minha alma ama: Busquei-o, porém não o achei. Encontraram-me os guardas que rondam a cidade, Aos quais disse eu: Vistes, porventura, aquele a quem a minha alma ama? Apenas me tinha apartado deles, Quando achei aquele a quem a minha alma ama. Agarrei-me a ele, e não o deixei ir embora, Até tê-lo eu introduzido na casa de minha mãe, E na câmara daquela que me concebeu.",
+    "template": "Encontraram-me os ___ que rondam a cidade",
+    "options": [
+      {
+        "id": "a",
+        "text": "alma"
+      },
+      {
+        "id": "b",
+        "text": "guardas"
+      },
+      {
+        "id": "c",
+        "text": "leito"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "cantares-cam-ct-05-busca-03",
+    "trail": "cantares",
+    "section": "ct-05-busca",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como a busca se move do quarto até o encontro?",
+    "prompt": "Como a busca se move do quarto até o encontro?",
+    "cue": "Como a busca se move do quarto até o encontro?",
+    "verseRef": "Cantares 3:1–4",
+    "learningObjective": "Sair sabendo que o amor do cântico procura e, ao achar, não solta.",
+    "evidence": [
+      "Cantares 3:1–4"
+    ],
+    "feedbackCorrect": "Certo: leito, cidade, guardas e então o achado.",
+    "feedbackWrong": {
+      "b": "Ela não desiste; continua até achar.",
+      "c": "Ela pergunta aos guardas; não se cala.",
+      "d": "O leito é o fracasso inicial, não o fim."
+    },
+    "passageText": "De noite no meu leito, busquei aquele, a quem a minha alma ama: Busquei-o, porém não o achei. Levantar-me-ei, pois, e rodearei a cidade; Pelas ruas e pelas praças Buscarei aquele a quem a minha alma ama: Busquei-o, porém não o achei. Encontraram-me os guardas que rondam a cidade, Aos quais disse eu: Vistes, porventura, aquele a quem a minha alma ama? Apenas me tinha apartado deles, Quando achei aquele a quem a minha alma ama. Agarrei-me a ele, e não o deixei ir embora, Até tê-lo eu introduzido na casa de minha mãe, E na câmara daquela que me concebeu.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela sai, pergunta e só depois se agarra a ele."
+      },
+      {
+        "id": "b",
+        "text": "Ela desiste na praça e volta a dormir."
+      },
+      {
+        "id": "c",
+        "text": "Os guardas proíbem a pergunta e ela obedece."
+      },
+      {
+        "id": "d",
+        "text": "O encontro acontece sem ela deixar o leito."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-cam-ct-05-busca-04",
+    "trail": "cantares",
+    "section": "ct-05-busca",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Cantares 3:1–4?",
+    "prompt": "Como se encadeiam os eventos de Cantares 3:1–4?",
+    "cue": "Como se encadeiam os eventos de Cantares 3:1–4?",
+    "verseRef": "Cantares 3:1–4",
+    "learningObjective": "Sair sabendo que o amor do cântico procura e, ao achar, não solta.",
+    "evidence": [
+      "Cantares 3:1–4"
+    ],
+    "feedbackCorrect": "Certo: falta, busca na cidade e então o apego.",
+    "feedbackWrong": {
+      "b": "A cidade vem depois do leito vazio.",
+      "c": "Agarrar é o fim do encontro, não o começo."
+    },
+    "passageText": "De noite no meu leito, busquei aquele, a quem a minha alma ama: Busquei-o, porém não o achei. Levantar-me-ei, pois, e rodearei a cidade; Pelas ruas e pelas praças Buscarei aquele a quem a minha alma ama: Busquei-o, porém não o achei. Encontraram-me os guardas que rondam a cidade, Aos quais disse eu: Vistes, porventura, aquele a quem a minha alma ama? Apenas me tinha apartado deles, Quando achei aquele a quem a minha alma ama. Agarrei-me a ele, e não o deixei ir embora, Até tê-lo eu introduzido na casa de minha mãe, E na câmara daquela que me concebeu.",
+    "options": [
+      {
+        "id": "a",
+        "text": "De noite, no leito, ela busca e não acha."
+      },
+      {
+        "id": "b",
+        "text": "Levanta-se, rodeia a cidade e pergunta aos guardas."
+      },
+      {
+        "id": "c",
+        "text": "Quando acha, agarra-se a ele e não o solta."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-cam-ct-05-busca-05",
+    "trail": "cantares",
+    "section": "ct-05-busca",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Complete a frase: \"Quando ___ aquele a quem a minha alma ama\"",
+    "prompt": "Complete a frase: \"Quando ___ aquele a quem a minha alma ama\"",
+    "cue": "Complete a frase: \"Quando ___ aquele a quem a minha alma ama\"",
+    "verseRef": "Cantares 3:1–4",
+    "learningObjective": "Sair sabendo que o amor do cântico procura e, ao achar, não solta.",
+    "evidence": [
+      "Cantares 3:1–4"
+    ],
+    "feedbackCorrect": "Certo: ela acha depois de se apartar dos guardas.",
+    "feedbackWrong": {
+      "b": "Guardas são a quem ela pergunta.",
+      "c": "O leito é onde ainda não achou."
+    },
+    "passageText": "De noite no meu leito, busquei aquele, a quem a minha alma ama: Busquei-o, porém não o achei. Levantar-me-ei, pois, e rodearei a cidade; Pelas ruas e pelas praças Buscarei aquele a quem a minha alma ama: Busquei-o, porém não o achei. Encontraram-me os guardas que rondam a cidade, Aos quais disse eu: Vistes, porventura, aquele a quem a minha alma ama? Apenas me tinha apartado deles, Quando achei aquele a quem a minha alma ama. Agarrei-me a ele, e não o deixei ir embora, Até tê-lo eu introduzido na casa de minha mãe, E na câmara daquela que me concebeu.",
+    "template": "Quando ___ aquele a quem a minha alma ama",
+    "options": [
+      {
+        "id": "a",
+        "text": "achei"
+      },
+      {
+        "id": "b",
+        "text": "guardas"
+      },
+      {
+        "id": "c",
+        "text": "leito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-cam-ct-05-busca-06",
+    "trail": "cantares",
+    "section": "ct-05-busca",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "Que relação Cantares 3:1–4 estabelece com este contexto?",
+    "prompt": "Que relação Cantares 3:1–4 estabelece com este contexto?",
+    "cue": "Que relação Cantares 3:1–4 estabelece com este contexto?",
+    "verseRef": "Cantares 3:1–4",
+    "learningObjective": "Sair sabendo que o amor do cântico procura e, ao achar, não solta.",
+    "evidence": [
+      "Cantares 3:1–4"
+    ],
+    "feedbackCorrect": "Certo: perguntar aos guardas faz parte da busca.",
+    "feedbackWrong": {
+      "a": "Ela não desiste na cidade.",
+      "c": "O fim é a pessoa, não a casa vazia."
+    },
+    "passageText": "De noite no meu leito, busquei aquele, a quem a minha alma ama: Busquei-o, porém não o achei. Levantar-me-ei, pois, e rodearei a cidade; Pelas ruas e pelas praças Buscarei aquele a quem a minha alma ama: Busquei-o, porém não o achei. Encontraram-me os guardas que rondam a cidade, Aos quais disse eu: Vistes, porventura, aquele a quem a minha alma ama? Apenas me tinha apartado deles, Quando achei aquele a quem a minha alma ama. Agarrei-me a ele, e não o deixei ir embora, Até tê-lo eu introduzido na casa de minha mãe, E na câmara daquela que me concebeu.",
+    "passageA": {
+      "ref": "Cantares 3:1–4",
+      "text": "De noite no meu leito, busquei aquele, a quem a minha alma ama: Busquei-o, porém não o achei. Levantar-me-ei, pois, e rodearei a cidade; Pelas ruas e pelas praças Buscarei aquele a quem a minha alma ama: Busquei-o, porém não o achei. Encontraram-me os guardas que rondam a cidade, Aos quais disse eu: Vistes, porventura, aquele a quem a minha alma ama? Apenas me tinha apartado deles, Quando achei aquele a quem a minha alma ama. Agarrei-me a ele, e não o deixei ir embora, Até tê-lo eu introduzido na casa de minha mãe, E na câmara daquela que me concebeu."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Quem ama procura até achar"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Desistência na praça"
+      },
+      {
+        "id": "b",
+        "text": "Pergunta que continua"
+      },
+      {
+        "id": "c",
+        "text": "Casa sem pessoa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "cantares-pro-ct-05-busca-01",
+    "trail": "cantares",
+    "section": "ct-05-busca",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Achar o amado, no cântico, leva a segurar e não soltar.",
+    "prompt": "Achar o amado, no cântico, leva a segurar e não soltar.",
+    "cue": "Achar o amado, no cântico, leva a segurar e não soltar.",
+    "verseRef": "Cantares 3:1–4",
+    "learningObjective": "Sair sabendo que o amor do cântico procura e, ao achar, não solta.",
+    "evidence": [
+      "Cantares 3:1–4"
+    ],
+    "feedbackCorrect": "Certo: ela se agarra e não o deixa ir.",
+    "feedbackWrong": {
+      "false": "O encontro termina em apego, não em despedida."
+    },
+    "passageText": "De noite no meu leito, busquei aquele, a quem a minha alma ama: Busquei-o, porém não o achei. Levantar-me-ei, pois, e rodearei a cidade; Pelas ruas e pelas praças Buscarei aquele a quem a minha alma ama: Busquei-o, porém não o achei. Encontraram-me os guardas que rondam a cidade, Aos quais disse eu: Vistes, porventura, aquele a quem a minha alma ama? Apenas me tinha apartado deles, Quando achei aquele a quem a minha alma ama. Agarrei-me a ele, e não o deixei ir embora, Até tê-lo eu introduzido na casa de minha mãe, E na câmara daquela que me concebeu.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "cantares-pro-ct-05-busca-02",
+    "trail": "cantares",
+    "section": "ct-05-busca",
+    "difficulty": "profundezas",
+    "type": "tap",
+    "skill": "interpret",
+    "question": "Em Cantares 3:1–4, toque a palavra que falta em \"Agarrei-me a ele, e não o deixei ir ___\"?",
+    "prompt": "Em Cantares 3:1–4, toque a palavra que falta em \"Agarrei-me a ele, e não o deixei ir ___\"?",
+    "cue": "Em Cantares 3:1–4, toque a palavra que falta em \"Agarrei-me a ele, e não o deixei ir ___\"?",
+    "verseRef": "Cantares 3:1–4",
+    "learningObjective": "Sair sabendo que o amor do cântico procura e, ao achar, não solta.",
+    "evidence": [
+      "Cantares 3:1–4"
+    ],
+    "feedbackCorrect": "Exato: ela não o deixou ir embora.",
+    "feedbackWrong": {
+      "a": "A cidade já ficou para trás.",
+      "c": "Os guardas não são o destino."
+    },
+    "passageText": "De noite no meu leito, busquei aquele, a quem a minha alma ama: Busquei-o, porém não o achei. Levantar-me-ei, pois, e rodearei a cidade; Pelas ruas e pelas praças Buscarei aquele a quem a minha alma ama: Busquei-o, porém não o achei. Encontraram-me os guardas que rondam a cidade, Aos quais disse eu: Vistes, porventura, aquele a quem a minha alma ama? Apenas me tinha apartado deles, Quando achei aquele a quem a minha alma ama. Agarrei-me a ele, e não o deixei ir embora, Até tê-lo eu introduzido na casa de minha mãe, E na câmara daquela que me concebeu.",
+    "template": "Agarrei-me a ele, e não o deixei ir ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "cidade"
+      },
+      {
+        "id": "b",
+        "text": "embora"
+      },
+      {
+        "id": "c",
+        "text": "guardas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "cantares-pro-ct-05-busca-03",
+    "trail": "cantares",
+    "section": "ct-05-busca",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "O que o gesto de agarrar revela sobre esse amor?",
+    "prompt": "O que o gesto de agarrar revela sobre esse amor?",
+    "cue": "O que o gesto de agarrar revela sobre esse amor?",
+    "verseRef": "Cantares 3:1–4",
+    "learningObjective": "Sair sabendo que o amor do cântico procura e, ao achar, não solta.",
+    "evidence": [
+      "Cantares 3:1–4"
+    ],
+    "feedbackCorrect": "Certo: achar não basta; ela não solta.",
+    "feedbackWrong": {
+      "b": "Ela não o deixa ir embora.",
+      "c": "A pergunta é caminho, não o destino.",
+      "d": "Ela o leva à casa; não troca a pessoa pela casa."
+    },
+    "passageText": "De noite no meu leito, busquei aquele, a quem a minha alma ama: Busquei-o, porém não o achei. Levantar-me-ei, pois, e rodearei a cidade; Pelas ruas e pelas praças Buscarei aquele a quem a minha alma ama: Busquei-o, porém não o achei. Encontraram-me os guardas que rondam a cidade, Aos quais disse eu: Vistes, porventura, aquele a quem a minha alma ama? Apenas me tinha apartado deles, Quando achei aquele a quem a minha alma ama. Agarrei-me a ele, e não o deixei ir embora, Até tê-lo eu introduzido na casa de minha mãe, E na câmara daquela que me concebeu.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quem acha segura, em vez de só passar."
+      },
+      {
+        "id": "b",
+        "text": "O encontro serve para se despedir em paz."
+      },
+      {
+        "id": "c",
+        "text": "Amar é perguntar aos guardas e seguir só."
+      },
+      {
+        "id": "d",
+        "text": "A casa da mãe substitui a pessoa do amado."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-pro-ct-05-busca-04",
+    "trail": "cantares",
+    "section": "ct-05-busca",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Cantares 3:1–4?",
+    "prompt": "Qual sequência revela o sentido de Cantares 3:1–4?",
+    "cue": "Qual sequência revela o sentido de Cantares 3:1–4?",
+    "verseRef": "Cantares 3:1–4",
+    "learningObjective": "Sair sabendo que o amor do cântico procura e, ao achar, não solta.",
+    "evidence": [
+      "Cantares 3:1–4"
+    ],
+    "feedbackCorrect": "Certo: falta, busca na cidade e então o apego.",
+    "feedbackWrong": {
+      "b": "A cidade vem depois do leito vazio.",
+      "c": "Agarrar é o fim do encontro, não o começo."
+    },
+    "passageText": "De noite no meu leito, busquei aquele, a quem a minha alma ama: Busquei-o, porém não o achei. Levantar-me-ei, pois, e rodearei a cidade; Pelas ruas e pelas praças Buscarei aquele a quem a minha alma ama: Busquei-o, porém não o achei. Encontraram-me os guardas que rondam a cidade, Aos quais disse eu: Vistes, porventura, aquele a quem a minha alma ama? Apenas me tinha apartado deles, Quando achei aquele a quem a minha alma ama. Agarrei-me a ele, e não o deixei ir embora, Até tê-lo eu introduzido na casa de minha mãe, E na câmara daquela que me concebeu.",
+    "options": [
+      {
+        "id": "a",
+        "text": "De noite, no leito, ela busca e não acha."
+      },
+      {
+        "id": "b",
+        "text": "Levanta-se, rodeia a cidade e pergunta aos guardas."
+      },
+      {
+        "id": "c",
+        "text": "Quando acha, agarra-se a ele e não o solta."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-pro-ct-05-busca-05",
+    "trail": "cantares",
+    "section": "ct-05-busca",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Complete a frase: \"introduzido na casa de minha ___\"",
+    "prompt": "Complete a frase: \"introduzido na casa de minha ___\"",
+    "cue": "Complete a frase: \"introduzido na casa de minha ___\"",
+    "verseRef": "Cantares 3:1–4",
+    "learningObjective": "Sair sabendo que o amor do cântico procura e, ao achar, não solta.",
+    "evidence": [
+      "Cantares 3:1–4"
+    ],
+    "feedbackCorrect": "Certo: ela o leva à casa da mãe.",
+    "feedbackWrong": {
+      "b": "A cidade foi o lugar da busca.",
+      "c": "Alma ama; não é a casa."
+    },
+    "passageText": "De noite no meu leito, busquei aquele, a quem a minha alma ama: Busquei-o, porém não o achei. Levantar-me-ei, pois, e rodearei a cidade; Pelas ruas e pelas praças Buscarei aquele a quem a minha alma ama: Busquei-o, porém não o achei. Encontraram-me os guardas que rondam a cidade, Aos quais disse eu: Vistes, porventura, aquele a quem a minha alma ama? Apenas me tinha apartado deles, Quando achei aquele a quem a minha alma ama. Agarrei-me a ele, e não o deixei ir embora, Até tê-lo eu introduzido na casa de minha mãe, E na câmara daquela que me concebeu.",
+    "template": "introduzido na casa de minha ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "mãe"
+      },
+      {
+        "id": "b",
+        "text": "cidade"
+      },
+      {
+        "id": "c",
+        "text": "alma"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "cantares-pro-ct-05-busca-06",
+    "trail": "cantares",
+    "section": "ct-05-busca",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "Que sentido de Cantares 3:1–4 se liga a este contexto?",
+    "prompt": "Que sentido de Cantares 3:1–4 se liga a este contexto?",
+    "cue": "Que sentido de Cantares 3:1–4 se liga a este contexto?",
+    "verseRef": "Cantares 3:1–4",
+    "learningObjective": "Sair sabendo que o amor do cântico procura e, ao achar, não solta.",
+    "evidence": [
+      "Cantares 3:1–4"
+    ],
+    "feedbackCorrect": "Certo: o sentido fecha em não soltar.",
+    "feedbackWrong": {
+      "a": "Ela não o deixa ir embora.",
+      "c": "Os guardas não são ameaça no texto."
+    },
+    "passageText": "De noite no meu leito, busquei aquele, a quem a minha alma ama: Busquei-o, porém não o achei. Levantar-me-ei, pois, e rodearei a cidade; Pelas ruas e pelas praças Buscarei aquele a quem a minha alma ama: Busquei-o, porém não o achei. Encontraram-me os guardas que rondam a cidade, Aos quais disse eu: Vistes, porventura, aquele a quem a minha alma ama? Apenas me tinha apartado deles, Quando achei aquele a quem a minha alma ama. Agarrei-me a ele, e não o deixei ir embora, Até tê-lo eu introduzido na casa de minha mãe, E na câmara daquela que me concebeu.",
+    "passageA": {
+      "ref": "Cantares 3:1–4",
+      "text": "De noite no meu leito, busquei aquele, a quem a minha alma ama: Busquei-o, porém não o achei. Levantar-me-ei, pois, e rodearei a cidade; Pelas ruas e pelas praças Buscarei aquele a quem a minha alma ama: Busquei-o, porém não o achei. Encontraram-me os guardas que rondam a cidade, Aos quais disse eu: Vistes, porventura, aquele a quem a minha alma ama? Apenas me tinha apartado deles, Quando achei aquele a quem a minha alma ama. Agarrei-me a ele, e não o deixei ir embora, Até tê-lo eu introduzido na casa de minha mãe, E na câmara daquela que me concebeu."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Quem ama procura até achar"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Achar e soltar"
+      },
+      {
+        "id": "b",
+        "text": "Amor que segura"
+      },
+      {
+        "id": "c",
+        "text": "Medo dos guardas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
   }
 ]

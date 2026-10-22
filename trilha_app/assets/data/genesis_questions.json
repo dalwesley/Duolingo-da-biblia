@@ -232,9 +232,9 @@
       "evidence": [
         "Gênesis 1:1–2"
       ],
-      "question": "O que une a criação e o Espírito sobre as águas?",
-      "prompt": "O que une a criação e o Espírito sobre as águas?",
-      "cue": "O que une a criação e o Espírito sobre as águas?",
+      "question": "Que ideia faz a ponte entre Gênesis 1:1 e 1:2?",
+      "prompt": "Que ideia faz a ponte entre Gênesis 1:1 e 1:2?",
+      "cue": "Que ideia faz a ponte entre Gênesis 1:1 e 1:2?",
       "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
       "trail": "genesis-1-11",
       "section": "gen-01-criador",
@@ -242,23 +242,23 @@
       "skill": "understand",
       "type": "connect",
       "id": "genesis-1-11-cam-gen-01-criador-06",
-      "feedbackCorrect": "Certo: Deus cria e o Espírito já paira no vazio.",
+      "feedbackCorrect": "Isso: o Criador do v. 1 já está presente no vazio do v. 2.",
       "feedbackWrong": {
-        "b": "O texto começa com Deus; o vazio não vem antes.",
-        "c": "Pairar é presença, não ausência."
+        "b": "O texto começa com Deus; o vazio vem depois, não antes.",
+        "c": "Pairar é presença: Deus fica junto do que criou."
       },
       "options": [
         {
           "id": "a",
-          "text": "Deus já está presente"
+          "text": "Deus já age no vazio"
         },
         {
           "id": "b",
-          "text": "primeiro o caos, depois Deus"
+          "text": "O caos existia antes de Deus"
         },
         {
           "id": "c",
-          "text": "Deus cria e se ausenta"
+          "text": "Deus cria e depois se afasta"
         }
       ],
       "correctOptionId": "a",

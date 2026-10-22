@@ -2185,5 +2185,2192 @@
     "trail": "amos",
     "section": "amos-amos-03-desafio-amos",
     "id": "amos-pro-amos-amos-03-desafio-amos-06"
+  },
+  {
+    "id": "amos-sem-am-03-conhecido-01",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Jeová diz que, de todas as famílias, só a este povo conheceu.",
+    "prompt": "Jeová diz que, de todas as famílias, só a este povo conheceu.",
+    "cue": "Jeová diz que, de todas as famílias, só a este povo conheceu.",
+    "verseRef": "Amós 3:2",
+    "learningObjective": "Sair sabendo que ser conhecido por Jeová torna a iniquidade mais grave.",
+    "evidence": [
+      "Amós 3:2"
+    ],
+    "feedbackCorrect": "Certo: o conhecer é particular.",
+    "feedbackWrong": {
+      "false": "O versículo abre com essa exclusividade."
+    },
+    "passageText": "De todas as famílias da terra só a vós vos tenho conhecido; portanto, visitarei sobre vós todas as vossas iniquidades.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "amos-sem-am-03-conhecido-02",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "semente",
+    "type": "tap",
+    "skill": "observe",
+    "question": "Em Amós 3:2, toque a palavra que falta em \"vos tenho ___\"?",
+    "prompt": "Em Amós 3:2, toque a palavra que falta em \"vos tenho ___\"?",
+    "cue": "Em Amós 3:2, toque a palavra que falta em \"vos tenho ___\"?",
+    "verseRef": "Amós 3:2",
+    "learningObjective": "Sair sabendo que ser conhecido por Jeová torna a iniquidade mais grave.",
+    "evidence": [
+      "Amós 3:2"
+    ],
+    "feedbackCorrect": "Exato: ele os tem conhecido.",
+    "feedbackWrong": {
+      "a": "Famílias são todas as da terra.",
+      "c": "Terra é o âmbito das famílias."
+    },
+    "passageText": "De todas as famílias da terra só a vós vos tenho conhecido; portanto, visitarei sobre vós todas as vossas iniquidades.",
+    "template": "vos tenho ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "famílias"
+      },
+      {
+        "id": "b",
+        "text": "conhecido"
+      },
+      {
+        "id": "c",
+        "text": "terra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "amos-sem-am-03-conhecido-03",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "O que “só a vós vos tenho conhecido” explica?",
+    "prompt": "O que “só a vós vos tenho conhecido” explica?",
+    "cue": "O que “só a vós vos tenho conhecido” explica?",
+    "verseRef": "Amós 3:2",
+    "learningObjective": "Sair sabendo que ser conhecido por Jeová torna a iniquidade mais grave.",
+    "evidence": [
+      "Amós 3:2"
+    ],
+    "feedbackCorrect": "Certo: por isso a iniquidade deles é visitada.",
+    "feedbackWrong": {
+      "b": "O portanto aponta para este povo.",
+      "c": "A visita cai sobre quem foi conhecido.",
+      "d": "Conhecer não apaga a iniquidade."
+    },
+    "passageText": "De todas as famílias da terra só a vós vos tenho conhecido; portanto, visitarei sobre vós todas as vossas iniquidades.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A visita sobre as iniquidades de Israel."
+      },
+      {
+        "id": "b",
+        "text": "Que as outras famílias são mais culpadas."
+      },
+      {
+        "id": "c",
+        "text": "Que Israel fica livre de prestação de contas."
+      },
+      {
+        "id": "d",
+        "text": "Que conhecer é o mesmo que ignorar o mal."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-sem-am-03-conhecido-04",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Qual é a ordem dos fatos em Amós 3:2?",
+    "prompt": "Qual é a ordem dos fatos em Amós 3:2?",
+    "cue": "Qual é a ordem dos fatos em Amós 3:2?",
+    "verseRef": "Amós 3:2",
+    "learningObjective": "Sair sabendo que ser conhecido por Jeová torna a iniquidade mais grave.",
+    "evidence": [
+      "Amós 3:2"
+    ],
+    "feedbackCorrect": "Certo: eleição, sentido e então a visita.",
+    "feedbackWrong": {
+      "b": "O sentido do conhecer prepara o portanto.",
+      "c": "A visita fecha o versículo."
+    },
+    "passageText": "De todas as famílias da terra só a vós vos tenho conhecido; portanto, visitarei sobre vós todas as vossas iniquidades.",
+    "options": [
+      {
+        "id": "a",
+        "text": "De todas as famílias, só este povo foi conhecido."
+      },
+      {
+        "id": "b",
+        "text": "Esse conhecer é de aliança, não de informação."
+      },
+      {
+        "id": "c",
+        "text": "Por isso Jeová visitará as iniquidades deles."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-sem-am-03-conhecido-05",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Complete a frase: \"todas as vossas ___\"",
+    "prompt": "Complete a frase: \"todas as vossas ___\"",
+    "cue": "Complete a frase: \"todas as vossas ___\"",
+    "verseRef": "Amós 3:2",
+    "learningObjective": "Sair sabendo que ser conhecido por Jeová torna a iniquidade mais grave.",
+    "evidence": [
+      "Amós 3:2"
+    ],
+    "feedbackCorrect": "Certo: a visita é sobre as iniquidades.",
+    "feedbackWrong": {
+      "b": "Famílias são as da terra.",
+      "c": "Terra é o lugar delas."
+    },
+    "passageText": "De todas as famílias da terra só a vós vos tenho conhecido; portanto, visitarei sobre vós todas as vossas iniquidades.",
+    "template": "todas as vossas ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "iniquidades"
+      },
+      {
+        "id": "b",
+        "text": "famílias"
+      },
+      {
+        "id": "c",
+        "text": "terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-sem-am-03-conhecido-06",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Amós 3:2 comunica que se liga a este contexto?",
+    "prompt": "O que Amós 3:2 comunica que se liga a este contexto?",
+    "cue": "O que Amós 3:2 comunica que se liga a este contexto?",
+    "verseRef": "Amós 3:2",
+    "learningObjective": "Sair sabendo que ser conhecido por Jeová torna a iniquidade mais grave.",
+    "evidence": [
+      "Amós 3:2"
+    ],
+    "feedbackCorrect": "Certo: conhecer traz responsabilidade.",
+    "feedbackWrong": {
+      "b": "O portanto é uma visita.",
+      "c": "Não é uma família entre outras."
+    },
+    "passageText": "De todas as famílias da terra só a vós vos tenho conhecido; portanto, visitarei sobre vós todas as vossas iniquidades.",
+    "passageA": {
+      "ref": "Amós 3:2",
+      "text": "De todas as famílias da terra só a vós vos tenho conhecido; portanto, visitarei sobre vós todas as vossas iniquidades."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Eleição aumenta a responsabilidade"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Conta da aliança"
+      },
+      {
+        "id": "b",
+        "text": "Favor sem peso"
+      },
+      {
+        "id": "c",
+        "text": "Família qualquer"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-cam-am-03-conhecido-01",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Conhecer o povo, no texto, significa deixar a iniquidade sem visita.",
+    "prompt": "Conhecer o povo, no texto, significa deixar a iniquidade sem visita.",
+    "cue": "Conhecer o povo, no texto, significa deixar a iniquidade sem visita.",
+    "verseRef": "Amós 3:2",
+    "learningObjective": "Sair sabendo que ser conhecido por Jeová torna a iniquidade mais grave.",
+    "evidence": [
+      "Amós 3:2"
+    ],
+    "feedbackCorrect": "Certo: o portanto é a visita sobre a iniquidade.",
+    "feedbackWrong": {
+      "true": "Conhecer e visitar estão ligados."
+    },
+    "passageText": "De todas as famílias da terra só a vós vos tenho conhecido; portanto, visitarei sobre vós todas as vossas iniquidades.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "id": "amos-cam-am-03-conhecido-02",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "caminhada",
+    "type": "tap",
+    "skill": "understand",
+    "question": "Em Amós 3:2, toque a palavra que falta em \"todas as ___ da terra\"?",
+    "prompt": "Em Amós 3:2, toque a palavra que falta em \"todas as ___ da terra\"?",
+    "cue": "Em Amós 3:2, toque a palavra que falta em \"todas as ___ da terra\"?",
+    "verseRef": "Amós 3:2",
+    "learningObjective": "Sair sabendo que ser conhecido por Jeová torna a iniquidade mais grave.",
+    "evidence": [
+      "Amós 3:2"
+    ],
+    "feedbackCorrect": "Exato: de todas as famílias.",
+    "feedbackWrong": {
+      "a": "Iniquidades são o que será visitado.",
+      "c": "Conhecido é o verbo da eleição."
+    },
+    "passageText": "De todas as famílias da terra só a vós vos tenho conhecido; portanto, visitarei sobre vós todas as vossas iniquidades.",
+    "template": "todas as ___ da terra",
+    "options": [
+      {
+        "id": "a",
+        "text": "iniquidades"
+      },
+      {
+        "id": "b",
+        "text": "famílias"
+      },
+      {
+        "id": "c",
+        "text": "conhecido"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "amos-cam-am-03-conhecido-03",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como eleição e juízo se encontram neste versículo?",
+    "prompt": "Como eleição e juízo se encontram neste versículo?",
+    "cue": "Como eleição e juízo se encontram neste versículo?",
+    "verseRef": "Amós 3:2",
+    "learningObjective": "Sair sabendo que ser conhecido por Jeová torna a iniquidade mais grave.",
+    "evidence": [
+      "Amós 3:2"
+    ],
+    "feedbackCorrect": "Certo: a aliança torna o mal mais sério.",
+    "feedbackWrong": {
+      "b": "O portanto junta as duas frases.",
+      "c": "A visita pressupõe o mal, não o apaga.",
+      "d": "Só a vós marca a diferença."
+    },
+    "passageText": "De todas as famílias da terra só a vós vos tenho conhecido; portanto, visitarei sobre vós todas as vossas iniquidades.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quem foi conhecido é o primeiro a ser visitado."
+      },
+      {
+        "id": "b",
+        "text": "Eleição e juízo ficam em livros separados."
+      },
+      {
+        "id": "c",
+        "text": "Conhecer cancela as iniquidades de antemão."
+      },
+      {
+        "id": "d",
+        "text": "A terra inteira é conhecida do mesmo modo."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-cam-am-03-conhecido-04",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Amós 3:2?",
+    "prompt": "Como se encadeiam os eventos de Amós 3:2?",
+    "cue": "Como se encadeiam os eventos de Amós 3:2?",
+    "verseRef": "Amós 3:2",
+    "learningObjective": "Sair sabendo que ser conhecido por Jeová torna a iniquidade mais grave.",
+    "evidence": [
+      "Amós 3:2"
+    ],
+    "feedbackCorrect": "Certo: eleição, sentido e então a visita.",
+    "feedbackWrong": {
+      "b": "O sentido do conhecer prepara o portanto.",
+      "c": "A visita fecha o versículo."
+    },
+    "passageText": "De todas as famílias da terra só a vós vos tenho conhecido; portanto, visitarei sobre vós todas as vossas iniquidades.",
+    "options": [
+      {
+        "id": "a",
+        "text": "De todas as famílias, só este povo foi conhecido."
+      },
+      {
+        "id": "b",
+        "text": "Esse conhecer é de aliança, não de informação."
+      },
+      {
+        "id": "c",
+        "text": "Por isso Jeová visitará as iniquidades deles."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-cam-am-03-conhecido-05",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Complete a frase: \"famílias da ___\"",
+    "prompt": "Complete a frase: \"famílias da ___\"",
+    "cue": "Complete a frase: \"famílias da ___\"",
+    "verseRef": "Amós 3:2",
+    "learningObjective": "Sair sabendo que ser conhecido por Jeová torna a iniquidade mais grave.",
+    "evidence": [
+      "Amós 3:2"
+    ],
+    "feedbackCorrect": "Certo: famílias da terra.",
+    "feedbackWrong": {
+      "b": "Conhecido é o que ele fez com Israel.",
+      "c": "Iniquidades são o objeto da visita."
+    },
+    "passageText": "De todas as famílias da terra só a vós vos tenho conhecido; portanto, visitarei sobre vós todas as vossas iniquidades.",
+    "template": "famílias da ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "terra"
+      },
+      {
+        "id": "b",
+        "text": "conhecido"
+      },
+      {
+        "id": "c",
+        "text": "iniquidades"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-cam-am-03-conhecido-06",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "Que relação Amós 3:2 estabelece com este contexto?",
+    "prompt": "Que relação Amós 3:2 estabelece com este contexto?",
+    "cue": "Que relação Amós 3:2 estabelece com este contexto?",
+    "verseRef": "Amós 3:2",
+    "learningObjective": "Sair sabendo que ser conhecido por Jeová torna a iniquidade mais grave.",
+    "evidence": [
+      "Amós 3:2"
+    ],
+    "feedbackCorrect": "Certo: a aliança explica a visita.",
+    "feedbackWrong": {
+      "a": "Há um “só a vós”.",
+      "c": "O povo é nomeado na segunda pessoa."
+    },
+    "passageText": "De todas as famílias da terra só a vós vos tenho conhecido; portanto, visitarei sobre vós todas as vossas iniquidades.",
+    "passageA": {
+      "ref": "Amós 3:2",
+      "text": "De todas as famílias da terra só a vós vos tenho conhecido; portanto, visitarei sobre vós todas as vossas iniquidades."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Eleição aumenta a responsabilidade"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Juízo sem eleição"
+      },
+      {
+        "id": "b",
+        "text": "Aliança que pesa"
+      },
+      {
+        "id": "c",
+        "text": "Terra sem nome"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "amos-pro-am-03-conhecido-01",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "A eleição, em Amós, aumenta a conta, não a cancela.",
+    "prompt": "A eleição, em Amós, aumenta a conta, não a cancela.",
+    "cue": "A eleição, em Amós, aumenta a conta, não a cancela.",
+    "verseRef": "Amós 3:2",
+    "learningObjective": "Sair sabendo que ser conhecido por Jeová torna a iniquidade mais grave.",
+    "evidence": [
+      "Amós 3:2"
+    ],
+    "feedbackCorrect": "Certo: ser conhecido explica a visita.",
+    "feedbackWrong": {
+      "false": "O portanto une aliança e responsabilidade."
+    },
+    "passageText": "De todas as famílias da terra só a vós vos tenho conhecido; portanto, visitarei sobre vós todas as vossas iniquidades.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "amos-pro-am-03-conhecido-02",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "profundezas",
+    "type": "tap",
+    "skill": "interpret",
+    "question": "Em Amós 3:2, toque a palavra que falta em \"___ sobre vós\"?",
+    "prompt": "Em Amós 3:2, toque a palavra que falta em \"___ sobre vós\"?",
+    "cue": "Em Amós 3:2, toque a palavra que falta em \"___ sobre vós\"?",
+    "verseRef": "Amós 3:2",
+    "learningObjective": "Sair sabendo que ser conhecido por Jeová torna a iniquidade mais grave.",
+    "evidence": [
+      "Amós 3:2"
+    ],
+    "feedbackCorrect": "Exato: visitarei sobre vós.",
+    "feedbackWrong": {
+      "a": "Famílias são o conjunto das nações.",
+      "c": "Terra é onde estão as famílias."
+    },
+    "passageText": "De todas as famílias da terra só a vós vos tenho conhecido; portanto, visitarei sobre vós todas as vossas iniquidades.",
+    "template": "___ sobre vós",
+    "options": [
+      {
+        "id": "a",
+        "text": "famílias"
+      },
+      {
+        "id": "b",
+        "text": "visitarei"
+      },
+      {
+        "id": "c",
+        "text": "terra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "amos-pro-am-03-conhecido-03",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "O que essa frase impede o povo de pensar?",
+    "prompt": "O que essa frase impede o povo de pensar?",
+    "cue": "O que essa frase impede o povo de pensar?",
+    "verseRef": "Amós 3:2",
+    "learningObjective": "Sair sabendo que ser conhecido por Jeová torna a iniquidade mais grave.",
+    "evidence": [
+      "Amós 3:2"
+    ],
+    "feedbackCorrect": "Certo: que a aliança é escudo para o mal.",
+    "feedbackWrong": {
+      "b": "O conhecer é real.",
+      "c": "A visita é a resposta.",
+      "d": "As famílias da terra estão no texto."
+    },
+    "passageText": "De todas as famílias da terra só a vós vos tenho conhecido; portanto, visitarei sobre vós todas as vossas iniquidades.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que ser de Deus dispensa a justiça."
+      },
+      {
+        "id": "b",
+        "text": "Que Jeová conhece o povo de perto."
+      },
+      {
+        "id": "c",
+        "text": "Que a iniquidade tem resposta."
+      },
+      {
+        "id": "d",
+        "text": "Que as outras famílias existem na terra."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-pro-am-03-conhecido-04",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Amós 3:2?",
+    "prompt": "Qual sequência revela o sentido de Amós 3:2?",
+    "cue": "Qual sequência revela o sentido de Amós 3:2?",
+    "verseRef": "Amós 3:2",
+    "learningObjective": "Sair sabendo que ser conhecido por Jeová torna a iniquidade mais grave.",
+    "evidence": [
+      "Amós 3:2"
+    ],
+    "feedbackCorrect": "Certo: eleição, sentido e então a visita.",
+    "feedbackWrong": {
+      "b": "O sentido do conhecer prepara o portanto.",
+      "c": "A visita fecha o versículo."
+    },
+    "passageText": "De todas as famílias da terra só a vós vos tenho conhecido; portanto, visitarei sobre vós todas as vossas iniquidades.",
+    "options": [
+      {
+        "id": "a",
+        "text": "De todas as famílias, só este povo foi conhecido."
+      },
+      {
+        "id": "b",
+        "text": "Esse conhecer é de aliança, não de informação."
+      },
+      {
+        "id": "c",
+        "text": "Por isso Jeová visitará as iniquidades deles."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-pro-am-03-conhecido-05",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Complete a frase: \"visitarei sobre ___\"",
+    "prompt": "Complete a frase: \"visitarei sobre ___\"",
+    "cue": "Complete a frase: \"visitarei sobre ___\"",
+    "verseRef": "Amós 3:2",
+    "learningObjective": "Sair sabendo que ser conhecido por Jeová torna a iniquidade mais grave.",
+    "evidence": [
+      "Amós 3:2"
+    ],
+    "feedbackCorrect": "Certo: a visita é sobre vós.",
+    "feedbackWrong": {
+      "b": "Famílias são o contraste.",
+      "c": "Terra não é o destinatário direto."
+    },
+    "passageText": "De todas as famílias da terra só a vós vos tenho conhecido; portanto, visitarei sobre vós todas as vossas iniquidades.",
+    "template": "visitarei sobre ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "vós"
+      },
+      {
+        "id": "b",
+        "text": "famílias"
+      },
+      {
+        "id": "c",
+        "text": "terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-pro-am-03-conhecido-06",
+    "trail": "amos",
+    "section": "am-03-conhecido",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "Que sentido de Amós 3:2 se liga a este contexto?",
+    "prompt": "Que sentido de Amós 3:2 se liga a este contexto?",
+    "cue": "Que sentido de Amós 3:2 se liga a este contexto?",
+    "verseRef": "Amós 3:2",
+    "learningObjective": "Sair sabendo que ser conhecido por Jeová torna a iniquidade mais grave.",
+    "evidence": [
+      "Amós 3:2"
+    ],
+    "feedbackCorrect": "Certo: eleição não cobre o mal.",
+    "feedbackWrong": {
+      "a": "O mal do povo conhecido é visitado.",
+      "c": "A visita é sobre vós, não só sobre os outros."
+    },
+    "passageText": "De todas as famílias da terra só a vós vos tenho conhecido; portanto, visitarei sobre vós todas as vossas iniquidades.",
+    "passageA": {
+      "ref": "Amós 3:2",
+      "text": "De todas as famílias da terra só a vós vos tenho conhecido; portanto, visitarei sobre vós todas as vossas iniquidades."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Eleição aumenta a responsabilidade"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Escudo para o mal"
+      },
+      {
+        "id": "b",
+        "text": "Eleição responsável"
+      },
+      {
+        "id": "c",
+        "text": "Visita às nações só"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "amos-sem-am-04-bem-01",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Amós manda buscar o bem e não o mal, para que vivam.",
+    "prompt": "Amós manda buscar o bem e não o mal, para que vivam.",
+    "cue": "Amós manda buscar o bem e não o mal, para que vivam.",
+    "verseRef": "Amós 5:14–15",
+    "learningObjective": "Sair sabendo que viver diante de Jeová inclui odiar o mal e julgar na porta.",
+    "evidence": [
+      "Amós 5:14–15"
+    ],
+    "feedbackCorrect": "Certo: a vida está ligada a buscar o bem.",
+    "feedbackWrong": {
+      "false": "A frase abre o convite."
+    },
+    "passageText": "Buscai o bem e não o mal, para que vivais; e assim Jeová, Deus dos Exércitos, será convosco, como dizeis. Aborrecei o mal, e amai o bem, e estabelecei na porta o juízo. Pode ser que Jeová, Deus dos Exércitos, se compadeça do resto de José.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "amos-sem-am-04-bem-02",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "semente",
+    "type": "tap",
+    "skill": "observe",
+    "question": "Em Amós 5:14–15, toque a palavra que falta em \"Buscai o ___ e não o mal\"?",
+    "prompt": "Em Amós 5:14–15, toque a palavra que falta em \"Buscai o ___ e não o mal\"?",
+    "cue": "Em Amós 5:14–15, toque a palavra que falta em \"Buscai o ___ e não o mal\"?",
+    "verseRef": "Amós 5:14–15",
+    "learningObjective": "Sair sabendo que viver diante de Jeová inclui odiar o mal e julgar na porta.",
+    "evidence": [
+      "Amós 5:14–15"
+    ],
+    "feedbackCorrect": "Exato: buscai o bem.",
+    "feedbackWrong": {
+      "a": "Juízo é o que se estabelece na porta.",
+      "c": "Porta é o lugar do juízo."
+    },
+    "passageText": "Buscai o bem e não o mal, para que vivais; e assim Jeová, Deus dos Exércitos, será convosco, como dizeis. Aborrecei o mal, e amai o bem, e estabelecei na porta o juízo. Pode ser que Jeová, Deus dos Exércitos, se compadeça do resto de José.",
+    "template": "Buscai o ___ e não o mal",
+    "options": [
+      {
+        "id": "a",
+        "text": "juízo"
+      },
+      {
+        "id": "b",
+        "text": "bem"
+      },
+      {
+        "id": "c",
+        "text": "porta"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "amos-sem-am-04-bem-03",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "O que Amós manda buscar para que o povo viva?",
+    "prompt": "O que Amós manda buscar para que o povo viva?",
+    "cue": "O que Amós manda buscar para que o povo viva?",
+    "verseRef": "Amós 5:14–15",
+    "learningObjective": "Sair sabendo que viver diante de Jeová inclui odiar o mal e julgar na porta.",
+    "evidence": [
+      "Amós 5:14–15"
+    ],
+    "feedbackCorrect": "Certo: o bem, e não o mal.",
+    "feedbackWrong": {
+      "b": "A porta entra no mandamento.",
+      "c": "O mal é o que se deve aborrecer.",
+      "d": "A compaixão é de Jeová, não o atalho."
+    },
+    "passageText": "Buscai o bem e não o mal, para que vivais; e assim Jeová, Deus dos Exércitos, será convosco, como dizeis. Aborrecei o mal, e amai o bem, e estabelecei na porta o juízo. Pode ser que Jeová, Deus dos Exércitos, se compadeça do resto de José.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O bem, em vez do mal."
+      },
+      {
+        "id": "b",
+        "text": "Só o altar, sem olhar a porta."
+      },
+      {
+        "id": "c",
+        "text": "O mal, para conhecer o bem depois."
+      },
+      {
+        "id": "d",
+        "text": "A compaixão, sem mudar o juízo."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-sem-am-04-bem-04",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Qual é a ordem dos fatos em Amós 5:14–15?",
+    "prompt": "Qual é a ordem dos fatos em Amós 5:14–15?",
+    "cue": "Qual é a ordem dos fatos em Amós 5:14–15?",
+    "verseRef": "Amós 5:14–15",
+    "learningObjective": "Sair sabendo que viver diante de Jeová inclui odiar o mal e julgar na porta.",
+    "evidence": [
+      "Amós 5:14–15"
+    ],
+    "feedbackCorrect": "Certo: buscar, odiar o mal e então a porta.",
+    "feedbackWrong": {
+      "b": "Odiar o mal especifica a busca.",
+      "c": "A porta é o lugar concreto do juízo."
+    },
+    "passageText": "Buscai o bem e não o mal, para que vivais; e assim Jeová, Deus dos Exércitos, será convosco, como dizeis. Aborrecei o mal, e amai o bem, e estabelecei na porta o juízo. Pode ser que Jeová, Deus dos Exércitos, se compadeça do resto de José.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Buscai o bem e não o mal, para que vivais."
+      },
+      {
+        "id": "b",
+        "text": "Aborrecei o mal e amai o bem."
+      },
+      {
+        "id": "c",
+        "text": "Estabelecei o juízo na porta."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-sem-am-04-bem-05",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Complete a frase: \"para que ___\"",
+    "prompt": "Complete a frase: \"para que ___\"",
+    "cue": "Complete a frase: \"para que ___\"",
+    "verseRef": "Amós 5:14–15",
+    "learningObjective": "Sair sabendo que viver diante de Jeová inclui odiar o mal e julgar na porta.",
+    "evidence": [
+      "Amós 5:14–15"
+    ],
+    "feedbackCorrect": "Certo: buscai o bem para que vivais.",
+    "feedbackWrong": {
+      "b": "Mal é o que se evita.",
+      "c": "Porta é o lugar do juízo."
+    },
+    "passageText": "Buscai o bem e não o mal, para que vivais; e assim Jeová, Deus dos Exércitos, será convosco, como dizeis. Aborrecei o mal, e amai o bem, e estabelecei na porta o juízo. Pode ser que Jeová, Deus dos Exércitos, se compadeça do resto de José.",
+    "template": "para que ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "vivais"
+      },
+      {
+        "id": "b",
+        "text": "mal"
+      },
+      {
+        "id": "c",
+        "text": "porta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-sem-am-04-bem-06",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Amós 5:14–15 comunica que se liga a este contexto?",
+    "prompt": "O que Amós 5:14–15 comunica que se liga a este contexto?",
+    "cue": "O que Amós 5:14–15 comunica que se liga a este contexto?",
+    "verseRef": "Amós 5:14–15",
+    "learningObjective": "Sair sabendo que viver diante de Jeová inclui odiar o mal e julgar na porta.",
+    "evidence": [
+      "Amós 5:14–15"
+    ],
+    "feedbackCorrect": "Certo: o bem desce até o juízo público.",
+    "feedbackWrong": {
+      "b": "O altar não substitui a porta.",
+      "c": "O mal é o que se deve odiar."
+    },
+    "passageText": "Buscai o bem e não o mal, para que vivais; e assim Jeová, Deus dos Exércitos, será convosco, como dizeis. Aborrecei o mal, e amai o bem, e estabelecei na porta o juízo. Pode ser que Jeová, Deus dos Exércitos, se compadeça do resto de José.",
+    "passageA": {
+      "ref": "Amós 5:14–15",
+      "text": "Buscai o bem e não o mal, para que vivais; e assim Jeová, Deus dos Exércitos, será convosco, como dizeis. Aborrecei o mal, e amai o bem, e estabelecei na porta o juízo. Pode ser que Jeová, Deus dos Exércitos, se compadeça do resto de José."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus pede o bem, não só o culto"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Bem na porta"
+      },
+      {
+        "id": "b",
+        "text": "Culto sozinho"
+      },
+      {
+        "id": "c",
+        "text": "Mal útil"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-cam-am-04-bem-01",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "O juízo deve ficar fora da porta, só dentro do templo.",
+    "prompt": "O juízo deve ficar fora da porta, só dentro do templo.",
+    "cue": "O juízo deve ficar fora da porta, só dentro do templo.",
+    "verseRef": "Amós 5:14–15",
+    "learningObjective": "Sair sabendo que viver diante de Jeová inclui odiar o mal e julgar na porta.",
+    "evidence": [
+      "Amós 5:14–15"
+    ],
+    "feedbackCorrect": "Certo: o juízo se estabelece na porta.",
+    "feedbackWrong": {
+      "true": "A porta é o lugar nomeado."
+    },
+    "passageText": "Buscai o bem e não o mal, para que vivais; e assim Jeová, Deus dos Exércitos, será convosco, como dizeis. Aborrecei o mal, e amai o bem, e estabelecei na porta o juízo. Pode ser que Jeová, Deus dos Exércitos, se compadeça do resto de José.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "id": "amos-cam-am-04-bem-02",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "caminhada",
+    "type": "tap",
+    "skill": "understand",
+    "question": "Em Amós 5:14–15, toque a palavra que falta em \"na ___ o juízo\"?",
+    "prompt": "Em Amós 5:14–15, toque a palavra que falta em \"na ___ o juízo\"?",
+    "cue": "Em Amós 5:14–15, toque a palavra que falta em \"na ___ o juízo\"?",
+    "verseRef": "Amós 5:14–15",
+    "learningObjective": "Sair sabendo que viver diante de Jeová inclui odiar o mal e julgar na porta.",
+    "evidence": [
+      "Amós 5:14–15"
+    ],
+    "feedbackCorrect": "Exato: o juízo é na porta.",
+    "feedbackWrong": {
+      "a": "Bem é o que se busca.",
+      "c": "Mal é o que se aborrece."
+    },
+    "passageText": "Buscai o bem e não o mal, para que vivais; e assim Jeová, Deus dos Exércitos, será convosco, como dizeis. Aborrecei o mal, e amai o bem, e estabelecei na porta o juízo. Pode ser que Jeová, Deus dos Exércitos, se compadeça do resto de José.",
+    "template": "na ___ o juízo",
+    "options": [
+      {
+        "id": "a",
+        "text": "bem"
+      },
+      {
+        "id": "b",
+        "text": "porta"
+      },
+      {
+        "id": "c",
+        "text": "mal"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "amos-cam-am-04-bem-03",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "O que “na porta” acrescenta ao buscar o bem?",
+    "prompt": "O que “na porta” acrescenta ao buscar o bem?",
+    "cue": "O que “na porta” acrescenta ao buscar o bem?",
+    "verseRef": "Amós 5:14–15",
+    "learningObjective": "Sair sabendo que viver diante de Jeová inclui odiar o mal e julgar na porta.",
+    "evidence": [
+      "Amós 5:14–15"
+    ],
+    "feedbackCorrect": "Certo: o bem chega ao julgamento público.",
+    "feedbackWrong": {
+      "b": "Odiar o mal continua no texto.",
+      "c": "O juízo na porta é público.",
+      "d": "O para que vivais liga a busca à vida."
+    },
+    "passageText": "Buscai o bem e não o mal, para que vivais; e assim Jeová, Deus dos Exércitos, será convosco, como dizeis. Aborrecei o mal, e amai o bem, e estabelecei na porta o juízo. Pode ser que Jeová, Deus dos Exércitos, se compadeça do resto de José.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A justiça tem de aparecer onde as causas se julgam."
+      },
+      {
+        "id": "b",
+        "text": "A porta dispensa odiar o mal."
+      },
+      {
+        "id": "c",
+        "text": "O templo substitui a causa do pobre."
+      },
+      {
+        "id": "d",
+        "text": "Viver não depende do que se busca."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-cam-am-04-bem-04",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Amós 5:14–15?",
+    "prompt": "Como se encadeiam os eventos de Amós 5:14–15?",
+    "cue": "Como se encadeiam os eventos de Amós 5:14–15?",
+    "verseRef": "Amós 5:14–15",
+    "learningObjective": "Sair sabendo que viver diante de Jeová inclui odiar o mal e julgar na porta.",
+    "evidence": [
+      "Amós 5:14–15"
+    ],
+    "feedbackCorrect": "Certo: buscar, odiar o mal e então a porta.",
+    "feedbackWrong": {
+      "b": "Odiar o mal especifica a busca.",
+      "c": "A porta é o lugar concreto do juízo."
+    },
+    "passageText": "Buscai o bem e não o mal, para que vivais; e assim Jeová, Deus dos Exércitos, será convosco, como dizeis. Aborrecei o mal, e amai o bem, e estabelecei na porta o juízo. Pode ser que Jeová, Deus dos Exércitos, se compadeça do resto de José.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Buscai o bem e não o mal, para que vivais."
+      },
+      {
+        "id": "b",
+        "text": "Aborrecei o mal e amai o bem."
+      },
+      {
+        "id": "c",
+        "text": "Estabelecei o juízo na porta."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-cam-am-04-bem-05",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Complete a frase: \"estabelecei na porta o ___\"",
+    "prompt": "Complete a frase: \"estabelecei na porta o ___\"",
+    "cue": "Complete a frase: \"estabelecei na porta o ___\"",
+    "verseRef": "Amós 5:14–15",
+    "learningObjective": "Sair sabendo que viver diante de Jeová inclui odiar o mal e julgar na porta.",
+    "evidence": [
+      "Amós 5:14–15"
+    ],
+    "feedbackCorrect": "Certo: o que se estabelece é o juízo.",
+    "feedbackWrong": {
+      "b": "Bem é o que se busca e se ama.",
+      "c": "Mal é o que se aborrece."
+    },
+    "passageText": "Buscai o bem e não o mal, para que vivais; e assim Jeová, Deus dos Exércitos, será convosco, como dizeis. Aborrecei o mal, e amai o bem, e estabelecei na porta o juízo. Pode ser que Jeová, Deus dos Exércitos, se compadeça do resto de José.",
+    "template": "estabelecei na porta o ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "juízo"
+      },
+      {
+        "id": "b",
+        "text": "bem"
+      },
+      {
+        "id": "c",
+        "text": "mal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-cam-am-04-bem-06",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "Que relação Amós 5:14–15 estabelece com este contexto?",
+    "prompt": "Que relação Amós 5:14–15 estabelece com este contexto?",
+    "cue": "Que relação Amós 5:14–15 estabelece com este contexto?",
+    "verseRef": "Amós 5:14–15",
+    "learningObjective": "Sair sabendo que viver diante de Jeová inclui odiar o mal e julgar na porta.",
+    "evidence": [
+      "Amós 5:14–15"
+    ],
+    "feedbackCorrect": "Certo: buscar o bem é para que vivam.",
+    "feedbackWrong": {
+      "a": "A vida está ligada ao bem.",
+      "c": "A porta é onde o juízo se abre."
+    },
+    "passageText": "Buscai o bem e não o mal, para que vivais; e assim Jeová, Deus dos Exércitos, será convosco, como dizeis. Aborrecei o mal, e amai o bem, e estabelecei na porta o juízo. Pode ser que Jeová, Deus dos Exércitos, se compadeça do resto de José.",
+    "passageA": {
+      "ref": "Amós 5:14–15",
+      "text": "Buscai o bem e não o mal, para que vivais; e assim Jeová, Deus dos Exércitos, será convosco, como dizeis. Aborrecei o mal, e amai o bem, e estabelecei na porta o juízo. Pode ser que Jeová, Deus dos Exércitos, se compadeça do resto de José."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus pede o bem, não só o culto"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vida sem justiça"
+      },
+      {
+        "id": "b",
+        "text": "Justiça que faz viver"
+      },
+      {
+        "id": "c",
+        "text": "Porta fechada"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "amos-pro-am-04-bem-01",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Há esperança de compaixão para o resto de José.",
+    "prompt": "Há esperança de compaixão para o resto de José.",
+    "cue": "Há esperança de compaixão para o resto de José.",
+    "verseRef": "Amós 5:14–15",
+    "learningObjective": "Sair sabendo que viver diante de Jeová inclui odiar o mal e julgar na porta.",
+    "evidence": [
+      "Amós 5:14–15"
+    ],
+    "feedbackCorrect": "Certo: pode ser que Jeová se compadeça.",
+    "feedbackWrong": {
+      "false": "A compaixão é possibilidade, não automática."
+    },
+    "passageText": "Buscai o bem e não o mal, para que vivais; e assim Jeová, Deus dos Exércitos, será convosco, como dizeis. Aborrecei o mal, e amai o bem, e estabelecei na porta o juízo. Pode ser que Jeová, Deus dos Exércitos, se compadeça do resto de José.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "amos-pro-am-04-bem-02",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "profundezas",
+    "type": "tap",
+    "skill": "interpret",
+    "question": "Em Amós 5:14–15, toque a palavra que falta em \"Aborrecei o ___\"?",
+    "prompt": "Em Amós 5:14–15, toque a palavra que falta em \"Aborrecei o ___\"?",
+    "cue": "Em Amós 5:14–15, toque a palavra que falta em \"Aborrecei o ___\"?",
+    "verseRef": "Amós 5:14–15",
+    "learningObjective": "Sair sabendo que viver diante de Jeová inclui odiar o mal e julgar na porta.",
+    "evidence": [
+      "Amós 5:14–15"
+    ],
+    "feedbackCorrect": "Exato: aborrecei o mal.",
+    "feedbackWrong": {
+      "a": "Bem é o que se ama.",
+      "c": "Porta é onde o juízo se estabelece."
+    },
+    "passageText": "Buscai o bem e não o mal, para que vivais; e assim Jeová, Deus dos Exércitos, será convosco, como dizeis. Aborrecei o mal, e amai o bem, e estabelecei na porta o juízo. Pode ser que Jeová, Deus dos Exércitos, se compadeça do resto de José.",
+    "template": "Aborrecei o ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "bem"
+      },
+      {
+        "id": "b",
+        "text": "mal"
+      },
+      {
+        "id": "c",
+        "text": "porta"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "amos-pro-am-04-bem-03",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Como a compaixão aparece no convite?",
+    "prompt": "Como a compaixão aparece no convite?",
+    "cue": "Como a compaixão aparece no convite?",
+    "verseRef": "Amós 5:14–15",
+    "learningObjective": "Sair sabendo que viver diante de Jeová inclui odiar o mal e julgar na porta.",
+    "evidence": [
+      "Amós 5:14–15"
+    ],
+    "feedbackCorrect": "Certo: como possibilidade depois da volta ao bem.",
+    "feedbackWrong": {
+      "b": "O convite vem antes do “pode ser”.",
+      "c": "Há um resto de quem ele pode se compadecer.",
+      "d": "O juízo na porta cabe na mesma fala."
+    },
+    "passageText": "Buscai o bem e não o mal, para que vivais; e assim Jeová, Deus dos Exércitos, será convosco, como dizeis. Aborrecei o mal, e amai o bem, e estabelecei na porta o juízo. Pode ser que Jeová, Deus dos Exércitos, se compadeça do resto de José.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pode ser que Jeová se compadeça do resto."
+      },
+      {
+        "id": "b",
+        "text": "A compaixão chega sem buscar o bem."
+      },
+      {
+        "id": "c",
+        "text": "O resto de José já está fora do alcance."
+      },
+      {
+        "id": "d",
+        "text": "Estabelecer o juízo fecha a misericórdia."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-pro-am-04-bem-04",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Amós 5:14–15?",
+    "prompt": "Qual sequência revela o sentido de Amós 5:14–15?",
+    "cue": "Qual sequência revela o sentido de Amós 5:14–15?",
+    "verseRef": "Amós 5:14–15",
+    "learningObjective": "Sair sabendo que viver diante de Jeová inclui odiar o mal e julgar na porta.",
+    "evidence": [
+      "Amós 5:14–15"
+    ],
+    "feedbackCorrect": "Certo: buscar, odiar o mal e então a porta.",
+    "feedbackWrong": {
+      "b": "Odiar o mal especifica a busca.",
+      "c": "A porta é o lugar concreto do juízo."
+    },
+    "passageText": "Buscai o bem e não o mal, para que vivais; e assim Jeová, Deus dos Exércitos, será convosco, como dizeis. Aborrecei o mal, e amai o bem, e estabelecei na porta o juízo. Pode ser que Jeová, Deus dos Exércitos, se compadeça do resto de José.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Buscai o bem e não o mal, para que vivais."
+      },
+      {
+        "id": "b",
+        "text": "Aborrecei o mal e amai o bem."
+      },
+      {
+        "id": "c",
+        "text": "Estabelecei o juízo na porta."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-pro-am-04-bem-05",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Complete a frase: \"do resto de ___\"",
+    "prompt": "Complete a frase: \"do resto de ___\"",
+    "cue": "Complete a frase: \"do resto de ___\"",
+    "verseRef": "Amós 5:14–15",
+    "learningObjective": "Sair sabendo que viver diante de Jeová inclui odiar o mal e julgar na porta.",
+    "evidence": [
+      "Amós 5:14–15"
+    ],
+    "feedbackCorrect": "Certo: o resto é de José.",
+    "feedbackWrong": {
+      "b": "Porta é o lugar do juízo.",
+      "c": "Bem é o caminho, não o nome do resto."
+    },
+    "passageText": "Buscai o bem e não o mal, para que vivais; e assim Jeová, Deus dos Exércitos, será convosco, como dizeis. Aborrecei o mal, e amai o bem, e estabelecei na porta o juízo. Pode ser que Jeová, Deus dos Exércitos, se compadeça do resto de José.",
+    "template": "do resto de ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "José"
+      },
+      {
+        "id": "b",
+        "text": "porta"
+      },
+      {
+        "id": "c",
+        "text": "bem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-pro-am-04-bem-06",
+    "trail": "amos",
+    "section": "am-04-bem",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "Que sentido de Amós 5:14–15 se liga a este contexto?",
+    "prompt": "Que sentido de Amós 5:14–15 se liga a este contexto?",
+    "cue": "Que sentido de Amós 5:14–15 se liga a este contexto?",
+    "verseRef": "Amós 5:14–15",
+    "learningObjective": "Sair sabendo que viver diante de Jeová inclui odiar o mal e julgar na porta.",
+    "evidence": [
+      "Amós 5:14–15"
+    ],
+    "feedbackCorrect": "Certo: a compaixão não pula a justiça.",
+    "feedbackWrong": {
+      "a": "Há juízo na porta.",
+      "c": "O resto de José ainda é nomeado."
+    },
+    "passageText": "Buscai o bem e não o mal, para que vivais; e assim Jeová, Deus dos Exércitos, será convosco, como dizeis. Aborrecei o mal, e amai o bem, e estabelecei na porta o juízo. Pode ser que Jeová, Deus dos Exércitos, se compadeça do resto de José.",
+    "passageA": {
+      "ref": "Amós 5:14–15",
+      "text": "Buscai o bem e não o mal, para que vivais; e assim Jeová, Deus dos Exércitos, será convosco, como dizeis. Aborrecei o mal, e amai o bem, e estabelecei na porta o juízo. Pode ser que Jeová, Deus dos Exércitos, se compadeça do resto de José."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus pede o bem, não só o culto"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Misericórdia barata"
+      },
+      {
+        "id": "b",
+        "text": "Volta que julga reto"
+      },
+      {
+        "id": "c",
+        "text": "Resto esquecido"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "amos-sem-am-05-pastor-01",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Amós diz a Amazias que não era profeta nem filho de profeta.",
+    "prompt": "Amós diz a Amazias que não era profeta nem filho de profeta.",
+    "cue": "Amós diz a Amazias que não era profeta nem filho de profeta.",
+    "verseRef": "Amós 7:14–15",
+    "learningObjective": "Sair sabendo que Jeová tirou Amós do rebanho para profetizar a Israel.",
+    "evidence": [
+      "Amós 7:14–15"
+    ],
+    "feedbackCorrect": "Certo: ele nega a carreira de profeta.",
+    "feedbackWrong": {
+      "false": "A resposta começa com essa negativa."
+    },
+    "passageText": "Então, respondeu Amós e disse a Amazias: Eu não era profeta nem filho de profeta, mas era pastor de gado e cultivador de sicômoros. Jeová tirou-me de seguir o rebanho e disse-me: Vai, profetiza ao meu povo de Israel.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "amos-sem-am-05-pastor-02",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "semente",
+    "type": "tap",
+    "skill": "observe",
+    "question": "Em Amós 7:14–15, toque a palavra que falta em \"Eu não era ___\"?",
+    "prompt": "Em Amós 7:14–15, toque a palavra que falta em \"Eu não era ___\"?",
+    "cue": "Em Amós 7:14–15, toque a palavra que falta em \"Eu não era ___\"?",
+    "verseRef": "Amós 7:14–15",
+    "learningObjective": "Sair sabendo que Jeová tirou Amós do rebanho para profetizar a Israel.",
+    "evidence": [
+      "Amós 7:14–15"
+    ],
+    "feedbackCorrect": "Exato: ele não era profeta.",
+    "feedbackWrong": {
+      "a": "Gado é o que pastoreava.",
+      "c": "Rebanho é de onde Jeová o tirou."
+    },
+    "passageText": "Então, respondeu Amós e disse a Amazias: Eu não era profeta nem filho de profeta, mas era pastor de gado e cultivador de sicômoros. Jeová tirou-me de seguir o rebanho e disse-me: Vai, profetiza ao meu povo de Israel.",
+    "template": "Eu não era ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "gado"
+      },
+      {
+        "id": "b",
+        "text": "profeta"
+      },
+      {
+        "id": "c",
+        "text": "rebanho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "amos-sem-am-05-pastor-03",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Quem tirou Amós de seguir o rebanho?",
+    "prompt": "Quem tirou Amós de seguir o rebanho?",
+    "cue": "Quem tirou Amós de seguir o rebanho?",
+    "verseRef": "Amós 7:14–15",
+    "learningObjective": "Sair sabendo que Jeová tirou Amós do rebanho para profetizar a Israel.",
+    "evidence": [
+      "Amós 7:14–15"
+    ],
+    "feedbackCorrect": "Certo: Jeová, para profetizar a Israel.",
+    "feedbackWrong": {
+      "b": "Amazias é quem ouve a resposta.",
+      "c": "Amós não se apresenta como candidato.",
+      "d": "O rebanho é o lugar de onde sai."
+    },
+    "passageText": "Então, respondeu Amós e disse a Amazias: Eu não era profeta nem filho de profeta, mas era pastor de gado e cultivador de sicômoros. Jeová tirou-me de seguir o rebanho e disse-me: Vai, profetiza ao meu povo de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová, e o mandou a Israel."
+      },
+      {
+        "id": "b",
+        "text": "Amazias, para calar a profecia."
+      },
+      {
+        "id": "c",
+        "text": "O próprio Amós, por ambição de ofício."
+      },
+      {
+        "id": "d",
+        "text": "O rebanho, que o rejeitou."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-sem-am-05-pastor-04",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Qual é a ordem dos fatos em Amós 7:14–15?",
+    "prompt": "Qual é a ordem dos fatos em Amós 7:14–15?",
+    "cue": "Qual é a ordem dos fatos em Amós 7:14–15?",
+    "verseRef": "Amós 7:14–15",
+    "learningObjective": "Sair sabendo que Jeová tirou Amós do rebanho para profetizar a Israel.",
+    "evidence": [
+      "Amós 7:14–15"
+    ],
+    "feedbackCorrect": "Certo: negativa, ofício e então o envio.",
+    "feedbackWrong": {
+      "b": "O ofício explica de onde ele veio.",
+      "c": "O envio fecha a resposta a Amazias."
+    },
+    "passageText": "Então, respondeu Amós e disse a Amazias: Eu não era profeta nem filho de profeta, mas era pastor de gado e cultivador de sicômoros. Jeová tirou-me de seguir o rebanho e disse-me: Vai, profetiza ao meu povo de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amós diz que não era profeta nem filho de profeta."
+      },
+      {
+        "id": "b",
+        "text": "Era pastor de gado e cultivava sicômoros."
+      },
+      {
+        "id": "c",
+        "text": "Jeová o tirou do rebanho e o mandou a Israel."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-sem-am-05-pastor-05",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Complete a frase: \"cultivador de ___\"",
+    "prompt": "Complete a frase: \"cultivador de ___\"",
+    "cue": "Complete a frase: \"cultivador de ___\"",
+    "verseRef": "Amós 7:14–15",
+    "learningObjective": "Sair sabendo que Jeová tirou Amós do rebanho para profetizar a Israel.",
+    "evidence": [
+      "Amós 7:14–15"
+    ],
+    "feedbackCorrect": "Certo: ele cultivava sicômoros.",
+    "feedbackWrong": {
+      "b": "Profeta é o que ele não era.",
+      "c": "Rebanho é o pastoreio."
+    },
+    "passageText": "Então, respondeu Amós e disse a Amazias: Eu não era profeta nem filho de profeta, mas era pastor de gado e cultivador de sicômoros. Jeová tirou-me de seguir o rebanho e disse-me: Vai, profetiza ao meu povo de Israel.",
+    "template": "cultivador de ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "sicômoros"
+      },
+      {
+        "id": "b",
+        "text": "profeta"
+      },
+      {
+        "id": "c",
+        "text": "rebanho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-sem-am-05-pastor-06",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Amós 7:14–15 comunica que se liga a este contexto?",
+    "prompt": "O que Amós 7:14–15 comunica que se liga a este contexto?",
+    "cue": "O que Amós 7:14–15 comunica que se liga a este contexto?",
+    "verseRef": "Amós 7:14–15",
+    "learningObjective": "Sair sabendo que Jeová tirou Amós do rebanho para profetizar a Israel.",
+    "evidence": [
+      "Amós 7:14–15"
+    ],
+    "feedbackCorrect": "Certo: Jeová tira o pastor do rebanho.",
+    "feedbackWrong": {
+      "b": "Ele nega ser filho de profeta.",
+      "c": "A ordem é ir e profetizar."
+    },
+    "passageText": "Então, respondeu Amós e disse a Amazias: Eu não era profeta nem filho de profeta, mas era pastor de gado e cultivador de sicômoros. Jeová tirou-me de seguir o rebanho e disse-me: Vai, profetiza ao meu povo de Israel.",
+    "passageA": {
+      "ref": "Amós 7:14–15",
+      "text": "Então, respondeu Amós e disse a Amazias: Eu não era profeta nem filho de profeta, mas era pastor de gado e cultivador de sicômoros. Jeová tirou-me de seguir o rebanho e disse-me: Vai, profetiza ao meu povo de Israel."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus chama quem não se candidatou"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Chamado do campo"
+      },
+      {
+        "id": "b",
+        "text": "Escola de profetas"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio pedido"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-cam-am-05-pastor-01",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Amós se ofereceu sozinho para deixar o rebanho.",
+    "prompt": "Amós se ofereceu sozinho para deixar o rebanho.",
+    "cue": "Amós se ofereceu sozinho para deixar o rebanho.",
+    "verseRef": "Amós 7:14–15",
+    "learningObjective": "Sair sabendo que Jeová tirou Amós do rebanho para profetizar a Israel.",
+    "evidence": [
+      "Amós 7:14–15"
+    ],
+    "feedbackCorrect": "Certo: Jeová o tirou de seguir o rebanho.",
+    "feedbackWrong": {
+      "true": "O sujeito do chamado é Jeová."
+    },
+    "passageText": "Então, respondeu Amós e disse a Amazias: Eu não era profeta nem filho de profeta, mas era pastor de gado e cultivador de sicômoros. Jeová tirou-me de seguir o rebanho e disse-me: Vai, profetiza ao meu povo de Israel.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "id": "amos-cam-am-05-pastor-02",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "caminhada",
+    "type": "tap",
+    "skill": "understand",
+    "question": "Em Amós 7:14–15, toque a palavra que falta em \"pastor de ___\"?",
+    "prompt": "Em Amós 7:14–15, toque a palavra que falta em \"pastor de ___\"?",
+    "cue": "Em Amós 7:14–15, toque a palavra que falta em \"pastor de ___\"?",
+    "verseRef": "Amós 7:14–15",
+    "learningObjective": "Sair sabendo que Jeová tirou Amós do rebanho para profetizar a Israel.",
+    "evidence": [
+      "Amós 7:14–15"
+    ],
+    "feedbackCorrect": "Exato: era pastor de gado.",
+    "feedbackWrong": {
+      "a": "Profeta é o que ele não era.",
+      "c": "Israel é o povo a quem vai."
+    },
+    "passageText": "Então, respondeu Amós e disse a Amazias: Eu não era profeta nem filho de profeta, mas era pastor de gado e cultivador de sicômoros. Jeová tirou-me de seguir o rebanho e disse-me: Vai, profetiza ao meu povo de Israel.",
+    "template": "pastor de ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "profeta"
+      },
+      {
+        "id": "b",
+        "text": "gado"
+      },
+      {
+        "id": "c",
+        "text": "Israel"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "amos-cam-am-05-pastor-03",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "O que a negativa “não era profeta” protege?",
+    "prompt": "O que a negativa “não era profeta” protege?",
+    "cue": "O que a negativa “não era profeta” protege?",
+    "verseRef": "Amós 7:14–15",
+    "learningObjective": "Sair sabendo que Jeová tirou Amós do rebanho para profetizar a Israel.",
+    "evidence": [
+      "Amós 7:14–15"
+    ],
+    "feedbackCorrect": "Certo: o chamado não nasce do currículo.",
+    "feedbackWrong": {
+      "b": "Ele conta o ofício antigo.",
+      "c": "O mandato é ao povo de Israel.",
+      "d": "Sicômoros são cultivo, não sacerdócio."
+    },
+    "passageText": "Então, respondeu Amós e disse a Amazias: Eu não era profeta nem filho de profeta, mas era pastor de gado e cultivador de sicômoros. Jeová tirou-me de seguir o rebanho e disse-me: Vai, profetiza ao meu povo de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A palavra vem de Jeová, não da escola."
+      },
+      {
+        "id": "b",
+        "text": "Amós esconde que cuidava de gado."
+      },
+      {
+        "id": "c",
+        "text": "Israel deixa de ser o destinatário."
+      },
+      {
+        "id": "d",
+        "text": "Sicômoros provam que ele já era sacerdote."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-cam-am-05-pastor-04",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Amós 7:14–15?",
+    "prompt": "Como se encadeiam os eventos de Amós 7:14–15?",
+    "cue": "Como se encadeiam os eventos de Amós 7:14–15?",
+    "verseRef": "Amós 7:14–15",
+    "learningObjective": "Sair sabendo que Jeová tirou Amós do rebanho para profetizar a Israel.",
+    "evidence": [
+      "Amós 7:14–15"
+    ],
+    "feedbackCorrect": "Certo: negativa, ofício e então o envio.",
+    "feedbackWrong": {
+      "b": "O ofício explica de onde ele veio.",
+      "c": "O envio fecha a resposta a Amazias."
+    },
+    "passageText": "Então, respondeu Amós e disse a Amazias: Eu não era profeta nem filho de profeta, mas era pastor de gado e cultivador de sicômoros. Jeová tirou-me de seguir o rebanho e disse-me: Vai, profetiza ao meu povo de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amós diz que não era profeta nem filho de profeta."
+      },
+      {
+        "id": "b",
+        "text": "Era pastor de gado e cultivava sicômoros."
+      },
+      {
+        "id": "c",
+        "text": "Jeová o tirou do rebanho e o mandou a Israel."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-cam-am-05-pastor-05",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Complete a frase: \"ao meu povo de ___\"",
+    "prompt": "Complete a frase: \"ao meu povo de ___\"",
+    "cue": "Complete a frase: \"ao meu povo de ___\"",
+    "verseRef": "Amós 7:14–15",
+    "learningObjective": "Sair sabendo que Jeová tirou Amós do rebanho para profetizar a Israel.",
+    "evidence": [
+      "Amós 7:14–15"
+    ],
+    "feedbackCorrect": "Certo: o povo é Israel.",
+    "feedbackWrong": {
+      "b": "Gado é o ofício antigo.",
+      "c": "Profeta é o título que ele recusa."
+    },
+    "passageText": "Então, respondeu Amós e disse a Amazias: Eu não era profeta nem filho de profeta, mas era pastor de gado e cultivador de sicômoros. Jeová tirou-me de seguir o rebanho e disse-me: Vai, profetiza ao meu povo de Israel.",
+    "template": "ao meu povo de ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "Israel"
+      },
+      {
+        "id": "b",
+        "text": "gado"
+      },
+      {
+        "id": "c",
+        "text": "profeta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-cam-am-05-pastor-06",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "Que relação Amós 7:14–15 estabelece com este contexto?",
+    "prompt": "Que relação Amós 7:14–15 estabelece com este contexto?",
+    "cue": "Que relação Amós 7:14–15 estabelece com este contexto?",
+    "verseRef": "Amós 7:14–15",
+    "learningObjective": "Sair sabendo que Jeová tirou Amós do rebanho para profetizar a Israel.",
+    "evidence": [
+      "Amós 7:14–15"
+    ],
+    "feedbackCorrect": "Certo: a autoridade é o chamado.",
+    "feedbackWrong": {
+      "a": "O ofício antigo não é a fonte.",
+      "c": "O rebanho é o que ele deixa."
+    },
+    "passageText": "Então, respondeu Amós e disse a Amazias: Eu não era profeta nem filho de profeta, mas era pastor de gado e cultivador de sicômoros. Jeová tirou-me de seguir o rebanho e disse-me: Vai, profetiza ao meu povo de Israel.",
+    "passageA": {
+      "ref": "Amós 7:14–15",
+      "text": "Então, respondeu Amós e disse a Amazias: Eu não era profeta nem filho de profeta, mas era pastor de gado e cultivador de sicômoros. Jeová tirou-me de seguir o rebanho e disse-me: Vai, profetiza ao meu povo de Israel."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus chama quem não se candidatou"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Currículo primeiro"
+      },
+      {
+        "id": "b",
+        "text": "Palavra que chama"
+      },
+      {
+        "id": "c",
+        "text": "Rebanho como fim"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "amos-pro-am-05-pastor-01",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "O chamado alcança quem estava no trabalho comum.",
+    "prompt": "O chamado alcança quem estava no trabalho comum.",
+    "cue": "O chamado alcança quem estava no trabalho comum.",
+    "verseRef": "Amós 7:14–15",
+    "learningObjective": "Sair sabendo que Jeová tirou Amós do rebanho para profetizar a Israel.",
+    "evidence": [
+      "Amós 7:14–15"
+    ],
+    "feedbackCorrect": "Certo: pastor e cultivador é enviado.",
+    "feedbackWrong": {
+      "false": "Gado e sicômoros são o ofício anterior."
+    },
+    "passageText": "Então, respondeu Amós e disse a Amazias: Eu não era profeta nem filho de profeta, mas era pastor de gado e cultivador de sicômoros. Jeová tirou-me de seguir o rebanho e disse-me: Vai, profetiza ao meu povo de Israel.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "amos-pro-am-05-pastor-02",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "profundezas",
+    "type": "tap",
+    "skill": "interpret",
+    "question": "Em Amós 7:14–15, toque a palavra que falta em \"seguir o ___\"?",
+    "prompt": "Em Amós 7:14–15, toque a palavra que falta em \"seguir o ___\"?",
+    "cue": "Em Amós 7:14–15, toque a palavra que falta em \"seguir o ___\"?",
+    "verseRef": "Amós 7:14–15",
+    "learningObjective": "Sair sabendo que Jeová tirou Amós do rebanho para profetizar a Israel.",
+    "evidence": [
+      "Amós 7:14–15"
+    ],
+    "feedbackCorrect": "Exato: Jeová o tirou de seguir o rebanho.",
+    "feedbackWrong": {
+      "a": "Profeta é o ofício negado.",
+      "c": "Gado especifica o pastoreio."
+    },
+    "passageText": "Então, respondeu Amós e disse a Amazias: Eu não era profeta nem filho de profeta, mas era pastor de gado e cultivador de sicômoros. Jeová tirou-me de seguir o rebanho e disse-me: Vai, profetiza ao meu povo de Israel.",
+    "template": "seguir o ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "profeta"
+      },
+      {
+        "id": "b",
+        "text": "rebanho"
+      },
+      {
+        "id": "c",
+        "text": "gado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "amos-pro-am-05-pastor-03",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "O que esse chamado ensina sobre quem Deus envia?",
+    "prompt": "O que esse chamado ensina sobre quem Deus envia?",
+    "cue": "O que esse chamado ensina sobre quem Deus envia?",
+    "verseRef": "Amós 7:14–15",
+    "learningObjective": "Sair sabendo que Jeová tirou Amós do rebanho para profetizar a Israel.",
+    "evidence": [
+      "Amós 7:14–15"
+    ],
+    "feedbackCorrect": "Certo: ele tira gente do trabalho comum.",
+    "feedbackWrong": {
+      "b": "Amós nega ser filho de profeta.",
+      "c": "Jeová o tira do rebanho para falar.",
+      "d": "Quem envia é Jeová, não Amazias."
+    },
+    "passageText": "Então, respondeu Amós e disse a Amazias: Eu não era profeta nem filho de profeta, mas era pastor de gado e cultivador de sicômoros. Jeová tirou-me de seguir o rebanho e disse-me: Vai, profetiza ao meu povo de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus envia quem não se candidatou."
+      },
+      {
+        "id": "b",
+        "text": "Só fala quem nasceu em casa de profeta."
+      },
+      {
+        "id": "c",
+        "text": "O rebanho é mais importante que a palavra."
+      },
+      {
+        "id": "d",
+        "text": "Amazias é quem autoriza o envio."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-pro-am-05-pastor-04",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Amós 7:14–15?",
+    "prompt": "Qual sequência revela o sentido de Amós 7:14–15?",
+    "cue": "Qual sequência revela o sentido de Amós 7:14–15?",
+    "verseRef": "Amós 7:14–15",
+    "learningObjective": "Sair sabendo que Jeová tirou Amós do rebanho para profetizar a Israel.",
+    "evidence": [
+      "Amós 7:14–15"
+    ],
+    "feedbackCorrect": "Certo: negativa, ofício e então o envio.",
+    "feedbackWrong": {
+      "b": "O ofício explica de onde ele veio.",
+      "c": "O envio fecha a resposta a Amazias."
+    },
+    "passageText": "Então, respondeu Amós e disse a Amazias: Eu não era profeta nem filho de profeta, mas era pastor de gado e cultivador de sicômoros. Jeová tirou-me de seguir o rebanho e disse-me: Vai, profetiza ao meu povo de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amós diz que não era profeta nem filho de profeta."
+      },
+      {
+        "id": "b",
+        "text": "Era pastor de gado e cultivava sicômoros."
+      },
+      {
+        "id": "c",
+        "text": "Jeová o tirou do rebanho e o mandou a Israel."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-pro-am-05-pastor-05",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Complete a frase: \"disse a ___\"",
+    "prompt": "Complete a frase: \"disse a ___\"",
+    "cue": "Complete a frase: \"disse a ___\"",
+    "verseRef": "Amós 7:14–15",
+    "learningObjective": "Sair sabendo que Jeová tirou Amós do rebanho para profetizar a Israel.",
+    "evidence": [
+      "Amós 7:14–15"
+    ],
+    "feedbackCorrect": "Certo: a resposta é dita a Amazias.",
+    "feedbackWrong": {
+      "b": "Rebanho é de onde ele saiu.",
+      "c": "Gado é o que pastoreava."
+    },
+    "passageText": "Então, respondeu Amós e disse a Amazias: Eu não era profeta nem filho de profeta, mas era pastor de gado e cultivador de sicômoros. Jeová tirou-me de seguir o rebanho e disse-me: Vai, profetiza ao meu povo de Israel.",
+    "template": "disse a ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amazias"
+      },
+      {
+        "id": "b",
+        "text": "rebanho"
+      },
+      {
+        "id": "c",
+        "text": "gado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "amos-pro-am-05-pastor-06",
+    "trail": "amos",
+    "section": "am-05-pastor",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "Que sentido de Amós 7:14–15 se liga a este contexto?",
+    "prompt": "Que sentido de Amós 7:14–15 se liga a este contexto?",
+    "cue": "Que sentido de Amós 7:14–15 se liga a este contexto?",
+    "verseRef": "Amós 7:14–15",
+    "learningObjective": "Sair sabendo que Jeová tirou Amós do rebanho para profetizar a Israel.",
+    "evidence": [
+      "Amós 7:14–15"
+    ],
+    "feedbackCorrect": "Certo: Deus chama quem não se ofereceu.",
+    "feedbackWrong": {
+      "a": "Ele não era filho de profeta.",
+      "c": "O ofício antigo era outro."
+    },
+    "passageText": "Então, respondeu Amós e disse a Amazias: Eu não era profeta nem filho de profeta, mas era pastor de gado e cultivador de sicômoros. Jeová tirou-me de seguir o rebanho e disse-me: Vai, profetiza ao meu povo de Israel.",
+    "passageA": {
+      "ref": "Amós 7:14–15",
+      "text": "Então, respondeu Amós e disse a Amazias: Eu não era profeta nem filho de profeta, mas era pastor de gado e cultivador de sicômoros. Jeová tirou-me de seguir o rebanho e disse-me: Vai, profetiza ao meu povo de Israel."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus chama quem não se candidatou"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vocação hereditária"
+      },
+      {
+        "id": "b",
+        "text": "Envio sem candidatura"
+      },
+      {
+        "id": "c",
+        "text": "Profeta de ofício"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
   }
 ]

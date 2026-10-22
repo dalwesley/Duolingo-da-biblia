@@ -2221,5 +2221,2192 @@
     "trail": "miqueias",
     "section": "miqueias-miqueias-03-desafio-miqueias",
     "id": "miqueias-pro-miqueias-miqueias-03-desafio-miqueias-06"
+  },
+  {
+    "id": "miqueias-sem-mq-03-monte-01",
+    "trail": "miqueias",
+    "section": "mq-03-monte",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Muitas nações sobem ao monte de Jeová para serem ensinadas.",
+    "prompt": "Muitas nações sobem ao monte de Jeová para serem ensinadas.",
+    "cue": "Muitas nações sobem ao monte de Jeová para serem ensinadas.",
+    "verseRef": "Miquéias 4:1–2",
+    "learningObjective": "Sair sabendo que as nações sobem ao monte para aprender os caminhos de Jeová.",
+    "evidence": [
+      "Miquéias 4:1–2"
+    ],
+    "feedbackCorrect": "Certo: elas pedem ensino, não só visita.",
+    "feedbackWrong": {
+      "false": "O convite é: ele nos ensinará os seus caminhos."
+    },
+    "passageText": "Mas acontecerá nos últimos dias que o monte da casa de Jeová será estabelecido no cume dos montes e será exaltado sobre os outeiros; e a ele concorrerão povos. Irão muitas nações e dirão: Vinde, subamos ao monte de Jeová e à Casa do Deus de Jacó; ele nos ensinará acerca dos seus caminhos, e andaremos nas suas veredas; porque de Sião sairá a lei, e de Jerusalém, a palavra do Senhor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "miqueias-sem-mq-03-monte-02",
+    "trail": "miqueias",
+    "section": "mq-03-monte",
+    "difficulty": "semente",
+    "type": "tap",
+    "skill": "observe",
+    "question": "Em Miquéias 4:1–2, toque a palavra que falta em \"o ___ da casa de Jeová\"?",
+    "prompt": "Em Miquéias 4:1–2, toque a palavra que falta em \"o ___ da casa de Jeová\"?",
+    "cue": "Em Miquéias 4:1–2, toque a palavra que falta em \"o ___ da casa de Jeová\"?",
+    "verseRef": "Miquéias 4:1–2",
+    "learningObjective": "Sair sabendo que as nações sobem ao monte para aprender os caminhos de Jeová.",
+    "evidence": [
+      "Miquéias 4:1–2"
+    ],
+    "feedbackCorrect": "Exato: é o monte da casa.",
+    "feedbackWrong": {
+      "a": "Povos são quem sobe.",
+      "c": "Lei é o que sai de Sião."
+    },
+    "passageText": "Mas acontecerá nos últimos dias que o monte da casa de Jeová será estabelecido no cume dos montes e será exaltado sobre os outeiros; e a ele concorrerão povos. Irão muitas nações e dirão: Vinde, subamos ao monte de Jeová e à Casa do Deus de Jacó; ele nos ensinará acerca dos seus caminhos, e andaremos nas suas veredas; porque de Sião sairá a lei, e de Jerusalém, a palavra do Senhor.",
+    "template": "o ___ da casa de Jeová",
+    "options": [
+      {
+        "id": "a",
+        "text": "povos"
+      },
+      {
+        "id": "b",
+        "text": "monte"
+      },
+      {
+        "id": "c",
+        "text": "lei"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "miqueias-sem-mq-03-monte-03",
+    "trail": "miqueias",
+    "section": "mq-03-monte",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Para que as nações sobem ao monte?",
+    "prompt": "Para que as nações sobem ao monte?",
+    "cue": "Para que as nações sobem ao monte?",
+    "verseRef": "Miquéias 4:1–2",
+    "learningObjective": "Sair sabendo que as nações sobem ao monte para aprender os caminhos de Jeová.",
+    "evidence": [
+      "Miquéias 4:1–2"
+    ],
+    "feedbackCorrect": "Certo: para aprender os caminhos.",
+    "feedbackWrong": {
+      "b": "Quem ensina é Jeová.",
+      "c": "Elas querem andar nas veredas.",
+      "d": "A palavra sai de Jerusalém."
+    },
+    "passageText": "Mas acontecerá nos últimos dias que o monte da casa de Jeová será estabelecido no cume dos montes e será exaltado sobre os outeiros; e a ele concorrerão povos. Irão muitas nações e dirão: Vinde, subamos ao monte de Jeová e à Casa do Deus de Jacó; ele nos ensinará acerca dos seus caminhos, e andaremos nas suas veredas; porque de Sião sairá a lei, e de Jerusalém, a palavra do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Para que Jeová lhes ensine os caminhos."
+      },
+      {
+        "id": "b",
+        "text": "Para impor a sua lei a Sião."
+      },
+      {
+        "id": "c",
+        "text": "Para evitar as veredas e ficar nos outeiros."
+      },
+      {
+        "id": "d",
+        "text": "Para ouvir a palavra sair de outra cidade."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-sem-mq-03-monte-04",
+    "trail": "miqueias",
+    "section": "mq-03-monte",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Qual é a ordem dos fatos em Miquéias 4:1–2?",
+    "prompt": "Qual é a ordem dos fatos em Miquéias 4:1–2?",
+    "cue": "Qual é a ordem dos fatos em Miquéias 4:1–2?",
+    "verseRef": "Miquéias 4:1–2",
+    "learningObjective": "Sair sabendo que as nações sobem ao monte para aprender os caminhos de Jeová.",
+    "evidence": [
+      "Miquéias 4:1–2"
+    ],
+    "feedbackCorrect": "Certo: o monte, a subida e então a lei andada.",
+    "feedbackWrong": {
+      "b": "A subida vem depois da exaltação do monte.",
+      "c": "Andar é o fruto do ensino."
+    },
+    "passageText": "Mas acontecerá nos últimos dias que o monte da casa de Jeová será estabelecido no cume dos montes e será exaltado sobre os outeiros; e a ele concorrerão povos. Irão muitas nações e dirão: Vinde, subamos ao monte de Jeová e à Casa do Deus de Jacó; ele nos ensinará acerca dos seus caminhos, e andaremos nas suas veredas; porque de Sião sairá a lei, e de Jerusalém, a palavra do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O monte da casa de Jeová é exaltado."
+      },
+      {
+        "id": "b",
+        "text": "Povos e nações sobem para ser ensinados."
+      },
+      {
+        "id": "c",
+        "text": "De Sião sai a lei, e eles andam nas veredas."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-sem-mq-03-monte-05",
+    "trail": "miqueias",
+    "section": "mq-03-monte",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Complete a frase: \"concorrerão ___\"",
+    "prompt": "Complete a frase: \"concorrerão ___\"",
+    "cue": "Complete a frase: \"concorrerão ___\"",
+    "verseRef": "Miquéias 4:1–2",
+    "learningObjective": "Sair sabendo que as nações sobem ao monte para aprender os caminhos de Jeová.",
+    "evidence": [
+      "Miquéias 4:1–2"
+    ],
+    "feedbackCorrect": "Certo: povos concorrerão ao monte.",
+    "feedbackWrong": {
+      "b": "Lei é o que sai de Sião.",
+      "c": "Monte é o destino."
+    },
+    "passageText": "Mas acontecerá nos últimos dias que o monte da casa de Jeová será estabelecido no cume dos montes e será exaltado sobre os outeiros; e a ele concorrerão povos. Irão muitas nações e dirão: Vinde, subamos ao monte de Jeová e à Casa do Deus de Jacó; ele nos ensinará acerca dos seus caminhos, e andaremos nas suas veredas; porque de Sião sairá a lei, e de Jerusalém, a palavra do Senhor.",
+    "template": "concorrerão ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "povos"
+      },
+      {
+        "id": "b",
+        "text": "lei"
+      },
+      {
+        "id": "c",
+        "text": "monte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-sem-mq-03-monte-06",
+    "trail": "miqueias",
+    "section": "mq-03-monte",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Miquéias 4:1–2 comunica que se liga a este contexto?",
+    "prompt": "O que Miquéias 4:1–2 comunica que se liga a este contexto?",
+    "cue": "O que Miquéias 4:1–2 comunica que se liga a este contexto?",
+    "verseRef": "Miquéias 4:1–2",
+    "learningObjective": "Sair sabendo que as nações sobem ao monte para aprender os caminhos de Jeová.",
+    "evidence": [
+      "Miquéias 4:1–2"
+    ],
+    "feedbackCorrect": "Certo: a instrução reúne as nações.",
+    "feedbackWrong": {
+      "b": "Os povos sobem.",
+      "c": "A lei sai à vista."
+    },
+    "passageText": "Mas acontecerá nos últimos dias que o monte da casa de Jeová será estabelecido no cume dos montes e será exaltado sobre os outeiros; e a ele concorrerão povos. Irão muitas nações e dirão: Vinde, subamos ao monte de Jeová e à Casa do Deus de Jacó; ele nos ensinará acerca dos seus caminhos, e andaremos nas suas veredas; porque de Sião sairá a lei, e de Jerusalém, a palavra do Senhor.",
+    "passageA": {
+      "ref": "Miquéias 4:1–2",
+      "text": "Mas acontecerá nos últimos dias que o monte da casa de Jeová será estabelecido no cume dos montes e será exaltado sobre os outeiros; e a ele concorrerão povos. Irão muitas nações e dirão: Vinde, subamos ao monte de Jeová e à Casa do Deus de Jacó; ele nos ensinará acerca dos seus caminhos, e andaremos nas suas veredas; porque de Sião sairá a lei, e de Jerusalém, a palavra do Senhor."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A paz das nações começa na instrução"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ensino que pacifica"
+      },
+      {
+        "id": "b",
+        "text": "Monte vazio"
+      },
+      {
+        "id": "c",
+        "text": "Lei escondida"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-cam-mq-03-monte-01",
+    "trail": "miqueias",
+    "section": "mq-03-monte",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "A lei, no texto, sai de outra cidade que não Sião.",
+    "prompt": "A lei, no texto, sai de outra cidade que não Sião.",
+    "cue": "A lei, no texto, sai de outra cidade que não Sião.",
+    "verseRef": "Miquéias 4:1–2",
+    "learningObjective": "Sair sabendo que as nações sobem ao monte para aprender os caminhos de Jeová.",
+    "evidence": [
+      "Miquéias 4:1–2"
+    ],
+    "feedbackCorrect": "Certo: de Sião sairá a lei.",
+    "feedbackWrong": {
+      "true": "Jerusalém é de onde sai a palavra."
+    },
+    "passageText": "Mas acontecerá nos últimos dias que o monte da casa de Jeová será estabelecido no cume dos montes e será exaltado sobre os outeiros; e a ele concorrerão povos. Irão muitas nações e dirão: Vinde, subamos ao monte de Jeová e à Casa do Deus de Jacó; ele nos ensinará acerca dos seus caminhos, e andaremos nas suas veredas; porque de Sião sairá a lei, e de Jerusalém, a palavra do Senhor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "id": "miqueias-cam-mq-03-monte-02",
+    "trail": "miqueias",
+    "section": "mq-03-monte",
+    "difficulty": "caminhada",
+    "type": "tap",
+    "skill": "understand",
+    "question": "Em Miquéias 4:1–2, toque a palavra que falta em \"muitas ___\"?",
+    "prompt": "Em Miquéias 4:1–2, toque a palavra que falta em \"muitas ___\"?",
+    "cue": "Em Miquéias 4:1–2, toque a palavra que falta em \"muitas ___\"?",
+    "verseRef": "Miquéias 4:1–2",
+    "learningObjective": "Sair sabendo que as nações sobem ao monte para aprender os caminhos de Jeová.",
+    "evidence": [
+      "Miquéias 4:1–2"
+    ],
+    "feedbackCorrect": "Exato: muitas nações vão.",
+    "feedbackWrong": {
+      "a": "Monte é o destino.",
+      "c": "Veredas são onde se anda."
+    },
+    "passageText": "Mas acontecerá nos últimos dias que o monte da casa de Jeová será estabelecido no cume dos montes e será exaltado sobre os outeiros; e a ele concorrerão povos. Irão muitas nações e dirão: Vinde, subamos ao monte de Jeová e à Casa do Deus de Jacó; ele nos ensinará acerca dos seus caminhos, e andaremos nas suas veredas; porque de Sião sairá a lei, e de Jerusalém, a palavra do Senhor.",
+    "template": "muitas ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "monte"
+      },
+      {
+        "id": "b",
+        "text": "nações"
+      },
+      {
+        "id": "c",
+        "text": "veredas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "miqueias-cam-mq-03-monte-03",
+    "trail": "miqueias",
+    "section": "mq-03-monte",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como se ligam monte, lei e veredas?",
+    "prompt": "Como se ligam monte, lei e veredas?",
+    "cue": "Como se ligam monte, lei e veredas?",
+    "verseRef": "Miquéias 4:1–2",
+    "learningObjective": "Sair sabendo que as nações sobem ao monte para aprender os caminhos de Jeová.",
+    "evidence": [
+      "Miquéias 4:1–2"
+    ],
+    "feedbackCorrect": "Certo: sobe-se para aprender e então andar.",
+    "feedbackWrong": {
+      "b": "Andar está no versículo.",
+      "c": "Sião é a fonte da lei.",
+      "d": "Elas pedem os caminhos."
+    },
+    "passageText": "Mas acontecerá nos últimos dias que o monte da casa de Jeová será estabelecido no cume dos montes e será exaltado sobre os outeiros; e a ele concorrerão povos. Irão muitas nações e dirão: Vinde, subamos ao monte de Jeová e à Casa do Deus de Jacó; ele nos ensinará acerca dos seus caminhos, e andaremos nas suas veredas; porque de Sião sairá a lei, e de Jerusalém, a palavra do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O ensino no monte vira caminho andado."
+      },
+      {
+        "id": "b",
+        "text": "A lei substitui a necessidade de andar."
+      },
+      {
+        "id": "c",
+        "text": "Os outeiros ensinam no lugar de Sião."
+      },
+      {
+        "id": "d",
+        "text": "Os povos sobem e recusam as veredas."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-cam-mq-03-monte-04",
+    "trail": "miqueias",
+    "section": "mq-03-monte",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Miquéias 4:1–2?",
+    "prompt": "Como se encadeiam os eventos de Miquéias 4:1–2?",
+    "cue": "Como se encadeiam os eventos de Miquéias 4:1–2?",
+    "verseRef": "Miquéias 4:1–2",
+    "learningObjective": "Sair sabendo que as nações sobem ao monte para aprender os caminhos de Jeová.",
+    "evidence": [
+      "Miquéias 4:1–2"
+    ],
+    "feedbackCorrect": "Certo: o monte, a subida e então a lei andada.",
+    "feedbackWrong": {
+      "b": "A subida vem depois da exaltação do monte.",
+      "c": "Andar é o fruto do ensino."
+    },
+    "passageText": "Mas acontecerá nos últimos dias que o monte da casa de Jeová será estabelecido no cume dos montes e será exaltado sobre os outeiros; e a ele concorrerão povos. Irão muitas nações e dirão: Vinde, subamos ao monte de Jeová e à Casa do Deus de Jacó; ele nos ensinará acerca dos seus caminhos, e andaremos nas suas veredas; porque de Sião sairá a lei, e de Jerusalém, a palavra do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O monte da casa de Jeová é exaltado."
+      },
+      {
+        "id": "b",
+        "text": "Povos e nações sobem para ser ensinados."
+      },
+      {
+        "id": "c",
+        "text": "De Sião sai a lei, e eles andam nas veredas."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-cam-mq-03-monte-05",
+    "trail": "miqueias",
+    "section": "mq-03-monte",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Complete a frase: \"sairá a ___\"",
+    "prompt": "Complete a frase: \"sairá a ___\"",
+    "cue": "Complete a frase: \"sairá a ___\"",
+    "verseRef": "Miquéias 4:1–2",
+    "learningObjective": "Sair sabendo que as nações sobem ao monte para aprender os caminhos de Jeová.",
+    "evidence": [
+      "Miquéias 4:1–2"
+    ],
+    "feedbackCorrect": "Certo: de Sião sairá a lei.",
+    "feedbackWrong": {
+      "b": "Povos são quem sobe.",
+      "c": "Veredas são o lugar de andar."
+    },
+    "passageText": "Mas acontecerá nos últimos dias que o monte da casa de Jeová será estabelecido no cume dos montes e será exaltado sobre os outeiros; e a ele concorrerão povos. Irão muitas nações e dirão: Vinde, subamos ao monte de Jeová e à Casa do Deus de Jacó; ele nos ensinará acerca dos seus caminhos, e andaremos nas suas veredas; porque de Sião sairá a lei, e de Jerusalém, a palavra do Senhor.",
+    "template": "sairá a ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "lei"
+      },
+      {
+        "id": "b",
+        "text": "povos"
+      },
+      {
+        "id": "c",
+        "text": "veredas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-cam-mq-03-monte-06",
+    "trail": "miqueias",
+    "section": "mq-03-monte",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "Que relação Miquéias 4:1–2 estabelece com este contexto?",
+    "prompt": "Que relação Miquéias 4:1–2 estabelece com este contexto?",
+    "cue": "Que relação Miquéias 4:1–2 estabelece com este contexto?",
+    "verseRef": "Miquéias 4:1–2",
+    "learningObjective": "Sair sabendo que as nações sobem ao monte para aprender os caminhos de Jeová.",
+    "evidence": [
+      "Miquéias 4:1–2"
+    ],
+    "feedbackCorrect": "Certo: elas sobem para andar no que aprendem.",
+    "feedbackWrong": {
+      "a": "O motivo é o ensino.",
+      "c": "A palavra sai de Jerusalém."
+    },
+    "passageText": "Mas acontecerá nos últimos dias que o monte da casa de Jeová será estabelecido no cume dos montes e será exaltado sobre os outeiros; e a ele concorrerão povos. Irão muitas nações e dirão: Vinde, subamos ao monte de Jeová e à Casa do Deus de Jacó; ele nos ensinará acerca dos seus caminhos, e andaremos nas suas veredas; porque de Sião sairá a lei, e de Jerusalém, a palavra do Senhor.",
+    "passageA": {
+      "ref": "Miquéias 4:1–2",
+      "text": "Mas acontecerá nos últimos dias que o monte da casa de Jeová será estabelecido no cume dos montes e será exaltado sobre os outeiros; e a ele concorrerão povos. Irão muitas nações e dirão: Vinde, subamos ao monte de Jeová e à Casa do Deus de Jacó; ele nos ensinará acerca dos seus caminhos, e andaremos nas suas veredas; porque de Sião sairá a lei, e de Jerusalém, a palavra do Senhor."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A paz das nações começa na instrução"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Conquista do monte"
+      },
+      {
+        "id": "b",
+        "text": "Caminho aprendido"
+      },
+      {
+        "id": "c",
+        "text": "Outeiro sem palavra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "miqueias-pro-mq-03-monte-01",
+    "trail": "miqueias",
+    "section": "mq-03-monte",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Andar nas veredas é o fruto de aprender os caminhos.",
+    "prompt": "Andar nas veredas é o fruto de aprender os caminhos.",
+    "cue": "Andar nas veredas é o fruto de aprender os caminhos.",
+    "verseRef": "Miquéias 4:1–2",
+    "learningObjective": "Sair sabendo que as nações sobem ao monte para aprender os caminhos de Jeová.",
+    "evidence": [
+      "Miquéias 4:1–2"
+    ],
+    "feedbackCorrect": "Certo: ensino e caminhada vêm juntos.",
+    "feedbackWrong": {
+      "false": "O versículo liga ensinar e andar."
+    },
+    "passageText": "Mas acontecerá nos últimos dias que o monte da casa de Jeová será estabelecido no cume dos montes e será exaltado sobre os outeiros; e a ele concorrerão povos. Irão muitas nações e dirão: Vinde, subamos ao monte de Jeová e à Casa do Deus de Jacó; ele nos ensinará acerca dos seus caminhos, e andaremos nas suas veredas; porque de Sião sairá a lei, e de Jerusalém, a palavra do Senhor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "miqueias-pro-mq-03-monte-02",
+    "trail": "miqueias",
+    "section": "mq-03-monte",
+    "difficulty": "profundezas",
+    "type": "tap",
+    "skill": "interpret",
+    "question": "Em Miquéias 4:1–2, toque a palavra que falta em \"de ___ sairá a lei\"?",
+    "prompt": "Em Miquéias 4:1–2, toque a palavra que falta em \"de ___ sairá a lei\"?",
+    "cue": "Em Miquéias 4:1–2, toque a palavra que falta em \"de ___ sairá a lei\"?",
+    "verseRef": "Miquéias 4:1–2",
+    "learningObjective": "Sair sabendo que as nações sobem ao monte para aprender os caminhos de Jeová.",
+    "evidence": [
+      "Miquéias 4:1–2"
+    ],
+    "feedbackCorrect": "Exato: a lei sai de Sião.",
+    "feedbackWrong": {
+      "a": "Monte é a casa.",
+      "c": "Povos são quem sobe."
+    },
+    "passageText": "Mas acontecerá nos últimos dias que o monte da casa de Jeová será estabelecido no cume dos montes e será exaltado sobre os outeiros; e a ele concorrerão povos. Irão muitas nações e dirão: Vinde, subamos ao monte de Jeová e à Casa do Deus de Jacó; ele nos ensinará acerca dos seus caminhos, e andaremos nas suas veredas; porque de Sião sairá a lei, e de Jerusalém, a palavra do Senhor.",
+    "template": "de ___ sairá a lei",
+    "options": [
+      {
+        "id": "a",
+        "text": "monte"
+      },
+      {
+        "id": "b",
+        "text": "Sião"
+      },
+      {
+        "id": "c",
+        "text": "povos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "miqueias-pro-mq-03-monte-03",
+    "trail": "miqueias",
+    "section": "mq-03-monte",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "O que essa visão diz sobre a paz?",
+    "prompt": "O que essa visão diz sobre a paz?",
+    "cue": "O que essa visão diz sobre a paz?",
+    "verseRef": "Miquéias 4:1–2",
+    "learningObjective": "Sair sabendo que as nações sobem ao monte para aprender os caminhos de Jeová.",
+    "evidence": [
+      "Miquéias 4:1–2"
+    ],
+    "feedbackCorrect": "Certo: a paz nasce de ser instruído por Deus.",
+    "feedbackWrong": {
+      "b": "A lei e a palavra são o centro.",
+      "c": "O tom é de subida para aprender.",
+      "d": "Andar nas veredas acompanha o ensino."
+    },
+    "passageText": "Mas acontecerá nos últimos dias que o monte da casa de Jeová será estabelecido no cume dos montes e será exaltado sobre os outeiros; e a ele concorrerão povos. Irão muitas nações e dirão: Vinde, subamos ao monte de Jeová e à Casa do Deus de Jacó; ele nos ensinará acerca dos seus caminhos, e andaremos nas suas veredas; porque de Sião sairá a lei, e de Jerusalém, a palavra do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nações em paz são nações ensinadas."
+      },
+      {
+        "id": "b",
+        "text": "A paz dispensa a palavra que sai de Sião."
+      },
+      {
+        "id": "c",
+        "text": "Subir ao monte é conquista militar."
+      },
+      {
+        "id": "d",
+        "text": "As veredas ficam vazias enquanto a lei sai."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-pro-mq-03-monte-04",
+    "trail": "miqueias",
+    "section": "mq-03-monte",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Miquéias 4:1–2?",
+    "prompt": "Qual sequência revela o sentido de Miquéias 4:1–2?",
+    "cue": "Qual sequência revela o sentido de Miquéias 4:1–2?",
+    "verseRef": "Miquéias 4:1–2",
+    "learningObjective": "Sair sabendo que as nações sobem ao monte para aprender os caminhos de Jeová.",
+    "evidence": [
+      "Miquéias 4:1–2"
+    ],
+    "feedbackCorrect": "Certo: o monte, a subida e então a lei andada.",
+    "feedbackWrong": {
+      "b": "A subida vem depois da exaltação do monte.",
+      "c": "Andar é o fruto do ensino."
+    },
+    "passageText": "Mas acontecerá nos últimos dias que o monte da casa de Jeová será estabelecido no cume dos montes e será exaltado sobre os outeiros; e a ele concorrerão povos. Irão muitas nações e dirão: Vinde, subamos ao monte de Jeová e à Casa do Deus de Jacó; ele nos ensinará acerca dos seus caminhos, e andaremos nas suas veredas; porque de Sião sairá a lei, e de Jerusalém, a palavra do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O monte da casa de Jeová é exaltado."
+      },
+      {
+        "id": "b",
+        "text": "Povos e nações sobem para ser ensinados."
+      },
+      {
+        "id": "c",
+        "text": "De Sião sai a lei, e eles andam nas veredas."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-pro-mq-03-monte-05",
+    "trail": "miqueias",
+    "section": "mq-03-monte",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Complete a frase: \"nas suas ___\"",
+    "prompt": "Complete a frase: \"nas suas ___\"",
+    "cue": "Complete a frase: \"nas suas ___\"",
+    "verseRef": "Miquéias 4:1–2",
+    "learningObjective": "Sair sabendo que as nações sobem ao monte para aprender os caminhos de Jeová.",
+    "evidence": [
+      "Miquéias 4:1–2"
+    ],
+    "feedbackCorrect": "Certo: andaremos nas suas veredas.",
+    "feedbackWrong": {
+      "b": "Sião é de onde sai a lei.",
+      "c": "Nações são quem sobe."
+    },
+    "passageText": "Mas acontecerá nos últimos dias que o monte da casa de Jeová será estabelecido no cume dos montes e será exaltado sobre os outeiros; e a ele concorrerão povos. Irão muitas nações e dirão: Vinde, subamos ao monte de Jeová e à Casa do Deus de Jacó; ele nos ensinará acerca dos seus caminhos, e andaremos nas suas veredas; porque de Sião sairá a lei, e de Jerusalém, a palavra do Senhor.",
+    "template": "nas suas ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "veredas"
+      },
+      {
+        "id": "b",
+        "text": "Sião"
+      },
+      {
+        "id": "c",
+        "text": "nações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-pro-mq-03-monte-06",
+    "trail": "miqueias",
+    "section": "mq-03-monte",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "Que sentido de Miquéias 4:1–2 se liga a este contexto?",
+    "prompt": "Que sentido de Miquéias 4:1–2 se liga a este contexto?",
+    "cue": "Que sentido de Miquéias 4:1–2 se liga a este contexto?",
+    "verseRef": "Miquéias 4:1–2",
+    "learningObjective": "Sair sabendo que as nações sobem ao monte para aprender os caminhos de Jeová.",
+    "evidence": [
+      "Miquéias 4:1–2"
+    ],
+    "feedbackCorrect": "Certo: a paz aqui é povo instruído.",
+    "feedbackWrong": {
+      "a": "Sem a lei que sai, não há essa paz.",
+      "c": "Elas falam: vinde, subamos."
+    },
+    "passageText": "Mas acontecerá nos últimos dias que o monte da casa de Jeová será estabelecido no cume dos montes e será exaltado sobre os outeiros; e a ele concorrerão povos. Irão muitas nações e dirão: Vinde, subamos ao monte de Jeová e à Casa do Deus de Jacó; ele nos ensinará acerca dos seus caminhos, e andaremos nas suas veredas; porque de Sião sairá a lei, e de Jerusalém, a palavra do Senhor.",
+    "passageA": {
+      "ref": "Miquéias 4:1–2",
+      "text": "Mas acontecerá nos últimos dias que o monte da casa de Jeová será estabelecido no cume dos montes e será exaltado sobre os outeiros; e a ele concorrerão povos. Irão muitas nações e dirão: Vinde, subamos ao monte de Jeová e à Casa do Deus de Jacó; ele nos ensinará acerca dos seus caminhos, e andaremos nas suas veredas; porque de Sião sairá a lei, e de Jerusalém, a palavra do Senhor."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A paz das nações começa na instrução"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Paz sem instrução"
+      },
+      {
+        "id": "b",
+        "text": "Sião que ensina"
+      },
+      {
+        "id": "c",
+        "text": "Nações mudas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "miqueias-sem-mq-04-belem-01",
+    "trail": "miqueias",
+    "section": "mq-04-belem",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Belém Efrata é chamada pequena entre os milhares de Judá.",
+    "prompt": "Belém Efrata é chamada pequena entre os milhares de Judá.",
+    "cue": "Belém Efrata é chamada pequena entre os milhares de Judá.",
+    "verseRef": "Miquéias 5:2",
+    "learningObjective": "Sair sabendo que o governante prometido sai de Belém e vem desde a eternidade.",
+    "evidence": [
+      "Miquéias 5:2"
+    ],
+    "feedbackCorrect": "Certo: a cidade é pequena, e mesmo assim escolhida.",
+    "feedbackWrong": {
+      "false": "O versículo marca a pequenez."
+    },
+    "passageText": "Mas tu, Belém Efrata, que és pequena para se achar entre os milhares de Judá, de ti é que me sairá aquele que há de ser reinante em Israel e cujas saídas são desde os tempos antigos, desde a eternidade.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "miqueias-sem-mq-04-belem-02",
+    "trail": "miqueias",
+    "section": "mq-04-belem",
+    "difficulty": "semente",
+    "type": "tap",
+    "skill": "observe",
+    "question": "Em Miquéias 5:2, toque a palavra que falta em \"Mas tu, ___ Efrata\"?",
+    "prompt": "Em Miquéias 5:2, toque a palavra que falta em \"Mas tu, ___ Efrata\"?",
+    "cue": "Em Miquéias 5:2, toque a palavra que falta em \"Mas tu, ___ Efrata\"?",
+    "verseRef": "Miquéias 5:2",
+    "learningObjective": "Sair sabendo que o governante prometido sai de Belém e vem desde a eternidade.",
+    "evidence": [
+      "Miquéias 5:2"
+    ],
+    "feedbackCorrect": "Exato: a cidade é Belém.",
+    "feedbackWrong": {
+      "a": "Judá é a tribo dos milhares.",
+      "c": "Israel é quem ele rege."
+    },
+    "passageText": "Mas tu, Belém Efrata, que és pequena para se achar entre os milhares de Judá, de ti é que me sairá aquele que há de ser reinante em Israel e cujas saídas são desde os tempos antigos, desde a eternidade.",
+    "template": "Mas tu, ___ Efrata",
+    "options": [
+      {
+        "id": "a",
+        "text": "Judá"
+      },
+      {
+        "id": "b",
+        "text": "Belém"
+      },
+      {
+        "id": "c",
+        "text": "Israel"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "miqueias-sem-mq-04-belem-03",
+    "trail": "miqueias",
+    "section": "mq-04-belem",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "De onde sai aquele que há de reinar em Israel?",
+    "prompt": "De onde sai aquele que há de reinar em Israel?",
+    "cue": "De onde sai aquele que há de reinar em Israel?",
+    "verseRef": "Miquéias 5:2",
+    "learningObjective": "Sair sabendo que o governante prometido sai de Belém e vem desde a eternidade.",
+    "evidence": [
+      "Miquéias 5:2"
+    ],
+    "feedbackCorrect": "Certo: de Belém Efrata.",
+    "feedbackWrong": {
+      "b": "O texto chama Belém de pequena.",
+      "c": "As saídas vêm desde a eternidade.",
+      "d": "Ele reina em Israel."
+    },
+    "passageText": "Mas tu, Belém Efrata, que és pequena para se achar entre os milhares de Judá, de ti é que me sairá aquele que há de ser reinante em Israel e cujas saídas são desde os tempos antigos, desde a eternidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "De Belém, pequena em Judá."
+      },
+      {
+        "id": "b",
+        "text": "Da maior cidade entre os milhares."
+      },
+      {
+        "id": "c",
+        "text": "De um lugar cuja origem é recente."
+      },
+      {
+        "id": "d",
+        "text": "De Efrata, sem ligação com Israel."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-sem-mq-04-belem-04",
+    "trail": "miqueias",
+    "section": "mq-04-belem",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Qual é a ordem dos fatos em Miquéias 5:2?",
+    "prompt": "Qual é a ordem dos fatos em Miquéias 5:2?",
+    "cue": "Qual é a ordem dos fatos em Miquéias 5:2?",
+    "verseRef": "Miquéias 5:2",
+    "learningObjective": "Sair sabendo que o governante prometido sai de Belém e vem desde a eternidade.",
+    "evidence": [
+      "Miquéias 5:2"
+    ],
+    "feedbackCorrect": "Certo: pequenez, saída e então a origem eterna.",
+    "feedbackWrong": {
+      "b": "A saída vem da cidade pequena.",
+      "c": "A eternidade fecha a grandeza dele."
+    },
+    "passageText": "Mas tu, Belém Efrata, que és pequena para se achar entre os milhares de Judá, de ti é que me sairá aquele que há de ser reinante em Israel e cujas saídas são desde os tempos antigos, desde a eternidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Belém é pequena entre os milhares de Judá."
+      },
+      {
+        "id": "b",
+        "text": "Dela sairá o reinante em Israel."
+      },
+      {
+        "id": "c",
+        "text": "As saídas dele vêm desde a eternidade."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-sem-mq-04-belem-05",
+    "trail": "miqueias",
+    "section": "mq-04-belem",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Complete a frase: \"que és ___\"",
+    "prompt": "Complete a frase: \"que és ___\"",
+    "cue": "Complete a frase: \"que és ___\"",
+    "verseRef": "Miquéias 5:2",
+    "learningObjective": "Sair sabendo que o governante prometido sai de Belém e vem desde a eternidade.",
+    "evidence": [
+      "Miquéias 5:2"
+    ],
+    "feedbackCorrect": "Certo: Belém é pequena.",
+    "feedbackWrong": {
+      "b": "Belém é o nome.",
+      "c": "Judá é a tribo."
+    },
+    "passageText": "Mas tu, Belém Efrata, que és pequena para se achar entre os milhares de Judá, de ti é que me sairá aquele que há de ser reinante em Israel e cujas saídas são desde os tempos antigos, desde a eternidade.",
+    "template": "que és ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "pequena"
+      },
+      {
+        "id": "b",
+        "text": "Belém"
+      },
+      {
+        "id": "c",
+        "text": "Judá"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-sem-mq-04-belem-06",
+    "trail": "miqueias",
+    "section": "mq-04-belem",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Miquéias 5:2 comunica que se liga a este contexto?",
+    "prompt": "O que Miquéias 5:2 comunica que se liga a este contexto?",
+    "cue": "O que Miquéias 5:2 comunica que se liga a este contexto?",
+    "verseRef": "Miquéias 5:2",
+    "learningObjective": "Sair sabendo que o governante prometido sai de Belém e vem desde a eternidade.",
+    "evidence": [
+      "Miquéias 5:2"
+    ],
+    "feedbackCorrect": "Certo: o reinante sai do lugar pequeno.",
+    "feedbackWrong": {
+      "b": "Belém não é a grande capital.",
+      "c": "A origem vem da eternidade."
+    },
+    "passageText": "Mas tu, Belém Efrata, que és pequena para se achar entre os milhares de Judá, de ti é que me sairá aquele que há de ser reinante em Israel e cujas saídas são desde os tempos antigos, desde a eternidade.",
+    "passageA": {
+      "ref": "Miquéias 5:2",
+      "text": "Mas tu, Belém Efrata, que és pequena para se achar entre os milhares de Judá, de ti é que me sairá aquele que há de ser reinante em Israel e cujas saídas são desde os tempos antigos, desde a eternidade."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O reinante prometido nasce pequeno"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Grandeza no pequeno"
+      },
+      {
+        "id": "b",
+        "text": "Capital orgulhosa"
+      },
+      {
+        "id": "c",
+        "text": "Origem recente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-cam-mq-04-belem-01",
+    "trail": "miqueias",
+    "section": "mq-04-belem",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "O reinante sai de Belém, mas a origem dele começa em Belém.",
+    "prompt": "O reinante sai de Belém, mas a origem dele começa em Belém.",
+    "cue": "O reinante sai de Belém, mas a origem dele começa em Belém.",
+    "verseRef": "Miquéias 5:2",
+    "learningObjective": "Sair sabendo que o governante prometido sai de Belém e vem desde a eternidade.",
+    "evidence": [
+      "Miquéias 5:2"
+    ],
+    "feedbackCorrect": "Certo: as saídas dele vêm desde a eternidade.",
+    "feedbackWrong": {
+      "true": "Belém é o nascimento prometido, não a origem primeira."
+    },
+    "passageText": "Mas tu, Belém Efrata, que és pequena para se achar entre os milhares de Judá, de ti é que me sairá aquele que há de ser reinante em Israel e cujas saídas são desde os tempos antigos, desde a eternidade.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "id": "miqueias-cam-mq-04-belem-02",
+    "trail": "miqueias",
+    "section": "mq-04-belem",
+    "difficulty": "caminhada",
+    "type": "tap",
+    "skill": "understand",
+    "question": "Em Miquéias 5:2, toque a palavra que falta em \"há de ser ___ em Israel\"?",
+    "prompt": "Em Miquéias 5:2, toque a palavra que falta em \"há de ser ___ em Israel\"?",
+    "cue": "Em Miquéias 5:2, toque a palavra que falta em \"há de ser ___ em Israel\"?",
+    "verseRef": "Miquéias 5:2",
+    "learningObjective": "Sair sabendo que o governante prometido sai de Belém e vem desde a eternidade.",
+    "evidence": [
+      "Miquéias 5:2"
+    ],
+    "feedbackCorrect": "Exato: ele será reinante.",
+    "feedbackWrong": {
+      "a": "Pequena qualifica Belém.",
+      "c": "Efrata é o outro nome do lugar."
+    },
+    "passageText": "Mas tu, Belém Efrata, que és pequena para se achar entre os milhares de Judá, de ti é que me sairá aquele que há de ser reinante em Israel e cujas saídas são desde os tempos antigos, desde a eternidade.",
+    "template": "há de ser ___ em Israel",
+    "options": [
+      {
+        "id": "a",
+        "text": "pequena"
+      },
+      {
+        "id": "b",
+        "text": "reinante"
+      },
+      {
+        "id": "c",
+        "text": "Efrata"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "miqueias-cam-mq-04-belem-03",
+    "trail": "miqueias",
+    "section": "mq-04-belem",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "O que “desde a eternidade” acrescenta à pequenez de Belém?",
+    "prompt": "O que “desde a eternidade” acrescenta à pequenez de Belém?",
+    "cue": "O que “desde a eternidade” acrescenta à pequenez de Belém?",
+    "verseRef": "Miquéias 5:2",
+    "learningObjective": "Sair sabendo que o governante prometido sai de Belém e vem desde a eternidade.",
+    "evidence": [
+      "Miquéias 5:2"
+    ],
+    "feedbackCorrect": "Certo: o reinante é maior que o vilarejo.",
+    "feedbackWrong": {
+      "b": "A cidade continua pequena.",
+      "c": "Judá é o chão da promessa.",
+      "d": "Eternidade não é um começo recente."
+    },
+    "passageText": "Mas tu, Belém Efrata, que és pequena para se achar entre os milhares de Judá, de ti é que me sairá aquele que há de ser reinante em Israel e cujas saídas são desde os tempos antigos, desde a eternidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A origem dele atravessa os tempos."
+      },
+      {
+        "id": "b",
+        "text": "Belém deixa de ser pequena no mapa."
+      },
+      {
+        "id": "c",
+        "text": "Judá fica fora da promessa."
+      },
+      {
+        "id": "d",
+        "text": "Efrata é só um título recente."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-cam-mq-04-belem-04",
+    "trail": "miqueias",
+    "section": "mq-04-belem",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Miquéias 5:2?",
+    "prompt": "Como se encadeiam os eventos de Miquéias 5:2?",
+    "cue": "Como se encadeiam os eventos de Miquéias 5:2?",
+    "verseRef": "Miquéias 5:2",
+    "learningObjective": "Sair sabendo que o governante prometido sai de Belém e vem desde a eternidade.",
+    "evidence": [
+      "Miquéias 5:2"
+    ],
+    "feedbackCorrect": "Certo: pequenez, saída e então a origem eterna.",
+    "feedbackWrong": {
+      "b": "A saída vem da cidade pequena.",
+      "c": "A eternidade fecha a grandeza dele."
+    },
+    "passageText": "Mas tu, Belém Efrata, que és pequena para se achar entre os milhares de Judá, de ti é que me sairá aquele que há de ser reinante em Israel e cujas saídas são desde os tempos antigos, desde a eternidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Belém é pequena entre os milhares de Judá."
+      },
+      {
+        "id": "b",
+        "text": "Dela sairá o reinante em Israel."
+      },
+      {
+        "id": "c",
+        "text": "As saídas dele vêm desde a eternidade."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-cam-mq-04-belem-05",
+    "trail": "miqueias",
+    "section": "mq-04-belem",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Complete a frase: \"desde a ___\"",
+    "prompt": "Complete a frase: \"desde a ___\"",
+    "cue": "Complete a frase: \"desde a ___\"",
+    "verseRef": "Miquéias 5:2",
+    "learningObjective": "Sair sabendo que o governante prometido sai de Belém e vem desde a eternidade.",
+    "evidence": [
+      "Miquéias 5:2"
+    ],
+    "feedbackCorrect": "Certo: as saídas vêm desde a eternidade.",
+    "feedbackWrong": {
+      "b": "Israel é onde ele reina.",
+      "c": "Efrata nomeia o lugar."
+    },
+    "passageText": "Mas tu, Belém Efrata, que és pequena para se achar entre os milhares de Judá, de ti é que me sairá aquele que há de ser reinante em Israel e cujas saídas são desde os tempos antigos, desde a eternidade.",
+    "template": "desde a ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "eternidade"
+      },
+      {
+        "id": "b",
+        "text": "Israel"
+      },
+      {
+        "id": "c",
+        "text": "Efrata"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-cam-mq-04-belem-06",
+    "trail": "miqueias",
+    "section": "mq-04-belem",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "Que relação Miquéias 5:2 estabelece com este contexto?",
+    "prompt": "Que relação Miquéias 5:2 estabelece com este contexto?",
+    "cue": "Que relação Miquéias 5:2 estabelece com este contexto?",
+    "verseRef": "Miquéias 5:2",
+    "learningObjective": "Sair sabendo que o governante prometido sai de Belém e vem desde a eternidade.",
+    "evidence": [
+      "Miquéias 5:2"
+    ],
+    "feedbackCorrect": "Certo: as saídas dele vêm de longe.",
+    "feedbackWrong": {
+      "a": "Há promessa justamente para Belém.",
+      "c": "Judá é nomeada."
+    },
+    "passageText": "Mas tu, Belém Efrata, que és pequena para se achar entre os milhares de Judá, de ti é que me sairá aquele que há de ser reinante em Israel e cujas saídas são desde os tempos antigos, desde a eternidade.",
+    "passageA": {
+      "ref": "Miquéias 5:2",
+      "text": "Mas tu, Belém Efrata, que és pequena para se achar entre os milhares de Judá, de ti é que me sairá aquele que há de ser reinante em Israel e cujas saídas são desde os tempos antigos, desde a eternidade."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O reinante prometido nasce pequeno"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vila sem promessa"
+      },
+      {
+        "id": "b",
+        "text": "Origem que atravessa"
+      },
+      {
+        "id": "c",
+        "text": "Judá esquecida"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "miqueias-pro-mq-04-belem-01",
+    "trail": "miqueias",
+    "section": "mq-04-belem",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Deus escolhe o lugar pequeno para fazer sair o reinante.",
+    "prompt": "Deus escolhe o lugar pequeno para fazer sair o reinante.",
+    "cue": "Deus escolhe o lugar pequeno para fazer sair o reinante.",
+    "verseRef": "Miquéias 5:2",
+    "learningObjective": "Sair sabendo que o governante prometido sai de Belém e vem desde a eternidade.",
+    "evidence": [
+      "Miquéias 5:2"
+    ],
+    "feedbackCorrect": "Certo: a pequenez não veta a promessa.",
+    "feedbackWrong": {
+      "false": "De ti sairá aquele que há de reinar."
+    },
+    "passageText": "Mas tu, Belém Efrata, que és pequena para se achar entre os milhares de Judá, de ti é que me sairá aquele que há de ser reinante em Israel e cujas saídas são desde os tempos antigos, desde a eternidade.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "miqueias-pro-mq-04-belem-02",
+    "trail": "miqueias",
+    "section": "mq-04-belem",
+    "difficulty": "profundezas",
+    "type": "tap",
+    "skill": "interpret",
+    "question": "Em Miquéias 5:2, toque a palavra que falta em \"entre os milhares de ___\"?",
+    "prompt": "Em Miquéias 5:2, toque a palavra que falta em \"entre os milhares de ___\"?",
+    "cue": "Em Miquéias 5:2, toque a palavra que falta em \"entre os milhares de ___\"?",
+    "verseRef": "Miquéias 5:2",
+    "learningObjective": "Sair sabendo que o governante prometido sai de Belém e vem desde a eternidade.",
+    "evidence": [
+      "Miquéias 5:2"
+    ],
+    "feedbackCorrect": "Exato: os milhares são de Judá.",
+    "feedbackWrong": {
+      "a": "Belém é a cidade pequena.",
+      "c": "Eternidade é a origem das saídas."
+    },
+    "passageText": "Mas tu, Belém Efrata, que és pequena para se achar entre os milhares de Judá, de ti é que me sairá aquele que há de ser reinante em Israel e cujas saídas são desde os tempos antigos, desde a eternidade.",
+    "template": "entre os milhares de ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "Belém"
+      },
+      {
+        "id": "b",
+        "text": "Judá"
+      },
+      {
+        "id": "c",
+        "text": "eternidade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "miqueias-pro-mq-04-belem-03",
+    "trail": "miqueias",
+    "section": "mq-04-belem",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "O que essa promessa corrige?",
+    "prompt": "O que essa promessa corrige?",
+    "cue": "O que essa promessa corrige?",
+    "verseRef": "Miquéias 5:2",
+    "learningObjective": "Sair sabendo que o governante prometido sai de Belém e vem desde a eternidade.",
+    "evidence": [
+      "Miquéias 5:2"
+    ],
+    "feedbackCorrect": "Certo: a ideia de que Deus só age no lugar grande.",
+    "feedbackWrong": {
+      "b": "Belém não é a capital.",
+      "c": "A origem eterna é da pessoa, não só da vila.",
+      "d": "Há um reinante prometido."
+    },
+    "passageText": "Mas tu, Belém Efrata, que és pequena para se achar entre os milhares de Judá, de ti é que me sairá aquele que há de ser reinante em Israel e cujas saídas são desde os tempos antigos, desde a eternidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus faz sair o reinante do lugar pequeno."
+      },
+      {
+        "id": "b",
+        "text": "O reinante precisa nascer numa capital."
+      },
+      {
+        "id": "c",
+        "text": "Eternidade significa que Belém é antiga e basta."
+      },
+      {
+        "id": "d",
+        "text": "Israel espera um governante sem origem."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-pro-mq-04-belem-04",
+    "trail": "miqueias",
+    "section": "mq-04-belem",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Miquéias 5:2?",
+    "prompt": "Qual sequência revela o sentido de Miquéias 5:2?",
+    "cue": "Qual sequência revela o sentido de Miquéias 5:2?",
+    "verseRef": "Miquéias 5:2",
+    "learningObjective": "Sair sabendo que o governante prometido sai de Belém e vem desde a eternidade.",
+    "evidence": [
+      "Miquéias 5:2"
+    ],
+    "feedbackCorrect": "Certo: pequenez, saída e então a origem eterna.",
+    "feedbackWrong": {
+      "b": "A saída vem da cidade pequena.",
+      "c": "A eternidade fecha a grandeza dele."
+    },
+    "passageText": "Mas tu, Belém Efrata, que és pequena para se achar entre os milhares de Judá, de ti é que me sairá aquele que há de ser reinante em Israel e cujas saídas são desde os tempos antigos, desde a eternidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Belém é pequena entre os milhares de Judá."
+      },
+      {
+        "id": "b",
+        "text": "Dela sairá o reinante em Israel."
+      },
+      {
+        "id": "c",
+        "text": "As saídas dele vêm desde a eternidade."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-pro-mq-04-belem-05",
+    "trail": "miqueias",
+    "section": "mq-04-belem",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Complete a frase: \"reinante em ___\"",
+    "prompt": "Complete a frase: \"reinante em ___\"",
+    "cue": "Complete a frase: \"reinante em ___\"",
+    "verseRef": "Miquéias 5:2",
+    "learningObjective": "Sair sabendo que o governante prometido sai de Belém e vem desde a eternidade.",
+    "evidence": [
+      "Miquéias 5:2"
+    ],
+    "feedbackCorrect": "Certo: ele reina em Israel.",
+    "feedbackWrong": {
+      "b": "Judá é onde Belém está.",
+      "c": "Pequena qualifica a cidade."
+    },
+    "passageText": "Mas tu, Belém Efrata, que és pequena para se achar entre os milhares de Judá, de ti é que me sairá aquele que há de ser reinante em Israel e cujas saídas são desde os tempos antigos, desde a eternidade.",
+    "template": "reinante em ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "Israel"
+      },
+      {
+        "id": "b",
+        "text": "Judá"
+      },
+      {
+        "id": "c",
+        "text": "pequena"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-pro-mq-04-belem-06",
+    "trail": "miqueias",
+    "section": "mq-04-belem",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "Que sentido de Miquéias 5:2 se liga a este contexto?",
+    "prompt": "Que sentido de Miquéias 5:2 se liga a este contexto?",
+    "cue": "Que sentido de Miquéias 5:2 se liga a este contexto?",
+    "verseRef": "Miquéias 5:2",
+    "learningObjective": "Sair sabendo que o governante prometido sai de Belém e vem desde a eternidade.",
+    "evidence": [
+      "Miquéias 5:2"
+    ],
+    "feedbackCorrect": "Certo: a pequenez não impede o reinante.",
+    "feedbackWrong": {
+      "a": "Deus escolhe Belém.",
+      "c": "Eterna é a saída dele, não a fama da vila."
+    },
+    "passageText": "Mas tu, Belém Efrata, que és pequena para se achar entre os milhares de Judá, de ti é que me sairá aquele que há de ser reinante em Israel e cujas saídas são desde os tempos antigos, desde a eternidade.",
+    "passageA": {
+      "ref": "Miquéias 5:2",
+      "text": "Mas tu, Belém Efrata, que és pequena para se achar entre os milhares de Judá, de ti é que me sairá aquele que há de ser reinante em Israel e cujas saídas são desde os tempos antigos, desde a eternidade."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O reinante prometido nasce pequeno"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Poder que escolhe o grande"
+      },
+      {
+        "id": "b",
+        "text": "Rei que nasce pequeno"
+      },
+      {
+        "id": "c",
+        "text": "Eternidade da vila"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "miqueias-sem-mq-05-mar-01",
+    "trail": "miqueias",
+    "section": "mq-05-mar",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Miquéias pergunta quem é Deus semelhante a este, que perdoa a iniquidade.",
+    "prompt": "Miquéias pergunta quem é Deus semelhante a este, que perdoa a iniquidade.",
+    "cue": "Miquéias pergunta quem é Deus semelhante a este, que perdoa a iniquidade.",
+    "verseRef": "Miquéias 7:18–19",
+    "learningObjective": "Sair sabendo que o perdão de Deus deleita-se na misericórdia e não retém a ira.",
+    "evidence": [
+      "Miquéias 7:18–19"
+    ],
+    "feedbackCorrect": "Certo: o perdão é o que o torna incomparável.",
+    "feedbackWrong": {
+      "false": "A pergunta abre o louvor."
+    },
+    "passageText": "Quem é Deus semelhante a ti, que perdoas a iniquidade e que te esqueces da transgressão do resto da tua herança? Ele não retém para sempre a sua ira, porque se deleita na misericórdia. Ele voltará e terá compaixão de nós; pisará aos pés as nossas iniquidades. Tu lançarás todos os seus pecados no fundo do mar.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "miqueias-sem-mq-05-mar-02",
+    "trail": "miqueias",
+    "section": "mq-05-mar",
+    "difficulty": "semente",
+    "type": "tap",
+    "skill": "observe",
+    "question": "Em Miquéias 7:18–19, toque a palavra que falta em \"se deleita na ___\"?",
+    "prompt": "Em Miquéias 7:18–19, toque a palavra que falta em \"se deleita na ___\"?",
+    "cue": "Em Miquéias 7:18–19, toque a palavra que falta em \"se deleita na ___\"?",
+    "verseRef": "Miquéias 7:18–19",
+    "learningObjective": "Sair sabendo que o perdão de Deus deleita-se na misericórdia e não retém a ira.",
+    "evidence": [
+      "Miquéias 7:18–19"
+    ],
+    "feedbackCorrect": "Exato: ele se deleita na misericórdia.",
+    "feedbackWrong": {
+      "a": "Ira é o que ele não retém para sempre.",
+      "c": "Mar é para onde vão os pecados."
+    },
+    "passageText": "Quem é Deus semelhante a ti, que perdoas a iniquidade e que te esqueces da transgressão do resto da tua herança? Ele não retém para sempre a sua ira, porque se deleita na misericórdia. Ele voltará e terá compaixão de nós; pisará aos pés as nossas iniquidades. Tu lançarás todos os seus pecados no fundo do mar.",
+    "template": "se deleita na ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "ira"
+      },
+      {
+        "id": "b",
+        "text": "misericórdia"
+      },
+      {
+        "id": "c",
+        "text": "mar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "miqueias-sem-mq-05-mar-03",
+    "trail": "miqueias",
+    "section": "mq-05-mar",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "O que torna Deus incomparável neste louvor?",
+    "prompt": "O que torna Deus incomparável neste louvor?",
+    "cue": "O que torna Deus incomparável neste louvor?",
+    "verseRef": "Miquéias 7:18–19",
+    "learningObjective": "Sair sabendo que o perdão de Deus deleita-se na misericórdia e não retém a ira.",
+    "evidence": [
+      "Miquéias 7:18–19"
+    ],
+    "feedbackCorrect": "Certo: ele perdoa e não retém a ira.",
+    "feedbackWrong": {
+      "b": "A ira não fica para sempre.",
+      "c": "Ele se esquece da transgressão do resto.",
+      "d": "O que vai ao mar são os pecados."
+    },
+    "passageText": "Quem é Deus semelhante a ti, que perdoas a iniquidade e que te esqueces da transgressão do resto da tua herança? Ele não retém para sempre a sua ira, porque se deleita na misericórdia. Ele voltará e terá compaixão de nós; pisará aos pés as nossas iniquidades. Tu lançarás todos os seus pecados no fundo do mar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Perdoar a iniquidade e deleitar-se na misericórdia."
+      },
+      {
+        "id": "b",
+        "text": "Guardar a ira para sempre sobre a herança."
+      },
+      {
+        "id": "c",
+        "text": "Esquecer o resto e reter a transgressão."
+      },
+      {
+        "id": "d",
+        "text": "Lançar o povo, e não os pecados, no mar."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-sem-mq-05-mar-04",
+    "trail": "miqueias",
+    "section": "mq-05-mar",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Qual é a ordem dos fatos em Miquéias 7:18–19?",
+    "prompt": "Qual é a ordem dos fatos em Miquéias 7:18–19?",
+    "cue": "Qual é a ordem dos fatos em Miquéias 7:18–19?",
+    "verseRef": "Miquéias 7:18–19",
+    "learningObjective": "Sair sabendo que o perdão de Deus deleita-se na misericórdia e não retém a ira.",
+    "evidence": [
+      "Miquéias 7:18–19"
+    ],
+    "feedbackCorrect": "Certo: perdão, misericórdia e então o mar.",
+    "feedbackWrong": {
+      "b": "A misericórdia explica por que a ira não fica.",
+      "c": "O mar é a imagem final do afastamento."
+    },
+    "passageText": "Quem é Deus semelhante a ti, que perdoas a iniquidade e que te esqueces da transgressão do resto da tua herança? Ele não retém para sempre a sua ira, porque se deleita na misericórdia. Ele voltará e terá compaixão de nós; pisará aos pés as nossas iniquidades. Tu lançarás todos os seus pecados no fundo do mar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus perdoa a iniquidade e não retém a ira para sempre."
+      },
+      {
+        "id": "b",
+        "text": "Ele se deleita na misericórdia e volta em compaixão."
+      },
+      {
+        "id": "c",
+        "text": "Lança os pecados no fundo do mar."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-sem-mq-05-mar-05",
+    "trail": "miqueias",
+    "section": "mq-05-mar",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Complete a frase: \"no fundo do ___\"",
+    "prompt": "Complete a frase: \"no fundo do ___\"",
+    "cue": "Complete a frase: \"no fundo do ___\"",
+    "verseRef": "Miquéias 7:18–19",
+    "learningObjective": "Sair sabendo que o perdão de Deus deleita-se na misericórdia e não retém a ira.",
+    "evidence": [
+      "Miquéias 7:18–19"
+    ],
+    "feedbackCorrect": "Certo: os pecados vão para o fundo do mar.",
+    "feedbackWrong": {
+      "b": "Ira é o que ele não retém.",
+      "c": "Herança é o resto do povo."
+    },
+    "passageText": "Quem é Deus semelhante a ti, que perdoas a iniquidade e que te esqueces da transgressão do resto da tua herança? Ele não retém para sempre a sua ira, porque se deleita na misericórdia. Ele voltará e terá compaixão de nós; pisará aos pés as nossas iniquidades. Tu lançarás todos os seus pecados no fundo do mar.",
+    "template": "no fundo do ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "mar"
+      },
+      {
+        "id": "b",
+        "text": "ira"
+      },
+      {
+        "id": "c",
+        "text": "herança"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-sem-mq-05-mar-06",
+    "trail": "miqueias",
+    "section": "mq-05-mar",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Miquéias 7:18–19 comunica que se liga a este contexto?",
+    "prompt": "O que Miquéias 7:18–19 comunica que se liga a este contexto?",
+    "cue": "O que Miquéias 7:18–19 comunica que se liga a este contexto?",
+    "verseRef": "Miquéias 7:18–19",
+    "learningObjective": "Sair sabendo que o perdão de Deus deleita-se na misericórdia e não retém a ira.",
+    "evidence": [
+      "Miquéias 7:18–19"
+    ],
+    "feedbackCorrect": "Certo: os pecados são lançados longe.",
+    "feedbackWrong": {
+      "b": "A ira não fica para sempre.",
+      "c": "O mar não guarda a culpa à mão."
+    },
+    "passageText": "Quem é Deus semelhante a ti, que perdoas a iniquidade e que te esqueces da transgressão do resto da tua herança? Ele não retém para sempre a sua ira, porque se deleita na misericórdia. Ele voltará e terá compaixão de nós; pisará aos pés as nossas iniquidades. Tu lançarás todos os seus pecados no fundo do mar.",
+    "passageA": {
+      "ref": "Miquéias 7:18–19",
+      "text": "Quem é Deus semelhante a ti, que perdoas a iniquidade e que te esqueces da transgressão do resto da tua herança? Ele não retém para sempre a sua ira, porque se deleita na misericórdia. Ele voltará e terá compaixão de nós; pisará aos pés as nossas iniquidades. Tu lançarás todos os seus pecados no fundo do mar."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus lança os pecados no fundo do mar"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Perdão que afasta"
+      },
+      {
+        "id": "b",
+        "text": "Ira sem fim"
+      },
+      {
+        "id": "c",
+        "text": "Mar da culpa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-cam-mq-05-mar-01",
+    "trail": "miqueias",
+    "section": "mq-05-mar",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Ele retém a ira para sempre e recusa a misericórdia.",
+    "prompt": "Ele retém a ira para sempre e recusa a misericórdia.",
+    "cue": "Ele retém a ira para sempre e recusa a misericórdia.",
+    "verseRef": "Miquéias 7:18–19",
+    "learningObjective": "Sair sabendo que o perdão de Deus deleita-se na misericórdia e não retém a ira.",
+    "evidence": [
+      "Miquéias 7:18–19"
+    ],
+    "feedbackCorrect": "Certo: não retém a ira, porque se deleita na misericórdia.",
+    "feedbackWrong": {
+      "true": "O texto nega a ira permanente."
+    },
+    "passageText": "Quem é Deus semelhante a ti, que perdoas a iniquidade e que te esqueces da transgressão do resto da tua herança? Ele não retém para sempre a sua ira, porque se deleita na misericórdia. Ele voltará e terá compaixão de nós; pisará aos pés as nossas iniquidades. Tu lançarás todos os seus pecados no fundo do mar.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "id": "miqueias-cam-mq-05-mar-02",
+    "trail": "miqueias",
+    "section": "mq-05-mar",
+    "difficulty": "caminhada",
+    "type": "tap",
+    "skill": "understand",
+    "question": "Em Miquéias 7:18–19, toque a palavra que falta em \"todos os seus ___\"?",
+    "prompt": "Em Miquéias 7:18–19, toque a palavra que falta em \"todos os seus ___\"?",
+    "cue": "Em Miquéias 7:18–19, toque a palavra que falta em \"todos os seus ___\"?",
+    "verseRef": "Miquéias 7:18–19",
+    "learningObjective": "Sair sabendo que o perdão de Deus deleita-se na misericórdia e não retém a ira.",
+    "evidence": [
+      "Miquéias 7:18–19"
+    ],
+    "feedbackCorrect": "Exato: ele lança os pecados no mar.",
+    "feedbackWrong": {
+      "a": "Ira não é o que é lançado.",
+      "c": "Herança é o resto que ele não esquece."
+    },
+    "passageText": "Quem é Deus semelhante a ti, que perdoas a iniquidade e que te esqueces da transgressão do resto da tua herança? Ele não retém para sempre a sua ira, porque se deleita na misericórdia. Ele voltará e terá compaixão de nós; pisará aos pés as nossas iniquidades. Tu lançarás todos os seus pecados no fundo do mar.",
+    "template": "todos os seus ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "ira"
+      },
+      {
+        "id": "b",
+        "text": "pecados"
+      },
+      {
+        "id": "c",
+        "text": "herança"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "miqueias-cam-mq-05-mar-03",
+    "trail": "miqueias",
+    "section": "mq-05-mar",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "O que “fundo do mar” acrescenta ao perdão?",
+    "prompt": "O que “fundo do mar” acrescenta ao perdão?",
+    "cue": "O que “fundo do mar” acrescenta ao perdão?",
+    "verseRef": "Miquéias 7:18–19",
+    "learningObjective": "Sair sabendo que o perdão de Deus deleita-se na misericórdia e não retém a ira.",
+    "evidence": [
+      "Miquéias 7:18–19"
+    ],
+    "feedbackCorrect": "Certo: o pecado não fica à mão para ser cobrado de novo.",
+    "feedbackWrong": {
+      "b": "Fundo é distância.",
+      "c": "Ele se deleita na misericórdia.",
+      "d": "A herança é o resto que ele trata com compaixão."
+    },
+    "passageText": "Quem é Deus semelhante a ti, que perdoas a iniquidade e que te esqueces da transgressão do resto da tua herança? Ele não retém para sempre a sua ira, porque se deleita na misericórdia. Ele voltará e terá compaixão de nós; pisará aos pés as nossas iniquidades. Tu lançarás todos os seus pecados no fundo do mar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os pecados são levados para longe."
+      },
+      {
+        "id": "b",
+        "text": "O mar guarda o pecado perto da praia."
+      },
+      {
+        "id": "c",
+        "text": "A misericórdia é só um nome da ira."
+      },
+      {
+        "id": "d",
+        "text": "A herança é que é lançada fora."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-cam-mq-05-mar-04",
+    "trail": "miqueias",
+    "section": "mq-05-mar",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Miquéias 7:18–19?",
+    "prompt": "Como se encadeiam os eventos de Miquéias 7:18–19?",
+    "cue": "Como se encadeiam os eventos de Miquéias 7:18–19?",
+    "verseRef": "Miquéias 7:18–19",
+    "learningObjective": "Sair sabendo que o perdão de Deus deleita-se na misericórdia e não retém a ira.",
+    "evidence": [
+      "Miquéias 7:18–19"
+    ],
+    "feedbackCorrect": "Certo: perdão, misericórdia e então o mar.",
+    "feedbackWrong": {
+      "b": "A misericórdia explica por que a ira não fica.",
+      "c": "O mar é a imagem final do afastamento."
+    },
+    "passageText": "Quem é Deus semelhante a ti, que perdoas a iniquidade e que te esqueces da transgressão do resto da tua herança? Ele não retém para sempre a sua ira, porque se deleita na misericórdia. Ele voltará e terá compaixão de nós; pisará aos pés as nossas iniquidades. Tu lançarás todos os seus pecados no fundo do mar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus perdoa a iniquidade e não retém a ira para sempre."
+      },
+      {
+        "id": "b",
+        "text": "Ele se deleita na misericórdia e volta em compaixão."
+      },
+      {
+        "id": "c",
+        "text": "Lança os pecados no fundo do mar."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-cam-mq-05-mar-05",
+    "trail": "miqueias",
+    "section": "mq-05-mar",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Complete a frase: \"terá ___ de nós\"",
+    "prompt": "Complete a frase: \"terá ___ de nós\"",
+    "cue": "Complete a frase: \"terá ___ de nós\"",
+    "verseRef": "Miquéias 7:18–19",
+    "learningObjective": "Sair sabendo que o perdão de Deus deleita-se na misericórdia e não retém a ira.",
+    "evidence": [
+      "Miquéias 7:18–19"
+    ],
+    "feedbackCorrect": "Certo: ele terá compaixão.",
+    "feedbackWrong": {
+      "b": "Pecados são o que é lançado.",
+      "c": "Mar é o lugar."
+    },
+    "passageText": "Quem é Deus semelhante a ti, que perdoas a iniquidade e que te esqueces da transgressão do resto da tua herança? Ele não retém para sempre a sua ira, porque se deleita na misericórdia. Ele voltará e terá compaixão de nós; pisará aos pés as nossas iniquidades. Tu lançarás todos os seus pecados no fundo do mar.",
+    "template": "terá ___ de nós",
+    "options": [
+      {
+        "id": "a",
+        "text": "compaixão"
+      },
+      {
+        "id": "b",
+        "text": "pecados"
+      },
+      {
+        "id": "c",
+        "text": "mar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-cam-mq-05-mar-06",
+    "trail": "miqueias",
+    "section": "mq-05-mar",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "Que relação Miquéias 7:18–19 estabelece com este contexto?",
+    "prompt": "Que relação Miquéias 7:18–19 estabelece com este contexto?",
+    "cue": "Que relação Miquéias 7:18–19 estabelece com este contexto?",
+    "verseRef": "Miquéias 7:18–19",
+    "learningObjective": "Sair sabendo que o perdão de Deus deleita-se na misericórdia e não retém a ira.",
+    "evidence": [
+      "Miquéias 7:18–19"
+    ],
+    "feedbackCorrect": "Certo: ele se deleita na misericórdia.",
+    "feedbackWrong": {
+      "a": "O deleite é explícito.",
+      "c": "A herança é tratada com perdão."
+    },
+    "passageText": "Quem é Deus semelhante a ti, que perdoas a iniquidade e que te esqueces da transgressão do resto da tua herança? Ele não retém para sempre a sua ira, porque se deleita na misericórdia. Ele voltará e terá compaixão de nós; pisará aos pés as nossas iniquidades. Tu lançarás todos os seus pecados no fundo do mar.",
+    "passageA": {
+      "ref": "Miquéias 7:18–19",
+      "text": "Quem é Deus semelhante a ti, que perdoas a iniquidade e que te esqueces da transgressão do resto da tua herança? Ele não retém para sempre a sua ira, porque se deleita na misericórdia. Ele voltará e terá compaixão de nós; pisará aos pés as nossas iniquidades. Tu lançarás todos os seus pecados no fundo do mar."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus lança os pecados no fundo do mar"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Misericórdia relutante"
+      },
+      {
+        "id": "b",
+        "text": "Deleite em perdoar"
+      },
+      {
+        "id": "c",
+        "text": "Herança rejeitada"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "miqueias-pro-mq-05-mar-01",
+    "trail": "miqueias",
+    "section": "mq-05-mar",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Lançar os pecados no mar é imagem de perdão que não os guarda à mão.",
+    "prompt": "Lançar os pecados no mar é imagem de perdão que não os guarda à mão.",
+    "cue": "Lançar os pecados no mar é imagem de perdão que não os guarda à mão.",
+    "verseRef": "Miquéias 7:18–19",
+    "learningObjective": "Sair sabendo que o perdão de Deus deleita-se na misericórdia e não retém a ira.",
+    "evidence": [
+      "Miquéias 7:18–19"
+    ],
+    "feedbackCorrect": "Certo: o fundo do mar é distância.",
+    "feedbackWrong": {
+      "false": "Ele pisa as iniquidades e as lança no mar."
+    },
+    "passageText": "Quem é Deus semelhante a ti, que perdoas a iniquidade e que te esqueces da transgressão do resto da tua herança? Ele não retém para sempre a sua ira, porque se deleita na misericórdia. Ele voltará e terá compaixão de nós; pisará aos pés as nossas iniquidades. Tu lançarás todos os seus pecados no fundo do mar.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "miqueias-pro-mq-05-mar-02",
+    "trail": "miqueias",
+    "section": "mq-05-mar",
+    "difficulty": "profundezas",
+    "type": "tap",
+    "skill": "interpret",
+    "question": "Em Miquéias 7:18–19, toque a palavra que falta em \"perdoas a ___\"?",
+    "prompt": "Em Miquéias 7:18–19, toque a palavra que falta em \"perdoas a ___\"?",
+    "cue": "Em Miquéias 7:18–19, toque a palavra que falta em \"perdoas a ___\"?",
+    "verseRef": "Miquéias 7:18–19",
+    "learningObjective": "Sair sabendo que o perdão de Deus deleita-se na misericórdia e não retém a ira.",
+    "evidence": [
+      "Miquéias 7:18–19"
+    ],
+    "feedbackCorrect": "Exato: ele perdoa a iniquidade.",
+    "feedbackWrong": {
+      "a": "Mar é o destino dos pecados.",
+      "c": "Misericórdia é o deleite dele."
+    },
+    "passageText": "Quem é Deus semelhante a ti, que perdoas a iniquidade e que te esqueces da transgressão do resto da tua herança? Ele não retém para sempre a sua ira, porque se deleita na misericórdia. Ele voltará e terá compaixão de nós; pisará aos pés as nossas iniquidades. Tu lançarás todos os seus pecados no fundo do mar.",
+    "template": "perdoas a ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "mar"
+      },
+      {
+        "id": "b",
+        "text": "iniquidade"
+      },
+      {
+        "id": "c",
+        "text": "misericórdia"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "miqueias-pro-mq-05-mar-03",
+    "trail": "miqueias",
+    "section": "mq-05-mar",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "O que esse louvor sustenta sobre o juízo?",
+    "prompt": "O que esse louvor sustenta sobre o juízo?",
+    "cue": "O que esse louvor sustenta sobre o juízo?",
+    "verseRef": "Miquéias 7:18–19",
+    "learningObjective": "Sair sabendo que o perdão de Deus deleita-se na misericórdia e não retém a ira.",
+    "evidence": [
+      "Miquéias 7:18–19"
+    ],
+    "feedbackCorrect": "Certo: a ira não é a última palavra dele.",
+    "feedbackWrong": {
+      "b": "Ele não retém a ira para sempre.",
+      "c": "Há perdão nomeado, não só silêncio.",
+      "d": "Lançar no fundo é não devolver."
+    },
+    "passageText": "Quem é Deus semelhante a ti, que perdoas a iniquidade e que te esqueces da transgressão do resto da tua herança? Ele não retém para sempre a sua ira, porque se deleita na misericórdia. Ele voltará e terá compaixão de nós; pisará aos pés as nossas iniquidades. Tu lançarás todos os seus pecados no fundo do mar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus volta em compaixão e pisa a iniquidade."
+      },
+      {
+        "id": "b",
+        "text": "A ira permanece porque a misericórdia é fraca."
+      },
+      {
+        "id": "c",
+        "text": "Perdoar é esquecer que houve transgressão sem lidar com ela."
+      },
+      {
+        "id": "d",
+        "text": "O mar devolve os pecados à herança."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-pro-mq-05-mar-04",
+    "trail": "miqueias",
+    "section": "mq-05-mar",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Miquéias 7:18–19?",
+    "prompt": "Qual sequência revela o sentido de Miquéias 7:18–19?",
+    "cue": "Qual sequência revela o sentido de Miquéias 7:18–19?",
+    "verseRef": "Miquéias 7:18–19",
+    "learningObjective": "Sair sabendo que o perdão de Deus deleita-se na misericórdia e não retém a ira.",
+    "evidence": [
+      "Miquéias 7:18–19"
+    ],
+    "feedbackCorrect": "Certo: perdão, misericórdia e então o mar.",
+    "feedbackWrong": {
+      "b": "A misericórdia explica por que a ira não fica.",
+      "c": "O mar é a imagem final do afastamento."
+    },
+    "passageText": "Quem é Deus semelhante a ti, que perdoas a iniquidade e que te esqueces da transgressão do resto da tua herança? Ele não retém para sempre a sua ira, porque se deleita na misericórdia. Ele voltará e terá compaixão de nós; pisará aos pés as nossas iniquidades. Tu lançarás todos os seus pecados no fundo do mar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus perdoa a iniquidade e não retém a ira para sempre."
+      },
+      {
+        "id": "b",
+        "text": "Ele se deleita na misericórdia e volta em compaixão."
+      },
+      {
+        "id": "c",
+        "text": "Lança os pecados no fundo do mar."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-pro-mq-05-mar-05",
+    "trail": "miqueias",
+    "section": "mq-05-mar",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Complete a frase: \"a sua ___\"",
+    "prompt": "Complete a frase: \"a sua ___\"",
+    "cue": "Complete a frase: \"a sua ___\"",
+    "verseRef": "Miquéias 7:18–19",
+    "learningObjective": "Sair sabendo que o perdão de Deus deleita-se na misericórdia e não retém a ira.",
+    "evidence": [
+      "Miquéias 7:18–19"
+    ],
+    "feedbackCorrect": "Certo: ele não retém a sua ira para sempre.",
+    "feedbackWrong": {
+      "b": "Mar recebe os pecados.",
+      "c": "Herança é o resto."
+    },
+    "passageText": "Quem é Deus semelhante a ti, que perdoas a iniquidade e que te esqueces da transgressão do resto da tua herança? Ele não retém para sempre a sua ira, porque se deleita na misericórdia. Ele voltará e terá compaixão de nós; pisará aos pés as nossas iniquidades. Tu lançarás todos os seus pecados no fundo do mar.",
+    "template": "a sua ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "ira"
+      },
+      {
+        "id": "b",
+        "text": "mar"
+      },
+      {
+        "id": "c",
+        "text": "herança"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "miqueias-pro-mq-05-mar-06",
+    "trail": "miqueias",
+    "section": "mq-05-mar",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "Que sentido de Miquéias 7:18–19 se liga a este contexto?",
+    "prompt": "Que sentido de Miquéias 7:18–19 se liga a este contexto?",
+    "cue": "Que sentido de Miquéias 7:18–19 se liga a este contexto?",
+    "verseRef": "Miquéias 7:18–19",
+    "learningObjective": "Sair sabendo que o perdão de Deus deleita-se na misericórdia e não retém a ira.",
+    "evidence": [
+      "Miquéias 7:18–19"
+    ],
+    "feedbackCorrect": "Certo: há compaixão que lida com a iniquidade.",
+    "feedbackWrong": {
+      "a": "Ele volta e tem compaixão.",
+      "c": "Pisar e lançar não é fingir que não houve mal."
+    },
+    "passageText": "Quem é Deus semelhante a ti, que perdoas a iniquidade e que te esqueces da transgressão do resto da tua herança? Ele não retém para sempre a sua ira, porque se deleita na misericórdia. Ele voltará e terá compaixão de nós; pisará aos pés as nossas iniquidades. Tu lançarás todos os seus pecados no fundo do mar.",
+    "passageA": {
+      "ref": "Miquéias 7:18–19",
+      "text": "Quem é Deus semelhante a ti, que perdoas a iniquidade e que te esqueces da transgressão do resto da tua herança? Ele não retém para sempre a sua ira, porque se deleita na misericórdia. Ele voltará e terá compaixão de nós; pisará aos pés as nossas iniquidades. Tu lançarás todos os seus pecados no fundo do mar."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus lança os pecados no fundo do mar"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Juízo sem volta"
+      },
+      {
+        "id": "b",
+        "text": "Compaixão que pisa o mal"
+      },
+      {
+        "id": "c",
+        "text": "Esquecimento vazio"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
   }
 ]

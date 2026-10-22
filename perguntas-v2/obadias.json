@@ -2221,5 +2221,2192 @@
     "trail": "obadias",
     "section": "obadias-obadias-03-desafio-obadias",
     "id": "obadias-pro-obadias-obadias-03-desafio-obadias-06"
+  },
+  {
+    "id": "obadias-sem-ob-03-soberba-01",
+    "trail": "obadias",
+    "section": "ob-03-soberba",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "A soberba do coração de Edom acaba de enganá-lo.",
+    "prompt": "A soberba do coração de Edom acaba de enganá-lo.",
+    "cue": "A soberba do coração de Edom acaba de enganá-lo.",
+    "verseRef": "Obadias 3–4",
+    "learningObjective": "Sair sabendo que a soberba de Edom será derrubada de onde ela se esconde.",
+    "evidence": [
+      "Obadias 3–4"
+    ],
+    "feedbackCorrect": "Certo: o engano nasce da soberba.",
+    "feedbackWrong": {
+      "false": "O versículo abre com essa frase."
+    },
+    "passageText": "A soberba do teu coração acaba de te enganar, ó tu que habitas nas fendas do penhasco, e cuja habitação é elevada; que dizes no teu coração: Quem me derrubará em terra? Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "obadias-sem-ob-03-soberba-02",
+    "trail": "obadias",
+    "section": "ob-03-soberba",
+    "difficulty": "semente",
+    "type": "tap",
+    "skill": "observe",
+    "question": "Em Obadias 3–4, toque a palavra que falta em \"A ___ do teu coração\"?",
+    "prompt": "Em Obadias 3–4, toque a palavra que falta em \"A ___ do teu coração\"?",
+    "cue": "Em Obadias 3–4, toque a palavra que falta em \"A ___ do teu coração\"?",
+    "verseRef": "Obadias 3–4",
+    "learningObjective": "Sair sabendo que a soberba de Edom será derrubada de onde ela se esconde.",
+    "evidence": [
+      "Obadias 3–4"
+    ],
+    "feedbackCorrect": "Exato: a soberba engana.",
+    "feedbackWrong": {
+      "a": "Águia é a comparação da subida.",
+      "c": "Ninho é onde ele se põe."
+    },
+    "passageText": "A soberba do teu coração acaba de te enganar, ó tu que habitas nas fendas do penhasco, e cuja habitação é elevada; que dizes no teu coração: Quem me derrubará em terra? Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "template": "A ___ do teu coração",
+    "options": [
+      {
+        "id": "a",
+        "text": "águia"
+      },
+      {
+        "id": "b",
+        "text": "soberba"
+      },
+      {
+        "id": "c",
+        "text": "ninho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "obadias-sem-ob-03-soberba-03",
+    "trail": "obadias",
+    "section": "ob-03-soberba",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "O que Edom diz no coração?",
+    "prompt": "O que Edom diz no coração?",
+    "cue": "O que Edom diz no coração?",
+    "verseRef": "Obadias 3–4",
+    "learningObjective": "Sair sabendo que a soberba de Edom será derrubada de onde ela se esconde.",
+    "evidence": [
+      "Obadias 3–4"
+    ],
+    "feedbackCorrect": "Certo: quem me derrubará em terra?",
+    "feedbackWrong": {
+      "b": "Ele confia na altura.",
+      "c": "A águia é comparação de subida, não de culto.",
+      "d": "O ninho alto é vanglória."
+    },
+    "passageText": "A soberba do teu coração acaba de te enganar, ó tu que habitas nas fendas do penhasco, e cuja habitação é elevada; que dizes no teu coração: Quem me derrubará em terra? Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que ninguém o derrubará em terra."
+      },
+      {
+        "id": "b",
+        "text": "Que o penhasco já o entregou."
+      },
+      {
+        "id": "c",
+        "text": "Que a águia o leva para Jeová."
+      },
+      {
+        "id": "d",
+        "text": "Que o ninho entre as estrelas é humilde."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-sem-ob-03-soberba-04",
+    "trail": "obadias",
+    "section": "ob-03-soberba",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Qual é a ordem dos fatos em Obadias 3–4?",
+    "prompt": "Qual é a ordem dos fatos em Obadias 3–4?",
+    "cue": "Qual é a ordem dos fatos em Obadias 3–4?",
+    "verseRef": "Obadias 3–4",
+    "learningObjective": "Sair sabendo que a soberba de Edom será derrubada de onde ela se esconde.",
+    "evidence": [
+      "Obadias 3–4"
+    ],
+    "feedbackCorrect": "Certo: engano, altura e então a queda.",
+    "feedbackWrong": {
+      "b": "A altura é o esconderijo da soberba.",
+      "c": "A palavra de Jeová fecha a cena."
+    },
+    "passageText": "A soberba do teu coração acaba de te enganar, ó tu que habitas nas fendas do penhasco, e cuja habitação é elevada; que dizes no teu coração: Quem me derrubará em terra? Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A soberba do coração engana Edom."
+      },
+      {
+        "id": "b",
+        "text": "Ele habita no penhasco e põe o ninho entre as estrelas."
+      },
+      {
+        "id": "c",
+        "text": "Jeová diz: dali te derrubarei."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-sem-ob-03-soberba-05",
+    "trail": "obadias",
+    "section": "ob-03-soberba",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Complete a frase: \"subas ao alto como ___\"",
+    "prompt": "Complete a frase: \"subas ao alto como ___\"",
+    "cue": "Complete a frase: \"subas ao alto como ___\"",
+    "verseRef": "Obadias 3–4",
+    "learningObjective": "Sair sabendo que a soberba de Edom será derrubada de onde ela se esconde.",
+    "evidence": [
+      "Obadias 3–4"
+    ],
+    "feedbackCorrect": "Certo: a subida é como águia.",
+    "feedbackWrong": {
+      "b": "Ninho é o lugar entre as estrelas.",
+      "c": "Soberba é o engano do coração."
+    },
+    "passageText": "A soberba do teu coração acaba de te enganar, ó tu que habitas nas fendas do penhasco, e cuja habitação é elevada; que dizes no teu coração: Quem me derrubará em terra? Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "template": "subas ao alto como ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "águia"
+      },
+      {
+        "id": "b",
+        "text": "ninho"
+      },
+      {
+        "id": "c",
+        "text": "soberba"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-sem-ob-03-soberba-06",
+    "trail": "obadias",
+    "section": "ob-03-soberba",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Obadias 3–4 comunica que se liga a este contexto?",
+    "prompt": "O que Obadias 3–4 comunica que se liga a este contexto?",
+    "cue": "O que Obadias 3–4 comunica que se liga a este contexto?",
+    "verseRef": "Obadias 3–4",
+    "learningObjective": "Sair sabendo que a soberba de Edom será derrubada de onde ela se esconde.",
+    "evidence": [
+      "Obadias 3–4"
+    ],
+    "feedbackCorrect": "Certo: a altura engana e não salva.",
+    "feedbackWrong": {
+      "b": "O penhasco não o protege.",
+      "c": "A águia não é salvação."
+    },
+    "passageText": "A soberba do teu coração acaba de te enganar, ó tu que habitas nas fendas do penhasco, e cuja habitação é elevada; que dizes no teu coração: Quem me derrubará em terra? Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "passageA": {
+      "ref": "Obadias 3–4",
+      "text": "A soberba do teu coração acaba de te enganar, ó tu que habitas nas fendas do penhasco, e cuja habitação é elevada; que dizes no teu coração: Quem me derrubará em terra? Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Altura não protege do juízo"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Altura enganosa"
+      },
+      {
+        "id": "b",
+        "text": "Penhasco fiel"
+      },
+      {
+        "id": "c",
+        "text": "Águia salvadora"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-cam-ob-03-soberba-01",
+    "trail": "obadias",
+    "section": "ob-03-soberba",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Jeová diz que o ninho entre as estrelas ficará intocado.",
+    "prompt": "Jeová diz que o ninho entre as estrelas ficará intocado.",
+    "cue": "Jeová diz que o ninho entre as estrelas ficará intocado.",
+    "verseRef": "Obadias 3–4",
+    "learningObjective": "Sair sabendo que a soberba de Edom será derrubada de onde ela se esconde.",
+    "evidence": [
+      "Obadias 3–4"
+    ],
+    "feedbackCorrect": "Certo: dali ele o derrubará.",
+    "feedbackWrong": {
+      "true": "A altura não cancela a queda."
+    },
+    "passageText": "A soberba do teu coração acaba de te enganar, ó tu que habitas nas fendas do penhasco, e cuja habitação é elevada; que dizes no teu coração: Quem me derrubará em terra? Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "id": "obadias-cam-ob-03-soberba-02",
+    "trail": "obadias",
+    "section": "ob-03-soberba",
+    "difficulty": "caminhada",
+    "type": "tap",
+    "skill": "understand",
+    "question": "Em Obadias 3–4, toque a palavra que falta em \"o teu ___ posto entre as estrelas\"?",
+    "prompt": "Em Obadias 3–4, toque a palavra que falta em \"o teu ___ posto entre as estrelas\"?",
+    "cue": "Em Obadias 3–4, toque a palavra que falta em \"o teu ___ posto entre as estrelas\"?",
+    "verseRef": "Obadias 3–4",
+    "learningObjective": "Sair sabendo que a soberba de Edom será derrubada de onde ela se esconde.",
+    "evidence": [
+      "Obadias 3–4"
+    ],
+    "feedbackCorrect": "Exato: o ninho está entre as estrelas.",
+    "feedbackWrong": {
+      "a": "Soberba é do coração.",
+      "c": "Terra é para onde a queda aponta."
+    },
+    "passageText": "A soberba do teu coração acaba de te enganar, ó tu que habitas nas fendas do penhasco, e cuja habitação é elevada; que dizes no teu coração: Quem me derrubará em terra? Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "template": "o teu ___ posto entre as estrelas",
+    "options": [
+      {
+        "id": "a",
+        "text": "soberba"
+      },
+      {
+        "id": "b",
+        "text": "ninho"
+      },
+      {
+        "id": "c",
+        "text": "terra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "obadias-cam-ob-03-soberba-03",
+    "trail": "obadias",
+    "section": "ob-03-soberba",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "O que Jeová responde à altura de Edom?",
+    "prompt": "O que Jeová responde à altura de Edom?",
+    "cue": "O que Jeová responde à altura de Edom?",
+    "verseRef": "Obadias 3–4",
+    "learningObjective": "Sair sabendo que a soberba de Edom será derrubada de onde ela se esconde.",
+    "evidence": [
+      "Obadias 3–4"
+    ],
+    "feedbackCorrect": "Certo: dali te derrubarei.",
+    "feedbackWrong": {
+      "b": "A resposta é derrubar.",
+      "c": "Jeová fala contra a segurança.",
+      "d": "Quem derruba é Jeová."
+    },
+    "passageText": "A soberba do teu coração acaba de te enganar, ó tu que habitas nas fendas do penhasco, e cuja habitação é elevada; que dizes no teu coração: Quem me derrubará em terra? Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mesmo entre as estrelas, ele o derruba."
+      },
+      {
+        "id": "b",
+        "text": "A altura confirma que Edom está seguro."
+      },
+      {
+        "id": "c",
+        "text": "O penhasco anula a palavra de Jeová."
+      },
+      {
+        "id": "d",
+        "text": "A águia é quem executa o juízo."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-cam-ob-03-soberba-04",
+    "trail": "obadias",
+    "section": "ob-03-soberba",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Obadias 3–4?",
+    "prompt": "Como se encadeiam os eventos de Obadias 3–4?",
+    "cue": "Como se encadeiam os eventos de Obadias 3–4?",
+    "verseRef": "Obadias 3–4",
+    "learningObjective": "Sair sabendo que a soberba de Edom será derrubada de onde ela se esconde.",
+    "evidence": [
+      "Obadias 3–4"
+    ],
+    "feedbackCorrect": "Certo: engano, altura e então a queda.",
+    "feedbackWrong": {
+      "b": "A altura é o esconderijo da soberba.",
+      "c": "A palavra de Jeová fecha a cena."
+    },
+    "passageText": "A soberba do teu coração acaba de te enganar, ó tu que habitas nas fendas do penhasco, e cuja habitação é elevada; que dizes no teu coração: Quem me derrubará em terra? Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A soberba do coração engana Edom."
+      },
+      {
+        "id": "b",
+        "text": "Ele habita no penhasco e põe o ninho entre as estrelas."
+      },
+      {
+        "id": "c",
+        "text": "Jeová diz: dali te derrubarei."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-cam-ob-03-soberba-05",
+    "trail": "obadias",
+    "section": "ob-03-soberba",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Complete a frase: \"entre as ___\"",
+    "prompt": "Complete a frase: \"entre as ___\"",
+    "cue": "Complete a frase: \"entre as ___\"",
+    "verseRef": "Obadias 3–4",
+    "learningObjective": "Sair sabendo que a soberba de Edom será derrubada de onde ela se esconde.",
+    "evidence": [
+      "Obadias 3–4"
+    ],
+    "feedbackCorrect": "Certo: o ninho está entre as estrelas.",
+    "feedbackWrong": {
+      "b": "Penhasco é a habitação.",
+      "c": "Águia é a comparação."
+    },
+    "passageText": "A soberba do teu coração acaba de te enganar, ó tu que habitas nas fendas do penhasco, e cuja habitação é elevada; que dizes no teu coração: Quem me derrubará em terra? Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "template": "entre as ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "estrelas"
+      },
+      {
+        "id": "b",
+        "text": "penhasco"
+      },
+      {
+        "id": "c",
+        "text": "águia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-cam-ob-03-soberba-06",
+    "trail": "obadias",
+    "section": "ob-03-soberba",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "Que relação Obadias 3–4 estabelece com este contexto?",
+    "prompt": "Que relação Obadias 3–4 estabelece com este contexto?",
+    "cue": "Que relação Obadias 3–4 estabelece com este contexto?",
+    "verseRef": "Obadias 3–4",
+    "learningObjective": "Sair sabendo que a soberba de Edom será derrubada de onde ela se esconde.",
+    "evidence": [
+      "Obadias 3–4"
+    ],
+    "feedbackCorrect": "Certo: do alto Jeová o derruba.",
+    "feedbackWrong": {
+      "a": "As estrelas não são abrigo.",
+      "c": "O coração está soberbo, não humilde."
+    },
+    "passageText": "A soberba do teu coração acaba de te enganar, ó tu que habitas nas fendas do penhasco, e cuja habitação é elevada; que dizes no teu coração: Quem me derrubará em terra? Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "passageA": {
+      "ref": "Obadias 3–4",
+      "text": "A soberba do teu coração acaba de te enganar, ó tu que habitas nas fendas do penhasco, e cuja habitação é elevada; que dizes no teu coração: Quem me derrubará em terra? Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Altura não protege do juízo"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Abrigo nas estrelas"
+      },
+      {
+        "id": "b",
+        "text": "Queda do alto"
+      },
+      {
+        "id": "c",
+        "text": "Coração humilde"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "obadias-pro-ob-03-soberba-01",
+    "trail": "obadias",
+    "section": "ob-03-soberba",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Segurança geográfica não segura quem se exalta contra Deus.",
+    "prompt": "Segurança geográfica não segura quem se exalta contra Deus.",
+    "cue": "Segurança geográfica não segura quem se exalta contra Deus.",
+    "verseRef": "Obadias 3–4",
+    "learningObjective": "Sair sabendo que a soberba de Edom será derrubada de onde ela se esconde.",
+    "evidence": [
+      "Obadias 3–4"
+    ],
+    "feedbackCorrect": "Certo: penhasco e estrelas não bastam.",
+    "feedbackWrong": {
+      "false": "Jeová derruba de lá."
+    },
+    "passageText": "A soberba do teu coração acaba de te enganar, ó tu que habitas nas fendas do penhasco, e cuja habitação é elevada; que dizes no teu coração: Quem me derrubará em terra? Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "obadias-pro-ob-03-soberba-02",
+    "trail": "obadias",
+    "section": "ob-03-soberba",
+    "difficulty": "profundezas",
+    "type": "tap",
+    "skill": "interpret",
+    "question": "Em Obadias 3–4, toque a palavra que falta em \"fendas do ___\"?",
+    "prompt": "Em Obadias 3–4, toque a palavra que falta em \"fendas do ___\"?",
+    "cue": "Em Obadias 3–4, toque a palavra que falta em \"fendas do ___\"?",
+    "verseRef": "Obadias 3–4",
+    "learningObjective": "Sair sabendo que a soberba de Edom será derrubada de onde ela se esconde.",
+    "evidence": [
+      "Obadias 3–4"
+    ],
+    "feedbackCorrect": "Exato: ele habita nas fendas do penhasco.",
+    "feedbackWrong": {
+      "a": "Águia é a imagem da subida.",
+      "c": "Estrelas são a altura do ninho."
+    },
+    "passageText": "A soberba do teu coração acaba de te enganar, ó tu que habitas nas fendas do penhasco, e cuja habitação é elevada; que dizes no teu coração: Quem me derrubará em terra? Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "template": "fendas do ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "águia"
+      },
+      {
+        "id": "b",
+        "text": "penhasco"
+      },
+      {
+        "id": "c",
+        "text": "estrelas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "obadias-pro-ob-03-soberba-03",
+    "trail": "obadias",
+    "section": "ob-03-soberba",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "O que a soberba faz com Edom antes da queda?",
+    "prompt": "O que a soberba faz com Edom antes da queda?",
+    "cue": "O que a soberba faz com Edom antes da queda?",
+    "verseRef": "Obadias 3–4",
+    "learningObjective": "Sair sabendo que a soberba de Edom será derrubada de onde ela se esconde.",
+    "evidence": [
+      "Obadias 3–4"
+    ],
+    "feedbackCorrect": "Certo: engana o coração.",
+    "feedbackWrong": {
+      "b": "Ele se acha inalcançável.",
+      "c": "As estrelas são o esconderijo, não o temor.",
+      "d": "A frase do coração é justamente essa."
+    },
+    "passageText": "A soberba do teu coração acaba de te enganar, ó tu que habitas nas fendas do penhasco, e cuja habitação é elevada; que dizes no teu coração: Quem me derrubará em terra? Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Faz o coração confiar na própria altura."
+      },
+      {
+        "id": "b",
+        "text": "Leva Edom a descer do penhasco."
+      },
+      {
+        "id": "c",
+        "text": "Ensina Edom a temer as estrelas."
+      },
+      {
+        "id": "d",
+        "text": "Apaga a frase “quem me derrubará”."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-pro-ob-03-soberba-04",
+    "trail": "obadias",
+    "section": "ob-03-soberba",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Obadias 3–4?",
+    "prompt": "Qual sequência revela o sentido de Obadias 3–4?",
+    "cue": "Qual sequência revela o sentido de Obadias 3–4?",
+    "verseRef": "Obadias 3–4",
+    "learningObjective": "Sair sabendo que a soberba de Edom será derrubada de onde ela se esconde.",
+    "evidence": [
+      "Obadias 3–4"
+    ],
+    "feedbackCorrect": "Certo: engano, altura e então a queda.",
+    "feedbackWrong": {
+      "b": "A altura é o esconderijo da soberba.",
+      "c": "A palavra de Jeová fecha a cena."
+    },
+    "passageText": "A soberba do teu coração acaba de te enganar, ó tu que habitas nas fendas do penhasco, e cuja habitação é elevada; que dizes no teu coração: Quem me derrubará em terra? Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A soberba do coração engana Edom."
+      },
+      {
+        "id": "b",
+        "text": "Ele habita no penhasco e põe o ninho entre as estrelas."
+      },
+      {
+        "id": "c",
+        "text": "Jeová diz: dali te derrubarei."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-pro-ob-03-soberba-05",
+    "trail": "obadias",
+    "section": "ob-03-soberba",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Complete a frase: \"dizes no teu ___\"",
+    "prompt": "Complete a frase: \"dizes no teu ___\"",
+    "cue": "Complete a frase: \"dizes no teu ___\"",
+    "verseRef": "Obadias 3–4",
+    "learningObjective": "Sair sabendo que a soberba de Edom será derrubada de onde ela se esconde.",
+    "evidence": [
+      "Obadias 3–4"
+    ],
+    "feedbackCorrect": "Certo: a frase nasce no coração.",
+    "feedbackWrong": {
+      "b": "Ninho é o esconderijo.",
+      "c": "Águia é a imagem da subida."
+    },
+    "passageText": "A soberba do teu coração acaba de te enganar, ó tu que habitas nas fendas do penhasco, e cuja habitação é elevada; que dizes no teu coração: Quem me derrubará em terra? Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "template": "dizes no teu ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "coração"
+      },
+      {
+        "id": "b",
+        "text": "ninho"
+      },
+      {
+        "id": "c",
+        "text": "águia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-pro-ob-03-soberba-06",
+    "trail": "obadias",
+    "section": "ob-03-soberba",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "Que sentido de Obadias 3–4 se liga a este contexto?",
+    "prompt": "Que sentido de Obadias 3–4 se liga a este contexto?",
+    "cue": "Que sentido de Obadias 3–4 se liga a este contexto?",
+    "verseRef": "Obadias 3–4",
+    "learningObjective": "Sair sabendo que a soberba de Edom será derrubada de onde ela se esconde.",
+    "evidence": [
+      "Obadias 3–4"
+    ],
+    "feedbackCorrect": "Certo: nenhum ninho fica acima de Jeová.",
+    "feedbackWrong": {
+      "a": "O penhasco virou confiança falsa.",
+      "c": "A segurança é desmentida."
+    },
+    "passageText": "A soberba do teu coração acaba de te enganar, ó tu que habitas nas fendas do penhasco, e cuja habitação é elevada; que dizes no teu coração: Quem me derrubará em terra? Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "passageA": {
+      "ref": "Obadias 3–4",
+      "text": "A soberba do teu coração acaba de te enganar, ó tu que habitas nas fendas do penhasco, e cuja habitação é elevada; que dizes no teu coração: Quem me derrubará em terra? Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Altura não protege do juízo"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Geografia como deus"
+      },
+      {
+        "id": "b",
+        "text": "Juízo acima do ninho"
+      },
+      {
+        "id": "c",
+        "text": "Segurança eterna"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "obadias-sem-ob-04-irmao-01",
+    "trail": "obadias",
+    "section": "ob-04-irmao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "A vergonha de Edom vem da violência contra o irmão Jacó.",
+    "prompt": "A vergonha de Edom vem da violência contra o irmão Jacó.",
+    "cue": "A vergonha de Edom vem da violência contra o irmão Jacó.",
+    "verseRef": "Obadias 10–11",
+    "learningObjective": "Sair sabendo que Edom se fez como um dos que saquearam Jerusalém.",
+    "evidence": [
+      "Obadias 10–11"
+    ],
+    "feedbackCorrect": "Certo: o irmão é o motivo nomeado.",
+    "feedbackWrong": {
+      "false": "A frase liga violência e vergonha."
+    },
+    "passageText": "Por causa da violência feita a teu irmão Jacó, cobrir-te-á a vergonha, e serás exterminado para sempre. No dia em que estiveste do lado oposto, no dia em que estrangeiros lhe levaram os bens, e forasteiros lhe entraram nas portas e deitaram sortes sobre Jerusalém, tu também eras como um deles.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "obadias-sem-ob-04-irmao-02",
+    "trail": "obadias",
+    "section": "ob-04-irmao",
+    "difficulty": "semente",
+    "type": "tap",
+    "skill": "observe",
+    "question": "Em Obadias 10–11, toque a palavra que falta em \"a teu ___ Jacó\"?",
+    "prompt": "Em Obadias 10–11, toque a palavra que falta em \"a teu ___ Jacó\"?",
+    "cue": "Em Obadias 10–11, toque a palavra que falta em \"a teu ___ Jacó\"?",
+    "verseRef": "Obadias 10–11",
+    "learningObjective": "Sair sabendo que Edom se fez como um dos que saquearam Jerusalém.",
+    "evidence": [
+      "Obadias 10–11"
+    ],
+    "feedbackCorrect": "Exato: a violência é contra o irmão.",
+    "feedbackWrong": {
+      "a": "Vergonha é a consequência.",
+      "c": "Bens são o que levaram."
+    },
+    "passageText": "Por causa da violência feita a teu irmão Jacó, cobrir-te-á a vergonha, e serás exterminado para sempre. No dia em que estiveste do lado oposto, no dia em que estrangeiros lhe levaram os bens, e forasteiros lhe entraram nas portas e deitaram sortes sobre Jerusalém, tu também eras como um deles.",
+    "template": "a teu ___ Jacó",
+    "options": [
+      {
+        "id": "a",
+        "text": "vergonha"
+      },
+      {
+        "id": "b",
+        "text": "irmão"
+      },
+      {
+        "id": "c",
+        "text": "bens"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "obadias-sem-ob-04-irmao-03",
+    "trail": "obadias",
+    "section": "ob-04-irmao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Por que a vergonha cobre Edom?",
+    "prompt": "Por que a vergonha cobre Edom?",
+    "cue": "Por que a vergonha cobre Edom?",
+    "verseRef": "Obadias 10–11",
+    "learningObjective": "Sair sabendo que Edom se fez como um dos que saquearam Jerusalém.",
+    "evidence": [
+      "Obadias 10–11"
+    ],
+    "feedbackCorrect": "Certo: pela violência contra Jacó.",
+    "feedbackWrong": {
+      "b": "Ele ficou do lado oposto.",
+      "c": "Os bens foram levados com a participação dele.",
+      "d": "Ele estava nesse dia."
+    },
+    "passageText": "Por causa da violência feita a teu irmão Jacó, cobrir-te-á a vergonha, e serás exterminado para sempre. No dia em que estiveste do lado oposto, no dia em que estrangeiros lhe levaram os bens, e forasteiros lhe entraram nas portas e deitaram sortes sobre Jerusalém, tu também eras como um deles.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque violentou o irmão Jacó."
+      },
+      {
+        "id": "b",
+        "text": "Porque defendeu as portas de Jerusalém."
+      },
+      {
+        "id": "c",
+        "text": "Porque recusou a parte nos bens."
+      },
+      {
+        "id": "d",
+        "text": "Porque ficou longe no dia da queda."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-sem-ob-04-irmao-04",
+    "trail": "obadias",
+    "section": "ob-04-irmao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Qual é a ordem dos fatos em Obadias 10–11?",
+    "prompt": "Qual é a ordem dos fatos em Obadias 10–11?",
+    "cue": "Qual é a ordem dos fatos em Obadias 10–11?",
+    "verseRef": "Obadias 10–11",
+    "learningObjective": "Sair sabendo que Edom se fez como um dos que saquearam Jerusalém.",
+    "evidence": [
+      "Obadias 10–11"
+    ],
+    "feedbackCorrect": "Certo: culpa, lado oposto e então a igualdade com os saqueadores.",
+    "feedbackWrong": {
+      "b": "O lado oposto especifica a violência.",
+      "c": "Ser como eles fecha a acusação."
+    },
+    "passageText": "Por causa da violência feita a teu irmão Jacó, cobrir-te-á a vergonha, e serás exterminado para sempre. No dia em que estiveste do lado oposto, no dia em que estrangeiros lhe levaram os bens, e forasteiros lhe entraram nas portas e deitaram sortes sobre Jerusalém, tu também eras como um deles.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A violência contra Jacó traz vergonha a Edom."
+      },
+      {
+        "id": "b",
+        "text": "No dia mau, Edom ficou do lado oposto."
+      },
+      {
+        "id": "c",
+        "text": "Ele era como os que levaram os bens e deitaram sortes."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-sem-ob-04-irmao-05",
+    "trail": "obadias",
+    "section": "ob-04-irmao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Complete a frase: \"cobrir-te-á a ___\"",
+    "prompt": "Complete a frase: \"cobrir-te-á a ___\"",
+    "cue": "Complete a frase: \"cobrir-te-á a ___\"",
+    "verseRef": "Obadias 10–11",
+    "learningObjective": "Sair sabendo que Edom se fez como um dos que saquearam Jerusalém.",
+    "evidence": [
+      "Obadias 10–11"
+    ],
+    "feedbackCorrect": "Certo: a vergonha o cobrirá.",
+    "feedbackWrong": {
+      "b": "Irmão é Jacó.",
+      "c": "Bens são o saque."
+    },
+    "passageText": "Por causa da violência feita a teu irmão Jacó, cobrir-te-á a vergonha, e serás exterminado para sempre. No dia em que estiveste do lado oposto, no dia em que estrangeiros lhe levaram os bens, e forasteiros lhe entraram nas portas e deitaram sortes sobre Jerusalém, tu também eras como um deles.",
+    "template": "cobrir-te-á a ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "vergonha"
+      },
+      {
+        "id": "b",
+        "text": "irmão"
+      },
+      {
+        "id": "c",
+        "text": "bens"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-sem-ob-04-irmao-06",
+    "trail": "obadias",
+    "section": "ob-04-irmao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Obadias 10–11 comunica que se liga a este contexto?",
+    "prompt": "O que Obadias 10–11 comunica que se liga a este contexto?",
+    "cue": "O que Obadias 10–11 comunica que se liga a este contexto?",
+    "verseRef": "Obadias 10–11",
+    "learningObjective": "Sair sabendo que Edom se fez como um dos que saquearam Jerusalém.",
+    "evidence": [
+      "Obadias 10–11"
+    ],
+    "feedbackCorrect": "Certo: a culpa é contra o irmão.",
+    "feedbackWrong": {
+      "b": "Não há neutralidade no texto.",
+      "c": "Ele não defendeu a cidade."
+    },
+    "passageText": "Por causa da violência feita a teu irmão Jacó, cobrir-te-á a vergonha, e serás exterminado para sempre. No dia em que estiveste do lado oposto, no dia em que estrangeiros lhe levaram os bens, e forasteiros lhe entraram nas portas e deitaram sortes sobre Jerusalém, tu também eras como um deles.",
+    "passageA": {
+      "ref": "Obadias 10–11",
+      "text": "Por causa da violência feita a teu irmão Jacó, cobrir-te-á a vergonha, e serás exterminado para sempre. No dia em que estiveste do lado oposto, no dia em que estrangeiros lhe levaram os bens, e forasteiros lhe entraram nas portas e deitaram sortes sobre Jerusalém, tu também eras como um deles."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Festejar a queda do irmão é culpa"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Culpa fraterna"
+      },
+      {
+        "id": "b",
+        "text": "Guerra neutra"
+      },
+      {
+        "id": "c",
+        "text": "Defesa da cidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-cam-ob-04-irmao-01",
+    "trail": "obadias",
+    "section": "ob-04-irmao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Edom ficou ao lado de Jacó e impediu o saque.",
+    "prompt": "Edom ficou ao lado de Jacó e impediu o saque.",
+    "cue": "Edom ficou ao lado de Jacó e impediu o saque.",
+    "verseRef": "Obadias 10–11",
+    "learningObjective": "Sair sabendo que Edom se fez como um dos que saquearam Jerusalém.",
+    "evidence": [
+      "Obadias 10–11"
+    ],
+    "feedbackCorrect": "Certo: ficou do lado oposto, como um deles.",
+    "feedbackWrong": {
+      "true": "Estrangeiros levaram os bens, e Edom era como eles."
+    },
+    "passageText": "Por causa da violência feita a teu irmão Jacó, cobrir-te-á a vergonha, e serás exterminado para sempre. No dia em que estiveste do lado oposto, no dia em que estrangeiros lhe levaram os bens, e forasteiros lhe entraram nas portas e deitaram sortes sobre Jerusalém, tu também eras como um deles.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "id": "obadias-cam-ob-04-irmao-02",
+    "trail": "obadias",
+    "section": "ob-04-irmao",
+    "difficulty": "caminhada",
+    "type": "tap",
+    "skill": "understand",
+    "question": "Em Obadias 10–11, toque a palavra que falta em \"lhe levaram os ___\"?",
+    "prompt": "Em Obadias 10–11, toque a palavra que falta em \"lhe levaram os ___\"?",
+    "cue": "Em Obadias 10–11, toque a palavra que falta em \"lhe levaram os ___\"?",
+    "verseRef": "Obadias 10–11",
+    "learningObjective": "Sair sabendo que Edom se fez como um dos que saquearam Jerusalém.",
+    "evidence": [
+      "Obadias 10–11"
+    ],
+    "feedbackCorrect": "Exato: levaram os bens.",
+    "feedbackWrong": {
+      "a": "Irmão é Jacó.",
+      "c": "Portas são por onde entraram."
+    },
+    "passageText": "Por causa da violência feita a teu irmão Jacó, cobrir-te-á a vergonha, e serás exterminado para sempre. No dia em que estiveste do lado oposto, no dia em que estrangeiros lhe levaram os bens, e forasteiros lhe entraram nas portas e deitaram sortes sobre Jerusalém, tu também eras como um deles.",
+    "template": "lhe levaram os ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "irmão"
+      },
+      {
+        "id": "b",
+        "text": "bens"
+      },
+      {
+        "id": "c",
+        "text": "portas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "obadias-cam-ob-04-irmao-03",
+    "trail": "obadias",
+    "section": "ob-04-irmao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "O que “eras como um deles” faz com a desculpa de neutralidade?",
+    "prompt": "O que “eras como um deles” faz com a desculpa de neutralidade?",
+    "cue": "O que “eras como um deles” faz com a desculpa de neutralidade?",
+    "verseRef": "Obadias 10–11",
+    "learningObjective": "Sair sabendo que Edom se fez como um dos que saquearam Jerusalém.",
+    "evidence": [
+      "Obadias 10–11"
+    ],
+    "feedbackCorrect": "Certo: tira a desculpa.",
+    "feedbackWrong": {
+      "b": "Como um deles é participação.",
+      "c": "Os estrangeiros entram com ele na frase.",
+      "d": "A vergonha é dele por causa do irmão."
+    },
+    "passageText": "Por causa da violência feita a teu irmão Jacó, cobrir-te-á a vergonha, e serás exterminado para sempre. No dia em que estiveste do lado oposto, no dia em que estrangeiros lhe levaram os bens, e forasteiros lhe entraram nas portas e deitaram sortes sobre Jerusalém, tu também eras como um deles.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Põe Edom junto de quem saqueou."
+      },
+      {
+        "id": "b",
+        "text": "Prova que Edom só observou de longe."
+      },
+      {
+        "id": "c",
+        "text": "Mostra que os estrangeiros agiram sem ele."
+      },
+      {
+        "id": "d",
+        "text": "Separa Edom da vergonha de Jacó."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-cam-ob-04-irmao-04",
+    "trail": "obadias",
+    "section": "ob-04-irmao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Obadias 10–11?",
+    "prompt": "Como se encadeiam os eventos de Obadias 10–11?",
+    "cue": "Como se encadeiam os eventos de Obadias 10–11?",
+    "verseRef": "Obadias 10–11",
+    "learningObjective": "Sair sabendo que Edom se fez como um dos que saquearam Jerusalém.",
+    "evidence": [
+      "Obadias 10–11"
+    ],
+    "feedbackCorrect": "Certo: culpa, lado oposto e então a igualdade com os saqueadores.",
+    "feedbackWrong": {
+      "b": "O lado oposto especifica a violência.",
+      "c": "Ser como eles fecha a acusação."
+    },
+    "passageText": "Por causa da violência feita a teu irmão Jacó, cobrir-te-á a vergonha, e serás exterminado para sempre. No dia em que estiveste do lado oposto, no dia em que estrangeiros lhe levaram os bens, e forasteiros lhe entraram nas portas e deitaram sortes sobre Jerusalém, tu também eras como um deles.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A violência contra Jacó traz vergonha a Edom."
+      },
+      {
+        "id": "b",
+        "text": "No dia mau, Edom ficou do lado oposto."
+      },
+      {
+        "id": "c",
+        "text": "Ele era como os que levaram os bens e deitaram sortes."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-cam-ob-04-irmao-05",
+    "trail": "obadias",
+    "section": "ob-04-irmao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Complete a frase: \"entraram nas ___\"",
+    "prompt": "Complete a frase: \"entraram nas ___\"",
+    "cue": "Complete a frase: \"entraram nas ___\"",
+    "verseRef": "Obadias 10–11",
+    "learningObjective": "Sair sabendo que Edom se fez como um dos que saquearam Jerusalém.",
+    "evidence": [
+      "Obadias 10–11"
+    ],
+    "feedbackCorrect": "Certo: entraram nas portas.",
+    "feedbackWrong": {
+      "b": "Sortes são lançadas sobre a cidade.",
+      "c": "Irmão é a vítima."
+    },
+    "passageText": "Por causa da violência feita a teu irmão Jacó, cobrir-te-á a vergonha, e serás exterminado para sempre. No dia em que estiveste do lado oposto, no dia em que estrangeiros lhe levaram os bens, e forasteiros lhe entraram nas portas e deitaram sortes sobre Jerusalém, tu também eras como um deles.",
+    "template": "entraram nas ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "portas"
+      },
+      {
+        "id": "b",
+        "text": "sortes"
+      },
+      {
+        "id": "c",
+        "text": "irmão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-cam-ob-04-irmao-06",
+    "trail": "obadias",
+    "section": "ob-04-irmao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "Que relação Obadias 10–11 estabelece com este contexto?",
+    "prompt": "Que relação Obadias 10–11 estabelece com este contexto?",
+    "cue": "Que relação Obadias 10–11 estabelece com este contexto?",
+    "verseRef": "Obadias 10–11",
+    "learningObjective": "Sair sabendo que Edom se fez como um dos que saquearam Jerusalém.",
+    "evidence": [
+      "Obadias 10–11"
+    ],
+    "feedbackCorrect": "Certo: Edom ficou com quem saqueou.",
+    "feedbackWrong": {
+      "a": "Ele era como um deles.",
+      "c": "As portas foram entradas."
+    },
+    "passageText": "Por causa da violência feita a teu irmão Jacó, cobrir-te-á a vergonha, e serás exterminado para sempre. No dia em que estiveste do lado oposto, no dia em que estrangeiros lhe levaram os bens, e forasteiros lhe entraram nas portas e deitaram sortes sobre Jerusalém, tu também eras como um deles.",
+    "passageA": {
+      "ref": "Obadias 10–11",
+      "text": "Por causa da violência feita a teu irmão Jacó, cobrir-te-á a vergonha, e serás exterminado para sempre. No dia em que estiveste do lado oposto, no dia em que estrangeiros lhe levaram os bens, e forasteiros lhe entraram nas portas e deitaram sortes sobre Jerusalém, tu também eras como um deles."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Festejar a queda do irmão é culpa"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Distância inocente"
+      },
+      {
+        "id": "b",
+        "text": "Lado dos saqueadores"
+      },
+      {
+        "id": "c",
+        "text": "Portas fechadas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "obadias-pro-ob-04-irmao-01",
+    "trail": "obadias",
+    "section": "ob-04-irmao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Neutralidade diante da queda do irmão, aqui, já é participação.",
+    "prompt": "Neutralidade diante da queda do irmão, aqui, já é participação.",
+    "cue": "Neutralidade diante da queda do irmão, aqui, já é participação.",
+    "verseRef": "Obadias 10–11",
+    "learningObjective": "Sair sabendo que Edom se fez como um dos que saquearam Jerusalém.",
+    "evidence": [
+      "Obadias 10–11"
+    ],
+    "feedbackCorrect": "Certo: estar do lado oposto o iguala aos saqueadores.",
+    "feedbackWrong": {
+      "false": "O texto diz: tu também eras como um deles."
+    },
+    "passageText": "Por causa da violência feita a teu irmão Jacó, cobrir-te-á a vergonha, e serás exterminado para sempre. No dia em que estiveste do lado oposto, no dia em que estrangeiros lhe levaram os bens, e forasteiros lhe entraram nas portas e deitaram sortes sobre Jerusalém, tu também eras como um deles.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "obadias-pro-ob-04-irmao-02",
+    "trail": "obadias",
+    "section": "ob-04-irmao",
+    "difficulty": "profundezas",
+    "type": "tap",
+    "skill": "interpret",
+    "question": "Em Obadias 10–11, toque a palavra que falta em \"deitaram ___ sobre Jerusalém\"?",
+    "prompt": "Em Obadias 10–11, toque a palavra que falta em \"deitaram ___ sobre Jerusalém\"?",
+    "cue": "Em Obadias 10–11, toque a palavra que falta em \"deitaram ___ sobre Jerusalém\"?",
+    "verseRef": "Obadias 10–11",
+    "learningObjective": "Sair sabendo que Edom se fez como um dos que saquearam Jerusalém.",
+    "evidence": [
+      "Obadias 10–11"
+    ],
+    "feedbackCorrect": "Exato: deitaram sortes sobre a cidade.",
+    "feedbackWrong": {
+      "a": "Vergonha cobre Edom.",
+      "c": "Irmão é Jacó, não o objeto da sorte."
+    },
+    "passageText": "Por causa da violência feita a teu irmão Jacó, cobrir-te-á a vergonha, e serás exterminado para sempre. No dia em que estiveste do lado oposto, no dia em que estrangeiros lhe levaram os bens, e forasteiros lhe entraram nas portas e deitaram sortes sobre Jerusalém, tu também eras como um deles.",
+    "template": "deitaram ___ sobre Jerusalém",
+    "options": [
+      {
+        "id": "a",
+        "text": "vergonha"
+      },
+      {
+        "id": "b",
+        "text": "sortes"
+      },
+      {
+        "id": "c",
+        "text": "irmão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "obadias-pro-ob-04-irmao-03",
+    "trail": "obadias",
+    "section": "ob-04-irmao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "O que essa acusação ensina sobre o irmão caído?",
+    "prompt": "O que essa acusação ensina sobre o irmão caído?",
+    "cue": "O que essa acusação ensina sobre o irmão caído?",
+    "verseRef": "Obadias 10–11",
+    "learningObjective": "Sair sabendo que Edom se fez como um dos que saquearam Jerusalém.",
+    "evidence": [
+      "Obadias 10–11"
+    ],
+    "feedbackCorrect": "Certo: alegrar-se do lado oposto é culpa.",
+    "feedbackWrong": {
+      "b": "O lado oposto já condena.",
+      "c": "Deitar sortes é tomar parte.",
+      "d": "A vergonha alcança quem se fez como eles."
+    },
+    "passageText": "Por causa da violência feita a teu irmão Jacó, cobrir-te-á a vergonha, e serás exterminado para sempre. No dia em que estiveste do lado oposto, no dia em que estrangeiros lhe levaram os bens, e forasteiros lhe entraram nas portas e deitaram sortes sobre Jerusalém, tu também eras como um deles.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ficar contra o irmão no dia mau é violência."
+      },
+      {
+        "id": "b",
+        "text": "Irmão caído dispensa solidariedade."
+      },
+      {
+        "id": "c",
+        "text": "Sorte sobre a cidade é gesto neutro."
+      },
+      {
+        "id": "d",
+        "text": "Vergonha só cabe a quem entra armado primeiro."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-pro-ob-04-irmao-04",
+    "trail": "obadias",
+    "section": "ob-04-irmao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Obadias 10–11?",
+    "prompt": "Qual sequência revela o sentido de Obadias 10–11?",
+    "cue": "Qual sequência revela o sentido de Obadias 10–11?",
+    "verseRef": "Obadias 10–11",
+    "learningObjective": "Sair sabendo que Edom se fez como um dos que saquearam Jerusalém.",
+    "evidence": [
+      "Obadias 10–11"
+    ],
+    "feedbackCorrect": "Certo: culpa, lado oposto e então a igualdade com os saqueadores.",
+    "feedbackWrong": {
+      "b": "O lado oposto especifica a violência.",
+      "c": "Ser como eles fecha a acusação."
+    },
+    "passageText": "Por causa da violência feita a teu irmão Jacó, cobrir-te-á a vergonha, e serás exterminado para sempre. No dia em que estiveste do lado oposto, no dia em que estrangeiros lhe levaram os bens, e forasteiros lhe entraram nas portas e deitaram sortes sobre Jerusalém, tu também eras como um deles.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A violência contra Jacó traz vergonha a Edom."
+      },
+      {
+        "id": "b",
+        "text": "No dia mau, Edom ficou do lado oposto."
+      },
+      {
+        "id": "c",
+        "text": "Ele era como os que levaram os bens e deitaram sortes."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-pro-ob-04-irmao-05",
+    "trail": "obadias",
+    "section": "ob-04-irmao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Complete a frase: \"sobre ___\"",
+    "prompt": "Complete a frase: \"sobre ___\"",
+    "cue": "Complete a frase: \"sobre ___\"",
+    "verseRef": "Obadias 10–11",
+    "learningObjective": "Sair sabendo que Edom se fez como um dos que saquearam Jerusalém.",
+    "evidence": [
+      "Obadias 10–11"
+    ],
+    "feedbackCorrect": "Certo: as sortes caem sobre Jerusalém.",
+    "feedbackWrong": {
+      "b": "Vergonha cai sobre Edom.",
+      "c": "Bens são o que foi levado."
+    },
+    "passageText": "Por causa da violência feita a teu irmão Jacó, cobrir-te-á a vergonha, e serás exterminado para sempre. No dia em que estiveste do lado oposto, no dia em que estrangeiros lhe levaram os bens, e forasteiros lhe entraram nas portas e deitaram sortes sobre Jerusalém, tu também eras como um deles.",
+    "template": "sobre ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jerusalém"
+      },
+      {
+        "id": "b",
+        "text": "vergonha"
+      },
+      {
+        "id": "c",
+        "text": "bens"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-pro-ob-04-irmao-06",
+    "trail": "obadias",
+    "section": "ob-04-irmao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "Que sentido de Obadias 10–11 se liga a este contexto?",
+    "prompt": "Que sentido de Obadias 10–11 se liga a este contexto?",
+    "cue": "Que sentido de Obadias 10–11 se liga a este contexto?",
+    "verseRef": "Obadias 10–11",
+    "learningObjective": "Sair sabendo que Edom se fez como um dos que saquearam Jerusalém.",
+    "evidence": [
+      "Obadias 10–11"
+    ],
+    "feedbackCorrect": "Certo: participar da queda do irmão é culpa.",
+    "feedbackWrong": {
+      "a": "O lado oposto já é a acusação.",
+      "c": "Jacó é irmão, e isso pesa."
+    },
+    "passageText": "Por causa da violência feita a teu irmão Jacó, cobrir-te-á a vergonha, e serás exterminado para sempre. No dia em que estiveste do lado oposto, no dia em que estrangeiros lhe levaram os bens, e forasteiros lhe entraram nas portas e deitaram sortes sobre Jerusalém, tu também eras como um deles.",
+    "passageA": {
+      "ref": "Obadias 10–11",
+      "text": "Por causa da violência feita a teu irmão Jacó, cobrir-te-á a vergonha, e serás exterminado para sempre. No dia em que estiveste do lado oposto, no dia em que estrangeiros lhe levaram os bens, e forasteiros lhe entraram nas portas e deitaram sortes sobre Jerusalém, tu também eras como um deles."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Festejar a queda do irmão é culpa"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Violência só armada"
+      },
+      {
+        "id": "b",
+        "text": "Participar da queda"
+      },
+      {
+        "id": "c",
+        "text": "Irmão sem dever"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "obadias-sem-ob-05-dia-01",
+    "trail": "obadias",
+    "section": "ob-05-dia",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "O dia de Jeová está perto sobre todas as nações.",
+    "prompt": "O dia de Jeová está perto sobre todas as nações.",
+    "cue": "O dia de Jeová está perto sobre todas as nações.",
+    "verseRef": "Obadias 15",
+    "learningObjective": "Sair sabendo que o dia de Jeová devolve a cada nação o que ela fez.",
+    "evidence": [
+      "Obadias 15"
+    ],
+    "feedbackCorrect": "Certo: o dia não é só de Edom.",
+    "feedbackWrong": {
+      "false": "A frase inclui todas as nações."
+    },
+    "passageText": "Pois o Dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "obadias-sem-ob-05-dia-02",
+    "trail": "obadias",
+    "section": "ob-05-dia",
+    "difficulty": "semente",
+    "type": "tap",
+    "skill": "observe",
+    "question": "Em Obadias 15, toque a palavra que falta em \"está ___ sobre todas as nações\"?",
+    "prompt": "Em Obadias 15, toque a palavra que falta em \"está ___ sobre todas as nações\"?",
+    "cue": "Em Obadias 15, toque a palavra que falta em \"está ___ sobre todas as nações\"?",
+    "verseRef": "Obadias 15",
+    "learningObjective": "Sair sabendo que o dia de Jeová devolve a cada nação o que ela fez.",
+    "evidence": [
+      "Obadias 15"
+    ],
+    "feedbackCorrect": "Exato: o dia está perto.",
+    "feedbackWrong": {
+      "a": "Feito é o que retorna.",
+      "c": "Cabeça é sobre quem volta."
+    },
+    "passageText": "Pois o Dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "template": "está ___ sobre todas as nações",
+    "options": [
+      {
+        "id": "a",
+        "text": "feito"
+      },
+      {
+        "id": "b",
+        "text": "perto"
+      },
+      {
+        "id": "c",
+        "text": "cabeça"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "obadias-sem-ob-05-dia-03",
+    "trail": "obadias",
+    "section": "ob-05-dia",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Sobre quem o dia de Jeová está perto?",
+    "prompt": "Sobre quem o dia de Jeová está perto?",
+    "cue": "Sobre quem o dia de Jeová está perto?",
+    "verseRef": "Obadias 15",
+    "learningObjective": "Sair sabendo que o dia de Jeová devolve a cada nação o que ela fez.",
+    "evidence": [
+      "Obadias 15"
+    ],
+    "feedbackCorrect": "Certo: sobre todas as nações.",
+    "feedbackWrong": {
+      "b": "O dia alcança as nações.",
+      "c": "Edom entra no “assim se te fará”.",
+      "d": "O feito volta agora, não fica só atrás."
+    },
+    "passageText": "Pois o Dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sobre todas as nações."
+      },
+      {
+        "id": "b",
+        "text": "Só sobre Jerusalém."
+      },
+      {
+        "id": "c",
+        "text": "Só sobre quem não fez mal."
+      },
+      {
+        "id": "d",
+        "text": "Sobre o passado, sem alcançar Edom."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-sem-ob-05-dia-04",
+    "trail": "obadias",
+    "section": "ob-05-dia",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Qual é a ordem dos fatos em Obadias 15?",
+    "prompt": "Qual é a ordem dos fatos em Obadias 15?",
+    "cue": "Qual é a ordem dos fatos em Obadias 15?",
+    "verseRef": "Obadias 15",
+    "learningObjective": "Sair sabendo que o dia de Jeová devolve a cada nação o que ela fez.",
+    "evidence": [
+      "Obadias 15"
+    ],
+    "feedbackCorrect": "Certo: o dia, a medida e então a volta sobre a cabeça.",
+    "feedbackWrong": {
+      "b": "A medida vem depois do anúncio do dia.",
+      "c": "A cabeça é o destino final do feito."
+    },
+    "passageText": "Pois o Dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O dia de Jeová está perto sobre todas as nações."
+      },
+      {
+        "id": "b",
+        "text": "Como Edom fez, assim se fará a ele."
+      },
+      {
+        "id": "c",
+        "text": "O feito tornará sobre a sua cabeça."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-sem-ob-05-dia-05",
+    "trail": "obadias",
+    "section": "ob-05-dia",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Complete a frase: \"sobre todas as ___\"",
+    "prompt": "Complete a frase: \"sobre todas as ___\"",
+    "cue": "Complete a frase: \"sobre todas as ___\"",
+    "verseRef": "Obadias 15",
+    "learningObjective": "Sair sabendo que o dia de Jeová devolve a cada nação o que ela fez.",
+    "evidence": [
+      "Obadias 15"
+    ],
+    "feedbackCorrect": "Certo: o dia está sobre as nações.",
+    "feedbackWrong": {
+      "b": "Feito é o que retorna.",
+      "c": "Cabeça é de quem fez."
+    },
+    "passageText": "Pois o Dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "template": "sobre todas as ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "nações"
+      },
+      {
+        "id": "b",
+        "text": "feito"
+      },
+      {
+        "id": "c",
+        "text": "cabeça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-sem-ob-05-dia-06",
+    "trail": "obadias",
+    "section": "ob-05-dia",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Obadias 15 comunica que se liga a este contexto?",
+    "prompt": "O que Obadias 15 comunica que se liga a este contexto?",
+    "cue": "O que Obadias 15 comunica que se liga a este contexto?",
+    "verseRef": "Obadias 15",
+    "learningObjective": "Sair sabendo que o dia de Jeová devolve a cada nação o que ela fez.",
+    "evidence": [
+      "Obadias 15"
+    ],
+    "feedbackCorrect": "Certo: o mal retorna ao autor.",
+    "feedbackWrong": {
+      "b": "O dia está perto.",
+      "c": "A nação que fez não fica inocente."
+    },
+    "passageText": "Pois o Dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "passageA": {
+      "ref": "Obadias 15",
+      "text": "Pois o Dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O mal feito volta sobre quem o fez"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Feito que volta"
+      },
+      {
+        "id": "b",
+        "text": "Dia distante"
+      },
+      {
+        "id": "c",
+        "text": "Nação inocente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-cam-ob-05-dia-01",
+    "trail": "obadias",
+    "section": "ob-05-dia",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "O feito de Edom fica no passado e não volta sobre ele.",
+    "prompt": "O feito de Edom fica no passado e não volta sobre ele.",
+    "cue": "O feito de Edom fica no passado e não volta sobre ele.",
+    "verseRef": "Obadias 15",
+    "learningObjective": "Sair sabendo que o dia de Jeová devolve a cada nação o que ela fez.",
+    "evidence": [
+      "Obadias 15"
+    ],
+    "feedbackCorrect": "Certo: o feito tornará sobre a sua cabeça.",
+    "feedbackWrong": {
+      "true": "A retribuição está dita."
+    },
+    "passageText": "Pois o Dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "id": "obadias-cam-ob-05-dia-02",
+    "trail": "obadias",
+    "section": "ob-05-dia",
+    "difficulty": "caminhada",
+    "type": "tap",
+    "skill": "understand",
+    "question": "Em Obadias 15, toque a palavra que falta em \"como tens ___, assim se te fará\"?",
+    "prompt": "Em Obadias 15, toque a palavra que falta em \"como tens ___, assim se te fará\"?",
+    "cue": "Em Obadias 15, toque a palavra que falta em \"como tens ___, assim se te fará\"?",
+    "verseRef": "Obadias 15",
+    "learningObjective": "Sair sabendo que o dia de Jeová devolve a cada nação o que ela fez.",
+    "evidence": [
+      "Obadias 15"
+    ],
+    "feedbackCorrect": "Exato: como tens feito.",
+    "feedbackWrong": {
+      "a": "Perto fala do dia.",
+      "c": "Nações são o alcance do dia."
+    },
+    "passageText": "Pois o Dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "template": "como tens ___, assim se te fará",
+    "options": [
+      {
+        "id": "a",
+        "text": "perto"
+      },
+      {
+        "id": "b",
+        "text": "feito"
+      },
+      {
+        "id": "c",
+        "text": "nações"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "obadias-cam-ob-05-dia-03",
+    "trail": "obadias",
+    "section": "ob-05-dia",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "O que “tornará sobre a tua cabeça” significa?",
+    "prompt": "O que “tornará sobre a tua cabeça” significa?",
+    "cue": "O que “tornará sobre a tua cabeça” significa?",
+    "verseRef": "Obadias 15",
+    "learningObjective": "Sair sabendo que o dia de Jeová devolve a cada nação o que ela fez.",
+    "evidence": [
+      "Obadias 15"
+    ],
+    "feedbackCorrect": "Certo: o mal praticado volta ao autor.",
+    "feedbackWrong": {
+      "b": "A cabeça é a dele.",
+      "c": "O “a ti” é direto.",
+      "d": "O dia está perto, não longe."
+    },
+    "passageText": "Pois o Dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O feito de Edom volta para ele."
+      },
+      {
+        "id": "b",
+        "text": "A cabeça de Edom fica fora do juízo."
+      },
+      {
+        "id": "c",
+        "text": "As nações pagam no lugar de Edom."
+      },
+      {
+        "id": "d",
+        "text": "O dia se afasta de quem fez o mal."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-cam-ob-05-dia-04",
+    "trail": "obadias",
+    "section": "ob-05-dia",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Obadias 15?",
+    "prompt": "Como se encadeiam os eventos de Obadias 15?",
+    "cue": "Como se encadeiam os eventos de Obadias 15?",
+    "verseRef": "Obadias 15",
+    "learningObjective": "Sair sabendo que o dia de Jeová devolve a cada nação o que ela fez.",
+    "evidence": [
+      "Obadias 15"
+    ],
+    "feedbackCorrect": "Certo: o dia, a medida e então a volta sobre a cabeça.",
+    "feedbackWrong": {
+      "b": "A medida vem depois do anúncio do dia.",
+      "c": "A cabeça é o destino final do feito."
+    },
+    "passageText": "Pois o Dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O dia de Jeová está perto sobre todas as nações."
+      },
+      {
+        "id": "b",
+        "text": "Como Edom fez, assim se fará a ele."
+      },
+      {
+        "id": "c",
+        "text": "O feito tornará sobre a sua cabeça."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-cam-ob-05-dia-05",
+    "trail": "obadias",
+    "section": "ob-05-dia",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Complete a frase: \"sobre a tua ___\"",
+    "prompt": "Complete a frase: \"sobre a tua ___\"",
+    "cue": "Complete a frase: \"sobre a tua ___\"",
+    "verseRef": "Obadias 15",
+    "learningObjective": "Sair sabendo que o dia de Jeová devolve a cada nação o que ela fez.",
+    "evidence": [
+      "Obadias 15"
+    ],
+    "feedbackCorrect": "Certo: o feito volta sobre a cabeça.",
+    "feedbackWrong": {
+      "b": "Perto qualifica o dia.",
+      "c": "Nações são o alcance."
+    },
+    "passageText": "Pois o Dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "template": "sobre a tua ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "cabeça"
+      },
+      {
+        "id": "b",
+        "text": "perto"
+      },
+      {
+        "id": "c",
+        "text": "nações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-cam-ob-05-dia-06",
+    "trail": "obadias",
+    "section": "ob-05-dia",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "Que relação Obadias 15 estabelece com este contexto?",
+    "prompt": "Que relação Obadias 15 estabelece com este contexto?",
+    "cue": "Que relação Obadias 15 estabelece com este contexto?",
+    "verseRef": "Obadias 15",
+    "learningObjective": "Sair sabendo que o dia de Jeová devolve a cada nação o que ela fez.",
+    "evidence": [
+      "Obadias 15"
+    ],
+    "feedbackCorrect": "Certo: a medida é o que ele fez.",
+    "feedbackWrong": {
+      "a": "Há correspondência.",
+      "c": "A cabeça recebe o feito."
+    },
+    "passageText": "Pois o Dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "passageA": {
+      "ref": "Obadias 15",
+      "text": "Pois o Dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O mal feito volta sobre quem o fez"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Juízo sem medida"
+      },
+      {
+        "id": "b",
+        "text": "Medida do próprio mal"
+      },
+      {
+        "id": "c",
+        "text": "Cabeça poupada"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "obadias-pro-ob-05-dia-01",
+    "trail": "obadias",
+    "section": "ob-05-dia",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "O juízo de Jeová corresponde ao que a pessoa fez.",
+    "prompt": "O juízo de Jeová corresponde ao que a pessoa fez.",
+    "cue": "O juízo de Jeová corresponde ao que a pessoa fez.",
+    "verseRef": "Obadias 15",
+    "learningObjective": "Sair sabendo que o dia de Jeová devolve a cada nação o que ela fez.",
+    "evidence": [
+      "Obadias 15"
+    ],
+    "feedbackCorrect": "Certo: como tens feito, assim se te fará.",
+    "feedbackWrong": {
+      "false": "A medida é o próprio feito."
+    },
+    "passageText": "Pois o Dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "obadias-pro-ob-05-dia-02",
+    "trail": "obadias",
+    "section": "ob-05-dia",
+    "difficulty": "profundezas",
+    "type": "tap",
+    "skill": "interpret",
+    "question": "Em Obadias 15, toque a palavra que falta em \"Dia de ___\"?",
+    "prompt": "Em Obadias 15, toque a palavra que falta em \"Dia de ___\"?",
+    "cue": "Em Obadias 15, toque a palavra que falta em \"Dia de ___\"?",
+    "verseRef": "Obadias 15",
+    "learningObjective": "Sair sabendo que o dia de Jeová devolve a cada nação o que ela fez.",
+    "evidence": [
+      "Obadias 15"
+    ],
+    "feedbackCorrect": "Exato: é o dia de Jeová.",
+    "feedbackWrong": {
+      "a": "Perto é o tempo.",
+      "c": "Cabeça é o destino do feito."
+    },
+    "passageText": "Pois o Dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "template": "Dia de ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "perto"
+      },
+      {
+        "id": "b",
+        "text": "Jeová"
+      },
+      {
+        "id": "c",
+        "text": "cabeça"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "obadias-pro-ob-05-dia-03",
+    "trail": "obadias",
+    "section": "ob-05-dia",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "O que essa medida revela sobre o juízo?",
+    "prompt": "O que essa medida revela sobre o juízo?",
+    "cue": "O que essa medida revela sobre o juízo?",
+    "verseRef": "Obadias 15",
+    "learningObjective": "Sair sabendo que o dia de Jeová devolve a cada nação o que ela fez.",
+    "evidence": [
+      "Obadias 15"
+    ],
+    "feedbackCorrect": "Certo: não é arbitrário; responde ao feito.",
+    "feedbackWrong": {
+      "b": "Como tens feito é a medida.",
+      "c": "O feito torna, não se inverte em prêmio.",
+      "d": "A retribuição segue o mal feito."
+    },
+    "passageText": "Pois o Dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O juízo corresponde ao que foi feito."
+      },
+      {
+        "id": "b",
+        "text": "Jeová ignora o que as nações praticaram."
+      },
+      {
+        "id": "c",
+        "text": "O dia premia a violência contra o irmão."
+      },
+      {
+        "id": "d",
+        "text": "A cabeça recebe o contrário do feito."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-pro-ob-05-dia-04",
+    "trail": "obadias",
+    "section": "ob-05-dia",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Obadias 15?",
+    "prompt": "Qual sequência revela o sentido de Obadias 15?",
+    "cue": "Qual sequência revela o sentido de Obadias 15?",
+    "verseRef": "Obadias 15",
+    "learningObjective": "Sair sabendo que o dia de Jeová devolve a cada nação o que ela fez.",
+    "evidence": [
+      "Obadias 15"
+    ],
+    "feedbackCorrect": "Certo: o dia, a medida e então a volta sobre a cabeça.",
+    "feedbackWrong": {
+      "b": "A medida vem depois do anúncio do dia.",
+      "c": "A cabeça é o destino final do feito."
+    },
+    "passageText": "Pois o Dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O dia de Jeová está perto sobre todas as nações."
+      },
+      {
+        "id": "b",
+        "text": "Como Edom fez, assim se fará a ele."
+      },
+      {
+        "id": "c",
+        "text": "O feito tornará sobre a sua cabeça."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-pro-ob-05-dia-05",
+    "trail": "obadias",
+    "section": "ob-05-dia",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Complete a frase: \"assim se te ___ a ti\"",
+    "prompt": "Complete a frase: \"assim se te ___ a ti\"",
+    "cue": "Complete a frase: \"assim se te ___ a ti\"",
+    "verseRef": "Obadias 15",
+    "learningObjective": "Sair sabendo que o dia de Jeová devolve a cada nação o que ela fez.",
+    "evidence": [
+      "Obadias 15"
+    ],
+    "feedbackCorrect": "Certo: assim se fará a ti.",
+    "feedbackWrong": {
+      "b": "Perto é o tempo do dia.",
+      "c": "Nações são o horizonte."
+    },
+    "passageText": "Pois o Dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "template": "assim se te ___ a ti",
+    "options": [
+      {
+        "id": "a",
+        "text": "fará"
+      },
+      {
+        "id": "b",
+        "text": "perto"
+      },
+      {
+        "id": "c",
+        "text": "nações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "obadias-pro-ob-05-dia-06",
+    "trail": "obadias",
+    "section": "ob-05-dia",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "Que sentido de Obadias 15 se liga a este contexto?",
+    "prompt": "Que sentido de Obadias 15 se liga a este contexto?",
+    "cue": "Que sentido de Obadias 15 se liga a este contexto?",
+    "verseRef": "Obadias 15",
+    "learningObjective": "Sair sabendo que o dia de Jeová devolve a cada nação o que ela fez.",
+    "evidence": [
+      "Obadias 15"
+    ],
+    "feedbackCorrect": "Certo: o dia retribui o feito.",
+    "feedbackWrong": {
+      "a": "Não é acaso: é o dia de Jeová.",
+      "c": "O mal não é premiado."
+    },
+    "passageText": "Pois o Dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "passageA": {
+      "ref": "Obadias 15",
+      "text": "Pois o Dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O mal feito volta sobre quem o fez"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Acaso entre nações"
+      },
+      {
+        "id": "b",
+        "text": "Justiça que retribui"
+      },
+      {
+        "id": "c",
+        "text": "Violência premiada"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
   }
 ]

@@ -4,7 +4,9 @@
     "skill": "observe",
     "verseRef": "Rute 1:16",
     "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
-    "evidence": ["Rute 1:16"],
+    "evidence": [
+      "Rute 1:16"
+    ],
     "type": "true_false",
     "question": "Rute pede que não a instem a abandonar Noemi e a deixar de segui-la.",
     "prompt": "Rute pede que não a instem a abandonar Noemi e a deixar de segui-la.",
@@ -14,8 +16,14 @@
       "false": "Rute 1:16 começa exatamente com esse pedido."
     },
     "options": [
-      {"id": "true", "text": "Verdadeiro"},
-      {"id": "false", "text": "Falso"}
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
     ],
     "correctOptionId": "true",
     "correctAnswer": "true",
@@ -29,7 +37,9 @@
     "skill": "observe",
     "verseRef": "Rute 1:16",
     "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
-    "evidence": ["Rute 1:16"],
+    "evidence": [
+      "Rute 1:16"
+    ],
     "type": "tap",
     "question": "Em Rute 1:16, toque a palavra que falta em \"o teu ___ será o meu povo\"?",
     "prompt": "Em Rute 1:16, toque a palavra que falta em \"o teu ___ será o meu povo\"?",
@@ -42,9 +52,18 @@
     "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
     "template": "o teu ___ será o meu povo",
     "options": [
-      {"id": "a", "text": "povo"},
-      {"id": "b", "text": "Deus"},
-      {"id": "c", "text": "Rute"}
+      {
+        "id": "a",
+        "text": "povo"
+      },
+      {
+        "id": "b",
+        "text": "Deus"
+      },
+      {
+        "id": "c",
+        "text": "Rute"
+      }
     ],
     "correctOptionId": "a",
     "correctAnswer": "a",
@@ -57,7 +76,9 @@
     "skill": "observe",
     "verseRef": "Rute 1:16",
     "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
-    "evidence": ["Rute 1:16"],
+    "evidence": [
+      "Rute 1:16"
+    ],
     "type": "choice",
     "question": "O que Rute afirma de modo explícito em Rute 1:16?",
     "prompt": "O que Rute afirma de modo explícito em Rute 1:16?",
@@ -70,10 +91,22 @@
     },
     "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
     "options": [
-      {"id": "a", "text": "Rute promete voltar sozinha para Moabe."},
-      {"id": "b", "text": "Rute segue Noemi só até a fronteira de Judá."},
-      {"id": "c", "text": "Onde Noemi pousar, Rute pousará; o povo e o Deus dela serão os de Rute."},
-      {"id": "d", "text": "Rute aceita o povo, mas recusa o Deus de Noemi."}
+      {
+        "id": "a",
+        "text": "Rute promete voltar sozinha para Moabe."
+      },
+      {
+        "id": "b",
+        "text": "Rute segue Noemi só até a fronteira de Judá."
+      },
+      {
+        "id": "c",
+        "text": "Onde Noemi pousar, Rute pousará; o povo e o Deus dela serão os de Rute."
+      },
+      {
+        "id": "d",
+        "text": "Rute aceita o povo, mas recusa o Deus de Noemi."
+      }
     ],
     "correctOptionId": "c",
     "correctAnswer": "c",
@@ -86,7 +119,9 @@
     "skill": "observe",
     "verseRef": "Rute 1:16",
     "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
-    "evidence": ["Rute 1:16"],
+    "evidence": [
+      "Rute 1:16"
+    ],
     "type": "order",
     "question": "Qual sequência mostra a ordem dos fatos em Rute 1:16?",
     "prompt": "Qual sequência mostra a ordem dos fatos em Rute 1:16?",
@@ -98,11 +133,24 @@
     },
     "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
     "options": [
-      {"id": "a", "text": "Rute pede que não a instem a abandonar Noemi nem a deixar de segui-la"},
-      {"id": "b", "text": "Para onde Noemi for, Rute irá; onde pousar, Rute pousará"},
-      {"id": "c", "text": "O povo de Noemi será o povo de Rute, e o Deus dela o Deus de Rute"}
+      {
+        "id": "a",
+        "text": "Rute pede que não a instem a abandonar Noemi nem a deixar de segui-la"
+      },
+      {
+        "id": "b",
+        "text": "Para onde Noemi for, Rute irá; onde pousar, Rute pousará"
+      },
+      {
+        "id": "c",
+        "text": "O povo de Noemi será o povo de Rute, e o Deus dela o Deus de Rute"
+      }
     ],
-    "correctOrder": ["a", "b", "c"],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
     "correctOptionId": "a",
     "correctAnswer": "a",
     "trail": "rute",
@@ -114,7 +162,9 @@
     "skill": "observe",
     "verseRef": "Rute 1:16",
     "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
-    "evidence": ["Rute 1:16"],
+    "evidence": [
+      "Rute 1:16"
+    ],
     "type": "complete",
     "question": "Complete a frase: \"Não me instes que te ___ e deixe de te seguir\"",
     "prompt": "Complete a frase: \"Não me instes que te ___ e deixe de te seguir\"",
@@ -127,9 +177,18 @@
     "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
     "template": "Não me instes que te ___ e deixe de te seguir",
     "options": [
-      {"id": "a", "text": "abandone"},
-      {"id": "b", "text": "pousares"},
-      {"id": "c", "text": "fores"}
+      {
+        "id": "a",
+        "text": "abandone"
+      },
+      {
+        "id": "b",
+        "text": "pousares"
+      },
+      {
+        "id": "c",
+        "text": "fores"
+      }
     ],
     "correctOptionId": "a",
     "correctAnswer": "a",
@@ -142,7 +201,9 @@
     "skill": "observe",
     "verseRef": "Rute 1:16",
     "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
-    "evidence": ["Rute 1:16"],
+    "evidence": [
+      "Rute 1:16"
+    ],
     "type": "connect",
     "question": "O que Rute 1:16 comunica que se liga a este contexto?",
     "prompt": "O que Rute 1:16 comunica que se liga a este contexto?",
@@ -162,9 +223,18 @@
       "text": "Rute cola sua vida a Noemi e ao Deus de Israel — lealdade que atravessa fronteira e sangue."
     },
     "options": [
-      {"id": "a", "text": "Retorno definitivo a Moabe"},
-      {"id": "b", "text": "Lealdade além da fronteira"},
-      {"id": "c", "text": "Recusa do Deus de Noemi"}
+      {
+        "id": "a",
+        "text": "Retorno definitivo a Moabe"
+      },
+      {
+        "id": "b",
+        "text": "Lealdade além da fronteira"
+      },
+      {
+        "id": "c",
+        "text": "Recusa do Deus de Noemi"
+      }
     ],
     "correctOptionId": "b",
     "correctAnswer": "b",
@@ -177,7 +247,9 @@
     "skill": "understand",
     "verseRef": "Rute 1:16",
     "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
-    "evidence": ["Rute 1:16"],
+    "evidence": [
+      "Rute 1:16"
+    ],
     "type": "true_false",
     "question": "Rute promete ir com Noemi, mas reserva para si outro povo e outro Deus.",
     "prompt": "Rute promete ir com Noemi, mas reserva para si outro povo e outro Deus.",
@@ -187,8 +259,14 @@
       "true": "O voto une povo e Deus; não há reserva moabita."
     },
     "options": [
-      {"id": "true", "text": "Verdadeiro"},
-      {"id": "false", "text": "Falso"}
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
     ],
     "correctOptionId": "false",
     "correctAnswer": "false",
@@ -202,7 +280,9 @@
     "skill": "understand",
     "verseRef": "Rute 1:16",
     "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
-    "evidence": ["Rute 1:16"],
+    "evidence": [
+      "Rute 1:16"
+    ],
     "type": "tap",
     "question": "Em Rute 1:16, toque a palavra que falta em \"onde quer que tu pousares, ___ eu\"?",
     "prompt": "Em Rute 1:16, toque a palavra que falta em \"onde quer que tu pousares, ___ eu\"?",
@@ -215,9 +295,18 @@
     "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
     "template": "onde quer que tu pousares, ___ eu",
     "options": [
-      {"id": "a", "text": "irei"},
-      {"id": "b", "text": "pousarei"},
-      {"id": "c", "text": "instes"}
+      {
+        "id": "a",
+        "text": "irei"
+      },
+      {
+        "id": "b",
+        "text": "pousarei"
+      },
+      {
+        "id": "c",
+        "text": "instes"
+      }
     ],
     "correctOptionId": "b",
     "correctAnswer": "b",
@@ -230,7 +319,9 @@
     "skill": "understand",
     "verseRef": "Rute 1:16",
     "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
-    "evidence": ["Rute 1:16"],
+    "evidence": [
+      "Rute 1:16"
+    ],
     "type": "choice",
     "question": "Como se encadeiam caminho, pouso, povo e Deus no voto de Rute?",
     "prompt": "Como se encadeiam caminho, pouso, povo e Deus no voto de Rute?",
@@ -243,10 +334,22 @@
     },
     "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
     "options": [
-      {"id": "a", "text": "O voto vale só até a fronteira; depois cada uma segue sozinha."},
-      {"id": "b", "text": "Ela acompanha o rumo, mas recusa o culto de Israel."},
-      {"id": "c", "text": "É só amizade íntima, sem adesão a povo ou a Deus."},
-      {"id": "d", "text": "O mesmo rumo leva ao mesmo pouso, ao mesmo povo e ao mesmo Deus."}
+      {
+        "id": "a",
+        "text": "O voto vale só até a fronteira; depois cada uma segue sozinha."
+      },
+      {
+        "id": "b",
+        "text": "Ela acompanha o rumo, mas recusa o culto de Israel."
+      },
+      {
+        "id": "c",
+        "text": "É só amizade íntima, sem adesão a povo ou a Deus."
+      },
+      {
+        "id": "d",
+        "text": "O mesmo rumo leva ao mesmo pouso, ao mesmo povo e ao mesmo Deus."
+      }
     ],
     "correctOptionId": "d",
     "correctAnswer": "d",
@@ -259,7 +362,9 @@
     "skill": "understand",
     "verseRef": "Rute 1:16",
     "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
-    "evidence": ["Rute 1:16"],
+    "evidence": [
+      "Rute 1:16"
+    ],
     "type": "order",
     "question": "Como se encadeiam os eventos de Rute 1:16?",
     "prompt": "Como se encadeiam os eventos de Rute 1:16?",
@@ -271,11 +376,24 @@
     },
     "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
     "options": [
-      {"id": "a", "text": "Rute recusa abandonar Noemi e deixar de segui-la"},
-      {"id": "b", "text": "Ela promete ir e pousar onde Noemi for"},
-      {"id": "c", "text": "Ela assume o povo e o Deus de Noemi como seus"}
+      {
+        "id": "a",
+        "text": "Rute recusa abandonar Noemi e deixar de segui-la"
+      },
+      {
+        "id": "b",
+        "text": "Ela promete ir e pousar onde Noemi for"
+      },
+      {
+        "id": "c",
+        "text": "Ela assume o povo e o Deus de Noemi como seus"
+      }
     ],
-    "correctOrder": ["a", "b", "c"],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
     "correctOptionId": "a",
     "correctAnswer": "a",
     "trail": "rute",
@@ -287,7 +405,9 @@
     "skill": "understand",
     "verseRef": "Rute 1:16",
     "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
-    "evidence": ["Rute 1:16"],
+    "evidence": [
+      "Rute 1:16"
+    ],
     "type": "complete",
     "question": "Complete a frase: \"e o teu Deus o meu ___\"",
     "prompt": "Complete a frase: \"e o teu Deus o meu ___\"",
@@ -300,9 +420,18 @@
     "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
     "template": "e o teu Deus o meu ___",
     "options": [
-      {"id": "a", "text": "povo"},
-      {"id": "b", "text": "Rute"},
-      {"id": "c", "text": "Deus"}
+      {
+        "id": "a",
+        "text": "povo"
+      },
+      {
+        "id": "b",
+        "text": "Rute"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
     ],
     "correctOptionId": "c",
     "correctAnswer": "c",
@@ -315,7 +444,9 @@
     "skill": "understand",
     "verseRef": "Rute 1:16",
     "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
-    "evidence": ["Rute 1:16"],
+    "evidence": [
+      "Rute 1:16"
+    ],
     "type": "connect",
     "question": "O que o voto de Rute 1:16 comunica que se liga a este contexto?",
     "prompt": "O que o voto de Rute 1:16 comunica que se liga a este contexto?",
@@ -335,9 +466,18 @@
       "text": "Rute cola sua vida a Noemi e ao Deus de Israel — lealdade que atravessa fronteira e sangue."
     },
     "options": [
-      {"id": "a", "text": "Adesão que cruza fronteira"},
-      {"id": "b", "text": "Contrato só de viagem"},
-      {"id": "c", "text": "Pedido de herança em Moabe"}
+      {
+        "id": "a",
+        "text": "Adesão que cruza fronteira"
+      },
+      {
+        "id": "b",
+        "text": "Contrato só de viagem"
+      },
+      {
+        "id": "c",
+        "text": "Pedido de herança em Moabe"
+      }
     ],
     "correctOptionId": "a",
     "correctAnswer": "a",
@@ -350,7 +490,9 @@
     "skill": "interpret",
     "verseRef": "Rute 1:16",
     "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
-    "evidence": ["Rute 1:16"],
+    "evidence": [
+      "Rute 1:16"
+    ],
     "type": "true_false",
     "question": "A lealdade de Rute atravessa fronteira e sangue ao colar-se ao povo e ao Deus de Noemi.",
     "prompt": "A lealdade de Rute atravessa fronteira e sangue ao colar-se ao povo e ao Deus de Noemi.",
@@ -360,8 +502,14 @@
       "false": "Povo e Deus no voto mostram adesão que cruza origem."
     },
     "options": [
-      {"id": "true", "text": "Verdadeiro"},
-      {"id": "false", "text": "Falso"}
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
     ],
     "correctOptionId": "true",
     "correctAnswer": "true",
@@ -375,7 +523,9 @@
     "skill": "interpret",
     "verseRef": "Rute 1:16",
     "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
-    "evidence": ["Rute 1:16"],
+    "evidence": [
+      "Rute 1:16"
+    ],
     "type": "tap",
     "question": "Em Rute 1:16, toque a palavra que falta em \"para onde quer que tu fores, ___ eu\"?",
     "prompt": "Em Rute 1:16, toque a palavra que falta em \"para onde quer que tu fores, ___ eu\"?",
@@ -388,9 +538,18 @@
     "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
     "template": "para onde quer que tu fores, ___ eu",
     "options": [
-      {"id": "a", "text": "irei"},
-      {"id": "b", "text": "pousarei"},
-      {"id": "c", "text": "abandone"}
+      {
+        "id": "a",
+        "text": "irei"
+      },
+      {
+        "id": "b",
+        "text": "pousarei"
+      },
+      {
+        "id": "c",
+        "text": "abandone"
+      }
     ],
     "correctOptionId": "a",
     "correctAnswer": "a",
@@ -403,7 +562,9 @@
     "skill": "interpret",
     "verseRef": "Rute 1:16",
     "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
-    "evidence": ["Rute 1:16"],
+    "evidence": [
+      "Rute 1:16"
+    ],
     "type": "choice",
     "question": "Qual leitura melhor capta o sentido teológico de Rute 1:16?",
     "prompt": "Qual leitura melhor capta o sentido teológico de Rute 1:16?",
@@ -416,10 +577,22 @@
     },
     "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
     "options": [
-      {"id": "a", "text": "É só amizade privada, sem implicação de fé ou povo."},
-      {"id": "b", "text": "A estrangeira se incorpora a Israel pelo Deus de Noemi, não só por afeto."},
-      {"id": "c", "text": "É um tratado diplomático entre Moabe e Judá."},
-      {"id": "d", "text": "Rute permanece moabita no culto, mudando só de endereço."}
+      {
+        "id": "a",
+        "text": "É só amizade privada, sem implicação de fé ou povo."
+      },
+      {
+        "id": "b",
+        "text": "A estrangeira se incorpora a Israel pelo Deus de Noemi, não só por afeto."
+      },
+      {
+        "id": "c",
+        "text": "É um tratado diplomático entre Moabe e Judá."
+      },
+      {
+        "id": "d",
+        "text": "Rute permanece moabita no culto, mudando só de endereço."
+      }
     ],
     "correctOptionId": "b",
     "correctAnswer": "b",
@@ -432,7 +605,9 @@
     "skill": "interpret",
     "verseRef": "Rute 1:16",
     "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
-    "evidence": ["Rute 1:16"],
+    "evidence": [
+      "Rute 1:16"
+    ],
     "type": "order",
     "question": "Qual sequência revela o sentido de Rute 1:16?",
     "prompt": "Qual sequência revela o sentido de Rute 1:16?",
@@ -444,11 +619,24 @@
     },
     "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
     "options": [
-      {"id": "a", "text": "Recusa da separação entre Rute e Noemi"},
-      {"id": "b", "text": "Partilha de caminho e de pouso"},
-      {"id": "c", "text": "Adesão ao povo e ao Deus de Israel"}
+      {
+        "id": "a",
+        "text": "Recusa da separação entre Rute e Noemi"
+      },
+      {
+        "id": "b",
+        "text": "Partilha de caminho e de pouso"
+      },
+      {
+        "id": "c",
+        "text": "Adesão ao povo e ao Deus de Israel"
+      }
     ],
-    "correctOrder": ["a", "b", "c"],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
     "correctOptionId": "a",
     "correctAnswer": "a",
     "trail": "rute",
@@ -460,7 +648,9 @@
     "skill": "interpret",
     "verseRef": "Rute 1:16",
     "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
-    "evidence": ["Rute 1:16"],
+    "evidence": [
+      "Rute 1:16"
+    ],
     "type": "complete",
     "question": "Complete a frase: \"e deixe de te ___\"",
     "prompt": "Complete a frase: \"e deixe de te ___\"",
@@ -473,9 +663,18 @@
     "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
     "template": "e deixe de te ___",
     "options": [
-      {"id": "a", "text": "povo"},
-      {"id": "b", "text": "seguir"},
-      {"id": "c", "text": "Deus"}
+      {
+        "id": "a",
+        "text": "povo"
+      },
+      {
+        "id": "b",
+        "text": "seguir"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
     ],
     "correctOptionId": "b",
     "correctAnswer": "b",
@@ -488,7 +687,9 @@
     "skill": "interpret",
     "verseRef": "Rute 1:16",
     "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
-    "evidence": ["Rute 1:16"],
+    "evidence": [
+      "Rute 1:16"
+    ],
     "type": "connect",
     "question": "O que Rute 1:16 revela que se liga a este contexto?",
     "prompt": "O que Rute 1:16 revela que se liga a este contexto?",
@@ -508,9 +709,18 @@
       "text": "Rute cola sua vida a Noemi e ao Deus de Israel — lealdade que atravessa fronteira e sangue."
     },
     "options": [
-      {"id": "a", "text": "Saudade do culto de Moabe"},
-      {"id": "b", "text": "Pedido para Noemi ir embora"},
-      {"id": "c", "text": "Fé colada ao Deus de Israel"}
+      {
+        "id": "a",
+        "text": "Saudade do culto de Moabe"
+      },
+      {
+        "id": "b",
+        "text": "Pedido para Noemi ir embora"
+      },
+      {
+        "id": "c",
+        "text": "Fé colada ao Deus de Israel"
+      }
     ],
     "correctOptionId": "c",
     "correctAnswer": "c",
@@ -523,7 +733,10 @@
     "skill": "observe",
     "verseRef": "Rute 2:8–9",
     "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
-    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "evidence": [
+      "Rute 2:8",
+      "Rute 2:9"
+    ],
     "type": "true_false",
     "question": "Boaz manda Rute não ir a outro campo a rabiscar, mas ajuntar-se às suas moças.",
     "prompt": "Boaz manda Rute não ir a outro campo a rabiscar, mas ajuntar-se às suas moças.",
@@ -533,8 +746,14 @@
       "false": "Rute 2:8 diz exatamente isso."
     },
     "options": [
-      {"id": "true", "text": "Verdadeiro"},
-      {"id": "false", "text": "Falso"}
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
     ],
     "correctOptionId": "true",
     "correctAnswer": "true",
@@ -548,7 +767,10 @@
     "skill": "observe",
     "verseRef": "Rute 2:8–9",
     "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
-    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "evidence": [
+      "Rute 2:8",
+      "Rute 2:9"
+    ],
     "type": "tap",
     "question": "Em Rute 2:8–9, toque a palavra que falta em \"não vás a outro ___ a rabiscar\"?",
     "prompt": "Em Rute 2:8–9, toque a palavra que falta em \"não vás a outro ___ a rabiscar\"?",
@@ -561,9 +783,18 @@
     "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
     "template": "não vás a outro ___ a rabiscar",
     "options": [
-      {"id": "a", "text": "vasos"},
-      {"id": "b", "text": "campo"},
-      {"id": "c", "text": "moços"}
+      {
+        "id": "a",
+        "text": "vasos"
+      },
+      {
+        "id": "b",
+        "text": "campo"
+      },
+      {
+        "id": "c",
+        "text": "moços"
+      }
     ],
     "correctOptionId": "b",
     "correctAnswer": "b",
@@ -576,7 +807,10 @@
     "skill": "observe",
     "verseRef": "Rute 2:8–9",
     "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
-    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "evidence": [
+      "Rute 2:8",
+      "Rute 2:9"
+    ],
     "type": "choice",
     "question": "O que Boaz ordena de modo explícito em Rute 2:8–9?",
     "prompt": "O que Boaz ordena de modo explícito em Rute 2:8–9?",
@@ -589,10 +823,22 @@
     },
     "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
     "options": [
-      {"id": "a", "text": "Rute deve ficar daqui, seguir as moças, não ser molestada e beber dos vasos."},
-      {"id": "b", "text": "Rute deve rabiscar em qualquer campo que escolher."},
-      {"id": "c", "text": "Os moços ficam livres para molestar Rute."},
-      {"id": "d", "text": "Rute não pode beber da água tirada pelos moços."}
+      {
+        "id": "a",
+        "text": "Rute deve ficar daqui, seguir as moças, não ser molestada e beber dos vasos."
+      },
+      {
+        "id": "b",
+        "text": "Rute deve rabiscar em qualquer campo que escolher."
+      },
+      {
+        "id": "c",
+        "text": "Os moços ficam livres para molestar Rute."
+      },
+      {
+        "id": "d",
+        "text": "Rute não pode beber da água tirada pelos moços."
+      }
     ],
     "correctOptionId": "a",
     "correctAnswer": "a",
@@ -605,7 +851,10 @@
     "skill": "observe",
     "verseRef": "Rute 2:8–9",
     "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
-    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "evidence": [
+      "Rute 2:8",
+      "Rute 2:9"
+    ],
     "type": "order",
     "question": "Qual sequência mostra a ordem dos fatos em Rute 2:8–9?",
     "prompt": "Qual sequência mostra a ordem dos fatos em Rute 2:8–9?",
@@ -617,11 +866,24 @@
     },
     "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
     "options": [
-      {"id": "a", "text": "Boaz manda Rute não ir a outro campo nem se afastar dali"},
-      {"id": "b", "text": "Ela deve ajuntar-se às moças e ir após as que segam"},
-      {"id": "c", "text": "Os moços não a molestarão, e ela pode beber dos vasos"}
+      {
+        "id": "a",
+        "text": "Boaz manda Rute não ir a outro campo nem se afastar dali"
+      },
+      {
+        "id": "b",
+        "text": "Ela deve ajuntar-se às moças e ir após as que segam"
+      },
+      {
+        "id": "c",
+        "text": "Os moços não a molestarão, e ela pode beber dos vasos"
+      }
     ],
-    "correctOrder": ["a", "b", "c"],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
     "correctOptionId": "a",
     "correctAnswer": "a",
     "trail": "rute",
@@ -633,7 +895,10 @@
     "skill": "observe",
     "verseRef": "Rute 2:8–9",
     "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
-    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "evidence": [
+      "Rute 2:8",
+      "Rute 2:9"
+    ],
     "type": "complete",
     "question": "Complete a frase: \"mas ajunta-te às minhas ___\"",
     "prompt": "Complete a frase: \"mas ajunta-te às minhas ___\"",
@@ -646,9 +911,18 @@
     "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
     "template": "mas ajunta-te às minhas ___",
     "options": [
-      {"id": "a", "text": "moços"},
-      {"id": "b", "text": "vasos"},
-      {"id": "c", "text": "moças"}
+      {
+        "id": "a",
+        "text": "moços"
+      },
+      {
+        "id": "b",
+        "text": "vasos"
+      },
+      {
+        "id": "c",
+        "text": "moças"
+      }
     ],
     "correctOptionId": "c",
     "correctAnswer": "c",
@@ -661,7 +935,10 @@
     "skill": "observe",
     "verseRef": "Rute 2:8–9",
     "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
-    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "evidence": [
+      "Rute 2:8",
+      "Rute 2:9"
+    ],
     "type": "connect",
     "question": "O que Rute 2:8–9 comunica que se liga a este contexto?",
     "prompt": "O que Rute 2:8–9 comunica que se liga a este contexto?",
@@ -681,9 +958,18 @@
       "text": "No campo de Boaz, a estrangeira encontra provisão e proteção — graça no chão da colheita."
     },
     "options": [
-      {"id": "a", "text": "Exploração da estrangeira"},
-      {"id": "b", "text": "Proibição de beber água"},
-      {"id": "c", "text": "Graça no chão da colheita"}
+      {
+        "id": "a",
+        "text": "Exploração da estrangeira"
+      },
+      {
+        "id": "b",
+        "text": "Proibição de beber água"
+      },
+      {
+        "id": "c",
+        "text": "Graça no chão da colheita"
+      }
     ],
     "correctOptionId": "c",
     "correctAnswer": "c",
@@ -696,7 +982,10 @@
     "skill": "understand",
     "verseRef": "Rute 2:8–9",
     "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
-    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "evidence": [
+      "Rute 2:8",
+      "Rute 2:9"
+    ],
     "type": "true_false",
     "question": "Boaz deixa Rute desprotegida entre os moços e sem acesso à água do campo.",
     "prompt": "Boaz deixa Rute desprotegida entre os moços e sem acesso à água do campo.",
@@ -706,8 +995,14 @@
       "true": "Há ordem contra moléstia e convite a beber dos vasos."
     },
     "options": [
-      {"id": "true", "text": "Verdadeiro"},
-      {"id": "false", "text": "Falso"}
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
     ],
     "correctOptionId": "false",
     "correctAnswer": "false",
@@ -721,7 +1016,10 @@
     "skill": "understand",
     "verseRef": "Rute 2:8–9",
     "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
-    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "evidence": [
+      "Rute 2:8",
+      "Rute 2:9"
+    ],
     "type": "tap",
     "question": "Em Rute 2:8–9, toque a palavra que falta em \"quando tiveres ___, vai aos vasos\"?",
     "prompt": "Em Rute 2:8–9, toque a palavra que falta em \"quando tiveres ___, vai aos vasos\"?",
@@ -734,9 +1032,18 @@
     "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
     "template": "quando tiveres ___, vai aos vasos",
     "options": [
-      {"id": "a", "text": "sede"},
-      {"id": "b", "text": "ordem"},
-      {"id": "c", "text": "campo"}
+      {
+        "id": "a",
+        "text": "sede"
+      },
+      {
+        "id": "b",
+        "text": "ordem"
+      },
+      {
+        "id": "c",
+        "text": "campo"
+      }
     ],
     "correctOptionId": "a",
     "correctAnswer": "a",
@@ -749,7 +1056,10 @@
     "skill": "understand",
     "verseRef": "Rute 2:8–9",
     "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
-    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "evidence": [
+      "Rute 2:8",
+      "Rute 2:9"
+    ],
     "type": "choice",
     "question": "O que a fala de Boaz articula juntas no campo da colheita?",
     "prompt": "O que a fala de Boaz articula juntas no campo da colheita?",
@@ -762,10 +1072,22 @@
     },
     "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
     "options": [
-      {"id": "a", "text": "Controle rígido para extrair mais trabalho da viúva."},
-      {"id": "b", "text": "Permanência no campo, companhia das moças, proteção e água."},
-      {"id": "c", "text": "Hospitalidade só de palavras, sem acesso real à água."},
-      {"id": "d", "text": "Liberdade total, inclusive o risco de ser molestada."}
+      {
+        "id": "a",
+        "text": "Controle rígido para extrair mais trabalho da viúva."
+      },
+      {
+        "id": "b",
+        "text": "Permanência no campo, companhia das moças, proteção e água."
+      },
+      {
+        "id": "c",
+        "text": "Hospitalidade só de palavras, sem acesso real à água."
+      },
+      {
+        "id": "d",
+        "text": "Liberdade total, inclusive o risco de ser molestada."
+      }
     ],
     "correctOptionId": "b",
     "correctAnswer": "b",
@@ -778,7 +1100,10 @@
     "skill": "understand",
     "verseRef": "Rute 2:8–9",
     "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
-    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "evidence": [
+      "Rute 2:8",
+      "Rute 2:9"
+    ],
     "type": "order",
     "question": "Como se encadeiam os eventos de Rute 2:8–9?",
     "prompt": "Como se encadeiam os eventos de Rute 2:8–9?",
@@ -790,11 +1115,24 @@
     },
     "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
     "options": [
-      {"id": "a", "text": "Boaz retém Rute no seu campo, longe de outros rabiscos"},
-      {"id": "b", "text": "Ele a coloca com as moças e sob ordem de não ser molestada"},
-      {"id": "c", "text": "Ele abre-lhe os vasos quando ela tiver sede"}
+      {
+        "id": "a",
+        "text": "Boaz retém Rute no seu campo, longe de outros rabiscos"
+      },
+      {
+        "id": "b",
+        "text": "Ele a coloca com as moças e sob ordem de não ser molestada"
+      },
+      {
+        "id": "c",
+        "text": "Ele abre-lhe os vasos quando ela tiver sede"
+      }
     ],
-    "correctOrder": ["a", "b", "c"],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
     "correctOptionId": "a",
     "correctAnswer": "a",
     "trail": "rute",
@@ -806,7 +1144,10 @@
     "skill": "understand",
     "verseRef": "Rute 2:8–9",
     "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
-    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "evidence": [
+      "Rute 2:8",
+      "Rute 2:9"
+    ],
     "type": "complete",
     "question": "Complete a frase: \"bebe do que os ___ tiverem tirado\"",
     "prompt": "Complete a frase: \"bebe do que os ___ tiverem tirado\"",
@@ -819,9 +1160,18 @@
     "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
     "template": "bebe do que os ___ tiverem tirado",
     "options": [
-      {"id": "a", "text": "moças"},
-      {"id": "b", "text": "moços"},
-      {"id": "c", "text": "vasos"}
+      {
+        "id": "a",
+        "text": "moças"
+      },
+      {
+        "id": "b",
+        "text": "moços"
+      },
+      {
+        "id": "c",
+        "text": "vasos"
+      }
     ],
     "correctOptionId": "b",
     "correctAnswer": "b",
@@ -834,7 +1184,10 @@
     "skill": "understand",
     "verseRef": "Rute 2:8–9",
     "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
-    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "evidence": [
+      "Rute 2:8",
+      "Rute 2:9"
+    ],
     "type": "connect",
     "question": "O que a ordem de Boaz em Rute 2:8–9 comunica que se liga a este contexto?",
     "prompt": "O que a ordem de Boaz em Rute 2:8–9 comunica que se liga a este contexto?",
@@ -854,9 +1207,18 @@
       "text": "No campo de Boaz, a estrangeira encontra provisão e proteção — graça no chão da colheita."
     },
     "options": [
-      {"id": "a", "text": "Abandono da viúva no mercado"},
-      {"id": "b", "text": "Provisão com proteção"},
-      {"id": "c", "text": "Cortesia sem cuidado concreto"}
+      {
+        "id": "a",
+        "text": "Abandono da viúva no mercado"
+      },
+      {
+        "id": "b",
+        "text": "Provisão com proteção"
+      },
+      {
+        "id": "c",
+        "text": "Cortesia sem cuidado concreto"
+      }
     ],
     "correctOptionId": "b",
     "correctAnswer": "b",
@@ -869,7 +1231,10 @@
     "skill": "interpret",
     "verseRef": "Rute 2:8–9",
     "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
-    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "evidence": [
+      "Rute 2:8",
+      "Rute 2:9"
+    ],
     "type": "true_false",
     "question": "No campo de Boaz, a estrangeira encontra provisão e proteção, não só permissão de rabiscar.",
     "prompt": "No campo de Boaz, a estrangeira encontra provisão e proteção, não só permissão de rabiscar.",
@@ -879,8 +1244,14 @@
       "false": "Ordem, moças e vasos mostram mais que permissão fria."
     },
     "options": [
-      {"id": "true", "text": "Verdadeiro"},
-      {"id": "false", "text": "Falso"}
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
     ],
     "correctOptionId": "true",
     "correctAnswer": "true",
@@ -894,7 +1265,10 @@
     "skill": "interpret",
     "verseRef": "Rute 2:8–9",
     "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
-    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "evidence": [
+      "Rute 2:8",
+      "Rute 2:9"
+    ],
     "type": "tap",
     "question": "Em Rute 2:8–9, toque a palavra que falta em \"nem te afastes ___\"?",
     "prompt": "Em Rute 2:8–9, toque a palavra que falta em \"nem te afastes ___\"?",
@@ -907,9 +1281,18 @@
     "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
     "template": "nem te afastes ___",
     "options": [
-      {"id": "a", "text": "outro"},
-      {"id": "b", "text": "após"},
-      {"id": "c", "text": "daqui"}
+      {
+        "id": "a",
+        "text": "outro"
+      },
+      {
+        "id": "b",
+        "text": "após"
+      },
+      {
+        "id": "c",
+        "text": "daqui"
+      }
     ],
     "correctOptionId": "c",
     "correctAnswer": "c",
@@ -922,7 +1305,10 @@
     "skill": "interpret",
     "verseRef": "Rute 2:8–9",
     "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
-    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "evidence": [
+      "Rute 2:8",
+      "Rute 2:9"
+    ],
     "type": "choice",
     "question": "Qual leitura melhor capta o sentido de graça em Rute 2:8–9?",
     "prompt": "Qual leitura melhor capta o sentido de graça em Rute 2:8–9?",
@@ -935,10 +1321,22 @@
     },
     "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
     "options": [
-      {"id": "a", "text": "É um contrato de trabalho com pagamento combinado."},
-      {"id": "b", "text": "É um teste para ver se a moabita aguenta o risco do campo."},
-      {"id": "c", "text": "A estrangeira é acolhida com lugar, cobertura e água no chão da sega."},
-      {"id": "d", "text": "É caridade distante, sem partilhar o que os moços já tiraram."}
+      {
+        "id": "a",
+        "text": "É um contrato de trabalho com pagamento combinado."
+      },
+      {
+        "id": "b",
+        "text": "É um teste para ver se a moabita aguenta o risco do campo."
+      },
+      {
+        "id": "c",
+        "text": "A estrangeira é acolhida com lugar, cobertura e água no chão da sega."
+      },
+      {
+        "id": "d",
+        "text": "É caridade distante, sem partilhar o que os moços já tiraram."
+      }
     ],
     "correctOptionId": "c",
     "correctAnswer": "c",
@@ -951,7 +1349,10 @@
     "skill": "interpret",
     "verseRef": "Rute 2:8–9",
     "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
-    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "evidence": [
+      "Rute 2:8",
+      "Rute 2:9"
+    ],
     "type": "order",
     "question": "Qual sequência revela o sentido de Rute 2:8–9?",
     "prompt": "Qual sequência revela o sentido de Rute 2:8–9?",
@@ -963,11 +1364,24 @@
     },
     "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
     "options": [
-      {"id": "a", "text": "A estrangeira é chamada e retida no campo de Boaz"},
-      {"id": "b", "text": "Proteção e companhia são ordenadas em torno dela"},
-      {"id": "c", "text": "A sede encontra vaso já tirado, graça concreta"}
+      {
+        "id": "a",
+        "text": "A estrangeira é chamada e retida no campo de Boaz"
+      },
+      {
+        "id": "b",
+        "text": "Proteção e companhia são ordenadas em torno dela"
+      },
+      {
+        "id": "c",
+        "text": "A sede encontra vaso já tirado, graça concreta"
+      }
     ],
-    "correctOrder": ["a", "b", "c"],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
     "correctOptionId": "a",
     "correctAnswer": "a",
     "trail": "rute",
@@ -979,7 +1393,10 @@
     "skill": "interpret",
     "verseRef": "Rute 2:8–9",
     "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
-    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "evidence": [
+      "Rute 2:8",
+      "Rute 2:9"
+    ],
     "type": "complete",
     "question": "Complete a frase: \"não dei eu ___ aos moços que não te molestem\"",
     "prompt": "Complete a frase: \"não dei eu ___ aos moços que não te molestem\"",
@@ -992,9 +1409,18 @@
     "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
     "template": "não dei eu ___ aos moços que não te molestem",
     "options": [
-      {"id": "a", "text": "ordem"},
-      {"id": "b", "text": "sede"},
-      {"id": "c", "text": "olhos"}
+      {
+        "id": "a",
+        "text": "ordem"
+      },
+      {
+        "id": "b",
+        "text": "sede"
+      },
+      {
+        "id": "c",
+        "text": "olhos"
+      }
     ],
     "correctOptionId": "a",
     "correctAnswer": "a",
@@ -1007,7 +1433,10 @@
     "skill": "interpret",
     "verseRef": "Rute 2:8–9",
     "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
-    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "evidence": [
+      "Rute 2:8",
+      "Rute 2:9"
+    ],
     "type": "connect",
     "question": "O que Rute 2:8–9 revela que se liga a este contexto?",
     "prompt": "O que Rute 2:8–9 revela que se liga a este contexto?",
@@ -1027,9 +1456,18 @@
       "text": "No campo de Boaz, a estrangeira encontra provisão e proteção — graça no chão da colheita."
     },
     "options": [
-      {"id": "a", "text": "Graça pisada na colheita"},
-      {"id": "b", "text": "Favoritismo sem cuidado"},
-      {"id": "c", "text": "Juízo contra a moabita"}
+      {
+        "id": "a",
+        "text": "Graça pisada na colheita"
+      },
+      {
+        "id": "b",
+        "text": "Favoritismo sem cuidado"
+      },
+      {
+        "id": "c",
+        "text": "Juízo contra a moabita"
+      }
     ],
     "correctOptionId": "a",
     "correctAnswer": "a",
@@ -1042,7 +1480,9 @@
     "skill": "observe",
     "verseRef": "Rute 4:14",
     "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
-    "evidence": ["Rute 4:14"],
+    "evidence": [
+      "Rute 4:14"
+    ],
     "type": "true_false",
     "question": "As mulheres dizem que Jeová deixou Noemi hoje sem um parente chegado.",
     "prompt": "As mulheres dizem que Jeová deixou Noemi hoje sem um parente chegado.",
@@ -1052,8 +1492,14 @@
       "true": "A bênção afirma o contrário: não te deixou hoje sem parente."
     },
     "options": [
-      {"id": "true", "text": "Verdadeiro"},
-      {"id": "false", "text": "Falso"}
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
     ],
     "correctOptionId": "false",
     "correctAnswer": "false",
@@ -1067,7 +1513,9 @@
     "skill": "observe",
     "verseRef": "Rute 4:14",
     "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
-    "evidence": ["Rute 4:14"],
+    "evidence": [
+      "Rute 4:14"
+    ],
     "type": "tap",
     "question": "Em Rute 4:14, toque a palavra que falta em \"Bendito seja ___\"?",
     "prompt": "Em Rute 4:14, toque a palavra que falta em \"Bendito seja ___\"?",
@@ -1080,9 +1528,18 @@
     "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
     "template": "Bendito seja ___",
     "options": [
-      {"id": "a", "text": "Jeová"},
-      {"id": "b", "text": "Noemi"},
-      {"id": "c", "text": "Israel"}
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Noemi"
+      },
+      {
+        "id": "c",
+        "text": "Israel"
+      }
     ],
     "correctOptionId": "a",
     "correctAnswer": "a",
@@ -1095,7 +1552,9 @@
     "skill": "observe",
     "verseRef": "Rute 4:14",
     "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
-    "evidence": ["Rute 4:14"],
+    "evidence": [
+      "Rute 4:14"
+    ],
     "type": "choice",
     "question": "O que as mulheres afirmam diretamente em Rute 4:14?",
     "prompt": "O que as mulheres afirmam diretamente em Rute 4:14?",
@@ -1108,10 +1567,22 @@
     },
     "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
     "options": [
-      {"id": "a", "text": "As mulheres acusam Jeová de ter abandonado Noemi."},
-      {"id": "b", "text": "Noemi ficou hoje sem qualquer parente chegado."},
-      {"id": "c", "text": "O nome do parente deve permanecer oculto em Israel."},
-      {"id": "d", "text": "Jeová não deixou Noemi sem parente chegado; o nome dele seja célebre."}
+      {
+        "id": "a",
+        "text": "As mulheres acusam Jeová de ter abandonado Noemi."
+      },
+      {
+        "id": "b",
+        "text": "Noemi ficou hoje sem qualquer parente chegado."
+      },
+      {
+        "id": "c",
+        "text": "O nome do parente deve permanecer oculto em Israel."
+      },
+      {
+        "id": "d",
+        "text": "Jeová não deixou Noemi sem parente chegado; o nome dele seja célebre."
+      }
     ],
     "correctOptionId": "d",
     "correctAnswer": "d",
@@ -1124,7 +1595,9 @@
     "skill": "observe",
     "verseRef": "Rute 4:14",
     "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
-    "evidence": ["Rute 4:14"],
+    "evidence": [
+      "Rute 4:14"
+    ],
     "type": "order",
     "question": "Qual sequência mostra a ordem dos fatos em Rute 4:14?",
     "prompt": "Qual sequência mostra a ordem dos fatos em Rute 4:14?",
@@ -1136,11 +1609,24 @@
     },
     "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
     "options": [
-      {"id": "a", "text": "As mulheres falam a Noemi"},
-      {"id": "b", "text": "Bendizem a Jeová por não a deixar sem parente chegado"},
-      {"id": "c", "text": "Pedem que o nome dele se torne célebre em Israel"}
+      {
+        "id": "a",
+        "text": "As mulheres falam a Noemi"
+      },
+      {
+        "id": "b",
+        "text": "Bendizem a Jeová por não a deixar sem parente chegado"
+      },
+      {
+        "id": "c",
+        "text": "Pedem que o nome dele se torne célebre em Israel"
+      }
     ],
-    "correctOrder": ["a", "b", "c"],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
     "correctOptionId": "a",
     "correctAnswer": "a",
     "trail": "rute",
@@ -1152,7 +1638,9 @@
     "skill": "observe",
     "verseRef": "Rute 4:14",
     "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
-    "evidence": ["Rute 4:14"],
+    "evidence": [
+      "Rute 4:14"
+    ],
     "type": "complete",
     "question": "Complete a frase: \"não te deixou hoje sem um parente ___\"",
     "prompt": "Complete a frase: \"não te deixou hoje sem um parente ___\"",
@@ -1165,9 +1653,18 @@
     "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
     "template": "não te deixou hoje sem um parente ___",
     "options": [
-      {"id": "a", "text": "célebre"},
-      {"id": "b", "text": "chegado"},
-      {"id": "c", "text": "nome"}
+      {
+        "id": "a",
+        "text": "célebre"
+      },
+      {
+        "id": "b",
+        "text": "chegado"
+      },
+      {
+        "id": "c",
+        "text": "nome"
+      }
     ],
     "correctOptionId": "b",
     "correctAnswer": "b",
@@ -1180,7 +1677,9 @@
     "skill": "observe",
     "verseRef": "Rute 4:14",
     "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
-    "evidence": ["Rute 4:14"],
+    "evidence": [
+      "Rute 4:14"
+    ],
     "type": "connect",
     "question": "O que Rute 4:14 comunica que se liga a este contexto?",
     "prompt": "O que Rute 4:14 comunica que se liga a este contexto?",
@@ -1200,9 +1699,18 @@
       "text": "Jeová não deixa Noemi sem resgatador: o parente chegado restaura nome e futuro."
     },
     "options": [
-      {"id": "a", "text": "Resgatador restaura o nome"},
-      {"id": "b", "text": "Noemi fica sem parente"},
-      {"id": "c", "text": "Bênção só das vizinhas"}
+      {
+        "id": "a",
+        "text": "Resgatador restaura o nome"
+      },
+      {
+        "id": "b",
+        "text": "Noemi fica sem parente"
+      },
+      {
+        "id": "c",
+        "text": "Bênção só das vizinhas"
+      }
     ],
     "correctOptionId": "a",
     "correctAnswer": "a",
@@ -1215,7 +1723,9 @@
     "skill": "understand",
     "verseRef": "Rute 4:14",
     "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
-    "evidence": ["Rute 4:14"],
+    "evidence": [
+      "Rute 4:14"
+    ],
     "type": "true_false",
     "question": "O texto liga a bênção de Jeová à presença de um parente chegado que deve tornar o nome célebre.",
     "prompt": "O texto liga a bênção de Jeová à presença de um parente chegado que deve tornar o nome célebre.",
@@ -1225,8 +1735,14 @@
       "false": "As duas orações do versículo unem Jeová, parente e nome."
     },
     "options": [
-      {"id": "true", "text": "Verdadeiro"},
-      {"id": "false", "text": "Falso"}
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
     ],
     "correctOptionId": "true",
     "correctAnswer": "true",
@@ -1240,7 +1756,9 @@
     "skill": "understand",
     "verseRef": "Rute 4:14",
     "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
-    "evidence": ["Rute 4:14"],
+    "evidence": [
+      "Rute 4:14"
+    ],
     "type": "tap",
     "question": "Em Rute 4:14, toque a palavra que falta em \"torne-se o seu nome ___ em Israel\"?",
     "prompt": "Em Rute 4:14, toque a palavra que falta em \"torne-se o seu nome ___ em Israel\"?",
@@ -1253,9 +1771,18 @@
     "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
     "template": "torne-se o seu nome ___ em Israel",
     "options": [
-      {"id": "a", "text": "Bendito"},
-      {"id": "b", "text": "hoje"},
-      {"id": "c", "text": "célebre"}
+      {
+        "id": "a",
+        "text": "Bendito"
+      },
+      {
+        "id": "b",
+        "text": "hoje"
+      },
+      {
+        "id": "c",
+        "text": "célebre"
+      }
     ],
     "correctOptionId": "c",
     "correctAnswer": "c",
@@ -1268,7 +1795,9 @@
     "skill": "understand",
     "verseRef": "Rute 4:14",
     "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
-    "evidence": ["Rute 4:14"],
+    "evidence": [
+      "Rute 4:14"
+    ],
     "type": "choice",
     "question": "Como se relacionam Jeová, o parente chegado e o nome em Rute 4:14?",
     "prompt": "Como se relacionam Jeová, o parente chegado e o nome em Rute 4:14?",
@@ -1281,10 +1810,22 @@
     },
     "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
     "options": [
-      {"id": "a", "text": "Jeová é bendito por dar o parente cujo nome deve ser célebre em Israel."},
-      {"id": "b", "text": "O parente substitui Jeová, que já não age na história."},
-      {"id": "c", "text": "O nome restaurado deve ficar só dentro da casa, sem Israel."},
-      {"id": "d", "text": "As mulheres separam a bênção de Jeová da figura do resgatador."}
+      {
+        "id": "a",
+        "text": "Jeová é bendito por dar o parente cujo nome deve ser célebre em Israel."
+      },
+      {
+        "id": "b",
+        "text": "O parente substitui Jeová, que já não age na história."
+      },
+      {
+        "id": "c",
+        "text": "O nome restaurado deve ficar só dentro da casa, sem Israel."
+      },
+      {
+        "id": "d",
+        "text": "As mulheres separam a bênção de Jeová da figura do resgatador."
+      }
     ],
     "correctOptionId": "a",
     "correctAnswer": "a",
@@ -1297,7 +1838,9 @@
     "skill": "understand",
     "verseRef": "Rute 4:14",
     "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
-    "evidence": ["Rute 4:14"],
+    "evidence": [
+      "Rute 4:14"
+    ],
     "type": "order",
     "question": "Como se encadeiam os eventos de Rute 4:14?",
     "prompt": "Como se encadeiam os eventos de Rute 4:14?",
@@ -1309,11 +1852,24 @@
     },
     "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
     "options": [
-      {"id": "a", "text": "Jeová é bendito pelas mulheres"},
-      {"id": "b", "text": "O parente chegado preenche a ausência de Noemi"},
-      {"id": "c", "text": "O nome dele deve tornar-se célebre em Israel"}
+      {
+        "id": "a",
+        "text": "Jeová é bendito pelas mulheres"
+      },
+      {
+        "id": "b",
+        "text": "O parente chegado preenche a ausência de Noemi"
+      },
+      {
+        "id": "c",
+        "text": "O nome dele deve tornar-se célebre em Israel"
+      }
     ],
-    "correctOrder": ["a", "b", "c"],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
     "correctOptionId": "a",
     "correctAnswer": "a",
     "trail": "rute",
@@ -1325,7 +1881,9 @@
     "skill": "understand",
     "verseRef": "Rute 4:14",
     "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
-    "evidence": ["Rute 4:14"],
+    "evidence": [
+      "Rute 4:14"
+    ],
     "type": "complete",
     "question": "Complete a frase: \"não te deixou hoje sem um ___ chegado\"",
     "prompt": "Complete a frase: \"não te deixou hoje sem um ___ chegado\"",
@@ -1338,9 +1896,18 @@
     "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
     "template": "não te deixou hoje sem um ___ chegado",
     "options": [
-      {"id": "a", "text": "parente"},
-      {"id": "b", "text": "mulheres"},
-      {"id": "c", "text": "nome"}
+      {
+        "id": "a",
+        "text": "parente"
+      },
+      {
+        "id": "b",
+        "text": "mulheres"
+      },
+      {
+        "id": "c",
+        "text": "nome"
+      }
     ],
     "correctOptionId": "a",
     "correctAnswer": "a",
@@ -1353,7 +1920,9 @@
     "skill": "understand",
     "verseRef": "Rute 4:14",
     "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
-    "evidence": ["Rute 4:14"],
+    "evidence": [
+      "Rute 4:14"
+    ],
     "type": "connect",
     "question": "O que a bênção de Rute 4:14 comunica que se liga a este contexto?",
     "prompt": "O que a bênção de Rute 4:14 comunica que se liga a este contexto?",
@@ -1373,9 +1942,18 @@
       "text": "Jeová não deixa Noemi sem resgatador: o parente chegado restaura nome e futuro."
     },
     "options": [
-      {"id": "a", "text": "Nome que deve ficar oculto"},
-      {"id": "b", "text": "Abandono definitivo de Noemi"},
-      {"id": "c", "text": "Jeová dá o resgatador"}
+      {
+        "id": "a",
+        "text": "Nome que deve ficar oculto"
+      },
+      {
+        "id": "b",
+        "text": "Abandono definitivo de Noemi"
+      },
+      {
+        "id": "c",
+        "text": "Jeová dá o resgatador"
+      }
     ],
     "correctOptionId": "c",
     "correctAnswer": "c",
@@ -1388,7 +1966,9 @@
     "skill": "interpret",
     "verseRef": "Rute 4:14",
     "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
-    "evidence": ["Rute 4:14"],
+    "evidence": [
+      "Rute 4:14"
+    ],
     "type": "true_false",
     "question": "O resgatador é celebrado só como benefício privado, sem repercussão em Israel.",
     "prompt": "O resgatador é celebrado só como benefício privado, sem repercussão em Israel.",
@@ -1398,8 +1978,14 @@
       "true": "A fala pede celebridade em Israel, não só alívio doméstico."
     },
     "options": [
-      {"id": "true", "text": "Verdadeiro"},
-      {"id": "false", "text": "Falso"}
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
     ],
     "correctOptionId": "false",
     "correctAnswer": "false",
@@ -1413,7 +1999,9 @@
     "skill": "interpret",
     "verseRef": "Rute 4:14",
     "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
-    "evidence": ["Rute 4:14"],
+    "evidence": [
+      "Rute 4:14"
+    ],
     "type": "tap",
     "question": "Em Rute 4:14, toque a palavra que falta em \"Disseram as ___ a Noemi\"?",
     "prompt": "Em Rute 4:14, toque a palavra que falta em \"Disseram as ___ a Noemi\"?",
@@ -1426,9 +2014,18 @@
     "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
     "template": "Disseram as ___ a Noemi",
     "options": [
-      {"id": "a", "text": "Jeová"},
-      {"id": "b", "text": "mulheres"},
-      {"id": "c", "text": "Israel"}
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "mulheres"
+      },
+      {
+        "id": "c",
+        "text": "Israel"
+      }
     ],
     "correctOptionId": "b",
     "correctAnswer": "b",
@@ -1441,7 +2038,9 @@
     "skill": "interpret",
     "verseRef": "Rute 4:14",
     "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
-    "evidence": ["Rute 4:14"],
+    "evidence": [
+      "Rute 4:14"
+    ],
     "type": "choice",
     "question": "Qual leitura melhor capta o sentido teológico de Rute 4:14?",
     "prompt": "Qual leitura melhor capta o sentido teológico de Rute 4:14?",
@@ -1454,10 +2053,22 @@
     },
     "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
     "options": [
-      {"id": "a", "text": "A redenção é sorte humana, sem ação de Jeová."},
-      {"id": "b", "text": "O alívio vale só para Noemi, sem horizonte em Israel."},
-      {"id": "c", "text": "Jeová não deixa a viúva sem resgatador, e o nome dele deve ecoar em Israel."},
-      {"id": "d", "text": "Noemi conquistou o resgatador por astúcia, e Jeová apenas observa."}
+      {
+        "id": "a",
+        "text": "A redenção é sorte humana, sem ação de Jeová."
+      },
+      {
+        "id": "b",
+        "text": "O alívio vale só para Noemi, sem horizonte em Israel."
+      },
+      {
+        "id": "c",
+        "text": "Jeová não deixa a viúva sem resgatador, e o nome dele deve ecoar em Israel."
+      },
+      {
+        "id": "d",
+        "text": "Noemi conquistou o resgatador por astúcia, e Jeová apenas observa."
+      }
     ],
     "correctOptionId": "c",
     "correctAnswer": "c",
@@ -1470,7 +2081,9 @@
     "skill": "interpret",
     "verseRef": "Rute 4:14",
     "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
-    "evidence": ["Rute 4:14"],
+    "evidence": [
+      "Rute 4:14"
+    ],
     "type": "order",
     "question": "Qual sequência revela o sentido de Rute 4:14?",
     "prompt": "Qual sequência revela o sentido de Rute 4:14?",
@@ -1482,11 +2095,24 @@
     },
     "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
     "options": [
-      {"id": "a", "text": "Bênção dirigida a Jeová"},
-      {"id": "b", "text": "Presença do resgatador hoje"},
-      {"id": "c", "text": "Nome restaurado em Israel"}
+      {
+        "id": "a",
+        "text": "Bênção dirigida a Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Presença do resgatador hoje"
+      },
+      {
+        "id": "c",
+        "text": "Nome restaurado em Israel"
+      }
     ],
-    "correctOrder": ["a", "b", "c"],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
     "correctOptionId": "a",
     "correctAnswer": "a",
     "trail": "rute",
@@ -1498,7 +2124,9 @@
     "skill": "interpret",
     "verseRef": "Rute 4:14",
     "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
-    "evidence": ["Rute 4:14"],
+    "evidence": [
+      "Rute 4:14"
+    ],
     "type": "complete",
     "question": "Complete a frase: \"que não te ___ hoje sem um parente chegado\"",
     "prompt": "Complete a frase: \"que não te ___ hoje sem um parente chegado\"",
@@ -1511,9 +2139,18 @@
     "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
     "template": "que não te ___ hoje sem um parente chegado",
     "options": [
-      {"id": "a", "text": "Disseram"},
-      {"id": "b", "text": "torne-se"},
-      {"id": "c", "text": "deixou"}
+      {
+        "id": "a",
+        "text": "Disseram"
+      },
+      {
+        "id": "b",
+        "text": "torne-se"
+      },
+      {
+        "id": "c",
+        "text": "deixou"
+      }
     ],
     "correctOptionId": "c",
     "correctAnswer": "c",
@@ -1526,7 +2163,9 @@
     "skill": "interpret",
     "verseRef": "Rute 4:14",
     "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
-    "evidence": ["Rute 4:14"],
+    "evidence": [
+      "Rute 4:14"
+    ],
     "type": "connect",
     "question": "O que Rute 4:14 revela que se liga a este contexto?",
     "prompt": "O que Rute 4:14 revela que se liga a este contexto?",
@@ -1546,9 +2185,18 @@
       "text": "Jeová não deixa Noemi sem resgatador: o parente chegado restaura nome e futuro."
     },
     "options": [
-      {"id": "a", "text": "Encerramento da linhagem"},
-      {"id": "b", "text": "Redenção com nome público"},
-      {"id": "c", "text": "Mérito exclusivo de Noemi"}
+      {
+        "id": "a",
+        "text": "Encerramento da linhagem"
+      },
+      {
+        "id": "b",
+        "text": "Redenção com nome público"
+      },
+      {
+        "id": "c",
+        "text": "Mérito exclusivo de Noemi"
+      }
     ],
     "correctOptionId": "b",
     "correctAnswer": "b",
@@ -1561,7 +2209,9 @@
     "skill": "observe",
     "verseRef": "Rute 4:17",
     "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
-    "evidence": ["Rute 4:17"],
+    "evidence": [
+      "Rute 4:17"
+    ],
     "type": "true_false",
     "question": "As vizinhas chamam o menino de Obede e dizem que nasceu um filho a Noemi.",
     "prompt": "As vizinhas chamam o menino de Obede e dizem que nasceu um filho a Noemi.",
@@ -1571,8 +2221,14 @@
       "false": "Rute 4:17 afirma as duas coisas."
     },
     "options": [
-      {"id": "true", "text": "Verdadeiro"},
-      {"id": "false", "text": "Falso"}
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
     ],
     "correctOptionId": "true",
     "correctAnswer": "true",
@@ -1586,7 +2242,9 @@
     "skill": "observe",
     "verseRef": "Rute 4:17",
     "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
-    "evidence": ["Rute 4:17"],
+    "evidence": [
+      "Rute 4:17"
+    ],
     "type": "tap",
     "question": "Em Rute 4:17, toque a palavra que falta em \"Chamaram ao menino ___\"?",
     "prompt": "Em Rute 4:17, toque a palavra que falta em \"Chamaram ao menino ___\"?",
@@ -1599,9 +2257,18 @@
     "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
     "template": "Chamaram ao menino ___",
     "options": [
-      {"id": "a", "text": "Jessé"},
-      {"id": "b", "text": "Davi"},
-      {"id": "c", "text": "Obede"}
+      {
+        "id": "a",
+        "text": "Jessé"
+      },
+      {
+        "id": "b",
+        "text": "Davi"
+      },
+      {
+        "id": "c",
+        "text": "Obede"
+      }
     ],
     "correctOptionId": "c",
     "correctAnswer": "c",
@@ -1614,7 +2281,9 @@
     "skill": "observe",
     "verseRef": "Rute 4:17",
     "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
-    "evidence": ["Rute 4:17"],
+    "evidence": [
+      "Rute 4:17"
+    ],
     "type": "choice",
     "question": "O que o texto afirma de modo explícito em Rute 4:17?",
     "prompt": "O que o texto afirma de modo explícito em Rute 4:17?",
@@ -1627,10 +2296,22 @@
     },
     "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
     "options": [
-      {"id": "a", "text": "Só Noemi escolhe o nome, sem as vizinhas."},
-      {"id": "b", "text": "As vizinhas dizem que nasceu um filho a Noemi; chamam-no Obede, pai de Jessé, pai de Davi."},
-      {"id": "c", "text": "O menino recebe o nome Jessé neste versículo."},
-      {"id": "d", "text": "O texto não menciona Davi."}
+      {
+        "id": "a",
+        "text": "Só Noemi escolhe o nome, sem as vizinhas."
+      },
+      {
+        "id": "b",
+        "text": "As vizinhas dizem que nasceu um filho a Noemi; chamam-no Obede, pai de Jessé, pai de Davi."
+      },
+      {
+        "id": "c",
+        "text": "O menino recebe o nome Jessé neste versículo."
+      },
+      {
+        "id": "d",
+        "text": "O texto não menciona Davi."
+      }
     ],
     "correctOptionId": "b",
     "correctAnswer": "b",
@@ -1643,7 +2324,9 @@
     "skill": "observe",
     "verseRef": "Rute 4:17",
     "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
-    "evidence": ["Rute 4:17"],
+    "evidence": [
+      "Rute 4:17"
+    ],
     "type": "order",
     "question": "Qual sequência mostra a ordem dos fatos em Rute 4:17?",
     "prompt": "Qual sequência mostra a ordem dos fatos em Rute 4:17?",
@@ -1655,11 +2338,24 @@
     },
     "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
     "options": [
-      {"id": "a", "text": "As vizinhas dão nome ao menino"},
-      {"id": "b", "text": "Dizem que nasceu um filho a Noemi e chamam-no Obede"},
-      {"id": "c", "text": "Obede é pai de Jessé, pai de Davi"}
+      {
+        "id": "a",
+        "text": "As vizinhas dão nome ao menino"
+      },
+      {
+        "id": "b",
+        "text": "Dizem que nasceu um filho a Noemi e chamam-no Obede"
+      },
+      {
+        "id": "c",
+        "text": "Obede é pai de Jessé, pai de Davi"
+      }
     ],
-    "correctOrder": ["a", "b", "c"],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
     "correctOptionId": "a",
     "correctAnswer": "a",
     "trail": "rute",
@@ -1671,7 +2367,9 @@
     "skill": "observe",
     "verseRef": "Rute 4:17",
     "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
-    "evidence": ["Rute 4:17"],
+    "evidence": [
+      "Rute 4:17"
+    ],
     "type": "complete",
     "question": "Complete a frase: \"Nasceu um ___ a Noemi\"",
     "prompt": "Complete a frase: \"Nasceu um ___ a Noemi\"",
@@ -1684,9 +2382,18 @@
     "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
     "template": "Nasceu um ___ a Noemi",
     "options": [
-      {"id": "a", "text": "filho"},
-      {"id": "b", "text": "nome"},
-      {"id": "c", "text": "pai"}
+      {
+        "id": "a",
+        "text": "filho"
+      },
+      {
+        "id": "b",
+        "text": "nome"
+      },
+      {
+        "id": "c",
+        "text": "pai"
+      }
     ],
     "correctOptionId": "a",
     "correctAnswer": "a",
@@ -1699,7 +2406,9 @@
     "skill": "observe",
     "verseRef": "Rute 4:17",
     "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
-    "evidence": ["Rute 4:17"],
+    "evidence": [
+      "Rute 4:17"
+    ],
     "type": "connect",
     "question": "O que Rute 4:17 comunica que se liga a este contexto?",
     "prompt": "O que Rute 4:17 comunica que se liga a este contexto?",
@@ -1719,9 +2428,18 @@
       "text": "A lealdade de Rute entra na linhagem de Davi — redenção com nome e história."
     },
     "options": [
-      {"id": "a", "text": "Fim da história de Noemi"},
-      {"id": "b", "text": "Linhagem até Davi"},
-      {"id": "c", "text": "Obede sem descendência"}
+      {
+        "id": "a",
+        "text": "Fim da história de Noemi"
+      },
+      {
+        "id": "b",
+        "text": "Linhagem até Davi"
+      },
+      {
+        "id": "c",
+        "text": "Obede sem descendência"
+      }
     ],
     "correctOptionId": "b",
     "correctAnswer": "b",
@@ -1734,7 +2452,9 @@
     "skill": "understand",
     "verseRef": "Rute 4:17",
     "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
-    "evidence": ["Rute 4:17"],
+    "evidence": [
+      "Rute 4:17"
+    ],
     "type": "true_false",
     "question": "Obede é apresentado como fim da linhagem, sem ligação com Jessé ou Davi.",
     "prompt": "Obede é apresentado como fim da linhagem, sem ligação com Jessé ou Davi.",
@@ -1744,8 +2464,14 @@
       "true": "O versículo liga Obede a Jessé e a Davi."
     },
     "options": [
-      {"id": "true", "text": "Verdadeiro"},
-      {"id": "false", "text": "Falso"}
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
     ],
     "correctOptionId": "false",
     "correctAnswer": "false",
@@ -1759,7 +2485,9 @@
     "skill": "understand",
     "verseRef": "Rute 4:17",
     "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
-    "evidence": ["Rute 4:17"],
+    "evidence": [
+      "Rute 4:17"
+    ],
     "type": "tap",
     "question": "Em Rute 4:17, toque a palavra que falta em \"Ele é o pai de ___, pai de Davi\"?",
     "prompt": "Em Rute 4:17, toque a palavra que falta em \"Ele é o pai de ___, pai de Davi\"?",
@@ -1772,9 +2500,18 @@
     "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
     "template": "Ele é o pai de ___, pai de Davi",
     "options": [
-      {"id": "a", "text": "Jessé"},
-      {"id": "b", "text": "Obede"},
-      {"id": "c", "text": "Noemi"}
+      {
+        "id": "a",
+        "text": "Jessé"
+      },
+      {
+        "id": "b",
+        "text": "Obede"
+      },
+      {
+        "id": "c",
+        "text": "Noemi"
+      }
     ],
     "correctOptionId": "a",
     "correctAnswer": "a",
@@ -1787,7 +2524,9 @@
     "skill": "understand",
     "verseRef": "Rute 4:17",
     "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
-    "evidence": ["Rute 4:17"],
+    "evidence": [
+      "Rute 4:17"
+    ],
     "type": "choice",
     "question": "O que o encadeamento de Rute 4:17 mostra sobre nome, casa e futuro?",
     "prompt": "O que o encadeamento de Rute 4:17 mostra sobre nome, casa e futuro?",
@@ -1800,10 +2539,22 @@
     },
     "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
     "options": [
-      {"id": "a", "text": "O nome público das vizinhas substitui qualquer futuro da casa."},
-      {"id": "b", "text": "Chamar o menino filho de Noemi apaga Rute da história."},
-      {"id": "c", "text": "Obede encerra a narrativa sem abrir linhagem real."},
-      {"id": "d", "text": "O menino nomeado como filho de Noemi liga essa casa à linhagem de Davi."}
+      {
+        "id": "a",
+        "text": "O nome público das vizinhas substitui qualquer futuro da casa."
+      },
+      {
+        "id": "b",
+        "text": "Chamar o menino filho de Noemi apaga Rute da história."
+      },
+      {
+        "id": "c",
+        "text": "Obede encerra a narrativa sem abrir linhagem real."
+      },
+      {
+        "id": "d",
+        "text": "O menino nomeado como filho de Noemi liga essa casa à linhagem de Davi."
+      }
     ],
     "correctOptionId": "d",
     "correctAnswer": "d",
@@ -1816,7 +2567,9 @@
     "skill": "understand",
     "verseRef": "Rute 4:17",
     "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
-    "evidence": ["Rute 4:17"],
+    "evidence": [
+      "Rute 4:17"
+    ],
     "type": "order",
     "question": "Como se encadeiam os eventos de Rute 4:17?",
     "prompt": "Como se encadeiam os eventos de Rute 4:17?",
@@ -1828,11 +2581,24 @@
     },
     "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
     "options": [
-      {"id": "a", "text": "As vizinhas nomeiam o menino"},
-      {"id": "b", "text": "Obede é reconhecido como filho de Noemi"},
-      {"id": "c", "text": "A linhagem segue até Jessé e Davi"}
+      {
+        "id": "a",
+        "text": "As vizinhas nomeiam o menino"
+      },
+      {
+        "id": "b",
+        "text": "Obede é reconhecido como filho de Noemi"
+      },
+      {
+        "id": "c",
+        "text": "A linhagem segue até Jessé e Davi"
+      }
     ],
-    "correctOrder": ["a", "b", "c"],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
     "correctOptionId": "a",
     "correctAnswer": "a",
     "trail": "rute",
@@ -1844,7 +2610,9 @@
     "skill": "understand",
     "verseRef": "Rute 4:17",
     "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
-    "evidence": ["Rute 4:17"],
+    "evidence": [
+      "Rute 4:17"
+    ],
     "type": "complete",
     "question": "Complete a frase: \"As mulheres suas ___ deram-lhe nome\"",
     "prompt": "Complete a frase: \"As mulheres suas ___ deram-lhe nome\"",
@@ -1857,9 +2625,18 @@
     "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
     "template": "As mulheres suas ___ deram-lhe nome",
     "options": [
-      {"id": "a", "text": "menino"},
-      {"id": "b", "text": "filho"},
-      {"id": "c", "text": "vizinhas"}
+      {
+        "id": "a",
+        "text": "menino"
+      },
+      {
+        "id": "b",
+        "text": "filho"
+      },
+      {
+        "id": "c",
+        "text": "vizinhas"
+      }
     ],
     "correctOptionId": "c",
     "correctAnswer": "c",
@@ -1872,7 +2649,9 @@
     "skill": "understand",
     "verseRef": "Rute 4:17",
     "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
-    "evidence": ["Rute 4:17"],
+    "evidence": [
+      "Rute 4:17"
+    ],
     "type": "connect",
     "question": "O que o nome em Rute 4:17 comunica que se liga a este contexto?",
     "prompt": "O que o nome em Rute 4:17 comunica que se liga a este contexto?",
@@ -1892,9 +2671,18 @@
       "text": "A lealdade de Rute entra na linhagem de Davi — redenção com nome e história."
     },
     "options": [
-      {"id": "a", "text": "Nome que abre história"},
-      {"id": "b", "text": "Menino sem identidade"},
-      {"id": "c", "text": "Ruptura da casa de Noemi"}
+      {
+        "id": "a",
+        "text": "Nome que abre história"
+      },
+      {
+        "id": "b",
+        "text": "Menino sem identidade"
+      },
+      {
+        "id": "c",
+        "text": "Ruptura da casa de Noemi"
+      }
     ],
     "correctOptionId": "a",
     "correctAnswer": "a",
@@ -1907,7 +2695,9 @@
     "skill": "interpret",
     "verseRef": "Rute 4:17",
     "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
-    "evidence": ["Rute 4:17"],
+    "evidence": [
+      "Rute 4:17"
+    ],
     "type": "true_false",
     "question": "A redenção ganha nome e história quando a lealdade de Rute entra na linhagem de Davi.",
     "prompt": "A redenção ganha nome e história quando a lealdade de Rute entra na linhagem de Davi.",
@@ -1917,8 +2707,14 @@
       "false": "O versículo amarra o filho nomeado à casa de Davi."
     },
     "options": [
-      {"id": "true", "text": "Verdadeiro"},
-      {"id": "false", "text": "Falso"}
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
     ],
     "correctOptionId": "true",
     "correctAnswer": "true",
@@ -1932,7 +2728,9 @@
     "skill": "interpret",
     "verseRef": "Rute 4:17",
     "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
-    "evidence": ["Rute 4:17"],
+    "evidence": [
+      "Rute 4:17"
+    ],
     "type": "tap",
     "question": "Em Rute 4:17, toque a palavra que falta em \"___ um filho a Noemi\"?",
     "prompt": "Em Rute 4:17, toque a palavra que falta em \"___ um filho a Noemi\"?",
@@ -1945,9 +2743,18 @@
     "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
     "template": "___ um filho a Noemi",
     "options": [
-      {"id": "a", "text": "Chamaram"},
-      {"id": "b", "text": "Nasceu"},
-      {"id": "c", "text": "deram-lhe"}
+      {
+        "id": "a",
+        "text": "Chamaram"
+      },
+      {
+        "id": "b",
+        "text": "Nasceu"
+      },
+      {
+        "id": "c",
+        "text": "deram-lhe"
+      }
     ],
     "correctOptionId": "b",
     "correctAnswer": "b",
@@ -1960,7 +2767,9 @@
     "skill": "interpret",
     "verseRef": "Rute 4:17",
     "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
-    "evidence": ["Rute 4:17"],
+    "evidence": [
+      "Rute 4:17"
+    ],
     "type": "choice",
     "question": "Qual leitura melhor capta o sentido teológico de Rute 4:17?",
     "prompt": "Qual leitura melhor capta o sentido teológico de Rute 4:17?",
@@ -1973,10 +2782,22 @@
     },
     "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
     "options": [
-      {"id": "a", "text": "A lealdade da estrangeira entra, com nome, na linhagem que chega a Davi."},
-      {"id": "b", "text": "O filho de Noemi prova que Rute foi excluída da aliança."},
-      {"id": "c", "text": "Davi aparece por acaso, sem ligação com a redenção de Noemi."},
-      {"id": "d", "text": "O nome dado pelas vizinhas é só costume social, sem peso na história santa."}
+      {
+        "id": "a",
+        "text": "A lealdade da estrangeira entra, com nome, na linhagem que chega a Davi."
+      },
+      {
+        "id": "b",
+        "text": "O filho de Noemi prova que Rute foi excluída da aliança."
+      },
+      {
+        "id": "c",
+        "text": "Davi aparece por acaso, sem ligação com a redenção de Noemi."
+      },
+      {
+        "id": "d",
+        "text": "O nome dado pelas vizinhas é só costume social, sem peso na história santa."
+      }
     ],
     "correctOptionId": "a",
     "correctAnswer": "a",
@@ -1989,7 +2810,9 @@
     "skill": "interpret",
     "verseRef": "Rute 4:17",
     "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
-    "evidence": ["Rute 4:17"],
+    "evidence": [
+      "Rute 4:17"
+    ],
     "type": "order",
     "question": "Qual sequência revela o sentido de Rute 4:17?",
     "prompt": "Qual sequência revela o sentido de Rute 4:17?",
@@ -2001,11 +2824,24 @@
     },
     "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
     "options": [
-      {"id": "a", "text": "A comunidade dá nome ao menino"},
-      {"id": "b", "text": "A redenção é atribuída à casa de Noemi"},
-      {"id": "c", "text": "A linhagem desemboca em Davi"}
+      {
+        "id": "a",
+        "text": "A comunidade dá nome ao menino"
+      },
+      {
+        "id": "b",
+        "text": "A redenção é atribuída à casa de Noemi"
+      },
+      {
+        "id": "c",
+        "text": "A linhagem desemboca em Davi"
+      }
     ],
-    "correctOrder": ["a", "b", "c"],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
     "correctOptionId": "a",
     "correctAnswer": "a",
     "trail": "rute",
@@ -2017,7 +2853,9 @@
     "skill": "interpret",
     "verseRef": "Rute 4:17",
     "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
-    "evidence": ["Rute 4:17"],
+    "evidence": [
+      "Rute 4:17"
+    ],
     "type": "complete",
     "question": "Complete a frase: \"Ele é o ___ de Jessé, pai de Davi\"",
     "prompt": "Complete a frase: \"Ele é o ___ de Jessé, pai de Davi\"",
@@ -2030,9 +2868,18 @@
     "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
     "template": "Ele é o ___ de Jessé, pai de Davi",
     "options": [
-      {"id": "a", "text": "menino"},
-      {"id": "b", "text": "pai"},
-      {"id": "c", "text": "nome"}
+      {
+        "id": "a",
+        "text": "menino"
+      },
+      {
+        "id": "b",
+        "text": "pai"
+      },
+      {
+        "id": "c",
+        "text": "nome"
+      }
     ],
     "correctOptionId": "b",
     "correctAnswer": "b",
@@ -2045,7 +2892,9 @@
     "skill": "interpret",
     "verseRef": "Rute 4:17",
     "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
-    "evidence": ["Rute 4:17"],
+    "evidence": [
+      "Rute 4:17"
+    ],
     "type": "connect",
     "question": "O que Rute 4:17 revela que se liga a este contexto?",
     "prompt": "O que Rute 4:17 revela que se liga a este contexto?",
@@ -2065,14 +2914,2210 @@
       "text": "A lealdade de Rute entra na linhagem de Davi — redenção com nome e história."
     },
     "options": [
-      {"id": "a", "text": "Episódio sem futuro real"},
-      {"id": "b", "text": "Exclusão da moabita"},
-      {"id": "c", "text": "Lealdade na casa de Davi"}
+      {
+        "id": "a",
+        "text": "Episódio sem futuro real"
+      },
+      {
+        "id": "b",
+        "text": "Exclusão da moabita"
+      },
+      {
+        "id": "c",
+        "text": "Lealdade na casa de Davi"
+      }
     ],
     "correctOptionId": "c",
     "correctAnswer": "c",
     "trail": "rute",
     "section": "rute-redencao-02-desafio-linhagem",
     "id": "rute-pro-rute-redencao-02-desafio-linhagem-06"
+  },
+  {
+    "id": "rute-sem-rute-03-mara-01",
+    "trail": "rute",
+    "section": "rute-03-mara",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Noemi pede que não a chamem Noemi, e sim Mara.",
+    "prompt": "Noemi pede que não a chamem Noemi, e sim Mara.",
+    "cue": "Noemi pede que não a chamem Noemi, e sim Mara.",
+    "verseRef": "Rute 1:20–21",
+    "learningObjective": "Sair sabendo que Noemi nomeia a amargura e atribui o vazio a Jeová.",
+    "evidence": [
+      "Rute 1:20–21"
+    ],
+    "feedbackCorrect": "Certo: ela troca o nome doce pelo amargo.",
+    "feedbackWrong": {
+      "false": "O pedido abre a fala."
+    },
+    "passageText": "Respondeu-lhes ela: Não me chameis Noemi, chamai-me Mara, pois o Todo-Poderoso me encheu de grande amargura. Eu saí daqui cheia, e Jeová me fez voltar vazia. Por que me chamais Noemi, visto que Jeová deu testemunho contra mim, e o Todo-Poderoso me afligiu?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "rute-sem-rute-03-mara-02",
+    "trail": "rute",
+    "section": "rute-03-mara",
+    "difficulty": "semente",
+    "type": "tap",
+    "skill": "observe",
+    "question": "Em Rute 1:20–21, toque a palavra que falta em \"chamai-me ___\"?",
+    "prompt": "Em Rute 1:20–21, toque a palavra que falta em \"chamai-me ___\"?",
+    "cue": "Em Rute 1:20–21, toque a palavra que falta em \"chamai-me ___\"?",
+    "verseRef": "Rute 1:20–21",
+    "learningObjective": "Sair sabendo que Noemi nomeia a amargura e atribui o vazio a Jeová.",
+    "evidence": [
+      "Rute 1:20–21"
+    ],
+    "feedbackCorrect": "Exato: o nome pedido é Mara.",
+    "feedbackWrong": {
+      "a": "Noemi é o nome que ela recusa.",
+      "c": "Cheia é como saiu."
+    },
+    "passageText": "Respondeu-lhes ela: Não me chameis Noemi, chamai-me Mara, pois o Todo-Poderoso me encheu de grande amargura. Eu saí daqui cheia, e Jeová me fez voltar vazia. Por que me chamais Noemi, visto que Jeová deu testemunho contra mim, e o Todo-Poderoso me afligiu?",
+    "template": "chamai-me ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "Noemi"
+      },
+      {
+        "id": "b",
+        "text": "Mara"
+      },
+      {
+        "id": "c",
+        "text": "cheia"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "rute-sem-rute-03-mara-03",
+    "trail": "rute",
+    "section": "rute-03-mara",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Que nome Noemi pede em Belém?",
+    "prompt": "Que nome Noemi pede em Belém?",
+    "cue": "Que nome Noemi pede em Belém?",
+    "verseRef": "Rute 1:20–21",
+    "learningObjective": "Sair sabendo que Noemi nomeia a amargura e atribui o vazio a Jeová.",
+    "evidence": [
+      "Rute 1:20–21"
+    ],
+    "feedbackCorrect": "Certo: Mara, por causa da amargura.",
+    "feedbackWrong": {
+      "b": "Ela recusa Noemi neste momento.",
+      "c": "Rute é quem a acompanha, não o nome pedido.",
+      "d": "A fala é sobre Deus, não sobre o nome da cidade."
+    },
+    "passageText": "Respondeu-lhes ela: Não me chameis Noemi, chamai-me Mara, pois o Todo-Poderoso me encheu de grande amargura. Eu saí daqui cheia, e Jeová me fez voltar vazia. Por que me chamais Noemi, visto que Jeová deu testemunho contra mim, e o Todo-Poderoso me afligiu?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mara, porque o Todo-Poderoso a amargurou."
+      },
+      {
+        "id": "b",
+        "text": "Noemi, para lembrar que ainda está cheia."
+      },
+      {
+        "id": "c",
+        "text": "Rute, para apagar a própria história."
+      },
+      {
+        "id": "d",
+        "text": "Belém, como se a cidade fosse a culpa."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-sem-rute-03-mara-04",
+    "trail": "rute",
+    "section": "rute-03-mara",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Qual é a ordem dos fatos em Rute 1:20–21?",
+    "prompt": "Qual é a ordem dos fatos em Rute 1:20–21?",
+    "cue": "Qual é a ordem dos fatos em Rute 1:20–21?",
+    "verseRef": "Rute 1:20–21",
+    "learningObjective": "Sair sabendo que Noemi nomeia a amargura e atribui o vazio a Jeová.",
+    "evidence": [
+      "Rute 1:20–21"
+    ],
+    "feedbackCorrect": "Certo: o nome, a amargura e então o vazio da volta.",
+    "feedbackWrong": {
+      "b": "A amargura explica o nome Mara.",
+      "c": "A volta vazia fecha o lamento."
+    },
+    "passageText": "Respondeu-lhes ela: Não me chameis Noemi, chamai-me Mara, pois o Todo-Poderoso me encheu de grande amargura. Eu saí daqui cheia, e Jeová me fez voltar vazia. Por que me chamais Noemi, visto que Jeová deu testemunho contra mim, e o Todo-Poderoso me afligiu?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Noemi pede que a chamem Mara."
+      },
+      {
+        "id": "b",
+        "text": "O Todo-Poderoso a encheu de amargura."
+      },
+      {
+        "id": "c",
+        "text": "Ela saiu cheia e Jeová a fez voltar vazia."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-sem-rute-03-mara-05",
+    "trail": "rute",
+    "section": "rute-03-mara",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Complete a frase: \"Não me chameis ___\"",
+    "prompt": "Complete a frase: \"Não me chameis ___\"",
+    "cue": "Complete a frase: \"Não me chameis ___\"",
+    "verseRef": "Rute 1:20–21",
+    "learningObjective": "Sair sabendo que Noemi nomeia a amargura e atribui o vazio a Jeová.",
+    "evidence": [
+      "Rute 1:20–21"
+    ],
+    "feedbackCorrect": "Certo: ela recusa o nome Noemi.",
+    "feedbackWrong": {
+      "b": "Mara é o nome que pede.",
+      "c": "Vazia descreve a volta."
+    },
+    "passageText": "Respondeu-lhes ela: Não me chameis Noemi, chamai-me Mara, pois o Todo-Poderoso me encheu de grande amargura. Eu saí daqui cheia, e Jeová me fez voltar vazia. Por que me chamais Noemi, visto que Jeová deu testemunho contra mim, e o Todo-Poderoso me afligiu?",
+    "template": "Não me chameis ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "Noemi"
+      },
+      {
+        "id": "b",
+        "text": "Mara"
+      },
+      {
+        "id": "c",
+        "text": "vazia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-sem-rute-03-mara-06",
+    "trail": "rute",
+    "section": "rute-03-mara",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Rute 1:20–21 comunica que se liga a este contexto?",
+    "prompt": "O que Rute 1:20–21 comunica que se liga a este contexto?",
+    "cue": "O que Rute 1:20–21 comunica que se liga a este contexto?",
+    "verseRef": "Rute 1:20–21",
+    "learningObjective": "Sair sabendo que Noemi nomeia a amargura e atribui o vazio a Jeová.",
+    "evidence": [
+      "Rute 1:20–21"
+    ],
+    "feedbackCorrect": "Certo: Mara nomeia o que ela sente.",
+    "feedbackWrong": {
+      "b": "Ela voltou vazia.",
+      "c": "A fala é sobre Deus, não sobre Belém."
+    },
+    "passageText": "Respondeu-lhes ela: Não me chameis Noemi, chamai-me Mara, pois o Todo-Poderoso me encheu de grande amargura. Eu saí daqui cheia, e Jeová me fez voltar vazia. Por que me chamais Noemi, visto que Jeová deu testemunho contra mim, e o Todo-Poderoso me afligiu?",
+    "passageA": {
+      "ref": "Rute 1:20–21",
+      "text": "Respondeu-lhes ela: Não me chameis Noemi, chamai-me Mara, pois o Todo-Poderoso me encheu de grande amargura. Eu saí daqui cheia, e Jeová me fez voltar vazia. Por que me chamais Noemi, visto que Jeová deu testemunho contra mim, e o Todo-Poderoso me afligiu?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A perda pode fazer Deus parecer adversário"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Nome da amargura"
+      },
+      {
+        "id": "b",
+        "text": "Volta cheia"
+      },
+      {
+        "id": "c",
+        "text": "Cidade culpada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-cam-rute-03-mara-01",
+    "trail": "rute",
+    "section": "rute-03-mara",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Noemi diz que voltou tão cheia quanto saiu.",
+    "prompt": "Noemi diz que voltou tão cheia quanto saiu.",
+    "cue": "Noemi diz que voltou tão cheia quanto saiu.",
+    "verseRef": "Rute 1:20–21",
+    "learningObjective": "Sair sabendo que Noemi nomeia a amargura e atribui o vazio a Jeová.",
+    "evidence": [
+      "Rute 1:20–21"
+    ],
+    "feedbackCorrect": "Certo: saiu cheia e voltou vazia.",
+    "feedbackWrong": {
+      "true": "O contraste está na frase."
+    },
+    "passageText": "Respondeu-lhes ela: Não me chameis Noemi, chamai-me Mara, pois o Todo-Poderoso me encheu de grande amargura. Eu saí daqui cheia, e Jeová me fez voltar vazia. Por que me chamais Noemi, visto que Jeová deu testemunho contra mim, e o Todo-Poderoso me afligiu?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "id": "rute-cam-rute-03-mara-02",
+    "trail": "rute",
+    "section": "rute-03-mara",
+    "difficulty": "caminhada",
+    "type": "tap",
+    "skill": "understand",
+    "question": "Em Rute 1:20–21, toque a palavra que falta em \"voltar ___\"?",
+    "prompt": "Em Rute 1:20–21, toque a palavra que falta em \"voltar ___\"?",
+    "cue": "Em Rute 1:20–21, toque a palavra que falta em \"voltar ___\"?",
+    "verseRef": "Rute 1:20–21",
+    "learningObjective": "Sair sabendo que Noemi nomeia a amargura e atribui o vazio a Jeová.",
+    "evidence": [
+      "Rute 1:20–21"
+    ],
+    "feedbackCorrect": "Exato: Jeová a fez voltar vazia.",
+    "feedbackWrong": {
+      "a": "Mara é o nome.",
+      "c": "Amargura é o que a encheu por dentro."
+    },
+    "passageText": "Respondeu-lhes ela: Não me chameis Noemi, chamai-me Mara, pois o Todo-Poderoso me encheu de grande amargura. Eu saí daqui cheia, e Jeová me fez voltar vazia. Por que me chamais Noemi, visto que Jeová deu testemunho contra mim, e o Todo-Poderoso me afligiu?",
+    "template": "voltar ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mara"
+      },
+      {
+        "id": "b",
+        "text": "vazia"
+      },
+      {
+        "id": "c",
+        "text": "amargura"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "rute-cam-rute-03-mara-03",
+    "trail": "rute",
+    "section": "rute-03-mara",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "O que “saí cheia e voltei vazia” revela?",
+    "prompt": "O que “saí cheia e voltei vazia” revela?",
+    "cue": "O que “saí cheia e voltei vazia” revela?",
+    "verseRef": "Rute 1:20–21",
+    "learningObjective": "Sair sabendo que Noemi nomeia a amargura e atribui o vazio a Jeová.",
+    "evidence": [
+      "Rute 1:20–21"
+    ],
+    "feedbackCorrect": "Certo: a perda virou leitura sobre Deus.",
+    "feedbackWrong": {
+      "b": "O contraste é o centro da frase.",
+      "c": "Ela se diz vazia.",
+      "d": "Mara é justamente o nome da amargura."
+    },
+    "passageText": "Respondeu-lhes ela: Não me chameis Noemi, chamai-me Mara, pois o Todo-Poderoso me encheu de grande amargura. Eu saí daqui cheia, e Jeová me fez voltar vazia. Por que me chamais Noemi, visto que Jeová deu testemunho contra mim, e o Todo-Poderoso me afligiu?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela lê o vazio como ato de Jeová."
+      },
+      {
+        "id": "b",
+        "text": "A viagem não mudou nada do que ela levava."
+      },
+      {
+        "id": "c",
+        "text": "O Todo-Poderoso a encheu de bens na volta."
+      },
+      {
+        "id": "d",
+        "text": "Mara significa que a perda ficou sem nome."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-cam-rute-03-mara-04",
+    "trail": "rute",
+    "section": "rute-03-mara",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Rute 1:20–21?",
+    "prompt": "Como se encadeiam os eventos de Rute 1:20–21?",
+    "cue": "Como se encadeiam os eventos de Rute 1:20–21?",
+    "verseRef": "Rute 1:20–21",
+    "learningObjective": "Sair sabendo que Noemi nomeia a amargura e atribui o vazio a Jeová.",
+    "evidence": [
+      "Rute 1:20–21"
+    ],
+    "feedbackCorrect": "Certo: o nome, a amargura e então o vazio da volta.",
+    "feedbackWrong": {
+      "b": "A amargura explica o nome Mara.",
+      "c": "A volta vazia fecha o lamento."
+    },
+    "passageText": "Respondeu-lhes ela: Não me chameis Noemi, chamai-me Mara, pois o Todo-Poderoso me encheu de grande amargura. Eu saí daqui cheia, e Jeová me fez voltar vazia. Por que me chamais Noemi, visto que Jeová deu testemunho contra mim, e o Todo-Poderoso me afligiu?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Noemi pede que a chamem Mara."
+      },
+      {
+        "id": "b",
+        "text": "O Todo-Poderoso a encheu de amargura."
+      },
+      {
+        "id": "c",
+        "text": "Ela saiu cheia e Jeová a fez voltar vazia."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-cam-rute-03-mara-05",
+    "trail": "rute",
+    "section": "rute-03-mara",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Complete a frase: \"saí daqui ___\"",
+    "prompt": "Complete a frase: \"saí daqui ___\"",
+    "cue": "Complete a frase: \"saí daqui ___\"",
+    "verseRef": "Rute 1:20–21",
+    "learningObjective": "Sair sabendo que Noemi nomeia a amargura e atribui o vazio a Jeová.",
+    "evidence": [
+      "Rute 1:20–21"
+    ],
+    "feedbackCorrect": "Certo: ela saiu cheia.",
+    "feedbackWrong": {
+      "b": "Mara é o nome da volta.",
+      "c": "Amargura é o que a encheu por dentro."
+    },
+    "passageText": "Respondeu-lhes ela: Não me chameis Noemi, chamai-me Mara, pois o Todo-Poderoso me encheu de grande amargura. Eu saí daqui cheia, e Jeová me fez voltar vazia. Por que me chamais Noemi, visto que Jeová deu testemunho contra mim, e o Todo-Poderoso me afligiu?",
+    "template": "saí daqui ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "cheia"
+      },
+      {
+        "id": "b",
+        "text": "Mara"
+      },
+      {
+        "id": "c",
+        "text": "amargura"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-cam-rute-03-mara-06",
+    "trail": "rute",
+    "section": "rute-03-mara",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "Que relação Rute 1:20–21 estabelece com este contexto?",
+    "prompt": "Que relação Rute 1:20–21 estabelece com este contexto?",
+    "cue": "Que relação Rute 1:20–21 estabelece com este contexto?",
+    "verseRef": "Rute 1:20–21",
+    "learningObjective": "Sair sabendo que Noemi nomeia a amargura e atribui o vazio a Jeová.",
+    "evidence": [
+      "Rute 1:20–21"
+    ],
+    "feedbackCorrect": "Certo: ela atribui o vazio a Jeová.",
+    "feedbackWrong": {
+      "a": "Jeová é nomeado.",
+      "c": "Ela não quer o nome doce agora."
+    },
+    "passageText": "Respondeu-lhes ela: Não me chameis Noemi, chamai-me Mara, pois o Todo-Poderoso me encheu de grande amargura. Eu saí daqui cheia, e Jeová me fez voltar vazia. Por que me chamais Noemi, visto que Jeová deu testemunho contra mim, e o Todo-Poderoso me afligiu?",
+    "passageA": {
+      "ref": "Rute 1:20–21",
+      "text": "Respondeu-lhes ela: Não me chameis Noemi, chamai-me Mara, pois o Todo-Poderoso me encheu de grande amargura. Eu saí daqui cheia, e Jeová me fez voltar vazia. Por que me chamais Noemi, visto que Jeová deu testemunho contra mim, e o Todo-Poderoso me afligiu?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A perda pode fazer Deus parecer adversário"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Perda sem Deus"
+      },
+      {
+        "id": "b",
+        "text": "Deus no vazio"
+      },
+      {
+        "id": "c",
+        "text": "Nome ainda doce"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "rute-pro-rute-03-mara-01",
+    "trail": "rute",
+    "section": "rute-03-mara",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "A amargura de Noemi fala de Deus, não só da fome.",
+    "prompt": "A amargura de Noemi fala de Deus, não só da fome.",
+    "cue": "A amargura de Noemi fala de Deus, não só da fome.",
+    "verseRef": "Rute 1:20–21",
+    "learningObjective": "Sair sabendo que Noemi nomeia a amargura e atribui o vazio a Jeová.",
+    "evidence": [
+      "Rute 1:20–21"
+    ],
+    "feedbackCorrect": "Certo: ela diz que o Todo-Poderoso a afligiu.",
+    "feedbackWrong": {
+      "false": "Jeová é nomeado como quem a fez voltar vazia."
+    },
+    "passageText": "Respondeu-lhes ela: Não me chameis Noemi, chamai-me Mara, pois o Todo-Poderoso me encheu de grande amargura. Eu saí daqui cheia, e Jeová me fez voltar vazia. Por que me chamais Noemi, visto que Jeová deu testemunho contra mim, e o Todo-Poderoso me afligiu?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "rute-pro-rute-03-mara-02",
+    "trail": "rute",
+    "section": "rute-03-mara",
+    "difficulty": "profundezas",
+    "type": "tap",
+    "skill": "interpret",
+    "question": "Em Rute 1:20–21, toque a palavra que falta em \"grande ___\"?",
+    "prompt": "Em Rute 1:20–21, toque a palavra que falta em \"grande ___\"?",
+    "cue": "Em Rute 1:20–21, toque a palavra que falta em \"grande ___\"?",
+    "verseRef": "Rute 1:20–21",
+    "learningObjective": "Sair sabendo que Noemi nomeia a amargura e atribui o vazio a Jeová.",
+    "evidence": [
+      "Rute 1:20–21"
+    ],
+    "feedbackCorrect": "Exato: o Todo-Poderoso a encheu de amargura.",
+    "feedbackWrong": {
+      "a": "Noemi é o nome doce.",
+      "c": "Vazia é como ela voltou."
+    },
+    "passageText": "Respondeu-lhes ela: Não me chameis Noemi, chamai-me Mara, pois o Todo-Poderoso me encheu de grande amargura. Eu saí daqui cheia, e Jeová me fez voltar vazia. Por que me chamais Noemi, visto que Jeová deu testemunho contra mim, e o Todo-Poderoso me afligiu?",
+    "template": "grande ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "Noemi"
+      },
+      {
+        "id": "b",
+        "text": "amargura"
+      },
+      {
+        "id": "c",
+        "text": "vazia"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "rute-pro-rute-03-mara-03",
+    "trail": "rute",
+    "section": "rute-03-mara",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "O que essa fala permite ao leitor?",
+    "prompt": "O que essa fala permite ao leitor?",
+    "cue": "O que essa fala permite ao leitor?",
+    "verseRef": "Rute 1:20–21",
+    "learningObjective": "Sair sabendo que Noemi nomeia a amargura e atribui o vazio a Jeová.",
+    "evidence": [
+      "Rute 1:20–21"
+    ],
+    "feedbackCorrect": "Certo: levar a Deus a sensação de que ele afligiu.",
+    "feedbackWrong": {
+      "b": "Ela fala, não esconde.",
+      "c": "Jeová é o sujeito que ela nomeia.",
+      "d": "A cena não pula para o consolo."
+    },
+    "passageText": "Respondeu-lhes ela: Não me chameis Noemi, chamai-me Mara, pois o Todo-Poderoso me encheu de grande amargura. Eu saí daqui cheia, e Jeová me fez voltar vazia. Por que me chamais Noemi, visto que Jeová deu testemunho contra mim, e o Todo-Poderoso me afligiu?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nomear a amargura diante de Deus."
+      },
+      {
+        "id": "b",
+        "text": "Esconder a perda para proteger o nome doce."
+      },
+      {
+        "id": "c",
+        "text": "Concluir que Jeová não entra na história dela."
+      },
+      {
+        "id": "d",
+        "text": "Trocar Mara por uma alegria imediata."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-pro-rute-03-mara-04",
+    "trail": "rute",
+    "section": "rute-03-mara",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Rute 1:20–21?",
+    "prompt": "Qual sequência revela o sentido de Rute 1:20–21?",
+    "cue": "Qual sequência revela o sentido de Rute 1:20–21?",
+    "verseRef": "Rute 1:20–21",
+    "learningObjective": "Sair sabendo que Noemi nomeia a amargura e atribui o vazio a Jeová.",
+    "evidence": [
+      "Rute 1:20–21"
+    ],
+    "feedbackCorrect": "Certo: o nome, a amargura e então o vazio da volta.",
+    "feedbackWrong": {
+      "b": "A amargura explica o nome Mara.",
+      "c": "A volta vazia fecha o lamento."
+    },
+    "passageText": "Respondeu-lhes ela: Não me chameis Noemi, chamai-me Mara, pois o Todo-Poderoso me encheu de grande amargura. Eu saí daqui cheia, e Jeová me fez voltar vazia. Por que me chamais Noemi, visto que Jeová deu testemunho contra mim, e o Todo-Poderoso me afligiu?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Noemi pede que a chamem Mara."
+      },
+      {
+        "id": "b",
+        "text": "O Todo-Poderoso a encheu de amargura."
+      },
+      {
+        "id": "c",
+        "text": "Ela saiu cheia e Jeová a fez voltar vazia."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-pro-rute-03-mara-05",
+    "trail": "rute",
+    "section": "rute-03-mara",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Complete a frase: \"deu ___ contra mim\"",
+    "prompt": "Complete a frase: \"deu ___ contra mim\"",
+    "cue": "Complete a frase: \"deu ___ contra mim\"",
+    "verseRef": "Rute 1:20–21",
+    "learningObjective": "Sair sabendo que Noemi nomeia a amargura e atribui o vazio a Jeová.",
+    "evidence": [
+      "Rute 1:20–21"
+    ],
+    "feedbackCorrect": "Certo: Jeová deu testemunho contra ela.",
+    "feedbackWrong": {
+      "b": "Mara é o nome pedido.",
+      "c": "Cheia é como ela saiu."
+    },
+    "passageText": "Respondeu-lhes ela: Não me chameis Noemi, chamai-me Mara, pois o Todo-Poderoso me encheu de grande amargura. Eu saí daqui cheia, e Jeová me fez voltar vazia. Por que me chamais Noemi, visto que Jeová deu testemunho contra mim, e o Todo-Poderoso me afligiu?",
+    "template": "deu ___ contra mim",
+    "options": [
+      {
+        "id": "a",
+        "text": "testemunho"
+      },
+      {
+        "id": "b",
+        "text": "Mara"
+      },
+      {
+        "id": "c",
+        "text": "cheia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-pro-rute-03-mara-06",
+    "trail": "rute",
+    "section": "rute-03-mara",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "Que sentido de Rute 1:20–21 se liga a este contexto?",
+    "prompt": "Que sentido de Rute 1:20–21 se liga a este contexto?",
+    "cue": "Que sentido de Rute 1:20–21 se liga a este contexto?",
+    "verseRef": "Rute 1:20–21",
+    "learningObjective": "Sair sabendo que Noemi nomeia a amargura e atribui o vazio a Jeová.",
+    "evidence": [
+      "Rute 1:20–21"
+    ],
+    "feedbackCorrect": "Certo: a fé aqui tem voz de amargura.",
+    "feedbackWrong": {
+      "a": "Ela não finge doçura.",
+      "c": "Há nome, Deus e vazio."
+    },
+    "passageText": "Respondeu-lhes ela: Não me chameis Noemi, chamai-me Mara, pois o Todo-Poderoso me encheu de grande amargura. Eu saí daqui cheia, e Jeová me fez voltar vazia. Por que me chamais Noemi, visto que Jeová deu testemunho contra mim, e o Todo-Poderoso me afligiu?",
+    "passageA": {
+      "ref": "Rute 1:20–21",
+      "text": "Respondeu-lhes ela: Não me chameis Noemi, chamai-me Mara, pois o Todo-Poderoso me encheu de grande amargura. Eu saí daqui cheia, e Jeová me fez voltar vazia. Por que me chamais Noemi, visto que Jeová deu testemunho contra mim, e o Todo-Poderoso me afligiu?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A perda pode fazer Deus parecer adversário"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Alegria obrigatória"
+      },
+      {
+        "id": "b",
+        "text": "Lamento que fala"
+      },
+      {
+        "id": "c",
+        "text": "Fome sem rosto"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "rute-sem-rute-04-asas-01",
+    "trail": "rute",
+    "section": "rute-04-asas",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Boaz pede que Jeová recompense o que Rute fez.",
+    "prompt": "Boaz pede que Jeová recompense o que Rute fez.",
+    "cue": "Boaz pede que Jeová recompense o que Rute fez.",
+    "verseRef": "Rute 2:12",
+    "learningObjective": "Sair sabendo que Boaz liga a lealdade de Rute ao refúgio no Deus de Israel.",
+    "evidence": [
+      "Rute 2:12"
+    ],
+    "feedbackCorrect": "Certo: o galardão é pedido a Jeová.",
+    "feedbackWrong": {
+      "false": "A bênção abre com esse pedido."
+    },
+    "passageText": "Jeová te dê o galardão do que fizeste, e te seja concedida plena recompensa da parte de Jeová, Deus de Israel, debaixo de cujas asas vieste buscar refúgio.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "rute-sem-rute-04-asas-02",
+    "trail": "rute",
+    "section": "rute-04-asas",
+    "difficulty": "semente",
+    "type": "tap",
+    "skill": "observe",
+    "question": "Em Rute 2:12, toque a palavra que falta em \"debaixo de cujas ___\"?",
+    "prompt": "Em Rute 2:12, toque a palavra que falta em \"debaixo de cujas ___\"?",
+    "cue": "Em Rute 2:12, toque a palavra que falta em \"debaixo de cujas ___\"?",
+    "verseRef": "Rute 2:12",
+    "learningObjective": "Sair sabendo que Boaz liga a lealdade de Rute ao refúgio no Deus de Israel.",
+    "evidence": [
+      "Rute 2:12"
+    ],
+    "feedbackCorrect": "Exato: as asas são o abrigo.",
+    "feedbackWrong": {
+      "a": "Galardão é a recompensa pedida.",
+      "c": "Refúgio é o que ela veio buscar."
+    },
+    "passageText": "Jeová te dê o galardão do que fizeste, e te seja concedida plena recompensa da parte de Jeová, Deus de Israel, debaixo de cujas asas vieste buscar refúgio.",
+    "template": "debaixo de cujas ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "galardão"
+      },
+      {
+        "id": "b",
+        "text": "asas"
+      },
+      {
+        "id": "c",
+        "text": "refúgio"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "rute-sem-rute-04-asas-03",
+    "trail": "rute",
+    "section": "rute-04-asas",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "A quem Boaz pede o galardão de Rute?",
+    "prompt": "A quem Boaz pede o galardão de Rute?",
+    "cue": "A quem Boaz pede o galardão de Rute?",
+    "verseRef": "Rute 2:12",
+    "learningObjective": "Sair sabendo que Boaz liga a lealdade de Rute ao refúgio no Deus de Israel.",
+    "evidence": [
+      "Rute 2:12"
+    ],
+    "feedbackCorrect": "Certo: a Jeová, Deus de Israel.",
+    "feedbackWrong": {
+      "b": "O campo é o cenário, não o pagador.",
+      "c": "O Deus nomeado é o de Israel.",
+      "d": "Noemi não é quem retribui nesta frase."
+    },
+    "passageText": "Jeová te dê o galardão do que fizeste, e te seja concedida plena recompensa da parte de Jeová, Deus de Israel, debaixo de cujas asas vieste buscar refúgio.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A Jeová, debaixo de cujas asas ela buscou refúgio."
+      },
+      {
+        "id": "b",
+        "text": "Ao campo, como se a terra pagasse sozinha."
+      },
+      {
+        "id": "c",
+        "text": "A outro deus, fora de Israel."
+      },
+      {
+        "id": "d",
+        "text": "A Noemi, para que devolva o que perdeu."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-sem-rute-04-asas-04",
+    "trail": "rute",
+    "section": "rute-04-asas",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Qual é a ordem dos fatos em Rute 2:12?",
+    "prompt": "Qual é a ordem dos fatos em Rute 2:12?",
+    "cue": "Qual é a ordem dos fatos em Rute 2:12?",
+    "verseRef": "Rute 2:12",
+    "learningObjective": "Sair sabendo que Boaz liga a lealdade de Rute ao refúgio no Deus de Israel.",
+    "evidence": [
+      "Rute 2:12"
+    ],
+    "feedbackCorrect": "Certo: pedido, recompensa e então o refúgio.",
+    "feedbackWrong": {
+      "b": "A recompensa especifica o galardão.",
+      "c": "As asas fecham a bênção."
+    },
+    "passageText": "Jeová te dê o galardão do que fizeste, e te seja concedida plena recompensa da parte de Jeová, Deus de Israel, debaixo de cujas asas vieste buscar refúgio.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Boaz pede que Jeová dê o galardão a Rute."
+      },
+      {
+        "id": "b",
+        "text": "Pede plena recompensa da parte do Deus de Israel."
+      },
+      {
+        "id": "c",
+        "text": "Reconhece que ela buscou refúgio debaixo das asas."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-sem-rute-04-asas-05",
+    "trail": "rute",
+    "section": "rute-04-asas",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Complete a frase: \"te dê o ___\"",
+    "prompt": "Complete a frase: \"te dê o ___\"",
+    "cue": "Complete a frase: \"te dê o ___\"",
+    "verseRef": "Rute 2:12",
+    "learningObjective": "Sair sabendo que Boaz liga a lealdade de Rute ao refúgio no Deus de Israel.",
+    "evidence": [
+      "Rute 2:12"
+    ],
+    "feedbackCorrect": "Certo: o pedido é o galardão.",
+    "feedbackWrong": {
+      "b": "Asas são o abrigo.",
+      "c": "Refúgio é o que ela buscou."
+    },
+    "passageText": "Jeová te dê o galardão do que fizeste, e te seja concedida plena recompensa da parte de Jeová, Deus de Israel, debaixo de cujas asas vieste buscar refúgio.",
+    "template": "te dê o ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "galardão"
+      },
+      {
+        "id": "b",
+        "text": "asas"
+      },
+      {
+        "id": "c",
+        "text": "refúgio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-sem-rute-04-asas-06",
+    "trail": "rute",
+    "section": "rute-04-asas",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Rute 2:12 comunica que se liga a este contexto?",
+    "prompt": "O que Rute 2:12 comunica que se liga a este contexto?",
+    "cue": "O que Rute 2:12 comunica que se liga a este contexto?",
+    "verseRef": "Rute 2:12",
+    "learningObjective": "Sair sabendo que Boaz liga a lealdade de Rute ao refúgio no Deus de Israel.",
+    "evidence": [
+      "Rute 2:12"
+    ],
+    "feedbackCorrect": "Certo: as asas são de Jeová.",
+    "feedbackWrong": {
+      "b": "Boaz não deixa o campo pagar sozinho.",
+      "c": "O caminho dela é para Israel."
+    },
+    "passageText": "Jeová te dê o galardão do que fizeste, e te seja concedida plena recompensa da parte de Jeová, Deus de Israel, debaixo de cujas asas vieste buscar refúgio.",
+    "passageA": {
+      "ref": "Rute 2:12",
+      "text": "Jeová te dê o galardão do que fizeste, e te seja concedida plena recompensa da parte de Jeová, Deus de Israel, debaixo de cujas asas vieste buscar refúgio."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Refúgio debaixo das asas de Deus"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Abrigo em Deus"
+      },
+      {
+        "id": "b",
+        "text": "Pagamento do campo"
+      },
+      {
+        "id": "c",
+        "text": "Volta a Moabe"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-cam-rute-04-asas-01",
+    "trail": "rute",
+    "section": "rute-04-asas",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "O refúgio de Rute, no texto, é debaixo das asas de outro deus.",
+    "prompt": "O refúgio de Rute, no texto, é debaixo das asas de outro deus.",
+    "cue": "O refúgio de Rute, no texto, é debaixo das asas de outro deus.",
+    "verseRef": "Rute 2:12",
+    "learningObjective": "Sair sabendo que Boaz liga a lealdade de Rute ao refúgio no Deus de Israel.",
+    "evidence": [
+      "Rute 2:12"
+    ],
+    "feedbackCorrect": "Certo: as asas são do Deus de Israel.",
+    "feedbackWrong": {
+      "true": "O versículo nomeia Jeová, Deus de Israel."
+    },
+    "passageText": "Jeová te dê o galardão do que fizeste, e te seja concedida plena recompensa da parte de Jeová, Deus de Israel, debaixo de cujas asas vieste buscar refúgio.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "id": "rute-cam-rute-04-asas-02",
+    "trail": "rute",
+    "section": "rute-04-asas",
+    "difficulty": "caminhada",
+    "type": "tap",
+    "skill": "understand",
+    "question": "Em Rute 2:12, toque a palavra que falta em \"plena ___\"?",
+    "prompt": "Em Rute 2:12, toque a palavra que falta em \"plena ___\"?",
+    "cue": "Em Rute 2:12, toque a palavra que falta em \"plena ___\"?",
+    "verseRef": "Rute 2:12",
+    "learningObjective": "Sair sabendo que Boaz liga a lealdade de Rute ao refúgio no Deus de Israel.",
+    "evidence": [
+      "Rute 2:12"
+    ],
+    "feedbackCorrect": "Exato: ele pede plena recompensa.",
+    "feedbackWrong": {
+      "a": "Asas são o lugar do refúgio.",
+      "c": "Israel nomeia o Deus."
+    },
+    "passageText": "Jeová te dê o galardão do que fizeste, e te seja concedida plena recompensa da parte de Jeová, Deus de Israel, debaixo de cujas asas vieste buscar refúgio.",
+    "template": "plena ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "asas"
+      },
+      {
+        "id": "b",
+        "text": "recompensa"
+      },
+      {
+        "id": "c",
+        "text": "Israel"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "rute-cam-rute-04-asas-03",
+    "trail": "rute",
+    "section": "rute-04-asas",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "O que as asas significam na boca de Boaz?",
+    "prompt": "O que as asas significam na boca de Boaz?",
+    "cue": "O que as asas significam na boca de Boaz?",
+    "verseRef": "Rute 2:12",
+    "learningObjective": "Sair sabendo que Boaz liga a lealdade de Rute ao refúgio no Deus de Israel.",
+    "evidence": [
+      "Rute 2:12"
+    ],
+    "feedbackCorrect": "Certo: o abrigo do Deus de Israel.",
+    "feedbackWrong": {
+      "b": "Ele nomeia Jeová.",
+      "c": "A recompensa ainda é pedida.",
+      "d": "O caminho de Rute é para Israel."
+    },
+    "passageText": "Jeová te dê o galardão do que fizeste, e te seja concedida plena recompensa da parte de Jeová, Deus de Israel, debaixo de cujas asas vieste buscar refúgio.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Refúgio em Jeová, não só sombra humana."
+      },
+      {
+        "id": "b",
+        "text": "Um detalhe do campo, sem Deus."
+      },
+      {
+        "id": "c",
+        "text": "A recompensa que Rute já recebeu por inteiro."
+      },
+      {
+        "id": "d",
+        "text": "A volta de Noemi para Moabe."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-cam-rute-04-asas-04",
+    "trail": "rute",
+    "section": "rute-04-asas",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Rute 2:12?",
+    "prompt": "Como se encadeiam os eventos de Rute 2:12?",
+    "cue": "Como se encadeiam os eventos de Rute 2:12?",
+    "verseRef": "Rute 2:12",
+    "learningObjective": "Sair sabendo que Boaz liga a lealdade de Rute ao refúgio no Deus de Israel.",
+    "evidence": [
+      "Rute 2:12"
+    ],
+    "feedbackCorrect": "Certo: pedido, recompensa e então o refúgio.",
+    "feedbackWrong": {
+      "b": "A recompensa especifica o galardão.",
+      "c": "As asas fecham a bênção."
+    },
+    "passageText": "Jeová te dê o galardão do que fizeste, e te seja concedida plena recompensa da parte de Jeová, Deus de Israel, debaixo de cujas asas vieste buscar refúgio.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Boaz pede que Jeová dê o galardão a Rute."
+      },
+      {
+        "id": "b",
+        "text": "Pede plena recompensa da parte do Deus de Israel."
+      },
+      {
+        "id": "c",
+        "text": "Reconhece que ela buscou refúgio debaixo das asas."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-cam-rute-04-asas-05",
+    "trail": "rute",
+    "section": "rute-04-asas",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Complete a frase: \"Deus de ___\"",
+    "prompt": "Complete a frase: \"Deus de ___\"",
+    "cue": "Complete a frase: \"Deus de ___\"",
+    "verseRef": "Rute 2:12",
+    "learningObjective": "Sair sabendo que Boaz liga a lealdade de Rute ao refúgio no Deus de Israel.",
+    "evidence": [
+      "Rute 2:12"
+    ],
+    "feedbackCorrect": "Certo: é o Deus de Israel.",
+    "feedbackWrong": {
+      "b": "Asas são a imagem.",
+      "c": "Galardão é a recompensa."
+    },
+    "passageText": "Jeová te dê o galardão do que fizeste, e te seja concedida plena recompensa da parte de Jeová, Deus de Israel, debaixo de cujas asas vieste buscar refúgio.",
+    "template": "Deus de ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "Israel"
+      },
+      {
+        "id": "b",
+        "text": "asas"
+      },
+      {
+        "id": "c",
+        "text": "galardão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-cam-rute-04-asas-06",
+    "trail": "rute",
+    "section": "rute-04-asas",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "Que relação Rute 2:12 estabelece com este contexto?",
+    "prompt": "Que relação Rute 2:12 estabelece com este contexto?",
+    "cue": "Que relação Rute 2:12 estabelece com este contexto?",
+    "verseRef": "Rute 2:12",
+    "learningObjective": "Sair sabendo que Boaz liga a lealdade de Rute ao refúgio no Deus de Israel.",
+    "evidence": [
+      "Rute 2:12"
+    ],
+    "feedbackCorrect": "Certo: o que ela fez é busca de abrigo.",
+    "feedbackWrong": {
+      "a": "Jeová é nomeado.",
+      "c": "O Deus é o de Israel."
+    },
+    "passageText": "Jeová te dê o galardão do que fizeste, e te seja concedida plena recompensa da parte de Jeová, Deus de Israel, debaixo de cujas asas vieste buscar refúgio.",
+    "passageA": {
+      "ref": "Rute 2:12",
+      "text": "Jeová te dê o galardão do que fizeste, e te seja concedida plena recompensa da parte de Jeová, Deus de Israel, debaixo de cujas asas vieste buscar refúgio."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Refúgio debaixo das asas de Deus"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Favor sem nome"
+      },
+      {
+        "id": "b",
+        "text": "Lealdade como refúgio"
+      },
+      {
+        "id": "c",
+        "text": "Asas de outro deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "rute-pro-rute-04-asas-01",
+    "trail": "rute",
+    "section": "rute-04-asas",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "A lealdade de Rute é lida como busca de refúgio em Deus.",
+    "prompt": "A lealdade de Rute é lida como busca de refúgio em Deus.",
+    "cue": "A lealdade de Rute é lida como busca de refúgio em Deus.",
+    "verseRef": "Rute 2:12",
+    "learningObjective": "Sair sabendo que Boaz liga a lealdade de Rute ao refúgio no Deus de Israel.",
+    "evidence": [
+      "Rute 2:12"
+    ],
+    "feedbackCorrect": "Certo: Boaz interpreta o gesto dela assim.",
+    "feedbackWrong": {
+      "false": "Vir buscar refúgio é a frase final."
+    },
+    "passageText": "Jeová te dê o galardão do que fizeste, e te seja concedida plena recompensa da parte de Jeová, Deus de Israel, debaixo de cujas asas vieste buscar refúgio.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "rute-pro-rute-04-asas-02",
+    "trail": "rute",
+    "section": "rute-04-asas",
+    "difficulty": "profundezas",
+    "type": "tap",
+    "skill": "interpret",
+    "question": "Em Rute 2:12, toque a palavra que falta em \"vieste buscar ___\"?",
+    "prompt": "Em Rute 2:12, toque a palavra que falta em \"vieste buscar ___\"?",
+    "cue": "Em Rute 2:12, toque a palavra que falta em \"vieste buscar ___\"?",
+    "verseRef": "Rute 2:12",
+    "learningObjective": "Sair sabendo que Boaz liga a lealdade de Rute ao refúgio no Deus de Israel.",
+    "evidence": [
+      "Rute 2:12"
+    ],
+    "feedbackCorrect": "Exato: ela veio buscar refúgio.",
+    "feedbackWrong": {
+      "a": "Galardão é o que Boaz pede a Jeová.",
+      "c": "Asas são onde o refúgio se abriga."
+    },
+    "passageText": "Jeová te dê o galardão do que fizeste, e te seja concedida plena recompensa da parte de Jeová, Deus de Israel, debaixo de cujas asas vieste buscar refúgio.",
+    "template": "vieste buscar ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "galardão"
+      },
+      {
+        "id": "b",
+        "text": "refúgio"
+      },
+      {
+        "id": "c",
+        "text": "asas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "rute-pro-rute-04-asas-03",
+    "trail": "rute",
+    "section": "rute-04-asas",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "O que essa bênção ensina sobre bondade humana?",
+    "prompt": "O que essa bênção ensina sobre bondade humana?",
+    "cue": "O que essa bênção ensina sobre bondade humana?",
+    "verseRef": "Rute 2:12",
+    "learningObjective": "Sair sabendo que Boaz liga a lealdade de Rute ao refúgio no Deus de Israel.",
+    "evidence": [
+      "Rute 2:12"
+    ],
+    "feedbackCorrect": "Certo: o favor de Boaz aponta para o refúgio de Deus.",
+    "feedbackWrong": {
+      "b": "Boaz ora a Jeová.",
+      "c": "As asas são dele.",
+      "d": "Ela deixou Moabe para buscar esse refúgio."
+    },
+    "passageText": "Jeová te dê o galardão do que fizeste, e te seja concedida plena recompensa da parte de Jeová, Deus de Israel, debaixo de cujas asas vieste buscar refúgio.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Acolhida humana nomeia o Deus que abriga."
+      },
+      {
+        "id": "b",
+        "text": "O galardão dispensa Jeová."
+      },
+      {
+        "id": "c",
+        "text": "Refúgio nas asas é medo de Israel."
+      },
+      {
+        "id": "d",
+        "text": "Rute é recompensada por ter ficado em Moabe."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-pro-rute-04-asas-04",
+    "trail": "rute",
+    "section": "rute-04-asas",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Rute 2:12?",
+    "prompt": "Qual sequência revela o sentido de Rute 2:12?",
+    "cue": "Qual sequência revela o sentido de Rute 2:12?",
+    "verseRef": "Rute 2:12",
+    "learningObjective": "Sair sabendo que Boaz liga a lealdade de Rute ao refúgio no Deus de Israel.",
+    "evidence": [
+      "Rute 2:12"
+    ],
+    "feedbackCorrect": "Certo: pedido, recompensa e então o refúgio.",
+    "feedbackWrong": {
+      "b": "A recompensa especifica o galardão.",
+      "c": "As asas fecham a bênção."
+    },
+    "passageText": "Jeová te dê o galardão do que fizeste, e te seja concedida plena recompensa da parte de Jeová, Deus de Israel, debaixo de cujas asas vieste buscar refúgio.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Boaz pede que Jeová dê o galardão a Rute."
+      },
+      {
+        "id": "b",
+        "text": "Pede plena recompensa da parte do Deus de Israel."
+      },
+      {
+        "id": "c",
+        "text": "Reconhece que ela buscou refúgio debaixo das asas."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-pro-rute-04-asas-05",
+    "trail": "rute",
+    "section": "rute-04-asas",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Complete a frase: \"cujas ___ vieste buscar refúgio\"",
+    "prompt": "Complete a frase: \"cujas ___ vieste buscar refúgio\"",
+    "cue": "Complete a frase: \"cujas ___ vieste buscar refúgio\"",
+    "verseRef": "Rute 2:12",
+    "learningObjective": "Sair sabendo que Boaz liga a lealdade de Rute ao refúgio no Deus de Israel.",
+    "evidence": [
+      "Rute 2:12"
+    ],
+    "feedbackCorrect": "Certo: o refúgio é debaixo das asas.",
+    "feedbackWrong": {
+      "b": "Israel nomeia o Deus.",
+      "c": "Galardão é o pedido de Boaz."
+    },
+    "passageText": "Jeová te dê o galardão do que fizeste, e te seja concedida plena recompensa da parte de Jeová, Deus de Israel, debaixo de cujas asas vieste buscar refúgio.",
+    "template": "cujas ___ vieste buscar refúgio",
+    "options": [
+      {
+        "id": "a",
+        "text": "asas"
+      },
+      {
+        "id": "b",
+        "text": "Israel"
+      },
+      {
+        "id": "c",
+        "text": "galardão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-pro-rute-04-asas-06",
+    "trail": "rute",
+    "section": "rute-04-asas",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "Que sentido de Rute 2:12 se liga a este contexto?",
+    "prompt": "Que sentido de Rute 2:12 se liga a este contexto?",
+    "cue": "Que sentido de Rute 2:12 se liga a este contexto?",
+    "verseRef": "Rute 2:12",
+    "learningObjective": "Sair sabendo que Boaz liga a lealdade de Rute ao refúgio no Deus de Israel.",
+    "evidence": [
+      "Rute 2:12"
+    ],
+    "feedbackCorrect": "Certo: o favor humano aponta para Jeová.",
+    "feedbackWrong": {
+      "a": "Boaz ora.",
+      "c": "A recompensa ainda é pedida."
+    },
+    "passageText": "Jeová te dê o galardão do que fizeste, e te seja concedida plena recompensa da parte de Jeová, Deus de Israel, debaixo de cujas asas vieste buscar refúgio.",
+    "passageA": {
+      "ref": "Rute 2:12",
+      "text": "Jeová te dê o galardão do que fizeste, e te seja concedida plena recompensa da parte de Jeová, Deus de Israel, debaixo de cujas asas vieste buscar refúgio."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Refúgio debaixo das asas de Deus"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Bondade fechada em si"
+      },
+      {
+        "id": "b",
+        "text": "Acolhida que aponta a Deus"
+      },
+      {
+        "id": "c",
+        "text": "Recompensa já quitada"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "rute-sem-rute-05-capa-01",
+    "trail": "rute",
+    "section": "rute-05-capa",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Rute pede que Boaz estenda a capa sobre ela, porque ele é parente chegado.",
+    "prompt": "Rute pede que Boaz estenda a capa sobre ela, porque ele é parente chegado.",
+    "cue": "Rute pede que Boaz estenda a capa sobre ela, porque ele é parente chegado.",
+    "verseRef": "Rute 3:9–11",
+    "learningObjective": "Sair sabendo que Rute pede a Boaz cobertura de parente e ele aceita o encargo.",
+    "evidence": [
+      "Rute 3:9–11"
+    ],
+    "feedbackCorrect": "Certo: o pedido une capa e parentesco.",
+    "feedbackWrong": {
+      "false": "A frase dela junta as duas coisas."
+    },
+    "passageText": "perguntou-lhe: Quem és tu? Respondeu-lhe ela: Sou Rute, tua serva. Estende a tua capa sobre a tua serva; porque tu és parente chegado. Ele disse: Bendita sejas de Jeová, minha filha. Mostraste mais bondade agora do que em outro tempo, visto que não escolheste mancebos pobres ou ricos. Agora, minha filha, não temas; eu farei tudo o que disseres, porque todo o povo da minha cidade sabe que és mulher virtuosa.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "rute-sem-rute-05-capa-02",
+    "trail": "rute",
+    "section": "rute-05-capa",
+    "difficulty": "semente",
+    "type": "tap",
+    "skill": "observe",
+    "question": "Em Rute 3:9–11, toque a palavra que falta em \"Estende a tua ___\"?",
+    "prompt": "Em Rute 3:9–11, toque a palavra que falta em \"Estende a tua ___\"?",
+    "cue": "Em Rute 3:9–11, toque a palavra que falta em \"Estende a tua ___\"?",
+    "verseRef": "Rute 3:9–11",
+    "learningObjective": "Sair sabendo que Rute pede a Boaz cobertura de parente e ele aceita o encargo.",
+    "evidence": [
+      "Rute 3:9–11"
+    ],
+    "feedbackCorrect": "Exato: o pedido é a capa.",
+    "feedbackWrong": {
+      "a": "Serva é como ela se nomeia.",
+      "c": "Cidade é onde o povo a conhece."
+    },
+    "passageText": "perguntou-lhe: Quem és tu? Respondeu-lhe ela: Sou Rute, tua serva. Estende a tua capa sobre a tua serva; porque tu és parente chegado. Ele disse: Bendita sejas de Jeová, minha filha. Mostraste mais bondade agora do que em outro tempo, visto que não escolheste mancebos pobres ou ricos. Agora, minha filha, não temas; eu farei tudo o que disseres, porque todo o povo da minha cidade sabe que és mulher virtuosa.",
+    "template": "Estende a tua ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "serva"
+      },
+      {
+        "id": "b",
+        "text": "capa"
+      },
+      {
+        "id": "c",
+        "text": "cidade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "rute-sem-rute-05-capa-03",
+    "trail": "rute",
+    "section": "rute-05-capa",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "O que Rute pede a Boaz na eira?",
+    "prompt": "O que Rute pede a Boaz na eira?",
+    "cue": "O que Rute pede a Boaz na eira?",
+    "verseRef": "Rute 3:9–11",
+    "learningObjective": "Sair sabendo que Rute pede a Boaz cobertura de parente e ele aceita o encargo.",
+    "evidence": [
+      "Rute 3:9–11"
+    ],
+    "feedbackCorrect": "Certo: que estenda a capa, por ser parente.",
+    "feedbackWrong": {
+      "b": "Ela ficou com Noemi.",
+      "c": "Ele elogia por ela não ter escolhido os mancebos.",
+      "d": "Ele promete fazer."
+    },
+    "passageText": "perguntou-lhe: Quem és tu? Respondeu-lhe ela: Sou Rute, tua serva. Estende a tua capa sobre a tua serva; porque tu és parente chegado. Ele disse: Bendita sejas de Jeová, minha filha. Mostraste mais bondade agora do que em outro tempo, visto que não escolheste mancebos pobres ou ricos. Agora, minha filha, não temas; eu farei tudo o que disseres, porque todo o povo da minha cidade sabe que és mulher virtuosa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cobertura de parente chegado."
+      },
+      {
+        "id": "b",
+        "text": "Um caminho de volta para Moabe."
+      },
+      {
+        "id": "c",
+        "text": "Que ele a entregue aos mancebos."
+      },
+      {
+        "id": "d",
+        "text": "Silêncio, sem assumir o resgate."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-sem-rute-05-capa-04",
+    "trail": "rute",
+    "section": "rute-05-capa",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Qual é a ordem dos fatos em Rute 3:9–11?",
+    "prompt": "Qual é a ordem dos fatos em Rute 3:9–11?",
+    "cue": "Qual é a ordem dos fatos em Rute 3:9–11?",
+    "verseRef": "Rute 3:9–11",
+    "learningObjective": "Sair sabendo que Rute pede a Boaz cobertura de parente e ele aceita o encargo.",
+    "evidence": [
+      "Rute 3:9–11"
+    ],
+    "feedbackCorrect": "Certo: pedido, parentesco e então a promessa.",
+    "feedbackWrong": {
+      "b": "O parentesco fundamenta a capa.",
+      "c": "A promessa de Boaz fecha a cena."
+    },
+    "passageText": "perguntou-lhe: Quem és tu? Respondeu-lhe ela: Sou Rute, tua serva. Estende a tua capa sobre a tua serva; porque tu és parente chegado. Ele disse: Bendita sejas de Jeová, minha filha. Mostraste mais bondade agora do que em outro tempo, visto que não escolheste mancebos pobres ou ricos. Agora, minha filha, não temas; eu farei tudo o que disseres, porque todo o povo da minha cidade sabe que és mulher virtuosa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rute se nomeia serva e pede a capa."
+      },
+      {
+        "id": "b",
+        "text": "O motivo é que Boaz é parente chegado."
+      },
+      {
+        "id": "c",
+        "text": "Ele a abençoa, a chama virtuosa e promete fazer."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-sem-rute-05-capa-05",
+    "trail": "rute",
+    "section": "rute-05-capa",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Complete a frase: \"tua ___\"",
+    "prompt": "Complete a frase: \"tua ___\"",
+    "cue": "Complete a frase: \"tua ___\"",
+    "verseRef": "Rute 3:9–11",
+    "learningObjective": "Sair sabendo que Rute pede a Boaz cobertura de parente e ele aceita o encargo.",
+    "evidence": [
+      "Rute 3:9–11"
+    ],
+    "feedbackCorrect": "Certo: ela se chama serva.",
+    "feedbackWrong": {
+      "b": "Capa é o que pede.",
+      "c": "Cidade é onde a conhecem."
+    },
+    "passageText": "perguntou-lhe: Quem és tu? Respondeu-lhe ela: Sou Rute, tua serva. Estende a tua capa sobre a tua serva; porque tu és parente chegado. Ele disse: Bendita sejas de Jeová, minha filha. Mostraste mais bondade agora do que em outro tempo, visto que não escolheste mancebos pobres ou ricos. Agora, minha filha, não temas; eu farei tudo o que disseres, porque todo o povo da minha cidade sabe que és mulher virtuosa.",
+    "template": "tua ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "serva"
+      },
+      {
+        "id": "b",
+        "text": "capa"
+      },
+      {
+        "id": "c",
+        "text": "cidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-sem-rute-05-capa-06",
+    "trail": "rute",
+    "section": "rute-05-capa",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Rute 3:9–11 comunica que se liga a este contexto?",
+    "prompt": "O que Rute 3:9–11 comunica que se liga a este contexto?",
+    "cue": "O que Rute 3:9–11 comunica que se liga a este contexto?",
+    "verseRef": "Rute 3:9–11",
+    "learningObjective": "Sair sabendo que Rute pede a Boaz cobertura de parente e ele aceita o encargo.",
+    "evidence": [
+      "Rute 3:9–11"
+    ],
+    "feedbackCorrect": "Certo: a capa pede resgate.",
+    "feedbackWrong": {
+      "b": "Ela permanece no caminho de Israel.",
+      "c": "Não é só o lugar; é o pedido."
+    },
+    "passageText": "perguntou-lhe: Quem és tu? Respondeu-lhe ela: Sou Rute, tua serva. Estende a tua capa sobre a tua serva; porque tu és parente chegado. Ele disse: Bendita sejas de Jeová, minha filha. Mostraste mais bondade agora do que em outro tempo, visto que não escolheste mancebos pobres ou ricos. Agora, minha filha, não temas; eu farei tudo o que disseres, porque todo o povo da minha cidade sabe que és mulher virtuosa.",
+    "passageA": {
+      "ref": "Rute 3:9–11",
+      "text": "perguntou-lhe: Quem és tu? Respondeu-lhe ela: Sou Rute, tua serva. Estende a tua capa sobre a tua serva; porque tu és parente chegado. Ele disse: Bendita sejas de Jeová, minha filha. Mostraste mais bondade agora do que em outro tempo, visto que não escolheste mancebos pobres ou ricos. Agora, minha filha, não temas; eu farei tudo o que disseres, porque todo o povo da minha cidade sabe que és mulher virtuosa."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Redenção pede quem aceite o custo"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cobertura de resgate"
+      },
+      {
+        "id": "b",
+        "text": "Volta a Moabe"
+      },
+      {
+        "id": "c",
+        "text": "Festa da eira"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-cam-rute-05-capa-01",
+    "trail": "rute",
+    "section": "rute-05-capa",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Boaz recusa e diz que Rute escolheu mal ao não buscar os jovens.",
+    "prompt": "Boaz recusa e diz que Rute escolheu mal ao não buscar os jovens.",
+    "cue": "Boaz recusa e diz que Rute escolheu mal ao não buscar os jovens.",
+    "verseRef": "Rute 3:9–11",
+    "learningObjective": "Sair sabendo que Rute pede a Boaz cobertura de parente e ele aceita o encargo.",
+    "evidence": [
+      "Rute 3:9–11"
+    ],
+    "feedbackCorrect": "Certo: ele a abençoa e promete fazer o que ela disse.",
+    "feedbackWrong": {
+      "true": "Ele elogia a bondade maior e a chama virtuosa."
+    },
+    "passageText": "perguntou-lhe: Quem és tu? Respondeu-lhe ela: Sou Rute, tua serva. Estende a tua capa sobre a tua serva; porque tu és parente chegado. Ele disse: Bendita sejas de Jeová, minha filha. Mostraste mais bondade agora do que em outro tempo, visto que não escolheste mancebos pobres ou ricos. Agora, minha filha, não temas; eu farei tudo o que disseres, porque todo o povo da minha cidade sabe que és mulher virtuosa.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "id": "rute-cam-rute-05-capa-02",
+    "trail": "rute",
+    "section": "rute-05-capa",
+    "difficulty": "caminhada",
+    "type": "tap",
+    "skill": "understand",
+    "question": "Em Rute 3:9–11, toque a palavra que falta em \"és mulher ___\"?",
+    "prompt": "Em Rute 3:9–11, toque a palavra que falta em \"és mulher ___\"?",
+    "cue": "Em Rute 3:9–11, toque a palavra que falta em \"és mulher ___\"?",
+    "verseRef": "Rute 3:9–11",
+    "learningObjective": "Sair sabendo que Rute pede a Boaz cobertura de parente e ele aceita o encargo.",
+    "evidence": [
+      "Rute 3:9–11"
+    ],
+    "feedbackCorrect": "Exato: o povo a conhece como virtuosa.",
+    "feedbackWrong": {
+      "a": "Capa é o que ela pede.",
+      "c": "Parente é o motivo do pedido."
+    },
+    "passageText": "perguntou-lhe: Quem és tu? Respondeu-lhe ela: Sou Rute, tua serva. Estende a tua capa sobre a tua serva; porque tu és parente chegado. Ele disse: Bendita sejas de Jeová, minha filha. Mostraste mais bondade agora do que em outro tempo, visto que não escolheste mancebos pobres ou ricos. Agora, minha filha, não temas; eu farei tudo o que disseres, porque todo o povo da minha cidade sabe que és mulher virtuosa.",
+    "template": "és mulher ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "capa"
+      },
+      {
+        "id": "b",
+        "text": "virtuosa"
+      },
+      {
+        "id": "c",
+        "text": "parente"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "rute-cam-rute-05-capa-03",
+    "trail": "rute",
+    "section": "rute-05-capa",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Boaz recebe o pedido?",
+    "prompt": "Como Boaz recebe o pedido?",
+    "cue": "Como Boaz recebe o pedido?",
+    "verseRef": "Rute 3:9–11",
+    "learningObjective": "Sair sabendo que Rute pede a Boaz cobertura de parente e ele aceita o encargo.",
+    "evidence": [
+      "Rute 3:9–11"
+    ],
+    "feedbackCorrect": "Certo: abençoa, elogia e promete agir.",
+    "feedbackWrong": {
+      "b": "A resposta é favor.",
+      "c": "Ele fala do que a cidade sabe.",
+      "d": "Ele nota que ela não escolheu os mancebos."
+    },
+    "passageText": "perguntou-lhe: Quem és tu? Respondeu-lhe ela: Sou Rute, tua serva. Estende a tua capa sobre a tua serva; porque tu és parente chegado. Ele disse: Bendita sejas de Jeová, minha filha. Mostraste mais bondade agora do que em outro tempo, visto que não escolheste mancebos pobres ou ricos. Agora, minha filha, não temas; eu farei tudo o que disseres, porque todo o povo da minha cidade sabe que és mulher virtuosa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Chama-a virtuosa e diz que fará."
+      },
+      {
+        "id": "b",
+        "text": "Recusa a capa e a manda embora."
+      },
+      {
+        "id": "c",
+        "text": "Diz que o povo da cidade a despreza."
+      },
+      {
+        "id": "d",
+        "text": "Adia tudo porque ela escolheu os jovens."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-cam-rute-05-capa-04",
+    "trail": "rute",
+    "section": "rute-05-capa",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Rute 3:9–11?",
+    "prompt": "Como se encadeiam os eventos de Rute 3:9–11?",
+    "cue": "Como se encadeiam os eventos de Rute 3:9–11?",
+    "verseRef": "Rute 3:9–11",
+    "learningObjective": "Sair sabendo que Rute pede a Boaz cobertura de parente e ele aceita o encargo.",
+    "evidence": [
+      "Rute 3:9–11"
+    ],
+    "feedbackCorrect": "Certo: pedido, parentesco e então a promessa.",
+    "feedbackWrong": {
+      "b": "O parentesco fundamenta a capa.",
+      "c": "A promessa de Boaz fecha a cena."
+    },
+    "passageText": "perguntou-lhe: Quem és tu? Respondeu-lhe ela: Sou Rute, tua serva. Estende a tua capa sobre a tua serva; porque tu és parente chegado. Ele disse: Bendita sejas de Jeová, minha filha. Mostraste mais bondade agora do que em outro tempo, visto que não escolheste mancebos pobres ou ricos. Agora, minha filha, não temas; eu farei tudo o que disseres, porque todo o povo da minha cidade sabe que és mulher virtuosa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rute se nomeia serva e pede a capa."
+      },
+      {
+        "id": "b",
+        "text": "O motivo é que Boaz é parente chegado."
+      },
+      {
+        "id": "c",
+        "text": "Ele a abençoa, a chama virtuosa e promete fazer."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-cam-rute-05-capa-05",
+    "trail": "rute",
+    "section": "rute-05-capa",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Complete a frase: \"não temas; eu ___\"",
+    "prompt": "Complete a frase: \"não temas; eu ___\"",
+    "cue": "Complete a frase: \"não temas; eu ___\"",
+    "verseRef": "Rute 3:9–11",
+    "learningObjective": "Sair sabendo que Rute pede a Boaz cobertura de parente e ele aceita o encargo.",
+    "evidence": [
+      "Rute 3:9–11"
+    ],
+    "feedbackCorrect": "Certo: Boaz diz que fará.",
+    "feedbackWrong": {
+      "b": "Capa é o pedido.",
+      "c": "Parente é o título."
+    },
+    "passageText": "perguntou-lhe: Quem és tu? Respondeu-lhe ela: Sou Rute, tua serva. Estende a tua capa sobre a tua serva; porque tu és parente chegado. Ele disse: Bendita sejas de Jeová, minha filha. Mostraste mais bondade agora do que em outro tempo, visto que não escolheste mancebos pobres ou ricos. Agora, minha filha, não temas; eu farei tudo o que disseres, porque todo o povo da minha cidade sabe que és mulher virtuosa.",
+    "template": "não temas; eu ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "farei"
+      },
+      {
+        "id": "b",
+        "text": "capa"
+      },
+      {
+        "id": "c",
+        "text": "parente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-cam-rute-05-capa-06",
+    "trail": "rute",
+    "section": "rute-05-capa",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "Que relação Rute 3:9–11 estabelece com este contexto?",
+    "prompt": "Que relação Rute 3:9–11 estabelece com este contexto?",
+    "cue": "Que relação Rute 3:9–11 estabelece com este contexto?",
+    "verseRef": "Rute 3:9–11",
+    "learningObjective": "Sair sabendo que Rute pede a Boaz cobertura de parente e ele aceita o encargo.",
+    "evidence": [
+      "Rute 3:9–11"
+    ],
+    "feedbackCorrect": "Certo: Boaz aceita o encargo.",
+    "feedbackWrong": {
+      "a": "Ele promete fazer.",
+      "c": "A cidade a conhece como virtuosa."
+    },
+    "passageText": "perguntou-lhe: Quem és tu? Respondeu-lhe ela: Sou Rute, tua serva. Estende a tua capa sobre a tua serva; porque tu és parente chegado. Ele disse: Bendita sejas de Jeová, minha filha. Mostraste mais bondade agora do que em outro tempo, visto que não escolheste mancebos pobres ou ricos. Agora, minha filha, não temas; eu farei tudo o que disseres, porque todo o povo da minha cidade sabe que és mulher virtuosa.",
+    "passageA": {
+      "ref": "Rute 3:9–11",
+      "text": "perguntou-lhe: Quem és tu? Respondeu-lhe ela: Sou Rute, tua serva. Estende a tua capa sobre a tua serva; porque tu és parente chegado. Ele disse: Bendita sejas de Jeová, minha filha. Mostraste mais bondade agora do que em outro tempo, visto que não escolheste mancebos pobres ou ricos. Agora, minha filha, não temas; eu farei tudo o que disseres, porque todo o povo da minha cidade sabe que és mulher virtuosa."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Redenção pede quem aceite o custo"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedido recusado"
+      },
+      {
+        "id": "b",
+        "text": "Parente que assume"
+      },
+      {
+        "id": "c",
+        "text": "Virtude escondida"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "rute-pro-rute-05-capa-01",
+    "trail": "rute",
+    "section": "rute-05-capa",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "O resgate, aqui, depende de alguém que aceite cobrir.",
+    "prompt": "O resgate, aqui, depende de alguém que aceite cobrir.",
+    "cue": "O resgate, aqui, depende de alguém que aceite cobrir.",
+    "verseRef": "Rute 3:9–11",
+    "learningObjective": "Sair sabendo que Rute pede a Boaz cobertura de parente e ele aceita o encargo.",
+    "evidence": [
+      "Rute 3:9–11"
+    ],
+    "feedbackCorrect": "Certo: a capa não se estende sozinha.",
+    "feedbackWrong": {
+      "false": "Boaz responde que fará o que ela pediu."
+    },
+    "passageText": "perguntou-lhe: Quem és tu? Respondeu-lhe ela: Sou Rute, tua serva. Estende a tua capa sobre a tua serva; porque tu és parente chegado. Ele disse: Bendita sejas de Jeová, minha filha. Mostraste mais bondade agora do que em outro tempo, visto que não escolheste mancebos pobres ou ricos. Agora, minha filha, não temas; eu farei tudo o que disseres, porque todo o povo da minha cidade sabe que és mulher virtuosa.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "rute-pro-rute-05-capa-02",
+    "trail": "rute",
+    "section": "rute-05-capa",
+    "difficulty": "profundezas",
+    "type": "tap",
+    "skill": "interpret",
+    "question": "Em Rute 3:9–11, toque a palavra que falta em \"tu és ___ chegado\"?",
+    "prompt": "Em Rute 3:9–11, toque a palavra que falta em \"tu és ___ chegado\"?",
+    "cue": "Em Rute 3:9–11, toque a palavra que falta em \"tu és ___ chegado\"?",
+    "verseRef": "Rute 3:9–11",
+    "learningObjective": "Sair sabendo que Rute pede a Boaz cobertura de parente e ele aceita o encargo.",
+    "evidence": [
+      "Rute 3:9–11"
+    ],
+    "feedbackCorrect": "Exato: Boaz é parente chegado.",
+    "feedbackWrong": {
+      "a": "Capa é o sinal do pedido.",
+      "c": "Serva é como Rute se chama."
+    },
+    "passageText": "perguntou-lhe: Quem és tu? Respondeu-lhe ela: Sou Rute, tua serva. Estende a tua capa sobre a tua serva; porque tu és parente chegado. Ele disse: Bendita sejas de Jeová, minha filha. Mostraste mais bondade agora do que em outro tempo, visto que não escolheste mancebos pobres ou ricos. Agora, minha filha, não temas; eu farei tudo o que disseres, porque todo o povo da minha cidade sabe que és mulher virtuosa.",
+    "template": "tu és ___ chegado",
+    "options": [
+      {
+        "id": "a",
+        "text": "capa"
+      },
+      {
+        "id": "b",
+        "text": "parente"
+      },
+      {
+        "id": "c",
+        "text": "serva"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "rute-pro-rute-05-capa-03",
+    "trail": "rute",
+    "section": "rute-05-capa",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "O que a capa ensina sobre redenção?",
+    "prompt": "O que a capa ensina sobre redenção?",
+    "cue": "O que a capa ensina sobre redenção?",
+    "verseRef": "Rute 3:9–11",
+    "learningObjective": "Sair sabendo que Rute pede a Boaz cobertura de parente e ele aceita o encargo.",
+    "evidence": [
+      "Rute 3:9–11"
+    ],
+    "feedbackCorrect": "Certo: alguém precisa aceitar o custo da cobertura.",
+    "feedbackWrong": {
+      "b": "Ela pede a ele, não ao vazio.",
+      "c": "O parentesco é o motivo.",
+      "d": "Boaz é quem pode fazer."
+    },
+    "passageText": "perguntou-lhe: Quem és tu? Respondeu-lhe ela: Sou Rute, tua serva. Estende a tua capa sobre a tua serva; porque tu és parente chegado. Ele disse: Bendita sejas de Jeová, minha filha. Mostraste mais bondade agora do que em outro tempo, visto que não escolheste mancebos pobres ou ricos. Agora, minha filha, não temas; eu farei tudo o que disseres, porque todo o povo da minha cidade sabe que és mulher virtuosa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Resgate é cobertura que um parente assume."
+      },
+      {
+        "id": "b",
+        "text": "Resgate acontece sem que ninguém se comprometa."
+      },
+      {
+        "id": "c",
+        "text": "Virtude dispensa o parente chegado."
+      },
+      {
+        "id": "d",
+        "text": "A eira substitui a necessidade de Boaz."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-pro-rute-05-capa-04",
+    "trail": "rute",
+    "section": "rute-05-capa",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Rute 3:9–11?",
+    "prompt": "Qual sequência revela o sentido de Rute 3:9–11?",
+    "cue": "Qual sequência revela o sentido de Rute 3:9–11?",
+    "verseRef": "Rute 3:9–11",
+    "learningObjective": "Sair sabendo que Rute pede a Boaz cobertura de parente e ele aceita o encargo.",
+    "evidence": [
+      "Rute 3:9–11"
+    ],
+    "feedbackCorrect": "Certo: pedido, parentesco e então a promessa.",
+    "feedbackWrong": {
+      "b": "O parentesco fundamenta a capa.",
+      "c": "A promessa de Boaz fecha a cena."
+    },
+    "passageText": "perguntou-lhe: Quem és tu? Respondeu-lhe ela: Sou Rute, tua serva. Estende a tua capa sobre a tua serva; porque tu és parente chegado. Ele disse: Bendita sejas de Jeová, minha filha. Mostraste mais bondade agora do que em outro tempo, visto que não escolheste mancebos pobres ou ricos. Agora, minha filha, não temas; eu farei tudo o que disseres, porque todo o povo da minha cidade sabe que és mulher virtuosa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rute se nomeia serva e pede a capa."
+      },
+      {
+        "id": "b",
+        "text": "O motivo é que Boaz é parente chegado."
+      },
+      {
+        "id": "c",
+        "text": "Ele a abençoa, a chama virtuosa e promete fazer."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-pro-rute-05-capa-05",
+    "trail": "rute",
+    "section": "rute-05-capa",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Complete a frase: \"mancebos pobres ou ___\"",
+    "prompt": "Complete a frase: \"mancebos pobres ou ___\"",
+    "cue": "Complete a frase: \"mancebos pobres ou ___\"",
+    "verseRef": "Rute 3:9–11",
+    "learningObjective": "Sair sabendo que Rute pede a Boaz cobertura de parente e ele aceita o encargo.",
+    "evidence": [
+      "Rute 3:9–11"
+    ],
+    "feedbackCorrect": "Certo: ela não escolheu mancebos pobres ou ricos.",
+    "feedbackWrong": {
+      "b": "Virtuosa é o que a cidade sabe.",
+      "c": "Capa é o pedido da eira."
+    },
+    "passageText": "perguntou-lhe: Quem és tu? Respondeu-lhe ela: Sou Rute, tua serva. Estende a tua capa sobre a tua serva; porque tu és parente chegado. Ele disse: Bendita sejas de Jeová, minha filha. Mostraste mais bondade agora do que em outro tempo, visto que não escolheste mancebos pobres ou ricos. Agora, minha filha, não temas; eu farei tudo o que disseres, porque todo o povo da minha cidade sabe que és mulher virtuosa.",
+    "template": "mancebos pobres ou ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "ricos"
+      },
+      {
+        "id": "b",
+        "text": "virtuosa"
+      },
+      {
+        "id": "c",
+        "text": "capa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "rute-pro-rute-05-capa-06",
+    "trail": "rute",
+    "section": "rute-05-capa",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "Que sentido de Rute 3:9–11 se liga a este contexto?",
+    "prompt": "Que sentido de Rute 3:9–11 se liga a este contexto?",
+    "cue": "Que sentido de Rute 3:9–11 se liga a este contexto?",
+    "verseRef": "Rute 3:9–11",
+    "learningObjective": "Sair sabendo que Rute pede a Boaz cobertura de parente e ele aceita o encargo.",
+    "evidence": [
+      "Rute 3:9–11"
+    ],
+    "feedbackCorrect": "Certo: o resgate tem quem o aceite.",
+    "feedbackWrong": {
+      "a": "A capa é compromisso.",
+      "c": "Boaz responde com ação."
+    },
+    "passageText": "perguntou-lhe: Quem és tu? Respondeu-lhe ela: Sou Rute, tua serva. Estende a tua capa sobre a tua serva; porque tu és parente chegado. Ele disse: Bendita sejas de Jeová, minha filha. Mostraste mais bondade agora do que em outro tempo, visto que não escolheste mancebos pobres ou ricos. Agora, minha filha, não temas; eu farei tudo o que disseres, porque todo o povo da minha cidade sabe que és mulher virtuosa.",
+    "passageA": {
+      "ref": "Rute 3:9–11",
+      "text": "perguntou-lhe: Quem és tu? Respondeu-lhe ela: Sou Rute, tua serva. Estende a tua capa sobre a tua serva; porque tu és parente chegado. Ele disse: Bendita sejas de Jeová, minha filha. Mostraste mais bondade agora do que em outro tempo, visto que não escolheste mancebos pobres ou ricos. Agora, minha filha, não temas; eu farei tudo o que disseres, porque todo o povo da minha cidade sabe que és mulher virtuosa."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Redenção pede quem aceite o custo"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Redenção sem custo"
+      },
+      {
+        "id": "b",
+        "text": "Alguém paga a cobertura"
+      },
+      {
+        "id": "c",
+        "text": "Eira sem promessa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
   }
 ]

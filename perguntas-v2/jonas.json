@@ -2914,5 +2914,2192 @@
     "prompt": "O que Jonas 4:11 comunica que se liga a este contexto?",
     "cue": "O que Jonas 4:11 comunica que se liga a este contexto?",
     "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-sem-jonas-03-ventre-01",
+    "trail": "jonas",
+    "section": "jonas-03-ventre",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Jonas orou a Jeová de dentro do ventre do peixe.",
+    "prompt": "Jonas orou a Jeová de dentro do ventre do peixe.",
+    "cue": "Jonas orou a Jeová de dentro do ventre do peixe.",
+    "verseRef": "Jonas 2:1–2",
+    "learningObjective": "Sair sabendo que Jonas clamou do ventre e Jeová respondeu.",
+    "evidence": [
+      "Jonas 2:1–2"
+    ],
+    "feedbackCorrect": "Certo: o lugar da oração é o ventre.",
+    "feedbackWrong": {
+      "false": "O versículo situa a oração ali."
+    },
+    "passageText": "Então, orou Jonas a Jeová, seu Deus, lá do ventre do peixe. Ele disse: Da minha aflição, clamei a Jeová, e ele me respondeu; do ventre do Sheol gritei, e tu ouviste a minha voz.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "jonas-sem-jonas-03-ventre-02",
+    "trail": "jonas",
+    "section": "jonas-03-ventre",
+    "difficulty": "semente",
+    "type": "tap",
+    "skill": "observe",
+    "question": "Em Jonas 2:1–2, toque a palavra que falta em \"lá do ___ do peixe\"?",
+    "prompt": "Em Jonas 2:1–2, toque a palavra que falta em \"lá do ___ do peixe\"?",
+    "cue": "Em Jonas 2:1–2, toque a palavra que falta em \"lá do ___ do peixe\"?",
+    "verseRef": "Jonas 2:1–2",
+    "learningObjective": "Sair sabendo que Jonas clamou do ventre e Jeová respondeu.",
+    "evidence": [
+      "Jonas 2:1–2"
+    ],
+    "feedbackCorrect": "Exato: a oração sai do ventre.",
+    "feedbackWrong": {
+      "a": "Aflição é de onde ele clamou.",
+      "c": "Voz é o que foi ouvido."
+    },
+    "passageText": "Então, orou Jonas a Jeová, seu Deus, lá do ventre do peixe. Ele disse: Da minha aflição, clamei a Jeová, e ele me respondeu; do ventre do Sheol gritei, e tu ouviste a minha voz.",
+    "template": "lá do ___ do peixe",
+    "options": [
+      {
+        "id": "a",
+        "text": "aflição"
+      },
+      {
+        "id": "b",
+        "text": "ventre"
+      },
+      {
+        "id": "c",
+        "text": "voz"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "jonas-sem-jonas-03-ventre-03",
+    "trail": "jonas",
+    "section": "jonas-03-ventre",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "De onde Jonas ora?",
+    "prompt": "De onde Jonas ora?",
+    "cue": "De onde Jonas ora?",
+    "verseRef": "Jonas 2:1–2",
+    "learningObjective": "Sair sabendo que Jonas clamou do ventre e Jeová respondeu.",
+    "evidence": [
+      "Jonas 2:1–2"
+    ],
+    "feedbackCorrect": "Certo: do ventre do peixe.",
+    "feedbackWrong": {
+      "b": "O templo não é o lugar desta oração.",
+      "c": "Társis era a fuga.",
+      "d": "A fuga já o lançou ao fundo."
+    },
+    "passageText": "Então, orou Jonas a Jeová, seu Deus, lá do ventre do peixe. Ele disse: Da minha aflição, clamei a Jeová, e ele me respondeu; do ventre do Sheol gritei, e tu ouviste a minha voz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Do ventre do peixe, a Jeová."
+      },
+      {
+        "id": "b",
+        "text": "Do templo, antes de embarcar."
+      },
+      {
+        "id": "c",
+        "text": "De Társis, em segurança."
+      },
+      {
+        "id": "d",
+        "text": "Do convés, enquanto foge."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-sem-jonas-03-ventre-04",
+    "trail": "jonas",
+    "section": "jonas-03-ventre",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Qual é a ordem dos fatos em Jonas 2:1–2?",
+    "prompt": "Qual é a ordem dos fatos em Jonas 2:1–2?",
+    "cue": "Qual é a ordem dos fatos em Jonas 2:1–2?",
+    "verseRef": "Jonas 2:1–2",
+    "learningObjective": "Sair sabendo que Jonas clamou do ventre e Jeová respondeu.",
+    "evidence": [
+      "Jonas 2:1–2"
+    ],
+    "feedbackCorrect": "Certo: o lugar, o clamor e então a voz ouvida.",
+    "feedbackWrong": {
+      "b": "O clamor vem de dentro do peixe.",
+      "c": "Ser ouvido fecha a oração."
+    },
+    "passageText": "Então, orou Jonas a Jeová, seu Deus, lá do ventre do peixe. Ele disse: Da minha aflição, clamei a Jeová, e ele me respondeu; do ventre do Sheol gritei, e tu ouviste a minha voz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jonas ora a Jeová do ventre do peixe."
+      },
+      {
+        "id": "b",
+        "text": "Da aflição ele clama, e Jeová responde."
+      },
+      {
+        "id": "c",
+        "text": "Do Sheol grita, e a sua voz é ouvida."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-sem-jonas-03-ventre-05",
+    "trail": "jonas",
+    "section": "jonas-03-ventre",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Complete a frase: \"orou Jonas a ___\"",
+    "prompt": "Complete a frase: \"orou Jonas a ___\"",
+    "cue": "Complete a frase: \"orou Jonas a ___\"",
+    "verseRef": "Jonas 2:1–2",
+    "learningObjective": "Sair sabendo que Jonas clamou do ventre e Jeová respondeu.",
+    "evidence": [
+      "Jonas 2:1–2"
+    ],
+    "feedbackCorrect": "Certo: a oração é a Jeová.",
+    "feedbackWrong": {
+      "b": "Peixe é o lugar.",
+      "c": "Voz é o que foi ouvido."
+    },
+    "passageText": "Então, orou Jonas a Jeová, seu Deus, lá do ventre do peixe. Ele disse: Da minha aflição, clamei a Jeová, e ele me respondeu; do ventre do Sheol gritei, e tu ouviste a minha voz.",
+    "template": "orou Jonas a ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "peixe"
+      },
+      {
+        "id": "c",
+        "text": "voz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-sem-jonas-03-ventre-06",
+    "trail": "jonas",
+    "section": "jonas-03-ventre",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Jonas 2:1–2 comunica que se liga a este contexto?",
+    "prompt": "O que Jonas 2:1–2 comunica que se liga a este contexto?",
+    "cue": "O que Jonas 2:1–2 comunica que se liga a este contexto?",
+    "verseRef": "Jonas 2:1–2",
+    "learningObjective": "Sair sabendo que Jonas clamou do ventre e Jeová respondeu.",
+    "evidence": [
+      "Jonas 2:1–2"
+    ],
+    "feedbackCorrect": "Certo: ele ora de dentro do peixe.",
+    "feedbackWrong": {
+      "b": "A fuga não é o sucesso.",
+      "c": "Não há templo nesta cena."
+    },
+    "passageText": "Então, orou Jonas a Jeová, seu Deus, lá do ventre do peixe. Ele disse: Da minha aflição, clamei a Jeová, e ele me respondeu; do ventre do Sheol gritei, e tu ouviste a minha voz.",
+    "passageA": {
+      "ref": "Jonas 2:1–2",
+      "text": "Então, orou Jonas a Jeová, seu Deus, lá do ventre do peixe. Ele disse: Da minha aflição, clamei a Jeová, e ele me respondeu; do ventre do Sheol gritei, e tu ouviste a minha voz."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A oração pode nascer no fundo"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Oração do fundo"
+      },
+      {
+        "id": "b",
+        "text": "Fuga concluída"
+      },
+      {
+        "id": "c",
+        "text": "Templo obrigatório"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-cam-jonas-03-ventre-01",
+    "trail": "jonas",
+    "section": "jonas-03-ventre",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Do Sheol, Jonas gritou e ficou sem resposta.",
+    "prompt": "Do Sheol, Jonas gritou e ficou sem resposta.",
+    "cue": "Do Sheol, Jonas gritou e ficou sem resposta.",
+    "verseRef": "Jonas 2:1–2",
+    "learningObjective": "Sair sabendo que Jonas clamou do ventre e Jeová respondeu.",
+    "evidence": [
+      "Jonas 2:1–2"
+    ],
+    "feedbackCorrect": "Certo: ele diz que Jeová ouviu a sua voz.",
+    "feedbackWrong": {
+      "true": "O clamor e a resposta vêm juntos."
+    },
+    "passageText": "Então, orou Jonas a Jeová, seu Deus, lá do ventre do peixe. Ele disse: Da minha aflição, clamei a Jeová, e ele me respondeu; do ventre do Sheol gritei, e tu ouviste a minha voz.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "id": "jonas-cam-jonas-03-ventre-02",
+    "trail": "jonas",
+    "section": "jonas-03-ventre",
+    "difficulty": "caminhada",
+    "type": "tap",
+    "skill": "understand",
+    "question": "Em Jonas 2:1–2, toque a palavra que falta em \"Da minha ___, clamei\"?",
+    "prompt": "Em Jonas 2:1–2, toque a palavra que falta em \"Da minha ___, clamei\"?",
+    "cue": "Em Jonas 2:1–2, toque a palavra que falta em \"Da minha ___, clamei\"?",
+    "verseRef": "Jonas 2:1–2",
+    "learningObjective": "Sair sabendo que Jonas clamou do ventre e Jeová respondeu.",
+    "evidence": [
+      "Jonas 2:1–2"
+    ],
+    "feedbackCorrect": "Exato: o clamor nasce da aflição.",
+    "feedbackWrong": {
+      "a": "Peixe é o lugar.",
+      "c": "Sheol é a profundidade nomeada."
+    },
+    "passageText": "Então, orou Jonas a Jeová, seu Deus, lá do ventre do peixe. Ele disse: Da minha aflição, clamei a Jeová, e ele me respondeu; do ventre do Sheol gritei, e tu ouviste a minha voz.",
+    "template": "Da minha ___, clamei",
+    "options": [
+      {
+        "id": "a",
+        "text": "peixe"
+      },
+      {
+        "id": "b",
+        "text": "aflição"
+      },
+      {
+        "id": "c",
+        "text": "Sheol"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "jonas-cam-jonas-03-ventre-03",
+    "trail": "jonas",
+    "section": "jonas-03-ventre",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "O que o Sheol acrescenta ao ventre do peixe?",
+    "prompt": "O que o Sheol acrescenta ao ventre do peixe?",
+    "cue": "O que o Sheol acrescenta ao ventre do peixe?",
+    "verseRef": "Jonas 2:1–2",
+    "learningObjective": "Sair sabendo que Jonas clamou do ventre e Jeová respondeu.",
+    "evidence": [
+      "Jonas 2:1–2"
+    ],
+    "feedbackCorrect": "Certo: a oração sobe de uma profundidade de morte.",
+    "feedbackWrong": {
+      "b": "Ele diz que a voz foi ouvida.",
+      "c": "Há aflição nomeada.",
+      "d": "O lugar é o fundo, não o alto."
+    },
+    "passageText": "Então, orou Jonas a Jeová, seu Deus, lá do ventre do peixe. Ele disse: Da minha aflição, clamei a Jeová, e ele me respondeu; do ventre do Sheol gritei, e tu ouviste a minha voz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele grita de um lugar de morte e é ouvido."
+      },
+      {
+        "id": "b",
+        "text": "Sheol prova que a voz não saiu."
+      },
+      {
+        "id": "c",
+        "text": "O peixe é só imagem, sem aflição."
+      },
+      {
+        "id": "d",
+        "text": "Jeová responde só a quem ora no alto."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-cam-jonas-03-ventre-04",
+    "trail": "jonas",
+    "section": "jonas-03-ventre",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Jonas 2:1–2?",
+    "prompt": "Como se encadeiam os eventos de Jonas 2:1–2?",
+    "cue": "Como se encadeiam os eventos de Jonas 2:1–2?",
+    "verseRef": "Jonas 2:1–2",
+    "learningObjective": "Sair sabendo que Jonas clamou do ventre e Jeová respondeu.",
+    "evidence": [
+      "Jonas 2:1–2"
+    ],
+    "feedbackCorrect": "Certo: o lugar, o clamor e então a voz ouvida.",
+    "feedbackWrong": {
+      "b": "O clamor vem de dentro do peixe.",
+      "c": "Ser ouvido fecha a oração."
+    },
+    "passageText": "Então, orou Jonas a Jeová, seu Deus, lá do ventre do peixe. Ele disse: Da minha aflição, clamei a Jeová, e ele me respondeu; do ventre do Sheol gritei, e tu ouviste a minha voz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jonas ora a Jeová do ventre do peixe."
+      },
+      {
+        "id": "b",
+        "text": "Da aflição ele clama, e Jeová responde."
+      },
+      {
+        "id": "c",
+        "text": "Do Sheol grita, e a sua voz é ouvida."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-cam-jonas-03-ventre-05",
+    "trail": "jonas",
+    "section": "jonas-03-ventre",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Complete a frase: \"do ventre do ___\"",
+    "prompt": "Complete a frase: \"do ventre do ___\"",
+    "cue": "Complete a frase: \"do ventre do ___\"",
+    "verseRef": "Jonas 2:1–2",
+    "learningObjective": "Sair sabendo que Jonas clamou do ventre e Jeová respondeu.",
+    "evidence": [
+      "Jonas 2:1–2"
+    ],
+    "feedbackCorrect": "Certo: ele gritou do ventre do Sheol.",
+    "feedbackWrong": {
+      "b": "Peixe é o outro ventre, no início.",
+      "c": "Aflição é o estado, não o nome do lugar."
+    },
+    "passageText": "Então, orou Jonas a Jeová, seu Deus, lá do ventre do peixe. Ele disse: Da minha aflição, clamei a Jeová, e ele me respondeu; do ventre do Sheol gritei, e tu ouviste a minha voz.",
+    "template": "do ventre do ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sheol"
+      },
+      {
+        "id": "b",
+        "text": "peixe"
+      },
+      {
+        "id": "c",
+        "text": "aflição"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-cam-jonas-03-ventre-06",
+    "trail": "jonas",
+    "section": "jonas-03-ventre",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "Que relação Jonas 2:1–2 estabelece com este contexto?",
+    "prompt": "Que relação Jonas 2:1–2 estabelece com este contexto?",
+    "cue": "Que relação Jonas 2:1–2 estabelece com este contexto?",
+    "verseRef": "Jonas 2:1–2",
+    "learningObjective": "Sair sabendo que Jonas clamou do ventre e Jeová respondeu.",
+    "evidence": [
+      "Jonas 2:1–2"
+    ],
+    "feedbackCorrect": "Certo: do Sheol a voz é ouvida.",
+    "feedbackWrong": {
+      "a": "Ele diz que foi ouvido.",
+      "c": "A oração quebra o silêncio."
+    },
+    "passageText": "Então, orou Jonas a Jeová, seu Deus, lá do ventre do peixe. Ele disse: Da minha aflição, clamei a Jeová, e ele me respondeu; do ventre do Sheol gritei, e tu ouviste a minha voz.",
+    "passageA": {
+      "ref": "Jonas 2:1–2",
+      "text": "Então, orou Jonas a Jeová, seu Deus, lá do ventre do peixe. Ele disse: Da minha aflição, clamei a Jeová, e ele me respondeu; do ventre do Sheol gritei, e tu ouviste a minha voz."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A oração pode nascer no fundo"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Grito sem ouvido"
+      },
+      {
+        "id": "b",
+        "text": "Voz que sobe do Sheol"
+      },
+      {
+        "id": "c",
+        "text": "Peixe em silêncio"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "jonas-pro-jonas-03-ventre-01",
+    "trail": "jonas",
+    "section": "jonas-03-ventre",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Profundidade não impede que a oração chegue a Deus.",
+    "prompt": "Profundidade não impede que a oração chegue a Deus.",
+    "cue": "Profundidade não impede que a oração chegue a Deus.",
+    "verseRef": "Jonas 2:1–2",
+    "learningObjective": "Sair sabendo que Jonas clamou do ventre e Jeová respondeu.",
+    "evidence": [
+      "Jonas 2:1–2"
+    ],
+    "feedbackCorrect": "Certo: do fundo ele é ouvido.",
+    "feedbackWrong": {
+      "false": "Sheol e ventre não fecham a voz."
+    },
+    "passageText": "Então, orou Jonas a Jeová, seu Deus, lá do ventre do peixe. Ele disse: Da minha aflição, clamei a Jeová, e ele me respondeu; do ventre do Sheol gritei, e tu ouviste a minha voz.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "jonas-pro-jonas-03-ventre-02",
+    "trail": "jonas",
+    "section": "jonas-03-ventre",
+    "difficulty": "profundezas",
+    "type": "tap",
+    "skill": "interpret",
+    "question": "Em Jonas 2:1–2, toque a palavra que falta em \"ouviste a minha ___\"?",
+    "prompt": "Em Jonas 2:1–2, toque a palavra que falta em \"ouviste a minha ___\"?",
+    "cue": "Em Jonas 2:1–2, toque a palavra que falta em \"ouviste a minha ___\"?",
+    "verseRef": "Jonas 2:1–2",
+    "learningObjective": "Sair sabendo que Jonas clamou do ventre e Jeová respondeu.",
+    "evidence": [
+      "Jonas 2:1–2"
+    ],
+    "feedbackCorrect": "Exato: Jeová ouviu a voz.",
+    "feedbackWrong": {
+      "a": "Ventre é o lugar.",
+      "c": "Aflição é o motivo do grito."
+    },
+    "passageText": "Então, orou Jonas a Jeová, seu Deus, lá do ventre do peixe. Ele disse: Da minha aflição, clamei a Jeová, e ele me respondeu; do ventre do Sheol gritei, e tu ouviste a minha voz.",
+    "template": "ouviste a minha ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "ventre"
+      },
+      {
+        "id": "b",
+        "text": "voz"
+      },
+      {
+        "id": "c",
+        "text": "aflição"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "jonas-pro-jonas-03-ventre-03",
+    "trail": "jonas",
+    "section": "jonas-03-ventre",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "O que essa oração ensina sobre clamar?",
+    "prompt": "O que essa oração ensina sobre clamar?",
+    "cue": "O que essa oração ensina sobre clamar?",
+    "verseRef": "Jonas 2:1–2",
+    "learningObjective": "Sair sabendo que Jonas clamou do ventre e Jeová respondeu.",
+    "evidence": [
+      "Jonas 2:1–2"
+    ],
+    "feedbackCorrect": "Certo: dá para orar do fundo, e Deus ouve.",
+    "feedbackWrong": {
+      "b": "Ele ora lá de dentro.",
+      "c": "Há resposta.",
+      "d": "A voz foi ouvida."
+    },
+    "passageText": "Então, orou Jonas a Jeová, seu Deus, lá do ventre do peixe. Ele disse: Da minha aflição, clamei a Jeová, e ele me respondeu; do ventre do Sheol gritei, e tu ouviste a minha voz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O fundo não cala a oração."
+      },
+      {
+        "id": "b",
+        "text": "Só ora quem já saiu do peixe."
+      },
+      {
+        "id": "c",
+        "text": "Sheol é silêncio sem resposta."
+      },
+      {
+        "id": "d",
+        "text": "A voz de Jonas ficou no ventre."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-pro-jonas-03-ventre-04",
+    "trail": "jonas",
+    "section": "jonas-03-ventre",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Jonas 2:1–2?",
+    "prompt": "Qual sequência revela o sentido de Jonas 2:1–2?",
+    "cue": "Qual sequência revela o sentido de Jonas 2:1–2?",
+    "verseRef": "Jonas 2:1–2",
+    "learningObjective": "Sair sabendo que Jonas clamou do ventre e Jeová respondeu.",
+    "evidence": [
+      "Jonas 2:1–2"
+    ],
+    "feedbackCorrect": "Certo: o lugar, o clamor e então a voz ouvida.",
+    "feedbackWrong": {
+      "b": "O clamor vem de dentro do peixe.",
+      "c": "Ser ouvido fecha a oração."
+    },
+    "passageText": "Então, orou Jonas a Jeová, seu Deus, lá do ventre do peixe. Ele disse: Da minha aflição, clamei a Jeová, e ele me respondeu; do ventre do Sheol gritei, e tu ouviste a minha voz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jonas ora a Jeová do ventre do peixe."
+      },
+      {
+        "id": "b",
+        "text": "Da aflição ele clama, e Jeová responde."
+      },
+      {
+        "id": "c",
+        "text": "Do Sheol grita, e a sua voz é ouvida."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-pro-jonas-03-ventre-05",
+    "trail": "jonas",
+    "section": "jonas-03-ventre",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Complete a frase: \"ele me ___\"",
+    "prompt": "Complete a frase: \"ele me ___\"",
+    "cue": "Complete a frase: \"ele me ___\"",
+    "verseRef": "Jonas 2:1–2",
+    "learningObjective": "Sair sabendo que Jonas clamou do ventre e Jeová respondeu.",
+    "evidence": [
+      "Jonas 2:1–2"
+    ],
+    "feedbackCorrect": "Certo: Jeová respondeu ao clamor.",
+    "feedbackWrong": {
+      "b": "Ventre é o lugar.",
+      "c": "Voz é o que subiu."
+    },
+    "passageText": "Então, orou Jonas a Jeová, seu Deus, lá do ventre do peixe. Ele disse: Da minha aflição, clamei a Jeová, e ele me respondeu; do ventre do Sheol gritei, e tu ouviste a minha voz.",
+    "template": "ele me ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "respondeu"
+      },
+      {
+        "id": "b",
+        "text": "ventre"
+      },
+      {
+        "id": "c",
+        "text": "voz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-pro-jonas-03-ventre-06",
+    "trail": "jonas",
+    "section": "jonas-03-ventre",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "Que sentido de Jonas 2:1–2 se liga a este contexto?",
+    "prompt": "Que sentido de Jonas 2:1–2 se liga a este contexto?",
+    "cue": "Que sentido de Jonas 2:1–2 se liga a este contexto?",
+    "verseRef": "Jonas 2:1–2",
+    "learningObjective": "Sair sabendo que Jonas clamou do ventre e Jeová respondeu.",
+    "evidence": [
+      "Jonas 2:1–2"
+    ],
+    "feedbackCorrect": "Certo: o abismo não fecha o ouvido de Deus.",
+    "feedbackWrong": {
+      "a": "Há resposta no ventre.",
+      "c": "O lugar é o fundo."
+    },
+    "passageText": "Então, orou Jonas a Jeová, seu Deus, lá do ventre do peixe. Ele disse: Da minha aflição, clamei a Jeová, e ele me respondeu; do ventre do Sheol gritei, e tu ouviste a minha voz.",
+    "passageA": {
+      "ref": "Jonas 2:1–2",
+      "text": "Então, orou Jonas a Jeová, seu Deus, lá do ventre do peixe. Ele disse: Da minha aflição, clamei a Jeová, e ele me respondeu; do ventre do Sheol gritei, e tu ouviste a minha voz."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A oração pode nascer no fundo"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Profundidade muda"
+      },
+      {
+        "id": "b",
+        "text": "Deus ouve no abismo"
+      },
+      {
+        "id": "c",
+        "text": "Resposta só no alto"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "jonas-sem-jonas-04-ira-01",
+    "trail": "jonas",
+    "section": "jonas-04-ira",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Jonas diz que fugiu para Társis porque sabia que Jeová é clemente.",
+    "prompt": "Jonas diz que fugiu para Társis porque sabia que Jeová é clemente.",
+    "cue": "Jonas diz que fugiu para Társis porque sabia que Jeová é clemente.",
+    "verseRef": "Jonas 4:2",
+    "learningObjective": "Sair sabendo que Jonas fugiu porque conhecia a clemência de Jeová.",
+    "evidence": [
+      "Jonas 4:2"
+    ],
+    "feedbackCorrect": "Certo: a teologia dele motivou a fuga.",
+    "feedbackWrong": {
+      "false": "Ele mesmo dá essa razão."
+    },
+    "passageText": "Orou a Jeová e disse: Ah! Jeová, não foi esta a minha palavra, estando eu ainda no meu país? Por isso é que me apressei a fugir para Társis, pois eu sabia que tu és um Deus clemente e misericordioso, tardio em irar-se e de grande beneficência e que te arrependes do mal.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "jonas-sem-jonas-04-ira-02",
+    "trail": "jonas",
+    "section": "jonas-04-ira",
+    "difficulty": "semente",
+    "type": "tap",
+    "skill": "observe",
+    "question": "Em Jonas 4:2, toque a palavra que falta em \"fugir para ___\"?",
+    "prompt": "Em Jonas 4:2, toque a palavra que falta em \"fugir para ___\"?",
+    "cue": "Em Jonas 4:2, toque a palavra que falta em \"fugir para ___\"?",
+    "verseRef": "Jonas 4:2",
+    "learningObjective": "Sair sabendo que Jonas fugiu porque conhecia a clemência de Jeová.",
+    "evidence": [
+      "Jonas 4:2"
+    ],
+    "feedbackCorrect": "Exato: a fuga era para Társis.",
+    "feedbackWrong": {
+      "a": "País é de onde ele fala.",
+      "c": "Mal é aquilo de que Deus se arrepende."
+    },
+    "passageText": "Orou a Jeová e disse: Ah! Jeová, não foi esta a minha palavra, estando eu ainda no meu país? Por isso é que me apressei a fugir para Társis, pois eu sabia que tu és um Deus clemente e misericordioso, tardio em irar-se e de grande beneficência e que te arrependes do mal.",
+    "template": "fugir para ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "país"
+      },
+      {
+        "id": "b",
+        "text": "Társis"
+      },
+      {
+        "id": "c",
+        "text": "mal"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "jonas-sem-jonas-04-ira-03",
+    "trail": "jonas",
+    "section": "jonas-04-ira",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Por que Jonas diz que fugiu?",
+    "prompt": "Por que Jonas diz que fugiu?",
+    "cue": "Por que Jonas diz que fugiu?",
+    "verseRef": "Jonas 4:2",
+    "learningObjective": "Sair sabendo que Jonas fugiu porque conhecia a clemência de Jeová.",
+    "evidence": [
+      "Jonas 4:2"
+    ],
+    "feedbackCorrect": "Certo: porque sabia que Deus perdoa.",
+    "feedbackWrong": {
+      "b": "Ele lista a clemência.",
+      "c": "Társis é fuga, não púlpito.",
+      "d": "A cidade ainda será o assunto da misericórdia."
+    },
+    "passageText": "Orou a Jeová e disse: Ah! Jeová, não foi esta a minha palavra, estando eu ainda no meu país? Por isso é que me apressei a fugir para Társis, pois eu sabia que tu és um Deus clemente e misericordioso, tardio em irar-se e de grande beneficência e que te arrependes do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sabia que Jeová é clemente e se arrepende do mal."
+      },
+      {
+        "id": "b",
+        "text": "Porque achava Deus incapaz de misericórdia."
+      },
+      {
+        "id": "c",
+        "text": "Porque Társis era o lugar da profecia."
+      },
+      {
+        "id": "d",
+        "text": "Porque Nínive já tinha sido destruída."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-sem-jonas-04-ira-04",
+    "trail": "jonas",
+    "section": "jonas-04-ira",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Qual é a ordem dos fatos em Jonas 4:2?",
+    "prompt": "Qual é a ordem dos fatos em Jonas 4:2?",
+    "cue": "Qual é a ordem dos fatos em Jonas 4:2?",
+    "verseRef": "Jonas 4:2",
+    "learningObjective": "Sair sabendo que Jonas fugiu porque conhecia a clemência de Jeová.",
+    "evidence": [
+      "Jonas 4:2"
+    ],
+    "feedbackCorrect": "Certo: a palavra antiga, a fuga e então a razão.",
+    "feedbackWrong": {
+      "b": "A fuga executa o que ele já temia.",
+      "c": "A clemência é a razão confessada."
+    },
+    "passageText": "Orou a Jeová e disse: Ah! Jeová, não foi esta a minha palavra, estando eu ainda no meu país? Por isso é que me apressei a fugir para Társis, pois eu sabia que tu és um Deus clemente e misericordioso, tardio em irar-se e de grande beneficência e que te arrependes do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jonas lembra o que disse ainda no seu país."
+      },
+      {
+        "id": "b",
+        "text": "Por isso se apressou a fugir para Társis."
+      },
+      {
+        "id": "c",
+        "text": "Ele sabia que Jeová é clemente e se arrepende do mal."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-sem-jonas-04-ira-05",
+    "trail": "jonas",
+    "section": "jonas-04-ira",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Complete a frase: \"ainda no meu ___\"",
+    "prompt": "Complete a frase: \"ainda no meu ___\"",
+    "cue": "Complete a frase: \"ainda no meu ___\"",
+    "verseRef": "Jonas 4:2",
+    "learningObjective": "Sair sabendo que Jonas fugiu porque conhecia a clemência de Jeová.",
+    "evidence": [
+      "Jonas 4:2"
+    ],
+    "feedbackCorrect": "Certo: a palavra foi dita no país dele.",
+    "feedbackWrong": {
+      "b": "Társis é para onde fugiu.",
+      "c": "Mal é o que Deus deixa."
+    },
+    "passageText": "Orou a Jeová e disse: Ah! Jeová, não foi esta a minha palavra, estando eu ainda no meu país? Por isso é que me apressei a fugir para Társis, pois eu sabia que tu és um Deus clemente e misericordioso, tardio em irar-se e de grande beneficência e que te arrependes do mal.",
+    "template": "ainda no meu ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "país"
+      },
+      {
+        "id": "b",
+        "text": "Társis"
+      },
+      {
+        "id": "c",
+        "text": "mal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-sem-jonas-04-ira-06",
+    "trail": "jonas",
+    "section": "jonas-04-ira",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Jonas 4:2 comunica que se liga a este contexto?",
+    "prompt": "O que Jonas 4:2 comunica que se liga a este contexto?",
+    "cue": "O que Jonas 4:2 comunica que se liga a este contexto?",
+    "verseRef": "Jonas 4:2",
+    "learningObjective": "Sair sabendo que Jonas fugiu porque conhecia a clemência de Jeová.",
+    "evidence": [
+      "Jonas 4:2"
+    ],
+    "feedbackCorrect": "Certo: o perdão de Deus irrita Jonas.",
+    "feedbackWrong": {
+      "b": "Ele conhecia o caráter de Deus.",
+      "c": "A razão da fuga está dita."
+    },
+    "passageText": "Orou a Jeová e disse: Ah! Jeová, não foi esta a minha palavra, estando eu ainda no meu país? Por isso é que me apressei a fugir para Társis, pois eu sabia que tu és um Deus clemente e misericordioso, tardio em irar-se e de grande beneficência e que te arrependes do mal.",
+    "passageA": {
+      "ref": "Jonas 4:2",
+      "text": "Orou a Jeová e disse: Ah! Jeová, não foi esta a minha palavra, estando eu ainda no meu país? Por isso é que me apressei a fugir para Társis, pois eu sabia que tu és um Deus clemente e misericordioso, tardio em irar-se e de grande beneficência e que te arrependes do mal."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A misericórdia de Deus pode ofender"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Misericórdia que ofende"
+      },
+      {
+        "id": "b",
+        "text": "Deus desconhecido"
+      },
+      {
+        "id": "c",
+        "text": "Fuga sem motivo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-cam-jonas-04-ira-01",
+    "trail": "jonas",
+    "section": "jonas-04-ira",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Jonas esperava um Deus rápido em irar-se e fechado à misericórdia.",
+    "prompt": "Jonas esperava um Deus rápido em irar-se e fechado à misericórdia.",
+    "cue": "Jonas esperava um Deus rápido em irar-se e fechado à misericórdia.",
+    "verseRef": "Jonas 4:2",
+    "learningObjective": "Sair sabendo que Jonas fugiu porque conhecia a clemência de Jeová.",
+    "evidence": [
+      "Jonas 4:2"
+    ],
+    "feedbackCorrect": "Certo: ele descreve Deus como tardio em irar-se.",
+    "feedbackWrong": {
+      "true": "A confissão lista clemência e beneficência."
+    },
+    "passageText": "Orou a Jeová e disse: Ah! Jeová, não foi esta a minha palavra, estando eu ainda no meu país? Por isso é que me apressei a fugir para Társis, pois eu sabia que tu és um Deus clemente e misericordioso, tardio em irar-se e de grande beneficência e que te arrependes do mal.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "id": "jonas-cam-jonas-04-ira-02",
+    "trail": "jonas",
+    "section": "jonas-04-ira",
+    "difficulty": "caminhada",
+    "type": "tap",
+    "skill": "understand",
+    "question": "Em Jonas 4:2, toque a palavra que falta em \"Deus ___ e misericordioso\"?",
+    "prompt": "Em Jonas 4:2, toque a palavra que falta em \"Deus ___ e misericordioso\"?",
+    "cue": "Em Jonas 4:2, toque a palavra que falta em \"Deus ___ e misericordioso\"?",
+    "verseRef": "Jonas 4:2",
+    "learningObjective": "Sair sabendo que Jonas fugiu porque conhecia a clemência de Jeová.",
+    "evidence": [
+      "Jonas 4:2"
+    ],
+    "feedbackCorrect": "Exato: ele sabia que Deus é clemente.",
+    "feedbackWrong": {
+      "a": "Társis é o destino da fuga.",
+      "c": "País é o lugar da palavra anterior."
+    },
+    "passageText": "Orou a Jeová e disse: Ah! Jeová, não foi esta a minha palavra, estando eu ainda no meu país? Por isso é que me apressei a fugir para Társis, pois eu sabia que tu és um Deus clemente e misericordioso, tardio em irar-se e de grande beneficência e que te arrependes do mal.",
+    "template": "Deus ___ e misericordioso",
+    "options": [
+      {
+        "id": "a",
+        "text": "Társis"
+      },
+      {
+        "id": "b",
+        "text": "clemente"
+      },
+      {
+        "id": "c",
+        "text": "país"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "jonas-cam-jonas-04-ira-03",
+    "trail": "jonas",
+    "section": "jonas-04-ira",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "O que a ira de Jonas revela?",
+    "prompt": "O que a ira de Jonas revela?",
+    "cue": "O que a ira de Jonas revela?",
+    "verseRef": "Jonas 4:2",
+    "learningObjective": "Sair sabendo que Jonas fugiu porque conhecia a clemência de Jeová.",
+    "evidence": [
+      "Jonas 4:2"
+    ],
+    "feedbackCorrect": "Certo: ele queria juízo, não perdão.",
+    "feedbackWrong": {
+      "b": "A oração é queixa.",
+      "c": "Ele conhecia a misericórdia.",
+      "d": "A ira mostra que ele não a desejava."
+    },
+    "passageText": "Orou a Jeová e disse: Ah! Jeová, não foi esta a minha palavra, estando eu ainda no meu país? Por isso é que me apressei a fugir para Társis, pois eu sabia que tu és um Deus clemente e misericordioso, tardio em irar-se e de grande beneficência e que te arrependes do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A misericórdia de Deus o ofende."
+      },
+      {
+        "id": "b",
+        "text": "Ele se alegra com o arrependimento do mal."
+      },
+      {
+        "id": "c",
+        "text": "A fuga foi ignorância sobre quem Deus é."
+      },
+      {
+        "id": "d",
+        "text": "Clemência e ira do profeta coincidem."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-cam-jonas-04-ira-04",
+    "trail": "jonas",
+    "section": "jonas-04-ira",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Jonas 4:2?",
+    "prompt": "Como se encadeiam os eventos de Jonas 4:2?",
+    "cue": "Como se encadeiam os eventos de Jonas 4:2?",
+    "verseRef": "Jonas 4:2",
+    "learningObjective": "Sair sabendo que Jonas fugiu porque conhecia a clemência de Jeová.",
+    "evidence": [
+      "Jonas 4:2"
+    ],
+    "feedbackCorrect": "Certo: a palavra antiga, a fuga e então a razão.",
+    "feedbackWrong": {
+      "b": "A fuga executa o que ele já temia.",
+      "c": "A clemência é a razão confessada."
+    },
+    "passageText": "Orou a Jeová e disse: Ah! Jeová, não foi esta a minha palavra, estando eu ainda no meu país? Por isso é que me apressei a fugir para Társis, pois eu sabia que tu és um Deus clemente e misericordioso, tardio em irar-se e de grande beneficência e que te arrependes do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jonas lembra o que disse ainda no seu país."
+      },
+      {
+        "id": "b",
+        "text": "Por isso se apressou a fugir para Társis."
+      },
+      {
+        "id": "c",
+        "text": "Ele sabia que Jeová é clemente e se arrepende do mal."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-cam-jonas-04-ira-05",
+    "trail": "jonas",
+    "section": "jonas-04-ira",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Complete a frase: \"tardio em ___\"",
+    "prompt": "Complete a frase: \"tardio em ___\"",
+    "cue": "Complete a frase: \"tardio em ___\"",
+    "verseRef": "Jonas 4:2",
+    "learningObjective": "Sair sabendo que Jonas fugiu porque conhecia a clemência de Jeová.",
+    "evidence": [
+      "Jonas 4:2"
+    ],
+    "feedbackCorrect": "Certo: Deus é tardio em irar-se.",
+    "feedbackWrong": {
+      "b": "Társis é a fuga.",
+      "c": "País é a origem."
+    },
+    "passageText": "Orou a Jeová e disse: Ah! Jeová, não foi esta a minha palavra, estando eu ainda no meu país? Por isso é que me apressei a fugir para Társis, pois eu sabia que tu és um Deus clemente e misericordioso, tardio em irar-se e de grande beneficência e que te arrependes do mal.",
+    "template": "tardio em ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "irar-se"
+      },
+      {
+        "id": "b",
+        "text": "Társis"
+      },
+      {
+        "id": "c",
+        "text": "país"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-cam-jonas-04-ira-06",
+    "trail": "jonas",
+    "section": "jonas-04-ira",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "Que relação Jonas 4:2 estabelece com este contexto?",
+    "prompt": "Que relação Jonas 4:2 estabelece com este contexto?",
+    "cue": "Que relação Jonas 4:2 estabelece com este contexto?",
+    "verseRef": "Jonas 4:2",
+    "learningObjective": "Sair sabendo que Jonas fugiu porque conhecia a clemência de Jeová.",
+    "evidence": [
+      "Jonas 4:2"
+    ],
+    "feedbackCorrect": "Certo: ele sabe e não quer.",
+    "feedbackWrong": {
+      "a": "O credo está na boca dele.",
+      "c": "A queixa não é alegria."
+    },
+    "passageText": "Orou a Jeová e disse: Ah! Jeová, não foi esta a minha palavra, estando eu ainda no meu país? Por isso é que me apressei a fugir para Társis, pois eu sabia que tu és um Deus clemente e misericordioso, tardio em irar-se e de grande beneficência e que te arrependes do mal.",
+    "passageA": {
+      "ref": "Jonas 4:2",
+      "text": "Orou a Jeová e disse: Ah! Jeová, não foi esta a minha palavra, estando eu ainda no meu país? Por isso é que me apressei a fugir para Társis, pois eu sabia que tu és um Deus clemente e misericordioso, tardio em irar-se e de grande beneficência e que te arrependes do mal."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A misericórdia de Deus pode ofender"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ignorância do credo"
+      },
+      {
+        "id": "b",
+        "text": "Credo contra o desejo"
+      },
+      {
+        "id": "c",
+        "text": "Alegria com Nínive"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "jonas-pro-jonas-04-ira-01",
+    "trail": "jonas",
+    "section": "jonas-04-ira",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Conhecer a misericórdia de Deus não garante que o coração a deseje.",
+    "prompt": "Conhecer a misericórdia de Deus não garante que o coração a deseje.",
+    "cue": "Conhecer a misericórdia de Deus não garante que o coração a deseje.",
+    "verseRef": "Jonas 4:2",
+    "learningObjective": "Sair sabendo que Jonas fugiu porque conhecia a clemência de Jeová.",
+    "evidence": [
+      "Jonas 4:2"
+    ],
+    "feedbackCorrect": "Certo: Jonas sabe e mesmo assim se ira.",
+    "feedbackWrong": {
+      "false": "O conhecimento vira queixa."
+    },
+    "passageText": "Orou a Jeová e disse: Ah! Jeová, não foi esta a minha palavra, estando eu ainda no meu país? Por isso é que me apressei a fugir para Társis, pois eu sabia que tu és um Deus clemente e misericordioso, tardio em irar-se e de grande beneficência e que te arrependes do mal.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "jonas-pro-jonas-04-ira-02",
+    "trail": "jonas",
+    "section": "jonas-04-ira",
+    "difficulty": "profundezas",
+    "type": "tap",
+    "skill": "interpret",
+    "question": "Em Jonas 4:2, toque a palavra que falta em \"te arrependes do ___\"?",
+    "prompt": "Em Jonas 4:2, toque a palavra que falta em \"te arrependes do ___\"?",
+    "cue": "Em Jonas 4:2, toque a palavra que falta em \"te arrependes do ___\"?",
+    "verseRef": "Jonas 4:2",
+    "learningObjective": "Sair sabendo que Jonas fugiu porque conhecia a clemência de Jeová.",
+    "evidence": [
+      "Jonas 4:2"
+    ],
+    "feedbackCorrect": "Exato: Deus se arrepende do mal.",
+    "feedbackWrong": {
+      "a": "Társis é a fuga.",
+      "c": "País é de onde ele saiu."
+    },
+    "passageText": "Orou a Jeová e disse: Ah! Jeová, não foi esta a minha palavra, estando eu ainda no meu país? Por isso é que me apressei a fugir para Társis, pois eu sabia que tu és um Deus clemente e misericordioso, tardio em irar-se e de grande beneficência e que te arrependes do mal.",
+    "template": "te arrependes do ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "Társis"
+      },
+      {
+        "id": "b",
+        "text": "mal"
+      },
+      {
+        "id": "c",
+        "text": "país"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "jonas-pro-jonas-04-ira-03",
+    "trail": "jonas",
+    "section": "jonas-04-ira",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "O que essa confissão impede?",
+    "prompt": "O que essa confissão impede?",
+    "cue": "O que essa confissão impede?",
+    "verseRef": "Jonas 4:2",
+    "learningObjective": "Sair sabendo que Jonas fugiu porque conhecia a clemência de Jeová.",
+    "evidence": [
+      "Jonas 4:2"
+    ],
+    "feedbackCorrect": "Certo: achar que saber de Deus é o mesmo que amar a misericórdia.",
+    "feedbackWrong": {
+      "b": "O credo dele está certo.",
+      "c": "A missão era Nínive.",
+      "d": "Ele sabia, e mesmo assim fugiu."
+    },
+    "passageText": "Orou a Jeová e disse: Ah! Jeová, não foi esta a minha palavra, estando eu ainda no meu país? Por isso é que me apressei a fugir para Társis, pois eu sabia que tu és um Deus clemente e misericordioso, tardio em irar-se e de grande beneficência e que te arrependes do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conhecer o credo não basta para querer o perdão."
+      },
+      {
+        "id": "b",
+        "text": "Deus deixa de ser tardio em irar-se."
+      },
+      {
+        "id": "c",
+        "text": "Társis passa a ser o centro da missão."
+      },
+      {
+        "id": "d",
+        "text": "A beneficência de Deus era desconhecida de Jonas."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-pro-jonas-04-ira-04",
+    "trail": "jonas",
+    "section": "jonas-04-ira",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Jonas 4:2?",
+    "prompt": "Qual sequência revela o sentido de Jonas 4:2?",
+    "cue": "Qual sequência revela o sentido de Jonas 4:2?",
+    "verseRef": "Jonas 4:2",
+    "learningObjective": "Sair sabendo que Jonas fugiu porque conhecia a clemência de Jeová.",
+    "evidence": [
+      "Jonas 4:2"
+    ],
+    "feedbackCorrect": "Certo: a palavra antiga, a fuga e então a razão.",
+    "feedbackWrong": {
+      "b": "A fuga executa o que ele já temia.",
+      "c": "A clemência é a razão confessada."
+    },
+    "passageText": "Orou a Jeová e disse: Ah! Jeová, não foi esta a minha palavra, estando eu ainda no meu país? Por isso é que me apressei a fugir para Társis, pois eu sabia que tu és um Deus clemente e misericordioso, tardio em irar-se e de grande beneficência e que te arrependes do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jonas lembra o que disse ainda no seu país."
+      },
+      {
+        "id": "b",
+        "text": "Por isso se apressou a fugir para Társis."
+      },
+      {
+        "id": "c",
+        "text": "Ele sabia que Jeová é clemente e se arrepende do mal."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-pro-jonas-04-ira-05",
+    "trail": "jonas",
+    "section": "jonas-04-ira",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Complete a frase: \"grande ___\"",
+    "prompt": "Complete a frase: \"grande ___\"",
+    "cue": "Complete a frase: \"grande ___\"",
+    "verseRef": "Jonas 4:2",
+    "learningObjective": "Sair sabendo que Jonas fugiu porque conhecia a clemência de Jeová.",
+    "evidence": [
+      "Jonas 4:2"
+    ],
+    "feedbackCorrect": "Certo: ele conhecia a grande beneficência.",
+    "feedbackWrong": {
+      "b": "País é de onde falou.",
+      "c": "Társis é o destino."
+    },
+    "passageText": "Orou a Jeová e disse: Ah! Jeová, não foi esta a minha palavra, estando eu ainda no meu país? Por isso é que me apressei a fugir para Társis, pois eu sabia que tu és um Deus clemente e misericordioso, tardio em irar-se e de grande beneficência e que te arrependes do mal.",
+    "template": "grande ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "beneficência"
+      },
+      {
+        "id": "b",
+        "text": "país"
+      },
+      {
+        "id": "c",
+        "text": "Társis"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-pro-jonas-04-ira-06",
+    "trail": "jonas",
+    "section": "jonas-04-ira",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "Que sentido de Jonas 4:2 se liga a este contexto?",
+    "prompt": "Que sentido de Jonas 4:2 se liga a este contexto?",
+    "cue": "Que sentido de Jonas 4:2 se liga a este contexto?",
+    "verseRef": "Jonas 4:2",
+    "learningObjective": "Sair sabendo que Jonas fugiu porque conhecia a clemência de Jeová.",
+    "evidence": [
+      "Jonas 4:2"
+    ],
+    "feedbackCorrect": "Certo: ele queria que o mal não fosse suspenso.",
+    "feedbackWrong": {
+      "b": "A ira mostra a preferência.",
+      "c": "Társis é fuga, não culto."
+    },
+    "passageText": "Orou a Jeová e disse: Ah! Jeová, não foi esta a minha palavra, estando eu ainda no meu país? Por isso é que me apressei a fugir para Társis, pois eu sabia que tu és um Deus clemente e misericordioso, tardio em irar-se e de grande beneficência e que te arrependes do mal.",
+    "passageA": {
+      "ref": "Jonas 4:2",
+      "text": "Orou a Jeová e disse: Ah! Jeová, não foi esta a minha palavra, estando eu ainda no meu país? Por isso é que me apressei a fugir para Társis, pois eu sabia que tu és um Deus clemente e misericordioso, tardio em irar-se e de grande beneficência e que te arrependes do mal."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A misericórdia de Deus pode ofender"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Juízo desejado"
+      },
+      {
+        "id": "b",
+        "text": "Perdão celebrado"
+      },
+      {
+        "id": "c",
+        "text": "Társis como altar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-sem-jonas-05-cidade-01",
+    "trail": "jonas",
+    "section": "jonas-05-cidade",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Jonas teve compaixão da planta pela qual não trabalhou.",
+    "prompt": "Jonas teve compaixão da planta pela qual não trabalhou.",
+    "cue": "Jonas teve compaixão da planta pela qual não trabalhou.",
+    "verseRef": "Jonas 4:10–11",
+    "learningObjective": "Sair sabendo que a compaixão de Jeová alcança Nínive, não só a planta de Jonas.",
+    "evidence": [
+      "Jonas 4:10–11"
+    ],
+    "feedbackCorrect": "Certo: a planta não era obra dele.",
+    "feedbackWrong": {
+      "false": "Jeová descreve assim o palma-christi."
+    },
+    "passageText": "Jeová disse: Tu tiveste compaixão do palma-christi, pela qual não trabalhaste, nem fizeste crescer; que nasceu numa noite e numa noite pereceu. Não hei de eu ter compaixão da grande cidade de Nínive, em que há mais de cento e vinte mil pessoas que não sabem discernir entre a sua mão direita e a sua esquerda, e também muito gado?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "jonas-sem-jonas-05-cidade-02",
+    "trail": "jonas",
+    "section": "jonas-05-cidade",
+    "difficulty": "semente",
+    "type": "tap",
+    "skill": "observe",
+    "question": "Em Jonas 4:10–11, toque a palavra que falta em \"compaixão do ___\"?",
+    "prompt": "Em Jonas 4:10–11, toque a palavra que falta em \"compaixão do ___\"?",
+    "cue": "Em Jonas 4:10–11, toque a palavra que falta em \"compaixão do ___\"?",
+    "verseRef": "Jonas 4:10–11",
+    "learningObjective": "Sair sabendo que a compaixão de Jeová alcança Nínive, não só a planta de Jonas.",
+    "evidence": [
+      "Jonas 4:10–11"
+    ],
+    "feedbackCorrect": "Exato: a pena de Jonas era da planta.",
+    "feedbackWrong": {
+      "a": "Noite é o tempo em que ela nasceu e morreu.",
+      "c": "Gado está na cidade, não na planta."
+    },
+    "passageText": "Jeová disse: Tu tiveste compaixão do palma-christi, pela qual não trabalhaste, nem fizeste crescer; que nasceu numa noite e numa noite pereceu. Não hei de eu ter compaixão da grande cidade de Nínive, em que há mais de cento e vinte mil pessoas que não sabem discernir entre a sua mão direita e a sua esquerda, e também muito gado?",
+    "template": "compaixão do ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "noite"
+      },
+      {
+        "id": "b",
+        "text": "palma-christi"
+      },
+      {
+        "id": "c",
+        "text": "gado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "jonas-sem-jonas-05-cidade-03",
+    "trail": "jonas",
+    "section": "jonas-05-cidade",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Com o que Jeová compara a pena de Jonas?",
+    "prompt": "Com o que Jeová compara a pena de Jonas?",
+    "cue": "Com o que Jeová compara a pena de Jonas?",
+    "verseRef": "Jonas 4:10–11",
+    "learningObjective": "Sair sabendo que a compaixão de Jeová alcança Nínive, não só a planta de Jonas.",
+    "evidence": [
+      "Jonas 4:10–11"
+    ],
+    "feedbackCorrect": "Certo: a planta que durou uma noite e a cidade inteira.",
+    "feedbackWrong": {
+      "b": "Nínive é o segundo termo.",
+      "c": "O peixe ficou para trás.",
+      "d": "Társis foi a fuga, não a comparação."
+    },
+    "passageText": "Jeová disse: Tu tiveste compaixão do palma-christi, pela qual não trabalhaste, nem fizeste crescer; que nasceu numa noite e numa noite pereceu. Não hei de eu ter compaixão da grande cidade de Nínive, em que há mais de cento e vinte mil pessoas que não sabem discernir entre a sua mão direita e a sua esquerda, e também muito gado?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A planta efêmera e a grande cidade de Nínive."
+      },
+      {
+        "id": "b",
+        "text": "Dois reinos que Jonas queria visitar."
+      },
+      {
+        "id": "c",
+        "text": "O peixe e o templo de Jerusalém."
+      },
+      {
+        "id": "d",
+        "text": "Társis e o país de onde ele fugiu."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-sem-jonas-05-cidade-04",
+    "trail": "jonas",
+    "section": "jonas-05-cidade",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Qual é a ordem dos fatos em Jonas 4:10–11?",
+    "prompt": "Qual é a ordem dos fatos em Jonas 4:10–11?",
+    "cue": "Qual é a ordem dos fatos em Jonas 4:10–11?",
+    "verseRef": "Jonas 4:10–11",
+    "learningObjective": "Sair sabendo que a compaixão de Jeová alcança Nínive, não só a planta de Jonas.",
+    "evidence": [
+      "Jonas 4:10–11"
+    ],
+    "feedbackCorrect": "Certo: a planta, a brevidade e então a cidade.",
+    "feedbackWrong": {
+      "b": "A brevidade mostra como a pena era pequena.",
+      "c": "Nínive é o contraste final."
+    },
+    "passageText": "Jeová disse: Tu tiveste compaixão do palma-christi, pela qual não trabalhaste, nem fizeste crescer; que nasceu numa noite e numa noite pereceu. Não hei de eu ter compaixão da grande cidade de Nínive, em que há mais de cento e vinte mil pessoas que não sabem discernir entre a sua mão direita e a sua esquerda, e também muito gado?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jonas teve pena da planta que não cultivou."
+      },
+      {
+        "id": "b",
+        "text": "A planta nasceu numa noite e numa noite pereceu."
+      },
+      {
+        "id": "c",
+        "text": "Jeová pergunta se não terá compaixão de Nínive e do seu gado."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-sem-jonas-05-cidade-05",
+    "trail": "jonas",
+    "section": "jonas-05-cidade",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Complete a frase: \"numa ___ pereceu\"",
+    "prompt": "Complete a frase: \"numa ___ pereceu\"",
+    "cue": "Complete a frase: \"numa ___ pereceu\"",
+    "verseRef": "Jonas 4:10–11",
+    "learningObjective": "Sair sabendo que a compaixão de Jeová alcança Nínive, não só a planta de Jonas.",
+    "evidence": [
+      "Jonas 4:10–11"
+    ],
+    "feedbackCorrect": "Certo: a planta pereceu numa noite.",
+    "feedbackWrong": {
+      "b": "Nínive é a cidade.",
+      "c": "Gado está na pergunta final."
+    },
+    "passageText": "Jeová disse: Tu tiveste compaixão do palma-christi, pela qual não trabalhaste, nem fizeste crescer; que nasceu numa noite e numa noite pereceu. Não hei de eu ter compaixão da grande cidade de Nínive, em que há mais de cento e vinte mil pessoas que não sabem discernir entre a sua mão direita e a sua esquerda, e também muito gado?",
+    "template": "numa ___ pereceu",
+    "options": [
+      {
+        "id": "a",
+        "text": "noite"
+      },
+      {
+        "id": "b",
+        "text": "Nínive"
+      },
+      {
+        "id": "c",
+        "text": "gado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-sem-jonas-05-cidade-06",
+    "trail": "jonas",
+    "section": "jonas-05-cidade",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Jonas 4:10–11 comunica que se liga a este contexto?",
+    "prompt": "O que Jonas 4:10–11 comunica que se liga a este contexto?",
+    "cue": "O que Jonas 4:10–11 comunica que se liga a este contexto?",
+    "verseRef": "Jonas 4:10–11",
+    "learningObjective": "Sair sabendo que a compaixão de Jeová alcança Nínive, não só a planta de Jonas.",
+    "evidence": [
+      "Jonas 4:10–11"
+    ],
+    "feedbackCorrect": "Certo: Nínive pesa mais que a planta.",
+    "feedbackWrong": {
+      "b": "O contraste é o ponto.",
+      "c": "O gado também entra."
+    },
+    "passageText": "Jeová disse: Tu tiveste compaixão do palma-christi, pela qual não trabalhaste, nem fizeste crescer; que nasceu numa noite e numa noite pereceu. Não hei de eu ter compaixão da grande cidade de Nínive, em que há mais de cento e vinte mil pessoas que não sabem discernir entre a sua mão direita e a sua esquerda, e também muito gado?",
+    "passageA": {
+      "ref": "Jonas 4:10–11",
+      "text": "Jeová disse: Tu tiveste compaixão do palma-christi, pela qual não trabalhaste, nem fizeste crescer; que nasceu numa noite e numa noite pereceu. Não hei de eu ter compaixão da grande cidade de Nínive, em que há mais de cento e vinte mil pessoas que não sabem discernir entre a sua mão direita e a sua esquerda, e também muito gado?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus se importa com a cidade desprezada"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cidade maior que a planta"
+      },
+      {
+        "id": "b",
+        "text": "Pena sem contraste"
+      },
+      {
+        "id": "c",
+        "text": "Gado esquecido"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-cam-jonas-05-cidade-01",
+    "trail": "jonas",
+    "section": "jonas-05-cidade",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Jeová diz que Nínive não merece compaixão, por ser grande demais.",
+    "prompt": "Jeová diz que Nínive não merece compaixão, por ser grande demais.",
+    "cue": "Jeová diz que Nínive não merece compaixão, por ser grande demais.",
+    "verseRef": "Jonas 4:10–11",
+    "learningObjective": "Sair sabendo que a compaixão de Jeová alcança Nínive, não só a planta de Jonas.",
+    "evidence": [
+      "Jonas 4:10–11"
+    ],
+    "feedbackCorrect": "Certo: ele pergunta se não terá compaixão da grande cidade.",
+    "feedbackWrong": {
+      "true": "A grandeza aumenta a pena, não a cancela."
+    },
+    "passageText": "Jeová disse: Tu tiveste compaixão do palma-christi, pela qual não trabalhaste, nem fizeste crescer; que nasceu numa noite e numa noite pereceu. Não hei de eu ter compaixão da grande cidade de Nínive, em que há mais de cento e vinte mil pessoas que não sabem discernir entre a sua mão direita e a sua esquerda, e também muito gado?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "id": "jonas-cam-jonas-05-cidade-02",
+    "trail": "jonas",
+    "section": "jonas-05-cidade",
+    "difficulty": "caminhada",
+    "type": "tap",
+    "skill": "understand",
+    "question": "Em Jonas 4:10–11, toque a palavra que falta em \"grande cidade de ___\"?",
+    "prompt": "Em Jonas 4:10–11, toque a palavra que falta em \"grande cidade de ___\"?",
+    "cue": "Em Jonas 4:10–11, toque a palavra que falta em \"grande cidade de ___\"?",
+    "verseRef": "Jonas 4:10–11",
+    "learningObjective": "Sair sabendo que a compaixão de Jeová alcança Nínive, não só a planta de Jonas.",
+    "evidence": [
+      "Jonas 4:10–11"
+    ],
+    "feedbackCorrect": "Exato: a cidade é Nínive.",
+    "feedbackWrong": {
+      "a": "Noite é o tempo da planta.",
+      "c": "Gado está na cidade, mas não é o nome dela."
+    },
+    "passageText": "Jeová disse: Tu tiveste compaixão do palma-christi, pela qual não trabalhaste, nem fizeste crescer; que nasceu numa noite e numa noite pereceu. Não hei de eu ter compaixão da grande cidade de Nínive, em que há mais de cento e vinte mil pessoas que não sabem discernir entre a sua mão direita e a sua esquerda, e também muito gado?",
+    "template": "grande cidade de ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "noite"
+      },
+      {
+        "id": "b",
+        "text": "Nínive"
+      },
+      {
+        "id": "c",
+        "text": "gado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "jonas-cam-jonas-05-cidade-03",
+    "trail": "jonas",
+    "section": "jonas-05-cidade",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Por que a planta enfraquece o argumento de Jonas?",
+    "prompt": "Por que a planta enfraquece o argumento de Jonas?",
+    "cue": "Por que a planta enfraquece o argumento de Jonas?",
+    "verseRef": "Jonas 4:10–11",
+    "learningObjective": "Sair sabendo que a compaixão de Jeová alcança Nínive, não só a planta de Jonas.",
+    "evidence": [
+      "Jonas 4:10–11"
+    ],
+    "feedbackCorrect": "Certo: ele sofre por algo que não cultivou e que durou uma noite.",
+    "feedbackWrong": {
+      "b": "Ele não a fez crescer.",
+      "c": "A comparação favorece a cidade.",
+      "d": "Pessoas e gado estão na conta de Deus."
+    },
+    "passageText": "Jeová disse: Tu tiveste compaixão do palma-christi, pela qual não trabalhaste, nem fizeste crescer; que nasceu numa noite e numa noite pereceu. Não hei de eu ter compaixão da grande cidade de Nínive, em que há mais de cento e vinte mil pessoas que não sabem discernir entre a sua mão direita e a sua esquerda, e também muito gado?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A pena dele é pequena perto da cidade."
+      },
+      {
+        "id": "b",
+        "text": "A planta prova que Nínive devia cair."
+      },
+      {
+        "id": "c",
+        "text": "Jonas trabalhou anos para fazer a planta crescer."
+      },
+      {
+        "id": "d",
+        "text": "O gado diminui o valor das pessoas."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-cam-jonas-05-cidade-04",
+    "trail": "jonas",
+    "section": "jonas-05-cidade",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os eventos de Jonas 4:10–11?",
+    "prompt": "Como se encadeiam os eventos de Jonas 4:10–11?",
+    "cue": "Como se encadeiam os eventos de Jonas 4:10–11?",
+    "verseRef": "Jonas 4:10–11",
+    "learningObjective": "Sair sabendo que a compaixão de Jeová alcança Nínive, não só a planta de Jonas.",
+    "evidence": [
+      "Jonas 4:10–11"
+    ],
+    "feedbackCorrect": "Certo: a planta, a brevidade e então a cidade.",
+    "feedbackWrong": {
+      "b": "A brevidade mostra como a pena era pequena.",
+      "c": "Nínive é o contraste final."
+    },
+    "passageText": "Jeová disse: Tu tiveste compaixão do palma-christi, pela qual não trabalhaste, nem fizeste crescer; que nasceu numa noite e numa noite pereceu. Não hei de eu ter compaixão da grande cidade de Nínive, em que há mais de cento e vinte mil pessoas que não sabem discernir entre a sua mão direita e a sua esquerda, e também muito gado?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jonas teve pena da planta que não cultivou."
+      },
+      {
+        "id": "b",
+        "text": "A planta nasceu numa noite e numa noite pereceu."
+      },
+      {
+        "id": "c",
+        "text": "Jeová pergunta se não terá compaixão de Nínive e do seu gado."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-cam-jonas-05-cidade-05",
+    "trail": "jonas",
+    "section": "jonas-05-cidade",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Complete a frase: \"não ___\"",
+    "prompt": "Complete a frase: \"não ___\"",
+    "cue": "Complete a frase: \"não ___\"",
+    "verseRef": "Jonas 4:10–11",
+    "learningObjective": "Sair sabendo que a compaixão de Jeová alcança Nínive, não só a planta de Jonas.",
+    "evidence": [
+      "Jonas 4:10–11"
+    ],
+    "feedbackCorrect": "Certo: Jonas não trabalhou pela planta.",
+    "feedbackWrong": {
+      "b": "Noite é o tempo da planta.",
+      "c": "Gado é da cidade."
+    },
+    "passageText": "Jeová disse: Tu tiveste compaixão do palma-christi, pela qual não trabalhaste, nem fizeste crescer; que nasceu numa noite e numa noite pereceu. Não hei de eu ter compaixão da grande cidade de Nínive, em que há mais de cento e vinte mil pessoas que não sabem discernir entre a sua mão direita e a sua esquerda, e também muito gado?",
+    "template": "não ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "trabalhaste"
+      },
+      {
+        "id": "b",
+        "text": "noite"
+      },
+      {
+        "id": "c",
+        "text": "gado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-cam-jonas-05-cidade-06",
+    "trail": "jonas",
+    "section": "jonas-05-cidade",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "Que relação Jonas 4:10–11 estabelece com este contexto?",
+    "prompt": "Que relação Jonas 4:10–11 estabelece com este contexto?",
+    "cue": "Que relação Jonas 4:10–11 estabelece com este contexto?",
+    "verseRef": "Jonas 4:10–11",
+    "learningObjective": "Sair sabendo que a compaixão de Jeová alcança Nínive, não só a planta de Jonas.",
+    "evidence": [
+      "Jonas 4:10–11"
+    ],
+    "feedbackCorrect": "Certo: a pergunta alarga a compaixão.",
+    "feedbackWrong": {
+      "a": "A planta não ganha a discussão.",
+      "c": "A cidade é nomeada."
+    },
+    "passageText": "Jeová disse: Tu tiveste compaixão do palma-christi, pela qual não trabalhaste, nem fizeste crescer; que nasceu numa noite e numa noite pereceu. Não hei de eu ter compaixão da grande cidade de Nínive, em que há mais de cento e vinte mil pessoas que não sabem discernir entre a sua mão direita e a sua esquerda, e também muito gado?",
+    "passageA": {
+      "ref": "Jonas 4:10–11",
+      "text": "Jeová disse: Tu tiveste compaixão do palma-christi, pela qual não trabalhaste, nem fizeste crescer; que nasceu numa noite e numa noite pereceu. Não hei de eu ter compaixão da grande cidade de Nínive, em que há mais de cento e vinte mil pessoas que não sabem discernir entre a sua mão direita e a sua esquerda, e também muito gado?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus se importa com a cidade desprezada"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Planta que justifica a ira"
+      },
+      {
+        "id": "b",
+        "text": "Compaixão mais larga"
+      },
+      {
+        "id": "c",
+        "text": "Noite sem cidade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "jonas-pro-jonas-05-cidade-01",
+    "trail": "jonas",
+    "section": "jonas-05-cidade",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "A compaixão de Deus alcança pessoas que Jonas não queria poupar.",
+    "prompt": "A compaixão de Deus alcança pessoas que Jonas não queria poupar.",
+    "cue": "A compaixão de Deus alcança pessoas que Jonas não queria poupar.",
+    "verseRef": "Jonas 4:10–11",
+    "learningObjective": "Sair sabendo que a compaixão de Jeová alcança Nínive, não só a planta de Jonas.",
+    "evidence": [
+      "Jonas 4:10–11"
+    ],
+    "feedbackCorrect": "Certo: a cidade entra na conta de Deus.",
+    "feedbackWrong": {
+      "false": "Há mais de cento e vinte mil pessoas, e gado."
+    },
+    "passageText": "Jeová disse: Tu tiveste compaixão do palma-christi, pela qual não trabalhaste, nem fizeste crescer; que nasceu numa noite e numa noite pereceu. Não hei de eu ter compaixão da grande cidade de Nínive, em que há mais de cento e vinte mil pessoas que não sabem discernir entre a sua mão direita e a sua esquerda, e também muito gado?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "id": "jonas-pro-jonas-05-cidade-02",
+    "trail": "jonas",
+    "section": "jonas-05-cidade",
+    "difficulty": "profundezas",
+    "type": "tap",
+    "skill": "interpret",
+    "question": "Em Jonas 4:10–11, toque a palavra que falta em \"muito ___\"?",
+    "prompt": "Em Jonas 4:10–11, toque a palavra que falta em \"muito ___\"?",
+    "cue": "Em Jonas 4:10–11, toque a palavra que falta em \"muito ___\"?",
+    "verseRef": "Jonas 4:10–11",
+    "learningObjective": "Sair sabendo que a compaixão de Jeová alcança Nínive, não só a planta de Jonas.",
+    "evidence": [
+      "Jonas 4:10–11"
+    ],
+    "feedbackCorrect": "Exato: Jeová menciona também muito gado.",
+    "feedbackWrong": {
+      "a": "Noite é o prazo da planta.",
+      "c": "Mão é o que a gente da cidade não distingue."
+    },
+    "passageText": "Jeová disse: Tu tiveste compaixão do palma-christi, pela qual não trabalhaste, nem fizeste crescer; que nasceu numa noite e numa noite pereceu. Não hei de eu ter compaixão da grande cidade de Nínive, em que há mais de cento e vinte mil pessoas que não sabem discernir entre a sua mão direita e a sua esquerda, e também muito gado?",
+    "template": "muito ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "noite"
+      },
+      {
+        "id": "b",
+        "text": "gado"
+      },
+      {
+        "id": "c",
+        "text": "mão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "id": "jonas-pro-jonas-05-cidade-03",
+    "trail": "jonas",
+    "section": "jonas-05-cidade",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "O que a pergunta final revela sobre Deus?",
+    "prompt": "O que a pergunta final revela sobre Deus?",
+    "cue": "O que a pergunta final revela sobre Deus?",
+    "verseRef": "Jonas 4:10–11",
+    "learningObjective": "Sair sabendo que a compaixão de Jeová alcança Nínive, não só a planta de Jonas.",
+    "evidence": [
+      "Jonas 4:10–11"
+    ],
+    "feedbackCorrect": "Certo: a compaixão dele é mais larga que a do profeta.",
+    "feedbackWrong": {
+      "b": "A pergunta espera um sim à cidade.",
+      "c": "Nínive é incluída.",
+      "d": "Pessoas e gado vêm juntos, as pessoas primeiro."
+    },
+    "passageText": "Jeová disse: Tu tiveste compaixão do palma-christi, pela qual não trabalhaste, nem fizeste crescer; que nasceu numa noite e numa noite pereceu. Não hei de eu ter compaixão da grande cidade de Nínive, em que há mais de cento e vinte mil pessoas que não sabem discernir entre a sua mão direita e a sua esquerda, e também muito gado?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus se importa com a cidade que o profeta despreza."
+      },
+      {
+        "id": "b",
+        "text": "Deus aprende compaixão com a planta."
+      },
+      {
+        "id": "c",
+        "text": "Nínive fica fora do cuidado porque é pagã."
+      },
+      {
+        "id": "d",
+        "text": "O gado importa mais que as pessoas."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-pro-jonas-05-cidade-04",
+    "trail": "jonas",
+    "section": "jonas-05-cidade",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o sentido de Jonas 4:10–11?",
+    "prompt": "Qual sequência revela o sentido de Jonas 4:10–11?",
+    "cue": "Qual sequência revela o sentido de Jonas 4:10–11?",
+    "verseRef": "Jonas 4:10–11",
+    "learningObjective": "Sair sabendo que a compaixão de Jeová alcança Nínive, não só a planta de Jonas.",
+    "evidence": [
+      "Jonas 4:10–11"
+    ],
+    "feedbackCorrect": "Certo: a planta, a brevidade e então a cidade.",
+    "feedbackWrong": {
+      "b": "A brevidade mostra como a pena era pequena.",
+      "c": "Nínive é o contraste final."
+    },
+    "passageText": "Jeová disse: Tu tiveste compaixão do palma-christi, pela qual não trabalhaste, nem fizeste crescer; que nasceu numa noite e numa noite pereceu. Não hei de eu ter compaixão da grande cidade de Nínive, em que há mais de cento e vinte mil pessoas que não sabem discernir entre a sua mão direita e a sua esquerda, e também muito gado?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jonas teve pena da planta que não cultivou."
+      },
+      {
+        "id": "b",
+        "text": "A planta nasceu numa noite e numa noite pereceu."
+      },
+      {
+        "id": "c",
+        "text": "Jeová pergunta se não terá compaixão de Nínive e do seu gado."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-pro-jonas-05-cidade-05",
+    "trail": "jonas",
+    "section": "jonas-05-cidade",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Complete a frase: \"cento e vinte mil ___\"",
+    "prompt": "Complete a frase: \"cento e vinte mil ___\"",
+    "cue": "Complete a frase: \"cento e vinte mil ___\"",
+    "verseRef": "Jonas 4:10–11",
+    "learningObjective": "Sair sabendo que a compaixão de Jeová alcança Nínive, não só a planta de Jonas.",
+    "evidence": [
+      "Jonas 4:10–11"
+    ],
+    "feedbackCorrect": "Certo: a cidade tem milhares de pessoas.",
+    "feedbackWrong": {
+      "b": "Noite é o tempo da planta.",
+      "c": "Gado também é contado, mas não nesta lacuna."
+    },
+    "passageText": "Jeová disse: Tu tiveste compaixão do palma-christi, pela qual não trabalhaste, nem fizeste crescer; que nasceu numa noite e numa noite pereceu. Não hei de eu ter compaixão da grande cidade de Nínive, em que há mais de cento e vinte mil pessoas que não sabem discernir entre a sua mão direita e a sua esquerda, e também muito gado?",
+    "template": "cento e vinte mil ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "pessoas"
+      },
+      {
+        "id": "b",
+        "text": "noite"
+      },
+      {
+        "id": "c",
+        "text": "gado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "id": "jonas-pro-jonas-05-cidade-06",
+    "trail": "jonas",
+    "section": "jonas-05-cidade",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "Que sentido de Jonas 4:10–11 se liga a este contexto?",
+    "prompt": "Que sentido de Jonas 4:10–11 se liga a este contexto?",
+    "cue": "Que sentido de Jonas 4:10–11 se liga a este contexto?",
+    "verseRef": "Jonas 4:10–11",
+    "learningObjective": "Sair sabendo que a compaixão de Jeová alcança Nínive, não só a planta de Jonas.",
+    "evidence": [
+      "Jonas 4:10–11"
+    ],
+    "feedbackCorrect": "Certo: quem vê Nínive é Jeová.",
+    "feedbackWrong": {
+      "a": "Jonas para na planta.",
+      "c": "A planta durou uma noite."
+    },
+    "passageText": "Jeová disse: Tu tiveste compaixão do palma-christi, pela qual não trabalhaste, nem fizeste crescer; que nasceu numa noite e numa noite pereceu. Não hei de eu ter compaixão da grande cidade de Nínive, em que há mais de cento e vinte mil pessoas que não sabem discernir entre a sua mão direita e a sua esquerda, e também muito gado?",
+    "passageA": {
+      "ref": "Jonas 4:10–11",
+      "text": "Jeová disse: Tu tiveste compaixão do palma-christi, pela qual não trabalhaste, nem fizeste crescer; que nasceu numa noite e numa noite pereceu. Não hei de eu ter compaixão da grande cidade de Nínive, em que há mais de cento e vinte mil pessoas que não sabem discernir entre a sua mão direita e a sua esquerda, e também muito gado?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus se importa com a cidade desprezada"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Profeta mais misericordioso"
+      },
+      {
+        "id": "b",
+        "text": "Deus que vê a cidade"
+      },
+      {
+        "id": "c",
+        "text": "Planta eterna"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
   }
 ]
