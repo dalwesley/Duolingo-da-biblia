@@ -84,3 +84,77 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
     console.log(`${ref}\t${t ?? '<<referência inválida>>'}`);
   }
 }
+
+export const BOOK_NAMES = BOOKS;
+
+/** Número de versos do capítulo (0 se não existir). */
+export function chapterLength(bookIndex, chapter) {
+  return load()[bookIndex]?.chapters?.[chapter - 1]?.length ?? 0;
+}
+
+/**
+ * Faixas contínuas (um capítulo cada) de uma referência livre do catálogo:
+ * "Gênesis 6:5–9; 9:12–13", "Gênesis 1:1–2:3", "Gênesis 2–3", "Gênesis 1:1".
+ * Devolve [{ ref, book, chapter, start, end }]. Ignora o que não reconhece.
+ */
+export function splitRanges(raw) {
+  const out = [];
+  let book = null;
+  let lastChapter = null;
+  const push = (b, ch, s, e) => {
+    const len = chapterLength(b, ch);
+    if (!len) return;
+    const start = Math.max(1, s ?? 1);
+    const end = Math.min(len, e ?? len);
+    if (start > end) return;
+    const ref = start === end ? `${BOOKS[b]} ${ch}:${start}` : `${BOOKS[b]} ${ch}:${start}–${end}`;
+    out.push({ ref, book: b, chapter: ch, start, end });
+  };
+  for (const part0 of String(raw || '').split(/[;,]/)) {
+    let part = part0.trim().replace(/-/g, '–');
+    if (!part) continue;
+    const named = part.match(/^(\d?\s*[^\d:–]+?)\s*(\d.*)$/u);
+    if (named) {
+      const idx = BOOKS.findIndex((b) => fold(b) === fold(named[1]));
+      const alt = fold(named[1]) === fold('Salmo') ? 18 : -1;
+      if (idx >= 0 || alt >= 0) {
+        book = idx >= 0 ? idx : alt;
+        part = named[2];
+        lastChapter = null;
+      }
+    }
+    if (book === null) continue;
+    let m;
+    if ((m = part.match(/^(\d+):(\d+)–(\d+):(\d+)$/))) {
+      const [c1, v1, c2, v2] = m.slice(1).map(Number);
+      for (let ch = c1; ch <= c2; ch++) push(book, ch, ch === c1 ? v1 : 1, ch === c2 ? v2 : undefined);
+      lastChapter = c2;
+    } else if ((m = part.match(/^(\d+):(\d+)(?:–(\d+))?$/))) {
+      const ch = Number(m[1]);
+      push(book, ch, Number(m[2]), m[3] ? Number(m[3]) : Number(m[2]));
+      lastChapter = ch;
+    } else if ((m = part.match(/^(\d+)(?:–(\d+))?$/))) {
+      // "12–13" depois de "9:" é faixa de versos no mesmo capítulo; sozinho, capítulos.
+      if (lastChapter !== null && part0.trim().match(/^\d+(–\d+)?$/)) {
+        push(book, lastChapter, Number(m[1]), m[2] ? Number(m[2]) : Number(m[1]));
+      } else {
+        const c1 = Number(m[1]);
+        const c2 = m[2] ? Number(m[2]) : c1;
+        for (let ch = c1; ch <= c2; ch++) push(book, ch);
+        lastChapter = c2;
+      }
+    }
+  }
+  return out;
+}
+
+/** Versos um a um de uma faixa: [{ ref: "Gênesis 1:3", text }]. */
+export function versesOf(range) {
+  const verses = load()[range.book]?.chapters?.[range.chapter - 1] || [];
+  const out = [];
+  for (let v = range.start; v <= range.end; v++) {
+    const t = String(verses[v - 1] || '').trim();
+    if (t) out.push({ ref: `${BOOKS[range.book]} ${range.chapter}:${v}`, text: t });
+  }
+  return out;
+}

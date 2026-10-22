@@ -3,14 +3,13 @@
  * Completar e Conectar aparecem no app na ordem gravada — sem isto, a certa
  * seria sempre o primeiro botão. Reatribui ids a,b,c(,d) e ajusta
  * correctOptionId, correctAnswer e as chaves de feedbackWrong.
- *   node admin/scripts/shuffle_pilot_options.mjs [cenas/<slug>.json ...]
+ *   node admin/scripts/shuffle_pilot_options.mjs [--trail <slug>] [cenas/<slug>.json ...]
  */
 import { existsSync, readdirSync, readFileSync, writeFileSync } from 'fs';
-import { dirname, join, resolve } from 'path';
-import { fileURLToPath } from 'url';
+import { join, resolve } from 'path';
+import { argValue, trailDir } from './_v3_paths.mjs';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const pilotDir = join(__dirname, '..', 'pilot', 'genesis-1-11');
+const pilotDir = trailDir(argValue('--trail') || 'genesis-1-11');
 const cenaDir = join(pilotDir, 'cenas');
 const TYPES = new Set(['choice', 'complete', 'connect', 'find_in_text']);
 
@@ -44,7 +43,7 @@ function shuffleQuestion(q) {
   return true;
 }
 
-const args = process.argv.slice(2);
+const args = process.argv.slice(2).filter((a, i, all) => !a.startsWith('--') && all[i - 1] !== '--trail');
 const files = args.length
   ? args.map((a) => (existsSync(a) ? resolve(a) : join(pilotDir, a)))
   : readdirSync(cenaDir).filter((f) => f.endsWith('.json')).map((f) => join(cenaDir, f));

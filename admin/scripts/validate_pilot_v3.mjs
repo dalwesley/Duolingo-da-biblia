@@ -1,20 +1,23 @@
 /**
- * Validador do banco V3 (piloto). Confere estudo e perguntas contra a JFAAL
- * e contra a matriz gesto × modo de admin/pilot/genesis-1-11/SPEC_V3.md.
+ * Validador do banco V3. Confere estudo e perguntas contra a JFAAL e contra a
+ * matriz gesto × modo de admin/pilot/genesis-1-11/SPEC_V3.md.
  *
- *   node admin/scripts/validate_pilot_v3.mjs                 # todas as cenas do piloto
+ *   node admin/scripts/validate_pilot_v3.mjs                       # cenas do piloto genesis-1-11
+ *   node admin/scripts/validate_pilot_v3.mjs --trail mateus        # cenas de admin/v3/mateus
  *   node admin/scripts/validate_pilot_v3.mjs cenas/gen-01-criador.json ...
+ *
+ * Também é importável: `validateCenaData(data, slug, { trail, final })`.
  */
 import { existsSync, readdirSync, readFileSync } from 'fs';
-import { basename, dirname, join, resolve } from 'path';
-import { fileURLToPath } from 'url';
+import { basename, join, resolve } from 'path';
+import { pathToFileURL } from 'url';
 import { parseRef, passageText, verseCount } from './_jfaal.mjs';
+import { argValue, trailDir } from './_v3_paths.mjs';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const pilotDir = join(__dirname, '..', 'pilot', 'genesis-1-11');
-const TRAIL = 'genesis-1-11';
+// Trilha da cena em validação (o id das perguntas começa por ela).
+let TRAIL = 'genesis-1-11';
 // --final: checagens que só valem depois de shuffle_pilot_options.mjs.
-const FINAL = process.argv.includes('--final');
+let FINAL = false;
 
 const SHORT = { semente: 'sem', caminhada: 'cam', profundezas: 'pro' };
 const SKILL = { semente: 'observe', caminhada: 'understand', profundezas: 'interpret' };
@@ -43,8 +46,12 @@ function hasWord(haystack, needle) {
 const norm = (s) => String(s || '').normalize('NFC').replace(/\s+/g, ' ').trim();
 const words = (s) => norm(s).split(' ').filter(Boolean).length;
 
+// Desafio (`type: "boss"` em trails.json). O gerador passa `boss` explícito;
+// pelo slug, as trilhas usam "boss" ou "desafio".
+let BOSS_SLUGS = null;
 function isBoss(slug) {
-  return slug.includes('boss');
+  if (BOSS_SLUGS) return BOSS_SLUGS.has(slug);
+  return /boss|desafio/.test(slug);
 }
 
 function checkStudy(study, slug, err, warn) {
@@ -257,17 +264,25 @@ function checkQuestion(q, slug, mode, nn, gesture, err, warn) {
 }
 
 function validateCena(path) {
-  const errors = [];
-  const warnings = [];
-  const err = (m) => errors.push(m);
-  const warn = (m) => warnings.push(m);
   const slug = basename(path, '.json');
   let data;
   try {
     data = JSON.parse(readFileSync(path, 'utf8'));
   } catch (e) {
-    return { slug, errors: [`JSON inválido: ${e.message}`], warnings, trueCount: 0, tfCount: 0 };
+    return { slug, errors: [`JSON inválido: ${e.message}`], warnings: [], trueCount: 0, tfCount: 0 };
   }
+  return validateCenaData(data, slug, { trail: TRAIL, final: FINAL });
+}
+
+/** Valida uma cena já lida. Usado pelo gerador para devolver os erros ao modelo. */
+export function validateCenaData(data, slug, { trail = TRAIL, final = false, boss } = {}) {
+  TRAIL = trail;
+  FINAL = final;
+  BOSS_SLUGS = boss === undefined ? null : new Set(boss ? [slug] : []);
+  const errors = [];
+  const warnings = [];
+  const err = (m) => errors.push(m);
+  const warn = (m) => warnings.push(m);
   checkStudy(data.study, slug, err, warn);
   const qs = Array.isArray(data.questions) ? data.questions : [];
   const rot = isBoss(slug) ? BOSS : LESSON;
@@ -321,7 +336,11 @@ function validateCena(path) {
   return { slug, errors, warnings, trueCount, tfCount };
 }
 
-const args = process.argv.slice(2).filter((a) => !a.startsWith('--'));
+function main() {
+TRAIL = argValue('--trail') || 'genesis-1-11';
+FINAL = process.argv.includes('--final');
+const pilotDir = trailDir(TRAIL);
+const args = process.argv.slice(2).filter((a, i, all) => !a.startsWith('--') && all[i - 1] !== '--trail');
 const cenaDir = join(pilotDir, 'cenas');
 const files = args.length
   ? args.map((a) => (existsSync(a) ? resolve(a) : join(pilotDir, a)))
@@ -349,3 +368,6 @@ if (files.length > 1 && N) {
 }
 console.log(failed ? '\n✗ Validação falhou.' : `\n✓ ${files.length} cena(s) válidas.`);
 process.exit(failed ? 1 : 0);
+}
+
+if (import.meta.url === pathToFileURL(process.argv[1] || '').href) main();

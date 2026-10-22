@@ -23,7 +23,14 @@
     "mark:desbravadores": "node scripts/mark_desbravadores.mjs",
     "audit:rankings": "node scripts/audit_rankings.mjs",
     "audit:rankings:fix": "node scripts/audit_rankings.mjs --fix",
-    "test:rankings": "node --test scripts/_ranking_mirror.test.mjs"
+    "test:rankings": "node --test scripts/_ranking_mirror.test.mjs",
+    "v3:inputs": "node scripts/v3_inputs.mjs",
+    "v3:generate": "node scripts/v3_generate.mjs",
+    "v3:validate": "node scripts/validate_pilot_v3.mjs",
+    "v3:shuffle": "node scripts/shuffle_pilot_options.mjs",
+    "v3:merge": "node scripts/merge_pilot_v3.mjs",
+    "v3:translate": "node scripts/v3_translate.mjs",
+    "v3:publish": "node scripts/publish_pilot_v3.mjs"
   },
   "dependencies": {
     "firebase": "^11.10.0"

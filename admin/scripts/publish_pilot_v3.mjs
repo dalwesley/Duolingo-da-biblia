@@ -1,9 +1,11 @@
 /**
- * Publica o piloto V3 de genesis-1-11 no Firestore (sessão do Firebase CLI).
+ * Publica o banco V3 de uma trilha no Firestore (sessão do Firebase CLI).
  * Sempre salva backup do que está lá antes. Sem --apply, só simula.
  *
- *   node scripts/publish_pilot_v3.mjs            # simula + backup
- *   node scripts/publish_pilot_v3.mjs --apply    # backup + grava + sobe a versão do catálogo
+ *   node scripts/publish_pilot_v3.mjs [--trail <slug>]            # simula + backup
+ *   node scripts/publish_pilot_v3.mjs [--trail <slug>] --apply    # backup + grava + sobe a versão do catálogo
+ *
+ * Sem --trail, publica o piloto genesis-1-11.
  *
  * Perguntas: substitui o documento inteiro (sem merge), para não sobrar campo
  * antigo (ex.: `template` nos toques). Estudos: merge. Docs de genesis-1-11
@@ -15,14 +17,15 @@ import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 import { Firestore } from '@google-cloud/firestore';
 import { validateBank, formatReport } from './_bank_validator.mjs';
+import { argValue, trailDir } from './_v3_paths.mjs';
 
 const require = createRequire(import.meta.url);
-const { getGlobalDefaultAccount } = require('firebase-tools/lib/auth');
+const { getGlobalDefaultAccount, getProjectDefaultAccount } = require('firebase-tools/lib/auth');
 const { getCredentialPathAsync } = require('firebase-tools/lib/defaultCredentials');
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const pilotDir = join(__dirname, '..', 'pilot', 'genesis-1-11');
-const TRAIL = 'genesis-1-11';
+const TRAIL = argValue('--trail') || 'genesis-1-11';
+const pilotDir = trailDir(TRAIL);
 const PROJECT = 'trilha-biblia';
 
 const apply = process.argv.includes('--apply');
@@ -46,7 +49,7 @@ async function main() {
     throw new Error('Piloto não passa no validador do banco.');
   }
 
-  const account = getGlobalDefaultAccount();
+  const account = getProjectDefaultAccount(join(__dirname, '..', '..')) || getGlobalDefaultAccount();
   if (!account?.tokens?.refresh_token) throw new Error('Firebase CLI não logado. Rode: firebase login --reauth');
   process.env.GOOGLE_APPLICATION_CREDENTIALS = await getCredentialPathAsync(account);
   const db = new Firestore({ projectId: PROJECT });

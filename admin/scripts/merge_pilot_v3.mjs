@@ -1,14 +1,13 @@
 /**
- * Junta admin/pilot/genesis-1-11/cenas/*.json em studies_v3.json + questions_v3.json.
+ * Junta <pasta da trilha>/cenas/*.json em studies_v3.json + questions_v3.json.
  * Não toca trilha_app/assets/data nem o Firestore.
- *   node admin/scripts/merge_pilot_v3.mjs
+ *   node admin/scripts/merge_pilot_v3.mjs [--trail <slug>]
  */
 import { readdirSync, readFileSync, writeFileSync } from 'fs';
-import { dirname, join } from 'path';
-import { fileURLToPath } from 'url';
+import { join } from 'path';
+import { argValue, trailDir } from './_v3_paths.mjs';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const pilotDir = join(__dirname, '..', 'pilot', 'genesis-1-11');
+const pilotDir = trailDir(argValue('--trail') || 'genesis-1-11');
 const cenaDir = join(pilotDir, 'cenas');
 
 const studies = {};
